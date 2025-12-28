@@ -16,6 +16,15 @@ let fontSizeLevel = 0;              // -2 to +2, 0 is default
 let currentDetectedKey = null;      // User's chosen key (or detected if not changed)
 let originalDetectedKey = null;     // The auto-detected key for current song
 let originalDetectedMode = null;    // The auto-detected mode for current song
+let showAbcNotation = true;         // Show ABC notation when available
+let abcjsRendered = null;           // Reference to ABCJS rendered object
+let currentAbcContent = null;       // Current ABC content for re-rendering
+let abcTempoBpm = 120;              // Playback tempo in BPM (60 - 240)
+let abcTranspose = 0;               // Semitones to transpose (-6 to +6)
+let abcScale = 1.0;                 // Size scale (0.7 - 1.5)
+let abcSynth = null;                // Persistent synth instance
+let abcTimingCallbacks = null;      // Persistent timing callbacks
+let abcIsPlaying = false;           // Playback state for toggle button
 
 // Auth state
 let isCloudSyncEnabled = false;
@@ -1417,8 +1426,35 @@ function parseChordPro(chordpro) {
     const metadata = {};
     const sections = [];
     let currentSection = null;
+    let inAbcBlock = false;
+    let abcLines = [];
 
     for (const line of lines) {
+        // Handle ABC notation blocks
+        if (line.match(/\{start_of_abc\}/i)) {
+            inAbcBlock = true;
+            abcLines = [];
+            continue;
+        }
+
+        if (line.match(/\{end_of_abc\}/i)) {
+            inAbcBlock = false;
+            // Store ABC as a special section
+            if (abcLines.length > 0) {
+                sections.push({
+                    type: 'abc',
+                    label: 'Notation',
+                    abc: abcLines.join('\n')
+                });
+            }
+            continue;
+        }
+
+        if (inAbcBlock) {
+            abcLines.push(line);
+            continue;
+        }
+
         const metaMatch = line.match(/\{meta:\s*(\w+)\s+([^}]+)\}/);
         if (metaMatch) {
             const [, key, value] = metaMatch;
@@ -1453,6 +1489,170 @@ function parseChordPro(chordpro) {
     }
 
     return { metadata, sections };
+}
+
+// Render ABC notation using ABCJS library
+function renderAbcNotation(abcContent, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) {
+        console.warn('ABC container not found:', containerId);
+        return;
+    }
+
+    // Store content for re-rendering when settings change
+    currentAbcContent = abcContent;
+
+    // Check if ABCJS is loaded
+    if (typeof ABCJS === 'undefined') {
+        console.warn('ABCJS not loaded, showing raw ABC');
+        container.innerHTML = `<pre class="abc-fallback">${escapeHtml(abcContent)}</pre>`;
+        return;
+    }
+
+    try {
+        // Clear previous content and reset styles
+        container.innerHTML = '';
+        container.style.width = '';
+        container.style.height = '';
+
+        // Calculate staffwidth to fill container (minus padding)
+        // Container has 1rem (16px) padding on each side
+        const containerWidth = container.parentElement.clientWidth - 32;
+        const staffwidth = Math.max(400, containerWidth - 20);
+
+        // Render ABC notation with current settings
+        // Scale affects note size; ABCJS reflows to fit staffwidth
+        abcjsRendered = ABCJS.renderAbc(containerId, abcContent, {
+            staffwidth: staffwidth,
+            scale: abcScale,  // Note size multiplier
+            add_classes: true,  // Enable CSS classes on notes for highlighting
+            visualTranspose: abcTranspose,  // Transpose by semitones
+            wrap: {
+                minSpacing: 1.5,
+                maxSpacing: 2.5,
+                preferredMeasuresPerLine: 4
+            },
+            paddingleft: 0,
+            paddingright: 0,
+            paddingbottom: 30
+        });
+    } catch (e) {
+        console.error('ABC rendering error:', e);
+        container.innerHTML = `<pre class="abc-fallback">${escapeHtml(abcContent)}</pre>`;
+    }
+}
+
+// Stop and clean up any existing ABC playback
+function stopAbcPlayback() {
+    if (abcSynth) {
+        abcSynth.stop();
+        abcSynth = null;
+    }
+    if (abcTimingCallbacks) {
+        abcTimingCallbacks.stop();
+        abcTimingCallbacks = null;
+    }
+    abcIsPlaying = false;
+    // Clear any highlighting
+    document.querySelectorAll('.abcjs-playing').forEach(el => {
+        el.classList.remove('abcjs-playing');
+    });
+    // Reset play button to play symbol
+    const playBtn = document.getElementById('abc-play-btn');
+    if (playBtn) {
+        playBtn.textContent = '▶';
+        playBtn.disabled = false;
+    }
+}
+
+// Setup ABC playback controls
+function setupAbcPlayback() {
+    const playBtn = document.getElementById('abc-play-btn');
+
+    if (!playBtn || typeof ABCJS === 'undefined' || !abcjsRendered) {
+        return;
+    }
+
+    // Stop any existing playback when setting up new controls
+    stopAbcPlayback();
+
+    // Clear any previous highlighting
+    function clearHighlights() {
+        document.querySelectorAll('.abcjs-playing').forEach(el => {
+            el.classList.remove('abcjs-playing');
+        });
+    }
+
+    // Highlight notes during playback
+    function onEvent(event) {
+        // Clear previous highlights
+        clearHighlights();
+
+        // Highlight current notes
+        if (event && event.elements) {
+            event.elements.forEach(noteElements => {
+                noteElements.forEach(el => {
+                    el.classList.add('abcjs-playing');
+                });
+            });
+        }
+    }
+
+    // Clone button to remove old event listeners
+    const newPlayBtn = playBtn.cloneNode(true);
+    playBtn.parentNode.replaceChild(newPlayBtn, playBtn);
+
+    newPlayBtn.addEventListener('click', async () => {
+        // Toggle: if playing, stop; if stopped, play
+        if (abcIsPlaying) {
+            stopAbcPlayback();
+            return;
+        }
+
+        abcSynth = new ABCJS.synth.CreateSynth();
+
+        try {
+            newPlayBtn.textContent = '⏳';
+            newPlayBtn.disabled = true;
+
+            const visualObj = abcjsRendered[0];
+
+            // For tempo control, re-render with tempo directive in ABC
+            let playbackAbc = currentAbcContent;
+            playbackAbc = playbackAbc.replace(/^Q:.*$/m, '');
+            playbackAbc = playbackAbc.replace(/(K:[^\n]*\n)/, `$1Q:1/4=${abcTempoBpm}\n`);
+
+            const playbackVisual = ABCJS.renderAbc('*', playbackAbc, { })[0];
+
+            await abcSynth.init({
+                visualObj: playbackVisual,
+                options: {
+                    soundFontUrl: 'https://paulrosen.github.io/midi-js-soundfonts/abcjs/',
+                    midiTranspose: abcTranspose
+                }
+            });
+
+            await abcSynth.prime();
+
+            // Set up timing callbacks for note highlighting
+            abcTimingCallbacks = new ABCJS.TimingCallbacks(visualObj, {
+                eventCallback: onEvent,
+                beatCallback: null,
+                qpm: abcTempoBpm
+            });
+
+            abcSynth.start();
+            abcTimingCallbacks.start();
+            abcIsPlaying = true;
+            newPlayBtn.textContent = '■';
+            newPlayBtn.disabled = false;
+        } catch (e) {
+            console.error('Playback error:', e);
+            newPlayBtn.textContent = '▶';
+            newPlayBtn.disabled = false;
+            abcIsPlaying = false;
+        }
+    });
 }
 
 // Key detection using diatonic chord analysis
@@ -1959,8 +2159,23 @@ function renderSong(song, chordpro, isInitialRender = false) {
         currentDetectedKey = originalDetectedKey || detectedKey || availableKeys[0];
     }
 
+    // Separate ABC sections from chord sections
+    const abcSections = sections.filter(s => s.type === 'abc');
+    const chordSections = sections.filter(s => s.type !== 'abc');
+    const hasAbc = abcSections.length > 0;
+    const hasChords = chordSections.length > 0;
+
+    // Collect ABC content for rendering
+    const abcContent = abcSections.map(s => s.abc).join('\n\n');
+
+    // Detect tempo from ABC content (Q: directive) and set initial BPM
+    if (abcContent) {
+        const tempoMatch = abcContent.match(/Q:\s*(?:\d+\/\d+=)?(\d+)/);
+        abcTempoBpm = tempoMatch ? parseInt(tempoMatch[1], 10) : 120;
+    }
+
     const totalCounts = {};
-    for (const section of sections) {
+    for (const section of chordSections) {
         totalCounts[section.label] = (totalCounts[section.label] || 0) + 1;
     }
 
@@ -1968,8 +2183,8 @@ function renderSong(song, chordpro, isInitialRender = false) {
     let sectionsHtml = '';
     let i = 0;
 
-    while (i < sections.length) {
-        const section = sections[i];
+    while (i < chordSections.length) {
+        const section = chordSections[i];
         const sectionKey = section.label;
         const isRepeatedSection = totalCounts[sectionKey] > 1;
         const shouldIndent = section.type === 'chorus' || isRepeatedSection;
@@ -1993,7 +2208,7 @@ function renderSong(song, chordpro, isInitialRender = false) {
             i++;
         } else if (compactMode) {
             let consecutiveCount = 0;
-            while (i < sections.length && sections[i].label === sectionKey) {
+            while (i < chordSections.length && chordSections[i].label === sectionKey) {
                 consecutiveCount++;
                 i++;
             }
@@ -2048,67 +2263,227 @@ function renderSong(song, chordpro, isInitialRender = false) {
         metaHtml += `<div class="meta-item"><span class="meta-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${escapeHtml(song.id)}</a></div>`;
     }
 
+    // Build view toggle only for hybrid songs (both ABC and chords)
+    // For ABC-only instrumentals, just show notation without toggle
+    const viewToggleHtml = (hasAbc && hasChords) ? `
+        <div class="view-toggle">
+            <button id="view-chords-btn" class="toggle-btn ${!showAbcNotation ? 'active' : ''}">Chords</button>
+            <button id="view-abc-btn" class="toggle-btn ${showAbcNotation ? 'active' : ''}">Notation</button>
+        </div>
+    ` : '';
+
+    // ABC notation view HTML
+    // For ABC-only tunes (no chords), always show; for hybrid, respect toggle
+    const showAbcView = hasAbc && (!hasChords || showAbcNotation);
+
+    // Build transpose options (+6 to -6 semitones, higher pitch at top)
+    const transposeOptions = [];
+    for (let i = 6; i >= -6; i--) {
+        const label = i === 0 ? 'Original' : (i > 0 ? `+${i}` : `${i}`);
+        transposeOptions.push(`<option value="${i}" ${abcTranspose === i ? 'selected' : ''}>${label}</option>`);
+    }
+
+    const abcViewHtml = hasAbc ? `
+        <div id="abc-view" class="abc-view ${showAbcView ? '' : 'hidden'}">
+            <div class="abc-render-options">
+                <div class="abc-control-bucket">
+                    <span class="bucket-label">Key</span>
+                    <div class="bucket-controls">
+                        <select id="abc-transpose-select" class="abc-select">${transposeOptions.join('')}</select>
+                    </div>
+                </div>
+                <div class="abc-control-bucket">
+                    <span class="bucket-label">Size</span>
+                    <div class="bucket-controls">
+                        <button id="abc-size-decrease" class="font-btn" ${abcScale <= 0.7 ? 'disabled' : ''}>−</button>
+                        <span id="abc-size-display" class="size-display">${Math.round(abcScale * 100)}%</span>
+                        <button id="abc-size-increase" class="font-btn" ${abcScale >= 1.5 ? 'disabled' : ''}>+</button>
+                    </div>
+                </div>
+                <div class="abc-control-bucket">
+                    <span class="bucket-label">Tempo</span>
+                    <div class="bucket-controls">
+                        <button id="abc-speed-decrease" class="font-btn" ${abcTempoBpm <= 60 ? 'disabled' : ''}>−</button>
+                        <input type="number" id="abc-speed-display" class="tempo-input" value="${abcTempoBpm}" min="60" max="240">
+                        <button id="abc-speed-increase" class="font-btn" ${abcTempoBpm >= 240 ? 'disabled' : ''}>+</button>
+                    </div>
+                </div>
+                <div class="abc-control-bucket abc-playback-bucket">
+                    <div class="bucket-controls">
+                        <button id="abc-play-btn" class="abc-btn abc-play-btn">▶</button>
+                    </div>
+                </div>
+            </div>
+            <div id="abc-notation" class="abc-notation"></div>
+        </div>
+    ` : '';
+
+    // Chord view HTML (hide if showing ABC view, or if no chords at all)
+    const chordViewClass = showAbcView || !hasChords ? 'hidden' : '';
+
     songContent.innerHTML = `
         <div class="song-header">
             <div class="song-title">${escapeHtml(title)}${versionHtml}</div>
             <div class="song-meta">${metaHtml}</div>
         </div>
-        <div class="render-options">
-            <div class="control-group">
-                <span class="control-label">Key:</span>
-                <select id="key-select" class="key-select">${keyOptions}</select>
+        ${viewToggleHtml}
+        ${abcViewHtml}
+        <div id="chord-view" class="${chordViewClass}">
+            <div class="render-options">
+                <div class="control-group">
+                    <span class="control-label">Key:</span>
+                    <select id="key-select" class="key-select">${keyOptions}</select>
+                </div>
+                <div class="font-size-control">
+                    <span class="control-label">Size:</span>
+                    <button id="font-decrease" class="font-btn" ${fontSizeLevel <= -2 ? 'disabled' : ''}>−</button>
+                    <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
+                </div>
+                <div class="checkbox-group">
+                    <span class="control-label">Show:</span>
+                    <label>
+                        <select id="chord-mode-select" class="chord-mode-select">
+                            <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All Chords</option>
+                            <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First Only</option>
+                            <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>No Chords</option>
+                        </select>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
+                        <span>Compact</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
+                        <span>Nashville</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
+                        <span>2-Col</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
+                        <span>Labels</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
+                        <span>Source</span>
+                    </label>
+                </div>
             </div>
-            <div class="font-size-control">
-                <span class="control-label">Size:</span>
-                <button id="font-decrease" class="font-btn" ${fontSizeLevel <= -2 ? 'disabled' : ''}>−</button>
-                <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
+            ${showChordProSource ? `
+            <div class="source-view">
+                <div class="source-pane">
+                    <div class="source-header">ChordPro Source</div>
+                    <pre class="chordpro-source">${escapeHtml(chordpro)}</pre>
+                </div>
+                <div class="rendered-pane">
+                    <div class="source-header">Rendered</div>
+                    <div class="song-body" style="font-size: ${FONT_SIZES[fontSizeLevel]}em">${sectionsHtml}</div>
+                </div>
             </div>
-            <div class="checkbox-group">
-                <span class="control-label">Show:</span>
-                <label>
-                    <select id="chord-mode-select" class="chord-mode-select">
-                        <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All Chords</option>
-                        <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First Only</option>
-                        <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>No Chords</option>
-                    </select>
-                </label>
-                <label>
-                    <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
-                    <span>Compact</span>
-                </label>
-                <label>
-                    <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
-                    <span>Nashville</span>
-                </label>
-                <label>
-                    <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
-                    <span>2-Col</span>
-                </label>
-                <label>
-                    <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
-                    <span>Labels</span>
-                </label>
-                <label>
-                    <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
-                    <span>Source</span>
-                </label>
-            </div>
+            ` : `
+            <div class="song-body ${twoColumnMode ? 'two-column' : ''}" style="font-size: ${FONT_SIZES[fontSizeLevel]}em">${sectionsHtml}</div>
+            `}
+            ${!hasChords && hasAbc ? '<div class="instrumental-notice"><em>Instrumental tune - see notation above</em></div>' : ''}
         </div>
-        ${showChordProSource ? `
-        <div class="source-view">
-            <div class="source-pane">
-                <div class="source-header">ChordPro Source</div>
-                <pre class="chordpro-source">${escapeHtml(chordpro)}</pre>
-            </div>
-            <div class="rendered-pane">
-                <div class="source-header">Rendered</div>
-                <div class="song-body" style="font-size: ${FONT_SIZES[fontSizeLevel]}em">${sectionsHtml}</div>
-            </div>
-        </div>
-        ` : `
-        <div class="song-body ${twoColumnMode ? 'two-column' : ''}" style="font-size: ${FONT_SIZES[fontSizeLevel]}em">${sectionsHtml}</div>
-        `}
     `;
+
+    // Render ABC notation if showing (either ABC-only tune or toggle is on)
+    if (showAbcView) {
+        setTimeout(() => {
+            renderAbcNotation(abcContent, 'abc-notation');
+            setupAbcPlayback();
+        }, 0);
+    }
+
+    // Setup view toggle handlers
+    const viewChordsBtn = document.getElementById('view-chords-btn');
+    const viewAbcBtn = document.getElementById('view-abc-btn');
+    if (viewChordsBtn && viewAbcBtn) {
+        viewChordsBtn.addEventListener('click', () => {
+            showAbcNotation = false;
+            renderSong(song, chordpro);
+        });
+        viewAbcBtn.addEventListener('click', () => {
+            showAbcNotation = true;
+            renderSong(song, chordpro);
+        });
+    }
+
+    // Setup ABC controls
+    const abcTransposeSelect = document.getElementById('abc-transpose-select');
+    if (abcTransposeSelect) {
+        abcTransposeSelect.addEventListener('change', (e) => {
+            abcTranspose = parseInt(e.target.value, 10);
+            if (currentAbcContent) {
+                renderAbcNotation(currentAbcContent, 'abc-notation');
+                setupAbcPlayback();
+            }
+        });
+    }
+
+    // ABC size controls (− = smaller, + = bigger)
+    const abcSizeDecrease = document.getElementById('abc-size-decrease');
+    const abcSizeIncrease = document.getElementById('abc-size-increase');
+    const abcSizeDisplay = document.getElementById('abc-size-display');
+    if (abcSizeDecrease && abcSizeIncrease) {
+        abcSizeDecrease.addEventListener('click', () => {
+            if (abcScale > 0.7) {
+                abcScale = Math.round((abcScale - 0.1) * 10) / 10;
+                if (abcSizeDisplay) abcSizeDisplay.textContent = `${Math.round(abcScale * 100)}%`;
+                abcSizeDecrease.disabled = abcScale <= 0.7;
+                abcSizeIncrease.disabled = abcScale >= 1.5;
+                if (currentAbcContent) {
+                    renderAbcNotation(currentAbcContent, 'abc-notation');
+                    setupAbcPlayback();
+                }
+            }
+        });
+        abcSizeIncrease.addEventListener('click', () => {
+            if (abcScale < 1.5) {
+                abcScale = Math.round((abcScale + 0.1) * 10) / 10;
+                if (abcSizeDisplay) abcSizeDisplay.textContent = `${Math.round(abcScale * 100)}%`;
+                abcSizeDecrease.disabled = abcScale <= 0.7;
+                abcSizeIncrease.disabled = abcScale >= 1.5;
+                if (currentAbcContent) {
+                    renderAbcNotation(currentAbcContent, 'abc-notation');
+                    setupAbcPlayback();
+                }
+            }
+        });
+    }
+
+    // ABC tempo controls (BPM)
+    const abcSpeedDecrease = document.getElementById('abc-speed-decrease');
+    const abcSpeedIncrease = document.getElementById('abc-speed-increase');
+    const abcSpeedDisplay = document.getElementById('abc-speed-display');
+    if (abcSpeedDecrease && abcSpeedIncrease && abcSpeedDisplay) {
+        abcSpeedDecrease.addEventListener('click', () => {
+            if (abcTempoBpm > 60) {
+                abcTempoBpm -= 10;
+                abcSpeedDisplay.value = abcTempoBpm;
+                abcSpeedDecrease.disabled = abcTempoBpm <= 60;
+                abcSpeedIncrease.disabled = abcTempoBpm >= 240;
+            }
+        });
+        abcSpeedIncrease.addEventListener('click', () => {
+            if (abcTempoBpm < 240) {
+                abcTempoBpm += 10;
+                abcSpeedDisplay.value = abcTempoBpm;
+                abcSpeedDecrease.disabled = abcTempoBpm <= 60;
+                abcSpeedIncrease.disabled = abcTempoBpm >= 240;
+            }
+        });
+        abcSpeedDisplay.addEventListener('change', () => {
+            let val = parseInt(abcSpeedDisplay.value, 10);
+            if (isNaN(val)) val = 120;
+            val = Math.max(60, Math.min(240, val));
+            abcTempoBpm = val;
+            abcSpeedDisplay.value = val;
+            abcSpeedDecrease.disabled = abcTempoBpm <= 60;
+            abcSpeedIncrease.disabled = abcTempoBpm >= 240;
+        });
+    }
 
     const keySelect = document.getElementById('key-select');
     if (keySelect) {

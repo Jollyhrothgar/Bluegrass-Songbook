@@ -29,6 +29,15 @@ show_help() {
     echo "      Refresh artist tags from MusicBrainz (requires local MB database)"
     echo "      and rebuild the index"
     echo ""
+    echo "  fetch-tune <name>"
+    echo "      Fetch a single tune from TuneArch by name and rebuild the index"
+    echo ""
+    echo "  bulk-fetch-tunes [limit]"
+    echo "      Fetch multiple tunes from TuneArch curated list (default: 10)"
+    echo ""
+    echo "  search-tunes <query> [limit]"
+    echo "      Search TuneArch for tunes matching query and fetch results"
+    echo ""
 }
 
 case "$COMMAND" in
@@ -46,6 +55,46 @@ case "$COMMAND" in
         uv run python3 scripts/lib/build_index.py
         echo ""
         echo "Done! Tags refreshed and index rebuilt."
+        ;;
+    fetch-tune)
+        if [ -z "$1" ]; then
+            echo "Error: tune name required"
+            echo "Usage: ./scripts/utility fetch-tune \"Tune Name\""
+            exit 1
+        fi
+        echo "Fetching tune: $1"
+        uv run python3 sources/tunearch/src/batch_fetch.py --tune "$1"
+        echo ""
+        echo "Rebuilding index..."
+        uv run python3 scripts/lib/build_index.py --no-tags
+        echo ""
+        echo "Done! Tune fetched and index rebuilt."
+        ;;
+    bulk-fetch-tunes)
+        LIMIT="${1:-10}"
+        echo "Fetching up to $LIMIT tunes from TuneArch..."
+        uv run python3 sources/tunearch/src/batch_fetch.py --limit "$LIMIT"
+        echo ""
+        echo "Rebuilding index..."
+        uv run python3 scripts/lib/build_index.py --no-tags
+        echo ""
+        echo "Done! Tunes fetched and index rebuilt."
+        ;;
+    search-tunes)
+        if [ -z "$1" ]; then
+            echo "Error: search query required"
+            echo "Usage: ./scripts/utility search-tunes \"query\" [limit]"
+            exit 1
+        fi
+        QUERY="$1"
+        LIMIT="${2:-10}"
+        echo "Searching TuneArch for: $QUERY"
+        uv run python3 sources/tunearch/src/batch_fetch.py --search "$QUERY" --limit "$LIMIT"
+        echo ""
+        echo "Rebuilding index..."
+        uv run python3 scripts/lib/build_index.py --no-tags
+        echo ""
+        echo "Done! Tunes fetched and index rebuilt."
         ;;
     help|--help|-h|"")
         show_help
