@@ -563,6 +563,16 @@ def build_index(parsed_dirs: list[Path], output_file: Path, enrich_tags: bool = 
         if metadata['canonical_id']:
             song['canonical_id'] = metadata['canonical_id']
 
+        # Add ABC content for instrumentals (omit if not present to save space)
+        if abc_content:
+            song['abc_content'] = abc_content
+        if is_tune:
+            song['is_instrumental'] = True
+        if metadata.get('x_rhythm'):
+            song['rhythm'] = metadata['x_rhythm']
+        if metadata.get('x_tunearch_url'):
+            song['tunearch_url'] = metadata['x_tunearch_url']
+
         songs.append(song)
 
     # Enrich songs with tags (MusicBrainz + harmonic analysis)
