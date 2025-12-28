@@ -1,204 +1,352 @@
-// Editor state
-let nashvilleMode = false;
-let currentKey = null;
+// Song editor for Bluegrass Songbook
 
-// DOM elements
-const titleInput = document.getElementById('song-title');
-const artistInput = document.getElementById('song-artist');
-const writerInput = document.getElementById('song-writer');
-const contentInput = document.getElementById('song-content');
-const previewContent = document.getElementById('preview-content');
-const copyBtn = document.getElementById('copy-btn');
-const saveBtn = document.getElementById('save-btn');
-const saveStatus = document.getElementById('save-status');
-const themeToggle = document.getElementById('theme-toggle');
-const nashvilleCheckbox = document.getElementById('preview-nashville');
+import {
+    currentSong,
+    editMode, setEditMode,
+    editingSongId, setEditingSongId,
+    editorNashvilleMode, setEditorNashvilleMode,
+    GITHUB_REPO
+} from './state.js';
+import { escapeHtml } from './utils.js';
+import { extractChords, detectKey, toNashville } from './chords.js';
 
-// Theme handling
-function initTheme() {
-    const saved = localStorage.getItem('theme');
-    if (saved === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
+// Module-level state
+let editorDetectedKey = null;
+
+// DOM element references (set by init)
+let editorPanelEl = null;
+let editorTitleEl = null;
+let editorArtistEl = null;
+let editorWriterEl = null;
+let editorContentEl = null;
+let editorPreviewContentEl = null;
+let editorCopyBtnEl = null;
+let editorSaveBtnEl = null;
+let editorSubmitBtnEl = null;
+let editorStatusEl = null;
+let editorNashvilleEl = null;
+let editorCommentEl = null;
+let editCommentRowEl = null;
+let editSongBtnEl = null;
+let hintsBtnEl = null;
+let hintsPanelEl = null;
+let hintsBackdropEl = null;
+let hintsCloseEl = null;
+
+// Other DOM references
+let navSearchEl = null;
+let navAddSongEl = null;
+let navFavoritesEl = null;
+let resultsDivEl = null;
+let songViewEl = null;
+
+/**
+ * Enter edit mode for an existing song
+ */
+export function enterEditMode(song) {
+    setEditMode(true);
+    setEditingSongId(song.id);
+
+    // Populate editor with song data
+    if (editorTitleEl) editorTitleEl.value = song.title || '';
+    if (editorArtistEl) editorArtistEl.value = song.artist || '';
+    if (editorWriterEl) editorWriterEl.value = song.composer || '';
+    if (editorContentEl) editorContentEl.value = song.content || '';
+    if (editorCommentEl) editorCommentEl.value = '';
+
+    // Show comment field
+    if (editCommentRowEl) editCommentRowEl.classList.remove('hidden');
+
+    // Update submit button text
+    if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit Correction';
+
+    // Switch to editor panel (update nav state)
+    [navSearchEl, navAddSongEl, navFavoritesEl].forEach(btn => {
+        if (btn) btn.classList.remove('active');
+    });
+    if (navAddSongEl) navAddSongEl.classList.add('active');
+
+    const searchContainer = document.querySelector('.search-container');
+    if (searchContainer) searchContainer.classList.add('hidden');
+    if (resultsDivEl) resultsDivEl.classList.add('hidden');
+    if (songViewEl) songViewEl.classList.add('hidden');
+    if (editorPanelEl) editorPanelEl.classList.remove('hidden');
+
+    // Trigger preview update
+    updateEditorPreview();
+}
+
+/**
+ * Exit edit mode
+ */
+export function exitEditMode() {
+    setEditMode(false);
+    setEditingSongId(null);
+    if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
+    if (editorCommentEl) editorCommentEl.value = '';
+    if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
+}
+
+/**
+ * Check if a line is a chord line
+ */
+function editorIsChordLine(line) {
+    if (!line.trim()) return false;
+    const words = line.trim().split(/\s+/);
+    if (words.length === 0) return false;
+    const chordPattern = /^[A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?$/;
+    const chordCount = words.filter(w => chordPattern.test(w)).length;
+    return chordCount / words.length > 0.5;
+}
+
+/**
+ * Check if a line is a section marker
+ */
+function editorIsSectionMarker(line) {
+    return /^\[.+\]$/.test(line.trim());
+}
+
+/**
+ * Check if a line is an instrumental line
+ */
+function editorIsInstrumentalLine(line) {
+    return /^[—\-]?[A-G][#b]?---/.test(line.trim());
+}
+
+/**
+ * Extract chords with their positions from a chord line
+ */
+function editorExtractChordsWithPositions(chordLine) {
+    const chords = [];
+    const pattern = /([A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?)/g;
+    let match;
+    while ((match = pattern.exec(chordLine)) !== null) {
+        chords.push({ chord: match[1], position: match.index });
     }
+    return chords;
 }
 
-themeToggle.addEventListener('click', () => {
-    const current = document.documentElement.getAttribute('data-theme');
-    const next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-});
-
-initTheme();
-
-// Key detection data
-const KEYS = {
-    'C':  { scale: ['C', 'Dm', 'Em', 'F', 'G', 'Am', 'Bdim'], tonic: 'C', mode: 'major' },
-    'G':  { scale: ['G', 'Am', 'Bm', 'C', 'D', 'Em', 'F#dim'], tonic: 'G', mode: 'major' },
-    'D':  { scale: ['D', 'Em', 'F#m', 'G', 'A', 'Bm', 'C#dim'], tonic: 'D', mode: 'major' },
-    'A':  { scale: ['A', 'Bm', 'C#m', 'D', 'E', 'F#m', 'G#dim'], tonic: 'A', mode: 'major' },
-    'E':  { scale: ['E', 'F#m', 'G#m', 'A', 'B', 'C#m', 'D#dim'], tonic: 'E', mode: 'major' },
-    'B':  { scale: ['B', 'C#m', 'D#m', 'E', 'F#', 'G#m', 'A#dim'], tonic: 'B', mode: 'major' },
-    'F':  { scale: ['F', 'Gm', 'Am', 'Bb', 'C', 'Dm', 'Edim'], tonic: 'F', mode: 'major' },
-    'Bb': { scale: ['Bb', 'Cm', 'Dm', 'Eb', 'F', 'Gm', 'Adim'], tonic: 'Bb', mode: 'major' },
-    'Eb': { scale: ['Eb', 'Fm', 'Gm', 'Ab', 'Bb', 'Cm', 'Ddim'], tonic: 'Eb', mode: 'major' },
-    'Am': { scale: ['Am', 'Bdim', 'C', 'Dm', 'Em', 'F', 'G'], tonic: 'Am', mode: 'minor' },
-    'Em': { scale: ['Em', 'F#dim', 'G', 'Am', 'Bm', 'C', 'D'], tonic: 'Em', mode: 'minor' },
-    'Bm': { scale: ['Bm', 'C#dim', 'D', 'Em', 'F#m', 'G', 'A'], tonic: 'Bm', mode: 'minor' },
-    'Dm': { scale: ['Dm', 'Edim', 'F', 'Gm', 'Am', 'Bb', 'C'], tonic: 'Dm', mode: 'minor' },
-    'Gm': { scale: ['Gm', 'Adim', 'Bb', 'Cm', 'Dm', 'Eb', 'F'], tonic: 'Gm', mode: 'minor' },
-};
-
-const CHROMATIC = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
-const ENHARMONIC = { 'C#': 'Db', 'D#': 'Eb', 'F#': 'Gb', 'G#': 'Ab', 'A#': 'Bb' };
-const NASHVILLE_MAJOR = ['I', 'ii', 'iii', 'IV', 'V', 'vi', 'vii°'];
-const NASHVILLE_MINOR = ['i', 'ii°', 'III', 'iv', 'v', 'VI', 'VII'];
-
-function normalizeChord(chord) {
-    if (!chord) return null;
-    const match = chord.match(/^([A-G][#b]?)/);
-    if (!match) return null;
-    let root = match[1];
-    const rest = chord.slice(root.length).toLowerCase();
-    if (root in ENHARMONIC) root = ENHARMONIC[root];
-    let quality = '';
-    if (rest.startsWith('m') && !rest.startsWith('maj')) quality = 'm';
-    else if (rest.includes('dim')) quality = 'dim';
-    return root + quality;
+/**
+ * Align chords to lyrics based on position
+ */
+function editorAlignChordsToLyrics(chordLine, lyricLine, chordPositions) {
+    if (!chordPositions.length) return lyricLine;
+    const sorted = [...chordPositions].sort((a, b) => b.position - a.position);
+    let result = lyricLine;
+    for (const { chord, position } of sorted) {
+        let lyricPos = Math.min(position, result.length);
+        result = result.slice(0, lyricPos) + `[${chord}]` + result.slice(lyricPos);
+    }
+    return result;
 }
 
-function extractChords(content) {
-    const matches = content.match(/\[([^\]]+)\]/g) || [];
-    return matches.map(m => m.slice(1, -1));
-}
+/**
+ * Convert chord sheet format to ChordPro
+ */
+export function editorConvertToChordPro(text) {
+    const lines = text.split('\n');
+    const result = [];
+    let i = 0;
 
-function detectKey(chords) {
-    if (!chords.length) return { key: null, mode: null };
+    while (i < lines.length) {
+        const line = lines[i];
+        const trimmed = line.trim();
 
-    const chordCounts = {};
-    for (const chord of chords) {
-        const normalized = normalizeChord(chord);
-        if (normalized) {
-            chordCounts[normalized] = (chordCounts[normalized] || 0) + 1;
+        if (!trimmed) {
+            result.push('');
+            i++;
+            continue;
         }
-    }
 
-    const total = chords.length;
-    const scores = {};
+        if (editorIsSectionMarker(trimmed)) {
+            const sectionName = trimmed.slice(1, -1).trim();
+            const lowerName = sectionName.toLowerCase();
+            if (lowerName.includes('chorus')) {
+                result.push('{soc}');
+            } else if (lowerName.includes('verse')) {
+                result.push(`{sov: ${sectionName}}`);
+            } else if (lowerName.includes('instrumental') || lowerName.includes('break')) {
+                result.push(`{comment: ${sectionName}}`);
+            } else if (lowerName.includes('bridge')) {
+                result.push('{sob}');
+            } else {
+                result.push(`{comment: ${sectionName}}`);
+            }
+            i++;
+            continue;
+        }
 
-    for (const [keyName, keyInfo] of Object.entries(KEYS)) {
-        const normalizedScale = new Set(keyInfo.scale.map(c => normalizeChord(c)));
-        const normalizedTonic = normalizeChord(keyInfo.tonic);
+        if (editorIsInstrumentalLine(trimmed)) {
+            result.push(`{comment: ${trimmed}}`);
+            i++;
+            continue;
+        }
 
-        let matchWeight = 0;
-        let tonicWeight = 0;
-
-        for (const [chord, count] of Object.entries(chordCounts)) {
-            if (normalizedScale.has(chord)) {
-                matchWeight += count;
-                if (chord === normalizedTonic) {
-                    tonicWeight += count * 0.5;
+        if (editorIsChordLine(line)) {
+            const chordPositions = editorExtractChordsWithPositions(line);
+            if (i + 1 < lines.length) {
+                const nextLine = lines[i + 1];
+                if (!nextLine.trim() || editorIsChordLine(nextLine) || editorIsSectionMarker(nextLine.trim())) {
+                    const chords = chordPositions.map(c => c.chord).join(' ');
+                    result.push(`{comment: ${chords}}`);
+                    i++;
+                    continue;
                 }
+                const chordproLine = editorAlignChordsToLyrics(line, nextLine, chordPositions);
+                result.push(chordproLine);
+                i += 2;
+                continue;
+            } else {
+                const chords = chordPositions.map(c => c.chord).join(' ');
+                result.push(`{comment: ${chords}}`);
+                i++;
+                continue;
             }
         }
 
-        scores[keyName] = (matchWeight + tonicWeight) / total;
+        result.push(line);
+        i++;
     }
 
-    let bestKey = null;
-    let bestScore = 0;
-    for (const [key, score] of Object.entries(scores)) {
-        if (score > bestScore) {
-            bestScore = score;
-            bestKey = key;
-        }
+    return result.join('\n');
+}
+
+/**
+ * Clean Ultimate Guitar paste format
+ */
+export function cleanUltimateGuitarPaste(text) {
+    const isUG = text.includes('ultimate-guitar') ||
+                 text.includes('Ultimate-Guitar') ||
+                 (text.includes('Chords by') && text.includes('views') && text.includes('saves')) ||
+                 (text.includes('Tuning:') && text.includes('Key:') && text.includes('Capo:'));
+
+    if (!isUG) {
+        return { text, title: null, artist: null, cleaned: false };
     }
 
-    const preferredKeys = ['G', 'C', 'D', 'A', 'E', 'Am', 'Em', 'Dm'];
-    for (const key of preferredKeys) {
-        if (key in scores && scores[key] >= bestScore - 0.03) {
-            bestKey = key;
+    const lines = text.split('\n');
+    let title = null;
+    let artist = null;
+    let songStartIndex = -1;
+    let songEndIndex = lines.length;
+
+    // Find title and artist
+    for (let i = 0; i < Math.min(lines.length, 30); i++) {
+        const line = lines[i];
+        const match = line.match(/^(.+?)\s+(?:Chords|Tab|Tabs)\s+by\s+(.+)$/i);
+        if (match) {
+            title = match[1].trim();
+            artist = match[2].trim();
             break;
         }
     }
 
-    return bestKey ? { key: bestKey, mode: KEYS[bestKey].mode } : { key: null, mode: null };
-}
-
-function toNashville(chord, keyName) {
-    if (!chord || !keyName || !(keyName in KEYS)) return chord;
-
-    const keyInfo = KEYS[keyName];
-    const match = chord.match(/^([A-G][#b]?)/);
-    if (!match) return chord;
-
-    let chordRoot = match[1];
-    if (chordRoot in ENHARMONIC) chordRoot = ENHARMONIC[chordRoot];
-
-    let tonicRoot = keyInfo.tonic.replace('m', '');
-    if (tonicRoot in ENHARMONIC) tonicRoot = ENHARMONIC[tonicRoot];
-
-    const tonicIndex = CHROMATIC.indexOf(tonicRoot);
-    const chordIndex = CHROMATIC.indexOf(chordRoot);
-    if (tonicIndex === -1 || chordIndex === -1) return chord;
-
-    const interval = (chordIndex - tonicIndex + 12) % 12;
-    const intervalToDegree = { 0: 0, 2: 1, 3: 2, 4: 2, 5: 3, 7: 4, 8: 5, 9: 5, 10: 6, 11: 6 };
-    const scaleDegree = intervalToDegree[interval];
-
-    if (scaleDegree === undefined) {
-        const symbols = ['I', 'bII', 'II', 'bIII', 'III', 'IV', 'bV', 'V', 'bVI', 'VI', 'bVII', 'VII'];
-        return symbols[interval];
+    // Find song content start
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (/^\[(Verse|Chorus|Intro|Bridge|Outro|Instrumental|Pre-Chorus|Hook|Interlude)/i.test(line)) {
+            songStartIndex = i;
+            break;
+        }
+        if (editorIsChordLine(line) && i + 1 < lines.length && lines[i + 1].trim() && !editorIsChordLine(lines[i + 1])) {
+            songStartIndex = i;
+            break;
+        }
     }
 
-    const nashville = keyInfo.mode === 'minor' ? NASHVILLE_MINOR : NASHVILLE_MAJOR;
-    return nashville[scaleDegree];
+    // Find song content end
+    for (let i = songStartIndex; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (line.startsWith('Last update:') ||
+            line === 'Rating' ||
+            line === 'Welcome Offer' ||
+            line.startsWith('© ') ||
+            line === 'Chords' ||
+            (line === 'X' && i > songStartIndex + 10) ||
+            line.includes('Please, rate this tab') ||
+            line.match(/^\d+\.\d+$/) ||
+            line.match(/^\d+ rates$/)) {
+            songEndIndex = i;
+            break;
+        }
+    }
+
+    if (songStartIndex === -1) {
+        return { text, title, artist, cleaned: false };
+    }
+
+    const songLines = lines.slice(songStartIndex, songEndIndex);
+    const cleanedLines = songLines
+        .filter(line => {
+            const trimmed = line.trim();
+            if (trimmed === 'X') return false;
+            if (trimmed.match(/^\d+\.\d+$/)) return false;
+            if (trimmed.match(/^\(\d+,?\d*\)$/)) return false;
+            if (trimmed === 'Chords' || trimmed === 'Guitar' || trimmed === 'Ukulele' || trimmed === 'Piano') return false;
+            return true;
+        });
+
+    return {
+        text: cleanedLines.join('\n'),
+        title,
+        artist,
+        cleaned: true
+    };
 }
 
-// Parse ChordPro content into sections
-function parseContent(content) {
+/**
+ * Detect and convert chord sheet format
+ */
+export function editorDetectAndConvert(text) {
+    const lines = text.split('\n');
+    let chordLineCount = 0;
+    let consecutivePairs = 0;
+
+    for (let i = 0; i < lines.length - 1; i++) {
+        if (editorIsChordLine(lines[i]) && !editorIsChordLine(lines[i + 1]) && lines[i + 1].trim()) {
+            consecutivePairs++;
+        }
+        if (editorIsChordLine(lines[i])) {
+            chordLineCount++;
+        }
+    }
+
+    if (consecutivePairs >= 2 || chordLineCount >= 3) {
+        return editorConvertToChordPro(text);
+    }
+
+    return text;
+}
+
+/**
+ * Parse editor content into sections
+ */
+function editorParseContent(content) {
     const lines = content.split('\n');
     const sections = [];
     let currentSection = { label: 'Verse 1', lines: [] };
     let verseCount = 1;
-    let inSection = false;
 
     for (const line of lines) {
-        // Check for section markers
-        if (line.match(/^\{(start_of_verse|sov)/i)) {
-            if (currentSection.lines.length > 0) {
-                sections.push(currentSection);
-            }
+        if (line.match(/^\{(sov|start_of_verse)/i)) {
+            if (currentSection.lines.length > 0) sections.push(currentSection);
             const labelMatch = line.match(/:\s*(.+?)\s*\}/);
-            currentSection = {
-                label: labelMatch ? labelMatch[1] : `Verse ${++verseCount}`,
-                lines: []
-            };
-            inSection = true;
+            currentSection = { label: labelMatch ? labelMatch[1] : `Verse ${++verseCount}`, lines: [] };
             continue;
         }
-        if (line.match(/^\{(start_of_chorus|soc)/i)) {
-            if (currentSection.lines.length > 0) {
-                sections.push(currentSection);
-            }
+        if (line.match(/^\{(soc|start_of_chorus)/i)) {
+            if (currentSection.lines.length > 0) sections.push(currentSection);
             currentSection = { label: 'Chorus', type: 'chorus', lines: [] };
-            inSection = true;
             continue;
         }
-        if (line.match(/^\{(end_of_verse|eov|end_of_chorus|eoc)/i)) {
-            if (currentSection.lines.length > 0) {
-                sections.push(currentSection);
-            }
+        if (line.match(/^\{(eov|eoc|end_of)/i)) {
+            if (currentSection.lines.length > 0) sections.push(currentSection);
             currentSection = { label: `Verse ${++verseCount}`, lines: [] };
-            inSection = false;
             continue;
         }
-
-        // Skip other directives
         if (line.startsWith('{')) continue;
 
-        // Blank line = new section (if not in explicit section)
-        if (!line.trim() && !inSection) {
+        if (!line.trim()) {
             if (currentSection.lines.length > 0) {
                 sections.push(currentSection);
                 currentSection = { label: `Verse ${++verseCount}`, lines: [] };
@@ -211,15 +359,14 @@ function parseContent(content) {
         }
     }
 
-    if (currentSection.lines.length > 0) {
-        sections.push(currentSection);
-    }
-
+    if (currentSection.lines.length > 0) sections.push(currentSection);
     return sections;
 }
 
-// Render a single line with chords above lyrics
-function renderLine(line) {
+/**
+ * Render a line in the editor preview
+ */
+function editorRenderLine(line) {
     const chords = [];
     let lyrics = '';
     const regex = /\[([^\]]+)\]/g;
@@ -228,10 +375,7 @@ function renderLine(line) {
 
     while ((match = regex.exec(line)) !== null) {
         lyrics += line.slice(lastIndex, match.index);
-        chords.push({
-            chord: match[1],
-            position: lyrics.length
-        });
+        chords.push({ chord: match[1], position: lyrics.length });
         lastIndex = regex.lastIndex;
     }
     lyrics += line.slice(lastIndex);
@@ -244,8 +388,8 @@ function renderLine(line) {
     let lastPos = 0;
 
     for (const { chord, position } of chords) {
-        const displayChord = nashvilleMode && currentKey
-            ? toNashville(chord, currentKey)
+        const displayChord = editorNashvilleMode && editorDetectedKey
+            ? toNashville(chord, editorDetectedKey)
             : chord;
         const spaces = Math.max(0, position - lastPos);
         chordLine += ' '.repeat(spaces) + displayChord;
@@ -260,31 +404,26 @@ function renderLine(line) {
     `;
 }
 
-function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-}
+/**
+ * Update editor preview
+ */
+export function updateEditorPreview() {
+    if (!editorContentEl || !editorPreviewContentEl) return;
 
-// Update preview
-function updatePreview() {
-    const title = titleInput.value.trim();
-    const artist = artistInput.value.trim();
-    const writer = writerInput.value.trim();
-    const content = contentInput.value;
+    const title = editorTitleEl?.value.trim() || '';
+    const artist = editorArtistEl?.value.trim() || '';
+    const content = editorContentEl.value;
 
     if (!content.trim()) {
-        previewContent.innerHTML = '<p class="preview-placeholder">Enter a song to see preview...</p>';
+        editorPreviewContentEl.innerHTML = '<p class="preview-placeholder">Enter a song to see preview...</p>';
         return;
     }
 
-    // Detect key
     const chords = extractChords(content);
     const { key } = detectKey(chords);
-    currentKey = key;
+    editorDetectedKey = key;
 
-    // Parse and render
-    const sections = parseContent(content);
+    const sections = editorParseContent(content);
 
     let html = '<div class="song-header">';
     if (title) html += `<h2 class="song-title">${escapeHtml(title)}</h2>`;
@@ -300,31 +439,32 @@ function updatePreview() {
         html += `<div class="section-label">${escapeHtml(section.label)}</div>`;
         html += '<div class="section-content">';
         for (const line of section.lines) {
-            html += renderLine(line);
+            html += editorRenderLine(line);
         }
         html += '</div></div>';
     }
 
-    previewContent.innerHTML = html;
+    editorPreviewContentEl.innerHTML = html;
 }
 
-// Generate ChordPro file content
-function generateChordPro() {
-    const title = titleInput.value.trim();
-    const artist = artistInput.value.trim();
-    const writer = writerInput.value.trim();
-    const content = contentInput.value.trim();
+/**
+ * Generate ChordPro output
+ */
+export function editorGenerateChordPro() {
+    const title = editorTitleEl?.value.trim() || '';
+    const artist = editorArtistEl?.value.trim() || '';
+    const writer = editorWriterEl?.value.trim() || '';
+    const content = editorContentEl?.value.trim() || '';
 
     let output = '';
 
     if (title) output += `{meta: title ${title}}\n`;
     if (artist) output += `{meta: artist ${artist}}\n`;
-    if (writer) output += `{meta: writer ${writer}}\n`;
+    if (writer) output += `{meta: composer ${writer}}\n`;
 
     if (output) output += '\n';
 
-    // Parse content and wrap in verse markers
-    const sections = parseContent(content);
+    const sections = editorParseContent(content);
 
     for (const section of sections) {
         if (section.type === 'chorus') {
@@ -347,260 +487,299 @@ function generateChordPro() {
     return output.trim() + '\n';
 }
 
-// Generate filename from title
-function generateFilename(title) {
+/**
+ * Generate a filename from title
+ */
+export function editorGenerateFilename(title) {
     if (!title) return 'untitled.pro';
-    return title
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, '')
-        .slice(0, 50) + '.pro';
+    return title.toLowerCase().replace(/[^a-z0-9]+/g, '').slice(0, 50) + '.pro';
 }
 
-// Copy to clipboard
-copyBtn.addEventListener('click', async () => {
-    const chordpro = generateChordPro();
-    try {
-        await navigator.clipboard.writeText(chordpro);
-        saveStatus.textContent = 'Copied!';
-        saveStatus.className = 'save-status success';
-        setTimeout(() => { saveStatus.textContent = ''; }, 2000);
-    } catch (err) {
-        saveStatus.textContent = 'Copy failed';
-        saveStatus.className = 'save-status error';
+/**
+ * Toggle hints panel
+ */
+function toggleHints() {
+    if (!hintsPanelEl || !hintsBackdropEl) return;
+    const isHidden = hintsPanelEl.classList.contains('hidden');
+    if (isHidden) {
+        hintsPanelEl.classList.remove('hidden');
+        hintsBackdropEl.classList.remove('hidden');
+    } else {
+        closeHints();
     }
-});
-
-// Save to server
-saveBtn.addEventListener('click', async () => {
-    const title = titleInput.value.trim();
-    if (!title) {
-        saveStatus.textContent = 'Title required';
-        saveStatus.className = 'save-status error';
-        return;
-    }
-
-    const chordpro = generateChordPro();
-    const filename = generateFilename(title);
-
-    try {
-        const response = await fetch('http://localhost:8081/save', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ filename, content: chordpro })
-        });
-
-        if (response.ok) {
-            const result = await response.json();
-            saveStatus.textContent = `Saved: ${result.path}`;
-            saveStatus.className = 'save-status success';
-        } else {
-            throw new Error('Save failed');
-        }
-    } catch (err) {
-        saveStatus.textContent = 'Save failed - is editor server running?';
-        saveStatus.className = 'save-status error';
-    }
-});
-
-// Nashville toggle
-nashvilleCheckbox.addEventListener('change', (e) => {
-    nashvilleMode = e.target.checked;
-    updatePreview();
-});
-
-// Smart paste detection and conversion
-function isChordLine(line) {
-    if (!line.trim()) return false;
-
-    // Check if line is mostly chords with spaces
-    const words = line.trim().split(/\s+/);
-    if (words.length === 0) return false;
-
-    const chordPattern = /^[A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?$/;
-    const chordCount = words.filter(w => chordPattern.test(w)).length;
-
-    // If most words are chords, it's a chord line
-    return chordCount / words.length > 0.5;
 }
 
-function isSectionMarker(line) {
-    const trimmed = line.trim();
-    // Match [Verse 1], [Chorus], [Instrumental break], etc.
-    return /^\[.+\]$/.test(trimmed);
+/**
+ * Close hints panel
+ */
+function closeHints() {
+    if (hintsPanelEl) hintsPanelEl.classList.add('hidden');
+    if (hintsBackdropEl) hintsBackdropEl.classList.add('hidden');
 }
 
-function isInstrumentalLine(line) {
-    // Match lines like "—G---/G---/C---/" or "G---/G---/"
-    return /^[—\-]?[A-G][#b]?---/.test(line.trim());
-}
+/**
+ * Initialize editor module with DOM elements
+ */
+export function initEditor(options) {
+    const {
+        editorPanel,
+        editorTitle,
+        editorArtist,
+        editorWriter,
+        editorContent,
+        editorPreviewContent,
+        editorCopyBtn,
+        editorSaveBtn,
+        editorSubmitBtn,
+        editorStatus,
+        editorNashville,
+        editorComment,
+        editCommentRow,
+        editSongBtn,
+        hintsBtn,
+        hintsPanel,
+        hintsBackdrop,
+        hintsClose,
+        navSearch,
+        navAddSong,
+        navFavorites,
+        resultsDiv,
+        songView
+    } = options;
 
-function extractChordsWithPositions(chordLine) {
-    const chords = [];
-    const pattern = /([A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?)/g;
-    let match;
+    editorPanelEl = editorPanel;
+    editorTitleEl = editorTitle;
+    editorArtistEl = editorArtist;
+    editorWriterEl = editorWriter;
+    editorContentEl = editorContent;
+    editorPreviewContentEl = editorPreviewContent;
+    editorCopyBtnEl = editorCopyBtn;
+    editorSaveBtnEl = editorSaveBtn;
+    editorSubmitBtnEl = editorSubmitBtn;
+    editorStatusEl = editorStatus;
+    editorNashvilleEl = editorNashville;
+    editorCommentEl = editorComment;
+    editCommentRowEl = editCommentRow;
+    editSongBtnEl = editSongBtn;
+    hintsBtnEl = hintsBtn;
+    hintsPanelEl = hintsPanel;
+    hintsBackdropEl = hintsBackdrop;
+    hintsCloseEl = hintsClose;
+    navSearchEl = navSearch;
+    navAddSongEl = navAddSong;
+    navFavoritesEl = navFavorites;
+    resultsDivEl = resultsDiv;
+    songViewEl = songView;
 
-    while ((match = pattern.exec(chordLine)) !== null) {
-        chords.push({
-            chord: match[1],
-            position: match.index
-        });
-    }
-
-    return chords;
-}
-
-function alignChordsToLyrics(chordLine, lyricLine, chordPositions) {
-    if (!chordPositions.length) return lyricLine;
-
-    // Sort by position descending so we can insert right to left
-    const sorted = [...chordPositions].sort((a, b) => b.position - a.position);
-
-    let result = lyricLine;
-
-    for (const { chord, position } of sorted) {
-        // Find the position in lyrics that corresponds to the chord position
-        // Scale if chord line and lyric line have different lengths
-        let lyricPos = position;
-
-        // If position is beyond lyric length, put at end
-        if (lyricPos > result.length) {
-            lyricPos = result.length;
-        }
-
-        // Insert chord at position
-        result = result.slice(0, lyricPos) + `[${chord}]` + result.slice(lyricPos);
-    }
-
-    return result;
-}
-
-function convertToChordPro(text) {
-    const lines = text.split('\n');
-    const result = [];
-    let i = 0;
-
-    while (i < lines.length) {
-        const line = lines[i];
-        const trimmed = line.trim();
-
-        // Empty line - keep as section break
-        if (!trimmed) {
-            result.push('');
-            i++;
-            continue;
-        }
-
-        // Section marker like [Verse 1] or [Chorus]
-        if (isSectionMarker(trimmed)) {
-            const sectionName = trimmed.slice(1, -1).trim();
-            const lowerName = sectionName.toLowerCase();
-
-            if (lowerName.includes('chorus')) {
-                result.push('{soc}');
-            } else if (lowerName.includes('verse')) {
-                result.push(`{sov: ${sectionName}}`);
-            } else if (lowerName.includes('instrumental') || lowerName.includes('break')) {
-                result.push(`{comment: ${sectionName}}`);
-            } else if (lowerName.includes('bridge')) {
-                result.push('{sob}');
-            } else {
-                result.push(`{comment: ${sectionName}}`);
+    // Edit song button
+    if (editSongBtnEl) {
+        editSongBtnEl.addEventListener('click', () => {
+            if (currentSong) {
+                enterEditMode(currentSong);
             }
-            i++;
-            continue;
-        }
+        });
+    }
 
-        // Instrumental notation line
-        if (isInstrumentalLine(trimmed)) {
-            // Convert to comment
-            result.push(`{comment: ${trimmed}}`);
-            i++;
-            continue;
-        }
+    // Paste handler
+    if (editorContentEl) {
+        editorContentEl.addEventListener('paste', () => {
+            setTimeout(() => {
+                let text = editorContentEl.value;
+                let statusMessage = '';
 
-        // Check if this is a chord line followed by lyrics
-        if (isChordLine(line)) {
-            const chordPositions = extractChordsWithPositions(line);
+                const ugResult = cleanUltimateGuitarPaste(text);
+                if (ugResult.cleaned) {
+                    text = ugResult.text;
+                    statusMessage = 'Imported from Ultimate Guitar';
 
-            // Look ahead for lyric line
-            if (i + 1 < lines.length) {
-                const nextLine = lines[i + 1];
-
-                // If next line is empty, just chords, or another chord line,
-                // this is a chord-only line
-                if (!nextLine.trim() || isChordLine(nextLine) || isSectionMarker(nextLine.trim())) {
-                    // Chord-only line - convert to comment
-                    const chords = chordPositions.map(c => c.chord).join(' ');
-                    result.push(`{comment: ${chords}}`);
-                    i++;
-                    continue;
+                    if (ugResult.title && editorTitleEl && !editorTitleEl.value.trim()) {
+                        editorTitleEl.value = ugResult.title;
+                    }
+                    if (ugResult.artist && editorArtistEl && !editorArtistEl.value.trim()) {
+                        editorArtistEl.value = ugResult.artist;
+                    }
                 }
 
-                // Next line is lyrics - align chords to it
-                const chordproLine = alignChordsToLyrics(line, nextLine, chordPositions);
-                result.push(chordproLine);
-                i += 2; // Skip both chord line and lyric line
-                continue;
-            } else {
-                // No more lines - chord only
-                const chords = chordPositions.map(c => c.chord).join(' ');
-                result.push(`{comment: ${chords}}`);
-                i++;
-                continue;
+                const converted = editorDetectAndConvert(text);
+                if (converted !== text || ugResult.cleaned) {
+                    editorContentEl.value = converted;
+                    updateEditorPreview();
+                    if (editorStatusEl) {
+                        editorStatusEl.textContent = statusMessage || 'Converted from chord sheet format';
+                        editorStatusEl.className = 'save-status success';
+                        setTimeout(() => { editorStatusEl.textContent = ''; }, 3000);
+                    }
+                }
+            }, 0);
+        });
+
+        editorContentEl.addEventListener('input', updateEditorPreview);
+    }
+
+    if (editorTitleEl) editorTitleEl.addEventListener('input', updateEditorPreview);
+    if (editorArtistEl) editorArtistEl.addEventListener('input', updateEditorPreview);
+
+    if (editorNashvilleEl) {
+        editorNashvilleEl.addEventListener('change', (e) => {
+            setEditorNashvilleMode(e.target.checked);
+            updateEditorPreview();
+        });
+    }
+
+    // Hints
+    if (hintsBtnEl) hintsBtnEl.addEventListener('click', toggleHints);
+    if (hintsCloseEl) hintsCloseEl.addEventListener('click', closeHints);
+    if (hintsBackdropEl) hintsBackdropEl.addEventListener('click', closeHints);
+
+    // Copy button
+    if (editorCopyBtnEl) {
+        editorCopyBtnEl.addEventListener('click', async () => {
+            const chordpro = editorGenerateChordPro();
+            try {
+                await navigator.clipboard.writeText(chordpro);
+                if (editorStatusEl) {
+                    editorStatusEl.textContent = 'Copied!';
+                    editorStatusEl.className = 'save-status success';
+                    setTimeout(() => { editorStatusEl.textContent = ''; }, 2000);
+                }
+            } catch (err) {
+                if (editorStatusEl) {
+                    editorStatusEl.textContent = 'Copy failed';
+                    editorStatusEl.className = 'save-status error';
+                }
             }
-        }
-
-        // Regular lyric line (no chords above)
-        result.push(line);
-        i++;
+        });
     }
 
-    return result.join('\n');
+    // Save button
+    if (editorSaveBtnEl) {
+        editorSaveBtnEl.addEventListener('click', () => {
+            const title = editorTitleEl?.value.trim();
+            if (!title) {
+                if (editorStatusEl) {
+                    editorStatusEl.textContent = 'Title required';
+                    editorStatusEl.className = 'save-status error';
+                }
+                return;
+            }
+
+            const chordpro = editorGenerateChordPro();
+            const filename = editorGenerateFilename(title);
+
+            const blob = new Blob([chordpro], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            if (editorStatusEl) {
+                editorStatusEl.textContent = `Downloaded: ${filename}`;
+                editorStatusEl.className = 'save-status success';
+                setTimeout(() => { editorStatusEl.textContent = ''; }, 3000);
+            }
+        });
+    }
+
+    // Submit button
+    if (editorSubmitBtnEl) {
+        editorSubmitBtnEl.addEventListener('click', () => {
+            const title = editorTitleEl?.value.trim();
+            const artist = editorArtistEl?.value.trim();
+
+            if (!title) {
+                if (editorStatusEl) {
+                    editorStatusEl.textContent = 'Title required';
+                    editorStatusEl.className = 'save-status error';
+                }
+                return;
+            }
+
+            const chordpro = editorGenerateChordPro();
+            const content = editorContentEl?.value.trim();
+
+            if (!content) {
+                if (editorStatusEl) {
+                    editorStatusEl.textContent = 'Song content required';
+                    editorStatusEl.className = 'save-status error';
+                }
+                return;
+            }
+
+            let issueTitle, issueBody, labels;
+
+            if (editMode && editingSongId) {
+                const comment = editorCommentEl?.value.trim();
+                if (!comment) {
+                    if (editorStatusEl) {
+                        editorStatusEl.textContent = 'Please describe your changes';
+                        editorStatusEl.className = 'save-status error';
+                    }
+                    return;
+                }
+
+                issueTitle = `Correction: ${title}`;
+                labels = 'song-correction';
+                issueBody = `## Song Correction
+
+**Song ID:** ${editingSongId}
+**Title:** ${title}
+**Artist:** ${artist || 'Unknown'}
+
+### Changes Made
+${comment}
+
+### Updated ChordPro Content
+
+\`\`\`chordpro
+${chordpro}
+\`\`\`
+
+---
+*Please review this correction. Add the \`approved\` label to process it automatically.*`;
+
+            } else {
+                issueTitle = artist
+                    ? `Song: ${title} by ${artist}`
+                    : `Song: ${title}`;
+                labels = 'song-submission';
+                issueBody = `## Song Submission
+
+**Title:** ${title}
+**Artist:** ${artist || 'Unknown'}
+**Submitted via:** Bluegrass Songbook Editor
+
+### ChordPro Content
+
+\`\`\`chordpro
+${chordpro}
+\`\`\`
+
+---
+*Please review this submission. Add the \`approved\` label to process it automatically.*`;
+            }
+
+            const params = new URLSearchParams({
+                title: issueTitle,
+                body: issueBody,
+                labels: labels
+            });
+
+            const issueUrl = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
+            window.open(issueUrl, '_blank');
+
+            if (editorStatusEl) {
+                editorStatusEl.textContent = 'Opening GitHub...';
+                editorStatusEl.className = 'save-status success';
+                setTimeout(() => { editorStatusEl.textContent = ''; }, 3000);
+            }
+
+            if (editMode) {
+                exitEditMode();
+            }
+        });
+    }
 }
-
-function detectAndConvert(text) {
-    // Check if the text looks like chord-above-lyrics format
-    const lines = text.split('\n');
-    let chordLineCount = 0;
-    let consecutivePairs = 0;
-
-    for (let i = 0; i < lines.length - 1; i++) {
-        if (isChordLine(lines[i]) && !isChordLine(lines[i + 1]) && lines[i + 1].trim()) {
-            consecutivePairs++;
-        }
-        if (isChordLine(lines[i])) {
-            chordLineCount++;
-        }
-    }
-
-    // If we have several chord-lyric pairs, it's likely chord-above format
-    if (consecutivePairs >= 2 || chordLineCount >= 3) {
-        return convertToChordPro(text);
-    }
-
-    // Already in ChordPro format or plain text
-    return text;
-}
-
-// Handle paste event
-contentInput.addEventListener('paste', (e) => {
-    // Let the paste happen, then convert
-    setTimeout(() => {
-        const converted = detectAndConvert(contentInput.value);
-        if (converted !== contentInput.value) {
-            contentInput.value = converted;
-            updatePreview();
-            saveStatus.textContent = 'Converted from chord-above format';
-            saveStatus.className = 'save-status success';
-            setTimeout(() => { saveStatus.textContent = ''; }, 3000);
-        }
-    }, 0);
-});
-
-// Live preview on input
-titleInput.addEventListener('input', updatePreview);
-artistInput.addEventListener('input', updatePreview);
-contentInput.addEventListener('input', updatePreview);
-
-// Initial preview
-updatePreview();
