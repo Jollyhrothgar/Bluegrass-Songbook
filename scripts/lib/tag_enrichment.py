@@ -394,6 +394,10 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
                 if tag not in tags:
                     tags[tag] = data
 
+        # Add Instrumental tag for tunes (has ABC notation, minimal lyrics)
+        if song.get('is_instrumental'):
+            tags['Instrumental'] = {'score': 90, 'source': 'content'}
+
         song['tags'] = tags
         if tags:
             songs_tagged += 1
