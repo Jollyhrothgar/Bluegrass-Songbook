@@ -304,6 +304,7 @@ def parse_chordpro_metadata(content: str) -> dict:
         'x_type': None,
         'x_rhythm': None,
         'x_tunearch_url': None,
+        'x_genre': None,
     }
 
     # Match {meta: key value} directives (our format)
@@ -336,6 +337,8 @@ def parse_chordpro_metadata(content: str) -> dict:
             metadata['x_rhythm'] = value
         elif key == 'x_tunearch_url':
             metadata['x_tunearch_url'] = value
+        elif key == 'x_genre':
+            metadata['x_genre'] = value
         elif key in metadata:
             metadata[key] = value
 
@@ -546,6 +549,8 @@ def build_index(parsed_dirs: list[Path], output_file: Path, enrich_tags: bool = 
             song['rhythm'] = metadata['x_rhythm']
         if metadata.get('x_tunearch_url'):
             song['tunearch_url'] = metadata['x_tunearch_url']
+        if metadata.get('x_genre'):
+            song['source_genres'] = metadata['x_genre']
 
         # Add version/provenance metadata if present (omit null fields to save space)
         if metadata['book']:
@@ -566,13 +571,6 @@ def build_index(parsed_dirs: list[Path], output_file: Path, enrich_tags: bool = 
         # Add ABC content for instrumentals (omit if not present to save space)
         if abc_content:
             song['abc_content'] = abc_content
-        if is_tune:
-            song['is_instrumental'] = True
-        if metadata.get('x_rhythm'):
-            song['rhythm'] = metadata['x_rhythm']
-        if metadata.get('x_tunearch_url'):
-            song['tunearch_url'] = metadata['x_tunearch_url']
-
         songs.append(song)
 
     # Enrich songs with tags (MusicBrainz + harmonic analysis)

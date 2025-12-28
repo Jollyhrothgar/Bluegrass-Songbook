@@ -33,6 +33,18 @@ ARTIST_TAGS_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'arti
 # Tag Taxonomy
 # =============================================================================
 
+# Map source genre strings (from TuneArch x_genre) to our taxonomy
+SOURCE_GENRE_MAP = {
+    'bluegrass': 'Bluegrass',
+    'old-time': 'OldTime',
+    'old time': 'OldTime',
+    'oldtime': 'OldTime',
+    'gospel': 'Gospel',
+    'folk': 'Folk',
+    'country': 'ClassicCountry',
+    'western swing': 'WesternSwing',
+}
+
 # Map MusicBrainz tags to our taxonomy
 MB_TO_TAXONOMY = {
     # Primary Genres
@@ -397,6 +409,15 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
         # Add Instrumental tag for tunes (has ABC notation, minimal lyrics)
         if song.get('is_instrumental'):
             tags['Instrumental'] = {'score': 90, 'source': 'content'}
+
+        # Add genre tags from source metadata (e.g., TuneArch x_genre)
+        if song.get('source_genres'):
+            for genre in song['source_genres'].split(','):
+                genre_lower = genre.strip().lower()
+                if genre_lower in SOURCE_GENRE_MAP:
+                    our_tag = SOURCE_GENRE_MAP[genre_lower]
+                    if our_tag not in tags:
+                        tags[our_tag] = {'score': 70, 'source': 'metadata'}
 
         song['tags'] = tags
         if tags:
