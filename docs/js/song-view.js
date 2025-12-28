@@ -516,6 +516,11 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         metaHtml += `<div class="meta-item"><span class="meta-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${escapeHtml(song.id)}</a></div>`;
     }
 
+    // TuneArch attribution link
+    if (song?.tunearch_url) {
+        metaHtml += `<div class="meta-item"><span class="meta-label">From:</span> <a href="${song.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a></div>`;
+    }
+
     // Build view toggle only for hybrid songs (both ABC and chords)
     const viewToggleHtml = (hasAbc && hasChords) ? `
         <div class="view-toggle">
