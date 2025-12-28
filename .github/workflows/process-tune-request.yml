@@ -1,0 +1,95 @@
+name: Process Tune Request
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  process-tune-request:
+    # Only run when 'approved' label is added to an issue with 'tune-request' label
+    if: github.event.label.name == 'approved' && contains(github.event.issue.labels.*.name, 'tune-request')
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Extract tune name from issue
+        id: extract
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: |
+          # Extract tune name from issue title (format: "Tune Request: <tune name>")
+          TUNE_NAME=$(echo "$ISSUE_TITLE" | sed 's/Tune Request: //')
+          echo "tune_name=$TUNE_NAME" >> $GITHUB_OUTPUT
+
+      - name: Fetch tune from TuneArch
+        env:
+          TUNE_NAME: ${{ steps.extract.outputs.tune_name }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: |
+          python scripts/lib/fetch_tune.py \
+            --tune "$TUNE_NAME" \
+            --issue-number "$ISSUE_NUMBER" \
+            --author "$ISSUE_AUTHOR"
+
+      - name: Rebuild search index
+        run: |
+          pip install beautifulsoup4
+          python scripts/lib/build_index.py --no-tags
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sources/tunearch/parsed/
+          git add docs/data/index.jsonl
+          git diff --staged --quiet || git commit -m "Add tune from request #${{ github.event.issue.number }}
+
+          ${{ github.event.issue.title }}
+
+          🤖 Generated with [Claude Code](https://claude.ai/claude-code)"
+          git push
+
+      - name: Close issue with comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Read the filename that was created
+            let filename = 'unknown';
+            try {
+              filename = fs.readFileSync('/tmp/tune_filename.txt', 'utf8').trim();
+            } catch (e) {
+              console.log('Could not read filename');
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ **Tune added to the songbook!**\n\nFile: \`sources/tunearch/parsed/${filename}\`\n\nThe search index has been rebuilt. The tune should appear in search shortly.\n\nThank you for your suggestion!`
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });

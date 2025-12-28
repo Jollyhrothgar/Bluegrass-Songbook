@@ -264,6 +264,26 @@ def compute_nashville_data(content: str) -> dict:
     }
 
 
+def extract_abc_content(content: str) -> Optional[str]:
+    """Extract ABC notation from ChordPro {start_of_abc} blocks."""
+    match = re.search(
+        r'\{start_of_abc\}\s*\n(.*?)\n\{end_of_abc\}',
+        content,
+        re.DOTALL | re.IGNORECASE
+    )
+    if match:
+        return match.group(1).strip()
+    return None
+
+
+def is_instrumental(content: str, lyrics: str) -> bool:
+    """Check if song is an instrumental (ABC present, minimal/no lyrics)."""
+    has_abc = '{start_of_abc}' in content.lower()
+    # Instrumental if has ABC and lyrics are very short or empty
+    has_minimal_lyrics = len(lyrics.strip()) < 50
+    return has_abc and has_minimal_lyrics
+
+
 def parse_chordpro_metadata(content: str) -> dict:
     """Extract metadata from ChordPro content."""
     metadata = {
@@ -280,6 +300,10 @@ def parse_chordpro_metadata(content: str) -> dict:
         'arrangement_by': None,
         'version_notes': None,
         'canonical_id': None,
+        # Instrumental metadata
+        'x_type': None,
+        'x_rhythm': None,
+        'x_tunearch_url': None,
     }
 
     # Match {meta: key value} directives (our format)
@@ -306,6 +330,12 @@ def parse_chordpro_metadata(content: str) -> dict:
             metadata['version_notes'] = value
         elif key == 'x_canonical_id':
             metadata['canonical_id'] = value
+        elif key == 'x_type':
+            metadata['x_type'] = value
+        elif key == 'x_rhythm':
+            metadata['x_rhythm'] = value
+        elif key == 'x_tunearch_url':
+            metadata['x_tunearch_url'] = value
         elif key in metadata:
             metadata[key] = value
 
@@ -386,16 +416,28 @@ def extract_lyrics(content: str) -> str:
     """Extract plain lyrics (without chords) from ChordPro content."""
     lines = []
     in_verse = False
+    in_abc = False
 
     for line in content.split('\n'):
         line = line.strip()
 
-        # Skip directives
+        # Skip directives and track ABC blocks
         if line.startswith('{') and line.endswith('}'):
-            if line == '{sov}':
+            lower_line = line.lower()
+            if lower_line == '{start_of_abc}':
+                in_abc = True
+                continue
+            elif lower_line == '{end_of_abc}':
+                in_abc = False
+                continue
+            elif line == '{sov}':
                 in_verse = True
             elif line == '{eov}':
                 in_verse = False
+            continue
+
+        # Skip ABC notation content
+        if in_abc:
             continue
 
         # Skip empty lines
@@ -455,6 +497,15 @@ def build_index(parsed_dirs: list[Path], output_file: Path, enrich_tags: bool = 
         lyrics = extract_lyrics(content)
         first_line = get_first_line(lyrics)
 
+        # Extract ABC content for instrumentals
+        abc_content = extract_abc_content(content)
+        is_tune = is_instrumental(content, lyrics)
+
+        # For instrumentals, use rhythm as first line if no lyrics
+        if is_tune and not first_line and metadata.get('x_rhythm'):
+            key_str = metadata.get('key') or 'Unknown key'
+            first_line = f"{metadata['x_rhythm']} in {key_str}"
+
         # Skip songs without title
         if not metadata['title']:
             continue
@@ -501,6 +552,16 @@ def build_index(parsed_dirs: list[Path], output_file: Path, enrich_tags: bool = 
             song['version_notes'] = metadata['version_notes']
         if metadata['canonical_id']:
             song['canonical_id'] = metadata['canonical_id']
+
+        # Add ABC content for instrumentals (omit if not present to save space)
+        if abc_content:
+            song['abc_content'] = abc_content
+        if is_tune:
+            song['is_instrumental'] = True
+        if metadata.get('x_rhythm'):
+            song['rhythm'] = metadata['x_rhythm']
+        if metadata.get('x_tunearch_url'):
+            song['tunearch_url'] = metadata['x_tunearch_url']
 
         songs.append(song)
 
@@ -567,6 +628,7 @@ def main():
         Path('sources/classic-country/parsed'),
         Path('sources/golden-standard/parsed'),
         Path('sources/manual/parsed'),
+        Path('sources/tunearch/parsed'),
     ]
     output_file = Path('docs/data/index.jsonl')
 

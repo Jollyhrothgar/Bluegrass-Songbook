@@ -1,7 +1,7 @@
 /* Theme variables */
 :root {
-    --bg: #fafafa;
-    --bg-secondary: #fafafa;
+    --bg: #ffffff;
+    --bg-secondary: #f5f5f5;
     --text: #000000;
     --text-secondary: #666666;
     --border: #dddddd;
@@ -2399,4 +2399,222 @@ mark {
     .about-links {
         align-items: center;
     }
+}
+
+/* ABC Notation Styles */
+.view-toggle {
+    display: flex;
+    gap: 0;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    width: fit-content;
+}
+
+.toggle-btn {
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.toggle-btn:not(:last-child) {
+    border-right: 1px solid var(--border);
+}
+
+.toggle-btn.active {
+    background: var(--accent);
+    color: white;
+}
+
+.toggle-btn:hover:not(.active):not(:disabled) {
+    background: var(--bg);
+}
+
+.toggle-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.abc-view {
+    margin-bottom: 1rem;
+}
+
+.abc-notation {
+    background: var(--bg-secondary);
+    padding: 1rem 1rem 1.5rem 1rem;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    overflow: visible;
+}
+
+.abc-notation svg {
+    display: block;
+    height: auto;
+}
+
+/* Dark mode adjustments for ABC SVG */
+[data-theme="dark"] .abc-notation svg path {
+    stroke: var(--text);
+}
+
+[data-theme="dark"] .abc-notation svg text {
+    fill: var(--text);
+}
+
+/* Note highlighting during playback */
+.abcjs-playing path,
+.abcjs-playing rect,
+.abcjs-playing circle {
+    fill: #2563eb !important;
+    stroke: #2563eb !important;
+}
+
+[data-theme="dark"] .abcjs-playing path,
+[data-theme="dark"] .abcjs-playing rect,
+[data-theme="dark"] .abcjs-playing circle {
+    fill: #60a5fa !important;
+    stroke: #60a5fa !important;
+}
+
+
+.abc-btn {
+    padding: 0.5rem 1rem;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.abc-btn:hover {
+    background: var(--accent-hover);
+}
+
+.abc-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ABC render options */
+.abc-render-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    align-items: stretch;
+}
+
+/* Control buckets - visually grouped controls */
+.abc-control-bucket {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    min-width: fit-content;
+}
+
+.abc-control-bucket .bucket-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.abc-control-bucket .bucket-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+/* Playback bucket styling */
+.abc-playback-bucket {
+    margin-left: auto;
+    flex-direction: row;
+    align-items: center;
+}
+
+.abc-playback-bucket .bucket-controls {
+    gap: 0.5rem;
+}
+
+.abc-select {
+    padding: 0.35rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.abc-select:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.size-display {
+    font-size: 0.85rem;
+    min-width: 2.5rem;
+    text-align: center;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.tempo-input {
+    width: 3.5rem;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.85rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    font-weight: 500;
+}
+
+.tempo-input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* Hide number input spinners */
+.tempo-input::-webkit-outer-spin-button,
+.tempo-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.tempo-input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.abc-fallback {
+    font-family: monospace;
+    font-size: 0.85rem;
+    white-space: pre-wrap;
+    background: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: 4px;
+    color: var(--text);
+    overflow-x: auto;
+}
+
+.instrumental-notice {
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-secondary);
+    font-style: italic;
 }

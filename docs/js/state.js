@@ -67,6 +67,30 @@ export const FONT_SIZES = {
 };
 
 // ============================================
+// ABC NOTATION STATE
+// ============================================
+
+export let showAbcNotation = true;         // Show ABC notation when available
+export let abcjsRendered = null;           // Reference to ABCJS rendered object
+export let currentAbcContent = null;       // Current ABC content for re-rendering
+export let abcTempoBpm = 120;              // Playback tempo in BPM (60 - 240)
+export let abcTranspose = 0;               // Semitones to transpose (-6 to +6)
+export let abcScale = 1.0;                 // Size scale (0.7 - 1.5)
+export let abcSynth = null;                // Persistent synth instance
+export let abcTimingCallbacks = null;      // Persistent timing callbacks
+export let abcIsPlaying = false;           // Playback state for toggle button
+
+export function setShowAbcNotation(value) { showAbcNotation = value; }
+export function setAbcjsRendered(value) { abcjsRendered = value; }
+export function setCurrentAbcContent(value) { currentAbcContent = value; }
+export function setAbcTempoBpm(value) { abcTempoBpm = value; }
+export function setAbcTranspose(value) { abcTranspose = value; }
+export function setAbcScale(value) { abcScale = value; }
+export function setAbcSynth(value) { abcSynth = value; }
+export function setAbcTimingCallbacks(value) { abcTimingCallbacks = value; }
+export function setAbcIsPlaying(value) { abcIsPlaying = value; }
+
+// ============================================
 // KEY/TRANSPOSITION STATE
 // ============================================
 

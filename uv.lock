@@ -39,6 +39,7 @@ dependencies = [
     { name = "matplotlib" },
     { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "numpy", version = "2.3.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "requests" },
 ]
 
 [package.optional-dependencies]
@@ -68,6 +69,7 @@ requires-dist = [
     { name = "numpy", marker = "extra == 'search'", specifier = ">=1.24.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.0.0" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=4.0.0" },
+    { name = "requests", specifier = ">=2.32.5" },
     { name = "sentence-transformers", marker = "extra == 'search'", specifier = ">=2.2.0" },
 ]
 provides-extras = ["dev", "analysis", "search"]
