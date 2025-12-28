@@ -134,13 +134,14 @@
                         </a>
                     </div>
                 </div>
+                <button id="home-btn" class="icon-btn" title="Home">🏠</button>
                 <button id="theme-toggle" class="icon-btn" title="Toggle theme">
                     <span class="icon-sun">&#9728;</span>
                     <span class="icon-moon">&#9790;</span>
                 </button>
             </div>
             <h1 class="site-logo">
-                <img src="images/bluegrass_book_dark_logo.png" alt="Bluegrass Book">
+                <a href="#" id="logo-link"><img src="images/bluegrass_book_dark_logo.png" alt="Bluegrass Book"></a>
             </h1>
             <p id="subtitle" class="subtitle">Loading songs...</p>
         </header>
@@ -501,6 +502,6 @@ If you want to contribute, your contributions are welcome! Reach out to me, or s
     </div>
 
     <script src="js/supabase-auth.js"></script>
-    <script src="js/search.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
