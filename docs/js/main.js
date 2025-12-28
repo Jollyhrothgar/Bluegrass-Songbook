@@ -107,6 +107,24 @@ const tagDropdownContent = document.getElementById('tag-dropdown-content');
 const aboutModal = document.getElementById('about-modal');
 const aboutModalClose = document.getElementById('about-modal-close');
 
+// Feedback elements
+const feedbackBtn = document.getElementById('feedback-btn');
+const feedbackDropdown = document.getElementById('feedback-dropdown');
+const navFeedback = document.getElementById('nav-feedback');
+
+// Bug report modal
+const bugReportModal = document.getElementById('bug-report-modal');
+const bugReportModalClose = document.getElementById('bug-report-modal-close');
+const bugFeedback = document.getElementById('bug-feedback');
+const bugSubmitBtn = document.getElementById('bug-submit');
+
+// Contact modal
+const contactModal = document.getElementById('contact-modal');
+const contactModalClose = document.getElementById('contact-modal-close');
+const contactModalTitle = document.getElementById('contact-modal-title');
+const contactFeedback = document.getElementById('contact-feedback');
+const contactSubmitBtn = document.getElementById('contact-submit');
+
 // ============================================
 // THEME HANDLING
 // ============================================
@@ -401,6 +419,96 @@ function openListsModal() {
 
 function closeAboutModal() {
     aboutModal?.classList.add('hidden');
+}
+
+// ============================================
+// FEEDBACK
+// ============================================
+
+function toggleFeedbackDropdown() {
+    feedbackDropdown?.classList.toggle('hidden');
+}
+
+function closeFeedbackDropdown() {
+    feedbackDropdown?.classList.add('hidden');
+}
+
+function handleFeedbackOption(type) {
+    closeFeedbackDropdown();
+    closeSidebar();
+
+    const song = getCurrentSong();
+
+    switch (type) {
+        case 'song-issue':
+        case 'song-correction':
+            // Open bug report modal for song-specific issues
+            if (bugReportModal) {
+                bugReportModal.classList.remove('hidden');
+                if (bugFeedback) {
+                    bugFeedback.value = song ? `Song: ${song.title} by ${song.artist}\n\n` : '';
+                    bugFeedback.focus();
+                }
+            }
+            break;
+        case 'search-problem':
+        case 'app-issue':
+        case 'request-song':
+        case 'feature-idea':
+        case 'general':
+        case 'copyright':
+            // Open contact modal for general feedback
+            if (contactModal) {
+                const titles = {
+                    'search-problem': 'Report Search Problem',
+                    'app-issue': 'Report App Issue',
+                    'request-song': 'Request a Song',
+                    'feature-idea': 'Feature Idea',
+                    'general': 'General Feedback',
+                    'copyright': 'Copyright Concern'
+                };
+                if (contactModalTitle) {
+                    contactModalTitle.textContent = titles[type] || 'Send Feedback';
+                }
+                contactModal.classList.remove('hidden');
+                if (contactFeedback) {
+                    contactFeedback.value = '';
+                    contactFeedback.focus();
+                }
+            }
+            break;
+    }
+}
+
+function closeBugReportModal() {
+    bugReportModal?.classList.add('hidden');
+    if (bugFeedback) bugFeedback.value = '';
+}
+
+function closeContactModal() {
+    contactModal?.classList.add('hidden');
+    if (contactFeedback) contactFeedback.value = '';
+}
+
+function submitBugReport() {
+    const feedback = bugFeedback?.value.trim();
+    if (!feedback) return;
+
+    const subject = encodeURIComponent('Song Issue Report');
+    const body = encodeURIComponent(feedback);
+    window.open(`mailto:bluegrassbook.feedback@gmail.com?subject=${subject}&body=${body}`);
+    closeBugReportModal();
+}
+
+function submitContactForm() {
+    const feedback = contactFeedback?.value.trim();
+    if (!feedback) return;
+
+    const title = contactModalTitle?.textContent || 'Feedback';
+    const subject = encodeURIComponent(title);
+    const body = encodeURIComponent(feedback);
+    window.open(`mailto:bluegrassbook.feedback@gmail.com?subject=${subject}&body=${body}`);
+    closeContactModal();
 }
 
 // ============================================
@@ -1078,6 +1186,42 @@ function init() {
     aboutModal?.addEventListener('click', (e) => {
         if (e.target === aboutModal) closeAboutModal();
     });
+
+    // Feedback button and dropdown
+    feedbackBtn?.addEventListener('click', toggleFeedbackDropdown);
+    navFeedback?.addEventListener('click', () => {
+        closeSidebar();
+        toggleFeedbackDropdown();
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!feedbackBtn?.contains(e.target) && !feedbackDropdown?.contains(e.target)) {
+            closeFeedbackDropdown();
+        }
+    });
+
+    // Feedback option buttons
+    feedbackDropdown?.querySelectorAll('.feedback-option[data-type]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const type = btn.dataset.type;
+            if (type) handleFeedbackOption(type);
+        });
+    });
+
+    // Bug report modal
+    bugReportModalClose?.addEventListener('click', closeBugReportModal);
+    bugReportModal?.addEventListener('click', (e) => {
+        if (e.target === bugReportModal) closeBugReportModal();
+    });
+    bugSubmitBtn?.addEventListener('click', submitBugReport);
+
+    // Contact modal
+    contactModalClose?.addEventListener('click', closeContactModal);
+    contactModal?.addEventListener('click', (e) => {
+        if (e.target === contactModal) closeContactModal();
+    });
+    contactSubmitBtn?.addEventListener('click', submitContactForm);
 
     // List picker
     listPickerBtn?.addEventListener('click', () => {
