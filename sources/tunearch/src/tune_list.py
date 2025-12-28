@@ -1,179 +1,139 @@
-#!/usr/bin/env python3
 """
-Manage the catalog of popular bluegrass/old-time instrumentals to fetch
+Curated list of popular bluegrass/old-time fiddle tunes for TuneArch fetching.
 
-Includes curated list of popular fiddle tunes and instrumentals.
+These are instrumentals commonly played at jams and sessions.
 """
 
 import json
 from pathlib import Path
 from typing import List, Dict, Any
 
-# Core bluegrass and old-time instrumentals - commonly played at jams
-# Organized by rhythm type for variety
-CORE_INSTRUMENTALS = [
-    # === REELS (4/4) ===
-    "Salt Creek",
-    "Blackberry Blossom",
-    "Whiskey Before Breakfast",
-    "Red Haired Boy",
-    "Billy in the Lowground",
-    "Arkansas Traveler",
-    "Turkey in the Straw",
-    "Temperance Reel",
-    "Fisher's Hornpipe",
+# Top fiddle tunes - prioritized by jam popularity
+TUNE_LIST = [
+    # Tier 1: Essential jam tunes
+    "Old Joe Clark",
     "Soldier's Joy",
+    "Red Haired Boy",
+    "Whiskey Before Breakfast",
+    "Fisher's Hornpipe",
+    "Temperance Reel",
+    "Arkansas Traveler",
     "Devil's Dream",
-    "Forked Deer",
     "Liberty",
-    "Rickett's Hornpipe",
-    "Swallowtail Jig",
-    "Saint Anne's Reel",
+    "Cherokee Shuffle",
+
+    # Tier 2: Very common
+    "Billy in the Lowground",
+    "Angeline the Baker",
+    "Cripple Creek",
+    "Bile Them Cabbage Down",
+    "June Apple",
+    "St. Anne's Reel",
+    "Ragtime Annie",
+    "Forked Deer",
+    "Grey Eagle",
+
+    # Tier 3: Popular classics
+    "Turkey in the Straw",
+    "Golden Slippers",
+    "Flop Eared Mule",
+    "Red Wing",
+    "Leather Britches",
+    "Cotton Eyed Joe",
+    "Cattle in the Cane",
+    "Eighth of January",
+    "Road to Columbus",
+    "Big Sciota",
+
+    # Tier 4: Well-known tunes
     "Beaumont Rag",
     "Black Mountain Rag",
-    "Wheel Hoss",
-    "Gold Rush",
-    "Leather Britches",
-    "June Apple",
-    "Old Molly Hare",
-    "Flop Eared Mule",
-    "Grey Eagle",
-    "Cherokee Shuffle",
-    "Fire on the Mountain",
-    "Big Mon",
-    "Cotton Eyed Joe",
-    "Boil Them Cabbage Down",
-    "Old Joe Clark",
-    "Cripple Creek",
-    "Clinch Mountain Backstep",
-    "Raw Hide",
-    "Angeline the Baker",
     "Kitchen Girl",
-    "Sail Away Ladies",
-    "Cluck Old Hen",
-    "Spotted Pony",
-    "Back Up and Push",
-    "Cumberland Gap",
+    "Clinch Mountain Backstep",
     "John Hardy",
-    "Way Downtown",
-    "Shady Grove",
-    "Little Maggie",
-    "Jerusalem Ridge",
-    "Road to Columbus",
-    "Pike County Breakdown",
-    "Dusty Miller",
-    "Growling Old Man and Grumbling Old Woman",
+    "Fire on the Mountain",
+    "Katy Hill",
+    "Sally Goodin",
+    "Sally Ann",
 
-    # === WALTZES (3/4) ===
-    "Tennessee Waltz",
-    "Kentucky Waltz",
-    "Westphalia Waltz",
-    "Ashokan Farewell",
-    "Midnight on the Water",
-    "Over the Waterfall",
-    "Festival Waltz",
-    "Flowers of Edinburgh",
-    "Margaret's Waltz",
-    "Old Spinning Wheel",
-    "Faded Love",
-
-    # === JIGS (6/8) ===
-    "Irish Washerwoman",
-    "Morrison's Jig",
-    "Swallowtail Jig",
-    "Kesh Jig",
-    "Banish Misfortune",
-    "Out on the Ocean",
-    "Harvest Home",
-
-    # === HORNPIPES ===
-    "Sunderland Hornpipe",
-    "Sailor's Hornpipe",
-    "President Garfield's Hornpipe",
+    # Tier 5: Session favorites
+    "Drowsy Maggie",
+    "The Irish Washerwoman",
+    "Mississippi Sawyer",
     "Rickett's Hornpipe",
-    "Liverpool Hornpipe",
+    "Hop High Ladies",
+    "Old Mother Flanagan",
+    "Durang's Hornpipe",
+    "Harvest Home",
+    "Napoleon Crossing the Rhine",
+    "Over the Waterfall",
 
-    # === BREAKDOWN/CONTEST TUNES ===
+    # Tier 6: More great tunes
+    "Waynesboro",
+    "Jerusalem Ridge",
+    "Big Mon",
+    "Wheel Hoss",
+    "New Five Cent",
+    "Festival Waltz",
+    "Ashoken Farewell",
+    "Westphalia Waltz",
+
+    # Tier 7: Contest/show tunes
+    "Orange Blossom Special",
+    "Fiddler's Dream",
+    "Texas Gales",
     "Foggy Mountain Breakdown",
     "Earl's Breakdown",
-    "Flint Hill Special",
-    "Bugle Call Rag",
-    "Orange Blossom Special",
-    "Fireball Mail",
-    "Randy Lynn Rag",
-    "Bluegrass Stomp",
+    "Lonesome Fiddle Blues",
+    "Brilliancy",
+    "Hamilton County Breakdown",
     "Rawhide",
-    "Home Sweet Home",
-    "Black and White Rag",
-    "Dixie Breakdown",
+
+    # Tier 8: Traditional gems
+    "Growling Old Man",
+    "Sugar in the Gourd",
+    "Cluck Old Hen",
+    "Squirrel Hunters",
+    "Rock the Cradle Joe",
+    "Sail Away Ladies",
+    "Give the Fiddler a Dram",
+    "Sugar Hill",
+
+    # Tier 9: More instrumentals
+    "Roanoke",
+    "Pike County Breakdown",
     "Lonesome Road Blues",
-    "Nine Pound Hammer",
     "John Henry",
-
-    # === SLOW/MODAL TUNES ===
-    "Bonaparte's Retreat",
-    "Last of Callahan",
-    "Sandy River Belle",
-    "East Tennessee Blues",
-    "Stoney Point",
-    "Cold Frosty Morning",
-    "Walking in My Sleep",
-    "Big Sciota",
-    "Little Rabbit",
-
-    # === CROOKED/UNUSUAL ===
-    "Snowflake Reel",
+    "Lost Indian",
+    "Dusty Miller",
+    "Tam Lin",
+    "Kid on the Mountain",
     "Morrison's Jig",
-    "Devil Went Down to Georgia",
-]
-
-# Categories to search on TuneArch to find more tunes
-TUNEARCH_SEARCH_TERMS = [
-    "bluegrass",
-    "old-time",
-    "fiddle contest",
-    "breakdown",
-    "appalachian",
-    "country fiddle",
 ]
 
 
 def get_tune_list() -> List[str]:
-    """Get list of tunes to fetch"""
-    return CORE_INSTRUMENTALS.copy()
+    """Return the curated list of tunes to fetch."""
+    return TUNE_LIST
 
 
-def load_catalog(catalog_path: Path) -> Dict[str, Any]:
-    """Load tune catalog from JSON file"""
-    if catalog_path.exists():
-        return json.loads(catalog_path.read_text(encoding='utf-8'))
-    return {
-        "tunes": [],
-        "fetched": [],
-        "failed": [],
-        "not_found": []
-    }
+def load_catalog(path: Path) -> Dict[str, Any]:
+    """Load the tune catalog from JSON file."""
+    if path.exists():
+        with open(path) as f:
+            return json.load(f)
+    return {"tunes": [], "fetched": [], "failed": [], "not_found": []}
 
 
-def save_catalog(catalog: Dict[str, Any], catalog_path: Path):
-    """Save catalog state"""
-    catalog_path.write_text(
-        json.dumps(catalog, indent=2, ensure_ascii=False),
-        encoding='utf-8'
-    )
+def save_catalog(catalog: Dict[str, Any], path: Path) -> None:
+    """Save the tune catalog to JSON file."""
+    with open(path, 'w') as f:
+        json.dump(catalog, f, indent=2)
 
 
-def add_to_catalog(catalog: Dict[str, Any], tune_name: str, status: str):
-    """Update catalog with fetch result"""
-    # Remove from other lists first
-    for key in ['fetched', 'failed', 'not_found']:
-        if tune_name in catalog.get(key, []):
-            catalog[key].remove(tune_name)
-
-    # Add to appropriate list
-    if status == 'fetched':
-        catalog.setdefault('fetched', []).append(tune_name)
-    elif status == 'not_found':
-        catalog.setdefault('not_found', []).append(tune_name)
-    else:
-        catalog.setdefault('failed', []).append(tune_name)
+def add_to_catalog(catalog: Dict[str, Any], tune_name: str, status: str) -> None:
+    """Add a tune to the catalog with given status."""
+    if status not in catalog:
+        catalog[status] = []
+    if tune_name not in catalog[status]:
+        catalog[status].append(tune_name)

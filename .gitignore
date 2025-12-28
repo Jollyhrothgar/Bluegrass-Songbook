@@ -41,3 +41,6 @@ AGENTS.md
 
 # Search build outputs (large binary files)
 docs/data/embeddings.bin
+
+# TuneArch cached HTML
+sources/tunearch/raw/
