@@ -11,26 +11,22 @@
       4
     ],
     [
-      "contemporary country",
+      "country",
       2
     ],
     [
-      "country",
+      "contemporary country",
       2
     ]
   ],
   "Amy Grant": [
     [
-      "contemporary christian",
-      4
-    ],
-    [
       "pop",
       4
     ],
     [
-      "classic pop and rock",
-      2
+      "contemporary christian",
+      4
     ],
     [
       "christian pop",
@@ -38,6 +34,10 @@
     ],
     [
       "ccm",
+      2
+    ],
+    [
+      "classic pop and rock",
       2
     ]
   ],
@@ -73,15 +73,15 @@
   ],
   "B.J. Thomas": [
     [
+      "contemporary christian",
+      2
+    ],
+    [
       "pop",
       2
     ],
     [
       "country",
-      2
-    ],
-    [
-      "contemporary christian",
       2
     ]
   ],
@@ -109,11 +109,53 @@
       4
     ],
     [
-      "vocal jazz",
+      "pop",
       2
     ],
     [
-      "pop",
+      "vocal jazz",
+      2
+    ]
+  ],
+  "Bob Dylan": [
+    [
+      "folk rock",
+      12
+    ],
+    [
+      "folk",
+      8
+    ],
+    [
+      "rock",
+      8
+    ],
+    [
+      "blues rock",
+      6
+    ],
+    [
+      "country rock",
+      4
+    ],
+    [
+      "contemporary folk",
+      4
+    ],
+    [
+      "singer-songwriter",
+      4
+    ],
+    [
+      "pop rock",
+      3
+    ],
+    [
+      "blues",
+      3
+    ],
+    [
+      "country",
       2
     ]
   ],
@@ -129,19 +171,19 @@
       4
     ],
     [
-      "standards",
-      2
-    ],
-    [
       "traditional pop",
       2
     ],
     [
-      "rock & roll",
+      "teen pop",
       2
     ],
     [
-      "teen pop",
+      "standards",
+      2
+    ],
+    [
+      "rock & roll",
       2
     ]
   ],
@@ -161,11 +203,11 @@
       8
     ],
     [
-      "contemporary country",
+      "country rock",
       2
     ],
     [
-      "country rock",
+      "contemporary country",
       2
     ]
   ],
@@ -239,15 +281,15 @@
   ],
   "Charlie Rich": [
     [
+      "country",
+      2
+    ],
+    [
       "rockabilly",
       2
     ],
     [
       "traditional country",
-      2
-    ],
-    [
-      "country",
       2
     ]
   ],
@@ -295,11 +337,11 @@
       3
     ],
     [
-      "blues rock",
+      "blues",
       3
     ],
     [
-      "blues",
+      "blues rock",
       3
     ],
     [
@@ -459,11 +501,11 @@
   ],
   "Doris Day": [
     [
-      "pop",
+      "show tunes",
       2
     ],
     [
-      "show tunes",
+      "pop",
       2
     ],
     [
@@ -527,11 +569,11 @@
       8
     ],
     [
-      "pop",
+      "country",
       6
     ],
     [
-      "country",
+      "pop",
       6
     ],
     [
@@ -539,15 +581,15 @@
       6
     ],
     [
+      "blues",
+      4
+    ],
+    [
       "gospel",
       4
     ],
     [
       "blue-eyed soul",
-      4
-    ],
-    [
-      "blues",
       4
     ],
     [
@@ -589,11 +631,11 @@
       3
     ],
     [
-      "rock & roll",
+      "boogie-woogie",
       2
     ],
     [
-      "boogie-woogie",
+      "rock & roll",
       2
     ],
     [
@@ -639,11 +681,11 @@
       2
     ],
     [
-      "singer-songwriter",
+      "canadian",
       2
     ],
     [
-      "canadian",
+      "singer-songwriter",
       2
     ]
   ],
@@ -655,11 +697,11 @@
   ],
   "Hank Snow": [
     [
-      "country",
+      "nashville sound",
       2
     ],
     [
-      "nashville sound",
+      "country",
       2
     ]
   ],
@@ -679,11 +721,11 @@
       6
     ],
     [
-      "traditional country",
+      "classic country",
       2
     ],
     [
-      "classic country",
+      "traditional country",
       2
     ]
   ],
@@ -705,7 +747,11 @@
       6
     ],
     [
-      "country",
+      "rock and roll",
+      2
+    ],
+    [
+      "honky tonk",
       2
     ],
     [
@@ -717,11 +763,7 @@
       2
     ],
     [
-      "rock and roll",
-      2
-    ],
-    [
-      "honky tonk",
+      "country",
       2
     ]
   ],
@@ -747,11 +789,11 @@
       3
     ],
     [
-      "caribbean music",
+      "country rock",
       2
     ],
     [
-      "country rock",
+      "caribbean music",
       2
     ]
   ],
@@ -793,11 +835,11 @@
       5
     ],
     [
-      "singer-songwriter",
+      "rock",
       2
     ],
     [
-      "country folk",
+      "singer-songwriter",
       2
     ],
     [
@@ -805,7 +847,7 @@
       2
     ],
     [
-      "rock",
+      "country folk",
       2
     ]
   ],
@@ -835,19 +877,19 @@
       25
     ],
     [
-      "folk",
-      7
-    ],
-    [
       "rockabilly",
       7
     ],
     [
-      "country gospel",
-      5
+      "folk",
+      7
     ],
     [
       "americana",
+      5
+    ],
+    [
+      "country gospel",
       5
     ],
     [
@@ -885,11 +927,11 @@
       3
     ],
     [
-      "pop",
+      "easy listening",
       2
     ],
     [
-      "easy listening",
+      "pop",
       2
     ]
   ],
@@ -937,15 +979,15 @@
       3
     ],
     [
-      "singer-songwriter",
-      2
-    ],
-    [
       "outlaw country",
       2
     ],
     [
       "folk",
+      2
+    ],
+    [
+      "singer-songwriter",
       2
     ]
   ],
@@ -1023,11 +1065,11 @@
   ],
   "Little Richard": [
     [
-      "rock",
+      "rock and roll",
       3
     ],
     [
-      "rock and roll",
+      "rock",
       3
     ],
     [
@@ -1129,11 +1171,11 @@
   ],
   "Mickey Gilley": [
     [
-      "nashville sound",
+      "country",
       2
     ],
     [
-      "country",
+      "nashville sound",
       2
     ]
   ],
@@ -1147,11 +1189,11 @@
       5
     ],
     [
-      "swing",
+      "easy listening",
       3
     ],
     [
-      "easy listening",
+      "swing",
       3
     ],
     [
@@ -1159,11 +1201,11 @@
       2
     ],
     [
-      "standards",
+      "traditional pop",
       2
     ],
     [
-      "traditional pop",
+      "standards",
       2
     ]
   ],
@@ -1183,15 +1225,15 @@
       8
     ],
     [
-      "adult contemporary",
-      6
-    ],
-    [
       "soft rock",
       6
     ],
     [
       "baroque pop",
+      6
+    ],
+    [
+      "adult contemporary",
       6
     ],
     [
@@ -1209,11 +1251,11 @@
   ],
   "Neil Young": [
     [
-      "folk rock",
+      "rock",
       9
     ],
     [
-      "rock",
+      "folk rock",
       9
     ],
     [
@@ -1233,15 +1275,15 @@
       4
     ],
     [
+      "classic rock",
+      2
+    ],
+    [
       "contemporary folk",
       2
     ],
     [
       "country",
-      2
-    ],
-    [
-      "classic rock",
       2
     ],
     [
@@ -1255,7 +1297,7 @@
       4
     ],
     [
-      "folk rock",
+      "bluegrass",
       3
     ],
     [
@@ -1263,7 +1305,7 @@
       3
     ],
     [
-      "bluegrass",
+      "folk rock",
       3
     ]
   ],
@@ -1291,19 +1333,19 @@
   ],
   "Patsy Cline": [
     [
-      "traditional country",
-      2
-    ],
-    [
       "country",
       2
     ],
     [
-      "honky tonk",
+      "traditional country",
       2
     ],
     [
       "nashville sound",
+      2
+    ],
+    [
+      "honky tonk",
       2
     ]
   ],
@@ -1319,11 +1361,11 @@
   ],
   "Paul Anka": [
     [
-      "jazz",
+      "pop",
       2
     ],
     [
-      "pop",
+      "jazz",
       2
     ]
   ],
@@ -1383,15 +1425,15 @@
       2
     ],
     [
+      "contemporary country",
+      2
+    ],
+    [
       "classic pop and rock",
       2
     ],
     [
       "traditional country",
-      2
-    ],
-    [
-      "contemporary country",
       2
     ]
   ],
@@ -1519,11 +1561,11 @@
   ],
   "Tennessee Ernie Ford": [
     [
-      "country gospel",
+      "country",
       2
     ],
     [
-      "country",
+      "country gospel",
       2
     ]
   ],
@@ -1567,15 +1609,15 @@
   ],
   "The Everly Brothers": [
     [
-      "rock & roll",
-      2
-    ],
-    [
       "rockabilly",
       2
     ],
     [
       "pop",
+      2
+    ],
+    [
+      "rock & roll",
       2
     ]
   ],
@@ -1599,11 +1641,7 @@
   ],
   "The Kingsmen": [
     [
-      "rock & roll",
-      2
-    ],
-    [
-      "garage rock",
+      "pop rock",
       2
     ],
     [
@@ -1611,7 +1649,11 @@
       2
     ],
     [
-      "pop rock",
+      "rock & roll",
+      2
+    ],
+    [
+      "garage rock",
       2
     ]
   ],
@@ -1621,11 +1663,11 @@
       2
     ],
     [
-      "bluegrass",
+      "gospel",
       2
     ],
     [
-      "gospel",
+      "bluegrass",
       2
     ]
   ],
@@ -1635,11 +1677,11 @@
       4
     ],
     [
-      "neo-traditional country",
+      "americana",
       2
     ],
     [
-      "americana",
+      "neo-traditional country",
       2
     ]
   ],
@@ -1651,11 +1693,11 @@
   ],
   "The Platters": [
     [
-      "doo-wop",
+      "traditional pop",
       3
     ],
     [
-      "traditional pop",
+      "doo-wop",
       3
     ],
     [
@@ -1663,11 +1705,11 @@
       2
     ],
     [
-      "rhythm & blues",
+      "pop",
       2
     ],
     [
-      "pop",
+      "rhythm & blues",
       2
     ]
   ],
@@ -1711,9 +1753,29 @@
       2
     ]
   ],
+  "Tom Paxton": [
+    [
+      "folk",
+      2
+    ]
+  ],
   "Tom T. Hall": [
     [
       "country",
+      3
+    ]
+  ],
+  "Townes Van Zandt": [
+    [
+      "americana",
+      3
+    ],
+    [
+      "singer-songwriter",
+      3
+    ],
+    [
+      "folk",
       3
     ]
   ],
@@ -1729,6 +1791,12 @@
       3
     ]
   ],
+  "Trampled by Turtles": [
+    [
+      "bluegrass",
+      2
+    ]
+  ],
   "Travis Tritt": [
     [
       "country",
@@ -1741,11 +1809,11 @@
       4
     ],
     [
-      "bluegrass",
+      "contemporary country",
       2
     ],
     [
-      "contemporary country",
+      "bluegrass",
       2
     ]
   ],
@@ -1765,11 +1833,11 @@
       6
     ],
     [
-      "alt-country",
+      "progressive country",
       2
     ],
     [
-      "progressive country",
+      "alt-country",
       2
     ],
     [
@@ -1809,11 +1877,11 @@
       2
     ],
     [
-      "rockabilly",
+      "pop",
       2
     ],
     [
-      "pop",
+      "rockabilly",
       2
     ]
   ],

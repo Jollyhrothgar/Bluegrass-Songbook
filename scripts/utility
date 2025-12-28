@@ -25,6 +25,10 @@ show_help() {
     echo "  count-chords [path]"
     echo "      Count chord usage in .pro files"
     echo ""
+    echo "  refresh-tags"
+    echo "      Refresh artist tags from MusicBrainz (requires local MB database)"
+    echo "      and rebuild the index"
+    echo ""
 }
 
 case "$COMMAND" in
@@ -33,6 +37,15 @@ case "$COMMAND" in
         ;;
     count-chords)
         uv run python3 scripts/lib/chord_counter.py "$@"
+        ;;
+    refresh-tags)
+        echo "Refreshing artist tags from MusicBrainz..."
+        MB_PORT=5440 uv run python3 scripts/lib/query_artist_tags.py --refresh
+        echo ""
+        echo "Rebuilding index with updated tags..."
+        uv run python3 scripts/lib/build_index.py
+        echo ""
+        echo "Done! Tags refreshed and index rebuilt."
         ;;
     help|--help|-h|"")
         show_help
