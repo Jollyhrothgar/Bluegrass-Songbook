@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Bluegrass Songbook</title>
+    <link rel="icon" type="image/png" href="images/banjo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .about-page {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-nav {
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--text);
+            border-color: var(--text-secondary);
+            background: var(--bg-secondary);
+        }
+
+        .about-hero {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .about-hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--border);
+        }
+
+        .about-hero h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+            color: var(--text);
+        }
+
+        .about-hero .tagline {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .about-section {
+            margin-bottom: 2rem;
+        }
+
+        .about-section h2 {
+            font-size: 1.25rem;
+            margin: 0 0 0.75rem 0;
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .about-section p {
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin: 0 0 1rem 0;
+        }
+
+        .about-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .about-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .about-link:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .about-link-icon {
+            font-size: 1.25rem;
+        }
+
+        .support-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .support-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .support-link.patreon {
+            background: #ff424d;
+            color: white;
+        }
+
+        .support-link.coffee {
+            background: #ffdd00;
+            color: #000;
+        }
+
+        .support-link:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        @media (max-width: 600px) {
+            .about-hero {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .about-hero img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="about-page">
+        <nav class="about-nav">
+            <a href="/" class="back-link">
+                <span>&larr;</span>
+                <span>Back to Songbook</span>
+            </a>
+        </nav>
+
+        <div class="about-hero">
+            <img src="images/Mike.png" alt="Mike">
+            <div>
+                <h1>About BluegrassBook</h1>
+                <p class="tagline">A songbook for pickers, by a picker</p>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>The Project</h2>
+            <p>
+                BluegrassBook.com is a project to help people that love playing bluegrass, americana, and roots music find songs to play, build personal playlists, and contribute songs to our shared corpus.
+            </p>
+            <p>
+                The ultimate goal for this project is to store the full corpus of bluegrass and roots vocal and instrumental music, make it searchable, discoverable, downloadable and shareable. The project source code is available, but not for commercial use (read the license in the source code).
+            </p>
+            <p>
+                If you want to contribute, your contributions are welcome! Reach out to me, or submit a PR on GitHub. If you want to share feedback with me about what you like or dislike about this, features you want to see, or anything else - please send me an email at bluegrassbook.feedback@gmail.com or submit a bug report / GitHub issue.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Mike. I'm a data scientist that also happens to love bluegrass. I am a solo developer and built this funded by my own time and money for your free use. Hope we can jam sometime!
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>Links</h2>
+            <div class="about-links">
+                <a href="https://jollyhrothgar.github.io/" target="_blank" rel="noopener" class="about-link">
+                    <span class="about-link-icon">&#127760;</span>
+                    <span>My Projects</span>
+                </a>
+                <a href="https://github.com/Jollyhrothgar/Bluegrass-Songbook" target="_blank" rel="noopener" class="about-link">
+                    <span class="about-link-icon">&#128187;</span>
+                    <span>Source Code</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Support</h2>
+            <p>
+                If you find this useful and want to help keep it running, consider supporting the project:
+            </p>
+            <div class="support-links">
+                <a href="https://www.patreon.com/c/bluegrassbook" target="_blank" rel="noopener" class="support-link patreon">
+                    <span>&#10084;</span>
+                    <span>Support on Patreon</span>
+                </a>
+                <a href="https://buymeacoffee.com/michaelbeav" target="_blank" rel="noopener" class="support-link coffee">
+                    <span>&#9749;</span>
+                    <span>Buy me a coffee</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Apply saved theme
+        const savedTheme = localStorage.getItem('songbook-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+</html>

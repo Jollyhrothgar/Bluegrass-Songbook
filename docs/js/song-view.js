@@ -536,9 +536,15 @@ export function renderSong(song, chordpro, isInitialRender = false) {
                 <span class="votable-tag tag-${category}" data-tag="${escapeHtml(tag)}">
                     <span class="tag-name">${escapeHtml(displayName)}</span>
                     ${isLoggedIn ? `
-                        <button class="vote-btn vote-up" data-vote="1" title="Agree">▲</button>
-                        <span class="vote-score" title="Net votes">·</span>
-                        <button class="vote-btn vote-down" data-vote="-1" title="Disagree">▼</button>
+                        <span class="vote-chip">
+                            <button class="vote-btn vote-up" data-vote="1" title="Agree">
+                                <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 0L10 6H7V9H3V6H0L5 0Z" fill="currentColor"/></svg>
+                            </button>
+                            <span class="vote-divider"></span>
+                            <button class="vote-btn vote-down" data-vote="-1" title="Disagree">
+                                <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 12L0 6H3V3H7V6H10L5 12Z" fill="currentColor"/></svg>
+                            </button>
+                        </span>
                     ` : ''}
                 </span>
             `;
@@ -588,35 +594,35 @@ export function renderSong(song, chordpro, isInitialRender = false) {
 
     const abcViewHtml = hasAbc ? `
         <div id="abc-view" class="abc-view ${showAbcView ? '' : 'hidden'}">
-            <div class="abc-render-options">
-                <div class="abc-control-bucket">
-                    <span class="bucket-label">Key</span>
-                    <div class="bucket-controls">
+            <fieldset class="render-options-fieldset">
+                <legend>Controls</legend>
+                <div class="render-options">
+                    <div class="control-box">
+                        <span class="control-box-label">Transpose</span>
                         <select id="abc-transpose-select" class="abc-select">${transposeOptions.join('')}</select>
                     </div>
-                </div>
-                <div class="abc-control-bucket">
-                    <span class="bucket-label">Size</span>
-                    <div class="bucket-controls">
-                        <button id="abc-size-decrease" class="font-btn" ${abcScale <= 0.7 ? 'disabled' : ''}>−</button>
-                        <span id="abc-size-display" class="size-display">${Math.round(abcScale * 100)}%</span>
-                        <button id="abc-size-increase" class="font-btn" ${abcScale >= 1.5 ? 'disabled' : ''}>+</button>
+                    <div class="control-box">
+                        <span class="control-box-label">Size</span>
+                        <div class="font-size-buttons">
+                            <button id="abc-size-decrease" class="font-btn" ${abcScale <= 0.7 ? 'disabled' : ''}>−</button>
+                            <span id="abc-size-display" class="size-display">${Math.round(abcScale * 100)}%</span>
+                            <button id="abc-size-increase" class="font-btn" ${abcScale >= 1.5 ? 'disabled' : ''}>+</button>
+                        </div>
+                    </div>
+                    <div class="control-box">
+                        <span class="control-box-label">Tempo</span>
+                        <div class="font-size-buttons">
+                            <button id="abc-speed-decrease" class="font-btn" ${abcTempoBpm <= 60 ? 'disabled' : ''}>−</button>
+                            <input type="number" id="abc-speed-display" class="tempo-input" value="${abcTempoBpm}" min="60" max="240">
+                            <button id="abc-speed-increase" class="font-btn" ${abcTempoBpm >= 240 ? 'disabled' : ''}>+</button>
+                        </div>
+                    </div>
+                    <div class="control-box">
+                        <span class="control-box-label">Playback</span>
+                        <button id="abc-play-btn" class="abc-btn abc-play-btn">▶ Play</button>
                     </div>
                 </div>
-                <div class="abc-control-bucket">
-                    <span class="bucket-label">Tempo</span>
-                    <div class="bucket-controls">
-                        <button id="abc-speed-decrease" class="font-btn" ${abcTempoBpm <= 60 ? 'disabled' : ''}>−</button>
-                        <input type="number" id="abc-speed-display" class="tempo-input" value="${abcTempoBpm}" min="60" max="240">
-                        <button id="abc-speed-increase" class="font-btn" ${abcTempoBpm >= 240 ? 'disabled' : ''}>+</button>
-                    </div>
-                </div>
-                <div class="abc-control-bucket abc-playback-bucket">
-                    <div class="bucket-controls">
-                        <button id="abc-play-btn" class="abc-btn abc-play-btn">▶</button>
-                    </div>
-                </div>
-            </div>
+            </fieldset>
             <div id="abc-notation" class="abc-notation"></div>
         </div>
     ` : '';
@@ -632,47 +638,54 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         ${viewToggleHtml}
         ${abcViewHtml}
         <div id="chord-view" class="${chordViewClass}">
-            <div class="render-options">
-                <div class="control-group">
-                    <span class="control-label">Key:</span>
-                    <select id="key-select" class="key-select">${keyOptions}</select>
+            <fieldset class="render-options-fieldset">
+                <legend>Controls</legend>
+                <div class="render-options">
+                    <div class="control-box">
+                        <span class="control-box-label">Change Key</span>
+                        <select id="key-select" class="key-select">${keyOptions}</select>
+                    </div>
+                    <div class="control-box">
+                        <span class="control-box-label">Font Size</span>
+                        <div class="font-size-buttons">
+                            <button id="font-decrease" class="font-btn" ${fontSizeLevel <= -2 ? 'disabled' : ''}>−</button>
+                            <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
+                        </div>
+                    </div>
+                    <div class="control-box">
+                        <span class="control-box-label">Display Options</span>
+                        <div class="display-options">
+                            <label>
+                                <select id="chord-mode-select" class="chord-mode-select">
+                                    <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All Chords</option>
+                                    <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First Only</option>
+                                    <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>No Chords</option>
+                                </select>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
+                                <span>Compact</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
+                                <span>Nashville</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
+                                <span>2-Col</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
+                                <span>Labels</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
+                                <span>Source</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="font-size-control">
-                    <span class="control-label">Size:</span>
-                    <button id="font-decrease" class="font-btn" ${fontSizeLevel <= -2 ? 'disabled' : ''}>−</button>
-                    <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
-                </div>
-                <div class="checkbox-group">
-                    <span class="control-label">Show:</span>
-                    <label>
-                        <select id="chord-mode-select" class="chord-mode-select">
-                            <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All Chords</option>
-                            <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First Only</option>
-                            <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>No Chords</option>
-                        </select>
-                    </label>
-                    <label>
-                        <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
-                        <span>Compact</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
-                        <span>Nashville</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
-                        <span>2-Col</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
-                        <span>Labels</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
-                        <span>Source</span>
-                    </label>
-                </div>
-            </div>
+            </fieldset>
             ${showChordProSource ? `
             <div class="source-view">
                 <div class="source-pane">

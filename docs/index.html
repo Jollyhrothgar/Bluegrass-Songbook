@@ -50,9 +50,9 @@
             </button>
         </nav>
         <div class="sidebar-footer">
-            <button id="nav-about" class="sidebar-link">
+            <a href="about.html" class="sidebar-link">
                 <span>&#9432;</span> About
-            </button>
+            </a>
             <a href="https://www.patreon.com/c/bluegrassbook" target="_blank" rel="noopener" class="sidebar-link">
                 <span>&#10084;</span> Support on Patreon
             </a>
@@ -90,6 +90,7 @@
                 <div class="feedback-wrapper">
                     <button id="feedback-btn" class="icon-btn" title="Send Feedback">
                         <span>💬</span>
+                        <span class="btn-label">Feedback</span>
                     </button>
                     <div id="feedback-dropdown" class="feedback-dropdown hidden">
                         <div class="feedback-header">📣 Send Feedback</div>
@@ -134,10 +135,14 @@
                         </a>
                     </div>
                 </div>
-                <button id="home-btn" class="icon-btn" title="Home">🏠</button>
+                <button id="home-btn" class="icon-btn" title="Home">
+                    <span>🏠</span>
+                    <span class="btn-label">Home</span>
+                </button>
                 <button id="theme-toggle" class="icon-btn" title="Toggle theme">
                     <span class="icon-sun">&#9728;</span>
                     <span class="icon-moon">&#9790;</span>
+                    <span class="btn-label">Theme</span>
                 </button>
             </div>
             <h1 class="site-logo">
@@ -191,6 +196,12 @@
 
         <!-- Editor Panel -->
         <div id="editor-panel" class="editor-panel hidden">
+            <div class="editor-header">
+                <button id="editor-back-btn" class="back-btn">&larr; Back</button>
+                <div class="editor-notice">
+                    Submissions are reviewed before being added to the songbook.
+                </div>
+            </div>
             <div class="editor-main">
                 <div class="editor-input">
                     <div class="metadata-fields">
@@ -296,66 +307,18 @@ This is the [G]chorus [D]part
             </div>
         </div>
 
-        <!-- About View -->
-        <div id="about-view" class="about-view hidden">
-            <div class="about-header">
-                <button id="about-back-btn" class="back-btn">&larr; Back</button>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/Mike.png" alt="Mike">
-                </div>
-                <div class="about-text">
-                    <h1>About</h1>
-
-                    <div class="about-section">
-                        <h3>The Project</h3>
-                        <p>
-                        BluegrassBook.com is a project to help people that love playing bluegrass, americana, and roots music find songs to play, build personal playlists, and contribute songs to our shared corpus.
-                        </p>
-                        <p>
-The ultimate goal for this project is to store the full corpus of bluegrass and roots vocal and instrumental music, make it searchable, discoverable, downloadable and shareable. The proejct source code is avaialble, but not for commercial use (read the license in the source code).
-                        </p>
-                        <p>
-If you want to contribute, your contributions are welcome! Reach out to me, or submit a PR on github. If you want to share feedback with me about what you like or dislike about this, features you want to see, or anything else - please send me an email at bluegrassbook.feedback@gmail.com or submit a bug report / github issue.
-                        </p>
-
-                    </div>
-
-                    <div class="about-section">
-                        <h3>About Me</h3>
-                        <p>
-                        Hi! I'm Mike. I'm a data scientist that also happens to love bluegrass. I am a solo developer and built this funded by my own time and money for your free use. Hope we can jam sometime!
-                        </p>
-                    </div>
-
-                    <div class="about-section">
-                        <h3>Links</h3>
-                        <div class="about-links">
-                            <a href="https://jollyhrothgar.github.io/" target="_blank" rel="noopener" class="about-link">
-                                <span class="about-link-icon">&#127760;</span>
-                                <span>My Projects</span>
-                            </a>
-                            <a href="https://github.com/Jollyhrothgar/Bluegrass-Songbook" target="_blank" rel="noopener" class="about-link">
-                                <span class="about-link-icon">&#128187;</span>
-                                <span>Source Code</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div id="song-view" class="song-view hidden">
             <div class="song-view-header">
                 <button id="back-btn" class="back-btn">&larr; Back</button>
                 <div class="song-actions">
                     <button id="print-btn" class="icon-btn" title="Print">
                         <span>🖨️</span>
+                        <span class="btn-label">Print</span>
                     </button>
                     <div class="export-wrapper">
                         <button id="copy-btn" class="icon-btn" title="Copy">
                             <span>📋</span>
+                            <span class="btn-label">Copy</span>
                         </button>
                         <div id="copy-dropdown" class="export-dropdown hidden">
                             <button class="export-option" data-action="copy-chordpro">
@@ -369,6 +332,7 @@ If you want to contribute, your contributions are welcome! Reach out to me, or s
                     <div class="export-wrapper">
                         <button id="download-btn" class="icon-btn" title="Download">
                             <span>⬇️</span>
+                            <span class="btn-label">Save</span>
                         </button>
                         <div id="download-dropdown" class="export-dropdown hidden">
                             <button class="export-option" data-action="download-chordpro">
@@ -382,6 +346,7 @@ If you want to contribute, your contributions are welcome! Reach out to me, or s
                     <div class="list-picker-wrapper">
                         <button id="list-picker-btn" class="icon-btn" title="Add to list">
                             <span class="list-icon">➕</span>
+                            <span class="btn-label">Lists</span>
                         </button>
                         <div id="list-picker-dropdown" class="list-picker-dropdown hidden">
                             <label class="list-option favorites-option">

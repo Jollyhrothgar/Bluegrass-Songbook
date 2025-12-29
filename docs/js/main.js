@@ -41,8 +41,7 @@ const navAddSong = document.getElementById('nav-add-song');
 const navFavorites = document.getElementById('nav-favorites');
 const navFavoritesCount = document.getElementById('nav-favorites-count');
 const navListsContainer = document.getElementById('nav-lists-container');
-const manageListsBtn = document.getElementById('manage-lists-btn');
-const navAbout = document.getElementById('nav-about');
+const manageListsBtn = document.getElementById('nav-manage-lists');
 
 // List picker elements
 const listPickerBtn = document.getElementById('list-picker-btn');
@@ -76,12 +75,15 @@ const userName = document.getElementById('user-name');
 
 // Song actions
 const printBtn = document.getElementById('print-btn');
+const copyBtn = document.getElementById('copy-btn');
 const copyDropdown = document.getElementById('copy-dropdown');
+const downloadBtn = document.getElementById('download-btn');
 const downloadDropdown = document.getElementById('download-dropdown');
 const editSongBtn = document.getElementById('edit-song-btn');
 
 // Editor elements
 const editorPanel = document.getElementById('editor-panel');
+const editorBackBtn = document.getElementById('editor-back-btn');
 const editorTitle = document.getElementById('editor-title');
 const editorArtist = document.getElementById('editor-artist');
 const editorWriter = document.getElementById('editor-writer');
@@ -102,10 +104,6 @@ const hintsClose = document.getElementById('chordpro-hints-close');
 // Tag dropdown
 const tagDropdownBtn = document.getElementById('tag-dropdown-btn');
 const tagDropdownContent = document.getElementById('tag-dropdown-content');
-
-// About modal
-const aboutModal = document.getElementById('about-modal');
-const aboutModalClose = document.getElementById('about-modal-close');
 
 // Feedback elements
 const feedbackBtn = document.getElementById('feedback-btn');
@@ -172,9 +170,6 @@ function pushHistoryState(view, data = {}) {
         case 'favorites':
             hash = '#favorites';
             break;
-        case 'about':
-            hash = '#about';
-            break;
         case 'search':
         default:
             hash = data.query ? `#search/${encodeURIComponent(data.query)}` : '';
@@ -201,9 +196,6 @@ function handleHistoryNavigation(state) {
             break;
         case 'favorites':
             showView('favorites');
-            break;
-        case 'about':
-            showView('about');
             break;
         case 'search':
         default:
@@ -233,7 +225,6 @@ function showView(mode) {
             resultsDiv?.classList.remove('hidden');
             songView?.classList.add('hidden');
             editorPanel?.classList.add('hidden');
-            aboutModal?.classList.add('hidden');
             navSearch?.classList.add('active');
             hideFavorites();
             break;
@@ -242,7 +233,6 @@ function showView(mode) {
             resultsDiv?.classList.add('hidden');
             songView?.classList.add('hidden');
             editorPanel?.classList.remove('hidden');
-            aboutModal?.classList.add('hidden');
             navAddSong?.classList.add('active');
             break;
         case 'favorites':
@@ -250,12 +240,8 @@ function showView(mode) {
             resultsDiv?.classList.remove('hidden');
             songView?.classList.add('hidden');
             editorPanel?.classList.add('hidden');
-            aboutModal?.classList.add('hidden');
             navFavorites?.classList.add('active');
             showFavorites();
-            break;
-        case 'about':
-            aboutModal?.classList.remove('hidden');
             break;
     }
 }
@@ -275,10 +261,6 @@ function handleDeepLink() {
     } else if (hash === '#favorites') {
         showView('favorites');
         pushHistoryState('favorites');
-        return true;
-    } else if (hash === '#about') {
-        showView('about');
-        pushHistoryState('about');
         return true;
     } else if (hash.startsWith('#search/')) {
         const query = decodeURIComponent(hash.slice(8));
@@ -423,9 +405,6 @@ function openListsModal() {
     renderListsModal();
 }
 
-function closeAboutModal() {
-    aboutModal?.classList.add('hidden');
-}
 
 // ============================================
 // FEEDBACK
@@ -1181,10 +1160,7 @@ function init() {
     navSearch?.addEventListener('click', () => navigateTo('search'));
     navAddSong?.addEventListener('click', () => navigateTo('add-song'));
     navFavorites?.addEventListener('click', () => navigateTo('favorites'));
-    navAbout?.addEventListener('click', () => {
-        closeSidebar();
-        aboutModal?.classList.remove('hidden');
-    });
+    editorBackBtn?.addEventListener('click', () => navigateTo('search'));
 
     // Account modal
     accountBtn?.addEventListener('click', openAccountModal);
@@ -1203,17 +1179,23 @@ function init() {
         if (e.target === listsModal) closeListsModal();
     });
 
-    // About modal
-    aboutModalClose?.addEventListener('click', closeAboutModal);
-    aboutModal?.addEventListener('click', (e) => {
-        if (e.target === aboutModal) closeAboutModal();
-    });
-
     // Feedback button and dropdown
-    feedbackBtn?.addEventListener('click', toggleFeedbackDropdown);
-    navFeedback?.addEventListener('click', () => {
-        closeSidebar();
+    feedbackBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        feedbackBtn?.classList.remove('highlight-pulse');
         toggleFeedbackDropdown();
+    });
+    navFeedback?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeSidebar();
+        // Small delay to let sidebar close before showing dropdown
+        setTimeout(() => {
+            feedbackBtn?.classList.add('highlight-pulse');
+            toggleFeedbackDropdown();
+            setTimeout(() => {
+                feedbackBtn?.classList.remove('highlight-pulse');
+            }, 3000);
+        }, 150);
     });
 
     // Close dropdown when clicking outside
@@ -1282,14 +1264,40 @@ function init() {
     // Print button
     printBtn?.addEventListener('click', openPrintView);
 
-    // Export dropdowns
-    copyDropdown?.addEventListener('change', (e) => {
-        handleExport(e.target.value);
-        e.target.selectedIndex = 0;
+    // Export dropdowns - toggle on button click
+    copyBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        downloadDropdown?.classList.add('hidden');
+        copyDropdown?.classList.toggle('hidden');
     });
-    downloadDropdown?.addEventListener('change', (e) => {
-        handleExport(e.target.value);
-        e.target.selectedIndex = 0;
+    downloadBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        copyDropdown?.classList.add('hidden');
+        downloadDropdown?.classList.toggle('hidden');
+    });
+
+    // Export option clicks
+    copyDropdown?.querySelectorAll('.export-option[data-action]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            handleExport(btn.dataset.action);
+            copyDropdown.classList.add('hidden');
+        });
+    });
+    downloadDropdown?.querySelectorAll('.export-option[data-action]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            handleExport(btn.dataset.action);
+            downloadDropdown.classList.add('hidden');
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!copyBtn?.contains(e.target) && !copyDropdown?.contains(e.target)) {
+            copyDropdown?.classList.add('hidden');
+        }
+        if (!downloadBtn?.contains(e.target) && !downloadDropdown?.contains(e.target)) {
+            downloadDropdown?.classList.add('hidden');
+        }
     });
 
     // History navigation
