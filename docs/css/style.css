@@ -220,9 +220,11 @@ h1 {
 
 .search-help {
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     margin-top: 0.5rem;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .search-hint {
@@ -239,6 +241,72 @@ h1 {
 .search-hint:hover {
     color: var(--accent);
     background: var(--border);
+}
+
+/* Search tips button and dropdown */
+.search-tips-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.search-tips-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.search-tips-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    z-index: 100;
+    min-width: 320px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.search-tips-content {
+    padding: var(--space-md);
+}
+
+.search-tips-header {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px solid var(--border);
+}
+
+.search-tips-content p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin: var(--space-sm) 0 var(--space-xs) 0;
+}
+
+.search-tips-content p:first-of-type {
+    margin-top: 0;
+}
+
+.search-tips-content code {
+    display: block;
+    font-size: 0.75rem;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    background: var(--bg);
+    padding: 0.2rem 0.4rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.2rem;
+    color: var(--accent);
 }
 
 /* Tag dropdown */

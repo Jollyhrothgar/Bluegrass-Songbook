@@ -105,6 +105,10 @@ const hintsClose = document.getElementById('chordpro-hints-close');
 const tagDropdownBtn = document.getElementById('tag-dropdown-btn');
 const tagDropdownContent = document.getElementById('tag-dropdown-content');
 
+// Search tips dropdown
+const searchTipsBtn = document.getElementById('search-tips-btn');
+const searchTipsDropdown = document.getElementById('search-tips-dropdown');
+
 // Feedback elements
 const feedbackBtn = document.getElementById('feedback-btn');
 const feedbackDropdown = document.getElementById('feedback-dropdown');
@@ -1203,6 +1207,16 @@ function init() {
         if (!feedbackBtn?.contains(e.target) && !feedbackDropdown?.contains(e.target)) {
             closeFeedbackDropdown();
         }
+        // Close search tips dropdown when clicking outside
+        if (!searchTipsBtn?.contains(e.target) && !searchTipsDropdown?.contains(e.target)) {
+            searchTipsDropdown?.classList.add('hidden');
+        }
+    });
+
+    // Search tips dropdown
+    searchTipsBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        searchTipsDropdown?.classList.toggle('hidden');
     });
 
     // Feedback option buttons
