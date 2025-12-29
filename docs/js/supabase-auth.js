@@ -657,6 +657,67 @@ async function removeTagVote(songId, tagName) {
     return { error };
 }
 
+// =============================================================================
+// Visitor Statistics
+// =============================================================================
+
+// Get or create a visitor ID (stored in localStorage, not PII)
+function getVisitorId() {
+    let visitorId = localStorage.getItem('songbook-visitor-id');
+    if (!visitorId) {
+        // Generate a random ID (not linked to any personal info)
+        visitorId = 'v_' + Math.random().toString(36).substring(2) + Date.now().toString(36);
+        localStorage.setItem('songbook-visitor-id', visitorId);
+    }
+    return visitorId;
+}
+
+// Log a page visit and return current stats
+async function logVisit() {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Supabase not initialized' } };
+    }
+
+    const visitorId = getVisitorId();
+
+    try {
+        const { data, error } = await supabaseClient.rpc('log_visit', {
+            p_visitor_id: visitorId
+        });
+
+        if (error) {
+            console.error('Error logging visit:', error);
+            return { data: null, error };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error logging visit:', err);
+        return { data: null, error: err };
+    }
+}
+
+// Get current visitor stats without logging
+async function getVisitorStats() {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Supabase not initialized' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('get_visitor_stats');
+
+        if (error) {
+            console.error('Error getting visitor stats:', error);
+            return { data: null, error };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error getting visitor stats:', err);
+        return { data: null, error: err };
+    }
+}
+
 // Export functions for use in search.js
 window.SupabaseAuth = {
     init: initSupabase,
@@ -689,5 +750,8 @@ window.SupabaseAuth = {
     fetchTagVotes,
     fetchUserTagVotes,
     castTagVote,
-    removeTagVote
+    removeTagVote,
+    // Visitor Stats
+    logVisit,
+    getVisitorStats
 };

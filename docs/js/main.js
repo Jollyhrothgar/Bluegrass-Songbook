@@ -29,6 +29,7 @@ const songView = document.getElementById('song-view');
 const songContent = document.getElementById('song-content');
 const backBtn = document.getElementById('back-btn');
 const themeToggle = document.getElementById('theme-toggle');
+const visitorStatsEl = document.getElementById('visitor-stats');
 
 // Sidebar elements
 const sidebar = document.getElementById('sidebar');
@@ -385,6 +386,12 @@ function updateAuthUI(user) {
         signInBtn?.classList.remove('hidden');
         userInfo?.classList.add('hidden');
         updateSyncUI('offline');
+    }
+}
+
+function updateVisitorStats(totalViews, totalVisitors) {
+    if (visitorStatsEl && totalViews !== undefined) {
+        visitorStatsEl.textContent = `${totalViews.toLocaleString()} page views · ${totalVisitors.toLocaleString()} visitors`;
     }
 }
 
@@ -1334,6 +1341,13 @@ function init() {
         // Click on user info opens account modal
         userInfo?.addEventListener('click', () => {
             openAccountModal();
+        });
+
+        // Log visit and update visitor stats
+        SupabaseAuth.logVisit().then(({ data }) => {
+            if (data) {
+                updateVisitorStats(data.total_views, data.total_visitors);
+            }
         });
     }
 
