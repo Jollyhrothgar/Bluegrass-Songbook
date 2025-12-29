@@ -6,6 +6,12 @@
     <title>About - Bluegrass Songbook</title>
     <link rel="icon" type="image/png" href="images/banjo.png">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Apply theme immediately to prevent flash of white
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
     <style>
         body {
             background: var(--bg);
@@ -236,12 +242,5 @@
         </div>
     </div>
 
-    <script>
-        // Apply saved theme (matches main app's localStorage key)
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        }
-    </script>
 </body>
 </html>

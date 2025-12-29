@@ -6,6 +6,12 @@
     <title>Dev Blog - Bluegrass Songbook</title>
     <link rel="icon" type="image/png" href="images/banjo.png">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Apply theme immediately to prevent flash of white
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         body {
@@ -264,12 +270,6 @@
     </div>
 
     <script>
-        // Apply saved theme
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        }
-
         let posts = [];
 
         async function loadPosts() {
