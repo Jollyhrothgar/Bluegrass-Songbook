@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Blog - Bluegrass Songbook</title>
+    <link rel="icon" type="image/png" href="images/banjo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .blog-page {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .blog-nav {
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--text);
+            border-color: var(--text-secondary);
+            background: var(--bg-secondary);
+        }
+
+        .blog-header {
+            margin-bottom: 2rem;
+        }
+
+        .blog-header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+            color: var(--text);
+        }
+
+        .blog-header .tagline {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        /* Post list styles */
+        .post-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .post-card {
+            padding: 1.25rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .post-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .post-card h2 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.25rem;
+            color: var(--text);
+        }
+
+        .post-card .post-date {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        .post-card .post-summary {
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Post view styles */
+        .post-view {
+            display: none;
+        }
+
+        .post-view.active {
+            display: block;
+        }
+
+        .post-list.hidden {
+            display: none;
+        }
+
+        .post-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .post-back:hover {
+            color: var(--text);
+        }
+
+        .post-title {
+            font-size: 1.75rem;
+            margin: 0 0 0.5rem 0;
+            color: var(--text);
+        }
+
+        .post-meta {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Markdown content styles */
+        .post-content {
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        .post-content h2 {
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem 0;
+            color: var(--text);
+        }
+
+        .post-content h3 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem 0;
+            color: var(--text);
+        }
+
+        .post-content p {
+            margin: 0 0 1rem 0;
+        }
+
+        .post-content ul, .post-content ol {
+            margin: 0 0 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .post-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content code {
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            background: var(--bg-secondary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: var(--accent);
+        }
+
+        .post-content pre {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 0 0 1rem 0;
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .post-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .post-content a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+
+        .post-content blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 1rem 0;
+            padding-left: 1rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .post-content strong {
+            color: var(--text);
+        }
+
+        .loading {
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-page">
+        <nav class="blog-nav">
+            <a href="/" class="back-link">
+                <span>&larr;</span>
+                <span>Back to Songbook</span>
+            </a>
+        </nav>
+
+        <header class="blog-header">
+            <h1>Dev Blog</h1>
+            <p class="tagline">Updates on what's new and what's next</p>
+        </header>
+
+        <div id="post-list" class="post-list">
+            <div class="loading">Loading posts...</div>
+        </div>
+
+        <div id="post-view" class="post-view">
+            <div class="post-back" onclick="showList()">
+                <span>&larr;</span>
+                <span>All posts</span>
+            </div>
+            <h1 id="post-title" class="post-title"></h1>
+            <div id="post-meta" class="post-meta"></div>
+            <div id="post-content" class="post-content"></div>
+        </div>
+    </div>
+
+    <script>
+        // Apply saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+
+        let posts = [];
+
+        async function loadPosts() {
+            try {
+                const response = await fetch('data/posts.json');
+                posts = await response.json();
+                renderPostList();
+
+                // Check for hash navigation
+                if (window.location.hash) {
+                    const slug = window.location.hash.slice(1);
+                    const post = posts.find(p => p.slug === slug);
+                    if (post) {
+                        showPost(post.slug);
+                    }
+                }
+            } catch (error) {
+                document.getElementById('post-list').innerHTML =
+                    '<div class="empty-state">Unable to load posts</div>';
+            }
+        }
+
+        function renderPostList() {
+            const container = document.getElementById('post-list');
+
+            if (posts.length === 0) {
+                container.innerHTML = '<div class="empty-state">No posts yet</div>';
+                return;
+            }
+
+            container.innerHTML = posts.map(post => `
+                <div class="post-card" onclick="showPost('${post.slug}')">
+                    <h2>${escapeHtml(post.title)}</h2>
+                    <div class="post-date">${formatDate(post.date)}</div>
+                    <p class="post-summary">${escapeHtml(post.summary)}</p>
+                </div>
+            `).join('');
+        }
+
+        async function showPost(slug) {
+            const post = posts.find(p => p.slug === slug);
+            if (!post) return;
+
+            document.getElementById('post-list').classList.add('hidden');
+            document.getElementById('post-view').classList.add('active');
+
+            document.getElementById('post-title').textContent = post.title;
+            document.getElementById('post-meta').textContent = formatDate(post.date);
+            document.getElementById('post-content').innerHTML = '<div class="loading">Loading...</div>';
+
+            // Update URL
+            history.pushState({ slug }, '', `#${slug}`);
+
+            // Fetch and render markdown
+            try {
+                const response = await fetch(`posts/${slug}.md`);
+                const markdown = await response.text();
+
+                // Strip frontmatter
+                const content = markdown.replace(/^---[\s\S]*?---\s*/, '');
+
+                document.getElementById('post-content').innerHTML = marked.parse(content);
+            } catch (error) {
+                document.getElementById('post-content').innerHTML =
+                    '<div class="empty-state">Unable to load post</div>';
+            }
+        }
+
+        function showList() {
+            document.getElementById('post-list').classList.remove('hidden');
+            document.getElementById('post-view').classList.remove('active');
+            history.pushState({}, '', window.location.pathname);
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            const date = new Date(dateStr + 'T00:00:00');
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Handle back/forward navigation
+        window.addEventListener('popstate', (e) => {
+            if (e.state && e.state.slug) {
+                showPost(e.state.slug);
+            } else {
+                showList();
+            }
+        });
+
+        loadPosts();
+    </script>
+</body>
+</html>

@@ -42,6 +42,9 @@ show_help() {
     echo "      Export user genre suggestions from Supabase to JSON"
     echo "      (requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars)"
     echo ""
+    echo "  build-posts"
+    echo "      Build posts.json manifest from markdown files in docs/posts/"
+    echo ""
 }
 
 case "$COMMAND" in
@@ -103,6 +106,10 @@ case "$COMMAND" in
     export-suggestions)
         echo "Exporting genre suggestions from Supabase..."
         uv run python3 scripts/lib/export_genre_suggestions.py
+        ;;
+    build-posts)
+        echo "Building posts manifest..."
+        uv run python3 scripts/lib/build_posts.py
         ;;
     help|--help|-h|"")
         show_help
