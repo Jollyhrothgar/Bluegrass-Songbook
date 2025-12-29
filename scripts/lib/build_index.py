@@ -516,6 +516,12 @@ def build_index(parsed_dirs: list[Path], output_file: Path, enrich_tags: bool = 
         # Compute Nashville data for chord search
         nashville_data = compute_nashville_data(content)
 
+        # Generate unique song ID
+        # Suffix instrumentals to avoid collisions with vocal songs of same name
+        song_id = pro_file.stem
+        if is_tune:
+            song_id = f"{song_id}_instrumental"
+
         # Compute group_id for version grouping
         # Include lyrics_hash to split groups with different lyrics
         base_group_id = compute_group_id(metadata['title'], metadata['artist'])
@@ -524,7 +530,7 @@ def build_index(parsed_dirs: list[Path], output_file: Path, enrich_tags: bool = 
         group_id = f"{base_group_id}_{lyrics_hash}" if lyrics_hash else base_group_id
 
         song = {
-            'id': pro_file.stem,
+            'id': song_id,
             'title': metadata['title'],
             'artist': metadata['artist'],
             'composer': metadata['composer'],

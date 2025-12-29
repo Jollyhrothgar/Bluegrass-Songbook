@@ -208,6 +208,9 @@ function handleHistoryNavigation(state) {
             if (state.query) {
                 searchInput.value = state.query;
                 search(state.query);
+            } else if (searchInput?.value) {
+                // Re-run search with current input value when navigating back
+                search(searchInput.value);
             }
             break;
     }
