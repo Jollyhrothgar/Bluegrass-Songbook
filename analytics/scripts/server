@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+#
+# server - Start Jupyter notebook server for analytics
+#
+# Usage:
+#   ./scripts/server [port]       # Start Jupyter (default port 8888)
+#   ./scripts/server 9999         # Start on specific port
+#
+
+set -e
+
+ANALYTICS_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+REPO_ROOT="$(cd "$ANALYTICS_ROOT/.." && pwd)"
+cd "$ANALYTICS_ROOT"
+
+PORT="${1:-8888}"
+
+# Check environment first
+./scripts/bootstrap --check
+
+# Check if port is available
+port_available() {
+    ! lsof -i:"$1" >/dev/null 2>&1
+}
+
+find_available_port() {
+    local port="$1"
+    local max_attempts=20
+    local attempt=0
+
+    while [ $attempt -lt $max_attempts ]; do
+        if port_available "$port"; then
+            echo "$port"
+            return 0
+        fi
+        echo "Port $port is in use, trying $((port + 1))..." >&2
+        port=$((port + 1))
+        attempt=$((attempt + 1))
+    done
+
+    echo "Could not find available port after $max_attempts attempts" >&2
+    return 1
+}
+
+PORT=$(find_available_port "$PORT")
+
+echo ""
+echo "Starting Jupyter notebook server..."
+echo "Dashboard will open at: http://localhost:$PORT/notebooks/dashboard.ipynb"
+echo ""
+
+cd "$REPO_ROOT"
+uv run jupyter notebook \
+    --notebook-dir="$ANALYTICS_ROOT" \
+    --port="$PORT" \
+    --no-browser \
+    --NotebookApp.token='' \
+    --NotebookApp.password=''

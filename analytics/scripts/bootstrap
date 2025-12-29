@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+#
+# bootstrap - Setup analytics environment
+#
+# Usage:
+#   ./scripts/bootstrap           # Install deps and check .env
+#   ./scripts/bootstrap --check   # Just check .env exists
+#
+
+set -e
+
+ANALYTICS_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+REPO_ROOT="$(cd "$ANALYTICS_ROOT/.." && pwd)"
+cd "$ANALYTICS_ROOT"
+
+CHECK_ONLY=false
+for arg in "$@"; do
+    case $arg in
+        --check)
+            CHECK_ONLY=true
+            shift
+            ;;
+    esac
+done
+
+echo "=== Analytics Dashboard Setup ==="
+echo ""
+
+# Check for .env file
+if [ ! -f ".env" ]; then
+    echo "ERROR: .env file not found"
+    echo ""
+    echo "Create it from the template:"
+    echo "  cp .env.example .env"
+    echo ""
+    echo "Then add your Supabase credentials:"
+    echo "  SUPABASE_URL=https://your-project.supabase.co"
+    echo "  SUPABASE_SERVICE_KEY=your-service-role-key"
+    echo ""
+    echo "Get these from: https://supabase.com/dashboard/project/YOUR_PROJECT/settings/api"
+    exit 1
+fi
+
+# Validate .env has required vars
+source .env
+if [ -z "$SUPABASE_URL" ] || [ "$SUPABASE_URL" = "https://your-project.supabase.co" ]; then
+    echo "ERROR: SUPABASE_URL not configured in .env"
+    exit 1
+fi
+
+if [ -z "$SUPABASE_SERVICE_KEY" ] || [ "$SUPABASE_SERVICE_KEY" = "your-service-role-key-here" ]; then
+    echo "ERROR: SUPABASE_SERVICE_KEY not configured in .env"
+    exit 1
+fi
+
+echo "✓ .env configured"
+
+if [ "$CHECK_ONLY" = true ]; then
+    echo ""
+    echo "Environment check passed!"
+    exit 0
+fi
+
+# Install dependencies
+echo ""
+echo "Installing analytics dependencies..."
+cd "$REPO_ROOT"
+uv sync --extra analytics
+
+echo ""
+echo "Bootstrap complete!"
+echo "  - Run './scripts/server' to start Jupyter"
+echo "  - Open dashboard.ipynb in the browser"

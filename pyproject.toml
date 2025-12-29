@@ -21,6 +21,13 @@ analysis = [
     "matplotlib>=3.7.0",
     "numpy>=1.24.0",
 ]
+analytics = [
+    "jupyter>=1.0.0",
+    "pandas>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "supabase>=2.0.0",
+    "matplotlib>=3.7.0",
+]
 search = [
     "sentence-transformers>=2.2.0",
     "numpy>=1.24.0",
