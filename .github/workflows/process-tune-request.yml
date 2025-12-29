@@ -48,10 +48,14 @@ jobs:
             --issue-number "$ISSUE_NUMBER" \
             --author "$ISSUE_AUTHOR"
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Install project dependencies
+        run: uv sync
+
       - name: Rebuild search index
-        run: |
-          pip install beautifulsoup4
-          python scripts/lib/build_index.py --no-tags
+        run: uv run python scripts/lib/build_index.py
 
       - name: Commit and push
         run: |

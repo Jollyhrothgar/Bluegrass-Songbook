@@ -48,7 +48,7 @@ jobs:
       - name: Build search index
         run: |
           echo "Building search index..."
-          uv run python scripts/lib/build_index.py --no-tags
+          uv run python scripts/lib/build_index.py
           echo "Index built: $(wc -l < docs/data/index.jsonl) songs"
 
       - name: Build blog posts

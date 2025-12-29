@@ -214,16 +214,27 @@ Tags are added to songs during index build via `tag_enrichment.py`.
 | `docs/data/artist_tags.json` | Cached MusicBrainz artist tags (checked into git) |
 | `docs/data/tags.json` | Song-level tag cache |
 
-### Refreshing Tags
+### Build Workflow
 
-MusicBrainz is only available locally (not on GitHub Actions). To refresh:
+Tags are applied automatically during every index build (local and CI):
+
+| Where | What happens |
+|-------|--------------|
+| **Local or CI** | `build_index.py` reads `artist_tags.json` → applies genre tags |
+| **Local or CI** | Harmonic analysis runs → applies vibe tags (JamFriendly, Modal) |
+| **Local only** | `refresh-tags` queries MusicBrainz → updates `artist_tags.json` |
+
+**Normal flow**: Just push `.pro` files. CI rebuilds index with tags from cached `artist_tags.json`.
+
+**Adding new artists**: If songs have artists not in `artist_tags.json`, run locally:
 
 ```bash
 # Requires local MusicBrainz database on port 5440
 ./scripts/utility refresh-tags
+git add docs/data/artist_tags.json && git commit -m "Refresh artist tags"
 ```
 
-This updates `artist_tags.json` and rebuilds the index. GitHub Actions builds read from the cached file.
+This updates the cache, which CI then uses for future builds.
 
 ### query_artist_tags.py
 
