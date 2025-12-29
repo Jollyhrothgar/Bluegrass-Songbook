@@ -9,6 +9,7 @@ A searchable collection of 17,000+ bluegrass and country songs with chords, buil
 ./scripts/server             # Start frontend at http://localhost:8080
 ./scripts/utility add-song FILE.pro  # Add a song to the collection
 ./scripts/utility refresh-tags       # Refresh tags from MusicBrainz (local only)
+./scripts/utility build-posts        # Build blog posts manifest
 ```
 
 ## Development Practices
@@ -59,9 +60,13 @@ git worktree remove ../feature-xyz
 Bluegrass-Songbook/
 ├── docs/                    # Frontend (GitHub Pages)
 │   ├── index.html           # Search UI + song editor
-│   ├── js/search.js         # All frontend logic
+│   ├── blog.html            # Dev blog
+│   ├── js/                  # ES modules (main.js, state.js, search-core.js, etc.)
 │   ├── css/style.css        # Dark/light theme styles
-│   └── data/index.jsonl      # Song index (built from .pro files)
+│   ├── posts/               # Blog posts (markdown)
+│   └── data/
+│       ├── index.jsonl      # Song index (built from .pro files)
+│       └── posts.json       # Blog manifest (built from posts/)
 │
 ├── sources/                 # Song collections (each self-contained)
 │   ├── classic-country/     # ~17,000 parsed songs
@@ -104,10 +109,10 @@ Bluegrass-Songbook/
 
 ### Adding a UI Feature
 
-1. Edit `docs/js/search.js` (all logic is here)
+1. Edit the relevant module in `docs/js/` (see `docs/js/CLAUDE.md` for module breakdown)
 2. Edit `docs/css/style.css` for styling
 3. Test at `http://localhost:8080` (run `./scripts/server`)
-4. See `docs/js/CLAUDE.md` for architecture
+4. Push to main - CI will verify JS syntax and rebuild if needed
 
 ### Fixing Parser Issues
 
@@ -172,12 +177,13 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 | Workflow | Trigger | Action |
 |----------|---------|--------|
+| `build.yml` | Push to main, PRs | Rebuilds index + posts, auto-commits if changed |
 | `process-song-submission.yml` | Issue labeled `song-submission` + `approved` | Adds new song |
 | `process-song-correction.yml` | Issue labeled `song-correction` + `approved` | Updates existing song |
 
 ## Current State
 
-- **17,144 songs** with chord search, transposition, favorites, dark mode
+- **17,600+ songs** with chord search, transposition, favorites, dark mode
 - **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Structure (Instrumental, Waltz) - 93% coverage via MusicBrainz + harmonic analysis
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
 - **Song versions**: Multiple arrangements with voting (infrastructure ready)
@@ -189,11 +195,12 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 | I want to... | Go to... |
 |--------------|----------|
-| Add a UI feature | `docs/js/search.js` + `docs/js/CLAUDE.md` |
+| Add a UI feature | `docs/js/` + `docs/js/CLAUDE.md` |
 | Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
+| Write a blog post | `docs/posts/` (then run `./scripts/utility build-posts`) |
 | See product vision | `ROADMAP.md` |
 | Run tests | `uv run pytest` |

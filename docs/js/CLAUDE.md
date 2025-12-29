@@ -1,16 +1,30 @@
 # Frontend (docs/js)
 
-Single-page search application for the Bluegrass Songbook. Main logic is in `search.js`, auth/sync in `supabase-auth.js`.
+Single-page search application for the Bluegrass Songbook. Modularized into ES modules.
 
 ## Files
 
 ```
 docs/
 ├── index.html          # Page structure, sidebar, modals
-├── js/search.js        # Main application logic
-├── js/supabase-auth.js # Auth, user lists, voting
+├── blog.html           # Dev blog
+├── js/
+│   ├── main.js         # Entry point, initialization, event wiring
+│   ├── state.js        # Shared state (allSongs, currentSong, etc.)
+│   ├── search-core.js  # Search logic, query parsing, filtering
+│   ├── song-view.js    # Song rendering, controls, ABC notation
+│   ├── chords.js       # Transposition, Nashville numbers, key detection
+│   ├── tags.js         # Tag dropdown, filtering
+│   ├── favorites.js    # Favorites management, sync
+│   ├── lists.js        # Custom lists, list picker
+│   ├── editor.js       # Song editor, ChordPro conversion
+│   ├── utils.js        # Shared utilities (escapeHtml, etc.)
+│   └── supabase-auth.js # Auth, cloud sync, voting
 ├── css/style.css       # Dark/light themes, responsive layout
-└── data/index.jsonl     # Song index (built by scripts/lib/build_index.py)
+├── posts/              # Blog posts (markdown)
+└── data/
+    ├── index.jsonl     # Song index (built by scripts/lib/build_index.py)
+    └── posts.json      # Blog manifest (built by scripts/lib/build_posts.py)
 ```
 
 ## Quick Start
@@ -65,6 +79,23 @@ let userLists = [];             // Custom user lists (via supabase-auth.js)
 blue moon kentucky
 ```
 
+**Field-specific filters**: Target specific metadata
+```
+artist:hank williams      # Filter by artist (multi-word supported)
+title:blue moon           # Filter by title
+lyrics:lonesome highway   # Filter by lyrics content
+key:G                     # Filter by key
+tag:bluegrass             # Filter by tag
+composer:bill monroe      # Filter by composer/writer
+```
+
+**Negative filters**: Exclude results with `-` prefix
+```
+tag:bluegrass -tag:instrumental    # Bluegrass but not instrumentals
+artist:george jones -lyrics:drinking
+-key:C                             # Exclude songs in C
+```
+
 **Chord search**: Find songs with specific Nashville numbers
 ```
 chord:VII        # Songs with VII chord
@@ -75,6 +106,11 @@ chord:VII,II     # Songs with both VII and II
 ```
 prog:I-IV-V      # Classic progression
 prog:ii-V-I      # Jazz turnaround
+```
+
+**Combining filters**: Mix and match
+```
+artist:hank williams tag:honkytonk chord:VII
 ```
 
 ### Song Rendering Pipeline
@@ -137,12 +173,14 @@ function navigateTo(mode) {
 
 ## Adding a Feature
 
-1. **Add state variable** (if needed) at top of file
-2. **Add DOM element reference** in the DOM elements section
-3. **Implement function** following existing patterns
-4. **Wire up event listener** at bottom of file (in DOMContentLoaded or inline)
-5. **Add UI** in `index.html` if needed
-6. **Style** in `css/style.css`
+1. **Identify the right module** - search in `search-core.js`, song display in `song-view.js`, etc.
+2. **Add state** (if needed) in `state.js` and export it
+3. **Add DOM element reference** in `main.js` DOM elements section
+4. **Implement function** in the appropriate module, export it
+5. **Wire up event listener** in `main.js` init function
+6. **Add UI** in `index.html` if needed
+7. **Style** in `css/style.css`
+8. **Push** - CI will syntax-check all modules
 
 ## Common Patterns
 
