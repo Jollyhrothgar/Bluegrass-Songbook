@@ -16,7 +16,7 @@ I really had no way to organize it effectively.
 I've often been in the position of "I can really clearly articulate this idea I want to accomplish,
 but I have no desire to learn all the syntax and frameworks I need to accomplish this". Another way
 \-- I think I am pretty good about thinking from a systems and architecture perspective, but then
-when it gets down to the nitty ditty details of "Ah crap, I made this file too large and now I need
+when it gets down to the nitty-gritty details of "Ah crap, I made this file too large and now I need
 to refactor it because I'm running out of mental space to deal with it".
 
 But - then Claude Code appeared. And I got dumped from my dream job at Google. Then I went to work
