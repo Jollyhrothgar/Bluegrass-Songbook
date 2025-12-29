@@ -35,7 +35,7 @@ import {
 } from './chords.js';
 import { updateFavoriteButton } from './favorites.js';
 import { updateListPickerButton } from './lists.js';
-import { renderTagBadges } from './tags.js';
+import { renderTagBadges, getTagCategory, formatTagName } from './tags.js';
 
 // DOM element references (set by init)
 let songViewEl = null;
@@ -522,13 +522,33 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         metaHtml += `<div class="meta-item"><span class="meta-label">From:</span> <a href="${song.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a></div>`;
     }
 
-    // Tags with "add your own" option
-    const tagBadges = renderTagBadges(song);
+    // Tags with voting and "add your own" option
+    const songTags = song.tags || {};
+    const tagNames = Object.keys(songTags);
     const isLoggedIn = window.SupabaseAuth?.isLoggedIn?.() || false;
+
+    // Render tags with voting controls (scores populated async)
+    const tagsHtml = tagNames.length > 0
+        ? tagNames.map(tag => {
+            const category = getTagCategory(tag);
+            const displayName = formatTagName(tag);
+            return `
+                <span class="votable-tag tag-${category}" data-tag="${escapeHtml(tag)}">
+                    <span class="tag-name">${escapeHtml(displayName)}</span>
+                    ${isLoggedIn ? `
+                        <button class="vote-btn vote-up" data-vote="1" title="Agree">▲</button>
+                        <span class="vote-score" title="Net votes">·</span>
+                        <button class="vote-btn vote-down" data-vote="-1" title="Disagree">▼</button>
+                    ` : ''}
+                </span>
+            `;
+        }).join('')
+        : '<em class="no-tags">None</em>';
+
     metaHtml += `
         <div class="song-tags-row">
             <span class="meta-label">Tags:</span>
-            <span class="song-tags">${tagBadges || '<em class="no-tags">None</em>'}</span>
+            <span id="song-tags-container" class="song-tags" data-song-id="${song.id}">${tagsHtml}</span>
             ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song.id}">+ Add your own</button>` : ''}
         </div>
         <div id="add-tags-form" class="add-tags-form hidden">
@@ -682,6 +702,49 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     // Add event listeners
     setupRenderOptionsListeners(song, chordpro);
     setupAbcControlListeners(song, chordpro, abcContent);
+}
+
+/**
+ * Load and display tag vote counts
+ */
+async function loadTagVotes(songId) {
+    const container = document.getElementById('song-tags-container');
+    if (!container) return;
+
+    // Fetch vote counts and user votes in parallel
+    const [votesResult, userVotesResult] = await Promise.all([
+        window.SupabaseAuth.fetchTagVotes(songId),
+        window.SupabaseAuth.fetchUserTagVotes(songId)
+    ]);
+
+    const votes = votesResult.data || {};
+    const userVotes = userVotesResult.data || {};
+
+    // Update each tag with vote counts and user vote state
+    container.querySelectorAll('.votable-tag').forEach(tagEl => {
+        const tagName = tagEl.dataset.tag?.toLowerCase();
+        if (!tagName) return;
+
+        const voteData = votes[tagName] || { net: 0, up: 0, down: 0 };
+        const userVote = userVotes[tagName] || 0;
+
+        // Update score display
+        const scoreEl = tagEl.querySelector('.vote-score');
+        if (scoreEl) {
+            const net = voteData.net || 0;
+            scoreEl.textContent = net === 0 ? '·' : (net > 0 ? `+${net}` : String(net));
+            scoreEl.title = `${voteData.up || 0} up, ${voteData.down || 0} down`;
+        }
+
+        // Store user's current vote
+        tagEl.dataset.userVote = String(userVote);
+
+        // Highlight user's vote
+        const upBtn = tagEl.querySelector('.vote-up');
+        const downBtn = tagEl.querySelector('.vote-down');
+        if (upBtn) upBtn.classList.toggle('voted', userVote === 1);
+        if (downBtn) downBtn.classList.toggle('voted', userVote === -1);
+    });
 }
 
 /**
@@ -852,6 +915,47 @@ function setupRenderOptionsListeners(song, chordpro) {
                     addBtn.textContent = originalText;
                     addBtn.disabled = false;
                 }, 2000);
+            }
+        });
+    }
+
+    // Tag voting handlers
+    const tagsContainer = document.getElementById('song-tags-container');
+    if (tagsContainer && window.SupabaseAuth?.isLoggedIn?.()) {
+        const songId = tagsContainer.dataset.songId;
+
+        // Fetch and display vote counts
+        loadTagVotes(songId);
+
+        // Handle vote button clicks
+        tagsContainer.addEventListener('click', async (e) => {
+            const voteBtn = e.target.closest('.vote-btn');
+            if (!voteBtn) return;
+
+            e.preventDefault();
+            const tagEl = voteBtn.closest('.votable-tag');
+            const tagName = tagEl?.dataset.tag;
+            const voteValue = parseInt(voteBtn.dataset.vote, 10);
+
+            if (!tagName || !songId) return;
+
+            // Get current user vote for this tag
+            const currentVote = parseInt(tagEl.dataset.userVote || '0', 10);
+
+            if (currentVote === voteValue) {
+                // Clicking same vote removes it
+                const { error } = await window.SupabaseAuth.removeTagVote(songId, tagName);
+                if (!error) {
+                    tagEl.dataset.userVote = '0';
+                    loadTagVotes(songId);  // Refresh counts
+                }
+            } else {
+                // Cast new vote
+                const { error } = await window.SupabaseAuth.castTagVote(songId, tagName, voteValue);
+                if (!error) {
+                    tagEl.dataset.userVote = String(voteValue);
+                    loadTagVotes(songId);  // Refresh counts
+                }
             }
         });
     }

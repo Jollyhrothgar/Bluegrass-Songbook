@@ -542,6 +542,121 @@ async function submitGenreSuggestions(songId, tags) {
     return { data, error };
 }
 
+// =============================================================================
+// Tag Voting
+// =============================================================================
+
+// Fetch vote counts for all tags on a song
+async function fetchTagVotes(songId) {
+    if (!supabaseClient) {
+        return { data: {}, error: null };
+    }
+
+    const { data, error } = await supabaseClient
+        .from('tag_vote_counts')
+        .select('tag_name, net_score, upvotes, downvotes')
+        .eq('song_id', songId);
+
+    if (error) {
+        console.error('Error fetching tag votes:', error);
+        return { data: {}, error };
+    }
+
+    // Convert to object: { tagName: { net, up, down } }
+    const votes = {};
+    for (const row of (data || [])) {
+        votes[row.tag_name] = {
+            net: row.net_score,
+            up: row.upvotes,
+            down: row.downvotes
+        };
+    }
+
+    return { data: votes, error: null };
+}
+
+// Fetch current user's votes for a song's tags
+async function fetchUserTagVotes(songId) {
+    if (!supabaseClient || !currentUser) {
+        return { data: {}, error: null };
+    }
+
+    const { data, error } = await supabaseClient
+        .from('tag_votes')
+        .select('tag_name, vote_value')
+        .eq('song_id', songId)
+        .eq('user_id', currentUser.id);
+
+    if (error) {
+        console.error('Error fetching user tag votes:', error);
+        return { data: {}, error };
+    }
+
+    // Convert to object: { tagName: voteValue }
+    const votes = {};
+    for (const row of (data || [])) {
+        votes[row.tag_name] = row.vote_value;
+    }
+
+    return { data: votes, error: null };
+}
+
+// Cast or update a vote on a tag
+async function castTagVote(songId, tagName, value) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    if (value !== 1 && value !== -1) {
+        return { error: { message: 'Invalid vote value' } };
+    }
+
+    // Sanitize tag name
+    const cleanTag = tagName.toLowerCase().replace(/[^a-z0-9\s\-]/g, '').trim();
+    if (!cleanTag) {
+        return { error: { message: 'Invalid tag name' } };
+    }
+
+    const { error } = await supabaseClient
+        .from('tag_votes')
+        .upsert({
+            user_id: currentUser.id,
+            song_id: String(songId).slice(0, 100),
+            tag_name: cleanTag,
+            vote_value: value
+        }, {
+            onConflict: 'user_id,song_id,tag_name'
+        });
+
+    if (error) {
+        console.error('Error casting tag vote:', error);
+    }
+
+    return { error };
+}
+
+// Remove a vote from a tag
+async function removeTagVote(songId, tagName) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    const cleanTag = tagName.toLowerCase().replace(/[^a-z0-9\s\-]/g, '').trim();
+
+    const { error } = await supabaseClient
+        .from('tag_votes')
+        .delete()
+        .eq('user_id', currentUser.id)
+        .eq('song_id', songId)
+        .eq('tag_name', cleanTag);
+
+    if (error) {
+        console.error('Error removing tag vote:', error);
+    }
+
+    return { error };
+}
+
 // Export functions for use in search.js
 window.SupabaseAuth = {
     init: initSupabase,
@@ -563,11 +678,16 @@ window.SupabaseAuth = {
     addToCloudList,
     removeFromCloudList,
     syncListsToCloud,
-    // Votes
+    // Votes (song versions)
     fetchGroupVotes,
     fetchUserVotes,
     castVote,
     removeVote,
     // Genre Suggestions
-    submitGenreSuggestions
+    submitGenreSuggestions,
+    // Tag Voting
+    fetchTagVotes,
+    fetchUserTagVotes,
+    castTagVote,
+    removeTagVote
 };

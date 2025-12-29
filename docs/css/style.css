@@ -519,6 +519,58 @@ h1 {
     font-style: italic;
 }
 
+/* Votable tags with voting controls */
+.votable-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.15rem;
+    padding: 0.15rem 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.votable-tag .tag-name {
+    margin-right: 0.2rem;
+}
+
+.votable-tag .vote-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.1rem;
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    transition: opacity 0.15s, color 0.15s;
+    line-height: 1;
+}
+
+.votable-tag .vote-btn:hover {
+    opacity: 1;
+}
+
+.votable-tag .vote-up:hover,
+.votable-tag .vote-up.voted {
+    color: #16a34a;
+    opacity: 1;
+}
+
+.votable-tag .vote-down:hover,
+.votable-tag .vote-down.voted {
+    color: #dc2626;
+    opacity: 1;
+}
+
+.votable-tag .vote-score {
+    font-size: 0.6rem;
+    min-width: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
 .hidden {
     display: none !important;
 }
