@@ -19,30 +19,134 @@ let navSearchEl = null;
 
 /**
  * Parse search query for special modifiers
+ * Supports field:value syntax where value continues until next field: or end
+ * Supports negative filters with - prefix: -artist:name, -tag:genre
+ * Examples:
+ *   artist:hank williams lyrics:cheatin
+ *   tag:classic -tag:instrumental
+ *   george jones -lyrics:drinking
  */
 export function parseSearchQuery(query) {
     const result = {
         textTerms: [],
-        chordFilters: [],      // e.g., ['VII', 'II']
+        chordFilters: [],       // e.g., ['VII', 'II']
         progressionFilter: null, // e.g., ['ii', 'V', 'I']
-        tagFilters: []         // e.g., ['Bluegrass', 'JamFriendly']
+        tagFilters: [],         // e.g., ['Bluegrass', 'JamFriendly']
+        artistFilter: null,     // artist name search
+        titleFilter: null,      // title search
+        lyricsFilter: null,     // lyrics search
+        composerFilter: null,   // composer/writer search
+        keyFilter: null,        // musical key search
+        // Negative filters (exclusions)
+        excludeArtist: null,
+        excludeTitle: null,
+        excludeLyrics: null,
+        excludeComposer: null,
+        excludeKey: null,
+        excludeTags: [],
+        excludeChords: []
     };
 
-    const tokens = query.split(/\s+/);
+    // Define recognized prefixes (with short aliases)
+    const prefixMap = {
+        'artist:': 'artist', 'a:': 'artist',
+        'title:': 'title',
+        'lyrics:': 'lyrics', 'l:': 'lyrics',
+        'composer:': 'composer', 'writer:': 'composer',
+        'key:': 'key', 'k:': 'key',
+        'chord:': 'chord', 'c:': 'chord',
+        'prog:': 'prog', 'p:': 'prog',
+        'tag:': 'tag', 't:': 'tag'
+    };
 
-    for (const token of tokens) {
-        if (token.startsWith('chord:') || token.startsWith('c:')) {
-            const chords = token.replace(/^(chord:|c:)/, '').split(',');
-            result.chordFilters.push(...chords.filter(c => c));
-        } else if (token.startsWith('prog:') || token.startsWith('p:')) {
-            const prog = token.replace(/^(prog:|p:)/, '').split('-');
-            result.progressionFilter = prog.filter(c => c);
-        } else if (token.startsWith('tag:') || token.startsWith('t:')) {
-            const tags = token.replace(/^(tag:|t:)/, '').split(',');
-            result.tagFilters.push(...tags.filter(t => t));
-        } else if (token) {
-            result.textTerms.push(token.toLowerCase());
+    const prefixPattern = Object.keys(prefixMap).sort((a, b) => b.length - a.length);
+    // Match optional - before prefix
+    const prefixRegex = new RegExp(`(-?)(${prefixPattern.map(p => p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
+
+    // Find all prefix positions
+    const matches = [];
+    let match;
+    while ((match = prefixRegex.exec(query)) !== null) {
+        const isNegative = match[1] === '-';
+        const prefix = match[2].toLowerCase();
+        matches.push({
+            prefix,
+            isNegative,
+            index: match.index,
+            end: match.index + match[0].length
+        });
+    }
+
+    // Extract values for each prefix
+    for (let i = 0; i < matches.length; i++) {
+        const { prefix, isNegative, end } = matches[i];
+        const nextStart = i + 1 < matches.length ? matches[i + 1].index : query.length;
+        const value = query.slice(end, nextStart).trim();
+        const fieldType = prefixMap[prefix];
+
+        if (!value) continue;
+
+        if (isNegative) {
+            // Negative filters
+            switch (fieldType) {
+                case 'artist':
+                    result.excludeArtist = value.toLowerCase();
+                    break;
+                case 'title':
+                    result.excludeTitle = value.toLowerCase();
+                    break;
+                case 'lyrics':
+                    result.excludeLyrics = value.toLowerCase();
+                    break;
+                case 'composer':
+                    result.excludeComposer = value.toLowerCase();
+                    break;
+                case 'key':
+                    result.excludeKey = value.toUpperCase();
+                    break;
+                case 'chord':
+                    result.excludeChords.push(...value.split(',').map(c => c.trim()).filter(c => c));
+                    break;
+                case 'tag':
+                    result.excludeTags.push(...value.split(',').map(t => t.trim()).filter(t => t));
+                    break;
+            }
+        } else {
+            // Positive filters
+            switch (fieldType) {
+                case 'artist':
+                    result.artistFilter = value.toLowerCase();
+                    break;
+                case 'title':
+                    result.titleFilter = value.toLowerCase();
+                    break;
+                case 'lyrics':
+                    result.lyricsFilter = value.toLowerCase();
+                    break;
+                case 'composer':
+                    result.composerFilter = value.toLowerCase();
+                    break;
+                case 'key':
+                    result.keyFilter = value.toUpperCase();
+                    break;
+                case 'chord':
+                    result.chordFilters.push(...value.split(',').map(c => c.trim()).filter(c => c));
+                    break;
+                case 'prog':
+                    result.progressionFilter = value.split('-').map(c => c.trim()).filter(c => c);
+                    break;
+                case 'tag':
+                    result.tagFilters.push(...value.split(',').map(t => t.trim()).filter(t => t));
+                    break;
+            }
         }
+    }
+
+    // Extract text before the first prefix (general search terms)
+    const firstPrefixIndex = matches.length > 0 ? matches[0].index : query.length;
+    const generalText = query.slice(0, firstPrefixIndex).trim();
+    if (generalText) {
+        result.textTerms = generalText.toLowerCase().split(/\s+/).filter(t => t);
     }
 
     return result;
@@ -113,10 +217,15 @@ export function search(query) {
         return;
     }
 
-    const { textTerms, chordFilters, progressionFilter, tagFilters } = parseSearchQuery(query);
+    const {
+        textTerms, chordFilters, progressionFilter, tagFilters,
+        artistFilter, titleFilter, lyricsFilter, composerFilter, keyFilter,
+        excludeArtist, excludeTitle, excludeLyrics, excludeComposer, excludeKey,
+        excludeTags, excludeChords
+    } = parseSearchQuery(query);
 
     const results = allSongs.filter(song => {
-        // Text search
+        // General text search (searches all fields)
         if (textTerms.length > 0) {
             const searchText = [
                 song.title || '',
@@ -131,9 +240,48 @@ export function search(query) {
             }
         }
 
+        // Field-specific filters (inclusion)
+        if (artistFilter && !(song.artist || '').toLowerCase().includes(artistFilter)) {
+            return false;
+        }
+        if (titleFilter && !(song.title || '').toLowerCase().includes(titleFilter)) {
+            return false;
+        }
+        if (lyricsFilter && !(song.lyrics || '').toLowerCase().includes(lyricsFilter)) {
+            return false;
+        }
+        if (composerFilter && !(song.composer || '').toLowerCase().includes(composerFilter)) {
+            return false;
+        }
+        if (keyFilter && (song.key || '').toUpperCase() !== keyFilter) {
+            return false;
+        }
+
+        // Field-specific filters (exclusion)
+        if (excludeArtist && (song.artist || '').toLowerCase().includes(excludeArtist)) {
+            return false;
+        }
+        if (excludeTitle && (song.title || '').toLowerCase().includes(excludeTitle)) {
+            return false;
+        }
+        if (excludeLyrics && (song.lyrics || '').toLowerCase().includes(excludeLyrics)) {
+            return false;
+        }
+        if (excludeComposer && (song.composer || '').toLowerCase().includes(excludeComposer)) {
+            return false;
+        }
+        if (excludeKey && (song.key || '').toUpperCase() === excludeKey) {
+            return false;
+        }
+
         // Chord search
         if (chordFilters.length > 0) {
             if (!songHasChords(song, chordFilters)) return false;
+        }
+
+        // Exclude chords
+        if (excludeChords.length > 0) {
+            if (songHasChords(song, excludeChords)) return false;
         }
 
         // Progression search
@@ -144,6 +292,11 @@ export function search(query) {
         // Tag search
         if (tagFilters.length > 0) {
             if (!songHasTags(song, tagFilters)) return false;
+        }
+
+        // Exclude tags
+        if (excludeTags.length > 0) {
+            if (songHasTags(song, excludeTags)) return false;
         }
 
         return true;
@@ -183,14 +336,26 @@ export function search(query) {
 
     // Update stats with search info
     let statsText = `${dedupedResults.length.toLocaleString()} songs`;
-    if (chordFilters.length > 0) {
-        statsText += ` with ${chordFilters.join(', ')}`;
-    }
-    if (progressionFilter && progressionFilter.length > 0) {
-        statsText += ` with ${progressionFilter.join('-')} progression`;
-    }
-    if (tagFilters.length > 0) {
-        statsText += ` tagged ${tagFilters.map(formatTagName).join(', ')}`;
+    const filters = [];
+    // Inclusion filters
+    if (artistFilter) filters.push(`artist: "${artistFilter}"`);
+    if (titleFilter) filters.push(`title: "${titleFilter}"`);
+    if (composerFilter) filters.push(`by: "${composerFilter}"`);
+    if (keyFilter) filters.push(`key: ${keyFilter}`);
+    if (chordFilters.length > 0) filters.push(`chords: ${chordFilters.join(', ')}`);
+    if (progressionFilter && progressionFilter.length > 0) filters.push(`prog: ${progressionFilter.join('-')}`);
+    if (tagFilters.length > 0) filters.push(`tags: ${tagFilters.map(formatTagName).join(', ')}`);
+    if (lyricsFilter) filters.push(`lyrics: "${lyricsFilter}"`);
+    // Exclusion filters
+    if (excludeArtist) filters.push(`-artist: "${excludeArtist}"`);
+    if (excludeTitle) filters.push(`-title: "${excludeTitle}"`);
+    if (excludeComposer) filters.push(`-by: "${excludeComposer}"`);
+    if (excludeKey) filters.push(`-key: ${excludeKey}`);
+    if (excludeChords.length > 0) filters.push(`-chords: ${excludeChords.join(', ')}`);
+    if (excludeTags.length > 0) filters.push(`-tags: ${excludeTags.map(formatTagName).join(', ')}`);
+    if (excludeLyrics) filters.push(`-lyrics: "${excludeLyrics}"`);
+    if (filters.length > 0) {
+        statsText += ` (${filters.join(', ')})`;
     }
     if (searchStatsEl) {
         searchStatsEl.textContent = statsText;
