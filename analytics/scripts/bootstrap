@@ -67,7 +67,13 @@ echo "Installing analytics dependencies..."
 cd "$REPO_ROOT"
 uv sync --extra analytics
 
+# Setup nbstripout to auto-clear outputs on commit
+echo ""
+echo "Setting up nbstripout (auto-strips notebook outputs on commit)..."
+uv run nbstripout --install --attributes .gitattributes
+
 echo ""
 echo "Bootstrap complete!"
 echo "  - Run './scripts/server' to start Jupyter"
 echo "  - Open dashboard.ipynb in the browser"
+echo "  - Notebook outputs are auto-stripped on commit (nbstripout)"

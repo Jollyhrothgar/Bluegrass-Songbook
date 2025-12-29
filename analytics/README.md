@@ -32,11 +32,10 @@ You need the **service role key** (not anon key) to bypass RLS and see all data.
 | `./scripts/bootstrap` | Install deps, validate .env |
 | `./scripts/server` | Start Jupyter notebook |
 
-## Before Committing
+## Security
 
-Clear all outputs before committing to avoid leaking data:
-- Kernel → Restart & Clear Output
-- Or: `jupyter nbconvert --clear-output --inplace dashboard.ipynb`
+Notebook outputs are **automatically stripped on commit** via `nbstripout`.
+No manual clearing needed - the git filter handles it.
 
 ## Data Available
 
