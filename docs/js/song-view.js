@@ -551,25 +551,27 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         }).join('')
         : '<em class="no-tags">None</em>';
 
-    metaHtml += `
-        <div class="song-tags-row">
-            <span class="meta-label">Tags:</span>
-            <span id="song-tags-container" class="song-tags" data-song-id="${song.id}">${tagsHtml}</span>
-            ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song.id}">+ Add your own</button>` : ''}
-        </div>
-        <div id="add-tags-form" class="add-tags-form hidden">
-            <div class="add-tags-header">Add your own tags (comma-separated)</div>
-            <div class="add-tags-input-row">
-                <input type="text" id="genre-suggestion-input"
-                       placeholder="e.g., driving, lonesome, parking lot jam"
-                       maxlength="200">
-                <button id="submit-tags-btn">Submit</button>
+    // Tags section (separate from meta, full width)
+    const tagsRowHtml = `
+        <div class="song-tags-section">
+            <div class="song-tags-row">
+                <span id="song-tags-container" class="song-tags" data-song-id="${song.id}">${tagsHtml}</span>
+                ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song.id}">+ Add your own</button>` : ''}
             </div>
-            <div id="tag-preview" class="tag-preview hidden"></div>
-            <div id="tag-error" class="tag-error hidden"></div>
-            <div class="add-tags-note">
-                We're learning how bluegrass players describe their music.
-                Your suggestions help shape future categories.
+            <div id="add-tags-form" class="add-tags-form hidden">
+                <div class="add-tags-header">Add your own tags (comma-separated)</div>
+                <div class="add-tags-input-row">
+                    <input type="text" id="genre-suggestion-input"
+                           placeholder="e.g., driving, lonesome, parking lot jam"
+                           maxlength="200">
+                    <button id="submit-tags-btn">Submit</button>
+                </div>
+                <div id="tag-preview" class="tag-preview hidden"></div>
+                <div id="tag-error" class="tag-error hidden"></div>
+                <div class="add-tags-note">
+                    We're learning how bluegrass players describe their music.
+                    Your suggestions help shape future categories.
+                </div>
             </div>
         </div>
     `;
@@ -630,62 +632,68 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     // Chord view HTML (hide if showing ABC view, or if no chords at all)
     const chordViewClass = showAbcView || !hasChords ? 'hidden' : '';
 
+    // Header controls HTML (all display options)
+    const headerControlsHtml = hasChords ? `
+        <div class="header-controls">
+            <div class="header-control-group">
+                <span class="header-control-label">Key</span>
+                <select id="key-select" class="key-select">${keyOptions}</select>
+            </div>
+            <div class="header-control-group">
+                <span class="header-control-label">Size</span>
+                <div class="font-size-buttons">
+                    <button id="font-decrease" class="font-btn" ${fontSizeLevel <= -2 ? 'disabled' : ''}>−</button>
+                    <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
+                </div>
+            </div>
+            <div class="header-control-group">
+                <span class="header-control-label">Chords</span>
+                <select id="chord-mode-select" class="chord-mode-select">
+                    <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All</option>
+                    <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First</option>
+                    <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>None</option>
+                </select>
+            </div>
+            <div class="header-control-group">
+                <span class="header-control-label">Layout</span>
+                <div class="header-checkboxes">
+                    <label class="header-checkbox" title="Compact layout">
+                        <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
+                        <span>Compact</span>
+                    </label>
+                    <label class="header-checkbox" title="Nashville numbers">
+                        <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
+                        <span>Nashville</span>
+                    </label>
+                    <label class="header-checkbox" title="Two columns">
+                        <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
+                        <span>2-Col</span>
+                    </label>
+                    <label class="header-checkbox" title="Section labels">
+                        <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
+                        <span>Labels</span>
+                    </label>
+                    <label class="header-checkbox" title="Show source">
+                        <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
+                        <span>Source</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    ` : '';
+
     songContentEl.innerHTML = `
         <div class="song-header">
-            <div class="song-title">${escapeHtml(title)}${versionHtml}</div>
-            <div class="song-meta">${metaHtml}</div>
+            <div class="song-header-left">
+                <div class="song-title">${escapeHtml(title)}${versionHtml}</div>
+                <div class="song-meta">${metaHtml}</div>
+            </div>
+            ${headerControlsHtml}
         </div>
+        ${tagsRowHtml}
         ${viewToggleHtml}
         ${abcViewHtml}
         <div id="chord-view" class="${chordViewClass}">
-            <fieldset class="render-options-fieldset">
-                <legend>Controls</legend>
-                <div class="render-options">
-                    <div class="control-box">
-                        <span class="control-box-label">Change Key</span>
-                        <select id="key-select" class="key-select">${keyOptions}</select>
-                    </div>
-                    <div class="control-box">
-                        <span class="control-box-label">Font Size</span>
-                        <div class="font-size-buttons">
-                            <button id="font-decrease" class="font-btn" ${fontSizeLevel <= -2 ? 'disabled' : ''}>−</button>
-                            <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
-                        </div>
-                    </div>
-                    <div class="control-box">
-                        <span class="control-box-label">Display Options</span>
-                        <div class="display-options">
-                            <label>
-                                <select id="chord-mode-select" class="chord-mode-select">
-                                    <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All Chords</option>
-                                    <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First Only</option>
-                                    <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>No Chords</option>
-                                </select>
-                            </label>
-                            <label>
-                                <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
-                                <span>Compact</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
-                                <span>Nashville</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
-                                <span>2-Col</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
-                                <span>Labels</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
-                                <span>Source</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
             ${showChordProSource ? `
             <div class="source-view">
                 <div class="source-pane">

@@ -1,5 +1,6 @@
 /* Theme variables */
 :root {
+    /* Colors - light mode */
     --bg: #fafafa;
     --bg-secondary: #f7f7f7;
     --text: #000000;
@@ -12,7 +13,29 @@
     --danger-hover: #b91c1c;
     --success: #16a34a;
     --heart: #e11d48;
-    --btn-label-size: 0.8rem;
+
+    /* Spacing scale */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 0.75rem;
+    --space-lg: 1rem;
+    --space-xl: 1.5rem;
+
+    /* Font sizes */
+    --font-xs: 0.65rem;   /* tiny labels, tag voting */
+    --font-sm: 0.8rem;    /* buttons, secondary UI */
+    --font-base: 0.9rem;  /* body text */
+    --font-md: 1rem;      /* slightly larger */
+    --font-lg: 1.25rem;   /* headings */
+
+    /* Border radius */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 10px;
+
+    /* Legacy - keeping for existing usage */
+    --btn-label-size: var(--font-sm);
 }
 
 [data-theme="dark"] {
@@ -540,11 +563,11 @@ h1 {
 .votable-tag {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
+    gap: var(--space-xs);
     padding: 0.15rem 0.4rem;
     font-size: 0.7rem;
     font-weight: 500;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     text-transform: uppercase;
     letter-spacing: 0.02em;
     border: 1px solid currentColor;
@@ -561,8 +584,8 @@ h1 {
     gap: 0.15rem;
     background: inherit;
     border: 1px solid currentColor;
-    border-radius: 10px;
-    padding: 0.1rem 0.25rem;
+    border-radius: var(--radius-xl);
+    padding: 0.1rem var(--space-xs);
     margin-left: 0.15rem;
 }
 
@@ -671,9 +694,32 @@ h1 {
 }
 
 .song-header {
-    margin-bottom: 1.25rem;
-    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-lg);
+    margin-bottom: 0;
+    padding-bottom: var(--space-md);
     border-bottom: 1px solid var(--border);
+}
+
+/* Tags section - full width below header */
+.song-tags-section {
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: var(--space-md);
+}
+
+.song-tags-section .song-tags-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.song-header-left {
+    flex: 1;
+    min-width: 0;
 }
 
 .song-title {
@@ -685,6 +731,59 @@ h1 {
 .song-meta {
     color: var(--text-secondary);
     font-size: 0.9rem;
+}
+
+/* Header controls (all display options) */
+.header-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.header-control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: var(--space-sm);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.header-control-label {
+    font-size: var(--font-xs);
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.header-checkboxes {
+    display: flex;
+    gap: var(--space-sm);
+    align-items: center;
+    flex: 1;
+}
+
+.header-checkbox {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.header-checkbox:hover {
+    color: var(--text);
+}
+
+.header-checkbox input[type="checkbox"] {
+    accent-color: var(--accent);
+    width: 0.9rem;
+    height: 0.9rem;
 }
 
 .meta-item {
@@ -734,7 +833,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    gap: 0.75rem;
+    gap: var(--space-md);
 }
 
 /* Control boxes with labels */
@@ -742,11 +841,11 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.4rem;
+    gap: var(--space-sm);
     background: transparent;
     border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
     justify-content: flex-start;
 }
 
@@ -761,6 +860,7 @@ h1 {
 
 .font-size-buttons {
     display: flex;
+    align-items: center;
     gap: 0.25rem;
 }
 
