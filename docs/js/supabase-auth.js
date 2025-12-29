@@ -498,6 +498,50 @@ async function removeVote(songId) {
     return { error };
 }
 
+// =============================================================================
+// Genre Suggestions
+// =============================================================================
+
+// Submit genre suggestions for a song
+// tags: array of strings (already validated by caller, but we sanitize again for safety)
+async function submitGenreSuggestions(songId, tags) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    // Defense-in-depth: sanitize again before sending to database
+    const sanitize = (str) => str
+        .toLowerCase()
+        .replace(/[^a-z0-9\s\-]/g, '')  // Only allow safe chars
+        .replace(/\s+/g, ' ')            // Collapse spaces
+        .trim()
+        .slice(0, 30);                   // Max length
+
+    const sanitizedTags = tags
+        .map(sanitize)
+        .filter(t => t.length > 0);
+
+    if (sanitizedTags.length === 0) {
+        return { error: { message: 'No valid tags' } };
+    }
+
+    const rows = sanitizedTags.map(tag => ({
+        user_id: currentUser.id,
+        song_id: String(songId).slice(0, 100),  // Limit song_id length too
+        raw_tag: tag
+    }));
+
+    const { data, error } = await supabaseClient
+        .from('genre_suggestions')
+        .insert(rows);
+
+    if (error) {
+        console.error('Error submitting genre suggestions:', error);
+    }
+
+    return { data, error };
+}
+
 // Export functions for use in search.js
 window.SupabaseAuth = {
     init: initSupabase,
@@ -523,5 +567,7 @@ window.SupabaseAuth = {
     fetchGroupVotes,
     fetchUserVotes,
     castVote,
-    removeVote
+    removeVote,
+    // Genre Suggestions
+    submitGenreSuggestions
 };

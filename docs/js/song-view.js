@@ -35,6 +35,7 @@ import {
 } from './chords.js';
 import { updateFavoriteButton } from './favorites.js';
 import { updateListPickerButton } from './lists.js';
+import { renderTagBadges } from './tags.js';
 
 // DOM element references (set by init)
 let songViewEl = null;
@@ -521,6 +522,32 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         metaHtml += `<div class="meta-item"><span class="meta-label">From:</span> <a href="${song.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a></div>`;
     }
 
+    // Tags with "add your own" option
+    const tagBadges = renderTagBadges(song);
+    const isLoggedIn = window.SupabaseAuth?.isLoggedIn?.() || false;
+    metaHtml += `
+        <div class="song-tags-row">
+            <span class="meta-label">Tags:</span>
+            <span class="song-tags">${tagBadges || '<em class="no-tags">None</em>'}</span>
+            ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song.id}">+ Add your own</button>` : ''}
+        </div>
+        <div id="add-tags-form" class="add-tags-form hidden">
+            <div class="add-tags-header">Add your own tags (comma-separated)</div>
+            <div class="add-tags-input-row">
+                <input type="text" id="genre-suggestion-input"
+                       placeholder="e.g., driving, lonesome, parking lot jam"
+                       maxlength="200">
+                <button id="submit-tags-btn">Submit</button>
+            </div>
+            <div id="tag-preview" class="tag-preview hidden"></div>
+            <div id="tag-error" class="tag-error hidden"></div>
+            <div class="add-tags-note">
+                We're learning how bluegrass players describe their music.
+                Your suggestions help shape future categories.
+            </div>
+        </div>
+    `;
+
     // Build view toggle only for hybrid songs (both ABC and chords)
     const viewToggleHtml = (hasAbc && hasChords) ? `
         <div class="view-toggle">
@@ -674,6 +701,158 @@ function setupRenderOptionsListeners(song, chordpro) {
         seeVersionsBtn.addEventListener('click', (e) => {
             e.preventDefault();
             showVersionPicker(seeVersionsBtn.dataset.groupId);
+        });
+    }
+
+    // Genre suggestion handlers
+    const addTagsBtn = songContentEl.querySelector('.add-tags-btn');
+    if (addTagsBtn) {
+        addTagsBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const form = document.getElementById('add-tags-form');
+            const input = document.getElementById('genre-suggestion-input');
+            if (form) {
+                form.classList.remove('hidden');
+                if (input) input.focus();
+            }
+        });
+    }
+
+    // Helper to parse and clean tags - be forgiving, show what we understood
+    function parseTagInput(raw) {
+        // Split on commas, semicolons, or multiple spaces
+        const parts = raw.split(/[,;]+|\s{2,}/)
+            .map(t => t.trim().toLowerCase())
+            .filter(t => t.length > 0);
+
+        const cleanedTags = [];
+        const warnings = [];
+
+        for (const part of parts) {
+            // Strip anything that's not letters, numbers, spaces, or hyphens
+            // (no apostrophes, quotes, semicolons, or other SQL-risky chars)
+            let cleaned = part.replace(/[^a-z0-9\s\-]/g, '').trim();
+            // Collapse multiple spaces
+            cleaned = cleaned.replace(/\s+/g, ' ');
+
+            if (cleaned.length === 0) continue;
+
+            // Truncate long tags
+            if (cleaned.length > 30) {
+                cleaned = cleaned.slice(0, 30).trim();
+            }
+
+            // Avoid duplicates
+            if (!cleanedTags.includes(cleaned)) {
+                cleanedTags.push(cleaned);
+            }
+        }
+
+        // Limit to 5 tags
+        if (cleanedTags.length > 5) {
+            warnings.push(`Showing first 5 of ${cleanedTags.length} tags`);
+        }
+
+        return { tags: cleanedTags.slice(0, 5), warnings };
+    }
+
+    // Live preview as user types
+    const suggestionInput = document.getElementById('genre-suggestion-input');
+    if (suggestionInput) {
+        suggestionInput.addEventListener('input', () => {
+            const preview = document.getElementById('tag-preview');
+            const errorDiv = document.getElementById('tag-error');
+            const raw = suggestionInput.value.trim();
+
+            if (!raw) {
+                preview?.classList.add('hidden');
+                errorDiv?.classList.add('hidden');
+                return;
+            }
+
+            const { tags, warnings } = parseTagInput(raw);
+
+            // Show preview - this is the key feedback
+            if (tags.length > 0 && preview) {
+                preview.innerHTML = '<span class="preview-label">We\'ll add:</span> ' +
+                    tags.map(t => `<span class="tag-badge tag-other">${escapeHtml(t)}</span>`).join(' ');
+                preview.classList.remove('hidden');
+            } else {
+                preview?.classList.add('hidden');
+            }
+
+            // Show warnings (not errors - just info)
+            if (warnings.length > 0 && errorDiv) {
+                errorDiv.textContent = warnings[0];
+                errorDiv.classList.remove('hidden');
+            } else {
+                errorDiv?.classList.add('hidden');
+            }
+        });
+    }
+
+    const submitTagsBtn = document.getElementById('submit-tags-btn');
+    if (submitTagsBtn) {
+        submitTagsBtn.addEventListener('click', async () => {
+            const input = document.getElementById('genre-suggestion-input');
+            const addBtn = songContentEl.querySelector('.add-tags-btn');
+            const errorDiv = document.getElementById('tag-error');
+            const raw = input?.value?.trim() || '';
+
+            if (!raw) {
+                if (errorDiv) {
+                    errorDiv.textContent = 'Type something first!';
+                    errorDiv.classList.remove('hidden');
+                }
+                return;
+            }
+
+            const { tags } = parseTagInput(raw);
+
+            if (tags.length === 0) {
+                if (errorDiv) {
+                    errorDiv.textContent = 'No valid tags found - try words like "driving" or "lonesome"';
+                    errorDiv.classList.remove('hidden');
+                }
+                return;
+            }
+
+            const songId = addBtn?.dataset?.songId;
+            if (!songId) return;
+
+            // Disable button during submission
+            submitTagsBtn.disabled = true;
+            submitTagsBtn.textContent = 'Sending...';
+
+            const { error } = await window.SupabaseAuth.submitGenreSuggestions(songId, tags);
+
+            submitTagsBtn.disabled = false;
+            submitTagsBtn.textContent = 'Submit';
+
+            if (error) {
+                if (errorDiv) {
+                    errorDiv.textContent = 'Error: ' + error.message;
+                    errorDiv.classList.remove('hidden');
+                }
+                return;
+            }
+
+            // Success feedback
+            input.value = '';
+            document.getElementById('add-tags-form').classList.add('hidden');
+            document.getElementById('tag-preview')?.classList.add('hidden');
+            errorDiv?.classList.add('hidden');
+
+            // Brief confirmation
+            if (addBtn) {
+                const originalText = addBtn.textContent;
+                addBtn.textContent = 'Thanks!';
+                addBtn.disabled = true;
+                setTimeout(() => {
+                    addBtn.textContent = originalText;
+                    addBtn.disabled = false;
+                }, 2000);
+            }
         });
     }
 

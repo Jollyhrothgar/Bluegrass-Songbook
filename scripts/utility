@@ -38,6 +38,10 @@ show_help() {
     echo "  search-tunes <query> [limit]"
     echo "      Search TuneArch for tunes matching query and fetch results"
     echo ""
+    echo "  export-suggestions"
+    echo "      Export user genre suggestions from Supabase to JSON"
+    echo "      (requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars)"
+    echo ""
 }
 
 case "$COMMAND" in
@@ -95,6 +99,10 @@ case "$COMMAND" in
         uv run python3 scripts/lib/build_index.py --no-tags
         echo ""
         echo "Done! Tunes fetched and index rebuilt."
+        ;;
+    export-suggestions)
+        echo "Exporting genre suggestions from Supabase..."
+        uv run python3 scripts/lib/export_genre_suggestions.py
         ;;
     help|--help|-h|"")
         show_help
