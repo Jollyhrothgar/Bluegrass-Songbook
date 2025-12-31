@@ -8,6 +8,7 @@ import {
 } from './state.js';
 import { escapeHtml, generateLocalId } from './utils.js';
 import { isFavorite, toggleFavorite, updateSyncUI } from './favorites.js';
+import { trackListAction } from './analytics.js';
 
 // Module-level state
 let viewingListId = null;
@@ -76,6 +77,7 @@ export function createList(name) {
 
     userLists.push(newList);
     saveLists();
+    trackListAction('create', newList.id);
 
     // Sync to cloud if logged in
     syncListToCloud(newList, 'create');
@@ -119,6 +121,7 @@ export function deleteList(listId) {
     const list = userLists[index];
     userLists.splice(index, 1);
     saveLists();
+    trackListAction('delete', listId);
 
     // Sync to cloud
     if (list.cloudId) {
@@ -138,6 +141,7 @@ export function addSongToList(listId, songId) {
     if (!list.songs.includes(songId)) {
         list.songs.push(songId);
         saveLists();
+        trackListAction('add_song', listId);
 
         // Sync to cloud
         if (list.cloudId && isCloudSyncEnabled) {
@@ -159,6 +163,7 @@ export function removeSongFromList(listId, songId) {
     if (index !== -1) {
         list.songs.splice(index, 1);
         saveLists();
+        trackListAction('remove_song', listId);
 
         // Sync to cloud
         if (list.cloudId && isCloudSyncEnabled) {

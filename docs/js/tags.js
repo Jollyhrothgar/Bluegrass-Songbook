@@ -35,18 +35,26 @@ export function formatTagName(tag) {
 }
 
 /**
+ * Normalize a tag for matching (remove spaces, underscores, hyphens; lowercase)
+ */
+function normalizeTag(tag) {
+    return tag.toLowerCase().replace(/[\s_-]/g, '');
+}
+
+/**
  * Check if song has all required tags (case-insensitive prefix match)
+ * Normalizes input so "jam friendly", "jam_friendly", "JamFriendly" all match
  */
 export function songHasTags(song, requiredTags) {
     if (!requiredTags.length) return true;
 
     const songTags = song.tags || {};
-    const songTagKeys = Object.keys(songTags).map(t => t.toLowerCase());
+    const songTagKeys = Object.keys(songTags).map(normalizeTag);
 
     return requiredTags.every(searchTag => {
-        const searchLower = searchTag.toLowerCase();
+        const searchNormalized = normalizeTag(searchTag);
         // Match if any tag starts with the search term
-        return songTagKeys.some(tag => tag.startsWith(searchLower));
+        return songTagKeys.some(tag => tag.startsWith(searchNormalized));
     });
 }
 

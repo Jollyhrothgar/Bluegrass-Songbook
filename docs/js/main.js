@@ -17,6 +17,7 @@ import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } 
 import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro } from './editor.js';
 import { escapeHtml } from './utils.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions } from './chords.js';
+import { initAnalytics, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor } from './analytics.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -152,7 +153,9 @@ function setTheme(theme) {
 
 function toggleTheme() {
     const current = document.documentElement.getAttribute('data-theme');
-    setTheme(current === 'dark' ? 'light' : 'dark');
+    const newTheme = current === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    trackThemeToggle(newTheme);
 }
 
 // ============================================
@@ -260,18 +263,22 @@ function handleDeepLink() {
 
     if (hash.startsWith('#song/')) {
         const songId = hash.slice(6);
+        trackDeepLink('song', hash);
         openSong(songId);
         return true;
     } else if (hash === '#add') {
+        trackDeepLink('add', hash);
         showView('add-song');
         pushHistoryState('add-song');
         return true;
     } else if (hash === '#favorites') {
+        trackDeepLink('favorites', hash);
         showView('favorites');
         pushHistoryState('favorites');
         return true;
     } else if (hash.startsWith('#search/')) {
         const query = decodeURIComponent(hash.slice(8));
+        trackDeepLink('search', hash);
         searchInput.value = query;
         search(query);
         return true;
@@ -300,6 +307,7 @@ function closeSidebar() {
 
 function navigateTo(mode) {
     closeSidebar();
+    trackNavigation(mode);
     showView(mode);
     pushHistoryState(mode);
 }
@@ -1023,6 +1031,7 @@ function handleExport(action) {
     if (!song || !chordpro) return;
 
     const title = song.title || 'song';
+    trackExport(song.id, action);
 
     switch (action) {
         case 'copy-chordpro':
@@ -1061,6 +1070,9 @@ function downloadFile(filename, content, mimeType) {
 function init() {
     // Initialize theme
     initTheme();
+
+    // Initialize analytics (early, before other modules)
+    initAnalytics();
 
     // Initialize modules
     initFavorites({
@@ -1286,7 +1298,11 @@ function init() {
     });
 
     // Print button
-    printBtn?.addEventListener('click', openPrintView);
+    printBtn?.addEventListener('click', () => {
+        const song = getCurrentSong();
+        if (song) trackExport(song.id, 'print');
+        openPrintView();
+    });
 
     // Export dropdowns - toggle on button click
     copyBtn?.addEventListener('click', (e) => {

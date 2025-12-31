@@ -753,5 +753,7 @@ window.SupabaseAuth = {
     removeTagVote,
     // Visitor Stats
     logVisit,
-    getVisitorStats
+    getVisitorStats,
+    // Internal (for analytics module)
+    _getClient: () => supabaseClient
 };

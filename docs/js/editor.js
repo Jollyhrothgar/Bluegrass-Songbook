@@ -9,6 +9,7 @@ import {
 } from './state.js';
 import { escapeHtml } from './utils.js';
 import { extractChords, detectKey, toNashville } from './chords.js';
+import { trackEditor, trackSubmission } from './analytics.js';
 
 // Module-level state
 let editorDetectedKey = null;
@@ -46,6 +47,7 @@ let songViewEl = null;
 export function enterEditMode(song) {
     setEditMode(true);
     setEditingSongId(song.id);
+    trackEditor('edit', song.id);
 
     // Populate editor with song data
     if (editorTitleEl) editorTitleEl.value = song.title || '';
@@ -770,6 +772,7 @@ ${chordpro}
 
             const issueUrl = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
             window.open(issueUrl, '_blank');
+            trackSubmission(editMode ? 'correction' : 'new_song');
 
             if (editorStatusEl) {
                 editorStatusEl.textContent = 'Opening GitHub...';

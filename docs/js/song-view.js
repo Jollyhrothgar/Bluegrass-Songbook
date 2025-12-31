@@ -36,6 +36,10 @@ import {
 import { updateFavoriteButton } from './favorites.js';
 import { updateListPickerButton } from './lists.js';
 import { renderTagBadges, getTagCategory, formatTagName } from './tags.js';
+import {
+    trackSongView, trackTranspose, trackDisplayMode, trackFontSize,
+    trackVersionPicker, trackTagVote, trackTagSuggest, endSongView
+} from './analytics.js';
 
 // DOM element references (set by init)
 let songViewEl = null;
@@ -775,7 +779,11 @@ function setupRenderOptionsListeners(song, chordpro) {
     const keySelect = document.getElementById('key-select');
     if (keySelect) {
         keySelect.addEventListener('change', (e) => {
-            setCurrentDetectedKey(e.target.value);
+            const newKey = e.target.value;
+            if (song && currentDetectedKey !== newKey) {
+                trackTranspose(song.id, currentDetectedKey, newKey);
+            }
+            setCurrentDetectedKey(newKey);
             renderSong(song, chordpro);
         });
     }
@@ -994,6 +1002,7 @@ function setupRenderOptionsListeners(song, chordpro) {
     if (compactCheckbox) {
         compactCheckbox.addEventListener('change', (e) => {
             setCompactMode(e.target.checked);
+            trackDisplayMode('compact', e.target.checked);
             if (compactMode) setShowChordProSource(false);
             renderSong(song, chordpro);
         });
@@ -1003,6 +1012,7 @@ function setupRenderOptionsListeners(song, chordpro) {
     if (nashvilleCheckbox) {
         nashvilleCheckbox.addEventListener('change', (e) => {
             setNashvilleMode(e.target.checked);
+            trackDisplayMode('nashville', e.target.checked);
             if (nashvilleMode) setShowChordProSource(false);
             renderSong(song, chordpro);
         });
@@ -1045,7 +1055,9 @@ function setupRenderOptionsListeners(song, chordpro) {
     if (fontDecrease) {
         fontDecrease.addEventListener('click', () => {
             if (fontSizeLevel > -2) {
-                setFontSizeLevel(fontSizeLevel - 1);
+                const newLevel = fontSizeLevel - 1;
+                setFontSizeLevel(newLevel);
+                trackFontSize('decrease', newLevel);
                 renderSong(song, chordpro);
             }
         });
@@ -1055,7 +1067,9 @@ function setupRenderOptionsListeners(song, chordpro) {
     if (fontIncrease) {
         fontIncrease.addEventListener('click', () => {
             if (fontSizeLevel < 2) {
-                setFontSizeLevel(fontSizeLevel + 1);
+                const newLevel = fontSizeLevel + 1;
+                setFontSizeLevel(newLevel);
+                trackFontSize('increase', newLevel);
                 renderSong(song, chordpro);
             }
         });
@@ -1179,6 +1193,11 @@ export async function openSong(songId) {
     const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);
 
+    // Track song view in analytics
+    if (song) {
+        trackSongView(songId, 'search', song.group_id);
+    }
+
     // Track song view in Google Analytics
     if (typeof gtag === 'function' && song) {
         gtag('event', 'page_view', {
@@ -1228,6 +1247,12 @@ export async function openSongFromHistory(songId) {
 
     const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);
+
+    // Track song view from history/deep link
+    if (song) {
+        trackSongView(songId, 'deep_link', song.group_id);
+    }
+
     updateFavoriteButton();
     updateListPickerButton();
 
@@ -1245,6 +1270,8 @@ export async function showVersionPicker(groupId) {
 
     const versions = songGroups[groupId] || [];
     if (versions.length === 0) return;
+
+    trackVersionPicker(groupId, 'open');
 
     // Get vote counts for this group
     let voteCounts = {};
@@ -1309,6 +1336,7 @@ export async function showVersionPicker(groupId) {
     versionListEl.querySelectorAll('.version-item').forEach(item => {
         item.addEventListener('click', (e) => {
             if (e.target.closest('.vote-btn')) return;
+            trackVersionPicker(groupId, 'select', item.dataset.songId);
             closeVersionPicker();
             openSong(item.dataset.songId);
         });
@@ -1359,6 +1387,9 @@ export function closeVersionPicker() {
  * Go back to results
  */
 export function goBack() {
+    // Track time spent on song before navigating away
+    endSongView();
+
     // Close list picker dropdown when navigating away
     if (listPickerDropdownEl) listPickerDropdownEl.classList.add('hidden');
 

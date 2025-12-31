@@ -9,6 +9,7 @@ import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import { isFavorite } from './favorites.js';
 import { isSongInAnyList, showResultListPicker } from './lists.js';
 import { openSong, showVersionPicker } from './song-view.js';
+import { trackSearch as analyticsTrackSearch, trackSearchResultClick } from './analytics.js';
 
 // DOM element references (set by init)
 let searchInputEl = null;
@@ -16,6 +17,27 @@ let searchStatsEl = null;
 let resultsDivEl = null;
 let navFavoritesEl = null;
 let navSearchEl = null;
+
+// Analytics debounce (only track final query, not every keystroke)
+let analyticsDebounceTimer = null;
+let pendingSearchData = null;
+let lastRecordedQuery = null;
+const ANALYTICS_DEBOUNCE_MS = 1000;  // Wait 1s after typing stops
+
+/**
+ * Flush pending search analytics (call on result click or navigation)
+ */
+function flushPendingSearch() {
+    if (analyticsDebounceTimer) {
+        clearTimeout(analyticsDebounceTimer);
+        analyticsDebounceTimer = null;
+    }
+    if (pendingSearchData && pendingSearchData.query !== lastRecordedQuery) {
+        analyticsTrackSearch(pendingSearchData.query, pendingSearchData.resultCount, pendingSearchData.filters);
+        lastRecordedQuery = pendingSearchData.query;
+    }
+    pendingSearchData = null;
+}
 
 /**
  * Parse search query for special modifiers
@@ -213,6 +235,10 @@ export function search(query) {
     if (navSearchEl) navSearchEl.classList.add('active');
 
     if (!query.trim()) {
+        // Reset analytics state so future searches get tracked
+        if (analyticsDebounceTimer) clearTimeout(analyticsDebounceTimer);
+        pendingSearchData = null;
+        lastRecordedQuery = null;
         showRandomSongs();
         return;
     }
@@ -361,6 +387,25 @@ export function search(query) {
         searchStatsEl.textContent = statsText;
     }
 
+    // Track search in our analytics (debounced to capture final query, not keystrokes)
+    if (analyticsDebounceTimer) clearTimeout(analyticsDebounceTimer);
+    pendingSearchData = {
+        query,
+        resultCount: dedupedResults.length,
+        filters: {
+            has_artist: !!artistFilter,
+            has_title: !!titleFilter,
+            has_tag: tagFilters.length > 0,
+            has_chord: chordFilters.length > 0,
+            has_progression: !!progressionFilter,
+            has_key: !!keyFilter,
+            has_lyrics: !!lyricsFilter
+        }
+    };
+    analyticsDebounceTimer = setTimeout(() => {
+        flushPendingSearch();
+    }, ANALYTICS_DEBOUNCE_MS);
+
     renderResults(dedupedResults.slice(0, 50), textQuery);
 }
 
@@ -432,7 +477,8 @@ export function renderResults(songs, query) {
  */
 function setupResultEventListeners(resultsDiv) {
     // Click on result item opens song (or version picker if multiple versions)
-    resultsDiv.querySelectorAll('.result-item').forEach(item => {
+    const resultItems = resultsDiv.querySelectorAll('.result-item');
+    resultItems.forEach((item, index) => {
         item.addEventListener('click', (e) => {
             // Don't open song if clicking the list button or tag badge
             if (e.target.classList.contains('result-list-btn')) return;
@@ -440,6 +486,10 @@ function setupResultEventListeners(resultsDiv) {
 
             const groupId = item.dataset.groupId;
             const versions = groupId ? (songGroups[groupId] || []) : [];
+
+            // Flush pending search before recording click (so search is recorded first)
+            flushPendingSearch();
+            trackSearchResultClick(item.dataset.id, index, searchInputEl?.value || '');
 
             if (versions.length > 1) {
                 showVersionPicker(groupId);

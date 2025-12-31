@@ -7,6 +7,7 @@ import {
     syncInProgress, setSyncInProgress,
     showingFavorites, setShowingFavorites
 } from './state.js';
+import { trackFavorite } from './analytics.js';
 
 // Module-level DOM references (set by init)
 let navFavoritesEl = null;
@@ -68,6 +69,9 @@ export function isFavorite(songId) {
  */
 export function toggleFavorite(songId) {
     const isAdding = !hasFavorite(songId);
+
+    // Track favorite toggle
+    trackFavorite(songId, isAdding ? 'add' : 'remove');
 
     if (isAdding) {
         addFavorite(songId);
