@@ -5,7 +5,8 @@ import {
     allSongs, userLists,
     isCloudSyncEnabled, setCloudSyncEnabled,
     syncInProgress, setSyncInProgress,
-    showingFavorites, setShowingFavorites
+    showingFavorites, setShowingFavorites,
+    setListContext
 } from './state.js';
 import { trackFavorite } from './analytics.js';
 
@@ -200,6 +201,15 @@ export function showFavorites() {
     if (navSearchEl) navSearchEl.classList.remove('active');
 
     const favSongs = allSongs.filter(s => hasFavorite(s.id));
+    const favSongIds = favSongs.map(s => s.id);
+
+    // Set list context for navigation
+    setListContext({
+        listId: 'favorites',
+        listName: 'Favorites',
+        songIds: favSongIds,
+        currentIndex: -1
+    });
 
     if (searchStatsEl) {
         searchStatsEl.textContent = `${favSongs.length} favorite${favSongs.length !== 1 ? 's' : ''}`;
@@ -218,6 +228,7 @@ export function showFavorites() {
  */
 export function hideFavorites() {
     setShowingFavorites(false);
+    setListContext(null);
     if (navFavoritesEl) navFavoritesEl.classList.remove('active');
     if (navSearchEl) navSearchEl.classList.add('active');
 

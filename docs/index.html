@@ -386,10 +386,32 @@ This is the [G]chorus [D]part
                         </div>
                     </div>
                     <button id="edit-song-btn" class="action-btn">Edit</button>
-                    <button id="bug-btn" class="bug-btn">Report Bug</button>
+                    <button id="fullscreen-btn" class="icon-btn" title="Full screen (F)">
+                        <span>⛶</span>
+                        <span class="btn-label">Focus</span>
+                    </button>
                 </div>
             </div>
             <div id="song-content" class="song-content"></div>
+            <!-- Bottom navigation bar for fullscreen/list mode -->
+            <div id="song-nav-bar" class="song-nav-bar hidden">
+                <button id="exit-fullscreen-btn" class="nav-btn exit-btn" title="Exit focus mode (Esc)">
+                    <span class="nav-arrow">✕</span>
+                    <span class="nav-label">Exit</span>
+                </button>
+                <div class="nav-info">
+                    <span id="nav-position">1 of 10</span>
+                    <span id="nav-list-name" class="nav-list-name"></span>
+                </div>
+                <button id="nav-prev-btn" class="nav-btn" title="Previous song (←)">
+                    <span class="nav-arrow">←</span>
+                    <span class="nav-label">Prev</span>
+                </button>
+                <button id="nav-next-btn" class="nav-btn" title="Next song (→)">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-arrow">→</span>
+                </button>
+            </div>
         </div>
 
         <!-- Bug Report Modal -->

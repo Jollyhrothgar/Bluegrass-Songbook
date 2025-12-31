@@ -46,16 +46,47 @@ export let showSectionLabels = true;
 export let showChordProSource = false;
 export let fontSizeLevel = 0;  // -2 to +2
 
-export function setCompactMode(value) { compactMode = value; }
+// Save view preferences to localStorage
+function saveViewPrefs() {
+    const prefs = {
+        compactMode,
+        nashvilleMode,
+        twoColumnMode,
+        chordDisplayMode,
+        showSectionLabels,
+        fontSizeLevel
+    };
+    localStorage.setItem('songbook-view-prefs', JSON.stringify(prefs));
+}
+
+// Load view preferences from localStorage
+export function loadViewPrefs() {
+    try {
+        const saved = localStorage.getItem('songbook-view-prefs');
+        if (saved) {
+            const prefs = JSON.parse(saved);
+            if (prefs.compactMode !== undefined) compactMode = prefs.compactMode;
+            if (prefs.nashvilleMode !== undefined) nashvilleMode = prefs.nashvilleMode;
+            if (prefs.twoColumnMode !== undefined) twoColumnMode = prefs.twoColumnMode;
+            if (prefs.chordDisplayMode !== undefined) chordDisplayMode = prefs.chordDisplayMode;
+            if (prefs.showSectionLabels !== undefined) showSectionLabels = prefs.showSectionLabels;
+            if (prefs.fontSizeLevel !== undefined) fontSizeLevel = prefs.fontSizeLevel;
+        }
+    } catch (e) {
+        console.error('Failed to load view preferences:', e);
+    }
+}
+
+export function setCompactMode(value) { compactMode = value; saveViewPrefs(); }
 export function setShowingFavorites(value) { showingFavorites = value; }
-export function setNashvilleMode(value) { nashvilleMode = value; }
-export function setTwoColumnMode(value) { twoColumnMode = value; }
-export function setChordDisplayMode(value) { chordDisplayMode = value; }
+export function setNashvilleMode(value) { nashvilleMode = value; saveViewPrefs(); }
+export function setTwoColumnMode(value) { twoColumnMode = value; saveViewPrefs(); }
+export function setChordDisplayMode(value) { chordDisplayMode = value; saveViewPrefs(); }
 export function clearSeenChordPatterns() { seenChordPatterns.clear(); }
 export function addSeenChordPattern(pattern) { seenChordPatterns.add(pattern); }
-export function setShowSectionLabels(value) { showSectionLabels = value; }
+export function setShowSectionLabels(value) { showSectionLabels = value; saveViewPrefs(); }
 export function setShowChordProSource(value) { showChordProSource = value; }
-export function setFontSizeLevel(value) { fontSizeLevel = value; }
+export function setFontSizeLevel(value) { fontSizeLevel = value; saveViewPrefs(); }
 
 // Font size multipliers
 export const FONT_SIZES = {
@@ -136,6 +167,16 @@ export function setUserLists(lists) { userLists = lists; }
 export let historyInitialized = false;
 
 export function setHistoryInitialized(value) { historyInitialized = value; }
+
+// ============================================
+// FULLSCREEN / MUSICIAN MODE
+// ============================================
+
+export let fullscreenMode = false;
+export let listContext = null;  // { listId, songs, currentIndex } - for prev/next navigation
+
+export function setFullscreenMode(value) { fullscreenMode = value; }
+export function setListContext(context) { listContext = context; }
 
 // ============================================
 // EDITOR STATE

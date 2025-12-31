@@ -26,7 +26,10 @@ import {
     abcScale, setAbcScale,
     abcSynth, setAbcSynth,
     abcTimingCallbacks, setAbcTimingCallbacks,
-    abcIsPlaying, setAbcIsPlaying
+    abcIsPlaying, setAbcIsPlaying,
+    // Fullscreen/navigation state
+    fullscreenMode, setFullscreenMode,
+    listContext, setListContext
 } from './state.js';
 import { escapeHtml } from './utils.js';
 import {
@@ -50,6 +53,14 @@ let versionModalEl = null;
 let versionModalCloseEl = null;
 let versionModalTitleEl = null;
 let versionListEl = null;
+
+// Navigation bar elements
+let navBarEl = null;
+let navPrevBtnEl = null;
+let navNextBtnEl = null;
+let navPositionEl = null;
+let navListNameEl = null;
+let fullscreenBtnEl = null;
 
 // Callback references (set by init)
 let pushHistoryStateFn = null;
@@ -1193,6 +1204,18 @@ export async function openSong(songId) {
     const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);
 
+    // Update list context index if we're navigating within a list
+    if (listContext && listContext.songIds) {
+        const idx = listContext.songIds.indexOf(songId);
+        if (idx !== -1) {
+            setListContext({
+                ...listContext,
+                currentIndex: idx
+            });
+        }
+    }
+    updateNavBar();
+
     // Track song view in analytics
     if (song) {
         trackSongView(songId, 'search', song.group_id);
@@ -1384,11 +1407,112 @@ export function closeVersionPicker() {
 }
 
 /**
+ * Toggle fullscreen mode
+ */
+export function toggleFullscreen() {
+    const newMode = !fullscreenMode;
+    setFullscreenMode(newMode);
+    document.body.classList.toggle('fullscreen-mode', newMode);
+
+    // Update nav bar visibility and content
+    updateNavBar();
+}
+
+/**
+ * Exit fullscreen mode
+ */
+export function exitFullscreen() {
+    if (fullscreenMode) {
+        setFullscreenMode(false);
+        document.body.classList.remove('fullscreen-mode');
+        updateNavBar();
+    }
+}
+
+/**
+ * Update navigation bar based on list context
+ */
+export function updateNavBar() {
+    if (!navBarEl) return;
+
+    // Show nav bar if we have a list context (regardless of fullscreen)
+    // But in fullscreen mode, it's always shown via CSS
+    if (listContext && listContext.songIds && listContext.songIds.length > 0) {
+        const idx = listContext.currentIndex;
+        const total = listContext.songIds.length;
+
+        // Update position text
+        if (navPositionEl) {
+            navPositionEl.textContent = `${idx + 1} of ${total}`;
+        }
+
+        // Update list name
+        if (navListNameEl) {
+            navListNameEl.textContent = listContext.listName || '';
+        }
+
+        // Update button states
+        if (navPrevBtnEl) {
+            navPrevBtnEl.disabled = idx <= 0;
+        }
+        if (navNextBtnEl) {
+            navNextBtnEl.disabled = idx >= total - 1;
+        }
+
+        // Show nav bar in fullscreen mode (CSS handles this)
+        // In non-fullscreen, show it if we have context
+        if (fullscreenMode) {
+            navBarEl.classList.remove('hidden');
+        }
+    } else {
+        // No list context - hide nav bar (unless fullscreen mode CSS overrides)
+        navBarEl.classList.add('hidden');
+    }
+}
+
+/**
+ * Navigate to previous song in list
+ */
+export function navigatePrev() {
+    if (!listContext || listContext.currentIndex <= 0) return;
+
+    const newIndex = listContext.currentIndex - 1;
+    const songId = listContext.songIds[newIndex];
+
+    setListContext({
+        ...listContext,
+        currentIndex: newIndex
+    });
+
+    openSong(songId);
+}
+
+/**
+ * Navigate to next song in list
+ */
+export function navigateNext() {
+    if (!listContext || listContext.currentIndex >= listContext.songIds.length - 1) return;
+
+    const newIndex = listContext.currentIndex + 1;
+    const songId = listContext.songIds[newIndex];
+
+    setListContext({
+        ...listContext,
+        currentIndex: newIndex
+    });
+
+    openSong(songId);
+}
+
+/**
  * Go back to results
  */
 export function goBack() {
     // Track time spent on song before navigating away
     endSongView();
+
+    // Exit fullscreen mode
+    exitFullscreen();
 
     // Close list picker dropdown when navigating away
     if (listPickerDropdownEl) listPickerDropdownEl.classList.add('hidden');
@@ -1417,7 +1541,14 @@ export function initSongView(options) {
         versionList,
         pushHistoryState,
         showView,
-        backBtn
+        backBtn,
+        // Navigation elements
+        navBar,
+        navPrevBtn,
+        navNextBtn,
+        navPosition,
+        navListName,
+        fullscreenBtn
     } = options;
 
     songViewEl = songView;
@@ -1430,6 +1561,14 @@ export function initSongView(options) {
     versionListEl = versionList;
     pushHistoryStateFn = pushHistoryState;
     showViewFn = showView;
+
+    // Navigation elements
+    navBarEl = navBar;
+    navPrevBtnEl = navPrevBtn;
+    navNextBtnEl = navNextBtn;
+    navPositionEl = navPosition;
+    navListNameEl = navListName;
+    fullscreenBtnEl = fullscreenBtn;
 
     // Setup version modal close handlers
     if (versionModalCloseEl) {
@@ -1444,6 +1583,19 @@ export function initSongView(options) {
     // Setup back button
     if (backBtn) {
         backBtn.addEventListener('click', goBack);
+    }
+
+    // Setup fullscreen button
+    if (fullscreenBtnEl) {
+        fullscreenBtnEl.addEventListener('click', toggleFullscreen);
+    }
+
+    // Setup navigation buttons
+    if (navPrevBtnEl) {
+        navPrevBtnEl.addEventListener('click', navigatePrev);
+    }
+    if (navNextBtnEl) {
+        navNextBtnEl.addEventListener('click', navigateNext);
     }
 }
 

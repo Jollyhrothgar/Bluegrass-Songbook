@@ -4,7 +4,8 @@ import {
     userLists, setUserLists,
     allSongs, currentSong,
     isCloudSyncEnabled,
-    showingFavorites, setShowingFavorites
+    showingFavorites, setShowingFavorites,
+    setListContext
 } from './state.js';
 import { escapeHtml, generateLocalId } from './utils.js';
 import { isFavorite, toggleFavorite, updateSyncUI } from './favorites.js';
@@ -300,8 +301,20 @@ export function showListView(listId) {
         });
     }
 
-    // Show the list songs
-    const listSongs = allSongs.filter(s => list.songs.includes(s.id));
+    // Show the list songs (preserve order from the list)
+    const listSongIds = list.songs;
+    const listSongs = listSongIds
+        .map(id => allSongs.find(s => s.id === id))
+        .filter(Boolean);
+
+    // Set list context for navigation
+    setListContext({
+        listId: list.id,
+        listName: list.name,
+        songIds: listSongIds,
+        currentIndex: -1  // Will be set when a song is opened
+    });
+
     if (searchStatsEl) {
         searchStatsEl.textContent = `${list.name}: ${listSongs.length} song${listSongs.length !== 1 ? 's' : ''}`;
     }
@@ -326,6 +339,7 @@ export function showListView(listId) {
  */
 export function clearListView() {
     viewingListId = null;
+    setListContext(null);
     if (navListsContainerEl) {
         navListsContainerEl.querySelectorAll('.nav-item').forEach(btn => {
             btn.classList.remove('active');

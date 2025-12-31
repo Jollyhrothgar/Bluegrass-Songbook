@@ -7,12 +7,13 @@ import {
     setHistoryInitialized,
     historyInitialized,
     currentDetectedKey,
-    originalDetectedKey
+    originalDetectedKey,
+    loadViewPrefs
 } from './state.js';
 import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import { initFavorites, performFullSync, updateSyncUI, showFavorites, hideFavorites } from './favorites.js';
 import { initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync, clearListView, renderListsModal, createList, addSongToList } from './lists.js';
-import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro } from './song-view.js';
+import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, navigatePrev, navigateNext } from './song-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro } from './editor.js';
 import { escapeHtml } from './utils.js';
@@ -58,6 +59,15 @@ const versionModal = document.getElementById('version-modal');
 const versionModalClose = document.getElementById('version-modal-close');
 const versionModalTitle = document.getElementById('version-modal-title');
 const versionList = document.getElementById('version-list');
+
+// Fullscreen / navigation elements
+const fullscreenBtn = document.getElementById('fullscreen-btn');
+const exitFullscreenBtn = document.getElementById('exit-fullscreen-btn');
+const navBar = document.getElementById('song-nav-bar');
+const navPrevBtn = document.getElementById('nav-prev-btn');
+const navNextBtn = document.getElementById('nav-next-btn');
+const navPosition = document.getElementById('nav-position');
+const navListName = document.getElementById('nav-list-name');
 
 // Lists modal
 const listsModal = document.getElementById('lists-modal');
@@ -1071,6 +1081,9 @@ function init() {
     // Initialize theme
     initTheme();
 
+    // Load saved view preferences (before rendering any songs)
+    loadViewPrefs();
+
     // Initialize analytics (early, before other modules)
     initAnalytics();
 
@@ -1114,7 +1127,14 @@ function init() {
         versionList,
         pushHistoryState,
         showView,
-        backBtn
+        backBtn,
+        // Navigation elements
+        navBar,
+        navPrevBtn,
+        navNextBtn,
+        navPosition,
+        navListName,
+        fullscreenBtn
     });
 
     initSearch({
@@ -1376,3 +1396,43 @@ function init() {
 
 // Start the app
 init();
+
+// Exit fullscreen button
+if (exitFullscreenBtn) {
+    exitFullscreenBtn.addEventListener('click', exitFullscreen);
+}
+
+// ============================================
+// KEYBOARD SHORTCUTS
+// ============================================
+
+document.addEventListener('keydown', (e) => {
+    // Don't trigger shortcuts when typing in inputs
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        return;
+    }
+
+    // F key - toggle fullscreen mode (only when viewing a song)
+    if (e.key === 'f' || e.key === 'F') {
+        if (!songView.classList.contains('hidden')) {
+            e.preventDefault();
+            toggleFullscreen();
+        }
+    }
+
+    // Escape - exit fullscreen mode
+    if (e.key === 'Escape') {
+        exitFullscreen();
+    }
+
+    // Arrow keys for navigation (when viewing a song from a list)
+    if (!songView.classList.contains('hidden')) {
+        if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            navigatePrev();
+        } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            navigateNext();
+        }
+    }
+});

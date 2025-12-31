@@ -3034,3 +3034,200 @@ mark {
     color: var(--text-secondary);
     font-style: italic;
 }
+
+/* ============================================
+   FULLSCREEN / FOCUS MODE
+   ============================================ */
+
+/* Fullscreen mode - hide everything except song */
+body.fullscreen-mode .sidebar,
+body.fullscreen-mode .header,
+body.fullscreen-mode .search-container,
+body.fullscreen-mode #results,
+body.fullscreen-mode .song-view-header,
+body.fullscreen-mode .song-tags-section,
+body.fullscreen-mode .song-meta {
+    display: none !important;
+}
+
+body.fullscreen-mode .main-content {
+    margin-left: 0;
+    padding: 0;
+}
+
+body.fullscreen-mode .song-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: var(--bg);
+    overflow-y: auto;
+    padding-bottom: 80px; /* Space for nav bar */
+}
+
+body.fullscreen-mode .song-content {
+    max-width: 900px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0;
+    min-height: calc(100vh - 80px);
+}
+
+body.fullscreen-mode .song-header {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    padding: 1rem 1rem 0.5rem;
+    margin: -1.25rem -1.25rem 1rem;
+    border-bottom: 1px solid var(--border);
+    z-index: 10;
+}
+
+body.fullscreen-mode .song-title {
+    font-size: 1.5rem;
+}
+
+body.fullscreen-mode .header-controls {
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+}
+
+/* Show nav bar in fullscreen mode */
+body.fullscreen-mode .song-nav-bar {
+    display: flex !important;
+}
+
+/* Bottom navigation bar */
+.song-nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1001;
+    gap: 0.75rem;
+}
+
+.song-nav-bar.hidden {
+    display: none;
+}
+
+.nav-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: auto;
+    padding-left: 0.5rem;
+}
+
+#nav-position {
+    font-size: 0.9rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.nav-list-name {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nav-list-name::before {
+    content: '·';
+    margin-right: 0.5rem;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover:not(:disabled) {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.nav-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.nav-arrow {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Fullscreen exit hint */
+body.fullscreen-mode::after {
+    content: 'Press F or Esc to exit';
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    z-index: 1002;
+    opacity: 0;
+    animation: hintFade 3s forwards;
+    pointer-events: none;
+}
+
+@keyframes hintFade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Mobile adjustments for nav bar */
+@media (max-width: 600px) {
+    .nav-btn {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .nav-label {
+        display: none;
+    }
+
+    .nav-arrow {
+        font-size: 1.25rem;
+    }
+
+    .nav-list-name {
+        display: none;
+    }
+
+    body.fullscreen-mode .song-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    body.fullscreen-mode .header-controls {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+}
