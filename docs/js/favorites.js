@@ -17,6 +17,7 @@ let navFavoritesCountEl = null;
 let searchStatsEl = null;
 let searchInputEl = null;
 let resultsDivEl = null;
+let printListBtnEl = null;
 
 // Callbacks (set by init)
 let renderResultsFn = null;
@@ -221,6 +222,9 @@ export function showFavorites() {
     if (renderResultsFn) {
         renderResultsFn(favSongs, '');
     }
+
+    // Show print list button
+    if (printListBtnEl) printListBtnEl.classList.remove('hidden');
 }
 
 /**
@@ -231,6 +235,9 @@ export function hideFavorites() {
     setListContext(null);
     if (navFavoritesEl) navFavoritesEl.classList.remove('active');
     if (navSearchEl) navSearchEl.classList.add('active');
+
+    // Hide print list button
+    if (printListBtnEl) printListBtnEl.classList.add('hidden');
 
     if (showRandomSongsFn) {
         showRandomSongsFn();
@@ -248,6 +255,7 @@ export function initFavorites(options) {
         searchStats,
         searchInput,
         resultsDiv,
+        printListBtn,
         renderResults,
         showRandomSongs
     } = options;
@@ -258,6 +266,7 @@ export function initFavorites(options) {
     searchStatsEl = searchStats;
     searchInputEl = searchInput;
     resultsDivEl = resultsDiv;
+    printListBtnEl = printListBtn;
     renderResultsFn = renderResults;
     showRandomSongsFn = showRandomSongs;
 

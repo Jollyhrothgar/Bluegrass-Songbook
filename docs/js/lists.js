@@ -27,6 +27,7 @@ let listsContainerEl = null;
 let customListsContainerEl = null;
 let favoritesCheckboxEl = null;
 let listPickerBtnEl = null;
+let printListBtnEl = null;
 
 // Callbacks (set by init)
 let renderResultsFn = null;
@@ -171,6 +172,28 @@ export function removeSongFromList(listId, songId) {
             SupabaseAuth.removeFromCloudList(list.cloudId, songId).catch(console.error);
         }
     }
+
+    return true;
+}
+
+/**
+ * Reorder a song within a list (for drag and drop)
+ */
+export function reorderSongInList(listId, fromIndex, toIndex) {
+    const list = userLists.find(l => l.id === listId);
+    if (!list) return false;
+    if (fromIndex < 0 || fromIndex >= list.songs.length) return false;
+    if (toIndex < 0 || toIndex >= list.songs.length) return false;
+    if (fromIndex === toIndex) return false;
+
+    // Remove from old position and insert at new position
+    const [songId] = list.songs.splice(fromIndex, 1);
+    list.songs.splice(toIndex, 0, songId);
+    saveLists();
+    trackListAction('reorder', listId);
+
+    // Note: Cloud sync for reorder would need a separate API
+    // For now, full list sync handles this on next login
 
     return true;
 }
@@ -332,6 +355,9 @@ export function showListView(listId) {
     if (resultsDivEl) resultsDivEl.classList.remove('hidden');
     if (editorPanel) editorPanel.classList.add('hidden');
     if (songViewEl) songViewEl.classList.add('hidden');
+
+    // Show print list button
+    if (printListBtnEl) printListBtnEl.classList.remove('hidden');
 }
 
 /**
@@ -345,6 +371,8 @@ export function clearListView() {
             btn.classList.remove('active');
         });
     }
+    // Hide print list button
+    if (printListBtnEl) printListBtnEl.classList.add('hidden');
 }
 
 /**
@@ -567,6 +595,7 @@ export function initLists(options) {
         customListsContainer,
         favoritesCheckbox,
         listPickerBtn,
+        printListBtn,
         renderResults,
         closeSidebar
     } = options;
@@ -583,6 +612,7 @@ export function initLists(options) {
     customListsContainerEl = customListsContainer;
     favoritesCheckboxEl = favoritesCheckbox;
     listPickerBtnEl = listPickerBtn;
+    printListBtnEl = printListBtn;
     renderResultsFn = renderResults;
     closeSidebarFn = closeSidebar;
 

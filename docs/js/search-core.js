@@ -7,7 +7,7 @@ import {
 import { highlightMatch } from './utils.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import { isFavorite } from './favorites.js';
-import { isSongInAnyList, showResultListPicker } from './lists.js';
+import { isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList } from './lists.js';
 import { openSong, showVersionPicker } from './song-view.js';
 import { trackSearch as analyticsTrackSearch, trackSearchResultClick } from './analytics.js';
 
@@ -23,6 +23,10 @@ let analyticsDebounceTimer = null;
 let pendingSearchData = null;
 let lastRecordedQuery = null;
 const ANALYTICS_DEBOUNCE_MS = 1000;  // Wait 1s after typing stops
+
+// Drag and drop state for list reordering
+let draggedItem = null;
+let draggedIndex = null;
 
 /**
  * Flush pending search analytics (call on result click or navigation)
@@ -420,13 +424,19 @@ export function renderResults(songs, query) {
         return;
     }
 
+    // Check if we're viewing a list (enables drag/drop reordering)
+    const viewingListId = getViewingListId();
+    const isDraggable = !!viewingListId;
+
     // Group songs and dedupe by group_id (show one representative per group)
+    // Skip deduping for lists - show all songs in order
     const seenGroups = new Set();
     const dedupedSongs = [];
 
     for (const song of songs) {
         const groupId = song.group_id;
-        if (groupId && seenGroups.has(groupId)) {
+        // Don't dedupe in list view - user may have same song multiple times intentionally
+        if (!isDraggable && groupId && seenGroups.has(groupId)) {
             continue;  // Skip, we already have a song from this group
         }
         if (groupId) {
@@ -435,7 +445,7 @@ export function renderResults(songs, query) {
         dedupedSongs.push(song);
     }
 
-    resultsDivEl.innerHTML = dedupedSongs.map(song => {
+    resultsDivEl.innerHTML = dedupedSongs.map((song, index) => {
         const favClass = isFavorite(song.id) ? 'is-favorite' : '';
         const inList = isSongInAnyList(song.id);
         const btnClass = (isFavorite(song.id) || inList) ? 'has-lists' : '';
@@ -455,8 +465,13 @@ export function renderResults(songs, query) {
             return `<span class="tag-badge tag-${category}" data-tag="${tag}">${formatTagName(tag)}</span>`;
         }).join('');
 
+        // Add drag handle and draggable for list view
+        const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
+        const draggableAttr = isDraggable ? `draggable="true" data-index="${index}"` : '';
+
         return `
-            <div class="result-item ${favClass}" data-id="${song.id}" data-group-id="${groupId || ''}">
+            <div class="result-item ${favClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
+                ${dragHandle}
                 <div class="result-main">
                     <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}</div>
                     <div class="result-artist">${highlightMatch(song.artist || 'Unknown artist', query)}</div>
@@ -476,13 +491,16 @@ export function renderResults(songs, query) {
  * Setup event listeners for search results
  */
 function setupResultEventListeners(resultsDiv) {
+    const viewingListId = getViewingListId();
+
     // Click on result item opens song (or version picker if multiple versions)
     const resultItems = resultsDiv.querySelectorAll('.result-item');
     resultItems.forEach((item, index) => {
         item.addEventListener('click', (e) => {
-            // Don't open song if clicking the list button or tag badge
+            // Don't open song if clicking the list button, tag badge, or drag handle
             if (e.target.classList.contains('result-list-btn')) return;
             if (e.target.classList.contains('tag-badge')) return;
+            if (e.target.classList.contains('drag-handle')) return;
 
             const groupId = item.dataset.groupId;
             const versions = groupId ? (songGroups[groupId] || []) : [];
@@ -497,6 +515,57 @@ function setupResultEventListeners(resultsDiv) {
                 openSong(item.dataset.id);
             }
         });
+
+        // Drag and drop handlers for list view
+        if (viewingListId) {
+            item.addEventListener('dragstart', (e) => {
+                draggedItem = item;
+                draggedIndex = parseInt(item.dataset.index, 10);
+                item.classList.add('dragging');
+                e.dataTransfer.effectAllowed = 'move';
+                e.dataTransfer.setData('text/plain', item.dataset.id);
+            });
+
+            item.addEventListener('dragend', () => {
+                if (draggedItem) {
+                    draggedItem.classList.remove('dragging');
+                }
+                draggedItem = null;
+                draggedIndex = null;
+                // Remove all drag-over classes
+                resultsDiv.querySelectorAll('.drag-over').forEach(el => el.classList.remove('drag-over'));
+            });
+
+            item.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+                if (item !== draggedItem) {
+                    item.classList.add('drag-over');
+                }
+            });
+
+            item.addEventListener('dragleave', () => {
+                item.classList.remove('drag-over');
+            });
+
+            item.addEventListener('drop', (e) => {
+                e.preventDefault();
+                item.classList.remove('drag-over');
+                if (!draggedItem || draggedItem === item) return;
+
+                const toIndex = parseInt(item.dataset.index, 10);
+                if (draggedIndex !== null && toIndex !== draggedIndex) {
+                    // Reorder in the list
+                    if (reorderSongInList(viewingListId, draggedIndex, toIndex)) {
+                        // Re-render the list view to show new order
+                        // Import showListView dynamically to avoid circular dep
+                        import('./lists.js').then(({ showListView }) => {
+                            showListView(viewingListId);
+                        });
+                    }
+                }
+            });
+        }
     });
 
     // Click on list button shows picker

@@ -398,10 +398,32 @@ h1 {
     margin-right: 0.4rem;
 }
 
-.search-stats {
+.search-stats-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 0.5rem;
+}
+
+.search-stats {
     color: var(--text-secondary);
     font-size: 0.875rem;
+}
+
+.print-list-btn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.print-list-btn:hover {
+    background: var(--bg);
+    border-color: var(--accent);
 }
 
 /* Results list */
@@ -427,6 +449,39 @@ h1 {
 
 .result-item.is-favorite {
     border-left: 3px solid var(--heart);
+}
+
+/* Drag and drop for list reordering */
+.result-item[draggable="true"] {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.drag-handle {
+    cursor: grab;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    padding: 0.25rem 0;
+    user-select: none;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.result-item:hover .drag-handle {
+    opacity: 1;
+}
+
+.result-item.dragging {
+    opacity: 0.4;
+    background: var(--bg);
+    border-style: dashed;
+}
+
+.result-item.drag-over {
+    border-color: var(--accent);
+    background: var(--bg);
+    box-shadow: inset 0 0 0 2px var(--accent);
 }
 
 .result-title {
