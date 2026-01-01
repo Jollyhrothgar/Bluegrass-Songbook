@@ -98,7 +98,7 @@ export function getChordQuality(chord) {
     const root = chord.match(/^[A-G][#b]?/);
     if (!root) return 'major';
     const rest = chord.slice(root[0].length);
-    if (rest === 'm' || rest.startsWith('m')) return 'minor';
+    if (rest === 'm' || (rest.startsWith('m') && !rest.startsWith('maj'))) return 'minor';
     if (rest === 'dim' || rest.includes('dim')) return 'dim';
     return 'major';
 }

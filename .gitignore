@@ -5,6 +5,10 @@ analytics/.env
 # Jupyter
 .ipynb_checkpoints/
 
+# Node.js
+node_modules/
+package-lock.json
+
 # Python
 __pycache__/
 *.py[cod]
