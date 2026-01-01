@@ -26,3 +26,9 @@ jobs:
             node --check "$f" || exit 1
           done
           echo "All JavaScript files passed syntax check"
+
+      - name: Install test dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm test
