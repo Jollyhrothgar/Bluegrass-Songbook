@@ -37,7 +37,6 @@ export function setCurrentChordpro(chordpro) {
 // ============================================
 
 export let compactMode = false;
-export let showingFavorites = false;
 export let nashvilleMode = false;
 export let twoColumnMode = false;
 export let chordDisplayMode = 'all';  // 'all' | 'first' | 'none'
@@ -78,7 +77,6 @@ export function loadViewPrefs() {
 }
 
 export function setCompactMode(value) { compactMode = value; saveViewPrefs(); }
-export function setShowingFavorites(value) { showingFavorites = value; }
 export function setNashvilleMode(value) { nashvilleMode = value; saveViewPrefs(); }
 export function setTwoColumnMode(value) { twoColumnMode = value; saveViewPrefs(); }
 export function setChordDisplayMode(value) { chordDisplayMode = value; saveViewPrefs(); }
@@ -144,59 +142,10 @@ export function setCloudSyncEnabled(value) { isCloudSyncEnabled = value; }
 export function setSyncInProgress(value) { syncInProgress = value; }
 
 // ============================================
-// FAVORITES AND LISTS
+// LISTS (includes Favorites as a special list)
 // ============================================
 
-// Favorites is an ordered array (not a Set) so users can reorder
-export let favorites = [];
-export let favoritesCloudId = null;  // UUID for sharing favorites
 export let userLists = [];
-
-export function setFavoritesCloudId(id) {
-    favoritesCloudId = id;
-    if (id) {
-        localStorage.setItem('songbook-favorites-cloud-id', id);
-    } else {
-        localStorage.removeItem('songbook-favorites-cloud-id');
-    }
-}
-
-export function loadFavoritesCloudId() {
-    favoritesCloudId = localStorage.getItem('songbook-favorites-cloud-id');
-    return favoritesCloudId;
-}
-
-export function setFavorites(favs) {
-    // Convert Set to Array if needed, or use as-is if already Array
-    favorites = favs instanceof Set ? [...favs] : Array.isArray(favs) ? favs : [];
-}
-
-export function addFavorite(songId) {
-    if (!favorites.includes(songId)) {
-        favorites.push(songId);
-    }
-}
-
-export function removeFavorite(songId) {
-    const index = favorites.indexOf(songId);
-    if (index !== -1) {
-        favorites.splice(index, 1);
-    }
-}
-
-export function hasFavorite(songId) {
-    return favorites.includes(songId);
-}
-
-export function reorderFavorite(fromIndex, toIndex) {
-    if (fromIndex < 0 || fromIndex >= favorites.length) return false;
-    if (toIndex < 0 || toIndex >= favorites.length) return false;
-    if (fromIndex === toIndex) return false;
-
-    const [songId] = favorites.splice(fromIndex, 1);
-    favorites.splice(toIndex, 0, songId);
-    return true;
-}
 
 export function setUserLists(lists) { userLists = lists; }
 

@@ -9,7 +9,7 @@ import {
     currentDetectedKey, setCurrentDetectedKey,
     originalDetectedKey, originalDetectedMode,
     loadViewPrefs,
-    userLists, favorites, showingFavorites,
+    userLists,
     compactMode, setCompactMode,
     nashvilleMode, setNashvilleMode,
     chordDisplayMode, setChordDisplayMode,
@@ -19,8 +19,14 @@ import {
     setListContext
 } from './state.js';
 import { initTagDropdown, syncTagCheckboxes } from './tags.js';
-import { initFavorites, performFullSync, updateSyncUI, showFavorites, hideFavorites } from './favorites.js';
-import { initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync, clearListView, renderListsModal, createList, addSongToList, getViewingListId, showListView, copyCurrentList, fetchListData } from './lists.js';
+import {
+    initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync,
+    clearListView, renderListsModal, createList, addSongToList, getViewingListId,
+    showListView, fetchListData,
+    // Favorites functions (favorites is now just a list)
+    showFavorites, updateFavoritesCount, getFavoritesList, isFavorite, toggleFavorite,
+    updateSyncUI, reorderFavoriteItem
+} from './lists.js';
 import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro } from './editor.js';
@@ -82,7 +88,6 @@ const navListName = document.getElementById('nav-list-name');
 
 // Print list button
 const printListBtn = document.getElementById('print-list-btn');
-const copyListBtn = document.getElementById('copy-list-btn');
 
 // Bottom sheet
 const bottomSheet = document.getElementById('bottom-sheet');
@@ -286,7 +291,7 @@ function showView(mode) {
             songView?.classList.add('hidden');
             editorPanel?.classList.add('hidden');
             navSearch?.classList.add('active');
-            hideFavorites();
+            // clearListView() already handles clearing list state
             break;
         case 'add-song':
             searchContainer?.classList.add('hidden');
@@ -378,7 +383,8 @@ function handleDeepLink() {
  */
 function openSongInFavorites(songId, fromDeepLink = false) {
     // Get favorites song IDs that exist in allSongs
-    const favSongIds = favorites.filter(id => allSongs.find(s => s.id === id));
+    const favList = getFavoritesList();
+    const favSongIds = favList ? favList.songs.filter(id => allSongs.find(s => s.id === id)) : [];
     const songIndex = favSongIds.indexOf(songId);
 
     // Set up favorites context for prev/next navigation
@@ -521,7 +527,6 @@ function updateAuthUI(user) {
         }
 
         updateSyncUI('syncing');
-        performFullSync();
         performFullListsSync();
     } else {
         // Show sign-in button, hide user info
@@ -1149,14 +1154,16 @@ function generatePrintPage(title, artist, key, chordpro) {
 // ============================================
 
 function openPrintListView() {
-    // Get the current list (check favorites first, then custom lists)
+    // Get the current list
     const listId = getViewingListId();
+    if (!listId) return;
 
-    let list = null;
-    if (showingFavorites) {
-        list = { name: 'Favorites', songs: [...favorites] };
-    } else if (listId) {
-        list = userLists.find(l => l.id === listId);
+    // Find the list (favorites is now just a regular list)
+    let list = userLists.find(l => l.id === listId || l.cloudId === listId);
+
+    // Handle 'favorites' ID
+    if (!list && listId === 'favorites') {
+        list = getFavoritesList();
     }
 
     if (!list) return;
@@ -1711,19 +1718,7 @@ function init() {
     // Initialize flags module
     initFlags();
 
-    // Initialize modules
-    initFavorites({
-        navFavorites,
-        navSearch,
-        navFavoritesCount,
-        searchStats,
-        searchInput,
-        resultsDiv,
-        printListBtn,
-        renderResults,
-        showRandomSongs
-    });
-
+    // Initialize lists module (handles favorites as a special list)
     initLists({
         navListsContainer,
         navSearch,
@@ -1856,32 +1851,6 @@ function init() {
 
     // Print list button
     printListBtn?.addEventListener('click', openPrintListView);
-
-    // Copy list button (for shared lists)
-    copyListBtn?.addEventListener('click', async () => {
-        if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
-            alert('Please sign in to copy lists to your account.');
-            return;
-        }
-
-        copyListBtn.disabled = true;
-        copyListBtn.textContent = 'Copying...';
-
-        const { data, error } = await copyCurrentList();
-
-        if (error) {
-            alert('Failed to copy list: ' + error.message);
-            copyListBtn.disabled = false;
-            copyListBtn.textContent = 'Copy to My Lists';
-        } else {
-            copyListBtn.textContent = 'Copied!';
-            // Navigate to the new list after a short delay
-            setTimeout(() => {
-                showListView(data.id);
-                pushHistoryState('list', { listId: data.id });
-            }, 500);
-        }
-    });
 
     // Sidebar feedback button
     navFeedback?.addEventListener('click', (e) => {

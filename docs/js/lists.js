@@ -3,13 +3,16 @@
 import {
     userLists, setUserLists,
     allSongs, currentSong,
-    isCloudSyncEnabled,
-    showingFavorites, setShowingFavorites,
+    isCloudSyncEnabled, setCloudSyncEnabled,
     setListContext
 } from './state.js';
 import { escapeHtml, generateLocalId } from './utils.js';
-import { isFavorite, toggleFavorite, updateSyncUI } from './favorites.js';
+import { showRandomSongs } from './search-core.js';
 import { trackListAction } from './analytics.js';
+
+// Favorites is just a special list with this ID/name
+const FAVORITES_LIST_ID = 'favorites';
+const FAVORITES_LIST_NAME = 'Favorites';
 
 // Module-level state
 let viewingListId = null;
@@ -40,6 +43,199 @@ let pushHistoryStateFn = null;
 // Floating result picker state
 let activeResultPicker = null;
 
+// Nav element for favorites count badge
+let navFavoritesCountEl = null;
+
+// ============================================
+// FAVORITES (as a special list)
+// ============================================
+
+/**
+ * Get the Favorites list (returns null if it doesn't exist)
+ */
+export function getFavoritesList() {
+    return userLists.find(l => l.id === FAVORITES_LIST_ID) || null;
+}
+
+/**
+ * Get or create the Favorites list
+ */
+export function getOrCreateFavoritesList() {
+    let favList = getFavoritesList();
+    if (!favList) {
+        favList = {
+            id: FAVORITES_LIST_ID,
+            name: FAVORITES_LIST_NAME,
+            songs: [],
+            cloudId: null
+        };
+        // Insert at the beginning so it appears first
+        userLists.unshift(favList);
+        saveLists();
+    }
+    return favList;
+}
+
+/**
+ * Check if a song is in the Favorites list
+ */
+export function isFavorite(songId) {
+    const favList = getFavoritesList();
+    return favList ? favList.songs.includes(songId) : false;
+}
+
+/**
+ * Toggle a song in the Favorites list
+ */
+export function toggleFavorite(songId) {
+    const favList = getOrCreateFavoritesList();
+    const index = favList.songs.indexOf(songId);
+
+    if (index === -1) {
+        // Add to favorites
+        favList.songs.push(songId);
+        trackListAction('add_song', FAVORITES_LIST_ID);
+    } else {
+        // Remove from favorites
+        favList.songs.splice(index, 1);
+        trackListAction('remove_song', FAVORITES_LIST_ID);
+    }
+
+    saveLists();
+    updateFavoritesCount();
+
+    // Sync to cloud if logged in
+    if (favList.cloudId && typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn()) {
+        if (index === -1) {
+            SupabaseAuth.addToCloudList(favList.cloudId, songId).catch(console.error);
+        } else {
+            SupabaseAuth.removeFromCloudList(favList.cloudId, songId).catch(console.error);
+        }
+    }
+
+    return index === -1; // Returns true if added, false if removed
+}
+
+/**
+ * Reorder a song within the Favorites list (for drag and drop)
+ */
+export function reorderFavoriteItem(fromIndex, toIndex) {
+    const favList = getFavoritesList();
+    if (!favList) return false;
+    return reorderSongInList(FAVORITES_LIST_ID, fromIndex, toIndex);
+}
+
+/**
+ * Update the favorites count badge in the nav
+ */
+export function updateFavoritesCount() {
+    if (!navFavoritesCountEl) {
+        navFavoritesCountEl = document.getElementById('nav-favorites-count');
+    }
+    if (!navFavoritesCountEl) return;
+
+    const favList = getFavoritesList();
+    const count = favList ? favList.songs.length : 0;
+
+    navFavoritesCountEl.textContent = count.toString();
+    navFavoritesCountEl.classList.toggle('hidden', count === 0);
+}
+
+/**
+ * Update sync status UI
+ */
+export function updateSyncUI(status) {
+    const indicator = document.getElementById('sync-indicator');
+    const text = document.getElementById('sync-text');
+
+    if (!indicator || !text) return;
+
+    switch (status) {
+        case 'syncing':
+            indicator.className = 'sync-indicator syncing';
+            text.textContent = 'Syncing...';
+            break;
+        case 'synced':
+            indicator.className = 'sync-indicator synced';
+            const favList = getFavoritesList();
+            const favCount = favList ? favList.songs.length : 0;
+            const customLists = userLists.filter(l => l.id !== FAVORITES_LIST_ID);
+            text.textContent = `${favCount} favorites` + (customLists.length > 0 ? `, ${customLists.length} lists` : '');
+            break;
+        case 'error':
+            indicator.className = 'sync-indicator error';
+            text.textContent = 'Sync error';
+            break;
+    }
+}
+
+/**
+ * Show the Favorites list view
+ */
+export function showFavorites() {
+    const favList = getFavoritesList();
+
+    // Update nav states
+    if (navSearchEl) navSearchEl.classList.remove('active');
+    if (navFavoritesEl) navFavoritesEl.classList.add('active');
+    if (navAddSongEl) navAddSongEl.classList.remove('active');
+
+    if (!favList || favList.songs.length === 0) {
+        // Empty favorites view
+        viewingListId = FAVORITES_LIST_ID;
+        viewingPublicList = null;
+
+        setListContext({
+            listId: FAVORITES_LIST_ID,
+            listName: FAVORITES_LIST_NAME,
+            songIds: [],
+            currentIndex: -1
+        });
+
+        if (searchStatsEl) {
+            searchStatsEl.textContent = '0 favorites';
+        }
+        if (searchInputEl) {
+            searchInputEl.value = '';
+        }
+        if (renderResultsFn) {
+            renderResultsFn([], '');
+        }
+
+        // Show search container
+        const searchContainer = document.querySelector('.search-container');
+        const editorPanel = document.getElementById('editor-panel');
+        if (searchContainer) searchContainer.classList.remove('hidden');
+        if (resultsDivEl) resultsDivEl.classList.remove('hidden');
+        if (editorPanel) editorPanel.classList.add('hidden');
+        if (songViewEl) songViewEl.classList.add('hidden');
+        if (printListBtnEl) printListBtnEl.classList.add('hidden');
+        if (shareListBtnEl) shareListBtnEl.classList.add('hidden');
+
+        return;
+    }
+
+    // Show favorites using the regular list view
+    viewingListId = FAVORITES_LIST_ID;  // Always use local ID for favorites
+    viewingPublicList = null;
+    renderListViewUI(FAVORITES_LIST_NAME, favList.songs, true);
+
+    // Update nav (renderListViewUI clears favorites active state)
+    if (navFavoritesEl) navFavoritesEl.classList.add('active');
+
+    // Show action buttons for favorites (but not delete)
+    if (shareListBtnEl) shareListBtnEl.classList.remove('hidden');
+    if (printListBtnEl) printListBtnEl.classList.remove('hidden');
+    const duplicateListBtn = document.getElementById('duplicate-list-btn');
+    if (duplicateListBtn) {
+        duplicateListBtn.textContent = 'Duplicate';
+        duplicateListBtn.classList.remove('hidden');
+    }
+    // Explicitly hide delete for favorites
+    const deleteListBtn = document.getElementById('delete-list-btn');
+    if (deleteListBtn) deleteListBtn.classList.add('hidden');
+}
+
 /**
  * Save lists to localStorage
  */
@@ -59,6 +255,51 @@ export function loadLists() {
         }
     } catch (e) {
         console.error('Failed to load lists:', e);
+    }
+}
+
+/**
+ * Migrate old favorites format (songbook-favorites) to new list-based format
+ */
+function migrateOldFavorites() {
+    try {
+        const oldFavs = localStorage.getItem('songbook-favorites');
+        if (!oldFavs) return;
+
+        const favIds = JSON.parse(oldFavs);
+        if (!Array.isArray(favIds) || favIds.length === 0) {
+            // Clean up empty old format
+            localStorage.removeItem('songbook-favorites');
+            localStorage.removeItem('songbook-favorites-cloud-id');
+            return;
+        }
+
+        // Get or create Favorites list and merge old favorites
+        const favList = getOrCreateFavoritesList();
+
+        // Merge old favorites (avoid duplicates)
+        const existingSet = new Set(favList.songs);
+        for (const songId of favIds) {
+            if (!existingSet.has(songId)) {
+                favList.songs.push(songId);
+            }
+        }
+
+        // Preserve cloud ID if it existed
+        const oldCloudId = localStorage.getItem('songbook-favorites-cloud-id');
+        if (oldCloudId && !favList.cloudId) {
+            favList.cloudId = oldCloudId;
+        }
+
+        saveLists();
+
+        // Remove old storage keys
+        localStorage.removeItem('songbook-favorites');
+        localStorage.removeItem('songbook-favorites-cloud-id');
+
+        console.log(`Migrated ${favIds.length} favorites to list-based system`);
+    } catch (e) {
+        console.error('Failed to migrate old favorites:', e);
     }
 }
 
@@ -120,7 +361,7 @@ export function renameList(listId, newName) {
 /**
  * Delete a list
  */
-export function deleteList(listId) {
+export async function deleteList(listId) {
     const index = userLists.findIndex(l => l.id === listId);
     if (index === -1) return false;
 
@@ -129,9 +370,9 @@ export function deleteList(listId) {
     saveLists();
     trackListAction('delete', listId);
 
-    // Sync to cloud
+    // Sync to cloud - await to ensure delete completes
     if (list.cloudId) {
-        syncListToCloud(list, 'delete');
+        await syncListToCloud(list, 'delete');
     }
 
     return true;
@@ -150,7 +391,7 @@ export function addSongToList(listId, songId) {
         trackListAction('add_song', listId);
 
         // Sync to cloud
-        if (list.cloudId && isCloudSyncEnabled) {
+        if (list.cloudId && typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn()) {
             SupabaseAuth.addToCloudList(list.cloudId, songId).catch(console.error);
         }
     }
@@ -172,7 +413,7 @@ export function removeSongFromList(listId, songId) {
         trackListAction('remove_song', listId);
 
         // Sync to cloud
-        if (list.cloudId && isCloudSyncEnabled) {
+        if (list.cloudId && typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn()) {
             SupabaseAuth.removeFromCloudList(list.cloudId, songId).catch(console.error);
         }
     }
@@ -221,7 +462,7 @@ export function isSongInAnyList(songId) {
  * Sync a single list change to cloud
  */
 async function syncListToCloud(list, action) {
-    if (!isCloudSyncEnabled || typeof SupabaseAuth === 'undefined') return;
+    if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) return;
 
     try {
         switch (action) {
@@ -243,7 +484,10 @@ async function syncListToCloud(list, action) {
                 break;
             case 'delete':
                 if (list.cloudId) {
-                    await SupabaseAuth.deleteCloudList(list.cloudId);
+                    const result = await SupabaseAuth.deleteCloudList(list.cloudId);
+                    if (result.error) {
+                        console.error('Failed to delete cloud list:', result.error);
+                    }
                 }
                 break;
         }
@@ -254,6 +498,7 @@ async function syncListToCloud(list, action) {
 
 /**
  * Full sync: merge localStorage lists with cloud
+ * Also migrates old cloud favorites (user_favorites table) to the new list-based system
  */
 export async function performFullListsSync() {
     if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
@@ -261,25 +506,137 @@ export async function performFullListsSync() {
     }
 
     try {
+        // Step 1: Migrate old cloud favorites from user_favorites table
+        await migrateCloudFavorites();
+
+        // Step 2: Sync lists (including the Favorites list)
         const { data: merged, error } = await SupabaseAuth.syncListsToCloud(userLists);
         if (error) throw error;
 
-        // Update local lists with merged data
-        const mergedLists = merged.map(cloudList => ({
+        // Step 3: Process and deduplicate lists
+        const processedLists = processCloudLists(merged);
+        console.log('Processed lists:', processedLists.map(l => l.name));
+
+        // Update local lists with processed data
+        setUserLists(processedLists);
+        saveLists();
+        updateFavoritesCount();
+
+        // Enable cloud sync for future operations
+        setCloudSyncEnabled(true);
+
+        // Update sync UI to show lists count
+        updateSyncUI('synced');
+    } catch (err) {
+        console.error('Lists sync failed:', err);
+        updateSyncUI('error');
+    }
+}
+
+/**
+ * Process cloud lists into local format, deduplicating and handling Favorites specially
+ */
+function processCloudLists(cloudLists) {
+    const result = [];
+    let favoritesEntry = null;
+    const seenNames = new Set();
+
+    // Old-style favorites list names to migrate
+    const oldFavoritesNames = ['❤️ Favorites', '❤️ favorites', '♥ Favorites'];
+
+    for (const cloudList of cloudLists) {
+        // Skip duplicates by name (keep first occurrence)
+        if (seenNames.has(cloudList.name)) {
+            console.log('Skipping duplicate list:', cloudList.name);
+            continue;
+        }
+
+        // Handle Favorites and old-style favorites
+        if (cloudList.name === FAVORITES_LIST_NAME || oldFavoritesNames.includes(cloudList.name)) {
+            if (!favoritesEntry) {
+                // First favorites list we encounter
+                favoritesEntry = {
+                    id: FAVORITES_LIST_ID,
+                    name: FAVORITES_LIST_NAME,
+                    songs: cloudList.songs || [],
+                    cloudId: cloudList.name === FAVORITES_LIST_NAME ? cloudList.id : null
+                };
+            } else {
+                // Merge songs from additional favorites lists
+                const existingSongs = new Set(favoritesEntry.songs);
+                for (const songId of (cloudList.songs || [])) {
+                    if (!existingSongs.has(songId)) {
+                        favoritesEntry.songs.push(songId);
+                    }
+                }
+                // If this is the proper "Favorites" name and we don't have a cloudId yet, use it
+                if (cloudList.name === FAVORITES_LIST_NAME && !favoritesEntry.cloudId) {
+                    favoritesEntry.cloudId = cloudList.id;
+                }
+            }
+            seenNames.add(cloudList.name);
+            continue;
+        }
+
+        // Regular list
+        seenNames.add(cloudList.name);
+        result.push({
             id: cloudList.id,
             name: cloudList.name,
             songs: cloudList.songs || [],
             cloudId: cloudList.id
-        }));
-        setUserLists(mergedLists);
-        saveLists();
+        });
+    }
 
-        // Update sync UI to show lists count
-        if (isCloudSyncEnabled) {
-            updateSyncUI('synced');
+    // Add favorites at the beginning if it exists
+    if (favoritesEntry) {
+        result.unshift(favoritesEntry);
+    }
+
+    return result;
+}
+
+/**
+ * Migrate old cloud favorites (user_favorites table) to the Favorites list
+ * This is a one-time migration that adds songs from the old table to the local favorites
+ */
+async function migrateCloudFavorites() {
+    if (typeof SupabaseAuth === 'undefined') return;
+
+    try {
+        // Fetch old cloud favorites from user_favorites table
+        const { data: oldCloudFavs, error } = await SupabaseAuth.fetchCloudFavorites();
+        if (error || !oldCloudFavs || oldCloudFavs.length === 0) {
+            return; // No old favorites to migrate
         }
-    } catch (err) {
-        console.error('Lists sync failed:', err);
+
+        console.log(`Migrating ${oldCloudFavs.length} cloud favorites to list system`);
+
+        // Find existing Favorites list (don't create one - sync will handle that)
+        let favList = getFavoritesList();
+        if (!favList) {
+            // Create a minimal favorites list to hold the migrated songs
+            favList = {
+                id: FAVORITES_LIST_ID,
+                name: FAVORITES_LIST_NAME,
+                songs: [],
+                cloudId: null
+            };
+            userLists.unshift(favList);
+        }
+
+        // Merge old cloud favorites (avoid duplicates)
+        const existingSet = new Set(favList.songs);
+        for (const songId of oldCloudFavs) {
+            if (!existingSet.has(songId)) {
+                favList.songs.push(songId);
+            }
+        }
+
+        // Save locally - don't call full saveLists() to avoid re-render during sync
+        localStorage.setItem('songbook-lists', JSON.stringify(userLists));
+    } catch (e) {
+        console.error('Failed to migrate cloud favorites:', e);
     }
 }
 
@@ -288,10 +645,12 @@ export async function performFullListsSync() {
  */
 export function renderSidebarLists() {
     if (!navListsContainerEl) return;
-
     navListsContainerEl.innerHTML = '';
 
-    userLists.forEach(list => {
+    // Exclude Favorites list - it has its own nav button
+    const customLists = userLists.filter(l => l.id !== FAVORITES_LIST_ID);
+
+    customLists.forEach(list => {
         const btn = document.createElement('button');
         btn.className = 'nav-item' + (viewingListId === list.id ? ' active' : '');
         btn.dataset.listId = list.id;
@@ -315,9 +674,7 @@ export function renderSidebarLists() {
  */
 export async function showListView(listId) {
     // Handle favorites as a special "list"
-    if (listId === 'favorites') {
-        // Import showFavorites dynamically to avoid circular dependency
-        const { showFavorites } = await import('./favorites.js');
+    if (listId === 'favorites' || listId === FAVORITES_LIST_ID) {
         showFavorites();
         return;
     }
@@ -387,7 +744,6 @@ function showListNotFound() {
  * Render the list view UI (shared by local and public lists)
  */
 function renderListViewUI(listName, songIds, isOwner) {
-    setShowingFavorites(false);
     if (closeSidebarFn) closeSidebarFn();
 
     // Update nav active states
@@ -439,21 +795,31 @@ function renderListViewUI(listName, songIds, isOwner) {
     if (editorPanel) editorPanel.classList.add('hidden');
     if (songViewEl) songViewEl.classList.add('hidden');
 
-    // Show print list button
+    // Show action buttons
     if (printListBtnEl) printListBtnEl.classList.remove('hidden');
+    if (shareListBtnEl && isOwner) shareListBtnEl.classList.remove('hidden');
 
-    // Show share list button (only for cloud lists with UUID)
-    if (shareListBtnEl) {
-        // Show share button if this is a cloud list (has UUID format)
-        const isCloudList = viewingListId && viewingListId.includes('-');
-        shareListBtnEl.classList.toggle('hidden', !isCloudList);
+    // Duplicate/Import button - show for all lists, text changes based on ownership
+    const duplicateListBtn = document.getElementById('duplicate-list-btn');
+    if (duplicateListBtn) {
+        if (isOwner) {
+            duplicateListBtn.textContent = 'Duplicate';
+            duplicateListBtn.classList.remove('hidden');
+        } else if (viewingPublicList) {
+            duplicateListBtn.textContent = 'Import';
+            duplicateListBtn.classList.remove('hidden');
+        }
     }
 
-    // Show/hide copy list button
+    // Show delete button for own lists (but not favorites)
+    const deleteListBtn = document.getElementById('delete-list-btn');
+    if (deleteListBtn && isOwner && viewingListId !== FAVORITES_LIST_ID && viewingListId !== 'favorites') {
+        deleteListBtn.classList.remove('hidden');
+    }
+
+    // Hide the old copy button (now consolidated into duplicate/import)
     const copyListBtn = document.getElementById('copy-list-btn');
-    if (copyListBtn) {
-        copyListBtn.classList.toggle('hidden', isOwner || !viewingPublicList);
-    }
+    if (copyListBtn) copyListBtn.classList.add('hidden');
 }
 
 /**
@@ -468,11 +834,15 @@ export function clearListView() {
             btn.classList.remove('active');
         });
     }
-    // Hide print list button, share button, and copy list button
+    // Hide list action buttons
     if (printListBtnEl) printListBtnEl.classList.add('hidden');
     if (shareListBtnEl) shareListBtnEl.classList.add('hidden');
     const copyListBtn = document.getElementById('copy-list-btn');
     if (copyListBtn) copyListBtn.classList.add('hidden');
+    const duplicateListBtn = document.getElementById('duplicate-list-btn');
+    if (duplicateListBtn) duplicateListBtn.classList.add('hidden');
+    const deleteListBtn = document.getElementById('delete-list-btn');
+    if (deleteListBtn) deleteListBtn.classList.add('hidden');
 }
 
 /**
@@ -482,38 +852,6 @@ export function isViewingOwnList() {
     if (!viewingListId) return false;
     if (viewingPublicList) return viewingPublicList.isOwner;
     return true;  // Local list = own list
-}
-
-/**
- * Copy current public list to user's own lists
- */
-export async function copyCurrentList() {
-    if (!viewingPublicList || !viewingListId) {
-        return { error: { message: 'No public list to copy' } };
-    }
-
-    if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
-        return { error: { message: 'Please sign in to copy lists' } };
-    }
-
-    const listName = viewingPublicList.list.name;
-    const { data, error } = await SupabaseAuth.copyListToOwn(viewingListId, listName);
-
-    if (error) {
-        return { error };
-    }
-
-    // Add to local userLists
-    const newLocalList = {
-        id: data.id,
-        name: data.name,
-        songs: data.songs,
-        cloudId: data.id
-    };
-    userLists.push(newLocalList);
-    saveLists();
-
-    return { data: newLocalList, error: null };
 }
 
 /**
@@ -567,7 +905,8 @@ export function renderListPickerDropdown() {
 
     customListsContainerEl.innerHTML = '';
 
-    userLists.forEach(list => {
+    // Exclude Favorites - it has its own checkbox
+    userLists.filter(l => l.id !== FAVORITES_LIST_ID).forEach(list => {
         const label = document.createElement('label');
         label.className = 'list-option';
         const isInList = list.songs.includes(currentSong.id);
@@ -601,6 +940,15 @@ export function updateListPickerButton() {
 }
 
 /**
+ * Update favorite button state (called from song-view.js)
+ * With unified favorites/lists, this just updates the list picker
+ */
+export function updateFavoriteButton() {
+    // The favorites checkbox is updated by renderListPickerDropdown()
+    // This function exists for API compatibility with song-view.js
+}
+
+/**
  * Show floating list picker for search results
  */
 export function showResultListPicker(btn, songId) {
@@ -621,7 +969,7 @@ export function showResultListPicker(btn, songId) {
         </label>
         <div class="list-divider"></div>
         <div class="result-picker-lists">
-            ${userLists.map(list => `
+            ${userLists.filter(l => l.id !== FAVORITES_LIST_ID).map(list => `
                 <label class="list-option">
                     <input type="checkbox" data-type="list" data-list-id="${list.id}" ${list.songs.includes(songId) ? 'checked' : ''}>
                     <span>&#9776;</span>
@@ -710,14 +1058,17 @@ export function updateResultListButton(btn, songId) {
 export function renderListsModal() {
     if (!listsContainerEl) return;
 
-    if (userLists.length === 0) {
+    // Exclude Favorites list - it can't be renamed/deleted from here
+    const customLists = userLists.filter(l => l.id !== FAVORITES_LIST_ID);
+
+    if (customLists.length === 0) {
         listsContainerEl.innerHTML = '<p class="lists-empty">No lists yet. Create one above!</p>';
         return;
     }
 
     listsContainerEl.innerHTML = '';
 
-    userLists.forEach(list => {
+    customLists.forEach(list => {
         const div = document.createElement('div');
         div.className = 'list-item';
         div.innerHTML = `
@@ -747,11 +1098,11 @@ export function renderListsModal() {
     });
 
     listsContainerEl.querySelectorAll('.delete-list-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', async () => {
             const listId = btn.dataset.listId;
             const list = userLists.find(l => l.id === listId);
             if (list && confirm(`Delete "${list.name}"? Songs won't be deleted from the songbook.`)) {
-                deleteList(listId);
+                await deleteList(listId);
                 renderListsModal();
             }
         });
@@ -803,20 +1154,22 @@ export function initLists(options) {
 
     // Share list button - copy URL to clipboard
     shareListBtnEl?.addEventListener('click', async () => {
-        // Get shareable ID from viewingListId or listContext (for favorites)
-        const { listContext, favoritesCloudId } = await import('./state.js');
-        let shareId = viewingListId;
+        let shareId = null;
 
-        // If viewing favorites, use the cloud ID
-        if (!shareId && listContext && listContext.listId) {
-            shareId = listContext.listId;
+        // Get the cloudId for the current list
+        if (viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
+            const favList = getFavoritesList();
+            shareId = favList?.cloudId;
+        } else if (viewingListId) {
+            // For other lists, find the cloudId
+            const list = userLists.find(l => l.id === viewingListId);
+            shareId = list?.cloudId || viewingListId;
         }
-        // Fallback to favorites cloud ID if we're showing favorites
+
         if (!shareId || shareId === 'favorites') {
-            shareId = favoritesCloudId;
+            alert('Sign in and sync to share this list');
+            return;
         }
-
-        if (!shareId) return;
 
         const shareUrl = `${window.location.origin}${window.location.pathname}#list/${shareId}`;
 
@@ -833,9 +1186,116 @@ export function initLists(options) {
         }
     });
 
+    // Duplicate/Import list button
+    const duplicateListBtn = document.getElementById('duplicate-list-btn');
+    duplicateListBtn?.addEventListener('click', async () => {
+        let songsToCopy = [];
+        let listName = '';
+
+        // Handle importing a public list (not owned by user)
+        if (viewingPublicList && !viewingPublicList.isOwner) {
+            // Import from public list
+            if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+                alert('Please sign in to import lists');
+                return;
+            }
+
+            songsToCopy = viewingPublicList.songs || [];
+            listName = viewingPublicList.list.name;
+
+            if (!songsToCopy.length) {
+                alert('Nothing to import');
+                return;
+            }
+
+            const newName = prompt('Name for imported list:', listName);
+            if (!newName) return;
+
+            const newList = createList(newName);
+            if (!newList) {
+                alert('A list with that name already exists');
+                return;
+            }
+
+            for (const songId of songsToCopy) {
+                addSongToList(newList.id, songId);
+            }
+
+            showListView(newList.id);
+            if (pushHistoryStateFn) {
+                pushHistoryStateFn('list', { listId: newList.id });
+            }
+            return;
+        }
+
+        // Handle duplicating own list
+        if (viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
+            const favList = getFavoritesList();
+            songsToCopy = favList?.songs || [];
+            listName = 'Favorites';
+        } else if (viewingListId) {
+            const localList = userLists.find(l => l.id === viewingListId);
+            songsToCopy = localList?.songs || [];
+            listName = localList?.name || 'List';
+        }
+
+        if (!songsToCopy.length) {
+            alert('Nothing to duplicate');
+            return;
+        }
+
+        const newName = prompt('Name for the copy:', `${listName} (copy)`);
+        if (!newName) return;
+
+        const newList = createList(newName);
+        if (!newList) {
+            alert('A list with that name already exists');
+            return;
+        }
+
+        for (const songId of songsToCopy) {
+            addSongToList(newList.id, songId);
+        }
+
+        showListView(newList.id);
+        if (pushHistoryStateFn) {
+            pushHistoryStateFn('list', { listId: newList.id });
+        }
+    });
+
+    // Delete list button
+    const deleteListBtnInit = document.getElementById('delete-list-btn');
+    deleteListBtnInit?.addEventListener('click', async () => {
+        if (!viewingListId || viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
+            return;
+        }
+
+        const list = userLists.find(l => l.id === viewingListId);
+        const listName = list?.name || 'this list';
+
+        if (!confirm(`Delete "${listName}"? Songs won't be deleted from the songbook.`)) {
+            return;
+        }
+
+        await deleteList(viewingListId);
+
+        // Navigate back to home
+        clearListView();
+        if (navSearchEl) navSearchEl.classList.add('active');
+        showRandomSongs();
+        if (pushHistoryStateFn) {
+            pushHistoryStateFn('search', {});
+        }
+    });
+
     // Load from localStorage
     loadLists();
+
+    // Migrate old favorites format to new list-based format
+    migrateOldFavorites();
+
     renderSidebarLists();
+    updateFavoritesCount();
 
     // Handle checkbox changes in the song view list picker (event delegation)
     if (listPickerDropdownEl) {

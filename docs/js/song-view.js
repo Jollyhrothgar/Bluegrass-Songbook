@@ -36,8 +36,7 @@ import {
     parseLineWithChords, extractChords, detectKey,
     getSemitonesBetweenKeys, transposeChord, toNashville
 } from './chords.js';
-import { updateFavoriteButton } from './favorites.js';
-import { updateListPickerButton } from './lists.js';
+import { updateListPickerButton, updateFavoriteButton } from './lists.js';
 import { renderTagBadges, getTagCategory, formatTagName } from './tags.js';
 import {
     trackSongView, trackTranspose, trackVersionPicker, trackTagVote,

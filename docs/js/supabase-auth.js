@@ -300,10 +300,23 @@ async function fetchCloudLists() {
     return { data: result, error: null };
 }
 
-// Create a new list
+// Create a new list (or return existing if duplicate name)
 async function createCloudList(name) {
     if (!supabaseClient || !currentUser) {
         return { error: { message: 'Not logged in' } };
+    }
+
+    // First check if a list with this name already exists
+    const { data: existingList } = await supabaseClient
+        .from('user_lists')
+        .select('*')
+        .eq('user_id', currentUser.id)
+        .eq('name', name)
+        .single();
+
+    if (existingList) {
+        // List already exists, return it
+        return { data: existingList, error: null };
     }
 
     // Get max position
@@ -325,6 +338,19 @@ async function createCloudList(name) {
         })
         .select()
         .single();
+
+    // Handle race condition - if insert fails due to duplicate, fetch the existing one
+    if (error && error.code === '23505') {
+        const { data: raceList } = await supabaseClient
+            .from('user_lists')
+            .select('*')
+            .eq('user_id', currentUser.id)
+            .eq('name', name)
+            .single();
+        if (raceList) {
+            return { data: raceList, error: null };
+        }
+    }
 
     return { data, error };
 }
@@ -471,15 +497,46 @@ async function syncListsToCloud(localLists) {
     const { data: cloudLists, error: fetchError } = await fetchCloudLists();
     if (fetchError) return { error: fetchError };
 
+    // Old favorites list names to clean up
+    const oldFavoritesNames = ['❤️ Favorites', '❤️ favorites', '♥ Favorites'];
+
     // Create a map of cloud lists by name for matching
     const cloudByName = {};
+    const listsToDelete = [];
     cloudLists.forEach(list => {
+        // Mark old-style favorites for deletion
+        if (oldFavoritesNames.includes(list.name)) {
+            listsToDelete.push(list);
+        }
         cloudByName[list.name] = list;
     });
+
+    // Delete old-style favorites lists and merge their songs into "Favorites"
+    for (const oldList of listsToDelete) {
+        const favoritesMatch = cloudByName['Favorites'];
+        if (favoritesMatch && oldList.songs && oldList.songs.length > 0) {
+            // Merge songs into the proper Favorites list
+            for (const songId of oldList.songs) {
+                if (!favoritesMatch.songs.includes(songId)) {
+                    await addToCloudList(favoritesMatch.id, songId);
+                    favoritesMatch.songs.push(songId);
+                }
+            }
+        }
+        // Delete the old list
+        await deleteCloudList(oldList.id);
+        delete cloudByName[oldList.name];
+        console.log('Deleted old cloud favorites list:', oldList.name);
+    }
 
     // Process local lists
     const mergedLists = [];
     for (const localList of localLists) {
+        // Skip old-style favorites names from local (shouldn't exist but just in case)
+        if (oldFavoritesNames.includes(localList.name)) {
+            continue;
+        }
+
         const cloudMatch = cloudByName[localList.name];
 
         if (cloudMatch) {
@@ -500,7 +557,7 @@ async function syncListsToCloud(localLists) {
             });
             delete cloudByName[localList.name];
         } else {
-            // Create new list in cloud
+            // Create new list in cloud (this now handles duplicates gracefully)
             const { data: newList, error } = await createCloudList(localList.name);
             if (error) {
                 console.error('Error creating list:', error);
@@ -521,9 +578,11 @@ async function syncListsToCloud(localLists) {
         }
     }
 
-    // Add cloud-only lists to merged result
+    // Add cloud-only lists to merged result (excluding old favorites which were deleted)
     Object.values(cloudByName).forEach(cloudList => {
-        mergedLists.push(cloudList);
+        if (!oldFavoritesNames.includes(cloudList.name)) {
+            mergedLists.push(cloudList);
+        }
     });
 
     // Sort by position

@@ -1,14 +1,12 @@
 // Core search functionality for Bluegrass Songbook
 
-import {
-    allSongs, songGroups,
-    showingFavorites, setShowingFavorites
-} from './state.js';
-import { reorderFavoriteItem } from './favorites.js';
+import { allSongs, songGroups } from './state.js';
 import { highlightMatch } from './utils.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
-import { isFavorite } from './favorites.js';
-import { isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, isViewingOwnList } from './lists.js';
+import {
+    isFavorite, reorderFavoriteItem, showFavorites,
+    isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, isViewingOwnList
+} from './lists.js';
 import { openSong, showVersionPicker } from './song-view.js';
 import { trackSearch as analyticsTrackSearch, trackSearchResultClick } from './analytics.js';
 
@@ -441,7 +439,7 @@ export function renderResults(songs, query) {
     // Check if we're viewing a list or favorites (enables drag/drop reordering)
     // Only allow dragging for own lists/favorites, not shared public lists
     const viewingListId = getViewingListId();
-    const canReorder = viewingListId ? isViewingOwnList() : showingFavorites;
+    const canReorder = isViewingOwnList();
     const isDraggable = canReorder;
 
     // Group songs and dedupe by group_id (show one representative per group)
@@ -509,7 +507,7 @@ export function renderResults(songs, query) {
 function setupResultEventListeners(resultsDiv) {
     const viewingListId = getViewingListId();
     // Only allow reordering for own lists/favorites, not shared public lists
-    const canReorder = viewingListId ? isViewingOwnList() : showingFavorites;
+    const canReorder = isViewingOwnList();
 
     // Click on result item opens song (or version picker if multiple versions)
     const resultItems = resultsDiv.querySelectorAll('.result-item');
@@ -528,7 +526,7 @@ function setupResultEventListeners(resultsDiv) {
             trackSearchResultClick(item.dataset.id, index, searchInputEl?.value || '');
 
             // Open song - auto-fullscreen if coming from a list/favorites view
-            const fromList = !!(viewingListId || showingFavorites);
+            const fromList = !!viewingListId;
             if (versions.length > 1) {
                 showVersionPicker(groupId, { fromList });
             } else {
@@ -630,11 +628,9 @@ function setupResultEventListeners(resultsDiv) {
 
             const currentListId = getViewingListId();
 
-            if (showingFavorites) {
+            if (currentListId === 'favorites') {
                 if (reorderFavoriteItem(draggedIndex, toIndex)) {
-                    import('./favorites.js').then(({ showFavorites }) => {
-                        showFavorites();
-                    });
+                    showFavorites();
                 }
             } else if (currentListId) {
                 if (reorderSongInList(currentListId, draggedIndex, toIndex)) {

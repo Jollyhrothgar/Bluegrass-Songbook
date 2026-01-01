@@ -15,8 +15,7 @@ docs/
 │   ├── song-view.js    # Song rendering, controls, ABC notation
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
 │   ├── tags.js         # Tag dropdown, filtering
-│   ├── favorites.js    # Favorites management, sync
-│   ├── lists.js        # Custom lists, list picker
+│   ├── lists.js        # User lists (including Favorites), list picker
 │   ├── editor.js       # Song editor, ChordPro conversion
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
 │   ├── supabase-auth.js # Auth, cloud sync, voting

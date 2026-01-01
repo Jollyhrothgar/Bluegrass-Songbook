@@ -84,12 +84,9 @@ vi.mock('../chords.js', () => ({
     toNashville: vi.fn((chord) => chord)
 }));
 
-vi.mock('../favorites.js', () => ({
-    updateFavoriteButton: vi.fn()
-}));
-
 vi.mock('../lists.js', () => ({
-    updateListPickerButton: vi.fn()
+    updateListPickerButton: vi.fn(),
+    updateFavoriteButton: vi.fn()
 }));
 
 vi.mock('../tags.js', () => ({

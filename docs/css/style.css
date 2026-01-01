@@ -401,17 +401,17 @@ h1 {
 .search-stats-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 0.5rem;
     margin-top: 0.5rem;
 }
 
 .search-stats {
     color: var(--text-secondary);
     font-size: 0.875rem;
+    flex: 1;
 }
 
-.print-list-btn,
-.share-list-btn {
+.list-action-btn {
     padding: 0.4rem 0.75rem;
     font-size: 0.8rem;
     background: var(--bg-secondary);
@@ -422,25 +422,19 @@ h1 {
     transition: background 0.2s, border-color 0.2s;
 }
 
-.print-list-btn:hover,
-.share-list-btn:hover {
+.list-action-btn:hover {
     background: var(--bg);
     border-color: var(--accent);
 }
 
-.copy-list-btn {
-    padding: 0.4rem 0.75rem;
-    font-size: 0.8rem;
-    background: var(--accent);
-    color: white;
-    border: 1px solid var(--accent);
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    transition: background 0.2s, opacity 0.2s;
+.list-action-btn.danger {
+    color: #e74c3c;
+    border-color: #e74c3c;
 }
 
-.copy-list-btn:hover {
-    opacity: 0.9;
+.list-action-btn.danger:hover {
+    background: #e74c3c;
+    color: white;
 }
 
 .shared-list-badge {

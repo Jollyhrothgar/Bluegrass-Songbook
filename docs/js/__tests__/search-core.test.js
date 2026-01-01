@@ -4,14 +4,7 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 // Mock dependencies
 vi.mock('../state.js', () => ({
     allSongs: [],
-    songGroups: {},
-    showingFavorites: false,
-    setShowingFavorites: vi.fn()
-}));
-
-vi.mock('../favorites.js', () => ({
-    reorderFavoriteItem: vi.fn(),
-    isFavorite: vi.fn(() => false)
+    songGroups: {}
 }));
 
 vi.mock('../utils.js', () => ({
@@ -25,6 +18,9 @@ vi.mock('../tags.js', () => ({
 }));
 
 vi.mock('../lists.js', () => ({
+    isFavorite: vi.fn(() => false),
+    reorderFavoriteItem: vi.fn(),
+    showFavorites: vi.fn(),
     isSongInAnyList: vi.fn(() => false),
     showResultListPicker: vi.fn(),
     getViewingListId: vi.fn(() => null),
