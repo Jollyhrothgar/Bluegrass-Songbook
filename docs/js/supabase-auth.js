@@ -563,8 +563,13 @@ async function syncListsToCloud(localLists) {
                 songs: mergedSongs
             });
             delete cloudByName[localList.name];
+        } else if (localList.cloudId) {
+            // List has a cloudId but doesn't exist in cloud anymore - it was DELETED
+            // Don't recreate it, skip it entirely
+            console.log('[syncListsToCloud] skipping deleted list:', localList.name, 'cloudId:', localList.cloudId);
+            continue;
         } else {
-            // Create new list in cloud (this now handles duplicates gracefully)
+            // New local list without cloudId - create in cloud
             const { data: newList, error } = await createCloudList(localList.name);
             if (error) {
                 console.error('Error creating list:', error);
