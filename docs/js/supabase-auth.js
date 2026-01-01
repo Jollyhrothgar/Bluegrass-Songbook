@@ -494,6 +494,7 @@ async function copyListToOwn(listId, newName) {
 
 // Sync local lists to cloud (merge strategy)
 async function syncListsToCloud(localLists) {
+    console.log('[syncListsToCloud] starting with local lists:', localLists.map(l => ({ id: l.id, name: l.name, cloudId: l.cloudId })));
     if (!supabaseClient || !currentUser) {
         return { error: { message: 'Not logged in' } };
     }
@@ -501,6 +502,7 @@ async function syncListsToCloud(localLists) {
     // Fetch existing cloud lists
     const { data: cloudLists, error: fetchError } = await fetchCloudLists();
     if (fetchError) return { error: fetchError };
+    console.log('[syncListsToCloud] fetched cloud lists:', cloudLists.map(l => ({ id: l.id, name: l.name })));
 
     // Old favorites list names to clean up
     const oldFavoritesNames = ['❤️ Favorites', '❤️ favorites', '♥ Favorites'];
@@ -584,15 +586,18 @@ async function syncListsToCloud(localLists) {
     }
 
     // Add cloud-only lists to merged result (excluding old favorites which were deleted)
-    Object.values(cloudByName).forEach(cloudList => {
-        if (!oldFavoritesNames.includes(cloudList.name)) {
-            mergedLists.push(cloudList);
-        }
+    const cloudOnlyLists = Object.values(cloudByName).filter(l => !oldFavoritesNames.includes(l.name));
+    if (cloudOnlyLists.length > 0) {
+        console.log('[syncListsToCloud] adding cloud-only lists:', cloudOnlyLists.map(l => ({ id: l.id, name: l.name })));
+    }
+    cloudOnlyLists.forEach(cloudList => {
+        mergedLists.push(cloudList);
     });
 
     // Sort by position
     mergedLists.sort((a, b) => a.position - b.position);
 
+    console.log('[syncListsToCloud] returning merged lists:', mergedLists.map(l => ({ id: l.id, name: l.name })));
     return { data: mergedLists, error: null };
 }
 
