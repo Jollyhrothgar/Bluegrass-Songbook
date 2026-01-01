@@ -379,18 +379,18 @@ async function deleteCloudList(listId, listName = null) {
 
     // Try to delete by ID first
     console.log('[deleteCloudList] deleting by id =', listId);
-    let { error, count } = await supabaseClient
+    let { error, data } = await supabaseClient
         .from('user_lists')
         .delete()
         .eq('id', listId)
         .eq('user_id', currentUser.id)
-        .select();  // Use select to see if anything was deleted
+        .select();  // Returns deleted rows
 
-    console.log('[deleteCloudList] delete by id result - error:', error, 'deleted:', count?.length || 0);
+    console.log('[deleteCloudList] delete by id result - error:', error, 'deleted:', data?.length || 0);
 
     // If nothing was deleted and we have a name, try deleting by name
     // This handles the case where the local cloudId is stale/incorrect
-    if (!error && (!count || count.length === 0) && listName) {
+    if (!error && (!data || data.length === 0) && listName) {
         console.log('[deleteCloudList] no rows deleted by id, trying by name:', listName);
         const result = await supabaseClient
             .from('user_lists')
@@ -399,8 +399,8 @@ async function deleteCloudList(listId, listName = null) {
             .eq('user_id', currentUser.id)
             .select();
         error = result.error;
-        count = result.count;
-        console.log('[deleteCloudList] delete by name result - error:', error, 'deleted:', result.data?.length || 0);
+        data = result.data;
+        console.log('[deleteCloudList] delete by name result - error:', error, 'deleted:', data?.length || 0);
     }
 
     return { error };
