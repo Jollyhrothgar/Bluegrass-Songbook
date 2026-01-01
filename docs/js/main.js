@@ -209,6 +209,9 @@ function pushHistoryState(view, data = {}, replace = false) {
             break;
         case 'favorites':
             // Favorites is just a list with ID 'favorites'
+            // Use 'list' view type for consistency
+            state.view = 'list';
+            state.listId = 'favorites';
             hash = '#list/favorites';
             break;
         case 'list':

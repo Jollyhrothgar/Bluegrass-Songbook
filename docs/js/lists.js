@@ -314,6 +314,14 @@ export function renderSidebarLists() {
  * Show songs in a specific list (local or public)
  */
 export async function showListView(listId) {
+    // Handle favorites as a special "list"
+    if (listId === 'favorites') {
+        // Import showFavorites dynamically to avoid circular dependency
+        const { showFavorites } = await import('./favorites.js');
+        showFavorites();
+        return;
+    }
+
     // First check if this is a local list
     const localList = userLists.find(l => l.id === listId);
 
