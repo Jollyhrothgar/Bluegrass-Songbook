@@ -246,7 +246,7 @@ export function showRandomSongs() {
  * Search songs
  */
 export function search(query) {
-    setShowingFavorites(false);
+    // Clear any list view state when searching
     if (navFavoritesEl) navFavoritesEl.classList.remove('active');
     if (navSearchEl) navSearchEl.classList.add('active');
 

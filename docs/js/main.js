@@ -1,6 +1,15 @@
 // Main entry point for Bluegrass Songbook
 // This module orchestrates all other modules and handles initialization
 
+// Helper to get DOM elements with validation (warns in dev if missing)
+function getEl(id, required = true) {
+    const el = document.getElementById(id);
+    if (!el && required && location.hostname === 'localhost') {
+        console.warn(`Missing required element: #${id}`);
+    }
+    return el;
+}
+
 import {
     allSongs, setAllSongs,
     songGroups, setSongGroups,
@@ -53,7 +62,6 @@ const sidebar = document.getElementById('sidebar');
 const sidebarBackdrop = document.getElementById('sidebar-backdrop');
 const sidebarClose = document.getElementById('sidebar-close');
 const menuBtn = document.getElementById('hamburger-btn');
-const homeBtn = document.getElementById('home-btn');
 const logoLink = document.getElementById('logo-link');
 const navSearch = document.getElementById('nav-search');
 const navAddSong = document.getElementById('nav-add-song');
@@ -67,8 +75,6 @@ const listPickerBtn = document.getElementById('list-picker-btn');
 const listPickerDropdown = document.getElementById('list-picker-dropdown');
 const customListsContainer = document.getElementById('custom-lists-container');
 const favoritesCheckbox = document.getElementById('favorites-checkbox');
-const createListBtn = document.getElementById('create-list-btn');
-const newListInput = document.getElementById('new-list-input');
 
 // Version modal
 const versionModal = document.getElementById('version-modal');
@@ -97,11 +103,10 @@ const bottomSheetBackdrop = document.getElementById('bottom-sheet-backdrop');
 const listsModal = document.getElementById('lists-modal');
 const listsModalClose = document.getElementById('lists-modal-close');
 const listsContainer = document.getElementById('lists-container');
-const modalCreateListBtn = document.getElementById('modal-create-list-btn');
-const modalNewListInput = document.getElementById('modal-new-list-input');
+const modalCreateListBtn = document.getElementById('create-list-submit');
+const modalNewListInput = document.getElementById('new-list-name');
 
 // Account modal
-const accountBtn = document.getElementById('account-btn');
 const accountModal = document.getElementById('account-modal');
 const accountModalClose = document.getElementById('account-modal-close');
 const signInBtn = document.getElementById('sign-in-btn');
@@ -1824,8 +1829,6 @@ function init() {
         goHome();
     });
 
-    homeBtn?.addEventListener('click', goHome);
-
     // Navigation
     navSearch?.addEventListener('click', () => navigateTo('search'));
     navAddSong?.addEventListener('click', () => navigateTo('add-song'));
@@ -1833,10 +1836,19 @@ function init() {
     editorBackBtn?.addEventListener('click', () => navigateTo('search'));
 
     // Account modal
-    accountBtn?.addEventListener('click', openAccountModal);
     accountModalClose?.addEventListener('click', closeAccountModal);
     accountModal?.addEventListener('click', (e) => {
         if (e.target === accountModal) closeAccountModal();
+    });
+
+    // Sign out button
+    const signOutBtn = document.getElementById('account-sign-out-btn');
+    signOutBtn?.addEventListener('click', async () => {
+        if (typeof SupabaseAuth !== 'undefined') {
+            await SupabaseAuth.signOut();
+            closeAccountModal();
+            location.reload();
+        }
     });
 
     // Lists modal
