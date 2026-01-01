@@ -177,6 +177,70 @@ async function syncFavoritesToCloud(localFavorites) {
     return { data: merged, error: null };
 }
 
+// Get or create the "Favorites" list for sharing
+// Returns the list UUID that can be shared
+async function getOrCreateFavoritesList(favorites) {
+    if (!supabaseClient || !currentUser) {
+        return { data: null, error: { message: 'Not logged in' } };
+    }
+
+    // Check if user already has a Favorites list (special name)
+    const { data: existing, error: fetchError } = await supabaseClient
+        .from('user_lists')
+        .select('id')
+        .eq('user_id', currentUser.id)
+        .eq('name', '❤️ Favorites')
+        .single();
+
+    let listId;
+
+    if (existing) {
+        listId = existing.id;
+    } else if (fetchError && fetchError.code === 'PGRST116') {
+        // No rows returned - create the list
+        const { data: created, error: createError } = await supabaseClient
+            .from('user_lists')
+            .insert({
+                user_id: currentUser.id,
+                name: '❤️ Favorites',
+                position: -1  // Special position to keep it first
+            })
+            .select('id')
+            .single();
+
+        if (createError) return { data: null, error: createError };
+        listId = created.id;
+    } else if (fetchError) {
+        return { data: null, error: fetchError };
+    }
+
+    // Sync the songs to this list
+    // First, clear existing songs
+    await supabaseClient
+        .from('list_songs')
+        .delete()
+        .eq('list_id', listId);
+
+    // Then insert current favorites
+    if (favorites.length > 0) {
+        const inserts = favorites.map((songId, index) => ({
+            list_id: listId,
+            song_id: songId,
+            position: index
+        }));
+
+        const { error: insertError } = await supabaseClient
+            .from('list_songs')
+            .insert(inserts);
+
+        if (insertError) {
+            console.error('Error syncing favorites to list:', insertError);
+        }
+    }
+
+    return { data: listId, error: null };
+}
+
 // ============================================
 // USER LISTS API
 // ============================================
@@ -791,6 +855,7 @@ window.SupabaseAuth = {
     addCloudFavorite,
     removeCloudFavorite,
     syncFavoritesToCloud,
+    getOrCreateFavoritesList,
     // Lists
     fetchCloudLists,
     fetchPublicList,

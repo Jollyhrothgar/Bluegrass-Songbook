@@ -6,7 +6,8 @@ import {
     isCloudSyncEnabled, setCloudSyncEnabled,
     syncInProgress, setSyncInProgress,
     showingFavorites, setShowingFavorites,
-    setListContext
+    setListContext,
+    favoritesCloudId, setFavoritesCloudId, loadFavoritesCloudId
 } from './state.js';
 import { trackFavorite } from './analytics.js';
 
@@ -150,6 +151,12 @@ export async function performFullSync() {
         setFavorites(new Set(merged));
         saveFavorites();
 
+        // Get or create the shareable favorites list and store its UUID
+        const { data: cloudId } = await SupabaseAuth.getOrCreateFavoritesList(merged);
+        if (cloudId) {
+            setFavoritesCloudId(cloudId);
+        }
+
         setCloudSyncEnabled(true);
         updateSyncUI('synced');
 
@@ -160,6 +167,13 @@ export async function performFullSync() {
     } finally {
         setSyncInProgress(false);
     }
+}
+
+/**
+ * Get the shareable cloud ID for favorites
+ */
+export function getFavoritesCloudId() {
+    return favoritesCloudId;
 }
 
 /**
@@ -218,9 +232,10 @@ export function showFavorites() {
         .filter(Boolean);
     const favSongIds = favorites.filter(id => allSongs.find(s => s.id === id));
 
-    // Set list context for navigation
+    // Set list context for navigation - use cloud ID if available for sharing
+    const effectiveListId = favoritesCloudId || 'favorites';
     setListContext({
-        listId: 'favorites',
+        listId: effectiveListId,
         listName: 'Favorites',
         songIds: favSongIds,
         currentIndex: -1
@@ -239,6 +254,12 @@ export function showFavorites() {
 
     // Show print list button
     if (printListBtnEl) printListBtnEl.classList.remove('hidden');
+
+    // Show share button if we have a cloud ID (user is signed in and synced)
+    const shareListBtn = document.getElementById('share-list-btn');
+    if (shareListBtn) {
+        shareListBtn.classList.toggle('hidden', !favoritesCloudId);
+    }
 }
 
 /**
@@ -286,5 +307,6 @@ export function initFavorites(options) {
 
     // Load from localStorage
     loadFavorites();
+    loadFavoritesCloudId();
     updateFavoritesCount();
 }

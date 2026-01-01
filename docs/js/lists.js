@@ -803,9 +803,22 @@ export function initLists(options) {
 
     // Share list button - copy URL to clipboard
     shareListBtnEl?.addEventListener('click', async () => {
-        if (!viewingListId) return;
+        // Get shareable ID from viewingListId or listContext (for favorites)
+        const { listContext, favoritesCloudId } = await import('./state.js');
+        let shareId = viewingListId;
 
-        const shareUrl = `${window.location.origin}${window.location.pathname}#list/${viewingListId}`;
+        // If viewing favorites, use the cloud ID
+        if (!shareId && listContext && listContext.listId) {
+            shareId = listContext.listId;
+        }
+        // Fallback to favorites cloud ID if we're showing favorites
+        if (!shareId || shareId === 'favorites') {
+            shareId = favoritesCloudId;
+        }
+
+        if (!shareId) return;
+
+        const shareUrl = `${window.location.origin}${window.location.pathname}#list/${shareId}`;
 
         try {
             await navigator.clipboard.writeText(shareUrl);

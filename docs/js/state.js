@@ -149,7 +149,22 @@ export function setSyncInProgress(value) { syncInProgress = value; }
 
 // Favorites is an ordered array (not a Set) so users can reorder
 export let favorites = [];
+export let favoritesCloudId = null;  // UUID for sharing favorites
 export let userLists = [];
+
+export function setFavoritesCloudId(id) {
+    favoritesCloudId = id;
+    if (id) {
+        localStorage.setItem('songbook-favorites-cloud-id', id);
+    } else {
+        localStorage.removeItem('songbook-favorites-cloud-id');
+    }
+}
+
+export function loadFavoritesCloudId() {
+    favoritesCloudId = localStorage.getItem('songbook-favorites-cloud-id');
+    return favoritesCloudId;
+}
 
 export function setFavorites(favs) {
     // Convert Set to Array if needed, or use as-is if already Array
