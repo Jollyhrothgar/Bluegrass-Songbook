@@ -369,29 +369,23 @@ async function renameCloudList(listId, newName) {
     return { error };
 }
 
-// Delete a list
+// Delete a list (tries by ID first, then by name as fallback)
 async function deleteCloudList(listId, listName = null) {
-    console.log('[deleteCloudList] called with id:', listId, 'name:', listName);
     if (!supabaseClient || !currentUser) {
-        console.log('[deleteCloudList] not logged in');
         return { error: { message: 'Not logged in' } };
     }
 
     // Try to delete by ID first
-    console.log('[deleteCloudList] deleting by id =', listId);
     let { error, data } = await supabaseClient
         .from('user_lists')
         .delete()
         .eq('id', listId)
         .eq('user_id', currentUser.id)
-        .select();  // Returns deleted rows
-
-    console.log('[deleteCloudList] delete by id result - error:', error, 'deleted:', data?.length || 0);
+        .select();
 
     // If nothing was deleted and we have a name, try deleting by name
     // This handles the case where the local cloudId is stale/incorrect
     if (!error && (!data || data.length === 0) && listName) {
-        console.log('[deleteCloudList] no rows deleted by id, trying by name:', listName);
         const result = await supabaseClient
             .from('user_lists')
             .delete()
@@ -399,8 +393,6 @@ async function deleteCloudList(listId, listName = null) {
             .eq('user_id', currentUser.id)
             .select();
         error = result.error;
-        data = result.data;
-        console.log('[deleteCloudList] delete by name result - error:', error, 'deleted:', data?.length || 0);
     }
 
     return { error };
@@ -512,7 +504,6 @@ async function copyListToOwn(listId, newName) {
 
 // Sync local lists to cloud (merge strategy)
 async function syncListsToCloud(localLists) {
-    console.log('[syncListsToCloud] starting with local lists:', localLists.map(l => ({ id: l.id, name: l.name, cloudId: l.cloudId })));
     if (!supabaseClient || !currentUser) {
         return { error: { message: 'Not logged in' } };
     }
@@ -520,7 +511,6 @@ async function syncListsToCloud(localLists) {
     // Fetch existing cloud lists
     const { data: cloudLists, error: fetchError } = await fetchCloudLists();
     if (fetchError) return { error: fetchError };
-    console.log('[syncListsToCloud] fetched cloud lists:', cloudLists.map(l => ({ id: l.id, name: l.name })));
 
     // Old favorites list names to clean up
     const oldFavoritesNames = ['❤️ Favorites', '❤️ favorites', '♥ Favorites'];
@@ -551,7 +541,6 @@ async function syncListsToCloud(localLists) {
         // Delete the old list
         await deleteCloudList(oldList.id);
         delete cloudByName[oldList.name];
-        console.log('Deleted old cloud favorites list:', oldList.name);
     }
 
     // Process local lists
@@ -582,9 +571,7 @@ async function syncListsToCloud(localLists) {
             });
             delete cloudByName[localList.name];
         } else if (localList.cloudId) {
-            // List has a cloudId but doesn't exist in cloud anymore - it was DELETED
-            // Don't recreate it, skip it entirely
-            console.log('[syncListsToCloud] skipping deleted list:', localList.name, 'cloudId:', localList.cloudId);
+            // List has a cloudId but doesn't exist in cloud anymore - it was deleted
             continue;
         } else {
             // New local list without cloudId - create in cloud
@@ -609,18 +596,13 @@ async function syncListsToCloud(localLists) {
     }
 
     // Add cloud-only lists to merged result (excluding old favorites which were deleted)
-    const cloudOnlyLists = Object.values(cloudByName).filter(l => !oldFavoritesNames.includes(l.name));
-    if (cloudOnlyLists.length > 0) {
-        console.log('[syncListsToCloud] adding cloud-only lists:', cloudOnlyLists.map(l => ({ id: l.id, name: l.name })));
-    }
-    cloudOnlyLists.forEach(cloudList => {
-        mergedLists.push(cloudList);
-    });
+    Object.values(cloudByName)
+        .filter(l => !oldFavoritesNames.includes(l.name))
+        .forEach(cloudList => mergedLists.push(cloudList));
 
     // Sort by position
     mergedLists.sort((a, b) => a.position - b.position);
 
-    console.log('[syncListsToCloud] returning merged lists:', mergedLists.map(l => ({ id: l.id, name: l.name })));
     return { data: mergedLists, error: null };
 }
 

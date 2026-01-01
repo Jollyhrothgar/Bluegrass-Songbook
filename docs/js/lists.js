@@ -27,16 +27,9 @@ let deletedListNames = new Set();
 function loadDeletedLists() {
     try {
         const savedIds = localStorage.getItem(DELETED_LISTS_KEY);
-        if (savedIds) {
-            deletedListIds = new Set(JSON.parse(savedIds));
-        }
+        if (savedIds) deletedListIds = new Set(JSON.parse(savedIds));
         const savedNames = localStorage.getItem(DELETED_NAMES_KEY);
-        if (savedNames) {
-            deletedListNames = new Set(JSON.parse(savedNames));
-        }
-        if (deletedListIds.size > 0 || deletedListNames.size > 0) {
-            console.log('[loadDeletedLists] ids:', [...deletedListIds], 'names:', [...deletedListNames]);
-        }
+        if (savedNames) deletedListNames = new Set(JSON.parse(savedNames));
     } catch (e) {
         console.error('Failed to load deleted lists:', e);
     }
@@ -55,7 +48,6 @@ function addDeletedList(id, name) {
     if (id) deletedListIds.add(id);
     if (name) deletedListNames.add(name);
     saveDeletedLists();
-    console.log('[addDeletedList] added id:', id, 'name:', name);
 }
 
 function isListDeleted(id, name) {
@@ -409,30 +401,22 @@ export function renameList(listId, newName) {
  * Delete a list
  */
 export async function deleteList(listId) {
-    console.log('[deleteList] called with:', listId);
     const index = userLists.findIndex(l => l.id === listId);
-    console.log('[deleteList] found at index:', index, 'in', userLists.map(l => ({ id: l.id, name: l.name })));
-    if (index === -1) {
-        console.log('[deleteList] list not found, returning false');
-        return false;
-    }
+    if (index === -1) return false;
 
     const list = userLists[index];
-    console.log('[deleteList] removing:', list.name, 'cloudId:', list.cloudId);
 
     // Track deleted list by both ID and name to prevent sync from resurrecting it
     addDeletedList(list.cloudId, list.name);
-    addDeletedList(listId, null);  // Also track local ID
+    addDeletedList(listId, null);
 
     userLists.splice(index, 1);
     saveLists();
     trackListAction('delete', listId);
 
-    // Sync to cloud - await to ensure delete completes
+    // Sync to cloud
     if (list.cloudId) {
-        console.log('[deleteList] syncing delete to cloud...');
         await syncListToCloud(list, 'delete');
-        console.log('[deleteList] cloud sync complete');
     }
 
     return true;
@@ -570,12 +554,8 @@ export async function performFullListsSync() {
     }
 
     // Prevent duplicate syncs
-    if (syncInProgress) {
-        console.log('[performFullListsSync] sync already in progress, skipping');
-        return;
-    }
+    if (syncInProgress) return;
     syncInProgress = true;
-    console.log('[performFullListsSync] starting sync...');
 
     try {
         // Step 1: Migrate old cloud favorites from user_favorites table
@@ -587,22 +567,12 @@ export async function performFullListsSync() {
 
         // Step 3: Process and deduplicate lists
         let processedLists = processCloudLists(merged);
-        console.log('Processed lists:', processedLists.map(l => l.name));
 
         // Step 4: Re-filter for any lists deleted DURING the sync (race condition fix)
-        // The user might have deleted a list while sync was running
         if (deletedListIds.size > 0 || deletedListNames.size > 0) {
-            const beforeCount = processedLists.length;
-            processedLists = processedLists.filter(l => {
-                const dominated = isListDeleted(l.id, l.name) || isListDeleted(l.cloudId, l.name);
-                if (dominated) {
-                    console.log('[performFullListsSync] filtering out deleted list:', l.name);
-                }
-                return !dominated;
-            });
-            if (processedLists.length < beforeCount) {
-                console.log('[performFullListsSync] filtered', beforeCount - processedLists.length, 'deleted lists');
-            }
+            processedLists = processedLists.filter(l =>
+                !isListDeleted(l.id, l.name) && !isListDeleted(l.cloudId, l.name)
+            );
         }
 
         // Update local lists with processed data
@@ -610,15 +580,9 @@ export async function performFullListsSync() {
         saveLists();
         updateFavoritesCount();
 
-        // Note: deletedListIds persists in localStorage and is used on next page load
-        // to filter out any zombie lists. We don't clean it up here to avoid race conditions.
-
         // Enable cloud sync for future operations
         setCloudSyncEnabled(true);
-
-        // Update sync UI to show lists count
         updateSyncUI('synced');
-        console.log('[performFullListsSync] sync complete');
     } catch (err) {
         console.error('Lists sync failed:', err);
         updateSyncUI('error');
@@ -641,13 +605,11 @@ function processCloudLists(cloudLists) {
     for (const cloudList of cloudLists) {
         // Skip lists that were deleted during this session (check both ID and name)
         if (isListDeleted(cloudList.id, cloudList.name)) {
-            console.log('[processCloudLists] skipping deleted list:', cloudList.name, cloudList.id);
             continue;
         }
 
         // Skip duplicates by name (keep first occurrence)
         if (seenNames.has(cloudList.name)) {
-            console.log('Skipping duplicate list:', cloudList.name);
             continue;
         }
 
@@ -1365,26 +1327,19 @@ export function initLists(options) {
 
     // Delete list button
     const deleteListBtnInit = document.getElementById('delete-list-btn');
-    console.log('[initLists] delete button found:', !!deleteListBtnInit);
     deleteListBtnInit?.addEventListener('click', async () => {
-        console.log('[delete click] viewingListId:', viewingListId);
         if (!viewingListId || viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
-            console.log('[delete click] blocked - viewing favorites or no list');
             return;
         }
 
         const list = userLists.find(l => l.id === viewingListId);
-        console.log('[delete click] found list:', list?.name);
         const listName = list?.name || 'this list';
 
         if (!confirm(`Delete "${listName}"? Songs won't be deleted from the songbook.`)) {
-            console.log('[delete click] user cancelled');
             return;
         }
 
-        console.log('[delete click] user confirmed, calling deleteList...');
         await deleteList(viewingListId);
-        console.log('[delete click] deleteList returned');
 
         // Navigate back to home
         clearListView();
