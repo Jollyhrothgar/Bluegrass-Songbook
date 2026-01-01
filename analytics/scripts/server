@@ -50,7 +50,7 @@ echo "Dashboard will open at: http://localhost:$PORT/notebooks/dashboard.ipynb"
 echo ""
 
 cd "$REPO_ROOT"
-uv run jupyter notebook \
+uv run --extra analytics jupyter notebook \
     --notebook-dir="$ANALYTICS_ROOT" \
     --port="$PORT" \
     --no-browser \
