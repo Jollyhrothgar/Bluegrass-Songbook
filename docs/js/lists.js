@@ -18,38 +18,52 @@ const FAVORITES_LIST_NAME = 'Favorites';
 let viewingListId = null;
 let viewingPublicList = null;  // { list, songs, isOwner } - null if viewing own list
 
-// Track deleted list IDs to prevent sync from resurrecting them (persisted to localStorage)
+// Track deleted lists to prevent sync from resurrecting them (persisted to localStorage)
 const DELETED_LISTS_KEY = 'songbook-deleted-lists';
+const DELETED_NAMES_KEY = 'songbook-deleted-names';
 let deletedListIds = new Set();
+let deletedListNames = new Set();
 
-function loadDeletedListIds() {
+function loadDeletedLists() {
     try {
-        const saved = localStorage.getItem(DELETED_LISTS_KEY);
-        if (saved) {
-            deletedListIds = new Set(JSON.parse(saved));
-            console.log('[loadDeletedListIds] loaded:', [...deletedListIds]);
+        const savedIds = localStorage.getItem(DELETED_LISTS_KEY);
+        if (savedIds) {
+            deletedListIds = new Set(JSON.parse(savedIds));
+        }
+        const savedNames = localStorage.getItem(DELETED_NAMES_KEY);
+        if (savedNames) {
+            deletedListNames = new Set(JSON.parse(savedNames));
+        }
+        if (deletedListIds.size > 0 || deletedListNames.size > 0) {
+            console.log('[loadDeletedLists] ids:', [...deletedListIds], 'names:', [...deletedListNames]);
         }
     } catch (e) {
-        console.error('Failed to load deleted list IDs:', e);
+        console.error('Failed to load deleted lists:', e);
     }
 }
 
-function saveDeletedListIds() {
+function saveDeletedLists() {
     try {
         localStorage.setItem(DELETED_LISTS_KEY, JSON.stringify([...deletedListIds]));
+        localStorage.setItem(DELETED_NAMES_KEY, JSON.stringify([...deletedListNames]));
     } catch (e) {
-        console.error('Failed to save deleted list IDs:', e);
+        console.error('Failed to save deleted lists:', e);
     }
 }
 
-function addDeletedListId(id) {
-    deletedListIds.add(id);
-    saveDeletedListIds();
-    console.log('[addDeletedListId] added:', id, 'total:', [...deletedListIds]);
+function addDeletedList(id, name) {
+    if (id) deletedListIds.add(id);
+    if (name) deletedListNames.add(name);
+    saveDeletedLists();
+    console.log('[addDeletedList] added id:', id, 'name:', name);
 }
 
-// Load deleted IDs on module initialization
-loadDeletedListIds();
+function isListDeleted(id, name) {
+    return deletedListIds.has(id) || deletedListNames.has(name);
+}
+
+// Load on module initialization
+loadDeletedLists();
 
 // DOM element references (set by init)
 let navListsContainerEl = null;
@@ -406,11 +420,9 @@ export async function deleteList(listId) {
     const list = userLists[index];
     console.log('[deleteList] removing:', list.name, 'cloudId:', list.cloudId);
 
-    // Track deleted IDs to prevent sync from resurrecting this list (persisted to localStorage)
-    if (list.cloudId) {
-        addDeletedListId(list.cloudId);
-    }
-    addDeletedListId(listId);
+    // Track deleted list by both ID and name to prevent sync from resurrecting it
+    addDeletedList(list.cloudId, list.name);
+    addDeletedList(listId, null);  // Also track local ID
 
     userLists.splice(index, 1);
     saveLists();
@@ -574,30 +586,32 @@ export async function performFullListsSync() {
         if (error) throw error;
 
         // Step 3: Process and deduplicate lists
-        const processedLists = processCloudLists(merged);
+        let processedLists = processCloudLists(merged);
         console.log('Processed lists:', processedLists.map(l => l.name));
+
+        // Step 4: Re-filter for any lists deleted DURING the sync (race condition fix)
+        // The user might have deleted a list while sync was running
+        if (deletedListIds.size > 0 || deletedListNames.size > 0) {
+            const beforeCount = processedLists.length;
+            processedLists = processedLists.filter(l => {
+                const dominated = isListDeleted(l.id, l.name) || isListDeleted(l.cloudId, l.name);
+                if (dominated) {
+                    console.log('[performFullListsSync] filtering out deleted list:', l.name);
+                }
+                return !dominated;
+            });
+            if (processedLists.length < beforeCount) {
+                console.log('[performFullListsSync] filtered', beforeCount - processedLists.length, 'deleted lists');
+            }
+        }
 
         // Update local lists with processed data
         setUserLists(processedLists);
         saveLists();
         updateFavoritesCount();
 
-        // Cleanup: remove deleted IDs that are confirmed gone from cloud
-        // Keep only IDs that were in cloud but got filtered out (recently deleted)
-        const cloudIds = new Set(merged.map(l => l.id));
-        const processedIds = new Set(processedLists.map(l => l.cloudId).filter(Boolean));
-        const stillNeeded = new Set();
-        for (const id of deletedListIds) {
-            // Keep ID if it was in cloud results but filtered out (meaning we need to keep blocking it)
-            if (cloudIds.has(id) && !processedIds.has(id)) {
-                stillNeeded.add(id);
-            }
-        }
-        if (stillNeeded.size !== deletedListIds.size) {
-            deletedListIds = stillNeeded;
-            saveDeletedListIds();
-            console.log('[performFullListsSync] cleaned up deleted IDs, remaining:', [...deletedListIds]);
-        }
+        // Note: deletedListIds persists in localStorage and is used on next page load
+        // to filter out any zombie lists. We don't clean it up here to avoid race conditions.
 
         // Enable cloud sync for future operations
         setCloudSyncEnabled(true);
@@ -625,8 +639,8 @@ function processCloudLists(cloudLists) {
     const oldFavoritesNames = ['❤️ Favorites', '❤️ favorites', '♥ Favorites'];
 
     for (const cloudList of cloudLists) {
-        // Skip lists that were deleted during this session
-        if (deletedListIds.has(cloudList.id)) {
+        // Skip lists that were deleted during this session (check both ID and name)
+        if (isListDeleted(cloudList.id, cloudList.name)) {
             console.log('[processCloudLists] skipping deleted list:', cloudList.name, cloudList.id);
             continue;
         }
