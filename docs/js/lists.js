@@ -362,17 +362,25 @@ export function renameList(listId, newName) {
  * Delete a list
  */
 export async function deleteList(listId) {
+    console.log('[deleteList] called with:', listId);
     const index = userLists.findIndex(l => l.id === listId);
-    if (index === -1) return false;
+    console.log('[deleteList] found at index:', index, 'in', userLists.map(l => ({ id: l.id, name: l.name })));
+    if (index === -1) {
+        console.log('[deleteList] list not found, returning false');
+        return false;
+    }
 
     const list = userLists[index];
+    console.log('[deleteList] removing:', list.name, 'cloudId:', list.cloudId);
     userLists.splice(index, 1);
     saveLists();
     trackListAction('delete', listId);
 
     // Sync to cloud - await to ensure delete completes
     if (list.cloudId) {
+        console.log('[deleteList] syncing delete to cloud...');
         await syncListToCloud(list, 'delete');
+        console.log('[deleteList] cloud sync complete');
     }
 
     return true;
@@ -1265,19 +1273,26 @@ export function initLists(options) {
 
     // Delete list button
     const deleteListBtnInit = document.getElementById('delete-list-btn');
+    console.log('[initLists] delete button found:', !!deleteListBtnInit);
     deleteListBtnInit?.addEventListener('click', async () => {
+        console.log('[delete click] viewingListId:', viewingListId);
         if (!viewingListId || viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
+            console.log('[delete click] blocked - viewing favorites or no list');
             return;
         }
 
         const list = userLists.find(l => l.id === viewingListId);
+        console.log('[delete click] found list:', list?.name);
         const listName = list?.name || 'this list';
 
         if (!confirm(`Delete "${listName}"? Songs won't be deleted from the songbook.`)) {
+            console.log('[delete click] user cancelled');
             return;
         }
 
+        console.log('[delete click] user confirmed, calling deleteList...');
         await deleteList(viewingListId);
+        console.log('[delete click] deleteList returned');
 
         // Navigate back to home
         clearListView();
