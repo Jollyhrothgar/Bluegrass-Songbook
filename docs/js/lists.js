@@ -18,6 +18,9 @@ const FAVORITES_LIST_NAME = 'Favorites';
 let viewingListId = null;
 let viewingPublicList = null;  // { list, songs, isOwner } - null if viewing own list
 
+// Track lists deleted during this session to prevent sync from resurrecting them
+const deletedListIds = new Set();
+
 // DOM element references (set by init)
 let navListsContainerEl = null;
 let navSearchEl = null;
@@ -372,6 +375,13 @@ export async function deleteList(listId) {
 
     const list = userLists[index];
     console.log('[deleteList] removing:', list.name, 'cloudId:', list.cloudId);
+
+    // Track deleted IDs to prevent sync from resurrecting this list
+    if (list.cloudId) {
+        deletedListIds.add(list.cloudId);
+    }
+    deletedListIds.add(listId);
+
     userLists.splice(index, 1);
     saveLists();
     trackListAction('delete', listId);
@@ -567,6 +577,12 @@ function processCloudLists(cloudLists) {
     const oldFavoritesNames = ['❤️ Favorites', '❤️ favorites', '♥ Favorites'];
 
     for (const cloudList of cloudLists) {
+        // Skip lists that were deleted during this session
+        if (deletedListIds.has(cloudList.id)) {
+            console.log('[processCloudLists] skipping deleted list:', cloudList.name, cloudList.id);
+            continue;
+        }
+
         // Skip duplicates by name (keep first occurrence)
         if (seenNames.has(cloudList.name)) {
             console.log('Skipping duplicate list:', cloudList.name);
