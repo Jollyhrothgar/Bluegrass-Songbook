@@ -823,6 +823,9 @@ h1 {
     display: flex;
     gap: 0.5rem;
     align-items: stretch;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.25rem; /* Space for scrollbar */
 }
 
 .song-actions .action-btn,
@@ -830,6 +833,68 @@ h1 {
     display: flex;
     align-items: center;
     font-size: var(--btn-label-size);
+    flex-shrink: 0;
+}
+
+/* Desktop actions container */
+.desktop-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+/* Mobile actions menu - hidden on desktop */
+.mobile-actions-wrapper {
+    display: none;
+    position: relative;
+}
+
+.mobile-actions-btn {
+    font-size: 1.25rem;
+}
+
+.mobile-actions-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    min-width: 180px;
+    padding: 0.5rem 0;
+}
+
+.mobile-action-option {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 0.95rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.mobile-action-option:hover {
+    background: var(--bg-secondary);
+}
+
+/* Mobile song header - hidden on desktop */
+.mobile-song-header {
+    display: none;
+}
+
+/* Bottom sheet - hidden on desktop */
+.bottom-sheet-backdrop {
+    display: none;
+}
+
+.bottom-sheet {
+    display: none;
 }
 
 .back-btn {
@@ -895,6 +960,68 @@ h1 {
     gap: var(--space-sm);
 }
 
+/* Tags collapsed/expanded - collapsed by default on all platforms */
+.tags-collapsed {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.tags-collapsed:hover {
+    color: var(--accent);
+}
+
+.tags-collapsed.hidden {
+    display: none;
+}
+
+.tags-label {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.tags-summary {
+    color: var(--text-secondary);
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tags-expand {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
+
+.tags-expanded {
+    display: none;
+}
+
+.tags-expanded.expanded {
+    display: block;
+}
+
+.tags-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.tags-header:hover {
+    color: var(--accent);
+}
+
+.tags-collapse {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
+
 .song-header-left {
     flex: 1;
     min-width: 0;
@@ -918,6 +1045,11 @@ h1 {
     gap: var(--space-sm);
     align-items: stretch;
     justify-content: flex-end;
+}
+
+/* Hide mobile options toggle on desktop */
+.mobile-options-toggle {
+    display: none;
 }
 
 .header-control-group {
@@ -962,6 +1094,66 @@ h1 {
     accent-color: var(--accent);
     width: 0.9rem;
     height: 0.9rem;
+}
+
+/* Display dropdown */
+.display-dropdown-wrapper {
+    position: relative;
+}
+
+.display-dropdown-btn {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 0.4rem 0.75rem;
+    font-size: var(--font-sm);
+    color: var(--text);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.display-dropdown-btn:hover {
+    background: var(--bg-secondary);
+    border-color: var(--text-secondary);
+}
+
+.display-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.25rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 0.5rem;
+    min-width: 140px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+.display-dropdown.hidden {
+    display: none;
+}
+
+.display-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.5rem;
+    font-size: var(--font-sm);
+    color: var(--text);
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+}
+
+.display-option:hover {
+    background: var(--bg-secondary);
+}
+
+.display-option input[type="checkbox"] {
+    accent-color: var(--accent);
+    width: 1rem;
+    height: 1rem;
 }
 
 .meta-item {
@@ -1432,6 +1624,264 @@ h1 {
     .bug-btn {
         font-size: 0.75rem;
         padding: 0.4rem 0.6rem;
+    }
+
+    /* Hide desktop song header on mobile */
+    .song-view-header {
+        display: none;
+    }
+
+    /* Show mobile song header */
+    .mobile-song-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+
+    .options-btn {
+        background: var(--accent);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .options-btn:active {
+        opacity: 0.8;
+    }
+
+    /* Hide header controls on mobile - use bottom sheet instead */
+    .header-controls {
+        display: none !important;
+    }
+
+    /* Hide mobile header in fullscreen mode */
+    body.fullscreen-mode .mobile-song-header {
+        display: none;
+    }
+
+    /* Bottom sheet backdrop */
+    .bottom-sheet-backdrop {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1100;
+    }
+
+    .bottom-sheet-backdrop:not(.hidden) {
+        display: block;
+    }
+
+    /* Bottom sheet panel */
+    .bottom-sheet {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--bg);
+        border-radius: 16px 16px 0 0;
+        z-index: 1101;
+        transform: translateY(100%);
+        transition: transform 0.3s ease-out;
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+
+    .bottom-sheet:not(.hidden) {
+        display: block;
+        transform: translateY(0);
+    }
+
+    .bottom-sheet-handle {
+        width: 40px;
+        height: 4px;
+        background: var(--border);
+        border-radius: 2px;
+        margin: 12px auto;
+    }
+
+    .bottom-sheet-content {
+        padding: 0 1rem 1.5rem;
+    }
+
+    .sheet-section {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .sheet-section:last-child {
+        border-bottom: none;
+    }
+
+    .sheet-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+    }
+
+    .sheet-label {
+        font-size: 0.95rem;
+        color: var(--text);
+        font-weight: 500;
+    }
+
+    .sheet-select {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.95rem;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        background: var(--bg);
+        color: var(--text);
+        min-width: 100px;
+    }
+
+    .sheet-size-buttons {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .sheet-btn {
+        width: 44px;
+        height: 44px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--bg);
+        color: var(--text);
+        font-size: 1.25rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .sheet-btn:active {
+        background: var(--bg-secondary);
+    }
+
+    .sheet-checkboxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .sheet-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        color: var(--text);
+        padding: 0.5rem;
+    }
+
+    .sheet-checkbox input {
+        width: 18px;
+        height: 18px;
+    }
+
+    .sheet-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .sheet-action {
+        display: block;
+        width: 100%;
+        padding: 0.875rem 0.5rem;
+        background: none;
+        border: none;
+        color: var(--text);
+        font-size: 1rem;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .sheet-action:active {
+        background: var(--bg-secondary);
+    }
+
+    /* Mobile song header layout */
+    .song-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .song-header-left {
+        width: 100%;
+    }
+
+    .header-controls {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    /* Hide Chords and Layout groups on mobile - show via toggle */
+    .header-control-group.mobile-hidden {
+        display: none;
+    }
+
+    .header-control-group.mobile-hidden.mobile-visible {
+        display: flex;
+    }
+
+    /* Mobile options toggle button */
+    .mobile-options-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        background: var(--bg-secondary);
+        color: var(--text-secondary);
+        cursor: pointer;
+        font-size: 1rem;
+        min-width: 2.5rem;
+    }
+
+    .mobile-options-toggle:hover {
+        border-color: var(--accent);
+        color: var(--text);
+    }
+
+    .mobile-options-toggle.active {
+        background: var(--accent);
+        color: white;
+        border-color: var(--accent);
+    }
+
+    /* ABC controls - make fieldset collapsible on mobile */
+    .render-options-fieldset legend {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .render-options-fieldset legend::after {
+        content: ' ▼';
+        font-size: 0.7em;
+    }
+
+    .render-options-fieldset.collapsed legend::after {
+        content: ' ▶';
+    }
+
+    .render-options-fieldset.collapsed .render-options {
+        display: none;
     }
 }
 
@@ -2968,7 +3418,8 @@ mark {
     padding: 1rem 1rem 1.5rem 1rem;
     border-radius: 8px;
     margin: 0.5rem 0;
-    overflow: visible;
+    overflow-x: auto;
+    overflow-y: visible;
 }
 
 .abc-notation svg {
@@ -3193,8 +3644,8 @@ body.fullscreen-mode .song-title {
 }
 
 body.fullscreen-mode .header-controls {
-    flex-wrap: nowrap;
-    gap: 0.75rem;
+    /* Hidden in fullscreen - use bottom sheet instead */
+    display: none;
 }
 
 /* Show nav bar in fullscreen mode */
@@ -3311,7 +3762,8 @@ body.fullscreen-mode::after {
         padding: 0.5rem 0.75rem;
     }
 
-    .nav-label {
+    /* Hide nav labels in song navigation bar, but not in sidebar */
+    .song-nav .nav-label {
         display: none;
     }
 

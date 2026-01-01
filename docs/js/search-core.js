@@ -527,10 +527,12 @@ function setupResultEventListeners(resultsDiv) {
             flushPendingSearch();
             trackSearchResultClick(item.dataset.id, index, searchInputEl?.value || '');
 
+            // Open song - auto-fullscreen if coming from a list/favorites view
+            const fromList = !!(viewingListId || showingFavorites);
             if (versions.length > 1) {
-                showVersionPicker(groupId);
+                showVersionPicker(groupId, { fromList });
             } else {
-                openSong(item.dataset.id);
+                openSong(item.dataset.id, { fromList });
             }
         });
 

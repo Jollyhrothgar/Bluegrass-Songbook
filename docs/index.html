@@ -284,9 +284,81 @@ This is the [G]chorus [D]part
         </div>
 
         <div id="song-view" class="song-view hidden">
+            <!-- Bottom sheet for mobile controls -->
+            <div id="bottom-sheet-backdrop" class="bottom-sheet-backdrop hidden"></div>
+            <div id="bottom-sheet" class="bottom-sheet hidden">
+                <div class="bottom-sheet-handle"></div>
+                <div class="bottom-sheet-content">
+                    <!-- Quick controls -->
+                    <div class="sheet-section sheet-quick-controls">
+                        <div class="sheet-row">
+                            <label class="sheet-label">Key</label>
+                            <select id="sheet-key-select" class="sheet-select"></select>
+                        </div>
+                        <div class="sheet-row">
+                            <label class="sheet-label">Size</label>
+                            <div class="sheet-size-buttons">
+                                <button id="sheet-font-decrease" class="sheet-btn">−</button>
+                                <button id="sheet-font-increase" class="sheet-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Display options -->
+                    <div class="sheet-section">
+                        <div class="sheet-row">
+                            <label class="sheet-label">Chords</label>
+                            <select id="sheet-chord-mode" class="sheet-select">
+                                <option value="all">All</option>
+                                <option value="first">First Only</option>
+                                <option value="none">None</option>
+                            </select>
+                        </div>
+                        <div class="sheet-checkboxes">
+                            <label class="sheet-checkbox"><input type="checkbox" id="sheet-compact"> Compact</label>
+                            <label class="sheet-checkbox"><input type="checkbox" id="sheet-nashville"> Nashville</label>
+                            <label class="sheet-checkbox"><input type="checkbox" id="sheet-twocol"> 2-Column</label>
+                            <label class="sheet-checkbox"><input type="checkbox" id="sheet-labels"> Labels</label>
+                        </div>
+                    </div>
+                    <!-- Actions -->
+                    <div class="sheet-section sheet-actions">
+                        <button class="sheet-action" data-action="lists">♡ Add to List</button>
+                        <button class="sheet-action" data-action="print">🖨 Print</button>
+                        <button class="sheet-action" data-action="copy">📋 Copy</button>
+                        <button class="sheet-action" data-action="download">⬇ Download</button>
+                        <button class="sheet-action" data-action="edit">✏ Edit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile header - shown only on mobile -->
+            <div class="mobile-song-header">
+                <button id="mobile-back-btn" class="back-btn">&larr; Back</button>
+                <button id="mobile-options-btn" class="options-btn">Options</button>
+            </div>
+
+            <!-- Desktop header - hidden on mobile -->
             <div class="song-view-header">
                 <button id="back-btn" class="back-btn">&larr; Back</button>
                 <div class="song-actions">
+                    <div class="list-picker-wrapper">
+                        <button id="list-picker-btn" class="icon-btn" title="Add to list">
+                            <span class="list-icon">➕</span>
+                            <span class="btn-label">Lists</span>
+                        </button>
+                        <div id="list-picker-dropdown" class="list-picker-dropdown hidden">
+                            <label class="list-option favorites-option">
+                                <input type="checkbox" id="favorites-checkbox">
+                                <span class="heart-icon">&#9829;</span>
+                                <span>Favorites</span>
+                            </label>
+                            <div class="list-divider"></div>
+                            <div id="custom-lists-container">
+                                <!-- Dynamic list checkboxes -->
+                            </div>
+                            <button id="create-list-btn" class="create-list-btn">+ New List</button>
+                        </div>
+                    </div>
                     <button id="print-btn" class="icon-btn" title="Print">
                         <span>🖨️</span>
                         <span class="btn-label">Print</span>
@@ -319,24 +391,6 @@ This is the [G]chorus [D]part
                             </button>
                         </div>
                     </div>
-                    <div class="list-picker-wrapper">
-                        <button id="list-picker-btn" class="icon-btn" title="Add to list">
-                            <span class="list-icon">➕</span>
-                            <span class="btn-label">Lists</span>
-                        </button>
-                        <div id="list-picker-dropdown" class="list-picker-dropdown hidden">
-                            <label class="list-option favorites-option">
-                                <input type="checkbox" id="favorites-checkbox">
-                                <span class="heart-icon">&#9829;</span>
-                                <span>Favorites</span>
-                            </label>
-                            <div class="list-divider"></div>
-                            <div id="custom-lists-container">
-                                <!-- Dynamic list checkboxes -->
-                            </div>
-                            <button id="create-list-btn" class="create-list-btn">+ New List</button>
-                        </div>
-                    </div>
                     <button id="edit-song-btn" class="action-btn">Edit</button>
                     <button id="fullscreen-btn" class="icon-btn" title="Full screen (F)">
                         <span>⛶</span>
@@ -347,9 +401,13 @@ This is the [G]chorus [D]part
             <div id="song-content" class="song-content"></div>
             <!-- Bottom navigation bar for fullscreen/list mode -->
             <div id="song-nav-bar" class="song-nav-bar hidden">
-                <button id="exit-fullscreen-btn" class="nav-btn exit-btn" title="Exit focus mode (Esc)">
-                    <span class="nav-arrow">✕</span>
-                    <span class="nav-label">Exit</span>
+                <button id="exit-fullscreen-btn" class="nav-btn exit-btn" title="Back to list">
+                    <span class="nav-arrow">☰</span>
+                    <span class="nav-label">List</span>
+                </button>
+                <button id="song-view-btn" class="nav-btn" title="View song controls">
+                    <span class="nav-arrow">♫</span>
+                    <span class="nav-label">Song</span>
                 </button>
                 <div class="nav-info">
                     <span id="nav-position">1 of 10</span>

@@ -245,8 +245,11 @@ function renderAbcNotation(abcContent, containerId) {
         container.style.height = '';
 
         // Calculate staffwidth to fill container (minus padding)
-        const containerWidth = container.parentElement.clientWidth - 32;
-        const staffwidth = Math.max(400, containerWidth - 20);
+        // Use smaller minimum for mobile screens
+        const containerWidth = container.parentElement?.clientWidth || window.innerWidth - 32;
+        const isMobile = window.innerWidth <= 600;
+        const minWidth = isMobile ? 280 : 400;
+        const staffwidth = Math.max(minWidth, containerWidth - 32);
 
         // Render ABC notation with current settings
         const rendered = ABCJS.renderAbc(containerId, abcContent, {
@@ -566,12 +569,25 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         }).join('')
         : '<em class="no-tags">None</em>';
 
+    // Build collapsed tags summary for mobile
+    const tagsSummary = tagNames.length > 0
+        ? tagNames.map(tag => formatTagName(tag)).join(', ')
+        : 'None';
+
     // Tags section (separate from meta, full width)
     const tagsRowHtml = `
         <div class="song-tags-section">
-            <div class="song-tags-row">
-                <span id="song-tags-container" class="song-tags" data-song-id="${song.id}">${tagsHtml}</span>
-                ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song.id}">+ Add your own</button>` : ''}
+            <div class="tags-collapsed" id="tags-collapsed">
+                <span class="tags-label">Tags:</span>
+                <span class="tags-summary">${escapeHtml(tagsSummary)}</span>
+                <span class="tags-expand">▼</span>
+            </div>
+            <div class="tags-expanded" id="tags-expanded">
+                <div class="tags-header">Tags <span class="tags-collapse">▲</span></div>
+                <div class="song-tags-row">
+                    <span id="song-tags-container" class="song-tags" data-song-id="${song.id}">${tagsHtml}</span>
+                    ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song.id}">+ Add your own</button>` : ''}
+                </div>
             </div>
             <div id="add-tags-form" class="add-tags-form hidden">
                 <div class="add-tags-header">Add your own tags (comma-separated)</div>
@@ -669,26 +685,26 @@ export function renderSong(song, chordpro, isInitialRender = false) {
                     <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>None</option>
                 </select>
             </div>
-            <div class="header-control-group">
-                <span class="header-control-label">Layout</span>
-                <div class="header-checkboxes">
-                    <label class="header-checkbox" title="Compact layout">
+            <div class="header-control-group display-dropdown-wrapper">
+                <button id="display-dropdown-btn" class="display-dropdown-btn">Display ▾</button>
+                <div id="display-dropdown" class="display-dropdown hidden">
+                    <label class="display-option" title="Compact layout">
                         <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
                         <span>Compact</span>
                     </label>
-                    <label class="header-checkbox" title="Nashville numbers">
+                    <label class="display-option" title="Nashville numbers">
                         <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
                         <span>Nashville</span>
                     </label>
-                    <label class="header-checkbox" title="Two columns">
+                    <label class="display-option" title="Two columns">
                         <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
                         <span>2-Col</span>
                     </label>
-                    <label class="header-checkbox" title="Section labels">
+                    <label class="display-option" title="Section labels">
                         <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
                         <span>Labels</span>
                     </label>
-                    <label class="header-checkbox" title="Show source">
+                    <label class="display-option" title="Show source">
                         <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
                         <span>Source</span>
                     </label>
@@ -805,6 +821,26 @@ function setupRenderOptionsListeners(song, chordpro) {
             e.preventDefault();
             showVersionPicker(seeVersionsBtn.dataset.groupId);
         });
+    }
+
+    // Tags collapse/expand handler (mobile)
+    const tagsCollapsed = document.getElementById('tags-collapsed');
+    const tagsExpanded = document.getElementById('tags-expanded');
+    if (tagsCollapsed && tagsExpanded) {
+        // Expand when collapsed is clicked
+        tagsCollapsed.addEventListener('click', () => {
+            tagsCollapsed.classList.add('hidden');
+            tagsExpanded.classList.add('expanded');
+        });
+
+        // Collapse when header is clicked
+        const tagsHeader = tagsExpanded.querySelector('.tags-header');
+        if (tagsHeader) {
+            tagsHeader.addEventListener('click', () => {
+                tagsExpanded.classList.remove('expanded');
+                tagsCollapsed.classList.remove('hidden');
+            });
+        }
     }
 
     // Genre suggestion handlers
@@ -1085,6 +1121,23 @@ function setupRenderOptionsListeners(song, chordpro) {
             }
         });
     }
+
+    // Display dropdown toggle
+    const displayDropdownBtn = document.getElementById('display-dropdown-btn');
+    const displayDropdown = document.getElementById('display-dropdown');
+    if (displayDropdownBtn && displayDropdown) {
+        displayDropdownBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            displayDropdown.classList.toggle('hidden');
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!displayDropdown.contains(e.target) && !displayDropdownBtn.contains(e.target)) {
+                displayDropdown.classList.add('hidden');
+            }
+        });
+    }
 }
 
 /**
@@ -1179,15 +1232,32 @@ function setupAbcControlListeners(song, chordpro, abcContent) {
             abcSpeedIncrease.disabled = abcTempoBpm >= 240;
         });
     }
+
+    // Mobile: make ABC controls fieldset collapsible
+    const abcFieldset = document.querySelector('.render-options-fieldset');
+    if (abcFieldset) {
+        const legend = abcFieldset.querySelector('legend');
+        if (legend) {
+            legend.addEventListener('click', () => {
+                abcFieldset.classList.toggle('collapsed');
+            });
+        }
+    }
 }
 
 /**
  * Open a song
+ * @param {string} songId - The song ID to open
+ * @param {Object} options - Options for opening the song
+ * @param {boolean} options.fromList - Whether opening from a list view (auto-enters fullscreen)
+ * @param {boolean} options.fromHistory - Whether opening from browser history navigation
  */
-export async function openSong(songId) {
+export async function openSong(songId, options = {}) {
     if (!songViewEl || !resultsDivEl) return;
 
-    if (pushHistoryStateFn) {
+    const { fromList = false, fromHistory = false } = options;
+
+    if (pushHistoryStateFn && !fromHistory) {
         pushHistoryStateFn('song', { songId });
     }
 
@@ -1215,6 +1285,12 @@ export async function openSong(songId) {
         }
     }
     updateNavBar();
+
+    // Auto-enter fullscreen when opening from a list
+    if (fromList && listContext) {
+        setFullscreenMode(true);
+        document.body.classList.add('fullscreen-mode');
+    }
 
     // Track song view in analytics
     if (song) {
@@ -1287,9 +1363,14 @@ export async function openSongFromHistory(songId) {
 
 /**
  * Show version picker modal
+ * @param {string} groupId - The group ID for versions
+ * @param {Object} options - Options to pass through to openSong
  */
-export async function showVersionPicker(groupId) {
+export async function showVersionPicker(groupId, options = {}) {
     if (!versionModalEl || !versionListEl) return;
+
+    // Store options to pass through when a version is selected
+    const openOptions = options;
 
     const versions = songGroups[groupId] || [];
     if (versions.length === 0) return;
@@ -1361,7 +1442,7 @@ export async function showVersionPicker(groupId) {
             if (e.target.closest('.vote-btn')) return;
             trackVersionPicker(groupId, 'select', item.dataset.songId);
             closeVersionPicker();
-            openSong(item.dataset.songId);
+            openSong(item.dataset.songId, openOptions);
         });
     });
 
@@ -1425,7 +1506,26 @@ export function exitFullscreen() {
     if (fullscreenMode) {
         setFullscreenMode(false);
         document.body.classList.remove('fullscreen-mode');
+
+        // If we came from a list, go back to list view
+        if (listContext && listContext.listId) {
+            // Use history.back() to return to list view
+            if (historyInitialized && history.state) {
+                history.back();
+            }
+        }
+
         updateNavBar();
+    }
+}
+
+/**
+ * Open bottom sheet with song controls (mobile)
+ */
+export function openSongControls() {
+    // Call the global openBottomSheet function set up by main.js
+    if (typeof window.openBottomSheet === 'function') {
+        window.openBottomSheet();
     }
 }
 
@@ -1434,6 +1534,24 @@ export function exitFullscreen() {
  */
 export function updateNavBar() {
     if (!navBarEl) return;
+
+    // Update exit button label based on context
+    const exitBtn = document.getElementById('exit-fullscreen-btn');
+    if (exitBtn) {
+        const labelSpan = exitBtn.querySelector('.nav-label');
+        const arrowSpan = exitBtn.querySelector('.nav-arrow');
+        if (listContext && listContext.listId) {
+            // In list context: show "List" to return to list view
+            if (labelSpan) labelSpan.textContent = 'List';
+            if (arrowSpan) arrowSpan.textContent = '☰';
+            exitBtn.title = 'Back to list';
+        } else {
+            // No list context: show "Exit" to exit fullscreen
+            if (labelSpan) labelSpan.textContent = 'Exit';
+            if (arrowSpan) arrowSpan.textContent = '✕';
+            exitBtn.title = 'Exit focus mode (Esc)';
+        }
+    }
 
     // Show nav bar if we have a list context (regardless of fullscreen)
     // But in fullscreen mode, it's always shown via CSS

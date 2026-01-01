@@ -6,16 +6,21 @@ import {
     songGroups, setSongGroups,
     setHistoryInitialized,
     historyInitialized,
-    currentDetectedKey,
-    originalDetectedKey,
+    currentDetectedKey, setCurrentDetectedKey,
+    originalDetectedKey, originalDetectedMode,
     loadViewPrefs,
     userLists, favorites, showingFavorites,
-    compactMode, nashvilleMode, chordDisplayMode, showSectionLabels, twoColumnMode, fontSizeLevel
+    compactMode, setCompactMode,
+    nashvilleMode, setNashvilleMode,
+    chordDisplayMode, setChordDisplayMode,
+    showSectionLabels, setShowSectionLabels,
+    twoColumnMode, setTwoColumnMode,
+    fontSizeLevel, setFontSizeLevel, FONT_SIZES
 } from './state.js';
 import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import { initFavorites, performFullSync, updateSyncUI, showFavorites, hideFavorites } from './favorites.js';
 import { initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync, clearListView, renderListsModal, createList, addSongToList, getViewingListId, showListView, copyCurrentList } from './lists.js';
-import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, navigatePrev, navigateNext } from './song-view.js';
+import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro } from './editor.js';
 import { escapeHtml } from './utils.js';
@@ -38,6 +43,7 @@ const visitorStatsEl = document.getElementById('visitor-stats');
 // Sidebar elements
 const sidebar = document.getElementById('sidebar');
 const sidebarBackdrop = document.getElementById('sidebar-backdrop');
+const sidebarClose = document.getElementById('sidebar-close');
 const menuBtn = document.getElementById('hamburger-btn');
 const homeBtn = document.getElementById('home-btn');
 const logoLink = document.getElementById('logo-link');
@@ -65,6 +71,7 @@ const versionList = document.getElementById('version-list');
 // Fullscreen / navigation elements
 const fullscreenBtn = document.getElementById('fullscreen-btn');
 const exitFullscreenBtn = document.getElementById('exit-fullscreen-btn');
+const songViewBtn = document.getElementById('song-view-btn');
 const navBar = document.getElementById('song-nav-bar');
 const navPrevBtn = document.getElementById('nav-prev-btn');
 const navNextBtn = document.getElementById('nav-next-btn');
@@ -74,6 +81,14 @@ const navListName = document.getElementById('nav-list-name');
 // Print list button
 const printListBtn = document.getElementById('print-list-btn');
 const copyListBtn = document.getElementById('copy-list-btn');
+
+// Bottom sheet
+const bottomSheet = document.getElementById('bottom-sheet');
+const bottomSheetBackdrop = document.getElementById('bottom-sheet-backdrop');
+
+// Mobile song header
+const mobileBackBtn = document.getElementById('mobile-back-btn');
+const mobileOptionsBtn = document.getElementById('mobile-options-btn');
 
 // Lists modal
 const listsModal = document.getElementById('lists-modal');
@@ -1708,6 +1723,7 @@ function init() {
     // Sidebar
     menuBtn?.addEventListener('click', openSidebar);
     sidebarBackdrop?.addEventListener('click', closeSidebar);
+    sidebarClose?.addEventListener('click', closeSidebar);
 
     // Home buttons - go home
     const goHome = () => {
@@ -1884,6 +1900,162 @@ function init() {
         });
     });
 
+    // Bottom sheet control elements
+    const sheetKeySelect = document.getElementById('sheet-key-select');
+    const sheetFontDecrease = document.getElementById('sheet-font-decrease');
+    const sheetFontIncrease = document.getElementById('sheet-font-increase');
+    const sheetChordMode = document.getElementById('sheet-chord-mode');
+    const sheetCompact = document.getElementById('sheet-compact');
+    const sheetNashville = document.getElementById('sheet-nashville');
+    const sheetTwocol = document.getElementById('sheet-twocol');
+    const sheetLabels = document.getElementById('sheet-labels');
+
+    // Populate bottom sheet with current values
+    function populateBottomSheet() {
+        // Populate key options
+        if (sheetKeySelect) {
+            const majorKeys = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'F', 'Bb', 'Eb', 'Ab', 'Db'];
+            const minorKeys = ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm'];
+            const keys = originalDetectedMode === 'minor' ? minorKeys : majorKeys;
+
+            sheetKeySelect.innerHTML = keys.map(k => {
+                const isDetected = k === originalDetectedKey;
+                const label = isDetected ? `${k} (original)` : k;
+                return `<option value="${k}" ${k === currentDetectedKey ? 'selected' : ''}>${label}</option>`;
+            }).join('');
+        }
+
+        // Sync checkbox states
+        if (sheetChordMode) sheetChordMode.value = chordDisplayMode;
+        if (sheetCompact) sheetCompact.checked = compactMode;
+        if (sheetNashville) sheetNashville.checked = nashvilleMode;
+        if (sheetTwocol) sheetTwocol.checked = twoColumnMode;
+        if (sheetLabels) sheetLabels.checked = showSectionLabels;
+
+        // Update font button states
+        if (sheetFontDecrease) sheetFontDecrease.disabled = fontSizeLevel <= -2;
+        if (sheetFontIncrease) sheetFontIncrease.disabled = fontSizeLevel >= 2;
+    }
+
+    // Bottom sheet control handlers
+    sheetKeySelect?.addEventListener('change', (e) => {
+        setCurrentDetectedKey(e.target.value);
+        const song = getCurrentSong();
+        const chordpro = getCurrentChordpro();
+        if (song && chordpro) renderSong(song, chordpro);
+    });
+
+    sheetFontDecrease?.addEventListener('click', () => {
+        if (fontSizeLevel > -2) {
+            setFontSizeLevel(fontSizeLevel - 1);
+            const song = getCurrentSong();
+            const chordpro = getCurrentChordpro();
+            if (song && chordpro) renderSong(song, chordpro);
+            populateBottomSheet();
+        }
+    });
+
+    sheetFontIncrease?.addEventListener('click', () => {
+        if (fontSizeLevel < 2) {
+            setFontSizeLevel(fontSizeLevel + 1);
+            const song = getCurrentSong();
+            const chordpro = getCurrentChordpro();
+            if (song && chordpro) renderSong(song, chordpro);
+            populateBottomSheet();
+        }
+    });
+
+    sheetChordMode?.addEventListener('change', (e) => {
+        setChordDisplayMode(e.target.value);
+        const song = getCurrentSong();
+        const chordpro = getCurrentChordpro();
+        if (song && chordpro) renderSong(song, chordpro);
+    });
+
+    sheetCompact?.addEventListener('change', (e) => {
+        setCompactMode(e.target.checked);
+        const song = getCurrentSong();
+        const chordpro = getCurrentChordpro();
+        if (song && chordpro) renderSong(song, chordpro);
+    });
+
+    sheetNashville?.addEventListener('change', (e) => {
+        setNashvilleMode(e.target.checked);
+        const song = getCurrentSong();
+        const chordpro = getCurrentChordpro();
+        if (song && chordpro) renderSong(song, chordpro);
+    });
+
+    sheetTwocol?.addEventListener('change', (e) => {
+        setTwoColumnMode(e.target.checked);
+        const song = getCurrentSong();
+        const chordpro = getCurrentChordpro();
+        if (song && chordpro) renderSong(song, chordpro);
+    });
+
+    sheetLabels?.addEventListener('change', (e) => {
+        setShowSectionLabels(e.target.checked);
+        const song = getCurrentSong();
+        const chordpro = getCurrentChordpro();
+        if (song && chordpro) renderSong(song, chordpro);
+    });
+
+    // Bottom sheet handlers
+    function openBottomSheet() {
+        // Populate controls with current values before opening
+        populateBottomSheet();
+        bottomSheet?.classList.remove('hidden');
+        bottomSheetBackdrop?.classList.remove('hidden');
+    }
+
+    function closeBottomSheet() {
+        bottomSheet?.classList.add('hidden');
+        bottomSheetBackdrop?.classList.add('hidden');
+    }
+
+    // Close when clicking backdrop
+    bottomSheetBackdrop?.addEventListener('click', closeBottomSheet);
+
+    // Close when swiping down on handle (simple touch support)
+    const handle = bottomSheet?.querySelector('.bottom-sheet-handle');
+    handle?.addEventListener('click', closeBottomSheet);
+
+    // Bottom sheet action handlers
+    bottomSheet?.querySelectorAll('.sheet-action').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const action = btn.dataset.action;
+            closeBottomSheet();
+
+            switch (action) {
+                case 'lists':
+                    listPickerDropdown?.classList.toggle('hidden');
+                    if (!listPickerDropdown?.classList.contains('hidden')) {
+                        renderListPickerDropdown();
+                    }
+                    break;
+                case 'print':
+                    openPrintView();
+                    break;
+                case 'copy':
+                    handleExport('copy-chordpro');
+                    break;
+                case 'download':
+                    handleExport('download-chordpro');
+                    break;
+                case 'edit':
+                    enterEditMode(getCurrentSong());
+                    break;
+            }
+        });
+    });
+
+    // Make openBottomSheet available globally for song-view.js
+    window.openBottomSheet = openBottomSheet;
+
+    // Mobile song header handlers
+    mobileBackBtn?.addEventListener('click', goBack);
+    mobileOptionsBtn?.addEventListener('click', openBottomSheet);
+
     // Close dropdowns when clicking outside
     document.addEventListener('click', (e) => {
         if (!copyBtn?.contains(e.target) && !copyDropdown?.contains(e.target)) {
@@ -1934,6 +2106,11 @@ init();
 // Exit fullscreen button
 if (exitFullscreenBtn) {
     exitFullscreenBtn.addEventListener('click', exitFullscreen);
+}
+
+// Song view button (open bottom sheet with controls)
+if (songViewBtn) {
+    songViewBtn.addEventListener('click', openSongControls);
 }
 
 // ============================================

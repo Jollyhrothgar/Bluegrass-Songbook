@@ -61,8 +61,8 @@ export function reorderFavoriteItem(fromIndex, toIndex) {
  */
 export function updateFavoritesCount() {
     if (navFavoritesCountEl) {
-        if (favorites.size > 0) {
-            navFavoritesCountEl.textContent = favorites.size;
+        if (favorites.length > 0) {
+            navFavoritesCountEl.textContent = favorites.length;
             navFavoritesCountEl.classList.remove('hidden');
         } else {
             navFavoritesCountEl.classList.add('hidden');
@@ -180,7 +180,7 @@ export function updateSyncUI(status) {
             indicator.className = 'sync-indicator synced';
             const listCount = userLists.length;
             const totalSongs = userLists.reduce((sum, l) => sum + l.songs.length, 0);
-            let syncText = `${favorites.size} favorites`;
+            let syncText = `${favorites.length} favorites`;
             if (listCount > 0) {
                 syncText += `, ${listCount} list${listCount !== 1 ? 's' : ''} (${totalSongs} songs)`;
             }
