@@ -19,7 +19,8 @@ docs/
 │   ├── lists.js        # Custom lists, list picker
 │   ├── editor.js       # Song editor, ChordPro conversion
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
-│   └── supabase-auth.js # Auth, cloud sync, voting
+│   ├── supabase-auth.js # Auth, cloud sync, voting
+│   └── __tests__/      # Vitest unit tests
 ├── css/style.css       # Dark/light themes, responsive layout
 ├── posts/              # Blog posts (markdown)
 └── data/
@@ -171,6 +172,24 @@ function navigateTo(mode) {
 }
 ```
 
+## Testing
+
+```bash
+npm test              # Run unit tests (Vitest)
+npm run test:e2e      # Run E2E tests (Playwright, requires server)
+```
+
+**Unit tests** (`__tests__/`):
+- `chords.test.js` - Key detection, transposition, Nashville numbers
+- `search-core.test.js` - Query parsing, chord/progression filtering
+- `song-view.test.js` - ChordPro parsing
+
+**E2E tests** (`../../e2e/`):
+- `search.spec.js` - Search and filtering flows
+- `song-view.spec.js` - Song display and controls
+- `navigation.spec.js` - Deep links, history
+- `favorites.spec.js` - Favorites and lists
+
 ## Adding a Feature
 
 1. **Identify the right module** - search in `search-core.js`, song display in `song-view.js`, etc.
@@ -180,7 +199,8 @@ function navigateTo(mode) {
 5. **Wire up event listener** in `main.js` init function
 6. **Add UI** in `index.html` if needed
 7. **Style** in `css/style.css`
-8. **Push** - CI will syntax-check all modules
+8. **Test** - Run `npm test` to verify
+9. **Push** - CI will syntax-check and run unit tests
 
 ## Common Patterns
 
