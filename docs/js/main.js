@@ -208,7 +208,8 @@ function pushHistoryState(view, data = {}, replace = false) {
             hash = '#add';
             break;
         case 'favorites':
-            hash = '#favorites';
+            // Favorites is just a list with ID 'favorites'
+            hash = '#list/favorites';
             break;
         case 'list':
             hash = `#list/${data.listId}`;
@@ -320,6 +321,7 @@ function handleDeepLink() {
         pushHistoryState('add-song', {}, true);
         return true;
     } else if (hash === '#favorites') {
+        // Backward compatibility: redirect #favorites to #list/favorites
         trackDeepLink('favorites', hash);
         showView('favorites');
         pushHistoryState('favorites', {}, true);
@@ -328,6 +330,21 @@ function handleDeepLink() {
         const parts = hash.slice(6).split('/');
         const listId = parts[0];
         const songId = parts[1]; // undefined if just #list/{id}
+
+        // Handle favorites as a special list
+        if (listId === 'favorites') {
+            if (songId) {
+                // Deep link to song within favorites: #list/favorites/{songId}
+                trackDeepLink('favorites-song', hash);
+                openSongInFavorites(songId, true);
+            } else {
+                // Deep link to favorites: #list/favorites
+                trackDeepLink('favorites', hash);
+                showView('favorites');
+                pushHistoryState('favorites', {}, true);
+            }
+            return true;
+        }
 
         if (songId) {
             // Deep link to song within list: #list/{uuid}/{songId}
@@ -351,6 +368,26 @@ function handleDeepLink() {
     }
 
     return false;
+}
+
+/**
+ * Open a song within the favorites context (for deep linking)
+ */
+function openSongInFavorites(songId, fromDeepLink = false) {
+    // Get favorites song IDs that exist in allSongs
+    const favSongIds = favorites.filter(id => allSongs.find(s => s.id === id));
+    const songIndex = favSongIds.indexOf(songId);
+
+    // Set up favorites context for prev/next navigation
+    setListContext({
+        listId: 'favorites',
+        listName: 'Favorites',
+        songIds: favSongIds,
+        currentIndex: songIndex >= 0 ? songIndex : 0
+    });
+
+    // Open the song with favorites context
+    openSong(songId, { fromList: true, listId: 'favorites', fromDeepLink });
 }
 
 /**
