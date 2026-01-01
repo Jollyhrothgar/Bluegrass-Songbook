@@ -504,6 +504,9 @@ async function syncListToCloud(list, action) {
     }
 }
 
+// Track sync state to prevent duplicate syncs
+let syncInProgress = false;
+
 /**
  * Full sync: merge localStorage lists with cloud
  * Also migrates old cloud favorites (user_favorites table) to the new list-based system
@@ -512,6 +515,14 @@ export async function performFullListsSync() {
     if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
         return;
     }
+
+    // Prevent duplicate syncs
+    if (syncInProgress) {
+        console.log('[performFullListsSync] sync already in progress, skipping');
+        return;
+    }
+    syncInProgress = true;
+    console.log('[performFullListsSync] starting sync...');
 
     try {
         // Step 1: Migrate old cloud favorites from user_favorites table
@@ -535,9 +546,12 @@ export async function performFullListsSync() {
 
         // Update sync UI to show lists count
         updateSyncUI('synced');
+        console.log('[performFullListsSync] sync complete');
     } catch (err) {
         console.error('Lists sync failed:', err);
         updateSyncUI('error');
+    } finally {
+        syncInProgress = false;
     }
 }
 

@@ -371,15 +371,20 @@ async function renameCloudList(listId, newName) {
 
 // Delete a list
 async function deleteCloudList(listId) {
+    console.log('[deleteCloudList] called with:', listId);
     if (!supabaseClient || !currentUser) {
+        console.log('[deleteCloudList] not logged in');
         return { error: { message: 'Not logged in' } };
     }
 
+    console.log('[deleteCloudList] deleting from user_lists where id =', listId, 'and user_id =', currentUser.id);
     const { error } = await supabaseClient
         .from('user_lists')
         .delete()
-        .eq('id', listId);
+        .eq('id', listId)
+        .eq('user_id', currentUser.id);  // Also match user_id for RLS
 
+    console.log('[deleteCloudList] result - error:', error);
     return { error };
 }
 
