@@ -2427,10 +2427,6 @@ mark {
         transform: translateY(-50%);
     }
 
-    .hints-close {
-        display: none;
-    }
-
     .hints-backdrop {
         display: none !important;
     }
