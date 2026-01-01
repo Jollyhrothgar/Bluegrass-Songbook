@@ -91,7 +91,10 @@ Bluegrass-Songbook/
 │   └── github-project/SKILL.md  # GitHub project management
 │
 ├── ROADMAP.md               # Product vision & phases
-└── tests/                   # pytest test suite
+├── tests/                   # pytest test suite (parser)
+├── docs/js/__tests__/       # Vitest unit tests (frontend)
+├── e2e/                     # Playwright E2E tests
+└── package.json             # Node.js test dependencies
 ```
 
 ## Key Components
@@ -203,4 +206,6 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
 | Write a blog post | `docs/posts/` (then run `./scripts/utility build-posts`) |
 | See product vision | `ROADMAP.md` |
-| Run tests | `uv run pytest` |
+| Run parser tests | `uv run pytest` |
+| Run frontend tests | `npm test` |
+| Run E2E tests | `npm run test:e2e` |
