@@ -883,18 +883,153 @@ h1 {
     background: var(--bg-secondary);
 }
 
-/* Mobile song header - hidden on desktop */
-.mobile-song-header {
-    display: none;
+
+/* Bottom sheet - works on all screen sizes when explicitly opened */
+.bottom-sheet-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 
-/* Bottom sheet - hidden on desktop */
-.bottom-sheet-backdrop {
+.bottom-sheet-backdrop.hidden {
     display: none;
 }
 
 .bottom-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.bottom-sheet.hidden {
     display: none;
+}
+
+.bottom-sheet-handle {
+    width: 40px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin: 12px auto;
+    cursor: pointer;
+}
+
+.bottom-sheet-content {
+    padding: 0 1rem 1.5rem;
+}
+
+.sheet-section {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.sheet-section:last-child {
+    border-bottom: none;
+}
+
+.sheet-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.sheet-label {
+    font-size: 0.95rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.sheet-select {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    min-width: 100px;
+}
+
+.sheet-size-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.sheet-btn {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sheet-btn:hover {
+    background: var(--bg-secondary);
+}
+
+.sheet-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.sheet-checkboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.sheet-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.sheet-checkbox input {
+    width: 18px;
+    height: 18px;
+}
+
+.sheet-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.sheet-action {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 0.5rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.sheet-action:hover {
+    background: var(--bg-secondary);
 }
 
 .back-btn {
@@ -944,6 +1079,26 @@ h1 {
     margin-bottom: 0;
     padding-bottom: var(--space-md);
     border-bottom: 1px solid var(--border);
+}
+
+.header-controls {
+    flex-shrink: 0;
+}
+
+.controls-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.controls-btn:hover {
+    opacity: 0.9;
 }
 
 /* Tags section - full width below header */
@@ -1626,192 +1781,24 @@ h1 {
         padding: 0.4rem 0.6rem;
     }
 
-    /* Hide desktop song header on mobile */
+    /* Mobile adjustments for song header */
     .song-view-header {
-        display: none;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
 
-    /* Show mobile song header */
-    .mobile-song-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.75rem 1rem;
-        background: var(--bg);
-        border-bottom: 1px solid var(--border);
-        position: sticky;
-        top: 0;
-        z-index: 50;
+    .song-actions {
+        flex-wrap: wrap;
     }
 
-    .options-btn {
-        background: var(--accent);
-        color: white;
-        border: none;
-        border-radius: 6px;
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-        font-weight: 500;
-        cursor: pointer;
-    }
-
-    .options-btn:active {
-        opacity: 0.8;
-    }
-
-    /* Hide header controls on mobile - use bottom sheet instead */
-    .header-controls {
-        display: none !important;
-    }
-
-    /* Hide mobile header in fullscreen mode */
-    body.fullscreen-mode .mobile-song-header {
-        display: none;
-    }
-
-    /* Bottom sheet backdrop */
-    .bottom-sheet-backdrop {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.4);
-        z-index: 1100;
-    }
-
-    .bottom-sheet-backdrop:not(.hidden) {
-        display: block;
-    }
-
-    /* Bottom sheet panel */
+    /* Bottom sheet - mobile enhancements (slide-up animation) */
     .bottom-sheet {
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: var(--bg);
-        border-radius: 16px 16px 0 0;
-        z-index: 1101;
         transform: translateY(100%);
         transition: transform 0.3s ease-out;
-        max-height: 70vh;
-        overflow-y: auto;
     }
 
     .bottom-sheet:not(.hidden) {
-        display: block;
         transform: translateY(0);
-    }
-
-    .bottom-sheet-handle {
-        width: 40px;
-        height: 4px;
-        background: var(--border);
-        border-radius: 2px;
-        margin: 12px auto;
-    }
-
-    .bottom-sheet-content {
-        padding: 0 1rem 1.5rem;
-    }
-
-    .sheet-section {
-        padding: 0.75rem 0;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .sheet-section:last-child {
-        border-bottom: none;
-    }
-
-    .sheet-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem 0;
-    }
-
-    .sheet-label {
-        font-size: 0.95rem;
-        color: var(--text);
-        font-weight: 500;
-    }
-
-    .sheet-select {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.95rem;
-        border: 1px solid var(--border);
-        border-radius: 6px;
-        background: var(--bg);
-        color: var(--text);
-        min-width: 100px;
-    }
-
-    .sheet-size-buttons {
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    .sheet-btn {
-        width: 44px;
-        height: 44px;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        background: var(--bg);
-        color: var(--text);
-        font-size: 1.25rem;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .sheet-btn:active {
-        background: var(--bg-secondary);
-    }
-
-    .sheet-checkboxes {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.5rem;
-        padding-top: 0.5rem;
-    }
-
-    .sheet-checkbox {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 0.9rem;
-        color: var(--text);
-        padding: 0.5rem;
-    }
-
-    .sheet-checkbox input {
-        width: 18px;
-        height: 18px;
-    }
-
-    .sheet-actions {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-    }
-
-    .sheet-action {
-        display: block;
-        width: 100%;
-        padding: 0.875rem 0.5rem;
-        background: none;
-        border: none;
-        color: var(--text);
-        font-size: 1rem;
-        text-align: left;
-        cursor: pointer;
-        border-radius: 8px;
-    }
-
-    .sheet-action:active {
-        background: var(--bg-secondary);
     }
 
     /* Mobile song header layout */

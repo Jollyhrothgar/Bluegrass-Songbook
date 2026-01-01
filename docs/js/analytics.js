@@ -159,10 +159,13 @@ export function initAnalytics() {
         }
     });
 
-    // Track session start
+    // Track session start with platform info
+    const isMobile = window.innerWidth <= 600;
     track('session_start', {
         referrer: document.referrer || null,
-        path: window.location.hash || '#'
+        path: window.location.hash || '#',
+        platform: isMobile ? 'mobile' : 'desktop',
+        viewport_width: window.innerWidth
     });
 }
 
@@ -304,4 +307,17 @@ export function trackEditor(mode, songId = null) {
 
 export function trackSubmission(type) {
     track('submission', { type: type });
+}
+
+// Mobile UI tracking
+export function trackBottomSheet(action) {
+    track('bottom_sheet', { action: action });
+}
+
+export function trackTagsExpand(expanded) {
+    track('tags_expand', { expanded: expanded });
+}
+
+export function trackChordMode(mode) {
+    track('chord_mode', { mode: mode });
 }

@@ -40,8 +40,8 @@ import { updateFavoriteButton } from './favorites.js';
 import { updateListPickerButton } from './lists.js';
 import { renderTagBadges, getTagCategory, formatTagName } from './tags.js';
 import {
-    trackSongView, trackTranspose, trackDisplayMode, trackFontSize,
-    trackVersionPicker, trackTagVote, trackTagSuggest, endSongView
+    trackSongView, trackTranspose, trackVersionPicker, trackTagVote,
+    trackTagSuggest, endSongView, trackTagsExpand
 } from './analytics.js';
 
 // DOM element references (set by init)
@@ -663,55 +663,12 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     // Chord view HTML (hide if showing ABC view, or if no chords at all)
     const chordViewClass = showAbcView || !hasChords ? 'hidden' : '';
 
-    // Header controls HTML (all display options)
-    const headerControlsHtml = hasChords ? `
+    // Header controls - single button to open bottom sheet
+    const headerControlsHtml = `
         <div class="header-controls">
-            <div class="header-control-group">
-                <span class="header-control-label">Key</span>
-                <select id="key-select" class="key-select">${keyOptions}</select>
-            </div>
-            <div class="header-control-group">
-                <span class="header-control-label">Size</span>
-                <div class="font-size-buttons">
-                    <button id="font-decrease" class="font-btn" ${fontSizeLevel <= -2 ? 'disabled' : ''}>−</button>
-                    <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
-                </div>
-            </div>
-            <div class="header-control-group">
-                <span class="header-control-label">Chords</span>
-                <select id="chord-mode-select" class="chord-mode-select">
-                    <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All</option>
-                    <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First</option>
-                    <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>None</option>
-                </select>
-            </div>
-            <div class="header-control-group display-dropdown-wrapper">
-                <button id="display-dropdown-btn" class="display-dropdown-btn">Display ▾</button>
-                <div id="display-dropdown" class="display-dropdown hidden">
-                    <label class="display-option" title="Compact layout">
-                        <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
-                        <span>Compact</span>
-                    </label>
-                    <label class="display-option" title="Nashville numbers">
-                        <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
-                        <span>Nashville</span>
-                    </label>
-                    <label class="display-option" title="Two columns">
-                        <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
-                        <span>2-Col</span>
-                    </label>
-                    <label class="display-option" title="Section labels">
-                        <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
-                        <span>Labels</span>
-                    </label>
-                    <label class="display-option" title="Show source">
-                        <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
-                        <span>Source</span>
-                    </label>
-                </div>
-            </div>
+            <button id="controls-btn" class="controls-btn">Options</button>
         </div>
-    ` : '';
+    `;
 
     songContentEl.innerHTML = `
         <div class="song-header">
@@ -823,7 +780,7 @@ function setupRenderOptionsListeners(song, chordpro) {
         });
     }
 
-    // Tags collapse/expand handler (mobile)
+    // Tags collapse/expand handler
     const tagsCollapsed = document.getElementById('tags-collapsed');
     const tagsExpanded = document.getElementById('tags-expanded');
     if (tagsCollapsed && tagsExpanded) {
@@ -831,6 +788,7 @@ function setupRenderOptionsListeners(song, chordpro) {
         tagsCollapsed.addEventListener('click', () => {
             tagsCollapsed.classList.add('hidden');
             tagsExpanded.classList.add('expanded');
+            trackTagsExpand(true);
         });
 
         // Collapse when header is clicked
@@ -839,6 +797,7 @@ function setupRenderOptionsListeners(song, chordpro) {
             tagsHeader.addEventListener('click', () => {
                 tagsExpanded.classList.remove('expanded');
                 tagsCollapsed.classList.remove('hidden');
+                trackTagsExpand(false);
             });
         }
     }
@@ -1036,105 +995,12 @@ function setupRenderOptionsListeners(song, chordpro) {
         });
     }
 
-    const chordModeSelect = document.getElementById('chord-mode-select');
-    if (chordModeSelect) {
-        chordModeSelect.addEventListener('change', (e) => {
-            setChordDisplayMode(e.target.value);
-            if (chordDisplayMode === 'none') setShowChordProSource(false);
-            renderSong(song, chordpro);
-        });
-    }
-
-    const compactCheckbox = document.getElementById('compact-checkbox');
-    if (compactCheckbox) {
-        compactCheckbox.addEventListener('change', (e) => {
-            setCompactMode(e.target.checked);
-            trackDisplayMode('compact', e.target.checked);
-            if (compactMode) setShowChordProSource(false);
-            renderSong(song, chordpro);
-        });
-    }
-
-    const nashvilleCheckbox = document.getElementById('nashville-checkbox');
-    if (nashvilleCheckbox) {
-        nashvilleCheckbox.addEventListener('change', (e) => {
-            setNashvilleMode(e.target.checked);
-            trackDisplayMode('nashville', e.target.checked);
-            if (nashvilleMode) setShowChordProSource(false);
-            renderSong(song, chordpro);
-        });
-    }
-
-    const twocolCheckbox = document.getElementById('twocol-checkbox');
-    if (twocolCheckbox) {
-        twocolCheckbox.addEventListener('change', (e) => {
-            setTwoColumnMode(e.target.checked);
-            if (twoColumnMode) setShowChordProSource(false);
-            renderSong(song, chordpro);
-        });
-    }
-
-    const labelsCheckbox = document.getElementById('labels-checkbox');
-    if (labelsCheckbox) {
-        labelsCheckbox.addEventListener('change', (e) => {
-            setShowSectionLabels(e.target.checked);
-            if (!showSectionLabels) setShowChordProSource(false);
-            renderSong(song, chordpro);
-        });
-    }
-
-    const sourceCheckbox = document.getElementById('source-checkbox');
-    if (sourceCheckbox) {
-        sourceCheckbox.addEventListener('change', (e) => {
-            setShowChordProSource(e.target.checked);
-            if (showChordProSource) {
-                setChordDisplayMode('all');
-                setShowSectionLabels(true);
-                setCompactMode(false);
-                setNashvilleMode(false);
-                setTwoColumnMode(false);
-            }
-            renderSong(song, chordpro);
-        });
-    }
-
-    const fontDecrease = document.getElementById('font-decrease');
-    if (fontDecrease) {
-        fontDecrease.addEventListener('click', () => {
-            if (fontSizeLevel > -2) {
-                const newLevel = fontSizeLevel - 1;
-                setFontSizeLevel(newLevel);
-                trackFontSize('decrease', newLevel);
-                renderSong(song, chordpro);
-            }
-        });
-    }
-
-    const fontIncrease = document.getElementById('font-increase');
-    if (fontIncrease) {
-        fontIncrease.addEventListener('click', () => {
-            if (fontSizeLevel < 2) {
-                const newLevel = fontSizeLevel + 1;
-                setFontSizeLevel(newLevel);
-                trackFontSize('increase', newLevel);
-                renderSong(song, chordpro);
-            }
-        });
-    }
-
-    // Display dropdown toggle
-    const displayDropdownBtn = document.getElementById('display-dropdown-btn');
-    const displayDropdown = document.getElementById('display-dropdown');
-    if (displayDropdownBtn && displayDropdown) {
-        displayDropdownBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            displayDropdown.classList.toggle('hidden');
-        });
-
-        // Close when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!displayDropdown.contains(e.target) && !displayDropdownBtn.contains(e.target)) {
-                displayDropdown.classList.add('hidden');
+    // Controls button opens bottom sheet
+    const controlsBtn = document.getElementById('controls-btn');
+    if (controlsBtn) {
+        controlsBtn.addEventListener('click', () => {
+            if (typeof window.openBottomSheet === 'function') {
+                window.openBottomSheet();
             }
         });
     }

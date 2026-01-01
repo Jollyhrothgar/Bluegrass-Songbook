@@ -25,7 +25,7 @@ import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } 
 import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro } from './editor.js';
 import { escapeHtml } from './utils.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions } from './chords.js';
-import { initAnalytics, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor } from './analytics.js';
+import { initAnalytics, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -85,10 +85,6 @@ const copyListBtn = document.getElementById('copy-list-btn');
 // Bottom sheet
 const bottomSheet = document.getElementById('bottom-sheet');
 const bottomSheetBackdrop = document.getElementById('bottom-sheet-backdrop');
-
-// Mobile song header
-const mobileBackBtn = document.getElementById('mobile-back-btn');
-const mobileOptionsBtn = document.getElementById('mobile-options-btn');
 
 // Lists modal
 const listsModal = document.getElementById('lists-modal');
@@ -2006,6 +2002,7 @@ function init() {
         populateBottomSheet();
         bottomSheet?.classList.remove('hidden');
         bottomSheetBackdrop?.classList.remove('hidden');
+        trackBottomSheet('open');
     }
 
     function closeBottomSheet() {
@@ -2051,10 +2048,6 @@ function init() {
 
     // Make openBottomSheet available globally for song-view.js
     window.openBottomSheet = openBottomSheet;
-
-    // Mobile song header handlers
-    mobileBackBtn?.addEventListener('click', goBack);
-    mobileOptionsBtn?.addEventListener('click', openBottomSheet);
 
     // Close dropdowns when clicking outside
     document.addEventListener('click', (e) => {
