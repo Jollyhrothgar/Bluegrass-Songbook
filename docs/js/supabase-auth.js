@@ -370,21 +370,39 @@ async function renameCloudList(listId, newName) {
 }
 
 // Delete a list
-async function deleteCloudList(listId) {
-    console.log('[deleteCloudList] called with:', listId);
+async function deleteCloudList(listId, listName = null) {
+    console.log('[deleteCloudList] called with id:', listId, 'name:', listName);
     if (!supabaseClient || !currentUser) {
         console.log('[deleteCloudList] not logged in');
         return { error: { message: 'Not logged in' } };
     }
 
-    console.log('[deleteCloudList] deleting from user_lists where id =', listId, 'and user_id =', currentUser.id);
-    const { error } = await supabaseClient
+    // Try to delete by ID first
+    console.log('[deleteCloudList] deleting by id =', listId);
+    let { error, count } = await supabaseClient
         .from('user_lists')
         .delete()
         .eq('id', listId)
-        .eq('user_id', currentUser.id);  // Also match user_id for RLS
+        .eq('user_id', currentUser.id)
+        .select();  // Use select to see if anything was deleted
 
-    console.log('[deleteCloudList] result - error:', error);
+    console.log('[deleteCloudList] delete by id result - error:', error, 'deleted:', count?.length || 0);
+
+    // If nothing was deleted and we have a name, try deleting by name
+    // This handles the case where the local cloudId is stale/incorrect
+    if (!error && (!count || count.length === 0) && listName) {
+        console.log('[deleteCloudList] no rows deleted by id, trying by name:', listName);
+        const result = await supabaseClient
+            .from('user_lists')
+            .delete()
+            .eq('name', listName)
+            .eq('user_id', currentUser.id)
+            .select();
+        error = result.error;
+        count = result.count;
+        console.log('[deleteCloudList] delete by name result - error:', error, 'deleted:', result.data?.length || 0);
+    }
+
     return { error };
 }
 

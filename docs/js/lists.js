@@ -531,8 +531,9 @@ async function syncListToCloud(list, action) {
                 }
                 break;
             case 'delete':
-                if (list.cloudId) {
-                    const result = await SupabaseAuth.deleteCloudList(list.cloudId);
+                if (list.cloudId || list.name) {
+                    // Pass both cloudId and name - if ID doesn't match, delete by name as fallback
+                    const result = await SupabaseAuth.deleteCloudList(list.cloudId, list.name);
                     if (result.error) {
                         console.error('Failed to delete cloud list:', result.error);
                     }
