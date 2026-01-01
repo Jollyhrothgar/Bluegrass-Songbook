@@ -25,7 +25,7 @@ import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } 
 import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro } from './editor.js';
 import { escapeHtml } from './utils.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions } from './chords.js';
-import { initAnalytics, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
+import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
 import { initFlags, openFlagModal } from './flags.js';
 
 // ============================================
@@ -559,6 +559,7 @@ function submitContactForm() {
     if (!feedback) return;
 
     const title = contactModalTitle?.textContent || 'Feedback';
+    track('feedback_submit', { type: title });
     const subject = encodeURIComponent(title);
     const body = encodeURIComponent(feedback);
     window.open(`mailto:bluegrassbook.feedback@gmail.com?subject=${subject}&body=${body}`);
