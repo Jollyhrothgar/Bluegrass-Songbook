@@ -147,12 +147,21 @@ export async function performFullSync() {
             throw error;
         }
 
-        // Update local favorites with merged set
-        setFavorites(new Set(merged));
-        saveFavorites();
+        // Safety check: don't wipe out local favorites if sync returns empty
+        // but we had local favorites (indicates a sync issue, not empty favorites)
+        let effectiveFavorites = merged;
+        if (merged.length === 0 && localFavs.length > 0) {
+            console.warn('Sync returned empty but had local favorites - keeping local');
+            effectiveFavorites = localFavs;
+            // Don't update localStorage, keep local favorites
+        } else {
+            // Update local favorites with merged set
+            setFavorites(merged);
+            saveFavorites();
+        }
 
         // Get or create the shareable favorites list and store its UUID
-        const { data: cloudId } = await SupabaseAuth.getOrCreateFavoritesList(merged);
+        const { data: cloudId } = await SupabaseAuth.getOrCreateFavoritesList(effectiveFavorites);
         if (cloudId) {
             setFavoritesCloudId(cloudId);
         }
