@@ -312,7 +312,7 @@ async function createCloudList(name) {
         .select('*')
         .eq('user_id', currentUser.id)
         .eq('name', name)
-        .single();
+        .maybeSingle();  // Use maybeSingle to avoid 406 when not found
 
     if (existingList) {
         // List already exists, return it
