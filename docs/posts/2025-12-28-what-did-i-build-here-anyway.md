@@ -1,6 +1,6 @@
 ---
 title: What Did I Build Here Anyway?
-date: 2024-12-28
+date: 2025-12-28
 summary: Summary of features built and roadmap
 ---
 

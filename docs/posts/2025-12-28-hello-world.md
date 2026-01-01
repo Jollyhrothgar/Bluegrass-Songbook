@@ -1,6 +1,6 @@
 ---
 title: Welcome to the Dev Blog
-date: 2024-12-28
+date: 2025-12-28
 summary: Introducing the BluegrassBook dev blog where I'll share updates about new features and what's coming next.
 ---
 

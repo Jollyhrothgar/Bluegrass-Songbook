@@ -1,14 +1,20 @@
 [
   {
-    "slug": "2024-12-28-what-did-i-build-here-anyway",
+    "slug": "2025-12-31-new-feature-drops",
+    "title": "New Feature Drops",
+    "date": "2025-12-31",
+    "summary": "Shareable setlists, drag-drop reordering, focus mode, and ideas for more content sources."
+  },
+  {
+    "slug": "2025-12-28-what-did-i-build-here-anyway",
     "title": "What Did I Build Here Anyway?",
-    "date": "2024-12-28",
+    "date": "2025-12-28",
     "summary": "Summary of features built and roadmap"
   },
   {
-    "slug": "2024-12-28-hello-world",
+    "slug": "2025-12-28-hello-world",
     "title": "Welcome to the Dev Blog",
-    "date": "2024-12-28",
+    "date": "2025-12-28",
     "summary": "Introducing the BluegrassBook dev blog where I'll share updates about new features and what's coming next."
   }
 ]
