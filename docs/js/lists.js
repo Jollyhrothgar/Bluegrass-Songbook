@@ -18,8 +18,38 @@ const FAVORITES_LIST_NAME = 'Favorites';
 let viewingListId = null;
 let viewingPublicList = null;  // { list, songs, isOwner } - null if viewing own list
 
-// Track lists deleted during this session to prevent sync from resurrecting them
-const deletedListIds = new Set();
+// Track deleted list IDs to prevent sync from resurrecting them (persisted to localStorage)
+const DELETED_LISTS_KEY = 'songbook-deleted-lists';
+let deletedListIds = new Set();
+
+function loadDeletedListIds() {
+    try {
+        const saved = localStorage.getItem(DELETED_LISTS_KEY);
+        if (saved) {
+            deletedListIds = new Set(JSON.parse(saved));
+            console.log('[loadDeletedListIds] loaded:', [...deletedListIds]);
+        }
+    } catch (e) {
+        console.error('Failed to load deleted list IDs:', e);
+    }
+}
+
+function saveDeletedListIds() {
+    try {
+        localStorage.setItem(DELETED_LISTS_KEY, JSON.stringify([...deletedListIds]));
+    } catch (e) {
+        console.error('Failed to save deleted list IDs:', e);
+    }
+}
+
+function addDeletedListId(id) {
+    deletedListIds.add(id);
+    saveDeletedListIds();
+    console.log('[addDeletedListId] added:', id, 'total:', [...deletedListIds]);
+}
+
+// Load deleted IDs on module initialization
+loadDeletedListIds();
 
 // DOM element references (set by init)
 let navListsContainerEl = null;
@@ -376,11 +406,11 @@ export async function deleteList(listId) {
     const list = userLists[index];
     console.log('[deleteList] removing:', list.name, 'cloudId:', list.cloudId);
 
-    // Track deleted IDs to prevent sync from resurrecting this list
+    // Track deleted IDs to prevent sync from resurrecting this list (persisted to localStorage)
     if (list.cloudId) {
-        deletedListIds.add(list.cloudId);
+        addDeletedListId(list.cloudId);
     }
-    deletedListIds.add(listId);
+    addDeletedListId(listId);
 
     userLists.splice(index, 1);
     saveLists();
@@ -550,6 +580,23 @@ export async function performFullListsSync() {
         setUserLists(processedLists);
         saveLists();
         updateFavoritesCount();
+
+        // Cleanup: remove deleted IDs that are confirmed gone from cloud
+        // Keep only IDs that were in cloud but got filtered out (recently deleted)
+        const cloudIds = new Set(merged.map(l => l.id));
+        const processedIds = new Set(processedLists.map(l => l.cloudId).filter(Boolean));
+        const stillNeeded = new Set();
+        for (const id of deletedListIds) {
+            // Keep ID if it was in cloud results but filtered out (meaning we need to keep blocking it)
+            if (cloudIds.has(id) && !processedIds.has(id)) {
+                stillNeeded.add(id);
+            }
+        }
+        if (stillNeeded.size !== deletedListIds.size) {
+            deletedListIds = stillNeeded;
+            saveDeletedListIds();
+            console.log('[performFullListsSync] cleaned up deleted IDs, remaining:', [...deletedListIds]);
+        }
 
         // Enable cloud sync for future operations
         setCloudSyncEnabled(true);
