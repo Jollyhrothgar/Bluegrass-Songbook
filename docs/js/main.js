@@ -26,6 +26,7 @@ import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro 
 import { escapeHtml } from './utils.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions } from './chords.js';
 import { initAnalytics, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
+import { initFlags, openFlagModal } from './flags.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -1615,6 +1616,9 @@ function init() {
     // Initialize analytics (early, before other modules)
     initAnalytics();
 
+    // Initialize flags module
+    initFlags();
+
     // Initialize modules
     initFavorites({
         navFavorites,
@@ -2041,6 +2045,12 @@ function init() {
                     break;
                 case 'edit':
                     enterEditMode(getCurrentSong());
+                    break;
+                case 'flag':
+                    const song = getCurrentSong();
+                    if (song) {
+                        openFlagModal(song.id);
+                    }
                     break;
             }
         });

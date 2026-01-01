@@ -43,6 +43,7 @@ import {
     trackSongView, trackTranspose, trackVersionPicker, trackTagVote,
     trackTagSuggest, endSongView, trackTagsExpand
 } from './analytics.js';
+import { openFlagModal } from './flags.js';
 
 // DOM element references (set by init)
 let songViewEl = null;
@@ -663,9 +664,10 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     // Chord view HTML (hide if showing ABC view, or if no chords at all)
     const chordViewClass = showAbcView || !hasChords ? 'hidden' : '';
 
-    // Header controls - single button to open bottom sheet
+    // Header controls - Options and Flag buttons
     const headerControlsHtml = `
         <div class="header-controls">
+            <button id="flag-btn" class="flag-btn" title="Report an issue">Flag</button>
             <button id="controls-btn" class="controls-btn">Options</button>
         </div>
     `;
@@ -1002,6 +1004,14 @@ function setupRenderOptionsListeners(song, chordpro) {
             if (typeof window.openBottomSheet === 'function') {
                 window.openBottomSheet();
             }
+        });
+    }
+
+    // Flag button opens flag modal
+    const flagBtn = document.getElementById('flag-btn');
+    if (flagBtn) {
+        flagBtn.addEventListener('click', () => {
+            openFlagModal(song.id);
         });
     }
 }
