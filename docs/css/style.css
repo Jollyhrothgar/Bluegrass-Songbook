@@ -410,7 +410,8 @@ h1 {
     font-size: 0.875rem;
 }
 
-.print-list-btn {
+.print-list-btn,
+.share-list-btn {
     padding: 0.4rem 0.75rem;
     font-size: 0.8rem;
     background: var(--bg-secondary);
@@ -421,7 +422,8 @@ h1 {
     transition: background 0.2s, border-color 0.2s;
 }
 
-.print-list-btn:hover {
+.print-list-btn:hover,
+.share-list-btn:hover {
     background: var(--bg);
     border-color: var(--accent);
 }

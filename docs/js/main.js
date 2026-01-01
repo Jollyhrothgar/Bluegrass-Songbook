@@ -15,11 +15,12 @@ import {
     chordDisplayMode, setChordDisplayMode,
     showSectionLabels, setShowSectionLabels,
     twoColumnMode, setTwoColumnMode,
-    fontSizeLevel, setFontSizeLevel, FONT_SIZES
+    fontSizeLevel, setFontSizeLevel, FONT_SIZES,
+    setListContext
 } from './state.js';
 import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import { initFavorites, performFullSync, updateSyncUI, showFavorites, hideFavorites } from './favorites.js';
-import { initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync, clearListView, renderListsModal, createList, addSongToList, getViewingListId, showListView, copyCurrentList } from './lists.js';
+import { initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync, clearListView, renderListsModal, createList, addSongToList, getViewingListId, showListView, copyCurrentList, fetchListData } from './lists.js';
 import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro } from './editor.js';
@@ -188,7 +189,7 @@ function toggleTheme() {
 // HISTORY MANAGEMENT
 // ============================================
 
-function pushHistoryState(view, data = {}) {
+function pushHistoryState(view, data = {}, replace = false) {
     if (!historyInitialized) return;
 
     let hash = '';
@@ -196,7 +197,12 @@ function pushHistoryState(view, data = {}) {
 
     switch (view) {
         case 'song':
-            hash = `#song/${data.songId}`;
+            // If viewing song within a list context, include list ID in URL
+            if (data.listId) {
+                hash = `#list/${data.listId}/${data.songId}`;
+            } else {
+                hash = `#song/${data.songId}`;
+            }
             break;
         case 'add-song':
             hash = '#add';
@@ -213,7 +219,12 @@ function pushHistoryState(view, data = {}) {
             break;
     }
 
-    history.pushState(state, '', hash || window.location.pathname);
+    const url = hash || window.location.pathname;
+    if (replace) {
+        history.replaceState(state, '', url);
+    } else {
+        history.pushState(state, '', url);
+    }
 }
 
 function handleHistoryNavigation(state) {
@@ -295,36 +306,76 @@ function handleDeepLink() {
     const hash = window.location.hash;
     if (!hash) return false;
 
+    // Use replace=true for deep links to avoid duplicate history entries
+    // (the URL is already set from the initial page load)
+
     if (hash.startsWith('#song/')) {
         const songId = hash.slice(6);
         trackDeepLink('song', hash);
-        openSong(songId);
+        openSong(songId, { fromDeepLink: true });
         return true;
     } else if (hash === '#add') {
         trackDeepLink('add', hash);
         showView('add-song');
-        pushHistoryState('add-song');
+        pushHistoryState('add-song', {}, true);
         return true;
     } else if (hash === '#favorites') {
         trackDeepLink('favorites', hash);
         showView('favorites');
-        pushHistoryState('favorites');
+        pushHistoryState('favorites', {}, true);
         return true;
     } else if (hash.startsWith('#list/')) {
-        const listId = hash.slice(6);
-        trackDeepLink('list', hash);
-        showListView(listId);
-        pushHistoryState('list', { listId });
+        const parts = hash.slice(6).split('/');
+        const listId = parts[0];
+        const songId = parts[1]; // undefined if just #list/{id}
+
+        if (songId) {
+            // Deep link to song within list: #list/{uuid}/{songId}
+            trackDeepLink('list-song', hash);
+            // First load the list to set up context, then open the song
+            openSongInList(listId, songId, true);
+        } else {
+            // Deep link to list: #list/{uuid}
+            trackDeepLink('list', hash);
+            showListView(listId);
+            pushHistoryState('list', { listId }, true);
+        }
         return true;
     } else if (hash.startsWith('#search/')) {
         const query = decodeURIComponent(hash.slice(8));
         trackDeepLink('search', hash);
         searchInput.value = query;
         search(query);
+        pushHistoryState('search', { query }, true);
         return true;
     }
 
     return false;
+}
+
+/**
+ * Open a song within a list context (for deep linking)
+ */
+async function openSongInList(listId, songId, fromDeepLink = false) {
+    const listData = await fetchListData(listId);
+
+    if (!listData) {
+        // List not found - fall back to opening song without context
+        openSong(songId, { fromDeepLink });
+        return;
+    }
+
+    // Set up list context for prev/next navigation
+    const songIndex = listData.songs.indexOf(songId);
+    setListContext({
+        listId,
+        listName: listData.name,
+        songIds: listData.songs,
+        currentIndex: songIndex >= 0 ? songIndex : 0
+    });
+
+    // Open the song with list context
+    openSong(songId, { fromList: true, listId, fromDeepLink });
 }
 
 // ============================================

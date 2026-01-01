@@ -1131,10 +1131,13 @@ function setupAbcControlListeners(song, chordpro, abcContent) {
 export async function openSong(songId, options = {}) {
     if (!songViewEl || !resultsDivEl) return;
 
-    const { fromList = false, fromHistory = false } = options;
+    const { fromList = false, fromHistory = false, listId = null, fromDeepLink = false } = options;
 
     if (pushHistoryStateFn && !fromHistory) {
-        pushHistoryStateFn('song', { songId });
+        // Include listId in URL if we're in a list context
+        const effectiveListId = listId || (listContext ? listContext.listId : null);
+        // Use replace for deep links to avoid duplicate history entries
+        pushHistoryStateFn('song', { songId, listId: effectiveListId }, fromDeepLink);
     }
 
     songViewEl.classList.remove('hidden');

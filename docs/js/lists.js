@@ -30,6 +30,7 @@ let favoritesCheckboxEl = null;
 let listPickerBtnEl = null;
 let listPickerDropdownEl = null;
 let printListBtnEl = null;
+let shareListBtnEl = null;
 
 // Callbacks (set by init)
 let renderResultsFn = null;
@@ -433,6 +434,13 @@ function renderListViewUI(listName, songIds, isOwner) {
     // Show print list button
     if (printListBtnEl) printListBtnEl.classList.remove('hidden');
 
+    // Show share list button (only for cloud lists with UUID)
+    if (shareListBtnEl) {
+        // Show share button if this is a cloud list (has UUID format)
+        const isCloudList = viewingListId && viewingListId.includes('-');
+        shareListBtnEl.classList.toggle('hidden', !isCloudList);
+    }
+
     // Show/hide copy list button
     const copyListBtn = document.getElementById('copy-list-btn');
     if (copyListBtn) {
@@ -452,8 +460,9 @@ export function clearListView() {
             btn.classList.remove('active');
         });
     }
-    // Hide print list button and copy list button
+    // Hide print list button, share button, and copy list button
     if (printListBtnEl) printListBtnEl.classList.add('hidden');
+    if (shareListBtnEl) shareListBtnEl.classList.add('hidden');
     const copyListBtn = document.getElementById('copy-list-btn');
     if (copyListBtn) copyListBtn.classList.add('hidden');
 }
@@ -504,6 +513,42 @@ export async function copyCurrentList() {
  */
 export function getViewingListId() {
     return viewingListId;
+}
+
+/**
+ * Fetch list data without rendering
+ * @returns {Promise<{name: string, songs: string[], isOwner: boolean} | null>}
+ */
+export async function fetchListData(listId) {
+    // First check if this is a local list
+    const localList = userLists.find(l => l.id === listId);
+
+    if (localList) {
+        return {
+            name: localList.name,
+            songs: localList.songs,
+            isOwner: true
+        };
+    }
+
+    // Not a local list - try to fetch as a public list
+    if (typeof SupabaseAuth === 'undefined') {
+        return null;
+    }
+
+    const { data, error } = await SupabaseAuth.fetchPublicList(listId);
+    if (error || !data || !data.list) {
+        return null;
+    }
+
+    const currentUser = SupabaseAuth.getUser();
+    const isOwner = currentUser && data.list.user_id === currentUser.id;
+
+    return {
+        name: data.list.name,
+        songs: data.songs,
+        isOwner
+    };
 }
 
 /**
@@ -743,9 +788,29 @@ export function initLists(options) {
     listPickerBtnEl = listPickerBtn;
     listPickerDropdownEl = listPickerDropdown;
     printListBtnEl = printListBtn;
+    shareListBtnEl = document.getElementById('share-list-btn');
     renderResultsFn = renderResults;
     closeSidebarFn = closeSidebar;
     pushHistoryStateFn = pushHistoryState;
+
+    // Share list button - copy URL to clipboard
+    shareListBtnEl?.addEventListener('click', async () => {
+        if (!viewingListId) return;
+
+        const shareUrl = `${window.location.origin}${window.location.pathname}#list/${viewingListId}`;
+
+        try {
+            await navigator.clipboard.writeText(shareUrl);
+            const originalText = shareListBtnEl.textContent;
+            shareListBtnEl.textContent = 'Copied!';
+            setTimeout(() => {
+                shareListBtnEl.textContent = originalText;
+            }, 2000);
+        } catch (err) {
+            // Fallback for older browsers
+            prompt('Copy this link:', shareUrl);
+        }
+    });
 
     // Load from localStorage
     loadLists();
