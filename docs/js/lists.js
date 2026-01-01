@@ -13,6 +13,7 @@ import { trackListAction } from './analytics.js';
 
 // Module-level state
 let viewingListId = null;
+let viewingPublicList = null;  // { list, songs, isOwner } - null if viewing own list
 
 // DOM element references (set by init)
 let navListsContainerEl = null;
@@ -27,11 +28,13 @@ let listsContainerEl = null;
 let customListsContainerEl = null;
 let favoritesCheckboxEl = null;
 let listPickerBtnEl = null;
+let listPickerDropdownEl = null;
 let printListBtnEl = null;
 
 // Callbacks (set by init)
 let renderResultsFn = null;
 let closeSidebarFn = null;
+let pushHistoryStateFn = null;
 
 // Floating result picker state
 let activeResultPicker = null;
@@ -296,19 +299,85 @@ export function renderSidebarLists() {
             <span class="nav-label">${escapeHtml(list.name)}</span>
             ${list.songs.length > 0 ? `<span class="nav-badge">${list.songs.length}</span>` : ''}
         `;
-        btn.addEventListener('click', () => showListView(list.id));
+        btn.addEventListener('click', () => {
+            showListView(list.id);
+            if (pushHistoryStateFn) {
+                pushHistoryStateFn('list', { listId: list.id });
+            }
+        });
         navListsContainerEl.appendChild(btn);
     });
 }
 
 /**
- * Show songs in a specific list
+ * Show songs in a specific list (local or public)
  */
-export function showListView(listId) {
-    const list = userLists.find(l => l.id === listId);
-    if (!list) return;
+export async function showListView(listId) {
+    // First check if this is a local list
+    const localList = userLists.find(l => l.id === listId);
+
+    if (localList) {
+        // It's a local list - show it normally
+        viewingListId = listId;
+        viewingPublicList = null;
+        renderListViewUI(localList.name, localList.songs, true);
+        return;
+    }
+
+    // Not a local list - try to fetch as a public list
+    if (typeof SupabaseAuth === 'undefined') {
+        showListNotFound();
+        return;
+    }
+
+    const { data, error } = await SupabaseAuth.fetchPublicList(listId);
+    if (error || !data || !data.list) {
+        showListNotFound();
+        return;
+    }
+
+    // Check if current user owns this list
+    const currentUser = SupabaseAuth.getUser();
+    const isOwner = currentUser && data.list.user_id === currentUser.id;
 
     viewingListId = listId;
+    viewingPublicList = {
+        list: data.list,
+        songs: data.songs,
+        isOwner
+    };
+
+    renderListViewUI(data.list.name, data.songs, isOwner);
+}
+
+/**
+ * Show "list not found" message
+ */
+function showListNotFound() {
+    viewingListId = null;
+    viewingPublicList = null;
+
+    if (searchStatsEl) {
+        searchStatsEl.textContent = 'List not found';
+    }
+    if (resultsDivEl) {
+        resultsDivEl.innerHTML = '<p class="no-results">This list doesn\'t exist or has been deleted.</p>';
+    }
+
+    // Show search container/results
+    const searchContainer = document.querySelector('.search-container');
+    const editorPanel = document.getElementById('editor-panel');
+    if (searchContainer) searchContainer.classList.remove('hidden');
+    if (resultsDivEl) resultsDivEl.classList.remove('hidden');
+    if (editorPanel) editorPanel.classList.add('hidden');
+    if (songViewEl) songViewEl.classList.add('hidden');
+    if (printListBtnEl) printListBtnEl.classList.add('hidden');
+}
+
+/**
+ * Render the list view UI (shared by local and public lists)
+ */
+function renderListViewUI(listName, songIds, isOwner) {
     setShowingFavorites(false);
     if (closeSidebarFn) closeSidebarFn();
 
@@ -317,29 +386,34 @@ export function showListView(listId) {
     if (navFavoritesEl) navFavoritesEl.classList.remove('active');
     if (navAddSongEl) navAddSongEl.classList.remove('active');
 
-    // Update sidebar list buttons
+    // Update sidebar list buttons (only for local lists)
     if (navListsContainerEl) {
         navListsContainerEl.querySelectorAll('.nav-item').forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.listId === listId);
+            btn.classList.toggle('active', btn.dataset.listId === viewingListId && !viewingPublicList);
         });
     }
 
     // Show the list songs (preserve order from the list)
-    const listSongIds = list.songs;
-    const listSongs = listSongIds
+    const listSongs = songIds
         .map(id => allSongs.find(s => s.id === id))
         .filter(Boolean);
 
     // Set list context for navigation
     setListContext({
-        listId: list.id,
-        listName: list.name,
-        songIds: listSongIds,
+        listId: viewingListId,
+        listName: listName,
+        songIds: songIds,
         currentIndex: -1  // Will be set when a song is opened
     });
 
+    // Build status text with "Copy to My Lists" button for non-owners
+    let statusHtml = `${escapeHtml(listName)}: ${listSongs.length} song${listSongs.length !== 1 ? 's' : ''}`;
+    if (viewingPublicList && !isOwner) {
+        statusHtml += ' <span class="shared-list-badge">Shared List</span>';
+    }
+
     if (searchStatsEl) {
-        searchStatsEl.textContent = `${list.name}: ${listSongs.length} song${listSongs.length !== 1 ? 's' : ''}`;
+        searchStatsEl.innerHTML = statusHtml;
     }
     if (searchInputEl) {
         searchInputEl.value = '';
@@ -358,6 +432,12 @@ export function showListView(listId) {
 
     // Show print list button
     if (printListBtnEl) printListBtnEl.classList.remove('hidden');
+
+    // Show/hide copy list button
+    const copyListBtn = document.getElementById('copy-list-btn');
+    if (copyListBtn) {
+        copyListBtn.classList.toggle('hidden', isOwner || !viewingPublicList);
+    }
 }
 
 /**
@@ -365,14 +445,58 @@ export function showListView(listId) {
  */
 export function clearListView() {
     viewingListId = null;
+    viewingPublicList = null;
     setListContext(null);
     if (navListsContainerEl) {
         navListsContainerEl.querySelectorAll('.nav-item').forEach(btn => {
             btn.classList.remove('active');
         });
     }
-    // Hide print list button
+    // Hide print list button and copy list button
     if (printListBtnEl) printListBtnEl.classList.add('hidden');
+    const copyListBtn = document.getElementById('copy-list-btn');
+    if (copyListBtn) copyListBtn.classList.add('hidden');
+}
+
+/**
+ * Check if currently viewing own list (or any local list)
+ */
+export function isViewingOwnList() {
+    if (!viewingListId) return false;
+    if (viewingPublicList) return viewingPublicList.isOwner;
+    return true;  // Local list = own list
+}
+
+/**
+ * Copy current public list to user's own lists
+ */
+export async function copyCurrentList() {
+    if (!viewingPublicList || !viewingListId) {
+        return { error: { message: 'No public list to copy' } };
+    }
+
+    if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+        return { error: { message: 'Please sign in to copy lists' } };
+    }
+
+    const listName = viewingPublicList.list.name;
+    const { data, error } = await SupabaseAuth.copyListToOwn(viewingListId, listName);
+
+    if (error) {
+        return { error };
+    }
+
+    // Add to local userLists
+    const newLocalList = {
+        id: data.id,
+        name: data.name,
+        songs: data.songs,
+        cloudId: data.id
+    };
+    userLists.push(newLocalList);
+    saveLists();
+
+    return { data: newLocalList, error: null };
 }
 
 /**
@@ -481,6 +605,9 @@ export function showResultListPicker(btn, songId) {
 
         // Update the button appearance
         updateResultListButton(btn, songId);
+
+        // Close picker after selection
+        closeResultListPicker();
     });
 
     // Handle create new list
@@ -595,9 +722,11 @@ export function initLists(options) {
         customListsContainer,
         favoritesCheckbox,
         listPickerBtn,
+        listPickerDropdown,
         printListBtn,
         renderResults,
-        closeSidebar
+        closeSidebar,
+        pushHistoryState
     } = options;
 
     navListsContainerEl = navListsContainer;
@@ -612,13 +741,35 @@ export function initLists(options) {
     customListsContainerEl = customListsContainer;
     favoritesCheckboxEl = favoritesCheckbox;
     listPickerBtnEl = listPickerBtn;
+    listPickerDropdownEl = listPickerDropdown;
     printListBtnEl = printListBtn;
     renderResultsFn = renderResults;
     closeSidebarFn = closeSidebar;
+    pushHistoryStateFn = pushHistoryState;
 
     // Load from localStorage
     loadLists();
     renderSidebarLists();
+
+    // Handle checkbox changes in the song view list picker (event delegation)
+    if (listPickerDropdownEl) {
+        listPickerDropdownEl.addEventListener('change', (e) => {
+            const checkbox = e.target;
+            if (checkbox.type !== 'checkbox' || !currentSong) return;
+
+            if (checkbox.id === 'favorites-checkbox') {
+                toggleFavorite(currentSong.id);
+            } else if (checkbox.dataset.listId) {
+                const listId = checkbox.dataset.listId;
+                if (checkbox.checked) {
+                    addSongToList(listId, currentSong.id);
+                } else {
+                    removeSongFromList(listId, currentSong.id);
+                }
+            }
+            updateListPickerButton();
+        });
+    }
 
     // Close result picker when clicking outside
     document.addEventListener('click', (e) => {

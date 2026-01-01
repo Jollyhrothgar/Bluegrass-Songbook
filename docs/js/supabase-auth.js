@@ -337,6 +337,66 @@ async function removeFromCloudList(listId, songId) {
     return { error };
 }
 
+// Fetch a public list by ID (works for any user, not just owner)
+async function fetchPublicList(listId) {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Supabase not initialized' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('get_public_list', {
+            p_list_id: listId
+        });
+
+        if (error) {
+            console.error('Error fetching public list:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error fetching public list:', err);
+        return { data: null, error: err };
+    }
+}
+
+// Copy a public list to user's own lists
+async function copyListToOwn(listId, newName) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    // Fetch the source list
+    const { data: sourceList, error: fetchError } = await fetchPublicList(listId);
+    if (fetchError || !sourceList) {
+        return { error: fetchError || { message: 'Could not fetch list' } };
+    }
+
+    // Create the new list
+    const { data: newList, error: createError } = await createCloudList(newName || sourceList.list.name);
+    if (createError) {
+        return { error: createError };
+    }
+
+    // Add all songs to the new list
+    for (const songId of sourceList.songs) {
+        await addToCloudList(newList.id, songId);
+    }
+
+    return {
+        data: {
+            id: newList.id,
+            name: newName || sourceList.list.name,
+            songs: sourceList.songs
+        },
+        error: null
+    };
+}
+
 // Sync local lists to cloud (merge strategy)
 async function syncListsToCloud(localLists) {
     if (!supabaseClient || !currentUser) {
@@ -733,6 +793,8 @@ window.SupabaseAuth = {
     syncFavoritesToCloud,
     // Lists
     fetchCloudLists,
+    fetchPublicList,
+    copyListToOwn,
     createCloudList,
     renameCloudList,
     deleteCloudList,

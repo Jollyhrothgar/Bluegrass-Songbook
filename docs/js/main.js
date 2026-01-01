@@ -14,7 +14,7 @@ import {
 } from './state.js';
 import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import { initFavorites, performFullSync, updateSyncUI, showFavorites, hideFavorites } from './favorites.js';
-import { initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync, clearListView, renderListsModal, createList, addSongToList, getViewingListId } from './lists.js';
+import { initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync, clearListView, renderListsModal, createList, addSongToList, getViewingListId, showListView, copyCurrentList } from './lists.js';
 import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, navigatePrev, navigateNext } from './song-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro } from './editor.js';
@@ -73,6 +73,7 @@ const navListName = document.getElementById('nav-list-name');
 
 // Print list button
 const printListBtn = document.getElementById('print-list-btn');
+const copyListBtn = document.getElementById('copy-list-btn');
 
 // Lists modal
 const listsModal = document.getElementById('lists-modal');
@@ -127,8 +128,6 @@ const searchTipsBtn = document.getElementById('search-tips-btn');
 const searchTipsDropdown = document.getElementById('search-tips-dropdown');
 
 // Feedback elements
-const feedbackBtn = document.getElementById('feedback-btn');
-const feedbackDropdown = document.getElementById('feedback-dropdown');
 const navFeedback = document.getElementById('nav-feedback');
 
 // Bug report modal
@@ -193,6 +192,9 @@ function pushHistoryState(view, data = {}) {
         case 'favorites':
             hash = '#favorites';
             break;
+        case 'list':
+            hash = `#list/${data.listId}`;
+            break;
         case 'search':
         default:
             hash = data.query ? `#search/${encodeURIComponent(data.query)}` : '';
@@ -219,6 +221,11 @@ function handleHistoryNavigation(state) {
             break;
         case 'favorites':
             showView('favorites');
+            break;
+        case 'list':
+            if (state.listId) {
+                showListView(state.listId);
+            }
             break;
         case 'search':
         default:
@@ -290,6 +297,12 @@ function handleDeepLink() {
         trackDeepLink('favorites', hash);
         showView('favorites');
         pushHistoryState('favorites');
+        return true;
+    } else if (hash.startsWith('#list/')) {
+        const listId = hash.slice(6);
+        trackDeepLink('list', hash);
+        showListView(listId);
+        pushHistoryState('list', { listId });
         return true;
     } else if (hash.startsWith('#search/')) {
         const query = decodeURIComponent(hash.slice(8));
@@ -447,16 +460,7 @@ function openListsModal() {
 // FEEDBACK
 // ============================================
 
-function toggleFeedbackDropdown() {
-    feedbackDropdown?.classList.toggle('hidden');
-}
-
-function closeFeedbackDropdown() {
-    feedbackDropdown?.classList.add('hidden');
-}
-
 function handleFeedbackOption(type) {
-    closeFeedbackDropdown();
     closeSidebar();
 
     const song = getCurrentSong();
@@ -1626,9 +1630,11 @@ function init() {
         customListsContainer,
         favoritesCheckbox,
         listPickerBtn,
+        listPickerDropdown,
         printListBtn,
         renderResults,
-        closeSidebar
+        closeSidebar,
+        pushHistoryState
     });
 
     initSongView({
@@ -1743,33 +1749,50 @@ function init() {
     // Print list button
     printListBtn?.addEventListener('click', openPrintListView);
 
-    // Feedback button and dropdown
-    feedbackBtn?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        feedbackBtn?.classList.remove('highlight-pulse');
-        toggleFeedbackDropdown();
+    // Copy list button (for shared lists)
+    copyListBtn?.addEventListener('click', async () => {
+        if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+            alert('Please sign in to copy lists to your account.');
+            return;
+        }
+
+        copyListBtn.disabled = true;
+        copyListBtn.textContent = 'Copying...';
+
+        const { data, error } = await copyCurrentList();
+
+        if (error) {
+            alert('Failed to copy list: ' + error.message);
+            copyListBtn.disabled = false;
+            copyListBtn.textContent = 'Copy to My Lists';
+        } else {
+            copyListBtn.textContent = 'Copied!';
+            // Navigate to the new list after a short delay
+            setTimeout(() => {
+                showListView(data.id);
+                pushHistoryState('list', { listId: data.id });
+            }, 500);
+        }
     });
+
+    // Sidebar feedback button
     navFeedback?.addEventListener('click', (e) => {
         e.stopPropagation();
         closeSidebar();
-        // Small delay to let sidebar close before showing dropdown
+        // Open contact modal directly for general feedback
         setTimeout(() => {
-            feedbackBtn?.classList.add('highlight-pulse');
-            toggleFeedbackDropdown();
-            setTimeout(() => {
-                feedbackBtn?.classList.remove('highlight-pulse');
-            }, 3000);
+            openContactModal('Send Feedback', '');
         }, 150);
     });
 
-    // Close dropdown when clicking outside
+    // Close dropdowns when clicking outside
     document.addEventListener('click', (e) => {
-        if (!feedbackBtn?.contains(e.target) && !feedbackDropdown?.contains(e.target)) {
-            closeFeedbackDropdown();
-        }
-        // Close search tips dropdown when clicking outside
         if (!searchTipsBtn?.contains(e.target) && !searchTipsDropdown?.contains(e.target)) {
             searchTipsDropdown?.classList.add('hidden');
+        }
+        // Close list picker dropdown
+        if (!listPickerBtn?.contains(e.target) && !listPickerDropdown?.contains(e.target)) {
+            listPickerDropdown?.classList.add('hidden');
         }
     });
 
@@ -1777,14 +1800,6 @@ function init() {
     searchTipsBtn?.addEventListener('click', (e) => {
         e.stopPropagation();
         searchTipsDropdown?.classList.toggle('hidden');
-    });
-
-    // Feedback option buttons
-    feedbackDropdown?.querySelectorAll('.feedback-option[data-type]').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const type = btn.dataset.type;
-            if (type) handleFeedbackOption(type);
-        });
     });
 
     // Bug report modal
@@ -1818,7 +1833,8 @@ function init() {
     contactSubmitBtn?.addEventListener('click', submitContactForm);
 
     // List picker
-    listPickerBtn?.addEventListener('click', () => {
+    listPickerBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
         listPickerDropdown?.classList.toggle('hidden');
         if (!listPickerDropdown?.classList.contains('hidden')) {
             renderListPickerDropdown();

@@ -426,6 +426,33 @@ h1 {
     border-color: var(--accent);
 }
 
+.copy-list-btn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+    background: var(--accent);
+    color: white;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background 0.2s, opacity 0.2s;
+}
+
+.copy-list-btn:hover {
+    opacity: 0.9;
+}
+
+.shared-list-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.7rem;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
 /* Results list */
 .results {
     display: flex;
@@ -434,6 +461,7 @@ h1 {
 }
 
 .result-item {
+    position: relative;
     padding: 0.875rem 1rem;
     background: var(--bg-secondary);
     border: 1px solid var(--border);
@@ -476,12 +504,32 @@ h1 {
     opacity: 0.4;
     background: var(--bg);
     border-style: dashed;
+    transform: scale(0.98);
 }
 
-.result-item.drag-over {
-    border-color: var(--accent);
-    background: var(--bg);
-    box-shadow: inset 0 0 0 2px var(--accent);
+/* Drop indicator for drag reordering */
+.result-item.drag-over-above::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    box-shadow: 0 0 8px var(--accent);
+}
+
+.result-item.drag-over-below::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    box-shadow: 0 0 8px var(--accent);
 }
 
 .result-title {

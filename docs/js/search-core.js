@@ -4,10 +4,11 @@ import {
     allSongs, songGroups,
     showingFavorites, setShowingFavorites
 } from './state.js';
+import { reorderFavoriteItem } from './favorites.js';
 import { highlightMatch } from './utils.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import { isFavorite } from './favorites.js';
-import { isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList } from './lists.js';
+import { isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, isViewingOwnList } from './lists.js';
 import { openSong, showVersionPicker } from './song-view.js';
 import { trackSearch as analyticsTrackSearch, trackSearchResultClick } from './analytics.js';
 
@@ -27,6 +28,19 @@ const ANALYTICS_DEBOUNCE_MS = 1000;  // Wait 1s after typing stops
 // Drag and drop state for list reordering
 let draggedItem = null;
 let draggedIndex = null;
+let currentDropTarget = null;
+let currentDropPosition = null;
+
+/**
+ * Clear all drag indicator classes from result items
+ */
+function clearDragClasses(container) {
+    container.querySelectorAll('.drag-over-above, .drag-over-below').forEach(el => {
+        el.classList.remove('drag-over-above', 'drag-over-below');
+    });
+    currentDropTarget = null;
+    currentDropPosition = null;
+}
 
 /**
  * Flush pending search analytics (call on result click or navigation)
@@ -424,9 +438,11 @@ export function renderResults(songs, query) {
         return;
     }
 
-    // Check if we're viewing a list (enables drag/drop reordering)
+    // Check if we're viewing a list or favorites (enables drag/drop reordering)
+    // Only allow dragging for own lists/favorites, not shared public lists
     const viewingListId = getViewingListId();
-    const isDraggable = !!viewingListId;
+    const canReorder = viewingListId ? isViewingOwnList() : showingFavorites;
+    const isDraggable = canReorder;
 
     // Group songs and dedupe by group_id (show one representative per group)
     // Skip deduping for lists - show all songs in order
@@ -492,6 +508,8 @@ export function renderResults(songs, query) {
  */
 function setupResultEventListeners(resultsDiv) {
     const viewingListId = getViewingListId();
+    // Only allow reordering for own lists/favorites, not shared public lists
+    const canReorder = viewingListId ? isViewingOwnList() : showingFavorites;
 
     // Click on result item opens song (or version picker if multiple versions)
     const resultItems = resultsDiv.querySelectorAll('.result-item');
@@ -516,8 +534,8 @@ function setupResultEventListeners(resultsDiv) {
             }
         });
 
-        // Drag and drop handlers for list view
-        if (viewingListId) {
+        // Drag and drop handlers for list/favorites view (only if owner)
+        if (canReorder) {
             item.addEventListener('dragstart', (e) => {
                 draggedItem = item;
                 draggedIndex = parseInt(item.dataset.index, 10);
@@ -533,40 +551,98 @@ function setupResultEventListeners(resultsDiv) {
                 draggedItem = null;
                 draggedIndex = null;
                 // Remove all drag-over classes
-                resultsDiv.querySelectorAll('.drag-over').forEach(el => el.classList.remove('drag-over'));
+                clearDragClasses(resultsDiv);
             });
 
-            item.addEventListener('dragover', (e) => {
-                e.preventDefault();
-                e.dataTransfer.dropEffect = 'move';
-                if (item !== draggedItem) {
-                    item.classList.add('drag-over');
-                }
-            });
-
-            item.addEventListener('dragleave', () => {
-                item.classList.remove('drag-over');
-            });
-
-            item.addEventListener('drop', (e) => {
-                e.preventDefault();
-                item.classList.remove('drag-over');
-                if (!draggedItem || draggedItem === item) return;
-
-                const toIndex = parseInt(item.dataset.index, 10);
-                if (draggedIndex !== null && toIndex !== draggedIndex) {
-                    // Reorder in the list
-                    if (reorderSongInList(viewingListId, draggedIndex, toIndex)) {
-                        // Re-render the list view to show new order
-                        // Import showListView dynamically to avoid circular dep
-                        import('./lists.js').then(({ showListView }) => {
-                            showListView(viewingListId);
-                        });
-                    }
-                }
-            });
         }
     });
+
+    // Container-level dragover for better hit detection (only if owner)
+    if (canReorder) {
+        resultsDiv.addEventListener('dragover', (e) => {
+            if (!draggedItem) return;
+            e.preventDefault();
+
+            const items = Array.from(resultsDiv.querySelectorAll('.result-item:not(.dragging)'));
+            if (items.length === 0) return;
+
+            // Find the closest item edge to the cursor
+            let closestItem = null;
+            let closestPosition = null;
+            let closestDistance = Infinity;
+
+            for (const item of items) {
+                const rect = item.getBoundingClientRect();
+                const topDist = Math.abs(e.clientY - rect.top);
+                const bottomDist = Math.abs(e.clientY - rect.bottom);
+
+                if (topDist < closestDistance) {
+                    closestDistance = topDist;
+                    closestItem = item;
+                    closestPosition = 'above';
+                }
+                if (bottomDist < closestDistance) {
+                    closestDistance = bottomDist;
+                    closestItem = item;
+                    closestPosition = 'below';
+                }
+            }
+
+            // Only update if changed
+            if (closestItem && (currentDropTarget !== closestItem || currentDropPosition !== closestPosition)) {
+                clearDragClasses(resultsDiv);
+                currentDropTarget = closestItem;
+                currentDropPosition = closestPosition;
+                closestItem.classList.add(closestPosition === 'above' ? 'drag-over-above' : 'drag-over-below');
+            }
+        });
+
+        resultsDiv.addEventListener('dragleave', (e) => {
+            // Only clear if leaving the container entirely
+            if (!resultsDiv.contains(e.relatedTarget)) {
+                clearDragClasses(resultsDiv);
+            }
+        });
+
+        resultsDiv.addEventListener('drop', (e) => {
+            e.preventDefault();
+            if (!draggedItem || !currentDropTarget || draggedIndex === null) {
+                clearDragClasses(resultsDiv);
+                return;
+            }
+
+            const targetIndex = parseInt(currentDropTarget.dataset.index, 10);
+            const wasAbove = currentDropPosition === 'above';
+            clearDragClasses(resultsDiv);
+
+            // Calculate insertion index
+            let toIndex;
+            if (draggedIndex < targetIndex) {
+                toIndex = wasAbove ? targetIndex - 1 : targetIndex;
+            } else {
+                toIndex = wasAbove ? targetIndex : targetIndex + 1;
+            }
+            toIndex = Math.max(0, toIndex);
+
+            if (toIndex === draggedIndex) return;
+
+            const currentListId = getViewingListId();
+
+            if (showingFavorites) {
+                if (reorderFavoriteItem(draggedIndex, toIndex)) {
+                    import('./favorites.js').then(({ showFavorites }) => {
+                        showFavorites();
+                    });
+                }
+            } else if (currentListId) {
+                if (reorderSongInList(currentListId, draggedIndex, toIndex)) {
+                    import('./lists.js').then(({ showListView }) => {
+                        showListView(currentListId);
+                    });
+                }
+            }
+        });
+    }
 
     // Click on list button shows picker
     resultsDiv.querySelectorAll('.result-list-btn').forEach(btn => {
@@ -589,6 +665,7 @@ function setupResultEventListeners(resultsDiv) {
             }
         });
     });
+
 }
 
 /**

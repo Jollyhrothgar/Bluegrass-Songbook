@@ -50,6 +50,11 @@
             </button>
         </nav>
         <div class="sidebar-footer">
+            <button id="theme-toggle" class="sidebar-link">
+                <span class="icon-sun">&#9728;</span>
+                <span class="icon-moon">&#9790;</span>
+                <span>Toggle Theme</span>
+            </button>
             <a href="about.html" class="sidebar-link">
                 <span>&#9432;</span> About
             </a>
@@ -90,63 +95,6 @@
                         <span id="user-name" class="user-name"></span>
                     </div>
                 </div>
-                <div class="feedback-wrapper">
-                    <button id="feedback-btn" class="icon-btn" title="Send Feedback">
-                        <span>💬</span>
-                        <span class="btn-label">Feedback</span>
-                    </button>
-                    <div id="feedback-dropdown" class="feedback-dropdown hidden">
-                        <div class="feedback-header">📣 Send Feedback</div>
-                        <button class="feedback-option" data-type="song-issue">
-                            <span class="feedback-icon">🐛</span>
-                            <span class="feedback-label">Song Display Issue</span>
-                        </button>
-                        <button class="feedback-option" data-type="search-problem">
-                            <span class="feedback-icon">🔍</span>
-                            <span class="feedback-label">Search Problem</span>
-                        </button>
-                        <button class="feedback-option" data-type="app-issue">
-                            <span class="feedback-icon">💥</span>
-                            <span class="feedback-label">App Issue</span>
-                        </button>
-                        <div class="feedback-divider"></div>
-                        <button class="feedback-option" data-type="request-song">
-                            <span class="feedback-icon">🎵</span>
-                            <span class="feedback-label">Request a Song</span>
-                        </button>
-                        <button class="feedback-option" data-type="song-correction">
-                            <span class="feedback-icon">✏️</span>
-                            <span class="feedback-label">Song Correction</span>
-                        </button>
-                        <button class="feedback-option" data-type="copyright">
-                            <span class="feedback-icon">⚠️</span>
-                            <span class="feedback-label">Copyright Concern</span>
-                        </button>
-                        <div class="feedback-divider"></div>
-                        <button class="feedback-option" data-type="feature-idea">
-                            <span class="feedback-icon">💡</span>
-                            <span class="feedback-label">Feature Idea</span>
-                        </button>
-                        <button class="feedback-option" data-type="general">
-                            <span class="feedback-icon">💬</span>
-                            <span class="feedback-label">General Feedback</span>
-                        </button>
-                        <div class="feedback-divider"></div>
-                        <a href="mailto:bluegrassbook.feedback@gmail.com" class="feedback-option email-option">
-                            <span class="feedback-icon">📧</span>
-                            <span class="feedback-label">Email Me</span>
-                        </a>
-                    </div>
-                </div>
-                <button id="home-btn" class="icon-btn" title="Home">
-                    <span>🏠</span>
-                    <span class="btn-label">Home</span>
-                </button>
-                <button id="theme-toggle" class="icon-btn" title="Toggle theme">
-                    <span class="icon-sun">&#9728;</span>
-                    <span class="icon-moon">&#9790;</span>
-                    <span class="btn-label">Theme</span>
-                </button>
             </div>
             <h1 class="site-logo">
                 <a href="#" id="logo-link"><img src="images/bluegrass_book_dark_logo.png" alt="Bluegrass Book"></a>
@@ -215,6 +163,7 @@
             </div>
             <div class="search-stats-row">
                 <div id="search-stats" class="search-stats"></div>
+                <button id="copy-list-btn" class="copy-list-btn hidden" title="Copy this list to your account">Copy to My Lists</button>
                 <button id="print-list-btn" class="print-list-btn hidden" title="Print all songs in this list">Print List</button>
             </div>
         </div>

@@ -1,7 +1,7 @@
 // Favorites management for Bluegrass Songbook
 
 import {
-    favorites, setFavorites, addFavorite, removeFavorite, hasFavorite,
+    favorites, setFavorites, addFavorite, removeFavorite, hasFavorite, reorderFavorite,
     allSongs, userLists,
     isCloudSyncEnabled, setCloudSyncEnabled,
     syncInProgress, setSyncInProgress,
@@ -38,11 +38,22 @@ export function loadFavorites() {
     try {
         const saved = localStorage.getItem('songbook-favorites');
         if (saved) {
-            setFavorites(new Set(JSON.parse(saved)));
+            setFavorites(JSON.parse(saved));
         }
     } catch (e) {
         console.error('Failed to load favorites:', e);
     }
+}
+
+/**
+ * Reorder a favorite (for drag and drop)
+ */
+export function reorderFavoriteItem(fromIndex, toIndex) {
+    if (reorderFavorite(fromIndex, toIndex)) {
+        saveFavorites();
+        return true;
+    }
+    return false;
 }
 
 /**
@@ -201,8 +212,11 @@ export function showFavorites() {
     if (navFavoritesEl) navFavoritesEl.classList.add('active');
     if (navSearchEl) navSearchEl.classList.remove('active');
 
-    const favSongs = allSongs.filter(s => hasFavorite(s.id));
-    const favSongIds = favSongs.map(s => s.id);
+    // Preserve order from favorites array
+    const favSongs = favorites
+        .map(id => allSongs.find(s => s.id === id))
+        .filter(Boolean);
+    const favSongIds = favorites.filter(id => allSongs.find(s => s.id === id));
 
     // Set list context for navigation
     setListContext({

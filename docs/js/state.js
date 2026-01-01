@@ -147,16 +147,41 @@ export function setSyncInProgress(value) { syncInProgress = value; }
 // FAVORITES AND LISTS
 // ============================================
 
-export let favorites = new Set();
+// Favorites is an ordered array (not a Set) so users can reorder
+export let favorites = [];
 export let userLists = [];
 
 export function setFavorites(favs) {
-    favorites = favs instanceof Set ? favs : new Set(favs);
+    // Convert Set to Array if needed, or use as-is if already Array
+    favorites = favs instanceof Set ? [...favs] : Array.isArray(favs) ? favs : [];
 }
 
-export function addFavorite(songId) { favorites.add(songId); }
-export function removeFavorite(songId) { favorites.delete(songId); }
-export function hasFavorite(songId) { return favorites.has(songId); }
+export function addFavorite(songId) {
+    if (!favorites.includes(songId)) {
+        favorites.push(songId);
+    }
+}
+
+export function removeFavorite(songId) {
+    const index = favorites.indexOf(songId);
+    if (index !== -1) {
+        favorites.splice(index, 1);
+    }
+}
+
+export function hasFavorite(songId) {
+    return favorites.includes(songId);
+}
+
+export function reorderFavorite(fromIndex, toIndex) {
+    if (fromIndex < 0 || fromIndex >= favorites.length) return false;
+    if (toIndex < 0 || toIndex >= favorites.length) return false;
+    if (fromIndex === toIndex) return false;
+
+    const [songId] = favorites.splice(fromIndex, 1);
+    favorites.splice(toIndex, 0, songId);
+    return true;
+}
 
 export function setUserLists(lists) { userLists = lists; }
 
