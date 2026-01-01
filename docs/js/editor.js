@@ -514,7 +514,7 @@ function toggleHints() {
 /**
  * Close hints panel
  */
-function closeHints() {
+export function closeHints() {
     if (hintsPanelEl) hintsPanelEl.classList.add('hidden');
     if (hintsBackdropEl) hintsBackdropEl.classList.add('hidden');
 }

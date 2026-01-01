@@ -38,7 +38,7 @@ import {
 } from './lists.js';
 import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
-import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro } from './editor.js';
+import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro, closeHints } from './editor.js';
 import { escapeHtml } from './utils.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions } from './chords.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
@@ -280,6 +280,9 @@ function handleHistoryNavigation(state) {
 
 function showView(mode) {
     const searchContainer = document.querySelector('.search-container');
+
+    // Close any open editor hints panel
+    closeHints();
 
     // Reset all nav states
     [navSearch, navAddSong, navFavorites].forEach(btn => {
@@ -651,7 +654,7 @@ function submitBugReport() {
 
     const subject = encodeURIComponent('Song Issue Report');
     const body = encodeURIComponent(feedback);
-    window.open(`mailto:bluegrassbook.feedback@gmail.com?subject=${subject}&body=${body}`);
+    window.location.href = `mailto:bluegrassbook.feedback@gmail.com?subject=${subject}&body=${body}`;
     closeBugModal();
 }
 
@@ -663,7 +666,7 @@ function submitContactForm() {
     track('feedback_submit', { type: title });
     const subject = encodeURIComponent(title);
     const body = encodeURIComponent(feedback);
-    window.open(`mailto:bluegrassbook.feedback@gmail.com?subject=${subject}&body=${body}`);
+    window.location.href = `mailto:bluegrassbook.feedback@gmail.com?subject=${subject}&body=${body}`;
     closeContactModal();
 }
 
