@@ -1,11 +1,14 @@
 // Flags module for Bluegrass Songbook
-// Allows users to report song issues (wrong chords, placement, lyrics, etc.)
+// Allows users to report song issues - creates GitHub issues automatically
 
 import { track } from './analytics.js';
 
 // ============================================
 // CONFIGURATION
 // ============================================
+
+const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
 
 const FLAG_TYPES = [
     { id: 'wrong-chord', label: 'Wrong chord', desc: 'A chord is incorrect' },
@@ -15,14 +18,11 @@ const FLAG_TYPES = [
     { id: 'other', label: 'Other issue', desc: 'Something else' }
 ];
 
-const MILESTONES = [1, 5, 10, 25, 50, 100];
-
 // ============================================
 // STATE
 // ============================================
 
-let currentSongId = null;
-let flagCount = 0;
+let currentSong = null;
 
 // DOM elements (cached on init)
 let flagModal = null;
@@ -32,33 +32,10 @@ let flagDescription = null;
 let flagSubmitBtn = null;
 let flagCancelBtn = null;
 let flagToast = null;
-let flagCountEl = null;
 
 // ============================================
 // HELPER FUNCTIONS
 // ============================================
-
-/**
- * Get visitor ID from localStorage
- */
-function getVisitorId() {
-    let visitorId = localStorage.getItem('songbook-visitor-id');
-    if (!visitorId) {
-        visitorId = 'v_' + Math.random().toString(36).substring(2) + Date.now().toString(36);
-        localStorage.setItem('songbook-visitor-id', visitorId);
-    }
-    return visitorId;
-}
-
-/**
- * Get Supabase client (from SupabaseAuth global)
- */
-function getSupabase() {
-    if (typeof window.SupabaseAuth !== 'undefined' && window.SupabaseAuth._getClient) {
-        return window.SupabaseAuth._getClient();
-    }
-    return null;
-}
 
 /**
  * Show toast notification
@@ -74,16 +51,6 @@ function showToast(message, duration = 3000) {
     }, duration);
 }
 
-/**
- * Check for milestone and show celebration toast
- */
-function checkMilestone(count) {
-    if (MILESTONES.includes(count)) {
-        showToast(`You've submitted ${count} flags! Thanks for helping improve the songbook.`, 4000);
-        track('flag_milestone', { count });
-    }
-}
-
 // ============================================
 // CORE FUNCTIONS
 // ============================================
@@ -91,10 +58,10 @@ function checkMilestone(count) {
 /**
  * Open flag modal for a song
  */
-export function openFlagModal(songId) {
-    if (!flagModal) return;
+export function openFlagModal(song) {
+    if (!flagModal || !song) return;
 
-    currentSongId = songId;
+    currentSong = song;
 
     // Reset form
     const radios = flagOptions?.querySelectorAll('input[type="radio"]');
@@ -104,7 +71,7 @@ export function openFlagModal(songId) {
     // Show modal
     flagModal.classList.remove('hidden');
 
-    track('flag_modal_open', { song_id: songId });
+    track('flag_modal_open', { song_id: song.id });
 }
 
 /**
@@ -113,16 +80,15 @@ export function openFlagModal(songId) {
 function closeFlagModal() {
     if (!flagModal) return;
     flagModal.classList.add('hidden');
-    currentSongId = null;
+    currentSong = null;
 }
 
 /**
- * Submit flag to Supabase
+ * Submit flag via Edge Function (creates GitHub issue)
  */
 async function submitFlag() {
-    const supabase = getSupabase();
-    if (!supabase) {
-        showToast('Unable to submit flag. Please try again.');
+    if (!currentSong) {
+        showToast('No song selected.');
         return;
     }
 
@@ -134,7 +100,7 @@ async function submitFlag() {
     }
 
     const flagType = selectedRadio.value;
-    const description = flagDescription?.value?.trim() || null;
+    const description = flagDescription?.value?.trim() || '';
 
     // Require description for "other" type
     if (flagType === 'other' && !description) {
@@ -142,70 +108,56 @@ async function submitFlag() {
         return;
     }
 
-    const visitorId = getVisitorId();
+    // Disable submit button while processing
+    if (flagSubmitBtn) {
+        flagSubmitBtn.disabled = true;
+        flagSubmitBtn.textContent = 'Submitting...';
+    }
 
     try {
-        const { data, error } = await supabase.rpc('submit_flag', {
-            p_song_id: currentSongId,
-            p_flag_type: flagType,
-            p_description: description,
-            p_visitor_id: visitorId
+        const response = await fetch(`${SUPABASE_URL}/functions/v1/create-flag-issue`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+            },
+            body: JSON.stringify({
+                songId: currentSong.id,
+                songTitle: currentSong.title || '',
+                songArtist: currentSong.artist || '',
+                flagType,
+                description: description || undefined,
+            }),
         });
 
-        if (error) throw error;
+        const result = await response.json();
 
-        // Update local count
-        flagCount++;
-        localStorage.setItem('songbook-flag-count', flagCount.toString());
+        if (!response.ok) {
+            throw new Error(result.error || 'Failed to submit report');
+        }
 
         // Track analytics
         track('flag_submit', {
-            song_id: currentSongId,
+            song_id: currentSong.id,
             flag_type: flagType,
-            has_description: !!description
+            has_description: !!description,
+            issue_number: result.issueNumber,
         });
 
         // Close modal and show success
         closeFlagModal();
-        showToast(`Thanks! You've submitted ${flagCount} flag${flagCount === 1 ? '' : 's'}.`);
-
-        // Check for milestone
-        checkMilestone(flagCount);
+        showToast('Thanks! Your report has been submitted.');
 
     } catch (err) {
         console.error('Flag submission error:', err);
-        showToast('Failed to submit flag. Please try again.');
-    }
-}
-
-/**
- * Get user's flag count from Supabase
- */
-export async function syncFlagCount() {
-    const supabase = getSupabase();
-    if (!supabase) return;
-
-    const visitorId = getVisitorId();
-
-    try {
-        const { data, error } = await supabase.rpc('get_visitor_flag_count', {
-            p_visitor_id: visitorId
-        });
-
-        if (!error && data !== null) {
-            flagCount = data;
-            localStorage.setItem('songbook-flag-count', flagCount.toString());
+        showToast('Failed to submit report. Please try again.');
+    } finally {
+        // Re-enable submit button
+        if (flagSubmitBtn) {
+            flagSubmitBtn.disabled = false;
+            flagSubmitBtn.textContent = 'Submit Report';
         }
-    } catch (err) {
-        // Silent fail - use local count
     }
-}
-
-/**
- * Get current flag count
- */
-export function getFlagCount() {
-    return flagCount;
 }
 
 // ============================================
@@ -237,7 +189,6 @@ export function initFlags() {
     flagSubmitBtn = document.getElementById('flag-submit');
     flagCancelBtn = document.getElementById('flag-cancel');
     flagToast = document.getElementById('flag-toast');
-    flagCountEl = document.getElementById('flag-count');
 
     if (!flagModal) {
         console.warn('Flag modal not found, flags disabled');
@@ -260,10 +211,4 @@ export function initFlags() {
             closeFlagModal();
         }
     });
-
-    // Load local count
-    flagCount = parseInt(localStorage.getItem('songbook-flag-count') || '0', 10);
-
-    // Sync with server (async, non-blocking)
-    syncFlagCount();
 }

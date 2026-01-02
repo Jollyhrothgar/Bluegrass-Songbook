@@ -666,7 +666,7 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     // Header controls - Options and Flag buttons
     const headerControlsHtml = `
         <div class="header-controls">
-            <button id="flag-btn" class="flag-btn" title="Report an issue">Flag</button>
+            <button id="flag-btn" class="flag-btn" title="Report an issue">Report Issue</button>
             <button id="controls-btn" class="controls-btn">Options</button>
         </div>
     `;
@@ -1010,7 +1010,7 @@ function setupRenderOptionsListeners(song, chordpro) {
     const flagBtn = document.getElementById('flag-btn');
     if (flagBtn) {
         flagBtn.addEventListener('click', () => {
-            openFlagModal(song.id);
+            openFlagModal(song);
         });
     }
 }

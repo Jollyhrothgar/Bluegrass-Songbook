@@ -2125,7 +2125,7 @@ function init() {
                 case 'flag':
                     const song = getCurrentSong();
                     if (song) {
-                        openFlagModal(song.id);
+                        openFlagModal(song);
                     }
                     break;
             }
