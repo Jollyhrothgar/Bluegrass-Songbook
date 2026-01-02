@@ -29,7 +29,9 @@ import {
     abcIsPlaying, setAbcIsPlaying,
     // Fullscreen/navigation state
     fullscreenMode, setFullscreenMode,
-    listContext, setListContext
+    listContext, setListContext,
+    // Reactive state
+    setCurrentView
 } from './state.js';
 import { escapeHtml } from './utils.js';
 import {
@@ -1147,10 +1149,8 @@ export async function openSong(songId, options = {}) {
         pushHistoryStateFn('song', { songId, listId: effectiveListId }, fromDeepLink);
     }
 
-    songViewEl.classList.remove('hidden');
-    resultsDivEl.classList.add('hidden');
-    const searchContainer = document.querySelector('.search-container');
-    if (searchContainer) searchContainer.classList.add('hidden');
+    // Update view state - triggers DOM update via subscriber
+    setCurrentView('song');
 
     // Reset key tracking for new song
     setOriginalDetectedKey(null);
@@ -1221,10 +1221,8 @@ export async function openSong(songId, options = {}) {
 export async function openSongFromHistory(songId) {
     if (!songViewEl || !resultsDivEl) return;
 
-    songViewEl.classList.remove('hidden');
-    resultsDivEl.classList.add('hidden');
-    const searchContainer = document.querySelector('.search-container');
-    if (searchContainer) searchContainer.classList.add('hidden');
+    // Update view state - triggers DOM update via subscriber
+    setCurrentView('song');
 
     setOriginalDetectedKey(null);
     setOriginalDetectedMode(null);

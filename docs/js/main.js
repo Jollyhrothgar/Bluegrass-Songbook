@@ -25,7 +25,9 @@ import {
     showSectionLabels, setShowSectionLabels,
     twoColumnMode, setTwoColumnMode,
     fontSizeLevel, setFontSizeLevel, FONT_SIZES,
-    setListContext
+    setListContext,
+    // Reactive state system
+    subscribe, setCurrentView, currentView
 } from './state.js';
 import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import {
@@ -284,44 +286,63 @@ function handleHistoryNavigation(state) {
 }
 
 function showView(mode) {
+    // Update state - this will trigger the subscriber
+    setCurrentView(mode);
+}
+
+// Subscribe to view changes and update DOM accordingly
+function initViewSubscription() {
     const searchContainer = document.querySelector('.search-container');
 
-    // Close any open editor hints panel
-    closeHints();
+    subscribe('currentView', (view) => {
+        // Close any open editor hints panel
+        closeHints();
 
-    // Reset all nav states
-    [navSearch, navAddSong, navFavorites].forEach(btn => {
-        if (btn) btn.classList.remove('active');
+        // Reset all nav states
+        [navSearch, navAddSong, navFavorites].forEach(btn => {
+            if (btn) btn.classList.remove('active');
+        });
+
+        // Clear list view state
+        clearListView();
+
+        switch (view) {
+            case 'search':
+                searchContainer?.classList.remove('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                navSearch?.classList.add('active');
+                break;
+            case 'add-song':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.add('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.remove('hidden');
+                navAddSong?.classList.add('active');
+                break;
+            case 'favorites':
+                searchContainer?.classList.remove('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                navFavorites?.classList.add('active');
+                showFavorites();
+                break;
+            case 'song':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.add('hidden');
+                songView?.classList.remove('hidden');
+                editorPanel?.classList.add('hidden');
+                break;
+            case 'list':
+                searchContainer?.classList.remove('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                break;
+        }
     });
-
-    // Clear list view state
-    clearListView();
-
-    switch (mode) {
-        case 'search':
-            searchContainer?.classList.remove('hidden');
-            resultsDiv?.classList.remove('hidden');
-            songView?.classList.add('hidden');
-            editorPanel?.classList.add('hidden');
-            navSearch?.classList.add('active');
-            // clearListView() already handles clearing list state
-            break;
-        case 'add-song':
-            searchContainer?.classList.add('hidden');
-            resultsDiv?.classList.add('hidden');
-            songView?.classList.add('hidden');
-            editorPanel?.classList.remove('hidden');
-            navAddSong?.classList.add('active');
-            break;
-        case 'favorites':
-            searchContainer?.classList.remove('hidden');
-            resultsDiv?.classList.remove('hidden');
-            songView?.classList.add('hidden');
-            editorPanel?.classList.add('hidden');
-            navFavorites?.classList.add('active');
-            showFavorites();
-            break;
-    }
 }
 
 function handleDeepLink() {
@@ -1724,6 +1745,9 @@ function init() {
 
     // Load saved view preferences (before rendering any songs)
     loadViewPrefs();
+
+    // Initialize reactive view state subscription
+    initViewSubscription();
 
     // Initialize analytics (early, before other modules)
     initAnalytics();
