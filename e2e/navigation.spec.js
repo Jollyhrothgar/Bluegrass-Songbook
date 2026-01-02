@@ -173,3 +173,34 @@ test.describe('Sidebar Navigation', () => {
         await expect(page.locator('#editor-panel')).toBeVisible();
     });
 });
+
+test.describe('View Transitions', () => {
+    test('bottom sheet closes when navigating away from song view', async ({ page }) => {
+        await page.goto('/');
+        await page.waitForSelector('#search-input');
+
+        // Search and open a song
+        await page.fill('#search-input', 'blue moon');
+        await page.waitForTimeout(300);
+        await page.locator('.result-item').first().click();
+        await expect(page.locator('#song-view')).toBeVisible();
+
+        // Open the bottom sheet (mobile options panel)
+        // The options button triggers the bottom sheet
+        const optionsBtn = page.locator('#options-btn');
+        if (await optionsBtn.isVisible()) {
+            await optionsBtn.click();
+            await expect(page.locator('#bottom-sheet')).toBeVisible();
+        }
+
+        // Navigate to Add Song
+        await openSidebar(page);
+        await page.locator('#nav-add-song').click();
+
+        // Bottom sheet should be hidden (regression: it has position:fixed)
+        await expect(page.locator('#bottom-sheet')).toBeHidden();
+
+        // Editor should be visible
+        await expect(page.locator('#editor-panel')).toBeVisible();
+    });
+});
