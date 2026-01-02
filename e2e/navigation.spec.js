@@ -1,6 +1,12 @@
 // E2E tests for navigation and history
 import { test, expect } from '@playwright/test';
 
+// Helper to open sidebar (required before clicking nav items)
+async function openSidebar(page) {
+    await page.locator('#hamburger-btn').click();
+    await expect(page.locator('.sidebar.open')).toBeVisible();
+}
+
 test.describe('Navigation', () => {
     test('home page loads with search', async ({ page }) => {
         await page.goto('/');
@@ -14,8 +20,10 @@ test.describe('Navigation', () => {
 
     test('favorites nav link works', async ({ page }) => {
         await page.goto('/');
-        await page.waitForSelector('#nav-favorites');
+        await page.waitForSelector('#hamburger-btn');
 
+        // Open sidebar first
+        await openSidebar(page);
         await page.locator('#nav-favorites').click();
 
         // URL should change to favorites
@@ -24,13 +32,15 @@ test.describe('Navigation', () => {
 
     test('search nav link returns to search', async ({ page }) => {
         await page.goto('/');
-        await page.waitForSelector('#nav-favorites');
+        await page.waitForSelector('#hamburger-btn');
 
-        // Go to favorites
+        // Open sidebar and go to favorites
+        await openSidebar(page);
         await page.locator('#nav-favorites').click();
         await page.waitForTimeout(200);
 
-        // Click search nav
+        // Open sidebar again and click search nav
+        await openSidebar(page);
         await page.locator('#nav-search').click();
 
         // Should be back at home
@@ -114,11 +124,13 @@ test.describe('History Navigation', () => {
         await page.fill('#search-input', 'test');
         await page.waitForTimeout(300);
 
-        // Click favorites
+        // Open sidebar and click favorites
+        await openSidebar(page);
         await page.locator('#nav-favorites').click();
         await page.waitForTimeout(200);
 
-        // Click search
+        // Open sidebar and click search
+        await openSidebar(page);
         await page.locator('#nav-search').click();
         await page.waitForTimeout(200);
 
@@ -151,11 +163,13 @@ test.describe('Sidebar Navigation', () => {
 
     test('add song nav works', async ({ page }) => {
         await page.goto('/');
-        await page.waitForSelector('#nav-add-song');
+        await page.waitForSelector('#hamburger-btn');
 
+        // Open sidebar first
+        await openSidebar(page);
         await page.locator('#nav-add-song').click();
 
-        // Add song form should be visible
-        await expect(page.locator('#add-song-panel')).toBeVisible();
+        // Editor panel should be visible (contains add song form)
+        await expect(page.locator('#editor-panel')).toBeVisible();
     });
 });

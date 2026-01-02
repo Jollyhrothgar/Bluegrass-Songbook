@@ -8,6 +8,8 @@ export default defineConfig({
     reuseExistingServer: true
   },
   use: {
-    baseURL: 'http://localhost:8080'
+    baseURL: 'http://localhost:8080',
+    // Wide viewport to ensure sidebar nav is visible
+    viewport: { width: 1440, height: 900 }
   }
 });

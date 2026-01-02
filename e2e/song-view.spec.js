@@ -17,20 +17,20 @@ test.describe('Song View', () => {
 
     test('displays song title and artist', async ({ page }) => {
         // Song header should be visible
-        await expect(page.locator('#song-view h1')).toBeVisible();
-        await expect(page.locator('#song-view .song-artist')).toBeVisible();
+        await expect(page.locator('.song-title')).toBeVisible();
+        // Artist is in song-meta section
+        await expect(page.locator('.song-meta')).toBeVisible();
     });
 
     test('displays chord and lyrics content', async ({ page }) => {
         // Should show song content with chords
         await expect(page.locator('.song-content')).toBeVisible();
 
-        // Should have chord lines and lyrics
-        const chordLines = page.locator('.chord-line');
-        const lyricsLines = page.locator('.lyrics-line');
+        // Should have song body with content
+        await expect(page.locator('.song-body')).toBeVisible();
 
-        // At least some content should be present
-        await expect(lyricsLines.first()).toBeVisible();
+        // At least some song lines should be present
+        await expect(page.locator('.song-line').first()).toBeVisible();
     });
 
     test('key selector changes key', async ({ page }) => {
@@ -157,8 +157,8 @@ test.describe('Print View', () => {
         const printPage = await pagePromise;
         await printPage.waitForLoadState();
 
-        // Print page should have song content
-        await expect(printPage.locator('.song-content')).toBeVisible();
+        // Print page should have song content (uses id not class)
+        await expect(printPage.locator('#song-content')).toBeVisible();
 
         await printPage.close();
     });
