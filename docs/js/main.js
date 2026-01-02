@@ -298,6 +298,10 @@ function initViewSubscription() {
         // Close any open editor hints panel
         closeHints();
 
+        // Close bottom sheet if open (it has position: fixed so stays visible)
+        bottomSheet?.classList.add('hidden');
+        bottomSheetBackdrop?.classList.add('hidden');
+
         // Reset all nav states
         [navSearch, navAddSong, navFavorites].forEach(btn => {
             if (btn) btn.classList.remove('active');
