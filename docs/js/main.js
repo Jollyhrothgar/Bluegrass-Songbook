@@ -243,6 +243,11 @@ function pushHistoryState(view, data = {}, replace = false) {
 
 function handleHistoryNavigation(state) {
     if (!state) {
+        // If no state, we might be back at the initial page load state
+        // Check if there's a hash we should respect (like #song/id)
+        if (handleDeepLink()) {
+            return;
+        }
         showView('search');
         return;
     }
@@ -2148,6 +2153,11 @@ function init() {
     // History navigation
     window.addEventListener('popstate', (e) => {
         handleHistoryNavigation(e.state);
+    });
+
+    // Handle hash changes that don't trigger popstate (e.g. manual URL edits)
+    window.addEventListener('hashchange', () => {
+        handleHistoryNavigation(history.state);
     });
 
     // Initialize Supabase auth
