@@ -3,6 +3,100 @@
 // This allows modules to share state while avoiding circular dependency issues
 
 // ============================================
+// REACTIVE STATE SYSTEM (Pub/Sub)
+// ============================================
+//
+// New pattern: subscribe() to state changes, setState() to update
+// Old pattern: individual setters still work for backward compatibility
+
+const subscribers = new Map();  // stateKey -> Set of callbacks
+let renderScheduled = false;
+let pendingChanges = new Set();
+
+/**
+ * Subscribe to state changes
+ * @param {string} stateKey - Key to watch (or '*' for all changes)
+ * @param {Function} callback - Called with (newValue, key) on change
+ * @returns {Function} Unsubscribe function
+ */
+export function subscribe(stateKey, callback) {
+    if (!subscribers.has(stateKey)) {
+        subscribers.set(stateKey, new Set());
+    }
+    subscribers.get(stateKey).add(callback);
+    return () => subscribers.get(stateKey).delete(callback);
+}
+
+/**
+ * Update multiple state values at once, triggering subscribers
+ * @param {Object} updates - Key/value pairs to update
+ */
+export function setState(updates) {
+    for (const [key, value] of Object.entries(updates)) {
+        // Use the existing state variables
+        if (stateSetters[key]) {
+            const currentValue = stateGetters[key]?.() ?? eval(key);
+            if (currentValue !== value) {
+                stateSetters[key](value);
+                pendingChanges.add(key);
+            }
+        }
+    }
+    if (pendingChanges.size > 0) {
+        scheduleRender();
+    }
+}
+
+function scheduleRender() {
+    if (renderScheduled) return;
+    renderScheduled = true;
+
+    requestAnimationFrame(() => {
+        const changes = new Set(pendingChanges);
+        pendingChanges.clear();
+        renderScheduled = false;
+
+        // Notify specific subscribers
+        for (const key of changes) {
+            const callbacks = subscribers.get(key);
+            if (callbacks) {
+                const value = stateGetters[key]?.();
+                callbacks.forEach(cb => cb(value, key));
+            }
+        }
+
+        // Notify wildcard subscribers
+        const wildcardCallbacks = subscribers.get('*');
+        if (wildcardCallbacks) {
+            wildcardCallbacks.forEach(cb => cb(getState(), changes));
+        }
+    });
+}
+
+/**
+ * Get current state value(s)
+ * @param {string} [key] - Optional key to get specific value
+ * @returns {*} State value or full state object
+ */
+export function getState(key) {
+    if (key) {
+        return stateGetters[key]?.();
+    }
+    // Return snapshot of all tracked state
+    const snapshot = {};
+    for (const k of Object.keys(stateGetters)) {
+        snapshot[k] = stateGetters[k]();
+    }
+    return snapshot;
+}
+
+// Notify subscribers when using legacy setters
+function notifyChange(key) {
+    pendingChanges.add(key);
+    scheduleRender();
+}
+
+// ============================================
 // SONG DATA
 // ============================================
 
@@ -180,6 +274,20 @@ export function setEditingSongId(id) { editingSongId = id; }
 export function setEditorNashvilleMode(value) { editorNashvilleMode = value; }
 
 // ============================================
+// UI VIEW STATE (new reactive pattern)
+// ============================================
+
+export let currentView = 'search';  // 'search' | 'song' | 'add-song' | 'list'
+export let sidebarOpen = false;
+export let activeModal = null;  // 'account' | 'lists' | 'version' | 'correction' | 'contact' | null
+export let currentSearchQuery = '';
+
+export function setCurrentView(value) { currentView = value; notifyChange('currentView'); }
+export function setSidebarOpen(value) { sidebarOpen = value; notifyChange('sidebarOpen'); }
+export function setActiveModal(value) { activeModal = value; notifyChange('activeModal'); }
+export function setCurrentSearchQuery(value) { currentSearchQuery = value; notifyChange('currentSearchQuery'); }
+
+// ============================================
 // CONSTANTS
 // ============================================
 
@@ -190,4 +298,125 @@ export const TAG_CATEGORIES = {
     'Genre': ['Bluegrass', 'ClassicCountry', 'OldTime', 'Gospel', 'Folk', 'HonkyTonk', 'Outlaw', 'Rockabilly', 'WesternSwing'],
     'Vibe': ['JamFriendly', 'Modal', 'Jazzy'],
     'Structure': ['Instrumental', 'Waltz']
+};
+
+// ============================================
+// STATE ACCESSOR MAPS (for reactive system)
+// ============================================
+// These maps enable setState() and getState() to work with named keys
+
+const stateGetters = {
+    // Song data
+    allSongs: () => allSongs,
+    songGroups: () => songGroups,
+    currentSong: () => currentSong,
+    currentChordpro: () => currentChordpro,
+
+    // Display options
+    compactMode: () => compactMode,
+    nashvilleMode: () => nashvilleMode,
+    twoColumnMode: () => twoColumnMode,
+    chordDisplayMode: () => chordDisplayMode,
+    showSectionLabels: () => showSectionLabels,
+    showChordProSource: () => showChordProSource,
+    fontSizeLevel: () => fontSizeLevel,
+
+    // ABC notation
+    showAbcNotation: () => showAbcNotation,
+    abcjsRendered: () => abcjsRendered,
+    currentAbcContent: () => currentAbcContent,
+    abcTempoBpm: () => abcTempoBpm,
+    abcTranspose: () => abcTranspose,
+    abcScale: () => abcScale,
+    abcSynth: () => abcSynth,
+    abcTimingCallbacks: () => abcTimingCallbacks,
+    abcIsPlaying: () => abcIsPlaying,
+
+    // Key/transposition
+    currentDetectedKey: () => currentDetectedKey,
+    originalDetectedKey: () => originalDetectedKey,
+    originalDetectedMode: () => originalDetectedMode,
+
+    // Auth/sync
+    isCloudSyncEnabled: () => isCloudSyncEnabled,
+    syncInProgress: () => syncInProgress,
+
+    // Lists
+    userLists: () => userLists,
+
+    // History
+    historyInitialized: () => historyInitialized,
+
+    // Fullscreen/musician mode
+    fullscreenMode: () => fullscreenMode,
+    listContext: () => listContext,
+
+    // Editor
+    editMode: () => editMode,
+    editingSongId: () => editingSongId,
+    editorNashvilleMode: () => editorNashvilleMode,
+
+    // UI view state
+    currentView: () => currentView,
+    sidebarOpen: () => sidebarOpen,
+    activeModal: () => activeModal,
+    currentSearchQuery: () => currentSearchQuery,
+};
+
+const stateSetters = {
+    // Song data
+    allSongs: setAllSongs,
+    songGroups: setSongGroups,
+    currentSong: setCurrentSong,
+    currentChordpro: setCurrentChordpro,
+
+    // Display options
+    compactMode: setCompactMode,
+    nashvilleMode: setNashvilleMode,
+    twoColumnMode: setTwoColumnMode,
+    chordDisplayMode: setChordDisplayMode,
+    showSectionLabels: setShowSectionLabels,
+    showChordProSource: setShowChordProSource,
+    fontSizeLevel: setFontSizeLevel,
+
+    // ABC notation
+    showAbcNotation: setShowAbcNotation,
+    abcjsRendered: setAbcjsRendered,
+    currentAbcContent: setCurrentAbcContent,
+    abcTempoBpm: setAbcTempoBpm,
+    abcTranspose: setAbcTranspose,
+    abcScale: setAbcScale,
+    abcSynth: setAbcSynth,
+    abcTimingCallbacks: setAbcTimingCallbacks,
+    abcIsPlaying: setAbcIsPlaying,
+
+    // Key/transposition
+    currentDetectedKey: setCurrentDetectedKey,
+    originalDetectedKey: setOriginalDetectedKey,
+    originalDetectedMode: setOriginalDetectedMode,
+
+    // Auth/sync
+    isCloudSyncEnabled: setCloudSyncEnabled,
+    syncInProgress: setSyncInProgress,
+
+    // Lists
+    userLists: setUserLists,
+
+    // History
+    historyInitialized: setHistoryInitialized,
+
+    // Fullscreen/musician mode
+    fullscreenMode: setFullscreenMode,
+    listContext: setListContext,
+
+    // Editor
+    editMode: setEditMode,
+    editingSongId: setEditingSongId,
+    editorNashvilleMode: setEditorNashvilleMode,
+
+    // UI view state
+    currentView: setCurrentView,
+    sidebarOpen: setSidebarOpen,
+    activeModal: setActiveModal,
+    currentSearchQuery: setCurrentSearchQuery,
 };
