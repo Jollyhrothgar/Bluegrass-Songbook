@@ -117,4 +117,55 @@ test.describe('Search Result Interaction', () => {
         // List picker should appear
         await expect(page.locator('#list-picker-dropdown')).toBeVisible();
     });
+
+    test('rapid search does not break click handlers (event delegation)', async ({ page }) => {
+        // This test verifies that event delegation works correctly.
+        // Before the fix, rapid searches would accumulate event listeners,
+        // causing clicks to fire multiple times or not at all.
+
+        // Rapidly type and change search
+        await page.fill('#search-input', 'b');
+        await page.fill('#search-input', 'bl');
+        await page.fill('#search-input', 'blu');
+        await page.fill('#search-input', 'blue');
+        await page.fill('#search-input', 'blue ');
+        await page.fill('#search-input', 'blue m');
+        await page.fill('#search-input', 'blue mo');
+        await page.fill('#search-input', 'blue moo');
+        await page.fill('#search-input', 'blue moon');
+
+        // Wait for final results
+        await page.waitForTimeout(300);
+
+        // Results should be visible
+        const results = page.locator('.result-item');
+        await expect(results.first()).toBeVisible();
+
+        // Click should work correctly (opens song view exactly once)
+        await results.first().click();
+
+        // Song view should be visible (not still on search)
+        await expect(page.locator('#song-view')).toBeVisible();
+        await expect(page.locator('#results')).toBeHidden();
+    });
+
+    test('tag badge click works after multiple renders', async ({ page }) => {
+        // Search, then search again, then click tag
+        await page.fill('#search-input', 'hank');
+        await page.waitForTimeout(200);
+        await page.fill('#search-input', 'bill');
+        await page.waitForTimeout(200);
+        await page.fill('#search-input', ''); // Clear to show random
+        await page.waitForTimeout(200);
+
+        // Find and click a tag badge
+        const tagBadge = page.locator('.tag-badge').first();
+        if (await tagBadge.isVisible()) {
+            await tagBadge.click();
+
+            // Search input should have tag filter (not duplicate handlers)
+            const inputValue = await page.locator('#search-input').inputValue();
+            expect(inputValue).toMatch(/^tag:[A-Za-z]+$/);
+        }
+    });
 });
