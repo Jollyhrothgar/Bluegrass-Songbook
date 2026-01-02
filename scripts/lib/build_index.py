@@ -612,8 +612,9 @@ def build_index(parsed_dirs: list[Path], output_file: Path, enrich_tags: bool = 
             strum_matches = 0
             for song in songs:
                 title = song.get('title', '').lower().strip()
-                if title in strum_cache and strum_cache[title]:
-                    song['strum_machine_url'] = strum_cache[title]['url']
+                cached = strum_cache.get(title)
+                if cached and not cached.get('_no_match') and 'url' in cached:
+                    song['strum_machine_url'] = cached['url']
                     strum_matches += 1
             print(f"Strum Machine: {strum_matches}/{len(songs)} songs matched")
         else:
