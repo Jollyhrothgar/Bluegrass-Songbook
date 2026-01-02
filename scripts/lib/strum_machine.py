@@ -82,7 +82,7 @@ def match_song(
     title: str,
     api_key: str,
     client: Optional[httpx.Client] = None,
-    exact_only: bool = True,
+    min_score: float = 0.9,
 ) -> Optional[dict]:
     """
     Match a song title against Strum Machine's database.
@@ -91,7 +91,7 @@ def match_song(
         title: Song title to search for
         api_key: Strum Machine API key
         client: Optional httpx client for connection reuse
-        exact_only: If True, only return score=1 matches
+        min_score: Minimum score to accept (1.0 = exact, 0.9 = fuzzy/typos)
 
     Returns:
         Best match dict with 'title', 'label', 'url', 'score' or None
@@ -112,9 +112,8 @@ def match_song(
         if not results:
             return None
 
-        # Filter for exact matches if requested
-        if exact_only:
-            results = [r for r in results if r.get("score", 0) == 1]
+        # Filter for minimum score
+        results = [r for r in results if r.get("score", 0) >= min_score]
 
         if not results:
             return None
@@ -135,6 +134,7 @@ def batch_match_songs(
     songs: list[dict],
     api_key: str,
     use_cache: bool = True,
+    force: bool = False,
     progress_callback: Optional[callable] = None,
 ) -> dict[str, dict]:
     """
@@ -144,13 +144,15 @@ def batch_match_songs(
         songs: List of song dicts with 'id' and 'title' keys
         api_key: Strum Machine API key
         use_cache: Whether to use/update cache
-        progress_callback: Optional callback(current, total, title) for progress
+        force: If True, ignore cache and re-fetch all songs
+        progress_callback: Optional callback(current, total, title, match, cached) for progress
 
     Returns:
         Dict mapping song_id -> match result (or None)
     """
-    cache = load_cache() if use_cache else {}
+    cache = {} if force else (load_cache() if use_cache else {})
     results = {}
+    api_calls = 0
 
     # Use connection pooling for efficiency
     with httpx.Client(timeout=30.0) as client:
@@ -162,12 +164,17 @@ def batch_match_songs(
                 results[song_id] = None
                 continue
 
-            # Check cache first
+            # Check cache first (None means "checked but no match")
             cache_key = title.lower().strip()
-            if use_cache and cache_key in cache:
-                results[song_id] = cache[cache_key]
+            if use_cache and not force and cache_key in cache:
+                cached_result = cache[cache_key]
+                # Handle legacy None entries and new _no_match sentinel
+                if cached_result and cached_result.get("_no_match"):
+                    results[song_id] = None
+                else:
+                    results[song_id] = cached_result
                 if progress_callback:
-                    progress_callback(i + 1, len(songs), title, cached=True)
+                    progress_callback(i + 1, len(songs), title, cached_result, cached=True)
                 continue
 
             # Rate limit
@@ -176,15 +183,20 @@ def batch_match_songs(
             # Fetch from API
             match = match_song(title, api_key, client=client)
             results[song_id] = match
+            api_calls += 1
 
-            # Update cache
+            # Update cache - store sentinel for no-match so we don't re-poll
             if use_cache:
-                cache[cache_key] = match
+                cache[cache_key] = match if match else {"_no_match": True}
 
             if progress_callback:
-                progress_callback(i + 1, len(songs), title, cached=False)
+                progress_callback(i + 1, len(songs), title, match, cached=False)
 
-    # Save cache
+            # Save cache periodically (every 100 API calls) for resume on failure
+            if use_cache and api_calls % 100 == 0:
+                save_cache(cache)
+
+    # Final save
     if use_cache:
         save_cache(cache)
 
@@ -215,22 +227,38 @@ def build_strum_machine_url(base_url: str, key: Optional[str] = None, bpm: Optio
     return base_url
 
 
-def print_progress(current: int, total: int, title: str, cached: bool = False) -> None:
-    """Default progress callback."""
-    status = "cached" if cached else "fetched"
-    print(f"[{current}/{total}] {status}: {title[:50]}", file=sys.stderr)
+def print_progress(current: int, total: int, title: str, match: Optional[dict], cached: bool = False) -> None:
+    """Default progress callback with match logging."""
+    if cached:
+        status = "cached"
+    elif match and not match.get("_no_match"):
+        status = f"MATCH"
+    else:
+        status = "no match"
+
+    # Log attempted title and matched title (if different)
+    if match and not match.get("_no_match"):
+        matched_title = match.get("title", "")
+        if matched_title.lower() != title.lower():
+            print(f"[{current}/{total}] {status}: '{title[:40]}' -> '{matched_title[:40]}'", file=sys.stderr)
+        else:
+            print(f"[{current}/{total}] {status}: {title[:50]}", file=sys.stderr)
+    else:
+        print(f"[{current}/{total}] {status}: {title[:50]}", file=sys.stderr)
 
 
 # CLI interface
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python -m scripts.lib.strum_machine <song title>")
-        print("       python -m scripts.lib.strum_machine --batch")
+        print("       python -m scripts.lib.strum_machine --batch [--force]")
         sys.exit(1)
 
     api_key = get_api_key()
 
     if sys.argv[1] == "--batch":
+        force = "--force" in sys.argv
+
         # Batch mode: read songs from index.jsonl
         index_file = Path(__file__).parent.parent.parent / "docs" / "data" / "index.jsonl"
         if not index_file.exists():
@@ -243,8 +271,12 @@ if __name__ == "__main__":
                 if line.strip():
                     songs.append(json.loads(line))
 
-        print(f"Matching {len(songs)} songs against Strum Machine...", file=sys.stderr)
-        results = batch_match_songs(songs, api_key, progress_callback=print_progress)
+        if force:
+            print(f"FORCE MODE: Re-fetching all {len(songs)} songs...", file=sys.stderr)
+        else:
+            print(f"Matching {len(songs)} songs against Strum Machine (cached songs will be skipped)...", file=sys.stderr)
+
+        results = batch_match_songs(songs, api_key, force=force, progress_callback=print_progress)
 
         # Output results as JSON
         matched = {k: v for k, v in results.items() if v}
