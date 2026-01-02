@@ -28,7 +28,9 @@ test.describe('Search', () => {
     });
 
     test('search by artist filter', async ({ page }) => {
-        await page.fill('#search-input', 'artist:hank williams');
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('artist:hank williams', { delay: 30 });
         await page.waitForTimeout(500);
 
         // All results should have Hank Williams as artist
@@ -59,7 +61,10 @@ test.describe('Search', () => {
     });
 
     test('search stats update with filter info', async ({ page }) => {
-        await page.fill('#search-input', 'artist:bill monroe');
+        // Type character by character to ensure input events fire
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('artist:bill monroe', { delay: 50 });
         await page.waitForTimeout(500);
 
         // Stats should show filter info like 'artist: "bill monroe"'
@@ -80,7 +85,9 @@ test.describe('Search', () => {
 
     test('negative filter excludes results', async ({ page }) => {
         // Search for bluegrass but not instrumentals
-        await page.fill('#search-input', 'tag:bluegrass -tag:instrumental');
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('tag:bluegrass -tag:instrumental', { delay: 30 });
         await page.waitForTimeout(300);
 
         const stats = page.locator('#search-stats');

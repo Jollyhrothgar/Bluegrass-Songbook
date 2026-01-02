@@ -170,15 +170,15 @@ export function loadViewPrefs() {
     }
 }
 
-export function setCompactMode(value) { compactMode = value; saveViewPrefs(); }
-export function setNashvilleMode(value) { nashvilleMode = value; saveViewPrefs(); }
-export function setTwoColumnMode(value) { twoColumnMode = value; saveViewPrefs(); }
-export function setChordDisplayMode(value) { chordDisplayMode = value; saveViewPrefs(); }
+export function setCompactMode(value) { compactMode = value; saveViewPrefs(); notifyChange('compactMode'); }
+export function setNashvilleMode(value) { nashvilleMode = value; saveViewPrefs(); notifyChange('nashvilleMode'); }
+export function setTwoColumnMode(value) { twoColumnMode = value; saveViewPrefs(); notifyChange('twoColumnMode'); }
+export function setChordDisplayMode(value) { chordDisplayMode = value; saveViewPrefs(); notifyChange('chordDisplayMode'); }
 export function clearSeenChordPatterns() { seenChordPatterns.clear(); }
 export function addSeenChordPattern(pattern) { seenChordPatterns.add(pattern); }
-export function setShowSectionLabels(value) { showSectionLabels = value; saveViewPrefs(); }
-export function setShowChordProSource(value) { showChordProSource = value; }
-export function setFontSizeLevel(value) { fontSizeLevel = value; saveViewPrefs(); }
+export function setShowSectionLabels(value) { showSectionLabels = value; saveViewPrefs(); notifyChange('showSectionLabels'); }
+export function setShowChordProSource(value) { showChordProSource = value; notifyChange('showChordProSource'); }
+export function setFontSizeLevel(value) { fontSizeLevel = value; saveViewPrefs(); notifyChange('fontSizeLevel'); }
 
 // Font size multipliers
 export const FONT_SIZES = {
@@ -221,7 +221,7 @@ export let currentDetectedKey = null;
 export let originalDetectedKey = null;
 export let originalDetectedMode = null;
 
-export function setCurrentDetectedKey(key) { currentDetectedKey = key; }
+export function setCurrentDetectedKey(key) { currentDetectedKey = key; notifyChange('currentDetectedKey'); }
 export function setOriginalDetectedKey(key) { originalDetectedKey = key; }
 export function setOriginalDetectedMode(mode) { originalDetectedMode = mode; }
 
@@ -240,8 +240,12 @@ export function setSyncInProgress(value) { syncInProgress = value; }
 // ============================================
 
 export let userLists = [];
+export let viewingListId = null;  // ID of list being viewed (or null)
+export let viewingPublicList = null;  // { list, songs, isOwner } when viewing shared list
 
 export function setUserLists(lists) { userLists = lists; }
+export function setViewingListId(id) { viewingListId = id; notifyChange('viewingListId'); }
+export function setViewingPublicList(data) { viewingPublicList = data; notifyChange('viewingPublicList'); }
 
 // ============================================
 // HISTORY STATE
@@ -343,6 +347,8 @@ const stateGetters = {
 
     // Lists
     userLists: () => userLists,
+    viewingListId: () => viewingListId,
+    viewingPublicList: () => viewingPublicList,
 
     // History
     historyInitialized: () => historyInitialized,
@@ -401,6 +407,8 @@ const stateSetters = {
 
     // Lists
     userLists: setUserLists,
+    viewingListId: setViewingListId,
+    viewingPublicList: setViewingPublicList,
 
     // History
     historyInitialized: setHistoryInitialized,

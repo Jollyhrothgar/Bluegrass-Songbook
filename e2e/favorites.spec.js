@@ -53,7 +53,11 @@ test.describe('Favorites', () => {
         await page.fill('#search-input', 'foggy mountain');
         await page.waitForTimeout(300);
         await page.locator('.result-list-btn').first().click();
+        await expect(page.locator('.result-list-picker')).toBeVisible();
         await page.locator('.result-list-picker .favorites-option input').click();
+
+        // Wait for the favorite to be saved (badge should update)
+        await expect(page.locator('#nav-favorites-count')).toHaveText('1');
 
         // Reload page
         await page.reload();
@@ -67,8 +71,7 @@ test.describe('Favorites', () => {
         await expect(page.locator('#search-stats')).toContainText('1 song');
     });
 
-    // TODO: Fix flaky test - checkbox click in picker doesn't remove favorite
-    test.skip('removing from favorites works', async ({ page }) => {
+    test('removing from favorites works', async ({ page }) => {
         // Add a favorite first
         await page.fill('#search-input', 'wagon wheel');
         await page.waitForTimeout(300);

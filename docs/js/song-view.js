@@ -17,6 +17,7 @@ import {
     originalDetectedKey, setOriginalDetectedKey,
     originalDetectedMode, setOriginalDetectedMode,
     historyInitialized,
+    currentView,
     // ABC notation state
     showAbcNotation, setShowAbcNotation,
     abcjsRendered, setAbcjsRendered,
@@ -31,6 +32,7 @@ import {
     fullscreenMode, setFullscreenMode,
     listContext, setListContext,
     // Reactive state
+    subscribe,
     setCurrentView
 } from './state.js';
 import { escapeHtml } from './utils.js';
@@ -1599,6 +1601,26 @@ export function initSongView(options) {
     if (navNextBtnEl) {
         navNextBtnEl.addEventListener('click', navigateNext);
     }
+
+    // Subscribe to display preference changes for reactive re-rendering
+    const displayPrefKeys = [
+        'compactMode',
+        'nashvilleMode',
+        'twoColumnMode',
+        'chordDisplayMode',
+        'showSectionLabels',
+        'fontSizeLevel',
+        'currentDetectedKey'
+    ];
+
+    displayPrefKeys.forEach(key => {
+        subscribe(key, () => {
+            // Only re-render if we're viewing a song
+            if (currentView === 'song' && currentSong && currentChordpro) {
+                renderSong(currentSong, currentChordpro);
+            }
+        });
+    });
 }
 
 /**

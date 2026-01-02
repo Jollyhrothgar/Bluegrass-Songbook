@@ -4,7 +4,10 @@ import {
     userLists, setUserLists,
     allSongs, currentSong,
     isCloudSyncEnabled, setCloudSyncEnabled,
-    setListContext
+    setListContext,
+    // Centralized list viewing state
+    viewingListId, setViewingListId,
+    viewingPublicList, setViewingPublicList
 } from './state.js';
 import { escapeHtml, generateLocalId } from './utils.js';
 import { showRandomSongs } from './search-core.js';
@@ -13,10 +16,6 @@ import { trackListAction } from './analytics.js';
 // Favorites is just a special list with this ID/name
 const FAVORITES_LIST_ID = 'favorites';
 const FAVORITES_LIST_NAME = 'Favorites';
-
-// Module-level state
-let viewingListId = null;
-let viewingPublicList = null;  // { list, songs, isOwner } - null if viewing own list
 
 // Track deleted lists to prevent sync from resurrecting them (persisted to localStorage)
 const DELETED_LISTS_KEY = 'songbook-deleted-lists';
@@ -143,6 +142,11 @@ export function toggleFavorite(songId) {
     saveLists();
     updateFavoritesCount();
 
+    // Re-render if currently viewing favorites
+    if (viewingListId === FAVORITES_LIST_ID || viewingListId === 'favorites') {
+        showFavorites();
+    }
+
     // Sync to cloud if logged in
     if (favList.cloudId && typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn()) {
         if (index === -1) {
@@ -221,8 +225,8 @@ export function showFavorites() {
 
     if (!favList || favList.songs.length === 0) {
         // Empty favorites view
-        viewingListId = FAVORITES_LIST_ID;
-        viewingPublicList = null;
+        setViewingListId(FAVORITES_LIST_ID);
+        setViewingPublicList(null);
 
         setListContext({
             listId: FAVORITES_LIST_ID,
@@ -255,8 +259,8 @@ export function showFavorites() {
     }
 
     // Show favorites using the regular list view
-    viewingListId = FAVORITES_LIST_ID;  // Always use local ID for favorites
-    viewingPublicList = null;
+    setViewingListId(FAVORITES_LIST_ID);  // Always use local ID for favorites
+    setViewingPublicList(null);
     renderListViewUI(FAVORITES_LIST_NAME, favList.songs, true);
 
     // Update nav (renderListViewUI clears favorites active state)
@@ -746,8 +750,8 @@ export async function showListView(listId) {
 
     if (localList) {
         // It's a local list - show it normally
-        viewingListId = listId;
-        viewingPublicList = null;
+        setViewingListId(listId);
+        setViewingPublicList(null);
         renderListViewUI(localList.name, localList.songs, true);
         return;
     }
@@ -768,12 +772,12 @@ export async function showListView(listId) {
     const currentUser = SupabaseAuth.getUser();
     const isOwner = currentUser && data.list.user_id === currentUser.id;
 
-    viewingListId = listId;
-    viewingPublicList = {
+    setViewingListId(listId);
+    setViewingPublicList({
         list: data.list,
         songs: data.songs,
         isOwner
-    };
+    });
 
     renderListViewUI(data.list.name, data.songs, isOwner);
 }
@@ -782,8 +786,8 @@ export async function showListView(listId) {
  * Show "list not found" message
  */
 function showListNotFound() {
-    viewingListId = null;
-    viewingPublicList = null;
+    setViewingListId(null);
+    setViewingPublicList(null);
 
     if (searchStatsEl) {
         searchStatsEl.textContent = 'List not found';
@@ -888,8 +892,8 @@ function renderListViewUI(listName, songIds, isOwner) {
  * Clear list view state
  */
 export function clearListView() {
-    viewingListId = null;
-    viewingPublicList = null;
+    setViewingListId(null);
+    setViewingPublicList(null);
     setListContext(null);
     if (navListsContainerEl) {
         navListsContainerEl.querySelectorAll('.nav-item').forEach(btn => {

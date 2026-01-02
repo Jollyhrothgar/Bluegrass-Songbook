@@ -2043,19 +2043,14 @@ function init() {
     }
 
     // Bottom sheet control handlers
+    // Note: State setters now trigger reactive re-rendering via subscriptions in song-view.js
     sheetKeySelect?.addEventListener('change', (e) => {
         setCurrentDetectedKey(e.target.value);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     sheetFontDecrease?.addEventListener('click', () => {
         if (fontSizeLevel > -2) {
             setFontSizeLevel(fontSizeLevel - 1);
-            const song = getCurrentSong();
-            const chordpro = getCurrentChordpro();
-            if (song && chordpro) renderSong(song, chordpro);
             populateBottomSheet();
         }
     });
@@ -2063,46 +2058,28 @@ function init() {
     sheetFontIncrease?.addEventListener('click', () => {
         if (fontSizeLevel < 2) {
             setFontSizeLevel(fontSizeLevel + 1);
-            const song = getCurrentSong();
-            const chordpro = getCurrentChordpro();
-            if (song && chordpro) renderSong(song, chordpro);
             populateBottomSheet();
         }
     });
 
     sheetChordMode?.addEventListener('change', (e) => {
         setChordDisplayMode(e.target.value);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     sheetCompact?.addEventListener('change', (e) => {
         setCompactMode(e.target.checked);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     sheetNashville?.addEventListener('change', (e) => {
         setNashvilleMode(e.target.checked);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     sheetTwocol?.addEventListener('change', (e) => {
         setTwoColumnMode(e.target.checked);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     sheetLabels?.addEventListener('change', (e) => {
         setShowSectionLabels(e.target.checked);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     // Bottom sheet handlers
