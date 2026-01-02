@@ -1962,6 +1962,11 @@ function init() {
         e.stopPropagation();
         listPickerDropdown?.classList.toggle('hidden');
         if (!listPickerDropdown?.classList.contains('hidden')) {
+            // Position the dropdown below the button (fixed positioning)
+            const rect = listPickerBtn.getBoundingClientRect();
+            listPickerDropdown.style.top = `${rect.bottom + 4}px`;
+            listPickerDropdown.style.left = `${rect.left}px`;
+            listPickerDropdown.style.transform = '';  // Clear any transform from mobile
             renderListPickerDropdown();
         }
     });
@@ -2117,7 +2122,13 @@ function init() {
                 case 'lists':
                     listPickerDropdown?.classList.toggle('hidden');
                     if (!listPickerDropdown?.classList.contains('hidden')) {
+                        // Position in center of screen for mobile (from bottom sheet)
+                        listPickerDropdown.style.top = '50%';
+                        listPickerDropdown.style.left = '50%';
+                        listPickerDropdown.style.transform = 'translate(-50%, -50%)';
                         renderListPickerDropdown();
+                    } else {
+                        listPickerDropdown.style.transform = '';
                     }
                     break;
                 case 'print':
