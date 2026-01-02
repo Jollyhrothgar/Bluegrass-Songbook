@@ -45,6 +45,9 @@ show_help() {
     echo "  build-posts"
     echo "      Build posts.json manifest from markdown files in docs/posts/"
     echo ""
+    echo "  loc [path]"
+    echo "      Count lines of code by language"
+    echo ""
     echo "  strum-machine-test <song title>"
     echo "      Test Strum Machine API match for a single song"
     echo ""
@@ -117,6 +120,9 @@ case "$COMMAND" in
     build-posts)
         echo "Building posts manifest..."
         uv run python3 scripts/lib/build_posts.py
+        ;;
+    loc)
+        uv run python3 scripts/lib/loc_counter.py "$@"
         ;;
     strum-machine-test)
         if [ -z "$1" ]; then
