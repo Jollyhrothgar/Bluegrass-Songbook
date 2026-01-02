@@ -61,12 +61,19 @@ async function signInWithGoogle() {
         return { error: { message: 'Auth not available' } };
     }
 
+    const redirectUrl = window.location.origin + window.location.pathname;
+    console.log('[Auth] OAuth redirect URL:', redirectUrl);
+
     const { data, error } = await supabaseClient.auth.signInWithOAuth({
         provider: 'google',
         options: {
-            redirectTo: window.location.origin + window.location.pathname
+            redirectTo: redirectUrl
         }
     });
+
+    if (error) {
+        console.error('[Auth] OAuth error:', error);
+    }
 
     return { data, error };
 }

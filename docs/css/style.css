@@ -2792,16 +2792,13 @@ mark {
 }
 
 .list-picker-dropdown {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    margin-top: 0.5rem;
+    position: fixed;  /* Fixed positioning to escape parent overflow clipping */
     min-width: 200px;
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 100;
+    z-index: 2001;  /* Above song content and other overlays */
     overflow: hidden;
 }
 
@@ -3169,7 +3166,7 @@ mark {
     border: 1px solid var(--border);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
+    z-index: 2001;  /* Above modals (2000) and sidebar (1001) */
     overflow: hidden;
 }
 

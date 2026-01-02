@@ -29,6 +29,9 @@ let draggedIndex = null;
 let currentDropTarget = null;
 let currentDropPosition = null;
 
+// Event delegation flag - ensures we only set up container listeners once
+let delegationInitialized = false;
+
 /**
  * Clear all drag indicator classes from result items
  */
@@ -502,168 +505,167 @@ export function renderResults(songs, query) {
 }
 
 /**
- * Setup event listeners for search results
+ * Setup event delegation for search results (called once per container)
+ * Uses event delegation to avoid per-item listener attachment
  */
 function setupResultEventListeners(resultsDiv) {
-    const viewingListId = getViewingListId();
-    // Only allow reordering for own lists/favorites, not shared public lists
-    const canReorder = isViewingOwnList();
+    // Only set up delegation once per container
+    if (delegationInitialized) return;
+    delegationInitialized = true;
 
-    // Click on result item opens song (or version picker if multiple versions)
-    const resultItems = resultsDiv.querySelectorAll('.result-item');
-    resultItems.forEach((item, index) => {
-        item.addEventListener('click', (e) => {
-            // Don't open song if clicking the list button, tag badge, or drag handle
-            if (e.target.classList.contains('result-list-btn')) return;
-            if (e.target.classList.contains('tag-badge')) return;
-            if (e.target.classList.contains('drag-handle')) return;
+    // === CLICK DELEGATION ===
+    // Single click handler for all result items, buttons, and badges
+    resultsDiv.addEventListener('click', (e) => {
+        // Handle list button click
+        const listBtn = e.target.closest('.result-list-btn');
+        if (listBtn) {
+            e.stopPropagation();
+            showResultListPicker(listBtn, listBtn.dataset.songId);
+            return;
+        }
 
-            const groupId = item.dataset.groupId;
+        // Handle tag badge click
+        const tagBadge = e.target.closest('.tag-badge');
+        if (tagBadge) {
+            e.stopPropagation();
+            const tag = tagBadge.dataset.tag;
+            if (tag && searchInputEl) {
+                searchInputEl.value = `tag:${tag}`;
+                search(`tag:${tag}`);
+            }
+            return;
+        }
+
+        // Handle drag handle - ignore clicks
+        if (e.target.classList.contains('drag-handle')) return;
+
+        // Handle result item click (open song)
+        const resultItem = e.target.closest('.result-item');
+        if (resultItem) {
+            const groupId = resultItem.dataset.groupId;
             const versions = groupId ? (songGroups[groupId] || []) : [];
+            const index = parseInt(resultItem.dataset.index, 10);
 
-            // Flush pending search before recording click (so search is recorded first)
+            // Flush pending search before recording click
             flushPendingSearch();
-            trackSearchResultClick(item.dataset.id, index, searchInputEl?.value || '');
+            trackSearchResultClick(resultItem.dataset.id, index, searchInputEl?.value || '');
 
             // Open song - auto-fullscreen if coming from a list/favorites view
-            const fromList = !!viewingListId;
+            const fromList = !!getViewingListId();
             if (versions.length > 1) {
                 showVersionPicker(groupId, { fromList });
             } else {
-                openSong(item.dataset.id, { fromList });
+                openSong(resultItem.dataset.id, { fromList });
             }
-        });
-
-        // Drag and drop handlers for list/favorites view (only if owner)
-        if (canReorder) {
-            item.addEventListener('dragstart', (e) => {
-                draggedItem = item;
-                draggedIndex = parseInt(item.dataset.index, 10);
-                item.classList.add('dragging');
-                e.dataTransfer.effectAllowed = 'move';
-                e.dataTransfer.setData('text/plain', item.dataset.id);
-            });
-
-            item.addEventListener('dragend', () => {
-                if (draggedItem) {
-                    draggedItem.classList.remove('dragging');
-                }
-                draggedItem = null;
-                draggedIndex = null;
-                // Remove all drag-over classes
-                clearDragClasses(resultsDiv);
-            });
-
         }
     });
 
-    // Container-level dragover for better hit detection (only if owner)
-    if (canReorder) {
-        resultsDiv.addEventListener('dragover', (e) => {
-            if (!draggedItem) return;
-            e.preventDefault();
+    // === DRAG START DELEGATION ===
+    resultsDiv.addEventListener('dragstart', (e) => {
+        const item = e.target.closest('.result-item');
+        if (!item || !isViewingOwnList()) return;
 
-            const items = Array.from(resultsDiv.querySelectorAll('.result-item:not(.dragging)'));
-            if (items.length === 0) return;
+        draggedItem = item;
+        draggedIndex = parseInt(item.dataset.index, 10);
+        item.classList.add('dragging');
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', item.dataset.id);
+    });
 
-            // Find the closest item edge to the cursor
-            let closestItem = null;
-            let closestPosition = null;
-            let closestDistance = Infinity;
+    // === DRAG END DELEGATION ===
+    resultsDiv.addEventListener('dragend', (e) => {
+        if (draggedItem) {
+            draggedItem.classList.remove('dragging');
+        }
+        draggedItem = null;
+        draggedIndex = null;
+        clearDragClasses(resultsDiv);
+    });
 
-            for (const item of items) {
-                const rect = item.getBoundingClientRect();
-                const topDist = Math.abs(e.clientY - rect.top);
-                const bottomDist = Math.abs(e.clientY - rect.bottom);
+    // === DRAGOVER (container level) ===
+    resultsDiv.addEventListener('dragover', (e) => {
+        if (!draggedItem) return;
+        e.preventDefault();
 
-                if (topDist < closestDistance) {
-                    closestDistance = topDist;
-                    closestItem = item;
-                    closestPosition = 'above';
-                }
-                if (bottomDist < closestDistance) {
-                    closestDistance = bottomDist;
-                    closestItem = item;
-                    closestPosition = 'below';
-                }
+        const items = Array.from(resultsDiv.querySelectorAll('.result-item:not(.dragging)'));
+        if (items.length === 0) return;
+
+        // Find the closest item edge to the cursor
+        let closestItem = null;
+        let closestPosition = null;
+        let closestDistance = Infinity;
+
+        for (const item of items) {
+            const rect = item.getBoundingClientRect();
+            const topDist = Math.abs(e.clientY - rect.top);
+            const bottomDist = Math.abs(e.clientY - rect.bottom);
+
+            if (topDist < closestDistance) {
+                closestDistance = topDist;
+                closestItem = item;
+                closestPosition = 'above';
             }
-
-            // Only update if changed
-            if (closestItem && (currentDropTarget !== closestItem || currentDropPosition !== closestPosition)) {
-                clearDragClasses(resultsDiv);
-                currentDropTarget = closestItem;
-                currentDropPosition = closestPosition;
-                closestItem.classList.add(closestPosition === 'above' ? 'drag-over-above' : 'drag-over-below');
+            if (bottomDist < closestDistance) {
+                closestDistance = bottomDist;
+                closestItem = item;
+                closestPosition = 'below';
             }
-        });
+        }
 
-        resultsDiv.addEventListener('dragleave', (e) => {
-            // Only clear if leaving the container entirely
-            if (!resultsDiv.contains(e.relatedTarget)) {
-                clearDragClasses(resultsDiv);
-            }
-        });
-
-        resultsDiv.addEventListener('drop', (e) => {
-            e.preventDefault();
-            if (!draggedItem || !currentDropTarget || draggedIndex === null) {
-                clearDragClasses(resultsDiv);
-                return;
-            }
-
-            const targetIndex = parseInt(currentDropTarget.dataset.index, 10);
-            const wasAbove = currentDropPosition === 'above';
+        // Only update if changed
+        if (closestItem && (currentDropTarget !== closestItem || currentDropPosition !== closestPosition)) {
             clearDragClasses(resultsDiv);
-
-            // Calculate insertion index
-            let toIndex;
-            if (draggedIndex < targetIndex) {
-                toIndex = wasAbove ? targetIndex - 1 : targetIndex;
-            } else {
-                toIndex = wasAbove ? targetIndex : targetIndex + 1;
-            }
-            toIndex = Math.max(0, toIndex);
-
-            if (toIndex === draggedIndex) return;
-
-            const currentListId = getViewingListId();
-
-            if (currentListId === 'favorites') {
-                if (reorderFavoriteItem(draggedIndex, toIndex)) {
-                    showFavorites();
-                }
-            } else if (currentListId) {
-                if (reorderSongInList(currentListId, draggedIndex, toIndex)) {
-                    import('./lists.js').then(({ showListView }) => {
-                        showListView(currentListId);
-                    });
-                }
-            }
-        });
-    }
-
-    // Click on list button shows picker
-    resultsDiv.querySelectorAll('.result-list-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            showResultListPicker(btn, btn.dataset.songId);
-        });
+            currentDropTarget = closestItem;
+            currentDropPosition = closestPosition;
+            closestItem.classList.add(closestPosition === 'above' ? 'drag-over-above' : 'drag-over-below');
+        }
     });
 
-    // Click on tag badge filters by that tag
-    resultsDiv.querySelectorAll('.tag-badge').forEach(badge => {
-        badge.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const tag = badge.dataset.tag;
-            if (tag) {
-                if (searchInputEl) {
-                    searchInputEl.value = `tag:${tag}`;
-                }
-                search(`tag:${tag}`);
-            }
-        });
+    // === DRAGLEAVE ===
+    resultsDiv.addEventListener('dragleave', (e) => {
+        // Only clear if leaving the container entirely
+        if (!resultsDiv.contains(e.relatedTarget)) {
+            clearDragClasses(resultsDiv);
+        }
     });
 
+    // === DROP ===
+    resultsDiv.addEventListener('drop', (e) => {
+        e.preventDefault();
+        if (!draggedItem || !currentDropTarget || draggedIndex === null) {
+            clearDragClasses(resultsDiv);
+            return;
+        }
+
+        const targetIndex = parseInt(currentDropTarget.dataset.index, 10);
+        const wasAbove = currentDropPosition === 'above';
+        clearDragClasses(resultsDiv);
+
+        // Calculate insertion index
+        let toIndex;
+        if (draggedIndex < targetIndex) {
+            toIndex = wasAbove ? targetIndex - 1 : targetIndex;
+        } else {
+            toIndex = wasAbove ? targetIndex : targetIndex + 1;
+        }
+        toIndex = Math.max(0, toIndex);
+
+        if (toIndex === draggedIndex) return;
+
+        const currentListId = getViewingListId();
+
+        if (currentListId === 'favorites') {
+            if (reorderFavoriteItem(draggedIndex, toIndex)) {
+                showFavorites();
+            }
+        } else if (currentListId) {
+            if (reorderSongInList(currentListId, draggedIndex, toIndex)) {
+                import('./lists.js').then(({ showListView }) => {
+                    showListView(currentListId);
+                });
+            }
+        }
+    });
 }
 
 /**

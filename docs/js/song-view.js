@@ -17,6 +17,7 @@ import {
     originalDetectedKey, setOriginalDetectedKey,
     originalDetectedMode, setOriginalDetectedMode,
     historyInitialized,
+    currentView,
     // ABC notation state
     showAbcNotation, setShowAbcNotation,
     abcjsRendered, setAbcjsRendered,
@@ -29,7 +30,10 @@ import {
     abcIsPlaying, setAbcIsPlaying,
     // Fullscreen/navigation state
     fullscreenMode, setFullscreenMode,
-    listContext, setListContext
+    listContext, setListContext,
+    // Reactive state
+    subscribe,
+    setCurrentView
 } from './state.js';
 import { escapeHtml } from './utils.js';
 import {
@@ -1147,10 +1151,8 @@ export async function openSong(songId, options = {}) {
         pushHistoryStateFn('song', { songId, listId: effectiveListId }, fromDeepLink);
     }
 
-    songViewEl.classList.remove('hidden');
-    resultsDivEl.classList.add('hidden');
-    const searchContainer = document.querySelector('.search-container');
-    if (searchContainer) searchContainer.classList.add('hidden');
+    // Update view state - triggers DOM update via subscriber
+    setCurrentView('song');
 
     // Reset key tracking for new song
     setOriginalDetectedKey(null);
@@ -1221,10 +1223,8 @@ export async function openSong(songId, options = {}) {
 export async function openSongFromHistory(songId) {
     if (!songViewEl || !resultsDivEl) return;
 
-    songViewEl.classList.remove('hidden');
-    resultsDivEl.classList.add('hidden');
-    const searchContainer = document.querySelector('.search-container');
-    if (searchContainer) searchContainer.classList.add('hidden');
+    // Update view state - triggers DOM update via subscriber
+    setCurrentView('song');
 
     setOriginalDetectedKey(null);
     setOriginalDetectedMode(null);
@@ -1601,6 +1601,26 @@ export function initSongView(options) {
     if (navNextBtnEl) {
         navNextBtnEl.addEventListener('click', navigateNext);
     }
+
+    // Subscribe to display preference changes for reactive re-rendering
+    const displayPrefKeys = [
+        'compactMode',
+        'nashvilleMode',
+        'twoColumnMode',
+        'chordDisplayMode',
+        'showSectionLabels',
+        'fontSizeLevel',
+        'currentDetectedKey'
+    ];
+
+    displayPrefKeys.forEach(key => {
+        subscribe(key, () => {
+            // Only re-render if we're viewing a song
+            if (currentView === 'song' && currentSong && currentChordpro) {
+                renderSong(currentSong, currentChordpro);
+            }
+        });
+    });
 }
 
 /**

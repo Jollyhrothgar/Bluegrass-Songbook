@@ -25,7 +25,9 @@ import {
     showSectionLabels, setShowSectionLabels,
     twoColumnMode, setTwoColumnMode,
     fontSizeLevel, setFontSizeLevel, FONT_SIZES,
-    setListContext
+    setListContext,
+    // Reactive state system
+    subscribe, setCurrentView, currentView
 } from './state.js';
 import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import {
@@ -243,6 +245,11 @@ function pushHistoryState(view, data = {}, replace = false) {
 
 function handleHistoryNavigation(state) {
     if (!state) {
+        // If no state, we might be back at the initial page load state
+        // Check if there's a hash we should respect (like #song/id)
+        if (handleDeepLink()) {
+            return;
+        }
         showView('search');
         return;
     }
@@ -279,44 +286,67 @@ function handleHistoryNavigation(state) {
 }
 
 function showView(mode) {
+    // Update state - this will trigger the subscriber
+    setCurrentView(mode);
+}
+
+// Subscribe to view changes and update DOM accordingly
+function initViewSubscription() {
     const searchContainer = document.querySelector('.search-container');
 
-    // Close any open editor hints panel
-    closeHints();
+    subscribe('currentView', (view) => {
+        // Close any open editor hints panel
+        closeHints();
 
-    // Reset all nav states
-    [navSearch, navAddSong, navFavorites].forEach(btn => {
-        if (btn) btn.classList.remove('active');
+        // Close bottom sheet if open (it has position: fixed so stays visible)
+        bottomSheet?.classList.add('hidden');
+        bottomSheetBackdrop?.classList.add('hidden');
+
+        // Reset all nav states
+        [navSearch, navAddSong, navFavorites].forEach(btn => {
+            if (btn) btn.classList.remove('active');
+        });
+
+        // Clear list view state
+        clearListView();
+
+        switch (view) {
+            case 'search':
+                searchContainer?.classList.remove('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                navSearch?.classList.add('active');
+                break;
+            case 'add-song':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.add('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.remove('hidden');
+                navAddSong?.classList.add('active');
+                break;
+            case 'favorites':
+                searchContainer?.classList.remove('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                navFavorites?.classList.add('active');
+                showFavorites();
+                break;
+            case 'song':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.add('hidden');
+                songView?.classList.remove('hidden');
+                editorPanel?.classList.add('hidden');
+                break;
+            case 'list':
+                searchContainer?.classList.remove('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                break;
+        }
     });
-
-    // Clear list view state
-    clearListView();
-
-    switch (mode) {
-        case 'search':
-            searchContainer?.classList.remove('hidden');
-            resultsDiv?.classList.remove('hidden');
-            songView?.classList.add('hidden');
-            editorPanel?.classList.add('hidden');
-            navSearch?.classList.add('active');
-            // clearListView() already handles clearing list state
-            break;
-        case 'add-song':
-            searchContainer?.classList.add('hidden');
-            resultsDiv?.classList.add('hidden');
-            songView?.classList.add('hidden');
-            editorPanel?.classList.remove('hidden');
-            navAddSong?.classList.add('active');
-            break;
-        case 'favorites':
-            searchContainer?.classList.remove('hidden');
-            resultsDiv?.classList.remove('hidden');
-            songView?.classList.add('hidden');
-            editorPanel?.classList.add('hidden');
-            navFavorites?.classList.add('active');
-            showFavorites();
-            break;
-    }
 }
 
 function handleDeepLink() {
@@ -1720,6 +1750,9 @@ function init() {
     // Load saved view preferences (before rendering any songs)
     loadViewPrefs();
 
+    // Initialize reactive view state subscription
+    initViewSubscription();
+
     // Initialize analytics (early, before other modules)
     initAnalytics();
 
@@ -1929,6 +1962,11 @@ function init() {
         e.stopPropagation();
         listPickerDropdown?.classList.toggle('hidden');
         if (!listPickerDropdown?.classList.contains('hidden')) {
+            // Position the dropdown below the button (fixed positioning)
+            const rect = listPickerBtn.getBoundingClientRect();
+            listPickerDropdown.style.top = `${rect.bottom + 4}px`;
+            listPickerDropdown.style.left = `${rect.left}px`;
+            listPickerDropdown.style.transform = '';  // Clear any transform from mobile
             renderListPickerDropdown();
         }
     });
@@ -2014,19 +2052,14 @@ function init() {
     }
 
     // Bottom sheet control handlers
+    // Note: State setters now trigger reactive re-rendering via subscriptions in song-view.js
     sheetKeySelect?.addEventListener('change', (e) => {
         setCurrentDetectedKey(e.target.value);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     sheetFontDecrease?.addEventListener('click', () => {
         if (fontSizeLevel > -2) {
             setFontSizeLevel(fontSizeLevel - 1);
-            const song = getCurrentSong();
-            const chordpro = getCurrentChordpro();
-            if (song && chordpro) renderSong(song, chordpro);
             populateBottomSheet();
         }
     });
@@ -2034,46 +2067,28 @@ function init() {
     sheetFontIncrease?.addEventListener('click', () => {
         if (fontSizeLevel < 2) {
             setFontSizeLevel(fontSizeLevel + 1);
-            const song = getCurrentSong();
-            const chordpro = getCurrentChordpro();
-            if (song && chordpro) renderSong(song, chordpro);
             populateBottomSheet();
         }
     });
 
     sheetChordMode?.addEventListener('change', (e) => {
         setChordDisplayMode(e.target.value);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     sheetCompact?.addEventListener('change', (e) => {
         setCompactMode(e.target.checked);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     sheetNashville?.addEventListener('change', (e) => {
         setNashvilleMode(e.target.checked);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     sheetTwocol?.addEventListener('change', (e) => {
         setTwoColumnMode(e.target.checked);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     sheetLabels?.addEventListener('change', (e) => {
         setShowSectionLabels(e.target.checked);
-        const song = getCurrentSong();
-        const chordpro = getCurrentChordpro();
-        if (song && chordpro) renderSong(song, chordpro);
     });
 
     // Bottom sheet handlers
@@ -2107,7 +2122,13 @@ function init() {
                 case 'lists':
                     listPickerDropdown?.classList.toggle('hidden');
                     if (!listPickerDropdown?.classList.contains('hidden')) {
+                        // Position in center of screen for mobile (from bottom sheet)
+                        listPickerDropdown.style.top = '50%';
+                        listPickerDropdown.style.left = '50%';
+                        listPickerDropdown.style.transform = 'translate(-50%, -50%)';
                         renderListPickerDropdown();
+                    } else {
+                        listPickerDropdown.style.transform = '';
                     }
                     break;
                 case 'print':
@@ -2148,6 +2169,11 @@ function init() {
     // History navigation
     window.addEventListener('popstate', (e) => {
         handleHistoryNavigation(e.state);
+    });
+
+    // Handle hash changes that don't trigger popstate (e.g. manual URL edits)
+    window.addEventListener('hashchange', () => {
+        handleHistoryNavigation(history.state);
     });
 
     // Initialize Supabase auth
