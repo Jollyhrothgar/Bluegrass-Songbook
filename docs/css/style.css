@@ -1431,6 +1431,33 @@ h1 {
     text-decoration: underline;
 }
 
+.strum-machine-link {
+    margin-top: 0.5rem;
+}
+
+.strum-machine-link a {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.strum-machine-link a:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--accent);
+    text-decoration: none;
+}
+
+.strum-machine-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+}
+
 .detected-key {
     font-weight: 600;
     color: var(--accent);

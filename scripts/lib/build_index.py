@@ -604,6 +604,25 @@ def build_index(parsed_dirs: list[Path], output_file: Path, enrich_tags: bool = 
         except Exception as e:
             print(f"Tag enrichment failed: {e}")
 
+    # Enrich with Strum Machine URLs (from pre-computed cache)
+    try:
+        from strum_machine import load_cache as load_strum_cache
+        strum_cache = load_strum_cache()
+        if strum_cache:
+            strum_matches = 0
+            for song in songs:
+                title = song.get('title', '').lower().strip()
+                if title in strum_cache and strum_cache[title]:
+                    song['strum_machine_url'] = strum_cache[title]['url']
+                    strum_matches += 1
+            print(f"Strum Machine: {strum_matches}/{len(songs)} songs matched")
+        else:
+            print("Strum Machine: No cache found (run ./scripts/utility strum-machine-match)")
+    except ImportError:
+        pass  # strum_machine module not available
+    except Exception as e:
+        print(f"Strum Machine enrichment failed: {e}")
+
     # Deduplicate truly identical songs (exact same content)
     # Keep versions with same lyrics but different chords
     seen_content = {}

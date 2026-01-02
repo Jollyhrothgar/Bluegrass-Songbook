@@ -12,6 +12,27 @@ HTML → raw .pro  →  enriched .pro       →   index.jsonl
                     - Normalize chords
 ```
 
+## Local vs CI Operations
+
+Some operations require external APIs/databases and only run locally. Others run everywhere.
+
+| Operation | Where | Cache File | Notes |
+|-----------|-------|------------|-------|
+| **Build index** | Everywhere | - | Core build, always runs |
+| **Harmonic analysis** | Everywhere | - | Computes JamFriendly, Modal tags from chords |
+| **MusicBrainz tags** | Local only | `artist_tags.json` | Requires local MB database on port 5440 |
+| **Strum Machine URLs** | Local only | `strum_machine_cache.json` | API rate limited (10 req/sec) |
+| **TuneArch fetch** | Local only | - | Fetches new instrumentals |
+
+**How caching works:**
+1. Run local command to populate cache (e.g., `refresh-tags`, `strum-machine-match`)
+2. Commit the cache file to git
+3. CI reads cache during build - no external API calls
+
+**Cache files (commit these after updating):**
+- `docs/data/artist_tags.json` - MusicBrainz artist → genre mappings
+- `docs/data/strum_machine_cache.json` - Song title → Strum Machine URL mappings
+
 ## Files
 
 ```
@@ -20,6 +41,7 @@ scripts/lib/
 ├── build_index.py        # Build docs/data/index.jsonl from .pro files
 ├── tag_enrichment.py     # Tag enrichment (MusicBrainz + harmonic analysis)
 ├── query_artist_tags.py  # Optimized MusicBrainz artist tag queries
+├── strum_machine.py      # Strum Machine API integration
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_submission.py # GitHub Action: process song-submission issues
 ├── process_correction.py # GitHub Action: process song-correction issues
@@ -44,8 +66,11 @@ uv run python scripts/lib/enrich_songs.py
 # Count chord usage across all songs
 ./scripts/utility count-chords
 
-# Refresh tags from MusicBrainz (requires local MB database)
+# Refresh tags from MusicBrainz (LOCAL ONLY - requires MB database)
 ./scripts/utility refresh-tags
+
+# Match songs to Strum Machine (LOCAL ONLY - ~30 min for 17k songs)
+./scripts/utility strum-machine-match
 ```
 
 ## enrich_songs.py

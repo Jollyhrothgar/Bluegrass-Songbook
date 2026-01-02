@@ -45,6 +45,13 @@ show_help() {
     echo "  build-posts"
     echo "      Build posts.json manifest from markdown files in docs/posts/"
     echo ""
+    echo "  strum-machine-test <song title>"
+    echo "      Test Strum Machine API match for a single song"
+    echo ""
+    echo "  strum-machine-match"
+    echo "      Batch match all songs against Strum Machine and cache results"
+    echo "      (requires STRUM_MACHINE_API_KEY env var)"
+    echo ""
 }
 
 case "$COMMAND" in
@@ -110,6 +117,20 @@ case "$COMMAND" in
     build-posts)
         echo "Building posts manifest..."
         uv run python3 scripts/lib/build_posts.py
+        ;;
+    strum-machine-test)
+        if [ -z "$1" ]; then
+            echo "Error: song title required"
+            echo "Usage: ./scripts/utility strum-machine-test \"Song Title\""
+            exit 1
+        fi
+        uv run python3 -m scripts.lib.strum_machine "$@"
+        ;;
+    strum-machine-match)
+        echo "Matching all songs against Strum Machine..."
+        echo "(This will take ~30 minutes for 17k songs at 10 req/sec)"
+        echo ""
+        uv run python3 -m scripts.lib.strum_machine --batch
         ;;
     help|--help|-h|"")
         show_help

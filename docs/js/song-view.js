@@ -540,6 +540,14 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         metaHtml += `<div class="meta-item"><span class="meta-label">From:</span> <a href="${song.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a></div>`;
     }
 
+    // Strum Machine practice link (includes key param for current transposition)
+    if (song?.strum_machine_url) {
+        const smUrl = currentDetectedKey
+            ? `${song.strum_machine_url}?key=${encodeURIComponent(currentDetectedKey)}`
+            : song.strum_machine_url;
+        metaHtml += `<div class="meta-item strum-machine-link"><a href="${smUrl}" target="_blank" rel="noopener"><img src="images/strum_machine.png" alt="" class="strum-machine-icon">Practice on Strum Machine</a></div>`;
+    }
+
     // Tags with voting and "add your own" option
     const songTags = song.tags || {};
     const tagNames = Object.keys(songTags);
