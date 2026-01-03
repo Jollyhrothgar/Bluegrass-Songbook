@@ -1,0 +1,18 @@
+id: cowboys-like-us
+title: Cowboys Like Us
+artist: George Strait
+composers:
+- Written by Bob Dipiero, Anthony Smith
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cowboyslikeuslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: conscience-keep-an-eye-on-me
+title: Conscience Keep An Eye On Me
+artist: Norma Jean
+composers:
+- Jack Rhodes and Glen Goza
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: consciencekeepaneyeonmelyricschords.pro
+    imported_at: '2026-01-02'

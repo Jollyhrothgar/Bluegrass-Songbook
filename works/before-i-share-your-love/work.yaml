@@ -1,0 +1,17 @@
+id: before-i-share-your-love
+title: Before I Share Your Love
+artist: Carl Belew
+composers:
+- Carl Belew, Tommy Blake, W.S. Stevenson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforeishareyourlovelyricschords.pro
+    imported_at: '2026-01-02'

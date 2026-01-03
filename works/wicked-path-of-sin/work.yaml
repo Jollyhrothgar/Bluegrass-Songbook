@@ -1,0 +1,18 @@
+id: wicked-path-of-sin
+title: Wicked Path Of Sin
+artist: The Stanley Brothers
+composers:
+- Bill Monroe
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wickedpathofsinlyricschords.pro
+    imported_at: '2026-01-02'

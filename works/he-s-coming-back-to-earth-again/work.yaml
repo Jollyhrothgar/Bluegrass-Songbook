@@ -1,0 +1,17 @@
+id: he-s-coming-back-to-earth-again
+title: He's Coming Back To Earth Again
+artist: Reno and Smiley
+composers:
+- Don Reno
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hescomingbacktoearthagainlyricschords.pro
+    imported_at: '2026-01-02'

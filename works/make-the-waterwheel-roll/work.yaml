@@ -1,0 +1,17 @@
+id: make-the-waterwheel-roll
+title: Make The Waterwheel Roll
+artist: Jimmy Dean
+composers:
+- Mel Tillis and Marijohn Wilkin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makethewaterwheelrolllyricschords.pro
+    imported_at: '2026-01-02'

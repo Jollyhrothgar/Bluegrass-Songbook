@@ -1,0 +1,17 @@
+id: silence
+title: Silence
+artist: Charlie Pride
+composers:
+- Leon Ashley and Margie Singleton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: silencelyricsandchords.pro
+    imported_at: '2026-01-02'

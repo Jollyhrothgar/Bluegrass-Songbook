@@ -1,0 +1,17 @@
+id: mother-went-a-walkin
+title: Mother Went A Walkin'
+artist: Jim Reeves
+composers:
+- Tom Bearden and Bob Lowery
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: motherwentawalkinlyricschords.pro
+    imported_at: '2026-01-02'

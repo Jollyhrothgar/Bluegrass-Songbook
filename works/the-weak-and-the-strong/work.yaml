@@ -1,0 +1,17 @@
+id: the-weak-and-the-strong
+title: The Weak And The Strong
+artist: Jean Shepard
+composers:
+- Red Hayes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theweakandthestronglyricschords.pro
+    imported_at: '2026-01-02'

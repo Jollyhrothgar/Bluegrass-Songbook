@@ -1,0 +1,17 @@
+id: boobs
+title: Boobs
+artist: The Bellamy Brothers
+composers:
+- David Bellamy
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: boobslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: alone-and-broke-in-birmingham
+title: Alone And Broke In Birmingham
+artist: Cal Smith
+composers:
+- Jan Crutchfield and Jimmy Rule
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aloneandbrokeinbirminghamlyricschords.pro
+    imported_at: '2026-01-02'

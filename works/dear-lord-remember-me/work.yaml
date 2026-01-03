@@ -1,0 +1,19 @@
+id: dear-lord-remember-me
+title: Dear Lord Remember Me
+artist: Hank Snow
+composers:
+- Myrtle Jackson
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dearLordremembermelyricschords.pro
+    imported_at: '2026-01-02'

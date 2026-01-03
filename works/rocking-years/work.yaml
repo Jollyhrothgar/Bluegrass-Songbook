@@ -1,0 +1,20 @@
+id: rocking-years
+title: Rocking Years
+artist: Dolly Parton
+composers:
+- Floyd Estel Parton
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockingyearslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-re-that-someone-else
+title: You're That Someone Else
+artist: Wynn Stewart
+composers:
+- Tommy Collins and Wynn Stewart
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethatsomeoneelselyricschords.pro
+    imported_at: '2026-01-02'

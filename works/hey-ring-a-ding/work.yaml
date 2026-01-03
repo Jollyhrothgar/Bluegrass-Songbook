@@ -1,0 +1,18 @@
+id: hey-ring-a-ding
+title: Hey Ring-A-Ding
+artist: Connie Francis
+composers:
+- Eddie Curtis
+default_key: G
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heyringadinglyricschords.pro
+    imported_at: '2026-01-02'

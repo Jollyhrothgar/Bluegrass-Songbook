@@ -1,0 +1,20 @@
+id: who-are-you-who-am-i
+title: Who Are You Who Am I
+artist: Elvis Presley
+composers:
+- Sid Wayne and Ben Weisman
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoareyouwhoamilyricschords.pro
+    imported_at: '2026-01-02'

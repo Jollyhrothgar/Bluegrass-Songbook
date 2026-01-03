@@ -1,0 +1,18 @@
+id: i-ve-convinced-everybody-but-myself
+title: I've Convinced Everybody But Myself
+artist: Hank Thompson
+composers:
+- Hank Thompson and Billy Gray
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iveconvincedeverybodybymyselflyricschords.pro
+    imported_at: '2026-01-02'

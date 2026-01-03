@@ -1,0 +1,15 @@
+id: there-was-jesus
+title: There Was Jesus
+artist: Zach Williams
+composers:
+- Casey M. Beathard, Jonathan L. Smith
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therewasJesuslyricschords.pro
+    imported_at: '2026-01-02'

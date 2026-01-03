@@ -1,0 +1,17 @@
+id: what-in-her-world-did-i-do
+title: What in Her World Did I Do
+artist: Eddy Arnold
+composers:
+- Don Wayne and Bobby Fischer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatinherworlddididolyricschords.pro
+    imported_at: '2026-01-02'

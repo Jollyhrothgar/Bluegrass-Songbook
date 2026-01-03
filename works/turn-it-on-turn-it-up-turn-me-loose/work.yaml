@@ -1,0 +1,18 @@
+id: turn-it-on-turn-it-up-turn-me-loose
+title: Turn It On Turn It Up Turn Me Loose
+artist: Dwight Yoakam
+composers:
+- Wayland Patton and Kostas
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: turnitonturnitupturnmelooselyricschords.pro
+    imported_at: '2026-01-02'

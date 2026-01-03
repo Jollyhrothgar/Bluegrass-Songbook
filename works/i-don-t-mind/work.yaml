@@ -1,0 +1,19 @@
+id: i-don-t-mind
+title: I Don't Mind
+artist: Waylon Jennings
+composers:
+- Harlan Howard and Richard Johnson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontmindlyricschords.pro
+    imported_at: '2026-01-02'

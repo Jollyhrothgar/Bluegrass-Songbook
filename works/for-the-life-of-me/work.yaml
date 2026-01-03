@@ -1,0 +1,17 @@
+id: for-the-life-of-me
+title: For The Life Of Me
+artist: Dick Curless
+composers:
+- Joe Allison and Joyce Harris
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forthelifeofmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: baby-won-t-you-please-come-home
+title: Baby Won't You Please Come Home
+artist: Ricky Nelson
+composers:
+- Charles Warfield and Clarence Williams
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babywontyoupleasecomehomelyricschords.pro
+    imported_at: '2026-01-02'

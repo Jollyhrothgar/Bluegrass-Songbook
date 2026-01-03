@@ -1,0 +1,17 @@
+id: since-jesus-came-into-my-heart
+title: Since Jesus Came Into My Heart
+artist: Statler Brother
+composers:
+- Rufus H. McDaniel and Charles H. Gabriel
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sinceJesuscameintomyheartlyricschords.pro
+    imported_at: '2026-01-02'

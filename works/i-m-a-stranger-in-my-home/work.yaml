@@ -1,0 +1,17 @@
+id: i-m-a-stranger-in-my-home
+title: I'm A Stranger In My Home
+artist: Red Foley
+composers:
+- Pee Wee King and Redd Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imastrangerinmyhomelyricschords.pro
+    imported_at: '2026-01-02'

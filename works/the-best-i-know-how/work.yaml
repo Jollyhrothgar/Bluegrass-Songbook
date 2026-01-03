@@ -1,0 +1,17 @@
+id: the-best-i-know-how
+title: The Best I Know How
+artist: Statler Brothers
+composers:
+- Kim Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebestiknowhowlyricschords.pro
+    imported_at: '2026-01-02'

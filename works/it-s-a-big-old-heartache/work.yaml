@@ -1,0 +1,17 @@
+id: it-s-a-big-old-heartache
+title: It's A Big Old Heartache
+artist: Wilburn Brothers
+composers:
+- John Chenault and Bobby Overman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsabigoldheartachelyricschords.pro
+    imported_at: '2026-01-02'

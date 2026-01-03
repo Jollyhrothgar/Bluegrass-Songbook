@@ -1,0 +1,17 @@
+id: a-lifetime-to-regret
+title: A Lifetime To Regret
+artist: George Jones
+composers:
+- Leon Payne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alifetimetoregretlyricschords.pro
+    imported_at: '2026-01-02'

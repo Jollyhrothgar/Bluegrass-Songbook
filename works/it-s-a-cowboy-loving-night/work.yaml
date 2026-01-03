@@ -1,0 +1,18 @@
+id: it-s-a-cowboy-loving-night
+title: It's A Cowboy Loving Night
+artist: Tanya Tucker
+composers:
+- Randall Roger
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsacowboylovingnightlyricschords.pro
+    imported_at: '2026-01-02'

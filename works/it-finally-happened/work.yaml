@@ -1,0 +1,16 @@
+id: it-finally-happened
+title: It Finally Happened
+artist: Marty Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itfinallyhappenedlyricschords.pro
+    imported_at: '2026-01-02'

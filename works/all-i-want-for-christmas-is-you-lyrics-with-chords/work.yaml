@@ -1,0 +1,15 @@
+id: all-i-want-for-christmas-is-you-lyrics-with-chords
+title: All I Want For Christmas Is You Lyrics with Chords
+artist: Lisa Layne
+composers:
+- Troy Powers and Andy Stone
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alliwantforChristmasisyoulyricsandchords.pro
+    imported_at: '2026-01-02'

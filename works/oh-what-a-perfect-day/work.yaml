@@ -1,0 +1,17 @@
+id: oh-what-a-perfect-day
+title: Oh What A Perfect Day
+artist: George Strait
+composers:
+- Buddy Brock, Monty Holmes, Jeff Silvey
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohwhataperfectdaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: what-we-used-to-hang-on-to-is-gone
+title: What We Used To Hang On To Is Gone
+artist: Hank Williams Jr.
+composers:
+- Kent Westberry and Scott Turner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatweusedtohangontoisgonelyricschords.pro
+    imported_at: '2026-01-02'

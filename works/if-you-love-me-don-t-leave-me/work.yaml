@@ -1,0 +1,15 @@
+id: if-you-love-me-don-t-leave-me
+title: If You Love Me Don't Leave Me
+artist: Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoulovemedontleavemelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: you-were-all-the-good-in-me
+title: You Were All The Good In Me
+artist: Charley Pride
+composers:
+- Shirley Worth
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwereallthegoodinmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: lefty-s-old-guitar
+title: Lefty's Old Guitar
+artist: J.D. Crowe & the New South
+composers:
+- Dave Maggard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leftysoldguitarlyricschords.pro
+    imported_at: '2026-01-02'

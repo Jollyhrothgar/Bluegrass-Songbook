@@ -1,0 +1,19 @@
+id: sweet-dream-woman
+title: Sweet Dream Woman
+artist: Waylon Jennings
+composers:
+- Chip Taylor and Al Gordoni
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetdreamwomanlyricschords.pro
+    imported_at: '2026-01-02'

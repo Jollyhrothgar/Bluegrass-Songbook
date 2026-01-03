@@ -1,0 +1,17 @@
+id: i-ve-been-known-to-cry
+title: I've Been Known To Cry
+artist: George Jones
+composers:
+- Eddie Hallowell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivebeenknowntocrylyricschords.pro
+    imported_at: '2026-01-02'

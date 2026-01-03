@@ -1,0 +1,17 @@
+id: don-t-bother-with-white-satin
+title: Don't Bother With White Satin
+artist: The Seldom Scene
+composers:
+- John Duffey and Ann Hill
+default_key: C
+tags:
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontbotherwithwhitesatinlyricschords.pro
+    imported_at: '2026-01-02'

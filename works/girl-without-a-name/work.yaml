@@ -1,0 +1,17 @@
+id: girl-without-a-name
+title: Girl Without A Name
+artist: Hawkshaw Hawkins
+composers:
+- Ray Pennington
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: girlwithoutanamelyricschords.pro
+    imported_at: '2026-01-02'

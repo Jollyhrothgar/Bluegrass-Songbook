@@ -1,0 +1,19 @@
+id: sundown-and-sorrow
+title: Sundown and Sorrow
+artist: Hank Williams
+composers:
+- J. L. Frank and Pee Wee King
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sundownandsorrowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: when-the-blues-are-moving-in
+title: When The Blues Are Moving In
+artist: Doyle Lawson
+composers:
+- Jamie Dailey and Doyle Lawson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthebluesaremovinginlyricschords.pro
+    imported_at: '2026-01-02'

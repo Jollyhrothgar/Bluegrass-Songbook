@@ -1,0 +1,17 @@
+id: christmas-carol
+title: Christmas Carol
+artist: Skip Ewing
+composers:
+- Skip Ewing and Donald R. Sampson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmascarollyricschords.pro
+    imported_at: '2026-01-02'

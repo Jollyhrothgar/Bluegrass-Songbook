@@ -1,0 +1,18 @@
+id: jesus-is-a-soul-man
+title: Jesus Is A Soul Man
+artist: Conway Twitty
+composers:
+- Lawrence Reynolds and Jack Cardwell
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusisasoulmanlyricschords.pro
+    imported_at: '2026-01-02'

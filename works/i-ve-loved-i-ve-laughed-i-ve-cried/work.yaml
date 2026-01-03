@@ -1,0 +1,17 @@
+id: i-ve-loved-i-ve-laughed-i-ve-cried
+title: I've Loved I've Laughed I've Cried
+artist: Webb Pierce
+composers:
+- Webb Pierce and Hal Harris
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivelovedivelaughedivecriedlyricschords.pro
+    imported_at: '2026-01-02'

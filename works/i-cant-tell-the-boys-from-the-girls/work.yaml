@@ -1,0 +1,17 @@
+id: i-cant-tell-the-boys-from-the-girls
+title: I Can’t Tell The Boys From The Girls
+artist: Earl Scruggs
+composers:
+- Bob Leftridge and Lester Flatt
+default_key: G
+tags:
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanttelltheboysfromthegirlslyricschords.pro
+    imported_at: '2026-01-02'

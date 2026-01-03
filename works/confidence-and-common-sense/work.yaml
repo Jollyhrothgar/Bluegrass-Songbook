@@ -1,0 +1,17 @@
+id: confidence-and-common-sense
+title: Confidence And Common Sense
+artist: Billy Crash Craddock
+composers:
+- Durwood Haddock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: confidenceandcommonsenselyricschords.pro
+    imported_at: '2026-01-02'

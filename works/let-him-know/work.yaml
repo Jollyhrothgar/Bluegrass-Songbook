@@ -1,0 +1,15 @@
+id: let-him-know
+title: Let Him Know
+artist: George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lethimknowlyricschords.pro
+    imported_at: '2026-01-02'

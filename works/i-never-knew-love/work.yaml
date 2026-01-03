@@ -1,0 +1,17 @@
+id: i-never-knew-love
+title: I Never Knew Love
+artist: Doug Stone
+composers:
+- Larry Boone and William Robinson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineverknewlovelyricschords.pro
+    imported_at: '2026-01-02'

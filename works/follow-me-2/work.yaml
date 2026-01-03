@@ -1,0 +1,19 @@
+id: follow-me-2
+title: Follow Me
+artist: Ernest Tubb
+composers:
+- Sandra Adlon, Virginia Balmer, Leon Rhodes
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: followmelyricschords.pro
+    imported_at: '2026-01-02'

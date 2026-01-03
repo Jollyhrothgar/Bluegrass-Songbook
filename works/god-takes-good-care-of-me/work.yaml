@@ -1,0 +1,17 @@
+id: god-takes-good-care-of-me
+title: God Takes Good Care Of Me
+artist: Debra Talley
+composers:
+- Henry Slaughter
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godtakesgoodcareofmelyricschords.pro
+    imported_at: '2026-01-02'

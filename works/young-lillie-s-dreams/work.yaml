@@ -1,0 +1,16 @@
+id: young-lillie-s-dreams
+title: Young Lillie's Dreams
+artist: Terry Baucom
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: younglilliesdreamslyricschords.pro
+    imported_at: '2026-01-02'

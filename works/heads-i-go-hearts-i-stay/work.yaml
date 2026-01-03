@@ -1,0 +1,18 @@
+id: heads-i-go-hearts-i-stay
+title: Heads I Go Hearts I Stay
+artist: Mickey Gilley
+composers:
+- Wayland Holyfield
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: headsigoheartsistaylyricschords.pro
+    imported_at: '2026-01-02'

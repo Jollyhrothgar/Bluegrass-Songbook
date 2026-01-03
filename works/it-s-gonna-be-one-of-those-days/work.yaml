@@ -1,0 +1,17 @@
+id: it-s-gonna-be-one-of-those-days
+title: It's Gonna Be One Of Those Days
+artist: Carl Smith
+composers:
+- Tim Cantin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsgonnabeoneofthosedayslyricschords.pro
+    imported_at: '2026-01-02'

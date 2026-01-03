@@ -1,0 +1,18 @@
+id: here-i-am-2
+title: Here I Am
+artist: Patty Loveless
+composers:
+- Tony Arata
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hereiamlyricswithchords.pro
+    imported_at: '2026-01-02'

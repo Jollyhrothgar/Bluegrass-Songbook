@@ -1,0 +1,18 @@
+id: keep-on-the-sunny-side
+title: Keep On The Sunny Side
+artist: Lester Flatt
+composers:
+- A.P. Carer
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keeponthesunnysidelyricschords.pro
+    imported_at: '2026-01-02'

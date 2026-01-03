@@ -1,0 +1,19 @@
+id: that-s-what-you-get-for-loving-me
+title: That's What You Get For Loving Me
+artist: Waylon Jennings
+composers:
+- Gordon Lightfoot
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatyougetforlovingmelyricschords.pro
+    imported_at: '2026-01-02'

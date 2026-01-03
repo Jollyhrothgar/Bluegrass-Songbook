@@ -1,0 +1,18 @@
+id: easy-for-you-to-say
+title: Easy For You To Say
+artist: Emmylou Harris
+composers:
+- Jack W. Routh and Randy Sharp
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easyforyoutosaylyricschords.pro
+    imported_at: '2026-01-02'

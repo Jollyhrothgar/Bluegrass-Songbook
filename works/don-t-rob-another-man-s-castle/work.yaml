@@ -1,0 +1,15 @@
+id: don-t-rob-another-man-s-castle
+title: Don't Rob Another Man's Castle
+artist: Eddy Arnold
+composers:
+- Jenny Lou Carson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontrobanothermanscastlelyricschords.pro
+    imported_at: '2026-01-02'

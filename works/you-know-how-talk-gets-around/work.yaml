@@ -1,0 +1,17 @@
+id: you-know-how-talk-gets-around
+title: You Know How Talk Gets Around
+artist: Eddy Arnold
+composers:
+- Fred Rose
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youknowhowtalkgetsaroundlyricschords.pro
+    imported_at: '2026-01-02'

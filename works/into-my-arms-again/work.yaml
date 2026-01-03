@@ -1,0 +1,17 @@
+id: into-my-arms-again
+title: Into My Arms Again
+artist: George Jones
+composers:
+- Roger Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: intomyarmsagainlyricschords.pro
+    imported_at: '2026-01-02'

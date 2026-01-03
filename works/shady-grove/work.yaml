@@ -1,0 +1,16 @@
+id: shady-grove
+title: Shady Grove
+composers:
+- Appalachian Folk Song
+default_key: Dm
+tags:
+- Modal
+- Jazzy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: null
+    imported_at: '2026-01-02'

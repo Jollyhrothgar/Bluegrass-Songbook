@@ -1,0 +1,17 @@
+id: if-there-were-no-memories
+title: If There Were No Memories
+artist: John Anderson
+composers:
+- Ronal McCown
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iftherewerenomemorieslyricschords.pro
+    imported_at: '2026-01-02'

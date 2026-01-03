@@ -1,0 +1,18 @@
+id: when-we-re-gone-long-gone
+title: When We're Gone Long Gone
+artist: Emmylou Harris
+composers:
+- Jamie O'Hara and Kieran Kane
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenweregonelonggonelyricschords.pro
+    imported_at: '2026-01-02'

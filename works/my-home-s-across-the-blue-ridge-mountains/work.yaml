@@ -1,0 +1,17 @@
+id: my-home-s-across-the-blue-ridge-mountains
+title: My Home's Across The Blue Ridge Mountains
+artist: Doc Watson
+composers:
+- Clarence Ashley, Tom Ashley, A.P. Carter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myhomesacrosstheblueridgemountainslyricschords.pro
+    imported_at: '2026-01-02'

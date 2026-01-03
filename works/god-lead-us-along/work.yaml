@@ -1,0 +1,17 @@
+id: god-lead-us-along
+title: God Lead Us Along
+artist: The Forbes Family
+composers:
+- George A. Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godleadusalonglyricschords.pro
+    imported_at: '2026-01-02'

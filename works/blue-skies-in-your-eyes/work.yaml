@@ -1,0 +1,17 @@
+id: blue-skies-in-your-eyes
+title: Blue Skies In Your Eyes
+artist: Hawkshaw Hawkins
+composers:
+- Ruth Blankenship and Ed Butner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blueskiesinyoureyeslyricschords.pro
+    imported_at: '2026-01-02'

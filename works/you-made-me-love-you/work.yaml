@@ -1,0 +1,19 @@
+id: you-made-me-love-you
+title: You Made Me Love You
+artist: Patsy Cline
+composers:
+- Joe McCarthy and James Monaco
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmademeloveyoulyricschords.pro
+    imported_at: '2026-01-02'

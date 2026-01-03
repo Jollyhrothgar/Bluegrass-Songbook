@@ -1,0 +1,17 @@
+id: let-s-live-a-little-before-we-say-goodbye
+title: Let's Live A Little Before We Say Goodbye
+artist: Carl Smith
+composers:
+- Ruth Coletharp
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letslivealittlebeforewesaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

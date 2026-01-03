@@ -1,0 +1,17 @@
+id: party-doll
+title: Party Doll
+artist: Buddy Knox
+composers:
+- Jimmy Bowen, Buddy Knox, Dave Alldred
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: partydolllyricschords.pro
+    imported_at: '2026-01-02'

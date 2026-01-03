@@ -1,0 +1,17 @@
+id: everybody-will-be-happy-over-there
+title: Everybody Will Be Happy Over There
+artist: The Hee Haw Gospel Quartet
+composers:
+- E.M. Bartlett
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodywillbehappyovertherelyricschords.pro
+    imported_at: '2026-01-02'

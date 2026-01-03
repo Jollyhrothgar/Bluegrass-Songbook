@@ -1,0 +1,19 @@
+id: i-can-t-control-my-heart
+title: I Can't Control My Heart
+artist: Hank Snow
+composers:
+- Mario DiNapoli and Lee Morris
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantcontrolmyheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-let-her-down-somewhere
+title: I Let Her Down Somewhere
+artist: Sonny James
+composers:
+- Bob Tubert and Sonny James
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iletherdownsomewherelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-d-do-as-much-for-you
+title: I'd Do As Much For You
+artist: Jeannie Seely
+composers:
+- Cliff Cochran and Barbara Cochran
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iddoasmuchforyoulyricschords.pro
+    imported_at: '2026-01-02'

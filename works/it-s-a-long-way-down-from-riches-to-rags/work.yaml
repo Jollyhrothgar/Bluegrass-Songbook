@@ -1,0 +1,17 @@
+id: it-s-a-long-way-down-from-riches-to-rags
+title: It's A Long Way Down From Riches To Rags
+artist: Billy Walker
+composers:
+- Billy Walker, Mary Ann Meier, Edna Henderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsalongwaydownfromrichestoragslyricschords.pro
+    imported_at: '2026-01-02'

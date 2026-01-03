@@ -1,0 +1,17 @@
+id: east-virginia
+title: East Virginia
+artist: George Hamilton IV
+composers:
+- Eric Darling, Bob Carey, Alan Arkin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eastvirginialyricschords.pro
+    imported_at: '2026-01-02'

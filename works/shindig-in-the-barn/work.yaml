@@ -1,0 +1,15 @@
+id: shindig-in-the-barn
+title: Shindig In The Barn
+artist: Tommy Collins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shindiginthebarnlyricschords.pro
+    imported_at: '2026-01-02'

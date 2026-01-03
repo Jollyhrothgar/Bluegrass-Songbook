@@ -1,0 +1,18 @@
+id: a-word-or-two-to-mary
+title: A Word Or Two To Mary
+artist: Charley Pride
+composers:
+- Vance Bulla and Peter Cotton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awordortwotoMarylyricschords.pro
+    imported_at: '2026-01-02'

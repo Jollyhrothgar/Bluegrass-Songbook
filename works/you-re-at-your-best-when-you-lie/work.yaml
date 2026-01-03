@@ -1,0 +1,17 @@
+id: you-re-at-your-best-when-you-lie
+title: You're At Your Best When You Lie
+artist: Norma Jean
+composers:
+- Glenn Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youreatyourbestwhenyoulielyricschords.pro
+    imported_at: '2026-01-02'

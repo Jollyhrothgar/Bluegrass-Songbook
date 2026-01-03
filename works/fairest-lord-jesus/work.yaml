@@ -1,0 +1,17 @@
+id: fairest-lord-jesus
+title: Fairest Lord Jesus
+artist: Pat Boone
+composers:
+- Paul Johnson
+default_key: G
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fairestlordjesuslyricschords.pro
+    imported_at: '2026-01-02'

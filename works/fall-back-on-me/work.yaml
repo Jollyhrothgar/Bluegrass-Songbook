@@ -1,0 +1,17 @@
+id: fall-back-on-me
+title: Fall Back On Me
+artist: Charley Pride
+composers:
+- Danny Dunn and Richard Root
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallbackonmelyricschords.pro
+    imported_at: '2026-01-02'

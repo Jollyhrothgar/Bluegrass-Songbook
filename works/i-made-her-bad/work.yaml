@@ -1,0 +1,17 @@
+id: i-made-her-bad
+title: I Made Her Bad
+artist: Bobby Helms
+composers:
+- Harold Lowry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imadeherbadlyricschords.pro
+    imported_at: '2026-01-02'

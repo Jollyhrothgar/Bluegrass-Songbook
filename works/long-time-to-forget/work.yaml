@@ -1,0 +1,17 @@
+id: long-time-to-forget
+title: Long Time To Forget
+artist: George Jones
+composers:
+- Carl Belew and W.S. Stevenson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longtimetoforgetlyricschords.pro
+    imported_at: '2026-01-02'

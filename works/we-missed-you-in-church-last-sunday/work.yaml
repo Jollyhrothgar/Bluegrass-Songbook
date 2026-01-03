@@ -1,0 +1,17 @@
+id: we-missed-you-in-church-last-sunday
+title: We Missed You In Church Last Sunday
+artist: Joe Mullins
+composers:
+- Aubrey Holt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wemissedyouinchurchlastsundaylyricschords.pro
+    imported_at: '2026-01-02'

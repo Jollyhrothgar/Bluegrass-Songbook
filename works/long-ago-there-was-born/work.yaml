@@ -1,0 +1,17 @@
+id: long-ago-there-was-born
+title: Long Ago There Was Born
+artist: Slim Whitman
+composers:
+- Scott Turner and Slim Whitman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longagotherewasbornlyricschords.pro
+    imported_at: '2026-01-02'

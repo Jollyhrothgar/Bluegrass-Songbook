@@ -1,0 +1,17 @@
+id: sunday-morning
+title: Sunday Morning
+artist: Connie Smith
+composers:
+- Van Trevor and Dick Heard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sundaymorninglyricschords.pro
+    imported_at: '2026-01-02'

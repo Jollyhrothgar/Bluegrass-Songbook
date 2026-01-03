@@ -1,0 +1,17 @@
+id: across-this-town-and-gone-lyrics-with-chords
+title: Across This Town And Gone Lyrics with Chords
+artist: Buck Owens
+composers:
+- Buck Owens and Gene Price
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: acrossthistownandgonelyricschords.pro
+    imported_at: '2026-01-02'

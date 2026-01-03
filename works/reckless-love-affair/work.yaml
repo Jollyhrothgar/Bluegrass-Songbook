@@ -1,0 +1,18 @@
+id: reckless-love-affair
+title: Reckless Love Affair
+artist: Wanda Jackson
+composers:
+- Rolley Baird
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: recklessloveaffairlyricschords.pro
+    imported_at: '2026-01-02'

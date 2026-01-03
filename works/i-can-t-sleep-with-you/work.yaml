@@ -1,0 +1,15 @@
+id: i-can-t-sleep-with-you
+title: I Can't Sleep With You
+artist: Norma Jean
+composers:
+- Mike Kosser and Steve Pippin
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantsleepwithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-just-need-you-for-tonight
+title: I Just Need You For Tonight
+artist: Billy Crash Craddock
+composers:
+- Jerry Wallace, Terry Skinner, Ken Bell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustneedyoufortonightlyricschords.pro
+    imported_at: '2026-01-02'

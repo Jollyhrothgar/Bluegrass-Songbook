@@ -1,0 +1,18 @@
+id: between-blue-eyes-and-jeans
+title: Between Blue Eyes And Jeans
+artist: Conway Twitty
+composers:
+- Ken McDuffie
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betweenblueeyesandjeanslyricschords.pro
+    imported_at: '2026-01-02'

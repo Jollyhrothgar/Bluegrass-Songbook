@@ -1,0 +1,17 @@
+id: just-ask-your-heart
+title: Just Ask Your Heart
+artist: Sonny James
+composers:
+- Sonny James and John Skye
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justaskyourheartlyricschords.pro
+    imported_at: '2026-01-02'

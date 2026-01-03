@@ -1,0 +1,17 @@
+id: my-hearts-deep-in-the-heart-of-texas
+title: My Heart’s Deep In The Heart Of Texas
+artist: Boxcar Willie
+composers:
+- Lloene S. Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartsdeepintheheartoftexaslyricschords.pro
+    imported_at: '2026-01-02'

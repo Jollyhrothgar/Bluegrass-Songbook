@@ -1,0 +1,18 @@
+id: old-weakness-coming-on-strong
+title: Old Weakness (Coming On Strong)
+artist: Tanya Tucker
+composers:
+- Bob DiPiero and Gary Nicholson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldweaknesscomingonstronglyricschords.pro
+    imported_at: '2026-01-02'

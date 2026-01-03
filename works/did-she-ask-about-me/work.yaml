@@ -1,0 +1,17 @@
+id: did-she-ask-about-me
+title: Did She Ask About Me
+artist: Cal Smith
+composers:
+- Carmol Taylor
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didsheaskaboutmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: that-little-kid-sister-of-mine
+title: That Little Kid Sister Of Mine
+artist: Eddy Arnold
+composers:
+- Fred Rose and Gene Autry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatlittlekidsisterofminelyricschords.pro
+    imported_at: '2026-01-02'

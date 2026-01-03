@@ -1,0 +1,17 @@
+id: mental-journey
+title: Mental Journey
+artist: David Houston
+composers:
+- Margie Singleton and Leon Ashley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mentaljourneylyricschords.pro
+    imported_at: '2026-01-02'

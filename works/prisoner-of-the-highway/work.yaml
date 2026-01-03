@@ -1,0 +1,18 @@
+id: prisoner-of-the-highway
+title: Prisoner of the Highway
+artist: Ronnie Milsap
+composers:
+- Mike Reid
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prisonerofthehighwaylyricschords.pro
+    imported_at: '2026-01-02'

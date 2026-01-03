@@ -1,0 +1,17 @@
+id: carroll-county-accident
+title: Carroll County Accident
+artist: Porter Wagoner
+composers:
+- Bob Ferguson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carrollcountyaccidentlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-laugh-when-i-think-how-i-cried-over-you
+title: I Laugh When I Think How I Cried Over You
+artist: Bob Wills
+composers:
+- Maxine Fowler and James Robert Wills
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilaughwhenithinkhowicriedoveryoulyricschords.pro
+    imported_at: '2026-01-02'

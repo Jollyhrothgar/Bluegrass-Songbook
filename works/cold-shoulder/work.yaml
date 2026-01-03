@@ -1,0 +1,18 @@
+id: cold-shoulder
+title: Cold Shoulder
+artist: Garth Brooks
+composers:
+- Kim Williams, Kent Blazy, Garth Brook
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldshoulderlyricsandchords.pro
+    imported_at: '2026-01-02'

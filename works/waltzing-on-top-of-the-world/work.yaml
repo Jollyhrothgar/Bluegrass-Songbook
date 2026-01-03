@@ -1,0 +1,17 @@
+id: waltzing-on-top-of-the-world
+title: Waltzing On Top Of The World
+artist: Jim Reeves
+composers:
+- Jim Reeves and Al Courtney
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waltzingontopoftheworldlyricschords.pro
+    imported_at: '2026-01-02'

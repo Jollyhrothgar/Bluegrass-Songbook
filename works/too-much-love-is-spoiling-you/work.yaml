@@ -1,0 +1,17 @@
+id: too-much-love-is-spoiling-you
+title: Too Much Love Is Spoiling You
+artist: Ray Price
+composers:
+- Fred Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomuchloveisspoilingyoulyricschords.pro
+    imported_at: '2026-01-02'

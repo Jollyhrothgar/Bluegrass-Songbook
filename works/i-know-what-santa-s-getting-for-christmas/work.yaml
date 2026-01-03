@@ -1,0 +1,17 @@
+id: i-know-what-santa-s-getting-for-christmas
+title: I Know What Santa's Getting For Christmas
+artist: Burl Ives
+composers:
+- Garth Brooks and Kent Blazy
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowwhatsantasgettingforChristmaslyricschords.pro
+    imported_at: '2026-01-02'

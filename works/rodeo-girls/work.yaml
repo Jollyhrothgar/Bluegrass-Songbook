@@ -1,0 +1,19 @@
+id: rodeo-girls
+title: Rodeo Girls
+artist: Tanya Tucker
+composers:
+- Joe Rainey and Tanya Tucker
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rodeogirlslyricschords.pro
+    imported_at: '2026-01-02'

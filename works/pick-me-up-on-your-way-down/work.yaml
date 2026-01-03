@@ -1,0 +1,20 @@
+id: pick-me-up-on-your-way-down
+title: Pick Me Up On Your Way Down
+artist: Patsy Cline
+composers:
+- Burton Levy, Glenn Reeves, Mae Boren Axton
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pickmeuponyourwaydownlyricsandchords.pro
+    imported_at: '2026-01-02'

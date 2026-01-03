@@ -1,0 +1,18 @@
+id: can-t-buy-me-love
+title: Can't Buy Me Love
+artist: Brenda Lee
+composers:
+- John Lennon and Paul McCartney
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantbuymelovelyricschords.pro
+    imported_at: '2026-01-02'

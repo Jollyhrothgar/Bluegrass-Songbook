@@ -1,0 +1,18 @@
+id: alibis
+title: Alibis
+artist: Tracy Lawrence
+composers:
+- Randy Boudreaux and Tom Snow
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alibislyricsandchords.pro
+    imported_at: '2026-01-02'

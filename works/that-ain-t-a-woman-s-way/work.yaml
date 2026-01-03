@@ -1,0 +1,18 @@
+id: that-ain-t-a-woman-s-way
+title: That Ain't A Woman's Way
+artist: Kitty Wells
+composers:
+- Bill Anderson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thataintawomanswaylyricschords.pro
+    imported_at: '2026-01-02'

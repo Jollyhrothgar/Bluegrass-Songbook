@@ -1,0 +1,18 @@
+id: lonely-street
+title: Lonely Street
+artist: Patsy Cline
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelystreetlyricsandchords.pro
+    imported_at: '2026-01-02'

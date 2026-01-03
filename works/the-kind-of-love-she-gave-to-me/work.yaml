@@ -1,0 +1,19 @@
+id: the-kind-of-love-she-gave-to-me
+title: The Kind Of Love She Gave To Me
+artist: Ernest Tubb
+composers:
+- Mae Boren Axton and Glenn Reeves
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thekindofloveshegavetomelyricschords.pro
+    imported_at: '2026-01-02'

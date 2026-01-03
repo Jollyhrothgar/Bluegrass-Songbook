@@ -1,0 +1,15 @@
+id: i-can-t-take-it-like-you-can
+title: I Can't Take It Like You Can
+artist: Bobby Helms
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanttakeitlikeyoucanlyricschords.pro
+    imported_at: '2026-01-02'

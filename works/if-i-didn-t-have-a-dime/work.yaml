@@ -1,0 +1,19 @@
+id: if-i-didn-t-have-a-dime
+title: If I Didn't Have A Dime
+artist: Mickey Gilley
+composers:
+- Bert Russell and Phil Medley
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifididnthaveadimelyricschords.pro
+    imported_at: '2026-01-02'

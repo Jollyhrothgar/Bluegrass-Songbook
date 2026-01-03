@@ -1,0 +1,18 @@
+id: memories-are-made-of-this-1
+title: Memories Are Made Of This
+artist: Dean Martin
+composers:
+- Terry Gilkyson, Rich Dehr and Frank Miller
+default_key: C
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: memoriesaremadeofthislyricschords.pro
+    imported_at: '2026-01-02'

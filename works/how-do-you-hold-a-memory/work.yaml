@@ -1,0 +1,18 @@
+id: how-do-you-hold-a-memory
+title: How Do You Hold A Memory
+artist: Hank Thompson
+composers:
+- Hank Thompson and Lyle Gaston
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howdoyouholdamemorylyricschords.pro
+    imported_at: '2026-01-02'

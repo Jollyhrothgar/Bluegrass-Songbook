@@ -1,0 +1,19 @@
+id: i-ve-just-told-mama-goodbye
+title: I've Just Told Mama Goodbye
+artist: Hank Williams
+composers:
+- Curley Kinsey and Slim Sweet
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivejusttoldmamagoodbyelyricschords.pro
+    imported_at: '2026-01-02'

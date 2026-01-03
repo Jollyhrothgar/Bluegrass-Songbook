@@ -1,0 +1,19 @@
+id: i-ve-just-found-another-reason-for-loving-you
+title: I've Just Found Another Reason For Loving You
+artist: Charley Pride
+composers:
+- Joe Keene and Charles Isbell
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivejustfoundanotherreasonforlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

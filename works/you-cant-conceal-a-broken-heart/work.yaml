@@ -1,0 +1,18 @@
+id: you-cant-conceal-a-broken-heart
+title: You Can’t Conceal A Broken Heart
+artist: Kitty Wells
+composers:
+- Johnny Wright and Wally Fowler
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantconcealabrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

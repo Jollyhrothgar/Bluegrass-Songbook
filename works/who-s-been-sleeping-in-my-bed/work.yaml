@@ -1,0 +1,15 @@
+id: who-s-been-sleeping-in-my-bed
+title: Who's Been Sleeping In My Bed
+artist: Johnny Duncan
+composers:
+- Danny Hogan and Frank Newberry
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whosbeensleepinginmybedlyricschords.pro
+    imported_at: '2026-01-02'

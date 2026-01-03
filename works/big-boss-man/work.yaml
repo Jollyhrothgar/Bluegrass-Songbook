@@ -1,0 +1,19 @@
+id: big-boss-man
+title: Big Boss Man
+artist: Charlie Rich
+composers:
+- Al Smith and Luther Dixon
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigbossmanlyricschords.pro
+    imported_at: '2026-01-02'

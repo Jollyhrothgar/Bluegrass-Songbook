@@ -1,0 +1,15 @@
+id: it-hurts-too-much-to-laugh
+title: It Hurts Too Much To Laugh
+artist: Billy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithurtstoomuchtolaughlyricschords.pro
+    imported_at: '2026-01-02'

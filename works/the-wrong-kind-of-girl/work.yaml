@@ -1,0 +1,15 @@
+id: the-wrong-kind-of-girl
+title: The Wrong Kind Of Girl
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewrongkindofgirllyricschords.pro
+    imported_at: '2026-01-02'

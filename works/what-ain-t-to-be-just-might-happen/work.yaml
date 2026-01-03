@@ -1,0 +1,20 @@
+id: what-ain-t-to-be-just-might-happen
+title: What Ain't To Be Just Might Happen
+artist: Dolly Parton
+composers:
+- Porter Wagoner
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatainttobejustmighthappenlyricschords.pro
+    imported_at: '2026-01-02'

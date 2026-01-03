@@ -1,0 +1,19 @@
+id: if-you-miss-heaven-you-miss-it-all
+title: If You Miss Heaven (You Miss It All)
+artist: Loretta Lynn
+composers:
+- Dale Fox, Dianne Floyd, Tommy Floyd
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoumissheavenlyricschords.pro
+    imported_at: '2026-01-02'

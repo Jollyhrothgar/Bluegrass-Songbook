@@ -1,0 +1,17 @@
+id: beer-on-a-boat
+title: Beer On A Boat
+artist: Ashton Shepherd
+composers:
+- Marvin Green, Thomas Akins, Benjamin Hayslip
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beeronaboatlyricschords.pro
+    imported_at: '2026-01-02'

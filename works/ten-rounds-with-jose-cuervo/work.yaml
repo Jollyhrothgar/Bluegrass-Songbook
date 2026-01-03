@@ -1,0 +1,18 @@
+id: ten-rounds-with-jose-cuervo
+title: Ten Rounds With Jose Cuervo
+artist: Tracy Byrd
+composers:
+- Michael Heeney, Casey Beathard, Marla Cannon
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tenroundswithjosecuervolyricschords.pro
+    imported_at: '2026-01-02'

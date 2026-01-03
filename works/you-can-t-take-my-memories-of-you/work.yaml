@@ -1,0 +1,17 @@
+id: you-can-t-take-my-memories-of-you
+title: You Can't Take My Memories Of You
+artist: Hank Williams Jr.
+composers:
+- Hank Williams and Hank Williams Jr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanttakemymemoriesofyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: woman-in-the-back-of-my-mind
+title: Woman in the Back of My Mind
+artist: Mel Tillis
+composers:
+- Ronal McCown and Roger Jauden
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: womaninthebackofmymindlyricschords.pro
+    imported_at: '2026-01-02'

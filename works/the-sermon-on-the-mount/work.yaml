@@ -1,0 +1,18 @@
+id: the-sermon-on-the-mount
+title: The Sermon On The Mount
+artist: Merle Haggard
+composers:
+- Hank Williams and Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesermononthemountlyricschords.pro
+    imported_at: '2026-01-02'

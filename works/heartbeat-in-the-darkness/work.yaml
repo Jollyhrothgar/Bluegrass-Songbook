@@ -1,0 +1,15 @@
+id: heartbeat-in-the-darkness
+title: Heartbeat In The Darkness
+artist: Don Williams
+composers:
+- Dave Loggins and Russell Smith
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartbeatinthedarknesslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: end-of-the-line
+title: End of the Line
+artist: Bob Wills
+composers:
+- Bob Wills, Johnny Gimble
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: endofthelinelyricschords.pro
+    imported_at: '2026-01-02'

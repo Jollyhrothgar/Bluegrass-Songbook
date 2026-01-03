@@ -1,0 +1,17 @@
+id: genuine-healer-of-time
+title: Genuine Healer Of Time
+artist: Johnny Bush
+composers:
+- Larry Patton and Ronald Knuth
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: genuinehealeroftimelyricschords.pro
+    imported_at: '2026-01-02'

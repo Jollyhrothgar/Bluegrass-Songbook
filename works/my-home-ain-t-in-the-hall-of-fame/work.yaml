@@ -1,0 +1,15 @@
+id: my-home-ain-t-in-the-hall-of-fame
+title: My Home Ain't In The Hall Of Fame
+artist: J.D. Crowe
+composers:
+- Joe Dolce
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myhomeaintinthehalloffamelyricschords.pro
+    imported_at: '2026-01-02'

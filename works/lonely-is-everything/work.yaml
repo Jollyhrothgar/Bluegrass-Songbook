@@ -1,0 +1,17 @@
+id: lonely-is-everything
+title: Lonely Is Everything
+artist: Bill Anderson
+composers:
+- Jimmy Gateley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelyiseverythinglyricschords.pro
+    imported_at: '2026-01-02'

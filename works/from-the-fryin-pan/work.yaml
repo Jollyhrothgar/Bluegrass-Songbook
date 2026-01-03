@@ -1,0 +1,17 @@
+id: from-the-fryin-pan
+title: From The Fryin' Pan
+artist: Ricky Van Shelton
+composers:
+- Monty Criswell and Sam Gay
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromthefryinpanlyricschords.pro
+    imported_at: '2026-01-02'

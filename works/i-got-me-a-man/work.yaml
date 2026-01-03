@@ -1,0 +1,17 @@
+id: i-got-me-a-man
+title: I Got Me A Man
+artist: Tammy Wynette
+composers:
+- Jimmy Peppers
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igotmeamanlyricschords.pro
+    imported_at: '2026-01-02'

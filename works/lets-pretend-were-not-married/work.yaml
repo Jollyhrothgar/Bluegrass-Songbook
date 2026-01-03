@@ -1,0 +1,16 @@
+id: lets-pretend-were-not-married
+title: Let’s Pretend We’re Not Married
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letspretendwerenotmarriedlyricschords.pro
+    imported_at: '2026-01-02'

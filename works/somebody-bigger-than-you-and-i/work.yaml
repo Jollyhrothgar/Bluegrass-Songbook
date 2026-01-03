@@ -1,0 +1,20 @@
+id: somebody-bigger-than-you-and-i
+title: Somebody Bigger Than You And I
+artist: Elvis Presley
+composers:
+- Hy Heath, Johnny Lange, Francis J. Burke
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodybiggerthanyouandilyricschords.pro
+    imported_at: '2026-01-02'

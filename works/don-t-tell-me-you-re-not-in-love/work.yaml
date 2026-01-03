@@ -1,0 +1,18 @@
+id: don-t-tell-me-you-re-not-in-love
+title: Don't Tell Me You're Not In Love
+artist: George Strait
+composers:
+- Kim Williams, Tony Colton, Bobby Wood
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttellmeyourenotinlovelyricschords.pro
+    imported_at: '2026-01-02'

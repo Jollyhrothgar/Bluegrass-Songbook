@@ -1,0 +1,15 @@
+id: garage-sale-today
+title: Garage Sale Today
+artist: George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: garagesaletodaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-feel-better-all-over
+title: I Feel Better All Over
+artist: Ferlin Husky
+composers:
+- Kenny Rogers and Leon Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeelbetteralloverlyricschords.pro
+    imported_at: '2026-01-02'

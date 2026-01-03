@@ -1,0 +1,20 @@
+id: tennessee-homesick-blues
+title: Tennessee Homesick Blues
+artist: Dolly Parton
+composers:
+- recorded by Dolly Parton
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tennesseehomesickblueslyricschords.pro
+    imported_at: '2026-01-02'

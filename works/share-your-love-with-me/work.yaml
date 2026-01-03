@@ -1,0 +1,18 @@
+id: share-your-love-with-me
+title: Share Your Love With Me
+artist: Charlie Rich
+composers:
+- Don Robey, Al Braggs, Deadric Malone
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shareyourlovewithmelyricschords.pro
+    imported_at: '2026-01-02'

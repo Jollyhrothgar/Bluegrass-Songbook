@@ -1,0 +1,17 @@
+id: the-first-time-1
+title: The First Time
+artist: Freddie Hart
+composers:
+- Jack Grayson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thefirsttimelyricswithchords.pro
+    imported_at: '2026-01-02'

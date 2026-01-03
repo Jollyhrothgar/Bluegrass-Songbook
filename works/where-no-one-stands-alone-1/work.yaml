@@ -1,0 +1,19 @@
+id: where-no-one-stands-alone-1
+title: Where No One Stands Alone
+artist: Loretta Lynn
+composers:
+- Mosie Lister
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherenoonestandsalonelyricschords.pro
+    imported_at: '2026-01-02'

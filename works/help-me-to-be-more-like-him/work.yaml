@@ -1,0 +1,18 @@
+id: help-me-to-be-more-like-him
+title: Help Me to Be More Like Him
+artist: Rhonda Vincent
+composers:
+- Linda Grimes and Rex Wiseman
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helpmetobemorelikehimlyricschords.pro
+    imported_at: '2026-01-02'

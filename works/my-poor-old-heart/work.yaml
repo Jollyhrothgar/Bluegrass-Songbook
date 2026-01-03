@@ -1,0 +1,18 @@
+id: my-poor-old-heart
+title: My Poor Old Heart
+artist: Randy Travis
+composers:
+- Gary Harrison and Shawn Camp
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mypooroldheartlyricschords.pro
+    imported_at: '2026-01-02'

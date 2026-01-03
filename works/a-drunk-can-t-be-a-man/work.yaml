@@ -1,0 +1,17 @@
+id: a-drunk-can-t-be-a-man
+title: A Drunk Can't Be A Man
+artist: George Jones
+composers:
+- Earl Montgomery and George Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: adrunkcantbeamanlyricschords.pro
+    imported_at: '2026-01-02'

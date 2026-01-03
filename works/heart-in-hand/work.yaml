@@ -1,0 +1,18 @@
+id: heart-in-hand
+title: Heart In Hand
+artist: Brenda Lee
+composers:
+- Jackie DeShannon and Sharon Sheeley
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartinhandlyricschords.pro
+    imported_at: '2026-01-02'

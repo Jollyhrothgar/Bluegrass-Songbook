@@ -1,0 +1,17 @@
+id: then-again
+title: Then Again
+artist: Alabama
+composers:
+- Rick Bowles and Jeff Silbar
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenagainlyricschords.pro
+    imported_at: '2026-01-02'

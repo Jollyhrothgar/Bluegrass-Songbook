@@ -1,0 +1,18 @@
+id: all-fall-down
+title: All Fall Down
+artist: Emmylou Harris
+composers:
+- Harlan Howard and Ron Peterson
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allfalldownlyricsandchords.pro
+    imported_at: '2026-01-02'

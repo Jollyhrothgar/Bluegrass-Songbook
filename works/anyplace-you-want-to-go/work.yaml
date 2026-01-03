@@ -1,0 +1,17 @@
+id: anyplace-you-want-to-go
+title: Anyplace You Want To Go
+artist: Porter Wagoner
+composers:
+- Porter Wagoner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anyplaceyouwanttogolyricschords.pro
+    imported_at: '2026-01-02'

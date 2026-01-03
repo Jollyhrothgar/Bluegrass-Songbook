@@ -1,0 +1,18 @@
+id: what-ll-you-do-about-me
+title: What'll You Do About Me
+artist: Randy Travis
+composers:
+- Dennis Linde
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatllyoudoaboutmelyricschords.pro
+    imported_at: '2026-01-02'

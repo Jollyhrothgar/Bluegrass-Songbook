@@ -1,0 +1,17 @@
+id: the-bright-crystal-sea
+title: The Bright Crystal Sea
+artist: The Blue Creek Boys
+composers:
+- Ivy Sheppard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebrightcrystalsealyricschords.pro
+    imported_at: '2026-01-02'

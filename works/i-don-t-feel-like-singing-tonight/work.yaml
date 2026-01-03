@@ -1,0 +1,13 @@
+id: i-don-t-feel-like-singing-tonight
+title: I Don't Feel Like Singing Tonight
+artist: Wynn Stewart
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontfeellikesingingtonightlyricschords.pro
+    imported_at: '2026-01-02'

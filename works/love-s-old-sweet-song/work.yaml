@@ -1,0 +1,15 @@
+id: love-s-old-sweet-song
+title: Love's Old Sweet Song
+artist: George Hamilton IV
+composers:
+- James Molloy and Clifton Bingham
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovesoldsweetsonglyricschords.pro
+    imported_at: '2026-01-02'

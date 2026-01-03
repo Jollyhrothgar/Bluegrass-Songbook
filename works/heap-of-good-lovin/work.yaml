@@ -1,0 +1,17 @@
+id: heap-of-good-lovin
+title: Heap Of Good Lovin'
+artist: Hawkshaw Hawkins
+composers:
+- Steve Nelson and Jean Javitz
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heapofgoodlovinlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: wear-away
+title: Wear Away
+artist: Dottie West
+composers:
+- Dottie West and Bill West
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wearawaylyricschords.pro
+    imported_at: '2026-01-02'

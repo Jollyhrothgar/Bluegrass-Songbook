@@ -1,0 +1,17 @@
+id: you-can-t-judge-a-good-book-by-its-cover
+title: You Can't Judge A Good Book By Its Cover
+artist: Statler Brothers
+composers:
+- Claude Boone
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantjudgeagoodbookbyitscoverlyricschords.pro
+    imported_at: '2026-01-02'

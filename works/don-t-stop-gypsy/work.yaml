@@ -1,0 +1,21 @@
+id: don-t-stop-gypsy
+title: Don't Stop Gypsy
+artist: Ricky Skaggs
+composers:
+- Larry Cordle
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontstopgypsylyricschords.pro
+    imported_at: '2026-01-02'

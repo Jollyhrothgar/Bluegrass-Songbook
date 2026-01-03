@@ -1,0 +1,17 @@
+id: just-beyond-the-moon
+title: Just Beyond The Moon
+artist: Tex Ritter
+composers:
+- Jeremy Slate
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justbeyondthemoonlyricschords.pro
+    imported_at: '2026-01-02'

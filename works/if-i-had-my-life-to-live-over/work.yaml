@@ -1,0 +1,17 @@
+id: if-i-had-my-life-to-live-over
+title: If I Had My Life To Live Over
+artist: Cal Smith
+composers:
+- Harry Tobias, Larry Vincent, Moe Jaffe
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifihadmylifetoliveoverlyricschords.pro
+    imported_at: '2026-01-02'

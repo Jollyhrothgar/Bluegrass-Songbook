@@ -1,0 +1,19 @@
+id: i-m-your-puppet
+title: I'm Your Puppet
+artist: Mickey Gilley
+composers:
+- Dan Penn and Spooner Oldham
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imyourpuppetlyricschords.pro
+    imported_at: '2026-01-02'

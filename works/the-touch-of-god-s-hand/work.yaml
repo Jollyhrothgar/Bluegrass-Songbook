@@ -1,0 +1,17 @@
+id: the-touch-of-god-s-hand
+title: The Touch Of God's Hand
+artist: Eddy Arnold
+composers:
+- Bob Nolan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetouchofGodshandlyricschords.pro
+    imported_at: '2026-01-02'

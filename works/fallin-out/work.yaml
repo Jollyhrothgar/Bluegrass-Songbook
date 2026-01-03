@@ -1,0 +1,19 @@
+id: fallin-out
+title: Fallin’ Out
+artist: Waylon Jennings
+composers:
+- Denny Lile
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallinoutlyricschords.pro
+    imported_at: '2026-01-02'

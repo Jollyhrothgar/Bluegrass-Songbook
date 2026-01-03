@@ -1,0 +1,17 @@
+id: don-t-blame-me-for-what-happened-last-night
+title: Don't Blame Me For What Happened Last Night
+artist: Boxcar Willie
+composers:
+- Lecil Travis Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontblamemeforwhathappenedlastnightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-can-check-on-me
+title: You Can Check On Me
+artist: Stonewall Jackson
+composers:
+- Gene Crysler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcancheckonmelyricschords.pro
+    imported_at: '2026-01-02'

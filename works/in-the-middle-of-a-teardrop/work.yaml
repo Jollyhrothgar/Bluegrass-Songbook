@@ -1,0 +1,17 @@
+id: in-the-middle-of-a-teardrop
+title: In The Middle Of A Teardrop
+artist: Buck Owens
+composers:
+- Buck Owens, Don Rich, Doyle Holly
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthemiddleofateardroplyricschords.pro
+    imported_at: '2026-01-02'

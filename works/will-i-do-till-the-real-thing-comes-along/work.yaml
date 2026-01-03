@@ -1,0 +1,17 @@
+id: will-i-do-till-the-real-thing-comes-along
+title: Will I Do (Till the Real Thing Comes Along)
+artist: Prairie Oyster
+composers:
+- Joan Besen
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willidotilltherealthingcomesalonglyricschords.pro
+    imported_at: '2026-01-02'

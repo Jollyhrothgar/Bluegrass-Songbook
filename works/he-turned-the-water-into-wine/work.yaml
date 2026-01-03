@@ -1,0 +1,20 @@
+id: he-turned-the-water-into-wine
+title: He Turned the Water into Wine
+artist: Johnny Cash
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heturnedthewaterintowinelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: banks-of-the-arkansas
+title: Banks of the Arkansas
+artist: Traditional
+composers:
+- Biography:Shade Sloan via Hiram Stamper
+default_key: G
+tags:
+- Jazzy
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

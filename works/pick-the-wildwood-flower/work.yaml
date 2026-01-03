@@ -1,0 +1,13 @@
+id: pick-the-wildwood-flower
+title: Pick The Wildwood Flower
+artist: Gene Watson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pickthewildwoodflowerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: be-true-to-yourself
+title: Be True To Yourself
+artist: The Traditional Grass
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betruetoyourselflyricschords.pro
+    imported_at: '2026-01-02'

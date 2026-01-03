@@ -1,0 +1,17 @@
+id: when-love-was-all-we-had-to-share
+title: When Love Was All We Had To Share
+artist: Vern Gosdin
+composers:
+- Earl Montgomery and George Richey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenlovewasallwehadtosharelyricschords.pro
+    imported_at: '2026-01-02'

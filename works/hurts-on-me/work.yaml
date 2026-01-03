@@ -1,0 +1,17 @@
+id: hurts-on-me
+title: Hurts On Me
+artist: Jack Greene
+composers:
+- Don Bowman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hurtsonmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: in-time-on-time-every-time
+title: In Time On Time Every Time
+artist: Gold City
+composers:
+- Brenda Lee Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: intimeontimeeverytimelyricschords.pro
+    imported_at: '2026-01-02'

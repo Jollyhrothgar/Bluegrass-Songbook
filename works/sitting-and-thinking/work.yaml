@@ -1,0 +1,17 @@
+id: sitting-and-thinking
+title: Sitting And Thinking
+artist: Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sittingandthinkinglyricschords.pro
+    imported_at: '2026-01-02'

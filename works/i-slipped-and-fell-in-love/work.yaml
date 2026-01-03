@@ -1,0 +1,17 @@
+id: i-slipped-and-fell-in-love
+title: I Slipped And Fell In Love
+artist: Alan Jackson
+composers:
+- Harley Allen and John Wiggins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: islippedandfellinlovelyricschords.pro
+    imported_at: '2026-01-02'

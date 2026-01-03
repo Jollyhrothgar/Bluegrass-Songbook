@@ -1,0 +1,17 @@
+id: if-you-can-lie-a-little-bit
+title: If You Can Lie A Little Bit
+artist: Kenny Rogers
+composers:
+- Bob Stone
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoucanliealittlebitlyricschords.pro
+    imported_at: '2026-01-02'

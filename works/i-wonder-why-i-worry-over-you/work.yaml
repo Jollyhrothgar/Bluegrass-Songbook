@@ -1,0 +1,19 @@
+id: i-wonder-why-i-worry-over-you
+title: I Wonder Why I Worry Over You
+artist: Ernest Tubb
+composers:
+- Cindy Walker
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderwhyiworryoveryoulyricschords.pro
+    imported_at: '2026-01-02'

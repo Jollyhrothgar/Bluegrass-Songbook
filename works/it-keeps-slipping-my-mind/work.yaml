@@ -1,0 +1,18 @@
+id: it-keeps-slipping-my-mind
+title: It Keeps Slipping My Mind
+artist: Tammy Wynette
+composers:
+- Hank Mills
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itkeepsslippingmymindlyricschords.pro
+    imported_at: '2026-01-02'

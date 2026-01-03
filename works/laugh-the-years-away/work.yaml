@@ -1,0 +1,17 @@
+id: laugh-the-years-away
+title: Laugh The Years Away
+artist: Dolly Parton and Porter Wagoner
+composers:
+- Howard Tuck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: laughtheyearsawaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: i-want-to-walk-you-home
+title: I Want To Walk You Home
+artist: Fats Domino
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttowalkyouhomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: when-a-love-ain-t-right
+title: When A Love Ain't Right
+artist: Charly McClain
+composers:
+- Bob Morrison and Johnny Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenaloveaintrightlyricschords.pro
+    imported_at: '2026-01-02'

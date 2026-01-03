@@ -1,0 +1,15 @@
+id: the-end-of-the-lyin
+title: The End Of The Lyin'
+artist: Alabama
+composers:
+- Robert Byrne and Alan Schulman
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theendofthelyinlyricschords.pro
+    imported_at: '2026-01-02'

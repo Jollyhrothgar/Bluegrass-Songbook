@@ -1,0 +1,21 @@
+id: you-re-the-devil-in-disguise
+title: You're The Devil In Disguise
+artist: Elvis Presley
+composers:
+- Bill Giant, Bernie Baum, Florence Kaye
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethedevilindisguiselyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: she-took-more-than-her-share
+title: She Took More Than Her Share
+artist: Moe Bandy
+composers:
+- Sanger D. Shafer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shetookmorethanherwharelyricschords.pro
+    imported_at: '2026-01-02'

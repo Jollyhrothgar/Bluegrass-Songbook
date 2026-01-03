@@ -1,0 +1,15 @@
+id: when-two-worlds-collide
+title: When Two Worlds Collide
+artist: Jim Reeves
+composers:
+- Bill Anderson and Roger Miller
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentwoworldscollidelyricschords.pro
+    imported_at: '2026-01-02'

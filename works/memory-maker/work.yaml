@@ -1,0 +1,18 @@
+id: memory-maker
+title: Memory Maker
+artist: Wanda Jackson
+composers:
+- Dave Burgess and Janet Thomas
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: memorymakerlyricsandchords.pro
+    imported_at: '2026-01-02'

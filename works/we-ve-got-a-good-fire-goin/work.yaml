@@ -1,0 +1,17 @@
+id: we-ve-got-a-good-fire-goin
+title: We've Got A Good Fire Goin'
+artist: Don Williams
+composers:
+- Dave Loggins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wevegotagoodfiregoinlyricschords.pro
+    imported_at: '2026-01-02'

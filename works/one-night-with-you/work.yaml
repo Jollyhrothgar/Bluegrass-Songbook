@@ -1,0 +1,22 @@
+id: one-night-with-you
+title: One Night With You
+artist: Elvis Presley
+composers:
+- Dave Bartholomew, Pearl King, Anita Steiman
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onenightwithyoulyricschords.pro
+    imported_at: '2026-01-02'

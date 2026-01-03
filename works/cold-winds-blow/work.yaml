@@ -1,0 +1,17 @@
+id: cold-winds-blow
+title: Cold Winds Blow
+artist: Bobby Helms
+composers:
+- Harold Lowry
+default_key: F
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldwindsblowlyricschords.pro
+    imported_at: '2026-01-02'

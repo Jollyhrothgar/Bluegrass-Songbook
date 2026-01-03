@@ -1,0 +1,18 @@
+id: nothing-s-changed-nothing-s-new
+title: Nothing's Changed Nothing's New
+artist: Willie Nelson
+composers:
+- Ray Pennington
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothingschangednothingsnewlyricschords.pro
+    imported_at: '2026-01-02'

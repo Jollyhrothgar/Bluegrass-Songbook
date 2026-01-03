@@ -1,0 +1,19 @@
+id: sorrowful-angels
+title: Sorrowful Angels
+artist: Patty Loveless
+composers:
+- Tommy Conners and Leslie Satcher
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sorrowfulangelslyricschords.pro
+    imported_at: '2026-01-02'

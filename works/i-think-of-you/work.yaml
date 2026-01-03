@@ -1,0 +1,17 @@
+id: i-think-of-you
+title: I Think of You
+artist: Webb Pierce
+composers:
+- and recorded by Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithinkofyoulyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: lillie-s-white-lies
+title: Lillie's White Lies
+artist: Johnny Bush
+composers:
+- Wood Newton and Billy Ray Reynolds
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lillieswhitelieslyricschords.pro
+    imported_at: '2026-01-02'

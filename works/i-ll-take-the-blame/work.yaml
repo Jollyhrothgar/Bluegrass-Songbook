@@ -1,0 +1,15 @@
+id: i-ll-take-the-blame
+title: I'll Take The Blame
+artist: The Lonesome River Band
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illtaketheblamelyricsandchords.pro
+    imported_at: '2026-01-02'

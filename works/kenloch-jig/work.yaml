@@ -1,0 +1,17 @@
+id: kenloch-jig
+title: Kenloch Jig
+artist: Traditional
+composers:
+- Biography:Mickey Gillis & Angus MacDougall
+default_key: G
+tags:
+- Jazzy
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

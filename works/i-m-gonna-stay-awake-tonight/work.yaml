@@ -1,0 +1,17 @@
+id: i-m-gonna-stay-awake-tonight
+title: I'm Gonna Stay Awake Tonight
+artist: Carl Belew
+composers:
+- Carl Belew, Tommy Blake, Charles Jiles, W.S. Stevenson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnastayawaketonightlyricschords.pro
+    imported_at: '2026-01-02'

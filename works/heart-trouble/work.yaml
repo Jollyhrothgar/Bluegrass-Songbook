@@ -1,0 +1,16 @@
+id: heart-trouble
+title: Heart Trouble
+artist: Wanda Jackson
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hearttroublelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-can-still-see-him-in-your-eyes
+title: I Can Still See Him In Your Eyes
+artist: George Jones
+composers:
+- Dickey Lee
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanstillseehiminyoureyeslyricschords.pro
+    imported_at: '2026-01-02'

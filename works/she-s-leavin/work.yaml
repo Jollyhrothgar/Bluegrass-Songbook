@@ -1,0 +1,16 @@
+id: she-s-leavin
+title: She's Leavin'
+artist: Clint Black
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesleavinlyricschords.pro
+    imported_at: '2026-01-02'

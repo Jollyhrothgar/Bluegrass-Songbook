@@ -1,0 +1,17 @@
+id: wrong-road-again-1
+title: Wrong Road Again
+artist: Crystal Gayle
+composers:
+- Allen Reynolds
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wrongroadagainlyricschords.pro
+    imported_at: '2026-01-02'

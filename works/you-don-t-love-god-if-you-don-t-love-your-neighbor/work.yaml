@@ -1,0 +1,18 @@
+id: you-don-t-love-god-if-you-don-t-love-your-neighbor
+title: You Don't Love God If You Don't Love Your Neighbor
+artist: Rhonda Vincent
+composers:
+- Carl Story
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontloveGodifyoudontloveyourneighborlyricschords.pro
+    imported_at: '2026-01-02'

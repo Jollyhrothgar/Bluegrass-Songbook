@@ -1,0 +1,17 @@
+id: stolen-love-is-the-beginning-of-the-end
+title: Stolen Love Is The Beginning Of The End
+artist: George Morgan
+composers:
+- Ott Stephens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stolenloveisthebeginningoftheendlyricschords.pro
+    imported_at: '2026-01-02'

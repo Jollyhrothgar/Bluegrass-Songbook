@@ -1,0 +1,17 @@
+id: wondering-what-to-do
+title: Wondering What To Do
+artist: Eddy Arnold
+composers:
+- Snooks Homesley and Eddy Arnold
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wonderingwhattodolyricschords.pro
+    imported_at: '2026-01-02'

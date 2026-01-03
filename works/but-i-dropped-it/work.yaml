@@ -1,0 +1,18 @@
+id: but-i-dropped-it
+title: But I Dropped It
+artist: Conway Twitty
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: butidroppeditlyricschords.pro
+    imported_at: '2026-01-02'

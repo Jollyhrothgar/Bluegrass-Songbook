@@ -1,0 +1,15 @@
+id: i-love-the-hymns-they-sang-at-mother-s-grave
+title: I Love the Hymns They Sang at Mother's Grave
+artist: Carl Story
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovethehymnstheysangatmothersgravelyricschords.pro
+    imported_at: '2026-01-02'

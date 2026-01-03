@@ -1,0 +1,15 @@
+id: a-perfect-day
+title: A Perfect Day
+artist: Slim Whitman
+composers:
+- Carrie Jacobs-Bond
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aperfectdaylyricschords.pro
+    imported_at: '2026-01-02'

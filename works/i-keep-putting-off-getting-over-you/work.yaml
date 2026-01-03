@@ -1,0 +1,17 @@
+id: i-keep-putting-off-getting-over-you
+title: I Keep Putting Off Getting Over You
+artist: Don Williams
+composers:
+- Wayland Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ikeepputtingoffgettingoveryoulyricschords.pro
+    imported_at: '2026-01-02'

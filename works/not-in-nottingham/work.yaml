@@ -1,0 +1,15 @@
+id: not-in-nottingham
+title: Not In Nottingham
+artist: Roger Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notinnottinghamlyricschords.pro
+    imported_at: '2026-01-02'

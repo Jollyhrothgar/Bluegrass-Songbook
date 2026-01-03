@@ -1,0 +1,15 @@
+id: this-love-of-mine
+title: This Love Of Mine
+artist: Sonny James
+composers:
+- Sol Parker, Frank Sinatra and Hank Sanicola
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisloveofminelyricschords.pro
+    imported_at: '2026-01-02'

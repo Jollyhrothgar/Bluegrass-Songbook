@@ -1,0 +1,19 @@
+id: i-ll-take-any-chance-i-can-with-you
+title: I'll Take Any Chance I Can With You
+artist: Kris Kristofferson
+composers:
+- Kris Kristofferson and Clark
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illtakeanychanceicanwithyoulyricschords.pro
+    imported_at: '2026-01-02'

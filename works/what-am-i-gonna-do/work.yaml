@@ -1,0 +1,15 @@
+id: what-am-i-gonna-do
+title: What Am I Gonna Do
+artist: Johnny Tillotson
+composers:
+- Paul Tannen
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatamigonnadolyricsandchords.pro
+    imported_at: '2026-01-02'

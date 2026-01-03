@@ -1,0 +1,15 @@
+id: statue-of-a-fool-1
+title: Statue of a Fool
+artist: Jack Greene
+default_key: C
+tags:
+- Jazzy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: statueofafoollyricschords.pro
+    imported_at: '2026-01-02'

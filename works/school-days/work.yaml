@@ -1,0 +1,19 @@
+id: school-days
+title: School Days
+artist: Charlie Rich
+composers:
+- Gus Edwards and Will Cobb
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: schooldayslyricschords.pro
+    imported_at: '2026-01-02'

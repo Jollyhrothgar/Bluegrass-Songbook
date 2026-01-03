@@ -1,0 +1,15 @@
+id: the-world-i-used-to-know
+title: The World I Used To Know
+artist: Jimmie Rodgers
+composers:
+- Rod McKuen
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theworldiusedtoknowlyricschords.pro
+    imported_at: '2026-01-02'

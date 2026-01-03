@@ -1,0 +1,17 @@
+id: if-i-m-a-fool-for-leaving
+title: If I'm A Fool For Leaving
+artist: Gene Watson
+composers:
+- Little Jimmy Dickens & Skip Graves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifimafoolforleavinglyricschords.pro
+    imported_at: '2026-01-02'

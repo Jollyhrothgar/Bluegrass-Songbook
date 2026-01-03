@@ -1,0 +1,20 @@
+id: down-by-the-riverside
+title: Down By The Riverside
+artist: Patsy Cline
+composers:
+- Billy Sherrill and Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downbytheriversidelyricsandchords.pro
+    imported_at: '2026-01-02'

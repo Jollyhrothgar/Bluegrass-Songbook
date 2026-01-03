@@ -1,0 +1,18 @@
+id: lost-her-love-on-our-last-date
+title: Lost Her Love On Our Last Date
+artist: Conway Twitty
+composers:
+- Conway Twitty and Floyd Cramer
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lostherloveonourlastdatelyricschords.pro
+    imported_at: '2026-01-02'

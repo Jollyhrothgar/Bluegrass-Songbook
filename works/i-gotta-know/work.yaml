@@ -1,0 +1,20 @@
+id: i-gotta-know
+title: I Gotta Know
+artist: Elvis Presley
+composers:
+- Paul Evans and Matt Williams
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igottaknowlyricschords.pro
+    imported_at: '2026-01-02'

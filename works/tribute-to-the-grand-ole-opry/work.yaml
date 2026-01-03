@@ -1,0 +1,16 @@
+id: tribute-to-the-grand-ole-opry
+title: Tribute To The Grand Ole Opry
+artist: Lorrie Morgan
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tributetothegrandoleoprylyricschords.pro
+    imported_at: '2026-01-02'

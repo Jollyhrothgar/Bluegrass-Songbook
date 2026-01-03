@@ -1,0 +1,21 @@
+id: a-mansion-for-me
+title: A Mansion For Me
+artist: Ricky Skaggs
+composers:
+- Bill Monroe
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amansionformelyricschords.pro
+    imported_at: '2026-01-02'

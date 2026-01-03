@@ -1,0 +1,18 @@
+id: don-t-tell-mama
+title: Don't Tell Mama
+artist: Gary Allan
+composers:
+- Kim Williams, Jerry Laseter, Buddy Brock
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttellmamalyricschords.pro
+    imported_at: '2026-01-02'

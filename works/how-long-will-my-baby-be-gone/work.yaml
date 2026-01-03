@@ -1,0 +1,13 @@
+id: how-long-will-my-baby-be-gone
+title: How Long Will My Baby Be Gone
+artist: Buck Owens
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howlongwillmybabybegonelyricschords.pro
+    imported_at: '2026-01-02'

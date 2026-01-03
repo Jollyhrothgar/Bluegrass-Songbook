@@ -1,0 +1,15 @@
+id: paper-roses-1
+title: Paper Roses
+artist: Marie Osmond
+composers:
+- Janice Torre and Frd Spielman
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: paperroseslyricschords.pro
+    imported_at: '2026-01-02'

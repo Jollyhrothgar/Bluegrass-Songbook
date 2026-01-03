@@ -1,0 +1,17 @@
+id: baby-s-blue
+title: Baby's Blue
+artist: Ferlin Husky
+composers:
+- Rory Bourke and Gayle Barnhill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babysbluelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: in-christ-alone
+title: In Christ Alone
+artist: The Booth Brothers
+composers:
+- Keith Getty and Stuart Townend
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inchristalonelyricschords.pro
+    imported_at: '2026-01-02'

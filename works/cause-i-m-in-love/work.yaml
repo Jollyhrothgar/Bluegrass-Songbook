@@ -1,0 +1,17 @@
+id: cause-i-m-in-love
+title: Cause I'm In Love
+artist: Bob Wills
+composers:
+- Stan Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: causeiminlovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: gotta-lotta-blues-to-lose-lyrics-and-chords
+title: Gotta Lotta Blues To Lose Lyrics and Chords
+artist: Connie Smith
+composers:
+- Jimmy Gatele
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gottalottabluestoloselyricschords.pro
+    imported_at: '2026-01-02'

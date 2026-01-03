@@ -1,0 +1,17 @@
+id: walking-shadow-talking-memory
+title: Walking Shadow Talking Memory
+artist: Carl Belew
+composers:
+- Jean Chapel
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkingshadowtalkingmemorylyricschords.pro
+    imported_at: '2026-01-02'

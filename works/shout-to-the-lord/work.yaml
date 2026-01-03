@@ -1,0 +1,18 @@
+id: shout-to-the-lord
+title: Shout To The Lord
+artist: Randy Travis
+composers:
+- Darlene Zschech
+default_key: Em
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shouttothelordlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-won-t-get-over-losing-you
+title: I Won't Get Over Losing You
+artist: Ray Price
+composers:
+- Cam Mullins
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwontgetoverlosingyoulyricschords.pro
+    imported_at: '2026-01-02'

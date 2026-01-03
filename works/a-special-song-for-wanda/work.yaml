@@ -1,0 +1,17 @@
+id: a-special-song-for-wanda
+title: A Special Song For Wanda
+artist: Statler Brothers
+composers:
+- Don Reid and Harold Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aspecialsongforwandalyricschords.pro
+    imported_at: '2026-01-02'

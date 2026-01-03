@@ -1,0 +1,17 @@
+id: you-changed-everything
+title: You Changed Everything
+artist: Norma Jean
+composers:
+- Hank Cochran and Jeannie Seely
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youchangedeverythinglyricschords.pro
+    imported_at: '2026-01-02'

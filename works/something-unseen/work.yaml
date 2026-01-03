@@ -1,0 +1,17 @@
+id: something-unseen
+title: Something Unseen
+artist: Jack Greene
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingunseenlyricschords.pro
+    imported_at: '2026-01-02'

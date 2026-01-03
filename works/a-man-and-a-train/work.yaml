@@ -1,0 +1,19 @@
+id: a-man-and-a-train
+title: A Man And A Train
+artist: Marty Robbins
+composers:
+- Hal David and Frank DeVol
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amanandatrainlyricschords.pro
+    imported_at: '2026-01-02'

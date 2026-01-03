@@ -1,0 +1,15 @@
+id: do-you-want-to-go-to-heaven
+title: Do You Want To Go To Heaven
+artist: T.G.Sheppard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doyouwanttogotoheavenlyricschords.pro
+    imported_at: '2026-01-02'

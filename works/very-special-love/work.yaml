@@ -1,0 +1,15 @@
+id: very-special-love
+title: Very Special Love
+artist: Alabama
+composers:
+- Randy Owen, Teddy Gentry, Jeff Cook
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: veryspeciallovelyricschords.pro
+    imported_at: '2026-01-02'

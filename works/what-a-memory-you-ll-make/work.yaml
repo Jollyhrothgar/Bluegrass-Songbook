@@ -1,0 +1,17 @@
+id: what-a-memory-you-ll-make
+title: What A Memory You'll Make
+artist: Johnny Rodriguez
+composers:
+- Raymond N. "Rusty" Russell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatamemoryyoullmakelyricschords.pro
+    imported_at: '2026-01-02'

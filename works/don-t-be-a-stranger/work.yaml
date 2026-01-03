@@ -1,0 +1,20 @@
+id: don-t-be-a-stranger
+title: Don't Be A Stranger
+artist: David Allan Coe
+composers:
+- David A. Coe and Karen Brooks
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontbeastrangerlyricschords.pro
+    imported_at: '2026-01-02'

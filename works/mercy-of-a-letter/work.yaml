@@ -1,0 +1,19 @@
+id: mercy-of-a-letter
+title: Mercy Of A Letter
+artist: Jerry Lee Lewis
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mercyofaletterlyricschords.pro
+    imported_at: '2026-01-02'

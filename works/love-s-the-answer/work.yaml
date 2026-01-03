@@ -1,0 +1,17 @@
+id: love-s-the-answer
+title: Love's The Answer
+artist: Tanya Tucker
+composers:
+- Norro Wilson and Emily Mitchell
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovestheanswerlyricschords.pro
+    imported_at: '2026-01-02'

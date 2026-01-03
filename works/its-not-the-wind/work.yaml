@@ -1,0 +1,17 @@
+id: its-not-the-wind
+title: It’s Not The Wind
+artist: Kenny and Amanda Smith
+composers:
+- Bobby Harrison
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsnotthewindlyricschords.pro
+    imported_at: '2026-01-02'

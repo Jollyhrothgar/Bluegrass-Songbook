@@ -1,0 +1,17 @@
+id: with-his-hand-in-mine
+title: With His Hand In Mine
+artist: Jean Shepard
+composers:
+- Larry Butler, Ruth Butler, Lorene Allen
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withhishandinminelyricschords.pro
+    imported_at: '2026-01-02'

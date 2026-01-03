@@ -1,0 +1,19 @@
+id: the-light
+title: The Light
+artist: Emmylou Harris
+composers:
+- Kieran Kane and Emmylou Harris
+default_key: Am
+tags:
+- Folk
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelightlyricschords.pro
+    imported_at: '2026-01-02'

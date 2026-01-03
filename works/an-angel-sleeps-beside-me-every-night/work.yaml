@@ -1,0 +1,15 @@
+id: an-angel-sleeps-beside-me-every-night
+title: An Angel Sleeps Beside Me Every Night
+artist: Eddy Arnold
+composers:
+- Gary S. Paxton
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anangelsleepsbesidemeeverynightlyricschords.pro
+    imported_at: '2026-01-02'

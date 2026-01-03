@@ -1,0 +1,18 @@
+id: the-last-suit-you-wear
+title: The Last Suit You Wear
+artist: Larry Sparks
+composers:
+- Larry Shell and Kim Williams
+default_key: C
+tags:
+- Bluegrass
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelastsuityouwearlyricschords.pro
+    imported_at: '2026-01-02'

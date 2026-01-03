@@ -1,0 +1,19 @@
+id: paving-the-highway-with-tears
+title: Paving The Highway With Tears
+artist: Hank Snow
+composers:
+- Ed G. Nelson and Steve Nelson
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pavingthehighwaywithtearslyricschords.pro
+    imported_at: '2026-01-02'

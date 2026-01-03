@@ -1,0 +1,17 @@
+id: did-you-ever-see-a-dream-walking
+title: Did You Ever See A Dream Walking
+artist: Fats Domino
+composers:
+- Mack Gordon and Harry Revel
+default_key: G
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didyoueverseeadreamwalkinglyricschords.pro
+    imported_at: '2026-01-02'

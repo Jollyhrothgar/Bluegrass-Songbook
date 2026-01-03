@@ -1,0 +1,15 @@
+id: i-can-t-love-you-any-less
+title: I Can't Love You Any Less
+artist: Alabama
+composers:
+- Ronnie Rogers, Teddy Gentry, Greg Flower, Randy Owen
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantloveyouanylesslyricschords.pro
+    imported_at: '2026-01-02'

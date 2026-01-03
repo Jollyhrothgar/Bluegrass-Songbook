@@ -1,0 +1,17 @@
+id: the-memory
+title: The Memory
+artist: Faron Young
+composers:
+- Charolotte Pennington and Ray Pennington
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thememorylyricsandchords.pro
+    imported_at: '2026-01-02'

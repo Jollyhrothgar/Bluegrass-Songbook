@@ -1,0 +1,18 @@
+id: all-together-now-let-s-fall-apart
+title: All Together Now Let's Fall Apart
+artist: Ronnie Milsap
+composers:
+- Johnny Koonse
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alltogethernowletsfallapartlyricschords.pro
+    imported_at: '2026-01-02'

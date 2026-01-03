@@ -1,0 +1,18 @@
+id: i-have-loved-you-girl-but-not-like-before
+title: I Have Loved You Girl (But Not Like Before)
+artist: Ed Bruce
+composers:
+- Earl Thomas Conley
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihavelovedyougirlbutnotlikebeforelyricschords.pro
+    imported_at: '2026-01-02'

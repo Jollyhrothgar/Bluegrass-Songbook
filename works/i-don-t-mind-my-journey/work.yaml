@@ -1,0 +1,17 @@
+id: i-don-t-mind-my-journey
+title: I Don't Mind My Journey
+artist: The Oak Ridge Boys
+composers:
+- William York
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontmindmyjourneylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: somebody-s-praying
+title: Somebody's Praying
+artist: Ricky Skaggs
+composers:
+- John G. Elliott
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodysprayinglyricschords.pro
+    imported_at: '2026-01-02'

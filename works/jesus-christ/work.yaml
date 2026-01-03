@@ -1,0 +1,16 @@
+id: jesus-christ
+title: Jesus Christ
+artist: Woody Guthrie
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: JesusChristlyricschords.pro
+    imported_at: '2026-01-02'

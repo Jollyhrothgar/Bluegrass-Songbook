@@ -1,0 +1,17 @@
+id: ain-t-nobody-s-business
+title: Ain't Nobody's Business
+artist: Hank Williams Jr.
+composers:
+- Porter Grainger and Everett Robbins
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintnobodysbusinesslyricschords.pro
+    imported_at: '2026-01-02'

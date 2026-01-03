@@ -1,0 +1,16 @@
+id: only-in-my-mind
+title: Only In My Mind
+artist: Reba McEntire
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onlyinmymindlyricsandchords.pro
+    imported_at: '2026-01-02'

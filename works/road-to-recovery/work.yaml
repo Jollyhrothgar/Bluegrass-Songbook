@@ -1,0 +1,15 @@
+id: road-to-recovery
+title: Road To Recovery
+artist: Stonewall Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: roadtorecoverylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: dedicate-the-blues-to-me
+title: Dedicate The Blues To Me
+artist: Ronnie Milsap
+composers:
+- Charles Singleton - Rose Marie McCoy
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dedicatethebluestomelyricschords.pro
+    imported_at: '2026-01-02'

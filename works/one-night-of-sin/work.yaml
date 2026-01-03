@@ -1,0 +1,18 @@
+id: one-night-of-sin
+title: One Night Of Sin
+artist: Fats Domino
+composers:
+- Dave Bartholomew, Pearl King, Anita Steiman
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onenightofsinlyricschords.pro
+    imported_at: '2026-01-02'

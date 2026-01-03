@@ -1,0 +1,17 @@
+id: when-i-hear-the-wind-blow
+title: When I Hear The Wind Blow
+artist: Cal Smith
+composers:
+- Curly Putman and Don Wayne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenihearthewindblowlyricschords.pro
+    imported_at: '2026-01-02'

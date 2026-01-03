@@ -1,0 +1,17 @@
+id: rock-of-ages-keep-my-soul
+title: Rock of Ages Keep My Soul
+artist: Doyle Lawson
+composers:
+- Luther G. Presley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockofageskeepmysoullyricschords.pro
+    imported_at: '2026-01-02'

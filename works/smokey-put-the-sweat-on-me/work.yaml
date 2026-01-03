@@ -1,0 +1,18 @@
+id: smokey-put-the-sweat-on-me
+title: Smokey Put The Sweat On Me
+artist: Kris Kristofferson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: smokeyputthesweatonmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: man-and-wife-time
+title: Man And Wife Time
+artist: Jim Ed Brown
+composers:
+- Buzz Rabin and Dave Pittman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: manandwifetimelyricschords.pro
+    imported_at: '2026-01-02'

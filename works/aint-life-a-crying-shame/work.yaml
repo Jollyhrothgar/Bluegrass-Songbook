@@ -1,0 +1,18 @@
+id: aint-life-a-crying-shame
+title: Ain’t Life A Crying Shame
+artist: Marty Robbins
+composers:
+- Tony Senn and Harry McDowell
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintlifeacryingshamelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: will-santy-come-to-shanty-town
+title: Will Santy Come To Shanty Town
+artist: Eddy Arnold
+composers:
+- Steve Nelson, Ed G. Nelson, Eddy Arnold
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willsantycometoshantytownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: at-the-corner-of-walk-and-don-t-walk
+title: At The Corner Of Walk And Don't Walk
+artist: Rhonda Vincent
+composers:
+- Kenny Beard and John Jarrard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atthecornerofwalkanddontwalklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-gonna-fall-out-of-love-with-you
+title: I'm Gonna Fall Out of Love With You
+artist: Webb Pierce
+composers:
+- Martha E. Taylor and Randy Hughes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnafalloutoflovewithyoulyricschords.pro
+    imported_at: '2026-01-02'

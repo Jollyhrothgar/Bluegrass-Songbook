@@ -1,0 +1,17 @@
+id: five-fingers-left-lyrics-chords
+title: Five Fingers Left Lyrics Chords
+artist: Loretta Lynn
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fivefingersleftlyricschords.pro
+    imported_at: '2026-01-02'

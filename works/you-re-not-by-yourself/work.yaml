@@ -1,0 +1,15 @@
+id: you-re-not-by-yourself
+title: You're Not By Yourself
+artist: Vern Gosdin
+composers:
+- Murray F. Cannon, Garland Perry Cochran, Vern Gosdin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourenotbyyourselflyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: a-memory-thats-all-youll-ever-be-to-me
+title: A Memory That’s All You’ll Ever Be To Me
+artist: Ernest Tubb
+composers:
+- Norman Owens and Lance Guynes
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amemorythatsallyoulleverbetomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: new-game-now
+title: New Game Now
+artist: Kris Kristofferson
+composers:
+- Kris Kristofferson and Danny Timms
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: newgamenowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: i-fall-to-pieces
+title: I Fall to Pieces
+artist: Patsy Cline
+composers:
+- Harlan Howard and Hank Cochran
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifalltopieceslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: no-other-baby
+title: No Other Baby
+artist: Bobby Helms
+composers:
+- Dick Bishop and Bob Watson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nootherbabylyricschords.pro
+    imported_at: '2026-01-02'

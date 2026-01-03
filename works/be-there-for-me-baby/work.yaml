@@ -1,0 +1,17 @@
+id: be-there-for-me-baby
+title: Be There For Me Baby
+artist: Johnny Lee
+composers:
+- Tommy Rocco and Charlie Black
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bethereformebabylyricschords.pro
+    imported_at: '2026-01-02'

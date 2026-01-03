@@ -1,0 +1,19 @@
+id: you-re-too-young-to-cry-now
+title: You're Too Young To Cry Now
+artist: Hank Thompson
+composers:
+- Bud Fisher and Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretooyoungtocrynowlyricschords.pro
+    imported_at: '2026-01-02'

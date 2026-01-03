@@ -1,0 +1,17 @@
+id: somebody-lied-1
+title: Somebody Lied
+artist: Hawkshaw Hawkins
+composers:
+- Arthur Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodyliedlyricschords.pro
+    imported_at: '2026-01-02'

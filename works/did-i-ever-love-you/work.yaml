@@ -1,0 +1,16 @@
+id: did-i-ever-love-you
+title: Did I Ever Love You
+artist: Willie Nelson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didieverloveyoulyricschords.pro
+    imported_at: '2026-01-02'

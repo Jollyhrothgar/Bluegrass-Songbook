@@ -1,0 +1,15 @@
+id: hold-me-1
+title: Hold me
+artist: Barbara Mandrell
+composers:
+- G. Ray
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdmelyricsandchords.pro
+    imported_at: '2026-01-02'

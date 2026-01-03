@@ -1,0 +1,17 @@
+id: true-love-is-a-golden-ring
+title: True Love Is A Golden Ring
+artist: Alan Jackson
+composers:
+- Roger Murrah and Alan Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: trueloveisagoldenringlyricschords.pro
+    imported_at: '2026-01-02'

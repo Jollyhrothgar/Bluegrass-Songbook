@@ -1,0 +1,18 @@
+id: pick-up-the-oars-and-row
+title: Pick Up The Oars And Row
+artist: Randy Travis
+composers:
+- Jamie O'Hara
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pickuptheoarsandrowlyricschords.pro
+    imported_at: '2026-01-02'

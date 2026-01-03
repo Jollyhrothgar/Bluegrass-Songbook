@@ -1,0 +1,17 @@
+id: you-re-the-cloud-i-m-on-when-i-m-high
+title: You're The Cloud I'm On (When I'm High)
+artist: George Strait
+composers:
+- Ronnie Rogers
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethecloudimonwhenimhighlyricschords.pro
+    imported_at: '2026-01-02'

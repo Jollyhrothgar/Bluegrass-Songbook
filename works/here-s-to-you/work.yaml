@@ -1,0 +1,17 @@
+id: here-s-to-you
+title: Here's To You
+artist: Ray Price
+composers:
+- Ray Holt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: herestoyoulyricschords.pro
+    imported_at: '2026-01-02'

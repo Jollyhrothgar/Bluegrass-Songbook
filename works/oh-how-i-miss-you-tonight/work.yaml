@@ -1,0 +1,15 @@
+id: oh-how-i-miss-you-tonight
+title: Oh How I Miss You Tonight
+artist: Jim Reeves
+composers:
+- Benny Davis, Joe Burke, Mark Fisher
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohhowimissyoutonightlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: married-by-the-bible
+title: Married by the Bible
+artist: Hank Snow
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: marriedbythebiblelyricschords.pro
+    imported_at: '2026-01-02'

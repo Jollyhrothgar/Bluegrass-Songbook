@@ -1,0 +1,17 @@
+id: we-re-strangers-again
+title: We're Strangers Again
+artist: Randy Travis
+composers:
+- Merle Haggard and Leona Williams
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: werestrangersagainlyricsandchords.pro
+    imported_at: '2026-01-02'

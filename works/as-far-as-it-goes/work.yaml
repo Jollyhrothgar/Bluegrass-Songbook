@@ -1,0 +1,17 @@
+id: as-far-as-it-goes
+title: As Far as It Goes
+artist: George Strait
+composers:
+- Anthony George Chalk and Howard Russell Smith
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: asfarasitgoeslyricschords.pro
+    imported_at: '2026-01-02'

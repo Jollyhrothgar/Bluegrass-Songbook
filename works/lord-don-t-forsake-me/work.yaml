@@ -1,0 +1,19 @@
+id: lord-don-t-forsake-me
+title: Lord Don't Forsake Me
+artist: Alison Krauss
+composers:
+- Todd Rakestraw
+default_key: C
+tags:
+- Bluegrass
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lorddontforsakemelyricschords.pro
+    imported_at: '2026-01-02'

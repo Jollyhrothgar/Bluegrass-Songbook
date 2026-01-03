@@ -1,0 +1,15 @@
+id: the-place-where-i-worship
+title: The Place Where I Worship
+artist: R.W. Hammonds
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theplacewhereiworshiplyricschords.pro
+    imported_at: '2026-01-02'

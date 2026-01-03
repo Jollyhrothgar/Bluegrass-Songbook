@@ -1,0 +1,18 @@
+id: father-of-judy-ann
+title: Father Of Judy Ann
+artist: Red Sovine
+composers:
+- Bill Owens
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fatherofjudyannlyricschords.pro
+    imported_at: '2026-01-02'

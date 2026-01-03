@@ -1,0 +1,17 @@
+id: heart-aching-blues
+title: Heart Aching Blues
+artist: Ray Price
+composers:
+- Jimmy Fields, Ray Pulley, Ray Price
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartachingblueslyricschords.pro
+    imported_at: '2026-01-02'

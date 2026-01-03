@@ -1,0 +1,18 @@
+id: the-winner-of-your-heart
+title: The Winner Of Your Heart
+artist: Kitty Wells
+composers:
+- Johnnie Masters
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewinnerofyourheartlyricschords.pro
+    imported_at: '2026-01-02'

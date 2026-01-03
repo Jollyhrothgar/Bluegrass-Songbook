@@ -1,0 +1,15 @@
+id: too-deep-for-tears
+title: Too Deep For Tears
+artist: Crystal Gayle
+composers:
+- Richard Leigh
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toodeepfortearslyricschords.pro
+    imported_at: '2026-01-02'

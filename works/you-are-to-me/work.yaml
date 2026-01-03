@@ -1,0 +1,18 @@
+id: you-are-to-me
+title: You Are To Me
+artist: Conway Twitty
+composers:
+- Don Schlitz and Billy Livsey
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youaretomelyricschords.pro
+    imported_at: '2026-01-02'

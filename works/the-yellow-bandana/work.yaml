@@ -1,0 +1,17 @@
+id: the-yellow-bandana
+title: The Yellow Bandana
+artist: Faron Young
+composers:
+- Steve Karliski, Larry Kolber, Al Gordoni
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theyellowbandanalyricschords.pro
+    imported_at: '2026-01-02'

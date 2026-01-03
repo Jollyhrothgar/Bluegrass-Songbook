@@ -1,0 +1,17 @@
+id: devil-s-disciple
+title: Devil's Disciple
+artist: Johnny Bush
+composers:
+- Wynn Preston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: devilsdisciplelyricschords.pro
+    imported_at: '2026-01-02'

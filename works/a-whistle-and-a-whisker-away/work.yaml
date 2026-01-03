@@ -1,0 +1,15 @@
+id: a-whistle-and-a-whisker-away
+title: A Whistle And A Whisker Away
+artist: Lynn Anderson
+composers:
+- Bill Hayes and Lee Hayes
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whistleandawhiskerawaylyricschords.pro
+    imported_at: '2026-01-02'

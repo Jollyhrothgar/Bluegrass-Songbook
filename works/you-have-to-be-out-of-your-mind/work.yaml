@@ -1,0 +1,17 @@
+id: you-have-to-be-out-of-your-mind
+title: You Have To Be Out Of Your Mind
+artist: Norma Jean
+composers:
+- Liz Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youhavetobeoutofyourmindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-don-t-owe-you-nothing
+title: I Don't Owe You Nothing
+artist: Bobby Helms
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontoweyounothinglyricschords.pro
+    imported_at: '2026-01-02'

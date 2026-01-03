@@ -1,0 +1,17 @@
+id: from-cotton-to-satin
+title: From Cotton To Satin
+artist: Gene Watson
+composers:
+- David Chamberlain and Jim Vest
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromcottontosatinlyricschords.pro
+    imported_at: '2026-01-02'

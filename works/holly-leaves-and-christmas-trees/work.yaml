@@ -1,0 +1,20 @@
+id: holly-leaves-and-christmas-trees
+title: Holly Leaves And Christmas Trees
+artist: Elvis Presley
+composers:
+- Glen Dale Spreen and Bobby G. West
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hollyleavesandChristmastreeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: the-great-snowman
+title: The Great Snowman
+artist: John D. Loudermilk
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegreatsnowmanlyricschords.pro
+    imported_at: '2026-01-02'

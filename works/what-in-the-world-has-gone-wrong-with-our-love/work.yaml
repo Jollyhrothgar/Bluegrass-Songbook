@@ -1,0 +1,17 @@
+id: what-in-the-world-has-gone-wrong-with-our-love
+title: What In The World Has Gone Wrong With Our Love
+artist: Jack Greene and Jeannie Seely
+composers:
+- Hank Cochran and Johnny Slate
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatintheworldhasgonewrongwithourlovelyricschords.pro
+    imported_at: '2026-01-02'

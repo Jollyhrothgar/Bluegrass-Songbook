@@ -1,0 +1,15 @@
+id: church-behind-the-wall
+title: Church Behind The Wall
+artist: Hank Locklin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: churchbehindthewalllyricschords.pro
+    imported_at: '2026-01-02'

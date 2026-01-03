@@ -1,0 +1,17 @@
+id: we-re-marching-to-zion
+title: We're Marching To Zion
+artist: Burl Ives
+composers:
+- Isaac Watts
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weremarchingtozionlyricschords.pro
+    imported_at: '2026-01-02'

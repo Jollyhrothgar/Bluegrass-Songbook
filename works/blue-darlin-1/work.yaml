@@ -1,0 +1,17 @@
+id: blue-darlin-1
+title: Blue Darlin'
+artist: Leona Williams
+composers:
+- Leslie Lyle
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluedarlinlyricschords.pro
+    imported_at: '2026-01-02'

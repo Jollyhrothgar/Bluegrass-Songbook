@@ -1,0 +1,18 @@
+id: christmas-ain-t-like-christmas-anymore-lyrics-and-chords
+title: Christmas Ain't Like Christmas Anymore Lyrics and Chords
+artist: Kitty Wells
+composers:
+- Roy Botkin
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ChristmasaintlikeChristmasanymorelyricschords.pro
+    imported_at: '2026-01-02'

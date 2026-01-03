@@ -1,0 +1,18 @@
+id: i-m-coming-home
+title: I'm Coming Home
+artist: Johnny Horton
+composers:
+- Johnny Horton and Tillman Franks
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imcominghomelyricschords.pro
+    imported_at: '2026-01-02'

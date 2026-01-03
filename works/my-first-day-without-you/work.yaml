@@ -1,0 +1,18 @@
+id: my-first-day-without-you
+title: My First Day Without You
+artist: Wanda Jackson
+composers:
+- Charlie Williams and Scott Turner
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myfirstdaywithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

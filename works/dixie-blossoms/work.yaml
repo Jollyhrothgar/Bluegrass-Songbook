@@ -1,0 +1,18 @@
+id: dixie-blossoms
+title: Dixie Blossoms
+artist: Traditional
+composers:
+- Biography:Percy Wenrich
+default_key: G
+tags:
+- Jazzy
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

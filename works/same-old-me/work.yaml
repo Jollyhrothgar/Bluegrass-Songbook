@@ -1,0 +1,17 @@
+id: same-old-me
+title: Same Old Me
+artist: Ray Price
+composers:
+- Frank Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sameoldmelyricsandchords.pro
+    imported_at: '2026-01-02'

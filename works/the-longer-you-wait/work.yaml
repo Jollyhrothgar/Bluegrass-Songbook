@@ -1,0 +1,16 @@
+id: the-longer-you-wait
+title: The Longer You Wait
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelongeryouwaitlyricschords.pro
+    imported_at: '2026-01-02'

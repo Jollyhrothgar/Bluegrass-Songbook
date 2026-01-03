@@ -1,0 +1,18 @@
+id: a-jukebox-with-a-country-song
+title: A Jukebox With a Country Song
+artist: Doug Stone
+composers:
+- Gene Nelson and Ronald A. Santaniello
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ajukeboxwithacountrysonglyricschords.pro
+    imported_at: '2026-01-02'

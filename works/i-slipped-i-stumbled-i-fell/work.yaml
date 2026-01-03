@@ -1,0 +1,21 @@
+id: i-slipped-i-stumbled-i-fell
+title: I Slipped I Stumbled I Fell
+artist: Elvis Presley
+composers:
+- Ben Weisman and Fred Wise
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: islippedistumbledifelllyricschords.pro
+    imported_at: '2026-01-02'

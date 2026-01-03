@@ -1,0 +1,18 @@
+id: my-toot-toot
+title: My Toot Toot
+artist: Fats Domino
+composers:
+- Sidney Semien
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mytoottootlyricschords.pro
+    imported_at: '2026-01-02'

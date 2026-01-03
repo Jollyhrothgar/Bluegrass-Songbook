@@ -1,0 +1,15 @@
+id: he-has-walked-this-way-before
+title: He Has Walked This Way Before
+artist: Sonny James
+composers:
+- Sonny James and Carole Smith
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hehaswalkedthiswaybeforelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: pour-me-another-tequila
+title: Pour Me Another Tequila
+artist: Bobby Bare
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pourmeanothertequilalyricschords.pro
+    imported_at: '2026-01-02'

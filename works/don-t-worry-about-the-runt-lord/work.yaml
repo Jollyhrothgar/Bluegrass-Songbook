@@ -1,0 +1,17 @@
+id: don-t-worry-about-the-runt-lord
+title: Don't Worry About The Runt Lord
+artist: Cal Smith
+composers:
+- Don Wayne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontworryabouttheruntlordlyricschords.pro
+    imported_at: '2026-01-02'

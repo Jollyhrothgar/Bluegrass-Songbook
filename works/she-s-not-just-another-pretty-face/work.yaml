@@ -1,0 +1,17 @@
+id: she-s-not-just-another-pretty-face
+title: She's Not Just Another Pretty Face
+artist: The Oak Ridge Boys
+composers:
+- Sam Lorber and J.D. Martin
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesnotjustanotherprettyfacelyricschords.pro
+    imported_at: '2026-01-02'

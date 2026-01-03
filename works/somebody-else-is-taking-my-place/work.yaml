@@ -1,0 +1,19 @@
+id: somebody-else-is-taking-my-place
+title: Somebody Else Is Taking My Place
+artist: Connie Francis
+composers:
+- Dick Howard, Bob Ellsworth, Russ Morgan
+default_key: G
+tags:
+- Pop
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodyelseistakingmyplacelyricschords.pro
+    imported_at: '2026-01-02'

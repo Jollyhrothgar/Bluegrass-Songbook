@@ -1,0 +1,16 @@
+id: rescue-from-moose-river-gold-mine
+title: Rescue From Moose River Gold Mine
+artist: Wilf Carter
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rescuefrommooserivergoldminelyricschords.pro
+    imported_at: '2026-01-02'

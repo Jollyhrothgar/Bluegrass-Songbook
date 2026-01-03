@@ -1,0 +1,17 @@
+id: if-you-were-mine-1
+title: If You Were Mine
+artist: Jim Reeves
+composers:
+- Cy Coben
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouwereminelyricschords.pro
+    imported_at: '2026-01-02'

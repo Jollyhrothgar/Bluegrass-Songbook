@@ -1,0 +1,16 @@
+id: i-believe-in-the-sunshine
+title: I Believe In The Sunshine
+artist: Roger Miller
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibelieveinthesunshinelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: every-step-of-the-way-lyrics-and-chords
+title: Every Step Of The Way Lyrics and Chords
+artist: Sonny James
+composers:
+- Robert Allen and Al Stillman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everystepofthewaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: between-the-lines
+title: Between The Lines
+artist: Hawkshaw Hawkins
+composers:
+- Jim Eanes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betweenthelineslyricschords.pro
+    imported_at: '2026-01-02'

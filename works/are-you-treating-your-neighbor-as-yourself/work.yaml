@@ -1,0 +1,17 @@
+id: are-you-treating-your-neighbor-as-yourself
+title: Are You Treating Your Neighbor As Yourself
+artist: Hank Snow
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: areyoutreatingyourneighborasyourselflyricschords.pro
+    imported_at: '2026-01-02'

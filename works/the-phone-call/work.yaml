@@ -1,0 +1,18 @@
+id: the-phone-call
+title: The Phone Call
+artist: Mickey Gilley
+composers:
+- Even Stevens and Billy Joe Walker
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thephonecalllyricschords.pro
+    imported_at: '2026-01-02'

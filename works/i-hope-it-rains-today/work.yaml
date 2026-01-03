@@ -1,0 +1,17 @@
+id: i-hope-it-rains-today
+title: I Hope It Rains Today
+artist: Hank Williams Jr.
+composers:
+- Kay Arnold
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihopeitrainstodaylyricschords.pro
+    imported_at: '2026-01-02'

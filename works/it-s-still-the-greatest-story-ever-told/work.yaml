@@ -1,0 +1,17 @@
+id: it-s-still-the-greatest-story-ever-told
+title: It's Still The Greatest Story Ever Told
+artist: The Gaithers
+composers:
+- Gloria Gaither, William Gaither, Jackie Miller
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsstillthegreateststoryevertoldlyricschords.pro
+    imported_at: '2026-01-02'

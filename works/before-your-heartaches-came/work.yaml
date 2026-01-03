@@ -1,0 +1,15 @@
+id: before-your-heartaches-came
+title: Before Your Heartaches Came
+artist: Bobby Helms
+composers:
+- Merrill St. John
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforeyourheartachescamelyricschords.pro
+    imported_at: '2026-01-02'

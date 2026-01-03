@@ -1,0 +1,19 @@
+id: it-aint-gonna-worry-my-mind
+title: It Ain’t Gonna Worry My Mind
+artist: Mickey Gilley
+composers:
+- Richard C. Leigh
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itaintgonnaworrymymindlyricschords.pro
+    imported_at: '2026-01-02'

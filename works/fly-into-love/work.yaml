@@ -1,0 +1,15 @@
+id: fly-into-love
+title: Fly Into Love
+artist: Charly McClain
+composers:
+- Lewis Anderson and Mark Wright
+default_key: F
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: flyintolovelyricschords.pro
+    imported_at: '2026-01-02'

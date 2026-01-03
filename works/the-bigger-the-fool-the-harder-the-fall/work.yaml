@@ -1,0 +1,18 @@
+id: the-bigger-the-fool-the-harder-the-fall
+title: The Bigger The Fool The Harder The Fall
+artist: Kris Kristofferson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebiggerthefooltheharderthefalllyricschords.pro
+    imported_at: '2026-01-02'

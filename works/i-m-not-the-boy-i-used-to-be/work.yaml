@@ -1,0 +1,17 @@
+id: i-m-not-the-boy-i-used-to-be
+title: I'm Not The Boy I Used To Be
+artist: Charlie Pride
+composers:
+- Curly Putman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnottheboyiusedtobelyricschords.pro
+    imported_at: '2026-01-02'

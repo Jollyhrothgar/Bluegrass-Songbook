@@ -1,0 +1,18 @@
+id: joy-to-the-world-1
+title: Joy To The World
+artist: George Strait
+composers:
+- Isaac Watts and George F. Handel
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: joytotheworldlyricschords.pro
+    imported_at: '2026-01-02'

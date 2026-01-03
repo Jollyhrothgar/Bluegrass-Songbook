@@ -1,0 +1,17 @@
+id: crazy-at-christmas
+title: Crazy At Christmas
+artist: The Bellamy Brothers
+composers:
+- David Bellamy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crazyatChristmaslyricschords.pro
+    imported_at: '2026-01-02'

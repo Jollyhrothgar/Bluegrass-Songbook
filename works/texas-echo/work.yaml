@@ -1,0 +1,13 @@
+id: texas-echo
+title: Texas Echo
+artist: David Ball
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: texasecholyricschords.pro
+    imported_at: '2026-01-02'

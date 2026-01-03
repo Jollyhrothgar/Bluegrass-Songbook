@@ -1,0 +1,17 @@
+id: love-me-like-you-love-me
+title: Love Me Like You Love Me
+artist: Clay Walker
+composers:
+- Bill LaBounty and Steve Wariner
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovemelikeyoulovemelyricschords.pro
+    imported_at: '2026-01-02'

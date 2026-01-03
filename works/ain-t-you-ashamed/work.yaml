@@ -1,0 +1,17 @@
+id: ain-t-you-ashamed
+title: Ain't You Ashamed
+artist: Jean Shepard
+composers:
+- Ricky Riddle and Mac Donald
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintyouashamedlyricschords.pro
+    imported_at: '2026-01-02'

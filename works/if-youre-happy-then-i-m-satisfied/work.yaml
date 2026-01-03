@@ -1,0 +1,17 @@
+id: if-youre-happy-then-i-m-satisfied
+title: If You’re Happy Then I'm Satisfied
+artist: Billy Walker
+composers:
+- Marvin Rainwater and Glenn Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyourehappythenimsatisfiedlyricschords.pro
+    imported_at: '2026-01-02'

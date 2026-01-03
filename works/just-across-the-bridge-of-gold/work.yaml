@@ -1,0 +1,17 @@
+id: just-across-the-bridge-of-gold
+title: Just Across the Bridge of Gold
+artist: Hank Snow
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justarossthebridgeofgoldlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: have-you-ever-loved-somebody
+title: Have You Ever Loved Somebody
+artist: The Everly Brothers
+composers:
+- Graham Nash, Alan Clarke, Tony Hicks
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveyoueverlovedsomebodylyricschords.pro
+    imported_at: '2026-01-02'

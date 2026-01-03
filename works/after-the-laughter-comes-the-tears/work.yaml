@@ -1,0 +1,17 @@
+id: after-the-laughter-comes-the-tears
+title: After The Laughter Comes The Tears
+artist: Eddy Arnold
+composers:
+- Ray Griff
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterthelaughtercomesthetearslyricschords.pro
+    imported_at: '2026-01-02'

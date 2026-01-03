@@ -1,0 +1,17 @@
+id: then-for-them
+title: Then For Them
+artist: Ricky Van Shelton
+composers:
+- Larry Boone and Will Robinson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenforthemlyricschords.pro
+    imported_at: '2026-01-02'

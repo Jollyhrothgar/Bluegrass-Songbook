@@ -1,0 +1,17 @@
+id: untanglin-my-mind
+title: Untanglin' My Mind
+artist: Clint Black
+composers:
+- Merle Haggard and Clint Black
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: untanglinmymindlyricschords.pro
+    imported_at: '2026-01-02'

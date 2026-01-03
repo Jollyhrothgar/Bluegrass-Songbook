@@ -1,0 +1,17 @@
+id: you-ve-been-a-friend-to-me
+title: You've Been A Friend To Me
+artist: The Price Sisters
+composers:
+- A.P. Carter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvebeenafriendtomelyricschords.pro
+    imported_at: '2026-01-02'

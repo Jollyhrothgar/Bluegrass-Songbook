@@ -1,0 +1,17 @@
+id: forever-1
+title: Forever
+artist: Billy Walker
+composers:
+- Buddy Killen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foreverlyricschords.pro
+    imported_at: '2026-01-02'

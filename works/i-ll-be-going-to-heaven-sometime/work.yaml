@@ -1,0 +1,17 @@
+id: i-ll-be-going-to-heaven-sometime
+title: I'll Be Going To Heaven Sometime
+artist: Doyle Lawson
+composers:
+- Howard Watts
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbegoingtoheavensometimelyricschords.pro
+    imported_at: '2026-01-02'

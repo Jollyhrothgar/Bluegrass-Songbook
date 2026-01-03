@@ -1,0 +1,17 @@
+id: i-love-how-you-love-me
+title: I Love How You Love Me
+artist: Bobby Vinton
+composers:
+- Larry Kolber and Barry Mann
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovehowyoulovemelyricschords.pro
+    imported_at: '2026-01-02'

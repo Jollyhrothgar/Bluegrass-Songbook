@@ -1,0 +1,17 @@
+id: there-is-a-time
+title: There Is A Time
+artist: Alan Jackson
+composers:
+- Rodney Dillard and Mitchell Jayne
+default_key: Am
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thereisatimelyricsandchords.pro
+    imported_at: '2026-01-02'

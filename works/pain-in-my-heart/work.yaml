@@ -1,0 +1,17 @@
+id: pain-in-my-heart
+title: Pain In My Heart
+artist: The Osborne Brothers
+composers:
+- Bobby Osborne and Larry Richardson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: paininmyheartlyricschords.pro
+    imported_at: '2026-01-02'

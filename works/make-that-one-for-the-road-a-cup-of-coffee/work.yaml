@@ -1,0 +1,18 @@
+id: make-that-one-for-the-road-a-cup-of-coffee
+title: Make That One For The Road A Cup Of Coffee
+artist: Lefty Frizzell
+composers:
+- Freddie Hart and Eddie Steele
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makethatonefortheroadacupofcoffeelyricschords.pro
+    imported_at: '2026-01-02'

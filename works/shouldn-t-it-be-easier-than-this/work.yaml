@@ -1,0 +1,17 @@
+id: shouldn-t-it-be-easier-than-this
+title: Shouldn't It Be Easier Than This
+artist: Charley Pride
+composers:
+- Rick Giles and John Jarrad
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shouldntitbeeasierthanthislyricschords.pro
+    imported_at: '2026-01-02'

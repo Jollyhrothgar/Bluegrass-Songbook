@@ -1,0 +1,18 @@
+id: rudolph-the-red-nosed-reindeer
+title: Rudolph The Red Nosed Reindeer
+artist: Gene Autry
+composers:
+- Johnny Marks
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rudolphtherednosedreindeerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: be-all-right-in-arkansas
+title: Be All Right In Arkansas
+artist: Connie Smith
+composers:
+- Gery House and Billy Burns
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beallrightinarkansaslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-might-want-to-use-me-again
+title: You Might Want To Use Me Again
+artist: Johnny Rodriguez
+composers:
+- Bobby P. Barker and Keith Palmer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmightwanttousemeagainlyricschords.pro
+    imported_at: '2026-01-02'

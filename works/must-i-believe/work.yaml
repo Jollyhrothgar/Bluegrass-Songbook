@@ -1,0 +1,18 @@
+id: must-i-believe
+title: Must I Believe
+artist: Brenda Lee
+composers:
+- Eddie Polo
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mustibelievelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: this-little-girl-of-mine-1
+title: This Little Girl Of Mine
+artist: Everly Brothers
+composers:
+- Ray Charles
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thislittlegirlofminelyricschords.pro
+    imported_at: '2026-01-02'

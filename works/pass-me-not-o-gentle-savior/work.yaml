@@ -1,0 +1,17 @@
+id: pass-me-not-o-gentle-savior
+title: Pass Me Not O Gentle Savior
+artist: Statler Brother
+composers:
+- Francis J. Crosby and William H. Doane
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: passmenotogentlesaviorlyricschords.pro
+    imported_at: '2026-01-02'

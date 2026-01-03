@@ -1,0 +1,17 @@
+id: don-t-tell-him-that-i-m-still-crying
+title: Don't Tell Him That I'm Still Crying
+artist: Connie Smith
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttellhimthatimstillcryinglyricschords.pro
+    imported_at: '2026-01-02'

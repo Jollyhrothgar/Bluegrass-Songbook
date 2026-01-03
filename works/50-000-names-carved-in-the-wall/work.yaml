@@ -1,0 +1,17 @@
+id: 50-000-names-carved-in-the-wall
+title: 50,000 Names Carved In The Wall
+artist: George Jones
+composers:
+- Jamie O'Hara
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 50000namescarvedinthewalllyricschords.pro
+    imported_at: '2026-01-02'

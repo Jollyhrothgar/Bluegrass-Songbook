@@ -1,0 +1,18 @@
+id: bo-weevil
+title: Bo Weevil
+artist: Fats Domino
+composers:
+- Dave Bartholomew and Fats Domino
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: boweevillyricschords.pro
+    imported_at: '2026-01-02'

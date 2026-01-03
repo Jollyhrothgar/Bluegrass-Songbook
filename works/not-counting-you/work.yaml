@@ -1,0 +1,16 @@
+id: not-counting-you
+title: Not Counting You
+artist: Garth Brooks
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notcountingyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: when-it-s-springtime-in-the-rockies
+title: When It's Springtime In The Rockies
+artist: Gene Autry
+composers:
+- Mary H. Woolsey and Robert Sauer
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenitsspringtimeintherockieslyricschords.pro
+    imported_at: '2026-01-02'

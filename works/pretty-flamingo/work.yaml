@@ -1,0 +1,19 @@
+id: pretty-flamingo
+title: Pretty Flamingo
+artist: The Everly Brothers
+composers:
+- Mark Barkan
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prettyflamingolyricschords.pro
+    imported_at: '2026-01-02'

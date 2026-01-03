@@ -1,0 +1,17 @@
+id: i-need-more-of-you
+title: I Need More Of You
+artist: The Bellamy Brothers
+composers:
+- David Bellamy
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineedmoreofyoulyricschords.pro
+    imported_at: '2026-01-02'

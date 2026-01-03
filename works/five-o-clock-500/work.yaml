@@ -1,0 +1,17 @@
+id: five-o-clock-500
+title: Five O'Clock 500
+artist: Alabama
+composers:
+- Randy Owen, Ron Rogers, Theodore Gentry
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fiveoclock500lyricschords.pro
+    imported_at: '2026-01-02'

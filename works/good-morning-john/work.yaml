@@ -1,0 +1,19 @@
+id: good-morning-john
+title: Good Morning John
+artist: Waylon Jennings
+composers:
+- Kris Kristofferson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodmorningjohnlyricschords.pro
+    imported_at: '2026-01-02'

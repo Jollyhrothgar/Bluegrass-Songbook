@@ -1,0 +1,20 @@
+id: and-i-love-you-so
+title: And I Love You So
+artist: Elvis Presley
+composers:
+- Don McLean
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: andiloveyousolyricschords.pro
+    imported_at: '2026-01-02'

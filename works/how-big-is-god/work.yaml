@@ -1,0 +1,17 @@
+id: how-big-is-god
+title: How Big Is God
+artist: Ray Price
+composers:
+- Stuart Hamblen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howbigisGodlyricschords.pro
+    imported_at: '2026-01-02'

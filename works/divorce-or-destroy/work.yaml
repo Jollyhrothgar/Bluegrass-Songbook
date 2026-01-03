@@ -1,0 +1,17 @@
+id: divorce-or-destroy
+title: Divorce Or Destroy
+artist: Hank Williams Jr.
+composers:
+- Billy Deaton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: divorceordestroylyricschords.pro
+    imported_at: '2026-01-02'

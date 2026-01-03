@@ -1,0 +1,17 @@
+id: the-last-thing-i-planned-to-do-today-was-cheat
+title: The Last Thing I Planned To Do Today Was Cheat
+artist: Gene Watson
+composers:
+- Lola Jean Dillon and Bobby Harden
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelastthingiplannedtodotodaywascheatlyricschords.pro
+    imported_at: '2026-01-02'

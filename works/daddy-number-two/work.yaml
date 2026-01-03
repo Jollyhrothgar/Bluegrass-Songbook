@@ -1,0 +1,17 @@
+id: daddy-number-two
+title: Daddy Number Two
+artist: Johnny Lee
+composers:
+- Glenn Barber and Joe Melson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: daddynumbertwolyricschords.pro
+    imported_at: '2026-01-02'

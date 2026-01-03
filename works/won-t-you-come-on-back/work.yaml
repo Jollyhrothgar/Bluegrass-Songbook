@@ -1,0 +1,18 @@
+id: won-t-you-come-on-back
+title: Won't You Come On Back
+artist: Fats Domino
+composers:
+- Antoine Domino, Tim Gillis, Marion Carpenter
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wontyoucomeonbacklyricschords.pro
+    imported_at: '2026-01-02'

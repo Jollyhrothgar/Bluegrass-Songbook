@@ -1,0 +1,17 @@
+id: be-honest-with-me
+title: Be Honest With Me
+artist: Jim Reeves
+composers:
+- Fred Rose and Gene Autry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: behonestwithmelyricsandchords.pro
+    imported_at: '2026-01-02'

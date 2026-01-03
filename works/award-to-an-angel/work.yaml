@@ -1,0 +1,15 @@
+id: award-to-an-angel
+title: Award To An Angel
+artist: Johnny Paycheck
+composers:
+- Wayne Kemp and Mack Vickery
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awardtoanangellyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: golden-wristwatch
+title: Golden Wristwatch
+artist: Hank Locklin
+composers:
+- Wally Fowler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goldenwristwatchlyricschords.pro
+    imported_at: '2026-01-02'

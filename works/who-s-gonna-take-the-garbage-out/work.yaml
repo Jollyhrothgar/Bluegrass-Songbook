@@ -1,0 +1,19 @@
+id: who-s-gonna-take-the-garbage-out
+title: Who's Gonna Take The Garbage Out
+artist: Loretta Lynn
+composers:
+- Johnny Tillotson and Teddy Wilburn
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whosgonnatakethegarbageoutlyricschords.pro
+    imported_at: '2026-01-02'

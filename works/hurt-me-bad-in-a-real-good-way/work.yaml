@@ -1,0 +1,19 @@
+id: hurt-me-bad-in-a-real-good-way
+title: Hurt Me Bad In A Real Good Way
+artist: Patty Loveless
+composers:
+- Rafe Van Hoy and Deborah Allen
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hurtmebadinarealgoodwaylyricschords.pro
+    imported_at: '2026-01-02'

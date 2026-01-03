@@ -1,0 +1,17 @@
+id: long-black-veil-around-her-heart
+title: Long Black Veil Around Her Heart
+artist: Boxcar Willie
+composers:
+- Lloene Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longblackveilaroundherheartlyricschords.pro
+    imported_at: '2026-01-02'

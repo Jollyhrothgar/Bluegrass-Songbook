@@ -1,0 +1,17 @@
+id: is-love-out-of-style
+title: Is Love Out Of Style
+artist: Wynn Stewart
+composers:
+- Bobby Bare, Harlan Howard, Wynn Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isloveoutofstylelyricschords.pro
+    imported_at: '2026-01-02'

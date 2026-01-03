@@ -1,0 +1,16 @@
+id: one-step-away-1
+title: One Step Away
+artist: Jeannie Seely
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onestepawaylyricschords.pro
+    imported_at: '2026-01-02'

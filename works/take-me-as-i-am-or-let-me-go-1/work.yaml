@@ -1,0 +1,15 @@
+id: take-me-as-i-am-or-let-me-go-1
+title: Take Me As I Am Or Let Me Go
+artist: Don Gibson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemeasiamorletmegolyricschords.pro
+    imported_at: '2026-01-02'

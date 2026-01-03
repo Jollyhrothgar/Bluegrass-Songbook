@@ -1,0 +1,17 @@
+id: silence-says-it-all
+title: Silence Says It All
+artist: Martin Delray
+composers:
+- James A. Rushing
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: silencesaysitallyricschords.pro
+    imported_at: '2026-01-02'

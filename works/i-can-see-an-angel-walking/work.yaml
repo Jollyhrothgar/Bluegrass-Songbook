@@ -1,0 +1,20 @@
+id: i-can-see-an-angel-walking
+title: I Can See an Angel Walking
+artist: Patsy Cline
+composers:
+- Kay Adelman
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanseeanangelwalkinglyricschords.pro
+    imported_at: '2026-01-02'

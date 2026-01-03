@@ -1,0 +1,15 @@
+id: the-raging-storm
+title: The Raging Storm
+artist: Jim Ed Brown and The Browns
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theragingstormlyricschords.pro
+    imported_at: '2026-01-02'

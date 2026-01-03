@@ -1,0 +1,17 @@
+id: anger-and-tears
+title: Anger and Tears
+artist: Mel McDaniel
+composers:
+- Carol W. Chase and Howard Russell Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: angerandtearslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: second-hand-love
+title: Second Hand Love
+artist: Connie Francis
+composers:
+- Phil Spector and Hank Hunter
+default_key: G
+tags:
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: secondhandlovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: last-train-to-glory
+title: Last Train To Glory
+artist: The Oak Ridge Boys
+composers:
+- Walter Carter
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lasttraintoglorylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-ll-try-1
+title: I'll Try
+artist: Lefty Frizzel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illtrylyricschords.pro
+    imported_at: '2026-01-02'

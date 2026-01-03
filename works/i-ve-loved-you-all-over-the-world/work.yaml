@@ -1,0 +1,16 @@
+id: i-ve-loved-you-all-over-the-world
+title: I've Loved You All Over The World
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivelovedyouallovertheworldlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: all-i-can-give-you-is-my-heart
+title: All I Can Give You Is My Heart
+artist: Hank Williams Jr.
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allicangiveyouismyheartlyricschords.pro
+    imported_at: '2026-01-02'

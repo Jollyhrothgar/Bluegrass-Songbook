@@ -1,0 +1,17 @@
+id: mexican-love-songs
+title: Mexican Love Songs
+artist: Linda Hargrove
+composers:
+- Linda Hargrove and Pete Drake
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mexicanlovesongslyricschords.pro
+    imported_at: '2026-01-02'

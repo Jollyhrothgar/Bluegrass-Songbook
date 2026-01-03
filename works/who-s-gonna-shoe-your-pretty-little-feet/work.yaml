@@ -1,0 +1,15 @@
+id: who-s-gonna-shoe-your-pretty-little-feet
+title: Who's Gonna Shoe Your Pretty Little Feet
+artist: Everly Brothers
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whosgonnashoeyourprettylittlefeetlyricschords.pro
+    imported_at: '2026-01-02'

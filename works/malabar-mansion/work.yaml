@@ -1,0 +1,17 @@
+id: malabar-mansion
+title: Malabar Mansion
+artist: Gordon Parsons
+composers:
+- Dave Duncan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: malabarmansionlyricschords.pro
+    imported_at: '2026-01-02'

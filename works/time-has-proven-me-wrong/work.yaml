@@ -1,0 +1,19 @@
+id: time-has-proven-me-wrong
+title: Time Has Proven Me Wrong
+artist: Hank Williams
+composers:
+- Hank Williams, Curley Williams and Mel Foree
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timehasprovenmewronglyricschords.pro
+    imported_at: '2026-01-02'

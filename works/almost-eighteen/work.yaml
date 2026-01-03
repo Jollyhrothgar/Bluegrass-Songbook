@@ -1,0 +1,17 @@
+id: almost-eighteen
+title: Almost Eighteen
+artist: Roy Orbison
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: almosteighteenlyricschords.pro
+    imported_at: '2026-01-02'

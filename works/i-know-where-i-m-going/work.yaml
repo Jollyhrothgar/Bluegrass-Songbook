@@ -1,0 +1,17 @@
+id: i-know-where-i-m-going
+title: I Know Where I'm Going
+artist: George Hamilton IV
+composers:
+- Warren Nadel, Dick Wolf, Randy Starr
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowwhereimgoinglyricschords.pro
+    imported_at: '2026-01-02'

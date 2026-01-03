@@ -1,0 +1,18 @@
+id: you-know-you-re-not-forsaken
+title: You Know You're Not Forsaken
+artist: Connie Francis
+composers:
+- Tom Everett
+default_key: G
+tags:
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youknowyourenotforsakenlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: fourteen-carat-gold
+title: Fourteen Carat Gold
+artist: Hank Locklin
+composers:
+- Sy Sandler and Eddie Zack
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fourteencaratgoldlyricschords.pro
+    imported_at: '2026-01-02'

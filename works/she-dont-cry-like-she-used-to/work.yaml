@@ -1,0 +1,15 @@
+id: she-dont-cry-like-she-used-to
+title: She Don’t Cry Like She Used To
+artist: Johnny Rodriguez
+composers:
+- Frank J. Saulino and James J. Valentini
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shedontcrylikesheusedtolyricschords.pro
+    imported_at: '2026-01-02'

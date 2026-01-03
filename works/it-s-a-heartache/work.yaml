@@ -1,0 +1,17 @@
+id: it-s-a-heartache
+title: It's A Heartache
+artist: Juice Newton
+composers:
+- Ronnie Scott and Steve Wolfe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsaheartachelyricschords.pro
+    imported_at: '2026-01-02'

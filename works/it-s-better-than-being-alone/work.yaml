@@ -1,0 +1,17 @@
+id: it-s-better-than-being-alone
+title: It's Better Than Being Alone
+artist: Moe Bandy
+composers:
+- Ed Penney
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsbetterthanbeingalonelyricschords.pro
+    imported_at: '2026-01-02'

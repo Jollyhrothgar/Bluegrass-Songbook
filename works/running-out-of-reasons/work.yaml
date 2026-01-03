@@ -1,0 +1,19 @@
+id: running-out-of-reasons
+title: Running Out Of Reasons
+artist: Mickey Gilley
+composers:
+- J. W. Gostick and R.E. Westmoreland
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: runningoutofreasonslyricschords.pro
+    imported_at: '2026-01-02'

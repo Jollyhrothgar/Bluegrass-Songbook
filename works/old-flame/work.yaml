@@ -1,0 +1,17 @@
+id: old-flame
+title: Old Flame
+artist: Alabama
+composers:
+- Donny Lowery and Mac McAnally
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldflamelyricschords.pro
+    imported_at: '2026-01-02'

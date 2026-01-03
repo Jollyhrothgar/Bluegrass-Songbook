@@ -1,0 +1,15 @@
+id: loving-you-could-never-be-better
+title: Loving You Could Never Be Better
+artist: George Jones
+composers:
+- Earl Montgomery, Betty Tate, Charlene Montgomery
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovingyoucouldneverbebetterlyricschords.pro
+    imported_at: '2026-01-02'

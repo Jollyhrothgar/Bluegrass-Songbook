@@ -1,0 +1,17 @@
+id: where-the-arkansas-river-leaves-oklahoma
+title: Where The Arkansas River Leaves Oklahoma
+artist: Don Williams
+composers:
+- Waylon Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherethearkansasriverleavesoklahomalyricschords.pro
+    imported_at: '2026-01-02'

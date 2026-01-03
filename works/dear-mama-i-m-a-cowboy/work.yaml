@@ -1,0 +1,15 @@
+id: dear-mama-i-m-a-cowboy
+title: Dear Mama I'm A Cowboy
+artist: Red Steagall
+composers:
+- Red Steagall and Richard O'Brien
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dearmamaimacowboylyricschords.pro
+    imported_at: '2026-01-02'

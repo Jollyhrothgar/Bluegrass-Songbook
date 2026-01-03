@@ -1,0 +1,15 @@
+id: i-want-that-feelin-again
+title: I Want That Feelin' Again
+artist: Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwantthatfeelinagainlyricschords.pro
+    imported_at: '2026-01-02'

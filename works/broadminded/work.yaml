@@ -1,0 +1,18 @@
+id: broadminded
+title: Broadminded
+artist: Tammy Wynette
+composers:
+- Jimmy Payne and Leona Williams
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Broadmindedlyricschords.pro
+    imported_at: '2026-01-02'

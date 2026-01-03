@@ -1,0 +1,15 @@
+id: forever-2
+title: Forever
+artist: Johnny Duncan
+composers:
+- Buddy Killen
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foreverlyricswithchords.pro
+    imported_at: '2026-01-02'

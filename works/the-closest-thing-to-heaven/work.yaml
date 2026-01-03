@@ -1,0 +1,17 @@
+id: the-closest-thing-to-heaven
+title: The Closest Thing To Heaven
+artist: Bob Luman
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theclosestthingtoheavenlyricschords.pro
+    imported_at: '2026-01-02'

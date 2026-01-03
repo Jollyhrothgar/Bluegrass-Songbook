@@ -1,0 +1,15 @@
+id: i-want-to-know-more-about-my-jesus
+title: I Want To Know More About My Jesus
+artist: Country Gospel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttoknowmoreaboutmyJesuslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: paradise-aka-mr-peabody-s-coal-train
+title: Paradise (aka) Mr. Peabody's Coal Train
+artist: Everly Brothers
+composers:
+- John Prine
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: paradiselyricschords.pro
+    imported_at: '2026-01-02'

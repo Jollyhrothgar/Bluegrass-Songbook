@@ -1,0 +1,18 @@
+id: take-me-home-and-love-me
+title: Take Me Home And Love Me
+artist: Tammy Wynette
+composers:
+- Norro Wilson, Carmol Taylor, Tammy Wynette
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemehomeandlovemelyricschords.pro
+    imported_at: '2026-01-02'

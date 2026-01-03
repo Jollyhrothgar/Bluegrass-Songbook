@@ -1,0 +1,17 @@
+id: hank-s-song
+title: Hank's Song
+artist: Ferlin Husky
+composers:
+- Tommy Collins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hankssonglyricschords.pro
+    imported_at: '2026-01-02'

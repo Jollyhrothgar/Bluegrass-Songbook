@@ -1,0 +1,18 @@
+id: i-m-falling-for-you
+title: I'm Falling For You
+artist: Merle Haggard
+composers:
+- Bonnie Owens, Buck Owens, Don Rich
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imfallingforyoulyricsandchords.pro
+    imported_at: '2026-01-02'

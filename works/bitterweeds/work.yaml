@@ -1,0 +1,20 @@
+id: bitterweeds
+title: Bitterweeds
+artist: Larry Sparks
+composers:
+- Sonya Wood and Barbara Wilkinson
+default_key: Em
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bitterweedslyricschords.pro
+    imported_at: '2026-01-02'

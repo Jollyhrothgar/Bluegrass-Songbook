@@ -1,0 +1,18 @@
+id: three-cheers-to-the-loser
+title: Three Cheers To The Loser
+artist: Wynn Stewart
+composers:
+- Carl Belew
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threecheerstotheloserlyricschords.pro
+    imported_at: '2026-01-02'

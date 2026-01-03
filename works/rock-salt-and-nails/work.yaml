@@ -1,0 +1,17 @@
+id: rock-salt-and-nails
+title: Rock Salt And Nails
+artist: J.D. Crowe & the New South
+composers:
+- Bruce Phillips
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rocksaltandnailslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: twice-the-speed-of-love
+title: Twice The Speed Of Love
+artist: Buck Owens
+composers:
+- Marty Stuart and Kostas
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twicethespeedoflovelyricschords.pro
+    imported_at: '2026-01-02'

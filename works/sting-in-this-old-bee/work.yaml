@@ -1,0 +1,18 @@
+id: sting-in-this-old-bee
+title: Sting In This Old Bee
+artist: Hank Thompson
+composers:
+- Joe Nelson and Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stinginthisoldbeelyricschords.pro
+    imported_at: '2026-01-02'

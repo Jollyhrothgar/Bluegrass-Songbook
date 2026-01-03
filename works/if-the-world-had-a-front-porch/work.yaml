@@ -1,0 +1,17 @@
+id: if-the-world-had-a-front-porch
+title: If The World Had A Front Porch
+artist: Tracy Lawrence
+composers:
+- Kenny Beard, Paul Nelson, Tracy Lawrence
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iftheworldhadafrontporchlyricschords.pro
+    imported_at: '2026-01-02'

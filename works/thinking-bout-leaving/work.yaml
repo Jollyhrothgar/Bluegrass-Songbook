@@ -1,0 +1,15 @@
+id: thinking-bout-leaving
+title: Thinking Bout Leaving
+artist: Gene Watson
+composers:
+- Randy Albright, Mark D. Sanders, Butch Paulson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thinkingboutleavinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: women-do-know-how-to-carry-on
+title: Women Do Know How To Carry On
+artist: Waylon Jennings
+composers:
+- Waylon Jennings and Bobby Emmons
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: womendoknowhowtocarryonlyricschords.pro
+    imported_at: '2026-01-02'

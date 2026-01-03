@@ -1,0 +1,17 @@
+id: she-ll-walk-all-over-you
+title: She'll Walk All Over You
+artist: Wilburn Brothers
+composers:
+- Darrell Statler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shellwalkalloveryoulyricschords.pro
+    imported_at: '2026-01-02'

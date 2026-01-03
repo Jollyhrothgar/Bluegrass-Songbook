@@ -1,0 +1,16 @@
+id: you-re-not-easy-to-forget-1
+title: You're Not Easy to Forget
+artist: Kitty Wells
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourenoteasytoforgetlyricschords.pro
+    imported_at: '2026-01-02'

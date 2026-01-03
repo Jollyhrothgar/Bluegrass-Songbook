@@ -1,0 +1,17 @@
+id: brand-new-heartache-1
+title: Brand New Heartache
+artist: Emmylou Harris and Gram Parsons
+composers:
+- Boudleaux Bryant and Felice Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brandnewheartachelyricschords.pro
+    imported_at: '2026-01-02'

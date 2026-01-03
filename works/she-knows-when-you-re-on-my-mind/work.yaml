@@ -1,0 +1,18 @@
+id: she-knows-when-you-re-on-my-mind
+title: She Knows When You're On My Mind
+artist: George Strait
+composers:
+- Wayne Kemp and Mack Vickery
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sheknowswhenyoureonmymindlyricschords.pro
+    imported_at: '2026-01-02'

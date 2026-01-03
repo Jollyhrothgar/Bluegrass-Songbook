@@ -1,0 +1,17 @@
+id: a-package-of-lies-tied-in-blue
+title: A Package Of Lies Tied In Blue
+artist: Cowboy Copas
+composers:
+- Jack Rivers and Eddie Hazlewood
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: apackageofliestiedinbluelyricschords.pro
+    imported_at: '2026-01-02'

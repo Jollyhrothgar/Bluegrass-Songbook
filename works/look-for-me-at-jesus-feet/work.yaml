@@ -1,0 +1,17 @@
+id: look-for-me-at-jesus-feet
+title: Look For Me At Jesus' Feet
+artist: The Booth Brothers
+composers:
+- Squire E. Parsons Jr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookformeatJesusfeetlyricschords.pro
+    imported_at: '2026-01-02'

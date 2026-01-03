@@ -1,0 +1,17 @@
+id: remember-m-remember-e-remember-me
+title: Remember M Remember E Remember Me
+artist: George Hamilton IV
+composers:
+- Wayne P. Walker and Danny Dill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: remembermremembereremembermelyricschords.pro
+    imported_at: '2026-01-02'

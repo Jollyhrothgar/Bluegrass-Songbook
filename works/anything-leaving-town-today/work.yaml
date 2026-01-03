@@ -1,0 +1,18 @@
+id: anything-leaving-town-today
+title: Anything Leaving Town Today
+artist: Red Sovine
+composers:
+- Tom T. Hall and Dave Dudley
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anythingleavingtowntodaylyricschords.pro
+    imported_at: '2026-01-02'

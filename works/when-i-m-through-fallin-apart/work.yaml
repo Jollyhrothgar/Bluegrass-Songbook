@@ -1,0 +1,18 @@
+id: when-i-m-through-fallin-apart
+title: When I'm Through Fallin' Apart
+artist: Rhonda Vincent
+composers:
+- Bob Morrison, Gene Dobbins, Michael Huffman
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenimthroughfallinapartlyricschords.pro
+    imported_at: '2026-01-02'

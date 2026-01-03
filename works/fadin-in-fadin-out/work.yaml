@@ -1,0 +1,17 @@
+id: fadin-in-fadin-out
+title: Fadin’ In Fadin’ Out
+artist: Tommy Overstreet
+composers:
+- Bobby Braddock and Sonny Throckmorton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fadininfadinoutlyricschords.pro
+    imported_at: '2026-01-02'

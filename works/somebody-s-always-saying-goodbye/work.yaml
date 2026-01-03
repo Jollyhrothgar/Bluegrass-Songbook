@@ -1,0 +1,18 @@
+id: somebody-s-always-saying-goodbye
+title: Somebody's Always Saying Goodbye
+artist: Anne Murray
+composers:
+- Bob McDill
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodysalwayssayinggoodbyelyricschords.pro
+    imported_at: '2026-01-02'

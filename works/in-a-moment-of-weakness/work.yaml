@@ -1,0 +1,18 @@
+id: in-a-moment-of-weakness
+title: In A Moment Of Weakness
+artist: Tracy Lawrence
+composers:
+- Larry Boone and Paul Nelson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inamomentofweaknesslyricschords.pro
+    imported_at: '2026-01-02'

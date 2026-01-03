@@ -1,0 +1,18 @@
+id: your-love-s-been-a-long-time-coming
+title: Your Love's Been A Long Time Coming
+artist: Tammy Wynette
+composers:
+- Norro Wilson and Carmol Taylor
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourlovesbeenalongtimecominglyricsandchords.pro
+    imported_at: '2026-01-02'

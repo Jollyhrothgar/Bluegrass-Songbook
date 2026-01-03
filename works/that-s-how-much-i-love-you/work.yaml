@@ -1,0 +1,17 @@
+id: that-s-how-much-i-love-you
+title: That's How Much I Love You
+artist: Eddy Arnold
+composers:
+- Eddy Arnold, Wally Fowler, Graydon Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatshowmuchiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

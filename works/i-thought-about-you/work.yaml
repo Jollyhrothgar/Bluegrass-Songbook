@@ -1,0 +1,18 @@
+id: i-thought-about-you
+title: I Thought About You
+artist: Mel Tillis
+composers:
+- Ronal McCown
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithoughtaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

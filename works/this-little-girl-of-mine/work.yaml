@@ -1,0 +1,15 @@
+id: this-little-girl-of-mine
+title: This Little Girl Of Mine
+artist: Faron Young
+composers:
+- Jan Crutchfield
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thislittlegirlofminelyricsandchords.pro
+    imported_at: '2026-01-02'

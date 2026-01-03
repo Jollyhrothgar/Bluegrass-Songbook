@@ -1,0 +1,17 @@
+id: i-never-go-around-mirrors
+title: I Never Go Around Mirrors
+artist: Gene Watson
+composers:
+- Sanger D. Shafer &amp; Lefty Frizzell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inevergoaroundmirrorslyricschords.pro
+    imported_at: '2026-01-02'

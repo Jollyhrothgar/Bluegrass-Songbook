@@ -1,0 +1,17 @@
+id: living-in-the-shadow-of-the-past
+title: Living In The Shadow Of The Past
+artist: Bobby Helms
+composers:
+- Leo Russell, Al Rany, Gary Romero
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: livingintheshadowofthepastlyricschords.pro
+    imported_at: '2026-01-02'

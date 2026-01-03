@@ -1,0 +1,19 @@
+id: you-never-even-call-me-by-my-name
+title: You Never Even Call Me By My Name
+artist: David Allan Coe
+composers:
+- Steve Goodman
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youneverevencallmebymynamelyricschords.pro
+    imported_at: '2026-01-02'

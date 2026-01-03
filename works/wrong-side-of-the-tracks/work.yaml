@@ -1,0 +1,17 @@
+id: wrong-side-of-the-tracks
+title: Wrong Side (Of The Tracks)
+artist: The Wilburn Brothers
+composers:
+- Betty Sue Perry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wrongsideofthetrackslyricschords.pro
+    imported_at: '2026-01-02'

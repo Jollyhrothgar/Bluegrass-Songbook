@@ -1,0 +1,17 @@
+id: i-keep-forgetting-that-i-forgot-about-you
+title: I Keep Forgetting That I Forgot About You
+artist: Wynn Stewart
+composers:
+- Liz Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ikeepforgettingthatiforgotaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

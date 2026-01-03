@@ -1,0 +1,15 @@
+id: it-s-a-sin-to-tell-a-lie
+title: It's a Sin to Tell a Lie
+artist: Slim Whitman
+composers:
+- Billy Mayhew
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsasintotellalielyricschords.pro
+    imported_at: '2026-01-02'

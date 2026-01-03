@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablature Renderer Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 { margin-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 2rem; }
+        .work-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .work-title { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .work-meta { color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem; }
+        .tab-container { min-height: 200px; }
+        .controls { margin-bottom: 1rem; display: flex; gap: 0.5rem; align-items: center; }
+        .controls button {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            background: var(--bg);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .controls button:hover { background: var(--bg-hover); }
+        .controls button.playing { background: var(--accent); color: white; }
+        .position { font-size: 0.75rem; color: var(--text-secondary); }
+        .error { color: #e74c3c; padding: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>Tablature Renderer Test</h1>
+    <p class="subtitle">Testing the packaged OTF renderer from TablEdit_Reverse</p>
+
+    <div id="works"></div>
+
+    <script type="module">
+        import { TabRenderer, TabPlayer } from './js/renderers/index.js';
+
+        const WORKS = [
+            {
+                id: 'foggy-mountain-breakdown',
+                title: 'Foggy Mountain Breakdown',
+                instrument: 'Mandolin',
+                file: 'data/tabs/foggy-mountain-breakdown-mandolin.otf.json'
+            },
+            {
+                id: 'shuckin-the-corn',
+                title: "Shuckin' the Corn",
+                instrument: 'Banjo',
+                file: 'data/tabs/shuckin-the-corn-banjo.otf.json'
+            }
+        ];
+
+        const players = {};
+
+        async function loadWork(work) {
+            try {
+                const response = await fetch(work.file);
+                if (!response.ok) throw new Error(`Failed to load ${work.file}`);
+                const otf = await response.json();
+                return otf;
+            } catch (e) {
+                console.error('Error loading work:', e);
+                return null;
+            }
+        }
+
+        async function renderWork(work, container) {
+            const otf = await loadWork(work);
+            if (!otf) {
+                container.innerHTML = `<div class="error">Failed to load ${work.file}</div>`;
+                return;
+            }
+
+            const track = otf.tracks[0];
+            const notation = otf.notation[track.id];
+
+            // Create controls
+            const controls = document.createElement('div');
+            controls.className = 'controls';
+            controls.innerHTML = `
+                <button class="play-btn">▶ Play</button>
+                <button class="stop-btn" disabled>⏹ Stop</button>
+                <span class="position"></span>
+                <span style="margin-left: auto; font-size: 0.75rem; color: var(--text-secondary);">
+                    ${otf.metadata?.tempo || 120} BPM • ${notation.length} measures
+                </span>
+            `;
+            container.appendChild(controls);
+
+            // Create tab container
+            const tabContainer = document.createElement('div');
+            tabContainer.className = 'tab-container tablature-container';
+            container.appendChild(tabContainer);
+
+            // Render tablature
+            const renderer = new TabRenderer(tabContainer);
+            renderer.render(track, notation, otf.timing?.ticks_per_beat || 480);
+
+            // Set up player
+            const player = new TabPlayer();
+            players[work.id] = { player, otf };
+
+            const playBtn = controls.querySelector('.play-btn');
+            const stopBtn = controls.querySelector('.stop-btn');
+            const posEl = controls.querySelector('.position');
+
+            player.onPositionUpdate = (elapsed, total) => {
+                const fmt = (s) => `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
+                posEl.textContent = `${fmt(elapsed)} / ${fmt(total)}`;
+            };
+
+            player.onPlaybackEnd = () => {
+                playBtn.textContent = '▶ Play';
+                playBtn.classList.remove('playing');
+                stopBtn.disabled = true;
+                posEl.textContent = '';
+            };
+
+            playBtn.addEventListener('click', async () => {
+                if (player.playing) {
+                    player.stop();
+                    playBtn.textContent = '▶ Play';
+                    playBtn.classList.remove('playing');
+                    stopBtn.disabled = true;
+                } else {
+                    playBtn.textContent = '⏸ Pause';
+                    playBtn.classList.add('playing');
+                    stopBtn.disabled = false;
+                    await player.play(otf, { tempo: otf.metadata?.tempo });
+                }
+            });
+
+            stopBtn.addEventListener('click', () => {
+                player.stop();
+                playBtn.textContent = '▶ Play';
+                playBtn.classList.remove('playing');
+                stopBtn.disabled = true;
+                posEl.textContent = '';
+            });
+        }
+
+        // Render all works
+        const worksContainer = document.getElementById('works');
+        for (const work of WORKS) {
+            const card = document.createElement('div');
+            card.className = 'work-card';
+            card.innerHTML = `
+                <div class="work-title">${work.title}</div>
+                <div class="work-meta">${work.instrument} Break</div>
+            `;
+            worksContainer.appendChild(card);
+            renderWork(work, card);
+        }
+    </script>
+</body>
+</html>

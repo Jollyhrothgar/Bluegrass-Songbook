@@ -1,0 +1,19 @@
+id: if-i-lost-your-love
+title: If I Lost Your Love
+artist: Mel Tillis
+composers:
+- Mel Tillis and Wayne P. Walker
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifilostyourlovelyricschords.pro
+    imported_at: '2026-01-02'

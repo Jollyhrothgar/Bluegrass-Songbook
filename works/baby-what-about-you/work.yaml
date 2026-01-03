@@ -1,0 +1,17 @@
+id: baby-what-about-you
+title: Baby What About You
+artist: Crystal Gayle
+composers:
+- Wendy Waldman and Josh Leo
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babywhataboutyoulyricschords.pro
+    imported_at: '2026-01-02'

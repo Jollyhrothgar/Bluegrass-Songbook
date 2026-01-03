@@ -1,0 +1,17 @@
+id: on-the-wings-of-love
+title: On The Wings Of Love
+artist: Buck Owens
+composers:
+- recorded by Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onthewingsoflovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: stolen-love-1
+title: Stolen Love
+artist: Billy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stolenlovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: carolina-morning
+title: Carolina Morning
+artist: The Paul Roberts Band
+composers:
+- Don Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carolinamorninglyricschords.pro
+    imported_at: '2026-01-02'

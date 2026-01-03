@@ -1,0 +1,15 @@
+id: when-i-m-with-you-1
+title: When I'm With You
+artist: Don Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenimwithyoulyricschords.pro
+    imported_at: '2026-01-02'

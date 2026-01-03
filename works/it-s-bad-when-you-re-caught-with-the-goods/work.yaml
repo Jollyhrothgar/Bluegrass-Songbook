@@ -1,0 +1,17 @@
+id: it-s-bad-when-you-re-caught-with-the-goods
+title: It's Bad When You're Caught With The Goods
+artist: Tommy Overstreet
+composers:
+- Dale Vest and Tommy Overstreet
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsbadwhenyourecaughtwiththegoodslyricschords.pro
+    imported_at: '2026-01-02'

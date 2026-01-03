@@ -1,0 +1,21 @@
+id: i-shall-not-be-moved
+title: I Shall Not Be Moved
+artist: Johnny Cash
+composers:
+- Larry Stallings
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ishallnotbemovedlyricschords.pro
+    imported_at: '2026-01-02'

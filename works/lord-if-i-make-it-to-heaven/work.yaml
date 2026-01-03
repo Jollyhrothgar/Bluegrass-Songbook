@@ -1,0 +1,17 @@
+id: lord-if-i-make-it-to-heaven
+title: Lord If I Make It To Heaven
+artist: Billy Parker
+composers:
+- Thomas C. Overstreet and Dale G. Vest
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lordifimakeittoheavenlyricschords.pro
+    imported_at: '2026-01-02'

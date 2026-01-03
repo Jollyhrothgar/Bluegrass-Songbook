@@ -1,0 +1,17 @@
+id: rake-and-rambling-man
+title: Rake And Rambling Man
+artist: Don Williams
+composers:
+- Bob McMill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rakeandramblingmanlyricschords.pro
+    imported_at: '2026-01-02'

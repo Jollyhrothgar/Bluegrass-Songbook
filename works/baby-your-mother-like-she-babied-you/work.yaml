@@ -1,0 +1,18 @@
+id: baby-your-mother-like-she-babied-you
+title: Baby Your Mother (Like She Babied You)
+artist: Ernest Tubb
+composers:
+- Dolly Morse and Joe Burke
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyyourmotherlikeshebabiedyoulyricschords.pro
+    imported_at: '2026-01-02'

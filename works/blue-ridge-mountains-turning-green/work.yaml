@@ -1,0 +1,18 @@
+id: blue-ridge-mountains-turning-green
+title: Blue Ridge Mountains Turning Green
+artist: Ronnie Milsap
+composers:
+- James Lunsford
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blueridgemountainsturninggreenlyricsandchords.pro
+    imported_at: '2026-01-02'

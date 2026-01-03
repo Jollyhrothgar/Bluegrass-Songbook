@@ -1,0 +1,17 @@
+id: i-just-want-to-be-alone
+title: I Just Want To Be Alone
+artist: Bobby Helms
+composers:
+- Bill Irwin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustwanttobealonelyricschords.pro
+    imported_at: '2026-01-02'

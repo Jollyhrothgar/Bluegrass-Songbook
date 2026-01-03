@@ -1,0 +1,17 @@
+id: it-s-a-long-long-way-to-the-top-of-the-world
+title: It's A Long Long Way To The Top Of The World
+artist: Jim and Jesse
+composers:
+- Don Wayne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsalonglongwaytothetopoftheworldlyricschords.pro
+    imported_at: '2026-01-02'

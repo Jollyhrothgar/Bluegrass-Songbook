@@ -1,0 +1,17 @@
+id: if-the-whole-world-stopped-loving
+title: If The Whole World Stopped Loving
+artist: Eddy Arnold
+composers:
+- Ben Peters
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifthewholeworldstoppedlovinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: wreck-of-the-number-nine
+title: Wreck Of The Number Nine
+artist: Jim Reeves
+composers:
+- Carson Robison
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wreckofthenumberninelyricschords.pro
+    imported_at: '2026-01-02'

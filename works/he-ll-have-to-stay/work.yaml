@@ -1,0 +1,17 @@
+id: he-ll-have-to-stay
+title: He'll Have To Stay
+artist: Skeeter Davis
+composers:
+- Joe Allison, Audrey Allison, Charles Grean
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hellhavetostaylyricschords.pro
+    imported_at: '2026-01-02'

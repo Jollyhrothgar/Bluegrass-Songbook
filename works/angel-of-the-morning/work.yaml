@@ -1,0 +1,17 @@
+id: angel-of-the-morning
+title: Angel Of The Morning
+artist: Juice Newton
+composers:
+- Chip Taylor
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: angelofthemorninglyricschords.pro
+    imported_at: '2026-01-02'

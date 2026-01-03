@@ -1,0 +1,18 @@
+id: who-will-pray-for-me
+title: Who Will Pray For Me
+artist: Conway Twitty
+composers:
+- Darrell Statler and Lorene Allen
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whowillprayformelyricschords.pro
+    imported_at: '2026-01-02'

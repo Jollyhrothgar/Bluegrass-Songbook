@@ -1,0 +1,21 @@
+id: i-can-t-have-a-merry-christmas
+title: I Can't Have A Merry Christmas
+artist: Jerry Lee Lewis
+composers:
+- Bill Lancaster
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanthaveamerryChristmaslyricschords.pro
+    imported_at: '2026-01-02'

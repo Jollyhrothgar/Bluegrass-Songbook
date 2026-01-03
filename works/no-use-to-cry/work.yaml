@@ -1,0 +1,15 @@
+id: no-use-to-cry
+title: No Use To Cry
+artist: George Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nousetocrylyricschords.pro
+    imported_at: '2026-01-02'

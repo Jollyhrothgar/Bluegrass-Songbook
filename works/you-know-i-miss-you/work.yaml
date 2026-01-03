@@ -1,0 +1,18 @@
+id: you-know-i-miss-you
+title: You Know I Miss You
+artist: Fats Domino
+composers:
+- Al Young and Fats Domino
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youknowimissyoulyricschords.pro
+    imported_at: '2026-01-02'

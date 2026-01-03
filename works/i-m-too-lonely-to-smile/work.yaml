@@ -1,0 +1,18 @@
+id: i-m-too-lonely-to-smile
+title: I'm too Lonely to Smile
+artist: Kitty Wells
+composers:
+- Hal Smith
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imtoolonelytosmilelyricschords.pro
+    imported_at: '2026-01-02'

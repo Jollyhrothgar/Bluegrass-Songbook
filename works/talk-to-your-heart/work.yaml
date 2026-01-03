@@ -1,0 +1,15 @@
+id: talk-to-your-heart
+title: Talk to Your Heart
+artist: Ray Price
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: talktoyourheartlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: a-man-who-is-wise
+title: A Man Who Is Wise
+artist: Hank Snow
+composers:
+- Buford Abner
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amanwhoiswiselyricschords.pro
+    imported_at: '2026-01-02'

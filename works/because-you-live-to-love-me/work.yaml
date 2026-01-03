@@ -1,0 +1,15 @@
+id: because-you-live-to-love-me
+title: Because You Live To Love Me
+artist: Jerry Wallace
+composers:
+- Cindy Walker
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseyoulivetolovemelyricschords.pro
+    imported_at: '2026-01-02'

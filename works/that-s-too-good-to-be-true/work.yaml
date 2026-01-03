@@ -1,0 +1,19 @@
+id: that-s-too-good-to-be-true
+title: That's Too Good To Be True
+artist: the Everly Brothers
+composers:
+- Don Everly
+default_key: G
+tags:
+- Pop
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatstoogoodtobetruelyricschords.pro
+    imported_at: '2026-01-02'

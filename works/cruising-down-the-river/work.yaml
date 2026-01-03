@@ -1,0 +1,18 @@
+id: cruising-down-the-river
+title: Cruising Down The River
+artist: Connie Francis
+composers:
+- Nellie Tollerton and Eily Bendell
+default_key: G
+tags:
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cruisingdowntheriverlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-fell-in-love-again-last-night
+title: I Fell In Love Again Last Night
+artist: The Forester Sisters
+composers:
+- Paul Overstreet and Thom Schuyler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifellinloveagainlastnightlyricschords.pro
+    imported_at: '2026-01-02'

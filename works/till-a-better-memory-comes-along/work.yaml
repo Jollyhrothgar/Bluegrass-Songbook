@@ -1,0 +1,17 @@
+id: till-a-better-memory-comes-along
+title: Till A Better Memory Comes Along
+artist: Gene Watson
+composers:
+- Timothy Ray Menzies, Gene Dobbins, Glenn Ray
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillabettermemorycomesalonglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-only-time-i-hurt
+title: The Only Time I Hurt
+artist: Loretta Lynn
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theonlytimeihurtlyricschords.pro
+    imported_at: '2026-01-02'

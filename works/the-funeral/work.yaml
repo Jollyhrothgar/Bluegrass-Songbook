@@ -1,0 +1,19 @@
+id: the-funeral
+title: The Funeral
+artist: Hank Williams
+composers:
+- Eddie Brackett, Hank Williams, Fred Rose
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thefunerallyricschords.pro
+    imported_at: '2026-01-02'

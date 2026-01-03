@@ -66,13 +66,54 @@ test.describe('Song View', () => {
     test('Nashville mode toggle works', async ({ page }) => {
         const nashvilleCheckbox = page.locator('#nashville-checkbox');
         if (await nashvilleCheckbox.isVisible()) {
-            await nashvilleCheckbox.click();
+            // Get a chord before Nashville mode
+            const chordEl = page.locator('.chord').first();
+            const originalChord = await chordEl.textContent();
 
-            // Chords should now show Nashville numbers (I, IV, V, etc.)
+            await nashvilleCheckbox.click();
             await page.waitForTimeout(200);
+
+            // Chord should now be a Nashville number (I, II, IV, V, etc.)
+            const nashvilleChord = await chordEl.textContent();
+            // Nashville numbers use Roman numerals
+            expect(nashvilleChord).toMatch(/^[IiVv]+[0-9]?$/);
 
             // Toggle back
             await nashvilleCheckbox.click();
+            await page.waitForTimeout(200);
+
+            // Should be back to letter chord
+            const restoredChord = await chordEl.textContent();
+            expect(restoredChord).toBe(originalChord);
+        }
+    });
+
+    test('transposition changes chords correctly', async ({ page }) => {
+        const keySelect = page.locator('#key-select');
+        if (await keySelect.isVisible()) {
+            // Get a chord before transposition
+            const chordEl = page.locator('.chord').first();
+            const originalChord = await chordEl.textContent();
+
+            // Get original key
+            const originalKey = await keySelect.inputValue();
+
+            // Transpose up (e.g., G to A is +2 semitones)
+            const newKey = originalKey === 'G' ? 'A' : 'G';
+            await keySelect.selectOption(newKey);
+            await page.waitForTimeout(200);
+
+            // Chord should have changed
+            const transposedChord = await chordEl.textContent();
+            expect(transposedChord).not.toBe(originalChord);
+
+            // Transpose back
+            await keySelect.selectOption(originalKey);
+            await page.waitForTimeout(200);
+
+            // Should be back to original
+            const restoredChord = await chordEl.textContent();
+            expect(restoredChord).toBe(originalChord);
         }
     });
 

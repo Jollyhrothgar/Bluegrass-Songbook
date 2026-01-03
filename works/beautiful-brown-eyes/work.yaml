@@ -1,0 +1,17 @@
+id: beautiful-brown-eyes
+title: Beautiful Brown Eyes
+artist: Roy Acuff
+composers:
+- Alton Delmore, Arthur Smith, Jerry Capehart
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beautifulbrowneyeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: bossier-city-backyard-blues
+title: Bossier City Backyard Blues
+artist: Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bossiercitybackyardblueslyricschords.pro
+    imported_at: '2026-01-02'

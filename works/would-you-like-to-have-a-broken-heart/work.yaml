@@ -1,0 +1,17 @@
+id: would-you-like-to-have-a-broken-heart
+title: Would You Like To Have A Broken Heart
+artist: Hawkshaw Hawkins
+composers:
+- Rusty Gabbard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wouldyouliketohaveabrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

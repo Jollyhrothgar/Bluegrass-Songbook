@@ -1,0 +1,15 @@
+id: when-snowflakes-fall-in-the-summer
+title: When Snowflakes Fall In The Summer
+artist: Everly Brothers
+composers:
+- Barry Mann and Cynthia Weil
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whensnowflakesfallinthesummerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-m-ready-if-you-re-willing
+title: I'm Ready If You're Willing
+artist: Johnny Horton
+composers:
+- Jerry Organ and Vernon Cloud
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imreadyifyourewillinglyricschords.pro
+    imported_at: '2026-01-02'

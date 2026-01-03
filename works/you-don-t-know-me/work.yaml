@@ -1,0 +1,15 @@
+id: you-don-t-know-me
+title: You Don't Know Me
+artist: Eddy Arnold
+composers:
+- Cindy Walker and Eddy Arnold
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontknowmelyricschords.pro
+    imported_at: '2026-01-02'

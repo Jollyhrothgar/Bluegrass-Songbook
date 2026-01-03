@@ -1,0 +1,17 @@
+id: let-s-go-to-church-next-sunday-morning
+title: Let's Go To Church Next Sunday Morning
+artist: Slim Whitman
+composers:
+- Steve Allen
+default_key: D
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsgotochurchnextsundaymorninglyricschords.pro
+    imported_at: '2026-01-02'

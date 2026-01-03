@@ -1,0 +1,19 @@
+id: taos-new-mexico
+title: Taos New Mexico
+artist: Waylon Jennings
+composers:
+- Bob Ferguson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: taosnewmexicolyricschords.pro
+    imported_at: '2026-01-02'

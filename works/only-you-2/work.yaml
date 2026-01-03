@@ -1,0 +1,17 @@
+id: only-you-2
+title: Only You
+artist: The Platters
+composers:
+- Buck Ram and Andre Rand
+default_key: C
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onlyyoulyricschords.pro
+    imported_at: '2026-01-02'

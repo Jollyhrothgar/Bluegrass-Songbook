@@ -1,0 +1,17 @@
+id: i-don-t-feel-anything
+title: I Don't Feel Anything
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontfeelanythinglyricschords.pro
+    imported_at: '2026-01-02'

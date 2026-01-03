@@ -1,0 +1,15 @@
+id: love-me-with-all-your-heart
+title: Love Me With All Your Heart
+artist: Johnny Rodriguez
+composers:
+- Sunny Skylar, Mario Rigual, Carlos Rigual
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovemewithallyourheartlyricschords.pro
+    imported_at: '2026-01-02'

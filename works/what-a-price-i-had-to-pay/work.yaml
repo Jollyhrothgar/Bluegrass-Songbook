@@ -1,0 +1,18 @@
+id: what-a-price-i-had-to-pay
+title: What A Price I Had To Pay
+artist: Fats Domino
+composers:
+- Antonio Domino, Murphy Maddux, Jack Jessup
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatapriceihadtopaylyricschords.pro
+    imported_at: '2026-01-02'

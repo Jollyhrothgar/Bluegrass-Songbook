@@ -1,0 +1,15 @@
+id: i-ll-make-amends
+title: I'll Make Amends
+artist: Roy Drusky
+composers:
+- Bud Moore
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illmakeamendslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: we-must-have-been-out-of-our-minds
+title: We Must Have Been Out Of Our Minds
+artist: Vern Gosdin
+composers:
+- Melba Montgomery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wemusthavebeenoutofourmindslyricschords.pro
+    imported_at: '2026-01-02'

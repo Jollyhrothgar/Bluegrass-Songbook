@@ -1,0 +1,18 @@
+id: made-for-loving-you
+title: Made For Loving You
+artist: Doug Stone
+composers:
+- Claude "Curly" Putman Jr., Curly Putman
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: madeforlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: the-man-that-turned-my-mama-on
+title: The Man That Turned My Mama On
+artist: Tanya Tucker
+composers:
+- Ed Bruce
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themanthatturnedmymamaonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: rain-rain
+title: Rain Rain
+artist: George Jones
+composers:
+- Roger Miller, George Jones, J.P. Richardson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rainrainlyricsandchords.pro
+    imported_at: '2026-01-02'

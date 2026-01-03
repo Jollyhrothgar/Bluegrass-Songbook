@@ -1,0 +1,15 @@
+id: its-like-we-never-said-goodbye
+title: It’s Like We Never Said Goodbye
+artist: Crystal Gayle
+composers:
+- Roger Greenaway and Geoff Stephens
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itslikeweneversaidgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

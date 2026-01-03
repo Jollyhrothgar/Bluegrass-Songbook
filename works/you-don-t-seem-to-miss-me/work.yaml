@@ -1,0 +1,19 @@
+id: you-don-t-seem-to-miss-me
+title: You Don't Seem To Miss Me
+artist: Patty Loveless
+composers:
+- Jim Lauderdale
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontseemtomissmelyricschords.pro
+    imported_at: '2026-01-02'

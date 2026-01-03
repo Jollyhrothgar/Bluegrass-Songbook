@@ -1,0 +1,17 @@
+id: please-don-t-let-our-sweet-love-die
+title: Please Don't Let Our Sweet Love Die
+artist: Jamie Dailey and Darrin Vincent
+composers:
+- Ron Spears
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasedontletoursweetlovedielyricschords.pro
+    imported_at: '2026-01-02'

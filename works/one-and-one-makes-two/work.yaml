@@ -1,0 +1,22 @@
+id: one-and-one-makes-two
+title: One And One Makes Two
+artist: Johnny Cash
+composers:
+- Jerry Moss
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneandonemakestwolyricschords.pro
+    imported_at: '2026-01-02'

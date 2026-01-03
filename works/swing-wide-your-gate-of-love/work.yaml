@@ -1,0 +1,16 @@
+id: swing-wide-your-gate-of-love
+title: Swing Wide Your Gate of Love
+artist: Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: swingwideyougateoflovelyricschords.pro
+    imported_at: '2026-01-02'

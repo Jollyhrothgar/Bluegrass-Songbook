@@ -1,0 +1,17 @@
+id: crying-over-you
+title: Crying Over You
+artist: Norma Jean
+composers:
+- James Intveld
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cryingoveryoulyricsandchords.pro
+    imported_at: '2026-01-02'

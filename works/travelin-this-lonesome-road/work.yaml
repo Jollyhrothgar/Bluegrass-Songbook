@@ -1,0 +1,17 @@
+id: travelin-this-lonesome-road
+title: Travelin' This Lonesome Road
+artist: Mac Wiseman
+composers:
+- Clara Hauenschild and James Thornton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: travelinthislonesomeroadlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: cold-cold-hands
+title: Cold Cold Hands
+artist: Johnny Bush
+composers:
+- Lawton Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldcoldhandslyricschords.pro
+    imported_at: '2026-01-02'

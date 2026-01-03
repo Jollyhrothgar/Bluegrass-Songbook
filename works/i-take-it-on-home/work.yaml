@@ -1,0 +1,18 @@
+id: i-take-it-on-home
+title: I Take It On Home
+artist: Charlie Rich
+composers:
+- Kenny O'Dell
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itakeitonhomelyricschords.pro
+    imported_at: '2026-01-02'

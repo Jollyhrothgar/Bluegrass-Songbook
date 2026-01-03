@@ -1,0 +1,17 @@
+id: back-to-the-simple-things
+title: Back To The Simple Things
+artist: Don Williams
+composers:
+- Jennifer Hanson, Mark Nesler, Marty Dodson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backtothesimplethingslyricschords.pro
+    imported_at: '2026-01-02'

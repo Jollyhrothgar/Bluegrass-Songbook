@@ -1,0 +1,18 @@
+id: you-want-everything-but-me
+title: You Want Everything But Me
+artist: Lefty Frizzell
+composers:
+- Aubrey
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwanteverythingbutmelyricschords.pro
+    imported_at: '2026-01-02'

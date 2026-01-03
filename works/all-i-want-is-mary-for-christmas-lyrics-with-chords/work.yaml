@@ -1,0 +1,17 @@
+id: all-i-want-is-mary-for-christmas-lyrics-with-chords
+title: All I Want Is Mary For Christmas Lyrics with Chords
+artist: The Lonesome River Band
+composers:
+- Ronnie Bowman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alliwantismaryforChristmaslyricschords.pro
+    imported_at: '2026-01-02'

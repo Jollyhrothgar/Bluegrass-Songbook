@@ -1,0 +1,17 @@
+id: how-good-a-bad-woman-feels
+title: How Good A Bad Woman Feels
+artist: Gene Watson
+composers:
+- Ray Griff
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howgoodabadwomanfeelslyricschords.pro
+    imported_at: '2026-01-02'

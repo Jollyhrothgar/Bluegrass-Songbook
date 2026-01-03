@@ -1,0 +1,17 @@
+id: your-wedding-corsage
+title: Your Wedding Corsage
+artist: Ray Price
+composers:
+- Dick Gregory
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourweddingcorsagelyricschords.pro
+    imported_at: '2026-01-02'

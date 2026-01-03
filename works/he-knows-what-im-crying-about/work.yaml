@@ -1,0 +1,17 @@
+id: he-knows-what-im-crying-about
+title: He Knows What I’m Crying About
+artist: Jeannie Seely
+composers:
+- George Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heknowswhatimcryingaboutlyricschords.pro
+    imported_at: '2026-01-02'

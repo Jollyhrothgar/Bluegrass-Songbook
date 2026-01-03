@@ -1,0 +1,22 @@
+id: ghost-riders-in-the-sky
+title: Ghost Riders In The Sky
+artist: Johnny Cash
+composers:
+- Stan Jones
+default_key: Am
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ghostridersintheskylyricschords.pro
+    imported_at: '2026-01-02'

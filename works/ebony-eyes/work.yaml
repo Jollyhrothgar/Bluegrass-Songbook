@@ -1,0 +1,19 @@
+id: ebony-eyes
+title: Ebony Eyes
+artist: The Everly Brothers
+composers:
+- John D. Loudermilk
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ebonyeyeslyricschords.pro
+    imported_at: '2026-01-02'

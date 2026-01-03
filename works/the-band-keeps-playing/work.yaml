@@ -1,0 +1,15 @@
+id: the-band-keeps-playing
+title: The Band Keeps Playing
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebandkeepsplayinglyricschords.pro
+    imported_at: '2026-01-02'

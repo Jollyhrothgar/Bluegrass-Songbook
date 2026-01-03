@@ -1,0 +1,17 @@
+id: gonna-pack-my-troubles
+title: Gonna Pack My Troubles
+artist: Loretta Lynn
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnapackmytroubleslyricschords.pro
+    imported_at: '2026-01-02'

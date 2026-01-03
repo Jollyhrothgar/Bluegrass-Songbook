@@ -1,0 +1,17 @@
+id: that-warm-summer-night
+title: That Warm Summer Night
+artist: Ricky Nelson
+composers:
+- Jerry Fuller, William Claude Silva
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatwarmsummernightlyricschords.pro
+    imported_at: '2026-01-02'

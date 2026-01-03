@@ -1,0 +1,17 @@
+id: i-ll-be-there-1
+title: I'll Be There
+artist: Ray Price
+composers:
+- Ray Price and Rusty Gabbard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbetherelyricschords.pro
+    imported_at: '2026-01-02'

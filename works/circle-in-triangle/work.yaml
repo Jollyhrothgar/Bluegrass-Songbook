@@ -1,0 +1,17 @@
+id: circle-in-triangle
+title: Circle In Triangle
+artist: Bill Anderson
+composers:
+- Orville Couch and Bobbie Carroll
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: circleintrianglelyricschords.pro
+    imported_at: '2026-01-02'

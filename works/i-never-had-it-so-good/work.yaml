@@ -1,0 +1,15 @@
+id: i-never-had-it-so-good
+title: I Never Had It So Good
+artist: Jack Greene
+composers:
+- Roy C. Bennett and Arthur Kent
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineverhaditsogoodlyricsandchords.pro
+    imported_at: '2026-01-02'

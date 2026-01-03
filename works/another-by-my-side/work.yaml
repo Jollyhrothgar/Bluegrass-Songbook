@@ -1,0 +1,17 @@
+id: another-by-my-side
+title: Another By My Side
+artist: The Lonesome River Band
+composers:
+- Ronnie Bowman and Darryl Webb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anotherbymysidelyricschords.pro
+    imported_at: '2026-01-02'

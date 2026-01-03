@@ -1,0 +1,17 @@
+id: i-ll-be-satisfied-with-her-love
+title: I'll Be Satisfied With Her Love
+artist: Faron Young
+composers:
+- Wayne P. Walker and Gary Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbesatisfiedwithherlovelyricschords.pro
+    imported_at: '2026-01-02'

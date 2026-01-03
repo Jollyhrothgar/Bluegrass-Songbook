@@ -1,0 +1,20 @@
+id: you-were-only-fooling
+title: You Were Only Fooling
+artist: Patsy Cline
+composers:
+- Larry Fotine, Billy Faber, Fred Meadows
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwereonlyfoolinglyricsandchords.pro
+    imported_at: '2026-01-02'

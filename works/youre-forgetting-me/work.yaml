@@ -1,0 +1,15 @@
+id: youre-forgetting-me
+title: You’re Forgetting Me
+artist: Roger Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youreforgettingmelyricschords.pro
+    imported_at: '2026-01-02'

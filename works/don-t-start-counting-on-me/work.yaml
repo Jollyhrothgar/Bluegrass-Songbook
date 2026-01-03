@@ -1,0 +1,17 @@
+id: don-t-start-counting-on-me
+title: Don't Start Counting On Me
+artist: Johnny Paycheck
+composers:
+- Donny Young
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontstartcountingonmelyricschords.pro
+    imported_at: '2026-01-02'

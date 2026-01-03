@@ -1,0 +1,16 @@
+id: silver-threads-and-golden-needles
+title: Silver Threads and Golden Needles
+artist: Linda Ronstadt
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: silverthreadsandgoldenneedleslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: beggars-and-heroes
+title: Beggars and Heroes
+artist: The Bellamy Brothers
+composers:
+- Ralph Siegel
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beggarsandheroeslyricschords.pro
+    imported_at: '2026-01-02'

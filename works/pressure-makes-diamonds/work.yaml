@@ -1,0 +1,17 @@
+id: pressure-makes-diamonds
+title: Pressure Makes Diamonds
+artist: Don Williams
+composers:
+- Bob McDill and John Schweers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pressuremakesdiamondslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: i-aint-gonna-love-you-anymore
+title: I Ain’t Gonna Love You Anymore
+artist: Hank Williams
+composers:
+- Ernest Tubb
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iaintgonnaloveyouanymorelyricschords.pro
+    imported_at: '2026-01-02'

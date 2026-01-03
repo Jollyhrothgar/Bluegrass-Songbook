@@ -1,0 +1,17 @@
+id: if-i-could-only-dance-with-you
+title: If I Could Only Dance With You
+artist: Jim Glaser
+composers:
+- Patrick J. McManus
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldonlydancewithyoulyricschords.pro
+    imported_at: '2026-01-02'

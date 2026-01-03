@@ -1,0 +1,17 @@
+id: cross-the-brazos-at-waco
+title: Cross the Brazos at Waco
+artist: Billy Walker
+composers:
+- Kay Arnold
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crossthebrazosatwacolyricschords.pro
+    imported_at: '2026-01-02'

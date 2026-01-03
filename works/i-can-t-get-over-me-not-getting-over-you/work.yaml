@@ -1,0 +1,17 @@
+id: i-can-t-get-over-me-not-getting-over-you
+title: I Can't Get Over Me (Not Getting Over You)
+artist: Little Jimmy Dickens
+composers:
+- Wayne P. Walker and Chuck Reed
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantgetovermenotgettingoveryoulyricschords.pro
+    imported_at: '2026-01-02'

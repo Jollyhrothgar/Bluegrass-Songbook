@@ -1,0 +1,17 @@
+id: hillbilly-hell
+title: Hillbilly Hell
+artist: The Bellamy Brothers
+composers:
+- Bobby Braddock and David Bellamy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hillbillyhelllyricsandchords.pro
+    imported_at: '2026-01-02'

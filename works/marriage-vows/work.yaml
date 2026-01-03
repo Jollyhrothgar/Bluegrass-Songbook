@@ -1,0 +1,19 @@
+id: marriage-vows
+title: Marriage Vows
+artist: Hank Snow
+composers:
+- Jenny Lou Carson
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: marriageVowslyricschords.pro
+    imported_at: '2026-01-02'

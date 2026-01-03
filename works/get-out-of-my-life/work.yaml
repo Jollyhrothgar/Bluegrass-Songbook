@@ -1,0 +1,17 @@
+id: get-out-of-my-life
+title: Get Out Of My Life
+artist: Ferlin Husky
+composers:
+- Jimmy Peppers and Ferlin Husky
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: getoutofmylifelyricschords.pro
+    imported_at: '2026-01-02'

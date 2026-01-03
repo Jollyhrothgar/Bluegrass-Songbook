@@ -1,0 +1,17 @@
+id: i-want-to-be-sure
+title: I Want To Be Sure
+artist: Eddy Arnold
+composers:
+- Gene Autry and Merle Travis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttobesurelyricschords.pro
+    imported_at: '2026-01-02'

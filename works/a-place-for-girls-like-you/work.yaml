@@ -1,0 +1,17 @@
+id: a-place-for-girls-like-you
+title: A Place For Girls Like You
+artist: Faron Young
+composers:
+- Red Hayes and Sonny Burns
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aplaceforgirlslikeyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: hand-me-down-my-silver-trumpet
+title: Hand Me Down My Silver Trumpet
+artist: Toni Lorenzo
+composers:
+- Jimmie O'Neal and Dallas Turner
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: handmedownmysilvertrumpetlyricschords.pro
+    imported_at: '2026-01-02'

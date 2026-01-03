@@ -1,0 +1,18 @@
+id: as-the-day-wears-on
+title: As The Day Wears On
+artist: Wanda Jackson
+composers:
+- Vincent Matthews
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: asthedaywearsonlyricschords.pro
+    imported_at: '2026-01-02'

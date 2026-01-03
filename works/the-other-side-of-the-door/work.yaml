@@ -1,0 +1,17 @@
+id: the-other-side-of-the-door
+title: The Other Side Of The Door
+artist: Hank Locklin
+composers:
+- Fred Tobias and Leon Carr
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theothersideofthedoorlyricschords.pro
+    imported_at: '2026-01-02'

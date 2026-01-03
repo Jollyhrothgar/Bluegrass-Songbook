@@ -1,0 +1,18 @@
+id: all-american-girl-1
+title: All American Girl
+artist: Statler Brothers
+composers:
+- Don and Harold Reid
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allamericangirllyricschords.pro
+    imported_at: '2026-01-02'

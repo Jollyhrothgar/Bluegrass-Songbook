@@ -1,0 +1,17 @@
+id: warm-woman-and-cold-champagne
+title: Warm Woman And Cold Champagne
+artist: Johnny Duncan
+composers:
+- Billy Sherrill and Glenn Sutton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: warmwomanandcoldchampagnelyricschords.pro
+    imported_at: '2026-01-02'

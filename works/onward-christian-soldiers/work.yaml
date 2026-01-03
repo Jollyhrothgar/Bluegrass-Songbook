@@ -1,0 +1,18 @@
+id: onward-christian-soldiers
+title: Onward Christian Soldiers
+artist: Tommy Overstreet
+composers:
+- Sabine Baring-Gould and Arthur S. Sullivan
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onwardchristiansoldierslyricschords.pro
+    imported_at: '2026-01-02'

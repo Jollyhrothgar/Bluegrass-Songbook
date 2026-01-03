@@ -1,0 +1,17 @@
+id: looking-out-my-back-door
+title: Looking Out My Back Door
+artist: Buddy Alan
+composers:
+- John Cameron Fogerty
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookingoutmybackdoorlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-re-not-the-only-one
+title: You're Not The Only One
+artist: Marty Robbins
+composers:
+- Phoebe Binkley and Bob Binkley
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourenottheonlyonelyricschords.pro
+    imported_at: '2026-01-02'

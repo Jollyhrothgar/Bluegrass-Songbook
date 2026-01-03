@@ -1,0 +1,17 @@
+id: broken-heartsville
+title: Broken Heartsville
+artist: Johnny Rodriguez
+composers:
+- Clint Daniels and Donny Keys
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brokenheartsvillelyricschords.pro
+    imported_at: '2026-01-02'

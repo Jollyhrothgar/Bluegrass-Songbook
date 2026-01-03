@@ -1,0 +1,17 @@
+id: play-together-again-again
+title: Play Together Again Again
+artist: Johnny Bush
+composers:
+- Buck Owens, Jerry Abbott, Charles Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: playtogetheragainagainlyricschords.pro
+    imported_at: '2026-01-02'

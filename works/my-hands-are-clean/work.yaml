@@ -1,0 +1,15 @@
+id: my-hands-are-clean
+title: My Hands Are Clean
+artist: Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myhandsarecleanlyricschords.pro
+    imported_at: '2026-01-02'

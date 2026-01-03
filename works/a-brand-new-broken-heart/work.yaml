@@ -1,0 +1,15 @@
+id: a-brand-new-broken-heart
+title: A Brand New Broken Heart
+artist: Wilburn Brothers
+composers:
+- Howard Greenfield and Jack Keller
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: abrandnewbrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

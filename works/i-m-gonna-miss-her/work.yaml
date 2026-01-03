@@ -1,0 +1,17 @@
+id: i-m-gonna-miss-her
+title: I'm Gonna Miss Her
+artist: Brad Paisley
+composers:
+- Frank Rogers and Brad Paisley
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnamissherlyricschords.pro
+    imported_at: '2026-01-02'

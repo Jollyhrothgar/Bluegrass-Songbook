@@ -1,0 +1,15 @@
+id: the-day-is-almost-over
+title: The Day Is Almost Over
+artist: Johnny Paycheck
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedayisalmostoverlyricschords.pro
+    imported_at: '2026-01-02'

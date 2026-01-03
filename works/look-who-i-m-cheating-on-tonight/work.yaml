@@ -1,0 +1,17 @@
+id: look-who-i-m-cheating-on-tonight
+title: Look Who I'm Cheating On Tonight
+artist: Bobby Bare
+composers:
+- Bob McDill
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookwhoimcheatingontonightlyricschords.pro
+    imported_at: '2026-01-02'

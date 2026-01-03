@@ -1,0 +1,17 @@
+id: country-state-of-mind
+title: Country State Of Mind
+artist: Hank Williams Jr.
+composers:
+- Hank Williams Jr. and Roger Alan Wade
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countrystateofmindlyricschords.pro
+    imported_at: '2026-01-02'

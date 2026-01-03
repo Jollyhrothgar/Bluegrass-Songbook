@@ -1,0 +1,16 @@
+id: i-ve-got-no-use-for-the-women-yet
+title: I've Got No Use For The Women Yet
+artist: Marty Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotnouseforthewomenlyricschords.pro
+    imported_at: '2026-01-02'

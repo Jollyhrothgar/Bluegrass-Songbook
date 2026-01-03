@@ -1,0 +1,17 @@
+id: break-up-lyrics-and-chords
+title: Break Up Lyrics and Chords
+artist: Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: breakuplyricschords.pro
+    imported_at: '2026-01-02'

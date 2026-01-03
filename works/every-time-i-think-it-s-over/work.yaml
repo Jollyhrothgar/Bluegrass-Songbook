@@ -1,0 +1,18 @@
+id: every-time-i-think-it-s-over
+title: Every Time I Think It's Over
+artist: Conway Twitty
+composers:
+- Danny Steagall, Red Steagall, Wood Newton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everytimeithinkitsoverlyricschords.pro
+    imported_at: '2026-01-02'

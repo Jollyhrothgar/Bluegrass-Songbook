@@ -1,0 +1,18 @@
+id: no-one-could-ever-take-me-from-you
+title: No One Could Ever Take Me From You
+artist: Charley Pride
+composers:
+- Hal Bynum
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noonecouldevertakemefromyoulyricschords.pro
+    imported_at: '2026-01-02'

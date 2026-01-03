@@ -1,0 +1,17 @@
+id: its-a-small-world
+title: It’s A Small World
+artist: Slim Whitman
+composers:
+- Richard M. Sherman and Robert B. Sherman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsasmallworldlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-heard-my-savior-calling-me-1
+title: I Heard My Savior Calling Me
+artist: Kitty Wells
+composers:
+- Johnnie Bailes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iheardmysaviorcallingmelyricschords.pro
+    imported_at: '2026-01-02'

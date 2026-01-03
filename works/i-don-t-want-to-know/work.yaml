@@ -1,0 +1,18 @@
+id: i-don-t-want-to-know
+title: I Don't Want to Know
+artist: Hank Thompson
+composers:
+- Hank Thompson and Don Clay
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwanttoknowlyricschords.pro
+    imported_at: '2026-01-02'

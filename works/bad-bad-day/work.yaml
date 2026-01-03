@@ -1,0 +1,15 @@
+id: bad-bad-day
+title: Bad Bad Day
+artist: Bob Luman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: badbaddaylyricschords.pro
+    imported_at: '2026-01-02'

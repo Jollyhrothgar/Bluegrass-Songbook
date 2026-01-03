@@ -1,0 +1,15 @@
+id: last-night-i-laid-your-memory-to-rest
+title: Last Night I Laid Your Memory To Rest
+artist: John Anderson
+composers:
+- Frankia Treat and Donna Anderson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lastnightilaidyourmemorytorestlyricschords.pro
+    imported_at: '2026-01-02'

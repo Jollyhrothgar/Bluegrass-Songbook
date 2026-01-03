@@ -1,0 +1,17 @@
+id: i-m-getting-out-while-i-m-still-country
+title: I'm Getting Out While I'm Still Country
+artist: Boxcar Willie
+composers:
+- Travis Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgettingoutwhileimstillcountrylyricschords.pro
+    imported_at: '2026-01-02'

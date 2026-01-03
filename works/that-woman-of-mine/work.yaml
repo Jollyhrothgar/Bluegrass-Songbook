@@ -1,0 +1,18 @@
+id: that-woman-of-mine
+title: That Woman Of Mine
+artist: Mel Tillis
+composers:
+- Ken McDuffie
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatwomanofminelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-m-lonesome-too
+title: I'm Lonesome Too
+artist: JImmy Rodgers
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlonesometoolyricschords.pro
+    imported_at: '2026-01-02'

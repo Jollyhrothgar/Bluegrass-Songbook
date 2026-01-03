@@ -1,0 +1,15 @@
+id: this-just-ain-t-no-good-day-for-leavin
+title: This Just Ain't No Good Day For Leavin'
+artist: Gene Watson
+composers:
+- Dallas Frazier and Sanger D. Shafer
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisjustaintnogooddayforleavinlyricschords.pro
+    imported_at: '2026-01-02'

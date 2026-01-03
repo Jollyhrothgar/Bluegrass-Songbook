@@ -1,0 +1,17 @@
+id: bad-dream
+title: Bad Dream
+artist: Billy Walker
+composers:
+- Dan Hoffman and Chuck Woolery
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: baddreamlyricschords.pro
+    imported_at: '2026-01-02'

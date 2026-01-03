@@ -1,0 +1,17 @@
+id: i-m-not-in-her-plans-anymore
+title: I'm Not In Her Plans Anymore
+artist: Carl Smith
+composers:
+- Mel Tillis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotinherplansanymorelyricschords.pro
+    imported_at: '2026-01-02'

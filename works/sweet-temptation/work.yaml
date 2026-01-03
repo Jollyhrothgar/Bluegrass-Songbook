@@ -1,0 +1,17 @@
+id: sweet-temptation
+title: Sweet Temptation
+artist: Jean Shepard
+composers:
+- Merle Travis and Cliffie Stone
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweettemptationlyricschords.pro
+    imported_at: '2026-01-02'

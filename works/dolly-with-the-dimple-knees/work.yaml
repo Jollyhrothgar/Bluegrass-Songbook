@@ -1,0 +1,17 @@
+id: dolly-with-the-dimple-knees
+title: Dolly With The Dimple Knees
+artist: Jim Reeves
+composers:
+- Gilbert Gibson and Taffy Kikillus
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dollywiththedimplekneeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: a-little-guy-called-joe
+title: A Little Guy Called Joe
+artist: Stonewall Jackson
+composers:
+- Marijohn Wilkin and Wayne P. Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittleguycalledjoelyricschords.pro
+    imported_at: '2026-01-02'

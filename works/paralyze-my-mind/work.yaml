@@ -1,0 +1,15 @@
+id: paralyze-my-mind
+title: Paralyze My Mind
+artist: Nat Stuckey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: paralyzemymindlyricschords.pro
+    imported_at: '2026-01-02'

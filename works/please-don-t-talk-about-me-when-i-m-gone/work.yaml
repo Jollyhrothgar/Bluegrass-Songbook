@@ -1,0 +1,20 @@
+id: please-don-t-talk-about-me-when-i-m-gone
+title: Please Don't Talk About Me When I'm Gone
+artist: Jerry Lee Lewis
+composers:
+- Sidney Clare, Sam Stept, Bee Palmer
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasedonttalkaboutmewhenimgonelyricschords.pro
+    imported_at: '2026-01-02'

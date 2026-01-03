@@ -1,0 +1,19 @@
+id: i-ll-remember-you-love-in-my-prayers-lyrics-and-chords
+title: I'll Remember You Love In My Prayers Lyrics and Chords
+artist: Hank Snow
+composers:
+- Will Hays
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illrememberyouloveinmyprayerslyricschords.pro
+    imported_at: '2026-01-02'

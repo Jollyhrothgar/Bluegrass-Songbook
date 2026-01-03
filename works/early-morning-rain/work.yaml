@@ -1,0 +1,17 @@
+id: early-morning-rain
+title: Early Morning Rain
+artist: George Hamilton IV
+composers:
+- Gordon Lightfoot
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: earlymorningrainlyricschords.pro
+    imported_at: '2026-01-02'

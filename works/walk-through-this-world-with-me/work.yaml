@@ -1,0 +1,17 @@
+id: walk-through-this-world-with-me
+title: Walk Through This World With Me
+artist: George Jones
+composers:
+- Sandy Seamons and Kaye Savage
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkthroughthisworldwithmelyricschords.pro
+    imported_at: '2026-01-02'

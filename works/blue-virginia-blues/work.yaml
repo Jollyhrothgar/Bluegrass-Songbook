@@ -1,0 +1,19 @@
+id: blue-virginia-blues
+title: Blue Virginia Blues
+artist: Larry Sparks
+composers:
+- Pete Gobel and Larry Drumm
+default_key: C
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluevirginiablueslyricschords.pro
+    imported_at: '2026-01-02'

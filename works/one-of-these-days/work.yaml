@@ -1,0 +1,17 @@
+id: one-of-these-days
+title: One Of These Days
+artist: Jeanne Pruett
+composers:
+- Jeanne Pruett and Walter Haynes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneofthesedayslyricsandchords.pro
+    imported_at: '2026-01-02'

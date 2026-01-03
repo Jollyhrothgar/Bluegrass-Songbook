@@ -1,0 +1,17 @@
+id: yes-sir-that-s-my-baby
+title: Yes Sir That's My Baby
+artist: Ricky Nelson
+composers:
+- Walter Donaldson and Gus Kahn
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yessirthatsmybabylyricschords.pro
+    imported_at: '2026-01-02'

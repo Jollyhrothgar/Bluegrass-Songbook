@@ -1,0 +1,19 @@
+id: when-i-call-your-name
+title: When I Call Your Name
+artist: Vince Gill
+composers:
+- Tim Dubois and Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenicallyournamelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: gonna-have-a-party
+title: Gonna Have A Party
+artist: Alabama
+composers:
+- Bruce Channel, Kieran Kane, Cliff Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnahaveapartylyricschords.pro
+    imported_at: '2026-01-02'

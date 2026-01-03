@@ -1,0 +1,17 @@
+id: virginia
+title: Virginia
+artist: Jean Shepard
+composers:
+- Betty Jean Robinson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: virginialyricschords.pro
+    imported_at: '2026-01-02'

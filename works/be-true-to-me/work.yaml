@@ -1,0 +1,17 @@
+id: be-true-to-me
+title: Be True To Me
+artist: Ricky Nelson
+composers:
+- James Kirkland and Nat Stuckey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betruetomelyricschords.pro
+    imported_at: '2026-01-02'

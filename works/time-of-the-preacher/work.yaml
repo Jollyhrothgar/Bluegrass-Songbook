@@ -1,0 +1,17 @@
+id: time-of-the-preacher
+title: Time Of The Preacher
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timeofthepreacherlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: three-lovers-were-losers-today
+title: Three Lovers Were Losers Today
+artist: Red Sovine
+composers:
+- Webb Pierce, Max Powell, Red Sovine
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threeloverswereloserstodaylyricschords.pro
+    imported_at: '2026-01-02'

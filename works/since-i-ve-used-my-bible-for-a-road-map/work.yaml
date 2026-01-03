@@ -1,0 +1,17 @@
+id: since-i-ve-used-my-bible-for-a-road-map
+title: Since I've Used My Bible For A Road Map
+artist: Reno and Smiley
+composers:
+- Don Reno and Charles Schroeder
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sinceiveusedmybibleforaroadmaplyricschords.pro
+    imported_at: '2026-01-02'

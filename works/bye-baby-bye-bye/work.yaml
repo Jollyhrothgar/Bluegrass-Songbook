@@ -1,0 +1,18 @@
+id: bye-baby-bye-bye
+title: Bye Baby Bye Bye
+artist: Fats Domino
+composers:
+- Antonio Domino
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: byebabybyebyelyricschords.pro
+    imported_at: '2026-01-02'

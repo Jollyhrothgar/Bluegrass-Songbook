@@ -1,0 +1,15 @@
+id: don-t-do-the-things-he-d-do
+title: Don't Do The Things He'd Do
+artist: Wanda Jackdson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontdothethingsheddolyricschords.pro
+    imported_at: '2026-01-02'

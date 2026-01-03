@@ -1,0 +1,17 @@
+id: bleep-you
+title: Bleep You
+artist: Cal Smith
+composers:
+- Bobby Braddock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bleepyoulyricschords.pro
+    imported_at: '2026-01-02'

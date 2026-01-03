@@ -1,0 +1,15 @@
+id: slow-burning-memory
+title: Slow Burning Memory
+artist: Vern Gosdin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: slowburningmemorylyricschords.pro
+    imported_at: '2026-01-02'

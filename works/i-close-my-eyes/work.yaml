@@ -1,0 +1,17 @@
+id: i-close-my-eyes
+title: I Close My Eyes
+artist: Webb Pierce
+composers:
+- Webb Pierce and Wayne Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iclosemyeyeslyricschords.pro
+    imported_at: '2026-01-02'

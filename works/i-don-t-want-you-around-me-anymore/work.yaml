@@ -1,0 +1,20 @@
+id: i-don-t-want-you-around-me-anymore
+title: I Don't Want You Around Me Anymore
+artist: Dolly Parton
+composers:
+- Dolly Parton and Bill Owens
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwantyouaroundmeanymorelyricschords.pro
+    imported_at: '2026-01-02'

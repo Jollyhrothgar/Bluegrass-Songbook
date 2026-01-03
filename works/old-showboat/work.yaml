@@ -1,0 +1,17 @@
+id: old-showboat
+title: Old Showboat
+artist: Stonewall Jackson
+composers:
+- Marijohn Wilkin and Fred Burch
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldshowboatlyricschords.pro
+    imported_at: '2026-01-02'

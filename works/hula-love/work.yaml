@@ -1,0 +1,17 @@
+id: hula-love
+title: Hula Love
+artist: Buddy Knox
+composers:
+- Dave Alldred, Jimmy Bowen, Buddy Knox, Donnie H. Lanier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hulalovelyricschords.pro
+    imported_at: '2026-01-02'

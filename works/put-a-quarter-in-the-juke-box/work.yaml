@@ -1,0 +1,15 @@
+id: put-a-quarter-in-the-juke-box
+title: Put A Quarter In The Juke Box
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: putaquarterinthejukeboxlyricschords.pro
+    imported_at: '2026-01-02'

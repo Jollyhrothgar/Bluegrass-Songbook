@@ -1,0 +1,17 @@
+id: to-know-him-is-to-love-him
+title: To Know Him Is To Love Him
+artist: Emmylou Harris
+composers:
+- Phil Spector
+default_key: C
+tags:
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toknowhimistolovehimlyricschords.pro
+    imported_at: '2026-01-02'

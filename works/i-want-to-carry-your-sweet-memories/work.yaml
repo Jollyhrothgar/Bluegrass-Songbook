@@ -1,0 +1,15 @@
+id: i-want-to-carry-your-sweet-memories
+title: I Want To Carry Your Sweet Memories
+artist: Statler Brothers
+composers:
+- Lew DeWitt
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttocarryyoursweetmemorieslyricschords.pro
+    imported_at: '2026-01-02'

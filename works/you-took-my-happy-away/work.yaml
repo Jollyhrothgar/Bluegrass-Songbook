@@ -1,0 +1,17 @@
+id: you-took-my-happy-away
+title: You Took My Happy Away
+artist: Ray Price
+composers:
+- Willie Nelson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youtookmyhappyawaylyricschords.pro
+    imported_at: '2026-01-02'

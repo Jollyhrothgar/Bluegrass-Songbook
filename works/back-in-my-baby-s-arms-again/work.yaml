@@ -1,0 +1,17 @@
+id: back-in-my-baby-s-arms-again
+title: Back In My Baby's Arms Again
+artist: Charlie Walker
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backinmybabysarmsagainlyricschords.pro
+    imported_at: '2026-01-02'

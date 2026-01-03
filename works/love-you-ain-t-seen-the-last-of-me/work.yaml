@@ -1,0 +1,18 @@
+id: love-you-ain-t-seen-the-last-of-me
+title: Love You Ain't Seen The Last Of Me
+artist: Tracy Byrd
+composers:
+- Kendal Franceschi
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveyouaintseenthelastofmelyricschords.pro
+    imported_at: '2026-01-02'

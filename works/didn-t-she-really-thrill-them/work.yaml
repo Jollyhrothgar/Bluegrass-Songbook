@@ -1,0 +1,18 @@
+id: didn-t-she-really-thrill-them
+title: Didn't She Really Thrill Them
+artist: The Oak Ridge Boys
+composers:
+- Allan Chapman
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didntshereallythrillthemlyricschords.pro
+    imported_at: '2026-01-02'

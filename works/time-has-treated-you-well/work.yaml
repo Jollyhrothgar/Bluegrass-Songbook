@@ -1,0 +1,18 @@
+id: time-has-treated-you-well
+title: Time Has Treated You Well
+artist: Mel Tillis
+composers:
+- Dave Hanner
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timehastreatedyouwelllyricschords.pro
+    imported_at: '2026-01-02'

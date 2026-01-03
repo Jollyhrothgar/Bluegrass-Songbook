@@ -1,0 +1,17 @@
+id: drinkin-man-s-blues
+title: Drinkin' Man's Blues
+artist: Johnny Rodriguez
+composers:
+- R.C. Finnigan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drinkinmansblueslyricschords.pro
+    imported_at: '2026-01-02'

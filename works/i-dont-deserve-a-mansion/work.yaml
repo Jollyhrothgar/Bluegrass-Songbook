@@ -1,0 +1,16 @@
+id: i-dont-deserve-a-mansion
+title: I Don’t Deserve A Mansion
+artist: Jeannie C. Riley
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontdeserveamansionlyricschords.pro
+    imported_at: '2026-01-02'

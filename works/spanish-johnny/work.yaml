@@ -1,0 +1,18 @@
+id: spanish-johnny
+title: Spanish Johnny
+artist: Emmylou Harris
+composers:
+- David Bromberg and Paul Siebel
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: spanishjohnnylyricschords.pro
+    imported_at: '2026-01-02'

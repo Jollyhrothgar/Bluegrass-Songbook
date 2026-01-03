@@ -1,0 +1,17 @@
+id: riding-the-range-for-jesus
+title: Riding The Range For Jesus
+artist: Slim Whitman
+composers:
+- Vep Ellis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ridingtherangeforJesuslyricschords.pro
+    imported_at: '2026-01-02'

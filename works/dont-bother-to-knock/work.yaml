@@ -1,0 +1,17 @@
+id: dont-bother-to-knock
+title: Don’t Bother To Knock
+artist: Jim Ed Brown and Helen Cornelius
+composers:
+- Kye Flemming
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontbothertoknocklyricschords.pro
+    imported_at: '2026-01-02'

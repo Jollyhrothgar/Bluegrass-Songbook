@@ -1,0 +1,17 @@
+id: i-don-t-have-anyplace-to-go
+title: I Don't Have Anyplace To Go
+artist: Connie Smith
+composers:
+- Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idonthaveanyplacetogolyricschords.pro
+    imported_at: '2026-01-02'

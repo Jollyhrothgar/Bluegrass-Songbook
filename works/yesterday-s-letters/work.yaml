@@ -1,0 +1,15 @@
+id: yesterday-s-letters
+title: Yesterday's Letters
+artist: Jack Greene
+composers:
+- Ted Harris
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesterdaysletterslyricschords.pro
+    imported_at: '2026-01-02'

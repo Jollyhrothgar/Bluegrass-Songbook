@@ -1,0 +1,17 @@
+id: my-world-begins-and-ends-with-you
+title: My World Begins And Ends With You
+artist: Kenny Rogers
+composers:
+- Steve Pippin and Larry Keith
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myworldbeginsandendswithyoulyricschords.pro
+    imported_at: '2026-01-02'

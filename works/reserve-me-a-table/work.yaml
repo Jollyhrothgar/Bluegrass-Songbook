@@ -1,0 +1,17 @@
+id: reserve-me-a-table
+title: Reserve Me A Table
+artist: Wendell Roach
+composers:
+- Ron McMunn
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: reservemeatablelyricschords.pro
+    imported_at: '2026-01-02'

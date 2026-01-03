@@ -1,0 +1,17 @@
+id: my-baby-turns-the-lights-on-uptown
+title: My Baby Turns The Lights On Uptown
+artist: Porter Wagoner
+composers:
+- Joyce Allsup
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mybabyturnsthelightsonuptownlyricschords.pro
+    imported_at: '2026-01-02'

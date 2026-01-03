@@ -1,0 +1,17 @@
+id: please-talk-to-my-heart
+title: Please Talk To My Heart
+artist: Ray Price
+composers:
+- Country Johnny Mathis and Walt Breeland
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasetalktomyheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: somebody-always-paints-the-wall
+title: Somebody Always Paints The Wall
+artist: George Jones
+composers:
+- John Dennis Knutson and Arthur Leo Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodyalwayspaintsthewalllyricschords.pro
+    imported_at: '2026-01-02'

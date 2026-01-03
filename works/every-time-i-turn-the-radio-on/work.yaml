@@ -1,0 +1,15 @@
+id: every-time-i-turn-the-radio-on
+title: Every Time I Turn The Radio On
+artist: Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everytimeiturntheradioonlyricschords.pro
+    imported_at: '2026-01-02'

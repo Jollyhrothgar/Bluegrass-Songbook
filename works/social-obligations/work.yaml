@@ -1,0 +1,16 @@
+id: social-obligations
+title: Social Obligations
+artist: Nat Stuckey
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: socialobligationslyricschords.pro
+    imported_at: '2026-01-02'

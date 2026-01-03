@@ -1,0 +1,17 @@
+id: i-believe-in-you-3
+title: I Believe in You
+artist: Norma Jean
+composers:
+- Dick Overbey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibelieveinyoulyricswithchords.pro
+    imported_at: '2026-01-02'

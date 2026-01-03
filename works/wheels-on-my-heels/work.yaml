@@ -1,0 +1,21 @@
+id: wheels-on-my-heels
+title: Wheels On My Heels
+artist: Elvis Presley
+composers:
+- Sid Tepper and Roy C. Bennett
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheelsonmyheelslyricschords.pro
+    imported_at: '2026-01-02'

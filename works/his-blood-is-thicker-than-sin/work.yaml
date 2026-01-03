@@ -1,0 +1,15 @@
+id: his-blood-is-thicker-than-sin
+title: His Blood is Thicker than Sin
+artist: Lauren Mascitti
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hisbloodisthickerthansinlyricschords.pro
+    imported_at: '2026-01-02'

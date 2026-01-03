@@ -1,0 +1,20 @@
+id: always
+title: Always
+artist: Patsy Cline
+composers:
+- Irving Berlin
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alwayslyricschords.pro
+    imported_at: '2026-01-02'

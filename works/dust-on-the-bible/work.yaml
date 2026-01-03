@@ -1,0 +1,19 @@
+id: dust-on-the-bible
+title: Dust on the Bible
+artist: Hank Williams
+composers:
+- Johnny and Walter Bailes
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dustonthebiblelyricschords.pro
+    imported_at: '2026-01-02'

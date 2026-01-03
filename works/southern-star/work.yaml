@@ -1,0 +1,17 @@
+id: southern-star
+title: Southern Star
+artist: Alabama
+composers:
+- Rich Alves, Steve Dean, Roger Murrah
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: southernstarlyricschords.pro
+    imported_at: '2026-01-02'

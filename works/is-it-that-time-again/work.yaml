@@ -1,0 +1,17 @@
+id: is-it-that-time-again
+title: Is It That Time Again
+artist: George Strait
+composers:
+- Dean Dillon, Buddy Cannon, Vern Gosdin
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isitthattimeagainlyricschords.pro
+    imported_at: '2026-01-02'

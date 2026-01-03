@@ -1,0 +1,15 @@
+id: it-only-happens-once-in-a-lifetime
+title: It Only Happens Once In A Lifetime
+artist: Slim Whitman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itonlyhappensonceinalifetimelyricschords.pro
+    imported_at: '2026-01-02'

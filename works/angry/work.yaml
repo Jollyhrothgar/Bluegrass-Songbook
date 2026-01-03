@@ -1,0 +1,17 @@
+id: angry
+title: Angry
+artist: Eddy Arnold
+composers:
+- Dudley Mecum, Henry Brunies, Jules Cassard
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: angrylyricschords.pro
+    imported_at: '2026-01-02'

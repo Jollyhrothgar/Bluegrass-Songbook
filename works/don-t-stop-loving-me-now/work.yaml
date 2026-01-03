@@ -1,0 +1,17 @@
+id: don-t-stop-loving-me-now
+title: Don't Stop Loving Me Now
+artist: Don Williams
+composers:
+- Sam Hogin, Charles Cochran, Mark True
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontstoplovingmenowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: the-violet-and-the-rose
+title: The Violet and the Rose
+artist: Wanda Jackson
+composers:
+- Mel Tillis and Bud Auge
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thevioletandtheroselyricschords.pro
+    imported_at: '2026-01-02'

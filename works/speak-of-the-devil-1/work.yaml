@@ -1,0 +1,17 @@
+id: speak-of-the-devil-1
+title: Speak Of The Devil
+artist: Gene Watson
+composers:
+- J. Ewtah
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: speakofthedevillyricschords.pro
+    imported_at: '2026-01-02'

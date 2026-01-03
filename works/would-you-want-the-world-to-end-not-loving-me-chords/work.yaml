@@ -1,0 +1,17 @@
+id: would-you-want-the-world-to-end-not-loving-me-chords
+title: Would You Want The World To End Not Loving Me chords
+artist: Wynn Stewart
+composers:
+- Ronal McCown and Wynn Stewart
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wouldyouwanttheworldtoendnotlovingmelyricschords.pro
+    imported_at: '2026-01-02'

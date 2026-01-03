@@ -1,0 +1,17 @@
+id: every-step-of-the-way
+title: Every Step Of The Way
+artist: Ferlin Husky
+composers:
+- Curly Putman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everystepofthewaylyricsandchords.pro
+    imported_at: '2026-01-02'

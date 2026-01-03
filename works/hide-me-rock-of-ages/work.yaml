@@ -1,0 +1,17 @@
+id: hide-me-rock-of-ages
+title: Hide Me Rock Of Ages
+artist: Don Gibson
+composers:
+- Brantley C. George
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hidemerockofageslyricschords.pro
+    imported_at: '2026-01-02'

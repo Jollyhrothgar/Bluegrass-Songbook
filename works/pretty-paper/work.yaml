@@ -1,0 +1,16 @@
+id: pretty-paper
+title: Pretty Paper
+artist: Roy Orbison
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prettypaperlyricschords.pro
+    imported_at: '2026-01-02'

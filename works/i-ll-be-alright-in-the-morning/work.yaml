@@ -1,0 +1,17 @@
+id: i-ll-be-alright-in-the-morning
+title: I'll Be Alright In The Morning
+artist: Faron Young
+composers:
+- Roy Drusky, Faron Young, Bob Stroud
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbealrightinthemorninglyricschords.pro
+    imported_at: '2026-01-02'

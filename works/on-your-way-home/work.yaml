@@ -1,0 +1,19 @@
+id: on-your-way-home
+title: On Your Way Home
+artist: Patty Loveless
+composers:
+- Matraca Berg and Ronnie Samoset
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onyourwayhomelyricschords.pro
+    imported_at: '2026-01-02'

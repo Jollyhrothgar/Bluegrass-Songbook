@@ -1,0 +1,17 @@
+id: lost-in-the-shuffle
+title: Lost In The Shuffle
+artist: Stonewall Jackson
+composers:
+- Ray Griff
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lostintheshufflelyricschords.pro
+    imported_at: '2026-01-02'

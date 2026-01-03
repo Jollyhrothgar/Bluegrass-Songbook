@@ -1,0 +1,17 @@
+id: that-s-what-friends-are-for
+title: That's What Friends Are For
+artist: Barbara Mandrell
+composers:
+- Ed Penney and Rob Parsons
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatfriendsareforlyricschords.pro
+    imported_at: '2026-01-02'

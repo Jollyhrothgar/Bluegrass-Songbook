@@ -1,0 +1,21 @@
+id: in-the-early-morning-rain
+title: In The Early Morning Rain
+artist: Elvis Presley
+composers:
+- Gordon Lightfoot
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: intheearlymorningrainlyricschords.pro
+    imported_at: '2026-01-02'

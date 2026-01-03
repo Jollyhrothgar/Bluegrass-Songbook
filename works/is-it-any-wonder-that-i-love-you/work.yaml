@@ -1,0 +1,17 @@
+id: is-it-any-wonder-that-i-love-you
+title: Is It Any Wonder That I Love You
+artist: Bob Luman
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isitanywonderthatiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

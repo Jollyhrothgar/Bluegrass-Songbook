@@ -1,0 +1,15 @@
+id: white-azaleas
+title: White Azaleas
+artist: George Morgan
+composers:
+- Bob Miller
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whiteazaleaslyricschords.pro
+    imported_at: '2026-01-02'

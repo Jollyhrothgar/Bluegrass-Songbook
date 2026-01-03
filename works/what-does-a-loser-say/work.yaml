@@ -1,0 +1,17 @@
+id: what-does-a-loser-say
+title: What Does A Loser Say
+artist: Billy Crash Craddock
+composers:
+- Ron Chancey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatdoesalosersaylyricschords.pro
+    imported_at: '2026-01-02'

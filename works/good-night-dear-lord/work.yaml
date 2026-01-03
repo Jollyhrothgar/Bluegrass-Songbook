@@ -1,0 +1,15 @@
+id: good-night-dear-lord
+title: Good Night Dear Lord
+artist: Red Foley
+composers:
+- Paul Tripp and Maurice Krumbein
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodnightdearlordlyricschords.pro
+    imported_at: '2026-01-02'

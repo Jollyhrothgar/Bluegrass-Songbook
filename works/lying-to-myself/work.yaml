@@ -1,0 +1,17 @@
+id: lying-to-myself
+title: Lying To Myself
+artist: Doug Stone
+composers:
+- Scott Shevel, Jimmy Devine,
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lyingtomyselflyricschords.pro
+    imported_at: '2026-01-02'

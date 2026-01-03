@@ -1,0 +1,16 @@
+id: squaws-along-the-yukon-lyrics-chords
+title: Squaws Along the Yukon Lyrics Chords
+artist: Hank Thompson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: squawsalongtheyukonlyricschords.pro
+    imported_at: '2026-01-02'

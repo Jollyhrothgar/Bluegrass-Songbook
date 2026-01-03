@@ -1,0 +1,18 @@
+id: one-way-ticket-to-the-sky
+title: One Way Ticket To The Sky
+artist: Kitty Wells
+composers:
+- Johnnie & Walter Bailes
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onewaytickettotheskylyricschords.pro
+    imported_at: '2026-01-02'

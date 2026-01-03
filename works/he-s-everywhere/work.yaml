@@ -1,0 +1,17 @@
+id: he-s-everywhere
+title: He's Everywhere
+artist: Sonny James
+composers:
+- Arthur Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heseverywherelyricschords.pro
+    imported_at: '2026-01-02'

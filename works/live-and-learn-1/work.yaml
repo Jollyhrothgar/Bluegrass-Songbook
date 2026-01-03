@@ -1,0 +1,17 @@
+id: live-and-learn-1
+title: Live And Learn
+artist: Ricky Nelson
+composers:
+- Clyde Pitts
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: liveandlearnlyricschords.pro
+    imported_at: '2026-01-02'

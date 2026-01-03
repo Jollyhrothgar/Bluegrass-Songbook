@@ -1,0 +1,18 @@
+id: i-had-someone-else-before-i-had-you
+title: I Had Someone Else Before I Had You
+artist: Bob Wills
+composers:
+- John Darcy and Phil Harris
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihadsomeoneelsebeforeihadyoulyricschords.pro
+    imported_at: '2026-01-02'

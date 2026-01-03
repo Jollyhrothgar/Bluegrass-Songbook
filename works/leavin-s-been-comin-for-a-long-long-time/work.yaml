@@ -1,0 +1,17 @@
+id: leavin-s-been-comin-for-a-long-long-time
+title: Leavin's Been Comin' (For A Long Long Time)
+artist: Gene Watson
+composers:
+- Dave Kirby, Joe Allen, Sonny Throckmorton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leavinsbeencominforalonglongtimelyricschords.pro
+    imported_at: '2026-01-02'

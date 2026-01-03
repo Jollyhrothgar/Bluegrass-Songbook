@@ -1,0 +1,19 @@
+id: i-cant-say-goodbye-to-you
+title: I Can’t Say Goodbye to You
+artist: The Everly Brothers
+composers:
+- Carole King and Gerry Goffin
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantsaygoodbyetoyoulyricschords.pro
+    imported_at: '2026-01-02'

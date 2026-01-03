@@ -1,0 +1,17 @@
+id: heaven-bound-i-m-ready
+title: Heaven Bound (I'm Ready)
+artist: The Oak Ridge Boys
+composers:
+- Dennis Linde
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavenboundimreadylyricschords.pro
+    imported_at: '2026-01-02'

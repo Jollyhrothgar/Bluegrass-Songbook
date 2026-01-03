@@ -1,0 +1,17 @@
+id: when-i-m-away-from-you
+title: When I'm Away From You
+artist: The Bellamy Brothers
+composers:
+- Francis John Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenimawayfromyoulyricschords.pro
+    imported_at: '2026-01-02'

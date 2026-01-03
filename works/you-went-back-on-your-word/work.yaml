@@ -1,0 +1,20 @@
+id: you-went-back-on-your-word
+title: You Went Back On Your Word
+artist: Jerry Lee Lewis
+composers:
+- Bobby Stevenson and Brook Benton
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwentbackonyourwordlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: four-to-one-in-atlanta
+title: Four To One In Atlanta
+artist: Tracy Byrd
+composers:
+- Bill Kenner and Russell Brown
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fourtooneinatlantalyricschords.pro
+    imported_at: '2026-01-02'

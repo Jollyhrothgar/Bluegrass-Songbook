@@ -1,0 +1,18 @@
+id: where-will-i-shelter-my-sheep
+title: Where Will I Shelter My Sheep
+artist: Lester Flatt
+composers:
+- Irene Stier and Joe Grieshop
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherewillisheltermysheeplyricschords.pro
+    imported_at: '2026-01-02'

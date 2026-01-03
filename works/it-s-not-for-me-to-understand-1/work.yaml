@@ -1,0 +1,15 @@
+id: it-s-not-for-me-to-understand-1
+title: It's Not For Me To Understand
+artist: Jack Greene
+composers:
+- Willie Nelson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsnotformetounderstandlyricschords.pro
+    imported_at: '2026-01-02'

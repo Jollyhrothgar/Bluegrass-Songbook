@@ -1,0 +1,17 @@
+id: walk-on
+title: Walk On
+artist: Reba McEntire
+composers:
+- Steve Dean and Lonnie Williams
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkonlyricschords.pro
+    imported_at: '2026-01-02'

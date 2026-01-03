@@ -1,0 +1,17 @@
+id: what-would-you-give-in-exchange-for-your-soul
+title: What Would You Give In Exchange For Your Soul
+artist: Webb Pierce
+composers:
+- J. H. Carr and F. J. Berry
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatwouldyougiveinexchangeforyoursoullyricschords.pro
+    imported_at: '2026-01-02'

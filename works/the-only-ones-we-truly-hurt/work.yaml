@@ -1,0 +1,15 @@
+id: the-only-ones-we-truly-hurt
+title: The Only Ones We Truly Hurt
+artist: Sonny James
+composers:
+- Sonny James and Carole Smith
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theonlyoneswetrulyhurtlyricschords.pro
+    imported_at: '2026-01-02'

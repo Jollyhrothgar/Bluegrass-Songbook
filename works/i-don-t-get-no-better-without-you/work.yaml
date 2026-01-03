@@ -1,0 +1,17 @@
+id: i-don-t-get-no-better-without-you
+title: I Don't Get No Better Without You
+artist: Cal Smith
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontgetnobetterwithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

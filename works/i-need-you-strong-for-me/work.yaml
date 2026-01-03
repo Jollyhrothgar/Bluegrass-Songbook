@@ -1,0 +1,17 @@
+id: i-need-you-strong-for-me
+title: I Need You Strong for Me
+artist: Kristy McNichol
+composers:
+- David Shire and Carol Connors
+default_key: Am
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineedyoustrongformelyricschords.pro
+    imported_at: '2026-01-02'

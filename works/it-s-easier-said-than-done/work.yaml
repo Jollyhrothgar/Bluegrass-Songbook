@@ -1,0 +1,17 @@
+id: it-s-easier-said-than-done
+title: It's Easier Said Than Done
+artist: Hawkshaw Hawkins
+composers:
+- Don Gibson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itseasiersaidthandonelyricschords.pro
+    imported_at: '2026-01-02'

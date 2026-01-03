@@ -1,0 +1,17 @@
+id: sing-me-a-love-song-to-baby
+title: Sing Me A Love Song To Baby
+artist: Billy Walker
+composers:
+- Gene Dobbins, Benny Whitehead
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singmealovesongtobabylyricschords.pro
+    imported_at: '2026-01-02'

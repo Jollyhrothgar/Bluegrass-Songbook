@@ -1,0 +1,18 @@
+id: i-couldn-t-see-you-leaving
+title: I Couldn't See You Leaving
+artist: Conway Twitty
+composers:
+- Ronny Scaife and Rory Michael Bourke
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icouldntseeyouleavinglyricschords.pro
+    imported_at: '2026-01-02'

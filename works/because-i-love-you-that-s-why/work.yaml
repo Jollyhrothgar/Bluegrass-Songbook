@@ -1,0 +1,17 @@
+id: because-i-love-you-that-s-why
+title: Because I Love You That's Why
+artist: Connie Smith
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseiloveyouthatswhylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: be-not-afraid
+title: Be Not Afraid
+artist: Daniel O'Donnell
+composers:
+- Felix Mendelssohn
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: benotafraidlyricsandchords.pro
+    imported_at: '2026-01-02'

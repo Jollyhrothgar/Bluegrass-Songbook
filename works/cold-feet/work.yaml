@@ -1,0 +1,18 @@
+id: cold-feet
+title: Cold Feet
+artist: Lefty Frizzell
+composers:
+- Jimmy Dickens and Thelma Blackmon
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldfeetlyricschords.pro
+    imported_at: '2026-01-02'

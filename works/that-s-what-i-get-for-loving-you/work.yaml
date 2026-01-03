@@ -1,0 +1,17 @@
+id: that-s-what-i-get-for-loving-you
+title: That's What I Get For Loving You
+artist: Eddy Arnold
+composers:
+- Bobby Lee Springfield
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatigetforlovingyoulyricsandchords.pro
+    imported_at: '2026-01-02'

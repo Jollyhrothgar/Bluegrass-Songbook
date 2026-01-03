@@ -1,0 +1,17 @@
+id: blessed-jesus-loves-you-too
+title: Blessed Jesus Loves You Too
+artist: The Blackwood Brothers
+composers:
+- Albert E. Brumley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blessedJesuslovesyoutoolyricschords.pro
+    imported_at: '2026-01-02'

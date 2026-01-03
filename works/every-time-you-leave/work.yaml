@@ -1,0 +1,17 @@
+id: every-time-you-leave
+title: Every Time You Leave
+artist: Emmylou Harris
+composers:
+- Charlie Louvin and Ira Louvin
+default_key: C
+tags:
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everytimeyouleavelyricschords.pro
+    imported_at: '2026-01-02'

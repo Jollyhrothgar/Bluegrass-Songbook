@@ -1,0 +1,22 @@
+id: cocaine-blues
+title: Cocaine Blues
+artist: Johnny Cash
+composers:
+- T.J. Arnall
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cocaineblueslyricschords.pro
+    imported_at: '2026-01-02'

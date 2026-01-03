@@ -1,0 +1,13 @@
+id: baby-dont-get-hooked-on-me
+title: Baby Don’t Get Hooked On Me
+artist: Mac Davis
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babydontgethookedonmelyricschords.pro
+    imported_at: '2026-01-02'

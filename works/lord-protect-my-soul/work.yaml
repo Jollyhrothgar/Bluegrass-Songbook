@@ -1,0 +1,17 @@
+id: lord-protect-my-soul
+title: Lord Protect My Soul
+artist: The Country Gentlemen
+composers:
+- Bill Monroe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lordprotectmysoullyricschords.pro
+    imported_at: '2026-01-02'

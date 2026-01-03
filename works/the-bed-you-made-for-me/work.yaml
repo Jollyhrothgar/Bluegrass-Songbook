@@ -1,0 +1,18 @@
+id: the-bed-you-made-for-me
+title: The Bed You Made For Me
+artist: Highway 101
+composers:
+- Paulette Carlson
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebedyoumadeformelyricschords.pro
+    imported_at: '2026-01-02'

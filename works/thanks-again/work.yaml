@@ -1,0 +1,20 @@
+id: thanks-again
+title: Thanks Again
+artist: Ricky Skaggs
+composers:
+- Jim Rushing
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thanksagainlyricschords.pro
+    imported_at: '2026-01-02'

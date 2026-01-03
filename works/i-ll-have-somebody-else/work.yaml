@@ -1,0 +1,15 @@
+id: i-ll-have-somebody-else
+title: I'll Have Somebody Else
+artist: Bob Wills
+default_key: A
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illhavesomebodyelselyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-be-all-smiles-tonight
+title: I'll Be All Smiles Tonight
+artist: The Cox Family
+composers:
+- A.P. Carter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbeallsmilestonightlyricschords.pro
+    imported_at: '2026-01-02'

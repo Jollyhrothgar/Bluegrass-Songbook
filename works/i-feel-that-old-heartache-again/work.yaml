@@ -1,0 +1,17 @@
+id: i-feel-that-old-heartache-again
+title: I Feel That Old Heartache Again
+artist: Ferlin Husky
+composers:
+- Wayne P. Walker and Bill Morgan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeelthatoldheartacheagainlyricschords.pro
+    imported_at: '2026-01-02'

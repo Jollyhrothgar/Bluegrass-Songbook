@@ -1,0 +1,17 @@
+id: marching-for-jesus
+title: Marching For Jesus
+artist: Boxcar Willie
+composers:
+- Peter Chatman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: marchingforJesuslyricschords.pro
+    imported_at: '2026-01-02'

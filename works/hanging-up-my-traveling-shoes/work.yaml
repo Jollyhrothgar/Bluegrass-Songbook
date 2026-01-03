@@ -1,0 +1,17 @@
+id: hanging-up-my-traveling-shoes
+title: Hanging Up My Traveling Shoes
+artist: Alabama
+composers:
+- Randy Owen and Teddy Gentry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hangingupmytravelingshoeslyricschords.pro
+    imported_at: '2026-01-02'

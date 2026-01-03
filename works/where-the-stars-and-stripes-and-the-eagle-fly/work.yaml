@@ -1,0 +1,18 @@
+id: where-the-stars-and-stripes-and-the-eagle-fly
+title: Where The Stars And Stripes And The Eagle Fly
+artist: Charley Pride
+composers:
+- Kenny Beard, Casey Beathard, Aaron Tippin
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherethestarsandstripesandtheeagleflylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-oughta-be-here-with-me
+title: You Oughta Be Here With Me
+artist: George Jones
+composers:
+- Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yououghtabeherewithmelyricschords.pro
+    imported_at: '2026-01-02'

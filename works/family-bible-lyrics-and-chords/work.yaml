@@ -1,0 +1,19 @@
+id: family-bible-lyrics-and-chords
+title: Family Bible Lyrics and Chords
+artist: Ernest Tubb
+composers:
+- Willie Nelson
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: familybiblelyricsandchords.pro
+    imported_at: '2026-01-02'

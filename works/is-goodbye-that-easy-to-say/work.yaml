@@ -1,0 +1,18 @@
+id: is-goodbye-that-easy-to-say
+title: Is Goodbye That Easy To Say
+artist: Charlie Rich
+composers:
+- Marijohn Wilkin and Benny Joy
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isgoodbyethateasytosaylyricsandchords.pro
+    imported_at: '2026-01-02'

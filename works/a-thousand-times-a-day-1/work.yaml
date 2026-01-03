@@ -1,0 +1,17 @@
+id: a-thousand-times-a-day-1
+title: A Thousand Times A Day
+artist: George Jones
+composers:
+- Garry Burr and Gary Nicholson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: athousandtimesadaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: listen-they-re-playing-my-song
+title: Listen They're Playing My Song
+artist: Jerry Lee Lewis
+composers:
+- Charlie Williams and Glen Garrison
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: listentheyreplayingmysonglyricschords.pro
+    imported_at: '2026-01-02'

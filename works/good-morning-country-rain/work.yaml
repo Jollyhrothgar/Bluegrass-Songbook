@@ -1,0 +1,18 @@
+id: good-morning-country-rain
+title: Good Morning Country Rain
+artist: Rhonda Vincent
+composers:
+- Eddy Raven
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodmorningcountryrainlyricschords.pro
+    imported_at: '2026-01-02'

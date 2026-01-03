@@ -1,0 +1,17 @@
+id: jesus-it-s-me-again
+title: Jesus It's Me Again
+artist: Charlie Pride
+composers:
+- Dick Damron
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusitsmeagainlyricschords.pro
+    imported_at: '2026-01-02'

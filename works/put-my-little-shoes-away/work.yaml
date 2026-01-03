@@ -1,0 +1,19 @@
+id: put-my-little-shoes-away
+title: Put My Little Shoes Away
+artist: Hank Snow
+composers:
+- Samuel Mitchell and Charles E. Pratt
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: putmylittleshoesawaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: gone-our-endless-love
+title: Gone Our Endless Love
+artist: Billy Walker
+composers:
+- Billy Walker and Darrell Glenn
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goneourendlesslovelyricschords.pro
+    imported_at: '2026-01-02'

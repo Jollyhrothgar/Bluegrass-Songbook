@@ -1,0 +1,17 @@
+id: anymore-1
+title: Anymore
+artist: Roy Drusky
+composers:
+- Vic McAlpin, Roy Drusky, Marie Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anymorelyricschords.pro
+    imported_at: '2026-01-02'

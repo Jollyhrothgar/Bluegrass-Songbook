@@ -1,0 +1,18 @@
+id: we-might-as-well-forget-it
+title: We Might As Well Forget It
+artist: Bob Wills
+composers:
+- Johnny Bond
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wemightaswellforgetitlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: step-into-my-soul
+title: Step Into My Soul
+artist: Johnny Paycheck
+composers:
+- Johnny Paycheck and Aubrey Mayhew
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stepintomysoullyricsandchords.pro
+    imported_at: '2026-01-02'

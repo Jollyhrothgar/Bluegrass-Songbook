@@ -1,0 +1,17 @@
+id: you-ve-destroyed-me
+title: You've Destroyed Me
+artist: Dottie West
+composers:
+- William Rainsford
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvedestroyedmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-be-here-for-a-lifetime
+title: I'll Be Here For A Lifetime
+artist: Ferlin Husky
+composers:
+- Ken Rogers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbehereforalifetimelyricschords.pro
+    imported_at: '2026-01-02'

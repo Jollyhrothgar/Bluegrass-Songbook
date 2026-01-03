@@ -1,0 +1,19 @@
+id: she-s-reaching-for-my-mind
+title: She's Reaching For My Mind
+artist: Jerry Lee Lewis
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesreachingformymindlyricschords.pro
+    imported_at: '2026-01-02'

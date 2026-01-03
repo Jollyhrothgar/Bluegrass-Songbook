@@ -1,0 +1,17 @@
+id: i-haven-t-got-the-heart
+title: I Haven't Got The Heart
+artist: Webb Pierce
+composers:
+- Webb Pierce and Happy Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihaventgottheheartlyricschords.pro
+    imported_at: '2026-01-02'

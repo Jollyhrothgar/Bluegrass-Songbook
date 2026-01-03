@@ -1,0 +1,15 @@
+id: i-know-who-holds-tomorrow
+title: I Know Who Holds Tomorrow
+artist: Faron Young
+composers:
+- Ira P. Stanphill
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowwhoholdstomorrowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: don-t-you-hear-me-calling-you
+title: Don't You Hear Me Calling You
+artist: Fats Domino
+composers:
+- Fats Domino and Dave Bartholomew
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontyouhearmecallingyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: king-of-a-lonely-castle
+title: King Of A Lonely Castle
+artist: Willie Nelson
+composers:
+- Kenny Devine
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kingofalonelycastlelyricschords.pro
+    imported_at: '2026-01-02'

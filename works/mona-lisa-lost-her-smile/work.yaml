@@ -1,0 +1,20 @@
+id: mona-lisa-lost-her-smile
+title: Mona Lisa Lost Her Smile
+artist: David Allan Coe
+composers:
+- Johnny Cunningham
+default_key: G
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: monalisalosthersmilelyricschords.pro
+    imported_at: '2026-01-02'

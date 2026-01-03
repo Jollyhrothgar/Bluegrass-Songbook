@@ -1,0 +1,16 @@
+id: two-step-is-easy
+title: Two Step Is Easy
+artist: Michael Martin Murphey
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twostepiseasylyricschords.pro
+    imported_at: '2026-01-02'

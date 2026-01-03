@@ -1,0 +1,18 @@
+id: in-the-garden-by-the-fountain
+title: In The Garden By The Fountain
+artist: Rhonda Vincent
+composers:
+- Roger Brown
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthegardenbythefountainlyricschords.pro
+    imported_at: '2026-01-02'

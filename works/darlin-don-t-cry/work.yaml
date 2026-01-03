@@ -1,0 +1,17 @@
+id: darlin-don-t-cry
+title: Darlin' Don't Cry
+artist: Slim Whitman
+composers:
+- Jerry Christ
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darlindontcrylyricschords.pro
+    imported_at: '2026-01-02'

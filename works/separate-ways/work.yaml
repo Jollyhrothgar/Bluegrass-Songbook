@@ -1,0 +1,21 @@
+id: separate-ways
+title: Separate Ways
+artist: Elvis Presley
+composers:
+- Bobby West and Richard Mainegra
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: separatewayslyricschords.pro
+    imported_at: '2026-01-02'

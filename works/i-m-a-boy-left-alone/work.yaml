@@ -1,0 +1,18 @@
+id: i-m-a-boy-left-alone
+title: I'm A Boy Left Alone
+artist: Lefty Frizzell
+composers:
+- Peshoff and G. Miller
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imaboyleftalonelyricschords.pro
+    imported_at: '2026-01-02'

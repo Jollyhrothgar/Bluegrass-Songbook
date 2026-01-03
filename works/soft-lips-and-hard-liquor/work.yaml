@@ -1,0 +1,17 @@
+id: soft-lips-and-hard-liquor
+title: Soft Lips And Hard Liquor
+artist: Charlie Walker
+composers:
+- Lorene Allen and Walter Haynes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: softlipsandhardliquorlyricschords.pro
+    imported_at: '2026-01-02'

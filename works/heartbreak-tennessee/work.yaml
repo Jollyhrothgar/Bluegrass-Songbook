@@ -1,0 +1,17 @@
+id: heartbreak-tennessee
+title: Heartbreak Tennessee
+artist: Johnny Paycheck
+composers:
+- Jack H. Clement
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartbreaktennesseelyricschords.pro
+    imported_at: '2026-01-02'

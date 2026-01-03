@@ -1,0 +1,17 @@
+id: can-i-have-what-s-left
+title: Can I Have What's Left
+artist: Billy Parker
+composers:
+- Jimmie Helms
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canihavewhatsleftlyricschords.pro
+    imported_at: '2026-01-02'

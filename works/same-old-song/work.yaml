@@ -1,0 +1,18 @@
+id: same-old-song
+title: Same Old Song
+artist: Lee Greenwood
+composers:
+- Jerry Crutchfield and Lee Greenwood
+default_key: Am
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sameoldsonglyricschords.pro
+    imported_at: '2026-01-02'

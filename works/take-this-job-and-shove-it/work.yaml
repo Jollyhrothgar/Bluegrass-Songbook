@@ -1,0 +1,17 @@
+id: take-this-job-and-shove-it
+title: Take This Job And Shove It
+artist: Johnny Paycheck
+composers:
+- David Allen Coe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takethisjobandshoveitlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-way-i-lose-my-mind
+title: The Way I Lose My Mind
+artist: Carl Smith
+composers:
+- Dallas Fraizer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewayilosemymindlyricschords.pro
+    imported_at: '2026-01-02'

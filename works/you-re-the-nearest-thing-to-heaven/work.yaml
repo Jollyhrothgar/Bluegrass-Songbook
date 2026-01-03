@@ -1,0 +1,22 @@
+id: you-re-the-nearest-thing-to-heaven
+title: You're The Nearest Thing To Heaven
+artist: Johnny Cash
+composers:
+- Johnny Cash, Hoyt Johnson, Jimmy Atkins
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethenearestthingtoheavenlyricschords.pro
+    imported_at: '2026-01-02'

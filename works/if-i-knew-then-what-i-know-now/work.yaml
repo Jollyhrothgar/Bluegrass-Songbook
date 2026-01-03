@@ -1,0 +1,19 @@
+id: if-i-knew-then-what-i-know-now
+title: If I Knew Then What I Know Now
+artist: Charlie Rich
+composers:
+- Wayne P. Walker and Benny Joy
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifiknewthenwhatiknownowlyricschords.pro
+    imported_at: '2026-01-02'

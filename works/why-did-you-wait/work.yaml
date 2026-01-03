@@ -1,0 +1,17 @@
+id: why-did-you-wait
+title: Why Did You Wait
+artist: Jean Shepard
+composers:
+- Clyde Wilson and Bettie Westergard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydidyouwaitlyricschords.pro
+    imported_at: '2026-01-02'

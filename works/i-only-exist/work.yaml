@@ -1,0 +1,18 @@
+id: i-only-exist
+title: I Only Exist
+artist: The Stanley Brothers
+composers:
+- Jimmie Stanley and Joyce Morris
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ionlyexistlyricschords.pro
+    imported_at: '2026-01-02'

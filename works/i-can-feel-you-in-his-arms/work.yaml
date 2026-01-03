@@ -1,0 +1,15 @@
+id: i-can-feel-you-in-his-arms
+title: I Can Feel You In His Arms
+artist: Johnny Bush
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanfeelyouinhisarmslyricschords.pro
+    imported_at: '2026-01-02'

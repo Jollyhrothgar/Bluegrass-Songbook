@@ -1,0 +1,15 @@
+id: street-where-the-lonely-walk
+title: Street Where The Lonely Walk
+artist: Connie Smith
+composers:
+- Gladness Jennings
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: streetwherethelonelywalklyricschords.pro
+    imported_at: '2026-01-02'

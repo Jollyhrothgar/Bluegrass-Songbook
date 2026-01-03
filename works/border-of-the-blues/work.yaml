@@ -1,0 +1,17 @@
+id: border-of-the-blues
+title: Border Of The Blues
+artist: Hank Locklin
+composers:
+- Lawton Williams and Frankie Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: borderoftheblueslyricschords.pro
+    imported_at: '2026-01-02'

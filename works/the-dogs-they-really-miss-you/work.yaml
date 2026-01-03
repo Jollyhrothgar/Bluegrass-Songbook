@@ -1,0 +1,17 @@
+id: the-dogs-they-really-miss-you
+title: The Dogs They Really Miss You
+artist: The Austin Lounge Lizards
+composers:
+- Hank Card
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedogstheyreallymissyoulyricschords.pro
+    imported_at: '2026-01-02'

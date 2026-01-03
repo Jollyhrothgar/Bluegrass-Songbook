@@ -1,0 +1,13 @@
+id: smiling-in-the-morning
+title: Smiling In The Morning
+artist: David Ball
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: smilinginthemorninglyricschords.pro
+    imported_at: '2026-01-02'

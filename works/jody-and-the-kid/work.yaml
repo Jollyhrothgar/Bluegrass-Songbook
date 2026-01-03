@@ -1,0 +1,17 @@
+id: jody-and-the-kid
+title: Jody And The Kid
+artist: Roy Drusky
+composers:
+- Kris Kristofferson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jodyandthekidlyricschords.pro
+    imported_at: '2026-01-02'

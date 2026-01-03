@@ -1,0 +1,17 @@
+id: don-t-say-love
+title: Don't Say Love
+artist: Connie Smith
+composers:
+- Jim Glaser and Jimmy Payne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontsaylovelyricschords.pro
+    imported_at: '2026-01-02'

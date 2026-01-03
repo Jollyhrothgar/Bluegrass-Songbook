@@ -1,0 +1,18 @@
+id: let-the-light-shine-on-you
+title: Let The Light Shine On You
+artist: Doug Stone
+composers:
+- Blake Melvis and Randy Boudreaux
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letthelightshineonyoulyricschords.pro
+    imported_at: '2026-01-02'

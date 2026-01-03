@@ -1,0 +1,19 @@
+id: who-can-blame-you
+title: Who Can Blame You
+artist: Alison Krauss
+composers:
+- Ron Block
+default_key: C
+tags:
+- Bluegrass
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whocanblameyoulyricschords.pro
+    imported_at: '2026-01-02'

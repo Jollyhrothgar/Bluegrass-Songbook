@@ -1,0 +1,17 @@
+id: a-rose-between-two-thorns
+title: A Rose Between Two Thorns
+artist: George Hamilton IV
+composers:
+- Bobby R. Warren, Dale D. Siegenthaler, Roy G. Ownbey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: arosebetweentwothornslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: your-sweet-love-lifted-me
+title: Your Sweet Love Lifted Me
+artist: Ferlin Husky
+composers:
+- Glenn Sutton and George Richey
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yoursweetloveliftedmelyricschords.pro
+    imported_at: '2026-01-02'

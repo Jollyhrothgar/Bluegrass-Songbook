@@ -1,0 +1,17 @@
+id: dark-moon
+title: Dark Moon
+artist: Gale Storm
+composers:
+- Ned Miller
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darkmoonlyricsandchords.pro
+    imported_at: '2026-01-02'

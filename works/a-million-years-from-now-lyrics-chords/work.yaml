@@ -1,0 +1,15 @@
+id: a-million-years-from-now-lyrics-chords
+title: A Million Years From Now Lyrics Chords
+artist: Webb Pierce
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amillionyearsfromnowlyricschords.pro
+    imported_at: '2026-01-02'

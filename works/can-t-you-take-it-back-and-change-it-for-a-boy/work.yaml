@@ -1,0 +1,18 @@
+id: can-t-you-take-it-back-and-change-it-for-a-boy
+title: Can't You Take It Back And Change It For A Boy
+artist: Rex Allen
+composers:
+- Thurland Chattaway
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantyoutakeitbackandchangeitforaboylyricschords.pro
+    imported_at: '2026-01-02'

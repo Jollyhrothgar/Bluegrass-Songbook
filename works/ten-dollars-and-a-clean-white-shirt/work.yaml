@@ -1,0 +1,19 @@
+id: ten-dollars-and-a-clean-white-shirt
+title: Ten Dollars And A Clean White Shirt
+artist: Charlie Rich
+composers:
+- Paul Vance and Eddie Snyder
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tendollarsandacleanwhiteshirtlyricschords.pro
+    imported_at: '2026-01-02'

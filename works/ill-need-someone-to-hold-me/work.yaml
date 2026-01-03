@@ -1,0 +1,17 @@
+id: ill-need-someone-to-hold-me
+title: I’ll Need Someone To Hold Me
+artist: Don Williams
+composers:
+- Bob McDill and Wayland Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneedsomeonetoholdmelyricschords.pro
+    imported_at: '2026-01-02'

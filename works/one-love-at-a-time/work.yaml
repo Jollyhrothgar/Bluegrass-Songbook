@@ -1,0 +1,18 @@
+id: one-love-at-a-time
+title: One Love At A Time
+artist: Tanya Tucker
+composers:
+- Paul Overstreet and Paul Davis
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneloveatatimelyricschords.pro
+    imported_at: '2026-01-02'

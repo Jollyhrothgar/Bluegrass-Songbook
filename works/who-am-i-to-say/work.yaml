@@ -1,0 +1,18 @@
+id: who-am-i-to-say
+title: Who Am I To Say
+artist: The Statler Brothers
+composers:
+- Kim Reid
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoamitosaylyricschords.pro
+    imported_at: '2026-01-02'

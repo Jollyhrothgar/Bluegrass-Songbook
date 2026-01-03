@@ -1,0 +1,19 @@
+id: heartbreaker
+title: Heartbreaker
+artist: Dolly Parton
+composers:
+- Carlo Bayer Sager and David Wolfert
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartbreakerlyricschords.pro
+    imported_at: '2026-01-02'

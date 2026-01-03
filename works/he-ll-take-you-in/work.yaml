@@ -1,0 +1,17 @@
+id: he-ll-take-you-in
+title: He'll Take You In
+artist: Russell Moore and IIIrd Tyme Out
+composers:
+- Billy Smith and Steffan Baker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helltakeyouinlyricschords.pro
+    imported_at: '2026-01-02'

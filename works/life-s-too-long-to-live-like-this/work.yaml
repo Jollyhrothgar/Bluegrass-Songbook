@@ -1,0 +1,21 @@
+id: life-s-too-long-to-live-like-this
+title: Life's Too Long (To Live Like This)
+artist: Ricky Skaggs
+composers:
+- Don Cook, John Jarvis, Dan Wilson
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lifestoolongtolivelikethislyricschords.pro
+    imported_at: '2026-01-02'

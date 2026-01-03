@@ -1,0 +1,16 @@
+id: i-d-do-it-again
+title: I'd Do It Again
+artist: Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iddoitagainlyricschords.pro
+    imported_at: '2026-01-02'

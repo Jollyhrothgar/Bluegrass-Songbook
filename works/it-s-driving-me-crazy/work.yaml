@@ -1,0 +1,18 @@
+id: it-s-driving-me-crazy
+title: It's Driving Me Crazy
+artist: Marty Robbins
+composers:
+- Ray Edenton
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsdrivingmecrazylyricschords.pro
+    imported_at: '2026-01-02'

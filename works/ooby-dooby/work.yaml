@@ -1,0 +1,19 @@
+id: ooby-dooby
+title: Ooby Dooby
+artist: Roy Orbison
+composers:
+- Wade Moore and Dick Penner
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oobydoobylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: i-order-one-for-me
+title: I Order One For Me
+artist: Mel Tillis
+composers:
+- Barbara Cummings and Jimmy Null
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iorderoneformelyricschords.pro
+    imported_at: '2026-01-02'

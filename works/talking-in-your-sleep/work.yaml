@@ -1,0 +1,15 @@
+id: talking-in-your-sleep
+title: Talking In Your Sleep
+artist: Crystal Gayle
+composers:
+- Roger F. Cook and Bobby R. Woods
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: talkinginyoursleeplyricschords.pro
+    imported_at: '2026-01-02'

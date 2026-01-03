@@ -1,0 +1,18 @@
+id: i-told-my-world-to-go-away
+title: I Told My World To Go Away
+artist: Conway Twitty
+composers:
+- Mickey Jaco
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itoldmyworldtogoawaylyricschords.pro
+    imported_at: '2026-01-02'

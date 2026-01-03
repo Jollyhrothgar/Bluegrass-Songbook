@@ -1,0 +1,18 @@
+id: always-never-the-same
+title: Always Never The Same
+artist: George Strait
+composers:
+- Marv Green and Terry McBride
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alwaysneverthesamelyricschords.pro
+    imported_at: '2026-01-02'

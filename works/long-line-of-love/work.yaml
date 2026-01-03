@@ -1,0 +1,17 @@
+id: long-line-of-love
+title: Long Line Of Love
+artist: Paul Overstreet
+composers:
+- Paul Overstreet and Thom Schuyler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longlineoflovelyricschords.pro
+    imported_at: '2026-01-02'

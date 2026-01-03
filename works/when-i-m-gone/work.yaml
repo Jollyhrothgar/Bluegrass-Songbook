@@ -1,0 +1,18 @@
+id: when-i-m-gone
+title: When I'm Gone
+artist: Sonny James
+composers:
+- Sonny James and John Skye
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenimgonelyricsandchords.pro
+    imported_at: '2026-01-02'

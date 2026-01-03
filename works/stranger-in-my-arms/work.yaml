@@ -1,0 +1,18 @@
+id: stranger-in-my-arms
+title: Stranger In My Arms
+artist: George Strait
+composers:
+- Curtis Wayne
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: strangerinmyarmslyricsandchords.pro
+    imported_at: '2026-01-02'

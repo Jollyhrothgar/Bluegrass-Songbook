@@ -1,0 +1,15 @@
+id: twinkle-twinkle-little-star
+title: Twinkle Twinkle Little Star
+artist: Isla Grant
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twinkletwinklelittlestarlyricschords.pro
+    imported_at: '2026-01-02'

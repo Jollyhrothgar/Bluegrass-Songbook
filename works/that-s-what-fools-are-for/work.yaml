@@ -1,0 +1,17 @@
+id: that-s-what-fools-are-for
+title: That's What Fools Are For
+artist: Jerry Wallace
+composers:
+- Joe Coffey and Genetta Brown
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatfoolsareforlyricschords.pro
+    imported_at: '2026-01-02'

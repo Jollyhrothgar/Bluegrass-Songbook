@@ -1,0 +1,17 @@
+id: if-you-re-gonna-play-in-texas
+title: If You're Gonna Play In Texas
+artist: Alabama
+composers:
+- Dan Mitchell and Murray Kellum
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouregonnaplayintexaslyricschords.pro
+    imported_at: '2026-01-02'

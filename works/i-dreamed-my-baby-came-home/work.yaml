@@ -1,0 +1,17 @@
+id: i-dreamed-my-baby-came-home
+title: I Dreamed My Baby Came Home
+artist: George Jones
+composers:
+- George Jones and Johnny Mathis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idreamedmybabycamehomelyricschords.pro
+    imported_at: '2026-01-02'

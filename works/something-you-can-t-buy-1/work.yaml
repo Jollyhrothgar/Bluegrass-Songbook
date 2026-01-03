@@ -1,0 +1,17 @@
+id: something-you-can-t-buy-1
+title: Something You Can't Buy
+artist: Statler Brothers
+composers:
+- Don Reid and Harold Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingyoucantbuylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: scotch-and-soda
+title: Scotch And Soda
+artist: Hank Thompson
+composers:
+- Dave Guard
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: scotchandsodalyricschords.pro
+    imported_at: '2026-01-02'

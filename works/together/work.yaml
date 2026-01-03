@@ -1,0 +1,19 @@
+id: together
+title: Together
+artist: Anne Murray
+composers:
+- Buddy DeSylva, Ray Henderson, Lew Brown
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: togetherlyricsandchords.pro
+    imported_at: '2026-01-02'

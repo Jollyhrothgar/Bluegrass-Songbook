@@ -1,0 +1,13 @@
+id: do-you-really-want-to-know
+title: Do You Really Want To Know
+artist: Johnny Rodriguez Lyrics with Chords
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doyoureallywanttoknowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: doggone-it-baby-i-m-in-love
+title: Doggone It Baby I'm In Love
+artist: Carl Smith
+composers:
+- Arrett Keefer and Jack Amway
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doggoneitbabyiminlovelyricschords.pro
+    imported_at: '2026-01-02'

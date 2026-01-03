@@ -1,0 +1,15 @@
+id: around-the-world
+title: Around The World
+artist: Jim Reeves
+composers:
+- Harold Adamson, Victor Young, Stella Unger
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aroundtheworldlyricschords.pro
+    imported_at: '2026-01-02'

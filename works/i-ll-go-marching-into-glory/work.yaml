@@ -1,0 +1,19 @@
+id: i-ll-go-marching-into-glory
+title: I'll Go Marching Into Glory
+artist: Hank Snow
+composers:
+- Kirk Hansard, William Denny, Lois Johnson
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illgomarchingintoglorylyricschords.pro
+    imported_at: '2026-01-02'

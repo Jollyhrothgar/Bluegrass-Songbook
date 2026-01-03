@@ -1,0 +1,17 @@
+id: walk-softly-on-this-heart-of-mine
+title: Walk Softly On This Heart Of Mine
+artist: Kentucky Headhunters
+composers:
+- Jake
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walksoftlyonthisheartofminelyricschords.pro
+    imported_at: '2026-01-02'

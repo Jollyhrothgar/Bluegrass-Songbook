@@ -1,0 +1,17 @@
+id: only-this-moment-is-mine
+title: Only This Moment Is Mine
+artist: Daniel O'Donnell
+composers:
+- Teresa Mary O'Donnell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onlythismomentisminelyricschords.pro
+    imported_at: '2026-01-02'

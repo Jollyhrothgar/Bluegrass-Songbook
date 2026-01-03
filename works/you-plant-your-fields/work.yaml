@@ -1,0 +1,17 @@
+id: you-plant-your-fields
+title: You Plant Your Fields
+artist: New Grass Revival
+composers:
+- Donny Lowery and Wendy Waldman
+default_key: Em
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youplantyourfieldslyricschords.pro
+    imported_at: '2026-01-02'

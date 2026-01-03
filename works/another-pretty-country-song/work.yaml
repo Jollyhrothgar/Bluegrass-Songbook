@@ -1,0 +1,19 @@
+id: another-pretty-country-song
+title: Another Pretty Country Song
+artist: David Allan Coe
+composers:
+- David Allan Coe and Ronald Clark
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anotherprettycountrysonglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: land-of-heaven
+title: Land Of Heaven
+artist: Wilburn Brothers
+composers:
+- Jodi Baneino and Eillen Maultsby
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: landofheavenlyricschords.pro
+    imported_at: '2026-01-02'

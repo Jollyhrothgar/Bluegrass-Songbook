@@ -1,0 +1,17 @@
+id: morning-paper
+title: Morning Paper
+artist: Billy Walker
+composers:
+- Alex Zanetis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: morningpaperlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: this-world-is-not-my-home
+title: This World Is Not My Home
+artist: Merle Haggard
+composers:
+- Albert Edward Brumley
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisworldisnotmyhomelyricsandchords.pro
+    imported_at: '2026-01-02'

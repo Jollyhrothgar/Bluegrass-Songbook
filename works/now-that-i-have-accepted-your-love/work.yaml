@@ -1,0 +1,17 @@
+id: now-that-i-have-accepted-your-love
+title: Now That I Have Accepted Your Love
+artist: Red Steagall
+composers:
+- Richard O'Brien and Red Steagall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nowthatihaveacceptedyourlovelyricschords.pro
+    imported_at: '2026-01-02'

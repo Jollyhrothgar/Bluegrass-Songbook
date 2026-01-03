@@ -1,0 +1,18 @@
+id: i-m-sorry-i-made-you-cry
+title: I'm Sorry I Made You Cry
+artist: Connie Francis
+composers:
+- Nick Clesi
+default_key: G
+tags:
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsorryimadeyoucrylyricschords.pro
+    imported_at: '2026-01-02'

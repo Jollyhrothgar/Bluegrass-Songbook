@@ -1,0 +1,17 @@
+id: there-stands-the-glass
+title: There Stands The Glass
+artist: Webb Pierce
+composers:
+- Russ Hull, Mary Jean Shurtz, Audrey Grisham
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therestandstheglasslyricschords.pro
+    imported_at: '2026-01-02'

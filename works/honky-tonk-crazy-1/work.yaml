@@ -1,0 +1,17 @@
+id: honky-tonk-crazy-1
+title: Honky Tonk Crazy
+artist: Gene Watson
+composers:
+- Harland Howard and Ron Peterson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkcrazylyricschords.pro
+    imported_at: '2026-01-02'

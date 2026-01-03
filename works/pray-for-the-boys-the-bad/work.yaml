@@ -1,0 +1,17 @@
+id: pray-for-the-boys-the-bad
+title: Pray For The Boys The Bad
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Carter Stanley and Ralph Stanley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prayfortheboyslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: two-candles-one-dinner-and-a-bottle
+title: Two Candles One Dinner And A Bottle
+artist: Johnny Paycheck
+composers:
+- Aubrey Mayhew
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twocandlesonedinnerandabottlelyricschords.pro
+    imported_at: '2026-01-02'

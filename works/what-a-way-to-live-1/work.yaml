@@ -1,0 +1,19 @@
+id: what-a-way-to-live-1
+title: What A Way To Live
+artist: Willie Nelson
+composers:
+- Willie Nelson and Hank Craig
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatawaytolivelyricschords.pro
+    imported_at: '2026-01-02'

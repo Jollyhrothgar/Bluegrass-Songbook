@@ -1,0 +1,18 @@
+id: crazy-every-time
+title: Crazy Every Time
+artist: Tracy Byrd
+composers:
+- Casey Beathard, Billy Currington, Dan Demay
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crazyeverytimelyricschords.pro
+    imported_at: '2026-01-02'

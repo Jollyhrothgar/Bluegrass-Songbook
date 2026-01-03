@@ -1,0 +1,17 @@
+id: kiss-a-me-love-a-me
+title: Kiss A Me Love A Me
+artist: Wynn Stewart
+composers:
+- Dale Noe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kissameloveamelyricschords.pro
+    imported_at: '2026-01-02'

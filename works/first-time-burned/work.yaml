@@ -1,0 +1,17 @@
+id: first-time-burned
+title: First Time Burned
+artist: Johnny Rodriguez
+composers:
+- Jimmy Ray McBride
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: firsttimeburnedlyricschords.pro
+    imported_at: '2026-01-02'

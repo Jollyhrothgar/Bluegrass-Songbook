@@ -1,0 +1,15 @@
+id: you-got-the-kind-of-love
+title: You Got The Kind Of Love
+artist: Boxcar Willie
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yougotthekindoflovelyricschords.pro
+    imported_at: '2026-01-02'

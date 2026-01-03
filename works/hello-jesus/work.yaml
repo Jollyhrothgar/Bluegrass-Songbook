@@ -1,0 +1,17 @@
+id: hello-jesus
+title: Hello Jesus
+artist: The Reno Brothers
+composers:
+- Ronnie Reno
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helloJesuslyricschords.pro
+    imported_at: '2026-01-02'

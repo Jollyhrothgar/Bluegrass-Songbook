@@ -1,0 +1,17 @@
+id: i-lost-my-love-today
+title: I Lost My Love Today
+artist: Ferlin Husky
+composers:
+- Betty Westergard and Ferlin Husky
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilostmylovetodaylyricschords.pro
+    imported_at: '2026-01-02'

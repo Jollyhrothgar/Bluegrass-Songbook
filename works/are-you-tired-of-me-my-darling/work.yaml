@@ -1,0 +1,17 @@
+id: are-you-tired-of-me-my-darling
+title: Are You Tired Of Me My Darling
+artist: Jim and Jesse
+composers:
+- G.P. Cook, Ralph Roland, Nanci Griffith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: areyoutiredofmemydarlinglyricschords.pro
+    imported_at: '2026-01-02'

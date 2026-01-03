@@ -1,0 +1,17 @@
+id: santa-don-t-pass-me-by
+title: Santa Don't Pass Me By
+artist: Freddy Fender
+composers:
+- Murphy M. Maddux Jr. and Huey Meaux
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: santadontpassmebylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: rose-in-paradise
+title: Rose in Paradise
+artist: Waylon Jennings
+composers:
+- Jim McBride and Stewart Harris
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: roseinparadiselyricschords.pro
+    imported_at: '2026-01-02'

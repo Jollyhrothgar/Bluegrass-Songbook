@@ -1,0 +1,17 @@
+id: when-i-looked-up-and-he-looked-down
+title: When I Looked Up And He Looked Down
+artist: Chuck Wagon Gang
+composers:
+- Albert E. Brumley Sr.
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenilookedupandhelookeddownlyricschords.pro
+    imported_at: '2026-01-02'

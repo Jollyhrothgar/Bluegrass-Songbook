@@ -1,0 +1,20 @@
+id: hungry-for-love-1
+title: Hungry For Love
+artist: Patsy Cline
+composers:
+- Eddie Miller & W.S. Stevenson
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hungryforlovelyricschords.pro
+    imported_at: '2026-01-02'

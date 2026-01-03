@@ -1,0 +1,17 @@
+id: carry-me-back
+title: Carry Me Back
+artist: Statler Brothers
+composers:
+- Harold and Don Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carrymebacklyricschords.pro
+    imported_at: '2026-01-02'

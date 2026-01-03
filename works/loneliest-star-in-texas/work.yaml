@@ -1,0 +1,18 @@
+id: loneliest-star-in-texas
+title: Loneliest Star In Texas
+artist: Norma Jean
+composers:
+- Dale A. Crockett and Robert C. Landes
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelieststarintexaslyricschords.pro
+    imported_at: '2026-01-02'

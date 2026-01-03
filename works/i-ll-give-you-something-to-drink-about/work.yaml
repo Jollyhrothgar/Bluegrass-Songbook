@@ -1,0 +1,17 @@
+id: i-ll-give-you-something-to-drink-about
+title: I'll Give You Something To Drink About
+artist: George Jones
+composers:
+- Hank Cochran, Mack Vickery, Jerry Leseter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illgiveyousomethingtodrinkaboutlyricsandchords.pro
+    imported_at: '2026-01-02'

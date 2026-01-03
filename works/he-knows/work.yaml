@@ -1,0 +1,17 @@
+id: he-knows
+title: He Knows
+artist: Eddy Arnold
+composers:
+- Ace Nash and Eddy Arnold
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heknowslyricschords.pro
+    imported_at: '2026-01-02'

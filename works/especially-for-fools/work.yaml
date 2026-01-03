@@ -1,0 +1,17 @@
+id: especially-for-fools
+title: Especially For Fools
+artist: Billy Walker
+composers:
+- Jerry Organ and Wayne Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: especiallyforfoolslyricschords.pro
+    imported_at: '2026-01-02'

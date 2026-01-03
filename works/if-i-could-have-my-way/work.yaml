@@ -1,0 +1,17 @@
+id: if-i-could-have-my-way
+title: If I Could Have My Way
+artist: John Anderson
+composers:
+- Fred F. Carter Jr. and John Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldhavemywaylyricschords.pro
+    imported_at: '2026-01-02'

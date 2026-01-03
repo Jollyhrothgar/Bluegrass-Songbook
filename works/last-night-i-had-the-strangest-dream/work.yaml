@@ -1,0 +1,18 @@
+id: last-night-i-had-the-strangest-dream
+title: Last Night I Had The Strangest Dream
+artist: Garth Brooks
+composers:
+- Ed McCurdy
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lastnightihadthestrangestdreamlyricschords.pro
+    imported_at: '2026-01-02'

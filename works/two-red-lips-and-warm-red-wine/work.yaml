@@ -1,0 +1,18 @@
+id: two-red-lips-and-warm-red-wine
+title: Two Red Lips And Warm Red Wine
+artist: Johnny Horton
+composers:
+- Thomas E. Bearden
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tworedlipsandwarmredwinelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: love-is-thin-ice
+title: Love Is Thin Ice
+artist: Barbara Mandrell
+composers:
+- Geoff Morgan
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveisthinicelyricschords.pro
+    imported_at: '2026-01-02'

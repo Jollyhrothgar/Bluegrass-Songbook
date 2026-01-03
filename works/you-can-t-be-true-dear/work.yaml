@@ -1,0 +1,17 @@
+id: you-can-t-be-true-dear
+title: You Can't Be True Dear
+artist: Eddy Arnold
+composers:
+- Gerhard Ebeler, Hans Otten, Hal Cotton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantbetruedearlyricschords.pro
+    imported_at: '2026-01-02'

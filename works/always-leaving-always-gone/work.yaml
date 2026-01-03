@@ -1,0 +1,18 @@
+id: always-leaving-always-gone
+title: Always Leaving Always Gone
+artist: Kenny Rogers
+composers:
+- Dick Monda
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alwaysleavingalwaysgonelyricschords.pro
+    imported_at: '2026-01-02'

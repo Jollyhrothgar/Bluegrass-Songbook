@@ -1,0 +1,17 @@
+id: open-up-the-book-and-take-a-look
+title: Open Up The Book And Take A Look
+artist: Ferlin Husky
+composers:
+- Ferlin Husky, Lester Vanadore,
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: openupthebookandtakealooklyricschords.pro
+    imported_at: '2026-01-02'

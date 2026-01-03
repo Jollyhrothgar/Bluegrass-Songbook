@@ -1,0 +1,17 @@
+id: right-on-the-money
+title: Right On The Money
+artist: Alan Jackson
+composers:
+- Charlie Black and Phil Vassar
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rightonthemoneylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: first-and-the-last-time
+title: First And The Last Time
+artist: Jana Kramer
+composers:
+- Skip Black, Jana Kramer, Jon Mark Nite
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: firstandthelasttimelyricschords.pro
+    imported_at: '2026-01-02'

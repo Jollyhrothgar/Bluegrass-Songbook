@@ -1,0 +1,17 @@
+id: i-m-coming-back-home-to-stay
+title: I'm Coming Back Home To Stay
+artist: Buck Owens
+composers:
+- Don Rich
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imcomingbackhometostaylyricschords.pro
+    imported_at: '2026-01-02'

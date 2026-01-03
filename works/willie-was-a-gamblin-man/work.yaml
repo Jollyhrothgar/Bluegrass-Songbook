@@ -1,0 +1,17 @@
+id: willie-was-a-gamblin-man
+title: Willie Was A Gamblin' Man
+artist: Ferlin Husky
+composers:
+- Dallas Frazier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: williewasagamblinmanlyricschords.pro
+    imported_at: '2026-01-02'

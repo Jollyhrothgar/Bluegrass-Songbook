@@ -1,0 +1,15 @@
+id: i-wish-i-didnt-love-you-so
+title: I Wish I Didn’t Love You So
+artist: Eddy Arnold
+composers:
+- Frank Loesser
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishididntloveyousolyricschords.pro
+    imported_at: '2026-01-02'

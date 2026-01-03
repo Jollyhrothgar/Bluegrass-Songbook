@@ -1,0 +1,15 @@
+id: is-it-too-soon-to-tell
+title: Is It Too Soon To Tell
+artist: Marsha Thornton
+composers:
+- Michael Noble, Jeff Pennig, Marsha Thornton
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isittoosoontotelllyricschords.pro
+    imported_at: '2026-01-02'

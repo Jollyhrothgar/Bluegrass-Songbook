@@ -1,0 +1,17 @@
+id: i-just-want-to-love-you-forever
+title: I Just Want To Love You Forever
+artist: Johnny Lee
+composers:
+- Donald Hare
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustwanttoloveyouforeverlyricschords.pro
+    imported_at: '2026-01-02'

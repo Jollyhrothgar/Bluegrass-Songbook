@@ -1,0 +1,13 @@
+id: all-of-my-tomorrows
+title: All Of My Tomorrows
+artist: Nat Stuckey
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allofmytomorrowslyricschords.pro
+    imported_at: '2026-01-02'

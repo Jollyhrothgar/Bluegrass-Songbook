@@ -1,0 +1,17 @@
+id: she-won-t-have-a-thing-to-do-with-nobody-but-me
+title: She Won't Have A Thing To Do With Nobody But Me
+artist: Alabama
+composers:
+- Dean Dillon, Buzz Rabin, Flash Gordon
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shewonthaveathingtodowithnobodybutmelyricschords.pro
+    imported_at: '2026-01-02'

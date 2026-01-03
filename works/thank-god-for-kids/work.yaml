@@ -1,0 +1,17 @@
+id: thank-god-for-kids
+title: Thank God For Kids
+artist: The Oak Ridge Boys
+composers:
+- Eddy Raven
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankGodforkidslyricschords.pro
+    imported_at: '2026-01-02'

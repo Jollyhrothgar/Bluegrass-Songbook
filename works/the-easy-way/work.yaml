@@ -1,0 +1,17 @@
+id: the-easy-way
+title: The Easy Way
+artist: Eddy Arnold
+composers:
+- Glenn Sutton and Merle Kilgore
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theeasywaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: the-holy-hills-of-heaven-call-me
+title: The Holy Hills Of Heaven Call Me
+artist: Johnny Mathis
+composers:
+- Joyce Reba (Dottie) Rambo
+default_key: G
+tags:
+- Jazz
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theholyhillsofheavencallmelyricschords.pro
+    imported_at: '2026-01-02'

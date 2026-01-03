@@ -1,0 +1,15 @@
+id: without-you-on-my-side
+title: Without You On My Side
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withoutyouonmysidelyricschords.pro
+    imported_at: '2026-01-02'

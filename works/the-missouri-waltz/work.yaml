@@ -1,0 +1,17 @@
+id: the-missouri-waltz
+title: The Missouri Waltz
+artist: Eddy Arnold
+composers:
+- J.R.Shannon and John V. Eppel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themissouriwaltzlyricschords.pro
+    imported_at: '2026-01-02'

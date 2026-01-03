@@ -1,0 +1,17 @@
+id: kickin-in
+title: Kickin' In
+artist: Buck Owens
+composers:
+- Roger Allan Murrah and Keith Stegall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kickininlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: love-is-burnin
+title: Love Is Burnin'
+artist: Brenda Lee
+composers:
+- Donny Kees and Frank Myers
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveisburninlyricschords.pro
+    imported_at: '2026-01-02'

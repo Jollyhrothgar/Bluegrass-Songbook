@@ -1,0 +1,21 @@
+id: don-t-leave-me-now
+title: Don't Leave Me Now
+artist: Elvis Presley
+composers:
+- Aaron Schroeder and Ben Weisman
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontleavemenowlyricschords.pro
+    imported_at: '2026-01-02'

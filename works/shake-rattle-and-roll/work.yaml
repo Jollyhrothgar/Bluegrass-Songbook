@@ -1,0 +1,20 @@
+id: shake-rattle-and-roll
+title: Shake Rattle And Roll
+artist: Patsy Cline
+composers:
+- Charles Calhoun
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shakerattleandrolllyricschords.pro
+    imported_at: '2026-01-02'

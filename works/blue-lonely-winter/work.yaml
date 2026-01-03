@@ -1,0 +1,17 @@
+id: blue-lonely-winter
+title: Blue Lonely Winter
+artist: Goldie Hill
+composers:
+- Jimmy Newman and Roy A. Baham
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluelonelywinterlyricschords.pro
+    imported_at: '2026-01-02'

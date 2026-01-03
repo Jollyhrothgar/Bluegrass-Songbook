@@ -1,0 +1,17 @@
+id: thinkin-bout-you
+title: Thinkin' Bout You
+artist: Everly Brothers
+composers:
+- Larry Henley and Billy Burnette
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thinkinnoutyoulyricschords.pro
+    imported_at: '2026-01-02'

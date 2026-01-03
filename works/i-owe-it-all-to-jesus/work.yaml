@@ -1,0 +1,15 @@
+id: i-owe-it-all-to-jesus
+title: I Owe It All To Jesus
+artist: Jimmy Swaggart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ioweitalltoJesuslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ve-got-to-stop-lovin-you
+title: I've Got To Stop Lovin' You
+artist: Leona Williams
+composers:
+- Dave Kirby and Leona Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegottostoplovinyoulyricschords.pro
+    imported_at: '2026-01-02'

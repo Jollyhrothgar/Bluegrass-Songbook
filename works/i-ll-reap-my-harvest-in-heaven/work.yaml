@@ -1,0 +1,18 @@
+id: i-ll-reap-my-harvest-in-heaven
+title: I'll Reap My Harvest In Heaven
+artist: Kitty Wells
+composers:
+- Floyd Jenkins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illreapmyharvestinheavenlyricschords.pro
+    imported_at: '2026-01-02'

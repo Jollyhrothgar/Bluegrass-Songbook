@@ -1,0 +1,18 @@
+id: i-saw-you-face-in-the-moon
+title: I Saw You Face in the Moon
+artist: Webb Pierce
+composers:
+- Odis Elder
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isawyourfaceinthemoonlyricschords.pro
+    imported_at: '2026-01-02'

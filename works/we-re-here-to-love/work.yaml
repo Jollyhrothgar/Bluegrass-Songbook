@@ -1,0 +1,18 @@
+id: we-re-here-to-love
+title: We're Here To Love
+artist: Ronnie Milsap
+composers:
+- Troy Seals and Mike Reid
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wereheretolovelyricschords.pro
+    imported_at: '2026-01-02'

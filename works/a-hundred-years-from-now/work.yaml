@@ -1,0 +1,21 @@
+id: a-hundred-years-from-now
+title: A Hundred Years From Now
+artist: Elvis Presley
+composers:
+- Lester Flatt and Earl Scruggs
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ahundredyearsfromnowlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: mister-joe-henry-s-happy-hand-clappin
+title: Mister Joe Henry's Happy Hand Clappin'
+artist: Charlie Pride
+composers:
+- Larry Lee and Glenn D. Tubb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: misterjoehenryshappyhandclappinlyricschords.pro
+    imported_at: '2026-01-02'

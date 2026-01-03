@@ -1,0 +1,14 @@
+id: d-g-two-step
+title: '''D'' & ''G'' Two-Step'
+artist: Traditional
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

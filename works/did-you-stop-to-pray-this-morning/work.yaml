@@ -1,0 +1,17 @@
+id: did-you-stop-to-pray-this-morning
+title: Did You Stop To Pray This Morning
+artist: Mac Wiseman
+composers:
+- Ray Westmoreland, Mark Hurley, Fred Dexter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didyoustoptopraythismorninglyricschords.pro
+    imported_at: '2026-01-02'

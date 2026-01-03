@@ -1,0 +1,17 @@
+id: i-can-turn-your-world-around
+title: I Can Turn Your World Around
+artist: Connie Smith
+composers:
+- Jack Rhodes, Billie Jo Spears, Henry Ebner
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanturnyourworldaroundlyricschords.pro
+    imported_at: '2026-01-02'

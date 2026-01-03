@@ -1,0 +1,15 @@
+id: my-true-love
+title: My True Love
+artist: Jack Scott
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mytruelovelyricschords.pro
+    imported_at: '2026-01-02'

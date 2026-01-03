@@ -1,0 +1,19 @@
+id: falling-to-the-bottom
+title: Falling To The Bottom
+artist: Jerry Lee Lewis
+composers:
+- Carmon Holland and Faye Linard
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallingtothebottomlyricschords.pro
+    imported_at: '2026-01-02'

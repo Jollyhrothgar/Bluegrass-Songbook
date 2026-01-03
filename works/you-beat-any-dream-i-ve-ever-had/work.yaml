@@ -1,0 +1,17 @@
+id: you-beat-any-dream-i-ve-ever-had
+title: You Beat Any Dream I've Ever Had
+artist: Johnny Rodriguez
+composers:
+- Billy Sherrill, Glenn Sutton, Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youbeatanydreamiveeverhadlyricschords.pro
+    imported_at: '2026-01-02'

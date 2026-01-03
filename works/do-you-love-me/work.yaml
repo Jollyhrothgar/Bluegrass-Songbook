@@ -1,0 +1,17 @@
+id: do-you-love-me
+title: Do You Love Me
+artist: Jimmy Dean
+composers:
+- Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doyoulovemelyricschords.pro
+    imported_at: '2026-01-02'

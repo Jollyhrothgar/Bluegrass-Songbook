@@ -1,0 +1,17 @@
+id: girl-in-white-lives
+title: Girl In White Lives
+artist: Wynn Stewart
+composers:
+- Bobby Austin and Wynn Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: girlinwhitelyricschords.pro
+    imported_at: '2026-01-02'

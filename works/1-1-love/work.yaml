@@ -1,0 +1,17 @@
+id: 1-1-love
+title: 1+1 = Love
+artist: Charly McClain
+composers:
+- L. Rogers, R. Scaife, D. Hogan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneplusoneequallovelyricschords.pro
+    imported_at: '2026-01-02'

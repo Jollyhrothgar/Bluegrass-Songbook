@@ -1,0 +1,17 @@
+id: a-faded-rose-a-broken-heart
+title: A Faded Rose A Broken Heart
+artist: Hank Snow
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afadedroseabrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

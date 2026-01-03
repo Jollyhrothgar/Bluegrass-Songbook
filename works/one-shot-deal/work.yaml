@@ -1,0 +1,17 @@
+id: one-shot-deal
+title: One Shot Deal
+artist: John Anderson
+composers:
+- Bob DiPiero and John S. Sherrill
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneshotdeallyricschords.pro
+    imported_at: '2026-01-02'

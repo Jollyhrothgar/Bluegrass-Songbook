@@ -1,0 +1,19 @@
+id: cold-gray-light-of-gone
+title: Cold Gray Light Of Gone
+artist: Vince Gill
+composers:
+- Otto Kitsinger
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldgraylightofgonelyricschords.pro
+    imported_at: '2026-01-02'

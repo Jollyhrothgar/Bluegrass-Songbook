@@ -1,0 +1,17 @@
+id: you-don-t-know-my-mind-today
+title: You Don't Know My Mind Today
+artist: Harland Howard
+composers:
+- Jimmie Skinner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontknowmymindtodaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: where-we-ll-never-grow-old
+title: Where We'll Never Grow Old
+artist: Eddy Arnold
+composers:
+- James C. Moore
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherewellnevergrowoldlyricschord.pro
+    imported_at: '2026-01-02'

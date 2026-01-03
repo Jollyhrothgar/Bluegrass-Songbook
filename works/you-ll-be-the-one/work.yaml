@@ -1,0 +1,19 @@
+id: you-ll-be-the-one
+title: You'll Be The One
+artist: Hank Thompson
+composers:
+- Orville Proctor and Lyle Gaston
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllbetheonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-won-t-care-what-happens-to-me
+title: I Won't Care What Happens To Me
+artist: Carl Belew
+composers:
+- Carl Belew and Van Givens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwontcarewhathappenstomelyricschords.pro
+    imported_at: '2026-01-02'

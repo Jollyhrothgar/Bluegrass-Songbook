@@ -1,0 +1,17 @@
+id: all-that-we-ve-got-left
+title: All That We've Got Left
+artist: Vern Gosdin
+composers:
+- Buddy Cannon, Rex Gosdin, Steve Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allthatwevegotleftlyricschords.pro
+    imported_at: '2026-01-02'

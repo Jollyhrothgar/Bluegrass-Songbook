@@ -1,0 +1,20 @@
+id: when-you-re-tired-of-breaking-other-hearts
+title: When You're Tired of Breaking Other Hearts
+artist: Hank Williams
+composers:
+- Hank Williams and Curley Williams
+default_key: D
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyouretiredofbreakingotherheartslyricschords.pro
+    imported_at: '2026-01-02'

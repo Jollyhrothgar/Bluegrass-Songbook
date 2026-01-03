@@ -1,0 +1,15 @@
+id: take-time-to-love-her
+title: Take Time To Love Her
+artist: Nat Stuckey
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: taketimetoloveherlyricschords.pro
+    imported_at: '2026-01-02'

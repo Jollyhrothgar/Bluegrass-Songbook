@@ -1,0 +1,16 @@
+id: song-for-a-winter-s-night
+title: Song For A Winter's Night
+artist: Gordon Lightfoot
+default_key: G
+tags:
+- Folk
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: songforawintersnightlyricschords.pro
+    imported_at: '2026-01-02'

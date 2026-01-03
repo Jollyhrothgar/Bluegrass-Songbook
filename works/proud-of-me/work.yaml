@@ -1,0 +1,17 @@
+id: proud-of-me
+title: Proud Of Me
+artist: Tracy Byrd
+composers:
+- Mark Nesler and Tony Martin
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: proudofmelyricschords.pro
+    imported_at: '2026-01-02'

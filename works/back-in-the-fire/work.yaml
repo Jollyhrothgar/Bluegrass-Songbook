@@ -1,0 +1,17 @@
+id: back-in-the-fire
+title: Back In The Fire
+artist: Gene Watson
+composers:
+- Rory Michael Bourke and Mike Reid
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backinthefirelyricschords.pro
+    imported_at: '2026-01-02'

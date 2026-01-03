@@ -1,0 +1,17 @@
+id: baby-take-a-picture
+title: Baby Take A Picture
+artist: Ricky Van Shelton
+composers:
+- Russell Smith, Carol Chase, Kathy Louvin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babytakeapicturelyricschords.pro
+    imported_at: '2026-01-02'

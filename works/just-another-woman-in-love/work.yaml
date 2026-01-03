@@ -1,0 +1,18 @@
+id: just-another-woman-in-love
+title: Just Another Woman In Love
+artist: Anne Murray
+composers:
+- Patti Ryan and Wanda Mallett
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justanotherwomaninlovelyricschords.pro
+    imported_at: '2026-01-02'

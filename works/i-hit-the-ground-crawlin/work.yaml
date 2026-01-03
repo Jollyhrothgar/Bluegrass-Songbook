@@ -1,0 +1,18 @@
+id: i-hit-the-ground-crawlin
+title: I Hit The Ground Crawlin'
+artist: Tracy Lawrence
+composers:
+- Larry Boone, Paul Nelson, Tracy Lawrence
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihitthegroundcrawlinlyricschords.pro
+    imported_at: '2026-01-02'

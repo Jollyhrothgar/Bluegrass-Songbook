@@ -1,0 +1,18 @@
+id: my-father-s-house
+title: My Father's House
+artist: Emmylou Harris
+composers:
+- Bruce Springsteen
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myfathershouselyricschords.pro
+    imported_at: '2026-01-02'

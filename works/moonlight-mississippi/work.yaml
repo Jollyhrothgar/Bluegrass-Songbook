@@ -1,0 +1,17 @@
+id: moonlight-mississippi
+title: Moonlight Mississippi
+artist: Jimmy Dean
+composers:
+- Willard Robison
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moonlightmississippilyricschords.pro
+    imported_at: '2026-01-02'

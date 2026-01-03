@@ -1,0 +1,17 @@
+id: little-white-washed-chimney
+title: Little White Washed Chimney
+artist: Hawkshaw Hawkins
+composers:
+- Bill Clifton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlewhitewashedchimneylyricschords.pro
+    imported_at: '2026-01-02'

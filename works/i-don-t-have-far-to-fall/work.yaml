@@ -1,0 +1,15 @@
+id: i-don-t-have-far-to-fall
+title: I Don't Have Far To Fall
+artist: Skip Ewing
+composers:
+- Donald R. Ewing II and Donald R. Sampson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idonthavefartofalllyricschords.pro
+    imported_at: '2026-01-02'

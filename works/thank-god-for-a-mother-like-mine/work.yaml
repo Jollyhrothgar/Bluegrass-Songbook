@@ -1,0 +1,18 @@
+id: thank-god-for-a-mother-like-mine
+title: Thank God For A Mother Like Mine
+artist: Kitty Wells
+composers:
+- Johnnie Bailes
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankGodforamotherlikeminelyricschords.pro
+    imported_at: '2026-01-02'

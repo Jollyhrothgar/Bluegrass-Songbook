@@ -1,0 +1,18 @@
+id: he-will-set-your-fields-on-fire
+title: He Will Set Your Fields On Fire
+artist: Kitty Wells
+composers:
+- Veona Braskett and C.M. Ballew
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hewillsetyourfieldsonfirelyricschords.pro
+    imported_at: '2026-01-02'

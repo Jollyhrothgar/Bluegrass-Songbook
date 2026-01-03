@@ -1,0 +1,18 @@
+id: next-to-you-i-like-me
+title: Next To You I Like Me
+artist: Charley Pride
+composers:
+- Rick Giles, Bobby Fischer, Walter Haynes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nexttoyouilikemelyricschords.pro
+    imported_at: '2026-01-02'

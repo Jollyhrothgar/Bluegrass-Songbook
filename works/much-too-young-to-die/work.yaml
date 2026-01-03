@@ -1,0 +1,17 @@
+id: much-too-young-to-die
+title: Much Too Young To Die
+artist: Ray Price
+composers:
+- Rusty Gabbard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: muchtooyoungtodielyricschords.pro
+    imported_at: '2026-01-02'

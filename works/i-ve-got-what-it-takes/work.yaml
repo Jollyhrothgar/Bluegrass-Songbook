@@ -1,0 +1,18 @@
+id: i-ve-got-what-it-takes
+title: I've Got What It Takes
+artist: Tracy Byrd
+composers:
+- Jeff Stevens and Marv Green
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotwhatittakeslyricschords.pro
+    imported_at: '2026-01-02'

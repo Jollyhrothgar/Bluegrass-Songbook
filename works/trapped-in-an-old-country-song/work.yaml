@@ -1,0 +1,18 @@
+id: trapped-in-an-old-country-song
+title: Trapped In An Old Country Song
+artist: Charley Pride
+composers:
+- Jack Clement and Don Robertson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: trappedinanoldcountrysonglyricschords.pro
+    imported_at: '2026-01-02'

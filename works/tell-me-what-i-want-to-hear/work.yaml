@@ -1,0 +1,17 @@
+id: tell-me-what-i-want-to-hear
+title: Tell Me What I Want To Hear
+artist: Jean Shepard
+composers:
+- Jack Rhodes and Gertrude Cox
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmewhatiwanttohearlyricschords.pro
+    imported_at: '2026-01-02'

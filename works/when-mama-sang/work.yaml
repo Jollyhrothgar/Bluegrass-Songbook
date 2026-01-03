@@ -1,0 +1,17 @@
+id: when-mama-sang
+title: When Mama Sang
+artist: George Jones
+composers:
+- Bob Warren and Danny Walls
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenmamasanglyricschords.pro
+    imported_at: '2026-01-02'

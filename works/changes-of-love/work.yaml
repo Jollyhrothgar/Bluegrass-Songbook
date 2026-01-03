@@ -1,0 +1,18 @@
+id: changes-of-love
+title: Changes Of Love
+artist: Earl Thomas Conley
+composers:
+- Earl T. Conley and Randy Scruggs
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: changesoflovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: heart-first
+title: Heart First
+artist: Jeanne Pruett
+composers:
+- Johnny Wilson, Kim Morrison, Scott Phelps
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartfirstlyricschords.pro
+    imported_at: '2026-01-02'

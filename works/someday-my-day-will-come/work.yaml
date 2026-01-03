@@ -1,0 +1,17 @@
+id: someday-my-day-will-come
+title: Someday My Day Will Come
+artist: George Jones
+composers:
+- Christopher C. Ryder,
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somedaymydaywillcomelyricschords.pro
+    imported_at: '2026-01-02'

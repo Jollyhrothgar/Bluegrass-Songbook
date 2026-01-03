@@ -1,0 +1,19 @@
+id: golden-slipper-rose
+title: Golden Slipper Rose
+artist: Charlie Rich
+composers:
+- Curly Putman
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goldenslipperroselyricschords.pro
+    imported_at: '2026-01-02'

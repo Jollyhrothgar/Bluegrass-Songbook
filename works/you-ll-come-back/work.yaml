@@ -1,0 +1,17 @@
+id: you-ll-come-back
+title: You'll Come Back
+artist: Web Pierce
+composers:
+- Billy Barton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllcomebacklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: the-angels-are-singing
+title: The Angels Are Singing
+artist: The Stanley Brothers
+composers:
+- Carter Stanley and Ralph Stanley
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theangelsaresinginglyricschords.pro
+    imported_at: '2026-01-02'

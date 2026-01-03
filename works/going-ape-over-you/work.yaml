@@ -1,0 +1,18 @@
+id: going-ape-over-you
+title: Going Ape Over You
+artist: Jimmy Martin
+composers:
+- Abe Mulkey and Bruce Delaney
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goingapeoveryoulyricschords.pro
+    imported_at: '2026-01-02'

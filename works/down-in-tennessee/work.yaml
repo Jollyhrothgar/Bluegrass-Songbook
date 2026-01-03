@@ -1,0 +1,15 @@
+id: down-in-tennessee
+title: Down In Tennessee
+artist: John Anderson
+composers:
+- Wayland Holyfield
+default_key: F
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downintennesseelyricschords.pro
+    imported_at: '2026-01-02'

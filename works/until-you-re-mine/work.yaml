@@ -1,0 +1,18 @@
+id: until-you-re-mine
+title: Until You're Mine
+artist: Tanya Tucker
+composers:
+- Thom Schuyler, David Malloy, Billy Walker
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: untilyoureminelyricschords.pro
+    imported_at: '2026-01-02'

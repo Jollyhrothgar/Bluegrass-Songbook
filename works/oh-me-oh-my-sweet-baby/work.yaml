@@ -1,0 +1,18 @@
+id: oh-me-oh-my-sweet-baby
+title: Oh Me Oh My Sweet Baby
+artist: George Strait
+composers:
+- Michael Garvin and Tom Shapiro
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohmeohmysweetbabylyricschords.pro
+    imported_at: '2026-01-02'

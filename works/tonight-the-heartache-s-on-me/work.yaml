@@ -1,0 +1,17 @@
+id: tonight-the-heartache-s-on-me
+title: Tonight The Heartache's On Me
+artist: Lacy J. Dalton
+composers:
+- Mary Francis, Johnny MacRae, Bob Morrison
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tonighttheheartachesonmelyricschords.pro
+    imported_at: '2026-01-02'

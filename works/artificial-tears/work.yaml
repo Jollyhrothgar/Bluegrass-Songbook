@@ -1,0 +1,18 @@
+id: artificial-tears
+title: Artificial Tears
+artist: Rhonda Vincent
+composers:
+- Bob Morrison and Ron Hellard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: artificialtearslyricschords.pro
+    imported_at: '2026-01-02'

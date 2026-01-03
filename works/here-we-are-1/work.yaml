@@ -1,0 +1,18 @@
+id: here-we-are-1
+title: Here We Are
+artist: Emmylou Harris
+composers:
+- Rodney Crowell
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: herewearelyricschords.pro
+    imported_at: '2026-01-02'

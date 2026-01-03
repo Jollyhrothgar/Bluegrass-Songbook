@@ -1,0 +1,17 @@
+id: the-tail-s-been-waggin-the-dog-too-long
+title: The Tail's Been Waggin' The Dog Too Long
+artist: Charlie Walker
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetailsbeenwagginthedogtoolonglyricschords.pro
+    imported_at: '2026-01-02'

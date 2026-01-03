@@ -1,0 +1,19 @@
+id: bill-bailey-wont-you-please-come-home
+title: Bill Bailey Won’t You Please Come Home
+artist: Patsy Cline
+composers:
+- Hughie Cannon
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: billbaileywontyoupleasecomehomelyricschords.pro
+    imported_at: '2026-01-02'

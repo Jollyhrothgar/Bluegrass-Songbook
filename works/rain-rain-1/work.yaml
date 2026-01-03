@@ -1,0 +1,17 @@
+id: rain-rain-1
+title: Rain Rain
+artist: Wynn Stewart
+composers:
+- Bobby Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rainrainlyricschords.pro
+    imported_at: '2026-01-02'

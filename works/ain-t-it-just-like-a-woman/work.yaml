@@ -1,0 +1,17 @@
+id: ain-t-it-just-like-a-woman
+title: Ain't It Just Like A Woman
+artist: Tracy Byrd
+composers:
+- Al Anderson and Jeffrey Steele
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintitjustlikeawomanlyricschords.pro
+    imported_at: '2026-01-02'

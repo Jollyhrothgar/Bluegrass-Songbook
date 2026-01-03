@@ -1,0 +1,17 @@
+id: i-can-t-live-with-you-i-can-t-live-without-you
+title: I Can't Live With You (I Can't Live Without You)
+artist: Porter Wagoner
+composers:
+- Dale Parker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantlivewithtyouicantlivewithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

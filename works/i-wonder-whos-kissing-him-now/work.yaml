@@ -1,0 +1,18 @@
+id: i-wonder-whos-kissing-him-now
+title: I Wonder Who’s Kissing Him Now
+artist: Anne Murray
+composers:
+- Frank Adams and Will M. Hough
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderwhoskissinghimnowlyricschords.pro
+    imported_at: '2026-01-02'

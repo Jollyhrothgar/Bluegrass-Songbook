@@ -1,0 +1,17 @@
+id: that-s-what-you-do-to-me
+title: That's What You Do To Me
+artist: Charly McClain
+composers:
+- Bob Morrison and Johnny McRae
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatyoudotomelyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: that-s-what-it-s-like-to-be-lonesome
+title: That's What It's Like To Be Lonesome
+artist: Cal Smith
+composers:
+- Bill Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatitsliketobelonesomelyricschords.pro
+    imported_at: '2026-01-02'

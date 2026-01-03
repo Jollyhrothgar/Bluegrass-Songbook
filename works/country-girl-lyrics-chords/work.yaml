@@ -1,0 +1,17 @@
+id: country-girl-lyrics-chords
+title: Country Girl Lyrics chords
+artist: Faron Young
+composers:
+- Roy Drusky
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countrygirllyricschords.pro
+    imported_at: '2026-01-02'

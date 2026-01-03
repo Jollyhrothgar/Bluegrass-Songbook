@@ -1,0 +1,19 @@
+id: a-thing-about-you
+title: A Thing About You
+artist: Emmylou Harris
+composers:
+- Tom Petty
+default_key: G
+tags:
+- Folk
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: athingaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: right-back-missing-you-again
+title: Right Back Missing You Again
+artist: Charley Pride
+composers:
+- Johnny Duncan
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rightbackmissingyouagainlyricschords.pro
+    imported_at: '2026-01-02'

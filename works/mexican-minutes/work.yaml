@@ -1,0 +1,17 @@
+id: mexican-minutes
+title: Mexican Minutes
+artist: Brooks and Dunn
+composers:
+- Kent M. Robbins and Jim Messina
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mexicanminuteslyricschords.pro
+    imported_at: '2026-01-02'

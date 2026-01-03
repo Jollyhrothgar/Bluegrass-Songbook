@@ -1,0 +1,18 @@
+id: forever-and-never
+title: Forever And Never
+artist: David Allan Coe
+default_key: D
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foreverandneverlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: woman-don-t-you-try-to-tie-me-down
+title: Woman Don't You Try to Tie Me Down
+artist: Everly Brothers
+composers:
+- Joe Allen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: womandontyoutrytotiemedownlyricschords.pro
+    imported_at: '2026-01-02'

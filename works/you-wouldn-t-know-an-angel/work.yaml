@@ -1,0 +1,19 @@
+id: you-wouldn-t-know-an-angel
+title: You Wouldn't Know An Angel
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Frances Rhodes
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwouldntknowanangellyricschords.pro
+    imported_at: '2026-01-02'

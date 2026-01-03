@@ -1,0 +1,17 @@
+id: you-can-t-take-the-country-from-the-boy
+title: You Can't Take The Country From The Boy
+artist: Bob Luman
+composers:
+- Fred F. Carter, Jr. and Anna Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanttakethecountryfromtheboylyricschords.pro
+    imported_at: '2026-01-02'

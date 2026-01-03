@@ -1,0 +1,18 @@
+id: i-m-too-good-to-be-better-than-nothing-again
+title: I'm Too Good To Be Better Than Nothing Again
+artist: Leona Williams
+composers:
+- Julie Jones, Eddie London, Leona Williams
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imtoogoodtobebetterthannothingagainlyricschords.pro
+    imported_at: '2026-01-02'

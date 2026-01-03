@@ -1,0 +1,13 @@
+id: i-was-born-a-travelin-man
+title: I Was Born A Travelin' Man
+artist: Johnny Rodriguez
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwasbornatravelinmanlyricschords.pro
+    imported_at: '2026-01-02'

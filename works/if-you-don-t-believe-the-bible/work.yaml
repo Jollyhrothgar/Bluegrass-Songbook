@@ -1,0 +1,21 @@
+id: if-you-don-t-believe-the-bible
+title: If You Don't Believe The Bible
+artist: Ricky Skaggs
+composers:
+- Carl Jackson and Glenn Sutton
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoudontbelievethebiblelyricschords.pro
+    imported_at: '2026-01-02'

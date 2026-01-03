@@ -1,0 +1,17 @@
+id: me-and-jimmie-rodgers
+title: Me And Jimmie Rodgers
+artist: Ray Price
+composers:
+- Shel Silverstein
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meandjimmierodgerslyricschords.pro
+    imported_at: '2026-01-02'

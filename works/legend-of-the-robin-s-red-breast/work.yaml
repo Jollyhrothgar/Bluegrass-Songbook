@@ -1,0 +1,17 @@
+id: legend-of-the-robin-s-red-breast
+title: Legend Of The Robin's Red Breast
+artist: Cowboy Copas
+composers:
+- Preston Blanche and Bradley Kincaid
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: legendoftherobinsredbreastlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: you-look-so-good-in-love
+title: You Look So Good In Love
+artist: George Strait
+composers:
+- Kerry Chater, Rory Bourke, Glen Ballard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youlooksogoodinlovelyricschords.pro
+    imported_at: '2026-01-02'

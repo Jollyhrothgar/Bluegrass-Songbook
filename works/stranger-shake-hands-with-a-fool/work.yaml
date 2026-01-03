@@ -1,0 +1,17 @@
+id: stranger-shake-hands-with-a-fool
+title: Stranger Shake Hands with a Fool
+artist: Bill Carter
+composers:
+- Cal Veale
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: strangershakehandswithafoollyricschords.pro
+    imported_at: '2026-01-02'

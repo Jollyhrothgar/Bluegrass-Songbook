@@ -1,0 +1,17 @@
+id: i-m-all-through-with-you
+title: I'm All Through With You
+artist: Ricky Nelson
+composers:
+- Baker Knight
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imallthroughwithyoulyricschords.pro
+    imported_at: '2026-01-02'

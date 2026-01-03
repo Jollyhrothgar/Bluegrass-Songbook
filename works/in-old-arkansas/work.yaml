@@ -1,0 +1,16 @@
+id: in-old-arkansas
+title: In Old Arkansas
+artist: Traditional
+composers:
+- Biography:Lee Stoneking
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

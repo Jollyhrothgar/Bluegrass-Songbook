@@ -1,0 +1,18 @@
+id: tulsa-queen
+title: Tulsa Queen
+artist: Emmylou Harris
+composers:
+- Rodney Crowell and Emmylou Harris
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tulsaqueenlyricschords.pro
+    imported_at: '2026-01-02'

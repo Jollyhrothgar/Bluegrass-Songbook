@@ -1,0 +1,17 @@
+id: i-thought-of-you
+title: I Thought Of You
+artist: Connie Smith
+composers:
+- Jimmy Rollins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithoughtofyoulyricschords.pro
+    imported_at: '2026-01-02'

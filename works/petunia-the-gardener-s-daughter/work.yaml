@@ -1,0 +1,21 @@
+id: petunia-the-gardener-s-daughter
+title: Petunia The Gardener's Daughter
+artist: Elvis Presley
+composers:
+- Sid Tepper and Roy C. Bennett
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: petuniathegardenersdaughterlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: easy-rocking-chair
+title: Easy Rocking Chair
+artist: Eddy Arnold
+composers:
+- Fred Rose
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easyrockingchairlyricschords.pro
+    imported_at: '2026-01-02'

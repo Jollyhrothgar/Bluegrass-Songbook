@@ -1,0 +1,18 @@
+id: what-i-d-give-to-be-the-wind
+title: What I'd Give (To Be The Wind)
+artist: Roger Miller
+composers:
+- Curly Putman and Red Lane
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatidgivetobethewindlyricschords.pro
+    imported_at: '2026-01-02'

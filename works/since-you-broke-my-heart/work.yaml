@@ -1,0 +1,17 @@
+id: since-you-broke-my-heart
+title: Since You Broke My Heart
+artist: Everly Brothers
+composers:
+- written by Don Everly
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sinceyoubrokemyheartlyricschords.pro
+    imported_at: '2026-01-02'

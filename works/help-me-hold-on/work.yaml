@@ -1,0 +1,18 @@
+id: help-me-hold-on
+title: Help Me Hold On
+artist: Travis Tritt
+composers:
+- Travis Tritt and Pat Terry
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helpmeholdonlyricschords.pro
+    imported_at: '2026-01-02'

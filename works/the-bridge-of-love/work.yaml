@@ -1,0 +1,17 @@
+id: the-bridge-of-love
+title: The Bridge Of Love
+artist: Connie Smith
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebridgeoflovelyricschords.pro
+    imported_at: '2026-01-02'

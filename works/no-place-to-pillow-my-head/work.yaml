@@ -1,0 +1,18 @@
+id: no-place-to-pillow-my-head
+title: No Place To Pillow My Head
+artist: Lester Flatt
+composers:
+- Lester Flatt and Bill Monroe
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noplacetopillowmyheadlyricschords.pro
+    imported_at: '2026-01-02'

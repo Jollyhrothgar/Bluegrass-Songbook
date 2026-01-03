@@ -1,0 +1,17 @@
+id: baby-sister
+title: Baby Sister
+artist: Vernon Oxford
+composers:
+- Shirl Milete
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babysisterlyricschords.pro
+    imported_at: '2026-01-02'

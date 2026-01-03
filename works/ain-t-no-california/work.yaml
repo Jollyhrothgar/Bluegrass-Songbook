@@ -1,0 +1,19 @@
+id: ain-t-no-california
+title: Ain't No California
+artist: Mel Tillis
+composers:
+- Sterling Whipple
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintnocalifornialyricschords.pro
+    imported_at: '2026-01-02'

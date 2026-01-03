@@ -1,0 +1,18 @@
+id: i-ll-tennessee-you-in-my-dreams
+title: I'll Tennessee You In My Dreams
+artist: Tanya Tucker
+composers:
+- Don Schlitz and Paul Overstreet
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illtennesseeyouinmydreamslyricschords.pro
+    imported_at: '2026-01-02'

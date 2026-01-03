@@ -1,0 +1,17 @@
+id: sunset-years-of-life
+title: Sunset Years of Life
+artist: Slim Dusty and Joy McKean
+composers:
+- Joe Hayes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sunsetyearsoflifelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: blue
+title: Blue
+artist: LeAnn Rimes
+composers:
+- Bill Mack Smith
+default_key: D
+tags:
+- ClassicCountry
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluelyricsandchords.pro
+    imported_at: '2026-01-02'

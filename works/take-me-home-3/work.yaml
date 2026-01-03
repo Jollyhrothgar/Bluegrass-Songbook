@@ -1,0 +1,17 @@
+id: take-me-home-3
+title: Take Me Home
+artist: Crystal Gayle
+composers:
+- Tom Waits
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemehomelyricswithchords.pro
+    imported_at: '2026-01-02'

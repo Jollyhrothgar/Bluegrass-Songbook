@@ -1,0 +1,17 @@
+id: i-just-had-a-bar-of-soap
+title: I Just Had A Bar Of Soap
+artist: Little Jimmy Dickens
+composers:
+- Larry Kingston and Pete Drake
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijusthadabarofsoaplyricschords.pro
+    imported_at: '2026-01-02'

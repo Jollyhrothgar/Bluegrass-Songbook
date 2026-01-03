@@ -1,0 +1,17 @@
+id: i-made-a-mistake-and-i-m-sorry
+title: I Made A Mistake And I'm Sorry
+artist: Ray Price
+composers:
+- Braverman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imadeamistakeandimsorrylyricschords.pro
+    imported_at: '2026-01-02'

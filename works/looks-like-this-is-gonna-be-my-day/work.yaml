@@ -1,0 +1,15 @@
+id: looks-like-this-is-gonna-be-my-day
+title: Looks Like This Is Gonna Be My Day
+artist: Jimmy Dean
+composers:
+- Jan Crutchfield
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookslikethisisgonnabemydaylyricschords.pro
+    imported_at: '2026-01-02'

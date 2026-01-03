@@ -1,0 +1,18 @@
+id: snap-your-fingers
+title: Snap Your Fingers
+artist: Ronnie Milsap
+composers:
+- Grady Martin and Alex Zinetis
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: snapyourfingerslyricschords.pro
+    imported_at: '2026-01-02'

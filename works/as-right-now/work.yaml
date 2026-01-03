@@ -1,0 +1,17 @@
+id: as-right-now
+title: As Right Now
+artist: Alabama
+composers:
+- Teddy Gentry and Greg Fowler
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: asrightnowlyricschords.pro
+    imported_at: '2026-01-02'

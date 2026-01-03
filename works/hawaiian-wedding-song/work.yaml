@@ -1,0 +1,17 @@
+id: hawaiian-wedding-song
+title: Hawaiian Wedding Song
+artist: Jim Reeves
+composers:
+- Al Hoffman, Dick Manning, Charles King
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hawaiianweddingsonglyricschords.pro
+    imported_at: '2026-01-02'

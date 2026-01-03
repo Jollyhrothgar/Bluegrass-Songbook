@@ -1,0 +1,17 @@
+id: then-and-only-then
+title: Then And Only Then
+artist: Connie Smith
+composers:
+- Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenandonlythenlyricschords.pro
+    imported_at: '2026-01-02'

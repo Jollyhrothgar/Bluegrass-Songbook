@@ -1,0 +1,17 @@
+id: poor-little-rich-boy
+title: Poor Little Rich Boy
+artist: George Jones
+composers:
+- Don Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: poorlittlerichboylyricschords.pro
+    imported_at: '2026-01-02'

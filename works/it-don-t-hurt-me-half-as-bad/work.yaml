@@ -1,0 +1,17 @@
+id: it-don-t-hurt-me-half-as-bad
+title: It Don't Hurt Me Half As Bad
+artist: Gene Watson
+composers:
+- Joe Allen, Bucky Lindsey, Deoin Lay
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itdonthurtmehalfasbadlyricschords.pro
+    imported_at: '2026-01-02'

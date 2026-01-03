@@ -1,0 +1,17 @@
+id: an-empty-cup
+title: An Empty Cup
+artist: Roy Orbison
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anemptycuplyricschords.pro
+    imported_at: '2026-01-02'

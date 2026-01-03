@@ -1,0 +1,17 @@
+id: el-rancho-de-rio-lyrics-chords
+title: El Rancho De Rio Lyrics Chords
+artist: Jim Reeves
+composers:
+- Tom Perryman
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: elranchoderiolyricschords.pro
+    imported_at: '2026-01-02'

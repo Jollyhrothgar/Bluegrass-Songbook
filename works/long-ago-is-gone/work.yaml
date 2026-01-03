@@ -1,0 +1,17 @@
+id: long-ago-is-gone
+title: Long Ago Is Gone
+artist: Norma Jean
+composers:
+- Glenn Martin, Carl Knight, Charles Pendleton, Abe Rotwein
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longagoisgonelyricschords.pro
+    imported_at: '2026-01-02'

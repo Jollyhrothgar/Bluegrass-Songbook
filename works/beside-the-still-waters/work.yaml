@@ -1,0 +1,17 @@
+id: beside-the-still-waters
+title: Beside The Still Waters
+artist: Mac Wiseman
+composers:
+- Theodore Silva
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: besidethestillwaterslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: all-i-can-handle-at-home
+title: All I Can Handle At Home
+artist: Moe Bandy
+composers:
+- Jim Owen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allicanhandleathomelyricschords.pro
+    imported_at: '2026-01-02'

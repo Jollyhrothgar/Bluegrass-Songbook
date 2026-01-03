@@ -1,0 +1,17 @@
+id: i-m-standing-at-the-end-of-my-world
+title: I'm Standing At The End Of My World
+artist: Hawkshaw Hawkins
+composers:
+- Vic McAlpin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imstandingattheendofmyworldlyricschords.pro
+    imported_at: '2026-01-02'

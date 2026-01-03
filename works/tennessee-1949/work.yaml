@@ -1,0 +1,15 @@
+id: tennessee-1949
+title: Tennessee 1949
+artist: Larry Sparks
+default_key: A
+tags:
+- Bluegrass
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: null
+    imported_at: '2026-01-02'

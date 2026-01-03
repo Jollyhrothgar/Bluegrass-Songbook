@@ -1,0 +1,17 @@
+id: these-arms-of-mine
+title: These Arms Of Mine
+artist: Billy Walker
+composers:
+- Jerry Crutchfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesearmsofminelyricschords.pro
+    imported_at: '2026-01-02'

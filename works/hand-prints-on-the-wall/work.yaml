@@ -1,0 +1,17 @@
+id: hand-prints-on-the-wall
+title: Hand Prints On The Wall
+artist: Kenny Rogers
+composers:
+- Nelson Blanchard, Scott Innes, Claude Parish
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: handprintsonthewalllyricschords.pro
+    imported_at: '2026-01-02'

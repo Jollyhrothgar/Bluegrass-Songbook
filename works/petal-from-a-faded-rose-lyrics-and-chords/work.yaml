@@ -1,0 +1,19 @@
+id: petal-from-a-faded-rose-lyrics-and-chords
+title: Petal From A Faded Rose Lyrics and Chords
+artist: Hank Snow
+composers:
+- Merle Travis and Leon Rusk
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: petalfromafadedroselyricschords.pro
+    imported_at: '2026-01-02'

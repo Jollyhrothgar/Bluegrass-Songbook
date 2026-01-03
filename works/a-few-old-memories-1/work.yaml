@@ -1,0 +1,20 @@
+id: a-few-old-memories-1
+title: A Few Old Memories
+artist: Dolly Parton
+composers:
+- Hazel Dickens
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afewoldmemorieslyricschords.pro
+    imported_at: '2026-01-02'

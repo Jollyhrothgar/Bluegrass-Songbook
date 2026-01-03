@@ -1,0 +1,17 @@
+id: sneaking-out-the-backdoor
+title: Sneaking Out The Backdoor
+artist: Crystal Gayle
+composers:
+- James Valentini and Frank Saulino
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sneakingoutthebackdoorlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-pin-a-note-on-your-pillow
+title: I'll Pin A Note On Your Pillow
+artist: Billy Joe Royal
+composers:
+- Carol W. Berzas, Don Goodman, Nelson Larkin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illpinanoteonyourpillowlyricschords.pro
+    imported_at: '2026-01-02'

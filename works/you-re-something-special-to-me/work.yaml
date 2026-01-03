@@ -1,0 +1,17 @@
+id: you-re-something-special-to-me
+title: You're Something Special To Me
+artist: George Strait
+composers:
+- David Anthony
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youresomethingspecialtomelyricschords.pro
+    imported_at: '2026-01-02'

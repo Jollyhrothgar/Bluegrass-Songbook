@@ -1,0 +1,19 @@
+id: running-scared
+title: Running Scared
+artist: Roy Orbison
+composers:
+- Joe Melson and Roy Orbison
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: runningscaredlyricschords.pro
+    imported_at: '2026-01-02'

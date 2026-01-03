@@ -1,0 +1,17 @@
+id: the-only-girl-i-cant-forget
+title: The Only Girl I Can’t Forget
+artist: Carl Smith
+composers:
+- Del & Ellen Reeves
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theonlygirlicantforgetlyricschords.pro
+    imported_at: '2026-01-02'

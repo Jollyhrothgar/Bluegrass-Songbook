@@ -1,0 +1,19 @@
+id: don-t-toss-us-away-lyrics-and-chords
+title: Don't Toss us Away Lyrics and Chords
+artist: Patty Loveless
+composers:
+- Brian McLelan
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttossusawaylyricsandchords.pro
+    imported_at: '2026-01-02'

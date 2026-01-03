@@ -1,0 +1,17 @@
+id: house-with-no-curtains
+title: House With No Curtains
+artist: Alan Jackson
+composers:
+- Jim McBride and Alan Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: housewithnocurtainslyricschords.pro
+    imported_at: '2026-01-02'

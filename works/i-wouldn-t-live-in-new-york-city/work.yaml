@@ -1,0 +1,13 @@
+id: i-wouldn-t-live-in-new-york-city
+title: I Wouldn't Live In New York City
+artist: Buck Owens
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldntliveinnewyorkcitylyricschords.pro
+    imported_at: '2026-01-02'

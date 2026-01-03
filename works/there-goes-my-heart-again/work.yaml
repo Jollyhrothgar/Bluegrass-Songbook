@@ -1,0 +1,17 @@
+id: there-goes-my-heart-again
+title: There Goes My Heart Again
+artist: Holly Dunn
+composers:
+- William Lon Wilson, Joe Diffie, Darrell Wayne Perry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theregoesmyheartagainlyricschords.pro
+    imported_at: '2026-01-02'

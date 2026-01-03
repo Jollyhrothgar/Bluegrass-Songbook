@@ -1,0 +1,18 @@
+id: old-one-better
+title: Old One Better
+artist: Tracy Byrd
+composers:
+- Mark Nesler and Tony Martin
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldonebetterlyricschords.pro
+    imported_at: '2026-01-02'

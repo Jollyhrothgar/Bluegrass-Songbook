@@ -1,0 +1,18 @@
+id: my-secret-flame
+title: My Secret Flame
+artist: The Mavericks
+composers:
+- Rafe VanHoy
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mysecretflamelyricschords.pro
+    imported_at: '2026-01-02'

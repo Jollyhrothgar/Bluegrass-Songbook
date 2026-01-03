@@ -1,0 +1,17 @@
+id: beyond-the-shadow-of-a-doubt
+title: Beyond The Shadow Of A Doubt
+artist: Jim Reeves
+composers:
+- Ted Daffan and Theda Daffan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beyondtheshadowofadoubtlyricschords.pro
+    imported_at: '2026-01-02'

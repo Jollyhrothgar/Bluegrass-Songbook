@@ -1,0 +1,19 @@
+id: the-best-way-i-know-how
+title: The Best Way I Know How
+artist: Mel Tillis
+composers:
+- Jerry Chestnut
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebestwayiknowhowlyricschords.pro
+    imported_at: '2026-01-02'

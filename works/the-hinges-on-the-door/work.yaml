@@ -1,0 +1,15 @@
+id: the-hinges-on-the-door
+title: The Hinges On The Door
+artist: Connie Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thehingesonthedoorlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: if-you-think-you-re-lonely
+title: If You Think You're Lonely
+artist: Johnny Paycheck
+composers:
+- Linda Buell, Carl Rupp, Larry Johnson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouthinkyourelonelylyricsandchords.pro
+    imported_at: '2026-01-02'

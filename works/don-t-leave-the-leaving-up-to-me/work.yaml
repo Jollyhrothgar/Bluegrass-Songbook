@@ -1,0 +1,17 @@
+id: don-t-leave-the-leaving-up-to-me
+title: Don't Leave The Leaving Up To Me
+artist: Leona Williams
+composers:
+- Justin Trevino and Levi Mullen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontleavetheleavinguptomelyricschords.pro
+    imported_at: '2026-01-02'

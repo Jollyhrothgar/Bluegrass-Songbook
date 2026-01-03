@@ -1,0 +1,17 @@
+id: i-heard-from-a-memory-last-night
+title: I Heard From A Memory Last Night
+artist: Jim Ed Brown
+composers:
+- Ralph Freed and Jerry Livingston
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iheardfromamemorylastnightlyricschords.pro
+    imported_at: '2026-01-02'

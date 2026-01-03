@@ -1,0 +1,17 @@
+id: houston-again
+title: Houston Again
+artist: David Ball
+composers:
+- Russell Brown and David Ball
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: houstonagainlyricschords.pro
+    imported_at: '2026-01-02'

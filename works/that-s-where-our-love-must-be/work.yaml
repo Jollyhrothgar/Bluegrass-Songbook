@@ -1,0 +1,15 @@
+id: that-s-where-our-love-must-be
+title: That's Where Our Love Must Be
+artist: Dottie West
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhereourlovemustbelyricschords.pro
+    imported_at: '2026-01-02'

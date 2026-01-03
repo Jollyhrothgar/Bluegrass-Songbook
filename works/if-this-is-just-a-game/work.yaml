@@ -1,0 +1,18 @@
+id: if-this-is-just-a-game
+title: If This Is Just A Game
+artist: David Allan Coe
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifthisisjustagamelyricschords.pro
+    imported_at: '2026-01-02'

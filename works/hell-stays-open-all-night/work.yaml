@@ -1,0 +1,17 @@
+id: hell-stays-open-all-night
+title: Hell Stays Open All Night
+artist: George Jones
+composers:
+- Bobby L. Harden
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hellstaysopenallnightlyricschords.pro
+    imported_at: '2026-01-02'

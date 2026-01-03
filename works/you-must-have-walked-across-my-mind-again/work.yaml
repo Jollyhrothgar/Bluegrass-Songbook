@@ -1,0 +1,17 @@
+id: you-must-have-walked-across-my-mind-again
+title: You Must Have Walked Across My Mind Again
+artist: George Jones
+composers:
+- W. Kemp and W. Robb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmusthavewalkedacrossmymindagainlyricschords.pro
+    imported_at: '2026-01-02'

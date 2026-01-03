@@ -1,0 +1,15 @@
+id: no-meaning-and-no-end
+title: No Meaning And No End
+artist: Hank Williams Jr.
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nomeaningandnoendlyricschords.pro
+    imported_at: '2026-01-02'

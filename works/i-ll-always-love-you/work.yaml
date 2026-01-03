@@ -1,0 +1,15 @@
+id: i-ll-always-love-you
+title: I'll Always Love You
+artist: Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illalwaysloveyoulyricschords.pro
+    imported_at: '2026-01-02'

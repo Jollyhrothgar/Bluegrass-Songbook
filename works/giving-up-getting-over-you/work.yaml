@@ -1,0 +1,19 @@
+id: giving-up-getting-over-you
+title: Giving Up Getting Over You
+artist: Mickey Gilley
+composers:
+- Gary Nicholson, Chick Rains, Robb Strandlund
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givingupgettingoveryoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,13 @@
+id: man-in-the-moon
+title: Man In The Moon
+artist: Prairie Oyster
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maninthemoonlyricschords.pro
+    imported_at: '2026-01-02'

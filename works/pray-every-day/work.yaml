@@ -1,0 +1,17 @@
+id: pray-every-day
+title: Pray Every Day
+artist: Buck Owens
+composers:
+- Buck Owens and Red Simpson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prayeverydaylyricschords.pro
+    imported_at: '2026-01-02'

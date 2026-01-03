@@ -1,0 +1,17 @@
+id: no-one-but-you-1
+title: No One But You
+artist: Ray Price
+composers:
+- Max D. Barnes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noonebutyoulyricschords.pro
+    imported_at: '2026-01-02'

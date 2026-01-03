@@ -1,0 +1,17 @@
+id: jesus-is-living-in-me
+title: Jesus Is Living In Me
+artist: The Easter Brothers
+composers:
+- Franklin, James, Jeff, Russell and Sheri Easter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusislivinginmelyricschords.pro
+    imported_at: '2026-01-02'

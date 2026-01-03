@@ -1,0 +1,17 @@
+id: the-last-time-i-called-somebody-darlin
+title: The Last Time I Called Somebody Darlin'
+artist: Roy Drusky
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelasttimeicalledsomebodydarlinlyricschords.pro
+    imported_at: '2026-01-02'

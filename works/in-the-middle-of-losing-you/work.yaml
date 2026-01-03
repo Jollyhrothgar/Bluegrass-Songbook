@@ -1,0 +1,17 @@
+id: in-the-middle-of-losing-you
+title: In The Middle Of Losing You
+artist: Moe Bandy
+composers:
+- Glenn Martin and Terry Henry
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthemiddleoflosingyoulyricschords.pro
+    imported_at: '2026-01-02'

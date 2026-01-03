@@ -1,0 +1,19 @@
+id: let-s-jump-the-broomstick
+title: Let's Jump The Broomstick
+artist: Brenda Lee
+composers:
+- Charles Robbins
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsjumpthebroomsticklyricschords.pro
+    imported_at: '2026-01-02'

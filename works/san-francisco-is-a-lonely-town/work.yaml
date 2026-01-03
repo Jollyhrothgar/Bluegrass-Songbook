@@ -1,0 +1,18 @@
+id: san-francisco-is-a-lonely-town
+title: San Francisco Is A Lonely Town
+artist: Charlie Rich
+composers:
+- Ben Peters
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sanfranciscoisalonelytownlyricschords.pro
+    imported_at: '2026-01-02'

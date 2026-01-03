@@ -1,0 +1,15 @@
+id: telling-my-troubles-to-my-old-guitar
+title: Telling My Troubles To My Old Guitar
+artist: Jimmy Wakely
+default_key: D
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellingmytroublestomyoldguitarlyricschords.pro
+    imported_at: '2026-01-02'

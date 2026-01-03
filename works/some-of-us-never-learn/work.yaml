@@ -1,0 +1,16 @@
+id: some-of-us-never-learn
+title: Some Of Us Never Learn
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someofusneverlearnlyricschords.pro
+    imported_at: '2026-01-02'

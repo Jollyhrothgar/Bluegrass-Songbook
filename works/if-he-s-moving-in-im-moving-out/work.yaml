@@ -1,0 +1,17 @@
+id: if-he-s-moving-in-im-moving-out
+title: If He's Moving In I’m Moving Out
+artist: Bob Wills
+composers:
+- Bob Wills and Bobby Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifhesmovinginimmovingoutlyricschords.pro
+    imported_at: '2026-01-02'

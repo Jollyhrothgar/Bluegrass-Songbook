@@ -1,0 +1,17 @@
+id: can-i-draw-the-line
+title: Can I Draw The Line
+artist: Carl Butler
+composers:
+- Carl Butler and Mildred Burk
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canidrawthelinelyricschords.pro
+    imported_at: '2026-01-02'

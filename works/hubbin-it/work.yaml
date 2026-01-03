@@ -1,0 +1,17 @@
+id: hubbin-it
+title: Hubbin' It
+artist: Bob Wills
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hubbinitlyricschords.pro
+    imported_at: '2026-01-02'

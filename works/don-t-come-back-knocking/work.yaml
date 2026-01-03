@@ -1,0 +1,18 @@
+id: don-t-come-back-knocking
+title: Don't Come Back Knocking
+artist: Buddy Holly
+composers:
+- Buddy Holly and Sue Parrish
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontcomebackknockinglyricschords.pro
+    imported_at: '2026-01-02'

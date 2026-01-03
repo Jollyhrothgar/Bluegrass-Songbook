@@ -1,0 +1,18 @@
+id: ten-degrees-and-getting-colder
+title: Ten Degrees And Getting Colder
+artist: J.D. Crowe
+composers:
+- Gordon Lightfoot
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tendegreesandgettingcolderlyricschords.pro
+    imported_at: '2026-01-02'

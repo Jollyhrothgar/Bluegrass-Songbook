@@ -1,0 +1,17 @@
+id: between-each-tear
+title: Between Each Tear
+artist: Connie Smith
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betweeneachtearlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-ve-got-the-heart-for-you
+title: I've Got The Heart For You
+artist: Keith Whitley
+composers:
+- Larry Boone and John Greenebaum
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegottheheartforyoulyricschords.pro
+    imported_at: '2026-01-02'

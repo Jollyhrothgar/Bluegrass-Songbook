@@ -1,0 +1,15 @@
+id: a-thing-called-love
+title: A Thing Called Love
+artist: Jimmy Dean
+composers:
+- Jerry Reed Hubbard
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: athingcalledlovelyricschords.pro
+    imported_at: '2026-01-02'

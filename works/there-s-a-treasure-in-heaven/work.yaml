@@ -1,0 +1,17 @@
+id: there-s-a-treasure-in-heaven
+title: There's A Treasure In Heaven
+artist: Doyle Lawson
+composers:
+- Jerry Salley and Leroy Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresatreasureinheavenlyricschords.pro
+    imported_at: '2026-01-02'

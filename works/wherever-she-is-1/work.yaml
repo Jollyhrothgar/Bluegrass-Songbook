@@ -1,0 +1,17 @@
+id: wherever-she-is-1
+title: Wherever She Is
+artist: Bill Anderson
+composers:
+- Bill Anderson, Jim Martin, Bobby Tomberlin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whereversheislyricschords.pro
+    imported_at: '2026-01-02'

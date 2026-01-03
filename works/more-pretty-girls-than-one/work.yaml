@@ -1,0 +1,19 @@
+id: more-pretty-girls-than-one
+title: More Pretty Girls Than One
+artist: Ricky Skaggs
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moreprettygirlsthanonelyricschords.pro
+    imported_at: '2026-01-02'

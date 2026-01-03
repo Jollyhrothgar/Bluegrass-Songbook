@@ -1,0 +1,15 @@
+id: all-in-one-night
+title: All In One Night
+artist: Johnny Duncan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allinonenightlyricschords.pro
+    imported_at: '2026-01-02'

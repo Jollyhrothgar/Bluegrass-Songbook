@@ -1,0 +1,21 @@
+id: find-out-what-s-happening
+title: Find Out What's Happening
+artist: Elvis Presley
+composers:
+- Jerry Crutchfield
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: findoutwhatshappeninglyricschords.pro
+    imported_at: '2026-01-02'

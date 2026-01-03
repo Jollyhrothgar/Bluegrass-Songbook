@@ -1,0 +1,17 @@
+id: i-ll-warm-by-the-flame
+title: I'll Warm By The Flame
+artist: Johnny Bush
+composers:
+- Buzz Rabin and James Johnson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illwarmbytheflamelyricschords.pro
+    imported_at: '2026-01-02'

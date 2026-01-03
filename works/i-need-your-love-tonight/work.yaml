@@ -1,0 +1,21 @@
+id: i-need-your-love-tonight
+title: I need your love Tonight
+artist: Elvis Presley
+composers:
+- Sid Wayne and Bix Reichner
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineedyourlovetonightlyricschords.pro
+    imported_at: '2026-01-02'

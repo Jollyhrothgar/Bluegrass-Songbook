@@ -1,0 +1,19 @@
+id: steppin-out-1
+title: Steppin' Out
+artist: Ernest Tubb
+composers:
+- Billy Starr
+default_key: D
+tags:
+- ClassicCountry
+- HonkyTonk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: steppinoutlyricschords.pro
+    imported_at: '2026-01-02'

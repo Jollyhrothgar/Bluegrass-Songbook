@@ -1,0 +1,17 @@
+id: how-can-i-believe-in-you-when-you-ll-be-leaving-me
+title: How Can I Believe In You When You'll Be Leaving Me
+artist: Vern Gosdin
+composers:
+- Buddy Cannon and Vern Gosdin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcanibelieveinyouwhenyoullbeleavingmelyricschords.pro
+    imported_at: '2026-01-02'

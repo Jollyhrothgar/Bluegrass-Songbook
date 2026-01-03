@@ -1,0 +1,17 @@
+id: shenandoah-waltz
+title: Shenandoah Waltz
+artist: Hank Thompson
+composers:
+- Chubby Wise [3/4 time]
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shenandoahwaltzlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: you-lay-so-easy-on-my-mind
+title: You Lay So Easy On My Mind
+artist: Conway Twitty
+composers:
+- Bobby G. Rice, Charles Fields, Donald L. Riis
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youlaysoeasyonmymindlyricschords.pro
+    imported_at: '2026-01-02'

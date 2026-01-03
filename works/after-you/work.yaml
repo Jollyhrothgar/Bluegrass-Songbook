@@ -1,0 +1,15 @@
+id: after-you
+title: After You
+artist: Hank Williams Jr.
+composers:
+- Jerry Chesnut
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afteryoulyricschords.pro
+    imported_at: '2026-01-02'

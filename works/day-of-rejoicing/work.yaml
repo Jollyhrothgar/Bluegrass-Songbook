@@ -1,0 +1,17 @@
+id: day-of-rejoicing
+title: Day Of Rejoicing
+artist: The Oak Ridge Boys
+composers:
+- Henkle Little and Powell Sager
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dayofrejoicinglyricschords.pro
+    imported_at: '2026-01-02'

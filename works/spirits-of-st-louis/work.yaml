@@ -1,0 +1,17 @@
+id: spirits-of-st-louis
+title: Spirits Of St. Louis
+artist: Johnny Paycheck
+composers:
+- Roger Bowling and Robert Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: spiritsofstlouislyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-wish-i-was-a-mole-in-the-ground
+title: I Wish I Was A Mole In The Ground
+artist: Doc Watson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishiwasamoleinthegroundlyricschords.pro
+    imported_at: '2026-01-02'

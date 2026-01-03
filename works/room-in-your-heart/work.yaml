@@ -1,0 +1,15 @@
+id: room-in-your-heart
+title: Room In Your Heart
+artist: Sonny James
+composers:
+- Frances Long and Sonny James
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: roominyourheartlyricschords.pro
+    imported_at: '2026-01-02'

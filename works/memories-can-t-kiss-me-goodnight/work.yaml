@@ -1,0 +1,17 @@
+id: memories-can-t-kiss-me-goodnight
+title: Memories Can't Kiss Me Goodnight
+artist: Billy Walker
+composers:
+- Jess Hudson and Mary Ann Meier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: memoriescantkissmegoodnightlyricschords.pro
+    imported_at: '2026-01-02'

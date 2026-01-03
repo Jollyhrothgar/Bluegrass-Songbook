@@ -1,0 +1,15 @@
+id: down-to-my-last-goodbye
+title: Down To My Last Goodbye
+artist: Sonny James
+composers:
+- Ronnie Dwaine Reynolds
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downtomylastgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

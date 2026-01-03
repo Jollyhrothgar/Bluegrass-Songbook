@@ -1,0 +1,15 @@
+id: preach-the-gospel
+title: Preach The Gospel
+artist: Cowboy Copas
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: preachthegospellyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-can-count-on-you
+title: I Can Count On You
+artist: The Oak Ridge Boys
+composers:
+- Roger Murrah and Randle E. Van Warmer
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icancountonyoulyricschords.pro
+    imported_at: '2026-01-02'

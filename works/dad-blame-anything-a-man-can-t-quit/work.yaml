@@ -1,0 +1,15 @@
+id: dad-blame-anything-a-man-can-t-quit
+title: Dad Blame Anything A Man Can't Quit
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dadblameanythingamancantquitlyricschords.pro
+    imported_at: '2026-01-02'

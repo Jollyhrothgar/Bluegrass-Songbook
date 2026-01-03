@@ -1,0 +1,17 @@
+id: wild-mountain-flowers-for-mary
+title: Wild Mountain Flowers For Mary
+artist: Lost and Found
+composers:
+- Allen Mills
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wildmountainflowersformarylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: we-got-love
+title: We Got Love
+artist: David Houston
+composers:
+- Gene Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wegotlovelyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: c-h-r-i-s-t-m-a-s
+title: C-H-R-I-S-T-M-A-S
+artist: Slim Whitman
+composers:
+- Scott Turner and Slim Whitman
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: C-H-R-I-S-T-M-A-Slyricsandchords.pro
+    imported_at: '2026-01-02'

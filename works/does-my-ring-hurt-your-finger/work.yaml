@@ -1,0 +1,17 @@
+id: does-my-ring-hurt-your-finger
+title: Does My Ring Hurt Your Finger
+artist: Charlie Pride
+composers:
+- Jack Clement, Jan Crutchfield, Don Robertson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doesmyringhurtyourfingerlyricschords.pro
+    imported_at: '2026-01-02'

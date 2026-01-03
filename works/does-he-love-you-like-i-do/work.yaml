@@ -1,0 +1,17 @@
+id: does-he-love-you-like-i-do
+title: Does He Love You Like I Do
+artist: Wynn Stewart
+composers:
+- Charlie Williams and Scott Turner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doesheloveyoulikeidolyricschords.pro
+    imported_at: '2026-01-02'

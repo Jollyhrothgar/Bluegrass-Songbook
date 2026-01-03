@@ -1,0 +1,17 @@
+id: i-m-so-miserable-without-you
+title: I'm So Miserable Without You
+artist: Billy Walker
+composers:
+- Eugene Strasser and George Winters
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsomiserablewithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

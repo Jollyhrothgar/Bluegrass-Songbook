@@ -1,0 +1,17 @@
+id: where-the-blue-and-lonely-go
+title: Where The Blue And Lonely Go
+artist: Roy Drusky
+composers:
+- Jimmy Warren, Alvaro Verissimo,
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheretheblueandlonelygolyricschords.pro
+    imported_at: '2026-01-02'

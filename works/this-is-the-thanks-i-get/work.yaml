@@ -1,0 +1,17 @@
+id: this-is-the-thanks-i-get
+title: This Is The Thanks I Get
+artist: Eddy Arnold
+composers:
+- Tommy Dilbeck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisisthethanksigetlyricschords.pro
+    imported_at: '2026-01-02'

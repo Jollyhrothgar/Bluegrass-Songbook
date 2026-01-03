@@ -1,0 +1,17 @@
+id: high-steel-and-memories
+title: High Steel And Memories
+artist: Keith Whitley
+composers:
+- Robb Warren and Shafer Sanger
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highsteelandmemorieslyricschords.pro
+    imported_at: '2026-01-02'

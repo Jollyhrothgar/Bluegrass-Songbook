@@ -1,0 +1,15 @@
+id: i-d-be-the-first-to-fall-in-love-again
+title: I'd Be The First To Fall In Love Again
+artist: Johnny Rodriguez
+composers:
+- Jim Hurt and Bill Boling
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idbefirsttofallinloveagainlyricschords.pro
+    imported_at: '2026-01-02'

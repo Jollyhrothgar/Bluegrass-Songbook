@@ -1,0 +1,17 @@
+id: time-s-a-gettin-hard-lyrics-and-chords
+title: Time's A Gettin' Hard Lyrics and Chords
+artist: Eddy Arnold
+composers:
+- Red Hayes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timesagettinhardlyricschords.pro
+    imported_at: '2026-01-02'

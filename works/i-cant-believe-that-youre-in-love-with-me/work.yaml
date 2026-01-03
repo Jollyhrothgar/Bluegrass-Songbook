@@ -1,0 +1,15 @@
+id: i-cant-believe-that-youre-in-love-with-me
+title: I Can’t Believe That You’re In Love With Me
+artist: Faron Young
+composers:
+- Jimmy McHugh and Clarence Gaskill
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantbelievethatyoureinlovewithmelyricschords.pro
+    imported_at: '2026-01-02'

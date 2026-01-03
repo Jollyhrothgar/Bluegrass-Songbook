@@ -1,0 +1,15 @@
+id: make-me-wonderful-in-her-eyes
+title: Make Me Wonderful In Her Eyes
+artist: Jim Reeves
+composers:
+- Leona R. Butrum, Nellie Smith, Jim Reeves
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makemewonderfulinhereyeslyricschords.pro
+    imported_at: '2026-01-02'

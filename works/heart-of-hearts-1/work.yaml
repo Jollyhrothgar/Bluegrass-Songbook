@@ -1,0 +1,18 @@
+id: heart-of-hearts-1
+title: Heart Of Hearts
+artist: Randy Travis
+composers:
+- Kevin Welch and Mike Henderson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartofheartslyricschords.pro
+    imported_at: '2026-01-02'

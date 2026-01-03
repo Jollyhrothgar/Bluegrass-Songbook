@@ -1,0 +1,20 @@
+id: if-i-could-only-stay-asleep
+title: If I Could Only Stay Asleep
+artist: Patsy Cline
+composers:
+- Ethel Bassey and Wayland Chandler
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldonlystayasleeplyricschords.pro
+    imported_at: '2026-01-02'

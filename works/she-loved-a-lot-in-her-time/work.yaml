@@ -1,0 +1,17 @@
+id: she-loved-a-lot-in-her-time
+title: She Loved A Lot In Her Time
+artist: George Jones
+composers:
+- Randy Boudreaux, Sam Hogin, Kim Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shelovedalotinhertimelyricschords.pro
+    imported_at: '2026-01-02'

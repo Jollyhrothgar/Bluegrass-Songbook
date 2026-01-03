@@ -1,0 +1,17 @@
+id: i-m-completely-satisfied-with-you
+title: I'm Completely Satisfied With You
+artist: George Morgan
+composers:
+- Betty Jean Robinson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imcompletelysatisfiedwithyoulyricschords.pro
+    imported_at: '2026-01-02'

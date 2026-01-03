@@ -1,0 +1,19 @@
+id: break-my-mind
+title: Break My Mind
+artist: Roy Orbison
+composers:
+- John D. Loudermilk
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: breakmymindlyricschords.pro
+    imported_at: '2026-01-02'

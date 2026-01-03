@@ -1,0 +1,22 @@
+id: i-ll-fly-away
+title: I'll Fly Away
+artist: Johnny Cash
+composers:
+- Albert E. Brumley
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illflyawaylyricschords.pro
+    imported_at: '2026-01-02'

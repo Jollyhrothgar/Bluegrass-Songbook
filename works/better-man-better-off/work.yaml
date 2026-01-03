@@ -1,0 +1,18 @@
+id: better-man-better-off
+title: Better Man Better Off
+artist: Tracy Lawrence
+composers:
+- Brett Jones and Stan Davis
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bettermanbetterofflyricschords.pro
+    imported_at: '2026-01-02'

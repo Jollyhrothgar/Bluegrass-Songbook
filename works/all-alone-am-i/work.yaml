@@ -1,0 +1,19 @@
+id: all-alone-am-i
+title: All Alone Am I
+artist: Brenda Lee
+composers:
+- Arthur Altman, Manos Hadjidakis, Ioann Idis
+default_key: Am
+tags:
+- Pop
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allaloneamilyricschords.pro
+    imported_at: '2026-01-02'

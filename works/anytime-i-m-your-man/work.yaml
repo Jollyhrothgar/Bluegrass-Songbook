@@ -1,0 +1,15 @@
+id: anytime-i-m-your-man
+title: Anytime I'm Your Man
+artist: Alabama
+composers:
+- Randy Owen, Teddy Gentry, Greg Fowler, Ronnie Rogers
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anytimeimyourmanlyricschords.pro
+    imported_at: '2026-01-02'

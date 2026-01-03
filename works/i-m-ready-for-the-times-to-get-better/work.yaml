@@ -1,0 +1,18 @@
+id: i-m-ready-for-the-times-to-get-better
+title: I'm Ready For The Times To Get Better
+artist: Crystal Gayle
+composers:
+- Allen Reynolds
+default_key: Am
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imreadyforthetimestogetbetterlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: the-coast-is-clear
+title: The Coast Is Clear
+artist: Tracy Lawrence
+composers:
+- Brett Jones and Jess Brown
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thecoastisclearlyricschords.pro
+    imported_at: '2026-01-02'

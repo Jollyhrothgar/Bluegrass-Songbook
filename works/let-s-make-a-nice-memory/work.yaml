@@ -1,0 +1,15 @@
+id: let-s-make-a-nice-memory
+title: Let's Make A Nice Memory
+artist: Ray Price
+composers:
+- Jerry Fuller
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsmakeanicememorylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: it-all-depends-on-linda
+title: It All Depends On Linda
+artist: Bobby Bare
+composers:
+- Bobby Bare and Charlie Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: italldependsonlindalyricschords.pro
+    imported_at: '2026-01-02'

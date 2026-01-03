@@ -1,0 +1,17 @@
+id: i-leaned-over-backwards-for-you
+title: I Leaned Over Backwards For You
+artist: Little Jimmy Dickens
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ileanedoverbackwardsforyoulyricschords.pro
+    imported_at: '2026-01-02'

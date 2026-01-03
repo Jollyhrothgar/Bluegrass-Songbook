@@ -1,0 +1,19 @@
+id: forgive
+title: Forgive
+artist: Mickey Gilley
+composers:
+- R. Bernauer, L. Jacobson, O. Straus, S. Stange
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forgivelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: true-love-lasts-forever
+title: True Love Lasts Forever
+artist: Sonny James
+composers:
+- Carole Smith and Edgar Clayton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: truelovelastsforeverlyricschords.pro
+    imported_at: '2026-01-02'

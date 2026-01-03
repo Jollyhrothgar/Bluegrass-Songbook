@@ -1,0 +1,19 @@
+id: my-only-strange-love
+title: My Only Strange Love
+artist: Mel Tillis
+composers:
+- Jerry House
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myonlystrangelovelyricschords.pro
+    imported_at: '2026-01-02'

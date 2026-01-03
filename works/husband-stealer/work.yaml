@@ -1,0 +1,17 @@
+id: husband-stealer
+title: Husband Stealer
+artist: Barbara Mandrell
+composers:
+- Gary S. Paxton and Steve Paxton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: husbandstealerlyricschords.pro
+    imported_at: '2026-01-02'

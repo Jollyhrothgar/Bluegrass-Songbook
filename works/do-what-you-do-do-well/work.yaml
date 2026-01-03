@@ -1,0 +1,17 @@
+id: do-what-you-do-do-well
+title: Do What You Do Do Well
+artist: Sonny James
+composers:
+- Ned Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dowhatyoudodowelllyricschords.pro
+    imported_at: '2026-01-02'

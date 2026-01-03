@@ -1,0 +1,18 @@
+id: the-heart-of-worship
+title: The Heart of Worship
+artist: Randy Travis
+composers:
+- Matt Redman
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theheartofworshiplyricschords.pro
+    imported_at: '2026-01-02'

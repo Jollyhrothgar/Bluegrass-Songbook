@@ -1,0 +1,17 @@
+id: here-today-here-tomorrow
+title: Here Today Here Tomorrow
+artist: Leroy Van Dyke
+composers:
+- Kent Blazy and Jim Dowell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heretodayheretomorrowlyricschords.pro
+    imported_at: '2026-01-02'

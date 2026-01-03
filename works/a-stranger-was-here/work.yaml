@@ -1,0 +1,17 @@
+id: a-stranger-was-here
+title: A Stranger Was Here
+artist: Darrell McCall
+composers:
+- Bob Forshee
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: astrangerwasherelyricschords.pro
+    imported_at: '2026-01-02'

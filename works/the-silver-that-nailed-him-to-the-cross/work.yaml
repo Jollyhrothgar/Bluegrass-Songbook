@@ -1,0 +1,17 @@
+id: the-silver-that-nailed-him-to-the-cross
+title: The Silver That Nailed Him To The Cross
+artist: Cowboy Copas
+composers:
+- Floyd Wilson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesilverthatnailedhimtothecrosslyricschords.pro
+    imported_at: '2026-01-02'

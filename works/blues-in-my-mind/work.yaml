@@ -1,0 +1,19 @@
+id: blues-in-my-mind
+title: Blues In My Mind
+artist: Roy Orbison
+composers:
+- Fred Rose
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluesinmymindlyricschords.pro
+    imported_at: '2026-01-02'

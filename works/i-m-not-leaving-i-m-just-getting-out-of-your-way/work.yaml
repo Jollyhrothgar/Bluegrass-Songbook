@@ -1,0 +1,15 @@
+id: i-m-not-leaving-i-m-just-getting-out-of-your-way
+title: I'm Not Leaving (I'm Just Getting Out of Your Way)
+artist: Ray Price
+composers:
+- Hank Cochran, Royce Donald Porter, Dean Rutherford
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotleavingimjustgettingoutofyourwaylyricschords.pro
+    imported_at: '2026-01-02'

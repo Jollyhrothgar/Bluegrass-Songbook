@@ -1,0 +1,18 @@
+id: you-can-t-break-a-heart
+title: You Can't Break A Heart
+artist: Bob Wills
+composers:
+- Bob Wills and Joe Andrews
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantbreakaheartlyricschords.pro
+    imported_at: '2026-01-02'

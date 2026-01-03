@@ -1,0 +1,17 @@
+id: highway-of-regret
+title: Highway Of Regret
+artist: Stanley Brothers
+composers:
+- Don Anthony and Ralph Stanley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highwayofregretlyricschords.pro
+    imported_at: '2026-01-02'

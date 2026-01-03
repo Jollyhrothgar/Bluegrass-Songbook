@@ -1,0 +1,17 @@
+id: without-you-in-my-life
+title: Without You In My Life
+artist: Kenny Rogers
+composers:
+- Lionel Richie and Thomas McClary
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withoutyouinmylifelyricschords.pro
+    imported_at: '2026-01-02'

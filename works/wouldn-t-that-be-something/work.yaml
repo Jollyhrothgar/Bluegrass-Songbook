@@ -1,0 +1,17 @@
+id: wouldn-t-that-be-something
+title: Wouldn't That Be Something
+artist: Merle Haggard
+composers:
+- Merle Haggard and Freddy Powers
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wouldntthatbesomethinglyricschords.pro
+    imported_at: '2026-01-02'

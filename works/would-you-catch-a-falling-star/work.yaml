@@ -1,0 +1,17 @@
+id: would-you-catch-a-falling-star
+title: Would You Catch A Falling Star
+artist: John Anderson
+composers:
+- Bobby Braddock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wouldyoucatchafallingstarlyricschords.pro
+    imported_at: '2026-01-02'

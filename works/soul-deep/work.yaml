@@ -1,0 +1,17 @@
+id: soul-deep
+title: Soul Deep
+artist: Eddy Arnold
+composers:
+- Wayne C. Thompson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: souldeeplyricschords.pro
+    imported_at: '2026-01-02'

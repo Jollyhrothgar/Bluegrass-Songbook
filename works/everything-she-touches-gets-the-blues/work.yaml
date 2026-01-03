@@ -1,0 +1,17 @@
+id: everything-she-touches-gets-the-blues
+title: Everything She Touches Gets The Blues
+artist: Porter Wagoner
+composers:
+- Whitney Bower and Eugene Kinsey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingshetouchesgetstheblueslyricschords.pro
+    imported_at: '2026-01-02'

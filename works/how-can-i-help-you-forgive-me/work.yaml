@@ -1,0 +1,17 @@
+id: how-can-i-help-you-forgive-me
+title: How Can I (Help You Forgive Me)
+artist: Dolly Parton and Porter Wagoner
+composers:
+- Porter Wagoner and Tom Pick
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcanihelpyouforgivemelyricschords.pro
+    imported_at: '2026-01-02'

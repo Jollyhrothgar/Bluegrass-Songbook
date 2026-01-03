@@ -1,0 +1,17 @@
+id: pull-my-string-and-wind-me-up
+title: Pull My String and Wind Me Up
+artist: Carl Smith
+composers:
+- Jim White
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pullmystringandwindmeuplyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: home-away-from-home
+title: Home Away From Home
+artist: Jerry Lee Lewis
+composers:
+- Jerry Chesnut
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: homeawayfromhomelyricschords.pro
+    imported_at: '2026-01-02'

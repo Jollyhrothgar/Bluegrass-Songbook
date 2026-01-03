@@ -1,0 +1,17 @@
+id: it-could-have-been-so-good
+title: It Could Have Been So Good
+artist: Tammy Wynette
+composers:
+- Chris Waters and Lonnie Wilson
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itcouldhavebeensogoodlyricschords.pro
+    imported_at: '2026-01-02'

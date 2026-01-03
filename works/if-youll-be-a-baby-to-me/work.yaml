@@ -1,0 +1,19 @@
+id: if-youll-be-a-baby-to-me
+title: If You’ll Be A Baby To Me
+artist: Hank Williams
+composers:
+- Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoullbeababytomelyricschords.pro
+    imported_at: '2026-01-02'

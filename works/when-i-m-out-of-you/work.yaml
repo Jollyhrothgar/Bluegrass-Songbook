@@ -1,0 +1,18 @@
+id: when-i-m-out-of-you
+title: When I'm Out Of You
+artist: John Conlee
+composers:
+- Sanger D. Shafer and Sonny Throckmorton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenimoutofyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: margie
+title: Margie
+artist: Fats Domino
+composers:
+- Benny Davis, Don Conrad, Russell
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: margielyricschords.pro
+    imported_at: '2026-01-02'

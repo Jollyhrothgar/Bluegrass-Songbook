@@ -1,0 +1,20 @@
+id: my-only-claim-to-fame
+title: My Only Claim To Fame
+artist: Jerry Lee Lewis
+composers:
+- Glenn Sutton
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myonlyclaimtofamelyricschords.pro
+    imported_at: '2026-01-02'

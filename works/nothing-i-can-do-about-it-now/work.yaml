@@ -1,0 +1,20 @@
+id: nothing-i-can-do-about-it-now
+title: Nothing I Can Do About It Now
+artist: Willie Nelson
+composers:
+- Beth Nielsen Chapman
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothingicandoaboutitnowlyricschords.pro
+    imported_at: '2026-01-02'

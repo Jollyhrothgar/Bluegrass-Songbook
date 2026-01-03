@@ -1,0 +1,16 @@
+id: don-t-lie-to-me
+title: Don't Lie To Me
+artist: Fats Domino
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontlietomelyricschords.pro
+    imported_at: '2026-01-02'

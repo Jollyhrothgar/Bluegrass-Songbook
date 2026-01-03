@@ -1,0 +1,17 @@
+id: a-heartache-for-a-keepsake
+title: A Heartache for a Keepsake
+artist: Faron Young
+composers:
+- Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aheartacheforakeepsakelyricschords.pro
+    imported_at: '2026-01-02'

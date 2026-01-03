@@ -1,0 +1,17 @@
+id: three-men-on-a-mountain
+title: Three Men On A Mountain
+artist: The Perrys
+composers:
+- Wayne Haun and Joel Lindsey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threemenonamountainlyricsandchords.pro
+    imported_at: '2026-01-02'

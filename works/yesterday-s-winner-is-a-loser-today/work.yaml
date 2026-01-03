@@ -1,0 +1,19 @@
+id: yesterday-s-winner-is-a-loser-today
+title: Yesterday's Winner Is A Loser Today
+artist: Ernest Tubb
+composers:
+- Ernest Tubb, Jesse O. Rogers, Jimmie Skinner
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesterdayswinnerisalosertodaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,22 @@
+id: ancient-history-1
+title: Ancient History
+artist: Johnny Cash
+composers:
+- Wayne P. Walker and Irene Stanton
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ancienthistorylyricschords.pro
+    imported_at: '2026-01-02'

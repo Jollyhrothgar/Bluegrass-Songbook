@@ -1,0 +1,19 @@
+id: till-my-get-up-has-got-up-and-gone
+title: Till My Get up Has Got Up and Gone
+artist: Ernest Tubb
+composers:
+- Bud Logan and Charles Snoddy
+default_key: D
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillmygetuphasgotupandgonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: he-never-got-the-picture
+title: He Never Got The Picture
+artist: George Jones
+composers:
+- Allan Phillips and Bobby Reed
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: henevergotthepicturelyricschords.pro
+    imported_at: '2026-01-02'

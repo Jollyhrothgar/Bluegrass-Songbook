@@ -1,0 +1,17 @@
+id: the-other-side-of-life
+title: The Other Side Of Life
+artist: Vern Gosdin
+composers:
+- Alan O’Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theothersideoflifelyricschords.pro
+    imported_at: '2026-01-02'

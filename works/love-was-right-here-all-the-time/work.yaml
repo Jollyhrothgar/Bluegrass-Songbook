@@ -1,0 +1,19 @@
+id: love-was-right-here-all-the-time
+title: Love Was Right Here All The Time
+artist: Loretta Lynn
+composers:
+- Billy Henson and Charles Snoddy
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovewasrighthereallthetimelyricschords.pro
+    imported_at: '2026-01-02'

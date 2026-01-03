@@ -1,0 +1,17 @@
+id: foreign-love
+title: Foreign Love
+artist: Webb Pierce
+composers:
+- Lawton Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foreignlovelyricsandchords.pro
+    imported_at: '2026-01-02'

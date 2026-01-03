@@ -1,0 +1,19 @@
+id: here-comes-the-hurt-again
+title: Here Comes The Hurt Again
+artist: Mickey Gilley
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: herecomesthehurtagainlyricschords.pro
+    imported_at: '2026-01-02'

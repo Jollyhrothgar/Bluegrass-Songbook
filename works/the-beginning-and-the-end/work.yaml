@@ -1,0 +1,15 @@
+id: the-beginning-and-the-end
+title: The Beginning And The End
+artist: Cowboy Copas
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebeginningandtheendlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: a-new-way-to-say-i-love-you
+title: A New Way to Say I Love You
+artist: Crystal Gayle
+composers:
+- Michael Masser and Gerald Goffin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anewwaytosayiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

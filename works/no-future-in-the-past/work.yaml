@@ -1,0 +1,20 @@
+id: no-future-in-the-past
+title: No Future In The Past
+artist: Vince Gill
+composers:
+- Carl Jackson and Vince Gill
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nofutureinthepastlyricschords.pro
+    imported_at: '2026-01-02'

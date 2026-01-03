@@ -1,0 +1,18 @@
+id: almost-there
+title: Almost There
+artist: Brenda Lee
+composers:
+- Gloria Shayne and Jerry Keller
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: almosttherelyricschords.pro
+    imported_at: '2026-01-02'

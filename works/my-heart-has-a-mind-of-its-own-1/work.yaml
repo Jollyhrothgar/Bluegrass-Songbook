@@ -1,0 +1,16 @@
+id: my-heart-has-a-mind-of-its-own-1
+title: My Heart Has a Mind of Its Own
+artist: Connie Francis
+default_key: C
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myhearthasamindofitsownlyricschords.pro
+    imported_at: '2026-01-02'

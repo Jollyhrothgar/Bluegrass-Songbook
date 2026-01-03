@@ -1,0 +1,17 @@
+id: heartaches-have-just-started
+title: Heartaches Have Just Started
+artist: Buck Owens
+composers:
+- Buck Owens and Don Rich
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartacheshavejuststartedlyricschords.pro
+    imported_at: '2026-01-02'

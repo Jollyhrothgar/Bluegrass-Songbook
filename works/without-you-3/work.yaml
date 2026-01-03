@@ -1,0 +1,17 @@
+id: without-you-3
+title: Without You
+artist: Tony Booth
+composers:
+- Buck Owens and Gene Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withoutyoulyricswithchords.pro
+    imported_at: '2026-01-02'

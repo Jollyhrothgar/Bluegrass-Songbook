@@ -1,0 +1,15 @@
+id: let-me-remember
+title: Let Me Remember
+artist: Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmerememberlyricschords.pro
+    imported_at: '2026-01-02'

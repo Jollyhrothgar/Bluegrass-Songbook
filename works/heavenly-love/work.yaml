@@ -1,0 +1,17 @@
+id: heavenly-love
+title: Heavenly Love
+artist: The Blackwood Brothers
+composers:
+- Dick Glasser and Nick Boldi
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavenlylovelyricschords.pro
+    imported_at: '2026-01-02'

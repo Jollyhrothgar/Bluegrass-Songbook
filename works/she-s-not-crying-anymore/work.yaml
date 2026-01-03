@@ -1,0 +1,18 @@
+id: she-s-not-crying-anymore
+title: She's Not Crying Anymore
+artist: Billy Ray Cyrus
+composers:
+- Buddy Cannon, Terry Chelton, Billy Ray Cyrus
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesnotcryinganymorelyricschords.pro
+    imported_at: '2026-01-02'

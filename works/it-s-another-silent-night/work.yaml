@@ -1,0 +1,17 @@
+id: it-s-another-silent-night
+title: It's Another Silent Night
+artist: Reba McEntire
+composers:
+- Terry Skinner and Ken Bell
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsanothersilentnightlyricschords.pro
+    imported_at: '2026-01-02'

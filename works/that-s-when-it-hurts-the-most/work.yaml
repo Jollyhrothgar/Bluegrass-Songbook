@@ -1,0 +1,17 @@
+id: that-s-when-it-hurts-the-most
+title: That's When It Hurts The Most
+artist: Johnny Tillotson
+composers:
+- Paul Evans and Larry Kusik
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhenithurtsthemostlyricschords.pro
+    imported_at: '2026-01-02'

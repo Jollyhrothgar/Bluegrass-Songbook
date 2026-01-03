@@ -1,0 +1,17 @@
+id: catalog-dreams
+title: Catalog Dreams
+artist: Joni Harms
+composers:
+- Joni Harms and Jim Varsos
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: catalogdreamslyricschords.pro
+    imported_at: '2026-01-02'

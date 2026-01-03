@@ -1,0 +1,17 @@
+id: we-won-t-be-home-until-then
+title: We Won't Be Home Until Then
+artist: The Statler Brothers
+composers:
+- Don Reid
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wewontbehomeuntilthenlyricschords.pro
+    imported_at: '2026-01-02'

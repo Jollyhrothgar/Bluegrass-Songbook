@@ -1,0 +1,17 @@
+id: you-re-right-i-m-wrong-i-m-sorry
+title: You're Right I'm Wrong I'm Sorry
+artist: John Anderson
+composers:
+- John Anderson, Betty Gallup, Ervan Parker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourerightimwrongimsorrylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: coming-for-to-carry-me-home
+title: Coming For To Carry Me Home
+artist: aka Swing Low Sweet Chariot
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comingfortocarrymehomelyricschords.pro
+    imported_at: '2026-01-02'

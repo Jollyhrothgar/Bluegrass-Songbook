@@ -1,0 +1,17 @@
+id: i-just-can-t-be-true
+title: I Just Can't Be True
+artist: Webb Pierce
+composers:
+- Teddy Wilburn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcantbetruelyricschords.pro
+    imported_at: '2026-01-02'

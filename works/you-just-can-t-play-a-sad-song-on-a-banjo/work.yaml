@@ -1,0 +1,19 @@
+id: you-just-can-t-play-a-sad-song-on-a-banjo
+title: You Just Can't Play A Sad Song On A Banjo
+artist: Willie Nelson
+composers:
+- Paul Buskirk and Russell Jackson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youjustcantplayasadsongonabanjolyricschords.pro
+    imported_at: '2026-01-02'

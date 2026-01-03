@@ -1,0 +1,21 @@
+id: waiting-for-the-sun-to-shine
+title: Waiting For The Sun To Shine
+artist: Ricky Skaggs
+composers:
+- Sonny Throckmorton
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waitingforthesuntoshinelyricschords.pro
+    imported_at: '2026-01-02'

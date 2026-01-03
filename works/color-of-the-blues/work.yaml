@@ -1,0 +1,17 @@
+id: color-of-the-blues
+title: Color Of The Blues
+artist: George Jones
+composers:
+- Lawton Williams and George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coloroftheblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: not-in-front-of-the-kids
+title: Not In Front Of The Kids
+artist: Carl Smith
+composers:
+- Mel Tillis and Billy Swan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notinfrontofthekidslyricschords.pro
+    imported_at: '2026-01-02'

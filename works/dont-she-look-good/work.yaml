@@ -1,0 +1,17 @@
+id: dont-she-look-good
+title: Don’t She Look Good
+artist: Bill Anderson
+composers:
+- Jerry Chesnut
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontshelookgoodlyricschords.pro
+    imported_at: '2026-01-02'

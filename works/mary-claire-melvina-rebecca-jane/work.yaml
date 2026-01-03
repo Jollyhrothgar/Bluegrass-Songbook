@@ -1,0 +1,17 @@
+id: mary-claire-melvina-rebecca-jane
+title: Mary Claire Melvina Rebecca Jane
+artist: Eddy Arnold
+composers:
+- Martha White and Sarah Nix
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maryclairemelvinarebeccajanelyricschords.pro
+    imported_at: '2026-01-02'

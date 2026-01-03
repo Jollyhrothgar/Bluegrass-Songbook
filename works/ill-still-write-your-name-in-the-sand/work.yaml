@@ -1,0 +1,17 @@
+id: ill-still-write-your-name-in-the-sand
+title: I’ll Still Write Your Name In The Sand
+artist: Mac Wiseman
+composers:
+- Oby Edgar Starcher
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illstillwriteyournameinthesandlyricschords.pro
+    imported_at: '2026-01-02'

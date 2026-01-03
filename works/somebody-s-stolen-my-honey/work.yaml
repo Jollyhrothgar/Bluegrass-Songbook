@@ -1,0 +1,19 @@
+id: somebody-s-stolen-my-honey
+title: Somebody's Stolen My Honey
+artist: Ernest Tubb
+composers:
+- Boudleaux Bryant
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodysstolenmyhoneylyricschords.pro
+    imported_at: '2026-01-02'

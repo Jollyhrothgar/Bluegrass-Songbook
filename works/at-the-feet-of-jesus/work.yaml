@@ -1,0 +1,17 @@
+id: at-the-feet-of-jesus
+title: At The Feet Of Jesus
+artist: Margo Smith
+composers:
+- Jerry Salley and Joel Lindsey
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atthefeetofJesuslyricschords.pro
+    imported_at: '2026-01-02'

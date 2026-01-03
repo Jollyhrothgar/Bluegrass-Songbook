@@ -1,0 +1,17 @@
+id: two-hearts-beat-better-than-one
+title: Two Hearts Beat Better Than One
+artist: Eddy Arnold
+composers:
+- Mary Ann Kennedy, June Page, Dan Hoffman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twoheartsbeatbetterthanonelyricschords.pro
+    imported_at: '2026-01-02'

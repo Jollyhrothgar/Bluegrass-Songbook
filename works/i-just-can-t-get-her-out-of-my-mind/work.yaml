@@ -1,0 +1,17 @@
+id: i-just-can-t-get-her-out-of-my-mind
+title: I Just Can't Get Her Out of My Mind
+artist: Johnny Rodriguez
+composers:
+- Larry Gatlin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcantgetheroutofmymindlyricschords.pro
+    imported_at: '2026-01-02'

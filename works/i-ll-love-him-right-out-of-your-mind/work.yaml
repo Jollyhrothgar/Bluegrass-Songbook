@@ -1,0 +1,15 @@
+id: i-ll-love-him-right-out-of-your-mind
+title: I'll Love Him Right Out Of Your Mind
+artist: Tommy Overstreet
+composers:
+- Joe Barnhill and Pat Burch
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illlovehimrightoutofyourmindlyricschords.pro
+    imported_at: '2026-01-02'

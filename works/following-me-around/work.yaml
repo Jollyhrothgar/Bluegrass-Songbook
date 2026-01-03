@@ -1,0 +1,17 @@
+id: following-me-around
+title: Following Me Around
+artist: Willie Nelson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: followingmearoundlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: a-friend-to-me
+title: A Friend To Me
+artist: Garth Brooks
+composers:
+- Victoria Shaw and Garth Brooks
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afriendtomelyricschords.pro
+    imported_at: '2026-01-02'

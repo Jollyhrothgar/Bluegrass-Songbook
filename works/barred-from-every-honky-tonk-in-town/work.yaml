@@ -1,0 +1,17 @@
+id: barred-from-every-honky-tonk-in-town
+title: Barred From Every Honky Tonk In Town
+artist: Wilburn Brothers
+composers:
+- Tompall Glaser
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: barredfromeveryhonkytonkintownlyricschords.pro
+    imported_at: '2026-01-02'

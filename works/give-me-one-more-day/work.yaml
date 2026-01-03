@@ -1,0 +1,19 @@
+id: give-me-one-more-day
+title: Give Me One More Day
+artist: Mel Tillis
+composers:
+- Rochelle Frazier
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givemeonemoredaylyricschords.pro
+    imported_at: '2026-01-02'

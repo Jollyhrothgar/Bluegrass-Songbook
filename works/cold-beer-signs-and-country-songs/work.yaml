@@ -1,0 +1,17 @@
+id: cold-beer-signs-and-country-songs
+title: Cold Beer Signs And Country Songs
+artist: Darrell McCall
+composers:
+- Red Stegall and Glenn Sutton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldbeersignsandcountrysongslyricschords.pro
+    imported_at: '2026-01-02'

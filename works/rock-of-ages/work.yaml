@@ -1,0 +1,18 @@
+id: rock-of-ages
+title: Rock Of Ages
+artist: The Statler Brothers
+composers:
+- Brantley George
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockofageslyricschords.pro
+    imported_at: '2026-01-02'

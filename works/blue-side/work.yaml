@@ -1,0 +1,15 @@
+id: blue-side
+title: Blue Side
+artist: Crystal Gayle
+composers:
+- David Lasley and Allee Willis
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluesidelyricschords.pro
+    imported_at: '2026-01-02'

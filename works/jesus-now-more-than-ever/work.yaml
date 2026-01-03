@@ -1,0 +1,17 @@
+id: jesus-now-more-than-ever
+title: Jesus Now More Than Ever
+artist: Jimmy Swaggart
+composers:
+- John A. Stallings
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusnowmorethaneverlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-d-like-to-have-that-one-back
+title: I'd Like To Have That One Back
+artist: George Strait
+composers:
+- Bill Shore, Aaron Barker, Rick West
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idliketohavethatonebacklyricschords.pro
+    imported_at: '2026-01-02'

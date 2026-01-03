@@ -1,0 +1,19 @@
+id: they-never-made-it-to-memphis
+title: They Never Made It To Memphis
+artist: Mickey Gilley
+composers:
+- Jan Buckingham and Karen Staley
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theynevermadeittomemphislyricschords.pro
+    imported_at: '2026-01-02'

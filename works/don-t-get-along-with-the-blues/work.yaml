@@ -1,0 +1,16 @@
+id: don-t-get-along-with-the-blues
+title: Don't Get Along With The Blues
+artist: Earl Thomas Conley
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontgetalongwiththeblueslyricschords.pro
+    imported_at: '2026-01-02'

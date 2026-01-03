@@ -1,0 +1,18 @@
+id: a-cradle-in-bethlehem
+title: A Cradle In Bethlehem
+artist: Vince Gill
+composers:
+- Alfred Bryan and Larry Stock
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: acradleinbethlehemlyricschords.pro
+    imported_at: '2026-01-02'

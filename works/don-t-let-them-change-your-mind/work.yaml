@@ -1,0 +1,15 @@
+id: don-t-let-them-change-your-mind
+title: Don't Let Them Change Your Mind
+artist: Cowboy Copas
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontletthemchangeyourmindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: my-washington-woman
+title: My Washington Woman
+artist: Kenny Rogers
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mywashingtonwomanlyricschords.pro
+    imported_at: '2026-01-02'

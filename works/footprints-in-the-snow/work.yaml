@@ -1,0 +1,18 @@
+id: footprints-in-the-snow
+title: Footprints In The Snow
+artist: Marty Robbins
+composers:
+- Rupert Jones
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: footprintsinthesnowlyricsandchords.pro
+    imported_at: '2026-01-02'

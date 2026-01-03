@@ -1,0 +1,15 @@
+id: the-train-that-carried-my-girl-from-town
+title: The Train That Carried My Girl From Town
+artist: Doc Watson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetrainthatcarriedmygirlfromtownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: too-hard-to-say-im-sorry
+title: Too Hard To Say I’m Sorry
+artist: Charley Pride
+composers:
+- Jack Clement and Jack D. Johnson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toohardtosayimsorrylyricschords.pro
+    imported_at: '2026-01-02'

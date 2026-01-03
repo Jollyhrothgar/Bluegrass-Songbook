@@ -1,0 +1,17 @@
+id: i-fall-easy
+title: I Fall Easy
+artist: Leona Williams
+composers:
+- Roger Lee Helton, Sharon King, Leona Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifalleasylyricschords.pro
+    imported_at: '2026-01-02'

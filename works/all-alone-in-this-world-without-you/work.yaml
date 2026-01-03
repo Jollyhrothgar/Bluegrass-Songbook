@@ -1,0 +1,15 @@
+id: all-alone-in-this-world-without-you
+title: All Alone In This World Without You
+artist: Eddy Arnold
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allaloneinthisworldwithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

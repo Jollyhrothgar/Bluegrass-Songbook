@@ -1,0 +1,19 @@
+id: the-beginning-of-the-end-2
+title: The Beginning Of The End
+artist: Mickey Gilley
+composers:
+- Gary Tolbert Nicholson and Charles Victor Rains
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebeginningoftheendlyricschords.pro
+    imported_at: '2026-01-02'

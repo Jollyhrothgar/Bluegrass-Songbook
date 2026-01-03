@@ -1,0 +1,16 @@
+id: i-m-a-good-loser
+title: I'm A Good Loser
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imagoodloserlyricschords.pro
+    imported_at: '2026-01-02'

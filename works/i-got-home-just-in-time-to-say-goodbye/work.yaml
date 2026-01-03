@@ -1,0 +1,18 @@
+id: i-got-home-just-in-time-to-say-goodbye
+title: I Got Home Just In Time To Say Goodbye
+artist: Ronnie Milsap
+composers:
+- Wayne Kemp and Bill Emerson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igothomejustintimetosaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

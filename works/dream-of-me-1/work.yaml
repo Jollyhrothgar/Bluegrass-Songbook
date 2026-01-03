@@ -1,0 +1,18 @@
+id: dream-of-me-1
+title: Dream Of Me
+artist: The Oak Ridge Boys
+composers:
+- Buddy Cannon, Jimmy D Null, Raleigh J Squires
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dreamofmelyricschords.pro
+    imported_at: '2026-01-02'

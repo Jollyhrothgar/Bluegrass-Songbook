@@ -1,0 +1,17 @@
+id: everything-i-am-loves-you
+title: Everything I Am Loves You
+artist: Wilburn Brothers
+composers:
+- Glen Johnson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingiamlovesyoulyricschords.pro
+    imported_at: '2026-01-02'

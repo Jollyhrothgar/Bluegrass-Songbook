@@ -1,0 +1,17 @@
+id: nothing-left-to-lose-1
+title: Nothing Left To Lose
+artist: Faron Young
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothinglefttoloselyricschords.pro
+    imported_at: '2026-01-02'

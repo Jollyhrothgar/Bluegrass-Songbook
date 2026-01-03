@@ -1,0 +1,19 @@
+id: nothing-matters-but-you
+title: Nothing Matters But You
+artist: The Everly Brothers
+composers:
+- Gary Geld and Peter Udell
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothingmattersbutyoulyricschords.pro
+    imported_at: '2026-01-02'

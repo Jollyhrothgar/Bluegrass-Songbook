@@ -1,0 +1,17 @@
+id: let-me-hear-you-say-i-love-you
+title: Let Me Hear You Say I Love You
+artist: Faron Young
+composers:
+- Charles Underwood
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmehearyousayiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

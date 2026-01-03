@@ -1,0 +1,17 @@
+id: call-him-me
+title: Call Him Me
+artist: Little Jimmy Dickens
+composers:
+- Jimmy Dickens and Skip Graves
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: callhimmelyricschords.pro
+    imported_at: '2026-01-02'

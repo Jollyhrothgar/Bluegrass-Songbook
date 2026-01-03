@@ -1,0 +1,17 @@
+id: you-can-t-stop-the-wild-wind-from-blowing
+title: You Can't Stop The Wild Wind From Blowing
+artist: Bobby Bare
+composers:
+- Curly Putman and Red Lane
+default_key: F
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantstopthewildwindfromblowinglyricschords.pro
+    imported_at: '2026-01-02'

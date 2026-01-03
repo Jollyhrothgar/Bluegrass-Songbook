@@ -1,0 +1,18 @@
+id: ive-never-seen-the-likes-of-you
+title: I’ve Never Seen The Likes Of You
+artist: Conway Twitty
+composers:
+- Bob McDill and Wayland Holyfield
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iveneverseenthelikesofyoulyricschords.pro
+    imported_at: '2026-01-02'

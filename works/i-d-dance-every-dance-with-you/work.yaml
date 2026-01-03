@@ -1,0 +1,17 @@
+id: i-d-dance-every-dance-with-you
+title: I'd Dance Every Dance With You
+artist: The Kendalls
+composers:
+- Kevin Stephen Welch and Mark T. Paden
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iddanceeverydancewithyoulyricschords.pro
+    imported_at: '2026-01-02'

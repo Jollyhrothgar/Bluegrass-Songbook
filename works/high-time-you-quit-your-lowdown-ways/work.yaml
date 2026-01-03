@@ -1,0 +1,19 @@
+id: high-time-you-quit-your-lowdown-ways
+title: High Time You Quit Your Lowdown Ways
+artist: Waylon Jennings
+composers:
+- Billy Ray Reynolds
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hightimeyouquityourlowdownwayslyricschords.pro
+    imported_at: '2026-01-02'

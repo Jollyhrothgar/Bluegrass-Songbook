@@ -1,0 +1,17 @@
+id: looking-back-to-see
+title: Looking Back To See
+artist: Jim Ed Brown
+composers:
+- Jim Ed Brown and Maxine Brown
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookingbacktoseelyricschords.pro
+    imported_at: '2026-01-02'

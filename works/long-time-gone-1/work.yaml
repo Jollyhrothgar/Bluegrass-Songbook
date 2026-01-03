@@ -1,0 +1,19 @@
+id: long-time-gone-1
+title: Long Time Gone
+artist: the Everly Brothers
+composers:
+- Tex Ritter and Frank Hartford
+default_key: C
+tags:
+- Pop
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longtimegonelyricschords.pro
+    imported_at: '2026-01-02'

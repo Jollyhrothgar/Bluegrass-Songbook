@@ -1,0 +1,17 @@
+id: we-don-t-want-the-world
+title: We Don't Want The World
+artist: Jack Greene
+composers:
+- James Arthur Coleman and Moe Lytle
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wedontwanttheworldlyricschords.pro
+    imported_at: '2026-01-02'

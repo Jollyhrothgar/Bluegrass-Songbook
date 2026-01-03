@@ -1,0 +1,17 @@
+id: all-the-way-to-love
+title: All The Way To Love
+artist: Tommy Overstreet
+composers:
+- Dale Vest and Tommy Overstreet
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allthewaytolovelyricschords.pro
+    imported_at: '2026-01-02'

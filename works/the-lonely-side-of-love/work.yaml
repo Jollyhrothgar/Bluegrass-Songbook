@@ -1,0 +1,19 @@
+id: the-lonely-side-of-love
+title: The Lonely Side Of Love
+artist: Patty Loveless
+composers:
+- Kostas Lazarides
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelonelysideoflovelyricschords.pro
+    imported_at: '2026-01-02'

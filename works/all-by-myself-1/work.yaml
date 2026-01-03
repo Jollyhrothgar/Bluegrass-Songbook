@@ -1,0 +1,17 @@
+id: all-by-myself-1
+title: All By Myself
+artist: Jimmy Dean
+composers:
+- Irving Berlin
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allbymyselflyricschords.pro
+    imported_at: '2026-01-02'

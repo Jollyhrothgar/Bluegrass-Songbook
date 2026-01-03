@@ -1,0 +1,20 @@
+id: another-hand-shaking-goodbye
+title: Another Hand Shaking Goodbye
+artist: Jerry Lee Lewis
+composers:
+- Dallas Frazier and Sanger D. Shafer
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anotherhandshakinggoodbyelyricschords.pro
+    imported_at: '2026-01-02'

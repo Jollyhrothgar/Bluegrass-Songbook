@@ -1,0 +1,15 @@
+id: it-should-have-been-love-by-now
+title: It Should Have Been Love By Now
+artist: Barbara Mandrell and Lee Greenwood
+composers:
+- Jan Crutchfield and Paul Harrison
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itshouldhavebeenlovebynowlyricschords.pro
+    imported_at: '2026-01-02'

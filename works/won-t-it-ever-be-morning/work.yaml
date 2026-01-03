@@ -1,0 +1,15 @@
+id: won-t-it-ever-be-morning
+title: Won't It Ever Be Morning
+artist: Bill Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wontiteverbemorninglyricschords.pro
+    imported_at: '2026-01-02'

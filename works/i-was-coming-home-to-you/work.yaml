@@ -1,0 +1,15 @@
+id: i-was-coming-home-to-you
+title: I Was Coming Home To You
+artist: Hank Locklin
+composers:
+- Kendall Hayes and Jimmy Rule
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwascominghometoyoulyricschords.pro
+    imported_at: '2026-01-02'

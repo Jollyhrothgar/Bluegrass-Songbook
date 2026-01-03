@@ -1,0 +1,20 @@
+id: just-to-satisfy-you
+title: Just To Satisfy You
+artist: Waylon Jennings
+composers:
+- Waylon Jennings and Don Bowman
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justtosatisfyyoulyricschords.pro
+    imported_at: '2026-01-02'

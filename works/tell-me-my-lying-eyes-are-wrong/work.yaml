@@ -1,0 +1,17 @@
+id: tell-me-my-lying-eyes-are-wrong
+title: Tell Me My Lying Eyes Are Wrong
+artist: George Jones
+composers:
+- Dallas Frazier and Sanger Shafer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmemylyingeyesarewronglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: high-on-a-hilltop
+title: High On A Hilltop
+artist: Merle Haggard
+composers:
+- Tommy Collins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highonahilltoplyricsandchords.pro
+    imported_at: '2026-01-02'

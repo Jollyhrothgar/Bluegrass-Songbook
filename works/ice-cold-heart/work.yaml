@@ -1,0 +1,17 @@
+id: ice-cold-heart
+title: Ice Cold Heart
+artist: Ray Price
+composers:
+- Benny E. Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icecoldheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: accidentally-on-purpose-tonight
+title: Accidentally On Purpose Tonight
+artist: Moe Bandy
+composers:
+- Pat Bunch and Peggy White
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: accidentallyonpurposetonightlyricschords.pro
+    imported_at: '2026-01-02'

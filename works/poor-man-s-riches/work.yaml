@@ -1,0 +1,17 @@
+id: poor-man-s-riches
+title: Poor Man's Riches
+artist: George Jones
+composers:
+- Benny Barnes and Dee Marais
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: poormansricheslyricsandchords.pro
+    imported_at: '2026-01-02'

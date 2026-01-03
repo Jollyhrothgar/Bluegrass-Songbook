@@ -1,0 +1,18 @@
+id: i-made-the-prison-band
+title: I Made The Prison Band
+artist: Merle Haggard
+composers:
+- Tommy Collins, Jimmy Bryant, Ernest Ball
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imadetheprisonbandlyricschords.pro
+    imported_at: '2026-01-02'

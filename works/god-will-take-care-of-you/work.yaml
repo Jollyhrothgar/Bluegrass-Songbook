@@ -1,0 +1,17 @@
+id: god-will-take-care-of-you
+title: God Will Take Care of You
+artist: The Oak Ridge Boys
+composers:
+- Civilla D. Martin and W. Stillman Martin
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godwilltakecareofyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-have-another-cup-of-coffee
+title: I'll Have Another Cup of Coffee
+artist: Cal Smith
+composers:
+- Bill Brock
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illhaveanothercupofcoffeelyricschords.pro
+    imported_at: '2026-01-02'

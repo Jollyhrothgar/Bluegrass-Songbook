@@ -1,0 +1,17 @@
+id: there-i-go-dreamin
+title: There I Go Dreamin'
+artist: Roger Miller
+composers:
+- Dorsey Burnette
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thereigodreaminlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: rainbow-schottische
+title: Rainbow Schottische
+artist: Traditional
+composers:
+- Biography:Henry Kleber
+default_key: A
+tags:
+- JamFriendly
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

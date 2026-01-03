@@ -1,0 +1,17 @@
+id: rusty-guitar-strings
+title: Rusty Guitar Strings
+artist: Boxcar Willie
+composers:
+- Travis Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rustyguitarstringslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: clinging-to-a-saving-hand
+title: Clinging To A Saving Hand
+artist: Connie Smith
+composers:
+- Bill Mack
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: clingingtoasavinghandlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: along-the-navajo-trail
+title: Along the Navajo Trail
+artist: Bob Wills
+composers:
+- Larry Marks, Dick Charles, Eddie Lange
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alongthenavajotraillyricschords.pro
+    imported_at: '2026-01-02'

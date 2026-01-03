@@ -1,0 +1,17 @@
+id: from-jerusalem-to-jericho
+title: From Jerusalem To Jericho
+artist: Hank Williams Sr.
+composers:
+- Anna Simpson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromjerusalemtojericholyricschords.pro
+    imported_at: '2026-01-02'

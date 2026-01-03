@@ -1,0 +1,17 @@
+id: texas-fiddle-song
+title: Texas Fiddle Song
+artist: Leona Williams
+composers:
+- Leona Williams and Ron Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: texasfiddlesonglyricschords.pro
+    imported_at: '2026-01-02'

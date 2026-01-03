@@ -1,0 +1,17 @@
+id: slightly-used
+title: Slightly Used
+artist: Wynn Stewart
+composers:
+- Wynn Stewart, Curtis Leach, Bobby George
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: slightlyusedlyricschords.pro
+    imported_at: '2026-01-02'

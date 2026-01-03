@@ -1,0 +1,17 @@
+id: when-i-said-i-do
+title: When I Said I Do
+artist: Clint Black with Lisa Hartman Black
+composers:
+- Clint Black
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenisaididolyricschords.pro
+    imported_at: '2026-01-02'

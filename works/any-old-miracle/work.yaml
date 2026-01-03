@@ -1,0 +1,17 @@
+id: any-old-miracle
+title: Any Old Miracle
+artist: Vern Gosdin
+composers:
+- James Walton Aldridge Jr., Donald Ray Fritts, Gary Nicholson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anyoldmiraclelyricschords.pro
+    imported_at: '2026-01-02'

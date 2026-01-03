@@ -1,0 +1,17 @@
+id: come-on-over
+title: Come On Over
+artist: Doyle Lawson
+composers:
+- Barry Gibb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comeonoverlyricschords.pro
+    imported_at: '2026-01-02'

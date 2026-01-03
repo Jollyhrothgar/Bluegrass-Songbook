@@ -1,0 +1,17 @@
+id: come-on-ring-those-bells
+title: Come On Ring Those Bells
+artist: Dixie Melody Boys
+composers:
+- Andrew Culverwell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comeonringthosebellslyricschords.pro
+    imported_at: '2026-01-02'

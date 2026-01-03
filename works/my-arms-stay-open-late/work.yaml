@@ -1,0 +1,18 @@
+id: my-arms-stay-open-late
+title: My Arms Stay Open Late
+artist: Tammy Wynette
+composers:
+- Curly Putman and Dan Lomax
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myarmsstayopenlatelyricschords.pro
+    imported_at: '2026-01-02'

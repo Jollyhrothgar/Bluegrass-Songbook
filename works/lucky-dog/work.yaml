@@ -1,0 +1,18 @@
+id: lucky-dog
+title: Lucky Dog
+artist: Keith Whitley
+composers:
+- Verlon Thompson and Bill Caswell
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: luckydoglyricschords.pro
+    imported_at: '2026-01-02'

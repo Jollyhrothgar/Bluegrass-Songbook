@@ -1,0 +1,19 @@
+id: my-filipino-baby
+title: My Filipino Baby
+artist: Ernest Tubb
+composers:
+- Billy Cox and Clarke Van Ness
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myfilipinobabylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-ll-say-it-s-my-fault
+title: I'll Say It's My Fault
+artist: Roy Orbison
+composers:
+- Fred Foster and Roy Orbison
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illsayitsmyfaultlyricschords.pro
+    imported_at: '2026-01-02'

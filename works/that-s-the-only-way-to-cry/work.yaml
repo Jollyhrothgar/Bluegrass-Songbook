@@ -1,0 +1,17 @@
+id: that-s-the-only-way-to-cry
+title: That's The Only Way To Cry
+artist: Wynn Stewart
+composers:
+- Wynn Stewart and Cliff Massey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatstheonlywaytocrylyricschords.pro
+    imported_at: '2026-01-02'

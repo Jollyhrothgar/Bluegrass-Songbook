@@ -1,0 +1,15 @@
+id: because-of-you
+title: Because Of You
+artist: Sonny James
+composers:
+- Arthur Hammerstein and Dudley Wilkinson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseofyoulyricschords.pro
+    imported_at: '2026-01-02'

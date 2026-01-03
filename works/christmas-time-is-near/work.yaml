@@ -1,0 +1,15 @@
+id: christmas-time-is-near
+title: Christmas Time Is Near
+artist: Buck Owens
+composers:
+- Buck Owens and Don Rich
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmastimeisnearlyricschords.pro
+    imported_at: '2026-01-02'

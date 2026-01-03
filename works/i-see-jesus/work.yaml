@@ -1,0 +1,19 @@
+id: i-see-jesus
+title: I See Jesus
+artist: Hank Snow
+composers:
+- Charles Wycuff
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iseeJesuslyricsandchords.pro
+    imported_at: '2026-01-02'

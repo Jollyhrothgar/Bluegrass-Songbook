@@ -1,0 +1,19 @@
+id: we-had-a-good-thing-going
+title: We Had A Good Thing Going
+artist: Brenda Lee
+composers:
+- Eddie Polo
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wehadagoodthinggoinglyricschords.pro
+    imported_at: '2026-01-02'

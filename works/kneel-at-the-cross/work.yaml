@@ -1,0 +1,17 @@
+id: kneel-at-the-cross
+title: Kneel At The Cross
+artist: Stonewall Jackson
+composers:
+- Charles E. Moody
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kneelatthecrosslyricschords.pro
+    imported_at: '2026-01-02'

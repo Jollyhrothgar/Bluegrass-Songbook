@@ -1,0 +1,18 @@
+id: bless-you
+title: Bless You
+artist: Billy Walker
+composers:
+- Bob Tubert
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blessyoulyricschords.pro
+    imported_at: '2026-01-02'

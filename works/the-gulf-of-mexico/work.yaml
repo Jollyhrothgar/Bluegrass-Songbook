@@ -1,0 +1,18 @@
+id: the-gulf-of-mexico
+title: The Gulf Of Mexico
+artist: Clint Black
+composers:
+- Clint Black and Hayden Nicholas
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegulfofmexicolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: here-comes-that-feeling
+title: Here Comes That Feeling
+artist: Brenda Lee
+composers:
+- Dorsey Burnette and Joe Osborn
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: herecomesthatfeelinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-still-can-t-leave-your-memory-alone
+title: I Still Can't Leave Your Memory Alone
+artist: Charley Pride
+composers:
+- Kent M. Robbins and Geoff Morgan
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: istillcantleaveyourmemoryalonelyricschords.pro
+    imported_at: '2026-01-02'

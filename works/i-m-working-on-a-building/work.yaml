@@ -1,0 +1,17 @@
+id: i-m-working-on-a-building
+title: I'm Working on a Building
+artist: Bill Monroe
+composers:
+- A.P. Carter and Reverend Louis Overstreet
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imworkingonabuildinglyricschords.pro
+    imported_at: '2026-01-02'

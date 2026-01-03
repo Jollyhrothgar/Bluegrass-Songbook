@@ -1,0 +1,17 @@
+id: i-should-be-with-you
+title: I Should Be With You
+artist: Porter Wagoner
+composers:
+- Pete Stamper and Werth Becker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ishouldbewithyoulyricschords.pro
+    imported_at: '2026-01-02'

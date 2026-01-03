@@ -1,0 +1,18 @@
+id: youre-my-jamaica
+title: You’re My Jamaica
+artist: Charley Pride
+composers:
+- Kent Robbins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youremyjamaicalyricschords.pro
+    imported_at: '2026-01-02'

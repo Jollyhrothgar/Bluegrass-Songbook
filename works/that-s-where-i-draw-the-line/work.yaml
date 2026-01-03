@@ -1,0 +1,18 @@
+id: that-s-where-i-draw-the-line
+title: That's Where I Draw The Line
+artist: Randy Travis
+composers:
+- Roger Brown and Trey Bruce
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhereidrawthelinelyricschords.pro
+    imported_at: '2026-01-02'

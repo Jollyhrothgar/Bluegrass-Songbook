@@ -1,0 +1,12 @@
+id: charlie-pride-lyrics
+title: Charlie Pride Lyrics
+artist: Guitar Chord Lyrics
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: charliepridelyrics.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-always-remember-you
+title: I'll Always Remember You
+artist: George Strait
+composers:
+- Dean Dillon, Bubba Strait, George Strait
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illalwaysrememberyoulyricschords.pro
+    imported_at: '2026-01-02'

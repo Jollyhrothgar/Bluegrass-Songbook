@@ -1,0 +1,19 @@
+id: mothers-and-daddys
+title: Mothers And Daddys
+artist: Mickey Gilley
+composers:
+- Roger Murrah and Jim McBride
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mothersanddaddyslyricschords.pro
+    imported_at: '2026-01-02'

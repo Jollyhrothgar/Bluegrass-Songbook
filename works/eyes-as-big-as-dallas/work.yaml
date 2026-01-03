@@ -1,0 +1,17 @@
+id: eyes-as-big-as-dallas
+title: Eyes As Big As Dallas
+artist: Wynn Stewart
+composers:
+- Gary McCray
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eyesasbigasdallaslyricschords.pro
+    imported_at: '2026-01-02'

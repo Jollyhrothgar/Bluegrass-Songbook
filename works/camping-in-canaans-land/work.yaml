@@ -1,0 +1,17 @@
+id: camping-in-canaans-land
+title: Camping In Canaan’s Land
+artist: Slim Whitman
+composers:
+- Albert E. Brumley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: campingincanaanslandlyricschords.pro
+    imported_at: '2026-01-02'

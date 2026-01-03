@@ -1,0 +1,15 @@
+id: i-said-all-that-to-say-all-this
+title: I Said All That To Say All This
+artist: George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isaidallthattosayallthislyricschords.pro
+    imported_at: '2026-01-02'

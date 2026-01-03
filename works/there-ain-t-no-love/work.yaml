@@ -1,0 +1,17 @@
+id: there-ain-t-no-love
+title: There Ain't No Love
+artist: Reba McEntire
+composers:
+- Pat McManus
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thereaintnolovelyricschords.pro
+    imported_at: '2026-01-02'

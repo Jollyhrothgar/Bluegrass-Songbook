@@ -1,0 +1,17 @@
+id: let-me-hear-from-you
+title: Let Me Hear From You
+artist: Billy Walker
+composers:
+- Marty Robbins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmehearfromyoulyricschords.pro
+    imported_at: '2026-01-02'

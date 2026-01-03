@@ -1,0 +1,17 @@
+id: i-m-gonna-be-the-boss-from-now-on
+title: I'm Gonna Be The Boss From Now On
+artist: Bob Wills
+composers:
+- Bob Wills and Jesse Ashlock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnabethebossfromnowonlyricschords.pro
+    imported_at: '2026-01-02'

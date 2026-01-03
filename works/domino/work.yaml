@@ -1,0 +1,19 @@
+id: domino
+title: Domino
+artist: Roy Orbison
+composers:
+- Johnny Rzeznik, Robbie Takac, George Tutuska
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dominolyricschords.pro
+    imported_at: '2026-01-02'

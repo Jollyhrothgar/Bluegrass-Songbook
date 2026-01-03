@@ -1,0 +1,17 @@
+id: it-s-a-mighty-thin-line-between-love-and-hate
+title: It's A Mighty Thin Line Between Love And Hate
+artist: Johnny Paycheck
+composers:
+- Johnny Paycheck and Aubrey Mayhew
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsamightythinlinebetweenloveandhatelyricschords.pro
+    imported_at: '2026-01-02'

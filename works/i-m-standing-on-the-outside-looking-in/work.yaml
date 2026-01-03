@@ -1,0 +1,16 @@
+id: i-m-standing-on-the-outside-looking-in
+title: I'm Standing On The Outside Looking In
+artist: Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imstandingontheoutsidelookinginlyricschords.pro
+    imported_at: '2026-01-02'

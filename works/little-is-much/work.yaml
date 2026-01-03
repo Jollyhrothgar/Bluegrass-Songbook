@@ -1,0 +1,18 @@
+id: little-is-much
+title: Little Is Much
+artist: The Oak Ridge Boys
+composers:
+- F.W. Suffield and Kittie L. Suffield
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littleismuchlyricschords.pro
+    imported_at: '2026-01-02'

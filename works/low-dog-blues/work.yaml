@@ -1,0 +1,15 @@
+id: low-dog-blues
+title: Low Dog Blues
+artist: John Anderson
+composers:
+- Lionel Alton Delmore and John David Anderson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lowdogblueslyricschords.pro
+    imported_at: '2026-01-02'

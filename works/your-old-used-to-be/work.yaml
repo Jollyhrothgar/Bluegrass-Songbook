@@ -1,0 +1,17 @@
+id: your-old-used-to-be
+title: Your Old Used To Be
+artist: Faron Young
+composers:
+- Faron Young and Hilda Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youroldusedtobelyricschords.pro
+    imported_at: '2026-01-02'

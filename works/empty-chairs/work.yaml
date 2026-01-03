@@ -1,0 +1,15 @@
+id: empty-chairs
+title: Empty Chairs
+artist: Ray Price
+composers:
+- Don McLean
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: emptychairslyricschords.pro
+    imported_at: '2026-01-02'

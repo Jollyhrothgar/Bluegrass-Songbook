@@ -1,0 +1,17 @@
+id: workin-girl-blues
+title: Workin' Girl Blues
+artist: Leona Williams
+composers:
+- Merle Haggard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: workingirlblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: she-ll-never-know
+title: She'll Never Know
+artist: Brenda Lee
+composers:
+- Roe E. "Rick" Hall
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shellneverknowlyricschords.pro
+    imported_at: '2026-01-02'

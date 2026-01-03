@@ -1,0 +1,19 @@
+id: last-thing-i-needed-first-thing-this-morning
+title: Last Thing I Needed First Thing This Morning
+artist: Willie Nelson
+composers:
+- G.P. Nunn and D.S. Farar
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lastthingineededfirstthingthismorninglyricschords.pro
+    imported_at: '2026-01-02'

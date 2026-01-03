@@ -1,0 +1,18 @@
+id: every-heart-should-have-one
+title: Every Heart Should Have One
+artist: Charley Pride
+composers:
+- Bill Shore and Byron Gallimore
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everyheartshouldhaveonelyricschords.pro
+    imported_at: '2026-01-02'

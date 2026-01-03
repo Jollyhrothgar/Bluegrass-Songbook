@@ -1,0 +1,17 @@
+id: she-s-an-angel
+title: She's An Angel
+artist: Moe Bandy
+composers:
+- Harlan Howard and Lola Jean Dillon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesanangellyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-love-away-your-troubles-for-awhile
+title: I'll Love Away Your Troubles For Awhile
+artist: Charly McClain
+composers:
+- Bob Morrison and Johnny McRae
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illloveawayyourtroublesforawhilelyricschords.pro
+    imported_at: '2026-01-02'

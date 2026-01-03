@@ -1,0 +1,16 @@
+id: the-old-side-of-town
+title: The Old Side Of Town
+artist: Tom T. Hall
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldsideoftownlyricschords.pro
+    imported_at: '2026-01-02'

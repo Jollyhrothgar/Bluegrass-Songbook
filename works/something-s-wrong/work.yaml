@@ -1,0 +1,17 @@
+id: something-s-wrong
+title: Something's Wrong
+artist: Tony Booth
+composers:
+- Gene Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingswronglyricschords.pro
+    imported_at: '2026-01-02'

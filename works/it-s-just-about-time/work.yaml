@@ -1,0 +1,15 @@
+id: it-s-just-about-time
+title: It's Just About Time
+artist: The Kingsmen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsjustabouttimelyricschords.pro
+    imported_at: '2026-01-02'

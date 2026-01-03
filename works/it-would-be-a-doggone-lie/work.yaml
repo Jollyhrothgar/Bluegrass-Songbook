@@ -1,0 +1,17 @@
+id: it-would-be-a-doggone-lie
+title: It Would Be A Doggone Lie
+artist: Hawkshaw Hawkins
+composers:
+- Autry Inman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itwouldbeadoggonelielyricschords.pro
+    imported_at: '2026-01-02'

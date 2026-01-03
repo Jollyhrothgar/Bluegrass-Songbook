@@ -1,0 +1,17 @@
+id: you-re-my-perfect-reason
+title: You're My Perfect Reason
+artist: Bill Anderson
+composers:
+- Bill Anderson and Clint Daniels
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youremyperfectreasonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: feet-on-the-rock
+title: Feet On The Rock
+artist: Randy Travis
+composers:
+- Troy Seals and Buck Moore
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: feetontherocklyricschords.pro
+    imported_at: '2026-01-02'

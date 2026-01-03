@@ -1,0 +1,15 @@
+id: the-blessings
+title: The Blessings
+artist: Alabama
+composers:
+- Russel G. Fowler, Teddy Gentry,
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theblessingslyricschords.pro
+    imported_at: '2026-01-02'

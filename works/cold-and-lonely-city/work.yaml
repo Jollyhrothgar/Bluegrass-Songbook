@@ -1,0 +1,15 @@
+id: cold-and-lonely-city
+title: Cold And Lonely City
+artist: Bobby Bare
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldandlonelycitylyricschords.pro
+    imported_at: '2026-01-02'

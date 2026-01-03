@@ -1,0 +1,17 @@
+id: what-i-want-you-to-be
+title: What I Want You To Be
+artist: Ray Price
+composers:
+- Dave Hall and Aaron Brown
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatiwantyoutobelyricschords.pro
+    imported_at: '2026-01-02'

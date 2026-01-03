@@ -1,0 +1,17 @@
+id: maybe-that-s-all-it-takes
+title: Maybe That's All It Takes
+artist: Don Williams
+composers:
+- Beth Nielsen Chapman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maybethatsallittakeslyricschords.pro
+    imported_at: '2026-01-02'

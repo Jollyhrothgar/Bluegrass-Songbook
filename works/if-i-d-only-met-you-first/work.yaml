@@ -1,0 +1,17 @@
+id: if-i-d-only-met-you-first
+title: If I'd Only Met You First
+artist: Carl Butler
+composers:
+- Hank Cochran and Carl Butler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifidonlymetyoufirstlyricschords.pro
+    imported_at: '2026-01-02'

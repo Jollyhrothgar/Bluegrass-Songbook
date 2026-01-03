@@ -1,0 +1,19 @@
+id: i-ll-stay-around-1
+title: I'll Stay Around
+artist: Willie Nelson
+composers:
+- Hank Cochran and Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illstayaroundlyricschords.pro
+    imported_at: '2026-01-02'

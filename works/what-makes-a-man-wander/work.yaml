@@ -1,0 +1,19 @@
+id: what-makes-a-man-wander
+title: What Makes A Man Wander
+artist: Waylon Jennings
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatmakesamanwanderlyricschords.pro
+    imported_at: '2026-01-02'

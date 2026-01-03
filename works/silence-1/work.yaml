@@ -1,0 +1,17 @@
+id: silence-1
+title: Silence
+artist: Lefty Frizzell
+composers:
+- B.Barton, Wranack
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: silencelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-thought-i-heard-you-calling-my-name-1
+title: I Thought I Heard You Calling My Name
+artist: Porter Wagoner
+composers:
+- Lee Emerson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithoughtiheardyoucallingmynamelyricschords.pro
+    imported_at: '2026-01-02'

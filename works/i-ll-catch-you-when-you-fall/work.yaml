@@ -1,0 +1,17 @@
+id: i-ll-catch-you-when-you-fall
+title: I'll Catch You When You Fall
+artist: Buck Owens
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illcatchyouwhenyoufalllyricsandchords.pro
+    imported_at: '2026-01-02'

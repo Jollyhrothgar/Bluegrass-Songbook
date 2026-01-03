@@ -1,0 +1,17 @@
+id: big-in-vegas
+title: Big In Vegas
+artist: Buck Owens
+composers:
+- Buck Owens and Terry Stafford
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: biginvegaslyricschords.pro
+    imported_at: '2026-01-02'

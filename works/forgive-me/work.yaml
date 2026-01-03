@@ -1,0 +1,17 @@
+id: forgive-me
+title: Forgive Me
+artist: Webb Pierce
+composers:
+- Wiley Walker and Gene Sullivan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forgivemelyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-be-gone-2
+title: I'll Be Gone
+artist: Dwight Yoakam
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbegonelyricswithchords.pro
+    imported_at: '2026-01-02'

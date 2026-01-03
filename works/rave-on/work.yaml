@@ -1,0 +1,18 @@
+id: rave-on
+title: Rave On
+artist: Buddy Holly
+composers:
+- Sonny West, Bill Tilghman and Norman Petty
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: raveonlyricschords.pro
+    imported_at: '2026-01-02'

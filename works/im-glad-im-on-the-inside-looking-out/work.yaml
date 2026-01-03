@@ -1,0 +1,19 @@
+id: im-glad-im-on-the-inside-looking-out
+title: I’m Glad I’m On The Inside Looking Out
+artist: Hank Snow
+composers:
+- Rusty Gabbard
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgladimontheinsidelookingoutlyricschords.pro
+    imported_at: '2026-01-02'

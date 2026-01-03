@@ -1,0 +1,17 @@
+id: she-s-got-to-be-a-saint
+title: She's Got To Be A Saint
+artist: Ray Price
+composers:
+- Joe Paulini and Mike DiNapoli
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesgottobeasaintlyricschords.pro
+    imported_at: '2026-01-02'

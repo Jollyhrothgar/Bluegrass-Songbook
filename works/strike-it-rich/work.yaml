@@ -1,0 +1,15 @@
+id: strike-it-rich
+title: Strike It Rich
+artist: Jim Reeves
+composers:
+- Anton De Waal and Nico Carstens
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: strikeitrichlyricschords.pro
+    imported_at: '2026-01-02'

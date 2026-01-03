@@ -1,0 +1,17 @@
+id: missing-you-was-all-i-did-today-lyrics-chords
+title: Missing You Was All I Did Today Lyrics chords
+artist: Faron Young
+composers:
+- Al Matson and Don Hosea
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: missingyouwasallididtodaylyricschords.pro
+    imported_at: '2026-01-02'

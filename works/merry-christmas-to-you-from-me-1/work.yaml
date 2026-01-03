@@ -1,0 +1,18 @@
+id: merry-christmas-to-you-from-me-1
+title: Merry Christmas To You From Me
+artist: Marty Robbins
+composers:
+- Jack Pruett
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneofyouineverysizelyricschords.pro
+    imported_at: '2026-01-02'

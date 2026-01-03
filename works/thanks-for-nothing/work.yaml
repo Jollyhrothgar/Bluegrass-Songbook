@@ -1,0 +1,20 @@
+id: thanks-for-nothing
+title: Thanks For Nothing
+artist: Jerry Lee Lewis
+composers:
+- Gene Dobbins and Rayburn Anthony
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thanksfornothinglyricschords.pro
+    imported_at: '2026-01-02'

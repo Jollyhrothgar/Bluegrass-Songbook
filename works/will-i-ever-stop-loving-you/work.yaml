@@ -1,0 +1,17 @@
+id: will-i-ever-stop-loving-you
+title: Will I Ever Stop Loving You
+artist: Jim Ed Brown
+composers:
+- Jean Chapel and Alda Calongne
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willieverstoplovingyoulyricschords.pro
+    imported_at: '2026-01-02'

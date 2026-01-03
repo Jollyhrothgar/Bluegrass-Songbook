@@ -1,0 +1,17 @@
+id: i-walk-and-i-walk-and-i-walk
+title: I Walk And I Walk And I Walk
+artist: David Houston
+composers:
+- Charles Justice and George D'Artois
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwalkandiwalkandiwalklyricschords.pro
+    imported_at: '2026-01-02'

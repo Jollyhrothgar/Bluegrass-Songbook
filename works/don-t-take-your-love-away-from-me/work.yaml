@@ -1,0 +1,18 @@
+id: don-t-take-your-love-away-from-me
+title: Don't Take Your Love Away From Me
+artist: Randy Travis
+composers:
+- Verlon Thompson and Mark D. Sanders
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttakeyourloveawayfrommelyricschords.pro
+    imported_at: '2026-01-02'

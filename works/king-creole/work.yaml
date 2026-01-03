@@ -1,0 +1,21 @@
+id: king-creole
+title: King Creole
+artist: Elvis Presley
+composers:
+- Jerry Leiber and Mike Stoller
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kingcreolelyricschords.pro
+    imported_at: '2026-01-02'

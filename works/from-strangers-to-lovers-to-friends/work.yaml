@@ -1,0 +1,15 @@
+id: from-strangers-to-lovers-to-friends
+title: From Strangers To Lovers To Friends
+artist: George Jones
+composers:
+- Hillman Hall and Glenn Ray
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromstrangerstoloverstofriendslyricschords.pro
+    imported_at: '2026-01-02'

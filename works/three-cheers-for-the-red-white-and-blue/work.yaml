@@ -1,0 +1,17 @@
+id: three-cheers-for-the-red-white-and-blue
+title: Three Cheers For The Red White And Blue
+artist: Carl Belew
+composers:
+- Carl Belew and Dave Burgess
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threecheersfortheredwhiteandbluelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,22 @@
+id: you-make-me-feel-like-a-man
+title: You Make Me Feel Like a Man
+artist: Ricky Skaggs
+composers:
+- Peter Rowan
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmakemefeellikeamanlyricschords.pro
+    imported_at: '2026-01-02'

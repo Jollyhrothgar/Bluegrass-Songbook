@@ -1,0 +1,17 @@
+id: hard-act-to-follow
+title: Hard Act To Follow
+artist: Keith Whitley
+composers:
+- Gary Nicholson and David Chamberlain
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hardacttofollowlyricschords.pro
+    imported_at: '2026-01-02'

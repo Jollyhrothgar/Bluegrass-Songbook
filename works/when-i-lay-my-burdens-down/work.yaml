@@ -1,0 +1,17 @@
+id: when-i-lay-my-burdens-down
+title: When I Lay My Burdens Down
+artist: Larry Sparks
+default_key: C
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenilaymyburdensdownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: all-fall-down-1
+title: All Fall Down
+artist: Roger Miller
+composers:
+- Dennis Linde
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allfalldownlyricschords.pro
+    imported_at: '2026-01-02'

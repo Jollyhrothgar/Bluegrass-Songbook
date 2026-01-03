@@ -1,0 +1,15 @@
+id: if-you-ever-walk-my-way-again
+title: If You Ever Walk My Way Again
+artist: Faron Young
+composers:
+- Annie Laurie Fowler
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoueverwalkmywayagainlyricschords.pro
+    imported_at: '2026-01-02'

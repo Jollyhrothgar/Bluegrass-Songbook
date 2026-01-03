@@ -1,0 +1,17 @@
+id: leave-me-something-to-remember-you-by
+title: Leave Me Something To Remember You By
+artist: Buck Owens
+composers:
+- Don Rich and Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leavemesomethingtorememberyoubylyricschords.pro
+    imported_at: '2026-01-02'

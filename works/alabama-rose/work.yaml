@@ -1,0 +1,17 @@
+id: alabama-rose
+title: Alabama Rose
+artist: Bobby Bare
+composers:
+- Wanda Alley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alabamaroselyricschords.pro
+    imported_at: '2026-01-02'

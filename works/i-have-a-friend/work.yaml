@@ -1,0 +1,17 @@
+id: i-have-a-friend
+title: I Have A Friend
+artist: Cowboy Copas
+composers:
+- Tommy Hill and Lloyd Copas
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihaveafriendlyricschords.pro
+    imported_at: '2026-01-02'

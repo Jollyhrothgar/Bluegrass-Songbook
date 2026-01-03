@@ -1,0 +1,17 @@
+id: spirit-in-the-sky
+title: Spirit In The Sky
+artist: The Bellamy Brothers
+composers:
+- Norman Greenbaum
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: spiritintheskylyricschords.pro
+    imported_at: '2026-01-02'

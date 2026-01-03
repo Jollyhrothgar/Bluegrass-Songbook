@@ -1,0 +1,18 @@
+id: true-love-ways
+title: True Love Ways
+artist: Buddy Holly
+composers:
+- Buddy Holly and Norman Petty
+default_key: G
+tags:
+- Rockabilly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: truelovewayslyricschords.pro
+    imported_at: '2026-01-02'

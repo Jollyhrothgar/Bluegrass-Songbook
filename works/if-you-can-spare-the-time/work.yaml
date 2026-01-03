@@ -1,0 +1,18 @@
+id: if-you-can-spare-the-time
+title: If You Can Spare The Time
+artist: Lefty Frizzell
+composers:
+- Lefty Frizzell and Guidry Tassin
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoucansparethetimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: footsteps-walking-with-me
+title: Footsteps Walking With Me
+artist: Daniel O'Donnell
+composers:
+- Steve and Heather Taylor
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: footstepswalkingwithmelyricschords.pro
+    imported_at: '2026-01-02'

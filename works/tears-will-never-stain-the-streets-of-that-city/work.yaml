@@ -1,0 +1,17 @@
+id: tears-will-never-stain-the-streets-of-that-city
+title: Tears Will Never Stain The Streets Of That City
+artist: The Kingsmen
+composers:
+- Dottie Rambo
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tearswillneverstainthestreetsofthatcitylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: release-me-from-sin
+title: Release Me From Sin
+artist: George Jones
+composers:
+- Eddie Miller and William McCall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: releasemefromsinlyricschords.pro
+    imported_at: '2026-01-02'

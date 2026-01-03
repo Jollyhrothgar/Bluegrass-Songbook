@@ -1,0 +1,17 @@
+id: you-left-me-a-long-long-time-ago
+title: You Left Me A Long Long Time Ago
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youleftmealonglongtimeagolyricschords.pro
+    imported_at: '2026-01-02'

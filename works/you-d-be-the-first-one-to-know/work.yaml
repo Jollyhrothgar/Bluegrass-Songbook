@@ -1,0 +1,16 @@
+id: you-d-be-the-first-one-to-know
+title: You'd be the First One to Know
+artist: Wanda Jackson
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdbethefirstonetoknowlyricschords.pro
+    imported_at: '2026-01-02'

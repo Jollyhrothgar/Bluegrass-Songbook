@@ -1,0 +1,20 @@
+id: she-sure-makes-leaving-look-easy
+title: She Sure Makes Leaving Look Easy
+artist: Jerry Lee Lewis
+composers:
+- Sonny Throckmorton
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesuremakesleavinglookeasylyricschords.pro
+    imported_at: '2026-01-02'

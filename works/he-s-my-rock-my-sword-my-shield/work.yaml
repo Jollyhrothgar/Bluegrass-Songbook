@@ -1,0 +1,16 @@
+id: he-s-my-rock-my-sword-my-shield
+title: He's My Rock My Sword My Shield
+artist: Randy Travis
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesmyrockmyswordmyshieldlyricschords.pro
+    imported_at: '2026-01-02'

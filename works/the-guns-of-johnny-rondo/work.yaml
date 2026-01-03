@@ -1,0 +1,17 @@
+id: the-guns-of-johnny-rondo
+title: The Guns Of Johnny Rondo
+artist: Faron Young
+composers:
+- Joe Lubin, Gerald Day, Harry Surman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegunsofjohnnyrondolyricschords.pro
+    imported_at: '2026-01-02'

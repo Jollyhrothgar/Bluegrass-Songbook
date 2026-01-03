@@ -1,0 +1,17 @@
+id: the-bedroom
+title: The Bedroom
+artist: Jim Ed Brown and Helen Cornelius
+composers:
+- Ron Muir
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebedroomlyricschords.pro
+    imported_at: '2026-01-02'

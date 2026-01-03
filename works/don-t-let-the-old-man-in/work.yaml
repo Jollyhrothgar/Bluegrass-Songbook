@@ -1,0 +1,16 @@
+id: don-t-let-the-old-man-in
+title: Don't Let the Old Man In
+artist: Toby Keith
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontlettheoldmaninlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: burdens-are-lifted-at-calvary
+title: Burdens Are Lifted At Calvary
+artist: Bill and Gloria Gaither
+composers:
+- John M. Moore
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burdensareliftedatcalvarylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: casey-jones-was-his-name
+title: Casey Jones Was His Name
+artist: Hank Snow
+composers:
+- Don Gibson
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: caseyjoneswashisnamelyricschords.pro
+    imported_at: '2026-01-02'

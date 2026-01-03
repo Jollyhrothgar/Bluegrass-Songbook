@@ -1,0 +1,18 @@
+id: darkest-hour-just-before-dawn
+title: Darkest Hour Just Before Dawn
+artist: Emmylou Harris
+composers:
+- Ralph Stanley
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darkesthourjustbeforedawnlyricschords.pro
+    imported_at: '2026-01-02'

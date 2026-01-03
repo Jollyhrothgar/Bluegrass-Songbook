@@ -1,0 +1,19 @@
+id: when-love-finds-you
+title: When Love Finds You
+artist: Vince Gill
+composers:
+- Michael Omartian and Vince Gill
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenlovefindsyoulyricschords.pro
+    imported_at: '2026-01-02'

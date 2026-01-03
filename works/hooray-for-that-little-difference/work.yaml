@@ -1,0 +1,18 @@
+id: hooray-for-that-little-difference
+title: Hooray For That Little Difference
+artist: Johnny Horton
+composers:
+- Autry Inman
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hoorayforthatlittledifferencelyricschords.pro
+    imported_at: '2026-01-02'

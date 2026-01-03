@@ -1,0 +1,15 @@
+id: cry-cry-cry-1
+title: Cry Cry Cry
+artist: Jack Scott
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crycrycrylyricswithchords.pro
+    imported_at: '2026-01-02'

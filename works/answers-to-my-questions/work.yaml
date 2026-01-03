@@ -1,0 +1,17 @@
+id: answers-to-my-questions
+title: Answers To My Questions
+artist: Vern Gosdin
+composers:
+- Wayne Bradford
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: answerstomyquestionslyricschords.pro
+    imported_at: '2026-01-02'

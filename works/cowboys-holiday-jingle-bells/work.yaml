@@ -1,0 +1,17 @@
+id: cowboys-holiday-jingle-bells
+title: Cowboys Holiday (Jingle Bells)
+artist: The Bellamy Brothers
+composers:
+- David Bellamy, Norbert, Perter Match – traditional
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cowboysholidayjinglebellslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: a-truer-love-you-ll-never-find
+title: A Truer Love You'll Never Find
+artist: Bill Anderson
+composers:
+- Red Lane
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atruerloveyoullneverfindlyricschords.pro
+    imported_at: '2026-01-02'

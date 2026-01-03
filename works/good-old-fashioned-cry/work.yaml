@@ -1,0 +1,17 @@
+id: good-old-fashioned-cry
+title: Good Old Fashioned Cry
+artist: George Jones
+composers:
+- George Jones, Johnny Mathis, Virginia Franks
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodoldfashionedcrylyricschords.pro
+    imported_at: '2026-01-02'

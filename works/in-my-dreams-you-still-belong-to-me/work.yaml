@@ -1,0 +1,17 @@
+id: in-my-dreams-you-still-belong-to-me
+title: In My Dreams You Still Belong To Me
+artist: Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inmydreamsyoustillbelongtomelyricschords.pro
+    imported_at: '2026-01-02'

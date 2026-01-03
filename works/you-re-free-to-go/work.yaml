@@ -1,0 +1,17 @@
+id: you-re-free-to-go
+title: You're Free To Go
+artist: Jim Reeves
+composers:
+- Don Robertson and Lou Hersher
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourefreetogolyricschords.pro
+    imported_at: '2026-01-02'

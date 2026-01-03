@@ -1,0 +1,15 @@
+id: it-s-five-o-clock-somewhere
+title: It's Five O'Clock Somewhere
+artist: Alan Jackson
+composers:
+- Jess Brown and Don Rollins
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsfiveoclocksomewherelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,22 @@
+id: don-t-sell-daddy-anymore-whiskey
+title: Don't Sell Daddy Anymore Whiskey
+artist: Johnny Cash
+composers:
+- Martha Jo Emerson and Ronal Elmer McCown
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontselldaddyanymorewhiskeylyricschords.pro
+    imported_at: '2026-01-02'

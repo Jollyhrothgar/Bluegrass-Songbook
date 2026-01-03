@@ -1,0 +1,18 @@
+id: i-already-know
+title: I Already Know
+artist: Wanda Jackson
+composers:
+- Liz Anderson
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ialreadyknowlyricschords.pro
+    imported_at: '2026-01-02'

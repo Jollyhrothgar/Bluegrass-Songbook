@@ -1,0 +1,15 @@
+id: i-don-t-think-i-d-believe-you
+title: I Don't Think I'd Believe You
+artist: Faron Young
+composers:
+- Kent Westberry and Hal Harbour
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontthinkidbelieveyoulyricschords.pro
+    imported_at: '2026-01-02'

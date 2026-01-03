@@ -1,0 +1,17 @@
+id: i-m-gonna-keep-on-loving-you
+title: I'm Gonna Keep On Loving You
+artist: Billy Walker
+composers:
+- Gene Dobbins, Rayburn Anthony, Benny Whitehead
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnakeeponlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: that-s-what-i-d-do-for-you
+title: That's What I'd Do For You
+artist: Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatiddoforyoulyricschords.pro
+    imported_at: '2026-01-02'

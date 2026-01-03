@@ -1,0 +1,17 @@
+id: if-you-want-to-wear-a-crown
+title: If You Want To Wear A Crown
+artist: George Jones
+composers:
+- Eddie Noack and Marvin Rumley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouwanttowearacrownlyricschords.pro
+    imported_at: '2026-01-02'

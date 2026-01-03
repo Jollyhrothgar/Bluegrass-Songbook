@@ -1,0 +1,17 @@
+id: i-m-not-as-strong-as-i-used-to-be
+title: I'm Not As Strong As I Used To Be
+artist: Moe Bandy
+composers:
+- Phyllis Powell and Dewayne Orender
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotasstrongasiusedtobelyricschords.pro
+    imported_at: '2026-01-02'

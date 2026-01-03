@@ -1,0 +1,19 @@
+id: summer-love
+title: Summer Love
+artist: Roy Orbison
+composers:
+- Bill Dees
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: summerlovelyricschords.pro
+    imported_at: '2026-01-02'

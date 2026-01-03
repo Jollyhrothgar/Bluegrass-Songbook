@@ -1,0 +1,18 @@
+id: thats-the-recipe-for-a-heartache
+title: That’s The Recipe For A Heartache
+artist: Hank Thompson
+composers:
+- Billy Gray and Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatstherecipeforaheartachelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: memory-number-one
+title: Memory Number One
+artist: Webb Pierce
+composers:
+- Wayne P. Walker and Max Powell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: memorynumberonelyricsandchords.pro
+    imported_at: '2026-01-02'

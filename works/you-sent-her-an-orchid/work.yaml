@@ -1,0 +1,17 @@
+id: you-sent-her-an-orchid
+title: You Sent Her An Orchid
+artist: Jean Shepard
+composers:
+- Jerry Jerico and Kenneth Grant
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yousentheranorchidlyricschords.pro
+    imported_at: '2026-01-02'

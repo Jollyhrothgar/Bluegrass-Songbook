@@ -1,0 +1,18 @@
+id: everybody-s-somebody-s-fool
+title: Everybody's Somebody's Fool
+artist: Connie Francis
+composers:
+- Howard Greenfield and Jack Keller
+default_key: C
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodyssomebodysfoollyricschords.pro
+    imported_at: '2026-01-02'

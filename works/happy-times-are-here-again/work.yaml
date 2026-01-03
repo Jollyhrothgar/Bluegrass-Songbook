@@ -1,0 +1,15 @@
+id: happy-times-are-here-again
+title: Happy Times Are Here Again
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: happytimesarehereagainlyricschords.pro
+    imported_at: '2026-01-02'

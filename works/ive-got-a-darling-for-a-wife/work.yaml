@@ -1,0 +1,16 @@
+id: ive-got-a-darling-for-a-wife
+title: I’ve Got A Darling For A Wife
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotadarlingforawifelyricschords.pro
+    imported_at: '2026-01-02'

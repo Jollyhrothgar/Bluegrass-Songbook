@@ -1,0 +1,17 @@
+id: the-blood-that-stained-the-old-rugged-cross
+title: The Blood That Stained The Old Rugged Cross
+artist: Carl Smith
+composers:
+- Albert Brumley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebloodthatstainedtheoldruggedcrosslyricschords.pro
+    imported_at: '2026-01-02'

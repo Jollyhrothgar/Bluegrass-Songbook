@@ -1,0 +1,17 @@
+id: till-the-end
+title: Till The End
+artist: Vern Gosdin
+composers:
+- Cathy Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tilltheendlyricschords.pro
+    imported_at: '2026-01-02'

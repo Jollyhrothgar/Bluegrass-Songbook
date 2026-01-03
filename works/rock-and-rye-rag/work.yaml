@@ -1,0 +1,15 @@
+id: rock-and-rye-rag
+title: Rock and Rye Rag
+artist: Traditional
+composers:
+- Biography:Al Dexter
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

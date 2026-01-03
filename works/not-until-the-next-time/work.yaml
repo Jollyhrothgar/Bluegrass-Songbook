@@ -1,0 +1,17 @@
+id: not-until-the-next-time
+title: Not Until the Next Time
+artist: Jim Reeves
+composers:
+- Gail Talley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notuntilthenexttimelyricsandchords.pro
+    imported_at: '2026-01-02'

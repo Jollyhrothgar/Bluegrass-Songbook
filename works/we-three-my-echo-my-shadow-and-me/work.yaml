@@ -1,0 +1,19 @@
+id: we-three-my-echo-my-shadow-and-me
+title: We Three (My Echo My Shadow And Me)
+artist: Brenda Lee
+composers:
+- Dick Robertson, Nelso Cogane, Sammy Mysels
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wethreemyechomyshadowandmelyricschords.pro
+    imported_at: '2026-01-02'

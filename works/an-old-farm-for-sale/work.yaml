@@ -1,0 +1,15 @@
+id: an-old-farm-for-sale
+title: An Old Farm For Sale
+artist: Cowboy Copas
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anoldfarmforsalelyricschords.pro
+    imported_at: '2026-01-02'

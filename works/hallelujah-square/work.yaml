@@ -1,0 +1,18 @@
+id: hallelujah-square
+title: Hallelujah Square
+artist: The Cathedrals
+composers:
+- Ray Overholt
+default_key: C
+tags:
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hallelujahsquarelyricschords.pro
+    imported_at: '2026-01-02'

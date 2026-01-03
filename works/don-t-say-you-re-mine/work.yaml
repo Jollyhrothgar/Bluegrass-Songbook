@@ -1,0 +1,17 @@
+id: don-t-say-you-re-mine
+title: Don't Say You're Mine
+artist: Carl Smith
+composers:
+- Cameron L. Mullins
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontsayyoureminelyricschords.pro
+    imported_at: '2026-01-02'

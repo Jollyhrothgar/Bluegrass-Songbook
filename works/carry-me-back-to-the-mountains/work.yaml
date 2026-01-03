@@ -1,0 +1,17 @@
+id: carry-me-back-to-the-mountains
+title: Carry Me Back To The Mountains
+artist: Mac Wiseman
+composers:
+- Carson Robison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carrymebacktothemountainslyricschords.pro
+    imported_at: '2026-01-02'

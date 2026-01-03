@@ -1,0 +1,17 @@
+id: i-ll-be-alright-tomorrow
+title: I'll Be Alright Tomorrow
+artist: Mac Wiseman
+composers:
+- Bobby Osborne and Pete Goble
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbealrighttomorrowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: the-twelfth-rose
+title: The Twelfth Rose
+artist: Jim Ed Brown
+composers:
+- Buddy Killen and Marvin Moore
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetwelfthroselyricschords.pro
+    imported_at: '2026-01-02'

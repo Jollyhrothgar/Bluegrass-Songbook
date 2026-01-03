@@ -1,0 +1,15 @@
+id: a-world-i-can-t-live-in
+title: A World I Can't Live In
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aworldicantliveinlyricsandchords.pro
+    imported_at: '2026-01-02'

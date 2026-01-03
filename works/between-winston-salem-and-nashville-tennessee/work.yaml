@@ -1,0 +1,17 @@
+id: between-winston-salem-and-nashville-tennessee
+title: Between Winston Salem and Nashville Tennessee
+artist: Billy Walker
+composers:
+- Curry Kusik and Eddie Snyder
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betweenwinstonsalemandnashvilletennesseelyricschords.pro
+    imported_at: '2026-01-02'

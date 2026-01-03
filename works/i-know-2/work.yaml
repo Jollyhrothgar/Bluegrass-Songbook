@@ -1,0 +1,15 @@
+id: i-know-2
+title: I Know
+artist: Sonny James
+composers:
+- Sonny James and John Skye
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowlyricswithchords.pro
+    imported_at: '2026-01-02'

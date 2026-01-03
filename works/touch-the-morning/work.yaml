@@ -1,0 +1,17 @@
+id: touch-the-morning
+title: Touch The Morning
+artist: Don Gibson
+composers:
+- Eddy Raven
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: touchthemorninglyricschords.pro
+    imported_at: '2026-01-02'

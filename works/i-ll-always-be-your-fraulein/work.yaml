@@ -1,0 +1,18 @@
+id: i-ll-always-be-your-fraulein
+title: I'll Always Be Your Fraulein
+artist: Kitty Wells
+composers:
+- Lawton Williams
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illalwaysbeyourfrauleinlyricschords.pro
+    imported_at: '2026-01-02'

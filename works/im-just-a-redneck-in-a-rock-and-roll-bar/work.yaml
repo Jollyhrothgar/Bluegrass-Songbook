@@ -1,0 +1,17 @@
+id: im-just-a-redneck-in-a-rock-and-roll-bar
+title: I’m Just A Redneck In A Rock And Roll Bar
+artist: Mel Street
+composers:
+- Bob Morrison and Bill Anthony
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imjustaredneckinarockandrollbarlyricschords.pro
+    imported_at: '2026-01-02'

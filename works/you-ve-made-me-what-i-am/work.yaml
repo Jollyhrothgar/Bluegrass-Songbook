@@ -1,0 +1,19 @@
+id: you-ve-made-me-what-i-am
+title: You've Made Me What I Am
+artist: Loretta Lynn
+composers:
+- Oliver Doolittle
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvemademewhatiamlyricschords.pro
+    imported_at: '2026-01-02'

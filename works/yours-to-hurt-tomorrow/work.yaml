@@ -1,0 +1,18 @@
+id: yours-to-hurt-tomorrow
+title: Yours To Hurt Tomorrow
+artist: Conway Twitty
+composers:
+- Peggy Forman
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourstohurttomorrowlyricschords.pro
+    imported_at: '2026-01-02'

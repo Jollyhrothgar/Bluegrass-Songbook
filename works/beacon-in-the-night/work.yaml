@@ -1,0 +1,17 @@
+id: beacon-in-the-night
+title: Beacon In The Night
+artist: George Jones
+composers:
+- Darrell Edwards and Herby Treece
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beaconinthenightlyricschords.pro
+    imported_at: '2026-01-02'

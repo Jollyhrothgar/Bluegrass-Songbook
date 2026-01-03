@@ -1,0 +1,15 @@
+id: the-nearness-of-you
+title: The Nearness Of You
+artist: Faron Young
+composers:
+- Ned Washington and Hoagy Carmichael
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenearnessofyoulyricschords.pro
+    imported_at: '2026-01-02'

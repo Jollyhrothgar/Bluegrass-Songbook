@@ -1,0 +1,18 @@
+id: sweet-bird-of-paradise
+title: Sweet Bird Of Paradise
+artist: Marty Robbins
+composers:
+- Lee Samich
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetbirdofparadiselyricschords.pro
+    imported_at: '2026-01-02'

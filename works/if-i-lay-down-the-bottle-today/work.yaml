@@ -1,0 +1,17 @@
+id: if-i-lay-down-the-bottle-today
+title: If I Lay Down The Bottle Today
+artist: Moe Bandy
+composers:
+- Dave Kirby and Warren Robb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifilaydownthebottlelyricschords.pro
+    imported_at: '2026-01-02'

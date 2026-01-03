@@ -1,0 +1,18 @@
+id: four-minus-three-equals-zero
+title: Four Minus Three Equals Zero
+artist: George Strait
+composers:
+- Lonnie Williams
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fourminusthreeequalszerolyricschords.pro
+    imported_at: '2026-01-02'

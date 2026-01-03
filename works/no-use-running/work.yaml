@@ -1,0 +1,15 @@
+id: no-use-running
+title: No Use Running
+artist: Don Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nouserunninglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: jesus-savior-pilot-me-1
+title: Jesus Savior Pilot Me
+artist: Lester Flatt
+composers:
+- Edward Hopper and John E. Gould
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesussaviorpilotmelyricschords.pro
+    imported_at: '2026-01-02'

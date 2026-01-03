@@ -1,0 +1,17 @@
+id: what-s-come-over-my-baby
+title: What's Come Over My Baby
+artist: Ray Price
+composers:
+- Dottie West and Bill West
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatscomeovermybabylyricsandchords.pro
+    imported_at: '2026-01-02'

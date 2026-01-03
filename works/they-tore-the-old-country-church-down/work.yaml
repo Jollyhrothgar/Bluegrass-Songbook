@@ -1,0 +1,17 @@
+id: they-tore-the-old-country-church-down
+title: They Tore The Old Country Church Down
+artist: Jim Ed, Maxine and Bonnie Brown
+composers:
+- J.C. Fralix
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theytoretheoldcountrychurchdownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: you-can-t-take-the-country-out-of-me
+title: You Can't Take The Country Out Of Me
+artist: Alabama
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanttakethecountryoutofmelyricschords.pro
+    imported_at: '2026-01-02'

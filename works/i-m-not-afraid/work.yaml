@@ -1,0 +1,17 @@
+id: i-m-not-afraid
+title: I'm Not Afraid
+artist: Ricky Nelson
+composers:
+- Felice Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotafraidlyricschords.pro
+    imported_at: '2026-01-02'

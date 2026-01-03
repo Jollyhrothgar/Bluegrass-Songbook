@@ -1,0 +1,17 @@
+id: to-do-what-i-do
+title: To Do What I Do
+artist: Alan Jackson
+composers:
+- Tim Johnson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: todowhatidolyricschords.pro
+    imported_at: '2026-01-02'

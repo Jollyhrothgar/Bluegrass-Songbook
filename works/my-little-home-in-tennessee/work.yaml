@@ -1,0 +1,15 @@
+id: my-little-home-in-tennessee
+title: My Little Home In Tennessee
+artist: Mac Wiseman
+composers:
+- A.P. Carter
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylittlehomeintennesseelyricschords.pro
+    imported_at: '2026-01-02'

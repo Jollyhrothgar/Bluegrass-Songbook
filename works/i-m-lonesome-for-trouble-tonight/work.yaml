@@ -1,0 +1,19 @@
+id: i-m-lonesome-for-trouble-tonight
+title: I'm Lonesome For Trouble Tonight
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Doyle Wilburn
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlonesomefortroubletonightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: she-fights-that-loving-feeling
+title: She Fights That Loving Feeling
+artist: Faron Young
+composers:
+- Jack Adams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shefightsthatlovingfeelinglyricschords.pro
+    imported_at: '2026-01-02'

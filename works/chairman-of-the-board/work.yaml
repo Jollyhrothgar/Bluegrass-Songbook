@@ -1,0 +1,18 @@
+id: chairman-of-the-board
+title: Chairman Of The Board
+artist: Red Sovine
+composers:
+- Jerry Crutchfield and Buck Maxwell
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: chairmanoftheboardlyricschords.pro
+    imported_at: '2026-01-02'

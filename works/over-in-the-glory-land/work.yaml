@@ -1,0 +1,18 @@
+id: over-in-the-glory-land
+title: Over In The Glory Land
+artist: The Stanley Brothers
+composers:
+- James W. Acuff and Emmett S. Dean
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: overintheglorylandlyricschords.pro
+    imported_at: '2026-01-02'

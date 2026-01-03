@@ -1,0 +1,17 @@
+id: all-at-once-it-s-forever-lyrics-chords
+title: All At Once It's Forever Lyrics chords
+artist: Faron Young
+composers:
+- Billy Deaton, Hilda Young, Cile Davis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allatonceitsforeverlyricschords.pro
+    imported_at: '2026-01-02'

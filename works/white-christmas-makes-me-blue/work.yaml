@@ -1,0 +1,18 @@
+id: white-christmas-makes-me-blue
+title: White Christmas Makes Me Blue
+artist: Randy Travis
+composers:
+- Rich Grissom and Neil Patton Rogers
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whiteChristmasmakesmebluelyricschords.pro
+    imported_at: '2026-01-02'

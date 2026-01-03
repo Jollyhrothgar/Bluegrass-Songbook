@@ -1,0 +1,18 @@
+id: doctor-jesus
+title: Doctor Jesus
+artist: Randy Travis
+composers:
+- Tony Stampley and Justin Bolen
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doctorJesuslyricschords.pro
+    imported_at: '2026-01-02'

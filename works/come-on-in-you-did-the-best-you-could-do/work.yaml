@@ -1,0 +1,18 @@
+id: come-on-in-you-did-the-best-you-could-do
+title: Come On In You Did The Best You Could Do
+artist: The Oak Ridge Boys
+composers:
+- Rick Giles and George Green
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comeoninyoudidthebestyoucoulddolyricschords.pro
+    imported_at: '2026-01-02'

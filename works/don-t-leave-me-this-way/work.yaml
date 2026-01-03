@@ -1,0 +1,15 @@
+id: don-t-leave-me-this-way
+title: Don't Leave Me This Way
+artist: Ricky Nelson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontleavemethiswaylyricschords.pro
+    imported_at: '2026-01-02'

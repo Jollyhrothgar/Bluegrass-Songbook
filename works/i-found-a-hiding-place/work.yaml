@@ -1,0 +1,17 @@
+id: i-found-a-hiding-place
+title: I Found A Hiding Place
+artist: Bill Monroe
+composers:
+- Albert E. Brumley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifoundahidingplacelyricschords.pro
+    imported_at: '2026-01-02'

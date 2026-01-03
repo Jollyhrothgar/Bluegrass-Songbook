@@ -1,0 +1,17 @@
+id: god-had-a-son-in-service
+title: God Had A Son In Service
+artist: Carl Story
+composers:
+- Carl Story and Lowell Blanchard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godhadasoninservicelyricschords.pro
+    imported_at: '2026-01-02'

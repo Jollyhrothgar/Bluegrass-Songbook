@@ -1,0 +1,17 @@
+id: true-love-is-greater-than-friendship
+title: True Love Is Greater Than Friendship
+artist: Carl Perkins
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: trueloveisgreaterthanfriendshiplyricschords.pro
+    imported_at: '2026-01-02'

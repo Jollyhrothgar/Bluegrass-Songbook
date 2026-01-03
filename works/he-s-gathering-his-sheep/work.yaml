@@ -1,0 +1,17 @@
+id: he-s-gathering-his-sheep
+title: He's Gathering His Sheep
+artist: Billy Parker
+composers:
+- Thomas C. Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesgatheringhissheeplyricschords.pro
+    imported_at: '2026-01-02'

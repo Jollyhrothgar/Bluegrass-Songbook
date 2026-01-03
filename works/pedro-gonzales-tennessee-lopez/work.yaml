@@ -1,0 +1,17 @@
+id: pedro-gonzales-tennessee-lopez
+title: Pedro Gonzales Tennessee Lopez
+artist: Hawkshaw Hawkins
+composers:
+- J. King and Jimmy Rule
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pedrogonzalestennesseelopezlyricschords.pro
+    imported_at: '2026-01-02'

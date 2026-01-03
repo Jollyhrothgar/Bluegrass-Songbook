@@ -1,0 +1,17 @@
+id: bowling-green
+title: Bowling Green
+artist: Everly Brothers
+composers:
+- Jacqueline Ertel and Terry Slater
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bowlinggreenlyricschords.pro
+    imported_at: '2026-01-02'

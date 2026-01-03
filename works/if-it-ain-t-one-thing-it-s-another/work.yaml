@@ -1,0 +1,18 @@
+id: if-it-ain-t-one-thing-it-s-another
+title: If It Ain't One Thing It's Another
+artist: Randy Travis
+composers:
+- Bobby Carmichael, Joe Stampley, Tony Stampley
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitaintonethingitsanotherlyricschords.pro
+    imported_at: '2026-01-02'

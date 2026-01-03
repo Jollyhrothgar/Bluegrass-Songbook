@@ -1,0 +1,18 @@
+id: next-time-i-fall-in-love-i-won-t
+title: Next Time I Fall In Love I Won't
+artist: Hank Thompson
+composers:
+- Ned Miller
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nexttimeifallinloveiwontlyricschords.pro
+    imported_at: '2026-01-02'

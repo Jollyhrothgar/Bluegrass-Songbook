@@ -1,0 +1,17 @@
+id: lola-mae
+title: Lola Mae
+artist: Mel Street
+composers:
+- Arthur Leo Owens and Bill Shore
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lolamaelyricschords.pro
+    imported_at: '2026-01-02'

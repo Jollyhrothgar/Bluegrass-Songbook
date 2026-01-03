@@ -1,0 +1,15 @@
+id: santa-fe
+title: Santa Fe
+artist: The Bellamy Brothers
+composers:
+- David Bellamy and Ron Taylor
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: santafelyricschords.pro
+    imported_at: '2026-01-02'

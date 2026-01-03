@@ -1,0 +1,18 @@
+id: i-don-t-know-how-to-tell-him
+title: I Don't Know How To Tell Him
+artist: Wanda Jackson
+composers:
+- Glenn Martin
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontknowhowtotellhimlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: stand-on-my-own-two-knees
+title: Stand On My Own Two Knees
+artist: George Jones
+composers:
+- Roger Dale Bowling and Jan Crutchfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: standonmyowntwokneeslyricschords.pro
+    imported_at: '2026-01-02'

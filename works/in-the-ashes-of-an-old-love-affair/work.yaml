@@ -1,0 +1,18 @@
+id: in-the-ashes-of-an-old-love-affair
+title: In The Ashes Of An Old Love Affair
+artist: Marty Robbins
+composers:
+- Leon Douglas
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: intheashesofanoldloveaffairlyricschords.pro
+    imported_at: '2026-01-02'

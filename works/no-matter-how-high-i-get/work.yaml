@@ -1,0 +1,18 @@
+id: no-matter-how-high-i-get
+title: No Matter How High I Get
+artist: The Oak Ridge Boys
+composers:
+- Joey Scarbury and Even Stevens
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nomatterhowhighigetlyricschords.pro
+    imported_at: '2026-01-02'

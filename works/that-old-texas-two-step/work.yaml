@@ -1,0 +1,17 @@
+id: that-old-texas-two-step
+title: That Old Texas Two Step
+artist: Charlie Walker
+composers:
+- Harlan Howard and Ronald R. Peterson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatoldtexastwosteplyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-came-so-close-to-failure
+title: I Came So Close To Failure
+artist: Little Jimmy Dickens
+composers:
+- Kenneth E. Hunt and Jimmy Dickens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icamesoclosetofailurelyricschords.pro
+    imported_at: '2026-01-02'

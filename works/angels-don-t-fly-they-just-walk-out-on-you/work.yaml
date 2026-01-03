@@ -1,0 +1,17 @@
+id: angels-don-t-fly-they-just-walk-out-on-you
+title: Angels Don't Fly They Just Walk Out On You
+artist: George Jones
+composers:
+- John Fountain and William J. Webb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: angelsdontflytheyjustwalkoutonyoulyricschords.pro
+    imported_at: '2026-01-02'

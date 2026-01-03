@@ -1,0 +1,15 @@
+id: there-s-not-a-minute
+title: There's Not A Minute
+artist: Ricky Nelson
+composers:
+- Clint Ballard and Fred Tobias
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnotaminutelyricschords.pro
+    imported_at: '2026-01-02'

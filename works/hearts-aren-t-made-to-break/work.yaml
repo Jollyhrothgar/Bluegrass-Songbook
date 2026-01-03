@@ -1,0 +1,18 @@
+id: hearts-aren-t-made-to-break
+title: Hearts Aren't Made To Break
+artist: Lee Greenwood
+composers:
+- Roger Murrah and Steve Dean
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartsarentmadetobreaklyricschords.pro
+    imported_at: '2026-01-02'

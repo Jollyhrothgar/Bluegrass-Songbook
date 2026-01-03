@@ -1,0 +1,17 @@
+id: if-heartaches-is-the-fashion
+title: If Heartaches Is The Fashion
+artist: Jim Reeves
+composers:
+- Roger Miller and Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifheartachesisthefashionlyricschords.pro
+    imported_at: '2026-01-02'

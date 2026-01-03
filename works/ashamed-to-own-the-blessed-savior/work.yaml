@@ -1,0 +1,17 @@
+id: ashamed-to-own-the-blessed-savior
+title: Ashamed To Own The Blessed Savior
+artist: Carl and Pearl Butler
+composers:
+- Johnnie Bailes and Walter Bailes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ashamedtoowntheblessedsaviorlyricsandchords.pro
+    imported_at: '2026-01-02'

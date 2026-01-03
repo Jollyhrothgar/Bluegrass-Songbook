@@ -1,0 +1,16 @@
+id: caught-in-the-middle
+title: Caught In The Middle
+artist: Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: caughtinthemiddlelyricschords.pro
+    imported_at: '2026-01-02'

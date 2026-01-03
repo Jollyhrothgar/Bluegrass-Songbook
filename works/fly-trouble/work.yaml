@@ -1,0 +1,19 @@
+id: fly-trouble
+title: Fly Trouble
+artist: Hank Williams
+composers:
+- Fred Rose, Bunny Biggs, Honey Wilds
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: flytroublelyricschords.pro
+    imported_at: '2026-01-02'

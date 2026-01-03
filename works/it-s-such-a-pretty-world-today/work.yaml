@@ -1,0 +1,15 @@
+id: it-s-such-a-pretty-world-today
+title: It's Such A Pretty World Today
+artist: Wynn Stewart
+composers:
+- Dale Noe
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itssuchaprettyworldtodaylyricschords.pro
+    imported_at: '2026-01-02'

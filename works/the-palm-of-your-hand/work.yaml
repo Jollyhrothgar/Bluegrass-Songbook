@@ -1,0 +1,15 @@
+id: the-palm-of-your-hand
+title: The Palm Of Your Hand
+artist: Jean Shepard
+composers:
+- Pete Drake
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thepalmofyourhandlyricschords.pro
+    imported_at: '2026-01-02'

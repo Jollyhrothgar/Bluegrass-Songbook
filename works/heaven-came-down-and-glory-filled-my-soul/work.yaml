@@ -1,0 +1,15 @@
+id: heaven-came-down-and-glory-filled-my-soul
+title: Heaven Came Down And Glory Filled My Soul
+artist: The Speer Family
+composers:
+- John Peterson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavencamedownandgloryfilledmysoullyricschords.pro
+    imported_at: '2026-01-02'

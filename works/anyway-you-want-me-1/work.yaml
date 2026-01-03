@@ -1,0 +1,20 @@
+id: anyway-you-want-me-1
+title: Anyway You Want Me
+artist: Elvis Presley
+composers:
+- Aaron Schroeder and Cliff Owens
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anywayyouwantmelyricschords.pro
+    imported_at: '2026-01-02'

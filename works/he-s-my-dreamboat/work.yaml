@@ -1,0 +1,17 @@
+id: he-s-my-dreamboat
+title: He's My Dreamboat
+artist: Connie Francis
+composers:
+- John D. Loudermilk
+default_key: C
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesmydreamboatlyricschords.pro
+    imported_at: '2026-01-02'

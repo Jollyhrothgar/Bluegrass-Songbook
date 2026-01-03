@@ -1,0 +1,13 @@
+id: empty-chair-at-the-christmas-table
+title: Empty Chair At The Christmas Table
+artist: Bob Wills
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: emptychairattheChristmastablelyricschords.pro
+    imported_at: '2026-01-02'

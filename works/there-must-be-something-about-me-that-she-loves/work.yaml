@@ -1,0 +1,18 @@
+id: there-must-be-something-about-me-that-she-loves
+title: There Must Be Something About Me That She Loves
+artist: The Oak Ridge Boys
+composers:
+- Sonny Throckmorton
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theremustbesomethingaboutmethatsheloveslyricschords.pro
+    imported_at: '2026-01-02'

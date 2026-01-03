@@ -1,0 +1,15 @@
+id: the-air-conditioner-song
+title: The Air Conditioner Song
+artist: Bobby Bare
+composers:
+- Jack Clement
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theairconditionersonglyricschords.pro
+    imported_at: '2026-01-02'

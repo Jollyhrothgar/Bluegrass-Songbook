@@ -1,0 +1,18 @@
+id: till-then
+title: Till Then
+artist: Hank Thompson
+composers:
+- Eddie Seiler, Guy Wood, Sol Marcus
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillthenlyricsandchords.pro
+    imported_at: '2026-01-02'

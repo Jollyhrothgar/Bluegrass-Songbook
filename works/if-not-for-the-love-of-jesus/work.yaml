@@ -1,0 +1,13 @@
+id: if-not-for-the-love-of-jesus
+title: If Not For The Love Of Jesus
+artist: Ronnie McDowell
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifnotfortheloveofJesuslyricschords.pro
+    imported_at: '2026-01-02'

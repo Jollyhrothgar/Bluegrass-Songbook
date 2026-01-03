@@ -1,0 +1,17 @@
+id: you-just-don-t-love-me-anymore
+title: You Just Don't Love Me Anymore
+artist: Ray Price
+composers:
+- Jan Crutchfield and Joseph Allen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youjustdontlovemeanymorelyricschords.pro
+    imported_at: '2026-01-02'

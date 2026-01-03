@@ -1,0 +1,15 @@
+id: look-what-followed-me-home
+title: Look What Followed Me Home
+artist: Ray Price
+composers:
+- Roger Brown and Rick Peoples
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookwhatfollowedmehomelyricsandchords.pro
+    imported_at: '2026-01-02'

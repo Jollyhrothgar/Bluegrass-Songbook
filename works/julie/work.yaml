@@ -1,0 +1,17 @@
+id: julie
+title: Julie
+artist: Porter Wagoner
+composers:
+- Waylon Jennings
+default_key: F
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: julielyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: that-s-how-heartache-begins
+title: That's How Heartache Begins
+artist: Patsy Cline
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatshowheartachebeginslyricschords.pro
+    imported_at: '2026-01-02'

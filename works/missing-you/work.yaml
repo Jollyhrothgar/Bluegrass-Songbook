@@ -1,0 +1,15 @@
+id: missing-you
+title: Missing You
+artist: Charlie Pride
+composers:
+- Kye Fleming and Dennis Morgan
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: missingyoulyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: buenas-noches-from-a-lonely-room
+title: Buenas Noches From A Lonely Room
+artist: Dwight Yoakam
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: buenasnochesfromalonelyroomlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: it-s-christmas-time-for-everyone-but-me
+title: It's Christmas Time For Everyone But Me
+artist: Buck Owens
+composers:
+- Dixie Deen and Ray King
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsChristmastimeforeveryonebutmelyricschords.pro
+    imported_at: '2026-01-02'

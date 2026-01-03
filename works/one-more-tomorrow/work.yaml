@@ -1,0 +1,15 @@
+id: one-more-tomorrow
+title: One More Tomorrow
+artist: Moe Bandy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemoretomorrowlyricschords.pro
+    imported_at: '2026-01-02'

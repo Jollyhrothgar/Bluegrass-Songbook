@@ -1,0 +1,17 @@
+id: as-soon-as-i-touch-calvary
+title: As Soon As I Touch Calvary
+artist: Paul Williams and The Victory Trio
+composers:
+- Rusty Goodman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: assoonasitouchcalvarylyricschords.pro
+    imported_at: '2026-01-02'

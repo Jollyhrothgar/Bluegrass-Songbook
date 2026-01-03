@@ -1,0 +1,17 @@
+id: loving-you-2
+title: Loving You
+artist: Tony Booth
+composers:
+- Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovingyoulyricswithchords.pro
+    imported_at: '2026-01-02'

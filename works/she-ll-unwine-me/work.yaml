@@ -1,0 +1,17 @@
+id: she-ll-unwine-me
+title: She'll Unwine Me
+artist: Johnny Paycheck
+composers:
+- Larry Kingston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shellunwinemelyricschords.pro
+    imported_at: '2026-01-02'

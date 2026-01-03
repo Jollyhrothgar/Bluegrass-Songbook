@@ -1,0 +1,17 @@
+id: the-auction
+title: The Auction
+artist: John Schneider
+composers:
+- Don Goodman, Mark Sherrill, Claude Hendrick
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theauctionlyricschords.pro
+    imported_at: '2026-01-02'

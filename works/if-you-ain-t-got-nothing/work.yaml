@@ -1,0 +1,17 @@
+id: if-you-ain-t-got-nothing
+title: If You Ain't Got Nothing
+artist: Bobby Bare
+composers:
+- Red Lane and Dan Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouaintgotnothinglyricschords.pro
+    imported_at: '2026-01-02'

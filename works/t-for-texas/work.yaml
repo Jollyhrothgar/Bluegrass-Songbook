@@ -1,0 +1,19 @@
+id: t-for-texas
+title: T for Texas
+artist: Waylon Jennings
+composers:
+- Jimmie Rodgers
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tfortexaslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: send-me-the-pillow-that-you-dream-on
+title: Send Me the Pillow That You Dream On
+artist: Hank Locklin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sendmethepillowthatyoudreamonlyricschords.pro
+    imported_at: '2026-01-02'

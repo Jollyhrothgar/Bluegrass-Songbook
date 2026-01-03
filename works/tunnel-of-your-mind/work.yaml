@@ -1,0 +1,15 @@
+id: tunnel-of-your-mind
+title: Tunnel Of Your Mind
+artist: The Osborne Brothers
+composers:
+- Bobby Osborne
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tunnelofyourmindlyricschords.pro
+    imported_at: '2026-01-02'

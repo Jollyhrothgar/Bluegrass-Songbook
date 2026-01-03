@@ -1,0 +1,17 @@
+id: haven-for-angels-unaware
+title: Haven For Angels Unaware
+artist: Johnny Paycheck
+composers:
+- Johnny Paycheck and Aubrey Mayhew
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: havenforangelsunawarelyricschords.pro
+    imported_at: '2026-01-02'

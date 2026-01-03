@@ -1,0 +1,20 @@
+id: a-poor-man-s-roses
+title: A Poor Man's Roses
+artist: Patsy Cline
+composers:
+- Bob Hillard &amp; Milton Delugg
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- Jazzy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: apoormansroseslyricschords.pro
+    imported_at: '2026-01-02'

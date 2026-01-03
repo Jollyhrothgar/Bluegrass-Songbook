@@ -1,0 +1,17 @@
+id: think-it-over
+title: Think It Over
+artist: Ricky Van Shelton
+composers:
+- Richard W. Bennett and Stephen F. Earle
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thinkitoverlyrics-chords.pro
+    imported_at: '2026-01-02'

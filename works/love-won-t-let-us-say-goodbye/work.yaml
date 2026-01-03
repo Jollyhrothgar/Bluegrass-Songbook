@@ -1,0 +1,17 @@
+id: love-won-t-let-us-say-goodbye
+title: Love Won't Let Us Say Goodbye
+artist: Lee Greenwood
+composers:
+- Jan Crutchfield and Paul Harrison
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovewontletussaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

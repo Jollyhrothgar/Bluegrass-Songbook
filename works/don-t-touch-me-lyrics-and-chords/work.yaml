@@ -1,0 +1,17 @@
+id: don-t-touch-me-lyrics-and-chords
+title: Don't Touch Me Lyrics and Chords
+artist: Dottie West
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttouchmelyricschords.pro
+    imported_at: '2026-01-02'

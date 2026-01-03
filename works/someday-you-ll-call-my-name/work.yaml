@@ -1,0 +1,19 @@
+id: someday-you-ll-call-my-name
+title: Someday You'll Call My Name
+artist: Hank Williams
+composers:
+- Jean Branch and Eddie Hill
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somedayyoullcallmynamelyricschords.pro
+    imported_at: '2026-01-02'

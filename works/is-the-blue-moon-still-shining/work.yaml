@@ -1,0 +1,17 @@
+id: is-the-blue-moon-still-shining
+title: Is The Blue Moon Still Shining
+artist: Bill Monroe
+composers:
+- Melissa Kathleen Monroe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isthebluemoonstillshininglyricschords.pro
+    imported_at: '2026-01-02'

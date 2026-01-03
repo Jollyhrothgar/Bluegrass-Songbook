@@ -1,0 +1,18 @@
+id: a-way-to-survive
+title: A Way to Survive
+artist: Gene Watson
+composers:
+- Hank Cochran and Moneen Carpenter
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awaytosurvivelyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: don-t-rock-the-jukebox
+title: Don't Rock The Jukebox
+artist: Alan Jackson
+composers:
+- Roger Murrah, Keith Stegall, Alan Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontrockthejukeboxlyricschords.pro
+    imported_at: '2026-01-02'

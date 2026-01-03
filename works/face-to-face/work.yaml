@@ -1,0 +1,15 @@
+id: face-to-face
+title: Face To Face
+artist: Alabama
+composers:
+- Randy Owen
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: facetofacelyricsandchords.pro
+    imported_at: '2026-01-02'

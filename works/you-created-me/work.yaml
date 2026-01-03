@@ -1,0 +1,18 @@
+id: you-created-me
+title: You Created Me
+artist: Wanda Jackson
+composers:
+- Curtis Wayne
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcreatedmelyricschords.pro
+    imported_at: '2026-01-02'

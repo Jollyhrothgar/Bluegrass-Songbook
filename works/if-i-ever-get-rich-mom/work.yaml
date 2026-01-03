@@ -1,0 +1,18 @@
+id: if-i-ever-get-rich-mom
+title: If I Ever Get Rich Mom
+artist: Hawkshaw Hawkins
+composers:
+- Raleigh Keith and Frank Rhoades
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifievergetrichmomlyricschords.pro
+    imported_at: '2026-01-02'

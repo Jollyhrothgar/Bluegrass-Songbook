@@ -1,0 +1,15 @@
+id: the-hand-that-rocks-the-cradle
+title: The Hand That Rocks The Cradle
+artist: Glen Campbell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thehandthatrocksthecradlelyricschords.pro
+    imported_at: '2026-01-02'

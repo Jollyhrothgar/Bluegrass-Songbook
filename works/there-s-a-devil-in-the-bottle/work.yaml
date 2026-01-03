@@ -1,0 +1,17 @@
+id: there-s-a-devil-in-the-bottle
+title: There's A Devil In The Bottle
+artist: Hank Williams Jr.
+composers:
+- Bobby David
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresadevilinthebottlelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: where-he-leads-me-i-will-follow
+title: Where He Leads Me I Will Follow
+artist: Donna Fargo
+composers:
+- John S. Norris and E.W. Blandy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whereheleadsmeiwillfollowlyricschords.pro
+    imported_at: '2026-01-02'

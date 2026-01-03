@@ -1,0 +1,17 @@
+id: the-door-is-still-open-to-my-heart
+title: The Door Is Still Open To My Heart
+artist: Dean Martin
+composers:
+- Chuck Willis
+default_key: C
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedoorisstillopentomyheartlyricschords.pro
+    imported_at: '2026-01-02'

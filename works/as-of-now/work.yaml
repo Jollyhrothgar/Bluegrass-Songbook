@@ -1,0 +1,17 @@
+id: as-of-now
+title: As Of Now
+artist: Melba Montgomery
+composers:
+- Earl Montgomery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: asofnowlyricschords.pro
+    imported_at: '2026-01-02'

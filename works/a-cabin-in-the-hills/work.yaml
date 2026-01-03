@@ -1,0 +1,16 @@
+id: a-cabin-in-the-hills
+title: A Cabin In The Hills
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: acabininthehillslyricschords.pro
+    imported_at: '2026-01-02'

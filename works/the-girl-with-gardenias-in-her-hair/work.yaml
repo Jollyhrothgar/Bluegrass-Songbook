@@ -1,0 +1,18 @@
+id: the-girl-with-gardenias-in-her-hair
+title: The Girl With Gardenias In Her Hair
+artist: Marty Robbins
+composers:
+- Bob Tubert and Joy Byers
+default_key: Am
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegirlwithgardeniasinherhairlyricschords.pro
+    imported_at: '2026-01-02'

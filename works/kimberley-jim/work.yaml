@@ -1,0 +1,17 @@
+id: kimberley-jim
+title: Kimberley Jim
+artist: Jim Reeves
+composers:
+- Gilbert Gibson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kimberleyjimlyricschords.pro
+    imported_at: '2026-01-02'

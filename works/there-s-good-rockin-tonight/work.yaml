@@ -1,0 +1,17 @@
+id: there-s-good-rockin-tonight
+title: There's Good Rockin' Tonight
+artist: Ricky Nelson
+composers:
+- Roy Brown
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresgoodrockintonightlyricschords.pro
+    imported_at: '2026-01-02'

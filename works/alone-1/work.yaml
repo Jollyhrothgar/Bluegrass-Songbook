@@ -1,0 +1,17 @@
+id: alone-1
+title: Alone
+artist: Vern Gosdin
+composers:
+- Max D. Barnes and Vern Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alonelyricschords.pro
+    imported_at: '2026-01-02'

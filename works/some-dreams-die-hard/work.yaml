@@ -1,0 +1,15 @@
+id: some-dreams-die-hard
+title: Some Dreams Die Hard
+artist: Johnny Lee
+composers:
+- Jenna Schell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somedreamsdiehardlyricschords.pro
+    imported_at: '2026-01-02'

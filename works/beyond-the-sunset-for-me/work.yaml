@@ -1,0 +1,15 @@
+id: beyond-the-sunset-for-me
+title: Beyond The Sunset For Me
+artist: Doyle Lawson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beyondthesunsetformelyricschords.pro
+    imported_at: '2026-01-02'

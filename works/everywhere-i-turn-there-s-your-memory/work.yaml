@@ -1,0 +1,17 @@
+id: everywhere-i-turn-there-s-your-memory
+title: Everywhere I Turn (There's Your Memory)
+artist: Ronnie Milsap
+composers:
+- Naomi Martin and Archie Jordan
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everywhereiturntheresyourmemorylyricschords.pro
+    imported_at: '2026-01-02'

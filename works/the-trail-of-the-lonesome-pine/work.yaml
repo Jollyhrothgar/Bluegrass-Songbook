@@ -1,0 +1,15 @@
+id: the-trail-of-the-lonesome-pine
+title: The Trail Of The Lonesome Pine
+artist: Rex Allen
+composers:
+- Harry Carroll and Ballard Macdonald
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetrailofthelonesomepinelyricschords.pro
+    imported_at: '2026-01-02'

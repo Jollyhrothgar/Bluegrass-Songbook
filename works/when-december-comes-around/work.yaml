@@ -1,0 +1,17 @@
+id: when-december-comes-around
+title: When December Comes Around
+artist: Doug Stone
+composers:
+- Randy Boudreaux and Stacey Slate
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whendecembercomesaroundlyricschords.pro
+    imported_at: '2026-01-02'

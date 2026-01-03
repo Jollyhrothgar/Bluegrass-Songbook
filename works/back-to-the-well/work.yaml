@@ -1,0 +1,18 @@
+id: back-to-the-well
+title: Back To The Well
+artist: Kenny Rogers
+composers:
+- Robert Byrne and Rick Bowles
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backtothewelllyricschords.pro
+    imported_at: '2026-01-02'

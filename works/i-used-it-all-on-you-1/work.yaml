@@ -1,0 +1,17 @@
+id: i-used-it-all-on-you-1
+title: I Used It All On You
+artist: Nat Stuckey
+composers:
+- Tom Crum
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iuseditallonyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-don-t-regret-a-mile
+title: I Don't Regret A Mile
+artist: Larry Sparks Brothers
+composers:
+- Rusty Goodman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontregretamilelyricschords.pro
+    imported_at: '2026-01-02'

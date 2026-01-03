@@ -1,0 +1,17 @@
+id: every-time-i-ask-my-heart
+title: Every Time I Ask My Heart
+artist: Leroy Van Dyke
+composers:
+- Larry Hovis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everytimeiaskmyheartlyricschords.pro
+    imported_at: '2026-01-02'

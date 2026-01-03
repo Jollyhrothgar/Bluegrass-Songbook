@@ -1,0 +1,18 @@
+id: it-s-just-a-matter-of-making-up-my-mind
+title: It's Just A Matter Of Making Up My Mind
+artist: Mickey Gilley
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsjustamatterofmakingupmymindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: misty-memories
+title: Misty Memories
+artist: Brenda Lee
+composers:
+- Ben Peters
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mistymemorieslyricschords.pro
+    imported_at: '2026-01-02'

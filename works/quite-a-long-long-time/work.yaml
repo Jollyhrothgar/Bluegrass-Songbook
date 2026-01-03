@@ -1,0 +1,17 @@
+id: quite-a-long-long-time
+title: Quite A Long Long Time
+artist: Statler Brothers
+composers:
+- Lew DeWitt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: quitealonglongtimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: in-its-own-little-way
+title: In Its Own Little Way
+artist: Dottie West
+composers:
+- Dottie West and Bill West
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: initsownlittlewaylyricschords.pro
+    imported_at: '2026-01-02'

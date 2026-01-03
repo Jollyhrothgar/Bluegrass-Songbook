@@ -1,0 +1,15 @@
+id: the-woman-he-loves
+title: The Woman He Loves
+artist: Alabama
+composers:
+- Troy Seals and Eddie Setser
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewomanheloveslyricschords.pro
+    imported_at: '2026-01-02'

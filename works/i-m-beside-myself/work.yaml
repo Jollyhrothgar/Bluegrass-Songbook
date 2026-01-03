@@ -1,0 +1,21 @@
+id: i-m-beside-myself
+title: I'm Beside Myself
+artist: Ricky Skaggs
+composers:
+- Carl Jackson and Ethan Reilly
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imbesidemyselflyricschords.pro
+    imported_at: '2026-01-02'

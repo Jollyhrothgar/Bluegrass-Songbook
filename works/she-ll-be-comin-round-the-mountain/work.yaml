@@ -1,0 +1,16 @@
+id: she-ll-be-comin-round-the-mountain
+title: She'll Be Comin' Round The Mountain
+artist: Connie Francis
+default_key: C
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shellbecominroundthemountainlyricschords.pro
+    imported_at: '2026-01-02'

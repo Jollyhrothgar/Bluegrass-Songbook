@@ -1,0 +1,17 @@
+id: walk-right-back-1
+title: Walk Right Back
+artist: Nanci Griffith
+composers:
+- Sonny Curtis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkrightbacklyricschords.pro
+    imported_at: '2026-01-02'

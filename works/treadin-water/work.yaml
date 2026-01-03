@@ -1,0 +1,15 @@
+id: treadin-water
+title: Treadin' Water
+artist: Earl Thomas Conley
+default_key: F
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: treadinwaterlyricschords.pro
+    imported_at: '2026-01-02'

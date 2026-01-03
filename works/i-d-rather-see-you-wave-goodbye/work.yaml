@@ -1,0 +1,14 @@
+id: i-d-rather-see-you-wave-goodbye
+title: I'd Rather See You Wave Goodbye
+artist: Vernon Oxford
+composers:
+- Buzz Rabin
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idratherseeyouwavegoodbyelyricschords.pro
+    imported_at: '2026-01-02'

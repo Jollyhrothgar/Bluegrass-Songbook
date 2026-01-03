@@ -1,0 +1,15 @@
+id: that-s-the-thing-about-love
+title: That's The Thing About Love
+artist: Don Williams
+composers:
+- Richard Leigh and Gary Nicholson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsthethingaboutlovelyricschords.pro
+    imported_at: '2026-01-02'

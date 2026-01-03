@@ -1,0 +1,18 @@
+id: acting-like-my-old-self-again
+title: Acting Like My Old Self Again
+artist: Wanda Jackson
+composers:
+- Red Simpson
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: actinglikemyoldselfagainlyricschords.pro
+    imported_at: '2026-01-02'

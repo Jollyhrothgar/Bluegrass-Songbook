@@ -1,0 +1,17 @@
+id: all-hat-no-cattle
+title: All Hat No Cattle
+artist: Gene Watson
+composers:
+- Lee Bach, Billy Troy, Leroy Anderson
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allhatnocattlelyricschords.pro
+    imported_at: '2026-01-02'

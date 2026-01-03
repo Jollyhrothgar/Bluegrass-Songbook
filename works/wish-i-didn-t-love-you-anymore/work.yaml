@@ -1,0 +1,15 @@
+id: wish-i-didn-t-love-you-anymore
+title: Wish I Didn't Love You Anymore
+artist: Dottie West
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wishididntloveyouanymorelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: does-it-have-to-end-this-way
+title: Does It Have To End This Way
+artist: Bob Paisley and The Southern Grass
+composers:
+- Mac Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doesithavetoendthiswaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: it-s-been-a-long-long-time
+title: It's Been a Long Long Time
+artist: Jimmy Dean
+composers:
+- Jule Styne and Sammy Cahn
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsbeenalonglongtimelyricschords.pro
+    imported_at: '2026-01-02'

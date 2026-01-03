@@ -1,0 +1,18 @@
+id: they-call-you-gigolette
+title: They Call You Gigolette
+artist: Roy Orbison
+composers:
+- Roy Orbison and Joe Melson
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theycallyougigolettelyricschords.pro
+    imported_at: '2026-01-02'

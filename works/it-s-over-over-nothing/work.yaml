@@ -1,0 +1,19 @@
+id: it-s-over-over-nothing
+title: It's Over Over Nothing
+artist: Hank Snow
+composers:
+- Betty Jean Robinson and Tony Seen
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsoverovernothinglyricschords.pro
+    imported_at: '2026-01-02'

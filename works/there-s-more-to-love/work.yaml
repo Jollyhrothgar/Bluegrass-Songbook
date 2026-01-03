@@ -1,0 +1,17 @@
+id: there-s-more-to-love
+title: There's More To Love
+artist: Jack Greene
+composers:
+- Ken Hunt and Barbara Greene
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresmoretolovelyricschords.pro
+    imported_at: '2026-01-02'

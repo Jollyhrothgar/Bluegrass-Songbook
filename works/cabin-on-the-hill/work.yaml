@@ -1,0 +1,17 @@
+id: cabin-on-the-hill
+title: Cabin On The Hill
+artist: Lester Flatt and Earl Scruggs
+composers:
+- B.L. Shook
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cabinonthehilllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: tie-your-dreams-to-mine
+title: Tie Your Dreams to Mine
+artist: Marty Robbins
+composers:
+- Tim DuBois, Sam Lorber,
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tieyourdreamstominelyricschords.pro
+    imported_at: '2026-01-02'

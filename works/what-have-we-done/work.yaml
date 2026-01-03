@@ -1,0 +1,18 @@
+id: what-have-we-done
+title: What Have We Done
+artist: Wanda Jackson
+composers:
+- Wendell Goodman and Wanda Jackson
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whathavewedonelyricschords.pro
+    imported_at: '2026-01-02'

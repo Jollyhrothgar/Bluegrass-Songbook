@@ -1,0 +1,17 @@
+id: make-my-heart-die-away
+title: Make My Heart Die Away
+artist: Wilburn Brothers
+composers:
+- Glen Johnson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makemyheartdieawaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-am-the-forest
+title: I Am The Forest
+artist: Willy Nelson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iamtheforestlyricschords.pro
+    imported_at: '2026-01-02'

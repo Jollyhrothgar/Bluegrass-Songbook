@@ -1,0 +1,17 @@
+id: from-the-bottle-to-the-bottom
+title: From The Bottle To The Bottom
+artist: Billy Walker
+composers:
+- Kris Kristofferson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromthebottletothebottomlyricschords.pro
+    imported_at: '2026-01-02'

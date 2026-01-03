@@ -1,0 +1,17 @@
+id: let-the-whole-world-sing-it-with-me
+title: Let The Whole World Sing It With Me
+artist: Wynn Stewart
+composers:
+- Dale Noe
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letthewholeworldsingitwithmelyricschords.pro
+    imported_at: '2026-01-02'

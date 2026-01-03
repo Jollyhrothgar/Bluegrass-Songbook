@@ -1,0 +1,19 @@
+id: gonna-be-strangers
+title: Gonna Be Strangers
+artist: Ernest Tubb
+composers:
+- Liz Anderson
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnabestrangerslyricschords.pro
+    imported_at: '2026-01-02'

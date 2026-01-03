@@ -1,0 +1,19 @@
+id: there-s-more-that-holds-the-picture
+title: There's More That Holds The Picture
+artist: Larry Sparks
+composers:
+- Marshal Warwick
+default_key: C
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresmorethatholdsthepicturelyricschords.pro
+    imported_at: '2026-01-02'

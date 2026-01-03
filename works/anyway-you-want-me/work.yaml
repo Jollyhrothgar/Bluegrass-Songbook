@@ -1,0 +1,15 @@
+id: anyway-you-want-me
+title: Anyway You Want Me
+artist: Gene Watson
+composers:
+- Leo Ofman
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anywayyouwantmelyricsandchords.pro
+    imported_at: '2026-01-02'

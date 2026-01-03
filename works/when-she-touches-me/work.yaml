@@ -1,0 +1,15 @@
+id: when-she-touches-me
+title: When She Touches Me
+artist: Johnny Duncan
+composers:
+- Carolyn Varga
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenshetouchesmelyricsandchords.pro
+    imported_at: '2026-01-02'

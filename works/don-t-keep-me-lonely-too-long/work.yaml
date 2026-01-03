@@ -1,0 +1,17 @@
+id: don-t-keep-me-lonely-too-long
+title: Don't Keep Me Lonely Too Long
+artist: Connie Smith
+composers:
+- Melba Montgomery
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontkeepmelonelytoolonglyricschords.pro
+    imported_at: '2026-01-02'

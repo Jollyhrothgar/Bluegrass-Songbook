@@ -1,0 +1,17 @@
+id: too-much-to-gain-to-lose-1
+title: Too Much To Gain To Lose
+artist: Doyle Lawson
+composers:
+- Reba Joyce (Dottie) Rambo
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomuchtogaintoloselyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: i-believe-in-good-old-country-music
+title: I Believe In Good Old Country Music
+artist: Charley Pride
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibelieveingoodoldcountrymusiclyricschords.pro
+    imported_at: '2026-01-02'

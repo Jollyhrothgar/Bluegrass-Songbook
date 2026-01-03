@@ -1,0 +1,15 @@
+id: one-boy-too-late
+title: One Boy Too Late
+artist: Ricky Nelson
+composers:
+- Tony Powers and Ellie Greenwich
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneboytoolatelyricschords.pro
+    imported_at: '2026-01-02'

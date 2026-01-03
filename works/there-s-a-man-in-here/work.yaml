@@ -1,0 +1,17 @@
+id: there-s-a-man-in-here
+title: There's A Man In Here
+artist: Statler Brother
+composers:
+- Harold Reid
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresamaninherelyricschords.pro
+    imported_at: '2026-01-02'

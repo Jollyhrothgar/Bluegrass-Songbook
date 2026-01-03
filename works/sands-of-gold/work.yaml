@@ -1,0 +1,17 @@
+id: sands-of-gold
+title: Sands of Gold
+artist: Webb Pierce
+composers:
+- Webb Pierce, Cliff Parman, Hal Eddy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sandsofgoldlyricsandchords.pro
+    imported_at: '2026-01-02'

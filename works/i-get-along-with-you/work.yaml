@@ -1,0 +1,17 @@
+id: i-get-along-with-you
+title: I Get Along With You
+artist: George Strait
+composers:
+- Dean Dillon, Frank Dycus, Buddy Cannon
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igetalongwithyoulyricschords.pro
+    imported_at: '2026-01-02'

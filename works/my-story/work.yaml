@@ -1,0 +1,17 @@
+id: my-story
+title: My Story
+artist: Hawkshaw Hawkins
+composers:
+- Hank Cochran
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mystorylyricschords.pro
+    imported_at: '2026-01-02'

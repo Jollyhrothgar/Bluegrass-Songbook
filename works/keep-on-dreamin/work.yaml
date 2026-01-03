@@ -1,0 +1,17 @@
+id: keep-on-dreamin
+title: Keep On Dreamin'
+artist: Alabama
+composers:
+- Jeff Cook and Richard Scott
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keepondreaminlyricschords.pro
+    imported_at: '2026-01-02'

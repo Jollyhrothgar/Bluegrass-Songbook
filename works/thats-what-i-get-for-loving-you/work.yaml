@@ -1,0 +1,17 @@
+id: thats-what-i-get-for-loving-you
+title: That’s What I Get For Loving You
+artist: Ray Price
+composers:
+- Don Helms and Estille E. Merriman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatigetforlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

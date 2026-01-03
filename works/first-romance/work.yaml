@@ -1,0 +1,18 @@
+id: first-romance
+title: First Romance
+artist: Conway Twitty
+composers:
+- Conway Twitty and Vincent Matthews
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: firstromancelyricschords.pro
+    imported_at: '2026-01-02'

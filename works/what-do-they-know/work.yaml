@@ -1,0 +1,18 @@
+id: what-do-they-know
+title: What Do They Know
+artist: Tanya Tucker
+composers:
+- Richard Ross and Donny Kees
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatdotheyknowlyricschords.pro
+    imported_at: '2026-01-02'

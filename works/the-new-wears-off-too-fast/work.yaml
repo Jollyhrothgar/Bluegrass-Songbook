@@ -1,0 +1,16 @@
+id: the-new-wears-off-too-fast
+title: The New Wears Off Too Fast
+artist: Hank Thompson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenewwearsofftoofastlyricschords.pro
+    imported_at: '2026-01-02'

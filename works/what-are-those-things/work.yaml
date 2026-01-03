@@ -1,0 +1,17 @@
+id: what-are-those-things
+title: What Are Those Things
+artist: Roger Miller
+composers:
+- Dallas Frazier and A.L. Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatarethosethingslyricschords.pro
+    imported_at: '2026-01-02'

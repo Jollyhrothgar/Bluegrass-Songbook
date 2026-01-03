@@ -1,0 +1,17 @@
+id: if-love-gets-there-before-i-do
+title: If Love Gets There Before I Do
+artist: Don Williams
+composers:
+- Dickey Lee and Kerry Chater
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iflovegetstherebeforeidolyricschords.pro
+    imported_at: '2026-01-02'

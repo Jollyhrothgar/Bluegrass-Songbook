@@ -1,0 +1,17 @@
+id: a-devil-like-me-needs-an-angel-like-you
+title: A Devil Like Me Needs An Angel Like You
+artist: Buck Owens
+composers:
+- Red Simpson and Don Rich
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: adevillikemeneedsanangellikeyoulyricschords.pro
+    imported_at: '2026-01-02'

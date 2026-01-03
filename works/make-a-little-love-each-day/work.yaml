@@ -1,0 +1,17 @@
+id: make-a-little-love-each-day
+title: Make A Little Love Each Day
+artist: Moe Bandy
+composers:
+- Buck Moore
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makealittleloveeachdaylyricschords.pro
+    imported_at: '2026-01-02'

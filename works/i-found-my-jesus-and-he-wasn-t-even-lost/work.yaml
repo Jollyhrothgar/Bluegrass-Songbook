@@ -1,0 +1,17 @@
+id: i-found-my-jesus-and-he-wasn-t-even-lost
+title: I Found My Jesus And He Wasn't Even Lost
+artist: Carl Smith
+composers:
+- Lytle Moe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifoundmyjesusandhewasntevenlostlyricschords.pro
+    imported_at: '2026-01-02'

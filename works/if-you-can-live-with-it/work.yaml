@@ -1,0 +1,15 @@
+id: if-you-can-live-with-it
+title: If You Can Live With It
+artist: Bill Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoucanlivewithitlyricschords.pro
+    imported_at: '2026-01-02'

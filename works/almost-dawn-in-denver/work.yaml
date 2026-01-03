@@ -1,0 +1,17 @@
+id: almost-dawn-in-denver
+title: Almost Dawn in Denver
+artist: Faron Young
+composers:
+- Cile Davis, Billy J. Deaton, Clyde Pitts, Jr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: almostdawnindenverlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: where-the-tree-is
+title: Where The Tree Is
+artist: Sonny James
+composers:
+- Sonny James and Carole Smith
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherethetreeislyricschords.pro
+    imported_at: '2026-01-02'

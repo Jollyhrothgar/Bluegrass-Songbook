@@ -1,0 +1,17 @@
+id: he-came-a-long-way
+title: He Came A Long Way
+artist: Carl and Pearl Butler
+composers:
+- Jimmy Campbell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hecamealongwaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: warm-place-in-the-snow
+title: Warm Place In The Snow
+artist: John Anderson
+composers:
+- Bill Rice, Sharon Vaughn, John W. Ryles
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: warmplaceinthesnowlyricschords.pro
+    imported_at: '2026-01-02'

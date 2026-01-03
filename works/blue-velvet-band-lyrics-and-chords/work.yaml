@@ -1,0 +1,17 @@
+id: blue-velvet-band-lyrics-and-chords
+title: Blue Velvet Band Lyrics and Chords
+artist: Hank Snow
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluevelvetbandlyricschords.pro
+    imported_at: '2026-01-02'

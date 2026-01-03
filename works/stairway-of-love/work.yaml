@@ -1,0 +1,17 @@
+id: stairway-of-love
+title: Stairway of Love
+artist: Mary Robbins
+composers:
+- Roy C. Bennett and Sid Tepper
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stairwayoflovelyricschords.pro
+    imported_at: '2026-01-02'

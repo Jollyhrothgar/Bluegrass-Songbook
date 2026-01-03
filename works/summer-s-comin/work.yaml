@@ -1,0 +1,19 @@
+id: summer-s-comin
+title: Summer's Comin'
+artist: Clint Black
+composers:
+- Clint Black and Hayden Nicholas
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: summerscominlyricschords.pro
+    imported_at: '2026-01-02'

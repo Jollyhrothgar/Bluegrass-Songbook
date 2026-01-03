@@ -1,0 +1,19 @@
+id: there-s-no-room-in-my-heart-for-the-blues
+title: There's No Room in My Heart For the Blues
+artist: Hank Williams
+composers:
+- Fred Rose and Zeb Turner
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnoroominmyheartfortheblueslyricschords.pro
+    imported_at: '2026-01-02'

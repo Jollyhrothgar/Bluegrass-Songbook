@@ -1,0 +1,17 @@
+id: after-the-fire-is-gone-lyrics-chords
+title: After the Fire is Gone Lyrics chords
+artist: Free Song Lyrics and Chords
+composers:
+- L.E. White
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterthefireisgonelyricschords.pro
+    imported_at: '2026-01-02'

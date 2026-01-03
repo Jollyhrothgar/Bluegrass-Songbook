@@ -1,0 +1,15 @@
+id: this-ain-t-my-first-rodeo
+title: This Ain't My First Rodeo
+artist: Vern Gosdin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisaintmyfirstrodeolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: just-how-bad-do-you-wanna-be-good
+title: Just How Bad Do You Wanna Be Good
+artist: Mel Tillis
+composers:
+- Judy Tillis
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justhowbaddoyouwannabegoodlyricschords.pro
+    imported_at: '2026-01-02'

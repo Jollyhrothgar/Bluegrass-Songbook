@@ -1,0 +1,17 @@
+id: i-think-we-ve-let-it-slip-away-again
+title: I Think We've Let It Slip Away Again
+artist: Johnny Rodriguez
+composers:
+- Bob McDill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithinkweveletitslipawayagainlyricschords.pro
+    imported_at: '2026-01-02'

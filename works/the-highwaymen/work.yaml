@@ -1,0 +1,17 @@
+id: the-highwaymen
+title: The Highwaymen
+artist: Willie Nelson, Johnny Cash, Kris Kristofferson and Waylon Jennings
+composers:
+- Jimmy Webb
+default_key: Am
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thehighwaymenlyricschords.pro
+    imported_at: '2026-01-02'

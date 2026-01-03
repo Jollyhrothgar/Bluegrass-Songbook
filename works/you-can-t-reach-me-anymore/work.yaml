@@ -1,0 +1,20 @@
+id: you-can-t-reach-me-anymore
+title: You Can't Reach Me Anymore
+artist: Dolly Parton
+composers:
+- Dolly Parton and Dorothy Jo Hope
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantreachmeanymorelyricschords.pro
+    imported_at: '2026-01-02'

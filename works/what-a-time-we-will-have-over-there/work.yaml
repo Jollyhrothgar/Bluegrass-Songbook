@@ -1,0 +1,19 @@
+id: what-a-time-we-will-have-over-there
+title: What a Time We Will Have Over There
+artist: The Oak Ridge Boys
+composers:
+- Richard R. Reid and Vivian L. Reid
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatatimewewillhaveovertherelyricschords.pro
+    imported_at: '2026-01-02'

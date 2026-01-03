@@ -1,0 +1,18 @@
+id: a-place-to-hang-my-hat
+title: A Place To Hang My Hat
+artist: Randy Travis
+composers:
+- Byron Hill, Shawn Camp, Brice Long
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aplacetohangmyhatlyricschords.pro
+    imported_at: '2026-01-02'

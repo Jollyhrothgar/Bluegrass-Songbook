@@ -1,0 +1,17 @@
+id: you-saw-me-off-but-will-you-see-me-in
+title: You Saw Me Off (But Will You See Me In)
+artist: Stonewall Jackson
+composers:
+- Hugh X. Lewis and Benny Joy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yousawmeoffbutwillyouseemeinlyricschords.pro
+    imported_at: '2026-01-02'

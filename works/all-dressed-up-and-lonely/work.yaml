@@ -1,0 +1,17 @@
+id: all-dressed-up-and-lonely
+title: All Dressed Up and Lonely
+artist: Jim Reeves
+composers:
+- Eddy Shaw
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alldressedupandlonelylyricschords.pro
+    imported_at: '2026-01-02'

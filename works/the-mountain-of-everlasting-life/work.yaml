@@ -1,0 +1,17 @@
+id: the-mountain-of-everlasting-life
+title: The Mountain Of Everlasting Life
+artist: Ferlin Husky
+composers:
+- Dallas Frazier and Al Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themountainofeverlastinglifelyricschords.pro
+    imported_at: '2026-01-02'

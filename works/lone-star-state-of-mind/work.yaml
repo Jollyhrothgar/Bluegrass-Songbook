@@ -1,0 +1,17 @@
+id: lone-star-state-of-mind
+title: Lone Star State Of Mind
+artist: Rhonda Vincent
+composers:
+- Pat Alger, Fred Koller, Eugene Albert Levine
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonestarstateofmindlyricschords.pro
+    imported_at: '2026-01-02'

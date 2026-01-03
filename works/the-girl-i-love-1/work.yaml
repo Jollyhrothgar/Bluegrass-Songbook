@@ -1,0 +1,17 @@
+id: the-girl-i-love-1
+title: The Girl I Love
+artist: Carl Smith
+composers:
+- Eddy Raven
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegirlilovelyricschords.pro
+    imported_at: '2026-01-02'

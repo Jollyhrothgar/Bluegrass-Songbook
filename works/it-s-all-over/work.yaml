@@ -1,0 +1,18 @@
+id: it-s-all-over
+title: It's All Over
+artist: The Everly Brothers
+composers:
+- Don Everly
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsalloverlyricsandchords.pro
+    imported_at: '2026-01-02'

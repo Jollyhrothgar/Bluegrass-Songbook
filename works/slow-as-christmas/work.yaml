@@ -1,0 +1,17 @@
+id: slow-as-christmas
+title: Slow As Christmas
+artist: Clint Black
+composers:
+- Clint Black and Hayden Nicholas
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: slowasChristmaslyricschords.pro
+    imported_at: '2026-01-02'

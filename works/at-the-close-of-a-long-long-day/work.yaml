@@ -1,0 +1,17 @@
+id: at-the-close-of-a-long-long-day
+title: At The Close Of A Long Long Day
+artist: Slim Whitman
+composers:
+- Johnny Marvin and Billy Moll
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atthecloseofalonglongdaylyricschords.pro
+    imported_at: '2026-01-02'

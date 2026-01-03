@@ -1,0 +1,17 @@
+id: what-if-he-dont-love-you-like-i-do
+title: What If He Don’t Love You Like I Do
+artist: Ray Price
+composers:
+- Don Helms and Rusty Gabbard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatifhedontloveyoulikeidolyricschords.pro
+    imported_at: '2026-01-02'

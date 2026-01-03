@@ -1,0 +1,16 @@
+id: just-the-way-that-i-am
+title: Just The Way That I Am
+artist: Mickey Gilley
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justthewaythatiamlyricschords.pro
+    imported_at: '2026-01-02'

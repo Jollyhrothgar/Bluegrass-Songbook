@@ -1,0 +1,18 @@
+id: if-i-could-only-win-your-love
+title: If I Could Only Win Your Love
+artist: Emmylou Harris
+composers:
+- Charlie Louvin and Ira Louvin
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldonlywinyourlovelyricschords.pro
+    imported_at: '2026-01-02'

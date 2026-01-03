@@ -1,0 +1,17 @@
+id: how-far-our-love-goes
+title: How Far Our Love Goes
+artist: T.G.Sheppard
+composers:
+- Curly Putman, Jan Crutchfield, Buddy Killen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howfarourlovegoeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: dreaming-with-tears-in-my-eyes
+title: Dreaming With Tears In My Eyes
+artist: JImmy Rodgers
+composers:
+- Waldo O'Neal and Jimmie Rodgers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dreamingwithtearsinmyeyeslyricschords.pro
+    imported_at: '2026-01-02'

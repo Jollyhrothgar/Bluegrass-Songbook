@@ -1,0 +1,18 @@
+id: long-long-ago
+title: Long Long Ago
+artist: Marty Robbins
+composers:
+- Thomas Haynes Bayly
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longlongagolyricsandchords.pro
+    imported_at: '2026-01-02'

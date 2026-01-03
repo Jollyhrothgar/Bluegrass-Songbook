@@ -1,0 +1,18 @@
+id: love-will-turn-you-around
+title: Love Will Turn You Around
+artist: Kenny Rogers
+composers:
+- David Malloy, Thom Schuyler, Kenny Rogers, Even Stevens
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovewillturnyouaroundlyricschords.pro
+    imported_at: '2026-01-02'

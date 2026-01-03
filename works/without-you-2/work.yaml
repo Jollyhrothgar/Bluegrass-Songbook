@@ -1,0 +1,19 @@
+id: without-you-2
+title: Without You
+artist: Mickey Gilley
+composers:
+- Ahmad Jamal
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withoutyoulyricschords.pro
+    imported_at: '2026-01-02'

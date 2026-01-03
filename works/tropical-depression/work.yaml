@@ -1,0 +1,17 @@
+id: tropical-depression
+title: Tropical Depression
+artist: Alan Jackson
+composers:
+- Jim McBride, Charlie Craig, Alan Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tropicaldepressionlyricschords.pro
+    imported_at: '2026-01-02'

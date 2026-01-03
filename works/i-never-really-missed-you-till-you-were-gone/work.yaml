@@ -1,0 +1,15 @@
+id: i-never-really-missed-you-till-you-were-gone
+title: I Never Really Missed You (Till You Were Gone)
+artist: Tommy Overstreet
+composers:
+- Johnny Cunningham and Chris Dodson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineverreallymissedyoutillyouweregonelyricschords.pro
+    imported_at: '2026-01-02'

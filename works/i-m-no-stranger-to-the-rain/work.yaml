@@ -1,0 +1,15 @@
+id: i-m-no-stranger-to-the-rain
+title: I'm No Stranger To The Rain
+artist: Keith Whitley
+composers:
+- Sonny Curtis and Ron Hellard
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnostrangertotherainlyricschords.pro
+    imported_at: '2026-01-02'

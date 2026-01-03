@@ -1,0 +1,17 @@
+id: can-t-you-hear-me-call-your-name
+title: Can't You Hear Me Call Your Name
+artist: Carl Belew
+composers:
+- Clyde Beam, Charles Jiles, W.S. Stevenson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantyouhearmecallyournamelyricschords.pro
+    imported_at: '2026-01-02'

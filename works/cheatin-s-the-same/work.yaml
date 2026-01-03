@@ -1,0 +1,17 @@
+id: cheatin-s-the-same
+title: Cheatin's The Same
+artist: Red Steagall
+composers:
+- Glenn Sutton and Larry Cheshier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cheatinsthesamelyricschords.pro
+    imported_at: '2026-01-02'

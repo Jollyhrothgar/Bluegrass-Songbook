@@ -1,0 +1,17 @@
+id: fallin-as-fast-as-i-can
+title: Fallin' As Fast As I Can
+artist: Billy Walker
+composers:
+- Rory Bourke, Gene Dubois, Johnny Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallinasfastasicanlyricschords.pro
+    imported_at: '2026-01-02'

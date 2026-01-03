@@ -1,0 +1,17 @@
+id: drinking-my-way-back-home
+title: Drinking My Way Back Home
+artist: Gene Watson
+composers:
+- Don J. Scaife, Phil Thomas, Ronny Scaife
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drinkingmywaybackhomelyricschords.pro
+    imported_at: '2026-01-02'

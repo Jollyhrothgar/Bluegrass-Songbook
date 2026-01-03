@@ -1,0 +1,20 @@
+id: your-love-has-lifted-me-higher-and-higher
+title: Your Love Has Lifted Me Higher And Higher
+artist: Dolly Parton
+composers:
+- Carl Smith and Gary Jackson
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourlovehasliftedmehigherandhigherlyricschords.pro
+    imported_at: '2026-01-02'

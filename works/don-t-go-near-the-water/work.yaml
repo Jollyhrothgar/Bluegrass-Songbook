@@ -1,0 +1,19 @@
+id: don-t-go-near-the-water
+title: Don't Go Near The Water
+artist: Sammy Kershaw
+composers:
+- Chapin Hartford and Jim Foster
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontgonearthewaterlyricschords.pro
+    imported_at: '2026-01-02'

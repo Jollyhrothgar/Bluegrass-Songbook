@@ -1,0 +1,17 @@
+id: if-i-could-just-see-you-now
+title: If I Could Just See You Now
+artist: Alabama
+composers:
+- Jeff Cook and Linne Black
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldjustseeyounowlyricschords.pro
+    imported_at: '2026-01-02'

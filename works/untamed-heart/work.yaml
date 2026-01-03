@@ -1,0 +1,17 @@
+id: untamed-heart
+title: Untamed Heart
+artist: Billy Walker
+composers:
+- Howard Hausey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: untamedheartlyricschords.pro
+    imported_at: '2026-01-02'

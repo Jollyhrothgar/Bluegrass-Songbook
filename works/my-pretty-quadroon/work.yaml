@@ -1,0 +1,20 @@
+id: my-pretty-quadroon
+title: My Pretty Quadroon
+artist: Jerry Lee Lewis
+composers:
+- Fred Howard and Nat Vincent
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myprettyquadroonlyricschords.pro
+    imported_at: '2026-01-02'

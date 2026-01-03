@@ -1,0 +1,17 @@
+id: pretty-little-baby
+title: Pretty Little Baby
+artist: Connie Francis
+composers:
+- Don Stirling and Bill Nauman
+default_key: C
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prettylittlebabylyricschords.pro
+    imported_at: '2026-01-02'

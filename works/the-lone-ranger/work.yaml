@@ -1,0 +1,17 @@
+id: the-lone-ranger
+title: The Lone Ranger
+artist: George Jones
+composers:
+- Gerald Smith, Billy Yates, John Northrup
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelonerangerlyricschords.pro
+    imported_at: '2026-01-02'

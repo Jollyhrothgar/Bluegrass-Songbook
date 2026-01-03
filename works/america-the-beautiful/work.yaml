@@ -1,0 +1,15 @@
+id: america-the-beautiful
+title: America The Beautiful
+artist: Boxcar Willie
+composers:
+- Katherine Lee Bates, Samuel A. Ward
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Americathebeautifullyricschords.pro
+    imported_at: '2026-01-02'

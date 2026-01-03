@@ -1,0 +1,18 @@
+id: merry-texas-christmas-you-all
+title: Merry Texas Christmas You All
+artist: Gene Autry
+composers:
+- Leon Harris and Bob Miller
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: merrytexasChristmasyoualllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: when-there-s-a-fire-in-your-heart
+title: When There's A Fire In Your Heart
+artist: Tammy Wynette
+composers:
+- Merle Kilgore and Spencer Williams
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentheresafireinyourheartlyricschords.pro
+    imported_at: '2026-01-02'

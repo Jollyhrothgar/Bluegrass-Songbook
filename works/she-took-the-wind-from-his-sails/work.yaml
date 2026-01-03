@@ -1,0 +1,18 @@
+id: she-took-the-wind-from-his-sails
+title: She Took The Wind From His Sails
+artist: George Strait
+composers:
+- Dean Dillon and Donny Kees
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shetookthewindfromhissailslyricschords.pro
+    imported_at: '2026-01-02'

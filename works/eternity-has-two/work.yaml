@@ -1,0 +1,15 @@
+id: eternity-has-two
+title: Eternity Has Two
+artist: Doyle Lawson
+composers:
+- Dee Gaskin and John Swain
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eternityhastwolyricschords.pro
+    imported_at: '2026-01-02'

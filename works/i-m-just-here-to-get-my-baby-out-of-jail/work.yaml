@@ -1,0 +1,17 @@
+id: i-m-just-here-to-get-my-baby-out-of-jail
+title: I'm Just Here to Get My Baby Out of Jail
+artist: Everly Brothers
+composers:
+- Karl Davis and Harty Taylor
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imjustheretogetmybabyoutofjaillyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,22 @@
+id: i-was-there-when-it-happened
+title: I Was There When It Happened
+artist: Johnny Cash
+composers:
+- Jimmie Davis and Fern Jones
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwastherewhenithappenedlyricschords.pro
+    imported_at: '2026-01-02'

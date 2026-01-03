@@ -1,0 +1,17 @@
+id: answer-to-the-galveston-rose
+title: Answer To The Galveston Rose
+artist: Hank Snow
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: answertothegalvestonroselyricschords.pro
+    imported_at: '2026-01-02'

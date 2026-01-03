@@ -1,0 +1,18 @@
+id: my-turn
+title: My Turn
+artist: Reba McEntire
+composers:
+- Jay Huguely and Len Chiriacka
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myturnlyricschords.pro
+    imported_at: '2026-01-02'

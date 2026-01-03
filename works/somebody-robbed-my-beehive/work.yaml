@@ -1,0 +1,18 @@
+id: somebody-robbed-my-beehive
+title: Somebody Robbed My Beehive
+artist: George Morgan
+composers:
+- Vic McAlpin
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodyrobbedmybeehivelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: dailey-s-reel
+title: Dailey's Reel
+artist: Traditional
+default_key: G
+tags:
+- Jazzy
+- Instrumental
+- Bluegrass
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

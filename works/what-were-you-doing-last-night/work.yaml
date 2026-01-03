@@ -1,0 +1,17 @@
+id: what-were-you-doing-last-night
+title: What Were You Doing Last Night
+artist: Jim Reeves
+composers:
+- recorded by Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatwereyoudoinglastnightlyricschords.pro
+    imported_at: '2026-01-02'

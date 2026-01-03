@@ -1,0 +1,17 @@
+id: thank-goodness-it-s-forever
+title: Thank Goodness It's Forever
+artist: Jean Shepard
+composers:
+- Larry Butler
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankgoodnessitsforeverlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: seasons-of-my-heart-1
+title: Seasons Of My Heart
+artist: George Jones
+composers:
+- George Jones & Darrell Edwards
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: seasonsofmyheartlyricschords.pro
+    imported_at: '2026-01-02'

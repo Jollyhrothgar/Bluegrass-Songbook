@@ -1,0 +1,17 @@
+id: everything-s-found-a-home-with-me-but-you
+title: Everything's Found A Home With Me But You
+artist: Connie Smith
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingsfoundahomewithmebutyoulyricschords.pro
+    imported_at: '2026-01-02'

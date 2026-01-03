@@ -1,0 +1,18 @@
+id: lead-me-to-that-rock
+title: Lead Me To That Rock
+artist: The Oak Ridge Boys
+composers:
+- Billy Sherrill
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leadmetothatrocklyricschords.pro
+    imported_at: '2026-01-02'

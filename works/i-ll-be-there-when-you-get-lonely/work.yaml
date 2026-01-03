@@ -1,0 +1,15 @@
+id: i-ll-be-there-when-you-get-lonely
+title: I'll Be There When You Get Lonely
+artist: Ray Price
+composers:
+- Dave Burgess
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbetherewhenyougetlonelylyricschords.pro
+    imported_at: '2026-01-02'

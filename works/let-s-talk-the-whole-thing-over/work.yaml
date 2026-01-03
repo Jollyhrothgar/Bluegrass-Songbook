@@ -1,0 +1,17 @@
+id: let-s-talk-the-whole-thing-over
+title: Let's Talk The Whole Thing Over
+artist: Ricky Nelson
+composers:
+- Mike McCaffery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letstalkthewholethingoverlyricschords.pro
+    imported_at: '2026-01-02'

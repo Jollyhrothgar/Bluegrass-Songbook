@@ -1,0 +1,15 @@
+id: best-of-all-possible-worlds-1
+title: Best Of All Possible Worlds
+artist: Roger Miller
+composers:
+- Kris Kristofferson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bestofallpossibleworldslyricschords.pro
+    imported_at: '2026-01-02'

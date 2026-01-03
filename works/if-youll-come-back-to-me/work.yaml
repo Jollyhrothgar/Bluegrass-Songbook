@@ -1,0 +1,17 @@
+id: if-youll-come-back-to-me
+title: If You’ll Come Back To Me
+artist: Bob Wills
+composers:
+- Johnny Gimble and Robert James Wills
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoullcomebacktomelyricschords.pro
+    imported_at: '2026-01-02'

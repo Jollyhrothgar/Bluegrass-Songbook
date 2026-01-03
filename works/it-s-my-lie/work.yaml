@@ -1,0 +1,15 @@
+id: it-s-my-lie
+title: It's My Lie
+artist: Gene Watson
+composers:
+- Timothy Menzies and Monty Criswell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsmylielyricschords.pro
+    imported_at: '2026-01-02'

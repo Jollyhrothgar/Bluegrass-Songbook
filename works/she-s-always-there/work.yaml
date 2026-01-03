@@ -1,0 +1,15 @@
+id: she-s-always-there
+title: She's Always There
+artist: Vernon Oxford
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesalwaystherelyricschords.pro
+    imported_at: '2026-01-02'

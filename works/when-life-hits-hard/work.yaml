@@ -1,0 +1,20 @@
+id: when-life-hits-hard
+title: When Life Hits Hard
+artist: Ricky Skaggs
+composers:
+- Mark D. Sanders and Steve Seskin
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenlifehitshardlyricschords.pro
+    imported_at: '2026-01-02'

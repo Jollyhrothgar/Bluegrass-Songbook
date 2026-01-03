@@ -1,0 +1,17 @@
+id: rocking-alone-in-an-old-rocking-chair
+title: Rocking Alone in an Old Rocking Chair
+artist: Everly Brothers
+composers:
+- Allen L. Carvell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockingaloneinanoldrockingchairlyricschords.pro
+    imported_at: '2026-01-02'

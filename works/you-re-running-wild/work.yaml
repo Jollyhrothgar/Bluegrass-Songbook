@@ -1,0 +1,18 @@
+id: you-re-running-wild
+title: You're Running Wild
+artist: Emmylou Harris
+composers:
+- Ray Edenton and Don Winters
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourerunningwildlyricschords.pro
+    imported_at: '2026-01-02'

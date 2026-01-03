@@ -1,0 +1,18 @@
+id: river-of-life
+title: River Of Life
+artist: The Oak Ridge Boys
+composers:
+- Adger M. Pace and Marvin Dalton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: riveroflifelyricschords.pro
+    imported_at: '2026-01-02'

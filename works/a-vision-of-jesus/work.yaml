@@ -1,0 +1,17 @@
+id: a-vision-of-jesus
+title: A Vision Of Jesus
+artist: Doyle Lawson
+composers:
+- Johnnie Masters and Don Shaw
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: avisionofJesuslyricschords.pro
+    imported_at: '2026-01-02'

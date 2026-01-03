@@ -1,0 +1,19 @@
+id: polka-dot-blues
+title: Polka Dot Blues
+artist: Hank Snow
+composers:
+- Jimmie Rodgers
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: polkadotblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: help-me-lord
+title: Help Me Lord
+artist: Doyle Lawson
+composers:
+- Brian Faust
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helpmelordlyricschords.pro
+    imported_at: '2026-01-02'

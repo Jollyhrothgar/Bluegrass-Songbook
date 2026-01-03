@@ -1,0 +1,15 @@
+id: hey-would-you-hold-it-down
+title: Hey Would You Hold It Down
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heywouldyouholditdownlyricschords.pro
+    imported_at: '2026-01-02'

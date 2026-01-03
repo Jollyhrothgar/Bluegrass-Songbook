@@ -1,0 +1,17 @@
+id: give-me-liberty-or-give-me-all-your-love
+title: Give Me Liberty (Or Give Me All Your Love)
+artist: Moe Bandy
+composers:
+- Dallas Frazier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givemelibertyorgivemeallyourlovelyricschords.pro
+    imported_at: '2026-01-02'

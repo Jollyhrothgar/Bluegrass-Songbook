@@ -1,0 +1,18 @@
+id: rain-please-go-away
+title: Rain Please Go Away
+artist: Dan Tyminski
+composers:
+- Del McCoury
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rainpleasegoawaylyricschords.pro
+    imported_at: '2026-01-02'

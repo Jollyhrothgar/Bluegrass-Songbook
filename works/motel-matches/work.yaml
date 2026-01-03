@@ -1,0 +1,17 @@
+id: motel-matches
+title: Motel Matches
+artist: Moe Bandy
+composers:
+- Don Pfrimmer and Blake Mevis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: motelmatcheslyricschords.pro
+    imported_at: '2026-01-02'

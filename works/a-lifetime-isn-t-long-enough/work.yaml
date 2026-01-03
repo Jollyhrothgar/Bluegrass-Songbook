@@ -1,0 +1,15 @@
+id: a-lifetime-isn-t-long-enough
+title: A Lifetime isn't Long Enough
+artist: Faron Young
+composers:
+- Virginia Midgett and Arthur Korb
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alifetimeisntlongenoughlyricschords.pro
+    imported_at: '2026-01-02'

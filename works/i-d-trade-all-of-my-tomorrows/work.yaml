@@ -1,0 +1,17 @@
+id: i-d-trade-all-of-my-tomorrows
+title: I'd Trade All Of My Tomorrows
+artist: Eddy Arnold
+composers:
+- Jenny Lou Carson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idtradeallofmytomorrowslyricschords.pro
+    imported_at: '2026-01-02'

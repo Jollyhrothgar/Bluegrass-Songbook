@@ -1,0 +1,18 @@
+id: think-it-over-2
+title: Think It Over
+artist: Buddy Holly
+composers:
+- Petty Norman and Buddy Holly
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thinkitoverlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: come-home-to-my-heart
+title: Come Home To My Heart
+artist: Johnny Paycheck
+composers:
+- Country Johnny Mathis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comehometomyheartlyricschords.pro
+    imported_at: '2026-01-02'

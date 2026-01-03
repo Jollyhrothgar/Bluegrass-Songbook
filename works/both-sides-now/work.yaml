@@ -1,0 +1,19 @@
+id: both-sides-now
+title: Both Sides Now
+artist: Anne Murray
+composers:
+- Joni Mitchell
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bothsidesnowlyricschords.pro
+    imported_at: '2026-01-02'

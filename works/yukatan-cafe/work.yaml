@@ -1,0 +1,19 @@
+id: yukatan-cafe
+title: Yukatan Cafe
+artist: Anne Murray
+composers:
+- Adam Mitchell
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yukatancafelyricschords.pro
+    imported_at: '2026-01-02'

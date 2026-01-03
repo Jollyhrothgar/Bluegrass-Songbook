@@ -1,0 +1,17 @@
+id: if-i-needed-you
+title: If I Needed You
+artist: Don Williams
+composers:
+- Townes Van Zandt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifineededyoulyricschords.pro
+    imported_at: '2026-01-02'

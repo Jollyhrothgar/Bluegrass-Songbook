@@ -1,0 +1,17 @@
+id: don-t-laugh
+title: Don't Laugh
+artist: Doyle Lawson
+composers:
+- Rebe Gosdin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontlaughlyricschords.pro
+    imported_at: '2026-01-02'

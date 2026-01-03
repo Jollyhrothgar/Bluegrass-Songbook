@@ -1,0 +1,13 @@
+id: missing-her-is-easier-this-way
+title: Missing Her Is Easier This Way
+artist: Johnny Rodriguez
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: missingheriseasierthiswaylyricschords.pro
+    imported_at: '2026-01-02'

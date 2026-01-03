@@ -1,0 +1,17 @@
+id: waiting-on-the-light-to-change
+title: Waiting On The Light To Change
+artist: Randy Travis
+composers:
+- Richard C. Leigh and Gary Tolbert Nicholson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waitingonthelighttochangelyricschords.pro
+    imported_at: '2026-01-02'

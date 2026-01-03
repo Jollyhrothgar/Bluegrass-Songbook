@@ -1,0 +1,18 @@
+id: lessons-learned
+title: Lessons Learned
+artist: Tracy Lawrence
+composers:
+- Larry Boone, Paul Nelson, Tracy Lawrence
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lessonslearnedlyricsandchords.pro
+    imported_at: '2026-01-02'

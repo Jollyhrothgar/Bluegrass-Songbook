@@ -1,0 +1,17 @@
+id: wedding-cake
+title: Wedding Cake
+artist: Connie Smith
+composers:
+- Myra Smith and Margaret Lewis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weddingcakelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-prettiest-flowers-will-be-blooming
+title: The Prettiest Flowers Will Be Blooming
+artist: The Forbes Family
+composers:
+- Albert E. Brumley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theprettiestflowerswillbebloominglyricschords.pro
+    imported_at: '2026-01-02'

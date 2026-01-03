@@ -1,0 +1,15 @@
+id: the-day-will-come
+title: The Day Will Come
+artist: George Morgan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedaywillcomelyricschords.pro
+    imported_at: '2026-01-02'

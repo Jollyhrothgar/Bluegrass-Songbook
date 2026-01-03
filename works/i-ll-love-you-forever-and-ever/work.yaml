@@ -1,0 +1,15 @@
+id: i-ll-love-you-forever-and-ever
+title: I'll Love You Forever And Ever
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illloveyouforeverandeverlyricschords.pro
+    imported_at: '2026-01-02'

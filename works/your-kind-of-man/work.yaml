@@ -1,0 +1,17 @@
+id: your-kind-of-man
+title: Your Kind Of Man
+artist: Bob Luman
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourkindofmanlyricschords.pro
+    imported_at: '2026-01-02'

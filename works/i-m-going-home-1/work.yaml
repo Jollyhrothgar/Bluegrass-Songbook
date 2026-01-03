@@ -1,0 +1,19 @@
+id: i-m-going-home-1
+title: I'm Going Home
+artist: Hank Williams
+composers:
+- Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgoinghomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: love-can-t-wait
+title: Love Can't Wait
+artist: Marty Robbins
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovecantwaitlyricschords.pro
+    imported_at: '2026-01-02'

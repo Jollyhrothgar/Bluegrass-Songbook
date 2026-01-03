@@ -1,0 +1,17 @@
+id: old-man-river-i-ve-come-to-talk-again
+title: Old Man River (I've Come To Talk Again)
+artist: Reba McEntire
+composers:
+- Ronny Scaife and Danny Hogan
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldmanriverIvecometotalkagainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: god-put-a-rainbow-in-the-clouds
+title: God put a rainbow in the Clouds
+artist: Chuck Wagon Gang
+composers:
+- Andrew Jenkins and Irene Spain
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godputarainbowinthecloudslyricschords.pro
+    imported_at: '2026-01-02'

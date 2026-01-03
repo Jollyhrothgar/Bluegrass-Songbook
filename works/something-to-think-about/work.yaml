@@ -1,0 +1,16 @@
+id: something-to-think-about
+title: Something To Think About
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingtothinkaboutlyricschords.pro
+    imported_at: '2026-01-02'

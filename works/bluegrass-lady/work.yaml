@@ -1,0 +1,17 @@
+id: bluegrass-lady
+title: Bluegrass Lady
+artist: Billy Walker
+composers:
+- John F. Riggs and Billy M. Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluegrassladylyricschords.pro
+    imported_at: '2026-01-02'

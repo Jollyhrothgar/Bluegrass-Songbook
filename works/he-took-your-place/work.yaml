@@ -1,0 +1,17 @@
+id: he-took-your-place
+title: He Took Your Place
+artist: Porter Wagoner
+composers:
+- Lester Flatt & Earl Scruggs
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hetookyourplacelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: lady-s-choice
+title: Lady's Choice
+artist: Keith Whitley
+composers:
+- Sharon Vaughn and Bill Rice
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ladyschoicelyricschords.pro
+    imported_at: '2026-01-02'

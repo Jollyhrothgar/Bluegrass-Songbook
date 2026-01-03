@@ -1,0 +1,17 @@
+id: i-went-out-of-my-way
+title: I Went Out Of My Way
+artist: Porter Wagoner
+composers:
+- Vic McAlpin, Roy Drusky, Jean Elroad
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwentoutofmywaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: billy-boy
+title: Billy Boy
+artist: Jerry Lee Lewis
+composers:
+- Huey Piano Smith and Jerry Lee Lewis
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: billyboylyricschords.pro
+    imported_at: '2026-01-02'

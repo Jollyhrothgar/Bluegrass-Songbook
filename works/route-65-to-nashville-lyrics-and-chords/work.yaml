@@ -1,0 +1,17 @@
+id: route-65-to-nashville-lyrics-and-chords
+title: Route 65 To Nashville Lyrics and Chords
+artist: Dottie West
+composers:
+- Bill Backer and Rod McBrien
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: route65tonashvillelyricschords.pro
+    imported_at: '2026-01-02'

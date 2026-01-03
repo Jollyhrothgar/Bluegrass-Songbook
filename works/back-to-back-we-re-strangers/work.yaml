@@ -1,0 +1,17 @@
+id: back-to-back-we-re-strangers
+title: Back To Back (We're Strangers)
+artist: Johnny Duncan
+composers:
+- Marian Francis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backtobackwerestrangerslyricschords.pro
+    imported_at: '2026-01-02'

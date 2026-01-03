@@ -1,0 +1,17 @@
+id: i-ll-make-the-living
+title: I'll Make The Living
+artist: Jim Ed Brown
+composers:
+- Carl Belew and Van Givens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illmakethelivinglyricschords.pro
+    imported_at: '2026-01-02'

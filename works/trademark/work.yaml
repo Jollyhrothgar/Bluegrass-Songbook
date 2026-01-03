@@ -1,0 +1,17 @@
+id: trademark
+title: Trademark
+artist: Carl Smith
+composers:
+- Gary Walker and Porter Wagoner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: trademarklyricschords.pro
+    imported_at: '2026-01-02'

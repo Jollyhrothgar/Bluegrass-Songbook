@@ -1,0 +1,19 @@
+id: june-is-as-cold-as-december
+title: June Is as Cold as December
+artist: The Everly Brothers
+composers:
+- Marge Barton
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: juneisascoldasdecemberlyricschords.pro
+    imported_at: '2026-01-02'

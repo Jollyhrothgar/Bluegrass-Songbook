@@ -1,0 +1,17 @@
+id: one-touch-of-the-master-s-hand
+title: One Touch Of The Master's Hand
+artist: Jimmie Davis
+composers:
+- Jim McCartney
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onetouchofthemastershandlyricschords.pro
+    imported_at: '2026-01-02'

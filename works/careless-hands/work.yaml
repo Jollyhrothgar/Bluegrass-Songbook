@@ -1,0 +1,17 @@
+id: careless-hands
+title: Careless Hands
+artist: Slim Whitman
+composers:
+- Bob Hillard and Carl Sigman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carelesshandslyricschords.pro
+    imported_at: '2026-01-02'

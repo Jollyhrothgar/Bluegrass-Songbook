@@ -1,0 +1,18 @@
+id: i-d-like-to-help-you-out
+title: I'd Like To Help You Out
+artist: Wanda Jackson
+composers:
+- Larry Lee
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idliketohelpyououtlyricschords.pro
+    imported_at: '2026-01-02'

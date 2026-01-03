@@ -1,0 +1,17 @@
+id: an-empty-mansion
+title: An Empty Mansion
+artist: Wilburn Brothers
+composers:
+- C.A. Luttrell and Mrs. J.B. Karnes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anemptymansionlyricschords.pro
+    imported_at: '2026-01-02'

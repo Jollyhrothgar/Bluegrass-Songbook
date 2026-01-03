@@ -1,0 +1,17 @@
+id: i-never-knew-what-that-song-meant-before
+title: I Never Knew What That Song Meant Before
+artist: Connie Smith
+composers:
+- Sanger D. Shafer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineverknewwhatthatsongmeantbeforelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: it-s-the-goodbye-that-blows-me-away
+title: It's The Goodbye That Blows Me Away
+artist: Tammy Wynette
+composers:
+- Arthur Leo Owens and George Richey
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsthegoodbyethatblowsmeawaylyricschords.pro
+    imported_at: '2026-01-02'

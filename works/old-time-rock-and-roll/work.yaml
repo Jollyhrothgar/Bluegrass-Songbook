@@ -1,0 +1,17 @@
+id: old-time-rock-and-roll
+title: Old Time Rock and Roll
+artist: Bob Seger
+composers:
+- George Jackson and Tom Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldtimerockandrolllyricschords.pro
+    imported_at: '2026-01-02'

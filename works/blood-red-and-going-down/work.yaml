@@ -1,0 +1,19 @@
+id: blood-red-and-going-down
+title: Blood Red and Going Down
+artist: Tanya Tucker
+composers:
+- Curly Putman
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bloodredandgoingdownlyricschords.pro
+    imported_at: '2026-01-02'

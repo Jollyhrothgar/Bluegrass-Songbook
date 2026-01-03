@@ -1,0 +1,17 @@
+id: big-blue-diamonds
+title: Big Blue Diamonds
+artist: Jimmy Dean
+composers:
+- Earl "Kit" Carson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigbluediamondslyricschords.pro
+    imported_at: '2026-01-02'

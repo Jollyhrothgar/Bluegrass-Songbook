@@ -1,0 +1,17 @@
+id: will-you-be-satisfied-that-way
+title: Will You Be Satisfied That Way
+artist: Carl Smith
+composers:
+- Jimmie Skinner
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willyoubesatisfiedthatwaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: it-s-got-you-all-over-it
+title: It's Got You All Over It
+artist: Tracy Lawrence
+composers:
+- Jerry Salley, J.B. Rudd, Lance Miller
+default_key: D
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsgotyoualloveritlyricschords.pro
+    imported_at: '2026-01-02'

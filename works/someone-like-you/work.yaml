@@ -1,0 +1,18 @@
+id: someone-like-you
+title: Someone Like You
+artist: Emmylou Harris
+composers:
+- Bob McDill and Dickey Lee
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someonelikeyoulyricschords.pro
+    imported_at: '2026-01-02'

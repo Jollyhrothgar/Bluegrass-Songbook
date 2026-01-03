@@ -1,0 +1,16 @@
+id: a-fool-and-his-dreams
+title: A Fool And His Dreams
+artist: Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afoolandhisdreamslyricschords.pro
+    imported_at: '2026-01-02'

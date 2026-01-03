@@ -1,0 +1,15 @@
+id: some-things-are-better-left-alone
+title: Some Things Are Better Left Alone
+artist: Ricky Van Shelton
+composers:
+- Roger Murrah and Larry Shell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingsarebetterleftalonelyricschords.pro
+    imported_at: '2026-01-02'

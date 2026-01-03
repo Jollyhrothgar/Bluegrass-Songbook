@@ -1,0 +1,17 @@
+id: mercury-blues
+title: Mercury Blues
+artist: Alan Jackson
+composers:
+- Robert Geddins and K.C. Douglas
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mercuryblueslyricschords.pro
+    imported_at: '2026-01-02'

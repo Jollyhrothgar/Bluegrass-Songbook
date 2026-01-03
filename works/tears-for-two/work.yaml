@@ -1,0 +1,18 @@
+id: tears-for-two
+title: Tears For Two
+artist: Dwight Yoakam
+composers:
+- Dwight Yoakam and Holly Lamar
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tearsfortwolyricschords.pro
+    imported_at: '2026-01-02'

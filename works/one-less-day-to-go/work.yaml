@@ -1,0 +1,18 @@
+id: one-less-day-to-go
+title: One Less Day To Go
+artist: The Statler Brothers
+composers:
+- Don Reid and Harold Reid
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onelessdaytogolyricschords.pro
+    imported_at: '2026-01-02'

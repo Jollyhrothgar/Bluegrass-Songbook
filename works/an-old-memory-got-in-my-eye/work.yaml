@@ -1,0 +1,17 @@
+id: an-old-memory-got-in-my-eye
+title: An Old Memory Got In My Eye
+artist: Ferlin Husky
+composers:
+- Jerry Foster
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anoldmemorygotinmyeyelyricschords.pro
+    imported_at: '2026-01-02'

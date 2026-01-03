@@ -1,0 +1,17 @@
+id: hanging-over-me
+title: Hanging Over Me
+artist: Jack Greene
+composers:
+- Hank Cochran and Red Lane
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hangingovermelyricschords.pro
+    imported_at: '2026-01-02'

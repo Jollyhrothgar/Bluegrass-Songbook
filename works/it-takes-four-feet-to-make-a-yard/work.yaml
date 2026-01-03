@@ -1,0 +1,17 @@
+id: it-takes-four-feet-to-make-a-yard
+title: It Takes Four Feet To Make A Yard
+artist: Carl Smith
+composers:
+- Larry Lee and Glenn D. Tubb
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ittakesfourfeettomakeayardlyricschords.pro
+    imported_at: '2026-01-02'

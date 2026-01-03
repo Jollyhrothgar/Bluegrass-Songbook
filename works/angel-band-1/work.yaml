@@ -1,0 +1,14 @@
+id: angel-band-1
+title: Angel Band
+artist: William Batchelder Bradbury
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: love-aint-gonna-die
+title: Love Ain’t Gonna Die
+artist: Mel Tillis
+composers:
+- Sharon Higgins
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveaintgonnadielyricschords.pro
+    imported_at: '2026-01-02'

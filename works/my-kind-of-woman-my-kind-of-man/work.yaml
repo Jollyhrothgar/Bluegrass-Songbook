@@ -1,0 +1,17 @@
+id: my-kind-of-woman-my-kind-of-man
+title: My Kind Of Woman My Kind Of Man
+artist: Vince Gill with Patty Loveless
+composers:
+- Vince Gill
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mykindofwomanmykindofmanlyricschords.pro
+    imported_at: '2026-01-02'

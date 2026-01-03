@@ -1,0 +1,17 @@
+id: look-around-you
+title: Look Around You
+artist: Don Williams
+composers:
+- Buck Lindsey and Bill Joor
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookaroundyoulyricschords.pro
+    imported_at: '2026-01-02'

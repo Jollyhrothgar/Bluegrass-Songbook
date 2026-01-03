@@ -1,0 +1,18 @@
+id: in-a-mississippi-cotton-picking-delta-town
+title: In A Mississippi Cotton Picking Delta Town
+artist: Charley Pride
+composers:
+- Harold Dorman, Wiley Gann
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inamississippicottonpickingdeltatownlyricschords.pro
+    imported_at: '2026-01-02'

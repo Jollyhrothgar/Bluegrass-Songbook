@@ -1,0 +1,18 @@
+id: till-love-comes-again
+title: Till Love Comes Again
+artist: Reba McEntire
+composers:
+- Bob Regan and Ed Hill
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tilllovecomesagainlyricschords.pro
+    imported_at: '2026-01-02'

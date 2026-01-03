@@ -1,0 +1,18 @@
+id: she-s-playing-hell-trying-to-get-me-to-heaven
+title: She's Playing Hell (Trying To Get Me To Heaven)
+artist: George Strait
+composers:
+- Dean Dillon, David Wills, Charles Quillen
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesplayinghelltryingtogetmetoheavenlyricschords.pro
+    imported_at: '2026-01-02'

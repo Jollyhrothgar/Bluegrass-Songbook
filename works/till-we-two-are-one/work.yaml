@@ -1,0 +1,20 @@
+id: till-we-two-are-one
+title: Till We Two Are One
+artist: Ernest Tubb
+composers:
+- Tom Glazer, Billy Martin, Larry Martin
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillwetwoareonelyricschords.pro
+    imported_at: '2026-01-02'

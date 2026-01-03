@@ -1,0 +1,19 @@
+id: a-habit-i-can-t-break
+title: A Habit I Can't Break
+artist: Dolly Parton
+composers:
+- Bill Owens
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ahabiticantbreaklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: you-beat-all-ive-ever-seen
+title: You Beat All I’ve Ever Seen
+artist: Rhonda Vincent
+composers:
+- Kathy Louvin, Kostas, Melba Montgomery
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youbeatalliveeverseenlyricschords.pro
+    imported_at: '2026-01-02'

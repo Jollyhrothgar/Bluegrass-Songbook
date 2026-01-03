@@ -1,0 +1,17 @@
+id: will-the-angels-play-their-harps-for-me
+title: Will The Angels Play Their Harps For Me
+artist: Doyle Lawson
+composers:
+- Walter Hirsch and Monte Wilhite
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willtheangelsplaytheirharpsformelyricschords.pro
+    imported_at: '2026-01-02'

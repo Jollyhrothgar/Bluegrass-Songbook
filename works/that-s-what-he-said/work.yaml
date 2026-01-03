@@ -1,0 +1,18 @@
+id: that-s-what-he-said
+title: That's What He Said
+artist: Reba McEntire
+composers:
+- Rick Carnes and Janis Carnes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhathesaidlyricschords.pro
+    imported_at: '2026-01-02'

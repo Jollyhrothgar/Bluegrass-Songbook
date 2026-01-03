@@ -1,0 +1,15 @@
+id: sam-hill
+title: Sam Hill
+artist: Jimmy Dean
+composers:
+- Tommy Collins
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: samhilllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: i-went-to-your-wedding
+title: I Went To Your Wedding
+artist: Hank Snow
+composers:
+- Jessie Mae Robinson
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwenttoyourweddinglyricschords.pro
+    imported_at: '2026-01-02'

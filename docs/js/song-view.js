@@ -1454,6 +1454,10 @@ export async function openSong(songId, options = {}) {
                 ...listContext,
                 currentIndex: idx
             });
+        } else if (!fromList) {
+            // Song is not in the current list and we're not explicitly navigating from a list
+            // Clear the stale list context
+            setListContext(null);
         }
     }
     updateNavBar();
@@ -1757,9 +1761,15 @@ export function updateNavBar() {
         if (fullscreenMode) {
             navBarEl.classList.remove('hidden');
         }
+        // Add class to indicate we have list context (for CSS)
+        navBarEl.classList.add('has-list-context');
     } else {
-        // No list context - hide nav bar (unless fullscreen mode CSS overrides)
+        // No list context - hide nav bar and clear content
         navBarEl.classList.add('hidden');
+        navBarEl.classList.remove('has-list-context');
+        // Clear the content so it doesn't show stale data if CSS forces it visible
+        if (navPositionEl) navPositionEl.textContent = '';
+        if (navListNameEl) navListNameEl.textContent = '';
     }
 }
 

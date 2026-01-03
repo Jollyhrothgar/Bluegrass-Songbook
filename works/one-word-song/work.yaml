@@ -1,0 +1,17 @@
+id: one-word-song
+title: One Word Song
+artist: Randy Travis
+composers:
+- Max T. Barnes and John Jarrard
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onewordsonglyricschords.pro
+    imported_at: '2026-01-02'

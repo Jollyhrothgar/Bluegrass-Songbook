@@ -1,0 +1,17 @@
+id: kaw-liga
+title: Kaw-Liga
+artist: Boxcar Willie
+composers:
+- Hank Williams and Fred Rose
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hawligalyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: fallen-angel-lyrics-chords
+title: Fallen Angel Lyrics Chords
+artist: Webb Pierce
+composers:
+- Wayne P. Walker, Webb Pierce, Marijohn Wilkin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallenangellyricschords.pro
+    imported_at: '2026-01-02'

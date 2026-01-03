@@ -1,0 +1,19 @@
+id: money-cannot-make-the-man
+title: Money Cannot Make The Man
+artist: Waylon Jennings
+composers:
+- Jay Glaser
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moneycannotmakethemanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: stay-out-of-my-arms
+title: Stay Out Of My Arms
+artist: George Strait
+composers:
+- Jim Lauderdale
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stayoutofmyarmslyricschords.pro
+    imported_at: '2026-01-02'

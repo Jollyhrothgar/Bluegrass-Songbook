@@ -1,0 +1,19 @@
+id: i-just-don-t-understand
+title: I Just Don't Understand
+artist: Willie Nelson
+composers:
+- Willie Nelson, Kent Westberry, Marijohn Wilkin
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustdontunderstandlyricschords.pro
+    imported_at: '2026-01-02'

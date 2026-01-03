@@ -1,0 +1,17 @@
+id: jesus-remembered-me
+title: Jesus Remembered Me
+artist: Hank Williams
+default_key: D
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jesusrememberedmelyricschords.pro
+    imported_at: '2026-01-02'

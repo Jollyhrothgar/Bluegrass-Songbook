@@ -1,0 +1,17 @@
+id: the-day-the-saw-mill-closed-down
+title: The Day The Saw Mill Closed Down
+artist: Bobby Bare
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedaythesawmillcloseddownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: when-did-you-stop-loving-me
+title: When Did You Stop Loving Me
+artist: George Jones
+composers:
+- Donny Kees and Monty Holmes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whendidyoustoplovingmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-gotta-dig-a-little-deeper
+title: You Gotta Dig A Little Deeper
+artist: Doyle Lawson
+composers:
+- Carl H. Caldwell and Barry M. Scott
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yougottadigalittledeeperlyricschords.pro
+    imported_at: '2026-01-02'

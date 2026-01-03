@@ -1,0 +1,17 @@
+id: she-s-too-pretty-to-cry
+title: She's Too Pretty To Cry
+artist: Johnny Rodriguez
+composers:
+- Averal Ann Aldridge and George Soul
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shestooprettytocrylyricschords.pro
+    imported_at: '2026-01-02'

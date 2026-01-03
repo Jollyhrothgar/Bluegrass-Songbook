@@ -1,0 +1,19 @@
+id: lean-on-me
+title: Lean on Me
+artist: Anne Murray
+composers:
+- Bill
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leanonmelyricschords.pro
+    imported_at: '2026-01-02'

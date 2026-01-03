@@ -1,0 +1,20 @@
+id: tra-le-la-la-triangle
+title: Tra Le La La Triangle
+artist: Patsy Cline
+composers:
+- Marijohn Wilkin and Fred Burch
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tralelalatrianglelyricschords.pro
+    imported_at: '2026-01-02'

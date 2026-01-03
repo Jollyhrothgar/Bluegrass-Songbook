@@ -1,0 +1,15 @@
+id: that-s-when-you-know-it-s-over
+title: That's When You Know It's Over
+artist: Gene Watson
+composers:
+- Troy Graves and Bob O'Donnell
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhenyouknowitsoverlyricschords.pro
+    imported_at: '2026-01-02'

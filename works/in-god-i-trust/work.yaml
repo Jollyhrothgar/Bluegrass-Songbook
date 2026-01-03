@@ -1,0 +1,15 @@
+id: in-god-i-trust
+title: In God I Trust
+artist: Buck Owens
+composers:
+- Buck Owens and Bob Morris
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inGoditrustlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: from-this-moment-on
+title: From This Moment On
+artist: George Morgan
+composers:
+- Bonnie Guitar
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromthismomentonlyricschords.pro
+    imported_at: '2026-01-02'

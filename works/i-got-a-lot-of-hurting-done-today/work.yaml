@@ -1,0 +1,17 @@
+id: i-got-a-lot-of-hurting-done-today
+title: I Got A Lot Of Hurting Done Today
+artist: Connie Smith
+composers:
+- Sanger D. Shafer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igotalotofhurtingdonetodaylyricschords.pro
+    imported_at: '2026-01-02'

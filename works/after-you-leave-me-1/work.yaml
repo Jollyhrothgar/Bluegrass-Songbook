@@ -1,0 +1,16 @@
+id: after-you-leave-me-1
+title: After You Leave Me
+artist: Marty Robbins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afteryouleavemelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-thank-you-all-my-life
+title: I'll Thank You All My Life
+artist: Jean Shepard
+composers:
+- Dick Reynolds and Lucille Dean
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illthankyouallmylifelyricschords.pro
+    imported_at: '2026-01-02'

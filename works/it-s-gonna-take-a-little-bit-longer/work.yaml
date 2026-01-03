@@ -1,0 +1,17 @@
+id: it-s-gonna-take-a-little-bit-longer
+title: It's Gonna Take A Little Bit Longer
+artist: Charlie Pride
+composers:
+- Ben Peters
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsgonnatakealittlebitlongerlyricschords.pro
+    imported_at: '2026-01-02'

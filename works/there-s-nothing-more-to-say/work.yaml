@@ -1,0 +1,17 @@
+id: there-s-nothing-more-to-say
+title: There's Nothing More To Say
+artist: Ernest Tubb
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnothingmoretosaylyricschords.pro
+    imported_at: '2026-01-02'

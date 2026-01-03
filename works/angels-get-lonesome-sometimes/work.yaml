@@ -1,0 +1,17 @@
+id: angels-get-lonesome-sometimes
+title: Angels Get Lonesome Sometimes
+artist: Hank Williams Jr.
+composers:
+- Terry Skinner, Albert Lowe, John Vinson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: angelsgetlonesomesometimeslyricschords.pro
+    imported_at: '2026-01-02'

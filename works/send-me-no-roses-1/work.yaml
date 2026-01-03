@@ -1,0 +1,18 @@
+id: send-me-no-roses-1
+title: Send Me No Roses
+artist: Tammy Wynette
+composers:
+- Hank Mills
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sendmenoroseslyricschords.pro
+    imported_at: '2026-01-02'

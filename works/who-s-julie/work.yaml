@@ -1,0 +1,19 @@
+id: who-s-julie
+title: Who's Julie
+artist: Mel Tillis
+composers:
+- Wayne C. Thompson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whosjulielyricschords.pro
+    imported_at: '2026-01-02'

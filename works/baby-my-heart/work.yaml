@@ -1,0 +1,17 @@
+id: baby-my-heart
+title: Baby My Heart
+artist: Faron Young
+composers:
+- Eddie Hill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babymyheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: the-only-one-i-ever-loved-i-lost
+title: The Only One I Ever Loved I Lost
+artist: Kitty Wells
+composers:
+- Johnny Wright, Jack Anglin, Jim Anglin
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theonlyoneieverlovedilostlyricschords.pro
+    imported_at: '2026-01-02'

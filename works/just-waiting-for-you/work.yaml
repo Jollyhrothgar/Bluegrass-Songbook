@@ -1,0 +1,17 @@
+id: just-waiting-for-you
+title: Just Waiting For You
+artist: Hank Snow
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justwaitingforyoulyricschords.pro
+    imported_at: '2026-01-02'

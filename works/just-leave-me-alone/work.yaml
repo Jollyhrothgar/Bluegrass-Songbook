@@ -1,0 +1,17 @@
+id: just-leave-me-alone
+title: Just Leave Me Alone
+artist: Eddy Raven
+composers:
+- Sanger D. Shafer and Eddy Raven
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justleavemealonelyricschords.pro
+    imported_at: '2026-01-02'

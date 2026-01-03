@@ -1,0 +1,17 @@
+id: don-t-you-see-that-train
+title: Don't You See That Train
+artist: The Delmore Brothers
+composers:
+- Alton Delmore
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontyouseethattrainlyricschords.pro
+    imported_at: '2026-01-02'

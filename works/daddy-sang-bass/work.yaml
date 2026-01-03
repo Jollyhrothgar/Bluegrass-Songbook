@@ -1,0 +1,22 @@
+id: daddy-sang-bass
+title: Daddy Sang Bass
+artist: Johnny Cash
+composers:
+- Carl Perkins
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: daddysangbasslyricschords.pro
+    imported_at: '2026-01-02'

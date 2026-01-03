@@ -1,0 +1,15 @@
+id: jesus-take-another-look-at-me
+title: Jesus Take Another Look At Me
+artist: Statler Brothers
+composers:
+- Don Reid
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesustakeanotherlookatmelyricschords.pro
+    imported_at: '2026-01-02'

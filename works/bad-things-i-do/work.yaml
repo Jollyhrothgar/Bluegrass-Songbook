@@ -1,0 +1,17 @@
+id: bad-things-i-do
+title: Bad Things I Do
+artist: Charlie Walker
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: badthingsidolyricschords.pro
+    imported_at: '2026-01-02'

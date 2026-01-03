@@ -1,0 +1,17 @@
+id: what-my-woman-can-t-do
+title: What My Woman Can't Do
+artist: George Jones
+composers:
+- Billy Sherrill, Earl Montgomery, George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatmywomancantdolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: down-the-trail-of-aching-hearts
+title: Down the Trail of Aching Hearts
+artist: Hank Snow
+composers:
+- Jimmy Kennedy and Nat Simon
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downthetrailofachingheartslyricschords.pro
+    imported_at: '2026-01-02'

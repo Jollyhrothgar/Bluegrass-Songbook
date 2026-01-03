@@ -1,0 +1,17 @@
+id: long-time-gone
+title: Long Time Gone
+artist: Wilburn Brothers
+composers:
+- Dave Dudley and Danny Morrison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longtimegonelyricsandchords.pro
+    imported_at: '2026-01-02'

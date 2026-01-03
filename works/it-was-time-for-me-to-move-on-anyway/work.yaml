@@ -1,0 +1,15 @@
+id: it-was-time-for-me-to-move-on-anyway
+title: It Was Time For Me To Move On Anyway
+artist: Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itwastimeformetomoveonanywaylyricschords.pro
+    imported_at: '2026-01-02'

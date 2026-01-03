@@ -1,0 +1,17 @@
+id: out-of-ways-to-try
+title: Out Of Ways To Try
+artist: Tony Booth
+composers:
+- Bob Morris and Gene Price
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: outofwaystotrylyricschords.pro
+    imported_at: '2026-01-02'

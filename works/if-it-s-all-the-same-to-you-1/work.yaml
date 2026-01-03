@@ -1,0 +1,17 @@
+id: if-it-s-all-the-same-to-you-1
+title: If It's All The Same To You
+artist: Bill Anderson
+composers:
+- Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitsallthesametoyoulyricschords.pro
+    imported_at: '2026-01-02'

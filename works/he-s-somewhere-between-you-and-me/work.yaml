@@ -1,0 +1,19 @@
+id: he-s-somewhere-between-you-and-me
+title: He's Somewhere Between You And Me
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Doyle Wilburn
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hessomewherebetweenyouandmelyricschords.pro
+    imported_at: '2026-01-02'

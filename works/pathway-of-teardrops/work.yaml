@@ -1,0 +1,18 @@
+id: pathway-of-teardrops
+title: Pathway Of Teardrops
+artist: Rhonda Vincent
+composers:
+- Wayne P. Walker and Webb Pierce, June Hazlewood
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pathwayofteardropslyricschords.pro
+    imported_at: '2026-01-02'

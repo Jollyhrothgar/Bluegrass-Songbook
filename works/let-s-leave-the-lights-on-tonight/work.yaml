@@ -1,0 +1,17 @@
+id: let-s-leave-the-lights-on-tonight
+title: Let's Leave The Lights On Tonight
+artist: Johnny Rodriguez
+composers:
+- Bob McDill and Rory Bourke
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsleavethelightsontonightlyricschords.pro
+    imported_at: '2026-01-02'

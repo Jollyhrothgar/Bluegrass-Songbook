@@ -1,0 +1,17 @@
+id: a-very-good-year-for-girls
+title: A Very Good Year For Girls
+artist: Johnny Tillotson
+composers:
+- Fred Tobias and Clint Ballard
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: averygoodyearforgirlslyricschords.pro
+    imported_at: '2026-01-02'

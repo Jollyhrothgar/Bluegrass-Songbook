@@ -1,0 +1,17 @@
+id: don-t-put-her-down-you-helped-put-her-there
+title: Don't Put Her Down You Helped Put Her There
+artist: Courtney Granger
+composers:
+- Hazel Dickens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontputherdownyouhelpedputhertherelyricschords.pro
+    imported_at: '2026-01-02'

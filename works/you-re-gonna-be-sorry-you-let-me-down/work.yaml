@@ -1,0 +1,15 @@
+id: you-re-gonna-be-sorry-you-let-me-down
+title: You're Gonna Be Sorry You Let Me Down
+artist: Russell Moore and IIIrd Tyme Out
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youregonnabesorryyouletmedownlyricschords.pro
+    imported_at: '2026-01-02'

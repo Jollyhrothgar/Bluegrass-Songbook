@@ -1,0 +1,19 @@
+id: just-a-drink-away
+title: Just A Drink Away
+artist: Ernest Tubb
+composers:
+- Bobby Lewis and Billy Parker
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justadrinkawaylyricschords.pro
+    imported_at: '2026-01-02'

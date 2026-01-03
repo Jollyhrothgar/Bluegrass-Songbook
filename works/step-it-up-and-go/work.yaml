@@ -1,0 +1,19 @@
+id: step-it-up-and-go
+title: Step It Up And Go
+artist: The Everly Brothers
+composers:
+- Jimmy Howard
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stepitupandgolyricschords.pro
+    imported_at: '2026-01-02'

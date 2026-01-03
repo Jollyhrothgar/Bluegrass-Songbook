@@ -1,0 +1,17 @@
+id: if-i-ever-get-lucky
+title: If I Ever Get Lucky
+artist: Merle Haggard
+composers:
+- Merle Haggard and Lou Bradley
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifievergetluckylyricschords.pro
+    imported_at: '2026-01-02'

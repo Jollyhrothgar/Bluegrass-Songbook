@@ -1,0 +1,15 @@
+id: nobody-wants-to-be-alone
+title: Nobody Wants to Be Alone
+artist: Crystal Gayle
+composers:
+- Michael Masser and Rhonda Kye Fleming
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodywantstobealonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: watching-a-new-love-grow
+title: Watching A New Love Grow
+artist: Boxcar Willie
+composers:
+- Bobby Dwight Caraway and Boxcar Willie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: watchinganewlovegrowlyricschords.pro
+    imported_at: '2026-01-02'

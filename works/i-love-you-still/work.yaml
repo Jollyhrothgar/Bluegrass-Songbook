@@ -1,0 +1,17 @@
+id: i-love-you-still
+title: I Love You Still
+artist: Don Gibson
+composers:
+- Melvin Endsley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iloveyoustilllyricschords.pro
+    imported_at: '2026-01-02'

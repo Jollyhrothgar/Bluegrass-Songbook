@@ -1,0 +1,17 @@
+id: world-of-unhappiness
+title: World Of Unhappiness
+artist: Bob Luman
+composers:
+- Rita Welty
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: worldofunhappinesslyricschords.pro
+    imported_at: '2026-01-02'

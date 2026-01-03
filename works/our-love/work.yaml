@@ -1,0 +1,17 @@
+id: our-love
+title: Our Love
+artist: Ricky Van Shelton
+composers:
+- Mike Geiger, Woody Mullis, Deanna Cox
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ourlovelyricsandchords.pro
+    imported_at: '2026-01-02'

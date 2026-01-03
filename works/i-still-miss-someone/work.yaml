@@ -1,0 +1,22 @@
+id: i-still-miss-someone
+title: I Still Miss Someone
+artist: Johnny Cash
+composers:
+- Johnny Cash and Ray Cash Jr.
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: istillmisssomeonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: love-me-tonight-1
+title: Love Me Tonight
+artist: Elvis Presley
+composers:
+- Don Robertson
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovemetonightlyricschords.pro
+    imported_at: '2026-01-02'

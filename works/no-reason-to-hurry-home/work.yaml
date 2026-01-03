@@ -1,0 +1,17 @@
+id: no-reason-to-hurry-home
+title: No Reason To Hurry Home
+artist: Dolly Parton and Porter Wagoner
+composers:
+- Dolly Parton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noreasontohurryhomelyricschords.pro
+    imported_at: '2026-01-02'

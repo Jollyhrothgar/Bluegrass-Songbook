@@ -1,0 +1,17 @@
+id: a-little-bit-lonesome
+title: A Little Bit Lonesome
+artist: Hank Locklin
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittlebitlonesomelyricschords.pro
+    imported_at: '2026-01-02'

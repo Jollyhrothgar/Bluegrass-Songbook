@@ -1,0 +1,17 @@
+id: here-we-are-making-love-again
+title: Here We Are Making Love Again
+artist: Bob Luman
+composers:
+- Ronald Saucer and Mike Schrimpf
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: herewearemakingloveagainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: somewhere-over-you
+title: Somewhere Over You
+artist: Gene Watson
+composers:
+- David H. Lindsey, Jim Rushing, Gene Watson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somewhereoveryoulyricschords.pro
+    imported_at: '2026-01-02'

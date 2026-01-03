@@ -1,0 +1,17 @@
+id: the-room-at-the-top-of-the-stairs
+title: The Room At The Top Of The Stairs
+artist: Cal Smith
+composers:
+- Lola Jean Dillon
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theroomatthetopofthestairslyricschords.pro
+    imported_at: '2026-01-02'

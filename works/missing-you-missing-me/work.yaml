@@ -1,0 +1,15 @@
+id: missing-you-missing-me
+title: Missing You Missing Me
+artist: Don Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: missingyoumissingmelyricschords.pro
+    imported_at: '2026-01-02'

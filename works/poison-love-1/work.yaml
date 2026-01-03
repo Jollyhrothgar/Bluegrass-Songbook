@@ -1,0 +1,19 @@
+id: poison-love-1
+title: Poison Love
+artist: Mel Tillis
+composers:
+- Elmer Laird
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: poisonlovelyricschords.pro
+    imported_at: '2026-01-02'

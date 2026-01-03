@@ -1,0 +1,20 @@
+id: you-re-the-only-one-1
+title: You're The Only One
+artist: Dolly Parton
+composers:
+- Carole Sager and Bruce Roberts
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheonlyonelyricschords.pro
+    imported_at: '2026-01-02'

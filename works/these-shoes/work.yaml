@@ -1,0 +1,20 @@
+id: these-shoes
+title: These Shoes
+artist: The Everly Brothers
+composers:
+- Jon Goin and Larry Michael Lee
+default_key: Am
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theseshoeslyricschords.pro
+    imported_at: '2026-01-02'

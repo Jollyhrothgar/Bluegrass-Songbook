@@ -1,0 +1,17 @@
+id: go-boy-go
+title: Go Boy Go
+artist: Carl Smith
+composers:
+- Floyd Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goboygolyricschords.pro
+    imported_at: '2026-01-02'

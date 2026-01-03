@@ -1,0 +1,15 @@
+id: my-woman-my-woman-my-wife
+title: My Woman My Woman My Wife
+artist: Marty Robbins
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mywomanmywomanmywifelyricschords.pro
+    imported_at: '2026-01-02'

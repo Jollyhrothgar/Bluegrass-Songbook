@@ -1,0 +1,19 @@
+id: lingering-memories
+title: Lingering Memories
+artist: Mel Tillis
+composers:
+- Damon Black
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lingeringmemorieslyricschords.pro
+    imported_at: '2026-01-02'

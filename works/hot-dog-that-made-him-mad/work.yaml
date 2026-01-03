@@ -1,0 +1,18 @@
+id: hot-dog-that-made-him-mad
+title: Hot Dog That Made Him Mad
+artist: Wanda Jackson
+composers:
+- Don Raye and Danny Barker
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hotdogthatmadehimmadlyricschords.pro
+    imported_at: '2026-01-02'

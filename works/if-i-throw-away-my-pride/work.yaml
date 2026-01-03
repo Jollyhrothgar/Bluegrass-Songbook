@@ -1,0 +1,18 @@
+id: if-i-throw-away-my-pride
+title: If I Throw Away My Pride
+artist: Mel Tillis
+composers:
+- Wayne P. Walker
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifithrowawaymypridelyricschords.pro
+    imported_at: '2026-01-02'

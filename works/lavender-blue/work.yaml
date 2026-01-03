@@ -1,0 +1,17 @@
+id: lavender-blue
+title: Lavender Blue
+artist: Jim Ed Brown
+composers:
+- Larry Moray and Eliot Daniel
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lavenderbluelyricschords.pro
+    imported_at: '2026-01-02'

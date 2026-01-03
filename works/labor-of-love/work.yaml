@@ -1,0 +1,15 @@
+id: labor-of-love
+title: Labor Of Love
+artist: Bob Luman
+composers:
+- Steve Wariner
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: laboroflovelyricschords.pro
+    imported_at: '2026-01-02'

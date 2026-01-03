@@ -1,0 +1,17 @@
+id: don-t-make-me-dream
+title: Don't Make Me Dream
+artist: Connie Smith
+composers:
+- Bob Morrison and Wanda Mallette
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontmakemedreamlyricschords.pro
+    imported_at: '2026-01-02'

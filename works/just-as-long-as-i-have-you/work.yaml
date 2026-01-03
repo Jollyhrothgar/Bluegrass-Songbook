@@ -1,0 +1,17 @@
+id: just-as-long-as-i-have-you
+title: Just As Long As I Have You
+artist: Don Williams
+composers:
+- Dave Loggins and J.D. Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justaslongasihaveyoulyricschords.pro
+    imported_at: '2026-01-02'

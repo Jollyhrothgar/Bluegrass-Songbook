@@ -1,0 +1,19 @@
+id: you-re-gonna-love-yourself
+title: You're Gonna Love Yourself
+artist: Brenda Lee
+composers:
+- Donnie Ray Fritts
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youregonnaloveyourselflyricschords.pro
+    imported_at: '2026-01-02'

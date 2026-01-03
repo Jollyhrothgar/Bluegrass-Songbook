@@ -1,0 +1,19 @@
+id: i-just-want-you-to-know
+title: I Just Want You to Know
+artist: Hank Snow
+composers:
+- Betty Jean Robinson
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustwantyoutoknowlyricschords.pro
+    imported_at: '2026-01-02'

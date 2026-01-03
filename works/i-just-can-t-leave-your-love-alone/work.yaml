@@ -1,0 +1,15 @@
+id: i-just-can-t-leave-your-love-alone
+title: I Just Can't Leave Your Love Alone
+artist: Crystal Gayle
+composers:
+- Joe Sample and Will Jennings
+default_key: Am
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcantleaveyourlovealonelyricschords.pro
+    imported_at: '2026-01-02'

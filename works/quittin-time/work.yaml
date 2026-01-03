@@ -1,0 +1,17 @@
+id: quittin-time
+title: Quittin' Time
+artist: Keith Whitley
+composers:
+- Ron Hellard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: quittintimelyricschords.pro
+    imported_at: '2026-01-02'

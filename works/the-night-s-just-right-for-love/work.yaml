@@ -1,0 +1,17 @@
+id: the-night-s-just-right-for-love
+title: The Night's Just Right For Love
+artist: George Strait
+composers:
+- Rodney Crowell
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenightsjustrightforlovelyricschords.pro
+    imported_at: '2026-01-02'

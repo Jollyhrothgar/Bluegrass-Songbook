@@ -1,0 +1,17 @@
+id: i-can-t-quit-drinking
+title: I Can't Quit Drinking
+artist: Johnny Paycheck
+composers:
+- Harlan Sanders and Larry Kingston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantquitdrinkinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: tennessee-rock-n-roll
+title: Tennessee Rock'n Roll
+artist: Bobby Helms
+composers:
+- Lonnie Coleman and Irving Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tennesseerocknrolllyricschords.pro
+    imported_at: '2026-01-02'

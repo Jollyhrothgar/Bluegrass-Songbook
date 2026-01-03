@@ -1,0 +1,17 @@
+id: i-feel-chained
+title: I Feel Chained
+artist: Vernon Oxford
+composers:
+- Bob McDill and Wayland Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeelchainedlyricschords.pro
+    imported_at: '2026-01-02'

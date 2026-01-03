@@ -1,0 +1,18 @@
+id: if-you-want-to-find-love
+title: If You Want To Find Love
+artist: Kenny Rogers
+composers:
+- Skip Ewing and Max Duane Barnes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouwanttofindlovelyricschords.pro
+    imported_at: '2026-01-02'

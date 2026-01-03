@@ -1,0 +1,20 @@
+id: think-about-it-darling
+title: Think About It Darling
+artist: Jerry Lee Lewis
+composers:
+- Bill Rice and Jerry Foster
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thinkaboutitdarlinglyricschords.pro
+    imported_at: '2026-01-02'

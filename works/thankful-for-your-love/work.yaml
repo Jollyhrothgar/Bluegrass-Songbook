@@ -1,0 +1,17 @@
+id: thankful-for-your-love
+title: Thankful For Your Love
+artist: Stonewall Jackson
+composers:
+- Webb Pierce and Max Powell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankfulforyourlovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: open-up-your-heart-1
+title: Open Up Your Heart
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: openupyourheartlyricsandchords.pro
+    imported_at: '2026-01-02'

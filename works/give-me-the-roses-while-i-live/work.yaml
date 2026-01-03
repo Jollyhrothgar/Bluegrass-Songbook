@@ -1,0 +1,18 @@
+id: give-me-the-roses-while-i-live
+title: Give Me The Roses While I Live
+artist: Jimmy Martin
+composers:
+- R.H. Cornelius and James Rowe
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givemetheroseswhileilivelyricschords.pro
+    imported_at: '2026-01-02'

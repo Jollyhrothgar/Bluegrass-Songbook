@@ -1,0 +1,13 @@
+id: after-losing-you-2
+title: After Losing You
+artist: Melba Montgomery
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterlosingyoulyricswithchords.pro
+    imported_at: '2026-01-02'

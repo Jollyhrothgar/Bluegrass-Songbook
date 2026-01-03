@@ -1,0 +1,15 @@
+id: i-wake-up-every-morning-with-a-smile-on-my-face
+title: I Wake Up Every Morning With A Smile On My Face
+artist: Boxcar Willie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwakeupeverymorningwithasmileonmyfacelyricschords.pro
+    imported_at: '2026-01-02'

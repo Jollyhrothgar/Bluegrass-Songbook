@@ -1,0 +1,17 @@
+id: heaven-help-me
+title: Heaven Help Me
+artist: Porter Wagoner
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavenhelpmelyricschords.pro
+    imported_at: '2026-01-02'

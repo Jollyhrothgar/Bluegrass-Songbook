@@ -1,0 +1,18 @@
+id: love-or-something-like-it
+title: Love Or Something Like It
+artist: Kenny Rogers
+composers:
+- Kenny Rogers and Steve Glassmeyer
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveorsomethinglikeitlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: it-hurts-so-much-to-see-you-go
+title: It Hurts So Much To See You Go
+artist: Jim Reeves
+composers:
+- Bobby Lee Warren, Billy Guitar, Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithurtssomuchtoseeyougolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: whiskey-lullaby
+title: Whiskey Lullaby
+artist: Brad Paisley
+composers:
+- Bill Anderson and Jon Randall
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whiskeylullabylyricschords.pro
+    imported_at: '2026-01-02'

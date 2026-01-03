@@ -1,0 +1,22 @@
+id: see-ruby-fall
+title: See Ruby Fall
+artist: Johnny Cash
+composers:
+- Johnny Cash and Roy Orbison
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: seerubyfalllyricschords.pro
+    imported_at: '2026-01-02'

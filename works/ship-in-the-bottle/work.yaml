@@ -1,0 +1,15 @@
+id: ship-in-the-bottle
+title: Ship In The Bottle
+artist: Stonewall Jackson
+composers:
+- Glenn Sutton and Hugh X. Lewis
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shipinthebottlelyricschords.pro
+    imported_at: '2026-01-02'

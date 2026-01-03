@@ -1,0 +1,17 @@
+id: faith-came-back-to-me
+title: Faith Came Back To Me
+artist: The Bellamy Brothers
+composers:
+- Howard Bellamy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: faithcamebacktomelyricschords.pro
+    imported_at: '2026-01-02'

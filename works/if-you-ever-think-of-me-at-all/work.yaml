@@ -1,0 +1,20 @@
+id: if-you-ever-think-of-me-at-all
+title: If You Ever Think Of Me At All
+artist: David Allan Coe
+composers:
+- Shel Silverstein and David A. Coe
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoueverthinkofmeatalllyricschords.pro
+    imported_at: '2026-01-02'

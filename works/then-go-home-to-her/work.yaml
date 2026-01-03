@@ -1,0 +1,17 @@
+id: then-go-home-to-her
+title: Then Go Home To Her
+artist: Norma Jean
+composers:
+- Hank Cochran and Jeannie Seely
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thengohometoherlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: stand-still
+title: Stand Still
+artist: Charlie Walker
+composers:
+- Bob Tanner
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: standstilllyricschords.pro
+    imported_at: '2026-01-02'

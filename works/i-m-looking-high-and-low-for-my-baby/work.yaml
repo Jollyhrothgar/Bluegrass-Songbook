@@ -1,0 +1,20 @@
+id: i-m-looking-high-and-low-for-my-baby
+title: I'm Looking High And Low For My Baby
+artist: Ernest Tubb
+composers:
+- Art Gibson
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlookinghighandlowformybabylyricschords.pro
+    imported_at: '2026-01-02'

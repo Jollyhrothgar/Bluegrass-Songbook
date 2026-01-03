@@ -1,0 +1,18 @@
+id: in-a-shanty-in-old-shanty-town
+title: In A Shanty in Old Shanty Town
+artist: Fats Domino
+composers:
+- Jack Little, Ira Schuster, Joe Young
+default_key: G
+tags:
+- Rockabilly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inashantyinoldshantytownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: here-i-am-alone-again
+title: Here I Am (Alone Again)
+artist: Billy Walker
+composers:
+- Ray Pennington
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hereiamaloneagainlyricschords.pro
+    imported_at: '2026-01-02'

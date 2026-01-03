@@ -1,0 +1,17 @@
+id: don-t-take-it-tonight
+title: Don't Take It Tonight
+artist: Ronnie Milsap
+composers:
+- Troy Seals and Mike Reid
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttakeittonightlyricschords.pro
+    imported_at: '2026-01-02'

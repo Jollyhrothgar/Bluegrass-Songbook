@@ -1,0 +1,17 @@
+id: how-much-can-a-lonely-heart-stand
+title: How Much Can A Lonely Heart Stand
+artist: Skeeter Davis
+composers:
+- Sandra Rhodes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howmuchcanalonelyheartstandlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: back-in-the-doo-wah-days
+title: Back In The Doo Wah Days
+artist: Mickey Gilley
+composers:
+- Mickey Gilley, Doug Gilmore, Ed Hunnicutt
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backinthedoowahdayslyricschords.pro
+    imported_at: '2026-01-02'

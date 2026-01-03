@@ -1,0 +1,15 @@
+id: got-the-all-overs-for-you
+title: Got The All Overs For You
+artist: Freddie Hart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gotthealloversforyoulyricschords.pro
+    imported_at: '2026-01-02'

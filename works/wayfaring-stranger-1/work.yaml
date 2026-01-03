@@ -1,0 +1,16 @@
+id: wayfaring-stranger-1
+title: Wayfaring Stranger
+artist: Emmylou Harris
+default_key: Am
+tags:
+- Folk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wayfaringstrangerlyricschords.pro
+    imported_at: '2026-01-02'

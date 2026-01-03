@@ -1,0 +1,17 @@
+id: my-last-night-in-town
+title: My Last Night In Town
+artist: Johnny Paycheck
+composers:
+- Red Simpson and Bill Woods
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylastnightintownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-storm-has-just-begun
+title: The Storm Has Just Begun
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thestormhasjustbegunlyricschords.pro
+    imported_at: '2026-01-02'

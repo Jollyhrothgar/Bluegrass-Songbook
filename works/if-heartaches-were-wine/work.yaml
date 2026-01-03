@@ -1,0 +1,17 @@
+id: if-heartaches-were-wine
+title: If Heartaches Were Wine
+artist: Stonewall Jackson
+composers:
+- Kent Westberry and Stonewall Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifheartacheswerewinelyricschords.pro
+    imported_at: '2026-01-02'

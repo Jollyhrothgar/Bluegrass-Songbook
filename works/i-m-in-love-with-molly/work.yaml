@@ -1,0 +1,19 @@
+id: i-m-in-love-with-molly
+title: I'm In Love With Molly
+artist: Ernest Tubb
+composers:
+- Cy Coben
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iminlovewithmollylyricschords.pro
+    imported_at: '2026-01-02'

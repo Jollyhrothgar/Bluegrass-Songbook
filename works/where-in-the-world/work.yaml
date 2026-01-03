@@ -1,0 +1,17 @@
+id: where-in-the-world
+title: Where In The World
+artist: Johnny Paycheck
+composers:
+- H. Sims, J. Perry, M. Weiss
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Whereintheworldlyricschords.pro
+    imported_at: '2026-01-02'

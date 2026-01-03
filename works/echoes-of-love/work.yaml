@@ -1,0 +1,21 @@
+id: echoes-of-love
+title: Echoes Of Love
+artist: Elvis Presley
+composers:
+- Ruth Batchelor and Bob Roberts
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: echoesoflovelyricschords.pro
+    imported_at: '2026-01-02'

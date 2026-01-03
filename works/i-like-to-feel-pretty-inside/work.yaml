@@ -1,0 +1,16 @@
+id: i-like-to-feel-pretty-inside
+title: I Like To Feel Pretty Inside
+artist: Tom T. Hall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iliketofeelprettyinsidelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: my-way
+title: My Way
+artist: Elvis Presley
+composers:
+- J. Revaux and C. Francois, Paul Anka
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mywaylyricschords.pro
+    imported_at: '2026-01-02'

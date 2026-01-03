@@ -1,0 +1,17 @@
+id: streets-of-bakersfield
+title: Streets Of Bakersfield
+artist: Buck Owens
+composers:
+- Homer Joy
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: streetsofbakersfieldlyricschords.pro
+    imported_at: '2026-01-02'

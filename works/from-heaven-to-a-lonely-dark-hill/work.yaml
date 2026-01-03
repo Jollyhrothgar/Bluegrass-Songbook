@@ -1,0 +1,17 @@
+id: from-heaven-to-a-lonely-dark-hill
+title: From Heaven To A Lonely Dark Hill
+artist: Carl Story
+composers:
+- Don McHan and Carl Story
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromheaventoalonelydarkhilllyricschords.pro
+    imported_at: '2026-01-02'

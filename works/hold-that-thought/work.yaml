@@ -1,0 +1,17 @@
+id: hold-that-thought
+title: Hold That Thought
+artist: Gene Watson
+composers:
+- Ray Griff and Tommy Rocco
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdthatthoughtlyricschords.pro
+    imported_at: '2026-01-02'

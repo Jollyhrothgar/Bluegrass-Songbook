@@ -1,0 +1,17 @@
+id: go-mena-si-i-m-sorry
+title: Go Mena Si (I'm Sorry)
+artist: Wilburn Brothers
+composers:
+- Billy Hervey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gomenasiimsorrylyricschords.pro
+    imported_at: '2026-01-02'

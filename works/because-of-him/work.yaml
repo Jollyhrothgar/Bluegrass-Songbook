@@ -1,0 +1,18 @@
+id: because-of-him
+title: Because Of Him
+artist: Rhonda Vincent
+composers:
+- Colbert Croft and Joyce S. Croft
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseofhimlyricsandchords.pro
+    imported_at: '2026-01-02'

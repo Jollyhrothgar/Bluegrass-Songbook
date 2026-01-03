@@ -1,0 +1,18 @@
+id: fourteen-minutes-old
+title: Fourteen Minutes Old
+artist: Doug Stone
+composers:
+- Dennis Knutson and A.L.(Doodle) Owens
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fourteenminutesoldlyricschords.pro
+    imported_at: '2026-01-02'

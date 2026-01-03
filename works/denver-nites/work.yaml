@@ -1,0 +1,15 @@
+id: denver-nites
+title: Denver Nites
+artist: Red Steagall
+composers:
+- Red Steagall and Ray Stafford
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: denverniteslyricschords.pro
+    imported_at: '2026-01-02'

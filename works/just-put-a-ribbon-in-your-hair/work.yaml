@@ -1,0 +1,17 @@
+id: just-put-a-ribbon-in-your-hair
+title: Just Put A Ribbon In Your Hair
+artist: Doug Stone
+composers:
+- Robert Burns and Donald Huber
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justputaribboninyourhairlyricschords.pro
+    imported_at: '2026-01-02'

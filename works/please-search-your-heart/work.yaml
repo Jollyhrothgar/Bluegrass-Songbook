@@ -1,0 +1,14 @@
+id: please-search-your-heart
+title: Please Search Your Heart
+artist: The Lovell Sisters
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: manual
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: doorstep-to-heaven
+title: Doorstep To Heaven
+artist: Carl Smith
+composers:
+- Leon Payne
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doorsteptoheavenlyricschords.pro
+    imported_at: '2026-01-02'

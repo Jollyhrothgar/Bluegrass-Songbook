@@ -1,0 +1,17 @@
+id: drunk-and-crazy
+title: Drunk And Crazy
+artist: Bobby Bare
+composers:
+- Shel Silverstein
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drunkandcrazylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: walking-piece-of-heaven
+title: Walking Piece of Heaven
+artist: Marty Robbins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkingpieceofheavenlyricschords.pro
+    imported_at: '2026-01-02'

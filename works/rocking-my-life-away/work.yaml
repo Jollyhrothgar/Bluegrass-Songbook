@@ -1,0 +1,20 @@
+id: rocking-my-life-away
+title: Rocking My Life Away
+artist: Jerry Lee Lewis
+composers:
+- Mack Vickery
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockingmylifeawaylyricschords.pro
+    imported_at: '2026-01-02'

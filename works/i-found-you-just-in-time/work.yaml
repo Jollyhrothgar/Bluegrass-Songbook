@@ -1,0 +1,15 @@
+id: i-found-you-just-in-time
+title: I Found You Just In Time
+artist: Lynn Anderson
+composers:
+- Billy Sherrill and Glenn Sutton
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifoundyoujustintimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: there-ive-said-it-again
+title: There I’ve Said It Again
+artist: Merle Haggard
+composers:
+- Redd Evans and Dave Mann
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thereivesaiditagainlyricschords.pro
+    imported_at: '2026-01-02'

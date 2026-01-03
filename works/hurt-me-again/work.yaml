@@ -1,0 +1,18 @@
+id: hurt-me-again
+title: Hurt Me Again
+artist: Hank Locklin
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hurtmeagainlyricschords.pro
+    imported_at: '2026-01-02'

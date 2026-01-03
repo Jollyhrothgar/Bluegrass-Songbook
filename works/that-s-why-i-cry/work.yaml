@@ -1,0 +1,17 @@
+id: that-s-why-i-cry
+title: That's Why I Cry
+artist: David Houston
+composers:
+- Billy Sherrill, Tillman Franks, David Houston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhyicrylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-truly-do
+title: I Truly Do
+artist: Sonny James
+composers:
+- Diane Lampert and Jimmie Haskell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itrulydolyricschords.pro
+    imported_at: '2026-01-02'

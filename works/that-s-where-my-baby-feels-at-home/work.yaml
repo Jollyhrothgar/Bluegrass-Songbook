@@ -1,0 +1,17 @@
+id: that-s-where-my-baby-feels-at-home
+title: That's Where My Baby Feels At Home
+artist: Faron Young
+composers:
+- Wayne Kemp, Curtis Wayne, Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswheremybabyfeelsathomelyricschords.pro
+    imported_at: '2026-01-02'

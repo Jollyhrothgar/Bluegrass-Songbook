@@ -1,0 +1,17 @@
+id: hundred-proof-memories
+title: Hundred Proof Memories
+artist: George Jones
+composers:
+- Keith Stegall and Zack Turner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hundredproofmemorieslyricschords.pro
+    imported_at: '2026-01-02'

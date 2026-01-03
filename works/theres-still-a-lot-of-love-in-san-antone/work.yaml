@@ -1,0 +1,15 @@
+id: theres-still-a-lot-of-love-in-san-antone
+title: There’s Still A Lot Of Love In San Antone
+artist: Darrell McCall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresstillalotofloveinsanantonelyricschords.pro
+    imported_at: '2026-01-02'

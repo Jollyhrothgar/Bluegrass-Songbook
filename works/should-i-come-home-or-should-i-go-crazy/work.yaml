@@ -1,0 +1,17 @@
+id: should-i-come-home-or-should-i-go-crazy
+title: Should I Come Home (or Should I Go Crazy)
+artist: Gene Watson
+composers:
+- Joe Allen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shouldicomehomelyricschords.pro
+    imported_at: '2026-01-02'

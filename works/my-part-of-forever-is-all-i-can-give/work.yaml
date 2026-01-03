@@ -1,0 +1,17 @@
+id: my-part-of-forever-is-all-i-can-give
+title: My Part Of Forever (Is All I Can Give)
+artist: Johnny Paycheck
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mypartofforeverisallicangivelyricschords.pro
+    imported_at: '2026-01-02'

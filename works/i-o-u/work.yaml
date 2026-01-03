@@ -1,0 +1,18 @@
+id: i-o-u
+title: I.O.U.
+artist: Lee Greenwood
+composers:
+- Kerry Chater and Austin Roberts
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: IOUlyricschords.pro
+    imported_at: '2026-01-02'

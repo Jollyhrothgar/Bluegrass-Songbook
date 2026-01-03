@@ -1,0 +1,15 @@
+id: we-ll-meet-again
+title: We'll Meet Again
+artist: David Houston
+composers:
+- Ross Parker and Hugh Charles
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wellmeetagainlyricsandchords.pro
+    imported_at: '2026-01-02'

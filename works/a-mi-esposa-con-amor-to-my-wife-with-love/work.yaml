@@ -1,0 +1,15 @@
+id: a-mi-esposa-con-amor-to-my-wife-with-love
+title: A Mi Esposa Con Amor (To My Wife With Love)
+artist: Sonny James
+composers:
+- Sonny James and Carole F. Smith
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amiesposaconamorlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: castaway-heart
+title: Castaway Heart
+artist: Wynn Stewart
+composers:
+- Kirk Patrick and Joe Hulsey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: castawayheartlyricschords.pro
+    imported_at: '2026-01-02'

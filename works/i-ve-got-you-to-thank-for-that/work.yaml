@@ -1,0 +1,17 @@
+id: i-ve-got-you-to-thank-for-that
+title: I've Got You To Thank For That
+artist: Don Williams
+composers:
+- Don Pfrimmer and Blake Mevis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotyoutothankforthatlyricschords.pro
+    imported_at: '2026-01-02'

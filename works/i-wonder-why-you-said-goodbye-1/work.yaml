@@ -1,0 +1,17 @@
+id: i-wonder-why-you-said-goodbye-1
+title: I Wonder Why You Said Goodbye
+artist: Wilburn Brothers
+composers:
+- Ernest Tubb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderwhyyousaidgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

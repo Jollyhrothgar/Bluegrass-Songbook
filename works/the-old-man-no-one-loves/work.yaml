@@ -1,0 +1,15 @@
+id: the-old-man-no-one-loves
+title: The Old Man No One Loves
+artist: George Jones
+composers:
+- Wyman Asbill
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldmannooneloveslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: down-the-line
+title: Down The Line
+artist: Buddy Holly
+composers:
+- Buddy Holly, Bob Montgomery, Norman Petty
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downthelinelyricschords.pro
+    imported_at: '2026-01-02'

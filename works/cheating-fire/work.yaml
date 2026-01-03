@@ -1,0 +1,18 @@
+id: cheating-fire
+title: Cheating Fire
+artist: Conway Twitty
+composers:
+- Russ Allison, Donald Miller, Dave Hall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cheatingfirelyricschords.pro
+    imported_at: '2026-01-02'

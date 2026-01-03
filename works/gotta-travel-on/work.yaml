@@ -1,0 +1,17 @@
+id: gotta-travel-on
+title: Gotta Travel On
+artist: Jimmy Dean
+composers:
+- Paul Clayton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gottatravelonlyricschords.pro
+    imported_at: '2026-01-02'

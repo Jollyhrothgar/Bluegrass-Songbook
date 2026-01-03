@@ -1,0 +1,18 @@
+id: i-hope-you-re-never-happy
+title: I Hope You're Never Happy
+artist: Dolly Parton
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihopeyoureneverhappylyricschords.pro
+    imported_at: '2026-01-02'

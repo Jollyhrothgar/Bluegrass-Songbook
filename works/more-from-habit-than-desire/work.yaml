@@ -1,0 +1,18 @@
+id: more-from-habit-than-desire
+title: More From Habit Than Desire
+artist: Red Sovine
+composers:
+- Bill Parson and Red Sovine
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: morefromhabitthandesirelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: somebody-lied
+title: Somebody Lied
+artist: Ricky Van Shelton
+composers:
+- Joe Chambers and Larry Jenkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodyliedlyricsandchords.pro
+    imported_at: '2026-01-02'

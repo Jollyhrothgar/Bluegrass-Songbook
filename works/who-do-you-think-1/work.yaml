@@ -1,0 +1,17 @@
+id: who-do-you-think-1
+title: Who Do You Think
+artist: Statler Brothers
+composers:
+- Don Reid and Harold Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whodoyouthinklyricschords.pro
+    imported_at: '2026-01-02'

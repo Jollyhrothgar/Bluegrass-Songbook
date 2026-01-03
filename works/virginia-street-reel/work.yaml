@@ -1,0 +1,17 @@
+id: virginia-street-reel
+title: Virginia Street Reel
+artist: Traditional
+composers:
+- Biography:Georges Donald LeBlanc
+default_key: A
+tags:
+- JamFriendly
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

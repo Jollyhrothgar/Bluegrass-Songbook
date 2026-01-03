@@ -1,0 +1,17 @@
+id: one-night-a-day
+title: One Night A Day
+artist: Garth Brooks
+composers:
+- Gary Burr and Pete Wasner
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onenightadaylyricschords.pro
+    imported_at: '2026-01-02'

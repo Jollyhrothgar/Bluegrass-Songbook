@@ -1,0 +1,18 @@
+id: april-s-fool
+title: April's Fool
+artist: Tracy Lawrence
+composers:
+- Keith Perry, Bernie Faulkner, Wayne Davis
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aprilsfoollyricsandchords.pro
+    imported_at: '2026-01-02'

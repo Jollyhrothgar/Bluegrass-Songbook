@@ -1,0 +1,17 @@
+id: drinking-them-beers
+title: Drinking Them Beers
+artist: Tompall Glaser
+composers:
+- Bill Chappell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drinkingthembeerslyricschords.pro
+    imported_at: '2026-01-02'

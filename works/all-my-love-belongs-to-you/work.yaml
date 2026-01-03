@@ -1,0 +1,15 @@
+id: all-my-love-belongs-to-you
+title: All My Love Belongs To You
+artist: Jerry Wallace
+composers:
+- Henry Glover and Sally Nix
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allmylovebelongstoyoulyricschords.pro
+    imported_at: '2026-01-02'

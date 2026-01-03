@@ -1,0 +1,18 @@
+id: no-way-out
+title: No Way Out
+artist: The Oak Ridge Boys
+composers:
+- Steve Bogard and Rick Giles
+default_key: C
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nowayoutlyricschords.pro
+    imported_at: '2026-01-02'

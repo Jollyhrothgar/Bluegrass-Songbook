@@ -1,0 +1,13 @@
+id: story-of-parson-joe
+title: Story Of Parson Joe
+artist: Tex Morton
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: storyofparsonjoelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: send-me-back-my-love
+title: Send Me Back My Love
+artist: Jim Reeves
+composers:
+- Leo Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sendmebackmylovelyricschords.pro
+    imported_at: '2026-01-02'

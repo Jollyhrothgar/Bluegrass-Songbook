@@ -1,0 +1,17 @@
+id: she-burnt-the-little-roadside-tavern-down
+title: She Burnt The Little Roadside Tavern Down
+artist: Johnny Russell
+composers:
+- Bill Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sheburntthelittleroadsidetaverndownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: rockin-in-the-arms-of-your-memory
+title: Rockin' In The Arms Of Your Memory
+artist: George Strait
+composers:
+- Dean Dillon and Norro Wilson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockininthearmsofyourmemorylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: country-girl-lyrics-and-chords
+title: Country Girl Lyrics and Chords
+artist: Kitty Wells
+composers:
+- Myra Smith and Margaret Lewis
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countrygirllyrics-chords.pro
+    imported_at: '2026-01-02'

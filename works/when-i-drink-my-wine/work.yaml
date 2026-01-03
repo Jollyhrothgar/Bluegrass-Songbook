@@ -1,0 +1,17 @@
+id: when-i-drink-my-wine
+title: When I Drink My Wine
+artist: Porter Wagoner
+composers:
+- Dolly Parton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenidrinkmywinelyricschords.pro
+    imported_at: '2026-01-02'

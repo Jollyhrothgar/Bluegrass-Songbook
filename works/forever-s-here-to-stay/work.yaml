@@ -1,0 +1,17 @@
+id: forever-s-here-to-stay
+title: Forever's Here To Stay
+artist: George Jones
+composers:
+- Buddy Cannon and Larry Bastian
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foreversheretostaylyricschords.pro
+    imported_at: '2026-01-02'

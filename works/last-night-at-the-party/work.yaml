@@ -1,0 +1,17 @@
+id: last-night-at-the-party
+title: Last Night At The Party
+artist: Faron Young
+composers:
+- Roger Miller and Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lastnightatthepartylyricschords.pro
+    imported_at: '2026-01-02'

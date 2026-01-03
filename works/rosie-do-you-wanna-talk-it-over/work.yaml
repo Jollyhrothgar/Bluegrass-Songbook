@@ -1,0 +1,17 @@
+id: rosie-do-you-wanna-talk-it-over
+title: Rosie (Do You Wanna Talk It Over)
+artist: Red Steagall
+composers:
+- Sonny Throckmorton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rosiedoyouwannatalkitoverlyricschords.pro
+    imported_at: '2026-01-02'

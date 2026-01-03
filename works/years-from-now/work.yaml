@@ -1,0 +1,15 @@
+id: years-from-now
+title: Years From Now
+artist: Don Williams
+composers:
+- Roger Cook and Charles Cochran
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yearsfromnowlyricschords.pro
+    imported_at: '2026-01-02'

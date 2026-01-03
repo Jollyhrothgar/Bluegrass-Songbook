@@ -1,0 +1,17 @@
+id: if-i-didn-t-have-you-in-my-world
+title: If I Didn't Have You In My World
+artist: Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifididnthaveyouinmyworldlyricschords.pro
+    imported_at: '2026-01-02'

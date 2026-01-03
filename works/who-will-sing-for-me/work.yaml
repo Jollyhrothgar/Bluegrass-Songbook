@@ -1,0 +1,18 @@
+id: who-will-sing-for-me
+title: Who Will Sing For Me
+artist: Lester Flatt
+composers:
+- Carter Stanley
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whowillsingformelyricschords.pro
+    imported_at: '2026-01-02'

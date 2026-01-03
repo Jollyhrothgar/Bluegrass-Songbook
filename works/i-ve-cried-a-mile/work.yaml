@@ -1,0 +1,19 @@
+id: i-ve-cried-a-mile
+title: I've Cried A Mile
+artist: Hank Snow
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivecriedmilelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: i-wasn-t-fooling-around
+title: I Wasn't Fooling Around
+artist: George Strait
+composers:
+- Jim Lauderdale and John Leventhal
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwasntfoolingaroundlyricschords.pro
+    imported_at: '2026-01-02'

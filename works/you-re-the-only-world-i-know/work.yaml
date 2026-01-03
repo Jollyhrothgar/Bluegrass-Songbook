@@ -1,0 +1,17 @@
+id: you-re-the-only-world-i-know
+title: You're The Only World I Know
+artist: Sonny James
+composers:
+- Bob Tubert and Sonny James
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheonlyworldiknowlyricschords.pro
+    imported_at: '2026-01-02'

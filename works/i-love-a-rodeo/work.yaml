@@ -1,0 +1,15 @@
+id: i-love-a-rodeo
+title: I Love A Rodeo
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovearodeolyricschords.pro
+    imported_at: '2026-01-02'

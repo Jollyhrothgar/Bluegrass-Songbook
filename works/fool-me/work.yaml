@@ -1,0 +1,17 @@
+id: fool-me
+title: Fool Me
+artist: Lynn Anderson
+composers:
+- Joe South
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolmelyricschords.pro
+    imported_at: '2026-01-02'

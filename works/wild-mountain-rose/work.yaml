@@ -1,0 +1,18 @@
+id: wild-mountain-rose
+title: Wild Mountain Rose
+artist: Conway Twitty
+composers:
+- L.E. White, Betty Jo White, Charles Haney
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wildmountainroselyricschords.pro
+    imported_at: '2026-01-02'

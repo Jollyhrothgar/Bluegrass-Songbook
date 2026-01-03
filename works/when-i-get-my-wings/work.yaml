@@ -1,0 +1,16 @@
+id: when-i-get-my-wings
+title: When I Get My Wings
+artist: Billy Joe Shaver
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenigetmywingslyricschords.pro
+    imported_at: '2026-01-02'

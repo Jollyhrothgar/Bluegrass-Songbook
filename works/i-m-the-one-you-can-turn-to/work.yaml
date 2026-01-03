@@ -1,0 +1,17 @@
+id: i-m-the-one-you-can-turn-to
+title: I'm The One You Can Turn To
+artist: Billy Walker
+composers:
+- Yvonne Devaney
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imtheoneyoucanturntolyricschords.pro
+    imported_at: '2026-01-02'

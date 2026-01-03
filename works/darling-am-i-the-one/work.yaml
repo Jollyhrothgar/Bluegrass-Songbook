@@ -1,0 +1,17 @@
+id: darling-am-i-the-one
+title: Darling Am I The One
+artist: Carl Smith
+composers:
+- Floyd Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darlingamitheonelyricschords.pro
+    imported_at: '2026-01-02'

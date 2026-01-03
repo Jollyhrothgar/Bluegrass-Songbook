@@ -1,0 +1,17 @@
+id: moonlight-and-roses
+title: Moonlight and Roses
+artist: Jim Reeves
+composers:
+- Ben Black, Neil Moret aka (Chas. N. Daniels)
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moonlightandroseslyricsandchords.pro
+    imported_at: '2026-01-02'

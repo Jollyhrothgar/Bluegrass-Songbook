@@ -1,0 +1,17 @@
+id: smell-the-flowers
+title: Smell The Flowers
+artist: Tanya Tucker
+composers:
+- Jerry Reed Hubbard
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: smelltheflowerslyricschords.pro
+    imported_at: '2026-01-02'

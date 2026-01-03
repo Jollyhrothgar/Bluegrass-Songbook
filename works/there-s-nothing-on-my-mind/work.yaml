@@ -1,0 +1,17 @@
+id: there-s-nothing-on-my-mind
+title: There's Nothing On My Mind
+artist: Ernest Tubb
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnothingonmymindlyricschords.pro
+    imported_at: '2026-01-02'

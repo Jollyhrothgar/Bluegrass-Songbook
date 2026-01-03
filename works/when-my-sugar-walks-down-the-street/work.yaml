@@ -1,0 +1,15 @@
+id: when-my-sugar-walks-down-the-street
+title: When My Sugar Walks Down The Street
+artist: Ferlin Husky
+composers:
+- Irving Mills, Jimmy McHugh, Gene Austin
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenmysugarwalksdownthestreetlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-believe-in-you-2
+title: I Believe In You
+artist: Don Williams
+composers:
+- Roger Cook and Sam Hogin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibelieveinyoulyricschords.pro
+    imported_at: '2026-01-02'

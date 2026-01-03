@@ -1,0 +1,17 @@
+id: lucky-ladies
+title: Lucky Ladies
+artist: Jeannie Seely
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: luckyladieslyricschords.pro
+    imported_at: '2026-01-02'

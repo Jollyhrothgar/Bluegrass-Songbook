@@ -1,0 +1,20 @@
+id: all-the-good-is-gone
+title: All The Good Is Gone
+artist: Jerry Lee Lewis
+composers:
+- Norro Wilson and Dottie Bruce
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allthegoodisgonelyricschords.pro
+    imported_at: '2026-01-02'

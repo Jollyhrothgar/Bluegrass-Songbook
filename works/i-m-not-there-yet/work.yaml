@@ -1,0 +1,17 @@
+id: i-m-not-there-yet
+title: I'm Not There Yet
+artist: The Lonesome River Band
+composers:
+- Brandon Rickman and Kevin Denney
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotthereyetlyricschords.pro
+    imported_at: '2026-01-02'

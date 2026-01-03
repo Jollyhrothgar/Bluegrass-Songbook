@@ -1,0 +1,17 @@
+id: don-t-lay-your-head-on-my-shoulder
+title: Don't Lay Your Head On My Shoulder
+artist: Wynn Stewart
+composers:
+- Dale Noe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontlayyourheadonmyshoulderlyricschords.pro
+    imported_at: '2026-01-02'

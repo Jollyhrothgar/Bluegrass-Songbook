@@ -1,0 +1,17 @@
+id: i-don-t-know-how-i-ll-live
+title: I Don't Know How I'll Live
+artist: Carl Belew
+composers:
+- Vic McAlpin and Roy Drusky
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontknowhowilllivelyricschords.pro
+    imported_at: '2026-01-02'

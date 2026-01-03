@@ -1,0 +1,17 @@
+id: while-you-re-dancing
+title: While You're Dancing
+artist: Marty Robbins
+composers:
+- Bobby Braddock
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whileyouredancinglyricschords.pro
+    imported_at: '2026-01-02'

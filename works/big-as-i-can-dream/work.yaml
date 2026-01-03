@@ -1,0 +1,19 @@
+id: big-as-i-can-dream
+title: Big As I Can Dream
+artist: Roy Orbison
+composers:
+- Bob Montgomery
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigasicandreamlyricschords.pro
+    imported_at: '2026-01-02'

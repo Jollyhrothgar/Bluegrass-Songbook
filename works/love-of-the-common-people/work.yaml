@@ -1,0 +1,20 @@
+id: love-of-the-common-people
+title: Love Of The Common People
+artist: Waylon Jennings
+composers:
+- Ronnie Wilkins and John Hurley
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveofthecommonpeoplelyricschords.pro
+    imported_at: '2026-01-02'

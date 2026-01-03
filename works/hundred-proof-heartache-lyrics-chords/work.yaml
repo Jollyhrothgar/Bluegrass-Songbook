@@ -1,0 +1,17 @@
+id: hundred-proof-heartache-lyrics-chords
+title: Hundred Proof Heartache Lyrics Chords
+artist: Loretta Lynn
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hundredproofheartachelyricschords.pro
+    imported_at: '2026-01-02'

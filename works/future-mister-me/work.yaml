@@ -1,0 +1,17 @@
+id: future-mister-me
+title: Future Mister Me
+artist: Randy Travis
+composers:
+- John Lindley and Randy Travis
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: futuremistermelyricschords.pro
+    imported_at: '2026-01-02'

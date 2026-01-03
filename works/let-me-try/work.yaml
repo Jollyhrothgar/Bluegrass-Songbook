@@ -1,0 +1,18 @@
+id: let-me-try
+title: Let Me Try
+artist: Randy Travis
+composers:
+- Buddy Cannon and Allen Shamblin
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmetrylyricschords.pro
+    imported_at: '2026-01-02'

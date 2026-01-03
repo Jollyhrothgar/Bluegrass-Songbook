@@ -1,0 +1,17 @@
+id: you-took-the-easy-way-out
+title: You Took The Easy Way Out
+artist: Dottie West
+composers:
+- Dottie West, Bill West, Stonewall Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youtooktheeasywayoutlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: let-s-regain-the-garden
+title: Let's Regain The Garden
+artist: Kitty Wells
+composers:
+- Herman Phillips
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsregainthegardenlyricschords.pro
+    imported_at: '2026-01-02'

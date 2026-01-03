@@ -1,0 +1,16 @@
+id: cry-from-the-cross
+title: Cry From The Cross
+artist: The Stanley Brothers
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cryfromthecrosslyricschords.pro
+    imported_at: '2026-01-02'

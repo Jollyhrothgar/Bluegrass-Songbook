@@ -1,0 +1,18 @@
+id: i-heard-my-savior-calling-me
+title: I Heard My Savior Calling Me
+artist: Rhonda Vincent
+composers:
+- Rhonda Vincent and Dorothy Johnson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iheardmysaviorcallingmelyricsandchords.pro
+    imported_at: '2026-01-02'

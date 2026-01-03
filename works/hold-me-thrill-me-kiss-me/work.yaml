@@ -1,0 +1,18 @@
+id: hold-me-thrill-me-kiss-me
+title: Hold Me Thrill Me Kiss Me
+artist: Jim Ed Brown
+composers:
+- Harry Noble
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdmethrillmekissmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: have-i-got-a-deal-for-you
+title: Have I Got A Deal For You
+artist: Reba McEntire
+composers:
+- Michael Heeney and Jackson Leap
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveigotadealforyoulyricschords.pro
+    imported_at: '2026-01-02'

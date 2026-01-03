@@ -1,0 +1,18 @@
+id: i-ve-come-awful-close
+title: I've Come Awful Close
+artist: Hank Thompson
+composers:
+- Ann J. Morton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivecomeawfulcloselyricschords.pro
+    imported_at: '2026-01-02'

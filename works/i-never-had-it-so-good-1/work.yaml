@@ -1,0 +1,19 @@
+id: i-never-had-it-so-good-1
+title: I Never Had It So Good
+artist: Kris Kristofferson
+composers:
+- Paul Williams and Roger Nichols
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineverhaditsogoodlyricschords.pro
+    imported_at: '2026-01-02'

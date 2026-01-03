@@ -1,0 +1,17 @@
+id: girl-like-you
+title: Girl Like You
+artist: Tompall and the Glaser Brothers
+composers:
+- Tompall Glaser
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: girllikeyoulyricschords.pro
+    imported_at: '2026-01-02'

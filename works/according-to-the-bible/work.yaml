@@ -1,0 +1,15 @@
+id: according-to-the-bible
+title: According To The Bible
+artist: Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: accordingtothebiblelyricschords.pro
+    imported_at: '2026-01-02'

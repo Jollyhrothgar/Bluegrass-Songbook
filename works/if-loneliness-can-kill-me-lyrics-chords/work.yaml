@@ -1,0 +1,19 @@
+id: if-loneliness-can-kill-me-lyrics-chords
+title: If Loneliness Can Kill Me Lyrics Chords
+artist: Loretta Lynn
+composers:
+- Billy Henson
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iflonelinesscankillmelyricschords.pro
+    imported_at: '2026-01-02'

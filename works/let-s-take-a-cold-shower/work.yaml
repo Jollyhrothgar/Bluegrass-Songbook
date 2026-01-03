@@ -1,0 +1,17 @@
+id: let-s-take-a-cold-shower
+title: Let's Take A Cold Shower
+artist: Vernon Oxford
+composers:
+- Vic McAlpin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letstakeacoldshowerlyricschords.pro
+    imported_at: '2026-01-02'

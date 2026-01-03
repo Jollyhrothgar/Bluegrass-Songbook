@@ -1,0 +1,19 @@
+id: if-you-really-want-me-to-i-ll-go-i-dont-want-to-get-over-you
+title: If You Really Want Me To I'll Go (I Don’t Want To Get Over You)
+artist: Waylon Jennings
+composers:
+- Delbert McClinton
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoureallywantmetoillgolyricschords.pro
+    imported_at: '2026-01-02'

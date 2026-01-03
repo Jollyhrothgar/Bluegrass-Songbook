@@ -1,0 +1,17 @@
+id: loving-on-borrowed-time
+title: Loving On Borrowed Time
+artist: Mel Street
+composers:
+- Eddie Rabbitt, Dick Heard, Mel Street
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovingonborrowedtimelyricschords.pro
+    imported_at: '2026-01-02'

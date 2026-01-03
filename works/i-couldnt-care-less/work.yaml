@@ -1,0 +1,17 @@
+id: i-couldnt-care-less
+title: I Couldn’t Care Less
+artist: Carl Smith
+composers:
+- Don Gibson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icouldntcarelesslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: beneath-a-painted-sky
+title: Beneath A Painted Sky
+artist: Tammy Wynette
+composers:
+- Joe Chambers and Bucky Jones
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beneathapaintedskylyricschords.pro
+    imported_at: '2026-01-02'

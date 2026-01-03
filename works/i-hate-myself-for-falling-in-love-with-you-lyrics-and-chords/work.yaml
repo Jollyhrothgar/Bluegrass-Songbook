@@ -1,0 +1,15 @@
+id: i-hate-myself-for-falling-in-love-with-you-lyrics-and-chords
+title: I Hate Myself For Falling In Love With You Lyrics and chords
+artist: Faron Young
+composers:
+- Cliff Crawford
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihatemyselfforfallinginlovewithyoulyricschords.pro
+    imported_at: '2026-01-02'

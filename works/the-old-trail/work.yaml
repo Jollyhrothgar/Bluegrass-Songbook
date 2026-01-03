@@ -1,0 +1,15 @@
+id: the-old-trail
+title: The Old Trail
+artist: Don Williams
+composers:
+- Steve Gillette and Charles Quatro
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldtraillyricschords.pro
+    imported_at: '2026-01-02'

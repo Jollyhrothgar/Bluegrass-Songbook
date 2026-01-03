@@ -1,0 +1,18 @@
+id: i-ll-be-your-san-antone-rose
+title: I'll Be Your San Antone Rose
+artist: Emmylou Harris
+composers:
+- Susanna Clark
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbeyoursanantoneroselyricschords.pro
+    imported_at: '2026-01-02'

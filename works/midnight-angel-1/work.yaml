@@ -1,0 +1,18 @@
+id: midnight-angel-1
+title: Midnight Angel
+artist: Rhonda Vincent
+composers:
+- Bobby Osborne, Brian Vincent, Pete Goble
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: midnightangellyricschords.pro
+    imported_at: '2026-01-02'

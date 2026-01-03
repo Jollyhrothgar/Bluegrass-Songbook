@@ -1,0 +1,19 @@
+id: one-foot-in-front-of-the-other
+title: One Foot In Front Of The Other
+artist: George Strait
+composers:
+- Cris Moore and Lee Roy Parnell
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onefootinfrontoftheotherlyricschords.pro
+    imported_at: '2026-01-02'

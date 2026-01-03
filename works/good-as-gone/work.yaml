@@ -1,0 +1,17 @@
+id: good-as-gone
+title: Good As Gone
+artist: Tony Booth
+composers:
+- Dennis Knutson and Jim Shaw
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodasgonelyricschords.pro
+    imported_at: '2026-01-02'

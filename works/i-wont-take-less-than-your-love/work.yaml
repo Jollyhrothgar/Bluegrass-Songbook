@@ -1,0 +1,18 @@
+id: i-wont-take-less-than-your-love
+title: I Won’t Take Less Than Your Love
+artist: Tanya Tucker
+composers:
+- P. Overstreet and D. Schitz
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonttakelessthanyourlovelyricschords.pro
+    imported_at: '2026-01-02'

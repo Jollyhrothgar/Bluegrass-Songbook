@@ -1,0 +1,17 @@
+id: i-can-get-off-on-you
+title: I Can Get Off On You
+artist: Willie Nelson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icangetoffonyoulyricschords.pro
+    imported_at: '2026-01-02'

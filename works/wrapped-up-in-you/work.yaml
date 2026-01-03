@@ -1,0 +1,17 @@
+id: wrapped-up-in-you
+title: Wrapped Up In You
+artist: Garth Brooks
+composers:
+- Wayne Kirkpatrick
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wrappedupinyoulyricschords.pro
+    imported_at: '2026-01-02'

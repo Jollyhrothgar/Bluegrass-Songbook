@@ -1,0 +1,20 @@
+id: ground-hawg
+title: Ground Hawg
+artist: The Everly Brothers
+composers:
+- Ike Everly
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: groundhawglyricschords.pro
+    imported_at: '2026-01-02'

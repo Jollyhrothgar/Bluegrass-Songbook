@@ -1,0 +1,18 @@
+id: tennessee-stud
+title: Tennessee Stud
+artist: Eddy Arnold
+composers:
+- Jimmie Driftwoodintro:Well there never was a hoss like the Tennessee stud
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tennesseestudlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: christy-christmas
+title: Christy Christmas
+artist: Brenda Lee
+composers:
+- Marty Symes and Tony Starr
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: christyChristmaslyricschords.pro
+    imported_at: '2026-01-02'

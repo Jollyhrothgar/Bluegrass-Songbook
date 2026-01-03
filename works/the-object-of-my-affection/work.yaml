@@ -1,0 +1,15 @@
+id: the-object-of-my-affection
+title: The Object Of My Affection
+artist: Faron Young
+composers:
+- Pinky Tomlin, Coy Poe, Jimmie Grier
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theobjectofmyaffectionlyricschords.pro
+    imported_at: '2026-01-02'

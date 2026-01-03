@@ -1,0 +1,15 @@
+id: the-smile-of-a-clown
+title: The Smile of a Clown
+artist: Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesmileofaclownlyricsandchords.pro
+    imported_at: '2026-01-02'

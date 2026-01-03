@@ -1,0 +1,17 @@
+id: seven-dreams
+title: Seven Dreams
+artist: Charlie Rich
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sevendreamslyricschords.pro
+    imported_at: '2026-01-02'

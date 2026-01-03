@@ -1,0 +1,19 @@
+id: women-make-a-fool-out-of-me
+title: Women Make A Fool Out Of Me
+artist: Ernest Tubb
+composers:
+- Jimmie Rodgers
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: womenmakeafooloutofmelyricschords.pro
+    imported_at: '2026-01-02'

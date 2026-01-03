@@ -1,0 +1,19 @@
+id: mohair-sam
+title: Mohair Sam
+artist: Charlie Rich
+composers:
+- Dallas Frazier
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mohairsamlyricschords.pro
+    imported_at: '2026-01-02'

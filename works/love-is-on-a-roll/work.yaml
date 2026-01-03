@@ -1,0 +1,17 @@
+id: love-is-on-a-roll
+title: Love Is On A Roll
+artist: Don Williams
+composers:
+- Roger Prine and Roger Cook
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveisonarolllyricschords.pro
+    imported_at: '2026-01-02'

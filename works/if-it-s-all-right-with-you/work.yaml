@@ -1,0 +1,15 @@
+id: if-it-s-all-right-with-you
+title: If It's All Right With You
+artist: Eddy Arnold
+composers:
+- Kenny O'Dell and Larry Henley
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitsallrightwithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: happy-anniversary-1
+title: Happy Anniversary
+artist: Slim Whitman
+composers:
+- Gary S. Paxton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: happyanniversarylyricschords.pro
+    imported_at: '2026-01-02'

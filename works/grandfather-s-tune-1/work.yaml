@@ -1,0 +1,18 @@
+id: grandfather-s-tune-1
+title: Grandfather's Tune
+artist: Traditional
+composers:
+- Biography:Lewis Thomasson
+default_key: F
+tags:
+- JamFriendly
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

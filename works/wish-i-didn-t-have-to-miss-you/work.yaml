@@ -1,0 +1,15 @@
+id: wish-i-didn-t-have-to-miss-you
+title: Wish I Didn't Have To Miss You
+artist: Norma Jean
+composers:
+- Hank Cochran and Dave Kirby
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wishididnthavetomissyoulyricschords.pro
+    imported_at: '2026-01-02'

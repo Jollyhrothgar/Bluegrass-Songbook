@@ -1,0 +1,17 @@
+id: somebody-hold-me
+title: Somebody Hold Me
+artist: Narvel Felts
+composers:
+- Sue Richards and Ava Aldridge
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodyholdmelyricschords.pro
+    imported_at: '2026-01-02'

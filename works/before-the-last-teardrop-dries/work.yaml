@@ -1,0 +1,17 @@
+id: before-the-last-teardrop-dries
+title: Before The Last Teardrop Dries
+artist: Norma Jean
+composers:
+- Debra Johnson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforethelastteardropdrieslyricschords.pro
+    imported_at: '2026-01-02'

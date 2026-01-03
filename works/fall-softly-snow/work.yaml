@@ -1,0 +1,17 @@
+id: fall-softly-snow
+title: Fall Softly Snow
+artist: Jim Ed Brown and Helen Cornelius
+composers:
+- Jean Surrey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallsoftlysnowlyricschords.pro
+    imported_at: '2026-01-02'

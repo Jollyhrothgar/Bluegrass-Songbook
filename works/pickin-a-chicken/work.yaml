@@ -1,0 +1,17 @@
+id: pickin-a-chicken
+title: Pickin' A Chicken
+artist: Jim Reeves
+composers:
+- Derek Bernfield, John Roberts, Trevor Boswell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pickinachickenlyricschords.pro
+    imported_at: '2026-01-02'

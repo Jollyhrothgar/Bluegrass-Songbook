@@ -1,0 +1,21 @@
+id: hold-on-tight-let-it-go
+title: Hold On Tight (Let It Go)
+artist: Ricky Skaggs
+composers:
+- Don Schlitz and Paul Overstreet
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdontightletitgolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: he-set-me-free-1
+title: He Set Me Free
+artist: The Louvin Brothers
+composers:
+- Albert E. Brumley
+default_key: G
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesetmefreelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: don-t-ever-take-the-ribbons-from-your-hair
+title: Don't Ever Take The Ribbons From Your Hair
+artist: Eddy Arnold
+composers:
+- Helen Hudgins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontevertaketheribbonsfromyourhairlyricschords.pro
+    imported_at: '2026-01-02'

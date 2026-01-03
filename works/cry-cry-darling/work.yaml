@@ -1,0 +1,17 @@
+id: cry-cry-darling
+title: Cry Cry Darling
+artist: Web Pierce
+composers:
+- Jimmy D. Miller and Jimmy Newman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crycrydarlinglyricschords.pro
+    imported_at: '2026-01-02'

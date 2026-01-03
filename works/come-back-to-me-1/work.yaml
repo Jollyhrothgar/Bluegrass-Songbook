@@ -1,0 +1,15 @@
+id: come-back-to-me-1
+title: Come Back To Me
+artist: Jamie Dailey and Darrin Vincent
+composers:
+- Jimmy Fortune
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comebacktomelyricschords.pro
+    imported_at: '2026-01-02'

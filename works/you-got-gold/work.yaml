@@ -1,0 +1,19 @@
+id: you-got-gold
+title: You Got Gold
+artist: John Prine
+composers:
+- Keith Sykes and John Prine
+default_key: G
+tags:
+- ClassicCountry
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yougotgoldlyricschords.pro
+    imported_at: '2026-01-02'

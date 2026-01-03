@@ -1,0 +1,17 @@
+id: he-ll-never-take-the-place-of-you
+title: He'll Never Take The Place Of You
+artist: Tammy Wynette
+composers:
+- Billy Sherrill, Charlie Daniels, Bob Johnson
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hellnevertaketheplaceofyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: cigarettes-whiskey-and-wild-wild-women
+title: Cigarettes Whiskey and Wild Wild Women
+artist: Wilburn Brothers
+composers:
+- Tim Spencer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cigaretteswhiskeyandwildwildwomenlyricschords.pro
+    imported_at: '2026-01-02'

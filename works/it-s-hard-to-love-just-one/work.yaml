@@ -1,0 +1,17 @@
+id: it-s-hard-to-love-just-one
+title: It's Hard To Love Just One
+artist: Jim Reeves
+composers:
+- Fabor Robinson and Slim Willet
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itshardtolovejustonelyricschords.pro
+    imported_at: '2026-01-02'

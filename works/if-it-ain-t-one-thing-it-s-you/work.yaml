@@ -1,0 +1,17 @@
+id: if-it-ain-t-one-thing-it-s-you
+title: If It Ain't One Thing (It's You)
+artist: Alan Jackson
+composers:
+- Jim McBride and Alan Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitaintonethingiItsyoulyricschords.pro
+    imported_at: '2026-01-02'

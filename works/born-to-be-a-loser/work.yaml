@@ -1,0 +1,20 @@
+id: born-to-be-a-loser
+title: Born To Be A Loser
+artist: Jerry Lee Lewis
+composers:
+- Charles Carpenter
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: borntobealoserlyricschords.pro
+    imported_at: '2026-01-02'

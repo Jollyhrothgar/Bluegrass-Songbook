@@ -1,0 +1,17 @@
+id: maybe-love-will-save-the-day
+title: Maybe Love Will Save The Day
+artist: Ron Williams
+composers:
+- Jody W. Johnson and David H. Lindsey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maybelovewillsavethedaylyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: before-i-met-you
+title: Before I Met You
+artist: Carl Smith
+composers:
+- Charles L. Seitz, Joe Lewis, Elmar Rader
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforeimetyoulyricsandchords.pro
+    imported_at: '2026-01-02'

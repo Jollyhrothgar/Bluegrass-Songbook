@@ -1,0 +1,17 @@
+id: love-ain-t-never-gonna-be-no-better
+title: Love Ain't Never Gonna Be No Better
+artist: Webb Pierce
+composers:
+- Cecil Null and Rusty Adams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveaintnevergonnabenobetterlyricschords.pro
+    imported_at: '2026-01-02'

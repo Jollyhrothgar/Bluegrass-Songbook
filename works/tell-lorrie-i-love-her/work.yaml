@@ -1,0 +1,15 @@
+id: tell-lorrie-i-love-her
+title: Tell Lorrie I Love Her
+artist: Keith Whitley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: telllorrieiloveherlyricschords.pro
+    imported_at: '2026-01-02'

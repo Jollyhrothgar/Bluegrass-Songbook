@@ -1,0 +1,17 @@
+id: in-the-house-of-the-lord
+title: In The House Of The Lord
+artist: Hank Locklin
+composers:
+- Lawrence Lewis and Katherine Adelman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthehouseofthelordlyricschords.pro
+    imported_at: '2026-01-02'

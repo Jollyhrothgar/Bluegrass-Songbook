@@ -1,0 +1,18 @@
+id: let-s-all-go-down-to-the-river
+title: Let's All Go Down to the River
+artist: Tammy Wynette
+composers:
+- Earl Montgomery and Sue Richards
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsallgodowntotheriverlyricschords.pro
+    imported_at: '2026-01-02'

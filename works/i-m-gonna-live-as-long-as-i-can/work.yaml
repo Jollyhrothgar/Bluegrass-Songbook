@@ -1,0 +1,17 @@
+id: i-m-gonna-live-as-long-as-i-can
+title: I'm Gonna Live (As Long As I Can)
+artist: Charlie Walker
+composers:
+- Hank Cochran
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnaliveaslongasicanlyricschords.pro
+    imported_at: '2026-01-02'

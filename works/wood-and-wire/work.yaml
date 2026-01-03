@@ -1,0 +1,17 @@
+id: wood-and-wire
+title: Wood And Wire
+artist: George Jones
+composers:
+- Kenny Beard and Michael Mahler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: woodandwirelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: joy-bells-ringing-in-my-soul
+title: Joy Bells Ringing In My Soul
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Gladys Stacey, Louise Certain, James Organ
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: joybellsringinginmysoullyricschords.pro
+    imported_at: '2026-01-02'

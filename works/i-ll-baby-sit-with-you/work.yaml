@@ -1,0 +1,17 @@
+id: i-ll-baby-sit-with-you
+title: I'll Baby Sit With You
+artist: Ferlin Husky
+composers:
+- Clyde Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbabysitwithyoulyricschords.pro
+    imported_at: '2026-01-02'

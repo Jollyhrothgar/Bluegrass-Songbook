@@ -1,0 +1,17 @@
+id: distant-drums
+title: Distant Drums
+artist: Jim Reeves
+composers:
+- Cindy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: distantdrumslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: stranger-at-my-door
+title: Stranger At My Door
+artist: Anne Murray
+composers:
+- Charlie Black, Kerry Chater, Rory M. Bourke
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: strangeratmydoorlyricschords.pro
+    imported_at: '2026-01-02'

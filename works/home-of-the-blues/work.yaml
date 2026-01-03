@@ -1,0 +1,22 @@
+id: home-of-the-blues
+title: Home Of The Blues
+artist: Johnny Cash
+composers:
+- Johnny Cash, Lily McAlpin, Glenn D. Tubb
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: homeoftheblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: today-is-mine
+title: Today Is Mine
+artist: Slim Whitman
+composers:
+- Blanche Kerr Brock and Virgil P. Brock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: todayisminelyricschords.pro
+    imported_at: '2026-01-02'

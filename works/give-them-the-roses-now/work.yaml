@@ -1,0 +1,17 @@
+id: give-them-the-roses-now
+title: Give Them The Roses Now
+artist: Wilburn Brothers
+composers:
+- James Rowe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givethemtherosesnowlyricschords.pro
+    imported_at: '2026-01-02'

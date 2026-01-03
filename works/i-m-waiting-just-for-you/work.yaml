@@ -1,0 +1,18 @@
+id: i-m-waiting-just-for-you
+title: I'm Waiting Just For You
+artist: Wanda Jackson
+composers:
+- Henry Glover, Carolyn Leigh, Lucky Millinder
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imwaitingjustforyoulyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-ballad-of-paladin
+title: The Ballad Of Paladin
+artist: Faron Young
+composers:
+- Johnny Western, Richard Boone and Sam Rolfe
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theballadofpaladinlyricschords.pro
+    imported_at: '2026-01-02'

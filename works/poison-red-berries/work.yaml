@@ -1,0 +1,15 @@
+id: poison-red-berries
+title: Poison Red Berries
+artist: Johnny Rodriguez
+composers:
+- Mickey Newberry
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: poisonredberrieslyricschords.pro
+    imported_at: '2026-01-02'

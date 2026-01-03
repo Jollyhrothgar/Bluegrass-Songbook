@@ -1,0 +1,17 @@
+id: girl-on-my-mind
+title: Girl On My Mind
+artist: Buddy Holly
+composers:
+- Don Guess
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: girlonmymindlyricschords.pro
+    imported_at: '2026-01-02'

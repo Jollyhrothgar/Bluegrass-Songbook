@@ -1,0 +1,17 @@
+id: give-me-back-my-heart
+title: Give Me Back My Heart
+artist: Jimmy Dean
+composers:
+- Paul Anka
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givemebackmyheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: just-when-i-needed-you
+title: Just When I Needed You
+artist: George Jones
+composers:
+- Johnny Wright, Jack Anglin, Clyde Baum
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justwhenineededyoulyricsandchords.pro
+    imported_at: '2026-01-02'

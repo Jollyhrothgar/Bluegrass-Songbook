@@ -1,0 +1,17 @@
+id: you-ve-been-so-good-to-me
+title: You've Been So Good To Me
+artist: Van Trevor
+composers:
+- Dick Heard and Van Trevor
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvebeensogoodtomelyricschords.pro
+    imported_at: '2026-01-02'

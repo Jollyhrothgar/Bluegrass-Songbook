@@ -1,0 +1,15 @@
+id: blue-is-the-way-that-i-feel
+title: Blue Is The Way That I Feel
+artist: Del McCoury
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blueisthewaythatifeellyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: beautiful-people
+title: Beautiful People
+artist: Bill Anderson
+composers:
+- Kenny O'Dell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beautifulpeoplelyricschords.pro
+    imported_at: '2026-01-02'

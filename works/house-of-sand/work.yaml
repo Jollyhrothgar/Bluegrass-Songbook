@@ -1,0 +1,21 @@
+id: house-of-sand
+title: House Of Sand
+artist: Elvis Presley
+composers:
+- Bernie Baum, Bill Giant, Florence Kaye
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: houseofsandlyricsandchords.pro
+    imported_at: '2026-01-02'

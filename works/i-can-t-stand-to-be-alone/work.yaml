@@ -1,0 +1,17 @@
+id: i-can-t-stand-to-be-alone
+title: I Can't Stand To Be Alone
+artist: Carl Belew
+composers:
+- Carl Belew and Clyde Pitts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantstandtobealonelyricschords.pro
+    imported_at: '2026-01-02'

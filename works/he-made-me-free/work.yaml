@@ -1,0 +1,17 @@
+id: he-made-me-free
+title: He Made Me Free
+artist: George Jones
+composers:
+- Darrell Edwards
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hemademefreelyricschords.pro
+    imported_at: '2026-01-02'

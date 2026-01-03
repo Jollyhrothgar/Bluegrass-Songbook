@@ -1,0 +1,17 @@
+id: weakness
+title: Weakness
+artist: Mickey Gilley
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weaknesslyricschords.pro
+    imported_at: '2026-01-02'

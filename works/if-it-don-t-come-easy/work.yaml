@@ -1,0 +1,18 @@
+id: if-it-don-t-come-easy
+title: If It Don't Come Easy
+artist: Tanya Tucker
+composers:
+- Craig Karp and Dave Gibson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitdontcomeeasylyricschords.pro
+    imported_at: '2026-01-02'

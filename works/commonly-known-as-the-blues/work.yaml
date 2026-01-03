@@ -1,0 +1,13 @@
+id: commonly-known-as-the-blues
+title: Commonly Known As The Blues
+artist: Johnny Rodriguez
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: commonlyknownastheblueslyricschords.pro
+    imported_at: '2026-01-02'

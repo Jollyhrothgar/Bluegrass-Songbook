@@ -1,0 +1,17 @@
+id: the-heart-of-a-clown
+title: The Heart of a Clown
+artist: Gene Watson
+composers:
+- Steve Nelson, Jack Rollins and
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theheartofaclownlyricschords.pro
+    imported_at: '2026-01-02'

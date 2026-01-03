@@ -1,0 +1,18 @@
+id: two-of-a-kind-workin-on-a-full-house
+title: Two Of A Kind Workin' On A Full House
+artist: Garth Brooks
+composers:
+- Dennis Robbins, Bobby Boyd, Warren Haynes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twoofakindworkinonafullhouselyricschords.pro
+    imported_at: '2026-01-02'

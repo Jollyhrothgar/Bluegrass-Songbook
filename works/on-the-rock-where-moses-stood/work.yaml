@@ -1,0 +1,17 @@
+id: on-the-rock-where-moses-stood
+title: On The Rock Where Moses Stood
+artist: Norma Jean
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ontherockwheremosesstoodlyricschords.pro
+    imported_at: '2026-01-02'

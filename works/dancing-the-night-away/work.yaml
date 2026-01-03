@@ -1,0 +1,18 @@
+id: dancing-the-night-away
+title: Dancing The Night Away
+artist: Tanya Tucker
+composers:
+- Russell Smith and James H. Brown
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dancingthenightawaylyricschords.pro
+    imported_at: '2026-01-02'

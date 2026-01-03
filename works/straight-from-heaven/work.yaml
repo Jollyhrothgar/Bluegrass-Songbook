@@ -1,0 +1,15 @@
+id: straight-from-heaven
+title: Straight From Heaven
+artist: Slim Whitman
+composers:
+- Jim Glaser
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: straightfromheavenlyricschords.pro
+    imported_at: '2026-01-02'

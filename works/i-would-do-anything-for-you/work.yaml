@@ -1,0 +1,15 @@
+id: i-would-do-anything-for-you
+title: I Would Do Anything For You
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwoulddoanythingforyoulyricschords.pro
+    imported_at: '2026-01-02'

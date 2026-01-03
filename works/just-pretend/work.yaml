@@ -1,0 +1,20 @@
+id: just-pretend
+title: Just Pretend
+artist: Elvis Presley
+composers:
+- Doug Flett and Guy Fletcher
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justpretendlyricschords.pro
+    imported_at: '2026-01-02'

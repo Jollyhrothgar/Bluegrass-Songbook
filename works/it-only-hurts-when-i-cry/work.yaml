@@ -1,0 +1,18 @@
+id: it-only-hurts-when-i-cry
+title: It Only Hurts When I Cry ,
+artist: Dwight Yoakam
+composers:
+- Dwight Yoakam and Roger Miller
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itonlyhurtswhenicrylyricschords.pro
+    imported_at: '2026-01-02'

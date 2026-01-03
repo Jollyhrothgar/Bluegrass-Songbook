@@ -1,0 +1,17 @@
+id: does-jesus-care
+title: Does Jesus Care
+artist: Sonny James
+composers:
+- Eugene L. Clark, F.E. Graeff, Joe L. Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doesJesuscarelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: a-stranger-in-my-arms
+title: A Stranger In My Arms
+artist: Patsy Cline
+composers:
+- Charlotte White, Virginia Hensley and Mary Lu Jeans
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: astrangerinmyarmslyricschords.pro
+    imported_at: '2026-01-02'

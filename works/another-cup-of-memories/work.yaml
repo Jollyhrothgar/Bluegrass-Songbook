@@ -1,0 +1,17 @@
+id: another-cup-of-memories
+title: Another Cup Of Memories
+artist: Billy Crash Craddock
+composers:
+- Dale Morris
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anothercupofmemorieslyricschords.pro
+    imported_at: '2026-01-02'

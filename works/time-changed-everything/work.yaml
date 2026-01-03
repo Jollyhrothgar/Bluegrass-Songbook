@@ -1,0 +1,18 @@
+id: time-changed-everything
+title: Time Changed Everything
+artist: Roy Orbison
+composers:
+- Buddy Buie and John Adkins
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timechangedeverythinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: the-keeper-of-the-key
+title: The Keeper of the Key
+artist: Wanda Jackson
+composers:
+- Wynn Stewart and Harlan Howard
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thekeeperofthekeylyricschords.pro
+    imported_at: '2026-01-02'

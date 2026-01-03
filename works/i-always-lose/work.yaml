@@ -1,0 +1,17 @@
+id: i-always-lose
+title: I Always Lose
+artist: Hank Locklin
+composers:
+- Zeke Clements and Hank Locklin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ialwaysloselyricschords.pro
+    imported_at: '2026-01-02'

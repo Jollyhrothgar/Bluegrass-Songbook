@@ -1,0 +1,21 @@
+id: old-kind-of-love
+title: Old Kind Of Love
+artist: Ricky Skaggs
+composers:
+- Paul Overstreet
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldkindoflovelyricschords.pro
+    imported_at: '2026-01-02'

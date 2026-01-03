@@ -1,0 +1,19 @@
+id: gone-and-left-me-blues
+title: Gone And Left Me Blues
+artist: Ernest Tubb
+composers:
+- Johnny Bond and Jimmy Wakely
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goneandleftmeblueslyricschords.pro
+    imported_at: '2026-01-02'

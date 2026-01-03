@@ -1,0 +1,17 @@
+id: it-only-hurts-for-a-little-while
+title: It Only Hurts For A Little While
+artist: Connie Smith
+composers:
+- Mack David and Fred Spielman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itonlyhurtsforalittlewhilelyricschords.pro
+    imported_at: '2026-01-02'

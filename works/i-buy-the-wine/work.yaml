@@ -1,0 +1,18 @@
+id: i-buy-the-wine
+title: I Buy The Wine
+artist: Lefty Frizzell
+composers:
+- Rory Bourke and Gayle Barnhill
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibuythewinelyricschords.pro
+    imported_at: '2026-01-02'

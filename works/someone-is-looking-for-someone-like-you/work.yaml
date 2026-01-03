@@ -1,0 +1,15 @@
+id: someone-is-looking-for-someone-like-you
+title: Someone Is Looking For Someone Like You
+artist: Gail Davies
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someoneislookingforsomeonelikeyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: this-world-holds-nothing-since-you-re-gone
+title: This World Holds Nothing Since You're Gone
+artist: Stonewall Jackson
+composers:
+- Jack Schneider and Claude Southall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisworldholdsnothingsinceyouregonelyricsandchords.pro
+    imported_at: '2026-01-02'

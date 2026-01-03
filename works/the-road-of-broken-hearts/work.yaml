@@ -1,0 +1,17 @@
+id: the-road-of-broken-hearts
+title: The Road Of Broken Hearts
+artist: Cowboy Copas
+composers:
+- Jack Kingston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theroadofbrokenheartslyricschords.pro
+    imported_at: '2026-01-02'

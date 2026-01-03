@@ -1,0 +1,17 @@
+id: tears-broke-out-on-me
+title: Tears Broke Out On Me
+artist: Eddy Arnold
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tearsbrokeoutonmelyricschords.pro
+    imported_at: '2026-01-02'

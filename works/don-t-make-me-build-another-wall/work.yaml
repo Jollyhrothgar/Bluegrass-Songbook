@@ -1,0 +1,17 @@
+id: don-t-make-me-build-another-wall
+title: Don't Make Me Build Another Wall
+artist: Melba Montgomery
+composers:
+- Melba Montgomery, Carl Montgomery, Bill Hayes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontmakemebuildanotherwalllyricschords.pro
+    imported_at: '2026-01-02'

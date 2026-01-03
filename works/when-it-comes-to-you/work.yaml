@@ -1,0 +1,17 @@
+id: when-it-comes-to-you
+title: When It Comes To You
+artist: John Anderson
+composers:
+- Mark Knopfler
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenitcomestoyoulyricschords.pro
+    imported_at: '2026-01-02'

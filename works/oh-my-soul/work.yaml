@@ -1,0 +1,17 @@
+id: oh-my-soul
+title: Oh My Soul
+artist: Crystal Gayle
+composers:
+- Marcia Routh
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohmysoullyricschords.pro
+    imported_at: '2026-01-02'

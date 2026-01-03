@@ -1,0 +1,18 @@
+id: a-woman-in-love-1
+title: A Woman In Love
+artist: Ronnie Milsap
+composers:
+- Curtis Wright and Doug Millett
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awomaninlovelyricschords.pro
+    imported_at: '2026-01-02'

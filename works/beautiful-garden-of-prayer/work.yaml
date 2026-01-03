@@ -1,0 +1,17 @@
+id: beautiful-garden-of-prayer
+title: Beautiful Garden Of Prayer
+artist: Faron Young
+composers:
+- James H. Fillmore, Eleanor A. Schroll
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beautifulgardenofprayerlyricschords.pro
+    imported_at: '2026-01-02'

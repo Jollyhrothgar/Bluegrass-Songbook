@@ -1,0 +1,18 @@
+id: it-s-better-to-have-loved-a-little
+title: It's Better To Have Loved A Little
+artist: Hank Thompson
+composers:
+- Joe South
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsbettertohavelovedalittlelyricschords.pro
+    imported_at: '2026-01-02'

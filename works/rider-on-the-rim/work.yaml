@@ -1,0 +1,17 @@
+id: rider-on-the-rim
+title: Rider On The Rim
+artist: Red Steagall
+composers:
+- R.W. Hampton and Red Steagall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: riderontherimlyricschords.pro
+    imported_at: '2026-01-02'

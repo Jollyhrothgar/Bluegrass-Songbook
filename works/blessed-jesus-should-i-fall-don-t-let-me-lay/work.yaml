@@ -1,0 +1,16 @@
+id: blessed-jesus-should-i-fall-don-t-let-me-lay
+title: Blessed Jesus Should I Fall Don't Let Me Lay
+artist: Marty Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blessedJesusshouldifalldontletmelaylyricschords.pro
+    imported_at: '2026-01-02'

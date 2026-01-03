@@ -1,0 +1,18 @@
+id: one-more-year
+title: One More Year
+artist: Charley Pride
+composers:
+- Arthur Leo Owens and Hal Bynum
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemoreyearlyricschords.pro
+    imported_at: '2026-01-02'

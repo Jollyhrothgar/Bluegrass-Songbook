@@ -1,0 +1,15 @@
+id: what-a-day-yesterday-was
+title: What A Day Yesterday Was
+artist: Alan Jackson
+composers:
+- Charlie Craig and Mel Besher
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatadayyesterdaywaslyricschords.pro
+    imported_at: '2026-01-02'

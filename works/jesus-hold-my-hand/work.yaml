@@ -1,0 +1,19 @@
+id: jesus-hold-my-hand
+title: Jesus Hold My Hand
+artist: Ricky Skaggs
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jesusholdmyhandlyricschords.pro
+    imported_at: '2026-01-02'

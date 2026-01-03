@@ -1,0 +1,15 @@
+id: she-said-i-love-you-i-just-dont-like-you-anymore
+title: She Said I Love You I Just Don’t Like You Anymore
+artist: Freddie Hart
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesaidiloveyouijustdontlikeyouanymorelyricschords.pro
+    imported_at: '2026-01-02'

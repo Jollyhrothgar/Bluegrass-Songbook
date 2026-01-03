@@ -1,0 +1,14 @@
+id: sitting-on-top-of-the-world
+title: Sitting On Top Of The World
+artist: Walter Vinson, Lonnie Chatmon
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

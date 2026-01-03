@@ -1,0 +1,20 @@
+id: can-t-control-the-wind
+title: Can't Control The Wind
+artist: Ricky Skaggs
+composers:
+- Bill Anderson, Roger Pirtle, Pat Lovely
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantcontrolthewindlyricschords.pro
+    imported_at: '2026-01-02'

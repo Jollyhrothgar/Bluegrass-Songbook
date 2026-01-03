@@ -1,0 +1,17 @@
+id: take-a-taste-of-my-wine
+title: Take A Taste Of My Wine
+artist: Buck Owens
+composers:
+- Bob Morris and Larry Scott
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takeatasteofmywinelyricschords.pro
+    imported_at: '2026-01-02'

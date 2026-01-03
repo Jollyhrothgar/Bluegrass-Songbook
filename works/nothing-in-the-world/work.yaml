@@ -1,0 +1,18 @@
+id: nothing-in-the-world
+title: Nothing In The World
+artist: Charlie Rich
+composers:
+- Margaret A. Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothingintheworldlyricschords.pro
+    imported_at: '2026-01-02'

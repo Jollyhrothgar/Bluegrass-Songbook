@@ -1,0 +1,15 @@
+id: i-d-love-you-all-over-again
+title: I'd Love You All Over Again
+artist: Alan Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idloveyoualloveragainlyricschords.pro
+    imported_at: '2026-01-02'

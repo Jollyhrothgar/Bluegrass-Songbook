@@ -1,0 +1,19 @@
+id: too-gone-too-long
+title: Too Gone Too Long
+artist: Randy Travis
+composers:
+- Gene Pistilli
+default_key: D
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toogonetoolonglyricschords.pro
+    imported_at: '2026-01-02'

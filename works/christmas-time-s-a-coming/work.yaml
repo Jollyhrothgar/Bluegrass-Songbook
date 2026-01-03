@@ -1,0 +1,17 @@
+id: christmas-time-s-a-coming
+title: Christmas Time's A Coming
+artist: Bill Anderson
+composers:
+- Tex Logan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmastimesacominglyricschords.pro
+    imported_at: '2026-01-02'

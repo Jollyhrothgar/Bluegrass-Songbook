@@ -1,0 +1,17 @@
+id: mary-don-t-you-weep-for-me
+title: Mary Don't You Weep For Me
+artist: Stonewall Jackson
+composers:
+- Mel Tillis and Marijohn Wilkin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: marydontyouweepformelyricschords.pro
+    imported_at: '2026-01-02'

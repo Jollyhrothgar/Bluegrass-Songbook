@@ -1,0 +1,19 @@
+id: devil-gets-his-dues
+title: Devil Gets His Dues
+artist: Loretta Lynn
+composers:
+- Darrell Statler
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: devilgetshisdueslyricschords.pro
+    imported_at: '2026-01-02'

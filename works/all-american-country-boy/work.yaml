@@ -1,0 +1,17 @@
+id: all-american-country-boy
+title: All American Country Boy
+artist: Alan Jackson
+composers:
+- Charlie Craig and Keith Stegall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allamericancountryboylyricschords.pro
+    imported_at: '2026-01-02'

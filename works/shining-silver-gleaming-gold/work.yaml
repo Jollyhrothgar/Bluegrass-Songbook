@@ -1,0 +1,17 @@
+id: shining-silver-gleaming-gold
+title: Shining Silver Gleaming Gold
+artist: Rose Maddox
+composers:
+- Billy Hodges, Black Jack Wayne, Rose Maddox
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shiningsilvergleaminggoldlyricschords.pro
+    imported_at: '2026-01-02'

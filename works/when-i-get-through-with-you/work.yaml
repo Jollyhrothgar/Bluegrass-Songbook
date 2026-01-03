@@ -1,0 +1,19 @@
+id: when-i-get-through-with-you
+title: When I Get Through With You
+artist: Patsy Cline
+composers:
+- Harland Howard
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenigetthroughwithyoulyricschords.pro
+    imported_at: '2026-01-02'

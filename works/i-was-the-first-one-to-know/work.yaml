@@ -1,0 +1,15 @@
+id: i-was-the-first-one-to-know
+title: I Was The First One To Know
+artist: Wynn Stewart
+composers:
+- Beverly Stewart and Cliff Massey
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwasthefirstonetoknowlyricschords.pro
+    imported_at: '2026-01-02'

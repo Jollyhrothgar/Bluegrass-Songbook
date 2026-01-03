@@ -1,0 +1,17 @@
+id: then-i-met-the-master
+title: Then I Met The Master
+artist: Dottie West
+composers:
+- Mosie Lister
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenimetthemasterlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: i-threw-away-the-rose
+title: I Threw Away the Rose
+artist: Hank Snow
+composers:
+- Merle Haggard
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithrewawaytheroselyricschords.pro
+    imported_at: '2026-01-02'

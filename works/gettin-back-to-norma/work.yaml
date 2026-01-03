@@ -1,0 +1,17 @@
+id: gettin-back-to-norma
+title: Gettin' Back To Norma
+artist: Bob Luman
+composers:
+- Ray Griff
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gettinbacktonormalyricschords.pro
+    imported_at: '2026-01-02'

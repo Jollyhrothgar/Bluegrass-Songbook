@@ -1,0 +1,17 @@
+id: if-i-never-see-ireland-again
+title: If I Never See Ireland Again
+artist: Red Steagall
+composers:
+- Steve Spurgin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifineverseeirelandagainlyricschords.pro
+    imported_at: '2026-01-02'

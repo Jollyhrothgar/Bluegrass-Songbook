@@ -1,0 +1,17 @@
+id: d-18
+title: D-18
+artist: Norman Blake
+composers:
+- Jerry Faires
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: D18lyrics.pro
+    imported_at: '2026-01-02'

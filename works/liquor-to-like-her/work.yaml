@@ -1,0 +1,17 @@
+id: liquor-to-like-her
+title: Liquor To Like Her
+artist: Hank Williams Jr.
+composers:
+- Paul Overstreet and Tommy Hemby
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: liquortolikeherlyricschords.pro
+    imported_at: '2026-01-02'

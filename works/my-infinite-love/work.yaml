@@ -1,0 +1,18 @@
+id: my-infinite-love
+title: My Infinite Love
+artist: George Strait
+composers:
+- Annette Grossberg, Billy Wayne Yates, Byron Hill
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myinfinitelovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: friday-night-blues
+title: Friday Night Blues
+artist: John Conlee
+composers:
+- Sonny Throckmorton and Rafe Vanhoy
+default_key: G
+tags:
+- ClassicCountry
+- Jazzy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fridaynightblueslyricschords.pro
+    imported_at: '2026-01-02'

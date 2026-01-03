@@ -1,0 +1,21 @@
+id: i-need-you-so
+title: I Need You So
+artist: Elvis Presley
+composers:
+- Ivory Joe Hunter
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineedyousolyricschords.pro
+    imported_at: '2026-01-02'

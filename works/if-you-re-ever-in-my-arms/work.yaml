@@ -1,0 +1,15 @@
+id: if-you-re-ever-in-my-arms
+title: If You're Ever In My Arms
+artist: Ricky Van Shelton
+composers:
+- Bobby Braddock
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoureeverinmyarmslyricschords.pro
+    imported_at: '2026-01-02'

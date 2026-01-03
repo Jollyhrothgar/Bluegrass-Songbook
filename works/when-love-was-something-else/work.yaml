@@ -1,0 +1,18 @@
+id: when-love-was-something-else
+title: When Love Was Something Else
+artist: Conway Twitty
+composers:
+- Scott Anders and Roger Alan Murrah
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenlovewassomethingelselyricschords.pro
+    imported_at: '2026-01-02'

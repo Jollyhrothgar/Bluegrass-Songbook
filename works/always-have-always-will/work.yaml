@@ -1,0 +1,17 @@
+id: always-have-always-will
+title: Always Have Always Will
+artist: Janie Frickie
+composers:
+- Johnny Mears
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alwayshavealwayswilllyricschords.pro
+    imported_at: '2026-01-02'

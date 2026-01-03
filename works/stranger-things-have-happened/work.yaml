@@ -1,0 +1,18 @@
+id: stranger-things-have-happened
+title: Stranger Things Have Happened
+artist: George Strait
+composers:
+- David Chamberlain
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: strangerthingshavehappenedlyricsandchords.pro
+    imported_at: '2026-01-02'

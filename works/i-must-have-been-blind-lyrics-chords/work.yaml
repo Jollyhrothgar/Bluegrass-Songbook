@@ -1,0 +1,17 @@
+id: i-must-have-been-blind-lyrics-chords
+title: I Must Have Been Blind Lyrics Chords
+artist: Slim Whitman
+composers:
+- Jerry Crist and Claude Taylor
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imusthavebeenblindlyricschords.pro
+    imported_at: '2026-01-02'

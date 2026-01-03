@@ -1,0 +1,17 @@
+id: don-t-tell-me
+title: Don't Tell Me
+artist: Jim Reeves
+composers:
+- Jim Reeves, Vernon Dee, Ginger Willis, Hal Willis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttellmelyricschords.pro
+    imported_at: '2026-01-02'

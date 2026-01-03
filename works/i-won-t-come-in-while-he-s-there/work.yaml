@@ -1,0 +1,17 @@
+id: i-won-t-come-in-while-he-s-there
+title: I Won't Come In While He's There
+artist: Jim Reeves
+composers:
+- Gene Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwontcomeinwhilehestherelyricschords.pro
+    imported_at: '2026-01-02'

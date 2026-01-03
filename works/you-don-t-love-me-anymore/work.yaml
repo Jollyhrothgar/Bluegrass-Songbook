@@ -1,0 +1,17 @@
+id: you-don-t-love-me-anymore
+title: You Don't Love Me Anymore
+artist: Merle Haggard
+composers:
+- Freddy Powers
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontlovemeanymorelyricsandchords.pro
+    imported_at: '2026-01-02'

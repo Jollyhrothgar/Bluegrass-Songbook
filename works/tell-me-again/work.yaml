@@ -1,0 +1,15 @@
+id: tell-me-again
+title: Tell Me Again
+artist: Billy Walker
+composers:
+- Jerry Crutchfield
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmeagainlyricschords.pro
+    imported_at: '2026-01-02'

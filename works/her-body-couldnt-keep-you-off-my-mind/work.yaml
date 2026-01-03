@@ -1,0 +1,17 @@
+id: her-body-couldnt-keep-you-off-my-mind
+title: Her Body Couldn’t Keep You Off my Mind
+artist: Gene Watson
+composers:
+- Ray Griff
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: herbodycouldntkeepyouoffmymindlyricschords.pro
+    imported_at: '2026-01-02'

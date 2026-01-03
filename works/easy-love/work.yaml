@@ -1,0 +1,18 @@
+id: easy-love
+title: Easy Love
+artist: Anne Murray
+composers:
+- Kerry Chater and Jerry Lee Chater
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easylovelyricschords.pro
+    imported_at: '2026-01-02'

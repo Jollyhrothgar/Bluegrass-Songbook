@@ -1,0 +1,17 @@
+id: it-s-goodbye-and-so-long-to-you
+title: It's Goodbye And So Long To You
+artist: Mac Wiseman and The Osborne Brothers
+composers:
+- Harold Breau and Raymond Contere
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsgoodbyeandsolongtoyoulyricschords.pro
+    imported_at: '2026-01-02'

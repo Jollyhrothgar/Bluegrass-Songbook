@@ -1,0 +1,17 @@
+id: it-looks-like-the-suns-gonna-shine
+title: It Looks Like The Sun’s Gonna Shine
+artist: Wilburn Brothers
+composers:
+- Andrew Eddings
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itlookslikethesunsgonnashinelyricschords.pro
+    imported_at: '2026-01-02'

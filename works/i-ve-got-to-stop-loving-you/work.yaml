@@ -1,0 +1,19 @@
+id: i-ve-got-to-stop-loving-you
+title: I've Got To Stop Loving You
+artist: Patty Loveless
+composers:
+- Paul Kennerley
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegottostoplovingyoulyricschords.pro
+    imported_at: '2026-01-02'

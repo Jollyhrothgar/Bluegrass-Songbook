@@ -1,0 +1,15 @@
+id: invisible-tears
+title: Invisible Tears
+artist: Sonny James
+composers:
+- Ned Miller and Susan Miller
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: invisibletearslyricschords.pro
+    imported_at: '2026-01-02'

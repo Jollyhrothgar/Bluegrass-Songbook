@@ -1,0 +1,17 @@
+id: heartaches-teardrops-and-sorrow
+title: Heartaches Teardrops And Sorrow
+artist: Jean Shepard
+composers:
+- Kid Murdock and Lila Hargiss
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartachesteardropsandsorrowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: gloryland-march
+title: Gloryland March
+artist: The Masters Family
+composers:
+- Johnny Marks and Johnnie Masters
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: glorylandmarchlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: rainy-night-in-georgia
+title: Rainy Night In Georgia
+artist: Conway Twitty
+composers:
+- Tony Joe White
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rainynightingeorgialyricschords.pro
+    imported_at: '2026-01-02'

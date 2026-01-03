@@ -1,0 +1,19 @@
+id: i-know-love
+title: I Know Love
+artist: The Everly Brothers
+composers:
+- Jim Photoglo and Brian Neary
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowlovelyricschords.pro
+    imported_at: '2026-01-02'

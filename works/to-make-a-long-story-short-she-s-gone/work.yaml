@@ -1,0 +1,19 @@
+id: to-make-a-long-story-short-she-s-gone
+title: To Make A Long Story Short (She's Gone)
+artist: Willie Nelson
+composers:
+- Willie Nelson and Fred Foster
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tomakealongstoryshortshesgonelyricschords.pro
+    imported_at: '2026-01-02'

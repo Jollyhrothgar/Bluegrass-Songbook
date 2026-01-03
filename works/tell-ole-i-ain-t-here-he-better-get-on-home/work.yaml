@@ -1,0 +1,17 @@
+id: tell-ole-i-ain-t-here-he-better-get-on-home
+title: Tell Ole I Ain't Here He Better Get On Home
+artist: Moe Bandy
+composers:
+- Wayne Kemp
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: telloleiaintherehebettergetonhomelyricschords.pro
+    imported_at: '2026-01-02'

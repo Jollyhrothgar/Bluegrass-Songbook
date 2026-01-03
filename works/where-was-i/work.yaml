@@ -1,0 +1,17 @@
+id: where-was-i
+title: Where Was I
+artist: Ricky Van Shelton
+composers:
+- Gary Burr and Harry Stinso
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherewasilyricschords.pro
+    imported_at: '2026-01-02'

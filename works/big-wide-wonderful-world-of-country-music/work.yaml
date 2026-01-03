@@ -1,0 +1,17 @@
+id: big-wide-wonderful-world-of-country-music
+title: Big Wide Wonderful World Of Country Music
+artist: Leroy Van Dyke
+composers:
+- Gene Nash
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigwidewonderfulworldofcountrymusiclyricschords.pro
+    imported_at: '2026-01-02'

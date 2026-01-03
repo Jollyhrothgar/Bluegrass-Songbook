@@ -1,0 +1,18 @@
+id: love-makes-the-world-go-around
+title: Love Makes The World Go Around
+artist: Kitty Wells
+composers:
+- Jim Anglin
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovemakestheworldgoaroundlyricschords.pro
+    imported_at: '2026-01-02'

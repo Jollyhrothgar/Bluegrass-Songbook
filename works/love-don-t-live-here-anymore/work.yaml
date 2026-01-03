@@ -1,0 +1,20 @@
+id: love-don-t-live-here-anymore
+title: Love Don't Live Here Anymore
+artist: Kris Kristofferson
+composers:
+- Kris Kristofferson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovedontlivehereanymorelyricschords.pro
+    imported_at: '2026-01-02'

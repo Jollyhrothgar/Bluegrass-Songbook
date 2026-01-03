@@ -1,0 +1,18 @@
+id: where-am-i-going-to-live-when-i-get-home
+title: Where Am I Going To Live When I Get Home
+artist: Billy Ray Cyrus
+composers:
+- Billy Ray Cyrus and Cindy Cyrus
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whereamigoingtolivewhenigethomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: walking-my-lord-up-calvarys-hill-1
+title: Walking My Lord Up Calvary’s Hill
+artist: Wilma Lee Cooper
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkingmylordupcalvaryshilllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: yard-sale
+title: Yard Sale
+artist: Sammy Kershaw
+composers:
+- DeWayne Blackwell and Larry Bastian
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yardsalelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: ring-the-bell
+title: Ring The Bell
+artist: The Gibson Brothers
+composers:
+- Chester Pickering O’Keefe
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ringthebelllyricschords.pro
+    imported_at: '2026-01-02'

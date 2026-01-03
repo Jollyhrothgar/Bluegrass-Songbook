@@ -1,0 +1,13 @@
+id: it-s-sad-to-be-lonely-at-christmas
+title: It's Sad To Be Lonely At Christmas
+artist: Jim Weatherly
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itssadtobelonelyatChristmaslyricschords.pro
+    imported_at: '2026-01-02'

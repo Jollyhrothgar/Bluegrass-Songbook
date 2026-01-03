@@ -1,0 +1,20 @@
+id: follow-that-dream
+title: Follow That Dream
+artist: Elvis Presley
+composers:
+- Fred Wise and Ben Weisman
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: followthatdreamlyricschords.pro
+    imported_at: '2026-01-02'

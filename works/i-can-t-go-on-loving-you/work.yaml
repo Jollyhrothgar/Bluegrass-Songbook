@@ -1,0 +1,15 @@
+id: i-can-t-go-on-loving-you
+title: I Can't Go On Loving You
+artist: Roy Drusky
+composers:
+- Hank Mills
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantgoonlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

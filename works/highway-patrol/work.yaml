@@ -1,0 +1,17 @@
+id: highway-patrol
+title: Highway Patrol
+artist: Junior Brown
+composers:
+- Red Simpson, Dennis Payne, Ray Rush
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highwaypatrollyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: grandpa-was-a-farmer
+title: Grandpa Was A Farmer
+artist: The Marksmen
+composers:
+- Mark Earle Wheeler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: grandpawasafarmerlyricschords.pro
+    imported_at: '2026-01-02'

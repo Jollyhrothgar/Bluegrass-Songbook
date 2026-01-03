@@ -1,0 +1,17 @@
+id: you-can-t-be-a-beacon
+title: You Can't Be A Beacon
+artist: Donna Fargo
+composers:
+- Marty Cooper
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantbeabeaconlyricschords.pro
+    imported_at: '2026-01-02'

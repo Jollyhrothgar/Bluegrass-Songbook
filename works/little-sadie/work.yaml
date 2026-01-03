@@ -1,0 +1,15 @@
+id: little-sadie
+title: Little Sadie
+artist: Clarence Ashley
+default_key: Gm
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

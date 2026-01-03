@@ -1,0 +1,15 @@
+id: merry-go-round-world
+title: Merry-Go-Round World
+artist: Webb Pierce
+composers:
+- Webb Pierce and Sylvia Fisher
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: merrygoroundworldlyricschords.pro
+    imported_at: '2026-01-02'

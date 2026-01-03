@@ -1,0 +1,18 @@
+id: youre-the-one
+title: You’re The One
+artist: The Oak Ridge Boys
+composers:
+- Champion Jack Dupree, Carly Simon, David Clayton-Thomas
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: tears-stain-my-pillow
+title: Tears Stain My Pillow
+artist: Slim Whitman
+composers:
+- Byron
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tearsstainmypillowlyricschords.pro
+    imported_at: '2026-01-02'

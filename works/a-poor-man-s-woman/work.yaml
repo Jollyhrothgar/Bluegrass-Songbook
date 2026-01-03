@@ -1,0 +1,15 @@
+id: a-poor-man-s-woman
+title: A Poor Man's Woman
+artist: Jeanne Pruett
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: apoormanswomanlyricschords.pro
+    imported_at: '2026-01-02'

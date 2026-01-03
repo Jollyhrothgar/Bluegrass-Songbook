@@ -1,0 +1,17 @@
+id: true-love-is-always-true
+title: True Love Is Always True
+artist: Hank Locklin
+composers:
+- Wayne P. Walker and Hank Locklin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: trueloveisalwaystruelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,22 @@
+id: god-ain-t-no-stained-glass-window
+title: God Ain't No Stained Glass Window
+artist: Johnny Cash
+composers:
+- Mark Germino
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godaintnostainedglasswindowlyricschords.pro
+    imported_at: '2026-01-02'

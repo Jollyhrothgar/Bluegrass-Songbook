@@ -1,0 +1,17 @@
+id: a-loser-never-had-a-better-friend
+title: A Loser Never Had A Better Friend
+artist: Darrell McCall
+composers:
+- Arthur Leo Owens and Sanger Shafer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aloserneverhadabetterfriendlyricschords.pro
+    imported_at: '2026-01-02'

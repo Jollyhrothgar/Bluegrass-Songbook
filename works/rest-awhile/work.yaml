@@ -1,0 +1,17 @@
+id: rest-awhile
+title: Rest Awhile
+artist: Bobby Bare
+composers:
+- Shel Silverstein
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: restawhilelyricschords.pro
+    imported_at: '2026-01-02'

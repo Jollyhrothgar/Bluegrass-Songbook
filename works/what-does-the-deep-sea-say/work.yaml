@@ -1,0 +1,17 @@
+id: what-does-the-deep-sea-say
+title: What Does The Deep Sea Say
+artist: Doc Watson
+composers:
+- J.E. Mainer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatdoesthedeepseasaylyricschords.pro
+    imported_at: '2026-01-02'

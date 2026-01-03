@@ -1,0 +1,17 @@
+id: ain-t-a-woman-somebody-when-she-s-gone
+title: Ain't A Woman Somebody When She's Gone
+artist: Doyle Lawson
+composers:
+- Buddy Cannon and Tommy Collins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintawomansomebodywhenshesgonelyricschord.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-left-my-gal-in-the-mountains
+title: I Left My Gal In The Mountains
+artist: Hank Thompson
+composers:
+- Carson J. Robison
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ileftmygalinthemountainslyricschords.pro
+    imported_at: '2026-01-02'

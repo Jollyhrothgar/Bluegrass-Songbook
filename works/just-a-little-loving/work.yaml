@@ -1,0 +1,17 @@
+id: just-a-little-loving
+title: Just a Little Loving
+artist: Eddy Arnold
+composers:
+- Zeke Clements and Eddy Arnold
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justalittlelovinglyricschords.pro
+    imported_at: '2026-01-02'

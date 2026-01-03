@@ -1,0 +1,17 @@
+id: i-can-hear-the-angels-singing
+title: I Can Hear The Angels Singing
+artist: Don Reno and Red Smiley
+composers:
+- Don Reno
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanheartheangelssinginglyricschords.pro
+    imported_at: '2026-01-02'

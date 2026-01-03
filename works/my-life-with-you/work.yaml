@@ -1,0 +1,19 @@
+id: my-life-with-you
+title: My Life With You
+artist: Hank Snow
+composers:
+- Stuart Hamblen
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylifewithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: take-the-world-but-give-me-jesus
+title: Take The World But Give Me Jesus
+artist: George Jones
+composers:
+- Todd Wilson Agnew and Frances Jane Crosby
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: taketheworldbutgivemejesuslyricschords.pro
+    imported_at: '2026-01-02'

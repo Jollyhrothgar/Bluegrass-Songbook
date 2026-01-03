@@ -1,0 +1,17 @@
+id: nobody-will-ever-take-your-place
+title: Nobody Will Ever Take Your Place
+artist: Cal Smith
+composers:
+- Mel Holt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodywillevertakeyourplacelyricschords.pro
+    imported_at: '2026-01-02'

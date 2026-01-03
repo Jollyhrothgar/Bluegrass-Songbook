@@ -1,0 +1,19 @@
+id: the-bluest-eyes-in-texas
+title: The Bluest Eyes In Texas
+artist: Restless Heart
+composers:
+- Tim DuBois, Dave Robbins, Van Stephenson
+default_key: Em
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebluesteyesintexaslyricschords.pro
+    imported_at: '2026-01-02'

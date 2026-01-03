@@ -1,0 +1,17 @@
+id: i-can-t-lose-something-i-never-had
+title: I Can't Lose Something (I Never Had)
+artist: Carl Belew
+composers:
+- Carl Belew, Tommy Blake, W.S. Stevenson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantlosesomethingineverhadlyricschords.pro
+    imported_at: '2026-01-02'

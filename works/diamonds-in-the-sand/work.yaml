@@ -1,0 +1,15 @@
+id: diamonds-in-the-sand
+title: Diamonds In The Sand
+artist: Jim Reeves
+composers:
+- Steve Gibson and Taffy Kikillus
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: diamondsinthesandlyricschords.pro
+    imported_at: '2026-01-02'

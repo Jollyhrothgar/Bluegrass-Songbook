@@ -1,0 +1,18 @@
+id: haven-t-you-heard-1
+title: Haven't You Heard
+artist: Jeannie C. Riley
+composers:
+- Red Lane and Wayne Kemp
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haventyouheardlyricschords.pro
+    imported_at: '2026-01-02'

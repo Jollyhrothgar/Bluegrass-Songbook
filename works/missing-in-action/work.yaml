@@ -1,0 +1,19 @@
+id: missing-in-action
+title: Missing In Action
+artist: Ernest Tubb
+composers:
+- A. Q. Smith and Helen Kaye
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: missinginactionlyricschords.pro
+    imported_at: '2026-01-02'

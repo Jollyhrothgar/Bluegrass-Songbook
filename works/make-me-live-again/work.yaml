@@ -1,0 +1,15 @@
+id: make-me-live-again
+title: Make Me Live Again
+artist: Ferlin Husky
+composers:
+- Tommy Bland, Jerry Morton, Ferlin Husky
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makemeliveagainlyricschords.pro
+    imported_at: '2026-01-02'

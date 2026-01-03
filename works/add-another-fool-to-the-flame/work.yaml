@@ -1,0 +1,17 @@
+id: add-another-fool-to-the-flame
+title: Add Another Fool To The Flame
+artist: Jody Nix
+composers:
+- Carl Jackson and Glenn Sutton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: addanotherfooltotheflamelyricschords.pro
+    imported_at: '2026-01-02'

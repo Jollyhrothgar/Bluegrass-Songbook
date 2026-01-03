@@ -1,0 +1,17 @@
+id: i-m-gonna-knock-on-your-door
+title: I'm Gonna Knock On Your Door
+artist: Billy Crash Craddock
+composers:
+- Aaron Schroeder and Sid Wayne
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnaknockonyourdoorlyricschords.pro
+    imported_at: '2026-01-02'

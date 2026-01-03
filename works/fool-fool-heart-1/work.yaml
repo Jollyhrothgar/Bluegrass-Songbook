@@ -1,0 +1,15 @@
+id: fool-fool-heart-1
+title: Fool Fool Heart
+artist: Don Williams
+composers:
+- Jennifer Kimball
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolfoolheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: memories-an-old-picture-and-a-ring
+title: Memories An Old Picture And A Ring
+artist: Dick Curless
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: memoriesanoldpictureandaringlyricschords.pro
+    imported_at: '2026-01-02'

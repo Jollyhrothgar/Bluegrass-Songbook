@@ -1,0 +1,21 @@
+id: all-shook-up
+title: All Shook Up
+artist: Elvis Presley
+composers:
+- Otis Blackwell and Elvis Presley
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allshookuplyricschords.pro
+    imported_at: '2026-01-02'

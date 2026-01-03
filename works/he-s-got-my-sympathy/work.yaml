@@ -1,0 +1,19 @@
+id: he-s-got-my-sympathy
+title: He's Got My Sympathy
+artist: The Everly Brothers
+composers:
+- Jack Keller and Gerry Goffin
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesgotmysympathylyricschords.pro
+    imported_at: '2026-01-02'

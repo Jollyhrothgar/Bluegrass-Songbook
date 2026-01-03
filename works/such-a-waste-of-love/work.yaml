@@ -1,0 +1,19 @@
+id: such-a-waste-of-love
+title: Such A Waste Of Love
+artist: Waylon Jennings
+composers:
+- Waylon Jennings
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: suchawasteoflovelyricschords.pro
+    imported_at: '2026-01-02'

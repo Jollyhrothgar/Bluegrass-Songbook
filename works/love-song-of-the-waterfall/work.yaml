@@ -1,0 +1,17 @@
+id: love-song-of-the-waterfall
+title: Love Song Of The Waterfall
+artist: Slim Whitman
+composers:
+- Bernard Barnes and Carl Winge
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovesongofthewaterfalllyricschords.pro
+    imported_at: '2026-01-02'

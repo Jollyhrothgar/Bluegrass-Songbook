@@ -1,0 +1,17 @@
+id: these-are-my-mountains
+title: These Are My Mountains
+artist: Slim Whitman
+composers:
+- James Copeland
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesearemymountainslyricschords.pro
+    imported_at: '2026-01-02'

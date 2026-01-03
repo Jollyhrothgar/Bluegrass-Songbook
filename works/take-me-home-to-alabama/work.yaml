@@ -1,0 +1,17 @@
+id: take-me-home-to-alabama
+title: Take Me Home To Alabama
+artist: Vern Gosdin
+composers:
+- Hank Cochran, Mack Vickery, Vern Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemehometoalabamalyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: watching-my-world-walk-away
+title: Watching My World Walk Away
+artist: Barbara Mandrell
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: watchingmyworldwalkawaylyricschords.pro
+    imported_at: '2026-01-02'

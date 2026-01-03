@@ -1,0 +1,17 @@
+id: where-do-i-go-to-throw-a-picture-away
+title: Where Do I Go To Throw A Picture Away
+artist: Jim Reeves
+composers:
+- Carl Belew, W.S. Stevenson, Jim Reeves
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheredoigotothrowapictureawaylyricschords.pro
+    imported_at: '2026-01-02'

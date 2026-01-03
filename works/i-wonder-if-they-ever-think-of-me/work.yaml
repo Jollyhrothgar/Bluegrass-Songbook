@@ -1,0 +1,16 @@
+id: i-wonder-if-they-ever-think-of-me
+title: I Wonder If They Ever Think Of Me
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderiftheyeverthinkofmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: that-s-when-i-see-the-blues
+title: That's When I See The Blues
+artist: Jim Reeves
+composers:
+- Carl Belew, W.S. Stevenson, Tommy Blake
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswheniseetheblueslyricschords.pro
+    imported_at: '2026-01-02'

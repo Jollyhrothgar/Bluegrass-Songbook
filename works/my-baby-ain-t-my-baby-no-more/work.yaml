@@ -1,0 +1,15 @@
+id: my-baby-ain-t-my-baby-no-more
+title: My Baby Ain't My Baby No More
+artist: Wilburn Brothers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mybabyaintmybabynomorelyricschords.pro
+    imported_at: '2026-01-02'

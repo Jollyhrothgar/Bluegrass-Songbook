@@ -1,0 +1,17 @@
+id: true-true-loving
+title: True True Loving
+artist: Ferlin Husky
+composers:
+- Chuck Taylor and Gerald Nelson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: truetruelovinglyricschords.pro
+    imported_at: '2026-01-02'

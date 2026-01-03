@@ -1,0 +1,15 @@
+id: look-of-lovin-in-his-eyes
+title: Look Of Lovin' In His Eyes
+artist: Jean Shepard
+composers:
+- Jan Crutchfield and Larry Butler
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookoflovininhiseyeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: it-s-the-messiah
+title: It's The Messiah
+artist: Kenny Rogers
+composers:
+- Don Potter
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsthemessiahlyricschords.pro
+    imported_at: '2026-01-02'

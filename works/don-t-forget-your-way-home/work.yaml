@@ -1,0 +1,18 @@
+id: don-t-forget-your-way-home
+title: Don't Forget Your Way Home
+artist: Reba McEntire
+composers:
+- Ed Hunnicut and John Brannen
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontforgetyourwayhomelyricschords.pro
+    imported_at: '2026-01-02'

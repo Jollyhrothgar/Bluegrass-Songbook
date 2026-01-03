@@ -1,0 +1,19 @@
+id: what-a-merry-christmas-this-could-be
+title: What A Merry Christmas This Could Be
+artist: Willie Nelson
+composers:
+- Harlan Perry Howard and Hank Cochran
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatamerryChristmasthiscouldbelyricschords.pro
+    imported_at: '2026-01-02'

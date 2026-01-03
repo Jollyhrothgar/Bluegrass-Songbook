@@ -1,0 +1,17 @@
+id: somebody-s-always-leaving
+title: Somebody's Always Leaving
+artist: Stonewall Jackson
+composers:
+- Jack Schneider and Claude Southall
+default_key: F
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodysalwaysleavinglyricschords.pro
+    imported_at: '2026-01-02'

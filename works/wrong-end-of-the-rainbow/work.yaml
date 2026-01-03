@@ -1,0 +1,15 @@
+id: wrong-end-of-the-rainbow
+title: Wrong End Of The Rainbow
+artist: Don Williams
+composers:
+- Richard C. Leigh and Milton Blackford
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wrongendoftherainbowlyricschords.pro
+    imported_at: '2026-01-02'

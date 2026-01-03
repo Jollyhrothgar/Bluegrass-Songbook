@@ -1,0 +1,19 @@
+id: baby-it-s-so-hard-to-be-good
+title: Baby It's So Hard To Be Good
+artist: Ernest Tubb
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyitssohardtobegoodlyricschords.pro
+    imported_at: '2026-01-02'

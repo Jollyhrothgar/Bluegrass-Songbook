@@ -1,0 +1,17 @@
+id: i-knew-we-could-never-love-for-long
+title: I Knew We Could Never Love For Long
+artist: Gene Watson
+composers:
+- David Barnes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknewwecouldneverloveforlonglyricschords.pro
+    imported_at: '2026-01-02'

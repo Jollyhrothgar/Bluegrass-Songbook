@@ -1,0 +1,15 @@
+id: come-take-care-of-me
+title: Come Take Care Of Me
+artist: Charly McClain
+composers:
+- Danny Hogan, Larry Rogers, Henry Carter
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cometakecareofmelyricschords.pro
+    imported_at: '2026-01-02'

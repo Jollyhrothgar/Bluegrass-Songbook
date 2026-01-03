@@ -1,0 +1,18 @@
+id: burning-down-the-town
+title: Burning Down The Town
+artist: Doug Stone
+composers:
+- Wayne Perry and Joe Diffie
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burningdownthetownlyricschords.pro
+    imported_at: '2026-01-02'

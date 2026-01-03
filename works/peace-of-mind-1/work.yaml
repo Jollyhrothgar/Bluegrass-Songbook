@@ -1,0 +1,18 @@
+id: peace-of-mind-1
+title: Peace Of Mind
+artist: George Strait
+composers:
+- Dean Dillon and Aaron Barker
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: peaceofmindlyricschords.pro
+    imported_at: '2026-01-02'

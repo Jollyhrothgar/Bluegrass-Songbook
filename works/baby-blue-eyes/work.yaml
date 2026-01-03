@@ -1,0 +1,18 @@
+id: baby-blue-eyes
+title: Baby Blue Eyes
+artist: Lester Flatt
+composers:
+- Jim Eanes
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyblueeyeslyricschords.pro
+    imported_at: '2026-01-02'

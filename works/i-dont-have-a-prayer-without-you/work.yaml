@@ -1,0 +1,17 @@
+id: i-dont-have-a-prayer-without-you
+title: I Don’t Have A Prayer Without You
+artist: Jeff and Sheri Easter
+composers:
+- Bruce Haymes
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idonthaveaprayerwithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-just-a-country-boy
+title: I'm Just A Country Boy
+artist: Don Williams
+composers:
+- Marshall Barer and Fred Hellerman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imjustacountryboylyricschords.pro
+    imported_at: '2026-01-02'

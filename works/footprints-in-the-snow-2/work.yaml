@@ -1,0 +1,17 @@
+id: footprints-in-the-snow-2
+title: Footprints In The Snow
+artist: Carl Smith
+composers:
+- Rupert Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: footprintsinthesnowlyricswithchords.pro
+    imported_at: '2026-01-02'

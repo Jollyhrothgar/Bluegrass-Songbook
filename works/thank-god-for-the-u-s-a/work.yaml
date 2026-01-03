@@ -1,0 +1,17 @@
+id: thank-god-for-the-u-s-a
+title: Thank God For The U.S.A.
+artist: Jim and Jesse
+composers:
+- Albert E. Brumley Sr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankGodfortheUSAlyricschords.pro
+    imported_at: '2026-01-02'

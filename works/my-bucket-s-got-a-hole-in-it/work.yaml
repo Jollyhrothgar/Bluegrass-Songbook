@@ -1,0 +1,17 @@
+id: my-bucket-s-got-a-hole-in-it
+title: My Bucket's Got A Hole In It
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mybucketsgotaholeinitlyricschords.pro
+    imported_at: '2026-01-02'

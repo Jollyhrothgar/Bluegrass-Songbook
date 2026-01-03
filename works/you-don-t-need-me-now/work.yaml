@@ -1,0 +1,17 @@
+id: you-don-t-need-me-now
+title: You Don't Need Me Now
+artist: Clint Black
+composers:
+- Clint Black and Shake Russell
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontneedmenowlyricschords.pro
+    imported_at: '2026-01-02'

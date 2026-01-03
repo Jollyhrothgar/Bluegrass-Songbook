@@ -1,0 +1,17 @@
+id: unfaithful-fools-1
+title: Unfaithful Fools
+artist: Leroy Van Dyke
+composers:
+- Bobby Fischer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: unfaithfulfoolslyricschords.pro
+    imported_at: '2026-01-02'

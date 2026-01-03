@@ -1,0 +1,19 @@
+id: you-got-me-over-a-heartache-tonight
+title: You Got Me Over A Heartache Tonight
+artist: Dolly Parton
+composers:
+- Dolly Parton and Larry Weiss
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yougotmeoveraheartachetonightlyricschords.pro
+    imported_at: '2026-01-02'

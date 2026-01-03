@@ -1,0 +1,17 @@
+id: one-more-time-1
+title: One More Time
+artist: Jeanne Pruett
+composers:
+- Jeanne Pruett and Walter Haynes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemoretimelyricschords.pro
+    imported_at: '2026-01-02'

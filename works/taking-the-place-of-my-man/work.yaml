@@ -1,0 +1,19 @@
+id: taking-the-place-of-my-man
+title: Taking The Place Of My Man
+artist: Loretta Lynn
+composers:
+- Teddy Wilburn
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takingtheplaceofmymanlyricschords.pro
+    imported_at: '2026-01-02'

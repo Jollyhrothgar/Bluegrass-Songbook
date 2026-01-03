@@ -1,0 +1,15 @@
+id: that-s-a-lie
+title: That's A Lie
+artist: Eddy Arnold
+composers:
+- Charlie Williams and Scott Turner
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsalielyricsandchords.pro
+    imported_at: '2026-01-02'

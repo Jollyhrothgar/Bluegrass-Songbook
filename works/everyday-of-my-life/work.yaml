@@ -1,0 +1,17 @@
+id: everyday-of-my-life
+title: Everyday Of My Life
+artist: George Morgan
+composers:
+- Bill Morgan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everydayofmylifelyricschords.pro
+    imported_at: '2026-01-02'

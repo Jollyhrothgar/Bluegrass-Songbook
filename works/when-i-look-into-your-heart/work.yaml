@@ -1,0 +1,18 @@
+id: when-i-look-into-your-heart
+title: When I Look Into Your Heart
+artist: Vince Gill
+composers:
+- Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenilookintoyourheartlyricschords.pro
+    imported_at: '2026-01-02'

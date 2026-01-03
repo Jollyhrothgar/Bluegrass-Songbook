@@ -1,0 +1,22 @@
+id: children-go-where-i-send-thee
+title: Children Go Where I Send Thee
+artist: Johnny Cash
+composers:
+- Marc Harris and Michael McDonald
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: childrengowhereisendtheelyricschords.pro
+    imported_at: '2026-01-02'

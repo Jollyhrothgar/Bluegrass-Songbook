@@ -1,0 +1,17 @@
+id: lord-i-want-to-go-to-heaven
+title: Lord I Want To Go To Heaven
+artist: Doyle Lawson
+composers:
+- James S. Wetherington
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lordiwanttogotoheavenlyricschords.pro
+    imported_at: '2026-01-02'

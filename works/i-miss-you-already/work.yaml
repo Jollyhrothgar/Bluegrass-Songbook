@@ -1,0 +1,17 @@
+id: i-miss-you-already
+title: I Miss You Already
+artist: Faron Young
+composers:
+- Marvin Rainwater and Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imissyoualreadylyricsandchords.pro
+    imported_at: '2026-01-02'

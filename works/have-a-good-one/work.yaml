@@ -1,0 +1,17 @@
+id: have-a-good-one
+title: Have A Good One
+artist: Tracy Byrd
+composers:
+- Max D. Barnes, Paul Craft, David Kent
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveagoodonelyricschords.pro
+    imported_at: '2026-01-02'

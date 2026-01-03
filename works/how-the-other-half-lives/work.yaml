@@ -1,0 +1,17 @@
+id: how-the-other-half-lives
+title: How The Other Half Lives
+artist: Wynn Stewart
+composers:
+- Wynn Stewart and Fuzzy Owen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howtheotherhalfliveslyricschords.pro
+    imported_at: '2026-01-02'

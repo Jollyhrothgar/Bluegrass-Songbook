@@ -1,0 +1,18 @@
+id: two-step-around-the-christmas-tree
+title: Two Step Around The Christmas Tree
+artist: Michael Martin Murphey
+composers:
+- Suzy Bogguss and Doug Crider
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twosteparoundtheChristmastreelyricschords.pro
+    imported_at: '2026-01-02'

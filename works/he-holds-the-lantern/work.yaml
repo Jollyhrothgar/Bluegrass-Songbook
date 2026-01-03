@@ -1,0 +1,17 @@
+id: he-holds-the-lantern
+title: He Holds The Lantern
+artist: Tex Morton
+composers:
+- Alan L. Grey, Arthur Terker, Roy Jordan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heholdsthelanternlyricschords.pro
+    imported_at: '2026-01-02'

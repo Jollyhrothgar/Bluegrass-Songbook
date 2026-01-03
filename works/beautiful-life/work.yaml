@@ -1,0 +1,17 @@
+id: beautiful-life
+title: Beautiful Life
+artist: Jim Reeves
+composers:
+- William M. Golden
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beautifullifelyricschords.pro
+    imported_at: '2026-01-02'

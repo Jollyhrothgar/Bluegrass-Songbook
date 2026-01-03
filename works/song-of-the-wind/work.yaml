@@ -1,0 +1,17 @@
+id: song-of-the-wind
+title: Song Of The Wind
+artist: Jean Shepard
+composers:
+- Bob Milsap
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: songofthewindlyricschords.pro
+    imported_at: '2026-01-02'

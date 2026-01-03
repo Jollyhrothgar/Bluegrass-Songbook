@@ -1,0 +1,17 @@
+id: two-kinds-of-love
+title: Two Kinds Of Love
+artist: Eddy Arnold
+composers:
+- Steve Nelson, Ed G. Nelson, Eddie Thorpe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twokindsoflovelyricschords.pro
+    imported_at: '2026-01-02'

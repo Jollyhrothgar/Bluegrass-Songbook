@@ -1,0 +1,17 @@
+id: i-d-like-to-sleep-till-i-get-over-you
+title: I'd Like To Sleep Till I Get Over You
+artist: Freddie Hart
+composers:
+- Roger Bowling
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idliketosleeptilligetoveryoulyricschords.pro
+    imported_at: '2026-01-02'

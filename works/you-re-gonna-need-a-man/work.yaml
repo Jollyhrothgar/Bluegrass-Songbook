@@ -1,0 +1,15 @@
+id: you-re-gonna-need-a-man
+title: You're Gonna Need a Man
+artist: Johnny Duncan
+composers:
+- Bobby Goldsboro
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youregonnaneedamanlyricschords.pro
+    imported_at: '2026-01-02'

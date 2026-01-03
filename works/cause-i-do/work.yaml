@@ -1,0 +1,17 @@
+id: cause-i-do
+title: Cause I Do
+artist: Faron Young
+composers:
+- John Holaday and Becki Holaday
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: causeidolyricschords.pro
+    imported_at: '2026-01-02'

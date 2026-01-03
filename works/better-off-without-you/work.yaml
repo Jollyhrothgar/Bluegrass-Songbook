@@ -1,0 +1,18 @@
+id: better-off-without-you
+title: Better Off Without You
+artist: Emmylou Harris
+composers:
+- Marshall Chapman, Dennis Walker, Fontaine Brown
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betteroffwithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

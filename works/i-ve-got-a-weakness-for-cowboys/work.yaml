@@ -1,0 +1,18 @@
+id: i-ve-got-a-weakness-for-cowboys
+title: I've Got A Weakness For Cowboys
+artist: Joni Harms
+composers:
+- Carl Jackson Vipperman
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotaweaknessforcowboyslyricschords.pro
+    imported_at: '2026-01-02'

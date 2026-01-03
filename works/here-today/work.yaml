@@ -1,0 +1,17 @@
+id: here-today
+title: Here Today
+artist: Jim Ed Brown
+composers:
+- Jim Ed Brown, Maxine Brown, Wally Fowler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heretodaylyricschords.pro
+    imported_at: '2026-01-02'

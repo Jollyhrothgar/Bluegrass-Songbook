@@ -1,0 +1,19 @@
+id: omaha
+title: Omaha
+artist: Waylon Jennings
+composers:
+- Billy Joe Shaver and Hillman Hall
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: omahalyricschords.pro
+    imported_at: '2026-01-02'

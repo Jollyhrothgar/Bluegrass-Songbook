@@ -1,0 +1,17 @@
+id: got-a-heartsick-feeling
+title: Got A Heartsick Feeling
+artist: Bobby Helms
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gotaheartsickfeelinglyricschords.pro
+    imported_at: '2026-01-02'

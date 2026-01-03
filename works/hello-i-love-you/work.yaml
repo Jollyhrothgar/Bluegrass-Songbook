@@ -1,0 +1,17 @@
+id: hello-i-love-you
+title: Hello I Love You
+artist: Crystal Gayle
+composers:
+- Roger Cook and Charles Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helloiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: first-day-of-loneliness-lyrics-and-chords
+title: First Day Of Loneliness Lyrics and Chords
+artist: Faron Young
+composers:
+- R. Parkhurst
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: firstdayoflonelinesslyricschords.pro
+    imported_at: '2026-01-02'

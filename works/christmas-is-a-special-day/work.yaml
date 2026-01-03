@@ -1,0 +1,15 @@
+id: christmas-is-a-special-day
+title: Christmas Is a Special Day
+artist: Fats Domino
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasisaspecialdaylyricschords.pro
+    imported_at: '2026-01-02'

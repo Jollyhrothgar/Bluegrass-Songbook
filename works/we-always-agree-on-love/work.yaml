@@ -1,0 +1,18 @@
+id: we-always-agree-on-love
+title: We Always Agree On Love
+artist: Doug Stone
+composers:
+- Doug Johnson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wealwaysagreeonlovelyricschords.pro
+    imported_at: '2026-01-02'

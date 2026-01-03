@@ -1,0 +1,17 @@
+id: born-in-country-music
+title: Born in Country Music
+artist: Dick Curless
+composers:
+- G. Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bornincountrymusiclyricschords.pro
+    imported_at: '2026-01-02'

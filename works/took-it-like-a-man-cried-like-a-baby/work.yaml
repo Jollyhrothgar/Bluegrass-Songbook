@@ -1,0 +1,17 @@
+id: took-it-like-a-man-cried-like-a-baby
+title: Took It Like A Man Cried Like A Baby
+artist: Vern Gosdin
+composers:
+- Rory Bourke, Tommy Rocco, Charlie Black
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tookitlikeamancriedlikeababylyricschords.pro
+    imported_at: '2026-01-02'

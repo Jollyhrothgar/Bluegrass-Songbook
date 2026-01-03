@@ -1,0 +1,18 @@
+id: raining-in-my-heart-1
+title: Raining in My Heart
+artist: Buddy Holly
+composers:
+- Boudleaux Bryant and Felice Bryant
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: raininginmyheartlyricsandchords.pro
+    imported_at: '2026-01-02'

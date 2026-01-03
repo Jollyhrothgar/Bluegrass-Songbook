@@ -1,0 +1,17 @@
+id: cold-hard-facts-of-life
+title: Cold Hard Facts Of Life
+artist: Porter Wagoner
+composers:
+- Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldhardfactsoflifelyricschords.pro
+    imported_at: '2026-01-02'

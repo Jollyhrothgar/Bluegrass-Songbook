@@ -1,0 +1,17 @@
+id: the-nail-scarred-hand
+title: The Nail Scarred Hand
+artist: Carl Smith
+composers:
+- B.B. McKinney
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenailscarredhandlyricschords.pro
+    imported_at: '2026-01-02'

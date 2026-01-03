@@ -1,0 +1,17 @@
+id: dance-with-me
+title: Dance With Me
+artist: Bobby Helms
+composers:
+- John Hall and Johanna Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dancewithmelyricschords.pro
+    imported_at: '2026-01-02'

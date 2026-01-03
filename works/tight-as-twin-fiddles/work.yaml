@@ -1,0 +1,17 @@
+id: tight-as-twin-fiddles
+title: Tight As Twin Fiddles
+artist: Vern Gosdin
+composers:
+- Hank Cochran and Dean Dillon
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tightastwinfiddleslyricschords.pro
+    imported_at: '2026-01-02'

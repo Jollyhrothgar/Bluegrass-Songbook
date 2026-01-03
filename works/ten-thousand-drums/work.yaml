@@ -1,0 +1,18 @@
+id: ten-thousand-drums
+title: Ten Thousand Drums
+artist: Johnny Horton
+composers:
+- Mel Tillis &amp; Carl Smith
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tenthousanddrumslyricschords.pro
+    imported_at: '2026-01-02'

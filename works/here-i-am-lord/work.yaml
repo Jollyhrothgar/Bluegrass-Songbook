@@ -1,0 +1,15 @@
+id: here-i-am-lord
+title: Here I Am Lord
+artist: Daniel O'Donnell
+composers:
+- Daniel Schutte
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hereiamlordlyricschords.pro
+    imported_at: '2026-01-02'

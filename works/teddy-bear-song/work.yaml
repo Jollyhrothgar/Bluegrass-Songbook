@@ -1,0 +1,15 @@
+id: teddy-bear-song
+title: Teddy Bear Song
+artist: Barbara Fairchild
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: teddybearsonglyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: youre-gonna-wonder-about-me
+title: You’re Gonna Wonder About Me
+artist: Waylon Jennings
+composers:
+- Mel Tillis
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youregonnawonderaboutmelyricschords.pro
+    imported_at: '2026-01-02'

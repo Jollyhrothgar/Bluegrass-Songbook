@@ -1,0 +1,15 @@
+id: we-have-this-moment-today
+title: We Have This Moment Today
+artist: Patti and Richard Roberts
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wehavethismomenttodaylyricschords.pro
+    imported_at: '2026-01-02'

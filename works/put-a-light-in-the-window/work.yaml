@@ -1,0 +1,17 @@
+id: put-a-light-in-the-window
+title: Put A Light In The Window
+artist: Jim Reeves
+composers:
+- Rhoda Roberts and Kenny Jacobson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: putalightinthewindowlyricschords.pro
+    imported_at: '2026-01-02'

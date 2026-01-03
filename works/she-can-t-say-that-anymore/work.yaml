@@ -1,0 +1,18 @@
+id: she-can-t-say-that-anymore
+title: She Can't Say That Anymore
+artist: John Conlee
+composers:
+- Sonny Throckmorton
+default_key: Em
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shecantsaythatanymorelyricschords.pro
+    imported_at: '2026-01-02'

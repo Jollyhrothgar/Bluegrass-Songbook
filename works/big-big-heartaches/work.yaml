@@ -1,0 +1,17 @@
+id: big-big-heartaches
+title: Big Big Heartaches
+artist: Melba Montgomery
+composers:
+- Melba Montgomery and Carl Montgomery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigbigheartacheslyricschords.pro
+    imported_at: '2026-01-02'

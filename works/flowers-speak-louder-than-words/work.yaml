@@ -1,0 +1,17 @@
+id: flowers-speak-louder-than-words
+title: Flowers Speak Louder Than Words
+artist: Ferlin Husky
+composers:
+- Terry Preston and Jack Perkins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: flowersspeaklouderthanwordslyricschords.pro
+    imported_at: '2026-01-02'

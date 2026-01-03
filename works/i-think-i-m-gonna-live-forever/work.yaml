@@ -1,0 +1,18 @@
+id: i-think-i-m-gonna-live-forever
+title: I Think I'm Gonna Live Forever
+artist: Merle Haggard
+composers:
+- Merle Haggard, Dennis Hromek, Bennie Binion
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithinkimgonnaliveforeverlyricschords.pro
+    imported_at: '2026-01-02'

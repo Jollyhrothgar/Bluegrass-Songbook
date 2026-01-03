@@ -1,0 +1,18 @@
+id: i-feel-closer-to-heaven-everyday
+title: I Feel Closer To Heaven Everyday
+artist: Rhonda Vincent
+composers:
+- Thelma Wilson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeelclosertoheaveneverydaylyricschords.pro
+    imported_at: '2026-01-02'

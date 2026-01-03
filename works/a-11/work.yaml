@@ -1,0 +1,17 @@
+id: a-11
+title: A-11
+artist: Buck Owens
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: a-11lyricsandchords.pro
+    imported_at: '2026-01-02'

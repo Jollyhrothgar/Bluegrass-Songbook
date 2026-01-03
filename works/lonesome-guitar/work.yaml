@@ -1,0 +1,17 @@
+id: lonesome-guitar
+title: Lonesome Guitar
+artist: Big Tom And The Travelers
+composers:
+- J. McCauley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonesomeguitarlyricschords.pro
+    imported_at: '2026-01-02'

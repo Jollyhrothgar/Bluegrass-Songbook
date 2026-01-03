@@ -1,0 +1,19 @@
+id: half-a-mind
+title: Half A Mind
+artist: Ernest Tubb
+composers:
+- Roger Miller
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: halfamindlyricschords.pro
+    imported_at: '2026-01-02'

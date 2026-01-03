@@ -1,0 +1,17 @@
+id: i-feel-like-crying
+title: I Feel Like Crying
+artist: Carl Smith
+composers:
+- Werly Fairburn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeellikecryinglyricsandchords.pro
+    imported_at: '2026-01-02'

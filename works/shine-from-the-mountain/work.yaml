@@ -1,0 +1,17 @@
+id: shine-from-the-mountain
+title: Shine From The Mountain
+artist: Gene Watson
+composers:
+- Bobbie Bost
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shinefromthemountainlyricschords.pro
+    imported_at: '2026-01-02'

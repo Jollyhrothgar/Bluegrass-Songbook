@@ -1,0 +1,17 @@
+id: arms-length-from-you
+title: Arms Length From You
+artist: Wynn Stewart
+composers:
+- Jim Stewart and Wynn Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: armslengthfromyoulyricschords.pro
+    imported_at: '2026-01-02'

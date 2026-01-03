@@ -1,0 +1,17 @@
+id: as-good-as-a-lonely-girl-can-be
+title: As Good As A Lonely Girl Can Be
+artist: Ernest Tubb and Loretta Lynn
+composers:
+- Bobby Harden
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: asgoodasalonelygirlcanbelyricschords.pro
+    imported_at: '2026-01-02'

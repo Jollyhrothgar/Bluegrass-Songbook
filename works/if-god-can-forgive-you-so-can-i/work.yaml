@@ -1,0 +1,17 @@
+id: if-god-can-forgive-you-so-can-i
+title: If God Can Forgive You So Can I
+artist: Jack Greene
+composers:
+- Charlie Gore and Bulford Abner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifGodcanforgiveyousocanilyricschords.pro
+    imported_at: '2026-01-02'

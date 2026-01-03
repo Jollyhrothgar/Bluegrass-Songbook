@@ -1,0 +1,18 @@
+id: if-her-blue-eyes-don-t-get-you
+title: If Her Blue Eyes Don't Get You
+artist: Marty Robbins
+composers:
+- Curly Putman, Steve Pippin, Richard Hill
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifherblueeyesdontgetyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: how-can-it-be-wrong-when-it-feels-so-right
+title: How Can It Be Wrong (When It Feels So Right)
+artist: Barbara Mandrell
+composers:
+- Norro Wilson, Danny Walls, Sammy Lyons
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcanitbewrongwhenitfeelssorightlyricschords.pro
+    imported_at: '2026-01-02'

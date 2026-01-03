@@ -1,0 +1,15 @@
+id: love-ain-t-such-an-easy-thing-to-find
+title: Love Ain't Such An Easy Thing To Find
+artist: Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveaintsuchaneasythingtofindlyricschords.pro
+    imported_at: '2026-01-02'

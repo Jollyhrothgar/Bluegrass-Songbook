@@ -1,0 +1,18 @@
+id: fool-s-thin-air
+title: Fool's Thin Air
+artist: Emmylou Harris
+composers:
+- Rodney Crowell and Guy Clark
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolsthinairlyricschords.pro
+    imported_at: '2026-01-02'

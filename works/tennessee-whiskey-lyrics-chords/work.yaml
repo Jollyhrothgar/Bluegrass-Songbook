@@ -1,0 +1,15 @@
+id: tennessee-whiskey-lyrics-chords
+title: Tennessee Whiskey Lyrics Chords
+artist: George Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tennesseewhiskeylyricschords.pro
+    imported_at: '2026-01-02'

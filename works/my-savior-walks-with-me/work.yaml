@@ -1,0 +1,17 @@
+id: my-savior-walks-with-me
+title: My Savior Walks With Me
+artist: Jamie Dailey and Darrin Vincent
+composers:
+- Jamie Dailey and Doyle Lawson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mysaviorwalkswithmelyricschords.pro
+    imported_at: '2026-01-02'

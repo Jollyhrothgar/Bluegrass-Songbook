@@ -1,0 +1,17 @@
+id: when-there-s-not-a-tear-left-to-my-name
+title: When There's Not A Tear Left To My Name
+artist: Gene Watson
+composers:
+- Bennie Boling and Billy Troy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentheresnotatearlefttomynamelyricschords.pro
+    imported_at: '2026-01-02'

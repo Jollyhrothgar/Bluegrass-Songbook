@@ -1,0 +1,18 @@
+id: through-the-eyes-of-a-child
+title: Through the Eyes of a Child
+artist: Patsy Cline
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- Jazzy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: throughtheeyesofachildlyricschords.pro
+    imported_at: '2026-01-02'

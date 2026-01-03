@@ -1,0 +1,15 @@
+id: his-grace-reaches-me
+title: His Grace Reaches Me
+artist: The Blackwood Brothers
+composers:
+- Jewell M. Gleason
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hisgracereachesmelyricschords.pro
+    imported_at: '2026-01-02'

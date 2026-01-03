@@ -1,0 +1,17 @@
+id: theres-no-disappointment-in-heaven
+title: There’s No Disappointment In Heaven
+artist: Bob Wills
+composers:
+- Frederick M. Lehman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnodisappointmentinheavenlyricschords.pro
+    imported_at: '2026-01-02'

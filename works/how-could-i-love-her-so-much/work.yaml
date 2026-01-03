@@ -1,0 +1,17 @@
+id: how-could-i-love-her-so-much
+title: How Could I Love Her So Much
+artist: Johnny Rodriguez
+composers:
+- Hugh Moffatt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcouldilovehersomuchlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-ll-always-take-care-of-you
+title: I'll Always Take Care of You
+artist: Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illalwaystakecareofyoulyricschords.pro
+    imported_at: '2026-01-02'

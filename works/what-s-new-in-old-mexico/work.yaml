@@ -1,0 +1,17 @@
+id: what-s-new-in-old-mexico
+title: What's New In Old Mexico
+artist: Johnny Rodriguez
+composers:
+- Tony Stampley, Ken Bell, Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatsnewinoldmexicolyricschords.pro
+    imported_at: '2026-01-02'

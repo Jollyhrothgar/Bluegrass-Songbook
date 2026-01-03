@@ -1,0 +1,15 @@
+id: it-ain-t-nothing-new
+title: It Ain't Nothing New
+artist: Randy Travis & Rhonda Vincent
+composers:
+- Larry E. Cordle, Larry Shell, Betty Key
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itaintnothingnewlyricschords.pro
+    imported_at: '2026-01-02'

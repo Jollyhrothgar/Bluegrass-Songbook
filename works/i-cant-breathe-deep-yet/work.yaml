@@ -1,0 +1,18 @@
+id: i-cant-breathe-deep-yet
+title: I Can’t Breathe Deep Yet
+artist: The Gibson Brothers
+composers:
+- Leigh Joseph Gibson
+default_key: D
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantbreathedeepyetlyricschords.pro
+    imported_at: '2026-01-02'

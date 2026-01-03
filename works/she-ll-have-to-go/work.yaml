@@ -1,0 +1,19 @@
+id: she-ll-have-to-go
+title: She'll Have To Go
+artist: Anne Murray
+composers:
+- Joe Allison and Audrey Allison
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shellhavetogolyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-know-but-tell-me
+title: I Know But Tell Me
+artist: Carl Belew
+composers:
+- Carl Belew, Tommy Blake, W.S. Stevenson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowbuttellmelyricschords.pro
+    imported_at: '2026-01-02'

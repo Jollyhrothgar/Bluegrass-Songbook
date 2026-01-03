@@ -1,0 +1,17 @@
+id: help-stamp-out-loneliness
+title: Help Stamp Out Loneliness
+artist: Stonewall Jackson
+composers:
+- Carl R. Belew and Van Givens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helpstampoutlonelinesslyricschords.pro
+    imported_at: '2026-01-02'

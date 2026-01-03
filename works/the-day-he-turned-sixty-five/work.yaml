@@ -1,0 +1,18 @@
+id: the-day-he-turned-sixty-five
+title: The Day He Turned Sixty-Five
+artist: John Conlee
+composers:
+- Don Henry
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedayheturnedsixtyfivelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: old-toy-trains-aka-little-toy-trains
+title: Old Toy Trains (aka Little Toy Trains)
+artist: Statler Brothers
+composers:
+- Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldtoytrainslyricschords.pro
+    imported_at: '2026-01-02'

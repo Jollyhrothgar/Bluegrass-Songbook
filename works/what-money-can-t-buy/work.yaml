@@ -1,0 +1,17 @@
+id: what-money-can-t-buy
+title: What Money Can't Buy
+artist: Charlie Pride
+composers:
+- Howard White, Carl Knight, Clayton Ford
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatmoneycantbuylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-re-everything-to-me
+title: You're Everything To Me
+artist: Wynn Stewart
+composers:
+- Tommy Collins and Ray Rush
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youreeverythingtomelyricschords.pro
+    imported_at: '2026-01-02'

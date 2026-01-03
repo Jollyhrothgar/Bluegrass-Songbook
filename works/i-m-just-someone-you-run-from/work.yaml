@@ -1,0 +1,17 @@
+id: i-m-just-someone-you-run-from
+title: I'm Just Someone You Run From
+artist: Eddy Raven
+composers:
+- Eddy Raven and Arthur Leo Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imjustsomeoneyourunfromlyricschords.pro
+    imported_at: '2026-01-02'

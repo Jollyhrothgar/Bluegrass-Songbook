@@ -1,0 +1,17 @@
+id: rainbow-colored-words
+title: Rainbow Colored Words
+artist: Johnny Bush
+composers:
+- Johnny Bush and David Green
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rainbowcoloredwordslyricschords.pro
+    imported_at: '2026-01-02'

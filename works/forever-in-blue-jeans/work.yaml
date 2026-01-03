@@ -1,0 +1,18 @@
+id: forever-in-blue-jeans
+title: Forever In Blue Jeans
+artist: Tommy Overstreet
+composers:
+- Neil Diamond and Richard Bennett
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foreverinbluejeanslyricschords.pro
+    imported_at: '2026-01-02'

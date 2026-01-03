@@ -1,0 +1,17 @@
+id: you-ll-drive-me-back-into-her-arms-again
+title: You'll Drive Me Back Into Her Arms Again
+artist: Faron Young
+composers:
+- Merle Kilgore and Miriam Lewis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youlldrivemebackintoherarmsagainlyricschords.pro
+    imported_at: '2026-01-02'

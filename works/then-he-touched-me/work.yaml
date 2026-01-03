@@ -1,0 +1,17 @@
+id: then-he-touched-me
+title: Then He Touched Me
+artist: Jean Shepard
+composers:
+- Norro Wilson and George Richey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenhetouchedmelyricschords.pro
+    imported_at: '2026-01-02'

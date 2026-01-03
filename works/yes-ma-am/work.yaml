@@ -1,0 +1,17 @@
+id: yes-ma-am
+title: Yes Ma'am
+artist: Tommy Overstreet
+composers:
+- Sonny Throckmorton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesmaamlyricschords.pro
+    imported_at: '2026-01-02'

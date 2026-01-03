@@ -1,0 +1,17 @@
+id: don-t-leave-me-in-the-nighttime
+title: Don't Leave Me In The Nighttime
+artist: Moe Bandy
+composers:
+- Don Schlitz and Paul Overstreet
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontleavemeinthenighttimelyricschords.pro
+    imported_at: '2026-01-02'

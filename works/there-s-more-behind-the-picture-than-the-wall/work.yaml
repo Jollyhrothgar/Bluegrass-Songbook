@@ -1,0 +1,15 @@
+id: there-s-more-behind-the-picture-than-the-wall
+title: There's More Behind The Picture Than The Wall
+artist: Doyle Lawson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresmorebehindthepicturethanthewalllyricschords.pro
+    imported_at: '2026-01-02'

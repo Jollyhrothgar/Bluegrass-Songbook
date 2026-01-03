@@ -1,0 +1,21 @@
+id: a-big-hunk-o-love
+title: A Big Hunk O' Love
+artist: Elvis Presley
+composers:
+- Aaron Schroeder and Sid Wayne
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: abighunkolovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -93,6 +93,58 @@ test.describe('Search', () => {
         const stats = page.locator('#search-stats');
         await expect(stats).toContainText('-tag');
     });
+
+    test('chord search finds songs with specific Nashville numbers', async ({ page }) => {
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('chord:VII', { delay: 30 });
+        await page.waitForTimeout(500);
+
+        // Should return results (songs with VII chord)
+        const results = page.locator('.result-item');
+        const count = await results.count();
+        expect(count).toBeGreaterThan(0);
+
+        // Stats should reflect the chord filter
+        const stats = page.locator('#search-stats');
+        await expect(stats).toContainText(/chord/i);
+    });
+
+    test('progression search finds songs with chord sequences', async ({ page }) => {
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('prog:I-IV-V', { delay: 30 });
+        await page.waitForTimeout(500);
+
+        // Should return results with I-IV-V progression
+        const results = page.locator('.result-item');
+        const count = await results.count();
+        // This is a common progression, should have results
+        expect(count).toBeGreaterThan(0);
+    });
+
+    test('instrument tag search finds works with tablature', async ({ page }) => {
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('tag:banjo', { delay: 30 });
+        await page.waitForTimeout(500);
+
+        // Should return results with banjo tablature
+        const results = page.locator('.result-item');
+        const count = await results.count();
+        expect(count).toBeGreaterThan(0);
+    });
+
+    test('combined filters work correctly', async ({ page }) => {
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('tag:bluegrass key:G chord:V', { delay: 30 });
+        await page.waitForTimeout(500);
+
+        // Should return results matching all criteria
+        const results = page.locator('.result-item');
+        await expect(results.first()).toBeVisible();
+    });
 });
 
 test.describe('Search Result Interaction', () => {

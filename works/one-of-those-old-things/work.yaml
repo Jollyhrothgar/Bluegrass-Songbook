@@ -1,0 +1,17 @@
+id: one-of-those-old-things
+title: One Of Those Old Things
+artist: John Anderson
+composers:
+- Joel Sonier and Hoy Lindsey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneofthoseoldthingslyricschords.pro
+    imported_at: '2026-01-02'

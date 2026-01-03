@@ -1,0 +1,18 @@
+id: slow-dance-more
+title: Slow Dance More
+artist: Kenny Rogers
+composers:
+- Doug Johnson and Pat Bunch
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: slowdancemorelyricschords.pro
+    imported_at: '2026-01-02'

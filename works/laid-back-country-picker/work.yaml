@@ -1,0 +1,19 @@
+id: laid-back-country-picker
+title: Laid Back Country Picker
+artist: Waylon Jennings
+composers:
+- Vincent Wesley Matthews and James Casey
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: laidbackcountrypickerlyricschords.pro
+    imported_at: '2026-01-02'

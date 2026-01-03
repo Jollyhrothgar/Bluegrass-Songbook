@@ -1,0 +1,17 @@
+id: you-re-not-mine-anymore
+title: You're Not Mine Anymore
+artist: Webb Pierce
+composers:
+- Webb Pierce and Teddy Wilburn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourenotmineanymorelyricschords.pro
+    imported_at: '2026-01-02'

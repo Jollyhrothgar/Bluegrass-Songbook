@@ -1,0 +1,18 @@
+id: what-am-i-gonna-do-about-you
+title: What Am I Gonna Do About You
+artist: Reba McEntire
+composers:
+- Doug Gilmore, Bob Simon, Jim Allison
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatamigonnadoaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

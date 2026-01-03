@@ -1,0 +1,17 @@
+id: she-don-t-love-me-all-the-time
+title: She Don't Love Me All The Time
+artist: Johnny Paycheck
+composers:
+- Tommy Dodson and Glen Perkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shedontlovemeallthetimelyricschords.pro
+    imported_at: '2026-01-02'

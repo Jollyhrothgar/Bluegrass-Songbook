@@ -1,0 +1,17 @@
+id: without-you-1
+title: Without You
+artist: Johnny Tillotson
+composers:
+- Faye Bradshaw
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withoutyoulyricsandchords.pro
+    imported_at: '2026-01-02'

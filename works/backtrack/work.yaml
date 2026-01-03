@@ -1,0 +1,17 @@
+id: backtrack
+title: Backtrack
+artist: Faron Young
+composers:
+- Alex Zanetis and Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backtracklyricschords.pro
+    imported_at: '2026-01-02'

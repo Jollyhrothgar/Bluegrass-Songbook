@@ -1,0 +1,15 @@
+id: stay-on-his-mind
+title: Stay On His Mind
+artist: Jeanne Pruett
+composers:
+- Ben Peters
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stayonhismindlyricschords.pro
+    imported_at: '2026-01-02'

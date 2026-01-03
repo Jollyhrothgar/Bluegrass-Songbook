@@ -1,0 +1,18 @@
+id: as-long-as-i-m-rockin-with-you
+title: As Long As I'm Rockin' With You
+artist: John Conlee
+composers:
+- Bruce Channel and Kieran Kan
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aslongasimrockinwithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: one-more-shot
+title: One More Shot
+artist: Johnny Lee
+composers:
+- Ron Moore and Doug Hauseman
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemoreshotlyricschords.pro
+    imported_at: '2026-01-02'

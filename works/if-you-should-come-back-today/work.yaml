@@ -1,0 +1,17 @@
+id: if-you-should-come-back-today
+title: If You Should Come Back Today
+artist: Johnny Paycheck
+composers:
+- Pete Howard and Johnny Mathis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoushouldcomebacktodaylyricschords.pro
+    imported_at: '2026-01-02'

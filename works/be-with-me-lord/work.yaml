@@ -1,0 +1,17 @@
+id: be-with-me-lord
+title: Be With Me Lord
+artist: Sonny James
+composers:
+- Thomas Chrisholm and L.O. Sanderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bewithmelordlyricschords.pro
+    imported_at: '2026-01-02'

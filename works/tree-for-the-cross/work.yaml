@@ -1,0 +1,17 @@
+id: tree-for-the-cross
+title: Tree For The Cross
+artist: Stonewall Jackson
+composers:
+- N. Barfield and Stonewall Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: treeforthecrosslyricschords.pro
+    imported_at: '2026-01-02'

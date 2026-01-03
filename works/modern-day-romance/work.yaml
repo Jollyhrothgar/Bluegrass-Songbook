@@ -1,0 +1,20 @@
+id: modern-day-romance
+title: Modern Day Romance
+artist: Nitty Gritty Dirt Band
+composers:
+- Dan Tyler and Kix Brooks
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moderndayromancelyricschords.pro
+    imported_at: '2026-01-02'

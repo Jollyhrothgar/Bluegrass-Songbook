@@ -1,0 +1,15 @@
+id: the-christmas-song-chestnuts-roasting-on-an-open-fire-chords
+title: The Christmas Song (Chestnuts Roasting On An Open Fire) chords
+artist: John Anderson
+composers:
+- Mel Torme and Robert Wells
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theChristmassongchestnutsroastingonanopenfirelyricschords.pro
+    imported_at: '2026-01-02'

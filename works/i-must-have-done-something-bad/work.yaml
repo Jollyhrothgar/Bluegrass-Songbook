@@ -1,0 +1,17 @@
+id: i-must-have-done-something-bad
+title: I Must Have Done Something Bad
+artist: George Jones
+composers:
+- Red Lane
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imusthavedonesomethingbadlyricschords.pro
+    imported_at: '2026-01-02'

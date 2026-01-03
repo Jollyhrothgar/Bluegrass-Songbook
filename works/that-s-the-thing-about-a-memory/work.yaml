@@ -1,0 +1,18 @@
+id: that-s-the-thing-about-a-memory
+title: That's The Thing About A Memory
+artist: Tracy Byrd
+composers:
+- Keith Stegall, Lewis Anderson, Tracy Byrd
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsthethingaboutamemorylyricschords.pro
+    imported_at: '2026-01-02'

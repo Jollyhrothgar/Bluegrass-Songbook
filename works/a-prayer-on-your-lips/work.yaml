@@ -1,0 +1,18 @@
+id: a-prayer-on-your-lips
+title: A Prayer On Your Lips
+artist: Lefty Frizzell
+composers:
+- Arthur Leo Owens
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aprayeronyourlipslyricschords.pro
+    imported_at: '2026-01-02'

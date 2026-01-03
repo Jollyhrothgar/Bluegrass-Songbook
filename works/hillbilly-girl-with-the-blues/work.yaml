@@ -1,0 +1,16 @@
+id: hillbilly-girl-with-the-blues
+title: Hillbilly Girl With The Blues
+artist: Lacy J. Dalton
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hillbillygirlwiththeblueslyricschords.pro
+    imported_at: '2026-01-02'

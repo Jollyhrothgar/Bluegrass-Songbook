@@ -1,0 +1,17 @@
+id: laura-what-s-he-got-that-i-ain-t-got
+title: Laura What's He Got That I Ain't Got
+artist: Kenny Rogers
+composers:
+- Leon Ashley and Margie Singleton
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: laurawhatshegotthatiaintgotlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,21 @@
+id: i-m-counting-on-you-1
+title: I'm Counting on you
+artist: Elvis Presley
+composers:
+- Don Robertson
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imcountingonyoulyricschords.pro
+    imported_at: '2026-01-02'

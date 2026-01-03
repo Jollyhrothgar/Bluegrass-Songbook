@@ -1,0 +1,17 @@
+id: what-s-a-memory-like-you-doing-in-a-love-like-this
+title: What's A Memory Like You Doing In A Love Like This
+artist: John Schneider
+composers:
+- Charles Quillen and John Charles Jarrard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatsamemorylikeyoudoinginalovelikethislyricschords.pro
+    imported_at: '2026-01-02'

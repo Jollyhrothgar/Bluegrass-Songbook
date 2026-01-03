@@ -1,0 +1,20 @@
+id: don-t-make-me-go-to-bed
+title: Don't Make Me Go To Bed
+artist: Hank Snow
+composers:
+- Hugh Cross
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontmakemegotobedlyricschords.pro
+    imported_at: '2026-01-02'

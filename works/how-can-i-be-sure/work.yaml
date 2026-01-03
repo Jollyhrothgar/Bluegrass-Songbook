@@ -1,0 +1,19 @@
+id: how-can-i-be-sure
+title: How Can I Be Sure
+artist: Ernest Tubb
+composers:
+- Rex Griffin and Ernest Tubb
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcanibesurelyricschords.pro
+    imported_at: '2026-01-02'

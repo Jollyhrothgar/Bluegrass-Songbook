@@ -1,0 +1,17 @@
+id: everybody-s-got-a-girl-but-me
+title: Everybody's Got A Girl But Me
+artist: Hawkshaw Hawkins
+composers:
+- Lou Bedell and Ethel Gould
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodysgotagirlbutmelyricschords.pro
+    imported_at: '2026-01-02'

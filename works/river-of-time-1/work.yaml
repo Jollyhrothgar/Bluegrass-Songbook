@@ -1,0 +1,17 @@
+id: river-of-time-1
+title: River Of Time
+artist: Dailey and Vincent
+composers:
+- Robert Gateley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: riveroftimelyricschords.pro
+    imported_at: '2026-01-02'

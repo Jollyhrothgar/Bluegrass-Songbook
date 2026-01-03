@@ -1,0 +1,18 @@
+id: padre
+title: Padre
+artist: Marty Robbins
+composers:
+- Alain Romans
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: padrelyricschords.pro
+    imported_at: '2026-01-02'

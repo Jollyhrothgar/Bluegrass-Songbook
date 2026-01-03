@@ -1,0 +1,18 @@
+id: im-sorry-if-my-love-got-in-your-way
+title: I’m Sorry If My Love Got In Your Way
+artist: Connie Smith
+composers:
+- Dallas Frazier & Sanger D. Shafer
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsorryifmylovegotinyourwaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: can-t-even-get-the-blues-no-more
+title: Can't Even Get The Blues No More
+artist: Reba McEntire
+composers:
+- Thomas Damphier and Kerry Chater
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantevengetthebluesnomorelyricschords.pro
+    imported_at: '2026-01-02'

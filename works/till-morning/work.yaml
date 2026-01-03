@@ -1,0 +1,17 @@
+id: till-morning
+title: Till Morning
+artist: Billy Crash Craddock
+composers:
+- Cathy Carroll and Larry Kusik
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillmorninglyricschords.pro
+    imported_at: '2026-01-02'

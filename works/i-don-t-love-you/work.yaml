@@ -1,0 +1,19 @@
+id: i-don-t-love-you
+title: I Don't Love You
+artist: Conway Twitty
+composers:
+- Liz Hengber and Tommy James
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontloveyoulyricschords.pro
+    imported_at: '2026-01-02'

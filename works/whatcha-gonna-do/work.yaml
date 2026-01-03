@@ -1,0 +1,19 @@
+id: whatcha-gonna-do
+title: Whatcha Gonna Do
+artist: Kris Kristofferson
+composers:
+- Donnie Fritts and Jon Reid
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatchagonnadolyricschords.pro
+    imported_at: '2026-01-02'

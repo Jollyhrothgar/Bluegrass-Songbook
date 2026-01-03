@@ -1,0 +1,17 @@
+id: only-one-love-in-my-life
+title: Only One Love In My Life
+artist: Ronnie Milsap
+composers:
+- John Bettis and Royal C. Bannon
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onlyoneloveinmylifelyricschords.pro
+    imported_at: '2026-01-02'

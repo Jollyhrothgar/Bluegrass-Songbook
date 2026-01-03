@@ -1,0 +1,20 @@
+id: why-don-t-you-leave-me-alone
+title: Why Don't You Leave Me Alone
+artist: Chet Atkins
+composers:
+- Bill Stephens
+default_key: C
+tags:
+- ClassicCountry
+- Jazz
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydontyouleavemealonelyricschords.pro
+    imported_at: '2026-01-02'

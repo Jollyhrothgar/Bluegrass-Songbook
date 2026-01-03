@@ -1,0 +1,17 @@
+id: i-believe-he-d-go-to-calvary-for-me
+title: I Believe He'd Go To Calvary For Me
+artist: Jimmie Davis
+composers:
+- David Ingles
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibelievehedgotocalvaryformelyricschords.pro
+    imported_at: '2026-01-02'

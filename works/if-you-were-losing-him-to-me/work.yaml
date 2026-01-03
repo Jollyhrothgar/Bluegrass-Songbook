@@ -1,0 +1,17 @@
+id: if-you-were-losing-him-to-me
+title: If You Were Losing Him To Me
+artist: Jean Shepard
+composers:
+- Helen Carter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouwerelosinghimtomelyricschords.pro
+    imported_at: '2026-01-02'

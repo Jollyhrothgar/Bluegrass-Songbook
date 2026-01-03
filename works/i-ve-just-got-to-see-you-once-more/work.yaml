@@ -1,0 +1,17 @@
+id: i-ve-just-got-to-see-you-once-more
+title: I've Just Got to See You Once More
+artist: George Jones
+composers:
+- Little Jimmy Dickens, Billy Wallace
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivejustgottoseeyouoncemorelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: have-you-ever-been-lonely
+title: Have You Ever Been Lonely
+artist: Jim Reeves
+composers:
+- George Brown, Peter DeRose, Billy Hill
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveyoueverbeenlonelylyricschords.pro
+    imported_at: '2026-01-02'

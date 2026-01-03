@@ -1,0 +1,17 @@
+id: my-old-kentucky-home
+title: My Old Kentucky Home
+artist: Boxcar Willie
+composers:
+- Stephen C. Foster
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myoldkentuckyhomelyricschords.pro
+    imported_at: '2026-01-02'

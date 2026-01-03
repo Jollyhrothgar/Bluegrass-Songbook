@@ -1,0 +1,17 @@
+id: someone-with-no-one-to-love
+title: Someone With No One To Love
+artist: Buck Owens
+composers:
+- Red Simpson and Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someonewithnoonetolovelyricschords.pro
+    imported_at: '2026-01-02'

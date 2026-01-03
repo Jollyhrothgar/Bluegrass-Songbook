@@ -1,0 +1,17 @@
+id: my-day-won-t-be-complete
+title: My Day Won't Be Complete
+artist: The Wilburn Brothers
+composers:
+- Johnny Russell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mydaywontbecompletelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-star-still-shines
+title: The Star Still Shines
+artist: Sonny James
+composers:
+- Gloria Shayne and Noel Regney
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thestarstillshineslyricschords.pro
+    imported_at: '2026-01-02'

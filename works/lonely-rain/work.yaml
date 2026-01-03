@@ -1,0 +1,17 @@
+id: lonely-rain
+title: Lonely Rain
+artist: Wynn Stewart
+composers:
+- Don Earl
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelyrainlyricschords.pro
+    imported_at: '2026-01-02'

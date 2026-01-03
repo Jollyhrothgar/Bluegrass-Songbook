@@ -1,0 +1,17 @@
+id: turn-this-thing-around
+title: Turn This Thing Around
+artist: Keith Whitley
+composers:
+- Gary Harrison and Gene Nelson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: turnthisthingaroundlyricschords.pro
+    imported_at: '2026-01-02'

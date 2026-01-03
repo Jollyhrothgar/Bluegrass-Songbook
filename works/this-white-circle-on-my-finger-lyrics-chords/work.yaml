@@ -1,0 +1,18 @@
+id: this-white-circle-on-my-finger-lyrics-chords
+title: This White Circle On My Finger Lyrics Chords
+artist: Kitty Wells
+composers:
+- Margie Elizabeth Bainbridge and Dorothy Wylene Lewis
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thiswhitecircleonmyfingerlyricschords.pro
+    imported_at: '2026-01-02'

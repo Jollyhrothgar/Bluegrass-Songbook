@@ -1,0 +1,19 @@
+id: dear-john
+title: Dear John
+artist: Hank Williams
+composers:
+- Aubrey Gass and Tex Ritter
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dearjohnlyricschords.pro
+    imported_at: '2026-01-02'

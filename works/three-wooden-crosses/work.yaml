@@ -1,0 +1,18 @@
+id: three-wooden-crosses
+title: Three Wooden Crosses
+artist: Randy Travis
+composers:
+- Kim Williams and Doug Johnson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threewoodencrosseslyricschords.pro
+    imported_at: '2026-01-02'

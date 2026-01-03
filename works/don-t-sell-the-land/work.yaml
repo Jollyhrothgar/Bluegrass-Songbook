@@ -1,0 +1,17 @@
+id: don-t-sell-the-land
+title: Don't Sell The Land
+artist: The Kentucky Gentlemen
+composers:
+- Harold Macomber and John Morris
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontsellthelandlyricschords.pro
+    imported_at: '2026-01-02'

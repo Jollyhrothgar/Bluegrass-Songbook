@@ -1,0 +1,17 @@
+id: walls-of-this-old-honky-tonk
+title: Walls Of This Old Honky Tonk
+artist: Red Steagall
+composers:
+- Glenn Sutton and Red Steagall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wallsofthisoldhonkytonklyricschords.pro
+    imported_at: '2026-01-02'

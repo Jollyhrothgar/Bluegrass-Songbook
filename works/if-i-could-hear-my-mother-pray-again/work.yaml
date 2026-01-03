@@ -1,0 +1,17 @@
+id: if-i-could-hear-my-mother-pray-again
+title: If I Could Hear My Mother Pray Again
+artist: George Jones
+composers:
+- James Rowe and James W. Vaughn
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldhearmymotherprayagainlyricschords.pro
+    imported_at: '2026-01-02'

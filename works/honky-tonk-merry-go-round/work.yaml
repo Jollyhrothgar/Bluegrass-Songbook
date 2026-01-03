@@ -1,0 +1,15 @@
+id: honky-tonk-merry-go-round
+title: Honky Tonk Merry Go Round
+artist: Moe Bandy
+composers:
+- Pat Bunch and Pearly Mitchell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkmerrygoroundlyricsandchords.pro
+    imported_at: '2026-01-02'

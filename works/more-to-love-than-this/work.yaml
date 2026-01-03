@@ -1,0 +1,17 @@
+id: more-to-love-than-this
+title: More To Love Than This
+artist: Jean Shepard
+composers:
+- Hank Mills
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moretolovethanthislyricschords.pro
+    imported_at: '2026-01-02'

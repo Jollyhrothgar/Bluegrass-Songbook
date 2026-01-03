@@ -1,0 +1,17 @@
+id: your-wedding
+title: Your Wedding
+artist: Jim Reeves
+composers:
+- Ray Winkler and Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourweddinglyricschords.pro
+    imported_at: '2026-01-02'

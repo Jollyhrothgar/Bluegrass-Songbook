@@ -1,0 +1,17 @@
+id: you-re-the-only-good-thing
+title: You're the Only Good Thing
+artist: Jim Reeves
+composers:
+- Jack Toombs and Chuck Gregory
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheonlygoodthinglyricschords.pro
+    imported_at: '2026-01-02'

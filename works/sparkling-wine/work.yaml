@@ -1,0 +1,17 @@
+id: sparkling-wine
+title: Sparkling Wine
+artist: Red Sovine
+composers:
+- Tommy Hill and Red Sovine
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sparklingwinelyricschords.pro
+    imported_at: '2026-01-02'

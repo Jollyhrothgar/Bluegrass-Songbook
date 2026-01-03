@@ -1,0 +1,15 @@
+id: the-woman-in-me
+title: The Woman in Me
+artist: Crystal Gayle
+composers:
+- Susan Thomas
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewomaninmelyricschords.pro
+    imported_at: '2026-01-02'

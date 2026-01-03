@@ -1,0 +1,18 @@
+id: o-leary-s-cow
+title: O'Leary's Cow
+artist: Johnny Horton
+composers:
+- Ray Winkler, Leroy Morris, Dave Stone
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: olearyscowlyricschords.pro
+    imported_at: '2026-01-02'

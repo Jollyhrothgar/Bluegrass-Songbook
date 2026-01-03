@@ -1,0 +1,17 @@
+id: the-little-mountain-church-house
+title: The Little Mountain Church House
+artist: Doyle Lawson
+composers:
+- Carl E. Jackson and Jim Rushing
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelittlemountainchurchhouselyricschords.pro
+    imported_at: '2026-01-02'

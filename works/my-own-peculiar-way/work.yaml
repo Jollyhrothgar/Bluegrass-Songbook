@@ -1,0 +1,17 @@
+id: my-own-peculiar-way
+title: My Own Peculiar Way
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myownpeculiarwaylyricschords.pro
+    imported_at: '2026-01-02'

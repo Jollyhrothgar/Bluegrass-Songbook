@@ -1,0 +1,15 @@
+id: he-s-got-you
+title: He's Got You
+artist: Ricky Van Shelton
+composers:
+- Hank Cochran
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesgotyoulyricschords.pro
+    imported_at: '2026-01-02'

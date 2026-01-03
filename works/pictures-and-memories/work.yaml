@@ -1,0 +1,17 @@
+id: pictures-and-memories
+title: Pictures And Memories
+artist: Alabama
+composers:
+- Jeff Cook and Monty Wilson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: picturesandmemorieslyricschords.pro
+    imported_at: '2026-01-02'

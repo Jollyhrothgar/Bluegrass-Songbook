@@ -1,0 +1,17 @@
+id: my-tears-are-overdue
+title: My Tears Are Overdue
+artist: George Jones
+composers:
+- Freddie Hart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mytearsareoverduelyricsandchords.pro
+    imported_at: '2026-01-02'

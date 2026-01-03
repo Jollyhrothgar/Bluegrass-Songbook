@@ -1,0 +1,19 @@
+id: some-days-are-diamonds
+title: Some Days Are Diamonds
+artist: John Denver
+composers:
+- Dick Feller
+default_key: G
+tags:
+- Folk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somedaysarediamondslyricschords.pro
+    imported_at: '2026-01-02'

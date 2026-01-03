@@ -1,0 +1,17 @@
+id: silver-threads-among-the-gold
+title: Silver Threads Among The Gold
+artist: Slim Whitman
+composers:
+- H.P. Danks and Eben E. Rexford
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: silverthreadsamongthegoldlyricschords.pro
+    imported_at: '2026-01-02'

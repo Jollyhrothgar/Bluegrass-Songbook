@@ -1,0 +1,17 @@
+id: desperately-1
+title: Desperately
+artist: Don Williams
+composers:
+- Jamie O'Hara and Kevin Welch
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: desperatelylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: good-leavin-alone
+title: Good Leavin' Alone
+artist: Hank Williams Jr.
+composers:
+- Ronnie Self
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodleavinalonelyricschords.pro
+    imported_at: '2026-01-02'

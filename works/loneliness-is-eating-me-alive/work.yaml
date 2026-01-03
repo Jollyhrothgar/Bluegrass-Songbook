@@ -1,0 +1,17 @@
+id: loneliness-is-eating-me-alive
+title: Loneliness Is Eating Me Alive
+artist: Merle Haggard
+composers:
+- Hank Cockran
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelinessiseatingmealivelyricschords.pro
+    imported_at: '2026-01-02'

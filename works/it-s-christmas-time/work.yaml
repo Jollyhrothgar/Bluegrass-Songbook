@@ -1,0 +1,17 @@
+id: it-s-christmas-time
+title: It's Christmas Time
+artist: The Louvin Brothers
+default_key: C
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsChristmastimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: its-a-great-life-if-you-dont-weaken
+title: It’s A Great Life If You Don’t Weaken
+artist: Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsagreatlifeifyoudontweakenlyricschords.pro
+    imported_at: '2026-01-02'

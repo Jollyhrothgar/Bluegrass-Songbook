@@ -1,0 +1,17 @@
+id: you-never-said-you-loved-me
+title: You Never Said You Loved Me
+artist: Jim Ed Brown
+composers:
+- Johnny Russell and Tommy Russell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youneversaidyoulovedmelyricschords.pro
+    imported_at: '2026-01-02'

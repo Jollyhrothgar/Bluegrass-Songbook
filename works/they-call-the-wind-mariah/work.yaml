@@ -1,0 +1,17 @@
+id: they-call-the-wind-mariah
+title: They Call the Wind Mariah
+artist: Jim Ed Brown
+composers:
+- Alan J. Lerner and Frederick Loewe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theycallthewindmariahlyricschords.pro
+    imported_at: '2026-01-02'

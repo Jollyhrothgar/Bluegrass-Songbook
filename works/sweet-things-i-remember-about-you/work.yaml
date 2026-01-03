@@ -1,0 +1,17 @@
+id: sweet-things-i-remember-about-you
+title: Sweet Things I Remember About You
+artist: Cal Smith
+composers:
+- Darlene Shofner
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetthingsirememberaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

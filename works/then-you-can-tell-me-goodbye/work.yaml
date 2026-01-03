@@ -1,0 +1,15 @@
+id: then-you-can-tell-me-goodbye
+title: Then You Can Tell Me Goodbye
+artist: Eddy Arnold
+composers:
+- John D. Loudermilk
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenyoucantellmegoodbyelyricschords.pro
+    imported_at: '2026-01-02'

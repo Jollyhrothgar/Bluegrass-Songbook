@@ -1,0 +1,17 @@
+id: i-m-not-living-with-your-memory-anymore
+title: I'm Not Living With Your Memory Anymore
+artist: Johnny Rodriguez
+composers:
+- Tom T. Hall and Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotlivingwithyourmemoryanymorelyricschords.pro
+    imported_at: '2026-01-02'

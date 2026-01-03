@@ -1,0 +1,17 @@
+id: chattanooga-shoeshine-boy
+title: Chattanooga Shoeshine Boy
+artist: Red Foley
+composers:
+- Harry Stone and Jack Stapp
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: chattanoogashoeshineboylyricschords.pro
+    imported_at: '2026-01-02'

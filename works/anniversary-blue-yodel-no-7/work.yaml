@@ -1,0 +1,19 @@
+id: anniversary-blue-yodel-no-7
+title: Anniversary Blue Yodel No. 7
+artist: Hank Snow
+composers:
+- Jimmie Rodgers
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anniversaryblueyodelno7lyricschords.pro
+    imported_at: '2026-01-02'

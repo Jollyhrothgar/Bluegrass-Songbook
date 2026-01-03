@@ -1,0 +1,17 @@
+id: 1953-dear-john-honky-tonk-blues
+title: 1953 Dear John Honky Tonk Blues
+artist: Statler Brothers
+composers:
+- Don Reid and Harold Reid
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 1953dearjohnhonkytonkblueslyricschords.pro
+    imported_at: '2026-01-02'

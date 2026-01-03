@@ -1,0 +1,17 @@
+id: every-little-thing-rolled-into-one
+title: Every Little Thing Rolled Into One
+artist: George Morgan
+composers:
+- Fred Segrest
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everylittlethingrolledintoonelyricschords.pro
+    imported_at: '2026-01-02'

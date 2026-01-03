@@ -1,0 +1,15 @@
+id: dreams-of-the-everyday-housewife
+title: Dreams of the Everyday Housewife
+artist: Glen Campbell
+composers:
+- Chris Gantry
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dreamsoftheeverydayhousewifelyricschords.pro
+    imported_at: '2026-01-02'

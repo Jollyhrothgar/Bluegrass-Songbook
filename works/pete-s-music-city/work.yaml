@@ -1,0 +1,15 @@
+id: pete-s-music-city
+title: Pete's Music City
+artist: Alabama
+composers:
+- Monty Powell
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: petesmusiccitylyricschords.pro
+    imported_at: '2026-01-02'

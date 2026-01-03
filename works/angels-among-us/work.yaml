@@ -1,0 +1,15 @@
+id: angels-among-us
+title: Angels Among Us
+artist: Alabama
+composers:
+- Don Goodman and Becky Hobbs
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: angelsamonguslyricschords.pro
+    imported_at: '2026-01-02'

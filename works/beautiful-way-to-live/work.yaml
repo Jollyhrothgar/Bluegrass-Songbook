@@ -1,0 +1,17 @@
+id: beautiful-way-to-live
+title: Beautiful Way To Live
+artist: Dottie West
+composers:
+- Ben Peters
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beautifulwaytolivelyricschords.pro
+    imported_at: '2026-01-02'

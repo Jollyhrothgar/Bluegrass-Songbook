@@ -1,0 +1,18 @@
+id: i-m-in-the-middle-of-a-heartache
+title: I'm in the Middle of a Heartache
+artist: Wanda Jackson
+composers:
+- Wanda Jackson, Pat Franzese, Laurie Christenson
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iminthemiddleofaheartachelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: there-is-power-in-the-blood
+title: There is Power in the Blood
+artist: Marty Robbins
+composers:
+- Allen Hall, Lewis Jones, Todd Smith, Nicol Sponberg
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thereispowerinthebloodlyricschords.pro
+    imported_at: '2026-01-02'

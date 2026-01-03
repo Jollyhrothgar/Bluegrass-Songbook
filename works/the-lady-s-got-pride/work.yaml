@@ -1,0 +1,17 @@
+id: the-lady-s-got-pride
+title: The Lady's Got Pride
+artist: Moe Bandy
+composers:
+- Sanger D. Shafer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theladysgotpridelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: follow-me-back-to-louisville
+title: Follow Me Back to Louisville
+artist: Don Williams
+composers:
+- Bill Davidson
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: followmebacktolouisvillelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,21 @@
+id: woman-you-won-t-break-mine
+title: Woman You Won't Break Mine
+artist: Ricky Skaggs
+composers:
+- Jim Rushing and Hunter Moore
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: womanyouwontbreakminelyricschords.pro
+    imported_at: '2026-01-02'

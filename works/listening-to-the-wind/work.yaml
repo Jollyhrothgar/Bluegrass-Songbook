@@ -1,0 +1,16 @@
+id: listening-to-the-wind
+title: Listening To The Wind
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: listeningtothewindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: ages-and-ages-ago-1
+title: Ages And Ages Ago
+artist: Slim Whitman
+composers:
+- Gene Autry, Fred Rose, Ray Whitley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: agesandagesagolyricschords.pro
+    imported_at: '2026-01-02'

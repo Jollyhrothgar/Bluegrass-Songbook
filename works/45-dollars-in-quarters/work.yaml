@@ -1,0 +1,15 @@
+id: 45-dollars-in-quarters
+title: 45 Dollars in Quarters
+artist: Terry Lee Goffee
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 45dollarsinquarterslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: white-cross-on-okinawa
+title: White Cross On Okinawa
+artist: Bob Wills
+composers:
+- Cliff Johnsen, Cliff Sundin & James Wills
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whitecrossonokinawalyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: jesus-took-the-outlaw-out-of-me
+title: Jesus Took The Outlaw Out Of Me
+artist: Stonewall Jackson
+composers:
+- Bill Sterling
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesustooktheoutlawoutofmelyricschords.pro
+    imported_at: '2026-01-02'

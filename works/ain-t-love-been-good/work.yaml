@@ -1,0 +1,13 @@
+id: ain-t-love-been-good
+title: Ain't Love Been Good
+artist: George Jones
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintlovebeengoodlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-never-have-to-be-alone
+title: I'll Never Have To Be Alone
+artist: Webb Pierce
+composers:
+- Mel Tillis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverhavetobealonelyricschords.pro
+    imported_at: '2026-01-02'

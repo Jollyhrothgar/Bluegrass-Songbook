@@ -1,0 +1,17 @@
+id: the-key-s-in-the-mailbox
+title: The Key's in the Mailbox
+artist: Buck Owens
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thekeysinthemailboxlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: if-i-could-put-them-all-together
+title: If I Could Put Them All Together
+artist: George Jones
+composers:
+- Even Stevens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldputthemalltogetherlyricschords.pro
+    imported_at: '2026-01-02'

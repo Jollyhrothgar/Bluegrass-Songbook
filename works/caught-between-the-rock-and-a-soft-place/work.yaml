@@ -1,0 +1,15 @@
+id: caught-between-the-rock-and-a-soft-place
+title: Caught Between The Rock And A Soft Place
+artist: Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: caughtbetweentherockandasoftplacelyricschords.pro
+    imported_at: '2026-01-02'

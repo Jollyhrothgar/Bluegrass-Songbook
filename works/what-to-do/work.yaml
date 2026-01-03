@@ -1,0 +1,16 @@
+id: what-to-do
+title: What To Do
+artist: Buddy Holly
+default_key: G
+tags:
+- Rockabilly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whattodolyricschords.pro
+    imported_at: '2026-01-02'

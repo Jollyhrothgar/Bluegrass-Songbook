@@ -1,0 +1,17 @@
+id: you-re-the-sad-in-my-songs
+title: You're The Sad In My Songs
+artist: Stonewall Jackson
+composers:
+- Larry Lee
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethesadinmysongslyricschords.pro
+    imported_at: '2026-01-02'

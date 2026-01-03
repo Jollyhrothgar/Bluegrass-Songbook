@@ -1,0 +1,17 @@
+id: if-i-could-just-get-over-you
+title: If I Could Just Get Over You
+artist: Connie Smith
+composers:
+- Kay Arnold
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldjustgetoveryoulyricschords.pro
+    imported_at: '2026-01-02'

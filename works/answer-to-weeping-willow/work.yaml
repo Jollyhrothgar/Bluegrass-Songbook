@@ -1,0 +1,17 @@
+id: answer-to-weeping-willow
+title: Answer To Weeping Willow
+artist: Mac Wiseman
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: answertoweepingwillowlyricschords.pro
+    imported_at: '2026-01-02'

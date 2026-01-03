@@ -1,0 +1,15 @@
+id: here-in-the-real-world
+title: Here In The Real World
+artist: George Jones
+composers:
+- Alan Jackson and Mark Irwin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hereintherealworldlyricschords.pro
+    imported_at: '2026-01-02'

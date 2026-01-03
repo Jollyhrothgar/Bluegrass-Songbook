@@ -1,0 +1,17 @@
+id: tennessee-courage
+title: Tennessee Courage
+artist: Vern Gosdin
+composers:
+- Vern Gosdin, Rex Gosdin, James Brown)
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tennesseecouragelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: another-sleepless-night
+title: Another Sleepless Night
+artist: Anne Murray
+composers:
+- Rory Bourke and Charlie Black [3/4 time]
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anothersleeplessnightlyricschords.pro
+    imported_at: '2026-01-02'

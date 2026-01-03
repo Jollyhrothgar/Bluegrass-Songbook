@@ -1,0 +1,19 @@
+id: this-stranger-my-little-girl
+title: This Stranger (My Little Girl)
+artist: Loretta Lynn
+composers:
+- Ruby VanNoy, Ann Burns, Barbara Fairchild
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisstrangermylittlegirllyricschords.pro
+    imported_at: '2026-01-02'

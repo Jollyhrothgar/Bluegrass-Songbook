@@ -1,0 +1,17 @@
+id: rough-around-the-edges
+title: Rough Around The Edges
+artist: Vern Gosdin
+composers:
+- Max D. Barnes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rougharoundtheedgeslyricschords.pro
+    imported_at: '2026-01-02'

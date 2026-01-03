@@ -1,0 +1,17 @@
+id: am-i-that-easy-to-forget-lyrics-chords
+title: Am I That Easy to Forget Lyrics chords
+artist: Jim Reeves
+composers:
+- Carl Belew and W.S. Stevenson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amithateasytoforgetlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,13 @@
+id: irish-american-reel-1-the
+title: Irish-American Reel (1) (The)
+artist: Traditional
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

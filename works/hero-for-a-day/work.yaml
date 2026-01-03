@@ -1,0 +1,17 @@
+id: hero-for-a-day
+title: Hero For A Day
+artist: Conway Twitty
+composers:
+- Wayne C. Thompson and Ronnie Reno
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heroforadaylyricschords.pro
+    imported_at: '2026-01-02'

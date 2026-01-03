@@ -1,0 +1,17 @@
+id: cherokee-rose
+title: Cherokee Rose
+artist: Jack Greene
+composers:
+- Billy Ray Reynolds, Doug Gilmore, Grant Boatwright
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cherokeeroselyricschords.pro
+    imported_at: '2026-01-02'

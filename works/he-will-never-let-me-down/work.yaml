@@ -1,0 +1,18 @@
+id: he-will-never-let-me-down
+title: He Will Never Let Me Down
+artist: The Oak Ridge Boys
+composers:
+- James S. Wetherington
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hewillneverletmedownlyricschords.pro
+    imported_at: '2026-01-02'

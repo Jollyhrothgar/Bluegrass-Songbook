@@ -1,0 +1,15 @@
+id: weekends-were-made-for-cheating
+title: Weekends Were Made For Cheating
+artist: Vern Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weekendsweremadeforcheatinglyricschords.pro
+    imported_at: '2026-01-02'

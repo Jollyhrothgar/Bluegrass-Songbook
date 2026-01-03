@@ -1,0 +1,17 @@
+id: she-s-walking-through-my-memory
+title: She's Walking Through My Memory
+artist: Doyle Lawson
+composers:
+- Leroy Drumm and Pete Goble
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sheswalkingthroughmymemorylyricschords.pro
+    imported_at: '2026-01-02'

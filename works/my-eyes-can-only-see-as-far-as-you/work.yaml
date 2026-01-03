@@ -1,0 +1,16 @@
+id: my-eyes-can-only-see-as-far-as-you
+title: My Eyes Can Only See As Far As You
+artist: Charley Pride
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myeyescanonlyseeasfarasyoulyricschords.pro
+    imported_at: '2026-01-02'

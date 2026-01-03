@@ -1,0 +1,17 @@
+id: old-lonesome-time
+title: Old Lonesome Time
+artist: Carl Smith
+composers:
+- Sonny James and Hazel H. Pitts
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldlonesometimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: broken-down-in-tiny-pieces
+title: Broken Down In Tiny Pieces
+artist: Billy Crash Craddock
+composers:
+- John Adrian
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brokendownintinypieceslyricschords.pro
+    imported_at: '2026-01-02'

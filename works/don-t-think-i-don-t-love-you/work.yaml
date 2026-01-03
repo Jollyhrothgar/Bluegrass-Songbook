@@ -1,0 +1,17 @@
+id: don-t-think-i-don-t-love-you
+title: Don't Think I Don't Love You
+artist: George Jones
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontthinkidontloveyoulyricschords.pro
+    imported_at: '2026-01-02'

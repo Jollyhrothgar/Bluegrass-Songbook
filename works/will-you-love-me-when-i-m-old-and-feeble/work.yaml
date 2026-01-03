@@ -1,0 +1,17 @@
+id: will-you-love-me-when-i-m-old-and-feeble
+title: Will You Love Me When I'm Old And Feeble
+artist: Wendell Roach
+composers:
+- Smiley Bates
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willyoulovemewhenimoldandfeeblelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: pretending-i-dont-care
+title: Pretending I Don’t Care
+artist: Rhonda Vincent
+composers:
+- Jimmy Martin and Paul M. Williams
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pretendingidontcarelyricschords.pro
+    imported_at: '2026-01-02'

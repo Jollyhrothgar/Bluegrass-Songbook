@@ -1,0 +1,19 @@
+id: christmas-will-be-just-another-lonely-day
+title: Christmas Will Be Just Another Lonely Day
+artist: Brenda Lee
+composers:
+- Lee Jackson and Patti Seymour
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmaswillbejustanotherlonelydaylyricschords.pro
+    imported_at: '2026-01-02'

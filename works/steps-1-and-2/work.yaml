@@ -1,0 +1,15 @@
+id: steps-1-and-2
+title: Steps 1 and 2
+artist: Jack Scott
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: steps1and2lyricschords.pro
+    imported_at: '2026-01-02'

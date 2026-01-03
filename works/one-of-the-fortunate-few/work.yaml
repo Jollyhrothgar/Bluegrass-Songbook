@@ -1,0 +1,17 @@
+id: one-of-the-fortunate-few
+title: One Of The Fortunate Few
+artist: Hank Thompson
+composers:
+- Charlie Williams
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneofthefortunatefewlyricschords.pro
+    imported_at: '2026-01-02'

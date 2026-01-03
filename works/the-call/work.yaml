@@ -1,0 +1,15 @@
+id: the-call
+title: The Call
+artist: John Anderson
+composers:
+- Michael White and Eric Heatherly
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thecalllyrics-chords.pro
+    imported_at: '2026-01-02'

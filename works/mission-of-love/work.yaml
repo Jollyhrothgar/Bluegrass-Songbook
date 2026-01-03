@@ -1,0 +1,18 @@
+id: mission-of-love
+title: Mission Of Love
+artist: Travis Tritt
+composers:
+- Larry Cordle and Leslie Satcher
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: missionoflovelyricsandchords.pro
+    imported_at: '2026-01-02'

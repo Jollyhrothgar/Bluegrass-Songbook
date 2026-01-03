@@ -1,0 +1,18 @@
+id: nobody-loves-me-like-you-do
+title: Nobody Loves Me Like You Do
+artist: Anne Murray
+composers:
+- James P. Dunne and Pam Phillips
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodylovesmelikeyoudolyricschords.pro
+    imported_at: '2026-01-02'

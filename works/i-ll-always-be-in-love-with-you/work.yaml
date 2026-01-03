@@ -1,0 +1,17 @@
+id: i-ll-always-be-in-love-with-you
+title: I'll Always Be In Love With You
+artist: Bob Wills
+composers:
+- Lew Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illalwaysbeinlovewithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: one-more-night-1
+title: One More Night
+artist: Bob Dylan
+default_key: G
+tags:
+- Folk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: tell-mother-i-ll-be-there
+title: Tell Mother I'll Be There
+artist: Mac Wiseman
+composers:
+- Charles M. Fillmore
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmotherillbetherelyricschords.pro
+    imported_at: '2026-01-02'

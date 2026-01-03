@@ -1,0 +1,16 @@
+id: you-tore-my-heaven-all-to-hell
+title: You Tore My Heaven All To Hell
+artist: Carl Perkins
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youtoremyheavenalltohelllyricschords.pro
+    imported_at: '2026-01-02'

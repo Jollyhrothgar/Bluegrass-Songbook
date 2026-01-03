@@ -1,0 +1,22 @@
+id: i-forgot-to-remember-to-forget-1
+title: I Forgot To Remember To Forget
+artist: Johnny Cash
+composers:
+- Stan Kesler and Carl Feathers
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iforgottoremembertoforgetlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: honky-tonk-in-dallas
+title: Honky Tonk In Dallas
+artist: Charlie Walker
+composers:
+- Mel Tillis and Wayne P. Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkindallaslyricschords.pro
+    imported_at: '2026-01-02'

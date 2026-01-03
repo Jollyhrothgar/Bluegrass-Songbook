@@ -1,0 +1,17 @@
+id: good-nights-make-good-mornings
+title: Good Nights Make Good Mornings
+artist: Jean Shepard
+composers:
+- Naomi Martin
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodnightsmakegoodmorningslyricschords.pro
+    imported_at: '2026-01-02'

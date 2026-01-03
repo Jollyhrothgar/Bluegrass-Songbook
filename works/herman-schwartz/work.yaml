@@ -1,0 +1,17 @@
+id: herman-schwartz
+title: Herman Schwartz
+artist: Stonewall Jackson
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hermanschwartzlyricschords.pro
+    imported_at: '2026-01-02'

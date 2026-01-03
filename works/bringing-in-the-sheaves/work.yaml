@@ -1,0 +1,18 @@
+id: bringing-in-the-sheaves
+title: Bringing In The Sheaves
+artist: Red Sovine
+composers:
+- Knowles Shaw and George A. Minor
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bringinginthesheaveslyricschords.pro
+    imported_at: '2026-01-02'

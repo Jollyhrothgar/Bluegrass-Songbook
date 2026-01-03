@@ -1,0 +1,17 @@
+id: world-i-used-to-know
+title: World I Used To Know
+artist: Eddy Arnold
+composers:
+- Rod McKuen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: worldiusedtoknowlyricschords.pro
+    imported_at: '2026-01-02'

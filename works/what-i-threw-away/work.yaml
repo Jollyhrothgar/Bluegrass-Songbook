@@ -1,0 +1,17 @@
+id: what-i-threw-away
+title: What I Threw Away
+artist: Vern Gosdin
+composers:
+- Doodle Owens, Dennis Knutson, Vern Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatithrewawaylyricschords.pro
+    imported_at: '2026-01-02'

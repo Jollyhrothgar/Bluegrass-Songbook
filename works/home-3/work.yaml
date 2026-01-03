@@ -1,0 +1,18 @@
+id: home-3
+title: Home
+artist: Joe Diffie
+composers:
+- Fred Lehner and Andy Spooner
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: homelyricswithchords.pro
+    imported_at: '2026-01-02'

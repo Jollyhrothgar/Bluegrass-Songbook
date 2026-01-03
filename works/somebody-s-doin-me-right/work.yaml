@@ -1,0 +1,15 @@
+id: somebody-s-doin-me-right
+title: Somebody's Doin' Me Right
+artist: Keith Whitley
+composers:
+- J. Fred Knobloch, Paul Overstreet, Dan Tyler
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodysdoinmerightlyricschords.pro
+    imported_at: '2026-01-02'

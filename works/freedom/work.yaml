@@ -1,0 +1,15 @@
+id: freedom
+title: Freedom
+artist: Roger Miller
+composers:
+- Roger Miller and Chuck Blore
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: freedomlyricsandchords.pro
+    imported_at: '2026-01-02'

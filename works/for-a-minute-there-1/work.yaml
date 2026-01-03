@@ -1,0 +1,17 @@
+id: for-a-minute-there-1
+title: For A Minute There
+artist: Vern Gosdin
+composers:
+- Beverly Gosdin and Max D. Barnes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foraminutetherelyricschords.pro
+    imported_at: '2026-01-02'

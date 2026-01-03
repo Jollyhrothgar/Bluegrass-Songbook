@@ -1,0 +1,18 @@
+id: completely-helpless
+title: Completely Helpless
+artist: Charley Pride
+composers:
+- John Schweers
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: completelyhelplesslyricschords.pro
+    imported_at: '2026-01-02'

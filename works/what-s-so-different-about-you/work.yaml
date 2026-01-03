@@ -1,0 +1,15 @@
+id: what-s-so-different-about-you
+title: What's So Different About You
+artist: John Anderson
+composers:
+- Fred F. Carter Jr. and John David Anderson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatssodifferentaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

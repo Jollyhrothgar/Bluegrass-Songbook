@@ -1,0 +1,15 @@
+id: remember-man-thou-art-dust
+title: Remember Man Thou Art Dust
+artist: Cowboy Copas
+composers:
+- Ken McRae and Harvey Boileau
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: remembermanthouartdustlyricschords.pro
+    imported_at: '2026-01-02'

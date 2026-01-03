@@ -1,0 +1,17 @@
+id: better-class-of-losers-1
+title: Better Class Of Losers
+artist: Ray Price
+composers:
+- Harlan Howard and Ron Peterson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betterclassofloserslyricschords.pro
+    imported_at: '2026-01-02'

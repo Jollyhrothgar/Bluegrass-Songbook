@@ -1,0 +1,17 @@
+id: burden-bearer
+title: Burden Bearer
+artist: Doyle Lawson
+composers:
+- Tammy Jones Robinette
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burdenbearerlyricschords.pro
+    imported_at: '2026-01-02'

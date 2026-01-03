@@ -1,0 +1,17 @@
+id: tell-your-children
+title: Tell Your Children
+artist: Porter Wagoner
+composers:
+- E.J. Carter and Maybelle Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellyourchildrenlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-hear-a-sweet-voice-calling
+title: I Hear A Sweet Voice Calling
+artist: Bill Monroe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihearasweetvoicecallinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-came-straight-to-you
+title: I Came Straight To You
+artist: Charlie Pride
+composers:
+- Kevin Welch and John B. Jarvis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icamestraighttoyoulyricschords.pro
+    imported_at: '2026-01-02'

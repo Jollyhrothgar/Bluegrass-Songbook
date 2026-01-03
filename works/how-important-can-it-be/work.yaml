@@ -1,0 +1,18 @@
+id: how-important-can-it-be
+title: How Important Can It Be
+artist: Wanda Jackson
+composers:
+- Bennie Benjamin and George Weiss
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howimportantcanitbelyricschords.pro
+    imported_at: '2026-01-02'

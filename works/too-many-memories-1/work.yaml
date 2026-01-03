@@ -1,0 +1,17 @@
+id: too-many-memories-1
+title: Too Many Memories
+artist: Billy Walker
+composers:
+- Rory Bourke and Gayle Barnhill
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomanymemorieslyricschords.pro
+    imported_at: '2026-01-02'

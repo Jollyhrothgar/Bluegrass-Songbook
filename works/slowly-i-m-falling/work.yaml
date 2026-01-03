@@ -1,0 +1,17 @@
+id: slowly-i-m-falling
+title: Slowly I'm Falling
+artist: Web Pierce
+composers:
+- Webb Pierce adn Tommy Hill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: slowlyimfallinglyricschords.pro
+    imported_at: '2026-01-02'

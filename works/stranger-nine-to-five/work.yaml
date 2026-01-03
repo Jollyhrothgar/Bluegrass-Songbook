@@ -1,0 +1,17 @@
+id: stranger-nine-to-five
+title: Stranger Nine To Five
+artist: Jean Shepard
+composers:
+- Charlie Williams, Scott Turner, Chris Roberts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: strangerninetofivelyricschords.pro
+    imported_at: '2026-01-02'

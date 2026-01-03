@@ -1,0 +1,17 @@
+id: build-my-mansion
+title: Build My Mansion
+artist: Gene Watson
+composers:
+- Dottie Rambo
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: buildmymansionlyricsandchords.pro
+    imported_at: '2026-01-02'

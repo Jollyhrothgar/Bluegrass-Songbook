@@ -1,0 +1,17 @@
+id: haunted-hungry-heart
+title: Haunted Hungry Heart
+artist: Slim Whitman
+composers:
+- Cecil Harris, Arlie Carter, Jimmy Heap
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hauntedhungryheartlyricschords.pro
+    imported_at: '2026-01-02'

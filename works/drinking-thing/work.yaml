@@ -1,0 +1,17 @@
+id: drinking-thing
+title: Drinking Thing
+artist: Gary Stewart
+composers:
+- Wayne Carson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drinkingthinglyricschords.pro
+    imported_at: '2026-01-02'

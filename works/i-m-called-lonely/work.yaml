@@ -1,0 +1,15 @@
+id: i-m-called-lonely
+title: I'm Called Lonely
+artist: Ricky Nelson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imcalledlonelylyricschords.pro
+    imported_at: '2026-01-02'

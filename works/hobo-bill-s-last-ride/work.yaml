@@ -1,0 +1,19 @@
+id: hobo-bill-s-last-ride
+title: Hobo Bill's Last Ride
+artist: Hank Snow
+composers:
+- Waldo LaFayette O'Neal
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hobobillslastridelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-gotta-have-a-license
+title: You Gotta Have A License
+artist: Buck Owens
+composers:
+- Tommy Collins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yougottahavealicenselyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: love-has-finally-come-my-way
+title: Love Has Finally Come My Way
+artist: Faron Young
+composers:
+- Lee Pockriss and Paul Vance
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovehasfinallycomemywaylyricschords.pro
+    imported_at: '2026-01-02'

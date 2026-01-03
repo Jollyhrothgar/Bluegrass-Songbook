@@ -1,0 +1,17 @@
+id: i-don-t-wanna-talk-it-over-anymore
+title: I Don't Wanna Talk It Over Anymore
+artist: Connie Smith
+composers:
+- Eddy Raven
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwannatalkitoveranymorelyricschords.pro
+    imported_at: '2026-01-02'

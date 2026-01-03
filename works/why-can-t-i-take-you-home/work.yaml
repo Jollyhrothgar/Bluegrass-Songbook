@@ -1,0 +1,17 @@
+id: why-can-t-i-take-you-home
+title: Why Can't I Take You Home
+artist: Jim Ed Brown
+composers:
+- Huey Long
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whycantitakeyouhomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-don-t-have-to-live-with-it
+title: You Don't Have To Live With It
+artist: Ed Bruce
+composers:
+- Earl T. Conley, Rick Farrell, Steve Clark
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdonthavetolivewithitlyricschords.pro
+    imported_at: '2026-01-02'

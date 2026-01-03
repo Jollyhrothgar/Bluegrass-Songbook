@@ -1,0 +1,17 @@
+id: beethoven-was-before-my-time
+title: Beethoven Was Before My Time
+artist: Moe Bandy
+composers:
+- Jerry Dycke
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beethovenwasbeforemytimelyricschords.pro
+    imported_at: '2026-01-02'

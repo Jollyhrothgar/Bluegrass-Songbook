@@ -1,0 +1,17 @@
+id: i-am-resolved
+title: I Am Resolved
+artist: Jamie Dailey and Darrin Vincent
+composers:
+- Lewis Hartsough and Gary Lanier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iamresolvedlyricschords.pro
+    imported_at: '2026-01-02'

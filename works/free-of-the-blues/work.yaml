@@ -1,0 +1,17 @@
+id: free-of-the-blues
+title: Free of the Blues
+artist: Webb Pierce
+composers:
+- D. C. Mullins and Webb Pierce
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: freeoftheblueslyricsandchords.pro
+    imported_at: '2026-01-02'

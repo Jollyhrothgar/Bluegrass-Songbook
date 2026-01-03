@@ -1,0 +1,15 @@
+id: don-t-tell-a-soul-i-love-you
+title: Don't Tell A Soul I Love You
+artist: Billy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttellasouliloveyoulyricschords.pro
+    imported_at: '2026-01-02'

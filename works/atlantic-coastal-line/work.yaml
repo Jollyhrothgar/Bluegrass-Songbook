@@ -1,0 +1,18 @@
+id: atlantic-coastal-line
+title: Atlantic Coastal Line
+artist: Charley Pride
+composers:
+- Mel Tillis and Fred Burch
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atlanticcoastallinelyricschords.pro
+    imported_at: '2026-01-02'

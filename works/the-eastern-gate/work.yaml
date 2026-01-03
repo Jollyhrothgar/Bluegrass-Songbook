@@ -1,0 +1,17 @@
+id: the-eastern-gate
+title: The Eastern Gate
+artist: Jimmie Davis
+composers:
+- Isaiah G. Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theeasterngatelyricschords.pro
+    imported_at: '2026-01-02'

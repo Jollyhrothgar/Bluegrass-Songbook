@@ -1,0 +1,17 @@
+id: carolina-moon
+title: Carolina Moon
+artist: Jimmy Dean
+composers:
+- Benny Davis and Joe Bruke
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carolinamoonlyricschords.pro
+    imported_at: '2026-01-02'

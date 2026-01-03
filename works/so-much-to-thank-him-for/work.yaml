@@ -1,0 +1,17 @@
+id: so-much-to-thank-him-for
+title: So Much to Thank Him For
+artist: Kevin Spencer
+composers:
+- Robert Deel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somuchtothankhimforlyricschords.pro
+    imported_at: '2026-01-02'

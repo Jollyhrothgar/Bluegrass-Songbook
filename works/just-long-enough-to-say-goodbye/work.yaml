@@ -1,0 +1,18 @@
+id: just-long-enough-to-say-goodbye
+title: Just Long Enough To Say Goodbye
+artist: Mickey Gilley
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justlongenoughtosaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

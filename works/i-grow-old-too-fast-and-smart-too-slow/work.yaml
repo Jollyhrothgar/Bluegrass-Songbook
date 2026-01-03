@@ -1,0 +1,17 @@
+id: i-grow-old-too-fast-and-smart-too-slow
+title: I Grow Old Too Fast And Smart Too Slow
+artist: Johnny Paycheck
+composers:
+- John Raymond Long
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igrowoldtoofastandsmarttooslowlyricschords.pro
+    imported_at: '2026-01-02'

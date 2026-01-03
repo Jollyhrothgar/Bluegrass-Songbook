@@ -1,0 +1,17 @@
+id: i-believe-in-a-hill-called-mount-calvary
+title: I Believe in a Hill Called Mount Calvary
+artist: The Booth Brothers
+composers:
+- William J. Gaither, Gloria Gaither, Dale Oldham
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibelieveinahillcalledmountcalvarylyricschords.pro
+    imported_at: '2026-01-02'

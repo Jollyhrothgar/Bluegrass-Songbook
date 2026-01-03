@@ -1,0 +1,17 @@
+id: tomorrow-s-gonna-be-better-than-today
+title: Tomorrow's Gonna Be Better Than Today
+artist: Bob Luman
+composers:
+- Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tomorrowsgonnabebetterthantodaylyricschords.pro
+    imported_at: '2026-01-02'

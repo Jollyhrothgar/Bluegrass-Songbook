@@ -1,0 +1,17 @@
+id: judge-my-soul-again
+title: Judge My Soul Again
+artist: Johnny Burke
+composers:
+- Bardon Yorke
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: judgemysoulagainlyricschords.pro
+    imported_at: '2026-01-02'

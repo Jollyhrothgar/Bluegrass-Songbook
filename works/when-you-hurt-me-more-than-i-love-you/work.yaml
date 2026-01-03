@@ -1,0 +1,17 @@
+id: when-you-hurt-me-more-than-i-love-you
+title: When You Hurt Me More Than I Love You
+artist: Lynn Anderson
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyouhurtmemorethaniloveyoulyricschords.pro
+    imported_at: '2026-01-02'

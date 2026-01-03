@@ -1,0 +1,17 @@
+id: wherever-you-are
+title: Wherever You Are
+artist: Jean Shepard
+composers:
+- Richard Johnson and Jan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whereveryouarelyricsandchords.pro
+    imported_at: '2026-01-02'

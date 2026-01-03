@@ -1,0 +1,18 @@
+id: one-step-at-a-time
+title: One Step At A Time
+artist: George Strait
+composers:
+- Earl Clark and Luke Reed
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onestepatatimelyricsandchords.pro
+    imported_at: '2026-01-02'

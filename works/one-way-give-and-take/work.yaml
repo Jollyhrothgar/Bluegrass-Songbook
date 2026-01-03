@@ -1,0 +1,18 @@
+id: one-way-give-and-take
+title: One Way Give And Take
+artist: Billy Walker
+composers:
+- Tompall Glaser
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onewaygiveandtakelyricschords.pro
+    imported_at: '2026-01-02'

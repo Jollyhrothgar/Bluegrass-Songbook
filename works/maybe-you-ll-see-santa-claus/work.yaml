@@ -1,0 +1,13 @@
+id: maybe-you-ll-see-santa-claus
+title: Maybe You'll See Santa Claus
+artist: Liz Anderson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maybeyoullseesantaclauslyricschords.pro
+    imported_at: '2026-01-02'

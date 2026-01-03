@@ -1,0 +1,17 @@
+id: no-deal
+title: No Deal
+artist: Moe Bandy
+composers:
+- Larry Gatlin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nodeallyricschords.pro
+    imported_at: '2026-01-02'

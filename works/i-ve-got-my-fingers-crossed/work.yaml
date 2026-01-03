@@ -1,0 +1,15 @@
+id: i-ve-got-my-fingers-crossed
+title: I've Got My Fingers Crossed
+artist: Webb Pierce
+composers:
+- Wayne P. Walker and George McCormick
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotmyfingerscrossedlyricschords.pro
+    imported_at: '2026-01-02'

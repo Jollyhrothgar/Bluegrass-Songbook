@@ -1,0 +1,17 @@
+id: a-dark-road-is-a-hard-road-to-travel
+title: A Dark Road Is A Hard Road To Travel
+artist: Tommy Brown and the County Line Grass
+composers:
+- G.B. Grayson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: adarkroadisahardroadtotravellyricschords.pro
+    imported_at: '2026-01-02'

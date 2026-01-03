@@ -1,0 +1,17 @@
+id: the-holy-city
+title: The Holy City
+artist: Doyle Lawson
+composers:
+- Eddie Burns and S. Newkirk
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theholycitylyricschords.pro
+    imported_at: '2026-01-02'

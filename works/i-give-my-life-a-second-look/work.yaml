@@ -1,0 +1,15 @@
+id: i-give-my-life-a-second-look
+title: I Give My Life A Second Look
+artist: Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igivemylifeasecondlooklyricschords.pro
+    imported_at: '2026-01-02'

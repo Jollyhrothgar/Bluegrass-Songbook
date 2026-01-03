@@ -1,0 +1,17 @@
+id: going-somewhere-to-forget
+title: Going Somewhere To Forget
+artist: David Ball
+composers:
+- Jim Weatherly and David Ball
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goingsomewheretoforgetlyricschords.pro
+    imported_at: '2026-01-02'

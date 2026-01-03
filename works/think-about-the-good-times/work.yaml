@@ -1,0 +1,18 @@
+id: think-about-the-good-times
+title: Think About the Good Times
+artist: Lee Greenwood
+composers:
+- Sidney Barnes and Jerome Jackson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thinkaboutthegoodtimeslyricschords.pro
+    imported_at: '2026-01-02'

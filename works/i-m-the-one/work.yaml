@@ -1,0 +1,17 @@
+id: i-m-the-one
+title: I'm The One
+artist: Ricky Van Shelton
+composers:
+- Gary Nicholson and Terry McBride
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imtheonelyricschords.pro
+    imported_at: '2026-01-02'

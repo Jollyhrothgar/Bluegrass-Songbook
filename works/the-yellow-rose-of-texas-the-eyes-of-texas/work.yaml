@@ -1,0 +1,19 @@
+id: the-yellow-rose-of-texas-the-eyes-of-texas
+title: The Yellow Rose Of Texas/The Eyes Of Texas
+artist: Elvis Presley
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theyellowroseoftexastheeyesoftexaslyricschords.pro
+    imported_at: '2026-01-02'

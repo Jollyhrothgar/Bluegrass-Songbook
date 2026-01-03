@@ -1,0 +1,17 @@
+id: the-king-is-gone-so-are-you
+title: The King Is Gone So Are You
+artist: George Jones
+composers:
+- Roger Ferris
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thekingisgonesoareyoulyricschords.pro
+    imported_at: '2026-01-02'

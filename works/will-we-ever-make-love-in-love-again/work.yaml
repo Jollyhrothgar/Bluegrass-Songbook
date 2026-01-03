@@ -1,0 +1,17 @@
+id: will-we-ever-make-love-in-love-again
+title: Will We Ever Make Love In Love Again
+artist: Barbara Mandrell
+composers:
+- Bud Reneau and Sarah Johns
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willweevermakeloveinloveagainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: standing-on-the-promises
+title: Standing on the Promises
+artist: Jeanne Pruett
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: standingonthepromiseslyricschords.pro
+    imported_at: '2026-01-02'

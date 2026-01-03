@@ -1,0 +1,17 @@
+id: way-beyond-the-blue
+title: Way Beyond The Blue
+artist: Alan Jackson
+composers:
+- Mark D. Sanders, Randy Albright, Lisa Silver
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waybeyondthebluelyricschords.pro
+    imported_at: '2026-01-02'

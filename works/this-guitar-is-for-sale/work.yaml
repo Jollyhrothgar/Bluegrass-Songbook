@@ -1,0 +1,15 @@
+id: this-guitar-is-for-sale
+title: This Guitar Is For Sale
+artist: Bobby Bare
+composers:
+- Shel Silverstein and Fred Koller
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisguitarisforsalelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-gonna-be-a-swinger
+title: I'm Gonna Be A Swinger
+artist: Webb Pierce
+composers:
+- Webb Pierce and Eugene Ward
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnabeaswingerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-make-it-hard-to-lose
+title: I Make It Hard To Lose
+artist: John Anderson
+composers:
+- Mark Geronimo
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imakeithardtoloselyricschords.pro
+    imported_at: '2026-01-02'

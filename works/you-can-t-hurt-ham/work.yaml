@@ -1,0 +1,21 @@
+id: you-can-t-hurt-ham
+title: You Can't Hurt Ham
+artist: Ricky Skaggs
+composers:
+- Gordon Kennedy and Ricky Skaggs
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanthurthamlyricschords.pro
+    imported_at: '2026-01-02'

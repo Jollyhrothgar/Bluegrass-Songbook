@@ -1,0 +1,18 @@
+id: 16th-avenue
+title: 16th Avenue
+artist: Lacy J. Dalton
+composers:
+- Thom Schuyler
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 16thavenuelyricschords.pro
+    imported_at: '2026-01-02'

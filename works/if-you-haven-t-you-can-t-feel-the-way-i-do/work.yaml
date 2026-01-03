@@ -1,0 +1,17 @@
+id: if-you-haven-t-you-can-t-feel-the-way-i-do
+title: If You Haven't You Can't Feel The Way I Do
+artist: Jean Shepard
+composers:
+- Bill Carver
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouhaventyoucantfeelthewayidolyricschords.pro
+    imported_at: '2026-01-02'

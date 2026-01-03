@@ -1,0 +1,15 @@
+id: she-s-no-honky-tonk-angel
+title: She's No Honky-Tonk Angel
+artist: Mel Street
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesnohonkytonkangellyricschords.pro
+    imported_at: '2026-01-02'

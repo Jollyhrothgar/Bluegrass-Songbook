@@ -1,0 +1,17 @@
+id: missing-her-blues
+title: Missing Her Blues
+artist: David Ball
+composers:
+- David Ball and Luke Reed
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: missingherblueslyricschords.pro
+    imported_at: '2026-01-02'

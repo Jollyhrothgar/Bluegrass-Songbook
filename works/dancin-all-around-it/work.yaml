@@ -1,0 +1,15 @@
+id: dancin-all-around-it
+title: Dancin' All Around It
+artist: Alan Jackson
+composers:
+- Carson Chamberlain, Brian Tabor, Michael White
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dancinallarounditlyricschords.pro
+    imported_at: '2026-01-02'

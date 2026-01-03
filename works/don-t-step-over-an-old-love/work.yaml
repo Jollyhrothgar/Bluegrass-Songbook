@@ -1,0 +1,17 @@
+id: don-t-step-over-an-old-love
+title: Don't Step Over An Old Love
+artist: Stanley Brothers
+composers:
+- Fred Stryker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontstepoveranoldlovelyricschords.pro
+    imported_at: '2026-01-02'

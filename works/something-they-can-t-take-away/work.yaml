@@ -1,0 +1,19 @@
+id: something-they-can-t-take-away
+title: Something They Can't Take Away
+artist: Roy Orbison
+composers:
+- Kris Kristofferson
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingtheycanttakeawaylyricschords.pro
+    imported_at: '2026-01-02'

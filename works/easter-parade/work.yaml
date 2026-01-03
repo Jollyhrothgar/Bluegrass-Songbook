@@ -1,0 +1,18 @@
+id: easter-parade
+title: Easter Parade
+artist: Hank Snow
+composers:
+- Irving Berlin
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easterparadelyricschords.pro
+    imported_at: '2026-01-02'

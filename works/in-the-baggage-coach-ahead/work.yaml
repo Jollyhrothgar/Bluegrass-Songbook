@@ -1,0 +1,15 @@
+id: in-the-baggage-coach-ahead
+title: In The Baggage Coach Ahead
+artist: Mac Wiseman
+composers:
+- Gussie L. Davis
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthebaggagecoachaheadlyricschords.pro
+    imported_at: '2026-01-02'

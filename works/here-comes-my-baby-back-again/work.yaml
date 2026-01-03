@@ -1,0 +1,17 @@
+id: here-comes-my-baby-back-again
+title: Here Comes My Baby Back Again
+artist: Dottie West
+composers:
+- Bill West and Dottie West
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: herecomesmybabybackagainlyricschords.pro
+    imported_at: '2026-01-02'

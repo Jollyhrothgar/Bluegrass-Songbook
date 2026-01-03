@@ -1,0 +1,17 @@
+id: why-don-t-you-love-me
+title: Why Don't You Love Me
+artist: Hank Williams
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydontyoulovemelyricschords.pro
+    imported_at: '2026-01-02'

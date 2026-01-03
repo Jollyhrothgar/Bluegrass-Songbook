@@ -1,0 +1,17 @@
+id: what-s-one-more-time
+title: What's One More Time
+artist: Ronnie Milsap
+composers:
+- Jim Weatherly
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatsonemoretimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-can-hear-my-heart-break
+title: I Can Hear My Heart Break
+artist: Conway Twitty
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanhearmyheartbreaklyricschords.pro
+    imported_at: '2026-01-02'

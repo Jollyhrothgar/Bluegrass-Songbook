@@ -1,0 +1,18 @@
+id: allergic-to-the-blues
+title: Allergic To The Blues
+artist: Randy Travis
+composers:
+- Alan Jackson and Jim McBride
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allergictotheblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-night-is-young
+title: The Night Is Young
+artist: George Strait
+composers:
+- Dean Dillon, Bubba Strait, George Strait
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenightisyounglyricschords.pro
+    imported_at: '2026-01-02'

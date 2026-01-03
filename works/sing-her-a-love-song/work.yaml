@@ -1,0 +1,17 @@
+id: sing-her-a-love-song
+title: Sing Her A Love Song
+artist: Carl Smith
+composers:
+- Arthur Smith and James Pritchett
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singheralovesonglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-live-in-the-past
+title: I Live in the Past
+artist: Bill Monroe
+composers:
+- Virginia Stauffer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iliveinthepastlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: stand-by-your-man
+title: Stand by Your Man
+artist: Tammy Wynette
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: standbyyourmanlyricschords.pro
+    imported_at: '2026-01-02'

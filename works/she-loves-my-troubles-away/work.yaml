@@ -1,0 +1,18 @@
+id: she-loves-my-troubles-away
+title: She Loves My Troubles Away
+artist: John Conlee
+composers:
+- Max D. Barnes and Rayburn Anthony
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shelovesmytroublesawaylyricschords.pro
+    imported_at: '2026-01-02'

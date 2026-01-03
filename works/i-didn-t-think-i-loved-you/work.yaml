@@ -1,0 +1,15 @@
+id: i-didn-t-think-i-loved-you
+title: I Didn't Think I Loved You
+artist: Moe Bandy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ididntthinkilovedyoulyricschords.pro
+    imported_at: '2026-01-02'

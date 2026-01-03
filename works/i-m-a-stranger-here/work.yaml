@@ -1,0 +1,17 @@
+id: i-m-a-stranger-here
+title: I'm A Stranger Here
+artist: Mac Wiseman
+composers:
+- Brownie McGhee, Sonny Terry,
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imastrangerherelyricschords.pro
+    imported_at: '2026-01-02'

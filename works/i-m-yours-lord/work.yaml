@@ -1,0 +1,17 @@
+id: i-m-yours-lord
+title: I'm Yours Lord
+artist: Barbara Mandrell
+composers:
+- Gary Chapman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imyourslordlyricschords.pro
+    imported_at: '2026-01-02'

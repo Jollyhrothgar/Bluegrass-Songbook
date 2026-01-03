@@ -1,0 +1,17 @@
+id: tie-me-to-your-apron-strings-again-lyrics-and-chords
+title: Tie Me To Your Apron Strings Again Lyrics and Chords
+artist: Eddy Arnold
+composers:
+- Larry Shay and Joe Goodwin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tiemetoyourapronstringsagainlyricschords.pro
+    imported_at: '2026-01-02'

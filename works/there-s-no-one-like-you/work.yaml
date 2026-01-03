@@ -1,0 +1,19 @@
+id: there-s-no-one-like-you
+title: There's No One Like You
+artist: Mickey Gilley
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnoonelikeyoulyricschords.pro
+    imported_at: '2026-01-02'

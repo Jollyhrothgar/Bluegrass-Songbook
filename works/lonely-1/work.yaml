@@ -1,0 +1,19 @@
+id: lonely-1
+title: Lonely
+artist: Hank Snow
+composers:
+- Lynne Cowan
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelylyricschords.pro
+    imported_at: '2026-01-02'

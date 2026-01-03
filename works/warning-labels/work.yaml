@@ -1,0 +1,18 @@
+id: warning-labels
+title: Warning Labels
+artist: Doug Stone
+composers:
+- Kim Williams and Oscar Turman
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: warninglabelslyricschords.pro
+    imported_at: '2026-01-02'

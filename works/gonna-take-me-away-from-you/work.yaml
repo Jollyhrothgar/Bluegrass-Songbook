@@ -1,0 +1,17 @@
+id: gonna-take-me-away-from-you
+title: Gonna Take Me Away From You
+artist: George Jones
+composers:
+- George Jones and Darrell Edwards
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnatakemeawayfromyoulyricschords.pro
+    imported_at: '2026-01-02'

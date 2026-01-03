@@ -1,0 +1,18 @@
+id: i-still-believe-in-you
+title: I Still Believe In You
+artist: Vince Gill
+composers:
+- John Jarvis and Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: istillbelieveinyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: once-more-with-feeling
+title: Once More With Feeling
+artist: Willie Nelson
+composers:
+- Shirley Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oncemorewithfeelinglyricsandchords.pro
+    imported_at: '2026-01-02'

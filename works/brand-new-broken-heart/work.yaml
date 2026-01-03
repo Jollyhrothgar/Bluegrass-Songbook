@@ -1,0 +1,18 @@
+id: brand-new-broken-heart
+title: Brand New Broken Heart
+artist: Jimmy Martin
+composers:
+- Larry Sparks and H. Smith
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brandnewbrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

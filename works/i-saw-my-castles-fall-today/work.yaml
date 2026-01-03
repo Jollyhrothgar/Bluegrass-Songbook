@@ -1,0 +1,18 @@
+id: i-saw-my-castles-fall-today
+title: I Saw My Castles Fall Today
+artist: Ray Price
+composers:
+- Rex Griffin and Ray Price
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isawmycastlesfalltodaylyricschords.pro
+    imported_at: '2026-01-02'

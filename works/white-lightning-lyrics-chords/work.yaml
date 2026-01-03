@@ -1,0 +1,17 @@
+id: white-lightning-lyrics-chords
+title: White Lightning Lyrics Chords
+artist: George Jones
+composers:
+- J.P. Richardson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whitelightninglyricschords.pro
+    imported_at: '2026-01-02'

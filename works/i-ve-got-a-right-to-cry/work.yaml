@@ -1,0 +1,17 @@
+id: i-ve-got-a-right-to-cry
+title: I've Got A Right To Cry
+artist: Hank Williams Jr.
+composers:
+- Joe Liggins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotarighttocrylyricschords.pro
+    imported_at: '2026-01-02'

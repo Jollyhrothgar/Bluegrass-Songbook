@@ -1,0 +1,18 @@
+id: way-back-in-the-mountains
+title: Way Back In The Mountains
+artist: Merle Haggard
+composers:
+- Max D. Barnes and Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waybackinthemountainslyricschords.pro
+    imported_at: '2026-01-02'

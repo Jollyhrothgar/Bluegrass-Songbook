@@ -1,0 +1,20 @@
+id: too-much-to-gain-to-lose
+title: Too Much To Gain To Lose
+artist: Jerry Lee Lewis
+composers:
+- Dottie Rambo
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomuchtogaintoloselyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: caught-in-the-middle-of-two-hearts
+title: Caught In The Middle Of Two Hearts
+artist: Hawkshaw Hawkins
+composers:
+- Ray Pennington
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: caughtinthemiddleoftwoheartslyricschords.pro
+    imported_at: '2026-01-02'

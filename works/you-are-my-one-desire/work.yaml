@@ -1,0 +1,18 @@
+id: you-are-my-one-desire
+title: You Are My One Desire
+artist: Buddy Holly
+composers:
+- Don Guess
+default_key: G
+tags:
+- Rockabilly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youaremyonedesirelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: say-you-ll-stay-until-tomorrow
+title: Say You'll Stay Until Tomorrow
+artist: Slim Whitman
+composers:
+- Roger Greenaway and Barry Mason
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sayyoullstatuntiltomorrowlyricschords.pro
+    imported_at: '2026-01-02'

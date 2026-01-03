@@ -1,0 +1,17 @@
+id: i-ll-go-get-the-tool-box
+title: I'll Go Get The Tool Box
+artist: Stonewall Jackson
+composers:
+- Gene Crysler
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illgogetthetoolboxlyricschords.pro
+    imported_at: '2026-01-02'

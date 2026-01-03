@@ -1,0 +1,17 @@
+id: i-watched-an-angel-going-through-hell
+title: I Watched An Angel (Going Through Hell)
+artist: Johnny Duncan
+composers:
+- Don Goodman and Mark Sherrill
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwatchedanangelgoingthroughhelllyricschords.pro
+    imported_at: '2026-01-02'

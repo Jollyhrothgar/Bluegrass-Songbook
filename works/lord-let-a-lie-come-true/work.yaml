@@ -1,0 +1,17 @@
+id: lord-let-a-lie-come-true
+title: Lord Let A Lie Come True
+artist: Johnny Bush
+composers:
+- Dallas Frazier and Sanger D. Shafer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lordletaliecometruelyricschords.pro
+    imported_at: '2026-01-02'

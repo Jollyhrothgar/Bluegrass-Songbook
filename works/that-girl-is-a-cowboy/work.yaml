@@ -1,0 +1,18 @@
+id: that-girl-is-a-cowboy
+title: That Girl Is A Cowboy
+artist: Garth Brooks
+composers:
+- Richie Brown, Jerrod Niemann, Garth Brooks
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatgirlisacowboylyricschords.pro
+    imported_at: '2026-01-02'

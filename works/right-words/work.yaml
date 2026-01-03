@@ -1,0 +1,12 @@
+id: right-words
+title: Right Words
+artist: Jim Reeves
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rightwordslyricschords.pro
+    imported_at: '2026-01-02'

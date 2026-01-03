@@ -1,0 +1,21 @@
+id: every-drop-of-water
+title: Every Drop Of Water
+artist: Ricky Skaggs
+composers:
+- Steve Seskin and Allen Shamblin
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everydropofwaterlyricschords.pro
+    imported_at: '2026-01-02'

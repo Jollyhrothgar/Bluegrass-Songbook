@@ -1,0 +1,17 @@
+id: you-ain-t-never-been-to-texas
+title: You Ain't Never Been to Texas
+artist: Johnny Lee
+composers:
+- Roger Springer, Tony Raymee, Jerry Lane
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youaintneverbeentotexaslyricschords.pro
+    imported_at: '2026-01-02'

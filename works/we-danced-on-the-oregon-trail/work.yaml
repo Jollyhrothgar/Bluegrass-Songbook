@@ -1,0 +1,15 @@
+id: we-danced-on-the-oregon-trail
+title: We Danced On The Oregon Trail
+artist: Red Steagall
+composers:
+- Red Steagall and Richard O'Brien
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wedancedontheoregontraillyricschords.pro
+    imported_at: '2026-01-02'

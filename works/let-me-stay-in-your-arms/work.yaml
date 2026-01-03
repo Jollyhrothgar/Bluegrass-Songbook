@@ -1,0 +1,17 @@
+id: let-me-stay-in-your-arms
+title: Let Me Stay In Your Arms
+artist: Don Gibson
+composers:
+- J.D. Miller and Jimmy C. Newman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmestayinyourarmslyricschords.pro
+    imported_at: '2026-01-02'

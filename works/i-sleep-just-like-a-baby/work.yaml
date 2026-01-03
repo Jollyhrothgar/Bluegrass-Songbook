@@ -1,0 +1,17 @@
+id: i-sleep-just-like-a-baby
+title: I Sleep Just Like A Baby
+artist: George Jones
+composers:
+- J. Chambers, B. Sherrill, L. Jenkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isleepjustlikeababylyricschords.pro
+    imported_at: '2026-01-02'

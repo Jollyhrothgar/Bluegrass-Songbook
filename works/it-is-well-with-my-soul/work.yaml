@@ -1,0 +1,17 @@
+id: it-is-well-with-my-soul
+title: It Is Well With My Soul
+artist: Joey Feek
+composers:
+- Horatio G. Spafford, Philip P. Bliss
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itiswellwithmysoullyricschords.pro
+    imported_at: '2026-01-02'

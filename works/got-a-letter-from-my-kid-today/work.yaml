@@ -1,0 +1,15 @@
+id: got-a-letter-from-my-kid-today
+title: Got A Letter From My Kid Today
+artist: Bob Wills
+composers:
+- Alex Kramer, Hy Zaret, Joan Whitney
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gotaletterfrommykidtodaylyricschords.pro
+    imported_at: '2026-01-02'

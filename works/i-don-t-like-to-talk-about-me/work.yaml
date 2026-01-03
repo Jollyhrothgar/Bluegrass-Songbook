@@ -1,0 +1,15 @@
+id: i-don-t-like-to-talk-about-me
+title: I Don't Like to Talk About Me
+artist: Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontliketotalkaboutmelyricschords.pro
+    imported_at: '2026-01-02'

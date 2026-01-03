@@ -1,0 +1,17 @@
+id: honey-i-love-you
+title: Honey I Love You
+artist: Boxcar Willie
+composers:
+- Lloene S. Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honeyiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

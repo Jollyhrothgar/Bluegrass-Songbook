@@ -1,0 +1,21 @@
+id: where-no-one-stands-alone
+title: Where No One Stands Alone
+artist: Elvis Presley
+composers:
+- Mosie Lister
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherenoonestandsalonelyricsandchords.pro
+    imported_at: '2026-01-02'

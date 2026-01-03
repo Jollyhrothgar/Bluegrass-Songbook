@@ -1,0 +1,20 @@
+id: no-particular-place-to-go
+title: No Particular Place To Go
+artist: Jerry Lee Lewis
+composers:
+- Chuck Berry
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noparticularplacetogolyricschords.pro
+    imported_at: '2026-01-02'

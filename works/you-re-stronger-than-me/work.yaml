@@ -1,0 +1,18 @@
+id: you-re-stronger-than-me
+title: You're Stronger Than Me
+artist: George Strait
+composers:
+- Hank Cochran and Jimmy Key
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourestrongerthanmelyricsandchords.pro
+    imported_at: '2026-01-02'

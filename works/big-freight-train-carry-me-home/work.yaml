@@ -1,0 +1,15 @@
+id: big-freight-train-carry-me-home
+title: Big Freight Train Carry Me Home
+artist: Boxcar Willie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigfreighttraincarrymehomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-be-your-stepping-stone
+title: I'll Be Your Stepping Stone
+artist: J.D. Crowe
+composers:
+- Bobby Hart, Sonny Thompson, Tommy Boyce
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbeyoursteppingstonelyricsandchords.pro
+    imported_at: '2026-01-02'

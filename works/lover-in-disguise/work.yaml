@@ -1,0 +1,19 @@
+id: lover-in-disguise
+title: Lover In Disguise
+artist: George Strait
+composers:
+- Blake Mevis and Jim Dowell
+default_key: Am
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loverindisguiselyricschords.pro
+    imported_at: '2026-01-02'

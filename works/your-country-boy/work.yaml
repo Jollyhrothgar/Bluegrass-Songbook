@@ -1,0 +1,17 @@
+id: your-country-boy
+title: Your Country Boy
+artist: Jimmy Dean
+composers:
+- Willie Nelson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourcountryboylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,22 @@
+id: melva-s-wine
+title: Melva's Wine
+artist: Johnny Cash
+composers:
+- Vincent Matthews
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: melvaswinelyricschords.pro
+    imported_at: '2026-01-02'

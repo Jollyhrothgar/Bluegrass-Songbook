@@ -1,0 +1,17 @@
+id: how-s-the-weather-in-tennessee
+title: How's The Weather In Tennessee
+artist: Eddy Arnold
+composers:
+- Jim Weatherly and John Durrill
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howstheweatherintennesseelyricschords.pro
+    imported_at: '2026-01-02'

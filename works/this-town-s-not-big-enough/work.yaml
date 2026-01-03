@@ -1,0 +1,18 @@
+id: this-town-s-not-big-enough
+title: This Town's Not Big Enough
+artist: Merle Haggard
+composers:
+- Liz Anderson and Donna Austin
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thistownsnotbigenoughlyricschords.pro
+    imported_at: '2026-01-02'

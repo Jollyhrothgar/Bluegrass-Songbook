@@ -1,0 +1,17 @@
+id: if-you-don-t-believe-i-love-you
+title: If You Don't Believe I Love You
+artist: Darrell McCall
+composers:
+- Gene Sutton and Darrell McCall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoudontbelieveiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

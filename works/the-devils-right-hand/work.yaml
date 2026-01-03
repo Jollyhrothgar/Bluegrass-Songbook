@@ -1,0 +1,17 @@
+id: the-devils-right-hand
+title: The Devil’s Right Hand
+artist: The Highwaymen
+composers:
+- Steve Earle
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedevilsrighthandlyricschords.pro
+    imported_at: '2026-01-02'

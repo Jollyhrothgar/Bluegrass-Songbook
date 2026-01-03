@@ -1,0 +1,17 @@
+id: how-deep-in-love-am-i
+title: How Deep In Love Am I
+artist: Johnny Lee
+composers:
+- Bob McDill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howdeepinloveamilyricschords.pro
+    imported_at: '2026-01-02'

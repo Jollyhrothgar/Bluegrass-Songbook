@@ -1,0 +1,18 @@
+id: i-ll-still-be-loving-you-this-much
+title: I'll Still Be Loving You This Much
+artist: Tammy Wynette
+composers:
+- Curly Putman and Bobby Borchers
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illstillbelovingyouthismuchlyricschords.pro
+    imported_at: '2026-01-02'

@@ -3935,8 +3935,8 @@ body.fullscreen-mode .header-controls {
     display: none;
 }
 
-/* Show nav bar in fullscreen mode */
-body.fullscreen-mode .song-nav-bar {
+/* Show nav bar in fullscreen mode only when there's a list context */
+body.fullscreen-mode .song-nav-bar.has-list-context {
     display: flex !important;
 }
 

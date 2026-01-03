@@ -1,0 +1,17 @@
+id: my-home
+title: My Home
+artist: Heirline
+composers:
+- Michael Wayne Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myhomelyricschords.pro
+    imported_at: '2026-01-02'

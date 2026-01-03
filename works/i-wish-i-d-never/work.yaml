@@ -1,0 +1,15 @@
+id: i-wish-i-d-never
+title: I Wish I'd Never
+artist: Carl Belew
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishidneverlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: he-s-only-everything
+title: He's Only Everything
+artist: Reba McEntire
+composers:
+- Billy Deaton and Faron Young
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesonlyeverythinglyricschords.pro
+    imported_at: '2026-01-02'

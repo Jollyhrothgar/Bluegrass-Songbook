@@ -1,0 +1,17 @@
+id: when-i-want-to-love-a-lady
+title: When I Want To Love A Lady
+artist: Bobby Bare
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheniwanttolovealadylyricschords.pro
+    imported_at: '2026-01-02'

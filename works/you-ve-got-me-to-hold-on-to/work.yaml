@@ -1,0 +1,17 @@
+id: you-ve-got-me-to-hold-on-to
+title: You've Got Me To Hold On To
+artist: Tanya Tucker
+composers:
+- Dave Loggins
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotmetoholdontolyricschords.pro
+    imported_at: '2026-01-02'

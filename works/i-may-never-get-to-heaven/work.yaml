@@ -1,0 +1,17 @@
+id: i-may-never-get-to-heaven
+title: I May Never Get to Heaven
+artist: Wanda Jackson
+composers:
+- Buddy Killen and Bill Anderson
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imaynevergettoheavenlyricschords.pro
+    imported_at: '2026-01-02'

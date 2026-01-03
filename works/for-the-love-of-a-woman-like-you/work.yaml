@@ -1,0 +1,17 @@
+id: for-the-love-of-a-woman-like-you
+title: For The Love Of A Woman Like You
+artist: Faron Young
+composers:
+- Jack Rhodes and Gertrude Cox
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fortheloveofawomanlikeyoulyricschords.pro
+    imported_at: '2026-01-02'

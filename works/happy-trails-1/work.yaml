@@ -1,0 +1,13 @@
+id: happy-trails-1
+title: Happy Trails
+artist: Roy Rogers and Dale Evans
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: happytrailslyricschords.pro
+    imported_at: '2026-01-02'

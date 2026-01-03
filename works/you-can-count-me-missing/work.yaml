@@ -1,0 +1,19 @@
+id: you-can-count-me-missing
+title: You Can Count Me Missing
+artist: Mickey Gilley
+composers:
+- John W. Gostick Jr. and Richard E. Westmoreland
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcancountmemissinglyricschords.pro
+    imported_at: '2026-01-02'

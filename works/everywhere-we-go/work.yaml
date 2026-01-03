@@ -1,0 +1,18 @@
+id: everywhere-we-go
+title: Everywhere We Go
+artist: Randy Travis
+composers:
+- Michael Curtis and Randy Travis
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everywherewegolyricschords.pro
+    imported_at: '2026-01-02'

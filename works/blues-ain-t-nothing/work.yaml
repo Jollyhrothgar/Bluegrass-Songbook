@@ -1,0 +1,17 @@
+id: blues-ain-t-nothing
+title: Blues Ain't Nothing
+artist: Ferlin Husky
+composers:
+- Hank Mills, Walter Haynes, Shorty Lavender
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluesaintnothinglyricschords.pro
+    imported_at: '2026-01-02'

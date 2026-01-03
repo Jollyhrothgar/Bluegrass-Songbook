@@ -1,0 +1,17 @@
+id: who-will-i-be-loving-now
+title: Who Will I Be Loving Now
+artist: George Jones
+composers:
+- Agnes Wilson and Carmol Taylor
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whowillibelovingnowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: love-or-hate
+title: Love Or Hate
+artist: Kitty Wells
+composers:
+- Jack Anglin, Jim Anglin, Johnny Wright
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveorhatelyricschords.pro
+    imported_at: '2026-01-02'

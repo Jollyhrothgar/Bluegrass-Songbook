@@ -1,0 +1,17 @@
+id: ruby-don-t-take-your-love-to-town
+title: Ruby Don't Take Your Love to Town
+artist: Mel Tillis
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rubydonttakeyourlovetotownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,22 @@
+id: the-reverend-mr-black
+title: The Reverend Mr. Black
+artist: Johnny Cash
+composers:
+- Billy Edd & Jed Peters
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thereverendmrblacklyricschords.pro
+    imported_at: '2026-01-02'

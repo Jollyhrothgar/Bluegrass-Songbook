@@ -1,0 +1,19 @@
+id: a-little-bit-in-love
+title: A Little Bit In Love
+artist: Patty Loveless
+composers:
+- Steve Earle
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittlebitinlovelyricschords.pro
+    imported_at: '2026-01-02'

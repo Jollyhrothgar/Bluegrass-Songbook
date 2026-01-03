@@ -1,0 +1,17 @@
+id: elizabeth-lyrics-with-chords
+title: Elizabeth Lyrics with Chords
+artist: Statler Brothers
+composers:
+- Jimmy Fortune
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: elizabethlyricsandchords.pro
+    imported_at: '2026-01-02'

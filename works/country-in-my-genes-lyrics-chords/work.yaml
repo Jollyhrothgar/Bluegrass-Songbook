@@ -1,0 +1,19 @@
+id: country-in-my-genes-lyrics-chords
+title: Country In My Genes Lyrics Chords
+artist: Loretta Lynn
+composers:
+- Larry Cordle, Betty Key, Larry Shell
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countryinmygeneslyricschords.pro
+    imported_at: '2026-01-02'

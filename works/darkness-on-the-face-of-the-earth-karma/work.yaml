@@ -1,0 +1,17 @@
+id: darkness-on-the-face-of-the-earth-karma
+title: Darkness On The Face Of The Earth Karma
+artist: Willie Nelson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darknessonthefaceoftheearthlyricschords.pro
+    imported_at: '2026-01-02'

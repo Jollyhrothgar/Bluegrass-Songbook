@@ -1,0 +1,17 @@
+id: what-am-i-gonna-do-girl
+title: What Am I Gonna Do Girl
+artist: Bobby Bare
+composers:
+- C. King and T. Stern
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatamigonnadogirllyricschords.pro
+    imported_at: '2026-01-02'

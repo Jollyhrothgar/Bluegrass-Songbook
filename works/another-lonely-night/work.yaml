@@ -1,0 +1,17 @@
+id: another-lonely-night
+title: Another Lonely Night
+artist: Carl Belew
+composers:
+- Carl Belew, Tommy Blake, W.S. Stevenson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anotherlonelynightlyricsandchords.pro
+    imported_at: '2026-01-02'

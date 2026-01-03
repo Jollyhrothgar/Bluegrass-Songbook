@@ -1,0 +1,17 @@
+id: my-dreams-lyrics-chords
+title: My Dreams Lyrics chords
+artist: Faron Young
+composers:
+- Herbert Duncan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mydreamslyricschords.pro
+    imported_at: '2026-01-02'

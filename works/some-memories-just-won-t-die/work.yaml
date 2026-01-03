@@ -1,0 +1,18 @@
+id: some-memories-just-won-t-die
+title: Some Memories Just Won't Die
+artist: Marty Robbins
+composers:
+- Bobby Springfield
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somememoriesjustwontdielyricschords.pro
+    imported_at: '2026-01-02'

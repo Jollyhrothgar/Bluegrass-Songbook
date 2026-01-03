@@ -1,0 +1,17 @@
+id: shady-streets
+title: Shady Streets
+artist: Gary Stewart
+composers:
+- Billy Ray Reynolds, Dickey Betts, Dan Toler
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shadystreetslyricschords.pro
+    imported_at: '2026-01-02'

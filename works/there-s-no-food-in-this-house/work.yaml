@@ -1,0 +1,18 @@
+id: there-s-no-food-in-this-house
+title: There's No Food In This House
+artist: Lefty Frizzell
+composers:
+- Merle Kilgore
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnofoodinthishouselyricschords.pro
+    imported_at: '2026-01-02'

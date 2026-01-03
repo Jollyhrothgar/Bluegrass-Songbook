@@ -1,0 +1,17 @@
+id: a-heart-full-of-love-1
+title: A Heart Full Of Love
+artist: Eddy Arnold
+composers:
+- Eddy Arnold, Steve Nelson, Roy Soehnel
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aheartfulloflovelyricschords.pro
+    imported_at: '2026-01-02'

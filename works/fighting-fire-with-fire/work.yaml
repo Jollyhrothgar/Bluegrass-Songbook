@@ -1,0 +1,17 @@
+id: fighting-fire-with-fire
+title: Fighting Fire With Fire
+artist: Gene Watson
+composers:
+- Bobby Harden
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fightingfirewithfirelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: no-memories-hanging-around
+title: No Memories Hanging Around
+artist: Bobby Bare & Roseanne Cash
+composers:
+- Rodney Crowell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nomemorieshangingaroundlyricschords.pro
+    imported_at: '2026-01-02'

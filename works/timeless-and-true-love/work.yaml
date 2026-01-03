@@ -1,0 +1,18 @@
+id: timeless-and-true-love
+title: Timeless And True Love
+artist: Rhonda Vincent
+composers:
+- Charlie Black, Buzz Cason, Austin Roberts
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timelessandtruelovelyricschords.pro
+    imported_at: '2026-01-02'

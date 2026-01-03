@@ -1,0 +1,17 @@
+id: kneel-at-the-feet-of-jesus
+title: Kneel At The Feet Of Jesus
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kneelatthefeetofJesuslyricschords.pro
+    imported_at: '2026-01-02'

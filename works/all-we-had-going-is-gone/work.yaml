@@ -1,0 +1,17 @@
+id: all-we-had-going-is-gone
+title: All We Had Going Is Gone
+artist: Wilburn Brothers
+composers:
+- Sharon Higgins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allwehadgoingisgonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: im-gonna-tie-one-on-tonight
+title: I’m Gonna Tie One On Tonight
+artist: Wilburn Brothers
+composers:
+- Lee Nichols
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnatieoneontonightlyricschords.pro
+    imported_at: '2026-01-02'

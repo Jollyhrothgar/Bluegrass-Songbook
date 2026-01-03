@@ -1,0 +1,17 @@
+id: leaving-on-a-jet-plane-1
+title: Leaving On A Jet Plane
+artist: The Kendalls
+composers:
+- John Denver
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leavingonajetplanelyricschords.pro
+    imported_at: '2026-01-02'

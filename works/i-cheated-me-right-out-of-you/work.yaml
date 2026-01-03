@@ -1,0 +1,17 @@
+id: i-cheated-me-right-out-of-you
+title: I Cheated Me Right Out Of You
+artist: Moe Bandy
+composers:
+- Bobby P. Parker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icheatedmerightoutofyoulyricschords.pro
+    imported_at: '2026-01-02'

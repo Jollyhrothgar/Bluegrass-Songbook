@@ -1,0 +1,18 @@
+id: you-can-t-hide-redneck
+title: You Can't Hide Redneck
+artist: Tracy Lawrence
+composers:
+- Casey Beathard and Daniel Demay
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanthiderednecklyricschords.pro
+    imported_at: '2026-01-02'

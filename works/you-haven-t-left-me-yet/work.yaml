@@ -1,0 +1,17 @@
+id: you-haven-t-left-me-yet
+title: You Haven't Left Me Yet
+artist: George Strait
+composers:
+- Kent M. Robbins and Dana Hunt
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youhaventleftmeyetlyricschords.pro
+    imported_at: '2026-01-02'

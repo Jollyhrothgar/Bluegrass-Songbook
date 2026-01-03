@@ -1,0 +1,19 @@
+id: a-new-moon-an-old-flame-and-you
+title: A New Moon An Old Flame And You
+artist: Anne Murray
+composers:
+- Barry Joseph Brown, Eric Edward Emerson
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anewmoonanoldflameandyoulyricschords.pro
+    imported_at: '2026-01-02'

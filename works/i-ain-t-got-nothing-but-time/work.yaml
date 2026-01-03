@@ -1,0 +1,19 @@
+id: i-ain-t-got-nothing-but-time
+title: I Ain't Got Nothing But Time
+artist: Hank Williams
+composers:
+- and recorded by Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iaintgotnothingbuttimelyricschords.pro
+    imported_at: '2026-01-02'

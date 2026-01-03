@@ -1,0 +1,18 @@
+id: i-can-do-that
+title: I Can Do That
+artist: Tanya Tucker
+composers:
+- Earl Clark, Jerry Laseter, David Stewart
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icandothatlyricschords.pro
+    imported_at: '2026-01-02'

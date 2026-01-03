@@ -1,0 +1,17 @@
+id: the-best-i-ever-had-1
+title: The Best I Ever Had
+artist: Billy Crash Craddock
+composers:
+- Ron Chancey and Dale Morris
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebestieverhadlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-dont-think-shes-in-love-anymore
+title: I Don’t Think She’s In Love Anymore
+artist: Charley Pride
+composers:
+- Kent Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontthinkshesinloveanymorelyricschords.pro
+    imported_at: '2026-01-02'

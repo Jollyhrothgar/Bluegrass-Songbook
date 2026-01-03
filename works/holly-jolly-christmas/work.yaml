@@ -1,0 +1,15 @@
+id: holly-jolly-christmas
+title: Holly Jolly Christmas
+artist: Burl Ives
+composers:
+- Johnny Marks
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hollyjollyChristmaslyricschords.pro
+    imported_at: '2026-01-02'

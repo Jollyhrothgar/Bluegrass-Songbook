@@ -1,0 +1,17 @@
+id: hands
+title: Hands
+artist: Crystal Gayle
+composers:
+- Sandy Mason and Bill Backer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: handslyricschords.pro
+    imported_at: '2026-01-02'

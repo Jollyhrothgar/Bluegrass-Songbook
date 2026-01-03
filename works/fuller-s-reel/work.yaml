@@ -1,0 +1,16 @@
+id: fuller-s-reel
+title: Fuller's Reel
+artist: Traditional
+composers:
+- Biography:Tom Fuller
+default_key: D
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

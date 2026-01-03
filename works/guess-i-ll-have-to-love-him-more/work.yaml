@@ -1,0 +1,17 @@
+id: guess-i-ll-have-to-love-him-more
+title: Guess I'll Have To Love Him More
+artist: Tanya Tucker
+composers:
+- Billy Sherrill and Glenn Sutton
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: guessillhavetolovehimmorelyricschords.pro
+    imported_at: '2026-01-02'

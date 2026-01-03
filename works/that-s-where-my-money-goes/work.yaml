@@ -1,0 +1,18 @@
+id: that-s-where-my-money-goes
+title: That's Where My Money Goes
+artist: Webb Pierce
+composers:
+- Mel Tillis and Buck Peddy
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswheremymoneygoeslyricschords.pro
+    imported_at: '2026-01-02'

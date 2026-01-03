@@ -1,0 +1,18 @@
+id: no-one-cared-so-much-for-me
+title: No One Cared So Much For Me
+artist: The Oak Ridge Boys
+composers:
+- Jim Hill
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noonecaredsomuchformelyricschords.pro
+    imported_at: '2026-01-02'

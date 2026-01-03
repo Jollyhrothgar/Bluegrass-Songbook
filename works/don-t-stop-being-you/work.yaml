@@ -1,0 +1,17 @@
+id: don-t-stop-being-you
+title: Don't Stop Being You
+artist: The Country Gentlemen
+composers:
+- Randall Hylton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontstopbeingyoulyricschords.pro
+    imported_at: '2026-01-02'

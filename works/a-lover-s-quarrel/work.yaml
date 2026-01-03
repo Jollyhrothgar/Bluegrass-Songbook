@@ -1,0 +1,17 @@
+id: a-lover-s-quarrel
+title: A Lover's Quarrel
+artist: George Morgan
+composers:
+- Newt Richardson and Vic McAlpin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aloversquarrellyricsandchords.pro
+    imported_at: '2026-01-02'

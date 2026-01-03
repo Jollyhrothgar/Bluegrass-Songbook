@@ -1,0 +1,17 @@
+id: tennessee-church-bells
+title: Tennessee Church Bells
+artist: Jimmy Wakely
+composers:
+- Dorothea Hahn and Wes McWain
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tennesseechurchbellslyricschords.pro
+    imported_at: '2026-01-02'

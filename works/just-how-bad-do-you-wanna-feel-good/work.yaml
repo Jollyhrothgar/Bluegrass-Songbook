@@ -1,0 +1,17 @@
+id: just-how-bad-do-you-wanna-feel-good
+title: Just How Bad Do You Wanna Feel Good
+artist: Keith Whitley
+composers:
+- Bill Caswell and Keith Whitley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justhowbaddoyouwannafeelgoodlyricschords.pro
+    imported_at: '2026-01-02'

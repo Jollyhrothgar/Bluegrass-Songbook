@@ -1,0 +1,17 @@
+id: don-t-your-memory-ever-sleep-at-night
+title: Don't Your Memory Ever Sleep at Night
+artist: Ronnie Milsap
+composers:
+- Randy Hatch and Steve Dean
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontyourmemoryeversleepatnightlyricschords.pro
+    imported_at: '2026-01-02'

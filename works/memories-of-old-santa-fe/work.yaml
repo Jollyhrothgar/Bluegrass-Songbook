@@ -1,0 +1,17 @@
+id: memories-of-old-santa-fe
+title: Memories Of Old Santa Fe
+artist: Randy Travis
+composers:
+- Roger Brown and Rick Peoples
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: memoriesofoldsantafelyricschords.pro
+    imported_at: '2026-01-02'

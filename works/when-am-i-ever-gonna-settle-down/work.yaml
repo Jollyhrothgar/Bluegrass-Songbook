@@ -1,0 +1,17 @@
+id: when-am-i-ever-gonna-settle-down
+title: When Am I Ever Gonna Settle Down
+artist: Bobby Bare
+composers:
+- John Lomax and Artie Large
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenamievergonnasettledownlyricschords.pro
+    imported_at: '2026-01-02'

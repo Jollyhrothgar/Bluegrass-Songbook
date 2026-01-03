@@ -1,0 +1,18 @@
+id: tony-s-tank-up-drive-in-cafe
+title: Tony's Tank Up Drive In Cafe
+artist: Hank Thompson
+composers:
+- Royce Glenn Sutton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tonystankupdriveincafelyricschords.pro
+    imported_at: '2026-01-02'

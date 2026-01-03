@@ -1,0 +1,17 @@
+id: secrets-of-my-heart
+title: Secrets Of My Heart
+artist: Hawkshaw Hawkins
+composers:
+- Harry McAuliffe and Bobby Gregory
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: secretsofmyheartlyricschords.pro
+    imported_at: '2026-01-02'

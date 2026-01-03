@@ -1,0 +1,17 @@
+id: lovin-you-the-way-i-do
+title: Lovin' You The Way I Do
+artist: Hank Locklin
+composers:
+- Ben Peters
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovinyouthewayidolyricschords.pro
+    imported_at: '2026-01-02'

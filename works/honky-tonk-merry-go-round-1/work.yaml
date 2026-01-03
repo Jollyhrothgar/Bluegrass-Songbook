@@ -1,0 +1,20 @@
+id: honky-tonk-merry-go-round-1
+title: Honky Tonk Merry Go Round
+artist: Patsy Cline
+composers:
+- Frank Simon &amp; Stan Gardner
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkmerrygoroundlyricschords.pro
+    imported_at: '2026-01-02'

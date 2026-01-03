@@ -1,0 +1,17 @@
+id: lightning-express
+title: Lightning Express
+artist: Everly Brothers
+composers:
+- Bradly Kincaid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lightningexpresslyricschords.pro
+    imported_at: '2026-01-02'

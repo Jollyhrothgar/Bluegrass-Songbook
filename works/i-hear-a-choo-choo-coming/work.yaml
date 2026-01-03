@@ -1,0 +1,17 @@
+id: i-hear-a-choo-choo-coming
+title: I Hear A Choo Choo Coming
+artist: Stanley Brothers
+composers:
+- Ralph Stanley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihearachoochoocominglyricschords.pro
+    imported_at: '2026-01-02'

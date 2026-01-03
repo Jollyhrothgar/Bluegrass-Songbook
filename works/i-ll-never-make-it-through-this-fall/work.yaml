@@ -1,0 +1,15 @@
+id: i-ll-never-make-it-through-this-fall
+title: I'll Never Make It Through This Fall
+artist: David Ball
+composers:
+- William Collins Spencer and David Ball
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illnevermakeitthroughthisfalllyricschords.pro
+    imported_at: '2026-01-02'

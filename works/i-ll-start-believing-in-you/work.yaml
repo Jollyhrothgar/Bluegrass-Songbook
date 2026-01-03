@@ -1,0 +1,16 @@
+id: i-ll-start-believing-in-you
+title: I'll Start Believing In You
+artist: Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illstartbelievinginyoulyricschords.pro
+    imported_at: '2026-01-02'

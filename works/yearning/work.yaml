@@ -1,0 +1,15 @@
+id: yearning
+title: Yearning
+artist: Bob Wills
+composers:
+- Benny Davis and Joe Burke
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yearninglyricsandchords.pro
+    imported_at: '2026-01-02'

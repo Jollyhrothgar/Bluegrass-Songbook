@@ -1,0 +1,17 @@
+id: not-really-living-at-all
+title: Not Really Living At All
+artist: Bill Anderson
+composers:
+- Carl Watson and Del Trolinder
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notreallylivingatalllyricschords.pro
+    imported_at: '2026-01-02'

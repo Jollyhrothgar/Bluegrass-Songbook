@@ -1,0 +1,19 @@
+id: careless-darling
+title: Careless Darling
+artist: Ernest Tubb
+composers:
+- Ernest Tubb, Lou Wayne, Bob Shelton
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carelessdarlinglyricschords.pro
+    imported_at: '2026-01-02'

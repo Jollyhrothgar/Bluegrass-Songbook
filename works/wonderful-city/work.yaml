@@ -1,0 +1,18 @@
+id: wonderful-city
+title: Wonderful City
+artist: Ernest Tubb
+composers:
+- Jimmie Rodgers
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wonderfulcitylyricschords.pro
+    imported_at: '2026-01-02'

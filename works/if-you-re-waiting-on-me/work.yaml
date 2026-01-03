@@ -1,0 +1,17 @@
+id: if-you-re-waiting-on-me
+title: If You're Waiting on Me
+artist: The Kendalls
+composers:
+- Ken Bell, Terry Skinner and J.L. Wallace
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyourewaitingonmelyricschords.pro
+    imported_at: '2026-01-02'

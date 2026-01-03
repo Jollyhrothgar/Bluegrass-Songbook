@@ -1,0 +1,15 @@
+id: nobody-s-fool-but-yours
+title: Nobody's Fool But Yours
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodysfoolbutyourslyricschords.pro
+    imported_at: '2026-01-02'

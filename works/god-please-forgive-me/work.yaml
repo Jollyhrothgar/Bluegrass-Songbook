@@ -1,0 +1,15 @@
+id: god-please-forgive-me
+title: God Please Forgive Me
+artist: Isla Grant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godpleaseforgivemelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: everything-turned-to-love
+title: Everything Turned To Love
+artist: Mickey Gilley
+composers:
+- William T. Allen III and Mickey Gilley
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingturnedtolovelyricschords.pro
+    imported_at: '2026-01-02'

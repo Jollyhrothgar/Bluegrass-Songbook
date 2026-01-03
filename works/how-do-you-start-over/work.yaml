@@ -1,0 +1,18 @@
+id: how-do-you-start-over
+title: How Do You Start Over
+artist: Roy Orbison
+composers:
+- William Dees and Roy Orbison
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howdoyoustartoverlyricschords.pro
+    imported_at: '2026-01-02'

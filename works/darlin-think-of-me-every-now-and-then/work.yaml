@@ -1,0 +1,18 @@
+id: darlin-think-of-me-every-now-and-then
+title: Darlin' Think Of Me Every Now And Then
+artist: Charley Pride
+composers:
+- Johnny Duncan
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darlinthinkofmeeverynowandthenlyricschords.pro
+    imported_at: '2026-01-02'

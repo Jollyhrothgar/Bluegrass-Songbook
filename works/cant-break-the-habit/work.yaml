@@ -1,0 +1,18 @@
+id: cant-break-the-habit
+title: Can’t Break The Habit
+artist: Merle Haggard
+composers:
+- Merle Haggard and Leona Williams
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantbreakthehabitlyricschords.pro
+    imported_at: '2026-01-02'

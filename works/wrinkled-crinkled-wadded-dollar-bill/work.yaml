@@ -1,0 +1,22 @@
+id: wrinkled-crinkled-wadded-dollar-bill
+title: Wrinkled Crinkled Wadded Dollar Bill
+artist: Johnny Cash
+composers:
+- Vincent Matthews
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wrinkledcrinkledwaddeddollarbilllyricschords.pro
+    imported_at: '2026-01-02'

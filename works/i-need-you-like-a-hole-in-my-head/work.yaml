@@ -1,0 +1,16 @@
+id: i-need-you-like-a-hole-in-my-head
+title: I Need You Like A Hole In My Head
+artist: Webb Pierce
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineedyoulikeaholeinmyheadlyricschords.pro
+    imported_at: '2026-01-02'

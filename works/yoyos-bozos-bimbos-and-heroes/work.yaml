@@ -1,0 +1,19 @@
+id: yoyos-bozos-bimbos-and-heroes
+title: Yoyos Bozos Bimbos And Heroes
+artist: Waylon Jennings
+composers:
+- Roger Murrah and Waylon Jennings
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yoyosbozosbimbosandheroeslyricschords.pro
+    imported_at: '2026-01-02'

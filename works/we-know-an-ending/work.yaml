@@ -1,0 +1,17 @@
+id: we-know-an-ending
+title: We Know An Ending
+artist: Jack Greene
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weknowanendinglyricschords.pro
+    imported_at: '2026-01-02'

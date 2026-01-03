@@ -1,0 +1,18 @@
+id: ten-thousands-angels-cried
+title: Ten Thousands Angels Cried
+artist: LeAnn Rimes
+composers:
+- David Patillo
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tenthousandsangelscriedlyricschords.pro
+    imported_at: '2026-01-02'

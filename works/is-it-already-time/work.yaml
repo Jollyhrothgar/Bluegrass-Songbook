@@ -1,0 +1,18 @@
+id: is-it-already-time
+title: Is It Already Time
+artist: George Strait
+composers:
+- Aaron Baker
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isitalreadytimelyricschords.pro
+    imported_at: '2026-01-02'

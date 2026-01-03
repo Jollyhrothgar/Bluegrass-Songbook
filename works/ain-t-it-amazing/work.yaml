@@ -1,0 +1,17 @@
+id: ain-t-it-amazing
+title: Ain't It Amazing
+artist: Don Williams
+composers:
+- Bob McDill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintitamazinglyricschords.pro
+    imported_at: '2026-01-02'

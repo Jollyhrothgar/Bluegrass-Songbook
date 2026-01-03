@@ -1,0 +1,19 @@
+id: too-many-parties-too-many-pals
+title: Too Many Parties Too Many Pals
+artist: Hank Williams
+composers:
+- Billy Rose, Mort Dixon, Ray Henderson
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomanypartiestoomanypalslyricschords.pro
+    imported_at: '2026-01-02'

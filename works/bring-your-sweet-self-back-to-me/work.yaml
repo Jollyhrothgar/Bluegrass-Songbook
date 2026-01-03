@@ -1,0 +1,17 @@
+id: bring-your-sweet-self-back-to-me
+title: Bring Your Sweet Self Back to Me
+artist: Lefty Frizzell
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bringyoursweetselfbacktomelyricschords.pro
+    imported_at: '2026-01-02'

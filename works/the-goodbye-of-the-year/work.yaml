@@ -1,0 +1,20 @@
+id: the-goodbye-of-the-year
+title: The Goodbye Of The Year
+artist: Jerry Lee Lewis
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegoodbyeoftheyearlyricschords.pro
+    imported_at: '2026-01-02'

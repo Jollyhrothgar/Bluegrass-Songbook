@@ -1,0 +1,17 @@
+id: too-far-gone
+title: Too Far Gone
+artist: Tammy Wynette
+composers:
+- Billy Sherrill
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toofargonelyricsandchords.pro
+    imported_at: '2026-01-02'

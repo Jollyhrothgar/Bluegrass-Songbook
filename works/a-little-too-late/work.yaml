@@ -1,0 +1,18 @@
+id: a-little-too-late
+title: A Little Too Late
+artist: Toby Keith
+composers:
+- Dean Dillon, Scott Emerick, Toby Keith
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittletoolatelyricschords.pro
+    imported_at: '2026-01-02'

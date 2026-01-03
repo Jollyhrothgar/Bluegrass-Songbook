@@ -1,0 +1,17 @@
+id: country-kind-of-feeling
+title: Country Kind Of Feeling
+artist: Wilburn Brothers
+composers:
+- Eugene D. Dobbins and Johnny A. Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countrykindoffeelinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: all-i-want-to-do-is-touch-you
+title: All I Want To Do Is Touch You
+artist: Hank Snow
+composers:
+- Paul Dempsey
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alliwanttodoistouchyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: just-someone-i-used-to-know-1
+title: Just Someone I Used to Know
+artist: Dolly Parton
+composers:
+- Jack Clement
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justsomeoneiusedtoknowlyricschords.pro
+    imported_at: '2026-01-02'

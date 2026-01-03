@@ -1,0 +1,17 @@
+id: sing-her-home-to-me-george-jones
+title: Sing Her Home To Me George Jones
+artist: Moe Bandy
+composers:
+- Bobby P. Barker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singherhometomegeorgejoneslyricschords.pro
+    imported_at: '2026-01-02'

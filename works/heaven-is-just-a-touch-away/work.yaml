@@ -1,0 +1,18 @@
+id: heaven-is-just-a-touch-away
+title: Heaven Is Just A Touch Away
+artist: Cal Smith
+composers:
+- Carl Knight, Charles Pendleton, Abe Potwein
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavenisjustatouchawaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-know-what-it-s-like-in-her-arms
+title: I Know What It's Like In Her Arms
+artist: Gene Watson
+composers:
+- Lola Jean Dillon
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowwhatitslikeinherarmslyricschords.pro
+    imported_at: '2026-01-02'

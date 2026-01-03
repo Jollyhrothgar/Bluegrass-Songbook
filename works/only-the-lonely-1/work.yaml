@@ -1,0 +1,17 @@
+id: only-the-lonely-1
+title: Only the Lonely
+artist: Roy Orbison
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onlythelonlylyricschords.pro
+    imported_at: '2026-01-02'

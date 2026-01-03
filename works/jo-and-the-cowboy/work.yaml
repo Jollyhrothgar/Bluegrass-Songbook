@@ -1,0 +1,17 @@
+id: jo-and-the-cowboy
+title: Jo And The Cowboy
+artist: Johnny Duncan and Janie Fricke
+composers:
+- Johnny Duncan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: joandthecowboylyricschords.pro
+    imported_at: '2026-01-02'

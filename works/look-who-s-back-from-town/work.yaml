@@ -1,0 +1,18 @@
+id: look-who-s-back-from-town
+title: Look Who's Back From Town
+artist: George Strait
+composers:
+- Dale Dodson and Billy Lawson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookwhosbackfromtownlyricschords.pro
+    imported_at: '2026-01-02'

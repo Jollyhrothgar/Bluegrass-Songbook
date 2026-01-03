@@ -1,0 +1,17 @@
+id: waking-up-to-love
+title: Waking Up To Love
+artist: Jimmy Dean
+composers:
+- Bob Crewe and Kenny Nolan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wakinguptolovelyricschords.pro
+    imported_at: '2026-01-02'

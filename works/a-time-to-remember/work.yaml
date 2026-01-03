@@ -1,0 +1,15 @@
+id: a-time-to-remember
+title: A Time To Remember
+artist: Bob Luman
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atimetorememberlyricschords.pro
+    imported_at: '2026-01-02'

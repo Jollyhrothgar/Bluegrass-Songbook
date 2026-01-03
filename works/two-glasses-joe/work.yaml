@@ -1,0 +1,20 @@
+id: two-glasses-joe
+title: Two Glasses Joe
+artist: Ernest Tubb
+composers:
+- Cindy Walker
+default_key: D
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twoglassesjoelyricschords.pro
+    imported_at: '2026-01-02'

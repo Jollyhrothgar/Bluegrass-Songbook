@@ -1,0 +1,15 @@
+id: where-do-i-go-from-here-a-trucker-s-song
+title: Where Do I Go From Here (A Trucker's Song)
+artist: Alan Jackson
+composers:
+- Robert Castleman and Stephen Foster
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheredoigofromhereatruckerssonglyricschords.pro
+    imported_at: '2026-01-02'

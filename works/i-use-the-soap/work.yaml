@@ -1,0 +1,18 @@
+id: i-use-the-soap
+title: I Use The Soap
+artist: Tanya Tucker
+composers:
+- David Gates
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iusethesoaplyricschords.pro
+    imported_at: '2026-01-02'

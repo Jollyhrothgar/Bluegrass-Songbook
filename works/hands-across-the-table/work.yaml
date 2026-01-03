@@ -1,0 +1,17 @@
+id: hands-across-the-table
+title: Hands Across the Table
+artist: Fats Domino
+composers:
+- Mitchell Parish and Jean Delettre
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: handsacrossthetablelyricschords.pro
+    imported_at: '2026-01-02'

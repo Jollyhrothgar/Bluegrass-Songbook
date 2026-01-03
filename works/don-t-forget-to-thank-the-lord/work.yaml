@@ -1,0 +1,17 @@
+id: don-t-forget-to-thank-the-lord
+title: Don't Forget To Thank The Lord
+artist: John Anderson
+composers:
+- John Anderson and John Rich
+default_key: F
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontforgettothankthelordlyricschords.pro
+    imported_at: '2026-01-02'

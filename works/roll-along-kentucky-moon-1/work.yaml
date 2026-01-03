@@ -1,0 +1,15 @@
+id: roll-along-kentucky-moon-1
+title: Roll Along Kentucky Moon
+artist: Eddy Arnold
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rollalongkentuckymoonlyricschords.pro
+    imported_at: '2026-01-02'

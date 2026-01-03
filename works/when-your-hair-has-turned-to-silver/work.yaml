@@ -1,0 +1,17 @@
+id: when-your-hair-has-turned-to-silver
+title: When Your Hair Has Turned To Silver
+artist: Eddy Arnold
+composers:
+- Charles Tobias and Peter DeRose
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyourhairhasturnedtosilverlyricschords.pro
+    imported_at: '2026-01-02'

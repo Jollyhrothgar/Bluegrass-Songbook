@@ -1,0 +1,21 @@
+id: loving-you-too-well
+title: Loving You Too Well
+artist: Ricky Skaggs
+composers:
+- Carter Stanley
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovingyoutoowelllyricschords.pro
+    imported_at: '2026-01-02'

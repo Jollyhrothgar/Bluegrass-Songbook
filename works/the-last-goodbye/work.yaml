@@ -1,0 +1,19 @@
+id: the-last-goodbye
+title: The Last Goodbye
+artist: Ernest Tubb
+composers:
+- Ernest Tubb and Sammy Farsmark
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelastgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

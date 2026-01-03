@@ -1,0 +1,18 @@
+id: when-i-m-gone-you-ll-soon-forget
+title: When I'm Gone You'll Soon Forget
+artist: Gene Autry
+composers:
+- James Edward Haley
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenimgoneyoullsoonforgetlyricschords.pro
+    imported_at: '2026-01-02'

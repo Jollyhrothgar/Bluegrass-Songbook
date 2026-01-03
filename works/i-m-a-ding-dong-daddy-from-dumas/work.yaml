@@ -1,0 +1,18 @@
+id: i-m-a-ding-dong-daddy-from-dumas
+title: I'm A Ding Dong Daddy From Dumas
+artist: Bob Wills
+composers:
+- Phil Baxter
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imadingdongdaddyfromdumaslyricschords.pro
+    imported_at: '2026-01-02'

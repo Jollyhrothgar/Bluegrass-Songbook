@@ -1,0 +1,18 @@
+id: at-the-rainbow-s-end
+title: At The Rainbow's End
+artist: Hank Thompson
+composers:
+- Bob Nolan
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: attherainbowsendlyricschords.pro
+    imported_at: '2026-01-02'

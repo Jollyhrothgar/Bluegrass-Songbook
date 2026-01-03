@@ -1,0 +1,18 @@
+id: i-m-in-love-all-over
+title: I'm In Love All Over
+artist: Reba McEntire
+composers:
+- J.D. Martin and Don King
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iminlovealloverlyricschords.pro
+    imported_at: '2026-01-02'

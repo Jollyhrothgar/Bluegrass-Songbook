@@ -1,0 +1,19 @@
+id: i-ll-never-grow-tired-of-you
+title: I'll Never Grow Tired Of You
+artist: Patty Loveless
+composers:
+- Carter Stanley
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illnevergrowtiredofyoulyricschords.pro
+    imported_at: '2026-01-02'

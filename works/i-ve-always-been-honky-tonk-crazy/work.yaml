@@ -1,0 +1,17 @@
+id: i-ve-always-been-honky-tonk-crazy
+title: I've Always Been Honky Tonk Crazy
+artist: Keith Whitley
+composers:
+- Dean Dillon and Frank Dycus
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivealwaysbeenhonkytonkcrazylyricschords.pro
+    imported_at: '2026-01-02'

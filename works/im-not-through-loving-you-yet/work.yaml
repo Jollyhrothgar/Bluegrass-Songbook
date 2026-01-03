@@ -1,0 +1,18 @@
+id: im-not-through-loving-you-yet
+title: I’m Not Through Loving You Yet
+artist: Conway Twitty
+composers:
+- Conway Twitty and L.E. White
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotthroughlovingyouyetlyricschords.pro
+    imported_at: '2026-01-02'

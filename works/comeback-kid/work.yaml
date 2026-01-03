@@ -1,0 +1,15 @@
+id: comeback-kid
+title: Comeback Kid
+artist: Keith Whitley Conley
+composers:
+- Hank Cochran, Dean Dillon, Keith Whitley
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comebackkidlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: how-do-i-get-off-the-moon
+title: How Do I Get Off The Moon
+artist: Doug Stone
+composers:
+- Donny Kees, Randy Boudreaux, Kerry Phillips
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howdoigetoffthemoonlyricschords.pro
+    imported_at: '2026-01-02'

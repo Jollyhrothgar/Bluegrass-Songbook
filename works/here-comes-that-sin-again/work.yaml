@@ -1,0 +1,17 @@
+id: here-comes-that-sin-again
+title: Here Comes That Sin Again
+artist: Carl Smith
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: herecomesthatsinagainlyricschords.pro
+    imported_at: '2026-01-02'

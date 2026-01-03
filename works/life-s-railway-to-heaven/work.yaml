@@ -1,0 +1,18 @@
+id: life-s-railway-to-heaven
+title: Life's Railway to Heaven
+artist: Patsy Cline
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lifesrailwaytoheavenlyricschords.pro
+    imported_at: '2026-01-02'

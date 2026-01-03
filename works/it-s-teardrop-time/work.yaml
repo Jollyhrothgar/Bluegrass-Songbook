@@ -1,0 +1,17 @@
+id: it-s-teardrop-time
+title: It's Teardrop Time
+artist: Dottie West
+composers:
+- Dallas Frazier and Buddy Mize
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsteardroptimelyricschords.pro
+    imported_at: '2026-01-02'

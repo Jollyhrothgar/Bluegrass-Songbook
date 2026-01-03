@@ -1,0 +1,17 @@
+id: she-s-better-than-most
+title: She's Better Than Most
+artist: Hank Locklin
+composers:
+- Shorty Long and Dick Wentzel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesbetterthanmostlyricschords.pro
+    imported_at: '2026-01-02'

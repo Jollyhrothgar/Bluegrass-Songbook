@@ -1,0 +1,16 @@
+id: it-won-t-be-the-same-this-year
+title: It Won't Be The Same This Year
+artist: Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itwontbethesamethisyearlyricschords.pro
+    imported_at: '2026-01-02'

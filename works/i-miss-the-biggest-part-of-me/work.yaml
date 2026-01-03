@@ -1,0 +1,15 @@
+id: i-miss-the-biggest-part-of-me
+title: I Miss The Biggest Part Of Me
+artist: Isla Grant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imissthebiggestpartofmelyricschords.pro
+    imported_at: '2026-01-02'

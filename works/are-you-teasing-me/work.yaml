@@ -1,0 +1,17 @@
+id: are-you-teasing-me
+title: Are You Teasing Me
+artist: Carl Smith
+composers:
+- Charlie Louvin and Ira Louvin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: areyouteasingmelyricschords.pro
+    imported_at: '2026-01-02'

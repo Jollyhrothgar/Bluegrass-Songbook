@@ -1,0 +1,19 @@
+id: ridin-the-rodeo
+title: Ridin' The Rodeo
+artist: Vince Gill
+composers:
+- Vince Gill and Kostas Lazarides
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ridintherodeolyricschords.pro
+    imported_at: '2026-01-02'

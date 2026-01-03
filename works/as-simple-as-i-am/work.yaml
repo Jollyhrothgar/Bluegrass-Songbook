@@ -1,0 +1,17 @@
+id: as-simple-as-i-am
+title: As Simple As I Am
+artist: Porter Wagoner
+composers:
+- Dolly Parton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: assimpleasiamlyricschords.pro
+    imported_at: '2026-01-02'

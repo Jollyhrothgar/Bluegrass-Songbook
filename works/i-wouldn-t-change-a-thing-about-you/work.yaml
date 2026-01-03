@@ -1,0 +1,15 @@
+id: i-wouldn-t-change-a-thing-about-you
+title: I Wouldn't Change A Thing About You
+artist: Hank Williams Jr.
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldntchangeathingaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

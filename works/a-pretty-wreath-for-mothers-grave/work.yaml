@@ -1,0 +1,17 @@
+id: a-pretty-wreath-for-mothers-grave
+title: A Pretty Wreath For Mother’s Grave
+artist: The Reno Brothers
+composers:
+- Don Reno
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aprettywreathformothersgravelyricschords.pro
+    imported_at: '2026-01-02'

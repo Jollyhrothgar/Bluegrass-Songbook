@@ -1,0 +1,17 @@
+id: play-me-the-waltz-of-the-angels
+title: Play Me The Waltz Of The Angels
+artist: The Derailers
+composers:
+- Dennis Knutson and Rory Lee Feek
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: playmethewaltzoftheangelslyricschords.pro
+    imported_at: '2026-01-02'

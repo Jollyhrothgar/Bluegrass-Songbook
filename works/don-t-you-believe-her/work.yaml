@@ -1,0 +1,17 @@
+id: don-t-you-believe-her
+title: Don't You Believe Her
+artist: Ray Price
+composers:
+- Nat Stuckey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontyoubelieveherlyricschords.pro
+    imported_at: '2026-01-02'

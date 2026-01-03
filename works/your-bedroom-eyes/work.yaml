@@ -1,0 +1,17 @@
+id: your-bedroom-eyes
+title: Your Bedroom Eyes
+artist: Vern Gosdin
+composers:
+- Rich Landers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourbedroomeyeslyricschords.pro
+    imported_at: '2026-01-02'

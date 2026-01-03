@@ -1,0 +1,18 @@
+id: somebody-s-rocking-my-broken-heart
+title: Somebody's Rocking My Broken Heart
+artist: Johnny Horton
+composers:
+- Johnny Horton and Johnny Grimes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodysrockingmybrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

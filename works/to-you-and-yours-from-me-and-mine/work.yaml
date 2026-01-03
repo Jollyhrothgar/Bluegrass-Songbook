@@ -1,0 +1,17 @@
+id: to-you-and-yours-from-me-and-mine
+title: To You and Yours from Me and Mine
+artist: George Hamilton IV
+composers:
+- Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toyouandyoursfrommeandminelyricschords.pro
+    imported_at: '2026-01-02'

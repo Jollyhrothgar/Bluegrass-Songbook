@@ -1,0 +1,17 @@
+id: everyday-will-be-sunday-after-while
+title: Everyday Will Be Sunday After While
+artist: Webb Pierce
+composers:
+- Sylvia Fisher and Leon Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everydaywillbesundayafterwhilelyricschords.pro
+    imported_at: '2026-01-02'

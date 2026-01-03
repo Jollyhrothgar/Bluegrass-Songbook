@@ -1,0 +1,17 @@
+id: i-gotta-find-someone
+title: I Gotta Find Someone
+artist: Porter Wagoner
+composers:
+- Vic McAlpin, Roy Drusky, Jean Elroad
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igottafindsomeonelyricschords.pro
+    imported_at: '2026-01-02'

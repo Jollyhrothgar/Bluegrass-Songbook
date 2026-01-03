@@ -1,0 +1,17 @@
+id: i-taught-her-everything-she-knows-1
+title: I Taught Her Everything She Knows
+artist: Billy Walker
+composers:
+- Arthur Kent and Sylvia Dee
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itaughthereverythingsheknowslyricschords.pro
+    imported_at: '2026-01-02'

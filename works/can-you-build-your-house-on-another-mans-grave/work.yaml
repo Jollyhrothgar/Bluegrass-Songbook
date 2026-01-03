@@ -1,0 +1,17 @@
+id: can-you-build-your-house-on-another-mans-grave
+title: Can You Build Your House (On Another Man’s Grave)
+artist: Little Jimmy Dickens
+composers:
+- Joyce Allsup
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canyoubuildyourhouseonanothermansgravelyricschords.pro
+    imported_at: '2026-01-02'

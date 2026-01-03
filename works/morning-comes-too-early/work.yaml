@@ -1,0 +1,17 @@
+id: morning-comes-too-early
+title: Morning Comes Too Early
+artist: Jim Ed Brown and Helen Cornelius
+composers:
+- Dennis Morgan and Kye Fleming
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: morningcomestooearlylyricschords.pro
+    imported_at: '2026-01-02'

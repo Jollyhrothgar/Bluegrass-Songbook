@@ -1,0 +1,19 @@
+id: i-been-to-georgia-on-a-fast-train
+title: I Been To Georgia On A Fast Train
+artist: Willie Nelson
+composers:
+- Billy Joe Shaver
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibeentogeorgiaonafasttrainlyricschords.pro
+    imported_at: '2026-01-02'

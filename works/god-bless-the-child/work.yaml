@@ -1,0 +1,17 @@
+id: god-bless-the-child
+title: God Bless the Child
+artist: Crystal Gayle
+composers:
+- Arthur Herzog and Billie Holiday
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godblessthechildlyricschords.pro
+    imported_at: '2026-01-02'

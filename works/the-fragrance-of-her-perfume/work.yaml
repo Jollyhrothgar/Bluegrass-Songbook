@@ -1,0 +1,17 @@
+id: the-fragrance-of-her-perfume
+title: The Fragrance Of Her Perfume
+artist: Boxcar Willie
+composers:
+- Lecil Travis Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thefragranceofherperfumelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: take-me-down
+title: Take Me Down
+artist: Alabama
+composers:
+- James P. Pennington and Mark Eugene Gray
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemedownlyricschords.pro
+    imported_at: '2026-01-02'

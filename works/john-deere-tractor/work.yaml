@@ -1,0 +1,15 @@
+id: john-deere-tractor
+title: John Deere Tractor
+artist: Lawrence Hammond
+default_key: D
+tags:
+- Modal
+- Jazzy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

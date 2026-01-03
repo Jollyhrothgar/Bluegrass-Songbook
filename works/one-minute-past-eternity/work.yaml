@@ -1,0 +1,17 @@
+id: one-minute-past-eternity
+title: One Minute Past Eternity
+artist: Hank Snow
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneminutepasteternitylyricsandchords.pro
+    imported_at: '2026-01-02'

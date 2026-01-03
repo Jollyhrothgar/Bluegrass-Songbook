@@ -1,0 +1,17 @@
+id: dont-we-all-have-the-right
+title: Don’t We All Have The Right
+artist: Ricky Van Shelton
+composers:
+- Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontweallhavetherightlyricschords.pro
+    imported_at: '2026-01-02'

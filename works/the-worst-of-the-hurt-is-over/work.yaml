@@ -1,0 +1,15 @@
+id: the-worst-of-the-hurt-is-over
+title: The Worst Of The Hurt Is Over
+artist: George Morgan
+composers:
+- Tommy Hill and William Brown Ellis IV
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theworstofthehurtisoverlyricschords.pro
+    imported_at: '2026-01-02'

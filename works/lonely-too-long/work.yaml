@@ -1,0 +1,18 @@
+id: lonely-too-long
+title: Lonely Too Long
+artist: Patty Loveless
+composers:
+- Sharon Vaughn, Bill Rice, Mike Lawler
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelytoolonglyricsandchords.pro
+    imported_at: '2026-01-02'

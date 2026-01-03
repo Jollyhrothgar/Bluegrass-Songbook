@@ -1,0 +1,17 @@
+id: i-can-t-go-home-like-this
+title: I Can't Go Home Like This
+artist: Ray Price
+composers:
+- Nellie Wallace
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantgohomelikethislyricschords.pro
+    imported_at: '2026-01-02'

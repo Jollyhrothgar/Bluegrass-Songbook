@@ -1,0 +1,17 @@
+id: running-out-of-reasons-to-run
+title: Running Out Of Reasons To Run
+artist: Don Williams
+composers:
+- Jim Rushing and J.D. Martin
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: runningoutofreasonstorunlyricschords.pro
+    imported_at: '2026-01-02'

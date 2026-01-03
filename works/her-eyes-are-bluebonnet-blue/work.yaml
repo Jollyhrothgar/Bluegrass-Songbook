@@ -1,0 +1,17 @@
+id: her-eyes-are-bluebonnet-blue
+title: Her Eyes Are Bluebonnet Blue
+artist: Red Steagall
+composers:
+- Russell D. Steagall and Luke Reed
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hereyesarebluebonnetbluelyricschords.pro
+    imported_at: '2026-01-02'

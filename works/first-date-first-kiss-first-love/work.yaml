@@ -1,0 +1,17 @@
+id: first-date-first-kiss-first-love
+title: First Date First Kiss First Love
+artist: Sonny James
+composers:
+- Dan Welch and Mary Stovall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: firstdatefirstkissfirstlovelyricschords.pro
+    imported_at: '2026-01-02'

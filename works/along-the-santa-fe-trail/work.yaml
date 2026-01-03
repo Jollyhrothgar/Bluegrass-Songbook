@@ -1,0 +1,17 @@
+id: along-the-santa-fe-trail
+title: Along The Santa Fe Trail
+artist: Jimmy Wakely
+composers:
+- Al Dubin, Edwina Coolidge, Will Grosz
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alongthesantafetraillyricschords.pro
+    imported_at: '2026-01-02'

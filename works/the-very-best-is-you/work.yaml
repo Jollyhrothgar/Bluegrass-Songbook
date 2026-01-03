@@ -1,0 +1,17 @@
+id: the-very-best-is-you
+title: The Very Best Is You
+artist: Charly McClain
+composers:
+- Frank Stephens and Larry Shell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theverybestisyoulyricschords.pro
+    imported_at: '2026-01-02'

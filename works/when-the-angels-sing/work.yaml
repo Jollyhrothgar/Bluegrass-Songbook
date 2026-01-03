@@ -1,0 +1,18 @@
+id: when-the-angels-sing
+title: When The Angels Sing
+artist: Rhonda Vincent
+composers:
+- Aubrey Noble, Darrin Vincent, Rhonda Vincent,
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentheangelssinglyricschords.pro
+    imported_at: '2026-01-02'

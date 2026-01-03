@@ -1,0 +1,19 @@
+id: christmas-in-the-mountains
+title: Christmas In The Mountains
+artist: Larry Sparks
+composers:
+- Bill Castle
+default_key: G
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasinthemountainslyricsandchords.pro
+    imported_at: '2026-01-02'

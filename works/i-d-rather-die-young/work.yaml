@@ -1,0 +1,22 @@
+id: i-d-rather-die-young
+title: I'd Rather Die Young
+artist: Johnny Cash
+composers:
+- Beasley Smith, Billy Vaughn, Randy Wood
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idratherdieyounglyricschords.pro
+    imported_at: '2026-01-02'

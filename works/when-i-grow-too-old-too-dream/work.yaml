@@ -1,0 +1,17 @@
+id: when-i-grow-too-old-too-dream
+title: When I Grow Too Old Too Dream
+artist: Hank Locklin
+composers:
+- Oscar Hammerstein and Sigmund Romberg
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenigrowtoooldtoodreamlyricschords.pro
+    imported_at: '2026-01-02'

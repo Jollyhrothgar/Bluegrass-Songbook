@@ -1,0 +1,19 @@
+id: loneliness
+title: Loneliness
+artist: Roy Orbison
+composers:
+- Roy Orbison and Joe Melson
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelinesslyricschords.pro
+    imported_at: '2026-01-02'

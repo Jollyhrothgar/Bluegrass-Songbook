@@ -1,0 +1,17 @@
+id: do-you-know-my-jesus-1
+title: Do You Know My Jesus
+artist: Skeeter Davis
+composers:
+- W.F. Lakey and V.B. Ellis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doyouknowmyJesuslyricschords.pro
+    imported_at: '2026-01-02'

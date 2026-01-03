@@ -1,0 +1,15 @@
+id: please-come-back-with-my-heart
+title: Please Come Back With My Heart
+artist: Norma Jean
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasecomebackwithmyheartlyricschords.pro
+    imported_at: '2026-01-02'

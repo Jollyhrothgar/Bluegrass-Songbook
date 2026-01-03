@@ -1,0 +1,17 @@
+id: hard-livin
+title: Hard Livin'
+artist: Keith Whitley
+composers:
+- David Halley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hardlivinlyricschords.pro
+    imported_at: '2026-01-02'

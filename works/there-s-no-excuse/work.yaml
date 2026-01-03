@@ -1,0 +1,20 @@
+id: there-s-no-excuse
+title: There's No Excuse
+artist: The Louvin Brothers
+composers:
+- Charlie Louvin and Ira Louvin
+default_key: G
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnoexcuselyricschords.pro
+    imported_at: '2026-01-02'

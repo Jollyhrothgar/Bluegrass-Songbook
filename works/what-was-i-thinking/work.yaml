@@ -1,0 +1,17 @@
+id: what-was-i-thinking
+title: What Was I Thinking
+artist: Gene Watson
+composers:
+- Skip Ewing and James Dean Hicks
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatwasithinkinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: sing-that-kind-of-song
+title: Sing That Kind Of Song
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singthatkindofsonglyricschords.pro
+    imported_at: '2026-01-02'

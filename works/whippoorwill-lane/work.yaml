@@ -1,0 +1,17 @@
+id: whippoorwill-lane
+title: Whippoorwill Lane
+artist: Hank Thompson
+composers:
+- Weldon Allard and Johnny Hathcock
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whippoorwilllanelyricschords.pro
+    imported_at: '2026-01-02'

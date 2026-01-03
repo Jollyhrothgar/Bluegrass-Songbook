@@ -1,0 +1,17 @@
+id: when-will-i-be-loved
+title: When Will I Be Loved
+artist: Everly Brothers
+composers:
+- Phil Everly
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenwillibelovedlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-wonder-if-you-feel-the-way-i-do
+title: I Wonder if You Feel the Way I Do
+artist: Bob Wills
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderifyoufeelthewayidolyricschords.pro
+    imported_at: '2026-01-02'

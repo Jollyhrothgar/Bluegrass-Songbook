@@ -1,0 +1,17 @@
+id: heartbreak-hill-1
+title: Heartbreak Hill
+artist: Slim Whitman
+composers:
+- Ben Weisman and Fred Wise
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartbreakhilllyricschords.pro
+    imported_at: '2026-01-02'

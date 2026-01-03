@@ -1,0 +1,17 @@
+id: i-m-biting-my-fingernails-and-thinking-of-you
+title: I'm Biting My Fingernails And Thinking Of You
+artist: Ernest Tubb and Loretta Lynn
+composers:
+- Ernest Tubb, Ernie Benedict, Roy West, Lenny Sanders
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imbitingmyfingernailsandthinkingofyoulyricschords.pro
+    imported_at: '2026-01-02'

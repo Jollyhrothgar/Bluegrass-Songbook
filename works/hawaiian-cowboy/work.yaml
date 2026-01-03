@@ -1,0 +1,19 @@
+id: hawaiian-cowboy
+title: Hawaiian Cowboy
+artist: Hank Snow
+composers:
+- Rex Allen, Emma Johnson, Sol Bright
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hawaiiancowboylyricschords.pro
+    imported_at: '2026-01-02'

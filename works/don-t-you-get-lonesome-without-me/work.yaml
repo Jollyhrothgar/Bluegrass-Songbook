@@ -1,0 +1,15 @@
+id: don-t-you-get-lonesome-without-me
+title: Don't You Get Lonesome Without Me
+artist: Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontyougetlonesomewithoutmelyricschords.pro
+    imported_at: '2026-01-02'

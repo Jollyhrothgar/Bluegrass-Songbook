@@ -1,0 +1,19 @@
+id: thank-you-for-being-you
+title: Thank You For Being You
+artist: Mel Tillis
+composers:
+- Kent Westberry and Hal Harbour
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankyouforbeingyoulyricschords.pro
+    imported_at: '2026-01-02'

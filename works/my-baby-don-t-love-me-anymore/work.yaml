@@ -1,0 +1,17 @@
+id: my-baby-don-t-love-me-anymore
+title: My Baby Don't Love Me Anymore
+artist: Johnny Paycheck
+composers:
+- Aubrey Mayhew and Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mybabydontlovemeanymorelyricschords.pro
+    imported_at: '2026-01-02'

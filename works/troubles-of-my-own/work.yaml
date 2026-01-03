@@ -1,0 +1,18 @@
+id: troubles-of-my-own
+title: Troubles of My Own
+artist: Fats Domino
+composers:
+- Dave Bartholomew and Antoine Domino
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: troublesofmyownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: love-came-pouring-down
+title: Love Came Pouring Down
+artist: Jean Shepard
+composers:
+- Curly Putman and Larry Butler
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovecamepouringdownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: a-shoulder-to-cry-on
+title: A Shoulder To Cry On
+artist: Charlie Pride
+composers:
+- Merle Haggard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ashouldertocryonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: getting-used-to-loving-you
+title: Getting Used To Loving You
+artist: Buck Owens
+composers:
+- Don Rich and Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gettingusedtolovingyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: she-s-too-good-to-be-true
+title: She's Too Good to be True
+artist: Charlie Pride
+composers:
+- Johnny Duncan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shestoogoodtobetruelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: today-my-world-slipped-away
+title: Today My World Slipped Away
+artist: Vern Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: todaymyworldslippedawaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: how-can-our-cheating-be-wrong
+title: How Can Our Cheating Be Wrong
+artist: Jack Greene
+composers:
+- Dallas Frazier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcanourcheatingbewronglyricschords.pro
+    imported_at: '2026-01-02'

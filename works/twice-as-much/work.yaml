@@ -1,0 +1,18 @@
+id: twice-as-much
+title: Twice As Much
+artist: Hank Thompson
+composers:
+- Billy Gray, Bob Blanchard and Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twiceasmuchlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: on-the-sunny-side-of-the-rockies
+title: On The Sunny Side Of The Rockies
+artist: Slim Whitman
+composers:
+- Roy Ingraham and Harry Tobias
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onthesunnysideoftherockieslyricschords.pro
+    imported_at: '2026-01-02'

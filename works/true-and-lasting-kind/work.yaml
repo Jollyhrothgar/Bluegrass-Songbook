@@ -1,0 +1,17 @@
+id: true-and-lasting-kind
+title: True And Lasting Kind
+artist: Kitty Wells
+composers:
+- Ted Harris
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: trueandlastingkindlyricschords.pro
+    imported_at: '2026-01-02'

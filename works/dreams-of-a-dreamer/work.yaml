@@ -1,0 +1,17 @@
+id: dreams-of-a-dreamer
+title: Dreams Of A Dreamer
+artist: Gene Watson
+composers:
+- David H. "Jug" Brown
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dreamsofadreamerlyricschords.pro
+    imported_at: '2026-01-02'

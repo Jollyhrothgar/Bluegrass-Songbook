@@ -1,0 +1,16 @@
+id: a-half-way-chance-with-you
+title: A Half Way Chance With You
+artist: Marty Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ahalfwaychancewithyoulyricschords.pro
+    imported_at: '2026-01-02'

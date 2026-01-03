@@ -1,0 +1,17 @@
+id: one-good-well
+title: One Good Well
+artist: Don Williams
+composers:
+- Kent M. Robbins and Mike Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onegoodwelllyricschords.pro
+    imported_at: '2026-01-02'

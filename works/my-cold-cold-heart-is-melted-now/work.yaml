@@ -1,0 +1,18 @@
+id: my-cold-cold-heart-is-melted-now
+title: My Cold Cold Heart Is Melted Now
+artist: Kitty Wells
+composers:
+- Hank Williams and Johnny Masters
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mycoldcoldheartismeltednowlyricschords.pro
+    imported_at: '2026-01-02'

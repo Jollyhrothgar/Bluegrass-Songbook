@@ -1,0 +1,15 @@
+id: when-you-get-to-heaven-i-ll-be-there
+title: When You Get To Heaven (I'll Be There)
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyougettoheavenillbetherelyricschords.pro
+    imported_at: '2026-01-02'

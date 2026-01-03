@@ -1,0 +1,17 @@
+id: just-enough-love-for-one-woman
+title: Just Enough Love For One Woman
+artist: Don Williams
+composers:
+- Dave Kirby and Danny Morrison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justenoughloveforonewomanlyricschords.pro
+    imported_at: '2026-01-02'

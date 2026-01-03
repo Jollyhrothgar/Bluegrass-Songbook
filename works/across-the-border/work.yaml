@@ -1,0 +1,17 @@
+id: across-the-border
+title: Across The Border
+artist: Linda Ronstadt and Emmylou Harris
+composers:
+- Bruce Springsteen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: acrosstheborderlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: amber-tresses
+title: Amber Tresses
+artist: Doyle Lawson
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ambertresseslyricschords.pro
+    imported_at: '2026-01-02'

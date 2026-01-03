@@ -1,0 +1,17 @@
+id: let-me-be-the-one-1
+title: Let Me Be The One
+artist: Hank Locklin
+composers:
+- W.S. Stevenson, Paul Blevins, Joseph Hobson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmebetheonelyricschords.pro
+    imported_at: '2026-01-02'

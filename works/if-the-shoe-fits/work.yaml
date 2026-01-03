@@ -1,0 +1,19 @@
+id: if-the-shoe-fits
+title: If The Shoe Fits
+artist: Waylon Jennings
+composers:
+- Harlan Howard and Freddie Hart
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iftheshoefitslyricschords.pro
+    imported_at: '2026-01-02'

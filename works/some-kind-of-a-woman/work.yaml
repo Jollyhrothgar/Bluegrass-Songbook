@@ -1,0 +1,17 @@
+id: some-kind-of-a-woman
+title: Some Kind Of A Woman
+artist: Cal Smith
+composers:
+- Jimmy Peppers and Tommy Cash
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somekindofawomanlyricschords.pro
+    imported_at: '2026-01-02'

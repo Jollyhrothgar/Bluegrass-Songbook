@@ -1,0 +1,17 @@
+id: don-t-pay-the-ransom
+title: Don't Pay The Ransom
+artist: Nat Stuckey
+composers:
+- Dalton Roberts and Jack Shoemake
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontpaytheransomlyricschords.pro
+    imported_at: '2026-01-02'

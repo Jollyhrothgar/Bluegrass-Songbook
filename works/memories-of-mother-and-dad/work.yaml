@@ -1,0 +1,21 @@
+id: memories-of-mother-and-dad
+title: Memories Of Mother And Dad
+artist: Ricky Skaggs
+composers:
+- Albert Price
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: memoriesofmotheranddadlyricschords.pro
+    imported_at: '2026-01-02'

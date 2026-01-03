@@ -1,0 +1,15 @@
+id: what-in-the-world-s-come-over-you
+title: What in the World's Come Over You
+artist: Jack Scott
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatintheworldscomeoveryoulyricschords.pro
+    imported_at: '2026-01-02'

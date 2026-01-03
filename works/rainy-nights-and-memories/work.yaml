@@ -1,0 +1,17 @@
+id: rainy-nights-and-memories
+title: Rainy Nights And Memories
+artist: Don Williams
+composers:
+- Wayland Holyfield and Jim Rushing
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rainynightsandmemorieslyricschords.pro
+    imported_at: '2026-01-02'

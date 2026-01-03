@@ -1,0 +1,15 @@
+id: after-all-2
+title: After All
+artist: Joni Harms
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afteralllyricschords.pro
+    imported_at: '2026-01-02'

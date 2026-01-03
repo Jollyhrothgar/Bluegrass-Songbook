@@ -1,0 +1,15 @@
+id: turn-on-to-jesus
+title: Turn On To Jesus
+artist: Hank Locklin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: turnontoJesuslyricschords.pro
+    imported_at: '2026-01-02'

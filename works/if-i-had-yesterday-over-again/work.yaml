@@ -1,0 +1,17 @@
+id: if-i-had-yesterday-over-again
+title: If I Had Yesterday Over Again
+artist: Wilburn Brothers
+composers:
+- Johnny Russell and Don Devaney
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifihadyesterdayoveragainlyricschords.pro
+    imported_at: '2026-01-02'

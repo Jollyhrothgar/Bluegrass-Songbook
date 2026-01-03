@@ -1,0 +1,17 @@
+id: alibis-1
+title: Alibis
+artist: Johnny Rodriguez Lyrics with Chords
+composers:
+- Arthur L. Killough, Jr. and Patricia R. Killough
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alibislyricschords.pro
+    imported_at: '2026-01-02'

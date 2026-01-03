@@ -1,0 +1,18 @@
+id: got-the-bull-by-the-horns
+title: Got The Bull By The Horns
+artist: Johnny Horton
+composers:
+- Amos Boyd and Billy Jones
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gotthebullbythehornslyricschords.pro
+    imported_at: '2026-01-02'

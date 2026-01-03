@@ -1,0 +1,17 @@
+id: the-storm-within-my-heart
+title: The Storm Within My Heart
+artist: Billy Walker
+composers:
+- Willie Nelson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thestormwithinmyheartlyricschords.pro
+    imported_at: '2026-01-02'

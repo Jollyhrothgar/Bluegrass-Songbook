@@ -1,0 +1,16 @@
+id: i-don-t-want-to-sober-up-tonight
+title: I Don't Want To Sober Up Tonight
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwanttosoberuptonightlyricschords.pro
+    imported_at: '2026-01-02'

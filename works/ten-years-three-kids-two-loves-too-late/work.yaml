@@ -1,0 +1,17 @@
+id: ten-years-three-kids-two-loves-too-late
+title: Ten Years Three Kids Two Loves Too Late
+artist: Charlie Louvin
+composers:
+- Roger Murrah and Jim McBride
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tenyearsthreekidstwolovestoolatecrylyricschords.pro
+    imported_at: '2026-01-02'

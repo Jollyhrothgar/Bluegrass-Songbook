@@ -1,0 +1,17 @@
+id: sittin-on-top-of-the-world
+title: Sittin' On Top Of The World
+artist: Doc Watson
+composers:
+- Walter Vinson and Lonnie Chatmon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sittinontopoftheworldlyricsandchords.pro
+    imported_at: '2026-01-02'

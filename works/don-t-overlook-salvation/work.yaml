@@ -1,0 +1,17 @@
+id: don-t-overlook-salvation
+title: Don't Overlook Salvation
+artist: Ricky Van Shelton
+composers:
+- John Bava
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontoverlooksalvationlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: evil-tempt-me-not
+title: Evil Tempt Me Not
+artist: Eddy Arnold
+composers:
+- Dale Parker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eviltemptmenotlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: finer-things-in-life
+title: Finer Things In Life
+artist: Red Steagall
+composers:
+- Jim Weatherly
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: finerthingsinlifelyricschords.pro
+    imported_at: '2026-01-02'

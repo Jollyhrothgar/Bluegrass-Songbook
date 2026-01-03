@@ -1,0 +1,17 @@
+id: cowboys-don-t-get-lucky-all-the-time
+title: Cowboys Don't Get Lucky All The Time
+artist: Gene Watson
+composers:
+- Dallas Harms
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cowboysdontgetluckyallthetimelyricschords.pro
+    imported_at: '2026-01-02'

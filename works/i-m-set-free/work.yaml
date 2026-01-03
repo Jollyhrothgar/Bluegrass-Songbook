@@ -1,0 +1,17 @@
+id: i-m-set-free
+title: I'm Set Free
+artist: Melba Montgomery
+composers:
+- Paul Wayne
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsetfreelyricschords.pro
+    imported_at: '2026-01-02'

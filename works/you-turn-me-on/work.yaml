@@ -1,0 +1,15 @@
+id: you-turn-me-on
+title: You Turn Me On
+artist: Alabama
+composers:
+- Randy Owen and Theodore Gentry
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youturnmeonlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: just-when-i-needed-you-most
+title: Just When I Needed You Most
+artist: Dolly Parton
+composers:
+- Randy Van Warmer
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justwhenineededyoumostlyricschords.pro
+    imported_at: '2026-01-02'

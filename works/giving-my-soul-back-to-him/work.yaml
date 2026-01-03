@@ -1,0 +1,17 @@
+id: giving-my-soul-back-to-him
+title: Giving My Soul Back To Him
+artist: Russell Moore and IIIrd Tyme Out
+composers:
+- Billy Smith and Hazel Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givingmysoulbacktohimlyricschords.pro
+    imported_at: '2026-01-02'

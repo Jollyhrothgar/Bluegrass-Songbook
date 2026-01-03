@@ -1,0 +1,17 @@
+id: teach-me-how-to-pray
+title: Teach Me How To Pray
+artist: Jim Reeves
+composers:
+- Kathryn Twitty
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: teachmehowtopraylyricschords.pro
+    imported_at: '2026-01-02'

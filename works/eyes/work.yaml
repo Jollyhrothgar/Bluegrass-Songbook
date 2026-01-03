@@ -1,0 +1,19 @@
+id: eyes
+title: Eyes
+artist: Marty Robbins
+composers:
+- Marty Robbins and Karen Russell
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eyeslyricschords.pro
+    imported_at: '2026-01-02'

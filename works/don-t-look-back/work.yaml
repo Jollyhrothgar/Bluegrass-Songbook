@@ -1,0 +1,17 @@
+id: don-t-look-back
+title: Don't Look Back
+artist: Wynn Stewart
+composers:
+- Dave Burgess and James Best
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontlookbacklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: a-hundred-and-sixty-acres
+title: A Hundred and Sixty Acres
+artist: Marty Robbins
+composers:
+- David Kapp
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ahundredandsixtyacreslyricschords.pro
+    imported_at: '2026-01-02'

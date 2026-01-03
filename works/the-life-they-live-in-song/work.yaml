@@ -1,0 +1,18 @@
+id: the-life-they-live-in-song
+title: The Life They Live In Song
+artist: Kitty Wells
+composers:
+- Raymond F. Scrivner
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelifetheyliveinsonglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: when-the-master-speak
+title: When The Master Speak
+artist: Jimmie Davis
+composers:
+- John Mathews
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthemasterspeaklyricschords.pro
+    imported_at: '2026-01-02'

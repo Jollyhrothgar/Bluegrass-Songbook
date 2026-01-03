@@ -1,0 +1,15 @@
+id: everybody-in-the-whole-world-holding-hands
+title: Everybody In The Whole World Holding Hands
+artist: Freddie Hart
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodyinthewholeworldholdinghandslyricschords.pro
+    imported_at: '2026-01-02'

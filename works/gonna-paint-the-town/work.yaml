@@ -1,0 +1,18 @@
+id: gonna-paint-the-town
+title: Gonna Paint The Town
+artist: The Stanley Brothers
+composers:
+- Ralph Stanley
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnapaintthetownlyricschords.pro
+    imported_at: '2026-01-02'

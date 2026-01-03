@@ -1,0 +1,17 @@
+id: no-man-should-hurt-as-bad-as-i-do
+title: No Man Should Hurt As Bad As I Do
+artist: George Morgan
+composers:
+- Jan Crutchfield and Wayne P. Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nomanshouldhurtasbadasidolyricschords.pro
+    imported_at: '2026-01-02'

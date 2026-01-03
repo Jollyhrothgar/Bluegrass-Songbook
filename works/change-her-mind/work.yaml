@@ -1,0 +1,17 @@
+id: change-her-mind
+title: Change Her Mind
+artist: Gene Watson
+composers:
+- Danny Mayo, Paul Nelson, Larry Boone
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: changehermindlyricschords.pro
+    imported_at: '2026-01-02'

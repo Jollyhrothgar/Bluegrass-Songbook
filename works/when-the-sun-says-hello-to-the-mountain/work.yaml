@@ -1,0 +1,17 @@
+id: when-the-sun-says-hello-to-the-mountain
+title: When The Sun Says Hello To The Mountain
+artist: Jim Ed Brown
+composers:
+- Harry Pease and Larry Vincent
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthesunsayshellotothemountainlyricschords.pro
+    imported_at: '2026-01-02'

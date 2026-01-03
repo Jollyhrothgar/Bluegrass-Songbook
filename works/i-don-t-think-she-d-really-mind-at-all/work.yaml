@@ -1,0 +1,17 @@
+id: i-don-t-think-she-d-really-mind-at-all
+title: I Don't Think She'd Really Mind At All
+artist: Gene Watson
+composers:
+- A.L. Owens &amp; Dennis Knutson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontthinkshedreallymindatalllyricschords.pro
+    imported_at: '2026-01-02'

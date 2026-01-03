@@ -1,0 +1,17 @@
+id: don-t-count-the-diamonds
+title: Don't Count The Diamonds
+artist: Ferlin Husky
+composers:
+- Ferlin Husky and Dalton Timbur
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontcountthediamondslyricschords.pro
+    imported_at: '2026-01-02'

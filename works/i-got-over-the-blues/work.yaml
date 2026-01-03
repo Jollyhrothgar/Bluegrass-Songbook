@@ -1,0 +1,17 @@
+id: i-got-over-the-blues
+title: I Got Over The Blues
+artist: Wilburn Brothers
+composers:
+- Teddy Wilburn, Doyle Wilburn, Mary Cox
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igotovertheblueslyricschords.pro
+    imported_at: '2026-01-02'

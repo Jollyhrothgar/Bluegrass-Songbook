@@ -1,0 +1,19 @@
+id: it-s-another-world
+title: It's Another World
+artist: Loretta Lynn
+composers:
+- Richard D. Staedtler
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsanotherworldlyricschords.pro
+    imported_at: '2026-01-02'

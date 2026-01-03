@@ -1,0 +1,18 @@
+id: always-something-there-to-remind-me
+title: Always Something There To Remind Me
+artist: Brenda Lee
+composers:
+- Hal David and Burt Bacharach
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alwayssomethingtheretoremindmelyricschords.pro
+    imported_at: '2026-01-02'

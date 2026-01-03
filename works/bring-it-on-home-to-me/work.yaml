@@ -1,0 +1,19 @@
+id: bring-it-on-home-to-me
+title: Bring It On Home To Me
+artist: Mickey Gilley
+composers:
+- Sam Cooke
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bringitonhometomelyricschords.pro
+    imported_at: '2026-01-02'

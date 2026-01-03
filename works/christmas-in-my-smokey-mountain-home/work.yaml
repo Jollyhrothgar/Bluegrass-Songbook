@@ -1,0 +1,17 @@
+id: christmas-in-my-smokey-mountain-home
+title: Christmas In My Smokey Mountain Home
+artist: Bobby Bare
+composers:
+- Brein Fisher and Andra Hamlin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasinmysmokeymountainhomelyricschords.pro
+    imported_at: '2026-01-02'

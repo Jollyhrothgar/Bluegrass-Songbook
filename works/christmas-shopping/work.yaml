@@ -1,0 +1,17 @@
+id: christmas-shopping
+title: Christmas Shopping
+artist: Buck Owens
+composers:
+- Buck Owens and Charles Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasshoppinglyricschords.pro
+    imported_at: '2026-01-02'

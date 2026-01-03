@@ -1,0 +1,17 @@
+id: don-t-wish-me-merry-christmas
+title: Don't Wish Me Merry Christmas
+artist: Lynn Anderson
+composers:
+- Glenn Sutton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontwishmemerryChristmaslyricschords.pro
+    imported_at: '2026-01-02'

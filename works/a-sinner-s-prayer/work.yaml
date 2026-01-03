@@ -1,0 +1,17 @@
+id: a-sinner-s-prayer
+title: A Sinner's Prayer
+artist: Eddy Arnold
+composers:
+- Alberta McEnery and Jimmie Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: asinnersprayerlyricschords.pro
+    imported_at: '2026-01-02'

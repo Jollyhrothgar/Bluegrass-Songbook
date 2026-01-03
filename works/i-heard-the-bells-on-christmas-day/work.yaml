@@ -1,0 +1,18 @@
+id: i-heard-the-bells-on-christmas-day
+title: I Heard The Bells On Christmas Day
+artist: Larry Sparks
+composers:
+- Henry Wadsworth Longfellow and Johnny Marks
+default_key: G
+tags:
+- Bluegrass
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iheardthebellsonChristmasdaylyricschords.pro
+    imported_at: '2026-01-02'

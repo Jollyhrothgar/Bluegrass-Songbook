@@ -1,0 +1,18 @@
+id: just-one-look
+title: Just One Look
+artist: Anne Murray
+composers:
+- Gergory Carroll and Doris Payne
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justonelooklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: when-can-we-do-this-again
+title: When Can We Do This Again
+artist: The Kendalls
+composers:
+- Curly Putman and Sonny Throckmorton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whencanwedothisagainlyricschords.pro
+    imported_at: '2026-01-02'

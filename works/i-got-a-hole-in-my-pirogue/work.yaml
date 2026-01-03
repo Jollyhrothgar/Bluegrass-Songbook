@@ -1,0 +1,18 @@
+id: i-got-a-hole-in-my-pirogue
+title: I Got A Hole In My Pirogue
+artist: Johnny Horton
+composers:
+- Johnny Horton and Tillman Franks
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igotaholeinmypiroguelyricschords.pro
+    imported_at: '2026-01-02'

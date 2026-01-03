@@ -1,0 +1,17 @@
+id: band-of-gold
+title: Band Of Gold
+artist: Charly McClain
+composers:
+- Ronald Dunbar and Edith Wayne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bandofgoldlyricschords.pro
+    imported_at: '2026-01-02'

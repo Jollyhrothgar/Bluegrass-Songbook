@@ -1,0 +1,18 @@
+id: roses-in-the-snow
+title: Roses In The Snow
+artist: Emmylou Harris
+composers:
+- Ruth Franks
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rosesinthesnowlyricschords.pro
+    imported_at: '2026-01-02'

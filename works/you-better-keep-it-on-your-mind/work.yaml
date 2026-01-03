@@ -1,0 +1,19 @@
+id: you-better-keep-it-on-your-mind
+title: You Better Keep It On Your Mind
+artist: Hank Williams
+composers:
+- Vic Mcalpin and Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youbetterkeepitonyourmindlyricschords.pro
+    imported_at: '2026-01-02'

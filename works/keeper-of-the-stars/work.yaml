@@ -1,0 +1,17 @@
+id: keeper-of-the-stars
+title: Keeper Of The Stars
+artist: Tracy Byrd
+composers:
+- Danny Mayo, Karen Staley, Dickey Lee
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keeperofthestarslyricschords.pro
+    imported_at: '2026-01-02'

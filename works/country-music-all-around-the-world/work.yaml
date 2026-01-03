@@ -1,0 +1,17 @@
+id: country-music-all-around-the-world
+title: Country Music All Around The World
+artist: Roy Drusky
+composers:
+- Ted Harris
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countrymusicallaroundtheworldlyricschords.pro
+    imported_at: '2026-01-02'

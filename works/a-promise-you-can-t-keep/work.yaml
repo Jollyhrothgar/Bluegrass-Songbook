@@ -1,0 +1,16 @@
+id: a-promise-you-can-t-keep
+title: A Promise You Can't Keep
+artist: Dwight Yoakam
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: apromiseyoucantkeeplyricschords.pro
+    imported_at: '2026-01-02'

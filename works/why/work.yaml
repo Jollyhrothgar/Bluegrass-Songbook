@@ -1,0 +1,18 @@
+id: why
+title: Why
+artist: Tracy Byrd
+composers:
+- Larry Bastian, Dewayne Blackwell, Bud Lee
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whylyricsandchords.pro
+    imported_at: '2026-01-02'

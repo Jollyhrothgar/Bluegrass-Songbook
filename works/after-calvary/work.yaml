@@ -1,0 +1,18 @@
+id: after-calvary
+title: After Calvary
+artist: The Oak Ridge Boys
+composers:
+- Laverne Tripp
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aftercalvarylyricschords.pro
+    imported_at: '2026-01-02'

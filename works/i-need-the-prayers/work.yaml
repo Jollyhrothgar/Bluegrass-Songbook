@@ -1,0 +1,18 @@
+id: i-need-the-prayers
+title: I Need The Prayers
+artist: Kitty Wells
+composers:
+- James D. Vaughn
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineedtheprayerslyricschords.pro
+    imported_at: '2026-01-02'

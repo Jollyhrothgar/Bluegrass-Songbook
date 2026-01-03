@@ -1,0 +1,19 @@
+id: out-of-my-head-and-back-in-my-bed-lyrics-chords
+title: Out Of My Head And Back In My Bed Lyrics Chords
+artist: Loretta Lynn
+composers:
+- Peggy Forman
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: outofmyheadandbackinmybedlyricschords.pro
+    imported_at: '2026-01-02'

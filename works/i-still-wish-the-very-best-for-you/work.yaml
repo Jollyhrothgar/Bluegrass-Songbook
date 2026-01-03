@@ -1,0 +1,19 @@
+id: i-still-wish-the-very-best-for-you
+title: I Still Wish The Very Best For You
+artist: Anne Murray
+composers:
+- Brent Titcomb
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: istillwishtheverybestforyoulyricschords.pro
+    imported_at: '2026-01-02'

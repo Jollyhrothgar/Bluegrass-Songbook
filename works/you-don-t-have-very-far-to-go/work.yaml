@@ -1,0 +1,18 @@
+id: you-don-t-have-very-far-to-go
+title: You Don't Have Very Far To Go
+artist: Merle Haggard
+composers:
+- Merle Haggard and Red Simpson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdonthaveveryfartogolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: get-all-your-love-together
+title: Get All Your Love Together
+artist: Moe Bandy
+composers:
+- Glenn Sutton, Arthur Leo Owens, Gene Vowell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: getallyourlovetogetherlyricschords.pro
+    imported_at: '2026-01-02'

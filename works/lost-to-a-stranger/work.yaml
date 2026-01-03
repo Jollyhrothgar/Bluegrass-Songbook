@@ -1,0 +1,20 @@
+id: lost-to-a-stranger
+title: Lost To A Stranger
+artist: Ricky Skaggs
+composers:
+- Frankie Brown[3/4 time]
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: losttoastrangerlyricschords.pro
+    imported_at: '2026-01-02'

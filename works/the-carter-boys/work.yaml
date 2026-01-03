@@ -1,0 +1,16 @@
+id: the-carter-boys
+title: The Carter Boys
+artist: Tom T. Hall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thecarterboyslyricschords.pro
+    imported_at: '2026-01-02'

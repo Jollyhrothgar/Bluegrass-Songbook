@@ -1,0 +1,17 @@
+id: your-memory-is-killing-me
+title: Your Memory Is Killing Me
+artist: The Survivors
+composers:
+- Guyanne McCall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourmemoryiskillingmelyricschords.pro
+    imported_at: '2026-01-02'

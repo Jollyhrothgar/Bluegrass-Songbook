@@ -1,0 +1,17 @@
+id: your-love-died-like-the-rose
+title: Your Love Died Like The Rose
+artist: The Johnson Mountain Boys
+composers:
+- Dudley Dale Connell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourlovediedliketheroselyricschords.pro
+    imported_at: '2026-01-02'

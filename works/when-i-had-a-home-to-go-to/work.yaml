@@ -1,0 +1,17 @@
+id: when-i-had-a-home-to-go-to
+title: When I Had A Home To Go To
+artist: Johnny Paycheck
+composers:
+- Billy Sherrill and Glenn Sutton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenihadahometogotolyricschords.pro
+    imported_at: '2026-01-02'

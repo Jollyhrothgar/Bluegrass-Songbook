@@ -1,0 +1,17 @@
+id: the-cowboy-and-the-lady
+title: The Cowboy And The Lady
+artist: Tommy Cash
+composers:
+- Peggy Jean Russell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thecowboyandtheladylyricschords.pro
+    imported_at: '2026-01-02'

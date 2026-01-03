@@ -1,0 +1,19 @@
+id: a-love-so-beautiful
+title: A Love So Beautiful
+artist: Roy Orbison
+composers:
+- Jeff Lynne and Roy Orbison
+default_key: Am
+tags:
+- Rockabilly
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alovesobeautifullyricschords.pro
+    imported_at: '2026-01-02'

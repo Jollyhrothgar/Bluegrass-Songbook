@@ -1,0 +1,16 @@
+id: lonely-too-long-1
+title: Lonely Too Long
+artist: Marty Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelytoolonglyricschords.pro
+    imported_at: '2026-01-02'

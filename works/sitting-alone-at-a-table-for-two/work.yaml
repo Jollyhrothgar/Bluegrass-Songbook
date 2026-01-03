@@ -1,0 +1,17 @@
+id: sitting-alone-at-a-table-for-two
+title: Sitting Alone At A Table For Two
+artist: Hank Locklin
+composers:
+- Lawton Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sittingaloneatatablefortwolyricschords.pro
+    imported_at: '2026-01-02'

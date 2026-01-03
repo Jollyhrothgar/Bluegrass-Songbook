@@ -1,0 +1,17 @@
+id: if-you-think-i-love-you-now
+title: If You Think I Love You Now
+artist: Tammy Wynette
+composers:
+- Billy Sherrill and Claude Putman Jr.
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouthinkiloveyounowlyricschords.pro
+    imported_at: '2026-01-02'

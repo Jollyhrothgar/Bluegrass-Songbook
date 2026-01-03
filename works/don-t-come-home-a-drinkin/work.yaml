@@ -1,0 +1,19 @@
+id: don-t-come-home-a-drinkin
+title: Don't Come Home A Drinkin'
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Peggy Sue Wells
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontcomehomeadrinkinlyricschords.pro
+    imported_at: '2026-01-02'

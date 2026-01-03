@@ -1,0 +1,17 @@
+id: that-s-the-way-i-feel
+title: That's The Way I Feel
+artist: George Jones
+composers:
+- Roger Miller and George Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsthewayifeellyricschords.pro
+    imported_at: '2026-01-02'

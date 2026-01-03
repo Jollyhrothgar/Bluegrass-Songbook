@@ -1,0 +1,17 @@
+id: sweeter-and-sweeter
+title: Sweeter And Sweeter
+artist: Statler Brothers
+composers:
+- Donald S. Reid and Harold W. Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweeterandsweeterlyricschords.pro
+    imported_at: '2026-01-02'

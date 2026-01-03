@@ -1,0 +1,17 @@
+id: helping-her-get-over-him
+title: Helping Her Get Over Him
+artist: Jim Ed Brown
+composers:
+- Charles Rogers and Jim Ed Brown
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helpinghergetoverhimlyricschords.pro
+    imported_at: '2026-01-02'

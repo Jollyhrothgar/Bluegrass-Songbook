@@ -1,0 +1,18 @@
+id: i-m-gonna-lasso-santa-claus
+title: I'm Gonna Lasso Santa Claus
+artist: Brenda Lee
+composers:
+- Frankie Adams and Wilbur Jones
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnalassosantaclauslyricschords.pro
+    imported_at: '2026-01-02'

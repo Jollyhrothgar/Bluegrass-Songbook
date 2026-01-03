@@ -1,0 +1,17 @@
+id: there-s-a-teardrop-in-your-eye
+title: There's A Teardrop In Your Eye
+artist: Hawkshaw Hawkins
+composers:
+- William Grishaw
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresateardropinyoureyelyricschords.pro
+    imported_at: '2026-01-02'

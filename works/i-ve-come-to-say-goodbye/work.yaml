@@ -1,0 +1,17 @@
+id: i-ve-come-to-say-goodbye
+title: I've Come To Say Goodbye
+artist: Faron Young
+composers:
+- Don Robertson and Hal Blair
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivecometosaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

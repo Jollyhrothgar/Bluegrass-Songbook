@@ -1,0 +1,19 @@
+id: if-it-was-up-to-me
+title: If It Was Up To Me
+artist: Doug Stone
+composers:
+- Johnny MacRae and Steve Clark
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitwasuptomelyricschords.pro
+    imported_at: '2026-01-02'

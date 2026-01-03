@@ -1,0 +1,17 @@
+id: it-ain-t-my-job-to-tote-your-monkey
+title: It Ain't My Job To Tote Your Monkey
+artist: Bill Anderson
+composers:
+- Bill Anderson, Rex Schnelle, Rivers Rutherford
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itaintmyjobtototeyourmonkeylyricschords.pro
+    imported_at: '2026-01-02'

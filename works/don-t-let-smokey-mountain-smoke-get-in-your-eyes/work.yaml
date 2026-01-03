@@ -1,0 +1,17 @@
+id: don-t-let-smokey-mountain-smoke-get-in-your-eyes
+title: Don't Let Smokey Mountain Smoke Get In Your Eyes
+artist: The Osborne Brothers
+composers:
+- Cecil Allen Null
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontletsmokeymountainsmokegetinyoureyeslyricschords.pro
+    imported_at: '2026-01-02'

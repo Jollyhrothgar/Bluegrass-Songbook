@@ -1,0 +1,15 @@
+id: still-got-a-couple-of-good-years-left
+title: Still Got A Couple Of Good Years Left
+artist: Ricky Van Shelton
+composers:
+- Gary Burr
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stillgotacoupleofgoodyearsleftlyricschords.pro
+    imported_at: '2026-01-02'

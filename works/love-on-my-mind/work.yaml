@@ -1,0 +1,17 @@
+id: love-on-my-mind
+title: Love On My Mind
+artist: Eddy Arnold
+composers:
+- Cindy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveonmymindlyricschords.pro
+    imported_at: '2026-01-02'

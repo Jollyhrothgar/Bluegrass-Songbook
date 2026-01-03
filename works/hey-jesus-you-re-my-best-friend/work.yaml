@@ -1,0 +1,15 @@
+id: hey-jesus-you-re-my-best-friend
+title: Hey Jesus You're My Best Friend
+artist: B J Thomas
+composers:
+- Don Goodman and Mary Ann Kennedy
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heyJesusyouremybestfriendlyricschords.pro
+    imported_at: '2026-01-02'

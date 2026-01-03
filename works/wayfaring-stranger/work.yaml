@@ -1,0 +1,13 @@
+id: wayfaring-stranger
+title: Wayfaring Stranger
+artist: Don Edwards
+default_key: Am
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wayfaringstrangerlyricsandchords.pro
+    imported_at: '2026-01-02'

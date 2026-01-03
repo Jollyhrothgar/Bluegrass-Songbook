@@ -1,0 +1,15 @@
+id: roses
+title: Roses
+artist: Jim Reeves
+composers:
+- Tim Spencer and Glenn Spencer
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: roseslyricschords.pro
+    imported_at: '2026-01-02'

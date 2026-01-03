@@ -1,0 +1,17 @@
+id: across-the-wide-missouri
+title: Across The Wide Missouri
+artist: Ray Price
+composers:
+- Ervin Drake and Jimmy Shirl
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: acrossthewidemissourilyricschords.pro
+    imported_at: '2026-01-02'

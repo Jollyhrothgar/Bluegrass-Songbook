@@ -1,0 +1,17 @@
+id: daughter-of-the-vine
+title: Daughter Of The Vine
+artist: Vernon Oxford
+composers:
+- Benny Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: daughterofthevinelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: if-you-see-a-change-in-me
+title: If You See A Change In Me
+artist: Merle Haggard
+composers:
+- Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouseeachangeinmelyricschords.pro
+    imported_at: '2026-01-02'

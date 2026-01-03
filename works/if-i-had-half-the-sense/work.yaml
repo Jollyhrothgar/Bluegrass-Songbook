@@ -1,0 +1,18 @@
+id: if-i-had-half-the-sense
+title: If I Had Half The Sense
+artist: Lefty Frizzell
+composers:
+- Don Pearce
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifihadhalfthesenselyricschords.pro
+    imported_at: '2026-01-02'

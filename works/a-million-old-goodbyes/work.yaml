@@ -1,0 +1,18 @@
+id: a-million-old-goodbyes
+title: A Million Old Goodbyes
+artist: Mel Tillis
+composers:
+- Steve Gibb, Bobby Russell, Buzz Cason
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amillionoldgoodbyeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: it-ain-t-no-record
+title: It Ain't No Record
+artist: Boxcar Willie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itaintnorecordlyricschords.pro
+    imported_at: '2026-01-02'

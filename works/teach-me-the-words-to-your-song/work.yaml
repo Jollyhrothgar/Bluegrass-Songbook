@@ -1,0 +1,17 @@
+id: teach-me-the-words-to-your-song
+title: Teach Me The Words To Your Song
+artist: Tanya Tucker
+composers:
+- Rory Bourke and Gayle Barnhill
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: teachmethewordstoyoursonglyricschords.pro
+    imported_at: '2026-01-02'

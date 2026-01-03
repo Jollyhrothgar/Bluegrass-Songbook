@@ -1,0 +1,18 @@
+id: wishing-smiles-made-it-all-true
+title: Wishing Smiles Made It All True
+artist: Anne Murray
+composers:
+- Richard Gael
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wishingsmilesmadeitalltruelyricschords.pro
+    imported_at: '2026-01-02'

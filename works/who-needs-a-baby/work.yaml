@@ -1,0 +1,15 @@
+id: who-needs-a-baby
+title: Who Needs A Baby
+artist: Tom T. Hall
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoneedsababylyricschords.pro
+    imported_at: '2026-01-02'

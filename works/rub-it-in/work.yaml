@@ -1,0 +1,17 @@
+id: rub-it-in
+title: Rub It In
+artist: Billy Crash Craddock
+composers:
+- Layng Martine
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rubitinlyricschords.pro
+    imported_at: '2026-01-02'

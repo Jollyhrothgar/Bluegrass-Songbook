@@ -1,0 +1,17 @@
+id: gently-rock-his-cradle
+title: Gently Rock His Cradle
+artist: Jimmie Davis
+composers:
+- Mosie Lister
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gentlyrockhiscradlelyricschords.pro
+    imported_at: '2026-01-02'

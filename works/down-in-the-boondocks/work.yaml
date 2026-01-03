@@ -1,0 +1,17 @@
+id: down-in-the-boondocks
+title: Down In The Boondocks
+artist: Billy Joe Royal
+composers:
+- Joe South
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downintheboondockslyricschords.pro
+    imported_at: '2026-01-02'

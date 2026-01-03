@@ -1,0 +1,13 @@
+id: your-love-is-the-key-to-it-all
+title: Your Love Is The Key To It All
+artist: Johnny Paycheck
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourloveisthekeytoitalllyricschords.pro
+    imported_at: '2026-01-02'

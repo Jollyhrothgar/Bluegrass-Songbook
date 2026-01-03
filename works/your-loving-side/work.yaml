@@ -1,0 +1,18 @@
+id: your-loving-side
+title: Your Loving Side
+artist: Conway Twitty
+composers:
+- Roger Murrah, John Schweers, Carson Whitsett
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourlovingsidelyricschords.pro
+    imported_at: '2026-01-02'

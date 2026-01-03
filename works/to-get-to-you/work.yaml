@@ -1,0 +1,15 @@
+id: to-get-to-you
+title: To Get To You
+artist: Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: togettoyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: hello-love
+title: Hello Love
+artist: Hank Snow
+composers:
+- Betty Jean Robinson and Aileen Mnich
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hellolovelyricschords.pro
+    imported_at: '2026-01-02'

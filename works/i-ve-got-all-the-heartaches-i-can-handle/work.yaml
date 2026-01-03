@@ -1,0 +1,19 @@
+id: i-ve-got-all-the-heartaches-i-can-handle
+title: I've Got All The Heartaches I Can Handle
+artist: Ernest Tubb
+composers:
+- Shel Silverstein
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotalltheheartachesicanhandlelyricschords.pro
+    imported_at: '2026-01-02'

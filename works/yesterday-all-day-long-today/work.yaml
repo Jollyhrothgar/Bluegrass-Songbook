@@ -1,0 +1,17 @@
+id: yesterday-all-day-long-today
+title: Yesterday All Day Long Today
+artist: Norma Jean
+composers:
+- Clark Bentley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesterdayalldaylongtodaylyricschords.pro
+    imported_at: '2026-01-02'

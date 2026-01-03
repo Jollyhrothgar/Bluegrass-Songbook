@@ -1,0 +1,19 @@
+id: if-the-phone-doesn-t-ring
+title: If The Phone Doesn't Ring
+artist: Jimmy Buffett
+composers:
+- Jimmy Buffett, Will Jennings, Michael Utley
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifthephonedoesntringlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: whiskey-1
+title: Whiskey
+artist: Trampled by Turtles
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

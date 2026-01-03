@@ -1,0 +1,16 @@
+id: mcmichen-s-reel
+title: McMichen's Reel
+artist: Traditional
+composers:
+- Biography:Clayton McMichen
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

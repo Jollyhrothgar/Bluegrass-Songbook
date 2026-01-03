@@ -1,0 +1,19 @@
+id: last-cowboy-song
+title: Last Cowboy Song
+artist: Waylon Jennings
+composers:
+- Ed Bruce and Ron Peterson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lastcowboysonglyricschords.pro
+    imported_at: '2026-01-02'

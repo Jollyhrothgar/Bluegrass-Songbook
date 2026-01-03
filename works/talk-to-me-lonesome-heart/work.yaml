@@ -1,0 +1,17 @@
+id: talk-to-me-lonesome-heart
+title: Talk To Me Lonesome Heart
+artist: George Jones
+composers:
+- James O`Gwynn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: talktomelonesomeheartlyricschords.pro
+    imported_at: '2026-01-02'

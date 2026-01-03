@@ -1,0 +1,18 @@
+id: nobody-in-his-right-mind-your-mind
+title: Nobody In His Right Mind Your Mind
+artist: George Strait
+composers:
+- Dean Dillon
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodyinhisrightmindlyricschords.pro
+    imported_at: '2026-01-02'

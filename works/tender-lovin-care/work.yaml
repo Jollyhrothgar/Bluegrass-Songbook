@@ -1,0 +1,17 @@
+id: tender-lovin-care
+title: Tender Lovin' Care
+artist: George Morgan
+composers:
+- George Morgan and Curt Gibson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tenderlovincarelyricschords.pro
+    imported_at: '2026-01-02'

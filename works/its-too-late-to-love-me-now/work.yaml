@@ -1,0 +1,20 @@
+id: its-too-late-to-love-me-now
+title: It’s Too Late To Love Me Now
+artist: Dolly Parton
+composers:
+- Rory Bourke, Gene Dobbins, Johnny Wilson
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itstoolatetolovemenowlyricschords.pro
+    imported_at: '2026-01-02'

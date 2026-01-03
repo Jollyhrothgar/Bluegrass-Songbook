@@ -1,0 +1,18 @@
+id: i-m-wanting-to
+title: I'm Wanting To
+artist: Marty Robbins
+composers:
+- Ronny Robbins and Karen Russel
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imwantingtolyricschords.pro
+    imported_at: '2026-01-02'

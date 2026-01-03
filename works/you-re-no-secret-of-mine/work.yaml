@@ -1,0 +1,17 @@
+id: you-re-no-secret-of-mine
+title: You're No Secret Of Mine
+artist: Wynn Stewart
+composers:
+- L.D. Allen[3/4 time]
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourenosecretofminelyricschords.pro
+    imported_at: '2026-01-02'

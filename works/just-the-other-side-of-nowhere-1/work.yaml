@@ -1,0 +1,21 @@
+id: just-the-other-side-of-nowhere-1
+title: Just The Other Side Of Nowhere
+artist: Johnny Cash
+composers:
+- Kris Kristofferson
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justtheothersideofnowherelyricschords.pro
+    imported_at: '2026-01-02'

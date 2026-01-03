@@ -1,0 +1,15 @@
+id: it-takes-all-kinds-to-make-a-world
+title: It Takes All Kinds To Make A World
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ittakesallkindstomakeaworldlyricschords.pro
+    imported_at: '2026-01-02'

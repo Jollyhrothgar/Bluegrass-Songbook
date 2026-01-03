@@ -1,0 +1,17 @@
+id: let-s-just-be-lovers-and-leave-love-alone
+title: Let's Just Be Lovers And Leave Love Alone
+artist: Billy Walker
+composers:
+- Chuck Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsjustbeloversandleavelovealonelyricschords.pro
+    imported_at: '2026-01-02'

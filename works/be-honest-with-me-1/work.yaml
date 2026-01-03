@@ -1,0 +1,18 @@
+id: be-honest-with-me-1
+title: Be Honest With Me
+artist: Gene Autry
+composers:
+- Fred Rose and Gene Autry
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: behonestwithmelyricschords.pro
+    imported_at: '2026-01-02'

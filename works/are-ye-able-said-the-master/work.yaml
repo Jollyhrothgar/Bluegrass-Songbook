@@ -1,0 +1,15 @@
+id: are-ye-able-said-the-master
+title: Are Ye Able Said The Master
+artist: Burl Ives
+composers:
+- Earl Bowman Marlatt and Harry Silverdale Mason
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: areyeablesaidthemasterlyricschords.pro
+    imported_at: '2026-01-02'

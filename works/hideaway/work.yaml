@@ -1,0 +1,17 @@
+id: hideaway
+title: Hideaway
+artist: Laurie Lewis and Kathy Kallick
+composers:
+- Debbie Cotter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hideawaylyricschords.pro
+    imported_at: '2026-01-02'

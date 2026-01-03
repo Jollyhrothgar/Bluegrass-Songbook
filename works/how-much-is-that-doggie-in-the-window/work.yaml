@@ -1,0 +1,17 @@
+id: how-much-is-that-doggie-in-the-window
+title: How Much Is That Doggie In The Window
+artist: Patti Page
+composers:
+- Bob Merrill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howmuchisthatdoggieinthewindowlyricschords.pro
+    imported_at: '2026-01-02'

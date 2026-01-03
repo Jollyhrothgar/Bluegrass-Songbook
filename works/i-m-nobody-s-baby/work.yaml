@@ -1,0 +1,17 @@
+id: i-m-nobody-s-baby
+title: I'm Nobody's Baby
+artist: Connie Francis
+composers:
+- Benny Davis, Milton Ager, Lester Santly
+default_key: G
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnobodysbabylyricschords.pro
+    imported_at: '2026-01-02'

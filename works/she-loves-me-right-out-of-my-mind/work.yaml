@@ -1,0 +1,17 @@
+id: she-loves-me-right-out-of-my-mind
+title: She Loves Me Right Out Of My Mind
+artist: George Jones
+composers:
+- Freddy Weller and Spooner Oldham
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shelovesmerightoutofmymindlyricschords.pro
+    imported_at: '2026-01-02'

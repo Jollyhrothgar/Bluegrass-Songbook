@@ -1,0 +1,19 @@
+id: autumn-leaves
+title: Autumn Leaves
+artist: the Everly Brothers
+composers:
+- Joseph Kosma and Jacques Andre Marie
+default_key: Am
+tags:
+- Pop
+- Rockabilly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: autumnleaveslyricschords.pro
+    imported_at: '2026-01-02'

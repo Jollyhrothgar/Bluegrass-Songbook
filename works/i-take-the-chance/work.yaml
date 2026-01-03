@@ -1,0 +1,17 @@
+id: i-take-the-chance
+title: I Take The Chance
+artist: Jim Ed Brown
+composers:
+- Charles &amp; Ira Louvin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itakethechancelyricschords.pro
+    imported_at: '2026-01-02'

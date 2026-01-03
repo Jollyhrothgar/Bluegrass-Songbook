@@ -1,0 +1,18 @@
+id: hold-hands
+title: Hold Hands
+artist: Fats Domino
+composers:
+- Antonio Domino, Pee Wee Maddux, Jimmy Donley
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdhandslyricschords.pro
+    imported_at: '2026-01-02'

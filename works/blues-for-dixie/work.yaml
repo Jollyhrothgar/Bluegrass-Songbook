@@ -1,0 +1,17 @@
+id: blues-for-dixie
+title: Blues For Dixie
+artist: Bob Wills
+composers:
+- O. W. Mayo
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluesfordixielyricschords.pro
+    imported_at: '2026-01-02'

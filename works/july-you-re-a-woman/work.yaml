@@ -1,0 +1,18 @@
+id: july-you-re-a-woman
+title: July You're A Woman
+artist: Ed Bruce
+composers:
+- John C. Stewart
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: julyyoureawomanlyricschords.pro
+    imported_at: '2026-01-02'

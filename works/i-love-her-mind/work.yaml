@@ -1,0 +1,17 @@
+id: i-love-her-mind
+title: I Love Her Mind
+artist: The Bellamy Brothers
+composers:
+- David M. Bellamy
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovehermindlyricschords.pro
+    imported_at: '2026-01-02'

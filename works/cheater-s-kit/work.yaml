@@ -1,0 +1,17 @@
+id: cheater-s-kit
+title: Cheater's Kit
+artist: Tommy Overstreet
+composers:
+- Rory Bourke, Gene Dobbins, Johnny Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cheaterskitlyricschords.pro
+    imported_at: '2026-01-02'

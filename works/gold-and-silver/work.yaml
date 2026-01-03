@@ -1,0 +1,17 @@
+id: gold-and-silver
+title: Gold And Silver
+artist: Sonny James
+composers:
+- Shirley Legate
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goldandsilverlyricschords.pro
+    imported_at: '2026-01-02'

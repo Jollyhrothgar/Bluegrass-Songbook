@@ -1,0 +1,15 @@
+id: baby-s-blue-again
+title: Baby's Blue Again
+artist: Bill Anderson
+composers:
+- Jim Weatherly
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babysblueagainlyricschords.pro
+    imported_at: '2026-01-02'

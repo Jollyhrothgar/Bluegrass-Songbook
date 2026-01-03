@@ -1,0 +1,21 @@
+id: remember-the-cross
+title: Remember The Cross
+artist: Ricky Skaggs
+composers:
+- Bill Monroe and Howard Watts
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rememberthecrosslyricschords.pro
+    imported_at: '2026-01-02'

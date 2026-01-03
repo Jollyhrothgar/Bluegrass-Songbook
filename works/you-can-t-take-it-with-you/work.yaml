@@ -1,0 +1,15 @@
+id: you-can-t-take-it-with-you
+title: You Can't Take It With You
+artist: Ray Price
+composers:
+- Hal Bynum and Jim Kandy
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanttakeitwithyoulyricschords.pro
+    imported_at: '2026-01-02'

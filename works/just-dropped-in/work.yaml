@@ -1,0 +1,20 @@
+id: just-dropped-in
+title: Just Dropped In
+artist: Jerry Lee Lewis
+composers:
+- Mickey Newbury
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justdroppedinlyricschords.pro
+    imported_at: '2026-01-02'

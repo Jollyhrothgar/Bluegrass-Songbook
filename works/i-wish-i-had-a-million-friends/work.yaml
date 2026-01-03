@@ -1,0 +1,16 @@
+id: i-wish-i-had-a-million-friends
+title: I Wish I Had A Million Friends
+artist: Tom T Hall
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishihadamillionfriendslyricschords.pro
+    imported_at: '2026-01-02'

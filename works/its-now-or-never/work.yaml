@@ -1,0 +1,21 @@
+id: its-now-or-never
+title: It’s Now or Never
+artist: Elvis Presley
+composers:
+- Aaron Schroeder, Wally Gold, Edoardo DiCapua
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsnoworneverlyricschords.pro
+    imported_at: '2026-01-02'

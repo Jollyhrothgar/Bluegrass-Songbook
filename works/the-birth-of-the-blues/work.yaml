@@ -1,0 +1,18 @@
+id: the-birth-of-the-blues
+title: The Birth Of The Blues
+artist: Randy Travis
+composers:
+- Buddy DeSylva, Lew Brown, Ray Henderson
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebirthoftheblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: but-you-know-i-love-you
+title: But You Know I Love You
+artist: Bill Anderson
+composers:
+- Mike Settle and Pierre Delanoe
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: butyouknowiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

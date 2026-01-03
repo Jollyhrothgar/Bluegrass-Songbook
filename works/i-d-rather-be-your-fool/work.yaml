@@ -1,0 +1,16 @@
+id: i-d-rather-be-your-fool
+title: I'd Rather Be Your Fool
+artist: Johnny Paycheck
+default_key: D
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idratherbeyourfoollyricschords.pro
+    imported_at: '2026-01-02'

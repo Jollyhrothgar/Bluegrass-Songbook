@@ -1,0 +1,21 @@
+id: i-forgot-to-remember-to-forget
+title: I Forgot to Remember to Forget
+artist: Elvis Presley
+composers:
+- Stan Kesler and Carl Feathers
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iforgottoremembertoforgetlyricsandchords.pro
+    imported_at: '2026-01-02'

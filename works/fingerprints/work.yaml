@@ -1,0 +1,20 @@
+id: fingerprints
+title: Fingerprints
+artist: Patsy Cline
+composers:
+- Donn Hecht, W.O. Fleener, W.S. Stevenson
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fingerprintslyricschords.pro
+    imported_at: '2026-01-02'

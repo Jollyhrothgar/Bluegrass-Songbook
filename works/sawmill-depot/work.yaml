@@ -1,0 +1,17 @@
+id: sawmill-depot
+title: Sawmill Depot
+artist: Jack Greene
+composers:
+- Sanger D. Shafer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sawmilldepotlyricschords.pro
+    imported_at: '2026-01-02'

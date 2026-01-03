@@ -1,0 +1,17 @@
+id: lonely-corner
+title: Lonely Corner
+artist: Ricky Nelson
+composers:
+- Betty Murdoch and Johnny Burnett
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelycornerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: robbie-s-song-for-jesus
+title: Robbie's Song For Jesus
+artist: Anne Murray
+composers:
+- Robbie MacNeill
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: robbiessongforJesuslyricschords.pro
+    imported_at: '2026-01-02'

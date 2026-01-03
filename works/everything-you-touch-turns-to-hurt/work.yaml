@@ -1,0 +1,17 @@
+id: everything-you-touch-turns-to-hurt
+title: Everything You Touch Turns To Hurt
+artist: Johnny Paycheck
+composers:
+- Johnny Paycheck and Aubrey Mayhew
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingyoutouchturnstohurtlyricschords.pro
+    imported_at: '2026-01-02'

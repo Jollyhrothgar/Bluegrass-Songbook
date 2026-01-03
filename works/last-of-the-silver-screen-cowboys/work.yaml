@@ -1,0 +1,15 @@
+id: last-of-the-silver-screen-cowboys
+title: Last Of The Silver Screen Cowboys
+artist: Rex Allen Jr.
+composers:
+- Steve Dorff, Milton Brown, Snuff Garrett
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lastofthesilverscreencowboyslyricschords.pro
+    imported_at: '2026-01-02'

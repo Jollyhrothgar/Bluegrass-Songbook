@@ -1,0 +1,21 @@
+id: he-knows-just-what-i-need
+title: He Knows Just What I Need
+artist: Elvis Presley
+composers:
+- Mosie Lister
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heknowsjustwhatineedlyricschords.pro
+    imported_at: '2026-01-02'

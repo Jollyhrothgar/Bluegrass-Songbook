@@ -1,0 +1,18 @@
+id: i-know-the-lord-laid-his-hand-on-me
+title: I Know The Lord Laid His Hand On Me
+artist: Tennessee Ernie Ford
+composers:
+- Ernie Ford and Jack Fascinato
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowthelordlaidhishandonmelyricschords.pro
+    imported_at: '2026-01-02'

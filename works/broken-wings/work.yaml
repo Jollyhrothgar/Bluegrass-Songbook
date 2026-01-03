@@ -1,0 +1,17 @@
+id: broken-wings
+title: Broken Wings
+artist: Sonny James
+composers:
+- Bernard Crum and John Jerome
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brokenwingslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: this-ain-t-just-another-lust-affair
+title: This Ain't Just Another Lust Affair
+artist: Mel Street
+composers:
+- Earl Thomas Conley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisaintjustanotherlustaffairlyricschords.pro
+    imported_at: '2026-01-02'

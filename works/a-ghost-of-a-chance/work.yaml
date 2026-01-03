@@ -1,0 +1,17 @@
+id: a-ghost-of-a-chance
+title: A Ghost Of A Chance
+artist: Moe Bandy
+composers:
+- Steve Collom
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aghostofachancelyricschords.pro
+    imported_at: '2026-01-02'

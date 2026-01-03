@@ -1,0 +1,17 @@
+id: to-be-alone
+title: To Be Alone
+artist: Bill Anderson
+composers:
+- Billy Vaughn
+default_key: F
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tobealonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: seaman-s-blues
+title: Seaman's Blues
+artist: Hank Williams
+composers:
+- Ernest Tubb and Talmadge Tubb
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: seamansblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: new-river-train
+title: New River Train
+artist: Bill Monroe
+composers:
+- Maggie Andrews
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: newrivertrainlyricschords.pro
+    imported_at: '2026-01-02'

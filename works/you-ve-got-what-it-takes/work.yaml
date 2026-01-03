@@ -1,0 +1,20 @@
+id: you-ve-got-what-it-takes
+title: You've Got What It Takes
+artist: Anne Murray
+composers:
+- Clyde Otis and Murray Stein
+default_key: D
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotwhatittakeslyricschords.pro
+    imported_at: '2026-01-02'

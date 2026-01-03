@@ -1,0 +1,18 @@
+id: help-me-rhonda
+title: Help Me Rhonda
+artist: Roy Orbison
+composers:
+- Mike E. Love and Brian Wilson
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helpmerhondalyricschords.pro
+    imported_at: '2026-01-02'

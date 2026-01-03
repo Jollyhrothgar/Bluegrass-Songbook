@@ -1,0 +1,18 @@
+id: i-die-ten-thousand-times-a-day
+title: I Die Ten Thousand Times A Day
+artist: Merle Haggard
+composers:
+- Leon Payne
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idietenthousandtimesadaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-m-going-on-with-everything-gone
+title: I'm Going On With Everything Gone
+artist: Tammy Wynette
+composers:
+- Agnes Wilson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgoingonwitheverythinggonelyricschords.pro
+    imported_at: '2026-01-02'

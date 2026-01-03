@@ -1,0 +1,17 @@
+id: that-over-thirty-look
+title: That Over Thirty Look
+artist: Faron Young
+composers:
+- Billy Arr and Rick Klang
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatoverthirtylooklyricschords.pro
+    imported_at: '2026-01-02'

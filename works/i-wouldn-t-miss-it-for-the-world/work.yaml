@@ -1,0 +1,18 @@
+id: i-wouldn-t-miss-it-for-the-world
+title: I Wouldn't Miss It For The World
+artist: Hank Thompson
+composers:
+- Orville Proctor and Preston Sergeant
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldntmissitfortheworldlyricschords.pro
+    imported_at: '2026-01-02'

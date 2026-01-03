@@ -1,0 +1,17 @@
+id: that-wild-and-wicked-look-in-your-eye
+title: That Wild And Wicked Look In Your Eye
+artist: Ernest Tubb
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatwildandwickedlookinyoureyelyricschords.pro
+    imported_at: '2026-01-02'

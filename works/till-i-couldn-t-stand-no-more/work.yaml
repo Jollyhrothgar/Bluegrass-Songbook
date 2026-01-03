@@ -1,0 +1,19 @@
+id: till-i-couldn-t-stand-no-more
+title: Till I Couldn't Stand No More
+artist: Carl Perkins
+composers:
+- Pamela Patton
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillicouldntstandnomorelyricschords.pro
+    imported_at: '2026-01-02'

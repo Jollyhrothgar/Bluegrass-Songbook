@@ -1,0 +1,17 @@
+id: ages-and-ages-ago-with-chords
+title: Ages And Ages Ago with chords
+artist: Jan Howard
+composers:
+- Gene Autry, Fred Rose, Ray Whitley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: agesandagesagolyricswithchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: another-month-another-week-another-day
+title: Another Month Another Week Another Day
+artist: Webb Pierce
+composers:
+- Webb Pierce and Sylvia Fisher
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anothermonthanotherweekanotherdaylyricschords.pro
+    imported_at: '2026-01-02'

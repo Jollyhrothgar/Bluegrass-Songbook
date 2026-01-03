@@ -1,0 +1,17 @@
+id: down-at-the-corner-bar
+title: Down At The Corner Bar
+artist: Tony Booth
+composers:
+- Carl Barney and Tony Booth
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downatthecornerbarlyricschords.pro
+    imported_at: '2026-01-02'

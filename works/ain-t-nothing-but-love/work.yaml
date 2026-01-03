@@ -1,0 +1,17 @@
+id: ain-t-nothing-but-love
+title: Ain't Nothing But Love
+artist: Ricky Nelson
+composers:
+- Thomas Knight
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintnothingbutlovelyricschords.pro
+    imported_at: '2026-01-02'

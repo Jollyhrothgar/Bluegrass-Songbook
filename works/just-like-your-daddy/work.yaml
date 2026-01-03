@@ -1,0 +1,15 @@
+id: just-like-your-daddy
+title: Just Like Your Daddy
+artist: Jeanne Pruett
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justlikeyourdaddylyricschords.pro
+    imported_at: '2026-01-02'

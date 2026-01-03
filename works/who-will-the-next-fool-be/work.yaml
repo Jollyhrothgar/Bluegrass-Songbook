@@ -1,0 +1,17 @@
+id: who-will-the-next-fool-be
+title: Who Will The Next Fool Be
+artist: Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whowillthenextfoolbelyricschords.pro
+    imported_at: '2026-01-02'

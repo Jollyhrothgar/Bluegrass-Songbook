@@ -1,0 +1,15 @@
+id: believe-1
+title: Believe
+artist: Steve Ivey
+default_key: Em
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: believelyricschords.pro
+    imported_at: '2026-01-02'

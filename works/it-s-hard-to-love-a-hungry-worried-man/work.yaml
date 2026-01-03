@@ -1,0 +1,15 @@
+id: it-s-hard-to-love-a-hungry-worried-man
+title: It's Hard To Love A Hungry Worried Man
+artist: Billy Crash Craddock
+composers:
+- John Adrian
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itshardtoloveahungryworriedmanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: new-york-times
+title: New York Times
+artist: Gene Watson
+composers:
+- O.B. McClinton and Sara Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: newyorktimeslyricschords.pro
+    imported_at: '2026-01-02'

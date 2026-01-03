@@ -1,0 +1,18 @@
+id: battle-of-new-orleans
+title: Battle of New Orleans
+artist: Johnny Horton
+composers:
+- Jimmie Driftwood
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: battleofneworleanslyricschords.pro
+    imported_at: '2026-01-02'

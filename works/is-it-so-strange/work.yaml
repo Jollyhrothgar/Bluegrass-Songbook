@@ -1,0 +1,20 @@
+id: is-it-so-strange
+title: Is It So Strange
+artist: Elvis Presley
+composers:
+- Faron Young
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isitsostrangelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: step-into-the-water
+title: Step Into The Water
+artist: Cathedral Quartet
+composers:
+- Kirk Talley
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stepintothewaterlyricschords.pro
+    imported_at: '2026-01-02'

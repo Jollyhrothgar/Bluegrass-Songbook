@@ -1,0 +1,15 @@
+id: the-last-one-to-touch-me
+title: The Last One To Touch Me
+artist: Porter Wagoner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelastonetotouchmelyricschords.pro
+    imported_at: '2026-01-02'

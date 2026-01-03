@@ -1,0 +1,21 @@
+id: woman-without-love
+title: Woman Without Love
+artist: Elvis Presley
+composers:
+- Jerry Chesnut
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: womanwithoutlovelyricschords.pro
+    imported_at: '2026-01-02'

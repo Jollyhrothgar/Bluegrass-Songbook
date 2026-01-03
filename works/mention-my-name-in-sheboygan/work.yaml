@@ -1,0 +1,19 @@
+id: mention-my-name-in-sheboygan
+title: Mention My Name In Sheboygan
+artist: The Everly Brothers
+composers:
+- Bob Hilliard, Dick Sanfor, Sammy Mysels
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mentionmynameinsheboyganlyricschords.pro
+    imported_at: '2026-01-02'

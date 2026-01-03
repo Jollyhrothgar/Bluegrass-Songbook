@@ -1,0 +1,18 @@
+id: i-see-the-want-to-in-your-eyes
+title: I See The Want To In Your Eyes
+artist: Conway Twitty
+composers:
+- Wayne Carson Thompson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iseethewanttoinyoureyeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: daddy-s-arms
+title: Daddy's Arms
+artist: Cal Smith
+composers:
+- Rusty Thornhill
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: daddysarmslyricschords.pro
+    imported_at: '2026-01-02'

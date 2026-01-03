@@ -1,0 +1,18 @@
+id: don-t-sweetheart-me
+title: Don't Sweetheart Me
+artist: Wilburn Brothers
+composers:
+- Cliff Friend and Charles Tobias
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontsweetheartmelyricschords.pro
+    imported_at: '2026-01-02'

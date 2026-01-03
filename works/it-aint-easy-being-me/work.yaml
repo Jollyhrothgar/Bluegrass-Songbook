@@ -1,0 +1,15 @@
+id: it-aint-easy-being-me
+title: It Ain’t Easy Being Me
+artist: John Anderson
+composers:
+- Chris Knight and Craig Wiseman
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itainteasybeingmelyricschords.pro
+    imported_at: '2026-01-02'

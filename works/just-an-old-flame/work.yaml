@@ -1,0 +1,17 @@
+id: just-an-old-flame
+title: Just an Old Flame
+artist: Hank Thompson
+composers:
+- Bob Robinson and Hank Thompson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justanoldflamelyricsandchords.pro
+    imported_at: '2026-01-02'

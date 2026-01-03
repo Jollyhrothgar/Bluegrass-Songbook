@@ -1,0 +1,21 @@
+id: this-is-my-heaven
+title: This Is My Heaven
+artist: Elvis Presley
+composers:
+- Bernie Baum, Bill Giant, Florence Kaye
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisismyheavenlyricschords.pro
+    imported_at: '2026-01-02'

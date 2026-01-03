@@ -1,0 +1,17 @@
+id: if-you-love-him-love-him-right
+title: If You Love Him Love Him Right
+artist: Tammy Wynette
+composers:
+- Carmol Taylor and Quinton Claunch
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoulovehimlovehimrightlyricschords.pro
+    imported_at: '2026-01-02'

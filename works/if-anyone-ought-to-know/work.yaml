@@ -1,0 +1,18 @@
+id: if-anyone-ought-to-know
+title: If Anyone Ought To Know
+artist: Merle Haggard
+composers:
+- Bonnie Owens and Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifanyoneoughttoknowlyricschords.pro
+    imported_at: '2026-01-02'

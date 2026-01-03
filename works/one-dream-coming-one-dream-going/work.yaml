@@ -1,0 +1,17 @@
+id: one-dream-coming-one-dream-going
+title: One Dream Coming One Dream Going
+artist: Billy Crash Craddock
+composers:
+- John Adrian
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onedreamcomingonedreamgoinglyricschords.pro
+    imported_at: '2026-01-02'

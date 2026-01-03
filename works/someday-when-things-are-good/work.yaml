@@ -1,0 +1,16 @@
+id: someday-when-things-are-good
+title: Someday When Things Are Good
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somedaywhenthingsaregoodlyricschords.pro
+    imported_at: '2026-01-02'

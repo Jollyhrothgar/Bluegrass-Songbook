@@ -1,0 +1,18 @@
+id: the-joy-of-being-a-woman
+title: The Joy Of Being A Woman
+artist: Tammy Wynette
+composers:
+- Dan Hoffman and Chuck Woolery
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thejoyofbeingawomanlyricschords.pro
+    imported_at: '2026-01-02'

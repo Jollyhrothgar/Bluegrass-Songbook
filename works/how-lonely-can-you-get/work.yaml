@@ -1,0 +1,15 @@
+id: how-lonely-can-you-get
+title: How Lonely Can You Get
+artist: Del McCoury
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howlonelycanyougetlyricschords.pro
+    imported_at: '2026-01-02'

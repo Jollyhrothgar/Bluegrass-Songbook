@@ -1,0 +1,17 @@
+id: you-can-t-make-old-friends
+title: You Can't Make Old Friends
+artist: Kenny Rogers
+composers:
+- Ryan Hanna King, Don Schlitz, Caitlyn Smith
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantmakeoldfriendslyricschords.pro
+    imported_at: '2026-01-02'

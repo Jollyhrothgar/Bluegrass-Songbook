@@ -1,0 +1,17 @@
+id: little-bitty
+title: Little Bitty
+artist: Alan Jackson
+composers:
+- Tom T. Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlebittylyricschords.pro
+    imported_at: '2026-01-02'

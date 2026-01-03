@@ -1,0 +1,17 @@
+id: wanted-someone-to-love-me
+title: Wanted Someone To Love Me
+artist: Hawkshaw Hawkins
+composers:
+- Fowler/Crowe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wantedsomeonetolovemelyricschords.pro
+    imported_at: '2026-01-02'

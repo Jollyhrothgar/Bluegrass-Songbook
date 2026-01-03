@@ -1,0 +1,18 @@
+id: i-try-to-think-about-elvi
+title: I Try To Think About Elvi
+artist: Patty Loveless
+composers:
+- Gary Burr
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itrytothinkaboutelvislyricschords.pro
+    imported_at: '2026-01-02'

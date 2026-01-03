@@ -1,0 +1,17 @@
+id: deep-in-love-and-buried-in-the-blues
+title: Deep In Love And Buried In The Blues
+artist: Johnny Bush
+composers:
+- Joe Gracey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: deepinloveandburiedintheblueslyricschords.pro
+    imported_at: '2026-01-02'

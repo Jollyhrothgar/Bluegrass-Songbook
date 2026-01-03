@@ -1,0 +1,18 @@
+id: golden-streets-of-glory
+title: Golden Streets Of Glory
+artist: Dolly Parton
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goldenstreetsofglorylyricschords.pro
+    imported_at: '2026-01-02'

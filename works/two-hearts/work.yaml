@@ -1,0 +1,18 @@
+id: two-hearts
+title: Two Hearts
+artist: Vince Gill
+composers:
+- Leslie Satcher and Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twoheartslyricschords.pro
+    imported_at: '2026-01-02'

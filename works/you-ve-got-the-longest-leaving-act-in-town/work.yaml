@@ -1,0 +1,17 @@
+id: you-ve-got-the-longest-leaving-act-in-town
+title: You've Got The Longest Leaving Act In Town
+artist: John Anderson
+composers:
+- Dave Kirby and Sonny Throckmorton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotthelongestleavingactintownlyricschords.pro
+    imported_at: '2026-01-02'

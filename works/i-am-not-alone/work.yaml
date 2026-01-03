@@ -1,0 +1,17 @@
+id: i-am-not-alone
+title: I Am Not Alone
+artist: Jack Greene
+composers:
+- Dolly Parton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iamnotalonelyricschords.pro
+    imported_at: '2026-01-02'

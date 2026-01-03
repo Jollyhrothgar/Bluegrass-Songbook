@@ -1,0 +1,17 @@
+id: you-never-miss-a-real-good-thing
+title: You Never Miss A Real Good Thing
+artist: Crystal Gayle
+composers:
+- Bob McDill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: younevermissarealgoodthinglyricschords.pro
+    imported_at: '2026-01-02'

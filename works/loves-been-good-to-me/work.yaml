@@ -1,0 +1,17 @@
+id: loves-been-good-to-me
+title: Loves Been Good To Me
+artist: Tom T. Hall
+composers:
+- Rod Mckuen
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovesbeengoodtomelyricschords.pro
+    imported_at: '2026-01-02'

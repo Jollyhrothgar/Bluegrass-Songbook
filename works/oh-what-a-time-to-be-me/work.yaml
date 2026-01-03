@@ -1,0 +1,19 @@
+id: oh-what-a-time-to-be-me
+title: Oh What A Time To Be Me
+artist: Randy Travis
+composers:
+- Don Schlitz and Randy Travis
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohwhatatimetobemelyricschords.pro
+    imported_at: '2026-01-02'

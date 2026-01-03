@@ -1,0 +1,17 @@
+id: ill-catch-you-when-you-fall
+title: I’ll Catch You When You Fall
+artist: Charlie Walker
+composers:
+- Harland Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illcatchyouwhenyoufalllyricschords.pro
+    imported_at: '2026-01-02'

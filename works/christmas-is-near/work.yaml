@@ -1,0 +1,15 @@
+id: christmas-is-near
+title: Christmas Is Near
+artist: Ralph Stanley
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasisnearlyricschords.pro
+    imported_at: '2026-01-02'

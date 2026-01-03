@@ -1,0 +1,15 @@
+id: i-m-in-love-with-everything
+title: I'm In Love With Everything
+artist: Faron Young
+composers:
+- Billy Deaton, Clyde Pitts, Virginia King
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iminlovewitheverythinglyricschords.pro
+    imported_at: '2026-01-02'

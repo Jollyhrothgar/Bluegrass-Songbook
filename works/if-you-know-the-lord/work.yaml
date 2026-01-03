@@ -1,0 +1,17 @@
+id: if-you-know-the-lord
+title: If You Know The Lord
+artist: The King's Heralds
+composers:
+- Bickley Reichner
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouknowthelordlyricschords.pro
+    imported_at: '2026-01-02'

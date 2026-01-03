@@ -1,0 +1,18 @@
+id: love-is
+title: Love Is
+artist: Emmylou Harris
+composers:
+- Kate McGarrigle, Anna McGarrigle
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveislyricschords.pro
+    imported_at: '2026-01-02'

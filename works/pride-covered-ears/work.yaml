@@ -1,0 +1,17 @@
+id: pride-covered-ears
+title: Pride Covered Ears
+artist: Johnny Paycheck
+composers:
+- Larry Kingston
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pridecoveredearslyricschords.pro
+    imported_at: '2026-01-02'

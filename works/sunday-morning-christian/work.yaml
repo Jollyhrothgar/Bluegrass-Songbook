@@ -1,0 +1,17 @@
+id: sunday-morning-christian
+title: Sunday Morning Christian
+artist: Cal Smith
+composers:
+- Harlan Howard and Lawrence Reynolds
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sundaymorningchristianlyricschords.pro
+    imported_at: '2026-01-02'

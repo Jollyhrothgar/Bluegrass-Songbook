@@ -1,0 +1,22 @@
+id: orange-blossom-special
+title: Orange Blossom Special
+artist: Johnny Cash
+composers:
+- E.T. Rouce
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: orangeblossomspeciallyricschords.pro
+    imported_at: '2026-01-02'

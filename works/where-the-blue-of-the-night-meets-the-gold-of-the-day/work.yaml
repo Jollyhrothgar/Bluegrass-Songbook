@@ -1,0 +1,15 @@
+id: where-the-blue-of-the-night-meets-the-gold-of-the-day
+title: Where The Blue Of The Night Meets The Gold Of The Day
+artist: Hank Locklin
+composers:
+- Roy Turk, Fred Ahlert, Bing Crosby
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheretheblueofthenightmeetsthegoldofthedaylyricschords.pro
+    imported_at: '2026-01-02'

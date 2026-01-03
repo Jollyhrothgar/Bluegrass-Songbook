@@ -1,0 +1,17 @@
+id: red-hot-gal-of-mine-and-chord
+title: Red Hot Gal Of Mine and chord
+artist: Bob Wills
+composers:
+- Strickland and Mayo
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: redhotgalofminelyricschords.pro
+    imported_at: '2026-01-02'

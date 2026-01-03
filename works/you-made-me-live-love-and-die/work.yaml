@@ -1,0 +1,20 @@
+id: you-made-me-live-love-and-die
+title: You Made Me Live Love And Die
+artist: Willie Nelson
+composers:
+- Floyd Tillman
+default_key: D
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmademeliveloveanddielyricschords.pro
+    imported_at: '2026-01-02'

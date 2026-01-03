@@ -1,0 +1,17 @@
+id: jesus-is-a-good-ole-boy
+title: Jesus Is A Good Ole Boy
+artist: Cal Smith
+composers:
+- Hank Cochran and Hollis Rudolph DeLaughter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusisagoodoleboylyricschords.pro
+    imported_at: '2026-01-02'

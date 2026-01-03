@@ -1,0 +1,17 @@
+id: i-ve-got-jesus-on-my-side
+title: I've Got Jesus On My Side
+artist: Statler Brother
+composers:
+- Don Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotJesusonmysidelyricschords.pro
+    imported_at: '2026-01-02'

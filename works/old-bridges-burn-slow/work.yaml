@@ -1,0 +1,18 @@
+id: old-bridges-burn-slow
+title: Old Bridges Burn Slow
+artist: Billy Joe Royal
+composers:
+- Jerry Meaders
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldbridgesburnslowlyricschords.pro
+    imported_at: '2026-01-02'

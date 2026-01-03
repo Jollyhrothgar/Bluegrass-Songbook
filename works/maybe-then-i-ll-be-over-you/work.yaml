@@ -1,0 +1,17 @@
+id: maybe-then-i-ll-be-over-you
+title: Maybe Then I'll Be Over You
+artist: Vern Gosdin
+composers:
+- Bobby K. Boyd
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maybethenillbeoveryoulyricschords.pro
+    imported_at: '2026-01-02'

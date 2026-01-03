@@ -1,0 +1,20 @@
+id: out-of-mind-out-of-sight
+title: Out of Mind Out of Sight
+artist: Kris Kristofferson
+composers:
+- Kris Kristofferson and Stephen Bruton
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: outofmindoutofsightlyricschords.pro
+    imported_at: '2026-01-02'

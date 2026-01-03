@@ -1,0 +1,15 @@
+id: that-little-boy-of-mine
+title: That Little Boy Of Mine
+artist: Eddy Arnold
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatlittleboyofminelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: until-at-last-i-m-home
+title: Until at Last I'm Home
+artist: Jamie Dailey and Darrin Vincent
+composers:
+- Brad Price, Darrin Vincent, Jim Britton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: untilatlastimhomelyricschords.pro
+    imported_at: '2026-01-02'

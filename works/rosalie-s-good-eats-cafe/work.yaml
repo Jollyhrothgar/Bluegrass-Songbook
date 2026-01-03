@@ -1,0 +1,15 @@
+id: rosalie-s-good-eats-cafe
+title: Rosalie's Good Eats Cafe
+artist: Bobby Bare
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rosaliesgoodeatscafelyricschords.pro
+    imported_at: '2026-01-02'

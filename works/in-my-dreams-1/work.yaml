@@ -1,0 +1,17 @@
+id: in-my-dreams-1
+title: In My Dreams
+artist: Johnny Lee
+composers:
+- Don Cook and Rafe Vanhoy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inmydreamslyricschords.pro
+    imported_at: '2026-01-02'

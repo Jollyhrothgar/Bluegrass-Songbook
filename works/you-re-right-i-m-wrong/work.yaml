@@ -1,0 +1,18 @@
+id: you-re-right-i-m-wrong
+title: You're Right I'm Wrong
+artist: George Strait
+composers:
+- Marty Stuart and Wayne Perry
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourerightimwronglyricschords.pro
+    imported_at: '2026-01-02'

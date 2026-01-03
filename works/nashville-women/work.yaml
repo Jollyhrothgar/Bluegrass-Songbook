@@ -1,0 +1,19 @@
+id: nashville-women
+title: Nashville Women
+artist: Waylon Jennings
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nashvillewomenlyricschords.pro
+    imported_at: '2026-01-02'

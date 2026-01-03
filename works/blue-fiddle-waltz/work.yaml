@@ -1,0 +1,15 @@
+id: blue-fiddle-waltz
+title: Blue Fiddle Waltz
+artist: Dottie West
+composers:
+- Averal Aldridge, Cindy Richardson, Lisa Silver
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluefiddlewaltzlyricschords.pro
+    imported_at: '2026-01-02'

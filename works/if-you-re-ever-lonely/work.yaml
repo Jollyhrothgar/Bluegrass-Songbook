@@ -1,0 +1,17 @@
+id: if-you-re-ever-lonely
+title: If You're Ever Lonely
+artist: Ray Price
+composers:
+- Lefty Frizzell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoureeverlonelylyricschords.pro
+    imported_at: '2026-01-02'

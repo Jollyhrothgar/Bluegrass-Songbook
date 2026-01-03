@@ -1,0 +1,19 @@
+id: it-sure-helps-a-lot
+title: It Sure Helps A Lot
+artist: Ernest Tubb
+composers:
+- Jerry D. Crutchfield and Buckley Maxwell
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsurehelpsalotlyricschords.pro
+    imported_at: '2026-01-02'

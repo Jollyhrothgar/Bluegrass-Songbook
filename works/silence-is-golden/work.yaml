@@ -1,0 +1,17 @@
+id: silence-is-golden
+title: Silence Is Golden
+artist: Bobby Bare
+composers:
+- Jackson Brown
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: silenceisgoldenlyricschords.pro
+    imported_at: '2026-01-02'

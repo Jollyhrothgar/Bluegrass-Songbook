@@ -1,0 +1,15 @@
+id: long-journey-home
+title: Long Journey Home
+artist: The Bluegrass Brothers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longjourneyhomelyricschords.pro
+    imported_at: '2026-01-02'

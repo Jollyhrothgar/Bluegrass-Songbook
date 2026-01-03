@@ -1,0 +1,18 @@
+id: let-me-be-your-friend
+title: Let Me Be Your Friend
+artist: The Stanley Brothers
+composers:
+- Carter Stanley
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmebeyourfriendlyricschords.pro
+    imported_at: '2026-01-02'

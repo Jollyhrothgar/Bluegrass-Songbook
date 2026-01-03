@@ -1,0 +1,18 @@
+id: first-christmas-morn
+title: First Christmas Morn
+artist: Charley Pride
+composers:
+- Sue Lane
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: firstChristmasmornlyricschords.pro
+    imported_at: '2026-01-02'

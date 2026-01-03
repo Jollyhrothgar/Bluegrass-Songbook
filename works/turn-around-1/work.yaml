@@ -1,0 +1,17 @@
+id: turn-around-1
+title: Turn Around
+artist: Carl Perkins
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: turnaroundlyricschords.pro
+    imported_at: '2026-01-02'

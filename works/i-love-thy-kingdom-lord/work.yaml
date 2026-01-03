@@ -1,0 +1,18 @@
+id: i-love-thy-kingdom-lord
+title: I Love Thy Kingdom Lord
+artist: Tennessee Ernie Ford
+composers:
+- Ernie Ford and Jack Fascinato
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovethykingdomlordlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: how-can-i-tell-him
+title: How Can I Tell Him
+artist: Tanya Tucker
+composers:
+- Kent LaVoie
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcanitellhimlyricschords.pro
+    imported_at: '2026-01-02'

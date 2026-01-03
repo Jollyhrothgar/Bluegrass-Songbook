@@ -1,0 +1,19 @@
+id: the-trouble-with-the-truth
+title: The Trouble With The Truth
+artist: Patty Loveless
+composers:
+- Gary Nicholson
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetroublewiththetruthlyricschords.pro
+    imported_at: '2026-01-02'

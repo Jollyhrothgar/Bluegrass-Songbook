@@ -1,0 +1,17 @@
+id: christmas-angel
+title: Christmas Angel
+artist: Bobby Vinton
+composers:
+- Jack Lloyd and Bobby Vinton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasangellyricschords.pro
+    imported_at: '2026-01-02'

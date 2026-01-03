@@ -1,0 +1,15 @@
+id: no-time-like-the-present
+title: No Time Like The Present
+artist: Wynn Stewart
+composers:
+- Beverly Stewart and Don Pearce
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notimelikethepresentlyricschords.pro
+    imported_at: '2026-01-02'

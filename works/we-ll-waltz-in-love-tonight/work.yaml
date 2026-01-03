@@ -1,0 +1,18 @@
+id: we-ll-waltz-in-love-tonight
+title: We'll Waltz In Love Tonight
+artist: Reba McEntire
+composers:
+- Bob Morrison, Johnny McRae, Tom Davey
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wellwaltzinlovetonightlyricschords.pro
+    imported_at: '2026-01-02'

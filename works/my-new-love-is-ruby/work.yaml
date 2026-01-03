@@ -1,0 +1,17 @@
+id: my-new-love-is-ruby
+title: My New Love Is Ruby
+artist: George Morgan
+composers:
+- Cindy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mynewloveisrubylyricschords.pro
+    imported_at: '2026-01-02'

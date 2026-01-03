@@ -1,0 +1,18 @@
+id: song-of-a-whippoorwill
+title: Song Of A Whippoorwill
+artist: Rhonda Vincent
+composers:
+- Tracy Starling and Rhonda Vincent
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: songofawhippoorwilllyricschords.pro
+    imported_at: '2026-01-02'

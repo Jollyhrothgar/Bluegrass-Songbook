@@ -1,0 +1,18 @@
+id: here-today-gone-tomorrow
+title: Here Today Gone Tomorrow
+artist: Rhonda Vincent
+composers:
+- The Easter Brothers
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heretodaygonetomorrowlyricschords.pro
+    imported_at: '2026-01-02'

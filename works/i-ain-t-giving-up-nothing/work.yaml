@@ -1,0 +1,19 @@
+id: i-ain-t-giving-up-nothing
+title: I Ain't Giving Up Nothing
+artist: Mickey Gilley
+composers:
+- Brook Benton and Clyde Otis
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iaintgivingupnothinglyricschords.pro
+    imported_at: '2026-01-02'

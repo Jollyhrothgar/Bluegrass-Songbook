@@ -1,0 +1,17 @@
+id: broken-down-merry-go-round
+title: Broken Down Merry Go Round
+artist: Slim Whitman
+composers:
+- Arthur Herbert and Fred Stryker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brokendownmerrygoroundlyricsandchords.pro
+    imported_at: '2026-01-02'

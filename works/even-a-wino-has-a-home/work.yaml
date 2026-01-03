@@ -1,0 +1,17 @@
+id: even-a-wino-has-a-home
+title: Even A Wino Has A Home
+artist: Cal Smith
+composers:
+- Dave Kirby
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: evenawinohasahomelyricschords.pro
+    imported_at: '2026-01-02'

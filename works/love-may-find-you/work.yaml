@@ -1,0 +1,15 @@
+id: love-may-find-you
+title: Love May Find You
+artist: Crystal Gayle
+composers:
+- Wendy Waldman and Eric Kaz
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovemayfindyoulyricschords.pro
+    imported_at: '2026-01-02'

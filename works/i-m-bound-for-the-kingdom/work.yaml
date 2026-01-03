@@ -1,0 +1,17 @@
+id: i-m-bound-for-the-kingdom
+title: I'm Bound For The Kingdom
+artist: Webb Pierce
+composers:
+- Mosie Lister
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imboundforthekingdomlyricsandchords.pro
+    imported_at: '2026-01-02'

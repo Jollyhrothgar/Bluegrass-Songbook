@@ -1,0 +1,15 @@
+id: i-didn-t-have-the-heart-to-say-goodbye
+title: I Didn't Have The Heart To Say Goodbye
+artist: Hawkshaw Hawkins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ididnthavethehearttosaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: why-don-t-we-go-somewhere-and-love
+title: Why Don't We Go Somewhere And Love
+artist: Charlie Rich
+composers:
+- Kenny O'Dell and Larry Henley
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydontwegosomewhereandlovelyricschords.pro
+    imported_at: '2026-01-02'

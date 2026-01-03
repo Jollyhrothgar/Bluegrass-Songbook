@@ -1,0 +1,17 @@
+id: the-best-part-of-loving-you
+title: The Best Part Of Loving You
+artist: Hank Locklin
+composers:
+- Ann Price
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebestpartoflovingyoulyricschords.pro
+    imported_at: '2026-01-02'

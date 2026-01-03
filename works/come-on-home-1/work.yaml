@@ -1,0 +1,17 @@
+id: come-on-home-1
+title: Come On Home
+artist: Tammy Wynette
+composers:
+- Jack Rhodes and George Richey
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comeonhomelyricschords.pro
+    imported_at: '2026-01-02'

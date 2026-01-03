@@ -1,0 +1,18 @@
+id: he-took-my-place
+title: He Took My Place
+artist: Charley Pride
+composers:
+- Ruth Hukill
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hetookmyplacelyricschords.pro
+    imported_at: '2026-01-02'

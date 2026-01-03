@@ -1,0 +1,17 @@
+id: and-so-it-goes
+title: And So It Goes
+artist: Don Williams
+composers:
+- Mike Noble, Don Williams, Tim Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: andsoitgoeslyricschords.pro
+    imported_at: '2026-01-02'

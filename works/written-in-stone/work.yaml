@@ -1,0 +1,18 @@
+id: written-in-stone
+title: Written In Stone
+artist: Randy Travis
+composers:
+- Don Schlitz and Mac McAnally
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: writteninstonelyricschords.pro
+    imported_at: '2026-01-02'

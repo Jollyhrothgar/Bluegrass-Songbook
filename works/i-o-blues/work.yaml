@@ -1,0 +1,15 @@
+id: i-o-blues
+title: I.O. Blues
+artist: Johnny Paycheck
+composers:
+- Jesse Shofner and Wade Kirby
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ioblueslyricschords.pro
+    imported_at: '2026-01-02'

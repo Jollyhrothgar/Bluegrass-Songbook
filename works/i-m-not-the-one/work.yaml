@@ -1,0 +1,15 @@
+id: i-m-not-the-one
+title: I'm Not The One
+artist: Tony Booth
+composers:
+- Craig Wiseman and Kent Blazy
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnottheonelyricschords.pro
+    imported_at: '2026-01-02'

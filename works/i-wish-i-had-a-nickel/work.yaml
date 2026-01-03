@@ -1,0 +1,19 @@
+id: i-wish-i-had-a-nickel
+title: I Wish I Had a Nickel
+artist: Hank Williams
+composers:
+- W.S. Barnhart and Tommy Sutton
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishihadanickellyricschords.pro
+    imported_at: '2026-01-02'

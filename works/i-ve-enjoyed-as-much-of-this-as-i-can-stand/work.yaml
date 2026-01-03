@@ -1,0 +1,17 @@
+id: i-ve-enjoyed-as-much-of-this-as-i-can-stand
+title: I've Enjoyed As Much Of This As I Can Stand
+artist: Jim Reeves
+composers:
+- Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iveenjoyedasmuchofthisasicanstandlyricschords.pro
+    imported_at: '2026-01-02'

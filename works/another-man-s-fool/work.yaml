@@ -1,0 +1,19 @@
+id: another-man-s-fool
+title: Another Man's Fool
+artist: Waylon Jennings
+composers:
+- John Ullrich
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anothermansfoollyricschords.pro
+    imported_at: '2026-01-02'

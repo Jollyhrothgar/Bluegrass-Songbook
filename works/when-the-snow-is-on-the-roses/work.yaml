@@ -1,0 +1,17 @@
+id: when-the-snow-is-on-the-roses
+title: When the Snow is on the Roses
+artist: Sonny James
+composers:
+- Curry Kusic, Eddie Snyder, James Last
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthesnowisontheroseslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: medals-for-mothers
+title: Medals For Mothers
+artist: The Osborne Brothers
+composers:
+- Betty Sue Perry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: medalsformotherslyricsandchords.pro
+    imported_at: '2026-01-02'

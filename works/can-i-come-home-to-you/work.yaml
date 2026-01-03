@@ -1,0 +1,15 @@
+id: can-i-come-home-to-you
+title: Can I Come Home To You
+artist: Bill Anderson
+composers:
+- Jan Crutchfield and Buddy Killen
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canicomehometoyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: back-in-the-swing-of-things
+title: Back In The Swing Of Things
+artist: Vern Gosdin
+composers:
+- Buddy Cannon, Dean Dillon, Vern Gosdin
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backintheswingofthingslyricschords.pro
+    imported_at: '2026-01-02'

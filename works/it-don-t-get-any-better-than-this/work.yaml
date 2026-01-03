@@ -1,0 +1,17 @@
+id: it-don-t-get-any-better-than-this
+title: It Don't Get Any Better Than This
+artist: George Jones
+composers:
+- Max D. Barnes, Buddy Cannon, Norris Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itdontgetanybetterthanthislyricschords.pro
+    imported_at: '2026-01-02'

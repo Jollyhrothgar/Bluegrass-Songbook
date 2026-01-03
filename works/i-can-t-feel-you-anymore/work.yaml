@@ -1,0 +1,18 @@
+id: i-can-t-feel-you-anymore
+title: I Can't Feel You Anymore
+artist: Loretta Lynn
+composers:
+- Theresa Beaty and Meredith Stewart
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantfeelyouanymorelyricschords.pro
+    imported_at: '2026-01-02'

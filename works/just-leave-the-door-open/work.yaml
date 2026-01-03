@@ -1,0 +1,15 @@
+id: just-leave-the-door-open
+title: Just Leave The Door Open
+artist: Nat Stuckey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justleavethedooropenlyricschords.pro
+    imported_at: '2026-01-02'

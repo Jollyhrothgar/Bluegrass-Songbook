@@ -1,0 +1,15 @@
+id: a-cowboy-s-special-christmas
+title: A Cowboy's Special Christmas
+artist: Red Steagall
+composers:
+- Dan Roberts, Roy Robinson, Bobby Wood
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: acowboysspecialChristmaslyricschords.pro
+    imported_at: '2026-01-02'

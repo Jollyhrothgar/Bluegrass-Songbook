@@ -1,0 +1,15 @@
+id: youre-still-the-only-one-ill-ever-love
+title: You’re Still The Only One I’ll Ever Love
+artist: Bill Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourestilltheonlyoneilleverlovelyricschords.pro
+    imported_at: '2026-01-02'

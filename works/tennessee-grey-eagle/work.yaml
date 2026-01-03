@@ -1,0 +1,18 @@
+id: tennessee-grey-eagle
+title: Tennessee Grey Eagle
+artist: Traditional
+composers:
+- Jim Herd
+default_key: E
+tags:
+- JamFriendly
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

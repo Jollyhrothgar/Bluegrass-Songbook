@@ -1,0 +1,17 @@
+id: it-s-a-long-long-way-to-georgia
+title: It's A Long Long Way To Georgia
+artist: Don Gibson
+composers:
+- Dub Murray and Ralph Siegel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsalonglongwaytogeorgialyricschords.pro
+    imported_at: '2026-01-02'

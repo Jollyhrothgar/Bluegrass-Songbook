@@ -1,0 +1,20 @@
+id: in-the-ghetto
+title: In The Ghetto
+artist: Dolly Parton
+composers:
+- Mac Davis
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: intheghettolyricsandchords.pro
+    imported_at: '2026-01-02'

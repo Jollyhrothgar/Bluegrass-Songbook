@@ -1,0 +1,15 @@
+id: down-by-the-old-river
+title: Down By The Old River
+artist: Dick Curless
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downbytheoldriverlyricschords.pro
+    imported_at: '2026-01-02'

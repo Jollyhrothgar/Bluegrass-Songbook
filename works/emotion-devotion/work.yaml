@@ -1,0 +1,15 @@
+id: emotion-devotion
+title: Emotion Devotion
+artist: Roy Drusky
+default_key: F
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: emotiondevotionlyricschords.pro
+    imported_at: '2026-01-02'

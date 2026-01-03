@@ -1,0 +1,19 @@
+id: little-bit-here-a-little-bit-there
+title: Little Bit Here (A Little Bit There)
+artist: Charlie Rich
+composers:
+- Margaret A. Rich
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlebitherealittlebittherelyricschords.pro
+    imported_at: '2026-01-02'

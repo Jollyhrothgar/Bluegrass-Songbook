@@ -1,0 +1,17 @@
+id: the-maker-said-take-her
+title: The Maker Said Take Her
+artist: Alabama
+composers:
+- Randall Rogers and Mark Wright
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themakersaidtakeherlyricschords.pro
+    imported_at: '2026-01-02'

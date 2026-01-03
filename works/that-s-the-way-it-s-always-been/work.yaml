@@ -1,0 +1,15 @@
+id: that-s-the-way-it-s-always-been
+title: That's The Way It's Always Been
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsthewayitsalwaysbeenlyricschords.pro
+    imported_at: '2026-01-02'

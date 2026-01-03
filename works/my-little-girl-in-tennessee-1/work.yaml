@@ -1,0 +1,15 @@
+id: my-little-girl-in-tennessee-1
+title: My Little Girl In Tennessee
+artist: Lester Flatt
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

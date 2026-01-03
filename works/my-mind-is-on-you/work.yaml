@@ -1,0 +1,17 @@
+id: my-mind-is-on-you
+title: My Mind Is On You
+artist: Reba McEntire
+composers:
+- Don Schlitz and Dave Loggins
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mymindisonyoulyricschords.pro
+    imported_at: '2026-01-02'

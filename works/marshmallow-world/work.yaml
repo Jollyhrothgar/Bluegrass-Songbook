@@ -1,0 +1,18 @@
+id: marshmallow-world
+title: Marshmallow World
+artist: Brenda Lee
+composers:
+- Carl Sigman and Peter DeRose
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: marshmallowworldlyricschords.pro
+    imported_at: '2026-01-02'

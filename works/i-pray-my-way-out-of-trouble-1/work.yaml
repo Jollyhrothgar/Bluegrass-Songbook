@@ -1,0 +1,19 @@
+id: i-pray-my-way-out-of-trouble-1
+title: I Pray My Way Out Of Trouble
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Teddy Wilburn
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ipraymywayoutoftroublelyricschords.pro
+    imported_at: '2026-01-02'

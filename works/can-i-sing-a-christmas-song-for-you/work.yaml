@@ -1,0 +1,17 @@
+id: can-i-sing-a-christmas-song-for-you
+title: Can I Sing A Christmas Song For You
+artist: Dave Dudley
+composers:
+- Dave Dudley and Diane Lincoln
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canisingaChristmassongforyoulyricschords.pro
+    imported_at: '2026-01-02'

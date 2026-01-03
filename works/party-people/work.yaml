@@ -1,0 +1,17 @@
+id: party-people
+title: Party People
+artist: Hank Williams Jr.
+composers:
+- Kent Westberry and Hal Harbour
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: partypeoplelyricschords.pro
+    imported_at: '2026-01-02'

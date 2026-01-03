@@ -1,0 +1,17 @@
+id: a-picture-of-jesus
+title: A Picture Of Jesus
+artist: Nancy Moore
+composers:
+- Dixie Hall and Tom T. Hall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: apictureofJesuslyricschords.pro
+    imported_at: '2026-01-02'

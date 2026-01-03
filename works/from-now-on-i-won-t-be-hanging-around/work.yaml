@@ -1,0 +1,17 @@
+id: from-now-on-i-won-t-be-hanging-around
+title: From Now On I Won't Be Hanging Around
+artist: The Earls Of Leicester
+composers:
+- Gladys Stacey, Wayne Walker,
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromnowoniwontbehangingaroundlyricschords.pro
+    imported_at: '2026-01-02'

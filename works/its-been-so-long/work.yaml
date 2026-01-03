@@ -1,0 +1,17 @@
+id: its-been-so-long
+title: It’s Been So Long
+artist: Webb Pierce
+composers:
+- Autry Grisham
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsbeensolonglyricschords.pro
+    imported_at: '2026-01-02'

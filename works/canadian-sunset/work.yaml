@@ -1,0 +1,18 @@
+id: canadian-sunset
+title: Canadian Sunset
+artist: Anne Murray
+composers:
+- Norman Gimbel and Eddie Heywood
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canadiansunsetlyricschords.pro
+    imported_at: '2026-01-02'

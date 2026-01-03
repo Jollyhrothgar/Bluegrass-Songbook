@@ -1,0 +1,18 @@
+id: the-mark-of-a-heel
+title: The Mark Of A Heel
+artist: Hank Thompson
+composers:
+- Neal Merritt and Happy Wilson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themarkofaheellyricschords.pro
+    imported_at: '2026-01-02'

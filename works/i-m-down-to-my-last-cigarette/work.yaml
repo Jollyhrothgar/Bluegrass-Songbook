@@ -1,0 +1,17 @@
+id: i-m-down-to-my-last-cigarette
+title: I'm Down To My Last Cigarette
+artist: Billy Walker
+composers:
+- Harlan Howard and Billy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imdowntomylastcigarettelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: there-must-be-more-to-love-than-this
+title: There Must Be More To Love Than This
+artist: Jerry Lee Lewis
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theremustbemoretolovethanthislyricschords.pro
+    imported_at: '2026-01-02'

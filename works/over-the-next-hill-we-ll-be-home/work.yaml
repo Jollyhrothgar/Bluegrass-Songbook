@@ -1,0 +1,20 @@
+id: over-the-next-hill-we-ll-be-home
+title: Over The Next Hill We'll Be Home
+artist: Johnny Cash
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: overthenexthillwellbehomelyricschords.pro
+    imported_at: '2026-01-02'

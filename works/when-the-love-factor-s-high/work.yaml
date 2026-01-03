@@ -1,0 +1,15 @@
+id: when-the-love-factor-s-high
+title: When The Love Factor's High
+artist: Alan Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthelovefactorshighlyricschords.pro
+    imported_at: '2026-01-02'

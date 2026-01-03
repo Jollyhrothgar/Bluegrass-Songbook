@@ -1,0 +1,17 @@
+id: down-at-the-corner-at-a-bar-called-kelly-s
+title: Down At The Corner At A Bar Called Kelly's
+artist: Johnny Paycheck
+composers:
+- Aubrey Mayhew, Mickey McGivern and Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downatthecorneratabarcalledkellyslyricschords.pro
+    imported_at: '2026-01-02'

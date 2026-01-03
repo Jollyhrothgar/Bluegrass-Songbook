@@ -1,0 +1,17 @@
+id: tombstone-every-mile
+title: Tombstone Every Mile
+artist: Dick Curless
+composers:
+- Dan Fulkerson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tombstoneeverymilelyricschords.pro
+    imported_at: '2026-01-02'

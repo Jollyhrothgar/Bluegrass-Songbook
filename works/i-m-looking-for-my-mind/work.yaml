@@ -1,0 +1,16 @@
+id: i-m-looking-for-my-mind
+title: I'm Looking For My Mind
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlookingformymindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: lonely-people
+title: Lonely People
+artist: Little Jimmy Dickens
+composers:
+- Dee Moeller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelypeoplelyricsandchords.pro
+    imported_at: '2026-01-02'

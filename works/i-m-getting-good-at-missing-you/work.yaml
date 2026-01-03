@@ -1,0 +1,17 @@
+id: i-m-getting-good-at-missing-you
+title: I'm Getting Good At Missing You
+artist: Don Williams
+composers:
+- Waylon Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgettinggoodatmissingyoulyricschords.pro
+    imported_at: '2026-01-02'

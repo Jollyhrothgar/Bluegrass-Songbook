@@ -1,0 +1,17 @@
+id: i-ll-never-stand-in-your-way-1
+title: I'll Never Stand In Your Way
+artist: Billy Walker
+composers:
+- Fred Rose and Hy Heath
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverstandinyourwaylyricschords.pro
+    imported_at: '2026-01-02'

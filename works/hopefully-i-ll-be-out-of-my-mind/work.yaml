@@ -1,0 +1,13 @@
+id: hopefully-i-ll-be-out-of-my-mind
+title: Hopefully (I'll Be Out Of My Mind)
+artist: Jeanne Pruett
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hopefullyillbeoutofmymindlyricschords.pro
+    imported_at: '2026-01-02'

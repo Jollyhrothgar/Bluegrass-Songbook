@@ -1,0 +1,17 @@
+id: early-mornin-kind-of-love
+title: Early Mornin’ Kind Of Love
+artist: Red Steagall
+composers:
+- William Hollis Young
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: earlymorninkindoflovelyricschords.pro
+    imported_at: '2026-01-02'

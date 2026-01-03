@@ -1,0 +1,19 @@
+id: dum-dum
+title: Dum Dum
+artist: Brenda Lee
+composers:
+- Jackie DeShannon and Sharon Sheeley
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dumdumlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: down-where-the-river-bends
+title: Down Where The River Bends
+artist: J.D. Crowe
+composers:
+- Jack Anglin, Johnny Wright, George Peck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downwheretheriverbendslyricschords.pro
+    imported_at: '2026-01-02'

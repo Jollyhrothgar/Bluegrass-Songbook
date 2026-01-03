@@ -1,0 +1,18 @@
+id: i-don-t-know-why-i-keep-loving-you
+title: I Don't Know Why I Keep Loving You
+artist: Ray Price
+composers:
+- Fred Carter
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontknowwhyikeeplovingyoulyricschords.pro
+    imported_at: '2026-01-02'

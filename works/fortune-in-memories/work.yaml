@@ -1,0 +1,19 @@
+id: fortune-in-memories
+title: Fortune In Memories
+artist: Ernest Tubb
+composers:
+- Cindy Walker and Lou Wayne
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fortuneinmemorieslyricschords.pro
+    imported_at: '2026-01-02'

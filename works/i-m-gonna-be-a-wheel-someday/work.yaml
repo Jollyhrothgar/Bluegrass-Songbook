@@ -1,0 +1,18 @@
+id: i-m-gonna-be-a-wheel-someday
+title: I'm Gonna Be A Wheel Someday
+artist: Fats Domino
+composers:
+- Dave Bartholomew, Antoine Domino, Roy Hayes
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnabeawheelsomedaylyricschords.pro
+    imported_at: '2026-01-02'

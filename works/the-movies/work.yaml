@@ -1,0 +1,17 @@
+id: the-movies
+title: The Movies
+artist: Statler Brothers
+composers:
+- Lew DeWitt
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themovieslyricschords.pro
+    imported_at: '2026-01-02'

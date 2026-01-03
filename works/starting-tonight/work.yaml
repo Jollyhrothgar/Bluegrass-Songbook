@@ -1,0 +1,17 @@
+id: starting-tonight
+title: Starting Tonight
+artist: Alabama
+composers:
+- Teddy Gentry, Greg Fowler, John Jarrad
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: startingtonightlyricschords.pro
+    imported_at: '2026-01-02'

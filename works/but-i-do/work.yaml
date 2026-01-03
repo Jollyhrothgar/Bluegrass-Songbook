@@ -1,0 +1,17 @@
+id: but-i-do
+title: But I Do
+artist: The Oak Ridge Boys
+composers:
+- Troy Seals and Dave Parkinson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: butidolyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: eighteen-yellow-roses
+title: Eighteen Yellow Roses
+artist: Marty Robbins
+composers:
+- Bobby Darin
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eighteenyellowroseslyricschords.pro
+    imported_at: '2026-01-02'

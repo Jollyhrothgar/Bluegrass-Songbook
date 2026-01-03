@@ -1,0 +1,18 @@
+id: i-m-doing-this-for-your-sake
+title: I'm Doing This For Your Sake
+artist: Dolly Parton
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mdoingthisforyoursakelyricschords.pro
+    imported_at: '2026-01-02'

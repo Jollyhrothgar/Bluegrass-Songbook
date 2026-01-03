@@ -1,0 +1,15 @@
+id: gently-comes-love
+title: Gently Comes Love
+artist: Jim Ed Brown
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gentlycomeslovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: stop-and-drink
+title: Stop And Drink
+artist: George Strait
+composers:
+- Dale Dodson and Troy Jones
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stopanddrinklyricschords.pro
+    imported_at: '2026-01-02'

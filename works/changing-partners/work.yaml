@@ -1,0 +1,15 @@
+id: changing-partners
+title: Changing Partners
+artist: Patti Page
+composers:
+- Larry Coleman [3/4 time]
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: changingpartnerslyricschords.pro
+    imported_at: '2026-01-02'

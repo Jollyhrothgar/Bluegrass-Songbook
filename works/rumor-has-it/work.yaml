@@ -1,0 +1,17 @@
+id: rumor-has-it
+title: Rumor Has It
+artist: Reba McEntire
+composers:
+- Bruce Burch, Vern Dant, Larry Shell
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rumorhasitlyricsandchords.pro
+    imported_at: '2026-01-02'

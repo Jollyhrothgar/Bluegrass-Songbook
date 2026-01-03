@@ -1,0 +1,21 @@
+id: i-don-t-remember-forgetting
+title: I Don't Remember Forgetting
+artist: Ricky Skaggs
+composers:
+- Billy Foster, Jason Sellers, Lee Ann Womack
+default_key: D
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontrememberforgettinglyricschords.pro
+    imported_at: '2026-01-02'

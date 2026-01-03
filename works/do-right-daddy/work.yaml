@@ -1,0 +1,19 @@
+id: do-right-daddy
+title: Do Right Daddy
+artist: Hank Snow
+composers:
+- Bill Nettles
+default_key: D
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dorightdaddylyricschords.pro
+    imported_at: '2026-01-02'

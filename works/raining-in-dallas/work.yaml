@@ -1,0 +1,17 @@
+id: raining-in-dallas
+title: Raining In Dallas
+artist: Gene Watson
+composers:
+- John Gostick and Richard Moreland
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rainingindallaslyricschords.pro
+    imported_at: '2026-01-02'

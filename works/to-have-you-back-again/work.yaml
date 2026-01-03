@@ -1,0 +1,18 @@
+id: to-have-you-back-again
+title: To Have You Back Again
+artist: Patty Loveless
+composers:
+- Annie Roboff and Arnie Roman
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tohaveyoubackagainlyricschords.pro
+    imported_at: '2026-01-02'

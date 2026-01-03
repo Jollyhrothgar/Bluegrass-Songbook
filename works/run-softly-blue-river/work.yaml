@@ -1,0 +1,21 @@
+id: run-softly-blue-river
+title: Run Softly Blue River
+artist: Johnny Cash
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: runsoftlyblueriverlyricschords.pro
+    imported_at: '2026-01-02'

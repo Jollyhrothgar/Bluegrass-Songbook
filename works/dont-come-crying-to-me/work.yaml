@@ -1,0 +1,19 @@
+id: dont-come-crying-to-me
+title: Don’t Come Crying To Me
+artist: Vince Gill
+composers:
+- Reed Nielsen and Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontcomecryingtomelyricschords.pro
+    imported_at: '2026-01-02'

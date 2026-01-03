@@ -1,0 +1,17 @@
+id: i-ve-just-seen-the-rock-of-ages
+title: I've Just Seen The Rock Of Ages
+artist: Larry Sparks Brothers
+composers:
+- John Brenton Preston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivejustseentherockofageslyricschords.pro
+    imported_at: '2026-01-02'

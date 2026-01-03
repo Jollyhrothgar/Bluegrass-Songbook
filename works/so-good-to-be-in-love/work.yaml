@@ -1,0 +1,19 @@
+id: so-good-to-be-in-love
+title: So Good To Be In Love
+artist: Patty Loveless
+composers:
+- Karen Staley
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sogoodtobeinlovelyricschords.pro
+    imported_at: '2026-01-02'

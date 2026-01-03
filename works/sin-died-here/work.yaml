@@ -1,0 +1,17 @@
+id: sin-died-here
+title: Sin Died Here
+artist: The Hinsons
+composers:
+- Ronald A. Hinson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sindiedherelyricschords.pro
+    imported_at: '2026-01-02'

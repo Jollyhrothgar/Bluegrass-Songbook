@@ -1,0 +1,18 @@
+id: the-one-i-can-t-live-without
+title: The One I Can't Live Without
+artist: Conway Twitty
+composers:
+- Frances Rhodes and James Pulliam
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoneicantlivewithoutlyricschords.pro
+    imported_at: '2026-01-02'

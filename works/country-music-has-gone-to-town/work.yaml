@@ -1,0 +1,17 @@
+id: country-music-has-gone-to-town
+title: Country Music Has Gone To Town
+artist: Norma Jean
+composers:
+- Jimmie Driftwood
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countrymusichasgonetotownlyricschords.pro
+    imported_at: '2026-01-02'

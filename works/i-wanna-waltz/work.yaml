@@ -1,0 +1,18 @@
+id: i-wanna-waltz
+title: I Wanna Waltz
+artist: Wanda Jackson
+composers:
+- Thelma Blackmon
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwannawaltzlyricschords.pro
+    imported_at: '2026-01-02'

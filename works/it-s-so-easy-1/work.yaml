@@ -1,0 +1,18 @@
+id: it-s-so-easy-1
+title: It's So Easy
+artist: Buddy Holly
+composers:
+- Buddy Holly and Norman Petty
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itssoeasylyricschords.pro
+    imported_at: '2026-01-02'

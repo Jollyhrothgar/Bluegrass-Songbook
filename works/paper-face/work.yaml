@@ -1,0 +1,17 @@
+id: paper-face
+title: Paper Face
+artist: Hank Locklin
+composers:
+- Slim Williams and Hank Locklin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: paperfacelyricschords.pro
+    imported_at: '2026-01-02'

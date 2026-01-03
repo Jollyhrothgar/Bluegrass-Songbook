@@ -1,0 +1,20 @@
+id: i-still-write-your-name-in-the-snow
+title: I Still Write Your Name In The Snow
+artist: Chet Atkins
+composers:
+- Billy Edd Wheeler and Chet Atkins
+default_key: G
+tags:
+- ClassicCountry
+- Jazz
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: istillwriteyournameinthesnowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: heartaches-1
+title: Heartaches
+artist: Patsy Cline
+composers:
+- Al Hoffman & John Klenner
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartacheslyricschords.pro
+    imported_at: '2026-01-02'

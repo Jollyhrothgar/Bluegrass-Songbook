@@ -1,0 +1,17 @@
+id: i-ll-even-love-you
+title: I'll Even Love You
+artist: Statler Brothers
+composers:
+- Phil Coulter and Bill Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illevenloveyoulyricschords.pro
+    imported_at: '2026-01-02'

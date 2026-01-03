@@ -1,0 +1,17 @@
+id: a-woman-s-heart-is-a-handy-place-to-be
+title: A Woman's Heart (Is A Handy Place To Be)
+artist: Crystal Gayle
+composers:
+- Marshall Chapman and Cort B. Casady
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awomansheartisahandyplacetobelyricschords.pro
+    imported_at: '2026-01-02'

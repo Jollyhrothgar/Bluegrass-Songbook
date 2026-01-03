@@ -1,0 +1,15 @@
+id: i-m-dreaming-of-you
+title: I'm Dreaming Of You
+artist: Jack Scott
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imdreamingofyoulyricschords.pro
+    imported_at: '2026-01-02'

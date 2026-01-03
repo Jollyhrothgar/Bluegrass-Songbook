@@ -1,0 +1,17 @@
+id: it-only-takes-one-bar-to-make-a-prison
+title: It Only Takes One Bar (To Make A Prison)
+artist: Tracy Lawrence
+composers:
+- Paul Nelson, Kenny Beard, Tracy Lawrence
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itonlytakesonebartomakeaprisonlyricschords.pro
+    imported_at: '2026-01-02'

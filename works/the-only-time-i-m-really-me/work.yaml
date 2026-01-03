@@ -1,0 +1,15 @@
+id: the-only-time-i-m-really-me
+title: The Only Time I'm Really Me
+artist: Tammy Wynette
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theonlytimeimreallymelyricschords.pro
+    imported_at: '2026-01-02'

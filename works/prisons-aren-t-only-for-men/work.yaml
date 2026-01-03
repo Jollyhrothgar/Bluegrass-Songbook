@@ -1,0 +1,17 @@
+id: prisons-aren-t-only-for-men
+title: Prisons Aren't Only For Men
+artist: Leona Williams
+composers:
+- Merle Haggard and Leona Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prisonsarentonlyformenlyricschords.pro
+    imported_at: '2026-01-02'

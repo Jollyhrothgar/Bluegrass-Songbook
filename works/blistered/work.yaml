@@ -1,0 +1,22 @@
+id: blistered
+title: Blistered
+artist: Johnny Cash
+composers:
+- Billy Edd Wheeler
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blisteredlyricschords.pro
+    imported_at: '2026-01-02'

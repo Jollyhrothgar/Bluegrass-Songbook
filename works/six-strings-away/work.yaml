@@ -1,0 +1,17 @@
+id: six-strings-away
+title: Six Strings Away
+artist: Waylon Jennings
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sixstringsawaylyricschords.pro
+    imported_at: '2026-01-02'

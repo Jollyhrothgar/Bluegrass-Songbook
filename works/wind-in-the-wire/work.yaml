@@ -1,0 +1,19 @@
+id: wind-in-the-wire
+title: Wind In The Wire
+artist: Randy Travis
+composers:
+- Stewart McDougall and David Wilkie
+default_key: Am
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: windinthewirelyricschords.pro
+    imported_at: '2026-01-02'

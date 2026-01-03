@@ -1,0 +1,17 @@
+id: be-glad-you-ain-t-me
+title: Be Glad You Ain't Me
+artist: Porter Wagoner
+composers:
+- Dave Estes and Porter Wagoner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: begladyouaintmelyricschords.pro
+    imported_at: '2026-01-02'

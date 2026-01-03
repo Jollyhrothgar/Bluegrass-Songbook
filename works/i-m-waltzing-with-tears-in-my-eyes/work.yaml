@@ -1,0 +1,17 @@
+id: i-m-waltzing-with-tears-in-my-eyes
+title: I'm Waltzing With Tears In My Eyes
+artist: Cowboy Copas
+composers:
+- Sydney Nathan, Paul Howard, Lloyd Copas
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imwaltzingwithtearsinmyeyeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: getting-over-you-again
+title: Getting Over You Again
+artist: Ray Price
+composers:
+- Warren Robb and Dave Kirby
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gettingoveryouagainlyricschords.pro
+    imported_at: '2026-01-02'

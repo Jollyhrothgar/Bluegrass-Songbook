@@ -1,0 +1,15 @@
+id: you-ve-seen-that-look-on-me-a-thousand-times
+title: You've Seen That Look On Me A Thousand Times
+artist: Jim Ed Brown
+composers:
+- Harlan Howard and Shirl Milete
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youveseenthatlookonmeathousandtimeslyricschords.pro
+    imported_at: '2026-01-02'

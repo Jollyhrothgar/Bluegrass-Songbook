@@ -1,0 +1,15 @@
+id: tear-down-the-wall
+title: Tear Down The Wall
+artist: Narvel Felts
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: teardownthewalllyricschords.pro
+    imported_at: '2026-01-02'

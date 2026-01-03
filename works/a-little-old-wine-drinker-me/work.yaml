@@ -1,0 +1,18 @@
+id: a-little-old-wine-drinker-me
+title: A Little Old Wine Drinker Me
+artist: Dean Martin
+composers:
+- Hank Mills and Dick Jennings
+default_key: C
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittleoldwinedrinkermelyricschords.pro
+    imported_at: '2026-01-02'

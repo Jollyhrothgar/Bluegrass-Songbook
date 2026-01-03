@@ -1,0 +1,17 @@
+id: asleep-in-jesus
+title: Asleep In Jesus
+artist: The Jordanaires
+composers:
+- William Bradbury and Margaret McKay
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: asleepinJesuslyricschords.pro
+    imported_at: '2026-01-02'

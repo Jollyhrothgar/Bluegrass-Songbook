@@ -1,0 +1,15 @@
+id: just-another-man
+title: Just Another Man
+artist: Glen Campbell
+composers:
+- Joe Allison and Glen Campbell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justanothermanlyricschords.pro
+    imported_at: '2026-01-02'

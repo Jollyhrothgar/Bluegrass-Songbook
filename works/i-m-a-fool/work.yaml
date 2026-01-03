@@ -1,0 +1,17 @@
+id: i-m-a-fool
+title: I'm A Fool
+artist: Hank Locklin
+composers:
+- Tom LeMay, Charles Hagaman, Jack Comer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imafoollyricsandchords.pro
+    imported_at: '2026-01-02'

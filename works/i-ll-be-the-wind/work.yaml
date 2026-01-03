@@ -1,0 +1,19 @@
+id: i-ll-be-the-wind
+title: I'll Be The Wind
+artist: Garth Brooks
+composers:
+- Mark Irwin and Josh Kear
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbethewindlyricschords.pro
+    imported_at: '2026-01-02'

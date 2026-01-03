@@ -1,0 +1,19 @@
+id: thanks
+title: Thanks
+artist: Waylon Jennings
+composers:
+- Bill Martin and Phil Coulter
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankslyricschords.pro
+    imported_at: '2026-01-02'

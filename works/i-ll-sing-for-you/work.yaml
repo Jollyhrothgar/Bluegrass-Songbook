@@ -1,0 +1,17 @@
+id: i-ll-sing-for-you
+title: I'll Sing For You
+artist: Don Gibson
+composers:
+- Bobby Bond
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illsingforyoulyricschords.pro
+    imported_at: '2026-01-02'

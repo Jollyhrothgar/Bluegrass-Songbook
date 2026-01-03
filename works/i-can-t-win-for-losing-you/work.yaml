@@ -1,0 +1,17 @@
+id: i-can-t-win-for-losing-you
+title: I Can't Win For Losing You
+artist: Earl Thomas Conley
+composers:
+- Robert Byrne and Rick Bowles
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantwinforlosingyoulyricschords.pro
+    imported_at: '2026-01-02'

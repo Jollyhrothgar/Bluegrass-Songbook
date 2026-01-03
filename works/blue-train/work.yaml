@@ -1,0 +1,22 @@
+id: blue-train
+title: Blue Train
+artist: Johnny Cash
+composers:
+- Billy Smith
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluetrainlyricschords.pro
+    imported_at: '2026-01-02'

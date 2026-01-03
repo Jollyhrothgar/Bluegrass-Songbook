@@ -1,0 +1,17 @@
+id: remember-the-alamo
+title: Remember The Alamo
+artist: George Strait
+composers:
+- Wayne Kirkpatrick and Gordon Kennedy
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Rememberthealamolyricsandchords.pro
+    imported_at: '2026-01-02'

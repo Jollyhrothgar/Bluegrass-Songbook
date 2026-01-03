@@ -1,0 +1,17 @@
+id: things-to-remember-lyrics-and-chords
+title: Things To Remember Lyrics and chords
+artist: Faron Young
+composers:
+- Willie Nelson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thingstorememberlyricschords.pro
+    imported_at: '2026-01-02'

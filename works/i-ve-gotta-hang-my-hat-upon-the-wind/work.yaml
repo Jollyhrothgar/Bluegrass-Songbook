@@ -1,0 +1,17 @@
+id: i-ve-gotta-hang-my-hat-upon-the-wind
+title: I've Gotta Hang My Hat Upon The Wind
+artist: Wilburn Brothers
+composers:
+- Andrew Eddings
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegottahangmyhatuponthewindlyricschords.pro
+    imported_at: '2026-01-02'

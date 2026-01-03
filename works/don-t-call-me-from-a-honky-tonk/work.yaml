@@ -1,0 +1,17 @@
+id: don-t-call-me-from-a-honky-tonk
+title: Don't Call Me From a Honky Tonk
+artist: Tony Booth
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontcallmefromahonkytonklyricschords.pro
+    imported_at: '2026-01-02'

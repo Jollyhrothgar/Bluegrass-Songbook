@@ -1,0 +1,16 @@
+id: ill-drink-no-more-wine
+title: I’ll Drink No More Wine
+artist: Jimmy Martin
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illdrinknomorewinelyricschords.pro
+    imported_at: '2026-01-02'

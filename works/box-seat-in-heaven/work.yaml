@@ -1,0 +1,17 @@
+id: box-seat-in-heaven
+title: Box Seat In Heaven
+artist: The Wildwood Valley Boys
+composers:
+- Aubrey Holt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: boxseatinheavenlyricschords.pro
+    imported_at: '2026-01-02'

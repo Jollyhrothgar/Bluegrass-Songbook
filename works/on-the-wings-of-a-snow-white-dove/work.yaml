@@ -1,0 +1,17 @@
+id: on-the-wings-of-a-snow-white-dove
+title: On the Wings of a Snow White Dove
+artist: Ferlin Husky
+composers:
+- Bob Ferguson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onthewingsofasnowwhitedovelyricschords.pro
+    imported_at: '2026-01-02'

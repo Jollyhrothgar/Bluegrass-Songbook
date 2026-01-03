@@ -1,0 +1,18 @@
+id: somewhere-to-come-when-it-rains
+title: Somewhere To Come When It Rains
+artist: Merle Haggard
+composers:
+- Red Lane
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somewheretocomewhenitrainslyricschords.pro
+    imported_at: '2026-01-02'

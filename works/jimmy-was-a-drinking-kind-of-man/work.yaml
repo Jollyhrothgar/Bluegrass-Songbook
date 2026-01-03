@@ -1,0 +1,15 @@
+id: jimmy-was-a-drinking-kind-of-man
+title: Jimmy Was A Drinking Kind Of Man
+artist: Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jimmywasadrinkingkindofmanlyricschords.pro
+    imported_at: '2026-01-02'

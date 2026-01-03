@@ -1,0 +1,13 @@
+id: let-me-be-the-first-to-know
+title: Let Me Be the First to Know
+artist: Johnny Rodriguez
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmebethefirsttoknowlyricsandchords.pro
+    imported_at: '2026-01-02'

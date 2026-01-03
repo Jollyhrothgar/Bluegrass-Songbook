@@ -1,0 +1,19 @@
+id: the-party-ain-t-over-yet
+title: The Party Ain't Over Yet
+artist: Patty Loveless
+composers:
+- John David
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thepartyaintoveryetlyricschords.pro
+    imported_at: '2026-01-02'

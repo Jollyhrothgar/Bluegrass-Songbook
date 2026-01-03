@@ -1,0 +1,22 @@
+id: casey-jones
+title: Casey Jones
+artist: Johnny Cash
+composers:
+- Lawrence Seibert and Ernie Newton
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: caseyjoneslyricschords.pro
+    imported_at: '2026-01-02'

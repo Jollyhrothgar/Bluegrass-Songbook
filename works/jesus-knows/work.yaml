@@ -1,0 +1,17 @@
+id: jesus-knows
+title: Jesus Knows
+artist: Sonny James
+composers:
+- Sonny James and Carole Smith
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusknowslyricschords.pro
+    imported_at: '2026-01-02'

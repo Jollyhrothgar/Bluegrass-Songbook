@@ -1,0 +1,15 @@
+id: ain-t-misbehavin
+title: Ain't Misbehavin'
+artist: Hank Williams Jr.
+composers:
+- Fats Waller, Harry Brooks. Amdu Razaf
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintmisbehavinlyricschords.pro
+    imported_at: '2026-01-02'

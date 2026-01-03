@@ -1,0 +1,18 @@
+id: look-at-me
+title: Look At Me
+artist: Buddy Holly
+composers:
+- Buddy Holly, Jerry Allison, Norman Petty
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookatmelyricschords.pro
+    imported_at: '2026-01-02'

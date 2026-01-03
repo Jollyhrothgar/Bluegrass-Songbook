@@ -1,0 +1,19 @@
+id: silver-bells
+title: Silver Bells
+artist: Brenda Lee
+composers:
+- J. Livingston and Ray Evans
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: silverbellslyricschords.pro
+    imported_at: '2026-01-02'

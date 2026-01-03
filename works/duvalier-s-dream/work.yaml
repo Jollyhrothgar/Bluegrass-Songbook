@@ -1,0 +1,19 @@
+id: duvalier-s-dream
+title: Duvalier's Dream
+artist: Kris Kristofferson
+default_key: Am
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: duvaliersdreamlyricschords.pro
+    imported_at: '2026-01-02'

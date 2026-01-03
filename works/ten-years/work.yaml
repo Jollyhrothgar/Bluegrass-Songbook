@@ -1,0 +1,17 @@
+id: ten-years
+title: Ten Years
+artist: Bob Wills
+composers:
+- Johnny Bond
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tenyearslyricsandchords.pro
+    imported_at: '2026-01-02'

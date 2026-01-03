@@ -1,0 +1,17 @@
+id: she-likes-it-too
+title: She Likes It Too
+artist: Alan Jackson
+composers:
+- Zack Turner and Tim Nichols
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shelikesittoolyricschords.pro
+    imported_at: '2026-01-02'

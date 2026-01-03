@@ -1,0 +1,15 @@
+id: i-ve-decided-to-leave-here-forever
+title: I've Decided To Leave Here Forever
+artist: Robert Duvall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivedecidedtoleavehereforeverlyricschords.pro
+    imported_at: '2026-01-02'

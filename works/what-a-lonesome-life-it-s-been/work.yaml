@@ -1,0 +1,17 @@
+id: what-a-lonesome-life-it-s-been
+title: What A Lonesome Life It's Been
+artist: Skeets McDonald
+composers:
+- Cliff Crofford
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatalonesomelifeitsbeenlyricschords.pro
+    imported_at: '2026-01-02'

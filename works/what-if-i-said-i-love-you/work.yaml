@@ -1,0 +1,18 @@
+id: what-if-i-said-i-love-you
+title: What If I Said I Love You
+artist: Marty Robbins
+composers:
+- Charlie Black and Tommy Rocco
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatifisaidiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

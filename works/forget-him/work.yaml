@@ -1,0 +1,17 @@
+id: forget-him
+title: Forget Him
+artist: Tommy Overstreet
+composers:
+- Ricci Mareno and Charlie Black
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forgethimlyricschords.pro
+    imported_at: '2026-01-02'

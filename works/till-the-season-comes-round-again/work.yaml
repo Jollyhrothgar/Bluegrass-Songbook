@@ -1,0 +1,15 @@
+id: till-the-season-comes-round-again
+title: Till The Season Comes Round Again
+artist: Dolly Parton and Kenny Rogers
+composers:
+- Randy Goodrum and John B. Jarvis
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tilltheseasoncomesroundagainlyricschords.pro
+    imported_at: '2026-01-02'

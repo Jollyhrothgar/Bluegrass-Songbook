@@ -1,0 +1,17 @@
+id: i-don-t-hurt-now-as-much-as-i-used-to
+title: I Don't Hurt Now As Much As I Used To
+artist: Carl Smith
+composers:
+- Wayne P. Walker and Carl Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idonthurtnowasmuchasiusedtolyricschords.pro
+    imported_at: '2026-01-02'

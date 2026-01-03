@@ -1,0 +1,16 @@
+id: i-know-how
+title: I Know How
+artist: Loretta Lynn
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowhowlyricschords.pro
+    imported_at: '2026-01-02'

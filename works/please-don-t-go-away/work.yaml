@@ -1,0 +1,17 @@
+id: please-don-t-go-away
+title: Please Don't Go Away
+artist: Johnny Tillotson
+composers:
+- Johnny Tillotson and Lucille Cosenza
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasedontgoawaylyricschords.pro
+    imported_at: '2026-01-02'

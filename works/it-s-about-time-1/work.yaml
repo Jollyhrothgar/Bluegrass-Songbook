@@ -1,0 +1,18 @@
+id: it-s-about-time-1
+title: It's About Time
+artist: Tracy Byrd
+composers:
+- Curtis Wright and Jim Collins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsabouttimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-never-see-maggie-alone-lyrics-chords
+title: I Never See Maggie Alone Lyrics Chords
+artist: Slim Whitman
+composers:
+- Everett Lynton and Harry Tilsley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineverseemaggiealonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: the-waitress-at-main-street-cafe
+title: The Waitress At Main Street Cafe
+artist: Bobby Bare
+composers:
+- Tom T. Hall
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewaitressatmainstreetcafelyricschords.pro
+    imported_at: '2026-01-02'

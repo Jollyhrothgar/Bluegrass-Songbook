@@ -1,0 +1,17 @@
+id: you-ve-got-a-loving-coming
+title: You've Got A Loving Coming
+artist: Moe Bandy
+composers:
+- Roger Bowling
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotalovingcominglyricschords.pro
+    imported_at: '2026-01-02'

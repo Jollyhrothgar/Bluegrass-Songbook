@@ -1,0 +1,17 @@
+id: dumas-walker
+title: Dumas Walker
+artist: The Kentucky Headhunters
+composers:
+- Doug Phelps, Gregory Martin, Richard Young, Fred Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dumaswalkerlyricschords.pro
+    imported_at: '2026-01-02'

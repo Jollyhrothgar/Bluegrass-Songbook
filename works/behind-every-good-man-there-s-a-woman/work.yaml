@@ -1,0 +1,17 @@
+id: behind-every-good-man-there-s-a-woman
+title: Behind Every Good Man There's A Woman
+artist: Vernon Oxford
+composers:
+- Don Reed and Vernon Oxford
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: behindeverygoodmantheresawomanlyricschords.pro
+    imported_at: '2026-01-02'

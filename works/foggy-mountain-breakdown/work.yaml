@@ -1,0 +1,21 @@
+id: foggy-mountain-breakdown
+title: Foggy Mountain Breakdown
+artist: null
+composers: [Earl Scruggs]
+default_key: G
+default_tempo: 260
+time_signature: 4/4
+tags: [Bluegrass, Instrumental, JamFriendly]
+
+parts:
+  - type: tablature
+    instrument: mandolin
+    format: otf
+    file: mandolin.otf.json
+    label: "Mandolin Break"
+    default: true
+    provenance:
+      source: tef-import
+      source_file: mandolin_foggy_mountain_breakdown.tef
+      author: "Joe Carr - Merlin's Magical Mandolin Method (1978)"
+      imported_at: 2025-01-02

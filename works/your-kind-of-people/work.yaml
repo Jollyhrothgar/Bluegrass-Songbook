@@ -1,0 +1,17 @@
+id: your-kind-of-people
+title: Your Kind Of People
+artist: Porter Wagoner
+composers:
+- Ned Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourkindofpeoplelyricschords.pro
+    imported_at: '2026-01-02'

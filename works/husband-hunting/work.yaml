@@ -1,0 +1,17 @@
+id: husband-hunting
+title: Husband Hunting
+artist: Lynn Anderson
+composers:
+- Liz Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: husbandhuntinglyricschords.pro
+    imported_at: '2026-01-02'

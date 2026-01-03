@@ -1,0 +1,18 @@
+id: if-you-don-t-want-me
+title: If You Don't Want Me
+artist: Patty Loveless
+composers:
+- Emory Gordy and Monte Warden
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoudontwantmelyricschords.pro
+    imported_at: '2026-01-02'

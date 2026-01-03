@@ -1,0 +1,18 @@
+id: i-ll-be-a-hero-when-i-strike
+title: I'll Be a Hero When I Strike
+artist: Merle Haggard
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbeaherowhenistrikelyricschords.pro
+    imported_at: '2026-01-02'

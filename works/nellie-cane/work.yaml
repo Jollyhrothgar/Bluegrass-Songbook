@@ -1,0 +1,17 @@
+id: nellie-cane
+title: Nellie Cane
+artist: Hot Rize
+composers:
+- Tim O'Brien
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: manual
+    source_file: nelliecane.pro
+    imported_at: '2026-01-02'

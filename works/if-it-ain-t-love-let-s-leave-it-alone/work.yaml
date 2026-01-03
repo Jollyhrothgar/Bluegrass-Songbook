@@ -1,0 +1,17 @@
+id: if-it-ain-t-love-let-s-leave-it-alone
+title: If It Ain't Love Let's Leave It Alone
+artist: Connie Smith
+composers:
+- Dallas Frazier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitaintloveletsleaveitalonelyricschords.pro
+    imported_at: '2026-01-02'

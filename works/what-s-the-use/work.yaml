@@ -1,0 +1,17 @@
+id: what-s-the-use
+title: What's The Use
+artist: Jack Greene
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatstheuselyricschords.pro
+    imported_at: '2026-01-02'

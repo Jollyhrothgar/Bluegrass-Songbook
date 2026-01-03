@@ -1,0 +1,15 @@
+id: i-ll-be-leaving-alone
+title: I'll Be Leaving Alone
+artist: Charlie Pride
+composers:
+- Wayland Holyfield and Dickey Lee
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbeleavingalonelyricschords.pro
+    imported_at: '2026-01-02'

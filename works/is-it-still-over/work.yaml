@@ -1,0 +1,17 @@
+id: is-it-still-over
+title: Is It Still Over
+artist: Randy Travis
+composers:
+- Larry Henley and Ken Bell
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isitstilloverlyricschords.pro
+    imported_at: '2026-01-02'

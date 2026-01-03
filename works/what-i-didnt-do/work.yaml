@@ -1,0 +1,17 @@
+id: what-i-didnt-do
+title: What I Didn’t Do
+artist: George Jones
+composers:
+- Wood Arnold Newton and Michael Noble
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatididntdolyricschords.pro
+    imported_at: '2026-01-02'

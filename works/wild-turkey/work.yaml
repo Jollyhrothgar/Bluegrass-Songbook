@@ -1,0 +1,18 @@
+id: wild-turkey
+title: Wild Turkey
+artist: Lacy J. Dalton
+composers:
+- Hugh Moffatt and Pebe Sebert
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wildturkeylyricschords.pro
+    imported_at: '2026-01-02'

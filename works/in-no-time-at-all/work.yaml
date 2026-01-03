@@ -1,0 +1,17 @@
+id: in-no-time-at-all
+title: In No Time at All
+artist: Ronnie Milsap
+composers:
+- Archie Jordan and Richard C Leigh
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: innotimeatalllyricschords.pro
+    imported_at: '2026-01-02'

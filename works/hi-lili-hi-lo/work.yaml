@@ -1,0 +1,18 @@
+id: hi-lili-hi-lo
+title: Hi-Lili Hi-Lo
+artist: The Everly Brothers
+composers:
+- Bronislaw Kaper and Helen Deustch
+default_key: G
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hililihilolyricschords.pro
+    imported_at: '2026-01-02'

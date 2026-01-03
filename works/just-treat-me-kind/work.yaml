@@ -1,0 +1,17 @@
+id: just-treat-me-kind
+title: Just Treat Me Kind
+artist: Norma Jean
+composers:
+- Wayne Kemp
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justtreatmekindlyricschords.pro
+    imported_at: '2026-01-02'

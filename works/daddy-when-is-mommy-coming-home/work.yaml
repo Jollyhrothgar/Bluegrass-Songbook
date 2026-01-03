@@ -1,0 +1,19 @@
+id: daddy-when-is-mommy-coming-home
+title: Daddy When Is Mommy Coming Home
+artist: Ernest Tubb
+composers:
+- Troy L. Martin and Ernest Martin
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: daddywhenismommycominghomelyricschords.pro
+    imported_at: '2026-01-02'

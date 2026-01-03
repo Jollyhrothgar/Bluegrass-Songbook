@@ -1,0 +1,19 @@
+id: i-m-doing-this-for-you
+title: I'm Doing This For You
+artist: Waylon Jennings
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imdoingthisforyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-would-have-loved-you-all-night-long
+title: I Would Have Loved You All Night Long
+artist: Keith Whitley
+composers:
+- Glenn Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldhavelovedyouallnightlonglyricschords.pro
+    imported_at: '2026-01-02'

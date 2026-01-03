@@ -1,0 +1,17 @@
+id: please-don-t-hurt-me
+title: Please Don't Hurt Me
+artist: Norma Jean
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasedonthurtmelyricschords.pro
+    imported_at: '2026-01-02'

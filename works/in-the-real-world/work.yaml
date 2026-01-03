@@ -1,0 +1,19 @@
+id: in-the-real-world
+title: In The Real World
+artist: Roy Orbison
+composers:
+- Richard Kerr and Will Jennings
+default_key: Am
+tags:
+- Rockabilly
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: intherealworldlyricschords.pro
+    imported_at: '2026-01-02'

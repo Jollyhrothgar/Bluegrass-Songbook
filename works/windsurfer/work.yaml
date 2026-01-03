@@ -1,0 +1,19 @@
+id: windsurfer
+title: Windsurfer
+artist: Roy Orbison
+composers:
+- Bill Dees and Roy Orbison
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: windsurferlyricschords.pro
+    imported_at: '2026-01-02'

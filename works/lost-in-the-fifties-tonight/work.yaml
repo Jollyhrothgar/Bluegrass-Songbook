@@ -1,0 +1,17 @@
+id: lost-in-the-fifties-tonight
+title: Lost In The Fifties Tonight
+artist: Ronnie Milsap
+composers:
+- Mike Reid, Troy Seals, Fred Parris
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lostinthefiftiestonightlyricschords.pro
+    imported_at: '2026-01-02'

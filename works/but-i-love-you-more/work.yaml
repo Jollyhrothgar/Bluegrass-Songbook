@@ -1,0 +1,15 @@
+id: but-i-love-you-more
+title: But I Love You More
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: butiloveyoumorelyricschords.pro
+    imported_at: '2026-01-02'

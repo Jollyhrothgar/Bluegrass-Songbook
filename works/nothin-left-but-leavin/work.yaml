@@ -1,0 +1,18 @@
+id: nothin-left-but-leavin
+title: Nothin' Left But Leavin'
+artist: Charley Pride
+composers:
+- Johnny Duncan
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothinleftbutleavinlyricschords.pro
+    imported_at: '2026-01-02'

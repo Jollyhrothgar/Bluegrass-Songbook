@@ -1,0 +1,19 @@
+id: the-blame-lies-with-me
+title: The Blame Lies With Me
+artist: Mickey Gilley
+composers:
+- Sterling Whipple
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theblamelieswithmelyricschords.pro
+    imported_at: '2026-01-02'

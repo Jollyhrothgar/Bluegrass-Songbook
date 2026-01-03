@@ -1,0 +1,20 @@
+id: there-he-goes
+title: There He Goes
+artist: Patsy Cline
+composers:
+- Eddie Miller, Durwood Haddock, W.S. Stevenson
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therehegoeslyricschords.pro
+    imported_at: '2026-01-02'

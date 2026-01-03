@@ -1,0 +1,22 @@
+id: that-s-enough
+title: That's Enough
+artist: Johnny Cash
+composers:
+- Dorothy Coates
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsenoughlyricschords.pro
+    imported_at: '2026-01-02'

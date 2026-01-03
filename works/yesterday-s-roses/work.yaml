@@ -1,0 +1,18 @@
+id: yesterday-s-roses
+title: Yesterday's Roses
+artist: Marty Robbins
+composers:
+- Fred Rose and Gene Autry
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesterdaysroseslyricschords.pro
+    imported_at: '2026-01-02'

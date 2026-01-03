@@ -1,0 +1,17 @@
+id: life-don-t-have-to-be-so-hard
+title: Life Don't Have To Be So Hard
+artist: Tracy Lawrence
+composers:
+- Casey Beathard and Kenny West
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lifedonthavetobesohardlyricschords.pro
+    imported_at: '2026-01-02'

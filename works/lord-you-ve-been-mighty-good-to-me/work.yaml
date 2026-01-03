@@ -1,0 +1,15 @@
+id: lord-you-ve-been-mighty-good-to-me
+title: Lord You've Been Mighty Good To Me
+artist: George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lordyouvebeenmightygoodtomelyricschords.pro
+    imported_at: '2026-01-02'

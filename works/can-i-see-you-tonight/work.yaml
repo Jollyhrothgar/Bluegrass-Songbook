@@ -1,0 +1,18 @@
+id: can-i-see-you-tonight
+title: Can I See You Tonight
+artist: Tanya Tucker
+composers:
+- Rafe VanHoy and Deborah Allen
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: caniseeyoutonightlyricschords.pro
+    imported_at: '2026-01-02'

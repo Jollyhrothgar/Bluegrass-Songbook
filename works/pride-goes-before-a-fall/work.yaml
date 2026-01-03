@@ -1,0 +1,17 @@
+id: pride-goes-before-a-fall
+title: Pride Goes Before A Fall
+artist: Jim Reeves
+composers:
+- Leon Payne
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pridegoesbeforeafalllyricschords.pro
+    imported_at: '2026-01-02'

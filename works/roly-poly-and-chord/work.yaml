@@ -1,0 +1,17 @@
+id: roly-poly-and-chord
+title: Roly Poly and chord
+artist: Bob Wills
+composers:
+- Fred Rose
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rolypolylyricsandchords.pro
+    imported_at: '2026-01-02'

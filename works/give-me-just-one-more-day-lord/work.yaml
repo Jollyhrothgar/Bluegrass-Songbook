@@ -1,0 +1,17 @@
+id: give-me-just-one-more-day-lord
+title: Give Me Just One More Day Lord
+artist: George Jones
+composers:
+- Earl Montgomery and Melba Montgomery
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givemejustonemoredaylordlyricschords.pro
+    imported_at: '2026-01-02'

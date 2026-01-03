@@ -1,0 +1,17 @@
+id: war-is-hell-on-the-homefront-too
+title: War Is Hell On The Homefront Too
+artist: T.G. Sheppard
+composers:
+- Curly Putman, Bucky Jones, Dan Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: warishellonthehomefronttoolyricschords.pro
+    imported_at: '2026-01-02'

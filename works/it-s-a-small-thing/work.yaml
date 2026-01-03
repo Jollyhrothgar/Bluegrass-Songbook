@@ -1,0 +1,15 @@
+id: it-s-a-small-thing
+title: It's A Small Thing
+artist: Wynn Stewart
+composers:
+- Larry Butler and Tony Moon
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsasmallthinglyricschords.pro
+    imported_at: '2026-01-02'

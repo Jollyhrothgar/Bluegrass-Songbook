@@ -1,0 +1,20 @@
+id: i-feel-that-i-ve-known-you-forever
+title: I Feel That I've Known You Forever
+artist: Elvis Presley
+composers:
+- Doc Pomus and Alan Jeffrys
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeelthativeknownyouforeverlyricschords.pro
+    imported_at: '2026-01-02'

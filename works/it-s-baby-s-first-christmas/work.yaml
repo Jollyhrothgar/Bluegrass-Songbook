@@ -1,0 +1,18 @@
+id: it-s-baby-s-first-christmas
+title: It's Baby's First Christmas
+artist: Connie Francis
+composers:
+- Benny Davis and Murray Mencher
+default_key: C
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsbabysfirstChristmaslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-know-i-never-will
+title: I Know I Never Will
+artist: Johnny Paycheck
+composers:
+- Johnny Mathis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowineverwilllyricschords.pro
+    imported_at: '2026-01-02'

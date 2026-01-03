@@ -1,0 +1,19 @@
+id: you-ve-got-a-new-light-shining-in-your-eyes
+title: You've Got A New Light Shining In Your Eyes
+artist: Johnny Cash
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotanewlightshininginyoureyeslyricschords.pro
+    imported_at: '2026-01-02'

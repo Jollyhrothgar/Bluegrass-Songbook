@@ -1,0 +1,15 @@
+id: another-lonely-night-1
+title: Another Lonely Night
+artist: Jean Shepard
+composers:
+- Jan Crutchfield and Larry Butler
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anotherlonelynightlyricschords.pro
+    imported_at: '2026-01-02'

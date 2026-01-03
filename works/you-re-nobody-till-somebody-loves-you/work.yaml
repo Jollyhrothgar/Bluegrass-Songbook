@@ -1,0 +1,15 @@
+id: you-re-nobody-till-somebody-loves-you
+title: You're Nobody Till Somebody Loves You
+artist: Jimmy Dean
+composers:
+- Russ Morgan, James Cavanaugh, Larry Stock
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourenobodytillsomebodylovesyoulyricschords.pro
+    imported_at: '2026-01-02'

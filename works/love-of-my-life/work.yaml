@@ -1,0 +1,18 @@
+id: love-of-my-life
+title: Love Of My Life
+artist: The Everly Brothers
+composers:
+- Boudleaux
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveofmylifelyricschords.pro
+    imported_at: '2026-01-02'

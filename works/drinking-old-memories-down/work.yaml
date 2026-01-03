@@ -1,0 +1,19 @@
+id: drinking-old-memories-down
+title: Drinking Old Memories Down
+artist: Mickey Gilley
+composers:
+- Stanley Kimble Garland
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drinkingoldmemoriesdownlyricschords.pro
+    imported_at: '2026-01-02'

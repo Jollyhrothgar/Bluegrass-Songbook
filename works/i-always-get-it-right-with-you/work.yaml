@@ -1,0 +1,15 @@
+id: i-always-get-it-right-with-you
+title: I Always Get It Right With You
+artist: Gene Watson
+composers:
+- Joe Allen and Charlie Williams
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ialwaysgetitrightwithyoulyricschords.pro
+    imported_at: '2026-01-02'

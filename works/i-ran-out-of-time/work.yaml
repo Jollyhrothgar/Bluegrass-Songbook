@@ -1,0 +1,17 @@
+id: i-ran-out-of-time
+title: I Ran Out Of Time
+artist: Billy Crash Craddock
+composers:
+- Dale Morris
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iranoutoftimelyricschords.pro
+    imported_at: '2026-01-02'

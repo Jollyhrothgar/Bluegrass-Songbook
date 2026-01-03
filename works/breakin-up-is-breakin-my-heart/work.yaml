@@ -1,0 +1,18 @@
+id: breakin-up-is-breakin-my-heart
+title: Breakin’ Up Is Breakin' My Heart
+artist: Roy Orbison
+composers:
+- Bill Dees and Roy Orbison
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: breakinupisbreakinmyheartlyricschords.pro
+    imported_at: '2026-01-02'

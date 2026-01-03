@@ -1,0 +1,17 @@
+id: no-one-is-listening
+title: No One Is Listening
+artist: Vernon Oxford
+composers:
+- Everett Corbin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nooneislisteninglyricschords.pro
+    imported_at: '2026-01-02'

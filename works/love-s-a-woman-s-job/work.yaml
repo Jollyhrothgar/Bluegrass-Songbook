@@ -1,0 +1,17 @@
+id: love-s-a-woman-s-job
+title: Love's A Woman's Job
+artist: Norma Jean
+composers:
+- Lola Jean Dillon
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovesawomansjoblyricschords.pro
+    imported_at: '2026-01-02'

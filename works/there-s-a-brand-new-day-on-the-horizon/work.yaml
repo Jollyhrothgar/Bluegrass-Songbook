@@ -1,0 +1,20 @@
+id: there-s-a-brand-new-day-on-the-horizon
+title: There's A Brand New Day On The Horizon
+artist: Elvis Presley
+composers:
+- Joy Byers
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresabrandnewdayonthehorizonlyricschords.pro
+    imported_at: '2026-01-02'

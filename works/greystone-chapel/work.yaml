@@ -1,0 +1,22 @@
+id: greystone-chapel
+title: Greystone Chapel
+artist: Johnny Cash
+composers:
+- Glen Sherley
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: greystonechapellyricschords.pro
+    imported_at: '2026-01-02'

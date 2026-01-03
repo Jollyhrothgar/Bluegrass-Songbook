@@ -1,0 +1,16 @@
+id: i-guess-i-was-just-a-fool
+title: I Guess I Was Just A Fool
+artist: Buddy Holly
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iguessiwasjustafoollyricschords.pro
+    imported_at: '2026-01-02'

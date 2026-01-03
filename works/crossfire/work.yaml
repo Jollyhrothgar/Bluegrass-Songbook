@@ -1,0 +1,15 @@
+id: crossfire
+title: Crossfire
+artist: The Bellamy Brothers
+composers:
+- Richard Holler and Jerry Careaga
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crossfirelyricschords.pro
+    imported_at: '2026-01-02'

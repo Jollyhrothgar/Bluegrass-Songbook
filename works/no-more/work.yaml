@@ -1,0 +1,21 @@
+id: no-more
+title: No More
+artist: Elvis Presley
+composers:
+- Don Robertson and Hal Blair
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nomorelyricschords.pro
+    imported_at: '2026-01-02'

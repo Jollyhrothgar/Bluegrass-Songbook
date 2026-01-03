@@ -1,0 +1,20 @@
+id: i-really-got-the-feeling
+title: I Really Got The Feeling
+artist: Dolly Parton
+composers:
+- Billy Vera and William McCord
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ireallygotthefeelinglyricschords.pro
+    imported_at: '2026-01-02'

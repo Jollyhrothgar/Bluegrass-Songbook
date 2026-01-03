@@ -1,0 +1,16 @@
+id: hills-of-home
+title: Hills Of Home
+artist: Hazel Dickens
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hillsofhomelyricschords.pro
+    imported_at: '2026-01-02'

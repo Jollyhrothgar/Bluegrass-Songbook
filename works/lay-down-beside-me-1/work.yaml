@@ -1,0 +1,15 @@
+id: lay-down-beside-me-1
+title: Lay Down Beside Me
+artist: Don Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: laydownbesidemelyricschords.pro
+    imported_at: '2026-01-02'

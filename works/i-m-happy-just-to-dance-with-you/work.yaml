@@ -1,0 +1,18 @@
+id: i-m-happy-just-to-dance-with-you
+title: I'm Happy Just To Dance With You
+artist: Anne Murray
+composers:
+- John Lennon and Paul McCartney
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imhappyjusttodancewithyoulyricschords.pro
+    imported_at: '2026-01-02'

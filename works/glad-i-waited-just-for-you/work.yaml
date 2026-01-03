@@ -1,0 +1,17 @@
+id: glad-i-waited-just-for-you
+title: Glad I Waited Just For You
+artist: Reba McEntire
+composers:
+- Royce Porter and Bucky Jones
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gladiwaitedjustforyoulyricschords.pro
+    imported_at: '2026-01-02'

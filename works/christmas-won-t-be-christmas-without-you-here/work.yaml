@@ -1,0 +1,17 @@
+id: christmas-won-t-be-christmas-without-you-here
+title: Christmas Won't Be Christmas (Without You Here)
+artist: Sammy Kershaw
+composers:
+- Steven Cohen and Rick Lagneaux
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ChristmaswontbeChristmaswithoutyouherelyricschords.pro
+    imported_at: '2026-01-02'

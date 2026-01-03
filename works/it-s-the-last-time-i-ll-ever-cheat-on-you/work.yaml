@@ -1,0 +1,17 @@
+id: it-s-the-last-time-i-ll-ever-cheat-on-you
+title: It's The Last Time I'll Ever Cheat On You
+artist: Justin Trevino
+composers:
+- Ronal McCown
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsthelasttimeillevercheatonyoulyricschords.pro
+    imported_at: '2026-01-02'

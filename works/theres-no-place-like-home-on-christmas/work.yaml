@@ -1,0 +1,15 @@
+id: theres-no-place-like-home-on-christmas
+title: There’s No Place Like Home On Christmas
+artist: Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnoplacelikehomeonChristmaslyricschords.pro
+    imported_at: '2026-01-02'

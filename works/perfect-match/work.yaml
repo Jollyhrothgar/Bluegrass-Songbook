@@ -1,0 +1,15 @@
+id: perfect-match
+title: Perfect Match
+artist: Barbara Mandrell
+composers:
+- Glenn Sutton and Ben Peters
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: perfectmatchlyricschords.pro
+    imported_at: '2026-01-02'

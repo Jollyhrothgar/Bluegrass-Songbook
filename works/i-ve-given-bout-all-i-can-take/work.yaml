@@ -1,0 +1,17 @@
+id: i-ve-given-bout-all-i-can-take
+title: I've Given Bout All I Can Take
+artist: Charly McClain
+composers:
+- Susanna Clark and Jon Reid
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegivenboutallicantakelyricschords.pro
+    imported_at: '2026-01-02'

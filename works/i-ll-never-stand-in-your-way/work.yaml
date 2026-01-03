@@ -1,0 +1,17 @@
+id: i-ll-never-stand-in-your-way
+title: I'll Never Stand In Your Way
+artist: Wilburn Brothers
+composers:
+- Clint Horner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverstandinyourwaylyricsandchords.pro
+    imported_at: '2026-01-02'

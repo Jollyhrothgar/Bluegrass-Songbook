@@ -1,0 +1,17 @@
+id: you-re-looking-at-country-lyrics-chords
+title: You're Looking At Country Lyrics Chords
+artist: Loretta Lynn
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourelookingatcountrylyricschords.pro
+    imported_at: '2026-01-02'

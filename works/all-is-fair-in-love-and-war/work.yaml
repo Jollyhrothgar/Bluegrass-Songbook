@@ -1,0 +1,18 @@
+id: all-is-fair-in-love-and-war
+title: All Is Fair In Love And War
+artist: Ronnie Milsap
+composers:
+- Robert B. Byrne and Tim J. Nichols
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allisfairinloveandwarlyricschords.pro
+    imported_at: '2026-01-02'

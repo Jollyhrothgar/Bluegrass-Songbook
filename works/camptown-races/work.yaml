@@ -1,0 +1,17 @@
+id: camptown-races
+title: Camptown Races
+artist: Don Gibson
+composers:
+- Stephen Foster
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: camptownraceslyricschords.pro
+    imported_at: '2026-01-02'

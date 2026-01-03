@@ -1,0 +1,17 @@
+id: back-to-texas
+title: Back To Texas
+artist: Tracy Byrd
+composers:
+- Thomas Damphier and Stacy Beyer
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backtotexaslyricschords.pro
+    imported_at: '2026-01-02'

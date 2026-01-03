@@ -1,0 +1,19 @@
+id: i-m-sorry-we-met
+title: I'm Sorry We Met
+artist: Hank Snow
+composers:
+- Jimmie Rodgers and Elsie McWilliams
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsorrywemetlyricschords.pro
+    imported_at: '2026-01-02'

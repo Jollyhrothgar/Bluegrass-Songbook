@@ -1,0 +1,17 @@
+id: as-long-as-i-ll-forgive
+title: As Long As I'll Forgive
+artist: Webb Pierce
+composers:
+- Wayne P. Walker and Max Powell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aslongasillforgivelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: cry-2
+title: Cry
+artist: Tanya Tucker
+composers:
+- Frank Musker and Garth Murphy
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crylyricswithchords.pro
+    imported_at: '2026-01-02'

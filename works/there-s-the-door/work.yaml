@@ -1,0 +1,15 @@
+id: there-s-the-door
+title: There's the Door
+artist: George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresthedoorlyricschords.pro
+    imported_at: '2026-01-02'

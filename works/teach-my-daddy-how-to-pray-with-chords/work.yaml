@@ -1,0 +1,19 @@
+id: teach-my-daddy-how-to-pray-with-chords
+title: Teach My Daddy How To Pray with chords
+artist: Ernest Tubb
+composers:
+- Jim Owen and James Baker
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: teachmydaddyhowtopraylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: honky-tonk-hearts
+title: Honky Tonk Hearts
+artist: John Anderson
+composers:
+- Bob McDill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkheartslyricschords.pro
+    imported_at: '2026-01-02'

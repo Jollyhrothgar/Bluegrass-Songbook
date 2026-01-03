@@ -1,0 +1,13 @@
+id: the-very-thought-of-losing-you
+title: The Very Thought Of Losing You
+artist: Don Gibson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theverythoughtoflosingyoulyricschords.pro
+    imported_at: '2026-01-02'

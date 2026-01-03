@@ -1,0 +1,17 @@
+id: when-i-call-on-you
+title: When I Call On You
+artist: Slim Whitman
+composers:
+- Dee Clark
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenicallonyoulyricschords.pro
+    imported_at: '2026-01-02'

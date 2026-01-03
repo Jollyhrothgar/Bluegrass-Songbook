@@ -1,0 +1,17 @@
+id: welcome-to-the-sunshine-sweet-baby-jane
+title: Welcome To The Sunshine (Sweet Baby Jane)
+artist: Jeanne Pruett
+composers:
+- Ray Willis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: welcometothesunshinesweetbabyjanelyricschords.pro
+    imported_at: '2026-01-02'

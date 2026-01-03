@@ -1,0 +1,17 @@
+id: lovin-up-a-storm
+title: Lovin' Up A Storm
+artist: Eddy Arnold
+composers:
+- Eddy Arnold and Thelma Blackmon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovinupastormlyricschords.pro
+    imported_at: '2026-01-02'

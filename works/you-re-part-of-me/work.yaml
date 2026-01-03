@@ -1,0 +1,17 @@
+id: you-re-part-of-me
+title: You're Part Of Me
+artist: Roger Miller
+composers:
+- F. Price and Ray Presley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourepartofmelyricsandchords.pro
+    imported_at: '2026-01-02'

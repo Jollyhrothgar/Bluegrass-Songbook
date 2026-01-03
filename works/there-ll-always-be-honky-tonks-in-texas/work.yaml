@@ -1,0 +1,17 @@
+id: there-ll-always-be-honky-tonks-in-texas
+title: There'll Always Be Honky Tonks In Texas
+artist: Johnny Rodriguez
+composers:
+- Bobby Bond and Conrad Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therellalwaysbehonkytonksintexaslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: no-one-but-you
+title: No One But You
+artist: Kitty Wells and Red Foley
+composers:
+- Eddie Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noonebutyoulyricsandchords.pro
+    imported_at: '2026-01-02'

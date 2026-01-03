@@ -1,0 +1,17 @@
+id: think-it-over-1
+title: Think It Over
+artist: Buck Owens
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thinkitoverlyricsandchords.pro
+    imported_at: '2026-01-02'

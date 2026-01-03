@@ -1,0 +1,17 @@
+id: when-the-rooster-leaves-the-yard
+title: When The Rooster Leaves The Yard
+artist: Lefty Frizzel
+composers:
+- Eddie Pleasant and A.C. Solberg
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentheroosterleavestheyardlyricschords.pro
+    imported_at: '2026-01-02'

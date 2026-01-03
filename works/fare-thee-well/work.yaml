@@ -1,0 +1,17 @@
+id: fare-thee-well
+title: Fare Thee Well
+artist: Tony Rice
+composers:
+- Bob Dylan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: faretheewelllyricschords.pro
+    imported_at: '2026-01-02'

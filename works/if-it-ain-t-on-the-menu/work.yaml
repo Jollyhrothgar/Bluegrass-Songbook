@@ -1,0 +1,17 @@
+id: if-it-ain-t-on-the-menu
+title: If It Ain't On The Menu
+artist: Hawkshaw Hawkins
+composers:
+- Eddie Noack
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitaintonthemenulyricschords.pro
+    imported_at: '2026-01-02'

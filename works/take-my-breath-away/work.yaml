@@ -1,0 +1,15 @@
+id: take-my-breath-away
+title: Take My Breath Away
+artist: Margo Smith
+composers:
+- Norro Wilson and Margo Smith
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemybreathawaylyricschords.pro
+    imported_at: '2026-01-02'

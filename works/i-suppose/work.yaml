@@ -1,0 +1,17 @@
+id: i-suppose
+title: I Suppose
+artist: Hawkshaw Hawkins
+composers:
+- Rusty Gabbard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isupposelyricschords.pro
+    imported_at: '2026-01-02'

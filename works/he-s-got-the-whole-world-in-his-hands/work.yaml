@@ -1,0 +1,18 @@
+id: he-s-got-the-whole-world-in-his-hands
+title: He's Got The Whole World in His Hands
+artist: The Statler Brothers
+composers:
+- Forrest Hamilton and Ross Stephens
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesgotthewholeworldinhishandslyricschords.pro
+    imported_at: '2026-01-02'

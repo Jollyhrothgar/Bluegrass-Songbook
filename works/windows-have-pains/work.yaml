@@ -1,0 +1,18 @@
+id: windows-have-pains
+title: Windows Have Pains
+artist: Marty Robbins
+composers:
+- Wes Buchanan
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: windowshavepainslyricschords.pro
+    imported_at: '2026-01-02'

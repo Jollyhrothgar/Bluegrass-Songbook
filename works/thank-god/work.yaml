@@ -1,0 +1,17 @@
+id: thank-god
+title: Thank God
+artist: Hank Williams Sr
+composers:
+- Fred Rose
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankgodlyricschords.pro
+    imported_at: '2026-01-02'

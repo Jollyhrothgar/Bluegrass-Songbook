@@ -1,0 +1,18 @@
+id: you-can-t-buy-your-way-out-of-the-blues
+title: You Can't Buy Your Way Out Of The Blues
+artist: George Strait
+composers:
+- Larry Cordle and Mike Anthony
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantbuyyourwayoutoftheblueslyricschords.pro
+    imported_at: '2026-01-02'

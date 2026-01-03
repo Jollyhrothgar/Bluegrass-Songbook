@@ -1,0 +1,17 @@
+id: you-don-t-care-what-happens-to-me
+title: You Don't Care What Happens To Me
+artist: Ray Price
+composers:
+- Fred Rose
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontcarewhathappenstomelyricschords.pro
+    imported_at: '2026-01-02'

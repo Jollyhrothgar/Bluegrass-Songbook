@@ -1,0 +1,17 @@
+id: i-m-beginning-to-believe
+title: I'm Beginning To Believe
+artist: Wynn Stewart
+composers:
+- Dale Noe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imbeginningtobelievelyricschords.pro
+    imported_at: '2026-01-02'

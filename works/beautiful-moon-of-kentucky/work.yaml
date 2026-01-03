@@ -1,0 +1,17 @@
+id: beautiful-moon-of-kentucky
+title: Beautiful Moon Of Kentucky
+artist: Jim and Jesse
+composers:
+- Jim McReynolds
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beautifulmoonofkentuckylyricschords.pro
+    imported_at: '2026-01-02'

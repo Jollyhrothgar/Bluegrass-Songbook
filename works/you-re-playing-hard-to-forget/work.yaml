@@ -1,0 +1,17 @@
+id: you-re-playing-hard-to-forget
+title: You're Playing Hard To Forget
+artist: Eddy Raven
+composers:
+- Elroy Kahanek and Keith Stegall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youreplayinghardtoforgetlyricschords.pro
+    imported_at: '2026-01-02'

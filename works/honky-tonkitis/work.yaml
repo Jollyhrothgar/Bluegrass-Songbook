@@ -1,0 +1,17 @@
+id: honky-tonkitis
+title: Honky Tonkitis
+artist: Billy Walker
+composers:
+- Tex Atchison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkitislyricschords.pro
+    imported_at: '2026-01-02'

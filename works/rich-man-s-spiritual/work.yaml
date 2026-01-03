@@ -1,0 +1,16 @@
+id: rich-man-s-spiritual
+title: Rich Man's Spiritual
+artist: Gordon Lightfoot
+default_key: C
+tags:
+- Folk
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: richmansspirituallyricschords.pro
+    imported_at: '2026-01-02'

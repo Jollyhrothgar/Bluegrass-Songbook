@@ -1,0 +1,18 @@
+id: put-your-dreams-away
+title: Put Your Dreams Away
+artist: Mickey Gilley
+composers:
+- Wayland Holyfield and Richard Leigh
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: putyourdreamsawaylyricschords.pro
+    imported_at: '2026-01-02'

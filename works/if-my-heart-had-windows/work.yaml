@@ -1,0 +1,17 @@
+id: if-my-heart-had-windows
+title: If My Heart Had Windows
+artist: Patty Loveless
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifmyhearthadwindowslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: candy-coated-kisses
+title: Candy Coated Kisses
+artist: Bobby Bare
+composers:
+- Barry DeVorzon and Cliff Crawford
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: candycoatedkisseslyricschords.pro
+    imported_at: '2026-01-02'

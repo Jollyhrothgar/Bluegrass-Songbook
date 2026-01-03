@@ -1,0 +1,15 @@
+id: you-can-t-make-nothing-out-of-that-but-love
+title: You Can't Make Nothing Out Of That But Love
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantmakenothingoutofthatbutlovelyricschords.pro
+    imported_at: '2026-01-02'

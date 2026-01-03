@@ -1,0 +1,15 @@
+id: high-geared-daddy-lyrics-chords
+title: High Geared Daddy Lyrics Chords
+artist: Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highgeareddaddylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-just-can-t-help-believin
+title: I Just Can't Help Believin'
+artist: Ronnie Milsap
+composers:
+- Cynthia Weil and Barry Mann
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcanthelpbelievinlyricschords.pro
+    imported_at: '2026-01-02'

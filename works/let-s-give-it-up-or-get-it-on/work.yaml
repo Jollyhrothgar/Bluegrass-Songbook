@@ -1,0 +1,17 @@
+id: let-s-give-it-up-or-get-it-on
+title: Let's Give It Up Or Get It On
+artist: Gene Watson
+composers:
+- Joe Allen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsgiveituporgetitonlyricschords.pro
+    imported_at: '2026-01-02'

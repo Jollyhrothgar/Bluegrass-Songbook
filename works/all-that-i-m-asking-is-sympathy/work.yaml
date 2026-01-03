@@ -1,0 +1,17 @@
+id: all-that-i-m-asking-is-sympathy
+title: All That I'm Asking Is Sympathy
+artist: Slim Whitman
+composers:
+- Benny Davis and Joe Burke
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allthatimaskingissympathylyricschords.pro
+    imported_at: '2026-01-02'

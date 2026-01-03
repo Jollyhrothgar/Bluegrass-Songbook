@@ -1,0 +1,18 @@
+id: i-heard-the-jukebox-playing
+title: I Heard The Jukebox Playing
+artist: Kitty Wells
+composers:
+- Linda Baggett, Web Pierce, Kitty Wells
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iheardthejukeboxplayinglyricschords.pro
+    imported_at: '2026-01-02'

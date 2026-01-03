@@ -1,0 +1,17 @@
+id: the-girl-i-used-to-run-around-on
+title: The Girl I Used To Run Around On
+artist: Gene Watson
+composers:
+- Joe Allen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegirliusedtorunaroundonlyricschords.pro
+    imported_at: '2026-01-02'

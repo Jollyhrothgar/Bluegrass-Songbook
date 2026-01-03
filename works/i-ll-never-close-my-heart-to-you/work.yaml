@@ -1,0 +1,18 @@
+id: i-ll-never-close-my-heart-to-you
+title: I'll Never Close My Heart to You
+artist: Hawkshaw Hawkins
+composers:
+- Floyd Wilson
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverclosemyhearttoyoulyricschords.pro
+    imported_at: '2026-01-02'

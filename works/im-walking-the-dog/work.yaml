@@ -1,0 +1,17 @@
+id: im-walking-the-dog
+title: I’m Walking The Dog
+artist: Webb Pierce
+composers:
+- Cliff Grimsley and Tex Grimsley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imwalkingthedoglyricschords.pro
+    imported_at: '2026-01-02'

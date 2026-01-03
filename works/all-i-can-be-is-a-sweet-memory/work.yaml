@@ -1,0 +1,17 @@
+id: all-i-can-be-is-a-sweet-memory
+title: All I Can Be Is A Sweet Memory
+artist: Johnny Rodriguez Lyrics with Chords
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allicanbeisasweetmemorylyricschords.pro
+    imported_at: '2026-01-02'

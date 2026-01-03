@@ -1,0 +1,17 @@
+id: we-are-drifting
+title: We Are Drifting
+artist: Webb Pierce
+composers:
+- Warner McPherson and Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wearedriftinglyricschords.pro
+    imported_at: '2026-01-02'

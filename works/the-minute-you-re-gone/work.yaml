@@ -1,0 +1,15 @@
+id: the-minute-you-re-gone
+title: The Minute You're Gone
+artist: Sonny James
+composers:
+- Jimmy GateleyG C
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theminuteyouregonelyricschords.pro
+    imported_at: '2026-01-02'

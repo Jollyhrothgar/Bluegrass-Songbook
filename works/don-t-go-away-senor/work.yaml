@@ -1,0 +1,18 @@
+id: don-t-go-away-senor
+title: Don't Go Away Senor
+artist: Marty Robbins
+composers:
+- Jimmy Sweeney
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontgoawaysenorlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: if-you-see-my-savior
+title: If You See My Savior
+artist: Anne Murray
+composers:
+- Rev. Thomas A. Dorsey
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouseemysaviorlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: do-you-know-what-its-like-to-be-lonesome
+title: Do You Know What It’s Like To Be Lonesome
+artist: Jerry Wallace
+composers:
+- Bert Pellish
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doyouknowwhatitsliketobelonesomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: my-heart-is-bleeding
+title: My Heart Is Bleeding
+artist: Fats Domino
+composers:
+- Pearl King and Dave Bartholomew
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartisbleedinglyricschords.pro
+    imported_at: '2026-01-02'

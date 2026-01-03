@@ -1,0 +1,17 @@
+id: i-believe-he-s-coming-back
+title: I Believe He's Coming Back
+artist: Goodman Family
+composers:
+- Rusty Goodman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibelievehescomingbacklyricschords.pro
+    imported_at: '2026-01-02'

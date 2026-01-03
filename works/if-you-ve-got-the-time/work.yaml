@@ -1,0 +1,17 @@
+id: if-you-ve-got-the-time
+title: If You've Got The Time
+artist: Red Steagall
+composers:
+- B. Backer and B. Davis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouvegotthetimelyricschords.pro
+    imported_at: '2026-01-02'

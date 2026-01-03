@@ -1,0 +1,15 @@
+id: where-the-mountains-meet-the-sky
+title: Where The Mountains Meet The Sky
+artist: Eddy Arnold
+composers:
+- Aston Williams and Sammy Kaye
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherethemountainsmeettheskylyricschords.pro
+    imported_at: '2026-01-02'

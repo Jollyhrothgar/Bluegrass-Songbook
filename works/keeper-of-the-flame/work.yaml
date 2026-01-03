@@ -1,0 +1,17 @@
+id: keeper-of-the-flame
+title: Keeper Of The Flame
+artist: Eddy Raven
+composers:
+- Steve Harris and Jerry McBee
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keeperoftheflamelyricschords.pro
+    imported_at: '2026-01-02'

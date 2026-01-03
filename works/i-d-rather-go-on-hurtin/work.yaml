@@ -1,0 +1,15 @@
+id: i-d-rather-go-on-hurtin
+title: I'd Rather Go On Hurtin'
+artist: Joe Sun
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idrathergoonhurtinlyricschords.pro
+    imported_at: '2026-01-02'

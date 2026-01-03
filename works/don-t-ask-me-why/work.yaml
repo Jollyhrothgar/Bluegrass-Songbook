@@ -1,0 +1,17 @@
+id: don-t-ask-me-why
+title: Don't Ask Me Why
+artist: Jim Reeves
+composers:
+- Joan Hager
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontaskmewhylyricsandchords.pro
+    imported_at: '2026-01-02'

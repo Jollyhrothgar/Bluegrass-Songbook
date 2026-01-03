@@ -1,0 +1,15 @@
+id: i-ll-walk-alone
+title: I'll Walk Alone
+artist: Ricky Nelson
+composers:
+- Sammy Cahn and Jule Styne
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illwalkalonelyricschords.pro
+    imported_at: '2026-01-02'

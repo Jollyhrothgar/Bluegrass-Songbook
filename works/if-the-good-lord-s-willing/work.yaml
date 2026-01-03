@@ -1,0 +1,22 @@
+id: if-the-good-lord-s-willing
+title: If The Good Lord's Willing
+artist: Johnny Cash
+composers:
+- Jerry Reed Hubbard
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifthegoodlordswillinglyricschords.pro
+    imported_at: '2026-01-02'

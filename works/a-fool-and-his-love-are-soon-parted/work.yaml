@@ -1,0 +1,15 @@
+id: a-fool-and-his-love-are-soon-parted
+title: A Fool And His Love Are Soon Parted
+artist: Billy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afoolandhislovearesoonpartedlyricschords.pro
+    imported_at: '2026-01-02'

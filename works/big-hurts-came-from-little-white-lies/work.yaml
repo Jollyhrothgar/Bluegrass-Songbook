@@ -1,0 +1,17 @@
+id: big-hurts-came-from-little-white-lies
+title: Big Hurts Came From Little White Lies
+artist: Sonny James
+composers:
+- Sonny James and Carole Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bighurtscamefromlittlewhitelieslyricschords.pro
+    imported_at: '2026-01-02'

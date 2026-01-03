@@ -1,0 +1,15 @@
+id: what-are-we-doin-lonesome
+title: What Are We Doin’ Lonesome
+artist: Gatlin Brothers
+composers:
+- Larry Gatlin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatarewedoinlonesomelyricschords.pro
+    imported_at: '2026-01-02'

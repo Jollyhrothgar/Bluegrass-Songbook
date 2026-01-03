@@ -1,0 +1,18 @@
+id: is-my-lord-satisfied-with-me
+title: Is My Lord Satisfied With Me
+artist: The Oak Ridge Boys
+composers:
+- E.W. Suggs
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ismylordsatisfiedwithmelyricschords.pro
+    imported_at: '2026-01-02'

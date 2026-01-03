@@ -1,0 +1,15 @@
+id: my-old-hometown
+title: My Old Hometown
+artist: Hank Locklin
+composers:
+- Hoyt Johnson and Kermit Barrett
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myoldhometownlyricschords.pro
+    imported_at: '2026-01-02'

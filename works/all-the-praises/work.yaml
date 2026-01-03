@@ -1,0 +1,17 @@
+id: all-the-praises
+title: All The Praises
+artist: George Jones
+composers:
+- Carmol Taylor and Jenny Strickland
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allthepraiseslyricschords.pro
+    imported_at: '2026-01-02'

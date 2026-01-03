@@ -1,0 +1,17 @@
+id: uphill-all-the-way
+title: Uphill All The Way
+artist: Mel Tillis
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: uphillallthewaylyricschords.pro
+    imported_at: '2026-01-02'

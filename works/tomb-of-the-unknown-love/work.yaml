@@ -1,0 +1,18 @@
+id: tomb-of-the-unknown-love
+title: Tomb Of The Unknown Love
+artist: Kenny Rogers
+composers:
+- Michael Smotherman
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tomboftheunknownlovelyricschords.pro
+    imported_at: '2026-01-02'

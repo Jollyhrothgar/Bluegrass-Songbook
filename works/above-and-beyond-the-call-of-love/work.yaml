@@ -1,0 +1,17 @@
+id: above-and-beyond-the-call-of-love
+title: Above and Beyond the Call of Love
+artist: Buck Owens
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aboveandbeyondthecalloflovelyricschords.pro
+    imported_at: '2026-01-02'

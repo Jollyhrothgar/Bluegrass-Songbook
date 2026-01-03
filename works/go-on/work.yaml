@@ -1,0 +1,19 @@
+id: go-on
+title: Go On
+artist: Patty Loveless
+composers:
+- Roger Murrah and Patty Loveless
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goonlyricschords.pro
+    imported_at: '2026-01-02'

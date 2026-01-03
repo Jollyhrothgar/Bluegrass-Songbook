@@ -1,0 +1,18 @@
+id: why-d-you-go-and-break-my-heart
+title: Why'd You Go And Break My Heart
+artist: George Strait
+composers:
+- David Anthony
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydyougoandbreakmyheartlyricschords.pro
+    imported_at: '2026-01-02'

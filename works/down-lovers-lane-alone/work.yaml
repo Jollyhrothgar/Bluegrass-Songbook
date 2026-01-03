@@ -1,0 +1,17 @@
+id: down-lovers-lane-alone
+title: Down Lovers Lane Alone
+artist: Faron Young
+composers:
+- Faron Young and Chuck Woods
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downloverslanealonelyricschords.pro
+    imported_at: '2026-01-02'

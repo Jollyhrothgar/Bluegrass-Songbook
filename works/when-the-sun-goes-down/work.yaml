@@ -1,0 +1,18 @@
+id: when-the-sun-goes-down
+title: When The Sun Goes Down
+artist: Marty Stuart
+composers:
+- Marty Stuart and Mark Collie
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthesungoesdownlyricschords.pro
+    imported_at: '2026-01-02'

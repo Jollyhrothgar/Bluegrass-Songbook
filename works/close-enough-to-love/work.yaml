@@ -1,0 +1,18 @@
+id: close-enough-to-love
+title: Close Enough To Love
+artist: Conway Twitty
+composers:
+- Johnny Mandel and Paul Williams
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: closeenoughtolovelyricschords.pro
+    imported_at: '2026-01-02'

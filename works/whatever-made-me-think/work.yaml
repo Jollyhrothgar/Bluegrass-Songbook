@@ -1,0 +1,17 @@
+id: whatever-made-me-think
+title: Whatever Made Me Think
+artist: Red Steagall
+composers:
+- Glenn Sutton and Red Steagall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatevermademethinklyricschords.pro
+    imported_at: '2026-01-02'

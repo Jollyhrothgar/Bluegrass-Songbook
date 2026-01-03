@@ -1,0 +1,18 @@
+id: you-re-why-god-made-me
+title: You're Why God Made Me
+artist: Tracy Lawrence
+composers:
+- Will Nance and Billy Yates
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourewhyGodmademelyricschords.pro
+    imported_at: '2026-01-02'

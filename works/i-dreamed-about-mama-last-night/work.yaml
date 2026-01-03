@@ -1,0 +1,19 @@
+id: i-dreamed-about-mama-last-night
+title: I Dreamed About Mama Last Night
+artist: Hank Williams
+composers:
+- Fred Rose
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idreamedaboutmamalastnightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: girl-don-t-have-to-drink-to-have-fun
+title: Girl Don't Have To Drink To Have Fun
+artist: Wanda Jackson
+composers:
+- Charlie Williams and Joe Nixon
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: agirldonthavetodrinktohavefunlyricschords.pro
+    imported_at: '2026-01-02'

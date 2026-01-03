@@ -1,0 +1,19 @@
+id: don-t-it-make-you-lonely
+title: Don't It Make You Lonely
+artist: Conway Twitty
+composers:
+- Jackson Lee Leap
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontitmakeyoulonelylyricschords.pro
+    imported_at: '2026-01-02'

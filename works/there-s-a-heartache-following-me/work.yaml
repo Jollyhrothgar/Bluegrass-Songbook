@@ -1,0 +1,17 @@
+id: there-s-a-heartache-following-me
+title: There's A Heartache Following Me
+artist: Jim Reeves
+composers:
+- Jim Reeves and James O'Gynn
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartachefollowingmelyricschords.pro
+    imported_at: '2026-01-02'

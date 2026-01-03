@@ -1,0 +1,19 @@
+id: i-know-that-jesus-will-be-there
+title: I Know That Jesus Will Be There
+artist: Jerry Lee Lewis
+composers:
+- Cecil Harrelson and Linda G. Lewis
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowthatJesuswillbetherelyricschords.pro
+    imported_at: '2026-01-02'

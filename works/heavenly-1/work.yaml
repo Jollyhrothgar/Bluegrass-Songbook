@@ -1,0 +1,18 @@
+id: heavenly-1
+title: Heavenly
+artist: Conway Twitty
+composers:
+- Conway Twitty and Jack Nance
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavenlylyricschords.pro
+    imported_at: '2026-01-02'

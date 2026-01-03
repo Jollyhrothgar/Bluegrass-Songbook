@@ -1,0 +1,17 @@
+id: working-my-way-up-to-the-bottom
+title: Working My Way Up To The Bottom
+artist: Roy Drusky
+composers:
+- Eddie Rabbitt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: workingmywayuptothebottomlyricschords.pro
+    imported_at: '2026-01-02'

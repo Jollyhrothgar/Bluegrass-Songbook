@@ -1,0 +1,17 @@
+id: daddy-s-song
+title: Daddy's Song
+artist: Kris Kristofferson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: daddyssonglyricsandchords.pro
+    imported_at: '2026-01-02'

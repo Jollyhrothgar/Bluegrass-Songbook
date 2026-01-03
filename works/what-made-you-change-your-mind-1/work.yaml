@@ -1,0 +1,16 @@
+id: what-made-you-change-your-mind-1
+title: What Made You Change Your Mind
+artist: Marty Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatmadeyouchangeyourmindlyricschords.pro
+    imported_at: '2026-01-02'

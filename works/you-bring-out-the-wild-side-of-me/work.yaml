@@ -1,0 +1,15 @@
+id: you-bring-out-the-wild-side-of-me
+title: You Bring Out The Wild Side Of Me
+artist: Dan Seals
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youbringoutthewildsideofmelyricschords.pro
+    imported_at: '2026-01-02'

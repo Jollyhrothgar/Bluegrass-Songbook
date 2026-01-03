@@ -1,0 +1,17 @@
+id: if-drinking-dont-kill-me
+title: If Drinking Don’t Kill Me
+artist: George Jones
+composers:
+- Harlan Sanders and Rick Baresford
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifdrinkingdontkillmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: my-baby-s-just-like-money
+title: My Baby's Just Like Money
+artist: Lefty Frizzell
+composers:
+- Lefty Frizzell and Jim Beck
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mybabysjustlikemoneylyricschords.pro
+    imported_at: '2026-01-02'

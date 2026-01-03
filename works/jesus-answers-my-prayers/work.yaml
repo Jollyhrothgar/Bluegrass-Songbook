@@ -1,0 +1,17 @@
+id: jesus-answers-my-prayers
+title: Jesus Answers My Prayers
+artist: Reno and Smiley
+composers:
+- Don Reno
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusanswersmyprayerslyricschords.pro
+    imported_at: '2026-01-02'

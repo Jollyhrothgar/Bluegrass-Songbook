@@ -1,0 +1,17 @@
+id: oklahoma-morning
+title: Oklahoma Morning
+artist: Charlie Pride
+composers:
+- Jim Chesnut
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oklahomamorninglyricschords.pro
+    imported_at: '2026-01-02'

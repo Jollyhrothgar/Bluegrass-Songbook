@@ -1,0 +1,17 @@
+id: we-re-gonna-hold-on
+title: We're Gonna Hold On
+artist: George Jones and Tammy Wynette
+composers:
+- Earl Montgomery and George Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weregonnaholdonlyricschords.pro
+    imported_at: '2026-01-02'

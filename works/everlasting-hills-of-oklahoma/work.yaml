@@ -1,0 +1,17 @@
+id: everlasting-hills-of-oklahoma
+title: Everlasting Hills Of Oklahoma
+artist: Hank Thompson
+composers:
+- Tim Spencer
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everlastinghillsofoklahomalyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: harbor-for-a-lonely-heart
+title: Harbor For A Lonely Heart
+artist: Sammy Kershaw
+composers:
+- Jenny Yates and Kostas Lazarides
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: harborforalonelyheartlyricschords.pro
+    imported_at: '2026-01-02'

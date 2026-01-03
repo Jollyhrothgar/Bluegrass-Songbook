@@ -1,0 +1,17 @@
+id: she-s-not-forgotten-yet
+title: She's Not Forgotten Yet
+artist: Little Jimmy Dickens
+composers:
+- Del Reeves and Ellen Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesnotforgottenyetlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: your-alibi-called-today
+title: Your Alibi Called Today
+artist: Norma Jean
+composers:
+- Hank Cochran
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youralibicalledtodaylyricschords.pro
+    imported_at: '2026-01-02'

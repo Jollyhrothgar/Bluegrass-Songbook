@@ -1,0 +1,15 @@
+id: from-a-rolls-to-the-rails
+title: From A Rolls To The Rails
+artist: Boxcar Willie
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromarollstotherailslyricschords.pro
+    imported_at: '2026-01-02'

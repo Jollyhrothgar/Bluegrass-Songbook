@@ -1,0 +1,20 @@
+id: you-went-out-of-your-way-to-walk-on-me
+title: You Went Out Of Your Way (To Walk On Me)
+artist: Jerry Lee Lewis
+composers:
+- Paul Craft
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwentoutofyourwaytowalkonmelyricschords.pro
+    imported_at: '2026-01-02'

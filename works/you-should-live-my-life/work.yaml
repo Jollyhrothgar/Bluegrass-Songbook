@@ -1,0 +1,15 @@
+id: you-should-live-my-life
+title: You Should Live My Life
+artist: Ferlin Husky
+composers:
+- Jimmy Peppers
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youshouldlivemylifelyricschords.pro
+    imported_at: '2026-01-02'

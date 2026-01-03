@@ -1,0 +1,18 @@
+id: things-i-might-have-been
+title: Things I Might Have Been
+artist: Kitty Wells
+composers:
+- Robert Sherman and Richard Sherman
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thingsimighthavebeenlyricschords.pro
+    imported_at: '2026-01-02'

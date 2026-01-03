@@ -1,0 +1,17 @@
+id: you-look-like-someone-that-used-to-love-me
+title: You Look Like Someone That Used To Love Me
+artist: Tony Booth
+composers:
+- Glenn Sutton and Billy Troy
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youlooklikesomeonethatusedtolovemelyricschords.pro
+    imported_at: '2026-01-02'

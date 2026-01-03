@@ -1,0 +1,17 @@
+id: prayer-bells-of-heaven
+title: Prayer Bells Of Heaven
+artist: J.D. Crowe
+composers:
+- Paul Williams and Jimmy Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prayerbellsofheavenlyricschords.pro
+    imported_at: '2026-01-02'

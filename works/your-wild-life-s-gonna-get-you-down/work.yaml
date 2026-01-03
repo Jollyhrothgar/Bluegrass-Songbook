@@ -1,0 +1,18 @@
+id: your-wild-life-s-gonna-get-you-down
+title: Your Wild Life's Gonna Get You Down
+artist: Kitty Wells
+composers:
+- Bob Gallion
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourwildlifesgonnagetyoudownlyricschords.pro
+    imported_at: '2026-01-02'

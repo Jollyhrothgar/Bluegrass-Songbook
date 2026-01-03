@@ -1,0 +1,17 @@
+id: i-was-just-walking-out-the-door
+title: I Was Just Walking Out The Door
+artist: Jim Reeves
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwasjustwalkingoutthedoorlyricschords.pro
+    imported_at: '2026-01-02'

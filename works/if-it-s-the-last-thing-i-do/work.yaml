@@ -1,0 +1,19 @@
+id: if-it-s-the-last-thing-i-do
+title: If It's The Last Thing I Do
+artist: Patty Loveless
+composers:
+- Doug Gill and Phyllis Austin
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitsthelastthingidolyricschords.pro
+    imported_at: '2026-01-02'

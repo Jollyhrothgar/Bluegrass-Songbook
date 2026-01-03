@@ -1,0 +1,15 @@
+id: what-a-wonderful-world
+title: What A Wonderful World
+artist: Ray Price
+composers:
+- George Weiss, George Douglas, Bob Thiele
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatawonderfulworldlyricschords.pro
+    imported_at: '2026-01-02'

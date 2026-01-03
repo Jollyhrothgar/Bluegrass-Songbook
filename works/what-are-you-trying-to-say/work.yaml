@@ -1,0 +1,17 @@
+id: what-are-you-trying-to-say
+title: What Are You Trying To Say
+artist: Delmore Brothers
+composers:
+- Johnny Williams, Tom T. Hall, Dixie Hall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatareyyoutryingtosaylyricschords.pro
+    imported_at: '2026-01-02'

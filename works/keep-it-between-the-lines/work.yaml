@@ -1,0 +1,17 @@
+id: keep-it-between-the-lines
+title: Keep It Between The Lines
+artist: Ricky Van Shelton
+composers:
+- Russell Smith and Kathy Louvin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keepitbetweenthelineslyricschords.pro
+    imported_at: '2026-01-02'

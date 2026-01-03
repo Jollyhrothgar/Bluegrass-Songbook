@@ -1,0 +1,19 @@
+id: she-drew-a-broken-heart
+title: She Drew A Broken Heart
+artist: Patty Loveless
+composers:
+- Jon McElroy and Ned McElroy
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shedrewabrokenheartlyricsandchords.pro
+    imported_at: '2026-01-02'

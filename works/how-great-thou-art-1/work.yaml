@@ -1,0 +1,18 @@
+id: how-great-thou-art-1
+title: How Great Thou Art
+artist: Tammy Wynette
+composers:
+- Stuart K. Hine
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howgreatthouartlyricschords.pro
+    imported_at: '2026-01-02'

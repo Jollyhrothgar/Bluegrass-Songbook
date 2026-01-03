@@ -1,0 +1,17 @@
+id: bayou-bum
+title: Bayou Bum
+artist: Johnny Paycheck
+composers:
+- Donny Young, Aubrey Mayhew, Arnie Adams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bayoubumlyricschords.pro
+    imported_at: '2026-01-02'

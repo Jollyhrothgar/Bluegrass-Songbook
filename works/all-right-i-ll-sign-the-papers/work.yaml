@@ -1,0 +1,17 @@
+id: all-right-i-ll-sign-the-papers
+title: All Right I'll Sign The Papers
+artist: Ray Price
+composers:
+- Mel Tillis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allrightillsignthepaperslyricschords.pro
+    imported_at: '2026-01-02'

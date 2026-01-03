@@ -1,0 +1,17 @@
+id: i-can-t-get-over-missing-you
+title: I Can't Get Over Missing You
+artist: Sonny James
+composers:
+- Sonny James and Hazel Pitts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantgetovermissingyoulyricschords.pro
+    imported_at: '2026-01-02'

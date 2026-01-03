@@ -1,0 +1,17 @@
+id: it-scares-me-half-to-death
+title: It Scares Me Half To Death
+artist: Jean Shepard
+composers:
+- Audrey Allison and Joe Allison
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itscaresmehalftodeathlyricschords.pro
+    imported_at: '2026-01-02'

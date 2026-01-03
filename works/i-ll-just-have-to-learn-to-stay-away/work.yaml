@@ -1,0 +1,15 @@
+id: i-ll-just-have-to-learn-to-stay-away
+title: I'll Just Have To Learn To Stay Away
+artist: Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illjusthavetolearntostayawaylyricschords.pro
+    imported_at: '2026-01-02'

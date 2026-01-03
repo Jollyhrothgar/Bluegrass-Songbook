@@ -1,0 +1,17 @@
+id: close-to-linda
+title: Close To Linda
+artist: Billy Walker
+composers:
+- Fred Foster
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: closetolindalyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-bowed-on-my-knees-and-cried-holy
+title: I Bowed on My Knees and Cried Holy
+artist: Ricky Van Shelton
+composers:
+- Nettie Dudley Washington and E.M. Dudley Cantwell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibowedonmykneesandcriedholylyricschords.pro
+    imported_at: '2026-01-02'

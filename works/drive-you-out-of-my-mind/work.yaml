@@ -1,0 +1,19 @@
+id: drive-you-out-of-my-mind
+title: Drive You Out Of My Mind
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Lorene Allen
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: driveyououtofmymindlyricschords.pro
+    imported_at: '2026-01-02'

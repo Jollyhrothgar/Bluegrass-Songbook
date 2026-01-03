@@ -1,0 +1,17 @@
+id: is-my-ring-on-your-finger
+title: Is My Ring On Your Finger
+artist: Webb Pierce
+composers:
+- Wayne P. Walker and Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ismyringonyourfingerlyricschords.pro
+    imported_at: '2026-01-02'

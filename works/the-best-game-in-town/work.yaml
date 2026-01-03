@@ -1,0 +1,19 @@
+id: the-best-game-in-town
+title: The Best Game In Town
+artist: David Allan Coe
+composers:
+- Shel Silverstein, David A. Coe, Karen Brooks
+default_key: G
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebestgameintownlyricschords.pro
+    imported_at: '2026-01-02'

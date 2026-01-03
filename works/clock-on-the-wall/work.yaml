@@ -1,0 +1,15 @@
+id: clock-on-the-wall
+title: Clock On The Wall
+artist: Crystal Gayle
+composers:
+- Donald Webb
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: clockonthewalllyricschords.pro
+    imported_at: '2026-01-02'

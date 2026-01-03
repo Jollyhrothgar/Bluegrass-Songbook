@@ -1,0 +1,18 @@
+id: dont-believe-my-heart-can-stand-another-you
+title: Don’t Believe My Heart Can Stand Another You
+artist: Tanya Tucker
+composers:
+- Billy Ray Reynolds
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontbelievemyheartcanstandanotheryoulyricschords.pro
+    imported_at: '2026-01-02'

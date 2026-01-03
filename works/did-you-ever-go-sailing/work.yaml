@@ -1,0 +1,17 @@
+id: did-you-ever-go-sailing
+title: Did You Ever Go Sailing
+artist: T. Texas Tyler
+composers:
+- Albert Brumley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didyouevergosailinglyricschords.pro
+    imported_at: '2026-01-02'

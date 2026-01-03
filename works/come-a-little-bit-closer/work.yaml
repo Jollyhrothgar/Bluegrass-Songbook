@@ -1,0 +1,17 @@
+id: come-a-little-bit-closer
+title: Come A Little Bit Closer
+artist: Johnny Duncan and Janie Fricke
+composers:
+- Tommy Boyce, Bobby Hart, Wes Farrell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comealittlebitcloserlyricschords.pro
+    imported_at: '2026-01-02'

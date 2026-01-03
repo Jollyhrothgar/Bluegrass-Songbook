@@ -1,0 +1,19 @@
+id: daniel-prayed
+title: Daniel Prayed
+artist: Patty Loveless
+composers:
+- Ralph Stanley and G.T. Speer
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: danielprayedlyricschords.pro
+    imported_at: '2026-01-02'

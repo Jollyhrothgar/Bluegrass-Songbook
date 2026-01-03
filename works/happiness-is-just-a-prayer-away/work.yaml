@@ -1,0 +1,17 @@
+id: happiness-is-just-a-prayer-away
+title: Happiness Is Just A Prayer Away
+artist: Jimmie Davis
+composers:
+- Albert Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: happinessisjustaprayerawaylyricschords.pro
+    imported_at: '2026-01-02'

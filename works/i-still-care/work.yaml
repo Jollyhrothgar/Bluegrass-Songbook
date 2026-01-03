@@ -1,0 +1,19 @@
+id: i-still-care
+title: I Still Care
+artist: Mickey Gilley
+composers:
+- Jack Jessup
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: istillcarelyricschords.pro
+    imported_at: '2026-01-02'

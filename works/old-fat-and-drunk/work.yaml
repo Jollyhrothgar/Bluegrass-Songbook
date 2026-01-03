@@ -1,0 +1,17 @@
+id: old-fat-and-drunk
+title: Old Fat and Drunk
+artist: The Austin Lounge Lizards
+composers:
+- Conrad Deisler
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldfatanddrunklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: bedtime-comes-earlier-at-our-house
+title: Bedtime Comes Earlier At Our House
+artist: Charly McClain
+composers:
+- Danny Hogan and Butch Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bedtimecomesearlieratourhouselyricschords.pro
+    imported_at: '2026-01-02'

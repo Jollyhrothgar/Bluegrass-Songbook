@@ -1,0 +1,17 @@
+id: crying-holy-unto-the-lord
+title: Crying holy unto the Lord
+artist: J.D. Crowe
+composers:
+- Irene Amburgey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cryingholyuntothelordlyricschords.pro
+    imported_at: '2026-01-02'

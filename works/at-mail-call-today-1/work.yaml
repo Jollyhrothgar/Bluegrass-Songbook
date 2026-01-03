@@ -1,0 +1,18 @@
+id: at-mail-call-today-1
+title: At Mail Call Today
+artist: Gene Autry
+composers:
+- Gene Autry and Fred Rose
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atmailcalltodaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-get-the-picture
+title: I Get The Picture
+artist: Keith Whitley
+composers:
+- Don Cook and Fred Koller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igetthepicturelyricschords.pro
+    imported_at: '2026-01-02'

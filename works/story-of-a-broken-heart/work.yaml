@@ -1,0 +1,22 @@
+id: story-of-a-broken-heart
+title: Story Of A Broken Heart
+artist: Johnny Cash
+composers:
+- Sam Phillips
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: storyofabrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

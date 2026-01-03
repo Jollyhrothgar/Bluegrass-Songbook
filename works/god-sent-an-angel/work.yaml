@@ -1,0 +1,17 @@
+id: god-sent-an-angel
+title: God Sent An Angel
+artist: Doyle Lawson
+composers:
+- Doyle Lawson, Leroy Drumm, Pete Goble
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godsentanangellyricschords.pro
+    imported_at: '2026-01-02'

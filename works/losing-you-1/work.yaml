@@ -1,0 +1,19 @@
+id: losing-you-1
+title: Losing You
+artist: Roy Orbison
+composers:
+- Roy Kelton Orbison, Bill Dees, William Dees
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: losingyoulyricschords.pro
+    imported_at: '2026-01-02'

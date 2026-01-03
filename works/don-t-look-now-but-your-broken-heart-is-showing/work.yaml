@@ -1,0 +1,19 @@
+id: don-t-look-now-but-your-broken-heart-is-showing
+title: Don't Look Now (But Your Broken Heart Is Showing)
+artist: Hank Thompson
+composers:
+- Ernest Tubb
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontlooknowbutyourbrokenheartisshowinglyricschords.pro
+    imported_at: '2026-01-02'

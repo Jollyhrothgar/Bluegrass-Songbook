@@ -1,0 +1,19 @@
+id: your-memory-ain-t-what-it-used-to-be
+title: Your Memory Ain't What It Used To Be
+artist: Mickey Gilley
+composers:
+- Mary Fielder, Kim Morrison and Dickey Betts
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourmemoryaintwhatitusedtobelyricschords.pro
+    imported_at: '2026-01-02'

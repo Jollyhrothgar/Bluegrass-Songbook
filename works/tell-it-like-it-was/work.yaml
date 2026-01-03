@@ -1,0 +1,17 @@
+id: tell-it-like-it-was
+title: Tell It Like It Was
+artist: Bill Anderson
+composers:
+- Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellitlikeitwaslyricschords.pro
+    imported_at: '2026-01-02'

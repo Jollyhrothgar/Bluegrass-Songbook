@@ -1,0 +1,18 @@
+id: evil-on-your-mind
+title: Evil On Your Mind
+artist: Jean Shepard
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: evilonyourmindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: it-s-my-way
+title: It's My Way
+artist: Webb Pierce
+composers:
+- Wayne Walker and Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsmywaylyricsandchords.pro
+    imported_at: '2026-01-02'

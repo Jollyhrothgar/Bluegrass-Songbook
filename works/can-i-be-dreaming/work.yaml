@@ -1,0 +1,17 @@
+id: can-i-be-dreaming
+title: Can I Be Dreaming
+artist: George Morgan
+composers:
+- J.D. Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canibedreaminglyricschords.pro
+    imported_at: '2026-01-02'

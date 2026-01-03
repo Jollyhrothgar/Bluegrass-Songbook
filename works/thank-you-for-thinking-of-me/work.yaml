@@ -1,0 +1,17 @@
+id: thank-you-for-thinking-of-me
+title: Thank You For Thinking Of Me
+artist: Hawkshaw Hawkins
+composers:
+- Wayne Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankyouforthinkingofmelyricschords.pro
+    imported_at: '2026-01-02'

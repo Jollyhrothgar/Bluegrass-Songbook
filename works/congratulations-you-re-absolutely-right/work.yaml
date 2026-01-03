@@ -1,0 +1,17 @@
+id: congratulations-you-re-absolutely-right
+title: Congratulations (You're Absolutely Right)
+artist: Tony Booth
+composers:
+- Buck Owens and Don Rich
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: congratulationsyoureabsolutelyrightlyricschords.pro
+    imported_at: '2026-01-02'

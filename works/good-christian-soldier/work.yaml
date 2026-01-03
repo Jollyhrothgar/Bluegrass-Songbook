@@ -1,0 +1,19 @@
+id: good-christian-soldier
+title: Good Christian Soldier
+artist: Kris Kristofferson
+composers:
+- Bobby Bare and Billy Joe Shaver
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodchristiansoldierlyricschords.pro
+    imported_at: '2026-01-02'

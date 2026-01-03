@@ -1,0 +1,15 @@
+id: better-days-to-come
+title: Better Days To Come
+artist: The Lonesome River Band
+composers:
+- Craig Market
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betterdaystocomelyricschords.pro
+    imported_at: '2026-01-02'

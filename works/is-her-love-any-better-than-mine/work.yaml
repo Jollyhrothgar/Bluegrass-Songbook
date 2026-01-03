@@ -1,0 +1,17 @@
+id: is-her-love-any-better-than-mine
+title: Is Her Love Any Better Than Mine
+artist: Jeanne Pruett
+composers:
+- Ray Griff
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isherloveanybetterthanminelyricschords.pro
+    imported_at: '2026-01-02'

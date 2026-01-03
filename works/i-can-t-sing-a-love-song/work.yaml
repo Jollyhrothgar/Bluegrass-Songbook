@@ -1,0 +1,17 @@
+id: i-can-t-sing-a-love-song
+title: I Can't Sing A Love Song
+artist: Stonewall Jackson
+composers:
+- Elbert Myers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantsingalLovesonglyricschords.pro
+    imported_at: '2026-01-02'

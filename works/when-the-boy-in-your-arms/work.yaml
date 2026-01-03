@@ -1,0 +1,18 @@
+id: when-the-boy-in-your-arms
+title: When The Boy In Your Arms
+artist: Connie Francis
+composers:
+- Roy Bennett and Sid Tepper
+default_key: C
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentheboyinyourarmslyricschords.pro
+    imported_at: '2026-01-02'

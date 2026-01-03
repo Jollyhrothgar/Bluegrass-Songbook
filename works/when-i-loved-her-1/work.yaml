@@ -1,0 +1,17 @@
+id: when-i-loved-her-1
+title: When I Loved Her
+artist: Ray Price
+composers:
+- Kris Kristofferson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenilovedherlyricschords.pro
+    imported_at: '2026-01-02'

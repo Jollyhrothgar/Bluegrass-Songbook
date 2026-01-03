@@ -1,0 +1,17 @@
+id: danville-girl
+title: Danville Girl
+artist: The Greenbriar Boys
+composers:
+- Vince Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: danvillegirllyricschords.pro
+    imported_at: '2026-01-02'

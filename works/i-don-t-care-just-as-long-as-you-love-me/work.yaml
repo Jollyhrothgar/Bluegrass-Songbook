@@ -1,0 +1,15 @@
+id: i-don-t-care-just-as-long-as-you-love-me
+title: I Don't Care Just As Long As You Love Me
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontcarejustaslongasyoulovemelyricschords.pro
+    imported_at: '2026-01-02'

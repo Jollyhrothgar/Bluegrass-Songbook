@@ -1,0 +1,17 @@
+id: the-prodigal-son
+title: The Prodigal Son
+artist: Hank Williams Sr.
+composers:
+- Floyd Jenkins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theprodigalsonlyricschords.pro
+    imported_at: '2026-01-02'

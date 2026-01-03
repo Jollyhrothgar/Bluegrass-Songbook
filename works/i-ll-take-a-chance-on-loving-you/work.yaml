@@ -1,0 +1,17 @@
+id: i-ll-take-a-chance-on-loving-you
+title: I'll Take A Chance On Loving You
+artist: Buck Owens
+composers:
+- Chuck Jackson and Marvin Yancy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illtakeachanceonlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

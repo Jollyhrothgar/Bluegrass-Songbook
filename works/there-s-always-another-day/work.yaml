@@ -1,0 +1,17 @@
+id: there-s-always-another-day
+title: There's Always Another Day
+artist: Sonny James
+composers:
+- Bob Tubert and Sonny James
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresalwaysanotherdaylyricschords.pro
+    imported_at: '2026-01-02'

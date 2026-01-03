@@ -1,0 +1,15 @@
+id: you-never-know-just-how-good-you-ve-got-it
+title: You Never Know Just How Good You've Got It
+artist: George Jones
+composers:
+- Mark Nesler
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youneverknowjusthowgoodyouvegotitlyricschords.pro
+    imported_at: '2026-01-02'

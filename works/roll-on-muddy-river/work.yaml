@@ -1,0 +1,17 @@
+id: roll-on-muddy-river
+title: Roll On Muddy River
+artist: Wilburn Brothers
+composers:
+- Betty Sue Perry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rollonmuddyriverlyricschords.pro
+    imported_at: '2026-01-02'

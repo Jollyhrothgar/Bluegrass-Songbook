@@ -1,0 +1,17 @@
+id: don-t-take-any-wooden-nickels
+title: Don't Take Any Wooden Nickels
+artist: Billy Crash Craddock
+composers:
+- Ray Griff
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttakeanywoodennickelslyricschords.pro
+    imported_at: '2026-01-02'

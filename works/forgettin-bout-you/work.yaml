@@ -1,0 +1,17 @@
+id: forgettin-bout-you
+title: Forgettin' Bout You
+artist: Crystal Gayle
+composers:
+- Don Williams and Allen Reynolds
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forgettinboutyoulyricschords.pro
+    imported_at: '2026-01-02'

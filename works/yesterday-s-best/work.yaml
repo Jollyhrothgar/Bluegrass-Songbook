@@ -1,0 +1,17 @@
+id: yesterday-s-best
+title: Yesterday's Best
+artist: Jean Shepard
+composers:
+- Jimmie Day
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesterdaysbestlyricschords.pro
+    imported_at: '2026-01-02'

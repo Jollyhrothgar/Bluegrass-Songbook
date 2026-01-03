@@ -1,0 +1,15 @@
+id: through-the-bottom-of-the-glass
+title: Through The Bottom Of The Glass
+artist: Leon Rausch
+composers:
+- Paul Craft
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: throughthebottomoftheglasslyricschords.pro
+    imported_at: '2026-01-02'

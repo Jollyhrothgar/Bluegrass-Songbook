@@ -1,0 +1,18 @@
+id: mr-and-mrs-snowman
+title: Mr. and Mrs. Snowman
+artist: Hank Thompson
+composers:
+- Lyle Gaston and Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mrandmrssnowmanlyricschords.pro
+    imported_at: '2026-01-02'

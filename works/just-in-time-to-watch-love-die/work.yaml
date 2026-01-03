@@ -1,0 +1,20 @@
+id: just-in-time-to-watch-love-die
+title: Just In Time (To Watch Love Die)
+artist: David Allan Coe
+composers:
+- David A. Coe and Jimmy Townsend
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justintimetowatchlovedielyricschords.pro
+    imported_at: '2026-01-02'

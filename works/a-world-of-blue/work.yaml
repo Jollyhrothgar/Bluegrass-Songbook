@@ -1,0 +1,16 @@
+id: a-world-of-blue
+title: A World Of Blue
+artist: Dwight Yoakam
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aworldofbluelyricschords.pro
+    imported_at: '2026-01-02'

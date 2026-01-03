@@ -1,0 +1,17 @@
+id: enclosed-one-broken-heart
+title: Enclosed One Broken Heart
+artist: Eddy Arnold
+composers:
+- Sadie Nordin Sallis and Eddy Arnold
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: enclosedonebrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

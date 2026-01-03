@@ -1,0 +1,16 @@
+id: it-s-been-a-great-afternoon
+title: It's Been a Great Afternoon
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsbeenagreatafternoonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ain-t-going-honky-tonking-anymore
+title: I Ain't Going Honky Tonking Anymore
+artist: Hawkshaw Hawkins
+composers:
+- Justin Tubb
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iaintgoinghonkytonkinganymorelyricschords.pro
+    imported_at: '2026-01-02'

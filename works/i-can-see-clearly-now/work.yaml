@@ -1,0 +1,19 @@
+id: i-can-see-clearly-now
+title: I Can See Clearly Now
+artist: Anne Murray
+composers:
+- Johnny Nash
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanseeclearlynowlyricschords.pro
+    imported_at: '2026-01-02'

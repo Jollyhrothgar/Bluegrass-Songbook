@@ -1,0 +1,17 @@
+id: i-ll-never-take-you-back-again
+title: I'll Never Take You Back Again
+artist: Slim Whitman
+composers:
+- Harry Peterson and Jane Wood
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illnevertakeyoubackagainlyricschords.pro
+    imported_at: '2026-01-02'

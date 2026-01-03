@@ -1,0 +1,15 @@
+id: i-don-t-need-to-know-right-now
+title: I Don't Need To Know Right Now
+artist: Johnny Paycheck
+composers:
+- David Astri and Charles Deskin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontneedtoknowrightnowlyricschords.pro
+    imported_at: '2026-01-02'

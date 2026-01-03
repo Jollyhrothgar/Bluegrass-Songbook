@@ -1,0 +1,17 @@
+id: blues-plus-booze
+title: Blues Plus Booze
+artist: Stonewall Jackson
+composers:
+- Earl Brown
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluesplusboozelyricschords.pro
+    imported_at: '2026-01-02'

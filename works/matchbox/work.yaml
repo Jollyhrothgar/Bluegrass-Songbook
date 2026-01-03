@@ -1,0 +1,17 @@
+id: matchbox
+title: Matchbox
+artist: Carl Perkins
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: matchboxlyricschords.pro
+    imported_at: '2026-01-02'

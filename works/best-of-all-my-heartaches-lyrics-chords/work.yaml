@@ -1,0 +1,18 @@
+id: best-of-all-my-heartaches-lyrics-chords
+title: Best Of All My Heartaches Lyrics Chords
+artist: Kitty Wells
+composers:
+- Tom Tall
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bestofallmyheartacheslyricschords.pro
+    imported_at: '2026-01-02'

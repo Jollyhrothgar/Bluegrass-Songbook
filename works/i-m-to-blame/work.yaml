@@ -1,0 +1,19 @@
+id: i-m-to-blame
+title: I'm To Blame
+artist: Mickey Gilley
+composers:
+- Huey Meaux
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imtoblamelyricschords.pro
+    imported_at: '2026-01-02'

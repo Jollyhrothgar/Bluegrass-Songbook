@@ -1,0 +1,18 @@
+id: too-late-to-worry-to-blue-to-cry
+title: Too Late To Worry To Blue To Cry
+artist: Ronnie Milsap
+composers:
+- Al Dexter
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toolatetoworrytobluetocrylyricschords.pro
+    imported_at: '2026-01-02'

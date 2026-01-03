@@ -1,0 +1,17 @@
+id: i-ve-seen-that-look-on-me-a-thousand-times
+title: I've Seen That Look On Me A Thousand Times
+artist: George Strait
+composers:
+- Harlan Howard and Shirl Milete
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iveseenthatlookonmeathousandtimeslyricschords.pro
+    imported_at: '2026-01-02'

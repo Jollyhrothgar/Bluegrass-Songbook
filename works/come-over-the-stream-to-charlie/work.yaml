@@ -1,0 +1,13 @@
+id: come-over-the-stream-to-charlie
+title: Come Over the Stream to Charlie
+artist: Traditional
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

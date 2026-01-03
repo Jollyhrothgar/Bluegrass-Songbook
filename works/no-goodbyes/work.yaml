@@ -1,0 +1,15 @@
+id: no-goodbyes
+title: No Goodbyes
+artist: Gene Watson
+composers:
+- Ray Pennington and David Smith
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nogoodbyeslyricschords.pro
+    imported_at: '2026-01-02'

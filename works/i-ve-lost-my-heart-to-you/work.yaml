@@ -1,0 +1,16 @@
+id: i-ve-lost-my-heart-to-you
+title: I've Lost My Heart To You
+artist: Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivelostmyhearttoyoulyricschords.pro
+    imported_at: '2026-01-02'

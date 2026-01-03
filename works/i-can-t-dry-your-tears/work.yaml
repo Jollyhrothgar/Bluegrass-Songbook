@@ -1,0 +1,15 @@
+id: i-can-t-dry-your-tears
+title: I Can't Dry Your Tears
+artist: Stonewall Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantdryyourtearslyricschords.pro
+    imported_at: '2026-01-02'

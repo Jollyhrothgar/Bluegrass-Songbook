@@ -1,0 +1,18 @@
+id: itsy-bitsy-teenie-weenie-yellow-polka-dot-bikini
+title: Itsy Bitsy Teenie Weenie Yellow Polka Dot Bikini
+artist: Connie Francis
+composers:
+- Paul Vance and Lee Pockriss
+default_key: G
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsybitsyteenieweenieyellowpolkadotbikinilyricschords.pro
+    imported_at: '2026-01-02'

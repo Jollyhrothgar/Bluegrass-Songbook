@@ -1,0 +1,17 @@
+id: our-house-is-a-home
+title: Our House Is A Home
+artist: Daniel O'Donnell
+composers:
+- Soye Maurice Edward
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ourhouseisahomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: just-let-me-know-lyrics-and-chords
+title: Just Let Me Know Lyrics and Chords
+artist: Connie Smith
+composers:
+- Marty Stuart and Connie Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justletmeknowlyricschords.pro
+    imported_at: '2026-01-02'

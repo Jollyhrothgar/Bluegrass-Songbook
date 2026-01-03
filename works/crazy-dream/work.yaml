@@ -1,0 +1,15 @@
+id: crazy-dream
+title: Crazy Dream
+artist: Joe Carson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crazydreamlyricschords.pro
+    imported_at: '2026-01-02'

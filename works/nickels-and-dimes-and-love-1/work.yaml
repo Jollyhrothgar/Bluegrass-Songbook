@@ -1,0 +1,17 @@
+id: nickels-and-dimes-and-love-1
+title: Nickels And Dimes And Love
+artist: Charlie Pride
+composers:
+- Steve Clark
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nickelsanddimesandlovelyricschords.pro
+    imported_at: '2026-01-02'

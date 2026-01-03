@@ -1,0 +1,17 @@
+id: i-bought-the-shoes-that-just-walked-out-on-me
+title: I Bought The Shoes That Just Walked Out On Me
+artist: Wynn Stewart
+composers:
+- Red Simpson and Steve Stone
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iboughttheshoesthatjustwalkedoutonmelyricschords.pro
+    imported_at: '2026-01-02'

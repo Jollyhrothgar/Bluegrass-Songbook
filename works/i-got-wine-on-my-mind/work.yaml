@@ -1,0 +1,17 @@
+id: i-got-wine-on-my-mind
+title: I Got Wine On My Mind
+artist: Johnny Paycheck
+composers:
+- B. George
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igotwineonmymindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: baby-i-m-ready
+title: Baby I'm Ready
+artist: Ricky Van Shelton
+composers:
+- Floyd Wilson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyimreadylyricschords.pro
+    imported_at: '2026-01-02'

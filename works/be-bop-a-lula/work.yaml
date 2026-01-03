@@ -1,0 +1,17 @@
+id: be-bop-a-lula
+title: Be-Bop-A-Lula
+artist: Everly Brothers
+composers:
+- Tex Davis and Gene Vincent
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bebopalulalyricschords.pro
+    imported_at: '2026-01-02'

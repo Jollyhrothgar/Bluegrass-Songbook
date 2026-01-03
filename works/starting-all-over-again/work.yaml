@@ -1,0 +1,17 @@
+id: starting-all-over-again
+title: Starting All Over Again
+artist: Don Gibson
+composers:
+- Paul Mitchell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: startingalloveragainlyricschords.pro
+    imported_at: '2026-01-02'

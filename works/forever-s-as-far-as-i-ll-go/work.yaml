@@ -1,0 +1,17 @@
+id: forever-s-as-far-as-i-ll-go
+title: Forever's As Far As I'll Go
+artist: Alabama
+composers:
+- Mike Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foreversasfarasillgolyricschords.pro
+    imported_at: '2026-01-02'

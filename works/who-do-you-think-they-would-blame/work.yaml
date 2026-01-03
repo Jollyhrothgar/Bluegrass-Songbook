@@ -1,0 +1,17 @@
+id: who-do-you-think-they-would-blame
+title: Who Do You Think They Would Blame
+artist: Dusty Owens
+composers:
+- Bill Dee Staten
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whodoyouthinktheywouldblamelyricschords.pro
+    imported_at: '2026-01-02'

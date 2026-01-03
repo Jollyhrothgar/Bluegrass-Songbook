@@ -1,0 +1,18 @@
+id: i-think-i-ll-take-a-walk
+title: I Think I'll Take A Walk
+artist: Charley Pride
+composers:
+- Jack Clement
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithinkIlltakeawalklyricschords.pro
+    imported_at: '2026-01-02'

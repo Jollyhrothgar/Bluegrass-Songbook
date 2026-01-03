@@ -1,0 +1,15 @@
+id: so-was-he
+title: So Was He
+artist: Jeannie Seely
+composers:
+- Hank Cochran
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sowashelyricschords.pro
+    imported_at: '2026-01-02'

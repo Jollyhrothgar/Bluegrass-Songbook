@@ -1,0 +1,17 @@
+id: i-ve-been-loved-by-the-best
+title: I've Been Loved By The Best
+artist: Don Williams
+composers:
+- Bob McDill and Paul Harrison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivebeenlovedbythebestlyricschords.pro
+    imported_at: '2026-01-02'

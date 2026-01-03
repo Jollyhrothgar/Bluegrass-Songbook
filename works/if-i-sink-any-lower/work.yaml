@@ -1,0 +1,18 @@
+id: if-i-sink-any-lower
+title: If I Sink Any Lower
+artist: Big Country Bluegrass
+composers:
+- Bob Richardson
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifisinkanylowerlyricschords.pro
+    imported_at: '2026-01-02'

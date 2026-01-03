@@ -1,0 +1,15 @@
+id: from-our-house-to-yours
+title: From Our House To Yours
+artist: Barbara Mandrell
+composers:
+- Lisa Angelle and John Schweers
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromourhousetoyourslyricsandchords.pro
+    imported_at: '2026-01-02'

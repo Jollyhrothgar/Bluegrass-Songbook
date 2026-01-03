@@ -1,0 +1,17 @@
+id: come-back-home
+title: Come Back Home
+artist: Gene Watson
+composers:
+- Joe Allen, Dave Kirby, Robb Warren
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comebackhomelyricschords.pro
+    imported_at: '2026-01-02'

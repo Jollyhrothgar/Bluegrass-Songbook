@@ -1,0 +1,22 @@
+id: any-old-wind-that-blows
+title: Any Old Wind That Blows
+artist: Johnny Cash
+composers:
+- Dick Feller
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anyoldwindthatblowslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: i-find-you-cheating-on-me
+title: I Find You Cheating On Me
+artist: Hank Thompson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifindyoucheatingonmelyricschords.pro
+    imported_at: '2026-01-02'

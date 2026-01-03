@@ -1,0 +1,17 @@
+id: dont-monkey-with-another-monkeys-monkey
+title: Don’t Monkey With Another Monkey’s Monkey
+artist: Johnny Paycheck
+composers:
+- Dale Morris
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontmonkeywithanothermonkeysmonkeylyricschords.pro
+    imported_at: '2026-01-02'

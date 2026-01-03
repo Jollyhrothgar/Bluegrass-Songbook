@@ -1,0 +1,18 @@
+id: i-need-to-talk-to-you
+title: I Need To Talk To You
+artist: Reba McEntire
+composers:
+- Linda Davis, Marcus Franklin Johnson, Tim Owens
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineedtotalktoyoulyricschords.pro
+    imported_at: '2026-01-02'

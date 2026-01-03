@@ -1,0 +1,17 @@
+id: if-you-aint-loving-then-you-aint-living
+title: If You Ain’t Loving Then You Ain’t Living
+artist: Faron Young
+composers:
+- Tommy Collins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouaintlovingthenyouaintlivinglyricschords.pro
+    imported_at: '2026-01-02'

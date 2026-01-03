@@ -1,0 +1,16 @@
+id: please-dont-tell-me-how-the-story-ends
+title: Please Don’t Tell Me How The Story Ends
+artist: Ronnie Milsap
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasedonttellmehowthestoryendslyricschords.pro
+    imported_at: '2026-01-02'

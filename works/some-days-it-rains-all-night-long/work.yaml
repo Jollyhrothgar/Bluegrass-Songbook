@@ -1,0 +1,19 @@
+id: some-days-it-rains-all-night-long
+title: Some Days It Rains All Night Long
+artist: Anne Murray
+composers:
+- Ed Penney
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somedaysitrainsallnightlonglyricschords.pro
+    imported_at: '2026-01-02'

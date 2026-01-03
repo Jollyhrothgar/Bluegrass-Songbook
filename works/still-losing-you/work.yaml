@@ -1,0 +1,17 @@
+id: still-losing-you
+title: Still Losing You
+artist: Ronnie Milsap
+composers:
+- Mike Reid
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stilllosingyoulyricschords.pro
+    imported_at: '2026-01-02'

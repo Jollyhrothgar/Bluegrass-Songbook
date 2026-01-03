@@ -1,0 +1,22 @@
+id: where-did-we-go-right
+title: Where Did We Go Right
+artist: Johnny Cash
+composers:
+- Don Schlitz and Dave Loggins
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheredidwegorightlyricschords.pro
+    imported_at: '2026-01-02'

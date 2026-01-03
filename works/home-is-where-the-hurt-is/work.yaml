@@ -1,0 +1,17 @@
+id: home-is-where-the-hurt-is
+title: Home Is Where The Hurt Is
+artist: Moe Bandy
+composers:
+- Arthur Leo Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: homeiswherethehurtislyricschords.pro
+    imported_at: '2026-01-02'

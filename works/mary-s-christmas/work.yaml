@@ -1,0 +1,17 @@
+id: mary-s-christmas
+title: Mary's Christmas
+artist: Doyle Lawson
+composers:
+- Randall Hylton and Doyle Lawson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: marysChristmaslyricschords.pro
+    imported_at: '2026-01-02'

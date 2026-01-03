@@ -1,0 +1,17 @@
+id: freedom-1
+title: Freedom
+artist: Hawkshaw Hawkins
+composers:
+- Tommy Blake
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: freedomlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-get-lonely-when-it-rains
+title: I Get Lonely When It Rains
+artist: Leroy Van Dyke
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igetlonelywhenitrainslyricschords.pro
+    imported_at: '2026-01-02'

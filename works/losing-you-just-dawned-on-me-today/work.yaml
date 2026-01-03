@@ -1,0 +1,17 @@
+id: losing-you-just-dawned-on-me-today
+title: Losing You Just Dawned On Me Today
+artist: Tony Booth
+composers:
+- Kent Westberry
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: losingyoujustdawnedonmetodaylyricschords.pro
+    imported_at: '2026-01-02'

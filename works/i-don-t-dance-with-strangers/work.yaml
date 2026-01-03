@@ -1,0 +1,15 @@
+id: i-don-t-dance-with-strangers
+title: I Don't Dance With Strangers
+artist: Becky Hobbs
+composers:
+- Jerry Hawkins and Becky Hobbs
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontdancewithstrangerslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-m-looking-for-someone-to-love
+title: I'm Looking For Someone To Love
+artist: Buddy Holly
+composers:
+- Charles Holley and Norman Petty
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlookingforsomeonetolovelyricschords.pro
+    imported_at: '2026-01-02'

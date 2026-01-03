@@ -1,0 +1,15 @@
+id: small-time-laboring-man
+title: Small Time Laboring Man
+artist: George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: smalltimelaboringmanlyricschords.pro
+    imported_at: '2026-01-02'

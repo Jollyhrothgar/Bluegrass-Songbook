@@ -1,0 +1,17 @@
+id: you-re-right
+title: You're Right
+artist: Faron Young
+composers:
+- Helen Carter and Chet Atkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourerightlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: a-love-song-1
+title: A Love Song
+artist: Anne Murray
+composers:
+- Kenny Loggins and D.L. George
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alovesonglyricschords.pro
+    imported_at: '2026-01-02'

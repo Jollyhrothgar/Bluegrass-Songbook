@@ -1,0 +1,18 @@
+id: let-s-keep-it-that-way
+title: Let's Keep It That Way
+artist: Anne Murray
+composers:
+- Claude Putman Jr. and Rafe G. Van Hoy
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letskeepitthatwaylyricschords.pro
+    imported_at: '2026-01-02'

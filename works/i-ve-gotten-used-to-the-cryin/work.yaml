@@ -1,0 +1,17 @@
+id: i-ve-gotten-used-to-the-cryin
+title: I've Gotten Used To The Cryin'
+artist: Roger Miller
+composers:
+- Roger Miller and Michael Smotherman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegottenusedtothecryinlyricschords.pro
+    imported_at: '2026-01-02'

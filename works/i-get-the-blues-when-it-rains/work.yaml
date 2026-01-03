@@ -1,0 +1,17 @@
+id: i-get-the-blues-when-it-rains
+title: I Get The Blues When It Rains
+artist: Jim Reeves
+composers:
+- Marcy Klauber and Harry Stoddard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igettheblueswhenitrainslyricschords.pro
+    imported_at: '2026-01-02'

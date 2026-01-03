@@ -1,0 +1,17 @@
+id: i-ll-just-go-on-home
+title: I'll Just Go On Home
+artist: Cal Smith
+composers:
+- Randall J. Colemus
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illjustgoonhomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-ll-love-you-more
+title: I'll Love You More
+artist: Eddy Arnold
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illloveyoumorelyricschords.pro
+    imported_at: '2026-01-02'

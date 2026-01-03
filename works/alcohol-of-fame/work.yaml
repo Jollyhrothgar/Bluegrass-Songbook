@@ -1,0 +1,20 @@
+id: alcohol-of-fame
+title: Alcohol Of Fame
+artist: Jerry Lee Lewis
+composers:
+- Buzz Rabin
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alcoholoffamelyricsandchords.pro
+    imported_at: '2026-01-02'

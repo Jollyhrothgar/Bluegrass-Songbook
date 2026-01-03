@@ -1,0 +1,18 @@
+id: i-wish-i-was-santa-claus
+title: I Wish I Was Santa Claus
+artist: Merle Haggard
+composers:
+- Raymond McDonald
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishiwassantaclauslyricschords.pro
+    imported_at: '2026-01-02'

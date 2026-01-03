@@ -1,0 +1,18 @@
+id: remember-to-remind-me-i-m-leaving
+title: Remember To Remind Me I'm Leaving
+artist: Ronnie Milsap
+composers:
+- Charles Quillen and John Russell
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: remembertoremindmeimleavinglyricschords.pro
+    imported_at: '2026-01-02'

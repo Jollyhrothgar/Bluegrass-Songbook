@@ -1,0 +1,17 @@
+id: ain-t-it-been-love
+title: Ain't It Been Love
+artist: Vern Gosdin
+composers:
+- Fred Koller and Jack Fisher
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintitbeenlovelyricschords.pro
+    imported_at: '2026-01-02'

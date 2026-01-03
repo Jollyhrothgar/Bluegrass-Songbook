@@ -1,0 +1,17 @@
+id: wasted-days-and-wasted-nights
+title: Wasted Days And Wasted Nights
+artist: Freddie Fender
+composers:
+- Wayne Duncan and Freddy Fender
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wasteddaysandwastednightslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: every-time-i-itch-i-wind-up-scratching-you
+title: Every Time I Itch I Wind Up Scratching You
+artist: Glen Campbell
+composers:
+- Jeremy Slate and Glen Campbell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everytimeiitchiwindupscratchingyoulyricschords.pro
+    imported_at: '2026-01-02'

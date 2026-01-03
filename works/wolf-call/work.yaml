@@ -1,0 +1,21 @@
+id: wolf-call
+title: Wolf Call
+artist: Elvis Presley
+composers:
+- Bill Giant, Bernie Baum, Florenece Kaye
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wolfcalllyricschords.pro
+    imported_at: '2026-01-02'

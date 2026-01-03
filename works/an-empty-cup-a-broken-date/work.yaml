@@ -1,0 +1,18 @@
+id: an-empty-cup-a-broken-date
+title: An Empty Cup A Broken Date
+artist: Buddy Holly
+composers:
+- Norman Petty and Roy Orbison
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anemptycupabrokendatelyricschords.pro
+    imported_at: '2026-01-02'

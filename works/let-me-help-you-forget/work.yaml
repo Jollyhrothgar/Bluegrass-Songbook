@@ -1,0 +1,18 @@
+id: let-me-help-you-forget
+title: Let Me Help You Forget
+artist: Kitty Wells
+composers:
+- Jim Anglin
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmehelpyouforgetlyricschords.pro
+    imported_at: '2026-01-02'

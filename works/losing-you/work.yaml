@@ -1,0 +1,18 @@
+id: losing-you
+title: Losing You
+artist: Jimmy Martin
+composers:
+- Edria A. Humphrey and Jimmy Martin
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: losingyoulyricsandchords.pro
+    imported_at: '2026-01-02'

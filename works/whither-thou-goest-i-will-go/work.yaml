@@ -1,0 +1,15 @@
+id: whither-thou-goest-i-will-go
+title: Whither Thou Goest I Will Go
+artist: George Morgan
+composers:
+- Guy Singer
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whitherthougoestiwillgolyricschords.pro
+    imported_at: '2026-01-02'

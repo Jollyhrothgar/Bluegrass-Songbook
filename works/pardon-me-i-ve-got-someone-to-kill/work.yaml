@@ -1,0 +1,15 @@
+id: pardon-me-i-ve-got-someone-to-kill
+title: Pardon Me I've Got Someone To Kill
+artist: Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pardonmeivegotsomeonetokilllyricschords.pro
+    imported_at: '2026-01-02'

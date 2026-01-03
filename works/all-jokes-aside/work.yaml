@@ -1,0 +1,15 @@
+id: all-jokes-aside
+title: All Jokes Aside
+artist: Hank Williams Jr.
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alljokesasidelyricschords.pro
+    imported_at: '2026-01-02'

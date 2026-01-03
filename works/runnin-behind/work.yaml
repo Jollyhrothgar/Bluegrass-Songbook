@@ -1,0 +1,18 @@
+id: runnin-behind
+title: Runnin' Behind
+artist: Tracy Lawrence
+composers:
+- Mark D. Sanders and Ed Hill
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: runninbehindlyricschords.pro
+    imported_at: '2026-01-02'

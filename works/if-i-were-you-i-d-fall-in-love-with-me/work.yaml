@@ -1,0 +1,17 @@
+id: if-i-were-you-i-d-fall-in-love-with-me
+title: If I Were You I'd Fall In Love With Me
+artist: Gene Watson
+composers:
+- Dave Kirby and Warren Robb
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifiwereyouidfallinlovewithmelyricschords.pro
+    imported_at: '2026-01-02'

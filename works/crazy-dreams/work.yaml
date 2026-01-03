@@ -1,0 +1,15 @@
+id: crazy-dreams
+title: Crazy Dreams
+artist: Johnny Bush
+composers:
+- Sanger D. Shafer, Donny Kees, Aaron Barker
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crazydreamslyricsandchords.pro
+    imported_at: '2026-01-02'

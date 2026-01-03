@@ -1,0 +1,16 @@
+id: you-never-really-wanted-me
+title: You Never Really Wanted Me
+artist: Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youneverreallywantedmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: today-is-the-end-of-the-world
+title: Today Is The End Of The World
+artist: Sonny James
+composers:
+- Carole Smith and Sonny James
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: todayistheendoftheworldlyricschords.pro
+    imported_at: '2026-01-02'

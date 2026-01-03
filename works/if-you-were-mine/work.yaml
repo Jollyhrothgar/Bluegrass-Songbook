@@ -1,0 +1,17 @@
+id: if-you-were-mine
+title: If You Were Mine
+artist: Wilburn Brothers
+composers:
+- Damon Black
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouwereminelyricsandchords.pro
+    imported_at: '2026-01-02'

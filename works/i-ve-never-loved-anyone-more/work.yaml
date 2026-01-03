@@ -1,0 +1,15 @@
+id: i-ve-never-loved-anyone-more
+title: I've Never Loved Anyone More
+artist: Johnny Rodriguez
+composers:
+- Linda Hargrove and Michael Nesmith
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iveneverlovedanyonemorelyricschords.pro
+    imported_at: '2026-01-02'

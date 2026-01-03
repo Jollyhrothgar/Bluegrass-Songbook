@@ -1,0 +1,14 @@
+id: old-home-place-1
+title: Old Home Place
+artist: Mitch Jayne, Dean Webb
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: we-were-made-for-each-other
+title: We Were Made For Each Other
+artist: Buck Owens
+composers:
+- Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weweremadeforeachotherlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-m-so-used-to-loving-you
+title: I'm So Used To Loving You
+artist: Conway Twitty
+composers:
+- Harold L. Jenkins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsousedtolovingyoulyricschords.pro
+    imported_at: '2026-01-02'

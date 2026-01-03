@@ -1,0 +1,17 @@
+id: head-to-toe
+title: Head To Toe
+artist: Bill Anderson
+composers:
+- Bobby Braddock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: headtotoelyricschords.pro
+    imported_at: '2026-01-02'

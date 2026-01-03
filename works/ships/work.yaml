@@ -1,0 +1,19 @@
+id: ships
+title: Ships
+artist: Patty Loveless
+composers:
+- Gretchen Peters
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shipslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: depend-on-you
+title: Depend On You
+artist: Tanya Tucker
+composers:
+- Parker McGee
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dependonyoulyricschords.pro
+    imported_at: '2026-01-02'

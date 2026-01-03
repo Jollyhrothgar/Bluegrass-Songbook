@@ -1,0 +1,18 @@
+id: a-woman-has-her-way
+title: A Woman Has Her Way
+artist: Clint Black
+composers:
+- Clint Black, Jerry Williams, David Bellamy
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awomanhasherwaylyricschords.pro
+    imported_at: '2026-01-02'

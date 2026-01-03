@@ -1,0 +1,17 @@
+id: mistakes-i-made-yesterday
+title: Mistakes I Made Yesterday
+artist: Leon Copas
+composers:
+- Wade Holmes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mistakesimadeyesterdaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-blotted-your-happy-school-days
+title: I Blotted Your Happy School Days
+artist: Hank Williams
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iblottedyourhappyschooldayslyricschords.pro
+    imported_at: '2026-01-02'

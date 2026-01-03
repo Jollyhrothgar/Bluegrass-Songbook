@@ -1,0 +1,18 @@
+id: tell-me-that-you-love-me
+title: Tell Me That You Love Me
+artist: Fats Domino
+composers:
+- Dave Bartholomew and Fats Domino
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmethatyoulovemelyricschords.pro
+    imported_at: '2026-01-02'

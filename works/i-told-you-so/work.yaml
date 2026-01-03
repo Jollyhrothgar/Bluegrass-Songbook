@@ -1,0 +1,17 @@
+id: i-told-you-so
+title: I Told You So
+artist: Ray Price
+composers:
+- Rex Griffin and Jimmie Davis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itoldyousolyricsandchords.pro
+    imported_at: '2026-01-02'

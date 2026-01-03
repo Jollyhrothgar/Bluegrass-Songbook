@@ -1,0 +1,17 @@
+id: don-t-worry-bout-the-mule
+title: Don't Worry 'Bout The Mule
+artist: Carl Smith
+composers:
+- Glen Barber
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontworryboutthemulelyricschords.pro
+    imported_at: '2026-01-02'

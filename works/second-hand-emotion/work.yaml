@@ -1,0 +1,15 @@
+id: second-hand-emotion
+title: Second Hand Emotion
+artist: Faron Young
+composers:
+- Charlie Black and Rory Bourke
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: secondhandemotionlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: if-love-was-a-river
+title: If Love Was A River
+artist: Alan Jackson
+composers:
+- Adam Wright and Shannon Wright
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iflovewasariverlyricschords.pro
+    imported_at: '2026-01-02'

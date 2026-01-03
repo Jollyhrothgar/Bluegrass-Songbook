@@ -1,0 +1,17 @@
+id: i-ve-got-mexico
+title: I've Got Mexico
+artist: Eddy Raven
+composers:
+- Edward Futch and Frank Myers
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotmexicolyricschords.pro
+    imported_at: '2026-01-02'

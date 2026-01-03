@@ -1,0 +1,18 @@
+id: angels-rock-me-to-sleep
+title: Angels Rock Me To Sleep
+artist: The Bluegrass Cardinals
+composers:
+- Thomas Ramsey and Marion W. Easterling
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: angelsrockmetosleeplyricschords.pro
+    imported_at: '2026-01-02'

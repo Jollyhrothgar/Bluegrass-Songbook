@@ -1,0 +1,15 @@
+id: take-a-message-to-mary
+title: Take A Message To Mary
+artist: Everly Brothers
+composers:
+- Boudleaux and Felice Boudleaux
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takeamessagetomarylyricschords.pro
+    imported_at: '2026-01-02'

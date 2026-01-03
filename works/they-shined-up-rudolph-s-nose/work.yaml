@@ -1,0 +1,18 @@
+id: they-shined-up-rudolph-s-nose
+title: They Shined Up Rudolph's Nose
+artist: Johnny Horton
+composers:
+- Johnny Marks and Johnny Horton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theyshineduprudolphsnoselyricschords.pro
+    imported_at: '2026-01-02'

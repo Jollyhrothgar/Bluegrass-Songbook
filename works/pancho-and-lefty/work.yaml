@@ -1,0 +1,17 @@
+id: pancho-and-lefty
+title: Pancho and Lefty
+artist: Willie Nelson and Merle Haggard
+composers:
+- Townes Van Zandt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: panchoandleftylyricschords.pro
+    imported_at: '2026-01-02'

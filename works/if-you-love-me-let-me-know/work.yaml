@@ -1,0 +1,17 @@
+id: if-you-love-me-let-me-know
+title: If You Love Me Let Me Know
+artist: Olivia Newton John
+composers:
+- John Rostill
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoulovemeletmeknowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: good-rockin-tonight
+title: Good Rockin’ Tonight
+artist: Buddy Holly
+composers:
+- Roy Brown
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodrockintonightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: tall-oak-tree-1
+title: Tall Oak Tree
+artist: Dorsey Burnette
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: talloaktreelyricschords.pro
+    imported_at: '2026-01-02'

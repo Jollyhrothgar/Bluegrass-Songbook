@@ -1,0 +1,17 @@
+id: that-same-spirit
+title: That Same Spirit
+artist: The New Coon Creek Girls
+composers:
+- Mike Payne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsamespiritlyricschords.pro
+    imported_at: '2026-01-02'

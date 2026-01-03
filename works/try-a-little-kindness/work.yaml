@@ -1,0 +1,17 @@
+id: try-a-little-kindness
+title: Try A Little Kindness
+artist: Glen Campbell
+composers:
+- Bobby Austin and Curt Sapaugh
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tryalittlekindnesslyricschords.pro
+    imported_at: '2026-01-02'

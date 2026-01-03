@@ -1,0 +1,17 @@
+id: cyclone-of-rye-cove
+title: Cyclone of Rye Cove
+artist: Doc Watson
+composers:
+- A.P. Carter and Doc Watson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cycloneofryecovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: it-doesn-t-hurt-to-ask
+title: It Doesn't Hurt To Ask
+artist: Jean Shepard
+composers:
+- Jerry Galen Foster and Wilburn S. Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itdoesnthurttoasklyricschords.pro
+    imported_at: '2026-01-02'

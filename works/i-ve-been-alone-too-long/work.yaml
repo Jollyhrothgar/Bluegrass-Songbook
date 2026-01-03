@@ -1,0 +1,15 @@
+id: i-ve-been-alone-too-long
+title: I've Been Alone Too Long
+artist: Charly McClain
+composers:
+- Cynthia Weil and Mark James
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivebeenalonetoolonglyricschords.pro
+    imported_at: '2026-01-02'

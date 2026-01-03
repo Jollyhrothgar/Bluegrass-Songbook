@@ -1,0 +1,18 @@
+id: jackson-aint-a-very-big-town
+title: Jackson Ain’t A Very Big Town
+artist: Tammy Wynette
+composers:
+- Vic McAlpin
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jacksonaintaverybigtownlyricschords.pro
+    imported_at: '2026-01-02'

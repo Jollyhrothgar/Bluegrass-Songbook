@@ -1,0 +1,17 @@
+id: keep-on-holding-to-those-nail-scarred-hands
+title: Keep On Holding To Those Nail Scarred Hands
+artist: Connie Smith
+composers:
+- Henry Slaughter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keeponholdingtothosenailscarredhandslyricschords.pro
+    imported_at: '2026-01-02'

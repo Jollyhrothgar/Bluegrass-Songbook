@@ -1,0 +1,15 @@
+id: cant-you-find-it-in-your-heart-lyrics-chords
+title: Can’t You Find It In Your Heart Lyrics Chords
+artist: Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantyoufinditinyourheartlyricschords.pro
+    imported_at: '2026-01-02'

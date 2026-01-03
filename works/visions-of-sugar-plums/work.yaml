@@ -1,0 +1,15 @@
+id: visions-of-sugar-plums
+title: Visions Of Sugar Plums
+artist: Glen Campbell
+composers:
+- Jerry Fuller and Glen Campbell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: visionsofsugarplumslyricschords.pro
+    imported_at: '2026-01-02'

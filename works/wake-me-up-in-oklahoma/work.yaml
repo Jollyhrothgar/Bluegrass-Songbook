@@ -1,0 +1,18 @@
+id: wake-me-up-in-oklahoma
+title: Wake Me Up In Oklahoma
+artist: Jim Ed Brown
+composers:
+- Tony Lindauer
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wakemeupinoklahomalyricschords.pro
+    imported_at: '2026-01-02'

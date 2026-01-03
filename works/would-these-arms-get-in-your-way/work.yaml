@@ -1,0 +1,15 @@
+id: would-these-arms-get-in-your-way
+title: Would These Arms Get In Your Way
+artist: Vern Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wouldthesearmsgetinyourwaylyricschords.pro
+    imported_at: '2026-01-02'

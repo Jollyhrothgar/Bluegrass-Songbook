@@ -1,0 +1,19 @@
+id: jesus-loves-me
+title: Jesus Loves Me
+artist: Brenda Lee
+composers:
+- William B. Bradbury, Anna B. Warner, Reba Ware
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jesuslovesmelyricschords.pro
+    imported_at: '2026-01-02'

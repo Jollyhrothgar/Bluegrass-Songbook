@@ -1,0 +1,17 @@
+id: good-time-charlie-s-got-the-blues
+title: Good Time Charlie's Got The Blues
+artist: Cal Smith
+composers:
+- Danny O'Keefe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodtimecharliesgottheblueslyricschords.pro
+    imported_at: '2026-01-02'

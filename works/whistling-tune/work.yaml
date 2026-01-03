@@ -1,0 +1,21 @@
+id: whistling-tune
+title: Whistling Tune
+artist: Elvis Presley
+composers:
+- Sherman Edwards and Hal David
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whistlingtunelyricschords.pro
+    imported_at: '2026-01-02'

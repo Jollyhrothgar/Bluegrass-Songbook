@@ -1,0 +1,17 @@
+id: another-texas-song
+title: Another Texas Song
+artist: Eddy Raven
+composers:
+- Edward Garvin Futch
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anothertexassonglyricschords.pro
+    imported_at: '2026-01-02'

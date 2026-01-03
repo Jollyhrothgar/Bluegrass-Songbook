@@ -1,0 +1,19 @@
+id: true-love
+title: True Love
+artist: Patsy Cline
+composers:
+- Cole Porter
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: truelovelyricschords.pro
+    imported_at: '2026-01-02'

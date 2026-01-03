@@ -1,0 +1,18 @@
+id: alabama-clay
+title: Alabama Clay
+artist: Garth Brooks
+composers:
+- Ronny Scaife and Larry Cordle
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alabamaclaylyricschords.pro
+    imported_at: '2026-01-02'

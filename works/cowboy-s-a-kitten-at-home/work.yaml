@@ -1,0 +1,17 @@
+id: cowboy-s-a-kitten-at-home
+title: Cowboy's A Kitten At Home
+artist: Moe Bandy
+composers:
+- Jim Mundy and Peggy White
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cowboysakittenathomelyricschords.pro
+    imported_at: '2026-01-02'

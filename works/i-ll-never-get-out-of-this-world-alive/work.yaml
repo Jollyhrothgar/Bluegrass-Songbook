@@ -1,0 +1,19 @@
+id: i-ll-never-get-out-of-this-world-alive
+title: I'll Never Get Out Of This World Alive
+artist: Hank Williams
+composers:
+- Hank Williams and Fred Rose
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illnevergetoutofthisworldalivelyricschords.pro
+    imported_at: '2026-01-02'

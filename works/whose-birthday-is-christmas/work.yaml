@@ -1,0 +1,15 @@
+id: whose-birthday-is-christmas
+title: Whose Birthday Is Christmas
+artist: Statler Brothers
+composers:
+- Don Reid and Harold Reid
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whosebirthdayisChristmaslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-m-drinking-my-baby-off-my-mind
+title: I'm Drinking My Baby Off My Mind
+artist: Eddie Rabbitt
+composers:
+- Eddie Rabbitt and Even Stevens
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imdrinkingmybabyoffmymindlyricschords.pro
+    imported_at: '2026-01-02'

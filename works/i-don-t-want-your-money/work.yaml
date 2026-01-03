@@ -1,0 +1,18 @@
+id: i-don-t-want-your-money
+title: I Don't Want Your Money
+artist: Kitty Wells
+composers:
+- Lee Washington
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwantyourmoneylyricschords.pro
+    imported_at: '2026-01-02'

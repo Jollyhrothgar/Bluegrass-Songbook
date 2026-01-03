@@ -1,0 +1,17 @@
+id: say-forever-you-ll-be-mine
+title: Say Forever You'll Be Mine
+artist: Porter Wagoner
+composers:
+- Dolly Parton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sayforeveryoullbeminelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-last-time-i-saw-her-face
+title: The Last Time I Saw Her Face
+artist: Glen Campbell
+composers:
+- Gordon Lightfoot
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelasttimeisawherfacelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: please-love-me-forever
+title: Please Love Me Forever
+artist: Wanda Jackson
+composers:
+- Ollie Blanchard and Johnny Malone
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleaselovemeforeverlyricschords.pro
+    imported_at: '2026-01-02'

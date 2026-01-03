@@ -1,0 +1,20 @@
+id: anything-that-s-part-of-you
+title: Anything That's Part Of You
+artist: Elvis Presley
+composers:
+- Don Robertson
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anythingthatspartofyoulyricschords.pro
+    imported_at: '2026-01-02'

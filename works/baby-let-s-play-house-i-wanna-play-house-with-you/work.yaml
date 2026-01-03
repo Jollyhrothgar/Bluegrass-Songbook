@@ -1,0 +1,18 @@
+id: baby-let-s-play-house-i-wanna-play-house-with-you
+title: Baby Let's Play House (I Wanna Play House With You)
+artist: Buddy Holly
+composers:
+- Arthur Neal Gunter
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyletsplayhouselyricschords.pro
+    imported_at: '2026-01-02'

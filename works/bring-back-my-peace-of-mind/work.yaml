@@ -1,0 +1,17 @@
+id: bring-back-my-peace-of-mind
+title: Bring Back My Peace Of Mind
+artist: Tony Booth
+composers:
+- Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bringbackmypeaceofmindlyricschords.pro
+    imported_at: '2026-01-02'

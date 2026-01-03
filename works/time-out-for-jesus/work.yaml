@@ -1,0 +1,18 @@
+id: time-out-for-jesus
+title: Time Out for Jesus
+artist: Charley Pride
+composers:
+- Ann J. Morton
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timeoutforJesuslyricschords.pro
+    imported_at: '2026-01-02'

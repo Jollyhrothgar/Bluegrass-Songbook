@@ -1,0 +1,17 @@
+id: you-make-me-feel-more-like-a-man
+title: You Make Me Feel More Like A Man
+artist: Mel Street
+composers:
+- John Riggs
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmakemefeelmorelikeamanlyricschords.pro
+    imported_at: '2026-01-02'

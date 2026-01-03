@@ -1,0 +1,15 @@
+id: love-can-make-or-break-a-heart
+title: Love Can Make Or Break A Heart
+artist: Freddie Hart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovecanmakeorbreakaheartlyricschords.pro
+    imported_at: '2026-01-02'

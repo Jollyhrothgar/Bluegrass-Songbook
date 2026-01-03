@@ -1,0 +1,17 @@
+id: ill-do-it-all-over-again
+title: I’ll Do It All Over Again
+artist: Crystal Gayle
+composers:
+- Bob McDill and Wayne Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illdoitalloveragainlyricschords.pro
+    imported_at: '2026-01-02'

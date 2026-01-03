@@ -1,0 +1,18 @@
+id: why-in-heaven-s-name
+title: Why In Heaven's Name
+artist: George Morgan
+composers:
+- Steve Nelson, Ed Nelson, Jr., Ed Nelson
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whyinheavensnamelyricschords.pro
+    imported_at: '2026-01-02'

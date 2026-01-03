@@ -1,0 +1,17 @@
+id: buttons-and-bows
+title: Buttons And Bows
+artist: Jim Ed Brown
+composers:
+- Jay Livingston and Ray Evans
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: buttonsandbowslyricschords.pro
+    imported_at: '2026-01-02'

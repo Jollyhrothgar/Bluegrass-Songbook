@@ -1,0 +1,18 @@
+id: dancing-with-a-stranger
+title: Dancing With A Stranger
+artist: Kitty Wells
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dancingwithastrangerlyricschords.pro
+    imported_at: '2026-01-02'

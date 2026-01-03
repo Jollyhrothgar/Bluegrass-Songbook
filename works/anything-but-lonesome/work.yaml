@@ -1,0 +1,17 @@
+id: anything-but-lonesome
+title: Anything But Lonesome
+artist: Bob Luman
+composers:
+- Glenn Sutton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anythingbutlonesomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: one-emotion
+title: One Emotion
+artist: Clint Black
+composers:
+- Clint Black and Hayden Nicholas
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneemotionlyricschords.pro
+    imported_at: '2026-01-02'

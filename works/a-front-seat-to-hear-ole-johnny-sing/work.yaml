@@ -1,0 +1,15 @@
+id: a-front-seat-to-hear-ole-johnny-sing
+title: A Front Seat To Hear Ole Johnny Sing
+artist: Shel Silverstein
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afrontseattohearolejohnnysinglyricschords.pro
+    imported_at: '2026-01-02'

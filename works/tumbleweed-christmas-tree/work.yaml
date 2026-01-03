@@ -1,0 +1,17 @@
+id: tumbleweed-christmas-tree
+title: Tumbleweed Christmas Tree
+artist: Red Steagall
+composers:
+- Andy Wilkinson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tumbleweedChristmastreelyricschords.pro
+    imported_at: '2026-01-02'

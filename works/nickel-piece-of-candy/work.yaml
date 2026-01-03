@@ -1,0 +1,17 @@
+id: nickel-piece-of-candy
+title: Nickel Piece Of Candy
+artist: Jim Reeves
+composers:
+- Alex Zanetis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nickelpieceofcandylyricschords.pro
+    imported_at: '2026-01-02'

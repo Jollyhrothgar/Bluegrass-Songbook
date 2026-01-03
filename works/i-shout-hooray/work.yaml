@@ -1,0 +1,13 @@
+id: i-shout-hooray
+title: I Shout Hooray
+artist: Boxcar Willie
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ishouthooraylyricschords.pro
+    imported_at: '2026-01-02'

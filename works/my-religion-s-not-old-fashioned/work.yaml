@@ -1,0 +1,19 @@
+id: my-religion-s-not-old-fashioned
+title: My Religion's Not Old Fashioned
+artist: Hank Snow
+composers:
+- Stuart Hamblen
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myreligionsnotoldfashionedlyricschords.pro
+    imported_at: '2026-01-02'

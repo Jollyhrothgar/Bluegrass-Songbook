@@ -1,0 +1,15 @@
+id: nobody-but-you
+title: Nobody But You
+artist: Don Williams
+composers:
+- John Jarrard and J.D. Martin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodybutyoulyricschords.pro
+    imported_at: '2026-01-02'

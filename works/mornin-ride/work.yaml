@@ -1,0 +1,19 @@
+id: mornin-ride
+title: Mornin' Ride
+artist: Lee Greenwood
+composers:
+- Jeffrey M. Tweel and Steve Bogard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: morninridelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: girl-at-the-crossroads-bar
+title: Girl At The Crossroads Bar
+artist: Larry Sparks
+composers:
+- Bill Bryson
+default_key: C
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: girlatthecrossroadsbarlyricschords.pro
+    imported_at: '2026-01-02'

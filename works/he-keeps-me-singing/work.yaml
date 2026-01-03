@@ -1,0 +1,17 @@
+id: he-keeps-me-singing
+title: He Keeps Me Singing
+artist: Slim Whitman
+composers:
+- Luther B. Bridgers
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hekeepsmesinginglyricschords.pro
+    imported_at: '2026-01-02'

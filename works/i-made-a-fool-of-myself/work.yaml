@@ -1,0 +1,18 @@
+id: i-made-a-fool-of-myself
+title: I Made A Fool Of Myself
+artist: Faron Young
+composers:
+- Faron Young and Johnny Paycheck
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imadeafoolofmyselflyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: cold-gray-tomb-of-stone
+title: Cold Gray Tomb of Stone
+artist: Hank Williams
+composers:
+- Mel Foree and Hank Williams
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldgraytombofstonelyricschords.pro
+    imported_at: '2026-01-02'

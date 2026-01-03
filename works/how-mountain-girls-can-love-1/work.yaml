@@ -1,0 +1,14 @@
+id: how-mountain-girls-can-love-1
+title: How Mountain Girls Can Love
+artist: Carter Stanley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

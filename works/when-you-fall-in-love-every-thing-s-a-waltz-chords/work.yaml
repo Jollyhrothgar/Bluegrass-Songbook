@@ -1,0 +1,18 @@
+id: when-you-fall-in-love-every-thing-s-a-waltz-chords
+title: When You Fall In Love Every Thing's A Waltz chords
+artist: Ed Bruce
+composers:
+- Patsy Bruce, Ron Peterson and Ed Bruce
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyoufallinloveeverythingsawaltzlyricschords.pro
+    imported_at: '2026-01-02'

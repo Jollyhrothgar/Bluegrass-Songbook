@@ -1,0 +1,15 @@
+id: i-think-that-i-d-be-better-off
+title: I Think That I'd Be Better Off
+artist: Cal Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithinkthatidbebetterofflyricschords.pro
+    imported_at: '2026-01-02'

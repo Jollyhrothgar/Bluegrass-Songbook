@@ -1,0 +1,18 @@
+id: feels-like-a-saturday-night
+title: Feels Like A Saturday Night
+artist: Earl Thomas Conley
+composers:
+- Earl T. Conley and Randy Scruggs
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: feelslikeasaturdaynightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: texas-heartache-number-one
+title: Texas Heartache Number One
+artist: Mickey Gilley
+composers:
+- Paul Hotchkiss and Mike Terry
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: texasheartachenumberonelyricschords.pro
+    imported_at: '2026-01-02'

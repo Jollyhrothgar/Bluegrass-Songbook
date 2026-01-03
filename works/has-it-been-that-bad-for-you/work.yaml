@@ -1,0 +1,15 @@
+id: has-it-been-that-bad-for-you
+title: Has It Been That Bad For You
+artist: Johnny Bush
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hasitbeenthatbadforyoulyricschords.pro
+    imported_at: '2026-01-02'

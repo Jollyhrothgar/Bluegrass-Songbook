@@ -1,0 +1,18 @@
+id: we-ll-soon-be-done-with-troubles-and-trials-chords
+title: We'll Soon Be Done With Troubles And Trials chords
+artist: The Statler Brothers
+composers:
+- Cleavant Derricks
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wellsoonbedonewithtroublesandtrialslyricschords.pro
+    imported_at: '2026-01-02'

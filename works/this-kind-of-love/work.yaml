@@ -1,0 +1,19 @@
+id: this-kind-of-love
+title: This Kind Of Love
+artist: Roy Orbison
+composers:
+- Sam Phillips
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thiskindoflovelyricschords.pro
+    imported_at: '2026-01-02'

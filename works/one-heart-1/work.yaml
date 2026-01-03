@@ -1,0 +1,17 @@
+id: one-heart-1
+title: One Heart
+artist: Leroy Van Dyke
+composers:
+- Carl Wells
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneheartlyricschords.pro
+    imported_at: '2026-01-02'

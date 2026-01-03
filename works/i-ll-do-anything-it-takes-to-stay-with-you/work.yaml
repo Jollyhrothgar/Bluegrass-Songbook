@@ -1,0 +1,17 @@
+id: i-ll-do-anything-it-takes-to-stay-with-you
+title: I'll Do Anything It Takes To Stay With You
+artist: Jean Shepard
+composers:
+- Curly Putman, Larry Butler, Jan Crutchfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illdoanythingittakestostaywithyoulyricschords.pro
+    imported_at: '2026-01-02'

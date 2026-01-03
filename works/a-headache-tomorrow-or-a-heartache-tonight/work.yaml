@@ -1,0 +1,18 @@
+id: a-headache-tomorrow-or-a-heartache-tonight
+title: A Headache Tomorrow Or A Heartache Tonight
+artist: Mickey Gilley
+composers:
+- Chick Rains
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aheadachetomorroworaheartachetonightlyricschords.pro
+    imported_at: '2026-01-02'

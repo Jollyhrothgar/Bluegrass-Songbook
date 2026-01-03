@@ -1,0 +1,18 @@
+id: i-don-t-believe-that-s-how-you-feel
+title: I Don't Believe That's How You Feel
+artist: Tanya Tucker
+composers:
+- Harlan Howard and Kostas
+default_key: F
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontbelievethatshowyoufeellyricschords.pro
+    imported_at: '2026-01-02'

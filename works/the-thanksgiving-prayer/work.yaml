@@ -1,0 +1,22 @@
+id: the-thanksgiving-prayer
+title: The Thanksgiving Prayer
+artist: Johnny Cash
+composers:
+- Josef Anderson
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thethanksgivingprayerlyricschords.pro
+    imported_at: '2026-01-02'

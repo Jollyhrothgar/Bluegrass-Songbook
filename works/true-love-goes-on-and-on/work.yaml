@@ -1,0 +1,17 @@
+id: true-love-goes-on-and-on
+title: True Love Goes On And On
+artist: Burl Ives
+composers:
+- Richard Adler and Jerry Ross
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: truelovegoesonandonlyricschords.pro
+    imported_at: '2026-01-02'

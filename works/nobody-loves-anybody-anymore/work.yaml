@@ -1,0 +1,20 @@
+id: nobody-loves-anybody-anymore
+title: Nobody Loves Anybody Anymore
+artist: Kris Kristofferson
+composers:
+- Kris Kristofferson and Billy Lance Swan
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodylovesanybodyanymorelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: bugle-call-from-heaven
+title: Bugle Call From Heaven
+artist: Wilburn Brothers
+composers:
+- S. L. Shook
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: buglecallfromheavenlyricschords.pro
+    imported_at: '2026-01-02'

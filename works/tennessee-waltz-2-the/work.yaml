@@ -1,0 +1,17 @@
+id: tennessee-waltz-2-the
+title: Tennessee Waltz (2) (The)
+artist: Traditional
+composers:
+- Biography:Redd Stewart, Biography:Pee Wee King
+default_key: G
+tags:
+- Instrumental
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: walk-on-fool
+title: Walk On Fool
+artist: Porter Wagoner
+composers:
+- George McCormick
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkonfoollyricschords.pro
+    imported_at: '2026-01-02'

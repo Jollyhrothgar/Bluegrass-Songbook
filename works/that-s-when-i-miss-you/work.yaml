@@ -1,0 +1,17 @@
+id: that-s-when-i-miss-you
+title: That's When I Miss You
+artist: The Wilburn Brothers
+composers:
+- Doyle Wilburn and Teddy Wilburn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhenimissyoulyricschords.pro
+    imported_at: '2026-01-02'

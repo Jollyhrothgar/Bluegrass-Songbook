@@ -1,0 +1,19 @@
+id: house-of-blue-lights
+title: House of Blue Lights
+artist: Asleep at the Wheel
+composers:
+- Don Raye and Freddy Slack
+default_key: C
+tags:
+- ClassicCountry
+- WesternSwing
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: houseofbluelightslyricschords.pro
+    imported_at: '2026-01-02'

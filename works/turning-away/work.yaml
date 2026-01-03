@@ -1,0 +1,15 @@
+id: turning-away
+title: Turning Away
+artist: Crystal Gayle
+composers:
+- Tim Krekel
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: turningawaylyricschords.pro
+    imported_at: '2026-01-02'

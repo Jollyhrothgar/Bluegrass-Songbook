@@ -1,0 +1,17 @@
+id: you-can-t-judge-a-book-by-the-cover
+title: You Can't Judge A Book By The Cover
+artist: John Anderson
+composers:
+- Willie Dixon
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantjudgeabookbythecoverlyricschords.pro
+    imported_at: '2026-01-02'

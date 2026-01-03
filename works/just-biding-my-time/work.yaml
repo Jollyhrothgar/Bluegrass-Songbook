@@ -1,0 +1,18 @@
+id: just-biding-my-time
+title: Just Biding My Time
+artist: Anne Murray
+composers:
+- Gene MacLellan
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justbidingmytimelyricschords.pro
+    imported_at: '2026-01-02'

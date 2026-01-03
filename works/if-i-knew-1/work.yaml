@@ -1,0 +1,17 @@
+id: if-i-knew-1
+title: If I Knew
+artist: Buck Owens
+composers:
+- Ed King and Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifiknewlyricschords.pro
+    imported_at: '2026-01-02'

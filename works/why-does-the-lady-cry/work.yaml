@@ -1,0 +1,15 @@
+id: why-does-the-lady-cry
+title: Why Does The Lady Cry
+artist: Melba Montgomery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydoestheladycrylyricschords.pro
+    imported_at: '2026-01-02'

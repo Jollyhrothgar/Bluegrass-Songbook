@@ -1,0 +1,17 @@
+id: mama-s-face
+title: Mama's Face
+artist: Cal Smith
+composers:
+- Glenn Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mamasfacelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: book-of-love
+title: Book Of Love
+artist: Bobby Bare
+composers:
+- Bobby Bare and Lance Guyness
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bookoflovelyricschords.pro
+    imported_at: '2026-01-02'

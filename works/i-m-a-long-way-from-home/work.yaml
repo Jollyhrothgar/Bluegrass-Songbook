@@ -1,0 +1,17 @@
+id: i-m-a-long-way-from-home
+title: I'm A Long Way From Home
+artist: Porter Wagoner
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imalongwayfromhomelyricsandchords.pro
+    imported_at: '2026-01-02'

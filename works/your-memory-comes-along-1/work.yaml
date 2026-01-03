@@ -1,0 +1,17 @@
+id: your-memory-comes-along-1
+title: Your Memory Comes Along
+artist: Johnny Tillotson
+composers:
+- Johnny Tillotson and Paul Tannen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourmemorycomesalonglyricschords.pro
+    imported_at: '2026-01-02'

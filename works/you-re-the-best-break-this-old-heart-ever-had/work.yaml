@@ -1,0 +1,18 @@
+id: you-re-the-best-break-this-old-heart-ever-had
+title: You're The Best Break This Old Heart Ever Had
+artist: Ed Bruce
+composers:
+- Waylon Holyfield and Randy Hatch
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethebestbreakthisoldhearteverhadlyricschords.pro
+    imported_at: '2026-01-02'

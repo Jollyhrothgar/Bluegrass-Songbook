@@ -1,0 +1,15 @@
+id: she-makes-my-roses-grow
+title: She Makes My Roses Grow
+artist: Eddy Arnold
+composers:
+- Wayne Carson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shemakesmyrosesgrowlyricschords.pro
+    imported_at: '2026-01-02'

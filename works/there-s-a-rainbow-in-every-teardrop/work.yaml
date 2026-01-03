@@ -1,0 +1,15 @@
+id: there-s-a-rainbow-in-every-teardrop
+title: There's A Rainbow In Every Teardrop
+artist: Slim Whitman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresarainbowineveryteardroplyricschords.pro
+    imported_at: '2026-01-02'

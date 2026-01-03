@@ -1,0 +1,18 @@
+id: oh-no
+title: Oh No
+artist: Carl Smith
+composers:
+- Boudleaux Bryant
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohnolyricschords.pro
+    imported_at: '2026-01-02'

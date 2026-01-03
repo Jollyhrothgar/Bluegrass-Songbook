@@ -1,0 +1,17 @@
+id: have-a-drink-on-me
+title: Have A Drink On Me
+artist: Mac Wiseman
+composers:
+- Peter Buchanan and Lonnie Donegan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveadrinkonmelyricschords.pro
+    imported_at: '2026-01-02'

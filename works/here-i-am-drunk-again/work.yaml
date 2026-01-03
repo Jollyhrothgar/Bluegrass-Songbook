@@ -1,0 +1,17 @@
+id: here-i-am-drunk-again
+title: Here I Am Drunk Again
+artist: Moe Bandy
+composers:
+- Robert Warden and Clyde Beavers
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hereiamdrunkagainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: america-s-sweetheart
+title: America's Sweetheart
+artist: Mel Tillis
+composers:
+- Bob Corbin
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: americassweetheartlyricschords.pro
+    imported_at: '2026-01-02'

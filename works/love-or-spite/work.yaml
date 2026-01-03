@@ -1,0 +1,17 @@
+id: love-or-spite
+title: Love Or Spite
+artist: Hank Locklin
+composers:
+- Cy Coben and Bill Carver
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveorspitelyricschords.pro
+    imported_at: '2026-01-02'

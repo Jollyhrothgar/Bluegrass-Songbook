@@ -1,0 +1,19 @@
+id: love-makes-the-world-go-round
+title: Love Makes The World Go Round
+artist: The Everly Brothers
+composers:
+- Bob Merrill
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovemakestheworldgoroundlyricschords.pro
+    imported_at: '2026-01-02'

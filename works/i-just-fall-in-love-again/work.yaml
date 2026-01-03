@@ -1,0 +1,18 @@
+id: i-just-fall-in-love-again
+title: I Just Fall In Love Again
+artist: Anne Murray
+composers:
+- Steve Dorff, Larry Herbstritt, Harry Lloyd, Gloria Skelerov
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustfallinloveagainlyricschords.pro
+    imported_at: '2026-01-02'

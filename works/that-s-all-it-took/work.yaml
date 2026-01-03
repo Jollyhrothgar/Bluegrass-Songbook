@@ -1,0 +1,18 @@
+id: that-s-all-it-took
+title: That's All It Took
+artist: Emmylou Harris
+composers:
+- Darrell Edwards, Charlotte Grier, George Jones
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsallittooklyricschords.pro
+    imported_at: '2026-01-02'

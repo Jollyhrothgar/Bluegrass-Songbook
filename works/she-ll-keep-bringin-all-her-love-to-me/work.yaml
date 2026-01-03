@@ -1,0 +1,17 @@
+id: she-ll-keep-bringin-all-her-love-to-me
+title: She'll Keep Bringin' All Her Love to Me
+artist: Darrell McCall
+composers:
+- Lou Rochelle
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shellkeepbringinallherlovetomelyricschords.pro
+    imported_at: '2026-01-02'

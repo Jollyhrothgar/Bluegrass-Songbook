@@ -1,0 +1,18 @@
+id: girls-women-and-ladies
+title: Girls Women and Ladies
+artist: Ed Bruce
+composers:
+- Ed Bruce, Patsy Bruce, Ron Peterson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: girlswomenandladieslyricschords.pro
+    imported_at: '2026-01-02'

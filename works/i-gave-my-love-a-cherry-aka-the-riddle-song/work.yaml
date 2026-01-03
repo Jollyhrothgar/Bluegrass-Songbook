@@ -1,0 +1,15 @@
+id: i-gave-my-love-a-cherry-aka-the-riddle-song
+title: I Gave My Love A Cherry (aka The Riddle Song)
+artist: Sonny James
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igavemyloveacherrylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-bridge-i-m-still-building-on
+title: The Bridge I'm Still Building On
+artist: Vern Gosdin
+composers:
+- Buddy Cannon, Vern Gosdin, John Northrup
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebridgeimstillbuildingonlyricschords.pro
+    imported_at: '2026-01-02'

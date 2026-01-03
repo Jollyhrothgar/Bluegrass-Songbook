@@ -1,0 +1,15 @@
+id: just-a-bend-of-the-road
+title: Just A Bend Of The Road
+artist: Ferlin Husky
+composers:
+- Judy West
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justabendoftheroadlyricschords.pro
+    imported_at: '2026-01-02'

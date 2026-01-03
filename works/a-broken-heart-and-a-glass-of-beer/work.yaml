@@ -1,0 +1,18 @@
+id: a-broken-heart-and-a-glass-of-beer
+title: A broken Heart And A Glass Of Beer
+artist: Hank Thompson
+composers:
+- Alan Flatt
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: abrokenheartandaglassofbeerlyricschords.pro
+    imported_at: '2026-01-02'

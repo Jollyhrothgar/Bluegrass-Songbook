@@ -1,0 +1,17 @@
+id: i-wish-you-were-more-like-your-memory
+title: I Wish You Were More Like Your Memory
+artist: Ricky Van Shelton
+composers:
+- Joe Chambers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishyouweremorelikeyourmemorylyricschords.pro
+    imported_at: '2026-01-02'

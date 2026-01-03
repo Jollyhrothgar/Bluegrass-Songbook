@@ -1,0 +1,15 @@
+id: lost-highway-saloon
+title: Lost Highway Saloon
+artist: Johnny Bush
+composers:
+- Brian Burns
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: losthighwaysaloonlyricschords.pro
+    imported_at: '2026-01-02'

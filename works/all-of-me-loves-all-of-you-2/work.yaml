@@ -1,0 +1,15 @@
+id: all-of-me-loves-all-of-you-2
+title: All Of Me Loves All Of You
+artist: Freddy Hart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allofmelovesallofyoulyricswithchords.pro
+    imported_at: '2026-01-02'

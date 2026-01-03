@@ -1,0 +1,19 @@
+id: nothin-but-the-wheel
+title: Nothin' But The Wheel
+artist: Patty Loveless
+composers:
+- John S. Sherrill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothinbutthewheellyricschords.pro
+    imported_at: '2026-01-02'

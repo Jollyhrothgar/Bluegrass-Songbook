@@ -1,0 +1,17 @@
+id: all-i-need-is-you-1
+title: All I Need Is You
+artist: Carl Belew
+composers:
+- Betty Jean Robinson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allineedisyoulyricschords.pro
+    imported_at: '2026-01-02'

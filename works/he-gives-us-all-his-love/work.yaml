@@ -1,0 +1,17 @@
+id: he-gives-us-all-his-love
+title: He Gives Us All His Love
+artist: Wanda Jackson
+composers:
+- Randy Newman
+default_key: G
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hegivesusallhislovelyricschords.pro
+    imported_at: '2026-01-02'

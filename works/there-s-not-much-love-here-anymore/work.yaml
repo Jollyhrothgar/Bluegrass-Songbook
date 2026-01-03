@@ -1,0 +1,17 @@
+id: there-s-not-much-love-here-anymore
+title: There's Not Much Love Here Anymore
+artist: Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnotmuchlovehereanymorelyricschords.pro
+    imported_at: '2026-01-02'

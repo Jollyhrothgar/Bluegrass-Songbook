@@ -1,0 +1,17 @@
+id: the-wire-and-the-rail
+title: The Wire And The Rail
+artist: Red Steagall
+composers:
+- Red Steagall and Dale Burson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewireandtheraillyricschords.pro
+    imported_at: '2026-01-02'

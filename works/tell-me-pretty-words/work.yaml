@@ -1,0 +1,17 @@
+id: tell-me-pretty-words
+title: Tell Me Pretty Words
+artist: Slim Whitman
+composers:
+- Ronald Mansfield
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmeprettywordslyricschords.pro
+    imported_at: '2026-01-02'

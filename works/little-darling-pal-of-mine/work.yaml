@@ -1,0 +1,19 @@
+id: little-darling-pal-of-mine
+title: Little Darling Pal Of Mine
+artist: Lucinda Williams
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- ClassicCountry
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littledarlingpalofminelyricschords.pro
+    imported_at: '2026-01-02'

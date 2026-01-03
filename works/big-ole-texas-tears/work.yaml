@@ -1,0 +1,19 @@
+id: big-ole-texas-tears
+title: Big Ole Texas Tears
+artist: Mickey Gilley
+composers:
+- Vic McAlpin
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigoletexastearslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: buried-treasure
+title: Buried Treasure
+artist: Kenny Rogers
+composers:
+- Barry Gibb, Maurice Gibb, Robin Gibb
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: buriedtreasurelyricschords.pro
+    imported_at: '2026-01-02'

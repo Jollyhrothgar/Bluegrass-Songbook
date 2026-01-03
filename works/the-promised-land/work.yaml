@@ -1,0 +1,19 @@
+id: the-promised-land
+title: The Promised Land
+artist: Elvis Presley
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thepromisedlandlyricschords.pro
+    imported_at: '2026-01-02'

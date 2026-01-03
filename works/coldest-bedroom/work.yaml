@@ -1,0 +1,17 @@
+id: coldest-bedroom
+title: Coldest Bedroom
+artist: Vern Gosdin
+composers:
+- J. Sins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldestbedroomlyricschords.pro
+    imported_at: '2026-01-02'

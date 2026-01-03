@@ -1,0 +1,17 @@
+id: apples-raisins-and-roses
+title: Apples Raisins And Roses
+artist: Eddy Arnold
+composers:
+- Earl Shuman and Leon Carr
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: applesraisinsandroseslyricschords.pro
+    imported_at: '2026-01-02'

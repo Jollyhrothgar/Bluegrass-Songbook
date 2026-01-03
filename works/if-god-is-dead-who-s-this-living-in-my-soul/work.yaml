@@ -1,0 +1,19 @@
+id: if-god-is-dead-who-s-this-living-in-my-soul
+title: If God Is Dead (Who's This Living In My Soul)
+artist: Loretta Lynn
+composers:
+- Lawrence Reynolds
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifGodsdeadwhosthislivinginmysoullyricschords.pro
+    imported_at: '2026-01-02'

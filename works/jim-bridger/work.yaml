@@ -1,0 +1,18 @@
+id: jim-bridger
+title: Jim Bridger
+artist: Johnny Horton
+composers:
+- Leon Payne
+default_key: A
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jimbridgerlyricschords.pro
+    imported_at: '2026-01-02'

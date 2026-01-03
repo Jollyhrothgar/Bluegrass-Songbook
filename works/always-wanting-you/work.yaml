@@ -1,0 +1,16 @@
+id: always-wanting-you
+title: Always Wanting You
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alwayswantingyoulyricschords.pro
+    imported_at: '2026-01-02'

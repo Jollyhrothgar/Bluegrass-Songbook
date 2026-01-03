@@ -1,0 +1,17 @@
+id: christmas-at-the-jersey-lilly-lounge
+title: Christmas At The Jersey Lilly Lounge
+artist: Moe Bandy
+composers:
+- Charlie Williams and Theresa Beaty
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasatthejerseylillyloungelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: there-s-a-song-on-the-jukebox
+title: There's A Song On The Jukebox
+artist: Mickey Gilley
+composers:
+- Billy Sherrill and Carmol Taylor
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresasongonthejukeboxlyricsandchords.pro
+    imported_at: '2026-01-02'

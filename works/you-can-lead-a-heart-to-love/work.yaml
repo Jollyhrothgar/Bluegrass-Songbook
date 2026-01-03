@@ -1,0 +1,18 @@
+id: you-can-lead-a-heart-to-love
+title: You Can Lead A Heart To Love
+artist: Tammy Wynette
+composers:
+- Joe Chambers, Larry Jenkins, Mike Jenkins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanleadahearttolovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: sing-along
+title: Sing Along
+artist: Jimmy Dean
+composers:
+- Robert Allen
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singalonglyricschords.pro
+    imported_at: '2026-01-02'

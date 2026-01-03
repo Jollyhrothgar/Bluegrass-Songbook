@@ -1,0 +1,18 @@
+id: the-steal-of-the-night
+title: The Steal Of The Night
+artist: George Strait
+composers:
+- Blake Mevis, Bill Shore, David Wills
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thestealofthenightlyricschords.pro
+    imported_at: '2026-01-02'

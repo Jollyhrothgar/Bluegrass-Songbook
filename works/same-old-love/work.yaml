@@ -1,0 +1,20 @@
+id: same-old-love
+title: Same Old Love
+artist: Ricky Skaggs
+composers:
+- Chris Austin and Greg Barnhill
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sameoldlovelyricschords.pro
+    imported_at: '2026-01-02'

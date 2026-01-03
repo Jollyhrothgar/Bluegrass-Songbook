@@ -1,0 +1,20 @@
+id: all-i-need-is-you-2
+title: All I Need Is You
+artist: Dolly Parton
+composers:
+- Betty Jean Robinson
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allineedisyoulyricswithchords.pro
+    imported_at: '2026-01-02'

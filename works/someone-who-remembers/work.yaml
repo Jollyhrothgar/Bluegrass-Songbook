@@ -1,0 +1,17 @@
+id: someone-who-remembers
+title: Someone Who Remembers
+artist: Lee Greenwood
+composers:
+- Rory Bourke, Kerry Chater, Glen Ballard
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someonewhorememberslyricschords.pro
+    imported_at: '2026-01-02'

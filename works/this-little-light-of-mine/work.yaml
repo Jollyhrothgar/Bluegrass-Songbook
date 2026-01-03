@@ -1,0 +1,19 @@
+id: this-little-light-of-mine
+title: This Little Light Of Mine
+artist: Brenda Lee
+composers:
+- Harry Dixon Loes
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thislittlelightofminelyricschords.pro
+    imported_at: '2026-01-02'

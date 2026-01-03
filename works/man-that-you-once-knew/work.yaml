@@ -1,0 +1,17 @@
+id: man-that-you-once-knew
+title: Man That You Once Knew
+artist: Moe Bandy
+composers:
+- Dallas Frazier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: manthatyouonceknewlyricschords.pro
+    imported_at: '2026-01-02'

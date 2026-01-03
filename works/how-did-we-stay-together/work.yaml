@@ -1,0 +1,19 @@
+id: how-did-we-stay-together
+title: How Did We Stay Together
+artist: The Everly Brothers
+composers:
+- Don Everly
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howdidwestaytogetherlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: ive-cried-my-last-tear-for-you
+title: I’ve Cried My Last Tear For You
+artist: Ricky Van Shelton
+composers:
+- Chris Waters and Tony King
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivecriedmylasttearforyoulyricschords.pro
+    imported_at: '2026-01-02'

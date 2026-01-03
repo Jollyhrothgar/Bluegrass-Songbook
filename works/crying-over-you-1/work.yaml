@@ -1,0 +1,17 @@
+id: crying-over-you-1
+title: Crying Over You
+artist: Webb Pierce
+composers:
+- Mark Dee
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cryingoveryoulyricschords.pro
+    imported_at: '2026-01-02'

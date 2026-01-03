@@ -1,0 +1,17 @@
+id: born-that-way
+title: Born That Way
+artist: Stonewall Jackson
+composers:
+- Glenn Sutton and Hugh X. Lewis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bornthatwaylyricschords.pro
+    imported_at: '2026-01-02'

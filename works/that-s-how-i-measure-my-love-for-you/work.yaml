@@ -1,0 +1,15 @@
+id: that-s-how-i-measure-my-love-for-you
+title: That's How I Measure My Love For You
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatshowimeasuremyloveforyoulyricschords.pro
+    imported_at: '2026-01-02'

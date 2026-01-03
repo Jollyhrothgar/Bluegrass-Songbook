@@ -1,0 +1,17 @@
+id: your-name-s-become-a-household-word
+title: Your Name's Become A Household Word
+artist: Jean Shepard
+composers:
+- Neal Merritt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yournamesbecomeahouseholdwordlyricschords.pro
+    imported_at: '2026-01-02'

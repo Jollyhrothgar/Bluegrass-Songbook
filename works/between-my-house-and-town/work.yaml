@@ -1,0 +1,17 @@
+id: between-my-house-and-town
+title: Between My House And Town
+artist: George Jones
+composers:
+- Sanger D. Shafer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betweenmyhouseandtownlyricschords.pro
+    imported_at: '2026-01-02'

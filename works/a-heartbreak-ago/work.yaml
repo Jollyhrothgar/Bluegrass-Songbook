@@ -1,0 +1,17 @@
+id: a-heartbreak-ago
+title: A Heartbreak Ago
+artist: Cowboy Copas
+composers:
+- Johnny Grimes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aheartbreakagolyricschords.pro
+    imported_at: '2026-01-02'

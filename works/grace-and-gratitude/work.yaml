@@ -1,0 +1,17 @@
+id: grace-and-gratitude
+title: Grace And Gratitude
+artist: Lester Flatt and Earl Scruggs
+composers:
+- Amy Sky and Olivia Newton John
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: graceandgratitudelyricschords.pro
+    imported_at: '2026-01-02'

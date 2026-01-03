@@ -1,0 +1,17 @@
+id: too-broke-to-break
+title: Too Broke To Break
+artist: Jean Shepard
+composers:
+- Johnny Russell and Voni Morrison
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toobroketobreaklyricschords.pro
+    imported_at: '2026-01-02'

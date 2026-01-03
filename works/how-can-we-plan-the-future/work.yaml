@@ -1,0 +1,17 @@
+id: how-can-we-plan-the-future
+title: How Can We Plan The Future
+artist: George Morgan
+composers:
+- Larry Lee and Tony Moon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcanweplanthefuturelyricschords.pro
+    imported_at: '2026-01-02'

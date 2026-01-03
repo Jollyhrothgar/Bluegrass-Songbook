@@ -1,0 +1,18 @@
+id: i-ll-keep-on-loving-you
+title: I'll Keep On Loving You
+artist: Ray Price
+composers:
+- Floyd Tillman
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illkeeponlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

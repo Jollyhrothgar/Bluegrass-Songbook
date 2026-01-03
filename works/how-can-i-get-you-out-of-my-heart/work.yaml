@@ -1,0 +1,15 @@
+id: how-can-i-get-you-out-of-my-heart
+title: How Can I Get You Out Of My Heart
+artist: Moe Bandy
+composers:
+- Arthur Leo Owens
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcanigetyououtofmyheartlyricschords.pro
+    imported_at: '2026-01-02'

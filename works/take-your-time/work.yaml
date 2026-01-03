@@ -1,0 +1,18 @@
+id: take-your-time
+title: Take Your Time
+artist: Buddy Holly
+composers:
+- Charles Holley and Norman Petty
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takeyourtimelyricschords.pro
+    imported_at: '2026-01-02'

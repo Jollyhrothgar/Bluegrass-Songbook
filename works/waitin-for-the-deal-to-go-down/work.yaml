@@ -1,0 +1,18 @@
+id: waitin-for-the-deal-to-go-down
+title: Waitin' For The Deal To Go Down
+artist: Reba McEntire
+composers:
+- Bobby Fisher, Charlie Black, Austin Roberts
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waitinforthedealtogodownlyricschords.pro
+    imported_at: '2026-01-02'

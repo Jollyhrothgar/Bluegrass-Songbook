@@ -1,0 +1,17 @@
+id: the-one-you-need
+title: The One You Need
+artist: Loretta Lynn
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoneyouneedlyricschords.pro
+    imported_at: '2026-01-02'

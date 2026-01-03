@@ -1,0 +1,17 @@
+id: can-i-count-on-you
+title: Can I Count on You
+artist: McBride and the Ride
+composers:
+- Bill Carter, Ruth Ellsworth, Terry McBride
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canicountonyoulyricschords.pro
+    imported_at: '2026-01-02'

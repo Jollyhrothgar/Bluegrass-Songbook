@@ -1,0 +1,15 @@
+id: the-girl-in-my-life
+title: The Girl In My Life
+artist: Bob Luman
+composers:
+- Steve Davis, Sammy Lyons, Mark Sherrill
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegirlinmylifelyricschords.pro
+    imported_at: '2026-01-02'

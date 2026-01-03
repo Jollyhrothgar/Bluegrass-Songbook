@@ -1,0 +1,17 @@
+id: 30-pieces-of-silver
+title: 30 Pieces of Silver
+artist: Hank Williams Sr.
+composers:
+- Odell McLeod
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 30piecesofsilverlyricschords.pro
+    imported_at: '2026-01-02'

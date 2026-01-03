@@ -1,0 +1,17 @@
+id: i-gotta-have-my-baby-back
+title: I Gotta Have My Baby Back
+artist: Hank Thompson
+composers:
+- Floyd Tillman
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igottahavemybabybacklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: ocean-front-property
+title: Ocean Front Property
+artist: George Strait
+composers:
+- Hank Cochran, Dean Dillon, Royce Porter
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oceanfrontpropertylyricschords.pro
+    imported_at: '2026-01-02'

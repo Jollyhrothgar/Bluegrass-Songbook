@@ -1,0 +1,18 @@
+id: down-deep-inside
+title: Down Deep Inside
+artist: The Oak Ridge Boys
+composers:
+- Jimbeau Hinson and Michael Foster
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downdeepinsidelyricschords.pro
+    imported_at: '2026-01-02'

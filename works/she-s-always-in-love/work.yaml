@@ -1,0 +1,18 @@
+id: she-s-always-in-love
+title: She's Always In Love
+artist: Ronnie Milsap
+composers:
+- Mike Reid and Dan Williams
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesalwaysinlovelyricschords.pro
+    imported_at: '2026-01-02'

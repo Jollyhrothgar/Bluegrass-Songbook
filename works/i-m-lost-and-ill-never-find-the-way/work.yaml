@@ -1,0 +1,19 @@
+id: i-m-lost-and-ill-never-find-the-way
+title: I'm Lost And I’ll Never Find The Way
+artist: Ricky Skaggs
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlostandillneverfindthewaylyricschords.pro
+    imported_at: '2026-01-02'

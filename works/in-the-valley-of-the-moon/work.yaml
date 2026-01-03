@@ -1,0 +1,18 @@
+id: in-the-valley-of-the-moon
+title: In The Valley Of The Moon
+artist: Hank Thompson
+composers:
+- Charles Tobias and Joe Burke
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthevalleyofthemoonlyricschords.pro
+    imported_at: '2026-01-02'

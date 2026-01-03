@@ -1,0 +1,15 @@
+id: going-going-gone
+title: Going Going Gone
+artist: Billy Walker
+composers:
+- Alex Kramer and Joan Whitney
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goinggoinggonelyricsandchords.pro
+    imported_at: '2026-01-02'

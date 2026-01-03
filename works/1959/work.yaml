@@ -1,0 +1,17 @@
+id: '1959'
+title: '1959'
+artist: John Anderson
+composers:
+- Gary Gentry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 1959lyricschords.pro
+    imported_at: '2026-01-02'

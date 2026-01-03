@@ -1,0 +1,17 @@
+id: wolverton-mountain-lyrics-chords
+title: Wolverton Mountain Lyrics Chords
+artist: Web Pierce
+composers:
+- Merle Kilgore and Claude King
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wolvertonmountainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: frosty-the-snow-man
+title: Frosty The Snow Man
+artist: Brenda Lee
+composers:
+- S. Nelson and J. Rollins
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: frostythesnowmanlyricschords.pro
+    imported_at: '2026-01-02'

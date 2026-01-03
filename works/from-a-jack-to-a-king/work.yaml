@@ -1,0 +1,17 @@
+id: from-a-jack-to-a-king
+title: From a Jack to a King
+artist: David Houston
+composers:
+- Ned Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromajacktoakinglyricschords.pro
+    imported_at: '2026-01-02'

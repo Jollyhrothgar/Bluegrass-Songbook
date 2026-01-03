@@ -1,0 +1,21 @@
+id: green-pastures
+title: Green Pastures
+artist: Ricky Skaggs
+composers:
+- Van Hoose
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: greenpastureslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: o-brien-has-no-place-to-go
+title: O'Brien Has No Place To Go
+artist: Foster and Allen
+composers:
+- Stanley Murphy and George Evans
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: obrienhasnoplacetogolyricschords.pro
+    imported_at: '2026-01-02'

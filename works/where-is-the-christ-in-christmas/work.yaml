@@ -1,0 +1,15 @@
+id: where-is-the-christ-in-christmas
+title: Where Is The Christ In Christmas
+artist: Slim Whitman
+composers:
+- Dallas Daughtry, Pete Drake, Jody Lavender
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whereistheChristinChristmaslyricschords.pro
+    imported_at: '2026-01-02'

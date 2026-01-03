@@ -1,0 +1,18 @@
+id: you-dont-know-how-lucky-you-are
+title: You Don’t Know How Lucky You Are
+artist: Rhonda Vincent
+composers:
+- Carl Jackson and David Wills
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontknowhowluckyyouarelyricschords.pro
+    imported_at: '2026-01-02'

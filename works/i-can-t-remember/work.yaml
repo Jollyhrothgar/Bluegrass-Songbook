@@ -1,0 +1,17 @@
+id: i-can-t-remember
+title: I Can't Remember
+artist: Connie Smith
+composers:
+- Bill Anderson and Becki Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantrememberlyricschords.pro
+    imported_at: '2026-01-02'

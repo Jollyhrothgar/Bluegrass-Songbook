@@ -1,0 +1,19 @@
+id: if-it-s-wrong-to-love-you
+title: If It's Wrong to Love You
+artist: Hank Snow
+composers:
+- Bonnie Dodd and Charles Mitchell
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitswrongtoloveyoulyricschords.pro
+    imported_at: '2026-01-02'

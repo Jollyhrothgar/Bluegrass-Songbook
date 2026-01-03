@@ -1,0 +1,18 @@
+id: two-sparrows-in-a-hurricane
+title: Two Sparrows In A Hurricane
+artist: Tanya Tucker
+composers:
+- Mark Alan Springer
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twosparrowsinahurricanelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: what-every-woman-lives-for
+title: What Every Woman Lives For
+artist: Elvis Presley
+composers:
+- Doc Pomus and Mort Shuman
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whateverywomanlivesforlyricschords.pro
+    imported_at: '2026-01-02'

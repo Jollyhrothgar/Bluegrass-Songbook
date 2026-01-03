@@ -1,0 +1,17 @@
+id: it-still-takes-a-wise-man-to-pray
+title: It Still Takes A Wise Man To Pray
+artist: Jeff and Sheri Easter
+composers:
+- Steve Moss
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itstilltakesawisemantopraylyricschords.pro
+    imported_at: '2026-01-02'

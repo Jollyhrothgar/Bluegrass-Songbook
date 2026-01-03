@@ -1,0 +1,17 @@
+id: milk-cow-blues
+title: Milk Cow Blues
+artist: Bob Wills
+composers:
+- Kokomo Arnold
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: milkcowblueslyricschords.pro
+    imported_at: '2026-01-02'

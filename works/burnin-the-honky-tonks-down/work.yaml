@@ -1,0 +1,17 @@
+id: burnin-the-honky-tonks-down
+title: Burnin' The Honky Tonks Down
+artist: Alan Jackson
+composers:
+- Billy Burnette and Shawn Camp
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burninthehonkytonksdownlyricschords.pro
+    imported_at: '2026-01-02'

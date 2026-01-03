@@ -1,0 +1,18 @@
+id: walk-the-way-the-wind-blows
+title: Walk the Way the Wind Blows
+artist: Kathy Mattea
+composers:
+- Tim O'Brien
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkthewaythewindblowslyricschords.pro
+    imported_at: '2026-01-02'

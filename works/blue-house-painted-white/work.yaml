@@ -1,0 +1,17 @@
+id: blue-house-painted-white
+title: Blue House Painted White
+artist: Porter Wagoner
+composers:
+- Sonny Burns, Buddy Word, Walt Breeland
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluehousepaintedwhitelyricschords.pro
+    imported_at: '2026-01-02'

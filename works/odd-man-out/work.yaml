@@ -1,0 +1,17 @@
+id: odd-man-out
+title: Odd Man Out
+artist: Carl Belew
+composers:
+- Carl Belew and W.S. Stevenson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oddmanoutlyricschords.pro
+    imported_at: '2026-01-02'

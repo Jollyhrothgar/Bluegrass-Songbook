@@ -1,0 +1,20 @@
+id: what-child-is-this
+title: What Child Is This
+artist: John Denver
+composers:
+- William Dix
+default_key: Em
+tags:
+- Folk
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatchildisthislyricschords.pro
+    imported_at: '2026-01-02'

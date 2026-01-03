@@ -1,0 +1,17 @@
+id: don-t-shake-hands-with-the-devil
+title: Don't Shake Hands With The Devil
+artist: Cowboy Copas
+composers:
+- Dottie Swan and Lloyd Copas
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontshakehandswiththedevillyricschords.pro
+    imported_at: '2026-01-02'

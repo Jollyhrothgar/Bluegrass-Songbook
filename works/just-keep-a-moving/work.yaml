@@ -1,0 +1,20 @@
+id: just-keep-a-moving
+title: Just Keep A Moving
+artist: Hank Snow
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justkeepamovinglyricschords.pro
+    imported_at: '2026-01-02'

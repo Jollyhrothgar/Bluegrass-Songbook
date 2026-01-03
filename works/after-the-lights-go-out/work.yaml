@@ -1,0 +1,17 @@
+id: after-the-lights-go-out
+title: After The Lights Go Out
+artist: Ricky Van Shelton
+composers:
+- Warner McPherson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterthelightsgooutlyricschords.pro
+    imported_at: '2026-01-02'

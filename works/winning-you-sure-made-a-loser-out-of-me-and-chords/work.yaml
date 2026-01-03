@@ -1,0 +1,15 @@
+id: winning-you-sure-made-a-loser-out-of-me-and-chords
+title: Winning You Sure Made A Loser Out Of Me and Chords
+artist: Faron Young
+composers:
+- David Wilkins and Jody Johnson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: winningyousuremadealoseroutofmelyricschords.pro
+    imported_at: '2026-01-02'

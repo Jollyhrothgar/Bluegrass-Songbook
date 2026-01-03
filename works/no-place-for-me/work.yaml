@@ -1,0 +1,17 @@
+id: no-place-for-me
+title: No Place For Me
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noplaceformelyricschords.pro
+    imported_at: '2026-01-02'

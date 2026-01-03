@@ -1,0 +1,16 @@
+id: moanin
+title: Moanin'
+artist: Hank Snow
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moaninlyricschords.pro
+    imported_at: '2026-01-02'

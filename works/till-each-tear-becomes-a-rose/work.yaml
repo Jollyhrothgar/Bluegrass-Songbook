@@ -1,0 +1,17 @@
+id: till-each-tear-becomes-a-rose
+title: Till Each Tear Becomes A Rose
+artist: Keith Whitley/Lorrie Morgan
+composers:
+- Bill and
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tilleachtearbecomesaroselyricschords.pro
+    imported_at: '2026-01-02'

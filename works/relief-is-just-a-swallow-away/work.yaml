@@ -1,0 +1,17 @@
+id: relief-is-just-a-swallow-away
+title: Relief Is Just A Swallow Away
+artist: George Jones
+composers:
+- Eddie Noack
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: reliefisjustaswallowawaylyricschords.pro
+    imported_at: '2026-01-02'

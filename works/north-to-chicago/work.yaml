@@ -1,0 +1,19 @@
+id: north-to-chicago
+title: North To Chicago
+artist: Hank Snow
+composers:
+- Les Pouliot
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: northtochicagolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: beneath-a-neon-star
+title: Beneath a Neon Star
+artist: Johnny Bush
+composers:
+- Red Rowe
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beneathaneonstarlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: pictures-don-t-lie
+title: Pictures Don't Lie
+artist: Billy Ray Cyrus
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: picturesdontlielyricschords.pro
+    imported_at: '2026-01-02'

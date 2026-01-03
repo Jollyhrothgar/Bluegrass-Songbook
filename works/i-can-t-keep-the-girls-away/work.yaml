@@ -1,0 +1,17 @@
+id: i-can-t-keep-the-girls-away
+title: I Can't Keep The Girls Away
+artist: Billy Walker
+composers:
+- L. Butler
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantkeepthegirlsawaylyricschords.pro
+    imported_at: '2026-01-02'

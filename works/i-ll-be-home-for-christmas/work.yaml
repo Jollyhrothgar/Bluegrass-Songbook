@@ -1,0 +1,19 @@
+id: i-ll-be-home-for-christmas
+title: I'll Be Home For Christmas
+artist: Elvis Presley
+composers:
+- K. Gannon and W. Kent
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbehomeforchristmaslyricschords.pro
+    imported_at: '2026-01-02'

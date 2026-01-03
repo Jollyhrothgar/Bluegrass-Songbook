@@ -1,0 +1,17 @@
+id: i-love-the-sound-of-a-whistle
+title: I Love The Sound Of A Whistle
+artist: Boxcar Willie
+composers:
+- Michael S. Breid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovethesoundofawhistlelyricschords.pro
+    imported_at: '2026-01-02'

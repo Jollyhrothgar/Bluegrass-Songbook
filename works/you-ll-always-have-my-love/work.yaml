@@ -1,0 +1,17 @@
+id: you-ll-always-have-my-love
+title: You'll Always Have My Love
+artist: Wanda Jackson
+composers:
+- Yvonne Devaney
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllalwayshavemylovelyricschords.pro
+    imported_at: '2026-01-02'

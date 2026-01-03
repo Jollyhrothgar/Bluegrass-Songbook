@@ -1,0 +1,19 @@
+id: holiday-for-love
+title: Holiday for Love
+artist: Mel Tillis
+composers:
+- Wayne P. Walker and Mel Tillis
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holidayforlovelyricsandchords.pro
+    imported_at: '2026-01-02'

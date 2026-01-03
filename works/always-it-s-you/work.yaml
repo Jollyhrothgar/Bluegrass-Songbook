@@ -1,0 +1,18 @@
+id: always-it-s-you
+title: Always It's You
+artist: The Everly Brothers
+composers:
+- Felice and Boudleaux Bryant
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alwaysitsyoulyricschords.pro
+    imported_at: '2026-01-02'

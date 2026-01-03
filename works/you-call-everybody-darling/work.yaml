@@ -1,0 +1,15 @@
+id: you-call-everybody-darling
+title: You Call Everybody Darling
+artist: Faron Young
+composers:
+- Sam Martin, Ben Trace, Albert Trace, Clem Watts
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcalleverybodydarlinglyricschords.pro
+    imported_at: '2026-01-02'

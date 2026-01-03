@@ -1,0 +1,17 @@
+id: wait-for-the-light-to-shine
+title: Wait For the Light to Shine
+artist: Hank Williams Sr.
+composers:
+- Fred Rose
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waitforthelighttoshinelyricschords.pro
+    imported_at: '2026-01-02'

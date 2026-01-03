@@ -1,0 +1,17 @@
+id: to-think-you-ve-chosen-me
+title: To Think You've Chosen Me
+artist: Marty Robbins
+composers:
+- George Weiss and Bennie Benjamin
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tothinkyouvechosenmelyricschords.pro
+    imported_at: '2026-01-02'

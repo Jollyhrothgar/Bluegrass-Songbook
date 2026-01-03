@@ -1,0 +1,17 @@
+id: what-s-he-got-that-i-couldn-t-offer-you
+title: What's He Got (That I Couldn't Offer You)
+artist: Billy Walker
+composers:
+- Vern Stovall and Buddy Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatshegotthaticouldntofferyoulyricschords.pro
+    imported_at: '2026-01-02'

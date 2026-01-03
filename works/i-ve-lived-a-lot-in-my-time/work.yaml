@@ -1,0 +1,17 @@
+id: i-ve-lived-a-lot-in-my-time
+title: I've Lived A Lot In My Time
+artist: Jim Reeves
+composers:
+- Jack Rhodes, Dick Reynolds, Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivelivedalotinmytimelyricschords.pro
+    imported_at: '2026-01-02'

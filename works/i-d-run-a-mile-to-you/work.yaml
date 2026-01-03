@@ -1,0 +1,17 @@
+id: i-d-run-a-mile-to-you
+title: I'd Run A Mile To You
+artist: Lynn Anderson
+composers:
+- Glenn Sutton and Mac Curtis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idrunamiletoyoulyricschords.pro
+    imported_at: '2026-01-02'

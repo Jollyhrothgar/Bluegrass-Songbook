@@ -1,0 +1,19 @@
+id: keep-a-knockin
+title: Keep A Knockin'
+artist: The Everly Brothers
+composers:
+- Little Richard Penniman
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keepaknockinlyricschords.pro
+    imported_at: '2026-01-02'

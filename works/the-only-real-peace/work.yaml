@@ -1,0 +1,15 @@
+id: the-only-real-peace
+title: The Only Real Peace
+artist: The Hemphills
+composers:
+- Joel Hemphill
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theonlyrealpeacelyricschords.pro
+    imported_at: '2026-01-02'

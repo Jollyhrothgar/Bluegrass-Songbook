@@ -1,0 +1,19 @@
+id: green-river-i-ve-come-back-to-you
+title: Green River I've Come Back To You
+artist: Waylon Jennings
+composers:
+- Harland Howard
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: greenriverivecomebacktoyoulyricschords.pro
+    imported_at: '2026-01-02'

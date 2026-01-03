@@ -1,0 +1,17 @@
+id: foolish-notion
+title: Foolish Notion
+artist: Buck Owens
+composers:
+- Bob Morris
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolishnotionlyricschords.pro
+    imported_at: '2026-01-02'

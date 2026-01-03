@@ -1,0 +1,18 @@
+id: when-there-s-no-one-around
+title: When There's No One Around
+artist: Garth Brooks
+composers:
+- Tim O'Brien and Darrell Scott
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentheresnoonearoundlyricschords.pro
+    imported_at: '2026-01-02'

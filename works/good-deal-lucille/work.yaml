@@ -1,0 +1,17 @@
+id: good-deal-lucille
+title: Good Deal Lucille
+artist: Carl Smith
+composers:
+- Al Terry,
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gooddeallucillelyricschords.pro
+    imported_at: '2026-01-02'

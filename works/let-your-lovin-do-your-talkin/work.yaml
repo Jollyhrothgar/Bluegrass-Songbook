@@ -1,0 +1,17 @@
+id: let-your-lovin-do-your-talkin
+title: Let Your Lovin' Do Your Talkin'
+artist: Ferlin Husky
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letyourlovindoyourtalkinlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: early-in-the-morning
+title: Early In The Morning
+artist: Buddy Holly
+composers:
+- Bobby Darin and Woody Harris
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: earlyinthemorninglyricschords.pro
+    imported_at: '2026-01-02'

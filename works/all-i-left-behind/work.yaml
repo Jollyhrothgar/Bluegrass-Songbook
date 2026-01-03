@@ -1,0 +1,18 @@
+id: all-i-left-behind
+title: All I Left Behind
+artist: Emmylou Harris
+composers:
+- Emmylou Harris and Anna McCarrigle
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allileftbehindlyricschords.pro
+    imported_at: '2026-01-02'

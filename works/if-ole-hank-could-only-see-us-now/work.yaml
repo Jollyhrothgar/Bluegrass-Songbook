@@ -1,0 +1,19 @@
+id: if-ole-hank-could-only-see-us-now
+title: If Ole Hank Could Only See Us Now
+artist: Waylon Jennings
+composers:
+- Waylon Jennings and Roger Murrah
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifolehankcouldonlyseeusnowlyricschords.pro
+    imported_at: '2026-01-02'

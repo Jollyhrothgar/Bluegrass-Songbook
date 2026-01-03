@@ -1,0 +1,18 @@
+id: i-can-feel-you-drifting
+title: I Can Feel You Drifting
+artist: Kenny Rogers
+composers:
+- Bat McGrath and Billy Kirsch
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanfeelyoudriftinglyricschords.pro
+    imported_at: '2026-01-02'

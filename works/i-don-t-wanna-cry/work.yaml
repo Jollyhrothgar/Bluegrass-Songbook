@@ -1,0 +1,15 @@
+id: i-don-t-wanna-cry
+title: I Don't Wanna Cry
+artist: Gatlin Brothers
+composers:
+- Larry Gatlin
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwannacrylyricschords.pro
+    imported_at: '2026-01-02'

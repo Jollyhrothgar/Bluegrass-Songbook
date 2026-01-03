@@ -1,0 +1,15 @@
+id: don-t-be-afraid-to-love-me
+title: Don't Be Afraid To Love Me
+artist: George Morgan
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontbeafraidtolovemelyricschords.pro
+    imported_at: '2026-01-02'

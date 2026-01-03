@@ -1,0 +1,19 @@
+id: you-and-you-alone
+title: You And You Alone
+artist: Vince Gill
+composers:
+- Vince Gill and Amy Grant Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youandyoualonelyricsandchords.pro
+    imported_at: '2026-01-02'

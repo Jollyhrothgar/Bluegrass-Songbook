@@ -1,0 +1,13 @@
+id: your-eyes
+title: Your Eyes
+artist: Charly McClain
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youreyeslyricschords.pro
+    imported_at: '2026-01-02'

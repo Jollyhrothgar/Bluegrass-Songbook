@@ -1,0 +1,17 @@
+id: polly-put-the-kettle-on
+title: Polly put the Kettle on
+artist: Traditional
+composers:
+- Biography:Byard Ray
+default_key: G
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

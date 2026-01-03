@@ -1,0 +1,15 @@
+id: he-s-back-in-texas
+title: He's Back In Texas
+artist: Moe Bandy
+composers:
+- Troy Seals and Wood Newton
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesbackintexaslyricschords.pro
+    imported_at: '2026-01-02'

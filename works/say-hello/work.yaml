@@ -1,0 +1,19 @@
+id: say-hello
+title: Say Hello
+artist: Vince Gill
+composers:
+- Pete Wasner and Vince Gill
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sayhellolyricschords.pro
+    imported_at: '2026-01-02'

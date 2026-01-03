@@ -1,0 +1,15 @@
+id: it-ain-t-gonna-worry-my-mind
+title: It Ain't Gonna Worry My Mind
+artist: George Jones
+composers:
+- Richard Leigh
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itaintgonnaworrymymindlyricsandchords.pro
+    imported_at: '2026-01-02'

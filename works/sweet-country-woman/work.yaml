@@ -1,0 +1,17 @@
+id: sweet-country-woman
+title: Sweet Country Woman
+artist: Johnny Duncan
+composers:
+- Sandy St.John & Chuck Thorp
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetcountrywomanlyricschords.pro
+    imported_at: '2026-01-02'

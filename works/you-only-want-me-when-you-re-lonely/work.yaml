@@ -1,0 +1,18 @@
+id: you-only-want-me-when-you-re-lonely
+title: You Only Want Me When You're Lonely
+artist: Marty Robbins
+composers:
+- Gene Autry and Steve Nelson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youonlywantmewhenyourelonelylyricschords.pro
+    imported_at: '2026-01-02'

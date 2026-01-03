@@ -1,0 +1,15 @@
+id: savior-again-to-thy-dear-name-we-raise
+title: Savior Again To Thy Dear Name We Raise
+artist: Dottie West
+composers:
+- John Ellerton and Edward Hopkins
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: savioragaintothydearnameweraiselyricschords.pro
+    imported_at: '2026-01-02'

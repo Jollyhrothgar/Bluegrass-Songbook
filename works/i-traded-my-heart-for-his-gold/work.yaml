@@ -1,0 +1,15 @@
+id: i-traded-my-heart-for-his-gold
+title: I Traded My Heart For His Gold
+artist: Bonnie Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itradedmyheartforhisgoldlyricschords.pro
+    imported_at: '2026-01-02'

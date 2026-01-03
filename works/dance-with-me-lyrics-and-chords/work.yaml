@@ -1,0 +1,15 @@
+id: dance-with-me-lyrics-and-chords
+title: Dance With Me Lyrics and Chords
+artist: Johnny Rodriguez
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dancewithmelyricsandchords.pro
+    imported_at: '2026-01-02'

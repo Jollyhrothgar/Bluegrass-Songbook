@@ -1,0 +1,17 @@
+id: i-m-stepping-out-tonight
+title: I'm Stepping Out Tonight
+artist: Porter Wagoner
+composers:
+- Gene Mooney
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsteppingouttonightlyricschords.pro
+    imported_at: '2026-01-02'

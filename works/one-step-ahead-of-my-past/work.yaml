@@ -1,0 +1,17 @@
+id: one-step-ahead-of-my-past
+title: One Step Ahead Of My Past
+artist: Hank Locklin
+composers:
+- Don Robertson and Hal Blair
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onestepaheadofmypastlyricschords.pro
+    imported_at: '2026-01-02'

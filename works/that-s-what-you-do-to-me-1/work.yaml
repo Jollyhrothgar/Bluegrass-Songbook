@@ -1,0 +1,19 @@
+id: that-s-what-you-do-to-me-1
+title: That's What You Do To Me
+artist: the Everly Brothers
+composers:
+- Bob Montgomery and Earl Sinks
+default_key: G
+tags:
+- Pop
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatyoudotomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-can-see-it-all
+title: I Can See It All
+artist: Bobby Helms
+composers:
+- Bobby Helms and Doris Helms
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanseeitalllyricschords.pro
+    imported_at: '2026-01-02'

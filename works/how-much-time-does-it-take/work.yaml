@@ -1,0 +1,15 @@
+id: how-much-time-does-it-take
+title: How Much Time Does It Take
+artist: Don Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howmuchtimedoesittakelyricschords.pro
+    imported_at: '2026-01-02'

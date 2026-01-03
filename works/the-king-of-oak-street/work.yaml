@@ -1,0 +1,18 @@
+id: the-king-of-oak-street
+title: The King Of Oak Street
+artist: Kenny Rogers
+composers:
+- Alex Harvey
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thekingofoakstreetlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: where-d-ya-stay-last-night
+title: Where'd Ya Stay Last Night
+artist: Webb Pierce
+composers:
+- Joe Hudgins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheredyastaylastnightlyricschords.pro
+    imported_at: '2026-01-02'

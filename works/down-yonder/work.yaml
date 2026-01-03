@@ -1,0 +1,15 @@
+id: down-yonder
+title: Down Yonder
+artist: Red Foley
+composers:
+- Wolfe Gilbert
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downyonderlyricschords.pro
+    imported_at: '2026-01-02'

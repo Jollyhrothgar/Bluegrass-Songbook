@@ -1,0 +1,17 @@
+id: i-can-live-forever
+title: I Can Live Forever
+artist: George Jones
+composers:
+- Tony Stampley, Johnny Christopher, Harvey Hoy Lindsey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanliveforeverlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: all-of-a-sudden
+title: All Of A Sudden
+artist: Wynn Stewart
+composers:
+- Gene Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allofasuddenlyricschords.pro
+    imported_at: '2026-01-02'

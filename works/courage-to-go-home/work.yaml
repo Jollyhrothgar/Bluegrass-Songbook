@@ -1,0 +1,17 @@
+id: courage-to-go-home
+title: Courage To Go Home
+artist: Tony Booth
+composers:
+- Jack Lebsock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: couragetogohomelyricschords.pro
+    imported_at: '2026-01-02'

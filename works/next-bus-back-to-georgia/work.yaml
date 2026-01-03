@@ -1,0 +1,15 @@
+id: next-bus-back-to-georgia
+title: Next Bus Back To Georgia
+artist: Jean Shepard
+composers:
+- Rudie Whaling
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nextbusbacktogeorgialyricschords.pro
+    imported_at: '2026-01-02'

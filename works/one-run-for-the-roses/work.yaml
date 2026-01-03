@@ -1,0 +1,15 @@
+id: one-run-for-the-roses
+title: One Run for the Roses
+artist: Cal Smith
+composers:
+- Jerry Chesnut
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onerunfortheroseslyricschords.pro
+    imported_at: '2026-01-02'

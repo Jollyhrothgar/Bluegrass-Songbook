@@ -1,0 +1,17 @@
+id: the-choices-she-made-now
+title: The Choices She Made Now
+artist: Charlie Pride
+composers:
+- Ted Harris
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thechoicesshemadelyricschords.pro
+    imported_at: '2026-01-02'

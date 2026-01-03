@@ -1,0 +1,17 @@
+id: the-life-of-the-party
+title: The Life Of The Party
+artist: Porter Wagoner
+composers:
+- Dave Kirby and Hal Bynum
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelifeofthepartylyricschords.pro
+    imported_at: '2026-01-02'

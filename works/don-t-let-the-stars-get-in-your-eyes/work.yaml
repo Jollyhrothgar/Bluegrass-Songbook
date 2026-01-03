@@ -1,0 +1,17 @@
+id: don-t-let-the-stars-get-in-your-eyes
+title: Don't Let The Stars Get In Your Eyes
+artist: Ray Price
+composers:
+- Slim Willet
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontletthestarsgetinyoureyeslyricschords.pro
+    imported_at: '2026-01-02'

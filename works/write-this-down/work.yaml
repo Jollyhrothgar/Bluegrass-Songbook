@@ -1,0 +1,18 @@
+id: write-this-down
+title: Write This Down
+artist: George Strait
+composers:
+- Kent M. Robbins and Dana Hunt
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: writethisdownlyricschords.pro
+    imported_at: '2026-01-02'

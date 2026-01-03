@@ -1,0 +1,17 @@
+id: taillights-blue
+title: Taillights Blue
+artist: Alan Jackson
+composers:
+- Jay Knowles and Adam Wright
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: taillightsbluelyricschords.pro
+    imported_at: '2026-01-02'

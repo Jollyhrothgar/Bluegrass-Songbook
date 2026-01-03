@@ -1,0 +1,15 @@
+id: storms-of-troubled-times-aka-happy-anniversary
+title: Storms Of Troubled Times ( aka Happy Anniversary)
+artist: Ray Price
+composers:
+- Jim Weatherly
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stormsoftroubledtimeslyricschords.pro
+    imported_at: '2026-01-02'

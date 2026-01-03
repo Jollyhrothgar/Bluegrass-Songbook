@@ -1,0 +1,15 @@
+id: we-split-the-blanket
+title: We Split The Blanket
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wesplittheblanketlyricschords.pro
+    imported_at: '2026-01-02'

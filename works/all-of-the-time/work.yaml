@@ -1,0 +1,17 @@
+id: all-of-the-time
+title: All Of The Time
+artist: Ferlin Husky
+composers:
+- Joe Allison and Audrey Allison
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allofthetimelyricschords.pro
+    imported_at: '2026-01-02'

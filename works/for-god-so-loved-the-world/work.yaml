@@ -1,0 +1,17 @@
+id: for-god-so-loved-the-world
+title: For God So Loved The World
+artist: Jimmy Davis
+composers:
+- Lonnie Hunter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forGodsolovedtheworldlyricschords.pro
+    imported_at: '2026-01-02'

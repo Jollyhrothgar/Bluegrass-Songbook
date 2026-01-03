@@ -1,0 +1,17 @@
+id: right-or-left-at-oak-street
+title: Right or Left at Oak Street
+artist: Roy Clark
+composers:
+- Charlie Williams and Joe Nixon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rightorleftatoakstreetlyricschords.pro
+    imported_at: '2026-01-02'

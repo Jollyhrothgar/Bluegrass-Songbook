@@ -1,0 +1,17 @@
+id: unbelievable-love
+title: Unbelievable Love
+artist: Jim Ed Brown
+composers:
+- Curly Putman and Ben Peters
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: unbelievablelovelyricschords.pro
+    imported_at: '2026-01-02'

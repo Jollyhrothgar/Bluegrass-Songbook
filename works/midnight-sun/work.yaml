@@ -1,0 +1,18 @@
+id: midnight-sun
+title: Midnight Sun
+artist: Garth Brooks
+composers:
+- Garth Brooks, Richie Brown, Jerrod Niemann
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: midnightsunlyricschords.pro
+    imported_at: '2026-01-02'

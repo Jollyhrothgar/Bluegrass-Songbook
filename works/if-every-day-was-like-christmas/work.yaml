@@ -1,0 +1,20 @@
+id: if-every-day-was-like-christmas
+title: If Every Day Was Like Christmas
+artist: Elvis Presley
+composers:
+- Red West
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeverydaywaslikeChristmaslyricschords.pro
+    imported_at: '2026-01-02'

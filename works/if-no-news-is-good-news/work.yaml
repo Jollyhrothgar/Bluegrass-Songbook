@@ -1,0 +1,15 @@
+id: if-no-news-is-good-news
+title: If No News Is Good News
+artist: Bob Wills
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifnonewsisgoodnewslyricschords.pro
+    imported_at: '2026-01-02'

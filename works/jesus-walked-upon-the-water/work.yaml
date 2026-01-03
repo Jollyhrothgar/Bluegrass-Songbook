@@ -1,0 +1,17 @@
+id: jesus-walked-upon-the-water
+title: Jesus Walked Upon The Water
+artist: Junior Sisk and Rambler’s Choice
+composers:
+- George Steve Watts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesuswalkeduponthewaterlyricschords.pro
+    imported_at: '2026-01-02'

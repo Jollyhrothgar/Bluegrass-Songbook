@@ -1,0 +1,17 @@
+id: slip-away
+title: Slip Away
+artist: Mel Street
+composers:
+- Wilbur Terrell, Marcus Daniel, Bill Armstrong
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: slipawaylyricschords.pro
+    imported_at: '2026-01-02'

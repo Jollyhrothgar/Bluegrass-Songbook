@@ -1,0 +1,15 @@
+id: getting-over-you
+title: Getting Over You
+artist: Alabama
+composers:
+- Cary Lynn Rutledge
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gettingoveryoulyricsandchords.pro
+    imported_at: '2026-01-02'

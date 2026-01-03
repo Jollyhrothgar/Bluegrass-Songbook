@@ -1,0 +1,17 @@
+id: let-the-world-keep-on-a-turning
+title: Let the World Keep on a Turning
+artist: Buck Owens
+composers:
+- Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lettheworldkeeponaturninglyricschords.pro
+    imported_at: '2026-01-02'

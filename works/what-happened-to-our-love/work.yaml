@@ -1,0 +1,17 @@
+id: what-happened-to-our-love
+title: What Happened To Our Love
+artist: Moe Bandy
+composers:
+- Sanger D. Shafer and Moe Bandy
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whathappenedtoourlovelyricschords.pro
+    imported_at: '2026-01-02'

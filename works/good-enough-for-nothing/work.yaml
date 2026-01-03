@@ -1,0 +1,18 @@
+id: good-enough-for-nothing
+title: Good Enough For Nothing
+artist: Red Sovine
+composers:
+- Tommy Hill and Red Sovine
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodenoughfornothinglyricschords.pro
+    imported_at: '2026-01-02'

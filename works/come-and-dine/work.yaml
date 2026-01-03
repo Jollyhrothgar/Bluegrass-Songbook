@@ -1,0 +1,17 @@
+id: come-and-dine
+title: Come And Dine
+artist: Paul Williams
+composers:
+- Charles B. Widmeyer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comeanddinelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: if-i-get-home-on-christmas-day
+title: If I Get Home On Christmas Day
+artist: Elvis Presley
+composers:
+- Tony McAulay
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifigethomeonChristmasdaylyricschords.pro
+    imported_at: '2026-01-02'

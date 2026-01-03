@@ -1,0 +1,19 @@
+id: strange
+title: Strange
+artist: Patsy Cline
+composers:
+- Mel Tillis & Fred Burch
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: strangelyricschords.pro
+    imported_at: '2026-01-02'

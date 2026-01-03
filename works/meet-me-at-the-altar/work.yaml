@@ -1,0 +1,17 @@
+id: meet-me-at-the-altar
+title: Meet Me At The Altar
+artist: Eddy Arnold
+composers:
+- Don Deal and Chuck Deal
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meetmeatthealtarlyricschords.pro
+    imported_at: '2026-01-02'

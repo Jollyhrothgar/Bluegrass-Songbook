@@ -1,0 +1,17 @@
+id: broken-hearted-melody
+title: Broken Hearted Melody
+artist: Dottie West
+composers:
+- Hal David and Stoney Edwards
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brokenheartedmelodylyricschords.pro
+    imported_at: '2026-01-02'

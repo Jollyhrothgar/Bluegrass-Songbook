@@ -1,0 +1,17 @@
+id: i-took-a-memory-for-lunch
+title: I Took A Memory For Lunch
+artist: Bobby Bare
+composers:
+- Tom T. Hall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itookamemoryforlunchlyricschords.pro
+    imported_at: '2026-01-02'

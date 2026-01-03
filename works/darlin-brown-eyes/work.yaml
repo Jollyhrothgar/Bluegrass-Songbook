@@ -1,0 +1,17 @@
+id: darlin-brown-eyes
+title: Darlin’ Brown Eyes
+artist: Ralph Stanley
+composers:
+- Osburn Thorpe and Ralph Stanley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darlinbrowneyeslyricschords.pro
+    imported_at: '2026-01-02'

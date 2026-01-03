@@ -1,0 +1,19 @@
+id: breeze
+title: Breeze
+artist: Mickey Gilley
+composers:
+- Ted Daffan and Bernard Landes
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: breezelyricschords.pro
+    imported_at: '2026-01-02'

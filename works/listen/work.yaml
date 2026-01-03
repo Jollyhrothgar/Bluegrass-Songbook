@@ -1,0 +1,17 @@
+id: listen
+title: Listen
+artist: Mel Street
+composers:
+- Jimmy Peppers and Tommy Cash
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: listenlyricschords.pro
+    imported_at: '2026-01-02'

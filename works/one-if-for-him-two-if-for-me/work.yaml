@@ -1,0 +1,17 @@
+id: one-if-for-him-two-if-for-me
+title: One If For Him Two If For Me
+artist: David Houston
+composers:
+- Gene Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneifforhimtwoifformelyricsandchords.pro
+    imported_at: '2026-01-02'

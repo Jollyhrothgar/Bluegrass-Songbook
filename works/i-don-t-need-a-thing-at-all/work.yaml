@@ -1,0 +1,17 @@
+id: i-don-t-need-a-thing-at-all
+title: I Don't Need A Thing At All
+artist: Gene Watson
+composers:
+- Joseph Allen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontneedathingatalllyricschords.pro
+    imported_at: '2026-01-02'

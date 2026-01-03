@@ -1,0 +1,19 @@
+id: you-re-not-my-same-sweet-baby
+title: You're Not My Same Sweet Baby
+artist: Waylon Jennings
+composers:
+- Mickey Newbury
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourenotmysamesweetbabylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: a-king-without-a-queen
+title: A King Without A Queen
+artist: Merle Haggard
+composers:
+- Bob Wills, John Wills, Martha Dean Moore
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: akingwithoutaqueenlyricschords.pro
+    imported_at: '2026-01-02'

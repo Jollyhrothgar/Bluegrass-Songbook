@@ -1,0 +1,17 @@
+id: not-what-i-had-in-mind
+title: Not What I Had In Mind
+artist: George Jones
+composers:
+- Jack Clement
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notwhatihadinmindlyricschords.pro
+    imported_at: '2026-01-02'

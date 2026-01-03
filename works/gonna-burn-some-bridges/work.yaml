@@ -1,0 +1,17 @@
+id: gonna-burn-some-bridges
+title: Gonna Burn Some Bridges
+artist: Ray Price
+composers:
+- Mel Tillis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnaburnsomebridgeslyricschords.pro
+    imported_at: '2026-01-02'

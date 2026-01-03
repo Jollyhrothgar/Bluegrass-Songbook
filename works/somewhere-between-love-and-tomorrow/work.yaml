@@ -1,0 +1,15 @@
+id: somewhere-between-love-and-tomorrow
+title: Somewhere Between Love And Tomorrow
+artist: Roy Clark
+composers:
+- Bud Reneau and Thomas Lazaros
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somewherebetweenloveandtomorrowlyricschords.pro
+    imported_at: '2026-01-02'

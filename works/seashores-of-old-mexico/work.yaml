@@ -1,0 +1,16 @@
+id: seashores-of-old-mexico
+title: Seashores Of Old Mexico
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: seashoresofoldmexicolyricschords.pro
+    imported_at: '2026-01-02'

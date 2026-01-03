@@ -1,0 +1,17 @@
+id: baby-i-m-sorry
+title: Baby I'm Sorry
+artist: Ricky Nelson
+composers:
+- Kenneth E. Scott
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyimsorrylyricschords.pro
+    imported_at: '2026-01-02'

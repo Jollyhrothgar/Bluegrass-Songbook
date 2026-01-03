@@ -1,0 +1,17 @@
+id: falling-falling-falling
+title: Falling Falling Falling
+artist: Ray Price
+composers:
+- Bud Deckelman, Joe Guillot, J.D. Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallingfallingfallinglyricschords.pro
+    imported_at: '2026-01-02'

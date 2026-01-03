@@ -1,0 +1,17 @@
+id: mother-s-not-dead
+title: Mother's Not Dead
+artist: Bill Monroe
+composers:
+- Ralph Edmond Stanley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mothersnotdeadlyricschords.pro
+    imported_at: '2026-01-02'

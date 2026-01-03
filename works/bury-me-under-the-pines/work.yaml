@@ -1,0 +1,17 @@
+id: bury-me-under-the-pines
+title: Bury Me Under The Pines
+artist: Ralph Stanley
+composers:
+- Rena Archuleta and Ralph Stanley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burymeunderthepineslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: give-it-time-to-be-tender
+title: Give It Time To Be Tender
+artist: Kris Kristofferson
+composers:
+- Kris Kristofferson and Donnie Fritts
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: giveittimetobetenderlyricschords.pro
+    imported_at: '2026-01-02'

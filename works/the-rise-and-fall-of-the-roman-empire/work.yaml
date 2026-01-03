@@ -1,0 +1,17 @@
+id: the-rise-and-fall-of-the-roman-empire
+title: The Rise And Fall Of The Roman Empire
+artist: Cal Smith
+composers:
+- Bobby Fischer and Don Wayne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theriseandfalloftheromanempirelyricschords.pro
+    imported_at: '2026-01-02'

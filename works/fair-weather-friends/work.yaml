@@ -1,0 +1,17 @@
+id: fair-weather-friends
+title: Fair Weather Friends
+artist: Don Williams
+composers:
+- Johnny Cash and Joe Allen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fairweatherfriendslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: a-world-so-full-of-love
+title: A World So Full Of Love
+artist: Faron Young
+composers:
+- Roger Miller and Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aworldsofulloflovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: better-news
+title: Better News
+artist: John Anderson
+composers:
+- John D. Anderson and Dean Dillon
+default_key: Am
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betternewslyricschords.pro
+    imported_at: '2026-01-02'

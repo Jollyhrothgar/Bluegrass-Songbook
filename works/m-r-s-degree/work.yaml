@@ -1,0 +1,17 @@
+id: m-r-s-degree
+title: M.R.S. Degree
+artist: Crystal Gayle
+composers:
+- Ann J. Morton and Lavon Lile
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mrsdegreelyricschords.pro
+    imported_at: '2026-01-02'

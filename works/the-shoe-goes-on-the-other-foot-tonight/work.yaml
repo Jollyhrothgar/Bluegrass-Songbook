@@ -1,0 +1,18 @@
+id: the-shoe-goes-on-the-other-foot-tonight
+title: The Shoe Goes On The Other Foot Tonight
+artist: Marty Robbins
+composers:
+- Buddy Mize
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theshoegoesontheotherfoottonightlyricschords.pro
+    imported_at: '2026-01-02'

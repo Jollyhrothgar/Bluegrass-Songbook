@@ -1,0 +1,17 @@
+id: everything-that-i-own-has-got-a-dent
+title: Everything That I Own (Has Got A Dent)
+artist: Randy Travis
+composers:
+- Mark Nesler and Tony Martin
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingthatiownhasgotadentlyricschords.pro
+    imported_at: '2026-01-02'

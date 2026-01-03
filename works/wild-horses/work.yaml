@@ -1,0 +1,17 @@
+id: wild-horses
+title: Wild Horses
+artist: Garth Brooks
+composers:
+- Bill Shore and Bud Lee
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wildhorseslyricschords.pro
+    imported_at: '2026-01-02'

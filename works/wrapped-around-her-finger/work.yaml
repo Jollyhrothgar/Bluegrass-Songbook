@@ -1,0 +1,17 @@
+id: wrapped-around-her-finger
+title: Wrapped Around Her Finger
+artist: George Jones
+composers:
+- George Jones and Tammy Wynette
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wrappedaroundherfingerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: what-goes-on-when-the-sun-goes-down
+title: What Goes On When The Sun Goes Down
+artist: Ronnie Milsap
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatgoesonwhenthesungoesdownlyricschords.pro
+    imported_at: '2026-01-02'

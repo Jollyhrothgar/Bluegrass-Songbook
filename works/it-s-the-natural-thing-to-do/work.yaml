@@ -1,0 +1,19 @@
+id: it-s-the-natural-thing-to-do
+title: It's The Natural Thing To Do
+artist: Larry Sparks
+composers:
+- Pete Goble and Leroy Drumm
+default_key: G
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsthenaturalthingtodolyricschords.pro
+    imported_at: '2026-01-02'

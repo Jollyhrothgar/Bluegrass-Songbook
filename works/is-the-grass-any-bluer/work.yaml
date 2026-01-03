@@ -1,0 +1,18 @@
+id: is-the-grass-any-bluer
+title: Is The Grass Any Bluer
+artist: Rhonda Vincent
+composers:
+- Cory Batten, Buck Moore, Troy Seals
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isthegrassanybluerlyricschords.pro
+    imported_at: '2026-01-02'

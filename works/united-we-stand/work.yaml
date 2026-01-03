@@ -1,0 +1,18 @@
+id: united-we-stand
+title: United We Stand
+artist: Anne Murray
+composers:
+- Tony Hiller and Peter Simons
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: unitedwestandlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: far-above-the-starry-sky
+title: Far Above The Starry Sky
+artist: Doyle Lawson
+composers:
+- J.T. Sisk
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: farabovethestarryskylyricschords.pro
+    imported_at: '2026-01-02'

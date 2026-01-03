@@ -1,0 +1,18 @@
+id: you-re-in-my-heart
+title: You're In My Heart
+artist: Rhonda Vincent
+composers:
+- Ron Block
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youreinmyheartlyricschords.pro
+    imported_at: '2026-01-02'

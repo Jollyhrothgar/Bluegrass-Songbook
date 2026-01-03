@@ -1,0 +1,15 @@
+id: i-m-tied-around-your-finger
+title: I'm Tied Around Your Finger
+artist: Jean Shepard
+composers:
+- John Jones and Patsy Jones
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imtiedaroundyourfingerlyricschords.pro
+    imported_at: '2026-01-02'

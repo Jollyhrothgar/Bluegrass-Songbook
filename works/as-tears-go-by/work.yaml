@@ -1,0 +1,15 @@
+id: as-tears-go-by
+title: As Tears Go By
+artist: J.D. Crowe
+composers:
+- Andrew Loog Oldham
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: astearsgobylyricschords.pro
+    imported_at: '2026-01-02'

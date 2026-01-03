@@ -1,0 +1,17 @@
+id: what-does-it-take-to-make-a-grown-man-cry
+title: What Does It Take To Make A Grown Man Cry
+artist: Faron Young
+composers:
+- Ernest Reed and Jade Mangino
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatdoesittaketomakeagrownmancrylyricschords.pro
+    imported_at: '2026-01-02'

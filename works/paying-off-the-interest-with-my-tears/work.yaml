@@ -1,0 +1,17 @@
+id: paying-off-the-interest-with-my-tears
+title: Paying Off The Interest With My Tears
+artist: Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: payingofftheinterestwithmytearslyricschords.pro
+    imported_at: '2026-01-02'

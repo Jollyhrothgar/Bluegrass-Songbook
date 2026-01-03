@@ -1,0 +1,15 @@
+id: dear-alice
+title: Dear Alice
+artist: Johnny Lee
+composers:
+- Lewis Anderson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dearalicelyricschords.pro
+    imported_at: '2026-01-02'

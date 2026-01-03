@@ -1,0 +1,19 @@
+id: after-the-love-has-gone
+title: After The Love Has Gone
+artist: Roy Orbison
+composers:
+- David Foster, Jay Graydon, William B. Champlin
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterthelovehasgonelyricschords.pro
+    imported_at: '2026-01-02'

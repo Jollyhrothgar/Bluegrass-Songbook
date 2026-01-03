@@ -1,0 +1,17 @@
+id: air-mail-special
+title: Air Mail Special
+artist: Jim and Jesse
+composers:
+- Charlie Christian, Ossie J. Godson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: airmailspeciallyricschords.pro
+    imported_at: '2026-01-02'

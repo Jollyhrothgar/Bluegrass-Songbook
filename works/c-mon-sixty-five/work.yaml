@@ -1,0 +1,18 @@
+id: c-mon-sixty-five
+title: C'mon Sixty Five
+artist: Merle Haggard
+composers:
+- Jackson Lee Leap
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cmonsixtyfivelyricschords.pro
+    imported_at: '2026-01-02'

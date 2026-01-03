@@ -1,0 +1,15 @@
+id: glad-to-let-her-go
+title: Glad To Let Her Go
+artist: George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gladtolethergolyricschords.pro
+    imported_at: '2026-01-02'

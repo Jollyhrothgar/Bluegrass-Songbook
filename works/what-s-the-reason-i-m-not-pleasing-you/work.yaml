@@ -1,0 +1,18 @@
+id: what-s-the-reason-i-m-not-pleasing-you
+title: What's The Reason I'm Not Pleasing You
+artist: Fats Domino
+composers:
+- Coy Poe, Earl Hatch, Jimmie Grier, Pinky Tomlin
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatsthereasonimnotpleasingyoulyricschords.pro
+    imported_at: '2026-01-02'

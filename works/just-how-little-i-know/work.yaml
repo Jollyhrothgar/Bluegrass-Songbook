@@ -1,0 +1,17 @@
+id: just-how-little-i-know
+title: Just How Little I Know
+artist: Gene Watson
+composers:
+- Jim Rushing and Wayland Patton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justhowlittleiknowlyricschords.pro
+    imported_at: '2026-01-02'
