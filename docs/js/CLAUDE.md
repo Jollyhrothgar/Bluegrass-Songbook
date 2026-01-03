@@ -13,17 +13,25 @@ docs/
 │   ├── state.js        # Shared state (allSongs, currentSong, etc.)
 │   ├── search-core.js  # Search logic, query parsing, filtering
 │   ├── song-view.js    # Song rendering, controls, ABC notation
+│   ├── work-view.js    # Work display with parts, tablature integration
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
-│   ├── tags.js         # Tag dropdown, filtering
-│   ├── lists.js        # User lists (including Favorites), list picker
+│   ├── tags.js         # Tag dropdown, filtering, instrument tags
+│   ├── lists.js        # User lists (including Favorites)
+│   ├── list-picker.js  # List picker dropdown component
 │   ├── editor.js       # Song editor, ChordPro conversion
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
 │   ├── supabase-auth.js # Auth, cloud sync, voting
+│   ├── renderers/      # Part renderers (tablature, etc.)
+│   │   ├── index.js    # Renderer registry
+│   │   ├── tablature.js # Tablature display
+│   │   ├── tab-player.js # Interactive tab player with playback
+│   │   └── tab-ascii.js # ASCII tab format
 │   └── __tests__/      # Vitest unit tests
 ├── css/style.css       # Dark/light themes, responsive layout
 ├── posts/              # Blog posts (markdown)
 └── data/
-    ├── index.jsonl     # Song index (built by scripts/lib/build_index.py)
+    ├── index.jsonl     # Song index (built by scripts/lib/build_works_index.py)
+    ├── id_mapping.json # Legacy ID → work slug mapping
     └── posts.json      # Blog manifest (built by scripts/lib/build_posts.py)
 ```
 
@@ -43,6 +51,10 @@ let allSongs = [];              // Array of song objects (loaded from index.json
 let songGroups = {};            // Map of group_id → [songs] for versions
 let currentSong = null;         // Currently viewed song
 let currentChordpro = null;     // Raw ChordPro content
+
+// Works/tablature state
+let loadedTablature = null;     // Currently loaded tablature data
+let tablaturePlayer = null;     // Active TabPlayer instance
 
 // Display modes
 let showingFavorites = false;   // Favorites filter active
@@ -64,8 +76,10 @@ let userLists = [];             // Custom user lists (via supabase-auth.js)
 | `search(query)` | Filter songs by query, chords, progression |
 | `renderResults(songs)` | Display search results list (with version badges) |
 | `openSong(songId)` | Load and display a song |
+| `openWork(workSlug)` | Load and display a work with parts |
 | `parseChordPro(content)` | Parse ChordPro → structured sections |
 | `renderSong(song, chordpro)` | Render song with chord highlighting |
+| `loadTablature(tabPath)` | Load tablature JSON for a work part |
 | `transposeChord(chord, semitones)` | Transpose individual chord |
 | `toNashville(chord, key)` | Convert chord to Nashville number |
 | `detectKey(chords)` | Auto-detect key from chord list |
@@ -85,7 +99,8 @@ artist:hank williams      # Filter by artist (multi-word supported)
 title:blue moon           # Filter by title
 lyrics:lonesome highway   # Filter by lyrics content
 key:G                     # Filter by key
-tag:bluegrass             # Filter by tag
+tag:bluegrass             # Filter by genre tag
+tag:fiddle                # Filter by instrument tag (fiddle, banjo, guitar, etc.)
 composer:bill monroe      # Filter by composer/writer
 ```
 
@@ -126,6 +141,26 @@ Nashville number conversion
     ↓ (if transposed)
 Chord transposition applied
 ```
+
+### Works and Renderers
+
+Works can have multiple parts (lead sheet, tablature, ABC notation). The renderer system handles different formats:
+
+```
+work-view.js
+    ↓ selectPart(partIndex)
+    ↓ getRenderer(part.format)
+renderers/
+    ├── tablature.js      # OpenTabFormat JSON → interactive tab display
+    ├── tab-player.js     # TabPlayer class with playback controls
+    └── tab-ascii.js      # ASCII tablature format
+```
+
+**TabPlayer features:**
+- Play/pause with tempo control
+- Note highlighting during playback
+- Measure navigation
+- Loop sections
 
 ### Transposition
 
@@ -186,7 +221,8 @@ npm run test:e2e      # Run E2E tests (Playwright, requires server)
 **E2E tests** (`../../e2e/`):
 - `search.spec.js` - Search and filtering flows
 - `song-view.spec.js` - Song display and controls
-- `navigation.spec.js` - Deep links, history
+- `work-view.spec.js` - Work display with parts/tablature
+- `ui.spec.js` - UI interactions, modals, navigation
 - `favorites.spec.js` - Favorites and lists
 
 ## Adding a Feature

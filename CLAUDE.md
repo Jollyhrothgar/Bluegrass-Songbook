@@ -58,30 +58,49 @@ git worktree remove ../feature-xyz
 
 ```
 Bluegrass-Songbook/
+├── works/                   # PRIMARY: Song collection (17,650+ works)
+│   └── {work-slug}/         # e.g., "blue-moon-of-kentucky"
+│       ├── work.yaml        # Metadata: title, artist, tags, parts
+│       └── lead-sheet.pro   # ChordPro lead sheet
+│
 ├── docs/                    # Frontend (GitHub Pages)
 │   ├── index.html           # Search UI + song editor
 │   ├── blog.html            # Dev blog
-│   ├── js/                  # ES modules (main.js, state.js, search-core.js, etc.)
-│   ├── css/style.css        # Dark/light theme styles
+│   ├── js/                  # ES modules
+│   │   ├── main.js          # Entry point, initialization
+│   │   ├── state.js         # Shared state
+│   │   ├── search-core.js   # Search logic
+│   │   ├── song-view.js     # Song rendering
+│   │   ├── work-view.js     # Work display with parts/tabs
+│   │   └── renderers/       # Tablature renderers
+│   │       ├── tablature.js # Tab display
+│   │       └── tab-player.js # Interactive tab player
+│   ├── css/style.css        # Dark/light themes
 │   ├── posts/               # Blog posts (markdown)
 │   └── data/
-│       ├── index.jsonl      # Song index (built from .pro files)
-│       └── posts.json       # Blog manifest (built from posts/)
+│       ├── index.jsonl      # Song index (built from works/)
+│       ├── id_mapping.json  # Legacy ID → work slug mapping
+│       └── posts.json       # Blog manifest
 │
-├── sources/                 # Song collections (each self-contained)
-│   ├── classic-country/     # ~17,000 parsed songs
-│   │   ├── raw/             # Original HTML files
-│   │   ├── parsed/          # Generated .pro files
-│   │   ├── src/             # Parser code (CLAUDE.md inside)
-│   │   └── viewer/          # Debug UI for parser validation
-│   └── manual/              # Hand-created songs
-│       └── parsed/          # .pro files
+├── sources/                 # LEGACY: Original song sources
+│   ├── classic-country/     # ~17,000 parsed songs (migrated to works/)
+│   ├── golden-standard/     # 86 curated bluegrass standards
+│   ├── manual/              # Hand-created songs
+│   ├── tunearch/            # ABC fiddle tunes
+│   └── bluegrass-lyrics/    # Additional lyrics source
 │
 ├── scripts/                 # CLI tools
 │   ├── bootstrap            # Setup + build index
 │   ├── server               # Start dev server
 │   ├── utility              # add-song, count-chords, refresh-tags
 │   └── lib/                 # Python implementations
+│       ├── build_works_index.py  # PRIMARY: Build index from works/
+│       ├── work_schema.py        # work.yaml schema
+│       └── build_index.py        # LEGACY: Build from sources/
+│
+├── analytics/               # Data analysis dashboard
+│   ├── dashboard.ipynb      # Jupyter notebook
+│   └── scripts/             # Export utilities
 │
 ├── supabase/                # Supabase backend configuration
 │   └── migrations/          # SQL migrations (version-controlled)
@@ -97,11 +116,40 @@ Bluegrass-Songbook/
 └── package.json             # Node.js test dependencies
 ```
 
+## Works Architecture
+
+Songs are organized in `works/`, where each work is a directory containing:
+
+```yaml
+# works/blue-moon-of-kentucky/work.yaml
+id: blue-moon-of-kentucky
+title: Blue Moon of Kentucky
+artist: Patsy Cline
+composers: [Bill Monroe]
+default_key: C
+tags: [ClassicCountry, NashvilleSound, JamFriendly]
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: classic-country
+      source_file: bluemoonofkentuckylyricschords.pro
+      imported_at: '2026-01-02'
+```
+
+**Part types**: `lead-sheet`, `tablature`, `abc-notation`
+**Formats**: `chordpro`, `opentabformat`, `abc`
+
+The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
+
 ## Key Components
 
 | Component | Location | CLAUDE.md |
 |-----------|----------|-----------|
 | **Frontend** | `docs/` | `docs/js/CLAUDE.md` |
+| **Works/Tablature** | `docs/js/work-view.js`, `docs/js/renderers/` | `docs/js/CLAUDE.md` |
 | **Parser** | `sources/classic-country/src/` | `sources/classic-country/src/CLAUDE.md` |
 | **Build pipeline** | `scripts/lib/` | `scripts/lib/CLAUDE.md` |
 | **ChordPro syntax** | `.claude/skills/chordpro/` | `SKILL.md` (auto-invoked) |
@@ -133,8 +181,10 @@ Bluegrass-Songbook/
 ### Rebuilding the Search Index
 
 ```bash
-./scripts/bootstrap --quick   # Regenerates docs/data/index.jsonl
+./scripts/bootstrap --quick   # Regenerates docs/data/index.jsonl from works/
 ```
+
+This runs `build_works_index.py`, which reads all `works/*/work.yaml` files and builds the search index.
 
 ## Format: ChordPro + Extensions
 
@@ -186,11 +236,13 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 ## Current State
 
-- **17,600+ songs** with chord search, transposition, favorites, dark mode
-- **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Structure (Instrumental, Waltz) - 93% coverage via MusicBrainz + harmonic analysis
+- **17,650+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
+- **Works system**: Each song is a "work" with multiple parts (lead sheet, tablature, ABC notation)
+- **Tablature**: Tab rendering with playback for fiddle tunes and instrumentals
+- **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - 93% coverage via MusicBrainz + harmonic analysis
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
 - **Song versions**: Multiple arrangements with voting (infrastructure ready)
-- **URL stability**: Song URLs (`#song/{id}`) are permanent; new submissions get unique IDs, corrections update in place
+- **URL stability**: Work URLs (`#work/{slug}`) are permanent; legacy `#song/{id}` URLs redirect
 
 **What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
 
@@ -199,12 +251,15 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 | I want to... | Go to... |
 |--------------|----------|
 | Add a UI feature | `docs/js/` + `docs/js/CLAUDE.md` |
+| Work with tablature/renderers | `docs/js/renderers/` + `docs/js/work-view.js` |
+| Understand works structure | `works/` + `scripts/lib/work_schema.py` |
 | Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
 | Write a blog post | `docs/posts/` (then run `./scripts/utility build-posts`) |
+| Analyze usage data | `analytics/dashboard.ipynb` |
 | See product vision | `ROADMAP.md` |
 | Run parser tests | `uv run pytest` |
 | Run frontend tests | `npm test` |

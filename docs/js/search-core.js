@@ -58,6 +58,55 @@ function flushPendingSearch() {
     pendingSearchData = null;
 }
 
+// Search syntax prefix map - loaded from shared config or fallback
+// Ground truth: docs/data/search-syntax.json
+let searchPrefixMap = null;
+
+/**
+ * Load prefix map from shared config (lazy, cached)
+ */
+async function loadPrefixMap() {
+    if (searchPrefixMap) return searchPrefixMap;
+
+    try {
+        const response = await fetch('data/search-syntax.json');
+        if (response.ok) {
+            const config = await response.json();
+            searchPrefixMap = config.prefixes || {};
+            return searchPrefixMap;
+        }
+    } catch (e) {
+        // Fallback silently
+    }
+
+    // Fallback if config not found
+    searchPrefixMap = {
+        'artist:': 'artist', 'a:': 'artist',
+        'title:': 'title',
+        'lyrics:': 'lyrics', 'l:': 'lyrics',
+        'composer:': 'composer', 'writer:': 'composer',
+        'key:': 'key', 'k:': 'key',
+        'chord:': 'chord', 'c:': 'chord',
+        'prog:': 'prog', 'p:': 'prog',
+        'tag:': 'tag', 't:': 'tag'
+    };
+    return searchPrefixMap;
+}
+
+// Synchronous version using cached value (call loadPrefixMap first during init)
+function getPrefixMap() {
+    return searchPrefixMap || {
+        'artist:': 'artist', 'a:': 'artist',
+        'title:': 'title',
+        'lyrics:': 'lyrics', 'l:': 'lyrics',
+        'composer:': 'composer', 'writer:': 'composer',
+        'key:': 'key', 'k:': 'key',
+        'chord:': 'chord', 'c:': 'chord',
+        'prog:': 'prog', 'p:': 'prog',
+        'tag:': 'tag', 't:': 'tag'
+    };
+}
+
 /**
  * Parse search query for special modifiers
  * Supports field:value syntax where value continues until next field: or end
@@ -88,17 +137,8 @@ export function parseSearchQuery(query) {
         excludeChords: []
     };
 
-    // Define recognized prefixes (with short aliases)
-    const prefixMap = {
-        'artist:': 'artist', 'a:': 'artist',
-        'title:': 'title',
-        'lyrics:': 'lyrics', 'l:': 'lyrics',
-        'composer:': 'composer', 'writer:': 'composer',
-        'key:': 'key', 'k:': 'key',
-        'chord:': 'chord', 'c:': 'chord',
-        'prog:': 'prog', 'p:': 'prog',
-        'tag:': 'tag', 't:': 'tag'
-    };
+    // Get prefix map (from shared config or fallback)
+    const prefixMap = getPrefixMap();
 
     const prefixPattern = Object.keys(prefixMap).sort((a, b) => b.length - a.length);
     // Match optional - before prefix
@@ -701,7 +741,7 @@ export function trackSearch(query) {
 /**
  * Initialize search module with DOM elements
  */
-export function initSearch(options) {
+export async function initSearch(options) {
     const {
         searchInput,
         searchStats,
@@ -715,6 +755,9 @@ export function initSearch(options) {
     resultsDivEl = resultsDiv;
     navFavoritesEl = navFavorites;
     navSearchEl = navSearch;
+
+    // Preload search syntax config (shared with CLI)
+    await loadPrefixMap();
 
     // Setup search input listener
     if (searchInputEl) {

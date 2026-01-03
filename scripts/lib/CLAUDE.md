@@ -4,13 +4,20 @@ Python utilities for building the search index and managing songs.
 
 ## Pipeline Overview
 
+The build pipeline now uses **works/** as the primary data source:
+
 ```
-Stage 1: Parse       Stage 2: Enrich         Stage 3: Index
-─────────────────────────────────────────────────────────────
-HTML → raw .pro  →  enriched .pro       →   index.jsonl
-                    - Add provenance
-                    - Normalize chords
+PRIMARY (current):
+works/*/work.yaml + lead-sheet.pro  →  build_works_index.py  →  index.jsonl
+
+LEGACY (migration complete):
+sources/*/parsed/*.pro  →  migrate_to_works.py  →  works/
 ```
+
+**Key files:**
+- `build_works_index.py` - PRIMARY: Builds index from works/ directory
+- `work_schema.py` - Defines work.yaml schema and validation
+- `build_index.py` - LEGACY: Builds from sources/ (kept for reference)
 
 ## Local vs CI Operations
 
@@ -37,8 +44,11 @@ Some operations require external APIs/databases and only run locally. Others run
 
 ```
 scripts/lib/
+├── build_works_index.py  # PRIMARY: Build index.jsonl from works/
+├── work_schema.py        # work.yaml schema definition and validation
+├── migrate_to_works.py   # Migrate sources/ → works/ structure
+├── build_index.py        # LEGACY: Build index from sources/*.pro
 ├── enrich_songs.py       # Enrich .pro files (provenance, chord normalization)
-├── build_index.py        # Build docs/data/index.jsonl from .pro files
 ├── tag_enrichment.py     # Tag enrichment (MusicBrainz + harmonic analysis)
 ├── query_artist_tags.py  # Optimized MusicBrainz artist tag queries
 ├── strum_machine.py      # Strum Machine API integration
@@ -51,14 +61,11 @@ scripts/lib/
 ## Quick Commands
 
 ```bash
-# Full pipeline: enrich + build index
+# Full pipeline: build index from works/
 ./scripts/bootstrap --quick
 
-# Enrich songs only
-uv run python scripts/lib/enrich_songs.py
-
-# Build index only (skip enrichment)
-./scripts/bootstrap --quick --skip-enrich
+# Build index with tag refresh (local only, requires MusicBrainz)
+./scripts/bootstrap --quick --refresh-tags
 
 # Add a song manually
 ./scripts/utility add-song /path/to/song.pro
@@ -121,9 +128,77 @@ Files listed in `sources/{source}/protected.txt` are skipped. These are human-co
 
 ---
 
-## build_index.py
+## build_works_index.py (PRIMARY)
 
-Generates `docs/data/index.jsonl` from all `.pro` files.
+Generates `docs/data/index.jsonl` from the `works/` directory.
+
+### What It Does
+
+1. Scans `works/*/work.yaml` for all works
+2. Reads work metadata (title, artist, composers, tags, parts)
+3. Reads lead sheet content from `lead-sheet.pro`
+4. Detects key and computes Nashville numbers
+5. Identifies tablature parts and includes their paths
+6. Outputs unified JSON index
+
+### Usage
+
+```bash
+uv run python scripts/lib/build_works_index.py           # Full build
+uv run python scripts/lib/build_works_index.py --no-tags # Skip tag enrichment
+```
+
+### Output Format
+
+```json
+{
+  "id": "blue-moon-of-kentucky",
+  "title": "Blue Moon of Kentucky",
+  "artist": "Patsy Cline",
+  "composers": ["Bill Monroe"],
+  "key": "C",
+  "tags": ["ClassicCountry", "JamFriendly"],
+  "content": "{meta: title...}[full ChordPro]",
+  "tablature_parts": [
+    {"type": "tablature", "instrument": "banjo", "path": "data/tabs/..."}
+  ]
+}
+```
+
+---
+
+## work_schema.py
+
+Defines the `work.yaml` schema and validation.
+
+### Work Schema
+
+```python
+@dataclass
+class Part:
+    type: str           # 'lead-sheet', 'tablature', 'abc-notation'
+    format: str         # 'chordpro', 'opentabformat', 'abc'
+    file: str           # Relative path to file
+    default: bool       # Is this the default part?
+    instrument: str     # Optional: 'banjo', 'fiddle', 'guitar'
+    provenance: dict    # Source info (source, source_file, imported_at)
+
+@dataclass
+class Work:
+    id: str             # Slug (e.g., 'blue-moon-of-kentucky')
+    title: str
+    artist: str
+    composers: list[str]
+    default_key: str
+    tags: list[str]
+    parts: list[Part]
+```
+
+---
+
+## build_index.py (LEGACY)
+
+Generates `docs/data/index.jsonl` from all `.pro` files in `sources/`.
 
 ### What It Does
 

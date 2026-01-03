@@ -1,0 +1,20 @@
+{
+  "prefixes": {
+    "artist:": "artist",
+    "a:": "artist",
+    "title:": "title",
+    "lyrics:": "lyrics",
+    "l:": "lyrics",
+    "composer:": "composer",
+    "writer:": "composer",
+    "key:": "key",
+    "k:": "key",
+    "chord:": "chord",
+    "c:": "chord",
+    "prog:": "prog",
+    "p:": "prog",
+    "tag:": "tag",
+    "t:": "tag"
+  },
+  "description": "Search query prefix mappings. Used by both JS frontend and Python CLI."
+}

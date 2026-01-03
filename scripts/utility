@@ -55,6 +55,13 @@ show_help() {
     echo "      Batch match all songs against Strum Machine and cache results"
     echo "      (requires STRUM_MACHINE_API_KEY env var)"
     echo ""
+    echo "  search <query>"
+    echo "      Search the song index from command line"
+    echo "      Examples:"
+    echo "        ./scripts/utility search \"artist:bill monroe prog:I-IV-V\""
+    echo "        ./scripts/utility search \"tag:bluegrass tag:jamfriendly\""
+    echo "        ./scripts/utility search \"artist:ralph stanley key:G\""
+    echo ""
 }
 
 case "$COMMAND" in
@@ -137,6 +144,19 @@ case "$COMMAND" in
         echo "(This will take ~30 minutes for 17k songs at 10 req/sec)"
         echo ""
         uv run python3 -m scripts.lib.strum_machine --batch
+        ;;
+    search)
+        if [ -z "$1" ]; then
+            echo "Error: search query required"
+            echo "Usage: ./scripts/utility search \"query\""
+            echo ""
+            echo "Examples:"
+            echo "  ./scripts/utility search \"artist:bill monroe prog:I-IV-V\""
+            echo "  ./scripts/utility search \"tag:bluegrass tag:jamfriendly -tag:classiccountry\""
+            echo "  ./scripts/utility search \"artist:ralph stanley key:G\""
+            exit 1
+        fi
+        uv run python3 scripts/lib/search_index.py "$@"
         ;;
     help|--help|-h|"")
         show_help
