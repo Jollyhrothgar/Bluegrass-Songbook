@@ -762,7 +762,7 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     }
 
     // Tags with voting and "add your own" option
-    const songTags = song.tags || {};
+    const songTags = song?.tags || {};
     const tagNames = Object.keys(songTags);
     const isLoggedIn = window.SupabaseAuth?.isLoggedIn?.() || false;
 
