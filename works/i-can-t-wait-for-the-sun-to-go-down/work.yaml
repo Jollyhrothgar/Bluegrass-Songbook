@@ -1,0 +1,17 @@
+id: i-can-t-wait-for-the-sun-to-go-down
+title: I Can't Wait For The Sun To Go Down
+artist: Faron Young
+composers:
+- Martha Carson, Chet Atkins, Sid Kessel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantwaitforthesuntogodownlyricschords.pro
+    imported_at: '2026-01-02'

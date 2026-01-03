@@ -1,0 +1,17 @@
+id: till-you-can-make-it-on-your-own
+title: Till You Can Make It On Your Own
+artist: Gene Watson
+composers:
+- Arthur Leo Owens and Johnny McRae
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillyoucanmakeitonyourownlyricschords.pro
+    imported_at: '2026-01-02'

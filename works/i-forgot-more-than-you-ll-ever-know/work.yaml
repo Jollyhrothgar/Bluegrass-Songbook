@@ -1,0 +1,17 @@
+id: i-forgot-more-than-you-ll-ever-know
+title: I Forgot More Than You'll Ever Know
+artist: Wanda Jackson
+composers:
+- Cecil Allen Null
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iforgotmorethanyoulleverknowlyricschords.pro
+    imported_at: '2026-01-02'

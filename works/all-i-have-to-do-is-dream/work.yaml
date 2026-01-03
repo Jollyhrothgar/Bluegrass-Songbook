@@ -1,0 +1,18 @@
+id: all-i-have-to-do-is-dream
+title: All I Have to Do Is Dream
+artist: the Everly Brothers
+composers:
+- Felice and Boudleaux Bryant
+default_key: C
+tags:
+- Pop
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allihavetodoisdreamlyricschords.pro
+    imported_at: '2026-01-02'

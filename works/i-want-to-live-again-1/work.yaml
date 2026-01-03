@@ -1,0 +1,17 @@
+id: i-want-to-live-again-1
+title: I Want To Live Again
+artist: Merle Haggard and Bonnie Owens
+composers:
+- Fuzzy Owen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttoliveagainlyricschords.pro
+    imported_at: '2026-01-02'

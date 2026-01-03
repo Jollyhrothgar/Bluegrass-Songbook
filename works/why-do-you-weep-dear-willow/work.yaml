@@ -1,0 +1,17 @@
+id: why-do-you-weep-dear-willow
+title: Why Do You Weep Dear Willow
+artist: Carl Story
+composers:
+- Gona Blankenship and Lynn Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydoyouweepdearwillowlyricschords.pro
+    imported_at: '2026-01-02'

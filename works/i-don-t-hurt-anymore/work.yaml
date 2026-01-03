@@ -1,0 +1,19 @@
+id: i-don-t-hurt-anymore
+title: I Don't Hurt Anymore
+artist: Hank Snow
+composers:
+- Don Robertson and Jack Rollins
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idonthurtanymorelyricschords.pro
+    imported_at: '2026-01-02'

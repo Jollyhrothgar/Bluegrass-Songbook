@@ -1,0 +1,17 @@
+id: one-by-one
+title: One by One
+artist: Kitty Wells/Red Foley
+composers:
+- Johnny Wright and Jack Anglin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onebyonelyricsandchords.pro
+    imported_at: '2026-01-02'

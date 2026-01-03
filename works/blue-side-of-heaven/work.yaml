@@ -1,0 +1,15 @@
+id: blue-side-of-heaven
+title: Blue Side Of Heaven
+artist: Alan Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluesideofheavenlyricschords.pro
+    imported_at: '2026-01-02'

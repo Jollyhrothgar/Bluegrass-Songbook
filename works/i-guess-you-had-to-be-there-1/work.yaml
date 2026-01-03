@@ -1,0 +1,17 @@
+id: i-guess-you-had-to-be-there-1
+title: I Guess You Had To Be There
+artist: Lorrie Morgan
+composers:
+- Jon Robbin and Barbara Lloyd
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iguessyouhadtobetherelyricschords.pro
+    imported_at: '2026-01-02'

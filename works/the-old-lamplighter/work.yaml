@@ -1,0 +1,15 @@
+id: the-old-lamplighter
+title: The Old Lamplighter
+artist: Jim Ed Brown
+composers:
+- Charles Tobias and Nat Simon
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldlamplighterlyricschords.pro
+    imported_at: '2026-01-02'

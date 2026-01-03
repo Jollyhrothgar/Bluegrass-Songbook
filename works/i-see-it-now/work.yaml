@@ -1,0 +1,17 @@
+id: i-see-it-now
+title: I See It Now
+artist: Tracy Lawrence
+composers:
+- Larry Boone, Paul Nelson, Woody Lee
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iseeitnowlyricschords.pro
+    imported_at: '2026-01-02'

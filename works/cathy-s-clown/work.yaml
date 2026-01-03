@@ -1,0 +1,17 @@
+id: cathy-s-clown
+title: Cathy's Clown
+artist: Everly Brothers
+composers:
+- Don Everly
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cathysclownlyricschords.pro
+    imported_at: '2026-01-02'

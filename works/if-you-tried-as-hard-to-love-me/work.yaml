@@ -1,0 +1,17 @@
+id: if-you-tried-as-hard-to-love-me
+title: If You Tried As Hard To Love Me
+artist: Carl Smith
+composers:
+- J.D. Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoutriedashardtolovemelyricschords.pro
+    imported_at: '2026-01-02'

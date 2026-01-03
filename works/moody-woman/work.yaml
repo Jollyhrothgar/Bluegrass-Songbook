@@ -1,0 +1,18 @@
+id: moody-woman
+title: Moody Woman
+artist: Charley Pride
+composers:
+- Theresa Bell, Jerry Butler, Kenneth Gamble
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moodywomanlyricschords.pro
+    imported_at: '2026-01-02'

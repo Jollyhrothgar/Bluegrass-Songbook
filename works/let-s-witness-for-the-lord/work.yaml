@@ -1,0 +1,15 @@
+id: let-s-witness-for-the-lord
+title: Let's Witness For The Lord
+artist: Freddie Hart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letswitnessforthelordlyricschords.pro
+    imported_at: '2026-01-02'

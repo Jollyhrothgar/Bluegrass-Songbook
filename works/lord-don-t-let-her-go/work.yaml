@@ -1,0 +1,15 @@
+id: lord-don-t-let-her-go
+title: Lord Don't Let Her Go
+artist: Boxcar Willie
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lorddontlethergolyricschords.pro
+    imported_at: '2026-01-02'

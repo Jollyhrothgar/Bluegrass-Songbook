@@ -1,0 +1,20 @@
+id: i-know-youre-married
+title: I Know You’re Married
+artist: Dolly Parton
+composers:
+- Don Reno and Mack Magaha
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowyouremarriedlyricschords.pro
+    imported_at: '2026-01-02'

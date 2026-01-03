@@ -1,0 +1,15 @@
+id: it-s-the-little-things
+title: It's The Little Things
+artist: Sonny James
+composers:
+- Arlie Duff
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsthelittlethingslyricschords.pro
+    imported_at: '2026-01-02'

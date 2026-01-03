@@ -1,0 +1,17 @@
+id: i-know-you-dont-love-me-anymore
+title: I Know You Don’t Love Me Anymore
+artist: Wilburn Brothers
+composers:
+- Doyle Wilburn and Teddy Wilburn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowyoudontlovemeanymorelyricschords.pro
+    imported_at: '2026-01-02'

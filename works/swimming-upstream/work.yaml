@@ -1,0 +1,17 @@
+id: swimming-upstream
+title: Swimming Upstream
+artist: Ricky Van Shelton
+composers:
+- Gary Nicholson and Bucky Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: swimmingupstreamlyricschords.pro
+    imported_at: '2026-01-02'

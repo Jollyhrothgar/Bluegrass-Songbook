@@ -1,0 +1,17 @@
+id: you-go-your-way-and-i-ll-go-crazy
+title: You Go Your Way (And I'll Go Crazy)
+artist: Ricky Van Shelton
+composers:
+- Bucky Jones
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yougoyourwayandillgocrazylyricschords.pro
+    imported_at: '2026-01-02'

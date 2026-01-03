@@ -1,0 +1,17 @@
+id: if-the-devil-danced-in-empty-pockets
+title: If The Devil Danced In Empty Pockets
+artist: Joe Diffie
+composers:
+- Kim Williams and Ken Spooner
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifthedevildancedinemptypocketslyricschords.pro
+    imported_at: '2026-01-02'

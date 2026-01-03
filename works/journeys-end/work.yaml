@@ -1,0 +1,17 @@
+id: journeys-end
+title: Journey’s End
+artist: J.D. Crowe
+composers:
+- Pete Roberts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: journeysendlyricsandchords.pro
+    imported_at: '2026-01-02'

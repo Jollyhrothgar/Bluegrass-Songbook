@@ -1,0 +1,17 @@
+id: when-you-go
+title: When You Go
+artist: Tracy Byrd
+composers:
+- Michael Heeney, Casey Beathard, Marla Cannon
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyougolyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: i-wonder-if-you-told-her-about-me
+title: I Wonder If You Told Her About Me
+artist: Conway Twitty
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderifyoutoldheraboutmelyricschords.pro
+    imported_at: '2026-01-02'

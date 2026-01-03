@@ -1,0 +1,17 @@
+id: heart-of-the-matter
+title: Heart Of The Matter
+artist: Cal Smith
+composers:
+- Don Schlitz and Jim Rushing
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartofthematterlyricschords.pro
+    imported_at: '2026-01-02'

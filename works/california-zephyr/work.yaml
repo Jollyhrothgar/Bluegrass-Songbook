@@ -1,0 +1,15 @@
+id: california-zephyr
+title: California Zephyr
+artist: Hank Williams Sr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: californiazephyrlyricschords.pro
+    imported_at: '2026-01-02'

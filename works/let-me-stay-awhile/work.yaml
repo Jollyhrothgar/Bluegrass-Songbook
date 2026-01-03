@@ -1,0 +1,19 @@
+id: let-me-stay-awhile
+title: Let Me Stay Awhile
+artist: Waylon Jennings
+composers:
+- Mickey Newbury
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmestayawhilelyricschords.pro
+    imported_at: '2026-01-02'

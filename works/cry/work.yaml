@@ -1,0 +1,18 @@
+id: cry
+title: Cry
+artist: Willie Nelson
+composers:
+- Churchill Koleman
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crylyricsandchords.pro
+    imported_at: '2026-01-02'

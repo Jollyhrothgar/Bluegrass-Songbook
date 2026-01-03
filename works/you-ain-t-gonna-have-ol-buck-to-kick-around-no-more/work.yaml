@@ -1,0 +1,15 @@
+id: you-ain-t-gonna-have-ol-buck-to-kick-around-no-more
+title: You Ain't Gonna Have Ol' Buck To Kick Around No More
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youaintgonnahaveolbucktokickaroundnomorelyricschords.pro
+    imported_at: '2026-01-02'

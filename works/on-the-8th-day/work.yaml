@@ -1,0 +1,15 @@
+id: on-the-8th-day
+title: On The 8th Day
+artist: Daniel O'Donnell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onthe8thdaylyricschords.pro
+    imported_at: '2026-01-02'

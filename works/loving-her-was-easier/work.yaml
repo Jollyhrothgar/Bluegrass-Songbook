@@ -1,0 +1,17 @@
+id: loving-her-was-easier
+title: Loving Her Was Easier
+artist: Bobby Bare
+composers:
+- Kris Kristofferson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovingherwaseasierlyricschords.pro
+    imported_at: '2026-01-02'

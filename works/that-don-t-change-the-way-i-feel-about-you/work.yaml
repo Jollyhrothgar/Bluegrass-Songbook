@@ -1,0 +1,18 @@
+id: that-don-t-change-the-way-i-feel-about-you
+title: That Don't Change The Way I Feel About You
+artist: George Strait
+composers:
+- and recorded by George Strait
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatdontchangethewayifeelaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

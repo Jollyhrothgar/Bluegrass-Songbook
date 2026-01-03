@@ -1,0 +1,17 @@
+id: i-wanna-be-there-when-the-lovin-starts
+title: I Wanna Be There When The Lovin' Starts
+artist: Mel Street
+composers:
+- Curly Putman, Sonny Throckmorton, Don Cook
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwannabetherewhenthelovinstartslyricschords.pro
+    imported_at: '2026-01-02'

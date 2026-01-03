@@ -1,0 +1,17 @@
+id: another-broken-heart
+title: Another Broken Heart
+artist: Bill Clifton
+composers:
+- Bill Clifton and Buddy Dee
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anotherbrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

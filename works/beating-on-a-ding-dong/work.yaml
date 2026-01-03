@@ -1,0 +1,17 @@
+id: beating-on-a-ding-dong
+title: Beating On A Ding Dong
+artist: Jim Reeves
+composers:
+- Bob Shelton and Idell Shelton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beatingonadingdonglyricschords.pro
+    imported_at: '2026-01-02'

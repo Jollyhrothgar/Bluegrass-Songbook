@@ -1,0 +1,17 @@
+id: this-has-got-to-last
+title: This Has Got To Last
+artist: Johnny Duncan
+composers:
+- Ben Peters
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thishasgottolastlyricschords.pro
+    imported_at: '2026-01-02'

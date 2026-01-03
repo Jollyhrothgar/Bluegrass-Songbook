@@ -1,0 +1,17 @@
+id: i-m-a-big-hurt-now
+title: I'm A Big Hurt Now
+artist: Freddie Hart
+composers:
+- Larry Lee
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imabighurtnowlyricschords.pro
+    imported_at: '2026-01-02'

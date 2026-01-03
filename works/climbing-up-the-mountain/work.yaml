@@ -1,0 +1,17 @@
+id: climbing-up-the-mountain
+title: Climbing Up The Mountain
+artist: Don Gibson
+composers:
+- Mosie Lister
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: climbingupthemountainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: take-back-it-s-over
+title: Take Back It's Over
+artist: Johnny Rodriguez
+composers:
+- Larry Gatlin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takebackitsoverlyricschords.pro
+    imported_at: '2026-01-02'

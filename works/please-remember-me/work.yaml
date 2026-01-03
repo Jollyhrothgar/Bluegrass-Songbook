@@ -1,0 +1,15 @@
+id: please-remember-me
+title: Please Remember Me
+artist: Johnny Duncan
+composers:
+- Hank Mills
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleaseremembermelyricschords.pro
+    imported_at: '2026-01-02'

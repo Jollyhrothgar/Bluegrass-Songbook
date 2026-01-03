@@ -1,0 +1,17 @@
+id: with-christmas-near
+title: With Christmas Near
+artist: Ray Price
+composers:
+- Mel W. Holt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withChristmasnearlyricschords.pro
+    imported_at: '2026-01-02'

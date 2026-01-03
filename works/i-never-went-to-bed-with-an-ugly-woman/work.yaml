@@ -1,0 +1,17 @@
+id: i-never-went-to-bed-with-an-ugly-woman
+title: I Never Went To Bed With An Ugly Woman
+artist: Bobby Bare
+composers:
+- Royal C. Bannon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineverwenttobedwithanuglywomanlyricschords.pro
+    imported_at: '2026-01-02'

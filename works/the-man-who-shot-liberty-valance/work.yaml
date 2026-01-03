@@ -1,0 +1,18 @@
+id: the-man-who-shot-liberty-valance
+title: The Man Who Shot Liberty Valance
+artist: Gene Pitney
+composers:
+- Burt F. Bacharach and Hal David
+default_key: Am
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themanwhoshotlibertyvalancelyricschords.pro
+    imported_at: '2026-01-02'

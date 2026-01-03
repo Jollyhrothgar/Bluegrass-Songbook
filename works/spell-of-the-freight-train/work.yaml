@@ -1,0 +1,17 @@
+id: spell-of-the-freight-train
+title: Spell Of The Freight Train
+artist: Charlie Pride
+composers:
+- Jack Clement
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: spellofthefreighttrainlyricschords.pro
+    imported_at: '2026-01-02'

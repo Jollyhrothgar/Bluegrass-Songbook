@@ -1,0 +1,16 @@
+id: when-god-calls-his-children-home
+title: When God Calls His Children Home
+artist: Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenGodcallshischildrenhomelyricschords.pro
+    imported_at: '2026-01-02'

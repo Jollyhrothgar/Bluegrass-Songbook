@@ -1,0 +1,17 @@
+id: never-again-will-i-knock-on-your-door
+title: Never Again Will I Knock On Your Door
+artist: Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: neveragainwilliknockonyourdoorlyricschords.pro
+    imported_at: '2026-01-02'

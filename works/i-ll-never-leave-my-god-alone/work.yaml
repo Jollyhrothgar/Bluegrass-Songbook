@@ -1,0 +1,17 @@
+id: i-ll-never-leave-my-god-alone
+title: I'll Never Leave My God Alone
+artist: Wilburn Brothers
+composers:
+- Lorene Mann
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverleavemyGodalonelyricschords.pro
+    imported_at: '2026-01-02'

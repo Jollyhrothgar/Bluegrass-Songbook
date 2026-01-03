@@ -1,0 +1,18 @@
+id: every-time-it-rains-lord-don-t-it-pour
+title: Every Time It Rains (Lord Don't It Pour)
+artist: George Strait
+composers:
+- Charlie Craig and Keith Stegall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everytimeitrainslorddontitpourlyricschords.pro
+    imported_at: '2026-01-02'

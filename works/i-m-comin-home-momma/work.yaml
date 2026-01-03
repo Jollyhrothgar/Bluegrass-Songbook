@@ -1,0 +1,17 @@
+id: i-m-comin-home-momma
+title: I'm Comin' Home Momma
+artist: Wilburn Brothers
+composers:
+- Johnny Russell and Voni Morrison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imcominhomemommalyricschords.pro
+    imported_at: '2026-01-02'

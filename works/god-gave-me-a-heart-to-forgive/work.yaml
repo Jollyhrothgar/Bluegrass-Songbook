@@ -1,0 +1,19 @@
+id: god-gave-me-a-heart-to-forgive
+title: God Gave Me A Heart To Forgive
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Barbara Cummings
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godgavemeahearttoforgivelyricschords.pro
+    imported_at: '2026-01-02'

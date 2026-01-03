@@ -1,0 +1,19 @@
+id: if-you-re-not-gone-too-long
+title: If You're Not Gone Too Long
+artist: Loretta Lynn
+composers:
+- Wanda Ballman
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyourenotgonetoolonglyricschords.pro
+    imported_at: '2026-01-02'

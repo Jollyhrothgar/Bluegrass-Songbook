@@ -1,0 +1,18 @@
+id: its-you-i-love
+title: It’s You I Love
+artist: Fats Domino
+composers:
+- Dave Bartholomew and Fats Domino
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsyouilovelyricschords.pro
+    imported_at: '2026-01-02'

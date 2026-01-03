@@ -1,0 +1,17 @@
+id: my-heart-s-like-a-welcome-mat
+title: My Heart's Like A Welcome Mat
+artist: Jim Reeves
+composers:
+- Al Courtney, Macy Lela Henry, Jim Reeves
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartslikeawelcomematlyricschords.pro
+    imported_at: '2026-01-02'

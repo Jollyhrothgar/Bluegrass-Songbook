@@ -1,0 +1,19 @@
+id: do-i-worry-yes-i-do
+title: Do I Worry Yes I Do
+artist: Brenda Lee
+composers:
+- Jerry Lordan
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doiworryyesidolyricschords.pro
+    imported_at: '2026-01-02'

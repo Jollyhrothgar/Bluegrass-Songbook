@@ -1,0 +1,15 @@
+id: getting-used-to-being-loved-again
+title: Getting Used To Being Loved Again
+artist: Gene Watson
+composers:
+- Gene Dobbins and Glenn Ray
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gettingusedtobeinglovedagainlyricschords.pro
+    imported_at: '2026-01-02'

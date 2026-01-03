@@ -1,0 +1,17 @@
+id: moonlight-on-the-colorado
+title: Moonlight On The Colorado
+artist: Slim Whitman
+composers:
+- Robert A. King and Billy Moll
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moonlightonthecoloradolyricschords.pro
+    imported_at: '2026-01-02'

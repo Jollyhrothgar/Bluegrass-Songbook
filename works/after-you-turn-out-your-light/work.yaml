@@ -1,0 +1,17 @@
+id: after-you-turn-out-your-light
+title: After You Turn Out Your Light
+artist: Roy Drusky
+composers:
+- Roy Drusky and Bill Brock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afteryouturnoutyourlightlyricschords.pro
+    imported_at: '2026-01-02'

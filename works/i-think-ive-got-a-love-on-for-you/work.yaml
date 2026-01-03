@@ -1,0 +1,17 @@
+id: i-think-ive-got-a-love-on-for-you
+title: I Think I’ve Got A Love On For You
+artist: Moe Bandy
+composers:
+- Dallas Frazier and Larry Lee
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithinkivegotaloveonforyoulyricschords.pro
+    imported_at: '2026-01-02'

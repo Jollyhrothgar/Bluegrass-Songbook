@@ -1,0 +1,15 @@
+id: class-of-57
+title: Class Of '57
+artist: Statler Brothers
+composers:
+- Harold and Don Reid
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: classof57lyricschords.pro
+    imported_at: '2026-01-02'

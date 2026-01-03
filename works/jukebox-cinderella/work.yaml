@@ -1,0 +1,17 @@
+id: jukebox-cinderella
+title: Jukebox Cinderella
+artist: Johnny Duncan
+composers:
+- Jim Zerface and Bill Zerface
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jukeboxcinderellalyricschords.pro
+    imported_at: '2026-01-02'

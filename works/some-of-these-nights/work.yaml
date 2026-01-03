@@ -1,0 +1,17 @@
+id: some-of-these-nights
+title: Some Of These Nights
+artist: Hawkshaw Hawkins
+composers:
+- Hawkshaw Hawkins and Dolores Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someofthesenightslyricschords.pro
+    imported_at: '2026-01-02'

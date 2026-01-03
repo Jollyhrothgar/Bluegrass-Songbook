@@ -1,0 +1,17 @@
+id: i-m-so-in-love-with-you
+title: I'm So In Love With You
+artist: Wilburn Brothers
+composers:
+- Sonny James and John Skye
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsoinlovewithyoulyricsandchords.pro
+    imported_at: '2026-01-02'

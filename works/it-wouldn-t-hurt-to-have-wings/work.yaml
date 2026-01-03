@@ -1,0 +1,18 @@
+id: it-wouldn-t-hurt-to-have-wings
+title: It Wouldn't Hurt To Have Wings
+artist: Mark Chesnutt
+composers:
+- Jerry Foster, Ronny LaVoie, Johnny Morris
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itwouldnthurttohavewingslyricschords.pro
+    imported_at: '2026-01-02'

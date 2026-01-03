@@ -1,0 +1,17 @@
+id: by-the-hands-of-god
+title: By The Hands Of God
+artist: Carl Story
+composers:
+- E.C. McCarty
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bythehandsofGodlyricschords.pro
+    imported_at: '2026-01-02'

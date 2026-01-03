@@ -1,0 +1,18 @@
+id: love-is-where-you-find-it
+title: Love Is Where You Find It
+artist: Hank Thompson
+composers:
+- Alvin Stanley, Red Mansel and Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveiswhereyoufinditlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-bible-trail
+title: The Bible Trail
+artist: Jimmie Davis
+composers:
+- Jimmie Davis and Ruby Moody
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebibletraillyricschords.pro
+    imported_at: '2026-01-02'

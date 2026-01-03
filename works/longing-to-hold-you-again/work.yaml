@@ -1,0 +1,18 @@
+id: longing-to-hold-you-again
+title: Longing To Hold You Again
+artist: Tammy Wynette
+composers:
+- Don Robertson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longingtoholdyouagainlyricschords.pro
+    imported_at: '2026-01-02'

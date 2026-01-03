@@ -1,0 +1,17 @@
+id: i-won-t-have-to-worry-anymore
+title: I Won't Have To Worry Anymore
+artist: Doyle Lawson
+composers:
+- James Goss and Jimmy Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonthavetoworryanymorelyricschords.pro
+    imported_at: '2026-01-02'

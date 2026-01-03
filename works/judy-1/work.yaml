@@ -1,0 +1,21 @@
+id: judy-1
+title: Judy
+artist: Elvis Presley
+composers:
+- Teddy Redell
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: judylyricschords.pro
+    imported_at: '2026-01-02'

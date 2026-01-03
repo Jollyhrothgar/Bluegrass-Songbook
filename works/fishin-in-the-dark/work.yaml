@@ -1,0 +1,18 @@
+id: fishin-in-the-dark
+title: Fishin' In The Dark
+artist: Garth Brooks
+composers:
+- Wendy Waldman and Jim Photoglo
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fishininthedarklyricschords.pro
+    imported_at: '2026-01-02'

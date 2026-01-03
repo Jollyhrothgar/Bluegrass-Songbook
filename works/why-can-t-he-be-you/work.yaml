@@ -1,0 +1,19 @@
+id: why-can-t-he-be-you
+title: Why Can't He Be You
+artist: Patsy Cline
+composers:
+- Hank Cochran
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whycanthebeyoulyricschords.pro
+    imported_at: '2026-01-02'

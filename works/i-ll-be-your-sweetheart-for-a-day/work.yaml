@@ -1,0 +1,16 @@
+id: i-ll-be-your-sweetheart-for-a-day
+title: I'll Be Your Sweetheart For A Day
+artist: Hank Thompson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbeyoursweetheartforadaylyricschords.pro
+    imported_at: '2026-01-02'

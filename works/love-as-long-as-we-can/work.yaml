@@ -1,0 +1,15 @@
+id: love-as-long-as-we-can
+title: Love As Long As We Can
+artist: Dottie West
+composers:
+- Dottie West, Bill Davis, Byron Metcalf
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveaslongaswecanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: what-s-fort-worth
+title: What's Fort Worth
+artist: Bob Wills
+composers:
+- Larry Lee
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatsfortworthlyricschords.pro
+    imported_at: '2026-01-02'

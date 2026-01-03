@@ -1,0 +1,17 @@
+id: through-the-years-1
+title: Through The Years
+artist: Kenny Rogers
+composers:
+- Marty Panzer and Stephen Dorff
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: throughtheyearslyricschords.pro
+    imported_at: '2026-01-02'

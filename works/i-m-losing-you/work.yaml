@@ -1,0 +1,17 @@
+id: i-m-losing-you
+title: I'm Losing You
+artist: Doug Stone
+composers:
+- Monty Criswell and Tim Schoepf
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlosingyoulyricschords.pro
+    imported_at: '2026-01-02'

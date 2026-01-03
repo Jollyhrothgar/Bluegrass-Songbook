@@ -1,0 +1,17 @@
+id: hangover-tavern
+title: Hangover Tavern
+artist: Hank Thompson
+composers:
+- Johnny Lowe, Mary Lowe, Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hangovertavernlyricschords.pro
+    imported_at: '2026-01-02'

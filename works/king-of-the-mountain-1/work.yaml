@@ -1,0 +1,17 @@
+id: king-of-the-mountain-1
+title: King Of The Mountain
+artist: George Jones
+composers:
+- Larry Boone and Paul Nelson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kingofthemountainlyricschords.pro
+    imported_at: '2026-01-02'

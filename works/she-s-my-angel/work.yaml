@@ -1,0 +1,17 @@
+id: she-s-my-angel
+title: She's My Angel
+artist: Billy Crash Craddock
+composers:
+- Ron Chancey and Jim Sahnger
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesmyangellyricschords.pro
+    imported_at: '2026-01-02'

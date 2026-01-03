@@ -1,0 +1,20 @@
+id: flip-flop-and-fly
+title: Flip Flop And Fly
+artist: Jerry Lee Lewis
+composers:
+- Charles Calhoun and Lou Turner
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: flipflopandflylyricschords.pro
+    imported_at: '2026-01-02'

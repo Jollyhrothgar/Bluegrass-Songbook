@@ -1,0 +1,19 @@
+id: you-may-see-me-walking
+title: You May See Me Walking
+artist: Ricky Skaggs
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmayseemewalkinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-barely-hanging-on-to-me
+title: I'm Barely Hanging On To Me
+artist: Johnny Paycheck
+composers:
+- Joe Poovey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imbarelyhangingontomelyricschords.pro
+    imported_at: '2026-01-02'

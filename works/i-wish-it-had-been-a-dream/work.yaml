@@ -1,0 +1,17 @@
+id: i-wish-it-had-been-a-dream
+title: I Wish It Had Been A Dream
+artist: Don Gibson
+composers:
+- Charlie Louvin and Ira Louvin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishithadbeenadreamlyricsandchords.pro
+    imported_at: '2026-01-02'

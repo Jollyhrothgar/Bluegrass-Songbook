@@ -1,0 +1,15 @@
+id: i-ll-give-you-all-my-love-tonight
+title: I'll Give You All My Love Tonight
+artist: The Bellamy Brothers
+composers:
+- David Bellamy, Billy Crain, Waldemar Dentz
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illgiveyouallmylovetonightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: have-you-found-it-yet
+title: Have You Found It Yet
+artist: Jeannie Seely
+composers:
+- Hank Cochran and Red Lane
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveyoufoundityetlyricschords.pro
+    imported_at: '2026-01-02'

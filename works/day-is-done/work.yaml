@@ -1,0 +1,15 @@
+id: day-is-done
+title: Day is Done
+artist: Peter, Paul and Mary
+composers:
+- Peter Yarrow
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dayisdonelyricschords.pro
+    imported_at: '2026-01-02'

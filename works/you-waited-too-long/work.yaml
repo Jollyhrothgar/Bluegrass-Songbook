@@ -1,0 +1,17 @@
+id: you-waited-too-long
+title: You waited too long
+artist: Roy Rogers
+composers:
+- Fred Rose, Gene Autry, Ray Whitley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwaitedtoolonglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-thank-god-for-you
+title: I Thank God For You
+artist: Bill Anderson
+composers:
+- Bill Anderson and Mike Cloer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithankGodforyoulyricschords.pro
+    imported_at: '2026-01-02'

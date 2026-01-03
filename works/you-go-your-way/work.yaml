@@ -1,0 +1,17 @@
+id: you-go-your-way
+title: You Go Your Way
+artist: Alan Jackson
+composers:
+- Troy Jones, David Lee, Tony Lane
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yougoyourwaylyricschords.pro
+    imported_at: '2026-01-02'

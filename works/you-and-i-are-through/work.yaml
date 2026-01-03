@@ -1,0 +1,18 @@
+id: you-and-i-are-through
+title: You And I Are Through
+artist: Buddy Holly
+composers:
+- Bob Montgomery
+default_key: D
+tags:
+- Rockabilly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youandiarethroughlyricschords.pro
+    imported_at: '2026-01-02'

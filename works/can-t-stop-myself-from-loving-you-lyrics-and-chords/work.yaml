@@ -1,0 +1,18 @@
+id: can-t-stop-myself-from-loving-you-lyrics-and-chords
+title: Can't Stop Myself From Loving You Lyrics and Chords
+artist: Patty Loveless
+composers:
+- Kostas and Dean Folkword
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantstopmyselffromlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

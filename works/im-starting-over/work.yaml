@@ -1,0 +1,17 @@
+id: im-starting-over
+title: I’m Starting Over
+artist: Ricky Van Shelton
+composers:
+- Kix Brooks, Mark Sherrill, John W. Ryles
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imstartingoverlyricschords.pro
+    imported_at: '2026-01-02'

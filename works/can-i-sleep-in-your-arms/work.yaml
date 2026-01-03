@@ -1,0 +1,19 @@
+id: can-i-sleep-in-your-arms
+title: Can I Sleep in Your Arms
+artist: Willie Nelson
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canisleepinyourarmslyricschords.pro
+    imported_at: '2026-01-02'

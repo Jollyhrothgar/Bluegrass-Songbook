@@ -1,0 +1,17 @@
+id: i-gotta-get-drunk
+title: I Gotta Get Drunk
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igottagetdrunklyricschords.pro
+    imported_at: '2026-01-02'

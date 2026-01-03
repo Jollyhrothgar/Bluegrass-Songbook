@@ -1,0 +1,17 @@
+id: i-am-a-pilgrim
+title: I Am A Pilgrim
+artist: Slim Whitman
+composers:
+- Merle Travis
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iamapilgrimlyricsandchords.pro
+    imported_at: '2026-01-02'

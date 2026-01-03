@@ -1,0 +1,16 @@
+id: dusty-s-hornpipe
+title: Dusty's Hornpipe
+artist: Traditional
+composers:
+- Biography:Kenny Baker
+tags:
+- Instrumental
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

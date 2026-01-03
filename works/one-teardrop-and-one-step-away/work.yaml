@@ -1,0 +1,17 @@
+id: one-teardrop-and-one-step-away
+title: One Teardrop and One Step Away
+artist: Don Reno and Red Smiley
+composers:
+- Hender Saul
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneteardropandonestepawaylyricschords.pro
+    imported_at: '2026-01-02'

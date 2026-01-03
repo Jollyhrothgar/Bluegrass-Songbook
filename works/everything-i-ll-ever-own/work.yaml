@@ -1,0 +1,17 @@
+id: everything-i-ll-ever-own
+title: Everything I'll Ever Own
+artist: Reba McEntire
+composers:
+- Bob Morrison and Johnny McRae
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingilleverownlyricschords.pro
+    imported_at: '2026-01-02'

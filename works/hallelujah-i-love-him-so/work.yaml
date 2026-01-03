@@ -1,0 +1,18 @@
+id: hallelujah-i-love-him-so
+title: Hallelujah I Love Him So
+artist: Brenda Lee
+composers:
+- Ray Charles
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hallelujahilovehimsolyricschords.pro
+    imported_at: '2026-01-02'

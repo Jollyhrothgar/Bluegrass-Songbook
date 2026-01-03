@@ -1,0 +1,16 @@
+id: honey-you-don-t-know-my-mind
+title: Honey You Don't Know My Mind
+artist: Jimmy Martin
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honeyyoudontknowmymindlyricschords.pro
+    imported_at: '2026-01-02'

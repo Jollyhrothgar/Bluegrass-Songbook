@@ -1,0 +1,18 @@
+id: deep-elem-blues
+title: Deep Elem Blues
+artist: Hank Thompson
+composers:
+- Bob Attlesey and Joe Attlesey
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: deepelemblueslyricschords.pro
+    imported_at: '2026-01-02'

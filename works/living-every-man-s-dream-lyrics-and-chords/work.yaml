@@ -1,0 +1,15 @@
+id: living-every-man-s-dream-lyrics-and-chords
+title: Living Every Man's Dream Lyrics and Chords
+artist: Ray Price
+composers:
+- Jim Weatherly
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: livingeverymansdreamlyricschords.pro
+    imported_at: '2026-01-02'

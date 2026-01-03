@@ -1,0 +1,17 @@
+id: crazy-heart
+title: Crazy Heart
+artist: The Lonesome River Band
+composers:
+- Sharon Rose Higgins and Billy Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crazyheartlyricsandchords.pro
+    imported_at: '2026-01-02'

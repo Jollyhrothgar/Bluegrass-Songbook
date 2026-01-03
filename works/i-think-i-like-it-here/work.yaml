@@ -1,0 +1,17 @@
+id: i-think-i-like-it-here
+title: I Think I Like It Here
+artist: Ricky Van Shelton
+composers:
+- Chris Waters, Tom Shapiro, James Yeary
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithinkilikeitherelyricschords.pro
+    imported_at: '2026-01-02'

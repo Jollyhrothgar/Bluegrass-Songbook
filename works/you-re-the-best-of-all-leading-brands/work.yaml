@@ -1,0 +1,17 @@
+id: you-re-the-best-of-all-leading-brands
+title: You're The Best Of All Leading Brands
+artist: Lester Flatt
+composers:
+- Tony Slater
+default_key: C
+tags:
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethebestofallleadingbrandslyricschords.pro
+    imported_at: '2026-01-02'

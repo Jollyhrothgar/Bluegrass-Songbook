@@ -1,0 +1,17 @@
+id: suppose-tonight-would-be-our-last
+title: Suppose Tonight Would Be Our Last
+artist: Melba Montgomery
+composers:
+- Melba Montgomery and George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: supposetonightwouldbeourlastlyricschords.pro
+    imported_at: '2026-01-02'

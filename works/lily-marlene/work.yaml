@@ -1,0 +1,19 @@
+id: lily-marlene
+title: Lily Marlene
+artist: Hank Snow
+composers:
+- Hans Leip and Norbert Schulze
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lilymarlenelyricschords.pro
+    imported_at: '2026-01-02'

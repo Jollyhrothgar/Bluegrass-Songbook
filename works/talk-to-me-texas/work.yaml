@@ -1,0 +1,17 @@
+id: talk-to-me-texas
+title: Talk To Me Texas
+artist: Keith Whitley
+composers:
+- Curly Putman, Don Cook, Bucky Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: talktometexaslyricschords.pro
+    imported_at: '2026-01-02'

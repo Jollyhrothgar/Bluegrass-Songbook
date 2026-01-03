@@ -1,0 +1,15 @@
+id: you-turn-me-on-1
+title: You Turn Me On
+artist: George Morgan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youturnmeonlyricschords.pro
+    imported_at: '2026-01-02'

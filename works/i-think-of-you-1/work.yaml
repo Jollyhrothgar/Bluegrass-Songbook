@@ -1,0 +1,15 @@
+id: i-think-of-you-1
+title: I Think of You
+artist: Ronnie Reno
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithinkofyoulyricschords.pro
+    imported_at: '2026-01-02'

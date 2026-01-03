@@ -1,0 +1,15 @@
+id: my-way-of-life
+title: My Way Of Life
+artist: Jimmy Dean
+composers:
+- Sonny Curtis
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mywayoflifelyricschords.pro
+    imported_at: '2026-01-02'

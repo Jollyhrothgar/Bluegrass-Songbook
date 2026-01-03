@@ -1,0 +1,18 @@
+id: you-re-the-one
+title: You're The One
+artist: Buddy Holly
+composers:
+- Slim Corbin, Buddy Holly, Waylon Jennings
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheonelyrics-chords.pro
+    imported_at: '2026-01-02'

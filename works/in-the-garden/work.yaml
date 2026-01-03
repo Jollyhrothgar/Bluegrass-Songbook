@@ -1,0 +1,18 @@
+id: in-the-garden
+title: In the Garden
+artist: Loretta Lynn
+composers:
+- Austin C. Miles and Robert Hebble
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthegardenlyricschords.pro
+    imported_at: '2026-01-02'

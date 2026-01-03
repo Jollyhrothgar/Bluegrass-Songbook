@@ -1,0 +1,16 @@
+id: over-and-over-again-1
+title: Over And Over Again
+artist: Tom T. Hall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: overandoveragainlyricschords.pro
+    imported_at: '2026-01-02'

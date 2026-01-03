@@ -1,0 +1,17 @@
+id: you-don-t-knock
+title: You Don't Knock
+artist: Don Gibson
+composers:
+- Wesley Westbrook and Cedar Walton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontknocklyricschords.pro
+    imported_at: '2026-01-02'

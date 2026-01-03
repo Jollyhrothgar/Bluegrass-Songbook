@@ -1,0 +1,17 @@
+id: favorite-fool-of-all
+title: Favorite Fool Of All
+artist: Vern Gosdin
+composers:
+- Rex Gosdin and V.L. Haywood
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: favoritefoolofalllyricschords.pro
+    imported_at: '2026-01-02'

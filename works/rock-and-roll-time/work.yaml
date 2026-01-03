@@ -1,0 +1,20 @@
+id: rock-and-roll-time
+title: Rock And Roll Time
+artist: Kris Kristofferson
+composers:
+- Kris Kristofferson, Roger McGuinn, Bob Neuwirth
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockandrolltimelyricschords.pro
+    imported_at: '2026-01-02'

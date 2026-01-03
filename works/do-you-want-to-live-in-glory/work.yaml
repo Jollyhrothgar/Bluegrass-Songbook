@@ -1,0 +1,16 @@
+id: do-you-want-to-live-in-glory
+title: Do You Want To Live In Glory
+artist: Lonesome River Band
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doyouwanttoliveinglorylyricschords.pro
+    imported_at: '2026-01-02'

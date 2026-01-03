@@ -1,0 +1,17 @@
+id: houston-dallas-or-san-antone
+title: Houston Dallas Or San Antone
+artist: David Allan Coe
+default_key: G
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: houstondallasorsanantonelyricschords.pro
+    imported_at: '2026-01-02'

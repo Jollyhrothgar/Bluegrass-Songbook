@@ -1,0 +1,17 @@
+id: funny-what-a-pair-of-fools-will-do
+title: Funny What A Pair Of Fools Will Do
+artist: Carl Belew
+composers:
+- Carl Belew and Van Givens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: funnywhatapairoffoolswilldolyricschords.pro
+    imported_at: '2026-01-02'

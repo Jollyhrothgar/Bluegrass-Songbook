@@ -1,0 +1,16 @@
+id: shadows-of-the-old-bayou
+title: Shadows Of The Old Bayou
+artist: Johnny Horton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shadowsoftheoldbayoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-d-rather-stay-home
+title: I'd Rather Stay Home
+artist: Kitty Wells
+composers:
+- Felice Byrant and Boudleaux Byrant
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idratherstayhomelyricschords.pro
+    imported_at: '2026-01-02'

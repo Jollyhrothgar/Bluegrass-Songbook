@@ -1,0 +1,19 @@
+id: wurlitzer-prize-i-dont-want-to-get-over-you
+title: Wurlitzer Prize (I Don’t Want To Get Over You)
+artist: Waylon Jennings
+composers:
+- Chips Moman and Bobby Emmons
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wurlitzerprizelyricschords.pro
+    imported_at: '2026-01-02'

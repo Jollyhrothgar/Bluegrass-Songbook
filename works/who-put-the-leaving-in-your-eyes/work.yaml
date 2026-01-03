@@ -1,0 +1,17 @@
+id: who-put-the-leaving-in-your-eyes
+title: Who Put The Leaving In Your Eyes
+artist: Dottie West
+composers:
+- Jim Owen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoputtheleavinginyoureyeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: this-land-the-lord-and-me
+title: This Land The Lord And Me
+artist: Bill Anderson
+composers:
+- Jerry Chesnutt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thislandthelordandmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: you-ve-turned-to-a-stranger
+title: You've Turned to a Stranger
+artist: Wanda Jackson
+composers:
+- Jack Rhodes and Freddy Franks
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youveturnedtoastrangerlyricschords.pro
+    imported_at: '2026-01-02'

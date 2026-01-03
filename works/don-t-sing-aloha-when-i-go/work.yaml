@@ -1,0 +1,18 @@
+id: don-t-sing-aloha-when-i-go
+title: Don't Sing Aloha When I Go
+artist: Marty Robbins
+composers:
+- Warren Smith and Buddy Black
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontsingalohawhenigolyricschords.pro
+    imported_at: '2026-01-02'

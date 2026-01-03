@@ -1,0 +1,17 @@
+id: perfect-place
+title: Perfect Place
+artist: Tony Booth
+composers:
+- Glenn Sutton and Billy Troy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: perfectplacelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: all-the-beer-and-all-my-friends-are-gone
+title: All The Beer And All My Friends Are Gone
+artist: Moe Bandy
+composers:
+- Bill Anderson and Mary Lou Turner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allthebeerandallmyfriendsaregonelyricschords.pro
+    imported_at: '2026-01-02'

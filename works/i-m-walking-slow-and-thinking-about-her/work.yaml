@@ -1,0 +1,17 @@
+id: i-m-walking-slow-and-thinking-about-her
+title: I'm Walking Slow (And Thinking About Her)
+artist: Ray Price
+composers:
+- Bobby Bare and Lance Guyness
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imwalkingslowandthinkingaboutherlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: doc-chapman-s-breakdown
+title: Doc Chapman's Breakdown
+artist: Traditional
+composers:
+- Biography:Owen "Snake" Chapman
+default_key: G
+tags:
+- Jazzy
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

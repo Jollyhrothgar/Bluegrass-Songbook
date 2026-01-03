@@ -1,0 +1,15 @@
+id: you-burned-a-hole-in-my-heart
+title: You Burned A Hole In My Heart
+artist: Hank Locklin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youburnedaholeinmyheartlyricschords.pro
+    imported_at: '2026-01-02'

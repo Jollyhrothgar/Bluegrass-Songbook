@@ -1,0 +1,15 @@
+id: what-will-i-live-on-tomorrow
+title: What Will I Live On Tomorrow
+artist: Vernon Oxford
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatwillIliveontomorrowlyricschords.pro
+    imported_at: '2026-01-02'

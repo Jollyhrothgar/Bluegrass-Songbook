@@ -1,0 +1,17 @@
+id: why-don-t-you-tell-me
+title: Why Don't You Tell Me
+artist: J.D. Crowe & the New South
+composers:
+- Lester Flatt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydontyoutellmelyricschords.pro
+    imported_at: '2026-01-02'

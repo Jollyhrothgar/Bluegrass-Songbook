@@ -1,0 +1,17 @@
+id: i-will-trade-the-old-cross-for-a-crown
+title: I Will Trade the Old Cross for a Crown
+artist: Doyle Lawson
+composers:
+- Johnson Oatman Jr. and John M. Henson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwilltradetheoldcrossforacrownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: you-and-me-against-the-world
+title: You And Me Against The World
+artist: Jack Greene
+composers:
+- Ted Harris
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youandmeagainsttheworldlyricschords.pro
+    imported_at: '2026-01-02'

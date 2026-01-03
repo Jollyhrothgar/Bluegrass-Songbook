@@ -1,0 +1,17 @@
+id: should-ve-asked-her-faster
+title: Should've Asked Her Faster
+artist: Ty England
+composers:
+- Bob DePiero and Al Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shouldveaskedherfasterlyricschords.pro
+    imported_at: '2026-01-02'

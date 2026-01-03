@@ -1,0 +1,19 @@
+id: fuel-to-the-flame
+title: Fuel To The Flame
+artist: Dolly Parton
+composers:
+- Dolly Parton and Bill Owens
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fueltotheflamelyricschords.pro
+    imported_at: '2026-01-02'

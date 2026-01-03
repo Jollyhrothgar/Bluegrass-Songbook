@@ -1,0 +1,17 @@
+id: at-the-end-of-nowhere
+title: At The End Of Nowhere
+artist: Slim Whitman
+composers:
+- Zeke Clements
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: attheendofnowherelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: you-caused-it-all-by-telling-lies
+title: You Caused It All By Telling Lies
+artist: Hank Williams
+composers:
+- Clyde Moody
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcauseditallbytellinglieslyricschords.pro
+    imported_at: '2026-01-02'

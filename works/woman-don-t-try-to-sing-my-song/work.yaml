@@ -1,0 +1,17 @@
+id: woman-don-t-try-to-sing-my-song
+title: Woman Don't Try To Sing My Song
+artist: Cal Smith
+composers:
+- Don Wayne
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: womandonttrytosingmysonglyricschords.pro
+    imported_at: '2026-01-02'

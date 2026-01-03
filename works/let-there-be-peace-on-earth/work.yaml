@@ -1,0 +1,19 @@
+id: let-there-be-peace-on-earth
+title: Let There Be Peace On Earth
+artist: Vince Gill
+composers:
+- Sy Miller and Jill Jackson
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lettherebepeaceonearthlyricschords.pro
+    imported_at: '2026-01-02'

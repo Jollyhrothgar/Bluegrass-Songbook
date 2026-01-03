@@ -1,0 +1,17 @@
+id: the-devil-aint-lazy
+title: The Devil Ain’t Lazy
+artist: Bob Wills
+composers:
+- Fred Rose
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedevilaintlazylyricschords.pro
+    imported_at: '2026-01-02'

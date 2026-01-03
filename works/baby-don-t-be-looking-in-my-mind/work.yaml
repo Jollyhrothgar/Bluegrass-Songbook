@@ -1,0 +1,19 @@
+id: baby-don-t-be-looking-in-my-mind
+title: Baby Don't Be Looking In My Mind
+artist: Waylon Jennings
+composers:
+- Harland Howard
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babydontbelookinginmymindlyricschords.pro
+    imported_at: '2026-01-02'

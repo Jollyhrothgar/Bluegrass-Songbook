@@ -1,0 +1,17 @@
+id: whiskey-heaven
+title: Whiskey Heaven
+artist: Fats Domino
+composers:
+- C. Cofford, J. Durrill, S. Garrett
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whiskeyheavenlyricschords.pro
+    imported_at: '2026-01-02'

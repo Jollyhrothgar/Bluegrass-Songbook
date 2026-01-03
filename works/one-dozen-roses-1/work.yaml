@@ -1,0 +1,13 @@
+id: one-dozen-roses-1
+title: One Dozen Roses
+artist: Jim Reeves
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onedozenroseslyricschords.pro
+    imported_at: '2026-01-02'

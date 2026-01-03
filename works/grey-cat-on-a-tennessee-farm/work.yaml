@@ -1,0 +1,16 @@
+id: grey-cat-on-a-tennessee-farm
+title: Grey Cat on a Tennessee Farm
+artist: Traditional
+default_key: A
+tags:
+- Jazzy
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

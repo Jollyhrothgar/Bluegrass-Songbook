@@ -1,0 +1,18 @@
+id: you-touched-my-life-1
+title: You Touched My Life
+artist: Charley Pride
+composers:
+- Theodore Clifford Harris
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youtouchedmylifelyricschords.pro
+    imported_at: '2026-01-02'

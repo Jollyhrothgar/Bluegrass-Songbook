@@ -1,0 +1,18 @@
+id: i-can-t-help-myself
+title: I Can't Help Myself
+artist: Eddie Rabbitt
+composers:
+- Even (Bruce) Stevens and Eddie Rabbitt
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanthelpmyselflyricschords.pro
+    imported_at: '2026-01-02'

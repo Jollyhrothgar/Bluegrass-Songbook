@@ -1,0 +1,18 @@
+id: is-this-the-beginning-of-the-end
+title: Is This The Beginning Of The End
+artist: Merle Haggard
+composers:
+- Wynn Stewart, Wally Lewis, Billy Mize
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isthisthebeginningoftheendlyricschords.pro
+    imported_at: '2026-01-02'

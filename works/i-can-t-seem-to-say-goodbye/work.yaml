@@ -1,0 +1,17 @@
+id: i-can-t-seem-to-say-goodbye
+title: I Can't Seem To Say Goodbye
+artist: Hawkshaw Hawkins
+composers:
+- Don Robertson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantseemtosaygoodbyelyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: only-you-only-you
+title: Only You Only You
+artist: Charlie Walker
+composers:
+- Jack Newman and Charlie Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onlyyouonlyyoulyricschords.pro
+    imported_at: '2026-01-02'

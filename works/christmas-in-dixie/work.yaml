@@ -1,0 +1,17 @@
+id: christmas-in-dixie
+title: Christmas in Dixie
+artist: Alabama
+composers:
+- Teddy Gentry, Randy Owen, Jeff Cook, and Mark Herndon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasindixielyricschords.pro
+    imported_at: '2026-01-02'

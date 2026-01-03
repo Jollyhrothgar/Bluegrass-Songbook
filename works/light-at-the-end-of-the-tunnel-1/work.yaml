@@ -1,0 +1,17 @@
+id: light-at-the-end-of-the-tunnel-1
+title: Light At The End Of The Tunnel
+artist: B.B. Watson
+composers:
+- Richard William Fagan, Kim E. Williams, M. Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lightattheendofthetunnellyricschords.pro
+    imported_at: '2026-01-02'

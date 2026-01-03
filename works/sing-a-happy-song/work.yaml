@@ -1,0 +1,15 @@
+id: sing-a-happy-song
+title: Sing A Happy Song
+artist: Buck Owens
+composers:
+- Charlie Williams and Billy Graham
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singahappysonglyricschords.pro
+    imported_at: '2026-01-02'

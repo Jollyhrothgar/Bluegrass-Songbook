@@ -1,0 +1,17 @@
+id: if-you-want-me-to-i-ll-go
+title: If You Want Me To I'll Go
+artist: Don Gibson
+composers:
+- Mickey Newbury
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouwantmetoillgolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: the-world-s-most-broken-heart
+title: The World's Most Broken Heart
+artist: Tammy Wynette
+composers:
+- Troy Seals and Fred LaBour
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theworldsmostbrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

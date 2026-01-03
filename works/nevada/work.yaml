@@ -1,0 +1,15 @@
+id: nevada
+title: Nevada
+artist: Jim Ed Brown
+composers:
+- Walter Donaldson and Mort Green
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nevadalyricschords.pro
+    imported_at: '2026-01-02'

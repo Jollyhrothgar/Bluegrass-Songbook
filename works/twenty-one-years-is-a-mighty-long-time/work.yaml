@@ -1,0 +1,18 @@
+id: twenty-one-years-is-a-mighty-long-time
+title: Twenty One Years Is A Mighty Long Time
+artist: The Gibson Brothers
+composers:
+- Paul Clayton Worthington
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twentyoneyearsisamightylongtimelyricschords.pro
+    imported_at: '2026-01-02'

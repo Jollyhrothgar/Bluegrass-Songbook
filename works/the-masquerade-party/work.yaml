@@ -1,0 +1,17 @@
+id: the-masquerade-party
+title: The Masquerade Party
+artist: Carl Belew
+composers:
+- Fred Burch and Benny Joy
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themasqueradepartylyricschords.pro
+    imported_at: '2026-01-02'

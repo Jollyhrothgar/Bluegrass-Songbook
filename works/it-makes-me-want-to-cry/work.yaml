@@ -1,0 +1,18 @@
+id: it-makes-me-want-to-cry
+title: It Makes Me Want To Cry
+artist: Charlie Rich
+composers:
+- Eddie Rabbitt, Dick Heard, Van Trevor
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itmakesmewanttocrylyricschords.pro
+    imported_at: '2026-01-02'

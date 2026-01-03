@@ -1,0 +1,17 @@
+id: letters-have-no-arms
+title: Letters Have no Arms
+artist: Faron Young
+composers:
+- Ernest Tubb and Arbie Gibson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lettershavenoarmslyricsandchords.pro
+    imported_at: '2026-01-02'

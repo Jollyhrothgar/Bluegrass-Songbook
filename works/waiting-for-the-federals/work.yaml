@@ -1,0 +1,14 @@
+id: waiting-for-the-federals
+title: Waiting for the Federals
+artist: Traditional
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

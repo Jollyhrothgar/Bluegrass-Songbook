@@ -1,0 +1,17 @@
+id: you-all-are-beautiful
+title: You All Are Beautiful
+artist: John Anderson
+composers:
+- John Anderson and James Hicks
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youallarebeautifullyricschords.pro
+    imported_at: '2026-01-02'

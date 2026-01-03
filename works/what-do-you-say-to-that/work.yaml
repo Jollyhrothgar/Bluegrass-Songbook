@@ -1,0 +1,17 @@
+id: what-do-you-say-to-that
+title: What Do You Say To That
+artist: George Strait
+composers:
+- Melba Montgomery and Jim Lauderdale
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatdoyousaytothatlyricschords.pro
+    imported_at: '2026-01-02'

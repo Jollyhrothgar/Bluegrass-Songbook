@@ -1,0 +1,15 @@
+id: old-frame-of-mine
+title: Old Frame Of Mine
+artist: Moe Bandy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldframeofminelyricschords.pro
+    imported_at: '2026-01-02'

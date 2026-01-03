@@ -1,0 +1,19 @@
+id: everybody-does-it-in-hawaii
+title: Everybody Does It in Hawaii
+artist: Hank Snow
+composers:
+- Elsie McWilliams and Jimmie Rodgers
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodydoesitinhawaiilyricschords.pro
+    imported_at: '2026-01-02'

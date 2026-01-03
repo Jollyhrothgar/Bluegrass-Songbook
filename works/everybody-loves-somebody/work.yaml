@@ -1,0 +1,15 @@
+id: everybody-loves-somebody
+title: Everybody Loves Somebody
+artist: Connie Smith
+composers:
+- Irving Taylor and Ken Lane
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodylovessomebodylyricschords.pro
+    imported_at: '2026-01-02'

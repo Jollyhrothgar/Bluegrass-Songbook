@@ -1,0 +1,17 @@
+id: is-this-me
+title: Is This Me
+artist: Jim Reeves
+composers:
+- Dottie West and Bill West
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isthismelyricschords.pro
+    imported_at: '2026-01-02'

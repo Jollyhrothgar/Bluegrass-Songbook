@@ -1,0 +1,17 @@
+id: someone-s-gotta-cry
+title: Someone's Gotta Cry
+artist: Jean Shepard
+composers:
+- Don Bowman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someonesgottacrylyricschords.pro
+    imported_at: '2026-01-02'

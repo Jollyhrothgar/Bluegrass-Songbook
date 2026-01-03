@@ -1,0 +1,17 @@
+id: i-just-said-goodbye-to-my-dreams
+title: I Just Said Goodbye To My Dreams
+artist: Don Gibson
+composers:
+- Leon Payne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustsaidgoodbyetomydreamslyricschords.pro
+    imported_at: '2026-01-02'

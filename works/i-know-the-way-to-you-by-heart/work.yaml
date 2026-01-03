@@ -1,0 +1,17 @@
+id: i-know-the-way-to-you-by-heart
+title: I Know The Way To You By Heart
+artist: Vern Gosdin
+composers:
+- Tony Laiolo
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowthewaytoyoubyheartlyricschords.pro
+    imported_at: '2026-01-02'

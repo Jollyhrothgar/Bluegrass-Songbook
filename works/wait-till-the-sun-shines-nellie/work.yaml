@@ -1,0 +1,17 @@
+id: wait-till-the-sun-shines-nellie
+title: Wait Till The Sun Shines Nellie
+artist: Buddy Holly
+composers:
+- Andrew B. Sterling and Von Tilzer
+default_key: G
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waittillthesunshinesnellielyricschords.pro
+    imported_at: '2026-01-02'

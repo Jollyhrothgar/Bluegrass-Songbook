@@ -1,0 +1,17 @@
+id: nobody-s-waiting-for-me
+title: Nobody's Waiting For Me
+artist: Moe Bandy
+composers:
+- Sanger D. Shafer and Warren Robb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodyswaitingformelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: one-man-s-woman
+title: One Man's Woman
+artist: Kenny Rogers
+composers:
+- Steve Glassmeyer
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemanswomanlyricschords.pro
+    imported_at: '2026-01-02'

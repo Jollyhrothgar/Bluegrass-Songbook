@@ -1,0 +1,17 @@
+id: takin-chances
+title: Takin' Chances
+artist: Porter Wagoner
+composers:
+- Woody Hill, Ina Hill, Kenny Roberts
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takinchanceslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: please-let-me-have-you
+title: Please Let Me Have You
+artist: Mel Tillis
+composers:
+- Johnny Gore
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleaseletmehaveyoulyricschords.pro
+    imported_at: '2026-01-02'

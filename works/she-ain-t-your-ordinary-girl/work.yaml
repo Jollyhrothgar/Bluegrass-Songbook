@@ -1,0 +1,17 @@
+id: she-ain-t-your-ordinary-girl
+title: She Ain't Your Ordinary Girl
+artist: Alabama
+composers:
+- Robert Jason
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sheaintyourordinarygirllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-blue
+title: I'm Blue
+artist: Hank Locklin
+composers:
+- Jessi Colter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imbluelyricschords.pro
+    imported_at: '2026-01-02'

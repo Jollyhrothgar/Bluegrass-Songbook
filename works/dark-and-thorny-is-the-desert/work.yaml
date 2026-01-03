@@ -1,0 +1,17 @@
+id: dark-and-thorny-is-the-desert
+title: Dark And Thorny Is The Desert
+artist: Ralph Stanley
+composers:
+- Dudley Dale Connell and Don Rigsby
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darkandthornyisthedesertlyricschords.pro
+    imported_at: '2026-01-02'

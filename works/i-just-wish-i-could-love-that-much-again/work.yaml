@@ -1,0 +1,15 @@
+id: i-just-wish-i-could-love-that-much-again
+title: I Just Wish I Could Love That Much Again
+artist: Jan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustwishicouldlovethatmuchagainlyricschords.pro
+    imported_at: '2026-01-02'

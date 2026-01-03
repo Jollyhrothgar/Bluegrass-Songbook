@@ -1,0 +1,17 @@
+id: i-wasn-t-man-enough
+title: I Wasn't Man Enough
+artist: Kenny Rogers
+composers:
+- Roger Bowling and Larry Butler
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwasntmanenoughlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-love-everything-about-you
+title: I Love Everything About You
+artist: George Morgan
+composers:
+- Cindy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iloveeverythingaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

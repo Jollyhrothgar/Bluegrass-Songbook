@@ -1,0 +1,17 @@
+id: who-s-cheatin-who
+title: Who's Cheatin' Who
+artist: Alan Jackson
+composers:
+- Jerry Hayes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoscheatinwholyricschords.pro
+    imported_at: '2026-01-02'

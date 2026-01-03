@@ -1,0 +1,17 @@
+id: loving-arms
+title: Loving Arms
+artist: Johnny Duncan and Janie Fricke
+composers:
+- Tom Jans
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovingarmslyricschords.pro
+    imported_at: '2026-01-02'

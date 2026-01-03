@@ -1,0 +1,17 @@
+id: i-look-at-you
+title: I Look At You
+artist: George Strait
+composers:
+- Steve Bogard and Jeff Stevens
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilookatyoulyricschords.pro
+    imported_at: '2026-01-02'

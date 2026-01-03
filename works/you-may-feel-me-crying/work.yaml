@@ -1,0 +1,18 @@
+id: you-may-feel-me-crying
+title: You May Feel Me Crying
+artist: Roy Orbison
+composers:
+- Will Jennings and Richard B. Kerr
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmayfeelmecryinglyricschords.pro
+    imported_at: '2026-01-02'

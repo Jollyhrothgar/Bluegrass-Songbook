@@ -1,0 +1,17 @@
+id: i-need-thee-every-hour
+title: I Need Thee Every Hour
+artist: Don Gibson
+composers:
+- Robert Lowry and Annie S. Hawks
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineedtheeeveryhourlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: if-anything-happened-to-you
+title: If Anything Happened To You
+artist: Mary Duff
+composers:
+- Charlie McGettigan
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifanythinghappenedtoyoulyricschords.pro
+    imported_at: '2026-01-02'

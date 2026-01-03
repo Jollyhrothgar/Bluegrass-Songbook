@@ -1,0 +1,17 @@
+id: where-would-i-be-without-jesus
+title: Where Would I Be Without Jesus
+artist: Buck Owens
+composers:
+- Don Sessions
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherewouldibewithoutJesuslyricschords.pro
+    imported_at: '2026-01-02'

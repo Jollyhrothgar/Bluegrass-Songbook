@@ -1,0 +1,15 @@
+id: stay-a-little-longer-in-your-bed
+title: Stay A Little Longer In Your Bed
+artist: Billy Crash Craddock
+composers:
+- John Adrian
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stayalittlelongerinyourbedlyricschords.pro
+    imported_at: '2026-01-02'

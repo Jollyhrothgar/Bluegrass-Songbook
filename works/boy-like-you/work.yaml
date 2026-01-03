@@ -1,0 +1,19 @@
+id: boy-like-you
+title: Boy Like You
+artist: Ernest Tubb
+composers:
+- Tompall Glaser
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: boylikeyoulyricschords.pro
+    imported_at: '2026-01-02'

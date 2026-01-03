@@ -1,0 +1,18 @@
+id: if-you-d-have-only-taken-the-time
+title: If You'd Have Only Taken The Time
+artist: Charley Pride
+composers:
+- Kent Westberry and Merv Shiner
+default_key: F
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoudhaveonlytakenthetimelyricschords.pro
+    imported_at: '2026-01-02'

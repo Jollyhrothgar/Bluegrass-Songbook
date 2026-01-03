@@ -1,0 +1,17 @@
+id: sweet-caroline
+title: Sweet Caroline
+artist: Neil Diamond
+default_key: G
+tags:
+- Folk
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetcarolinelyricschords.pro
+    imported_at: '2026-01-02'

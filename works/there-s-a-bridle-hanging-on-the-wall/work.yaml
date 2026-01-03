@@ -1,0 +1,17 @@
+id: there-s-a-bridle-hanging-on-the-wall
+title: There's A Bridle Hanging On The Wall
+artist: Noel Parlane
+composers:
+- Carson Robison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresabridlehangingonthewalllyricschords.pro
+    imported_at: '2026-01-02'

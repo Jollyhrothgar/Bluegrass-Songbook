@@ -1,0 +1,15 @@
+id: her-hello-was-my-goodbye
+title: Her Hello Was My Goodbye
+artist: Dottie West
+composers:
+- Quinn Garton
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: herhellowasmygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

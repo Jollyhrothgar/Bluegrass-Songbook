@@ -1,0 +1,20 @@
+id: yes-i-understand
+title: Yes I Understand
+artist: Patsy Cline
+composers:
+- C.C. Beam, C.L. Jiles, W.S. Stevenson
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesiunderstandlyricschords.pro
+    imported_at: '2026-01-02'

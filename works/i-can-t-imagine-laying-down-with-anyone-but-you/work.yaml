@@ -1,0 +1,18 @@
+id: i-can-t-imagine-laying-down-with-anyone-but-you
+title: I Can't Imagine Laying Down With Anyone But You
+artist: The Oak Ridge Boys
+composers:
+- Don Schlitz
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantimaginelayingdownwithanyonebutyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: we-need-a-lot-more-happiness
+title: We Need A Lot More Happiness
+artist: Wilburn Brothers
+composers:
+- Joe Keene
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weneedalotmorehappinesslyricschords.pro
+    imported_at: '2026-01-02'

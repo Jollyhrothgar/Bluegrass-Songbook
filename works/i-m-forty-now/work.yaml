@@ -1,0 +1,15 @@
+id: i-m-forty-now
+title: I'm Forty Now
+artist: Cal Smith
+composers:
+- Tom T. Hall
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imfortynowlyricschords.pro
+    imported_at: '2026-01-02'

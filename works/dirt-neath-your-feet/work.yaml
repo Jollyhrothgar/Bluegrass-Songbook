@@ -1,0 +1,15 @@
+id: dirt-neath-your-feet
+title: Dirt 'Neath Your Feet
+artist: Billy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dirtneathyourfeetlyricschords.pro
+    imported_at: '2026-01-02'

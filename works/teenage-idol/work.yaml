@@ -1,0 +1,15 @@
+id: teenage-idol
+title: Teenage Idol
+artist: Ricky Nelson
+composers:
+- Jack Lewis
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: teenageidollyricschords.pro
+    imported_at: '2026-01-02'

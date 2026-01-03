@@ -1,0 +1,17 @@
+id: mister-can-you-spare-a-dime
+title: Mister Can You Spare A Dime
+artist: Boxcar Willie
+composers:
+- Lloene S. Martin and Lorry G. Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mistercanyouspareadimelyricschords.pro
+    imported_at: '2026-01-02'

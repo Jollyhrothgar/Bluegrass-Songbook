@@ -1,0 +1,21 @@
+id: good-luck-charm
+title: Good Luck Charm
+artist: Elvis Presley
+composers:
+- Aaron Schroeder and Wally Gold
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodluckcharmlyricschords.pro
+    imported_at: '2026-01-02'

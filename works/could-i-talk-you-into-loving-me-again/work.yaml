@@ -1,0 +1,17 @@
+id: could-i-talk-you-into-loving-me-again
+title: Could I Talk You Into Loving Me Again
+artist: Wynn Stewart
+composers:
+- Len Green and Wynn Stewart
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coulditalkyouintolovingmeagainlyricschords.pro
+    imported_at: '2026-01-02'

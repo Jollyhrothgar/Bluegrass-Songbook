@@ -1,0 +1,17 @@
+id: the-tramp-on-the-street
+title: The Tramp on the Street
+artist: Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetramponthestreetlyricschords.pro
+    imported_at: '2026-01-02'

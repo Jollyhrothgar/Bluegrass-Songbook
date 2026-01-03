@@ -1,0 +1,17 @@
+id: i-don-t-wanna-love-you
+title: I Don't Wanna Love You
+artist: Ricky Nelson
+composers:
+- Barry Mann and Cynthia Weil
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwannaloveyoulyricschords.pro
+    imported_at: '2026-01-02'

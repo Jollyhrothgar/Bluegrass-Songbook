@@ -1,0 +1,17 @@
+id: call-me-mr-in-between
+title: Call Me Mr. In Between
+artist: Burl Ives
+composers:
+- Harland Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: callmemrinbetweenlyricschords.pro
+    imported_at: '2026-01-02'

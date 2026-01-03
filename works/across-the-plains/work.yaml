@@ -1,0 +1,17 @@
+id: across-the-plains
+title: Across the Plains
+artist: Traditional
+composers:
+- Biography:William Lee "Jake" Phelps
+default_key: G
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

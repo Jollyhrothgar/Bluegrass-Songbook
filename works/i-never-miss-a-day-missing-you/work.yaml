@@ -1,0 +1,17 @@
+id: i-never-miss-a-day-missing-you
+title: I Never Miss A Day Missing You
+artist: Moe Bandy
+composers:
+- Carl Belew and Moe Bandy
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inevermissadaymissingyoulyricschords.pro
+    imported_at: '2026-01-02'

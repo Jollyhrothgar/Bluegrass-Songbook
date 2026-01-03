@@ -1,0 +1,17 @@
+id: now-she-s-anybody-s-song
+title: Now She's Anybody's Song
+artist: Mel Street
+composers:
+- Mel Street and Razzy Bailey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nowshesanybodyssonglyricschords.pro
+    imported_at: '2026-01-02'

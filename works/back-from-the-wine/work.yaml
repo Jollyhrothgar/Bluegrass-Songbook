@@ -1,0 +1,17 @@
+id: back-from-the-wine
+title: Back From The Wine
+artist: Johnny Bush
+composers:
+- Larry Kingston and Frank Dycus
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backfromthewinelyricschords.pro
+    imported_at: '2026-01-02'

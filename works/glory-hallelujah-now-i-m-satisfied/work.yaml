@@ -1,0 +1,17 @@
+id: glory-hallelujah-now-i-m-satisfied
+title: Glory Hallelujah Now I'm Satisfied
+artist: Carl Story and his Rambling Mountaineers
+composers:
+- Carl Story and Marshall Pack
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gloryhallelujahnowimsatisfiedlyricschords.pro
+    imported_at: '2026-01-02'

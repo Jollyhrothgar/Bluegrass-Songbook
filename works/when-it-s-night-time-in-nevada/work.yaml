@@ -1,0 +1,18 @@
+id: when-it-s-night-time-in-nevada
+title: When It's Night Time In Nevada
+artist: Sons of the Pioneers
+composers:
+- Richard W. Pascoe, Will Dulmage, H. O. Reilly Clint
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenitsnighttimeinnevadalyricschords.pro
+    imported_at: '2026-01-02'

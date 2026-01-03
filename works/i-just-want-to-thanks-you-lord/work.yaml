@@ -1,0 +1,19 @@
+id: i-just-want-to-thanks-you-lord
+title: I Just Want To Thanks You Lord
+artist: Larry Sparks
+composers:
+- Judy Marshall
+default_key: C
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustwanttothankyoulordlyricschords.pro
+    imported_at: '2026-01-02'

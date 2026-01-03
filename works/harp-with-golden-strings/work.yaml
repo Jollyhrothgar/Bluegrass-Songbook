@@ -1,0 +1,19 @@
+id: harp-with-golden-strings
+title: Harp With Golden Strings
+artist: Loretta Lynn
+composers:
+- Mac McCarty and Jimmie Keath
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: harpwithgoldenstringslyricschords.pro
+    imported_at: '2026-01-02'

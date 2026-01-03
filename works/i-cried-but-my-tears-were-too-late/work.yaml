@@ -1,0 +1,17 @@
+id: i-cried-but-my-tears-were-too-late
+title: I Cried But My Tears Were Too Late
+artist: Hank Snow
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icriedbutmytearsweretoolatelyricschords.pro
+    imported_at: '2026-01-02'

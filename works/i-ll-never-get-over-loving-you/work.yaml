@@ -1,0 +1,15 @@
+id: i-ll-never-get-over-loving-you
+title: I'll Never Get Over Loving You
+artist: Connie Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illnevergetoverlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

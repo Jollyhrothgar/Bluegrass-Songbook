@@ -1,0 +1,20 @@
+id: don-t-ever-leave-me-again-1
+title: Don't Ever Leave Me Again
+artist: Patsy Cline
+composers:
+- Lillian Claiborne, Virginia Hensley, James Crawford
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donteverleavemeagainlyricschords.pro
+    imported_at: '2026-01-02'

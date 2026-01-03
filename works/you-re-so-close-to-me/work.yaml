@@ -1,0 +1,22 @@
+id: you-re-so-close-to-me
+title: You're So Close To Me
+artist: Johnny Cash
+composers:
+- Mac Davis
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youresoclosetomelyricschords.pro
+    imported_at: '2026-01-02'

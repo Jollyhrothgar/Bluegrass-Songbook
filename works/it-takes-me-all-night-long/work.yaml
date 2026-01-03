@@ -1,0 +1,17 @@
+id: it-takes-me-all-night-long
+title: It Takes Me All Night Long
+artist: Cal Smith
+composers:
+- Bozo Darnell and Dave Pittman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ittakesmeallnightlonglyricschords.pro
+    imported_at: '2026-01-02'

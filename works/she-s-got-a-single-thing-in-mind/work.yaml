@@ -1,0 +1,18 @@
+id: she-s-got-a-single-thing-in-mind
+title: She's Got A Single Thing In Mind
+artist: Conway Twitty
+composers:
+- Walt Aldridge
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesgotasinglethinginmindlyricschords.pro
+    imported_at: '2026-01-02'

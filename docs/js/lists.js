@@ -7,14 +7,16 @@ import {
     setListContext,
     // Centralized list viewing state
     viewingListId, setViewingListId,
-    viewingPublicList, setViewingPublicList
+    viewingPublicList, setViewingPublicList,
+    FAVORITES_LIST_ID
 } from './state.js';
 import { escapeHtml, generateLocalId } from './utils.js';
 import { showRandomSongs } from './search-core.js';
 import { trackListAction } from './analytics.js';
+import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 
-// Favorites is just a special list with this ID/name
-const FAVORITES_LIST_ID = 'favorites';
+// Re-export FAVORITES_LIST_ID for backwards compatibility
+export { FAVORITES_LIST_ID };
 const FAVORITES_LIST_NAME = 'Favorites';
 
 // Track deleted lists to prevent sync from resurrecting them (persisted to localStorage)
@@ -78,8 +80,7 @@ let renderResultsFn = null;
 let closeSidebarFn = null;
 let pushHistoryStateFn = null;
 
-// Floating result picker state
-let activeResultPicker = null;
+// Note: Result picker now uses unified ListPicker component from list-picker.js
 
 // Nav element for favorites count badge
 let navFavoritesCountEl = null;
@@ -343,6 +344,60 @@ function migrateOldFavorites() {
         console.log(`Migrated ${favIds.length} favorites to list-based system`);
     } catch (e) {
         console.error('Failed to migrate old favorites:', e);
+    }
+}
+
+/**
+ * Migrate old song IDs to new IDs using the id_mapping.json
+ * This handles the transition from old slugs (e.g., "manofconstantsorrowlyricsandchords")
+ * to new slugs (e.g., "im-a-man-of-constant-sorrow")
+ */
+async function migrateOldSongIds() {
+    const MIGRATION_KEY = 'songbook-ids-migrated-v1';
+
+    // Skip if already migrated
+    if (localStorage.getItem(MIGRATION_KEY)) {
+        return;
+    }
+
+    try {
+        // Fetch the ID mapping
+        const response = await fetch('data/id_mapping.json');
+        if (!response.ok) {
+            console.log('[migrateOldSongIds] No id_mapping.json found, skipping migration');
+            return;
+        }
+
+        const idMapping = await response.json();
+        let totalMigrated = 0;
+
+        // Update all lists
+        for (const list of userLists) {
+            const newSongs = list.songs.map(oldId => {
+                const newId = idMapping[oldId];
+                if (newId && newId !== oldId) {
+                    totalMigrated++;
+                    return newId;
+                }
+                return oldId;
+            });
+            list.songs = newSongs;
+        }
+
+        if (totalMigrated > 0) {
+            console.log(`[migrateOldSongIds] Migrated ${totalMigrated} song IDs to new format`);
+            saveLists();
+
+            // Re-render if we're currently viewing favorites
+            if (viewingListId === FAVORITES_LIST_ID) {
+                showFavorites();
+            }
+        }
+
+        // Mark migration as complete
+        localStorage.setItem(MIGRATION_KEY, 'true');
+    } catch (e) {
+        console.error('[migrateOldSongIds] Migration failed:', e);
     }
 }
 
@@ -1016,91 +1071,23 @@ export function updateFavoriteButton() {
 
 /**
  * Show floating list picker for search results
+ * Delegates to unified ListPicker component
  */
 export function showResultListPicker(btn, songId) {
-    // Close any existing picker
-    closeResultListPicker();
-
     const song = allSongs.find(s => s.id === songId);
     if (!song) return;
 
-    // Create floating picker
-    const picker = document.createElement('div');
-    picker.className = 'result-list-picker';
-    picker.innerHTML = `
-        <label class="list-option favorites-option">
-            <input type="checkbox" data-type="favorites" ${isFavorite(songId) ? 'checked' : ''}>
-            <span class="heart-icon">&#9829;</span>
-            <span>Favorites</span>
-        </label>
-        <div class="list-divider"></div>
-        <div class="result-picker-lists">
-            ${userLists.filter(l => l.id !== FAVORITES_LIST_ID).map(list => `
-                <label class="list-option">
-                    <input type="checkbox" data-type="list" data-list-id="${list.id}" ${list.songs.includes(songId) ? 'checked' : ''}>
-                    <span>&#9776;</span>
-                    <span>${escapeHtml(list.name)}</span>
-                </label>
-            `).join('')}
-        </div>
-        <button class="create-list-btn" data-type="create">+ New List</button>
-    `;
-
-    // Position the picker
-    const rect = btn.getBoundingClientRect();
-    picker.style.position = 'fixed';
-    picker.style.top = `${rect.bottom + 4}px`;
-    picker.style.right = `${window.innerWidth - rect.right}px`;
-
-    document.body.appendChild(picker);
-    activeResultPicker = { element: picker, songId, btn };
-
-    // Handle checkbox changes
-    picker.addEventListener('change', (e) => {
-        if (e.target.type !== 'checkbox') return;
-
-        if (e.target.dataset.type === 'favorites') {
-            toggleFavorite(songId);
-        } else if (e.target.dataset.type === 'list') {
-            const listId = e.target.dataset.listId;
-            if (e.target.checked) {
-                addSongToList(listId, songId);
-            } else {
-                removeSongFromList(listId, songId);
-            }
-        }
-
-        // Update the button appearance
-        updateResultListButton(btn, songId);
-
-        // Close picker after selection
-        closeResultListPicker();
-    });
-
-    // Handle create new list
-    picker.querySelector('[data-type="create"]').addEventListener('click', () => {
-        const name = prompt('Enter list name:');
-        if (name) {
-            const newList = createList(name);
-            if (newList) {
-                addSongToList(newList.id, songId);
-                closeResultListPicker();
-                updateResultListButton(btn, songId);
-            } else {
-                alert('A list with that name already exists.');
-            }
-        }
+    showListPicker(songId, btn, {
+        onUpdate: () => updateResultListButton(btn, songId)
     });
 }
 
 /**
  * Close floating result list picker
+ * Delegates to unified ListPicker component
  */
 export function closeResultListPicker() {
-    if (activeResultPicker) {
-        activeResultPicker.element.remove();
-        activeResultPicker = null;
-    }
+    closeListPicker();
 }
 
 /**
@@ -1360,6 +1347,9 @@ export function initLists(options) {
     // Migrate old favorites format to new list-based format
     migrateOldFavorites();
 
+    // Migrate old song IDs to new IDs (from works migration)
+    migrateOldSongIds();
+
     renderSidebarLists();
     updateFavoritesCount();
 
@@ -1383,12 +1373,5 @@ export function initLists(options) {
         });
     }
 
-    // Close result picker when clicking outside
-    document.addEventListener('click', (e) => {
-        if (activeResultPicker) {
-            if (!activeResultPicker.element.contains(e.target) && e.target !== activeResultPicker.btn) {
-                closeResultListPicker();
-            }
-        }
-    });
+    // Note: Result picker click-outside handling is now managed by unified ListPicker
 }

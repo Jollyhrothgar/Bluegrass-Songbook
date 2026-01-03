@@ -1,0 +1,18 @@
+id: slowly-passin-time
+title: Slowly Passin' Time
+artist: John Conlee
+composers:
+- Rory Bourke, Tommy Rocco, Charlie Black
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: slowlypassintimelyricschords.pro
+    imported_at: '2026-01-02'

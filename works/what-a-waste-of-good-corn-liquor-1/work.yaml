@@ -1,0 +1,14 @@
+id: what-a-waste-of-good-corn-liquor-1
+title: What A Waste Of Good Corn Liquor
+artist: Mac Wiseman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

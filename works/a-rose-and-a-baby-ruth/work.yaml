@@ -1,0 +1,15 @@
+id: a-rose-and-a-baby-ruth
+title: A Rose And A Baby Ruth
+artist: George Hamilton IV
+composers:
+- John D. Loudermilk
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aroseandababyruthlyricschords.pro
+    imported_at: '2026-01-02'

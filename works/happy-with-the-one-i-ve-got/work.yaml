@@ -1,0 +1,17 @@
+id: happy-with-the-one-i-ve-got
+title: Happy With The One I've Got
+artist: David Ball
+composers:
+- Wood Newton and Rand Bishop
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: happywiththeoneivegotlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: heaven-in-my-woman-s-eyes
+title: Heaven In My Woman's Eyes
+artist: Tracy Byrd
+composers:
+- Mark Nesler
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heaveninmywomanseyeslyricschords.pro
+    imported_at: '2026-01-02'

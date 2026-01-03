@@ -1,0 +1,18 @@
+id: i-m-gonna-have-a-little-talk-with-jesus
+title: I'm Gonna Have A Little Talk With Jesus
+artist: Randy Travis
+composers:
+- Alan Donald Schlitz and Randy Bruce Traywick
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnahavealittletalkwithJesuslyricschords.pro
+    imported_at: '2026-01-02'

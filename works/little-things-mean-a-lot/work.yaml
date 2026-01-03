@@ -1,0 +1,17 @@
+id: little-things-mean-a-lot
+title: Little Things Mean A Lot
+artist: Wanda Jackson
+composers:
+- Edith Linderman and Carl Stutz
+default_key: G
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlethingsmeanalotlyricschords.pro
+    imported_at: '2026-01-02'

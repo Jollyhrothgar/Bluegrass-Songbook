@@ -1,0 +1,17 @@
+id: two-good-people-with-a-love-gone-bad
+title: Two Good People With A Love Gone Bad
+artist: Vern Gosdin
+composers:
+- Dean Dillon, Buddy Cannon, Vern Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twogoodpeoplewithalovegonebadlyricschords.pro
+    imported_at: '2026-01-02'

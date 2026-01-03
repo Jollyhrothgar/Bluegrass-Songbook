@@ -1,0 +1,23 @@
+id: further-on-up-the-road
+title: Further On Up the Road
+artist: Johnny Cash
+composers:
+- Bruce Sringsteen
+default_key: Am
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: furtheronuptheroadlyricschords.pro
+    imported_at: '2026-01-02'

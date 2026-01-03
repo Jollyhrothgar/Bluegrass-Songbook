@@ -1,0 +1,17 @@
+id: day-to-day-tear-to-tear
+title: Day To Day (Tear To Tear)
+artist: Jean Shepard
+composers:
+- Johnny Russell and Teddy Wilburn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: daytodayteartotearlyricschords.pro
+    imported_at: '2026-01-02'

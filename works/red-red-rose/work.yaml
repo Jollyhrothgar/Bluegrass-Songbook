@@ -1,0 +1,18 @@
+id: red-red-rose
+title: Red Red Rose
+artist: Emmylou Harris
+composers:
+- David Mallett
+default_key: G
+tags:
+- Folk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: redredroselyricschords.pro
+    imported_at: '2026-01-02'

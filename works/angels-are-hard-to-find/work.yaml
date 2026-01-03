@@ -1,0 +1,15 @@
+id: angels-are-hard-to-find
+title: Angels Are Hard To Find
+artist: Hank Williams Jr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: angelsarehardtofindlyricschords.pro
+    imported_at: '2026-01-02'

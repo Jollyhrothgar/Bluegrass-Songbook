@@ -1,0 +1,17 @@
+id: you-d-make-an-angel-want-to-cheat
+title: You'd Make An Angel Want To Cheat
+artist: The Kendalls
+composers:
+- Bob Morrison, Bill Zerface, Jim Zerface
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdmakeanangelwanttocheatlyricschords.pro
+    imported_at: '2026-01-02'

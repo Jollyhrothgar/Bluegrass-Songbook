@@ -1,0 +1,19 @@
+id: i-don-t-blame-you
+title: I Don't Blame You
+artist: Ernest Tubb
+composers:
+- Ernest Tubb and Jim Scott
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontblameyoulyricschords.pro
+    imported_at: '2026-01-02'

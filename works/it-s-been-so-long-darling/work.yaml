@@ -1,0 +1,18 @@
+id: it-s-been-so-long-darling
+title: It's Been So Long Darling
+artist: Ernest Tubb
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsbeensolongdarlinglyricschords.pro
+    imported_at: '2026-01-02'

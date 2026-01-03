@@ -1,0 +1,15 @@
+id: come-go-with-me
+title: Come Go With Me
+artist: Bill Monroe
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comegowithmelyricschords.pro
+    imported_at: '2026-01-02'

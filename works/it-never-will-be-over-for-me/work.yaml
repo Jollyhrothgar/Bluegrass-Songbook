@@ -1,0 +1,17 @@
+id: it-never-will-be-over-for-me
+title: It Never Will Be Over For Me
+artist: Tony Booth
+composers:
+- Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itneverwillbeoverformelyricschords.pro
+    imported_at: '2026-01-02'

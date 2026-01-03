@@ -1,0 +1,15 @@
+id: bring-back-the-springtime
+title: Bring Back The Springtime
+artist: Ray Price
+composers:
+- Kurt Kaiser
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bringbackthespringtimelyricschords.pro
+    imported_at: '2026-01-02'

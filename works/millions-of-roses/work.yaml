@@ -1,0 +1,15 @@
+id: millions-of-roses
+title: Millions Of Roses
+artist: Eddy Arnold
+composers:
+- Sylvia Dee and Arthur Kent
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: millionsofroseslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: my-love-1
+title: My Love
+artist: Sonny James
+composers:
+- Tony Hatch
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylovelyricschords.pro
+    imported_at: '2026-01-02'

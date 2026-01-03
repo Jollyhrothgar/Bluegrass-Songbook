@@ -1,0 +1,17 @@
+id: best-of-strangers
+title: Best Of Strangers
+artist: Bill Anderson
+composers:
+- Bill Anderson and Buddy Killen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bestofstrangerslyricschords.pro
+    imported_at: '2026-01-02'

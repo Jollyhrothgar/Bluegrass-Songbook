@@ -1,0 +1,15 @@
+id: our-bed-of-roses
+title: Our Bed Of Roses
+artist: George Jones
+composers:
+- Keith Steagall and Zack Turner
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ourbedofroseslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: the-gods-were-angry-with-me
+title: The Gods Were Angry With Me
+artist: Jim Reeves
+composers:
+- Herman L. Watkins and Ruth Oma Wilkinson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegodswereangrywithmelyricschords.pro
+    imported_at: '2026-01-02'

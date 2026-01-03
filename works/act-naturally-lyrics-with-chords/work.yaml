@@ -1,0 +1,17 @@
+id: act-naturally-lyrics-with-chords
+title: Act Naturally Lyrics with Chords
+artist: Buck Owens
+composers:
+- Johnny Russell and Voni Morrison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: actnaturallylyricsandchords.pro
+    imported_at: '2026-01-02'

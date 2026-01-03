@@ -1,0 +1,18 @@
+id: you-ve-got-a-right
+title: You've Got A Right
+artist: John Conlee
+composers:
+- Bruce Channel and Kieran Kane
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotarightlyricschords.pro
+    imported_at: '2026-01-02'

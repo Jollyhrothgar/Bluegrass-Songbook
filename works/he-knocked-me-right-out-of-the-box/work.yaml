@@ -1,0 +1,17 @@
+id: he-knocked-me-right-out-of-the-box
+title: He Knocked Me Right Out Of The Box
+artist: Little Jimmy Dickens
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heknockedmerightoutoftheboxlyricschords.pro
+    imported_at: '2026-01-02'

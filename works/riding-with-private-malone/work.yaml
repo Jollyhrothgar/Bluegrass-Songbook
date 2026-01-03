@@ -1,0 +1,15 @@
+id: riding-with-private-malone
+title: Riding With Private Malone
+artist: David Ball
+composers:
+- Wood Newton and Thom Shepherd
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ridingwithprivatemalonelyricschords.pro
+    imported_at: '2026-01-02'

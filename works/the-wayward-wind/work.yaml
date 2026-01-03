@@ -1,0 +1,18 @@
+id: the-wayward-wind
+title: The Wayward Wind
+artist: Patsy Cline
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewaywardwindlyricschords.pro
+    imported_at: '2026-01-02'

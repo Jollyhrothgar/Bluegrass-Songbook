@@ -1,0 +1,15 @@
+id: you-can-t-keep-a-good-memory-down
+title: You Can't Keep A Good Memory Down
+artist: John Anderson
+composers:
+- Roger Murrah and Bruce Burch
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantkeepagoodmemorydownlyricschords.pro
+    imported_at: '2026-01-02'

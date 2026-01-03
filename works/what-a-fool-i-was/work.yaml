@@ -1,0 +1,17 @@
+id: what-a-fool-i-was
+title: What A Fool I Was
+artist: Eddy Arnold
+composers:
+- Stu Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatafooliwaslyricschords.pro
+    imported_at: '2026-01-02'

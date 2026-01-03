@@ -1,0 +1,17 @@
+id: don-t-let-your-deal-go-down
+title: Don't Let Your Deal Go Down
+artist: Lester Flatt and Earl Scruggs
+composers:
+- Gladys Stacey, Louise Certain,
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontletyourdealgodownlyricschords.pro
+    imported_at: '2026-01-02'

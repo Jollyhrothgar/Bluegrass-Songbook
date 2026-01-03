@@ -1,0 +1,17 @@
+id: tall-pines
+title: Tall Pines
+artist: Laurie Lewis
+composers:
+- Damon Black
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tallpineslyricsandchords.pro
+    imported_at: '2026-01-02'

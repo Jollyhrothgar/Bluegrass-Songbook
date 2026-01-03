@@ -1,0 +1,17 @@
+id: a-teardrop-on-a-rose
+title: A Teardrop on a Rose
+artist: Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ateardroponaroselyricschords.pro
+    imported_at: '2026-01-02'

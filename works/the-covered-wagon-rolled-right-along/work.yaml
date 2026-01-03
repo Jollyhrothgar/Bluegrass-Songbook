@@ -1,0 +1,17 @@
+id: the-covered-wagon-rolled-right-along
+title: The Covered Wagon Rolled Right Along
+artist: Bob Wills
+composers:
+- Hy Heath and Britt Wood
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thecoveredwagonrolledrightalonglyricschords.pro
+    imported_at: '2026-01-02'

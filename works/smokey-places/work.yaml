@@ -1,0 +1,17 @@
+id: smokey-places
+title: Smokey Places
+artist: Billy Walker
+composers:
+- Abner Spector
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: smokeyplaceslyricschords.pro
+    imported_at: '2026-01-02'

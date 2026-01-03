@@ -1,0 +1,20 @@
+id: he-can-t-fill-my-shoes
+title: He Can't Fill My Shoes
+artist: Jerry Lee Lewis
+composers:
+- Larry Kingston and Frank Dycus
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hecantfillmyshoeslyricschords.pro
+    imported_at: '2026-01-02'

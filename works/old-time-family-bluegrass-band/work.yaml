@@ -1,0 +1,18 @@
+id: old-time-family-bluegrass-band
+title: Old Time Family Bluegrass Band
+artist: The Oak Ridge Boys
+composers:
+- Mike Hufman
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldtimefamilybluegrassbandlyricschords.pro
+    imported_at: '2026-01-02'

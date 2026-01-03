@@ -1,0 +1,17 @@
+id: i-ve-got-precious-memories
+title: I've Got Precious Memories
+artist: Faron Young
+composers:
+- Billy Deaton, Ellen Crandell, Sam Givens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotpreciousmemorieslyricschords.pro
+    imported_at: '2026-01-02'

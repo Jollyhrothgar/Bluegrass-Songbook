@@ -1,0 +1,20 @@
+id: it-all-depends-on-who-will-buy-the-wine
+title: It All Depends On Who Will Buy The Wine
+artist: Jerry Lee Lewis
+composers:
+- Billy B. Mize
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: italldependsonwhowillbuythewinelyricschords.pro
+    imported_at: '2026-01-02'

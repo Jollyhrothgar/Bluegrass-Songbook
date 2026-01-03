@@ -1,0 +1,15 @@
+id: we-found-it-in-each-other-s-arms
+title: We Found It In Each Other's Arms
+artist: Jack Greene
+composers:
+- Hank Cochran and Red Lane
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wefounditineachothersarmslyricschords.pro
+    imported_at: '2026-01-02'

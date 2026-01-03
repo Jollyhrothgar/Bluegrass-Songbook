@@ -1,0 +1,18 @@
+id: that-ol-wind
+title: That Ol' Wind
+artist: Garth Brooks
+composers:
+- Leigh Reynolds and Garth Brooks
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatolwindlyricschords.pro
+    imported_at: '2026-01-02'

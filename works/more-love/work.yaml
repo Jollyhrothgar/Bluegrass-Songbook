@@ -1,0 +1,17 @@
+id: more-love
+title: More Love
+artist: Doug Stone
+composers:
+- Gary Scott Burr and Doug Stone
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: morelovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: just-a-little-thing
+title: Just A Little Thing
+artist: Billy Crash Craddock
+composers:
+- Marijohn Wilkin and Grady Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justalittlethinglyricschords.pro
+    imported_at: '2026-01-02'

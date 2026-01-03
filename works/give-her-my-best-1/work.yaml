@@ -1,0 +1,17 @@
+id: give-her-my-best-1
+title: Give Her My Best
+artist: Gene Watson
+composers:
+- Debbie Hullett
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givehermybestlyricschords.pro
+    imported_at: '2026-01-02'

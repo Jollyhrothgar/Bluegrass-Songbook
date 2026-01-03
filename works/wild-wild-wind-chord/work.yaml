@@ -1,0 +1,17 @@
+id: wild-wild-wind-chord
+title: Wild Wild Wind chord
+artist: Stonewall Jackson
+composers:
+- Roy Botkin and Wade Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wildwildwindlyricschords.pro
+    imported_at: '2026-01-02'

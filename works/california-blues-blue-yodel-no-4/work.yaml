@@ -1,0 +1,17 @@
+id: california-blues-blue-yodel-no-4
+title: California Blues (Blue Yodel No. 4)
+artist: Webb Pierce
+composers:
+- Jimmie Rodgers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: californiablueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: it-s-nice-to-be-with-you
+title: It's Nice To Be With You
+artist: Anne Murray
+composers:
+- Jerry Goldstein
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsnicetobewithyoulyricschords.pro
+    imported_at: '2026-01-02'

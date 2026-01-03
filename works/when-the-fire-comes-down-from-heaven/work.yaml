@@ -1,0 +1,17 @@
+id: when-the-fire-comes-down-from-heaven
+title: When The Fire Comes Down From Heaven
+artist: Hank Williams Sr.
+composers:
+- Milton Estes, John W. Fowler, Tommy Harrell, Paul M. Kinsey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthefirecomesdownfromheavenlyricschords.pro
+    imported_at: '2026-01-02'

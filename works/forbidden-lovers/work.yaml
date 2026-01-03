@@ -1,0 +1,19 @@
+id: forbidden-lovers
+title: Forbidden Lovers
+artist: Hank Snow
+composers:
+- Wayne P. Walker and Irene Stanton
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forbiddenloverslyricschords.pro
+    imported_at: '2026-01-02'

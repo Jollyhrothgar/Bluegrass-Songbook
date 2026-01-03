@@ -1,0 +1,17 @@
+id: have-yourself-a-merry-little-christmas
+title: Have Yourself A Merry Little Christmas
+artist: Suzy Bogguss
+composers:
+- Hugh Martin and Ralph Blane
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveyourselfamerrylittleChristmaslyricschords.pro
+    imported_at: '2026-01-02'

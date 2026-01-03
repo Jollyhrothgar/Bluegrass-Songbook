@@ -1,0 +1,18 @@
+id: that-s-what-sells-the-wine
+title: That's What Sells The Wine
+artist: Hank Thompson
+composers:
+- Marshall T. Massy and Gabe Tucker
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatsellsthewinelyricschords.pro
+    imported_at: '2026-01-02'

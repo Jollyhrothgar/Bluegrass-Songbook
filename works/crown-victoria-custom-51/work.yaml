@@ -1,0 +1,20 @@
+id: crown-victoria-custom-51
+title: Crown Victoria Custom '51
+artist: Jerry Lee Lewis
+composers:
+- Andy Paley, Jerry Lee Burton,
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crownvictoriacustom51lyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: easy-come-easy-go-2
+title: Easy Come Easy Go
+artist: Johnny Rodriguez
+composers:
+- Billy Joe Shaver
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easycomeeasygolyricswithchords.pro
+    imported_at: '2026-01-02'

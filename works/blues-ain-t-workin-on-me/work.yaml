@@ -1,0 +1,18 @@
+id: blues-ain-t-workin-on-me
+title: Blues Ain't Workin' On Me
+artist: Rhonda Vincent
+composers:
+- George Teren and Tom Shapiro
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluesaintworkinonmelyricschords.pro
+    imported_at: '2026-01-02'

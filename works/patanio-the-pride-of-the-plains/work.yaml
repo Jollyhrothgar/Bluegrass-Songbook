@@ -1,0 +1,17 @@
+id: patanio-the-pride-of-the-plains
+title: Patanio The Pride Of The Plains
+artist: Billy Walker
+composers:
+- Harry C. McAuliffe and Bobby Gregory
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pataniotheprideoftheplainslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: hold-everything-till-i-get-home
+title: Hold Everything Till I Get Home
+artist: Red Sovine
+composers:
+- Red Hayes and Buddy Dee
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdeverythingtilligethomelyricschords.pro
+    imported_at: '2026-01-02'

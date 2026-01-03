@@ -1,0 +1,17 @@
+id: before-i-die
+title: Before I Die
+artist: The Oak Ridge Boys
+composers:
+- Woody Mullis and Trey Matthews
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforeidielyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: ain-t-it-amazing-gracie
+title: Ain't It Amazing Gracie
+artist: Buck Owens
+composers:
+- Buck Owens and Glen Garrison
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintitamazinggracielyricschords.pro
+    imported_at: '2026-01-02'

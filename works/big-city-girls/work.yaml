@@ -1,0 +1,17 @@
+id: big-city-girls
+title: Big City Girls
+artist: Carl Belew
+composers:
+- Baker Knight
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigcitygirlslyricschords.pro
+    imported_at: '2026-01-02'

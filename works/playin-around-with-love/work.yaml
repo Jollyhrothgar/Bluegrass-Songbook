@@ -1,0 +1,15 @@
+id: playin-around-with-love
+title: Playin' Around With Love
+artist: Barbara Mandrell
+composers:
+- Billy Sherrill
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: playinaroundwithlovelyricschords.pro
+    imported_at: '2026-01-02'

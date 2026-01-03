@@ -1,0 +1,17 @@
+id: sugar-in-your-coffee
+title: Sugar In Your Coffee
+artist: Bill Anderson
+composers:
+- Ray Griff
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sugarinyourcoffeelyricschords.pro
+    imported_at: '2026-01-02'

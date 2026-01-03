@@ -1,0 +1,17 @@
+id: we-ll-never-change
+title: We'll Never Change
+artist: Ernest Tubb and Loretta Lynn
+composers:
+- John Cliff
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wellneverchangelyricschords.pro
+    imported_at: '2026-01-02'

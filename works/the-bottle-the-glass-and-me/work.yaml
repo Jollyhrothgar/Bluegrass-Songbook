@@ -1,0 +1,17 @@
+id: the-bottle-the-glass-and-me
+title: The Bottle The Glass And Me
+artist: Jerry Wallace
+composers:
+- Gloria McMurtry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebottletheglassandmelyricschords.pro
+    imported_at: '2026-01-02'

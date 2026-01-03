@@ -1,0 +1,17 @@
+id: goin-and-comin
+title: Goin' And Comin'
+artist: Wilburn Brothers
+composers:
+- Jean Cole and Leon Scudder
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goinandcominlyricschords.pro
+    imported_at: '2026-01-02'

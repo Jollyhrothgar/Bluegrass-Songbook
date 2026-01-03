@@ -1,0 +1,17 @@
+id: one-night-to-remember
+title: One Night To Remember
+artist: Ray Price
+composers:
+- Raymond Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onenighttorememberlyricschords.pro
+    imported_at: '2026-01-02'

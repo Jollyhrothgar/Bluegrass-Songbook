@@ -1,0 +1,16 @@
+id: put-your-head-on-my-shoulder
+title: Put Your Head On My Shoulder
+artist: Paul Anka
+default_key: G
+tags:
+- Pop
+- Jazz
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: putyourheadonmyshoulderlyricschords.pro
+    imported_at: '2026-01-02'

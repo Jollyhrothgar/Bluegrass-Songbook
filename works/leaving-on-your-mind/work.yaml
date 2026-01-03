@@ -1,0 +1,19 @@
+id: leaving-on-your-mind
+title: Leaving on Your Mind
+artist: Patsy Cline
+composers:
+- Wayne Walker &amp; Webb Pierce
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leavingonyourmindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: more-than-a-poor-boy-can-give
+title: More Than A Poor Boy Can Give
+artist: Bobby Bare
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: morethanapoorboycangivelyricschords.pro
+    imported_at: '2026-01-02'

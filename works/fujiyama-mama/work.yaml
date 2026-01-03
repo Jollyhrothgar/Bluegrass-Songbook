@@ -1,0 +1,18 @@
+id: fujiyama-mama
+title: Fujiyama Mama
+artist: Wanda Jackson
+composers:
+- Earl Burrows
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fujiyamamamalyricschords.pro
+    imported_at: '2026-01-02'

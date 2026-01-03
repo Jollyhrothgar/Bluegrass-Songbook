@@ -1,0 +1,17 @@
+id: love-is-like-an-echo
+title: Love Is Like An Echo
+artist: Vern Gosdin
+composers:
+- Rayburn Anthony, Patsy Littrell, Stan Plumlee
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveislikeanecholyricschords.pro
+    imported_at: '2026-01-02'

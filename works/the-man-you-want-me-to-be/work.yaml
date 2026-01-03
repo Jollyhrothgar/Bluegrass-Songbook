@@ -1,0 +1,15 @@
+id: the-man-you-want-me-to-be
+title: The Man You Want Me To Be
+artist: Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themanyouwantmetobelyricschords.pro
+    imported_at: '2026-01-02'

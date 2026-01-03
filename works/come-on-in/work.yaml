@@ -1,0 +1,18 @@
+id: come-on-in
+title: Come On In
+artist: The Oak Ridge Boys
+composers:
+- Rick Giles and George Green
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comeoninlyrics-chords.pro
+    imported_at: '2026-01-02'

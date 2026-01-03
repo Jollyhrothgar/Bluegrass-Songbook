@@ -1,0 +1,18 @@
+id: dont-cry-to-me
+title: Don’t Cry to Me
+artist: Jimmy Martin
+composers:
+- Jimmy Martin and Paul Williams
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontcrytomelyricschords.pro
+    imported_at: '2026-01-02'

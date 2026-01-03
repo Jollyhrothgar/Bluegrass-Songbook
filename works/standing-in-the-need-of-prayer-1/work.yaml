@@ -1,0 +1,16 @@
+id: standing-in-the-need-of-prayer-1
+title: Standing In The Need Of Prayer
+artist: The Stanley Brothers
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: standingintheneedofprayerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: blue-bonnet-lane
+title: Blue Bonnet Lane
+artist: J.D. Crowe
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluebonnetlanelyricsandchords.pro
+    imported_at: '2026-01-02'

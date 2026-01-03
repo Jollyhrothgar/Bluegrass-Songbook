@@ -1,0 +1,17 @@
+id: when-i-m-knee-deep-in-bluegrass
+title: When I'm Knee Deep In Bluegrass
+artist: Doyle Lawson
+composers:
+- Pete Goble
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenimkneedeepinbluegrasslyricschords.pro
+    imported_at: '2026-01-02'

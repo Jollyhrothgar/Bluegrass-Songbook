@@ -1,0 +1,17 @@
+id: don-t-fall-in-love-with-a-dreamer
+title: Don't Fall In Love With A Dreamer
+artist: Kenny Rogers
+composers:
+- David Ellingson and Kim Carnes
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontfallinlovewithadreamerlyricschords.pro
+    imported_at: '2026-01-02'

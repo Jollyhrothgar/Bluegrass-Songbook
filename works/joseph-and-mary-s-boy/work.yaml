@@ -1,0 +1,15 @@
+id: joseph-and-mary-s-boy
+title: Joseph And Mary's Boy
+artist: Alabama
+composers:
+- Don Cook and Keith Whitley
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: josephandmarysboylyricschords.pro
+    imported_at: '2026-01-02'

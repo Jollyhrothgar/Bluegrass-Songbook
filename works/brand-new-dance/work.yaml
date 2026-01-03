@@ -1,0 +1,18 @@
+id: brand-new-dance
+title: Brand New Dance
+artist: Emmylou Harris
+composers:
+- Paul Kennerley
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brandnewdancelyricschords.pro
+    imported_at: '2026-01-02'

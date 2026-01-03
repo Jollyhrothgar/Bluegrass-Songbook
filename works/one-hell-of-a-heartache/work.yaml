@@ -1,0 +1,15 @@
+id: one-hell-of-a-heartache
+title: One Hell Of A Heartache
+artist: Gene Watson
+composers:
+- Keith Palmer & Janet White Demmans
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onehellofaheartachelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: 30-000-feet
+title: 30,000 Feet
+artist: John Anderson
+composers:
+- Troy Seals and John Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 30000feetlyricschords.pro
+    imported_at: '2026-01-02'

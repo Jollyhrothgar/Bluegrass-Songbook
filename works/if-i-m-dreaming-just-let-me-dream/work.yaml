@@ -1,0 +1,19 @@
+id: if-i-m-dreaming-just-let-me-dream
+title: If I'm Dreaming Just Let Me Dream
+artist: Brenda Lee
+composers:
+- Charlie Singleton
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifimdreamingjustletmedreamlyricschords.pro
+    imported_at: '2026-01-02'

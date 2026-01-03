@@ -1,0 +1,17 @@
+id: a-rose-is-a-rose-is-a-rose
+title: A Rose Is A Rose Is A Rose
+artist: Jimmy Dean
+composers:
+- Ricci Mareno and Gordon Galbraith
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aroseisaroseisaroselyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: flowers-won-t-grow
+title: Flowers Won't Grow
+artist: Don Williams
+composers:
+- Bob McDill and Bucky Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: flowerswontgrowlyricschords.pro
+    imported_at: '2026-01-02'

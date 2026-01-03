@@ -1,0 +1,17 @@
+id: gathering-in-the-sky
+title: Gathering In The Sky
+artist: Porter Wagoner
+composers:
+- Wayne Raney and R.E. Winsett
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gatheringintheskylyricschords.pro
+    imported_at: '2026-01-02'

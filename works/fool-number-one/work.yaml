@@ -1,0 +1,19 @@
+id: fool-number-one
+title: Fool Number One
+artist: Brenda Lee
+composers:
+- Kathryn R. Fulton
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolnumberonelyricschords.pro
+    imported_at: '2026-01-02'

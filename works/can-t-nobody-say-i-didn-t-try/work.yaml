@@ -1,0 +1,15 @@
+id: can-t-nobody-say-i-didn-t-try
+title: Can't Nobody Say I Didn't Try
+artist: Delbert McClinton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantnobodysayididnttrylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-have-found-the-way
+title: I Have Found the Way
+artist: Doyle Lawson
+composers:
+- Adgar M Pace and L.A. Green
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihavefoundthewaylyricschords.pro
+    imported_at: '2026-01-02'

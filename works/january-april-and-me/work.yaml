@@ -1,0 +1,17 @@
+id: january-april-and-me
+title: January April And Me
+artist: Curtis Potter
+composers:
+- Billy Mize
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: januaryaprilandmelyricschords.pro
+    imported_at: '2026-01-02'

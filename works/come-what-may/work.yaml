@@ -1,0 +1,21 @@
+id: come-what-may
+title: Come What May
+artist: Elvis Presley
+composers:
+- Frank Tableporter
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comewhatmaylyricschords.pro
+    imported_at: '2026-01-02'

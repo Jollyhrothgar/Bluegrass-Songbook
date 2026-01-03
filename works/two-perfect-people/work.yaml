@@ -1,0 +1,17 @@
+id: two-perfect-people
+title: Two Perfect People
+artist: Freddie Hart
+composers:
+- Freddie Hart
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twoperfectpeoplelyricschords.pro
+    imported_at: '2026-01-02'

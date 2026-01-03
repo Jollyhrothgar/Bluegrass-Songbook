@@ -1,0 +1,17 @@
+id: right-on-time
+title: Right On Time
+artist: Randy Travis
+composers:
+- Sharon Vaughn and Al Anderson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rightontimelyricschords.pro
+    imported_at: '2026-01-02'

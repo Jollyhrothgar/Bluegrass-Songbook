@@ -1,0 +1,18 @@
+id: road-to-surrender
+title: Road To Surrender
+artist: Randy Travis
+composers:
+- Angela Russell, Buffy Lawson, Gary Duffey
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: roadtosurrenderlyricschords.pro
+    imported_at: '2026-01-02'

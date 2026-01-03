@@ -1,0 +1,18 @@
+id: if-i-had-a-hammer
+title: If I Had A Hammer
+artist: Wanda Jackson
+composers:
+- Lee Hayes and Pete Seeger
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifihadahammerlyricschords.pro
+    imported_at: '2026-01-02'

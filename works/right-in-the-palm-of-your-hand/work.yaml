@@ -1,0 +1,18 @@
+id: right-in-the-palm-of-your-hand
+title: Right In The Palm Of Your Hand
+artist: Conway Twitty
+composers:
+- Bob McDill
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rightinthepalmofyourhandlyricschords.pro
+    imported_at: '2026-01-02'

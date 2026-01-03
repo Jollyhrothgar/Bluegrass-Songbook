@@ -1,0 +1,18 @@
+id: ain-t-goin-down-till-the-sun-comes-up
+title: Ain't Goin' Down (Till The Sun Comes Up)
+artist: Garth Brooks
+composers:
+- Kent Blazy, Kim Williams, Garth Brooks
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintgoindowntillthesuncomesuplyricschords.pro
+    imported_at: '2026-01-02'

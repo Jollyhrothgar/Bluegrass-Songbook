@@ -1,0 +1,18 @@
+id: no-letter-today
+title: No Letter Today
+artist: Hank Snow
+composers:
+- Frankie Brown
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nolettertodaylyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: all-that-i-am
+title: All That I Am
+artist: Elvis Presley
+composers:
+- Sid Tepper and Roy C. Bennett
+default_key: F
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allthatiamlyricschords.pro
+    imported_at: '2026-01-02'

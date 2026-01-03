@@ -1,0 +1,17 @@
+id: if-i-don-t-love-you
+title: If I Don't Love You
+artist: George Jones
+composers:
+- Eddie Burton and John Dennis Knutson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifidontloveyoulyricsandchords.pro
+    imported_at: '2026-01-02'

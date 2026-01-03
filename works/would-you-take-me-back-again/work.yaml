@@ -1,0 +1,18 @@
+id: would-you-take-me-back-again
+title: Would You Take Me Back Again
+artist: Marty Robbins
+composers:
+- Bobby Sykes
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wouldyoutakemebackagainlyricschords.pro
+    imported_at: '2026-01-02'

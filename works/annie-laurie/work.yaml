@@ -1,0 +1,17 @@
+id: annie-laurie
+title: Annie Laurie
+artist: Slim Whitman
+composers:
+- Alicia Ann Spottiswoode
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: annielaurielyricschords.pro
+    imported_at: '2026-01-02'

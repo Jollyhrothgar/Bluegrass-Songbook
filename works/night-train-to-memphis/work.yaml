@@ -1,0 +1,17 @@
+id: night-train-to-memphis
+title: Night Train To Memphis
+artist: Jimmy Dean
+composers:
+- Marvin Hughes/Beasley Smith/Owen Bradley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nighttraintomemphislyricschords.pro
+    imported_at: '2026-01-02'

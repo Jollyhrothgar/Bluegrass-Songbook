@@ -1,0 +1,17 @@
+id: everybody-s-sweetheart
+title: Everybody's Sweetheart
+artist: Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodyssweetheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: red-is-the-rose
+title: Red Is The Rose
+artist: Mary Duff
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: redistheroselyricschords.pro
+    imported_at: '2026-01-02'

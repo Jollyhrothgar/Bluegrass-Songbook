@@ -1,0 +1,17 @@
+id: band-keeps-playing-on
+title: Band Keeps Playing On
+artist: Charlie Walker
+composers:
+- Red Simpson and Fuzzy Owen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bandkeepsplayingonlyricschords.pro
+    imported_at: '2026-01-02'

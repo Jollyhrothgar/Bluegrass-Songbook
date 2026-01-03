@@ -1,0 +1,16 @@
+id: draggin-the-bow
+title: Draggin' the Bow
+artist: Traditional
+default_key: A
+tags:
+- Instrumental
+- Bluegrass
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-ll-always-be-in-my-heart
+title: You'll Always Be In My Heart
+artist: Maxine, Bonnie and Jim Ed Brown
+composers:
+- Billy Barton and Fabor Robinson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllalwaysbeinmyheartlyricschords.pro
+    imported_at: '2026-01-02'

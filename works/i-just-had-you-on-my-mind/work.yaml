@@ -1,0 +1,17 @@
+id: i-just-had-you-on-my-mind
+title: I Just Had You On My Mind
+artist: Jean Shepard
+composers:
+- Sue Richards
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijusthadyouonmymindlyricschords.pro
+    imported_at: '2026-01-02'

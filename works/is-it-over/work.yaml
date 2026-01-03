@@ -1,0 +1,17 @@
+id: is-it-over
+title: Is It Over
+artist: Ronnie Milsap
+composers:
+- Charles W. Quillen and Michael Barry Reid
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isitoverlyricschords.pro
+    imported_at: '2026-01-02'

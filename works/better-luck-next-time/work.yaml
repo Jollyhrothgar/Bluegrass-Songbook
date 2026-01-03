@@ -1,0 +1,15 @@
+id: better-luck-next-time
+title: Better Luck Next Time
+artist: Banner Mountain Boys
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betterlucknexttimelyricschords.pro
+    imported_at: '2026-01-02'

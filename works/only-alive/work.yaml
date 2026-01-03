@@ -1,0 +1,19 @@
+id: only-alive
+title: Only Alive
+artist: Roy Orbison
+composers:
+- Dewayne Blackwell and Ronald Blackwell
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onlyalivelyricschords.pro
+    imported_at: '2026-01-02'

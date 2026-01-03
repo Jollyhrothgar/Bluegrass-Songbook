@@ -1,0 +1,18 @@
+id: living-like-a-fool
+title: Living Like A Fool
+artist: Jimmy Martin
+composers:
+- Buckley Maxwell and Jerry Crutchfield
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: livinglikeafoollyricschords.pro
+    imported_at: '2026-01-02'

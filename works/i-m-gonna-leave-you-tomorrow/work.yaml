@@ -1,0 +1,17 @@
+id: i-m-gonna-leave-you-tomorrow
+title: I'm Gonna Leave You Tomorrow
+artist: John Schneider
+composers:
+- Tim Daniels, Gene Dobbins, Johnny Wilson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnaleaveyoutomorrowlyricschords.pro
+    imported_at: '2026-01-02'

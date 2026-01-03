@@ -1,0 +1,18 @@
+id: shopping-for-dresses
+title: Shopping For Dresses
+artist: Merle Haggard
+composers:
+- Jimmie Dickens and Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shoppingfordresseslyricschords.pro
+    imported_at: '2026-01-02'

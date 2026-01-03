@@ -1,0 +1,17 @@
+id: someone-took-my-place-with-you
+title: Someone Took My Place With You
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Lester Flatt, Earl Scruggs, Gurney Thomas
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someonetookmyplacewithyoulyricschords.pro
+    imported_at: '2026-01-02'

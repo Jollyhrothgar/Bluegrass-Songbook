@@ -1,0 +1,16 @@
+id: backside-of-thirty
+title: Backside Of Thirty
+artist: John Conlee
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backsideofthirtylyricschords.pro
+    imported_at: '2026-01-02'

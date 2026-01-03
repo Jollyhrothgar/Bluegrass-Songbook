@@ -1,0 +1,17 @@
+id: when-god-dips-his-love-in-my-heart
+title: When God Dips His Love In My Heart
+artist: Webb Pierce
+composers:
+- Cleavant Derricks
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenGoddipshisloveinmyheartlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: the-fool-strikes-again
+title: The Fool Strikes Again
+artist: Johnny Paycheck
+composers:
+- Mark Sherrill, Steve Davis, Gary Cobb
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thefoolstrikesagainlyricschords.pro
+    imported_at: '2026-01-02'

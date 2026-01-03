@@ -1,0 +1,18 @@
+id: sail-away-1
+title: Sail Away
+artist: The Oak Ridge Boys
+composers:
+- Rafe Van Hoy
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sailawaylyricschords.pro
+    imported_at: '2026-01-02'

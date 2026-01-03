@@ -1,0 +1,19 @@
+id: a-thousand-times-a-day-2
+title: A Thousand Times A Day
+artist: Patty Loveless
+composers:
+- Gary Burr and Gary Nicholson
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: athousandtimesadaylyricswithchords.pro
+    imported_at: '2026-01-02'

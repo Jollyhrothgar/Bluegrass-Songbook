@@ -1,0 +1,15 @@
+id: it-wouldn-t-kill-me
+title: It Wouldn't Kill Me
+artist: Ricky Van Shelton
+composers:
+- Larry Boone, Paul Nelson, Tom Shapiro
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itwouldntkillmelyricschords.pro
+    imported_at: '2026-01-02'

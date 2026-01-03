@@ -1,0 +1,17 @@
+id: just-now-thought-of-you
+title: Just Now Thought Of You
+artist: Wynn Stewart
+composers:
+- Bessie George
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justnowthoughtofyoulyricschords.pro
+    imported_at: '2026-01-02'

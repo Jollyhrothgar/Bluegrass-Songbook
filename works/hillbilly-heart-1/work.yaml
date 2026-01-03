@@ -1,0 +1,17 @@
+id: hillbilly-heart-1
+title: Hillbilly Heart
+artist: Johnny Rodriguez
+composers:
+- Johnny Christopher and Dan Penn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hillbillyheartlyricschords.pro
+    imported_at: '2026-01-02'

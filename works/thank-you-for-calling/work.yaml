@@ -1,0 +1,15 @@
+id: thank-you-for-calling
+title: Thank You For Calling
+artist: Billy Walker
+composers:
+- Cindy Walker
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankyouforcallinglyricschords.pro
+    imported_at: '2026-01-02'

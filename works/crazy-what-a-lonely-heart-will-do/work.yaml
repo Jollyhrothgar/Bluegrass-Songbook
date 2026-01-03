@@ -1,0 +1,18 @@
+id: crazy-what-a-lonely-heart-will-do
+title: Crazy What A Lonely Heart Will Do
+artist: Rhonda Vincent
+composers:
+- Jimbeau Hinson and Paulette Carlson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crazywhatalonelyheartwilldolyricschords.pro
+    imported_at: '2026-01-02'

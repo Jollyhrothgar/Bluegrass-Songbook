@@ -1,0 +1,17 @@
+id: the-shepherd-s-call
+title: The Shepherd's Call
+artist: Crabb Family
+composers:
+- Gerald Crabb
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theshepherdscalllyricschords.pro
+    imported_at: '2026-01-02'

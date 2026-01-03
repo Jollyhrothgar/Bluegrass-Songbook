@@ -1,0 +1,17 @@
+id: i-don-t-believe-i-ll-fall-in-love-today
+title: I Don't Believe I'll Fall in Love Today
+artist: Buck Owens
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontbelieveillfallinlovetodaylyricschords.pro
+    imported_at: '2026-01-02'

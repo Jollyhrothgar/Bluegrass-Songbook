@@ -1,0 +1,17 @@
+id: chapel-bells
+title: Chapel Bells
+artist: Norma Jean
+composers:
+- Chickie King
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: chapelbellslyricschords.pro
+    imported_at: '2026-01-02'

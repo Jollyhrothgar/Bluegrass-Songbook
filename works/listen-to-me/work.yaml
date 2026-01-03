@@ -1,0 +1,18 @@
+id: listen-to-me
+title: Listen To Me
+artist: Buddy Holly
+composers:
+- Norman Petty and Buddy Holly
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: listentomelyricschords.pro
+    imported_at: '2026-01-02'

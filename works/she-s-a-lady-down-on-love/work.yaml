@@ -1,0 +1,17 @@
+id: she-s-a-lady-down-on-love
+title: She's A Lady Down On Love
+artist: Alabama
+composers:
+- Randy Owen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesaladydownonlovelyricschords.pro
+    imported_at: '2026-01-02'

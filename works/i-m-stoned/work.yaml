@@ -1,0 +1,17 @@
+id: i-m-stoned
+title: I'm Stoned
+artist: Alabama
+composers:
+- Randy Owens and Teddy Gentry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imstonedlyricschords.pro
+    imported_at: '2026-01-02'

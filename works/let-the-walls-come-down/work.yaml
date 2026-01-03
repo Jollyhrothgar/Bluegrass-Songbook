@@ -1,0 +1,20 @@
+id: let-the-walls-come-down
+title: Let the Walls Come Down
+artist: Kris Kristofferson
+composers:
+- Steve Bruton, Glen A. Clark, Danny Timms
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letthewallscomedownlyricschords.pro
+    imported_at: '2026-01-02'

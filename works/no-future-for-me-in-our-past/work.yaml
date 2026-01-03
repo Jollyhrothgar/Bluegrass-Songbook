@@ -1,0 +1,17 @@
+id: no-future-for-me-in-our-past
+title: No Future For Me In Our Past
+artist: George Jones
+composers:
+- Leigh Dillard and Glenn Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nofutureformeinourpastlyricschords.pro
+    imported_at: '2026-01-02'

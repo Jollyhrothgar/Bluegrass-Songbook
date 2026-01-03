@@ -1,0 +1,15 @@
+id: i-ll-forgive-and-forget
+title: I'll Forgive And Forget
+artist: Webb Pierce
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illforgiveandforgetlyricschords.pro
+    imported_at: '2026-01-02'

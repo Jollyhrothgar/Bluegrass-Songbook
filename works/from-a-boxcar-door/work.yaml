@@ -1,0 +1,17 @@
+id: from-a-boxcar-door
+title: From A Boxcar Door
+artist: Boxcar Willie
+composers:
+- Lecil Travis Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromaboxcardoorlyricschords.pro
+    imported_at: '2026-01-02'

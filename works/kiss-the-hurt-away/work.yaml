@@ -1,0 +1,17 @@
+id: kiss-the-hurt-away
+title: Kiss The Hurt Away
+artist: Barbara Mandrell
+composers:
+- Chuck Reed and Finley Duncan
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kissthehurtawaylyricschords.pro
+    imported_at: '2026-01-02'

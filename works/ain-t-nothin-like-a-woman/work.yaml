@@ -1,0 +1,15 @@
+id: ain-t-nothin-like-a-woman
+title: Ain't Nothin' Like A Woman
+artist: Dottie West
+composers:
+- Marvin Thomas and Mark Leggett
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintnothinlikeawomanlyricschords.pro
+    imported_at: '2026-01-02'

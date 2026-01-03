@@ -1,0 +1,19 @@
+id: where-do-you-go-to-lose-a-heartache
+title: Where Do You Go To Lose A Heartache
+artist: Mickey Gilley
+composers:
+- Eddie Kilroy
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheredoyougotoloseaheartachelyricschords.pro
+    imported_at: '2026-01-02'

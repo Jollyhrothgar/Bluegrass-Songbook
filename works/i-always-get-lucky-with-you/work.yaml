@@ -1,0 +1,17 @@
+id: i-always-get-lucky-with-you
+title: I Always Get Lucky With You
+artist: George Jones
+composers:
+- Merle Haggard, Freddy Powers, Gary Church
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ialwaysgetluckwithyoulyricschords.pro
+    imported_at: '2026-01-02'

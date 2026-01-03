@@ -1,0 +1,17 @@
+id: what-more-can-i-do
+title: What More Can I Do
+artist: Norma Jean
+composers:
+- Hank Cochran and Hound Dog Taylor
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatmorecanidolyricschords.pro
+    imported_at: '2026-01-02'

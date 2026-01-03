@@ -1,0 +1,16 @@
+id: you-made-me-what-i-am-today
+title: You Made Me What I Am Today
+artist: Conway Twitty
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmademewhatiamtodaylyricschords.pro
+    imported_at: '2026-01-02'

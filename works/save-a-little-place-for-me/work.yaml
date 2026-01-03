@@ -1,0 +1,17 @@
+id: save-a-little-place-for-me
+title: Save A Little Place For Me
+artist: Stonewall Jackson
+composers:
+- Stonewall Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: savealittleplaceformelyricschords.pro
+    imported_at: '2026-01-02'

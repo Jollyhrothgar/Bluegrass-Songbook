@@ -1,0 +1,17 @@
+id: wonder-when-my-baby-s-coming-home
+title: Wonder When My Baby's Coming Home
+artist: Barbara Mandrell
+composers:
+- Arthur Kent and Kermit Goell
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wonderwhenmybabyscominghomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: i-m-that-kind-of-girl
+title: I'm That Kind Of Girl
+artist: Patty Loveless
+composers:
+- Matraca Berg and Ronnie Samoset
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imthatkindofgirllyricschords.pro
+    imported_at: '2026-01-02'

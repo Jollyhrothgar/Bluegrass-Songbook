@@ -1,0 +1,17 @@
+id: why-don-t-you-leave-this-town
+title: Why Don't You Leave This Town
+artist: Hawkshaw Hawkins
+composers:
+- Lee Roberts
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydontyouleavethistownlyricschords.pro
+    imported_at: '2026-01-02'

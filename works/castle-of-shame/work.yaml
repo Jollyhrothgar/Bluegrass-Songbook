@@ -1,0 +1,17 @@
+id: castle-of-shame
+title: Castle Of Shame
+artist: Jean Shepard
+composers:
+- Dexter Shaffer and William Ellis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: castleofshamelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: i-want-to-be-like-jesus
+title: I Want To Be Like Jesus
+artist: Larry Sparks
+composers:
+- John Smith
+default_key: G
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttobelikeJesuslyricschords.pro
+    imported_at: '2026-01-02'

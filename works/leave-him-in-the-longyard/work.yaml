@@ -1,0 +1,17 @@
+id: leave-him-in-the-longyard
+title: Leave Him In The Longyard
+artist: Slim Dusty
+composers:
+- Kelly Dixon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leavehiminthelongyardlyricschords.pro
+    imported_at: '2026-01-02'

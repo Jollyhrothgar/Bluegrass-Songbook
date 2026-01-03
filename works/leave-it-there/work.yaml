@@ -1,0 +1,17 @@
+id: leave-it-there
+title: Leave It There
+artist: Joey and Rory
+composers:
+- Charles A. Tindley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leaveittherelyricschords.pro
+    imported_at: '2026-01-02'

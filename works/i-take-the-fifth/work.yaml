@@ -1,0 +1,17 @@
+id: i-take-the-fifth
+title: I Take The Fifth
+artist: Tony Booth
+composers:
+- Dave Lindsey, Leo Taylor, Lee Bach
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itakethefifthlyricschords.pro
+    imported_at: '2026-01-02'

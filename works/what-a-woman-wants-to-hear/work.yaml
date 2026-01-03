@@ -1,0 +1,18 @@
+id: what-a-woman-wants-to-hear
+title: What A Woman Wants To Hear
+artist: Rhonda Vincent
+composers:
+- Connie Leigh Sullivan and Rhonda Lea Vincent
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatawomanwantstohearlyricschords.pro
+    imported_at: '2026-01-02'

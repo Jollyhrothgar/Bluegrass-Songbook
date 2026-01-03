@@ -1,0 +1,19 @@
+id: lay-me-down-and-love-the-world-away
+title: Lay Me Down (And Love The World Away)
+artist: Kris Kristofferson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: laymedownandlovetheworldawaylyricschords.pro
+    imported_at: '2026-01-02'

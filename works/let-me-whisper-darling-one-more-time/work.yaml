@@ -1,0 +1,17 @@
+id: let-me-whisper-darling-one-more-time
+title: Let Me Whisper Darling One More Time
+artist: Bill Anderson
+composers:
+- Bill Anderson and Buddy Killen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmewhisperdarlingonemoretimelyricschords.pro
+    imported_at: '2026-01-02'

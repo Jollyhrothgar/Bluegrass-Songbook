@@ -1,0 +1,17 @@
+id: i-need-somebody-to-love-me
+title: I Need Somebody To Love Me
+artist: Billy Crash Craddock
+composers:
+- John Adrian
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineedsomebodytolovemelyricschords.pro
+    imported_at: '2026-01-02'

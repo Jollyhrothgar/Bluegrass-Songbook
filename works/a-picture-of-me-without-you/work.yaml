@@ -1,0 +1,17 @@
+id: a-picture-of-me-without-you
+title: A Picture of me Without You
+artist: George Jones
+composers:
+- Norro Wilson and George Richey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: apictureofmewithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

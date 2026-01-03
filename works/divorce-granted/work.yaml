@@ -1,0 +1,19 @@
+id: divorce-granted
+title: Divorce Granted
+artist: Ernest Tubb
+composers:
+- Charles E. Tebbetts and Dave Washington
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: divorcegrantedlyricschords.pro
+    imported_at: '2026-01-02'

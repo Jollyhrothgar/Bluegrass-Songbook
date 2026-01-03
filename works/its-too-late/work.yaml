@@ -1,0 +1,17 @@
+id: its-too-late
+title: It’s Too Late
+artist: Jeanne Pruett
+composers:
+- Bobby Goldsboro
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itstoolatelyricsandchords.pro
+    imported_at: '2026-01-02'

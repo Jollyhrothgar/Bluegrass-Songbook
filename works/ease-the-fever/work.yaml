@@ -1,0 +1,18 @@
+id: ease-the-fever
+title: Ease The Fever
+artist: Reba McEntire
+composers:
+- Bob Morrison, Jim Zerface, Bill Zerface
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easethefeverlyricschords.pro
+    imported_at: '2026-01-02'

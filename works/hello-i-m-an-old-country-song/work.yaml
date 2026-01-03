@@ -1,0 +1,17 @@
+id: hello-i-m-an-old-country-song
+title: Hello I'm an Old Country Song
+artist: Dale Watson
+composers:
+- Chris Wall and Dale Watson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helloimanoldcountrysonglyricschords.pro
+    imported_at: '2026-01-02'

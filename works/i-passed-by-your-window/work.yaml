@@ -1,0 +1,17 @@
+id: i-passed-by-your-window
+title: I Passed By Your Window
+artist: George Morgan
+composers:
+- Jack Lawrence and Paul Weston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ipassedbyyourwindowlyricschords.pro
+    imported_at: '2026-01-02'

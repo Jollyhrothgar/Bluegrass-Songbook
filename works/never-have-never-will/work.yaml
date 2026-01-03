@@ -1,0 +1,17 @@
+id: never-have-never-will
+title: Never Have Never Will
+artist: Ferlin Husky
+composers:
+- Tim Johnson and Steven Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: neverhaveneverwilllyricschords.pro
+    imported_at: '2026-01-02'

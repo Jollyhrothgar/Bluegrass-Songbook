@@ -1,0 +1,15 @@
+id: ill-go-down-swinging
+title: I’ll Go Down Swinging
+artist: Bill Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illgodownswinginglyricschords.pro
+    imported_at: '2026-01-02'

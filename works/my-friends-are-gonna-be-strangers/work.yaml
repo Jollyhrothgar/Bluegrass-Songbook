@@ -1,0 +1,18 @@
+id: my-friends-are-gonna-be-strangers
+title: My Friends Are Gonna Be Strangers
+artist: Merle Haggard
+composers:
+- Liz Anderson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myfriendsaregonnabestrangerslyricschords.pro
+    imported_at: '2026-01-02'

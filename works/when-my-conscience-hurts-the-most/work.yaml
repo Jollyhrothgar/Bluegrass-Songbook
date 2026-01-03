@@ -1,0 +1,17 @@
+id: when-my-conscience-hurts-the-most
+title: When My Conscience Hurts The Most
+artist: Charlie Walker
+composers:
+- Vic McAlpin and Lester Vanadore
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenmyconsciencehurtsthemostlyricschords.pro
+    imported_at: '2026-01-02'

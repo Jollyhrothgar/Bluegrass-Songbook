@@ -1,0 +1,17 @@
+id: whatever-happened-to-us
+title: Whatever Happened To Us
+artist: George Jones
+composers:
+- Donald R. Sampson and Donald R. Kees
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whateverhappenedtouslyricschords.pro
+    imported_at: '2026-01-02'

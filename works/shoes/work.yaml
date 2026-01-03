@@ -1,0 +1,20 @@
+id: shoes
+title: Shoes
+artist: Patsy Cline
+composers:
+- Hank Cochran and Velma Smith
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shoeslyricschords.pro
+    imported_at: '2026-01-02'

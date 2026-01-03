@@ -1,0 +1,19 @@
+id: till-the-pain-outwears-the-shame
+title: Till The Pain Outwears The Shame
+artist: Loretta Lynn
+composers:
+- Wiley Smith
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillthepainoutwearstheshamelyricschords.pro
+    imported_at: '2026-01-02'

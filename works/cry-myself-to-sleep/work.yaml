@@ -1,0 +1,17 @@
+id: cry-myself-to-sleep
+title: Cry Myself to Sleep
+artist: Louving Brothers
+composers:
+- Paul Kennerley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crymyselftosleeplyricschords.pro
+    imported_at: '2026-01-02'

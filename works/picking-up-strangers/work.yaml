@@ -1,0 +1,17 @@
+id: picking-up-strangers
+title: Picking Up Strangers
+artist: Johnny Lee
+composers:
+- Byron Hill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pickingupstrangerslyricschords.pro
+    imported_at: '2026-01-02'

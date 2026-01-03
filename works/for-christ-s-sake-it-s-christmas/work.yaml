@@ -1,0 +1,17 @@
+id: for-christ-s-sake-it-s-christmas
+title: For Christ's Sake It's Christmas
+artist: George Strait
+composers:
+- Hank Cochran and Dean Dillon
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forChristssakeitsChristmaslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: tonight-i-m-coming-home-to-an-angel
+title: Tonight I'm Coming Home To An Angel
+artist: Johnny Bush
+composers:
+- Glenn Sutton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tonightimcominghometoanangellyricschords.pro
+    imported_at: '2026-01-02'

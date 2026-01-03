@@ -1,0 +1,18 @@
+id: somebody-s-gonna-love-you
+title: Somebody's Gonna Love You
+artist: Lee Greenwood
+composers:
+- Don Cook and Rafe VanHoy
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodysgonnaloveyoulyricschords.pro
+    imported_at: '2026-01-02'

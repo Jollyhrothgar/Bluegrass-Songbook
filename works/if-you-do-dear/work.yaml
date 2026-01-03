@@ -1,0 +1,17 @@
+id: if-you-do-dear
+title: If You Do Dear
+artist: Carl Smith
+composers:
+- B. Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoudodearlyricschords.pro
+    imported_at: '2026-01-02'

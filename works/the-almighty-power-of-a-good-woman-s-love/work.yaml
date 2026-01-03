@@ -1,0 +1,18 @@
+id: the-almighty-power-of-a-good-woman-s-love
+title: The Almighty Power Of A Good Woman's Love
+artist: Conway Twitty
+composers:
+- L.E. White
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thealmightypowerofagoodwomanslovelyricschords.pro
+    imported_at: '2026-01-02'

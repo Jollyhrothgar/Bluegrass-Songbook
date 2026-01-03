@@ -1,0 +1,17 @@
+id: baby-you-don-t-know
+title: Baby You Don't Know
+artist: Ricky Nelson
+composers:
+- Dave Burgess and Jerry Fuller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyyoudontknowlyricschords.pro
+    imported_at: '2026-01-02'

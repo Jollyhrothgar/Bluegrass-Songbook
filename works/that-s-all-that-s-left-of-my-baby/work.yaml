@@ -1,0 +1,15 @@
+id: that-s-all-that-s-left-of-my-baby
+title: That's All That's Left Of My Baby
+artist: Cal Smith
+composers:
+- Lorene Allen and Walter Haynes
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsallthatsleftofmybabylyricschords.pro
+    imported_at: '2026-01-02'

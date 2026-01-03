@@ -1,0 +1,18 @@
+id: if-i-didn-t-love-you
+title: If I Didn't Love You
+artist: Tanya Tucker
+composers:
+- Rafe VanHoy and Deborah Allen
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifididntloveyoulyricsandchords.pro
+    imported_at: '2026-01-02'

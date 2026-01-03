@@ -1,0 +1,17 @@
+id: ain-t-she-sweet
+title: Ain't She Sweet
+artist: Ferlin Husky
+composers:
+- Jack Yellen and Milton Ager
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintshesweetlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-dyin-a-little-each-day
+title: I'm Dyin' A Little Each Day
+artist: Statler Brothers
+composers:
+- Harold Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imdyinalittleeachdaylyricschords.pro
+    imported_at: '2026-01-02'

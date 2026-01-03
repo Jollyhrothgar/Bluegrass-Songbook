@@ -1,0 +1,15 @@
+id: you-can-talk-me-out-of-anything
+title: You Can Talk Me Out Of Anything
+artist: Billy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantalkmeoutofanythinglyricschords.pro
+    imported_at: '2026-01-02'

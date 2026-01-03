@@ -1,0 +1,17 @@
+id: i-ve-learned-to-live-with-you-and-be-alone
+title: I've Learned To Live With You And Be Alone
+artist: Jean Shepard
+composers:
+- Ira Louvin and Charlie Louvin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivelearnedtolivewithyouandbealonelyricschords.pro
+    imported_at: '2026-01-02'

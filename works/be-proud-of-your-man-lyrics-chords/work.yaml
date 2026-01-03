@@ -1,0 +1,19 @@
+id: be-proud-of-your-man-lyrics-chords
+title: Be Proud Of Your Man Lyrics Chords
+artist: Loretta Lynn
+composers:
+- L.E. White and Betty Jo White
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beproudofyourmanlyricschords.pro
+    imported_at: '2026-01-02'

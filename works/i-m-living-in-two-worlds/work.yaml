@@ -1,0 +1,19 @@
+id: i-m-living-in-two-worlds
+title: I'm Living In Two Worlds
+artist: Loretta Lynn
+composers:
+- Jan Crutchfield
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlivingintwoworldslyricschords.pro
+    imported_at: '2026-01-02'

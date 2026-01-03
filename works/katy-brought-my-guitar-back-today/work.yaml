@@ -1,0 +1,15 @@
+id: katy-brought-my-guitar-back-today
+title: Katy Brought My Guitar Back Today
+artist: Alabama
+composers:
+- John Jarrard and Mickey Gates
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: katybroughtmyguitarbacktodaylyricschords.pro
+    imported_at: '2026-01-02'

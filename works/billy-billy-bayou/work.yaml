@@ -1,0 +1,17 @@
+id: billy-billy-bayou
+title: Billy Billy Bayou
+artist: Jim Reeves
+composers:
+- Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: billybillybayoulyricschords.pro
+    imported_at: '2026-01-02'

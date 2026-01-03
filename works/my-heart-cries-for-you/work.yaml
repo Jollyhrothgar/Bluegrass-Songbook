@@ -1,0 +1,15 @@
+id: my-heart-cries-for-you
+title: My Heart Cries For You
+artist: Bobby Bare
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartcriesforyoulyricschords.pro
+    imported_at: '2026-01-02'

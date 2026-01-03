@@ -1,0 +1,15 @@
+id: auld-lang-syne
+title: Auld Lang Syne
+artist: Boxcar Willie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: auldlangsynelyricschords.pro
+    imported_at: '2026-01-02'

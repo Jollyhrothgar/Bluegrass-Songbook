@@ -1,0 +1,15 @@
+id: wishing-all-these-old-things-were-new
+title: Wishing All These Old Things Were New
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wishingalltheseoldthingswerenewlyricschords.pro
+    imported_at: '2026-01-02'

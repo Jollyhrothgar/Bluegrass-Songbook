@@ -1,0 +1,18 @@
+id: old-soldier
+title: Old Soldier
+artist: Lacy J. Dalton
+composers:
+- Mary McFadden and Lacy J. Dalton
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldsoldierlyricschords.pro
+    imported_at: '2026-01-02'

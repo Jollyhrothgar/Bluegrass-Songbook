@@ -1,0 +1,18 @@
+id: you-set-my-dreams-to-music
+title: You Set My Dreams To Music
+artist: Anne Murray
+composers:
+- Molly Ann Leikin and Steve Dorff
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yousetmydreamstomusiclyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: alla-my-love-lyrics-chords
+title: Alla My Love Lyrics Chords
+artist: Webb Pierce
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allamylovelyricschords.pro
+    imported_at: '2026-01-02'

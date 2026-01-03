@@ -1,0 +1,17 @@
+id: she-told-me-so
+title: She Told Me So
+artist: Cal Smith
+composers:
+- Johnny Colmus
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shetoldmesolyricsandchords.pro
+    imported_at: '2026-01-02'

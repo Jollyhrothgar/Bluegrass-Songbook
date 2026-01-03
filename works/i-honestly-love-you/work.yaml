@@ -1,0 +1,17 @@
+id: i-honestly-love-you
+title: I Honestly Love You
+artist: Ronnie Milsap
+composers:
+- Peter Allen and Jeff Barry
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihonestlyloveyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: big-midnight-special-2
+title: Big Midnight Special
+artist: Jean Shepard
+composers:
+- Wilma Lee Cooper
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigmidnightspeciallyricswithchords.pro
+    imported_at: '2026-01-02'

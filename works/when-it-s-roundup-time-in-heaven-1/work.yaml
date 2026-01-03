@@ -1,0 +1,17 @@
+id: when-it-s-roundup-time-in-heaven-1
+title: When It's Roundup Time In Heaven
+artist: Cliff Carlisle
+composers:
+- Jimmie Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenitsrounduptimeinheavenlyricschords.pro
+    imported_at: '2026-01-02'

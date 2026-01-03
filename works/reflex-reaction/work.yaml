@@ -1,0 +1,18 @@
+id: reflex-reaction
+title: Reflex Reaction
+artist: Red Sovine
+composers:
+- Leon Payne
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: reflexreactionlyricschords.pro
+    imported_at: '2026-01-02'

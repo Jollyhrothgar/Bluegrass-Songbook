@@ -1,0 +1,21 @@
+id: my-father-s-son
+title: My Father's Son
+artist: Ricky Skaggs
+composers:
+- Ricky Skaggs and George Green
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myfatherssonlyricschords.pro
+    imported_at: '2026-01-02'

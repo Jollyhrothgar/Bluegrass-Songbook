@@ -1,0 +1,17 @@
+id: shooting-creek-1
+title: Shooting Creek
+artist: Traditional
+composers:
+- Biography:Charlie Poole and the North Carolina Ramblers
+default_key: G
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

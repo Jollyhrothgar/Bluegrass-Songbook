@@ -1,0 +1,22 @@
+id: you-ve-got-the-ways-of-a-woman-in-love
+title: You've Got The Ways Of A Woman In Love
+artist: Johnny Cash
+composers:
+- Charlie Rich and Bill Justis
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotthewaysofawomaninlovelyricschords.pro
+    imported_at: '2026-01-02'

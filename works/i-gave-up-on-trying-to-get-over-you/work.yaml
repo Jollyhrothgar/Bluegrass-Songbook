@@ -1,0 +1,18 @@
+id: i-gave-up-on-trying-to-get-over-you
+title: I Gave Up On Trying To Get Over You
+artist: David Allan Coe
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igaveupontryingtogetoveryoulyricschords.pro
+    imported_at: '2026-01-02'

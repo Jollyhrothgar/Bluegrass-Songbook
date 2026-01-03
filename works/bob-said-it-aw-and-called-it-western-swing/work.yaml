@@ -1,0 +1,15 @@
+id: bob-said-it-aw-and-called-it-western-swing
+title: Bob Said It Aw (And Called It Western Swing)
+artist: Johnny Bush
+composers:
+- Jim Halley
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bobsaiditawandcalleditwesternswinglyricschords.pro
+    imported_at: '2026-01-02'

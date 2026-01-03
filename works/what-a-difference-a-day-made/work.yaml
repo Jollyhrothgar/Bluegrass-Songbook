@@ -1,0 +1,18 @@
+id: what-a-difference-a-day-made
+title: What A Difference A Day Made
+artist: Willie Nelson
+composers:
+- María Mendez Grever and Stanley Adams
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatadifferenceadaymadelyricschords.pro
+    imported_at: '2026-01-02'

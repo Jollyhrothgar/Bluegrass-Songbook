@@ -1,0 +1,17 @@
+id: the-human-race-1
+title: The Human Race
+artist: Doyle Lawson
+composers:
+- James Dawson Phillips, Eugene Dobbins, Timothy Ray Menzies
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thehumanracelyricschords.pro
+    imported_at: '2026-01-02'

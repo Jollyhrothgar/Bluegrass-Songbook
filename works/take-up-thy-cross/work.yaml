@@ -1,0 +1,17 @@
+id: take-up-thy-cross
+title: Take Up Thy Cross
+artist: Wilburn Brothers
+composers:
+- Alfred Ackley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takeupthycrosslyricsandchords.pro
+    imported_at: '2026-01-02'

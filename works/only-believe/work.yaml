@@ -1,0 +1,21 @@
+id: only-believe
+title: Only Believe
+artist: Elvis Presley
+composers:
+- Paul Rader
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onlybelievelyricschords.pro
+    imported_at: '2026-01-02'

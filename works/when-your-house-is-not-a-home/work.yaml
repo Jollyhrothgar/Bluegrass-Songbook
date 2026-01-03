@@ -1,0 +1,17 @@
+id: when-your-house-is-not-a-home
+title: When Your House Is Not A Home
+artist: Jean Shepard
+composers:
+- Roger Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyourhouseisnotahomelyricschords.pro
+    imported_at: '2026-01-02'

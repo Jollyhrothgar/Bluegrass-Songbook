@@ -1,0 +1,17 @@
+id: she-s-as-close-as-i-can-get-to-loving-you
+title: She's As Close As I Can Get To Loving You
+artist: Hank Locklin
+composers:
+- Dallas Frazier and A.L. Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesascloseasicangettolovingyyoulyricschords.pro
+    imported_at: '2026-01-02'

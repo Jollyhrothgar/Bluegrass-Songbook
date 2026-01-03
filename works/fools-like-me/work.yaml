@@ -1,0 +1,20 @@
+id: fools-like-me
+title: Fools Like Me
+artist: Jerry Lee Lewis
+composers:
+- Jack Clement and Murphy Maddux
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolslikemelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: your-memory-comes-and-gets-me
+title: Your Memory Comes And Gets Me
+artist: Wanda Jackson
+composers:
+- Billy Graham and Tommy Jackson
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourmemorycomesandgetsmelyricschords.pro
+    imported_at: '2026-01-02'

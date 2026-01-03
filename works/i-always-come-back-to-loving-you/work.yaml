@@ -1,0 +1,19 @@
+id: i-always-come-back-to-loving-you
+title: I Always Come Back To Loving You
+artist: Mel Tillis
+composers:
+- Jerry House and Billy Burns
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ialwayscomebacktolovingyoulyricschords.pro
+    imported_at: '2026-01-02'

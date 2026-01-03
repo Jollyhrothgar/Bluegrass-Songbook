@@ -1,0 +1,17 @@
+id: don-t-stay-away-till-love-grows-cold
+title: Don't Stay Away (till love grows cold)
+artist: Lefty Fizzell
+composers:
+- Lefty Frizzell and Loys Sutherland
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontstayawaytilllovegrowscoldlyricschords.pro
+    imported_at: '2026-01-02'

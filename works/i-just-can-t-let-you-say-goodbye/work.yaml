@@ -1,0 +1,18 @@
+id: i-just-can-t-let-you-say-goodbye
+title: I Just Can't Let You Say Goodbye
+artist: Roy Drusky
+composers:
+- Willie Nelson
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcantletyousaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

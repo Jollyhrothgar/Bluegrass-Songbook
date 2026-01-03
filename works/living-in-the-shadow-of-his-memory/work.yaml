@@ -1,0 +1,17 @@
+id: living-in-the-shadow-of-his-memory
+title: Living In The Shadow Of His Memory
+artist: Webb Pierce
+composers:
+- Audrey Grisham, Sylvia Fisher, Leon Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: livingintheshadowofhismemorylyricschords.pro
+    imported_at: '2026-01-02'

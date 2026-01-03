@@ -1,0 +1,17 @@
+id: shes-my-mother
+title: She’s My Mother
+artist: George Jones
+composers:
+- Charlie Louvin, Eddie Hill, Ira Louvin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesmymotherlyricschords.pro
+    imported_at: '2026-01-02'

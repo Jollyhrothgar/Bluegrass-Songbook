@@ -1,0 +1,17 @@
+id: fallin-again
+title: Fallin' Again
+artist: Alabama
+composers:
+- Russell Fowler, Teddy Gentry, Randy Owen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallinagainlyricschords.pro
+    imported_at: '2026-01-02'

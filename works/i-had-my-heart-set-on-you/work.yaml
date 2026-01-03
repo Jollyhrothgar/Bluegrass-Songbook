@@ -1,0 +1,18 @@
+id: i-had-my-heart-set-on-you
+title: I Had My Heart Set On You
+artist: Emmylou Harris
+composers:
+- Rodney Crowell and Paul Kennerley
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihadmyheartsetonyoulyricschords.pro
+    imported_at: '2026-01-02'

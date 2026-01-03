@@ -1,0 +1,19 @@
+id: borne-on-the-wind
+title: Borne On The Wind
+artist: Roy Orbison
+composers:
+- Roy Orbison and Bill Dees
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: borneonthewindlyricschords.pro
+    imported_at: '2026-01-02'

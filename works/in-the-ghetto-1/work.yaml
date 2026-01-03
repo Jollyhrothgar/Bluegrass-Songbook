@@ -1,0 +1,21 @@
+id: in-the-ghetto-1
+title: In The Ghetto
+artist: Elvis Presley
+composers:
+- Mac Davis
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: intheghettolyricschords.pro
+    imported_at: '2026-01-02'

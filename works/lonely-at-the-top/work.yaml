@@ -1,0 +1,17 @@
+id: lonely-at-the-top
+title: Lonely at the Top
+artist: Keith Whitley
+composers:
+- Jamey Johnson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonelyatthetoplyricschords.pro
+    imported_at: '2026-01-02'

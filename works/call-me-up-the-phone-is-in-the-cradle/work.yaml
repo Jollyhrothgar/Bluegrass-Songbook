@@ -1,0 +1,17 @@
+id: call-me-up-the-phone-is-in-the-cradle
+title: Call Me Up (The Phone Is In The Cradle)
+artist: Kenny Rogers
+composers:
+- Kim Carnes and Dave Ellingson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: callmeupthephoneisinthecradlelyricschords.pro
+    imported_at: '2026-01-02'

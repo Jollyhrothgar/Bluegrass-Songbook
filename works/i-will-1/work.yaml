@@ -1,0 +1,17 @@
+id: i-will-1
+title: I Will
+artist: Ferlin Husky
+composers:
+- Roy Drusky and Lester Vanadore
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwilllyricschords.pro
+    imported_at: '2026-01-02'

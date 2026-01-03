@@ -1,0 +1,17 @@
+id: under-the-influence-of-love
+title: Under The Influence Of Love
+artist: Buck Owens
+composers:
+- Harlan Howard and Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: undertheinfluenceoflovelyricschords.pro
+    imported_at: '2026-01-02'

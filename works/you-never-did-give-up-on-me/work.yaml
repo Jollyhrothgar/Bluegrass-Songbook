@@ -1,0 +1,18 @@
+id: you-never-did-give-up-on-me
+title: You Never Did Give Up On Me
+artist: Charley Pride
+composers:
+- Allen Reynolds
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youneverdidgiveuponmelyricschords.pro
+    imported_at: '2026-01-02'

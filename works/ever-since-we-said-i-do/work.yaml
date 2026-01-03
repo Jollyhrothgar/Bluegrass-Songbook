@@ -1,0 +1,17 @@
+id: ever-since-we-said-i-do
+title: Ever Since We Said I Do
+artist: Norma Jean
+composers:
+- Red Lane and Johnny Slate
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eversincewesaididolyricschords.pro
+    imported_at: '2026-01-02'

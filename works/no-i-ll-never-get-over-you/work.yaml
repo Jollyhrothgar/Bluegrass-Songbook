@@ -1,0 +1,15 @@
+id: no-i-ll-never-get-over-you
+title: No I'll Never Get Over You
+artist: Emmylou Harris
+default_key: C
+tags:
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noillnevergetoveryoulyricschords.pro
+    imported_at: '2026-01-02'

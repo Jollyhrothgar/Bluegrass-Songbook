@@ -1,0 +1,15 @@
+id: painting-this-old-town-blue
+title: Painting This Old Town Blue
+artist: Crystal Gayle
+composers:
+- William Davidson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: paintingthisoldtownbluelyricschords.pro
+    imported_at: '2026-01-02'

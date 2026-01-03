@@ -1,0 +1,17 @@
+id: sierra-sue
+title: Sierra Sue
+artist: Gene Autry
+composers:
+- Joseph B. Carey
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sierrasuelyricschords.pro
+    imported_at: '2026-01-02'

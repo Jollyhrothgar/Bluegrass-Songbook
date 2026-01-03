@@ -1,0 +1,17 @@
+id: i-wish-i-could-love-that-much-again
+title: I Wish I Could Love That Much Again
+artist: Billy Walker
+composers:
+- Vic McAlpin and Glenn D. Tubb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishicouldlovethatmuchagainlyricschords.pro
+    imported_at: '2026-01-02'

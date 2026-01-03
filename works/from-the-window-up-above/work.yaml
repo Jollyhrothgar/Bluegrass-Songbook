@@ -1,0 +1,18 @@
+id: from-the-window-up-above
+title: From the Window Up Above
+artist: Red Sovine
+composers:
+- George Jones
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromthewindowupabovelyricschords.pro
+    imported_at: '2026-01-02'

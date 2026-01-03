@@ -1,0 +1,17 @@
+id: this-old-house
+title: This Old House
+artist: Mel Tillis
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisoldhouselyricschords.pro
+    imported_at: '2026-01-02'

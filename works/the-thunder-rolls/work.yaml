@@ -1,0 +1,19 @@
+id: the-thunder-rolls
+title: The Thunder Rolls
+artist: Garth Brooks
+composers:
+- Pat Alger and Garth Brooks
+default_key: Am
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thethunderrollslyricschords.pro
+    imported_at: '2026-01-02'

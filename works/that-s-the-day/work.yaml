@@ -1,0 +1,18 @@
+id: that-s-the-day
+title: That's The Day
+artist: Charlie Rich
+composers:
+- Margaret A. Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsthedaylyricschords.pro
+    imported_at: '2026-01-02'

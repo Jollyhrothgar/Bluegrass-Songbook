@@ -1,0 +1,19 @@
+id: that-s-all-you-gotta-do
+title: That's All You Gotta Do
+artist: Brenda Lee
+composers:
+- Jerry Reed Hubbard
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsallyougottadolyricschords.pro
+    imported_at: '2026-01-02'

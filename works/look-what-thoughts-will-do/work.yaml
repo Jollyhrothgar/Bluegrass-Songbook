@@ -1,0 +1,18 @@
+id: look-what-thoughts-will-do
+title: Look What Thoughts Will Do
+artist: Lefty Frizzell
+composers:
+- Lefty Frizzell, Jim Beck & Dub Dickerson
+default_key: D
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookwhatthoughtswilldolyricschords.pro
+    imported_at: '2026-01-02'

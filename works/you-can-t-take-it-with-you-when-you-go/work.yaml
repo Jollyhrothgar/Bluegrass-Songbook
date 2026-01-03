@@ -1,0 +1,17 @@
+id: you-can-t-take-it-with-you-when-you-go
+title: You Can't Take It With You When You Go
+artist: Rhonda Vincent
+composers:
+- Curtis Wright and T.J. Knight
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanttakeitwithyouwhenyougolyricsandchords.pro
+    imported_at: '2026-01-02'

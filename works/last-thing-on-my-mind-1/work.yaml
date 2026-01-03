@@ -1,0 +1,15 @@
+id: last-thing-on-my-mind-1
+title: Last Thing On My Mind
+artist: Tom Paxton
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

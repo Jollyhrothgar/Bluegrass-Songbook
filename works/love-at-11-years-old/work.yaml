@@ -1,0 +1,15 @@
+id: love-at-11-years-old
+title: Love At 11 Years Old
+artist: Lloyd Snow
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveat11yearsoldlyricschords.pro
+    imported_at: '2026-01-02'

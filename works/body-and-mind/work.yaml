@@ -1,0 +1,17 @@
+id: body-and-mind
+title: Body And Mind
+artist: Norma Jean
+composers:
+- Bob Wilkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bodyandmindlyricschords.pro
+    imported_at: '2026-01-02'

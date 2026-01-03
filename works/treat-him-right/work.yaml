@@ -1,0 +1,17 @@
+id: treat-him-right
+title: Treat Him Right
+artist: Barbara Mandrell
+composers:
+- Roy Head and Gene Kurtz
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: treathimrightlyricschords.pro
+    imported_at: '2026-01-02'

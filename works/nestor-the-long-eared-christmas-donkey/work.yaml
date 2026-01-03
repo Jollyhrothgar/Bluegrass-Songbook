@@ -1,0 +1,18 @@
+id: nestor-the-long-eared-christmas-donkey
+title: Nestor The Long Eared Christmas Donkey
+artist: Marty Robbins
+composers:
+- Dave Burgess, Gene Autry, Don Pfrimmer
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nestorthelongearedChristmasdonkeylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: don-juan
+title: Don Juan
+artist: Billy Crash Craddock
+composers:
+- Laying Martine
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donjuanlyricschords.pro
+    imported_at: '2026-01-02'

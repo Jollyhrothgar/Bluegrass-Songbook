@@ -1,0 +1,15 @@
+id: right-out-of-a-clear-blue-sky
+title: Right Out of A Clear Blue Sky
+artist: Hank Locklin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rightoutofaclearblueskylyricschords.pro
+    imported_at: '2026-01-02'

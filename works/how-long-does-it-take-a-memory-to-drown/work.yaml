@@ -1,0 +1,15 @@
+id: how-long-does-it-take-a-memory-to-drown
+title: How Long Does It Take A Memory To Drown
+artist: Jim Ed Brown
+composers:
+- Swany Cornette and Armenta Cornette
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howlongdoesittakeamemorytodrownlyricschords.pro
+    imported_at: '2026-01-02'

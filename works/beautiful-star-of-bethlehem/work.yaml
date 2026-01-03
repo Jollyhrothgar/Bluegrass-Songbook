@@ -1,0 +1,18 @@
+id: beautiful-star-of-bethlehem
+title: Beautiful Star of Bethlehem
+artist: The Oak Ridge Boys
+composers:
+- R. Fisher Boyce and Adger M. Pace
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beautifulstarofbethlehemlyricschords.pro
+    imported_at: '2026-01-02'

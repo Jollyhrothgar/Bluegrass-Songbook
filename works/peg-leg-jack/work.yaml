@@ -1,0 +1,17 @@
+id: peg-leg-jack
+title: Peg Leg Jack
+artist: Tex Morton
+composers:
+- Carson Robinson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: peglegjacklyricschords.pro
+    imported_at: '2026-01-02'

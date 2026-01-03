@@ -1,0 +1,18 @@
+id: no-one-to-talk-to-but-the-blues
+title: No One To Talk To But The Blues
+artist: Lefty Frizzell
+composers:
+- Wayne P. Walker and George Cherry
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noonetotalktobuttheblueslyricschords.pro
+    imported_at: '2026-01-02'

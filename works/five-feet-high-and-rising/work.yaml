@@ -1,0 +1,20 @@
+id: five-feet-high-and-rising
+title: Five Feet High And Rising
+artist: Johnny Cash
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fivefeethighandrisinglyricschords.pro
+    imported_at: '2026-01-02'

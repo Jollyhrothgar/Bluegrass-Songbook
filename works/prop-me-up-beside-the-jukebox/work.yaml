@@ -1,0 +1,17 @@
+id: prop-me-up-beside-the-jukebox
+title: Prop Me Up Beside The Jukebox
+artist: Joe Diffie
+composers:
+- Rick Blaylock, Kerry Kurt Phillips, Howard Pedrew
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: propmeupbesidethejukeboxlyricschords.pro
+    imported_at: '2026-01-02'

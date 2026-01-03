@@ -1,0 +1,17 @@
+id: i-ll-be-somewhere
+title: I'll be Somewhere
+artist: Bill Anderson
+composers:
+- Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbesomewherelyricschords.pro
+    imported_at: '2026-01-02'

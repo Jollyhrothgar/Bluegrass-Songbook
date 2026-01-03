@@ -1,0 +1,18 @@
+id: heartbreak-trail
+title: Heartbreak Trail
+artist: Hank Snow
+composers:
+- Vaughn Horton and Denver Darling
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartbreaktraillyricschords.pro
+    imported_at: '2026-01-02'

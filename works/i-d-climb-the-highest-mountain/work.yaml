@@ -1,0 +1,17 @@
+id: i-d-climb-the-highest-mountain
+title: I'd Climb The Highest Mountain
+artist: Ricky Nelson
+composers:
+- Lew Brown and Sidney Clare
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idclimbthehighestmountainlyricschords.pro
+    imported_at: '2026-01-02'

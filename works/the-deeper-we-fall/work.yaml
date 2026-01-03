@@ -1,0 +1,15 @@
+id: the-deeper-we-fall
+title: The Deeper We Fall
+artist: Johnny Lee
+composers:
+- Wayland Holyfield and Gary Nicholson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedeeperwefalllyricschords.pro
+    imported_at: '2026-01-02'

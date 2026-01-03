@@ -1,0 +1,17 @@
+id: life-of-the-party-1
+title: Life Of The Party
+artist: Cal Smith
+composers:
+- Jim Owen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lifeofthepartylyricschords.pro
+    imported_at: '2026-01-02'

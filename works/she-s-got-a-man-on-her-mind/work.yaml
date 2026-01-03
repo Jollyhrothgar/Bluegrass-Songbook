@@ -1,0 +1,18 @@
+id: she-s-got-a-man-on-her-mind
+title: She's Got A Man On Her Mind
+artist: Conway Twitty
+composers:
+- Curtis Wright and Billy Spencer
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesgotamanonhermindlyricschords.pro
+    imported_at: '2026-01-02'

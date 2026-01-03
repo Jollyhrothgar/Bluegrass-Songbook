@@ -1,0 +1,17 @@
+id: just-as-i-am-2
+title: Just As I Am
+artist: Ray Price
+composers:
+- Charlotte Elliott
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justasiamlyricswithchords.pro
+    imported_at: '2026-01-02'

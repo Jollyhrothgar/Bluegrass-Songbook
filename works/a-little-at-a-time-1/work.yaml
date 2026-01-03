@@ -1,0 +1,22 @@
+id: a-little-at-a-time-1
+title: A Little At A Time
+artist: Johnny Cash
+composers:
+- Johnny Cash and Gordon Terry
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittleatatimelyricschords.pro
+    imported_at: '2026-01-02'

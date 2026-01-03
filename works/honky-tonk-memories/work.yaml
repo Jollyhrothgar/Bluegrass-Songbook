@@ -1,0 +1,19 @@
+id: honky-tonk-memories
+title: Honky Tonk Memories
+artist: Mickey Gilley
+composers:
+- Rory Michael Buorke, Eugene D. Dobbins, Johnny A. Wilson
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkmemorieslyricschords.pro
+    imported_at: '2026-01-02'

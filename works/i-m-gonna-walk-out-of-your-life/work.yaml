@@ -1,0 +1,19 @@
+id: i-m-gonna-walk-out-of-your-life
+title: I'm Gonna Walk Out Of Your Life
+artist: Wanda Jackson
+composers:
+- Wanda Jackson
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnawalkoutofyourlifelyricschords.pro
+    imported_at: '2026-01-02'

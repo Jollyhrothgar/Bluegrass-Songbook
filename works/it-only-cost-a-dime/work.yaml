@@ -1,0 +1,17 @@
+id: it-only-cost-a-dime
+title: It Only Cost A Dime
+artist: The Everly Brothers
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itonlycostadimelyricschords.pro
+    imported_at: '2026-01-02'

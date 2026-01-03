@@ -1,0 +1,21 @@
+id: sing-a-traveling-song
+title: Sing A Traveling Song
+artist: Johnny Cash
+composers:
+- Bucky Jones
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singatravelingsonglyricschords.pro
+    imported_at: '2026-01-02'

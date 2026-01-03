@@ -1,0 +1,15 @@
+id: you-aint-hurt-nothing-yet
+title: You Ain’t Hurt Nothing Yet
+artist: John Anderson
+composers:
+- Al Anderson and Billy Lawson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youainthurtnothingyetlyricschords.pro
+    imported_at: '2026-01-02'

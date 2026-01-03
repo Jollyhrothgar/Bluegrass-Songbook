@@ -1,0 +1,15 @@
+id: i-m-movin-in
+title: I'm Movin' In
+artist: Hank Snow Lyrics
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: immovininlyricschords.pro
+    imported_at: '2026-01-02'

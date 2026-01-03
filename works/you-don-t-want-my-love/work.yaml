@@ -1,0 +1,15 @@
+id: you-don-t-want-my-love
+title: You Don't Want My Love
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontwantmylovelyricschords.pro
+    imported_at: '2026-01-02'

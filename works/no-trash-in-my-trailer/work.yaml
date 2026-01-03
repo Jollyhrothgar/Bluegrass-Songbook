@@ -1,0 +1,17 @@
+id: no-trash-in-my-trailer
+title: No Trash In My Trailer
+artist: Gene Watson
+composers:
+- Byron Hill & Mike Dekle
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notrashinmytrailerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: so-long-1
+title: So Long
+artist: Ricky Nelson
+composers:
+- Donald R. Nelson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: solonglyricschords.pro
+    imported_at: '2026-01-02'

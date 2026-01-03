@@ -1,0 +1,15 @@
+id: days-of-our-wives
+title: Days Of Our Wives
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: daysofourwiveslyricschords.pro
+    imported_at: '2026-01-02'

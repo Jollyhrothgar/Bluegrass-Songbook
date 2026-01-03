@@ -1,0 +1,19 @@
+id: stars-are-the-windows-of-heaven
+title: Stars Are The Windows Of Heaven
+artist: Anne Murray
+composers:
+- Tommie Malie and Jimmy Steiger
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: starsarethewindowsofheavenlyricschords.pro
+    imported_at: '2026-01-02'

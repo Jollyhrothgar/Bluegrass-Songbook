@@ -1,0 +1,19 @@
+id: close-by
+title: Close By
+artist: Patty Loveless
+composers:
+- Bill Monroe and Winkle Van
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: closebylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: little-georgia-rose
+title: Little Georgia Rose
+artist: The Seldom Scene
+composers:
+- Bill Monroe
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlegeorgiaroselyricschords.pro
+    imported_at: '2026-01-02'

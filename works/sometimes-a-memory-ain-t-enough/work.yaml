@@ -1,0 +1,18 @@
+id: sometimes-a-memory-ain-t-enough
+title: Sometimes A Memory Ain't Enough
+artist: Jerry Lee Lewis
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sometimesamemoryaintenoughlyricschords.pro
+    imported_at: '2026-01-02'

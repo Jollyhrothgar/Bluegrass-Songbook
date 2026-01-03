@@ -1,0 +1,18 @@
+id: that-s-when-she-started-to-stop-loving-you
+title: That's When She Started To Stop Loving You
+artist: Conway Twitty
+composers:
+- Wayne Kemp
+default_key: F
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhenshestartedtostoplovingyoulyricschords.pro
+    imported_at: '2026-01-02'

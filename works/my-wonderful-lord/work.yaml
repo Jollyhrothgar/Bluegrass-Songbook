@@ -1,0 +1,17 @@
+id: my-wonderful-lord
+title: My Wonderful Lord
+artist: Faron Young
+composers:
+- Haldor Lilienas
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mywonderfullordlyricschords.pro
+    imported_at: '2026-01-02'

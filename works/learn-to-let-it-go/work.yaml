@@ -1,0 +1,17 @@
+id: learn-to-let-it-go
+title: Learn To Let It Go
+artist: Don Williams
+composers:
+- Rory Bourke and Mike Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: learntoletitgolyricschords.pro
+    imported_at: '2026-01-02'

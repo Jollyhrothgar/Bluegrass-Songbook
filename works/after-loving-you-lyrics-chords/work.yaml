@@ -1,0 +1,17 @@
+id: after-loving-you-lyrics-chords
+title: After Loving You Lyrics Chords
+artist: Jim Reeves
+composers:
+- Eddie Miller and John Lantz
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

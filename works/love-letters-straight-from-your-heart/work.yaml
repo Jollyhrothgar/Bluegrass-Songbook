@@ -1,0 +1,18 @@
+id: love-letters-straight-from-your-heart
+title: Love Letters Straight From Your Heart
+artist: Brenda Lee
+composers:
+- Edward Heyman and Victor Young
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovelettersstraightfromyourheartlyricschords.pro
+    imported_at: '2026-01-02'

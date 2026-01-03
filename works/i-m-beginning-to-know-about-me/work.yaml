@@ -1,0 +1,17 @@
+id: i-m-beginning-to-know-about-me
+title: I'm Beginning To Know About Me
+artist: Wilburn Brothers
+composers:
+- Jimmy Dickens and Larry Kirby
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imbeginningtoknowaboutmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: i-feel-like-traveling-on
+title: I Feel Like Traveling On
+artist: Loretta Lynn
+composers:
+- James D. Vaughn
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeelliketravelingonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: highway-to-the-sky
+title: Highway to the Sky
+artist: Jack Greene
+composers:
+- Ron Liverett
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highwaytotheskylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: you-can-t-pick-a-rose-in-december
+title: You Can't Pick A Rose In December
+artist: Don Gibson
+composers:
+- Leon Payne
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantpickaroseindecemberlyricschords.pro
+    imported_at: '2026-01-02'

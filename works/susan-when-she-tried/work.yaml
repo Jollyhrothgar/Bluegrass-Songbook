@@ -1,0 +1,17 @@
+id: susan-when-she-tried
+title: Susan When She Tried
+artist: Statler Brothers
+composers:
+- Don Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: susanwhenshetriedlyricschords.pro
+    imported_at: '2026-01-02'

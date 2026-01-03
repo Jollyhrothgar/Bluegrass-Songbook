@@ -1,0 +1,15 @@
+id: when-the-white-roses-bloom-in-red-river-valley
+title: When The White Roses Bloom In Red River Valley
+artist: Dale Evans
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthewhiterosesbloominredrivervalleylyricschords.pro
+    imported_at: '2026-01-02'

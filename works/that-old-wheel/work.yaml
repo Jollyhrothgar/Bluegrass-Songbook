@@ -1,0 +1,22 @@
+id: that-old-wheel
+title: That Old Wheel
+artist: Johnny Cash
+composers:
+- Jennifer Pierce
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatoldwheellyricschords.pro
+    imported_at: '2026-01-02'

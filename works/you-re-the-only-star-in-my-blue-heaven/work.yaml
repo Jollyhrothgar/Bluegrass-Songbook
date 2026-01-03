@@ -1,0 +1,15 @@
+id: you-re-the-only-star-in-my-blue-heaven
+title: You're The Only Star In My Blue Heaven
+artist: Gene Autry
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheonlystarinmyblueheavenlyricschords.pro
+    imported_at: '2026-01-02'

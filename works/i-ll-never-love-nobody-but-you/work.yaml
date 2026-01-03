@@ -1,0 +1,17 @@
+id: i-ll-never-love-nobody-but-you
+title: I'll Never Love Nobody But You
+artist: Jim and Jesse
+composers:
+- Jesse McReynolds and Jim McReynolds
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverlovenobodybutyoulyricschords.pro
+    imported_at: '2026-01-02'

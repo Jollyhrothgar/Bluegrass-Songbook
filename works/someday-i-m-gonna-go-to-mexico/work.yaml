@@ -1,0 +1,17 @@
+id: someday-i-m-gonna-go-to-mexico
+title: Someday I'm Gonna Go To Mexico
+artist: Tony Booth
+composers:
+- Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somedayimgonnagotomexicolyricschords.pro
+    imported_at: '2026-01-02'

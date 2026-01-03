@@ -1,0 +1,17 @@
+id: so-much-got-lost
+title: So Much Got Lost
+artist: Roy Drusky
+composers:
+- Del Reeves and Elen Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somuchgotlostlyricschords.pro
+    imported_at: '2026-01-02'

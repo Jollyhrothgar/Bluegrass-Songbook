@@ -1,0 +1,18 @@
+id: if-you-knew-what-i-know
+title: If You Knew What I Know
+artist: Wanda Jackson
+composers:
+- Hal Southern and Wayne West
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouknewwhatiknowlyricschords.pro
+    imported_at: '2026-01-02'

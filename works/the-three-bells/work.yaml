@@ -1,0 +1,17 @@
+id: the-three-bells
+title: The Three Bells
+artist: Jim Ed Brown
+composers:
+- Bert Reinsford and Jean Villard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thethreebellslyricschords.pro
+    imported_at: '2026-01-02'

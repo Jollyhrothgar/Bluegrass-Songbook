@@ -1,0 +1,19 @@
+id: working-without-a-net
+title: Working Without A Net
+artist: Waylon Jennings
+composers:
+- Don Cook, John B. Jarvis, Gary Nicholson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: workingwithoutanetlyricschords.pro
+    imported_at: '2026-01-02'

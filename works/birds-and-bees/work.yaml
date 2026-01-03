@@ -1,0 +1,18 @@
+id: birds-and-bees
+title: Birds and Bees
+artist: Fats Domino
+composers:
+- Antoine Domino and Dave Bartholomew
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: birdsandbeeslyricschords.pro
+    imported_at: '2026-01-02'

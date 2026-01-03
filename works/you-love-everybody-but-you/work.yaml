@@ -1,0 +1,15 @@
+id: you-love-everybody-but-you
+title: You Love Everybody But You
+artist: Tom T Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youloveeverybodybutyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: over-the-sunset-mountains-by-and-by
+title: Over The Sunset Mountains By and By
+artist: The Statler Brothers
+composers:
+- John W. Peterson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: overthesunsetmountainslyricschords.pro
+    imported_at: '2026-01-02'

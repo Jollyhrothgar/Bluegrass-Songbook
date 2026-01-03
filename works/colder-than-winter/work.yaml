@@ -1,0 +1,16 @@
+id: colder-than-winter
+title: Colder Than Winter
+artist: Vince Gill
+default_key: F
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: colderthanwinterlyricschords.pro
+    imported_at: '2026-01-02'

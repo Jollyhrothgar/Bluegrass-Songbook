@@ -1,0 +1,18 @@
+id: que-sera-sera-whatever-will-be-will-be
+title: Que Sera Sera (Whatever Will Be Will Be)
+artist: Doris Day
+composers:
+- Raymond B. Evans and Jay Livingston
+default_key: C
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: queseraserawhateverwillbewillbelyricschords.pro
+    imported_at: '2026-01-02'

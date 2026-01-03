@@ -1,0 +1,15 @@
+id: make-me-one-more-memory
+title: Make Me One More Memory
+artist: Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makemeonemorememorylyricschords.pro
+    imported_at: '2026-01-02'

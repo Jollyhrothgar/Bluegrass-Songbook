@@ -1,0 +1,17 @@
+id: portrait-of-a-lonely-man
+title: Portrait Of A Lonely Man
+artist: Freddie Hart
+composers:
+- Lynn Phillips
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: portraitofalonelymanlyricschords.pro
+    imported_at: '2026-01-02'

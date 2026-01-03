@@ -1,0 +1,17 @@
+id: something-he-ll-have-to-learn
+title: Something He'll Have To Learn
+artist: Johnny Paycheck
+composers:
+- Johnny Paycheck, Aubrey Mayhew, Gary Adams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethinghellhavetolearnlyricschords.pro
+    imported_at: '2026-01-02'

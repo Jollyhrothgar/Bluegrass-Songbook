@@ -1,0 +1,17 @@
+id: if-the-back-door-could-talk
+title: If The Back Door Could Talk
+artist: Webb Pierce
+composers:
+- Webb Pierce and Grady Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifthebackdoorcouldtalklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: we-really-shouldn-t-be-doing-this
+title: We Really Shouldn't Be Doing This
+artist: George Strait
+composers:
+- Jim Lauderdale
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wereallyshouldntbedoingthislyricschords.pro
+    imported_at: '2026-01-02'

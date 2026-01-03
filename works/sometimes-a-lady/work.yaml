@@ -1,0 +1,17 @@
+id: sometimes-a-lady
+title: Sometimes A Lady
+artist: Eddy Raven
+composers:
+- Eddy Raven and Frank Myers
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sometimesaladylyricschords.pro
+    imported_at: '2026-01-02'

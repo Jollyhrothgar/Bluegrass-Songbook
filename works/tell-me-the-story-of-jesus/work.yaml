@@ -1,0 +1,17 @@
+id: tell-me-the-story-of-jesus
+title: Tell Me The Story Of Jesus
+artist: Rick Wingerter
+composers:
+- Fanny Crosby and John Sweeney
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmethestoryofJesuslyricschords.pro
+    imported_at: '2026-01-02'

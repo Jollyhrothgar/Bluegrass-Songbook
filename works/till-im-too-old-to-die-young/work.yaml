@@ -1,0 +1,17 @@
+id: till-im-too-old-to-die-young
+title: Till I’m Too Old To Die Young
+artist: Moe Bandy
+composers:
+- Kevin Stephen Welch, John R. Hadley, Scott Dooley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillimtoooldtodieyounglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: bandera
+title: Bandera
+artist: Mona McCall
+composers:
+- Guyanne McCall and Justin Trevino
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: banderalyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: my-lonely-heart-s-runnin-wild
+title: My Lonely Heart's Runnin' Wild
+artist: Carl Smith
+composers:
+- E.C. McCarty
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylonelyheartsrunninwildlyricschords.pro
+    imported_at: '2026-01-02'

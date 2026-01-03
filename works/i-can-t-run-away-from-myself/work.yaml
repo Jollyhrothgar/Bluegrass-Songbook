@@ -1,0 +1,17 @@
+id: i-can-t-run-away-from-myself
+title: I Can't Run Away From Myself
+artist: Ray Price
+composers:
+- Hank Cochran and Ray Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantrunawayfrommyselflyricschords.pro
+    imported_at: '2026-01-02'

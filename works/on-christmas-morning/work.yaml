@@ -1,0 +1,15 @@
+id: on-christmas-morning
+title: On Christmas Morning
+artist: Steve Wariner
+composers:
+- Lisa Silver and Steve Wariner
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onChristmasmorninglyricschords.pro
+    imported_at: '2026-01-02'

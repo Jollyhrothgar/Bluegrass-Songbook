@@ -1,0 +1,17 @@
+id: hanging-on-to-what-i-got
+title: Hanging On To What I Got
+artist: Buck Owens
+composers:
+- Tom Brumley, Dusty Rhodes, Billye Spears
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hangingontowhatigotlyricschords.pro
+    imported_at: '2026-01-02'

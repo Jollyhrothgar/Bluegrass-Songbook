@@ -1,0 +1,17 @@
+id: all-i-have-for-you-mom
+title: All I Have For You Mom
+artist: Wilburn Brothers
+composers:
+- Don Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allihaveforyoumomlyricschords.pro
+    imported_at: '2026-01-02'

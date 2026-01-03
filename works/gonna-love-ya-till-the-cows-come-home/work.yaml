@@ -1,0 +1,18 @@
+id: gonna-love-ya-till-the-cows-come-home
+title: Gonna Love Ya (Till The Cows Come Home)
+artist: Reba McEntire
+composers:
+- Rick Carnes and Susan Drake
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnaloveyatillthecowscomehomelyricschords.pro
+    imported_at: '2026-01-02'

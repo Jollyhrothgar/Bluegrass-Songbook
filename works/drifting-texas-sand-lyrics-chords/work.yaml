@@ -1,0 +1,17 @@
+id: drifting-texas-sand-lyrics-chords
+title: Drifting Texas Sand Lyrics Chords
+artist: Webb Pierce
+composers:
+- Buster Coward
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: driftingtexassandlyricschords.pro
+    imported_at: '2026-01-02'

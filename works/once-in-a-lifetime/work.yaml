@@ -1,0 +1,18 @@
+id: once-in-a-lifetime
+title: Once In A Lifetime
+artist: Patty Loveless
+composers:
+- Eric Kaz and Marcia Zwilling
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onceinalifetimelyricschords.pro
+    imported_at: '2026-01-02'

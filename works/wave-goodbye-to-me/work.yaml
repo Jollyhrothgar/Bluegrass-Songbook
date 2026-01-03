@@ -1,0 +1,17 @@
+id: wave-goodbye-to-me
+title: Wave Goodbye To Me
+artist: Jean Shepard
+composers:
+- Waylon Jennings and Don Bowman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wavegoodbyetomelyricschords.pro
+    imported_at: '2026-01-02'

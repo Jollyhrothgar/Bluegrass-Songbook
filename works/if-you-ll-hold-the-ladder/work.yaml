@@ -1,0 +1,19 @@
+id: if-you-ll-hold-the-ladder
+title: If You'll Hold The Ladder
+artist: David Allan Coe
+composers:
+- Buzz Rabin and Sara Rabin
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoullholdtheladderlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: champagne-ladies-and-blue-ribbon-babies
+title: Champagne Ladies And Blue Ribbon Babies
+artist: Ferlin Husky
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: champagneladiesandblueribbonbabieslyricschords.pro
+    imported_at: '2026-01-02'

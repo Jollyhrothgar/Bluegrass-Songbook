@@ -1,0 +1,19 @@
+id: miami-snow
+title: Miami Snow
+artist: Hank Snow
+composers:
+- Cindy Walker and Chet Atkins
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: miamisnowlyricschords.pro
+    imported_at: '2026-01-02'

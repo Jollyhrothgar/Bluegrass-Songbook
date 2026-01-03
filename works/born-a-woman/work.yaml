@@ -1,0 +1,17 @@
+id: born-a-woman
+title: Born A Woman
+artist: Jean Shepard
+composers:
+- Martha Sharp
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bornawomanlyricschords.pro
+    imported_at: '2026-01-02'

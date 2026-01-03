@@ -1,0 +1,15 @@
+id: i-m-wastin-my-tears-on-you
+title: I'm Wastin' My Tears On You
+artist: Tex Ritter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imwastinmytearsonyoulyricschords.pro
+    imported_at: '2026-01-02'

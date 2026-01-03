@@ -1,0 +1,19 @@
+id: drive-in-show
+title: Drive In Show
+artist: Eddie Cochran
+composers:
+- Fred Dexter
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: driveinshowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: what-kind-of-girl-are-you
+title: What Kind Of Girl Are You
+artist: The Everly Brothers
+composers:
+- Ray Charles
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatkindofgirlareyoulyricschords.pro
+    imported_at: '2026-01-02'

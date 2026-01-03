@@ -1,0 +1,18 @@
+id: even-now
+title: Even Now
+artist: Conway Twitty
+composers:
+- Glenn Warren and Worley Max McKinney
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: evennowlyricschords.pro
+    imported_at: '2026-01-02'

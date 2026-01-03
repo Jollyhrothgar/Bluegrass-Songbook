@@ -1,0 +1,17 @@
+id: smokey-blue-eyes
+title: Smokey Blue Eyes
+artist: David Houston
+composers:
+- Fay Kirkland, Ann Horton, Morgan Reese
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: smokeyblueeyeslyricschords.pro
+    imported_at: '2026-01-02'

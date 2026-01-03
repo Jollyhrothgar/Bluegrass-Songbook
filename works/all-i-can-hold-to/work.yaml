@@ -1,0 +1,19 @@
+id: all-i-can-hold-to
+title: All I Can Hold To
+artist: Hank Snow
+composers:
+- Ruby Moody and Marvin Thompson
+default_key: D
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allicanholdtolyricschords.pro
+    imported_at: '2026-01-02'

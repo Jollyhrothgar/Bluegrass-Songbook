@@ -1,0 +1,17 @@
+id: the-chill-of-an-early-fall
+title: The Chill Of An Early Fall
+artist: George Strait
+composers:
+- Gretchen Peters and Green Daniel
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thechillofanearlyfalllyricschords.pro
+    imported_at: '2026-01-02'

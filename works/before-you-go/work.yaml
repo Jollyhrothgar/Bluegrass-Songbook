@@ -1,0 +1,17 @@
+id: before-you-go
+title: Before You Go
+artist: Buck Owens
+composers:
+- Don Rich and Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforeyougolyricschords.pro
+    imported_at: '2026-01-02'

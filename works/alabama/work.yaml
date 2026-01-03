@@ -1,0 +1,20 @@
+id: alabama
+title: Alabama
+artist: The Louvin Brothers
+composers:
+- Charlie Louvin, Ira Louvin, Eddie Hill
+default_key: C
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alabamalyricschords.pro
+    imported_at: '2026-01-02'

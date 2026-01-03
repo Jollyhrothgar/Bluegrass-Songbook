@@ -1,0 +1,17 @@
+id: you-re-the-reason-i-m-in-love
+title: You're the Reason I'm in Love
+artist: Sonny James
+composers:
+- Jack Morrow
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethereasoniminlovelyricschords.pro
+    imported_at: '2026-01-02'

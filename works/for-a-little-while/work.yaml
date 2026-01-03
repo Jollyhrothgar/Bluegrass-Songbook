@@ -1,0 +1,17 @@
+id: for-a-little-while
+title: For a Little While
+artist: John Conlee
+composers:
+- Don Henry
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foralittlewhilelyricschords.pro
+    imported_at: '2026-01-02'

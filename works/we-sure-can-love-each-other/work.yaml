@@ -1,0 +1,17 @@
+id: we-sure-can-love-each-other
+title: We Sure Can Love Each Other
+artist: Tammy Wynette
+composers:
+- Billy Sherrill and Tammy Wynette
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wesurecanloveeachotherlyricschords.pro
+    imported_at: '2026-01-02'

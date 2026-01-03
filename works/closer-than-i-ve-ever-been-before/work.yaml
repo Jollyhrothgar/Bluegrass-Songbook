@@ -1,0 +1,15 @@
+id: closer-than-i-ve-ever-been-before
+title: Closer Than I've Ever Been Before
+artist: Johnny Paycheck
+composers:
+- Robert Duncan and Porter Jordan
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: closerthaniveeverbeenbeforelyricschords.pro
+    imported_at: '2026-01-02'

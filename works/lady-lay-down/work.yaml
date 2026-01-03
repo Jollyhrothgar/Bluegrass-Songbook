@@ -1,0 +1,17 @@
+id: lady-lay-down
+title: Lady Lay Down
+artist: John Conlee
+composers:
+- Rafe Vanhoy and Don Cook [3/4 time]
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ladylaydownlyricschords.pro
+    imported_at: '2026-01-02'

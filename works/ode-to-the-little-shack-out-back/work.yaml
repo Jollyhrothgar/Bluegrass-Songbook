@@ -1,0 +1,17 @@
+id: ode-to-the-little-shack-out-back
+title: Ode To The Little Shack Out Back
+artist: Bobby Bare
+composers:
+- Billy Ed Wheeler
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: odetothelittleshackoutbacklyricschords.pro
+    imported_at: '2026-01-02'

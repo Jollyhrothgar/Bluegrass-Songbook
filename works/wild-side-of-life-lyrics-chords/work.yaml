@@ -1,0 +1,18 @@
+id: wild-side-of-life-lyrics-chords
+title: Wild Side of Life Lyrics Chords
+artist: Hank Thompson
+composers:
+- Arlie A. Carter and William Warren
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wildsideoflifelyricschords.pro
+    imported_at: '2026-01-02'

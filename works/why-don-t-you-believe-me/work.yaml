@@ -1,0 +1,18 @@
+id: why-don-t-you-believe-me
+title: Why Don't You Believe Me
+artist: Brenda Lee
+composers:
+- Lew Douglas, Kim Laney, Roy Rodde
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydontyoubelievemelyricschords.pro
+    imported_at: '2026-01-02'

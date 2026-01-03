@@ -1,0 +1,18 @@
+id: i-know
+title: I Know
+artist: Tammy Wynette
+composers:
+- George Jones and Tammy Wynette
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowlyricsandchords.pro
+    imported_at: '2026-01-02'

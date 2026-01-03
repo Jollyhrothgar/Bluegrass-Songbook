@@ -1,0 +1,17 @@
+id: i-don-t-want-to-be-alone-for-christmas
+title: I Don't Want To Be Alone For Christmas
+artist: Bill Haley
+composers:
+- Al Russell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwanttobealoneforChristmaslyricschords.pro
+    imported_at: '2026-01-02'

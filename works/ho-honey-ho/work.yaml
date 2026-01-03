@@ -1,0 +1,17 @@
+id: ho-honey-ho
+title: Ho Honey Ho
+artist: Red Allen
+composers:
+- Bob Osborne and Tommy Sutton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hohoneyholyricschords.pro
+    imported_at: '2026-01-02'

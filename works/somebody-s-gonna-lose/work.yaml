@@ -1,0 +1,15 @@
+id: somebody-s-gonna-lose
+title: Somebody's Gonna Lose
+artist: Ricky Van Shelton
+composers:
+- Larry Butler and Mark Sherrill
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodysgonnaloselyricschords.pro
+    imported_at: '2026-01-02'

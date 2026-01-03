@@ -1,0 +1,18 @@
+id: little-ole-wine-drinker-me
+title: Little Ole Wine Drinker Me
+artist: Lefty Frizzell
+composers:
+- Tommy "Snuff" Garrett, Dick Jennings, Hank Mills
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littleolewinedrinkermelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-song-we-fell-in-love-to
+title: The Song We Fell In Love To
+artist: Connie Smith
+composers:
+- Ray Baker and Tupper Suassy
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesongwefellinlovetolyricschords.pro
+    imported_at: '2026-01-02'

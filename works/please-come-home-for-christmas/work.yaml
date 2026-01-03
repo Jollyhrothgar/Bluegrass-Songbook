@@ -1,0 +1,17 @@
+id: please-come-home-for-christmas
+title: Please Come Home For Christmas
+artist: Fats Domino
+composers:
+- Charles Brown and Gene Redd
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasecomehomeforChristmaslyricschords.pro
+    imported_at: '2026-01-02'

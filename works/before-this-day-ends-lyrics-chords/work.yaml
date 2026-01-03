@@ -1,0 +1,18 @@
+id: before-this-day-ends-lyrics-chords
+title: Before This Day Ends Lyrics Chords
+artist: Kitty Wells
+composers:
+- Vic McAlpin, Roy Drusky, Marie Wilson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforethisdayendslyricschords.pro
+    imported_at: '2026-01-02'

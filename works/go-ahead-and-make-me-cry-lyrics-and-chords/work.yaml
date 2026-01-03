@@ -1,0 +1,17 @@
+id: go-ahead-and-make-me-cry-lyrics-and-chords
+title: Go Ahead And Make Me Cry Lyrics and Chords
+artist: Connie Smith
+composers:
+- Leslie Lyle
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goaheadandmakemecrylyricschords.pro
+    imported_at: '2026-01-02'

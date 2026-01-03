@@ -1,0 +1,17 @@
+id: if-i-could-only-start-over-1
+title: If I Could Only Start Over
+artist: Porter Wagoner
+composers:
+- Faye Bradshaw
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldonlystartoverlyricschords.pro
+    imported_at: '2026-01-02'

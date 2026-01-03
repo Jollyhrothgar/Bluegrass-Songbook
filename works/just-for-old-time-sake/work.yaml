@@ -1,0 +1,17 @@
+id: just-for-old-time-sake
+title: Just For Old Time Sake
+artist: Jim Ed Brown
+composers:
+- Hank Hunter and Jack Keller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justforoldtimesakelyricschords.pro
+    imported_at: '2026-01-02'

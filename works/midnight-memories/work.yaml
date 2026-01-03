@@ -1,0 +1,17 @@
+id: midnight-memories
+title: Midnight Memories
+artist: Vernon Oxford
+composers:
+- Dewayne Orender and Johnny Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: midnightmemorieslyricschords.pro
+    imported_at: '2026-01-02'

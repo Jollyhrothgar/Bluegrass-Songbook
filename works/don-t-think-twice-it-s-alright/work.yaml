@@ -1,0 +1,17 @@
+id: don-t-think-twice-it-s-alright
+title: Don't Think Twice It's Alright
+artist: Bobby Bare
+composers:
+- Bob Dylan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontthinktwiceitsalrightlyricschords.pro
+    imported_at: '2026-01-02'

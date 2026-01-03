@@ -1,0 +1,17 @@
+id: peace-of-mind-2
+title: Peace Of Mind
+artist: Red Sovine
+composers:
+- Art Bishop
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: peaceofmindlyricswithchords.pro
+    imported_at: '2026-01-02'

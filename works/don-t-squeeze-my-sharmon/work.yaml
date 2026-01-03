@@ -1,0 +1,17 @@
+id: don-t-squeeze-my-sharmon
+title: Don't Squeeze My Sharmon
+artist: Charlie Walker
+composers:
+- Carl Belew and Van Givens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontsqueezemysharmonlyricschords.pro
+    imported_at: '2026-01-02'

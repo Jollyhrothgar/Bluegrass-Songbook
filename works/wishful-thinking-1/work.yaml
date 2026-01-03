@@ -1,0 +1,15 @@
+id: wishful-thinking-1
+title: Wishful Thinking
+artist: Wynn Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wishfulthinkinglyricschords.pro
+    imported_at: '2026-01-02'

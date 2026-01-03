@@ -1,0 +1,18 @@
+id: torn-between-two-lovers-1
+title: Torn between two lovers
+artist: Connie Francis
+composers:
+- Peter Yarrow and Phil Jarrel
+default_key: G
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tornbetweentwoloverslyricschords.pro
+    imported_at: '2026-01-02'

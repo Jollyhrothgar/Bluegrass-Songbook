@@ -1,0 +1,17 @@
+id: there-she-goes-i-wish-her-well
+title: There She Goes I Wish Her Well
+artist: Don Gibson
+composers:
+- and recorded by Don Gibson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thereshegoesiwishherwelllyricschords.pro
+    imported_at: '2026-01-02'

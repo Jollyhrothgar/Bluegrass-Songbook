@@ -1,0 +1,18 @@
+id: midnight-in-montgomery
+title: Midnight In Montgomery
+artist: Alan Jackson
+composers:
+- Don Sampson and Alan Jackson
+default_key: Dm
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: midnightinmontgomerylyricschords.pro
+    imported_at: '2026-01-02'

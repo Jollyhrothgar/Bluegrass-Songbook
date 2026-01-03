@@ -1,0 +1,17 @@
+id: i-m-gonna-hurt-her-on-the-radio
+title: I'm Gonna Hurt Her On The Radio
+artist: The Bellamy Brothers
+composers:
+- Tom Brasfield and Lyman McAnally
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnahurtherontheradiolyricschords.pro
+    imported_at: '2026-01-02'

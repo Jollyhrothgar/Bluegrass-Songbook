@@ -1,0 +1,18 @@
+id: the-pain-of-loving-you
+title: The Pain Of Loving You
+artist: Emmylou Harris
+composers:
+- Dolly Parton/Porter Wagoner
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thepainoflovingyoulyricschords.pro
+    imported_at: '2026-01-02'

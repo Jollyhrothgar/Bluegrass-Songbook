@@ -1,0 +1,17 @@
+id: it-hurts-to-know
+title: It Hurts To Know
+artist: The Osborne Brothers
+composers:
+- Red Allen and Tommy Sutton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithurtstoknowlyricschords.pro
+    imported_at: '2026-01-02'

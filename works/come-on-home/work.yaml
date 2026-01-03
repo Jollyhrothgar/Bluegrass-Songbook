@@ -1,0 +1,19 @@
+id: come-on-home
+title: Come On Home
+artist: Mel Tillis
+composers:
+- Jeff Lopez
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comeonhomelyricsandchords.pro
+    imported_at: '2026-01-02'

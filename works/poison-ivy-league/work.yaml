@@ -1,0 +1,22 @@
+id: poison-ivy-league
+title: Poison Ivy League
+artist: Elvis Presley
+composers:
+- Bill Giant, Bernie Baum, Florenece Kaye
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: poisonivyleaguelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: pride-s-not-hard-to-swallow
+title: Pride's Not Hard To Swallow
+artist: Hank Williams Jr.
+composers:
+- Jerry Chesnut
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pridesnothardtoswallowlyricschords.pro
+    imported_at: '2026-01-02'

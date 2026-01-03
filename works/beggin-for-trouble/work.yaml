@@ -1,0 +1,17 @@
+id: beggin-for-trouble
+title: Beggin' For Trouble
+artist: Billy Walker
+composers:
+- Jerry Reed Hubbard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: begginfortroublelyricschords.pro
+    imported_at: '2026-01-02'

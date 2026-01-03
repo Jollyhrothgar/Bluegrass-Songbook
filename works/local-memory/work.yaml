@@ -1,0 +1,17 @@
+id: local-memory
+title: Local Memory
+artist: Willie Nelson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: localmemorylyricschords.pro
+    imported_at: '2026-01-02'

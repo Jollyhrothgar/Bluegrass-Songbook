@@ -1,0 +1,18 @@
+id: any-single-solitary-heart
+title: Any Single Solitary Heart
+artist: The Everly Brothers
+composers:
+- John Hiatt and Mike Porter
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anysinglesolitaryheartlyricschords.pro
+    imported_at: '2026-01-02'

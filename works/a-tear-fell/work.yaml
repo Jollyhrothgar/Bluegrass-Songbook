@@ -1,0 +1,17 @@
+id: a-tear-fell
+title: A Tear Fell
+artist: Billy Crash Craddock
+composers:
+- Eugene Randolph and Dorian Burton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atearfelllyricschords.pro
+    imported_at: '2026-01-02'

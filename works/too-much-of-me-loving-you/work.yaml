@@ -1,0 +1,15 @@
+id: too-much-of-me-loving-you
+title: Too Much Of Me Loving You
+artist: Dottie West
+composers:
+- Jan Crutchfield and Johnny Slate
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomuchofmelovingyoulyricschords.pro
+    imported_at: '2026-01-02'

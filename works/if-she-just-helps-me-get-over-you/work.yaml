@@ -1,0 +1,18 @@
+id: if-she-just-helps-me-get-over-you
+title: If She Just Helps Me Get Over You
+artist: Charley Pride
+composers:
+- Don Williams and Allen Reynolds
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifshejusthelpsmegetoveryoulyricschords.pro
+    imported_at: '2026-01-02'

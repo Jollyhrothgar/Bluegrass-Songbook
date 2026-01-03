@@ -1,0 +1,19 @@
+id: for-sale-lyrics-and-chords
+title: For Sale Lyrics and Chords
+artist: Hank Snow
+composers:
+- John Howard and Eugene Dragee
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forsalelyricsandchords.pro
+    imported_at: '2026-01-02'

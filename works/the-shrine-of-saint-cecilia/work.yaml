@@ -1,0 +1,17 @@
+id: the-shrine-of-saint-cecilia
+title: The Shrine Of Saint Cecilia
+artist: Faron Young
+composers:
+- Pern Jokern and Carroll Loveday
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theshrineofsaintcecilialyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: my-memories-of-you
+title: My Memories of You
+artist: Gene Watson
+composers:
+- Daniel T. Rainwater & Larry Booth
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mymemoriesofyoulyricschords.pro
+    imported_at: '2026-01-02'

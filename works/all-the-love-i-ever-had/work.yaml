@@ -1,0 +1,17 @@
+id: all-the-love-i-ever-had
+title: All The Love I Ever Had
+artist: Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alltheloveieverhadlyricschords.pro
+    imported_at: '2026-01-02'

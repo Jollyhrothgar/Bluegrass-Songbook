@@ -1,0 +1,18 @@
+id: picture-of-you
+title: Picture Of You
+artist: Charlie Rich
+composers:
+- Ted Harris
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pictureofyoulyricschords.pro
+    imported_at: '2026-01-02'

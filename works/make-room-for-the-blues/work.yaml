@@ -1,0 +1,18 @@
+id: make-room-for-the-blues
+title: Make Room For The Blues
+artist: The Del McCoury Band
+composers:
+- Hank DeVito and Paul Kennerley
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makeroomfortheblueslyricschords.pro
+    imported_at: '2026-01-02'

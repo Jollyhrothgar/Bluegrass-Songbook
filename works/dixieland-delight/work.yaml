@@ -1,0 +1,17 @@
+id: dixieland-delight
+title: Dixieland Delight
+artist: Alabama
+composers:
+- Ronnie Rogers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dixielanddelightlyricschords.pro
+    imported_at: '2026-01-02'

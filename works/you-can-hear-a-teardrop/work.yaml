@@ -1,0 +1,17 @@
+id: you-can-hear-a-teardrop
+title: You Can Hear A Teardrop
+artist: Johnny Paycheck
+composers:
+- Mack Vickery and John Wiggins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanhearateardroplyricschords.pro
+    imported_at: '2026-01-02'

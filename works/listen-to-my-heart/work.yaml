@@ -1,0 +1,15 @@
+id: listen-to-my-heart
+title: Listen To My Heart
+artist: David Ball
+composers:
+- Allen Shamblin and David Ball
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: listentomyheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: that-do-make-it-nice
+title: That Do Make It Nice
+artist: Eddy Arnold
+composers:
+- Fred Ebb, Paul Klein, Eddy Arnold
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatdomakeitnicelyricschords.pro
+    imported_at: '2026-01-02'

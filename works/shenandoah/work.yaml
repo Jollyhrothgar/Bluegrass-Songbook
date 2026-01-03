@@ -1,0 +1,17 @@
+id: shenandoah
+title: Shenandoah
+artist: The Statler Brothers
+composers:
+- Philip E. Balsley, Lewis Calvin DeWitt Jr.,Don S. Reid and Harold Wilson Reid
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shenandoahlyricschords.pro
+    imported_at: '2026-01-02'

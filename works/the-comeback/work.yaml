@@ -1,0 +1,17 @@
+id: the-comeback
+title: The Comeback
+artist: Faron Young
+composers:
+- Danny Dill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thecomebacklyricschords.pro
+    imported_at: '2026-01-02'

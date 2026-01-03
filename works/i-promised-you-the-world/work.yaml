@@ -1,0 +1,17 @@
+id: i-promised-you-the-world
+title: I Promised You The World
+artist: Ferlin Husky
+composers:
+- Curly Putman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ipromisedyoutheworldlyricschords.pro
+    imported_at: '2026-01-02'

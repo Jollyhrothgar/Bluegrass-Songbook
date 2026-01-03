@@ -1,0 +1,15 @@
+id: one-more-last-time
+title: One More Last Time
+artist: Billy Parker
+composers:
+- James H. Forst
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemorelasttimelyricschords.pro
+    imported_at: '2026-01-02'

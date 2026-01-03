@@ -1,0 +1,19 @@
+id: if-i-could-climb-the-walls-of-this-bottle
+title: If I Could Climb The Walls Of This Bottle
+artist: David Allan Coe
+composers:
+- Don Goodman and Dan Seals
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldclimbthewallsofthisbottlelyricschords.pro
+    imported_at: '2026-01-02'

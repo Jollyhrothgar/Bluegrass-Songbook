@@ -1,0 +1,17 @@
+id: the-old-man-and-his-horn
+title: The Old Man And His Horn
+artist: Gene Watson
+composers:
+- Dallas Harms
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldmanandhishornlyricschords.pro
+    imported_at: '2026-01-02'

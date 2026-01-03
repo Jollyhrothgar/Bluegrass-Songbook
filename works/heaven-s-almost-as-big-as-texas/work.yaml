@@ -1,0 +1,17 @@
+id: heaven-s-almost-as-big-as-texas
+title: Heaven's Almost As Big As Texas
+artist: Johnny Paycheck
+composers:
+- Robert Lee Floyd
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavensalmostasbigastexaslyricschords.pro
+    imported_at: '2026-01-02'

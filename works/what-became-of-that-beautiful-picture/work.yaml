@@ -1,0 +1,17 @@
+id: what-became-of-that-beautiful-picture
+title: What Became Of That Beautiful Picture
+artist: Charlie Waller
+composers:
+- Shep Sessoms and Mel Butler
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatbecameofthatbeautifulpicturelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: hard-on-my-heart
+title: Hard On My Heart
+artist: Del McCoury
+composers:
+- Sharon Higgins, Terry Smith, William Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hardonmyheartlyricschords.pro
+    imported_at: '2026-01-02'

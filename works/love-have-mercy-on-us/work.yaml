@@ -1,0 +1,17 @@
+id: love-have-mercy-on-us
+title: Love Have Mercy On Us
+artist: Dolly Parton and Porter Wagoner
+composers:
+- Dolly Parton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovehavemercyonuslyricschords.pro
+    imported_at: '2026-01-02'

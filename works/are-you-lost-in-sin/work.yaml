@@ -1,0 +1,17 @@
+id: are-you-lost-in-sin
+title: Are You Lost In Sin
+artist: J.D. Crowe
+composers:
+- Jesse McReynolds and Jim McReynolds
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: areyoulostinsinlyricschords.pro
+    imported_at: '2026-01-02'

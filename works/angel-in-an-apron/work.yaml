@@ -1,0 +1,15 @@
+id: angel-in-an-apron
+title: Angel In An Apron
+artist: Jimmy Dean
+composers:
+- Gary S. Paxton and Ronald W. Hellard
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: angelinanapronlyricschords.pro
+    imported_at: '2026-01-02'

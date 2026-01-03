@@ -1,0 +1,18 @@
+id: sweet-dreams-of-you
+title: Sweet Dreams Of You
+artist: Emmylou Harris
+composers:
+- Paul Kennerley and John David
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetdreamsofyoulyricschords.pro
+    imported_at: '2026-01-02'

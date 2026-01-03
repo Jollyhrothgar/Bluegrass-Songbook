@@ -1,0 +1,17 @@
+id: fool-fool-fool-lyrics-and-chords
+title: Fool Fool Fool Lyrics and Chords
+artist: Webb Pierce
+composers:
+- Max Powell and Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolfoolfoollyricsandchords.pro
+    imported_at: '2026-01-02'

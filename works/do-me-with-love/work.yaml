@@ -1,0 +1,17 @@
+id: do-me-with-love
+title: Do Me With Love
+artist: Janie Fricke
+composers:
+- John Schweers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: domewithlovelyricschords.pro
+    imported_at: '2026-01-02'

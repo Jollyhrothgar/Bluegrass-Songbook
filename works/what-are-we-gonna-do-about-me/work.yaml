@@ -1,0 +1,17 @@
+id: what-are-we-gonna-do-about-me
+title: What Are We Gonna Do About Me
+artist: Vern Gosdin
+composers:
+- Vern Gosdin and John Northrup
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatarewegonnadoaboutmelyricschords.pro
+    imported_at: '2026-01-02'

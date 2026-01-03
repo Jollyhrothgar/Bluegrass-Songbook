@@ -1,0 +1,17 @@
+id: following-the-feeling
+title: Following the Feeling
+artist: Moe Bandy
+composers:
+- Charlie Craig
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: followingthefeelinglyricschords.pro
+    imported_at: '2026-01-02'

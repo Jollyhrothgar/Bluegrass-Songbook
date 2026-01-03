@@ -1,0 +1,16 @@
+id: if-not-for-the-love-of-christ
+title: If Not For The Love Of Christ
+artist: The Oak Ridge Boys
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifnotfortheloveofchristlyricschords.pro
+    imported_at: '2026-01-02'

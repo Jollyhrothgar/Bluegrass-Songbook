@@ -1,0 +1,16 @@
+id: ride-old-buck-to-water
+title: Ride Old Buck to Water
+artist: Traditional
+composers:
+- Biography:Skillet Lickers
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

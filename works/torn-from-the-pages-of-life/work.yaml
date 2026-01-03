@@ -1,0 +1,15 @@
+id: torn-from-the-pages-of-life
+title: Torn From The Pages Of Life
+artist: Stonewall Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tornfromthepagesoflifelyricschords.pro
+    imported_at: '2026-01-02'

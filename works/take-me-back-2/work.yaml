@@ -1,0 +1,17 @@
+id: take-me-back-2
+title: Take Me Back
+artist: Charly McClain
+composers:
+- Larry Rogers, Red Williams, Charly McClain
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemebacklyricswithchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: diamonds-in-the-rough
+title: Diamonds In The Rough
+artist: The Blue Ridge Mountain Boys
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: diamondsintheroughlyricschords.pro
+    imported_at: '2026-01-02'

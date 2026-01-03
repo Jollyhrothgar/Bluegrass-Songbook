@@ -1,0 +1,17 @@
+id: come-on-phone
+title: Come On Phone
+artist: Jean Shepard
+composers:
+- Larry Henley and Johnny Slate
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comeonphonelyricschords.pro
+    imported_at: '2026-01-02'

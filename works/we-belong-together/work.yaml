@@ -1,0 +1,18 @@
+id: we-belong-together
+title: We Belong Together
+artist: Rhonda Vincent
+composers:
+- Ken Wesley
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: webelongtogetherlyricschords.pro
+    imported_at: '2026-01-02'

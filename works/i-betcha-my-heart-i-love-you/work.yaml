@@ -1,0 +1,18 @@
+id: i-betcha-my-heart-i-love-you
+title: I Betcha My Heart I Love You
+artist: Wanda Jackson
+composers:
+- Bob Miller and Esther VanSciver
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibetchamyheartiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

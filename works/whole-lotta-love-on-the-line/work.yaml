@@ -1,0 +1,18 @@
+id: whole-lotta-love-on-the-line
+title: Whole Lotta Love On The Line
+artist: Charley Pride
+composers:
+- Aaron Tippin and Donni Kees
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wholelottaloveonthelinelyricschords.pro
+    imported_at: '2026-01-02'

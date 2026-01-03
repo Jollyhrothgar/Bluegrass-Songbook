@@ -1,0 +1,17 @@
+id: trouble-and-me-lyrics-chords
+title: Trouble And Me Lyrics chords
+artist: Stonewall Jackson
+composers:
+- Jimmy Rule
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: troubleandmelyricsandchords.pro
+    imported_at: '2026-01-02'

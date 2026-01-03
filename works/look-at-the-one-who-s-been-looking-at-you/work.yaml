@@ -1,0 +1,18 @@
+id: look-at-the-one-who-s-been-looking-at-you
+title: Look At The One (Who's Been Looking At You)
+artist: Reba McEntire
+composers:
+- Bob Morrison, Johnny McRae, Wanda Mallette
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookattheonewhosbeenlookingatyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-can-t-make-it-without-you
+title: I Can't Make It Without You
+artist: Curtis Potter
+composers:
+- Daryl W. Hall and Ray Sanders
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantmakeitwithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

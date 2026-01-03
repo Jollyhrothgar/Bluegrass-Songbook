@@ -1,0 +1,17 @@
+id: the-hurtin-s-all-over
+title: The Hurtin's All Over
+artist: Connie Smith
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thehurtinsalloverlyricschords.pro
+    imported_at: '2026-01-02'

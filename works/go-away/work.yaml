@@ -1,0 +1,18 @@
+id: go-away
+title: Go Away
+artist: Lorrie Morgan
+composers:
+- Stephony Smith, Cathy Majeski, Sunny Russ
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goawaylyricsandchords.pro
+    imported_at: '2026-01-02'

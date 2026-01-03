@@ -1,0 +1,21 @@
+id: carny-town
+title: Carny Town
+artist: Elvis Presley
+composers:
+- Randy Starr and Fred Wise
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carnytownlyricschords.pro
+    imported_at: '2026-01-02'

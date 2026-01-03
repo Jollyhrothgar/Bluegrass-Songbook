@@ -1,0 +1,17 @@
+id: mother-s-mansion-is-higher-than-mine
+title: Mother's Mansion Is Higher Than Mine
+artist: Mac Wiseman
+composers:
+- Albert E. Brumley Sr.
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mothersmansionishigherthanminelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-d-rather-love-you
+title: I'd Rather Love You
+artist: Charlie Pride
+composers:
+- Johnny Duncan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idratherloveyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: whisper-my-name
+title: Whisper My Name
+artist: Randy Travis
+composers:
+- Trey Bruce
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whispermynamelyricschords.pro
+    imported_at: '2026-01-02'

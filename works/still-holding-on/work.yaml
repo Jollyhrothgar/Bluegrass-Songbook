@@ -1,0 +1,18 @@
+id: still-holding-on
+title: Still Holding On
+artist: Clint Black
+composers:
+- Matraca Berg, Marty Stuart, Clint Black
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stillholdingonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: sing-me-something-sentimental
+title: Sing Me Something Sentimental
+artist: Hank Thompson
+composers:
+- Martin D. Robinson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singmesomethingsentimentallyricschords.pro
+    imported_at: '2026-01-02'

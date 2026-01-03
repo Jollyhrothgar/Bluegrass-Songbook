@@ -1,0 +1,18 @@
+id: things-that-i-don-t-know
+title: Things That I Don't Know
+artist: Marty Robbins
+composers:
+- Jack Pruett
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thingsthatidontknowlyricschords.pro
+    imported_at: '2026-01-02'

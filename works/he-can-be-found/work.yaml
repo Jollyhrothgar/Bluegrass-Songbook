@@ -1,0 +1,20 @@
+id: he-can-be-found
+title: He Can Be Found
+artist: The Louvin Brothers
+composers:
+- Ella Barrett and Faye Cunningham
+default_key: C
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hecanbefoundlyricschords.pro
+    imported_at: '2026-01-02'

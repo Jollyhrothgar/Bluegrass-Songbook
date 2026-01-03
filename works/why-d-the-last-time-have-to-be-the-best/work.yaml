@@ -1,0 +1,17 @@
+id: why-d-the-last-time-have-to-be-the-best
+title: Why'd The Last Time Have To Be The Best
+artist: Bill Anderson
+composers:
+- Red Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydthelasttimehavetobethebestlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: whatever-happened-to-old-fashioned-love
+title: Whatever Happened To Old Fashioned Love
+artist: B.J. Thomas
+composers:
+- Lewis Anderson
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whateverhappenedtooldfashionedlovelyricschords.pro
+    imported_at: '2026-01-02'

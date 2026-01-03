@@ -1,0 +1,15 @@
+id: no-sad-songs-for-me
+title: No Sad Songs For Me
+artist: Bobby Bare
+composers:
+- Tim Springfield
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nosadsongsformelyricschords.pro
+    imported_at: '2026-01-02'

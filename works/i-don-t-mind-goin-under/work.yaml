@@ -1,0 +1,17 @@
+id: i-don-t-mind-goin-under
+title: I Don't Mind Goin' Under
+artist: Charlie Walker
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontmindgoinunderlyricschords.pro
+    imported_at: '2026-01-02'

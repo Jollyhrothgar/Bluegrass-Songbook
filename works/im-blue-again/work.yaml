@@ -1,0 +1,20 @@
+id: im-blue-again
+title: I’m Blue Again
+artist: Patsy Cline
+composers:
+- W.S. Stevenson, Clyde C. Beam, Charles L. Jiles
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imblueagainlyricschords.pro
+    imported_at: '2026-01-02'

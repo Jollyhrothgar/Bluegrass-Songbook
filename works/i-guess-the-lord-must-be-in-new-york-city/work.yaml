@@ -1,0 +1,13 @@
+id: i-guess-the-lord-must-be-in-new-york-city
+title: I Guess the Lord Must Be in New York City
+artist: Harry Nilison
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iguessthelordmustbeinnewyorkcitylyricschords.pro
+    imported_at: '2026-01-02'

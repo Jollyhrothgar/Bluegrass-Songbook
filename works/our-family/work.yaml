@@ -1,0 +1,15 @@
+id: our-family
+title: Our Family
+artist: The Bellamy Brothers
+composers:
+- Bobby Braddock and David Bellamy
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ourfamilylyricschords.pro
+    imported_at: '2026-01-02'

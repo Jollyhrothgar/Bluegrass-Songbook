@@ -1,0 +1,17 @@
+id: my-home-sweet-home
+title: My Home Sweet Home
+artist: Faron Young
+composers:
+- N.B. Vandall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myhomesweethomelyricschords.pro
+    imported_at: '2026-01-02'

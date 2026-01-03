@@ -1,0 +1,17 @@
+id: what-does-your-conscience-say-to-you
+title: What Does Your Conscience Say To You
+artist: Ferlin Husky
+composers:
+- Ray Pennington
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatdoesyourconsciencesaytoyoulyricschords.pro
+    imported_at: '2026-01-02'

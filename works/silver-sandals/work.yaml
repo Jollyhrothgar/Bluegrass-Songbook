@@ -1,0 +1,17 @@
+id: silver-sandals
+title: Silver Sandals
+artist: Dolly Parton & Porter Wagoner
+composers:
+- Dolly Parton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: silversandalslyricschords.pro
+    imported_at: '2026-01-02'

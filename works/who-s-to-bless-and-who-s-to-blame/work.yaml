@@ -1,0 +1,18 @@
+id: who-s-to-bless-and-who-s-to-blame
+title: Who's To Bless And Who's To Blame
+artist: Kris Kristofferson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whostoblessandwhostoblamelyricschords.pro
+    imported_at: '2026-01-02'

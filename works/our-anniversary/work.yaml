@@ -1,0 +1,13 @@
+id: our-anniversary
+title: Our Anniversary
+artist: Daniel O'Donnell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ouranniversarylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: if-you-were-a-bluebird
+title: If You Were A Bluebird
+artist: Emmylou Harris
+composers:
+- Butch Hancock
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouwereabluebirdlyricschords.pro
+    imported_at: '2026-01-02'

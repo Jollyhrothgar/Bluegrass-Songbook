@@ -1,0 +1,15 @@
+id: you-re-still-my-heartache-number-one
+title: You're Still My Heartache Number One
+artist: Leon Copas
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourestillmyheartachenumberonelyricschords.pro
+    imported_at: '2026-01-02'

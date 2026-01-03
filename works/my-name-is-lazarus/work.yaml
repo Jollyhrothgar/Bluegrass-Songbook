@@ -1,0 +1,17 @@
+id: my-name-is-lazarus
+title: My Name Is Lazarus
+artist: Greater Vision
+composers:
+- Rodney Griffin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mynameislazaruslyricschords.pro
+    imported_at: '2026-01-02'

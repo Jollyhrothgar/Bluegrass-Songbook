@@ -1,0 +1,17 @@
+id: i-m-in-the-mood-for-love
+title: I'm In The Mood For Love
+artist: Fats Domino
+composers:
+- Dorothy Fields and Jimmy McHugh
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iminthemoodforlovelyricschords.pro
+    imported_at: '2026-01-02'

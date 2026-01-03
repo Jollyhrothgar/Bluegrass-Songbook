@@ -1,0 +1,18 @@
+id: fool-for-your-love
+title: Fool For Your Love
+artist: Mickey Gilley
+composers:
+- Don R. Singleton
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolforyourlovelyricschords.pro
+    imported_at: '2026-01-02'

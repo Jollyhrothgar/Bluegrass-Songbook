@@ -1,0 +1,17 @@
+id: i-ve-got-a-winner-in-you
+title: I've Got A Winner In You
+artist: Don Williams
+composers:
+- Don Williams and Wayland Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotawinnerinyoulyricschords.pro
+    imported_at: '2026-01-02'

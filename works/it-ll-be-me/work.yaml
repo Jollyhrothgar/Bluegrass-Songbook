@@ -1,0 +1,20 @@
+id: it-ll-be-me
+title: It'll Be Me
+artist: Jerry Lee Lewis
+composers:
+- Jack Clement
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itllbemelyricschords.pro
+    imported_at: '2026-01-02'

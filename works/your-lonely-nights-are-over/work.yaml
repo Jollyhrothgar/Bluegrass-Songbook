@@ -1,0 +1,17 @@
+id: your-lonely-nights-are-over
+title: Your Lonely Nights Are Over
+artist: George Morgan
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourlonelynightsareoverlyricschords.pro
+    imported_at: '2026-01-02'

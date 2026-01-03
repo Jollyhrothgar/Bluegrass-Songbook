@@ -1,0 +1,17 @@
+id: girls-in-disgrace
+title: Girls In Disgrace
+artist: Jean Shepard
+composers:
+- Dan Welch and Mary McDaniel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: girlsindisgracelyricschords.pro
+    imported_at: '2026-01-02'

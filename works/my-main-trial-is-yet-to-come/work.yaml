@@ -1,0 +1,19 @@
+id: my-main-trial-is-yet-to-come
+title: My Main Trial Is Yet To Come
+artist: Hank Williams
+composers:
+- Pee Wee King and J.L. Franks
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mymaintrialisyettocomelyricschords.pro
+    imported_at: '2026-01-02'

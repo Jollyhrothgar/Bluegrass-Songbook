@@ -1,0 +1,17 @@
+id: it-s-a-beautiful-thing
+title: It's A Beautiful Thing
+artist: Ronnie Milsap
+composers:
+- Craig Wiseman and Jeffrey Steele
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsabeautifulthinglyricschords.pro
+    imported_at: '2026-01-02'

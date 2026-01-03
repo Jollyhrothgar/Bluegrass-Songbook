@@ -1,0 +1,17 @@
+id: for-my-baby
+title: For My Baby
+artist: Cal Smith
+composers:
+- Clyde Otis and Brook Benton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: formybabylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: it-s-only-make-believe
+title: It's Only Make Believe
+artist: Conway Twitty
+composers:
+- Conway Twitty and Jack Nance
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsonlymakebelievelyricschords.pro
+    imported_at: '2026-01-02'

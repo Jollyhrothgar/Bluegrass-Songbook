@@ -1,0 +1,17 @@
+id: i-can-tell-by-the-way-you-dance
+title: I Can Tell By the Way You Dance
+artist: Vern Gosdin
+composers:
+- Sandy Pinkard and Rob Strandlund
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantellbythewayyoudancelyricschords.pro
+    imported_at: '2026-01-02'

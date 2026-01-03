@@ -1,0 +1,17 @@
+id: mary-s-little-boy-child
+title: Mary's Little Boy Child
+artist: Jim Reeves
+composers:
+- Jester Hairston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maryslittleboychildlyricschords.pro
+    imported_at: '2026-01-02'

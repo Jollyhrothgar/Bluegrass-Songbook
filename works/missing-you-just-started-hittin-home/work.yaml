@@ -1,0 +1,17 @@
+id: missing-you-just-started-hittin-home
+title: Missing You Just Started Hittin' Home
+artist: Gene Watson
+composers:
+- Dave Kirby, Warren Robb, Shirl Milete
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: missingyoujuststartedhittinhomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: tell-her-so
+title: Tell Her So
+artist: Wilburn Brothers
+composers:
+- Glenn D. Tubb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellhersolyricschords.pro
+    imported_at: '2026-01-02'

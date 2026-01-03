@@ -1,0 +1,17 @@
+id: like-you
+title: Like You
+artist: Tommy Overstreet
+composers:
+- Blake Mevis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: likeyoulyricschords.pro
+    imported_at: '2026-01-02'

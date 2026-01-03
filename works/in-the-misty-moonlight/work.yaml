@@ -1,0 +1,17 @@
+id: in-the-misty-moonlight
+title: In The Misty Moonlight
+artist: Eddy Arnold
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthemistymoonlightlyricschords.pro
+    imported_at: '2026-01-02'

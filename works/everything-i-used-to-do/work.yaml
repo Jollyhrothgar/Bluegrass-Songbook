@@ -1,0 +1,17 @@
+id: everything-i-used-to-do
+title: Everything I Used To Do
+artist: Gene Watson
+composers:
+- Ernie Rowell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingiusedtodolyricschords.pro
+    imported_at: '2026-01-02'

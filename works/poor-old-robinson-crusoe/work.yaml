@@ -1,0 +1,13 @@
+id: poor-old-robinson-crusoe
+title: Poor Old Robinson Crusoe
+artist: Traditional
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

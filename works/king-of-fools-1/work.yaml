@@ -1,0 +1,17 @@
+id: king-of-fools-1
+title: King Of Fools
+artist: Buck Owens
+composers:
+- Buck Owens, Red Simpson, Dusty Rhodes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kingoffoolslyricschords.pro
+    imported_at: '2026-01-02'

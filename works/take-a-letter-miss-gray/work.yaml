@@ -1,0 +1,17 @@
+id: take-a-letter-miss-gray
+title: Take A Letter Miss Gray
+artist: Faron Young
+composers:
+- Justin Tubb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takealettermissgraylyricschords.pro
+    imported_at: '2026-01-02'

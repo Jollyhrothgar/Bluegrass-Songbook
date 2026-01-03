@@ -1,0 +1,17 @@
+id: home
+title: Home
+artist: Roger Miller
+composers:
+- Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: home1lyricschords.pro
+    imported_at: '2026-01-02'

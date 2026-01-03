@@ -1,0 +1,17 @@
+id: light-at-the-end-of-the-tunnel
+title: Light At The End Of The Tunnel
+artist: Keith Whitley
+composers:
+- Don Cook and Keith Whitley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lightattheendofthetunnellyricsandchords.pro
+    imported_at: '2026-01-02'

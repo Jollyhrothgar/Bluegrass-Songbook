@@ -1,0 +1,17 @@
+id: oh-how-i-cried
+title: Oh How I Cried
+artist: Hawkshaw Hawkins
+composers:
+- Don Gibson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohhowicriedlyricschords.pro
+    imported_at: '2026-01-02'

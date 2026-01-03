@@ -1,0 +1,17 @@
+id: theres-a-whole-lot-about-a-woman-a-man-dont-know
+title: There’s A Whole Lot About A Woman A Man Don’t Know
+artist: Jack Greene
+composers:
+- Bill Eldridge, Gary Stewart, Walter Haynes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresawholelotaboutawomanamandontknowlyricschords.pro
+    imported_at: '2026-01-02'

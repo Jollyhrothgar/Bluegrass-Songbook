@@ -1,0 +1,20 @@
+id: they-remind-me-too-much-of-you
+title: They Remind Me Too Much Of You
+artist: Elvis Presley
+composers:
+- Don Robertson
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theyremindmetoomuchofyoulyricschords.pro
+    imported_at: '2026-01-02'

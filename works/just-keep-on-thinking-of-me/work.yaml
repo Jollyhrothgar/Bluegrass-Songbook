@@ -1,0 +1,17 @@
+id: just-keep-on-thinking-of-me
+title: Just Keep On Thinking Of Me
+artist: Sonny James
+composers:
+- John Skye
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justkeepthinkingofmelyricschords.pro
+    imported_at: '2026-01-02'

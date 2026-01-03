@@ -1,0 +1,17 @@
+id: when-my-ship-comes-in-1
+title: When My Ship Comes In
+artist: Ferlin Husky
+composers:
+- Phil Earhart and Harlan Sanders
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenmyshipcomesinlyricschords.pro
+    imported_at: '2026-01-02'

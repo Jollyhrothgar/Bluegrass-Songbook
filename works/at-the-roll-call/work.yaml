@@ -1,0 +1,18 @@
+id: at-the-roll-call
+title: At The Roll Call
+artist: The Oak Ridge Boys
+composers:
+- James S. Weatherington
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: attherollcalllyricschords.pro
+    imported_at: '2026-01-02'

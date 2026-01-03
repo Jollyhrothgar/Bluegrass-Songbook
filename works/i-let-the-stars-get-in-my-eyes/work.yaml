@@ -1,0 +1,17 @@
+id: i-let-the-stars-get-in-my-eyes
+title: I Let The Stars Get In My Eyes
+artist: Goldie Hill
+composers:
+- Slim Willet
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iletthestarsgetinmyeyeslyricschords.pro
+    imported_at: '2026-01-02'

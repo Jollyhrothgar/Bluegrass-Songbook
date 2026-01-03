@@ -1,0 +1,18 @@
+id: baby-s-back-again
+title: Baby's Back Again
+artist: Connie Smith
+composers:
+- Betty Jean Robinson
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babysbackagainlyricschords.pro
+    imported_at: '2026-01-02'

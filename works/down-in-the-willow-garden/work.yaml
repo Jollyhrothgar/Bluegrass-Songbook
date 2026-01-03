@@ -1,0 +1,19 @@
+id: down-in-the-willow-garden
+title: Down In The Willow Garden
+artist: The Everly Brothers
+composers:
+- Charlie Monroe
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downinthewillowgardenlyricsandchords.pro
+    imported_at: '2026-01-02'

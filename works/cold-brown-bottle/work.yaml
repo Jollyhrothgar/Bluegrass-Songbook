@@ -1,0 +1,17 @@
+id: cold-brown-bottle
+title: Cold Brown Bottle
+artist: Tony Booth
+composers:
+- Joe Gough
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldbrownbottlelyricschords.pro
+    imported_at: '2026-01-02'

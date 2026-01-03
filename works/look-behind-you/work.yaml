@@ -1,0 +1,17 @@
+id: look-behind-you
+title: Look Behind You
+artist: Jim Reeves
+composers:
+- Jim Reeves and Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookbehindyoulyricschords.pro
+    imported_at: '2026-01-02'

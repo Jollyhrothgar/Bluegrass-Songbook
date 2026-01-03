@@ -1,0 +1,17 @@
+id: did-you-see-my-daddy-over-there-lyrics-and-chords
+title: Did You See My Daddy Over There Lyrics and Chords
+artist: Eddy Arnold
+composers:
+- Bill Showmet
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didyouseemydaddyovertherelyricschords.pro
+    imported_at: '2026-01-02'

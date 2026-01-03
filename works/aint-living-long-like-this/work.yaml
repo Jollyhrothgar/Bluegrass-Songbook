@@ -1,0 +1,19 @@
+id: aint-living-long-like-this
+title: Ain’t Living Long Like This
+artist: Waylon Jennings
+composers:
+- Rodney J. Crowell
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintlivinglonglikethislyricschords.pro
+    imported_at: '2026-01-02'

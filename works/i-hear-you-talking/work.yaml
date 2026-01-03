@@ -1,0 +1,17 @@
+id: i-hear-you-talking
+title: I Hear You Talking
+artist: Faron Young
+composers:
+- Cindy Walker and Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihearyoutalkingchordslyrics.pro
+    imported_at: '2026-01-02'

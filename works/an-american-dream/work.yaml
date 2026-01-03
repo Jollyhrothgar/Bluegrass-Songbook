@@ -1,0 +1,20 @@
+id: an-american-dream
+title: An American Dream
+artist: Nitty Gritty Dirt Band
+composers:
+- Rodney J. Crowell
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anamericandreamlyricschords.pro
+    imported_at: '2026-01-02'

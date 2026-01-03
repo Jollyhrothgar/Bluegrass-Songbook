@@ -1,0 +1,15 @@
+id: sunny-tennessee
+title: Sunny Tennessee
+artist: Cowboy Copas
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sunnytennesseelyricschords.pro
+    imported_at: '2026-01-02'

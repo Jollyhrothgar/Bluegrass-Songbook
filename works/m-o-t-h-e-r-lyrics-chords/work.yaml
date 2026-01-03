@@ -1,0 +1,15 @@
+id: m-o-t-h-e-r-lyrics-chords
+title: M-O-T-H-E-R Lyrics Chords
+artist: Eddy Arnold
+composers:
+- Theodore Morse and Howard Johnson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: M-O-T-H-E-Rlyricschords.pro
+    imported_at: '2026-01-02'

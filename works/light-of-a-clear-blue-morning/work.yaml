@@ -1,0 +1,18 @@
+id: light-of-a-clear-blue-morning
+title: Light Of A Clear Blue Morning
+artist: Dolly Parton
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lightofaclearbluemorninglyricschords.pro
+    imported_at: '2026-01-02'

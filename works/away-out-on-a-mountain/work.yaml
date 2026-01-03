@@ -1,0 +1,17 @@
+id: away-out-on-a-mountain
+title: Away Out On A Mountain
+artist: Jimmy Rodgers
+composers:
+- Kelly Harrell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awayoutonamountainlyricschords.pro
+    imported_at: '2026-01-02'

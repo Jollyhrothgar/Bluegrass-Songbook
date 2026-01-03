@@ -1,0 +1,17 @@
+id: she-can-put-her-shoes-under-my-bed
+title: She Can Put Her Shoes Under My Bed
+artist: Johnny Duncan
+composers:
+- Aaron Schroeder
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shecanputhershoesundermybedlyricschords.pro
+    imported_at: '2026-01-02'

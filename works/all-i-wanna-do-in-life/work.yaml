@@ -1,0 +1,17 @@
+id: all-i-wanna-do-in-life
+title: All I Wanna Do In Life
+artist: Crystal Gayle
+composers:
+- Allen Reynolds and Sandy Mason
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alliwannadoinlifelyricschords.pro
+    imported_at: '2026-01-02'

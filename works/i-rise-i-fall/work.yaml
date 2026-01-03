@@ -1,0 +1,15 @@
+id: i-rise-i-fall
+title: I Rise I Fall
+artist: Johnny Tillotson
+composers:
+- Paul Hampton
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iriseifalllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: johnny-and-sally
+title: Johnny And Sally
+artist: Doyle Lawson
+composers:
+- John Michael Keith, David H. Lindsey, Matt Lindsey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: johnnyandsallylyricschords.pro
+    imported_at: '2026-01-02'

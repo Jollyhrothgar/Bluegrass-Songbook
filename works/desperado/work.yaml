@@ -1,0 +1,17 @@
+id: desperado
+title: Desperado
+artist: Kenny Rogers
+composers:
+- Don Henley and Glen Frey
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: desperadolyricschords.pro
+    imported_at: '2026-01-02'

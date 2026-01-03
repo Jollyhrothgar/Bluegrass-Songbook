@@ -1,0 +1,15 @@
+id: it-don-t-show-on-me
+title: It Don't Show On Me
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itdontshowonmelyricschords.pro
+    imported_at: '2026-01-02'

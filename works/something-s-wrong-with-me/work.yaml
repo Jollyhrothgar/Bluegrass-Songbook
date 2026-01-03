@@ -1,0 +1,19 @@
+id: something-s-wrong-with-me
+title: Something's Wrong With Me
+artist: Brenda Lee
+composers:
+- Bobby Hart and Danny Janssen
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingswrongwithmelyricschords.pro
+    imported_at: '2026-01-02'

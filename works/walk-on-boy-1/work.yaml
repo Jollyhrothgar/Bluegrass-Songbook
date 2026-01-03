@@ -1,0 +1,15 @@
+id: walk-on-boy-1
+title: Walk On Boy
+artist: Traditional
+default_key: Em
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

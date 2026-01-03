@@ -1,0 +1,18 @@
+id: from-an-angel-to-a-devil
+title: From An Angel To A Devil
+artist: Lefty Frizzell
+composers:
+- Rusty Nail
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromanangeltoadevillyricschords.pro
+    imported_at: '2026-01-02'

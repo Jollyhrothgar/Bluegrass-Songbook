@@ -1,0 +1,17 @@
+id: i-m-waiting-just-for-you-1
+title: I'm Waiting Just For You
+artist: Hawkshaw Hawkins
+composers:
+- Henry Glover, Carolyn Leigh, Lucky Millinder
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imwaitingjustforyoulyricschords.pro
+    imported_at: '2026-01-02'

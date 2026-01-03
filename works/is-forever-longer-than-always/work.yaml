@@ -1,0 +1,14 @@
+id: is-forever-longer-than-always
+title: Is Forever Longer Than Always
+artist: Porter Wagoner
+composers:
+- Porter Wagoner and Frank Dycus
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isforeverlongerthanalwayslyricschords.pro
+    imported_at: '2026-01-02'

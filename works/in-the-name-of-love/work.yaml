@@ -1,0 +1,17 @@
+id: in-the-name-of-love
+title: In The Name Of Love
+artist: Barbara Mandrell
+composers:
+- Carmol Taylor, Earl Montgomery, George Richey
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthenameoflovelyricschords.pro
+    imported_at: '2026-01-02'

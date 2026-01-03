@@ -1,0 +1,17 @@
+id: the-writing-s-on-the-wall
+title: The Writing's On The Wall
+artist: Jim Reeves
+composers:
+- Alex Zanetis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewritingsonthewalllyricschords.pro
+    imported_at: '2026-01-02'

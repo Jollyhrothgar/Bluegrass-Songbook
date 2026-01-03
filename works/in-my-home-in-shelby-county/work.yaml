@@ -1,0 +1,18 @@
+id: in-my-home-in-shelby-county
+title: In My Home In Shelby County
+artist: Johnny Horton
+composers:
+- Johnny Horton and Fred Horton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inmyhomeinshelbycountylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: the-leaves-mustn-t-fall
+title: The Leaves Mustn't Fall
+artist: Lacy J. Dalton
+composers:
+- Dorothy Sebastian and Jack Kenney
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theleavesmustntfalllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: never-be-anyone-else-but-you
+title: Never Be Anyone Else But You
+artist: Ricky Nelson
+composers:
+- Baker Knight
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: neverbeanyoneelsebutyoulyricschords.pro
+    imported_at: '2026-01-02'

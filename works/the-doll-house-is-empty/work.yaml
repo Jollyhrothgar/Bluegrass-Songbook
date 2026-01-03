@@ -1,0 +1,18 @@
+id: the-doll-house-is-empty
+title: The Doll House Is Empty
+artist: the Everly Brothers
+composers:
+- Howard Greenfield and Jack Keller
+default_key: G
+tags:
+- Pop
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedollhouseisemptylyricschords.pro
+    imported_at: '2026-01-02'

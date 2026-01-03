@@ -1,0 +1,19 @@
+id: sweet-hour-of-prayer
+title: Sweet Hour Of Prayer
+artist: Hank Snow
+composers:
+- William B. Bradbury and William Walford
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweethourofprayerlyricschords.pro
+    imported_at: '2026-01-02'

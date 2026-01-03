@@ -1,0 +1,18 @@
+id: it-s-a-good-thing-i-don-t-love-you
+title: It's A Good Thing I Don't Love You
+artist: Doug Stone
+composers:
+- Keith Palmer and Bobby Barker
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsagoodthingidontloveyoulyricschords.pro
+    imported_at: '2026-01-02'

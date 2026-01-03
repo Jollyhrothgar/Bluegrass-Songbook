@@ -1,0 +1,17 @@
+id: blue-heartaches
+title: Blue Heartaches
+artist: Connie Smith
+composers:
+- Connie June Smith and Marty John Stuart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blueheartacheslyricschords.pro
+    imported_at: '2026-01-02'

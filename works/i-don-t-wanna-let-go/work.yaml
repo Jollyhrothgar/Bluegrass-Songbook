@@ -1,0 +1,17 @@
+id: i-don-t-wanna-let-go
+title: I Don't Wanna Let Go
+artist: Don Williams
+composers:
+- Jim Rushing
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwannaletgolyricschords.pro
+    imported_at: '2026-01-02'

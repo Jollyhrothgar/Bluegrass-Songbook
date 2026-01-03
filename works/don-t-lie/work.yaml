@@ -1,0 +1,18 @@
+id: don-t-lie
+title: Don't Lie
+artist: Rhonda Vincent
+composers:
+- Chet Biggers and Frank Mandeville
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontlielyricschords.pro
+    imported_at: '2026-01-02'

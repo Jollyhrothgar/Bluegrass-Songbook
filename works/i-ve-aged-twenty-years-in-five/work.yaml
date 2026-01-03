@@ -1,0 +1,17 @@
+id: i-ve-aged-twenty-years-in-five
+title: I've Aged Twenty Years In Five
+artist: George Jones
+composers:
+- Bob Parrish and Curtis Gordon
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iveagedtwentyyearsinfivelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: is-anything-too-hard-for-god
+title: Is Anything Too Hard For God
+artist: The Whisnants
+composers:
+- Marcia B. Henry and Niles Borop
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isanythingtoohardforGodlyricschords.pro
+    imported_at: '2026-01-02'

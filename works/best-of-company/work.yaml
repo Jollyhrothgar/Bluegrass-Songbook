@@ -1,0 +1,18 @@
+id: best-of-company
+title: Best Of Company
+artist: Hawkshaw Hawkins
+composers:
+- Wayne P. Walker
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bestofcompanylyricschords.pro
+    imported_at: '2026-01-02'

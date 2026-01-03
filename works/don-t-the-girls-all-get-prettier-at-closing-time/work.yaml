@@ -1,0 +1,19 @@
+id: don-t-the-girls-all-get-prettier-at-closing-time
+title: Don't The Girls All Get Prettier At Closing Time
+artist: Mickey Gilley
+composers:
+- Baker Knight
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontthegirlsallgetprettieratclosingtimelyricschords.pro
+    imported_at: '2026-01-02'

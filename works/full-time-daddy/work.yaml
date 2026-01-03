@@ -1,0 +1,18 @@
+id: full-time-daddy
+title: Full Time Daddy
+artist: Tony Booth
+composers:
+- Buck Owens
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fulltimedaddylyricschords.pro
+    imported_at: '2026-01-02'

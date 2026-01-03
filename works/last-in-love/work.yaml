@@ -1,0 +1,17 @@
+id: last-in-love
+title: Last In Love
+artist: George Strait
+composers:
+- John D. Souther and Glenn Frey
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lastinlovelyricschords.pro
+    imported_at: '2026-01-02'

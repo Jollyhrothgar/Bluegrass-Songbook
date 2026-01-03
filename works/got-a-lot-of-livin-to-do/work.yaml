@@ -1,0 +1,21 @@
+id: got-a-lot-of-livin-to-do
+title: Got A Lot Of Livin' To Do
+artist: Elvis Presley
+composers:
+- Aaron Schroeder and Ben Weisman
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gotalotoflivintodolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: my-blue-heaven
+title: My Blue Heaven
+artist: Fats Domino
+composers:
+- George Whiting and Walter Donaldson
+default_key: G
+tags:
+- Rockabilly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myblueheavenlyricschords.pro
+    imported_at: '2026-01-02'

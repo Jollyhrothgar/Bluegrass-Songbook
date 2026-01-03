@@ -1,0 +1,17 @@
+id: he-did-it-all-for-me
+title: He Did It All For Me
+artist: The Oak Ridge Boys
+composers:
+- Powell Sager and Duane Allen
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hediditallformelyricschords.pro
+    imported_at: '2026-01-02'

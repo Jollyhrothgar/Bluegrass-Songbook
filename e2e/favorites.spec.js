@@ -35,10 +35,10 @@ test.describe('Favorites', () => {
         await page.locator('.result-list-btn').first().click();
 
         // List picker should show (floating picker element)
-        await expect(page.locator('.result-list-picker')).toBeVisible();
+        await expect(page.locator('.list-picker-popup')).toBeVisible();
 
         // Click favorites checkbox in the picker
-        await page.locator('.result-list-picker .favorites-option input').click();
+        await page.locator('.list-picker-popup .favorites-option input').click();
 
         // Navigate to favorites via sidebar
         await openSidebar(page);
@@ -53,8 +53,8 @@ test.describe('Favorites', () => {
         await page.fill('#search-input', 'foggy mountain');
         await page.waitForTimeout(300);
         await page.locator('.result-list-btn').first().click();
-        await expect(page.locator('.result-list-picker')).toBeVisible();
-        await page.locator('.result-list-picker .favorites-option input').click();
+        await expect(page.locator('.list-picker-popup')).toBeVisible();
+        await page.locator('.list-picker-popup .favorites-option input').click();
 
         // Wait for the favorite to be saved (badge should update)
         await expect(page.locator('#nav-favorites-count')).toHaveText('1');
@@ -76,8 +76,8 @@ test.describe('Favorites', () => {
         await page.fill('#search-input', 'wagon wheel');
         await page.waitForTimeout(300);
         await page.locator('.result-list-btn').first().click();
-        await expect(page.locator('.result-list-picker')).toBeVisible();
-        await page.locator('.result-list-picker .favorites-option input').click();
+        await expect(page.locator('.list-picker-popup')).toBeVisible();
+        await page.locator('.list-picker-popup .favorites-option input').click();
 
         // Go to favorites via sidebar
         await openSidebar(page);
@@ -86,10 +86,10 @@ test.describe('Favorites', () => {
 
         // Open list picker on the favorite
         await page.locator('.result-list-btn').first().click();
-        await expect(page.locator('.result-list-picker')).toBeVisible();
+        await expect(page.locator('.list-picker-popup')).toBeVisible();
 
         // Uncheck favorites - the checkbox should be checked, click to uncheck
-        const checkbox = page.locator('.result-list-picker .favorites-option input');
+        const checkbox = page.locator('.list-picker-popup .favorites-option input');
         await checkbox.click();
 
         // Wait for state update
@@ -108,7 +108,7 @@ test.describe('Favorites', () => {
         await page.fill('#search-input', 'cripple creek');
         await page.waitForTimeout(300);
         await page.locator('.result-list-btn').first().click();
-        await page.locator('.result-list-picker .favorites-option input').click();
+        await page.locator('.list-picker-popup .favorites-option input').click();
 
         // Badge should show 1
         await expect(badge).toHaveText('1');
@@ -117,7 +117,7 @@ test.describe('Favorites', () => {
         await page.fill('#search-input', 'john henry');
         await page.waitForTimeout(300);
         await page.locator('.result-list-btn').first().click();
-        await page.locator('.result-list-picker .favorites-option input').click();
+        await page.locator('.list-picker-popup .favorites-option input').click();
 
         // Badge should show 2
         await expect(badge).toHaveText('2');
@@ -141,9 +141,9 @@ test.describe('Lists', () => {
 
         await page.locator('.result-list-btn').first().click();
 
-        await expect(page.locator('.result-list-picker')).toBeVisible();
+        await expect(page.locator('.list-picker-popup')).toBeVisible();
         // Should have favorites option in the picker
-        await expect(page.locator('.result-list-picker .favorites-option')).toBeVisible();
+        await expect(page.locator('.list-picker-popup .favorites-option')).toBeVisible();
     });
 
     test('can add song to favorites from result', async ({ page }) => {
@@ -154,7 +154,7 @@ test.describe('Lists', () => {
         await page.locator('.result-list-btn').first().click();
 
         // Click favorites checkbox
-        await page.locator('.result-list-picker .favorites-option input').click();
+        await page.locator('.list-picker-popup .favorites-option input').click();
 
         // Button should now show checked state
         await expect(page.locator('.result-list-btn').first()).toHaveClass(/has-lists/);
@@ -170,7 +170,7 @@ test.describe('Song in Favorites', () => {
         await page.fill('#search-input', 'salty dog');
         await page.waitForTimeout(300);
         await page.locator('.result-list-btn').first().click();
-        await page.locator('.result-list-picker .favorites-option input').click();
+        await page.locator('.list-picker-popup .favorites-option input').click();
 
         // Close picker by clicking elsewhere
         await page.locator('#search-input').click();

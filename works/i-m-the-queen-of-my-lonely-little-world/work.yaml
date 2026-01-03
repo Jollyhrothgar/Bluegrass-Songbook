@@ -1,0 +1,18 @@
+id: i-m-the-queen-of-my-lonely-little-world
+title: I'm The Queen Of My Lonely Little World
+artist: Wanda Jackson
+composers:
+- Vic McAlpin
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imthequeenofmylonelylittleworldlyricschords.pro
+    imported_at: '2026-01-02'

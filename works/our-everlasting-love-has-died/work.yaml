@@ -1,0 +1,17 @@
+id: our-everlasting-love-has-died
+title: Our Everlasting Love Has Died
+artist: Roy Drusky
+composers:
+- Tom Lee and Roy Drusky
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oureverlastinglovehasdiedlyricschords.pro
+    imported_at: '2026-01-02'

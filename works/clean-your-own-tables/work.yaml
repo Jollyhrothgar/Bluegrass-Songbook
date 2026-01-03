@@ -1,0 +1,17 @@
+id: clean-your-own-tables
+title: Clean Your Own Tables
+artist: Stonewall Jackson
+composers:
+- Chip Taylor
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cleanyourowntableslyricschords.pro
+    imported_at: '2026-01-02'

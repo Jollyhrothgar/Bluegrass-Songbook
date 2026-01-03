@@ -1,0 +1,18 @@
+id: he-s-all-i-got
+title: He's All I Got
+artist: Tanya Tucker
+composers:
+- Gary Bonds and Jerry Williams
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesalligotlyricschords.pro
+    imported_at: '2026-01-02'

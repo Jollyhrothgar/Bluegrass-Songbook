@@ -1,0 +1,18 @@
+id: before-i-lose-my-mind
+title: Before I Lose My Mind
+artist: Wanda Jackson
+composers:
+- Vic McAlpin and Roy Drusky
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforeilosemymindlyricschords.pro
+    imported_at: '2026-01-02'

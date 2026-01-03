@@ -1,0 +1,21 @@
+id: highway-forty-blues
+title: Highway Forty Blues
+artist: Ricky Skaggs
+composers:
+- Larry Cordle
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highwayfortyblueslyricschords.pro
+    imported_at: '2026-01-02'

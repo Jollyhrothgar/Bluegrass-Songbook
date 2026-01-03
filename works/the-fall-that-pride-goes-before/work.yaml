@@ -1,0 +1,17 @@
+id: the-fall-that-pride-goes-before
+title: The Fall That Pride Goes Before
+artist: Stonewall Jackson
+composers:
+- Neal Merritt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thefallthatpridegoesbeforelyricschords.pro
+    imported_at: '2026-01-02'

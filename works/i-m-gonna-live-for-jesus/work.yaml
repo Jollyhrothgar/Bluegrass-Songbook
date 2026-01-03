@@ -1,0 +1,17 @@
+id: i-m-gonna-live-for-jesus
+title: I'm Gonna Live For Jesus
+artist: Allen Frizzell
+composers:
+- Allen D. Frizzell, Gayle L. Frizzell, John E. McCollum
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnaliveforJesuslyricschords.pro
+    imported_at: '2026-01-02'

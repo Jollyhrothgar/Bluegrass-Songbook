@@ -1,0 +1,19 @@
+id: i-m-dying-for-someone-to-live-for
+title: I'm Dying For Someone To Live For
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Shawn Camp
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imdyingforsomeonetoliveforlyricschords.pro
+    imported_at: '2026-01-02'

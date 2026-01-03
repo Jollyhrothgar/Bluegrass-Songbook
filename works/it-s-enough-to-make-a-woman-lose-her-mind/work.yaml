@@ -1,0 +1,17 @@
+id: it-s-enough-to-make-a-woman-lose-her-mind
+title: It's Enough To Make A Woman Lose Her Mind
+artist: Jean Shepard
+composers:
+- Bill Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsenoughtomakeawomanlosehermindlyricschords.pro
+    imported_at: '2026-01-02'

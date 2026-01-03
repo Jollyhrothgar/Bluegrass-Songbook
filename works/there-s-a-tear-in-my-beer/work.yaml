@@ -1,0 +1,18 @@
+id: there-s-a-tear-in-my-beer
+title: There's A Tear In My Beer
+artist: Hank Williams
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresatearinmybeerlyricschords.pro
+    imported_at: '2026-01-02'

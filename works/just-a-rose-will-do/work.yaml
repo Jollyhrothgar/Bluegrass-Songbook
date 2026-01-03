@@ -1,0 +1,18 @@
+id: just-a-rose-will-do
+title: Just A Rose Will Do
+artist: Porter Wagoner
+composers:
+- J. A. McClung
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justarosewilldolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: my-heart-has-finally-said-goodbye
+title: My Heart Has Finally Said Goodbye
+artist: Leona Williams
+composers:
+- David C. Kirby and Leona Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myhearthasfinallysaidgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

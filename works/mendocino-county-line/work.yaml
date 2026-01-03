@@ -1,0 +1,19 @@
+id: mendocino-county-line
+title: Mendocino County Line
+artist: Willie Nelson
+composers:
+- Matt Serletic and Bernie Taupin
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mendocinocountylinelyricschords.pro
+    imported_at: '2026-01-02'

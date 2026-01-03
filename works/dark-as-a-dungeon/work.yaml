@@ -1,0 +1,22 @@
+id: dark-as-a-dungeon
+title: Dark As A Dungeon
+artist: Johnny Cash
+composers:
+- Merle Travis
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darkasadungeonlyricschords.pro
+    imported_at: '2026-01-02'

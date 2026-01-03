@@ -1,0 +1,17 @@
+id: i-won-t-be-sleeping-alone
+title: I Won't Be Sleeping Alone
+artist: Gene Watson
+composers:
+- Charles Stewart and Jerry Abbott
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwontbesleepingalonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ve-been-there-before
+title: I've Been There Before
+artist: Ray Price
+composers:
+- Bobby Gosh and T.H. Kidd
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivebeentherebeforelyricschords.pro
+    imported_at: '2026-01-02'

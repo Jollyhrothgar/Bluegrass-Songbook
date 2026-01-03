@@ -1,0 +1,15 @@
+id: rosetta-and-chord
+title: Rosetta and chord
+artist: Bob Wills
+composers:
+- Hines and Woods
+default_key: D
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rosettalyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: guilty-conscience
+title: Guilty Conscience
+artist: Carl Smith
+composers:
+- Carl Butler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: guiltyconsciencelyricschords.pro
+    imported_at: '2026-01-02'

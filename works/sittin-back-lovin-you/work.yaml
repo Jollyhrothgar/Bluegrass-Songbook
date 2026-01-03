@@ -1,0 +1,18 @@
+id: sittin-back-lovin-you
+title: Sittin' Back Lovin' You
+artist: Anne Murray
+composers:
+- John Sebastian
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sittinbacklovinyoulyricschords.pro
+    imported_at: '2026-01-02'

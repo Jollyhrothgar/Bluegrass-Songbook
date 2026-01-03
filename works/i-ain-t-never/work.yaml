@@ -1,0 +1,19 @@
+id: i-ain-t-never
+title: I Ain't Never
+artist: Mel Tillis
+composers:
+- Webb Pierce and Mel Tillis
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iaintneverlyricschords.pro
+    imported_at: '2026-01-02'

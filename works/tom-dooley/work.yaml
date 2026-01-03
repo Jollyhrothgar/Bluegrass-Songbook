@@ -1,0 +1,17 @@
+id: tom-dooley
+title: Tom Dooley
+artist: Doc Watson
+composers:
+- Dave Guard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tomdooleylyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: you-know-i-m-still-in-love-with-you-lyrics-chords
+title: You Know I'm Still In Love With You Lyrics Chords
+artist: Web Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youknowimstillinlovewithyoulyricschords.pro
+    imported_at: '2026-01-02'

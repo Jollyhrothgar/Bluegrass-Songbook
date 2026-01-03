@@ -1,0 +1,19 @@
+id: don-t-trade-your-old-fashioned-sweetheart
+title: Don't Trade Your Old Fashioned Sweetheart
+artist: Ernest Tubb
+composers:
+- Eddie Noack
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttradeyouroldfashionedsweetheartlyricschords.pro
+    imported_at: '2026-01-02'

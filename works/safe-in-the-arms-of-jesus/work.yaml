@@ -1,0 +1,17 @@
+id: safe-in-the-arms-of-jesus
+title: Safe In The Arms Of Jesus
+artist: Eddy Arnold
+composers:
+- Fanny J. Crosby and William Howard Doane
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: safeinthearmsofjesuslyricschords.pro
+    imported_at: '2026-01-02'

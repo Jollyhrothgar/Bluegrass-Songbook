@@ -1,0 +1,21 @@
+id: gonna-get-back-home-somehow
+title: Gonna Get Back Home Somehow
+artist: Elvis Presley
+composers:
+- Doc Pomus and Mort Shuman
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnagetbackhomesomehowlyricschords.pro
+    imported_at: '2026-01-02'

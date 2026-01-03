@@ -1,0 +1,17 @@
+id: i-wish-i-could-fall-in-love-today
+title: I Wish I Could Fall In Love Today
+artist: Ray Price
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishicouldfallinlovetodaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: are-my-thoughts-with-you
+title: Are My Thoughts With You
+artist: Kenny Rogers
+composers:
+- Mickey Newbury
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aremythoughtswithyoulyricschords.pro
+    imported_at: '2026-01-02'

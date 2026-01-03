@@ -1,0 +1,15 @@
+id: i-do-cherish-you
+title: I Do Cherish You
+artist: Mark Wills
+composers:
+- Dan Hill and Keith Stegall
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idocherishyoulyricschords.pro
+    imported_at: '2026-01-02'

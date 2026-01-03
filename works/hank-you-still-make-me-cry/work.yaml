@@ -1,0 +1,15 @@
+id: hank-you-still-make-me-cry
+title: Hank You Still Make Me Cry
+artist: Boxcar Willie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hankyoustillmakemecrylyricschords.pro
+    imported_at: '2026-01-02'

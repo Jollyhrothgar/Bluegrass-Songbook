@@ -1,0 +1,15 @@
+id: grain-of-salt
+title: Grain Of Salt
+artist: David Ball
+composers:
+- Monty Criswell and David Ball
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: grainofsaltlyricschords.pro
+    imported_at: '2026-01-02'

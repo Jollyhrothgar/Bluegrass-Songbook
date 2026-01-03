@@ -1,0 +1,17 @@
+id: its-all-in-the-game
+title: It’s All In The Game
+artist: Merle Haggard
+composers:
+- Carl Sigman
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsallinthegamelyricschords.pro
+    imported_at: '2026-01-02'

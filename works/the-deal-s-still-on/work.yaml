@@ -1,0 +1,17 @@
+id: the-deal-s-still-on
+title: The Deal's Still On
+artist: Jack Greene
+composers:
+- Michael Keith Manuel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedealsstillonlyricschords.pro
+    imported_at: '2026-01-02'

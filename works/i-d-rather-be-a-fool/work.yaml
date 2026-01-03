@@ -1,0 +1,17 @@
+id: i-d-rather-be-a-fool
+title: I'd Rather Be A Fool
+artist: Connie Smith
+composers:
+- Joe Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idratherbeafoollyricschords.pro
+    imported_at: '2026-01-02'

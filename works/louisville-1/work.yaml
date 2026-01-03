@@ -1,0 +1,15 @@
+id: louisville-1
+title: Louisville
+artist: Leroy Van Dyke
+composers:
+- Chuck Rogers
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: louisvillelyricschords.pro
+    imported_at: '2026-01-02'

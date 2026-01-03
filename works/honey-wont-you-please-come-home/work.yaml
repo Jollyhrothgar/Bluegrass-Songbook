@@ -1,0 +1,17 @@
+id: honey-wont-you-please-come-home
+title: Honey Won’t You Please Come Home
+artist: Jim Reeves
+composers:
+- Jim Reeves and Luke McDaniel
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honeywontyoupleasecomehomelyricschords.pro
+    imported_at: '2026-01-02'

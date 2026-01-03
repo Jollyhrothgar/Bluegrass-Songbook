@@ -1,0 +1,17 @@
+id: bring-it-on-back-to-me
+title: Bring It On Back To Me
+artist: Jan Howard
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bringitonbacktomelyricschords.pro
+    imported_at: '2026-01-02'

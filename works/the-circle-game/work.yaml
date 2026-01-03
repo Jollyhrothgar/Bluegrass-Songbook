@@ -1,0 +1,17 @@
+id: the-circle-game
+title: The Circle Game
+artist: George Hamilton IV
+composers:
+- Joni Mitchell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thecirclegamelyricschord.pro
+    imported_at: '2026-01-02'

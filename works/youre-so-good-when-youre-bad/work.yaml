@@ -1,0 +1,15 @@
+id: youre-so-good-when-youre-bad
+title: You’re So Good When You’re Bad
+artist: Charlie Pride
+composers:
+- Ben Peters
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youresogoodwhenyourebadlyricschords.pro
+    imported_at: '2026-01-02'

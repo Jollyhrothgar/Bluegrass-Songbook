@@ -1,0 +1,18 @@
+id: the-sinking-of-the-reuben-james
+title: The Sinking Of The Reuben James
+artist: Johnny Horton
+composers:
+- Woody Guthrie, Pete Seeger, Almanac Singers
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesinkingofthereubenjameslyricschords.pro
+    imported_at: '2026-01-02'

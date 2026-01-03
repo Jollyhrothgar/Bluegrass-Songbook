@@ -1,0 +1,17 @@
+id: closer-by-the-hour
+title: Closer By The Hour
+artist: Porter Wagoner
+composers:
+- Al Gore
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: closerbythehourlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: river-stay-away-from-my-door
+title: River Stay Away From My Door
+artist: Charlie Rich
+composers:
+- Harry Woods and Mort Dixon
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: riverstayawayfrommydoorlyricschords.pro
+    imported_at: '2026-01-02'

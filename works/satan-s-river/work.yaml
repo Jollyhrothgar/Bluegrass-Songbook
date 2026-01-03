@@ -1,0 +1,15 @@
+id: satan-s-river
+title: Satan's River
+artist: Porter Wagoner
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: satansriverlyricschords.pro
+    imported_at: '2026-01-02'

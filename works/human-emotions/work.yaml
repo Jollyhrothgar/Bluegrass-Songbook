@@ -1,0 +1,20 @@
+id: human-emotions
+title: Human Emotions
+artist: David Allan Coe
+composers:
+- and recorded by David Allan Coe
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: humanemotionslyricschords.pro
+    imported_at: '2026-01-02'

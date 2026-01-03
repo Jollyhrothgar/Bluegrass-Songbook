@@ -1,0 +1,18 @@
+id: my-heart-is-a-playground
+title: My Heart Is A Playground
+artist: Hank Thompson
+composers:
+- Billy Gray and Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartisaplaygroundlyricschords.pro
+    imported_at: '2026-01-02'

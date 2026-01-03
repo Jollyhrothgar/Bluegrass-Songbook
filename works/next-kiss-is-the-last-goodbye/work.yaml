@@ -1,0 +1,18 @@
+id: next-kiss-is-the-last-goodbye
+title: Next Kiss Is The Last Goodbye
+artist: Conway Twitty
+composers:
+- Buddy Kaye, David Hill, Ethel Lee
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nextkissisthelastgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

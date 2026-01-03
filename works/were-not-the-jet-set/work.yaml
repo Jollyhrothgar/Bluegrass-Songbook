@@ -1,0 +1,15 @@
+id: were-not-the-jet-set
+title: We’re Not The Jet Set
+artist: George Jones and Tammy Wynette
+composers:
+- Bobby Bradock
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: werenotthejetsetlyricschords.pro
+    imported_at: '2026-01-02'

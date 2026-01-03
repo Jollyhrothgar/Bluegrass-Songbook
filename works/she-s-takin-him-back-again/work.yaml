@@ -1,0 +1,18 @@
+id: she-s-takin-him-back-again
+title: She's Takin' Him Back Again
+artist: Lorrie Morgan
+composers:
+- Richard Mainegra and Rick Yancey
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shestakinhimbackagainlyricschords.pro
+    imported_at: '2026-01-02'

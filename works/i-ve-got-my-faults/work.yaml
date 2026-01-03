@@ -1,0 +1,17 @@
+id: i-ve-got-my-faults
+title: I've Got My Faults
+artist: Waylon Jennings
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotmyfaultslyricschords.pro
+    imported_at: '2026-01-02'

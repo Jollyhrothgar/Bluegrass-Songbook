@@ -1,0 +1,15 @@
+id: i-m-tired-of-being-something-that-means-nothing-to-you
+title: I'm Tired Of Being Something That Means Nothing To You
+artist: Ron Williams
+composers:
+- LaDonna Brewer and Davis Capps
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imtiredofbeingsomethingthatmeansnothingtoyoulyricschords.pro
+    imported_at: '2026-01-02'

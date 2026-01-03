@@ -1,0 +1,18 @@
+id: one-place-in-the-night
+title: One Place In The Night
+artist: Kenny Rogers
+composers:
+- Kim Carnes and Dave Ellingson
+default_key: Am
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneplaceinthenightlyricschords.pro
+    imported_at: '2026-01-02'

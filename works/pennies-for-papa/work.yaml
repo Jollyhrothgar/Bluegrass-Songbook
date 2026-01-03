@@ -1,0 +1,15 @@
+id: pennies-for-papa
+title: Pennies for Papa
+artist: Little Jimmy Dickens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: penniesforpapalyricschords.pro
+    imported_at: '2026-01-02'

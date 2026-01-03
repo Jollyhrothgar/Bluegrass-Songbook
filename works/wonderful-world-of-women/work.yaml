@@ -1,0 +1,17 @@
+id: wonderful-world-of-women
+title: Wonderful World Of Women
+artist: Carl Smith
+composers:
+- Wayne P. Walker, Eddie Miller, Bobby Sykes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wonderfulworldofwomenlyricschords.pro
+    imported_at: '2026-01-02'

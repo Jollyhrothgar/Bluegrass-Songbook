@@ -1,0 +1,18 @@
+id: too-used-to-being-with-you
+title: Too Used To Being With You
+artist: Merle Haggard
+composers:
+- Don Carter and Jack Rhodes
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toousedtobeingwithyoulyricschords.pro
+    imported_at: '2026-01-02'

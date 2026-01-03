@@ -1,0 +1,17 @@
+id: if-i-didn-t-have-a-heart
+title: If I Didn't Have A Heart
+artist: Tammy Wynette
+composers:
+- Jerry Taylor, Dennis Knutson, Linda Grundy
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifididnthaveaheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: who-you-think-you-re-fooling
+title: Who You Think You're Fooling
+artist: Hank Locklin
+composers:
+- Polly White and Hank Locklin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoyouthinkyourefoolinglyricschords.pro
+    imported_at: '2026-01-02'

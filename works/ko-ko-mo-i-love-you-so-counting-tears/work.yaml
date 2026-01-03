@@ -1,0 +1,17 @@
+id: ko-ko-mo-i-love-you-so-counting-tears
+title: Ko Ko Mo I Love You So Counting Tears
+artist: Hawkshaw Hawkins
+composers:
+- Forrest Wilson and Jake Porter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kokomoiloveyousolyricschords.pro
+    imported_at: '2026-01-02'

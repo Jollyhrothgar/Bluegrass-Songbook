@@ -1,0 +1,17 @@
+id: flowers-for-mama
+title: Flowers For Mama
+artist: George Jones
+composers:
+- Eddie Noack, Cindy Walker, Al Rumley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: flowersformamalyricschords.pro
+    imported_at: '2026-01-02'

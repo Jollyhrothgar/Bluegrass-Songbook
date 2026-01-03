@@ -1,0 +1,15 @@
+id: big-house-on-the-corner
+title: Big House On The Corner
+artist: Stonewall Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bighouseonthecornerlyricschords.pro
+    imported_at: '2026-01-02'

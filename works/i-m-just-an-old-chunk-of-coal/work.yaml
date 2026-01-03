@@ -1,0 +1,15 @@
+id: i-m-just-an-old-chunk-of-coal
+title: I'm Just an Old Chunk of Coal
+artist: Stonewall Jackson
+composers:
+- Billy Joe Shaver
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imjustanoldchunkofcoallyricschords.pro
+    imported_at: '2026-01-02'

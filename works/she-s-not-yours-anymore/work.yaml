@@ -1,0 +1,15 @@
+id: she-s-not-yours-anymore
+title: She's Not Yours Anymore
+artist: Ferlin Husky
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesnotyoursanymorelyricschords.pro
+    imported_at: '2026-01-02'

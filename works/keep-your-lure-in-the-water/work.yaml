@@ -1,0 +1,17 @@
+id: keep-your-lure-in-the-water
+title: Keep Your Lure In The Water
+artist: Randy Travis
+composers:
+- Michael Curtis and Randy Travis
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keepyourlureinthewaterlyricschords.pro
+    imported_at: '2026-01-02'

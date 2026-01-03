@@ -1,0 +1,18 @@
+id: mama-you-d-have-been-proud-of-me-lyrics-and-chords
+title: Mama You'd Have Been Proud Of Me Lyrics and Chords
+artist: Dottie West
+composers:
+- Hank Cochran
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mamayoudhavebeenproudofmelyricschords.pro
+    imported_at: '2026-01-02'

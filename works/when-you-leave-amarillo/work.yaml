@@ -1,0 +1,17 @@
+id: when-you-leave-amarillo
+title: When You Leave Amarillo
+artist: Bob Wills
+composers:
+- Cindy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyouleaveamarillolyricschords.pro
+    imported_at: '2026-01-02'

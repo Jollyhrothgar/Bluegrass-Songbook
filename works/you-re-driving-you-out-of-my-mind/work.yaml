@@ -1,0 +1,17 @@
+id: you-re-driving-you-out-of-my-mind
+title: You're Driving You Out Of My Mind
+artist: Jerry Wallace
+composers:
+- Jerry Fuller and Carl Belew
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youredrivingyououtofmymindlyricschords.pro
+    imported_at: '2026-01-02'

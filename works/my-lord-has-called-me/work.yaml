@@ -1,0 +1,17 @@
+id: my-lord-has-called-me
+title: My Lord Has Called Me
+artist: George Jones
+composers:
+- George Jones and Lester Weytek
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylordhascalledmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: sad-singing-and-slow-riding
+title: Sad Singing And Slow Riding
+artist: Jean Shepard
+composers:
+- Curley Fox and Texas Ruby
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sadsingingandslowridinglyricschords.pro
+    imported_at: '2026-01-02'

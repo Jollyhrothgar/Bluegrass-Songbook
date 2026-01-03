@@ -1,0 +1,18 @@
+id: i-found-jesus-on-the-jailhouse-floor
+title: I Found Jesus On The Jailhouse Floor
+artist: George Strait
+composers:
+- Earl Clark and Greg Hudik
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifoundJesusonthejailhousefloorlyricschords.pro
+    imported_at: '2026-01-02'

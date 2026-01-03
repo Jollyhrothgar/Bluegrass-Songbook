@@ -1,0 +1,17 @@
+id: it-ain-t-gonna-be-that-way
+title: It Ain't Gonna Be That Way
+artist: Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itaintgonnabethatwaylyricschords.pro
+    imported_at: '2026-01-02'

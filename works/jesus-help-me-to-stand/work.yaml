@@ -1,0 +1,19 @@
+id: jesus-help-me-to-stand
+title: Jesus Help Me To Stand
+artist: Alison Krauss
+composers:
+- Ron Block
+default_key: C
+tags:
+- Bluegrass
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesushelpmetostandlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: down-where-the-still-waters-flow
+title: Down Where The Still Waters Flow
+artist: J.D. Crowe
+composers:
+- Pete Roberts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downwherethestillwatersflowlyricschords.pro
+    imported_at: '2026-01-02'

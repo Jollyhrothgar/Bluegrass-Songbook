@@ -1,0 +1,18 @@
+id: she-beats-all-i-ve-ever-seen
+title: She Beats All I've Ever Seen
+artist: Mickey Gilley
+composers:
+- Don Singleton
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shebeatsalliveeverseenlyricschords.pro
+    imported_at: '2026-01-02'

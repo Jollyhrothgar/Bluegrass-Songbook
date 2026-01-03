@@ -1,0 +1,16 @@
+id: i-can-get-along-without-you-very-well-lyrics-chords
+title: I Can Get Along Without You Very Well Lyrics chords
+artist: Marty Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icangetalongwithoutyouverywelllyricschords.pro
+    imported_at: '2026-01-02'

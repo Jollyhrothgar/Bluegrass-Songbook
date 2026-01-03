@@ -1,0 +1,17 @@
+id: jesus-paid-it-all
+title: Jesus Paid It All
+artist: Joey and Rory
+composers:
+- Elvina Hall and John Grape
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesuspaiditalllyricschords.pro
+    imported_at: '2026-01-02'

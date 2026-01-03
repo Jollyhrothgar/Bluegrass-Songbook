@@ -1,0 +1,17 @@
+id: burgers-and-fries-and-cherry-pies
+title: Burgers and Fries and Cherry Pies
+artist: Charley Pride
+composers:
+- Ben Peters
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burgersandfriesandcherrypieslyricschords.pro
+    imported_at: '2026-01-02'

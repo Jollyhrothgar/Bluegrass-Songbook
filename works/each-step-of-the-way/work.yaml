@@ -1,0 +1,18 @@
+id: each-step-of-the-way
+title: Each Step Of The Way
+artist: Jimmy Swaggart
+composers:
+- Redd Harper
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eachstepofthewaylyricschords.pro
+    imported_at: '2026-01-02'

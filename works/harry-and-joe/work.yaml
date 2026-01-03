@@ -1,0 +1,15 @@
+id: harry-and-joe
+title: Harry And Joe
+artist: Don Williams
+composers:
+- Len Handler and A.J. Gundell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: harryandjoelyricschords.pro
+    imported_at: '2026-01-02'

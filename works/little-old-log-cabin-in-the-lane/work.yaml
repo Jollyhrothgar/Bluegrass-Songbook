@@ -1,0 +1,17 @@
+id: little-old-log-cabin-in-the-lane
+title: Little Old Log Cabin In The Lane
+artist: Jim and Jesse
+composers:
+- Will S. Hays
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littleoldlogcabininthelanelyricschords.pro
+    imported_at: '2026-01-02'

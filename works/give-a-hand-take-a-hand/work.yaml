@@ -1,0 +1,19 @@
+id: give-a-hand-take-a-hand
+title: Give A Hand Take A Hand
+artist: Brenda Lee
+composers:
+- Barry Gibb and Maurice Gibb
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: giveahandtakeahandlyricschords.pro
+    imported_at: '2026-01-02'

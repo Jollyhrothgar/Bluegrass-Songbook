@@ -1,0 +1,17 @@
+id: even-the-bad-times-are-good
+title: Even The Bad Times Are Good
+artist: George Jones
+composers:
+- Carl Belew and Clyde Pitts
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eventhebadtimesaregoodlyricschords.pro
+    imported_at: '2026-01-02'

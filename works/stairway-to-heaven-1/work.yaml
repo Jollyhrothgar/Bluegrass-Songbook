@@ -1,0 +1,18 @@
+id: stairway-to-heaven-1
+title: Stairway To Heaven
+artist: The Stanley Brothers
+composers:
+- Bill J. Grant and Ralph Stanley
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stairwaytoheavenlyricschords.pro
+    imported_at: '2026-01-02'

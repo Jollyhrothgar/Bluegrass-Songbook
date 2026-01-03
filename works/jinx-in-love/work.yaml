@@ -1,0 +1,17 @@
+id: jinx-in-love
+title: Jinx In Love
+artist: Webb Pierce
+composers:
+- Don Davis and Webb Pierce
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jinxinlovelyricschords.pro
+    imported_at: '2026-01-02'

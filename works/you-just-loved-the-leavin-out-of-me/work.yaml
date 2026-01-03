@@ -1,0 +1,18 @@
+id: you-just-loved-the-leavin-out-of-me
+title: You Just Loved The Leavin' Out Of Me
+artist: Tanya Tucker
+composers:
+- Linda Hargrove
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youjustlovedtheleavinoutofmelyricschords.pro
+    imported_at: '2026-01-02'

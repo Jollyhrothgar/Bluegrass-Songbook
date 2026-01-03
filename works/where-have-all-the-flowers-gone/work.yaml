@@ -1,0 +1,17 @@
+id: where-have-all-the-flowers-gone
+title: Where Have All The Flowers Gone
+artist: Eddy Arnold
+composers:
+- Pete Seeger
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherehavealltheflowersgonelyricschords.pro
+    imported_at: '2026-01-02'

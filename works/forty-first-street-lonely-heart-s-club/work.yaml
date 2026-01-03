@@ -1,0 +1,17 @@
+id: forty-first-street-lonely-heart-s-club
+title: Forty First Street Lonely Heart's Club
+artist: Buck Owens
+composers:
+- Dennis J. Knutson and James Brian Shaw
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fortyfirststreetlonelyheartsclublyricschords.pro
+    imported_at: '2026-01-02'

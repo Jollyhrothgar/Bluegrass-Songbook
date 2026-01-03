@@ -1,0 +1,17 @@
+id: i-m-better-off
+title: I'm Better Off
+artist: Johnny Paycheck
+composers:
+- Wendy Bagwell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imbetterofflyricschords.pro
+    imported_at: '2026-01-02'

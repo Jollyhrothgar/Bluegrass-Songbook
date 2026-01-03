@@ -1,0 +1,17 @@
+id: just-wait-till-i-get-you-alone
+title: Just Wait Till I Get You Alone
+artist: Carl Smith
+composers:
+- Boudleaux Bryant and Felice Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justwaittilligetyoualonelyricschords.pro
+    imported_at: '2026-01-02'

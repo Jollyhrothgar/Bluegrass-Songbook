@@ -1,0 +1,17 @@
+id: i-ve-got-that-old-time-religion-in-my-heart
+title: I've Got That Old Time Religion In My Heart
+artist: Wilburn Brothers
+composers:
+- Hurdis Milsap
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotthatoldtimereligioninmyheartlyricschords.pro
+    imported_at: '2026-01-02'

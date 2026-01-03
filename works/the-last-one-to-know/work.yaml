@@ -1,0 +1,18 @@
+id: the-last-one-to-know
+title: The Last One To Know
+artist: Reba McEntire
+composers:
+- Matraca Berg and Jane Mariash
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelastonetoknowlyricschords.pro
+    imported_at: '2026-01-02'

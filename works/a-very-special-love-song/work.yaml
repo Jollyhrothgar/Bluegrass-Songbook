@@ -1,0 +1,18 @@
+id: a-very-special-love-song
+title: A Very Special Love Song
+artist: Charlie Rich
+composers:
+- Billy Sherrill and Norro Wilson
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: averyspeciallovesonglyricschords.pro
+    imported_at: '2026-01-02'

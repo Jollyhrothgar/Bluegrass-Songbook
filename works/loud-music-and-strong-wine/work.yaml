@@ -1,0 +1,15 @@
+id: loud-music-and-strong-wine
+title: Loud Music And Strong Wine
+artist: Johnny Bush
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loudmusicandstrongwinelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: a-long-vacation
+title: A Long Vacation
+artist: Ricky Nelson
+composers:
+- Dorsey Burnette
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alongvacationlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ve-got-your-love-all-over-me
+title: I've Got Your Love All Over Me
+artist: Moe Bandy
+composers:
+- Merrill Lane
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotyourloveallovermelyricschords.pro
+    imported_at: '2026-01-02'

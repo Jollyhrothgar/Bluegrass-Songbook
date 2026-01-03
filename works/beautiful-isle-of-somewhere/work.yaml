@@ -1,0 +1,15 @@
+id: beautiful-isle-of-somewhere
+title: Beautiful Isle Of Somewhere
+artist: Jimmy Dean
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beautifulisleofsomewherelyricschords.pro
+    imported_at: '2026-01-02'

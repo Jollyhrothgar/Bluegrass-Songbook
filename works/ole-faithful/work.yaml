@@ -1,0 +1,15 @@
+id: ole-faithful
+title: Ole Faithful
+artist: The Bellamy Brothers
+composers:
+- Howard Bellamy
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: olefaithfullyricschords.pro
+    imported_at: '2026-01-02'

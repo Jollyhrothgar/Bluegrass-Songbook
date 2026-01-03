@@ -1,0 +1,17 @@
+id: how-i-love-them-old-songs
+title: How I Love Them Old Songs
+artist: Carl Smith
+composers:
+- Mickey Newbury
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howilovethemoldsongslyricschords.pro
+    imported_at: '2026-01-02'

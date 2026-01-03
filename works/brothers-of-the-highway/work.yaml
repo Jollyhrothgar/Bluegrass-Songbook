@@ -1,0 +1,19 @@
+id: brothers-of-the-highway
+title: Brothers Of The Highway
+artist: George Strait
+composers:
+- Doug Johnson, Kim Williams, Nicole Witt
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brothersofthehighwaylyricschords.pro
+    imported_at: '2026-01-02'

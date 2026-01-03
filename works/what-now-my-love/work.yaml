@@ -1,0 +1,18 @@
+id: what-now-my-love
+title: What Now My Love
+artist: Elvis Presley
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatnowmylovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: she-s-lookin-better-by-the-minute
+title: She's Lookin' Better By The Minute
+artist: Ernest Tubb
+composers:
+- Jimmie Helms and Grant Townsley
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sheslookinbetterbytheminutelyricschords.pro
+    imported_at: '2026-01-02'

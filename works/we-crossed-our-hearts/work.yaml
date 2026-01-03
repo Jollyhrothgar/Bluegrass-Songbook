@@ -1,0 +1,17 @@
+id: we-crossed-our-hearts
+title: We Crossed Our Hearts
+artist: Ray Price
+composers:
+- Helen Kaye
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wecrossedourheartslyricschords.pro
+    imported_at: '2026-01-02'

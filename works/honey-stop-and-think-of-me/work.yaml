@@ -1,0 +1,17 @@
+id: honey-stop-and-think-of-me
+title: Honey Stop and Think Of Me
+artist: Faron Young
+composers:
+- Bob Belyeu and Charles Wright
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honeystopandthinkofmelyricschords.pro
+    imported_at: '2026-01-02'

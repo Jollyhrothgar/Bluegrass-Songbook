@@ -1,0 +1,15 @@
+id: little-by-little
+title: Little By Little
+artist: Gene Watson
+composers:
+- Danny Morrison and Larry Keith
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlebylittlelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-free-from-the-chain-gang-now
+title: I'm Free From The Chain Gang Now
+artist: JImmy Rodgers
+composers:
+- Lou Herscher
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imfreefromthechaingangnowlyricschords.pro
+    imported_at: '2026-01-02'

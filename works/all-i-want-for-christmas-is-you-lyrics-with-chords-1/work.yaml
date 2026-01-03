@@ -1,0 +1,17 @@
+id: all-i-want-for-christmas-is-you-lyrics-with-chords-1
+title: All I Want For Christmas Is You Lyrics with Chords
+artist: Buck Owens
+composers:
+- Buck Owens and Don Rich
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alliwantforChristmasisyoulyricschords.pro
+    imported_at: '2026-01-02'

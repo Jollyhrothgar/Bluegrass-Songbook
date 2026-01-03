@@ -1,0 +1,19 @@
+id: thy-burdens-are-greater-than-mine
+title: Thy Burdens Are Greater Than Mine
+artist: Hank Williams
+composers:
+- Pee Wee King and Redd Stewart
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thyburdensaregreaterthanminelyricschords.pro
+    imported_at: '2026-01-02'

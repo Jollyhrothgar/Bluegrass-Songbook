@@ -1,0 +1,17 @@
+id: better-days-for-mama
+title: Better Days For Mama
+artist: Stonewall Jackson
+composers:
+- Hugh H. King
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betterdaysformamalyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: what-s-your-mama-s-name
+title: What's Your Mama's Name
+artist: Tanya Tucker
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatsyourmamasnamelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: 12-12-84
+title: 12-12-84
+artist: David Ball
+composers:
+- Billy Spencer, David Ball, Tommy Polk
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 121284lyricschords.pro
+    imported_at: '2026-01-02'

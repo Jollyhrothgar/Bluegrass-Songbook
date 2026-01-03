@@ -1,0 +1,13 @@
+id: if-there-s-one-angel-missing-she-s-here-in-my-arms-tonight
+title: If There's One Angel Missing She's Here in My Arms Tonight
+artist: Billy Parker
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iftheresoneangelmissingsheshereinmyarmstnightlyricschords.pro
+    imported_at: '2026-01-02'

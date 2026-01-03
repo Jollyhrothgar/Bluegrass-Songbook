@@ -1,0 +1,17 @@
+id: you-re-making-it-too-hard-for-me-to-go
+title: You're Making It Too Hard For Me To Go
+artist: Bob Luman
+composers:
+- Neal Merritt and Shorty Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youremakingittoohardformetogolyricschords.pro
+    imported_at: '2026-01-02'

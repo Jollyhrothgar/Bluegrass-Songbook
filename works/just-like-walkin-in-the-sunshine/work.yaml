@@ -1,0 +1,17 @@
+id: just-like-walkin-in-the-sunshine
+title: Just Like Walkin' In The Sunshine
+artist: Jean Shepard
+composers:
+- Neal Merritt and Ann Woodward
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justlikewalkininthesunshinelyricschords.pro
+    imported_at: '2026-01-02'

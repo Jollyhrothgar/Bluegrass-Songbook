@@ -1,0 +1,17 @@
+id: out-of-a-honky-tonk
+title: Out Of A Honky Tonk
+artist: Charlie Walker
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: outofahonkytonklyricschords.pro
+    imported_at: '2026-01-02'

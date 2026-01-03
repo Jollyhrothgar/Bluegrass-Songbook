@@ -1,0 +1,16 @@
+id: a-working-man-can-t-get-nowhere-today
+title: A Working Man Can't Get Nowhere Today
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aworkingmancantgetnowheretodaylyricschords.pro
+    imported_at: '2026-01-02'

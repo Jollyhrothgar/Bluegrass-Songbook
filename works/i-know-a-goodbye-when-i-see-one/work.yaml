@@ -1,0 +1,17 @@
+id: i-know-a-goodbye-when-i-see-one
+title: I Know A Goodbye When I See One
+artist: Wilburn Brothers
+composers:
+- Glenn A. Worf
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowagoodbyewheniseeonelyricschords.pro
+    imported_at: '2026-01-02'

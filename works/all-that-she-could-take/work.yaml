@@ -1,0 +1,15 @@
+id: all-that-she-could-take
+title: All That She Could Take
+artist: Tony Booth
+composers:
+- Guyanne Mccall and Justin Trevino
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allthatshecouldtakelyricschords.pro
+    imported_at: '2026-01-02'

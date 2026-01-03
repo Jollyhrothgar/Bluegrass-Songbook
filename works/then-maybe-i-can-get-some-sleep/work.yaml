@@ -1,0 +1,17 @@
+id: then-maybe-i-can-get-some-sleep
+title: Then Maybe I Can Get Some Sleep
+artist: Buck Owens
+composers:
+- Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenmaybeicangetsomesleeplyricschords.pro
+    imported_at: '2026-01-02'

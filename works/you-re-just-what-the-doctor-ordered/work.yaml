@@ -1,0 +1,17 @@
+id: you-re-just-what-the-doctor-ordered
+title: You're Just What The Doctor Ordered
+artist: Bud Hobbs
+composers:
+- Ace Dinning and James Ray
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourejustwhatthedoctororderedlyricschords.pro
+    imported_at: '2026-01-02'

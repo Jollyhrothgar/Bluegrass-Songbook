@@ -1,0 +1,17 @@
+id: stepping-out
+title: Stepping Out
+artist: Carl Smith
+composers:
+- Billy Starr
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: steppingoutlyricschords.pro
+    imported_at: '2026-01-02'

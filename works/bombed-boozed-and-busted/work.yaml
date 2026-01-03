@@ -1,0 +1,17 @@
+id: bombed-boozed-and-busted
+title: Bombed Boozed And Busted
+artist: Joe Sun
+composers:
+- Dennis Knutson and Joe Sun
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bombedboozedandbustedlyricschords.pro
+    imported_at: '2026-01-02'

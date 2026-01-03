@@ -1,0 +1,17 @@
+id: gonna-lay-down-my-old-guitar
+title: Gonna Lay Down My Old Guitar
+artist: Louvin Brothers
+composers:
+- Alton Delmore
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnalaydownmyoldguitarlyricschords.pro
+    imported_at: '2026-01-02'

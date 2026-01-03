@@ -1,0 +1,17 @@
+id: forever-s-a-long-long-time
+title: Forever's A Long Long Time
+artist: Jimmie Davis
+composers:
+- Hank Williams and Jimmie Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foreversalonglongtimelyricschords.pro
+    imported_at: '2026-01-02'

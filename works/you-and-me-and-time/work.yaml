@@ -1,0 +1,17 @@
+id: you-and-me-and-time
+title: You And Me And Time
+artist: George Jones & Georgette Jones
+composers:
+- Georgette Jones, Mark McGuinn, Don Pfrimmer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youandmeandtimelyricschords.pro
+    imported_at: '2026-01-02'

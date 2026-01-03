@@ -1,0 +1,18 @@
+id: i-never-shall-forget-the-day
+title: I Never Shall Forget The Day
+artist: The Statler Brothers
+composers:
+- G.T. Speer
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inevershallforgetthedaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: real-thing-more-than-a-memory
+title: Real Thing (More Than A Memory)
+artist: Bobby Bare
+composers:
+- Roy Baham
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: realthingmorethanamemorylyricschords.pro
+    imported_at: '2026-01-02'

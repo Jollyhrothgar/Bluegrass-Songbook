@@ -1,0 +1,16 @@
+id: country-boy-and-city-girl
+title: Country Boy And City Girl
+artist: Clay Walker
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countryboyandcitygirllyricschords.pro
+    imported_at: '2026-01-02'

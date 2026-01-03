@@ -1,0 +1,15 @@
+id: our-chain-of-love
+title: Our Chain Of Love
+artist: Jack Greene
+composers:
+- Willie Nelson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ourchainoflovelyricschords.pro
+    imported_at: '2026-01-02'

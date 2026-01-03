@@ -1,0 +1,17 @@
+id: falling-for-you-for-years
+title: Falling For You For Years
+artist: Conway Twitty
+composers:
+- Michael Barry Reid and Troy Harold Seals
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallingforyouforyearslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: root-of-all-evil
+title: Root Of All Evil
+artist: Jean Shepard
+composers:
+- Jeri Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rootofallevillyricschords.pro
+    imported_at: '2026-01-02'

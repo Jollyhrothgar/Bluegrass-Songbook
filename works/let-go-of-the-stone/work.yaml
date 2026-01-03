@@ -1,0 +1,17 @@
+id: let-go-of-the-stone
+title: Let Go Of The Stone
+artist: John Anderson
+composers:
+- Max D Barnes and Max Troy Barnes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letgoofthestonelyricschords.pro
+    imported_at: '2026-01-02'

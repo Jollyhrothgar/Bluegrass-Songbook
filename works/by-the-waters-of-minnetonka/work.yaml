@@ -1,0 +1,17 @@
+id: by-the-waters-of-minnetonka
+title: By The Waters Of Minnetonka
+artist: Slim Whitman
+composers:
+- J.M. Cavanass and Thurlow Lieurance
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bythewatersofminnetonkalyricschords.pro
+    imported_at: '2026-01-02'

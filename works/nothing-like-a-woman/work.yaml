@@ -1,0 +1,19 @@
+id: nothing-like-a-woman
+title: Nothing Like A Woman
+artist: Vince Gill
+composers:
+- Reed Nielsen and Vince Gill
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothinglikeawomanlyricschords.pro
+    imported_at: '2026-01-02'

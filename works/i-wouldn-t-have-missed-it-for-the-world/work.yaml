@@ -1,0 +1,18 @@
+id: i-wouldn-t-have-missed-it-for-the-world
+title: I Wouldn't Have Missed It For The World
+artist: Ronnie Milsap
+composers:
+- Rhonda Kye Fleming, Charles W. Quillen, Dennis W. Morgan
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldnthavemisseditfortheworldlyricschords.pro
+    imported_at: '2026-01-02'

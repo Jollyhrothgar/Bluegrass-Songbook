@@ -1,0 +1,17 @@
+id: seven-years-with-a-wonderful-woman
+title: Seven Years With A Wonderful Woman
+artist: Charlie Pride
+composers:
+- Roland Davis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sevenyearswithawonderfulwomanlyricschords.pro
+    imported_at: '2026-01-02'

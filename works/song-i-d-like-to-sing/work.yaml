@@ -1,0 +1,20 @@
+id: song-i-d-like-to-sing
+title: Song I'd Like To Sing
+artist: Kris Kristofferson
+composers:
+- Kris Kristofferson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: songidliketosinglyricschords.pro
+    imported_at: '2026-01-02'

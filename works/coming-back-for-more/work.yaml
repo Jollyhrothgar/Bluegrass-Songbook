@@ -1,0 +1,20 @@
+id: coming-back-for-more
+title: Coming Back For More
+artist: Jerry Lee Lewis
+composers:
+- Ray Griff
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comingbackformorelyricschords.pro
+    imported_at: '2026-01-02'

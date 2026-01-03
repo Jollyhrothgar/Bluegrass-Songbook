@@ -1,0 +1,15 @@
+id: your-kisses-will
+title: Your Kisses Will
+artist: Crystal Gayle
+composers:
+- Van Stephenson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourkisseswilllyricschords.pro
+    imported_at: '2026-01-02'

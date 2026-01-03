@@ -1,0 +1,15 @@
+id: i-really-don-t-want-to-know
+title: I Really Don't Want to Know
+artist: Eddy Arnold
+composers:
+- Don Robertson and Howard Barnes
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ireallydontwanttoknowlyricschords.pro
+    imported_at: '2026-01-02'

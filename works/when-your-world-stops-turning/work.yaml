@@ -1,0 +1,15 @@
+id: when-your-world-stops-turning
+title: When Your World Stops Turning
+artist: Sonny James
+composers:
+- Bob Tubert, Gene Strasser, George Winters
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyourworldstopsturninglyricschords.pro
+    imported_at: '2026-01-02'

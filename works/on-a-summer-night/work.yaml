@@ -1,0 +1,15 @@
+id: on-a-summer-night
+title: On A Summer Night
+artist: The Bellamy Brothers
+composers:
+- Ralph Siegel and Bernd Meinunger
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onasummernightlyricschords.pro
+    imported_at: '2026-01-02'

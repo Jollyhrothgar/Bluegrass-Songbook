@@ -1,0 +1,17 @@
+id: song-of-songs
+title: Song Of Songs
+artist: Boxcar Willie
+composers:
+- Vern Stovall, Bill Palmer & Lloene Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: songofsongslyricschords.pro
+    imported_at: '2026-01-02'

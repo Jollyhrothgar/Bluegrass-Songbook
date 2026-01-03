@@ -1,0 +1,18 @@
+id: born-to-run
+title: Born To Run
+artist: Emmylou Harris
+composers:
+- Paul Kennerley
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: borntorunlyricschords.pro
+    imported_at: '2026-01-02'

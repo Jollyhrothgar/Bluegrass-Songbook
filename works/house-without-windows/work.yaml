@@ -1,0 +1,18 @@
+id: house-without-windows
+title: House Without Windows
+artist: Roy Orbison
+composers:
+- Charles Tobias and Lee Pockriss
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: housewithoutwindowslyricschords.pro
+    imported_at: '2026-01-02'

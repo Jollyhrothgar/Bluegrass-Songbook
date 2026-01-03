@@ -1,0 +1,15 @@
+id: won-t-you-sometimes-think-of-me
+title: Won't You Sometimes Think Of Me
+artist: Hank Williams Sr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wontyousometimesthinkofmelyricschords.pro
+    imported_at: '2026-01-02'

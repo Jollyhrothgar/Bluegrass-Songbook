@@ -1,0 +1,19 @@
+id: gentleman-jim
+title: Gentleman Jim
+artist: Charlie Rich
+composers:
+- Lowell Foster and Don McMillan
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gentlemanjimlyricschords.pro
+    imported_at: '2026-01-02'

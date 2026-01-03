@@ -1,0 +1,17 @@
+id: the-pillow-that-whispers
+title: The Pillow That Whispers
+artist: Carl Smith
+composers:
+- Cal Veale
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thepillowthatwhisperslyricschords.pro
+    imported_at: '2026-01-02'

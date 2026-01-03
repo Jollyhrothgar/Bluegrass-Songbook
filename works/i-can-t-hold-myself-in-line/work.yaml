@@ -1,0 +1,15 @@
+id: i-can-t-hold-myself-in-line
+title: I Can't Hold Myself In Line
+artist: Johnny Paycheck with Merle Haggard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantholdmyselfinlinelyricschords.pro
+    imported_at: '2026-01-02'

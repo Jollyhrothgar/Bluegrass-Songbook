@@ -1,0 +1,18 @@
+id: i-m-only-in-it-for-the-love
+title: I'm Only In It For The Love
+artist: John Conlee
+composers:
+- Deborah Allen, Leon Brooks, Rafe G. Van Hoy
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imonlyinitforthelovelyricschords.pro
+    imported_at: '2026-01-02'

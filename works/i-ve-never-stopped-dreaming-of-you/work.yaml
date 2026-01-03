@@ -1,0 +1,17 @@
+id: i-ve-never-stopped-dreaming-of-you
+title: I've Never Stopped Dreaming Of You
+artist: Reba McEntire
+composers:
+- Jerry Wallace, Terry Skinner, Lonnie Ledford
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iveneverstoppeddreamingofyoulyricschords.pro
+    imported_at: '2026-01-02'

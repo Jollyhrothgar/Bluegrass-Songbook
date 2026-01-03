@@ -1,0 +1,17 @@
+id: too-much-candy-for-a-dime
+title: Too Much Candy For A Dime
+artist: Eddy Raven
+composers:
+- David H. Powelson and Edward G. Futch
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomuchcandyforadimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: there-s-not-a-thing-i-wouldnt-do-for-you
+title: There's Not A Thing I Wouldn’t Do For You
+artist: Eddy Arnold
+composers:
+- Billy Hughes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnotathingiwouldntdoforyoulyricschords.pro
+    imported_at: '2026-01-02'

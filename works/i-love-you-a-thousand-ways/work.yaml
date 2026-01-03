@@ -1,0 +1,18 @@
+id: i-love-you-a-thousand-ways
+title: I Love You a Thousand Ways
+artist: Lefty Frizzell
+composers:
+- Lefty Frizzell and Jim Beck
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iloveyouathousandwayslyricschords.pro
+    imported_at: '2026-01-02'

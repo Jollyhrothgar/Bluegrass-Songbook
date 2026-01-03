@@ -1,0 +1,19 @@
+id: shutting-out-the-light
+title: Shutting Out The Light
+artist: Waylon Jennings
+composers:
+- Woody Starr and Claude Brown
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shuttingoutthelightlyricschords.pro
+    imported_at: '2026-01-02'

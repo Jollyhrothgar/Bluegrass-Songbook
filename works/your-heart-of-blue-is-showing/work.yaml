@@ -1,0 +1,18 @@
+id: your-heart-of-blue-is-showing
+title: Your Heart Of Blue Is Showing
+artist: Marty Robbins
+composers:
+- Bernard L. Spurlock
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourheartofblueisshowinglyricschords.pro
+    imported_at: '2026-01-02'

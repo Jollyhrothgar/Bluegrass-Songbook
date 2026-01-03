@@ -1,0 +1,17 @@
+id: here-i-am-in-dallas
+title: Here I Am In Dallas
+artist: Faron Young
+composers:
+- Lomar Morris, Ronnie Hughes, Terry Isham
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hereiamindallaslyricschords.pro
+    imported_at: '2026-01-02'

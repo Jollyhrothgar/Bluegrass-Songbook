@@ -1,0 +1,15 @@
+id: christ-is-my-sunshine
+title: Christ Is My Sunshine
+artist: Jimmie Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: christismysunshinelyricschords.pro
+    imported_at: '2026-01-02'

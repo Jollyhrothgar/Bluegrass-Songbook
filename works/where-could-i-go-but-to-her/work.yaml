@@ -1,0 +1,17 @@
+id: where-could-i-go-but-to-her
+title: Where Could I Go (But To Her)
+artist: David Houston
+composers:
+- Billy Sherrill and Glenn Sutton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherecouldigobuttoherlyricschords.pro
+    imported_at: '2026-01-02'

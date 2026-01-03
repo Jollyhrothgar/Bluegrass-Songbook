@@ -1,0 +1,19 @@
+id: letter-after-letter
+title: Letter After Letter
+artist: Mel Tillis
+composers:
+- Glen Campbell and Jerry Goldis
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letterafterletterlyricschords.pro
+    imported_at: '2026-01-02'

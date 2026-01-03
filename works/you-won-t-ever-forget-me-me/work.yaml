@@ -1,0 +1,18 @@
+id: you-won-t-ever-forget-me-me
+title: You Won't Ever Forget Me Me
+artist: Ernest Tubb
+composers:
+- Ernest Tubb and Lois Snapp
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwonteverforgetmelyricschords.pro
+    imported_at: '2026-01-02'

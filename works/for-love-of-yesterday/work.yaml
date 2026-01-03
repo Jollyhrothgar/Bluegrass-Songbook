@@ -1,0 +1,15 @@
+id: for-love-of-yesterday
+title: For Love Of Yesterday
+artist: Billy Crash Craddock
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forloveofyesterdaylyricschords.pro
+    imported_at: '2026-01-02'

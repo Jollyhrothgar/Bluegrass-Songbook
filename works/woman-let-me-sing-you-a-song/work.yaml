@@ -1,0 +1,17 @@
+id: woman-let-me-sing-you-a-song
+title: Woman Let Me Sing You A Song
+artist: Vernon Oxford
+composers:
+- Harland Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: womanletmesingyouasonglyricschords.pro
+    imported_at: '2026-01-02'

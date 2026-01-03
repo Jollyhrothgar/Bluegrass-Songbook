@@ -1,0 +1,18 @@
+id: don-t-ask-me-why-1
+title: Don't Ask Me Why
+artist: Wanda Jackson
+composers:
+- Ben Weisman and Fred Wise
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontaskmewhylyricschords.pro
+    imported_at: '2026-01-02'

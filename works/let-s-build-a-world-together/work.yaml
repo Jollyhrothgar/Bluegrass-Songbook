@@ -1,0 +1,15 @@
+id: let-s-build-a-world-together
+title: Let's Build A World Together
+artist: David Houston
+composers:
+- Norro Wilson, Carmol Taylor, George Richey
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsbuildaworldtogetherlyricschords.pro
+    imported_at: '2026-01-02'

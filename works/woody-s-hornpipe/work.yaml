@@ -1,0 +1,17 @@
+id: woody-s-hornpipe
+title: Woody's Hornpipe
+artist: Traditional
+composers:
+- Biography:James Skeeter Walden
+default_key: B
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

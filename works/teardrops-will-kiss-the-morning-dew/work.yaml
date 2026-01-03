@@ -1,0 +1,19 @@
+id: teardrops-will-kiss-the-morning-dew
+title: Teardrops Will Kiss the Morning Dew
+artist: Alison Krauss
+composers:
+- Paul Craft
+default_key: G
+tags:
+- Bluegrass
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: teardropswillkissthemorningdewlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-wish-i-could-write-you-a-song
+title: I Wish I Could Write You A Song
+artist: John Anderson
+composers:
+- John Anderson and Lionel Delmore
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishicouldwriteyouasonglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: mississippi-river-raft
+title: Mississippi River Raft
+artist: J.D. Crowe
+composers:
+- Johnson, Harrington, Teague
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mississippiriverraftlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: no-hard-times
+title: No Hard Times
+artist: Merle Haggard
+composers:
+- Jimmie Rodgers
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nohardtimeslyricschords.pro
+    imported_at: '2026-01-02'

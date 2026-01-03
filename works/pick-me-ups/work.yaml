@@ -1,0 +1,17 @@
+id: pick-me-ups
+title: Pick Me Ups
+artist: Jim Ed Brown
+composers:
+- Buck Graves
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pickmeupslyricschords.pro
+    imported_at: '2026-01-02'

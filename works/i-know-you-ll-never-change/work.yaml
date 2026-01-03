@@ -1,0 +1,17 @@
+id: i-know-you-ll-never-change
+title: I Know You'll Never Change
+artist: George Morgan
+composers:
+- Victor Willis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowyoullneverchangelyricschords.pro
+    imported_at: '2026-01-02'

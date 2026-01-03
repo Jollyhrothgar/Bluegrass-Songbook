@@ -1,0 +1,17 @@
+id: taking-a-chance-on-love
+title: Taking A Chance On Love
+artist: Eddy Arnold
+composers:
+- John Latouche, Ted Fetter, Vernon Duke
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takingachanceonlovelyricschords.pro
+    imported_at: '2026-01-02'

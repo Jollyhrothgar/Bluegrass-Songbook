@@ -1,0 +1,17 @@
+id: she-1
+title: She
+artist: Emmylou Harris
+composers:
+- Gram Parsons and Chris Ethridge
+default_key: C
+tags:
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shelyricschords.pro
+    imported_at: '2026-01-02'

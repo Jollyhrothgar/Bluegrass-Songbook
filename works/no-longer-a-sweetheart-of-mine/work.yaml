@@ -1,0 +1,17 @@
+id: no-longer-a-sweetheart-of-mine
+title: No Longer a Sweetheart of Mine
+artist: Reno and Smiley
+composers:
+- Don Reno, Fred Swift, Red Smiley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nolongerasweetheartofminelyricschords.pro
+    imported_at: '2026-01-02'

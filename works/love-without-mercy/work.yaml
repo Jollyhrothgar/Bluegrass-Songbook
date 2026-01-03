@@ -1,0 +1,18 @@
+id: love-without-mercy
+title: Love Without Mercy
+artist: The Oak Ridge Boys
+composers:
+- Don Pfrimmer and Mike Reid
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovewithoutmercylyricschords.pro
+    imported_at: '2026-01-02'

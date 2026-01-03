@@ -1,0 +1,15 @@
+id: hell-broke-loose-in-georgia
+title: Hell Broke Loose in Georgia
+artist: Traditional
+default_key: C
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

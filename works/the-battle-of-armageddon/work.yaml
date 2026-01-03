@@ -1,0 +1,18 @@
+id: the-battle-of-armageddon
+title: The Battle of Armageddon
+artist: Hank Williams Sr.
+composers:
+- Roy Acuff and Odell McLeod
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebattleofarmageddonlyricschords.pro
+    imported_at: '2026-01-02'

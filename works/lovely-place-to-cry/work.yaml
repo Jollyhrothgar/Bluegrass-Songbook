@@ -1,0 +1,18 @@
+id: lovely-place-to-cry
+title: Lovely Place To Cry
+artist: Tammy Wynette
+composers:
+- Earl Montgomery and Tammy Wynette
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovelyplacetocrylyricschords.pro
+    imported_at: '2026-01-02'

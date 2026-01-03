@@ -1,0 +1,17 @@
+id: don-t-ever-tell-me-goodbye
+title: Don't Ever Tell Me Goodbye
+artist: Buck Owens
+composers:
+- Buck Owens and Red Simpson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontevertellmegoodbyelyricschords.pro
+    imported_at: '2026-01-02'

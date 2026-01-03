@@ -1,0 +1,19 @@
+id: be-careful-of-stones-that-you-throw
+title: Be Careful Of Stones That You Throw
+artist: Hank Williams
+composers:
+- Bonnie Dodd
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becarefulofstonesthatyouthrowlyricschords.pro
+    imported_at: '2026-01-02'

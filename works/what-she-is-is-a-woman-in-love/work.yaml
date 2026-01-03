@@ -1,0 +1,17 @@
+id: what-she-is-is-a-woman-in-love
+title: What She Is (Is A Woman In Love)
+artist: Earl Thomas Conley
+composers:
+- Bob McDill and Paul Harrison
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatsheisisawomaninlovelyricschords.pro
+    imported_at: '2026-01-02'

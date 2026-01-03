@@ -1,0 +1,18 @@
+id: take-me-home
+title: Take Me Home
+artist: Charley Pride
+composers:
+- Jack Clement and Allen Reynolds
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemehome1lyricschords.pro
+    imported_at: '2026-01-02'

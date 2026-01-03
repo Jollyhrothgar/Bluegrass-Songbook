@@ -1,0 +1,15 @@
+id: keep-on-rollin-down-the-line
+title: Keep On Rollin' Down The Line
+artist: Boxcar Willie
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keeponrollindownthelinelyricschords.pro
+    imported_at: '2026-01-02'

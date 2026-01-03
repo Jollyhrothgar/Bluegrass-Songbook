@@ -1,0 +1,19 @@
+id: im-nobodys-child
+title: I’m Nobody’s Child
+artist: Hank Snow
+composers:
+- Mel Foree and Cy Coben
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnobodyschildlyricschords.pro
+    imported_at: '2026-01-02'

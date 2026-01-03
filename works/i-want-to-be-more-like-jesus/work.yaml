@@ -1,0 +1,19 @@
+id: i-want-to-be-more-like-jesus
+title: I Want To Be More Like Jesus
+artist: B.J. Thomas
+composers:
+- Archie Jordan
+default_key: D
+tags:
+- Pop
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttobemorelikeJesuslyricschords.pro
+    imported_at: '2026-01-02'

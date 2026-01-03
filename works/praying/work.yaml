@@ -1,0 +1,17 @@
+id: praying
+title: Praying
+artist: Vern Gosdin
+composers:
+- Hazel Houser
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prayinglyricschords.pro
+    imported_at: '2026-01-02'

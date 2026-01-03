@@ -1,0 +1,15 @@
+id: i-ll-be-waiting-there-for-you
+title: I'll Be Waiting There for You
+artist: Big Tom and The Mainliners
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbewaitingthereforyoulyricschords.pro
+    imported_at: '2026-01-02'

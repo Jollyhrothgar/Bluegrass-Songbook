@@ -1,0 +1,18 @@
+id: mean-woman-with-the-green-eyes
+title: Mean Woman With The Green Eyes
+artist: Charlie Walker
+composers:
+- Sheb Wooley
+default_key: D
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meanwomanwiththegreeneyeslyricschords.pro
+    imported_at: '2026-01-02'

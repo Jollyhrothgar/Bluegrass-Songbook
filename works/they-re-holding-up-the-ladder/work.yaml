@@ -1,0 +1,17 @@
+id: they-re-holding-up-the-ladder
+title: They're Holding Up The Ladder
+artist: The Easter Brothers
+composers:
+- Edd F. Easter, James M. Easter,
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theyreholdinguptheladderlyricschords.pro
+    imported_at: '2026-01-02'

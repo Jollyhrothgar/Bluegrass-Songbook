@@ -1,0 +1,17 @@
+id: my-mama-was-the-rose-of-san-antone
+title: My Mama Was The Rose Of San Antone
+artist: Curtis Potter
+composers:
+- Joe Bob Barnhill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mymamawastheroseofsanantonelyricschords.pro
+    imported_at: '2026-01-02'

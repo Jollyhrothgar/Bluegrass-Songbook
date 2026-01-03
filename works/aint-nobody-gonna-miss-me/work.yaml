@@ -1,0 +1,18 @@
+id: aint-nobody-gonna-miss-me
+title: Ain’t Nobody Gonna Miss Me
+artist: Jimmy Martin
+composers:
+- Harry McAuliffe and Jake Taylor
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintnobodygonnamissmelyricschords.pro
+    imported_at: '2026-01-02'

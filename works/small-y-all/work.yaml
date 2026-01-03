@@ -1,0 +1,18 @@
+id: small-y-all
+title: Small Y'all
+artist: Randy Travis
+composers:
+- Bobby Braddock
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: smallyalllyricschords.pro
+    imported_at: '2026-01-02'

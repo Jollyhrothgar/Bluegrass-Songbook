@@ -1,0 +1,18 @@
+id: cold-and-lonely-lyrics-and-chords
+title: Cold And Lonely Lyrics and Chords
+artist: Kitty Wells
+composers:
+- Roy Botkin
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldandlonelylyricschords.pro
+    imported_at: '2026-01-02'

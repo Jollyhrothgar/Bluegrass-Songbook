@@ -1,0 +1,18 @@
+id: i-ll-go-to-a-stranger
+title: I'll Go To A Stranger
+artist: Ray Price
+composers:
+- Ray Pennington and Dave Kirby
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illgotoastrangerlyricsandchords.pro
+    imported_at: '2026-01-02'

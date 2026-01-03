@@ -1,0 +1,20 @@
+id: no-more-hanging-on
+title: No More Hanging On
+artist: Jerry Lee Lewis
+composers:
+- Jerry Chesnut
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nomorehangingonlyricschords.pro
+    imported_at: '2026-01-02'

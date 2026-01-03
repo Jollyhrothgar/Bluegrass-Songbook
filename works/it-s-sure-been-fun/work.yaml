@@ -1,0 +1,17 @@
+id: it-s-sure-been-fun
+title: It's Sure Been Fun
+artist: Waylon Jennings
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itssurebeenfunlyricschords.pro
+    imported_at: '2026-01-02'

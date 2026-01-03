@@ -1,0 +1,18 @@
+id: down-the-old-road-to-home
+title: Down The Old Road To Home
+artist: Hank Snow
+composers:
+- Jimmie Rodgers and Carey Harvey
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downtheoldroadtohomelyricschords.pro
+    imported_at: '2026-01-02'

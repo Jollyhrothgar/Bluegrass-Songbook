@@ -1,0 +1,17 @@
+id: thorn-in-my-heart
+title: Thorn in My Heart
+artist: Bob Wills
+composers:
+- Bob Wills and Sam Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thorninmyheartlyricschords.pro
+    imported_at: '2026-01-02'

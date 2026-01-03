@@ -1,0 +1,17 @@
+id: santa-s-flying-a-747-tonight
+title: Santa's Flying A 747 Tonight
+artist: Doug Stone
+composers:
+- Phyllis Bennett and Lonnie Williams
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: santasflyinga747tonightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: out-behind-the-barn
+title: Out Behind The Barn
+artist: Little Jimmy Dickens
+composers:
+- Boudleaux Bryant
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: outbehindthebarnlyricschords.pro
+    imported_at: '2026-01-02'

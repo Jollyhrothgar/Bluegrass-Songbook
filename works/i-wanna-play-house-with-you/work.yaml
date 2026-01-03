@@ -1,0 +1,17 @@
+id: i-wanna-play-house-with-you
+title: I Wanna Play House With You
+artist: Eddy Arnold
+composers:
+- Cy Coben
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwannaplayhousewithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: everything-i-am
+title: Everything I Am
+artist: Charlie Pride
+composers:
+- Kenny O'Dell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingiamlyricschords.pro
+    imported_at: '2026-01-02'

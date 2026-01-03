@@ -1,0 +1,17 @@
+id: i-know-a-man-who-can
+title: I Know A Man Who Can
+artist: George Jones
+composers:
+- Jack Campbell and Jimmie Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowamanwhocanlyricschords.pro
+    imported_at: '2026-01-02'

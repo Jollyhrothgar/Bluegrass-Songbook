@@ -1,0 +1,20 @@
+id: your-kinda-love
+title: Your Kinda Love
+artist: Patsy Cline
+composers:
+- Alex Zanetis and Roy Drusky
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourkindalovelyricschords.pro
+    imported_at: '2026-01-02'

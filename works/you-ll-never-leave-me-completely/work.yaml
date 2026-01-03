@@ -1,0 +1,17 @@
+id: you-ll-never-leave-me-completely
+title: You'll Never Leave Me Completely
+artist: Johnny Bush
+composers:
+- Chuck Howard and David C. Kirby
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllneverleavemecompletelylyricschords.pro
+    imported_at: '2026-01-02'

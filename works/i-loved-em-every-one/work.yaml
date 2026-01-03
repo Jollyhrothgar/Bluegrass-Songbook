@@ -1,0 +1,18 @@
+id: i-loved-em-every-one
+title: I Loved ‘Em Every One
+artist: T.G. Sheppard
+composers:
+- Phil Sampson
+default_key: Em
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovedemeveryonelyricschords.pro
+    imported_at: '2026-01-02'

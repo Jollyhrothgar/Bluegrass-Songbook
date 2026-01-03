@@ -1,0 +1,22 @@
+id: love-is-on-the-way
+title: Love Is On The Way
+artist: Johnny Cash
+composers:
+- Kris Kristofferson
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveisonthewaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: big-big-world
+title: Big Big World
+artist: Bob Luman
+composers:
+- Fred Burch, Gerald Nelson, Red West
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigbigworldlyricschords.pro
+    imported_at: '2026-01-02'

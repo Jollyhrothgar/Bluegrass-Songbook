@@ -1,0 +1,18 @@
+id: break-it-to-me-gently
+title: Break It To Me Gently
+artist: Brenda Lee
+composers:
+- Diane Lampert - Joe Seneca
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: breakittomegentlylyricschords.pro
+    imported_at: '2026-01-02'

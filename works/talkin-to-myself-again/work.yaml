@@ -1,0 +1,18 @@
+id: talkin-to-myself-again
+title: Talkin’ To Myself Again
+artist: Tammy Wynette
+composers:
+- James Paul O’Hara
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: talkintomyselfagainlyricschords.pro
+    imported_at: '2026-01-02'

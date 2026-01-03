@@ -1,0 +1,20 @@
+id: d-r-u-n-k
+title: D-R-U-N-K
+artist: David Allan Coe
+composers:
+- Tim Dubois and Larry Paxton
+default_key: G
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: D-R-U-N-Klyricschords.pro
+    imported_at: '2026-01-02'

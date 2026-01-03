@@ -1,0 +1,17 @@
+id: going-through-the-motions-of-living
+title: Going Through The Motions Of Living
+artist: Sonny James
+composers:
+- Bob Tubert and Jean Chapel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goingthroughtheotionsoflivinglyricschords.pro
+    imported_at: '2026-01-02'

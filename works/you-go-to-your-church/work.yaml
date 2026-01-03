@@ -1,0 +1,17 @@
+id: you-go-to-your-church
+title: You Go To Your Church
+artist: J.D. Crowe
+composers:
+- Cowboy Copas
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yougotoyourchurchlyricschords.pro
+    imported_at: '2026-01-02'

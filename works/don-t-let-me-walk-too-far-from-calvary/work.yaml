@@ -1,0 +1,17 @@
+id: don-t-let-me-walk-too-far-from-calvary
+title: Don't Let Me Walk Too Far From Calvary
+artist: The Rambos
+composers:
+- Dottie Rambo
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontletmewalktoofarfromcalvarylyricschords.pro
+    imported_at: '2026-01-02'

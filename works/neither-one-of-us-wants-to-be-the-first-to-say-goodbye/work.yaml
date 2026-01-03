@@ -1,0 +1,15 @@
+id: neither-one-of-us-wants-to-be-the-first-to-say-goodbye
+title: Neither One Of Us (Wants To Be The First To Say Goodbye)
+artist: Bob Luman
+composers:
+- Jim Weatherly
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: neitheroneofuswantstobethefirsttosaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

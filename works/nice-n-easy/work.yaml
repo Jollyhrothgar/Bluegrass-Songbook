@@ -1,0 +1,15 @@
+id: nice-n-easy
+title: Nice'n Easy
+artist: Johnny Duncan and Janie Fricke
+composers:
+- Alan Bergman, Marilyn Keith Bergman, Lew Spence
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: niceneasylyricschords.pro
+    imported_at: '2026-01-02'

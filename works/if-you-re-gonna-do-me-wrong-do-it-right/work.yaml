@@ -1,0 +1,15 @@
+id: if-you-re-gonna-do-me-wrong-do-it-right
+title: If You're Gonna Do Me Wrong Do It Right
+artist: Vern Gosdin
+composers:
+- Vern Gosdin Max D. Barnes
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouregonnadomewrongdoitrightlyricschords.pro
+    imported_at: '2026-01-02'

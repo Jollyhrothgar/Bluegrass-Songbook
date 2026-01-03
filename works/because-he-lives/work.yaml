@@ -1,0 +1,17 @@
+id: because-he-lives
+title: Because He Lives
+artist: The Oak Ridge Boys
+composers:
+- Bill and Gloria Gaither
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseheliveslyricschords.pro
+    imported_at: '2026-01-02'

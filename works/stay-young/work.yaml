@@ -1,0 +1,17 @@
+id: stay-young
+title: Stay Young
+artist: Don Williams
+composers:
+- Graham Lyle and Benny Gallagher
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stayyounglyricschords.pro
+    imported_at: '2026-01-02'

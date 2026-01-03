@@ -1,0 +1,18 @@
+id: i-like-to-hear-em-preaching
+title: I Like To Hear ‘em Preaching
+artist: Jimmy Martin
+composers:
+- Jimmy Martin and Paul Williams
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iliketohearempreachinglyricschords.pro
+    imported_at: '2026-01-02'

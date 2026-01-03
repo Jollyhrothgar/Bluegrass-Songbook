@@ -1,0 +1,16 @@
+id: she-s-just-a-whole-lot-like-you
+title: She's Just a Whole Lot Like You
+artist: Hank Thompson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesjustawholelotlikeyoulyricsandchords.pro
+    imported_at: '2026-01-02'

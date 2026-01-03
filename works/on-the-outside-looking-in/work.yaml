@@ -1,0 +1,18 @@
+id: on-the-outside-looking-in
+title: On The Outside Looking In
+artist: Connie Francis
+composers:
+- Neil Sedaka and Howard Greenfield
+default_key: G
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ontheoutsidelookinginlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ve-got-to-hurry-hurry-hurry
+title: I've Got To Hurry Hurry Hurry
+artist: Ray Price
+composers:
+- Louise Ulrich
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegottohurryhurryhurrylyricschords.pro
+    imported_at: '2026-01-02'

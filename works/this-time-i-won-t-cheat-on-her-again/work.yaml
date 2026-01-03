@@ -1,0 +1,17 @@
+id: this-time-i-won-t-cheat-on-her-again
+title: This Time I Won't Cheat On Her Again
+artist: Moe Bandy
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thistimeiwontcheatonheragainlyricschords.pro
+    imported_at: '2026-01-02'

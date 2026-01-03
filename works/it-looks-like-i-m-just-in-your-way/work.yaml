@@ -1,0 +1,16 @@
+id: it-looks-like-i-m-just-in-your-way
+title: It Looks Like I'm Just in Your Way
+artist: Marty Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itlookslikeimjustinyourwaylyricschords.pro
+    imported_at: '2026-01-02'

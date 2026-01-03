@@ -1,0 +1,17 @@
+id: i-want-to-go-where-nobody-knows-me
+title: I Want To Go (Where Nobody Knows Me)
+artist: George Hamilton IV
+composers:
+- Dick Flood
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttogowherenobodyknowsmelyricschords.pro
+    imported_at: '2026-01-02'

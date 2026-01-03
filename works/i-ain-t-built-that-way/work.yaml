@@ -1,0 +1,18 @@
+id: i-ain-t-built-that-way
+title: I Ain't Built That Way
+artist: Bob Luman
+composers:
+- Glenn Sutton
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iaintbuiltthatwaylyricschords.pro
+    imported_at: '2026-01-02'

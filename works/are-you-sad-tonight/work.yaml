@@ -1,0 +1,17 @@
+id: are-you-sad-tonight
+title: Are You Sad Tonight
+artist: J.D. Crowe
+composers:
+- Glenn R. Lawson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: areyousadtonightlyricschords.pro
+    imported_at: '2026-01-02'

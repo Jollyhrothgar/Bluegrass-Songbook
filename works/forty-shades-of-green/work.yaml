@@ -1,0 +1,20 @@
+id: forty-shades-of-green
+title: Forty Shades of Green
+artist: Johnny Cash
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fortyshadesofgreenlyricschords.pro
+    imported_at: '2026-01-02'

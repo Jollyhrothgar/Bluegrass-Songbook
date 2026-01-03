@@ -1,0 +1,17 @@
+id: look-on-the-good-side
+title: Look On The Good Side
+artist: Jimmy Dean
+composers:
+- Jimmy Dean and Richard Shannon
+default_key: A
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookonthegoodsidelyricschords.pro
+    imported_at: '2026-01-02'

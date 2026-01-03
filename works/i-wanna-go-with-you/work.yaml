@@ -1,0 +1,15 @@
+id: i-wanna-go-with-you
+title: I Wanna Go With You
+artist: Bill Monroe
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwannagowithyoulyricschords.pro
+    imported_at: '2026-01-02'

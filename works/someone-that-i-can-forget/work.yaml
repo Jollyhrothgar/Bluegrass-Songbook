@@ -1,0 +1,17 @@
+id: someone-that-i-can-forget
+title: Someone That I Can Forget
+artist: Moe Bandy
+composers:
+- Linda Ann Hargrove and Pete Drake
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someonethaticanforgetlyricschords.pro
+    imported_at: '2026-01-02'

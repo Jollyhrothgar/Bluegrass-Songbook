@@ -1,0 +1,16 @@
+id: shadows
+title: Shadows
+artist: Alison Krauss
+default_key: G
+tags:
+- Bluegrass
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shadowslyricschords.pro
+    imported_at: '2026-01-02'

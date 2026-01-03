@@ -1,0 +1,18 @@
+id: don-t-wait-the-last-minute-to-pray
+title: Don't Wait The Last Minute To Pray
+artist: Kitty Wells
+composers:
+- Harley Huggins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontwaitthelastminutetopraylyricschords.pro
+    imported_at: '2026-01-02'

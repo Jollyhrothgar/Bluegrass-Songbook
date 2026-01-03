@@ -1,0 +1,18 @@
+id: highway-junkie
+title: Highway Junkie
+artist: Randy Travis
+composers:
+- Chris Knight, Annie Tate, Sam Tate
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highwayjunkielyricschords.pro
+    imported_at: '2026-01-02'

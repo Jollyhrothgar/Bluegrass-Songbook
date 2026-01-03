@@ -1,0 +1,17 @@
+id: when-liking-turns-to-loving
+title: When Liking Turns To Loving
+artist: Bill Anderson
+composers:
+- Kenny Young
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenlikingturnstolovinglyricschords.pro
+    imported_at: '2026-01-02'

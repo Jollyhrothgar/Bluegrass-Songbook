@@ -1,0 +1,18 @@
+id: i-ll-take-care-of-you
+title: I'll Take Care Of You
+artist: Ronnie Milsap
+composers:
+- Royce Glenn Sutton and Archie Jordan
+default_key: Am
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illtakecareofyoulyricsandchords.pro
+    imported_at: '2026-01-02'

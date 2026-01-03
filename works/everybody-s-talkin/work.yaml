@@ -1,0 +1,17 @@
+id: everybody-s-talkin
+title: Everybody's Talkin'
+artist: Roger Miller
+composers:
+- Fred Neil
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodystalkinlyricschords.pro
+    imported_at: '2026-01-02'

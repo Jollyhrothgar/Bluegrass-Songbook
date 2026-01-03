@@ -1,0 +1,17 @@
+id: i-remember-you-lyrics-chords
+title: I Remember You Lyrics Chords
+artist: Slim Whitman
+composers:
+- Johnny Mercer and Victor Shertzinger
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: irememberyoulyricschords.pro
+    imported_at: '2026-01-02'

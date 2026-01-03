@@ -1,0 +1,17 @@
+id: ballad-of-davy-crockett
+title: Ballad Of Davy Crockett
+artist: Burl Ives
+composers:
+- Tom Blackburn and George Burns
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: balladofdavycrockettlyricschords.pro
+    imported_at: '2026-01-02'

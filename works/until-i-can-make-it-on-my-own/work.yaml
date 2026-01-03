@@ -1,0 +1,17 @@
+id: until-i-can-make-it-on-my-own
+title: Until I Can Make it On My Own
+artist: Faron Young
+composers:
+- Arthur Leo Owens and Johnny McRae
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: untilicanmakeitonmyownlyricschords.pro
+    imported_at: '2026-01-02'

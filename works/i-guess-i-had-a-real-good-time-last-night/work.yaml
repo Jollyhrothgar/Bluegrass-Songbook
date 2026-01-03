@@ -1,0 +1,17 @@
+id: i-guess-i-had-a-real-good-time-last-night
+title: I Guess I Had A Real Good Time Last Night
+artist: Moe Bandy
+composers:
+- Carl Belew and Van Givens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iguessihadarealgoodtimelastnightlyricschords.pro
+    imported_at: '2026-01-02'

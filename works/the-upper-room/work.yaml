@@ -1,0 +1,17 @@
+id: the-upper-room
+title: The Upper Room
+artist: Hank Locklin
+composers:
+- Hank Locklin and Frank Peterson
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theupperroomlyricschords.pro
+    imported_at: '2026-01-02'

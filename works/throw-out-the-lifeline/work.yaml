@@ -1,0 +1,17 @@
+id: throw-out-the-lifeline
+title: Throw Out the Lifeline
+artist: Wilburn Brothers
+composers:
+- Edward S. Ufford
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: throwoutthelifelinelyricschords.pro
+    imported_at: '2026-01-02'

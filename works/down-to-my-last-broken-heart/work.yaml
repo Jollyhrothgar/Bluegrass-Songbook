@@ -1,0 +1,17 @@
+id: down-to-my-last-broken-heart
+title: Down To My Last Broken Heart
+artist: Janie Fricke
+composers:
+- Chick Rains
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downtomylastbrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

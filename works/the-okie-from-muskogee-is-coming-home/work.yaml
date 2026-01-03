@@ -1,0 +1,18 @@
+id: the-okie-from-muskogee-is-coming-home
+title: The Okie From Muskogee Is Coming Home
+artist: Merle Haggard
+composers:
+- Freddy Powers and Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theokiefrommuskogeeiscominghomelyricschords.pro
+    imported_at: '2026-01-02'

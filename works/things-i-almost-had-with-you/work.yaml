@@ -1,0 +1,15 @@
+id: things-i-almost-had-with-you
+title: Things I Almost Had With You
+artist: Leona Williams
+composers:
+- David C. Kirby, Ronald K. Williams, Jr., Leona Williams
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thingsialmosthadwithyoulyricschords.pro
+    imported_at: '2026-01-02'

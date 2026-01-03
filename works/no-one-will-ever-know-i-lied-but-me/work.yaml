@@ -1,0 +1,15 @@
+id: no-one-will-ever-know-i-lied-but-me
+title: No One Will Ever Know I Lied But Me
+artist: Nat Stuckey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noonewilleverknowiliedbutmelyricschords.pro
+    imported_at: '2026-01-02'

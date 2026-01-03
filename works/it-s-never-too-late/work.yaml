@@ -1,0 +1,18 @@
+id: it-s-never-too-late
+title: It's Never Too Late
+artist: Brenda Lee
+composers:
+- Jimmy Seals
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsnevertoolatelyricschords.pro
+    imported_at: '2026-01-02'

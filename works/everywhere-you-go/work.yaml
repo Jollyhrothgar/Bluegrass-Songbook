@@ -1,0 +1,17 @@
+id: everywhere-you-go
+title: Everywhere You Go
+artist: Jim Reeves
+composers:
+- Larry Shay, Joe Goodwin, Mark Fisher
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everywhereyougolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: when-we-had-nothing
+title: When We Had Nothing
+artist: Wynn Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenwehadnothinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: out-where-the-bright-lights-are-glowing
+title: Out Where The Bright Lights Are Glowing
+artist: Ronnie Milsap
+composers:
+- Gary Harrison and Kent Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: outwherethebrightlightsareglowinglyricschords.pro
+    imported_at: '2026-01-02'

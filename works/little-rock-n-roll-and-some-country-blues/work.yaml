@@ -1,0 +1,17 @@
+id: little-rock-n-roll-and-some-country-blues
+title: Little Rock'n Roll And Some Country Blues
+artist: John Anderson
+composers:
+- Troy Seals and Mike Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlerocknrollandsomecountryblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-guess-i-had-too-much-to-dream-last-night
+title: I Guess I Had Too Much To Dream Last Night
+artist: Faron Young
+composers:
+- Billy J. Moore
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iguessihadtoomuchtodreamlastnightlyricschords.pro
+    imported_at: '2026-01-02'

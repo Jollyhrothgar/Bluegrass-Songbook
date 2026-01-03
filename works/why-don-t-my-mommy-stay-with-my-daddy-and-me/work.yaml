@@ -1,0 +1,15 @@
+id: why-don-t-my-mommy-stay-with-my-daddy-and-me
+title: Why Don't My Mommy Stay With My Daddy And Me
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydontmymommystaywithmydaddyandmelyricschords.pro
+    imported_at: '2026-01-02'

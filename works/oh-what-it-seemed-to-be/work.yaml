@@ -1,0 +1,15 @@
+id: oh-what-it-seemed-to-be
+title: Oh What It Seemed To Be
+artist: Jim Reeves
+composers:
+- Bennie Benjamin and George Weiss
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohwhatitseemedtobelyricschords.pro
+    imported_at: '2026-01-02'

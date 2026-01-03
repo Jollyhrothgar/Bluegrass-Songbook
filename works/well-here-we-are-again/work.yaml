@@ -1,0 +1,18 @@
+id: well-here-we-are-again
+title: Well Here We Are Again
+artist: The Statler Brothers
+composers:
+- Richard Rodgers and Stephen Sondheim
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wellhereweareagainlyricschords.pro
+    imported_at: '2026-01-02'

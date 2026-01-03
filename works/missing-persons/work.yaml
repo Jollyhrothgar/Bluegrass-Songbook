@@ -1,0 +1,15 @@
+id: missing-persons
+title: Missing Persons
+artist: Ferlin Husky
+composers:
+- Jack Rhodes, Dick Reynolds, Ferlin Husky
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: missingpersonslyricschords.pro
+    imported_at: '2026-01-02'

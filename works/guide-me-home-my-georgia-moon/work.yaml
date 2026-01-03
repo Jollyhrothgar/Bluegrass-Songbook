@@ -1,0 +1,19 @@
+id: guide-me-home-my-georgia-moon
+title: Guide Me Home My Georgia Moon
+artist: Mel Tillis
+composers:
+- Joe Babcock
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: guidemehomemygeorgiamoonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-have-my-heart
+title: You Have My Heart
+artist: Slim Whitman
+composers:
+- Jerry Crist
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youhavemyheartlyricschords.pro
+    imported_at: '2026-01-02'

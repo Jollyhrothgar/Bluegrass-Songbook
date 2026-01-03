@@ -1,0 +1,17 @@
+id: talk-it-all-over-with-him
+title: Talk It All Over With Him
+artist: J.D. Crowe
+composers:
+- John Neal
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: talkitalloverwithhimlyricschords.pro
+    imported_at: '2026-01-02'

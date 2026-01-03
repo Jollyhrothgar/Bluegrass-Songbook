@@ -1,0 +1,17 @@
+id: bed-by-the-window
+title: Bed By The Window
+artist: James King
+composers:
+- Rob Crosby and Marni Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bedbythewindowlyricschords.pro
+    imported_at: '2026-01-02'

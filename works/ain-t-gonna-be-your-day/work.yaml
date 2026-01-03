@@ -1,0 +1,17 @@
+id: ain-t-gonna-be-your-day
+title: Ain't Gonna Be Your Day
+artist: Boxcar Willie
+composers:
+- Lloene Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintgonnabeyourdaylyricschords.pro
+    imported_at: '2026-01-02'

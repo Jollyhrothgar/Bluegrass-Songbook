@@ -1,0 +1,18 @@
+id: casey-s-last-ride
+title: Casey's Last Ride
+artist: Kris Kristofferson
+default_key: Am
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: caseyslastridelyricschords.pro
+    imported_at: '2026-01-02'

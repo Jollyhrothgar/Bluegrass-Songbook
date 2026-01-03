@@ -1,0 +1,18 @@
+id: you-ve-still-got-a-way-with-my-heart
+title: You've Still Got A Way With My Heart
+artist: Mickey Gilley
+composers:
+- Ron Moore and Robert Parker
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvestillgotawaywithmyheartlyricschords.pro
+    imported_at: '2026-01-02'

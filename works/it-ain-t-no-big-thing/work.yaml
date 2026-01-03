@@ -1,0 +1,21 @@
+id: it-ain-t-no-big-thing
+title: It Ain't No Big Thing
+artist: Elvis Presley
+composers:
+- Shorty Hall, Alice Joy Merritt, Neal Merritt
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itaintnobigthinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: the-legend-of-bonnie-and-clyde
+title: The Legend Of Bonnie and Clyde
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelegendofbonnieandclydelyricschords.pro
+    imported_at: '2026-01-02'

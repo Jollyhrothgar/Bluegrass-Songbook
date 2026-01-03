@@ -1,0 +1,19 @@
+id: the-lord-s-way-of-saying-goodnight
+title: The Lord's Way Of Saying Goodnight
+artist: Hank Snow
+composers:
+- Walter Rollins
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelordswayofsayinggoodnightlyricschords.pro
+    imported_at: '2026-01-02'

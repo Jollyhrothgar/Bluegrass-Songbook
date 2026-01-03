@@ -1,0 +1,19 @@
+id: ill-be-walking-the-floor-this-christmas
+title: I’ll Be Walking The Floor This Christmas
+artist: Ernest Tubb
+composers:
+- Justin Tubb
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbewalkingthefloorthisChristmaslyricschords.pro
+    imported_at: '2026-01-02'

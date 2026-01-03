@@ -1,0 +1,18 @@
+id: my-life-s-been-grand
+title: My Life's Been Grand
+artist: George Strait
+composers:
+- Merle Haggard and Terry Gordon
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylifesbeengrandlyricschords.pro
+    imported_at: '2026-01-02'

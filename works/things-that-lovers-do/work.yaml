@@ -1,0 +1,17 @@
+id: things-that-lovers-do
+title: Things That Lovers Do
+artist: Stonewall Jackson
+composers:
+- Hugh X. Lewis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thingsthatloversdolyricschords.pro
+    imported_at: '2026-01-02'

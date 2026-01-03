@@ -1,0 +1,15 @@
+id: my-cabin-in-caroline
+title: My Cabin In Caroline
+artist: Earl Scruggs and Lester Flatt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mycabinincarolinelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: your-first-time
+title: Your First Time
+artist: Mickey Gilley
+composers:
+- Huey P. Meaux
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourfirsttimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-follow-you-on-up-to-our-cloud
+title: I'll Follow You On Up To Our Cloud
+artist: Johnny Paycheck
+composers:
+- David Turner
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illfollowyouonuptoourcloudlyricschords.pro
+    imported_at: '2026-01-02'

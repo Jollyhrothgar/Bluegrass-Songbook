@@ -1,0 +1,15 @@
+id: you-ll-never-know
+title: You'll Never Know
+artist: Jim Reeves
+composers:
+- Mack Gordon and Harry Warren
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllneverknowlyricsandchords.pro
+    imported_at: '2026-01-02'

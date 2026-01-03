@@ -1,0 +1,15 @@
+id: statue-of-a-fool
+title: Statue Of A Fool
+artist: Ricky Van Shelton
+composers:
+- Jan Crutchfield
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: statueofafoollyricsandchords.pro
+    imported_at: '2026-01-02'

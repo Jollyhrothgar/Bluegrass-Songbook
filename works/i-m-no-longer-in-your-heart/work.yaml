@@ -1,0 +1,17 @@
+id: i-m-no-longer-in-your-heart
+title: I'm No Longer In Your Heart
+artist: Norma Jean
+composers:
+- Charlie Louvin and Ira Louvin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnolongerinyourheartlyricschords.pro
+    imported_at: '2026-01-02'

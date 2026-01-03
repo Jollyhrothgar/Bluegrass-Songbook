@@ -1,0 +1,17 @@
+id: i-wish-you-love
+title: I Wish You Love
+artist: Billy Walker
+composers:
+- W.S. Stevenson, Carl Belew, Tommy Blake
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishyoulovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: tell-her-lies-and-feed-her-candy
+title: Tell Her Lies And Feed Her Candy
+artist: Charlie Walker
+composers:
+- Joe McCracken
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellherliesandfeedhercandylyricschords.pro
+    imported_at: '2026-01-02'

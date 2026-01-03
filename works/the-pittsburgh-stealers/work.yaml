@@ -1,0 +1,17 @@
+id: the-pittsburgh-stealers
+title: The Pittsburgh Stealers
+artist: The Kendalls
+composers:
+- Larry Kingston and Jim Rushing
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thepittsburghstealerslyricschords.pro
+    imported_at: '2026-01-02'

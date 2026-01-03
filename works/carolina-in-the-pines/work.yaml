@@ -1,0 +1,16 @@
+id: carolina-in-the-pines
+title: Carolina In The Pines
+artist: Michael Martin Murphey
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carolinainthepineslyricschords.pro
+    imported_at: '2026-01-02'

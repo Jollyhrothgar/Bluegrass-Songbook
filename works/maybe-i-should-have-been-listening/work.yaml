@@ -1,0 +1,17 @@
+id: maybe-i-should-have-been-listening
+title: Maybe I Should Have Been Listening
+artist: Gene Watson
+composers:
+- Buzz Rabin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maybeishouldhavebeenlisteninglyricschords.pro
+    imported_at: '2026-01-02'

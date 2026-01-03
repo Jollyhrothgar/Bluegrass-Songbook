@@ -1,0 +1,17 @@
+id: hang-my-picture-in-your-heart-dear
+title: Hang My Picture In Your Heart Dear
+artist: Hank Locklin
+composers:
+- Mel Tillis and Wayne P. Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hangmypictureinyourheartdearlyricschords.pro
+    imported_at: '2026-01-02'

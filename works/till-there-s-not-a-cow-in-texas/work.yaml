@@ -1,0 +1,18 @@
+id: till-there-s-not-a-cow-in-texas
+title: Till There's Not A Cow In Texas
+artist: Red Steagall
+composers:
+- Written by Glenn Sutton and Red Steagall
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tilltheresnotacowintexaslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: danny-s-song
+title: Danny's Song
+artist: Anne Murray
+composers:
+- Kenny Loggins
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dannyssonglyrics.pro
+    imported_at: '2026-01-02'

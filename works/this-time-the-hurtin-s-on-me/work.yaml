@@ -1,0 +1,17 @@
+id: this-time-the-hurtin-s-on-me
+title: This Time The Hurtin's on Me
+artist: Faron Young
+composers:
+- Dallas Frazier and Sanger D. Shafer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thistimethehurtinsonmelyricschords.pro
+    imported_at: '2026-01-02'

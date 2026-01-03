@@ -1,0 +1,17 @@
+id: mother-pal-and-sweetheart
+title: Mother Pal And Sweetheart
+artist: The Trailblazers
+composers:
+- Red Lowery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: motherpalandsweetheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ve-just-destroyed-the-world
+title: I've Just Destroyed The World
+artist: Ray Price
+composers:
+- Willie Nelson and Ray Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivejustdestroyedtheworldlyricschords.pro
+    imported_at: '2026-01-02'

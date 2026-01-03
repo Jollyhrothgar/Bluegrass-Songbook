@@ -1,0 +1,18 @@
+id: sugar-moon
+title: Sugar Moon
+artist: Bob Wills
+composers:
+- Bob Wills and Cindy Walker
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sugarmoonlyricschords.pro
+    imported_at: '2026-01-02'

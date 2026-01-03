@@ -1,0 +1,17 @@
+id: all-the-dreamin-they-could-stand
+title: All The Dreamin' They Could Stand
+artist: Buck Owens
+composers:
+- Homer Joy
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allthedreamintheycouldstandlyricschords.pro
+    imported_at: '2026-01-02'

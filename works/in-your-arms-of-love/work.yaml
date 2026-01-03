@@ -1,0 +1,17 @@
+id: in-your-arms-of-love
+title: In Your Arms Of Love
+artist: Wynn Stewart
+composers:
+- Buck Owens and Gene Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inyourarmsoflovelyricschords.pro
+    imported_at: '2026-01-02'

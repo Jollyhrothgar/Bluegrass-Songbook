@@ -1,0 +1,17 @@
+id: tag-along
+title: Tag Along
+artist: Wilburn Brothers
+composers:
+- Ross Burk and Mildred Burk
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tagalonglyricschords.pro
+    imported_at: '2026-01-02'

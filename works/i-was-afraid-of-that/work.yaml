@@ -1,0 +1,17 @@
+id: i-was-afraid-of-that
+title: I Was Afraid Of That
+artist: Vern Gosdin
+composers:
+- Gene Nelson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwasafraidofthatlyricschords.pro
+    imported_at: '2026-01-02'

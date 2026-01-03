@@ -1,0 +1,17 @@
+id: wings-upon-your-horns-lyrics-chords
+title: Wings Upon Your Horns Lyrics Chords
+artist: Loretta Lynn
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wingsuponyourhornslyricschords.pro
+    imported_at: '2026-01-02'

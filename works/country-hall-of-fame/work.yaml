@@ -1,0 +1,17 @@
+id: country-hall-of-fame
+title: Country Hall Of Fame
+artist: Hank Locklin
+composers:
+- Karl Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countryhalloffamelyricschords.pro
+    imported_at: '2026-01-02'

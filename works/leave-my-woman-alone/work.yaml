@@ -1,0 +1,19 @@
+id: leave-my-woman-alone
+title: Leave My Woman Alone
+artist: The Everly Brothers
+composers:
+- Ray Charles
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leavemywomanalonelyricschords.pro
+    imported_at: '2026-01-02'

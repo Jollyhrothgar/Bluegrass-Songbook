@@ -1,0 +1,17 @@
+id: looking-for-ways
+title: Looking For Ways
+artist: Eddy Raven
+composers:
+- Frank J. Myers and Eddy Raven
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookingforwayslyricschords.pro
+    imported_at: '2026-01-02'

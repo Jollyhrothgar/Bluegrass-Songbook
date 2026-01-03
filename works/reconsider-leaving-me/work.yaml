@@ -1,0 +1,17 @@
+id: reconsider-leaving-me
+title: Reconsider Leaving Me
+artist: Darrell McCall
+composers:
+- Sam Bardin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: reconsiderleavingmelyricschords.pro
+    imported_at: '2026-01-02'

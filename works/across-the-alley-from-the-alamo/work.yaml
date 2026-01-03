@@ -1,0 +1,15 @@
+id: across-the-alley-from-the-alamo
+title: Across the Alley From the Alamo
+artist: Bob Wills
+composers:
+- Joe Greene
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: acrossthealleyfromthealamolyricschords.pro
+    imported_at: '2026-01-02'

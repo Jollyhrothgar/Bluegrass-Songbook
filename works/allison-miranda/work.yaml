@@ -1,0 +1,17 @@
+id: allison-miranda
+title: Allison Miranda
+artist: Garth Brooks
+composers:
+- Danny Roberts, Bobby Wood, Garth Brooks
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allisonmirandalyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: talk-about-me-and-see-what-she-ll-say
+title: Talk About Me And See What She'll Say
+artist: Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: talkaboutmeandseewhatshellsaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: when-your-old-wedding-ring-was-new
+title: When Your Old Wedding Ring Was New
+artist: Jimmy Dean
+composers:
+- Charles McCarthy, Joe Solieri, Bert Douglas
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyouroldweddingringwasnewlyricschords.pro
+    imported_at: '2026-01-02'

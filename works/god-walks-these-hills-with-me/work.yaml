@@ -1,0 +1,17 @@
+id: god-walks-these-hills-with-me
+title: God Walks These Hills With Me
+artist: Porter Wagoner
+composers:
+- Vic McAlpin and Marvin Hughes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: godwalksthesehillswithmelyricschords.pro
+    imported_at: '2026-01-02'

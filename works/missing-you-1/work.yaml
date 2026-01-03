@@ -1,0 +1,17 @@
+id: missing-you-1
+title: Missing You
+artist: The Mavericks
+composers:
+- Raul Malo and Al Anderson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: missingyoulyricswithchords.pro
+    imported_at: '2026-01-02'

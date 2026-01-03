@@ -1,0 +1,17 @@
+id: these-old-eyes-have-seen-it-all
+title: These Old Eyes Have Seen It All
+artist: George Jones
+composers:
+- Curly Putman and Bucky Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theseoldeyeshaveseenitalllyricschords.pro
+    imported_at: '2026-01-02'

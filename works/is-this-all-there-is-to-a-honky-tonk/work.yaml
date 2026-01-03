@@ -1,0 +1,17 @@
+id: is-this-all-there-is-to-a-honky-tonk
+title: Is This All There Is To A Honky Tonk
+artist: Tony Booth
+composers:
+- Robert Duncan and Donald Tunison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isthisallthereistoahonkytonklyricschords.pro
+    imported_at: '2026-01-02'

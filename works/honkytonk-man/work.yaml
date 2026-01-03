@@ -1,0 +1,15 @@
+id: honkytonk-man
+title: Honkytonk Man
+artist: Marty Robbins and Clint Eastwood
+composers:
+- Billie Jean Horton, Tillman Franks
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkmanlyricsandchords.pro
+    imported_at: '2026-01-02'

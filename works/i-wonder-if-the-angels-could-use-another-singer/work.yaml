@@ -1,0 +1,17 @@
+id: i-wonder-if-the-angels-could-use-another-singer
+title: I Wonder If The Angels Could Use Another Singer
+artist: Walt Mills
+composers:
+- Dottie Rambo
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderiftheangelscoulduseanothersingerlyricschords.pro
+    imported_at: '2026-01-02'

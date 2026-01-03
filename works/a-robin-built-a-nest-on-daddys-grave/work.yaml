@@ -1,0 +1,17 @@
+id: a-robin-built-a-nest-on-daddys-grave
+title: A Robin Built A Nest On Daddy’s Grave
+artist: Ralph Stanley
+composers:
+- Earl Sykes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: arobinbuiltanestondaddysgravelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: this-season-will-never-grow-old
+title: This Season Will Never Grow Old
+artist: Anne Murray
+composers:
+- Rita MacNeil
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisseasonwillnevergrowoldlyricschords.pro
+    imported_at: '2026-01-02'

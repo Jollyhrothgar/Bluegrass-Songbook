@@ -1,0 +1,18 @@
+id: my-heart
+title: My Heart
+artist: Ronnie Milsap
+composers:
+- Don Pfrimmer and Charles Quillen
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartlyricschords.pro
+    imported_at: '2026-01-02'

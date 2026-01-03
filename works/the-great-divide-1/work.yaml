@@ -1,0 +1,18 @@
+id: the-great-divide-1
+title: The Great Divide
+artist: Gene Watson
+composers:
+- John Royce Lindley and Randy Bruce Traywick
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegreatdividelyricschords.pro
+    imported_at: '2026-01-02'

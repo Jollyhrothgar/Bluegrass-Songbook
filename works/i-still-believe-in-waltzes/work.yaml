@@ -1,0 +1,18 @@
+id: i-still-believe-in-waltzes
+title: I Still Believe In Waltzes
+artist: Conway Twitty
+composers:
+- Bob Morrison, Jim McBride, Michael D. Hughes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: istillbelieveinwaltzeslyricschords.pro
+    imported_at: '2026-01-02'

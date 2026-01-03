@@ -1,0 +1,17 @@
+id: i-don-t-go-back-anymore
+title: I Don't Go Back Anymore
+artist: George Jones
+composers:
+- Mike Reid and Troy Harold Seals
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontgobackanymorelyricschords.pro
+    imported_at: '2026-01-02'

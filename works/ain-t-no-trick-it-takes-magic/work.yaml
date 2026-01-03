@@ -1,0 +1,18 @@
+id: ain-t-no-trick-it-takes-magic
+title: Ain't No Trick It Takes Magic
+artist: Lee Greenwood
+composers:
+- Jim Hurt and Steve Pippin
+default_key: Am
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintnotrickittakesmagiclyricschords.pro
+    imported_at: '2026-01-02'

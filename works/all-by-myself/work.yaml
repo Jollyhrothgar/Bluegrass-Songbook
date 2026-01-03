@@ -1,0 +1,15 @@
+id: all-by-myself
+title: All By Myself
+artist: Hank Williams Jr.
+composers:
+- Eric Carmen
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allbymyselflyricsandchords.pro
+    imported_at: '2026-01-02'

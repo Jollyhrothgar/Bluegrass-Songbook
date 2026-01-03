@@ -1,0 +1,17 @@
+id: love-s-not-everything-lyrics-and-chords
+title: Love's Not Everything Lyrics and Chords
+artist: Connie Smith
+composers:
+- Marty Stuart and Connie Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovesnoteverythinglyricschords.pro
+    imported_at: '2026-01-02'

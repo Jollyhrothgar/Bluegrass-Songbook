@@ -1,0 +1,17 @@
+id: when-i-stop-dreaming
+title: When I Stop Dreaming
+artist: Louvin Brothers
+composers:
+- Ira and Charles Louvin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenistopdreaminglyricsandchords.pro
+    imported_at: '2026-01-02'

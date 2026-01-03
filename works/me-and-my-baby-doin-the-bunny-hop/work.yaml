@@ -1,0 +1,17 @@
+id: me-and-my-baby-doin-the-bunny-hop
+title: Me and My Baby Doin' the Bunny Hop
+artist: Bob Wills
+composers:
+- Fewell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meandmybabydointhebunnyhoplyricschords.pro
+    imported_at: '2026-01-02'

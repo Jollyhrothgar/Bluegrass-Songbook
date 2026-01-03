@@ -1,0 +1,17 @@
+id: i-turn-to-you
+title: I Turn To You
+artist: George Jones
+composers:
+- Max Barnes and Curly Putman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iturntoyoulyricschords.pro
+    imported_at: '2026-01-02'

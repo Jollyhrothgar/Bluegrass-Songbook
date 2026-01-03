@@ -1,0 +1,17 @@
+id: in-my-dear-old-southern-home
+title: In My Dear Old Southern Home
+artist: Doc Watson
+composers:
+- Ellsworth Cozzens and Jimmie Rodgers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inmydearoldsouthernhomelyricschords.pro
+    imported_at: '2026-01-02'

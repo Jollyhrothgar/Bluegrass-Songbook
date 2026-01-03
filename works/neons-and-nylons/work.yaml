@@ -1,0 +1,17 @@
+id: neons-and-nylons
+title: Neons And Nylons
+artist: Red Steagall
+composers:
+- Glenn Sutton and Red Steagall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: neonsandnylonslyricschords.pro
+    imported_at: '2026-01-02'

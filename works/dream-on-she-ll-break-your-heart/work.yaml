@@ -1,0 +1,17 @@
+id: dream-on-she-ll-break-your-heart
+title: Dream On (She'll Break Your Heart)
+artist: Jim Ed Brown with Maxine and Bonnie
+composers:
+- Billy Sherrill and Kelso Herston
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dreamonshellbreakyourheartlyricschords.pro
+    imported_at: '2026-01-02'

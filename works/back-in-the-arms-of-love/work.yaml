@@ -1,0 +1,17 @@
+id: back-in-the-arms-of-love
+title: Back in the Arms of Love
+artist: Jack Greene
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backinthearmsoflovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: years-after-you
+title: Years After You
+artist: John Conlee
+composers:
+- Thom Schuyler
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yearsafteryoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: shadows-of-love
+title: Shadows Of Love
+artist: Tommy Overstreet
+composers:
+- Wayland Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shadowsoflovelyricschords.pro
+    imported_at: '2026-01-02'

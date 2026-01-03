@@ -1,0 +1,15 @@
+id: don-t-let-true-love-slip-away
+title: Don't Let True Love Slip Away
+artist: Tony Booth
+composers:
+- Buck Owens
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontlettrueloveslipawaylyricschords.pro
+    imported_at: '2026-01-02'

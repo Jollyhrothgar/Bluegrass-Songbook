@@ -1,0 +1,17 @@
+id: i-ve-waited-as-long-as-i-can
+title: I've Waited As Long As I Can
+artist: Tony Rice
+composers:
+- Hylo Brown
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivewaitedaslongasicanlyricschords.pro
+    imported_at: '2026-01-02'

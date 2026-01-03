@@ -1,0 +1,19 @@
+id: smile-at-me-again
+title: Smile At Me Again
+artist: Kris Kristofferson
+composers:
+- Kris Kristofferson and Stephen Bruton
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: smileatmeagainlyricschords.pro
+    imported_at: '2026-01-02'

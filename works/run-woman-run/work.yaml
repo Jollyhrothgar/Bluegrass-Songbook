@@ -1,0 +1,17 @@
+id: run-woman-run
+title: Run Woman Run
+artist: Tammy Wynette
+composers:
+- Ann Booth, Duke Goff, Dan Hoffman
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: runwomanrunlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: got-you-on-my-mind-1
+title: Got You On My Mind
+artist: Hawkshaw Hawkins
+composers:
+- Allee Willis, David Lasley, Howard Biggs
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gotyouonmymindlyricschords.pro
+    imported_at: '2026-01-02'

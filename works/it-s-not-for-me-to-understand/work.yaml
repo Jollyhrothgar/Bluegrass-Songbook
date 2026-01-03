@@ -1,0 +1,18 @@
+id: it-s-not-for-me-to-understand
+title: It's Not For Me To Understand
+artist: Willie Nelson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsnotformetounderstandlyricsandchords.pro
+    imported_at: '2026-01-02'

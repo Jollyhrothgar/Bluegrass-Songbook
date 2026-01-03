@@ -1,0 +1,15 @@
+id: i-guess-you-had-to-be-there
+title: I Guess You Had To Be There
+artist: Gene Watson
+composers:
+- Dave Lindsey and Edwin Rowell
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iguessyouhadtobetherelyricsandchords.pro
+    imported_at: '2026-01-02'

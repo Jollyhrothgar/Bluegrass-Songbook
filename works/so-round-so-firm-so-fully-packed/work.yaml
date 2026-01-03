@@ -1,0 +1,19 @@
+id: so-round-so-firm-so-fully-packed
+title: So Round So Firm So Fully Packed
+artist: Ernest Tubb
+composers:
+- Merle Travis, Cliffie Stone, Eddie Kirk
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: soroundsofirmsofullypackedlyricschords.pro
+    imported_at: '2026-01-02'

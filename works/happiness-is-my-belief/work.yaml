@@ -1,0 +1,17 @@
+id: happiness-is-my-belief
+title: Happiness Is My Belief
+artist: Bob Luman
+composers:
+- Jean Chapel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: happinessismybelieflyricschords.pro
+    imported_at: '2026-01-02'

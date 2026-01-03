@@ -1,0 +1,17 @@
+id: red-white-and-blue-christmas
+title: Red White And Blue Christmas
+artist: Jack Greene & Jeannie Seely
+composers:
+- Jimmy Bilbrey, Candi Carpenter, Mark H. Houser
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: redwhiteandblueChristmaslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: i-ll-leave-the-bottle-on-the-bar
+title: I'll Leave The Bottle On The Bar
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illleavethebottleonthebarlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: there-will-always-be-honky-tonks-in-texas
+title: There Will Always Be Honky Tonks In Texas
+artist: Darrell McCall
+composers:
+- Bobby Bond and Conrad Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therewillalwaysbehonkytonksintexaslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: when-you-fall-as-hard-as-i-did
+title: When You Fall As Hard As I Did
+artist: Billy Walker
+composers:
+- Ricci Mareno and Gordon Galbraith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyoufallashardasididlyricschords.pro
+    imported_at: '2026-01-02'

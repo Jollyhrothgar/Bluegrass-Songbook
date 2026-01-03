@@ -1,0 +1,15 @@
+id: what-do-you-know-about-heartaches
+title: What Do You Know About Heartaches
+artist: Darrell McCall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatdoyouknowaboutheartacheslyricschords.pro
+    imported_at: '2026-01-02'

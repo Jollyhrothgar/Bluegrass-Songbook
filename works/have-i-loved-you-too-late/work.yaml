@@ -1,0 +1,18 @@
+id: have-i-loved-you-too-late
+title: Have I Loved You Too Late
+artist: Rhonda Vincent
+composers:
+- Randall Hilton
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveilovedyoutoolatelyricschords.pro
+    imported_at: '2026-01-02'

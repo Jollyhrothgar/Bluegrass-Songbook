@@ -1,0 +1,19 @@
+id: drink-up-and-go-home
+title: Drink Up And Go Home
+artist: Carl Perkins
+composers:
+- Johnny Bond and Joe Maphis
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drinkupandgohomelyricschords.pro
+    imported_at: '2026-01-02'

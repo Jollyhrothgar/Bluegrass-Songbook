@@ -1,0 +1,22 @@
+id: doing-my-time-1
+title: Doing My Time
+artist: Johnny Cash
+composers:
+- Jimmie Skinner
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doingmytimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: take-me-home-country-roads
+title: Take Me Home Country Roads
+artist: John Denver
+default_key: G
+tags:
+- Folk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemehomecountryroadslyricschords.pro
+    imported_at: '2026-01-02'

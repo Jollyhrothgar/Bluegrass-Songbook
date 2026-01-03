@@ -1,0 +1,17 @@
+id: you-always-come-back-to-hurting-me
+title: You Always Come Back to Hurting Me
+artist: Johnny Rodriguez
+composers:
+- Tom T. Hall and Johnny Rodriguez
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youalwayscomebacktohurtingmelyricschords.pro
+    imported_at: '2026-01-02'

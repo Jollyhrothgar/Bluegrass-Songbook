@@ -1,0 +1,15 @@
+id: whiskey-chasin
+title: Whiskey Chasin'
+artist: Joe Stampley
+composers:
+- Buddy Cannon
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whiskeychasinlyricschords.pro
+    imported_at: '2026-01-02'

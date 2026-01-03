@@ -1,0 +1,17 @@
+id: brown-paper-bag
+title: Brown Paper Bag
+artist: Tammy Wynette
+composers:
+- Larry Gatlin
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brownpaperbaglyricschords.pro
+    imported_at: '2026-01-02'

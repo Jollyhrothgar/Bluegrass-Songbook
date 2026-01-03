@@ -1,0 +1,15 @@
+id: speaking-of-the-angel
+title: Speaking Of The Angel
+artist: Gene Watson
+composers:
+- Shawn Camp and Jim Rushing
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: speakingoftheangellyricschords.pro
+    imported_at: '2026-01-02'

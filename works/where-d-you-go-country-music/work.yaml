@@ -1,0 +1,15 @@
+id: where-d-you-go-country-music
+title: Where'd You Go Country Music
+artist: Jarrod Birmingham
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheredyougocountrymusiclyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: even-after-everything-she-s-done
+title: Even After Everything She's Done
+artist: Charlie Pride
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: evenaftereverythingshesdonelyricschords.pro
+    imported_at: '2026-01-02'

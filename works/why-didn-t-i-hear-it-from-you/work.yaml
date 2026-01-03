@@ -1,0 +1,15 @@
+id: why-didn-t-i-hear-it-from-you
+title: Why Didn't I Hear It From You
+artist: Hawkshaw Hawkins
+composers:
+- Shorty Long and Dick Wentzel
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydidntihearitfromyoulyricschords.pro
+    imported_at: '2026-01-02'

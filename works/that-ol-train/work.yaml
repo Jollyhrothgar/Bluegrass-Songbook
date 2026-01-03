@@ -1,0 +1,17 @@
+id: that-ol-train
+title: That Ol' Train
+artist: Del McCoury
+composers:
+- Ronny Scaife and Alan Rhody
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatoltrainlyricschords.pro
+    imported_at: '2026-01-02'

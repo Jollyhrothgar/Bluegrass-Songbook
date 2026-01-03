@@ -1,0 +1,17 @@
+id: a-memory-away
+title: A Memory Away
+artist: Gene Watson
+composers:
+- Warren Robb and David Kirby
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amemoryawaylyricschords.pro
+    imported_at: '2026-01-02'

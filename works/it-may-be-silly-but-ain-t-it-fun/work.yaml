@@ -1,0 +1,15 @@
+id: it-may-be-silly-but-ain-t-it-fun
+title: It May Be Silly But Ain't It Fun
+artist: Little Jimmy Dickens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itmaybesillybutaintitfunlyricschords.pro
+    imported_at: '2026-01-02'

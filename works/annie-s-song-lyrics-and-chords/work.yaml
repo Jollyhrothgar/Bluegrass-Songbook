@@ -1,0 +1,17 @@
+id: annie-s-song-lyrics-and-chords
+title: Annie's Song Lyrics and Chords
+artist: John Denver
+default_key: C
+tags:
+- Folk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anniessonglyricsandchords.pro
+    imported_at: '2026-01-02'

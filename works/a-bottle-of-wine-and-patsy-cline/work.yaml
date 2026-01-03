@@ -1,0 +1,17 @@
+id: a-bottle-of-wine-and-patsy-cline
+title: A Bottle Of Wine And Patsy Cline
+artist: Marsha Thornton
+composers:
+- Melinda Anne Gravelle and Tommy Rocco
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: abottleofwineandpatsyclinelyricschords.pro
+    imported_at: '2026-01-02'

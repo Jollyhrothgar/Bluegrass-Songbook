@@ -1,0 +1,18 @@
+id: will-your-lawyer-talk-to-god
+title: Will Your Lawyer Talk To God
+artist: Kitty Wells
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willyourlawyertalktoGodlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: without-you-there-s-a-sadness-in-my-song
+title: Without You There's A Sadness In My Song
+artist: Vern Gosdin
+composers:
+- Cathy Gosdin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withoutyoutheresasadnessinmysonglyricschords.pro
+    imported_at: '2026-01-02'

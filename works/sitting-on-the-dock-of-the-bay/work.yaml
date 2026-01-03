@@ -1,0 +1,15 @@
+id: sitting-on-the-dock-of-the-bay
+title: Sitting On The Dock Of The Bay
+artist: Glen Campbell
+composers:
+- Otis Redding and Steve Cropper
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sittingonthedockofthebaylyricschords.pro
+    imported_at: '2026-01-02'

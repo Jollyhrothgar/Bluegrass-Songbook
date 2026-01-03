@@ -1,0 +1,17 @@
+id: anyway-i-can
+title: Anyway I Can
+artist: The Bellamy Brothers
+composers:
+- David Bellamy, Howard Bellamy, Donald Alan Schlitz
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anywayicanlyricschords.pro
+    imported_at: '2026-01-02'

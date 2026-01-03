@@ -1,0 +1,17 @@
+id: the-minute-men-are-turning-in-their-graves
+title: The Minute Men (Are Turning In Their Graves)
+artist: Stonewall Jackson
+composers:
+- Harland Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theminutemenlyricschords.pro
+    imported_at: '2026-01-02'

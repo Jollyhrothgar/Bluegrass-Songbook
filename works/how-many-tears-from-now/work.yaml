@@ -1,0 +1,15 @@
+id: how-many-tears-from-now
+title: How Many Tears From Now
+artist: Jim Reeves
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howmanytearsfromnowlyricschords.pro
+    imported_at: '2026-01-02'

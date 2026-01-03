@@ -1,0 +1,17 @@
+id: mama-s-hands
+title: Mama's Hands
+artist: George Jones
+composers:
+- Larry Kingston and Frank Dycus
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mamashandslyricschords.pro
+    imported_at: '2026-01-02'

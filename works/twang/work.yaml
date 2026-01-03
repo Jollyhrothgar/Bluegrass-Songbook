@@ -1,0 +1,19 @@
+id: twang
+title: Twang
+artist: George Strait
+composers:
+- Jim Lauderdale, Kendell Wayne Marvel, Jimmy Ritchey
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twanglyricschords.pro
+    imported_at: '2026-01-02'

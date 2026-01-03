@@ -1,0 +1,18 @@
+id: it-meant-goodbye-to-me-when-you-said-hello-to-him
+title: It Meant Goodbye To Me When You Said Hello To Him
+artist: Merle Haggard
+composers:
+- Lefty Frizzell and Abe Mulkey
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itmeantgoodbyetomewhenyousaidhellotohimlyricschords.pro
+    imported_at: '2026-01-02'

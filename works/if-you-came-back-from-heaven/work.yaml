@@ -1,0 +1,17 @@
+id: if-you-came-back-from-heaven
+title: If You Came Back From Heaven
+artist: Lorrie Morgan
+composers:
+- Richard Landis and Lorrie Morgan
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoucamebackfromheavenlyricschords.pro
+    imported_at: '2026-01-02'

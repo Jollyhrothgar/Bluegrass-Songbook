@@ -1,0 +1,17 @@
+id: frisco-line
+title: Frisco Line
+artist: George Morgan
+composers:
+- Dexter Shaffer and Robert Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: friscolinelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: don-t-break-me-easy
+title: Don't Break Me Easy
+artist: Don Gibson
+composers:
+- Max Worley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontbreakmeeasylyricschords.pro
+    imported_at: '2026-01-02'

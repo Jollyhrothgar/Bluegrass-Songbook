@@ -1,0 +1,17 @@
+id: rock-my-cradle-once-again
+title: Rock My Cradle Once Again
+artist: Hank Williams Sr.
+composers:
+- John Bond and Billy Folger
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockmycradleonceagainlyricschords.pro
+    imported_at: '2026-01-02'

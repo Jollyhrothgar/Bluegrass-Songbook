@@ -1,0 +1,19 @@
+id: i-can-t-keep-my-hands-off-of-you
+title: I Can't Keep My Hands Off Of You
+artist: Waylon Jennings
+composers:
+- Bobby Borchers and Mack Vickery
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantkeepmyhandsoffofyoulyricschords.pro
+    imported_at: '2026-01-02'

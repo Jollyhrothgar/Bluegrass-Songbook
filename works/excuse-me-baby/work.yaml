@@ -1,0 +1,15 @@
+id: excuse-me-baby
+title: Excuse Me Baby
+artist: Ricky Nelson
+composers:
+- Dorsey Burnette and Joe Osborn
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: excusemebabylyricschords.pro
+    imported_at: '2026-01-02'

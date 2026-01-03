@@ -1,0 +1,17 @@
+id: speak-of-the-devil
+title: Speak Of The Devil
+artist: Pirates Of The Mississippi
+composers:
+- Richard Alves, Danny Bear Mayo, Bill McCorvey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: speakofthedevillyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: one-more-mountain-to-climb
+title: One More Mountain To Climb
+artist: Freddie Hart
+composers:
+- Freddie Hart and David Ingles
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemoremountaintoclimblyricschords.pro
+    imported_at: '2026-01-02'

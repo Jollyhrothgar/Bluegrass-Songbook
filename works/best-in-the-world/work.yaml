@@ -1,0 +1,18 @@
+id: best-in-the-world
+title: Best In The World
+artist: Charley Pride
+composers:
+- Ben Peters
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bestintheworldlyricschords.pro
+    imported_at: '2026-01-02'

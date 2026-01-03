@@ -1,0 +1,17 @@
+id: don-t-take-advantage-of-me
+title: Don't Take Advantage Of Me
+artist: Jean Shepard
+composers:
+- Bob Morris and Bonnie Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: donttakeadvantageofmelyricschords.pro
+    imported_at: '2026-01-02'

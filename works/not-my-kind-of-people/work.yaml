@@ -1,0 +1,17 @@
+id: not-my-kind-of-people
+title: Not My Kind Of People
+artist: Stonewall Jackson
+composers:
+- Hugh X. Lewis and Benny Joy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notmykindofpeoplelyricschords.pro
+    imported_at: '2026-01-02'

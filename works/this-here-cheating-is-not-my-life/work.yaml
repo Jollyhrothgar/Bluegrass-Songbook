@@ -1,0 +1,17 @@
+id: this-here-cheating-is-not-my-life
+title: This Here Cheating Is Not My Life
+artist: Leonard Berg and Julie Leekley
+composers:
+- Leonard Berg
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisherecheatingisnotmylifelyricschords.pro
+    imported_at: '2026-01-02'

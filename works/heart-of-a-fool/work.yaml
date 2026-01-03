@@ -1,0 +1,17 @@
+id: heart-of-a-fool
+title: Heart Of A Fool
+artist: Carl Smith
+composers:
+- Wayne P. Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartofafoollyricschords.pro
+    imported_at: '2026-01-02'

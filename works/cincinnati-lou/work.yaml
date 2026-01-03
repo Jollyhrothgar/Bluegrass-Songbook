@@ -1,0 +1,18 @@
+id: cincinnati-lou
+title: Cincinnati Lou
+artist: Hank Thompson
+composers:
+- Merle Travis and Shug Fisher
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cincinnatiloulyricschords.pro
+    imported_at: '2026-01-02'

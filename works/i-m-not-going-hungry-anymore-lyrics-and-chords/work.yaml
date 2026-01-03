@@ -1,0 +1,19 @@
+id: i-m-not-going-hungry-anymore-lyrics-and-chords
+title: I'm Not Going Hungry Anymore Lyrics and Chords
+artist: Charlie Rich
+composers:
+- Freddie Hart
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotgoinghungryanymorelyricschords.pro
+    imported_at: '2026-01-02'

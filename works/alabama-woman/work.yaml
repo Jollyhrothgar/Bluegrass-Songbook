@@ -1,0 +1,15 @@
+id: alabama-woman
+title: Alabama Woman
+artist: Red Steagall
+composers:
+- Donnie Lanier
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alabamawomanlyricschords.pro
+    imported_at: '2026-01-02'

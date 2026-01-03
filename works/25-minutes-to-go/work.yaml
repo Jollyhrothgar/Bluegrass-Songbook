@@ -1,0 +1,22 @@
+id: 25-minutes-to-go
+title: 25 Minutes To Go
+artist: Johnny Cash
+composers:
+- Shel Silverstein
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 25minutestogolyricschords.pro
+    imported_at: '2026-01-02'

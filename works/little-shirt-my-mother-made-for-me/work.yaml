@@ -1,0 +1,18 @@
+id: little-shirt-my-mother-made-for-me
+title: Little Shirt My Mother Made For Me
+artist: Marty Robbins
+composers:
+- Harry Wincott
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littleshirtmymothermadeformelyricschords.pro
+    imported_at: '2026-01-02'

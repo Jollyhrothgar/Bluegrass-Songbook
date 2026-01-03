@@ -1,0 +1,17 @@
+id: catch-the-wind
+title: Catch The Wind
+artist: Glen Campbell
+composers:
+- Donovan Phillips Leitch
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: catchthewindlyricschords.pro
+    imported_at: '2026-01-02'

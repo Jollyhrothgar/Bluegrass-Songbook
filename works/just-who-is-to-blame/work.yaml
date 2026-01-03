@@ -1,0 +1,18 @@
+id: just-who-is-to-blame
+title: Just Who Is To Blame
+artist: Jerry Lee Lewis
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justwhoistoblamelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-do-as-much-for-you-someday
+title: I'll Do As Much For You Someday
+artist: Slim Whitman
+composers:
+- Steve Nelson and Ed G. Nelson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illdoasmuchforyousomedaylyricschords.pro
+    imported_at: '2026-01-02'

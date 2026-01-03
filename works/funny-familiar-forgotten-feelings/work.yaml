@@ -1,0 +1,15 @@
+id: funny-familiar-forgotten-feelings
+title: Funny Familiar Forgotten Feelings
+artist: Don Gibson
+composers:
+- Mickey Newbury
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: funnyfamiliarforgottenfeelingslyricschords.pro
+    imported_at: '2026-01-02'

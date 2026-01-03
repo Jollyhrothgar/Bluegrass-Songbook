@@ -1,0 +1,21 @@
+id: blue-river-1
+title: Blue River
+artist: Elvis Presley
+composers:
+- Fred Tobias and Paul Evans
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blueriverlyricschords.pro
+    imported_at: '2026-01-02'

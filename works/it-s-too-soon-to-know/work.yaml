@@ -1,0 +1,18 @@
+id: it-s-too-soon-to-know
+title: It's Too Soon To Know
+artist: Roy Orbison
+composers:
+- Don Gibson
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itstoosoontoknowlyricschords.pro
+    imported_at: '2026-01-02'

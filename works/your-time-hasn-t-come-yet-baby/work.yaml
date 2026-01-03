@@ -1,0 +1,21 @@
+id: your-time-hasn-t-come-yet-baby
+title: Your Time Hasn't Come Yet Baby
+artist: Elvis Presley
+composers:
+- Jeol Hirschhorn and Al Kasha
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourtimehasntcomeyetbabylyricschords.pro
+    imported_at: '2026-01-02'

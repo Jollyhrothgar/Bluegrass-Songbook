@@ -1,0 +1,19 @@
+id: miles-in-memories
+title: Miles In Memories
+artist: Ernest Tubb
+composers:
+- Ernest Tubb and Carl Story
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: milesinmemorieslyricschords.pro
+    imported_at: '2026-01-02'

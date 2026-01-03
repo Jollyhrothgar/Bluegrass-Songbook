@@ -1,0 +1,17 @@
+id: did-you-think-to-pray
+title: Did You Think To Pray
+artist: Charlie Pride
+composers:
+- Mary Kidder, William Perkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didyouthinktopraylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: all-together-now
+title: All Together Now
+artist: Stonewall Jackson
+composers:
+- Don Wayne
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alltogethernowlyricschords.pro
+    imported_at: '2026-01-02'

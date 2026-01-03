@@ -1,0 +1,15 @@
+id: i-can-t-go-on-living-this-way
+title: I Can't Go On Living This Way
+artist: Stonewall Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantgoonlivingthiswaylyricschords.pro
+    imported_at: '2026-01-02'

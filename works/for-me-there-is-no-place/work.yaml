@@ -1,0 +1,17 @@
+id: for-me-there-is-no-place
+title: For Me There Is No Place
+artist: Hank Williams Jr.
+composers:
+- Hank Williams Sr. and Hank Williams Jr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: formethereisnoplacelyricschords.pro
+    imported_at: '2026-01-02'

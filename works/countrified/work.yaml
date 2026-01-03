@@ -1,0 +1,17 @@
+id: countrified
+title: Countrified
+artist: John Anderson
+composers:
+- Tom Lazaros
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countrifiedlyricschords.pro
+    imported_at: '2026-01-02'

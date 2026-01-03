@@ -1,0 +1,15 @@
+id: this-time-i-almost-made-it
+title: This Time I Almost Made It
+artist: Barbara Mandrell
+composers:
+- Billy Sherrill
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thistimeialmostmadeitlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: have-a-nice-rest-of-your-life
+title: Have A Nice Rest Of Your Life
+artist: Randy Travis
+composers:
+- Verlon Thompson and Mark D. Sanders
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveanicerestofyourlifelyricschords.pro
+    imported_at: '2026-01-02'

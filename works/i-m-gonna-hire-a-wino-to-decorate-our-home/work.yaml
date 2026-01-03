@@ -1,0 +1,15 @@
+id: i-m-gonna-hire-a-wino-to-decorate-our-home
+title: I'm Gonna Hire A Wino To Decorate Our Home
+artist: David Frizzell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnahireawinotodecorateourhomelyricschords.pro
+    imported_at: '2026-01-02'

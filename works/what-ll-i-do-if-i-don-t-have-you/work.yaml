@@ -1,0 +1,17 @@
+id: what-ll-i-do-if-i-don-t-have-you
+title: What'll I Do If I Don't Have You
+artist: David Ball
+composers:
+- Russell Brown and David Ball
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatllidoifidonthaveyoulyricschords.pro
+    imported_at: '2026-01-02'

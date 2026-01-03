@@ -1,0 +1,18 @@
+id: not-enough-indians
+title: Not Enough Indians
+artist: Dean Martin
+composers:
+- Baker Knight
+default_key: C
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notenoughindianslyricschords.pro
+    imported_at: '2026-01-02'

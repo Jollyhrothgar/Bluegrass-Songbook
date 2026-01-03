@@ -1,0 +1,17 @@
+id: leave-well-enough-alone
+title: Leave Well Enough Alone
+artist: Keith Whitley
+composers:
+- Bill Caswell and Keith Whitley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leavewellenoughalonelyricschords.pro
+    imported_at: '2026-01-02'

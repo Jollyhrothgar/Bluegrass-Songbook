@@ -1,0 +1,18 @@
+id: i-d-just-as-soon-go
+title: I'd Just As Soon Go
+artist: George Strait
+composers:
+- Dean Dillon and Aaron Baker
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idjustassoongolyricschords.pro
+    imported_at: '2026-01-02'

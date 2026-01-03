@@ -1,0 +1,19 @@
+id: rambling-rose
+title: Rambling Rose
+artist: Nat King Cole
+composers:
+- Noel Sherman and Joe Sherman
+default_key: G
+tags:
+- Jazz
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ramblingroselyricschords.pro
+    imported_at: '2026-01-02'

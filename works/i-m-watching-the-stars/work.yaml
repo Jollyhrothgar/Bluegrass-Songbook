@@ -1,0 +1,15 @@
+id: i-m-watching-the-stars
+title: I'm Watching The Stars
+artist: Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imwatchingthestarslyricschords.pro
+    imported_at: '2026-01-02'

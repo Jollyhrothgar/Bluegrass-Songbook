@@ -1,0 +1,17 @@
+id: i-can-t-tell-my-broken-heart-a-lie
+title: I Can't Tell My Broken Heart A Lie
+artist: Hawkshaw Hawkins
+composers:
+- Bill Rowley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanttellmybrokenheartalielyricschords.pro
+    imported_at: '2026-01-02'

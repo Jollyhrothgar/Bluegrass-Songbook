@@ -1,0 +1,20 @@
+id: the-fields-of-home
+title: The Fields Of Home
+artist: Ricky Skaggs
+composers:
+- Larry Cordle and Larry Shell
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thefieldsofhomelyricschords.pro
+    imported_at: '2026-01-02'

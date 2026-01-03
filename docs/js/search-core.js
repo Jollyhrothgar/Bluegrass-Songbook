@@ -482,6 +482,23 @@ export function renderResults(songs, query) {
             return `<span class="tag-badge tag-${category}" data-tag="${tag}">${formatTagName(tag)}</span>`;
         }).join('');
 
+        // Tablature/notation instrument tags (shown as tag badges)
+        const tabParts = song.tablature_parts || [];
+        const hasAbc = song.content && song.content.includes('{start_of_abc}');
+
+        // Collect instrument tags from tabs and ABC
+        const instrumentTags = new Set();
+        tabParts.forEach(p => {
+            if (p.instrument) instrumentTags.add(p.instrument.toLowerCase());
+        });
+        if (hasAbc) instrumentTags.add('fiddle'); // ABC assumed to be fiddle
+
+        // Create instrument badges
+        const instrumentBadges = Array.from(instrumentTags).map(inst => {
+            const label = inst.charAt(0).toUpperCase() + inst.slice(1);
+            return `<span class="tag-badge tag-instrument" data-tag="${inst}" title="Has ${label} tab/notation">${label}</span>`;
+        }).join('');
+
         // Add drag handle and draggable for list view
         const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
         const draggableAttr = isDraggable ? `draggable="true" data-index="${index}"` : '';
@@ -490,7 +507,7 @@ export function renderResults(songs, query) {
             <div class="result-item ${favClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
                 ${dragHandle}
                 <div class="result-main">
-                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}</div>
+                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}</div>
                     <div class="result-artist">${highlightMatch(song.artist || 'Unknown artist', query)}</div>
                     ${tagBadges ? `<div class="result-tags">${tagBadges}</div>` : ''}
                     <div class="result-preview">${song.first_line || ''}</div>

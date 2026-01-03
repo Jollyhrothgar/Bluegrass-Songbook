@@ -1,0 +1,17 @@
+id: i-ve-gotta-walk-alone
+title: I've Gotta Walk Alone
+artist: Bob Wills
+composers:
+- John Hathcock and Weldon Allard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegottawalkalonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: now-the-day-is-over
+title: Now The Day Is Over
+artist: Ray Price
+composers:
+- Sabine Baring, John E. Gould, J. Barnby
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nowthedayisoverlyricschords.pro
+    imported_at: '2026-01-02'

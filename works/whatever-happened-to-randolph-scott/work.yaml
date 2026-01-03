@@ -1,0 +1,15 @@
+id: whatever-happened-to-randolph-scott
+title: Whatever Happened To Randolph Scott
+artist: Statler Brothers
+composers:
+- Don Reid and Harold Reid
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whateverhappenedtorandolphscottlyricschords.pro
+    imported_at: '2026-01-02'

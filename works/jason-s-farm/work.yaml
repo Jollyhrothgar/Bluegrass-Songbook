@@ -1,0 +1,17 @@
+id: jason-s-farm
+title: Jason's Farm
+artist: Cal Smith
+composers:
+- John Adrian
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jasonsfarmlyricschords.pro
+    imported_at: '2026-01-02'

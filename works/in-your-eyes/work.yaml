@@ -1,0 +1,17 @@
+id: in-your-eyes
+title: In Your Eyes
+artist: George Morgan
+composers:
+- Jimmy Fox
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inyoureyeslyricschords.pro
+    imported_at: '2026-01-02'

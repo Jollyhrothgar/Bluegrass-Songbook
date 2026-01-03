@@ -1,0 +1,18 @@
+id: when-it-s-spring-time-in-alaska
+title: When it's Spring Time in Alaska
+artist: Johnny Horton
+composers:
+- Tillman Franks
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenitsspringtimeinalaskalyricschords.pro
+    imported_at: '2026-01-02'

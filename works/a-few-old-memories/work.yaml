@@ -1,0 +1,17 @@
+id: a-few-old-memories
+title: A Few Old Memories
+artist: Statler Brothers
+composers:
+- Don S. Reid and Harold W. Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afewoldmemorieslyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: we-can-t-love-like-this-anymore
+title: We Can't Love Like This Anymore
+artist: Alabama
+composers:
+- John Jarrard and Wendell Mobley
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wecantlovelikethisanymorelyricschords.pro
+    imported_at: '2026-01-02'

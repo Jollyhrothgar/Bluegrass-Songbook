@@ -1,0 +1,17 @@
+id: mississippi-delta-blues
+title: Mississippi Delta Blues
+artist: Bob Wills
+composers:
+- Jimmie Rodgers and Jack Neville
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mississippideltablueslyricschords.pro
+    imported_at: '2026-01-02'

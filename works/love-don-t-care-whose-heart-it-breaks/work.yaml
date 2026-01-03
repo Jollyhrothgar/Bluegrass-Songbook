@@ -1,0 +1,18 @@
+id: love-don-t-care-whose-heart-it-breaks
+title: Love Don't Care (Whose Heart It Breaks)
+artist: Earl Thomas Conley
+composers:
+- Randy Scruggs and Earl T. Conley
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovedontcarewhoseheartitbreakslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: revenge-of-a-middle-aged-woman
+title: Revenge Of A Middle Aged Woman
+artist: Tracy Byrd
+composers:
+- Dave Berg, Annie Tate, Sam Tate
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: revengeofamiddleagedwomanlyricschords.pro
+    imported_at: '2026-01-02'

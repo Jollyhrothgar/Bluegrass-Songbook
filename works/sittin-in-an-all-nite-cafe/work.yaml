@@ -1,0 +1,17 @@
+id: sittin-in-an-all-nite-cafe
+title: Sittin' In An All Nite Cafe
+artist: Red Steagall
+composers:
+- Jim Glaser
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sittininanallnitecafelyricschords.pro
+    imported_at: '2026-01-02'

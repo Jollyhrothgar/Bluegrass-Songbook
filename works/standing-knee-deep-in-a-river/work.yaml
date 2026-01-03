@@ -1,0 +1,17 @@
+id: standing-knee-deep-in-a-river
+title: Standing Knee Deep In A River
+artist: Don Williams
+composers:
+- Bob McDill, Dickey Lee, Bucky Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: standingkneedeepinariverlyricschords.pro
+    imported_at: '2026-01-02'

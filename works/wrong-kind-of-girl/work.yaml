@@ -1,0 +1,18 @@
+id: wrong-kind-of-girl
+title: Wrong Kind Of Girl
+artist: Wanda Jackson
+composers:
+- Bobbie Carroll
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wrongkindofgirllyricschords.pro
+    imported_at: '2026-01-02'

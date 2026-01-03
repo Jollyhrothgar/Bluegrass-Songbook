@@ -1,0 +1,18 @@
+id: she-means-nothing-to-me-now
+title: She Means Nothing To Me Now
+artist: Marty Robbins
+composers:
+- Ray Griff
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shemeansnothingtomenowlyricschords.pro
+    imported_at: '2026-01-02'

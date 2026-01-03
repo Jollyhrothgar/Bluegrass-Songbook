@@ -1,0 +1,15 @@
+id: it-just-helps-to-keep-the-hurt-from-hurtin
+title: It Just Helps To Keep The Hurt From Hurtin'
+artist: Moe Bandy
+composers:
+- Cindy Walker
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itjusthelpstokeepthehurtfromhurtinlyricschords.pro
+    imported_at: '2026-01-02'

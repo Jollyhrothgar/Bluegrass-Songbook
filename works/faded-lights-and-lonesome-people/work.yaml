@@ -1,0 +1,17 @@
+id: faded-lights-and-lonesome-people
+title: Faded Lights And Lonesome People
+artist: Billy Walker
+composers:
+- Wynn Stewart and Wally Lewis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fadedlightsandlonesomepeoplelyricschords.pro
+    imported_at: '2026-01-02'

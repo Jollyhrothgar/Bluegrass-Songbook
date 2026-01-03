@@ -1,0 +1,19 @@
+id: taking-it-easy-here
+title: Taking It Easy Here
+artist: Ernest Tubb
+composers:
+- Ernie Lee
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takingiteasyherelyricschords.pro
+    imported_at: '2026-01-02'

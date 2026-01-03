@@ -1,0 +1,17 @@
+id: the-girl-from-the-canyon
+title: The Girl From The Canyon
+artist: Keith Whitley
+composers:
+- Jonathan Edwards
+default_key: F
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegirlfromthecanyonlyricschords.pro
+    imported_at: '2026-01-02'

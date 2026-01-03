@@ -1,0 +1,18 @@
+id: keep-on-telling-me-lies
+title: Keep On Telling Me Lies
+artist: Mickey Gilley
+composers:
+- Roger Murrah and Tim Lewis
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keepontellingmelieslyricschords.pro
+    imported_at: '2026-01-02'

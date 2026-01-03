@@ -1,0 +1,15 @@
+id: now-and-then
+title: Now And Then
+artist: Don Williams
+composers:
+- Wayland Holyfield
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nowandthenlyricschords.pro
+    imported_at: '2026-01-02'

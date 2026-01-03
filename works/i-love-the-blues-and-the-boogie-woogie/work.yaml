@@ -1,0 +1,17 @@
+id: i-love-the-blues-and-the-boogie-woogie
+title: I Love The Blues And The Boogie Woogie
+artist: Billy Crash Craddock
+composers:
+- Darrell Statler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovethebluesandtheboogiewoogielyricschords.pro
+    imported_at: '2026-01-02'

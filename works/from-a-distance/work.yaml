@@ -1,0 +1,15 @@
+id: from-a-distance
+title: From A Distance
+artist: Ricky Nelson
+composers:
+- Johnny Bachelor
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromadistancelyricsandchords.pro
+    imported_at: '2026-01-02'

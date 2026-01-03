@@ -1,0 +1,17 @@
+id: gonna-lay-me-down-beside-my-memories
+title: Gonna Lay Me Down Beside My Memories
+artist: Crystal Gayle
+composers:
+- Ray Griff
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnalaymedownbesidemymemorieslyricschords.pro
+    imported_at: '2026-01-02'

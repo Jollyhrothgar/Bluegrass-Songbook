@@ -1,0 +1,19 @@
+id: you-re-only-in-my-arms-to-cry-on-my-shoulder
+title: You're Only In My Arms (To Cry On My Shoulder)
+artist: Willie Nelson
+composers:
+- Ed G. Nelson, Steve Nelson, Milton Leeds
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youreonlyinmyarmstocryonmyshoulderlyricschords.pro
+    imported_at: '2026-01-02'

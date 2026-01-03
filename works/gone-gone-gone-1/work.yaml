@@ -1,0 +1,18 @@
+id: gone-gone-gone-1
+title: Gone Gone Gone
+artist: Charlie Pride
+composers:
+- Jerry Crutchfield and Buck Maxwell
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonegonegonelyricschords.pro
+    imported_at: '2026-01-02'

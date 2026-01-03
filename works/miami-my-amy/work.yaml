@@ -1,0 +1,15 @@
+id: miami-my-amy
+title: Miami My Amy
+artist: Keith Whitley
+composers:
+- Hank Cochran, Dean Dillon, Royce Porter
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: miamimyamylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: open-up-them-pearly-gates
+title: Open Up Them Pearly Gates
+artist: The Seekers
+composers:
+- Judith Mavis Edgeworth, Athol George Guy,
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: openupthempearlygateslyricschords.pro
+    imported_at: '2026-01-02'

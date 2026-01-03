@@ -1,0 +1,17 @@
+id: you-re-doing-things-to-hurt-me
+title: You're Doing Things To Hurt Me
+artist: Carl Belew
+composers:
+- Carl Belew, Tommy Blake, W.S. Stevenson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youredoingthingstohurtmelyricschords.pro
+    imported_at: '2026-01-02'

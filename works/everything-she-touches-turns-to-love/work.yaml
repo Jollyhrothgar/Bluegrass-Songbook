@@ -1,0 +1,18 @@
+id: everything-she-touches-turns-to-love
+title: Everything She Touches Turns To Love
+artist: Charley Pride
+composers:
+- Shirley Worth
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingshetouchesturnstolovelyricschords.pro
+    imported_at: '2026-01-02'

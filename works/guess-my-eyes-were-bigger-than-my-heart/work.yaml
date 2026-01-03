@@ -1,0 +1,18 @@
+id: guess-my-eyes-were-bigger-than-my-heart
+title: Guess My Eyes Were Bigger Than My Heart
+artist: Conway Twitty
+composers:
+- Liz Anderson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: guessmyeyeswerebiggerthanmyheartlyricschords.pro
+    imported_at: '2026-01-02'

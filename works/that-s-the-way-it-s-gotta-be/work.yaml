@@ -1,0 +1,17 @@
+id: that-s-the-way-it-s-gotta-be
+title: That's The Way It's Gotta Be
+artist: Faron Young
+composers:
+- Roy Drusky
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsthewayitsgottabelyricschords.pro
+    imported_at: '2026-01-02'

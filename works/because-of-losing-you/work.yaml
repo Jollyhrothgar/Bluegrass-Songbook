@@ -1,0 +1,17 @@
+id: because-of-losing-you
+title: Because Of Losing You
+artist: Bob Luman
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseoflosingyoulyricschords.pro
+    imported_at: '2026-01-02'

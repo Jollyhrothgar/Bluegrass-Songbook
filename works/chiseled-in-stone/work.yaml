@@ -1,0 +1,17 @@
+id: chiseled-in-stone
+title: Chiseled In Stone
+artist: Vern Gosdin
+composers:
+- Vernon Gosdin and Max Duane Barnes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: chiseledinstonelyricschords.pro
+    imported_at: '2026-01-02'

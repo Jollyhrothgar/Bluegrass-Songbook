@@ -1,0 +1,17 @@
+id: im-so-in-love-with-you
+title: I’m So In Love With You
+artist: Faron Young
+composers:
+- Danny Dill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsoinlovewithyoulyricschords.pro
+    imported_at: '2026-01-02'

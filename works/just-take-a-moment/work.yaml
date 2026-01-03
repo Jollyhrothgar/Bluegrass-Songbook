@@ -1,0 +1,17 @@
+id: just-take-a-moment
+title: Just Take A Moment
+artist: Ricky Nelson
+composers:
+- Jerry Fuller and Cissi Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justtakeamomentlyricschords.pro
+    imported_at: '2026-01-02'

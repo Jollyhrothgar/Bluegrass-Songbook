@@ -1,0 +1,15 @@
+id: you-never-cross-my-mind-1
+title: You Never Cross My Mind
+artist: Vern Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: younevercrossmymindlyricschords.pro
+    imported_at: '2026-01-02'

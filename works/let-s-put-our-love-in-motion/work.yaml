@@ -1,0 +1,17 @@
+id: let-s-put-our-love-in-motion
+title: Let's Put Our Love In Motion
+artist: Charly McClain
+composers:
+- Bob Morrison, Johnny McRae, Larry Rogers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsputourloveinmotionlyricschords.pro
+    imported_at: '2026-01-02'

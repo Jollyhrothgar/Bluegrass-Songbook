@@ -1,0 +1,19 @@
+id: hula-rock
+title: Hula Rock
+artist: Hank Snow
+composers:
+- Dusty Rose and Betty Rose
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hularocklyricschords.pro
+    imported_at: '2026-01-02'

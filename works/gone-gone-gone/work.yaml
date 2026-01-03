@@ -1,0 +1,19 @@
+id: gone-gone-gone
+title: Gone Gone Gone
+artist: The Everly Brothers
+composers:
+- Don Everly and Phil Everly
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonegonegonelyricsandchords.pro
+    imported_at: '2026-01-02'

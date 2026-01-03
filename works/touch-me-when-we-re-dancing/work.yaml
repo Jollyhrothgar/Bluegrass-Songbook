@@ -1,0 +1,15 @@
+id: touch-me-when-we-re-dancing
+title: Touch Me When We're Dancing
+artist: Alabama
+composers:
+- Jerry Wallace, Terry Skinner, Ken Bell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: touchmewhenweredancinglyricschords.pro
+    imported_at: '2026-01-02'

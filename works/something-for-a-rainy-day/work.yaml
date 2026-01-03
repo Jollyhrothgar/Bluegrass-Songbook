@@ -1,0 +1,19 @@
+id: something-for-a-rainy-day
+title: Something For A Rainy Day
+artist: Brenda Lee
+composers:
+- Ronal McCown
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingforarainydaylyricschords.pro
+    imported_at: '2026-01-02'

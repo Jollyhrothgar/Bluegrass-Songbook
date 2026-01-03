@@ -1,0 +1,17 @@
+id: i-ll-be-more-than-happy-to-set-you-free
+title: I'll Be More Than Happy To Set You Free
+artist: Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbemorethanhappytosetyoufreelyricschords.pro
+    imported_at: '2026-01-02'

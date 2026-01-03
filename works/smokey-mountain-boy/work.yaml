@@ -1,0 +1,21 @@
+id: smokey-mountain-boy
+title: Smokey Mountain Boy
+artist: Elvis Presley
+composers:
+- Victor Millrose and Lenore Rosenblatt
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: smokeymountainboylyricschords.pro
+    imported_at: '2026-01-02'

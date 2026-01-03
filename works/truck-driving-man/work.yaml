@@ -1,0 +1,17 @@
+id: truck-driving-man
+title: Truck Driving Man
+artist: Buck Owens
+composers:
+- Terry Fell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: truckdrivingmanlyricschords.pro
+    imported_at: '2026-01-02'

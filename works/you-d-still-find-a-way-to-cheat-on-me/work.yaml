@@ -1,0 +1,17 @@
+id: you-d-still-find-a-way-to-cheat-on-me
+title: You'd Still Find A Way To Cheat On Me
+artist: Jean Shepard
+composers:
+- Jack Rhodes, Billie Jo Spears, Henry Ebner
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdstillfindawaytocheatonmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: air-a-danser
+title: Air à danser
+artist: Traditional
+composers:
+- Biography:Aimé Gagnon
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

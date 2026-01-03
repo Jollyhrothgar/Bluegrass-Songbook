@@ -1,0 +1,21 @@
+id: let-s-put-love-back-to-work
+title: Let's Put Love Back To Work
+artist: Ricky Skaggs
+composers:
+- Larry Cordle and Mark Collie
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsputlovebacktoworklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-couldn-t-believe-it-was-true
+title: I Couldn't Believe it Was True
+artist: Marty Robbins
+composers:
+- Wally Fowler and Eddy Arnold
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icouldntbelieveitwastruelyricschords.pro
+    imported_at: '2026-01-02'

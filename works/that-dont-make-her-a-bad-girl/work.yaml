@@ -1,0 +1,17 @@
+id: that-dont-make-her-a-bad-girl
+title: That Don’t Make Her A Bad Girl
+artist: Charlie Walker
+composers:
+- Clyde Pitts and Van Givens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatdontmakeherabadgirllyricschords.pro
+    imported_at: '2026-01-02'

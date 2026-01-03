@@ -1,0 +1,17 @@
+id: you-can-t-break-the-chains-of-love
+title: You Can't Break The Chains Of Love
+artist: Jean Shepard
+composers:
+- Jimmy Wakely, Lew Porter, Franklin Tableporter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantbreakthechainsoflovelyricschords.pro
+    imported_at: '2026-01-02'

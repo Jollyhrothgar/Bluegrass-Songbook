@@ -1,0 +1,15 @@
+id: burning-a-hole-in-my-mind
+title: Burning A Hole In My Mind
+artist: Connie Smith
+composers:
+- Cy Coben
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burningaholeinmymindlyricschords.pro
+    imported_at: '2026-01-02'

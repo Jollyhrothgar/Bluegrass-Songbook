@@ -1,0 +1,17 @@
+id: i-just-want-somebody-to-love-me
+title: I Just Want Somebody to Love Me
+artist: Vernon Oxford
+composers:
+- Everett Corbin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustwantsomebodytolovemelyricschords.pro
+    imported_at: '2026-01-02'

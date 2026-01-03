@@ -1,0 +1,15 @@
+id: i-ll-still-be-waiting-for-you
+title: I'll Still Be Waiting For You
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illstillbewaitingforyoulyricschords.pro
+    imported_at: '2026-01-02'

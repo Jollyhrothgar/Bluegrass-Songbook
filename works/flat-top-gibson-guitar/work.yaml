@@ -1,0 +1,17 @@
+id: flat-top-gibson-guitar
+title: Flat Top Gibson Guitar
+artist: Lloyd Snow
+composers:
+- Pat Maher
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: flattopgibsonguitarlyricschords.pro
+    imported_at: '2026-01-02'

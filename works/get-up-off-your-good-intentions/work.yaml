@@ -1,0 +1,17 @@
+id: get-up-off-your-good-intentions
+title: Get Up Off Your Good Intentions
+artist: Charlie Pride
+composers:
+- Bobby David and June Dussia
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: getupoffyourgoodintentionlyricschords.pro
+    imported_at: '2026-01-02'

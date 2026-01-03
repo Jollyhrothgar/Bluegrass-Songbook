@@ -1,0 +1,17 @@
+id: free-home-demonstration-lyrics-chords
+title: Free Home Demonstration Lyrics Chords
+artist: Eddy Arnold
+composers:
+- Charles Grean and Cy Coben
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: freehomedemonstrationlyricschords.pro
+    imported_at: '2026-01-02'

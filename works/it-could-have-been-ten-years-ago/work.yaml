@@ -1,0 +1,18 @@
+id: it-could-have-been-ten-years-ago
+title: It Could Have Been Ten Years Ago
+artist: The Oak Ridge Boys
+composers:
+- Dennis Wilson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itcouldhavebeentenyearsagolyricschords.pro
+    imported_at: '2026-01-02'

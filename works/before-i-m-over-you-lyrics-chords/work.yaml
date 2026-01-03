@@ -1,0 +1,19 @@
+id: before-i-m-over-you-lyrics-chords
+title: Before I'm Over You Lyrics Chords
+artist: Loretta Lynn
+composers:
+- Betty Sue Perry
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforeimoveryoulyricschords.pro
+    imported_at: '2026-01-02'

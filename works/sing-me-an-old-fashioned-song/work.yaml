@@ -1,0 +1,17 @@
+id: sing-me-an-old-fashioned-song
+title: Sing Me An Old Fashioned Song
+artist: Jean Shepard
+composers:
+- Larry Henley and Johnny Slate
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singmeanoldfashionedsonglyricschords.pro
+    imported_at: '2026-01-02'

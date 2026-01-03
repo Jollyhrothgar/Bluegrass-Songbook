@@ -1,0 +1,17 @@
+id: peek-a-boo-waltz
+title: Peek A Boo Waltz
+artist: Redd Stewart
+composers:
+- Elizabeth Breaux, Pee Wee King, Redd Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: peekaboowaltzlyricschords.pro
+    imported_at: '2026-01-02'

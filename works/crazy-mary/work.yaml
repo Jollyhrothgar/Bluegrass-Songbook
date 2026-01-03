@@ -1,0 +1,19 @@
+id: crazy-mary
+title: Crazy Mary
+artist: David Allan Coe
+composers:
+- Michael Smith
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crazymarylyricschords.pro
+    imported_at: '2026-01-02'

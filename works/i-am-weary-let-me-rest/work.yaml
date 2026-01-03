@@ -1,0 +1,17 @@
+id: i-am-weary-let-me-rest
+title: I Am Weary Let Me Rest
+artist: The Cox Family
+composers:
+- Pete Kuykendall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iamwearyletmerestlyricschords.pro
+    imported_at: '2026-01-02'

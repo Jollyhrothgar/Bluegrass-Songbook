@@ -1,0 +1,17 @@
+id: oklahoma
+title: Oklahoma
+artist: Cal Smith
+composers:
+- Webb Pierce and Max Powell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oklahomalyricschords.pro
+    imported_at: '2026-01-02'

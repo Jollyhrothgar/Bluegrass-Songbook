@@ -1,0 +1,15 @@
+id: i-can-t-dance
+title: I Can't Dance
+artist: Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantdancelyricsandchords.pro
+    imported_at: '2026-01-02'

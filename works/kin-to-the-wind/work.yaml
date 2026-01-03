@@ -1,0 +1,18 @@
+id: kin-to-the-wind
+title: Kin To The Wind
+artist: Marty Robbins
+composers:
+- Rita Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kintothewindlyricschords.pro
+    imported_at: '2026-01-02'

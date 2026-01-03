@@ -1,0 +1,17 @@
+id: the-cold-grey-light-of-dawn
+title: The Cold Grey Light of Dawn
+artist: Johnny Bush
+composers:
+- Ivory Joe Hunter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thecoldgreylightofdawnlyricschords.pro
+    imported_at: '2026-01-02'

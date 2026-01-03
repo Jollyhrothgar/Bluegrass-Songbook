@@ -1,0 +1,17 @@
+id: nobody-but-a-fool-would-love-you
+title: Nobody But A Fool Would Love You
+artist: Connie Smith
+composers:
+- Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodybutafoolwouldloveyoulyricschords.pro
+    imported_at: '2026-01-02'

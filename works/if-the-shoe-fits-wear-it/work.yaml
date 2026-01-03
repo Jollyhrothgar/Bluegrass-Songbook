@@ -1,0 +1,17 @@
+id: if-the-shoe-fits-wear-it
+title: If The Shoe Fits Wear It
+artist: Gene Watson
+composers:
+- Ray Griff
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iftheshoefitswearitlyricschords.pro
+    imported_at: '2026-01-02'

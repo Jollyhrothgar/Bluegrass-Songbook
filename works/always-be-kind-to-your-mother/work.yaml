@@ -1,0 +1,17 @@
+id: always-be-kind-to-your-mother
+title: Always Be Kind To Your Mother
+artist: The Coon Ridge Ramblers
+composers:
+- Don Reno
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alwaysbekindtoyourmotherlyricschords.pro
+    imported_at: '2026-01-02'

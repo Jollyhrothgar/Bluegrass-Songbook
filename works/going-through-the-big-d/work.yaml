@@ -1,0 +1,18 @@
+id: going-through-the-big-d
+title: Going Through The Big D
+artist: Mark Chesnutt
+composers:
+- Ronnie Rogers, Mark Wright, Jon Wright
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goingthroughthebigdlyricschords.pro
+    imported_at: '2026-01-02'

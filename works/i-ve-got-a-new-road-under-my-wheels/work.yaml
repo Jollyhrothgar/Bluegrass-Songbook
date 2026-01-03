@@ -1,0 +1,17 @@
+id: i-ve-got-a-new-road-under-my-wheels
+title: I've Got A New Road Under My Wheels
+artist: Bob Wills
+composers:
+- Dude Rancher and Thomas E Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotanewroadundermywheelslyricschords.pro
+    imported_at: '2026-01-02'

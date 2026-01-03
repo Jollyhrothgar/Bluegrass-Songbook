@@ -1,0 +1,19 @@
+id: honky-tonk-hill
+title: Honky Tonk Hill
+artist: Lefty Frizzell
+composers:
+- A.L. Owens and Sanger D. Schafer
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkhilllyricschords.pro
+    imported_at: '2026-01-02'

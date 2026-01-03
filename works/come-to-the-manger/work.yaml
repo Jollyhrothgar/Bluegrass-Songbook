@@ -1,0 +1,17 @@
+id: come-to-the-manger
+title: Come To The Manger
+artist: Jimmie Davis
+composers:
+- Jimmie Davis and J.S. Eastman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cometothemangerlyricschords.pro
+    imported_at: '2026-01-02'

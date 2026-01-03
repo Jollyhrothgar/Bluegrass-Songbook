@@ -1,0 +1,20 @@
+id: you-helped-me-up-when-the-world-let-me-down
+title: You Helped Me Up When The World Let Me Down
+artist: Jerry Lee Lewis
+composers:
+- Clyde Pitts Jr., Carmon D. Holland, Davis Cile
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youhelpedmeupwhentheworldletmedownlyricschords.pro
+    imported_at: '2026-01-02'

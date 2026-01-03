@@ -1,0 +1,17 @@
+id: it-wouldnt-be-the-same-without-you
+title: It Wouldn’t Be the Same Without You
+artist: Ray Price
+composers:
+- Fred Rose and Jimmy Wakely
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itwouldntbethesamewithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

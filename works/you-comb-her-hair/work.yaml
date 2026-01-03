@@ -1,0 +1,17 @@
+id: you-comb-her-hair
+title: You Comb Her Hair
+artist: George Jones
+composers:
+- Harlan Howard and Hank Cochran
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcombherhairlyricschords.pro
+    imported_at: '2026-01-02'

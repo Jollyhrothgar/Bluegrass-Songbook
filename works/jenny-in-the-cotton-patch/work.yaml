@@ -1,0 +1,17 @@
+id: jenny-in-the-cotton-patch
+title: Jenny in the Cotton Patch
+artist: Traditional
+composers:
+- Biography:Will Phipps, Biography:Will Davenport, Clyde Davenport
+default_key: G
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: there-ll-come-a-time
+title: There'll Come A Time
+artist: Webb Pierce
+composers:
+- Audrey Grisham and Sylvia Fisher
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therellcomeatimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: i-don-t-care-if-you-love-me-anymore
+title: I Don't Care If You Love Me Anymore
+artist: The Mavericks
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontcareifyoulovemeanymorelyricschords.pro
+    imported_at: '2026-01-02'

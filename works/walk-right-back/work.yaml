@@ -1,0 +1,17 @@
+id: walk-right-back
+title: Walk Right Back
+artist: The Everly Brothers
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkrightbacklyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: this-lady-loving-me
+title: This Lady Loving Me
+artist: Carl Smith
+composers:
+- Eddie Raven
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisladylovingmelyricschords.pro
+    imported_at: '2026-01-02'

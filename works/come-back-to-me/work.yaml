@@ -1,0 +1,17 @@
+id: come-back-to-me
+title: Come Back To Me
+artist: Carl Smith
+composers:
+- Sonny James and John Skye
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comebacktomelyricsandchords.pro
+    imported_at: '2026-01-02'

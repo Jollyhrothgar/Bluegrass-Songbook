@@ -1,0 +1,17 @@
+id: i-sat-back-and-let-it-happen
+title: I Sat Back And Let It Happen
+artist: Don Gibson
+composers:
+- Paul Hampton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isatbackandletithappenlyricschords.pro
+    imported_at: '2026-01-02'

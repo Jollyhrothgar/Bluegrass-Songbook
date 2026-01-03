@@ -1,0 +1,17 @@
+id: so-far-so-good
+title: So Far So Good
+artist: Don Williams
+composers:
+- Troy Seals, Eddie Setser, Dobie Gray
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sofarsogoodlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: get-some-loving-done
+title: Get Some Loving Done
+artist: Conway Twitty
+composers:
+- Jimmy Peppers
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: getsomelovingdonelyricschords.pro
+    imported_at: '2026-01-02'

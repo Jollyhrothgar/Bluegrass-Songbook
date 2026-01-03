@@ -1,0 +1,21 @@
+id: give-us-a-happy-home
+title: Give Us A Happy Home
+artist: Ricky Skaggs
+composers:
+- Wayland Patton and Michael White
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: giveusahappyhomelyricschords.pro
+    imported_at: '2026-01-02'

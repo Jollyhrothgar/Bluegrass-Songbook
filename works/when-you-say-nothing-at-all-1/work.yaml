@@ -1,0 +1,19 @@
+id: when-you-say-nothing-at-all-1
+title: When You Say Nothing At All
+artist: Alison Krauss
+composers:
+- Don Schlitz & Paul Overstreet
+default_key: C
+tags:
+- Bluegrass
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyousaynothingatalllyricschords.pro
+    imported_at: '2026-01-02'

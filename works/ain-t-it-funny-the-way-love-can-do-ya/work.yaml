@@ -1,0 +1,20 @@
+id: ain-t-it-funny-the-way-love-can-do-ya
+title: Ain't It Funny The Way Love Can Do Ya
+artist: David Allan Coe
+composers:
+- Guy Clark, Susanna Clark, David A. Coe
+default_key: G
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintitfunnythewaylovecandoyalyricschords.pro
+    imported_at: '2026-01-02'

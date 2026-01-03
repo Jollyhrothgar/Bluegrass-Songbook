@@ -1,0 +1,18 @@
+id: let-me-take-that-heartache-off-your-hands
+title: Let Me Take That Heartache (Off Your Hands)
+artist: Clay Walker
+composers:
+- Kent Blazy, Kim Williams, Clay Walker
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmetakethatheartacheoffyourhandslyricschords.pro
+    imported_at: '2026-01-02'

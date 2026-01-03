@@ -1,0 +1,17 @@
+id: the-day-the-world-stood-still
+title: The Day The World Stood Still
+artist: Jack Greene
+composers:
+- Bill Rice and Jerry Foster
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedaytheworldstoodstilllyricschords.pro
+    imported_at: '2026-01-02'

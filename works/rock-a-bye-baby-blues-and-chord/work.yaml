@@ -1,0 +1,17 @@
+id: rock-a-bye-baby-blues-and-chord
+title: Rock-a-bye Baby Blues and chord
+artist: Bob Wills
+composers:
+- Billy Jack Wills, Bob Wills, Louis Tierney
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockabyebabyblueslyricschords.pro
+    imported_at: '2026-01-02'

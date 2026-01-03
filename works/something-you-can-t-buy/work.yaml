@@ -1,0 +1,15 @@
+id: something-you-can-t-buy
+title: Something You Can't Buy
+artist: Ricky Nelson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingyoucantbuylyricsandchords.pro
+    imported_at: '2026-01-02'

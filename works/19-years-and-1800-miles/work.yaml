@@ -1,0 +1,17 @@
+id: 19-years-and-1800-miles
+title: 19 Years And 1800 Miles
+artist: Cal Smith
+composers:
+- Don Wayne
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 19yearsand1800mileslyricschords.pro
+    imported_at: '2026-01-02'

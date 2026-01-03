@@ -1,0 +1,17 @@
+id: the-bottle-is-just-fooling-you
+title: The Bottle Is Just Fooling You
+artist: Carl Smith
+composers:
+- Wayne P. Walker and Max Powell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebottleisjustfoolingyoulyricschords.pro
+    imported_at: '2026-01-02'

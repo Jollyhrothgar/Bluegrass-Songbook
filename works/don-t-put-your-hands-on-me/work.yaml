@@ -1,0 +1,17 @@
+id: don-t-put-your-hands-on-me
+title: Don't Put Your Hands On Me
+artist: Norma Jean
+composers:
+- Lorene Mann
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontputyourhandsonmelyricschords.pro
+    imported_at: '2026-01-02'

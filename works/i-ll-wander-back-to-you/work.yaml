@@ -1,0 +1,17 @@
+id: i-ll-wander-back-to-you
+title: I'll Wander Back To You
+artist: Charlie Pride
+composers:
+- Mel Tillis, Danny Dill, Fred B. Burch
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illwanderbacktoyoulyricschords.pro
+    imported_at: '2026-01-02'

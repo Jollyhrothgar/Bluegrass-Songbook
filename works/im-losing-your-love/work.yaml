@@ -1,0 +1,18 @@
+id: im-losing-your-love
+title: I’m Losing Your Love
+artist: Anne Murray
+composers:
+- Kye Fleming, Hank DeVito, Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlosingyourlovelyricschords.pro
+    imported_at: '2026-01-02'

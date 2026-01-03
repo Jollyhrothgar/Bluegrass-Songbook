@@ -1,0 +1,17 @@
+id: you-re-the-only-song-i-sing-today
+title: You're The Only Song I Sing Today
+artist: Johnny Paycheck
+composers:
+- Buzz Rabin and Marvin Brantley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheonlysongisingtodaylyricschords.pro
+    imported_at: '2026-01-02'

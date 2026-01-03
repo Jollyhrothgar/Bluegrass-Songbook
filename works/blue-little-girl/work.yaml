@@ -1,0 +1,17 @@
+id: blue-little-girl
+title: Blue Little Girl
+artist: Connie Smith
+composers:
+- Betty Jean Robinson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluelittlegirllyricschords.pro
+    imported_at: '2026-01-02'

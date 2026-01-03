@@ -1,0 +1,20 @@
+id: i-can-t-trust-me-in-your-arms-anymore
+title: I Can't Trust Me In Your Arms Anymore
+artist: Jerry Lee Lewis
+composers:
+- Vic McAlpin and Tommy Certain
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanttrustmeinyourarmsanymorelyricschords.pro
+    imported_at: '2026-01-02'

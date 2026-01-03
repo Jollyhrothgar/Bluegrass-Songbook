@@ -1,0 +1,17 @@
+id: an-old-log-cabin-for-sale
+title: An Old Log Cabin For Sale
+artist: Porter Wagoner
+composers:
+- J. W. Payte [3/4 time]
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anoldlogcabinforsalelyricschords.pro
+    imported_at: '2026-01-02'

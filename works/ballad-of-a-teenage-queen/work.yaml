@@ -1,0 +1,22 @@
+id: ballad-of-a-teenage-queen
+title: Ballad Of A Teenage Queen
+artist: Johnny Cash
+composers:
+- Jack Clement
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: balladofateenagequeenlyricschords.pro
+    imported_at: '2026-01-02'

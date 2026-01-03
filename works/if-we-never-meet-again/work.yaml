@@ -1,0 +1,22 @@
+id: if-we-never-meet-again
+title: If We Never Meet Again
+artist: Johnny Cash
+composers:
+- Albert E. Brumley
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifwenevermeetagainlyricschords.pro
+    imported_at: '2026-01-02'

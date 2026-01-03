@@ -1,0 +1,17 @@
+id: i-ll-hold-you-in-my-heart
+title: I'll Hold You In My Heart
+artist: Eddy Arnold
+composers:
+- Eddy Arnold, Hal Horton, Tommy Dilbeck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illholdyouinmyheartlyricschords.pro
+    imported_at: '2026-01-02'

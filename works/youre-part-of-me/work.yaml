@@ -1,0 +1,15 @@
+id: youre-part-of-me
+title: You’re Part Of Me
+artist: Moe Bandy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourepartofmelyricschords.pro
+    imported_at: '2026-01-02'

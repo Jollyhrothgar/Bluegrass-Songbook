@@ -1,0 +1,17 @@
+id: hangin-in-and-hangin-on
+title: Hangin' In And Hangin' On
+artist: David Ball
+composers:
+- Gary Nicholson, Terry McBride,
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hangininandhanginonlyricschords.pro
+    imported_at: '2026-01-02'

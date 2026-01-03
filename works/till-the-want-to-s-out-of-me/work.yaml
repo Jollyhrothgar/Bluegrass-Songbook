@@ -1,0 +1,15 @@
+id: till-the-want-to-s-out-of-me
+title: Till The Want To's Out Of Me
+artist: Freddie Hart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillthewanttosoutofmelyricschords.pro
+    imported_at: '2026-01-02'

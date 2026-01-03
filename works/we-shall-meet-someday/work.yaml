@@ -1,0 +1,17 @@
+id: we-shall-meet-someday
+title: We Shall Meet Someday
+artist: Carl Smith
+composers:
+- Tillit Teddie
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weshallmeetsomedaylyricschords.pro
+    imported_at: '2026-01-02'

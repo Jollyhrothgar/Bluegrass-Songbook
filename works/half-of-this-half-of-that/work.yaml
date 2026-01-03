@@ -1,0 +1,17 @@
+id: half-of-this-half-of-that
+title: Half Of This Half Of That
+artist: Wynn Stewart
+composers:
+- Wynn Stewart and Don Sessions
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: halfofthishalfofthatlyricschords.pro
+    imported_at: '2026-01-02'

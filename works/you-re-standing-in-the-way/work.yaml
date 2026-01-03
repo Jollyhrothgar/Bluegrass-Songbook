@@ -1,0 +1,17 @@
+id: you-re-standing-in-the-way
+title: You're Standing In The Way
+artist: The Wilburn Brothers
+composers:
+- Ron Hastings
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourestandinginthewaylyricschords.pro
+    imported_at: '2026-01-02'

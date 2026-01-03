@@ -1,0 +1,18 @@
+id: walking-to-jerusalem
+title: Walking To Jerusalem
+artist: Tracy Byrd
+composers:
+- Sam Hogin and Mark D. Sanders
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkingtojerusalemlyricschords.pro
+    imported_at: '2026-01-02'

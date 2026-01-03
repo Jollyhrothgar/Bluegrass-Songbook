@@ -1,0 +1,17 @@
+id: i-just-want-you
+title: I Just Want You
+artist: Keith Whitley
+composers:
+- Max D. Barnes and Troy Seals
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustwantyoulyricschords.pro
+    imported_at: '2026-01-02'

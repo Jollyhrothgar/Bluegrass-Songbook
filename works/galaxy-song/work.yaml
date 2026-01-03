@@ -1,0 +1,17 @@
+id: galaxy-song
+title: Galaxy Song
+artist: Clint Black
+composers:
+- Eric Idle and John Duprez
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: galaxysonglyricschords.pro
+    imported_at: '2026-01-02'

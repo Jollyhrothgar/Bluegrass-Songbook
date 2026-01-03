@@ -1,0 +1,17 @@
+id: hold-on-woman
+title: Hold On Woman
+artist: Jeanne Pruett
+composers:
+- Sharon R. Higgins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdonwomanlyricschords.pro
+    imported_at: '2026-01-02'

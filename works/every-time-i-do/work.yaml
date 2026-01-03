@@ -1,0 +1,17 @@
+id: every-time-i-do
+title: Every Time I Do
+artist: Tracy Byrd
+composers:
+- Shawn Camp and Taylor Dunn
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everytimeidolyricschords.pro
+    imported_at: '2026-01-02'

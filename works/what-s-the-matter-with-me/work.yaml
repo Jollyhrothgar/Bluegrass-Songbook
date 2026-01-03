@@ -1,0 +1,15 @@
+id: what-s-the-matter-with-me
+title: What's The Matter With Me
+artist: Carl Belew
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatsthematterwithmelyricschords.pro
+    imported_at: '2026-01-02'

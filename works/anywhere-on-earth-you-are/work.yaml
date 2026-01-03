@@ -1,0 +1,17 @@
+id: anywhere-on-earth-you-are
+title: Anywhere On Earth You Are
+artist: Alan Jackson
+composers:
+- Danny O'Keefe and Tim Krekel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anywhereonearthyouarelyricschords.pro
+    imported_at: '2026-01-02'

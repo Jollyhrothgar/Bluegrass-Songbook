@@ -1,0 +1,17 @@
+id: just-as-i-am-1
+title: Just As I Am
+artist: Ricky Van Shelton
+composers:
+- Larry Boone and Paul Nelson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justasiamlyricschords.pro
+    imported_at: '2026-01-02'

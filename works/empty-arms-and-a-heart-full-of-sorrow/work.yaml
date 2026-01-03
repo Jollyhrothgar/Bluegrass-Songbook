@@ -1,0 +1,17 @@
+id: empty-arms-and-a-heart-full-of-sorrow
+title: Empty Arms And A Heart Full Of Sorrow
+artist: Hawkshaw Hawkins
+composers:
+- Wally Fowler and Graydon Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: emptyarmsandaheartfullofsorrowlyricschords.pro
+    imported_at: '2026-01-02'

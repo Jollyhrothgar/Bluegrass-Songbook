@@ -1,0 +1,18 @@
+id: paying-for-that-back-street-affair
+title: Paying For That Back Street Affair
+artist: Kitty Wells
+composers:
+- Billy Wallace and Jimmy Rule
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: payingforthatbackstreetaffairlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-pawned-my-past-today
+title: I Pawned My Past Today
+artist: Stonewall Jackson
+composers:
+- Roger Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ipawnedmypasttodaylyricschords.pro
+    imported_at: '2026-01-02'

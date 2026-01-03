@@ -1,0 +1,17 @@
+id: hey-joe-1
+title: Hey Joe
+artist: Moe Bandy
+composers:
+- Boudleaux Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heyjoelyricschords.pro
+    imported_at: '2026-01-02'

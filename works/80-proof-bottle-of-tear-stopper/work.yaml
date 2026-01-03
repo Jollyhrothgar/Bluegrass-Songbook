@@ -1,0 +1,18 @@
+id: 80-proof-bottle-of-tear-stopper
+title: 80 Proof Bottle Of Tear Stopper
+artist: George Strait
+composers:
+- Darrell Statler
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 80proofbottleoftearstopperlyricschords.pro
+    imported_at: '2026-01-02'

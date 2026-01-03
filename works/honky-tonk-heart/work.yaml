@@ -1,0 +1,17 @@
+id: honky-tonk-heart
+title: Honky Tonk Heart
+artist: Charlie Walker
+composers:
+- Ralph Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkheartlyricsandchords.pro
+    imported_at: '2026-01-02'

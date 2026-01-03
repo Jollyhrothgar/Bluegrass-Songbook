@@ -1,0 +1,17 @@
+id: standing-somewhere-in-the-shadows
+title: Standing Somewhere In The Shadows
+artist: Mac Wiseman
+composers:
+- Kenneth Downie
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: standingsomewhereintheshadowslyricschords.pro
+    imported_at: '2026-01-02'

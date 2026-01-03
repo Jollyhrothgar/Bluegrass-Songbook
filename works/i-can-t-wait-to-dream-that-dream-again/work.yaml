@@ -1,0 +1,17 @@
+id: i-can-t-wait-to-dream-that-dream-again
+title: I Can't Wait To Dream That Dream Again
+artist: Cal Smith
+composers:
+- Wayne Kemp and Mack Vickery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantwaittodreamthatdreamagainlyricschords.pro
+    imported_at: '2026-01-02'

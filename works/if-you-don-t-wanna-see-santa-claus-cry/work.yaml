@@ -1,0 +1,18 @@
+id: if-you-don-t-wanna-see-santa-claus-cry
+title: If You Don't Wanna See Santa Claus Cry
+artist: Alan Jackson
+composers:
+- Keith Stegall
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoudontwannaseesantaclauscrylyricschords.pro
+    imported_at: '2026-01-02'

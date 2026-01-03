@@ -1,0 +1,17 @@
+id: i-wanna-hear-it-from-you
+title: I Wanna Hear It From You
+artist: Eddy Raven
+composers:
+- Rick Giles and Nancy Montgomery
+default_key: F
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwannahearitfromyoulyricschords.pro
+    imported_at: '2026-01-02'

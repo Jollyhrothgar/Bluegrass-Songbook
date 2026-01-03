@@ -1,0 +1,17 @@
+id: because-you-re-mine
+title: Because You're Mine
+artist: Ferlin Husky
+composers:
+- Henry Dorrough and Ferlin Husky
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseyoureminelyricschords.pro
+    imported_at: '2026-01-02'

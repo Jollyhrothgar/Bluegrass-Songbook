@@ -1,0 +1,17 @@
+id: it-s-my-life
+title: It's My Life
+artist: Bill Anderson
+composers:
+- recorded by Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsmylifelyricschords.pro
+    imported_at: '2026-01-02'

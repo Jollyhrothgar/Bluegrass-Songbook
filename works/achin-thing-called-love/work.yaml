@@ -1,0 +1,17 @@
+id: achin-thing-called-love
+title: Achin' Thing Called Love
+artist: Sonny James
+composers:
+- Jim Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: achinthingcalledlovelyricschords.pro
+    imported_at: '2026-01-02'

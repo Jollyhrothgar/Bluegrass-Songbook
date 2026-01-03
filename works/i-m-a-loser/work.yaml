@@ -1,0 +1,13 @@
+id: i-m-a-loser
+title: I'm A Loser
+artist: Ronnie Reno
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imaloserlyricschords.pro
+    imported_at: '2026-01-02'

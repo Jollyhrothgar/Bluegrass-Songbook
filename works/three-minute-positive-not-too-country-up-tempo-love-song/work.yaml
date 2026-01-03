@@ -1,0 +1,15 @@
+id: three-minute-positive-not-too-country-up-tempo-love-song
+title: Three Minute Positive Not Too Country Up-Tempo Love Song
+artist: Alan Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threeminutepositivenottoocountryuptempolovesonglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: all-by-my-lonesome
+title: All By My Lonesome
+artist: Charley Pride
+composers:
+- Terry Clayton and Billy Yates
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allbymylonesomelyricschords.pro
+    imported_at: '2026-01-02'

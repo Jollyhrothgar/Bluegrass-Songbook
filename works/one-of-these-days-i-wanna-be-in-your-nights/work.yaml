@@ -1,0 +1,15 @@
+id: one-of-these-days-i-wanna-be-in-your-nights
+title: One Of These Days I Wanna Be In Your Nights
+artist: Charlie Pride
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneofthesedaysiwannabeinyournightslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-used-it-all-on-you
+title: I Used It All On You
+artist: Charley Pride
+composers:
+- Tom Crum
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iuseditallonyoulyricsandchords.pro
+    imported_at: '2026-01-02'

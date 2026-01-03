@@ -1,0 +1,15 @@
+id: i-only-make-you-happy-when-i-cry
+title: I Only Make You Happy When I Cry
+artist: Justin Trevino
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ionlymakeyouhappywhenicrylyricschords.pro
+    imported_at: '2026-01-02'

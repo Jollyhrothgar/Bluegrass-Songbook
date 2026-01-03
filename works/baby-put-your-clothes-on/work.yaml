@@ -1,0 +1,18 @@
+id: baby-put-your-clothes-on
+title: Baby Put Your Clothes On
+artist: Tracy Byrd
+composers:
+- Bill Anderson, Paul Overstreet, Buddy Cannon
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyputyourclothesonlyricschords.pro
+    imported_at: '2026-01-02'

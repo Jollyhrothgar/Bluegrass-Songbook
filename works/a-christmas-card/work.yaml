@@ -1,0 +1,17 @@
+id: a-christmas-card
+title: A Christmas Card
+artist: Doug Stone
+composers:
+- Mike Dyche
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aChristmascardlyricschords.pro
+    imported_at: '2026-01-02'

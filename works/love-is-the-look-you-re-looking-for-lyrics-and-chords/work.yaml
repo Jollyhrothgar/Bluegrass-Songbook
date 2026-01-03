@@ -1,0 +1,17 @@
+id: love-is-the-look-you-re-looking-for-lyrics-and-chords
+title: Love Is The Look You're Looking For Lyrics and Chords
+artist: Connie Smith
+composers:
+- Rose Lee Mathis
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveisthelookyourelookingforlyricschords.pro
+    imported_at: '2026-01-02'

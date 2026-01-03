@@ -1,0 +1,15 @@
+id: sitting-alone-in-the-moonlight
+title: Sitting Alone In The Moonlight
+artist: Bill Monroe
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sittingaloneinthemoonlightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: when-the-neon-lights-come-on
+title: When the Neon Lights Come On
+artist: Curtis Potter
+composers:
+- Buddy Mize
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentheneonlightscomeonlyricschords.pro
+    imported_at: '2026-01-02'

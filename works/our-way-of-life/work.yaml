@@ -1,0 +1,15 @@
+id: our-way-of-life
+title: Our Way Of Life
+artist: George Jones
+composers:
+- Earl Montgomery and Melba Montgomery
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ourwayoflifelyricschords.pro
+    imported_at: '2026-01-02'

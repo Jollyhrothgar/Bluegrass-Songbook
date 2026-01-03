@@ -1,0 +1,17 @@
+id: it-s-too-late-to-stop-us-now
+title: It's Too Late To Stop Us Now
+artist: Mel Street
+composers:
+- Bob McDill and Wayland Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itstoolatetostopusnowlyricschords.pro
+    imported_at: '2026-01-02'

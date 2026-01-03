@@ -1,0 +1,18 @@
+id: breath-of-heaven-marys-song
+title: Breath of Heaven (Mary’s Song)
+artist: Vince Gill
+composers:
+- Amy Grant and Christopher Eaton
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: breathofheavenmaryssonglyricschords.pro
+    imported_at: '2026-01-02'

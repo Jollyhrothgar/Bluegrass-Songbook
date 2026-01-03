@@ -1,0 +1,17 @@
+id: after-you-leave-me
+title: After You Leave Me
+artist: Buck Owens
+composers:
+- Buck Owens and Bonnie Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afteryouleavemelyricsandchords.pro
+    imported_at: '2026-01-02'

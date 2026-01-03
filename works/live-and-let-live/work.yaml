@@ -1,0 +1,18 @@
+id: live-and-let-live
+title: Live And Let Live
+artist: Marty Robbins
+composers:
+- W. Walker and G. Sullivan
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: liveandletlivelyricschords.pro
+    imported_at: '2026-01-02'

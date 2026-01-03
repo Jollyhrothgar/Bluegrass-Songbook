@@ -1,0 +1,17 @@
+id: stood-up
+title: Stood Up
+artist: Ricky Nelson
+composers:
+- Willis Dickerson and Erma Herrold
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stooduplyricschords.pro
+    imported_at: '2026-01-02'

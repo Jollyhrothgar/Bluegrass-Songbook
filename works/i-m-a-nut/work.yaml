@@ -1,0 +1,17 @@
+id: i-m-a-nut
+title: I'm A Nut
+artist: Roger Miller
+composers:
+- Leroy Pullins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imanutlyricschords.pro
+    imported_at: '2026-01-02'

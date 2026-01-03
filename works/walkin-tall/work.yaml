@@ -1,0 +1,17 @@
+id: walkin-tall
+title: Walkin' Tall
+artist: Eric Wurst and David Wurst
+composers:
+- Eric Wurst and David Wurst
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkintalllyricschords.pro
+    imported_at: '2026-01-02'

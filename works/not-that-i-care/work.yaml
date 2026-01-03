@@ -1,0 +1,15 @@
+id: not-that-i-care
+title: Not That I Care
+artist: Ricky Van Shelton
+composers:
+- Cindy Walker
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notthaticarelyricsandchords.pro
+    imported_at: '2026-01-02'

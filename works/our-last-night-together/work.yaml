@@ -1,0 +1,17 @@
+id: our-last-night-together
+title: Our Last Night Together
+artist: Roy Drusky
+composers:
+- Dave Rich
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ourlastnighttogetherlyricschords.pro
+    imported_at: '2026-01-02'

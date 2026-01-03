@@ -1,0 +1,17 @@
+id: it-hardly-hurts-anymore
+title: It Hardly Hurts Anymore
+artist: Hank Locklin
+composers:
+- Ben Raleigh and Dolores Fuller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithardlyhurtsanymorelyricschords.pro
+    imported_at: '2026-01-02'

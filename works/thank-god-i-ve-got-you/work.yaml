@@ -1,0 +1,17 @@
+id: thank-god-i-ve-got-you
+title: Thank God I've Got You
+artist: Statler Brothers
+composers:
+- Don Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankGodivegotyoulyricschords.pro
+    imported_at: '2026-01-02'

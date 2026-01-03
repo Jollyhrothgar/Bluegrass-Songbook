@@ -1,0 +1,17 @@
+id: i-never-once-stopped-loving-you
+title: I Never Once Stopped Loving You
+artist: Connie Smith
+composers:
+- Bill Anderson and Jan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineveroncestoppedlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

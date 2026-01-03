@@ -1,0 +1,13 @@
+id: my-window-faces-the-south
+title: My window faces the South
+artist: Bob Wills
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mywindowfacesthesouthlyricschords.pro
+    imported_at: '2026-01-02'

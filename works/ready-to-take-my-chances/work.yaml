@@ -1,0 +1,17 @@
+id: ready-to-take-my-chances
+title: Ready To Take My Chances
+artist: Jim Ed Brown and Helen Cornelius
+composers:
+- Dewayne Orender and Helen Cornelius
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: readytotakemychanceslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: his-eye-is-on-the-sparrow
+title: His Eye Is On The Sparrow
+artist: Statler Brothers
+composers:
+- Civilla Durfee Martin and Charles Hutchinson Gabriel
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hiseyeisonthesparrowlyricschords.pro
+    imported_at: '2026-01-02'

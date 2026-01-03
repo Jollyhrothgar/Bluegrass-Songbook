@@ -1,0 +1,17 @@
+id: one-less-heartache
+title: One Less Heartache
+artist: Jean Shepard
+composers:
+- Demetriss Tapp and Robert Tubert
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onelessheartachelyricschords.pro
+    imported_at: '2026-01-02'

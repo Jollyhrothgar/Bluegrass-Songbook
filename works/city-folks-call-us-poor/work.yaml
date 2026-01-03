@@ -1,0 +1,19 @@
+id: city-folks-call-us-poor
+title: City Folks Call Us Poor
+artist: Larry Sparks
+composers:
+- Marshall Warwick
+default_key: G
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cityfolkscalluspoorlyricschords.pro
+    imported_at: '2026-01-02'

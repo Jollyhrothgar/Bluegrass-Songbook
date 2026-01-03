@@ -1,0 +1,21 @@
+id: u-s-male
+title: U.S. Male
+artist: Elvis Presley
+composers:
+- Jerry Reed
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: usmalelyricschords.pro
+    imported_at: '2026-01-02'

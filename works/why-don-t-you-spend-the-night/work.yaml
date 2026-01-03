@@ -1,0 +1,18 @@
+id: why-don-t-you-spend-the-night
+title: Why Don't You Spend The Night
+artist: Ronnie Milsap
+composers:
+- Bob McDill
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydontyouspendthenightlyricschords.pro
+    imported_at: '2026-01-02'

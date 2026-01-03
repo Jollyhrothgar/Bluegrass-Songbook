@@ -1,0 +1,20 @@
+id: how-do-you-feel-about-foolin-around
+title: How Do You Feel About Foolin' Around
+artist: Kris Kristofferson
+composers:
+- Kris Kristofferson, Stephen Bruton, Mike Utley
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howdoyoufeelaboutfoolinaroundlyricschords.pro
+    imported_at: '2026-01-02'

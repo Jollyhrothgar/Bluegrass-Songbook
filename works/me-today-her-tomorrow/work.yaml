@@ -1,0 +1,17 @@
+id: me-today-her-tomorrow
+title: Me Today Her Tomorrow
+artist: Dottie West
+composers:
+- Hank Cochran
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: metodayhertomorrowlyricsandchords.pro
+    imported_at: '2026-01-02'

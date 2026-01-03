@@ -1,0 +1,17 @@
+id: brother-do-you-take-time-to-pray
+title: Brother Do You Take Time To Pray
+artist: Little Jimmy Dickens
+composers:
+- Truman A. Keeney, Rusty Harp, Jimmy Dickens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brotherdoyoutaketimetopraylyricschords.pro
+    imported_at: '2026-01-02'

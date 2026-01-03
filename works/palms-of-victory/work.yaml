@@ -1,0 +1,17 @@
+id: palms-of-victory
+title: Palms of Victory
+artist: The Country Gentlemen
+composers:
+- Dwight Brock and John B. Matthias
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: palmsofvictorylyricschords.pro
+    imported_at: '2026-01-02'

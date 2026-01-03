@@ -1,0 +1,17 @@
+id: that-s-love
+title: That's Love
+artist: Johnny Tillotson
+composers:
+- John D. Loudermilk
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatslovelyricschords.pro
+    imported_at: '2026-01-02'

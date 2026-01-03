@@ -1,0 +1,16 @@
+id: red-sails-in-the-sunset
+title: Red Sails in the Sunset
+artist: Connie Francis
+default_key: C
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: redsailsinthesunsetlyricschords.pro
+    imported_at: '2026-01-02'

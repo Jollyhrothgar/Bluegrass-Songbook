@@ -1,0 +1,16 @@
+id: carmel-by-the-sea-lyrics-and-chords
+title: Carmel by the Sea Lyrics and Chords
+artist: Kitty Wells
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carmelbythesealyricsandchords.pro
+    imported_at: '2026-01-02'

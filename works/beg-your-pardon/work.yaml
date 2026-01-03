@@ -1,0 +1,17 @@
+id: beg-your-pardon
+title: Beg Your Pardon
+artist: Sonny James
+composers:
+- Beasley Smith and Francis Craig
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: begyourpardonlyricschords.pro
+    imported_at: '2026-01-02'

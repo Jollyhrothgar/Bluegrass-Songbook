@@ -1,0 +1,18 @@
+id: my-lord-will-send-a-moses
+title: My Lord Will Send A Moses
+artist: The Cathedrals
+composers:
+- Malcom Jones
+default_key: G
+tags:
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylordwillsendamoseslyricschords.pro
+    imported_at: '2026-01-02'

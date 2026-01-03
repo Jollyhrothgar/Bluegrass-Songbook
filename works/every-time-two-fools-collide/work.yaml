@@ -1,0 +1,17 @@
+id: every-time-two-fools-collide
+title: Every Time Two Fools Collide
+artist: Kenny Rogers
+composers:
+- Jeffery Tweel and Jan Dyer
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everytimetwofoolscollidelyricschords.pro
+    imported_at: '2026-01-02'

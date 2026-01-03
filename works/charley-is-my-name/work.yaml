@@ -1,0 +1,13 @@
+id: charley-is-my-name
+title: Charley Is My Name
+artist: Johnny Duncan
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: charleyismynamelyricschords.pro
+    imported_at: '2026-01-02'

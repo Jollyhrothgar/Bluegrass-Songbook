@@ -1,0 +1,17 @@
+id: after-the-boy-gets-the-girl-lyrics-chords
+title: After the Boy Gets the Girl Lyrics Chords
+artist: Web Pierce
+composers:
+- Wayne P. Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aftertheboygetsthegirllyricschords.pro
+    imported_at: '2026-01-02'

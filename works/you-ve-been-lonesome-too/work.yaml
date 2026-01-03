@@ -1,0 +1,17 @@
+id: you-ve-been-lonesome-too
+title: You've Been Lonesome Too
+artist: Alan Jackson
+composers:
+- Hank Williams and Alan Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvebeenlonesometoolyricschords.pro
+    imported_at: '2026-01-02'

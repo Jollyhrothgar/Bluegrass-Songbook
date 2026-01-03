@@ -1,0 +1,15 @@
+id: out-of-hand
+title: Out Of Hand
+artist: Gary Stewart
+composers:
+- Jeff Barry and Tom Jans
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: outofhandlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-just-thought-i-d-call-to-say-i-love-you
+title: I Just Thought I'd Call To Say I Love You
+artist: Slim Whitman
+composers:
+- Dave Burgess and Biff Collie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustthoughtidcalltosayiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

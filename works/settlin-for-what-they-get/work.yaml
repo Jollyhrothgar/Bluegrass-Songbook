@@ -1,0 +1,18 @@
+id: settlin-for-what-they-get
+title: Settlin' For What They Get
+artist: Mark Chesnutt
+composers:
+- Willard Mack Vickery
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: settlinforwhattheygetlyricschords.pro
+    imported_at: '2026-01-02'

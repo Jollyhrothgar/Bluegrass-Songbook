@@ -1,0 +1,17 @@
+id: i-ll-see-you-in-my-dreams
+title: I'll See You In My Dreams
+artist: Curtis Potter, Tony Booth, Darrell McCall
+composers:
+- Weldon E. Lister
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illseeyouinmydreamslyricschords.pro
+    imported_at: '2026-01-02'

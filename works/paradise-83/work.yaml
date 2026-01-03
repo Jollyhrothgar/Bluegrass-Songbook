@@ -1,0 +1,17 @@
+id: paradise-83
+title: Paradise '83
+artist: Vern Gosdin
+composers:
+- Buddy Cannon, Vern Gosdin, Mickey Baker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: paradise83lyricschords.pro
+    imported_at: '2026-01-02'

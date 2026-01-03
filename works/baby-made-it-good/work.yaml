@@ -1,0 +1,17 @@
+id: baby-made-it-good
+title: Baby Made It Good
+artist: Bob Luman
+composers:
+- Buddy Cannon and Steve Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babymadeitgoodlyricschords.pro
+    imported_at: '2026-01-02'

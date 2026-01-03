@@ -1,0 +1,17 @@
+id: you-re-my-one-and-only-love
+title: You're My One And Only Love
+artist: Ricky Nelson
+composers:
+- Barney Kessel and Jack Wilton Marshall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youremyoneandonlylovelyricschords.pro
+    imported_at: '2026-01-02'

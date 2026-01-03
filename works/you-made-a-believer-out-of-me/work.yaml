@@ -1,0 +1,17 @@
+id: you-made-a-believer-out-of-me
+title: You Made A Believer Out Of Me
+artist: Bobby Bare
+composers:
+- Bob McDill
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmadeabelieveroutofmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: there-ain-t-no-grave-deep-enough
+title: There Ain't No Grave Deep Enough
+artist: George Jones
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thereaintnogravedeepenoughlyricschords.pro
+    imported_at: '2026-01-02'

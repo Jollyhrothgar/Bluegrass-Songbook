@@ -1,0 +1,15 @@
+id: tonight-is-christmas
+title: Tonight is Christmas
+artist: Alabama
+composers:
+- Stan Munsey, Keith Worsham, Don Matthews
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tonightisChristmaslyricschords.pro
+    imported_at: '2026-01-02'

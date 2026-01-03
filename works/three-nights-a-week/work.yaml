@@ -1,0 +1,16 @@
+id: three-nights-a-week
+title: Three Nights A Week
+artist: Fats Domino
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threenightsaweeklyricschords.pro
+    imported_at: '2026-01-02'

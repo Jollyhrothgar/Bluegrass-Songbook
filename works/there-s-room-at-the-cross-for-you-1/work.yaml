@@ -1,0 +1,15 @@
+id: there-s-room-at-the-cross-for-you-1
+title: There's Room At The Cross For You
+artist: David Mcllwain
+composers:
+- Ira Stanphill
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresroomatthecrossforyoulyricschords.pro
+    imported_at: '2026-01-02'

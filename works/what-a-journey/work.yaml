@@ -1,0 +1,15 @@
+id: what-a-journey
+title: What A Journey
+artist: Paul Williams and The Victory Trio
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatajourneylyricschords.pro
+    imported_at: '2026-01-02'

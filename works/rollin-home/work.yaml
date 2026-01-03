@@ -1,0 +1,17 @@
+id: rollin-home
+title: Rollin' Home
+artist: Gene Watson
+composers:
+- Keith Stegall and Brent Mason
+default_key: F
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rollinhomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-getting-nowhere
+title: I'm Getting Nowhere
+artist: Faron Young
+composers:
+- Ray Pennington, Ron Pennington, Ronnie Pennington
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgettingnowherelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: tell-laura-i-love-her
+title: Tell Laura I Love Her
+artist: the Everly Brothers
+composers:
+- Ray Peterson
+default_key: G
+tags:
+- Pop
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: telllaurailoveherlyricschords.pro
+    imported_at: '2026-01-02'

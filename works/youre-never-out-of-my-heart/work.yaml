@@ -1,0 +1,17 @@
+id: youre-never-out-of-my-heart
+title: You’re Never Out Of My Heart
+artist: Wynn Stewart
+composers:
+- Buck Owens, Beverly Stewart, Wynn Stewart
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youreneveroutofmyheartlyricschords.pro
+    imported_at: '2026-01-02'

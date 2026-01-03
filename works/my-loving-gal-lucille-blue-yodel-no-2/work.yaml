@@ -1,0 +1,18 @@
+id: my-loving-gal-lucille-blue-yodel-no-2
+title: My Loving Gal Lucille (Blue Yodel No.2)
+artist: Lefty Frizzell
+composers:
+- Jimmie Rodgers
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylovinggallucilleblueyodelno2lyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-east-bound-train
+title: The East Bound Train
+artist: Mac Wiseman
+composers:
+- Mark Knopfler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theeastboundtrainlyricschords.pro
+    imported_at: '2026-01-02'

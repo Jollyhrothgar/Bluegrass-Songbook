@@ -1,0 +1,19 @@
+id: you-never-cross-my-mind
+title: You Never Cross My Mind
+artist: Mickey Gilley
+composers:
+- Curly Putman, Rafe Van Hoy, Deborah Allen
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: younevercrossmymindlyricsandchords.pro
+    imported_at: '2026-01-02'

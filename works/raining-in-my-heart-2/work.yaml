@@ -1,0 +1,17 @@
+id: raining-in-my-heart-2
+title: Raining In My Heart
+artist: Wanda Jackson
+composers:
+- Boudleaux Bryant and Felice Bryant
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: raininginmyheartlyricschords.pro
+    imported_at: '2026-01-02'

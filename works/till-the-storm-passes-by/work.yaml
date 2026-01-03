@@ -1,0 +1,17 @@
+id: till-the-storm-passes-by
+title: Till The Storm Passes By
+artist: Statler Brothers
+composers:
+- Mosie Lister
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillthestormpassesbylyricschords.pro
+    imported_at: '2026-01-02'

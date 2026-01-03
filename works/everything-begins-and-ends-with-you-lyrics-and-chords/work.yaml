@@ -1,0 +1,17 @@
+id: everything-begins-and-ends-with-you-lyrics-and-chords
+title: Everything Begins And Ends With You Lyrics and Chords
+artist: Sonny James
+composers:
+- Sonny James and Lorene Allen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingbeginsandendswithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,13 @@
+id: it-s-our-anniversary
+title: It's Our Anniversary
+artist: Jim Finnegan
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsouranniversarylyricschords.pro
+    imported_at: '2026-01-02'

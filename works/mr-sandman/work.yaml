@@ -1,0 +1,18 @@
+id: mr-sandman
+title: Mr. Sandman
+artist: Emmylou Harris
+composers:
+- Pat Ballard
+default_key: G
+tags:
+- Folk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mrsandmanlyricschords.pro
+    imported_at: '2026-01-02'

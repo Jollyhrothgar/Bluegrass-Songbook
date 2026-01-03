@@ -1,0 +1,17 @@
+id: youre-still-on-my-mind
+title: You’re Still On My Mind
+artist: George Jones
+composers:
+- Luke McDaniel
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourestillonmyindlyricschords.pro
+    imported_at: '2026-01-02'

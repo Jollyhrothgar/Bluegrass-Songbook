@@ -1,0 +1,17 @@
+id: another-song-another-drink
+title: Another Song Another Drink
+artist: Ralph Stanley II
+composers:
+- Joyce Morris
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anothersonganotherdrinklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: restless-kid
+title: Restless Kid
+artist: Ricky Nelson
+composers:
+- Johnny Cash
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: restlesskidlyricschords.pro
+    imported_at: '2026-01-02'

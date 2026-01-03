@@ -1,0 +1,20 @@
+id: jody-like-a-melody
+title: Jody Like A Melody
+artist: David Allan Coe
+composers:
+- David A. Coe and Jimmy Howard
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jodylikeamelodylyricschords.pro
+    imported_at: '2026-01-02'

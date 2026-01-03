@@ -1,0 +1,17 @@
+id: they-ve-stole-my-steel-guitar
+title: They've Stole My Steel Guitar
+artist: Little Jimmy Dickens
+composers:
+- Larry Kingston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theyvestolemysteelguitarlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: king-of-the-road-1
+title: King of the Road
+artist: The Statler Brothers
+composers:
+- Roger Miller
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kingoftheroadlyricschords.pro
+    imported_at: '2026-01-02'

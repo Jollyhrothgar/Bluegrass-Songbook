@@ -1,0 +1,17 @@
+id: it-dont-feel-like-sinning-to-me
+title: It Don’t Feel Like Sinning To Me
+artist: The Kendalls
+composers:
+- Curly Putman and Michael Kosser
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itdontfeellikesinningtomelyricschords.pro
+    imported_at: '2026-01-02'

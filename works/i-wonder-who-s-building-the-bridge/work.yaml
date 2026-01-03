@@ -1,0 +1,18 @@
+id: i-wonder-who-s-building-the-bridge
+title: I Wonder Who's Building The Bridge
+artist: Lefty Frizzell
+composers:
+- Roger Burch, A.L. Owens, Lou Rochelle
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderwhosbuildingthebridgelyricschords.pro
+    imported_at: '2026-01-02'

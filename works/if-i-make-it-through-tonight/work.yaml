@@ -1,0 +1,17 @@
+id: if-i-make-it-through-tonight
+title: If I Make It Through Tonight
+artist: Billy Parker
+composers:
+- Jeannie Seely and Virginia Gail Talley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifimakeitthroughtonightlyricschords.pro
+    imported_at: '2026-01-02'

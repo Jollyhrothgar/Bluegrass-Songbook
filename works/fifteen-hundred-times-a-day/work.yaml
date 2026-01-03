@@ -1,0 +1,17 @@
+id: fifteen-hundred-times-a-day
+title: Fifteen Hundred Times A Day
+artist: Vern Gosdin
+composers:
+- Cathy Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fifteenhundredtimesadaylyricschords.pro
+    imported_at: '2026-01-02'

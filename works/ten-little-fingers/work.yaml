@@ -1,0 +1,15 @@
+id: ten-little-fingers
+title: Ten Little Fingers
+artist: Carol Baker
+composers:
+- Don Grashey
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tenlittlefingerslyricschords.pro
+    imported_at: '2026-01-02'

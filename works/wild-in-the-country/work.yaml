@@ -1,0 +1,20 @@
+id: wild-in-the-country
+title: Wild In The Country
+artist: Elvis Presley
+composers:
+- Luigi Creatore, Hugo Peretti, George David Weiss
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wildinthecountrylyricschords.pro
+    imported_at: '2026-01-02'

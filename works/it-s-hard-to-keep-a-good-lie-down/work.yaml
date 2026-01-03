@@ -1,0 +1,15 @@
+id: it-s-hard-to-keep-a-good-lie-down
+title: It's Hard To Keep A Good Lie Down
+artist: Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itshardtokeepagoodliedownlyricschords.pro
+    imported_at: '2026-01-02'

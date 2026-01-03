@@ -1,0 +1,16 @@
+id: ten-nights-in-a-bar-room
+title: Ten Nights in a Bar Room
+artist: Traditional
+default_key: D
+tags:
+- JamFriendly
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: how-many-time-can-a-man-be-a-fool
+title: How Many Time Can A Man Be A Fool
+artist: Sonny James
+composers:
+- Sonny James and Carole Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howmanytimescanamanbeafoollyricschords.pro
+    imported_at: '2026-01-02'

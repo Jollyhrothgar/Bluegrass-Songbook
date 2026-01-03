@@ -1,0 +1,17 @@
+id: down-at-the-end-of-memory-lane
+title: Down At The End Of Memory Lane
+artist: Jimmie Davis
+composers:
+- Jimmie Davis and Robert Anthony Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downattheendofmemorylanelyricschords.pro
+    imported_at: '2026-01-02'

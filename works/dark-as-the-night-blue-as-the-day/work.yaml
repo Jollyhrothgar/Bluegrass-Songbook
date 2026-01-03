@@ -1,0 +1,17 @@
+id: dark-as-the-night-blue-as-the-day
+title: Dark As The Night Blue As The Day
+artist: Michael Cleveland, Dan Tymiski, Vince Gill
+composers:
+- Bill Monroe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darkasthenightblueasthedaylyricschords.pro
+    imported_at: '2026-01-02'

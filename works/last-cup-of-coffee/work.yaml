@@ -1,0 +1,19 @@
+id: last-cup-of-coffee
+title: Last Cup Of Coffee
+artist: Mel Tillis
+composers:
+- Paul Evans
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lastcupofcoffeelyricschords.pro
+    imported_at: '2026-01-02'

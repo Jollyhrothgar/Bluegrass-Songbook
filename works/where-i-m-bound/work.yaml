@@ -1,0 +1,19 @@
+id: where-i-m-bound
+title: Where I'm Bound
+artist: Patty Loveless
+composers:
+- Daryl Burgess and Tom Britt
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whereimboundlyricschords.pro
+    imported_at: '2026-01-02'

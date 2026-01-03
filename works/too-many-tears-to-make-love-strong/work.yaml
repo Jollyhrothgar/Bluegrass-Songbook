@@ -1,0 +1,17 @@
+id: too-many-tears-to-make-love-strong
+title: Too Many Tears To Make Love Strong
+artist: Don Williams
+composers:
+- Jim Rushing
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomanytearstomakelovestronglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-must-walk-the-line
+title: You Must Walk The Line
+artist: Eddy Arnold
+composers:
+- J.G. Hall, Wally Fowler, Eddy Arnold
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youmustwalkthelinelyricschords.pro
+    imported_at: '2026-01-02'

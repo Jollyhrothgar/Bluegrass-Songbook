@@ -1,0 +1,17 @@
+id: this-bottle-in-my-hand
+title: This Bottle In My Hand
+artist: George Jones
+composers:
+- David Allen Coe
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisbottleinmyhandlyricschords.pro
+    imported_at: '2026-01-02'

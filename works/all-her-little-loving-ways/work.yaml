@@ -1,0 +1,15 @@
+id: all-her-little-loving-ways
+title: All Her Little Loving Ways
+artist: Ferlin Husky
+composers:
+- Milton Blackford and Dan Wilson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allherlittlelovingwayslyricschords.pro
+    imported_at: '2026-01-02'

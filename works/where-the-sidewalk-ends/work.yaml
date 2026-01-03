@@ -1,0 +1,18 @@
+id: where-the-sidewalk-ends
+title: Where The Sidewalk Ends
+artist: George Strait
+composers:
+- Jim Lauderdale and John Leventhal
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherethesidewalkendslyricschords.pro
+    imported_at: '2026-01-02'

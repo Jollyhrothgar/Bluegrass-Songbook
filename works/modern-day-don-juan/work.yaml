@@ -1,0 +1,18 @@
+id: modern-day-don-juan
+title: Modern Day Don Juan
+artist: Buddy Holly
+composers:
+- Don Guess and Jack Neal
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moderndaydonjuanlyricschords.pro
+    imported_at: '2026-01-02'

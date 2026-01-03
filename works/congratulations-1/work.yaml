@@ -1,0 +1,15 @@
+id: congratulations-1
+title: Congratulations
+artist: Ricky Nelson
+composers:
+- Jerry Fuller
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: congratulationslyricsandchords.pro
+    imported_at: '2026-01-02'

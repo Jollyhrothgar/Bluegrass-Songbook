@@ -1,0 +1,17 @@
+id: new-looks-from-an-old-lover
+title: New Looks From An Old Lover
+artist: B J Thomas
+composers:
+- Hudson Lathan, Gloria, Jean Thomas,Red Lane
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: newlooksfromanoldloverlyricschords.pro
+    imported_at: '2026-01-02'

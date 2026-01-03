@@ -1,0 +1,17 @@
+id: i-ll-break-out-again-tonight
+title: I'll Break Out Again Tonight
+artist: Darrell McCall
+composers:
+- Arthur Leo Owens & Sanger D. Shafer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbreakoutagaintonightlyricschords.pro
+    imported_at: '2026-01-02'

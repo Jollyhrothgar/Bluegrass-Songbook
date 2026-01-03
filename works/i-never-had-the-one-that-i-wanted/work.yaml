@@ -1,0 +1,19 @@
+id: i-never-had-the-one-that-i-wanted
+title: I Never Had The One That I Wanted
+artist: Ernest Tubb
+composers:
+- Jimmie Louis, Claude Gray & Sheb Wooley
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineverhadtheonethatiwantedlyricschords.pro
+    imported_at: '2026-01-02'

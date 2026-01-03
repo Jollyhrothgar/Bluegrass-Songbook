@@ -1,0 +1,17 @@
+id: if-i-cant-have-all-of-you
+title: If I Can’t Have All Of You
+artist: Wilburn Brothers
+composers:
+- Jeff Tweel, Vernon Reed, Rex Gosdin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificanthaveallofyoulyricschords.pro
+    imported_at: '2026-01-02'

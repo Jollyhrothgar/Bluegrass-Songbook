@@ -1,0 +1,17 @@
+id: you-ve-made-up-for-everything
+title: You've Made Up For Everything
+artist: Jerry Wallace
+composers:
+- Cindy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvemadeupforeverythinglyricschords.pro
+    imported_at: '2026-01-02'

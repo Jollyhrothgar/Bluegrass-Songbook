@@ -1,0 +1,15 @@
+id: royal-princess-two-step
+title: Royal Princess Two-Step
+artist: Traditional
+composers:
+- Biography:Graham Townsend
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

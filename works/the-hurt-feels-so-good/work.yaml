@@ -1,0 +1,15 @@
+id: the-hurt-feels-so-good
+title: The Hurt Feels So Good
+artist: Freddie Hart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thehurtfeelssogoodlyricschords.pro
+    imported_at: '2026-01-02'

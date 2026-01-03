@@ -1,0 +1,15 @@
+id: she-never-knew-me
+title: She Never Knew Me
+artist: Don Williams
+composers:
+- Bob McDill and Wayland Holyfield [3/4 time]
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sheneverknewmelyricschords.pro
+    imported_at: '2026-01-02'

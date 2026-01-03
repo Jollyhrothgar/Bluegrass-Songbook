@@ -1,0 +1,17 @@
+id: back-again
+title: Back Again
+artist: George Morgan
+composers:
+- Wayne P. Walker and Jay Coleman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backagainlyricschords.pro
+    imported_at: '2026-01-02'

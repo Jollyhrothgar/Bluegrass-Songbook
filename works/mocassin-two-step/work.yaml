@@ -1,0 +1,16 @@
+id: mocassin-two-step
+title: Mocassin Two-Step
+artist: Traditional
+composers:
+- Biography:Oscar "Joe" Robichaud
+default_key: G
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

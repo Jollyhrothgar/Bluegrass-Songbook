@@ -1,0 +1,17 @@
+id: a-mile-and-a-quarter
+title: A Mile And A Quarter
+artist: Sonny James
+composers:
+- Carol Smith and Sonny James
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amileandaquarterlyricschords.pro
+    imported_at: '2026-01-02'

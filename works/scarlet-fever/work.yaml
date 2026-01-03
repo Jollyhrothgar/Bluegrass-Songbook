@@ -1,0 +1,18 @@
+id: scarlet-fever
+title: Scarlet Fever
+artist: Kenny Rogers
+composers:
+- Mike Dekle
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: scarletfeverlyricschords.pro
+    imported_at: '2026-01-02'

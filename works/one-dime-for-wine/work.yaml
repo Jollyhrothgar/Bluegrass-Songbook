@@ -1,0 +1,17 @@
+id: one-dime-for-wine
+title: One Dime For Wine
+artist: Porter Wagoner
+composers:
+- Curly Putman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onedimeforwinelyricschords.pro
+    imported_at: '2026-01-02'

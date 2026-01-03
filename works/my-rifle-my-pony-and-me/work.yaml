@@ -1,0 +1,17 @@
+id: my-rifle-my-pony-and-me
+title: My Rifle My Pony And Me
+artist: Don Williams
+composers:
+- Paul F. Webster and Dimitri Tiomkin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myriflemyponyandmelyricschords.pro
+    imported_at: '2026-01-02'

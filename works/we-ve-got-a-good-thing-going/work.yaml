@@ -1,0 +1,15 @@
+id: we-ve-got-a-good-thing-going
+title: We've Got A Good Thing Going
+artist: Norma Jean
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wevegotagoodthinggoinglyricschords.pro
+    imported_at: '2026-01-02'

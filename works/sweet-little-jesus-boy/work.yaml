@@ -1,0 +1,19 @@
+id: sweet-little-jesus-boy
+title: Sweet Little Jesus Boy
+artist: Anne Murray
+composers:
+- Robert MacGimsey
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetlittleJesusboylyricschords.pro
+    imported_at: '2026-01-02'

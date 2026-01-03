@@ -1,0 +1,17 @@
+id: way-with-words
+title: Way With Words
+artist: Carl Smith
+composers:
+- Eddy Raven
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waywithwordslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: from-heaven-to-heartache-lyrics-chords
+title: From Heaven To Heartache Lyrics Chords
+artist: Eddy Arnold
+composers:
+- Ben Peters
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromheaventoheartachelyricschords.pro
+    imported_at: '2026-01-02'

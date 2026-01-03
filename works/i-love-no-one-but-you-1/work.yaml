@@ -1,0 +1,17 @@
+id: i-love-no-one-but-you-1
+title: I love No One But You
+artist: Don Gibson
+composers:
+- Charlie and Ira Louvin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovenoonebutyoulyricschords.pro
+    imported_at: '2026-01-02'

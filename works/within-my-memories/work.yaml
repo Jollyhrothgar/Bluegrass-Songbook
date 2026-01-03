@@ -1,0 +1,17 @@
+id: within-my-memories
+title: Within My Memories
+artist: Glen Campbell
+composers:
+- Mac Davis and Freddy Weller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withinmymemorieslyricschords.pro
+    imported_at: '2026-01-02'

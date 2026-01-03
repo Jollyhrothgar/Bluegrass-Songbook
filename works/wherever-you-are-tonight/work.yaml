@@ -1,0 +1,15 @@
+id: wherever-you-are-tonight
+title: Wherever You Are Tonight
+artist: Keith Whitley
+composers:
+- Don Cook, Gary Nicholson, Keith Whitley
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whereveryouaretonightlyricschords.pro
+    imported_at: '2026-01-02'

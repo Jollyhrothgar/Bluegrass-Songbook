@@ -1,0 +1,19 @@
+id: lying-comes-so-easy-to-your-lips
+title: Lying Comes So Easy To Your Lips
+artist: David Allan Coe
+default_key: G
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lyingcomessoeasytoyourlipslyricschords.pro
+    imported_at: '2026-01-02'

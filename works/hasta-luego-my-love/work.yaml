@@ -1,0 +1,17 @@
+id: hasta-luego-my-love
+title: Hasta Luego My Love
+artist: David Ball
+composers:
+- Jennifer Kimball, Tommy James, Terry McBride
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hastaluegomylovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: he-can-t-help-it-if-he-s-not-you
+title: He Can't Help It If He's Not You
+artist: Anne Murray
+composers:
+- Steve Gillette
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hecanthelpitifhesnotyoulyricschords.pro
+    imported_at: '2026-01-02'

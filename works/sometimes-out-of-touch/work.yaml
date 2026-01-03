@@ -1,0 +1,15 @@
+id: sometimes-out-of-touch
+title: Sometimes Out Of Touch
+artist: Alabama
+composers:
+- Teddy Gentry, Greg Fowler, Ronnie Rogers
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sometimesoutoftouchlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: nickels-and-dimes-and-love
+title: Nickels And Dimes And Love
+artist: Vern Gosdin
+composers:
+- Johnny McRae and Steve Clark
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nickelsanddimesandlovelyricsandchords.pro
+    imported_at: '2026-01-02'

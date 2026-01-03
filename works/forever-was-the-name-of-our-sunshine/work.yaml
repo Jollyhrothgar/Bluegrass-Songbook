@@ -1,0 +1,17 @@
+id: forever-was-the-name-of-our-sunshine
+title: Forever Was The Name Of Our Sunshine
+artist: Faron Young
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foreverwasthenameofoursunshinelyricschords.pro
+    imported_at: '2026-01-02'

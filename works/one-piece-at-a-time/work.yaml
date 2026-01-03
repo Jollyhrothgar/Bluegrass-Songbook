@@ -1,0 +1,22 @@
+id: one-piece-at-a-time
+title: One Piece At A Time
+artist: Johnny Cash
+composers:
+- Wayne Kemp
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onepieceatatimelyricschords.pro
+    imported_at: '2026-01-02'

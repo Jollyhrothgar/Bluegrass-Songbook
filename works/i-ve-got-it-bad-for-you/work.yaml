@@ -1,0 +1,15 @@
+id: i-ve-got-it-bad-for-you
+title: I've Got It Bad For You
+artist: Buck Owens and Don Rich
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotitbadforyoulyricschords.pro
+    imported_at: '2026-01-02'

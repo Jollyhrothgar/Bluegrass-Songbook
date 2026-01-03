@@ -1,0 +1,15 @@
+id: swing-blues-no-1
+title: Swing Blues No. 1
+artist: Bob Wills
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: swingbluesno1lyricschords.pro
+    imported_at: '2026-01-02'

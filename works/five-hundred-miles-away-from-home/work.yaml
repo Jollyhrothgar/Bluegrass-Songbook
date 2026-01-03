@@ -1,0 +1,17 @@
+id: five-hundred-miles-away-from-home
+title: Five Hundred Miles Away From Home
+artist: Bobby Bare
+composers:
+- Bobby Bare and Charlie Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fivehundredmilesawayfromhomelyricschords.pro
+    imported_at: '2026-01-02'

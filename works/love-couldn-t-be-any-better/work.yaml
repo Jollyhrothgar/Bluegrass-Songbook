@@ -1,0 +1,15 @@
+id: love-couldn-t-be-any-better
+title: Love Couldn't Be Any Better
+artist: Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovecouldntbeanybetterlyricschords.pro
+    imported_at: '2026-01-02'

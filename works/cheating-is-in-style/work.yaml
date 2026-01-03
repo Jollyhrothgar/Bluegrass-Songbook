@@ -1,0 +1,17 @@
+id: cheating-is-in-style
+title: Cheating Is In Style
+artist: Wynn Stewart
+composers:
+- Tommy Crelila and B. Weaver
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cheatingisinstylelyricschords.pro
+    imported_at: '2026-01-02'

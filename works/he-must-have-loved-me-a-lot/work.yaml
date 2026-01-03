@@ -1,0 +1,17 @@
+id: he-must-have-loved-me-a-lot
+title: He Must Have Loved Me A Lot
+artist: Doyle Lawson
+composers:
+- Ida D. Gaskin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hemusthavelovedmealotlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: back-home-again-in-indiana
+title: Back Home Again In Indiana
+artist: Bob Wills
+composers:
+- James F. Hanley and Ballard MacDonald
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backhomeagaininindianalyricschords.pro
+    imported_at: '2026-01-02'

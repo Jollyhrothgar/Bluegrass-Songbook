@@ -1,0 +1,17 @@
+id: along-came-you
+title: Along Came You
+artist: George Jones
+composers:
+- Wayne Kemp, George Jones, Jack Rich
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alongcameyoulyricschords.pro
+    imported_at: '2026-01-02'

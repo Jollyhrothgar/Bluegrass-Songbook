@@ -1,0 +1,17 @@
+id: whose-heart-are-you-breaking-now
+title: Whose Heart are You Breaking Now
+artist: Ray Price
+composers:
+- Fred Rose
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoseheartareyoubreakingnowlyricschords.pro
+    imported_at: '2026-01-02'

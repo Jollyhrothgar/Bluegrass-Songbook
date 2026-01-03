@@ -1,0 +1,18 @@
+id: if-i-had-it-my-way
+title: If I Had It My Way
+artist: Reba McEntire
+composers:
+- Robert Jones and Jerry Tayler
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifihaditmywaylyricschords.pro
+    imported_at: '2026-01-02'

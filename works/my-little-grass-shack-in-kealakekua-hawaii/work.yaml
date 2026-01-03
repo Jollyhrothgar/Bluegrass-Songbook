@@ -1,0 +1,19 @@
+id: my-little-grass-shack-in-kealakekua-hawaii
+title: My Little Grass Shack In Kealakekua Hawaii
+artist: Hank Snow
+composers:
+- Bill Cogswell, Tommy Harrison, Johnny Noble
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylittlegrassshackinkealakekuahawaiilyricschords.pro
+    imported_at: '2026-01-02'

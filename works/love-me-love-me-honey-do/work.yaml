@@ -1,0 +1,20 @@
+id: love-me-love-me-honey-do
+title: Love Me Love Me Honey Do
+artist: Patsy Cline
+composers:
+- W.S. Stevenson, Clyde Beam, Charles Jiles
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovemelovemehoneydolyricschords.pro
+    imported_at: '2026-01-02'

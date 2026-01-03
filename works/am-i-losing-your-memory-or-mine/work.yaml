@@ -1,0 +1,17 @@
+id: am-i-losing-your-memory-or-mine
+title: Am I Losing Your Memory Or Mine
+artist: George Jones
+composers:
+- D. Kirby and R. Lane
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amilosingyourmemoryorminelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: i-ll-always-be-blue
+title: I'll Always Be Blue
+artist: George Morgan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illalwaysbebluelyricschords.pro
+    imported_at: '2026-01-02'

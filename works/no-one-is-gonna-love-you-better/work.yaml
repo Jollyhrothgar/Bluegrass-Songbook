@@ -1,0 +1,15 @@
+id: no-one-is-gonna-love-you-better
+title: No One Is Gonna Love You Better
+artist: Heather Myles
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nooneisgonnaloveyoubetterlyricschords.pro
+    imported_at: '2026-01-02'

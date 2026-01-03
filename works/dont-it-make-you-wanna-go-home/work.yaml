@@ -1,0 +1,17 @@
+id: dont-it-make-you-wanna-go-home
+title: Don’t It Make You Wanna Go Home
+artist: Bobby Bare
+composers:
+- Joe South
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontItmakeyouwannagohomelyricschords.pro
+    imported_at: '2026-01-02'

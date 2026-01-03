@@ -1,0 +1,19 @@
+id: hey-doll-baby
+title: Hey Doll Baby
+artist: The Everly Brothers
+composers:
+- Titus Turner
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heydollbabylyricschords.pro
+    imported_at: '2026-01-02'

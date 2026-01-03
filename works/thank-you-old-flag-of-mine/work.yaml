@@ -1,0 +1,17 @@
+id: thank-you-old-flag-of-mine
+title: Thank You Old Flag Of Mine
+artist: Boxcar Willie
+composers:
+- Bill Mack
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankyouoldflagofminelyricschords.pro
+    imported_at: '2026-01-02'

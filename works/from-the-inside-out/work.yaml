@@ -1,0 +1,17 @@
+id: from-the-inside-out
+title: From The Inside Out
+artist: Tracy Lawrence
+composers:
+- Thomas Miller and Rick Huckaby
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromtheinsideoutlyricschords.pro
+    imported_at: '2026-01-02'

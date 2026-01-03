@@ -1,0 +1,15 @@
+id: bet-your-heart-on-me
+title: Bet Your Heart On Me
+artist: Jack Greene
+composers:
+- Jim McBride
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betyourheartonmelyricsandchords.pro
+    imported_at: '2026-01-02'

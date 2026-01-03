@@ -1,0 +1,17 @@
+id: what-good-would-it-do
+title: What Good Would It Do
+artist: Faron Young
+composers:
+- Billy Deaton and Jerry Len Pitts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatgoodwoulditdolyricsandchords.pro
+    imported_at: '2026-01-02'

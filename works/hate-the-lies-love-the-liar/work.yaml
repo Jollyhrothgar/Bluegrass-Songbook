@@ -1,0 +1,18 @@
+id: hate-the-lies-love-the-liar
+title: Hate The Lies Love The Liar
+artist: Ronnie Milsap
+composers:
+- Steve Dorff and Mack David
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hatethelieslovetheliarlyricschords.pro
+    imported_at: '2026-01-02'

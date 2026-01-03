@@ -1,0 +1,19 @@
+id: it-s-the-age-that-makes-the-difference
+title: It's The Age That Makes The Difference
+artist: Ernest Tubb
+composers:
+- George Sherry and Vernon Claude
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itstheagethatmakesthedifferencelyricschords.pro
+    imported_at: '2026-01-02'

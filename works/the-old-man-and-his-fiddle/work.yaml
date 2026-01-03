@@ -1,0 +1,15 @@
+id: the-old-man-and-his-fiddle
+title: The Old Man And His Fiddle
+artist: Red Steagall
+composers:
+- Red Steagall and Richard O'Brien
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldmanandhisfiddlelyricschords.pro
+    imported_at: '2026-01-02'

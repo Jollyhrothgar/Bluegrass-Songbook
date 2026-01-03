@@ -1,0 +1,16 @@
+id: it-s-my-fault
+title: It's My Fault
+artist: Hank Thompson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsmyfaultlyricschords.pro
+    imported_at: '2026-01-02'

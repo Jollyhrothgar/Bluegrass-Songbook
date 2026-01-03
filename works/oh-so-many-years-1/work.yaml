@@ -1,0 +1,19 @@
+id: oh-so-many-years-1
+title: Oh So Many Years
+artist: the Everly Brothers
+composers:
+- Frankie Bailes
+default_key: C
+tags:
+- Pop
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohsomanyyearslyricschords.pro
+    imported_at: '2026-01-02'

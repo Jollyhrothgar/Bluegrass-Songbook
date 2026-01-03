@@ -1,0 +1,16 @@
+id: after-the-love-slips-away
+title: After The Love Slips Away
+artist: Earl Thomas Conley
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aftertheloveslipsawaylyricschords.pro
+    imported_at: '2026-01-02'

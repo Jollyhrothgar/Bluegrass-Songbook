@@ -1,0 +1,19 @@
+id: everybodys-reaching-out-for-someone
+title: Everybody’s Reaching Out For Someone
+artist: Brenda Lee
+composers:
+- Dickey Lee and Allen Reynolds
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodysreachingoutforsomeonelyricschords.pro
+    imported_at: '2026-01-02'

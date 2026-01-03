@@ -1,0 +1,22 @@
+id: long-legged-guitar-picking-man
+title: Long Legged Guitar Picking Man
+artist: Johnny Cash
+composers:
+- Marshall Grant
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: longleggedguitarpickingmanlyricschords.pro
+    imported_at: '2026-01-02'

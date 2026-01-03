@@ -1,0 +1,18 @@
+id: coming-home
+title: Coming Home
+artist: Roy Orbison
+composers:
+- Roy Orbison, Will Jennings, J.D. Souther
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cominghomelyricschords.pro
+    imported_at: '2026-01-02'

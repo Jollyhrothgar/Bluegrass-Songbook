@@ -1,0 +1,17 @@
+id: charlotte-s-in-north-carolina
+title: Charlotte's in North Carolina
+artist: Keith Whitley Conley
+composers:
+- Dean Dillon, Blake Mevis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: charlottesinnorthcarolinalyricschords.pro
+    imported_at: '2026-01-02'

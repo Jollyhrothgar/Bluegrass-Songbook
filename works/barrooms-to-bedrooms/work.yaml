@@ -1,0 +1,17 @@
+id: barrooms-to-bedrooms
+title: Barrooms To Bedrooms
+artist: David Wills
+composers:
+- Seymour S. Rosenberg and David Wills
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: barroomstobedroomslyricschords.pro
+    imported_at: '2026-01-02'

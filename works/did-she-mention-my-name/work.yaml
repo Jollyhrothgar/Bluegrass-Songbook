@@ -1,0 +1,16 @@
+id: did-she-mention-my-name
+title: Did She Mention My Name
+artist: Gordon Lightfoot
+default_key: G
+tags:
+- Folk
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didshementionmynamelyricsandchords.pro
+    imported_at: '2026-01-02'

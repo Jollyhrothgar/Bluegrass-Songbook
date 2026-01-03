@@ -1,0 +1,21 @@
+id: walk-a-mile-in-my-shoes
+title: Walk A Mile In My Shoes
+artist: Elvis Presley
+composers:
+- Joe South
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkamileinmyshoeslyricschords.pro
+    imported_at: '2026-01-02'

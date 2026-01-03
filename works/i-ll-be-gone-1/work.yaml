@@ -1,0 +1,17 @@
+id: i-ll-be-gone-1
+title: I'll Be Gone
+artist: Hawkshaw Hawkins
+composers:
+- Billy Smith, Alicia Smith, Evelyn Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbegonelyricschords.pro
+    imported_at: '2026-01-02'

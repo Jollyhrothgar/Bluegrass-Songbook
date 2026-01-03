@@ -1,0 +1,17 @@
+id: the-number-he-gave-me-was-mine
+title: The Number He Gave Me Was Mine
+artist: Vern Gosdin
+composers:
+- Dennis Knutson and Vern Gosdin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thenumberhegavemewasminelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: let-her-go-god-bless-her
+title: Let Her Go God Bless Her
+artist: The Louvin Brothers
+default_key: C
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lethergoGodBlessHerlyricschords.pro
+    imported_at: '2026-01-02'

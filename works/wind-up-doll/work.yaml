@@ -1,0 +1,17 @@
+id: wind-up-doll
+title: Wind Up Doll
+artist: Jim Reeves
+composers:
+- Roger Miller and Justin Tubb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: windupdolllyricschords.pro
+    imported_at: '2026-01-02'

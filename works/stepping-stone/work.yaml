@@ -1,0 +1,17 @@
+id: stepping-stone
+title: Stepping Stone
+artist: Little Jimmy Dickens
+composers:
+- Smokey Stover
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: steppingstonelyricschords.pro
+    imported_at: '2026-01-02'

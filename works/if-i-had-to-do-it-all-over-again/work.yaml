@@ -1,0 +1,17 @@
+id: if-i-had-to-do-it-all-over-again
+title: If I Had To Do It All Over Again
+artist: Roy Clark
+composers:
+- Bobby Springfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifihadtodoitalloveragainlyricschords.pro
+    imported_at: '2026-01-02'

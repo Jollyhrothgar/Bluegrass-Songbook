@@ -1,0 +1,15 @@
+id: red-rocking-chair-1
+title: Red Rocking Chair
+artist: Doc Watson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: redrockingchairlyricschords.pro
+    imported_at: '2026-01-02'

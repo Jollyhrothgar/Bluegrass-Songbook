@@ -1,0 +1,18 @@
+id: house-of-the-rising-sun
+title: House Of The Rising Sun
+artist: Conway Twitty
+composers:
+- Alan Price
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: houseoftherisingsunlyricschords.pro
+    imported_at: '2026-01-02'

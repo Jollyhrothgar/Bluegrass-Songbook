@@ -1,0 +1,15 @@
+id: ashes-to-ashes
+title: Ashes To Ashes
+artist: Gene Watson
+composers:
+- Joe Chambers and Larry Jenkins
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ashestoasheslyricschords.pro
+    imported_at: '2026-01-02'

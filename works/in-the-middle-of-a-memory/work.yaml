@@ -1,0 +1,17 @@
+id: in-the-middle-of-a-memory
+title: In The Middle Of A Memory
+artist: Carl Belew
+composers:
+- Carl Belew and Clyde Pitts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthemiddleofamemorylyricschords.pro
+    imported_at: '2026-01-02'

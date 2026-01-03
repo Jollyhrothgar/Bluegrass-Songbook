@@ -1,0 +1,17 @@
+id: you-ve-got-a-good-love-coming
+title: You've Got A Good Love Coming
+artist: Conway Twitty
+composers:
+- Danny Morrison, Jeff Silbar, Van Stephenson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotagoodlovecominglyricschords.pro
+    imported_at: '2026-01-02'

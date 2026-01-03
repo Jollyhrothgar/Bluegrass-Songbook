@@ -1,0 +1,15 @@
+id: go-little-prayer
+title: Go Little Prayer
+artist: Eddy Arnold
+composers:
+- Harry Wilson and Harold Wetherell
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: golittleprayerlyricschords.pro
+    imported_at: '2026-01-02'

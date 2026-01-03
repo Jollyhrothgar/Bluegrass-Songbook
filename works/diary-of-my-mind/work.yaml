@@ -1,0 +1,17 @@
+id: diary-of-my-mind
+title: Diary Of My Mind
+artist: George Jones
+composers:
+- John Starks and Sadie Starks
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: diaryofmymindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: lets-just-praise-the-lord
+title: Let’s Just Praise The Lord
+artist: Wanda Jackson
+composers:
+- William Gaither and Gloria Gaither
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsjustpraisethelordlyricschords.pro
+    imported_at: '2026-01-02'

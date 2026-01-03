@@ -1,0 +1,19 @@
+id: acorn-hill-breakdown
+title: Acorn Hill (Breakdown)
+artist: Traditional
+composers:
+- Biography:Tommy Jackson
+default_key: E
+tags:
+- Modal
+- Instrumental
+- Bluegrass
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

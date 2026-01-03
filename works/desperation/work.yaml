@@ -1,0 +1,17 @@
+id: desperation
+title: Desperation
+artist: Gene Watson
+composers:
+- Gene Simmons and Gene Mabry
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: desperationlyricsandchords.pro
+    imported_at: '2026-01-02'

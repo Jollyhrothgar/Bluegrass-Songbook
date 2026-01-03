@@ -1,0 +1,17 @@
+id: when-you-re-hot-you-re-hot
+title: When You're Hot You're Hot
+artist: Porter Wagoner
+composers:
+- Curly Putman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyourehotyourehotlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: that-s-my-kind-of-woman
+title: That's My Kind Of Woman
+artist: George Strait
+composers:
+- Tammy Hyler, Dean Dillon
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsmykindofwomanlyricschords.pro
+    imported_at: '2026-01-02'

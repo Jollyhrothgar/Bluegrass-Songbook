@@ -1,0 +1,17 @@
+id: i-love-god-s-way-of-living
+title: I Love God's Way Of Living
+artist: White Mountain Bluegrass
+composers:
+- Ira Louvin and Charlie Louvin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iloveGodswayoflivinglyricschords.pro
+    imported_at: '2026-01-02'

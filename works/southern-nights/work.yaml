@@ -1,0 +1,17 @@
+id: southern-nights
+title: Southern Nights
+artist: Glen Campbell
+composers:
+- Allen Toussaint
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: southernnightslyricschords.pro
+    imported_at: '2026-01-02'

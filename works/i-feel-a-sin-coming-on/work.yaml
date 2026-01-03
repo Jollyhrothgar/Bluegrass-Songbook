@@ -1,0 +1,17 @@
+id: i-feel-a-sin-coming-on
+title: I Feel A Sin Coming On
+artist: Gene Watson
+composers:
+- Orville Couch and Eddie McDuff
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeelasincomingonlyricschords.pro
+    imported_at: '2026-01-02'

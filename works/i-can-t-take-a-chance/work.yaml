@@ -1,0 +1,17 @@
+id: i-can-t-take-a-chance
+title: I Can't Take A Chance
+artist: Carl Belew
+composers:
+- Carl Belew, Johnny Mathis, Tommy Blake
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanttakeachancelyricschords.pro
+    imported_at: '2026-01-02'

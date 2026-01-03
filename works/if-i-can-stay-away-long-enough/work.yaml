@@ -1,0 +1,15 @@
+id: if-i-can-stay-away-long-enough
+title: If I Can Stay Away Long Enough
+artist: Jack Greene
+composers:
+- Benny Martin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificanstayawaylongenoughlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: tonight-i-found-my-true-love
+title: Tonight I Found My True Love
+artist: Sonny James
+composers:
+- Jerry Fuller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tonightifoundmytruelovelyricschords.pro
+    imported_at: '2026-01-02'

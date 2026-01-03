@@ -1,0 +1,17 @@
+id: texas-gals
+title: Texas Gals
+artist: Traditional
+composers:
+- Biography:Tony Alderman & Fred Roe
+default_key: E
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

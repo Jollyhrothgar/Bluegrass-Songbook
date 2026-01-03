@@ -1,0 +1,15 @@
+id: goodbye
+title: Goodbye
+artist: Eddy Arnold
+composers:
+- Larry Butler and Buddy Killen
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodbyelyricschords.pro
+    imported_at: '2026-01-02'

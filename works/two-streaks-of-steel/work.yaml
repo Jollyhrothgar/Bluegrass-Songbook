@@ -1,0 +1,19 @@
+id: two-streaks-of-steel
+title: Two Streaks Of Steel
+artist: Waylon Jennings
+composers:
+- Ben Peters
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twostreaksofsteellyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: one-window-four-walls
+title: One Window Four Walls
+artist: Marty Robbins
+composers:
+- Melissa Cordell and Ann Russell
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onewindowfourwallslyricschords.pro
+    imported_at: '2026-01-02'

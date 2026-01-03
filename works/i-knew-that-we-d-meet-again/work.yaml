@@ -1,0 +1,19 @@
+id: i-knew-that-we-d-meet-again
+title: I Knew That We'd Meet Again
+artist: Hank Snow
+composers:
+- Allan Flynn, Bert Douglas, Ernest Brewer
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknewthatwedmeetagainlyricschords.pro
+    imported_at: '2026-01-02'

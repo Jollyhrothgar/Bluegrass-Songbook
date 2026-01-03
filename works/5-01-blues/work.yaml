@@ -1,0 +1,18 @@
+id: 5-01-blues
+title: 5:01 Blues
+artist: Merle Haggard
+composers:
+- Michael Garvin and Jeff Tweel
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 501blueslyricschords.pro
+    imported_at: '2026-01-02'

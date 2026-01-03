@@ -1,0 +1,15 @@
+id: so-you-think-you-ve-got-troubles
+title: So You Think You've Got Troubles
+artist: Marvin Rainwater
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: soyouthinkyouvegottroubleslyricschords.pro
+    imported_at: '2026-01-02'

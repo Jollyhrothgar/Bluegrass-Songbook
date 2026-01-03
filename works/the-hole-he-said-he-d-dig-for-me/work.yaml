@@ -1,0 +1,20 @@
+id: the-hole-he-said-he-d-dig-for-me
+title: The Hole He Said He'd Dig For Me
+artist: Jerry Lee Lewis
+composers:
+- Marian Turner and Z.Z. Zillion
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theholehesaidheddigformelyricschords.pro
+    imported_at: '2026-01-02'

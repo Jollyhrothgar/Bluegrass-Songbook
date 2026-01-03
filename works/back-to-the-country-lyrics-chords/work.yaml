@@ -1,0 +1,19 @@
+id: back-to-the-country-lyrics-chords
+title: Back To The Country Lyrics Chords
+artist: Loretta Lynn
+composers:
+- Tracey Lee
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backtothecountrylyricschords.pro
+    imported_at: '2026-01-02'

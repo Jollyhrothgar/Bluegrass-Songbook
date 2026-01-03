@@ -1,0 +1,15 @@
+id: i-m-on-my-way-home
+title: I'm On My Way Home
+artist: Johnny Paycheck
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imonmywayhomelyricschords.pro
+    imported_at: '2026-01-02'

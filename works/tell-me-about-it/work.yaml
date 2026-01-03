@@ -1,0 +1,18 @@
+id: tell-me-about-it
+title: Tell Me About It
+artist: Tanya Tucker
+composers:
+- Bill LaBounty and Pat McLaughlin
+default_key: D
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmeaboutitlyricschords.pro
+    imported_at: '2026-01-02'

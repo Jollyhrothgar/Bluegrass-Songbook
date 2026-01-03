@@ -1,0 +1,19 @@
+id: see-you-around-on-your-way-down
+title: See You Around On Your Way Down
+artist: Waylon Jennings
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: seeyouaroundonyourwaydownlyricschords.pro
+    imported_at: '2026-01-02'

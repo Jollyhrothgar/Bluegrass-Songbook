@@ -1,0 +1,17 @@
+id: in-his-world
+title: In His World
+artist: Emmylou Harris
+composers:
+- Leigh Reynolds and Kostas Lazarides
+default_key: C
+tags:
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inhisworldlyricschords.pro
+    imported_at: '2026-01-02'

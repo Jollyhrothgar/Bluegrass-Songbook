@@ -1,0 +1,18 @@
+id: the-same-old-tale-the-crow-told-me
+title: The Same Old Tale The Crow Told Me
+artist: Johnny Horton
+composers:
+- Bill Carlisle
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesameoldtalethecrowtoldmelyricschords.pro
+    imported_at: '2026-01-02'

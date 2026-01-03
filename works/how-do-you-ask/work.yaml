@@ -1,0 +1,17 @@
+id: how-do-you-ask
+title: How Do You Ask
+artist: Billy Walker
+composers:
+- Fred Foster and Dale Ward
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howdoyouasklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: according-to-my-heart
+title: According to my Heart
+artist: Faron Young
+composers:
+- Gary Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: accordingtomyheartlyricschords.pro
+    imported_at: '2026-01-02'

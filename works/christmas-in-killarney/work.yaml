@@ -1,0 +1,18 @@
+id: christmas-in-killarney
+title: Christmas In Killarney
+artist: Anne Murray
+composers:
+- Frank Weldon, James Cavanaugh, John Redmond
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasinkillarneylyricschords.pro
+    imported_at: '2026-01-02'

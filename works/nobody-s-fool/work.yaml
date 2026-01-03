@@ -1,0 +1,17 @@
+id: nobody-s-fool
+title: Nobody's Fool
+artist: Jim Reeves
+composers:
+- Hal Bynum
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodysfoollyricschords.pro
+    imported_at: '2026-01-02'

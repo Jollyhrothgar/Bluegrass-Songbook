@@ -1,0 +1,17 @@
+id: these-days-i-barely-get-by
+title: These Days I Barely Get By
+artist: George Jones
+composers:
+- Tammy Wynette and George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesedaysibarelygetbylyricschords.pro
+    imported_at: '2026-01-02'

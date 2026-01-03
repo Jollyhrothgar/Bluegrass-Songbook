@@ -1,0 +1,17 @@
+id: i-never-knew-love-until-i-met-you
+title: I Never Knew Love (Until I Met You)
+artist: George Morgan
+composers:
+- Betty Jean Robinson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineverknewloveuntilimetyoulyricschords.pro
+    imported_at: '2026-01-02'

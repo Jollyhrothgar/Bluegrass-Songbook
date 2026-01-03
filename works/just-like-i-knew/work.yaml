@@ -1,0 +1,17 @@
+id: just-like-i-knew
+title: Just Like I Knew
+artist: Norma Jean
+composers:
+- Mel Tillis and Marijohn Wilkin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justlikeiknewlyricschords.pro
+    imported_at: '2026-01-02'

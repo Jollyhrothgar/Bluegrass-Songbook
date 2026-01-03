@@ -1,0 +1,19 @@
+id: it-s-just-not-that-easy
+title: It's Just Not That Easy
+artist: Mel Tillis
+composers:
+- Buddy Cannon, Gene Dunlap, Billy Williams
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsjustnotthateasylyricschords.pro
+    imported_at: '2026-01-02'

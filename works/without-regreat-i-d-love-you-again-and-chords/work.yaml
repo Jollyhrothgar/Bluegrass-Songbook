@@ -1,0 +1,17 @@
+id: without-regreat-i-d-love-you-again-and-chords
+title: Without Regreat I'd Love You Again and Chords
+artist: Faron Young
+composers:
+- Dallas Frazier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withoutregretidloveyouagainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: mean-old-bed-bug-blues
+title: Mean Old Bed Bug Blues
+artist: Hawkshaw Hawkins
+composers:
+- Ernest Tubb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meanoldbedbugblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: it-rains-just-the-same-in-missouri
+title: It Rains Just The Same In Missouri
+artist: Mac Wiseman
+composers:
+- Ray Griff and Tommy Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itrainsjustthesameinmissourilyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: plaid-and-calico
+title: Plaid and Calico
+artist: Johnny Horton
+composers:
+- Bruce Blalock and Wes McWain
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: plaidandcalicolyricschords.pro
+    imported_at: '2026-01-02'

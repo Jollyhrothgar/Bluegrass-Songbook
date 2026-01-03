@@ -1,0 +1,19 @@
+id: ease-your-pain
+title: Ease Your Pain
+artist: Anne Murray
+composers:
+- Hoyt Axton
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easeyourpainlyricschords.pro
+    imported_at: '2026-01-02'

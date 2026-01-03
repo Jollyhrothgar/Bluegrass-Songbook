@@ -1,0 +1,17 @@
+id: thinking-bout-you-babe
+title: Thinking Bout You Babe
+artist: Billy Walker
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thinkingboutyoubabelyricschords.pro
+    imported_at: '2026-01-02'

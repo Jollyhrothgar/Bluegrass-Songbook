@@ -1,0 +1,17 @@
+id: will-you-travel-down-this-road-with-me
+title: Will You Travel Down This Road With Me
+artist: George Jones
+composers:
+- Jamie O'Hara and Kieran Kane
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willyoutraveldownthisroadwithmelyricschords.pro
+    imported_at: '2026-01-02'

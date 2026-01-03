@@ -1,0 +1,15 @@
+id: till-i-m-over-gettin-over-you
+title: Till I'm Over Gettin' Over You
+artist: Vern Gosdin
+composers:
+- Gary S. Paxton, Shirl Milete, Vern Gosdin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillimovergettinoveryoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: great-is-thy-faithfulness
+title: Great Is Thy Faithfulness
+artist: Gary Morris
+composers:
+- Thomas O. Chisholm and William M. Runyan
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: greatisthyfaithfulnesslyricschords.pro
+    imported_at: '2026-01-02'

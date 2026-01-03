@@ -1,0 +1,18 @@
+id: i-m-alone-because-i-love-you
+title: I'm Alone Because I Love You
+artist: Jim Reeves
+composers:
+- Ira Schuster and Joe Young
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imalonebecauseiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: till-melinda-comes-around
+title: Till Melinda Comes Around
+artist: Gene Watson
+composers:
+- Glenn Ray
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillmelindacomesaroundlyricschords.pro
+    imported_at: '2026-01-02'

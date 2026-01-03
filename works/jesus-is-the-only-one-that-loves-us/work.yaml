@@ -1,0 +1,17 @@
+id: jesus-is-the-only-one-that-loves-us
+title: Jesus Is The Only One That Loves Us
+artist: Bobby Bare
+composers:
+- Bobby Bare and Billy Joe Shaver
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusistheonlyonethatlovesuslyricschords.pro
+    imported_at: '2026-01-02'

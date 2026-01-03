@@ -1,0 +1,15 @@
+id: her-crown-she-has-won
+title: Her Crown She Has Won
+artist: Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hercrownshehaswonlyricschords.pro
+    imported_at: '2026-01-02'

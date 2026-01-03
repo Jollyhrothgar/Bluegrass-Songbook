@@ -1,0 +1,17 @@
+id: santa-s-gonna-come-in-a-pickup-truck
+title: Santa's Gonna Come In A Pickup Truck
+artist: Alan Jackson
+composers:
+- Red Simpson and Don Rich
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: santasgonnacomeinapickuptrucklyricschords.pro
+    imported_at: '2026-01-02'

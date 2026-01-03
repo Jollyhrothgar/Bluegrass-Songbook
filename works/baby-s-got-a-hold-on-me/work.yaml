@@ -1,0 +1,20 @@
+id: baby-s-got-a-hold-on-me
+title: Baby's Got A Hold On Me
+artist: Nitty Gritty Dirt Band
+composers:
+- Jeffrey Hanna, Robert Carpenter, Josh Leo
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babysgotaholdonmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: love-oh-love-please-come-home
+title: Love Oh Love Please Come Home
+artist: Bill Monroe
+composers:
+- Leon Jackson
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveohlovepleasecomehomelyricschords.pro
+    imported_at: '2026-01-02'

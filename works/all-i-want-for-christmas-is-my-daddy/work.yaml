@@ -1,0 +1,17 @@
+id: all-i-want-for-christmas-is-my-daddy
+title: All I Want For Christmas Is My Daddy
+artist: Buck Owens
+composers:
+- Buck Owens and Jimmy Snyder
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alliwantforChristmasismydaddylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: too-big-to-fight
+title: Too Big To Fight
+artist: Ray Price
+composers:
+- Lobo Loggins and Johnny McCollum
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toobigtofightlyricschords.pro
+    imported_at: '2026-01-02'

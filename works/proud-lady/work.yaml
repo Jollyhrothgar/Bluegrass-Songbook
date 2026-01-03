@@ -1,0 +1,17 @@
+id: proud-lady
+title: Proud Lady
+artist: Bob Luman
+composers:
+- Sonny Throckmorton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: proudladylyricschords.pro
+    imported_at: '2026-01-02'

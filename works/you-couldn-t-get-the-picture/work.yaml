@@ -1,0 +1,17 @@
+id: you-couldn-t-get-the-picture
+title: You Couldn't Get The Picture
+artist: George Jones
+composers:
+- Chuck Harter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcouldntgetthepicturelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: honky-tonk-christmas-1
+title: Honky Tonk Christmas
+artist: Mickey Gilley
+composers:
+- Ralph James Murphy
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkChristmaslyricschords.pro
+    imported_at: '2026-01-02'

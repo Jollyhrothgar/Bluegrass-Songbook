@@ -1,0 +1,17 @@
+id: your-picture-in-the-paper
+title: Your Picture In The Paper
+artist: Statler Brothers
+composers:
+- Don Reid
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourpictureinthepaperlyricschords.pro
+    imported_at: '2026-01-02'

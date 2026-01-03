@@ -1,0 +1,18 @@
+id: what-else-could-i-do
+title: What Else Could I Do
+artist: Rhonda Vincent
+composers:
+- Curtis Wright and Robert E. Orrall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatelsecouldidolyricschords.pro
+    imported_at: '2026-01-02'

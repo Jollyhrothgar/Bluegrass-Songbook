@@ -1,0 +1,19 @@
+id: that-s-the-chance-i-ll-have-to-take
+title: That's The Chance I'll Have To Take
+artist: Waylon Jennings
+composers:
+- Jackson King
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsthechanceillhavetotakelyricschords.pro
+    imported_at: '2026-01-02'

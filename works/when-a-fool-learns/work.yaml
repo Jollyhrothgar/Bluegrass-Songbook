@@ -1,0 +1,15 @@
+id: when-a-fool-learns
+title: When A Fool Learns
+artist: Gene Watson
+composers:
+- Steve Clark and Rick Peoples
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenafoollearnslyricschords.pro
+    imported_at: '2026-01-02'

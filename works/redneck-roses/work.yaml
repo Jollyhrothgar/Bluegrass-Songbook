@@ -1,0 +1,18 @@
+id: redneck-roses
+title: Redneck Roses
+artist: Tracy Byrd
+composers:
+- Byron Hill and Tracy Byrd
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: redneckroseslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: believe
+title: Believe
+artist: Brooks And Dunn
+composers:
+- Craig Wiseman and Ronnie Dunn
+default_key: G
+tags:
+- Modal
+- Jazzy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: believe1lyricschords.pro
+    imported_at: '2026-01-02'

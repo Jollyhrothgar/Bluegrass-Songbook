@@ -1,0 +1,17 @@
+id: i-never-did-know
+title: I Never Did Know
+artist: David Ball
+composers:
+- David Ball and Dean Dillon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineverdidknowlyricschords.pro
+    imported_at: '2026-01-02'

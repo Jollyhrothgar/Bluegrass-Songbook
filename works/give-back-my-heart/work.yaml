@@ -1,0 +1,15 @@
+id: give-back-my-heart
+title: Give Back My Heart
+artist: Billy Walker
+composers:
+- Billy Walker and Freddie Hart
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givebackmyheartlyricschords.pro
+    imported_at: '2026-01-02'

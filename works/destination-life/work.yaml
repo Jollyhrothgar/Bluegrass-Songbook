@@ -1,0 +1,18 @@
+id: destination-life
+title: Destination Life
+artist: Rhonda Vincent
+composers:
+- Donna Noeline Dean
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: destinationlifelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: teardrops-on-the-roses
+title: Teardrops On The Roses
+artist: George Morgan
+composers:
+- Jenny Lou Carson and Johnny Lange
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: teardropsontheroseslyricschords.pro
+    imported_at: '2026-01-02'

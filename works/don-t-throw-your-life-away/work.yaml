@@ -1,0 +1,17 @@
+id: don-t-throw-your-life-away
+title: Don't Throw Your Life Away
+artist: Webb Pierce
+composers:
+- Webb Pierce and Billy Wallace
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontthrowyourlifeawaylyricschords.pro
+    imported_at: '2026-01-02'

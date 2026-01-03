@@ -1,0 +1,17 @@
+id: walk-on-boy
+title: Walk On Boy
+artist: Jimmy Dean
+composers:
+- Wayne P. Walker and Mel Tillis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkonboylyricschords.pro
+    imported_at: '2026-01-02'

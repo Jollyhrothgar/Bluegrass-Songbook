@@ -1,0 +1,18 @@
+id: a-true-love-goodbye
+title: A True Love Goodbye
+artist: Roy Orbison
+composers:
+- Norman Petty and Roy K. Orbison
+default_key: G
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atruelovegoodbyelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-bobba-wobba-wedding
+title: The Bobba Wobba Wedding
+artist: Chad Morgan
+composers:
+- John Ashe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebobbawobbaweddinglyricschords.pro
+    imported_at: '2026-01-02'

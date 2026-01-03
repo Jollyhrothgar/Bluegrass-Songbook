@@ -1,0 +1,17 @@
+id: search-through-the-ashes
+title: Search Through The Ashes
+artist: Wynn Stewart
+composers:
+- Robert Bozo Darnell and Jack Gunter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: searchthroughtheasheslyricschords.pro
+    imported_at: '2026-01-02'

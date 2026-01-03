@@ -1,0 +1,18 @@
+id: its-never-gonna-be-the-same-again
+title: It’s Never Gonna Be The Same Again
+artist: Kris Kristofferson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsnevergonnabethesameagainlyricschords.pro
+    imported_at: '2026-01-02'

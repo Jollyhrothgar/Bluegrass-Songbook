@@ -1,0 +1,17 @@
+id: come-back-darling
+title: Come Back Darling
+artist: Lester Flatt and Earl Scruggs
+composers:
+- Lester Flatt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comebackdarlinglyricschords.pro
+    imported_at: '2026-01-02'

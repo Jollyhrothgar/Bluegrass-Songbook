@@ -1,0 +1,18 @@
+id: i-can-t-even-walk-without-you-holding-my-hand
+title: I Can't Even Walk (Without You Holding My Hand)
+artist: Marty Stuart
+composers:
+- Colbert Croft and Joyce Croft
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantevenwalklyricschords.pro
+    imported_at: '2026-01-02'

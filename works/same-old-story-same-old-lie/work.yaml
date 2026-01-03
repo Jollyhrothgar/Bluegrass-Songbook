@@ -1,0 +1,17 @@
+id: same-old-story-same-old-lie
+title: Same Old Story Same Old Lie
+artist: Norma Jean
+composers:
+- Betty Jean Robinson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sameoldstorysameoldlielyricschords.pro
+    imported_at: '2026-01-02'

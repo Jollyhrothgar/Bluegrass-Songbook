@@ -1,0 +1,18 @@
+id: i-ain-t-got-nobody
+title: I Ain't Got Nobody
+artist: Bob Wills
+composers:
+- Dave Peyton, Roger Graham, Spencer Williams
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iaintgotnobodylyricschords.pro
+    imported_at: '2026-01-02'

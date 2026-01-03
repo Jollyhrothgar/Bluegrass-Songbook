@@ -1,0 +1,18 @@
+id: heaven-ain-t-ready-for-you-yet
+title: Heaven Ain't Ready For You Yet
+artist: Emmylou Harris
+composers:
+- Paul Kennerley
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavenaintreadyforyouyetlyricschords.pro
+    imported_at: '2026-01-02'

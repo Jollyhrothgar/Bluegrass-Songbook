@@ -1,0 +1,17 @@
+id: you-re-dancin-this-dance-all-wrong
+title: You're Dancin' This Dance All Wrong
+artist: George Strait
+composers:
+- Sanger D. Shafer
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youredancinthisdanceallwronglyricschords.pro
+    imported_at: '2026-01-02'

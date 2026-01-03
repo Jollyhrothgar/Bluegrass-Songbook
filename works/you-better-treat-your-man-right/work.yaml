@@ -1,0 +1,17 @@
+id: you-better-treat-your-man-right
+title: You Better Treat Your Man Right
+artist: George Jones
+composers:
+- Wayne Raney
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youbettertreatyourmanrightlyricschords.pro
+    imported_at: '2026-01-02'

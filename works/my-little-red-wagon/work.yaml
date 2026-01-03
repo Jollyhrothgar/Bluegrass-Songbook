@@ -1,0 +1,19 @@
+id: my-little-red-wagon
+title: My Little Red Wagon
+artist: Hank Thompson
+composers:
+- Rex Griffin
+default_key: D
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylittleredwagonlyricschords.pro
+    imported_at: '2026-01-02'

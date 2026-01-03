@@ -1,0 +1,15 @@
+id: you-re-that-much-woman-to-me
+title: You're That Much Woman To Me
+artist: George Morgan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethatmuchwomantomelyricschords.pro
+    imported_at: '2026-01-02'

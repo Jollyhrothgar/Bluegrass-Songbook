@@ -1,0 +1,18 @@
+id: when-i-stop-leaving-ill-be-gone
+title: When I Stop Leaving I’ll Be Gone
+artist: Charley Pride
+composers:
+- Kent M. Robbins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenistopleavingillbegonelyricschords.pro
+    imported_at: '2026-01-02'

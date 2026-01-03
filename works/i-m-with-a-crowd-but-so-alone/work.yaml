@@ -1,0 +1,19 @@
+id: i-m-with-a-crowd-but-so-alone
+title: I'm With A Crowd But So Alone
+artist: Ernest Tubb
+composers:
+- Ernest Tubb and Carl Story
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imwithacrowdbutsoalonelyricschords.pro
+    imported_at: '2026-01-02'

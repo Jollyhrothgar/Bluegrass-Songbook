@@ -1,0 +1,18 @@
+id: chalk-up-another-one
+title: Chalk Up Another One
+artist: Jimmy Martin
+composers:
+- H. Winston, Wilmer Neal
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: chalkupanotheronelyricschords.pro
+    imported_at: '2026-01-02'

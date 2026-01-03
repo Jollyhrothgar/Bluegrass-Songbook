@@ -1,0 +1,17 @@
+id: in-the-dallas-morning-news
+title: In The Dallas Morning News
+artist: Red Steagall
+composers:
+- Glenn Sutton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthedallasmorningnewslyricschords.pro
+    imported_at: '2026-01-02'

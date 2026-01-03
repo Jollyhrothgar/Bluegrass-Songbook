@@ -1,0 +1,18 @@
+id: farmers-blues
+title: Farmers Blues
+artist: Marty Stuart
+composers:
+- Marty Stuart and Connie Smith
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: farmersblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: old-five-and-dimers-like-me
+title: Old Five And Dimers Like Me
+artist: Tom T. Hall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldfiveanddimerslikemelyricschords.pro
+    imported_at: '2026-01-02'

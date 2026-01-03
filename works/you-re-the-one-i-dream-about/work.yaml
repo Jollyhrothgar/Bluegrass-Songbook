@@ -1,0 +1,17 @@
+id: you-re-the-one-i-dream-about
+title: You're The One I Dream About
+artist: Reba McEntire
+composers:
+- Pamela Brown and Teresa Jackson
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheoneidreamaboutlyricschords.pro
+    imported_at: '2026-01-02'

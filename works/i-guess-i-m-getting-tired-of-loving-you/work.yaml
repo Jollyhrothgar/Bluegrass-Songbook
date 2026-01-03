@@ -1,0 +1,17 @@
+id: i-guess-i-m-getting-tired-of-loving-you
+title: I Guess I'm Getting Tired Of Loving You
+artist: Darrell McCall
+composers:
+- Gary Adams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iguessimgettingtiredoflovingyoulyricschords.pro
+    imported_at: '2026-01-02'

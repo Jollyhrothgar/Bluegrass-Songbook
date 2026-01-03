@@ -1,0 +1,17 @@
+id: that-home-far-away
+title: That Home Far Away
+artist: Doyle Lawson
+composers:
+- Ruby Rakes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thathomefarawaylyricschords.pro
+    imported_at: '2026-01-02'

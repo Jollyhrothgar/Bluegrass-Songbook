@@ -1,0 +1,15 @@
+id: i-ve-got-you-on-my-mind-again
+title: I've Got You On My Mind Again
+artist: Buck Owens and Don Rich
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotyouonmymindagainlyricschords.pro
+    imported_at: '2026-01-02'

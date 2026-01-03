@@ -1,0 +1,17 @@
+id: six-white-horses
+title: Six White Horses
+artist: Tommy Cash
+composers:
+- Larry Murray
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sixwhitehorseslyricschords.pro
+    imported_at: '2026-01-02'

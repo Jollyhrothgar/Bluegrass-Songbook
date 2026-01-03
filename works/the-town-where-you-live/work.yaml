@@ -1,0 +1,15 @@
+id: the-town-where-you-live
+title: The Town Where You Live
+artist: Mel Street
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetownwhereyoulivelyricschords.pro
+    imported_at: '2026-01-02'

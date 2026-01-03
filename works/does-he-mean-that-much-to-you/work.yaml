@@ -1,0 +1,17 @@
+id: does-he-mean-that-much-to-you
+title: Does He Mean That Much To You
+artist: Eddy Arnold
+composers:
+- Don Robertson and Jack Rollins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doeshemeanthatmuchtoyoulyricschords.pro
+    imported_at: '2026-01-02'

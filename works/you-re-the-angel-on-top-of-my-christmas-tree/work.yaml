@@ -1,0 +1,15 @@
+id: you-re-the-angel-on-top-of-my-christmas-tree
+title: You're The Angel On Top Of My Christmas Tree
+artist: Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheangelontopofmyChristmastreelyricschords.pro
+    imported_at: '2026-01-02'

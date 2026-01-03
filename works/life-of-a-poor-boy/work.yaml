@@ -1,0 +1,17 @@
+id: life-of-a-poor-boy
+title: Life Of A Poor Boy
+artist: Stonewall Jackson
+composers:
+- E. C. (Mac) McCarty
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lifeofapoorboylyricschords.pro
+    imported_at: '2026-01-02'

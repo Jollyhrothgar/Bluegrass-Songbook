@@ -1,0 +1,15 @@
+id: if-practice-makes-perfect
+title: If Practice Makes Perfect
+artist: Johnny Rodriguez
+composers:
+- Larry Gatlin
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifpracticemakesperfectlyricschords.pro
+    imported_at: '2026-01-02'

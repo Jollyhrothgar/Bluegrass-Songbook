@@ -1,0 +1,18 @@
+id: one-teardrop-at-a-time
+title: One Teardrop At A Time
+artist: Wanda Jackson
+composers:
+- Eddie Miller and Betty West
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneteardropatatimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: just-for-you-3
+title: Just For You
+artist: Waylon Jennings
+composers:
+- Waylon Jennings, Don Bowman, Jerry Williams
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justforyoulyricswithchords.pro
+    imported_at: '2026-01-02'

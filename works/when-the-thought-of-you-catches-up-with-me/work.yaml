@@ -1,0 +1,15 @@
+id: when-the-thought-of-you-catches-up-with-me
+title: When The Thought Of You Catches Up With Me
+artist: David Ball
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthethoughtofyoucatchesupwithmelyricschords.pro
+    imported_at: '2026-01-02'

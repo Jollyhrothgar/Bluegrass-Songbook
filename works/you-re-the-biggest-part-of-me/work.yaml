@@ -1,0 +1,17 @@
+id: you-re-the-biggest-part-of-me
+title: You're The Biggest Part Of Me
+artist: Faron Young
+composers:
+- Merle Kilgore and Chuck Deal
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethebiggestpartofmelyricschords.pro
+    imported_at: '2026-01-02'

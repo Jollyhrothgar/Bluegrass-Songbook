@@ -1,0 +1,17 @@
+id: falling-in-love-again
+title: Falling In Love Again
+artist: Don Williams
+composers:
+- Bob McDill and Don Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallinginloveagainlyricschords.pro
+    imported_at: '2026-01-02'

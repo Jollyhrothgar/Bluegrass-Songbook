@@ -1,0 +1,17 @@
+id: p-t-109
+title: P. T. 109
+artist: Jimmy Dean
+composers:
+- Marijohn Wilkin & Fred Burch
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pt109lyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: jesus-cares-for-me-1
+title: Jesus Cares For Me
+artist: Wanda Jackson
+composers:
+- Aaron Brown and Larry Lee
+default_key: C
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesuscaresformelyricschords.pro
+    imported_at: '2026-01-02'

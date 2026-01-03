@@ -1,0 +1,18 @@
+id: a-far-cry-from-you
+title: A Far Cry From You
+artist: Tracy Lawrence
+composers:
+- Jess Brown, Tony Lane, Robin English
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afarcryfromyoulyricsandchords.pro
+    imported_at: '2026-01-02'

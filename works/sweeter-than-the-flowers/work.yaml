@@ -1,0 +1,17 @@
+id: sweeter-than-the-flowers
+title: Sweeter Than The Flowers
+artist: George Jones
+composers:
+- Ervin T. Rouse and Lois Mann
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweeterthantheflowerslyricschords.pro
+    imported_at: '2026-01-02'

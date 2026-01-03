@@ -1,0 +1,19 @@
+id: strawberry-snow
+title: Strawberry Snow
+artist: Brenda Lee
+composers:
+- Ronnie Self
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: strawberrysnowlyricschords.pro
+    imported_at: '2026-01-02'

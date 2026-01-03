@@ -1,0 +1,17 @@
+id: i-ve-loved-him-much-longer-than-you
+title: I've Loved Him Much Longer Than You
+artist: Jean Shepard
+composers:
+- Rory Bourke and Gayle Barnhill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivelovedhimmuchlongerthanyoulyricschords.pro
+    imported_at: '2026-01-02'

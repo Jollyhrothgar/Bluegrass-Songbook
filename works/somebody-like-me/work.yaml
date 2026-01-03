@@ -1,0 +1,17 @@
+id: somebody-like-me
+title: Somebody Like Me
+artist: Eddy Arnold
+composers:
+- Wayne Carson Thompson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodylikemelyricschords.pro
+    imported_at: '2026-01-02'

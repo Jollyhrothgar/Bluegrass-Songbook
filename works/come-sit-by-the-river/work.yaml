@@ -1,0 +1,17 @@
+id: come-sit-by-the-river
+title: Come Sit By The River
+artist: Bluegrass Martins
+composers:
+- Charles Roehrig
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comesitbytheriverlyricschords.pro
+    imported_at: '2026-01-02'

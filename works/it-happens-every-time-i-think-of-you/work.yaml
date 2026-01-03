@@ -1,0 +1,17 @@
+id: it-happens-every-time-i-think-of-you
+title: It Happens Every Time (I Think Of You)
+artist: Ronnie Milsap
+composers:
+- Archie Jordan
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithappenseverytimeithinkofyoulyricschords.pro
+    imported_at: '2026-01-02'

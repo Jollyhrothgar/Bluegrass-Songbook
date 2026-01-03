@@ -1,0 +1,15 @@
+id: i-ve-never-had-a-thing-that-ain-t-been-used
+title: I've Never Had A Thing That Ain't Been Used
+artist: Johnny Rodriguez
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iveneverhadathingthataintbeenusedlyricschords.pro
+    imported_at: '2026-01-02'

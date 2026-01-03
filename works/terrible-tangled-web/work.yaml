@@ -1,0 +1,18 @@
+id: terrible-tangled-web
+title: Terrible Tangled Web
+artist: Ray Price
+composers:
+- Billy Mize
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: terribletangledweblyricschords.pro
+    imported_at: '2026-01-02'

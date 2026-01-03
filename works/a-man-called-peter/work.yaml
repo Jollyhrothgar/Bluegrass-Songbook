@@ -1,0 +1,15 @@
+id: a-man-called-peter
+title: A Man Called Peter
+artist: Ray Price
+composers:
+- Charles Tobias
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amancalledpeterlyricschords.pro
+    imported_at: '2026-01-02'

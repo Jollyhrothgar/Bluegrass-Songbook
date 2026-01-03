@@ -1,0 +1,17 @@
+id: down-among-the-budded-roses
+title: Down Among The Budded Roses
+artist: Vern Williams
+composers:
+- Lou Erck and William York
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downamongthebuddedroseslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: wealth-won-t-save-your-soul
+title: Wealth Won't Save Your Soul
+artist: Hank Williams Sr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wealthwontsaveyoursoullyricschords.pro
+    imported_at: '2026-01-02'

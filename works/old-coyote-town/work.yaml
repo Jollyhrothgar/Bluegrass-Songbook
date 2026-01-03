@@ -1,0 +1,15 @@
+id: old-coyote-town
+title: Old Coyote Town
+artist: Don Williams
+composers:
+- Larry Boone, Paul Nelson, Gene Nelson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldcoyotetownlyricschords.pro
+    imported_at: '2026-01-02'

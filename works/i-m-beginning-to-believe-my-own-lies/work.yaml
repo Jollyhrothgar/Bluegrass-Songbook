@@ -1,0 +1,18 @@
+id: i-m-beginning-to-believe-my-own-lies
+title: I'm Beginning To Believe My Own Lies
+artist: Charley Pride
+composers:
+- Al Urban
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imbeginningtobelievemyownlieslyricschords.pro
+    imported_at: '2026-01-02'

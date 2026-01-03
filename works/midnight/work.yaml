@@ -1,0 +1,17 @@
+id: midnight
+title: Midnight
+artist: Red Foley
+composers:
+- Boudleaux Bryant and Chet Atkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: midnightlyricschords.pro
+    imported_at: '2026-01-02'

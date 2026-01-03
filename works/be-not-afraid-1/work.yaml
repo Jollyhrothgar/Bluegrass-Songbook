@@ -1,0 +1,17 @@
+id: be-not-afraid-1
+title: Be Not Afraid
+artist: Doyle Lawson
+composers:
+- Jeannie C. Riley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: benotafraidlyricschords.pro
+    imported_at: '2026-01-02'

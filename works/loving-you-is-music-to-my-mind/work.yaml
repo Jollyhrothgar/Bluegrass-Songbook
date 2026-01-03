@@ -1,0 +1,18 @@
+id: loving-you-is-music-to-my-mind
+title: Loving You Is Music To My Mind
+artist: Vern Gosdin
+composers:
+- Vernon L. Reed &amp; Rex Gosdin
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovingyouismusictomymindlyricschords.pro
+    imported_at: '2026-01-02'

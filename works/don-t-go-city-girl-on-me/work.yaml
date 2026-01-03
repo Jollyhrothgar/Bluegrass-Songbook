@@ -1,0 +1,17 @@
+id: don-t-go-city-girl-on-me
+title: Don't Go City Girl On Me
+artist: Tommy Overstreet
+composers:
+- Mike Kosser and Rafe VanHoy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontgocitygirlonmelyricschords.pro
+    imported_at: '2026-01-02'

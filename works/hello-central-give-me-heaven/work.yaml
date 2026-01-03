@@ -1,0 +1,16 @@
+id: hello-central-give-me-heaven
+title: Hello Central Give Me Heaven
+artist: The Carter Family
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hellocentralgivemeheavenlyricschords.pro
+    imported_at: '2026-01-02'

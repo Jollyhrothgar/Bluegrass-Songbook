@@ -1,0 +1,17 @@
+id: your-one-and-only
+title: Your One And Only
+artist: Ricky Van Shelton
+composers:
+- Even Stevens and Hillary Kanter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youroneandonlylyricschords.pro
+    imported_at: '2026-01-02'

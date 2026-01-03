@@ -1,0 +1,19 @@
+id: what-good-will-it-do
+title: What Good Will It Do
+artist: Ernest Tubb
+composers:
+- Tommy Duncan and Duane Howard
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatgoodwillitdolyricschords.pro
+    imported_at: '2026-01-02'

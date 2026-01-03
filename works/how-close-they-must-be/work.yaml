@@ -1,0 +1,17 @@
+id: how-close-they-must-be
+title: How Close They Must Be
+artist: Porter Wagoner
+composers:
+- Porter Wagoner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howclosetheymustbelyricschords.pro
+    imported_at: '2026-01-02'

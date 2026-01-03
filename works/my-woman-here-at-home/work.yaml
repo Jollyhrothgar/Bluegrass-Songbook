@@ -1,0 +1,17 @@
+id: my-woman-here-at-home
+title: My Woman Here At Home
+artist: George Morgan
+composers:
+- Max T. Powell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mywomanhereathomelyricschords.pro
+    imported_at: '2026-01-02'

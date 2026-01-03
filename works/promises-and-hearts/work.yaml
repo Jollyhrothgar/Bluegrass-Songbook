@@ -1,0 +1,17 @@
+id: promises-and-hearts
+title: Promises And Hearts
+artist: Stonewall Jackson
+composers:
+- Larry Lee and Bobby Dyson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: promisesandheartslyricschords.pro
+    imported_at: '2026-01-02'

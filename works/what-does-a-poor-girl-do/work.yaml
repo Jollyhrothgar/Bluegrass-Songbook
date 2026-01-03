@@ -1,0 +1,17 @@
+id: what-does-a-poor-girl-do
+title: What Does A Poor Girl Do
+artist: Norma Jean
+composers:
+- Wayne P. Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatdoesapoorgirldolyricschords.pro
+    imported_at: '2026-01-02'

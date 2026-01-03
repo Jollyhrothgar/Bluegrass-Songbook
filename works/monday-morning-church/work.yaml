@@ -1,0 +1,15 @@
+id: monday-morning-church
+title: Monday Morning Church
+artist: Alan Jackson
+composers:
+- Brent Baxter and Erin Enderlin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mondaymorningchurchlyricschords.pro
+    imported_at: '2026-01-02'

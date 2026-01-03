@@ -1,0 +1,18 @@
+id: heading-down-the-wrong-highway
+title: Heading Down the Wrong Highway
+artist: Hank Thompson
+composers:
+- Ted Daffan
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: headingdownthewronghighwaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: johnny-b-goode
+title: Johnny B. Goode
+artist: Buck Owens
+composers:
+- Chuck Berry
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: johnnybgoodelyricschords.pro
+    imported_at: '2026-01-02'

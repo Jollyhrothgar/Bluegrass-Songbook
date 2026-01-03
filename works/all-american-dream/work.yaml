@@ -1,0 +1,17 @@
+id: all-american-dream
+title: All American Dream
+artist: Moe Bandy
+composers:
+- Dan Mitchell and Kent Blazy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allamericandreamlyricschords.pro
+    imported_at: '2026-01-02'

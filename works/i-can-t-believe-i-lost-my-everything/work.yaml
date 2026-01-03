@@ -1,0 +1,18 @@
+id: i-can-t-believe-i-lost-my-everything
+title: I Can't Believe I Lost My Everything
+artist: Red Sovine
+composers:
+- Bun Wilson and Doc Richardson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantbelieveilostmyeverythinglyricschords.pro
+    imported_at: '2026-01-02'

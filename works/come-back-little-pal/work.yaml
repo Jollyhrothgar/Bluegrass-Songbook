@@ -1,0 +1,17 @@
+id: come-back-little-pal
+title: Come Back Little Pal
+artist: Roy Acuff
+composers:
+- Roy Hall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comebacklittlepallyricschords.pro
+    imported_at: '2026-01-02'

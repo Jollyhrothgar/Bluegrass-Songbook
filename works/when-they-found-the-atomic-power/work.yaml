@@ -1,0 +1,15 @@
+id: when-they-found-the-atomic-power
+title: When They Found The Atomic Power
+artist: Hawkshaw Hawkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentheyfoundtheatomicpowerlyricschords.pro
+    imported_at: '2026-01-02'

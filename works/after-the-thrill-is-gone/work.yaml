@@ -1,0 +1,15 @@
+id: after-the-thrill-is-gone
+title: After The Thrill Is Gone
+artist: Cal Smith
+composers:
+- Don Henley and Glenn Frey
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterthethrillisgonelyricschords.pro
+    imported_at: '2026-01-02'

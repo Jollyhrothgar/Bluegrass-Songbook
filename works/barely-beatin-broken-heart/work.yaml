@@ -1,0 +1,17 @@
+id: barely-beatin-broken-heart
+title: Barely Beatin' Broken Heart
+artist: Highway 101
+composers:
+- Roger Miller and Justin Tubb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: barelybeatinbrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

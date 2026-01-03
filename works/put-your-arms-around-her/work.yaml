@@ -1,0 +1,17 @@
+id: put-your-arms-around-her
+title: Put Your Arms Around Her
+artist: Norma Jean
+composers:
+- Bob Morris
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: putyourarmsaroundherlyricschords.pro
+    imported_at: '2026-01-02'

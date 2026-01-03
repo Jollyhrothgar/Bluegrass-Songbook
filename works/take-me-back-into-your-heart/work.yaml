@@ -1,0 +1,18 @@
+id: take-me-back-into-your-heart
+title: Take Me Back into Your Heart
+artist: the Louvin Brothers
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemebackintoyourheartlyricschords.pro
+    imported_at: '2026-01-02'

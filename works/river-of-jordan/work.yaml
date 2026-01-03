@@ -1,0 +1,21 @@
+id: river-of-jordan
+title: River of Jordan
+artist: Ricky Skaggs
+composers:
+- Hazel HouserC
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: riverofjordanlyricschords.pro
+    imported_at: '2026-01-02'

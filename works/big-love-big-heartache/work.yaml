@@ -1,0 +1,20 @@
+id: big-love-big-heartache
+title: Big Love Big Heartache
+artist: Elvis Presley
+composers:
+- Dolores Fuller, Lee Morris, Stanley Barkan
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: biglovebigheartachelyricschords.pro
+    imported_at: '2026-01-02'

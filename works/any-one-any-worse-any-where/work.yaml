@@ -1,0 +1,19 @@
+id: any-one-any-worse-any-where
+title: Any One Any Worse Any Where
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Lorene Allen
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anyoneanyworseanywherelyricschords.pro
+    imported_at: '2026-01-02'

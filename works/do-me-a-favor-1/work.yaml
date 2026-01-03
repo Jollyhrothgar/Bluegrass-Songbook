@@ -1,0 +1,18 @@
+id: do-me-a-favor-1
+title: Do Me A Favor
+artist: Marty Robbins
+composers:
+- Don Winters
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: domeafavorlyricschords.pro
+    imported_at: '2026-01-02'

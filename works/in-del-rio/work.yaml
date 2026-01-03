@@ -1,0 +1,17 @@
+id: in-del-rio
+title: In Del Rio
+artist: Billy Walker
+composers:
+- Billy Walker and Ray Wix
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: indelriolyricschords.pro
+    imported_at: '2026-01-02'

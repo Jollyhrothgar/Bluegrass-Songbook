@@ -1,0 +1,18 @@
+id: roll-on-mississippi
+title: Roll On Mississippi
+artist: Charley Pride
+composers:
+- Dennis W. Morgan and Rhonda Kye Fleming
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rollonmississippilyricschords.pro
+    imported_at: '2026-01-02'

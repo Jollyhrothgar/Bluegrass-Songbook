@@ -1,0 +1,18 @@
+id: it-ain-t-cool-to-be-crazy-about-you
+title: It Ain't Cool To Be Crazy About You
+artist: George Strait
+composers:
+- Dean Dillon and Royce Porter
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itaintcooltobecrazyaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

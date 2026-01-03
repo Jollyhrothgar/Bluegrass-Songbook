@@ -1,0 +1,18 @@
+id: back-on-my-feet
+title: Back On My Feet
+artist: Tanya Tucker
+composers:
+- Troy Seals and Max D. Barnes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backonmyfeetlyricschords.pro
+    imported_at: '2026-01-02'

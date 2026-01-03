@@ -1,0 +1,18 @@
+id: blue-sky-cathedral
+title: Blue Sky Cathedral
+artist: Rhonda Vincent
+composers:
+- Chuck Jones and Michael Lunn
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blueskycathedrallyricschords.pro
+    imported_at: '2026-01-02'

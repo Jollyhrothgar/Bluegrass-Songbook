@@ -1,0 +1,15 @@
+id: i-can-t-get-used-to-sleeping-without-you
+title: I Can't Get Used To Sleeping Without You
+artist: Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantgetusedtosleepingwithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: land-of-my-boyhood-dreams
+title: Land Of My Boyhood Dreams
+artist: Hank Snow
+composers:
+- Jimmie Rodgers
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: landofmyboyhooddreamslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: my-life-s-been-a-pleasure
+title: My Life's Been A Pleasure
+artist: Willie Nelson
+composers:
+- Jesse Ashlock
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylifesbeenapleasurelyricschords.pro
+    imported_at: '2026-01-02'

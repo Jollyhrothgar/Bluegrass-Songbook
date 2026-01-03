@@ -1,0 +1,17 @@
+id: turning-to-the-light
+title: Turning To The Light
+artist: Joey and Rory
+composers:
+- Stephanie Davis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: turningtothelightlyricschords.pro
+    imported_at: '2026-01-02'

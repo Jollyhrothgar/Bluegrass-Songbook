@@ -1,0 +1,15 @@
+id: we-re-gonna-let-the-good-times-roll
+title: We're Gonna Let The Good Times Roll
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weregonnaletthegoodtimesrolllyricschords.pro
+    imported_at: '2026-01-02'

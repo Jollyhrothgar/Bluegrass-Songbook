@@ -1,0 +1,17 @@
+id: the-day-the-rains-came
+title: The Day The Rains Came
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedaytherainscamelyricschords.pro
+    imported_at: '2026-01-02'

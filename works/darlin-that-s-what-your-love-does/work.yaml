@@ -1,0 +1,17 @@
+id: darlin-that-s-what-your-love-does
+title: Darlin' That's What Your Love Does
+artist: Don Williams
+composers:
+- Hugh Prestwood
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darlinthatswhatyourlovedoeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: hello-we-re-lonely
+title: Hello We're Lonely
+artist: Tom T. Hall and Patti Page
+composers:
+- Tom T. Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hellowerelonelylyricschords.pro
+    imported_at: '2026-01-02'

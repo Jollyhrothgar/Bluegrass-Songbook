@@ -1,0 +1,18 @@
+id: when-did-right-become-wrong
+title: When Did Right Become Wrong
+artist: Merle Haggard
+composers:
+- Tommy Collins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whendidrightbecomewronglyricschords.pro
+    imported_at: '2026-01-02'

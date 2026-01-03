@@ -1,0 +1,17 @@
+id: an-old-memorys-arms
+title: An Old Memory’s Arms
+artist: Darrell McCall
+composers:
+- Diane McCall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anoldmemorysarmslyricschords.pro
+    imported_at: '2026-01-02'

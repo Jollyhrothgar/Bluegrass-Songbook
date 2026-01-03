@@ -1,0 +1,17 @@
+id: there-s-a-light-lit-up-in-galilee
+title: There's A Light Lit Up In Galilee
+artist: The Stoneman Family
+composers:
+- Ernest Stoneman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresalightlitupingalileelyricschords.pro
+    imported_at: '2026-01-02'

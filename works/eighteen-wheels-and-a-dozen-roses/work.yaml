@@ -1,0 +1,17 @@
+id: eighteen-wheels-and-a-dozen-roses
+title: Eighteen Wheels And A Dozen Roses
+artist: Kathy Mattea
+composers:
+- Gene Nelson and Paul Nelson
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eighteenwheelsandadozenroseslyricschords.pro
+    imported_at: '2026-01-02'

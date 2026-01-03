@@ -1,0 +1,17 @@
+id: help-is-on-the-way
+title: Help Is On The Way
+artist: Doyle Lawson
+composers:
+- Michael E. Reed Jr.
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helpisonthewaylyricschords.pro
+    imported_at: '2026-01-02'

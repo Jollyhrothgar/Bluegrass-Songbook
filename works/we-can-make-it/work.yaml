@@ -1,0 +1,15 @@
+id: we-can-make-it
+title: We Can Make It
+artist: George Jones
+composers:
+- Billy Sherrill and Glenn Sutton
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wecanmakeitlyricschords.pro
+    imported_at: '2026-01-02'

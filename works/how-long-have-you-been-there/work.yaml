@@ -1,0 +1,18 @@
+id: how-long-have-you-been-there
+title: How Long Have You Been There
+artist: Waylon Jennings
+composers:
+- Dee Moeller
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howlonghaveyoubeentherelyricschords.pro
+    imported_at: '2026-01-02'

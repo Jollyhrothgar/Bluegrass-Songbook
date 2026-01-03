@@ -1,0 +1,19 @@
+id: i-m-coming-home-song-of-the-saddle
+title: I'm Coming Home (Song Of The Saddle)
+artist: Hank Snow
+composers:
+- Norman Kelly
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imcominghomesongofthesaddlelyricschords.pro
+    imported_at: '2026-01-02'

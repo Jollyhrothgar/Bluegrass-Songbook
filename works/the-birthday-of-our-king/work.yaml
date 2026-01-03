@@ -1,0 +1,19 @@
+id: the-birthday-of-our-king
+title: The Birthday Of Our King
+artist: Larry Sparks
+composers:
+- Bill Castle
+default_key: C
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebirthdayofourkinglyricschords.pro
+    imported_at: '2026-01-02'

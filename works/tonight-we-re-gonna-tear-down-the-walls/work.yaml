@@ -1,0 +1,19 @@
+id: tonight-we-re-gonna-tear-down-the-walls
+title: Tonight We're Gonna Tear Down The Walls
+artist: Randy Travis
+composers:
+- Randy Travis and Jim Sales
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tonightweregonnateardownthewallslyricschords.pro
+    imported_at: '2026-01-02'

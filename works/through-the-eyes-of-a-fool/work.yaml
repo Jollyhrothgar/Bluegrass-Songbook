@@ -1,0 +1,19 @@
+id: through-the-eyes-of-a-fool
+title: Through The Eyes Of A Fool
+artist: Lefty Frizzell
+composers:
+- Bobby Bare and Charlie Williams
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: throughtheeyesofafoollyricschords.pro
+    imported_at: '2026-01-02'

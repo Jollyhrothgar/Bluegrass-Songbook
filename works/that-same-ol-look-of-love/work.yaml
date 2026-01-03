@@ -1,0 +1,18 @@
+id: that-same-ol-look-of-love
+title: That Same Ol' Look Of Love
+artist: David Houston
+composers:
+- Norro Wilson, Carmol Taylor, George Richey
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsameollookoflovelyricschords.pro
+    imported_at: '2026-01-02'

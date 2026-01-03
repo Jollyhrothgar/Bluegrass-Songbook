@@ -1,0 +1,17 @@
+id: if-i-could-bottle-this-up
+title: If I Could Bottle This Up
+artist: George Jones
+composers:
+- Dean Dillon and Paul Overstreet
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldbottlethisuplyricschords.pro
+    imported_at: '2026-01-02'

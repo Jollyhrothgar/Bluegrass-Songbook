@@ -1,0 +1,17 @@
+id: never-is-a-long-long-day
+title: Never Is A Long Long Day
+artist: Jimmy Dean
+composers:
+- Liz Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: neverisalonglongdaylyricschords.pro
+    imported_at: '2026-01-02'

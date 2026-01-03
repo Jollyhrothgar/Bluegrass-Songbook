@@ -1,0 +1,18 @@
+id: i-wouldn-t-take-her-to-a-dog-fight
+title: I Wouldn't Take Her To A Dog Fight
+artist: Charlie Walker
+composers:
+- Larry Kingston and Troy Snow
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldnttakehertoadogfightlyricschords.pro
+    imported_at: '2026-01-02'

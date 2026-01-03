@@ -1,0 +1,17 @@
+id: my-old-friend
+title: My Old Friend
+artist: Keith Whitley
+composers:
+- Claude Putman Jr. and Keith Whitley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myoldfriendlyricschords.pro
+    imported_at: '2026-01-02'

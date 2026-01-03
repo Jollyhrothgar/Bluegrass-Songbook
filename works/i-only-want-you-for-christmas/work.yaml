@@ -1,0 +1,15 @@
+id: i-only-want-you-for-christmas
+title: I Only Want You For Christmas
+artist: Alan Jackson
+composers:
+- Tim Nichols and Zack Turner
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ionlywantyouforChristmaslyricschords.pro
+    imported_at: '2026-01-02'

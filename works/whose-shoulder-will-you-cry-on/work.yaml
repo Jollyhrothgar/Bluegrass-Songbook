@@ -1,0 +1,18 @@
+id: whose-shoulder-will-you-cry-on
+title: Whose Shoulder Will You Cry On
+artist: Kitty Wells
+composers:
+- Billy Wallace and Kitty Wells
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoseshoulderwillyoucryonlyricschords.pro
+    imported_at: '2026-01-02'

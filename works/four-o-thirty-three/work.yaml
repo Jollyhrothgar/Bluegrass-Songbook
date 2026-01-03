@@ -1,0 +1,18 @@
+id: four-o-thirty-three
+title: Four O Thirty Three
+artist: George Jones
+composers:
+- Earl Montgomery
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fourothirtythreelyricschords.pro
+    imported_at: '2026-01-02'

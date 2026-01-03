@@ -1,0 +1,18 @@
+id: knock-again-true-love
+title: Knock Again True Love
+artist: Lefty Frizzell
+composers:
+- Jerry Jeff Walker
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: knockagaintruelovelyricschords.pro
+    imported_at: '2026-01-02'

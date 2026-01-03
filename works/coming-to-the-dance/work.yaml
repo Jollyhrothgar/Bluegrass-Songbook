@@ -1,0 +1,17 @@
+id: coming-to-the-dance
+title: Coming To The Dance
+artist: Crystal Gayle
+composers:
+- Allen Reynolds and Chuck Cochran
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comingtothedancelyricschords.pro
+    imported_at: '2026-01-02'

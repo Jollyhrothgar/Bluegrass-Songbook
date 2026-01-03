@@ -1,0 +1,15 @@
+id: please-don-t-take-her-from-me
+title: Please Don't Take Her From Me
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasedonttakeherfrommelyricschords.pro
+    imported_at: '2026-01-02'

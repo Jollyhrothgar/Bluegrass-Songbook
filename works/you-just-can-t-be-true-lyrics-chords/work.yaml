@@ -1,0 +1,17 @@
+id: you-just-can-t-be-true-lyrics-chords
+title: You Just Can't Be True Lyrics Chords
+artist: Webb Pierce
+composers:
+- Webb Pierce and Teddy Wilburn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youjustcantbetruelyricschords.pro
+    imported_at: '2026-01-02'

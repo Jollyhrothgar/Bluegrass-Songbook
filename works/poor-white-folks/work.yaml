@@ -1,0 +1,17 @@
+id: poor-white-folks
+title: Poor White Folks
+artist: Traditional
+default_key: A
+tags:
+- Jazzy
+- Instrumental
+- Bluegrass
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

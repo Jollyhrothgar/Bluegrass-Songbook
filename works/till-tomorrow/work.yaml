@@ -1,0 +1,17 @@
+id: till-tomorrow
+title: Till Tomorrow
+artist: Jimmy Dean
+composers:
+- Sheldon Harnick and Jerry Bock
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tilltomorrowlyricschords.pro
+    imported_at: '2026-01-02'

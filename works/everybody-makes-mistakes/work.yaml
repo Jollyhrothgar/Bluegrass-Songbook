@@ -1,0 +1,18 @@
+id: everybody-makes-mistakes
+title: Everybody Makes Mistakes
+artist: Lacy J. Dalton
+composers:
+- Billy Sherrill and Lacy J. Dalton
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodymakesmistakeslyricschords.pro
+    imported_at: '2026-01-02'

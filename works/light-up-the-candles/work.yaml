@@ -1,0 +1,15 @@
+id: light-up-the-candles
+title: Light Up The Candles
+artist: The Bellamy Brothers
+composers:
+- Ralph Siegel
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lightupthecandleslyricschords.pro
+    imported_at: '2026-01-02'

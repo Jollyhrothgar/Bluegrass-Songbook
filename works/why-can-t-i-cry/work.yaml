@@ -1,0 +1,16 @@
+id: why-can-t-i-cry
+title: Why Can't I Cry
+artist: Merle Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whycanticrylyricschords.pro
+    imported_at: '2026-01-02'

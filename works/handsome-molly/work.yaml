@@ -1,0 +1,14 @@
+id: handsome-molly
+title: Handsome Molly
+artist: Doc Watson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: manual
+    imported_at: '2026-01-02'

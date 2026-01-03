@@ -1,0 +1,17 @@
+id: why-lady-why
+title: Why Lady Why
+artist: Alabama
+composers:
+- Teddy Gentry and Richard Scott
+default_key: Am
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whyladywhylyricschords.pro
+    imported_at: '2026-01-02'

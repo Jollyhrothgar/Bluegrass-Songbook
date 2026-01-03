@@ -1,0 +1,17 @@
+id: when-i-sing-about-you
+title: When I Sing About You
+artist: Clint Eastwood
+composers:
+- DeWayne Blackwell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenisingaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: it-s-only-you-that-i-love
+title: It's Only You That I Love
+artist: Hank Snow
+composers:
+- Jim Leisy
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsonlyyouthatilovelyricschords.pro
+    imported_at: '2026-01-02'

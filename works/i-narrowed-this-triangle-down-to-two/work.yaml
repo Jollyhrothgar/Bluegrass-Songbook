@@ -1,0 +1,17 @@
+id: i-narrowed-this-triangle-down-to-two
+title: I Narrowed This Triangle Down To Two
+artist: Leona Williams
+composers:
+- Naomi Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inarrowedthistriangledowntotwolyricschords.pro
+    imported_at: '2026-01-02'

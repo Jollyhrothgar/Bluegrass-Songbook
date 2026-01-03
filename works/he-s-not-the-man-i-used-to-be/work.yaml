@@ -1,0 +1,17 @@
+id: he-s-not-the-man-i-used-to-be
+title: He's Not The Man I Used To Be
+artist: Ricky Van Shelton
+composers:
+- Gary Duffey and Michael Foster
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesnotthemaniusedtobelyricschords.pro
+    imported_at: '2026-01-02'

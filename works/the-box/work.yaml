@@ -1,0 +1,18 @@
+id: the-box
+title: The Box
+artist: Randy Travis
+composers:
+- Buck A. Moore and Randy Bruce Traywick
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theboxlyricschords.pro
+    imported_at: '2026-01-02'

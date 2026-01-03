@@ -1,0 +1,17 @@
+id: roamin-wyoming
+title: Roamin' Wyoming
+artist: Randy Travis
+composers:
+- Roger Brown and Luke Reed
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: roaminwyominglyricschords.pro
+    imported_at: '2026-01-02'

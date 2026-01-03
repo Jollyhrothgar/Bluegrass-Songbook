@@ -1,0 +1,19 @@
+id: you-can-feel-bad
+title: You Can Feel Bad
+artist: Patty Loveless
+composers:
+- Matraca Berg and Tim Krekel
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanfeelbadlyricschords.pro
+    imported_at: '2026-01-02'

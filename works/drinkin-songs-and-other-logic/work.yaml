@@ -1,0 +1,18 @@
+id: drinkin-songs-and-other-logic
+title: Drinkin' Songs And Other Logic
+artist: Clint Black
+composers:
+- Clint Black, Hayden Nicholas, Steve Wariner
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drinkinsongsandotherlogiclyricschords.pro
+    imported_at: '2026-01-02'

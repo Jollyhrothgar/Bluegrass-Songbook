@@ -1,0 +1,15 @@
+id: the-wind-blows-every-day-in-oklahoma-with-chords
+title: The Wind Blows Every Day In Oklahoma with chords
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewindblowseverydayinoklahomalyricschords.pro
+    imported_at: '2026-01-02'

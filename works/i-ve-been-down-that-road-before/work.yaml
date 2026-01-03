@@ -1,0 +1,17 @@
+id: i-ve-been-down-that-road-before
+title: I've Been Down That Road Before
+artist: Hank Williams
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivebeendownthatroadbeforelyricschords.pro
+    imported_at: '2026-01-02'

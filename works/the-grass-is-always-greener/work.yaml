@@ -1,0 +1,19 @@
+id: the-grass-is-always-greener
+title: The Grass Is Always Greener
+artist: Charlie Rich
+composers:
+- Margaret A. Rich and Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegrassisalwaysgreenerlyricschords.pro
+    imported_at: '2026-01-02'

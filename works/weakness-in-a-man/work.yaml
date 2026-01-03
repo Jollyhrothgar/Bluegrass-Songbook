@@ -1,0 +1,17 @@
+id: weakness-in-a-man
+title: Weakness In A Man
+artist: Roy Drusky
+composers:
+- Jerry A Chesnut
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weaknessinamanlyricschords.pro
+    imported_at: '2026-01-02'

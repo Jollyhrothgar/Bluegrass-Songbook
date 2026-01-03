@@ -1,0 +1,15 @@
+id: sometimes-i-talk-in-my-sleep
+title: Sometimes I Talk In My Sleep
+artist: Tony Booth
+composers:
+- Eddy Raven
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sometimesitalkinmysleeplyricschords.pro
+    imported_at: '2026-01-02'

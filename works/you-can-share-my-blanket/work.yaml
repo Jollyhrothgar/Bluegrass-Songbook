@@ -1,0 +1,17 @@
+id: you-can-share-my-blanket
+title: You Can Share My Blanket
+artist: J.D. Crowe
+composers:
+- Steven F. Brines and James B. Smoak
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcansharemyblanketlyricschords.pro
+    imported_at: '2026-01-02'

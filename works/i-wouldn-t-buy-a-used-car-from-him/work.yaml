@@ -1,0 +1,17 @@
+id: i-wouldn-t-buy-a-used-car-from-him
+title: I Wouldn't Buy A Used Car From Him
+artist: Norma Jean
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldntbuyausedcarfromhimlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: your-place-or-mine
+title: Your Place Or Mine
+artist: Gary Stewart
+composers:
+- Rory Burke, Carol Anderson, Mary Beth Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourplaceorminelyricschords.pro
+    imported_at: '2026-01-02'

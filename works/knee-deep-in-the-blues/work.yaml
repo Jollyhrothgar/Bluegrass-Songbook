@@ -1,0 +1,18 @@
+id: knee-deep-in-the-blues
+title: Knee Deep in the Blues
+artist: Marty Robbins
+composers:
+- Melvin Endsley
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kneedeepintheblueslyricschords.pro
+    imported_at: '2026-01-02'

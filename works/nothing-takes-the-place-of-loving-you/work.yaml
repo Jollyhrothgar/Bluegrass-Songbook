@@ -1,0 +1,17 @@
+id: nothing-takes-the-place-of-loving-you
+title: Nothing Takes The Place Of Loving You
+artist: Stonewall Jackson
+composers:
+- Ben Peters
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothingtakestheplaceoflovingyoulyricschords.pro
+    imported_at: '2026-01-02'

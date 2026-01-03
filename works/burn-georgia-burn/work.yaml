@@ -1,0 +1,15 @@
+id: burn-georgia-burn
+title: Burn Georgia Burn
+artist: Alabama
+composers:
+- Roger Murrah and Tim Lewis
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burngeorgiaburnlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-get-fooled-don-t-i
+title: I Get Fooled Don't I
+artist: Sonny James
+composers:
+- Carole Smith and Sonny James
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igetfooleddontilyricschords.pro
+    imported_at: '2026-01-02'

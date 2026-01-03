@@ -1,0 +1,17 @@
+id: black-jack-s-bar
+title: Black Jack's Bar
+artist: Porter Wagoner
+composers:
+- Jimmie Driftwood
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blackjacksbarlyricschords.pro
+    imported_at: '2026-01-02'

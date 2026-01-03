@@ -1,0 +1,17 @@
+id: when-jesus-beckons-me-home
+title: When Jesus Beckons Me Home
+artist: Eddy Arnold
+composers:
+- Gene Arnold[3/4 time]
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenjesusbeckonsmehomelyricschords.pro
+    imported_at: '2026-01-02'

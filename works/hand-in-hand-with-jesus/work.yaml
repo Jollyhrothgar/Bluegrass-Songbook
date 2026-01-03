@@ -1,0 +1,17 @@
+id: hand-in-hand-with-jesus
+title: Hand In Hand With Jesus
+artist: Skeeter Davis
+composers:
+- Johnson Oatman and L.D. Huffstutler
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: handinhandwithJesuslyricschords.pro
+    imported_at: '2026-01-02'

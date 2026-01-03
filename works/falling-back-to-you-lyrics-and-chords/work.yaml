@@ -1,0 +1,17 @@
+id: falling-back-to-you-lyrics-and-chords
+title: Falling Back to You Lyrics and Chords
+artist: Webb Pierce
+composers:
+- Webb Pierce and Bill Phillips
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fallingbacktoyoulyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: my-mother-s-bible
+title: My Mother's Bible
+artist: Don Reno and Bill Harrell
+composers:
+- Don Reno
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mymothersbiblelyricschords.pro
+    imported_at: '2026-01-02'

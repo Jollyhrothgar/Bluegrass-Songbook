@@ -1,0 +1,17 @@
+id: as-lovely-as-you
+title: As Lovely As You
+artist: Alan Jackson
+composers:
+- John Pennell
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aslovelyasyoulyricschords.pro
+    imported_at: '2026-01-02'

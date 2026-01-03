@@ -1,0 +1,15 @@
+id: don-t-it-make-you-wanna-be-a-kid-again
+title: Don't It Make You Wanna Be A Kid Again
+artist: Boxcar Willie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontitmakeyouwannabeakidagainlyricschords.pro
+    imported_at: '2026-01-02'

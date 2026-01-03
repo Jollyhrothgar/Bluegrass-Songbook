@@ -1,0 +1,18 @@
+id: when-the-last-curtain-falls
+title: When The Last Curtain Falls
+artist: George Jones
+composers:
+- Emory Gordy Jr. and Jim Rushing
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthelastcurtainfallslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: what-do-i-care
+title: What Do I Care
+artist: Johnny Cash
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatdoicarelyricschords.pro
+    imported_at: '2026-01-02'

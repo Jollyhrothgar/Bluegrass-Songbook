@@ -1,0 +1,21 @@
+id: have-you-someone-in-heaven-waiting
+title: Have You Someone In Heaven Waiting
+artist: Ricky Skaggs
+composers:
+- Carter Stanley
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveyousomeoneinheavenwaitinglyricschords.pro
+    imported_at: '2026-01-02'

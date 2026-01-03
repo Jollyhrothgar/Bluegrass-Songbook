@@ -1,0 +1,17 @@
+id: tomorrow-night-1
+title: Tomorrow Night
+artist: Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tomorrownightlyricsandchords.pro
+    imported_at: '2026-01-02'

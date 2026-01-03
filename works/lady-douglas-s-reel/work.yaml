@@ -1,0 +1,15 @@
+id: lady-douglas-s-reel
+title: Lady Douglas's Reel
+artist: Traditional
+composers:
+- Biography:W.J.
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

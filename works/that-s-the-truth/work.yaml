@@ -1,0 +1,19 @@
+id: that-s-the-truth
+title: That's The Truth
+artist: George Strait
+composers:
+- Melba Montgomery and Steve Leslie
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsthetruthlyricschords.pro
+    imported_at: '2026-01-02'

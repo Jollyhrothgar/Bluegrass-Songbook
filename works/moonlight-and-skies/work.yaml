@@ -1,0 +1,19 @@
+id: moonlight-and-skies
+title: Moonlight And Skies
+artist: Hank Snow
+composers:
+- Jimmie Rodgers and R.E. Hill
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moonlightandskieslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: baby-i-need-lovin
+title: Baby I Need Lovin'
+artist: Hank Thompson
+composers:
+- Hank Thompson and Dorothy Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyineedlovinlyricschords.pro
+    imported_at: '2026-01-02'

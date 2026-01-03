@@ -1,0 +1,17 @@
+id: texas-bein-texas
+title: Texas Bein' Texas
+artist: Red Steagall
+composers:
+- Red Steagall and Richard Hampton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: texasbeintexaslyricschords.pro
+    imported_at: '2026-01-02'

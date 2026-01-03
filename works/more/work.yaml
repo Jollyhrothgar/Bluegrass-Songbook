@@ -1,0 +1,18 @@
+id: more
+title: More
+artist: Brenda Lee
+composers:
+- Norman Newell, Riziero Ortolani, Nino Oliviero
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: morelyricschords.pro
+    imported_at: '2026-01-02'

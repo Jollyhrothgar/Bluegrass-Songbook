@@ -1,0 +1,17 @@
+id: nobody-told-me
+title: Nobody Told Me
+artist: David Ball
+composers:
+- Gary Cotton and John Wiggins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodytoldmelyricschords.pro
+    imported_at: '2026-01-02'

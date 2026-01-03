@@ -1,0 +1,18 @@
+id: i-dont-have-anymore-love-songs
+title: I Don’t Have Anymore Love Songs
+artist: Merle Haggard
+composers:
+- Hank Williams Jr.
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idonthaveanymorelovesongslyricschords.pro
+    imported_at: '2026-01-02'

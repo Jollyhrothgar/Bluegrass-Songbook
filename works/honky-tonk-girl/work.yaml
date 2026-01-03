@@ -1,0 +1,18 @@
+id: honky-tonk-girl
+title: Honky Tonk Girl
+artist: Hank Thompson
+composers:
+- Hank Thompson and Chuck Hardin
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkgirllyricsandchords.pro
+    imported_at: '2026-01-02'

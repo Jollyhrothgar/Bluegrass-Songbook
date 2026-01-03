@@ -1,0 +1,18 @@
+id: working-my-way-through-a-heartache-lyrics-chords
+title: Working My Way Through A Heartache Lyrics Chords
+artist: Marty Robbins
+composers:
+- Buddy Mize and Charles Field
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: workingmywaythroughaheartachelyricschords.pro
+    imported_at: '2026-01-02'

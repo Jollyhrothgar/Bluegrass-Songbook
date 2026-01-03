@@ -1,0 +1,18 @@
+id: a-way-to-survive-1
+title: A Way to Survive
+artist: Ray Price
+composers:
+- Hank Cochran and Moneen Carpenter
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awaytosurvivelyricschords.pro
+    imported_at: '2026-01-02'

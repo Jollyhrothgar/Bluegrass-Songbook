@@ -1,0 +1,17 @@
+id: spend-my-time
+title: Spend My Time
+artist: Clint Black
+composers:
+- Clint Black and Hayden Nicholas
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: spendmytimelyricschords.pro
+    imported_at: '2026-01-02'

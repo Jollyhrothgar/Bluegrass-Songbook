@@ -1,0 +1,17 @@
+id: running-wild
+title: Running Wild
+artist: Tom T Hall
+composers:
+- Tom T. Hall and Alan Pace
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: runningwildlyricschords.pro
+    imported_at: '2026-01-02'

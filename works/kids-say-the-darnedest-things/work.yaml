@@ -1,0 +1,18 @@
+id: kids-say-the-darnedest-things
+title: Kids Say The Darnedest Things
+artist: Tammy Wynette
+composers:
+- Billy Sherrill and Glenn Sutton
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kidssaythedarnedestthingslyricschords.pro
+    imported_at: '2026-01-02'

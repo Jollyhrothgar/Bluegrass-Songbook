@@ -1,0 +1,17 @@
+id: woman-sensuous-woman
+title: Woman Sensuous Woman
+artist: Don Gibson
+composers:
+- Gary S. Paxton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: womansensuouswomanlyricschords.pro
+    imported_at: '2026-01-02'

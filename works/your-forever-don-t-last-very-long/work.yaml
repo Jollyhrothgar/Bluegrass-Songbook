@@ -1,0 +1,15 @@
+id: your-forever-don-t-last-very-long
+title: Your Forever Don't Last Very Long
+artist: Jean Shepard
+composers:
+- Scott Turner, Steve Stone, Wes Buchanan
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourforeverdontlastverylonglyricschords.pro
+    imported_at: '2026-01-02'

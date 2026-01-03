@@ -1,0 +1,17 @@
+id: 11-months-29-days
+title: 11 Months 29 Days
+artist: Johnny Paycheck
+composers:
+- Billy Sherrill and Johnny Paycheck
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 11months29dayslyricschords.pro
+    imported_at: '2026-01-02'

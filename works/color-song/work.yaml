@@ -1,0 +1,17 @@
+id: color-song
+title: Color Song
+artist: Jean Shepard
+composers:
+- Fred Wise, Dewey Bergman, Milton Leeds
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: colorsonglyricschords.pro
+    imported_at: '2026-01-02'

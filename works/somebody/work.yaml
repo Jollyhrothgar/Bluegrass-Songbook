@@ -1,0 +1,18 @@
+id: somebody
+title: Somebody
+artist: Rhonda Vincent
+composers:
+- Al Anderson and Robert E. Orrall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodylyricschords.pro
+    imported_at: '2026-01-02'

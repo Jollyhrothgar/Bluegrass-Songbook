@@ -1,0 +1,19 @@
+id: my-old-flame-is-burning-another-honky-tonk-down
+title: My Old Flame Is burning Another Honky Tonk Down
+artist: Mickey Gilley
+composers:
+- Wayne Kemp, Mack Vickery, Bobby Borchers
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myoldflameisbburninganotherhonkytonkdownlyricschords.pro
+    imported_at: '2026-01-02'

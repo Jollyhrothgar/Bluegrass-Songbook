@@ -1,0 +1,17 @@
+id: you-don-t-treat-me-right
+title: You Don't Treat Me Right
+artist: Faron Young
+composers:
+- Kent Westberry and Benny Joy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdonttreatmerightlyricschords.pro
+    imported_at: '2026-01-02'

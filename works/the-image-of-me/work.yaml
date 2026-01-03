@@ -1,0 +1,18 @@
+id: the-image-of-me
+title: The Image of Me
+artist: Conway Twitty
+composers:
+- Wayne Kemp
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imageofmelyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: things-you-said-to-me
+title: Things You Said To Me
+artist: The Mavericks
+composers:
+- Raul Malo and Al Anderson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thingsyousaidtomelyricschords.pro
+    imported_at: '2026-01-02'

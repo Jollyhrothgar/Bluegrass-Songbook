@@ -1,0 +1,18 @@
+id: this-land-is-your-land
+title: This Land Is Your Land
+artist: Wanda Jackson
+composers:
+- Woody Guthrie
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thislandisyourlandlyricschords.pro
+    imported_at: '2026-01-02'

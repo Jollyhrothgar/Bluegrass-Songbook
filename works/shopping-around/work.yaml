@@ -1,0 +1,21 @@
+id: shopping-around
+title: Shopping Around
+artist: Elvis Presley
+composers:
+- Sid Tepper, Roy Bennett, Aaron Schroeder
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shoppingaroundlyricschords.pro
+    imported_at: '2026-01-02'

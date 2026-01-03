@@ -1,0 +1,15 @@
+id: you-ve-got-the-touch
+title: You've Got The Touch
+artist: Alabama
+composers:
+- Lisa Palas, Will Robinson, John Jarrard
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotthetouchlyricschords.pro
+    imported_at: '2026-01-02'

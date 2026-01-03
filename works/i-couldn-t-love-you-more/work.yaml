@@ -1,0 +1,17 @@
+id: i-couldn-t-love-you-more
+title: I Couldn't Love You More
+artist: Vern Gosdin
+composers:
+- Rex Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icouldntloveyoumorelyricschords.pro
+    imported_at: '2026-01-02'

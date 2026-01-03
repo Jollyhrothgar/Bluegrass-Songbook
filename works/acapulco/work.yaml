@@ -1,0 +1,17 @@
+id: acapulco
+title: Acapulco
+artist: Johnny Duncan
+composers:
+- Larry Collins and Mary Leath
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: acapulcolyricschords.pro
+    imported_at: '2026-01-02'

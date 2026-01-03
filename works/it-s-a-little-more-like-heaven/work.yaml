@@ -1,0 +1,17 @@
+id: it-s-a-little-more-like-heaven
+title: It's a Little More Like Heaven
+artist: Hank Locklin
+composers:
+- Hoyt Atkins and Jim Atkins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsalittlemorelikeheavenlyricschords.pro
+    imported_at: '2026-01-02'

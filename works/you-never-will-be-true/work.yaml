@@ -1,0 +1,17 @@
+id: you-never-will-be-true
+title: You Never Will Be True
+artist: Ray Price
+composers:
+- Ray Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youneverwillbetruelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: real-emotion
+title: Real Emotion
+artist: Anne Murray
+composers:
+- Alan O'Day
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: realemotionlyricschords.pro
+    imported_at: '2026-01-02'

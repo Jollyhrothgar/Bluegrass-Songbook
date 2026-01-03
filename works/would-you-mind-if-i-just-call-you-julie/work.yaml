@@ -1,0 +1,17 @@
+id: would-you-mind-if-i-just-call-you-julie
+title: Would You Mind If I Just Call You Julie
+artist: Moe Bandy
+composers:
+- Shirl Milete and Warren Robb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wouldyoumindifijustcallyoujulielyricschords.pro
+    imported_at: '2026-01-02'

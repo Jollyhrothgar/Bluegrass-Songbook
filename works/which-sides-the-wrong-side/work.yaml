@@ -1,0 +1,17 @@
+id: which-sides-the-wrong-side
+title: Which Side’s The Wrong Side
+artist: The Wilburn Brothers
+composers:
+- Loretta Lynn and Lorene Allen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whichsidesthewrongsidelyricschords.pro
+    imported_at: '2026-01-02'

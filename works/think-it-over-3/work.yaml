@@ -1,0 +1,17 @@
+id: think-it-over-3
+title: Think It Over
+artist: Steve Earl
+composers:
+- Steve Earle and Richard Rodney Bennett
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thinkitoverlyricswithchords.pro
+    imported_at: '2026-01-02'

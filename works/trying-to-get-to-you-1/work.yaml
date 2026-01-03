@@ -1,0 +1,19 @@
+id: trying-to-get-to-you-1
+title: Trying To Get To You
+artist: Roy Orbison
+composers:
+- Rose Marie McCoy and Charlie Singleton
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tryingtogettoyoulyricschords.pro
+    imported_at: '2026-01-02'

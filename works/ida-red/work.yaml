@@ -1,0 +1,15 @@
+id: ida-red
+title: Ida Red
+artist: Bob Wills
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idaredlyricschords.pro
+    imported_at: '2026-01-02'

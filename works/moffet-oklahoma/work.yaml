@@ -1,0 +1,17 @@
+id: moffet-oklahoma
+title: Moffet Oklahoma
+artist: Charlie Walker
+composers:
+- Curtis Leach and Claude McBride
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moffetoklahomalyricschords.pro
+    imported_at: '2026-01-02'

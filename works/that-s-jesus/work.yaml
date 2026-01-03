@@ -1,0 +1,17 @@
+id: that-s-jesus
+title: That's Jesus
+artist: Randy Travis
+composers:
+- Michael Curtis and Randy Travis
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatsJesuslyricsandchords.pro
+    imported_at: '2026-01-02'

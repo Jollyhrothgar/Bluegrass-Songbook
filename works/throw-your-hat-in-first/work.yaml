@@ -1,0 +1,17 @@
+id: throw-your-hat-in-first
+title: Throw Your Hat In First
+artist: Norma Jean
+composers:
+- Liz Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: throwyourhatinfirstlyricschords.pro
+    imported_at: '2026-01-02'

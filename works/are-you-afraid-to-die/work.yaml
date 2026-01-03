@@ -1,0 +1,21 @@
+id: are-you-afraid-to-die
+title: Are You Afraid To Die
+artist: Ricky Skaggs
+composers:
+- Charlie Louvin, Ira Louvin, Eddie Hill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: areyouafraidtodielyricschords.pro
+    imported_at: '2026-01-02'

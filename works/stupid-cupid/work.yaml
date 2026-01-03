@@ -1,0 +1,20 @@
+id: stupid-cupid
+title: Stupid Cupid
+artist: Patsy Cline
+composers:
+- Neil Sedaka and Howie Greenfield
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stupidcupidlyricschords.pro
+    imported_at: '2026-01-02'

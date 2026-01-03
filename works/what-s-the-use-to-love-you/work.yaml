@@ -1,0 +1,15 @@
+id: what-s-the-use-to-love-you
+title: What's the Use to Love You
+artist: Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatstheusetoloveyoulyricschords.pro
+    imported_at: '2026-01-02'

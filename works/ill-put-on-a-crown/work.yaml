@@ -1,0 +1,17 @@
+id: ill-put-on-a-crown
+title: I’ll Put On A Crown
+artist: Del McCoury
+composers:
+- Albert E. Brumley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illputonacrownlyricschords.pro
+    imported_at: '2026-01-02'

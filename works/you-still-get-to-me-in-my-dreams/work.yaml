@@ -1,0 +1,18 @@
+id: you-still-get-to-me-in-my-dreams
+title: You Still Get To Me In My Dreams
+artist: Tammy Wynette
+composers:
+- Arthur Leo Owens and Bill Shore
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youstillgettomeinmydreamslyricschords.pro
+    imported_at: '2026-01-02'

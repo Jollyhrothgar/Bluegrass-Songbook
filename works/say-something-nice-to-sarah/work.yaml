@@ -1,0 +1,19 @@
+id: say-something-nice-to-sarah
+title: Say Something Nice To Sarah
+artist: Ernest Tubb
+composers:
+- Johnny Cash and Winafred Kelley
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: saysomethingnicetosarahlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: where-are-the-heroes
+title: Where Are The Heroes
+artist: Rex Allen Jr.
+composers:
+- Curtis Allen, Rex Allen Jr, Denny Demarco
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherearetheheroeslyricschords.pro
+    imported_at: '2026-01-02'

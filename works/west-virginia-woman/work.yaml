@@ -1,0 +1,17 @@
+id: west-virginia-woman
+title: West Virginia Woman
+artist: Bobby Bare
+composers:
+- Bobby Bare and Billy Joe Shaver
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: westvirginiawomanlyricschords.pro
+    imported_at: '2026-01-02'

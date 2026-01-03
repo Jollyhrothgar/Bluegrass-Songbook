@@ -1,0 +1,17 @@
+id: gonna-take-a-lot-of-river
+title: Gonna Take A Lot Of River
+artist: The Oak Ridge Boys
+composers:
+- Mark Henley and John Kurhajetz
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnatakealotofriverlyricschords.pro
+    imported_at: '2026-01-02'

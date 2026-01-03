@@ -1,0 +1,18 @@
+id: don-t-think-it-ain-t-been-fun-dear
+title: Don't Think It Ain't Been Fun Dear
+artist: Lefty Frizzel
+composers:
+- Elizabeth Jane Cozza, Jimmy Beck, Lefty Frizzell
+default_key: D
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontthinkitaintbeenfundearlyricschords.pro
+    imported_at: '2026-01-02'

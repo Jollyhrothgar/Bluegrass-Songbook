@@ -1,0 +1,18 @@
+id: when-the-sun-goes-down-tomorrow
+title: When The Sun Goes Down Tomorrow
+artist: Dolly Parton
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthesungoesdowntomorrowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: sing-my-blues-a-birthday-song
+title: Sing My Blues A Birthday Song
+artist: George Morgan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singmybluesabirthdaysonglyricschords.pro
+    imported_at: '2026-01-02'

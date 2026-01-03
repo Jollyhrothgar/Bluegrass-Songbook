@@ -1,0 +1,17 @@
+id: died-a-rounder-at-twenty-one
+title: Died A Rounder At Twenty-One
+artist: Dale Evans
+composers:
+- Jimmie Skinner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: diedarounderattwentyonelyricschords.pro
+    imported_at: '2026-01-02'

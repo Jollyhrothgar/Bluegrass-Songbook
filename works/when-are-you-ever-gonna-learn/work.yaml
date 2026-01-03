@@ -1,0 +1,17 @@
+id: when-are-you-ever-gonna-learn
+title: When Are You Ever Gonna Learn
+artist: Faron Young
+composers:
+- Kris Kristofferson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenareyouevergonnalearnlyricschords.pro
+    imported_at: '2026-01-02'

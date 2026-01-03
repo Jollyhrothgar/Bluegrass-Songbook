@@ -1,0 +1,20 @@
+id: you-don-t-miss-your-water
+title: You Don't Miss Your Water
+artist: Jerry Lee Lewis
+composers:
+- William Bell
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontmissyourwaterlyricschords.pro
+    imported_at: '2026-01-02'

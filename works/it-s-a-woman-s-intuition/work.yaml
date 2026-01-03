@@ -1,0 +1,17 @@
+id: it-s-a-woman-s-intuition
+title: It's A Woman's Intuition
+artist: Wilburn Brothers
+composers:
+- Madelyn Burroughs
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsawomansintuitionlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-days-not-over-yet
+title: The Day’s Not Over Yet
+artist: Sonny James
+composers:
+- Carol Smith and Sonny James
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedaysnotoveryetlyricschords.pro
+    imported_at: '2026-01-02'

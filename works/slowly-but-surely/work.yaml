@@ -1,0 +1,17 @@
+id: slowly-but-surely
+title: Slowly But Surely
+artist: Wynn Stewart
+composers:
+- Harlan Howard, Beverly Stewart, Wynn Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: slowlybutsurelylyricschords.pro
+    imported_at: '2026-01-02'

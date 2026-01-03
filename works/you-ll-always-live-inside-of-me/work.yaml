@@ -1,0 +1,20 @@
+id: you-ll-always-live-inside-of-me
+title: You'll Always Live Inside Of Me
+artist: David Allan Coe
+composers:
+- David A. Coe and Bobby Charles
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllalwaysliveinsideofmelyricschords.pro
+    imported_at: '2026-01-02'

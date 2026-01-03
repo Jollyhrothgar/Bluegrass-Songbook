@@ -1,0 +1,18 @@
+id: handful-of-stars
+title: Handful Of Stars
+artist: Cal Smith
+composers:
+- Ted Harris and Frank Robinson
+default_key: D
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: handfulofstarslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: shadows-on-the-wall
+title: Shadows On The Wall
+artist: Jean Shepard
+composers:
+- Tommy Reiff and Ronnie Badger
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shadowsonthewalllyricsandchords.pro
+    imported_at: '2026-01-02'

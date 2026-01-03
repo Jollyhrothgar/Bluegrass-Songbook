@@ -1,0 +1,17 @@
+id: i-won-t-go-hunting-with-you-jake
+title: I Won't Go Hunting With you Jake
+artist: Jimmy Dean
+composers:
+- Stuart Hamblen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwontgohuntingwithyoujakelyricschords.pro
+    imported_at: '2026-01-02'

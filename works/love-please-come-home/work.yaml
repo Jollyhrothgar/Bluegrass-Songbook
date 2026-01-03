@@ -1,0 +1,18 @@
+id: love-please-come-home
+title: Love Please Come Home
+artist: Don Reno and Red Smiley
+composers:
+- Don Reno
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovepleasecomehomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: texas-up-here-tennessee
+title: Texas Up Here Tennessee
+artist: Johnny Rodriguez
+composers:
+- Billy Joe Shaver
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: texasupheretennesseelyricschords.pro
+    imported_at: '2026-01-02'

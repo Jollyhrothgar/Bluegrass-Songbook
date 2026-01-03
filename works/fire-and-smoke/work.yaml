@@ -1,0 +1,15 @@
+id: fire-and-smoke
+title: Fire And Smoke
+artist: Earl Thomas Conley
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fireandsmokelyricschords.pro
+    imported_at: '2026-01-02'

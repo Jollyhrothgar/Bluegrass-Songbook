@@ -1,0 +1,15 @@
+id: unchained-melody-1
+title: Unchained Melody
+artist: The Righteous Brothers
+composers:
+- Hy Zaret and Alex North
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: unchainedmelodylyricschords.pro
+    imported_at: '2026-01-02'

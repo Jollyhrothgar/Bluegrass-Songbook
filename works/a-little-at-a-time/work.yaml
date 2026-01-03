@@ -1,0 +1,17 @@
+id: a-little-at-a-time
+title: A Little At A Time
+artist: Rhonda Vincent
+composers:
+- Tony Martin, Amy Dalley, Tom Shapiro
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittleatatimelyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: bye-bye-blackbird
+title: Bye Bye Blackbird
+artist: The Everly Brothers
+composers:
+- Ray Henderson and Mort Dixon
+default_key: G
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: byebyeblackbirdlyricschords.pro
+    imported_at: '2026-01-02'

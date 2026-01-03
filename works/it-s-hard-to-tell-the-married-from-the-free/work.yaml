@@ -1,0 +1,17 @@
+id: it-s-hard-to-tell-the-married-from-the-free
+title: It's Hard To Tell The Married From The Free
+artist: Jean Shepard
+composers:
+- Don Helms and Gene Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itshardtotellthemarriedfromthefreelyricschords.pro
+    imported_at: '2026-01-02'

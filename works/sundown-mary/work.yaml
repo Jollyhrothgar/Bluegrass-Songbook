@@ -1,0 +1,17 @@
+id: sundown-mary
+title: Sundown Mary
+artist: Billy Walker
+composers:
+- Chris Gantry and Larry Baunach
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sundownmarylyricschords.pro
+    imported_at: '2026-01-02'

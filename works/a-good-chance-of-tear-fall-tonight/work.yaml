@@ -1,0 +1,18 @@
+id: a-good-chance-of-tear-fall-tonight
+title: A Good Chance Of Tear Fall Tonight
+artist: Charley Pride
+composers:
+- L.E. White and Carolyn Stringer
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: agoodchanceoftearfalltonightlyricschords.pro
+    imported_at: '2026-01-02'

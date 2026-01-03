@@ -1,0 +1,19 @@
+id: some-blue-moons-ago
+title: Some Blue Moons Ago
+artist: Patty Loveless
+composers:
+- Steve Earle and Richard Bennett
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebluemoonsagolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: you-got-it
+title: You Got It
+artist: Roy Orbison
+composers:
+- Tom Petty, Roy Orbison and Jeff Lynne
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yougotitlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,13 @@
+id: how-do-we-know-this-is-love
+title: How Do We Know This Is Love
+artist: Wilburn Brothers
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howdoweknowthisislovelyricschords.pro
+    imported_at: '2026-01-02'

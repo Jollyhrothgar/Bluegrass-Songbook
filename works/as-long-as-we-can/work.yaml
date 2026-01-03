@@ -1,0 +1,17 @@
+id: as-long-as-we-can
+title: As Long As We Can
+artist: George Jones
+composers:
+- Roni Rivers and Agnes Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aslongaswecanlyricschords.pro
+    imported_at: '2026-01-02'

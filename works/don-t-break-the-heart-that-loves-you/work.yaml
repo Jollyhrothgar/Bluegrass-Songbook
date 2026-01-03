@@ -1,0 +1,17 @@
+id: don-t-break-the-heart-that-loves-you
+title: Don't Break The Heart That Loves You
+artist: Connie Francis
+composers:
+- Benny Davis and Murray Mencher
+default_key: G
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontbreaktheheartthatlovesyoulyricschords.pro
+    imported_at: '2026-01-02'

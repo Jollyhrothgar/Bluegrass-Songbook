@@ -1,0 +1,17 @@
+id: under-the-sun
+title: Under The Sun
+artist: Jimmy Dean
+composers:
+- Joe Shapiro and Lou Stallman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: underthesunlyricschords.pro
+    imported_at: '2026-01-02'

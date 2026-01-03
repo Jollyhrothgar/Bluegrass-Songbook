@@ -1,0 +1,18 @@
+id: if-it-hadn-t-been-for-love
+title: If It Hadn't Been For Love
+artist: The Steeldrivers
+composers:
+- Michael James Henderson and Chris Stapleton
+default_key: Am
+tags:
+- Bluegrass
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifithadntbeenforlovelyricschords.pro
+    imported_at: '2026-01-02'

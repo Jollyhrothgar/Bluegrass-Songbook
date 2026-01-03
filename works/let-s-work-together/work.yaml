@@ -1,0 +1,18 @@
+id: let-s-work-together
+title: Let's Work Together
+artist: Dwight Yoakam
+composers:
+- Wilbert Harrison
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsworktogetherlyricschords.pro
+    imported_at: '2026-01-02'

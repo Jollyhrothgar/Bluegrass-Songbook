@@ -1,0 +1,15 @@
+id: true-life-blues
+title: True Life Blues
+artist: Bill Monroe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: truelifeblueslyricschords.pro
+    imported_at: '2026-01-02'

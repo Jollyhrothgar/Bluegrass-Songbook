@@ -1,0 +1,19 @@
+id: chains
+title: Chains
+artist: Patty Loveless
+composers:
+- Bud Reneau and Hal Bynum
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: chainslyricschords.pro
+    imported_at: '2026-01-02'

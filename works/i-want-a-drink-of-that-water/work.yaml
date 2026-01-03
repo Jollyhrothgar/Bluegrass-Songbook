@@ -1,0 +1,15 @@
+id: i-want-a-drink-of-that-water
+title: I Want A Drink Of That Water
+artist: Johnny Bush
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwantadrinkofthatwaterlyricschords.pro
+    imported_at: '2026-01-02'

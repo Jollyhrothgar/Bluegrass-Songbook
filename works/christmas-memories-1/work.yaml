@@ -1,0 +1,15 @@
+id: christmas-memories-1
+title: Christmas Memories
+artist: Alabama
+composers:
+- Randy Albright, John Grenebaum and Becky Hobbs
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasmemorieslyricschords.pro
+    imported_at: '2026-01-02'

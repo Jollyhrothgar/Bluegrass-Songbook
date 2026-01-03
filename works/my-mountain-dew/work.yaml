@@ -1,0 +1,17 @@
+id: my-mountain-dew
+title: My Mountain Dew
+artist: Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mymountaindewlyricschords.pro
+    imported_at: '2026-01-02'

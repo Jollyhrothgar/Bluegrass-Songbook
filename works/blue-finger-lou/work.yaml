@@ -1,0 +1,19 @@
+id: blue-finger-lou
+title: Blue Finger Lou
+artist: Anne Murray
+composers:
+- Alan O'Day
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluefingerloulyricschords.pro
+    imported_at: '2026-01-02'

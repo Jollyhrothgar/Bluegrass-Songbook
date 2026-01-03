@@ -1,0 +1,17 @@
+id: i-just-lost-my-favorite-girl
+title: I Just Lost My Favorite Girl
+artist: George Jones
+composers:
+- Don Adams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustlostmyfavoritegirllyricsandchords.pro
+    imported_at: '2026-01-02'

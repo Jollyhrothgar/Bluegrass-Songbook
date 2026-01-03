@@ -1,0 +1,15 @@
+id: the-last-few-miles-i-ve-traveled-on-my-knees-chords
+title: The Last Few Miles I've Traveled On My Knees chords
+artist: Jimmy Davis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelastfewmilesivetraveledonmykneeslyricschords.pro
+    imported_at: '2026-01-02'

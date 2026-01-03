@@ -1,0 +1,17 @@
+id: the-right-place
+title: The Right Place
+artist: The Derailers
+composers:
+- Bill Carter-Ruth Ellsworth-Tony Villanueva
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therightplacelyricschords.pro
+    imported_at: '2026-01-02'

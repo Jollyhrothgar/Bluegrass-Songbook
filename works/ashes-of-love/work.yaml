@@ -1,0 +1,17 @@
+id: ashes-of-love
+title: Ashes Of Love
+artist: Buck Owens
+composers:
+- Jack Anglin, Johnnie Wright & Jim Anglin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ashesoflovelyricschords.pro
+    imported_at: '2026-01-02'

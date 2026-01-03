@@ -1,0 +1,17 @@
+id: we-re-steppin-out-tonight
+title: We're Steppin' Out Tonight
+artist: David Ball
+composers:
+- Billy Wallace
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weresteppinouttonightlyricschords.pro
+    imported_at: '2026-01-02'

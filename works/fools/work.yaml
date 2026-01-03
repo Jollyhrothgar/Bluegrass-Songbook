@@ -1,0 +1,17 @@
+id: fools
+title: Fools
+artist: Jim Ed Brown and Helen Cornelius
+composers:
+- Johnny Duncan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolslyricschords.pro
+    imported_at: '2026-01-02'

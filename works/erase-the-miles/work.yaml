@@ -1,0 +1,17 @@
+id: erase-the-miles
+title: Erase the Miles
+artist: Russell Moore and IIIrd Tyme Out
+composers:
+- Carl E. Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: erasethemileslyricschords.pro
+    imported_at: '2026-01-02'

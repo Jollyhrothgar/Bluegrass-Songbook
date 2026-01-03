@@ -1,0 +1,18 @@
+id: snowflake
+title: Snowflake
+artist: Jim Reeves
+composers:
+- Ned Miller
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: snowflakelyricschords.pro
+    imported_at: '2026-01-02'

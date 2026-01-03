@@ -1,0 +1,17 @@
+id: the-other-woman-1
+title: The Other Woman
+artist: Ray Price
+composers:
+- Don Rollins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theotherwomanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: with-your-love
+title: With Your Love
+artist: Jack Scott
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withyourlovelyricschords.pro
+    imported_at: '2026-01-02'

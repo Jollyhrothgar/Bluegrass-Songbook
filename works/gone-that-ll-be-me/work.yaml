@@ -1,0 +1,15 @@
+id: gone-that-ll-be-me
+title: Gone (That'll Be Me)
+artist: Dwight Yoakam
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonethatllbemelyricschords.pro
+    imported_at: '2026-01-02'

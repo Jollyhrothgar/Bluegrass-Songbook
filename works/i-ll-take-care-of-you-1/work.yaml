@@ -1,0 +1,17 @@
+id: i-ll-take-care-of-you-1
+title: I'll Take Care Of You
+artist: Kenny Rogers
+composers:
+- John D. Souther
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illtakecareofyoulyricswithchords.pro
+    imported_at: '2026-01-02'

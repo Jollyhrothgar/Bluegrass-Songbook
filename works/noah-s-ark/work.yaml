@@ -1,0 +1,17 @@
+id: noah-s-ark
+title: Noah's Ark
+artist: Bobby Bare
+composers:
+- Dorsey Burnette and Barry DeVorzon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noahsarklyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: someone-was-already-there
+title: Someone Was Already There
+artist: Bobby Helms
+composers:
+- Bobby Helms and Don Abram
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someonewasalreadytherelyricschords.pro
+    imported_at: '2026-01-02'

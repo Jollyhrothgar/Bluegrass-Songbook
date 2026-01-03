@@ -1,0 +1,20 @@
+id: i-can-t-let-you-be-a-memory
+title: I Can't Let You Be A Memory
+artist: David Allan Coe
+composers:
+- Warren Haynes
+default_key: G
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantletyoubeamemorylyricschords.pro
+    imported_at: '2026-01-02'

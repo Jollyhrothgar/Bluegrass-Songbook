@@ -1,0 +1,17 @@
+id: the-tears-that-i-cry
+title: The Tears That I Cry
+artist: John Anderson
+composers:
+- Paul Kennerley and John Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetearsthaticrylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: peace-within
+title: Peace Within
+artist: John Conlee
+composers:
+- Allen Reynolds, Dickey Lee, Kay Taylor
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: peacewithinlyricschords.pro
+    imported_at: '2026-01-02'

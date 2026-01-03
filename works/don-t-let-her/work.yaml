@@ -1,0 +1,17 @@
+id: don-t-let-her
+title: Don't Let Her
+artist: Carl Smith
+composers:
+- Max Powell, Eddie Crandell, Jo Armstrong
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontletherlyricschords.pro
+    imported_at: '2026-01-02'

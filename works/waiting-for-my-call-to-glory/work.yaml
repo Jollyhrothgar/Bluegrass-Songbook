@@ -1,0 +1,15 @@
+id: waiting-for-my-call-to-glory
+title: Waiting For My Call To Glory
+artist: Roy Acuff
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waitingformycalltoglorylyricschords.pro
+    imported_at: '2026-01-02'

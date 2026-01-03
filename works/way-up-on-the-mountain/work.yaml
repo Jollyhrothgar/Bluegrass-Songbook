@@ -1,0 +1,17 @@
+id: way-up-on-the-mountain
+title: Way Up On The Mountain
+artist: Connie Smith
+composers:
+- Ira Louvin and Anne Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wayuponthemountainlyricschords.pro
+    imported_at: '2026-01-02'

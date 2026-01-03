@@ -1,0 +1,19 @@
+id: when-ole-goin-gets-a-goin
+title: When Ole Goin' Gets A Goin'
+artist: Ernest Tubb
+composers:
+- Eddie Miller
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenolegoingetsagoinlyricschords.pro
+    imported_at: '2026-01-02'

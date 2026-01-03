@@ -1,0 +1,15 @@
+id: i-give-all-my-love-to-you
+title: I Give All My Love To You
+artist: Rhonda Vincent with Russell Moore
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igiveallmylovetoyoulyricschords.pro
+    imported_at: '2026-01-02'

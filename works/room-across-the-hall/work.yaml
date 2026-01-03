@@ -1,0 +1,17 @@
+id: room-across-the-hall
+title: Room Across The Hall
+artist: The Willis Brothers
+composers:
+- Jack Rhodes and Porter Jordan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: roomacrossthehalllyricschords.pro
+    imported_at: '2026-01-02'

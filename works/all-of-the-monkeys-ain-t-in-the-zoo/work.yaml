@@ -1,0 +1,15 @@
+id: all-of-the-monkeys-ain-t-in-the-zoo
+title: All Of The Monkeys Ain't In The Zoo
+artist: Tommy Collins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allofthemonkeysaintinthezoolyricschords.pro
+    imported_at: '2026-01-02'

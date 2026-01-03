@@ -1,0 +1,17 @@
+id: another-man-loved-me-last-night
+title: Another Man Loved Me Last Night
+artist: Norma Jean
+composers:
+- Peggy Sue Wells and Lorene Allen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anothermanlovedmelastnightlyricschords.pro
+    imported_at: '2026-01-02'

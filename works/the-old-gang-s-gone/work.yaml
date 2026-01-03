@@ -1,0 +1,19 @@
+id: the-old-gang-s-gone
+title: The Old Gang's Gone
+artist: Mel Tillis
+composers:
+- Bobby Cisco and Bill Guess
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldgangsgonelyricschords.pro
+    imported_at: '2026-01-02'

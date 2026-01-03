@@ -1,0 +1,19 @@
+id: we-could-have-been
+title: We Could Have Been
+artist: Vince Gill
+composers:
+- Don Cook and John Jarvis
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wecouldhavebeenlyricschords.pro
+    imported_at: '2026-01-02'

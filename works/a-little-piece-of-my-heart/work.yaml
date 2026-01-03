@@ -1,0 +1,18 @@
+id: a-little-piece-of-my-heart
+title: A Little Piece Of My Heart
+artist: Conway Twitty
+composers:
+- Otis Blackwell and Winfield Scott
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittlepieceofmyheartlyricschords.pro
+    imported_at: '2026-01-02'

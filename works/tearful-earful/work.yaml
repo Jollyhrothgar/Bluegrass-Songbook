@@ -1,0 +1,17 @@
+id: tearful-earful
+title: Tearful Earful
+artist: Ray Price
+composers:
+- Don Rollins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tearfulearfullyricschords.pro
+    imported_at: '2026-01-02'

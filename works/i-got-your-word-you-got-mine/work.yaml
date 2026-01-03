@@ -1,0 +1,15 @@
+id: i-got-your-word-you-got-mine
+title: I Got Your Word You Got Mine
+artist: Jimmy Dean
+composers:
+- Jimmy Dean and Ruth Roberts
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igotyourwordyougotminelyricschords.pro
+    imported_at: '2026-01-02'

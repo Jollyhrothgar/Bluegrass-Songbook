@@ -1,0 +1,17 @@
+id: shoot-low-sheriff
+title: Shoot Low Sheriff
+artist: John Anderson
+composers:
+- Monroe Fields and Carmol Taylor
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shootlowsherifflyricschords.pro
+    imported_at: '2026-01-02'

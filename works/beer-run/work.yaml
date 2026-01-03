@@ -1,0 +1,15 @@
+id: beer-run
+title: Beer Run
+artist: Garth Brooks with George Jones
+composers:
+- Kim Williams, Kent Blazy, Keith Anderson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beerrunlyricschords.pro
+    imported_at: '2026-01-02'

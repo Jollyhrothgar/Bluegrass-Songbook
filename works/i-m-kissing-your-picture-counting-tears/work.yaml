@@ -1,0 +1,15 @@
+id: i-m-kissing-your-picture-counting-tears
+title: I'm Kissing Your Picture Counting Tears
+artist: Hawkshaw Hawkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kissingyourpicturecountingtearslyricschords.pro
+    imported_at: '2026-01-02'

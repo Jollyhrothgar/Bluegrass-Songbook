@@ -1,0 +1,17 @@
+id: the-blues-don-t-care-who-s-got-em
+title: The Blues Don't Care Who's Got 'Em
+artist: Eddy Arnold
+composers:
+- Wayland D. Holyfield and Dickey Lee
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebluesdontcarewhosgotemlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-am-slowly-dying-of-a-broken-heart
+title: I Am Slowly Dying Of A Broken Heart
+artist: Hawkshaw Hawkins
+composers:
+- Sydney Nathan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iamslowlydyingofabrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

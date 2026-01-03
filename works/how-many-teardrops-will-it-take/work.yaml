@@ -1,0 +1,19 @@
+id: how-many-teardrops-will-it-take
+title: How Many Teardrops Will It Take
+artist: Hank Thompson
+composers:
+- Billy Gray and Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howmanyteardropswillIttakelyricschords.pro
+    imported_at: '2026-01-02'

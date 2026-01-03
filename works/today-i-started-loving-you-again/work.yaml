@@ -1,0 +1,18 @@
+id: today-i-started-loving-you-again
+title: Today I Started Loving You Again
+artist: Merle Haggard
+composers:
+- Merle Haggard and Bonnie Owens
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: todayistartedlovingyouagainlyricschords.pro
+    imported_at: '2026-01-02'

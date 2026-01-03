@@ -1,0 +1,17 @@
+id: it-took-us-all-night-long-to-say-goodbye
+title: It Took Us All Night Long To Say Goodbye
+artist: Johnny Rodriguez
+composers:
+- Bob McDill and Wayland Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ittookusallnightlongtosaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

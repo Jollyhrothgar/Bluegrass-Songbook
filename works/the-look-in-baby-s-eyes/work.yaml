@@ -1,0 +1,15 @@
+id: the-look-in-baby-s-eyes
+title: The Look In Baby's Eyes
+artist: Johnny Duncan
+composers:
+- Ann J. Morton
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelookinbabyseyeslyricschords.pro
+    imported_at: '2026-01-02'

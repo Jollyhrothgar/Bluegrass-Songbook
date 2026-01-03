@@ -1,0 +1,17 @@
+id: the-great-mail-robbery
+title: The Great Mail Robbery
+artist: Rex Allen Jr.
+composers:
+- Joseph Paul Allen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegreatmailrobberylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-not-up-to-feelin-down-tonight
+title: I'm Not Up to Feelin' Down Tonight
+artist: Johnny Rodriguez
+composers:
+- David Anthony, Johnny Rodriguez, Jim Wix
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotuptofeelindowntonightlyricschords.pro
+    imported_at: '2026-01-02'

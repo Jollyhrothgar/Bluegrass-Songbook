@@ -1,0 +1,16 @@
+id: little-grave-in-georgia
+title: Little Grave in Georgia
+artist: Traditional
+composers:
+- Biography:Earl Johnson
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

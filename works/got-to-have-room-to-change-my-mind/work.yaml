@@ -1,0 +1,17 @@
+id: got-to-have-room-to-change-my-mind
+title: Got To Have Room To Change My Mind
+artist: Bob Luman
+composers:
+- Steve Wariner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gottohaveroomtochangemymindlyricschords.pro
+    imported_at: '2026-01-02'

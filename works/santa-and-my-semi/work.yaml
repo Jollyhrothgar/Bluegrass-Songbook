@@ -1,0 +1,13 @@
+id: santa-and-my-semi
+title: Santa and My Semi
+artist: Dale Watson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: santaandmysemilyricschords.pro
+    imported_at: '2026-01-02'

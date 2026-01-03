@@ -1,0 +1,19 @@
+id: just-to-satisfy-the-weakness-in-a-man
+title: Just To Satisfy The Weakness In A Man
+artist: Loretta Lynn
+composers:
+- Carol Jones
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justtosatisfytheweaknessinamanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: fancy-satin-pillows
+title: Fancy Satin Pillows
+artist: Wanda Jackson
+composers:
+- Jerry Crutchfield and Dee Moeller
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fancysatinpillowslyricschords.pro
+    imported_at: '2026-01-02'

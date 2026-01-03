@@ -1,0 +1,15 @@
+id: deck-of-card
+title: Deck of Card
+artist: Tex Ritter
+composers:
+- 'Richard F Beckham Spoken: Strum softly'
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: deckofcardslyricschords.pro
+    imported_at: '2026-01-02'

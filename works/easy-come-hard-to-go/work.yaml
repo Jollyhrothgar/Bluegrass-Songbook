@@ -1,0 +1,18 @@
+id: easy-come-hard-to-go
+title: Easy Come Hard To Go
+artist: Mickey Gilley
+composers:
+- Pat Alger and Rick Beresford
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easycomehardtogolyricschords.pro
+    imported_at: '2026-01-02'

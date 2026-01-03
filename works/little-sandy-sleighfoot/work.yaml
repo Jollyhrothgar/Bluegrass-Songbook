@@ -1,0 +1,15 @@
+id: little-sandy-sleighfoot
+title: Little Sandy Sleighfoot
+artist: Jimmy Dean
+composers:
+- Joseph E. Savarino and Philip M. Crane
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlesandysleighfootlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: family-ties-won-t-be-broken-in-heaven
+title: Family Ties Won't Be Broken In Heaven
+artist: The Singing Cookies
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: familytieswontbebrokeninheavenlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: don-t-make-me-come-over-there-and-love-you
+title: Don't Make Me Come Over There And Love You
+artist: George Strait
+composers:
+- Jim Lauderdale and Carter Wood
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontmakemecomeoverthereandloveyoulyricschords.pro
+    imported_at: '2026-01-02'

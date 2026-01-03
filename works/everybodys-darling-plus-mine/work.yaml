@@ -1,0 +1,18 @@
+id: everybodys-darling-plus-mine
+title: Everybody’s Darling Plus Mine
+artist: Marty Robbins
+composers:
+- Frances Hur
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodysdarlingplusminelyricschords.pro
+    imported_at: '2026-01-02'

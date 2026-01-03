@@ -1,0 +1,17 @@
+id: she-s-got-the-rhythm-and-i-got-the-blues
+title: She's Got The Rhythm (And I Got The Blues)
+artist: Alan Jackson
+composers:
+- Randy Travis and Alan Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesgottherhythmandigottheblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-m-still-here-you-re-still-gone
+title: I'm Still Here You're Still Gone
+artist: Randy Travis
+composers:
+- Kevin Brandt and Ralph Murthy
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imstillhereyourestillgonelyricschords.pro
+    imported_at: '2026-01-02'

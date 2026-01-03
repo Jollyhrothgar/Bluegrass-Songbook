@@ -1,0 +1,17 @@
+id: gosh-i-miss-you-all-the-time
+title: Gosh I Miss You All The Time
+artist: Jim and Jesse
+composers:
+- Jimmy Long
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goshimissyouallthetimelyricschords.pro
+    imported_at: '2026-01-02'

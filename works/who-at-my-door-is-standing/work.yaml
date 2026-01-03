@@ -1,0 +1,18 @@
+id: who-at-my-door-is-standing
+title: Who at My Door is Standing
+artist: Marty Robbins
+composers:
+- Mary B. Slade and Asa B. Everett
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoatmydoorisstandinglyricschords.pro
+    imported_at: '2026-01-02'

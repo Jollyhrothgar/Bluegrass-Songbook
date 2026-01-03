@@ -1,0 +1,18 @@
+id: sal-s-got-a-sugar-lip
+title: Sal's Got A Sugar Lip
+artist: Johnny Horton
+composers:
+- Jimmie Driftwood
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: salsgotasugarliplyricschords.pro
+    imported_at: '2026-01-02'

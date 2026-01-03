@@ -1,0 +1,17 @@
+id: blues-stay-away-from-me
+title: Blues Stay Away From Me
+artist: Jean Sheppard
+composers:
+- Alton Delmore, Wayne Raney, Henry Glover
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluesstayawayfrommelyricschords.pro
+    imported_at: '2026-01-02'

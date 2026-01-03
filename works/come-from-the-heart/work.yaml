@@ -1,0 +1,17 @@
+id: come-from-the-heart
+title: Come From The Heart
+artist: Don Williams
+composers:
+- Richard Leigh and Susanna Clark
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comefromtheheartlyricschords.pro
+    imported_at: '2026-01-02'

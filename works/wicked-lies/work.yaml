@@ -1,0 +1,17 @@
+id: wicked-lies
+title: Wicked Lies
+artist: Carl Smith
+composers:
+- Joe H. Brewster, Pearl D. Jones, Carl Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wickedlieslyricschords.pro
+    imported_at: '2026-01-02'

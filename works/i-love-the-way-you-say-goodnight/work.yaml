@@ -1,0 +1,18 @@
+id: i-love-the-way-you-say-goodnight
+title: I Love The Way You Say Goodnight
+artist: Hawkshaw Hawkins
+composers:
+- Stoney Rigsby and Katherine Adelman
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovethewayyousaygoodnightlyricschords.pro
+    imported_at: '2026-01-02'

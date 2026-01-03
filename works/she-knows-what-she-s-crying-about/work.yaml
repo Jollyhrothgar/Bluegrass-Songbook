@@ -1,0 +1,17 @@
+id: she-knows-what-she-s-crying-about
+title: She Knows What She's Crying About
+artist: George Jones
+composers:
+- John Riggs
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sheknowswhatshescryingaboutlyricschords.pro
+    imported_at: '2026-01-02'

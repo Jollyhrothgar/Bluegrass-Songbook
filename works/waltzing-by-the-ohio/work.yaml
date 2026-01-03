@@ -1,0 +1,17 @@
+id: waltzing-by-the-ohio
+title: Waltzing By The Ohio
+artist: George Morgan
+composers:
+- George Morgan and Harry Beasley Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waltzingbytheohiolyricschords.pro
+    imported_at: '2026-01-02'

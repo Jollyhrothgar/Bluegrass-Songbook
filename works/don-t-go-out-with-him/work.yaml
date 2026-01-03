@@ -1,0 +1,18 @@
+id: don-t-go-out-with-him
+title: Don't Go Out With Him
+artist: Tanya Tucker
+composers:
+- Radney M. Foster and Bill Lloyd
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontgooutwithhimlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: wishing-well
+title: Wishing Well
+artist: Wanda Jackson
+composers:
+- Billy Graham
+default_key: G
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wishingwelllyricschords.pro
+    imported_at: '2026-01-02'

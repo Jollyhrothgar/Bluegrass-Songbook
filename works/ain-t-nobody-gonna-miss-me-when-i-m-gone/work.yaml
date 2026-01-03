@@ -1,0 +1,17 @@
+id: ain-t-nobody-gonna-miss-me-when-i-m-gone
+title: Ain't Nobody Gonna Miss Me When I'm Gone
+artist: George Jones
+composers:
+- George Glenn Jones and Earl Montgomery
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintnobodygonnamissmewhenimgonelyricschords.pro
+    imported_at: '2026-01-02'

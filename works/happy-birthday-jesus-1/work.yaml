@@ -1,0 +1,17 @@
+id: happy-birthday-jesus-1
+title: Happy Birthday Jesus
+artist: Faron Young
+composers:
+- Bill Emerson and Jody Emerson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: happybirthdayJesuslyricschords.pro
+    imported_at: '2026-01-02'

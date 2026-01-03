@@ -1,0 +1,17 @@
+id: fort-worth-jail
+title: Fort Worth Jail
+artist: Jimmy Dean
+composers:
+- Dick Reinhardt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fortworthjaillyricschords.pro
+    imported_at: '2026-01-02'

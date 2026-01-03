@@ -1,0 +1,17 @@
+id: i-ll-kiss-the-past-goodbye
+title: I'll Kiss The Past Goodbye
+artist: Carl Smith
+composers:
+- Wayne Walker and Mel Tillis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illkissthepastgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: if-i-live-long-enough
+title: If I Live Long Enough
+artist: Norma Jean
+composers:
+- Helen Carter and Anita Carter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifilivelongenoughlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,21 @@
+id: where-do-i-go-from-here-3
+title: Where Do I Go From Here
+artist: Elvis Presley
+composers:
+- Paul Williams
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheredoigofromherelyricswithchords.pro
+    imported_at: '2026-01-02'

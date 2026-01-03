@@ -1,0 +1,17 @@
+id: dear-hearts-and-gentle-people
+title: Dear Hearts And Gentle People
+artist: Jim Reeves
+composers:
+- Bob Hillard and Sammy Fain
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dearheartsandgentlepeoplelyricschords.pro
+    imported_at: '2026-01-02'

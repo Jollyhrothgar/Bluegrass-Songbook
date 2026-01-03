@@ -1,0 +1,15 @@
+id: my-ears-should-burn-when-fools-are-talked-about
+title: My Ears Should Burn When Fools Are Talked About
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myearsshouldburnwhenfoolsaretalkedaboutlyricschords.pro
+    imported_at: '2026-01-02'

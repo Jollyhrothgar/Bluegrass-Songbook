@@ -1,0 +1,19 @@
+id: when-the-tingle-becomes-a-chill
+title: When The Tingle Becomes A Chill
+artist: Loretta Lynn
+composers:
+- Lola Jean Dillon
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthetinglebecomesachilllyricschords.pro
+    imported_at: '2026-01-02'

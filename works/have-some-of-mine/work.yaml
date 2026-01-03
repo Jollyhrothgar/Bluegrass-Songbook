@@ -1,0 +1,15 @@
+id: have-some-of-mine
+title: Have Some Of Mine
+artist: George Morgan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: havesomeofminelyricschords.pro
+    imported_at: '2026-01-02'

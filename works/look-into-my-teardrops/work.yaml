@@ -1,0 +1,18 @@
+id: look-into-my-teardrops
+title: Look into my Teardrops
+artist: Conway Twitty
+composers:
+- Harlan Howard and Don Bowman
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookintomyteardropslyricschords.pro
+    imported_at: '2026-01-02'

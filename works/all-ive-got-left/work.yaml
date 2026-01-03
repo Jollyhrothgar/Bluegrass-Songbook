@@ -1,0 +1,17 @@
+id: all-ive-got-left
+title: All I’ve Got Left
+artist: Norma Jean
+composers:
+- Sharon Hoggins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allivegotleftlyricschords.pro
+    imported_at: '2026-01-02'

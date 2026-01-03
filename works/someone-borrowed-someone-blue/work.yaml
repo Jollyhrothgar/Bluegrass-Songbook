@@ -1,0 +1,15 @@
+id: someone-borrowed-someone-blue
+title: Someone Borrowed Someone Blue
+artist: Eddy Raven
+composers:
+- Steve Dean, Frank Myers, David Hungate
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someoneborrowedsomeonebluelyricschords.pro
+    imported_at: '2026-01-02'

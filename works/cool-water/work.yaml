@@ -1,0 +1,17 @@
+id: cool-water
+title: Cool Water
+artist: Eddy Arnold
+composers:
+- Bob Nolan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coolwaterlyricschords.pro
+    imported_at: '2026-01-02'

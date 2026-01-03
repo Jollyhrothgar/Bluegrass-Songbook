@@ -1,0 +1,19 @@
+id: i-m-longing-for-home
+title: I'm Longing For Home
+artist: Jerry Lee Lewis
+composers:
+- O.S. Davis and Rupert Cravens
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlongingforhomelyricschords.pro
+    imported_at: '2026-01-02'

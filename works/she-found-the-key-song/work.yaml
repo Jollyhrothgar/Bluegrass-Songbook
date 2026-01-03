@@ -1,0 +1,17 @@
+id: she-found-the-key-song
+title: She Found The Key Song
+artist: Gene Watson
+composers:
+- Lefty Frizzell and Sanger D. Shafer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shefoundthekeylyricschords.pro
+    imported_at: '2026-01-02'

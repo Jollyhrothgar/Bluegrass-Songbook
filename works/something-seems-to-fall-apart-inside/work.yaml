@@ -1,0 +1,18 @@
+id: something-seems-to-fall-apart-inside
+title: Something Seems to Fall Apart Inside
+artist: Jack Greene
+composers:
+- Hank Cochran
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingseemstofallapartinsidelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: in-my-world-you-don-t-belong
+title: In My World You Don't Belong
+artist: Charley Pride
+composers:
+- Johnny Duncan
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inmyworldyoudontbelonglyricschords.pro
+    imported_at: '2026-01-02'

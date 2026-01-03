@@ -1,0 +1,18 @@
+id: bumming-around-lyrics-and-chords
+title: Bumming Around Lyrics and Chords
+artist: Hank Thompson
+composers:
+- Pete Graves
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bummingaroundlyricsandchords.pro
+    imported_at: '2026-01-02'

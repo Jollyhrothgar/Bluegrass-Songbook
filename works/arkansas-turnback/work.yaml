@@ -1,0 +1,17 @@
+id: arkansas-turnback
+title: Arkansas Turnback
+artist: Traditional
+composers:
+- Biography:Bill Bilyeu via Art Galbraith
+default_key: D
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

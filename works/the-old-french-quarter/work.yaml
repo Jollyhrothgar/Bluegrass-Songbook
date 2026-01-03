@@ -1,0 +1,17 @@
+id: the-old-french-quarter
+title: The Old French Quarter
+artist: Billy Walker
+composers:
+- Cliff Crofford
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldfrenchquarterlyricschords.pro
+    imported_at: '2026-01-02'

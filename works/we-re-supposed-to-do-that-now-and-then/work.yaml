@@ -1,0 +1,17 @@
+id: we-re-supposed-to-do-that-now-and-then
+title: We're Supposed To Do That Now And Then
+artist: George Strait
+composers:
+- Dean Dillon, David Anthony, Joe Royer
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weresupposedtodothatnowandthenlyricschords.pro
+    imported_at: '2026-01-02'

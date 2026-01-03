@@ -1,0 +1,17 @@
+id: lies-can-t-hide-what-s-on-my-mind
+title: Lies Can't Hide What's On My Mind
+artist: Melba Montgomery
+composers:
+- Melba Montgomery and Carl Montgomery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: liescanthidewhatsonmymindlyricschords.pro
+    imported_at: '2026-01-02'

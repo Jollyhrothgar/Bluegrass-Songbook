@@ -1,0 +1,17 @@
+id: rocking-around-the-christmas-tree
+title: Rocking Around The Christmas Tree
+artist: Brenda Lee
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockingaroundthechristmastreelyricschords.pro
+    imported_at: '2026-01-02'

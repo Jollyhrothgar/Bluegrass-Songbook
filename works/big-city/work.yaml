@@ -1,0 +1,19 @@
+id: big-city
+title: Big City
+artist: Ernest Tubb
+composers:
+- Paul Williams and Sam Humphrey
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigcitylyrics-chords.pro
+    imported_at: '2026-01-02'

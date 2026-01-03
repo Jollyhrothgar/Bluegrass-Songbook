@@ -1,0 +1,18 @@
+id: rollin-and-ramblin-the-death-of-hank-williams
+title: Rollin' And Ramblin' (The Death Of Hank Williams)
+artist: Emmylou Harris
+composers:
+- Robin Williams, Linda Williams, Jerome Clark
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rollinandramblinthedeathofhankwilliamslyricschords.pro
+    imported_at: '2026-01-02'

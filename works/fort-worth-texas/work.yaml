@@ -1,0 +1,15 @@
+id: fort-worth-texas
+title: Fort Worth Texas
+artist: Ray Price
+composers:
+- Cindy Walker
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fortworthtexaslyricschords.pro
+    imported_at: '2026-01-02'

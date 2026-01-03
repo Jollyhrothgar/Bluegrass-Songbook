@@ -1,0 +1,15 @@
+id: it-took-a-miracle
+title: It Took A Miracle
+artist: Eddy Arnold
+composers:
+- John W. Peterson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ittookamiraclelyricschords.pro
+    imported_at: '2026-01-02'

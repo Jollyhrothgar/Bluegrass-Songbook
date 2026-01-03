@@ -1,0 +1,20 @@
+id: one-step-at-a-time-1
+title: One Step At A Time
+artist: Brenda Lee
+composers:
+- H. Ashley
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onestepatatimelyricschords.pro
+    imported_at: '2026-01-02'

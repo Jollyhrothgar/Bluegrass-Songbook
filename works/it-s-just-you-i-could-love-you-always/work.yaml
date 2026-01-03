@@ -1,0 +1,16 @@
+id: it-s-just-you-i-could-love-you-always
+title: It's Just You (I Could Love You Always)
+artist: Lefty Frizzell
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsjustyouicouldloveyoualwayslyricschords.pro
+    imported_at: '2026-01-02'

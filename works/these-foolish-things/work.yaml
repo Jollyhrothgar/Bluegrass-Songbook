@@ -1,0 +1,17 @@
+id: these-foolish-things
+title: These Foolish Things
+artist: Ray Price
+composers:
+- Harry Link, Holt Marvell, Jack Strachey
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesefoolishthingslyricschords.pro
+    imported_at: '2026-01-02'

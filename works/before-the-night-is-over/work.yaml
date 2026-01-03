@@ -1,0 +1,19 @@
+id: before-the-night-is-over
+title: Before The Night Is Over
+artist: Jerry Lee Lewis
+composers:
+- Ben Peters
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforethenightisoverlyricschords.pro
+    imported_at: '2026-01-02'

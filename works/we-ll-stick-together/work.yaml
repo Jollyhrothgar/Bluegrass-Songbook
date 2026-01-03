@@ -1,0 +1,18 @@
+id: we-ll-stick-together
+title: We'll Stick Together
+artist: Kitty Wells
+composers:
+- Bill Phillips
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wellsticktogetherlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-are-my-life
+title: You Are My Life
+artist: Webb Pierce
+composers:
+- Webb Pierce and Louis Blackburn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youaremylifelyricschords.pro
+    imported_at: '2026-01-02'

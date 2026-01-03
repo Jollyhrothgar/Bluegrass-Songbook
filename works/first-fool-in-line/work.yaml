@@ -1,0 +1,17 @@
+id: first-fool-in-line
+title: First Fool In Line
+artist: Don Williams
+composers:
+- Byron Hill and Tammi Kidd
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: firstfoolinlinelyricschords.pro
+    imported_at: '2026-01-02'

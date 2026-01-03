@@ -1,0 +1,17 @@
+id: a-perfect-stranger
+title: A Perfect Stranger
+artist: Faron Young
+composers:
+- Lorene Allen and Kenny Starr
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aperfectstrangerlyricschords.pro
+    imported_at: '2026-01-02'

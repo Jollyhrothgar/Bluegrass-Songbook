@@ -1,0 +1,15 @@
+id: that-big-old-moon
+title: That Big Old Moon
+artist: Ferlin Husky
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatbigoldmoonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: wonderful-words-of-life
+title: Wonderful Words Of Life
+artist: Statler Brothers
+composers:
+- Philip Paul Bliss
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wonderfulwordsoflifelyricschords.pro
+    imported_at: '2026-01-02'

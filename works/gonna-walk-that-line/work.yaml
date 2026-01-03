@@ -1,0 +1,18 @@
+id: gonna-walk-that-line
+title: Gonna Walk That Line
+artist: Randy Travis
+composers:
+- Jamie O'Hara and Kieran Kane
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonnawalkthatlinelyricschords.pro
+    imported_at: '2026-01-02'

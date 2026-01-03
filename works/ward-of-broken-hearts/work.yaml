@@ -1,0 +1,17 @@
+id: ward-of-broken-hearts
+title: Ward Of Broken Hearts
+artist: Stonewall Jackson
+composers:
+- John D. Loudermilk
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wardofbrokenheartslyricschords.pro
+    imported_at: '2026-01-02'

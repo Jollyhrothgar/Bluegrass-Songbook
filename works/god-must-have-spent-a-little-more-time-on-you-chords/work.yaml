@@ -1,0 +1,17 @@
+id: god-must-have-spent-a-little-more-time-on-you-chords
+title: God Must Have Spent A Little More Time On You chords
+artist: Alabama
+composers:
+- Sturken Carl Allen, Rogers Evan A
+default_key: G
+tags:
+- Jazzy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: godmusthavespentalittlemoretimeonyoulyricschords.pro
+    imported_at: '2026-01-02'

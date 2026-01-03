@@ -1,0 +1,18 @@
+id: i-guess-i-ll-go-on-dreaming
+title: I Guess I'll Go On Dreaming
+artist: Kitty Wells
+composers:
+- Johnnie Bailes and Walter Bailes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iguessillgoondreaminglyricschords.pro
+    imported_at: '2026-01-02'

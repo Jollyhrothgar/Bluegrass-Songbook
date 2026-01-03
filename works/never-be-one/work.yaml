@@ -1,0 +1,17 @@
+id: never-be-one
+title: Never Be One
+artist: Alabama
+composers:
+- Teddy Gentry
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: neverbeonelyricschords.pro
+    imported_at: '2026-01-02'

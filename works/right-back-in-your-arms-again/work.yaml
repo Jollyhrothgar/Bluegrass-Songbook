@@ -1,0 +1,17 @@
+id: right-back-in-your-arms-again
+title: Right Back In Your Arms Again
+artist: Mel Tillis
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rightbackinyourarmsagainlyricschords.pro
+    imported_at: '2026-01-02'

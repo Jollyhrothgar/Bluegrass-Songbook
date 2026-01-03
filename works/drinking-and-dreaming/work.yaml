@@ -1,0 +1,19 @@
+id: drinking-and-dreaming
+title: Drinking And Dreaming
+artist: Waylon Jennings
+composers:
+- Troy Seals and Max D. Barnes
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drinkinganddreaminglyricschords.pro
+    imported_at: '2026-01-02'

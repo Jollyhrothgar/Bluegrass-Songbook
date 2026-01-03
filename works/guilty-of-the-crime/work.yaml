@@ -1,0 +1,17 @@
+id: guilty-of-the-crime
+title: Guilty Of The Crime
+artist: The Bellamy Brothers
+composers:
+- Frankie Miller and Jerry Williams, Jr.
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: guiltyofthecrimelyricschords.pro
+    imported_at: '2026-01-02'

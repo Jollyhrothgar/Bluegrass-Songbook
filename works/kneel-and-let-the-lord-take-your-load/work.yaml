@@ -1,0 +1,16 @@
+id: kneel-and-let-the-lord-take-your-load
+title: Kneel And Let The Lord Take Your Load
+artist: Marty Robbins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kneelandletthelordtakeyourloadlyricschords.pro
+    imported_at: '2026-01-02'

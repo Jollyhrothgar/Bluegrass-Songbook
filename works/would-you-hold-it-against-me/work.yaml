@@ -1,0 +1,17 @@
+id: would-you-hold-it-against-me
+title: Would You Hold it Against Me
+artist: Dottie West
+composers:
+- Bill and Dottie West
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wouldyouholditagainstmelyricschords.pro
+    imported_at: '2026-01-02'

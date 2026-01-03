@@ -1,0 +1,17 @@
+id: look-what-followed-me-home-tonight
+title: Look What Followed Me Home Tonight
+artist: George Morgan
+composers:
+- Gary Walker and Porter Wagoner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookwhatfollowedmehometonightlyricschords.pro
+    imported_at: '2026-01-02'

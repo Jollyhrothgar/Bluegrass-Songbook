@@ -1,0 +1,18 @@
+id: midnight-love
+title: Midnight Love
+artist: Tammy Wynette
+composers:
+- Buck Moore
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: midnightlovelyricschords.pro
+    imported_at: '2026-01-02'

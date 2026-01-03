@@ -1,0 +1,18 @@
+id: cold-lonely-feeling
+title: Cold Lonely Feeling
+artist: Tammy Wynette
+composers:
+- Jerry Chesnut
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coldlonelyfeelinglyricschords.pro
+    imported_at: '2026-01-02'

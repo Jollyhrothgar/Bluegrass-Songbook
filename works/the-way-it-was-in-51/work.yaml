@@ -1,0 +1,16 @@
+id: the-way-it-was-in-51
+title: The Way It Was In '51
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewayitwasin51lyricschords.pro
+    imported_at: '2026-01-02'

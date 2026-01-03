@@ -1,0 +1,17 @@
+id: going-through-hell-for-an-angel
+title: Going Through Hell For An Angel
+artist: Jack Greene
+composers:
+- Jerry Max Lane and Glenn Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goingthroughhellforanangellyricschords.pro
+    imported_at: '2026-01-02'

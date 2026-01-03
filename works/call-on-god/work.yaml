@@ -1,0 +1,17 @@
+id: call-on-god
+title: Call On God
+artist: Melba Montgomery
+composers:
+- Melba Montgomery and Carl Montgomery
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: callonGodlyricschords.pro
+    imported_at: '2026-01-02'

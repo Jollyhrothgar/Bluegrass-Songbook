@@ -1,0 +1,17 @@
+id: trying-to-get-to-you
+title: Trying To Get To You
+artist: Ricky Nelson
+composers:
+- Rose Marie McCoy and Charles Singleton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tryingtogettoyoulyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: go-to-sleep-our-baby-boy
+title: Go To Sleep Our Baby Boy
+artist: Bob Wills
+composers:
+- N.D. Allender
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gotosleepourbabyboylyricschords.pro
+    imported_at: '2026-01-02'

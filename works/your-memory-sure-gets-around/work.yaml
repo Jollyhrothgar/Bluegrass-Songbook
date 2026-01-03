@@ -1,0 +1,18 @@
+id: your-memory-sure-gets-around
+title: Your Memory Sure Gets Around
+artist: Merle Haggard
+composers:
+- Ronal McCown
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourmemorysuregetsaroundlyricschords.pro
+    imported_at: '2026-01-02'

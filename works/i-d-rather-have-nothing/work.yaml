@@ -1,0 +1,18 @@
+id: i-d-rather-have-nothing
+title: I'd Rather Have Nothing
+artist: Garth Brooks
+composers:
+- Mike McClure
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idratherhavenothinglyricschords.pro
+    imported_at: '2026-01-02'

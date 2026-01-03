@@ -1,0 +1,17 @@
+id: when-the-silver-eagle-meets-the-great-speckled-bird
+title: When The Silver Eagle Meets The Great Speckled Bird
+artist: Porter Wagoner
+composers:
+- Damon Black
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthesilvereaglemeetsthegreatspeckledbirdlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: april-fools-day
+title: April Fools Day
+artist: Marty Robbins
+composers:
+- Donald L. Winters Sr. and Mark Webb
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aprilfoolsdaylyricschords.pro
+    imported_at: '2026-01-02'

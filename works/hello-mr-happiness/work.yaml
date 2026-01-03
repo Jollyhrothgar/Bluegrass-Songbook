@@ -1,0 +1,17 @@
+id: hello-mr-happiness
+title: Hello Mr. Happiness
+artist: Ricky Nelson
+composers:
+- Dave Burgess
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hellomrhappinesslyricschords.pro
+    imported_at: '2026-01-02'

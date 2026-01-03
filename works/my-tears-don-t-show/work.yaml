@@ -1,0 +1,17 @@
+id: my-tears-don-t-show
+title: My Tears Don't Show
+artist: Jack Greene and Jeannie Seely
+composers:
+- Carl Butler
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mytearsdontshowlyricschords.pro
+    imported_at: '2026-01-02'

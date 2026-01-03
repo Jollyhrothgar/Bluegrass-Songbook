@@ -1,0 +1,15 @@
+id: to-my-baby-i-m-a-big-star-all-the-time
+title: To My Baby I'm a Big Star All the Time
+artist: Boxcar Willie
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tomybabyimabigstarallthetimelyricschords.pro
+    imported_at: '2026-01-02'

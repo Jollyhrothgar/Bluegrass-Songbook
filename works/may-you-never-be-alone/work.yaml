@@ -1,0 +1,17 @@
+id: may-you-never-be-alone
+title: May You Never Be Alone
+artist: Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mayyouneverbealonelyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: afraid-to-love-and-afraid-of-dying
+title: Afraid To Love And Afraid Of Dying
+artist: Dolly Parton
+composers:
+- Porter Wagoner
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afraidtoloveandafraidofdyinglyricschords.pro
+    imported_at: '2026-01-02'

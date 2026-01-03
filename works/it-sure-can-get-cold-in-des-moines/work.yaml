@@ -1,0 +1,16 @@
+id: it-sure-can-get-cold-in-des-moines
+title: It Sure Can Get Cold In Des Moines
+artist: Tom T. Hall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsurecangetcoldindesmoineslyricschords.pro
+    imported_at: '2026-01-02'

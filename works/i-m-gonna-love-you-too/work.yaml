@@ -1,0 +1,18 @@
+id: i-m-gonna-love-you-too
+title: I'm Gonna Love You Too
+artist: Buddy Holly
+composers:
+- Joe Mauldin, Norman Petty, Niki Sullivan
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnaloveyoutoolyricschords.pro
+    imported_at: '2026-01-02'

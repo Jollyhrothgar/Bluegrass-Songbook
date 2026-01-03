@@ -1,0 +1,17 @@
+id: i-just-called-to-say-i-love-you
+title: I Just Called to Say I Love You
+artist: Jason Allen
+composers:
+- Stevie Wonder
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcalledtosayiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

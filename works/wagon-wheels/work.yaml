@@ -1,0 +1,17 @@
+id: wagon-wheels
+title: Wagon Wheels
+artist: Sons of the Pioneers
+composers:
+- Billy Hill and Peter Derose
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wagonwheelslyricschords.pro
+    imported_at: '2026-01-02'

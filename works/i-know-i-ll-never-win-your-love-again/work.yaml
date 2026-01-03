@@ -1,0 +1,17 @@
+id: i-know-i-ll-never-win-your-love-again
+title: I Know I'll Never Win Your Love Again
+artist: Ray Price
+composers:
+- Bobby Helms and Ray Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowillneverwinyourloveagainlyricschords.pro
+    imported_at: '2026-01-02'

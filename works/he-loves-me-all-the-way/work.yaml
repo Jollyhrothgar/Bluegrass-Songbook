@@ -1,0 +1,16 @@
+id: he-loves-me-all-the-way
+title: He Loves Me All The Way
+artist: Tammy Wynette
+default_key: D
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helovesmeallthewaylyricschords.pro
+    imported_at: '2026-01-02'

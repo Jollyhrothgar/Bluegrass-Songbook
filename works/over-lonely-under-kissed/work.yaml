@@ -1,0 +1,17 @@
+id: over-lonely-under-kissed
+title: Over Lonely Under Kissed
+artist: Faron Young
+composers:
+- Johnny Durham and Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: overlonelyunderkissedlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: we-re-gonna-build-a-fire
+title: We're Gonna Build A Fire
+artist: Buck Owens
+composers:
+- Dennis J. Knutson and Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weregonnabuildafirelyricschords.pro
+    imported_at: '2026-01-02'

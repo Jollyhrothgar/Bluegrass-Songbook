@@ -1,0 +1,18 @@
+id: the-last-time-the-first-time
+title: The Last Time The First Time
+artist: George Strait
+composers:
+- Robert Kelly
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelasttimethefirsttimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: can-t-you-love-me-just-a-little
+title: Can't You Love Me Just A Little
+artist: Billy Walker
+composers:
+- Cindy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantyoulovemejustalittlelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: love-didn-t-drive-my-good-woman-wild
+title: Love Didn't Drive My Good Woman Wild
+artist: Darrell McCall
+composers:
+- Earl Thomas Conley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovedidntdrivemygoodwomanwildlyricschords.pro
+    imported_at: '2026-01-02'

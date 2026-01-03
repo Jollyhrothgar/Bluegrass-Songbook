@@ -1,0 +1,17 @@
+id: i-just-cry-to-clear-my-eyes
+title: I Just Cry To Clear My Eyes
+artist: Freddie Hart
+composers:
+- Becki Bluefield, Finley Duncan, Chuck Reed
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcrytoclearmyeyeslyricschords.pro
+    imported_at: '2026-01-02'

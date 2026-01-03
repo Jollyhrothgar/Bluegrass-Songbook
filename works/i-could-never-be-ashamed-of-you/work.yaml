@@ -1,0 +1,17 @@
+id: i-could-never-be-ashamed-of-you
+title: I Could Never Be Ashamed Of You
+artist: Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icouldneverbeashamedofyoulyricsandchords.pro
+    imported_at: '2026-01-02'

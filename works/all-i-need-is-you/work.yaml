@@ -1,0 +1,15 @@
+id: all-i-need-is-you
+title: All I Need Is You
+artist: Web Pierce
+composers:
+- Marijohn Wilkin, Wayne Walker, Webb Pierce
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allineedisyoulyricsandchords.pro
+    imported_at: '2026-01-02'

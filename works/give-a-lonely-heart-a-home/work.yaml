@@ -1,0 +1,17 @@
+id: give-a-lonely-heart-a-home
+title: Give a Lonely Heart a Home
+artist: Faron Young
+composers:
+- Cile Pitts and Janice Pitts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givealonelyheartahomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: you-don-t-hear
+title: You Don't Hear
+artist: Kitty Wells
+composers:
+- Tommy Cash and Jerry Huffman
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdonthearlyricschords.pro
+    imported_at: '2026-01-02'

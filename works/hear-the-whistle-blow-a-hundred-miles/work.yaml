@@ -1,0 +1,15 @@
+id: hear-the-whistle-blow-a-hundred-miles
+title: Hear The Whistle Blow A Hundred Miles
+artist: Earl Scruggs and Lester Flatt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hearthewhistleblowahundredmileslyricschords.pro
+    imported_at: '2026-01-02'

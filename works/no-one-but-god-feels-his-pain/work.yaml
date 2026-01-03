@@ -1,0 +1,13 @@
+id: no-one-but-god-feels-his-pain
+title: No One But God Feels His Pain
+artist: Red Steagall
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noonebutGodfeelshispainlyricschords.pro
+    imported_at: '2026-01-02'

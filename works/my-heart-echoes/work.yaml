@@ -1,0 +1,18 @@
+id: my-heart-echoes
+title: My Heart Echoes
+artist: Kitty Wells
+composers:
+- Johnnie Bailes, Homer Bailes, Zeke Clements
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartechoeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: thirty-links-of-chain
+title: Thirty Links Of Chain
+artist: Stonewall Jackson
+composers:
+- Jimmy Lowe and Art Wolpert
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thirtylinksofchainlyricschords.pro
+    imported_at: '2026-01-02'

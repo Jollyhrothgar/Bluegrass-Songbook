@@ -1,0 +1,15 @@
+id: if-i-could-write-a-song-as-beautiful-as-you
+title: If I Could Write A Song As Beautiful As You
+artist: Billy Crash Craddock
+composers:
+- John Adrian
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldwriteasongasbeautifulasyoulyricschords.pro
+    imported_at: '2026-01-02'

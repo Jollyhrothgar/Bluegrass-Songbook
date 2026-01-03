@@ -1,0 +1,15 @@
+id: we-re-all-in-your-corner
+title: We're All In Your Corner
+artist: The Highwaymen
+composers:
+- Bobby Gene Emmons and Troy Seals
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wereallinyourcornerlyricschords.pro
+    imported_at: '2026-01-02'

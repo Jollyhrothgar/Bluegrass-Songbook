@@ -1,0 +1,17 @@
+id: same-old-hurt
+title: Same Old Hurt
+artist: Burl Ives
+composers:
+- Hank Cockran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sameoldhurtlyricschords.pro
+    imported_at: '2026-01-02'

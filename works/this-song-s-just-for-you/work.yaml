@@ -1,0 +1,17 @@
+id: this-song-s-just-for-you
+title: This Song's Just For You
+artist: Gene Watson
+composers:
+- Cecil R. Harris and Perk Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thissongsjustforyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: gather-round-children
+title: Gather Round Children
+artist: Jerry Lee Lewis
+composers:
+- Cecil Harrelson and Linda G. Lewis
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gatherroundchildrenlyricschords.pro
+    imported_at: '2026-01-02'

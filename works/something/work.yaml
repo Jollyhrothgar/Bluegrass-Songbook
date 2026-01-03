@@ -1,0 +1,18 @@
+id: something
+title: Something
+artist: Tanya Tucker
+composers:
+- George Harrison
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethinglyricschords.pro
+    imported_at: '2026-01-02'

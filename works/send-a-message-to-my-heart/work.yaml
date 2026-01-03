@@ -1,0 +1,18 @@
+id: send-a-message-to-my-heart
+title: Send A Message To My Heart
+artist: Dwight Yoakam
+composers:
+- Kathy Louvin and Kostas
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sendamessagetomyheartlyricschords.pro
+    imported_at: '2026-01-02'

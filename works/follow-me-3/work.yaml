@@ -1,0 +1,15 @@
+id: follow-me-3
+title: Follow Me
+artist: Barbara Fairchild
+composers:
+- Ira F. Stanphill
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: followmelyricswithchords.pro
+    imported_at: '2026-01-02'

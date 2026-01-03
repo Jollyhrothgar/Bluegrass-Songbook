@@ -1,0 +1,17 @@
+id: lost-highway
+title: Lost Highway
+artist: Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: losthighwaylyricsandchords.pro
+    imported_at: '2026-01-02'

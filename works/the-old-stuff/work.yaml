@@ -1,0 +1,18 @@
+id: the-old-stuff
+title: The Old Stuff
+artist: Garth Brooks
+composers:
+- Bryan Kennedy, Don Roberts, Garth Brooks
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldstufflyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: you-left-her-lonely-too-long
+title: You Left Her Lonely Too Long
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youleftherlonelytoolonglyricschords.pro
+    imported_at: '2026-01-02'

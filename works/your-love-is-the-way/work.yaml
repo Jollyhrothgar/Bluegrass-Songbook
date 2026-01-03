@@ -1,0 +1,18 @@
+id: your-love-is-the-way
+title: Your Love Is The Way
+artist: Kitty Wells
+composers:
+- Bill Owens
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourloveisthewaylyricschords.pro
+    imported_at: '2026-01-02'

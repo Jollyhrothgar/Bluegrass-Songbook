@@ -1,0 +1,17 @@
+id: coke-county
+title: Coke County
+artist: Traditional
+composers:
+- Biography:Lewis Thomasson
+default_key: A
+tags:
+- Jazzy
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

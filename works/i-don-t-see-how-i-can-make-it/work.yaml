@@ -1,0 +1,17 @@
+id: i-don-t-see-how-i-can-make-it
+title: I Don't See How I Can Make It
+artist: Jean Shepard
+composers:
+- George Richey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontseehowicanmakeitlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: down-in-mexico
+title: Down In Mexico
+artist: Bobby Bare
+composers:
+- Bobby Bare and Skeets McDonald
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downinmexicolyricschords.pro
+    imported_at: '2026-01-02'

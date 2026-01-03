@@ -1,0 +1,18 @@
+id: a-woman-lives-for-love
+title: A Woman Lives For Love
+artist: Wanda Jackson
+composers:
+- George Richey, Glenn Sutton, Norro Wilson
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awomanlivesforlovelyricschords.pro
+    imported_at: '2026-01-02'

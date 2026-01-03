@@ -1,0 +1,18 @@
+id: alien
+title: Alien
+artist: Tanya Tucker
+composers:
+- Bobby Braddock
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alienlyricschords.pro
+    imported_at: '2026-01-02'

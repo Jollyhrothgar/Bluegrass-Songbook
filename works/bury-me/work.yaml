@@ -1,0 +1,18 @@
+id: bury-me
+title: Bury Me
+artist: Dwight Yoakam
+composers:
+- Dwight Yoakam
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burymelyricschords.pro
+    imported_at: '2026-01-02'

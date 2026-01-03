@@ -1,0 +1,19 @@
+id: rockin-chair-daddy
+title: Rockin’ Chair Daddy
+artist: Hank Williams
+composers:
+- Gordon B. Schuffert and Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockinchairdaddylyricschords.pro
+    imported_at: '2026-01-02'

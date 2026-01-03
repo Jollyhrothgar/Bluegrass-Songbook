@@ -1,0 +1,15 @@
+id: what-will-i-tell-my-darling
+title: What Will I Tell My Darling
+artist: Faron Young
+composers:
+- Jerry Crutchfield and Faron Young
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatwillitellmydarlinglyricschords.pro
+    imported_at: '2026-01-02'

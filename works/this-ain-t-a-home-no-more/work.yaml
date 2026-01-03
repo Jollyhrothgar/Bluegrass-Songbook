@@ -1,0 +1,17 @@
+id: this-ain-t-a-home-no-more
+title: This Ain't A Home No More
+artist: Leona Williams
+composers:
+- Redd Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisaintahomenomorelyricschords.pro
+    imported_at: '2026-01-02'

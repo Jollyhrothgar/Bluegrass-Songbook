@@ -1,0 +1,17 @@
+id: bless-your-heart
+title: Bless Your Heart
+artist: Freddie Hart
+composers:
+- Jack Lebsock and Freddie Hart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blessyourheartlyricschords.pro
+    imported_at: '2026-01-02'

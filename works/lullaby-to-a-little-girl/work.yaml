@@ -1,0 +1,17 @@
+id: lullaby-to-a-little-girl
+title: Lullaby To A Little Girl
+artist: David Houston
+composers:
+- Billy Sherrill and Glenn Sutton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lullabytoalittlegirllyricschords.pro
+    imported_at: '2026-01-02'

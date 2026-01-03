@@ -1,0 +1,15 @@
+id: as-you-take-a-walk-through-my-mind
+title: As You Take A Walk Through My Mind
+artist: Slim Whitman
+composers:
+- Claude Taylor
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: asyoutakeawalkthroughmymindlyricschords.pro
+    imported_at: '2026-01-02'

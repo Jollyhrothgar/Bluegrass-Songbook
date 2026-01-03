@@ -1,0 +1,17 @@
+id: why-you-been-gone-so-long
+title: Why You Been Gone So Long
+artist: Joe Sun
+composers:
+- Mickey Newbury
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whyyoubeengonesolonglyricschords.pro
+    imported_at: '2026-01-02'

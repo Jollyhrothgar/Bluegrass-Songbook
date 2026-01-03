@@ -1,0 +1,18 @@
+id: all-of-me
+title: All of Me
+artist: Willie Nelson
+composers:
+- Seymore Simons and Gerald Marks
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allofmelyricschords.pro
+    imported_at: '2026-01-02'

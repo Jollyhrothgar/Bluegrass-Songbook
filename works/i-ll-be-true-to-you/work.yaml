@@ -1,0 +1,18 @@
+id: i-ll-be-true-to-you
+title: I'll Be True To You
+artist: The Oak Ridge Boys
+composers:
+- Alan Rhody
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbetruetoyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: no-one-will-ever-know
+title: No One Will Ever Know
+artist: The Statler Brothers
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noonewilleverknowlyricschords.pro
+    imported_at: '2026-01-02'

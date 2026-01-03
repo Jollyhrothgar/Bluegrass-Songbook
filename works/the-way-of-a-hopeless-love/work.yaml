@@ -1,0 +1,16 @@
+id: the-way-of-a-hopeless-love
+title: The Way of a Hopeless Love
+artist: Marty Robbins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewayofahopelesslovelyricschords.pro
+    imported_at: '2026-01-02'

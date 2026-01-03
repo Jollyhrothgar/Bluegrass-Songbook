@@ -1,0 +1,18 @@
+id: friday-night-fever
+title: Friday Night Fever
+artist: George Strait
+composers:
+- Dean Dillon, Blake Mevis, Frank Dycus
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fridaynightfeverlyricschords.pro
+    imported_at: '2026-01-02'

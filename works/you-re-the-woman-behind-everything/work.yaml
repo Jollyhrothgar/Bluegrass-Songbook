@@ -1,0 +1,17 @@
+id: you-re-the-woman-behind-everything
+title: You're The Woman Behind Everything
+artist: Charlie Pride
+composers:
+- Gary Stewart
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethewomanbehindeverythinglyricschords.pro
+    imported_at: '2026-01-02'

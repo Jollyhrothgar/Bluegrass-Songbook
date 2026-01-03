@@ -1,0 +1,18 @@
+id: cars
+title: Cars
+artist: John Conlee
+composers:
+- Bob McDill and Dickey Lee
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carslyricschords.pro
+    imported_at: '2026-01-02'

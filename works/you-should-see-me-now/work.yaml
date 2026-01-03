@@ -1,0 +1,17 @@
+id: you-should-see-me-now
+title: You Should See Me Now
+artist: Cal Smith
+composers:
+- Chuck Howard and Darrell Thomas Puckett
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youshouldseemenowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: old-enough-to-want-to-fool-enough-to-try
+title: Old Enough To Want To (Fool Enough To Try)
+artist: Tom T. Hall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldenoughtowanttofoolenoughtotrylyricschords.pro
+    imported_at: '2026-01-02'

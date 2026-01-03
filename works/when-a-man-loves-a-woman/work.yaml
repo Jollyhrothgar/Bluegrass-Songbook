@@ -1,0 +1,17 @@
+id: when-a-man-loves-a-woman
+title: When A Man Loves A Woman
+artist: Billy Walker
+composers:
+- Bill Eldridge and Gary Stewart
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenamanlovesawomanlyricschords.pro
+    imported_at: '2026-01-02'

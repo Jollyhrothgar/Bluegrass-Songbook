@@ -1,0 +1,17 @@
+id: if-i-ever-fall-in-love-with-a-honky-tonk-girl
+title: If I Ever Fall In Love With A Honky Tonk Girl
+artist: Faron Young
+composers:
+- Tom T. Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifieverfallinlovewithahonkytonkgirllyricschords.pro
+    imported_at: '2026-01-02'

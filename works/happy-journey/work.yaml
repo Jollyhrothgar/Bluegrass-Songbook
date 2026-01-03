@@ -1,0 +1,17 @@
+id: happy-journey
+title: Happy Journey
+artist: Hank Locklin
+composers:
+- Fred Jay, Nicola Wilke, Charles Nowa
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: happyjourneylyricschords.pro
+    imported_at: '2026-01-02'

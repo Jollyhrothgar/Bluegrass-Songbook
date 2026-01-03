@@ -1,0 +1,15 @@
+id: there-s-a-better-home
+title: There's a Better Home
+artist: Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresabetterhomelyricschords.pro
+    imported_at: '2026-01-02'

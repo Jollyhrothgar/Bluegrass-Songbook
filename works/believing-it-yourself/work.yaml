@@ -1,0 +1,17 @@
+id: believing-it-yourself
+title: Believing it Yourself
+artist: Faron Young
+composers:
+- Justin Tubb
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: believingityourselflyricschords.pro
+    imported_at: '2026-01-02'

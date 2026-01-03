@@ -1,0 +1,17 @@
+id: iron-curtain
+title: Iron Curtain
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ironcurtainlyricschords.pro
+    imported_at: '2026-01-02'

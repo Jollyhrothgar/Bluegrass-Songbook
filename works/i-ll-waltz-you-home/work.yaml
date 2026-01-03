@@ -1,0 +1,17 @@
+id: i-ll-waltz-you-home
+title: I'll Waltz You Home
+artist: Ronnie Cox
+composers:
+- Ronnie Cox and Russell Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illwaltzyouhomelyricschords.pro
+    imported_at: '2026-01-02'

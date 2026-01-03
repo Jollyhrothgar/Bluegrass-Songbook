@@ -1,0 +1,17 @@
+id: over-and-over-again
+title: Over And Over Again
+artist: Buck Owens
+composers:
+- Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: overandoveragainlyricsandchords.pro
+    imported_at: '2026-01-02'

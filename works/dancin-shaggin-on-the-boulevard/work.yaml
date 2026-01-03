@@ -1,0 +1,17 @@
+id: dancin-shaggin-on-the-boulevard
+title: Dancin' Shaggin' on the Boulevard
+artist: Alabama
+composers:
+- Greg Fowler, Theodore Gentry, Randy Owen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dancinshagginontheboulevardlyricschords.pro
+    imported_at: '2026-01-02'

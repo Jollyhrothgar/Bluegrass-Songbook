@@ -1,0 +1,18 @@
+id: tom-dooley-1
+title: Tom Dooley
+artist: the Kingston Trio
+composers:
+- Alan Lomax and Frank M. Warner
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tomdooleylyricschords.pro
+    imported_at: '2026-01-02'

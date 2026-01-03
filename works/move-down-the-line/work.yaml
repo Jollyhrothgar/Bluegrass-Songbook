@@ -1,0 +1,18 @@
+id: move-down-the-line
+title: Move Down The Line
+artist: Johnny Horton
+composers:
+- Billy Wallace
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: movedownthelinelyricschords.pro
+    imported_at: '2026-01-02'

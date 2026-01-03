@@ -1,0 +1,17 @@
+id: somebody-that-s-good
+title: Somebody That's Good
+artist: Moe Bandy
+composers:
+- Eddy Raven and Ray Baker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodythatsgoodlyricschords.pro
+    imported_at: '2026-01-02'

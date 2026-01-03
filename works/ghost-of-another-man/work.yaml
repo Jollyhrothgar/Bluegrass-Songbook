@@ -1,0 +1,15 @@
+id: ghost-of-another-man
+title: Ghost Of Another Man
+artist: George Jones
+composers:
+- Roger Bowling, George Richey, Frank Dycus
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ghostofanothermanlyricschords.pro
+    imported_at: '2026-01-02'

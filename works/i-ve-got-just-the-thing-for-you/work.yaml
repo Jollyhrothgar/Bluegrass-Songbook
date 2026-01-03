@@ -1,0 +1,17 @@
+id: i-ve-got-just-the-thing-for-you
+title: I've Got Just The Thing For You
+artist: Jim Reeves
+composers:
+- Nancy White
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotjustthethingforyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: love-hope-and-faith
+title: Love Hope and Faith
+artist: Daniel O'Donnell
+composers:
+- Stephen Taylor and Heather Taylor
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovehopeandfaithlyricschords.pro
+    imported_at: '2026-01-02'

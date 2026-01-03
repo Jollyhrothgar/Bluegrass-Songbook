@@ -1,0 +1,17 @@
+id: now-that-i-have-you
+title: Now That I Have You
+artist: Mickey Gilley
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nowthatihaveyoulyricschords.pro
+    imported_at: '2026-01-02'

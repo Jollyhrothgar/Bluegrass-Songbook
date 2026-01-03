@@ -1,0 +1,17 @@
+id: don-t-cut-timber-on-a-windy-day
+title: Don't Cut Timber On A Windy Day
+artist: Sonny James
+composers:
+- Ted Riedel
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontcuttimberonawindydaylyricschords.pro
+    imported_at: '2026-01-02'

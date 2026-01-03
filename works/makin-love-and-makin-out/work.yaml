@@ -1,0 +1,17 @@
+id: makin-love-and-makin-out
+title: Makin' Love And Makin' Out
+artist: John Anderson
+composers:
+- Charlie Craig
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makinloveandmakinoutlyricschords.pro
+    imported_at: '2026-01-02'

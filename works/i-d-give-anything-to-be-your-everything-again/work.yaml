@@ -1,0 +1,17 @@
+id: i-d-give-anything-to-be-your-everything-again
+title: I'd Give Anything To Be Your Everything Again
+artist: Tracy Lawrence
+composers:
+- Jerry Lester and Mark Springer
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idgiveanythingtobeyoureverythingagainlyricschords.pro
+    imported_at: '2026-01-02'

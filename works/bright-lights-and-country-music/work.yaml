@@ -1,0 +1,17 @@
+id: bright-lights-and-country-music
+title: Bright Lights and Country Music
+artist: Bill Anderson
+composers:
+- Bill Anderson and Jimmy Gateley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brightlightsandcountrymusiclyricschords.pro
+    imported_at: '2026-01-02'

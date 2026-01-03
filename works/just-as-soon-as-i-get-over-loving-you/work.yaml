@@ -1,0 +1,15 @@
+id: just-as-soon-as-i-get-over-loving-you
+title: Just As Soon As I Get Over Loving You
+artist: Jean Shepard
+composers:
+- Ben Peters and George Richey
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justassoonasigetoverlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

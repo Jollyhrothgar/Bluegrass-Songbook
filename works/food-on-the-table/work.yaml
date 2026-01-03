@@ -1,0 +1,17 @@
+id: food-on-the-table
+title: Food On The Table
+artist: Alabama
+composers:
+- Randy Owen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foodonthetablelyricschords.pro
+    imported_at: '2026-01-02'

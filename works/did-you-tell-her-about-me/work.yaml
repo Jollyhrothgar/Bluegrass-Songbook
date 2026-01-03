@@ -1,0 +1,17 @@
+id: did-you-tell-her-about-me
+title: Did You Tell Her About Me
+artist: Jean Shepard
+composers:
+- Dick Reynolds
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didyoutellheraboutmelyricschords.pro
+    imported_at: '2026-01-02'

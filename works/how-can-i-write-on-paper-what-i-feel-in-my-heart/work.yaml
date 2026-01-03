@@ -1,0 +1,17 @@
+id: how-can-i-write-on-paper-what-i-feel-in-my-heart
+title: How Can I Write On Paper What I Feel In My Heart
+artist: Jim Reeves
+composers:
+- Don Carter, Danny Harrison, George Kent, Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcaniwriteonpaperwhatifeelinmyheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: she-keeps-the-home-fires-burning
+title: She Keeps the Home Fires Burning
+artist: Ronnie Milsap
+composers:
+- Dennis Morgan, Mike Reid, Don Pfrimmer
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shekeepsthehomefiresburninglyricschords.pro
+    imported_at: '2026-01-02'

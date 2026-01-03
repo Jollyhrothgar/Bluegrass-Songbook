@@ -1,0 +1,19 @@
+id: flowers-on-the-wall
+title: Flowers On The Wall
+artist: the Statler Brothers
+composers:
+- Lewis Dewitt
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: flowersonthewalllyricschords.pro
+    imported_at: '2026-01-02'

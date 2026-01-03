@@ -1,0 +1,18 @@
+id: you-belong-to-my-heart
+title: You Belong To My Heart
+artist: Marty Robbins
+composers:
+- Ray Gilbert, Aguirre Agustin Lara
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youbelongtomyheartlyricschords.pro
+    imported_at: '2026-01-02'

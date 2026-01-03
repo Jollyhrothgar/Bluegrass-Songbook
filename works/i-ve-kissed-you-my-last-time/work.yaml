@@ -1,0 +1,18 @@
+id: i-ve-kissed-you-my-last-time
+title: I've Kissed You My Last Time
+artist: Kitty Wells
+composers:
+- Bill Carlisle, Virginia Suber, Tommy Cutrer
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivekissedyoumylasttimelyricschords.pro
+    imported_at: '2026-01-02'

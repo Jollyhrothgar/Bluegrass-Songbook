@@ -1,0 +1,18 @@
+id: t-r-o-u-b-l-e
+title: T-R-O-U-B-L-E
+artist: Travis Tritt
+composers:
+- Jerry Chesnut
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: T-R-O-U-B-L-Elyricschords.pro
+    imported_at: '2026-01-02'

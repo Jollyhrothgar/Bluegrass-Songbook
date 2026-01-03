@@ -1,0 +1,19 @@
+id: love-never-broke-anyone-s-heart
+title: Love Never Broke Anyone's Heart
+artist: Vince Gill
+composers:
+- Jim Weatherly and Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveneverbrokeanyonesheartlyricschords.pro
+    imported_at: '2026-01-02'

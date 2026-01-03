@@ -1,0 +1,17 @@
+id: harbor-of-love-1
+title: Harbor Of Love
+artist: Stanley Brothers
+composers:
+- Carter Stanley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: harboroflovelyricschords.pro
+    imported_at: '2026-01-02'

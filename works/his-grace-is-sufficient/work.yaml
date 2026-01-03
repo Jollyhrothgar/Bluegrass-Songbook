@@ -1,0 +1,15 @@
+id: his-grace-is-sufficient
+title: His Grace Is Sufficient
+artist: The Booth Brothers
+composers:
+- Mosie Lister
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hisgraceissufficientlyricschords.pro
+    imported_at: '2026-01-02'

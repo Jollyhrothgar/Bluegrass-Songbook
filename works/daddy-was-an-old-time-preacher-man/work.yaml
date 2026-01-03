@@ -1,0 +1,21 @@
+id: daddy-was-an-old-time-preacher-man
+title: Daddy Was An Old Time Preacher Man
+artist: Dolly Parton
+composers:
+- Dolly Parton and Dorothy Jo Hope
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: daddywasanoldtimepreachermanlyricschords.pro
+    imported_at: '2026-01-02'

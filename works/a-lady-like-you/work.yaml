@@ -1,0 +1,17 @@
+id: a-lady-like-you
+title: A Lady Like You
+artist: Glen Campbell
+composers:
+- Keith R. Stegall and James D. Weatherly
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aladylikeyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: blow-your-whistle-freight-train
+title: Blow Your Whistle Freight Train
+artist: Hank Snow
+composers:
+- Alton Delmore and Rabon Delmore
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blowyourwhistlefreighttrainlyricschords.pro
+    imported_at: '2026-01-02'

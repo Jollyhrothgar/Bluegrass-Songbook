@@ -1,0 +1,20 @@
+id: it-must-be-you
+title: It Must Be You
+artist: Dolly Parton
+composers:
+- Blaise Tosti
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itmustbeyoulyricschords.pro
+    imported_at: '2026-01-02'

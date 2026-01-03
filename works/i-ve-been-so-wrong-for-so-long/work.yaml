@@ -1,0 +1,17 @@
+id: i-ve-been-so-wrong-for-so-long
+title: I've Been So Wrong For So Long
+artist: Jeanne Pruett
+composers:
+- Bud Reneau and Hal Bynum
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivebeensowrongforsolonglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: kiss-on-the-door
+title: Kiss on the Door
+artist: Hank Locklin
+composers:
+- Lawton Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kissonthedoorlyricschords.pro
+    imported_at: '2026-01-02'

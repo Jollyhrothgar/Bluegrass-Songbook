@@ -1,0 +1,17 @@
+id: complicated
+title: Complicated
+artist: Ricky Van Shelton
+composers:
+- Bill LaBounty and Pat McLaughlin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: complicatedlyricschords.pro
+    imported_at: '2026-01-02'

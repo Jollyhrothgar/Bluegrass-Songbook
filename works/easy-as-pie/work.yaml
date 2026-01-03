@@ -1,0 +1,17 @@
+id: easy-as-pie
+title: Easy As Pie
+artist: Billy Crash Craddock
+composers:
+- Rory Bourke, Gene Dobbins, Johnny Wilson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easyaspielyricschords.pro
+    imported_at: '2026-01-02'

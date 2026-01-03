@@ -1,0 +1,18 @@
+id: my-big-truck-drivin-man
+title: My Big Truck Drivin' Man
+artist: Kitty Wells
+composers:
+- Hank Mills
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mybigtruckdrivinmanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: give-them-all-to-jesus
+title: Give Them All To Jesus
+artist: Cristy Lane
+composers:
+- Phil Johnson and Bob Benson Sr.
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givethemalltoJesuslyricschords.pro
+    imported_at: '2026-01-02'

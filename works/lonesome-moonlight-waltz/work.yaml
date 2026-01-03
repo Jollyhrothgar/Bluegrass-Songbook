@@ -1,0 +1,18 @@
+id: lonesome-moonlight-waltz
+title: Lonesome Moonlight Waltz
+artist: Traditional
+composers:
+- Biography:Bill Monroe
+default_key: F
+tags:
+- Jazzy
+- Instrumental
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-wish-i-could-say-no-to-you
+title: I Wish I Could Say No To You
+artist: Cal Smith
+composers:
+- Mickey Newbury
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishicouldsaynotoyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: nobody-like-yours
+title: Nobody Like Yours
+artist: Keith Whitley
+default_key: Am
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodylikeyourslyricschords.pro
+    imported_at: '2026-01-02'

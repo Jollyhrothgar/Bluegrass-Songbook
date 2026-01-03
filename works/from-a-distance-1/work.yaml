@@ -1,0 +1,17 @@
+id: from-a-distance-1
+title: From A Distance
+artist: Alan Jackson
+composers:
+- Randy Travis and Alan Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromadistancelyricschords.pro
+    imported_at: '2026-01-02'

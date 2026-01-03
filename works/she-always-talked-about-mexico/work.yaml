@@ -1,0 +1,17 @@
+id: she-always-talked-about-mexico
+title: She Always Talked About Mexico
+artist: David Ball
+composers:
+- Wood Newton and David Ball
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shealwaystalkedaboutmexicolyricschords.pro
+    imported_at: '2026-01-02'

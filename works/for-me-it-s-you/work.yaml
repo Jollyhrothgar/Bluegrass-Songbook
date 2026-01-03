@@ -1,0 +1,18 @@
+id: for-me-it-s-you
+title: For Me It's You
+artist: Tracy Byrd
+composers:
+- Mark Nesler and Tony Martin
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: formeitsyoulyricschords.pro
+    imported_at: '2026-01-02'

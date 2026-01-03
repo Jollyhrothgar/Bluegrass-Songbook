@@ -1,0 +1,17 @@
+id: i-m-knee-deep-in-love-with-you
+title: I'm Knee Deep In Love With You
+artist: Dave And Sugar
+composers:
+- Sonny Throckmorton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imkneedeepinlovewithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: have-you-lost-your-love-for-me
+title: Have You Lost Your Love For Me
+artist: Jim and Jesse
+composers:
+- F. Giddens, Junior Giddens, Leroy Giddens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveyoulostyourloveformelyricschords.pro
+    imported_at: '2026-01-02'

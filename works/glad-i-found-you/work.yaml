@@ -1,0 +1,18 @@
+id: glad-i-found-you
+title: Glad I Found You
+artist: Lefty Frizzell
+composers:
+- Lefty Frizzell and Joe E. Johnson
+default_key: D
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gladifoundyoulyricschords.pro
+    imported_at: '2026-01-02'

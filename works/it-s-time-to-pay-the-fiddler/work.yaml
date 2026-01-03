@@ -1,0 +1,17 @@
+id: it-s-time-to-pay-the-fiddler
+title: It's Time to Pay the Fiddler
+artist: Cal Smith
+composers:
+- Don Wayne and Walter Haynes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itstimetopaythefiddlerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: forgive-me-my-heart
+title: Forgive Me My Heart
+artist: Ray Price
+composers:
+- Dan Hoffman and Chuck Woolery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forgivememyheartlyricschords.pro
+    imported_at: '2026-01-02'

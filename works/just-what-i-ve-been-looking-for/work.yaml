@@ -1,0 +1,15 @@
+id: just-what-i-ve-been-looking-for
+title: Just What I've Been Looking For
+artist: Dottie West
+composers:
+- Kenny O'Dell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justwhativebeenlookingforlyricschords.pro
+    imported_at: '2026-01-02'

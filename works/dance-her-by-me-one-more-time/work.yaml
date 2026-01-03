@@ -1,0 +1,17 @@
+id: dance-her-by-me-one-more-time
+title: Dance Her By Me One More Time
+artist: Faron Young
+composers:
+- Danny Walfe
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: danceherbymeonemoretimelyricschords.pro
+    imported_at: '2026-01-02'

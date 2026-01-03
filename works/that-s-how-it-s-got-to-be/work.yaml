@@ -1,0 +1,19 @@
+id: that-s-how-it-s-got-to-be
+title: That's How It's Got To Be
+artist: Mickey Gilley
+composers:
+- Otis Blackwell and Mort Dixon
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatshowitsgottobelyricschords.pro
+    imported_at: '2026-01-02'

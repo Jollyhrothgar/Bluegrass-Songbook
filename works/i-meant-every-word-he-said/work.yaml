@@ -1,0 +1,15 @@
+id: i-meant-every-word-he-said
+title: I Meant Every Word He Said
+artist: Ricky Van Shelton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imeanteverywordhesaidlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: now-that-the-feeling-s-gone
+title: Now That The Feeling's Gone
+artist: Billy Crash Craddock
+composers:
+- Michael Buckins and Randy McCormick
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nowthatthefeelingsgonelyricschords.pro
+    imported_at: '2026-01-02'

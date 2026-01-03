@@ -1,0 +1,18 @@
+id: i-d-like-to-see-jesus
+title: I'd Like To See Jesus
+artist: Tammy Wynette
+composers:
+- Robert Seay and Dorval Smith
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idliketoseeJesuslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: ac-cent-tchu-ate-the-positive
+title: Ac-Cent-Tchu-Ate The Positive
+artist: Willie Nelson
+composers:
+- Johnny Mercer and Harold Arlen
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: accenttchuatethepositivelyricschords.pro
+    imported_at: '2026-01-02'

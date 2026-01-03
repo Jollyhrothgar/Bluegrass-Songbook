@@ -1,0 +1,17 @@
+id: i-m-gonna-walk-and-talk-with-my-lord
+title: I'm Gonna Walk And Talk With My Lord
+artist: Norma Jean
+composers:
+- Martha Carson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnawalkandtalkwithmylordlyricschords.pro
+    imported_at: '2026-01-02'

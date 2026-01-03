@@ -1,0 +1,18 @@
+id: you-sure-got-this-ol-redneck-feelin-blue
+title: You Sure Got This Ol' Redneck Feelin' Blue
+artist: George Strait
+composers:
+- Dean Dillon and Buzz Rabin
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yousuregotthisolredneckfeelinbluelyricschords.pro
+    imported_at: '2026-01-02'

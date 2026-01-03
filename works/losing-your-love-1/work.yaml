@@ -1,0 +1,15 @@
+id: losing-your-love-1
+title: Losing Your Love
+artist: Jim Reeves
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: losingyourlovelyricschords.pro
+    imported_at: '2026-01-02'

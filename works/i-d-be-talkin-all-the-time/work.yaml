@@ -1,0 +1,20 @@
+id: i-d-be-talkin-all-the-time
+title: I'd Be Talkin' All The Time
+artist: Jerry Lee Lewis
+composers:
+- Larry Kingston and Chuck Howard
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idbetalkinallthetimelyricschords.pro
+    imported_at: '2026-01-02'

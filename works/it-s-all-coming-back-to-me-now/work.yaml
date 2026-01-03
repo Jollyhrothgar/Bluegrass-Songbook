@@ -1,0 +1,15 @@
+id: it-s-all-coming-back-to-me-now
+title: It's All Coming Back To Me Now
+artist: Keith Whitley
+composers:
+- Curly Putman, Don Cook, Keith Whitley
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsallcomingbacktomenowlyricschords.pro
+    imported_at: '2026-01-02'

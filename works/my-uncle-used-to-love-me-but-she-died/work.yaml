@@ -1,0 +1,16 @@
+id: my-uncle-used-to-love-me-but-she-died
+title: My Uncle Used To Love Me But She Died
+artist: Roger Miller
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myuncleusedtolovemebutshediedlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: primrose-lane
+title: Primrose Lane
+artist: Jerry Wallace
+composers:
+- Wayne Shanklin and George Calender
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: primroselanelyricschords.pro
+    imported_at: '2026-01-02'

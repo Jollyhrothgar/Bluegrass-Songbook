@@ -1,0 +1,17 @@
+id: big-ole-hurt
+title: Big Ole Hurt
+artist: Cal Smith
+composers:
+- Loretta Lynn
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigolehurtlyricschords.pro
+    imported_at: '2026-01-02'

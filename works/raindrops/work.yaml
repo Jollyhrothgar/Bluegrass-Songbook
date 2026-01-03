@@ -1,0 +1,19 @@
+id: raindrops
+title: Raindrops
+artist: Roy Orbison
+composers:
+- Joe Melson
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: raindropslyricschords.pro
+    imported_at: '2026-01-02'

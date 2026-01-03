@@ -1,0 +1,18 @@
+id: do-what-you-gotta-do
+title: Do What You Gotta Do
+artist: Garth Brooks
+composers:
+- Pat Flynn
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dowhatyougottadolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,13 @@
+id: christmas-without-an-angel
+title: Christmas Without An Angel
+artist: Dale Watson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmaswithoutanangellyricschords.pro
+    imported_at: '2026-01-02'

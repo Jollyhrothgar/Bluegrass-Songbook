@@ -1,0 +1,17 @@
+id: to-make-a-man-feel-like-a-man
+title: To Make A Man Feel Like A Man
+artist: Loretta Lynn
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tomakeamanfeellikeamanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: stars-on-the-water
+title: Stars On The Water
+artist: Rodney Crowell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: starsonthewaterlyricschords.pro
+    imported_at: '2026-01-02'

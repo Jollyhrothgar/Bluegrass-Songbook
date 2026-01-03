@@ -1,0 +1,15 @@
+id: a-long-and-lasting-love
+title: A Long And Lasting Love
+artist: Crystal Gayle
+composers:
+- Gerry Goffin and Michael H. Masser
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alongandlastinglovelyricschords.pro
+    imported_at: '2026-01-02'

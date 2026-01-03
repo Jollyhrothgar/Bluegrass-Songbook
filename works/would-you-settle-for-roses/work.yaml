@@ -1,0 +1,17 @@
+id: would-you-settle-for-roses
+title: Would You Settle For Roses
+artist: Freddie Hart
+composers:
+- Bob Morris and Larry Farmer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wouldyousettleforroseslyricschords.pro
+    imported_at: '2026-01-02'

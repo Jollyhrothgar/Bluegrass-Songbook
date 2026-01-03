@@ -1,0 +1,17 @@
+id: god-on-the-mountain
+title: God On the Mountain
+artist: Norma Jean
+composers:
+- Tracy Dartt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godonthemountainlyricschords.pro
+    imported_at: '2026-01-02'

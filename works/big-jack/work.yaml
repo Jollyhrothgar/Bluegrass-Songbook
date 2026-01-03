@@ -1,0 +1,19 @@
+id: big-jack
+title: Big Jack
+artist: Charlie Rich
+composers:
+- Wallace Rich
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigjacklyricschords.pro
+    imported_at: '2026-01-02'

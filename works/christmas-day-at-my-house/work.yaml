@@ -1,0 +1,19 @@
+id: christmas-day-at-my-house
+title: Christmas Day At My House
+artist: Patty Loveless
+composers:
+- Emory Gordy and Patty Loveless
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasdayatmyhouselyricschords.pro
+    imported_at: '2026-01-02'

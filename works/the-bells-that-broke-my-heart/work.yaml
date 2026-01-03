@@ -1,0 +1,17 @@
+id: the-bells-that-broke-my-heart
+title: The Bells That Broke My Heart
+artist: Slim Whitman
+composers:
+- Walter Rollins and Mark Rollins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebellsthatbrokemyheartlyricschords.pro
+    imported_at: '2026-01-02'

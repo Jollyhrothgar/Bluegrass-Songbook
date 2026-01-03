@@ -1,0 +1,17 @@
+id: a-rose-and-a-thorn
+title: A Rose And A Thorn
+artist: Webb Pierce
+composers:
+- Wayne P. Walker and Webb Pierce
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aroseandathornlyricschords.pro
+    imported_at: '2026-01-02'

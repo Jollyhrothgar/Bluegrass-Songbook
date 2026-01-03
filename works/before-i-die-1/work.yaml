@@ -1,0 +1,17 @@
+id: before-i-die-1
+title: Before I Die
+artist: Jim Reeves
+composers:
+- Jim Carroll
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforeidielyricschords.pro
+    imported_at: '2026-01-02'

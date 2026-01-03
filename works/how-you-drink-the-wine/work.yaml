@@ -1,0 +1,19 @@
+id: how-you-drink-the-wine
+title: How You Drink The Wine
+artist: Mel Tillis
+composers:
+- Ronal McCown
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howyoudrinkthewinelyricschords.pro
+    imported_at: '2026-01-02'

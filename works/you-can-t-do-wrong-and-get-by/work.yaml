@@ -1,0 +1,17 @@
+id: you-can-t-do-wrong-and-get-by
+title: You Can't Do Wrong And Get By
+artist: George Jones and Ricky Skaggs
+composers:
+- Larry Cordle and Jim Rushing
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantdowrongandgetbylyricschords.pro
+    imported_at: '2026-01-02'

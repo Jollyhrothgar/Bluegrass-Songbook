@@ -1,0 +1,18 @@
+id: send-me-down-to-tucson
+title: Send Me Down To Tucson
+artist: Mel Tillis
+composers:
+- Cliff Crofford and Snuff Garrett
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sendmedowntotucsonlyricschords.pro
+    imported_at: '2026-01-02'

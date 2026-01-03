@@ -1,0 +1,18 @@
+id: dont-fight-the-feelings-of-love
+title: Don’t Fight The Feelings Of Love
+artist: Charley Pride
+composers:
+- John Schweers
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontfightthefeelingsoflovelyricschords.pro
+    imported_at: '2026-01-02'

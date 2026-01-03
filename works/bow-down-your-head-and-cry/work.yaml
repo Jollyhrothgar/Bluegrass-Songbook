@@ -1,0 +1,17 @@
+id: bow-down-your-head-and-cry
+title: Bow Down Your Head And Cry
+artist: Charlie Walker
+composers:
+- Aaron Allan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bowdownyourheadandcrylyricschords.pro
+    imported_at: '2026-01-02'

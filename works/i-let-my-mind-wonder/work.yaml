@@ -1,0 +1,16 @@
+id: i-let-my-mind-wonder
+title: I Let My Mind Wonder
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iletmymindwonderlyricschords.pro
+    imported_at: '2026-01-02'

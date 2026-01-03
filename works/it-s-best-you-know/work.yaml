@@ -1,0 +1,17 @@
+id: it-s-best-you-know
+title: It's Best You Know
+artist: George Morgan
+composers:
+- Danny Dill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsbestyouknowlyricschords.pro
+    imported_at: '2026-01-02'

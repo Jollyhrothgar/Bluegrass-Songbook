@@ -1,0 +1,17 @@
+id: the-whole-world-seems-different
+title: The Whole World Seems Different
+artist: Little Jimmy Dickens
+composers:
+- Jimmy Dickens and Donald Trobridge
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewholeworldseemsdifferentlyricschords.pro
+    imported_at: '2026-01-02'

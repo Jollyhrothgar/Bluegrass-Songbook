@@ -1,0 +1,19 @@
+id: trying-to-outrun-the-wind
+title: Trying to Outrun the Wind
+artist: Waylon Jennings
+composers:
+- Eddie Setser, Tom Davey, Troy Seals
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tryingtooutrunthewindlyricschords.pro
+    imported_at: '2026-01-02'

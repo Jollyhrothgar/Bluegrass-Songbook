@@ -1,0 +1,15 @@
+id: ain-t-it-easy
+title: Ain't It Easy
+artist: Johnny Bush
+composers:
+- Charlie Craig and Moe Lytle
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintiteasylyricschords.pro
+    imported_at: '2026-01-02'

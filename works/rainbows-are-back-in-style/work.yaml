@@ -1,0 +1,17 @@
+id: rainbows-are-back-in-style
+title: Rainbows Are Back In Style
+artist: Slim Whitman
+composers:
+- Dave Burgess
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rainbowsarebackinstylelyricschords.pro
+    imported_at: '2026-01-02'

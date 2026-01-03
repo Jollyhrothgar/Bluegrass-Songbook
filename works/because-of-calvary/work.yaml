@@ -1,0 +1,15 @@
+id: because-of-calvary
+title: Because of Calvary
+artist: Paul Williams and The Victory Trio
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseofcalvarylyricschords.pro
+    imported_at: '2026-01-02'

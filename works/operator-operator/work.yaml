@@ -1,0 +1,17 @@
+id: operator-operator
+title: Operator Operator
+artist: Eddy Raven
+composers:
+- Larry Willoughby and Janet Willoughby
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: operatoroperatorlyricschords.pro
+    imported_at: '2026-01-02'

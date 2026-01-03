@@ -1,0 +1,18 @@
+id: i-can-t-love-you-enough
+title: I Can't Love You Enough
+artist: Conway Twitty
+composers:
+- Max D. Barnes and Troy Seals
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantloveyouenoughlyricschords.pro
+    imported_at: '2026-01-02'

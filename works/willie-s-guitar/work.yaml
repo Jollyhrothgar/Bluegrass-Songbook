@@ -1,0 +1,15 @@
+id: willie-s-guitar
+title: Willie's Guitar
+artist: John Anderson
+composers:
+- John Phillips and Ray Stephenson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: williesguitarlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: a-rose-by-any-other-name
+title: A Rose By Any Other Name
+artist: Ronnie Milsap
+composers:
+- Irwin Levine and Toni Wine
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: arosebyanyothernamelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: a-woman-s-gotta-make-a-stand
+title: A Woman's Gotta Make A Stand
+artist: Norma Jean
+composers:
+- Curly Putman and Don Wayne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awomansgottamakeastandlyricschords.pro
+    imported_at: '2026-01-02'

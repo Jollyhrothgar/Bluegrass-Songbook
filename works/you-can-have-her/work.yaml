@@ -1,0 +1,19 @@
+id: you-can-have-her
+title: You Can Have Her
+artist: Charlie Rich
+composers:
+- William S. Cook
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanhaveherlyricschords.pro
+    imported_at: '2026-01-02'

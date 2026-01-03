@@ -1,0 +1,17 @@
+id: pop-a-top-again
+title: Pop A Top Again
+artist: Jim Ed Brown
+composers:
+- Nat Stuckey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: popatopagainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: just-someone-i-used-to-know
+title: Just Someone I Used to Know
+artist: Rhonda Vincent
+composers:
+- Jack Clement
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justsomeoneiusedtoknowlyricsandchords.pro
+    imported_at: '2026-01-02'

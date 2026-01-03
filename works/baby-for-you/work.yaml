@@ -1,0 +1,17 @@
+id: baby-for-you
+title: Baby For You
+artist: Ferlin Husky
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyforyoulyricschords.pro
+    imported_at: '2026-01-02'

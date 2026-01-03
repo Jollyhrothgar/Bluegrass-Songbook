@@ -1,0 +1,15 @@
+id: i-m-here-to-help
+title: I'm Here To Help
+artist: Red Steagall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imheretohelplyricschords.pro
+    imported_at: '2026-01-02'

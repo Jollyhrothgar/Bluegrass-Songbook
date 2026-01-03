@@ -1,0 +1,17 @@
+id: fool-me-one-more-time
+title: Fool Me One More Time
+artist: Wilburn Brothers
+composers:
+- John Keith Reedy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolmeonemoretimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: tangled-web
+title: Tangled Web
+artist: Jim Ed, Maxine and Bonnie Brown
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tangledweblyricschords.pro
+    imported_at: '2026-01-02'

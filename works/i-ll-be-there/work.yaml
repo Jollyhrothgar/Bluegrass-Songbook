@@ -1,0 +1,20 @@
+id: i-ll-be-there
+title: I'll Be There
+artist: Elvis Presley
+composers:
+- Bobby Darin
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbetherelyricsandchords.pro
+    imported_at: '2026-01-02'

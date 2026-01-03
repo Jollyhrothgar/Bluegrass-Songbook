@@ -1,0 +1,17 @@
+id: i-live-just-to-love-you
+title: I Live Just To Love You
+artist: Faron Young
+composers:
+- Glenn Sutton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilivejusttoloveyoulyricschords.pro
+    imported_at: '2026-01-02'

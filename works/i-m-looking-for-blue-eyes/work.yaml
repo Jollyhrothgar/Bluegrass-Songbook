@@ -1,0 +1,16 @@
+id: i-m-looking-for-blue-eyes
+title: I'm Looking For Blue Eyes
+artist: Jessi Colter
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlookingforblueeyeslyricschords.pro
+    imported_at: '2026-01-02'

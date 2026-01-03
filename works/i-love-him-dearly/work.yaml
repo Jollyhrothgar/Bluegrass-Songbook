@@ -1,0 +1,13 @@
+id: i-love-him-dearly
+title: I Love Him Dearly
+artist: Webb Pierce
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovehimdearlylyricschords.pro
+    imported_at: '2026-01-02'

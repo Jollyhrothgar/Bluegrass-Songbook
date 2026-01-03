@@ -1,0 +1,17 @@
+id: we-ve-got-something-in-common
+title: We've Got Something In Common
+artist: Faron Young
+composers:
+- Jan Crutchfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wevegotsomethingincommonlyricschords.pro
+    imported_at: '2026-01-02'

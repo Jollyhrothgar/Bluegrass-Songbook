@@ -1,0 +1,18 @@
+id: trying-to-love-two-women
+title: Trying To Love Two Women
+artist: The Oak Ridge Boys
+composers:
+- Sonny Throckmorton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tryingtolovetwowomenlyricschords.pro
+    imported_at: '2026-01-02'

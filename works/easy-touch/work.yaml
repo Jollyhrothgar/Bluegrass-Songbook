@@ -1,0 +1,17 @@
+id: easy-touch
+title: Easy Touch
+artist: Don Williams
+composers:
+- Rory Bourke, Tommy Rocco, Charlie Black
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easytouchlyricschords.pro
+    imported_at: '2026-01-02'

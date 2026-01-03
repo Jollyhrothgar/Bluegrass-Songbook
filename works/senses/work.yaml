@@ -1,0 +1,15 @@
+id: senses
+title: Senses
+artist: Ray Price
+composers:
+- Larry Bastian and Eugene Ellsworth
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: senseslyricsandchords.pro
+    imported_at: '2026-01-02'

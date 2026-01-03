@@ -1,0 +1,17 @@
+id: who-s-gonna-sing-the-last-country-song
+title: Who's Gonna Sing The Last Country Song
+artist: Billy Parker
+composers:
+- William Calhoun Brock Jr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whosgonnasingthelastcountrysonglyricschords.pro
+    imported_at: '2026-01-02'

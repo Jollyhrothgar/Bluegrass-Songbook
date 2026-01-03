@@ -1,0 +1,17 @@
+id: three-sides-to-every-story
+title: Three Sides To Every Story
+artist: Vince Gill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threesidestoeverystorylyricschords.pro
+    imported_at: '2026-01-02'

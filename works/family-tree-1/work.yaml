@@ -1,0 +1,17 @@
+id: family-tree-1
+title: Family Tree
+artist: Keith Whitley
+composers:
+- F. Dycus and Max Barnes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: familytreelyricschords.pro
+    imported_at: '2026-01-02'

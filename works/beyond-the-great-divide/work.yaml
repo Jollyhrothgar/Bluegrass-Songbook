@@ -1,0 +1,18 @@
+id: beyond-the-great-divide
+title: Beyond The Great Divide
+artist: Emmylou Harris
+composers:
+- Jack W. Routh and J.C. Crowley
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beyondthegreatdividelyricschords.pro
+    imported_at: '2026-01-02'

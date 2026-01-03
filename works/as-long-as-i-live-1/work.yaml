@@ -1,0 +1,16 @@
+id: as-long-as-i-live-1
+title: As Long As I Live
+artist: Kitty Wells
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aslongasilivelyricschords.pro
+    imported_at: '2026-01-02'

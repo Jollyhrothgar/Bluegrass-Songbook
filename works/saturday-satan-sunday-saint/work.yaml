@@ -1,0 +1,19 @@
+id: saturday-satan-sunday-saint
+title: Saturday Satan Sunday Saint
+artist: Ernest Tubb
+composers:
+- Wayne P. Walker
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: saturdaysatansundaysaintlyricschords.pro
+    imported_at: '2026-01-02'

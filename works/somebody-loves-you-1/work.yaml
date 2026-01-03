@@ -1,0 +1,18 @@
+id: somebody-loves-you-1
+title: Somebody Loves You
+artist: Ernest Tubb
+composers:
+- Charles Tobias and Peter DeRose
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somebodylovesyoulyricschords.pro
+    imported_at: '2026-01-02'

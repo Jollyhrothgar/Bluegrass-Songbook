@@ -1,0 +1,15 @@
+id: carryin-on-this-way
+title: Carryin' On This Way
+artist: Dale Watson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carryinonthiswaylyricschords.pro
+    imported_at: '2026-01-02'

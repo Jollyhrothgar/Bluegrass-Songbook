@@ -1,0 +1,18 @@
+id: you-don-t-know-what-you-re-missing
+title: You Don't Know What You're Missing
+artist: George Strait
+composers:
+- Christopher Stapleton and Al Anderson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontknowwhatyouremissinglyricschords.pro
+    imported_at: '2026-01-02'

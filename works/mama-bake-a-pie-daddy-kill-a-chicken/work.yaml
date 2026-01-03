@@ -1,0 +1,16 @@
+id: mama-bake-a-pie-daddy-kill-a-chicken
+title: Mama Bake A Pie (Daddy Kill A Chicken)
+artist: Tom T. Hall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mamabakeapiedaddykillachickenlyricschords.pro
+    imported_at: '2026-01-02'

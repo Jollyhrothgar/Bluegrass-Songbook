@@ -1,0 +1,19 @@
+id: you-re-breaking-my-heart
+title: You're Breaking My Heart
+artist: Ernest Tubb
+composers:
+- H.H. Melka
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourebreakingmyheartlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: deep-blue-sea
+title: Deep Blue Sea
+artist: Jimmy Dean
+composers:
+- Steven Harvey and Martin Seligson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: deepbluesealyricschords.pro
+    imported_at: '2026-01-02'

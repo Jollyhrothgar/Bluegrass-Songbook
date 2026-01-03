@@ -1,0 +1,20 @@
+id: i-d-do-it-all-again
+title: I'd Do It All Again
+artist: Jerry Lee Lewis
+composers:
+- Jerry G. Foster and Bill Rice
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iddoitallagainlyricschords.pro
+    imported_at: '2026-01-02'

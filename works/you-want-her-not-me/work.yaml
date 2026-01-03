@@ -1,0 +1,18 @@
+id: you-want-her-not-me
+title: You Want Her Not Me
+artist: Kitty Wells
+composers:
+- Jim Anglin
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwanthernotmelyricschords.pro
+    imported_at: '2026-01-02'

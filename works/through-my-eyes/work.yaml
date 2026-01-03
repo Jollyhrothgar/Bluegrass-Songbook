@@ -1,0 +1,17 @@
+id: through-my-eyes
+title: Through My Eyes
+artist: The Oak Ridge Boys
+composers:
+- Doc James
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: throughmyeyeslyricschords.pro
+    imported_at: '2026-01-02'

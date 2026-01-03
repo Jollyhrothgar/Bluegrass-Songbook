@@ -1,0 +1,17 @@
+id: can-t-stop-loving-you
+title: Can't Stop Loving You
+artist: Roger Miller
+composers:
+- Billy Nicholls
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cantstoplovingyoulyricschords.pro
+    imported_at: '2026-01-02'

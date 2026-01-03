@@ -1,0 +1,17 @@
+id: help-yourselves-to-each-other
+title: Help Yourselves To Each Other
+artist: Don Williams
+composers:
+- Bob McDill and Allen Reynolds
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helpyourselvestoeachotherlyricschords.pro
+    imported_at: '2026-01-02'

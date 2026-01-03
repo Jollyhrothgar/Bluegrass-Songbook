@@ -1,0 +1,15 @@
+id: maybe-i-just-crossed-your-mind
+title: Maybe I Just Crossed Your Mind
+artist: Johnny Duncan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maybeijustcrossedyourmindlyricschords.pro
+    imported_at: '2026-01-02'

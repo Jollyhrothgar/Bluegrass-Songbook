@@ -1,0 +1,18 @@
+id: as-long-as-i-love-you
+title: As Long As I Love You
+artist: Dolly Parton
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aslongasiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

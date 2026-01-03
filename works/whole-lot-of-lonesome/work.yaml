@@ -1,0 +1,20 @@
+id: whole-lot-of-lonesome
+title: Whole Lot Of Lonesome
+artist: David Allan Coe
+composers:
+- David Allan Coe and George Jones
+default_key: G
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wholelotoflonesomelyricschords.pro
+    imported_at: '2026-01-02'

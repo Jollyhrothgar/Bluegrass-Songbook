@@ -1,0 +1,17 @@
+id: slow-down-brother
+title: Slow Down Brother
+artist: Ferlin Husky
+composers:
+- Mark Pickett
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: slowdownbrotherlyricschords.pro
+    imported_at: '2026-01-02'

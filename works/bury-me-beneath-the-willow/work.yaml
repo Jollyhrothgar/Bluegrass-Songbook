@@ -1,0 +1,20 @@
+id: bury-me-beneath-the-willow
+title: Bury Me Beneath The Willow
+artist: Ricky Skaggs
+composers:
+- Bradley Kincaid
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: null
+    imported_at: '2026-01-02'

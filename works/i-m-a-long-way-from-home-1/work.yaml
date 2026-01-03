@@ -1,0 +1,19 @@
+id: i-m-a-long-way-from-home-1
+title: I'm A Long Way From Home
+artist: Waylon Jennings
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imalongwayfromhomelyricschords.pro
+    imported_at: '2026-01-02'

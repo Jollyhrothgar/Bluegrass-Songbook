@@ -1,0 +1,17 @@
+id: santa-claus-i-still-believe-in-you
+title: Santa Claus I Still Believe In You
+artist: Alabama
+composers:
+- Randy Owen, Teddy Gantry, John Jarrard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: santaclausistillbelieveinyoulyricschords.pro
+    imported_at: '2026-01-02'

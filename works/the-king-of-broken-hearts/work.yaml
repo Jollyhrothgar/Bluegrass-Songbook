@@ -1,0 +1,17 @@
+id: the-king-of-broken-hearts
+title: The King Of Broken Hearts
+artist: George Strait
+composers:
+- Jim Lauderdale
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thekingofbrokenheartslyricschords.pro
+    imported_at: '2026-01-02'

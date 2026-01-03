@@ -1,0 +1,17 @@
+id: back-to-the-doghouse
+title: Back To The Doghouse
+artist: Hawkshaw Hawkins
+composers:
+- Hawkshaw Hawkins, Lois Mann, Henry Bernard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backtothedoghouselyricschords.pro
+    imported_at: '2026-01-02'

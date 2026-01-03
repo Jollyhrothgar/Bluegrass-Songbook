@@ -1,0 +1,17 @@
+id: the-girl-on-the-billboard
+title: The Girl on the Billboard
+artist: Del Reeves
+composers:
+- Hank Mills
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegirlonthebillboardlyricschords.pro
+    imported_at: '2026-01-02'

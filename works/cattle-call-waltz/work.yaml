@@ -1,0 +1,15 @@
+id: cattle-call-waltz
+title: Cattle Call Waltz
+artist: Traditional
+composers:
+- Biography:Tex Owens
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

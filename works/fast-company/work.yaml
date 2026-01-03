@@ -1,0 +1,17 @@
+id: fast-company
+title: Fast Company
+artist: Bobby Flores
+composers:
+- Eddie Miller and Skeets McDonald
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fastcompanylyricschords.pro
+    imported_at: '2026-01-02'

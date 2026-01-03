@@ -1,0 +1,19 @@
+id: everyone-needs-someone
+title: Everyone Needs Someone
+artist: Mel Tillis
+composers:
+- Buddy Cannon and Gene Dunlap
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everyoneneedssomeonelyricschords.pro
+    imported_at: '2026-01-02'

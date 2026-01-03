@@ -1,0 +1,18 @@
+id: do-the-right-thing
+title: Do The Right Thing
+artist: George Strait
+composers:
+- Gary Nicholson and Jim Lauderdale
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dotherightthinglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: east-of-west-berlin
+title: East Of West Berlin
+artist: Stonewall Jackson
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eastofwestberlinlyricschords.pro
+    imported_at: '2026-01-02'

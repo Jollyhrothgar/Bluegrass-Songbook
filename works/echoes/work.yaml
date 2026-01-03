@@ -1,0 +1,20 @@
+id: echoes
+title: Echoes
+artist: Jerry Lee Lewis
+composers:
+- Cecil Harrelson and Linda Gail Lewis
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: echoeslyricschords.pro
+    imported_at: '2026-01-02'

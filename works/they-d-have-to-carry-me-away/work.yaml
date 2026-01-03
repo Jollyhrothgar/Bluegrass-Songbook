@@ -1,0 +1,15 @@
+id: they-d-have-to-carry-me-away
+title: They'd Have To Carry Me Away
+artist: Buck Owens
+composers:
+- Dennis Knutson, A.L. "Doodle" Owens
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theydhavetocarrymeawaylyricschords.pro
+    imported_at: '2026-01-02'

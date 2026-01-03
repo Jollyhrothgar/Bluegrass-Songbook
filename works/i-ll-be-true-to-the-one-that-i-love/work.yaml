@@ -1,0 +1,17 @@
+id: i-ll-be-true-to-the-one-that-i-love
+title: I'll Be True To The One That I Love
+artist: Stanley Brothers
+composers:
+- Ike Cargill and E. Settlemyer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbetruetotheonethatilovelyricschords.pro
+    imported_at: '2026-01-02'

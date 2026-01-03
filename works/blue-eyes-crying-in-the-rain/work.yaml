@@ -1,0 +1,19 @@
+id: blue-eyes-crying-in-the-rain
+title: Blue Eyes Crying in the Rain
+artist: Willie Nelson
+composers:
+- Fred Rose
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blueeyescryingintherainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: preservation-of-the-wild-life
+title: Preservation Of The Wild Life
+artist: Earl Thomas Conley
+composers:
+- Jim Allison and Linda Young
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: preservationofthewildlifelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: if-loving-you-means-anything
+title: If Loving You Means Anything
+artist: Billy Walker
+composers:
+- Jerry Chesnut and Dale Ward
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iflovingyoumeansanythinglyricschords.pro
+    imported_at: '2026-01-02'

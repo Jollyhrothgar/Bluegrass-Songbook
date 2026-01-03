@@ -1,0 +1,18 @@
+id: crying-waiting-hoping
+title: Crying Waiting Hoping
+artist: Buddy Holly
+composers:
+- Charles Holley
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cryingwaitinghopinglyricschords.pro
+    imported_at: '2026-01-02'

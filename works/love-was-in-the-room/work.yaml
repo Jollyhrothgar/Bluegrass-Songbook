@@ -1,0 +1,17 @@
+id: love-was-in-the-room
+title: Love Was In The Room
+artist: The Booth Brothers
+composers:
+- Mosie Lister
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovewasintheroomlyricschords.pro
+    imported_at: '2026-01-02'

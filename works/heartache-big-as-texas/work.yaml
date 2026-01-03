@@ -1,0 +1,18 @@
+id: heartache-big-as-texas
+title: Heartache Big As Texas
+artist: Ricky Van Shelton
+composers:
+- Royce Porter and David Lewis
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartachebigastexaslyricschords.pro
+    imported_at: '2026-01-02'

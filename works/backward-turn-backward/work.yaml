@@ -1,0 +1,15 @@
+id: backward-turn-backward
+title: Backward Turn Backward
+artist: Slim Whitman
+composers:
+- Dave Coleman
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backwardturnbackwardlyricschords.pro
+    imported_at: '2026-01-02'

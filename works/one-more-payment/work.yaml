@@ -1,0 +1,18 @@
+id: one-more-payment
+title: One More Payment
+artist: Clint Black
+composers:
+- Clint Black, Hayden Nicholas, Shake Russell
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemorepaymentlyricschords.pro
+    imported_at: '2026-01-02'

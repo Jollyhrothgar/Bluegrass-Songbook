@@ -1,0 +1,17 @@
+id: i-want-some-more-of-this
+title: I Want Some More Of This
+artist: Leona Williams
+composers:
+- Glenn Barber
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwantsomemoreofthislyricschords.pro
+    imported_at: '2026-01-02'

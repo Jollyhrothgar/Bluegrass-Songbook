@@ -1,0 +1,17 @@
+id: a-different-kind-of-sad
+title: A Different Kind Of Sad
+artist: Buck Owens
+composers:
+- Robert John Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: adifferentkindofsadlyricschords.pro
+    imported_at: '2026-01-02'

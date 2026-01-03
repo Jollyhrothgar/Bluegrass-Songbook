@@ -1,0 +1,17 @@
+id: pardon-me-for-loving-you
+title: Pardon Me For Loving You
+artist: Hawkshaw Hawkins
+composers:
+- William Mershon
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pardonmeforlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

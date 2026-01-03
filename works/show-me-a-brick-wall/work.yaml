@@ -1,0 +1,15 @@
+id: show-me-a-brick-wall
+title: Show Me A Brick Wall
+artist: Carl Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: showmeabrickwalllyricschords.pro
+    imported_at: '2026-01-02'

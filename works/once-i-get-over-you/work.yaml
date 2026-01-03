@@ -1,0 +1,17 @@
+id: once-i-get-over-you
+title: Once I Get Over You
+artist: Ronnie Milsap
+composers:
+- John Betis and Archie Jordan
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onceigetoveryoulyricschords.pro
+    imported_at: '2026-01-02'

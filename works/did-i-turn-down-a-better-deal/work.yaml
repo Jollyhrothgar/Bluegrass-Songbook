@@ -1,0 +1,17 @@
+id: did-i-turn-down-a-better-deal
+title: Did I Turn Down A Better Deal
+artist: Jean Shepard
+composers:
+- Tommy Collins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: diditurndownabetterdeallyricschords.pro
+    imported_at: '2026-01-02'

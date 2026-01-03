@@ -1,0 +1,17 @@
+id: red-rose-from-the-blue-side-of-town
+title: Red Rose From The Blue Side Of Town
+artist: George Morgan
+composers:
+- Betty Jean Robinson and Hank Snow
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: redrosefromthebluesideoftownlyricschords.pro
+    imported_at: '2026-01-02'

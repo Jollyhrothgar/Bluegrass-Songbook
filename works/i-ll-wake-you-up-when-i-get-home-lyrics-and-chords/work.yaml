@@ -1,0 +1,18 @@
+id: i-ll-wake-you-up-when-i-get-home-lyrics-and-chords
+title: I'll Wake You Up When I Get Home Lyrics and Chords
+artist: Charlie Rich
+composers:
+- Steve Dorff and Milton Brown
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illwakeyouupwhenigethomelyricschords.pro
+    imported_at: '2026-01-02'

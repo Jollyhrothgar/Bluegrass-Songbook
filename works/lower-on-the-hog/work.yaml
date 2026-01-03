@@ -1,0 +1,18 @@
+id: lower-on-the-hog
+title: Lower On The Hog
+artist: John Anderson
+composers:
+- Lionel Delmore and Larry Cordle
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loweronthehoglyricschords.pro
+    imported_at: '2026-01-02'

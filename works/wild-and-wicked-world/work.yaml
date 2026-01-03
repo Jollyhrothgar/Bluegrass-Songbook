@@ -1,0 +1,17 @@
+id: wild-and-wicked-world
+title: Wild And Wicked World
+artist: Ray Price
+composers:
+- J.D. Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wildandwickedworldlyricschords.pro
+    imported_at: '2026-01-02'

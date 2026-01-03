@@ -1,0 +1,17 @@
+id: keep-my-memory-in-your-heart
+title: Keep My Memory In Your Heart
+artist: Ernest Tubb
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keepmymemoryinyourheartlyricschords.pro
+    imported_at: '2026-01-02'

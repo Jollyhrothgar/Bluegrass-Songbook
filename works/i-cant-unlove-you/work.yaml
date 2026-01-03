@@ -1,0 +1,18 @@
+id: i-cant-unlove-you
+title: I Can’t Unlove You
+artist: Kenny Rogers
+composers:
+- Wade Allen Kirby and Will Robinson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantunloveyoulyricschords.pro
+    imported_at: '2026-01-02'

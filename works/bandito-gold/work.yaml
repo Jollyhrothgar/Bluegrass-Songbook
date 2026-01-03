@@ -1,0 +1,17 @@
+id: bandito-gold
+title: Bandito Gold
+artist: Red Steagall
+composers:
+- Danny Steagall and Red Steagall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: banditogoldlyricschords.pro
+    imported_at: '2026-01-02'

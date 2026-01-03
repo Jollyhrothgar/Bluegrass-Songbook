@@ -1,0 +1,17 @@
+id: when-i-get-to-the-end-of-the-way
+title: When I Get To The End Of The Way
+artist: Granpa Jones
+composers:
+- Charles D. Tillman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenigettotheendofthewaylyricschords.pro
+    imported_at: '2026-01-02'

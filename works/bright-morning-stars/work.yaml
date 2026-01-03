@@ -1,0 +1,16 @@
+id: bright-morning-stars
+title: Bright Morning Stars
+artist: Emmylou Harris
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brightmorningstarslyricschords.pro
+    imported_at: '2026-01-02'

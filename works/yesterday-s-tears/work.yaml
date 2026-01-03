@@ -1,0 +1,17 @@
+id: yesterday-s-tears
+title: Yesterday's Tears
+artist: Ernest Tubb
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesterdaystearslyricschords.pro
+    imported_at: '2026-01-02'

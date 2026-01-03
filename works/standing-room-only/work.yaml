@@ -1,0 +1,18 @@
+id: standing-room-only
+title: Standing Room Only
+artist: Kitty Wells
+composers:
+- Billy Wallace and Bill Carlisle
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: standingroomonlylyricschords.pro
+    imported_at: '2026-01-02'

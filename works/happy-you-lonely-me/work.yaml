@@ -1,0 +1,17 @@
+id: happy-you-lonely-me
+title: Happy You Lonely Me
+artist: Norma Jean
+composers:
+- Melba Montgomery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: happyyoulonelymelyricschords.pro
+    imported_at: '2026-01-02'

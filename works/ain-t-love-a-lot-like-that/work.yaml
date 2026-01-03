@@ -1,0 +1,17 @@
+id: ain-t-love-a-lot-like-that
+title: Ain't Love A Lot Like That
+artist: George Jones
+composers:
+- Dean Miller and Mark Collie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintlovealotlikethatlyricschords.pro
+    imported_at: '2026-01-02'

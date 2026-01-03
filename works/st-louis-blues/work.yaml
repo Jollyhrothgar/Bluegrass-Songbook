@@ -1,0 +1,18 @@
+id: st-louis-blues
+title: St. Louis Blues
+artist: Merle Haggard
+composers:
+- William Handy
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stlouisblueslyricsandchords.pro
+    imported_at: '2026-01-02'

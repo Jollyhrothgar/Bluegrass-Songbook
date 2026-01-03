@@ -1,0 +1,17 @@
+id: so-used-to-loving-you
+title: So Used To Loving You
+artist: Webb Pierce
+composers:
+- Tommy Hill and Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sousedtolovingyoulyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: if-the-whole-world-was-a-honky-tonk
+title: If The Whole World Was A Honky Tonk
+artist: George Strait
+composers:
+- Bryan Simpson, Ashley Gorley, Wade Kirby
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifthewholeworldwasahonkytonklyricschords.pro
+    imported_at: '2026-01-02'

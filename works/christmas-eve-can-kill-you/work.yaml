@@ -1,0 +1,17 @@
+id: christmas-eve-can-kill-you
+title: Christmas Eve Can Kill You
+artist: Everly Brothers
+composers:
+- Dennis Linde
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasevecankillyoulyricschords.pro
+    imported_at: '2026-01-02'

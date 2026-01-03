@@ -1,0 +1,16 @@
+id: christmas-at-home
+title: Christmas At Home
+artist: Rhonda Vincent
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasathomelyricsandchords.pro
+    imported_at: '2026-01-02'

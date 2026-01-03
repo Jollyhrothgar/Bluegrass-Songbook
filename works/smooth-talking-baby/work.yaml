@@ -1,0 +1,17 @@
+id: smooth-talking-baby
+title: Smooth Talking Baby
+artist: Don Williams
+composers:
+- Red Lane and Dave Kirby
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: smoothtalkingbabylyricschords.pro
+    imported_at: '2026-01-02'

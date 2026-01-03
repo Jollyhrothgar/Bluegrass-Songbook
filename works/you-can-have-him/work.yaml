@@ -1,0 +1,16 @@
+id: you-can-have-him
+title: You Can Have Him
+artist: The Oak Ridge Boys
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanhavehimlyricschords.pro
+    imported_at: '2026-01-02'

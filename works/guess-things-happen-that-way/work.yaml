@@ -1,0 +1,22 @@
+id: guess-things-happen-that-way
+title: Guess Things Happen That Way
+artist: Johnny Cash
+composers:
+- Jack Clement
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: guessthingshappenthatwaylyricschords.pro
+    imported_at: '2026-01-02'

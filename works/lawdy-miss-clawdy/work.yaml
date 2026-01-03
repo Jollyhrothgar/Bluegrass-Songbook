@@ -1,0 +1,21 @@
+id: lawdy-miss-clawdy
+title: Lawdy Miss Clawdy
+artist: Elvis Presley
+composers:
+- Lloyd Price
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lawdymissclawdylyricschords.pro
+    imported_at: '2026-01-02'

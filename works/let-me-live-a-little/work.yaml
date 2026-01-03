@@ -1,0 +1,17 @@
+id: let-me-live-a-little
+title: Let Me Live A Little
+artist: Webb Pierce
+composers:
+- Wayne P. Walker and Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmelivealittlelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,13 @@
+id: there-s-still-someone-i-can-t-forget
+title: There's Still Someone I Can't Forget
+artist: Johnny Duncan
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresstillsomeoneicantforgetlyricschords.pro
+    imported_at: '2026-01-02'

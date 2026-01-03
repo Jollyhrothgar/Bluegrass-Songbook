@@ -1,0 +1,18 @@
+id: i-m-glad-i-m-not-him
+title: I'm Glad I'm Not Him
+artist: The Louvin Brothers
+default_key: C
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgladimnothimlyricschords.pro
+    imported_at: '2026-01-02'

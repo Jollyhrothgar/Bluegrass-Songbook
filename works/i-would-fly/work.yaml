@@ -1,0 +1,19 @@
+id: i-would-fly
+title: I Would Fly
+artist: Mel Tillis
+composers:
+- Tracy Newman
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldflylyricschords.pro
+    imported_at: '2026-01-02'

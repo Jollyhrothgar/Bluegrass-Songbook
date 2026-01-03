@@ -1,0 +1,17 @@
+id: i-could-use-another-you
+title: I Could Use Another You
+artist: Eddy Raven
+composers:
+- Chris Waters, Tom Shapiro, Bucky Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icoulduseanotheryoulyricschords.pro
+    imported_at: '2026-01-02'

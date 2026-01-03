@@ -1,0 +1,21 @@
+id: those-two-blue-eyes
+title: Those Two Blue Eyes
+artist: Ricky Skaggs
+composers:
+- Lonnie Nipper and John Sloas
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thosetwoblueeyeslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-set-my-teardrops-to-music
+title: I'll Set My Teardrops To Music
+artist: Hank Thompson
+composers:
+- Hank Thompson and Lynn Russwurm
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illsetmyteardropstomusiclyricschords.pro
+    imported_at: '2026-01-02'

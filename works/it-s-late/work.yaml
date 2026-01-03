@@ -1,0 +1,15 @@
+id: it-s-late
+title: It's Late
+artist: Ricky Nelson
+composers:
+- Dorsey Burnette
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itslatelyricschords.pro
+    imported_at: '2026-01-02'

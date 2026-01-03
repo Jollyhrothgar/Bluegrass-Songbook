@@ -1,0 +1,18 @@
+id: dasher-with-the-light-upon-his-tail
+title: Dasher With The Light Upon His Tail
+artist: Kitty Wells
+composers:
+- Warner H. McPherson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dasherwiththelightuponhistaillyricschords.pro
+    imported_at: '2026-01-02'

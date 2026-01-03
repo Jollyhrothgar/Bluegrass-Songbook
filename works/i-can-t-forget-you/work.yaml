@@ -1,0 +1,20 @@
+id: i-can-t-forget-you
+title: I Can't Forget You
+artist: Patsy Cline
+composers:
+- W.S. Stevenson and Carl Belew
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantforgetlyricschords.pro
+    imported_at: '2026-01-02'

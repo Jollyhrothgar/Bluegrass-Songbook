@@ -1,0 +1,17 @@
+id: let-me-live-with-love-and-die-with-you
+title: Let Me Live With Love And Die With You
+artist: Ricky Van Shelton
+composers:
+- Red Lane and Skip Ewing
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmelivewithloveanddiewithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: ive-got-a-thing-about-a-5-string
+title: I’ve Got A Thing About A 5 String
+artist: Bill Anderson
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotathingabouta5stringlyricschords.pro
+    imported_at: '2026-01-02'

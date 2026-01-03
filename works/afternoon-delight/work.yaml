@@ -1,0 +1,19 @@
+id: afternoon-delight
+title: Afternoon Delight
+artist: Charlie Rich
+composers:
+- Bill Danoff
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afternoondelightlyricschords.pro
+    imported_at: '2026-01-02'

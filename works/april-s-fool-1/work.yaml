@@ -1,0 +1,17 @@
+id: april-s-fool-1
+title: April's Fool
+artist: Ray Price
+composers:
+- Dave Kirby and Glenn Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aprilsfoollyricschords.pro
+    imported_at: '2026-01-02'

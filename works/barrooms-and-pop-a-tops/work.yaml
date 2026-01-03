@@ -1,0 +1,17 @@
+id: barrooms-and-pop-a-tops
+title: Barrooms And Pop A Tops
+artist: Jim Ed Brown
+composers:
+- Jim Hayner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: barroomsandpopatopslyricschords.pro
+    imported_at: '2026-01-02'

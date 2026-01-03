@@ -1,0 +1,19 @@
+id: do-you-think-of-me
+title: Do You Think Of Me
+artist: Anne Murray
+composers:
+- Sandy Ross
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doyouthinkofmelyricschords.pro
+    imported_at: '2026-01-02'

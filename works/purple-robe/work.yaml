@@ -1,0 +1,18 @@
+id: purple-robe
+title: Purple Robe
+artist: The Stanley Brothers
+composers:
+- Odell McLeod
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: purplerobelyricschords.pro
+    imported_at: '2026-01-02'

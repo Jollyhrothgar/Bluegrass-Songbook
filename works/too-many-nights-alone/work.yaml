@@ -1,0 +1,17 @@
+id: too-many-nights-alone
+title: Too Many Nights Alone
+artist: Bobby Bare
+composers:
+- Shel Silverstein and Even Stevens
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomanynightsalonelyricschords.pro
+    imported_at: '2026-01-02'

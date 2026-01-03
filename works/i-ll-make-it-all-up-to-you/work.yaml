@@ -1,0 +1,20 @@
+id: i-ll-make-it-all-up-to-you
+title: I'll Make It All Up To You
+artist: Jerry Lee Lewis
+composers:
+- Charlie Rich
+default_key: C
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illmakeitalluptoyoulyricschords.pro
+    imported_at: '2026-01-02'

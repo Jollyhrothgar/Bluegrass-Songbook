@@ -1,0 +1,15 @@
+id: you-ll-never-be-the-sun
+title: (You'll) Never Be The Sun
+artist: Emmylou Harris, Dolly Parton, Linda Ronstadt
+composers:
+- Donagh Long
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllneverbethesunlyricschords.pro
+    imported_at: '2026-01-02'

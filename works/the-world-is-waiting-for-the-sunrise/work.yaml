@@ -1,0 +1,15 @@
+id: the-world-is-waiting-for-the-sunrise
+title: The World Is Waiting For The Sunrise
+artist: Les Paul and Mary Ford
+composers:
+- Eugene Lockhart and Ernest Seitz
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theworldiswaitingforthesunriselyricschords.pro
+    imported_at: '2026-01-02'

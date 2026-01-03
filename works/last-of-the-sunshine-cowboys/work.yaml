@@ -1,0 +1,15 @@
+id: last-of-the-sunshine-cowboys
+title: Last Of The Sunshine Cowboys
+artist: Eddy Raven
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lastofthesunshinecowboyslyricschords.pro
+    imported_at: '2026-01-02'

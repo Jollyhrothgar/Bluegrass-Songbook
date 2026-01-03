@@ -1,0 +1,17 @@
+id: poor-little-fool
+title: Poor Little Fool
+artist: Ricky Nelson
+composers:
+- Sharon Sheeley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: poorlittlefoollyricschords.pro
+    imported_at: '2026-01-02'

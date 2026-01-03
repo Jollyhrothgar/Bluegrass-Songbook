@@ -1,0 +1,15 @@
+id: four-in-the-morning
+title: Four in the Morning
+artist: Faron Young
+composers:
+- Jerry Chesnut
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fourinthemorninglyricschords.pro
+    imported_at: '2026-01-02'

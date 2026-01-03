@@ -1,0 +1,17 @@
+id: back-pocket-money
+title: Back Pocket Money
+artist: Jimmy C. Newman
+composers:
+- Tom T. Hall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backpocketmoneylyricschords.pro
+    imported_at: '2026-01-02'

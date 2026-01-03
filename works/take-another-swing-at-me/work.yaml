@@ -1,0 +1,17 @@
+id: take-another-swing-at-me
+title: Take Another Swing At Me
+artist: Randy Travis
+composers:
+- Paul Craft
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takeanotherswingatmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: is-she-all-you-thought-she-would-be
+title: Is She All You Thought She Would Be
+artist: Faron Young
+composers:
+- Roy Drusky and Bud Auge
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: issheallyouthoughtshewouldbelyricschords.pro
+    imported_at: '2026-01-02'

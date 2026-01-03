@@ -1,0 +1,15 @@
+id: the-harm-you-ve-done
+title: The Harm You've Done
+artist: Stonewall Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theharmyouvedonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: don-t-put-me-in-the-ex-files
+title: Don't Put Me in the Ex Files
+artist: The Bellamy Brothers
+composers:
+- David Bellamy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontputmeintheexfileslyricschords.pro
+    imported_at: '2026-01-02'

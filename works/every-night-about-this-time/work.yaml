@@ -1,0 +1,17 @@
+id: every-night-about-this-time
+title: Every Night About This Time
+artist: Johnny Rodriguez
+composers:
+- Dave Alvin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everynightaboutthistimelyricsandchords.pro
+    imported_at: '2026-01-02'

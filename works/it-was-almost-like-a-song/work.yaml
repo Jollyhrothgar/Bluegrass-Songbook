@@ -1,0 +1,17 @@
+id: it-was-almost-like-a-song
+title: It Was Almost Like A Song
+artist: Ronnie Milsap
+composers:
+- Hal David and Archie Jordan
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itwasalmostlikeasonglyricschords.pro
+    imported_at: '2026-01-02'

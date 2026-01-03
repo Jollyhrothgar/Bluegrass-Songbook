@@ -1,0 +1,17 @@
+id: hootenanny-granny
+title: Hootenanny Granny
+artist: Jim Lowe
+composers:
+- Fred Hertz and Charles Grean
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hootenannygrannylyricschords.pro
+    imported_at: '2026-01-02'

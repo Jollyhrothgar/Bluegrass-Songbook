@@ -1,0 +1,20 @@
+id: ain-t-no-wheels-on-this-ship
+title: Ain't No Wheels On This Ship
+artist: Patsy Cline
+composers:
+- W.D. Chandler and W.S. Stevenson
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintnowheelsonthisshiplyricschords.pro
+    imported_at: '2026-01-02'

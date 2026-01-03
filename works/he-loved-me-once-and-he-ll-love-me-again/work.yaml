@@ -1,0 +1,17 @@
+id: he-loved-me-once-and-he-ll-love-me-again
+title: He Loved Me Once And He'll Love Me Again
+artist: Jean Shepard
+composers:
+- Rubye Glasgow and Joan Hager
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helovedmeonceandhelllovemeagainlyricschords.pro
+    imported_at: '2026-01-02'

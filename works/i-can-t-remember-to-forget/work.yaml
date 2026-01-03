@@ -1,0 +1,15 @@
+id: i-can-t-remember-to-forget
+title: I Can't Remember To Forget
+artist: Bob Luman
+composers:
+- Billy Graham
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantremembertoforgetlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-gettin-lonely
+title: I'm Gettin' Lonely
+artist: Bobby Bare
+composers:
+- Clyde Pitts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgettinlonelylyricschords.pro
+    imported_at: '2026-01-02'

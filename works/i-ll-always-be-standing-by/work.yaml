@@ -1,0 +1,17 @@
+id: i-ll-always-be-standing-by
+title: I'll Always Be Standing By
+artist: Hank Locklin
+composers:
+- A.M. Lyle and W. Locklin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illalwaysbestandingbylyricschords.pro
+    imported_at: '2026-01-02'

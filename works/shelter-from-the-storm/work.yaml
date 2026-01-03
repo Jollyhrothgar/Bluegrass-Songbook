@@ -1,0 +1,17 @@
+id: shelter-from-the-storm
+title: Shelter From The Storm
+artist: Glen Campbell
+composers:
+- Becky Thurman and Geoff Thurman
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shelterfromthestormlyricsandchords.pro
+    imported_at: '2026-01-02'

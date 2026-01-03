@@ -1,0 +1,18 @@
+id: every-time-i-m-kissing-you
+title: Every Time I'm Kissing You
+artist: Johnny Horton
+composers:
+- Carl Belew, Faron Young, Johnny Horton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everytimeimkissingyoulyricschords.pro
+    imported_at: '2026-01-02'

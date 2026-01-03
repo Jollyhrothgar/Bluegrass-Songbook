@@ -1,0 +1,17 @@
+id: that-spirit-of-christmas
+title: That Spirit of Christmas
+artist: Ray Charles
+composers:
+- Joel D. Webster, Mable John
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatspiritofChristmaslyricschords.pro
+    imported_at: '2026-01-02'

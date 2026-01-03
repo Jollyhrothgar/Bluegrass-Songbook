@@ -1,0 +1,17 @@
+id: i-m-sending-you-red-roses
+title: I'm Sending You Red Roses
+artist: Jimmy Wakely
+composers:
+- Wally Fowler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsendingyouredroseslyricschords.pro
+    imported_at: '2026-01-02'

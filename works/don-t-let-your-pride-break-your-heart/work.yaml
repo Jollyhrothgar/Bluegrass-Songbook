@@ -1,0 +1,15 @@
+id: don-t-let-your-pride-break-your-heart
+title: Don't Let Your Pride Break Your Heart
+artist: Billy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontletyourpridebreakyourheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-not-quite-through-crying
+title: I'm Not Quite Through Crying
+artist: Statler Brothers
+composers:
+- Lew DeWitt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotquitethroughcryinglyricschords.pro
+    imported_at: '2026-01-02'

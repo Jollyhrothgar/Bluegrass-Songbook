@@ -1,0 +1,18 @@
+id: anywhere-just-inside-your-arms
+title: Anywhere Just Inside Your Arms
+artist: Charley Pride
+composers:
+- Wanda Ballman
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anywherejustinsideyourarmslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-day-dreamin-tonight
+title: I'm Day Dreamin' Tonight
+artist: Porter Wagoner
+composers:
+- Mildred Burk and Ross Burk
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imdaydreamintonightlyricschords.pro
+    imported_at: '2026-01-02'

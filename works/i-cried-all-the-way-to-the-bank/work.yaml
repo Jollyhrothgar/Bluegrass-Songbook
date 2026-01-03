@@ -1,0 +1,17 @@
+id: i-cried-all-the-way-to-the-bank
+title: I Cried All The Way To The Bank
+artist: Norma Jean
+composers:
+- Liz Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icriedallthewaytothebanklyricschords.pro
+    imported_at: '2026-01-02'

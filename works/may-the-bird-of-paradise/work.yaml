@@ -1,0 +1,17 @@
+id: may-the-bird-of-paradise
+title: May The Bird Of Paradise
+artist: Little Jimmy Dickens
+composers:
+- Neal Merritt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maythebirdofparadiselyricschords.pro
+    imported_at: '2026-01-02'

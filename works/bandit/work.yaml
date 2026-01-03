@@ -1,0 +1,17 @@
+id: bandit
+title: Bandit
+artist: Jim Ed Brown
+composers:
+- Zeb Turner, Michael Carr, Milton Nascimeto
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: banditlyricschords.pro
+    imported_at: '2026-01-02'

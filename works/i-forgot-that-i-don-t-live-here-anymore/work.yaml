@@ -1,0 +1,15 @@
+id: i-forgot-that-i-don-t-live-here-anymore
+title: I Forgot That I Don't Live Here Anymore
+artist: Moe Bandy
+composers:
+- Chris Waters, Michael Garvin, Tom Shapiro
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iforgotthatidontlivehereanymorelyricschords.pro
+    imported_at: '2026-01-02'

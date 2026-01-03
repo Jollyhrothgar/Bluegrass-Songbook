@@ -1,0 +1,17 @@
+id: we-go-together
+title: We Go Together
+artist: George Jones
+composers:
+- Norro Wilson, Danny Walls, Sammy Lyons
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wegotogetherlyricschords.pro
+    imported_at: '2026-01-02'

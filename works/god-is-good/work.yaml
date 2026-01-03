@@ -1,0 +1,15 @@
+id: god-is-good
+title: God Is Good
+artist: Paul Overstreet
+composers:
+- Paul Overstreet and Don Moen
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godisgoodlyricschords.pro
+    imported_at: '2026-01-02'

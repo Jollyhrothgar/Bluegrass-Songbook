@@ -1,0 +1,17 @@
+id: hearts-were-made-for-beating
+title: Hearts Were Made For Beating
+artist: Billy Walker
+composers:
+- Lamar Morris and Warren Keith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartsweremadeforbeatinglyricschords.pro
+    imported_at: '2026-01-02'

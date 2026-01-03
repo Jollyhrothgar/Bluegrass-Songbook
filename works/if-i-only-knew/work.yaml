@@ -1,0 +1,17 @@
+id: if-i-only-knew
+title: If I Only Knew
+artist: Bobby Helms
+composers:
+- Bob Saffer
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifionlyknewlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: are-you-sure-waylon-done-it-this-way
+title: Are You Sure Waylon Done It This Way
+artist: Clint Black
+composers:
+- Waylon Jennings
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: areyousurewaylondoneitthiswaylyricschords.pro
+    imported_at: '2026-01-02'

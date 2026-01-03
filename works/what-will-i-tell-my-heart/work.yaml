@@ -1,0 +1,18 @@
+id: what-will-i-tell-my-heart
+title: What Will I Tell My Heart
+artist: Fats Domino
+composers:
+- Jack Lawrence, Irving Gordon, Peter Tinturin
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatwillitellmyheartlyricschords.pro
+    imported_at: '2026-01-02'

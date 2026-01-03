@@ -1,0 +1,19 @@
+id: cotton-jenny
+title: Cotton Jenny
+artist: Anne Murray
+composers:
+- Gordon Lightfoot
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cottonjennylyricschords.pro
+    imported_at: '2026-01-02'

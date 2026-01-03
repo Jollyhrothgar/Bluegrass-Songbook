@@ -1,0 +1,15 @@
+id: when-i-go-to-my-garden
+title: When I Go To My Garden
+artist: Slim Whitman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenigotomygardenlyricschords.pro
+    imported_at: '2026-01-02'

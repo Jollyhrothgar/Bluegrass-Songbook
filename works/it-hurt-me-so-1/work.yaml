@@ -1,0 +1,19 @@
+id: it-hurt-me-so-1
+title: It Hurt Me So
+artist: Charlie Rich
+composers:
+- Charlie Rich and William E. Justis Jr.
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithurtmesolyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-should-see-tennessee-mam-selle
+title: You Should See Tennessee Mam'selle
+artist: Jimmy Dean
+composers:
+- Dave Coleman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youshouldseetennesseemamsellelyricschords.pro
+    imported_at: '2026-01-02'

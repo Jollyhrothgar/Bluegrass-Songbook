@@ -1,0 +1,17 @@
+id: whirlwinds-of-my-mind-and-chords
+title: Whirlwinds Of My Mind and Chords
+artist: Faron Young
+composers:
+- Samuel Manning
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whirlwindsofmymindlyricschords.pro
+    imported_at: '2026-01-02'

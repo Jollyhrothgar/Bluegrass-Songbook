@@ -1,0 +1,17 @@
+id: married-but-not-to-each-other
+title: Married But Not To Each Other
+artist: Barbara Mandrell
+composers:
+- Denise Ora Craig and Frances H. Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: marriedbutnottoeachotherlyricschords.pro
+    imported_at: '2026-01-02'

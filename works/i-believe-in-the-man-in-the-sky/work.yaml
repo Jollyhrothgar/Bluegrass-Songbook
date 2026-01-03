@@ -1,0 +1,20 @@
+id: i-believe-in-the-man-in-the-sky
+title: I Believe In The Man In The Sky
+artist: Elvis Presley
+composers:
+- Richard Howard
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibelieveinthemanintheskylyricschords.pro
+    imported_at: '2026-01-02'

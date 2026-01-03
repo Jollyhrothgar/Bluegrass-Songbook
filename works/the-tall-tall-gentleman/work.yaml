@@ -1,0 +1,15 @@
+id: the-tall-tall-gentleman
+title: The Tall Tall Gentleman
+artist: Carl Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetalltallgentlemanlyricschords.pro
+    imported_at: '2026-01-02'

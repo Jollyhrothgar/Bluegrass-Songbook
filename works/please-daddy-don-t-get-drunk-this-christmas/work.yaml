@@ -1,0 +1,17 @@
+id: please-daddy-don-t-get-drunk-this-christmas
+title: Please Daddy (Don't Get Drunk This Christmas)
+artist: Alan Jackson
+composers:
+- Bill Danoff and Taffy Nivert
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasedaddydontgetdrunkthisChristmaslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: rosalita
+title: Rosalita
+artist: Hank Locklin
+composers:
+- Al Dexter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rosalitalyricschords.pro
+    imported_at: '2026-01-02'

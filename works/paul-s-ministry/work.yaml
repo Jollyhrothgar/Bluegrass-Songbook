@@ -1,0 +1,18 @@
+id: paul-s-ministry
+title: Paul's Ministry
+artist: Kitty Wells
+composers:
+- William Travel
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: paulsministrylyricschords.pro
+    imported_at: '2026-01-02'

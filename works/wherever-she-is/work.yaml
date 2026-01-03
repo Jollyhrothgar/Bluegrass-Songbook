@@ -1,0 +1,17 @@
+id: wherever-she-is
+title: Wherever She Is
+artist: Ricky Van Shelton
+composers:
+- James House and John Jarrard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whereversheislyricsandchords.pro
+    imported_at: '2026-01-02'

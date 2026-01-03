@@ -1,0 +1,17 @@
+id: born-to-lose
+title: Born to Lose
+artist: Eddy Arnold
+composers:
+- Ted Daffan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: borntoloselyricschords.pro
+    imported_at: '2026-01-02'

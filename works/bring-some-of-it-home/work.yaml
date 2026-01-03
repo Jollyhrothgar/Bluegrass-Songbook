@@ -1,0 +1,19 @@
+id: bring-some-of-it-home
+title: Bring Some Of It Home
+artist: Loretta Lynn
+composers:
+- Lola Jean Dillon
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bringsomeofithomelyricschords.pro
+    imported_at: '2026-01-02'

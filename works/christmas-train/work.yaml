@@ -1,0 +1,17 @@
+id: christmas-train
+title: Christmas Train
+artist: Bobby Bare
+composers:
+- Brein Fisher and Andra Hamlin
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmastrainlyricschords.pro
+    imported_at: '2026-01-02'

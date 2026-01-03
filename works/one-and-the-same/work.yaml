@@ -1,0 +1,15 @@
+id: one-and-the-same
+title: One And The Same
+artist: George Morgan
+composers:
+- George Morgan
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneandthesamelyricschords.pro
+    imported_at: '2026-01-02'

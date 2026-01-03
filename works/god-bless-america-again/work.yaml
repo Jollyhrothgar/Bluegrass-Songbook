@@ -1,0 +1,17 @@
+id: god-bless-america-again
+title: God Bless America Again
+artist: Bobby Bare
+composers:
+- Bobby Bare and Boice Hawkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: godblessamericaagainlyricschords.pro
+    imported_at: '2026-01-02'

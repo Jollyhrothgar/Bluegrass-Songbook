@@ -1,0 +1,18 @@
+id: because-of-him-1
+title: Because Of Him
+artist: The Oak Ridge Boys
+composers:
+- J.D. Sumner
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseofhimlyricschords.pro
+    imported_at: '2026-01-02'

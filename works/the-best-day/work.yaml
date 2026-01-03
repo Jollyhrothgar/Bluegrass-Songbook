@@ -1,0 +1,17 @@
+id: the-best-day
+title: The Best Day
+artist: George Strait
+composers:
+- Dean Dillon and Carson Chamberlain
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebestdaylyricschords.pro
+    imported_at: '2026-01-02'

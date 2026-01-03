@@ -1,0 +1,17 @@
+id: he-stands-real-tall
+title: He Stands Real Tall
+artist: Little Jimmy Dickens
+composers:
+- Cal Veale
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hestandsrealtalllyricschords.pro
+    imported_at: '2026-01-02'

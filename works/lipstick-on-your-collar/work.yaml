@@ -1,0 +1,17 @@
+id: lipstick-on-your-collar
+title: Lipstick On Your Collar
+artist: Connie Francis
+composers:
+- George Goehring and Edna Lewis
+default_key: G
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lipstickonyourcollarlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-won-t-be-hanging-around
+title: I Won't Be Hanging Around
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Marijohn Wilkin, Wayne P. Walker, Louise Certain
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwontbehangingaroundlyricschords.pro
+    imported_at: '2026-01-02'

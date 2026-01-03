@@ -1,0 +1,17 @@
+id: to-god-to-be-the-glory
+title: To God To Be The Glory
+artist: The Jordanaires
+composers:
+- James F. Hammerly, Fanny Crosby, William Doane
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toGodtobetheglorylyricschords.pro
+    imported_at: '2026-01-02'

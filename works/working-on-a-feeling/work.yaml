@@ -1,0 +1,17 @@
+id: working-on-a-feeling
+title: Working On A Feeling
+artist: Tommy Cash
+composers:
+- Red Lane, Royce Porter, Tom McKeon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: workingonafeelinglyricschords.pro
+    imported_at: '2026-01-02'

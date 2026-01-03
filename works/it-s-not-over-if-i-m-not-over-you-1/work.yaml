@@ -1,0 +1,17 @@
+id: it-s-not-over-if-i-m-not-over-you-1
+title: It's Not Over If I'm Not Over You
+artist: Vern Gosdin
+composers:
+- Larry Kingston & Mark Wright
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsnotoverifimnotoveryoulyricschords.pro
+    imported_at: '2026-01-02'

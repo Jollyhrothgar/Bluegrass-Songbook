@@ -1,0 +1,17 @@
+id: if-only-your-eyes-could-lie
+title: If Only Your Eyes Could Lie
+artist: George Jones
+composers:
+- John Charles Jarrard and Robert Lee McDill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifonlyyoureyescouldlielyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: all-aboard
+title: All Aboard
+artist: Del McCoury
+composers:
+- Eugene Patrick Ellsworth,
+default_key: Em
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allaboardlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: calling-my-children-home
+title: Calling My Children Home
+artist: Emmylou Harris
+composers:
+- Doyle Lawson, Charles Waller, Robert Yates
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: callingmychildrenhomelyricschords.pro
+    imported_at: '2026-01-02'

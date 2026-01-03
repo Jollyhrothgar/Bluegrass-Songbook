@@ -1,0 +1,19 @@
+id: hands-of-yesterday
+title: Hands Of Yesterday
+artist: Loretta Lynn
+composers:
+- Ray Griff
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: handsofyesterdaylyricschords.pro
+    imported_at: '2026-01-02'

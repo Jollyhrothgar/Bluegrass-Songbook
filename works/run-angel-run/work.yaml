@@ -1,0 +1,17 @@
+id: run-angel-run
+title: Run Angel Run
+artist: Tammy Wynette
+composers:
+- Billy Sherrill and Stuart Phillips
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: runangelrunlyricschords.pro
+    imported_at: '2026-01-02'

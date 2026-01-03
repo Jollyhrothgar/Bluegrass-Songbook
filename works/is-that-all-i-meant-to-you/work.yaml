@@ -1,0 +1,17 @@
+id: is-that-all-i-meant-to-you
+title: Is That All I Meant To You
+artist: Johnny Paycheck
+composers:
+- Gene Guthrie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isthatallimeanttoyoulyricschords.pro
+    imported_at: '2026-01-02'

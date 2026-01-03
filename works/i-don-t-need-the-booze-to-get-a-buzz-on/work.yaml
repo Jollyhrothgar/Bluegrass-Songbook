@@ -1,0 +1,17 @@
+id: i-don-t-need-the-booze-to-get-a-buzz-on
+title: I Don't Need The Booze To Get A Buzz On
+artist: Alan Jackson
+composers:
+- Toni Dae and Joy Swinea
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontneedtheboozetogetabuzzonlyricschords.pro
+    imported_at: '2026-01-02'

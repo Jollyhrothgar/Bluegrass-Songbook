@@ -1,0 +1,17 @@
+id: it-s-me-that-hurts-the-most
+title: It's Me That Hurts The Most
+artist: Little Jimmy Dickens
+composers:
+- Kent Westberry
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsmethathurtsthemostlyricschords.pro
+    imported_at: '2026-01-02'

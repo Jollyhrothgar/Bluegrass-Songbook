@@ -1,0 +1,16 @@
+id: hold-on-to-god
+title: Hold On To God
+artist: Dwight Yoakam
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdontoGodlyricschords.pro
+    imported_at: '2026-01-02'

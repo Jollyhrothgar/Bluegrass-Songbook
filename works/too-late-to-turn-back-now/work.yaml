@@ -1,0 +1,17 @@
+id: too-late-to-turn-back-now
+title: Too Late To Turn Back Now
+artist: Don Williams
+composers:
+- Don Williams and Allen Reynolds
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toolatetoturnbacknowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: back-when-the-old-homeplace-was-new
+title: Back When The Old Homeplace Was New
+artist: Tom T. Hall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backwhentheoldhomeplacewasnewlyricschords.pro
+    imported_at: '2026-01-02'

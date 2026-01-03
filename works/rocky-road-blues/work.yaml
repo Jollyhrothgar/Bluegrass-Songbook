@@ -1,0 +1,17 @@
+id: rocky-road-blues
+title: Rocky Road Blues
+artist: Dwight Yoakum
+composers:
+- Bill Monroe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockyroadblueslyricschords.pro
+    imported_at: '2026-01-02'

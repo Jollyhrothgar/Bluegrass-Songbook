@@ -1,0 +1,17 @@
+id: how-many
+title: How Many
+artist: Jim Reeves
+composers:
+- Hal Blair and Howard Barnes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howmanylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: love-dont-grow-on-trees
+title: Love Don’t Grow On Trees
+artist: Johnny Burke
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovedontgrowontreeslyricschords.pro
+    imported_at: '2026-01-02'

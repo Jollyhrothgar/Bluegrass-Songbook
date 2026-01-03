@@ -1,0 +1,17 @@
+id: man-in-the-little-white-suit
+title: Man In The Little White Suit
+artist: Charlie Walker
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maninthelittlewhitesuitlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-the-only-sane-man-left-alive
+title: I'm The Only Sane Man Left Alive
+artist: The Bellamy Brothers
+composers:
+- David Bellamy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imtheonlysanemanleftalivelyricschords.pro
+    imported_at: '2026-01-02'

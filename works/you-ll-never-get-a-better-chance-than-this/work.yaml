@@ -1,0 +1,19 @@
+id: you-ll-never-get-a-better-chance-than-this
+title: You'll Never Get A Better Chance Than This
+artist: Ernest Tubb
+composers:
+- Justin Tubb
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllnevergetabetterchancethanthislyricschords.pro
+    imported_at: '2026-01-02'

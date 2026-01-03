@@ -1,0 +1,17 @@
+id: just-a-little-sunshine-in-the-rain
+title: Just A Little Sunshine In The Rain
+artist: Connie Smith
+composers:
+- Ricci Mareno
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justalittlesunshineintherainlyricschords.pro
+    imported_at: '2026-01-02'

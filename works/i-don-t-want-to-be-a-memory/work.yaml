@@ -1,0 +1,18 @@
+id: i-don-t-want-to-be-a-memory
+title: I Don't Want To Be A Memory
+artist: Lee Greenwood
+composers:
+- James Pennington and Sonny Lemaire
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwanttobeamemorylyricschords.pro
+    imported_at: '2026-01-02'

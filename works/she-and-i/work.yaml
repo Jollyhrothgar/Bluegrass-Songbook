@@ -1,0 +1,17 @@
+id: she-and-i
+title: She And I
+artist: Alabama
+composers:
+- Dave Loggins
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sheandilyricschords.pro
+    imported_at: '2026-01-02'

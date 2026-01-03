@@ -1,0 +1,18 @@
+id: when-i-travel-my-last-mile-he-will-hold-my-hand
+title: When I Travel My Last Mile (He Will Hold My Hand)
+artist: Rhonda Vincent
+composers:
+- Henry J. Donohue
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenitravelmylastmilehewillholdmyhandlyricschords.pro
+    imported_at: '2026-01-02'

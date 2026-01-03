@@ -1,0 +1,15 @@
+id: moonlight-mountain-lyrics-chords
+title: Moonlight Mountain Lyrics chords
+artist: Faron Young
+composers:
+- Bud Freeman and Leon Pober
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: moonlightmountainlyricschords.pro
+    imported_at: '2026-01-02'

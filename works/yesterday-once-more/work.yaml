@@ -1,0 +1,17 @@
+id: yesterday-once-more
+title: Yesterday Once More
+artist: Moe Bandy
+composers:
+- Jim Mundy and Peggy White
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesterdayoncemorelyricschords.pro
+    imported_at: '2026-01-02'

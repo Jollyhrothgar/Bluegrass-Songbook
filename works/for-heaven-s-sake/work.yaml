@@ -1,0 +1,18 @@
+id: for-heaven-s-sake
+title: For Heaven's Sake
+artist: Conway Twitty
+composers:
+- Lorene Allen, Maggie Vaughn, Frankie Fuller
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forheavenssakelyricschords.pro
+    imported_at: '2026-01-02'

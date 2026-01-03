@@ -1,0 +1,17 @@
+id: one-man-woman-one-woman-man
+title: One Man Woman One Woman Man
+artist: Jim Ed Brown
+composers:
+- Paul Anka
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemanwomanonewomanmanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: anyone-who-isn-t-me-tonight
+title: Anyone Who Isn't Me Tonight
+artist: Kenny Rogers
+composers:
+- Casey Kelly and Julie Didier
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anyonewhoisntmetonightlyricschords.pro
+    imported_at: '2026-01-02'

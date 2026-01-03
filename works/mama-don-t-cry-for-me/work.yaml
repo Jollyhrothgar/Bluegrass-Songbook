@@ -1,0 +1,17 @@
+id: mama-don-t-cry-for-me
+title: Mama Don't Cry For Me
+artist: Charlie Pride
+composers:
+- Johnny Wilson and Fred Foster
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mamadontcryformelyricschords.pro
+    imported_at: '2026-01-02'

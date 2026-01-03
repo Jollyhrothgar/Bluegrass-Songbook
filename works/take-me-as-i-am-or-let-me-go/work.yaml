@@ -1,0 +1,17 @@
+id: take-me-as-i-am-or-let-me-go
+title: Take Me As I Am (Or Let Me Go)
+artist: Dottie West
+composers:
+- Boudleaux Bryant
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemeasiamorletmegolyricsandchords.pro
+    imported_at: '2026-01-02'

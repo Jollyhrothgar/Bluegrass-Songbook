@@ -1,0 +1,15 @@
+id: have-you-ever-been-a-fool
+title: Have You Ever Been A Fool
+artist: Jake Penrod
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveyoueverbeenafoollyricschords.pro
+    imported_at: '2026-01-02'

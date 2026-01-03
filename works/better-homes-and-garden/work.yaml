@@ -1,0 +1,17 @@
+id: better-homes-and-garden
+title: Better Homes And Garden
+artist: Billy Walker
+composers:
+- Bobby Russel
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: betterhomesandgardenlyricschords.pro
+    imported_at: '2026-01-02'

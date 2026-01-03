@@ -1,0 +1,19 @@
+id: softly-and-tenderly
+title: Softly And Tenderly
+artist: Anne Murray
+composers:
+- Will L. Thompson
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: softlyandtenderlylyricsandchords.pro
+    imported_at: '2026-01-02'

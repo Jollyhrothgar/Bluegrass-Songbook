@@ -1,0 +1,18 @@
+id: ready-teddy
+title: Ready Teddy
+artist: Buddy Holly
+composers:
+- Robert A. Blackwell and John S. Marascalco
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: readyteddylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: it-costs-too-much-to-die
+title: It Costs Too Much To Die
+artist: Lefty Frizzell
+composers:
+- J.A. Balthrop
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itcoststoomuchtodielyricschords.pro
+    imported_at: '2026-01-02'

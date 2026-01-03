@@ -1,0 +1,17 @@
+id: bring-me-my-memories-in-person
+title: Bring Me My Memories In Person
+artist: Cal Smith
+composers:
+- Barbara Day and Jimmy Day
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bringmemymemoriesinpersonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: a-bridge-i-didnt-burn
+title: A Bridge I Didn’t Burn
+artist: Ricky Van Shelton
+composers:
+- Tracy Byrd, Frank Dycus, Billy Yates
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: abridgeididntburnlyricschords.pro
+    imported_at: '2026-01-02'

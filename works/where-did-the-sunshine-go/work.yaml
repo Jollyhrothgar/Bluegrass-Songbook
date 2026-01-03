@@ -1,0 +1,17 @@
+id: where-did-the-sunshine-go
+title: Where Did The Sunshine Go
+artist: Jim Ed Brown
+composers:
+- Boudleaux Bryant and Felice Bryant
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheredidthesunshinegolyricschords.pro
+    imported_at: '2026-01-02'

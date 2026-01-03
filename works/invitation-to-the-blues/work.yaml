@@ -1,0 +1,17 @@
+id: invitation-to-the-blues
+title: Invitation to the Blues
+artist: Ray Price
+composers:
+- Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: invitationtotheblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-don-t-apologize-for-loving-you
+title: I Don't Apologize For Loving You
+artist: Hawkshaw Hawkins
+composers:
+- Velma Burns
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontapologizeforlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

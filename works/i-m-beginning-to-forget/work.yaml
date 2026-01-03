@@ -1,0 +1,16 @@
+id: i-m-beginning-to-forget
+title: I'm Beginning To Forget
+artist: Marty Robbins
+default_key: D
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imbeginningtoforgetlyricschords.pro
+    imported_at: '2026-01-02'

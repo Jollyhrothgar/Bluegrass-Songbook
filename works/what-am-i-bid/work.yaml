@@ -1,0 +1,15 @@
+id: what-am-i-bid
+title: What Am I Bid
+artist: Leroy Van Dyke
+composers:
+- Gene Nash
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatamibidlyricschords.pro
+    imported_at: '2026-01-02'

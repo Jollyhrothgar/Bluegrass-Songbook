@@ -1,0 +1,15 @@
+id: just-enough-to-keep-me-hanging-on
+title: Just Enough To Keep Me Hanging On
+artist: Vern Gosdin
+composers:
+- Ira Allen and Buddy Mize
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justenoughtokeepmehangingonlyricschords.pro
+    imported_at: '2026-01-02'

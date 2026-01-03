@@ -1,0 +1,17 @@
+id: don-t-ask-for-tomorrow
+title: Don't Ask For Tomorrow
+artist: Sonny James
+composers:
+- Bob Tubert and Sonny James
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontaskfortomorrowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: mrs-jones-your-daughter-cried-all-night
+title: Mrs. Jones Your Daughter Cried All Night
+artist: Bobby Bare
+composers:
+- Tom T. Hall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mrsjonesyourdaughtercriedallnightlyricschords.pro
+    imported_at: '2026-01-02'

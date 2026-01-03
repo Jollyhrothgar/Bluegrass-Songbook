@@ -1,0 +1,18 @@
+id: hallelujah-i-love-her-so
+title: Hallelujah I Love Her So
+artist: Conway Twitty
+composers:
+- Ray Charles
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hallelujahilovehersolyricschords.pro
+    imported_at: '2026-01-02'

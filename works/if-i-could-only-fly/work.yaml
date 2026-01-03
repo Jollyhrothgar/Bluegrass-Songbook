@@ -1,0 +1,18 @@
+id: if-i-could-only-fly
+title: If I Could Only Fly
+artist: Merle Haggard
+composers:
+- Michael David Fuller
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ificouldonlyflylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: word-games
+title: Word Games
+artist: Billy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wordgameslyricschords.pro
+    imported_at: '2026-01-02'

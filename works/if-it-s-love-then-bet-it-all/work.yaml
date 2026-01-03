@@ -1,0 +1,17 @@
+id: if-it-s-love-then-bet-it-all
+title: If It's Love (Then Bet It All)
+artist: Ray Price
+composers:
+- J.R. Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitslovethenbetitalllyricschords.pro
+    imported_at: '2026-01-02'

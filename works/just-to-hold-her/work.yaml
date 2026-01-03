@@ -1,0 +1,17 @@
+id: just-to-hold-her
+title: Just To Hold Her
+artist: Gene Watson
+composers:
+- Carson Chamberlain and Tim Mensy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justtoholdherlyricschords.pro
+    imported_at: '2026-01-02'

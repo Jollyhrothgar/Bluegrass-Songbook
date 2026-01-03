@@ -1,0 +1,17 @@
+id: somewhere-between-jesus-and-john-wayne
+title: Somewhere Between Jesus And John Wayne
+artist: The Gaithers
+composers:
+- Benjamin Gaither, Bill Gaither
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somewherebetweenJesusandjohnwaynelyricschords.pro
+    imported_at: '2026-01-02'

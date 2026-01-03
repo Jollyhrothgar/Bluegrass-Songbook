@@ -1,0 +1,15 @@
+id: old-timer-s-waltz
+title: Old Timer's Waltz
+artist: Doyle Lawson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oldtimerswaltzlyricschords.pro
+    imported_at: '2026-01-02'

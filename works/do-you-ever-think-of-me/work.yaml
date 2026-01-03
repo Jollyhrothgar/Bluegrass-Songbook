@@ -1,0 +1,19 @@
+id: do-you-ever-think-of-me
+title: Do You Ever Think Of Me
+artist: Willie Nelson
+composers:
+- John Casper, Harry Kerr, Earl Burtrett
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doyoueverthinkofmelyricschords.pro
+    imported_at: '2026-01-02'

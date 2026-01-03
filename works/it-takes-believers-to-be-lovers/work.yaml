@@ -1,0 +1,19 @@
+id: it-takes-believers-to-be-lovers
+title: It Takes Believers To Be Lovers
+artist: Mickey Gilley
+composers:
+- Mark Wright, Bill Kenner, Warren Peterson
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ittakesbelieverstobeloverslyricschords.pro
+    imported_at: '2026-01-02'

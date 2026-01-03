@@ -1,0 +1,17 @@
+id: another-good-reason
+title: Another Good Reason
+artist: Alan Jackson
+composers:
+- Harley Allen and Carson Chamberlain
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anothergoodreasonlyricschords.pro
+    imported_at: '2026-01-02'

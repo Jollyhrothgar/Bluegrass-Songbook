@@ -1,0 +1,17 @@
+id: she-believes-in-me
+title: She Believes In Me
+artist: Kenny Rogers
+composers:
+- Steve Gibb
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shebelievesinmelyricschords.pro
+    imported_at: '2026-01-02'

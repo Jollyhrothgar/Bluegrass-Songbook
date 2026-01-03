@@ -1,0 +1,19 @@
+id: leave-me
+title: Leave Me
+artist: Ernest Tubb
+composers:
+- Ruby Glasgow
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leavemelyricschords.pro
+    imported_at: '2026-01-02'

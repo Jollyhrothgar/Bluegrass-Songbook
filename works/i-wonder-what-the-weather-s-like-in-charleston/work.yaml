@@ -1,0 +1,17 @@
+id: i-wonder-what-the-weather-s-like-in-charleston
+title: I Wonder What The Weather's Like In Charleston
+artist: Bill Anderson
+composers:
+- Moneen Carpenter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderwhattheweatherslikeincharlestonlyricschords.pro
+    imported_at: '2026-01-02'

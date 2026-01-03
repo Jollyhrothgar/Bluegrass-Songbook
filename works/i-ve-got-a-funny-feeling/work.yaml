@@ -1,0 +1,18 @@
+id: i-ve-got-a-funny-feeling
+title: I've Got A Funny Feeling
+artist: George Strait
+composers:
+- Harlan Howard and Jackson Leap
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotafunnyfeelinglyricschords.pro
+    imported_at: '2026-01-02'

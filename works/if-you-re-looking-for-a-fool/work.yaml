@@ -1,0 +1,17 @@
+id: if-you-re-looking-for-a-fool
+title: If You're Looking For A Fool
+artist: Tommy Overstreet
+composers:
+- Cliff Thomas, Ed Thomas, Robert McRee
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyourelookingforafoollyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: if-my-world-didn-t-have-you
+title: If My World Didn't Have You
+artist: Willie Nelson
+composers:
+- Beth N. Chapman
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifmyworlddidnthaveyoulyricschords.pro
+    imported_at: '2026-01-02'

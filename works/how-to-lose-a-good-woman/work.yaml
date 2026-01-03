@@ -1,0 +1,17 @@
+id: how-to-lose-a-good-woman
+title: How To Lose A Good Woman
+artist: Jim Ed Brown
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howtoloseagoodwomanlyricschords.pro
+    imported_at: '2026-01-02'

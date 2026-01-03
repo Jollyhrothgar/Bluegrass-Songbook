@@ -1,0 +1,19 @@
+id: i-cared-for-you-more-than-i-knew
+title: I Cared For You More Than I Knew
+artist: Ernest Tubb
+composers:
+- Jimmie Rodgers
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icaredforyoumorethaniknewlyricschords.pro
+    imported_at: '2026-01-02'

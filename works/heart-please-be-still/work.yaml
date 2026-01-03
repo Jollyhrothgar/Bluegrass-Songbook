@@ -1,0 +1,15 @@
+id: heart-please-be-still
+title: Heart Please Be Still
+artist: Wilburn Brothers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartpleasebestilllyricschords.pro
+    imported_at: '2026-01-02'

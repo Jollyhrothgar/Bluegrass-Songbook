@@ -1,0 +1,17 @@
+id: give-me-my-flowers-while-i-m-living
+title: Give Me My Flowers While I'm Living
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Louise Certain, Gladys Stacey, Elvin Bigger
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givememyflowerswhileimlivinglyricschords.pro
+    imported_at: '2026-01-02'

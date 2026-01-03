@@ -1,0 +1,17 @@
+id: farther-along-lyrics-and-chords
+title: Farther Along Lyrics and Chords
+artist: Connie Smith
+composers:
+- W.B. Stevens and Jesse R. Baxter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fartheralonglyricsandchords.pro
+    imported_at: '2026-01-02'

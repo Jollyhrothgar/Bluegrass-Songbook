@@ -1,0 +1,15 @@
+id: there-s-a-light-guiding-me
+title: There's A Light Guiding Me
+artist: Doyle Lawson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresalightguidingmelyricschords.pro
+    imported_at: '2026-01-02'

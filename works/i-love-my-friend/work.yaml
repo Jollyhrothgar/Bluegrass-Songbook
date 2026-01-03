@@ -1,0 +1,18 @@
+id: i-love-my-friend
+title: I Love My Friend
+artist: Charlie Rich
+composers:
+- Billy Sherrill and Norris D. Wilson
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovemyfriendlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-shall-be-at-home-with-jesus
+title: I Shall Be At Home With Jesus
+artist: J.D. Crowe
+composers:
+- Jennie Wilson and James David Vaughan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ishallbeathomewithJesuslyricschords.pro
+    imported_at: '2026-01-02'

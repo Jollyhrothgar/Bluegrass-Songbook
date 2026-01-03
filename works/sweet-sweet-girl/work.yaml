@@ -1,0 +1,16 @@
+id: sweet-sweet-girl
+title: Sweet Sweet Girl
+artist: Don Gibson
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetsweetgirllyricschords.pro
+    imported_at: '2026-01-02'

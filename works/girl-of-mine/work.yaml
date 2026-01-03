@@ -1,0 +1,20 @@
+id: girl-of-mine
+title: Girl Of Mine
+artist: Elvis Presley
+composers:
+- Les Reed and Barry Mason
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: girlofminelyricschords.pro
+    imported_at: '2026-01-02'

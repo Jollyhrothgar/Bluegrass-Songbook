@@ -1,0 +1,15 @@
+id: white-freightliner-blues
+title: White Freightliner Blues
+artist: Townes Van Zandt
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

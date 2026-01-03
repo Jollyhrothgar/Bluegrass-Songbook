@@ -1,0 +1,17 @@
+id: by-the-river-of-the-roses
+title: By The River Of The Roses
+artist: George Morgan
+composers:
+- Joe Burke and Marty Symes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bytheriveroftheroseslyricschords.pro
+    imported_at: '2026-01-02'

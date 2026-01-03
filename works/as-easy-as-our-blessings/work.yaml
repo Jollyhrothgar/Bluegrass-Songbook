@@ -1,0 +1,17 @@
+id: as-easy-as-our-blessings
+title: As Easy as Our Blessings
+artist: Tracy Lawrence
+composers:
+- Mark Nesler and Tony Martin
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aseasyasourblessingslyricschords.pro
+    imported_at: '2026-01-02'

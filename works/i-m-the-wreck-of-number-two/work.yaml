@@ -1,0 +1,18 @@
+id: i-m-the-wreck-of-number-two
+title: I'm The Wreck Of Number Two
+artist: Kitty Wells
+composers:
+- Wayne Manning
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imthewreckofnumbertwolyricschords.pro
+    imported_at: '2026-01-02'

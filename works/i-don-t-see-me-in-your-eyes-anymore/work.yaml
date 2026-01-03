@@ -1,0 +1,19 @@
+id: i-don-t-see-me-in-your-eyes-anymore
+title: I Don't See Me In Your Eyes Anymore
+artist: Charlie Rich
+composers:
+- Bennie Benjamin and George Weiss
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontseemeinyoureyesanymorelyricschords.pro
+    imported_at: '2026-01-02'

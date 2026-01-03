@@ -1,0 +1,17 @@
+id: every-day-i-have-to-cry-some
+title: Every Day I Have To Cry Some
+artist: Bob Luman
+composers:
+- Arthur Alexander
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everydayihavetocrysomelyricschords.pro
+    imported_at: '2026-01-02'

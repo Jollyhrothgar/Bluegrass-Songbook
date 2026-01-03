@@ -1,0 +1,19 @@
+id: a-little-good-news
+title: A Little Good News
+artist: Anne Murray
+composers:
+- Charles Black, Rory Bourke, and Thomas Rocco
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittlegoodnewslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: loser-friendly
+title: Loser Friendly
+artist: David Ball
+composers:
+- Paul Craft, Wood Newton, Michael McGrew
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loserfriendlylyricschords.pro
+    imported_at: '2026-01-02'

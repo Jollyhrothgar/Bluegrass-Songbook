@@ -1,0 +1,17 @@
+id: you-re-the-reason-1
+title: You're the Reason
+artist: Johnny Tillotson
+composers:
+- Terry Fell, Bobby Edwards, Fred Henley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethereasonlyricschords.pro
+    imported_at: '2026-01-02'

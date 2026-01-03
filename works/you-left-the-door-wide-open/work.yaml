@@ -1,0 +1,17 @@
+id: you-left-the-door-wide-open
+title: You Left The Door Wide Open
+artist: Bob Luman
+composers:
+- Glenn Sutton and Arthur Leo Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youleftthedoorwideopenlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: god-will
+title: God Will
+artist: Patty Loveless
+composers:
+- Lyle Lovett
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godwilllyricsandchords.pro
+    imported_at: '2026-01-02'

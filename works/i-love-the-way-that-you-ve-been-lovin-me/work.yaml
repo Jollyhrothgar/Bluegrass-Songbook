@@ -1,0 +1,15 @@
+id: i-love-the-way-that-you-ve-been-lovin-me
+title: I Love The Way That You've Been Lovin' Me
+artist: Roy Drusky
+composers:
+- Ricci Mareno and Gordon Galbraith
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovethewaythatyouvebeenlovinmelyricschords.pro
+    imported_at: '2026-01-02'

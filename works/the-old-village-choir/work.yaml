@@ -1,0 +1,15 @@
+id: the-old-village-choir
+title: The Old Village Choir
+artist: Jim Ed Brown
+composers:
+- Guy Singer
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldvillagechoirlyricschords.pro
+    imported_at: '2026-01-02'

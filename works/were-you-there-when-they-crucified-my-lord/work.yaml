@@ -1,0 +1,16 @@
+id: were-you-there-when-they-crucified-my-lord
+title: Were You There When They Crucified My Lord
+artist: Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wereyoutherewhentheycrucifiedmylordlyricschords.pro
+    imported_at: '2026-01-02'

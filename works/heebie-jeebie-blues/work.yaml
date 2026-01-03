@@ -1,0 +1,15 @@
+id: heebie-jeebie-blues
+title: Heebie Jeebie Blues
+artist: Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heebiejeebieblueslyricschords.pro
+    imported_at: '2026-01-02'

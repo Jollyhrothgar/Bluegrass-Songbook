@@ -1,0 +1,17 @@
+id: believe-what-you-say
+title: Believe What You Say
+artist: Ricky Nelson
+composers:
+- Johnny and Dorsey Burnette
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: believewhatyousaylyricschords.pro
+    imported_at: '2026-01-02'

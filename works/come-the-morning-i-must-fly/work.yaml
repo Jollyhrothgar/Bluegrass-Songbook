@@ -1,0 +1,17 @@
+id: come-the-morning-i-must-fly
+title: Come The Morning I Must Fly
+artist: Johnny Lee
+composers:
+- Danny Epps and Bettye Holman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comethemorningimustflylyricschords.pro
+    imported_at: '2026-01-02'

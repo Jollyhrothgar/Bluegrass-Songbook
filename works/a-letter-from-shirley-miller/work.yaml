@@ -1,0 +1,17 @@
+id: a-letter-from-shirley-miller
+title: A Letter From Shirley Miller
+artist: Statler Brothers
+composers:
+- Harold Reid, Philip E. Balsley, Don S. Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aletterfromshirleymillerlyricschords.pro
+    imported_at: '2026-01-02'

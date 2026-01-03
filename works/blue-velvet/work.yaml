@@ -1,0 +1,18 @@
+id: blue-velvet
+title: Blue Velvet
+artist: Brenda Lee
+composers:
+- Bernie Wayne and Lee Morris
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluevelvetlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: fifty-miles-of-elbow-room
+title: Fifty Miles Of Elbow Room
+artist: Hank Locklin
+composers:
+- Herbert Buffum
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fiftymilesofelbowroomlyricschords.pro
+    imported_at: '2026-01-02'

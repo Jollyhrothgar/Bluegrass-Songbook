@@ -1,0 +1,22 @@
+id: the-ten-commandments
+title: The Ten Commandments
+artist: Johnny Cash
+composers:
+- Lew DeWitt
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetencommandmentslyricschords.pro
+    imported_at: '2026-01-02'

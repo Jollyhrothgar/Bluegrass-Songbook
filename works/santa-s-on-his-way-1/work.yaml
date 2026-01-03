@@ -1,0 +1,18 @@
+id: santa-s-on-his-way-1
+title: Santa's On His Way
+artist: Kitty Wells
+composers:
+- Bill Phillips and Nita Phillips
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: santasonhiswaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: barbara-don-t-let-me-be-the-last-to-know
+title: Barbara Don't Let Me Be the Last to Know
+artist: Mel Street
+composers:
+- Bob McDill and Wayland Holyfield
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: barbaradontletmebethelasttoknowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: a-living-prayer
+title: A Living Prayer
+artist: Alison Krauss
+composers:
+- Ron Block
+default_key: G
+tags:
+- Bluegrass
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alivingprayerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: if-it-ain-t-broke-don-t-fix-it
+title: If It Ain't Broke Don't Fix It
+artist: John Anderson
+composers:
+- John Anderson and Tony Stampley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitaintbrokedontfixitlyricschords.pro
+    imported_at: '2026-01-02'

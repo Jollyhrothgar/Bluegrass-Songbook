@@ -1,0 +1,17 @@
+id: that-makes-two-of-us-2
+title: That Makes Two Of Us
+artist: Reba McEntire
+composers:
+- Jerry Fuller
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatmakestwoofuslyricswithchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: walking-on-new-grass
+title: Walking On New Grass
+artist: Jack Greene
+composers:
+- Ray Pennington
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkingonnewgrasslyricschords.pro
+    imported_at: '2026-01-02'

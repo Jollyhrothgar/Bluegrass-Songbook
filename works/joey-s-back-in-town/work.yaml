@@ -1,0 +1,17 @@
+id: joey-s-back-in-town
+title: Joey's Back In Town
+artist: Billy Walker
+composers:
+- Bobby Bare and Lance Guynes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: joeysbackintownlyricschords.pro
+    imported_at: '2026-01-02'

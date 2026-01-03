@@ -1,0 +1,15 @@
+id: walkin-with-the-blues
+title: Walkin' With The Blues
+artist: Sonny James
+composers:
+- Carole Smith and Sonny James
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkinwiththeblueslyricschords.pro
+    imported_at: '2026-01-02'

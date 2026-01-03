@@ -1,0 +1,18 @@
+id: more-than-i-can-say
+title: More Than I Can Say
+artist: Sammy Kershaw
+composers:
+- Sonny Curtis and Jerry Allison
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: morethanicansaylyricschords.pro
+    imported_at: '2026-01-02'

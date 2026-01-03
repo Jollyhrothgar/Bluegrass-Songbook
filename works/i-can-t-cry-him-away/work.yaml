@@ -1,0 +1,17 @@
+id: i-can-t-cry-him-away
+title: I Can't Cry Him Away
+artist: Jean Shepard
+composers:
+- Neal Merritt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantcryhimawaylyricschords.pro
+    imported_at: '2026-01-02'

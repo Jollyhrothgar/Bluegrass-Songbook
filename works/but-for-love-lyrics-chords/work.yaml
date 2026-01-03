@@ -1,0 +1,17 @@
+id: but-for-love-lyrics-chords
+title: But For Love Lyrics Chords
+artist: Eddy Arnold
+composers:
+- Terry Cashman, Gene Pistilli, T.P. West
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: butforlovelyricschords.pro
+    imported_at: '2026-01-02'

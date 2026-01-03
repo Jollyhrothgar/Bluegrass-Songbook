@@ -1,0 +1,15 @@
+id: i-wouldn-t-have-you-any-other-way
+title: I Wouldn't Have You Any Other Way
+artist: George Morgan
+composers:
+- Chuck Howard
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldnthaveyouanyotherwaylyricschords.pro
+    imported_at: '2026-01-02'

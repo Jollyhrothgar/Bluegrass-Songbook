@@ -1,0 +1,17 @@
+id: imagine-that
+title: Imagine That
+artist: Don Williams
+composers:
+- Kieran Kane and Jamie O'Hara
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imaginethatlyricsandchords.pro
+    imported_at: '2026-01-02'

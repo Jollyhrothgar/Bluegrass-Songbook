@@ -1,0 +1,19 @@
+id: try-it-again
+title: Try It Again
+artist: Mel Tillis
+composers:
+- Earl Singleton
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tryitagainlyricschords.pro
+    imported_at: '2026-01-02'

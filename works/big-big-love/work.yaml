@@ -1,0 +1,17 @@
+id: big-big-love
+title: Big Big Love
+artist: Wynn Stewart
+composers:
+- Wynn Stewart and Ray Carroll
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigbiglovelyricschords.pro
+    imported_at: '2026-01-02'

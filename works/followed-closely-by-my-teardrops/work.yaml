@@ -1,0 +1,17 @@
+id: followed-closely-by-my-teardrops
+title: Followed Closely By My Teardrops
+artist: Hank Locklin
+composers:
+- Fred Tobias and Paul Evans
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: followedcloselybymyteardropslyricschords.pro
+    imported_at: '2026-01-02'

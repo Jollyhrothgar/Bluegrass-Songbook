@@ -1,0 +1,18 @@
+id: don-t-put-your-hurt-in-my-heart
+title: Don't Put Your Hurt In My Heart
+artist: Conway Twitty
+composers:
+- Mickey Jaco
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontputyourhurtinmyheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: rock-a-bye-rock
+title: Rock a Bye Rock
+artist: Buddy Holly
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rockabyerocklyricschords.pro
+    imported_at: '2026-01-02'

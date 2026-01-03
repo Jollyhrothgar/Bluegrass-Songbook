@@ -1,0 +1,17 @@
+id: i-believe-he-died-for-me
+title: I Believe He Died For Me
+artist: The Cathedrals
+composers:
+- Colbert Croft and Joyce Croft
+default_key: C
+tags:
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibelievehediedformelyricschords.pro
+    imported_at: '2026-01-02'

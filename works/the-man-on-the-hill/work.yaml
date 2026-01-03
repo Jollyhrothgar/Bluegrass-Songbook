@@ -1,0 +1,20 @@
+id: the-man-on-the-hill
+title: The Man On The Hill
+artist: Johnny Cash
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themanonthehilllyricschords.pro
+    imported_at: '2026-01-02'

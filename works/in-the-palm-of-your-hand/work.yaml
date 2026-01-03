@@ -1,0 +1,15 @@
+id: in-the-palm-of-your-hand
+title: In The Palm Of Your Hand
+artist: Buck Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthepalmofyourhandlyricschords.pro
+    imported_at: '2026-01-02'

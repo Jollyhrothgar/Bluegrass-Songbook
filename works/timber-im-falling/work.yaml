@@ -1,0 +1,15 @@
+id: timber-im-falling
+title: Timber I’m Falling
+artist: Ferlin Husky
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timberimfallinglyricschords.pro
+    imported_at: '2026-01-02'

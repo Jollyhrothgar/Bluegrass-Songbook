@@ -1,0 +1,17 @@
+id: it-s-a-sin
+title: It's A Sin
+artist: Eddy Arnold
+composers:
+- Fred Rose and Zeb Turner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsasinlyricsandchords.pro
+    imported_at: '2026-01-02'

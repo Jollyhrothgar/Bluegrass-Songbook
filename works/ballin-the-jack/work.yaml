@@ -1,0 +1,19 @@
+id: ballin-the-jack
+title: Ballin' The Jack
+artist: Brenda Lee
+composers:
+- Jim Burris and Chris Smith
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ballinthejacklyricschords.pro
+    imported_at: '2026-01-02'

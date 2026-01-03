@@ -1,0 +1,17 @@
+id: brother-to-the-blues-1
+title: Brother To The Blues
+artist: George Jones
+composers:
+- Edwin Rowell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brothertotheblueslyricschords.pro
+    imported_at: '2026-01-02'

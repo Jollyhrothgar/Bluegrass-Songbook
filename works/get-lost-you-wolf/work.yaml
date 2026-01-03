@@ -1,0 +1,17 @@
+id: get-lost-you-wolf
+title: Get Lost You Wolf
+artist: Hylo Brown and The Timberliners
+composers:
+- Frank Brown Jr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: getlostyouwolflyricschords.pro
+    imported_at: '2026-01-02'

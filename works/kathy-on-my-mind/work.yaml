@@ -1,0 +1,15 @@
+id: kathy-on-my-mind
+title: Kathy On My Mind
+artist: Billy Walker
+composers:
+- Orville Couch and Eddie McDuff
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kathyonmymindlyricschords.pro
+    imported_at: '2026-01-02'

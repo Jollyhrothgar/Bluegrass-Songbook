@@ -1,0 +1,17 @@
+id: nobody-s-baby-but-mine
+title: Nobody's Baby But Mine
+artist: Jeanne Pruett
+composers:
+- Jimmie Davis and Jeanne Pruett
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodysbabybutminelyricschords.pro
+    imported_at: '2026-01-02'

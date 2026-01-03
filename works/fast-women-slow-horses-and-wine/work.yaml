@@ -1,0 +1,15 @@
+id: fast-women-slow-horses-and-wine
+title: Fast Women Slow Horses And Wine
+artist: Charlie Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fastwomenslowhorsesandwinelyricschords.pro
+    imported_at: '2026-01-02'

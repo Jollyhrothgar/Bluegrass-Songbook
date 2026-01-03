@@ -1,0 +1,17 @@
+id: take-me-with-you-when-you-go
+title: Take Me With You When You Go
+artist: Tracy Byrd
+composers:
+- Mark Nesler and Jennifer Hanson
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemewithyouwhenyougolyricschords.pro
+    imported_at: '2026-01-02'

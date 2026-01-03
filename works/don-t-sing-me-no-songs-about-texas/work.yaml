@@ -1,0 +1,15 @@
+id: don-t-sing-me-no-songs-about-texas
+title: Don't Sing Me No Songs About Texas
+artist: Leona Williams
+composers:
+- Merle R. Haggard and Leona Williams
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontsingmenosongsabouttexaslyricschords.pro
+    imported_at: '2026-01-02'

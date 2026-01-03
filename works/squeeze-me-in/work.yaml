@@ -1,0 +1,18 @@
+id: squeeze-me-in
+title: Squeeze Me In
+artist: Garth Brooks
+composers:
+- Gary Nicholson and Delbert McClinton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: squeezemeinlyricschords.pro
+    imported_at: '2026-01-02'

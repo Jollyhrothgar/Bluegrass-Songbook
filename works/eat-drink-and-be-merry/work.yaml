@@ -1,0 +1,18 @@
+id: eat-drink-and-be-merry
+title: Eat Drink And Be Merry
+artist: Porter Wagoner
+composers:
+- Celia Ferguson and Sandra Ferguson
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eatdrinkandbemerrylyricschords.pro
+    imported_at: '2026-01-02'

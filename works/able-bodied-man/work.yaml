@@ -1,0 +1,18 @@
+id: able-bodied-man
+title: Able Bodied Man
+artist: Charley Pride
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ablebodiedmanlyricschords.pro
+    imported_at: '2026-01-02'

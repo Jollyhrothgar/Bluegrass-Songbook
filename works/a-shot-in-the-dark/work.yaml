@@ -1,0 +1,15 @@
+id: a-shot-in-the-dark
+title: A Shot In The Dark
+artist: George Morgan
+composers:
+- Roy Bennett and Sid Tepper
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ashotinthedarklyricschords.pro
+    imported_at: '2026-01-02'

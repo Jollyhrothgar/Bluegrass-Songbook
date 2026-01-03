@@ -1,0 +1,17 @@
+id: heartbroken
+title: Heartbroken
+artist: Cowboy Copas
+composers:
+- Clyde Pitts
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartbrokenlyricsandchords.pro
+    imported_at: '2026-01-02'

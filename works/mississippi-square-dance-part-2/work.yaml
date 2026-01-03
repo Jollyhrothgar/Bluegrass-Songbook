@@ -1,0 +1,17 @@
+id: mississippi-square-dance-part-2
+title: Mississippi Square Dance--Part 2
+artist: Traditional
+composers:
+- Biography:Freeny's Barn Dance Band
+default_key: A
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

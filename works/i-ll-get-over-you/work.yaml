@@ -1,0 +1,17 @@
+id: i-ll-get-over-you
+title: I'll Get Over You
+artist: Crystal Gayle
+composers:
+- Richard Leigh
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illgetoveryoulyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: if-i-ever-see-you-again
+title: If I Ever See You Again
+artist: Anne Murray
+composers:
+- Bill Rice
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifieverseeyouagainlyricschords.pro
+    imported_at: '2026-01-02'

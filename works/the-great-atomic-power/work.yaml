@@ -1,0 +1,20 @@
+id: the-great-atomic-power
+title: The Great Atomic Power
+artist: The Louvin Brothers
+composers:
+- Buddy Bain, Charles Louvin, Ira Louvin
+default_key: G
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegreatatomicpowerlyricschords.pro
+    imported_at: '2026-01-02'

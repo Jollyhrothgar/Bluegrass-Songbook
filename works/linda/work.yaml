@@ -1,0 +1,15 @@
+id: linda
+title: Linda
+artist: Jim Reeves
+composers:
+- Jack Lawrence
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lindalyricschords.pro
+    imported_at: '2026-01-02'

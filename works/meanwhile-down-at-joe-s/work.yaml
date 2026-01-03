@@ -1,0 +1,18 @@
+id: meanwhile-down-at-joe-s
+title: Meanwhile Down At Joe's
+artist: Kitty Wells
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meanwhiledownatjoeslyricschords.pro
+    imported_at: '2026-01-02'

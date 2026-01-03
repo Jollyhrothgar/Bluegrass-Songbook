@@ -1,0 +1,17 @@
+id: changes-coming-on
+title: Changes Coming On
+artist: Alabama
+composers:
+- Dean Dillon, Buddy Cannon, Jimmy Darrell
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: changescomingonlyricschords.pro
+    imported_at: '2026-01-02'

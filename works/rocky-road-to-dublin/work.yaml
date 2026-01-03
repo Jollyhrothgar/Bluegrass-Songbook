@@ -1,0 +1,17 @@
+id: rocky-road-to-dublin
+title: Rocky Road to Dublin
+artist: Traditional
+composers:
+- Biography:Kenny Baker
+default_key: G
+tags:
+- Instrumental
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

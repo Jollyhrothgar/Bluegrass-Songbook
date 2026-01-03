@@ -1,0 +1,15 @@
+id: high-noon
+title: High Noon
+artist: Moe Bandy
+composers:
+- Ned Washington and Dimitri Tiomkin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highnoonlyricschords.pro
+    imported_at: '2026-01-02'

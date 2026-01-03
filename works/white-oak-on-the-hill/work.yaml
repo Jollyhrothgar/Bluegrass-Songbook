@@ -1,0 +1,17 @@
+id: white-oak-on-the-hill
+title: White Oak On The Hill
+artist: Boone Creek Grass
+composers:
+- Mike Todd
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whiteoakonthehilllyricschords.pro
+    imported_at: '2026-01-02'

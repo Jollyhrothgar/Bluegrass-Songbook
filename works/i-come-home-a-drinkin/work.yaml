@@ -1,0 +1,17 @@
+id: i-come-home-a-drinkin
+title: I Come Home A Drinkin'
+artist: Cal Smith
+composers:
+- Loretta Lynn and Peggy Sue Wells
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icomehomeadrinkinlyricschords.pro
+    imported_at: '2026-01-02'

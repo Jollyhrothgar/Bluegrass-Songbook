@@ -1,0 +1,17 @@
+id: my-san-antonio-mamma-lyrics-and-chords
+title: My San Antonio Mamma Lyrics and Chords
+artist: Hank Snow
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mysanantoniomammalyricschords.pro
+    imported_at: '2026-01-02'

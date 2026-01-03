@@ -1,0 +1,18 @@
+id: a-rootin-tootin-santa-claus
+title: A Rootin’ Tootin’ Santa Claus
+artist: Tennessee Ernie Ford
+composers:
+- Oakley Haldeman and Peter Tinturin
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: arootintootinsantaclauslyricschords.pro
+    imported_at: '2026-01-02'

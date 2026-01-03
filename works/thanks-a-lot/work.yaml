@@ -1,0 +1,22 @@
+id: thanks-a-lot
+title: Thanks A Lot
+artist: Johnny Cash
+composers:
+- Charlie Rich
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thanksalotlyricschords.pro
+    imported_at: '2026-01-02'

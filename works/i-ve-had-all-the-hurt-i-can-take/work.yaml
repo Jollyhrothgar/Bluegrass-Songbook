@@ -1,0 +1,15 @@
+id: i-ve-had-all-the-hurt-i-can-take
+title: I've Had All The Hurt I Can Take
+artist: Johnny Rodriguez
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivehadallthehurticantakelyricschords.pro
+    imported_at: '2026-01-02'

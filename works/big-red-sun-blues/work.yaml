@@ -1,0 +1,17 @@
+id: big-red-sun-blues
+title: Big Red Sun Blues
+artist: Johnny Rodriguez
+composers:
+- Lucinda Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigredsunblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: may-you-never
+title: May You Never
+artist: The Bellamy Brothers
+composers:
+- John Martyn
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mayyouneverlyricschords.pro
+    imported_at: '2026-01-02'

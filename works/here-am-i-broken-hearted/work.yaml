@@ -1,0 +1,15 @@
+id: here-am-i-broken-hearted
+title: Here Am I Broken Hearted
+artist: Ferlin Husky
+composers:
+- Buddy DeSylva, Lew Brown, Ray Henderson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hereamibrokenheartedlyricschords.pro
+    imported_at: '2026-01-02'

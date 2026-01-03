@@ -1,0 +1,17 @@
+id: you-don-t-wear-blue-so-well
+title: You Don't Wear Blue So Well
+artist: Statler Brothers
+composers:
+- Kim Reid, Karmen Reid and Kodi Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdontwearbluesowelllyricschords.pro
+    imported_at: '2026-01-02'

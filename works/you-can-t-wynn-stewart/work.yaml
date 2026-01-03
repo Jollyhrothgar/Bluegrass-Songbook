@@ -1,0 +1,17 @@
+id: you-can-t-wynn-stewart
+title: You Can't Wynn Stewart
+artist: Wynn Stewart
+composers:
+- Wynn Stewart and William Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantwynnstewartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: bartender
+title: Bartender
+artist: Ernest Tubb
+composers:
+- Loretta Lynn and Maggie Vaughn
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bartenderlyricschords.pro
+    imported_at: '2026-01-02'

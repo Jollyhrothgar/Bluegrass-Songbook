@@ -1,0 +1,17 @@
+id: god-gave-noah-the-rainbow-sign
+title: God Gave Noah the Rainbow Sign
+artist: Earl Scruggs and Lester Flatt
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godgavenoahtherainbowsignlyricschords.pro
+    imported_at: '2026-01-02'

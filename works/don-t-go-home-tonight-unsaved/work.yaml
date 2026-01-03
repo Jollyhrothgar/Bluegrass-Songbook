@@ -1,0 +1,17 @@
+id: don-t-go-home-tonight-unsaved
+title: Don't Go Home Tonight Unsaved
+artist: Wilburn Brothers
+composers:
+- Garry D. Rector, John F. Gleen Jr.
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontgohometonightunsavedlyricschords.pro
+    imported_at: '2026-01-02'

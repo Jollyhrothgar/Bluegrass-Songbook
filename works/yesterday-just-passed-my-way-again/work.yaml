@@ -1,0 +1,18 @@
+id: yesterday-just-passed-my-way-again
+title: Yesterday Just Passed My Way Again
+artist: Lefty Frizzell
+composers:
+- Sanger D. Schafer, Darlene Shafer
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesterdayjustpassedmywayagainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: my-heart-is-a-house
+title: My Heart Is A House
+artist: Charley Pride
+composers:
+- Ray Winkler, Billy Deaton, John Hathcock
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartisahouselyricschords.pro
+    imported_at: '2026-01-02'

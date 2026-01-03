@@ -1,0 +1,17 @@
+id: i-know-the-way-by-broken-heart
+title: I Know The Way By Broken Heart
+artist: Ricky Van Shelton
+composers:
+- Craig Wiseman and Ronnie Samoset
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowthewaybybrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

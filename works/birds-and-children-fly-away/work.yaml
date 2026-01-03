@@ -1,0 +1,17 @@
+id: birds-and-children-fly-away
+title: Birds And Children Fly Away
+artist: Cal Smith
+composers:
+- Daniel Hoffman and Ray Pennington
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: birdsandchildrenflyawaylyricschords.pro
+    imported_at: '2026-01-02'

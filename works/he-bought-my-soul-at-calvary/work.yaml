@@ -1,0 +1,17 @@
+id: he-bought-my-soul-at-calvary
+title: He Bought My Soul At Calvary
+artist: Slim Whitman
+composers:
+- Stuart Hamblen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heboughtmysoulatcalvarylyricschords.pro
+    imported_at: '2026-01-02'

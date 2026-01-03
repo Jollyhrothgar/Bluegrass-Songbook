@@ -1,0 +1,17 @@
+id: four-walls-1
+title: Four Walls
+artist: Jim Reeves
+composers:
+- George Campbell and Marvin Moore
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fourwallslyricschords.pro
+    imported_at: '2026-01-02'

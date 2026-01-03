@@ -1,0 +1,17 @@
+id: i-wish-i-may-i-wish-i-might
+title: I Wish I May I Wish I Might
+artist: George Morgan
+composers:
+- Joe Allison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishimayiwishimightlyricschords.pro
+    imported_at: '2026-01-02'

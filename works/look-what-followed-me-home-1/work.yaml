@@ -1,0 +1,15 @@
+id: look-what-followed-me-home-1
+title: Look What Followed Me Home
+artist: David Ball
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookwhatfollowedmehomelyricschords.pro
+    imported_at: '2026-01-02'

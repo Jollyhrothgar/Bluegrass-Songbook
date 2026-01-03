@@ -1,0 +1,17 @@
+id: daddy-and-the-wine
+title: Daddy And The Wine
+artist: Porter Wagoner
+composers:
+- Gene Crysler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: daddyandthewinelyricschords.pro
+    imported_at: '2026-01-02'

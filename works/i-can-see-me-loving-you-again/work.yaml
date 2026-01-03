@@ -1,0 +1,17 @@
+id: i-can-see-me-loving-you-again
+title: I Can See Me Loving You Again
+artist: Johnny Paycheck
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanseemelovingyouagainlyricschords.pro
+    imported_at: '2026-01-02'

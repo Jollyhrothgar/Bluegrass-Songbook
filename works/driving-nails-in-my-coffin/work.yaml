@@ -1,0 +1,19 @@
+id: driving-nails-in-my-coffin
+title: Driving Nails In My Coffin
+artist: Ernest Tubb
+composers:
+- Jerry Irby
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drivingnailsinmycoffinlyricschords.pro
+    imported_at: '2026-01-02'

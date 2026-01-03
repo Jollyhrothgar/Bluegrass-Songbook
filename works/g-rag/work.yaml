@@ -1,0 +1,18 @@
+id: g-rag
+title: G Rag
+artist: Traditional
+composers:
+- Biography:Andrew Baxter
+default_key: B
+tags:
+- Jazzy
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

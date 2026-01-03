@@ -1,0 +1,17 @@
+id: you-re-the-reason-god-made-oklahoma
+title: You're The Reason God Made Oklahoma
+artist: David Frizzell & Shelly West
+composers:
+- Sandy Pinkard, Larry Collins, Boudleaux Bryant and Felice Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethereasongodmadeoklahomalyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: the-last-cheater-s-waltz
+title: The Last Cheater's Waltz
+artist: Emmylou Harris
+composers:
+- Sonny Throckmorton
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelastcheaterswaltzlyricsandchords.pro
+    imported_at: '2026-01-02'

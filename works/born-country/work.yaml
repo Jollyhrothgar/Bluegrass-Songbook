@@ -1,0 +1,17 @@
+id: born-country
+title: Born Country
+artist: Alabama
+composers:
+- John Schweers and Byron Hill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: borncountrylyricschords.pro
+    imported_at: '2026-01-02'

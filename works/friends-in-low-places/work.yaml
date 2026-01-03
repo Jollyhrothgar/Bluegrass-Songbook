@@ -1,0 +1,18 @@
+id: friends-in-low-places
+title: Friends In Low Places
+artist: Garth Brooks
+composers:
+- Dewayne Blackwell and Earl Bud Lee
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: friendsinlowplaceslyricschords.pro
+    imported_at: '2026-01-02'

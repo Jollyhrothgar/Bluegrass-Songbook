@@ -1,0 +1,17 @@
+id: if-i-ever-need-a-lady-i-ll-call-you
+title: If I Ever Need A Lady I'll Call You
+artist: Claude Gray
+composers:
+- Gene Crysler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifieverneedaladyillcallyoulyricschords.pro
+    imported_at: '2026-01-02'

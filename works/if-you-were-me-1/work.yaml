@@ -1,0 +1,17 @@
+id: if-you-were-me-1
+title: If You Were Me
+artist: Rhonda Vincent
+composers:
+- Troy Seals and Graham Hamilton Lyle
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouweremelyricschords.pro
+    imported_at: '2026-01-02'

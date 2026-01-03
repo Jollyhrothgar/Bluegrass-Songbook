@@ -1,0 +1,17 @@
+id: no-problem
+title: No Problem
+artist: Don Williams
+composers:
+- Don Schlitz and Billy Livsey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noproblemlyricschords.pro
+    imported_at: '2026-01-02'

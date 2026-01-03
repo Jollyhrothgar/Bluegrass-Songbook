@@ -1,0 +1,19 @@
+id: the-beginning-of-the-end-1
+title: The Beginning Of The End
+artist: Loretta Lynn
+composers:
+- Betty Sue Perry
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebeginningoftheendlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: let-s-wait-a-little-longer
+title: Let's Wait A Little Longer
+artist: Ernest Tubb
+composers:
+- Billy Sherrill and Curly Putman
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letswaitalittlelongerlyricschords.pro
+    imported_at: '2026-01-02'

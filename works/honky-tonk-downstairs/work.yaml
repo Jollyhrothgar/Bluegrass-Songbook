@@ -1,0 +1,18 @@
+id: honky-tonk-downstairs
+title: Honky Tonk Downstairs
+artist: George Strait
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkdownstairslyricschords.pro
+    imported_at: '2026-01-02'

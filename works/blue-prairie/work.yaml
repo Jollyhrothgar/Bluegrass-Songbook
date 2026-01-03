@@ -1,0 +1,17 @@
+id: blue-prairie
+title: Blue Prairie
+artist: Rex Allen Jr.
+composers:
+- Bob Nolan and Tim Spencer
+default_key: Am
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blueprairielyricschords.pro
+    imported_at: '2026-01-02'

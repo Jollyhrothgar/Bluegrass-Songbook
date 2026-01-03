@@ -1,0 +1,17 @@
+id: you-can-t-take-it-with-you-when-you-go-1
+title: You Can't Take It With You When You Go
+artist: Gene Watson
+composers:
+- Larry Cordle, Larry Shell, Bert Colwell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanttakeitwithyouwhenyougolyricschords.pro
+    imported_at: '2026-01-02'

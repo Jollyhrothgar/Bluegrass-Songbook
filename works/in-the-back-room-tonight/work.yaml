@@ -1,0 +1,17 @@
+id: in-the-back-room-tonight
+title: In The Back Room Tonight
+artist: Carl Smith
+composers:
+- Ray Bodkin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthebackroomtonightlyricschords.pro
+    imported_at: '2026-01-02'

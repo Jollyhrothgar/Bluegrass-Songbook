@@ -1,0 +1,17 @@
+id: two-whoops-and-a-hollar
+title: Two Whoops And A Hollar
+artist: Jean Shepard
+composers:
+- Joe Franklin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twowhoopsandahollarlyricschords.pro
+    imported_at: '2026-01-02'

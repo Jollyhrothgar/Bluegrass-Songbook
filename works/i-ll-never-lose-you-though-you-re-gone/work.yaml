@@ -1,0 +1,17 @@
+id: i-ll-never-lose-you-though-you-re-gone
+title: I'll Never Lose You Though You're Gone
+artist: Ernest Tubb
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverloseyouthoughyouregonelyricschords.pro
+    imported_at: '2026-01-02'

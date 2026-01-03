@@ -1,0 +1,15 @@
+id: wino-s-prayer
+title: Wino's Prayer
+artist: Gene Watson
+composers:
+- Dave Kirby and Icie Berg Kirby
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: winosprayerlyricschords.pro
+    imported_at: '2026-01-02'

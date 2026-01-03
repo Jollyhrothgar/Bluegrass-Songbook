@@ -1,0 +1,17 @@
+id: if-you-don-t-know-your-roses
+title: If You Don't Know Your Roses
+artist: Darrell McCall
+composers:
+- Royce Glenn Sutton and A.L. Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoudontknowyourroseslyricschords.pro
+    imported_at: '2026-01-02'

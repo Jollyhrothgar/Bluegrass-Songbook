@@ -1,0 +1,17 @@
+id: sorrow-on-the-rocks
+title: Sorrow On The Rocks
+artist: Porter Wagoner
+composers:
+- Tony Moon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sorrowontherockslyricschords.pro
+    imported_at: '2026-01-02'

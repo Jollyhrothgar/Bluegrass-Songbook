@@ -1,0 +1,18 @@
+id: heaven-will-be-my-home
+title: Heaven Will Be My Home
+artist: Kitty Wells
+composers:
+- A.B. Phillips
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavenwillbemyhomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: boogie-till-the-cows-come-home
+title: Boogie Till The Cows Come Home
+artist: Clay Walker
+composers:
+- Clay Blaker and Roger Brown
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: boogietillthecowscomehomelyricschords.pro
+    imported_at: '2026-01-02'

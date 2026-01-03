@@ -1,0 +1,18 @@
+id: i-ve-learned-to-live
+title: I've Learned To Live
+artist: Tanya Tucker
+composers:
+- Dean Dillon and Frank Dycus
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivelearnedtolivelyricschords.pro
+    imported_at: '2026-01-02'

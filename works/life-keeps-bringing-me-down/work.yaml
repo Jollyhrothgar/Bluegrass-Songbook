@@ -1,0 +1,17 @@
+id: life-keeps-bringing-me-down
+title: Life Keeps Bringing Me Down
+artist: Alan Jackson
+composers:
+- Al Anderson and Shawn Camp
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lifekeepsbringingmedownlyricschords.pro
+    imported_at: '2026-01-02'

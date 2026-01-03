@@ -1,0 +1,17 @@
+id: beyond-the-last-mile-1
+title: Beyond The Last Mile
+artist: Johnny Paycheck
+composers:
+- Rex Griffin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beyondthelastmilelyricschords.pro
+    imported_at: '2026-01-02'

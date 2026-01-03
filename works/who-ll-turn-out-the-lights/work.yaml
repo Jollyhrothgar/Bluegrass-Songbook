@@ -1,0 +1,17 @@
+id: who-ll-turn-out-the-lights
+title: Who'll Turn Out The Lights
+artist: Mel Street
+composers:
+- Wayne Kemp and Mack Vickery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whollturnoutthelightslyricschords.pro
+    imported_at: '2026-01-02'

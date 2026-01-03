@@ -1,0 +1,15 @@
+id: i-will-follow-you
+title: I Will Follow You
+artist: Ricky Nelson
+composers:
+- Arthur Altman and Norman Gimbel
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwillfollowyoulyricschords.pro
+    imported_at: '2026-01-02'

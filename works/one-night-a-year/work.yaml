@@ -1,0 +1,15 @@
+id: one-night-a-year
+title: One Night A Year
+artist: Barbara Mandrell
+composers:
+- C Bannon Royal, John Bettis, Royal C Bannon
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onenightayearlyricschords.pro
+    imported_at: '2026-01-02'

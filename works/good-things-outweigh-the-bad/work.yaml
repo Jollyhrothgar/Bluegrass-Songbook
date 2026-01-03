@@ -1,0 +1,17 @@
+id: good-things-outweigh-the-bad
+title: Good Things Outweigh The Bad
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Josh Graves and Jake Lambert
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodthingsoutweighthebadlyricschords.pro
+    imported_at: '2026-01-02'

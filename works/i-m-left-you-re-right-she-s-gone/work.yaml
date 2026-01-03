@@ -1,0 +1,21 @@
+id: i-m-left-you-re-right-she-s-gone
+title: I'm Left You're Right She's Gone
+artist: Elvis Presley
+composers:
+- Stan Kesler and Bill Taylor
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imleftyourerightshesgonelyricschords.pro
+    imported_at: '2026-01-02'

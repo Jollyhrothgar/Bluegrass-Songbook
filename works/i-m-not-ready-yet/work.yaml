@@ -1,0 +1,17 @@
+id: i-m-not-ready-yet
+title: I'm Not Ready Yet
+artist: George Jones
+composers:
+- Tom T. Hall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotreadyyetlyricsandchords.pro
+    imported_at: '2026-01-02'

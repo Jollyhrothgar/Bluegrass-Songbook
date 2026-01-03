@@ -1,0 +1,17 @@
+id: it-s-better-than-going-home-alone
+title: It's Better Than Going Home Alone
+artist: Moe Bandy
+composers:
+- Guy Coleman and Truman Stearbes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsbetterthangoinghomealonelyricschords.pro
+    imported_at: '2026-01-02'

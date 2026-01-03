@@ -1,0 +1,15 @@
+id: have-you-ever-looked-into-your-heart
+title: Have You Ever Looked Into Your Heart
+artist: Jerry Vale
+composers:
+- Billy Barberis, Bobby Weinstein, Teddy Randazzo
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveyoueverlookedintoyourheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: nothing-about-her-reminds-me-of-you
+title: Nothing About Her Reminds Me Of You
+artist: Gene Watson
+composers:
+- Dave Kirby
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothingaboutherremindsmeofyoulyricschords.pro
+    imported_at: '2026-01-02'

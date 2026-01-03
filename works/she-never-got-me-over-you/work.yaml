@@ -1,0 +1,17 @@
+id: she-never-got-me-over-you
+title: She Never Got Me Over You
+artist: Keith Whitley
+composers:
+- Hank Cochran, Dean Dillon, Keith Whitley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shenevergotmeoveryoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: gethsemane
+title: Gethsemane
+artist: Carl Smith
+composers:
+- Billy Smith and W.B. Waldrop
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gethsemanelyricschords.pro
+    imported_at: '2026-01-02'

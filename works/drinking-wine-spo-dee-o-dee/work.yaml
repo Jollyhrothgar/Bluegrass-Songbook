@@ -1,0 +1,20 @@
+id: drinking-wine-spo-dee-o-dee
+title: Drinking Wine Spo-dee-o-dee
+artist: Jerry Lee Lewis
+composers:
+- Granville McGhee and Mayo Williams
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drinkingwinespodeeodeelyricschords.pro
+    imported_at: '2026-01-02'

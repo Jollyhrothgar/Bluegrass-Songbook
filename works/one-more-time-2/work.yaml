@@ -1,0 +1,17 @@
+id: one-more-time-2
+title: One More Time
+artist: Crystal Gayle
+composers:
+- Bryan Blackburn, Joachim Heider, Christian Heilberg
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemoretimelyricswithchords.pro
+    imported_at: '2026-01-02'

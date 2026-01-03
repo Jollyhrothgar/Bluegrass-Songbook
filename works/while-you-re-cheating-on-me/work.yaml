@@ -1,0 +1,20 @@
+id: while-you-re-cheating-on-me
+title: While You're Cheating On Me
+artist: The Louvin Brothers
+composers:
+- Charlie and Ira Louvin
+default_key: C
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whileyourecheatingonmelyricschords.pro
+    imported_at: '2026-01-02'

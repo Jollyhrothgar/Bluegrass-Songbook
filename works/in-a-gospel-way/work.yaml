@@ -1,0 +1,17 @@
+id: in-a-gospel-way
+title: In A Gospel Way
+artist: George Jones
+composers:
+- Earl Montgomery and George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inagospelwaylyricschords.pro
+    imported_at: '2026-01-02'

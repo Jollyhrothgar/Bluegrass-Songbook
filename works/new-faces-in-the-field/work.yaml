@@ -1,0 +1,15 @@
+id: new-faces-in-the-field
+title: New Faces in the Field
+artist: Russell Moore and IIIrd Tyme Out
+composers:
+- Denise Draper, Harley Allen, Steve Hood
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: newfacesinthefieldlyricschords.pro
+    imported_at: '2026-01-02'

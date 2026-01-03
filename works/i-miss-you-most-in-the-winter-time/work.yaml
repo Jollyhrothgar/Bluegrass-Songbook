@@ -1,0 +1,17 @@
+id: i-miss-you-most-in-the-winter-time
+title: I Miss You Most In The Winter Time
+artist: Stonewall Jackson
+composers:
+- John Virgin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imissyoumostinthewintertimelyricschords.pro
+    imported_at: '2026-01-02'

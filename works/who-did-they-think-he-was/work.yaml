@@ -1,0 +1,18 @@
+id: who-did-they-think-he-was
+title: Who Did They Think He Was
+artist: Conway Twitty
+composers:
+- Richard Leigh and Pat McManus
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whodidtheythinkhewaslyricschords.pro
+    imported_at: '2026-01-02'

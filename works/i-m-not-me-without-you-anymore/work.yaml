@@ -1,0 +1,17 @@
+id: i-m-not-me-without-you-anymore
+title: I'm Not Me Without You Anymore
+artist: Ferlin Husky
+composers:
+- Red Simpson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotmewithoutyouanymorelyricschords.pro
+    imported_at: '2026-01-02'

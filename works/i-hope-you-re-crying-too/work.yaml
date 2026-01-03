@@ -1,0 +1,17 @@
+id: i-hope-you-re-crying-too
+title: I Hope You're Crying Too
+artist: Hawkshaw Hawkins
+composers:
+- Cathy Annadale
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihopeyourecryingtoolyricschords.pro
+    imported_at: '2026-01-02'

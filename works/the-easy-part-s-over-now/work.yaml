@@ -1,0 +1,15 @@
+id: the-easy-part-s-over-now
+title: The Easy Part's Over Now
+artist: Charlie Pride
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theeasypartsoverlyricsandchords.pro
+    imported_at: '2026-01-02'

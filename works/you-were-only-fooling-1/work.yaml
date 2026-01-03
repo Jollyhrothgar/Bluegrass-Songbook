@@ -1,0 +1,18 @@
+id: you-were-only-fooling-1
+title: You Were Only Fooling
+artist: Connie Francis
+composers:
+- Larry Fotine, Billy Faber, Fred Meadows
+default_key: G
+tags:
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwereonlyfoolinglyricschords.pro
+    imported_at: '2026-01-02'

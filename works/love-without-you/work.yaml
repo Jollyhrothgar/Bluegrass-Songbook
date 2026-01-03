@@ -1,0 +1,15 @@
+id: love-without-you
+title: Love Without You
+artist: Ricky Van Shelton
+composers:
+- Charles Quillen and Jeff Pearson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovewithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: somewhere-i-wanna-go
+title: Somewhere I Wanna Go
+artist: Tracy Byrd
+composers:
+- Mark Nesler, Tony Martin, Tom Shapiro
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somewhereiwannagolyricschords.pro
+    imported_at: '2026-01-02'

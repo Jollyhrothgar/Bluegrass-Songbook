@@ -1,0 +1,17 @@
+id: how-long-does-it-hurt
+title: How Long Does It Hurt
+artist: Jean Shepard
+composers:
+- Virginia Midgett and D.W. Orinich
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howlongdoesithurtlyricschords.pro
+    imported_at: '2026-01-02'

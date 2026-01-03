@@ -1,0 +1,18 @@
+id: broken-man
+title: Broken Man
+artist: Mel Tillis
+composers:
+- Dave Hanner
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brokenmanlyricschords.pro
+    imported_at: '2026-01-02'

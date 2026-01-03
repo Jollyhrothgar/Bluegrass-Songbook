@@ -1,0 +1,17 @@
+id: one-night-fever
+title: One Night Fever
+artist: Mel Tills
+composers:
+- Bob Morrison and Johnny McRae
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onenightfeverlyricschords.pro
+    imported_at: '2026-01-02'

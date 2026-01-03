@@ -1,0 +1,17 @@
+id: he-s-gone-gone-gone
+title: He's Gone Gone Gone
+artist: Norma Jean
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesgonegonegonelyricschords.pro
+    imported_at: '2026-01-02'

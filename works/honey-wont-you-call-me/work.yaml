@@ -1,0 +1,17 @@
+id: honey-wont-you-call-me
+title: Honey Won’t You Call Me
+artist: Hank Williams Jr.
+composers:
+- Edmund Willareal and Wanda Watkins
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honeywontyoucallmelyricschords.pro
+    imported_at: '2026-01-02'

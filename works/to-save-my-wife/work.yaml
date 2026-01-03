@@ -1,0 +1,15 @@
+id: to-save-my-wife
+title: To Save My Wife
+artist: Cal Smith
+composers:
+- Jim Owens
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tosavemywifelyricschords.pro
+    imported_at: '2026-01-02'

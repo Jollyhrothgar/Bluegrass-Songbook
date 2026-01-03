@@ -1,0 +1,14 @@
+id: deep-elem-blues-1
+title: Deep Elem Blues
+artist: Cofer Brothers
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: she-s-all-i-got
+title: She's All I Got
+artist: Johnny Paycheck
+composers:
+- Jerry Williams Jr. and Gary Bonds
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesalligotlyricschords.pro
+    imported_at: '2026-01-02'

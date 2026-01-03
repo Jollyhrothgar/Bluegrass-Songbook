@@ -1,0 +1,17 @@
+id: ride-cowboy-ride-1
+title: Ride Cowboy Ride
+artist: Rex Allen Jr.
+composers:
+- Curtis Allen, Rex Allen Jr, Denny Demarco
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ridecowboyridelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: little-at-a-time
+title: Little At A Time
+artist: Lee Greenwood
+composers:
+- Mark Nesler
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littleatatimelyricschords.pro
+    imported_at: '2026-01-02'

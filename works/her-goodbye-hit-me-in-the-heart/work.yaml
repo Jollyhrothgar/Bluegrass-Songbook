@@ -1,0 +1,18 @@
+id: her-goodbye-hit-me-in-the-heart
+title: Her Goodbye Hit Me In The Heart
+artist: George Strait
+composers:
+- Dean Dillon and Frank Dycus
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hergoodbyehitmeintheheartlyricschords.pro
+    imported_at: '2026-01-02'

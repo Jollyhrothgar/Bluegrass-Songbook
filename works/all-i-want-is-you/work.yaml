@@ -1,0 +1,17 @@
+id: all-i-want-is-you
+title: All I Want is You
+artist: Big Country Bluegrass
+composers:
+- Lance Guynes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alliwantisyoulyricschords.pro
+    imported_at: '2026-01-02'

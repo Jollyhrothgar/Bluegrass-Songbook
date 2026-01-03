@@ -1,0 +1,17 @@
+id: go-back-you-fool
+title: Go Back You Fool
+artist: Faron Young
+composers:
+- Donald Robertson and Hal Blair
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gobackyoufoollyricschords.pro
+    imported_at: '2026-01-02'

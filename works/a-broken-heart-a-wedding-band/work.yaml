@@ -1,0 +1,17 @@
+id: a-broken-heart-a-wedding-band
+title: A Broken Heart A Wedding Band
+artist: Stonewall Jackson
+composers:
+- Joel Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: abrokenheartaweddingbandlyricschords.pro
+    imported_at: '2026-01-02'

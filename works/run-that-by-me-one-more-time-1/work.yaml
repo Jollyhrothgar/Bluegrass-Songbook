@@ -1,0 +1,17 @@
+id: run-that-by-me-one-more-time-1
+title: Run That By Me One More Time
+artist: Ray Price
+composers:
+- Fred Foster, Arthur Hancock and Jimmy Lambert
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: runthatbymeonemoretimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: open-up-your-heart-3
+title: Open Up Your Heart
+artist: Prairie Oyster
+composers:
+- Russell de Carle and Keith Glass
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: openupyourheartlyricswithchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: works-of-the-lord
+title: Works Of The Lord
+artist: Carl Smith
+composers:
+- Danny Dill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: worksofthelordlyricsandchords.pro
+    imported_at: '2026-01-02'

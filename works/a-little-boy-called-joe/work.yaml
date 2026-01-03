@@ -1,0 +1,17 @@
+id: a-little-boy-called-joe
+title: A Little Boy Called Joe
+artist: Ralph Stanley
+composers:
+- Leamon Allen and Ralph Stanley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittleboycalledjoelyricschords.pro
+    imported_at: '2026-01-02'

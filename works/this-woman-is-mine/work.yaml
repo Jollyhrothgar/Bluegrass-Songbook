@@ -1,0 +1,17 @@
+id: this-woman-is-mine
+title: This Woman Is Mine
+artist: Vernon Oxford
+composers:
+- Danny Walls, Chaw Mank, Don Suiter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thiswomanisminelyricschords.pro
+    imported_at: '2026-01-02'

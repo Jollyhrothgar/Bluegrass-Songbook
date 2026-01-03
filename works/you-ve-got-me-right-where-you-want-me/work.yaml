@@ -1,0 +1,17 @@
+id: you-ve-got-me-right-where-you-want-me
+title: You've Got Me (Right Where You Want Me)
+artist: Connie Smith
+composers:
+- George Richey and Connie Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotmerightwhereyouwantmelyricschords.pro
+    imported_at: '2026-01-02'

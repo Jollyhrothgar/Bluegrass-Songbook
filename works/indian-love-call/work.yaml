@@ -1,0 +1,17 @@
+id: indian-love-call
+title: Indian Love Call
+artist: Slim Whitman
+composers:
+- Otto Harbach, Oscar Hammerstein II, Rudolf Friml
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: indianlovecalllyricschords.pro
+    imported_at: '2026-01-02'

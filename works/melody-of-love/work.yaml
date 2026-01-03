@@ -1,0 +1,17 @@
+id: melody-of-love
+title: Melody Of Love
+artist: Connie Francis
+composers:
+- Tom Glazer and Hans Engelmann
+default_key: G
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: melodyoflovelyricschords.pro
+    imported_at: '2026-01-02'

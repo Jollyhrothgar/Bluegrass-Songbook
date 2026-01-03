@@ -1,0 +1,18 @@
+id: jingle-bell-rock
+title: Jingle Bell Rock
+artist: Brenda Lee
+composers:
+- Joe Beal and Jim Boothe
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jinglebellrocklyricschords.pro
+    imported_at: '2026-01-02'

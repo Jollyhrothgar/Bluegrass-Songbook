@@ -1,0 +1,17 @@
+id: if-anything-ever-happened-to-you
+title: If Anything Ever Happened To You
+artist: Bill Anderson
+composers:
+- Jon Randall and Bill Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifanythingeverhappenedtoyoulyricschords.pro
+    imported_at: '2026-01-02'

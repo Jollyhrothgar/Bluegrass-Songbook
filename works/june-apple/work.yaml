@@ -1,0 +1,16 @@
+id: june-apple
+title: June Apple
+artist: Traditional
+composers:
+- Biography:Ben Jarrell, Biography:Uncle Charlie Higgins
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

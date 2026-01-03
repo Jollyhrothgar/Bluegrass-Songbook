@@ -1,0 +1,17 @@
+id: just-good-ol-boys
+title: Just Good Ol' Boys
+artist: Moe Bandy
+composers:
+- Ansley Fleetwood
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justgoodolboyslyricschords.pro
+    imported_at: '2026-01-02'

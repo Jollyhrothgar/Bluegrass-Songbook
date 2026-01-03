@@ -1,0 +1,17 @@
+id: heckle-and-jeckle
+title: Heckle And Jeckle
+artist: George Jones
+composers:
+- Max D. Barnes and Max T. Barnes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heckleandjecklelyricschords.pro
+    imported_at: '2026-01-02'

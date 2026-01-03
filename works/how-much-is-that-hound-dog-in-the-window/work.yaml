@@ -1,0 +1,15 @@
+id: how-much-is-that-hound-dog-in-the-window
+title: How Much Is That Hound Dog In The Window
+artist: Homer and Jethro
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howmuchisthathounddoginthewindowlyricschords.pro
+    imported_at: '2026-01-02'

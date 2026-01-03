@@ -1,0 +1,18 @@
+id: ocean-of-diamonds
+title: Ocean Of Diamonds
+artist: Jimmy Martin
+composers:
+- Clifford Carnahan
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oceanofdiamondslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: mr-lonely
+title: Mr. Lonely
+artist: Bobby Vinton
+composers:
+- Gene Allan and Bobby Vinton
+default_key: C
+tags:
+- Jazzy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mrlonelylyricschords.pro
+    imported_at: '2026-01-02'

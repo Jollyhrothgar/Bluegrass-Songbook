@@ -1,0 +1,17 @@
+id: fool-s-night-out-lyrics-and-chords
+title: Fool's Night Out Lyrics and Chords
+artist: Webb Pierce
+composers:
+- Webb Pierce and Sylvia Fisher
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolsnightoutlyricschords.pro
+    imported_at: '2026-01-02'

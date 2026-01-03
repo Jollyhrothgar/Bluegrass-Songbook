@@ -1,0 +1,18 @@
+id: there-ll-always-be-a-honky-tonk-somewhere
+title: There'll Always Be A Honky Tonk Somewhere
+artist: Randy Travis
+composers:
+- Johnny McRae and Steve Clark
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therellalwaysbeahonkytonksomewherelyricschords.pro
+    imported_at: '2026-01-02'

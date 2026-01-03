@@ -1,0 +1,19 @@
+id: you-re-a-real-good-friend
+title: You're A Real Good Friend
+artist: Ernest Tubb
+composers:
+- Cy Coben and Charles Grean
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourearealgoodfriendlyricschords.pro
+    imported_at: '2026-01-02'

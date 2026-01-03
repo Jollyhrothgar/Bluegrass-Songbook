@@ -1,0 +1,19 @@
+id: summertime
+title: Summertime
+artist: Willie Nelson
+composers:
+- Du Bose Heywood, Ira Gershwin, George Gershwin
+default_key: Am
+tags:
+- ClassicCountry
+- Outlaw
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: summertimelyricschords.pro
+    imported_at: '2026-01-02'

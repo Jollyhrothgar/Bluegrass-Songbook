@@ -1,0 +1,18 @@
+id: you-ll-still-be-the-one
+title: You'll Still Be The One
+artist: Charley Pride
+composers:
+- Johnny Duncan
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllstillbetheonelyricschords.pro
+    imported_at: '2026-01-02'

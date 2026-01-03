@@ -1,0 +1,17 @@
+id: love-s-not-love-till-you-give-it-away
+title: Love's Not Love (Till You Give It Away)
+artist: Bill Anderson
+composers:
+- Glenn Martin and Ronnie Sessions
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovesnotlovetillyougiveitawaylyricschords.pro
+    imported_at: '2026-01-02'

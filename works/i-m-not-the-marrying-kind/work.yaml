@@ -1,0 +1,21 @@
+id: i-m-not-the-marrying-kind
+title: I'm Not The Marrying Kind
+artist: Elvis Presley
+composers:
+- Sherman Edwards and Mack David
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotthemarryingkindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: twenty-years-ago
+title: Twenty Years Ago
+artist: Kenny Rogers
+composers:
+- Dan Tyler, Michael Noble, Michael Spriggs, Wood Newton
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twentyyearsagolyricschords.pro
+    imported_at: '2026-01-02'

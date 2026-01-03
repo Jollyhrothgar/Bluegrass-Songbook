@@ -1,0 +1,17 @@
+id: older-and-bolder
+title: Older And Bolder
+artist: Eddy Arnold
+composers:
+- Cy Coben
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: olderandbolderlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: wondering
+title: Wondering
+artist: Ernest Tubb
+composers:
+- Joe Werner
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wonderinglyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: lazy-lady
+title: Lazy Lady
+artist: Fats Domino
+composers:
+- Fats Domino and Reginald Hall
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lazyladylyricschords.pro
+    imported_at: '2026-01-02'

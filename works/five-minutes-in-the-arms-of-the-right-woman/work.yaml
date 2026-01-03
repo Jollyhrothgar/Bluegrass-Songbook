@@ -1,0 +1,17 @@
+id: five-minutes-in-the-arms-of-the-right-woman
+title: Five Minutes In The Arms Of The Right Woman
+artist: Cal Smith
+composers:
+- Bob Montgomery and John Talley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fiveminutesinthearmsoftherightwomanlyricschords.pro
+    imported_at: '2026-01-02'

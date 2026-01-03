@@ -1,0 +1,18 @@
+id: fool-s-paradise-1
+title: Fool's Paradise
+artist: Buddy Holly
+composers:
+- Horace Linsley, Norman Petty, Sonny LeGlaire
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolsparadiselyricschords.pro
+    imported_at: '2026-01-02'

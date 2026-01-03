@@ -1,0 +1,15 @@
+id: blue-hawaii
+title: Blue Hawaii
+artist: Hank Locklin
+composers:
+- Leo Robin and Ralph Rainger
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluehawaiilyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: dear-old-mother
+title: Dear Old Mother
+artist: Jim and Jesse
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dearoldmotherlyricschords.pro
+    imported_at: '2026-01-02'

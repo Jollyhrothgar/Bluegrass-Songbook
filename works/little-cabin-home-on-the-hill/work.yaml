@@ -1,0 +1,17 @@
+id: little-cabin-home-on-the-hill
+title: Little Cabin Home On The Hill
+artist: Bill Monroe
+composers:
+- Lester Flatt and Bill Monroe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlecabinhomeonthehilllyricschords.pro
+    imported_at: '2026-01-02'

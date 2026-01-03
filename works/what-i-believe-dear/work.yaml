@@ -1,0 +1,18 @@
+id: what-i-believe-dear
+title: What I Believe Dear
+artist: Kitty Wells
+composers:
+- Tott Wilson and Sue Wilson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatibelievedearlyricschords.pro
+    imported_at: '2026-01-02'

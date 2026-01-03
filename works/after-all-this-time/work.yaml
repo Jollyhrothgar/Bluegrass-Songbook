@@ -1,0 +1,17 @@
+id: after-all-this-time
+title: After All This Time
+artist: Kenny Rogers
+composers:
+- Steve Dorff and Peter Beckett
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterallthistimelyricsandchords.pro
+    imported_at: '2026-01-02'

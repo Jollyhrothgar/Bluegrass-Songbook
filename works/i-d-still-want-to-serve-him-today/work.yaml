@@ -1,0 +1,17 @@
+id: i-d-still-want-to-serve-him-today
+title: I'd Still Want To Serve Him Today
+artist: Connie Smith
+composers:
+- Ray Lewis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idstillwanttoservehimtodaylyricschords.pro
+    imported_at: '2026-01-02'

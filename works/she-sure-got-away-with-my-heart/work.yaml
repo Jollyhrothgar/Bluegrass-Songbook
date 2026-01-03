@@ -1,0 +1,15 @@
+id: she-sure-got-away-with-my-heart
+title: She Sure Got Away With My Heart
+artist: John Anderson
+composers:
+- Walt Aldridge and Tom Brasfield
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesuregotawaywithmyheartlyricschords.pro
+    imported_at: '2026-01-02'

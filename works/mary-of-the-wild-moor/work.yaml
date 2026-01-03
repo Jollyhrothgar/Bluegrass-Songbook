@@ -1,0 +1,17 @@
+id: mary-of-the-wild-moor
+title: Mary Of The Wild Moor
+artist: Mac Wiseman
+composers:
+- David Turner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maryofthewildmoorlyricschords.pro
+    imported_at: '2026-01-02'

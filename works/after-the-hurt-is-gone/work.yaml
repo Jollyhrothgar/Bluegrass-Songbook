@@ -1,0 +1,15 @@
+id: after-the-hurt-is-gone
+title: After The Hurt Is Gone
+artist: Hank Locklin
+composers:
+- Marijohn Wilkin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterthehurtisgonelyricschords.pro
+    imported_at: '2026-01-02'

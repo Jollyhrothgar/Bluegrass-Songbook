@@ -1,0 +1,15 @@
+id: a-day-in-the-life-of-a-fool
+title: A Day In The Life Of A Fool
+artist: George Jones
+composers:
+- Eddie Noack
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: adayinthelifeofafoollyricschords.pro
+    imported_at: '2026-01-02'

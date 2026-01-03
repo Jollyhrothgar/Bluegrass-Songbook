@@ -1,0 +1,17 @@
+id: in-the-valley-he-restoreth-my-soul
+title: In The Valley He Restoreth My Soul
+artist: Connie Smith
+composers:
+- Dottie Rambo
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthevalleyherestorethmysoullyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: how-can-it-be-imagination
+title: How Can It Be Imagination
+artist: Jim Ed, Maxine and Bonnie Brown
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcanitbeimaginationlyricschords.pro
+    imported_at: '2026-01-02'

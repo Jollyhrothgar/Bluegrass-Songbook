@@ -1,0 +1,17 @@
+id: there-shall-be-showers-of-blessing
+title: There Shall Be Showers Of Blessing
+artist: Jimmy Dean
+composers:
+- Daniel W. Whittle and James McGranahan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thereshallbeshowersofblessinglyricschords.pro
+    imported_at: '2026-01-02'

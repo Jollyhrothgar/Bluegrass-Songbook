@@ -1,0 +1,17 @@
+id: show-me-the-way-back-to-your-heart
+title: Show Me The Way Back To Your Heart
+artist: Eddy Arnold
+composers:
+- Steve Nelson, Eddy Arnold, Zel Soehnel, Ed Nelson, Jr.
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: showmethewaybacktoyourheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: god-be-with-you-till-we-meet-again
+title: God Be With You Till We Meet Again
+artist: Jim Reeves
+composers:
+- J.E. Rankin and W.G. Tomer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: godbewithyoutillwemeetagainlyricschords.pro
+    imported_at: '2026-01-02'

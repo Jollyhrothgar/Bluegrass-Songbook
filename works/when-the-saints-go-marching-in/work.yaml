@@ -1,0 +1,18 @@
+id: when-the-saints-go-marching-in
+title: When The Saints Go Marching In
+artist: Fats Domino
+composers:
+- James McParkland
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthesaintsgomarchinginlyricschords.pro
+    imported_at: '2026-01-02'

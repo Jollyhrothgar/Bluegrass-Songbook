@@ -1,0 +1,17 @@
+id: someday-we-ll-be-together
+title: Someday We'll Be Together
+artist: Bill Anderson
+composers:
+- Jackey Beavers, Johnny Bristol, Harvey Fuqua
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somedaywellbetogetherlyricschords.pro
+    imported_at: '2026-01-02'

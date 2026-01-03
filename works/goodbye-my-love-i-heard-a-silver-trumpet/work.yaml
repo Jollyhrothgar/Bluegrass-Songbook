@@ -1,0 +1,17 @@
+id: goodbye-my-love-i-heard-a-silver-trumpet
+title: Goodbye My Love I Heard A Silver Trumpet
+artist: Billy Walker
+composers:
+- Fred Rose
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodbyemyloveiheardasilvertrumpetlyricschords.pro
+    imported_at: '2026-01-02'

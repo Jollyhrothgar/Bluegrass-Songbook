@@ -1,0 +1,18 @@
+id: actions-speak-louder-than-words
+title: Actions Speak Louder Than Words
+artist: David Allan Coe
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: actionsspeaklouderthanwordslyricschords.pro
+    imported_at: '2026-01-02'

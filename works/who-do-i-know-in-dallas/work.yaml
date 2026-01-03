@@ -1,0 +1,18 @@
+id: who-do-i-know-in-dallas
+title: Who Do I Know In Dallas
+artist: Merle Haggard
+composers:
+- Hank Cochran and Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whodoiknowindallaslyricschords.pro
+    imported_at: '2026-01-02'

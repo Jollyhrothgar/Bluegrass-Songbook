@@ -1,0 +1,17 @@
+id: georgia-waltz
+title: Georgia Waltz
+artist: Mac Wiseman
+composers:
+- George Krise
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: georgiawaltzlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: after-the-loving
+title: After The Loving
+artist: Faron Young
+composers:
+- Richie Adams and Alan Bernstein
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterthelovinglyricschords.pro
+    imported_at: '2026-01-02'

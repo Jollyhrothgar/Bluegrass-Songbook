@@ -1,0 +1,17 @@
+id: ashamed-to-own-the-blessed-savior-1
+title: Ashamed To Own The Blessed Savior
+artist: Jim and Jesse
+composers:
+- John Bailes and Walter Bailes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ashamedtoowntheblessedsaviorlyricschords.pro
+    imported_at: '2026-01-02'

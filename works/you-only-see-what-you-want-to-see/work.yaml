@@ -1,0 +1,17 @@
+id: you-only-see-what-you-want-to-see
+title: You Only See What You Want To See
+artist: Jack Scott
+composers:
+- Hal David and Paul Hampton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youonlyseewhatyouwanttoseelyricschords.pro
+    imported_at: '2026-01-02'

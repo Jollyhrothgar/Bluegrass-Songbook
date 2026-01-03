@@ -1,0 +1,18 @@
+id: amarillo-by-morning
+title: Amarillo By Morning
+artist: George Strait
+composers:
+- Paul Fraser and Terry Stafford
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amarillobymorninglyricschords.pro
+    imported_at: '2026-01-02'

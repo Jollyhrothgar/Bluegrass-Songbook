@@ -1,0 +1,18 @@
+id: pretend
+title: Pretend
+artist: The Mavericks
+composers:
+- Raul Malo and Kostas Lazarides
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pretendlyricschords.pro
+    imported_at: '2026-01-02'

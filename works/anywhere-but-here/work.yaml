@@ -1,0 +1,18 @@
+id: anywhere-but-here
+title: Anywhere But Here
+artist: Sammy Kershaw
+composers:
+- Bob DiPiero, Buddy Cannon, John S. Sherrill
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anywherebutherelyricschords.pro
+    imported_at: '2026-01-02'

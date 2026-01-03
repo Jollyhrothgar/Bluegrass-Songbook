@@ -1,0 +1,19 @@
+id: educated-mama
+title: Educated Mama
+artist: Ernest Tubb
+composers:
+- Hal Willis and Ginger Willis
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: educatedmamalyricschords.pro
+    imported_at: '2026-01-02'

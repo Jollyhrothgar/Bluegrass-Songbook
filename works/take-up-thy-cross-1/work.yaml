@@ -1,0 +1,17 @@
+id: take-up-thy-cross-1
+title: Take Up Thy Cross
+artist: The Traditional Grass
+composers:
+- Alfred Ackley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takeupthycrosslyricschords.pro
+    imported_at: '2026-01-02'

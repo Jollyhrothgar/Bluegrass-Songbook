@@ -1,0 +1,18 @@
+id: don-t-let-it-go-to-your-heart
+title: Don't Let It Go To Your Heart
+artist: Conway Twitty
+composers:
+- Conway Twitty and Joe Lewis
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontletitgotoyourheartlyricschords.pro
+    imported_at: '2026-01-02'

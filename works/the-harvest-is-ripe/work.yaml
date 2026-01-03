@@ -1,0 +1,15 @@
+id: the-harvest-is-ripe
+title: The Harvest Is Ripe
+artist: Hank Locklin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theharvestisripelyricschords.pro
+    imported_at: '2026-01-02'

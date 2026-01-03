@@ -1,0 +1,17 @@
+id: this-wanting-you
+title: This Wanting You
+artist: Gene Watson with Rhonda Vincent
+composers:
+- Bruce Bouton, Bruce Burch, T. Graham Brown
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thiswantingyoulyricschords.pro
+    imported_at: '2026-01-02'

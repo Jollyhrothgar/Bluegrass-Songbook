@@ -1,0 +1,17 @@
+id: today-all-over-again
+title: Today All Over Again
+artist: Reba McEntire
+composers:
+- Bobby Harden and Lola Jean Dillon
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: todayalloveragainlyricschords.pro
+    imported_at: '2026-01-02'

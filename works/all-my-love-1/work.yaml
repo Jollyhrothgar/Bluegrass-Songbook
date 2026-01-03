@@ -1,0 +1,19 @@
+id: all-my-love-1
+title: All My Love
+artist: Mel Tillis
+composers:
+- Ruth Durand, Henri Contet, Mitchell Parish
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allmylovelyricschords.pro
+    imported_at: '2026-01-02'

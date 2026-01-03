@@ -1,0 +1,15 @@
+id: it-s-time-you-learned-about-goodbye
+title: It's Time You Learned About Goodbye
+artist: Alan Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itstimeyoulearnedaboutgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-hope-we-walk-the-last-mile-together
+title: I Hope We Walk The Last Mile Together
+artist: Carl and Pearl Butler
+composers:
+- Margaret Newsom Holley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihopewewalkthelastmiletogetherlyricschords.pro
+    imported_at: '2026-01-02'

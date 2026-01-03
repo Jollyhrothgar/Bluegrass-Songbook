@@ -1,0 +1,17 @@
+id: that-makes-two-of-us
+title: That Makes Two of Us
+artist: Connie Smith
+composers:
+- Emory Gordy, Jr., Kostas, Patty Loveless
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatmakestwoofuslyricsandchords.pro
+    imported_at: '2026-01-02'

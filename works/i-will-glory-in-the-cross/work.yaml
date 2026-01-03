@@ -1,0 +1,17 @@
+id: i-will-glory-in-the-cross
+title: I Will Glory In The Cross
+artist: Barbara Mandrell
+composers:
+- Dottie Rambo
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwillgloryinthecrosslyricschords.pro
+    imported_at: '2026-01-02'

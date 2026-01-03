@@ -1,0 +1,17 @@
+id: hypnotize-the-moon
+title: Hypnotize The Moon
+artist: Clay Walker
+composers:
+- Eric Kaz and Steve Dorff
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hypnotizethemoonlyricschords.pro
+    imported_at: '2026-01-02'

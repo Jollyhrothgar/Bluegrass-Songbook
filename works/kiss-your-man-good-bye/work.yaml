@@ -1,0 +1,19 @@
+id: kiss-your-man-good-bye
+title: Kiss Your Man Good Bye
+artist: The Everly Brothers
+composers:
+- Phil Everly and Don Everly
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kissyourmangoodbyelyricschords.pro
+    imported_at: '2026-01-02'

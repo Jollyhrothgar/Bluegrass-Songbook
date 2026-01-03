@@ -1,0 +1,15 @@
+id: over-the-hill
+title: Over The Hill
+artist: Hawkshaw Hawkins
+composers:
+- Ted Daffan
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: overthehilllyricsandchords.pro
+    imported_at: '2026-01-02'

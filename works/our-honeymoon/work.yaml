@@ -1,0 +1,17 @@
+id: our-honeymoon
+title: Our Honeymoon
+artist: Carl Smith
+composers:
+- Boudleaux Bryant, Carl Smith, Bodet Torres
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ourhoneymoonlyricschords.pro
+    imported_at: '2026-01-02'

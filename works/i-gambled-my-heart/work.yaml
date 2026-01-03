@@ -1,0 +1,18 @@
+id: i-gambled-my-heart
+title: I Gambled My Heart
+artist: Buddy Holly
+composers:
+- Bob Montgomery
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igambledmyheartlyricschords.pro
+    imported_at: '2026-01-02'

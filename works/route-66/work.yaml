@@ -1,0 +1,19 @@
+id: route-66
+title: Route 66
+artist: Asleep at the Wheel
+composers:
+- Bobby Troup
+default_key: G
+tags:
+- ClassicCountry
+- WesternSwing
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: route66lightslyricschords.pro
+    imported_at: '2026-01-02'

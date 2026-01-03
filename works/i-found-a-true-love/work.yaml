@@ -1,0 +1,15 @@
+id: i-found-a-true-love
+title: I Found A True Love
+artist: Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifoundatruelovelyricschords.pro
+    imported_at: '2026-01-02'

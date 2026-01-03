@@ -1,0 +1,15 @@
+id: i-can-t-leave-him
+title: I Can't Leave Him
+artist: Norma Jean
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantleavehimlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: ill-be-back-a-sunday
+title: I’ll Be Back A-Sunday
+artist: Little Jimmy Dickens
+composers:
+- Jimmy Dickens and Gordon Hall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbebackasundaylyricschords.pro
+    imported_at: '2026-01-02'

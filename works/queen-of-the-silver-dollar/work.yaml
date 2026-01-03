@@ -1,0 +1,16 @@
+id: queen-of-the-silver-dollar
+title: Queen Of The Silver Dollar
+artist: Emmylou Harris
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: queenofthesilverdollarlyricschords.pro
+    imported_at: '2026-01-02'

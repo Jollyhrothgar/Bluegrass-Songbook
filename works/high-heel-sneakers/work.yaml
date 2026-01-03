@@ -1,0 +1,20 @@
+id: high-heel-sneakers
+title: High Heel Sneakers
+artist: Jerry Lee Lewis
+composers:
+- Robbert Higginbotham
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highheelsneakerslyricschords.pro
+    imported_at: '2026-01-02'

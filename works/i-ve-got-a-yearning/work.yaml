@@ -1,0 +1,16 @@
+id: i-ve-got-a-yearning
+title: I've Got A Yearning
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotayearninglyricschords.pro
+    imported_at: '2026-01-02'

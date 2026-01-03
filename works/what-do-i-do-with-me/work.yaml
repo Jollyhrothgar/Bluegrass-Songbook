@@ -1,0 +1,18 @@
+id: what-do-i-do-with-me
+title: What Do I Do With Me
+artist: Tanya Tucker
+composers:
+- David Lewis, Royce Porter, David Chamberlain
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatdoidowithmelyricschords.pro
+    imported_at: '2026-01-02'

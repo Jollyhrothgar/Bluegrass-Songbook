@@ -1,0 +1,17 @@
+id: at-mail-call-today
+title: At Mail Call Today
+artist: Slim Whitman
+composers:
+- Gene Autry and Fred Rose
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atmailcalltodaylyricsandchords.pro
+    imported_at: '2026-01-02'

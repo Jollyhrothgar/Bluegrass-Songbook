@@ -1,0 +1,17 @@
+id: if-you-can-do-anything-else
+title: If You Can Do Anything Else
+artist: George Strait
+composers:
+- Don Schlitz and Billy Livsey
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoucandoanythingelselyricschords.pro
+    imported_at: '2026-01-02'

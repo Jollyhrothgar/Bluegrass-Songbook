@@ -1,0 +1,17 @@
+id: will-you-be-ready-to-wear-a-golden-crown
+title: Will You Be Ready (To Wear A Golden Crown)
+artist: Wilburn Brothers
+composers:
+- Teddy Wilburn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willyoubereadytowearagoldencrownlyricschords.pro
+    imported_at: '2026-01-02'

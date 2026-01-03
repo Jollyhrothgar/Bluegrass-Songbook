@@ -1,0 +1,18 @@
+id: christmas-all-year-long
+title: Christmas All Year Long
+artist: Sawyer Brown
+composers:
+- Mac McAnally
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasallyearlonglyricschords.pro
+    imported_at: '2026-01-02'

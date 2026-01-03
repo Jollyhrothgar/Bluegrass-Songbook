@@ -1,0 +1,17 @@
+id: i-taught-her-everything-she-knows
+title: I Taught Her Everything She Knows
+artist: Alabama
+composers:
+- Teddy Gentry, Greg Fowler, John Jarrard
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itaughthereverythingsheknowslyricsandchords.pro
+    imported_at: '2026-01-02'

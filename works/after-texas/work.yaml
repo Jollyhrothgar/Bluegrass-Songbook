@@ -1,0 +1,17 @@
+id: after-texas
+title: After Texas
+artist: Darrell McCall
+composers:
+- Bucky Jones and James Martin Johnson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aftertexaslyricschords.pro
+    imported_at: '2026-01-02'

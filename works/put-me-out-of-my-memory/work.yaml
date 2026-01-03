@@ -1,0 +1,15 @@
+id: put-me-out-of-my-memory
+title: Put Me Out Of My Memory
+artist: Johnny Bush
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: putmeoutofmymemorylyricschords.pro
+    imported_at: '2026-01-02'

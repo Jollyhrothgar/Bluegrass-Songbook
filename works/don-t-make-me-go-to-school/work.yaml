@@ -1,0 +1,18 @@
+id: don-t-make-me-go-to-school
+title: Don't Make Me Go To School
+artist: Tammy Wynette
+composers:
+- Gene Crysler
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontmakemegotoschoollyricschords.pro
+    imported_at: '2026-01-02'

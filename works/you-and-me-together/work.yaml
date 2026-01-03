@@ -1,0 +1,18 @@
+id: you-and-me-together
+title: You And Me Together
+artist: Tammy Wynette
+composers:
+- Jimmy Peppers
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youandmetogetherlyricschords.pro
+    imported_at: '2026-01-02'

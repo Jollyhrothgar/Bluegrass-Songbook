@@ -1,0 +1,19 @@
+id: born-to-love-me-1
+title: Born To Love Me
+artist: Roy Orbison
+composers:
+- Bob Morrison
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: borntolovemelyricschords.pro
+    imported_at: '2026-01-02'

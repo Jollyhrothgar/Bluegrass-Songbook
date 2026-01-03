@@ -1,0 +1,17 @@
+id: the-city-cries-at-night
+title: The City Cries at Night
+artist: Jim Ed Brown
+composers:
+- Eddie Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thecitycriesatnightlyricschords.pro
+    imported_at: '2026-01-02'

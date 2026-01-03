@@ -1,0 +1,15 @@
+id: blue-collar-holler
+title: Blue Collar Holler
+artist: Moe Bandy
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluecollarhollerlyricschords.pro
+    imported_at: '2026-01-02'

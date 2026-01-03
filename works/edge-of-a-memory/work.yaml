@@ -1,0 +1,17 @@
+id: edge-of-a-memory
+title: Edge Of A Memory
+artist: Tracy Byrd
+composers:
+- Gene Nelson and Tom Shapiro
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: edgeofamemorylyricschords.pro
+    imported_at: '2026-01-02'

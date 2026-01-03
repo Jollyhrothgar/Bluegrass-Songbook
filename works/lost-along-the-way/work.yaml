@@ -1,0 +1,17 @@
+id: lost-along-the-way
+title: Lost Along The Way
+artist: Faron Young
+composers:
+- Bobby Harden
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lostalongthewaylyricschords.pro
+    imported_at: '2026-01-02'

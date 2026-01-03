@@ -1,0 +1,15 @@
+id: i-m-down-to-my-last-i-love-you
+title: I'm Down to My Last I Love You
+artist: David Houston
+composers:
+- Billy Sherrill and Glenn Sutton
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imdowntomylastiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

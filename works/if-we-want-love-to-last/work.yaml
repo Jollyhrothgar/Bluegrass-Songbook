@@ -1,0 +1,18 @@
+id: if-we-want-love-to-last
+title: If We Want Love To Last
+artist: Conway Twitty
+composers:
+- L.E. White
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifwewantlovetolastlyricschords.pro
+    imported_at: '2026-01-02'

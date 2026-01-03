@@ -1,0 +1,17 @@
+id: where-do-we-take-it-from-here
+title: Where Do We Take It From Here
+artist: Vern Gosdin
+composers:
+- Dennis Knutson and Vern Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheredowetakeitfromherelyricschords.pro
+    imported_at: '2026-01-02'

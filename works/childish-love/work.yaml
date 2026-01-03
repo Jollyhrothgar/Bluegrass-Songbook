@@ -1,0 +1,17 @@
+id: childish-love
+title: Childish Love
+artist: Jim and Jesse
+composers:
+- Charlie Louvin and Ira Louvin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: childishlovelyricschords.pro
+    imported_at: '2026-01-02'

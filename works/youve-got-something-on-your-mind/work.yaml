@@ -1,0 +1,18 @@
+id: youve-got-something-on-your-mind
+title: You’ve Got Something On Your Mind
+artist: Mickey Gilley
+composers:
+- Dave Gibson, Norro Wilson, Roger Murrah
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotsomethingonyourmindlyricschords.pro
+    imported_at: '2026-01-02'

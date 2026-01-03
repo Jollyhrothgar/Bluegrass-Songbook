@@ -1,0 +1,13 @@
+id: i-didn-t-every-chance-i-had
+title: I Didn't Every Chance I Had
+artist: Johnny Rodriguez
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ididnteverychanceihadlyricschords.pro
+    imported_at: '2026-01-02'

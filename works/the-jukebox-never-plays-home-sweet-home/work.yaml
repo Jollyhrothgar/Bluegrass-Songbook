@@ -1,0 +1,15 @@
+id: the-jukebox-never-plays-home-sweet-home
+title: The Jukebox Never Plays Home Sweet Home
+artist: Jack Greene
+composers:
+- Danny Joe Mitchell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thejukeboxneverplayshomesweethomelyricschords.pro
+    imported_at: '2026-01-02'

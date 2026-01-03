@@ -1,0 +1,17 @@
+id: pass-it-on-down
+title: Pass It On Down
+artist: Alabama
+composers:
+- Teddy Gentry, Randy Owen, William Robinson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: passitondownlyricschords.pro
+    imported_at: '2026-01-02'

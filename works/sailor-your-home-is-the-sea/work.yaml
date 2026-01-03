@@ -1,0 +1,17 @@
+id: sailor-your-home-is-the-sea
+title: Sailor (Your Home Is The Sea)
+artist: Bobby Helms
+composers:
+- David Kapp and Toni Martl
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sailorlyricschords.pro
+    imported_at: '2026-01-02'

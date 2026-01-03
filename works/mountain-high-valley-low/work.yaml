@@ -1,0 +1,17 @@
+id: mountain-high-valley-low
+title: Mountain High Valley Low
+artist: John Anderson
+composers:
+- John David Anderson and Lionel Alton Delmore
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mountainhighvalleylowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: be-my-love-again
+title: Be My Love Again
+artist: Brenda Lee
+composers:
+- Chuck Taylor
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bemyloveagainlyricschords.pro
+    imported_at: '2026-01-02'

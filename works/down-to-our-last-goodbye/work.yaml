@@ -1,0 +1,19 @@
+id: down-to-our-last-goodbye
+title: Down To Our Last Goodbye
+artist: Willie Nelson
+composers:
+- Jan Crutchfield and Wayne Moss
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downtoourlastgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

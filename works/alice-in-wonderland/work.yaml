@@ -1,0 +1,17 @@
+id: alice-in-wonderland
+title: Alice In Wonderland
+artist: The Oak Ridge Boys
+composers:
+- Brenda Barnett, Charles Chalmers, Sandra Rhodes
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aliceinwonderlandlyricschords.pro
+    imported_at: '2026-01-02'

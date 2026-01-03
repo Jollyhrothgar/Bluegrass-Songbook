@@ -1,0 +1,17 @@
+id: when-its-prayer-meeting-time
+title: When It’s Prayer Meeting Time
+artist: Ernest Tubb
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenitsprayermeetingtimelyricschords.pro
+    imported_at: '2026-01-02'

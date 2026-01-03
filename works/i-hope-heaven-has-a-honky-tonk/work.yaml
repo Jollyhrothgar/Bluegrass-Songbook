@@ -1,0 +1,18 @@
+id: i-hope-heaven-has-a-honky-tonk
+title: I Hope Heaven Has A Honky Tonk
+artist: Tracy Lawrence
+composers:
+- Jim Carter and Sherri Stapleton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihopeheavenhasahonkytonklyricschords.pro
+    imported_at: '2026-01-02'

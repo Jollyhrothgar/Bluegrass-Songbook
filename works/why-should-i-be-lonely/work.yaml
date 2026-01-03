@@ -1,0 +1,17 @@
+id: why-should-i-be-lonely
+title: Why Should I Be Lonely
+artist: Merle Haggard
+composers:
+- Jimmie Rodgers and Estelle Lowell
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whyshouldibelonelylyricschords.pro
+    imported_at: '2026-01-02'

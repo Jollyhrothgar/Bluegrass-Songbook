@@ -1,0 +1,19 @@
+id: but-that-s-all-right
+title: But That's All Right
+artist: Waylon Jennings
+composers:
+- Autry Inman
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: butthatsallrightlyricschords.pro
+    imported_at: '2026-01-02'

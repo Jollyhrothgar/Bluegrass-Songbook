@@ -1,0 +1,19 @@
+id: gotta-get-you-near-me-blues
+title: Gotta Get You Near Me Blues
+artist: Buddy Holly
+composers:
+- Bob Montgomery
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gottagetyounearmeblueslyricschords.pro
+    imported_at: '2026-01-02'

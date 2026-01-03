@@ -1,0 +1,17 @@
+id: a-little-bluer-than-that
+title: A Little Bluer Than That
+artist: Alan Jackson
+composers:
+- Mark Irwin and Irene Kelley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittlebluerthanthatlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: we-live-in-two-different-worlds
+title: We Live in Two Different Worlds
+artist: Hank Williams
+composers:
+- Fred Rose
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weliveintwodifferentworldslyricschords.pro
+    imported_at: '2026-01-02'

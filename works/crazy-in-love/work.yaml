@@ -1,0 +1,17 @@
+id: crazy-in-love
+title: Crazy In Love
+artist: Conway Twitty
+composers:
+- Randy McCormick and Even Stevens
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crazyinlovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: country-club
+title: Country Club
+artist: Travis Tritt
+composers:
+- Catesby Jones and Dennis Lord
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: countryclublyricschords.pro
+    imported_at: '2026-01-02'

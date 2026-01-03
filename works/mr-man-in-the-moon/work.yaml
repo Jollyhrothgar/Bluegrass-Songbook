@@ -1,0 +1,19 @@
+id: mr-man-in-the-moon
+title: Mr. Man In The Moon
+artist: Patty Loveless
+composers:
+- Wally Wilson and Mike Henderson
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mrmaninthemoonlyricschords.pro
+    imported_at: '2026-01-02'

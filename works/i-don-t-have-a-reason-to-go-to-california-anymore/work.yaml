@@ -1,0 +1,19 @@
+id: i-don-t-have-a-reason-to-go-to-california-anymore
+title: I Don't Have a Reason To Go To California Anymore
+artist: Willie Nelson
+composers:
+- Billy Don Burns and Hank Cochran
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idonthaveareasontogotocaliforniaanymorelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-sweetest-gift
+title: The Sweetest Gift
+artist: Emmylou Harris and Linda Ronstadt
+composers:
+- James B. Coats
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesweetestgiftlyricschords.pro
+    imported_at: '2026-01-02'

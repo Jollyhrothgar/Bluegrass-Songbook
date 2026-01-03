@@ -1,0 +1,17 @@
+id: some-hearts-get-all-the-breaks
+title: Some Hearts Get All The Breaks
+artist: Roger Miller
+composers:
+- Buck Moore and Jeff Raymond
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someheartsgetallthebreakslyricschords.pro
+    imported_at: '2026-01-02'

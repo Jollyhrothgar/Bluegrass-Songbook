@@ -1,0 +1,17 @@
+id: i-m-a-getting-ready-to-go
+title: I'm A Getting Ready To Go
+artist: Loretta Lynn
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imagettingreadytogolyricschords.pro
+    imported_at: '2026-01-02'

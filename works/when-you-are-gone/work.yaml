@@ -1,0 +1,17 @@
+id: when-you-are-gone
+title: When You Are Gone
+artist: Jim Reeves
+composers:
+- Dean Manuel and Jim Reeves
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyouaregonelyricschords.pro
+    imported_at: '2026-01-02'

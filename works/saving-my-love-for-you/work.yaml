@@ -1,0 +1,16 @@
+id: saving-my-love-for-you
+title: Saving My Love For You
+artist: Wanda Jackson
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: savingmyloveforyoulyricschords.pro
+    imported_at: '2026-01-02'

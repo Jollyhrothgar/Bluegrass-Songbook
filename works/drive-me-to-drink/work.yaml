@@ -1,0 +1,17 @@
+id: drive-me-to-drink
+title: Drive Me To Drink
+artist: George Jones
+composers:
+- Mike Huffman and Gene Dobbins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drivemetodrinklyricschords.pro
+    imported_at: '2026-01-02'

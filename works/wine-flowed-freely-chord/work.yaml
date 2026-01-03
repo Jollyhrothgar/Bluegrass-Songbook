@@ -1,0 +1,17 @@
+id: wine-flowed-freely-chord
+title: Wine Flowed Freely chord
+artist: Stonewall Jackson
+composers:
+- Joe Babcock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wineflowedfreelylyricschord.pro
+    imported_at: '2026-01-02'

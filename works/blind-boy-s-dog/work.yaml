@@ -1,0 +1,20 @@
+id: blind-boy-s-dog
+title: Blind Boy's Dog
+artist: Hank Snow
+composers:
+- Dave McEnery and Red River
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blindboysdoglyricschords.pro
+    imported_at: '2026-01-02'

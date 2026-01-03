@@ -1,0 +1,17 @@
+id: she-s-as-good-as-gone
+title: She's As Good As Gone
+artist: Charlie Pride
+composers:
+- David Wills and Charles Quillen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesasgoodasgonelyricschords.pro
+    imported_at: '2026-01-02'

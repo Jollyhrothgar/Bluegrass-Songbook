@@ -1,0 +1,18 @@
+id: guilty-street
+title: Guilty Street
+artist: Kitty Wells
+composers:
+- Cecil Null
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: guiltystreetlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: santa-s-coming-over-to-your-house
+title: Santa's Coming Over to Your House
+artist: Brooks and Dunn
+composers:
+- Don Cook and Kix Brooks
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: santascomingovertoyourhouselyricschords.pro
+    imported_at: '2026-01-02'

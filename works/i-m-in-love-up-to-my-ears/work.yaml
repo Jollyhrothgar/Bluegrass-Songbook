@@ -1,0 +1,15 @@
+id: i-m-in-love-up-to-my-ears
+title: I'm In Love Up To My Ears
+artist: Little Jimmy Dickens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iminloveuptomyearslyricschords.pro
+    imported_at: '2026-01-02'

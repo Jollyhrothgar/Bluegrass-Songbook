@@ -1,0 +1,15 @@
+id: this-dream-s-on-me
+title: This Dream's On Me
+artist: Gene Watson
+composers:
+- Fredrick G. Koller
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisdreamsonmelyricschords.pro
+    imported_at: '2026-01-02'

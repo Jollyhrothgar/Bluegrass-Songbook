@@ -1,0 +1,19 @@
+id: you-haven-t-heard-the-last-of-me
+title: You Haven't Heard The Last Of Me
+artist: Anne Murray
+composers:
+- Tom Snow and Eric Kaz
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youhaventheardthelastofmelyricsandchords.pro
+    imported_at: '2026-01-02'

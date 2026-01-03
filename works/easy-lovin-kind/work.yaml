@@ -1,0 +1,15 @@
+id: easy-lovin-kind
+title: Easy Lovin’ Kind
+artist: Mel Street
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easylovinkindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: nothing-can-stop-my-love-1
+title: Nothing Can Stop My Love
+artist: Roger Miller
+composers:
+- Roger Miller and George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothingcanstopmylovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: blue-winter
+title: Blue Winter
+artist: Connie Francis
+composers:
+- Ben Raleigh and John Gluck
+default_key: G
+tags:
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluewinterlyricschords.pro
+    imported_at: '2026-01-02'

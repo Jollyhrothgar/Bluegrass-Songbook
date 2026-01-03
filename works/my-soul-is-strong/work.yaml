@@ -1,0 +1,17 @@
+id: my-soul-is-strong
+title: My Soul Is Strong
+artist: Hank Locklin
+composers:
+- Hank Locklin and Raymond C. Davis Jr.
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mysoulisstronglyricschords.pro
+    imported_at: '2026-01-02'

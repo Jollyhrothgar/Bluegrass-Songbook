@@ -1,0 +1,17 @@
+id: down-down-down
+title: Down Down Down
+artist: Buck Owens
+composers:
+- Tommy Collins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downdowndownlyricschords.pro
+    imported_at: '2026-01-02'

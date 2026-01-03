@@ -1,0 +1,18 @@
+id: the-red-strokes
+title: The Red Strokes
+artist: Garth Brooks
+composers:
+- Jenny Yates, James Garver, Garth Brooks
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theredstrokeslyricschords.pro
+    imported_at: '2026-01-02'

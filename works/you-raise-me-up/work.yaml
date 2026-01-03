@@ -1,0 +1,17 @@
+id: you-raise-me-up
+title: You Raise Me Up
+artist: Daniel O'Donnell
+composers:
+- Brendan Graham and Rolf Lovland
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youraisemeuplyricschords.pro
+    imported_at: '2026-01-02'

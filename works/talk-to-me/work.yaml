@@ -1,0 +1,19 @@
+id: talk-to-me
+title: Talk To Me
+artist: Mickey Gilley
+composers:
+- Ace Frehley, Patsy Montana, Joe Seneca
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: talktomelyricschords.pro
+    imported_at: '2026-01-02'

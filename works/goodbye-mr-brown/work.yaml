@@ -1,0 +1,18 @@
+id: goodbye-mr-brown
+title: Goodbye Mr. Brown
+artist: Kitty Wells
+composers:
+- Jim Anglin
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodbyemrbrownlyricschords.pro
+    imported_at: '2026-01-02'

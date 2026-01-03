@@ -1,0 +1,17 @@
+id: broad-minded-man
+title: Broad Minded Man
+artist: Jim Ed Brown
+composers:
+- Jim Owen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: broadmindedmanlyricschords.pro
+    imported_at: '2026-01-02'

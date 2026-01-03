@@ -1,0 +1,17 @@
+id: one-and-one-and-one
+title: One And One And One
+artist: Gene Watson
+composers:
+- Buddy Cannon and John Northrup
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneandoneandonelyricschords.pro
+    imported_at: '2026-01-02'

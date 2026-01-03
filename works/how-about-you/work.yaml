@@ -1,0 +1,19 @@
+id: how-about-you
+title: How About You
+artist: Patty Loveless
+composers:
+- Chris Waters and Chuck Jones
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howaboutyoulyricsandchords.pro
+    imported_at: '2026-01-02'

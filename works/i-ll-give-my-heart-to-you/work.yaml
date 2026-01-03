@@ -1,0 +1,17 @@
+id: i-ll-give-my-heart-to-you
+title: I'll Give My Heart To You
+artist: Buck Owens
+composers:
+- Harlan Howard and Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illgivemyhearttoyoulyricschords.pro
+    imported_at: '2026-01-02'

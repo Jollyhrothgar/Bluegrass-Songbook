@@ -1,0 +1,18 @@
+id: he-s-the-man
+title: He's The Man
+artist: Wanda Jackson
+composers:
+- Wendell Goodman and Walter Schutz
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesthemanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: why-didn-t-i-think-of-that
+title: Why Didn't I Think Of That
+artist: Charley Pride
+composers:
+- Jack Greene and Clay Allen
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whydidntithinkofthatlyricschords.pro
+    imported_at: '2026-01-02'

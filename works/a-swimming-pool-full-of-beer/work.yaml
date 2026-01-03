@@ -1,0 +1,17 @@
+id: a-swimming-pool-full-of-beer
+title: A Swimming Pool Full Of Beer
+artist: Charlie Walker
+composers:
+- Earl Montgomery
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aswimmingpoolfullofbeerlyricschords.pro
+    imported_at: '2026-01-02'

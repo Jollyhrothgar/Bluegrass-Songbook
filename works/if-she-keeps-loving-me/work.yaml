@@ -1,0 +1,17 @@
+id: if-she-keeps-loving-me
+title: If She Keeps Loving Me
+artist: Moe Bandy
+composers:
+- Glenn Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifshekeepslovingmelyricschords.pro
+    imported_at: '2026-01-02'

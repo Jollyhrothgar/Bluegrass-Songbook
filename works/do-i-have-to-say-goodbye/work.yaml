@@ -1,0 +1,17 @@
+id: do-i-have-to-say-goodbye
+title: Do I Have To Say Goodbye
+artist: Crystal Gayle
+composers:
+- Jim McBride and Peter McCann
+default_key: Em
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doihavetosaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

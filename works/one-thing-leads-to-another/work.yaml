@@ -1,0 +1,17 @@
+id: one-thing-leads-to-another
+title: One Thing Leads To Another
+artist: Carl Smith
+composers:
+- Eddy Raven
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onethingleadstoanotherlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: does-my-memory-ever-cross-your-mind
+title: Does My Memory Ever Cross Your Mind
+artist: Webb Pierce
+composers:
+- Wayne P. Walker and Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doesmymemoryevercrossyourmindlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: a-hundred-times-today
+title: A Hundred Times Today
+artist: Lynn Anderson
+composers:
+- Liz Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ahundredtimestodaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-first-one-to-find-that-rainbow
+title: The First One To Find That Rainbow
+artist: Slim Whitman
+composers:
+- Bob Hilliard and Philip Springer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thefirstonetofindthatrainbowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: that-s-why-i-love-you-so-much
+title: That's Why I Love You So Much
+artist: Ferlin Husky
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhyiloveyousomuchlyricschords.pro
+    imported_at: '2026-01-02'

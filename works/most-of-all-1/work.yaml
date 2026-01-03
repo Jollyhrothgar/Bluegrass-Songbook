@@ -1,0 +1,17 @@
+id: most-of-all-1
+title: Most Of All
+artist: B.J. Thomas
+composers:
+- Buddy Buie and J.R. Cobb
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mostofalllyricsandchords.pro
+    imported_at: '2026-01-02'

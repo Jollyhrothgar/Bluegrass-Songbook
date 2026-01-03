@@ -1,0 +1,17 @@
+id: roll-away
+title: Roll Away
+artist: Roger Miller
+composers:
+- Roger Miller and Michael Smotherman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rollawaylyricschords.pro
+    imported_at: '2026-01-02'

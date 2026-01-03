@@ -1,0 +1,15 @@
+id: the-truth-is-i-lied
+title: The Truth Is I Lied
+artist: Gene Watson
+composers:
+- Bill Anderson and Skip Ewing
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetruthisiliedlyricschords.pro
+    imported_at: '2026-01-02'

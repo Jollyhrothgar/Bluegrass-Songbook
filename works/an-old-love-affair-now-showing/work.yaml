@@ -1,0 +1,17 @@
+id: an-old-love-affair-now-showing
+title: An Old Love Affair Now Showing
+artist: Leroy Van Dyke
+composers:
+- David Ingles
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anoldloveaffairnowshowinglyricschords.pro
+    imported_at: '2026-01-02'

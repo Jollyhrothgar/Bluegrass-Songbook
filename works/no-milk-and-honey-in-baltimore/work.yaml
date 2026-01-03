@@ -1,0 +1,15 @@
+id: no-milk-and-honey-in-baltimore
+title: No Milk And Honey In Baltimore
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nomilkandhoneyinbaltimorelyricschords.pro
+    imported_at: '2026-01-02'

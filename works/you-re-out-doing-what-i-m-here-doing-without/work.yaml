@@ -1,0 +1,15 @@
+id: you-re-out-doing-what-i-m-here-doing-without
+title: You're Out Doing What I'm Here Doing Without
+artist: Gene Watson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youreoutdoingwhatimheredoingwithoutlyricschords.pro
+    imported_at: '2026-01-02'

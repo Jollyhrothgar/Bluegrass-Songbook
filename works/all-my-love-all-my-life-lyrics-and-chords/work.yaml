@@ -1,0 +1,17 @@
+id: all-my-love-all-my-life-lyrics-and-chords
+title: All My Love All My Life Lyrics and Chords
+artist: Sonny James
+composers:
+- Sonny James and Al Matson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allmyloveallmylifelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: he-was-there-all-the-time
+title: He Was There All the Time
+artist: Connie Smith
+composers:
+- Gary Paxton
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hewasthereallthetimelyricschords.pro
+    imported_at: '2026-01-02'

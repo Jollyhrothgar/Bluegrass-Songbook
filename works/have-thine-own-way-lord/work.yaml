@@ -1,0 +1,17 @@
+id: have-thine-own-way-lord
+title: Have Thine Own Way Lord
+artist: Jim Reeves
+composers:
+- George Stebbins and Adelaide Pollard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: havethineownwaylordlyricschords.pro
+    imported_at: '2026-01-02'

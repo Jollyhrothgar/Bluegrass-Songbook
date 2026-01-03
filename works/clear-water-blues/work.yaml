@@ -1,0 +1,15 @@
+id: clear-water-blues
+title: Clear Water Blues
+artist: Alabama
+composers:
+- Teddy Gentry, Greg Fowler, Ronnie Rogers
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: clearwaterblueslyricschords.pro
+    imported_at: '2026-01-02'

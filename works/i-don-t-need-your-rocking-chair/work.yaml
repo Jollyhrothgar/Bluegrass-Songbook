@@ -1,0 +1,17 @@
+id: i-don-t-need-your-rocking-chair
+title: I Don't Need Your Rocking Chair
+artist: George Jones
+composers:
+- Frank Dycus, Billy Yates, Kerry Kurt Phillips
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontneedyourrockingchairlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: he-s-got-a-way-with-women
+title: He's Got A Way With Women
+artist: Bob Luman
+composers:
+- Steve Wariner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesgotawaywithwomenlyricsandchords.pro
+    imported_at: '2026-01-02'

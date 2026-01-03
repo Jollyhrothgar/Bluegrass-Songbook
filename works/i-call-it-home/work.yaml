@@ -1,0 +1,15 @@
+id: i-call-it-home
+title: I Call It Home
+artist: Paul Williams and The Victory Trio
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icallithomelyricschords.pro
+    imported_at: '2026-01-02'

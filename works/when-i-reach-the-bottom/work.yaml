@@ -1,0 +1,19 @@
+id: when-i-reach-the-bottom
+title: When I Reach The Bottom
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Lorene Allen
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenireachthebottomlyricschords.pro
+    imported_at: '2026-01-02'

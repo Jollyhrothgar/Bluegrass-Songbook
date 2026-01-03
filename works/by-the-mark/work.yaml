@@ -1,0 +1,17 @@
+id: by-the-mark
+title: By The Mark
+artist: Jamie Dailey and Darrin Vincent
+composers:
+- David Todd Rawlings and Gillian Howard Welch
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bythemarklyricschords.pro
+    imported_at: '2026-01-02'

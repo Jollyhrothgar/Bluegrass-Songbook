@@ -1,0 +1,18 @@
+id: put-on-your-old-grey-bonnet
+title: Put On Your Old Grey Bonnet
+artist: Jimmy Dean
+composers:
+- Percy Wenrich and Stanley Murphy
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: putonyouroldgreybonnetlyricschords.pro
+    imported_at: '2026-01-02'

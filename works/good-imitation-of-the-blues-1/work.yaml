@@ -1,0 +1,19 @@
+id: good-imitation-of-the-blues-1
+title: Good Imitation Of The Blues
+artist: Larry Sparks
+composers:
+- Patrick Brayer
+default_key: C
+tags:
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodimitationoftheblueslyricschords.pro
+    imported_at: '2026-01-02'

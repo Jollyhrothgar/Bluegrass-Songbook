@@ -1,0 +1,18 @@
+id: touch-and-go-heart
+title: Touch And Go Heart
+artist: Kitty Wells
+composers:
+- Rusty Gabbard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: touchandgoheartlyricschords.pro
+    imported_at: '2026-01-02'

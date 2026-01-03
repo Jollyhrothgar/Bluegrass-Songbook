@@ -1,0 +1,20 @@
+id: you-took-him-off-my-hands
+title: You Took Him Off My Hands
+artist: Patsy Cline
+composers:
+- Harlan Howard, Wynn Stewart, Skeets McDonald
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youtookhimoffmyhandslyricschords.pro
+    imported_at: '2026-01-02'

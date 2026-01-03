@@ -1,0 +1,17 @@
+id: can-t-help-but-wonder
+title: Can't Help But Wonder
+artist: Barbara Mandrell
+composers:
+- Sharon Sanders
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canthelpbutwonderlyricschords.pro
+    imported_at: '2026-01-02'

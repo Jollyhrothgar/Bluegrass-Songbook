@@ -1,0 +1,17 @@
+id: it-makes-you-happy
+title: It Makes You Happy
+artist: Lynn Anderson
+composers:
+- Gene Hood
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itmakesyouhappylyricschords.pro
+    imported_at: '2026-01-02'

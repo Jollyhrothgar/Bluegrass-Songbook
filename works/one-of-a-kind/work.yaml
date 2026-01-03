@@ -1,0 +1,15 @@
+id: one-of-a-kind
+title: One Of A Kind
+artist: Ray Price
+composers:
+- Lee Dresser
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneofakindlyricschords.pro
+    imported_at: '2026-01-02'

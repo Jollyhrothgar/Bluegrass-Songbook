@@ -1,0 +1,17 @@
+id: the-church-back-home
+title: The Church Back Home
+artist: The Country Gentlemen
+composers:
+- John Duffey and Cindy Davis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thechurchbackhomelyricschords.pro
+    imported_at: '2026-01-02'

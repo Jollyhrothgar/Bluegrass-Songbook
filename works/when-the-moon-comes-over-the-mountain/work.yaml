@@ -1,0 +1,14 @@
+id: when-the-moon-comes-over-the-mountain
+title: When The Moon Comes Over The Mountain
+artist: Kitty Wells
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthemooncomesoverthemountainlyricschords.pro
+    imported_at: '2026-01-02'

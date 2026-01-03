@@ -1,0 +1,19 @@
+id: far-far-away
+title: Far Far Away
+artist: Roy Orbison
+composers:
+- Don Gibson
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: farfarawaylyricschords.pro
+    imported_at: '2026-01-02'

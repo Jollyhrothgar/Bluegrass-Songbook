@@ -1,0 +1,17 @@
+id: sleeping-at-the-foot-of-the-bed
+title: Sleeping At The Foot Of The Bed
+artist: Little Jimmy Dickens
+composers:
+- Eugene Wilson and Luther Patrick
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sleepingatthefootofthebedlyricschords.pro
+    imported_at: '2026-01-02'

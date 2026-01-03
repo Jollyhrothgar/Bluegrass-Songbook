@@ -1,0 +1,17 @@
+id: some-of-those-memories
+title: Some Of Those Memories
+artist: Faron Young
+composers:
+- Johnny Russell and Vince Finneran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: someofthosememorieslyricschords.pro
+    imported_at: '2026-01-02'

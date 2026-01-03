@@ -1,0 +1,17 @@
+id: till-then-1
+title: Till Then
+artist: Cal Smith
+composers:
+- Max D. Barnes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillthenlyricschords.pro
+    imported_at: '2026-01-02'

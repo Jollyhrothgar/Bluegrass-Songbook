@@ -1,0 +1,17 @@
+id: true-love-is-the-greatest-thing
+title: True Love Is The Greatest Thing
+artist: George Morgan
+composers:
+- Lloyd Copas
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: trueloveisthegreatestthinglyricschords.pro
+    imported_at: '2026-01-02'

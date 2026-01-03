@@ -1,0 +1,17 @@
+id: a-new-baby-for-christmas
+title: A New Baby For Christmas
+artist: George Jones
+composers:
+- George Jones and Lester Blackwell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anewbabyforChristmaslyricschords.pro
+    imported_at: '2026-01-02'

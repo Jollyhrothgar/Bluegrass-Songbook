@@ -1,0 +1,17 @@
+id: when-the-cactus-is-in-bloom
+title: When The Cactus Is In Bloom
+artist: Bill Monroe
+composers:
+- Jimmie Rodgers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthecactusisinbloomlyricschords.pro
+    imported_at: '2026-01-02'

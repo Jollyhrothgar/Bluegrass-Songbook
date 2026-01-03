@@ -1,0 +1,17 @@
+id: i-just-came-home-to-count-the-memories
+title: I Just Came Home to Count the Memories
+artist: Cal Smith
+composers:
+- Glenn Ray
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcamehometocountthememorieslyricschords.pro
+    imported_at: '2026-01-02'

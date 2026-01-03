@@ -1,0 +1,15 @@
+id: make-room-in-your-heart-for-a-memory
+title: Make Room In Your Heart For A Memory
+artist: Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makeroominyourheartforamemorylyricschords.pro
+    imported_at: '2026-01-02'

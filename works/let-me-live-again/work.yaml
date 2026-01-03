@@ -1,0 +1,18 @@
+id: let-me-live-again
+title: Let Me Live Again
+artist: Charley Pride
+composers:
+- Alex Zanetis
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letmeliveagainlyricschords.pro
+    imported_at: '2026-01-02'

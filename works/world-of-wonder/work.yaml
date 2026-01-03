@@ -1,0 +1,17 @@
+id: world-of-wonder
+title: World Of Wonder
+artist: Ronnie Milsap
+composers:
+- James Darrell Scott
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: worldofwonderlyricschords.pro
+    imported_at: '2026-01-02'

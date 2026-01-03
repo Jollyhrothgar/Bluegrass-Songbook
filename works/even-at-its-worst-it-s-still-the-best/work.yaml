@@ -1,0 +1,18 @@
+id: even-at-its-worst-it-s-still-the-best
+title: Even At Its Worst It's Still The Best
+artist: Gene Watson
+composers:
+- Buzz Rabin
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: evenatitsworstitsstillthebestlyricschords.pro
+    imported_at: '2026-01-02'

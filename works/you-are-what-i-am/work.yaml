@@ -1,0 +1,17 @@
+id: you-are-what-i-am
+title: You Are What I Am
+artist: J.D. Crowe
+composers:
+- Gordon Lightfoot
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youarewhatiamlyricschords.pro
+    imported_at: '2026-01-02'

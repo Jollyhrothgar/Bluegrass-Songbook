@@ -1,0 +1,22 @@
+id: i-call-him
+title: I Call Him
+artist: Johnny Cash
+composers:
+- Johnny Cash and Ray Cash
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icallhimlyricschords.pro
+    imported_at: '2026-01-02'

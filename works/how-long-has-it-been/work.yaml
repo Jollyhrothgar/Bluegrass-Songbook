@@ -1,0 +1,15 @@
+id: how-long-has-it-been
+title: How Long Has It Been
+artist: Jim Reeves
+composers:
+- Mosie Lister
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howlonghasitbeenlyricschords.pro
+    imported_at: '2026-01-02'

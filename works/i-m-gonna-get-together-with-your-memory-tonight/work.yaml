@@ -1,0 +1,15 @@
+id: i-m-gonna-get-together-with-your-memory-tonight
+title: I'm Gonna Get Together With Your Memory Tonight
+artist: Charlie Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnagettogetherwithyourmemorytonightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: give-me-just-a-little-bit-more-time
+title: Give Me Just A Little Bit More Time
+artist: Marty Stuart
+composers:
+- Albert E. Brumley
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givemejustalittlebitmoretimelyricschords.pro
+    imported_at: '2026-01-02'

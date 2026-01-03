@@ -1,0 +1,18 @@
+id: jesus-christ-what-a-man
+title: Jesus Christ What A Man
+artist: The Oak Ridge Boys
+composers:
+- Billy Joe Shaver and Bobby Bare
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: JesusChristwhatamanlyricschords.pro
+    imported_at: '2026-01-02'

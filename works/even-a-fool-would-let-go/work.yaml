@@ -1,0 +1,15 @@
+id: even-a-fool-would-let-go
+title: Even A Fool Would Let Go
+artist: John Anderson
+composers:
+- Kerry Chater and Tom Snow
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: evenafoolwouldletgolyricschords.pro
+    imported_at: '2026-01-02'

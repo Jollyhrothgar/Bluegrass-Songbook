@@ -1,0 +1,17 @@
+id: what-i-ve-got-in-mind
+title: What I've Got In Mind
+artist: Billie Jo Spears
+composers:
+- Kenny O'dell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whativegotinmindlyricschords.pro
+    imported_at: '2026-01-02'

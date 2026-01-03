@@ -1,0 +1,18 @@
+id: i-don-t-want-you-to-go
+title: I Don't Want You To Go
+artist: Tanya Tucker
+composers:
+- Bruce Roberts and Allee Willis
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwantyoutogolyricschords.pro
+    imported_at: '2026-01-02'

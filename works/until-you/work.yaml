@@ -1,0 +1,18 @@
+id: until-you
+title: Until You
+artist: The Oak Ridge Boys
+composers:
+- Jimbeau Hinson and Rusty Golden
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: untilyoulyricschords.pro
+    imported_at: '2026-01-02'

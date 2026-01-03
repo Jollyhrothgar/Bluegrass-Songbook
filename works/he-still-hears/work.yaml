@@ -1,0 +1,17 @@
+id: he-still-hears
+title: He Still Hears
+artist: Flatt Lonesome
+composers:
+- Dolton Robertson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hestillhearslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-living-in-sunshine
+title: I'm Living In Sunshine
+artist: Wynn Stewart
+composers:
+- William Rodgers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlivinginsunshinelyricschords.pro
+    imported_at: '2026-01-02'

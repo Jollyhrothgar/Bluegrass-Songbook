@@ -1,0 +1,19 @@
+id: i-loved-you-once
+title: I Loved You Once
+artist: Ernest Tubb
+composers:
+- Rex Griffin and Jimmie Davis
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ilovedyouoncelyricschords.pro
+    imported_at: '2026-01-02'

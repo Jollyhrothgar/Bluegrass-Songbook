@@ -1,0 +1,17 @@
+id: tonight-we-steal-heaven-again
+title: Tonight We Steal Heaven Again
+artist: Johnny Bush
+composers:
+- Buzz Rabin and James Johnson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tonightwestealheavenagainlyricschords.pro
+    imported_at: '2026-01-02'

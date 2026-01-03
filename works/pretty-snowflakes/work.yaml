@@ -1,0 +1,17 @@
+id: pretty-snowflakes
+title: Pretty Snowflakes
+artist: Patti Page
+composers:
+- Herbert Plattner, Luigi Creatore, Hugo Peretti
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prettysnowflakeslyricschords.pro
+    imported_at: '2026-01-02'

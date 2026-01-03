@@ -1,0 +1,17 @@
+id: after-all-we-have-meant-to-each-other
+title: After All (We Have Meant To Each Other)
+artist: Hawkshaw Hawkins
+composers:
+- Wesley Tuttle and Lou Wayne
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afterallwehavemeanttoeachotherlyricschords.pro
+    imported_at: '2026-01-02'

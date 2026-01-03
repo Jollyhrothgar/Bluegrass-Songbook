@@ -1,0 +1,17 @@
+id: away-out-there
+title: Away Out There
+artist: Bob Wills
+composers:
+- Bob Nolan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awayouttherelyricschords.pro
+    imported_at: '2026-01-02'

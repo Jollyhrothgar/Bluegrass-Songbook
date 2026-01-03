@@ -1,0 +1,15 @@
+id: i-m-nothing-to-you
+title: I'm Nothing To You
+artist: Billy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnothingtoyoulyricschords.pro
+    imported_at: '2026-01-02'

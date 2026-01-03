@@ -1,0 +1,17 @@
+id: i-don-t-wanna-play-house
+title: I Don't Wanna Play House
+artist: Tammy Wynette
+composers:
+- Billy Sherrill and Glenn Sutton
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwannaplayhouselyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: sadie-s-got-her-new-dress-on
+title: Sadie's Got Her New Dress On
+artist: Doyle Lawson
+composers:
+- Connie Leigh
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sadiesgothernewdressonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,13 @@
+id: lower-than-lonesome
+title: Lower Than Lonesome
+artist: Ronnie Reno
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lowerthanlonesomelyricschords.pro
+    imported_at: '2026-01-02'

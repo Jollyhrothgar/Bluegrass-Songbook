@@ -1,0 +1,17 @@
+id: every-minute-i-want-jesus-by-my-side
+title: Every Minute I Want Jesus By My Side
+artist: Johnny Paycheck
+composers:
+- Country Johnny Mathis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everyminuteiwantJesusbymysidelyricschords.pro
+    imported_at: '2026-01-02'

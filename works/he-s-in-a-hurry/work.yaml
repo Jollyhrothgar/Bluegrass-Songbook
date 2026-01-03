@@ -1,0 +1,18 @@
+id: he-s-in-a-hurry
+title: He's In A Hurry
+artist: Johnny Paycheck
+composers:
+- Joe Poovey
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hesinahurrylyricschords.pro
+    imported_at: '2026-01-02'

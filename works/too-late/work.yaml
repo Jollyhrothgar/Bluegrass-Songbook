@@ -1,0 +1,17 @@
+id: too-late
+title: Too Late
+artist: Ray Price
+composers:
+- Jimmy Wakely
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toolatelyricschords.pro
+    imported_at: '2026-01-02'

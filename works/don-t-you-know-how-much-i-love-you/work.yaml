@@ -1,0 +1,18 @@
+id: don-t-you-know-how-much-i-love-you
+title: Don't You Know How Much I Love You
+artist: Ronnie Milsap
+composers:
+- Michael D. Stewart and Dan Edward Williams
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontyouknowhowmuchiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

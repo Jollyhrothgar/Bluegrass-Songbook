@@ -1,0 +1,17 @@
+id: i-m-learning-to-love-her
+title: I'm Learning To Love Her
+artist: Charlie Pride
+composers:
+- Johnny Duncan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imlearningtoloveherlyricschords.pro
+    imported_at: '2026-01-02'

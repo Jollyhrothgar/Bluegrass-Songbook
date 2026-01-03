@@ -1,0 +1,17 @@
+id: who-walks-in-when-i-walk-out
+title: Who Walks In When I Walk Out
+artist: Bob Wills
+composers:
+- Ralph Freed, Al Goodhart, Al Hoffman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whowalksinwheniwalkoutlyricschords.pro
+    imported_at: '2026-01-02'

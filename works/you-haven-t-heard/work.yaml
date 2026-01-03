@@ -1,0 +1,17 @@
+id: you-haven-t-heard
+title: You Haven't Heard
+artist: Stonewall Jackson
+composers:
+- Stonewall Jackson and Juanita Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youhaventheardlyricschords.pro
+    imported_at: '2026-01-02'

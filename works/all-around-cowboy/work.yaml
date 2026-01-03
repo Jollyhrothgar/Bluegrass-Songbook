@@ -1,0 +1,22 @@
+id: all-around-cowboy
+title: All Around Cowboy
+artist: Johnny Cash
+composers:
+- Jack W. Routh and Len Pollard
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allaroundcowboylyricsandchords.pro
+    imported_at: '2026-01-02'

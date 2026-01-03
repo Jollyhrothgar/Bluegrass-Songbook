@@ -1,0 +1,18 @@
+id: just-too-tired-to-fight-it
+title: Just Too Tired To Fight It
+artist: Travis Tritt
+composers:
+- Stewart Harris and Travis Tritt
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justtootiredtofightitlyricschords.pro
+    imported_at: '2026-01-02'

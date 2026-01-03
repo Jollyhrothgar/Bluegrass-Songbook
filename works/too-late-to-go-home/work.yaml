@@ -1,0 +1,17 @@
+id: too-late-to-go-home
+title: Too Late To Go Home
+artist: Johnny Rodriguez
+composers:
+- Len Chera
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toolatetogohomelyricschords.pro
+    imported_at: '2026-01-02'

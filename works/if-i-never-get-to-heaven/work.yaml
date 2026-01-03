@@ -1,0 +1,18 @@
+id: if-i-never-get-to-heaven
+title: If I Never Get To Heaven
+artist: Eddy Arnold
+composers:
+- Jenny Lou Carson and Roy Botkin
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifinevergettoheavenlyricschords.pro
+    imported_at: '2026-01-02'

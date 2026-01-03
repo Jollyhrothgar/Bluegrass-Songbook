@@ -1,0 +1,19 @@
+id: the-power-of-positive-drinking
+title: The Power Of Positive Drinking
+artist: Mickey Gilley
+composers:
+- Rick Klang and Don Pfrimmer
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thepowerofpositivedrinkinglyricschords.pro
+    imported_at: '2026-01-02'

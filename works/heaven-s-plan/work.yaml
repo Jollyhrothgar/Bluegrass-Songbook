@@ -1,0 +1,18 @@
+id: heaven-s-plan
+title: Heaven's Plan
+artist: Lefty Frizzel
+composers:
+- Wayne P. Walker
+default_key: Dm
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavensplanlyricschords.pro
+    imported_at: '2026-01-02'

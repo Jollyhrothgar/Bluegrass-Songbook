@@ -1,0 +1,17 @@
+id: nobody-s-business-but-my-own
+title: Nobody's Business But My Own
+artist: Jean Shepard
+composers:
+- Irving Taylor
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodysbusinessbutmyownlyricschords.pro
+    imported_at: '2026-01-02'

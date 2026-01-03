@@ -1,0 +1,17 @@
+id: i-just-can-t-go-on-dying-like-this
+title: I Just Can't Go On Dying Like This
+artist: George Strait
+composers:
+- George Strait and Bubba Strait
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcantgoondyinglikethislyricschords.pro
+    imported_at: '2026-01-02'

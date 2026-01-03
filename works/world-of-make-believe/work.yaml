@@ -1,0 +1,17 @@
+id: world-of-make-believe
+title: World Of Make Believe
+artist: Bill Anderson
+composers:
+- Pee Wee Maddux, Marion Carpenter, Pete McCord
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: worldofmakebelievelyricschords.pro
+    imported_at: '2026-01-02'

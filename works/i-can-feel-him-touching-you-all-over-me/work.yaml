@@ -1,0 +1,17 @@
+id: i-can-feel-him-touching-you-all-over-me
+title: I Can Feel Him Touching You All Over Me
+artist: Johnny Bush
+composers:
+- Kent Westberry, Max D. Barnes, Harlan Sanders
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanfeelhimtouchingyouallovermelyricschords.pro
+    imported_at: '2026-01-02'

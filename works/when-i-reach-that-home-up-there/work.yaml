@@ -1,0 +1,17 @@
+id: when-i-reach-that-home-up-there
+title: When I Reach That Home Up There
+artist: Jamie Dailey and Darrin Vincent
+composers:
+- Jamie Dailey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenireachthathomeuptherelyricschords.pro
+    imported_at: '2026-01-02'

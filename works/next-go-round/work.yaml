@@ -1,0 +1,19 @@
+id: next-go-round
+title: Next Go Round
+artist: Old Crow Medicine Show
+composers:
+- Ketch Secor And Willie Watson
+default_key: C
+tags:
+- ClassicCountry
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nextgoroundlyricschords.pro
+    imported_at: '2026-01-02'

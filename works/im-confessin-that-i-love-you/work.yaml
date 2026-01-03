@@ -1,0 +1,17 @@
+id: im-confessin-that-i-love-you
+title: I’m Confessin’ (That I love you)
+artist: Frank Ifield
+composers:
+- Doc Daugherty, Al J. Neiburg, Ellis Reynolds
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imconfessinthatiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

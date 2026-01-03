@@ -1,0 +1,17 @@
+id: get-on-that-road-to-glory
+title: Get On That Road To Glory
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Gladys Stacey, Louise Certain, Benny Martin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: getonthatroadtoglorylyricschords.pro
+    imported_at: '2026-01-02'

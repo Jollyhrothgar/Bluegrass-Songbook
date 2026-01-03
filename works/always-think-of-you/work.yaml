@@ -1,0 +1,17 @@
+id: always-think-of-you
+title: Always Think Of You
+artist: Billy Walker
+composers:
+- Kurt Baumann, Ray Pulley, Billy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alwaysthinkofyoulyricschords.pro
+    imported_at: '2026-01-02'

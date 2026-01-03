@@ -1,0 +1,19 @@
+id: dial-l-o-v-e-for-me-lyrics-chords
+title: Dial L.O.V.E. For Me Lyrics chords
+artist: Hank Thompson
+composers:
+- Billy Gray and Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dialloveformelyricsandchords.pro
+    imported_at: '2026-01-02'

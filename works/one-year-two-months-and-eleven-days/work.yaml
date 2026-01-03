@@ -1,0 +1,17 @@
+id: one-year-two-months-and-eleven-days
+title: One Year Two Months And Eleven Days
+artist: Ronnie Reno
+composers:
+- Ronnie Reno and Wayne Carson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneyeartwomonthsandelevendayslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: jesus-is-the-best-thing-that-ever-happened-to-me
+title: Jesus Is The Best Thing That Ever Happened To Me
+artist: Wanda Jackson
+default_key: G
+tags:
+- Rockabilly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusisthebestthingthateverhappenedtomelyricschords.pro
+    imported_at: '2026-01-02'

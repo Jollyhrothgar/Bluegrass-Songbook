@@ -1,0 +1,17 @@
+id: down-by-the-railroad-track
+title: Down By The Railroad Track
+artist: Lefty Frizzel
+composers:
+- Dallas Frazier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downbytherailroadtracklyricschords.pro
+    imported_at: '2026-01-02'

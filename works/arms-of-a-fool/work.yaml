@@ -1,0 +1,19 @@
+id: arms-of-a-fool
+title: Arms of a Fool
+artist: Mel Tillis
+composers:
+- Ronal McCown
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: armsofafoollyricschords.pro
+    imported_at: '2026-01-02'

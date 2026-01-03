@@ -1,0 +1,17 @@
+id: cry-baby-heart
+title: Cry Baby Heart
+artist: George Morgan
+composers:
+- Leon Payne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crybabyheartlyricschords.pro
+    imported_at: '2026-01-02'

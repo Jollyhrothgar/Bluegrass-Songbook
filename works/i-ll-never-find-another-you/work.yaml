@@ -1,0 +1,15 @@
+id: i-ll-never-find-another-you
+title: I'll Never Find Another You
+artist: Sonny James
+composers:
+- Tom Springfield
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverfindanotheryoulyricschords.pro
+    imported_at: '2026-01-02'

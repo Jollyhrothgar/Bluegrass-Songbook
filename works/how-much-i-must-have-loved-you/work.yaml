@@ -1,0 +1,15 @@
+id: how-much-i-must-have-loved-you
+title: How Much I Must Have Loved You
+artist: Faron Young
+composers:
+- Danny Dill
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howmuchimusthavelovedyoulyricschords.pro
+    imported_at: '2026-01-02'

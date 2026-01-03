@@ -1,0 +1,15 @@
+id: love-to-remember
+title: Love To Remember
+artist: Porter Wagoner
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovetorememberlyricschords.pro
+    imported_at: '2026-01-02'

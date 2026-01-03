@@ -1,0 +1,17 @@
+id: i-cheated-on-a-good-womans-love
+title: I Cheated On A Good Woman’s Love
+artist: Billy Crash Craddock
+composers:
+- Del Bryant
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icheatedonagoodwomanslovelyricschords.pro
+    imported_at: '2026-01-02'

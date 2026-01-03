@@ -1,0 +1,17 @@
+id: every-time-the-world-goes-round
+title: Every Time The World Goes Round
+artist: Bob Luman
+composers:
+- Bob Montgomery and Earl Sinks
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everytimetheworldgoesroundlyricschords.pro
+    imported_at: '2026-01-02'

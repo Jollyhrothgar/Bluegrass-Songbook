@@ -1,0 +1,17 @@
+id: hold-on-partner
+title: Hold On Partner
+artist: Roy Rogers and Clint Black
+composers:
+- Bobby Paine and Larson Paine
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdonpartnerlyricschords.pro
+    imported_at: '2026-01-02'

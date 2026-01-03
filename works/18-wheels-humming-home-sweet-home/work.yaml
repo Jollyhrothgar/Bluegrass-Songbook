@@ -1,0 +1,17 @@
+id: 18-wheels-humming-home-sweet-home
+title: 18 Wheels Humming Home Sweet Home
+artist: Mac Wiseman
+composers:
+- Jim Fagan
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 18wheelshumminghomesweethomelyricschords.pro
+    imported_at: '2026-01-02'

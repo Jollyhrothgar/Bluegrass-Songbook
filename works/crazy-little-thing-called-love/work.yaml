@@ -1,0 +1,17 @@
+id: crazy-little-thing-called-love
+title: Crazy Little Thing Called Love
+artist: Dwight Yoakam
+composers:
+- Freddie Mercury
+default_key: F
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: crazylittlethingcalledlovelyricschords.pro
+    imported_at: '2026-01-02'

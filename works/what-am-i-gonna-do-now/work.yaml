@@ -1,0 +1,15 @@
+id: what-am-i-gonna-do-now
+title: What Am I Gonna Do Now
+artist: Ferlin Husky
+composers:
+- Lois Mann, Henry Bernard, Murray Burns
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatamigonnadonowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: why-me-lord
+title: Why Me Lord
+artist: Kris Kristofferson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whymeLordlyricschords.pro
+    imported_at: '2026-01-02'

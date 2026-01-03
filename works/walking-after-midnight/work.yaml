@@ -1,0 +1,20 @@
+id: walking-after-midnight
+title: Walking After Midnight
+artist: Patsy Cline
+composers:
+- Don Hecht and Alan Block
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: walkingaftermidnightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: open-up-your-heart
+title: Open Up Your Heart
+artist: Wynn Stewart
+composers:
+- Lance Guyness
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: openupyourheartlyrics-chords.pro
+    imported_at: '2026-01-02'

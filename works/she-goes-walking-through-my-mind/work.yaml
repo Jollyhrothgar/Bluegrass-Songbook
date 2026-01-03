@@ -1,0 +1,16 @@
+id: she-goes-walking-through-my-mind
+title: She Goes Walking Through My Mind
+artist: Billy Walker
+default_key: D
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Shegoeswalkingthroughmymindlyricschords.pro
+    imported_at: '2026-01-02'

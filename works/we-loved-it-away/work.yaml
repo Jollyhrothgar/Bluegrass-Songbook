@@ -1,0 +1,17 @@
+id: we-loved-it-away
+title: We Loved It Away
+artist: George Jones
+composers:
+- George Richey and Carmol Taylor
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weloveditawaylyricschords.pro
+    imported_at: '2026-01-02'

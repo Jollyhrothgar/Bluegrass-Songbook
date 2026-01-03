@@ -1,0 +1,15 @@
+id: come-holy-spirit
+title: Come Holy Spirit
+artist: The Heritage Singers
+composers:
+- Gloria Gaither and William Gaither
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comeholyspiritlyricschords.pro
+    imported_at: '2026-01-02'

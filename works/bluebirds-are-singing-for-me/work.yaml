@@ -1,0 +1,17 @@
+id: bluebirds-are-singing-for-me
+title: Bluebirds Are Singing For Me
+artist: Mac Wiseman
+composers:
+- Lester Flatt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluebirdsaresingingformelyricschords.pro
+    imported_at: '2026-01-02'

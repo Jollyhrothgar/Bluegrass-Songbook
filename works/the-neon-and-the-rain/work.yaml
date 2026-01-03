@@ -1,0 +1,17 @@
+id: the-neon-and-the-rain
+title: The Neon And The Rain
+artist: Freddie Hart
+composers:
+- Gene Crysler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theneonandtherainlyricschords.pro
+    imported_at: '2026-01-02'

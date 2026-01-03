@@ -1,0 +1,19 @@
+id: i-won-t-gamble-with-your-love
+title: I Won't Gamble With Your Love
+artist: Patty Loveless
+composers:
+- Kevin Welch and Gary Scruggs
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwontgamblewithyourlovelyricschords.pro
+    imported_at: '2026-01-02'

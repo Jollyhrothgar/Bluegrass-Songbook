@@ -1,0 +1,17 @@
+id: jesus-and-the-atheist
+title: Jesus And The Atheist
+artist: Eddy Arnold
+composers:
+- Billy Austine and Happy Rhodes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusandtheatheistlyricschords.pro
+    imported_at: '2026-01-02'

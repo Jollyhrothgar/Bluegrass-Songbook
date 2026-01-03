@@ -1,0 +1,18 @@
+id: singing-hills
+title: Singing Hills
+artist: Slim Whitman
+composers:
+- Mack David, Dick Sanford, Sammy Mysels
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singinghillslyricschords.pro
+    imported_at: '2026-01-02'

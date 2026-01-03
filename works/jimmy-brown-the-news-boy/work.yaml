@@ -1,0 +1,17 @@
+id: jimmy-brown-the-news-boy
+title: Jimmy Brown The News Boy
+artist: Lester Flatt and Earl Scuggs
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jimmybrownthenewsboylyricschords.pro
+    imported_at: '2026-01-02'

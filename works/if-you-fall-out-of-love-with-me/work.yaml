@@ -1,0 +1,17 @@
+id: if-you-fall-out-of-love-with-me
+title: If You Fall Out Of Love With Me
+artist: Buck Owens
+composers:
+- Buck Owens and Bonnie Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoufalloutoflovewithmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-lied-to-me-1
+title: You Lied To Me
+artist: Charlie Walker
+composers:
+- Bill Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youliedtomelyricschords.pro
+    imported_at: '2026-01-02'

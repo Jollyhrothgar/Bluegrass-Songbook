@@ -1,0 +1,15 @@
+id: i-want-to-with-you
+title: I Want To With You
+artist: David Ball
+composers:
+- Steve Bogard and Jeff Stevens
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttowithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: god-keeps-the-wild-flowers-blooming
+title: God Keeps The Wild Flowers Blooming
+artist: George Jones
+composers:
+- Bobby Abshire
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godkeepsthewildflowersbloominglyricschords.pro
+    imported_at: '2026-01-02'

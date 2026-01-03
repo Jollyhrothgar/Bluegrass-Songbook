@@ -1,0 +1,17 @@
+id: look-of-a-lady-in-love
+title: Look Of A Lady In Love
+artist: Johnny Duncan
+composers:
+- Lewis Anderson and Brent Mason
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookofaladyinlovelyricschords.pro
+    imported_at: '2026-01-02'

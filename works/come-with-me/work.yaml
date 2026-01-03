@@ -1,0 +1,19 @@
+id: come-with-me
+title: Come With Me
+artist: Waylon Jennings
+composers:
+- Chuck Howard
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comewithmelyricschords.pro
+    imported_at: '2026-01-02'

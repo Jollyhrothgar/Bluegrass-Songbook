@@ -1,0 +1,18 @@
+id: north-to-alaska
+title: North To Alaska
+artist: Johnny Horton
+composers:
+- Mike Phillips
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: northtoalaskalyricschords.pro
+    imported_at: '2026-01-02'

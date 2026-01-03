@@ -1,0 +1,18 @@
+id: i-saw-god-today
+title: I Saw God Today
+artist: George Strait
+composers:
+- Rodney Clawson, Monty Criswell, Wade Allen Kirby
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isawgodtodaylyricschords.pro
+    imported_at: '2026-01-02'

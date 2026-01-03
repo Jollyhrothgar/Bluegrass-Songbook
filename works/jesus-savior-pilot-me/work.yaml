@@ -1,0 +1,17 @@
+id: jesus-savior-pilot-me
+title: Jesus Savior Pilot Me
+artist: George Morgan
+composers:
+- William York
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesussaviorpilotmelyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: bubbling-in-my-soul
+title: Bubbling In My Soul
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Tommy James and Jerry Organ
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bubblinginmysoullyricschords.pro
+    imported_at: '2026-01-02'

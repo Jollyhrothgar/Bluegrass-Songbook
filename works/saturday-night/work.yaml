@@ -1,0 +1,17 @@
+id: saturday-night
+title: Saturday Night
+artist: Webb Pierce
+composers:
+- Sue Brewer, Max T. Powell, Michael Webb Pierce
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: saturdaynightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: desperados-waiting-for-a-train
+title: Desperados Waiting for a Train
+artist: The Highwaymen
+composers:
+- Guy Clark
+default_key: Am
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: desperadoswaitingforatrainlyricschords.pro
+    imported_at: '2026-01-02'

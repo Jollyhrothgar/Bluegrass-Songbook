@@ -1,0 +1,15 @@
+id: happy-holidays
+title: Happy Holidays
+artist: Alabama
+composers:
+- Ronnie Rogers and Swain Shafer
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: happyholidayslyricschords.pro
+    imported_at: '2026-01-02'

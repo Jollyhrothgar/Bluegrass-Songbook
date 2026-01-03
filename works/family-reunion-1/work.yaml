@@ -1,0 +1,18 @@
+id: family-reunion-1
+title: Family Reunion
+artist: David Allan Coe
+default_key: G
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: familyreunionlyricschords.pro
+    imported_at: '2026-01-02'

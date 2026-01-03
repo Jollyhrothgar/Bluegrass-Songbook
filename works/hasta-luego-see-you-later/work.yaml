@@ -1,0 +1,15 @@
+id: hasta-luego-see-you-later
+title: Hasta Luego (See You Later)
+artist: Hank Locklin
+composers:
+- Johnny Hicks
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hastaluegoseeyoulaterlyricschords.pro
+    imported_at: '2026-01-02'

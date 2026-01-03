@@ -1,0 +1,17 @@
+id: stuck-right-in-the-middle-of-your-love
+title: Stuck Right In The Middle Of Your Love
+artist: Charly McClain
+composers:
+- Bob Morrison and Johnny McRae
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stuckrightinthemiddleofyourlovelyricschords.pro
+    imported_at: '2026-01-02'

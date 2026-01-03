@@ -1,0 +1,17 @@
+id: colors-i-m-gonna-paint-the-town
+title: Colors I'm Gonna Paint The Town
+artist: Buck Owens
+composers:
+- Buck Owens and Buddy Alan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: colorsimgonnapaintthetownlyricschords.pro
+    imported_at: '2026-01-02'

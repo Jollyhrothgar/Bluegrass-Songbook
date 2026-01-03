@@ -1,0 +1,17 @@
+id: your-mother-still-prays-for-you-jack
+title: Your Mother Still Prays For You Jack
+artist: Lester Flatt and Earl Scruggs
+composers:
+- A.P. Carter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourmotherstillpraysforyoujacklyricschords.pro
+    imported_at: '2026-01-02'

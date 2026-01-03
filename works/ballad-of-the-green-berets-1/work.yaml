@@ -1,0 +1,17 @@
+id: ballad-of-the-green-berets-1
+title: Ballad Of The Green Berets
+artist: SSgt. Barry Sadler
+composers:
+- Robin Moore and Barry Sadler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: balladofthegreenberetslyricschords.pro
+    imported_at: '2026-01-02'

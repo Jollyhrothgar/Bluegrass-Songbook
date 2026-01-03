@@ -1,0 +1,15 @@
+id: everything-i-own
+title: Everything I Own
+artist: Crystal Gayle
+composers:
+- David Gates
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingiownlyricschords.pro
+    imported_at: '2026-01-02'

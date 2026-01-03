@@ -1,0 +1,17 @@
+id: it-s-a-lovely-lovely-world
+title: It's A Lovely Lovely World
+artist: Carl Smith
+composers:
+- Boudleaux Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsalovelylovelyworldlyricschords.pro
+    imported_at: '2026-01-02'

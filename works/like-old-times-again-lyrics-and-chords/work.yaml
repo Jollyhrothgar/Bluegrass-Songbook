@@ -1,0 +1,17 @@
+id: like-old-times-again-lyrics-and-chords
+title: Like Old Times Again Lyrics and Chords
+artist: Ray Price
+composers:
+- Jim Weatherly
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: likeoldtimesagainlyricschords.pro
+    imported_at: '2026-01-02'

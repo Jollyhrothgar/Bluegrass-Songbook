@@ -1,0 +1,18 @@
+id: tell-my-baby-i-love-her
+title: Tell My Baby I Love Her
+artist: Johnny Horton
+composers:
+- Johnny Horton and Tillman Franks
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmybabyiloveherlyricschords.pro
+    imported_at: '2026-01-02'

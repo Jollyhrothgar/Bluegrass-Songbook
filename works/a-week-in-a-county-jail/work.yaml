@@ -1,0 +1,16 @@
+id: a-week-in-a-county-jail
+title: A Week In A County Jail
+artist: Tom T. Hall
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aweekinacountyjaillyricschords.pro
+    imported_at: '2026-01-02'

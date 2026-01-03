@@ -1,0 +1,17 @@
+id: your-wanting-me-is-gone
+title: Your Wanting Me Is Gone
+artist: Vernon Oxford
+composers:
+- J.R. Cochran
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourwantingmeisgonelyricschords.pro
+    imported_at: '2026-01-02'

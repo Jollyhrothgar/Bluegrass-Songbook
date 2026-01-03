@@ -1,0 +1,15 @@
+id: you-re-the-one-1
+title: You're The One
+artist: Bobby Helms
+composers:
+- Marijohn Wilkin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheonelyricsandchords.pro
+    imported_at: '2026-01-02'

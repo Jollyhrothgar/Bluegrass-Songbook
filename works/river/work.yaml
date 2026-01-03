@@ -1,0 +1,19 @@
+id: river
+title: River
+artist: Roy Orbison
+composers:
+- Roy Orbison and Bill Dees
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: riverlyricschords.pro
+    imported_at: '2026-01-02'

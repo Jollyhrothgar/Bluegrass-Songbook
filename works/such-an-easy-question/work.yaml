@@ -1,0 +1,20 @@
+id: such-an-easy-question
+title: Such An Easy Question
+artist: Elvis Presley
+composers:
+- Otis Blackwell and Winfield Scott
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: suchaneasyquestionlyricschords.pro
+    imported_at: '2026-01-02'

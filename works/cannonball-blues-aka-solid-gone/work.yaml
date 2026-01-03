@@ -1,0 +1,17 @@
+id: cannonball-blues-aka-solid-gone
+title: Cannonball Blues (aka Solid Gone)
+artist: Doc Watson
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cannonballbluesakasolidgonelyricschords.pro
+    imported_at: '2026-01-02'

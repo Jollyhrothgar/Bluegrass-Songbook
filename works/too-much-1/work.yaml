@@ -1,0 +1,21 @@
+id: too-much-1
+title: Too Much
+artist: Elvis Presley
+composers:
+- Bernard Weinman and Lee Rosenberg
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomuchlyricschords.pro
+    imported_at: '2026-01-02'

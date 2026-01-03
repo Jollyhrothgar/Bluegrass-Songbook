@@ -1,0 +1,17 @@
+id: low-as-a-man-can-go
+title: Low As A Man Can Go
+artist: Hank Williams Jr.
+composers:
+- Mack Vickery
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lowasamancangolyricschords.pro
+    imported_at: '2026-01-02'

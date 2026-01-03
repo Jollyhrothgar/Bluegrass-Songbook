@@ -1,0 +1,19 @@
+id: stand-by-me-1
+title: Stand By Me
+artist: Mickey Gilley
+composers:
+- Ben E. King,
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: standbymelyricschords.pro
+    imported_at: '2026-01-02'

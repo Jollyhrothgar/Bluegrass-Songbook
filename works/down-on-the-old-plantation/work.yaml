@@ -1,0 +1,15 @@
+id: down-on-the-old-plantation
+title: Down On The Old Plantation
+artist: Jim Ed, Maxine and Bonnie Brown
+composers:
+- Carson J. Robison
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downontheoldplantationlyricschords.pro
+    imported_at: '2026-01-02'

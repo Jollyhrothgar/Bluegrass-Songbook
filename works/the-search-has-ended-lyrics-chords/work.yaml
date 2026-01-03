@@ -1,0 +1,15 @@
+id: the-search-has-ended-lyrics-chords
+title: The Search Has Ended Lyrics Chords
+artist: Jim Reeves
+composers:
+- Ray Baker
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesearchhasendedlyricschords.pro
+    imported_at: '2026-01-02'

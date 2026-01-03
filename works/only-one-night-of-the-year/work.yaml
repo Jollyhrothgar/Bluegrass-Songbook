@@ -1,0 +1,18 @@
+id: only-one-night-of-the-year
+title: Only One Night Of The Year
+artist: Ronnie Milsap
+composers:
+- Mike Reid
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onlyonenightoftheyearlyricschords.pro
+    imported_at: '2026-01-02'

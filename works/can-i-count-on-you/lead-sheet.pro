@@ -1,0 +1,37 @@
+{meta: title Can I Count on You}
+{meta: artist McBride and the Ride}
+{meta: composer Bill Carter, Ruth Ellsworth, Terry McBride}
+{meta: x_source classic-country}
+{meta: x_source_file canicountonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
+
+{start_of_verse: Verse 1}
+[C]YOU WERE THERE THE FIRST [F]TIME I [C]STUMBLED
+[G7]WILL YOU BE THERE EACH TIME I [C]FALL
+[F]WILL YOU CARE FOR ME [C]FOREVER
+[G7]DARLING PROMISE YOU'LL LOVE ME MOST OF [C]ALL
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[F]YOU CAN COUNT ON ME I'LL BE [C]TRUE
+[G7]DO YOU FEEL THE SAME WAY I [C]DO
+[F]WHEN TIMES GET HARD WILL YOU SEE ME [C]THROUGH
+[G7]WHAT I NEED TO KNOW CAN I COUNT ON [C]YOU
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[F]WHEN THE YEARS HAVE TURNED MY HEAD TO [C]SILVER
+[G7]WILL YOU STILL WEAR THAT BAND OF [C]GOLD
+[F]SAY YOU'LL BE HERE ALWAYS BESIDE [C]ME
+[G7]WILL I STILL HAVE YOUR HAND TO [C]HOLD
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+[F]YOU CAN COUNT ON ME I'LL BE [C]TRUE
+[G7]DO YOU FEEL THE SAME WAY I [C]DO
+[F]WHEN TIMES GET HARD WILL YOU SEE ME [C]THROUGH
+[G7]WHAT I NEED TO KNOW CAN I COUNT ON [C]YOU
+{end_of_verse}
+
+
+

@@ -1,0 +1,17 @@
+id: that-rain-makin-baby-of-mine
+title: That Rain Makin' Baby Of Mine
+artist: Johnny Bush
+composers:
+- Dallas Frazier and Warren Robb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatrainmakinbabyofminelyricschords.pro
+    imported_at: '2026-01-02'

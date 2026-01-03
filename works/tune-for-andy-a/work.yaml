@@ -1,0 +1,18 @@
+id: tune-for-andy-a
+title: Tune for Andy (A)
+artist: Traditional
+composers:
+- Biography:Kenny Baker
+default_key: B
+tags:
+- Jazzy
+- Instrumental
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: there-s-no-reason-to-be-living
+title: There's No Reason To Be Living
+artist: Stonewall Jackson
+composers:
+- Joe Walsh and Edison Youngblood
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnoreasontobelivinglyricschords.pro
+    imported_at: '2026-01-02'

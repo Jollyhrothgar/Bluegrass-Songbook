@@ -1,0 +1,17 @@
+id: if-i-talk-to-him
+title: If I Talk to Him
+artist: Connie Smith
+composers:
+- Priscilla Mitchell and Dolores Edgin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifitalktohimlyricsandchords.pro
+    imported_at: '2026-01-02'

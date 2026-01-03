@@ -1,0 +1,15 @@
+id: how-green-was-the-grazin-back-then
+title: How Green Was The Grazin' Back Then
+artist: Red Steagall
+composers:
+- Richard Eldon O'Brien and Russell D. Steagall
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howgreenwasthegrazinbackthenlyricschords.pro
+    imported_at: '2026-01-02'

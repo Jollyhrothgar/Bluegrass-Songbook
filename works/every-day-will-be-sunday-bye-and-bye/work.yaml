@@ -1,0 +1,17 @@
+id: every-day-will-be-sunday-bye-and-bye
+title: Every Day Will Be Sunday Bye And Bye
+artist: Statler Brother
+composers:
+- Bob Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everydaywillbesundaybyeandbyelyricschords.pro
+    imported_at: '2026-01-02'

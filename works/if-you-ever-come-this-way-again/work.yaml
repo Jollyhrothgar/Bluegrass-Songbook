@@ -1,0 +1,18 @@
+id: if-you-ever-come-this-way-again
+title: If You Ever Come This Way Again
+artist: Sammy Kershaw
+composers:
+- Dean Dillon and Donny Kees
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouevercomethiswayaainlyricschords.pro
+    imported_at: '2026-01-02'

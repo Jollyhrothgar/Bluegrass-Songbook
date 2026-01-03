@@ -1,0 +1,17 @@
+id: a-blanket-of-stars
+title: A Blanket Of Stars
+artist: Vernon Oxford
+composers:
+- Jimmy Everett Corbin[3/4 time]
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ablanketofstarslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: wherever-you-are-1
+title: Wherever You Are
+artist: Mark Chestnut
+composers:
+- Anthony Jerome Martin, Reese Wilsonand Roger Springer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whereveryouarelyricschords.pro
+    imported_at: '2026-01-02'

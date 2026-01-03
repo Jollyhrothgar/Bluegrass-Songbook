@@ -1,0 +1,15 @@
+id: speak-softly
+title: Speak Softly
+artist: Gene Watson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: speaksoftlylyricschords.pro
+    imported_at: '2026-01-02'

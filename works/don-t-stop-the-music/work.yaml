@@ -1,0 +1,15 @@
+id: don-t-stop-the-music
+title: Don't Stop The Music
+artist: George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontstopthemusiclyricschords.pro
+    imported_at: '2026-01-02'

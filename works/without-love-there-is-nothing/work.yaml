@@ -1,0 +1,21 @@
+id: without-love-there-is-nothing
+title: Without Love (There Is Nothing)
+artist: Elvis Presley
+composers:
+- Danny Small
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: withoutlovethereisnothinglyricschords.pro
+    imported_at: '2026-01-02'

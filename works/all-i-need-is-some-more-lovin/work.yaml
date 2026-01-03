@@ -1,0 +1,18 @@
+id: all-i-need-is-some-more-lovin
+title: All I Need Is Some More Lovin'
+artist: George Morgan
+composers:
+- John Julias Daume
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allineedissomemorelovinlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,22 @@
+id: i-just-thought-you-d-like-to-know
+title: I Just Thought You'd Like To Know
+artist: Johnny Cash
+composers:
+- Charlie Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustthoughtyoudliketoknowlyricschords.pro
+    imported_at: '2026-01-02'

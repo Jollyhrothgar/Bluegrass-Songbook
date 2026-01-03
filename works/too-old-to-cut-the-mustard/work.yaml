@@ -1,0 +1,19 @@
+id: too-old-to-cut-the-mustard
+title: Too Old To Cut The Mustard
+artist: Ernest Tubb
+composers:
+- Bill Carlisle
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toooldtocutthemustardlyricschords.pro
+    imported_at: '2026-01-02'

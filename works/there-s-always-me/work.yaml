@@ -1,0 +1,20 @@
+id: there-s-always-me
+title: There's Always Me
+artist: Elvis Presley
+composers:
+- Don Robertson
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresalwaysmelyricschords.pro
+    imported_at: '2026-01-02'

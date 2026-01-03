@@ -1,0 +1,17 @@
+id: dancing-with-the-angels
+title: Dancing With The Angels
+artist: New Grass Revival
+composers:
+- Peter Rowan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dancingwiththeangelslyricschords.pro
+    imported_at: '2026-01-02'

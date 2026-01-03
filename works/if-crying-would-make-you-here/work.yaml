@@ -1,0 +1,17 @@
+id: if-crying-would-make-you-here
+title: If Crying Would Make You Here
+artist: Webb Pierce
+composers:
+- Wayne Walker and Tillman Franks
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifcryingwouldmakeyouherelyricschords.pro
+    imported_at: '2026-01-02'

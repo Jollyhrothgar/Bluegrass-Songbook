@@ -1,0 +1,17 @@
+id: this-circus-that-you-call-a-rodeo
+title: This Circus That You Call A Rodeo
+artist: Gene Watson
+composers:
+- Eddy G. Futch, Monty H. Holmes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thiscircusthatyoucallarodeolyricschords.pro
+    imported_at: '2026-01-02'

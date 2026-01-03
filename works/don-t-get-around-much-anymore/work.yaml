@@ -1,0 +1,19 @@
+id: don-t-get-around-much-anymore
+title: Don't Get Around Much Anymore
+artist: Hank Thompson
+composers:
+- Duke Ellington and Bob Russell
+default_key: D
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontgetaroundmuchanymorelyricschords.pro
+    imported_at: '2026-01-02'

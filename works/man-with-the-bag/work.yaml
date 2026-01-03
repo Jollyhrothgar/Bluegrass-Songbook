@@ -1,0 +1,17 @@
+id: man-with-the-bag
+title: Man With The Bag
+artist: Lee Ann Womack
+composers:
+- Dudley Brooks, Hal Stanley, Irving Taylor
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: manwiththebaglyricschords.pro
+    imported_at: '2026-01-02'

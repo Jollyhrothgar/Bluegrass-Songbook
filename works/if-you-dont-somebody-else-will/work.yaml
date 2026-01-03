@@ -1,0 +1,17 @@
+id: if-you-dont-somebody-else-will
+title: If You Don’t Somebody Else Will
+artist: Carl Smith
+composers:
+- Johnny Mathis, Jimmy Fautheree, Geraldine Hamilton
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoudontsomebodyelsewilllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-re-gonna-lose-her-like-that
+title: You're Gonna Lose Her Like That
+artist: Moe Bandy
+composers:
+- Peggy Forman and Wayne Forman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youregonnaloseherlikethatlyricschords.pro
+    imported_at: '2026-01-02'

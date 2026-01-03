@@ -1,0 +1,17 @@
+id: darling-days-1
+title: Darling Days
+artist: Billy Walker
+composers:
+- Dallas Frazier/Sanger D. Shafer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darlingdayslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: three-hearts-in-a-tangle
+title: Three Hearts In A Tangle
+artist: Roy Drusky
+composers:
+- Ray Pennington, Sonny Thompson, Ray Starr
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threeheartsiInatanglelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: the-truth-is-lyin-next-to-you
+title: The Truth Is Lyin' Next To You
+artist: Randy Travis
+composers:
+- Kent M. Robbins and Susan Longacre
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thetruthislyinnexttoyoulyricschords.pro
+    imported_at: '2026-01-02'

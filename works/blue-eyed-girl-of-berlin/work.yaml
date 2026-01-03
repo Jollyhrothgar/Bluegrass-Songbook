@@ -1,0 +1,15 @@
+id: blue-eyed-girl-of-berlin
+title: Blue Eyed Girl Of Berlin
+artist: Boxcar Willie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blueeyedgirlofberlinlyricschords.pro
+    imported_at: '2026-01-02'

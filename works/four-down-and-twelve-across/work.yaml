@@ -1,0 +1,18 @@
+id: four-down-and-twelve-across
+title: Four Down And Twelve Across
+artist: George Strait
+composers:
+- Tom Douglas and Dean Dillon
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fourdownandtwelveacrosslyricschords.pro
+    imported_at: '2026-01-02'

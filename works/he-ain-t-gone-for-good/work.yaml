@@ -1,0 +1,17 @@
+id: he-ain-t-gone-for-good
+title: He Ain't Gone For Good
+artist: Gene Watson
+composers:
+- Dirk Johnson and David S. Kraft
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heaintgoneforgoodlyricschords.pro
+    imported_at: '2026-01-02'

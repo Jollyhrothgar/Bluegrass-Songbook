@@ -1,0 +1,17 @@
+id: tis-sweet-to-be-remembered
+title: Tis Sweet To Be Remembered
+artist: Mac Wiseman
+composers:
+- Malcolm B. Wiseman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tissweettoberememberedlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: the-closer-you-get
+title: The Closer You Get
+artist: Alabama
+composers:
+- Mark Eugene Gray and James P. Pennnington
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thecloseryougetlyricschords.pro
+    imported_at: '2026-01-02'

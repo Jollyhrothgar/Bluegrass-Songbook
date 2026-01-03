@@ -1,0 +1,17 @@
+id: i-m-the-only-thing-i-ll-hold-against-you
+title: I'm The Only Thing I'll Hold Against You
+artist: Conway Twitty
+composers:
+- William Lon Wilson, Kim Edwin Williams, Joe Diffie
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imtheonlythingillholdagainstyoulyricschords.pro
+    imported_at: '2026-01-02'

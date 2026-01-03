@@ -1,0 +1,18 @@
+id: just-let-me-make-believe
+title: Just Let Me Make Believe
+artist: Roy Orbison
+composers:
+- Ronald Blackwell
+default_key: G
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justletmemakebelievelyricschords.pro
+    imported_at: '2026-01-02'

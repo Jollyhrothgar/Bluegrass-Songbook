@@ -1,0 +1,18 @@
+id: a-place-to-fall-apart
+title: A Place To Fall Apart
+artist: Merle Haggard
+composers:
+- Willie Nelson, Merle Haggard, Freddy Powers
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aplacetofallapartlyricschords.pro
+    imported_at: '2026-01-02'

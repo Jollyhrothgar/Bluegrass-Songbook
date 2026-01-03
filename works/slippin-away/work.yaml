@@ -1,0 +1,17 @@
+id: slippin-away
+title: Slippin' Away
+artist: The Bellamy Brothers
+composers:
+- Frank Savlino and Jim Valentini
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: slippinawaylyricschords.pro
+    imported_at: '2026-01-02'

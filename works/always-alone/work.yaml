@@ -1,0 +1,22 @@
+id: always-alone
+title: Always Alone
+artist: Johnny Cash
+composers:
+- Ted Daffan
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alwaysalonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-sacrificed-more-than-you-ll-ever-lose
+title: I Sacrificed More Than You'll Ever Lose
+artist: Reba McEntire
+composers:
+- Beverly Carlton and James Benton
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isacrificedmorethanyoulleverloselyricschords.pro
+    imported_at: '2026-01-02'

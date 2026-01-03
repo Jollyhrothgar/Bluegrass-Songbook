@@ -1,0 +1,17 @@
+id: rainbow-in-the-rain
+title: Rainbow In The Rain
+artist: Clint Black
+composers:
+- Clint Black and Hayden Nicholas
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rainbowintherainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: christmas-time-1
+title: Christmas Time
+artist: John Anderson
+composers:
+- John Anderson and Lionel Delmore
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmastimelyricschords.pro
+    imported_at: '2026-01-02'

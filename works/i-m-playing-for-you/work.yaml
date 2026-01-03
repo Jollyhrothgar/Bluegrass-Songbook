@@ -1,0 +1,18 @@
+id: i-m-playing-for-you
+title: I'm Playing For You
+artist: Ronnie Milsap
+composers:
+- Keith Stegall and Lewis Anderson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: implayingforyoulyricschords.pro
+    imported_at: '2026-01-02'

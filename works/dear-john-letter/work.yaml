@@ -1,0 +1,17 @@
+id: dear-john-letter
+title: Dear John Letter
+artist: Jean Shepard
+composers:
+- Lewis Talley, Fuzzy Owen, Billy Barton
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dearjohnletterlyricschords.pro
+    imported_at: '2026-01-02'

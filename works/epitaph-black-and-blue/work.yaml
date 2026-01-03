@@ -1,0 +1,19 @@
+id: epitaph-black-and-blue
+title: Epitaph (Black And Blue)
+artist: Kris Kristofferson
+composers:
+- Jessi Colter
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: epitaphlyricschords.pro
+    imported_at: '2026-01-02'

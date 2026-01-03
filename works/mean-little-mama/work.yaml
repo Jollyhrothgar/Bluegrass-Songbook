@@ -1,0 +1,19 @@
+id: mean-little-mama
+title: Mean Little Mama
+artist: Roy Orbison
+composers:
+- Sam Phillips
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meanlittlemamalyricschords.pro
+    imported_at: '2026-01-02'

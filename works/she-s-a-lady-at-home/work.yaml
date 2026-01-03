@@ -1,0 +1,17 @@
+id: she-s-a-lady-at-home
+title: She's A Lady At Home
+artist: Red Steagall
+composers:
+- Red Steagall and Waylon Jennings
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesaladyathomelyricschords.pro
+    imported_at: '2026-01-02'

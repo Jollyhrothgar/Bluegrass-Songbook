@@ -1,0 +1,17 @@
+id: are-you-on-the-road-to-loving-me-again
+title: Are You On The Road To Loving Me Again
+artist: Debbie Boone
+composers:
+- Debbie Hupp and Bob Morrison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: areyouontheroadtolovingmeagainlyricschords.pro
+    imported_at: '2026-01-02'

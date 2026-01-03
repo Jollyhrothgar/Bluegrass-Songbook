@@ -1,0 +1,20 @@
+id: i-ll-sail-my-ship-alone
+title: I'll Sail My Ship Alone
+artist: Patsy Cline
+composers:
+- Lois Mann, Henry Bernard, Murray Burns
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illsailmyshipalonelyricschords.pro
+    imported_at: '2026-01-02'

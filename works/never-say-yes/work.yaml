@@ -1,0 +1,21 @@
+id: never-say-yes
+title: Never Say Yes
+artist: Elvis Presley
+composers:
+- Doc Pomus and Mort Shuman
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: neversayyeslyricschords.pro
+    imported_at: '2026-01-02'

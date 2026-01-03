@@ -1,0 +1,17 @@
+id: if-you-can-walk-away
+title: If You Can Walk Away
+artist: Jean Shepard
+composers:
+- Gertrude Cox and Jack Rhodes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoucanwalkawaylyricschords.pro
+    imported_at: '2026-01-02'

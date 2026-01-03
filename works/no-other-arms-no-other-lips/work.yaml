@@ -1,0 +1,15 @@
+id: no-other-arms-no-other-lips
+title: No Other Arms No Other Lips
+artist: Slim Whitman
+composers:
+- Joan Whitney, Alex Kramer, Hy Zaret
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nootherarmsnootherlipslyricschords.pro
+    imported_at: '2026-01-02'

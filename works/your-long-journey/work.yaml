@@ -1,0 +1,18 @@
+id: your-long-journey
+title: Your Long Journey
+artist: Emmylou Harris
+composers:
+- Doc Watson and Rosa Lee Watson
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourlongjourneylyricschords.pro
+    imported_at: '2026-01-02'

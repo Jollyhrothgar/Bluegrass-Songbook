@@ -1,0 +1,18 @@
+id: everyday-s-a-happy-day-for-fools
+title: Everyday's A Happy Day For Fools
+artist: Jean Shepard
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everydaysahappydayforfoolslyricschords.pro
+    imported_at: '2026-01-02'

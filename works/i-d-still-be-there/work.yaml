@@ -1,0 +1,22 @@
+id: i-d-still-be-there
+title: I'd Still Be There
+artist: Johnny Cash
+composers:
+- Johnny Cash and Johnny Horton
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idstillbetherelyricschords.pro
+    imported_at: '2026-01-02'

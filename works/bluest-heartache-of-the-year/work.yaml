@@ -1,0 +1,18 @@
+id: bluest-heartache-of-the-year
+title: Bluest Heartache Of The Year
+artist: Kenny Dale
+composers:
+- Warren W. Wimberly
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluestheartacheoftheyearlyricschords.pro
+    imported_at: '2026-01-02'

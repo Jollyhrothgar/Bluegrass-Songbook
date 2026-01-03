@@ -1,0 +1,17 @@
+id: you-turned-the-lights-on
+title: You Turned The Lights On
+artist: Jack Greene
+composers:
+- Haze Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youturnedthelightsonlyricschords.pro
+    imported_at: '2026-01-02'

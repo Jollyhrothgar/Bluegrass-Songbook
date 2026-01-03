@@ -1,0 +1,19 @@
+id: i-m-a-memory
+title: I'm A Memory
+artist: Brenda Lee
+composers:
+- Willie Nelson
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imamemorylyricschords.pro
+    imported_at: '2026-01-02'

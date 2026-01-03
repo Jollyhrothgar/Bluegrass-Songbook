@@ -1,0 +1,17 @@
+id: too-much-to-lose
+title: Too Much To Lose
+artist: Carl Belew
+composers:
+- Tommy Blake, Lester Vanadore, Carl Belew
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomuchtoloselyricschords.pro
+    imported_at: '2026-01-02'

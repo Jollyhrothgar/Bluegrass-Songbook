@@ -1,0 +1,19 @@
+id: blossoms-in-the-springtime
+title: Blossoms In The Springtime
+artist: Hank Snow
+composers:
+- Vaughn Horton
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blossomsinthespringtimelyricschords.pro
+    imported_at: '2026-01-02'

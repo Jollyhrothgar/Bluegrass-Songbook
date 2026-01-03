@@ -1,0 +1,17 @@
+id: rings-for-sale
+title: Rings For Sale
+artist: Roger Miller
+composers:
+- John Hadley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ringsforsalelyricschords.pro
+    imported_at: '2026-01-02'

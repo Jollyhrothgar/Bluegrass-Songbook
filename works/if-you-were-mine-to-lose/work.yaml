@@ -1,0 +1,17 @@
+id: if-you-were-mine-to-lose
+title: If You Were Mine To Lose
+artist: Connie Smith
+composers:
+- Mickey Jaco
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouwereminetoloselyricschords.pro
+    imported_at: '2026-01-02'

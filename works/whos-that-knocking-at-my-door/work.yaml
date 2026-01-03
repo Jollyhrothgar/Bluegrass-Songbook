@@ -1,0 +1,17 @@
+id: whos-that-knocking-at-my-door
+title: Who’s That Knocking At My Door
+artist: The Dreadful Snakes
+composers:
+- Pat Enright
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whosthatknockingatmydoorlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: anywhere-with-jesus
+title: Anywhere With Jesus
+artist: Amy Grant
+composers:
+- Daniel Towner,
+default_key: G
+tags:
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anywherewithJesuslyricschords.pro
+    imported_at: '2026-01-02'

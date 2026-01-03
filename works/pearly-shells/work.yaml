@@ -1,0 +1,17 @@
+id: pearly-shells
+title: Pearly Shells
+artist: Burl Ives
+composers:
+- John Kalapana-Leonpobar
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pearlyshellslyricschords.pro
+    imported_at: '2026-01-02'

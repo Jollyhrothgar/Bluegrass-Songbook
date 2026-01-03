@@ -1,0 +1,15 @@
+id: maria-elena
+title: Maria Elena
+artist: Jim Reeves
+composers:
+- S.K. Russell and Lorenzo Barcalata
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mariaelenalyricschords.pro
+    imported_at: '2026-01-02'

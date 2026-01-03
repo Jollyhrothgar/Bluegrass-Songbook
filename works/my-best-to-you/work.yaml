@@ -1,0 +1,15 @@
+id: my-best-to-you
+title: My Best To You
+artist: Bob Nolan
+composers:
+- Isham Jones and Gene Willadsen
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mybesttoyoulyricsandchords.pro
+    imported_at: '2026-01-02'

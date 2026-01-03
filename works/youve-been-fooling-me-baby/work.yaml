@@ -1,0 +1,17 @@
+id: youve-been-fooling-me-baby
+title: You’ve Been Fooling Me Baby
+artist: Flatt and Scruggs
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvebeenfoolingmebabylyricschords.pro
+    imported_at: '2026-01-02'

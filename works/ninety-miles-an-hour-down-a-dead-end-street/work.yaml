@@ -1,0 +1,19 @@
+id: ninety-miles-an-hour-down-a-dead-end-street
+title: Ninety Miles An Hour Down A Dead End Street
+artist: Hank Snow
+composers:
+- Hal Blair and Don Robertson
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ninetymilesanhourdownadeadendstreetlyricschords.pro
+    imported_at: '2026-01-02'

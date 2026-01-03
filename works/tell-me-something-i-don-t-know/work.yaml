@@ -1,0 +1,17 @@
+id: tell-me-something-i-don-t-know
+title: Tell Me Something I Don't Know
+artist: George Jones
+composers:
+- Jimmy Peppers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmesomethingidontknowlyricschords.pro
+    imported_at: '2026-01-02'

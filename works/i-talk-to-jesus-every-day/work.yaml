@@ -1,0 +1,22 @@
+id: i-talk-to-jesus-every-day
+title: I Talk To Jesus Every Day
+artist: Johnny Cash
+composers:
+- Glenn D. Tubb
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: italktoJesuseverydaylyricschords.pro
+    imported_at: '2026-01-02'

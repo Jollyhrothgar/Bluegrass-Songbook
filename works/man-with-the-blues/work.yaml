@@ -1,0 +1,17 @@
+id: man-with-the-blues
+title: Man With The Blues
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: manwiththeblueslyricschords.pro
+    imported_at: '2026-01-02'

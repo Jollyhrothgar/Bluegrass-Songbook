@@ -1,0 +1,17 @@
+id: mr-heartache
+title: Mr. Heartache
+artist: Billy Walker
+composers:
+- James Van Heusen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mrheartachelyricschords.pro
+    imported_at: '2026-01-02'

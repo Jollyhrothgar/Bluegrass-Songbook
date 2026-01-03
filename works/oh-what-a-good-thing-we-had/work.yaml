@@ -1,0 +1,20 @@
+id: oh-what-a-good-thing-we-had
+title: Oh What A Good Thing We Had
+artist: Johnny Cash
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohwhatagoodthingwehadlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: we-can-t-let-this-happen-to-us
+title: We Can't Let This Happen To Us
+artist: Porter Wagoner
+composers:
+- Dorothy Jo Hope
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wecantletthishappentouslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: jamaica-farewell
+title: Jamaica Farewell
+artist: Don Williams
+composers:
+- Lord Burgess
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jamaicafarewelllyricschords.pro
+    imported_at: '2026-01-02'

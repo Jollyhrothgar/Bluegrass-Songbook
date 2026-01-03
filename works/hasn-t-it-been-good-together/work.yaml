@@ -1,0 +1,18 @@
+id: hasn-t-it-been-good-together
+title: Hasn't It Been Good Together
+artist: Hank Snow
+composers:
+- Linda Kaufman and Gloria Shayne
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hasntitbeengoodtogetherlyricschords.pro
+    imported_at: '2026-01-02'

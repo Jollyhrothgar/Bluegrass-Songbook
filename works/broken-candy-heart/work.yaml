@@ -1,0 +1,17 @@
+id: broken-candy-heart
+title: Broken Candy Heart
+artist: George Morgan
+composers:
+- Cliff Rodgers and Mary Jean Shurtz
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brokencandyheartlyricschords.pro
+    imported_at: '2026-01-02'

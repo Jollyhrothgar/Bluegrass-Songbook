@@ -1,0 +1,17 @@
+id: if-this-is-love
+title: If This Is Love
+artist: Jack Greene
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifthisislovelyricschords.pro
+    imported_at: '2026-01-02'

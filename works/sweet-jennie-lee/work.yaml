@@ -1,0 +1,17 @@
+id: sweet-jennie-lee
+title: Sweet Jennie Lee
+artist: Bob Wills
+composers:
+- Walter Donaldson
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetjennieleelyricschords.pro
+    imported_at: '2026-01-02'

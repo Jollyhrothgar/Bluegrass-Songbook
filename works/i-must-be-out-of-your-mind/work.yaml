@@ -1,0 +1,17 @@
+id: i-must-be-out-of-your-mind
+title: I Must Be Out Of Your Mind
+artist: Johnny Bush
+composers:
+- Glenn Sutton and Carl Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imustbeoutofyourmindlyricschords.pro
+    imported_at: '2026-01-02'

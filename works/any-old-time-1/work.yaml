@@ -1,0 +1,17 @@
+id: any-old-time-1
+title: Any Old Time
+artist: Webb Pierce
+composers:
+- Jimmie Rodgers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anyoldtimelyricschords.pro
+    imported_at: '2026-01-02'

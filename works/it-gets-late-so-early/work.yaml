@@ -1,0 +1,18 @@
+id: it-gets-late-so-early
+title: It Gets Late So Early
+artist: Lefty Frizzell
+composers:
+- Lefty Frizzell and Lee Hayes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itgetslatesoearlylyricschords.pro
+    imported_at: '2026-01-02'

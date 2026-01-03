@@ -1,0 +1,18 @@
+id: mama-s-rockin-chair
+title: Mama's Rockin' Chair
+artist: John Conlee
+composers:
+- Johnny McRae and Tim Mensy
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mamasrockinchairlyricschords.pro
+    imported_at: '2026-01-02'

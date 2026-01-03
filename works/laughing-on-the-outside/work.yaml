@@ -1,0 +1,17 @@
+id: laughing-on-the-outside
+title: Laughing On The Outside
+artist: Eddy Arnold
+composers:
+- Ben Raleigh and Bernie Wayne
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: laughingontheoutsidelyricschords.pro
+    imported_at: '2026-01-02'

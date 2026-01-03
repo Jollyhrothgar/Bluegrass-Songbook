@@ -1,0 +1,15 @@
+id: the-last-farewell
+title: The Last Farewell
+artist: Roy Drusky
+composers:
+- Ronald Arthur Webster and Roger Whittaker
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelastfarewelllyricschords.pro
+    imported_at: '2026-01-02'

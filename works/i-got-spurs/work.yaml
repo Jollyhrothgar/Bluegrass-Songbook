@@ -1,0 +1,15 @@
+id: i-got-spurs
+title: I Got Spurs
+artist: Gene Autry
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: igotspurslyricschords.pro
+    imported_at: '2026-01-02'

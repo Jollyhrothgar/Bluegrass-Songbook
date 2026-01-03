@@ -1,0 +1,17 @@
+id: chug-a-lug
+title: Chug-a-lug
+artist: Roger Miller
+composers:
+- Roger Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: chug-a-luglyricschords.pro
+    imported_at: '2026-01-02'

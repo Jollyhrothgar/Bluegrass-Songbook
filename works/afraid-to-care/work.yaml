@@ -1,0 +1,15 @@
+id: afraid-to-care
+title: Afraid To Care
+artist: Jack Greene
+composers:
+- Kenneth Campbell and Jack Greene
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afraidtocarelyricschords.pro
+    imported_at: '2026-01-02'

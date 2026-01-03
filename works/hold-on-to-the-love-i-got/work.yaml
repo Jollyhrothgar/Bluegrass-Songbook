@@ -1,0 +1,17 @@
+id: hold-on-to-the-love-i-got
+title: Hold On (To The Love I Got)
+artist: Barbara Mandrell
+composers:
+- Norro Wilson, Carmol Taylor, Tammy Wynette
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdontotheloveivegotlyricsandchords.pro
+    imported_at: '2026-01-02'

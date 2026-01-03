@@ -1,0 +1,17 @@
+id: let-those-brown-eyes-smile-at-me
+title: Let Those Brown Eyes Smile At Me
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Rusty Nail
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letthosebrowneyessmileatmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: heaven-s-just-a-sin-away
+title: Heaven's Just A Sin Away
+artist: The Kendalls
+composers:
+- Jerry Gillespie
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavensjustasinawaylyricschords.pro
+    imported_at: '2026-01-02'

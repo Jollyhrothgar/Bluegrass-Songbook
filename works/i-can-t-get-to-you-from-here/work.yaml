@@ -1,0 +1,15 @@
+id: i-can-t-get-to-you-from-here
+title: I Can't Get To You From Here
+artist: Don Williams
+composers:
+- Frank Knipe and Stephen Chandler
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantgettoyoufromherelyricschords.pro
+    imported_at: '2026-01-02'

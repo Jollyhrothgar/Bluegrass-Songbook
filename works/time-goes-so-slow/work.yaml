@@ -1,0 +1,18 @@
+id: time-goes-so-slow
+title: Time Goes So Slow
+artist: The Louvin Brothers
+default_key: C
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timegoessoslowlyricschords.pro
+    imported_at: '2026-01-02'

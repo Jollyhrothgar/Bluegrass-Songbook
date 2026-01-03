@@ -1,0 +1,19 @@
+id: doesn-t-anybody-know-my-name
+title: Doesn't Anybody Know My Name
+artist: Waylon Jennings
+composers:
+- Rod McKuen
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doesntanybodyknowmynamelyricschords.pro
+    imported_at: '2026-01-02'

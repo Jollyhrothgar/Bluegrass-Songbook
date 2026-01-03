@@ -1,0 +1,18 @@
+id: luckenback-texas
+title: Luckenback Texas
+artist: Waylon Jennings
+composers:
+- Chips Moman and Bobby Emmons
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: luckenbachtexaslyricschords.pro
+    imported_at: '2026-01-02'

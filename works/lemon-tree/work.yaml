@@ -1,0 +1,17 @@
+id: lemon-tree
+title: Lemon Tree
+artist: Bobby Bare
+composers:
+- Will Holt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lemontreelyricschords.pro
+    imported_at: '2026-01-02'

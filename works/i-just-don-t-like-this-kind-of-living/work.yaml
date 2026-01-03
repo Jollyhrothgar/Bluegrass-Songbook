@@ -1,0 +1,17 @@
+id: i-just-don-t-like-this-kind-of-living
+title: I Just Don't Like This Kind of Living
+artist: Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustdontlikethiskindoflivinglyricschords.pro
+    imported_at: '2026-01-02'

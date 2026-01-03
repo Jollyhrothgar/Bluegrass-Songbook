@@ -1,0 +1,17 @@
+id: i-d-settle-for-just-crossing-her-mind
+title: I'd Settle For Just Crossing Her Mind
+artist: Gene Watson
+composers:
+- Jollie Hollie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idsettleforjustcrossinghermindlyricschords.pro
+    imported_at: '2026-01-02'

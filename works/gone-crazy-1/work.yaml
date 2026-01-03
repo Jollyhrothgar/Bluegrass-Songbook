@@ -1,0 +1,18 @@
+id: gone-crazy-1
+title: Gone Crazy
+artist: Merle Haggard
+composers:
+- Bonnie Owens and Merly Haggard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: gonecrazylyricschords.pro
+    imported_at: '2026-01-02'

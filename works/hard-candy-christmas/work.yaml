@@ -1,0 +1,19 @@
+id: hard-candy-christmas
+title: Hard Candy Christmas
+artist: Dolly Parton
+composers:
+- Carol Hall
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hardcandyChristmaslyricschords.pro
+    imported_at: '2026-01-02'

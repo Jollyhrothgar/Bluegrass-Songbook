@@ -1,0 +1,15 @@
+id: too-many-times-1
+title: Too Many Times
+artist: Jimmy Dean
+composers:
+- Joel Herron
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomanytimeslyricschords.pro
+    imported_at: '2026-01-02'

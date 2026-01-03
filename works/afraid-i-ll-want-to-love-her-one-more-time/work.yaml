@@ -1,0 +1,17 @@
+id: afraid-i-ll-want-to-love-her-one-more-time
+title: Afraid I'll Want To Love Her One More Time
+artist: Billy Crash Craddock
+composers:
+- David Wilkins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afraidillwanttoloveheronemoretimelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: raising-cane-in-texas
+title: Raising Cane In Texas
+artist: Gene Watson
+composers:
+- Deion Lay and Joseph Allen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: raisingcaneintexaslyricschords.pro
+    imported_at: '2026-01-02'

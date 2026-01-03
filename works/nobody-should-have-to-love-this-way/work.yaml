@@ -1,0 +1,17 @@
+id: nobody-should-have-to-love-this-way
+title: Nobody Should Have To Love This Way
+artist: Crystal Gayle
+composers:
+- Rory Bourke, Tommy Rocco, Charlie Black
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nobodyshouldhavetolovethiswaylyricschords.pro
+    imported_at: '2026-01-02'

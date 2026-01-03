@@ -1,0 +1,15 @@
+id: as-low-as-you-can-go
+title: As Low As You Can Go
+artist: Earl Thomas Conley
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aslowasyoucangolyricschords.pro
+    imported_at: '2026-01-02'

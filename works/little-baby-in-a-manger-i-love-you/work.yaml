@@ -1,0 +1,15 @@
+id: little-baby-in-a-manger-i-love-you
+title: Little Baby In A Manger (I Love You)
+artist: Betty Jean Robinson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlebabyinamangeriloveyoulyricschords.pro
+    imported_at: '2026-01-02'

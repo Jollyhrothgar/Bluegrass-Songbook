@@ -1,0 +1,17 @@
+id: send-me-to-glory-in-a-glad-bag
+title: Send Me to Glory in a Glad Bag
+artist: John Biggs
+composers:
+- Don J. Carson, Mim Carson, Steve Mason
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sendmetogloryinagladbaglyricschords.pro
+    imported_at: '2026-01-02'

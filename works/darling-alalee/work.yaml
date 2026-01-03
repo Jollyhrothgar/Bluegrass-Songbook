@@ -1,0 +1,15 @@
+id: darling-alalee
+title: Darling Alalee
+artist: The Country Gentlemen
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: darlingalaleelyricschords.pro
+    imported_at: '2026-01-02'

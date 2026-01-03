@@ -1,0 +1,15 @@
+id: tell-me-with-your-heart
+title: Tell Me With Your Heart
+artist: David Ball
+composers:
+- Chris Carmichael and David Ball
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tellmewithyourheartlyricschords.pro
+    imported_at: '2026-01-02'

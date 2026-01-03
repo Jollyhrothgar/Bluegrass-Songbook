@@ -1,0 +1,17 @@
+id: if-you-can-t-find-love
+title: If You Can't Find Love
+artist: The Oak Ridge Boys
+composers:
+- Pete McCann
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoucantfindlovelyricschords.pro
+    imported_at: '2026-01-02'

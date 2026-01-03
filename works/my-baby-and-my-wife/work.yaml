@@ -1,0 +1,17 @@
+id: my-baby-and-my-wife
+title: My Baby And My Wife
+artist: Ernest Tubb
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mybabyandmywifelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: faith-in-you
+title: Faith In You
+artist: Randy Travis
+composers:
+- Tom Douglas, Joe Henry, Matt Rollins
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: faithinyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: time-stood-still
+title: Time Stood Still
+artist: Vern Gosdin
+composers:
+- Melvin Ragin & Robert Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timestoodstilllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: till-the-rivers-all-run-dry
+title: Till the Rivers All Run Dry
+artist: Don Williams
+composers:
+- Wayon Holyfield and Don Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tilltheriversallrundrylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: who-s-sorry-now
+title: Who's Sorry Now
+artist: Connie Francis
+composers:
+- Ted Snyder, Bert Kalmar, Harry Ruby
+default_key: G
+tags:
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whossorrynowlyricsandchords.pro
+    imported_at: '2026-01-02'

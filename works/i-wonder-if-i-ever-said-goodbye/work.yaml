@@ -1,0 +1,17 @@
+id: i-wonder-if-i-ever-said-goodbye
+title: I Wonder If I Ever Said Goodbye
+artist: Johnny Rodriguez
+composers:
+- Mickey Newbury
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderifieversaidgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

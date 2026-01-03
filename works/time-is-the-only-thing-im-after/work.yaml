@@ -1,0 +1,17 @@
+id: time-is-the-only-thing-im-after
+title: Time Is The Only Thing I’m After
+artist: Faron Young
+composers:
+- Gene Nash
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: timeistheonlythingimafterlyricschords.pro
+    imported_at: '2026-01-02'

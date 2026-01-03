@@ -1,0 +1,18 @@
+id: i-wanna-feel-that-way-again
+title: I Wanna Feel That Way Again
+artist: Tracy Byrd
+composers:
+- Steve Bogard, Jeff Stevens, Danni Leigh
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwannafeelthatwayagainlyricschords.pro
+    imported_at: '2026-01-02'

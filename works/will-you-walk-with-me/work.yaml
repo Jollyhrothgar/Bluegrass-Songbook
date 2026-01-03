@@ -1,0 +1,17 @@
+id: will-you-walk-with-me
+title: Will You Walk With Me
+artist: Mary Duff
+composers:
+- Isla Grant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willyouwalkwithmelyricschords.pro
+    imported_at: '2026-01-02'

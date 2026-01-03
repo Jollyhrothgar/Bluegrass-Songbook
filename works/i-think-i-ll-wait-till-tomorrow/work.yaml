@@ -1,0 +1,15 @@
+id: i-think-i-ll-wait-till-tomorrow
+title: I Think I'll Wait Till Tomorrow
+artist: Jean Shepard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ithinkillwaittilltomorrowlyricschords.pro
+    imported_at: '2026-01-02'

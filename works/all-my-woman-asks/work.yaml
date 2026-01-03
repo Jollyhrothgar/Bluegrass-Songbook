@@ -1,0 +1,15 @@
+id: all-my-woman-asks
+title: All My Woman Asks
+artist: Jim Ed Brown
+composers:
+- Willis Graham
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allmywomanaskslyricschords.pro
+    imported_at: '2026-01-02'

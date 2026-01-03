@@ -1,0 +1,15 @@
+id: i-m-a-believer-1
+title: I'm A Believer
+artist: Tommy Overstreet
+composers:
+- Ricci Mareno and Tommy Rocco
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imabelieverlyricschords.pro
+    imported_at: '2026-01-02'

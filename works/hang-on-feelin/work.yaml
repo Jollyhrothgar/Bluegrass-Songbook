@@ -1,0 +1,15 @@
+id: hang-on-feelin
+title: Hang On Feelin'
+artist: Red Steagall
+composers:
+- Richard Mainegra and Mike Kosser
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hangonfeelinlyricschords.pro
+    imported_at: '2026-01-02'

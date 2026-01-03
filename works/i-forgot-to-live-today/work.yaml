@@ -1,0 +1,15 @@
+id: i-forgot-to-live-today
+title: I Forgot To Live Today
+artist: Hank Locklin
+composers:
+- Dickey Lee and Allen Reynolds
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iforgottolivetodaylyricschords.pro
+    imported_at: '2026-01-02'

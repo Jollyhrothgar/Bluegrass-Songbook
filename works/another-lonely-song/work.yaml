@@ -1,0 +1,17 @@
+id: another-lonely-song
+title: Another Lonely Song
+artist: Tammy Wynette
+composers:
+- Norris Wilson, Billy Sherrill, Tammy Wynette
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anotherlonelysonglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: that-just-about-does-it-don-t-it
+title: That Just About Does it Don't it
+artist: Vern Gosdin
+composers:
+- Vern
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatjustaboutdoesitdontitlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-want-to-go-with-you
+title: I Want To Go With You
+artist: Eddy Arnold
+composers:
+- Hank Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttogowithyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: if-you-could-touch-her-at-all
+title: If You Could Touch Her At All
+artist: Willie Nelson
+composers:
+- Lee Clayton
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoucouldtouchheratalllyricschords.pro
+    imported_at: '2026-01-02'

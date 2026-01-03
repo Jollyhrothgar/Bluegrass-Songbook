@@ -1,0 +1,17 @@
+id: before-you-learned-to-fly
+title: Before You Learned To Fly
+artist: Red Steagall
+composers:
+- Red Steagall and Donnie Lanier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforeyoulearnedtoflylyricschords.pro
+    imported_at: '2026-01-02'

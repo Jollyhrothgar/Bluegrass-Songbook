@@ -1,0 +1,15 @@
+id: out-on-the-texas-plains
+title: Out On The Texas Plains
+artist: Red Steagall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: outonthetexasplainslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: honky-tonk-amnesia
+title: Honky Tonk Amnesia
+artist: Moe Bandy
+composers:
+- Arthur Leo Owens and Sanger D. Shafer
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkamnesialyricschords.pro
+    imported_at: '2026-01-02'

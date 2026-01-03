@@ -1,0 +1,17 @@
+id: holding-on-to-nothing
+title: Holding On To Nothing
+artist: Porter Wagoner
+composers:
+- Jerry Chesnut
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: holdingontonothinglyricschords.pro
+    imported_at: '2026-01-02'

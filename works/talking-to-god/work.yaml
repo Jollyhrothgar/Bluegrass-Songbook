@@ -1,0 +1,17 @@
+id: talking-to-god
+title: Talking To God
+artist: Ricky Van Shelton
+composers:
+- Lewis J. Anderson and Layng Martine
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: talkingtoGodlyricschords.pro
+    imported_at: '2026-01-02'

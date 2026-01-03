@@ -1,0 +1,19 @@
+id: i-dreamed-of-an-old-love-affair
+title: I Dreamed of an Old Love Affair
+artist: Hank Snow
+composers:
+- Jimmie Davis, Bonnie Dodd, Charles Mitchell
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idreamedofanoldloveaffairlyricschords.pro
+    imported_at: '2026-01-02'

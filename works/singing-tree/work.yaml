@@ -1,0 +1,21 @@
+id: singing-tree
+title: Singing Tree
+artist: Elvis Presley
+composers:
+- Arthur Leo Owens and A.C. Solberg
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: singingtreelyricschords.pro
+    imported_at: '2026-01-02'

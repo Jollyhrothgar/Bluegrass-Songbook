@@ -1,0 +1,17 @@
+id: washing-my-dreams-in-tears
+title: Washing My Dreams In Tears
+artist: Carl Smith
+composers:
+- Speedy Krise
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: washingmydreamsintearslyricschords.pro
+    imported_at: '2026-01-02'

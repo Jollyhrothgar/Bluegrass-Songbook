@@ -1,0 +1,13 @@
+id: the-end
+title: The End
+artist: Curtis Potter
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theendlyricschords.pro
+    imported_at: '2026-01-02'

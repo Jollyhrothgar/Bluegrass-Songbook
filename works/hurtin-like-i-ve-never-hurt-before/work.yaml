@@ -1,0 +1,16 @@
+id: hurtin-like-i-ve-never-hurt-before
+title: Hurtin' Like I've Never Hurt Before
+artist: Buck Owens
+default_key: D
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hurtinlLikeiveneverhurtbeforelyricschords.pro
+    imported_at: '2026-01-02'

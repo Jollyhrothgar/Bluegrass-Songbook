@@ -1,0 +1,17 @@
+id: tonight-we-re-calling-it-a-day
+title: Tonight We're Calling It A Day
+artist: Charlie Walker
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tonightwerecallingitadaylyricschords.pro
+    imported_at: '2026-01-02'

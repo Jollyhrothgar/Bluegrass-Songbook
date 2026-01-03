@@ -1,0 +1,17 @@
+id: i-ll-go-to-a-stranger-1
+title: I'll Go To A Stranger
+artist: Johnny Bush
+composers:
+- Ray Pennington and Dave Kirby
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illgotoastrangerlyricschords.pro
+    imported_at: '2026-01-02'

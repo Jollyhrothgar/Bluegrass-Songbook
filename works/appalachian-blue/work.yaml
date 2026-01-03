@@ -1,0 +1,15 @@
+id: appalachian-blue
+title: Appalachian Blue
+artist: John Anderson
+composers:
+- Donna Anderson and Michael Anderson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: appalachianbluelyricschords.pro
+    imported_at: '2026-01-02'

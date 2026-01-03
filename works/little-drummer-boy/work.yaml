@@ -1,0 +1,22 @@
+id: little-drummer-boy
+title: Little Drummer Boy
+artist: Johnny Cash
+composers:
+- Katherine Davis, Henri Onerati, Harry Simeone
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littledrummerboylyricschords.pro
+    imported_at: '2026-01-02'

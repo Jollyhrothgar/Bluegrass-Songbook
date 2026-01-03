@@ -1,0 +1,17 @@
+id: at-the-club-alibi
+title: At The Club Alibi
+artist: Mel Street
+composers:
+- Eddie Rabbitt and Even Stevens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: attheclubalibilyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-nearly-lose-your-mind
+title: You Nearly Lose Your Mind
+artist: Ernest Tubb
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: younearlyloseyourmindlyricschords.pro
+    imported_at: '2026-01-02'

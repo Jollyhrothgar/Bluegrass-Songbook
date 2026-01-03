@@ -1,0 +1,17 @@
+id: i-can-stand-it-as-long-as-he-can
+title: I Can Stand It (As Long As He Can)
+artist: Connie Smith
+composers:
+- Mitchell Torok and Ramona Redd
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanstanditaslongashecanlyricschords.pro
+    imported_at: '2026-01-02'

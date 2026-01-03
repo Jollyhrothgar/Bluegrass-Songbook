@@ -1,0 +1,18 @@
+id: i-m-gonna-paint-me-a-bed-of-roses
+title: I'm Gonna Paint Me A Bed Of Roses
+artist: Merle Haggard
+composers:
+- Merle Haggard and Bobby Whitson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnapaintmeabedofroseslyricschords.pro
+    imported_at: '2026-01-02'

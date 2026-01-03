@@ -1,0 +1,18 @@
+id: heart-on-the-line-operator-operator
+title: Heart on the Line (Operator Operator)
+artist: The Oak Ridge Boys
+composers:
+- Larry C. Willoughby and Janet K. Willoughby
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartonthelineoperatoroperatorlyricschords.pro
+    imported_at: '2026-01-02'

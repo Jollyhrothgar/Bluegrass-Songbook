@@ -1,0 +1,13 @@
+id: what-would-my-mama-say
+title: What Would My Mama Say
+artist: Roger Miller
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatwouldmymamasaylyricschords.pro
+    imported_at: '2026-01-02'

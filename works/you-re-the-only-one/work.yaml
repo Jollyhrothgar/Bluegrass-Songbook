@@ -1,0 +1,15 @@
+id: you-re-the-only-one
+title: You're The Only One
+artist: Don Williams
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheonlyonelyricsandchords.pro
+    imported_at: '2026-01-02'

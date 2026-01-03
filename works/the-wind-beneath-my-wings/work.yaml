@@ -1,0 +1,17 @@
+id: the-wind-beneath-my-wings
+title: The Wind Beneath My Wings
+artist: Gary Morris
+composers:
+- Larry Henley and Jeff Silbar
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewindbeneathmywingslyricschords.pro
+    imported_at: '2026-01-02'

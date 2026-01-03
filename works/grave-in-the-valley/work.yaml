@@ -1,0 +1,17 @@
+id: grave-in-the-valley
+title: Grave In The Valley
+artist: Jim and Jesse
+composers:
+- Don McHan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: graveinthevalleylyricschords.pro
+    imported_at: '2026-01-02'

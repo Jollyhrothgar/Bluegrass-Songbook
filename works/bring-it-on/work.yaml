@@ -1,0 +1,19 @@
+id: bring-it-on
+title: Bring It On
+artist: Willie Nelson
+composers:
+- Willie Nelson and Buddy Cannon
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bringitonlyricschords.pro
+    imported_at: '2026-01-02'

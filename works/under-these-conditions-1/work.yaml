@@ -1,0 +1,18 @@
+id: under-these-conditions-1
+title: Under These Conditions
+artist: George Strait
+composers:
+- Troy Seals, Ronnie McDowell, Joe Meador
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: undertheseconditionslyricschords.pro
+    imported_at: '2026-01-02'

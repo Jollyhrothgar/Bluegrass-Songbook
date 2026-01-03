@@ -1,0 +1,13 @@
+id: i-still-love-you
+title: I Still Love You
+artist: Ricky Van Shelton
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: istillloveyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: if-you-d-like-some-lovin
+title: If You'd Like Some Lovin'
+artist: David Ball
+composers:
+- Tommy Polk and David Ball
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyoudlikesomelovinlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: renegades-rebels-and-rogues
+title: Renegades Rebels And Rogues
+artist: Tracy Lawrence
+composers:
+- Larry Boone, Paul Nelson, Earl Clark
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: renegadesrebelsandrogueslyricschords.pro
+    imported_at: '2026-01-02'

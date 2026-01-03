@@ -1,0 +1,18 @@
+id: please-operator-could-you-trace-this-call
+title: Please Operator (Could You Trace This Call)
+artist: Garth Brooks
+composers:
+- Dewayne Blackwell
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleaseoperatorcouldyoutracethiscalllyricschords.pro
+    imported_at: '2026-01-02'

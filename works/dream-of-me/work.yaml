@@ -1,0 +1,17 @@
+id: dream-of-me
+title: Dream Of Me
+artist: Vern Gosdin
+composers:
+- Buddy Cannon, Jimmy Darrell, Raleigh Squires
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dreamofmelyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-can-t-have-your-kate-and-edith-too
+title: You Can't Have Your Kate And Edith Too
+artist: Statler Brothers
+composers:
+- Bobby Braddock and Curly Putman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanthaveyourkateandedithtoolyricschords.pro
+    imported_at: '2026-01-02'

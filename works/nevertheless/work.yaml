@@ -1,0 +1,18 @@
+id: nevertheless
+title: Nevertheless
+artist: Anne Murray
+composers:
+- Bert Kalmar and Harry Ruby
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: neverthelesslyricschords.pro
+    imported_at: '2026-01-02'

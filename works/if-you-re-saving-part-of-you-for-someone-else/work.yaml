@@ -1,0 +1,15 @@
+id: if-you-re-saving-part-of-you-for-someone-else
+title: If You're Saving Part Of You For Someone Else
+artist: Billy Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouresavingpartofyouforsomeoneelselyricschords.pro
+    imported_at: '2026-01-02'

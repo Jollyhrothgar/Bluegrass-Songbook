@@ -1,0 +1,15 @@
+id: she-wakes-me-every-morning-with-a-kiss
+title: She Wakes Me Every Morning With A Kiss
+artist: Jack Greene
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shewakesmeeverymorningwithakisslyricschords.pro
+    imported_at: '2026-01-02'

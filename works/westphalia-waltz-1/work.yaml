@@ -1,0 +1,16 @@
+id: westphalia-waltz-1
+title: Westphalia Waltz
+artist: Traditional
+composers:
+- Biography:Cotton Collins
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

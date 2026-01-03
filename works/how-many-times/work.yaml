@@ -1,0 +1,17 @@
+id: how-many-times
+title: How Many Times
+artist: George Morgan
+composers:
+- T.A. Dorsey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howmanytimeslyricschords.pro
+    imported_at: '2026-01-02'

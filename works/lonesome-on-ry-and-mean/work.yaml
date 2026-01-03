@@ -1,0 +1,19 @@
+id: lonesome-on-ry-and-mean
+title: Lonesome On'ry And Mean
+artist: Waylon Jennings
+composers:
+- Steve Young
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonesomeonryandmeanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: i-want-to-be-wanted
+title: I Want To Be Wanted
+artist: Brenda Lee
+composers:
+- Kim Gannon, Giuseppe Spotti, Alberto Testa
+default_key: G
+tags:
+- Pop
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwanttobewantedlyricschords.pro
+    imported_at: '2026-01-02'

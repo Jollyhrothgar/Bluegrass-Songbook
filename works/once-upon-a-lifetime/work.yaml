@@ -1,0 +1,15 @@
+id: once-upon-a-lifetime
+title: Once Upon A Lifetime
+artist: Alabama
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onceuponalifetimelyricschords.pro
+    imported_at: '2026-01-02'

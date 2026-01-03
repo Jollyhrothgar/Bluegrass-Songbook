@@ -1,0 +1,13 @@
+id: the-savior-i-sing-of-today
+title: The Savior I Sing Of Today
+artist: Glen Campbell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thesaviorisingoftodaylyricschords.pro
+    imported_at: '2026-01-02'

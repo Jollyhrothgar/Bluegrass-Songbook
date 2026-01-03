@@ -1,0 +1,17 @@
+id: break-away-break-away
+title: Break Away Break Away
+artist: Cowboy Copas
+composers:
+- Boudleaux Bryant AND Felice Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: breakawaybreakawaylyricschords.pro
+    imported_at: '2026-01-02'

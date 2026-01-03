@@ -1,0 +1,15 @@
+id: jimmy-johnson-pass-that-jug-around-the-hill
+title: Jimmy Johnson Pass that Jug Around the Hill
+artist: Traditional
+default_key: A
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

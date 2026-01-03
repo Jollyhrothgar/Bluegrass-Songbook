@@ -1,0 +1,15 @@
+id: your-tender-loving-care-lyrics-with-chords
+title: Your Tender Loving Care Lyrics with Chords
+artist: Buck Owens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourtenderlovingcarelyricschords.pro
+    imported_at: '2026-01-02'

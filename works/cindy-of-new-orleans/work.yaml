@@ -1,0 +1,17 @@
+id: cindy-of-new-orleans
+title: Cindy Of New Orleans
+artist: Waylon Jennings
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cindyofneworleanslyricschords.pro
+    imported_at: '2026-01-02'

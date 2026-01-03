@@ -1,0 +1,13 @@
+id: you-re-a-hero-to-me
+title: You're A Hero To Me
+artist: Johnny Rodriguez
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youreaherotomelyricschords.pro
+    imported_at: '2026-01-02'

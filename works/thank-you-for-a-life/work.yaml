@@ -1,0 +1,18 @@
+id: thank-you-for-a-life
+title: Thank You For a Life
+artist: Kris Kristofferson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankyouforalifelyricschords.pro
+    imported_at: '2026-01-02'

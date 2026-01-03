@@ -1,0 +1,17 @@
+id: empty-wallet-and-a-broken-heart
+title: Empty Wallet And A Broken Heart
+artist: Ira Louvin
+composers:
+- Anne Young
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: emptywalletandabrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

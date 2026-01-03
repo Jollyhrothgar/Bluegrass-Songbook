@@ -1,0 +1,17 @@
+id: the-difference-between-going-and-really-gone
+title: The Difference Between Going And Really Gone
+artist: Cal Smith
+composers:
+- Jimmie Helms and Grant Townsley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedifferencebetweengoingandreallygonelyricschords.pro
+    imported_at: '2026-01-02'

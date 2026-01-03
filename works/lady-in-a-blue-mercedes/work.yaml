@@ -1,0 +1,17 @@
+id: lady-in-a-blue-mercedes
+title: Lady In A Blue Mercedes
+artist: Johnny Duncan and Janie Fricke
+composers:
+- Daniel Darst and Gary Gentry
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ladyinabluemercedeslyricschords.pro
+    imported_at: '2026-01-02'

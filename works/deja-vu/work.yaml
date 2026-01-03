@@ -1,0 +1,15 @@
+id: deja-vu
+title: Deja Vu
+artist: Johnny Bush
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dejavulyricschords.pro
+    imported_at: '2026-01-02'

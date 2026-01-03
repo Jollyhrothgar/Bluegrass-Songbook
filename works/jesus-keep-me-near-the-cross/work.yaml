@@ -1,0 +1,17 @@
+id: jesus-keep-me-near-the-cross
+title: Jesus Keep Me Near The Cross
+artist: Jim Reeves
+composers:
+- Fanny J. Crosby and William H. Doane
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesuskeepmenearthecrosslyricschords.pro
+    imported_at: '2026-01-02'

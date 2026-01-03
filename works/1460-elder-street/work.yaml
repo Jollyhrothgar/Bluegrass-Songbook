@@ -1,0 +1,18 @@
+id: 1460-elder-street
+title: 1460 Elder Street
+artist: Red Sovine
+composers:
+- Bun Wilson and Doc Richardson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 1460elderstreetlyricschords.pro
+    imported_at: '2026-01-02'

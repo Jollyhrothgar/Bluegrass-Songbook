@@ -1,0 +1,18 @@
+id: don-t-you-want-to-be-a-lover-tonight
+title: Don't You Want To Be A Lover Tonight
+artist: Tanya Tucker
+composers:
+- Sterling Whipple
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontyouwanttobealovertonightlyricschords.pro
+    imported_at: '2026-01-02'

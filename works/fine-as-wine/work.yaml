@@ -1,0 +1,17 @@
+id: fine-as-wine
+title: Fine As Wine
+artist: Billy Walker
+composers:
+- Eddie Rabbitt and Even Stevens
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fineaswinelyricschords.pro
+    imported_at: '2026-01-02'

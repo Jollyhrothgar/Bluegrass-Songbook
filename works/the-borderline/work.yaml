@@ -1,0 +1,18 @@
+id: the-borderline
+title: The Borderline
+artist: Alabama
+composers:
+- Gus Kahn and Walter Donaldson
+default_key: Dm
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theborderlinelyricschords.pro
+    imported_at: '2026-01-02'

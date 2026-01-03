@@ -1,0 +1,17 @@
+id: dance-with-me-molly
+title: Dance With Me Molly
+artist: Keith Whitley
+composers:
+- Roger Bowling and Steve Tutsie
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dancewithmemollylyricschords.pro
+    imported_at: '2026-01-02'

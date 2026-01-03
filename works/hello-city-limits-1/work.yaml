@@ -1,0 +1,14 @@
+id: hello-city-limits-1
+title: Hello City Limits
+artist: Johnny Elgin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

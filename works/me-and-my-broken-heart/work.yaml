@@ -1,0 +1,17 @@
+id: me-and-my-broken-heart
+title: Me And My Broken Heart
+artist: Carl Smith
+composers:
+- Hank Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meandmybrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

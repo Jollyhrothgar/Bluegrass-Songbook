@@ -1,0 +1,18 @@
+id: beginning-to-feel-like-home
+title: Beginning To Feel Like Home
+artist: Anne Murray
+composers:
+- Colleen Peterson
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beginningtofeellikehomelyricschords.pro
+    imported_at: '2026-01-02'

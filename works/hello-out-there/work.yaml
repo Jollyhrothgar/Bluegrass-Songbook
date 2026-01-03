@@ -1,0 +1,17 @@
+id: hello-out-there
+title: Hello Out There
+artist: Carl Belew
+composers:
+- Kent Westberry and Wayne P. Walker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helloouttherelyricschords.pro
+    imported_at: '2026-01-02'

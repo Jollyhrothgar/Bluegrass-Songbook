@@ -1,0 +1,18 @@
+id: today-is-that-tomorrow
+title: Today Is That Tomorrow
+artist: Charley Pride
+composers:
+- Eugene Strasser and George Winters
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: todayisthattomorrowlyricschords.pro
+    imported_at: '2026-01-02'

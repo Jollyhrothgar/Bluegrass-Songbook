@@ -1,0 +1,17 @@
+id: still-water-runs-the-deepest
+title: Still Water Runs The Deepest
+artist: Bob Wills
+composers:
+- Jesse Ashlock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stillwaterrunsthedeepestlyricschords.pro
+    imported_at: '2026-01-02'

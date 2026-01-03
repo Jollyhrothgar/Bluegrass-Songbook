@@ -1,0 +1,19 @@
+id: two-in-the-cold
+title: Two In The Cold
+artist: Ernest Tubb
+composers:
+- Ellen Reeves
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twointhecoldlyricschords.pro
+    imported_at: '2026-01-02'

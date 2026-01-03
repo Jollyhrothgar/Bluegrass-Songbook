@@ -1,0 +1,17 @@
+id: it-s-so-hard-to-say-i-love-you
+title: It's So Hard To Say I Love You
+artist: Hank Locklin
+composers:
+- Biff Collie
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itssohardtosayiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

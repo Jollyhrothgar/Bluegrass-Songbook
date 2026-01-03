@@ -1,0 +1,17 @@
+id: you-touched-my-life
+title: You Touched My Life
+artist: Johnny Paycheck
+composers:
+- Jerry Foster and Bill Rice
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youtouchedmylifelyricsandchords.pro
+    imported_at: '2026-01-02'

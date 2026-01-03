@@ -1,0 +1,15 @@
+id: pretend-you-just-don-t-know-me
+title: Pretend You Just Don't Know Me
+artist: Billy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pretendyoujustdontknowmelyricschords.pro
+    imported_at: '2026-01-02'

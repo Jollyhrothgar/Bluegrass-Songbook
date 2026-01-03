@@ -1,0 +1,17 @@
+id: over-there
+title: Over There
+artist: Gene Watson
+composers:
+- Ray Pennington
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: overtherelyricschords.pro
+    imported_at: '2026-01-02'

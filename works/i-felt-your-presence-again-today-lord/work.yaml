@@ -1,0 +1,13 @@
+id: i-felt-your-presence-again-today-lord
+title: I Felt Your Presence Again Today Lord
+artist: Betty Jean Robinson
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeltyourpresenceagaintodaylordlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: when-i-get-lonely
+title: When I Get Lonely
+artist: David Ball
+composers:
+- James House and David Ball
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenigetlonelylyricschords.pro
+    imported_at: '2026-01-02'

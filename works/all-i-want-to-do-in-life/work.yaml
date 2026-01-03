@@ -1,0 +1,17 @@
+id: all-i-want-to-do-in-life
+title: All I Want To Do In Life
+artist: George Jones
+composers:
+- Jack Clements
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alliwanttodoinlifelyricschords.pro
+    imported_at: '2026-01-02'

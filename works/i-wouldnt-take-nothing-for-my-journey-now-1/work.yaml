@@ -1,0 +1,17 @@
+id: i-wouldnt-take-nothing-for-my-journey-now-1
+title: I Wouldn’t Take Nothing For My Journey Now
+artist: Jimmy Davis
+composers:
+- Jimmie Davis and Charles R. Goodman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldnttakenothingformyjourneynowlyricschords.pro
+    imported_at: '2026-01-02'

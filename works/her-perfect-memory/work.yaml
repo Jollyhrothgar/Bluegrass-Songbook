@@ -1,0 +1,17 @@
+id: her-perfect-memory
+title: Her Perfect Memory
+artist: Don Williams
+composers:
+- Doug Johnson and Pat Bunch
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: herperfectmemorylyricschords.pro
+    imported_at: '2026-01-02'

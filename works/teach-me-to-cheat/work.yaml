@@ -1,0 +1,17 @@
+id: teach-me-to-cheat
+title: Teach Me To Cheat
+artist: The Kendalls
+composers:
+- J.L. Wallace, Ken Bell, Terry Skinner
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: teachmetocheatlyricschords.pro
+    imported_at: '2026-01-02'

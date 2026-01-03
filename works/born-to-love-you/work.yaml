@@ -1,0 +1,17 @@
+id: born-to-love-you
+title: Born To Love You
+artist: Jack Greene
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: borntoloveyoulyricsandchords.pro
+    imported_at: '2026-01-02'

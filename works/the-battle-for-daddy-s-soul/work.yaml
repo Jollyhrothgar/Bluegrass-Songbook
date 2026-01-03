@@ -1,0 +1,17 @@
+id: the-battle-for-daddy-s-soul
+title: The Battle For Daddy's Soul
+artist: George Jones
+composers:
+- Mel Howard and Janice Wolverton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thebattlefordaddyssoullyricschords.pro
+    imported_at: '2026-01-02'

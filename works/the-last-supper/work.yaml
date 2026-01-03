@@ -1,0 +1,15 @@
+id: the-last-supper
+title: The Last Supper
+artist: Jimmie Davis
+composers:
+- Jimmie Davis and Bill Harmon
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelastsupperlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: from-cradle-to-cross-to-crown
+title: From Cradle To Cross To Crown
+artist: The Bluegrass Cardinals
+composers:
+- Don Parmley
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromcradletocrosstocrownlyricschords.pro
+    imported_at: '2026-01-02'

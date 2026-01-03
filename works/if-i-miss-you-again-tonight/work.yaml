@@ -1,0 +1,15 @@
+id: if-i-miss-you-again-tonight
+title: If I Miss You Again Tonight
+artist: Tommy Overstreet
+composers:
+- Ricci Mareno, Charlie Black, Marianne Mareno
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifimissyouagaintonightlyricschords.pro
+    imported_at: '2026-01-02'

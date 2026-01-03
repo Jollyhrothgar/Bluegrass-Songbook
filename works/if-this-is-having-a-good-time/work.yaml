@@ -1,0 +1,15 @@
+id: if-this-is-having-a-good-time
+title: If This Is Having A Good Time
+artist: Mel Street
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifthisishavingagoodtimelyricschords.pro
+    imported_at: '2026-01-02'

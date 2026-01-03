@@ -1,0 +1,17 @@
+id: what-a-memory
+title: What A Memory
+artist: Tracy Lawrence
+composers:
+- Kenny Beard and Jeff Bates
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatamemorylyricschords.pro
+    imported_at: '2026-01-02'

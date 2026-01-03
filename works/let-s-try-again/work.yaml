@@ -1,0 +1,17 @@
+id: let-s-try-again
+title: Let's Try Again
+artist: Janie Fricke
+composers:
+- Danny Steagall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letstryagainlyricschords.pro
+    imported_at: '2026-01-02'

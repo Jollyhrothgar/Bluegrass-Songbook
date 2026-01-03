@@ -1,0 +1,17 @@
+id: love-died-tonight
+title: Love Died Tonight
+artist: Hawkshaw Hawkins
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovediedtonightlyricschords.pro
+    imported_at: '2026-01-02'

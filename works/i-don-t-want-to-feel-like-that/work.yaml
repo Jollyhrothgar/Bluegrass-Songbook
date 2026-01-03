@@ -1,0 +1,19 @@
+id: i-don-t-want-to-feel-like-that
+title: I Don't Want To Feel Like That
+artist: Patty Loveless
+composers:
+- Don Schlitz and Terry Radigan
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontwanttofeellikethatlyricschords.pro
+    imported_at: '2026-01-02'

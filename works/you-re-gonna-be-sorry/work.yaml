@@ -1,0 +1,18 @@
+id: you-re-gonna-be-sorry
+title: You're Gonna Be Sorry
+artist: Dolly Parton
+default_key: F
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youregonnabesorrylyricschords.pro
+    imported_at: '2026-01-02'

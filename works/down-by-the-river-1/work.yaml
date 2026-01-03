@@ -1,0 +1,17 @@
+id: down-by-the-river-1
+title: Down by the River
+artist: Faron Young
+composers:
+- Jan Crutchfield and Teddy Wilburn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downbytheriverlyricschords.pro
+    imported_at: '2026-01-02'

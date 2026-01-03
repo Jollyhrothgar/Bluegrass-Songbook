@@ -1,0 +1,15 @@
+id: the-gloryland-way
+title: The Gloryland Way
+artist: Doyle Lawson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theglorylandwaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,22 @@
+id: the-wall-1
+title: The Wall
+artist: Johnny Cash
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewalllyricschords.pro
+    imported_at: '2026-01-02'

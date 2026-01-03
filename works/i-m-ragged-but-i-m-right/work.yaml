@@ -1,0 +1,22 @@
+id: i-m-ragged-but-i-m-right
+title: I'm Ragged But I'm Right
+artist: Johnny Cash
+composers:
+- George Jones
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imraggedbutimrightlyricschords.pro
+    imported_at: '2026-01-02'

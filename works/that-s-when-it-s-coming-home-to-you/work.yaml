@@ -1,0 +1,17 @@
+id: that-s-when-it-s-coming-home-to-you
+title: That's When It's Coming Home To You
+artist: Hawkshaw Hawkins
+composers:
+- Ernest Tubb and Lois Snapp
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhenitscominghometoyoulyricschords.pro
+    imported_at: '2026-01-02'

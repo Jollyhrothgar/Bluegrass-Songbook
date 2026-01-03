@@ -1,0 +1,18 @@
+id: ain-t-she-something-else
+title: Ain't She Something Else
+artist: Conway Twitty
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintshesomethingelselyricschords.pro
+    imported_at: '2026-01-02'

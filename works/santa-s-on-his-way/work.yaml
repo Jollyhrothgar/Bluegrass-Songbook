@@ -1,0 +1,17 @@
+id: santa-s-on-his-way
+title: Santa's On His Way
+artist: Bob Wills
+composers:
+- Bill C. Phillips, Nita Phillips
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: santasonhiswaylyricsandchords.pro
+    imported_at: '2026-01-02'

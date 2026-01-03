@@ -1,0 +1,15 @@
+id: only-a-shadow-of-your-love
+title: Only A Shadow of Your Love
+artist: Daniel O'Donnell
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onlyashadowofyourlovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: because-you-believed-in-me
+title: Because You Believed In Me
+artist: Gene Watson
+composers:
+- Arthur Leo Owens, Shorty Hall, Gene Vowell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseyoubelievedinmelyricschords.pro
+    imported_at: '2026-01-02'

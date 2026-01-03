@@ -1,0 +1,17 @@
+id: belles-of-southern-bell
+title: Belles Of Southern Bell
+artist: Del Reeves
+composers:
+- Don Wayne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bellesofsouthernbelllyricschords.pro
+    imported_at: '2026-01-02'

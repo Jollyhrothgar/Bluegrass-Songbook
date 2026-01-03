@@ -1,0 +1,15 @@
+id: let-the-rest-of-the-world-go-by
+title: Let The Rest Of The World Go By
+artist: Jimmy Dean
+composers:
+- Jimmy Kern, J.K. Brennan, Ernest Ball
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lettherestoftheworldgobylyricschords.pro
+    imported_at: '2026-01-02'

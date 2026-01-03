@@ -1,0 +1,17 @@
+id: fly-little-bluebird
+title: Fly Little Bluebird
+artist: The Goins Brothers
+composers:
+- M. Goins, M. Paxton, R. Goins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: flylittlebluebirdlyricschords.pro
+    imported_at: '2026-01-02'

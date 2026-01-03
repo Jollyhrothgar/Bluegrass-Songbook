@@ -1,0 +1,17 @@
+id: how-can-i-tell-you
+title: How Can I Tell You
+artist: Slim Whitman
+composers:
+- Jack Rhodes, Dick Reynolds, Jerry Crist
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howcanitellyoulyricschords.pro
+    imported_at: '2026-01-02'

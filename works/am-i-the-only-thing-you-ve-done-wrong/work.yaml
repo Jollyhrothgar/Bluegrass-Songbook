@@ -1,0 +1,18 @@
+id: am-i-the-only-thing-you-ve-done-wrong
+title: Am I The Only Thing You've Done Wrong
+artist: Lee Ann Womack
+composers:
+- Billy Foster, Jason Seller, Lee Ann Womack
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amitheonlythingyouvedonewronglyricschords.pro
+    imported_at: '2026-01-02'

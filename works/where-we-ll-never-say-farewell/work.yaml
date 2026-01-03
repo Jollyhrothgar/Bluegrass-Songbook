@@ -1,0 +1,18 @@
+id: where-we-ll-never-say-farewell
+title: Where We'll Never Say Farewell
+artist: Rhonda Vincent
+composers:
+- Larry Sparks and Eva Sparks
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wherewellneversayfarewelllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: one-man-band
+title: One Man Band
+artist: Moe Bandy
+composers:
+- Ken Bell, Bud McGuire, Linda Epstein
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onemanbandlyricsandchords.pro
+    imported_at: '2026-01-02'

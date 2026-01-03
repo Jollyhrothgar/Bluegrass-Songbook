@@ -1,0 +1,17 @@
+id: i-wish-i-had-loved-her-that-way
+title: I Wish I Had Loved Her That Way
+artist: John Anderson
+composers:
+- Roger Murrah and Jim McBride
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishihadlovedherthatwaylyricschords.pro
+    imported_at: '2026-01-02'

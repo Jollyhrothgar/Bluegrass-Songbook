@@ -1,0 +1,17 @@
+id: it-s-funny-what-a-fool-will-do
+title: It's Funny What A Fool Will Do
+artist: George Jones
+composers:
+- Johnny Mathis and George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsfunnywhatafoolwilldolyricschords.pro
+    imported_at: '2026-01-02'

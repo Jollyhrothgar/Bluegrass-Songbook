@@ -1,0 +1,17 @@
+id: he-little-thinged-her-out-of-my-arms
+title: He Little Thinged Her Out Of My Arms
+artist: Jack Greene
+composers:
+- Hank Cockran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: helittlethingedheroutofmyarmslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,21 @@
+id: rip-it-up
+title: Rip It Up
+artist: Elvis Presley
+composers:
+- Robert Alexander Blackwell and John S. Marascalco
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ripituplyricschords.pro
+    imported_at: '2026-01-02'

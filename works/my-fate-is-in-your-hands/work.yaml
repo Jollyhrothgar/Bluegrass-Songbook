@@ -1,0 +1,17 @@
+id: my-fate-is-in-your-hands
+title: My Fate Is In Your Hands
+artist: Hawkshaw Hawkins
+composers:
+- Dave Rich and Billy Harlan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myfateisinyourhandslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,20 @@
+id: shot-full-of-love
+title: Shot Full Of Love
+artist: Nitty Gritty Dirt Band
+composers:
+- Bob McDill
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shotfulloflovelyricschords.pro
+    imported_at: '2026-01-02'

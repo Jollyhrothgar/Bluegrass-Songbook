@@ -1,0 +1,17 @@
+id: carolyn-at-the-broken-wheel-inn
+title: Carolyn At The Broken Wheel Inn
+artist: Larry Cordle and Lonesome Standard Time
+composers:
+- Bob McDill and Jim Rushing
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carolynatthebrokenwheelinnlyricschords.pro
+    imported_at: '2026-01-02'

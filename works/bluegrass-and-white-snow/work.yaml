@@ -1,0 +1,19 @@
+id: bluegrass-and-white-snow
+title: Bluegrass and White Snow
+artist: Patty Loveless
+composers:
+- Emory Gordy and Patty Loveless
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bluegrassandwhitesnowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,21 @@
+id: show-me-thy-way-o-lord
+title: Show Me Thy Way O Lord
+artist: Elvis Presley
+composers:
+- Hazel Shade
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: showmethywayolordlyricschords.pro
+    imported_at: '2026-01-02'

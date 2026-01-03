@@ -1,0 +1,17 @@
+id: the-other-woman-2
+title: The Other Woman
+artist: Jean Shepard
+composers:
+- Beverly Small
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theotherwomanlyricswithchords.pro
+    imported_at: '2026-01-02'

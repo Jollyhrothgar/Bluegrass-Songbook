@@ -1,0 +1,17 @@
+id: cowboy
+title: Cowboy
+artist: Eddy Arnold
+composers:
+- Harry Shannon and Ron Fraser
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cowboylyricschords.pro
+    imported_at: '2026-01-02'

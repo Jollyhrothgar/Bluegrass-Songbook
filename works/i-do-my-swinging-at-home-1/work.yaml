@@ -1,0 +1,15 @@
+id: i-do-my-swinging-at-home-1
+title: I Do My Swinging At Home
+artist: David Houston
+composers:
+- Billy Sherrill
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idomyswingingathomelyricschords.pro
+    imported_at: '2026-01-02'

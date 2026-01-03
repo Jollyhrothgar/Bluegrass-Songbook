@@ -1,0 +1,15 @@
+id: the-old-iron-trail
+title: The Old Iron Trail
+artist: Boxcar Willie
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoldirontraillyricschords.pro
+    imported_at: '2026-01-02'

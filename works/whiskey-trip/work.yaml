@@ -1,0 +1,17 @@
+id: whiskey-trip
+title: Whiskey Trip
+artist: Johnny Rodriguez
+composers:
+- Donn Tankersley and Wayne Carson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whiskeytriplyricschords.pro
+    imported_at: '2026-01-02'

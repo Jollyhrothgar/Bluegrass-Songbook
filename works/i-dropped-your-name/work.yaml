@@ -1,0 +1,15 @@
+id: i-dropped-your-name
+title: I Dropped Your Name
+artist: Leona Williams
+composers:
+- Terry Skinner and Ken Bell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idroppedyournamelyricschords.pro
+    imported_at: '2026-01-02'

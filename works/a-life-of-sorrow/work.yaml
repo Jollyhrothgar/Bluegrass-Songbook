@@ -1,0 +1,17 @@
+id: a-life-of-sorrow
+title: A Life Of Sorrow
+artist: Ralph Stanley
+composers:
+- Carter Stanley and Ralph Stanley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alifeofsorrowlyricschords.pro
+    imported_at: '2026-01-02'

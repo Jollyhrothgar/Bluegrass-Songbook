@@ -1,0 +1,18 @@
+id: before-you-kill-us-all
+title: Before You Kill Us All
+artist: Randy Travis
+composers:
+- Max T. Barnes and Keith Follese
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beforeyoukillusalllyricschords.pro
+    imported_at: '2026-01-02'

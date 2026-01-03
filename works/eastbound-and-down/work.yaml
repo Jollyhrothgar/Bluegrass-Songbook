@@ -1,0 +1,17 @@
+id: eastbound-and-down
+title: Eastbound And Down
+artist: Jerry Reed
+composers:
+- Jerry Reed and Dick Feller
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eastboundanddownlyricschords.pro
+    imported_at: '2026-01-02'

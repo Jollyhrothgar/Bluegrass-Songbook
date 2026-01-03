@@ -1,0 +1,18 @@
+id: makes-me-wonder-if-i-ever-said-goodbye
+title: Makes Me Wonder If I Ever Said Goodbye
+artist: Kenny Rogers
+composers:
+- Mickey Newbury
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makesmewonderifieversaidgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

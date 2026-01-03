@@ -1,0 +1,17 @@
+id: seven-years-with-the-wrong-woman
+title: Seven Years With The Wrong Woman
+artist: Eddy Arnold
+composers:
+- Bob Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sevenyearswiththewrongwomanlyricschords.pro
+    imported_at: '2026-01-02'

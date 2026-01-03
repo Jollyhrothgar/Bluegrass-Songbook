@@ -1,0 +1,17 @@
+id: jesus-wants-me
+title: Jesus Wants Me
+artist: George Jones
+composers:
+- George Jones and Eddie Noack
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesuswantsmelyricschords.pro
+    imported_at: '2026-01-02'

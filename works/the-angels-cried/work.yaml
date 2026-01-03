@@ -1,0 +1,17 @@
+id: the-angels-cried
+title: The Angels Cried
+artist: Alan Jackson
+composers:
+- Harley Allen and Deborah Nims
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theangelscriedlyricschords.pro
+    imported_at: '2026-01-02'

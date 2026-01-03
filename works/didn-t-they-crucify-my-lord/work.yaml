@@ -1,0 +1,15 @@
+id: didn-t-they-crucify-my-lord
+title: Didn't They Crucify My Lord
+artist: Carl Story
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didnttheycrucifymylordlyricschords.pro
+    imported_at: '2026-01-02'

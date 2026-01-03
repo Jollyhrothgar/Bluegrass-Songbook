@@ -1,0 +1,19 @@
+id: two-mules-pull-this-wagon
+title: Two Mules Pull This Wagon
+artist: Loretta Lynn
+composers:
+- Johnny Russell
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twomulespullthiswagonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,13 @@
+id: riding-my-thumb-to-mexico
+title: Riding My Thumb to Mexico
+artist: Johnny Rodriguez
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ridingmythumbtomexicolyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: pickin-up-the-pieces
+title: Pickin' Up The Pieces
+artist: Ferlin Husky
+composers:
+- Dallas Frazier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pickinupthepieceslyricschords.pro
+    imported_at: '2026-01-02'

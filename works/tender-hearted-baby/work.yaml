@@ -1,0 +1,17 @@
+id: tender-hearted-baby
+title: Tender Hearted Baby
+artist: George Hamilton IV
+composers:
+- Boudleaux Bryant
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tenderheartedbabylyricschords.pro
+    imported_at: '2026-01-02'

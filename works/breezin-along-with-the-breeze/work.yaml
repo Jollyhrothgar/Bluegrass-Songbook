@@ -1,0 +1,15 @@
+id: breezin-along-with-the-breeze
+title: Breezin' Along With The Breeze
+artist: Ferlin Husky
+composers:
+- Haven Gillespie and Brook Benton
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: breezinalongwiththebreezelyricschords.pro
+    imported_at: '2026-01-02'

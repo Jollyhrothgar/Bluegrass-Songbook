@@ -1,0 +1,15 @@
+id: doc-boyd-s-jig
+title: Doc Boyd's Jig
+artist: Traditional
+composers:
+- Biography:John Burt (?)
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

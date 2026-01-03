@@ -1,0 +1,19 @@
+id: desperado-love
+title: Desperado Love
+artist: Conway Twitty
+composers:
+- Michael Garvin and Sammy Johns
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: desperadolovelyricschords.pro
+    imported_at: '2026-01-02'

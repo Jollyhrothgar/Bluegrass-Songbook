@@ -1,0 +1,17 @@
+id: texas-blues
+title: Texas Blues
+artist: Bob Wills
+composers:
+- Helen G. Phillips
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: texasblueslyricschords.pro
+    imported_at: '2026-01-02'

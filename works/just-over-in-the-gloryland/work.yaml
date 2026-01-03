@@ -1,0 +1,17 @@
+id: just-over-in-the-gloryland
+title: Just Over In The Gloryland
+artist: Merle Travis
+composers:
+- James W. Acuff
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justoverintheglorylandlyricschords.pro
+    imported_at: '2026-01-02'

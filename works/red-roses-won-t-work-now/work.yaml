@@ -1,0 +1,18 @@
+id: red-roses-won-t-work-now
+title: Red Roses (Won't Work Now)
+artist: Reba McEntire
+composers:
+- Jimbeau Hinson and Dori Murphy
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: redroseswontworknowlyricschords.pro
+    imported_at: '2026-01-02'

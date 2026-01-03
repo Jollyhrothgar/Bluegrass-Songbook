@@ -1,0 +1,17 @@
+id: baby-you-melt-my-heart
+title: Baby You Melt My Heart
+artist: Sonny James
+composers:
+- Richard Hollingsworth and Sonny James
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyyoumeltmyheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: somethin-about-a-jukebox
+title: Somethin' About A Jukebox
+artist: Johnny Rodriguez
+composers:
+- Ralph Mooney and Gordon Payne
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethinaboutajukeboxlyricschords.pro
+    imported_at: '2026-01-02'

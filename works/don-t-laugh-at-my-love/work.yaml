@@ -1,0 +1,17 @@
+id: don-t-laugh-at-my-love
+title: Don't Laugh At My Love
+artist: Eddy Arnold
+composers:
+- Kenneth Ray Rogers
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontlaughatmylovelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: mary-did-you-know
+title: Mary Did You Know
+artist: Kenny Rogers and Wynonna Judd
+composers:
+- Mark Lowery and Buddy Greene
+default_key: Am
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: marydidyouknowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: going-going-gone-2
+title: Going Going Gone
+artist: Lee Greenwood
+composers:
+- Jan Crutchfield
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goinggoinggonelyricswithchords.pro
+    imported_at: '2026-01-02'

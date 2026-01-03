@@ -1,0 +1,15 @@
+id: no-more-songs-to-sing
+title: No More Songs To Sing
+artist: Ray Price
+composers:
+- Robert Ellis Orrall, Roger Springer
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nomoresongstosinglyricschords.pro
+    imported_at: '2026-01-02'

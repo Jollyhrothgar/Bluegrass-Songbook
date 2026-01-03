@@ -1,0 +1,16 @@
+id: a-year-ago-this-christmas
+title: A Year Ago This Christmas
+artist: Bill Haley
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ayearagothisChristmaslyricschords.pro
+    imported_at: '2026-01-02'

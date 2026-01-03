@@ -1,0 +1,19 @@
+id: does-your-heart-beat-for-me
+title: Does Your Heart Beat For Me
+artist: Patsy Cline
+composers:
+- Russ Morgan, Arnold Johnson, Mitchell Parish
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doesyourheartbeatformelyricschords.pro
+    imported_at: '2026-01-02'

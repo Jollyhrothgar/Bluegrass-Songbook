@@ -1,0 +1,18 @@
+id: get-in-line-brother
+title: Get In Line Brother
+artist: Lester Flatt
+composers:
+- Lester Flatt
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: getinlinebrotherlyricschords.pro
+    imported_at: '2026-01-02'

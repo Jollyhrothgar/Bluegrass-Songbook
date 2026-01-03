@@ -1,0 +1,18 @@
+id: i-don-t-see-how-i-can-love-you-anymore
+title: I Don't See How I Can Love You Anymore
+artist: Charley Pride
+composers:
+- Max D. Barnes and Maria Houston
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontseehowicanloveyouanymorelyricschords.pro
+    imported_at: '2026-01-02'

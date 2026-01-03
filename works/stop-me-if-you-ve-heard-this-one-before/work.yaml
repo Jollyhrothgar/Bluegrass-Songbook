@@ -1,0 +1,19 @@
+id: stop-me-if-you-ve-heard-this-one-before
+title: Stop Me If You've Heard This One Before
+artist: Ernest Tubb
+composers:
+- Justin Tubb
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: stopmeifyouveheardthisonebeforelyricschords.pro
+    imported_at: '2026-01-02'

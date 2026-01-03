@@ -1,0 +1,18 @@
+id: three-ways-to-love-you
+title: Three Ways To Love You
+artist: Kitty Wells
+composers:
+- Eve Jay and Julius Dixon
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threewaystoloveyoulyricschords.pro
+    imported_at: '2026-01-02'

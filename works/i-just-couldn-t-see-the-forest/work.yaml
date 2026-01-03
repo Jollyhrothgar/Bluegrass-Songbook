@@ -1,0 +1,18 @@
+id: i-just-couldn-t-see-the-forest
+title: I Just Couldn't See The Forest
+artist: Lefty Frizzell
+composers:
+- Lefty Frizzell and Bruce Delaney
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcouldntseetheforestlyricschords.pro
+    imported_at: '2026-01-02'

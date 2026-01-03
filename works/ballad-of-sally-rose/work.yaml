@@ -1,0 +1,18 @@
+id: ballad-of-sally-rose
+title: Ballad Of Sally Rose
+artist: Emmylou Harris
+composers:
+- Paul Kennerley and Emmylou Harris
+default_key: G
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: balladofsallyroselyricschords.pro
+    imported_at: '2026-01-02'

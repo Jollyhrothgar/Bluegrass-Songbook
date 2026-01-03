@@ -1,0 +1,18 @@
+id: if-i-was-a-drinkin-man
+title: If I Was A Drinkin' Man
+artist: Neal McCoy
+composers:
+- Byron Hill and J.B. Rudd
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifiwasadrinkinmanlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: from-the-church-to-the-barroom
+title: From The Church To The Barroom
+artist: Norma Jean
+composers:
+- Rochelle Frazier
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromthechurchtothebarroomlyricschords.pro
+    imported_at: '2026-01-02'

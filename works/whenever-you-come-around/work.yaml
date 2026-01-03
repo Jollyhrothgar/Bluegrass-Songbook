@@ -1,0 +1,19 @@
+id: whenever-you-come-around
+title: Whenever You Come Around
+artist: Vince Gill
+composers:
+- Vince Gill and Pete Wasner
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wheneveryoucomearoundlyricschords.pro
+    imported_at: '2026-01-02'

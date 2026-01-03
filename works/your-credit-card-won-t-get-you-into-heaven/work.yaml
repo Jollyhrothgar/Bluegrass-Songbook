@@ -1,0 +1,17 @@
+id: your-credit-card-won-t-get-you-into-heaven
+title: Your Credit Card Won't Get You Into Heaven
+artist: Bobby Bare
+composers:
+- Shel Silverstein
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourcreditcardwontgetyouintoheavenlyricschords.pro
+    imported_at: '2026-01-02'

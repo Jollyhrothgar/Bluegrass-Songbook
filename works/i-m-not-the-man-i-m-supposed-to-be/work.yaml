@@ -1,0 +1,18 @@
+id: i-m-not-the-man-i-m-supposed-to-be
+title: I'm Not The Man I'm Supposed To Be
+artist: Lefty Frizzell
+composers:
+- Wayne P. Walker
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotthemanimsupposedtobelyricschords.pro
+    imported_at: '2026-01-02'

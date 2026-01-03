@@ -1,0 +1,17 @@
+id: two-steppin-texas-blue
+title: Two Steppin' Texas Blue
+artist: Joni Harms
+composers:
+- Pat McManus and Joni Harms
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twosteppintexasbluelyricschords.pro
+    imported_at: '2026-01-02'

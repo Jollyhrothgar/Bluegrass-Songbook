@@ -1,0 +1,17 @@
+id: you-could-know-as-much-about-a-stranger
+title: You Could Know as Much About a Stranger
+artist: Gene Watson
+composers:
+- Nadine Bryant
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcouldknowasmuchaboutastrangerlyricschords.pro
+    imported_at: '2026-01-02'

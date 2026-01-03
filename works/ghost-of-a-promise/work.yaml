@@ -1,0 +1,15 @@
+id: ghost-of-a-promise
+title: Ghost Of A Promise
+artist: Billy Walker
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ghostofapromiselyricschords.pro
+    imported_at: '2026-01-02'

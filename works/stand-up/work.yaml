@@ -1,0 +1,17 @@
+id: stand-up
+title: Stand Up
+artist: Ferlin Husky
+composers:
+- Cliff Crofford
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: standuplyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: little-children
+title: Little Children
+artist: Hank Snow
+composers:
+- Paul Mitchell
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlechildrenlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: classic-case-of-the-blues
+title: Classic Case Of The Blues
+artist: The Bellamy Brothers
+composers:
+- David Bellamy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: classiccaseoftheblueslyricschords.pro
+    imported_at: '2026-01-02'

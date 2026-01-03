@@ -1,0 +1,19 @@
+id: when-she-runs-out-of-fools
+title: When She Runs Out Of Fools
+artist: Mickey Gilley
+composers:
+- Steve Pippin and Steve Jobe
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whensherunsoutoffoolslyricschords.pro
+    imported_at: '2026-01-02'

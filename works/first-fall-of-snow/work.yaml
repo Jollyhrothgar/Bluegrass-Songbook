@@ -1,0 +1,19 @@
+id: first-fall-of-snow
+title: First Fall Of Snow
+artist: Hank Williams
+composers:
+- Lorene Rose
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: firstfallofsnowlyricschords.pro
+    imported_at: '2026-01-02'

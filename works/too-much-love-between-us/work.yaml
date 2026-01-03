@@ -1,0 +1,18 @@
+id: too-much-love-between-us
+title: Too Much Love Between Us
+artist: Kitty Wells
+composers:
+- Ed Bruce and Tom McKeon
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomuchlovebetweenuslyricschords.pro
+    imported_at: '2026-01-02'

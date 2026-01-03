@@ -1,0 +1,15 @@
+id: look-for-me-1
+title: Look For Me
+artist: Marty Raybon
+composers:
+- Charles F. Goodman
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookformelyricschords.pro
+    imported_at: '2026-01-02'

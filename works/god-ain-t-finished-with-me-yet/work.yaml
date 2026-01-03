@@ -1,0 +1,17 @@
+id: god-ain-t-finished-with-me-yet
+title: God Ain't Finished With Me Yet
+artist: The Bellamy Brothers
+composers:
+- David Bellamy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godaintfinishedwithmeyetlyricschords.pro
+    imported_at: '2026-01-02'

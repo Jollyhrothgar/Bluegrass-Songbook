@@ -1,0 +1,17 @@
+id: love-star
+title: Love Star
+artist: Emmylou Harris
+composers:
+- Cindy Walker
+default_key: G
+tags:
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovestarlyricschords.pro
+    imported_at: '2026-01-02'

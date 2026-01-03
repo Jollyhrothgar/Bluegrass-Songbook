@@ -1,0 +1,17 @@
+id: ding-a-ling-the-christmas-bell
+title: Ding A Ling The Christmas Bell
+artist: Lynn Anderson
+composers:
+- Jerry Foster and Bill Rice
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dingalingtheChristmasbelllyricschords.pro
+    imported_at: '2026-01-02'

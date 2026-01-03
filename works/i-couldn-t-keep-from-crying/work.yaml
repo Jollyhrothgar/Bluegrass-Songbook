@@ -1,0 +1,18 @@
+id: i-couldn-t-keep-from-crying
+title: I Couldn't Keep From Crying
+artist: Marty Robbins
+composers:
+- Roy Turk and Fred Ahlert
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icouldntkeepfromcryinglyricschords.pro
+    imported_at: '2026-01-02'

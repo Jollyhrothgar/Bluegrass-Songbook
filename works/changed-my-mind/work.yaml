@@ -1,0 +1,17 @@
+id: changed-my-mind
+title: Changed My Mind
+artist: Billy Walker
+composers:
+- Kent Westberry
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: changedmymindlyricschords.pro
+    imported_at: '2026-01-02'

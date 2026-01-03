@@ -1,0 +1,13 @@
+id: i-found-heaven
+title: I Found Heaven
+artist: Mel Street
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifoundheavenlyricschords.pro
+    imported_at: '2026-01-02'

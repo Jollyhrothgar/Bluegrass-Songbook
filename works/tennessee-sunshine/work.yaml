@@ -1,0 +1,17 @@
+id: tennessee-sunshine
+title: Tennessee Sunshine
+artist: Gene Watson
+composers:
+- Porter Wagoner
+default_key: F
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tennesseesunshinelyricschords.pro
+    imported_at: '2026-01-02'

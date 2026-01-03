@@ -1,0 +1,18 @@
+id: baby-please
+title: Baby Please
+artist: Fats Domino
+composers:
+- Pearl King and Dave Bartholomew
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babypleaselyricschords.pro
+    imported_at: '2026-01-02'

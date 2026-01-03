@@ -1,0 +1,15 @@
+id: if-i-be-lifted-up
+title: If I be Lifted Up
+artist: Emmy Lou Harris
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifibelifteduplyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: it-rains-everywhere-i-go
+title: It Rains Everywhere I Go
+artist: The Osborne Brothers
+composers:
+- Don Cusic
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itrainseverywhereigolyricschords.pro
+    imported_at: '2026-01-02'

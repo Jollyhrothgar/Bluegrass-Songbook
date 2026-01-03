@@ -1,0 +1,18 @@
+id: there-s-a-bluebird-on-your-windowsill
+title: There's A Bluebird On Your Windowsill
+artist: Wilf Carter
+composers:
+- Elizabeth Clarke
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresabluebirdonyourwindowsilllyricschords.pro
+    imported_at: '2026-01-02'

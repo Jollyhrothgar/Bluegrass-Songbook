@@ -1,0 +1,18 @@
+id: back-on-my-mind-again
+title: Back On My Mind Again
+artist: Ronnie Milsap
+composers:
+- Conrad Pierce and Charles Quillen
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backonmymindagainlyricschords.pro
+    imported_at: '2026-01-02'

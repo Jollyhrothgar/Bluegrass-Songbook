@@ -1,0 +1,18 @@
+id: remind-me-dear-lord
+title: Remind Me Dear Lord
+artist: The Oak Ridge Boys
+composers:
+- Dottie Rambo
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: remindmedearlordlyricschords.pro
+    imported_at: '2026-01-02'

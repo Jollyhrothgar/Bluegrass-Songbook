@@ -1,0 +1,18 @@
+id: fool-s-castle
+title: Fool's Castle
+artist: Merle Haggard
+composers:
+- Tommy Collins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: foolscastlelyricschords.pro
+    imported_at: '2026-01-02'

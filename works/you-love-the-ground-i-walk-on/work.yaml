@@ -1,0 +1,19 @@
+id: you-love-the-ground-i-walk-on
+title: You Love The Ground I Walk On
+artist: Waylon Jennings
+composers:
+- Harlan Howard and Don McHan
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youlovethegroundiwalkonlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-a-walking-advertisement-for-the-blues
+title: I'm A Walking Advertisement For The Blues
+artist: Norma Jean
+composers:
+- Cy Coben
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imawalkingadvertisementfortheblueslyricschords.pro
+    imported_at: '2026-01-02'

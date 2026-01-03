@@ -1,0 +1,15 @@
+id: ill-try-a-little-harder
+title: I’ll Try A Little Harder
+artist: Donna Fargo
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illtryalittleharderlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: im-so-glad
+title: I’m So Glad
+artist: Doyle Lawson
+composers:
+- Lester Williams and W.A. McKinney
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsogladlyricschords.pro
+    imported_at: '2026-01-02'

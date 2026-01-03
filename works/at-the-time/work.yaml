@@ -1,0 +1,17 @@
+id: at-the-time
+title: At The Time
+artist: Jean Shepard
+composers:
+- Bill Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atthetimelyricschords.pro
+    imported_at: '2026-01-02'

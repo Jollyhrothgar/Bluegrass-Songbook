@@ -1,0 +1,17 @@
+id: rainbow-and-roses
+title: Rainbow and Roses
+artist: Billy Walker
+composers:
+- Barbara Lewis and Don Lewis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rainbowandroseslyricschords.pro
+    imported_at: '2026-01-02'

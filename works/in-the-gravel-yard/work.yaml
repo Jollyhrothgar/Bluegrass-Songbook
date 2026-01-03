@@ -1,0 +1,15 @@
+id: in-the-gravel-yard
+title: In the Gravel Yard
+artist: Blue Highway
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: manual
+    source_file: inthegravelyard.pro
+    imported_at: '2026-01-02'

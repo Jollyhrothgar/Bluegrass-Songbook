@@ -1,0 +1,17 @@
+id: love-is-everything
+title: Love Is Everything
+artist: George Strait
+composers:
+- Casey Beathard and Pat Mclaughlin
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveiseverythinglyricschords.pro
+    imported_at: '2026-01-02'

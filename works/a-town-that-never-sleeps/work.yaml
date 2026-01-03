@@ -1,0 +1,17 @@
+id: a-town-that-never-sleeps
+title: A Town That Never Sleeps
+artist: Wilburn Brothers
+composers:
+- Teddy Wilburn, Doyle Wilburn, Don Helms
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atownthatneversleepslyricschords.pro
+    imported_at: '2026-01-02'

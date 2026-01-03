@@ -1,0 +1,17 @@
+id: hangin-on-alone
+title: Hangin' On Alone
+artist: Jeannie Seely
+composers:
+- Larry Gatlin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hanginonalonelyricschords.pro
+    imported_at: '2026-01-02'

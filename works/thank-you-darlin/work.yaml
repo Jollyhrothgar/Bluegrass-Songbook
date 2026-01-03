@@ -1,0 +1,17 @@
+id: thank-you-darlin
+title: Thank You Darlin'
+artist: Ricky Nelson
+composers:
+- Jackie DeShannon and Sharon Sheeley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankyoudarlinlyricschords.pro
+    imported_at: '2026-01-02'

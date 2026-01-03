@@ -1,0 +1,18 @@
+id: make-me-feel-like-a-woman-wants-to-feel
+title: Make Me Feel Like A Woman Wants To Feel
+artist: Reba McEntire
+composers:
+- Dana Collins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makemefeellikeawomanwantstofeellyricschords.pro
+    imported_at: '2026-01-02'

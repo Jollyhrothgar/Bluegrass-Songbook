@@ -1,0 +1,17 @@
+id: the-church-by-the-road
+title: The Church By The Road
+artist: Charlie Sizemore
+composers:
+- Charles Ethan Sizemore
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thechurchbytheroadlyricschords.pro
+    imported_at: '2026-01-02'

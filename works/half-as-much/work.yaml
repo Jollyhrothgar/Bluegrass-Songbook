@@ -1,0 +1,19 @@
+id: half-as-much
+title: Half as Much
+artist: Hank Williams
+composers:
+- Curley Williams
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: halfasmuchlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: satan-s-gotta-get-along-without-me
+title: Satan's Gotta Get Along Without Me
+artist: Buck Owens
+composers:
+- Buck Owens and Red Simpson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: satansgottagetalongwithoutmelyricschords.pro
+    imported_at: '2026-01-02'

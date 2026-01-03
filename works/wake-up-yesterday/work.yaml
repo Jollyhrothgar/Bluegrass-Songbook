@@ -1,0 +1,18 @@
+id: wake-up-yesterday
+title: Wake Up Yesterday
+artist: Clint Black
+composers:
+- Clint Black and Hayden Nicholas
+default_key: Dm
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wakeupyesterdaylyricschords.pro
+    imported_at: '2026-01-02'

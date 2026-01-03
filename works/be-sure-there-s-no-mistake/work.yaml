@@ -1,0 +1,17 @@
+id: be-sure-there-s-no-mistake
+title: Be Sure There's No Mistake
+artist: Eddy Arnold
+composers:
+- Eddy Arnold And Alton "Cook" Watson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: besuretheresnomistakelyricschords.pro
+    imported_at: '2026-01-02'

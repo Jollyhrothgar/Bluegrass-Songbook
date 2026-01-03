@@ -1,0 +1,17 @@
+id: all-the-love-i-had-is-gone
+title: All The Love I Had Is Gone
+artist: Ralph Stanley
+composers:
+- Roy Lee Centers and Archie E. Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alltheloveihadisgonelyricschords.pro
+    imported_at: '2026-01-02'

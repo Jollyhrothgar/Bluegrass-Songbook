@@ -1,0 +1,17 @@
+id: just-in-time-2
+title: Just In Time
+artist: Statler Brothers
+composers:
+- Lew DeWitt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justintimelyricswithchords.pro
+    imported_at: '2026-01-02'

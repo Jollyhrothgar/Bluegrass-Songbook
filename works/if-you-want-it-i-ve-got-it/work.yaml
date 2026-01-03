@@ -1,0 +1,17 @@
+id: if-you-want-it-i-ve-got-it
+title: If You Want It I've Got It
+artist: Carl Smith
+composers:
+- Woody Hill and Ina Hill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouwantitivegotitlyricschords.pro
+    imported_at: '2026-01-02'

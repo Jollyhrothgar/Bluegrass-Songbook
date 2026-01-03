@@ -1,0 +1,17 @@
+id: any-bar-in-birmingham
+title: Any Bar In Birmingham
+artist: Don Rigsby
+composers:
+- Larry Shell, Tim Stafford, Kim E. Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anybarinbirminghamlyricschords.pro
+    imported_at: '2026-01-02'

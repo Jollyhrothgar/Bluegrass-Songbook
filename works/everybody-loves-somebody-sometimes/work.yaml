@@ -1,0 +1,17 @@
+id: everybody-loves-somebody-sometimes
+title: Everybody Loves Somebody Sometimes
+artist: Dean Martin
+composers:
+- Irving Taylor and Ken Lane
+default_key: C
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodylovessomebodysometimeslyricschords.pro
+    imported_at: '2026-01-02'

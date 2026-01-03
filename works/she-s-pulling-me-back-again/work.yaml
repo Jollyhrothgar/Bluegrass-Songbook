@@ -1,0 +1,19 @@
+id: she-s-pulling-me-back-again
+title: She's Pulling Me Back Again
+artist: Mickey Gilley
+composers:
+- Jerry Foster & Jerry Rice
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shespullingmebackagainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: make-a-dream-come-true
+title: Make A Dream Come True
+artist: Crystal Gayle
+composers:
+- Larry Kingston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: makeadreamcometruelyricschords.pro
+    imported_at: '2026-01-02'

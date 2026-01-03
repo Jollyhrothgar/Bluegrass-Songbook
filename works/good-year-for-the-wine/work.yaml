@@ -1,0 +1,19 @@
+id: good-year-for-the-wine
+title: Good Year For The Wine
+artist: Ernest Tubb
+composers:
+- Fred Burch and Tandy Rice
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: goodyearforthewinelyricschords.pro
+    imported_at: '2026-01-02'

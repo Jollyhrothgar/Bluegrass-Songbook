@@ -1,0 +1,17 @@
+id: lady
+title: Lady
+artist: Vern Gosdin
+composers:
+- Max D. Barnes
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ladylyricschords.pro
+    imported_at: '2026-01-02'

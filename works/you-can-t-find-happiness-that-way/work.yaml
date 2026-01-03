@@ -1,0 +1,17 @@
+id: you-can-t-find-happiness-that-way
+title: You Can't Find Happiness That Way
+artist: Hawkshaw Hawkins
+composers:
+- Glenn Douglas and Frank Duke
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantfindhappinessthatwaylyricschords.pro
+    imported_at: '2026-01-02'

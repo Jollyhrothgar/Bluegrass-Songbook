@@ -1,0 +1,17 @@
+id: don-t-you-want-to-be-my-girl
+title: Don't You Want To Be My Girl
+artist: Jim Reeves
+composers:
+- Nellie Smith and Leona Butrum
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontyouwanttobemygirllyricschords.pro
+    imported_at: '2026-01-02'

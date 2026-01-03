@@ -1,0 +1,15 @@
+id: i-d-rather-fall-in-love-with-you
+title: I'd Rather Fall In Love With You
+artist: Charly McClain
+composers:
+- Jerry Hayes
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idratherfallinlovewithyoulyricschords.pro
+    imported_at: '2026-01-02'

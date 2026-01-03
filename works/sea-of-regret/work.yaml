@@ -1,0 +1,21 @@
+id: sea-of-regret
+title: Sea Of Regret
+artist: Ricky Skaggs
+composers:
+- David Sloas and Kenneth Sloas
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: seaofregretlyricschords.pro
+    imported_at: '2026-01-02'

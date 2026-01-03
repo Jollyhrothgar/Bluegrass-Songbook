@@ -1,0 +1,15 @@
+id: i-can-t-get-enough-of-you
+title: I Can't Get Enough Of You
+artist: Stonewall Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantgetenoughofyoulyricschords.pro
+    imported_at: '2026-01-02'

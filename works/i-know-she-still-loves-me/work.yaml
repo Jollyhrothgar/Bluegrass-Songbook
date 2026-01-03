@@ -1,0 +1,18 @@
+id: i-know-she-still-loves-me
+title: I Know She Still Loves Me
+artist: George Strait
+composers:
+- Aaron Gayle Barker and Monty H. N Holmes
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowshestilllovesmelyricschords.pro
+    imported_at: '2026-01-02'

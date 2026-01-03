@@ -1,0 +1,15 @@
+id: cincinnati-jail
+title: Cincinnati Jail
+artist: Bobby Bare
+composers:
+- Mel Tillis
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cincinnatijaillyricschords.pro
+    imported_at: '2026-01-02'

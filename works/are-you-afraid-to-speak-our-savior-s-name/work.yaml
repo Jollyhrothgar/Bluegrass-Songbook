@@ -1,0 +1,17 @@
+id: are-you-afraid-to-speak-our-savior-s-name
+title: Are You Afraid To Speak Our Savior's Name
+artist: The Osborne Brothers
+composers:
+- Bobby Osborne
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: areyouafraidtospeakoursaviorsnamelyricschords.pro
+    imported_at: '2026-01-02'

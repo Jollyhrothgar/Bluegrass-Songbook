@@ -1,0 +1,21 @@
+id: didja-ever
+title: Didja' Ever
+artist: Elvis Presley
+composers:
+- Sherman Edwards and Sid Wayne
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didjaeverlyricschords.pro
+    imported_at: '2026-01-02'

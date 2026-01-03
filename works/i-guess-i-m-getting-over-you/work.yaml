@@ -1,0 +1,18 @@
+id: i-guess-i-m-getting-over-you
+title: I Guess I'm Getting Over You
+artist: Hank Thompson
+composers:
+- Al Blasingame and Hank Thompson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iguessimgettingoveryoulyricschords.pro
+    imported_at: '2026-01-02'

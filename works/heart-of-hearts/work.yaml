@@ -1,0 +1,17 @@
+id: heart-of-hearts
+title: Heart Of Hearts
+artist: Don Williams
+composers:
+- Al Anderson, Sharon Vaughn, Stephen Bruton
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartofheartslyricsandchords.pro
+    imported_at: '2026-01-02'

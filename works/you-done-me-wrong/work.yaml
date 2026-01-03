@@ -1,0 +1,17 @@
+id: you-done-me-wrong
+title: You Done Me Wrong
+artist: Ray Price
+composers:
+- Stan Jones and Ray Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdonemewronglyricschords.pro
+    imported_at: '2026-01-02'

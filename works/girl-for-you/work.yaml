@@ -1,0 +1,15 @@
+id: girl-for-you
+title: Girl For You
+artist: John Anderson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: girlforyoulyricschords.pro
+    imported_at: '2026-01-02'

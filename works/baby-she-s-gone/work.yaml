@@ -1,0 +1,15 @@
+id: baby-she-s-gone
+title: Baby She's Gone
+artist: Jack Scott
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: babyshesgonelyricschords.pro
+    imported_at: '2026-01-02'

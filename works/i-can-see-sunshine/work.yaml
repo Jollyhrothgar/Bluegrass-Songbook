@@ -1,0 +1,17 @@
+id: i-can-see-sunshine
+title: I Can See Sunshine
+artist: Wynn Stewart
+composers:
+- Neal Merritt and Shorty Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanseesunshinelyricschords.pro
+    imported_at: '2026-01-02'

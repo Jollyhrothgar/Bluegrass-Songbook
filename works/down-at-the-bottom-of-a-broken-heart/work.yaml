@@ -1,0 +1,15 @@
+id: down-at-the-bottom-of-a-broken-heart
+title: Down At The Bottom of A Broken Heart
+artist: David Ball
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downatthebottomofabrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

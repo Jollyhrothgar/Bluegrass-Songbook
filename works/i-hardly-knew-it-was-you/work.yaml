@@ -1,0 +1,17 @@
+id: i-hardly-knew-it-was-you
+title: I Hardly Knew it was You
+artist: Faron Young
+composers:
+- Dan Welch
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ihardlyknewitwasyoulyricschords.pro
+    imported_at: '2026-01-02'

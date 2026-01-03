@@ -1,0 +1,20 @@
+id: come-stay-with-me
+title: Come Stay With Me
+artist: Waylon Jennings
+composers:
+- Jackie DeShannon
+default_key: D
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comestaywithmelyricschords.pro
+    imported_at: '2026-01-02'

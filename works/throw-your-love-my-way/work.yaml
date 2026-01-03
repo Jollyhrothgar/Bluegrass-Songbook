@@ -1,0 +1,19 @@
+id: throw-your-love-my-way
+title: Throw Your Love My Way
+artist: Ernest Tubb
+composers:
+- Ernest Tubb and Loys Southerland
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: throwyourlovemywaylyricschords.pro
+    imported_at: '2026-01-02'

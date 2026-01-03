@@ -1,0 +1,17 @@
+id: truck-driving-son-of-a-gun
+title: Truck Driving Son Of A Gun
+artist: Ferlin Husky
+composers:
+- Dixie Dean and Robert A. King
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: truckdrivingsonofagunlyricschords.pro
+    imported_at: '2026-01-02'

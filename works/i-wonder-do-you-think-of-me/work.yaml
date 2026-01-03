@@ -1,0 +1,15 @@
+id: i-wonder-do-you-think-of-me
+title: I Wonder Do You Think Of Me
+artist: Keith Whitley
+composers:
+- Sander D. Shafer
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderdoyouthinkofmelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: if-you-won-t-tell-on-me
+title: If You Won't Tell On Me
+artist: Connie Smith
+composers:
+- Dallas Frazier
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouwonttellonmelyricschords.pro
+    imported_at: '2026-01-02'

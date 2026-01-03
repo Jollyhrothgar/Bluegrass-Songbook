@@ -1,0 +1,15 @@
+id: she-s-all-i-live-for
+title: She's All I Live For
+artist: Johnny Paycheck
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shesalliliveforlyricschords.pro
+    imported_at: '2026-01-02'

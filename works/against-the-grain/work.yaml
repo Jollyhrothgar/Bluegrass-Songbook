@@ -1,0 +1,17 @@
+id: against-the-grain
+title: Against The Grain
+artist: Garth Brooks
+composers:
+- Larry Cordle, Bruce Bouton, Carl Jackson
+default_key: F
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: againstthegrainlyricschords.pro
+    imported_at: '2026-01-02'

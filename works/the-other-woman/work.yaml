@@ -1,0 +1,19 @@
+id: the-other-woman
+title: The Other Woman
+artist: Loretta Lynn
+composers:
+- Betty Sue Perry
+default_key: D
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theotherwomanlyricsandchords.pro
+    imported_at: '2026-01-02'

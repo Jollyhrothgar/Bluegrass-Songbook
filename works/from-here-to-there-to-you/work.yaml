@@ -1,0 +1,17 @@
+id: from-here-to-there-to-you
+title: From Here to There to You
+artist: Hank Locklin
+composers:
+- Pete McKinley and Larry Lee Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fromheretotheretoyoulyricschords.pro
+    imported_at: '2026-01-02'

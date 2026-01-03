@@ -1,0 +1,17 @@
+id: you-re-right-i-need-you-real-bad
+title: You're Right I Need You Real Bad
+artist: Stonewall Jackson
+composers:
+- George Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourerightineedyourealbadlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-m-gonna-be-warm-this-winter
+title: I'm Gonna Be Warm This Winter
+artist: Connie Francis
+composers:
+- Hank Hunter and Mark Barkan
+default_key: C
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnabewarmthiswinterlyricschords.pro
+    imported_at: '2026-01-02'

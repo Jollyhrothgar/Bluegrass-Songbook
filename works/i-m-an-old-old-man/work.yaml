@@ -1,0 +1,16 @@
+id: i-m-an-old-old-man
+title: I'm An Old Old Man
+artist: Lefty Frizzell
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imanoldoldmanlyricschords.pro
+    imported_at: '2026-01-02'

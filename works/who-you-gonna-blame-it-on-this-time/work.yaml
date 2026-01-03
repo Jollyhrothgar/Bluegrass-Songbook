@@ -1,0 +1,15 @@
+id: who-you-gonna-blame-it-on-this-time
+title: Who You Gonna Blame It On This Time
+artist: Vern Gosdin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoyougonnablameitonthistimelyricschords.pro
+    imported_at: '2026-01-02'

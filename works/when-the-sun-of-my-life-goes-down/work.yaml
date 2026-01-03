@@ -1,0 +1,17 @@
+id: when-the-sun-of-my-life-goes-down
+title: When The Sun Of My Life Goes Down
+artist: Doyle Lawson
+composers:
+- William McKinney
+default_key: D
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenthesunofmylifegoesdownlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: sweet-little-sixteen
+title: Sweet Little Sixteen
+artist: Chuck Berry
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetlittlesixteenlyricschords.pro
+    imported_at: '2026-01-02'

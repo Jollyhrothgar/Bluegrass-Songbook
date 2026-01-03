@@ -1,0 +1,17 @@
+id: no-i-don-t-believe-i-will
+title: No I Don't Believe I Will
+artist: Carl Smith
+composers:
+- Jim Denny and Jean Crowe
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noidontbelieveiwilllyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: heartaches-are-for-lovers-not-for-friends
+title: Heartaches Are For Lovers Not For Friends
+artist: Webb Pierce
+composers:
+- Sylvia Dee, Webb Pierce, Max Powell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartachesareforloversnotforfriendslyricschords.pro
+    imported_at: '2026-01-02'

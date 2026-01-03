@@ -1,0 +1,17 @@
+id: trouble-s-back-in-town
+title: Trouble's Back in Town
+artist: The Wilburn Brothers
+composers:
+- Dick Flood
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: troublesbackintownlyricschords.pro
+    imported_at: '2026-01-02'

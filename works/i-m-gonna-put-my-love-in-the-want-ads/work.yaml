@@ -1,0 +1,19 @@
+id: i-m-gonna-put-my-love-in-the-want-ads
+title: I'm Gonna Put My Love in the Want Ads
+artist: Mickey Gilley
+composers:
+- Jay Boyett and Mickey Gilley
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnaputmyloveinthewantadslyricschords.pro
+    imported_at: '2026-01-02'

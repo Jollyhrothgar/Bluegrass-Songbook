@@ -1,0 +1,17 @@
+id: future-ex-mrs-jones
+title: Future Ex-Mrs. Jones
+artist: Norma Jean
+composers:
+- Dolores Tolbert
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: futureex-mrsjoneslyricschords.pro
+    imported_at: '2026-01-02'

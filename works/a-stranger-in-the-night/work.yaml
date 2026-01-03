@@ -1,0 +1,19 @@
+id: a-stranger-in-the-night
+title: A Stranger in The Night
+artist: Hank Williams
+composers:
+- Hank Williams and Bill Morgan
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: astrangerinthenightlyricschords.pro
+    imported_at: '2026-01-02'

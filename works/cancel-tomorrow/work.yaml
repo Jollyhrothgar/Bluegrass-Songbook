@@ -1,0 +1,17 @@
+id: cancel-tomorrow
+title: Cancel Tomorrow
+artist: Dottie West
+composers:
+- Red Lane and Dottie West
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canceltomorrowlyricschords.pro
+    imported_at: '2026-01-02'

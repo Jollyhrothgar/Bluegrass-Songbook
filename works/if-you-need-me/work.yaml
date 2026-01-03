@@ -1,0 +1,18 @@
+id: if-you-need-me
+title: If You Need Me
+artist: Fats Domino
+composers:
+- Dave Bartholomew and Antoine Domino
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouneedmelyricschords.pro
+    imported_at: '2026-01-02'

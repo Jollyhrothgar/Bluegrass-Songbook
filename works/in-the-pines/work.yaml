@@ -1,0 +1,20 @@
+id: in-the-pines
+title: In The Pines
+artist: Dolly Parton
+composers:
+- Alan Riggs
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthepineslyricschords.pro
+    imported_at: '2026-01-02'

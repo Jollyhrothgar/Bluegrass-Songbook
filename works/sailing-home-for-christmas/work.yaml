@@ -1,0 +1,18 @@
+id: sailing-home-for-christmas
+title: Sailing Home For Christmas
+artist: Doug Stone
+composers:
+- Lewis Anderson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sailinghomeforChristmaslyricschords.pro
+    imported_at: '2026-01-02'

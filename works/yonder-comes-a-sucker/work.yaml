@@ -1,0 +1,15 @@
+id: yonder-comes-a-sucker
+title: Yonder Comes A Sucker
+artist: Jim Reeves
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yondercomesasuckerlyricschords.pro
+    imported_at: '2026-01-02'

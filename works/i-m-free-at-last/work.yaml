@@ -1,0 +1,19 @@
+id: i-m-free-at-last
+title: I'm Free At Last
+artist: Hank Williams
+composers:
+- Ernest Tubb
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imfreeatlastlyricschords.pro
+    imported_at: '2026-01-02'

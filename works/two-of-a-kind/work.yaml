@@ -1,0 +1,15 @@
+id: two-of-a-kind
+title: Two Of A Kind
+artist: Freddie Hart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twoofakindlyricsandchords.pro
+    imported_at: '2026-01-02'

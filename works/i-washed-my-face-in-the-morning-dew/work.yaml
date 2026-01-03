@@ -1,0 +1,17 @@
+id: i-washed-my-face-in-the-morning-dew
+title: I Washed My Face In The Morning Dew
+artist: Don Gibson
+composers:
+- Tom T. Hall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwashedmyfaceinthemorningdewlyricschords.pro
+    imported_at: '2026-01-02'

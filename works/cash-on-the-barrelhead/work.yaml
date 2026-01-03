@@ -1,0 +1,20 @@
+id: cash-on-the-barrelhead
+title: Cash on the Barrelhead
+artist: the Louvin Brothers
+composers:
+- Charlie Louvin and Ira Louvin
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cashonthebarrelheadlyricschords.pro
+    imported_at: '2026-01-02'

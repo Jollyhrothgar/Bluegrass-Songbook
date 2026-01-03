@@ -1,0 +1,15 @@
+id: they-always-remind-me-of-you
+title: They Always Remind Me Of You
+artist: Johnny Rodriguez
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theyalwaysremindmeofyoulyricschords.pro
+    imported_at: '2026-01-02'

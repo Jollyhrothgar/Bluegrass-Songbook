@@ -1,0 +1,15 @@
+id: leavin-s-not-the-only-way-to-go
+title: Leavin's Not The Only Way To Go
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leavinsnottheonlywaytogolyricschords.pro
+    imported_at: '2026-01-02'

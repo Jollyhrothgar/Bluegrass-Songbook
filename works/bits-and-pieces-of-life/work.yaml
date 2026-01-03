@@ -1,0 +1,17 @@
+id: bits-and-pieces-of-life
+title: Bits And Pieces Of Life
+artist: Cal Smith
+composers:
+- Charlie Williams
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bitsandpiecesoflifelyricschords.pro
+    imported_at: '2026-01-02'

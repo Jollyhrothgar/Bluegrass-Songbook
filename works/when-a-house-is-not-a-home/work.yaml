@@ -1,0 +1,15 @@
+id: when-a-house-is-not-a-home
+title: When a House Is Not a Home
+artist: Roger Miller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenahouseisnotahomelyricschords.pro
+    imported_at: '2026-01-02'

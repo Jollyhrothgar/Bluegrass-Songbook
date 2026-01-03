@@ -1,0 +1,17 @@
+id: after-all-3
+title: After All
+artist: Wynn Stewart
+composers:
+- Joe Hulsey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afteralllyricswithchords.pro
+    imported_at: '2026-01-02'

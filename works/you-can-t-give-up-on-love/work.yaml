@@ -1,0 +1,15 @@
+id: you-can-t-give-up-on-love
+title: You Can't Give Up On Love
+artist: Alan Jackson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantgiveuponlovelyricschords.pro
+    imported_at: '2026-01-02'

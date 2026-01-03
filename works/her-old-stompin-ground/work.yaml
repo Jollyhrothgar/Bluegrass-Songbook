@@ -1,0 +1,18 @@
+id: her-old-stompin-ground
+title: Her Old Stompin' Ground
+artist: Tracy Lawrence
+composers:
+- Paul Nelson and Kenny Beard
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heroldstompingroundlyricschords.pro
+    imported_at: '2026-01-02'

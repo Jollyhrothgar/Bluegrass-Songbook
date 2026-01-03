@@ -1,0 +1,19 @@
+id: could-i-have-this-dance
+title: Could I Have This Dance
+artist: Anne Murray
+composers:
+- Wayland Holyfield and Bob House
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: couldihavethisdancelyricschords.pro
+    imported_at: '2026-01-02'

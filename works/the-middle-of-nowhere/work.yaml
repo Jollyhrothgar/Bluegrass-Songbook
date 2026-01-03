@@ -1,0 +1,18 @@
+id: the-middle-of-nowhere
+title: The Middle Of Nowhere
+artist: George Strait
+composers:
+- Shawn Camp and John S. Sherrill
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themiddleofnowherelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: honky-tonk-crowd
+title: Honky Tonk Crowd
+artist: John Anderson
+composers:
+- Larry Cordle and Lionel Delmore
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkcrowdlyricschords.pro
+    imported_at: '2026-01-02'

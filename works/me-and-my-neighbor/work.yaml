@@ -1,0 +1,18 @@
+id: me-and-my-neighbor
+title: Me And My Neighbor
+artist: Conway Twitty
+composers:
+- Wayne Kemp
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meandmyneighborlyricschords.pro
+    imported_at: '2026-01-02'

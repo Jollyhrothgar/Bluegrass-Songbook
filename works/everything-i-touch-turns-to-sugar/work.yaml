@@ -1,0 +1,17 @@
+id: everything-i-touch-turns-to-sugar
+title: Everything I Touch Turns To Sugar
+artist: Carl Smith
+composers:
+- Eddy Raven
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everythingitouchturnstosugarlyricschords.pro
+    imported_at: '2026-01-02'

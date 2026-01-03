@@ -1,0 +1,17 @@
+id: all-night-long-2
+title: All Night Long
+artist: Dottie West
+composers:
+- Richard Mainegra and Milton Blackford
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allnightlonglyricswithchords.pro
+    imported_at: '2026-01-02'

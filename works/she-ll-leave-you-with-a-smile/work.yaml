@@ -1,0 +1,18 @@
+id: she-ll-leave-you-with-a-smile
+title: She'll Leave You With A Smile
+artist: George Strait
+composers:
+- Jackson Leap
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shellleaveyouwithasmilelyricschords.pro
+    imported_at: '2026-01-02'

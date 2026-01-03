@@ -1,0 +1,15 @@
+id: please-sing-satin-sheets-for-me
+title: Please Sing Satin Sheets For Me
+artist: Jeanne Pruett
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pleasesingsatinsheetsformelyricschords.pro
+    imported_at: '2026-01-02'

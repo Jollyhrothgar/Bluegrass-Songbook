@@ -1,0 +1,16 @@
+id: stranded-on-a-dead-end-street
+title: Stranded On A Dead End Street
+artist: Earl Thomas Conley
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: strandedonadeadendstreetlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: bethlehem-star
+title: Bethlehem Star
+artist: Slim Whitman
+composers:
+- E.S. Tillotson and W. Moore
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bethlehemstarlyricschords.pro
+    imported_at: '2026-01-02'

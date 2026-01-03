@@ -1,0 +1,17 @@
+id: victims-of-the-pretty-things-in-life
+title: Victims Of The Pretty Things In Life
+artist: Johnny Lee
+composers:
+- Mike Tate and Sammy Vaughn
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: victimsoftheprettythingsinlifelyricschords.pro
+    imported_at: '2026-01-02'

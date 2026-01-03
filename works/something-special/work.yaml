@@ -1,0 +1,19 @@
+id: something-special
+title: Something Special
+artist: Mel Tillis
+composers:
+- Ray Griff
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingspeciallyricschords.pro
+    imported_at: '2026-01-02'

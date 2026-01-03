@@ -1,0 +1,17 @@
+id: almost-in-love
+title: Almost In Love
+artist: Statler Brothers
+composers:
+- Don Reid and Harold Reid
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: almostinlovelyricschords.pro
+    imported_at: '2026-01-02'

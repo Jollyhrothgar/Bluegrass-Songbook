@@ -1,0 +1,19 @@
+id: waiting-for-the-phone-to-ring
+title: Waiting For The Phone To Ring
+artist: Patty Loveless
+composers:
+- Joe Tassi and Bob Tassi
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: waitingforthephonetoringlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: are-we-dreamin-the-same-dream
+title: Are We Dreamin' The Same Dream
+artist: Charlie Rich
+composers:
+- Johnny Christopher and Billy Burnette
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: arewedreaminthesamedreamlyricschords.pro
+    imported_at: '2026-01-02'

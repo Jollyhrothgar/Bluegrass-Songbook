@@ -1,0 +1,17 @@
+id: ever-since-my-baby-went-away
+title: Ever Since My Baby Went Away
+artist: Jack Greene
+composers:
+- Marty Robbins
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eversincemybabywentawaylyricschords.pro
+    imported_at: '2026-01-02'

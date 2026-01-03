@@ -1,0 +1,17 @@
+id: a-sweeter-love-than-yours-ill-never-know
+title: A Sweeter Love Than Yours I’ll Never Know
+artist: Smiling Jim Eanes
+composers:
+- Drusilla Adams and Bill Church
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: asweeterlovethanyoursillneverknowlyricschords.pro
+    imported_at: '2026-01-02'

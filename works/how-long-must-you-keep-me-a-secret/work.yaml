@@ -1,0 +1,15 @@
+id: how-long-must-you-keep-me-a-secret
+title: How Long Must You Keep Me A Secret
+artist: Leroy Van Dyke
+composers:
+- Barry Mann and Larry Kolber
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howlongmustyoukeepmeasecretlyricschords.pro
+    imported_at: '2026-01-02'

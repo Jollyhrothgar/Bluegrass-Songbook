@@ -1,0 +1,22 @@
+id: the-rebel-aka-the-ballad-of-johnny-yuma
+title: The Rebel (Aka The Ballad Of Johnny Yuma)
+artist: Johnny Cash
+composers:
+- Richard Markowitz and Andrew Fenady
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therebelakatheballadofjohnnyyumalyricschords.pro
+    imported_at: '2026-01-02'

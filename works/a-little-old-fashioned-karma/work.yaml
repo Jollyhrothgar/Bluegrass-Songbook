@@ -1,0 +1,17 @@
+id: a-little-old-fashioned-karma
+title: A Little Old Fashioned Karma
+artist: Willie Nelson
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alittleoldfashionedkarmalyricschords.pro
+    imported_at: '2026-01-02'

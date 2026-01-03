@@ -1,0 +1,18 @@
+id: carry-me-across-the-mountain
+title: Carry Me Across The Mountain
+artist: Dan Tyminski
+composers:
+- John Pennell, William P. Smith, Jeffery White
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: carrymeacrossthemountainlyricschords.pro
+    imported_at: '2026-01-02'

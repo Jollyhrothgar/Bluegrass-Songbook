@@ -1,0 +1,17 @@
+id: put-yourself-in-my-shoes
+title: Put Yourself In My Shoes
+artist: Clint Black
+composers:
+- Clint Black, Hayden Nicholas, Shake Russell
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: putyourselfinmyshoeslyricschords.pro
+    imported_at: '2026-01-02'

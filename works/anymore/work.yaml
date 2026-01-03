@@ -1,0 +1,17 @@
+id: anymore
+title: Anymore
+artist: Porter Wagoner
+composers:
+- Vic McAlpin, Roy Drusky, Marie Wilson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anymorelyricsandchords.pro
+    imported_at: '2026-01-02'

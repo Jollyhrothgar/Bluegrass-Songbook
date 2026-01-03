@@ -1,0 +1,17 @@
+id: skip-a-rope
+title: Skip a Rope
+artist: George Jones
+composers:
+- Jack Moran and Glenn Tubb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: skiparopelyricschords.pro
+    imported_at: '2026-01-02'

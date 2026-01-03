@@ -1,0 +1,19 @@
+id: too-much-of-too-little
+title: Too Much Of Too Little
+artist: George Strait
+composers:
+- Curtis Wayne
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: toomuchoftoolittlelyricschords.pro
+    imported_at: '2026-01-02'

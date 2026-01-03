@@ -1,0 +1,18 @@
+id: the-road-less-traveled
+title: The Road Less Traveled
+artist: George Strait
+composers:
+- Dean Dillon and Buddy Brock
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theroadlesstraveledlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: sometimes-i-cry-in-my-sleep
+title: Sometimes I Cry In My Sleep
+artist: Ricky Van Shelton
+composers:
+- R.V. Shelton and R.M. Bourke
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sometimesicryinmysleeplyricschords.pro
+    imported_at: '2026-01-02'

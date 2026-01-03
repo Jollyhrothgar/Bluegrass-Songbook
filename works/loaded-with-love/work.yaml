@@ -1,0 +1,17 @@
+id: loaded-with-love
+title: Loaded With Love
+artist: Hawkshaw Hawkins
+composers:
+- Henry Glover and Lucky Millinder
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loadedwithlovelyricschords.pro
+    imported_at: '2026-01-02'

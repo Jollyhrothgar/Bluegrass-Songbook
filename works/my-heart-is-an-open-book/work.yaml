@@ -1,0 +1,17 @@
+id: my-heart-is-an-open-book
+title: My Heart Is An Open Book
+artist: Jimmy Dean
+composers:
+- Mack Gordon
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartisanopenbooklyricschords.pro
+    imported_at: '2026-01-02'

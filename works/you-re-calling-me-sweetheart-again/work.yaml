@@ -1,0 +1,17 @@
+id: you-re-calling-me-sweetheart-again
+title: You're Calling Me Sweetheart Again
+artist: Jean Shepard
+composers:
+- Jack Rhodes and Gertrude Cox
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourecallingmesweetheartagainlyricschords.pro
+    imported_at: '2026-01-02'

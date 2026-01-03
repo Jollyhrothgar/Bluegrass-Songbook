@@ -1,0 +1,18 @@
+id: it-s-my-love-and-i-m-gonna-give-it
+title: It's My Love (And I'm Gonna Give It)
+artist: Mel Tillis
+composers:
+- Wayne P. Walker
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsmyloveandimgonnagiveitlyricschords.pro
+    imported_at: '2026-01-02'

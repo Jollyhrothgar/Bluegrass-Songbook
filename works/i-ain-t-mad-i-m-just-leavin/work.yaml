@@ -1,0 +1,17 @@
+id: i-ain-t-mad-i-m-just-leavin
+title: I Ain't Mad I'm Just Leavin'
+artist: George Hamilton IV
+composers:
+- Johnny Russell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iaintmadimjustleavinlyricschords.pro
+    imported_at: '2026-01-02'

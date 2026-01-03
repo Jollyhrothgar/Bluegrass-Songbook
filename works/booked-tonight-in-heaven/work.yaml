@@ -1,0 +1,17 @@
+id: booked-tonight-in-heaven
+title: Booked Tonight In Heaven
+artist: Gene Watson
+composers:
+- Gary Josey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bookedtonightinheavenlyricschords.pro
+    imported_at: '2026-01-02'

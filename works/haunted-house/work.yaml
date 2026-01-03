@@ -1,0 +1,20 @@
+id: haunted-house
+title: Haunted House
+artist: Jerry Lee Lewis
+composers:
+- Robert L. Geddins
+default_key: G
+tags:
+- Rockabilly
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hauntedhouselyricschords.pro
+    imported_at: '2026-01-02'

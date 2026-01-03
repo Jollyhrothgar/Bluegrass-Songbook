@@ -1,0 +1,22 @@
+id: shepherd-of-my-heart
+title: Shepherd Of My Heart
+artist: Johnny Cash
+composers:
+- Jenny Lou Carson
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shepherdofmyheartlyricschords.pro
+    imported_at: '2026-01-02'

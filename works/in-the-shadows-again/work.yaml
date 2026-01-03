@@ -1,0 +1,17 @@
+id: in-the-shadows-again
+title: In The Shadows Again
+artist: Hawkshaw Hawkins
+composers:
+- Lee Emerson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: intheshadowsagainlyricschords.pro
+    imported_at: '2026-01-02'

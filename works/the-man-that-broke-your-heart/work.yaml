@@ -1,0 +1,17 @@
+id: the-man-that-broke-your-heart
+title: The Man That Broke Your Heart
+artist: Gene Watson
+composers:
+- Bill Joe Foster, Gene Pistilli, Tommy Collins
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themanthatbrokeyourheartlyricschords.pro
+    imported_at: '2026-01-02'

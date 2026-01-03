@@ -1,0 +1,17 @@
+id: i-m-over-you-1
+title: I'm Over You
+artist: George Jones
+composers:
+- Bobby Braddock
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imoveryoulyricschords.pro
+    imported_at: '2026-01-02'

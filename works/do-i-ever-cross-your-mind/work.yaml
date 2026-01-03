@@ -1,0 +1,18 @@
+id: do-i-ever-cross-your-mind
+title: Do I Ever Cross Your Mind
+artist: Emmylou Harris
+composers:
+- Dolly Parton
+default_key: C
+tags:
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: doievercrossyourmindlyricschords.pro
+    imported_at: '2026-01-02'

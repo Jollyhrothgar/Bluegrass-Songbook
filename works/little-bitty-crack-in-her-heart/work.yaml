@@ -1,0 +1,18 @@
+id: little-bitty-crack-in-her-heart
+title: Little Bitty Crack In Her Heart
+artist: Randy Travis
+composers:
+- Jim Rushing and Shawn Camp
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littlebittycrackinherheartlyricschords.pro
+    imported_at: '2026-01-02'

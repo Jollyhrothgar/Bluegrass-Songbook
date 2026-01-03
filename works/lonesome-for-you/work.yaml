@@ -1,0 +1,21 @@
+id: lonesome-for-you
+title: Lonesome For You
+artist: Ricky Skaggs
+composers:
+- Larry Cordle and Larry Shell
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonesomeforyoulyricschords.pro
+    imported_at: '2026-01-02'

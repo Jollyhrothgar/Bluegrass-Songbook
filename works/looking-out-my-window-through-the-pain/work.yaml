@@ -1,0 +1,18 @@
+id: looking-out-my-window-through-the-pain
+title: Looking Out My Window Through The Pain
+artist: George Strait
+composers:
+- John Schweers
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookingoutmywindowthroughthepainlyricsandchords.pro
+    imported_at: '2026-01-02'

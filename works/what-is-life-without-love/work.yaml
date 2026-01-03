@@ -1,0 +1,17 @@
+id: what-is-life-without-love
+title: What Is Life Without Love
+artist: Eddy Arnold
+composers:
+- Eddy Arnold, Vic McAlpin, Owen Bradley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatislifewithoutlovelyricschords.pro
+    imported_at: '2026-01-02'

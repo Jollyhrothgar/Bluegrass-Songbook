@@ -1,0 +1,19 @@
+id: mean-woman-blues
+title: Mean Woman Blues
+artist: Roy Orbison
+composers:
+- Claude Demetrius
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meanwomanblueslyricschords.pro
+    imported_at: '2026-01-02'

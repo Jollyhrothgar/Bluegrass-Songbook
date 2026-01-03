@@ -1,0 +1,16 @@
+id: tammy
+title: Tammy
+artist: Brenda Lee
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tammylyricschords.pro
+    imported_at: '2026-01-02'

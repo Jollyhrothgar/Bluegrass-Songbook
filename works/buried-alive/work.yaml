@@ -1,0 +1,15 @@
+id: buried-alive
+title: Buried Alive
+artist: Carl Smith
+composers:
+- Billy Swan
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: buriedalivelyricschords.pro
+    imported_at: '2026-01-02'

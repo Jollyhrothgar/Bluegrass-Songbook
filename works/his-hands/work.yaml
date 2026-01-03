@@ -1,0 +1,17 @@
+id: his-hands
+title: His Hands
+artist: Eddy Arnold
+composers:
+- Stuart Hamblen
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hishandslyricschords.pro
+    imported_at: '2026-01-02'

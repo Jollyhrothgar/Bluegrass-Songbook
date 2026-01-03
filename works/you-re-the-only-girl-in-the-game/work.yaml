@@ -1,0 +1,18 @@
+id: you-re-the-only-girl-in-the-game
+title: You're The Only Girl In The Game
+artist: Merle Haggard
+composers:
+- Hank Cochran and Glenn Martin
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youretheonlygirlinthegamelyricschords.pro
+    imported_at: '2026-01-02'

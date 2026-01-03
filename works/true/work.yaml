@@ -1,0 +1,18 @@
+id: 'true'
+title: 'True'
+artist: George Strait
+composers:
+- Jeff Stevens and Marv Green
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: truelyricsandchords.pro
+    imported_at: '2026-01-02'

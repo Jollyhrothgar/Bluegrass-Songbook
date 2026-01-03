@@ -1,0 +1,17 @@
+id: on-that-old-hawaiian-shore-with-you
+title: On That Old Hawaiian Shore With You
+artist: Hank Snow
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onthatoldhawaiianshorewithyoulyricschords.pro
+    imported_at: '2026-01-02'

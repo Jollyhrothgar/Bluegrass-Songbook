@@ -1,0 +1,17 @@
+id: sometimes-you-just-can-t-win
+title: Sometimes You Just Can't Win
+artist: George Jones
+composers:
+- Smokey Stover
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sometimesyoujustcantwinlyricschords.pro
+    imported_at: '2026-01-02'

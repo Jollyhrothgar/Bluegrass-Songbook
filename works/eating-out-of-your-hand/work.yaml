@@ -1,0 +1,17 @@
+id: eating-out-of-your-hand
+title: Eating Out Of Your Hand
+artist: Bill Harrell
+composers:
+- Bill Harrell and Hope Harlow
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eatingoutofyourhandlyricschords.pro
+    imported_at: '2026-01-02'

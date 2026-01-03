@@ -1,0 +1,17 @@
+id: the-man-worth-loving-you
+title: The Man Worth Loving You
+artist: George Jones
+composers:
+- Earl Montgomery
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: themanworthlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

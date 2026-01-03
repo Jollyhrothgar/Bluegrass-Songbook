@@ -1,0 +1,18 @@
+id: i-ll-come-back-as-another-woman
+title: I'll Come Back As Another Woman
+artist: Tanya Tucker
+composers:
+- Kent M. Robbins and Richard E. Carpenter
+default_key: Am
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illcomebackasanotherwomanlyricschords.pro
+    imported_at: '2026-01-02'

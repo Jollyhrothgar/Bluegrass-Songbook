@@ -1,0 +1,18 @@
+id: lone-star-blues
+title: Lone Star Blues
+artist: George Strait
+composers:
+- Delbert McClinton and Gary Nicholson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonestarblueslyricschords.pro
+    imported_at: '2026-01-02'

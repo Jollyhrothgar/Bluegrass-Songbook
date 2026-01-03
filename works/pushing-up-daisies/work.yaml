@@ -1,0 +1,18 @@
+id: pushing-up-daisies
+title: Pushing Up Daisies
+artist: Garth Brooks
+composers:
+- John Hadley, Kevin Welch, Gary Scruggs
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pushingupdaisieslyricschords.pro
+    imported_at: '2026-01-02'

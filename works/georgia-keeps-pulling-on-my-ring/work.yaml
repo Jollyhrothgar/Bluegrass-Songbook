@@ -1,0 +1,18 @@
+id: georgia-keeps-pulling-on-my-ring
+title: Georgia Keeps Pulling On My Ring
+artist: Conway Twitty
+composers:
+- David Wilkins and Tim Marshall
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: georgiakeepspullingonmyringlyricschords.pro
+    imported_at: '2026-01-02'

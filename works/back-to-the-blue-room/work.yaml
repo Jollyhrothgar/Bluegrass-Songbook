@@ -1,0 +1,17 @@
+id: back-to-the-blue-room
+title: Back To The Blue Room
+artist: Wynn Stewart
+composers:
+- Dale Noe
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backtotheblueroomlyricschords.pro
+    imported_at: '2026-01-02'

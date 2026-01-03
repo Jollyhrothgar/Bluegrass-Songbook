@@ -1,0 +1,15 @@
+id: two-pairs-of-levis-and-a-pair-of-justin-boots
+title: Two Pairs of Levis and a Pair of Justin Boots
+artist: Red Steagall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: twopairsoflevisandapairofjustinbootslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: he-follows-my-footsteps
+title: He Follows My Footsteps
+artist: Charlie Rich
+composers:
+- Margaret A. Rich
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hefollowsmyfootstepslyricschords.pro
+    imported_at: '2026-01-02'

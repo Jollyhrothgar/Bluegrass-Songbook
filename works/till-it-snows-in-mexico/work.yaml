@@ -1,0 +1,18 @@
+id: till-it-snows-in-mexico
+title: Till It Snows In Mexico
+artist: Reba McEntire
+composers:
+- Gordon Payne and Roger LaVoie
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tillitsnowsinmexicolyricschords.pro
+    imported_at: '2026-01-02'

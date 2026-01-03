@@ -1,0 +1,17 @@
+id: christmas-time-back-home
+title: Christmas Time Back Home
+artist: The Country Gentlemen
+composers:
+- John Duffey and Ann Streeter
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmastimebackhomelyricschords.pro
+    imported_at: '2026-01-02'

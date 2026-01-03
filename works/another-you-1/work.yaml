@@ -1,0 +1,17 @@
+id: another-you-1
+title: Another You
+artist: Johnny Tillotson
+composers:
+- Johnny Tillotson and Lucille Cosenza
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anotheryoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: there-s-no-way-to-get-there-from-here
+title: There's No Way To Get There From Here
+artist: Sonny James
+composers:
+- Carole Smith and Sonny James
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnowaytogettherefromherelyricschords.pro
+    imported_at: '2026-01-02'

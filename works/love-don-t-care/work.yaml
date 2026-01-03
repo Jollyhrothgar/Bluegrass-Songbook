@@ -1,0 +1,15 @@
+id: love-don-t-care
+title: Love Don't Care
+artist: Curtis Potter, Tony Booth & Darrell McCall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovedontcarelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: the-devils-train
+title: The Devil’s Train
+artist: Hank Williams
+composers:
+- Mel Foree and Cliff Carlisle
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedevilstrainlyricschords.pro
+    imported_at: '2026-01-02'

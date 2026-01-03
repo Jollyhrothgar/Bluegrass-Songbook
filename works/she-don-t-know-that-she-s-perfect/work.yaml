@@ -1,0 +1,18 @@
+id: she-don-t-know-that-she-s-perfect
+title: She Don't Know That She's Perfect
+artist: The Bellamy Brothers
+composers:
+- David Bellamy and Howard Bellamy
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shedontknowthatshesperfectlyricschords.pro
+    imported_at: '2026-01-02'

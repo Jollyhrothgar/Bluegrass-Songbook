@@ -1,0 +1,17 @@
+id: i-told-them-all-about-you
+title: I Told Them All About You
+artist: David Houston
+composers:
+- Cliff Friend
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itoldthemallaboutyoulyricschords.pro
+    imported_at: '2026-01-02'

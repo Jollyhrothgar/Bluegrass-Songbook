@@ -1,0 +1,13 @@
+id: i-can-t-get-that-last-memory-down
+title: I Can't Get That Last Memory Down
+artist: Carl Smith
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantgetthatlastmemorydownlyricschords.pro
+    imported_at: '2026-01-02'

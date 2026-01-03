@@ -1,0 +1,17 @@
+id: just-give-me-what-you-think-is-fair
+title: Just Give Me What You Think Is Fair
+artist: Vern Gosdin
+composers:
+- Christopher Rider and B.L. Haywood
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justgivemewhatyouthinkisfairlyricschords.pro
+    imported_at: '2026-01-02'

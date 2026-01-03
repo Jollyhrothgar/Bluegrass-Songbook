@@ -1,0 +1,17 @@
+id: love-s-gonna-happen-to-me
+title: Love's Gonna Happen To Me
+artist: Wynn Stewart
+composers:
+- Jim Stewart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovesgonnahappentomelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: dont-let-me-cross-over
+title: Don’t Let Me Cross Over
+artist: Webb Pierce
+composers:
+- Penny Jay [3/4 time]
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontletmecrossoverlyricschords.pro
+    imported_at: '2026-01-02'

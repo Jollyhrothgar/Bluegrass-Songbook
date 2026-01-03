@@ -1,0 +1,17 @@
+id: you-can-t-never-tell
+title: You Can't Never Tell
+artist: Hank Locklin
+composers:
+- Luke McDaniel
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantnevertelllyricschords.pro
+    imported_at: '2026-01-02'

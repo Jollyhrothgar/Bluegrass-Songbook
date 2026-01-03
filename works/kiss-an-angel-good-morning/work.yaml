@@ -1,0 +1,17 @@
+id: kiss-an-angel-good-morning
+title: Kiss an Angel Good Morning
+artist: Charlie Pride
+composers:
+- Ben Peters
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kissanangelgoodmorninglyricschords.pro
+    imported_at: '2026-01-02'

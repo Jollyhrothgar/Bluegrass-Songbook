@@ -1,0 +1,17 @@
+id: call-me-your-sweetheart
+title: Call Me Your Sweetheart
+artist: Webb Pierce
+composers:
+- recorded by Webb Pierce [3/4 time]
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: callmeyoursweetheartlyricschords.pro
+    imported_at: '2026-01-02'

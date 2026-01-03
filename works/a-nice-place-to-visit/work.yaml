@@ -1,0 +1,17 @@
+id: a-nice-place-to-visit
+title: A Nice Place To Visit
+artist: George Hamilton IV
+composers:
+- John D. Loudermilk
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aniceplacetovisitlyricschords.pro
+    imported_at: '2026-01-02'

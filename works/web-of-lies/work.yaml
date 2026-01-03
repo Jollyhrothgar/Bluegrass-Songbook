@@ -1,0 +1,17 @@
+id: web-of-lies
+title: Web Of Lies
+artist: Sonny James
+composers:
+- Sonny James and Carole Smith
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weboflieslyricschords.pro
+    imported_at: '2026-01-02'

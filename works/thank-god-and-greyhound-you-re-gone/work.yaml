@@ -1,0 +1,15 @@
+id: thank-god-and-greyhound-you-re-gone
+title: Thank God and Greyhound You're Gone
+artist: Roy Clark
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankgodandgreyhoundyouregonelyricschords.pro
+    imported_at: '2026-01-02'

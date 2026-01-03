@@ -1,0 +1,17 @@
+id: ole-george
+title: Ole George
+artist: Leona Williams
+composers:
+- David C. Kirby
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: olegeorgelyricschords.pro
+    imported_at: '2026-01-02'

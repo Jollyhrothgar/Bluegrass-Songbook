@@ -1,0 +1,18 @@
+id: crying-steel-guitar-waltz
+title: Crying Steel Guitar Waltz
+artist: Marty Robbins
+composers:
+- Shorty Long and Dolly Long
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cryingsteelguitarwaltzlyricschords.pro
+    imported_at: '2026-01-02'

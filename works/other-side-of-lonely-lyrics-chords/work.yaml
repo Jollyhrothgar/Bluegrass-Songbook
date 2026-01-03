@@ -1,0 +1,17 @@
+id: other-side-of-lonely-lyrics-chords
+title: Other Side Of Lonely Lyrics Chords
+artist: Eddy Arnold
+composers:
+- Cindy Walker and Lee Fykes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: othersideoflonelylyricschords.pro
+    imported_at: '2026-01-02'

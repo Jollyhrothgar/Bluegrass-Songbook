@@ -1,0 +1,19 @@
+id: driftwood-on-the-river
+title: Driftwood On The River
+artist: Ernest Tubb
+composers:
+- John Klenner and Bob Miller
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: driftwoodontheriverlyricschords.pro
+    imported_at: '2026-01-02'

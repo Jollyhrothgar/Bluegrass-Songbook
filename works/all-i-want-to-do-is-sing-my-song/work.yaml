@@ -1,0 +1,17 @@
+id: all-i-want-to-do-is-sing-my-song
+title: All I Want To Do Is Sing My Song
+artist: Merle Haggard
+composers:
+- Merle Haggard and Freddy Powers
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alliwanttodoissingmysonglyricschords.pro
+    imported_at: '2026-01-02'

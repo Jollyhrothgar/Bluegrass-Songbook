@@ -1,0 +1,17 @@
+id: the-lonely-know-my-secret
+title: The Lonely Know My Secret
+artist: George Jones
+composers:
+- Earl Montgomery
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thelonelyknowmysecretlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: ain-t-no-fun-to-be-alone-in-san-antone
+title: Ain't No Fun To Be Alone In San Antone
+artist: Gene Watson
+composers:
+- Buddy Cannon and Luke Reed
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aintnofuntobealoneinsanantonelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,21 @@
+id: you-ve-got-a-lover
+title: You've Got A Lover
+artist: Ricky Skaggs
+composers:
+- Shake Russell
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegotaloverlyricschords.pro
+    imported_at: '2026-01-02'

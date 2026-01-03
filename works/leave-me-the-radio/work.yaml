@@ -1,0 +1,19 @@
+id: leave-me-the-radio
+title: Leave Me the Radio
+artist: Doug Stone
+composers:
+- Billy Kirsch, Tim Nichols, Zack Turner
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leavemetheradiolyricschords.pro
+    imported_at: '2026-01-02'

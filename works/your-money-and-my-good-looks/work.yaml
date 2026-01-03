@@ -1,0 +1,17 @@
+id: your-money-and-my-good-looks
+title: Your Money And My Good Looks
+artist: Gene Watson with Rhonda Vincent
+composers:
+- Terry Herd and Rhonda Vincent
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourmoneyandmygoodlookslyricschords.pro
+    imported_at: '2026-01-02'

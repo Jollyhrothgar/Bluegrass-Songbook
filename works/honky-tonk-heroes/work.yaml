@@ -1,0 +1,19 @@
+id: honky-tonk-heroes
+title: Honky Tonk Heroes
+artist: Waylon Jennings
+composers:
+- Billy Joe Shaver
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: honkytonkheroeslyricschords.pro
+    imported_at: '2026-01-02'

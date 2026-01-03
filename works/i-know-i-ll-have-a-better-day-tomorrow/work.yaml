@@ -1,0 +1,16 @@
+id: i-know-i-ll-have-a-better-day-tomorrow
+title: I Know I'll Have A Better Day Tomorrow
+artist: Reba McEntire
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iknowillhaveabetterdaytomorrowlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-should-have-been-gone-by-now
+title: You Should Have Been Gone By Now
+artist: Eddy Raven
+composers:
+- Don Pfrimmer, Eddy Raven, Frank J. Myers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youshouldhavebeengonebynowlyricschords.pro
+    imported_at: '2026-01-02'

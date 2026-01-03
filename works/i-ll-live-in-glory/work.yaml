@@ -1,0 +1,18 @@
+id: i-ll-live-in-glory
+title: I'll Live in Glory
+artist: The Oak Ridge Boys
+composers:
+- Tamika Farris
+default_key: D
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illliveinglorylyricschords.pro
+    imported_at: '2026-01-02'

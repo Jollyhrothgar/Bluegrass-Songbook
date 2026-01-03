@@ -1,0 +1,17 @@
+id: i-ain-t-got-no-roses
+title: I Ain't Got No Roses
+artist: Billy Walker
+composers:
+- Jane Cozzo
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iaintgotnoroseslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: treasure-of-love
+title: Treasure Of Love
+artist: George Jones
+composers:
+- J.P. Richardson and George Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: treasureoflovelyricschords.pro
+    imported_at: '2026-01-02'

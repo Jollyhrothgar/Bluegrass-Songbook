@@ -1,0 +1,15 @@
+id: king-of-kings
+title: King Of Kings
+artist: Jack Greene
+composers:
+- Leon Payne
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: kingofkingslyricschords.pro
+    imported_at: '2026-01-02'

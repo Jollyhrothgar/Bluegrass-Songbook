@@ -1,0 +1,17 @@
+id: an-old-pair-of-shoes
+title: An Old Pair Of Shoes
+artist: Randy Travis
+composers:
+- Jerry Foster, A J Masters, Johnny Morris
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anoldpairofshoeslyricschords.pro
+    imported_at: '2026-01-02'

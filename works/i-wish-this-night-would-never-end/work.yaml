@@ -1,0 +1,15 @@
+id: i-wish-this-night-would-never-end
+title: I Wish This Night Would Never End
+artist: Sonny James
+composers:
+- Dan Welch
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwishthisnightwouldneverendlyricschords.pro
+    imported_at: '2026-01-02'

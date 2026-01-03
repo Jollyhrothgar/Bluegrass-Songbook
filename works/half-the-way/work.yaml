@@ -1,0 +1,15 @@
+id: half-the-way
+title: Half The Way
+artist: Crystal Gayle
+composers:
+- Bobby Wood and Ralph Murphy
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: halfthewaylyricschords.pro
+    imported_at: '2026-01-02'

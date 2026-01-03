@@ -1,0 +1,15 @@
+id: keeper-of-my-heart-2
+title: Keeper Of My Heart
+artist: Sonny James
+composers:
+- Ben Peters
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keeperofmyheartlyricswithchords.pro
+    imported_at: '2026-01-02'

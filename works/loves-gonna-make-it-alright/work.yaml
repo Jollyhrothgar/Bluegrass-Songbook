@@ -1,0 +1,18 @@
+id: loves-gonna-make-it-alright
+title: Love’s Gonna Make It Alright
+artist: George Strait
+composers:
+- Al Anderson and Chris Stapleton
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovesgonnamakeitalrightlyricschords.pro
+    imported_at: '2026-01-02'

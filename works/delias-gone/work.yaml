@@ -1,0 +1,22 @@
+id: delias-gone
+title: Delia’s Gone
+artist: Johnny Cash
+composers:
+- Karl Silbersdorf and Dick Toops
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: deliasgonelyricschords.pro
+    imported_at: '2026-01-02'

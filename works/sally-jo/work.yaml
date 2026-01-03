@@ -1,0 +1,21 @@
+id: sally-jo
+title: Sally Jo
+artist: Ricky Skaggs
+composers:
+- Doug Kershaw and Rusty Kershaw
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sallyjolyricschords.pro
+    imported_at: '2026-01-02'

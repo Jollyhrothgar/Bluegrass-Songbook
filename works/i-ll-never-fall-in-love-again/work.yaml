@@ -1,0 +1,18 @@
+id: i-ll-never-fall-in-love-again
+title: I'll Never Fall In Love Again
+artist: Anne Murray
+composers:
+- Hal David and Burt Bacharach
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverfallinloveagainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: seeing-my-father-in-me
+title: Seeing My Father In Me
+artist: Paul Overstreet
+composers:
+- Paul Overstreet and Taylor Dunn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: seeingmyfatherinmelyricschords.pro
+    imported_at: '2026-01-02'

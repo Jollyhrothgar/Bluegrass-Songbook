@@ -1,0 +1,17 @@
+id: when-your-yellow-brick-road-turns-blue
+title: When Your Yellow Brick Road Turns Blue
+artist: John Anderson
+composers:
+- Bernie Nelson and Gary Vincent
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenyouryellowbrickroadturnsbluelyricschords.pro
+    imported_at: '2026-01-02'

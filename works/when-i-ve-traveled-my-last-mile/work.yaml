@@ -1,0 +1,17 @@
+id: when-i-ve-traveled-my-last-mile
+title: When I've Traveled My Last Mile
+artist: Jamie Dailey and Darrin Vincent
+composers:
+- Henry Donohue
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenivetraveledmylastmilelyricschords.pro
+    imported_at: '2026-01-02'

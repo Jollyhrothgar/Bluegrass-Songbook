@@ -1,0 +1,17 @@
+id: you-re-the-girl-of-my-dreams
+title: You're The Girl Of My Dreams
+artist: Mac Wiseman
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yourethegirlofmydreamslyricschords.pro
+    imported_at: '2026-01-02'

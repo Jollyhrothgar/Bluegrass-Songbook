@@ -1,0 +1,17 @@
+id: down-from-his-glory
+title: Down From His Glory
+artist: The Blackwood Brothers
+composers:
+- William E. Booth-Clibborn
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downfromhisglorylyricschords.pro
+    imported_at: '2026-01-02'

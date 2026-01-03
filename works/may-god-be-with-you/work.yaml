@@ -1,0 +1,17 @@
+id: may-god-be-with-you
+title: May God Be With You
+artist: Sonny James
+composers:
+- Rex Maupin and Myron Oury
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mayGodbewithyoulyricschords.pro
+    imported_at: '2026-01-02'

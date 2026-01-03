@@ -1,0 +1,18 @@
+id: second-chances
+title: Second Chances
+artist: George Strait
+composers:
+- Sanger D. Shafer and Tommy Collins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: secondchanceslyricschords.pro
+    imported_at: '2026-01-02'

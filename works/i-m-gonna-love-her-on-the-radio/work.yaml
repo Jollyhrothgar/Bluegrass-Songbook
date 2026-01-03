@@ -1,0 +1,17 @@
+id: i-m-gonna-love-her-on-the-radio
+title: I'm Gonna Love Her On The Radio
+artist: Charlie Pride
+composers:
+- Howard Thomas Brasfield and Lyman C. McAnally
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnaloveherontheradiolyricschords.pro
+    imported_at: '2026-01-02'

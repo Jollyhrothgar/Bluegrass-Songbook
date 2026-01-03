@@ -1,0 +1,17 @@
+id: how-proud-i-would-have-been
+title: How Proud I Would Have Been
+artist: George Jones
+composers:
+- Joe Poovey
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howproudiwouldhavebeenlyricschords.pro
+    imported_at: '2026-01-02'

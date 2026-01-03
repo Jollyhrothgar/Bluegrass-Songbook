@@ -1,0 +1,17 @@
+id: l-a-international-airport
+title: L A International Airport
+artist: Susan Raye
+composers:
+- Leanne Scott
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lainternationalairportlyricschords.pro
+    imported_at: '2026-01-02'

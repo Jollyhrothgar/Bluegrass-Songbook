@@ -1,0 +1,22 @@
+id: there-s-always-a-mother-waiting-at-home
+title: There's Always A Mother Waiting At Home
+artist: Johnny Cash
+composers:
+- J. Thornton
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresalwaysamotherwaitingathomelyricschords.pro
+    imported_at: '2026-01-02'

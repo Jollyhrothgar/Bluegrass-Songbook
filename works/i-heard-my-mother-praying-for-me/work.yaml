@@ -1,0 +1,19 @@
+id: i-heard-my-mother-praying-for-me
+title: I Heard My Mother Praying For Me
+artist: Hank Williams
+composers:
+- Audrey Williams
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iheardmymotherprayingformelyricschords.pro
+    imported_at: '2026-01-02'

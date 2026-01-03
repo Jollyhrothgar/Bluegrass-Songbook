@@ -1,0 +1,15 @@
+id: angel-on-my-shoulder
+title: Angel On My Shoulder
+artist: Jerry Wallace
+composers:
+- Chip Taylor
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: angelonmyshoulderlyricschords.pro
+    imported_at: '2026-01-02'

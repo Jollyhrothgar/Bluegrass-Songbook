@@ -1,0 +1,17 @@
+id: take-care-of-the-little-things
+title: Take Care Of The Little Things
+artist: Charley Pride
+composers:
+- Alex Zanetis
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takecareofthelittlethingslyricschords.pro
+    imported_at: '2026-01-02'

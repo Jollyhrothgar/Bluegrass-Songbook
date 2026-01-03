@@ -1,0 +1,17 @@
+id: lord-help-me-be-as-thou
+title: Lord Help Me Be As Thou
+artist: Slim Whitman
+composers:
+- John Crist/Quarles
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lordhelpmebeasthoulyricschords.pro
+    imported_at: '2026-01-02'

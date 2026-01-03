@@ -1,0 +1,17 @@
+id: youve-got-to-righten-that-wrong
+title: You’ve Got To Righten That Wrong
+artist: The Johnson Mountain Boys
+composers:
+- A.P. Carter
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegottorightenthatwronglyricschords.pro
+    imported_at: '2026-01-02'

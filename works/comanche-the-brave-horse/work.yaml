@@ -1,0 +1,18 @@
+id: comanche-the-brave-horse
+title: Comanche (The Brave Horse)
+artist: Johnny Horton
+composers:
+- Johnny Horton and Frances Bandy
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: comanchethebravehorselyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: cora-is-gone
+title: Cora Is Gone
+artist: Flatt and Scruggs
+composers:
+- Odell McLeod
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: coraisgonelyricschords.pro
+    imported_at: '2026-01-02'

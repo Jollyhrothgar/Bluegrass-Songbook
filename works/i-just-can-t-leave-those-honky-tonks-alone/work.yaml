@@ -1,0 +1,17 @@
+id: i-just-can-t-leave-those-honky-tonks-alone
+title: I Just Can't Leave Those Honky Tonks Alone
+artist: Moe Bandy
+composers:
+- Virgil Warner and Ernie Rowell
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ijustcantleavethosehonkytonksalonelyricschords.pro
+    imported_at: '2026-01-02'

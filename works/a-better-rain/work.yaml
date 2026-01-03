@@ -1,0 +1,18 @@
+id: a-better-rain
+title: A Better Rain
+artist: George Strait
+composers:
+- David Cory Lee and Tony Lane
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: abetterrainlyricschords.pro
+    imported_at: '2026-01-02'

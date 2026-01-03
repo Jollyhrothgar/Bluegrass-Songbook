@@ -1,0 +1,17 @@
+id: i-m-on-my-way
+title: I'm On My Way
+artist: Red Steagall
+composers:
+- Rebb Firman and Laura Powers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imonmywaylyricschords.pro
+    imported_at: '2026-01-02'

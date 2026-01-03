@@ -1,0 +1,21 @@
+id: wear-my-ring-around-your-neck
+title: Wear My Ring Around Your Neck
+artist: Elvis Presley
+composers:
+- Bert Carroll and Russell Moody
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wearmyringaroundyournecklyricschords.pro
+    imported_at: '2026-01-02'

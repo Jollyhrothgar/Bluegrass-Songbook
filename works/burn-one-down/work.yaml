@@ -1,0 +1,18 @@
+id: burn-one-down
+title: Burn One Down
+artist: Clint Black
+composers:
+- Clint Black, Hayden Nicholas, Frankie Miller
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burnonedownlyricschords.pro
+    imported_at: '2026-01-02'

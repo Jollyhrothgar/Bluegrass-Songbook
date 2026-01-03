@@ -1,0 +1,17 @@
+id: on-the-wings-of-a-nightingale
+title: On The Wings Of A Nightingale
+artist: Everly Brothers
+composers:
+- Paul McCartney
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onthewingsofanightingalelyricschords.pro
+    imported_at: '2026-01-02'

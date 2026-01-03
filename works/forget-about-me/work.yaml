@@ -1,0 +1,17 @@
+id: forget-about-me
+title: Forget About Me
+artist: The Bellamy Brothers
+composers:
+- Troy Seals, Eddie Setser, Francis Miller
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: forgetaboutmelyricschords.pro
+    imported_at: '2026-01-02'

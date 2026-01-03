@@ -1,0 +1,17 @@
+id: i-ve-got-a-happy-heart
+title: I've Got A Happy Heart
+artist: Susan Raye
+composers:
+- Buck Owens and Pat Levely
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegotahappyheartlyricschords.pro
+    imported_at: '2026-01-02'

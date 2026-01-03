@@ -1,0 +1,18 @@
+id: hit-parade-of-love
+title: Hit Parade of Love
+artist: Jimmy Martin
+composers:
+- Jimmy Martin and Wade Birchfield
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hitparadeoflovelyricschords.pro
+    imported_at: '2026-01-02'

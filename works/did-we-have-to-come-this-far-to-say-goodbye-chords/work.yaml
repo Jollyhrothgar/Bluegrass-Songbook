@@ -1,0 +1,15 @@
+id: did-we-have-to-come-this-far-to-say-goodbye-chords
+title: Did We Have To Come This Far To Say Goodbye chords
+artist: Carl Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didwehavetocomethisfartosaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

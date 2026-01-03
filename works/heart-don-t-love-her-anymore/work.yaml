@@ -1,0 +1,17 @@
+id: heart-don-t-love-her-anymore
+title: Heart (Don't Love Her Anymore)
+artist: Lefty Frizzel
+composers:
+- A.C. Solberg
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartdontloveheranymorelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: did-you-forget-god-today
+title: Did You Forget God Today
+artist: The Grascals
+composers:
+- Aubrey Holt
+default_key: C
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: didyouforgetGodtodaylyricschords.pro
+    imported_at: '2026-01-02'

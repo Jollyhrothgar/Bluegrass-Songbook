@@ -1,0 +1,17 @@
+id: me-and-the-i-r-s
+title: Me and the I.R.S.
+artist: Johnny Paycheck
+composers:
+- Don J. Scaife, Gladys Johns Scaife
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: meandtheirslyricschords.pro
+    imported_at: '2026-01-02'

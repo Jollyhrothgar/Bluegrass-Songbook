@@ -1,0 +1,17 @@
+id: take-me-back-to-texas
+title: Take Me Back To Texas
+artist: Red Steagall
+composers:
+- David Price
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemebacktotexaslyricschords.pro
+    imported_at: '2026-01-02'

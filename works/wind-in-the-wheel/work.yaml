@@ -1,0 +1,17 @@
+id: wind-in-the-wheel
+title: Wind In The Wheel
+artist: Red Steagall
+composers:
+- Dale Burson and Russell D. Steagall
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: windinthewheellyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: nothing-can-stop-my-love
+title: Nothing Can Stop My Love
+artist: Jimmy Dean
+composers:
+- Roger Miller and George Jones
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothingcanstopmylovelyricsandchords.pro
+    imported_at: '2026-01-02'

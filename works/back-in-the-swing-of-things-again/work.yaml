@@ -1,0 +1,17 @@
+id: back-in-the-swing-of-things-again
+title: Back In The Swing Of Things Again
+artist: Red Steagall
+composers:
+- David Wills and Bob Moulds
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: backintheswingofthingsagainlyricschords.pro
+    imported_at: '2026-01-02'

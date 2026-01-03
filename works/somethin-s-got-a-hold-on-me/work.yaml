@@ -1,0 +1,17 @@
+id: somethin-s-got-a-hold-on-me
+title: Somethin's Got A Hold On Me
+artist: Sonny James
+composers:
+- Michael Kirkland and Sonny James
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethinsgotaholdonmelyricschords.pro
+    imported_at: '2026-01-02'

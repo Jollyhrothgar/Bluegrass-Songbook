@@ -1,0 +1,17 @@
+id: which-side-of-the-glass
+title: Which Side Of The Glass
+artist: George Strait
+composers:
+- Fred Knobloch and Dana Hunt
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whichsideoftheglasslyricschords.pro
+    imported_at: '2026-01-02'

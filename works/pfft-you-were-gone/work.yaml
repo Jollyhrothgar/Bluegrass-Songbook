@@ -1,0 +1,17 @@
+id: pfft-you-were-gone
+title: Pfft You Were Gone
+artist: Buck Owens
+composers:
+- Susan Heather
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: pfftyouweregonelyricschords.pro
+    imported_at: '2026-01-02'

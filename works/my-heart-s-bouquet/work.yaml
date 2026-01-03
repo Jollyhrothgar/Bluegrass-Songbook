@@ -1,0 +1,17 @@
+id: my-heart-s-bouquet
+title: My Heart's Bouquet
+artist: Little Jimmy Dickens
+composers:
+- Jimmy Dickens and Gordon Hall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartsbouquetlyricschords.pro
+    imported_at: '2026-01-02'

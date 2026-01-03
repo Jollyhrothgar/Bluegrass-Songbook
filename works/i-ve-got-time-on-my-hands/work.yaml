@@ -1,0 +1,17 @@
+id: i-ve-got-time-on-my-hands
+title: I've Got Time On My Hands
+artist: Don Williams
+composers:
+- Laying Martine
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivegottimeonmyhandslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: i-ve-been-around-enough-to-know
+title: I've Been Around Enough To Know
+artist: Conway Twitty
+composers:
+- Bob Mc Dill and Dickey Lee
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivebeenaroundenoughtoknowlyricschords.pro
+    imported_at: '2026-01-02'

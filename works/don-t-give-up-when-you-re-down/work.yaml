@@ -1,0 +1,17 @@
+id: don-t-give-up-when-you-re-down
+title: Don't Give Up When You're Down
+artist: Ray Price
+composers:
+- Lee Dresser
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontgiveupwhenyouredownlyricschords.pro
+    imported_at: '2026-01-02'

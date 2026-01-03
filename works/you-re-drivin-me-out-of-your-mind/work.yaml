@@ -1,0 +1,18 @@
+id: you-re-drivin-me-out-of-your-mind
+title: You're Drivin' Me Out Of Your Mind
+artist: Ronnie Milsap
+composers:
+- Dougal Treneer
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youredrivinmeoutofyourmindlyricschords.pro
+    imported_at: '2026-01-02'

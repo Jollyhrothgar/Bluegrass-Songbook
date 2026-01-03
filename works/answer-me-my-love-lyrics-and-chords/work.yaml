@@ -1,0 +1,15 @@
+id: answer-me-my-love-lyrics-and-chords
+title: Answer Me My Love Lyrics and Chords
+artist: Eddy Arnold
+composers:
+- Carl Sigman, Gerhard Winkler, Fred Rauch
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: answermemylovelyricschords.pro
+    imported_at: '2026-01-02'

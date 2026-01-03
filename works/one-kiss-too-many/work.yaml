@@ -1,0 +1,17 @@
+id: one-kiss-too-many
+title: One Kiss Too Many
+artist: Eddy Arnold
+composers:
+- Steve Nelson, Eddy Arnold, Ed Nelson, Jr.
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onekisstoomanylyricschords.pro
+    imported_at: '2026-01-02'

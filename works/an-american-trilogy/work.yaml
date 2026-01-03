@@ -1,0 +1,15 @@
+id: an-american-trilogy
+title: An American Trilogy
+artist: aka Dixie
+composers:
+- Mickey Newbury
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anamericantrilogylyricschords.pro
+    imported_at: '2026-01-02'

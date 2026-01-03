@@ -11,6 +11,9 @@ export const TAG_CATEGORIES = {
     'Instrumental': 'structure', 'Waltz': 'structure', 'Standard': 'structure', 'Crooked': 'structure',
     // Vibe
     'JamFriendly': 'vibe', 'Modal': 'vibe', 'Ragtime': 'vibe', 'Jazzy': 'vibe', 'Slow': 'vibe',
+    // Instrument (for tab/notation availability)
+    'banjo': 'instrument', 'mandolin': 'instrument', 'fiddle': 'instrument',
+    'guitar': 'instrument', 'dobro': 'instrument', 'bass': 'instrument',
 };
 
 // Tag categories for dropdown display
@@ -42,8 +45,26 @@ function normalizeTag(tag) {
 }
 
 /**
+ * Get instrument tags for a song (from tablature_parts and abc_notation)
+ */
+export function getInstrumentTags(song) {
+    const instruments = new Set();
+    if (song.tablature_parts) {
+        song.tablature_parts.forEach(p => {
+            if (p.instrument) instruments.add(p.instrument.toLowerCase());
+        });
+    }
+    // Check for ABC notation in content (uses {start_of_abc} directive)
+    if (song.content && song.content.includes('{start_of_abc}')) {
+        instruments.add('fiddle'); // ABC assumed to be fiddle
+    }
+    return Array.from(instruments);
+}
+
+/**
  * Check if song has all required tags (case-insensitive prefix match)
  * Normalizes input so "jam friendly", "jam_friendly", "JamFriendly" all match
+ * Also checks instrument tags from tablature_parts and abc_notation
  */
 export function songHasTags(song, requiredTags) {
     if (!requiredTags.length) return true;
@@ -51,10 +72,14 @@ export function songHasTags(song, requiredTags) {
     const songTags = song.tags || {};
     const songTagKeys = Object.keys(songTags).map(normalizeTag);
 
+    // Add instrument tags (from tabs and ABC notation)
+    const instrumentTags = getInstrumentTags(song);
+    const allTags = [...songTagKeys, ...instrumentTags];
+
     return requiredTags.every(searchTag => {
         const searchNormalized = normalizeTag(searchTag);
         // Match if any tag starts with the search term
-        return songTagKeys.some(tag => tag.startsWith(searchNormalized));
+        return allTags.some(tag => tag.startsWith(searchNormalized));
     });
 }
 

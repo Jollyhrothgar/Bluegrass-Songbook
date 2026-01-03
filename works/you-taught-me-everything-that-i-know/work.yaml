@@ -1,0 +1,13 @@
+id: you-taught-me-everything-that-i-know
+title: You Taught Me Everything That I Know
+artist: Skeeter Davis
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youtaughtmeeverythingthatiknowlyricschords.pro
+    imported_at: '2026-01-02'

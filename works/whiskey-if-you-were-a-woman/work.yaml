@@ -1,0 +1,15 @@
+id: whiskey-if-you-were-a-woman
+title: Whiskey If You Were A Woman
+artist: Highway 101
+composers:
+- Mary W. Francis, Johnny MacRae, Bob Morrison
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whiskeyifyouwereawomanlyricschords.pro
+    imported_at: '2026-01-02'

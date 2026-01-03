@@ -1,0 +1,21 @@
+id: finders-keepers-losers-weepers
+title: Finders Keepers Losers Weepers
+artist: Elvis Presley
+composers:
+- Dory Jones and Ollie Jones
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: finderskeeperslosersweeperslyricschords.pro
+    imported_at: '2026-01-02'

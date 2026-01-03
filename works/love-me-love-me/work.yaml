@@ -1,0 +1,16 @@
+id: love-me-love-me
+title: Love Me Love Me
+artist: Tammy Wynette
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovemelovemelyricschords.pro
+    imported_at: '2026-01-02'

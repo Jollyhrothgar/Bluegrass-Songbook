@@ -1,0 +1,20 @@
+id: hard-to-be-friends
+title: Hard To Be Friends
+artist: Kris Kristofferson
+composers:
+- Larry Murray
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hardtobefriendslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: who-s-leaving-who-and-chords
+title: Who's Leaving Who and Chords
+artist: Faron Young
+composers:
+- Glen Sherley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whosleavingwholyricsandchords.pro
+    imported_at: '2026-01-02'

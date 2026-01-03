@@ -1,0 +1,15 @@
+id: roses-from-a-stranger
+title: Roses From A Stranger
+artist: Leroy Van Dyke
+composers:
+- Boudleaux Bryant and Felice Bryant
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rosesfromastrangerlyricschords.pro
+    imported_at: '2026-01-02'

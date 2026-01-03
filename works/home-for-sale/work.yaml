@@ -1,0 +1,17 @@
+id: home-for-sale
+title: Home For Sale
+artist: Dwight Yoakam
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: homeforsalelyricschords.pro
+    imported_at: '2026-01-02'

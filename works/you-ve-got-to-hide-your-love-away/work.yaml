@@ -1,0 +1,19 @@
+id: you-ve-got-to-hide-your-love-away
+title: You've Got To Hide Your Love Away
+artist: Waylon Jennings
+composers:
+- John Lennon and Paul McCartney
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youvegottohideyourloveawaylyricschords.pro
+    imported_at: '2026-01-02'

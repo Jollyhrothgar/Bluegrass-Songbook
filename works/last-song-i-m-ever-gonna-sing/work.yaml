@@ -1,0 +1,19 @@
+id: last-song-i-m-ever-gonna-sing
+title: Last Song I'm Ever Gonna Sing
+artist: The Everly Brothers
+composers:
+- Jerry Allison and Sonny Curtis
+default_key: C
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lastsongimevergonnasinglyricschords.pro
+    imported_at: '2026-01-02'

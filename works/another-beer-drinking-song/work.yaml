@@ -1,0 +1,17 @@
+id: another-beer-drinking-song
+title: Another Beer Drinking Song
+artist: Gene Watson
+composers:
+- Dave Kirby and Warren Robb
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anotherbeerdrinkingsonglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: christmas-is-the-warmest-time-of-the-year
+title: Christmas Is The Warmest Time Of The Year
+artist: Aaron Tippin
+composers:
+- Henry Beard, Aaron Tippin, Thea Tippin
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasisthewarmesttimeoftheyearlyricschords.pro
+    imported_at: '2026-01-02'

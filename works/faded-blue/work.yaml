@@ -1,0 +1,19 @@
+id: faded-blue
+title: Faded Blue
+artist: Mel Tillis
+composers:
+- Donny Lowery and Lyman McAnally
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fadedbluelyricschords.pro
+    imported_at: '2026-01-02'

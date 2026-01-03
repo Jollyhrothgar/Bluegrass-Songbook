@@ -1,0 +1,17 @@
+id: bow-thy-head
+title: Bow Thy Head
+artist: Webb Pierce
+composers:
+- P. Kallenger and Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bowthyheadlyricschords.pro
+    imported_at: '2026-01-02'

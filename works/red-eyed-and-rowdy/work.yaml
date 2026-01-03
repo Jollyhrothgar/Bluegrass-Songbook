@@ -1,0 +1,17 @@
+id: red-eyed-and-rowdy
+title: Red Eyed And Rowdy
+artist: Jim Reeves
+composers:
+- Jim Reeves and Tom Perryman
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: redeyedandrowdylyricschords.pro
+    imported_at: '2026-01-02'

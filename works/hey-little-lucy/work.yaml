@@ -1,0 +1,18 @@
+id: hey-little-lucy
+title: Hey Little Lucy
+artist: Conway Twitty
+composers:
+- Aaron Schroeder, George Weiss, Sharon Silbert
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heylittlelucylyricschords.pro
+    imported_at: '2026-01-02'

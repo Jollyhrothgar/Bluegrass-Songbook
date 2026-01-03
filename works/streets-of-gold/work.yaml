@@ -1,0 +1,18 @@
+id: streets-of-gold
+title: Streets Of Gold
+artist: Ronnie Milsap
+composers:
+- Jim Lunsford
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: streetsofgoldlyricsandchords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,21 @@
+id: another-night
+title: Another Night
+artist: Ricky Skaggs
+composers:
+- Jack Adkins
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anothernightlyricschords.pro
+    imported_at: '2026-01-02'

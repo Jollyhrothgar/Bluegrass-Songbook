@@ -1,0 +1,17 @@
+id: no-reservation-at-the-inn
+title: No Reservation At The Inn
+artist: Statler Brothers
+composers:
+- Harold Reid and Don Reid
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: noreservationattheinnlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: take-your-shoes-off-moses
+title: Take Your Shoes Off Moses
+artist: The Stanley Brothers
+composers:
+- J.D. Jarvis
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takeyourshoesoffmoseslyricschords.pro
+    imported_at: '2026-01-02'

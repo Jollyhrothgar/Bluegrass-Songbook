@@ -1,0 +1,17 @@
+id: 21-miles-to-lake-charles-prison
+title: 21 Miles To Lake Charles Prison
+artist: Johnny Paycheck
+composers:
+- Aubrey Mayhew
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: 21milestolakecharlesprisonlyricschords.pro
+    imported_at: '2026-01-02'

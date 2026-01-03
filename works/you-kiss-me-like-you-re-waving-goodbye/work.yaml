@@ -1,0 +1,17 @@
+id: you-kiss-me-like-you-re-waving-goodbye
+title: You Kiss Me Like You're Waving Goodbye
+artist: Wynn Stewart
+composers:
+- Wynn Stewart and Buddy Cagle
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youkissmelikeyourewavinggoodbyelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: you-know-me-better-than-that
+title: You Know Me Better Than That
+artist: George Strait
+composers:
+- Tony Haselden and Anna Graham
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youknowmebetterthanthatlyricschords.pro
+    imported_at: '2026-01-02'

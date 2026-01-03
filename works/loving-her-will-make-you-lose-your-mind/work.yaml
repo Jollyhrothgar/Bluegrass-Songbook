@@ -1,0 +1,18 @@
+id: loving-her-will-make-you-lose-your-mind
+title: Loving Her Will Make You Lose Your Mind
+artist: David Allan Coe
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovingherwillmakeyouloseyourmindlyricschords.pro
+    imported_at: '2026-01-02'

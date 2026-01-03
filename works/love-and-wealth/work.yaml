@@ -1,0 +1,17 @@
+id: love-and-wealth
+title: Love And Wealth
+artist: Charlie Louvin
+composers:
+- Charlie Louvin and Ira Louvin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveandwealthlyricschords.pro
+    imported_at: '2026-01-02'

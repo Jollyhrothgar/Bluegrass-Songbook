@@ -1,0 +1,19 @@
+id: i-believe-im-entitled-to-you
+title: I Believe I’m Entitled To You
+artist: Ernest Tubb
+composers:
+- Mel Foree, Cliff Carlisle, Chester Rice
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ibelieveimentitledtoyoulyricschords.pro
+    imported_at: '2026-01-02'

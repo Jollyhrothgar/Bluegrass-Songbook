@@ -1,0 +1,17 @@
+id: wooden-heart
+title: Wooden Heart
+artist: Eddy Arnold
+composers:
+- Fred Wise, Ben Weisman, Kay Twomey, Berthold Kaempfert
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: woodenheartlyricschords.pro
+    imported_at: '2026-01-02'

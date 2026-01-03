@@ -1,0 +1,17 @@
+id: i-m-throwing-rice
+title: I'm Throwing Rice
+artist: Eddy Arnold
+composers:
+- Steve Nelson, Ed Nelson, Jr., Eddy Arnold
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imthrowingricelyricschords.pro
+    imported_at: '2026-01-02'

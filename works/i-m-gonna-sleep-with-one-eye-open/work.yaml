@@ -1,0 +1,20 @@
+id: i-m-gonna-sleep-with-one-eye-open
+title: I'm Gonna Sleep With One Eye Open
+artist: Dolly Parton
+composers:
+- Lester Flatt
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnasleepwithoneeyeopenlyricschords.pro
+    imported_at: '2026-01-02'

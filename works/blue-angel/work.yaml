@@ -1,0 +1,18 @@
+id: blue-angel
+title: Blue Angel
+artist: Roy Orbison
+composers:
+- Joe
+default_key: C
+tags:
+- Rockabilly
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blueangellyricschords.pro
+    imported_at: '2026-01-02'

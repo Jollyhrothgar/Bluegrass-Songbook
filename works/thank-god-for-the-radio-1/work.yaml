@@ -1,0 +1,17 @@
+id: thank-god-for-the-radio-1
+title: Thank God For The Radio
+artist: The Kendalls
+composers:
+- Max D. Barnes and Robert John Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankGodfortheradiolyricschords.pro
+    imported_at: '2026-01-02'

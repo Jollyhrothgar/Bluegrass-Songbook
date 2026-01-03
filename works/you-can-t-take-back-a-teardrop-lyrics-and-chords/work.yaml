@@ -1,0 +1,17 @@
+id: you-can-t-take-back-a-teardrop-lyrics-and-chords
+title: You Can't Take Back A Teardrop Lyrics and Chords
+artist: Connie Smith
+composers:
+- Christopher Waters Dunn and Tom C. Shapiro
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcanttakebackateardroplyricschords.pro
+    imported_at: '2026-01-02'

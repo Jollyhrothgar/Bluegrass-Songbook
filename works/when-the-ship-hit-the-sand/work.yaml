@@ -1,0 +1,17 @@
+id: when-the-ship-hit-the-sand
+title: When The Ship Hit The Sand
+artist: Little Jimmy Dickens
+composers:
+- L. Kingston
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentheshiphitthesandlyricschords.pro
+    imported_at: '2026-01-02'

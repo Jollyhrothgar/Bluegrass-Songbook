@@ -1,0 +1,17 @@
+id: leaning-on-the-old-top-rail
+title: Leaning On The Old Top Rail
+artist: Eddy Arnold
+composers:
+- Nick Kenny and Charles Kenny
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leaningontheoldtopraillyricschords.pro
+    imported_at: '2026-01-02'

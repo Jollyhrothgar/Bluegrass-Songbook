@@ -1,0 +1,17 @@
+id: will-the-real-me-please-stop-crying
+title: Will The Real Me Please Stop Crying
+artist: Connie Smith
+composers:
+- Bob Tubert
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willtherealmepleasestopcryinglyricschords.pro
+    imported_at: '2026-01-02'

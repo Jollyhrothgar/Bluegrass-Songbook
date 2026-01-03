@@ -1,0 +1,19 @@
+id: heaven-ain-t-a-honky-tonk
+title: Heaven Ain't A Honky Tonk
+artist: Mickey Gilley
+composers:
+- Mack Vickery
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavenaintahonkytonklyricschords.pro
+    imported_at: '2026-01-02'

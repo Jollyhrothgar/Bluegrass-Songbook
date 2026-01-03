@@ -1,0 +1,17 @@
+id: jesus-put-a-yodel-in-my-soul
+title: Jesus Put A Yodel In My Soul
+artist: Wanda Jackson
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Jesusputayodelinmysoullyricschords.pro
+    imported_at: '2026-01-02'

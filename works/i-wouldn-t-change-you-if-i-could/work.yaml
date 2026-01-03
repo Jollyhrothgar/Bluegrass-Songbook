@@ -1,0 +1,21 @@
+id: i-wouldn-t-change-you-if-i-could
+title: I Wouldn't Change You If I Could
+artist: Ricky Skaggs
+composers:
+- Jim Eanes
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldntchangeyouificouldlyricschords.pro
+    imported_at: '2026-01-02'

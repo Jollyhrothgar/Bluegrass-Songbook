@@ -1,0 +1,15 @@
+id: cindys-gonna-cry
+title: Cindy’s Gonna Cry
+artist: Johnny Crawford
+composers:
+- Barry Mann and Cynthia Weil
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cindysgonnacrylyricschords.pro
+    imported_at: '2026-01-02'

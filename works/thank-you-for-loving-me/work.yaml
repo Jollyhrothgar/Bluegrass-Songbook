@@ -1,0 +1,17 @@
+id: thank-you-for-loving-me
+title: Thank You For Loving Me
+artist: Norma Jean
+composers:
+- Dallas Frazier and Arthur Leo Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thankyouforlovingmelyricschords.pro
+    imported_at: '2026-01-02'

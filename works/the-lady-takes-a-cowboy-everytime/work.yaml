@@ -1,0 +1,17 @@
+id: the-lady-takes-a-cowboy-everytime
+title: The Lady Takes A Cowboy Everytime
+artist: Gatlin Brothers
+composers:
+- Larry Gatlin
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theladytakesacowboyeverytimelyricschords.pro
+    imported_at: '2026-01-02'

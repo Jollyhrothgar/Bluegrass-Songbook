@@ -1,0 +1,17 @@
+id: keepin-on
+title: Keepin' On
+artist: Mickey Gilley
+default_key: G
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keepinonlyricschords.pro
+    imported_at: '2026-01-02'

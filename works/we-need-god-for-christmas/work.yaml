@@ -1,0 +1,19 @@
+id: we-need-god-for-christmas
+title: We Need God For Christmas
+artist: Ernest Tubb
+composers:
+- Ernest Tubb and Alma Donaldson
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: weneedGodforChristmaslyricschords.pro
+    imported_at: '2026-01-02'

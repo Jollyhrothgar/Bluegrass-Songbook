@@ -1,0 +1,17 @@
+id: i-ll-be-on-that-good-road-someday
+title: I'll Be On That Good Road Someday
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Bruce Phillips
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbeonthatgoodroadsomedaylyricschords.pro
+    imported_at: '2026-01-02'

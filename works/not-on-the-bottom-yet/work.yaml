@@ -1,0 +1,17 @@
+id: not-on-the-bottom-yet
+title: Not On The Bottom Yet
+artist: Boxcar Willie
+composers:
+- Bobby Dwight Caraway and Llone Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: notonthebottomyetlyricschords.pro
+    imported_at: '2026-01-02'

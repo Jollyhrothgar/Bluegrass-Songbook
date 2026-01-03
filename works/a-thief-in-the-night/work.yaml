@@ -1,0 +1,17 @@
+id: a-thief-in-the-night
+title: A Thief In The Night
+artist: Jean Shepard
+composers:
+- Harland Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: athiefinthenightlyricschords.pro
+    imported_at: '2026-01-02'

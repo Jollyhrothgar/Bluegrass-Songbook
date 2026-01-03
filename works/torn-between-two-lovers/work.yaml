@@ -1,0 +1,15 @@
+id: torn-between-two-lovers
+title: Torn Between Two Lovers
+artist: Johnny Rodriguez
+composers:
+- Peter Yarrow and Phillip Jarrell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tornbetweentwoloverslyricsandchords.pro
+    imported_at: '2026-01-02'

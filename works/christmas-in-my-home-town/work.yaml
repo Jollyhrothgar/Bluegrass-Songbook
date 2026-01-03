@@ -1,0 +1,18 @@
+id: christmas-in-my-home-town
+title: Christmas In My Home Town
+artist: Sonny James
+composers:
+- Sonny James and John Skye
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasinmyhometownlyricsandchords.pro
+    imported_at: '2026-01-02'

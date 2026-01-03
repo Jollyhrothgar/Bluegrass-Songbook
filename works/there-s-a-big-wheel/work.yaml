@@ -1,0 +1,17 @@
+id: there-s-a-big-wheel
+title: There's A Big Wheel
+artist: Dottie West
+composers:
+- Don Gibson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresabigwheellyricschords.pro
+    imported_at: '2026-01-02'

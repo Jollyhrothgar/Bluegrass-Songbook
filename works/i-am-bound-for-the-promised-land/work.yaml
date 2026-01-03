@@ -1,0 +1,19 @@
+id: i-am-bound-for-the-promised-land
+title: I Am Bound For The Promised Land
+artist: Hank Williams
+composers:
+- M. Durham and Samuel Stennett
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iamboundforthepromisedlandlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: easy-to-please
+title: Easy To Please
+artist: Carl Smith
+composers:
+- Red Foley and Betty Wade
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easytopleaselyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: little-angel-with-a-dirty-face
+title: Little Angel With A Dirty Face
+artist: Eddy Arnold
+composers:
+- Dale Parker
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: littleangelwithadirtyfacelyricschords.pro
+    imported_at: '2026-01-02'

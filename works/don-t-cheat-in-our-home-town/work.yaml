@@ -1,0 +1,21 @@
+id: don-t-cheat-in-our-home-town
+title: Don't Cheat In Our Home Town
+artist: Ricky Skaggs
+composers:
+- Ray Pennington and Roy Marcum
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontcheatinourhometownlyricschords.pro
+    imported_at: '2026-01-02'

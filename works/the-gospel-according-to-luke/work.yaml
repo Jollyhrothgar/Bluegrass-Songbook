@@ -1,0 +1,17 @@
+id: the-gospel-according-to-luke
+title: The Gospel According To Luke
+artist: Skip Ewing
+composers:
+- Skip Ewing and Don Sampson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegospelaccordingtolukelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: nothing-takes-the-place-of-you
+title: Nothing Takes The Place Of You
+artist: Asleep at the Wheel
+composers:
+- Toussaint McCall and Pat Robinson
+default_key: C
+tags:
+- ClassicCountry
+- WesternSwing
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nothingtakestheplaceofyoulyricschords.pro
+    imported_at: '2026-01-02'

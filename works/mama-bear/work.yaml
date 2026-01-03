@@ -1,0 +1,17 @@
+id: mama-bear
+title: Mama Bear
+artist: Carl Smith
+composers:
+- Wiley J. Smith
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mamabearlyricschords.pro
+    imported_at: '2026-01-02'

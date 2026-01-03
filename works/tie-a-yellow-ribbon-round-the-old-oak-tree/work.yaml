@@ -1,0 +1,19 @@
+id: tie-a-yellow-ribbon-round-the-old-oak-tree
+title: Tie A Yellow Ribbon Round The Old Oak Tree
+artist: Dolly Parton
+composers:
+- Russell Brown and Irwin Levine
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tieayellowribbonroundtheoldoaktreelyricschords.pro
+    imported_at: '2026-01-02'

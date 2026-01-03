@@ -1,0 +1,20 @@
+id: sigh-cry-almost-die
+title: Sigh Cry Almost Die
+artist: The Everly Brothers
+composers:
+- Don Everly and Phil Everly
+default_key: G
+tags:
+- Rockabilly
+- Pop
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sighcryalmostdielyricschords.pro
+    imported_at: '2026-01-02'

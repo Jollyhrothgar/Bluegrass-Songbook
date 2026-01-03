@@ -1,0 +1,15 @@
+id: wonders-of-the-wine
+title: Wonders Of The Wine
+artist: David Houston
+composers:
+- Billy Sherrill, Norro Wilson, Webber Parrish
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wondersofthewinelyricschords.pro
+    imported_at: '2026-01-02'

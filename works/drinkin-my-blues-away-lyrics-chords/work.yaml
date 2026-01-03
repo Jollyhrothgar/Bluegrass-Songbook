@@ -1,0 +1,17 @@
+id: drinkin-my-blues-away-lyrics-chords
+title: Drinkin' My Blues Away Lyrics Chords
+artist: Webb Pierce
+composers:
+- Frank Bandy and Webb Pierce
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: drinkinmybluesawaylyricschords.pro
+    imported_at: '2026-01-02'

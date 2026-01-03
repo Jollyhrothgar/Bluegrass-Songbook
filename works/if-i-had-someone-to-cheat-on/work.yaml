@@ -1,0 +1,17 @@
+id: if-i-had-someone-to-cheat-on
+title: If I Had Someone To Cheat On
+artist: Moe Bandy
+composers:
+- J.R. Cochran
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifihadsomeonetocheatonlyricschords.pro
+    imported_at: '2026-01-02'

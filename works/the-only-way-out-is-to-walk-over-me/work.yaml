@@ -1,0 +1,20 @@
+id: the-only-way-out-is-to-walk-over-me
+title: The Only Way Out (Is To Walk Over Me)
+artist: Dolly Parton
+composers:
+- Neal Merritt
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theonlywayoutistowalkovermelyricschords.pro
+    imported_at: '2026-01-02'

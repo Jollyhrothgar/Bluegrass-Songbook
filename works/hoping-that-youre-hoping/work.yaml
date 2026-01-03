@@ -1,0 +1,20 @@
+id: hoping-that-youre-hoping
+title: Hoping That You’re Hoping
+artist: The Louvin Brothers
+composers:
+- Betty E. Harrison
+default_key: C
+tags:
+- ClassicCountry
+- Gospel
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hopingthatyourehopinglyricschords.pro
+    imported_at: '2026-01-02'

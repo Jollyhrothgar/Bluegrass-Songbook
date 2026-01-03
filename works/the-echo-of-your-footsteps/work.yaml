@@ -1,0 +1,15 @@
+id: the-echo-of-your-footsteps
+title: The Echo of Your Footsteps
+artist: Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theechoofyourfootstepslyricschords.pro
+    imported_at: '2026-01-02'

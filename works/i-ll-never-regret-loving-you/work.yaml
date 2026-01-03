@@ -1,0 +1,18 @@
+id: i-ll-never-regret-loving-you
+title: I'll Never Regret Loving You
+artist: David Allan Coe
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverregretlovingyoulyricschords.pro
+    imported_at: '2026-01-02'

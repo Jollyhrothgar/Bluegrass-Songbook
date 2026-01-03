@@ -1,0 +1,19 @@
+id: allegheny-moon
+title: Allegheny Moon
+artist: Anne Murray
+composers:
+- Al Hoffman and Dick Manning
+default_key: G
+tags:
+- ClassicCountry
+- Pop
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: alleghenymoonlyricschords.pro
+    imported_at: '2026-01-02'

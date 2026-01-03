@@ -1,0 +1,17 @@
+id: if-a-broken-heart-could-kill
+title: If A Broken Heart Could Kill
+artist: Keith Whitley
+composers:
+- Allen Henson, Norris D. Wilson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifabrokenheartcouldkilllyricschords.pro
+    imported_at: '2026-01-02'

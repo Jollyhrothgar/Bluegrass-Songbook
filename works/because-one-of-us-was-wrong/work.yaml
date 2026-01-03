@@ -1,0 +1,17 @@
+id: because-one-of-us-was-wrong
+title: Because One Of Us Was Wrong
+artist: Porter Wagoner
+composers:
+- Tom Paxton and Bill Owens
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: becauseoneofuswaswronglyricschords.pro
+    imported_at: '2026-01-02'

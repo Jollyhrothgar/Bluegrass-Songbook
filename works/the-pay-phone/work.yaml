@@ -1,0 +1,17 @@
+id: the-pay-phone
+title: The Pay Phone
+artist: Bob Luman
+composers:
+- Glenn Martin
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thepayphonelyricschords.pro
+    imported_at: '2026-01-02'

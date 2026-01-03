@@ -1,0 +1,19 @@
+id: any-old-arms-won-t-do
+title: Any Old Arms Won't Do
+artist: Willie Nelson
+composers:
+- Hank Cochran and Willie Nelson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anyoldarmswontdolyricschords.pro
+    imported_at: '2026-01-02'

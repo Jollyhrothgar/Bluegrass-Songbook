@@ -1,0 +1,15 @@
+id: first-thing-every-morning
+title: First Thing Every Morning
+artist: Jimmy Dean
+composers:
+- Ruth Roberts and Jimmy Dean
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: firstthingeverymorninglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: eye-of-a-hurricane
+title: Eye Of A Hurricane
+artist: John Anderson
+composers:
+- Jerry Fulle
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eyeofahurricanelyricschords.pro
+    imported_at: '2026-01-02'

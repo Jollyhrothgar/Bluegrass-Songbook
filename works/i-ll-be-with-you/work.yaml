@@ -1,0 +1,16 @@
+id: i-ll-be-with-you
+title: I'll Be With You
+artist: Rhonda Vincent
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbewithyoulyricsandchords.pro
+    imported_at: '2026-01-02'

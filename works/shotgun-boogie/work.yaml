@@ -1,0 +1,17 @@
+id: shotgun-boogie
+title: Shotgun Boogie
+artist: Cal Smith
+composers:
+- Ernie Ford
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shotgunboogielyricsandchords.pro
+    imported_at: '2026-01-02'

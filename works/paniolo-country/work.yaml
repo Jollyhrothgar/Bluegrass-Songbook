@@ -1,0 +1,18 @@
+id: paniolo-country
+title: Paniolo Country
+artist: Randy Travis
+composers:
+- Marcus Shutte
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: paniolocountrylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: should-we-tell-him
+title: Should We Tell Him
+artist: Everly Brothers
+composers:
+- Don Everly
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shouldwetellhimlyricschords.pro
+    imported_at: '2026-01-02'

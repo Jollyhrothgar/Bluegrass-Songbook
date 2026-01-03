@@ -1,0 +1,17 @@
+id: i-don-t-know-you-anymore
+title: I Don't Know You (Anymore)
+artist: Tommy Overstreet
+composers:
+- Ricci Mareno and Charlie Black
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idontknowyouanymorelyricschords.pro
+    imported_at: '2026-01-02'

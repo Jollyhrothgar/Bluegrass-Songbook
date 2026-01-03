@@ -1,0 +1,17 @@
+id: breeze-blow-my-baby-back-to-me
+title: Breeze Blow My Baby Back To Me
+artist: Jim Reeves
+composers:
+- Ted Daffan and Bernard Landes
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: breezeblowmybabybacktomelyricschords.pro
+    imported_at: '2026-01-02'

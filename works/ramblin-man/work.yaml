@@ -1,0 +1,18 @@
+id: ramblin-man
+title: Ramblin’ Man
+artist: The Allman Brothers
+composers:
+- Forrest Richard Betts
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ramblinmanlyricschords.pro
+    imported_at: '2026-01-02'

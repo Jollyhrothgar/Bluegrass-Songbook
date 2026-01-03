@@ -1,0 +1,17 @@
+id: yes-or-no
+title: Yes Or No
+artist: Sonny James
+composers:
+- Bob Tubert and Sonny James
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesornolyricschords.pro
+    imported_at: '2026-01-02'

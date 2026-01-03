@@ -1,0 +1,17 @@
+id: heaven-fell-last-night
+title: Heaven Fell Last Night
+artist: Jim Ed Brown
+composers:
+- John D. Loudermilk
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavenfelllastnightlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: down-to-my-last-come-and-get-me
+title: Down To My Last Come And Get Me
+artist: Bobby Bare
+composers:
+- Shel Silverstein
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downtomylastcomeandgetmelyricschords.pro
+    imported_at: '2026-01-02'

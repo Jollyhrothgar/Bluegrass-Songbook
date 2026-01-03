@@ -1,0 +1,17 @@
+id: have-i-told-you-lately-that-i-love-you
+title: Have I Told You Lately That I Love You
+artist: Jim Reeves
+composers:
+- Scott Wiseman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: haveitoldyoulatelythatiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

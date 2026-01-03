@@ -1,0 +1,15 @@
+id: there-will-never-ever-be-another-you
+title: There Will Never Ever Be Another You
+artist: Connie Smith
+composers:
+- Jimmy Holder
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therellnevereverbeanotheryoulyricschords.pro
+    imported_at: '2026-01-02'

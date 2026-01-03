@@ -1,0 +1,17 @@
+id: no-mother-or-dad
+title: No Mother Or Dad
+artist: Lester Flatt and Earl Scruggs
+composers:
+- Curley Sechler and Lester Flatt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: nomotherordadlyricschords.pro
+    imported_at: '2026-01-02'

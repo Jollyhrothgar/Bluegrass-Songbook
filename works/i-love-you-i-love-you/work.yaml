@@ -1,0 +1,18 @@
+id: i-love-you-i-love-you
+title: I Love You I Love You
+artist: Barbara Mandrell
+composers:
+- Norro Wilson and Danny Walls
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iloveyouiloveyoulyricschords.pro
+    imported_at: '2026-01-02'

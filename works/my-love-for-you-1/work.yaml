@@ -1,0 +1,17 @@
+id: my-love-for-you-1
+title: My Love For You
+artist: Hank Williams
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myloveforyoulyricschords.pro
+    imported_at: '2026-01-02'

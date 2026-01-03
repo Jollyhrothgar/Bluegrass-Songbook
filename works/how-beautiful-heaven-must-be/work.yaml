@@ -1,0 +1,17 @@
+id: how-beautiful-heaven-must-be
+title: How Beautiful Heaven Must Be
+artist: George Jones
+composers:
+- A.P. Bland and A.S. Bridgewater
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howbeautifulheavenmustbelyricschords.pro
+    imported_at: '2026-01-02'

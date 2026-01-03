@@ -1,0 +1,17 @@
+id: i-forgot-to-remember-santa-claus
+title: I Forgot To Remember Santa Claus
+artist: Sonny James
+composers:
+- Sonny James and John Skye
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iforgottoremembersantaclauslyricschords.pro
+    imported_at: '2026-01-02'

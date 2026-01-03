@@ -1,0 +1,17 @@
+id: i-need-you
+title: I Need You
+artist: Ricky Nelson
+composers:
+- Baker Knight
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ineedyoulyricsandchords.pro
+    imported_at: '2026-01-02'

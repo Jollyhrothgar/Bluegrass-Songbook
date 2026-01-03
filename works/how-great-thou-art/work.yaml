@@ -1,0 +1,21 @@
+id: how-great-thou-art
+title: How Great Thou Art
+artist: Elvis Presley
+composers:
+- Stuart Hine
+default_key: G
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howgreatthouartlyricsandchords.pro
+    imported_at: '2026-01-02'

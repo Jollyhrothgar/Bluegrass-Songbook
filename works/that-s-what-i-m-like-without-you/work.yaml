@@ -1,0 +1,17 @@
+id: that-s-what-i-m-like-without-you
+title: That's What I'm Like Without You
+artist: Buck Owens
+composers:
+- Buck Owens, Red Simpson, Don Rich
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatimlikewithoutyoulyricschords.pro
+    imported_at: '2026-01-02'

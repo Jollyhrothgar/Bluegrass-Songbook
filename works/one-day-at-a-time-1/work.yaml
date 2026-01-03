@@ -1,0 +1,18 @@
+id: one-day-at-a-time-1
+title: One Day at a Time
+artist: Don Gibson
+composers:
+- Gary S. Paxton
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onedayatatimelyricschords.pro
+    imported_at: '2026-01-02'

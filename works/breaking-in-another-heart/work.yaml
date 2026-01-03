@@ -1,0 +1,18 @@
+id: breaking-in-another-heart
+title: Breaking In Another Heart
+artist: Hank Thompson
+composers:
+- Billy Gray, B. Auge, Hank Thompson
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: breakinginanotherheartlyricschords.pro
+    imported_at: '2026-01-02'

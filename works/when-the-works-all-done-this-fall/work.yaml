@@ -1,0 +1,18 @@
+id: when-the-works-all-done-this-fall
+title: When The Works All Done This Fall
+artist: Marty Robbins
+composers:
+- D.J. O'Malley
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentheworksalldonethisfalllyricschords.pro
+    imported_at: '2026-01-02'

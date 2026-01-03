@@ -1,0 +1,18 @@
+id: loves-made-a-fool-of-you
+title: Love’s Made A Fool Of You
+artist: Buddy Holly
+composers:
+- Buddy Holly and Bob Montgomery
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovesmadeafoolofyoulyricschords.pro
+    imported_at: '2026-01-02'

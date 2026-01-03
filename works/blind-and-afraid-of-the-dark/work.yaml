@@ -1,0 +1,17 @@
+id: blind-and-afraid-of-the-dark
+title: Blind And Afraid Of The Dark
+artist: Keith Whitley
+composers:
+- Max D. Barnes and Keith Whitley
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: blindandafraidofthedarklyricschords.pro
+    imported_at: '2026-01-02'

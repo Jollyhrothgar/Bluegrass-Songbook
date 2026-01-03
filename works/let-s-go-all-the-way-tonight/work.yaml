@@ -1,0 +1,19 @@
+id: let-s-go-all-the-way-tonight
+title: Let's Go All The Way Tonight
+artist: Mel Tillis
+composers:
+- Mel Tillis
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: letsgoallthewaytonightlyricschords.pro
+    imported_at: '2026-01-02'

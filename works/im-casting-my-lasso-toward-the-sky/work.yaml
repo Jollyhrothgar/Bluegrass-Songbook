@@ -1,0 +1,17 @@
+id: im-casting-my-lasso-toward-the-sky
+title: I’m Casting My Lasso Toward The Sky
+artist: Jimmy Wakely
+composers:
+- Jimmy Wakely and Lee White
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imcastingmylassotowardtheskylyricschords.pro
+    imported_at: '2026-01-02'

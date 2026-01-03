@@ -1,0 +1,20 @@
+id: i-m-fed-up-with-you
+title: I'm Fed Up With You
+artist: Dolly Parton
+composers:
+- Bill Owens
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imfedupwithyoulyricschords.pro
+    imported_at: '2026-01-02'

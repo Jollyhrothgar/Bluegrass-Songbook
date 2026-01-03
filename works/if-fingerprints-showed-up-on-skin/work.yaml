@@ -1,0 +1,17 @@
+id: if-fingerprints-showed-up-on-skin
+title: If Fingerprints Showed Up On Skin
+artist: Freddie Hart
+composers:
+- Kenneth E. Hunt and Freddie Hart
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iffingerprintsshoweduponskinlyricschords.pro
+    imported_at: '2026-01-02'

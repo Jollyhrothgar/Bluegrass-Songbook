@@ -1,0 +1,17 @@
+id: everybody-but-me-1
+title: Everybody But Me
+artist: Ernest Ashworth
+composers:
+- Dave Burgess
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: everybodybutmelyricschords.pro
+    imported_at: '2026-01-02'

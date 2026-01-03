@@ -1,0 +1,18 @@
+id: one-day-i-walk
+title: One Day I Walk
+artist: Anne Murray
+composers:
+- Bruce Cockburn
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: onedayiwalklyricschords.pro
+    imported_at: '2026-01-02'

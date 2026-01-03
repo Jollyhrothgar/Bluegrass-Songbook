@@ -1,0 +1,21 @@
+id: mr-songman
+title: Mr. Songman
+artist: Elvis Presley
+composers:
+- Donnie Summer
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mrsongmanlyricschords.pro
+    imported_at: '2026-01-02'

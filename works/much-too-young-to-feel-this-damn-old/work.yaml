@@ -1,0 +1,18 @@
+id: much-too-young-to-feel-this-damn-old
+title: Much Too Young (To Feel This Damn Old)
+artist: Garth Brooks
+composers:
+- Randy Taylor and Garth Brooks
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: muchtooyoungtofeelthisdamnoldlyricschords.pro
+    imported_at: '2026-01-02'

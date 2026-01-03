@@ -1,0 +1,17 @@
+id: taste-of-heaven
+title: Taste Of Heaven
+artist: Jim Ed Brown
+composers:
+- Jimmy Rule and David Briggs
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tasteofheavenlyricschords.pro
+    imported_at: '2026-01-02'

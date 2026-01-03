@@ -1,0 +1,18 @@
+id: we-made-a-mistake
+title: We Made A Mistake
+artist: Kitty Wells
+composers:
+- Joel Chunn and Jimmie Lou Lane
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wemadeamistakelyricschords.pro
+    imported_at: '2026-01-02'

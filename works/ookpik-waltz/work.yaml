@@ -1,0 +1,16 @@
+id: ookpik-waltz
+title: Ookpik Waltz
+artist: Traditional
+composers:
+- Biography:Frankie Rodgers
+tags:
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: in-the-time-that-you-gave-me
+title: In The Time That You Gave Me
+artist: Joey Feek
+composers:
+- Dennis Morgan and Shawn Camp
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: inthetimethatyougavemelyricschords.pro
+    imported_at: '2026-01-02'

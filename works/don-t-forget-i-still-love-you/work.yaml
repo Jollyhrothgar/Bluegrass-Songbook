@@ -1,0 +1,17 @@
+id: don-t-forget-i-still-love-you
+title: Don't Forget I Still Love You
+artist: Connie Smith
+composers:
+- Guy Louis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontforgetistillloveyoulyricschords.pro
+    imported_at: '2026-01-02'

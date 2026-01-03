@@ -1,0 +1,15 @@
+id: mary-in-the-morning
+title: Mary In The Morning
+artist: Glen Campbell
+composers:
+- Johnny Cymball and Mike Lendell
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: maryinthemorninglyricschords.pro
+    imported_at: '2026-01-02'

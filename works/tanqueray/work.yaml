@@ -1,0 +1,17 @@
+id: tanqueray
+title: Tanqueray
+artist: Vern Gosdin
+composers:
+- Jim Vest, Vern Gosdin, Mac Vicory, Hank Cochran
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tanqueraylyricschords.pro
+    imported_at: '2026-01-02'

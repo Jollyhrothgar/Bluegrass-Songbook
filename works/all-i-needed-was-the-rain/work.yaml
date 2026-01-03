@@ -1,0 +1,21 @@
+id: all-i-needed-was-the-rain
+title: All I Needed Was The Rain
+artist: Elvis Presley
+composers:
+- Ben Weisman and Sid Wayne
+default_key: C
+tags:
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allineededwastherainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: what-s-wrong-with-me
+title: What's Wrong With Me
+artist: Charlie Walker
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatswrongwithmelyricschords.pro
+    imported_at: '2026-01-02'

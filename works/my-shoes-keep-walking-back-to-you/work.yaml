@@ -1,0 +1,17 @@
+id: my-shoes-keep-walking-back-to-you
+title: My Shoes Keep Walking Back To You
+artist: Ray Price
+composers:
+- Bob Wills and Lee Ross
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myshoeskeepwalkingbacktoyoulyricschords.pro
+    imported_at: '2026-01-02'

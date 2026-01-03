@@ -1,0 +1,17 @@
+id: each-step-i-take
+title: Each Step I Take
+artist: Slim Whitman
+composers:
+- W. Elmo Mercer
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: eachstepitakelyricschords.pro
+    imported_at: '2026-01-02'

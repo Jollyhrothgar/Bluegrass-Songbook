@@ -1,0 +1,19 @@
+id: he-drove-her-out-of-his-mind
+title: He Drove Her Out Of His Mind
+artist: Mel Tillis
+composers:
+- Bob Corbin, Murray Cannon, Robert Paxton
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hedroveheroutofhismindlyricschords.pro
+    imported_at: '2026-01-02'

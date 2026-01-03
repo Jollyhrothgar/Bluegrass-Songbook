@@ -1,0 +1,17 @@
+id: just-in-case-2
+title: Just In Case
+artist: The Forester Sisters
+composers:
+- J.P. Pennington and Sonny LeMaire
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: justincaselyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: the-past-is-all-the-future-i-see
+title: The Past Is All The Future I See
+artist: Stonewall Jackson
+composers:
+- Benny Williams and Thomas Harris
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thepastisallthefutureiseelyricschords.pro
+    imported_at: '2026-01-02'

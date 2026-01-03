@@ -1,0 +1,18 @@
+id: give-it-all-we-got-tonight
+title: Give It All We Got Tonight
+artist: George Strait
+composers:
+- Tim James, Mark D. Bright, Philip Eugene O'Donnell
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: giveitallwegottonightlyricschords.pro
+    imported_at: '2026-01-02'

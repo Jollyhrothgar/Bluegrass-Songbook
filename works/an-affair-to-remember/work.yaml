@@ -1,0 +1,15 @@
+id: an-affair-to-remember
+title: An Affair To Remember
+artist: Ray Price
+composers:
+- Harold Adamson, Leo McCarey, Harry Warren
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: anaffairtorememberlyricschords.pro
+    imported_at: '2026-01-02'

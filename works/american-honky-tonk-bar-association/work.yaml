@@ -1,0 +1,18 @@
+id: american-honky-tonk-bar-association
+title: American Honky Tonk Bar Association
+artist: Garth Brooks
+composers:
+- Jim Rushing and Bryan Kennedy
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: americanhonkytonkbarassociationlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-ll-pay-the-price
+title: I'll Pay The Price
+artist: Cowboy Copas
+composers:
+- Redd Stewart and Lloyd Copas
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illpaythepricelyricschords.pro
+    imported_at: '2026-01-02'

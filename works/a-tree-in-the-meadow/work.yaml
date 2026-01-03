@@ -1,0 +1,18 @@
+id: a-tree-in-the-meadow
+title: A Tree In The Meadow
+artist: Marty Robbins
+composers:
+- Billy Reid
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atreeinthemeadowlyricschords.pro
+    imported_at: '2026-01-02'

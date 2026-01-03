@@ -1,0 +1,18 @@
+id: pretty-house-for-sale
+title: Pretty House For Sale
+artist: Charley Pride
+composers:
+- Harold Dorman and Wiley Gann
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: prettyhouseforsalelyricschords.pro
+    imported_at: '2026-01-02'

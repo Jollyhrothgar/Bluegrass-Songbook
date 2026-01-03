@@ -1,0 +1,15 @@
+id: bring-back-your-love-to-me
+title: Bring Back Your Love To Me
+artist: Don Gibson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bringbackyourlovetomelyricschords.pro
+    imported_at: '2026-01-02'

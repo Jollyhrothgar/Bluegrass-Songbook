@@ -1,0 +1,17 @@
+id: years
+title: Years
+artist: Barbara Mandrell
+composers:
+- Dennis Morgan and Rhonda Fleming
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yearslyricsandchords.pro
+    imported_at: '2026-01-02'

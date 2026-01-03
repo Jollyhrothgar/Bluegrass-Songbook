@@ -1,0 +1,15 @@
+id: isle-of-newfoundland
+title: Isle Of Newfoundland
+artist: Singers For Fishermen
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isleofnewfoundlandlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: yes-mr-rogers
+title: Yes Mr. Rogers
+artist: Bobby Bare
+composers:
+- Shel Silverstein and Fred Koller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yesmrrogerslyricschords.pro
+    imported_at: '2026-01-02'

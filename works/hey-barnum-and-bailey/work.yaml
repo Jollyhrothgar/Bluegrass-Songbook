@@ -1,0 +1,17 @@
+id: hey-barnum-and-bailey
+title: Hey Barnum And Bailey
+artist: Gene Watson
+composers:
+- Jerry Abbott, Charles Stewart, Kenneth Hagler
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heybarnumandbaileylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: neon-playboy
+title: Neon Playboy
+artist: Red Steagall
+composers:
+- Red Steagall and Joe Allison
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: neonplayboylyricschords.pro
+    imported_at: '2026-01-02'

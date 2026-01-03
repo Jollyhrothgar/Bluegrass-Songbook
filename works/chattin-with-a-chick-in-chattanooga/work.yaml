@@ -1,0 +1,19 @@
+id: chattin-with-a-chick-in-chattanooga
+title: Chattin' With A Chick In Chattanooga
+artist: Hank Snow
+composers:
+- Hank Snow, Edna Farnworth, Neil Campbell
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: chattinwithachickinchattanoogalyricschords.pro
+    imported_at: '2026-01-02'

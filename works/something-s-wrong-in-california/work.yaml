@@ -1,0 +1,19 @@
+id: something-s-wrong-in-california
+title: Something's Wrong In California
+artist: Waylon Jennings
+composers:
+- Wayne C. Thompson and Rodney Lay
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: somethingswrongincalifornialyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: call-of-the-wine
+title: Call Of The Wine
+artist: Landon Dodd
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: callofthewinelyricschords.pro
+    imported_at: '2026-01-02'

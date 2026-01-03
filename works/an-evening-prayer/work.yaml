@@ -1,0 +1,19 @@
+id: an-evening-prayer
+title: An Evening Prayer
+artist: Mel Tillis
+composers:
+- Charles H. Gabriel and C.M. Battersby
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aneveningprayerlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: she-came-here-for-the-change
+title: She Came Here For The Change
+artist: Ronnie Milsap
+composers:
+- Bobby Barker and Charles Quillen
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shecamehereforthechangelyricschords.pro
+    imported_at: '2026-01-02'

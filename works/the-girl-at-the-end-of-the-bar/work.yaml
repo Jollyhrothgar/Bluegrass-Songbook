@@ -1,0 +1,15 @@
+id: the-girl-at-the-end-of-the-bar
+title: The Girl At The End Of The Bar
+artist: John Anderson
+composers:
+- John Anderson and Lionel Delmore
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegirlattheendofthebarlyricschords.pro
+    imported_at: '2026-01-02'

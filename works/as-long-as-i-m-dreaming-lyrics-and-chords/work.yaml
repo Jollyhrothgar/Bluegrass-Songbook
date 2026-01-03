@@ -1,0 +1,19 @@
+id: as-long-as-i-m-dreaming-lyrics-and-chords
+title: As Long as I'm Dreaming Lyrics and Chords
+artist: Hank Snow
+composers:
+- Vaughn Horton
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: aslongasimdreaminglyricsandchords.pro
+    imported_at: '2026-01-02'

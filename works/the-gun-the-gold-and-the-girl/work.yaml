@@ -1,0 +1,17 @@
+id: the-gun-the-gold-and-the-girl
+title: The Gun The Gold And The Girl
+artist: Billy Walker
+composers:
+- Harlan Howard and Buddy Mize
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thegunthegoldandthegirllyricschords.pro
+    imported_at: '2026-01-02'

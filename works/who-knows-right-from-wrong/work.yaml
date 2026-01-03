@@ -1,0 +1,17 @@
+id: who-knows-right-from-wrong
+title: Who Knows Right From Wrong
+artist: Porter Wagoner
+composers:
+- Pearl Butler
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whoknowsrightfromwronglyricschords.pro
+    imported_at: '2026-01-02'

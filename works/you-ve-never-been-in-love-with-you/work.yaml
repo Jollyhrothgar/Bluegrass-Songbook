@@ -1,0 +1,17 @@
+id: you-ve-never-been-in-love-with-you
+title: You've Never Been In Love With You
+artist: Vern Gosdin
+composers:
+- Tim Russell, Tony Russell, Vern Gosdin, Johnny Conn
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youveneverbeeninlovewithyoulyricschords.pro
+    imported_at: '2026-01-02'

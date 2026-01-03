@@ -1,0 +1,22 @@
+id: when-the-roses-bloom-again
+title: When The Roses Bloom Again
+artist: Johnny Cash
+composers:
+- A.P. Carter
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whentherosesbloomagainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: is-it-too-late-now
+title: Is It Too Late Now
+artist: Earl Scruggs and Lester Flatt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: isittoolatenowlyricschords.pro
+    imported_at: '2026-01-02'

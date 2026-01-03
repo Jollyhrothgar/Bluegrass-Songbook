@@ -1,0 +1,17 @@
+id: i-ve-come-a-long-way-from-goodbye
+title: I've Come A Long Way From Goodbye
+artist: George Jones
+composers:
+- Melba Montgomery and Carl Montgomery
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ivecomealongwayfromgoodbyelyricschords.pro
+    imported_at: '2026-01-02'

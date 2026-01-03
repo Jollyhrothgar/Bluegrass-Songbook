@@ -1,0 +1,18 @@
+id: set-me-free-2
+title: Set Me Free
+artist: Tammy Wynette
+composers:
+- Curly Putman
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: setmefreelyricswithchords.pro
+    imported_at: '2026-01-02'

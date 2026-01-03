@@ -1,0 +1,18 @@
+id: love-builds-the-bridges
+title: Love Builds The Bridges
+artist: Patty Loveless
+composers:
+- Jim McBride and Jerry Salley
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovebuildsthebridgeslyricschords.pro
+    imported_at: '2026-01-02'

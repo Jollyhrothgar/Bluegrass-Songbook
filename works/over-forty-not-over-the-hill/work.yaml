@@ -1,0 +1,17 @@
+id: over-forty-not-over-the-hill
+title: Over Forty (Not Over The Hill)
+artist: Johnny Duncan
+composers:
+- Bucky Jones
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: overfortynotoverthehilllyricschords.pro
+    imported_at: '2026-01-02'

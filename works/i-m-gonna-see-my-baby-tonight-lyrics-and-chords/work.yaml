@@ -1,0 +1,17 @@
+id: i-m-gonna-see-my-baby-tonight-lyrics-and-chords
+title: I'm Gonna See My Baby Tonight Lyrics and Chords
+artist: Webb Pierce
+composers:
+- Linda Baggett and Webb Pierce
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imgonnaseemybabytonightlyricschords.pro
+    imported_at: '2026-01-02'

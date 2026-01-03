@@ -1,0 +1,20 @@
+id: more-than-words-can-ever-tell
+title: More Than Words Can Ever Tell
+artist: Dolly Parton
+composers:
+- Porter Wagoner
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: morethanwordscanevertelllyricschords.pro
+    imported_at: '2026-01-02'

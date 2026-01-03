@@ -1,0 +1,17 @@
+id: there-s-no-more-love
+title: There's No More Love
+artist: Carl Smith
+composers:
+- Country Johnny Mathis
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theresnomorelovelyricschords.pro
+    imported_at: '2026-01-02'

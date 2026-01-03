@@ -1,0 +1,19 @@
+id: i-see-heaven-in-you
+title: I See Heaven In You
+artist: Mel Tillis
+composers:
+- Jim Rister
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iseeheaveninyoulyricschords.pro
+    imported_at: '2026-01-02'

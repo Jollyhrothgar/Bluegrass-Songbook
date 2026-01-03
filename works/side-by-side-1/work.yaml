@@ -1,0 +1,19 @@
+id: side-by-side-1
+title: Side by Side
+artist: Patsy Cline
+composers:
+- Harry Woods
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sidebysidelyricschords.pro
+    imported_at: '2026-01-02'

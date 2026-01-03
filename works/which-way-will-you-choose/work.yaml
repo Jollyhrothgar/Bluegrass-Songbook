@@ -1,0 +1,19 @@
+id: which-way-will-you-choose
+title: Which Way Will You Choose
+artist: Randy Travis
+composers:
+- Ron Block
+default_key: Em
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whichwaywillyouchooselyricschords.pro
+    imported_at: '2026-01-02'

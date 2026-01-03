@@ -1,0 +1,15 @@
+id: guess-i-ll-move-on-down-the-line
+title: Guess I'll Move On Down The Line
+artist: Bobby Bare
+composers:
+- Ken Sonenberg and Martin Siegal
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: guessillmoveondownthelinelyricschords.pro
+    imported_at: '2026-01-02'

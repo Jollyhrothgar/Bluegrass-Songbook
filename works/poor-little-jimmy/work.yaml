@@ -1,0 +1,19 @@
+id: poor-little-jimmy
+title: Poor Little Jimmy
+artist: Hank Snow
+composers:
+- Don Wayne
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: poorlittlejimmylyricschords.pro
+    imported_at: '2026-01-02'

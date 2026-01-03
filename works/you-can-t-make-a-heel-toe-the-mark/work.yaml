@@ -1,0 +1,18 @@
+id: you-can-t-make-a-heel-toe-the-mark
+title: You Can't Make A Heel Toe The Mark
+artist: Wanda Jackson
+composers:
+- Ray Pennington and Don Reno
+default_key: G
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantmakeaheeltoethemarklyricschords.pro
+    imported_at: '2026-01-02'

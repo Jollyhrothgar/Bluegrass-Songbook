@@ -1,0 +1,17 @@
+id: best-of-all-possible-worlds
+title: Best Of All Possible Worlds
+artist: Kris Kristofferson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- Folk
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bestofallpossibleworldslyricsandchords.pro
+    imported_at: '2026-01-02'

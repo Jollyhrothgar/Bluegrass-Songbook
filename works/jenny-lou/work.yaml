@@ -1,0 +1,17 @@
+id: jenny-lou
+title: Jenny Lou
+artist: Sonny James
+composers:
+- Mark W. McIntyre and William Olofson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jennyloulyricschords.pro
+    imported_at: '2026-01-02'

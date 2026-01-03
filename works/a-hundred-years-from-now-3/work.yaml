@@ -1,0 +1,14 @@
+id: a-hundred-years-from-now-3
+title: A Hundred Years From Now
+artist: Lester Flatt and Earl Scruggs
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: golden-standard
+    imported_at: '2026-01-02'

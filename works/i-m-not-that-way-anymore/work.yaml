@@ -1,0 +1,15 @@
+id: i-m-not-that-way-anymore
+title: I'm Not That Way Anymore
+artist: Alabama
+composers:
+- Randy Owen, Teddy Gentry,
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imnotthatwayanymorelyricschords.pro
+    imported_at: '2026-01-02'

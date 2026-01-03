@@ -1,0 +1,18 @@
+id: he-may-call
+title: He May Call
+artist: Anne Murray
+composers:
+- Michael Brown and Steve Martin
+default_key: C
+tags:
+- ClassicCountry
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hemaycalllyricschords.pro
+    imported_at: '2026-01-02'

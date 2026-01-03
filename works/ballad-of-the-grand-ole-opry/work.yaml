@@ -1,0 +1,17 @@
+id: ballad-of-the-grand-ole-opry
+title: Ballad Of The Grand Ole Opry
+artist: George Morgan
+composers:
+- George Morgan and Tommy Hill
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: balladofthegrandoleoprylyricschords.pro
+    imported_at: '2026-01-02'

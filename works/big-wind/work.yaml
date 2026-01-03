@@ -1,0 +1,17 @@
+id: big-wind
+title: Big Wind
+artist: Porter Wagoner
+composers:
+- Wayne P. Walker, Alex Zanetis, George McCormick
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bigwindlyricschords.pro
+    imported_at: '2026-01-02'

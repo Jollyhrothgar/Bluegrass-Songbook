@@ -1,0 +1,17 @@
+id: the-road-of-no-return
+title: The Road Of No Return
+artist: Ray Price
+composers:
+- C.M. Bradley
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theroadofnoreturnlyricschords.pro
+    imported_at: '2026-01-02'

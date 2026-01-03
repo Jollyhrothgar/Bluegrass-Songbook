@@ -1,0 +1,18 @@
+id: can-t-take-my-eyes-off-of-you
+title: Can't Take My Eyes Off Of You
+artist: Brenda Lee
+composers:
+- Bob Crewe and Bob Gaudio
+default_key: C
+tags:
+- Pop
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: canttakemyeyesoffofyoulyricschords.pro
+    imported_at: '2026-01-02'

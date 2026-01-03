@@ -1,0 +1,18 @@
+id: heaven-must-be-wondering-where-you-are
+title: Heaven Must Be Wondering Where You Are
+artist: George Strait
+composers:
+- David L. Chamberlain and Lemuel David Lewis
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heavenmustbewonderingwhereyouarelyricschords.pro
+    imported_at: '2026-01-02'

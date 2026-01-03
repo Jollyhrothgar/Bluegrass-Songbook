@@ -1,0 +1,19 @@
+id: you-ll-still-be-in-my-heart
+title: You'll Still Be In My Heart
+artist: Ernest Tubb
+composers:
+- Buddy Starcher and Ted West
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllstillbeinmyheartlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: i-wonder-how-john-felt-when-he-baptized-jesus
+title: I Wonder How John Felt (When He Baptized Jesus)
+artist: George Jones
+composers:
+- Billy Sherrill, Norro Wilson, Carmol Taylor
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderhowjohnfeltwhenhebaptizedJesuslyricschords.pro
+    imported_at: '2026-01-02'

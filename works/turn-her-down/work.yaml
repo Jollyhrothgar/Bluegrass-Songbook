@@ -1,0 +1,17 @@
+id: turn-her-down
+title: Turn Her Down
+artist: Faron Young
+composers:
+- Ted Edlin and Faron Young
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: turnherdownlyricschords.pro
+    imported_at: '2026-01-02'

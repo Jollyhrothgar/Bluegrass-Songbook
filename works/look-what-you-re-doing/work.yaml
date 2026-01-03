@@ -1,0 +1,17 @@
+id: look-what-you-re-doing
+title: Look What You're Doing
+artist: Dottie West
+composers:
+- Curly Putman and Dee Moeller
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lookwhatyouredoinglyricschords.pro
+    imported_at: '2026-01-02'

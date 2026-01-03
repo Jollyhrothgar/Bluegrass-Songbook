@@ -1,0 +1,18 @@
+id: dig-a-little-deeper-in-the-well
+title: Dig A Little Deeper In The Well
+artist: The Oak Ridge Boys
+composers:
+- R. Bowling and Martha Jo Emerson
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: digalittledeeperinthewelllyricschords.pro
+    imported_at: '2026-01-02'

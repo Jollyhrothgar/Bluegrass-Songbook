@@ -1,0 +1,19 @@
+id: you-dun-stomped-on-my-heart
+title: You Dun Stomped On My Heart
+artist: John Denver
+composers:
+- Mason D. Williams
+default_key: G
+tags:
+- Folk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdunstompedonmyheartlyricschords.pro
+    imported_at: '2026-01-02'

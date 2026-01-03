@@ -1,0 +1,18 @@
+id: hope-of-a-broken-heart
+title: Hope Of A Broken Heart
+artist: Cowboy Copas
+composers:
+- Lois Mann and Lloyd Copas
+default_key: G
+tags:
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hopeofabrokenheartlyricschords.pro
+    imported_at: '2026-01-02'

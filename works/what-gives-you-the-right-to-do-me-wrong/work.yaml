@@ -1,0 +1,18 @@
+id: what-gives-you-the-right-to-do-me-wrong
+title: What Gives You The Right (To Do Me Wrong)
+artist: Wanda Jackson
+composers:
+- John Scott Sherrill, Bob DiPiero, Rosie Flores
+default_key: C
+tags:
+- Rockabilly
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatgivesyoutherighttodomewronglyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: ladys-man
+title: Lady’s Man
+artist: Hank Snow
+composers:
+- Cy Coben
+default_key: C
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ladysmanlyricschords.pro
+    imported_at: '2026-01-02'

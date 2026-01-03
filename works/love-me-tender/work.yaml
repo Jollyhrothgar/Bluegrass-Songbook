@@ -1,0 +1,18 @@
+id: love-me-tender
+title: Love Me Tender
+artist: Marty Robbins
+composers:
+- Vera Matson and Elvis Presley
+default_key: G
+tags:
+- ClassicCountry
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovemetenderlyricsandchords.pro
+    imported_at: '2026-01-02'

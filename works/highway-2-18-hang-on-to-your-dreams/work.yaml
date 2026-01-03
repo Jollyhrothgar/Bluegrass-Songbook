@@ -1,0 +1,17 @@
+id: highway-2-18-hang-on-to-your-dreams
+title: Highway 2-18 (Hang On To Your Dreams)
+artist: The Bellamy Brothers
+composers:
+- Howard Bellamy and David Bellamy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highway218hangontoyourdreamslyricschords.pro
+    imported_at: '2026-01-02'

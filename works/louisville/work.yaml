@@ -1,0 +1,18 @@
+id: louisville
+title: Louisville
+artist: Dwight Yoakam
+composers:
+- Pat Gallagher and Jann Browne
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: louisvillelyricsandchords.pro
+    imported_at: '2026-01-02'

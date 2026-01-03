@@ -1,0 +1,15 @@
+id: we-ll-find-a-way
+title: We'll Find A Way
+artist: Webb Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wellfindawaylyricsandchords.pro
+    imported_at: '2026-01-02'

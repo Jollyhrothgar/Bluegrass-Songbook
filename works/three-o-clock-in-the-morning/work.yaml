@@ -1,0 +1,17 @@
+id: three-o-clock-in-the-morning
+title: Three O'Clock In The Morning
+artist: Connie Francis
+composers:
+- Dorothy Terris and Julian Robledo
+default_key: G
+tags:
+- Pop
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: threeoclockinthemorninglyricschords.pro
+    imported_at: '2026-01-02'

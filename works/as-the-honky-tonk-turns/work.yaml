@@ -1,0 +1,18 @@
+id: as-the-honky-tonk-turns
+title: As The Honky Tonk Turns
+artist: Mark Chesnutt
+composers:
+- Roger Springer, Tommy Nixon, Mark Chesnutt
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: asthehonkytonkturnslyricschords.pro
+    imported_at: '2026-01-02'

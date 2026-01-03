@@ -1,0 +1,15 @@
+id: midnight-me-and-the-blues
+title: Midnight Me and the Blues
+artist: Mel Tills
+composers:
+- Jerry House
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: midnightmeandtheblueslyricschords.pro
+    imported_at: '2026-01-02'

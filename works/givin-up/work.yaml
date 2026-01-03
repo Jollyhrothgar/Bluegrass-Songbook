@@ -1,0 +1,17 @@
+id: givin-up
+title: Givin' Up
+artist: Wilburn Brothers
+composers:
+- Johnny Russell and Vince Finneran
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: givinuplyricschords.pro
+    imported_at: '2026-01-02'

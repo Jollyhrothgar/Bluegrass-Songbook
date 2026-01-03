@@ -1,0 +1,21 @@
+id: will-the-roses-bloom
+title: Will The Roses Bloom
+artist: Ricky Skaggs
+composers:
+- J. and I. Bevins
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: willtherosesbloomlyricschords.pro
+    imported_at: '2026-01-02'

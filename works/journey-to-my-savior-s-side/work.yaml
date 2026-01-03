@@ -1,0 +1,18 @@
+id: journey-to-my-savior-s-side
+title: Journey to My Savior's Side
+artist: The Bluegrass Cardinals
+composers:
+- Tom Lee and Randy Graham
+default_key: G
+tags:
+- Bluegrass
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: journeytomysaviorssidelyricschords.pro
+    imported_at: '2026-01-02'

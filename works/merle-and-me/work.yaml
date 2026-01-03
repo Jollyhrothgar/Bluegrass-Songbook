@@ -1,0 +1,18 @@
+id: merle-and-me
+title: Merle And Me
+artist: David Allan Coe
+default_key: C
+tags:
+- Folk
+- Outlaw
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: merleandmelyricschords.pro
+    imported_at: '2026-01-02'

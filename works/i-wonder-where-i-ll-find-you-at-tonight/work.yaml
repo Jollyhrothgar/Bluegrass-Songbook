@@ -1,0 +1,17 @@
+id: i-wonder-where-i-ll-find-you-at-tonight
+title: I Wonder Where I'll Find You At Tonight
+artist: Leona Williams
+composers:
+- Merle Haggard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderwhereillfindyouattonightlyricschords.pro
+    imported_at: '2026-01-02'

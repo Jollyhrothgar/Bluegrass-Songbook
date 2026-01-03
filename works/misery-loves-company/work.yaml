@@ -1,0 +1,17 @@
+id: misery-loves-company
+title: Misery Loves Company
+artist: Porter Wagoner
+composers:
+- Jerry Reed Hubbard
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: miserylovescompanylyricschords.pro
+    imported_at: '2026-01-02'

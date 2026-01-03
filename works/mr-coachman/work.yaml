@@ -1,0 +1,17 @@
+id: mr-coachman
+title: Mr. Coachman
+artist: Ronnie Reno
+composers:
+- Ronnie Reno and Wayne Carson Thompson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mrcoachmanlyricsandchords.pro
+    imported_at: '2026-01-02'

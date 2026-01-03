@@ -1,0 +1,17 @@
+id: she-ll-still-be-gone
+title: She'll Still Be Gone
+artist: Stonewall Jackson
+composers:
+- Harlan Howard and Don Bowman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shellstillbegonelyricschords.pro
+    imported_at: '2026-01-02'

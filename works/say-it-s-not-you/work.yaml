@@ -1,0 +1,15 @@
+id: say-it-s-not-you
+title: Say It's Not You
+artist: George Jones
+composers:
+- Dallas Frazier
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sayitsnotyoulyricschords.pro
+    imported_at: '2026-01-02'

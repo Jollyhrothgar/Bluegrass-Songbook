@@ -1,0 +1,17 @@
+id: you-ll-never-know-how-much-i-needed-you-today
+title: You'll Never Know How Much I Needed You Today
+artist: Conway Twitty
+composers:
+- James Benton, Janet Vinson, Patricia Linthicum
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllneverknowhowmuchineededyoutodaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: wishful-thinking
+title: Wishful Thinking
+artist: Jim Reeves
+composers:
+- Martin Greene and Rayford Greene
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wishfulthinkinglyricsandchords.pro
+    imported_at: '2026-01-02'

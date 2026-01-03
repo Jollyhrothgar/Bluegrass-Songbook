@@ -1,0 +1,18 @@
+id: you-don-t-have-to-be-present-to-win
+title: You Don't Have To Be Present To Win
+artist: Lefty Frizzell
+composers:
+- Joyce Allsup
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youdonthavetobepresenttowinlyricschords.pro
+    imported_at: '2026-01-02'

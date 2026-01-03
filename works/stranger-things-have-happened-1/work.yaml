@@ -1,0 +1,18 @@
+id: stranger-things-have-happened-1
+title: Stranger Things Have Happened
+artist: Ronnie Milsap
+composers:
+- Roger Murrah and Keith Stegall
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: strangerthingshavehappenedlyricschords.pro
+    imported_at: '2026-01-02'

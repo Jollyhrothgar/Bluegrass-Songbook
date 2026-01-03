@@ -1,0 +1,17 @@
+id: i-m-thru-wastin-time-on-you
+title: I'm Thru Wastin' Time On You
+artist: Bob Wills
+composers:
+- Tommy Duncan and Ekko Whelan
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imthruwastintimeonyoulyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,19 @@
+id: this-troubled-mind-of-mine
+title: This Troubled Mind Of Mine
+artist: Ernest Tubb
+composers:
+- Billy Hughes and Johnny Tyler
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thistroubledmindofminelyricschords.pro
+    imported_at: '2026-01-02'

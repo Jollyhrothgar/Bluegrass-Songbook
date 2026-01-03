@@ -1,0 +1,19 @@
+id: what-is-it
+title: What Is It
+artist: Mickey Gilley
+composers:
+- Wayne Kemp, Billy Arr, James Marshall
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatisitlyricschords.pro
+    imported_at: '2026-01-02'

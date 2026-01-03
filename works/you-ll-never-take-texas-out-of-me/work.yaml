@@ -1,0 +1,19 @@
+id: you-ll-never-take-texas-out-of-me
+title: You'll Never Take Texas Out of Me
+artist: Waylon Jennings
+composers:
+- Waylon Jennings and Roger Murrah
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youllnevertaketexasoutofmelyricschords.pro
+    imported_at: '2026-01-02'

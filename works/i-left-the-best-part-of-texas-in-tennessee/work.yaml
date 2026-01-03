@@ -1,0 +1,15 @@
+id: i-left-the-best-part-of-texas-in-tennessee
+title: I Left The Best Part Of Texas In Tennessee
+artist: Red Steagall
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ileftthebestpartoftexasintennesseelyricschords.pro
+    imported_at: '2026-01-02'

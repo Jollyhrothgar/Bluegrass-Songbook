@@ -1,0 +1,17 @@
+id: a-million-miles-from-nowhere
+title: A Million Miles From Nowhere
+artist: Jim Ed, Maxine and Bonnie Brown
+composers:
+- Daryl Pety
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amillionmilesfromnowherelyricschords.pro
+    imported_at: '2026-01-02'

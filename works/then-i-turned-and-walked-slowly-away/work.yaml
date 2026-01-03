@@ -1,0 +1,16 @@
+id: then-i-turned-and-walked-slowly-away
+title: Then I Turned and Walked Slowly Away
+artist: Marty Robbins
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theniturnedandwalkedslowlyawaylyricschords.pro
+    imported_at: '2026-01-02'

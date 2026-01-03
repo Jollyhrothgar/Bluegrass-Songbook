@@ -1,0 +1,17 @@
+id: highway-to-heaven
+title: Highway To Heaven
+artist: Jimmie Davis
+composers:
+- Thomas A Dorsey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: highwaytoheavenlyricschords.pro
+    imported_at: '2026-01-02'

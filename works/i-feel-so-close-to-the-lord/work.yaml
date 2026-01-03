@@ -1,0 +1,15 @@
+id: i-feel-so-close-to-the-lord
+title: I Feel So Close To The Lord
+artist: Betty Jean Robinson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifeelsoclosetothelordlyricschords.pro
+    imported_at: '2026-01-02'

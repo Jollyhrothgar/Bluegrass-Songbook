@@ -1,0 +1,22 @@
+id: he-ll-understand-and-say-well-done
+title: He'll Understand and Say Well Done
+artist: Johnny Cash
+composers:
+- Roger Wilson
+default_key: G
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hellunderstandandsaywelldonelyricschords.pro
+    imported_at: '2026-01-02'

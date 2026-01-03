@@ -1,0 +1,17 @@
+id: oh-heart-look-what-you-ve-done
+title: Oh Heart Look What You've Done
+artist: Doyle Lawson
+composers:
+- Carl Jackson and Russ Roberts
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ohheartlookwhatyouvedonelyricschords.pro
+    imported_at: '2026-01-02'

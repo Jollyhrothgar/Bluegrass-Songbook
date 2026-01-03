@@ -1,0 +1,17 @@
+id: it-s-hard-to-be-a-cowboy-these-days
+title: It's Hard To Be A Cowboy These Days
+artist: Johnny Rodriguez
+composers:
+- Conrad Pierce
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itshardtobeacowboythesedayslyricschords.pro
+    imported_at: '2026-01-02'

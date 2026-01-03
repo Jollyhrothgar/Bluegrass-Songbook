@@ -1,0 +1,17 @@
+id: divorce-me-c-o-d
+title: Divorce Me C. O. D.
+artist: Carl Smith
+composers:
+- Cliff Stone and Merle Travis
+default_key: G
+tags:
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: divorcemecodlyricschords.pro
+    imported_at: '2026-01-02'

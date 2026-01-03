@@ -1,0 +1,17 @@
+id: left-over-corner-of-your-heart
+title: Left Over Corner Of Your Heart
+artist: Dottie West
+composers:
+- Dottie West, Bill West, Charlie Dick
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: leftovercornerofyourheartlyricschords.pro
+    imported_at: '2026-01-02'

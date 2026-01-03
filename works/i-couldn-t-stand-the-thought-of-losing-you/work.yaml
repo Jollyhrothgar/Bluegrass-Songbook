@@ -1,0 +1,18 @@
+id: i-couldn-t-stand-the-thought-of-losing-you
+title: I Couldn't Stand The Thought Of Losing You
+artist: Red Sovine
+composers:
+- Red Hayes and Al Gore
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icouldntstandthethoughtoflosingyoulyricschords.pro
+    imported_at: '2026-01-02'

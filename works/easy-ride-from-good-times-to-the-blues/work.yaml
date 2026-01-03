@@ -1,0 +1,15 @@
+id: easy-ride-from-good-times-to-the-blues
+title: Easy Ride From Good Times To The Blues
+artist: Seldom Scene
+composers:
+- Herb Pederson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: easyridefromgoodtimestotheblueslyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: cheating-s-a-sin-lyrics-and-chords
+title: Cheating's a Sin Lyrics and Chords
+artist: Kitty Wells
+composers:
+- Billy Wallace
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cheatingsasinlyricschords.pro
+    imported_at: '2026-01-02'

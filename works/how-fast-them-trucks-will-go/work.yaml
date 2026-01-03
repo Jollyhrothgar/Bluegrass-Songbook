@@ -1,0 +1,17 @@
+id: how-fast-them-trucks-will-go
+title: How Fast Them Trucks Will Go
+artist: Boxcar Willie
+composers:
+- C.J. Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: howfastthemtruckswillgolyricschords.pro
+    imported_at: '2026-01-02'

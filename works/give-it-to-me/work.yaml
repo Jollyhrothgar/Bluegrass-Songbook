@@ -1,0 +1,17 @@
+id: give-it-to-me
+title: Give It To Me
+artist: Don Williams
+composers:
+- Bob McDill and Wayland Holyfield
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: giveittomelyricschords.pro
+    imported_at: '2026-01-02'

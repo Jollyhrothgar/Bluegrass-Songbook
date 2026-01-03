@@ -1,0 +1,17 @@
+id: homecoming-in-heaven
+title: Homecoming in Heaven
+artist: George Jones
+composers:
+- Willie Nelson, Paul Buskirk, Walt Breeland, Claude Gray
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: homecominginheavenlyricschords.pro
+    imported_at: '2026-01-02'

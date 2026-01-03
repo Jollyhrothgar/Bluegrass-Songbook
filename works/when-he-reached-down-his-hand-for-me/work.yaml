@@ -1,0 +1,22 @@
+id: when-he-reached-down-his-hand-for-me
+title: When He Reached Down His Hand For Me
+artist: Johnny Cash
+composers:
+- G.E. Wright[3/4 time]
+default_key: C
+tags:
+- ClassicCountry
+- Rockabilly
+- Folk
+- Gospel
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenhereacheddownhishandformelyricschords.pro
+    imported_at: '2026-01-02'

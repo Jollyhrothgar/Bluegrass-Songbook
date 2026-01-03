@@ -1,0 +1,17 @@
+id: i-cant-find-the-time
+title: I Can’t Find The Time
+artist: Faron Young
+composers:
+- Hank Cochran and Willie Nelson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icantfindthetimelyricschords.pro
+    imported_at: '2026-01-02'

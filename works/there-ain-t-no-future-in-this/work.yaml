@@ -1,0 +1,19 @@
+id: there-ain-t-no-future-in-this
+title: There Ain't No Future In This
+artist: Reba McEntire
+composers:
+- Sharon Vaughn and Bill Rice
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+- Modal
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thereaintnofutureinthislyricschords.pro
+    imported_at: '2026-01-02'

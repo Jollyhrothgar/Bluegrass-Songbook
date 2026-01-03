@@ -1,0 +1,17 @@
+id: i-ll-be-here-in-the-morning
+title: I'll Be Here In The Morning
+artist: Don Williams
+composers:
+- Townes Van Zandt
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illbehereinthemorninglyricschords.pro
+    imported_at: '2026-01-02'

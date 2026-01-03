@@ -1,0 +1,18 @@
+id: most-of-all-why
+title: Most Of All Why
+artist: Dolly Parton
+default_key: C
+tags:
+- ClassicCountry
+- Bluegrass
+- Pop
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mostofallwhylyricschords.pro
+    imported_at: '2026-01-02'

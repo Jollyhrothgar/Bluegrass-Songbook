@@ -1,0 +1,18 @@
+id: after-all
+title: After All
+artist: Patty Loveless
+composers:
+- Jimbeau Hinson and Harry Stinson
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: afteralllyrics-chords.pro
+    imported_at: '2026-01-02'

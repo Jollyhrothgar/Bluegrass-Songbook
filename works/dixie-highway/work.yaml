@@ -1,0 +1,17 @@
+id: dixie-highway
+title: Dixie Highway
+artist: Alan Jackson
+composers:
+- Alan Jackson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dixiehighwaylyricschords.pro
+    imported_at: '2026-01-02'

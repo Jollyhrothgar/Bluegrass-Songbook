@@ -1,0 +1,17 @@
+id: you-were-never-mine-to-lose
+title: You Were Never Mine To Lose
+artist: Doug Stone
+composers:
+- Kim Williams, Ron Harbin, Doug Stone
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youwereneverminetoloselyricschords.pro
+    imported_at: '2026-01-02'

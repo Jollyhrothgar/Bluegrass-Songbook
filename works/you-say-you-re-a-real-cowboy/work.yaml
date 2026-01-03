@@ -1,0 +1,17 @@
+id: you-say-you-re-a-real-cowboy
+title: You Say You're A Real Cowboy
+artist: Billy Crash Craddock
+composers:
+- David Heavener
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: yousayyourearealcowboylyricschords.pro
+    imported_at: '2026-01-02'

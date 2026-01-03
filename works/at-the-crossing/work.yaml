@@ -1,0 +1,17 @@
+id: at-the-crossing
+title: At The Crossing
+artist: Jimmie Davis
+composers:
+- Mosie Lister
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: atthecrossinglyricschords.pro
+    imported_at: '2026-01-02'

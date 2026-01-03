@@ -1,0 +1,19 @@
+id: keep-your-promise-willie-thomas
+title: Keep Your Promise Willie Thomas
+artist: Hank Snow
+composers:
+- Jack Fulton and Louis Steele
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: keepyourpromisewilliethomaslyricschords.pro
+    imported_at: '2026-01-02'

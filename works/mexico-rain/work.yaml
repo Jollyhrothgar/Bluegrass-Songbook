@@ -1,0 +1,17 @@
+id: mexico-rain
+title: Mexico Rain
+artist: Johnny Rodriguez
+composers:
+- Michael Hearne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mexicorainlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: love-is-what-life-s-all-about
+title: Love Is What Life's All About
+artist: Moe Bandy
+composers:
+- Carl Belew, Van Givens, Moe Bandy
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveiswhatlifesallaboutlyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: born-a-fool
+title: Born A Fool
+artist: Jim Ed Brown
+composers:
+- Alex Zanetis
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: bornafoollyricschords.pro
+    imported_at: '2026-01-02'

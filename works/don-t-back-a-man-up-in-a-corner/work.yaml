@@ -1,0 +1,19 @@
+id: don-t-back-a-man-up-in-a-corner
+title: Don't Back A Man Up In A Corner
+artist: Ernest Tubb
+composers:
+- Harlan Howard
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontbackamanupinacornerlyricschords.pro
+    imported_at: '2026-01-02'

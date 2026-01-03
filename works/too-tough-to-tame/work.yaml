@@ -1,0 +1,17 @@
+id: too-tough-to-tame
+title: Too Tough To Tame
+artist: John Anderson
+composers:
+- Max D. Barnes and John Anderson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tootoughtotamelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: they-ll-never-take-his-love-from-me
+title: They'll Never Take His Love From Me
+artist: Leona Williams
+composers:
+- Leon Payne
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theyllnevertakehislovefrommelyricschords.pro
+    imported_at: '2026-01-02'

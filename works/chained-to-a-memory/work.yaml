@@ -1,0 +1,17 @@
+id: chained-to-a-memory
+title: Chained to a Memory
+artist: Eddy Arnold
+composers:
+- Jenny Lou Carson
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: chainedtoamemorylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: tiny-white-circle
+title: Tiny White Circle
+artist: Leona Williams
+composers:
+- Vera Lakey
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tinywhitecirclelyricschords.pro
+    imported_at: '2026-01-02'

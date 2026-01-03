@@ -1,0 +1,17 @@
+id: lonesome-out-tonight
+title: Lonesome Out Tonight
+artist: Ferlin Husky
+composers:
+- Jimmy Peppers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lonesomeouttonightlyricschords.pro
+    imported_at: '2026-01-02'

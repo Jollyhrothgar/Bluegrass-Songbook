@@ -1,0 +1,17 @@
+id: i-won-t-forget-you
+title: I Won't Forget You
+artist: Jim Reeves
+composers:
+- Harlan Howard
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwontforgetyoulyricschords.pro
+    imported_at: '2026-01-02'

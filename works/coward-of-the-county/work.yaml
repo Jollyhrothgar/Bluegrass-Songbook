@@ -1,0 +1,18 @@
+id: coward-of-the-county
+title: Coward of the County
+artist: Kenny Rogers
+composers:
+- Roger Bowling and Billy Ed Wheeler
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cowardofthecountylyricschords.pro
+    imported_at: '2026-01-02'

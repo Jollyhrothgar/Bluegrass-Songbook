@@ -1,0 +1,17 @@
+id: take-me-back-to-renfro-valley
+title: Take Me Back To Renfro Valley
+artist: Mac Wiseman
+composers:
+- John Lair
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: takemebacktorenfrovalleylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,21 @@
+id: all-i-ever-loved-was-you
+title: All I Ever Loved Was You
+artist: Ricky Skaggs
+composers:
+- Dorothy Skaggs
+default_key: G
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: allieverlovedwasyoulyricschords.pro
+    imported_at: '2026-01-02'

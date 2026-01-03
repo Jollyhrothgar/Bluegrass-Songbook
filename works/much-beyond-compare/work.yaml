@@ -1,0 +1,15 @@
+id: much-beyond-compare
+title: Much Beyond Compare
+artist: Johnny Tillotson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: muchbeyondcomparelyricschords.pro
+    imported_at: '2026-01-02'

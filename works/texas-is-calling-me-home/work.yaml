@@ -1,0 +1,17 @@
+id: texas-is-calling-me-home
+title: Texas Is Calling Me Home
+artist: Ray Price
+composers:
+- Ray Pennington
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: texasiscallingmehomelyricschords.pro
+    imported_at: '2026-01-02'

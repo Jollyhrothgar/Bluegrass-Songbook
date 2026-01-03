@@ -1,0 +1,15 @@
+id: dear-heart
+title: Dear Heart
+artist: Jimmy Dean
+composers:
+- Jay Livingston, Ray Evans, Henry Mancini
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dearheartlyricschords.pro
+    imported_at: '2026-01-02'

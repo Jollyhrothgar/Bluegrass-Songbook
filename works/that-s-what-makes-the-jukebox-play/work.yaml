@@ -1,0 +1,17 @@
+id: that-s-what-makes-the-jukebox-play
+title: That's What Makes The Jukebox Play
+artist: Moe Bandy
+composers:
+- Jimmy WorkG
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thatswhatmakesthejukeboxplaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,17 @@
+id: forty-hour-week
+title: Forty Hour Week
+artist: Alabama
+composers:
+- Don Schlitz, Dave Loggins, Lisa Silver
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: fortyhourweeklyricschords.pro
+    imported_at: '2026-01-02'

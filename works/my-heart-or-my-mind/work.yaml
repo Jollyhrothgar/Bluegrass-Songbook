@@ -1,0 +1,15 @@
+id: my-heart-or-my-mind
+title: My Heart Or My Mind
+artist: Wilburn Brothers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: myheartormymindlyricschords.pro
+    imported_at: '2026-01-02'

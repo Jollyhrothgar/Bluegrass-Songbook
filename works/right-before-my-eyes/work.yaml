@@ -1,0 +1,19 @@
+id: right-before-my-eyes
+title: Right Before My Eyes
+artist: Waylon Jennings
+composers:
+- Waylon Jennings and Don Bowman
+default_key: C
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: rightbeforemyeyeslyricschords.pro
+    imported_at: '2026-01-02'

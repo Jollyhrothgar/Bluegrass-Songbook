@@ -1,0 +1,19 @@
+id: when-a-soldier-knocks-and-finds-nobody-home
+title: When A Soldier Knocks And Finds Nobody Home
+artist: Ernest Tubb
+composers:
+- Ernest Tubb, Moon Mullican, Lou Wayne
+default_key: C
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whenasoldierknocksandfindsnobodyhomelyricschords.pro
+    imported_at: '2026-01-02'

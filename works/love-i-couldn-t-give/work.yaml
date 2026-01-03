@@ -1,0 +1,17 @@
+id: love-i-couldn-t-give
+title: Love I Couldn't Give
+artist: Faron Young
+composers:
+- Chuck Rogers
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: loveicouldntgivelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,18 @@
+id: big-indian-hornpipe
+title: Big Indian Hornpipe
+artist: Traditional
+composers:
+- Biography:Buddy Thomas
+default_key: A
+tags:
+- Modal
+- Instrumental
+- OldTime
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: you-ve-never-been-this-far-before
+title: You've Never Been This Far Before
+artist: Conway Twitty
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youveneverbeenthisfarbeforelyricschords.pro
+    imported_at: '2026-01-02'

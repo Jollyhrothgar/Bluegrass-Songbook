@@ -1,0 +1,19 @@
+id: the-door-is-always-open
+title: The Door Is Always Open
+artist: Ernest Tubb
+composers:
+- Bob McDill and Dickey Lee
+default_key: G
+tags:
+- ClassicCountry
+- HonkyTonk
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thedoorisalwaysopenlyricschords.pro
+    imported_at: '2026-01-02'

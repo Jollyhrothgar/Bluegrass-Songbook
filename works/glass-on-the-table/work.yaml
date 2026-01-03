@@ -1,0 +1,17 @@
+id: glass-on-the-table
+title: Glass On The Table
+artist: Wilburn Brothers
+composers:
+- Vern Orr and John Newman
+default_key: C
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: glassonthetablelyricschords.pro
+    imported_at: '2026-01-02'

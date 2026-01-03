@@ -1,0 +1,17 @@
+id: my-little-girl-in-tennessee
+title: My Little Girl In Tennessee
+artist: The Osborne Brothers
+composers:
+- Lester Flatt
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: mylittlegirlintennesseelyricschords.pro
+    imported_at: '2026-01-02'

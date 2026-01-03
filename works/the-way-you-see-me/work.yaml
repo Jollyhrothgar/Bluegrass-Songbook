@@ -1,0 +1,16 @@
+id: the-way-you-see-me
+title: The Way You See Me
+artist: Willie Nelson
+default_key: G
+tags:
+- ClassicCountry
+- Outlaw
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thewayyouseemelyricschords.pro
+    imported_at: '2026-01-02'

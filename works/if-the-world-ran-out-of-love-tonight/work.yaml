@@ -1,0 +1,17 @@
+id: if-the-world-ran-out-of-love-tonight
+title: If The World Ran Out Of Love Tonight
+artist: Jim Ed Brown and Helen Cornelius
+composers:
+- Michael Garvin, Blake Mevis, Steve Wilson, Kelly Wilson
+default_key: G
+tags:
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iftheworldranoutoflovetonightlyricschords.pro
+    imported_at: '2026-01-02'

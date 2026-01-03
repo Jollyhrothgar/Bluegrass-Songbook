@@ -1,0 +1,13 @@
+id: love-my-life-away
+title: Love My Life Away
+artist: Gene Pitney
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lovemylifeawaylyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,15 @@
+id: if-you-ve-got-time-to-say-goodbye
+title: If You've Got Time To Say Goodbye
+artist: Merle Haggard
+default_key: C
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ifyouvegottimetosaygoodbyelyricschords.pro
+    imported_at: '2026-01-02'

@@ -1,0 +1,16 @@
+id: live-and-learn
+title: Live And Learn
+artist: Clint Black
+default_key: Am
+tags:
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: liveandlearnlyricsandchords.pro
+    imported_at: '2026-01-02'

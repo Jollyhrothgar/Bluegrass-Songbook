@@ -1,0 +1,15 @@
+id: number-one-on-the-hurt-parade
+title: Number One On The Hurt Parade
+artist: Hank Thompson
+default_key: G
+tags:
+- ClassicCountry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: numberoneonthehurtparadelyricschords.pro
+    imported_at: '2026-01-02'

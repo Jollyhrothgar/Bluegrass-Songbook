@@ -1,0 +1,19 @@
+id: i-can-t-tell-my-heart
+title: I Can't Tell My Heart
+artist: Hank Williams
+composers:
+- Johnny Wright, Jim Anglin, Jack Anglin
+default_key: C
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: icanttellmyheartlyricsandchords.pro
+    imported_at: '2026-01-02'
