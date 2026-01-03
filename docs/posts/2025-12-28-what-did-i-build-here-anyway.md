@@ -6,8 +6,8 @@ summary: Summary of features built and roadmap
 
 ## The Human Speaks:
 
-This post is going to be heavily co-authored by [claude
-code](https://code.claude.com/docs/en/overview) which honestly, might be the most important
+This post is going to be heavily co-authored by [Claude
+Code](https://claude.com/claude-code) which honestly, might be the most important
 development tool ever built.
 
 While I had a dataset that I put together with bluegrass songs hanging around my laptop for a while,

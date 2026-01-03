@@ -26,8 +26,8 @@ and even though the reader is free, it's hard to share / integrate / build on to
 reverse engineered the format, and created a new tab spec (more later) - Open Tab Format (kinda like
 MIDI but with more info) and Human Tab Format - which is similar to ABC format, but built for
 stringed & fretted instruments. More to come. For now - two tabs are posted that were directly
-processed from tef files - a [mandolin break](https://bluegrassbook.com/#song/foggy-mountain-breakdown) to foggy mountain breakdown, and a banjo break to
-[shuckin the corn](https://bluegrassbook.com/#song/shuckin-the-corn).
+processed from tef files - a [mandolin break](/#work/foggy-mountain-breakdown) to foggy mountain breakdown, and a banjo break to
+[shuckin the corn](/#work/shuckin-the-corn).
 
 The infrastructure is in place, and I'm starting to add tabs from various sources. Right now it's
 mostly fiddle tunes from TuneArch with ABC notation, but the system supports banjo tabs, guitar
