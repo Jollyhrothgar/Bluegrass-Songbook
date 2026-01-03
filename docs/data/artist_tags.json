@@ -29,7 +29,7 @@
       4
     ],
     [
-      "christian pop",
+      "classic pop and rock",
       2
     ],
     [
@@ -37,7 +37,7 @@
       2
     ],
     [
-      "classic pop and rock",
+      "christian pop",
       2
     ]
   ],
@@ -53,31 +53,31 @@
   ],
   "Asleep At The Wheel": [
     [
-      "country",
+      "western swing",
       2
     ],
     [
-      "western swing",
+      "country",
       2
     ]
   ],
   "Asleep at the Wheel": [
     [
-      "country",
+      "western swing",
       2
     ],
     [
-      "western swing",
+      "country",
       2
     ]
   ],
   "B.J. Thomas": [
     [
-      "contemporary christian",
+      "pop",
       2
     ],
     [
-      "pop",
+      "contemporary christian",
       2
     ],
     [
@@ -109,11 +109,11 @@
       4
     ],
     [
-      "pop",
+      "vocal jazz",
       2
     ],
     [
-      "vocal jazz",
+      "pop",
       2
     ]
   ],
@@ -135,15 +135,15 @@
       6
     ],
     [
-      "country rock",
-      4
-    ],
-    [
       "contemporary folk",
       4
     ],
     [
       "singer-songwriter",
+      4
+    ],
+    [
+      "country rock",
       4
     ],
     [
@@ -171,15 +171,15 @@
       4
     ],
     [
-      "traditional pop",
-      2
-    ],
-    [
       "teen pop",
       2
     ],
     [
       "standards",
+      2
+    ],
+    [
+      "traditional pop",
       2
     ],
     [
@@ -203,11 +203,11 @@
       8
     ],
     [
-      "country rock",
+      "contemporary country",
       2
     ],
     [
-      "contemporary country",
+      "country rock",
       2
     ]
   ],
@@ -247,11 +247,11 @@
       5
     ],
     [
-      "country",
+      "rock",
       2
     ],
     [
-      "rock",
+      "country",
       2
     ]
   ],
@@ -281,15 +281,15 @@
   ],
   "Charlie Rich": [
     [
-      "country",
-      2
-    ],
-    [
       "rockabilly",
       2
     ],
     [
       "traditional country",
+      2
+    ],
+    [
+      "country",
       2
     ]
   ],
@@ -345,11 +345,11 @@
       3
     ],
     [
-      "rockabilly",
+      "rock & roll",
       2
     ],
     [
-      "rock & roll",
+      "rockabilly",
       2
     ]
   ],
@@ -417,11 +417,11 @@
   ],
   "David Allan Coe": [
     [
-      "singer-songwriter",
+      "outlaw country",
       3
     ],
     [
-      "outlaw country",
+      "singer-songwriter",
       3
     ],
     [
@@ -437,11 +437,11 @@
   ],
   "Delbert McClinton": [
     [
-      "electric blues",
+      "blues rock",
       2
     ],
     [
-      "blues rock",
+      "electric blues",
       2
     ]
   ],
@@ -485,11 +485,11 @@
       3
     ],
     [
-      "folk",
+      "singer-songwriter",
       2
     ],
     [
-      "singer-songwriter",
+      "folk",
       2
     ]
   ],
@@ -501,15 +501,15 @@
   ],
   "Doris Day": [
     [
+      "traditional pop",
+      2
+    ],
+    [
       "show tunes",
       2
     ],
     [
       "pop",
-      2
-    ],
-    [
-      "traditional pop",
       2
     ]
   ],
@@ -569,10 +569,6 @@
       8
     ],
     [
-      "country",
-      6
-    ],
-    [
       "pop",
       6
     ],
@@ -581,7 +577,11 @@
       6
     ],
     [
-      "blues",
+      "country",
+      6
+    ],
+    [
+      "blue-eyed soul",
       4
     ],
     [
@@ -589,7 +589,7 @@
       4
     ],
     [
-      "blue-eyed soul",
+      "blues",
       4
     ],
     [
@@ -597,7 +597,7 @@
       3
     ],
     [
-      "r&b",
+      "christmas music",
       2
     ]
   ],
@@ -609,21 +609,21 @@
   ],
   "Ernest Tubb": [
     [
-      "country",
+      "honky tonk",
       2
     ],
     [
-      "honky tonk",
+      "country",
       2
     ]
   ],
   "Fats Domino": [
     [
-      "rock and roll",
+      "new orleans r&b",
       4
     ],
     [
-      "new orleans r&b",
+      "rock and roll",
       4
     ],
     [
@@ -677,7 +677,7 @@
       3
     ],
     [
-      "country",
+      "singer-songwriter",
       2
     ],
     [
@@ -685,8 +685,42 @@
       2
     ],
     [
-      "singer-songwriter",
+      "country",
       2
+    ]
+  ],
+  "Green Day": [
+    [
+      "punk rock",
+      32
+    ],
+    [
+      "pop punk",
+      27
+    ],
+    [
+      "alternative rock",
+      17
+    ],
+    [
+      "rock",
+      9
+    ],
+    [
+      "punk",
+      6
+    ],
+    [
+      "queer",
+      4
+    ],
+    [
+      "power pop",
+      4
+    ],
+    [
+      "american",
+      3
     ]
   ],
   "Hal Ketchum": [
@@ -697,11 +731,11 @@
   ],
   "Hank Snow": [
     [
-      "nashville sound",
+      "country",
       2
     ],
     [
-      "country",
+      "nashville sound",
       2
     ]
   ],
@@ -747,10 +781,6 @@
       6
     ],
     [
-      "rock and roll",
-      2
-    ],
-    [
       "honky tonk",
       2
     ],
@@ -760,6 +790,10 @@
     ],
     [
       "rock",
+      2
+    ],
+    [
+      "rock and roll",
       2
     ],
     [
@@ -789,11 +823,11 @@
       3
     ],
     [
-      "country rock",
+      "caribbean music",
       2
     ],
     [
-      "caribbean music",
+      "country rock",
       2
     ]
   ],
@@ -835,19 +869,19 @@
       5
     ],
     [
-      "rock",
-      2
-    ],
-    [
       "singer-songwriter",
       2
     ],
     [
-      "folk rock",
+      "rock",
       2
     ],
     [
       "country folk",
+      2
+    ],
+    [
+      "folk rock",
       2
     ]
   ],
@@ -885,11 +919,11 @@
       7
     ],
     [
-      "americana",
+      "country gospel",
       5
     ],
     [
-      "country gospel",
+      "americana",
       5
     ],
     [
@@ -927,11 +961,11 @@
       3
     ],
     [
-      "easy listening",
+      "pop",
       2
     ],
     [
-      "pop",
+      "easy listening",
       2
     ]
   ],
@@ -979,15 +1013,15 @@
       3
     ],
     [
+      "singer-songwriter",
+      2
+    ],
+    [
       "outlaw country",
       2
     ],
     [
       "folk",
-      2
-    ],
-    [
-      "singer-songwriter",
       2
     ]
   ],
@@ -1065,11 +1099,11 @@
   ],
   "Little Richard": [
     [
-      "rock and roll",
+      "rock",
       3
     ],
     [
-      "rock",
+      "rock and roll",
       3
     ],
     [
@@ -1171,11 +1205,11 @@
   ],
   "Mickey Gilley": [
     [
-      "country",
+      "nashville sound",
       2
     ],
     [
-      "nashville sound",
+      "country",
       2
     ]
   ],
@@ -1189,16 +1223,12 @@
       5
     ],
     [
-      "easy listening",
-      3
-    ],
-    [
       "swing",
       3
     ],
     [
-      "pop",
-      2
+      "easy listening",
+      3
     ],
     [
       "traditional pop",
@@ -1206,6 +1236,10 @@
     ],
     [
       "standards",
+      2
+    ],
+    [
+      "pop",
       2
     ]
   ],
@@ -1225,19 +1259,19 @@
       8
     ],
     [
-      "soft rock",
-      6
-    ],
-    [
       "baroque pop",
       6
     ],
     [
-      "adult contemporary",
+      "pop rock",
       6
     ],
     [
-      "pop rock",
+      "soft rock",
+      6
+    ],
+    [
+      "adult contemporary",
       6
     ],
     [
@@ -1275,11 +1309,7 @@
       4
     ],
     [
-      "classic rock",
-      2
-    ],
-    [
-      "contemporary folk",
+      "singer/songwriter",
       2
     ],
     [
@@ -1287,7 +1317,11 @@
       2
     ],
     [
-      "singer/songwriter",
+      "classic rock",
+      2
+    ],
+    [
+      "contemporary folk",
       2
     ]
   ],
@@ -1297,15 +1331,15 @@
       4
     ],
     [
+      "folk rock",
+      3
+    ],
+    [
       "bluegrass",
       3
     ],
     [
       "country rock",
-      3
-    ],
-    [
-      "folk rock",
       3
     ]
   ],
@@ -1337,15 +1371,15 @@
       2
     ],
     [
+      "honky tonk",
+      2
+    ],
+    [
       "traditional country",
       2
     ],
     [
       "nashville sound",
-      2
-    ],
-    [
-      "honky tonk",
       2
     ]
   ],
@@ -1361,11 +1395,11 @@
   ],
   "Paul Anka": [
     [
-      "pop",
+      "jazz",
       2
     ],
     [
-      "jazz",
+      "pop",
       2
     ]
   ],
@@ -1389,11 +1423,11 @@
       16
     ],
     [
-      "experimental rock",
+      "british",
       12
     ],
     [
-      "british",
+      "experimental rock",
       12
     ],
     [
@@ -1421,19 +1455,19 @@
       5
     ],
     [
-      "country gospel",
-      2
-    ],
-    [
-      "contemporary country",
-      2
-    ],
-    [
       "classic pop and rock",
       2
     ],
     [
       "traditional country",
+      2
+    ],
+    [
+      "country gospel",
+      2
+    ],
+    [
+      "contemporary country",
       2
     ]
   ],
@@ -1469,15 +1503,15 @@
   ],
   "Ricky Skaggs": [
     [
-      "country",
-      3
-    ],
-    [
       "bluegrass",
       3
     ],
     [
       "gospel",
+      3
+    ],
+    [
+      "country",
       3
     ],
     [
@@ -1561,11 +1595,11 @@
   ],
   "Tennessee Ernie Ford": [
     [
-      "country",
+      "country gospel",
       2
     ],
     [
-      "country gospel",
+      "country",
       2
     ]
   ],
@@ -1595,11 +1629,11 @@
   ],
   "The Dubliners": [
     [
-      "irish folk",
+      "folk",
       4
     ],
     [
-      "folk",
+      "irish folk",
       4
     ],
     [
@@ -1609,15 +1643,15 @@
   ],
   "The Everly Brothers": [
     [
-      "rockabilly",
-      2
-    ],
-    [
       "pop",
       2
     ],
     [
       "rock & roll",
+      2
+    ],
+    [
+      "rockabilly",
       2
     ]
   ],
@@ -1641,11 +1675,11 @@
   ],
   "The Kingsmen": [
     [
-      "pop rock",
+      "proto-punk",
       2
     ],
     [
-      "proto-punk",
+      "pop rock",
       2
     ],
     [
@@ -1659,7 +1693,7 @@
   ],
   "The Louvin Brothers": [
     [
-      "country",
+      "bluegrass",
       2
     ],
     [
@@ -1667,7 +1701,7 @@
       2
     ],
     [
-      "bluegrass",
+      "country",
       2
     ]
   ],
@@ -1677,11 +1711,11 @@
       4
     ],
     [
-      "americana",
+      "neo-traditional country",
       2
     ],
     [
-      "neo-traditional country",
+      "americana",
       2
     ]
   ],
@@ -1693,11 +1727,11 @@
   ],
   "The Platters": [
     [
-      "traditional pop",
+      "doo-wop",
       3
     ],
     [
-      "doo-wop",
+      "traditional pop",
       3
     ],
     [
@@ -1767,15 +1801,15 @@
   ],
   "Townes Van Zandt": [
     [
-      "americana",
-      3
-    ],
-    [
       "singer-songwriter",
       3
     ],
     [
       "folk",
+      3
+    ],
+    [
+      "americana",
       3
     ]
   ],
@@ -1837,11 +1871,11 @@
       2
     ],
     [
-      "alt-country",
+      "country rock",
       2
     ],
     [
-      "country rock",
+      "alt-country",
       2
     ]
   ],

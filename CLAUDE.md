@@ -186,6 +186,27 @@ The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 
 This runs `build_works_index.py`, which reads all `works/*/work.yaml` files and builds the search index.
 
+### Refreshing MusicBrainz Tags (Local Only)
+
+MusicBrainz tag enrichment requires a local PostgreSQL database with the MusicBrainz dump. This cannot run in CI.
+
+```bash
+# 1. Start the MusicBrainz database (separate repo)
+/Users/mike/workspace/music_brainz/mb-db/scripts/db start
+
+# 2. Install psycopg2 if needed
+uv pip install psycopg2-binary
+
+# 3. Refresh artist tags and rebuild index
+./scripts/utility refresh-tags
+
+# 4. Commit the updated cache (CI uses this)
+git add docs/data/artist_tags.json
+git commit -m "Refresh MusicBrainz artist tags"
+```
+
+The `artist_tags.json` cache is checked into git so CI builds can apply tags without the MusicBrainz database.
+
 ## Format: ChordPro + Extensions
 
 We use **ChordPro-compatible syntax** with custom extensions:
