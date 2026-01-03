@@ -4,12 +4,15 @@ import {
     currentSong,
     editMode, setEditMode,
     editingSongId, setEditingSongId,
-    editorNashvilleMode, setEditorNashvilleMode,
-    GITHUB_REPO
+    editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
 import { escapeHtml } from './utils.js';
 import { extractChords, detectKey, toNashville } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
+
+// Supabase configuration for anonymous submissions
+const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
 
 // Module-level state
 let editorDetectedKey = null;
@@ -688,7 +691,7 @@ export function initEditor(options) {
 
     // Submit button
     if (editorSubmitBtnEl) {
-        editorSubmitBtnEl.addEventListener('click', () => {
+        editorSubmitBtnEl.addEventListener('click', async () => {
             const title = editorTitleEl?.value.trim();
             const artist = editorArtistEl?.value.trim();
 
@@ -711,7 +714,7 @@ export function initEditor(options) {
                 return;
             }
 
-            let issueTitle, issueBody, labels;
+            let submissionData;
 
             if (editMode && editingSongId) {
                 const comment = editorCommentEl?.value.trim();
@@ -723,65 +726,72 @@ export function initEditor(options) {
                     return;
                 }
 
-                issueTitle = `Correction: ${title}`;
-                labels = 'song-correction';
-                issueBody = `## Song Correction
-
-**Song ID:** ${editingSongId}
-**Title:** ${title}
-**Artist:** ${artist || 'Unknown'}
-
-### Changes Made
-${comment}
-
-### Updated ChordPro Content
-
-\`\`\`chordpro
-${chordpro}
-\`\`\`
-
----
-*Please review this correction. Add the \`approved\` label to process it automatically.*`;
-
+                submissionData = {
+                    type: 'correction',
+                    title,
+                    artist: artist || undefined,
+                    songId: editingSongId,
+                    chordpro,
+                    comment
+                };
             } else {
-                issueTitle = artist
-                    ? `Song: ${title} by ${artist}`
-                    : `Song: ${title}`;
-                labels = 'song-submission';
-                issueBody = `## Song Submission
-
-**Title:** ${title}
-**Artist:** ${artist || 'Unknown'}
-**Submitted via:** Bluegrass Songbook Editor
-
-### ChordPro Content
-
-\`\`\`chordpro
-${chordpro}
-\`\`\`
-
----
-*Please review this submission. Add the \`approved\` label to process it automatically.*`;
+                submissionData = {
+                    type: 'submission',
+                    title,
+                    artist: artist || undefined,
+                    chordpro
+                };
             }
 
-            const params = new URLSearchParams({
-                title: issueTitle,
-                body: issueBody,
-                labels: labels
-            });
-
-            const issueUrl = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
-            window.open(issueUrl, '_blank');
-            trackSubmission(editMode ? 'correction' : 'new_song');
-
+            // Disable button and show submitting state
+            editorSubmitBtnEl.disabled = true;
             if (editorStatusEl) {
-                editorStatusEl.textContent = 'Opening GitHub...';
-                editorStatusEl.className = 'save-status success';
-                setTimeout(() => { editorStatusEl.textContent = ''; }, 3000);
+                editorStatusEl.textContent = 'Submitting...';
+                editorStatusEl.className = 'save-status';
             }
 
-            if (editMode) {
-                exitEditMode();
+            try {
+                const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                        'apikey': SUPABASE_ANON_KEY
+                    },
+                    body: JSON.stringify(submissionData)
+                });
+
+                const result = await response.json();
+
+                if (!response.ok || !result.success) {
+                    throw new Error(result.error || 'Failed to submit');
+                }
+
+                trackSubmission(editMode ? 'correction' : 'new_song');
+
+                if (editorStatusEl) {
+                    editorStatusEl.innerHTML = `Submitted! <a href="${result.issueUrl}" target="_blank">View issue #${result.issueNumber}</a>`;
+                    editorStatusEl.className = 'save-status success';
+                }
+
+                if (editMode) {
+                    exitEditMode();
+                } else {
+                    // Clear form for new submissions
+                    if (editorTitleEl) editorTitleEl.value = '';
+                    if (editorArtistEl) editorArtistEl.value = '';
+                    if (editorContentEl) editorContentEl.value = '';
+                    updateEditorPreview();
+                }
+
+            } catch (error) {
+                console.error('Submission error:', error);
+                if (editorStatusEl) {
+                    editorStatusEl.textContent = `Error: ${error.message}`;
+                    editorStatusEl.className = 'save-status error';
+                }
+            } finally {
+                editorSubmitBtnEl.disabled = false;
             }
         });
     }
