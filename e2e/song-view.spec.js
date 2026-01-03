@@ -148,18 +148,17 @@ test.describe('Print View', () => {
         await expect(page.locator('#song-view')).toBeVisible();
     });
 
-    test('print button opens print view', async ({ page, context }) => {
-        // Listen for new page
-        const pagePromise = context.waitForEvent('page');
+    test('print button triggers print', async ({ page }) => {
+        // Track if window.print was called
+        let printCalled = false;
+        await page.exposeFunction('trackPrint', () => { printCalled = true; });
+        await page.evaluate(() => {
+            window.print = () => { window.trackPrint(); };
+        });
 
         await page.locator('#print-btn').click();
 
-        const printPage = await pagePromise;
-        await printPage.waitForLoadState();
-
-        // Print page should have song content (uses id not class)
-        await expect(printPage.locator('#song-content')).toBeVisible();
-
-        await printPage.close();
+        // Verify print was triggered
+        expect(printCalled).toBe(true);
     });
 });

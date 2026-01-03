@@ -190,6 +190,18 @@ export const FONT_SIZES = {
 };
 
 // ============================================
+// TABLATURE STATE
+// ============================================
+
+export let activePartTab = 'lead-sheet';     // 'lead-sheet' | 'tablature'
+export let loadedTablature = null;           // Cached OTF data for current song
+export let tablaturePlayer = null;           // TabPlayer instance
+
+export function setActivePartTab(value) { activePartTab = value; notifyChange('activePartTab'); }
+export function setLoadedTablature(value) { loadedTablature = value; }
+export function setTablaturePlayer(value) { tablaturePlayer = value; }
+
+// ============================================
 // ABC NOTATION STATE
 // ============================================
 
@@ -238,6 +250,9 @@ export function setSyncInProgress(value) { syncInProgress = value; }
 // ============================================
 // LISTS (includes Favorites as a special list)
 // ============================================
+
+// Favorites is a special list with this fixed ID
+export const FAVORITES_LIST_ID = 'favorites';
 
 export let userLists = [];
 export let viewingListId = null;  // ID of list being viewed (or null)
@@ -325,6 +340,11 @@ const stateGetters = {
     showChordProSource: () => showChordProSource,
     fontSizeLevel: () => fontSizeLevel,
 
+    // Tablature
+    activePartTab: () => activePartTab,
+    loadedTablature: () => loadedTablature,
+    tablaturePlayer: () => tablaturePlayer,
+
     // ABC notation
     showAbcNotation: () => showAbcNotation,
     abcjsRendered: () => abcjsRendered,
@@ -384,6 +404,11 @@ const stateSetters = {
     showSectionLabels: setShowSectionLabels,
     showChordProSource: setShowChordProSource,
     fontSizeLevel: setFontSizeLevel,
+
+    // Tablature
+    activePartTab: setActivePartTab,
+    loadedTablature: setLoadedTablature,
+    tablaturePlayer: setTablaturePlayer,
 
     // ABC notation
     showAbcNotation: setShowAbcNotation,

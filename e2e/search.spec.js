@@ -123,7 +123,7 @@ test.describe('Search Result Interaction', () => {
         await page.locator('.result-list-btn').first().click();
 
         // List picker should appear (floating picker element)
-        await expect(page.locator('.result-list-picker')).toBeVisible();
+        await expect(page.locator('.list-picker-popup')).toBeVisible();
     });
 
     test('rapid search does not break click handlers (event delegation)', async ({ page }) => {

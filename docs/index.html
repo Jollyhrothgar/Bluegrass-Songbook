@@ -96,9 +96,13 @@
                     </div>
                 </div>
             </div>
-            <h1 class="site-logo">
-                <a href="#" id="logo-link"><img src="images/bluegrass_book_dark_logo.png" alt="Bluegrass Book"></a>
-            </h1>
+            <div class="logo-row">
+                <img src="images/under_construction_dark.png" alt="Under Construction" class="header-badge header-badge-left">
+                <h1 class="site-logo">
+                    <a href="#" id="logo-link"><img src="images/bluegrass_book_dark_logo.png" alt="Bluegrass Book"></a>
+                </h1>
+                <img src="images/report_bugs.png" alt="Report Bugs" class="header-badge header-badge-right">
+            </div>
             <p id="subtitle" class="subtitle">Loading songs...</p>
             <p id="visitor-stats" class="visitor-stats"></p>
         </header>
@@ -354,6 +358,10 @@ This is the [G]chorus [D]part
                                 <!-- Dynamic list checkboxes -->
                             </div>
                             <button id="create-list-btn" class="create-list-btn">+ New List</button>
+                            <div id="create-list-form" class="create-list-inline hidden">
+                                <input type="text" id="create-list-input" placeholder="List name" maxlength="50">
+                                <button id="create-list-confirm" class="create-list-confirm">Add</button>
+                            </div>
                         </div>
                     </div>
                     <button id="print-btn" class="icon-btn" title="Print">
