@@ -58,6 +58,8 @@ export class TabRenderer {
         this.rowData = [];           // Row layout info for cursor positioning
         this.numStrings = 5;
         this.ticksPerMeasure = 960;  // 2 beats * 480 ticks
+        this.ticksPerBeat = 480;     // For beat snapping
+        this._currentRowIndex = -1;  // Track current row for auto-scroll
 
         // Store render data for re-rendering on resize
         this._track = null;
@@ -146,7 +148,9 @@ export class TabRenderer {
         this.noteElements = [];
         this.beatCursors = [];
         this.rowData = [];
+        this.ticksPerBeat = ticksPerBeat;         // For beat snapping
         this.ticksPerMeasure = ticksPerBeat * 2;  // 2/2 time
+        this._currentRowIndex = -1;               // Reset row tracking
 
         if (!track || !notation || notation.length === 0) {
             this.container.innerHTML = '<p style="color:#888;text-align:center;">No notation for this track</p>';
@@ -667,14 +671,24 @@ export class TabRenderer {
     /**
      * Update beat cursor position
      * @param {number} absTick - Absolute tick position
+     * @param {Object} options - Options for cursor behavior
+     * @param {boolean} options.snapToBeats - Snap cursor to beat positions (default: true)
+     * @param {boolean} options.autoScroll - Auto-scroll to follow cursor (default: true)
      */
-    updateBeatCursor(absTick) {
+    updateBeatCursor(absTick, options = {}) {
+        const { snapToBeats = true, autoScroll = true } = options;
         const opt = this.options;
         const measureWidth = this._computedMeasureWidth;
 
+        // Snap to beat boundaries if enabled
+        let displayTick = absTick;
+        if (snapToBeats) {
+            displayTick = Math.floor(absTick / this.ticksPerBeat) * this.ticksPerBeat;
+        }
+
         // Calculate which measure and position within measure
-        const measure = Math.floor(absTick / this.ticksPerMeasure) + 1;
-        const tickInMeasure = absTick % this.ticksPerMeasure;
+        const measure = Math.floor(displayTick / this.ticksPerMeasure) + 1;
+        const tickInMeasure = displayTick % this.ticksPerMeasure;
 
         // Find which row this measure is on
         const rowData = this.rowData.find(r =>
@@ -701,6 +715,68 @@ export class TabRenderer {
                 cursor.style.display = 'none';
             }
         });
+
+        // Auto-scroll when row changes
+        if (autoScroll && rowData.rowIndex !== this._currentRowIndex) {
+            this._currentRowIndex = rowData.rowIndex;
+            this._scrollRowIntoView(rowData);
+        }
+    }
+
+    /**
+     * Scroll a row into view during playback
+     * @param {Object} rowData - Row data object containing svg reference
+     */
+    _scrollRowIntoView(rowData) {
+        if (!rowData.svg) return;
+
+        // Find the row's container element
+        const rowElement = rowData.svg.parentElement;
+        if (!rowElement) return;
+
+        // Find the scrollable ancestor (could be .song-view in fullscreen, or document otherwise)
+        const scrollContainer = this._findScrollableAncestor(rowElement);
+
+        if (scrollContainer) {
+            // Calculate position to center the row in the viewport
+            const rowRect = rowElement.getBoundingClientRect();
+            const containerRect = scrollContainer.getBoundingClientRect();
+            const rowTop = rowElement.offsetTop;
+            const containerHeight = scrollContainer.clientHeight;
+            const targetScroll = rowTop - (containerHeight / 2) + (rowRect.height / 2);
+
+            scrollContainer.scrollTo({
+                top: Math.max(0, targetScroll),
+                behavior: 'smooth'
+            });
+        } else {
+            // Fallback to scrollIntoView for document scrolling
+            rowElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+    }
+
+    /**
+     * Find the nearest scrollable ancestor element
+     * @param {Element} element - Starting element
+     * @returns {Element|null} - Scrollable ancestor or null
+     */
+    _findScrollableAncestor(element) {
+        let parent = element.parentElement;
+        while (parent) {
+            const style = getComputedStyle(parent);
+            const overflowY = style.overflowY;
+            if (overflowY === 'auto' || overflowY === 'scroll') {
+                // Check if it's actually scrollable (content taller than container)
+                if (parent.scrollHeight > parent.clientHeight) {
+                    return parent;
+                }
+            }
+            parent = parent.parentElement;
+        }
+        return null;
     }
 
     /**
@@ -718,6 +794,7 @@ export class TabRenderer {
     resetPlaybackVisualization() {
         this.clearAllHighlights();
         this.hideBeatCursor();
+        this._currentRowIndex = -1;  // Reset row tracking for auto-scroll
     }
 }
 

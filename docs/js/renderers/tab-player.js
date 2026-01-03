@@ -271,7 +271,23 @@ export class TabPlayer {
             notesByTrack[track.id] = trackNotes;
         }
 
-        // Calculate durations based on per-string sustain
+        // Collect all notes into a single sorted list
+        const allNotes = [];
+        for (const trackId in notesByTrack) {
+            allNotes.push(...notesByTrack[trackId]);
+        }
+        allNotes.sort((a, b) => a.time - b.time);
+
+        // Build a map of note index by time for quick lookup of "next musical event"
+        const noteTimeIndex = new Map();
+        allNotes.forEach((note, idx) => {
+            if (!noteTimeIndex.has(note.time)) {
+                noteTimeIndex.set(note.time, idx);
+            }
+        });
+        const sortedTimes = [...noteTimeIndex.keys()].sort((a, b) => a - b);
+
+        // Calculate durations based on rhythmic context AND per-string sustain
         const notes = [];
         for (const trackId in notesByTrack) {
             const trackNotes = notesByTrack[trackId];
@@ -288,15 +304,25 @@ export class TabPlayer {
 
                 for (let i = 0; i < stringNotes.length; i++) {
                     const note = stringNotes[i];
-                    let duration;
 
+                    // 1. Gap to next note on same string (string-based sustain)
+                    let stringGap = note.decay;
                     if (i + 1 < stringNotes.length) {
-                        const gap = stringNotes[i + 1].time - note.time;
-                        duration = gap * 0.95;
-                    } else {
-                        duration = note.decay;
+                        stringGap = stringNotes[i + 1].time - note.time;
                     }
 
+                    // 2. Gap to next musical event (any note) - rhythmic duration
+                    let rhythmicGap = note.decay;
+                    const timeIdx = sortedTimes.indexOf(note.time);
+                    if (timeIdx >= 0 && timeIdx + 1 < sortedTimes.length) {
+                        rhythmicGap = sortedTimes[timeIdx + 1] - note.time;
+                    }
+
+                    // Use the smaller of string gap and rhythmic gap
+                    // This ensures notes don't ring past their rhythmic slot
+                    let duration = Math.min(stringGap, rhythmicGap) * 0.95;
+
+                    // Cap at decay value and ensure minimum
                     duration = Math.min(duration, note.decay);
                     duration = Math.max(duration, 0.03);
                     duration *= note.sustain;
