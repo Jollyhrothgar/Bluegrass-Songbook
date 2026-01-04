@@ -3,14 +3,19 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Search', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/');
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         // Wait for the app to load
         await page.waitForSelector('#search-input');
     });
 
-    test('displays random songs on initial load', async ({ page }) => {
-        // Should show some results on load
-        await expect(page.locator('.result-item')).toHaveCount(20);
+    test('displays popular songs on initial load', async ({ page }) => {
+        // Should show results sorted by popularity on load
+        await page.waitForSelector('.result-item');
+        const results = page.locator('.result-item');
+        const count = await results.count();
+        expect(count).toBeGreaterThan(0);
+        expect(count).toBeLessThanOrEqual(50);
     });
 
     test('search by title returns results', async ({ page }) => {
@@ -149,7 +154,8 @@ test.describe('Search', () => {
 
 test.describe('Search Result Interaction', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/');
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
     });
 

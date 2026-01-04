@@ -18,6 +18,29 @@ from pathlib import Path
 
 import yaml
 
+# Canonical ranks cache (loaded once)
+_canonical_ranks = None
+
+def load_canonical_ranks():
+    """Load canonical ranking from cache file."""
+    global _canonical_ranks
+    if _canonical_ranks is None:
+        cache_file = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'canonical_ranks.json'
+        if cache_file.exists():
+            with open(cache_file) as f:
+                _canonical_ranks = json.load(f)
+            print(f"Loaded {len(_canonical_ranks)} canonical ranks")
+        else:
+            print(f"Warning: canonical_ranks.json not found at {cache_file}")
+            _canonical_ranks = {}
+    return _canonical_ranks
+
+def get_canonical_rank(title: str) -> int:
+    """Get canonical rank for a song title. Higher = more popular."""
+    ranks = load_canonical_ranks()
+    normalized = title.lower().strip()
+    return ranks.get(normalized, 0)
+
 # Import key detection and Nashville conversion from existing build_index
 from build_index import (
     detect_key,
@@ -209,6 +232,9 @@ def build_song_from_work(work_dir: Path) -> dict:
 
     # Add chord count
     song['chord_count'] = len(nashville_set)
+
+    # Add canonical rank (based on MusicBrainz recording counts)
+    song['canonical_rank'] = get_canonical_rank(work.get('title', ''))
 
     # Handle instrumentals
     if parsed['is_tune'] or (tablature_parts and not lyrics):

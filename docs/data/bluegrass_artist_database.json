@@ -1,0 +1,2762 @@
+{
+  "artists": {
+    "Buckethead": {
+      "mbid": "b5179744-f217-4455-9d8b-17b8d4fdeb93",
+      "name": "Buckethead",
+      "type": "Person",
+      "begin_year": 1969,
+      "end_year": null,
+      "recording_count": 4474,
+      "release_count": 856
+    },
+    "Bill Evans": {
+      "mbid": "8247a3f2-3a8e-4256-b322-6c57b03a4e36",
+      "name": "Bill Evans",
+      "type": "Person",
+      "begin_year": 1929,
+      "end_year": 1980,
+      "recording_count": 3400,
+      "release_count": 501
+    },
+    "Billy Strings": {
+      "mbid": "640db492-34c4-47df-be14-96e2cd4b9fe4",
+      "name": "Billy Strings",
+      "type": "Person",
+      "begin_year": 1992,
+      "end_year": null,
+      "recording_count": 1235,
+      "release_count": 90
+    },
+    "Bill Monroe": {
+      "mbid": "2a2be593-6984-4640-8cf1-717ec7a6e18b",
+      "name": "Bill Monroe",
+      "type": "Person",
+      "begin_year": 1911,
+      "end_year": 1996,
+      "recording_count": 987,
+      "release_count": 71
+    },
+    "Bill Clifton": {
+      "mbid": "1f4f5cdb-c89c-49b5-9dde-78e32f7ee4d1",
+      "name": "Bill Clifton",
+      "type": "Person",
+      "begin_year": 1931,
+      "end_year": null,
+      "recording_count": 456,
+      "release_count": 18
+    },
+    "Alison Krauss & Union Station": {
+      "mbid": "b91c664b-5eee-4536-8b70-b1f2be519ac0",
+      "name": "Alison Krauss & Union Station",
+      "type": "Group",
+      "begin_year": 1987,
+      "end_year": null,
+      "recording_count": 432,
+      "release_count": 51
+    },
+    "Alison Krauss": {
+      "mbid": "6b064ead-91a4-4ac8-8076-b1febe4f4aac",
+      "name": "Alison Krauss",
+      "type": "Person",
+      "begin_year": 1971,
+      "end_year": null,
+      "recording_count": 354,
+      "release_count": 67
+    },
+    "Andy Statman": {
+      "mbid": "5a3586cd-87a7-41b2-ad60-7d83d6363afd",
+      "name": "Andy Statman",
+      "type": "Person",
+      "begin_year": 1950,
+      "end_year": null,
+      "recording_count": 297,
+      "release_count": 30
+    },
+    "Andy Griffith": {
+      "mbid": "771bd654-80dd-44a0-bb77-5e09947c9082",
+      "name": "Andy Griffith",
+      "type": "Person",
+      "begin_year": 1926,
+      "end_year": 2012,
+      "recording_count": 271,
+      "release_count": 24
+    },
+    "Blackberry Smoke": {
+      "mbid": "1576a26e-f77d-47ac-87f2-4f610c141ac6",
+      "name": "Blackberry Smoke",
+      "type": "Group",
+      "begin_year": 2000,
+      "end_year": null,
+      "recording_count": 266,
+      "release_count": 46
+    },
+    "Bill Emerson": {
+      "mbid": "14f95cd1-08f3-41e5-8b3b-c45727ae0390",
+      "name": "Bill Emerson",
+      "type": "Person",
+      "begin_year": 1938,
+      "end_year": 2021,
+      "recording_count": 243,
+      "release_count": 19
+    },
+    "Butch Baldassari": {
+      "mbid": "0f11b35e-dc57-49e3-9075-7a4af2a04797",
+      "name": "Butch Baldassari",
+      "type": "Person",
+      "begin_year": 1952,
+      "end_year": 2009,
+      "recording_count": 239,
+      "release_count": 12
+    },
+    "Benny Martin": {
+      "mbid": "be09d574-2683-4415-bc5d-deba285a2920",
+      "name": "Benny Martin",
+      "type": "Person",
+      "begin_year": 1928,
+      "end_year": 2001,
+      "recording_count": 212,
+      "release_count": 4
+    },
+    "Blue Highway": {
+      "mbid": "559217a5-169c-41bf-a3dc-d8e7e4afef31",
+      "name": "Blue Highway",
+      "type": "Group",
+      "begin_year": 1995,
+      "end_year": null,
+      "recording_count": 197,
+      "release_count": 22
+    },
+    "Bryan Sutton": {
+      "mbid": "584f1bd9-01eb-4f7e-8695-2fa72bb7bf27",
+      "name": "Bryan Sutton",
+      "type": "Person",
+      "begin_year": 1973,
+      "end_year": null,
+      "recording_count": 189,
+      "release_count": 9
+    },
+    "Alison Brown": {
+      "mbid": "8cc6e698-a567-4429-924d-8e05362d56db",
+      "name": "Alison Brown",
+      "type": "Person",
+      "begin_year": 1962,
+      "end_year": null,
+      "recording_count": 179,
+      "release_count": 32
+    },
+    "Bob Paisley and the Southern Grass": {
+      "mbid": "b9d3ef1a-576d-4873-a884-ff4e6e243288",
+      "name": "Bob Paisley and the Southern Grass",
+      "type": "Group",
+      "begin_year": 1974,
+      "end_year": null,
+      "recording_count": 160,
+      "release_count": 12
+    },
+    "Acoustic Syndicate": {
+      "mbid": "b9866546-7ccf-480a-a27f-9846a8f47fff",
+      "name": "Acoustic Syndicate",
+      "type": "Group",
+      "begin_year": 1992,
+      "end_year": null,
+      "recording_count": 150,
+      "release_count": 12
+    },
+    "Bluegrass Brothers": {
+      "mbid": "03f119d9-ae0b-4f24-8267-c910fb8c3b81",
+      "name": "Bluegrass Brothers",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 145,
+      "release_count": 11
+    },
+    "Balsam Range": {
+      "mbid": "11ba43ec-d099-485e-b736-9dab7a7af6be",
+      "name": "Balsam Range",
+      "type": "Group",
+      "begin_year": 2007,
+      "end_year": null,
+      "recording_count": 117,
+      "release_count": 13
+    },
+    "Aubrey Haynie": {
+      "mbid": "8e7a70e1-ce5c-4e20-9fd7-79e5851f9306",
+      "name": "Aubrey Haynie",
+      "type": "Person",
+      "begin_year": 1974,
+      "end_year": null,
+      "recording_count": 114,
+      "release_count": 7
+    },
+    "Becky Buller": {
+      "mbid": "4245d632-5739-4f3e-8c16-7bb6eec4a8c6",
+      "name": "Becky Buller",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 109,
+      "release_count": 8
+    },
+    "Bobby Hicks": {
+      "mbid": "13f0d346-d132-49f5-aa4c-5fa098925b29",
+      "name": "Bobby Hicks",
+      "type": "Person",
+      "begin_year": 1933,
+      "end_year": 2024,
+      "recording_count": 94,
+      "release_count": 6
+    },
+    "Alan Munde": {
+      "mbid": "712659b8-4665-4eff-94f3-6a0b20e16c0d",
+      "name": "Alan Munde",
+      "type": "Person",
+      "begin_year": 1946,
+      "end_year": null,
+      "recording_count": 90,
+      "release_count": 5
+    },
+    "Andy Leftwich": {
+      "mbid": "a243a2d9-2ea0-4f0b-99d6-f2fab902d0e3",
+      "name": "Andy Leftwich",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 79,
+      "release_count": 8
+    },
+    "Bradley Walker": {
+      "mbid": "1ba9beca-2d71-409d-90a9-6ec1b3eb17e1",
+      "name": "Bradley Walker",
+      "type": "Person",
+      "begin_year": 1978,
+      "end_year": null,
+      "recording_count": 78,
+      "release_count": 5
+    },
+    "Bearfoot": {
+      "mbid": "25291f78-d42c-4d73-ba59-98135c3860f9",
+      "name": "Bearfoot",
+      "type": "Group",
+      "begin_year": 1999,
+      "end_year": null,
+      "recording_count": 59,
+      "release_count": 5
+    },
+    "Alecia Nugent": {
+      "mbid": "2f31d1fc-c853-4a42-a3da-5b36859b0c3f",
+      "name": "Alecia Nugent",
+      "type": "Person",
+      "begin_year": 1972,
+      "end_year": null,
+      "recording_count": 57,
+      "release_count": 5
+    },
+    "Bernie Leadon": {
+      "mbid": "839464fe-cd82-4aea-b866-cc2d29e31bb3",
+      "name": "Bernie Leadon",
+      "type": "Person",
+      "begin_year": 1947,
+      "end_year": null,
+      "recording_count": 55,
+      "release_count": 5
+    },
+    "Authentic Unlimited": {
+      "mbid": "aaea8182-e49e-4c15-a380-21f92b4b7c75",
+      "name": "Authentic Unlimited",
+      "type": "Group",
+      "begin_year": 2021,
+      "end_year": null,
+      "recording_count": 45,
+      "release_count": 5
+    },
+    "Ann Marie Calhoun": {
+      "mbid": "9874e261-76b4-45b9-a92a-4a4330470fe0",
+      "name": "Ann Marie Calhoun",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 34,
+      "release_count": 0
+    },
+    "Blind Corn Liquor Pickers": {
+      "mbid": "357baeb3-5572-41de-b599-aac041114121",
+      "name": "Blind Corn Liquor Pickers",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 24,
+      "release_count": 2
+    },
+    "Alwyn Robinson": {
+      "mbid": "4b5e6ac5-c70b-471a-adcc-e873994ead9e",
+      "name": "Alwyn Robinson",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 20,
+      "release_count": 4
+    },
+    "Benny Williams": {
+      "mbid": "f85dc22f-6b82-48e5-8d43-0922208828b9",
+      "name": "Benny Williams",
+      "type": "Person",
+      "begin_year": 1931,
+      "end_year": 2007,
+      "recording_count": 12,
+      "release_count": 1
+    },
+    "Al Tharp": {
+      "mbid": "65d77580-717c-4826-8e53-2faea29df95d",
+      "name": "Al Tharp",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 1,
+      "release_count": 0
+    },
+    "Bessie Lee Mauldin": {
+      "mbid": "e5c55ac0-b280-4d83-9ed3-62dceecb64fa",
+      "name": "Bessie Lee Mauldin",
+      "type": "Person",
+      "begin_year": 1920,
+      "end_year": 1983,
+      "recording_count": 0,
+      "release_count": 0
+    },
+    "Bob Amos": {
+      "mbid": "f842fe5a-fdbf-441f-98df-1feff8018830",
+      "name": "Bob Amos",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 0,
+      "release_count": 0
+    },
+    "David Grisman": {
+      "mbid": "402e4f4f-33aa-4b2b-9fdb-3cb4eb38f729",
+      "name": "David Grisman",
+      "type": "Person",
+      "begin_year": 1945,
+      "end_year": null,
+      "recording_count": 1320,
+      "release_count": 131
+    },
+    "Chris Jones": {
+      "mbid": "1d6b9fad-256d-4081-85f4-539abf1dfa76",
+      "name": "Chris Jones",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 746,
+      "release_count": 1
+    },
+    "B\u00e9la Fleck": {
+      "mbid": "e1a889b7-5e45-447f-baa0-b9c6cbc0d39f",
+      "name": "B\u00e9la Fleck",
+      "type": "Person",
+      "begin_year": 1958,
+      "end_year": null,
+      "recording_count": 693,
+      "release_count": 95
+    },
+    "Charlie Louvin": {
+      "mbid": "a174a588-cda4-49cc-8d53-e05e3a42ab4f",
+      "name": "Charlie Louvin",
+      "type": "Person",
+      "begin_year": 1927,
+      "end_year": 2011,
+      "recording_count": 430,
+      "release_count": 40
+    },
+    "Darren Hayman": {
+      "mbid": "258787d8-07e4-4ad8-9c5a-89b3908796b0",
+      "name": "Darren Hayman",
+      "type": "Person",
+      "begin_year": 1970,
+      "end_year": null,
+      "recording_count": 407,
+      "release_count": 35
+    },
+    "Charlie Daniels": {
+      "mbid": "80d9e8d6-839d-4ac7-8216-09b58f58b8b2",
+      "name": "Charlie Daniels",
+      "type": "Person",
+      "begin_year": 1936,
+      "end_year": 2020,
+      "recording_count": 359,
+      "release_count": 36
+    },
+    "Del McCoury": {
+      "mbid": "e61892d0-4ad2-474a-a5fa-479dc28075ed",
+      "name": "Del McCoury",
+      "type": "Person",
+      "begin_year": 1939,
+      "end_year": null,
+      "recording_count": 350,
+      "release_count": 31
+    },
+    "Chris Thile": {
+      "mbid": "ca452a01-b9db-461d-8e62-23d68747f6ab",
+      "name": "Chris Thile",
+      "type": "Person",
+      "begin_year": 1981,
+      "end_year": null,
+      "recording_count": 313,
+      "release_count": 45
+    },
+    "Clarence White": {
+      "mbid": "88970b96-d093-4ab8-b194-c91479b4387e",
+      "name": "Clarence White",
+      "type": "Person",
+      "begin_year": 1944,
+      "end_year": 1973,
+      "recording_count": 268,
+      "release_count": 15
+    },
+    "David Bromberg": {
+      "mbid": "00daff08-6cd1-4f91-b1ec-2f8ce8603442",
+      "name": "David Bromberg",
+      "type": "Person",
+      "begin_year": 1945,
+      "end_year": null,
+      "recording_count": 266,
+      "release_count": 27
+    },
+    "Chris Hillman": {
+      "mbid": "068e411c-fa59-49b6-b3cb-6cd090812dcc",
+      "name": "Chris Hillman",
+      "type": "Person",
+      "begin_year": 1944,
+      "end_year": null,
+      "recording_count": 263,
+      "release_count": 26
+    },
+    "Chatham County Line": {
+      "mbid": "23f20841-f311-4b92-9ff9-65d1b25340dd",
+      "name": "Chatham County Line",
+      "type": "Group",
+      "begin_year": 1999,
+      "end_year": null,
+      "recording_count": 249,
+      "release_count": 30
+    },
+    "Darol Anger": {
+      "mbid": "3bbd5ed8-8a84-41e7-91cf-945162aa7cdb",
+      "name": "Darol Anger",
+      "type": "Person",
+      "begin_year": 1953,
+      "end_year": null,
+      "recording_count": 242,
+      "release_count": 20
+    },
+    "David Rawlings": {
+      "mbid": "3019ab78-2968-4141-9eab-521e16b877dd",
+      "name": "David Rawlings",
+      "type": "Person",
+      "begin_year": 1969,
+      "end_year": null,
+      "recording_count": 212,
+      "release_count": 18
+    },
+    "Dan Crary": {
+      "mbid": "f23a6a02-0ae8-408a-8ecf-61a90f8d49a0",
+      "name": "Dan Crary",
+      "type": "Person",
+      "begin_year": 1939,
+      "end_year": null,
+      "recording_count": 199,
+      "release_count": 19
+    },
+    "Byron Berline": {
+      "mbid": "fbfa4155-8e0b-4f76-9254-1692ecbdbef1",
+      "name": "Byron Berline",
+      "type": "Person",
+      "begin_year": 1944,
+      "end_year": 2021,
+      "recording_count": 184,
+      "release_count": 16
+    },
+    "Dale Ann Bradley": {
+      "mbid": "92359d0e-c336-4dd4-a859-7f0fc4056897",
+      "name": "Dale Ann Bradley",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 183,
+      "release_count": 20
+    },
+    "Claire Lynch": {
+      "mbid": "cc265f9f-a592-4fe0-a8d6-2bc01661a29e",
+      "name": "Claire Lynch",
+      "type": "Person",
+      "begin_year": 1954,
+      "end_year": null,
+      "recording_count": 167,
+      "release_count": 19
+    },
+    "David Grier": {
+      "mbid": "94ca40fa-ba09-4b4d-a367-66fb4c1f5936",
+      "name": "David Grier",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 163,
+      "release_count": 11
+    },
+    "Chris Stapleton": {
+      "mbid": "71d58182-aa37-4c04-b21a-efe46ea0f221",
+      "name": "Chris Stapleton",
+      "type": "Person",
+      "begin_year": 1978,
+      "end_year": null,
+      "recording_count": 150,
+      "release_count": 71
+    },
+    "Charlie Monroe": {
+      "mbid": "4c508f0c-2114-4b34-937d-a67c14121b53",
+      "name": "Charlie Monroe",
+      "type": "Person",
+      "begin_year": 1903,
+      "end_year": 1975,
+      "recording_count": 148,
+      "release_count": 3
+    },
+    "Crooked Still": {
+      "mbid": "4c3ebc7c-020e-4d9d-a5df-264c72025ee2",
+      "name": "Crooked Still",
+      "type": "Group",
+      "begin_year": 2001,
+      "end_year": null,
+      "recording_count": 147,
+      "release_count": 17
+    },
+    "Dan Tyminski": {
+      "mbid": "8bc3f026-e781-43d7-98ca-8dae8d89b25a",
+      "name": "Dan Tyminski",
+      "type": "Person",
+      "begin_year": 1967,
+      "end_year": null,
+      "recording_count": 143,
+      "release_count": 17
+    },
+    "Buzz Busby": {
+      "mbid": "ff43fa96-64d0-413e-bc00-ea7b34de9b9e",
+      "name": "Buzz Busby",
+      "type": "Person",
+      "begin_year": 1933,
+      "end_year": 2003,
+      "recording_count": 133,
+      "release_count": 9
+    },
+    "Dailey & Vincent": {
+      "mbid": "20d3a337-b9f5-47d8-ab8d-74dc4b15ba3a",
+      "name": "Dailey & Vincent",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 120,
+      "release_count": 13
+    },
+    "Chubby Wise": {
+      "mbid": "75a7b841-ded8-46e0-bdbf-003c41f40e21",
+      "name": "Chubby Wise",
+      "type": "Person",
+      "begin_year": 1915,
+      "end_year": 1996,
+      "recording_count": 116,
+      "release_count": 9
+    },
+    "Charlie Waller": {
+      "mbid": "b133ce40-d29c-4dc2-8aa1-1fb3d3354495",
+      "name": "Charlie Waller",
+      "type": "Person",
+      "begin_year": 1935,
+      "end_year": 2004,
+      "recording_count": 102,
+      "release_count": 19
+    },
+    "Cherryholmes": {
+      "mbid": "605a5811-fa52-4ffb-ada2-c5d3dbfe3752",
+      "name": "Cherryholmes",
+      "type": "Group",
+      "begin_year": 1999,
+      "end_year": 2011,
+      "recording_count": 97,
+      "release_count": 7
+    },
+    "Cadillac Sky": {
+      "mbid": "660141e8-317c-4b90-a149-dbb15ed8cbe5",
+      "name": "Cadillac Sky",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 80,
+      "release_count": 7
+    },
+    "Danny Knicely": {
+      "mbid": "9244349a-620c-40ef-8d7c-ddd170c27ea8",
+      "name": "Danny Knicely",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 80,
+      "release_count": 6
+    },
+    "Della Mae": {
+      "mbid": "94d457a5-b86b-49bd-90f1-c2e601f6da52",
+      "name": "Della Mae",
+      "type": "Group",
+      "begin_year": 2009,
+      "end_year": null,
+      "recording_count": 67,
+      "release_count": 13
+    },
+    "Clinton Gregory": {
+      "mbid": "edfc8e52-32ba-4186-b198-cea511e5b48f",
+      "name": "Clinton Gregory",
+      "type": "Person",
+      "begin_year": 1964,
+      "end_year": null,
+      "recording_count": 66,
+      "release_count": 6
+    },
+    "Chesapeake": {
+      "mbid": "b9b544f3-404f-4055-ab77-00226a88870d",
+      "name": "Chesapeake",
+      "type": "Group",
+      "begin_year": 1994,
+      "end_year": 1999,
+      "recording_count": 61,
+      "release_count": 4
+    },
+    "Casey Driessen": {
+      "mbid": "18515d94-ffaa-47ba-9384-015bb4c89204",
+      "name": "Casey Driessen",
+      "type": "Person",
+      "begin_year": 1978,
+      "end_year": null,
+      "recording_count": 61,
+      "release_count": 5
+    },
+    "Charles River Valley Boys": {
+      "mbid": "379979bd-01e5-4434-a8e8-3775c4e17c49",
+      "name": "Charles River Valley Boys",
+      "type": "Group",
+      "begin_year": 1959,
+      "end_year": 1968,
+      "recording_count": 49,
+      "release_count": 3
+    },
+    "Chris Eldridge": {
+      "mbid": "0047516d-8583-47d5-bfdd-e39a6c348492",
+      "name": "Chris Eldridge",
+      "type": "Person",
+      "begin_year": 1982,
+      "end_year": null,
+      "recording_count": 47,
+      "release_count": 3
+    },
+    "Carroll Best": {
+      "mbid": "3ca569f8-7a26-490a-84aa-84b59ee7e526",
+      "name": "Carroll Best",
+      "type": null,
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 40,
+      "release_count": 1
+    },
+    "Danny Burns": {
+      "mbid": "2c953499-d0b4-4dd2-a290-cf6323833822",
+      "name": "Danny Burns",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 29,
+      "release_count": 5
+    },
+    "Danny Paisley": {
+      "mbid": "363357bd-dbfb-43ee-8302-01afc40321c5",
+      "name": "Danny Paisley",
+      "type": "Person",
+      "begin_year": 1959,
+      "end_year": null,
+      "recording_count": 27,
+      "release_count": 1
+    },
+    "Charlie Cline": {
+      "mbid": "d88ccd34-3ffc-4b83-ac95-eb95232430e1",
+      "name": "Charlie Cline",
+      "type": "Person",
+      "begin_year": 1931,
+      "end_year": 2004,
+      "recording_count": 26,
+      "release_count": 2
+    },
+    "Davisson Brothers Band": {
+      "mbid": "30b0219f-b766-4b22-9e0a-3a14aff283d4",
+      "name": "Davisson Brothers Band",
+      "type": "Group",
+      "begin_year": 2006,
+      "end_year": null,
+      "recording_count": 17,
+      "release_count": 1
+    },
+    "Crow and the Canyon": {
+      "mbid": "3553e5cb-2a6c-4e11-9611-833a09ef7459",
+      "name": "Crow and the Canyon",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 10,
+      "release_count": 1
+    },
+    "Carter Stanley": {
+      "mbid": "3e923c4f-ef0c-4295-ab9e-9f028c28ae47",
+      "name": "Carter Stanley",
+      "type": "Person",
+      "begin_year": 1925,
+      "end_year": 1966,
+      "recording_count": 4,
+      "release_count": 0
+    },
+    "Dean Webb": {
+      "mbid": "9794a40f-3c07-4ee8-9229-f34d4bfe1a73",
+      "name": "Dean Webb",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 4,
+      "release_count": 0
+    },
+    "Dennis Fetchet": {
+      "mbid": "fbd09dfa-e84c-41be-bc10-5c9da84f3d1e",
+      "name": "Dennis Fetchet",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 0,
+      "release_count": 0
+    },
+    "Dolly Parton": {
+      "mbid": "1d543e07-d0d2-4834-a8db-d65c50c2a856",
+      "name": "Dolly Parton",
+      "type": "Person",
+      "begin_year": 1946,
+      "end_year": null,
+      "recording_count": 2461,
+      "release_count": 821
+    },
+    "Doc Watson": {
+      "mbid": "8aa38215-217d-432e-aca6-f2d85b05e843",
+      "name": "Doc Watson",
+      "type": "Person",
+      "begin_year": 1923,
+      "end_year": 2012,
+      "recording_count": 1568,
+      "release_count": 123
+    },
+    "Doyle Lawson & Quicksilver": {
+      "mbid": "3a57aa9e-2e4a-4dde-a8dd-f7fcb1b29dba",
+      "name": "Doyle Lawson & Quicksilver",
+      "type": "Group",
+      "begin_year": 1979,
+      "end_year": null,
+      "recording_count": 677,
+      "release_count": 60
+    },
+    "Don Reno": {
+      "mbid": "62e54311-97d1-4606-9be1-ee2e546162ae",
+      "name": "Don Reno",
+      "type": "Person",
+      "begin_year": 1927,
+      "end_year": 1984,
+      "recording_count": 619,
+      "release_count": 42
+    },
+    "Gillian Welch": {
+      "mbid": "2ff49515-1701-4bac-a53a-04345893f3f3",
+      "name": "Gillian Welch",
+      "type": "Person",
+      "begin_year": 1967,
+      "end_year": null,
+      "recording_count": 566,
+      "release_count": 69
+    },
+    "Edgar Meyer": {
+      "mbid": "901caa09-383e-4dbc-95f2-a75ec7863b6a",
+      "name": "Edgar Meyer",
+      "type": "Person",
+      "begin_year": 1960,
+      "end_year": null,
+      "recording_count": 440,
+      "release_count": 66
+    },
+    "Greensky Bluegrass": {
+      "mbid": "199596a3-a1af-49f8-8795-259eff8461fb",
+      "name": "Greensky Bluegrass",
+      "type": "Group",
+      "begin_year": 2000,
+      "end_year": null,
+      "recording_count": 390,
+      "release_count": 44
+    },
+    "Hayseed Dixie": {
+      "mbid": "fea8db99-8c38-4ee3-bd20-36fb5e3a0839",
+      "name": "Hayseed Dixie",
+      "type": "Group",
+      "begin_year": 2000,
+      "end_year": null,
+      "recording_count": 359,
+      "release_count": 35
+    },
+    "Earl Scruggs": {
+      "mbid": "71fcf554-e192-49d0-8cae-060ac46b1083",
+      "name": "Earl Scruggs",
+      "type": "Person",
+      "begin_year": 1924,
+      "end_year": 2012,
+      "recording_count": 287,
+      "release_count": 26
+    },
+    "Iron Horse": {
+      "mbid": "30850b74-ee4d-4cd3-a920-40c72ddb2f20",
+      "name": "Iron Horse",
+      "type": "Group",
+      "begin_year": 2000,
+      "end_year": null,
+      "recording_count": 259,
+      "release_count": 22
+    },
+    "IIIrd Tyme Out": {
+      "mbid": "d4e0e4b2-4d84-498f-9f24-ef624b095602",
+      "name": "IIIrd Tyme Out",
+      "type": "Group",
+      "begin_year": 1991,
+      "end_year": null,
+      "recording_count": 258,
+      "release_count": 19
+    },
+    "Dry Branch Fire Squad": {
+      "mbid": "f02b360d-3681-4afa-9cb9-35dcf30c3683",
+      "name": "Dry Branch Fire Squad",
+      "type": "Group",
+      "begin_year": 1976,
+      "end_year": null,
+      "recording_count": 257,
+      "release_count": 17
+    },
+    "Hazel Dickens": {
+      "mbid": "4836e76c-5537-4122-8836-e543a75e7a59",
+      "name": "Hazel Dickens",
+      "type": "Person",
+      "begin_year": 1925,
+      "end_year": 2011,
+      "recording_count": 256,
+      "release_count": 21
+    },
+    "Hot Buttered Rum": {
+      "mbid": "2c64df55-32ed-4505-b74a-5ba178be7ee7",
+      "name": "Hot Buttered Rum",
+      "type": "Group",
+      "begin_year": 2002,
+      "end_year": null,
+      "recording_count": 243,
+      "release_count": 26
+    },
+    "Eddie Adcock": {
+      "mbid": "8bbf05e4-68c9-412c-b940-b373b87ddb19",
+      "name": "Eddie Adcock",
+      "type": "Person",
+      "begin_year": 1938,
+      "end_year": 2025,
+      "recording_count": 177,
+      "release_count": 14
+    },
+    "Donna Ulisse": {
+      "mbid": "1cab3efa-3f04-4d2a-b8db-08d745ec7150",
+      "name": "Donna Ulisse",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 165,
+      "release_count": 14
+    },
+    "Hot Rize": {
+      "mbid": "ce76c736-07db-4503-b771-0ee2c981a144",
+      "name": "Hot Rize",
+      "type": "Group",
+      "begin_year": 1978,
+      "end_year": null,
+      "recording_count": 161,
+      "release_count": 25
+    },
+    "Edie Brickell": {
+      "mbid": "070473e5-b214-4d6f-a7ca-bc7b84c94fca",
+      "name": "Edie Brickell",
+      "type": "Person",
+      "begin_year": 1966,
+      "end_year": null,
+      "recording_count": 153,
+      "release_count": 33
+    },
+    "Henhouse Prowlers": {
+      "mbid": "e94c4638-a3ad-4395-887e-fda5628a0d91",
+      "name": "Henhouse Prowlers",
+      "type": "Group",
+      "begin_year": 2004,
+      "end_year": null,
+      "recording_count": 119,
+      "release_count": 8
+    },
+    "Doyle Lawson": {
+      "mbid": "96c728b1-9901-467f-90c0-95c56f876a00",
+      "name": "Doyle Lawson",
+      "type": "Person",
+      "begin_year": 1944,
+      "end_year": null,
+      "recording_count": 95,
+      "release_count": 8
+    },
+    "Front Range": {
+      "mbid": "b35b5fb5-c1d1-4684-a53b-295a81a59adc",
+      "name": "Front Range",
+      "type": "Group",
+      "begin_year": 1990,
+      "end_year": 2005,
+      "recording_count": 90,
+      "release_count": 12
+    },
+    "Eric Weissberg": {
+      "mbid": "d757ffe9-0c22-4a28-9c62-3975b4f44b02",
+      "name": "Eric Weissberg",
+      "type": "Person",
+      "begin_year": 1939,
+      "end_year": 2020,
+      "recording_count": 68,
+      "release_count": 8
+    },
+    "Grass It Up": {
+      "mbid": "aa0f39e0-ab45-4ca3-aa41-8121d92e3e37",
+      "name": "Grass It Up",
+      "type": "Group",
+      "begin_year": 2004,
+      "end_year": null,
+      "recording_count": 64,
+      "release_count": 5
+    },
+    "Front Porch String Band": {
+      "mbid": "b442905d-e133-4a92-9d25-d6498e9c2b7a",
+      "name": "Front Porch String Band",
+      "type": "Group",
+      "begin_year": 1974,
+      "end_year": null,
+      "recording_count": 63,
+      "release_count": 7
+    },
+    "Ernie Thacker": {
+      "mbid": "373fa5ad-ce31-4d3d-ab0c-d0f3d57af913",
+      "name": "Ernie Thacker",
+      "type": "Person",
+      "begin_year": 1971,
+      "end_year": 2018,
+      "recording_count": 58,
+      "release_count": 6
+    },
+    "Irene Kelley": {
+      "mbid": "7bce1ddd-6441-414c-8b9b-2c72cc5cb020",
+      "name": "Irene Kelley",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 57,
+      "release_count": 7
+    },
+    "Ila Auto": {
+      "mbid": "a1a23fd8-d354-47d1-89eb-c56cd05554c4",
+      "name": "Ila Auto",
+      "type": "Group",
+      "begin_year": 2005,
+      "end_year": null,
+      "recording_count": 44,
+      "release_count": 5
+    },
+    "East Nash Grass": {
+      "mbid": "c9217d94-2bfb-45d7-8afa-ef3d31689472",
+      "name": "East Nash Grass",
+      "type": "Group",
+      "begin_year": 2017,
+      "end_year": null,
+      "recording_count": 35,
+      "release_count": 8
+    },
+    "Hayde Bluegrass Orchestra": {
+      "mbid": "555be9c2-74d8-4a71-96c1-ee2b954080b5",
+      "name": "Hayde Bluegrass Orchestra",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 32,
+      "release_count": 4
+    },
+    "Doug Dillard": {
+      "mbid": "4d0b6d7c-83dd-44bf-a8ca-61d4ab5a6dfe",
+      "name": "Doug Dillard",
+      "type": "Person",
+      "begin_year": 1937,
+      "end_year": 2012,
+      "recording_count": 31,
+      "release_count": 8
+    },
+    "Eddie Sanders": {
+      "mbid": "5bf50095-9ec0-4f31-9143-29e973c57c6e",
+      "name": "Eddie Sanders",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 24,
+      "release_count": 2
+    },
+    "East Coast Bluegrass Band": {
+      "mbid": "62c77932-2e37-4a64-a59b-f70625855a8c",
+      "name": "East Coast Bluegrass Band",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 24,
+      "release_count": 2
+    },
+    "Grain Thief": {
+      "mbid": "ef84dcbe-9a2d-458d-a20f-a64d29479b8e",
+      "name": "Grain Thief",
+      "type": null,
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 23,
+      "release_count": 3
+    },
+    "Gene Wooten": {
+      "mbid": "cc1250ee-635c-4035-978f-f771f23facc8",
+      "name": "Gene Wooten",
+      "type": "Person",
+      "begin_year": 1953,
+      "end_year": 2001,
+      "recording_count": 23,
+      "release_count": 1
+    },
+    "Eddie Stubbs": {
+      "mbid": "0c1132ec-2b62-4f98-9eb3-f294eba4ced2",
+      "name": "Eddie Stubbs",
+      "type": "Person",
+      "begin_year": 1961,
+      "end_year": null,
+      "recording_count": 22,
+      "release_count": 0
+    },
+    "Gordon Terry": {
+      "mbid": "a3516f1e-4931-4288-9529-41cc2483a8f9",
+      "name": "Gordon Terry",
+      "type": "Person",
+      "begin_year": 1931,
+      "end_year": 2006,
+      "recording_count": 14,
+      "release_count": 1
+    },
+    "Graham Sharp": {
+      "mbid": "edcfbd8f-e1a0-4177-887a-dbc6b01f6b90",
+      "name": "Graham Sharp",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 12,
+      "release_count": 1
+    },
+    "Grace & Tony": {
+      "mbid": "5fdebc2f-b839-4a9c-981c-0894a4dfae68",
+      "name": "Grace & Tony",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 8,
+      "release_count": 1
+    },
+    "Jerry Garcia": {
+      "mbid": "1ecff755-607d-4130-9a8a-8873f27e5de5",
+      "name": "Jerry Garcia",
+      "type": "Person",
+      "begin_year": 1942,
+      "end_year": 1995,
+      "recording_count": 1312,
+      "release_count": 134
+    },
+    "John Hartford": {
+      "mbid": "3178cc4c-cd9f-4842-96fb-28bf9cfec591",
+      "name": "John Hartford",
+      "type": "Person",
+      "begin_year": 1937,
+      "end_year": 2001,
+      "recording_count": 994,
+      "release_count": 104
+    },
+    "Leftover Salmon": {
+      "mbid": "3020be1d-3c41-4e42-911b-ca5e96489300",
+      "name": "Leftover Salmon",
+      "type": "Group",
+      "begin_year": 1989,
+      "end_year": null,
+      "recording_count": 575,
+      "release_count": 39
+    },
+    "Lester Flatt": {
+      "mbid": "a9468a9a-b5ea-43b8-85c7-d86542bd2537",
+      "name": "Lester Flatt",
+      "type": "Person",
+      "begin_year": 1914,
+      "end_year": 1979,
+      "recording_count": 564,
+      "release_count": 27
+    },
+    "Jim Lauderdale": {
+      "mbid": "563c84bf-b1e4-423e-b871-a46c68998d10",
+      "name": "Jim Lauderdale",
+      "type": "Person",
+      "begin_year": 1957,
+      "end_year": null,
+      "recording_count": 556,
+      "release_count": 60
+    },
+    "Jerry Douglas": {
+      "mbid": "f94a59be-8e2f-456b-9ccb-e742048c6654",
+      "name": "Jerry Douglas",
+      "type": "Person",
+      "begin_year": 1956,
+      "end_year": null,
+      "recording_count": 431,
+      "release_count": 45
+    },
+    "Josh Graves": {
+      "mbid": "0eb03552-e8aa-4004-8fde-f1463f3edc2b",
+      "name": "Josh Graves",
+      "type": "Person",
+      "begin_year": 1927,
+      "end_year": 2006,
+      "recording_count": 406,
+      "release_count": 32
+    },
+    "Jimmy Martin": {
+      "mbid": "ee850327-b528-4922-93e8-0c59a21ef50e",
+      "name": "Jimmy Martin",
+      "type": "Person",
+      "begin_year": 1927,
+      "end_year": 2005,
+      "recording_count": 359,
+      "release_count": 27
+    },
+    "Kenny Baker": {
+      "mbid": "599bf9a3-7438-49b5-9b11-d4b70bbba9de",
+      "name": "Kenny Baker",
+      "type": "Person",
+      "begin_year": 1921,
+      "end_year": 1999,
+      "recording_count": 311,
+      "release_count": 17
+    },
+    "Laurie Lewis": {
+      "mbid": "4f719a57-2f15-428b-ae7c-d62f72a21467",
+      "name": "Laurie Lewis",
+      "type": "Person",
+      "begin_year": 1950,
+      "end_year": null,
+      "recording_count": 286,
+      "release_count": 26
+    },
+    "Keith Whitley": {
+      "mbid": "dc3a714b-1886-43f9-87c1-45740a02e4dd",
+      "name": "Keith Whitley",
+      "type": "Person",
+      "begin_year": 1955,
+      "end_year": 1989,
+      "recording_count": 264,
+      "release_count": 44
+    },
+    "J. P. Cormier": {
+      "mbid": "caa158fe-c218-45bc-825d-a6cf0d37e445",
+      "name": "J. P. Cormier",
+      "type": "Person",
+      "begin_year": 1969,
+      "end_year": null,
+      "recording_count": 262,
+      "release_count": 28
+    },
+    "James King": {
+      "mbid": "a09182a2-fa3f-42ce-bf44-75f8c77506a2",
+      "name": "James King",
+      "type": "Person",
+      "begin_year": 1925,
+      "end_year": 2005,
+      "recording_count": 194,
+      "release_count": 37
+    },
+    "Josh Turner": {
+      "mbid": "3c418647-3aa0-4f0b-b043-306f47855f52",
+      "name": "Josh Turner",
+      "type": "Person",
+      "begin_year": 1977,
+      "end_year": null,
+      "recording_count": 189,
+      "release_count": 52
+    },
+    "John Cowan": {
+      "mbid": "fd810909-a859-49e4-aaa1-b6d2e27dc7d0",
+      "name": "John Cowan",
+      "type": "Person",
+      "begin_year": 1952,
+      "end_year": null,
+      "recording_count": 163,
+      "release_count": 12
+    },
+    "Joey + Rory": {
+      "mbid": "47c70105-e0d5-46fe-961e-026651754d77",
+      "name": "Joey + Rory",
+      "type": "Group",
+      "begin_year": 2008,
+      "end_year": 2016,
+      "recording_count": 151,
+      "release_count": 15
+    },
+    "Larry Stephenson": {
+      "mbid": "1b2329ff-461b-41bc-a01c-c3e565668226",
+      "name": "Larry Stephenson",
+      "type": "Person",
+      "begin_year": 1956,
+      "end_year": null,
+      "recording_count": 140,
+      "release_count": 12
+    },
+    "Johnny Gimble": {
+      "mbid": "37921ade-1cba-4415-bf35-da532a70842d",
+      "name": "Johnny Gimble",
+      "type": "Person",
+      "begin_year": 1926,
+      "end_year": 2015,
+      "recording_count": 102,
+      "release_count": 5
+    },
+    "Josh Williams": {
+      "mbid": "474ac447-197b-4477-b29a-abbacacdbce0",
+      "name": "Josh Williams",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 86,
+      "release_count": 7
+    },
+    "Jake Armerding": {
+      "mbid": "1ae6c6f3-0a95-4267-9601-fbc9712327bd",
+      "name": "Jake Armerding",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 73,
+      "release_count": 7
+    },
+    "Jesse McReynolds": {
+      "mbid": "039b582a-354f-4537-af78-f9edf4c3aee5",
+      "name": "Jesse McReynolds",
+      "type": "Person",
+      "begin_year": 1929,
+      "end_year": 2023,
+      "recording_count": 72,
+      "release_count": 3
+    },
+    "Kaia Kater": {
+      "mbid": "0fbabc0c-e0bb-4350-ab87-bb4dde5df55e",
+      "name": "Kaia Kater",
+      "type": "Person",
+      "begin_year": 1993,
+      "end_year": null,
+      "recording_count": 70,
+      "release_count": 7
+    },
+    "John Reischman": {
+      "mbid": "3c0b64d6-2cf9-4261-a3a3-0d11b691c842",
+      "name": "John Reischman",
+      "type": "Person",
+      "begin_year": 1955,
+      "end_year": null,
+      "recording_count": 67,
+      "release_count": 5
+    },
+    "Jim Van Cleve": {
+      "mbid": "9a2464d0-37e6-485f-bf5f-025d39956b4e",
+      "name": "Jim Van Cleve",
+      "type": "Person",
+      "begin_year": 1978,
+      "end_year": null,
+      "recording_count": 41,
+      "release_count": 2
+    },
+    "Jason Carter": {
+      "mbid": "411e519b-31d3-4774-b04d-bcd4b481f111",
+      "name": "Jason Carter",
+      "type": "Person",
+      "begin_year": 1971,
+      "end_year": null,
+      "recording_count": 41,
+      "release_count": 3
+    },
+    "John Herald": {
+      "mbid": "91914598-2c5a-42c8-8017-301fbbb44853",
+      "name": "John Herald",
+      "type": "Person",
+      "begin_year": 1939,
+      "end_year": 2005,
+      "recording_count": 40,
+      "release_count": 3
+    },
+    "Jamie Hartford": {
+      "mbid": "301bd524-8974-4c3a-a2cf-f742f1ce9f35",
+      "name": "Jamie Hartford",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 38,
+      "release_count": 4
+    },
+    "John Duffey": {
+      "mbid": "f40e5524-d1ba-4593-9246-3636400ae14a",
+      "name": "John Duffey",
+      "type": "Person",
+      "begin_year": 1934,
+      "end_year": 1996,
+      "recording_count": 36,
+      "release_count": 12
+    },
+    "Larry Keel": {
+      "mbid": "fcf130b7-181c-4e4f-a417-1165fd36cb9c",
+      "name": "Larry Keel",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 27,
+      "release_count": 1
+    },
+    "Leslie Keith": {
+      "mbid": "58398cd7-6002-4819-bb40-1810f7d5c9cd",
+      "name": "Leslie Keith",
+      "type": "Person",
+      "begin_year": 1906,
+      "end_year": 1977,
+      "recording_count": 16,
+      "release_count": 1
+    },
+    "Kenny Kosek": {
+      "mbid": "0d4d4d01-d41d-4409-aed3-74d1074f59a4",
+      "name": "Kenny Kosek",
+      "type": "Person",
+      "begin_year": 1949,
+      "end_year": null,
+      "recording_count": 16,
+      "release_count": 1
+    },
+    "Jesse Brock": {
+      "mbid": "edde00c2-1d25-4d44-bc6c-69258c02f40a",
+      "name": "Jesse Brock",
+      "type": "Person",
+      "begin_year": 1972,
+      "end_year": null,
+      "recording_count": 13,
+      "release_count": 1
+    },
+    "Jeremy Garrett": {
+      "mbid": "e2942d21-1742-455f-9b19-51574d7515ec",
+      "name": "Jeremy Garrett",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 13,
+      "release_count": 3
+    },
+    "Jaelee Roberts": {
+      "mbid": "54a99c67-4e06-4747-863a-1536f9dcfa78",
+      "name": "Jaelee Roberts",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 13,
+      "release_count": 1
+    },
+    "Jessie Baker": {
+      "mbid": "95a729fd-b430-4d3a-880b-4699f2b8bfde",
+      "name": "Jessie Baker",
+      "type": "Person",
+      "begin_year": 1991,
+      "end_year": null,
+      "recording_count": 13,
+      "release_count": 1
+    },
+    "Johnny Staats": {
+      "mbid": "8c5a051b-09bb-4fe1-a816-0040a6c1f0c7",
+      "name": "Johnny Staats",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 12,
+      "release_count": 1
+    },
+    "Jim McReynolds": {
+      "mbid": "d1f2275f-a814-47c8-bd91-193bea26f8dc",
+      "name": "Jim McReynolds",
+      "type": "Person",
+      "begin_year": 1927,
+      "end_year": 2002,
+      "recording_count": 5,
+      "release_count": 0
+    },
+    "Jamie Dailey": {
+      "mbid": "43d34147-2ce2-4694-a334-9bd8ed0e7060",
+      "name": "Jamie Dailey",
+      "type": "Person",
+      "begin_year": 1975,
+      "end_year": null,
+      "recording_count": 3,
+      "release_count": 0
+    },
+    "John Bullard": {
+      "mbid": "5eaa1709-2acf-4180-bc2e-0355a9f1dfc4",
+      "name": "John Bullard",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 2,
+      "release_count": 0
+    },
+    "Josh Shilling": {
+      "mbid": "0dc4619b-9827-44e8-837e-628a0bec7d19",
+      "name": "Josh Shilling",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 2,
+      "release_count": 0
+    },
+    "John Byrne Cooke": {
+      "mbid": "626aed54-a254-4ca0-832d-d617c4512e89",
+      "name": "John Byrne Cooke",
+      "type": "Person",
+      "begin_year": 1940,
+      "end_year": 2017,
+      "recording_count": 1,
+      "release_count": 0
+    },
+    "Jana Jae": {
+      "mbid": "0edee813-690c-4eb8-9f27-9a707300c590",
+      "name": "Jana Jae",
+      "type": "Person",
+      "begin_year": 1942,
+      "end_year": null,
+      "recording_count": 0,
+      "release_count": 0
+    },
+    "Kathy Boyd": {
+      "mbid": "d1e4075e-fd65-417f-b481-2de4e35f4c11",
+      "name": "Kathy Boyd",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 0,
+      "release_count": 0
+    },
+    "Ralph Stanley": {
+      "mbid": "845adb53-9281-41ff-a911-c0af49f3c943",
+      "name": "Ralph Stanley",
+      "type": "Person",
+      "begin_year": 1927,
+      "end_year": 2016,
+      "recording_count": 1395,
+      "release_count": 129
+    },
+    "Mac Wiseman": {
+      "mbid": "f6cde1f4-220a-48cb-a398-30be58c69456",
+      "name": "Mac Wiseman",
+      "type": "Person",
+      "begin_year": 1925,
+      "end_year": 2019,
+      "recording_count": 1125,
+      "release_count": 70
+    },
+    "Norman Blake": {
+      "mbid": "c9605929-6b48-4991-bb96-0bf460df8ee1",
+      "name": "Norman Blake",
+      "type": "Person",
+      "begin_year": 1938,
+      "end_year": null,
+      "recording_count": 666,
+      "release_count": 56
+    },
+    "Patty Loveless": {
+      "mbid": "e6cb4a73-6253-41c9-9450-f1862d30584e",
+      "name": "Patty Loveless",
+      "type": "Person",
+      "begin_year": 1957,
+      "end_year": null,
+      "recording_count": 520,
+      "release_count": 52
+    },
+    "Marty Stuart": {
+      "mbid": "0ceb7e7d-3866-44aa-b8be-9a9f69004236",
+      "name": "Marty Stuart",
+      "type": "Person",
+      "begin_year": 1958,
+      "end_year": null,
+      "recording_count": 465,
+      "release_count": 35
+    },
+    "Peter Rowan": {
+      "mbid": "1d1488a5-71c0-40ef-9b79-8451a18635ec",
+      "name": "Peter Rowan",
+      "type": "Person",
+      "begin_year": 1942,
+      "end_year": null,
+      "recording_count": 404,
+      "release_count": 46
+    },
+    "Mac Martin": {
+      "mbid": "ced4e23e-bfc0-4348-ba65-572381078cae",
+      "name": "Mac Martin",
+      "type": "Person",
+      "begin_year": 1925,
+      "end_year": 2022,
+      "recording_count": 353,
+      "release_count": 22
+    },
+    "Lonesome River Band": {
+      "mbid": "1d281e8f-a774-4330-82d6-81fcc880d1cd",
+      "name": "Lonesome River Band",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 337,
+      "release_count": 33
+    },
+    "Pierre Bensusan": {
+      "mbid": "3ba0b57d-003a-47fa-8e36-37b847fa9195",
+      "name": "Pierre Bensusan",
+      "type": "Person",
+      "begin_year": 1957,
+      "end_year": null,
+      "recording_count": 315,
+      "release_count": 34
+    },
+    "Nashville Grass": {
+      "mbid": "0623dc58-4d78-476e-b7ac-191801bafc3a",
+      "name": "Nashville Grass",
+      "type": "Group",
+      "begin_year": 1969,
+      "end_year": null,
+      "recording_count": 315,
+      "release_count": 15
+    },
+    "New Grass Revival": {
+      "mbid": "9b6f3084-7bd7-444a-b0a5-d2dc78c19284",
+      "name": "New Grass Revival",
+      "type": "Group",
+      "begin_year": 1971,
+      "end_year": null,
+      "recording_count": 279,
+      "release_count": 36
+    },
+    "Old Crow Medicine Show": {
+      "mbid": "0202af38-ac32-48d0-a546-87caaef2dee2",
+      "name": "Old Crow Medicine Show",
+      "type": "Group",
+      "begin_year": 1998,
+      "end_year": null,
+      "recording_count": 268,
+      "release_count": 49
+    },
+    "Nickel Creek": {
+      "mbid": "365144f7-85af-4c83-b24b-b1d0b26160bb",
+      "name": "Nickel Creek",
+      "type": "Group",
+      "begin_year": 1989,
+      "end_year": null,
+      "recording_count": 256,
+      "release_count": 35
+    },
+    "Old & In the Way": {
+      "mbid": "e3a2d328-2dbb-45d7-b9b5-548c7804f04f",
+      "name": "Old & In the Way",
+      "type": "Group",
+      "begin_year": 1973,
+      "end_year": 1975,
+      "recording_count": 235,
+      "release_count": 16
+    },
+    "Nothin' Fancy": {
+      "mbid": "0f59ddf9-4d7b-4d76-b043-e397ec7fc0cc",
+      "name": "Nothin' Fancy",
+      "type": "Group",
+      "begin_year": 1994,
+      "end_year": null,
+      "recording_count": 223,
+      "release_count": 19
+    },
+    "Molly Tuttle": {
+      "mbid": "968fb129-2c95-4fd5-b195-86552ba45c94",
+      "name": "Molly Tuttle",
+      "type": "Person",
+      "begin_year": 1993,
+      "end_year": null,
+      "recording_count": 186,
+      "release_count": 52
+    },
+    "Punch Brothers": {
+      "mbid": "5508509b-5481-4341-94ae-209eb371afe7",
+      "name": "Punch Brothers",
+      "type": "Group",
+      "begin_year": 2006,
+      "end_year": null,
+      "recording_count": 173,
+      "release_count": 31
+    },
+    "Mike Auldridge": {
+      "mbid": "a6604c40-3e7f-4090-ac6b-cbb8352df7f5",
+      "name": "Mike Auldridge",
+      "type": "Person",
+      "begin_year": 1938,
+      "end_year": 2012,
+      "recording_count": 172,
+      "release_count": 19
+    },
+    "Railroad Earth": {
+      "mbid": "b2e2abfa-fb1e-4be0-b500-56c4584f41cd",
+      "name": "Railroad Earth",
+      "type": "Group",
+      "begin_year": 2001,
+      "end_year": null,
+      "recording_count": 162,
+      "release_count": 22
+    },
+    "Michael Cleveland": {
+      "mbid": "4e027c3d-7c85-4661-b3bc-6c2af944f331",
+      "name": "Michael Cleveland",
+      "type": "Person",
+      "begin_year": 1980,
+      "end_year": null,
+      "recording_count": 162,
+      "release_count": 10
+    },
+    "Northern Lights": {
+      "mbid": "8e151d26-367e-4354-867a-3aa73bfd14dc",
+      "name": "Northern Lights",
+      "type": "Group",
+      "begin_year": 1975,
+      "end_year": 2010,
+      "recording_count": 137,
+      "release_count": 12
+    },
+    "Mike Compton": {
+      "mbid": "aff0d25d-4395-476c-b37c-f54bb6e56742",
+      "name": "Mike Compton",
+      "type": "Person",
+      "begin_year": 1956,
+      "end_year": null,
+      "recording_count": 128,
+      "release_count": 8
+    },
+    "Mountain Heart": {
+      "mbid": "758947cd-94e6-4c50-9e07-bd89a3da4adc",
+      "name": "Mountain Heart",
+      "type": "Group",
+      "begin_year": 1999,
+      "end_year": null,
+      "recording_count": 121,
+      "release_count": 10
+    },
+    "Nora Jane Struthers": {
+      "mbid": "67529ded-fda1-4ee3-9234-a72f9de63a8b",
+      "name": "Nora Jane Struthers",
+      "type": "Person",
+      "begin_year": 1983,
+      "end_year": null,
+      "recording_count": 76,
+      "release_count": 8
+    },
+    "Nefesh Mountain": {
+      "mbid": "5eb56fbb-ea91-44ff-a5d5-5470c7efcb74",
+      "name": "Nefesh Mountain",
+      "type": "Group",
+      "begin_year": 2014,
+      "end_year": null,
+      "recording_count": 76,
+      "release_count": 8
+    },
+    "Missy Raines": {
+      "mbid": "d367e827-9a7f-4004-871c-488092926bab",
+      "name": "Missy Raines",
+      "type": "Person",
+      "begin_year": 1962,
+      "end_year": null,
+      "recording_count": 73,
+      "release_count": 7
+    },
+    "Lonesome Sisters": {
+      "mbid": "61cc977e-de45-49c8-81f2-e8f6ef06931d",
+      "name": "Lonesome Sisters",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 70,
+      "release_count": 6
+    },
+    "Noam Pikelny": {
+      "mbid": "87469db6-d67d-45e1-996f-c406596f8cbe",
+      "name": "Noam Pikelny",
+      "type": "Person",
+      "begin_year": 1981,
+      "end_year": null,
+      "recording_count": 68,
+      "release_count": 5
+    },
+    "Packway Handle Band": {
+      "mbid": "1964ecce-562b-45a9-b9e7-59b390b52a03",
+      "name": "Packway Handle Band",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 62,
+      "release_count": 6
+    },
+    "Lynn Morris": {
+      "mbid": "3fa75c8d-e400-47ab-8e03-714eb4fed26a",
+      "name": "Lynn Morris",
+      "type": "Person",
+      "begin_year": 1948,
+      "end_year": null,
+      "recording_count": 44,
+      "release_count": 2
+    },
+    "Psychograss": {
+      "mbid": "cbce1173-4ee0-4d1b-a955-575698753c4c",
+      "name": "Psychograss",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 39,
+      "release_count": 3
+    },
+    "Oakhurst": {
+      "mbid": "fdb9a8b7-d530-47d1-a4fb-d150f60e3564",
+      "name": "Oakhurst",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 39,
+      "release_count": 4
+    },
+    "Mission Mountain Wood Band": {
+      "mbid": "1f926b5e-092b-4eed-b05e-dfd77d23df8a",
+      "name": "Mission Mountain Wood Band",
+      "type": "Group",
+      "begin_year": 1971,
+      "end_year": null,
+      "recording_count": 34,
+      "release_count": 4
+    },
+    "Muleskinner": {
+      "mbid": "a932293c-b3bd-4f27-a7c2-396e12d93d42",
+      "name": "Muleskinner",
+      "type": "Group",
+      "begin_year": 1973,
+      "end_year": 1974,
+      "recording_count": 29,
+      "release_count": 6
+    },
+    "Onion Creek Crawdaddies": {
+      "mbid": "04c20da0-4243-4dd0-b6ca-51dee9ce7110",
+      "name": "Onion Creek Crawdaddies",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 15,
+      "release_count": 1
+    },
+    "Ragged Union": {
+      "mbid": "b4513d94-916a-4061-83dc-2950da1268e4",
+      "name": "Ragged Union",
+      "type": null,
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 14,
+      "release_count": 1
+    },
+    "Penny Nichols": {
+      "mbid": "82901ef6-147a-4d86-a9ed-c243b215dd30",
+      "name": "Penny Nichols",
+      "type": "Person",
+      "begin_year": 1947,
+      "end_year": 2017,
+      "recording_count": 14,
+      "release_count": 1
+    },
+    "Pitney Meyer": {
+      "mbid": "6d0dd199-f30b-4bc4-9747-652d475c5e91",
+      "name": "Pitney Meyer",
+      "type": "Group",
+      "begin_year": 2024,
+      "end_year": null,
+      "recording_count": 11,
+      "release_count": 1
+    },
+    "New South": {
+      "mbid": "19eaa8c0-534d-4af6-9be1-8adc27ffdb8a",
+      "name": "New South",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 10,
+      "release_count": 1
+    },
+    "Mack Magaha": {
+      "mbid": "a1ce2707-1ec3-4488-9b0e-f8ac712a1117",
+      "name": "Mack Magaha",
+      "type": "Person",
+      "begin_year": 1929,
+      "end_year": 2003,
+      "recording_count": 10,
+      "release_count": 0
+    },
+    "Pete Fidler": {
+      "mbid": "04918f03-57d6-4a99-aa82-4f40ded4d20b",
+      "name": "Pete Fidler",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 6,
+      "release_count": 0
+    },
+    "Michael Kang": {
+      "mbid": "8010757a-6ec4-4a64-b54a-1a16ac0040d9",
+      "name": "Michael Kang",
+      "type": "Person",
+      "begin_year": 1971,
+      "end_year": null,
+      "recording_count": 5,
+      "release_count": 0
+    },
+    "Mark O'Connor": {
+      "mbid": "5bdef096-dbc4-45a9-9e87-870969fe0d08",
+      "name": "Mark O'Connor",
+      "type": null,
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 1,
+      "release_count": 0
+    },
+    "Matt Wallace": {
+      "mbid": "baf8eda0-ab30-4534-b258-85e3690b8454",
+      "name": "Matt Wallace",
+      "type": "Person",
+      "begin_year": 1984,
+      "end_year": null,
+      "recording_count": 1,
+      "release_count": 0
+    },
+    "Marley's Ghost": {
+      "mbid": "51ca8bc5-7602-4c23-8f1f-4053e166593e",
+      "name": "Marley's Ghost",
+      "type": "Group",
+      "begin_year": 2015,
+      "end_year": null,
+      "recording_count": 0,
+      "release_count": 0
+    },
+    "Steve Earle": {
+      "mbid": "ec863030-7c13-45a3-a025-a69195d3a020",
+      "name": "Steve Earle",
+      "type": "Person",
+      "begin_year": 1955,
+      "end_year": null,
+      "recording_count": 1049,
+      "release_count": 169
+    },
+    "Ricky Skaggs": {
+      "mbid": "1a14063c-9dca-48d5-98c3-89748c74562b",
+      "name": "Ricky Skaggs",
+      "type": "Person",
+      "begin_year": 1954,
+      "end_year": null,
+      "recording_count": 859,
+      "release_count": 79
+    },
+    "Steve Martin": {
+      "mbid": "0da08c43-c04c-4016-968d-b9d3eb9b7751",
+      "name": "Steve Martin",
+      "type": "Person",
+      "begin_year": 1945,
+      "end_year": null,
+      "recording_count": 469,
+      "release_count": 46
+    },
+    "Raymond Fairchild": {
+      "mbid": "cc8c74d1-f15b-4116-b875-d8d2894dac53",
+      "name": "Raymond Fairchild",
+      "type": "Person",
+      "begin_year": 1939,
+      "end_year": 2019,
+      "recording_count": 443,
+      "release_count": 23
+    },
+    "Rhonda Vincent": {
+      "mbid": "5ae23016-8069-4a23-91ba-6b7d636ba304",
+      "name": "Rhonda Vincent",
+      "type": "Person",
+      "begin_year": 1962,
+      "end_year": null,
+      "recording_count": 338,
+      "release_count": 32
+    },
+    "Sam Bush": {
+      "mbid": "c233d833-81d9-4feb-b70c-7ffe86200f7b",
+      "name": "Sam Bush",
+      "type": "Person",
+      "begin_year": 1952,
+      "end_year": null,
+      "recording_count": 332,
+      "release_count": 21
+    },
+    "Steep Canyon Rangers": {
+      "mbid": "4b53774a-8c4f-4c58-a4f9-c9d331f6b0a4",
+      "name": "Steep Canyon Rangers",
+      "type": "Group",
+      "begin_year": 2000,
+      "end_year": null,
+      "recording_count": 287,
+      "release_count": 41
+    },
+    "Sarah Jarosz": {
+      "mbid": "6c44e99b-3450-45b7-b240-6e7026d0bcff",
+      "name": "Sarah Jarosz",
+      "type": "Person",
+      "begin_year": 1991,
+      "end_year": null,
+      "recording_count": 219,
+      "release_count": 38
+    },
+    "Rob Ickes": {
+      "mbid": "7b324f8c-70ae-4b7e-9c07-6ccf3eeb954c",
+      "name": "Rob Ickes",
+      "type": "Person",
+      "begin_year": 1967,
+      "end_year": null,
+      "recording_count": 208,
+      "release_count": 15
+    },
+    "Stuart Duncan": {
+      "mbid": "04488675-7446-4cae-89cf-82c0ca069ed6",
+      "name": "Stuart Duncan",
+      "type": "Person",
+      "begin_year": 1964,
+      "end_year": null,
+      "recording_count": 198,
+      "release_count": 23
+    },
+    "Rhiannon Giddens": {
+      "mbid": "3f7574d9-94f3-46dc-8228-9d7358019d9f",
+      "name": "Rhiannon Giddens",
+      "type": "Person",
+      "begin_year": 1977,
+      "end_year": null,
+      "recording_count": 198,
+      "release_count": 40
+    },
+    "Robert K\u0159es\u0165an": {
+      "mbid": "6199cb77-0215-4a23-a280-7e9e3c971fc1",
+      "name": "Robert K\u0159es\u0165an",
+      "type": "Person",
+      "begin_year": 1958,
+      "end_year": null,
+      "recording_count": 179,
+      "release_count": 14
+    },
+    "The Brothers Comatose": {
+      "mbid": "99e4dda9-f5fb-4949-b5c5-3e6a4bdb1268",
+      "name": "The Brothers Comatose",
+      "type": "Group",
+      "begin_year": 2009,
+      "end_year": null,
+      "recording_count": 153,
+      "release_count": 35
+    },
+    "The Accidentals": {
+      "mbid": "ff861dc9-fd12-4680-8f8c-8d2a2f33723f",
+      "name": "The Accidentals",
+      "type": "Group",
+      "begin_year": 2012,
+      "end_year": null,
+      "recording_count": 145,
+      "release_count": 30
+    },
+    "Sierra Hull": {
+      "mbid": "81b38118-c135-4ac4-8334-c57a2455b798",
+      "name": "Sierra Hull",
+      "type": "Person",
+      "begin_year": 1991,
+      "end_year": null,
+      "recording_count": 138,
+      "release_count": 26
+    },
+    "Sara Watkins": {
+      "mbid": "e6dbe57d-74cf-4f6e-9e16-ed6cce18baef",
+      "name": "Sara Watkins",
+      "type": "Person",
+      "begin_year": 1981,
+      "end_year": null,
+      "recording_count": 133,
+      "release_count": 17
+    },
+    "Sean Watkins": {
+      "mbid": "eab7d0b3-b84a-47a9-99c5-72474b79c4e8",
+      "name": "Sean Watkins",
+      "type": "Person",
+      "begin_year": 1977,
+      "end_year": null,
+      "recording_count": 118,
+      "release_count": 19
+    },
+    "Richard Greene": {
+      "mbid": "96f83ea1-2175-408f-a4f9-9816e290debb",
+      "name": "Richard Greene",
+      "type": "Person",
+      "begin_year": 1942,
+      "end_year": null,
+      "recording_count": 105,
+      "release_count": 8
+    },
+    "Randy Kohrs": {
+      "mbid": "f955bb6f-20c5-493d-93a8-fed2345bce93",
+      "name": "Randy Kohrs",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 102,
+      "release_count": 8
+    },
+    "Shawn Lane": {
+      "mbid": "4af1aa09-05c8-40d9-9274-d0667953c6bc",
+      "name": "Shawn Lane",
+      "type": "Person",
+      "begin_year": 1963,
+      "end_year": 2003,
+      "recording_count": 101,
+      "release_count": 16
+    },
+    "Russ Barenberg": {
+      "mbid": "10df6b2d-e016-4a51-a97c-f9f8814cabef",
+      "name": "Russ Barenberg",
+      "type": "Person",
+      "begin_year": 1950,
+      "end_year": null,
+      "recording_count": 76,
+      "release_count": 5
+    },
+    "Rautakoura": {
+      "mbid": "1b69358c-951d-438c-b115-f9c12ee9afe5",
+      "name": "Rautakoura",
+      "type": "Group",
+      "begin_year": 2004,
+      "end_year": null,
+      "recording_count": 74,
+      "release_count": 7
+    },
+    "Tammy Rogers": {
+      "mbid": "b7d94cd4-c74e-424a-bee5-84ec350611f3",
+      "name": "Tammy Rogers",
+      "type": "Person",
+      "begin_year": 1966,
+      "end_year": null,
+      "recording_count": 73,
+      "release_count": 5
+    },
+    "Salamander Crossing": {
+      "mbid": "637a3c83-9b1c-44a1-b0af-85c2125d680f",
+      "name": "Salamander Crossing",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 67,
+      "release_count": 4
+    },
+    "Roland White": {
+      "mbid": "1cede87c-403e-4939-a00c-1d713084088d",
+      "name": "Roland White",
+      "type": "Person",
+      "begin_year": 1938,
+      "end_year": 2022,
+      "recording_count": 66,
+      "release_count": 6
+    },
+    "The Black Lillies": {
+      "mbid": "268c6c84-63c2-443e-8e55-08bf7acb5e02",
+      "name": "The Black Lillies",
+      "type": "Group",
+      "begin_year": 2009,
+      "end_year": null,
+      "recording_count": 62,
+      "release_count": 10
+    },
+    "Steve Gulley": {
+      "mbid": "51a99468-e994-48f7-917f-640bb17ff2f9",
+      "name": "Steve Gulley",
+      "type": "Person",
+      "begin_year": 1962,
+      "end_year": 2020,
+      "recording_count": 53,
+      "release_count": 3
+    },
+    "Steve Spurgin": {
+      "mbid": "dc9c69fd-669d-404d-a88a-842b9bbb62c5",
+      "name": "Steve Spurgin",
+      "type": "Person",
+      "begin_year": 1947,
+      "end_year": null,
+      "recording_count": 50,
+      "release_count": 5
+    },
+    "Sister Sadie": {
+      "mbid": "4ee515b0-bbf1-4066-895c-2d625aefe6cd",
+      "name": "Sister Sadie",
+      "type": "Group",
+      "begin_year": 2013,
+      "end_year": null,
+      "recording_count": 40,
+      "release_count": 4
+    },
+    "Seth Mulder & Midnight Run": {
+      "mbid": "0b7a7423-34c1-467b-834b-8686cc69ab44",
+      "name": "Seth Mulder & Midnight Run",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 39,
+      "release_count": 7
+    },
+    "The Burnett Sisters Band": {
+      "mbid": "02cd01a6-d7e2-41b2-9f11-3747ccaa3380",
+      "name": "The Burnett Sisters Band",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 27,
+      "release_count": 5
+    },
+    "Sleepy Man Banjo Boys": {
+      "mbid": "d847a1b9-6361-4435-a442-21f2cfaa89b3",
+      "name": "Sleepy Man Banjo Boys",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 27,
+      "release_count": 3
+    },
+    "Ray Legere": {
+      "mbid": "029caf4a-f094-4768-9b24-a205c91d761e",
+      "name": "Ray Legere",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 26,
+      "release_count": 2
+    },
+    "Randall Franks": {
+      "mbid": "6389f7f8-1696-4dc0-ab90-f6c018e11042",
+      "name": "Randall Franks",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 24,
+      "release_count": 1
+    },
+    "Roger Bush": {
+      "mbid": "7f3f4ecc-2c47-43c2-935c-ec8eb1565943",
+      "name": "Roger Bush",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 22,
+      "release_count": 1
+    },
+    "Scott Holstein": {
+      "mbid": "96e6f8f6-530a-4726-93e5-bbbdc04a89d4",
+      "name": "Scott Holstein",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 22,
+      "release_count": 1
+    },
+    "Rick Faris": {
+      "mbid": "98547f7a-8983-441b-844e-fea2b780c085",
+      "name": "Rick Faris",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 15,
+      "release_count": 1
+    },
+    "Tangleweed": {
+      "mbid": "1ec878c2-b8d1-467e-882e-d18722a1b805",
+      "name": "Tangleweed",
+      "type": "Group",
+      "begin_year": 2004,
+      "end_year": null,
+      "recording_count": 15,
+      "release_count": 1
+    },
+    "Saddle River String Band": {
+      "mbid": "eec6d153-332c-4e8e-9aab-eac7dc4bb8c2",
+      "name": "Saddle River String Band",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 12,
+      "release_count": 1
+    },
+    "The Beef Seeds": {
+      "mbid": "8639b6da-2afd-4a26-9060-47a0f7437719",
+      "name": "The Beef Seeds",
+      "type": "Group",
+      "begin_year": 2013,
+      "end_year": 2015,
+      "recording_count": 10,
+      "release_count": 1
+    },
+    "Red Camel Collective": {
+      "mbid": "e11709f2-7885-4840-a8a9-71847f45a3af",
+      "name": "Red Camel Collective",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 1,
+      "release_count": 1
+    },
+    "Route 3": {
+      "mbid": "58b86bf9-b60f-45f8-a0eb-d8b00d077a5c",
+      "name": "Route 3",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 0,
+      "release_count": 0
+    },
+    "The Stanley Brothers": {
+      "mbid": "8f918972-81e9-43a5-80a4-d244a42dc5b2",
+      "name": "The Stanley Brothers",
+      "type": "Group",
+      "begin_year": 1945,
+      "end_year": 1966,
+      "recording_count": 2357,
+      "release_count": 204
+    },
+    "The Seldom Scene": {
+      "mbid": "62014a59-8f3f-4f8a-80ed-5c2b794bde0d",
+      "name": "The Seldom Scene",
+      "type": "Group",
+      "begin_year": 1971,
+      "end_year": null,
+      "recording_count": 928,
+      "release_count": 103
+    },
+    "The Charlie Daniels Band": {
+      "mbid": "35885131-9d16-40cb-9289-e18997a8b77c",
+      "name": "The Charlie Daniels Band",
+      "type": "Group",
+      "begin_year": 1972,
+      "end_year": 2020,
+      "recording_count": 906,
+      "release_count": 106
+    },
+    "The Country Gentlemen": {
+      "mbid": "d202b936-2de4-4357-8760-f61949f8855c",
+      "name": "The Country Gentlemen",
+      "type": "Group",
+      "begin_year": 1957,
+      "end_year": 2004,
+      "recording_count": 872,
+      "release_count": 122
+    },
+    "Vince Gill": {
+      "mbid": "ec37ecfe-65b4-49a4-83c7-ee1ccaeec2e3",
+      "name": "Vince Gill",
+      "type": "Person",
+      "begin_year": 1957,
+      "end_year": null,
+      "recording_count": 723,
+      "release_count": 121
+    },
+    "Tony Rice": {
+      "mbid": "ca90a5b0-cb18-4f94-9c14-116826fcc422",
+      "name": "Tony Rice",
+      "type": "Person",
+      "begin_year": 1951,
+      "end_year": 2020,
+      "recording_count": 526,
+      "release_count": 62
+    },
+    "The Del McCoury Band": {
+      "mbid": "7e5a0c3f-339a-4e5d-aed0-1946112b4a66",
+      "name": "The Del McCoury Band",
+      "type": "Group",
+      "begin_year": 1967,
+      "end_year": null,
+      "recording_count": 419,
+      "release_count": 33
+    },
+    "Vassar Clements": {
+      "mbid": "4684039e-a2a9-43a1-8fb8-10c5689a0e2f",
+      "name": "Vassar Clements",
+      "type": "Person",
+      "begin_year": 1928,
+      "end_year": 2005,
+      "recording_count": 406,
+      "release_count": 36
+    },
+    "Tony Trischka": {
+      "mbid": "4ff84a40-f048-4cb7-abef-e92146f9a330",
+      "name": "Tony Trischka",
+      "type": "Person",
+      "begin_year": 1949,
+      "end_year": null,
+      "recording_count": 397,
+      "release_count": 33
+    },
+    "The Dillards": {
+      "mbid": "50e8fa7b-e7aa-4599-8fec-0987527a87d5",
+      "name": "The Dillards",
+      "type": "Group",
+      "begin_year": 1962,
+      "end_year": null,
+      "recording_count": 327,
+      "release_count": 36
+    },
+    "Tony Furtado": {
+      "mbid": "8d8cc066-fbae-4f60-8d42-ef627a06a78d",
+      "name": "Tony Furtado",
+      "type": "Person",
+      "begin_year": 1967,
+      "end_year": null,
+      "recording_count": 300,
+      "release_count": 23
+    },
+    "The Hackensaw Boys": {
+      "mbid": "099f7dff-ea35-42a0-9578-f7e7a0d7da9a",
+      "name": "The Hackensaw Boys",
+      "type": "Group",
+      "begin_year": 1999,
+      "end_year": null,
+      "recording_count": 294,
+      "release_count": 21
+    },
+    "Trampled by Turtles": {
+      "mbid": "c6a5a49b-9885-42e6-9fb5-ccaaec05f753",
+      "name": "Trampled by Turtles",
+      "type": "Group",
+      "begin_year": 2004,
+      "end_year": null,
+      "recording_count": 244,
+      "release_count": 46
+    },
+    "The Gibson Brothers": {
+      "mbid": "ed3831a4-2501-432a-b3a3-930654cd8f62",
+      "name": "The Gibson Brothers",
+      "type": "Group",
+      "begin_year": 1993,
+      "end_year": null,
+      "recording_count": 210,
+      "release_count": 18
+    },
+    "The Grascals": {
+      "mbid": "8fec36ae-abfa-4ab9-bd48-87f42203255b",
+      "name": "The Grascals",
+      "type": "Group",
+      "begin_year": 2004,
+      "end_year": null,
+      "recording_count": 177,
+      "release_count": 17
+    },
+    "The Nashville Bluegrass Band": {
+      "mbid": "82cd001a-150d-45b1-aa21-42ba0065dd42",
+      "name": "The Nashville Bluegrass Band",
+      "type": "Group",
+      "begin_year": 1984,
+      "end_year": null,
+      "recording_count": 171,
+      "release_count": 25
+    },
+    "The Infamous Stringdusters": {
+      "mbid": "43e088bd-2520-4a84-bb8e-827c86d2cf84",
+      "name": "The Infamous Stringdusters",
+      "type": "Group",
+      "begin_year": 2006,
+      "end_year": null,
+      "recording_count": 169,
+      "release_count": 26
+    },
+    "The Stonemans": {
+      "mbid": "a14b03c3-94de-4ba1-9980-2e0cf10f86e3",
+      "name": "The Stonemans",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 166,
+      "release_count": 10
+    },
+    "The Woodbox Gang": {
+      "mbid": "49a84225-fed1-4712-86a9-05a33f0dd84e",
+      "name": "The Woodbox Gang",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 164,
+      "release_count": 11
+    },
+    "The Cox Family": {
+      "mbid": "7b8c7275-4359-449e-ae21-e4fa657ccad3",
+      "name": "The Cox Family",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 140,
+      "release_count": 11
+    },
+    "The Dead South": {
+      "mbid": "ffb316f0-0df3-4f9c-b0e0-945187b6e964",
+      "name": "The Dead South",
+      "type": "Group",
+      "begin_year": 2012,
+      "end_year": null,
+      "recording_count": 139,
+      "release_count": 30
+    },
+    "The Coal Porters": {
+      "mbid": "a39401e9-7b5d-4a17-bc80-d45ff08c4a44",
+      "name": "The Coal Porters",
+      "type": "Group",
+      "begin_year": 1989,
+      "end_year": null,
+      "recording_count": 133,
+      "release_count": 11
+    },
+    "The Greenbriar Boys": {
+      "mbid": "df562ca3-29b2-4eff-af26-d2fd329ecc62",
+      "name": "The Greenbriar Boys",
+      "type": "Group",
+      "begin_year": 1959,
+      "end_year": 1970,
+      "recording_count": 132,
+      "release_count": 7
+    },
+    "Tom Adams": {
+      "mbid": "544a72cb-2030-4e69-a915-ca9897fec810",
+      "name": "Tom Adams",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 120,
+      "release_count": 11
+    },
+    "The Petersens": {
+      "mbid": "3a8a5376-6975-44e4-800b-f2b70ac8215e",
+      "name": "The Petersens",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 120,
+      "release_count": 17
+    },
+    "The SteelDrivers": {
+      "mbid": "d2ccb26b-b3ef-4e12-a336-f07c1bfa00ef",
+      "name": "The SteelDrivers",
+      "type": "Group",
+      "begin_year": 2005,
+      "end_year": null,
+      "recording_count": 118,
+      "release_count": 18
+    },
+    "The Kentucky Gentlemen": {
+      "mbid": "65022c24-5356-4d43-95a3-634ab8b7a5a1",
+      "name": "The Kentucky Gentlemen",
+      "type": "Group",
+      "begin_year": 1973,
+      "end_year": 1981,
+      "recording_count": 104,
+      "release_count": 9
+    },
+    "The Steel Wheels": {
+      "mbid": "ded0e4b8-c839-4683-85c5-206865cd1906",
+      "name": "The Steel Wheels",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 96,
+      "release_count": 12
+    },
+    "The Waybacks": {
+      "mbid": "a39fdbe7-1407-467b-9e6f-ec403de8bf65",
+      "name": "The Waybacks",
+      "type": "Group",
+      "begin_year": 1999,
+      "end_year": null,
+      "recording_count": 89,
+      "release_count": 7
+    },
+    "Todd Phillips": {
+      "mbid": "16a48730-d603-4eb1-aa1a-72f83e86d0ed",
+      "name": "Todd Phillips",
+      "type": "Person",
+      "begin_year": 1953,
+      "end_year": null,
+      "recording_count": 88,
+      "release_count": 5
+    },
+    "The Greencards": {
+      "mbid": "ba2926a3-d394-4791-af25-7db36093386c",
+      "name": "The Greencards",
+      "type": "Group",
+      "begin_year": 2003,
+      "end_year": null,
+      "recording_count": 85,
+      "release_count": 7
+    },
+    "Time for Three": {
+      "mbid": "62d1c157-3b54-48d9-8491-94c575369ee3",
+      "name": "Time for Three",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 75,
+      "release_count": 10
+    },
+    "The Hillbilly Thomists": {
+      "mbid": "218dbf5d-31c7-4c35-ae06-324b9e34e899",
+      "name": "The Hillbilly Thomists",
+      "type": "Group",
+      "begin_year": 2014,
+      "end_year": null,
+      "recording_count": 71,
+      "release_count": 11
+    },
+    "Vernon Derrick": {
+      "mbid": "51a0b7fb-682f-4c96-aae2-1d706bc80bdc",
+      "name": "Vernon Derrick",
+      "type": "Person",
+      "begin_year": 1933,
+      "end_year": 2008,
+      "recording_count": 37,
+      "release_count": 3
+    },
+    "Tim O'Brien": {
+      "mbid": "4415cd39-bf12-4e83-80c4-21411b29c5fc",
+      "name": "Tim O'Brien",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 35,
+      "release_count": 1
+    },
+    "The Whiskey Boys": {
+      "mbid": "f434e146-8360-4a90-814b-c4d3cb519a4c",
+      "name": "The Whiskey Boys",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 33,
+      "release_count": 3
+    },
+    "The Faux Paws": {
+      "mbid": "73162613-a278-4731-8a7b-57e09f753fc1",
+      "name": "The Faux Paws",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 31,
+      "release_count": 5
+    },
+    "The Hillmen": {
+      "mbid": "33d375b1-bee6-4b69-8b01-a4fb2a854285",
+      "name": "The Hillmen",
+      "type": "Group",
+      "begin_year": 1962,
+      "end_year": 1964,
+      "recording_count": 25,
+      "release_count": 4
+    },
+    "Tony Kamel": {
+      "mbid": "4efe74d6-ec2a-471e-af82-33c51895e226",
+      "name": "Tony Kamel",
+      "type": "Person",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 22,
+      "release_count": 5
+    },
+    "Uncle Monk": {
+      "mbid": "edd77df1-a1ea-4c1f-8426-ac17365cf20c",
+      "name": "Uncle Monk",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": 2014,
+      "recording_count": 15,
+      "release_count": 1
+    },
+    "Tommy Ramone": {
+      "mbid": "f9f37f58-526d-43f9-9dad-bcb4ca8d8061",
+      "name": "Tommy Ramone",
+      "type": "Person",
+      "begin_year": 1952,
+      "end_year": 2014,
+      "recording_count": 1,
+      "release_count": 0
+    },
+    "Vern Williams": {
+      "mbid": "ddd31fff-3a95-40c5-8e0b-5e69a100fabd",
+      "name": "Vern Williams",
+      "type": "Person",
+      "begin_year": 1930,
+      "end_year": 2006,
+      "recording_count": 1,
+      "release_count": 0
+    },
+    "Water Tower": {
+      "mbid": "c2bef72b-4711-4be7-af27-95c89df2b564",
+      "name": "Water Tower",
+      "type": "Group",
+      "begin_year": 2012,
+      "end_year": null,
+      "recording_count": 0,
+      "release_count": 0
+    },
+    "The Creekers": {
+      "mbid": "61e251c1-9167-450f-9850-2182967a40a6",
+      "name": "The Creekers",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 0,
+      "release_count": 0
+    },
+    "Yonder Mountain String Band": {
+      "mbid": "76fda896-7c2a-4e5e-a45b-d40acfb2080c",
+      "name": "Yonder Mountain String Band",
+      "type": "Group",
+      "begin_year": 1998,
+      "end_year": null,
+      "recording_count": 834,
+      "release_count": 51
+    },
+    "Watkins Family Hour": {
+      "mbid": "e4954b11-3714-40a5-bc5b-5e7219256973",
+      "name": "Watkins Family Hour",
+      "type": "Group",
+      "begin_year": 2002,
+      "end_year": null,
+      "recording_count": 94,
+      "release_count": 9
+    },
+    "Williamson Branch": {
+      "mbid": "64e60cac-0da9-44c8-a966-90a8cfe6fed6",
+      "name": "Williamson Branch",
+      "type": "Group",
+      "begin_year": null,
+      "end_year": null,
+      "recording_count": 77,
+      "release_count": 7
+    },
+    "Zach Top": {
+      "mbid": "9939a762-5ca9-4c12-a735-0d62e21df4e3",
+      "name": "Zach Top",
+      "type": "Person",
+      "begin_year": 1997,
+      "end_year": null,
+      "recording_count": 49,
+      "release_count": 27
+    },
+    "Wilson Banjo Co.": {
+      "mbid": "aae6674c-ee2c-405f-9e17-1003bd7133f5",
+      "name": "Wilson Banjo Co.",
+      "type": "Group",
+      "begin_year": 2014,
+      "end_year": null,
+      "recording_count": 27,
+      "release_count": 4
+    }
+  },
+  "not_found": [
+    "\"Big\" Paul Williams",
+    "Alison Krauss and Union Station",
+    "Arthur \"Guitar Boogie\" Smith",
+    "Arthur Lee \"Red\" Smiley",
+    "Ashleigh Graham",
+    "Barry Scott & Second Wind",
+    "Benjamin F. Logan",
+    "Bibelhauser Brothers",
+    "Bill Monroe & His Bluegrass Boys",
+    "Biscuit Burners",
+    "BlueBilly Grit",
+    "Bluegrass Album Band",
+    "Brennan Gilmore",
+    "Candlewyck",
+    "Clinch Mountain Boys",
+    "Curly Ray Cline",
+    "Danny Paisley and the Southern Grass",
+    "David \"Stringbean\" Akeman",
+    "Dixie Flyers",
+    "Dixie Gentlemen",
+    "DownRiver Collective",
+    "Druh\u00e1 Tr\u00e1va",
+    "Flatt and Scruggs",
+    "Foggy Mountain Boys",
+    "Gary Ruley",
+    "Gary Ruley and Mule Train",
+    "Good Old Guard Gospel Singers",
+    "Gundula Krause",
+    "Herman Brock Jr",
+    "J. D. Crowe",
+    "Jim & Jennie and the Pinetops",
+    "Jim and Jesse McReynolds and the Virginia Boys",
+    "Johnson Mountain Boys",
+    "Kate Lee",
+    "Kathy Boyd and Phoenix Rising",
+    "Kentucky Colonels",
+    "Lonesome Pine Fiddlers",
+    "Marty Falle",
+    "Marty Stuart & His Fabulous Superlatives",
+    "Mitchell F. Jayne",
+    "Osborne Brothers",
+    "Ralph Stanley & the Clinch Mountain Boys",
+    "Red Allen",
+    "Rex Yetman",
+    "Rhonda Vincent and the Rage",
+    "Robin and Linda Williams",
+    "Ruby Jane Smith",
+    "Russell Moore and IIIrd Tyme Out",
+    "Sally Ann Forrester",
+    "Sweet Lillies",
+    "The Rarely Herd",
+    "The Special Consensus",
+    "The Travelin' McCourys",
+    "Three Ring Circle",
+    "Tidalwave Road Bluegrass Band",
+    "Walker's Run",
+    "Wimberley Bluegrass Band",
+    "Winky Hicks"
+  ],
+  "sources": [
+    "wikipedia_musicians",
+    "wikipedia_bands",
+    "roots_music_report",
+    "allmusic"
+  ],
+  "version": 1
+}

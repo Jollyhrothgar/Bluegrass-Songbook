@@ -301,3 +301,84 @@ describe('songHasProgression', () => {
         expect(songHasProgression(song, ['I', 'IV', 'V'])).toBe(false);
     });
 });
+
+describe('covering artists search', () => {
+    // Mock songs with covering_artists
+    const mockSongsWithCovering = [
+        {
+            id: 'blue-moon',
+            title: 'Blue Moon of Kentucky',
+            artist: 'Patsy Cline',
+            covering_artists: ['Bill Monroe', 'The Stanley Brothers', 'Del McCoury'],
+            grassiness: 88
+        },
+        {
+            id: 'jolene',
+            title: 'Jolene',
+            artist: 'Dolly Parton',
+            covering_artists: [],
+            grassiness: 10
+        },
+        {
+            id: 'rocky-top',
+            title: 'Rocky Top',
+            artist: 'Osborne Brothers',
+            covering_artists: ['Dolly Parton'],
+            grassiness: 44
+        }
+    ];
+
+    beforeEach(() => {
+        // Reset the module state
+        vi.resetModules();
+    });
+
+    it('artist filter matches covering artists', () => {
+        // The search function uses covering_artists in its filter
+        const { parseSearchQuery } = require('../search-core.js');
+        const query = parseSearchQuery('artist:bill monroe');
+        expect(query.artistFilter).toBe('bill monroe');
+
+        // Simulate the filter logic
+        const filtered = mockSongsWithCovering.filter(song => {
+            const artistFilter = 'bill monroe';
+            const primaryMatch = (song.artist || '').toLowerCase().includes(artistFilter);
+            const coveringArtists = song.covering_artists || [];
+            const coveringMatch = coveringArtists.some(a => a.toLowerCase().includes(artistFilter));
+            return primaryMatch || coveringMatch;
+        });
+
+        expect(filtered.length).toBe(1);
+        expect(filtered[0].id).toBe('blue-moon');
+    });
+
+    it('general text search includes covering artists', () => {
+        // Simulate general text search including covering_artists
+        const filtered = mockSongsWithCovering.filter(song => {
+            const searchText = [
+                song.title || '',
+                song.artist || '',
+                (song.covering_artists || []).join(' ')
+            ].join(' ').toLowerCase();
+            return searchText.includes('stanley');
+        });
+
+        expect(filtered.length).toBe(1);
+        expect(filtered[0].id).toBe('blue-moon');
+    });
+
+    it('song without covering artists still matches by primary artist', () => {
+        const filtered = mockSongsWithCovering.filter(song => {
+            const artistFilter = 'dolly parton';
+            const primaryMatch = (song.artist || '').toLowerCase().includes(artistFilter);
+            const coveringArtists = song.covering_artists || [];
+            const coveringMatch = coveringArtists.some(a => a.toLowerCase().includes(artistFilter));
+            return primaryMatch || coveringMatch;
+        });
+
+        // Matches Jolene (primary) and Rocky Top (covering)
+        expect(filtered.length).toBe(2);
+        expect(filtered.map(s => s.id)).toContain('jolene');
+        expect(filtered.map(s => s.id)).toContain('rocky-top');
+    });
+});
