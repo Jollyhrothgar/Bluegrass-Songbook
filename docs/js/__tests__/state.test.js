@@ -22,7 +22,7 @@ const flushRAF = () => new Promise(resolve => {
 describe('Reactive State System', () => {
     afterEach(async () => {
         // Reset state to defaults and flush any pending notifications
-        setCurrentView('search');
+        setCurrentView('home');
         setSidebarOpen(false);
         setCurrentSearchQuery('');
         await flushRAF();
@@ -30,7 +30,7 @@ describe('Reactive State System', () => {
 
     describe('getState', () => {
         it('returns specific state value when key provided', () => {
-            expect(getState('currentView')).toBe('search');
+            expect(getState('currentView')).toBe('home');
             expect(getState('sidebarOpen')).toBe(false);
         });
 
@@ -112,7 +112,7 @@ describe('Reactive State System', () => {
             subscribe('currentView', callback);
 
             // Set to same value
-            setState({ currentView: 'search' });
+            setState({ currentView: 'home' });
             await flushRAF();
 
             expect(callback).not.toHaveBeenCalled();
@@ -159,8 +159,8 @@ describe('Reactive State System', () => {
 });
 
 describe('State Values', () => {
-    it('currentView defaults to search', () => {
-        expect(getState('currentView')).toBe('search');
+    it('currentView defaults to home', () => {
+        expect(getState('currentView')).toBe('home');
     });
 
     it('sidebarOpen defaults to false', () => {

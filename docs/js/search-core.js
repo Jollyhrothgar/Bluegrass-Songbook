@@ -1,7 +1,7 @@
 // Core search functionality for Bluegrass Songbook
 
 import { allSongs, songGroups } from './state.js';
-import { highlightMatch } from './utils.js';
+import { highlightMatch, escapeHtml } from './utils.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
     isFavorite, reorderFavoriteItem, showFavorites,
@@ -272,11 +272,34 @@ export function songHasProgression(song, progression) {
 }
 
 /**
- * Show random songs on initial load
+ * Format covering artists for display (clickable, shows first 2 + count)
  */
-export function showRandomSongs() {
-    const shuffled = [...allSongs].sort(() => Math.random() - 0.5);
-    const sample = shuffled.slice(0, 20);
+function formatCoveringArtists(artists, primaryArtist) {
+    // Filter out the primary artist if they're in the list
+    const others = artists.filter(a =>
+        a.toLowerCase() !== (primaryArtist || '').toLowerCase()
+    );
+    if (others.length === 0) return '';
+
+    // Make artists clickable - clicking filters by that artist
+    const artistLinks = others.slice(0, 2).map(a =>
+        `<span class="covering-artist" data-artist="${escapeHtml(a)}">${escapeHtml(a)}</span>`
+    ).join(', ');
+    const more = others.length > 2 ? ` <span class="covering-more">+${others.length - 2} more</span>` : '';
+    return `<div class="result-covering">Also by: ${artistLinks}${more}</div>`;
+}
+
+/**
+ * Show popular songs on initial load (sorted by canonical_rank)
+ */
+export function showPopularSongs() {
+    // Sort by canonical_rank (higher = more popular)
+    const sorted = [...allSongs].sort((a, b) => {
+        const aRank = a.canonical_rank || 0;
+        const bRank = b.canonical_rank || 0;
+        return bRank - aRank;
+    });
+    const sample = sorted.slice(0, 50);
     // Use distinct title count to match subtitle
     const distinctCount = new Set(allSongs.map(s => s.title?.toLowerCase())).size;
     if (searchStatsEl) {
@@ -285,10 +308,19 @@ export function showRandomSongs() {
     renderResults(sample, '');
 }
 
+// Alias for backwards compatibility
+export const showRandomSongs = showPopularSongs;
+
 /**
  * Search songs
+ * @param {string} query - Search query
+ * @param {Object} options - Options
+ * @param {boolean} options.skipRender - If true, skip rendering (caller will handle it)
+ * @returns {Array} Filtered and sorted results (deduped)
  */
-export function search(query) {
+export function search(query, options = {}) {
+    const { skipRender = false } = options;
+
     // Clear any list view state when searching
     if (navFavoritesEl) navFavoritesEl.classList.remove('active');
     if (navSearchEl) navSearchEl.classList.add('active');
@@ -298,8 +330,8 @@ export function search(query) {
         if (analyticsDebounceTimer) clearTimeout(analyticsDebounceTimer);
         pendingSearchData = null;
         lastRecordedQuery = null;
-        showRandomSongs();
-        return;
+        showPopularSongs();
+        return allSongs;
     }
 
     const {
@@ -315,6 +347,7 @@ export function search(query) {
             const searchText = [
                 song.title || '',
                 song.artist || '',
+                (song.covering_artists || []).join(' '),
                 song.composer || '',
                 song.lyrics || '',
                 song.first_line || ''
@@ -326,8 +359,14 @@ export function search(query) {
         }
 
         // Field-specific filters (inclusion)
-        if (artistFilter && !(song.artist || '').toLowerCase().includes(artistFilter)) {
-            return false;
+        // Artist filter checks both primary artist and covering artists
+        if (artistFilter) {
+            const primaryMatch = (song.artist || '').toLowerCase().includes(artistFilter);
+            const coveringArtists = song.covering_artists || [];
+            const coveringMatch = coveringArtists.some(a => a.toLowerCase().includes(artistFilter));
+            if (!primaryMatch && !coveringMatch) {
+                return false;
+            }
         }
         if (titleFilter && !(song.title || '').toLowerCase().includes(titleFilter)) {
             return false;
@@ -387,7 +426,7 @@ export function search(query) {
         return true;
     });
 
-    // Sort by relevance (for text searches)
+    // Sort by relevance (for text searches) with canonical_rank as tie-breaker
     const textQuery = textTerms.join(' ');
     results.sort((a, b) => {
         const aTitle = (a.title || '').toLowerCase();
@@ -396,6 +435,7 @@ export function search(query) {
         const bArtist = (b.artist || '').toLowerCase();
 
         if (textQuery) {
+            // Text relevance scoring
             if (aTitle === textQuery && bTitle !== textQuery) return -1;
             if (bTitle === textQuery && aTitle !== textQuery) return 1;
             if (aTitle.startsWith(textQuery) && !bTitle.startsWith(textQuery)) return -1;
@@ -406,7 +446,10 @@ export function search(query) {
             if (bArtist.includes(textQuery) && !aArtist.includes(textQuery)) return 1;
         }
 
-        return 0;
+        // Tie-breaker: sort by canonical_rank (higher = more popular = first)
+        const aRank = a.canonical_rank || 0;
+        const bRank = b.canonical_rank || 0;
+        return bRank - aRank;
     });
 
     // Dedupe by group_id for accurate count
@@ -465,7 +508,11 @@ export function search(query) {
         flushPendingSearch();
     }, ANALYTICS_DEBOUNCE_MS);
 
-    renderResults(dedupedResults.slice(0, 50), textQuery);
+    if (!skipRender) {
+        renderResults(dedupedResults.slice(0, 50), textQuery);
+    }
+
+    return dedupedResults;
 }
 
 /**
@@ -539,6 +586,16 @@ export function renderResults(songs, query) {
             return `<span class="tag-badge tag-instrument" data-tag="${inst}" title="Has ${label} tab/notation">${label}</span>`;
         }).join('');
 
+        // Grassiness score badge (for songs with score >= 20)
+        const grassinessScore = song.grassiness || 0;
+        const grassinessBadge = grassinessScore >= 20
+            ? `<span class="grassiness-badge" title="Bluegrass score: ${grassinessScore}">🎵 ${grassinessScore}</span>`
+            : '';
+
+        // Covering artists display (clickable, shows first 2 + count)
+        const coveringArtists = song.covering_artists || [];
+        const coveringDisplay = formatCoveringArtists(coveringArtists, song.artist);
+
         // Add drag handle and draggable for list view
         const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
         const draggableAttr = isDraggable ? `draggable="true" data-index="${index}"` : '';
@@ -547,8 +604,9 @@ export function renderResults(songs, query) {
             <div class="result-item ${favClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
                 ${dragHandle}
                 <div class="result-main">
-                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}</div>
+                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}${grassinessBadge}</div>
                     <div class="result-artist">${highlightMatch(song.artist || 'Unknown artist', query)}</div>
+                    ${coveringDisplay}
                     ${tagBadges ? `<div class="result-tags">${tagBadges}</div>` : ''}
                     <div class="result-preview">${song.first_line || ''}</div>
                 </div>
@@ -589,6 +647,18 @@ function setupResultEventListeners(resultsDiv) {
             if (tag && searchInputEl) {
                 searchInputEl.value = `tag:${tag}`;
                 search(`tag:${tag}`);
+            }
+            return;
+        }
+
+        // Handle covering artist click
+        const coveringArtist = e.target.closest('.covering-artist');
+        if (coveringArtist) {
+            e.stopPropagation();
+            const artistName = coveringArtist.dataset.artist;
+            if (artistName && searchInputEl) {
+                searchInputEl.value = `artist:"${artistName}"`;
+                search(`artist:"${artistName}"`);
             }
             return;
         }

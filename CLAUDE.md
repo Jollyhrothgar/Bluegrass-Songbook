@@ -273,14 +273,17 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 |--------------|----------|
 | Add a UI feature | `docs/js/` + `docs/js/CLAUDE.md` |
 | Work with tablature/renderers | `docs/js/renderers/` + `docs/js/work-view.js` |
+| Modify homepage collections | `docs/js/collections.js` |
 | Understand works structure | `works/` + `scripts/lib/work_schema.py` |
 | Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
+| Understand grassiness scoring | `scripts/lib/tagging/CLAUDE.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
 | Write a blog post | `docs/posts/` (then run `./scripts/utility build-posts`) |
 | Analyze usage data | `analytics/dashboard.ipynb` |
+| Analyze grassiness data | `analytics/grassiness_analysis.ipynb` |
 | See product vision | `ROADMAP.md` |
 | Run parser tests | `uv run pytest` |
 | Run frontend tests | `npm test` |

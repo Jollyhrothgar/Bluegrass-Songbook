@@ -97,17 +97,42 @@
                 </div>
             </div>
             <div class="logo-row">
-                <img src="images/under_construction_dark.png" alt="Under Construction" class="header-badge header-badge-left">
+                <a href="https://github.com/Jollyhrothgar/Bluegrass-Songbook/milestones" target="_blank" rel="noopener" class="header-badge-link" title="View Roadmap & Planned Features">
+                    <img src="images/under_construction_dark.png" alt="Under Construction" class="header-badge header-badge-left">
+                </a>
                 <h1 class="site-logo">
                     <a href="#" id="logo-link"><img src="images/bluegrass_book_dark_logo.png" alt="Bluegrass Book"></a>
                 </h1>
-                <img src="images/report_bugs.png" alt="Report Bugs" class="header-badge header-badge-right">
+                <a href="#" id="report-bug-link" class="header-badge-link" title="Report a Bug">
+                    <img src="images/report_bugs.png" alt="Report Bugs" class="header-badge header-badge-right">
+                </a>
             </div>
-            <p id="subtitle" class="subtitle">Loading songs...</p>
+            <p id="subtitle" class="subtitle hidden"></p>
             <p id="visitor-stats" class="visitor-stats"></p>
         </header>
 
-        <div class="search-container">
+        <!-- Landing Page Collections -->
+        <div id="landing-page" class="landing-page">
+            <div class="landing-search">
+                <input
+                    type="text"
+                    id="landing-search-input"
+                    placeholder="Search songs, artists, or lyrics..."
+                    autocomplete="off"
+                >
+            </div>
+            <div class="collections-grid" id="collections-grid">
+                <div class="loading">Loading collections...</div>
+            </div>
+            <div class="landing-footer">
+                <a href="bounty.html" class="bounty-link">
+                    <span class="bounty-icon">🎯</span>
+                    <span class="bounty-text">Help us grow! See songs we're looking for</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="search-container hidden">
             <input
                 type="text"
                 id="search-input"

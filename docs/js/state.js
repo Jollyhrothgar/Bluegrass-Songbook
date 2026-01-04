@@ -296,7 +296,7 @@ export function setEditorNashvilleMode(value) { editorNashvilleMode = value; }
 // UI VIEW STATE (new reactive pattern)
 // ============================================
 
-export let currentView = 'search';  // 'search' | 'song' | 'add-song' | 'list'
+export let currentView = 'home';  // 'home' | 'search' | 'song' | 'add-song' | 'list'
 export let sidebarOpen = false;
 export let activeModal = null;  // 'account' | 'lists' | 'version' | 'correction' | 'contact' | null
 export let currentSearchQuery = '';

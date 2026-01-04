@@ -1,0 +1,629 @@
+{
+  "seed_stats": {
+    "seed_artists": 62,
+    "seed_songs": 30,
+    "seed_songs_in_index": 50,
+    "seed_artist_songs_in_index": 793
+  },
+  "discovered_artists": {
+    "high_affinity": [
+      {
+        "artist": "Earl Scruggs and Lester Flatt",
+        "score": 74,
+        "seed_covers": 2,
+        "repertoire_overlap": 33,
+        "already_tagged": false,
+        "total_songs": 33
+      },
+      {
+        "artist": "Traditional",
+        "score": 57,
+        "seed_covers": 13,
+        "repertoire_overlap": 8,
+        "already_tagged": false,
+        "total_songs": 526
+      },
+      {
+        "artist": "Lester Flatt and Earl Scruggs",
+        "score": 26,
+        "seed_covers": 0,
+        "repertoire_overlap": 12,
+        "already_tagged": false,
+        "total_songs": 12
+      },
+      {
+        "artist": "Dolly Parton",
+        "score": 10,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": true,
+        "total_songs": 121
+      }
+    ],
+    "medium_affinity": [
+      {
+        "artist": "George Jones",
+        "score": 9,
+        "seed_covers": 1,
+        "repertoire_overlap": 2,
+        "already_tagged": false,
+        "total_songs": 319
+      },
+      {
+        "artist": "Randy Travis",
+        "score": 8,
+        "seed_covers": 0,
+        "repertoire_overlap": 3,
+        "already_tagged": false,
+        "total_songs": 164
+      },
+      {
+        "artist": "Marty Robbins",
+        "score": 8,
+        "seed_covers": 0,
+        "repertoire_overlap": 3,
+        "already_tagged": false,
+        "total_songs": 286
+      },
+      {
+        "artist": "Don Reno and Red Smiley",
+        "score": 8,
+        "seed_covers": 0,
+        "repertoire_overlap": 4,
+        "already_tagged": false,
+        "total_songs": 4
+      },
+      {
+        "artist": "Johnny Cash",
+        "score": 7,
+        "seed_covers": 1,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 217
+      },
+      {
+        "artist": "Jimmy Dean",
+        "score": 7,
+        "seed_covers": 1,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 80
+      },
+      {
+        "artist": "Patsy Cline",
+        "score": 7,
+        "seed_covers": 1,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 90
+      },
+      {
+        "artist": "J.D. Crowe and the New South",
+        "score": 7,
+        "seed_covers": 1,
+        "repertoire_overlap": 2,
+        "already_tagged": false,
+        "total_songs": 2
+      },
+      {
+        "artist": "Kitty Wells",
+        "score": 6,
+        "seed_covers": 0,
+        "repertoire_overlap": 2,
+        "already_tagged": false,
+        "total_songs": 153
+      },
+      {
+        "artist": "Wilburn Brothers",
+        "score": 6,
+        "seed_covers": 0,
+        "repertoire_overlap": 2,
+        "already_tagged": false,
+        "total_songs": 94
+      },
+      {
+        "artist": "Roy Orbison",
+        "score": 6,
+        "seed_covers": 0,
+        "repertoire_overlap": 2,
+        "already_tagged": false,
+        "total_songs": 103
+      },
+      {
+        "artist": "Cal Smith",
+        "score": 6,
+        "seed_covers": 0,
+        "repertoire_overlap": 2,
+        "already_tagged": false,
+        "total_songs": 120
+      },
+      {
+        "artist": "Tom T. Hall",
+        "score": 6,
+        "seed_covers": 0,
+        "repertoire_overlap": 2,
+        "already_tagged": false,
+        "total_songs": 97
+      },
+      {
+        "artist": "Jerry Lee Lewis",
+        "score": 6,
+        "seed_covers": 0,
+        "repertoire_overlap": 2,
+        "already_tagged": false,
+        "total_songs": 118
+      },
+      {
+        "artist": "Lynn Anderson",
+        "score": 5,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 28
+      },
+      {
+        "artist": "Emmylou Harris",
+        "score": 5,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 112
+      },
+      {
+        "artist": "Mitch Jayne, Dean Webb",
+        "score": 5,
+        "seed_covers": 1,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Everly Brothers",
+        "score": 5,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 45
+      },
+      {
+        "artist": "Eddy Arnold",
+        "score": 5,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 197
+      },
+      {
+        "artist": "Thomas C. Ashley",
+        "score": 5,
+        "seed_covers": 1,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      }
+    ],
+    "low_affinity": [
+      {
+        "artist": "Elvis Presley",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 252
+      },
+      {
+        "artist": "Carl Smith",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 156
+      },
+      {
+        "artist": "The Lonesome River Band",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 13
+      },
+      {
+        "artist": "Merle Haggard",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 269
+      },
+      {
+        "artist": "Slim Whitman",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 126
+      },
+      {
+        "artist": "Jim Ed Brown",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 85
+      },
+      {
+        "artist": "George Strait",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 245
+      },
+      {
+        "artist": "Dwight Yoakam",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 67
+      },
+      {
+        "artist": "Ernest Tubb",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 161
+      },
+      {
+        "artist": "Daniel O'Donnell",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 17
+      },
+      {
+        "artist": "Connie Smith",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 156
+      },
+      {
+        "artist": "Rhonda Vincent",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 100
+      },
+      {
+        "artist": "Charlie Walker",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 66
+      },
+      {
+        "artist": "Loretta Lynn",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 137
+      },
+      {
+        "artist": "Alison Krauss with Dan Tyminski",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 2,
+        "already_tagged": false,
+        "total_songs": 2
+      },
+      {
+        "artist": "Hank Locklin",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 129
+      },
+      {
+        "artist": "Jim Reeves",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 272
+      },
+      {
+        "artist": "The Everly Brothers",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 54
+      },
+      {
+        "artist": "Hank Williams",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 156
+      },
+      {
+        "artist": "Don Gibson",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 113
+      },
+      {
+        "artist": "Vernon Oxford",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 49
+      },
+      {
+        "artist": "George Morgan",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 112
+      },
+      {
+        "artist": "Webb Pierce",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 188
+      },
+      {
+        "artist": "Wanda Jackson",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 127
+      },
+      {
+        "artist": "Willie Nelson",
+        "score": 4,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 165
+      },
+      {
+        "artist": "Dick Burnett",
+        "score": 3,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Walter Vinson, Lonnie Chatmon",
+        "score": 3,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "William Batchelder Bradbury",
+        "score": 3,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Soggy Bottom Boys",
+        "score": 3,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Boudleaux Bryant, Felice Bryant",
+        "score": 3,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Albert E. Brumley",
+        "score": 3,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 2
+      },
+      {
+        "artist": "Ada R. Habershon, Charles H. Gabriel",
+        "score": 3,
+        "seed_covers": 1,
+        "repertoire_overlap": 0,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Don Reno and Bill Harrell",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Laurie Lewis",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Lester Flatt and Earl Scuggs",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Lester Flatt, Earl Scruggs, Everett Lilly",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Eamon O'Shea",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "B.B. Watson",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Kirk McGee",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Tommy Collins",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 6
+      },
+      {
+        "artist": "Cliff Carnahan",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Vince Gill with Patty Loveless",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Hugh Moffatt",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Keith Whitley and Earl Thomas Conley",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "The Cathedrals",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 6
+      },
+      {
+        "artist": "the Kingston Trio",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      },
+      {
+        "artist": "Carl and Pearl Butler",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 5
+      },
+      {
+        "artist": "Les Paul and Mary Ford",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 2
+      },
+      {
+        "artist": "Alison Krauss and Shawn Colvin",
+        "score": 2,
+        "seed_covers": 0,
+        "repertoire_overlap": 1,
+        "already_tagged": false,
+        "total_songs": 1
+      }
+    ]
+  },
+  "recommendations": {
+    "add_to_bluegrass_tag": [
+      "Earl Scruggs and Lester Flatt",
+      "Traditional",
+      "Lester Flatt and Earl Scruggs"
+    ],
+    "consider_for_bluegrass": [
+      "George Jones",
+      "Randy Travis",
+      "Marty Robbins",
+      "Don Reno and Red Smiley",
+      "Johnny Cash",
+      "Jimmy Dean",
+      "Patsy Cline",
+      "J.D. Crowe and the New South",
+      "Kitty Wells",
+      "Wilburn Brothers",
+      "Roy Orbison",
+      "Cal Smith",
+      "Tom T. Hall",
+      "Jerry Lee Lewis",
+      "Lynn Anderson",
+      "Emmylou Harris",
+      "Mitch Jayne, Dean Webb",
+      "Everly Brothers",
+      "Eddy Arnold",
+      "Thomas C. Ashley"
+    ]
+  }
+}
