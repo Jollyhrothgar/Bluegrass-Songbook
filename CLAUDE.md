@@ -21,6 +21,7 @@ A searchable collection of 17,000+ bluegrass and country songs with chords, buil
   - Features: `feature/<name>` (e.g., `feature/chord-display-mode`)
   - Bug fixes: `bug/<name-or-issue-id>` (e.g., `bug/parser-missing-chord`)
 - **Worktrees**: Use `.bare` worktree setup for parallel work on multiple features (see below)
+- **Trunk-based workflow**: All PRs merge to `main`. CI runs tests; deployment only happens if tests pass.
 
 ## Repository Structure (Git Worktrees)
 
@@ -29,7 +30,7 @@ This repo uses a bare git repository with worktrees for parallel feature develop
 ```
 bluegrassbook.com/
 ├── .bare/              # Bare git repo (shared git data)
-├── main/               # Worktree: main branch (you are here)
+├── main/               # Worktree: main branch
 └── feature-xyz/        # Worktree: feature branches as needed
 ```
 
@@ -251,7 +252,7 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 | Workflow | Trigger | Action |
 |----------|---------|--------|
-| `build.yml` | Push to main, PRs | Rebuilds index + posts, auto-commits if changed |
+| `build.yml` | Push to main, PRs | Runs tests; deploys to GitHub Pages only if tests pass |
 | `process-song-submission.yml` | Issue labeled `song-submission` + `approved` | Adds new song |
 | `process-song-correction.yml` | Issue labeled `song-correction` + `approved` | Updates existing song |
 
