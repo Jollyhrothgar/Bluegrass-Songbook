@@ -28,6 +28,7 @@ Some operations require external APIs/databases and only run locally. Others run
 | **Build index** | Everywhere | - | Core build, always runs |
 | **Harmonic analysis** | Everywhere | - | Computes JamFriendly, Modal tags from chords |
 | **MusicBrainz tags** | Local only | `artist_tags.json` | Requires local MB database on port 5440 |
+| **Grassiness scores** | Local only | `bluegrass_recordings.json`, `bluegrass_tagged.json` | Song-level bluegrass detection |
 | **Strum Machine URLs** | Local only | `strum_machine_cache.json` | API rate limited (10 req/sec) |
 | **TuneArch fetch** | Local only | - | Fetches new instrumentals |
 
@@ -39,6 +40,9 @@ Some operations require external APIs/databases and only run locally. Others run
 **Cache files (commit these after updating):**
 - `docs/data/artist_tags.json` - MusicBrainz artist → genre mappings
 - `docs/data/strum_machine_cache.json` - Song title → Strum Machine URL mappings
+- `docs/data/bluegrass_recordings.json` - Recordings by curated bluegrass artists
+- `docs/data/bluegrass_tagged.json` - Recordings with MusicBrainz bluegrass tags
+- `docs/data/grassiness_scores.json` - Computed grassiness scores per song
 
 ## Files
 
@@ -55,7 +59,10 @@ scripts/lib/
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_submission.py # GitHub Action: process song-submission issues
 ├── process_correction.py # GitHub Action: process song-correction issues
-└── chord_counter.py      # Chord statistics utility
+├── chord_counter.py      # Chord statistics utility
+└── tagging/              # Song-level tagging system
+    ├── CLAUDE.md         # Detailed docs for grassiness scoring
+    └── grassiness.py     # Bluegrass detection based on covers/tags
 ```
 
 ## Quick Commands

@@ -21,6 +21,7 @@ A searchable collection of 17,000+ bluegrass and country songs with chords, buil
   - Features: `feature/<name>` (e.g., `feature/chord-display-mode`)
   - Bug fixes: `bug/<name-or-issue-id>` (e.g., `bug/parser-missing-chord`)
 - **Worktrees**: Use `.bare` worktree setup for parallel work on multiple features (see below)
+- **Trunk-based workflow**: All PRs merge to `main`. CI runs tests; deployment only happens if tests pass.
 
 ## Repository Structure (Git Worktrees)
 
@@ -29,7 +30,7 @@ This repo uses a bare git repository with worktrees for parallel feature develop
 ```
 bluegrassbook.com/
 ├── .bare/              # Bare git repo (shared git data)
-├── main/               # Worktree: main branch (you are here)
+├── main/               # Worktree: main branch
 └── feature-xyz/        # Worktree: feature branches as needed
 ```
 
@@ -253,7 +254,7 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 | Workflow | Trigger | Action |
 |----------|---------|--------|
-| `build.yml` | Push to main, PRs | Rebuilds index + posts, auto-commits if changed |
+| `build.yml` | Push to main, PRs | Runs tests; deploys to GitHub Pages only if tests pass |
 | `process-song-submission.yml` | Issue labeled `song-submission` + `approved` | Adds new song |
 | `process-song-correction.yml` | Issue labeled `song-correction` + `approved` | Updates existing song |
 
@@ -275,14 +276,17 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 |--------------|----------|
 | Add a UI feature | `docs/js/` + `docs/js/CLAUDE.md` |
 | Work with tablature/renderers | `docs/js/renderers/` + `docs/js/work-view.js` |
+| Modify homepage collections | `docs/js/collections.js` |
 | Understand works structure | `works/` + `scripts/lib/work_schema.py` |
 | Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
+| Understand grassiness scoring | `scripts/lib/tagging/CLAUDE.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
 | Write a blog post | `docs/posts/` (then run `./scripts/utility build-posts`) |
 | Analyze usage data | `analytics/dashboard.ipynb` |
+| Analyze grassiness data | `analytics/grassiness_analysis.ipynb` |
 | See product vision | `ROADMAP.md` |
 | Run parser tests | `uv run pytest` |
 | Run frontend tests | `npm test` |

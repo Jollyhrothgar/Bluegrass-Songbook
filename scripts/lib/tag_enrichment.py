@@ -27,6 +27,7 @@ if os.path.exists(MB_PATH):
 # Tag data file locations
 TAGS_CACHE_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'tags.json'
 ARTIST_TAGS_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'artist_tags.json'
+GRASSINESS_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'grassiness_scores.json'
 
 
 # =============================================================================
@@ -280,6 +281,75 @@ def batch_query_mb_tags(songs: list[tuple[str, str]], min_score: int = 2) -> dic
 
 
 # =============================================================================
+# Grassiness Scores (Bluegrass Detection)
+# =============================================================================
+
+_grassiness_cache = None
+
+def load_grassiness_scores() -> dict:
+    """Load pre-computed grassiness scores from disk.
+
+    Returns:
+        Dict mapping song_id -> {score, artist_score, tag_score, artists, title}
+    """
+    global _grassiness_cache
+    if _grassiness_cache is not None:
+        return _grassiness_cache
+
+    if GRASSINESS_FILE.exists():
+        try:
+            with open(GRASSINESS_FILE, 'r') as f:
+                _grassiness_cache = json.load(f)
+                return _grassiness_cache
+        except Exception as e:
+            print(f"Warning: Could not load grassiness scores: {e}")
+
+    _grassiness_cache = {}
+    return _grassiness_cache
+
+
+def get_grassiness_tags(song_id: str, title: str) -> tuple[dict, int]:
+    """Get bluegrass tags based on grassiness score.
+
+    Uses song_id first, falls back to title-based lookup.
+
+    Args:
+        song_id: Song ID to look up
+        title: Song title for fallback lookup
+
+    Returns:
+        Tuple of (tags_dict, grassiness_score)
+        tags_dict: {TagName: {"score": int, "source": "grassiness"}}
+    """
+    scores = load_grassiness_scores()
+    tags = {}
+    grassiness = 0
+
+    # Try song_id first
+    if song_id in scores:
+        grassiness = scores[song_id].get('score', 0)
+    else:
+        # Try normalized title lookup
+        from tagging.grassiness import normalize_title
+        normalized = normalize_title(title)
+        for sid, data in scores.items():
+            if normalize_title(data.get('title', '')) == normalized:
+                grassiness = data.get('score', 0)
+                break
+
+    # Apply tags based on thresholds (derived from core artist analysis)
+    # >= 50: Top 37% of core bluegrass artist recordings
+    # >= 20: Top 71% of core bluegrass artist recordings
+    if grassiness >= 50:
+        tags['BluegrassStandard'] = {'score': 90, 'source': 'grassiness'}
+        tags['Bluegrass'] = {'score': 85, 'source': 'grassiness'}
+    elif grassiness >= 20:
+        tags['Bluegrass'] = {'score': 70, 'source': 'grassiness'}
+
+    return tags, grassiness
+
+
+# =============================================================================
 # Harmonic Analysis Tags
 # =============================================================================
 
@@ -418,6 +488,34 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
                     our_tag = SOURCE_GENRE_MAP[genre_lower]
                     if our_tag not in tags:
                         tags[our_tag] = {'score': 70, 'source': 'metadata'}
+
+        # Add grassiness-based bluegrass tags
+        song_id = song.get('id', '')
+        title = song.get('title', '')
+        grassiness_tags, grassiness_score = get_grassiness_tags(song_id, title)
+        for tag, data in grassiness_tags.items():
+            # Grassiness can override artist-based tags with higher confidence
+            if tag not in tags or data['score'] > tags[tag].get('score', 0):
+                tags[tag] = data
+        if grassiness_score > 0:
+            song['grassiness'] = grassiness_score
+
+        # Add covering artists from grassiness data (for search and display)
+        # Use same lookup strategy as get_grassiness_tags: ID first, then title fallback
+        scores = load_grassiness_scores()
+        covering_artists = []
+        if song_id in scores:
+            covering_artists = scores[song_id].get('artists', [])
+        else:
+            # Try normalized title lookup (same as get_grassiness_tags)
+            from tagging.grassiness import normalize_title
+            normalized = normalize_title(title)
+            for data in scores.values():
+                if normalize_title(data.get('title', '')) == normalized:
+                    covering_artists = data.get('artists', [])
+                    break
+        if covering_artists:
+            song['covering_artists'] = covering_artists
 
         song['tags'] = tags
         if tags:

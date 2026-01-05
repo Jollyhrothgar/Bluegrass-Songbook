@@ -45,9 +45,9 @@ if [ "$SKIP_ENRICH" = false ]; then
     echo ""
 fi
 
-# Build search index from works/
+# Build search index from works/ (with tag enrichment for grassiness + covering artists)
 echo "Building search index..."
-uv run python3 scripts/lib/build_works_index.py --no-tags
+uv run python3 scripts/lib/build_works_index.py
 
 echo ""
 echo "Bootstrap complete!"

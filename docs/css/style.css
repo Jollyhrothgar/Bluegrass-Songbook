@@ -114,7 +114,8 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
+    gap: 2rem;
     margin: 0 auto;
 }
 
@@ -130,6 +131,16 @@ h1 {
 
 .header-badge-right {
     margin-left: auto;
+}
+
+.header-badge-link {
+    display: block;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.header-badge-link:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 /* Dark theme: invert the header badges */
@@ -652,6 +663,46 @@ h1 {
 .tag-other {
     background: var(--bg-secondary);
     color: var(--text-secondary);
+}
+
+/* Grassiness score badge - green */
+.grassiness-badge {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.65rem;
+    font-weight: 500;
+    border-radius: 4px;
+    background: rgba(34, 197, 94, 0.15);
+    color: #16a34a;
+    cursor: help;
+}
+[data-theme="dark"] .grassiness-badge {
+    background: rgba(34, 197, 94, 0.2);
+    color: #4ade80;
+}
+
+/* Covering artists line */
+.result-covering {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* Clickable artist names */
+.covering-artist {
+    color: var(--accent);
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.covering-artist:hover {
+    text-decoration-style: solid;
+}
+
+.covering-more {
+    color: var(--text-tertiary);
+    font-style: italic;
 }
 
 /* Song view tags row */
@@ -4071,6 +4122,194 @@ body.fullscreen-mode::after {
         width: 100%;
         overflow-x: auto;
         padding-bottom: 0.5rem;
+    }
+}
+
+/* ============================================
+   LANDING PAGE
+   ============================================ */
+
+.landing-page {
+    margin-bottom: 2rem;
+}
+
+.landing-search {
+    margin-bottom: 1.5rem;
+}
+
+#landing-search-input {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg);
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#landing-search-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+[data-theme="dark"] #landing-search-input:focus {
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.15);
+}
+
+#landing-search-input::placeholder {
+    color: var(--text-secondary);
+}
+
+/* Search prompt when no query */
+.search-prompt {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.search-prompt code {
+    background: var(--bg-secondary);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.collection-card {
+    display: flex;
+    align-items: stretch;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    min-height: 100px;
+}
+
+.collection-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent);
+}
+
+[data-theme="dark"] .collection-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.collection-image {
+    width: 80px;
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    background: var(--collection-color, var(--accent));
+    color: white;
+}
+
+.collection-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Remove filter for actual photos */
+.collection-card.has-image .collection-image {
+    background: transparent;
+}
+
+.collection-content {
+    flex: 1;
+    padding: 0.875rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.collection-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text);
+}
+
+.collection-description {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.collection-count {
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+/* Landing footer with bounty link */
+.landing-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.bounty-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--bg-secondary);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-lg);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.bounty-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--bg);
+}
+
+.bounty-icon {
+    font-size: 1.25rem;
+}
+
+/* Mobile: single column */
+@media (max-width: 600px) {
+    .collections-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-card {
+        min-height: 80px;
+    }
+
+    .collection-image {
+        width: 70px;
+        min-width: 70px;
+        font-size: 2rem;
+    }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 601px) and (max-width: 900px) {
+    .collections-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

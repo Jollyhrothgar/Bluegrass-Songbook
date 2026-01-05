@@ -8,14 +8,14 @@ async function openSidebar(page) {
 }
 
 test.describe('Navigation', () => {
-    test('home page loads with search', async ({ page }) => {
+    test('home page loads with landing page', async ({ page }) => {
         await page.goto('/');
 
-        // Search input should be visible
-        await expect(page.locator('#search-input')).toBeVisible();
+        // Landing page should be visible
+        await expect(page.locator('#landing-page')).toBeVisible();
 
-        // Results should be visible
-        await expect(page.locator('#results')).toBeVisible();
+        // Collection cards should load
+        await page.waitForSelector('.collection-card', { timeout: 5000 });
     });
 
     test('favorites nav link works', async ({ page }) => {
@@ -30,7 +30,7 @@ test.describe('Navigation', () => {
         await expect(page).toHaveURL(/#list\/favorites/);
     });
 
-    test('search nav link returns to search', async ({ page }) => {
+    test('search nav link returns to home', async ({ page }) => {
         await page.goto('/');
         await page.waitForSelector('#hamburger-btn');
 
@@ -43,8 +43,8 @@ test.describe('Navigation', () => {
         await openSidebar(page);
         await page.locator('#nav-search').click();
 
-        // Should be back at home
-        await expect(page.locator('#search-input')).toBeVisible();
+        // Should be back at landing page (home)
+        await expect(page.locator('#landing-page')).toBeVisible();
     });
 });
 
@@ -68,19 +68,20 @@ test.describe('Deep Links', () => {
         await expect(page.locator('#search-stats')).toContainText(/favorite/);
     });
 
-    test('invalid hash gracefully falls back', async ({ page }) => {
+    test('invalid hash gracefully falls back to home', async ({ page }) => {
         await page.goto('/#invalid/route/here');
 
         await page.waitForTimeout(300);
 
-        // Should show search (graceful fallback)
-        await expect(page.locator('#search-input')).toBeVisible();
+        // Should show landing page (graceful fallback)
+        await expect(page.locator('#landing-page')).toBeVisible();
     });
 });
 
 test.describe('History Navigation', () => {
     test('browser back works from song to search', async ({ page }) => {
-        await page.goto('/');
+        // Start at search view directly
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
         // Search for something
@@ -99,7 +100,8 @@ test.describe('History Navigation', () => {
     });
 
     test('browser forward works after back', async ({ page }) => {
-        await page.goto('/');
+        // Start at search view directly
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
         await page.fill('#search-input', 'mountain dew');
@@ -118,10 +120,10 @@ test.describe('History Navigation', () => {
 
     test('multiple back navigations work', async ({ page }) => {
         await page.goto('/');
-        await page.waitForSelector('#search-input');
+        await page.waitForSelector('.collection-card', { timeout: 5000 });
 
-        // Navigate through several pages
-        await page.fill('#search-input', 'test');
+        // Navigate to search via collection card
+        await page.locator('.collection-card').first().click();
         await page.waitForTimeout(300);
 
         // Open sidebar and click favorites
@@ -129,7 +131,7 @@ test.describe('History Navigation', () => {
         await page.locator('#nav-favorites').click();
         await page.waitForTimeout(200);
 
-        // Open sidebar and click search
+        // Open sidebar and click search (goes to home)
         await openSidebar(page);
         await page.locator('#nav-search').click();
         await page.waitForTimeout(200);
@@ -139,7 +141,7 @@ test.describe('History Navigation', () => {
         await page.goBack();
 
         // Should be able to navigate back through history
-        await expect(page.locator('#search-input')).toBeVisible();
+        await expect(page.locator('.search-container')).toBeVisible();
     });
 });
 
@@ -149,7 +151,7 @@ test.describe('Sidebar Navigation', () => {
         await page.setViewportSize({ width: 375, height: 667 });
 
         await page.goto('/');
-        await page.waitForSelector('#search-input');
+        await page.waitForSelector('.collection-card', { timeout: 5000 });
 
         // Hamburger menu should be visible
         const hamburger = page.locator('#hamburger-btn');
@@ -176,7 +178,8 @@ test.describe('Sidebar Navigation', () => {
 
 test.describe('View Transitions', () => {
     test('bottom sheet closes when navigating away from song view', async ({ page }) => {
-        await page.goto('/');
+        // Start at search view directly
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
         // Search and open a song

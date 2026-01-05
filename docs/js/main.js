@@ -47,6 +47,7 @@ import { showListPicker, closeListPicker, updateTriggerButton } from './list-pic
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions } from './chords.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
 import { initFlags, openFlagModal } from './flags.js';
+import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -60,6 +61,11 @@ const songContent = document.getElementById('song-content');
 const backBtn = document.getElementById('back-btn');
 const themeToggle = document.getElementById('theme-toggle');
 const visitorStatsEl = document.getElementById('visitor-stats');
+
+// Landing page elements
+const landingPage = document.getElementById('landing-page');
+const collectionsGrid = document.getElementById('collections-grid');
+const landingSearchInput = document.getElementById('landing-search-input');
 
 // Sidebar elements
 const sidebar = document.getElementById('sidebar');
@@ -233,8 +239,11 @@ function pushHistoryState(view, data = {}, replace = false) {
             hash = `#list/${data.listId}`;
             break;
         case 'search':
+            hash = data.query ? `#search/${encodeURIComponent(data.query)}` : '#search';
+            break;
+        case 'home':
         default:
-            hash = data.query ? `#search/${encodeURIComponent(data.query)}` : '';
+            hash = '';
             break;
     }
 
@@ -253,11 +262,14 @@ function handleHistoryNavigation(state) {
         if (handleDeepLink()) {
             return;
         }
-        showView('search');
+        showView('home');
         return;
     }
 
     switch (state.view) {
+        case 'home':
+            showView('home');
+            break;
         case 'song':
             if (state.songId) {
                 openSongFromHistory(state.songId);
@@ -313,13 +325,29 @@ function initViewSubscription() {
         // Clear list view state
         clearListView();
 
+        // Hide landing page when not on home view
+        const isHome = view === 'home';
+        landingPage?.classList.toggle('hidden', !isHome);
+
         switch (view) {
+            case 'home':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.add('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                navSearch?.classList.add('active');
+                break;
             case 'search':
                 searchContainer?.classList.remove('hidden');
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
                 navSearch?.classList.add('active');
+                // Show empty state if no search query (don't show random songs)
+                if (!searchInput?.value?.trim() && resultsDiv) {
+                    resultsDiv.innerHTML = '<div class="search-prompt">Search for songs by title, artist, lyrics, or use filters like <code>tag:bluegrass</code></div>';
+                }
+                searchInput?.focus();
                 break;
             case 'add-song':
                 searchContainer?.classList.add('hidden');
@@ -350,6 +378,171 @@ function initViewSubscription() {
                 break;
         }
     });
+}
+
+// ============================================
+// LANDING PAGE
+// ============================================
+
+// Collection images and fallback icons
+const COLLECTION_IMAGES = {
+    'bluegrass-standards': 'images/Scruggs.webp',
+    'all-bluegrass': 'images/billy.png',
+    'gospel': 'images/jimmy_martin_gospel.jpg',
+    'fiddle-tunes': 'images/fiddle_tunes.png',
+    'all-songs': 'images/jam_friendly.png',
+    'waltz': 'images/waltz.png'
+};
+
+const COLLECTION_ICONS = {
+    'bluegrass-standards': '🎸',
+    'first-generation': '👴',
+    'gospel': '⛪',
+    'fiddle-tunes': '🎻',
+    'jam-friendly': '🤝',
+    'waltz': '💃',
+    'classic-country': '🤠',
+    'old-time': '🪕'
+};
+
+/**
+ * Render collection cards on the landing page
+ */
+function renderCollectionCards() {
+    if (!collectionsGrid) return;
+
+    const cards = COLLECTIONS.map(collection => {
+        // Count songs matching the query (or total for "all songs")
+        const count = collection.isSearchLink ? allSongs.length : getCollectionSongCount(collection.query);
+        const icon = COLLECTION_ICONS[collection.id] || '🎵';
+        const imageSrc = COLLECTION_IMAGES[collection.id];
+
+        // Use image if available, otherwise fall back to emoji icon
+        const imageContent = imageSrc
+            ? `<img src="${imageSrc}" alt="${escapeHtml(collection.title)}">`
+            : icon;
+
+        // For search link, use a different href
+        const href = collection.isSearchLink
+            ? '#search'
+            : `#search/${encodeURIComponent(collection.query)}`;
+
+        return `
+            <a href="${href}"
+               class="collection-card${imageSrc ? ' has-image' : ''}${collection.isSearchLink ? ' search-all' : ''}"
+               data-collection="${collection.id}"
+               style="--collection-color: ${collection.color}">
+                <div class="collection-image">
+                    ${imageContent}
+                </div>
+                <div class="collection-content">
+                    <h3 class="collection-title">${escapeHtml(collection.title)}</h3>
+                    <p class="collection-description">${escapeHtml(collection.description)}</p>
+                    <span class="collection-count">${count.toLocaleString()} songs</span>
+                </div>
+            </a>
+        `;
+    }).join('');
+
+    collectionsGrid.innerHTML = cards;
+
+    // Add click handlers for collection cards
+    collectionsGrid.querySelectorAll('.collection-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+            e.preventDefault();
+            const href = card.getAttribute('href');
+            const isSearchAll = card.classList.contains('search-all');
+            const collectionId = card.dataset.collection;
+
+            if (isSearchAll) {
+                // Navigate to search view without query
+                searchInput.value = '';
+                showView('search');
+                pushHistoryState('search', { query: '' });
+                track('collection_click', { collection: 'all-songs' });
+            } else if (href && href.startsWith('#search/')) {
+                const query = decodeURIComponent(href.slice(8));
+                searchInput.value = query;
+
+                // Search with pinned songs first
+                searchWithPins(query, collectionId);
+
+                showView('search');
+                pushHistoryState('search', { query });
+                track('collection_click', { collection: collectionId });
+            }
+        });
+    });
+}
+
+/**
+ * Search with pinned songs appearing first
+ */
+function searchWithPins(query, collectionId) {
+    const pins = COLLECTION_PINS[collectionId] || [];
+
+    // Get all matching songs from the query (skip auto-render, we'll handle it)
+    const results = search(query, { skipRender: true });
+
+    if (!results || results.length === 0) {
+        renderResults([], '');
+        return [];
+    }
+
+    if (pins.length === 0) {
+        // No pinned songs, just render normally (already sorted by canonical_rank)
+        renderResults(results.slice(0, 50), '');
+        return results;
+    }
+
+    // Separate pinned and non-pinned songs
+    const pinnedSongs = [];
+    const otherSongs = [];
+
+    for (const song of results) {
+        if (pins.includes(song.id)) {
+            pinnedSongs.push(song);
+        } else {
+            otherSongs.push(song);
+        }
+    }
+
+    // Sort pinned songs by their position in the pins array
+    pinnedSongs.sort((a, b) => pins.indexOf(a.id) - pins.indexOf(b.id));
+
+    // Render with pinned songs first, then others sorted by canonical_rank
+    const reordered = [...pinnedSongs, ...otherSongs];
+    renderResults(reordered.slice(0, 50), '');
+
+    return reordered;
+}
+
+/**
+ * Get count of songs matching a collection query
+ * Uses simplified tag matching for performance
+ */
+function getCollectionSongCount(query) {
+    if (!allSongs.length) return 0;
+
+    // Parse the query to extract tag filters
+    const tagMatch = query.match(/tag:(\w+)/i);
+    if (!tagMatch) return 0;
+
+    const tag = tagMatch[1].toLowerCase();
+    return allSongs.filter(song => {
+        if (!song.tags || typeof song.tags !== 'object') return false;
+        // Tags are stored as object keys (e.g., { Bluegrass: {score: 50}, ... })
+        const tagKeys = Object.keys(song.tags);
+        return tagKeys.some(t => t.toLowerCase() === tag);
+    }).length;
+}
+
+/**
+ * Show the landing page (home view)
+ */
+function showLandingPage() {
+    showView('home');
+    pushHistoryState('home');
 }
 
 function handleDeepLink() {
@@ -415,11 +608,19 @@ function handleDeepLink() {
             pushHistoryState('list', { listId }, true);
         }
         return true;
+    } else if (hash === '#search') {
+        // Search view without query
+        trackDeepLink('search', hash);
+        searchInput.value = '';
+        showView('search');
+        pushHistoryState('search', {}, true);
+        return true;
     } else if (hash.startsWith('#search/')) {
         const query = decodeURIComponent(hash.slice(8));
         trackDeepLink('search', hash);
         searchInput.value = query;
         search(query);
+        showView('search');
         pushHistoryState('search', { query }, true);
         return true;
     }
@@ -526,12 +727,8 @@ async function loadIndex() {
         });
         setSongGroups(groups);
 
-        // Update subtitle with song count
+        // Count distinct song titles (for stats display)
         const distinctTitles = new Set(songs.map(s => s.title?.toLowerCase())).size;
-        const subtitle = document.getElementById('subtitle');
-        if (subtitle) {
-            subtitle.textContent = `${distinctTitles.toLocaleString()} songs with chords`;
-        }
 
         if (resultsDiv) {
             resultsDiv.innerHTML = '';
@@ -540,14 +737,16 @@ async function loadIndex() {
             searchStats.textContent = `${distinctTitles.toLocaleString()} songs`;
         }
 
+        // Render collection cards on landing page
+        renderCollectionCards();
+
         // Enable browser history navigation
         setHistoryInitialized(true);
 
-        // Handle deep links or show default view
+        // Handle deep links or show landing page by default
         if (!handleDeepLink()) {
-            showRandomSongs();
-            searchInput?.focus();
-            history.replaceState({ view: 'search' }, '', window.location.pathname);
+            showView('home');
+            history.replaceState({ view: 'home' }, '', window.location.pathname);
         }
     } catch (error) {
         console.error('Failed to load index:', error);
@@ -1343,6 +1542,17 @@ function init() {
         navSearch
     });
 
+    // Update URL when user types in search (debounced, uses replaceState to avoid history spam)
+    let urlUpdateTimeout = null;
+    searchInput?.addEventListener('input', (e) => {
+        if (urlUpdateTimeout) clearTimeout(urlUpdateTimeout);
+        urlUpdateTimeout = setTimeout(() => {
+            const query = e.target.value.trim();
+            // Use replaceState so back button goes to previous page, not previous keystroke
+            pushHistoryState('search', { query }, true);
+        }, 500);
+    });
+
     initTagDropdown({
         searchInput,
         tagDropdownBtn,
@@ -1389,9 +1599,10 @@ function init() {
 
     // Home buttons - go home
     const goHome = () => {
-        navigateTo('search');
+        closeSidebar();
         searchInput.value = '';
-        showRandomSongs();
+        showView('home');
+        pushHistoryState('home');
     };
 
     logoLink?.addEventListener('click', (e) => {
@@ -1399,11 +1610,32 @@ function init() {
         goHome();
     });
 
+    // Report bug link
+    const reportBugLink = document.getElementById('report-bug-link');
+    reportBugLink?.addEventListener('click', (e) => {
+        e.preventDefault();
+        openContactModal('Report a Bug', '');
+    });
+
     // Navigation
     navSearch?.addEventListener('click', () => navigateTo('search'));
     navAddSong?.addEventListener('click', () => navigateTo('add-song'));
     navFavorites?.addEventListener('click', () => navigateTo('favorites'));
     editorBackBtn?.addEventListener('click', () => navigateTo('search'));
+
+    // Landing page search - switches to search view on input
+    landingSearchInput?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            const query = landingSearchInput.value.trim();
+            if (query) {
+                searchInput.value = query;
+                search(query);
+                showView('search');
+                pushHistoryState('search', { query });
+                landingSearchInput.value = '';
+            }
+        }
+    });
 
     // Account modal
     accountModalClose?.addEventListener('click', closeAccountModal);
