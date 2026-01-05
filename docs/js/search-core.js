@@ -8,6 +8,7 @@ import {
     isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, isViewingOwnList
 } from './lists.js';
 import { openSong, showVersionPicker } from './song-view.js';
+import { openWork } from './work-view.js';
 import { trackSearch as analyticsTrackSearch, trackSearchResultClick } from './analytics.js';
 
 // DOM element references (set by init)
@@ -682,7 +683,15 @@ function setupResultEventListeners(resultsDiv) {
             if (versions.length > 1) {
                 showVersionPicker(groupId, { fromList });
             } else {
-                openSong(resultItem.dataset.id, { fromList });
+                const songId = resultItem.dataset.id;
+                const song = allSongs.find(s => s.id === songId);
+                // Use openWork for tablature-only works (no lead sheet content)
+                const hasTabOnly = song && song.tablature_parts?.length > 0 && !song.content;
+                if (hasTabOnly) {
+                    openWork(songId);
+                } else {
+                    openSong(songId, { fromList });
+                }
             }
         }
     });

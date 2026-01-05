@@ -305,6 +305,13 @@ export async function openWork(workId, options = {}) {
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
 
+    // Reset tablature state for new work
+    setLoadedTablature(null);
+    if (tablaturePlayer) {
+        tablaturePlayer.stop();
+        setTablaturePlayer(null);
+    }
+
     currentWork = song;
     availableParts = buildPartsFromIndex(song);
     setCurrentSong(song);

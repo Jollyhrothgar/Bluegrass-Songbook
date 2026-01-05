@@ -52,6 +52,7 @@ import {
     trackTagSuggest, endSongView, trackTagsExpand
 } from './analytics.js';
 import { openFlagModal } from './flags.js';
+import { openWork } from './work-view.js';
 
 // DOM element references (set by init)
 let songViewEl = null;
@@ -1649,9 +1650,17 @@ export async function showVersionPicker(groupId, options = {}) {
     versionListEl.querySelectorAll('.version-item').forEach(item => {
         item.addEventListener('click', (e) => {
             if (e.target.closest('.vote-btn')) return;
-            trackVersionPicker(groupId, 'select', item.dataset.songId);
+            const songId = item.dataset.songId;
+            trackVersionPicker(groupId, 'select', songId);
             closeVersionPicker();
-            openSong(item.dataset.songId, openOptions);
+            // Use openWork for tablature-only works to get track mixer
+            const song = allSongs.find(s => s.id === songId);
+            const hasTabOnly = song && song.tablature_parts?.length > 0 && !song.content;
+            if (hasTabOnly) {
+                openWork(songId);
+            } else {
+                openSong(songId, openOptions);
+            }
         });
     });
 
