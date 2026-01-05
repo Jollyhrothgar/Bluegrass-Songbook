@@ -11,6 +11,10 @@
 set -e
 
 SECONDS=0  # Track elapsed time
+STAGE_START=0
+DEPS_TIME=0
+ENRICH_TIME=0
+BUILD_TIME=0
 
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
@@ -35,24 +39,34 @@ echo ""
 
 # Install dependencies (unless --quick)
 if [ "$QUICK" = false ]; then
+    STAGE_START=$SECONDS
     echo "Installing dependencies..."
     uv sync
+    DEPS_TIME=$((SECONDS - STAGE_START))
     echo ""
 fi
 
 # Enrich songs (add provenance, normalize chords)
 if [ "$SKIP_ENRICH" = false ]; then
+    STAGE_START=$SECONDS
     echo "Enriching songs..."
     uv run python3 scripts/lib/enrich_songs.py
+    ENRICH_TIME=$((SECONDS - STAGE_START))
     echo ""
 fi
 
 # Build search index from works/ (with tag enrichment for grassiness + covering artists)
+STAGE_START=$SECONDS
 echo "Building search index..."
 uv run python3 scripts/lib/build_works_index.py
+BUILD_TIME=$((SECONDS - STAGE_START))
 
 echo ""
-elapsed=$SECONDS
-echo "Bootstrap complete! (${elapsed}s)"
+echo "Bootstrap complete! (${SECONDS}s total)"
+echo "  Timing breakdown:"
+[ "$QUICK" = false ] && echo "    - Dependencies: ${DEPS_TIME}s"
+[ "$SKIP_ENRICH" = false ] && echo "    - Enrichment: ${ENRICH_TIME}s"
+echo "    - Build index: ${BUILD_TIME}s"
+echo ""
 echo "  - Run './scripts/server' to start the frontend"
 echo "  - Visit http://localhost:8080"
