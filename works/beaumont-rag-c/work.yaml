@@ -1,0 +1,19 @@
+id: beaumont-rag-c
+title: "Beaumont Rag (C)"
+tags: [Instrumental, Bluegrass, Scruggs]
+parts:
+  - type: tablature
+    instrument: banjo
+    format: otf
+    file: banjo.otf.json
+    default: true
+    provenance:
+      source: banjo-hangout
+      source_id: '11557'
+      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/beaumont_rag-2690.tef
+      author: "schlange"
+      imported_at: '2026-01-04'
+      tef_format: v2
+      tef_time_sig: 4/4
+      tef_tracks: 3
+      tef_events: 256

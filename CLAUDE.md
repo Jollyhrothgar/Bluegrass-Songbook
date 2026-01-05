@@ -82,11 +82,12 @@ Bluegrass-Songbook/
 │       ├── id_mapping.json  # Legacy ID → work slug mapping
 │       └── posts.json       # Blog manifest
 │
-├── sources/                 # LEGACY: Original song sources
+├── sources/                 # Song and tab sources
 │   ├── classic-country/     # ~17,000 parsed songs (migrated to works/)
 │   ├── golden-standard/     # 86 curated bluegrass standards
 │   ├── manual/              # Hand-created songs
 │   ├── tunearch/            # ABC fiddle tunes
+│   ├── banjo-hangout/       # Banjo tabs from Banjo Hangout (TEF→OTF)
 │   └── bluegrass-lyrics/    # Additional lyrics source
 │
 ├── scripts/                 # CLI tools
@@ -151,6 +152,7 @@ The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 | **Frontend** | `docs/` | `docs/js/CLAUDE.md` |
 | **Works/Tablature** | `docs/js/work-view.js`, `docs/js/renderers/` | `docs/js/CLAUDE.md` |
 | **Parser** | `sources/classic-country/src/` | `sources/classic-country/src/CLAUDE.md` |
+| **Banjo Hangout tabs** | `sources/banjo-hangout/` | `sources/banjo-hangout/CLAUDE.md` |
 | **Build pipeline** | `scripts/lib/` | `scripts/lib/CLAUDE.md` |
 | **ChordPro syntax** | `.claude/skills/chordpro/` | `SKILL.md` (auto-invoked) |
 | **GitHub project** | `.claude/skills/github-project/` | `SKILL.md` (milestones, issues, labels) |

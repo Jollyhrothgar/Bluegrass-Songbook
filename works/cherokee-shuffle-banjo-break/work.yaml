@@ -1,0 +1,19 @@
+id: cherokee-shuffle-banjo-break
+title: "Cherokee Shuffle (Banjo Break)"
+tags: [Instrumental, Scruggs]
+parts:
+  - type: tablature
+    instrument: banjo
+    format: otf
+    file: banjo.otf.json
+    default: true
+    provenance:
+      source: banjo-hangout
+      source_id: '10277'
+      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/cherokee_shuffle_(banjo_break)-191.tef
+      author: "schlange"
+      imported_at: '2026-01-04'
+      tef_format: v2
+      tef_time_sig: 4/4
+      tef_tracks: 0
+      tef_events: 301

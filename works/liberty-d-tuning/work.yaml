@@ -1,0 +1,19 @@
+id: liberty-d-tuning
+title: "Liberty (D tuning)"
+tags: [Instrumental, Bluegrass, Scruggs]
+parts:
+  - type: tablature
+    instrument: banjo
+    format: otf
+    file: banjo.otf.json
+    default: true
+    provenance:
+      source: banjo-hangout
+      source_id: '10776'
+      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/liberty_(d_tuning)-1058.tef
+      author: "schlange"
+      imported_at: '2026-01-04'
+      tef_format: v2
+      tef_time_sig: 4/4
+      tef_tracks: 0
+      tef_events: 111

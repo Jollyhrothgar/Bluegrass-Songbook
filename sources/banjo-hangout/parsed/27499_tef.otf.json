@@ -1,0 +1,41 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Temperance Reel (Standard G)",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [],
+  "notation": {},
+  "reading_list": [
+    {
+      "from_measure": 1,
+      "to_measure": 9
+    },
+    {
+      "from_measure": 1,
+      "to_measure": 8
+    },
+    {
+      "from_measure": 10,
+      "to_measure": 18
+    },
+    {
+      "from_measure": 11,
+      "to_measure": 17
+    },
+    {
+      "from_measure": 19,
+      "to_measure": 19
+    }
+  ],
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/tab-temperance-reel-27499-7151226102024.tef",
+    "author": "LyleK",
+    "converted_at": "2026-01-03T22:37:35.954445"
+  }
+}

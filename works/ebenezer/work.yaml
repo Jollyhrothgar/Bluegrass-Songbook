@@ -14,3 +14,12 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/e/tab-ebenezer-17228-22270552012.tef
+    author: Julian44_4
+    imported_at: '2026-01-03'

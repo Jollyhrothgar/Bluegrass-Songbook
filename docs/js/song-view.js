@@ -490,7 +490,8 @@ async function loadAndRenderTablature(song, containerId) {
         const track = otf.tracks[0];
         const notation = otf.notation[track.id];
         const renderer = new TabRenderer(tabContainer, { showLyrics: false });
-        renderer.render(track, notation, otf.timing?.ticks_per_beat || 480);
+        const timeSignature = otf.metadata?.time_signature || '4/4';
+        renderer.render(track, notation, otf.timing?.ticks_per_beat || 480, timeSignature);
 
         // Set up player
         if (!tablaturePlayer) {
@@ -1587,13 +1588,42 @@ export async function showVersionPicker(groupId, options = {}) {
         const voteCount = voteCounts[song.id] || 0;
         const hasVoted = userVotes[song.id] ? 'voted' : '';
         const isCurrent = song.id === currentSongId;
-        const versionLabel = song.version_label || (song.key ? `Key of ${song.key}` : 'Original');
-        const versionMeta = [
-            song.arrangement_by ? `by ${song.arrangement_by}` : '',
-            song.key ? `Key: ${song.key}` : '',
-            song.version_type ? song.version_type : '',
-            song.nashville ? `${song.nashville.length} chords` : ''
-        ].filter(Boolean).join(' • ');
+
+        // Build version label - prefer tab author for tab-only songs
+        const tabPart = song.tablature_parts?.[0];
+        const hasTabOnly = tabPart && !song.content;
+        let versionLabel = song.version_label;
+
+        // Check for title variations (e.g., "Angeline Baker (C)" vs "Angeline Baker (D)")
+        // Extract any parenthetical suffix that differs from the base title
+        const baseTitle = versions[0].title;
+        const titleSuffix = song.title !== baseTitle ? song.title.replace(baseTitle, '').trim() : '';
+
+        if (!versionLabel) {
+            if (titleSuffix) {
+                // Use title variation as the label (e.g., "(C)", "(D)")
+                versionLabel = titleSuffix;
+                if (hasTabOnly && tabPart?.author) {
+                    versionLabel += ` • Tab by ${tabPart.author}`;
+                }
+            } else if (hasTabOnly && tabPart?.author) {
+                versionLabel = `Tab by ${tabPart.author}`;
+            } else if (song.key) {
+                versionLabel = `Key of ${song.key}`;
+            } else {
+                versionLabel = 'Original';
+            }
+        }
+
+        // Build version meta with tab source info
+        const metaParts = [];
+        if (song.arrangement_by) metaParts.push(`by ${song.arrangement_by}`);
+        if (tabPart?.source === 'banjo-hangout') metaParts.push('Banjo Hangout');
+        if (tabPart?.instrument) metaParts.push(tabPart.instrument);
+        if (song.key && !hasTabOnly) metaParts.push(`Key: ${song.key}`);
+        if (song.version_type) metaParts.push(song.version_type);
+        if (song.nashville && !hasTabOnly) metaParts.push(`${song.nashville.length} chords`);
+        const versionMeta = metaParts.join(' • ');
 
         const firstLine = song.first_line ? song.first_line.substring(0, 60) + (song.first_line.length > 60 ? '...' : '') : '';
 

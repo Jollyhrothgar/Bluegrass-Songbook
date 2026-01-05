@@ -1,0 +1,19 @@
+id: cattle-in-the-cane
+title: "Cattle In The Cane"
+tags: [Instrumental, Clawhammer]
+parts:
+  - type: tablature
+    instrument: banjo
+    format: otf
+    file: banjo.otf.json
+    default: true
+    provenance:
+      source: banjo-hangout
+      source_id: '18779'
+      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cattle-in-the-c-18779-37622852013.tef
+      author: "delmando"
+      imported_at: '2026-01-04'
+      tef_format: v2
+      tef_time_sig: 4/4
+      tef_tracks: 2
+      tef_events: 311

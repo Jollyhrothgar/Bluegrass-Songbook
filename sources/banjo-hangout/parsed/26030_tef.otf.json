@@ -1,0 +1,25 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Lonesome Moonlight Waltz",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [],
+  "notation": {},
+  "reading_list": [
+    {
+      "from_measure": 1,
+      "to_measure": 65
+    }
+  ],
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/tab-lonesome-moonli-26030-312922322023.tef",
+    "author": "Bill H",
+    "converted_at": "2026-01-03T22:37:36.234220"
+  }
+}

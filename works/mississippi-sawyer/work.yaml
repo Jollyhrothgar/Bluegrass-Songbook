@@ -1,15 +1,19 @@
 id: mississippi-sawyer
-title: Mississippi Sawyer
-artist: Traditional
-default_key: G
-tags:
-- Instrumental
-- OldTime
+title: "Mississippi Sawyer"
+tags: [Instrumental]
 parts:
-- type: lead-sheet
-  format: chordpro
-  file: lead-sheet.pro
-  default: true
-  provenance:
-    source: tunearch
-    imported_at: '2026-01-02'
+  - type: tablature
+    instrument: banjo
+    format: otf
+    file: banjo.otf.json
+    default: true
+    provenance:
+      source: banjo-hangout
+      source_id: '14699'
+      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/m/tab-mississippi-saw-14699-4950152522011.tef
+      author: "hum"
+      imported_at: '2026-01-04'
+      tef_format: v2
+      tef_time_sig: 4/4
+      tef_tracks: 2
+      tef_events: 252

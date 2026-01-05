@@ -216,7 +216,7 @@ function pushHistoryState(view, data = {}, replace = false) {
             if (data.listId) {
                 hash = `#list/${data.listId}/${data.songId}`;
             } else {
-                hash = `#song/${data.songId}`;
+                hash = `#work/${data.songId}`;
             }
             break;
         case 'add-song':
@@ -368,9 +368,9 @@ function handleDeepLink() {
         openWork(workId, { partId, fromDeepLink: true });
         return true;
     } else if (hash.startsWith('#song/')) {
+        // Legacy route - redirect to #work/
         const songId = hash.slice(6);
-        trackDeepLink('song', hash);
-        openSong(songId, { fromDeepLink: true });
+        window.location.hash = `#work/${songId}`;
         return true;
     } else if (hash === '#add') {
         trackDeepLink('add', hash);

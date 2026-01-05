@@ -4398,6 +4398,11 @@ body.fullscreen-mode::after {
     margin-bottom: 1rem;
     padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--border);
+    color: var(--text);
+}
+
+.track-info strong {
+    color: var(--text);
 }
 
 .instrument-icon {
@@ -4406,8 +4411,22 @@ body.fullscreen-mode::after {
 
 .tuning-display {
     display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.tuning-name {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.tuning-notes {
+    display: flex;
     gap: 0.25rem;
     align-items: center;
+    opacity: 0.8;
 }
 
 .tuning-string {
@@ -4811,6 +4830,106 @@ body.fullscreen-mode::after {
     font-weight: 500;
 }
 
+/* Track mixer */
+.tab-track-mixer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    border-top: 1px solid var(--border);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tab-track-mixer .mixer-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.track-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.8rem;
+}
+
+.track-toggle:hover {
+    border-color: var(--accent);
+}
+
+.track-toggle:has(.track-checkbox:checked) {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.track-checkbox {
+    display: none;
+}
+
+.track-icon {
+    font-size: 1rem;
+}
+
+.track-name {
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Multi-track display */
+.tablature-all-tracks {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tablature-track-section {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tablature-track-section.backup-track {
+    border-color: var(--border);
+    opacity: 0.9;
+}
+
+.tablature-track-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.tablature-track-header .track-icon {
+    font-size: 1.1rem;
+}
+
+.tablature-track-header .track-name {
+    max-width: none;
+    text-transform: capitalize;
+}
+
+.tablature-track-header .track-role {
+    color: var(--text-secondary);
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
 /* Metronome toggle */
 .tab-metronome-toggle {
     display: flex;
@@ -4846,10 +4965,77 @@ body.fullscreen-mode::after {
     border-color: var(--accent);
 }
 
+/* Repeat toggle */
+.tab-repeat-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    transition: all 0.2s;
+    font-size: 0.85rem;
+}
+
+.tab-repeat-toggle:hover {
+    border-color: var(--accent);
+}
+
+.tab-repeat-checkbox {
+    display: none;
+}
+
+.tab-repeat-label {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.tab-repeat-toggle:has(.tab-repeat-checkbox:checked) {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.tab-repeat-toggle:has(.tab-repeat-checkbox:checked) .tab-repeat-label {
+    opacity: 1;
+    color: var(--bg);
+}
+
 /* Beat cursor */
 .beat-cursor {
     pointer-events: none;
     transition: x 0.016s linear;
+}
+
+/* Tab attribution */
+.tab-attribution {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+.attribution-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.attribution-item a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.attribution-item a:hover {
+    text-decoration: underline;
+}
+
+.attribution-disclaimer {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-style: italic;
 }
 
 .part-panel {

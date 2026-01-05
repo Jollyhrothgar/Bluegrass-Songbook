@@ -1,0 +1,34 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Salt Creek",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "guitar",
+      "instrument": "6-string-guitar",
+      "tuning": [
+        "E4",
+        "B3",
+        "G3",
+        "D3",
+        "A2",
+        "E2"
+      ],
+      "capo": 0,
+      "role": "rhythm"
+    }
+  ],
+  "notation": {},
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-salt-creek-24741-255192122021.tef",
+    "author": "stratovarious520",
+    "converted_at": "2026-01-03T22:37:35.772668"
+  }
+}

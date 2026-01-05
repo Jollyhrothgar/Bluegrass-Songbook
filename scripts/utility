@@ -62,6 +62,29 @@ show_help() {
     echo "        ./scripts/utility search \"tag:bluegrass tag:jamfriendly\""
     echo "        ./scripts/utility search \"artist:ralph stanley key:G\""
     echo ""
+    echo "  banjo-scan [--limit N] [--letter L] [--priority] [--max-priority N]"
+    echo "      Scan Banjo Hangout for available tabs"
+    echo "      --priority: Only scan for tabs matching our priority list"
+    echo "      --max-priority N: Max tier (1-5=essential, 6-10=common, default: 5)"
+    echo ""
+    echo "  banjo-download [--limit N]"
+    echo "      Download TEF files from Banjo Hangout"
+    echo ""
+    echo "  banjo-convert [--limit N]"
+    echo "      Convert downloaded TEF files to OTF format"
+    echo ""
+    echo "  banjo-import [--limit N] [--dry-run]"
+    echo "      Import converted tabs to works/ directory"
+    echo ""
+    echo "  banjo-stats"
+    echo "      Show Banjo Hangout catalog statistics"
+    echo ""
+    echo "  banjo-priorities"
+    echo "      Show priority list statistics (tune list + works)"
+    echo ""
+    echo "  banjo-convert-file <tef_path> [output_path]"
+    echo "      Convert a single TEF file to OTF (standalone, no catalog)"
+    echo ""
 }
 
 case "$COMMAND" in
@@ -157,6 +180,41 @@ case "$COMMAND" in
             exit 1
         fi
         uv run python3 scripts/lib/search_index.py "$@"
+        ;;
+    banjo-scan)
+        echo "Scanning Banjo Hangout for tabs..."
+        uv run python3 sources/banjo-hangout/src/batch_import.py scan "$@"
+        ;;
+    banjo-download)
+        echo "Downloading TEF files from Banjo Hangout..."
+        uv run python3 sources/banjo-hangout/src/batch_import.py download "$@"
+        ;;
+    banjo-convert)
+        echo "Converting TEF files to OTF format..."
+        uv run python3 sources/banjo-hangout/src/batch_import.py convert "$@"
+        ;;
+    banjo-import)
+        echo "Importing tabs to works/ directory..."
+        uv run python3 sources/banjo-hangout/src/batch_import.py import "$@"
+        echo ""
+        echo "Rebuilding index..."
+        uv run python3 scripts/lib/build_works_index.py
+        echo ""
+        echo "Done!"
+        ;;
+    banjo-stats)
+        uv run python3 sources/banjo-hangout/src/batch_import.py stats
+        ;;
+    banjo-priorities)
+        uv run python3 sources/banjo-hangout/src/batch_import.py priorities
+        ;;
+    banjo-convert-file)
+        if [ -z "$1" ]; then
+            echo "Error: TEF file path required"
+            echo "Usage: ./scripts/utility banjo-convert-file <tef_path> [output_path]"
+            exit 1
+        fi
+        uv run python3 sources/banjo-hangout/src/batch_import.py convert-file "$@"
         ;;
     help|--help|-h|"")
         show_help

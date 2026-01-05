@@ -1,0 +1,59 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Farewell Blues",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    },
+    {
+      "id": "guitar",
+      "instrument": "6-string-guitar",
+      "tuning": [
+        "G4",
+        "D4",
+        "A#3",
+        "F3",
+        "C3",
+        "G2"
+      ],
+      "capo": 0,
+      "role": "rhythm"
+    },
+    {
+      "id": "bass",
+      "instrument": "upright-bass",
+      "tuning": [
+        "G2",
+        "D2",
+        "A1",
+        "E1"
+      ],
+      "capo": 0,
+      "role": "rhythm"
+    }
+  ],
+  "notation": {},
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/f/tab-farewell-blues-12208-28511911112009.tef",
+    "author": "KI4PRK",
+    "converted_at": "2026-01-03T22:37:36.367446"
+  }
+}
