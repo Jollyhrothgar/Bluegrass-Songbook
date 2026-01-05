@@ -45,25 +45,48 @@ docs/
 
 ### State Variables
 
+State is managed via a **reactive pub/sub system** in `state.js`. Variables have getters/setters that notify subscribers on change:
+
 ```javascript
-// Core state
+// Reactive pattern example:
+import { currentSong, setCurrentSong, subscribe } from './state.js';
+
+// Subscribe to state changes
+subscribe('currentSong', (newSong, oldSong) => {
+    console.log('Song changed from', oldSong?.title, 'to', newSong?.title);
+});
+
+// Update state (triggers subscribers)
+setCurrentSong(song);
+```
+
+**Core state:**
+```javascript
 let allSongs = [];              // Array of song objects (loaded from index.jsonl)
 let songGroups = {};            // Map of group_id → [songs] for versions
 let currentSong = null;         // Currently viewed song
 let currentChordpro = null;     // Raw ChordPro content
+let currentView = 'search';     // 'search' | 'song' | 'work' | 'add-song' | 'blog'
+```
 
-// Works/tablature state
-let loadedTablature = null;     // Currently loaded tablature data
+**Works/tablature state:**
+```javascript
+let loadedTablature = null;     // Currently loaded OTF tablature data
 let tablaturePlayer = null;     // Active TabPlayer instance
+let activePartTab = 0;          // Currently selected part index in work view
+```
 
-// Display modes
-let showingFavorites = false;   // Favorites filter active
+**Display modes:**
+```javascript
 let nashvilleMode = false;      // Show Nashville numbers
+let compactMode = false;        // Reduce whitespace
 let currentDetectedKey = null;  // Current key (for transposition)
 let chordDisplayMode = 'all';   // 'all' | 'first' | 'none'
-let currentFontSize = 16;       // Font size in pixels
+let fontSizeLevel = 2;          // Index into FONT_SIZES array
+```
 
-// User data
+**User data:**
+```javascript
 let favorites = new Set();      // Song IDs (localStorage or synced)
 let userLists = [];             // Custom user lists (via supabase-auth.js)
 ```
@@ -161,6 +184,39 @@ renderers/
 - Note highlighting during playback
 - Measure navigation
 - Loop sections
+
+### openSong vs openWork Routing
+
+There are two rendering paths for displaying content:
+
+| Function | Use Case | Features |
+|----------|----------|----------|
+| `openSong(id)` | Lead sheets, songs with lyrics | ChordPro rendering, transposition |
+| `openWork(id)` | Tablature-only works, multi-part works | Part tabs, track mixer, full tablature controls |
+
+**Important**: For tablature-only works (no `content` field), always use `openWork` to get the track mixer. The search-core.js and version picker both check for this:
+
+```javascript
+const hasTabOnly = song.tablature_parts?.length > 0 && !song.content;
+if (hasTabOnly) {
+    openWork(songId);  // Shows track mixer for multi-track tabs
+} else {
+    openSong(songId);  // Standard song view
+}
+```
+
+### Track Mixer (Multi-Track Tablature)
+
+Multi-track tabs (e.g., ensemble arrangements with guitar, banjo, mandolin, bass) show a track mixer:
+
+- Appears above the tablature when OTF has multiple tracks
+- Toggle visibility of each track
+- Solo a single track
+- Shows instrument icon and name per track
+
+**Track detection** is based on the `instrument` field in the OTF:
+- `5-string-banjo`, `6-string-guitar`, `mandolin`, `upright-bass`, etc.
+- Falls back to track index if no instrument name
 
 ### Transposition
 
@@ -286,6 +342,33 @@ Songs in `index.jsonl`:
 - `version_label`: Display name ("Simplified", "Original", etc.)
 - `version_type`: Category (alternate, cover, simplified, live)
 - `arrangement_by`: Who created this arrangement
+
+**Tablature fields** (for works with tabs):
+```json
+{
+  "tablature_parts": [{
+    "instrument": "banjo",
+    "label": "banjo",
+    "file": "data/tabs/red-haired-boy-banjo.otf.json",
+    "source": "banjo-hangout",
+    "source_id": "1687",
+    "author": "schlange"
+  }],
+  "abc_content": "X:1\nT:Red Haired Boy\n..."  // For fiddle tunes
+}
+```
+
+### Version Picker Labels
+
+The version picker (`showVersionPicker()`) generates labels based on content type:
+
+| Content Type | Label | Metadata |
+|-------------|-------|----------|
+| Tab-only work | "Tab by {author}" or title suffix | "Banjo Hangout • banjo" |
+| ABC notation | "Fiddle notation" | "Notation • TuneArch • Key: G" |
+| Lead sheet | "Key of {key}" | "{N} chords" |
+
+This prevents confusing labels like showing "Banjo Hangout" for a work that primarily displays ABC notation.
 
 ## Dependencies
 

@@ -87,6 +87,28 @@ scripts/lib/
 ./scripts/utility strum-machine-match
 ```
 
+## Bootstrap Timing
+
+Bootstrap now shows elapsed time and per-stage breakdown:
+
+```
+Bootstrap complete! (45s total)
+  Timing breakdown:
+    - Enrichment: 12s
+    - Build index: 33s
+```
+
+## Performance Notes
+
+The build pipeline uses **pre-computed lookup dicts** to avoid O(n*m) nested loops:
+
+| Operation | Before | After | Savings |
+|-----------|--------|-------|---------|
+| Strum Machine "the" matching | 17k × 52k = 884M | 52k + 17k = 69k | 12,800× faster |
+| Grassiness title lookup | 17k × 56k = 952M | 56k + 17k = 73k | 13,000× faster |
+
+These lookups are built once before the main song loop, then used for O(1) dict access.
+
 ## enrich_songs.py
 
 Enriches `.pro` files with provenance metadata and normalized chord patterns.

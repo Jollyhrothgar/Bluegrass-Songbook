@@ -300,6 +300,29 @@ Downloaded files use two naming patterns:
 - Common issues and fixes (empty notation, wrong articulations, ties, triplets)
 - Code snippets for inspecting raw bytes
 
+### Recent Parser Fixes (2026-01)
+
+| Issue | Fix | File |
+|-------|-----|------|
+| Fingering annotations (0x0c) added to fret | Exclude effect2=0x0c from high-fret calculation | reader.py:1013 |
+| Liberty D-tuning parsed as gDGBD | Parse tuning note names from TEF text as fallback | reader.py |
+| Slides showing as hammer-ons | Check effect1=0x03 before 0x01 | otf.py |
+| Slurs not rendering for close notes | Fixed slur rendering for closely-spaced notes | tablature.js |
+
+### Multi-Track Ensemble Support
+
+Some TEF files have multiple instruments (guitar, bass, mandolin, banjo). These are imported with `instrument: ensemble`:
+
+```yaml
+parts:
+  - type: tablature
+    instrument: ensemble  # Not just "banjo"
+    format: otf
+    file: ensemble.otf.json
+```
+
+The frontend shows a **track mixer** for selecting which instruments to display/solo.
+
 ## Tag Mapping
 
 ### Genres

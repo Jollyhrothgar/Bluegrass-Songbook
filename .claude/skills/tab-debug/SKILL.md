@@ -206,15 +206,19 @@ def get_articulation(evt):
 
 ### Wrong fret on notes with text annotations
 
-**Cause**: V2 format uses bit 5 of fret byte + effect2 for high frets, but text annotations also set bit 5 with effect2=0x06
-**Symptom**: Random notes have wrong fret (e.g., fret 7 instead of fret 1)
-**Fix**: Only add effect2 to fret when effect2 > 0x07 (not a special marker):
+**Cause**: V2 format uses bit 5 of fret byte + effect2 for high frets, but annotations also set bit 5:
+- effect2=0x06: text annotation
+- effect2=0x07: chord overlay
+- effect2=0x0c: fingering annotation
+
+**Symptom**: Random notes have wrong fret (e.g., fret 12 instead of fret 0)
+**Fix**: Only add effect2 to fret when effect2 > 0x0c (not a special marker):
 ```python
 effect2_val = rec[5] if len(rec) > 5 else 0
-if (fret_byte >> 5) & 0x01 and effect2_val > 0x07:
+if (fret_byte >> 5) & 0x01 and effect2_val > 0x0c:
     fret += effect2_val
 ```
-**Files**: `sources/banjo-hangout/src/tef_parser/reader.py` line ~960
+**Files**: `sources/banjo-hangout/src/tef_parser/reader.py` line ~1013
 
 ### Multi-track TEF files show all tracks merged onto one
 

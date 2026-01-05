@@ -120,6 +120,10 @@ Bluegrass-Songbook/
 
 ## Works Architecture
 
+Note: works are generated from sources. We are actively developing right now, and we should treat
+works as emphemeral - e.g. built from sources. E.g. if there is a banjo tab error - do not correct
+the work, instead correct the parser (do this interactively with the user).
+
 Songs are organized in `works/`, where each work is a directory containing:
 
 ```yaml
