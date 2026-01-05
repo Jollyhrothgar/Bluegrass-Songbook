@@ -14,7 +14,9 @@ import argparse
 import hashlib
 import json
 import re
+import shutil
 from pathlib import Path
+from urllib.parse import quote
 
 import yaml
 
@@ -126,7 +128,28 @@ def compute_group_id(title: str, artist: str, lyrics: str) -> str:
         text = re.sub(r'[^a-z0-9]', '', text)
         return text
 
-    base = normalize(title) + '_' + normalize(artist or '')
+    def normalize_title(text: str) -> str:
+        """Normalize title, removing articles for better grouping."""
+        if not text:
+            return ''
+        import unicodedata
+        # Normalize unicode first
+        text = unicodedata.normalize('NFKD', text)
+        text = text.encode('ascii', 'ignore').decode('ascii')
+        text = text.lower()
+        # Remove parenthetical suffixes like (Live), (C), (D)
+        text = re.sub(r'\s*\([^)]*\)\s*$', '', text)
+        # Remove common articles that vary in tune titles (before stripping spaces)
+        # "Angeline the Baker" vs "Angeline Baker"
+        # "The Girl I Left Behind Me" vs "Girl I Left Behind Me"
+        text = re.sub(r'\bthe\b', '', text)
+        text = re.sub(r'\ba\b', '', text)
+        text = re.sub(r'\ban\b', '', text)
+        # Now strip non-alphanumeric
+        text = re.sub(r'[^a-z0-9]', '', text)
+        return text
+
+    base = normalize_title(title) + '_' + normalize(artist or '')
     base_hash = hashlib.md5(base.encode()).hexdigest()[:12]
 
     # Lyrics hash to distinguish different songs with same title
@@ -179,8 +202,15 @@ def build_song_from_work(work_dir: Path) -> dict:
         if detected_key:
             key = detected_key
 
-    # Get provenance from parts
-    if work.get('parts'):
+    # Determine source - priority: lead-sheet x_source > lead-sheet part > tablature part
+    # First check x_source in lead-sheet content (most authoritative for the work itself)
+    if content:
+        x_source_match = re.search(r'\{meta:\s*x_source\s+(\S+)\}', content)
+        if x_source_match:
+            source = x_source_match.group(1)
+
+    # Then check work.yaml parts for provenance
+    if source == 'unknown' and work.get('parts'):
         for part in work['parts']:
             if part.get('type') == 'lead-sheet':
                 prov = part.get('provenance', {})
@@ -246,14 +276,122 @@ def build_song_from_work(work_dir: Path) -> dict:
     if tablature_parts:
         song['tablature_parts'] = []
         for part in tablature_parts:
+            prov = part.get('provenance', {})
             tab_info = {
                 'instrument': part.get('instrument'),
                 'label': part.get('label', part.get('instrument', 'Tab')),
-                'file': f"data/tabs/{work['id']}-{part.get('instrument')}.otf.json"
+                'file': f"data/tabs/{work['id']}-{part.get('instrument')}.otf.json",
+                # Include provenance for attribution
+                'source': prov.get('source'),
+                'source_id': prov.get('source_id'),
+                'author': prov.get('author'),
             }
+            # Build source page URL for banjo-hangout
+            if prov.get('source') == 'banjo-hangout' and prov.get('source_id'):
+                tab_info['source_page_url'] = f"https://www.banjohangout.org/tab/browse.asp?m=detail&v={prov.get('source_id')}"
+                if prov.get('author'):
+                    tab_info['author_url'] = f"https://www.banjohangout.org/my/{quote(prov.get('author'))}"
             song['tablature_parts'].append(tab_info)
 
     return song
+
+
+def fuzzy_group_songs(songs: list) -> list:
+    """
+    Merge group_ids for songs with similar titles that should be grouped together.
+
+    Uses fuzzy matching to handle cases like:
+    - "Angelene Baker" vs "Angeline Baker" (spelling variations)
+    - Minor typos and OCR errors
+    """
+    from difflib import SequenceMatcher
+    import unicodedata
+
+    def normalize_for_fuzzy(text: str) -> str:
+        """Normalize title for fuzzy comparison."""
+        if not text:
+            return ''
+        text = unicodedata.normalize('NFKD', text)
+        text = text.encode('ascii', 'ignore').decode('ascii')
+        text = text.lower()
+        # Remove parenthetical suffixes
+        text = re.sub(r'\s*\([^)]*\)\s*$', '', text)
+        # Remove articles
+        text = re.sub(r'\bthe\b', '', text)
+        text = re.sub(r'\ba\b', '', text)
+        text = re.sub(r'\ban\b', '', text)
+        # Keep spaces for better fuzzy matching
+        text = re.sub(r'[^a-z0-9\s]', '', text)
+        text = ' '.join(text.split())  # Normalize whitespace
+        return text
+
+    def similarity(a: str, b: str) -> float:
+        """Calculate similarity ratio between two strings."""
+        return SequenceMatcher(None, a, b).ratio()
+
+    # Group songs by their current group_id
+    by_group = {}
+    for song in songs:
+        gid = song.get('group_id', '')
+        if gid not in by_group:
+            by_group[gid] = []
+        by_group[gid].append(song)
+
+    # Build normalized title -> group_ids mapping
+    title_to_groups = {}
+    for song in songs:
+        norm_title = normalize_for_fuzzy(song.get('title', ''))
+        if not norm_title:
+            continue
+        gid = song.get('group_id', '')
+        if norm_title not in title_to_groups:
+            title_to_groups[norm_title] = set()
+        title_to_groups[norm_title].add(gid)
+
+    # Find fuzzy matches between different normalized titles
+    # Only check titles that might be similar (same first few chars or similar length)
+    titles = list(title_to_groups.keys())
+    merge_map = {}  # old_group_id -> new_group_id
+
+    SIMILARITY_THRESHOLD = 0.85  # 85% similarity required
+
+    for i, title1 in enumerate(titles):
+        for title2 in titles[i+1:]:
+            # Quick filter: if lengths differ by more than 20%, skip
+            len1, len2 = len(title1), len(title2)
+            if abs(len1 - len2) > max(len1, len2) * 0.2:
+                continue
+
+            # Quick filter: if first 3 chars don't match, skip (catches most non-matches fast)
+            if title1[:3] != title2[:3]:
+                continue
+
+            sim = similarity(title1, title2)
+            if sim >= SIMILARITY_THRESHOLD:
+                # These titles should be grouped together
+                groups1 = title_to_groups[title1]
+                groups2 = title_to_groups[title2]
+
+                # Pick the canonical group_id (prefer the one with more songs)
+                all_groups = groups1 | groups2
+                canonical = max(all_groups, key=lambda g: len(by_group.get(g, [])))
+
+                for gid in all_groups:
+                    if gid != canonical:
+                        merge_map[gid] = canonical
+
+    if merge_map:
+        # Apply merges
+        merged_count = 0
+        for song in songs:
+            old_gid = song.get('group_id', '')
+            if old_gid in merge_map:
+                song['group_id'] = merge_map[old_gid]
+                merged_count += 1
+
+        print(f"Fuzzy grouping: merged {len(merge_map)} groups ({merged_count} songs affected)")
+
+    return songs
 
 
 def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = True):
@@ -287,6 +425,26 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
         for work_id, error in errors:
             print(f"  {work_id}: {error}")
 
+    # Copy tablature files to docs/data/tabs/
+    tabs_dir = Path('docs/data/tabs')
+    tabs_dir.mkdir(parents=True, exist_ok=True)
+    tabs_copied = 0
+    for song in songs:
+        for tab_part in song.get('tablature_parts', []):
+            # tab_part['file'] is like "data/tabs/arkansas-traveler-banjo.otf.json"
+            dest_path = Path('docs') / tab_part['file']
+            # Source is works/{id}/{instrument}.otf.json
+            work_id = song['id']
+            instrument = tab_part.get('instrument', 'banjo')
+            source_path = works_dir / work_id / f"{instrument}.otf.json"
+            if source_path.exists() and (not dest_path.exists() or
+                    source_path.stat().st_mtime > dest_path.stat().st_mtime):
+                dest_path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(source_path, dest_path)
+                tabs_copied += 1
+    if tabs_copied:
+        print(f"Copied {tabs_copied} tablature files to docs/data/tabs/")
+
     # Tag enrichment
     if enrich_tags:
         try:
@@ -318,20 +476,59 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
         try:
             with open(strum_cache_path) as f:
                 strum_cache = json.load(f)
+
+            def normalize_for_strum(title: str) -> str:
+                """Normalize title for Strum Machine matching."""
+                if not title:
+                    return ''
+                title = title.lower().strip()
+                # Remove parenthetical suffixes like (C), (D), (Banjo Break)
+                title = re.sub(r'\s*\([^)]*\)\s*$', '', title)
+                return title
+
             strum_matches = 0
             for song in songs:
                 # Skip if already has SM URL from work.yaml
                 if song.get('strum_machine_url'):
                     strum_matches += 1
                     continue
-                title = song.get('title', '').lower().strip()
-                cached = strum_cache.get(title)
+
+                title = song.get('title', '')
+                norm_title = normalize_for_strum(title)
+
+                # Try exact match first
+                cached = strum_cache.get(norm_title)
+
+                # Try without articles if no match
+                if not cached or cached.get('_no_match'):
+                    # Remove common articles
+                    alt_title = re.sub(r'\bthe\b', '', norm_title).strip()
+                    alt_title = ' '.join(alt_title.split())  # normalize spaces
+                    if alt_title != norm_title:
+                        cached = strum_cache.get(alt_title)
+
+                # Try with "the" if still no match (e.g., "Angeline Baker" -> "Angeline the Baker")
+                if not cached or cached.get('_no_match'):
+                    # Check if adding "the" matches
+                    for key, val in strum_cache.items():
+                        if val.get('_no_match'):
+                            continue
+                        key_no_the = re.sub(r'\bthe\b', '', key).strip()
+                        key_no_the = ' '.join(key_no_the.split())
+                        if key_no_the == norm_title:
+                            cached = val
+                            break
+
                 if cached and not cached.get('_no_match') and 'url' in cached:
                     song['strum_machine_url'] = cached['url']
                     strum_matches += 1
+
             print(f"Strum Machine: {strum_matches}/{len(songs)} songs matched")
         except Exception as e:
             print(f"Strum Machine enrichment failed: {e}")
+
+    # Fuzzy grouping pass - merge similar titles that should be grouped together
+    songs = fuzzy_group_songs(songs)
 
     # Deduplicate (by content for lead sheets, by id for tablature-only)
     seen_content = {}

@@ -146,7 +146,58 @@ Generates `docs/data/index.jsonl` from the `works/` directory.
 3. Reads lead sheet content from `lead-sheet.pro`
 4. Detects key and computes Nashville numbers
 5. Identifies tablature parts and includes their paths
-6. Outputs unified JSON index
+6. Applies fuzzy grouping to merge similar titles
+7. Matches to Strum Machine cache
+8. Outputs unified JSON index
+
+### Version Grouping
+
+Songs are grouped by `group_id` for the version picker. The grouping algorithm:
+
+1. **Title normalization**: Lowercase, remove accents, strip parenthetical suffixes like `(Live)`, `(C)`, `(D)`
+2. **Article removal**: Remove "the", "a", "an" so "Angeline the Baker" matches "Angeline Baker"
+3. **Lyrics hash**: First 200 chars of lyrics distinguish different songs with same title
+4. **Fuzzy matching**: Post-processing pass merges similar titles (85% similarity threshold):
+   - Handles contractions: "Lovin'" ↔ "Loving"
+   - Handles plurals: "Heartache" ↔ "Heartaches"
+   - Handles compound words: "Home Town" ↔ "Hometown"
+
+### Source Priority
+
+When determining the work's source for attribution:
+
+1. **x_source in lead-sheet content** (highest priority) - e.g., `{meta: x_source tunearch}`
+2. **Lead-sheet part provenance** from work.yaml
+3. **Tablature part provenance** (fallback)
+
+This ensures works with both a TuneArch lead sheet and a Banjo Hangout tab show "tunearch" as the source.
+
+### Tablature Attribution
+
+Tablature parts include provenance for frontend attribution:
+
+```json
+"tablature_parts": [{
+  "instrument": "banjo",
+  "file": "data/tabs/red-haired-boy-banjo.otf.json",
+  "source": "banjo-hangout",
+  "source_id": "1687",
+  "author": "schlange",
+  "source_page_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=1687",
+  "author_url": "https://www.banjohangout.org/my/schlange"
+}]
+```
+
+### Strum Machine Matching
+
+Matches songs to Strum Machine backing tracks using cached results:
+
+1. Normalize title (lowercase, strip parenthetical suffixes)
+2. Try exact match in cache
+3. Try without articles ("the", "a", "an")
+4. Try matching cache keys with articles removed
+
+This handles cases like "Angeline Baker (C)" matching "angeline the baker" in the cache.
 
 ### Usage
 

@@ -1,0 +1,19 @@
+id: devils-dream
+title: "Devil's Dream"
+tags: [Instrumental, Bluegrass, Scruggs]
+parts:
+  - type: tablature
+    instrument: banjo
+    format: otf
+    file: banjo.otf.json
+    default: true
+    provenance:
+      source: banjo-hangout
+      source_id: '27165'
+      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/tab-devils-dream-27165-2159141262024.tef
+      author: "Yohansen"
+      imported_at: '2026-01-04'
+      tef_format: v2
+      tef_time_sig: 2/4
+      tef_tracks: 1
+      tef_events: 125

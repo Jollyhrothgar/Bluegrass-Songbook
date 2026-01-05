@@ -1,0 +1,47 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Dear Old Dixie",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    },
+    {
+      "id": "guitar",
+      "instrument": "6-string-guitar",
+      "tuning": [],
+      "capo": 0,
+      "role": "rhythm"
+    },
+    {
+      "id": "guitar",
+      "instrument": "6-string-guitar",
+      "tuning": [],
+      "capo": 0,
+      "role": "rhythm"
+    }
+  ],
+  "notation": {},
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/tab-dear-old-dixie-11768-323412692009.tef",
+    "author": "KI4PRK",
+    "converted_at": "2026-01-03T22:37:36.131653"
+  }
+}

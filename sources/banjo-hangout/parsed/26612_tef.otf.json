@@ -1,0 +1,33 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "ragtime annie",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    }
+  ],
+  "notation": {},
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/tab-ragtime-annie-26612-33341329102025.tef",
+    "author": "bango",
+    "converted_at": "2026-01-03T22:37:36.021959"
+  }
+}

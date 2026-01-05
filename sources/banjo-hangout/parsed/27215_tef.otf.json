@@ -1,0 +1,33 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Down Yonder",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    }
+  ],
+  "notation": {},
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/tab-down-yonder-27215-44336472024.tef",
+    "author": "RB3",
+    "converted_at": "2026-01-03T22:37:36.451695"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Sledd Ridin'",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "G3",
+        "D3",
+        "A2",
+        "E2",
+        "E2"
+      ],
+      "capo": 0,
+      "role": "lead"
+    },
+    {
+      "id": "guitar",
+      "instrument": "6-string-guitar",
+      "tuning": [
+        "F#4",
+        "C#4",
+        "A3",
+        "E3",
+        "B2",
+        "F#2"
+      ],
+      "capo": 0,
+      "role": "rhythm"
+    },
+    {
+      "id": "bass",
+      "instrument": "upright-bass",
+      "tuning": [
+        "A2",
+        "E2",
+        "B1",
+        "F#1"
+      ],
+      "capo": 0,
+      "role": "rhythm"
+    }
+  ],
+  "notation": {},
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-sledd-ridin-25324-1729131632022.tef",
+    "author": "stratovarious520",
+    "converted_at": "2026-01-03T22:37:36.596499"
+  }
+}

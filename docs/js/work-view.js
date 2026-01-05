@@ -3,6 +3,7 @@
 
 import {
     allSongs,
+    songGroups,
     currentSong, setCurrentSong,
     currentChordpro, setCurrentChordpro,
     loadedTablature, setLoadedTablature,
@@ -16,7 +17,7 @@ import {
     setCurrentView
 } from './state.js';
 
-import { parseChordPro } from './song-view.js';
+import { parseChordPro, showVersionPicker } from './song-view.js';
 import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS } from './chords.js';
 import { escapeHtml } from './utils.js';
 import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
@@ -28,7 +29,216 @@ import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
 let currentWork = null;          // The full work object
 let activePart = null;           // Currently displayed part { type, format, file, ... }
 let availableParts = [];         // All parts for current work
-let tabRenderer = null;          // TabRenderer instance for current tablature
+let trackRenderers = {};         // Map of trackId -> TabRenderer instance
+let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
+
+// ============================================
+// NOTATION HELPERS
+// ============================================
+
+/**
+ * Analyze reading list to detect repeat structures
+ *
+ * Returns an object with:
+ * - repeatSections: [{startMeasure, endMeasure, repeatCount}]
+ * - endings: [{measure, endingNumber}] - measures that are 1st/2nd endings
+ * - repeatStartMarkers: Set of measures where repeat starts (|:)
+ * - repeatEndMarkers: Set of measures where repeat ends (:|)
+ *
+ * Handles patterns like:
+ * - [1-9, 2-8, 10-10]: Section 2-8 repeats, 9 is 1st ending, 10 is 2nd ending
+ * - [11-18, 11-17, 19-19]: Section 11-17 repeats, 18 is 1st ending, 19 is 2nd ending
+ */
+function analyzeReadingList(readingList) {
+    if (!readingList || readingList.length === 0) {
+        return { repeatSections: [], endings: {}, repeatStartMarkers: new Set(), repeatEndMarkers: new Set() };
+    }
+
+    const repeatStartMarkers = new Set();
+    const repeatEndMarkers = new Set();
+    const endings = {}; // measure -> ending number (1, 2, etc.)
+
+    // Look for consecutive entries that share a common subset
+    for (let i = 0; i < readingList.length - 1; i++) {
+        const curr = readingList[i];
+        const next = readingList[i + 1];
+
+        // Check if next entry is a subset of or overlaps with current
+        // Pattern: [A-B] followed by [C-D] where C >= A and D <= B-1 (or C > A and D < B)
+        // This indicates a repeat from C, with measures (D+1 to B) as 1st ending
+
+        const currStart = curr.from_measure;
+        const currEnd = curr.to_measure;
+        const nextStart = next.from_measure;
+        const nextEnd = next.to_measure;
+
+        // Case 1: Next starts inside current and ends before current ends
+        // e.g., [1-9] followed by [2-8] -> repeat at 2, end at 8, 9 is 1st ending
+        if (nextStart > currStart && nextStart <= currEnd &&
+            nextEnd < currEnd && nextEnd >= nextStart) {
+
+            repeatStartMarkers.add(nextStart);
+            repeatEndMarkers.add(nextEnd);
+
+            // Measures from nextEnd+1 to currEnd are 1st ending
+            for (let m = nextEnd + 1; m <= currEnd; m++) {
+                endings[m] = 1;
+            }
+
+            // Check if there's a 2nd ending after the repeat
+            const afterRepeat = readingList[i + 2];
+            if (afterRepeat &&
+                afterRepeat.from_measure === currEnd + 1 &&
+                afterRepeat.to_measure === afterRepeat.from_measure) {
+                endings[afterRepeat.from_measure] = 2;
+            }
+        }
+
+        // Case 2: Same start, different ends
+        // e.g., [11-18] followed by [11-17] -> repeat at 11, end at 17, 18 is 1st ending
+        if (nextStart === currStart && nextEnd < currEnd) {
+            repeatStartMarkers.add(currStart);
+            repeatEndMarkers.add(nextEnd);
+
+            // Measures from nextEnd+1 to currEnd are 1st ending
+            for (let m = nextEnd + 1; m <= currEnd; m++) {
+                endings[m] = 1;
+            }
+
+            // Check for 2nd ending
+            const afterRepeat = readingList[i + 2];
+            if (afterRepeat &&
+                afterRepeat.from_measure === currEnd + 1 &&
+                afterRepeat.to_measure === afterRepeat.from_measure) {
+                endings[afterRepeat.from_measure] = 2;
+            }
+        }
+    }
+
+    return { repeatStartMarkers, repeatEndMarkers, endings };
+}
+
+/**
+ * Build a tick mapping for compact mode visualization
+ *
+ * Returns a function that converts playback tick (expanded) to visual tick (original)
+ * This is needed because in compact mode:
+ * - Display shows original measures (e.g., 1-19)
+ * - Playback uses expanded measures following reading list (e.g., 1-36)
+ *
+ * @param {Array} readingList - Array of {from_measure, to_measure} entries
+ * @param {number} ticksPerMeasure - Ticks per measure for calculations
+ * @returns {Function} Mapping function (playbackTick) => visualTick
+ */
+function buildTickMapping(readingList, ticksPerMeasure) {
+    if (!readingList || readingList.length === 0) {
+        return (tick) => tick; // No mapping needed
+    }
+
+    // Build array of [expandedMeasure, originalMeasure] pairs
+    const measureMapping = [];
+    let expandedMeasure = 1;
+
+    for (const range of readingList) {
+        for (let m = range.from_measure; m <= range.to_measure; m++) {
+            measureMapping.push({ expanded: expandedMeasure, original: m });
+            expandedMeasure++;
+        }
+    }
+
+    return (playbackTick) => {
+        // Find which expanded measure this tick is in
+        const expandedMeasureNum = Math.floor(playbackTick / ticksPerMeasure) + 1;
+        const tickInMeasure = playbackTick % ticksPerMeasure;
+
+        // Look up the original measure
+        const mapping = measureMapping.find(m => m.expanded === expandedMeasureNum);
+        if (!mapping) {
+            return playbackTick; // Fallback
+        }
+
+        // Convert to tick in original measure
+        return (mapping.original - 1) * ticksPerMeasure + tickInMeasure;
+    };
+}
+
+/**
+ * Expand notation according to reading list (repeat structure)
+ *
+ * The reading list defines playback order, e.g.:
+ * [1-9, 2-8, 10-10, 11-18, 11-17, 19-19]
+ * means play measures 1-9, then 2-8, then 10, then 11-18, etc.
+ *
+ * @param {Array} notation - Original notation array (each entry has {measure, events})
+ * @param {Array} readingList - Array of {from_measure, to_measure} entries
+ * @returns {Array} Expanded notation with measures repeated as specified
+ */
+function expandNotationWithReadingList(notation, readingList) {
+    if (!readingList || readingList.length === 0) {
+        return notation;
+    }
+
+    // Build a map of measure number -> notation entry
+    const measureMap = {};
+    for (const entry of notation) {
+        measureMap[entry.measure] = entry;
+    }
+
+    // Expand according to reading list
+    const expanded = [];
+    let newMeasureNum = 1;
+
+    for (const range of readingList) {
+        const from = range.from_measure;
+        const to = range.to_measure;
+
+        for (let m = from; m <= to; m++) {
+            const original = measureMap[m];
+            if (original) {
+                // Clone the measure with new measure number
+                expanded.push({
+                    ...original,
+                    measure: newMeasureNum,
+                    originalMeasure: m  // Keep reference to original for debugging
+                });
+                newMeasureNum++;
+            }
+        }
+    }
+
+    return expanded;
+}
+
+/**
+ * Prepare compact notation with repeat markers
+ *
+ * Returns the original notation with added repeat/ending metadata
+ */
+function prepareCompactNotation(notation, readingList) {
+    if (!readingList || readingList.length === 0) {
+        return notation;
+    }
+
+    const analysis = analyzeReadingList(readingList);
+
+    // Clone notation and add markers
+    return notation.map(measure => {
+        const m = measure.measure;
+        const enhanced = { ...measure };
+
+        if (analysis.repeatStartMarkers.has(m)) {
+            enhanced.repeatStart = true;
+        }
+        if (analysis.repeatEndMarkers.has(m)) {
+            enhanced.repeatEnd = true;
+        }
+        if (analysis.endings[m]) {
+            enhanced.ending = analysis.endings[m];
+        }
+
+        return enhanced;
+    });
+}
 
 // ============================================
 // WORK LOADING
@@ -43,10 +253,12 @@ function buildPartsFromIndex(song) {
 
     // Lead sheet from content
     if (song.content) {
+        // Use "Fiddle" label for tunes with ABC notation
+        const label = song.abc_content ? 'Fiddle' : 'Lead Sheet';
         parts.push({
             type: 'lead-sheet',
             format: 'chordpro',
-            label: 'Lead Sheet',
+            label: label,
             content: song.content,
             default: true
         });
@@ -61,7 +273,13 @@ function buildPartsFromIndex(song) {
                 instrument: tab.instrument,
                 label: tab.label || `${tab.instrument} Tab`,
                 file: tab.file,
-                default: !song.content  // Default if no lead sheet
+                default: !song.content,  // Default if no lead sheet
+                // Provenance info for attribution
+                source: tab.source,
+                source_id: tab.source_id,
+                author: tab.author,
+                source_page_url: tab.source_page_url,
+                author_url: tab.author_url,
             });
         }
     }
@@ -165,10 +383,28 @@ function renderWorkHeader() {
     if (key) metaHtml += `<span class="work-key">Key: ${escapeHtml(key)}</span>`;
     if (tempo) metaHtml += `<span class="work-tempo">${tempo} BPM</span>`;
 
+    // Check for multiple versions
+    const groupId = currentWork?.group_id;
+    const versions = groupId ? (songGroups[groupId] || []) : [];
+    const otherVersionCount = versions.length - 1;
+    const versionHtml = otherVersionCount > 0
+        ? `<button class="see-versions-btn" data-group-id="${groupId}">See ${otherVersionCount} other version${otherVersionCount > 1 ? 's' : ''}</button>`
+        : '';
+
     header.innerHTML = `
         <h1 class="work-title">${escapeHtml(title)}</h1>
         ${metaHtml ? `<div class="work-meta">${metaHtml}</div>` : ''}
+        ${versionHtml}
     `;
+
+    // Wire up version button click handler
+    const versionBtn = header.querySelector('.see-versions-btn');
+    if (versionBtn) {
+        versionBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            showVersionPicker(versionBtn.dataset.groupId);
+        });
+    }
 
     return header;
 }
@@ -416,24 +652,155 @@ async function renderTablaturePart(part, container) {
         }
 
         container.innerHTML = '';
+        trackRenderers = {};
 
         // Create controls
         const controls = createTablatureControls(otf, part);
         container.appendChild(controls);
 
-        // Create tab container
-        const tabContainer = document.createElement('div');
-        tabContainer.className = 'tablature-container';
-        container.appendChild(tabContainer);
+        // Create container for all tracks
+        const allTracksContainer = document.createElement('div');
+        allTracksContainer.className = 'tablature-all-tracks';
+        container.appendChild(allTracksContainer);
 
-        // Render
-        const track = otf.tracks[0];
-        const notation = otf.notation[track.id];
-        tabRenderer = new TabRenderer(tabContainer);
-        tabRenderer.render(track, notation, otf.timing?.ticks_per_beat || 480);
+        const timeSignature = otf.metadata?.time_signature || '4/4';
+        const ticksPerBeat = otf.timing?.ticks_per_beat || 480;
 
-        // Set up player
-        setupTablaturePlayer(otf, controls, tabRenderer);
+        // Determine which track is the "lead" (matches part instrument, or first track)
+        let leadTrackId = otf.tracks[0]?.id;
+        if (part.instrument && otf.tracks.length > 1) {
+            const matchingTrack = otf.tracks.find(t =>
+                t.instrument?.includes(part.instrument) ||
+                t.id?.includes(part.instrument)
+            );
+            if (matchingTrack) {
+                leadTrackId = matchingTrack.id;
+            }
+        }
+
+        // Render each track in its own section
+        for (const track of otf.tracks) {
+            let notation = otf.notation[track.id];
+            if (!notation || notation.length === 0) continue;
+
+            const isLead = track.id === leadTrackId || track.role === 'lead';
+            const isMandolin = track.instrument?.includes('mandolin') || track.id?.includes('mandolin');
+
+            // Skip mandolin backup tracks - chop notation is often buggy in TEF files
+            // Only show mandolin if it's the lead/melody track
+            if (isMandolin && !isLead) {
+                continue;
+            }
+
+            // Apply reading list: either compact (with repeat signs) or expanded (unrolled)
+            if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
+                notation = prepareCompactNotation(notation, otf.reading_list);
+            } else {
+                notation = expandNotationWithReadingList(notation, otf.reading_list);
+            }
+            const icon = INSTRUMENT_ICONS[track.instrument] ||
+                        (track.id.includes('banjo') ? '🪕' :
+                         track.id.includes('mandolin') ? '🎸' :
+                         track.id.includes('guitar') ? '🎸' :
+                         track.id.includes('fiddle') ? '🎻' : '🎵');
+
+            // Create track section with header
+            const trackSection = document.createElement('div');
+            trackSection.className = `tablature-track-section${isLead ? '' : ' backup-track'}`;
+            trackSection.dataset.trackId = track.id;
+            trackSection.style.display = isLead ? 'block' : 'none';
+
+            const trackHeader = document.createElement('div');
+            trackHeader.className = 'tablature-track-header';
+            trackHeader.innerHTML = `
+                <span class="track-icon">${icon}</span>
+                <span class="track-name">${track.id}</span>
+                ${!isLead ? '<span class="track-role">(backup)</span>' : ''}
+            `;
+            trackSection.appendChild(trackHeader);
+
+            const tabContainer = document.createElement('div');
+            tabContainer.className = 'tablature-container';
+            trackSection.appendChild(tabContainer);
+
+            allTracksContainer.appendChild(trackSection);
+
+            // Create renderer for this track
+            const renderer = new TabRenderer(tabContainer);
+            renderer.render(track, notation, ticksPerBeat, timeSignature);
+            trackRenderers[track.id] = renderer;
+        }
+
+        // Wire up track visibility toggles
+        const trackCheckboxes = controls.querySelectorAll('.track-checkbox');
+        trackCheckboxes.forEach(checkbox => {
+            // Set initial checked state to match visibility
+            const trackId = checkbox.dataset.trackId;
+            const trackSection = allTracksContainer.querySelector(`[data-track-id="${trackId}"]`);
+            if (trackSection) {
+                checkbox.checked = trackSection.style.display !== 'none';
+            }
+
+            checkbox.addEventListener('change', () => {
+                const section = allTracksContainer.querySelector(`[data-track-id="${trackId}"]`);
+                if (section) {
+                    section.style.display = checkbox.checked ? 'block' : 'none';
+                }
+            });
+        });
+
+        // Wire up repeat toggle (re-renders with repeat signs or unrolled)
+        const repeatCheckbox = controls.querySelector('.tab-repeat-checkbox');
+        const repeatLabel = controls.querySelector('.tab-repeat-label');
+        if (repeatCheckbox) {
+            repeatCheckbox.addEventListener('change', () => {
+                showRepeatsCompact = repeatCheckbox.checked;
+                if (repeatLabel) {
+                    repeatLabel.textContent = showRepeatsCompact ? 'Repeats' : 'Unrolled';
+                }
+                // Re-render tablature with new mode
+                renderTablaturePart(part, container);
+            });
+        }
+
+        // Set up player with lead track renderer for visualization
+        const leadRenderer = trackRenderers[leadTrackId] || Object.values(trackRenderers)[0];
+        setupTablaturePlayer(otf, controls, leadRenderer);
+
+        // Add attribution section for Banjo Hangout tabs
+        if (part.source === 'banjo-hangout') {
+            const attribution = document.createElement('div');
+            attribution.className = 'tab-attribution';
+
+            let attrHtml = '<div class="attribution-content">';
+
+            // Author credit with link
+            if (part.author) {
+                attrHtml += '<span class="attribution-item">Tabbed by ';
+                if (part.author_url) {
+                    attrHtml += `<a href="${part.author_url}" target="_blank" rel="noopener">${escapeHtml(part.author)}</a>`;
+                } else {
+                    attrHtml += escapeHtml(part.author);
+                }
+                attrHtml += '</span>';
+            }
+
+            // Source link
+            if (part.source_page_url) {
+                attrHtml += `<span class="attribution-item"><a href="${part.source_page_url}" target="_blank" rel="noopener">View on Banjo Hangout</a></span>`;
+            }
+
+            attrHtml += '</div>';
+
+            // Disclaimer
+            attrHtml += '<div class="attribution-disclaimer">';
+            attrHtml += 'This tab was converted from TablEdit format and may contain minor errors. ';
+            attrHtml += 'Please report issues if you notice problems.';
+            attrHtml += '</div>';
+
+            attribution.innerHTML = attrHtml;
+            container.appendChild(attribution);
+        }
 
     } catch (e) {
         console.error('Error loading tablature:', e);
@@ -445,8 +812,45 @@ async function renderTablaturePart(part, container) {
  * Create tablature controls
  */
 function createTablatureControls(otf, part) {
-    const defaultTempo = otf.metadata?.tempo || 120;
+    const defaultTempo = otf.metadata?.tempo || 100;
     const originalKey = currentWork.key || 'G';
+
+    // Filter out mandolin backup tracks (chop notation is often buggy)
+    const filteredTracks = otf.tracks.filter(track => {
+        const isMandolin = track.instrument?.includes('mandolin') || track.id?.includes('mandolin');
+        const isLead = track.role === 'lead' || track.instrument?.includes('banjo') ||
+                       (part.instrument && track.instrument?.includes(part.instrument));
+        return !isMandolin || isLead;
+    });
+
+    // Build track mixer if multiple tracks
+    const trackMixerHtml = filteredTracks.length > 1 ? `
+        <div class="tab-track-mixer">
+            <span class="mixer-label">Tracks:</span>
+            ${filteredTracks.map(track => {
+                const icon = track.instrument?.includes('banjo') ? '🪕' :
+                            track.instrument?.includes('guitar') ? '🎸' :
+                            track.instrument?.includes('mandolin') ? '🎸' :
+                            track.instrument?.includes('bass') ? '🎸' :
+                            track.instrument?.includes('fiddle') ? '🎻' : '🎵';
+                const isLead = track.role === 'lead' || track.instrument?.includes('banjo');
+                return `<label class="track-toggle" title="${track.id}">
+                    <input type="checkbox" class="track-checkbox" data-track-id="${track.id}" ${isLead ? 'checked' : ''}>
+                    <span class="track-icon">${icon}</span>
+                    <span class="track-name">${track.id}</span>
+                </label>`;
+            }).join('')}
+        </div>
+    ` : '';
+
+    // Only show repeat toggle if there's a reading list
+    const hasReadingList = otf.reading_list && otf.reading_list.length > 0;
+    const repeatToggleHtml = hasReadingList ? `
+        <label class="tab-repeat-toggle" title="Toggle repeat notation style">
+            <input type="checkbox" class="tab-repeat-checkbox" ${showRepeatsCompact ? 'checked' : ''}>
+            <span class="tab-repeat-label">${showRepeatsCompact ? 'Repeats' : 'Unrolled'}</span>
+        </label>
+    ` : '';
 
     const controls = document.createElement('div');
     controls.className = 'tab-controls';
@@ -458,6 +862,7 @@ function createTablatureControls(otf, part) {
             <input type="checkbox" class="tab-metronome-checkbox">
             <span class="tab-metronome-icon">🥁</span>
         </label>
+        ${repeatToggleHtml}
         <div class="tab-key-control">
             <label class="tab-key-label">Key:</label>
             <select class="tab-key-select">
@@ -476,6 +881,7 @@ function createTablatureControls(otf, part) {
             <button class="tab-tempo-btn tab-tempo-up">+</button>
             <span class="tab-tempo-label">BPM</span>
         </div>
+        ${trackMixerHtml}
     `;
 
     return controls;
@@ -503,10 +909,20 @@ function setupTablaturePlayer(otf, controls, renderer) {
     let currentTempo = parseInt(tempoInput.value, 10);
     let currentCapo = 0;
 
-    // Playback visualization callbacks
-    player.onTick = (absTick) => renderer.updateBeatCursor(absTick);
-    player.onNoteStart = (absTick) => renderer.highlightNote(absTick);
-    player.onNoteEnd = (absTick) => renderer.clearNoteHighlight(absTick);
+    // Build tick mapping for compact mode visualization
+    // In compact mode, playback ticks are expanded but display is compact
+    const timeSignature = otf.metadata?.time_signature || '4/4';
+    const ticksPerBeat = otf.timing?.ticks_per_beat || 480;
+    const beatsPerMeasure = parseInt(timeSignature.split('/')[0], 10) || 4;
+    const ticksPerMeasure = ticksPerBeat * beatsPerMeasure;
+    const tickMapper = showRepeatsCompact
+        ? buildTickMapping(otf.reading_list, ticksPerMeasure)
+        : (tick) => tick;
+
+    // Playback visualization callbacks (with tick mapping for compact mode)
+    player.onTick = (absTick) => renderer.updateBeatCursor(tickMapper(absTick));
+    player.onNoteStart = (absTick) => renderer.highlightNote(tickMapper(absTick));
+    player.onNoteEnd = (absTick) => renderer.clearNoteHighlight(tickMapper(absTick));
 
     // Metronome
     metronomeCheckbox.addEventListener('change', () => {
@@ -527,7 +943,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
 
     tempoDown.addEventListener('click', () => setTempo(currentTempo - 5));
     tempoUp.addEventListener('click', () => setTempo(currentTempo + 5));
-    tempoInput.addEventListener('change', () => setTempo(parseInt(tempoInput.value, 10) || 120));
+    tempoInput.addEventListener('change', () => setTempo(parseInt(tempoInput.value, 10) || 100));
 
     // Key/capo
     const updateCapoIndicator = () => {
@@ -553,6 +969,23 @@ function setupTablaturePlayer(otf, controls, renderer) {
         renderer.resetPlaybackVisualization();
     };
 
+    // Get enabled tracks from checkboxes (excluding mandolin backup tracks)
+    const getEnabledTrackIds = () => {
+        const checkboxes = controls.querySelectorAll('.track-checkbox:checked');
+        if (checkboxes.length === 0) {
+            // If no checkboxes (single track) or none checked, play filtered tracks
+            // Filter out mandolin backup tracks
+            return otf.tracks
+                .filter(t => {
+                    const isMandolin = t.instrument?.includes('mandolin') || t.id?.includes('mandolin');
+                    const isLead = t.role === 'lead' || t.instrument?.includes('banjo');
+                    return !isMandolin || isLead;
+                })
+                .map(t => t.id);
+        }
+        return Array.from(checkboxes).map(cb => cb.dataset.trackId);
+    };
+
     // Play/stop
     playBtn.addEventListener('click', async () => {
         if (player.isPlaying) {
@@ -565,7 +998,8 @@ function setupTablaturePlayer(otf, controls, renderer) {
             playBtn.textContent = '⏸ Pause';
             playBtn.classList.add('playing');
             stopBtn.disabled = false;
-            await player.play(otf, { tempo: currentTempo, transpose: currentCapo });
+            const trackIds = getEnabledTrackIds();
+            await player.play(otf, { tempo: currentTempo, transpose: currentCapo, trackIds });
         }
     });
 

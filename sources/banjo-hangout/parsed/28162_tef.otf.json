@@ -1,0 +1,69 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Temperance Reel",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [],
+  "notation": {},
+  "reading_list": [
+    {
+      "from_measure": 2,
+      "to_measure": 9
+    },
+    {
+      "from_measure": 2,
+      "to_measure": 9
+    },
+    {
+      "from_measure": 10,
+      "to_measure": 17
+    },
+    {
+      "from_measure": 10,
+      "to_measure": 17
+    },
+    {
+      "from_measure": 18,
+      "to_measure": 25
+    },
+    {
+      "from_measure": 18,
+      "to_measure": 25
+    },
+    {
+      "from_measure": 26,
+      "to_measure": 33
+    },
+    {
+      "from_measure": 26,
+      "to_measure": 33
+    },
+    {
+      "from_measure": 34,
+      "to_measure": 41
+    },
+    {
+      "from_measure": 34,
+      "to_measure": 41
+    },
+    {
+      "from_measure": 42,
+      "to_measure": 49
+    },
+    {
+      "from_measure": 42,
+      "to_measure": 49
+    }
+  ],
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/tab-temperance-reel-28162-4463762025.tef",
+    "author": "Bill H",
+    "converted_at": "2026-01-03T22:37:35.945209"
+  }
+}

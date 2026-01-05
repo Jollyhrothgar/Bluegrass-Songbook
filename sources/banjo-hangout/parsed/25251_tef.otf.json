@@ -1,0 +1,41 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Red Haired Boy",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [],
+  "notation": {},
+  "reading_list": [
+    {
+      "from_measure": 1,
+      "to_measure": 8
+    },
+    {
+      "from_measure": 1,
+      "to_measure": 7
+    },
+    {
+      "from_measure": 9,
+      "to_measure": 17
+    },
+    {
+      "from_measure": 10,
+      "to_measure": 16
+    },
+    {
+      "from_measure": 18,
+      "to_measure": 18
+    }
+  ],
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/tab-red-haired-boy-25251-816101162023.tef",
+    "author": "banjoy",
+    "converted_at": "2026-01-03T22:37:35.726542"
+  }
+}

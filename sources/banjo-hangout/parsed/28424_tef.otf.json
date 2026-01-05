@@ -1,0 +1,33 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Arkansas Traveler",
+    "time_signature": "2/2",
+    "tempo": 160
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    }
+  ],
+  "notation": {},
+  "x_source": {
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/a/tab-arkansas-travel-28424-53512892025.tef",
+    "author": "RB3",
+    "converted_at": "2026-01-03T22:37:35.699286"
+  }
+}

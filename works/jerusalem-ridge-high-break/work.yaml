@@ -1,0 +1,19 @@
+id: jerusalem-ridge-high-break
+title: "Jerusalem Ridge (high break)"
+tags: [Instrumental, Bluegrass, Scruggs]
+parts:
+  - type: tablature
+    instrument: banjo
+    format: otf
+    file: banjo.otf.json
+    default: true
+    provenance:
+      source: banjo-hangout
+      source_id: '13248'
+      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/j/tab-jerusalem-ridge-13248-45892342010.tef
+      author: "fivestring61"
+      imported_at: '2026-01-04'
+      tef_format: v2
+      tef_time_sig: 4/4
+      tef_tracks: 2
+      tef_events: 1016

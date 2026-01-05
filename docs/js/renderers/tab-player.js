@@ -32,6 +32,46 @@ const WEBAUDIOFONT_URLS = {
 };
 
 /**
+ * Expand notation according to reading list (repeat structure)
+ * Used for playback to ensure repeats are played correctly
+ */
+function expandNotationForPlayback(notation, readingList) {
+    if (!readingList || readingList.length === 0) {
+        return notation;
+    }
+
+    // Build a map of measure number -> notation entry
+    const measureMap = {};
+    for (const entry of notation) {
+        measureMap[entry.measure] = entry;
+    }
+
+    // Expand according to reading list
+    const expanded = [];
+    let newMeasureNum = 1;
+
+    for (const range of readingList) {
+        const from = range.from_measure;
+        const to = range.to_measure;
+
+        for (let m = from; m <= to; m++) {
+            const original = measureMap[m];
+            if (original) {
+                // Clone the measure with new measure number for playback timing
+                expanded.push({
+                    ...original,
+                    measure: newMeasureNum,
+                    originalMeasure: m
+                });
+                newMeasureNum++;
+            }
+        }
+    }
+
+    return expanded;
+}
+
+/**
  * Map OTF instrument types to our instrument keys
  */
 export function getInstrumentKey(instrumentType) {
@@ -90,6 +130,7 @@ export class TabPlayer {
         // Metronome state
         this.metronomeEnabled = false;
         this.metronomeVolume = 0.3;
+        this.metronomeNodes = [];  // Track oscillators for cleanup on stop
     }
 
     /**
@@ -133,6 +174,9 @@ export class TabPlayer {
         gain.connect(ctx.destination);
         osc.start(time);
         osc.stop(time + 0.05);
+
+        // Track for cleanup on stop
+        this.metronomeNodes.push({ osc, gain });
     }
 
     /**
@@ -221,15 +265,34 @@ export class TabPlayer {
         const transpose = options.transpose || 0;
         const ticksPerBeat = otfData.timing?.ticks_per_beat || 480;
         const secondsPerTick = 60 / bpm / ticksPerBeat;
-        const ticksPerMeasure = 2 * ticksPerBeat; // 2/2 time
+        // Calculate ticks per measure from time signature (e.g., "4/4" -> 4 beats)
+        const timeSignature = otfData.metadata?.time_signature || '4/4';
+        const beatsPerMeasure = parseInt(timeSignature.split('/')[0], 10) || 4;
+        const ticksPerMeasure = beatsPerMeasure * ticksPerBeat;
 
         // Collect all notes
         const notesByTrack = {};
+        const readingList = otfData.reading_list;
         for (const track of tracksToPlay) {
-            const notation = otfData.notation?.[track.id];
+            let notation = otfData.notation?.[track.id];
             if (!notation) continue;
 
-            const tuning = track.tuning?.map(p => PITCH_TO_MIDI[p] || 60) || [62, 59, 55, 50, 67];
+            // Expand notation using reading list for proper playback order
+            notation = expandNotationForPlayback(notation, readingList);
+
+            // Default tunings by instrument (MIDI note numbers)
+            const DEFAULT_TUNINGS = {
+                'banjo': [62, 59, 55, 50, 67],      // D4, B3, G3, D3, G4 (open G)
+                '5-string-banjo': [62, 59, 55, 50, 67],
+                'mandolin': [76, 69, 62, 55],       // E5, A4, D4, G3
+                'guitar': [64, 59, 55, 50, 45, 40], // E4, B3, G3, D3, A2, E2
+                'default': [62, 59, 55, 50, 67]
+            };
+            const instrumentType = track.instrument || 'default';
+            const defaultTuning = DEFAULT_TUNINGS[instrumentType] || DEFAULT_TUNINGS['default'];
+            const tuning = (track.tuning?.length > 0)
+                ? track.tuning.map(p => PITCH_TO_MIDI[p] || 60)
+                : defaultTuning;
             const instrumentKey = getInstrumentKey(track.instrument);
             const instConfig = INSTRUMENTS[instrumentKey];
             const instrumentData = window[instConfig.var];
@@ -246,6 +309,10 @@ export class TabPlayer {
                 measure.events?.forEach(event => {
                     const absTick = measureTick + event.tick;
                     event.notes.forEach(note => {
+                        // Skip tied notes - they extend the previous note's duration
+                        // but should not be re-articulated
+                        if (note.tie) return;
+
                         const stringIdx = note.s - 1;
                         if (stringIdx >= 0 && stringIdx < tuning.length) {
                             trackNotes.push({
@@ -392,7 +459,7 @@ export class TabPlayer {
 
         // Schedule metronome clicks
         const totalMeasures = Math.max(...notes.map(n => n.measure)) || 1;
-        const beatsPerMeasure = 2;  // 2/2 time
+        // beatsPerMeasure already calculated from time signature above
         for (let m = 0; m < totalMeasures; m++) {
             for (let beat = 0; beat < beatsPerMeasure; beat++) {
                 const beatTick = m * ticksPerMeasure + beat * ticksPerBeat;
@@ -473,6 +540,18 @@ export class TabPlayer {
             this.player.cancelQueue(this.audioContext);
         }
         this.scheduledNodes = [];
+
+        // Stop and disconnect metronome oscillators
+        for (const { osc, gain } of this.metronomeNodes) {
+            try {
+                osc.stop();
+                osc.disconnect();
+                gain.disconnect();
+            } catch (e) {
+                // Ignore errors if already stopped
+            }
+        }
+        this.metronomeNodes = [];
     }
 
     /**

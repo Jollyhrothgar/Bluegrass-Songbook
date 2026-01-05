@@ -1,0 +1,19 @@
+id: angeline-baker
+title: "Angeline Baker"
+tags: [Instrumental, OldTime, Clawhammer]
+parts:
+  - type: tablature
+    instrument: banjo
+    format: otf
+    file: banjo.otf.json
+    default: true
+    provenance:
+      source: banjo-hangout
+      source_id: '23439'
+      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/a/tab-angeline-baker-23439-5212181122018.tef
+      author: "Stringy D"
+      imported_at: '2026-01-04'
+      tef_format: v2
+      tef_time_sig: 2/4
+      tef_tracks: 0
+      tef_events: 142

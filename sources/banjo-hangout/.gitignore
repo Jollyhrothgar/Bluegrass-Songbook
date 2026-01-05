@@ -1,0 +1,12 @@
+# Cached HTML pages
+raw/
+
+# Downloaded TEF files
+downloads/
+
+# Conversion logs
+conversion_log.json
+
+# Python cache
+__pycache__/
+*.pyc
