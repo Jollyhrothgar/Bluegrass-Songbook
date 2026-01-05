@@ -486,6 +486,16 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
                 title = re.sub(r'\s*\([^)]*\)\s*$', '', title)
                 return title
 
+            # Pre-compute reverse lookup for "the" variants (avoids O(n*m) nested loop)
+            strum_cache_no_the = {}
+            for key, val in strum_cache.items():
+                if val.get('_no_match'):
+                    continue
+                key_no_the = re.sub(r'\bthe\b', '', key).strip()
+                key_no_the = ' '.join(key_no_the.split())
+                if key_no_the not in strum_cache_no_the:
+                    strum_cache_no_the[key_no_the] = val
+
             strum_matches = 0
             for song in songs:
                 # Skip if already has SM URL from work.yaml
@@ -509,15 +519,8 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
 
                 # Try with "the" if still no match (e.g., "Angeline Baker" -> "Angeline the Baker")
                 if not cached or cached.get('_no_match'):
-                    # Check if adding "the" matches
-                    for key, val in strum_cache.items():
-                        if val.get('_no_match'):
-                            continue
-                        key_no_the = re.sub(r'\bthe\b', '', key).strip()
-                        key_no_the = ' '.join(key_no_the.split())
-                        if key_no_the == norm_title:
-                            cached = val
-                            break
+                    # Use pre-computed reverse lookup
+                    cached = strum_cache_no_the.get(norm_title)
 
                 if cached and not cached.get('_no_match') and 'url' in cached:
                     song['strum_machine_url'] = cached['url']
