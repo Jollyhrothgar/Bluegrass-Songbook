@@ -1,8 +1,8 @@
 # Cached HTML pages
 raw/
 
-# Downloaded TEF files
-downloads/
+# Keep downloaded TEF files for debugging - they're small (<10KB each)
+# downloads/
 
 # Conversion logs
 conversion_log.json

@@ -409,7 +409,7 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     DEFAULT_TUNINGS = {
         '5-string-banjo': [62, 59, 55, 50, 67],  # D4, B3, G3, D3, G4 (Open G)
         'mandolin': [76, 69, 62, 55],            # E5, A4, D4, G3
-        'guitar': [64, 59, 55, 50, 45, 40],      # E4, B3, G3, D3, A2, E2
+        '6-string-guitar': [64, 59, 55, 50, 45, 40],  # E4, B3, G3, D3, A2, E2
     }
 
     seen_track_ids = set()

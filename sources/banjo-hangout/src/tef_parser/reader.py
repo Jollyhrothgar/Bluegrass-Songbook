@@ -1084,7 +1084,7 @@ class TEFReader:
         for evt in events:
             notes_by_pos[(evt.track, evt.position)].append(evt)
 
-        MELODY_MARKERS = {'I', 'F', 'L', 'K'}
+        MELODY_MARKERS = {'I', 'F', 'L', 'K', 'O'}  # O = legato out (slide/hammer source)
         # Markers that can serve as melody when no MELODY_MARKERS present
         FALLBACK_MELODY_MARKERS = {'C'}  # 'C' = chord, but sometimes used for melody
         # Markers to always skip
