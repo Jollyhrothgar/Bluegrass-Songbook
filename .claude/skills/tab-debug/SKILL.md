@@ -1,3 +1,8 @@
+---
+name: tab-debug
+description: TEF/tablature debugging for parsing issues, missing notes, wrong articulations, tuning problems. Use when debugging banjo tabs from Banjo Hangout or other TEF sources.
+---
+
 # Tab Debugging Skill
 
 Use this skill when debugging tablature parsing, rendering, or playback issues for TEF (TablEdit) files.
