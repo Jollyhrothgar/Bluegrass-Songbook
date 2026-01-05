@@ -1609,6 +1609,9 @@ export async function showVersionPicker(groupId, options = {}) {
                 }
             } else if (hasTabOnly && tabPart?.author) {
                 versionLabel = `Tab by ${tabPart.author}`;
+            } else if (song.abc_content) {
+                // ABC notation works - show as notation
+                versionLabel = 'Fiddle notation';
             } else if (song.key) {
                 versionLabel = `Key of ${song.key}`;
             } else {
@@ -1616,14 +1619,23 @@ export async function showVersionPicker(groupId, options = {}) {
             }
         }
 
-        // Build version meta with tab source info
+        // Build version meta - show content type indicators
         const metaParts = [];
         if (song.arrangement_by) metaParts.push(`by ${song.arrangement_by}`);
-        if (tabPart?.source === 'banjo-hangout') metaParts.push('Banjo Hangout');
-        if (tabPart?.instrument) metaParts.push(tabPart.instrument);
-        if (song.key && !hasTabOnly) metaParts.push(`Key: ${song.key}`);
+
+        // Only show tablature metadata for tab-only works
+        if (hasTabOnly) {
+            if (tabPart?.source === 'banjo-hangout') metaParts.push('Banjo Hangout');
+            if (tabPart?.instrument) metaParts.push(tabPart.instrument);
+        } else if (song.abc_content) {
+            // Show ABC/notation indicator for works with ABC content
+            metaParts.push('Notation');
+            if (song.source === 'tunearch') metaParts.push('TuneArch');
+        }
+
+        if (song.key) metaParts.push(`Key: ${song.key}`);
         if (song.version_type) metaParts.push(song.version_type);
-        if (song.nashville && !hasTabOnly) metaParts.push(`${song.nashville.length} chords`);
+        if (song.nashville?.length > 0) metaParts.push(`${song.nashville.length} chords`);
         const versionMeta = metaParts.join(' • ');
 
         const firstLine = song.first_line ? song.first_line.substring(0, 60) + (song.first_line.length > 60 ? '...' : '') : '';
