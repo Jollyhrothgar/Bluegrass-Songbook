@@ -1,0 +1,19 @@
+id: ebenezer-banjo
+title: "Ebenezer - banjo"
+tags: [Instrumental]
+parts:
+  - type: tablature
+    instrument: banjo
+    format: otf
+    file: banjo.otf.json
+    default: true
+    provenance:
+      source: banjo-hangout
+      source_id: 'None'
+      source_url: https://www.banjohangout.org/tab/None
+      author: "unknown"
+      imported_at: '2026-01-04'
+      tef_format: v2
+      tef_time_sig: 4/4
+      tef_tracks: 2
+      tef_events: 129

@@ -1,1 +1,892 @@
-{"otf_version": "1.0", "metadata": {"title": "Salt Creek\r\n", "time_signature": "4/4", "tempo": 100, "composer": "Traditional"}, "timing": {"ticks_per_beat": 480}, "tracks": [{"id": "banjo", "instrument": "5-string-banjo", "tuning": ["D4", "B3", "G3", "D3", "G4"], "capo": 0, "role": "lead"}], "notation": {"banjo": [{"measure": 1, "events": [{"tick": 0, "notes": [{"s": 2, "f": 17}]}, {"tick": 240, "notes": [{"s": 2, "f": 8, "tech": "/"}]}, {"tick": 480, "notes": [{"s": 5, "f": 0}]}, {"tick": 720, "notes": [{"s": 2, "f": 20}]}, {"tick": 1200, "notes": [{"s": 5, "f": 0}]}, {"tick": 1440, "notes": [{"s": 2, "f": 20}]}]}, {"measure": 2, "events": [{"tick": 0, "notes": [{"s": 5, "f": 0}]}, {"tick": 240, "notes": [{"s": 2, "f": 22}]}, {"tick": 720, "notes": [{"s": 5, "f": 0}]}, {"tick": 1440, "notes": [{"s": 5, "f": 0}]}]}, {"measure": 3, "events": [{"tick": 240, "notes": [{"s": 5, "f": 0}]}, {"tick": 480, "notes": [{"s": 2, "f": 18}]}, {"tick": 960, "notes": [{"s": 5, "f": 0}]}, {"tick": 1200, "notes": [{"s": 2, "f": 18}]}, {"tick": 1440, "notes": [{"s": 1, "f": 18}]}, {"tick": 1680, "notes": [{"s": 5, "f": 0}]}]}, {"measure": 4, "events": [{"tick": 240, "notes": [{"s": 5, "f": 0}]}, {"tick": 480, "notes": [{"s": 2, "f": 18}]}, {"tick": 720, "notes": [{"s": 3, "f": 9}]}, {"tick": 960, "notes": [{"s": 1, "f": 18}]}, {"tick": 1440, "notes": [{"s": 5, "f": 0}]}]}, {"measure": 5, "events": [{"tick": 0, "notes": [{"s": 2, "f": 17}]}, {"tick": 240, "notes": [{"s": 2, "f": 8, "tech": "/"}]}, {"tick": 480, "notes": [{"s": 5, "f": 0}]}, {"tick": 720, "notes": [{"s": 2, "f": 20}]}, {"tick": 1200, "notes": [{"s": 5, "f": 0}]}, {"tick": 1440, "notes": [{"s": 2, "f": 20}]}]}, {"measure": 6, "events": [{"tick": 0, "notes": [{"s": 5, "f": 0}]}, {"tick": 240, "notes": [{"s": 2, "f": 22}]}, {"tick": 720, "notes": [{"s": 5, "f": 0}]}, {"tick": 1440, "notes": [{"s": 5, "f": 0}]}]}, {"measure": 7, "events": [{"tick": 240, "notes": [{"s": 5, "f": 0}]}, {"tick": 480, "notes": [{"s": 2, "f": 23}]}, {"tick": 720, "notes": [{"s": 1, "f": 18}]}, {"tick": 960, "notes": [{"s": 5, "f": 0}]}, {"tick": 1200, "notes": [{"s": 3, "f": 22}]}, {"tick": 1440, "notes": [{"s": 1, "f": 18}, {"s": 3, "f": 7, "tech": "/"}]}, {"tick": 1680, "notes": [{"s": 5, "f": 0}]}]}, {"measure": 8, "events": [{"tick": 240, "notes": [{"s": 5, "f": 0}]}, {"tick": 480, "notes": [{"s": 1, "f": 18}]}, {"tick": 720, "notes": [{"s": 2, "f": 18}]}, {"tick": 960, "notes": [{"s": 5, "f": 0}]}, {"tick": 1440, "notes": [{"s": 5, "f": 0}]}, {"tick": 1680, "notes": [{"s": 1, "f": 18}]}]}, {"measure": 9, "events": [{"tick": 0, "notes": [{"s": 3, "f": 12}]}, {"tick": 240, "notes": [{"s": 2, "f": 22}]}, {"tick": 720, "notes": [{"s": 5, "f": 5}]}, {"tick": 1440, "notes": [{"s": 3, "f": 12}]}, {"tick": 1680, "notes": [{"s": 2, "f": 22}]}]}, {"measure": 10, "events": [{"tick": 240, "notes": [{"s": 5, "f": 5}]}, {"tick": 720, "notes": [{"s": 5, "f": 5}]}, {"tick": 1200, "notes": [{"s": 2, "f": 22}]}, {"tick": 1440, "notes": [{"s": 3, "f": 12}]}]}, {"measure": 11, "events": [{"tick": 0, "notes": [{"s": 3, "f": 10}]}, {"tick": 240, "notes": [{"s": 2, "f": 20}]}, {"tick": 720, "notes": [{"s": 5, "f": 3}]}, {"tick": 1440, "notes": [{"s": 3, "f": 10}]}, {"tick": 1680, "notes": [{"s": 2, "f": 20}]}]}, {"measure": 12, "events": [{"tick": 240, "notes": [{"s": 5, "f": 3}]}, {"tick": 720, "notes": [{"s": 5, "f": 3}]}, {"tick": 1200, "notes": [{"s": 2, "f": 20}]}, {"tick": 1440, "notes": [{"s": 3, "f": 10}]}]}, {"measure": 13, "events": [{"tick": 0, "notes": [{"s": 3, "f": 12}]}, {"tick": 240, "notes": [{"s": 2, "f": 22}]}, {"tick": 720, "notes": [{"s": 5, "f": 5}]}, {"tick": 1440, "notes": [{"s": 3, "f": 12}]}, {"tick": 1680, "notes": [{"s": 2, "f": 22}]}]}, {"measure": 14, "events": [{"tick": 240, "notes": [{"s": 5, "f": 5}]}, {"tick": 720, "notes": [{"s": 5, "f": 5}]}, {"tick": 1200, "notes": [{"s": 2, "f": 22}]}, {"tick": 1440, "notes": [{"s": 3, "f": 12}]}]}, {"measure": 15, "events": [{"tick": 240, "notes": [{"s": 5, "f": 5}]}, {"tick": 720, "notes": [{"s": 2, "f": 22}]}, {"tick": 960, "notes": [{"s": 5, "f": 0}]}, {"tick": 1200, "notes": [{"s": 1, "f": 18}]}, {"tick": 1440, "notes": [{"s": 3, "f": 9}]}, {"tick": 1680, "notes": [{"s": 2, "f": 19}]}]}, {"measure": 16, "events": [{"tick": 0, "notes": [{"s": 1, "f": 18}]}, {"tick": 240, "notes": [{"s": 3, "f": 5}]}, {"tick": 480, "notes": [{"s": 2, "f": 12}]}, {"tick": 720, "notes": [{"s": 4, "f": 7}]}, {"tick": 960, "notes": [{"s": 3, "f": 12}]}, {"tick": 1440, "notes": [{"s": 5, "f": 0}]}, {"tick": 1680, "notes": [{"s": 1, "f": 18}]}]}]}, "reading_list": [{"from_measure": 1, "to_measure": 8}, {"from_measure": 1, "to_measure": 8}, {"from_measure": 9, "to_measure": 16}, {"from_measure": 9, "to_measure": 16}]}
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Salt Creek\r\n",
+    "time_signature": "4/4",
+    "tempo": 100,
+    "composer": "Traditional"
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    }
+  ],
+  "notation": {
+    "banjo": [
+      {
+        "measure": 1,
+        "events": [
+          {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 2,
+                "f": 17
+              }
+            ]
+          },
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 2,
+                "f": 8,
+                "tech": "/"
+              }
+            ]
+          },
+          {
+            "tick": 480,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 2,
+                "f": 20
+              }
+            ]
+          },
+          {
+            "tick": 1200,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 2,
+                "f": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 2,
+        "events": [
+          {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 2,
+                "f": 22
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 3,
+        "events": [
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 480,
+            "notes": [
+              {
+                "s": 2,
+                "f": 18
+              }
+            ]
+          },
+          {
+            "tick": 960,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 1200,
+            "notes": [
+              {
+                "s": 2,
+                "f": 18
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 1,
+                "f": 18
+              }
+            ]
+          },
+          {
+            "tick": 1680,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 4,
+        "events": [
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 480,
+            "notes": [
+              {
+                "s": 2,
+                "f": 18
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 3,
+                "f": 9
+              }
+            ]
+          },
+          {
+            "tick": 960,
+            "notes": [
+              {
+                "s": 1,
+                "f": 18
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 5,
+        "events": [
+          {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 2,
+                "f": 17
+              }
+            ]
+          },
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 2,
+                "f": 8,
+                "tech": "/"
+              }
+            ]
+          },
+          {
+            "tick": 480,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 2,
+                "f": 20
+              }
+            ]
+          },
+          {
+            "tick": 1200,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 2,
+                "f": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 6,
+        "events": [
+          {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 2,
+                "f": 22
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 7,
+        "events": [
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 480,
+            "notes": [
+              {
+                "s": 2,
+                "f": 23
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 1,
+                "f": 18
+              }
+            ]
+          },
+          {
+            "tick": 960,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 1200,
+            "notes": [
+              {
+                "s": 3,
+                "f": 22
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 1,
+                "f": 18
+              },
+              {
+                "s": 3,
+                "f": 7,
+                "tech": "/"
+              }
+            ]
+          },
+          {
+            "tick": 1680,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 8,
+        "events": [
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 480,
+            "notes": [
+              {
+                "s": 1,
+                "f": 18
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 2,
+                "f": 18
+              }
+            ]
+          },
+          {
+            "tick": 960,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 1680,
+            "notes": [
+              {
+                "s": 1,
+                "f": 18
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 9,
+        "events": [
+          {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 3,
+                "f": 12
+              }
+            ]
+          },
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 2,
+                "f": 22
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 5,
+                "f": 5
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 3,
+                "f": 12
+              }
+            ]
+          },
+          {
+            "tick": 1680,
+            "notes": [
+              {
+                "s": 2,
+                "f": 22
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 10,
+        "events": [
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 5,
+                "f": 5
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 5,
+                "f": 5
+              }
+            ]
+          },
+          {
+            "tick": 1200,
+            "notes": [
+              {
+                "s": 2,
+                "f": 22
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 3,
+                "f": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 11,
+        "events": [
+          {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 3,
+                "f": 10
+              }
+            ]
+          },
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 2,
+                "f": 20
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 5,
+                "f": 3
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 3,
+                "f": 10
+              }
+            ]
+          },
+          {
+            "tick": 1680,
+            "notes": [
+              {
+                "s": 2,
+                "f": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 12,
+        "events": [
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 5,
+                "f": 3
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 5,
+                "f": 3
+              }
+            ]
+          },
+          {
+            "tick": 1200,
+            "notes": [
+              {
+                "s": 2,
+                "f": 20
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 3,
+                "f": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 13,
+        "events": [
+          {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 3,
+                "f": 12
+              }
+            ]
+          },
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 2,
+                "f": 22
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 5,
+                "f": 5
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 3,
+                "f": 12
+              }
+            ]
+          },
+          {
+            "tick": 1680,
+            "notes": [
+              {
+                "s": 2,
+                "f": 22
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 14,
+        "events": [
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 5,
+                "f": 5
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 5,
+                "f": 5
+              }
+            ]
+          },
+          {
+            "tick": 1200,
+            "notes": [
+              {
+                "s": 2,
+                "f": 22
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 3,
+                "f": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 15,
+        "events": [
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 5,
+                "f": 5
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 2,
+                "f": 22
+              }
+            ]
+          },
+          {
+            "tick": 960,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 1200,
+            "notes": [
+              {
+                "s": 1,
+                "f": 18
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 3,
+                "f": 9
+              }
+            ]
+          },
+          {
+            "tick": 1680,
+            "notes": [
+              {
+                "s": 2,
+                "f": 19
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 16,
+        "events": [
+          {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 1,
+                "f": 18
+              }
+            ]
+          },
+          {
+            "tick": 240,
+            "notes": [
+              {
+                "s": 3,
+                "f": 5
+              }
+            ]
+          },
+          {
+            "tick": 480,
+            "notes": [
+              {
+                "s": 2,
+                "f": 12
+              }
+            ]
+          },
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 4,
+                "f": 7
+              }
+            ]
+          },
+          {
+            "tick": 960,
+            "notes": [
+              {
+                "s": 3,
+                "f": 12
+              }
+            ]
+          },
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0
+              }
+            ]
+          },
+          {
+            "tick": 1680,
+            "notes": [
+              {
+                "s": 1,
+                "f": 18
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "reading_list": [
+    {
+      "from_measure": 1,
+      "to_measure": 8
+    },
+    {
+      "from_measure": 1,
+      "to_measure": 8
+    },
+    {
+      "from_measure": 9,
+      "to_measure": 16
+    },
+    {
+      "from_measure": 9,
+      "to_measure": 16
+    }
+  ]
+}

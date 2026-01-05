@@ -16,4 +16,4 @@ parts:
       tef_format: v2
       tef_time_sig: 2/4
       tef_tracks: 1
-      tef_events: 100
+      tef_events: 101

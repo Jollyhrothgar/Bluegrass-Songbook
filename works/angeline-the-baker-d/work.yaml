@@ -15,5 +15,5 @@ parts:
       imported_at: '2026-01-04'
       tef_format: v2
       tef_time_sig: 4/4
-      tef_tracks: 3
-      tef_events: 393
+      tef_tracks: 4
+      tef_events: 464
