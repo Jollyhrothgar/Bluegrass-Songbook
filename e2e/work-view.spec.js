@@ -15,11 +15,36 @@ test.describe('WorkView - Tablature', () => {
     });
 
     test('displays tablature container for tab-only works', async ({ page }) => {
-        await page.goto('/#song/shuckin-the-corn');
-        await page.waitForTimeout(1000);
+        await page.goto('/#work/angeline-the-baker');
+        await page.locator('.tablature-container').waitFor();
 
         // Should have tablature container
-        await expect(page.locator('.tablature-container')).toBeVisible({ timeout: 10000 });
+        await expect(page.locator('.tablature-container')).toBeVisible();
+    });
+
+    test('tablature renders stave rows with notes', async ({ page }) => {
+        await page.goto('/#song/foggy-mountain-breakdown');
+        await page.locator('.tablature-container').waitFor();
+
+        // Should have at least one row of tab
+        const staveRows = page.locator('.stave-row');
+        const rowCount = await staveRows.count();
+        expect(rowCount).toBeGreaterThanOrEqual(1);
+
+        // Should have note elements
+        const notes = page.locator('.note-text');
+        const noteCount = await notes.count();
+        expect(noteCount).toBeGreaterThanOrEqual(5);
+    });
+
+    test('work URL loads tablature directly', async ({ page }) => {
+        // angeline-the-baker is a tab-only work
+        await page.goto('/#work/angeline-the-baker');
+        await page.locator('.tablature-container').waitFor();
+
+        // Tablature should be visible with playback controls
+        await expect(page.locator('.tablature-container')).toBeVisible();
+        await expect(page.locator('.tab-play-btn')).toBeVisible();
     });
 
     test('tablature controls are present', async ({ page }) => {
@@ -128,6 +153,41 @@ test.describe('WorkView - Part Selector', () => {
             // URL should update with part
             expect(page.url()).toMatch(/#(work|song)\/cripple-creek\/parts\//);
         }
+    });
+});
+
+test.describe('WorkView - Tablature Playback', () => {
+    test('play button toggles to pause state', async ({ page }) => {
+        await page.goto('/#song/foggy-mountain-breakdown');
+        await page.locator('.tab-play-btn').waitFor();
+
+        const playBtn = page.locator('.tab-play-btn');
+        const stopBtn = page.locator('.tab-stop-btn');
+
+        // Initial state
+        await expect(playBtn).toContainText('Play');
+        await expect(stopBtn).toBeDisabled();
+
+        // Click play - button state changes immediately
+        await playBtn.click();
+
+        await expect(playBtn).toContainText('Pause');
+        await expect(stopBtn).toBeEnabled();
+    });
+
+    test('stop button resets to initial state', async ({ page }) => {
+        await page.goto('/#song/foggy-mountain-breakdown');
+        await page.locator('.tab-play-btn').waitFor();
+
+        // Start playback
+        await page.locator('.tab-play-btn').click();
+        await expect(page.locator('.tab-stop-btn')).toBeEnabled();
+
+        // Stop
+        await page.locator('.tab-stop-btn').click();
+
+        await expect(page.locator('.tab-play-btn')).toContainText('Play');
+        await expect(page.locator('.tab-stop-btn')).toBeDisabled();
     });
 });
 
