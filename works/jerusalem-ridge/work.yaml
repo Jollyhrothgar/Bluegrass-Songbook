@@ -3,9 +3,9 @@ title: "Jerusalem Ridge"
 tags: [Instrumental, Bluegrass, Scruggs]
 parts:
   - type: tablature
-    instrument: banjo
+    instrument: ensemble
     format: otf
-    file: banjo.otf.json
+    file: ensemble.otf.json
     default: true
     provenance:
       source: banjo-hangout
