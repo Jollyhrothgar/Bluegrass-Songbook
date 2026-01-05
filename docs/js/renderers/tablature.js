@@ -512,14 +512,18 @@ export class TabRenderer {
                 if (!hasTechnique && !hasTie) continue;
 
                 const n1 = notes[i - 1];
-                if (n2.x - n1.x > 60) continue; // Max distance for slur
+                const xDist = n2.x - n1.x;
+                if (xDist > 60) continue; // Max distance for slur
 
+                // For closely-spaced notes (like grace note slides), reduce the offsets
+                // so the slur is still visible
+                const noteOffset = Math.min(6, xDist / 3);
                 const midX = (n1.x + n2.x) / 2;
                 const slurY = n1.y - 8;
-                const curveDepth = 8;
+                const curveDepth = Math.max(6, Math.min(8, xDist / 2)); // Scale curve depth too
 
                 const slur = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                slur.setAttribute('d', `M ${n1.x + 6} ${slurY} Q ${midX} ${slurY - curveDepth} ${n2.x - 6} ${slurY}`);
+                slur.setAttribute('d', `M ${n1.x + noteOffset} ${slurY} Q ${midX} ${slurY - curveDepth} ${n2.x - noteOffset} ${slurY}`);
                 slur.setAttribute('fill', 'none');
                 slur.setAttribute('stroke', hasTie ? '#888' : '#555');
                 slur.setAttribute('stroke-width', hasTie ? '1' : '1.5');
