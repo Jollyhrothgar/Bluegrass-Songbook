@@ -308,7 +308,7 @@ def load_grassiness_scores() -> dict:
     return _grassiness_cache
 
 
-def get_grassiness_tags(song_id: str, title: str) -> tuple[dict, int]:
+def get_grassiness_tags(song_id: str, title: str, scores: dict = None, scores_by_title: dict = None) -> tuple[dict, int]:
     """Get bluegrass tags based on grassiness score.
 
     Uses song_id first, falls back to title-based lookup.
@@ -316,20 +316,29 @@ def get_grassiness_tags(song_id: str, title: str) -> tuple[dict, int]:
     Args:
         song_id: Song ID to look up
         title: Song title for fallback lookup
+        scores: Optional pre-loaded scores dict (avoids re-loading)
+        scores_by_title: Optional pre-computed title lookup dict (avoids O(n) search)
 
     Returns:
         Tuple of (tags_dict, grassiness_score)
         tags_dict: {TagName: {"score": int, "source": "grassiness"}}
     """
-    scores = load_grassiness_scores()
+    if scores is None:
+        scores = load_grassiness_scores()
     tags = {}
     grassiness = 0
 
     # Try song_id first
     if song_id in scores:
         grassiness = scores[song_id].get('score', 0)
+    elif scores_by_title is not None:
+        # Use pre-computed title lookup (O(1))
+        from tagging.grassiness import normalize_title
+        normalized = normalize_title(title)
+        if normalized in scores_by_title:
+            grassiness = scores_by_title[normalized].get('score', 0)
     else:
-        # Try normalized title lookup
+        # Fallback to O(n) search if no pre-computed lookup provided
         from tagging.grassiness import normalize_title
         normalized = normalize_title(title)
         for sid, data in scores.items():
@@ -450,6 +459,15 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
     artists_found = 0
     songs_tagged = 0
 
+    # Pre-load grassiness scores and build title lookup (avoids O(n*m) nested loop)
+    scores = load_grassiness_scores()
+    from tagging.grassiness import normalize_title
+    scores_by_title = {}
+    for data in scores.values():
+        norm_title = normalize_title(data.get('title', ''))
+        if norm_title and norm_title not in scores_by_title:
+            scores_by_title[norm_title] = data
+
     # Process each song
     for song in songs:
         tags = {}
@@ -492,7 +510,7 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
         # Add grassiness-based bluegrass tags
         song_id = song.get('id', '')
         title = song.get('title', '')
-        grassiness_tags, grassiness_score = get_grassiness_tags(song_id, title)
+        grassiness_tags, grassiness_score = get_grassiness_tags(song_id, title, scores, scores_by_title)
         for tag, data in grassiness_tags.items():
             # Grassiness can override artist-based tags with higher confidence
             if tag not in tags or data['score'] > tags[tag].get('score', 0):
@@ -502,18 +520,14 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
 
         # Add covering artists from grassiness data (for search and display)
         # Use same lookup strategy as get_grassiness_tags: ID first, then title fallback
-        scores = load_grassiness_scores()
         covering_artists = []
         if song_id in scores:
             covering_artists = scores[song_id].get('artists', [])
         else:
-            # Try normalized title lookup (same as get_grassiness_tags)
-            from tagging.grassiness import normalize_title
+            # Use pre-computed title lookup
             normalized = normalize_title(title)
-            for data in scores.values():
-                if normalize_title(data.get('title', '')) == normalized:
-                    covering_artists = data.get('artists', [])
-                    break
+            if normalized in scores_by_title:
+                covering_artists = scores_by_title[normalized].get('artists', [])
         if covering_artists:
             song['covering_artists'] = covering_artists
 
