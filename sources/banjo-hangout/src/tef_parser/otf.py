@@ -170,6 +170,9 @@ class OTFDocument:
 def instrument_to_otf_id(inst: TEFInstrument) -> str:
     """Generate a clean ID from instrument name."""
     name = inst.name.lower()
+    # 5-string instruments are banjos (handles "D Tuning", "G Tuning", etc.)
+    if inst.num_strings == 5:
+        return "banjo"
     # Remove common suffixes
     for suffix in [" open g", " standard", " gdae", " gda"]:
         name = name.replace(suffix, "")
@@ -181,7 +184,7 @@ def instrument_to_otf_id(inst: TEFInstrument) -> str:
 def instrument_to_type(inst: TEFInstrument) -> str:
     """Map instrument name to standard type identifier."""
     name = inst.name.lower()
-    if "banjo" in name:
+    if "banjo" in name or inst.num_strings == 5:
         return "5-string-banjo"
     elif "mandolin" in name:
         return "mandolin"

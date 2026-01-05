@@ -436,6 +436,48 @@ class TEFReader:
         idx = self.data.find(marker)
         return idx if idx >= 0 else -1
 
+    def _parse_tuning_note_names(self, text: str, num_strings: int = 5) -> list[int]:
+        """Parse note names from tuning text and convert to MIDI pitches.
+
+        E.g., "F# D F# A D" -> [66, 50, 54, 57, 62] (strings 5,4,3,2,1)
+        Returns pitches in OTF order: [1st, 2nd, 3rd, 4th, 5th]
+        """
+        note_to_semitone = {
+            'C': 0, 'C#': 1, 'Db': 1,
+            'D': 2, 'D#': 3, 'Eb': 3,
+            'E': 4, 'F': 5, 'F#': 6, 'Gb': 6,
+            'G': 7, 'G#': 8, 'Ab': 8,
+            'A': 9, 'A#': 10, 'Bb': 10,
+            'B': 11
+        }
+
+        # Extract note names (skip words like "Tuning", "Open", etc.)
+        parts = text.split()
+        notes = [p for p in parts if p in note_to_semitone or
+                 (len(p) == 2 and p[0] in 'ABCDEFG' and p[1] in '#b')]
+
+        if len(notes) != num_strings:
+            return []
+
+        # Assign octaves based on typical banjo string pitches
+        # 5-string banjo: 5th string is high drone (octave 4),
+        # 4th-2nd are octave 3, 1st is octave 4
+        if num_strings == 5:
+            octaves = [4, 3, 3, 3, 4]  # For strings 5,4,3,2,1
+        else:
+            octaves = [3] * num_strings  # Default
+
+        midi_pitches = []
+        for i, note in enumerate(notes):
+            semitone = note_to_semitone.get(note)
+            if semitone is not None:
+                octave = octaves[i]
+                midi = semitone + (octave + 1) * 12
+                midi_pitches.append(midi)
+
+        # Return in OTF order: [1st, 2nd, 3rd, 4th, 5th] (reverse of how they appear)
+        return midi_pitches[::-1] if len(midi_pitches) == num_strings else []
+
     def parse_instruments(self) -> list[TEFInstrument]:
         """Parse instrument definitions from the file.
 
@@ -471,6 +513,10 @@ class TEFReader:
             (b"Banjo Double C", 5),
             (b"Banjo", 5),
             (b"banjo", 5),
+            # Tuning-only patterns (no instrument name, just tuning)
+            (b"D Tuning", 5),  # Open D / Graveyard tuning for banjo
+            (b"G Tuning", 5),  # Open G tuning for banjo
+            (b"C Tuning", 5),  # Open C tuning for banjo
             (b"Guitar Standard", 6),
             (b"guitar standard", 6),
             (b"Guitar", 6),
@@ -496,41 +542,30 @@ class TEFReader:
                     idx += 1
                     continue
 
-                # Verify this is a real instrument record:
-                # 1. Must be followed by null byte
-                name_end = idx + len(name_pattern)
-                if name_end >= len(self.data) or self.data[name_end] != 0:
+                # Read the full string from pattern start until null terminator
+                # This handles cases like "D Tuning  F# D F# A D\x00" where the
+                # pattern is just the beginning of a longer tuning description
+                full_string_end = idx
+                while full_string_end < len(self.data) and self.data[full_string_end] != 0:
+                    full_string_end += 1
+
+                # Validate we found a null terminator within reasonable distance
+                if full_string_end - idx > 50:
                     idx += 1
                     continue
 
-                # 2. Should be followed by either:
-                #    - A tuning name (short string, no spaces) then null
-                #    - Just nulls (no tuning name stored)
-                tuning_name_start = name_end + 1
-                tuning_name_end = tuning_name_start
-                while tuning_name_end < len(self.data) and tuning_name_end < tuning_name_start + 20:
-                    if self.data[tuning_name_end] == 0:
-                        break
-                    tuning_name_end += 1
+                try:
+                    full_string = self.data[idx:full_string_end].decode('ascii')
+                except UnicodeDecodeError:
+                    idx += 1
+                    continue
 
-                tuning_name = ""
-                if tuning_name_end > tuning_name_start:
-                    tuning_name_bytes = self.data[tuning_name_start:tuning_name_end]
-                    # Tuning name should be short, printable (e.g., "GDAE", "Standard", "r Standard")
-                    try:
-                        tuning_name = tuning_name_bytes.decode('ascii')
-                        # Tuning names can have spaces (e.g., "r Standard") but shouldn't be too long
-                        # or contain sentence-like text (more than 2 spaces = probably not a tuning name)
-                        if len(tuning_name) > 20 or tuning_name.count(' ') > 2:
-                            idx += 1
-                            continue
-                    except UnicodeDecodeError:
-                        idx += 1
-                        continue
-                # If no tuning name (just nulls), that's OK - some files don't have them
-
-                # Get the actual instrument name
+                # Get the instrument/tuning name
                 name = name_pattern.decode('ascii')
+
+                # The tuning description may include note names after the pattern
+                # e.g., "D Tuning  F# D F# A D" -> tuning_name = "F# D F# A D"
+                tuning_name = full_string[len(name):].strip() if len(full_string) > len(name) else ""
 
                 # Now find the tuning bytes by looking backwards
                 # The format has tuning bytes (one per string) before the name
@@ -586,6 +621,11 @@ class TEFReader:
                     valid = all(0x10 <= b <= 0x60 for b in tuning_bytes)
                     if valid:
                         tuning_pitches = [96 - b for b in tuning_bytes]
+
+                # Fallback: if binary parsing failed and we have note names in tuning_name,
+                # parse them (e.g., "F# D F# A D" -> MIDI pitches)
+                if not tuning_pitches and tuning_name:
+                    tuning_pitches = self._parse_tuning_note_names(tuning_name, num_strings)
 
                 # Extract capo position (typically at offset -20 from instrument name)
                 capo = 0
