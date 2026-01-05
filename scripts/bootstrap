@@ -10,6 +10,8 @@
 
 set -e
 
+SECONDS=0  # Track elapsed time
+
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
@@ -50,6 +52,7 @@ echo "Building search index..."
 uv run python3 scripts/lib/build_works_index.py
 
 echo ""
-echo "Bootstrap complete!"
+elapsed=$SECONDS
+echo "Bootstrap complete! (${elapsed}s)"
 echo "  - Run './scripts/server' to start the frontend"
 echo "  - Visit http://localhost:8080"
