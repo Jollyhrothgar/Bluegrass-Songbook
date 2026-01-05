@@ -1007,9 +1007,10 @@ class TEFReader:
                 fret = fret_raw - 1
 
                 # Handle high frets (bit 5 set means add effect2 to fret)
-                # But NOT when effect2 is a special marker (0x06=text, 0x07=chord overlay)
+                # But NOT when effect2 is a special marker:
+                # 0x06=text annotation, 0x07=chord overlay, 0x0c=fingering annotation
                 effect2_val = rec[5] if len(rec) > 5 else 0
-                if (fret_byte >> 5) & 0x01 and effect2_val > 0x07:
+                if (fret_byte >> 5) & 0x01 and effect2_val > 0x0c:
                     fret += effect2_val
 
                 # Extract marker from byte 3 (duration byte contains marker in upper bits)
