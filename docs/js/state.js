@@ -35,7 +35,7 @@ export function setState(updates) {
     for (const [key, value] of Object.entries(updates)) {
         // Use the existing state variables
         if (stateSetters[key]) {
-            const currentValue = stateGetters[key]?.() ?? eval(key);
+            const currentValue = stateGetters[key]?.();
             if (currentValue !== value) {
                 stateSetters[key](value);
                 pendingChanges.add(key);
