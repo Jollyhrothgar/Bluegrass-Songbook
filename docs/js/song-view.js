@@ -31,6 +31,7 @@ import {
     abcSynth, setAbcSynth,
     abcTimingCallbacks, setAbcTimingCallbacks,
     abcIsPlaying, setAbcIsPlaying,
+    abcPlaybackSession, incrementAbcPlaybackSession,
     // Fullscreen/navigation state
     fullscreenMode, setFullscreenMode,
     listContext, setListContext,
@@ -285,6 +286,9 @@ function renderAbcNotation(abcContent, containerId) {
  * Stop and clean up any existing ABC playback
  */
 function stopAbcPlayback() {
+    // Increment session to cancel any pending async playback initialization
+    incrementAbcPlaybackSession();
+
     if (abcSynth) {
         abcSynth.stop();
         setAbcSynth(null);
@@ -349,6 +353,9 @@ function setupAbcPlayback() {
             return;
         }
 
+        // Capture current session to detect if playback was cancelled during async init
+        const startSession = abcPlaybackSession;
+
         const synth = new ABCJS.synth.CreateSynth();
         setAbcSynth(synth);
 
@@ -373,7 +380,19 @@ function setupAbcPlayback() {
                 }
             });
 
+            // Check if playback was cancelled during init
+            if (abcPlaybackSession !== startSession) {
+                synth.stop();
+                return;
+            }
+
             await synth.prime();
+
+            // Check again after prime
+            if (abcPlaybackSession !== startSession) {
+                synth.stop();
+                return;
+            }
 
             // Set up timing callbacks for note highlighting
             const timingCallbacks = new ABCJS.TimingCallbacks(visualObj, {
@@ -389,10 +408,13 @@ function setupAbcPlayback() {
             newPlayBtn.textContent = '■';
             newPlayBtn.disabled = false;
         } catch (e) {
-            console.error('Playback error:', e);
-            newPlayBtn.textContent = '▶';
-            newPlayBtn.disabled = false;
-            setAbcIsPlaying(false);
+            // Only log/update UI if this session is still active
+            if (abcPlaybackSession === startSession) {
+                console.error('Playback error:', e);
+                newPlayBtn.textContent = '▶';
+                newPlayBtn.disabled = false;
+                setAbcIsPlaying(false);
+            }
         }
     });
 }

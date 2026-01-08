@@ -214,6 +214,7 @@ export let abcScale = 1.0;                 // Size scale (0.7 - 1.5)
 export let abcSynth = null;                // Persistent synth instance
 export let abcTimingCallbacks = null;      // Persistent timing callbacks
 export let abcIsPlaying = false;           // Playback state for toggle button
+export let abcPlaybackSession = 0;         // Session counter to detect cancelled playback
 
 export function setShowAbcNotation(value) { showAbcNotation = value; }
 export function setAbcjsRendered(value) { abcjsRendered = value; }
@@ -224,6 +225,7 @@ export function setAbcScale(value) { abcScale = value; }
 export function setAbcSynth(value) { abcSynth = value; }
 export function setAbcTimingCallbacks(value) { abcTimingCallbacks = value; }
 export function setAbcIsPlaying(value) { abcIsPlaying = value; }
+export function incrementAbcPlaybackSession() { return ++abcPlaybackSession; }
 
 // ============================================
 // KEY/TRANSPOSITION STATE
@@ -355,6 +357,7 @@ const stateGetters = {
     abcSynth: () => abcSynth,
     abcTimingCallbacks: () => abcTimingCallbacks,
     abcIsPlaying: () => abcIsPlaying,
+    abcPlaybackSession: () => abcPlaybackSession,
 
     // Key/transposition
     currentDetectedKey: () => currentDetectedKey,
@@ -420,6 +423,7 @@ const stateSetters = {
     abcSynth: setAbcSynth,
     abcTimingCallbacks: setAbcTimingCallbacks,
     abcIsPlaying: setAbcIsPlaying,
+    abcPlaybackSession: incrementAbcPlaybackSession,
 
     // Key/transposition
     currentDetectedKey: setCurrentDetectedKey,
