@@ -1,7 +1,7 @@
 // Core search functionality for Bluegrass Songbook
 
 import { allSongs, songGroups } from './state.js';
-import { highlightMatch, escapeHtml } from './utils.js';
+import { highlightMatch, escapeHtml, isTabOnlyWork } from './utils.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
     isFavorite, reorderFavoriteItem, showFavorites,
@@ -30,8 +30,8 @@ let draggedIndex = null;
 let currentDropTarget = null;
 let currentDropPosition = null;
 
-// Event delegation flag - ensures we only set up container listeners once
-let delegationInitialized = false;
+// Track which containers have been initialized (WeakMap for proper GC if element is removed)
+const initializedContainers = new WeakMap();
 
 /**
  * Clear all drag indicator classes from result items
@@ -189,9 +189,19 @@ export function parseSearchQuery(query) {
                 case 'chord':
                     result.excludeChords.push(...value.split(',').map(c => c.trim()).filter(c => c));
                     break;
-                case 'tag':
-                    result.excludeTags.push(...value.split(',').map(t => t.trim()).filter(t => t));
+                case 'tag': {
+                    // Tags are single words - split by whitespace first
+                    const parts = value.split(/\s+/).filter(p => p);
+                    if (parts.length > 0) {
+                        const tags = parts[0].split(',').map(t => t.trim()).filter(t => t);
+                        result.excludeTags.push(...tags);
+                        // Remaining parts are text terms
+                        if (parts.length > 1) {
+                            result.textTerms.push(...parts.slice(1).map(t => t.toLowerCase()));
+                        }
+                    }
                     break;
+                }
             }
         } else {
             // Positive filters
@@ -217,9 +227,22 @@ export function parseSearchQuery(query) {
                 case 'prog':
                     result.progressionFilter = value.split('-').map(c => c.trim()).filter(c => c);
                     break;
-                case 'tag':
-                    result.tagFilters.push(...value.split(',').map(t => t.trim()).filter(t => t));
+                case 'tag': {
+                    // Tags are single words - split by whitespace first
+                    // Only first token(s) are tags (may be comma-separated)
+                    // Remaining words become text search terms
+                    const parts = value.split(/\s+/).filter(p => p);
+                    if (parts.length > 0) {
+                        // First part can be comma-separated tags
+                        const tags = parts[0].split(',').map(t => t.trim()).filter(t => t);
+                        result.tagFilters.push(...tags);
+                        // Remaining parts are text terms
+                        if (parts.length > 1) {
+                            result.textTerms.push(...parts.slice(1).map(t => t.toLowerCase()));
+                        }
+                    }
                     break;
+                }
             }
         }
     }
@@ -248,6 +271,19 @@ export function songHasChords(song, requiredChords) {
 }
 
 /**
+ * Normalize a Nashville number by stripping extensions (7, maj7, dim, etc.)
+ * e.g., "V7" -> "V", "iii7" -> "iii", "IVmaj7" -> "IV", "viidim" -> "vii"
+ */
+function normalizeNashville(chord) {
+    if (!chord) return chord;
+    // Strip common extensions: 7, maj7, min7, m7, dim, aug, sus, add, etc.
+    // Keep the Roman numeral base (including any leading 'b' or '#')
+    // Match pattern: optional flat/sharp, then Roman numeral (I-VII or i-vii)
+    const match = chord.match(/^([b#]?)(VII|VII|VI|IV|III|II|I|vii|vi|iv|iii|ii|i|V|v)/);
+    return match ? match[1] + match[2] : chord;
+}
+
+/**
  * Check if song contains progression
  */
 export function songHasProgression(song, progression) {
@@ -257,11 +293,14 @@ export function songHasProgression(song, progression) {
     const sequence = song.progression || [];
     if (!sequence.length) return false;
 
-    // Look for exact progression anywhere in sequence
-    for (let i = 0; i <= sequence.length - progression.length; i++) {
+    // Normalize query progression to strip extensions (V7 -> V, iii7 -> iii)
+    const normalizedQuery = progression.map(normalizeNashville);
+
+    // Look for progression anywhere in sequence
+    for (let i = 0; i <= sequence.length - normalizedQuery.length; i++) {
         let match = true;
-        for (let j = 0; j < progression.length; j++) {
-            if (sequence[i + j] !== progression[j]) {
+        for (let j = 0; j < normalizedQuery.length; j++) {
+            if (sequence[i + j] !== normalizedQuery[j]) {
                 match = false;
                 break;
             }
@@ -625,9 +664,9 @@ export function renderResults(songs, query) {
  * Uses event delegation to avoid per-item listener attachment
  */
 function setupResultEventListeners(resultsDiv) {
-    // Only set up delegation once per container
-    if (delegationInitialized) return;
-    delegationInitialized = true;
+    // Only set up delegation once per container instance
+    if (initializedContainers.has(resultsDiv)) return;
+    initializedContainers.set(resultsDiv, true);
 
     // === CLICK DELEGATION ===
     // Single click handler for all result items, buttons, and badges
@@ -686,8 +725,7 @@ function setupResultEventListeners(resultsDiv) {
                 const songId = resultItem.dataset.id;
                 const song = allSongs.find(s => s.id === songId);
                 // Use openWork for tablature-only works (no lead sheet content)
-                const hasTabOnly = song && song.tablature_parts?.length > 0 && !song.content;
-                if (hasTabOnly) {
+                if (isTabOnlyWork(song)) {
                     openWork(songId);
                 } else {
                     openSong(songId, { fromList });

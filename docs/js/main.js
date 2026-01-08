@@ -26,6 +26,7 @@ import {
     twoColumnMode, setTwoColumnMode,
     fontSizeLevel, setFontSizeLevel, FONT_SIZES,
     setListContext,
+    tablaturePlayer,
     // Reactive state system
     subscribe, setCurrentView, currentView
 } from './state.js';
@@ -310,6 +311,11 @@ function initViewSubscription() {
     const searchContainer = document.querySelector('.search-container');
 
     subscribe('currentView', (view) => {
+        // Stop any playing tablature audio when leaving song view
+        if (tablaturePlayer?.isPlaying) {
+            tablaturePlayer.stop();
+        }
+
         // Close any open editor hints panel
         closeHints();
 

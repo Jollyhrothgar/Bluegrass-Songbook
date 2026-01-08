@@ -18,10 +18,9 @@ import {
     originalDetectedMode, setOriginalDetectedMode,
     historyInitialized,
     currentView,
-    // Tablature state
+    // Tablature state (for defensive cleanup only)
     activePartTab, setActivePartTab,
     loadedTablature, setLoadedTablature,
-    tablaturePlayer, setTablaturePlayer,
     // ABC notation state
     showAbcNotation, setShowAbcNotation,
     abcjsRendered, setAbcjsRendered,
@@ -39,8 +38,7 @@ import {
     subscribe,
     setCurrentView
 } from './state.js';
-import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
-import { escapeHtml } from './utils.js';
+import { escapeHtml, isTabOnlyWork } from './utils.js';
 import {
     parseLineWithChords, extractChords, detectKey,
     getSemitonesBetweenKeys, transposeChord, toNashville
@@ -399,210 +397,9 @@ function setupAbcPlayback() {
     });
 }
 
-/**
- * Stop and clean up tablature playback
- */
-function stopTablaturePlayback() {
-    if (tablaturePlayer) {
-        tablaturePlayer.stop();
-    }
-}
-
-/**
- * Load and render tablature for a song
- */
-async function loadAndRenderTablature(song, containerId) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-
-    const tabParts = song.tablature_parts || [];
-    if (tabParts.length === 0) {
-        container.innerHTML = '<div class="error">No tablature available</div>';
-        return;
-    }
-
-    // Use first part for now (future: part selector)
-    const part = tabParts[0];
-
-    container.innerHTML = '<div class="loading">Loading tablature...</div>';
-
-    try {
-        // Check if already loaded
-        let otf = loadedTablature;
-        if (!otf || otf._songId !== song.id) {
-            const response = await fetch(part.file);
-            if (!response.ok) throw new Error(`Failed to load ${part.file}`);
-            otf = await response.json();
-            otf._songId = song.id;
-            setLoadedTablature(otf);
-        }
-
-        container.innerHTML = '';
-
-        // Create controls
-        const defaultTempo = otf.metadata?.tempo || 120;
-        let currentTempo = defaultTempo;
-
-        // Key/capo handling
-        const originalKey = song.key || 'G';
-        const keys = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
-        let currentCapo = 0;
-
-        // Build key options (show capo position for each)
-        const keyOptions = keys.map(k => {
-            const origIndex = keys.indexOf(originalKey);
-            const keyIndex = keys.indexOf(k);
-            const capo = (keyIndex - origIndex + 12) % 12;
-            const capoLabel = capo === 0 ? '' : ` (Capo ${capo})`;
-            const selected = k === originalKey ? 'selected' : '';
-            return `<option value="${k}" data-capo="${capo}" ${selected}>${k}${capoLabel}</option>`;
-        }).join('');
-
-        const controls = document.createElement('div');
-        controls.className = 'tab-controls';
-        controls.innerHTML = `
-            <button class="tab-play-btn">▶ Play</button>
-            <button class="tab-stop-btn" disabled>⏹ Stop</button>
-            <span class="tab-position"></span>
-            <label class="tab-metronome-toggle">
-                <input type="checkbox" class="tab-metronome-checkbox">
-                <span class="tab-metronome-icon">🥁</span>
-            </label>
-            <div class="tab-key-control">
-                <label class="tab-key-label">Key:</label>
-                <select class="tab-key-select">${keyOptions}</select>
-                <span class="tab-capo-indicator"></span>
-            </div>
-            <div class="tab-tempo-control">
-                <button class="tab-tempo-btn tab-tempo-down" ${currentTempo <= 40 ? 'disabled' : ''}>−</button>
-                <input type="number" class="tab-tempo-input" value="${currentTempo}" min="40" max="280" step="5">
-                <button class="tab-tempo-btn tab-tempo-up" ${currentTempo >= 280 ? 'disabled' : ''}>+</button>
-                <span class="tab-tempo-label">BPM</span>
-            </div>
-        `;
-        container.appendChild(controls);
-
-        // Create tab container
-        const tabContainer = document.createElement('div');
-        tabContainer.className = 'tablature-container';
-        container.appendChild(tabContainer);
-
-        // Render tablature
-        const track = otf.tracks[0];
-        const notation = otf.notation[track.id];
-        const renderer = new TabRenderer(tabContainer, { showLyrics: false });
-        const timeSignature = otf.metadata?.time_signature || '4/4';
-        renderer.render(track, notation, otf.timing?.ticks_per_beat || 480, timeSignature);
-
-        // Set up player
-        if (!tablaturePlayer) {
-            const player = new TabPlayer();
-            setTablaturePlayer(player);
-        }
-
-        const player = tablaturePlayer;
-        const playBtn = controls.querySelector('.tab-play-btn');
-        const stopBtn = controls.querySelector('.tab-stop-btn');
-        const posEl = controls.querySelector('.tab-position');
-        const tempoInput = controls.querySelector('.tab-tempo-input');
-        const tempoDown = controls.querySelector('.tab-tempo-down');
-        const tempoUp = controls.querySelector('.tab-tempo-up');
-        const keySelect = controls.querySelector('.tab-key-select');
-        const capoIndicator = controls.querySelector('.tab-capo-indicator');
-        const metronomeCheckbox = controls.querySelector('.tab-metronome-checkbox');
-
-        // Wire up playback visualization callbacks
-        player.onTick = (absTick) => {
-            renderer.updateBeatCursor(absTick);
-        };
-
-        player.onNoteStart = (absTick) => {
-            renderer.highlightNote(absTick);
-        };
-
-        player.onNoteEnd = (absTick) => {
-            renderer.clearNoteHighlight(absTick);
-        };
-
-        // Metronome toggle
-        metronomeCheckbox.addEventListener('change', () => {
-            player.metronomeEnabled = metronomeCheckbox.checked;
-        });
-
-        // Tempo control helpers
-        const updateTempoButtons = () => {
-            tempoDown.disabled = currentTempo <= 40;
-            tempoUp.disabled = currentTempo >= 280;
-        };
-
-        const setTempo = (newTempo) => {
-            currentTempo = Math.max(40, Math.min(280, newTempo));
-            tempoInput.value = currentTempo;
-            updateTempoButtons();
-        };
-
-        tempoDown.addEventListener('click', () => setTempo(currentTempo - 5));
-        tempoUp.addEventListener('click', () => setTempo(currentTempo + 5));
-        tempoInput.addEventListener('change', () => {
-            const val = parseInt(tempoInput.value, 10);
-            if (!isNaN(val)) setTempo(val);
-        });
-
-        // Key/capo control
-        const updateCapoIndicator = () => {
-            if (capoIndicator) {
-                capoIndicator.textContent = currentCapo > 0 ? `Capo ${currentCapo}` : '';
-            }
-        };
-
-        keySelect.addEventListener('change', () => {
-            const selectedOption = keySelect.options[keySelect.selectedIndex];
-            currentCapo = parseInt(selectedOption.dataset.capo, 10) || 0;
-            updateCapoIndicator();
-        });
-
-        player.onPositionUpdate = (elapsed, total) => {
-            const fmt = (s) => `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
-            posEl.textContent = `${fmt(elapsed)} / ${fmt(total)}`;
-        };
-
-        player.onPlaybackEnd = () => {
-            playBtn.textContent = '▶ Play';
-            playBtn.classList.remove('playing');
-            stopBtn.disabled = true;
-            posEl.textContent = '';
-            renderer.resetPlaybackVisualization();
-        };
-
-        playBtn.addEventListener('click', async () => {
-            if (player.playing) {
-                player.stop();
-                playBtn.textContent = '▶ Play';
-                playBtn.classList.remove('playing');
-                stopBtn.disabled = true;
-                renderer.resetPlaybackVisualization();
-            } else {
-                playBtn.textContent = '⏸ Pause';
-                playBtn.classList.add('playing');
-                stopBtn.disabled = false;
-                await player.play(otf, { tempo: currentTempo, transpose: currentCapo });
-            }
-        });
-
-        stopBtn.addEventListener('click', () => {
-            player.stop();
-            playBtn.textContent = '▶ Play';
-            playBtn.classList.remove('playing');
-            stopBtn.disabled = true;
-            posEl.textContent = '';
-            renderer.resetPlaybackVisualization();
-        });
-
-    } catch (e) {
-        console.error('Error loading tablature:', e);
-        container.innerHTML = `<div class="error">Failed to load tablature: ${e.message}</div>`;
-    }
-}
+// Note: Tablature rendering for song-view has been removed.
+// All tablature-only works now route through openWork() in work-view.js.
+// Songs with lead sheet content do not have tablature parts in the current dataset.
 
 /**
  * Render song with chords above lyrics
@@ -910,18 +707,9 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         </div>
     ` : '';
 
-    // Chord view HTML (hide if showing ABC view, tablature view, or no chords)
-    const showTablatureView = hasTablature && activePartTab === 'tablature';
-    const chordViewClass = showAbcView || showTablatureView || !hasChords ? 'hidden' : '';
-
-    // Tablature view HTML
-    const tablatureViewHtml = hasTablature ? `
-        <div id="tablature-view" class="tablature-view ${showTablatureView ? '' : 'hidden'}">
-            <div id="tablature-content">
-                ${showTablatureView ? '<div class="loading">Loading tablature...</div>' : ''}
-            </div>
-        </div>
-    ` : '';
+    // Chord view HTML (hide if showing ABC view or no chords)
+    // Note: Tablature view removed - all tab works route through work-view.js
+    const chordViewClass = showAbcView || !hasChords ? 'hidden' : '';
 
     // Header controls - Options and Flag buttons
     const headerControlsHtml = `
@@ -943,7 +731,6 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         ${partTabsHtml}
         ${viewToggleHtml}
         ${abcViewHtml}
-        ${tablatureViewHtml}
         <div id="chord-view" class="${chordViewClass}">
             ${showChordProSource ? `
             <div class="source-view">
@@ -971,13 +758,6 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         }, 0);
     }
 
-    // Render tablature if showing
-    if (showTablatureView) {
-        setTimeout(() => {
-            loadAndRenderTablature(song, 'tablature-content');
-        }, 0);
-    }
-
     // Add event listeners
     setupRenderOptionsListeners(song, chordpro);
     setupAbcControlListeners(song, chordpro, abcContent);
@@ -997,7 +777,6 @@ function setupPartTabListeners(song, chordpro) {
             if (part === activePartTab) return;
 
             // Stop any playback when switching
-            stopTablaturePlayback();
             stopAbcPlayback();
 
             // Update state and re-render
@@ -1440,10 +1219,9 @@ export async function openSong(songId, options = {}) {
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
 
-    // Reset tablature state for new song
+    // Reset tablature state for new song (defensive cleanup)
     setActivePartTab('lead-sheet');
     setLoadedTablature(null);
-    stopTablaturePlayback();
 
     const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);
@@ -1520,10 +1298,9 @@ export async function openSongFromHistory(songId) {
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
 
-    // Reset tablature state for new song
+    // Reset tablature state for new song (defensive cleanup)
     setActivePartTab('lead-sheet');
     setLoadedTablature(null);
-    stopTablaturePlayback();
 
     const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);
@@ -1592,7 +1369,7 @@ export async function showVersionPicker(groupId, options = {}) {
 
         // Build version label - prefer tab author for tab-only songs
         const tabPart = song.tablature_parts?.[0];
-        const hasTabOnly = tabPart && !song.content;
+        const hasTabOnly = isTabOnlyWork(song);
         let versionLabel = song.version_label;
 
         // Check for title variations (e.g., "Angeline Baker (C)" vs "Angeline Baker (D)")
@@ -1667,8 +1444,7 @@ export async function showVersionPicker(groupId, options = {}) {
             closeVersionPicker();
             // Use openWork for tablature-only works to get track mixer
             const song = allSongs.find(s => s.id === songId);
-            const hasTabOnly = song && song.tablature_parts?.length > 0 && !song.content;
-            if (hasTabOnly) {
+            if (isTabOnlyWork(song)) {
                 openWork(songId);
             } else {
                 openSong(songId, openOptions);

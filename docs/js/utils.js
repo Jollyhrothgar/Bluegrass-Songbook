@@ -57,3 +57,11 @@ export function downloadFile(filename, content, mimeType) {
 export function generateLocalId() {
     return 'local_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
 }
+
+/**
+ * Check if a song is a tablature-only work (no lead sheet content)
+ * Used to determine routing between openSong() and openWork()
+ */
+export function isTabOnlyWork(song) {
+    return song?.tablature_parts?.length > 0 && !song.content;
+}
