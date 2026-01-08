@@ -511,6 +511,13 @@ class TEFReader:
             (b"Banjo open C", 5),
             (b"banjo open C", 5),
             (b"Banjo Double C", 5),
+            # Tenor banjo (4-string) - must come before generic "Banjo" patterns
+            (b"tenor banjo", 4),
+            (b"Tenor banjo", 4),
+            (b"Tenor Banjo", 4),
+            (b"TENOR BANJO", 4),
+            (b"CGdg", 4),  # Common tenor banjo tuning
+            (b"CGDA", 4),  # Irish tenor banjo tuning
             (b"Banjo", 5),
             (b"banjo", 5),
             # Tuning-only patterns (no instrument name, just tuning)
@@ -1008,9 +1015,11 @@ class TEFReader:
 
                 # Handle high frets (bit 5 set means add effect2 to fret)
                 # But NOT when effect2 is a special marker:
-                # 0x06=text annotation, 0x07=chord overlay, 0x0c=fingering annotation
+                # 0x06=text annotation, 0x07=chord overlay, 0x0c/0x12=fingering annotations
+                # These annotation codes appear to be multiples of 6 (6, 12, 18)
                 effect2_val = rec[5] if len(rec) > 5 else 0
-                if (fret_byte >> 5) & 0x01 and effect2_val > 0x0c:
+                annotation_codes = {0x06, 0x07, 0x0c, 0x12}
+                if (fret_byte >> 5) & 0x01 and effect2_val not in annotation_codes and effect2_val > 0:
                     fret += effect2_val
 
                 # Extract marker from byte 3 (duration byte contains marker in upper bits)

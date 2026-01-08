@@ -3,9 +3,9 @@ title: "Soldier's Joy"
 tags: [Instrumental, Bluegrass, Scruggs]
 parts:
   - type: tablature
-    instrument: banjo
+    instrument: tenor-banjo
     format: otf
-    file: banjo.otf.json
+    file: tenor-banjo.otf.json
     default: true
     provenance:
       source: banjo-hangout

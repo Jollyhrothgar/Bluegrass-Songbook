@@ -3,6 +3,7 @@
 
 const INSTRUMENT_ICONS = {
     '5-string-banjo': '🪕',
+    'tenor-banjo': '🪕',
     'banjo': '🪕',
     'mandolin': '🎸',
     '6-string-guitar': '🎸',
@@ -378,6 +379,13 @@ export class TabRenderer {
                 svg.appendChild(barLine);
             }
 
+            // Draw repeat end barline (:|) at right side of this measure if needed
+            // (Only for mid-row repeat ends; final bar handled separately)
+            if (measure.repeatEnd && mi < measures.length - 1) {
+                const endX = x + measureWidth;
+                this.drawRepeatEndBarline(svg, endX, opt.topMargin, beamY + 4, opt);
+            }
+
             // Draw ending bracket if this measure is part of an ending
             if (measure.ending) {
                 this.drawEndingBracket(svg, x, measureWidth, opt.topMargin, measure.ending, opt);
@@ -451,6 +459,20 @@ export class TabRenderer {
                                 textAnchor: 'middle'
                             });
                             svg.appendChild(techText);
+                        }
+
+                        // Render fingering annotation below the beams
+                        if (note.finger && this.options.showFingerings !== false) {
+                            const fingerY = beamY + 12;
+                            const fingerText = this.createText(noteX, fingerY, note.finger, {
+                                fontSize: '10px',
+                                fill: '#666',
+                                fontWeight: '500',
+                                textAnchor: 'middle',
+                                fontStyle: 'italic'
+                            });
+                            fingerText.setAttribute('class', 'finger-text');
+                            svg.appendChild(fingerText);
                         }
                     });
 

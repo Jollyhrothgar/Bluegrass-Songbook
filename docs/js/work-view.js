@@ -94,7 +94,7 @@ function analyzeReadingList(readingList) {
             }
         }
 
-        // Case 2: Same start, different ends
+        // Case 2: Same start, next ends before current (subset repeat)
         // e.g., [11-18] followed by [11-17] -> repeat at 11, end at 17, 18 is 1st ending
         if (nextStart === currStart && nextEnd < currEnd) {
             repeatStartMarkers.add(currStart);
@@ -112,6 +112,14 @@ function analyzeReadingList(readingList) {
                 afterRepeat.to_measure === afterRepeat.from_measure) {
                 endings[afterRepeat.from_measure] = 2;
             }
+        }
+
+        // Case 3: Same start, next extends past current (simple repeat of first section)
+        // e.g., [1-8] followed by [1-16] -> repeat at 1, end at 8 (measures 1-8 repeat)
+        // This is common in AABB tune structures where A part repeats before B
+        if (nextStart === currStart && nextEnd > currEnd) {
+            repeatStartMarkers.add(currStart);
+            repeatEndMarkers.add(currEnd);
         }
     }
 

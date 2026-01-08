@@ -25,14 +25,23 @@ def midi_to_pitch_name(midi: int) -> str:
     return MIDI_TO_PITCH.get(midi, f"MIDI{midi}")
 
 
+# Fingering annotation codes from TEF format (multiples of 6)
+FINGERING_MAP = {
+    0x06: 'T',  # Thumb
+    0x0c: 'I',  # Index
+    0x12: 'M',  # Middle
+}
+
+
 @dataclass
 class OTFNote:
     """A single note in OTF format."""
     s: int           # String number (1 = highest pitch)
     f: int           # Fret number (0 = open)
-    tech: str | None = None  # Technique code (h, p, /, etc.)
-    dur: int | None = None   # Duration in ticks (for sustained notes)
-    tie: bool = False        # True if tied to previous note (no re-articulation)
+    tech: str | None = None    # Technique code (h, p, /, etc.)
+    finger: str | None = None  # Fingering annotation (T, I, M)
+    dur: int | None = None     # Duration in ticks (for sustained notes)
+    tie: bool = False          # True if tied to previous note (no re-articulation)
 
 
 @dataclass
@@ -136,6 +145,8 @@ class OTFDocument:
                         n = {"s": note.s, "f": note.f}
                         if note.tech:
                             n["tech"] = note.tech
+                        if note.finger:
+                            n["finger"] = note.finger
                         if note.dur:
                             n["dur"] = note.dur
                         if note.tie:
@@ -173,6 +184,9 @@ def instrument_to_otf_id(inst: TEFInstrument) -> str:
     # 5-string instruments are banjos (handles "D Tuning", "G Tuning", etc.)
     if inst.num_strings == 5:
         return "banjo"
+    # 4-string tenor banjo
+    if inst.num_strings == 4 and ("banjo" in name or "tenor" in name or "cgdg" in name or "cgda" in name):
+        return "tenor-banjo"
     # Remove common suffixes
     for suffix in [" open g", " standard", " gdae", " gda"]:
         name = name.replace(suffix, "")
@@ -184,6 +198,9 @@ def instrument_to_otf_id(inst: TEFInstrument) -> str:
 def instrument_to_type(inst: TEFInstrument) -> str:
     """Map instrument name to standard type identifier."""
     name = inst.name.lower()
+    # 4-string tenor banjo (check before generic banjo check)
+    if inst.num_strings == 4 and ("banjo" in name or "tenor" in name or "cgdg" in name or "cgda" in name):
+        return "tenor-banjo"
     if "banjo" in name or inst.num_strings == 5:
         return "5-string-banjo"
     elif "mandolin" in name:
@@ -411,6 +428,7 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     # Default tunings when TEF parsing fails to extract tuning
     DEFAULT_TUNINGS = {
         '5-string-banjo': [62, 59, 55, 50, 67],  # D4, B3, G3, D3, G4 (Open G)
+        'tenor-banjo': [67, 62, 55, 48],         # G4, D4, G3, C3 (CGdg - Irish/American tenor)
         'mandolin': [76, 69, 62, 55],            # E5, A4, D4, G3
         '6-string-guitar': [64, 59, 55, 50, 45, 40],  # E4, B3, G3, D3, A2, E2
     }
@@ -583,7 +601,14 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                             tech = technique_from_event(evt)
                         # Check if this note is tied to the previous note
                         tie = is_tied_note(evt)
-                        note = OTFNote(s=string, f=fret, tech=tech, tie=tie)
+                        # Extract fingering annotation from effect2 when bit5 is set
+                        finger = None
+                        if evt.raw_data and len(evt.raw_data) > 5:
+                            fret_byte = evt.raw_data[2]
+                            effect2 = evt.raw_data[5]
+                            if (fret_byte >> 5) & 0x01 and effect2 in FINGERING_MAP:
+                                finger = FINGERING_MAP[effect2]
+                        note = OTFNote(s=string, f=fret, tech=tech, finger=finger, tie=tie)
                         otf_event.notes.append(note)
 
                 if otf_event.notes:
