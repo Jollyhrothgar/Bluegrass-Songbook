@@ -269,6 +269,15 @@ npm test              # Run unit tests (Vitest)
 npm run test:e2e      # Run E2E tests (Playwright, requires server)
 ```
 
+### Chrome DevTools MCP
+
+For issues that tests don't catch, use the `chrome-devtools` MCP with the dev server running:
+
+- Inspecting rendered song/tablature layout
+- Debugging state changes visually
+- Profiling search performance with large result sets
+- Checking network requests for index.jsonl or tablature JSON
+
 **Unit tests** (`__tests__/`):
 - `chords.test.js` - Key detection, transposition, Nashville numbers
 - `search-core.test.js` - Query parsing, chord/progression filtering

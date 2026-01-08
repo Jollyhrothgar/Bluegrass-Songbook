@@ -262,6 +262,17 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 | `process-song-submission.yml` | Issue labeled `song-submission` + `approved` | Adds new song |
 | `process-song-correction.yml` | Issue labeled `song-correction` + `approved` | Updates existing song |
 
+## Chrome DevTools MCP
+
+Use the `chrome-devtools` MCP when Playwright/Vitest aren't enough:
+
+- **Visual debugging** - inspect rendered DOM, see layout issues, check CSS
+- **Performance profiling** - identify slow renders, memory issues
+- **Network inspection** - debug index.jsonl loading, tablature fetch failures
+- **Console errors** - catch runtime JS errors not surfaced in tests
+
+Start the dev server first (`./scripts/server`), then use the MCP to interact with the page.
+
 ## Current State
 
 - **17,650+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
@@ -295,3 +306,4 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 | Run parser tests | `uv run pytest` |
 | Run frontend tests | `npm test` |
 | Run E2E tests | `npm run test:e2e` |
+| Debug in browser | Chrome DevTools MCP (see below) |
