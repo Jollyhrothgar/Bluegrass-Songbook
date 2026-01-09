@@ -1613,10 +1613,16 @@ export function updateNavBar() {
         // Add class to indicate we have list context (for CSS)
         navBarEl.classList.add('has-list-context');
     } else {
-        // No list context - hide nav bar and clear content
-        navBarEl.classList.add('hidden');
+        // No list context - remove list context class
         navBarEl.classList.remove('has-list-context');
-        // Clear the content so it doesn't show stale data if CSS forces it visible
+        // Show nav bar in fullscreen mode (for Song button access)
+        // Hide only if NOT in fullscreen
+        if (fullscreenMode) {
+            navBarEl.classList.remove('hidden');
+        } else {
+            navBarEl.classList.add('hidden');
+        }
+        // Clear the content so it doesn't show stale data
         if (navPositionEl) navPositionEl.textContent = '';
         if (navListNameEl) navListNameEl.textContent = '';
     }

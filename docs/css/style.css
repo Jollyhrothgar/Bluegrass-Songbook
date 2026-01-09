@@ -3986,9 +3986,16 @@ body.fullscreen-mode .header-controls {
     display: none;
 }
 
-/* Show nav bar in fullscreen mode only when there's a list context */
-body.fullscreen-mode .song-nav-bar.has-list-context {
+/* Show nav bar in ALL fullscreen modes (not just with list context) */
+body.fullscreen-mode .song-nav-bar {
     display: flex !important;
+}
+
+/* Hide list-specific elements when no list context */
+body.fullscreen-mode .song-nav-bar:not(.has-list-context) .nav-info,
+body.fullscreen-mode .song-nav-bar:not(.has-list-context) #nav-prev-btn,
+body.fullscreen-mode .song-nav-bar:not(.has-list-context) #nav-next-btn {
+    display: none;
 }
 
 /* Bottom navigation bar */
