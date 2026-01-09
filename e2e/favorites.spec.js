@@ -14,7 +14,8 @@ test.describe('Favorites', () => {
         await page.evaluate(() => {
             localStorage.removeItem('songbook-favorites');
         });
-        await page.reload();
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
     });
 
@@ -27,9 +28,12 @@ test.describe('Favorites', () => {
     });
 
     test('adding song to favorites works', async ({ page }) => {
-        // Search for a song
-        await page.fill('#search-input', 'blue moon');
-        await page.waitForTimeout(300);
+        // Search for a song (use specific song to get reliable results)
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('wagon wheel', { delay: 30 });
+        await page.waitForTimeout(500);
+        await page.waitForSelector('.result-item');
 
         // Click the list button
         await page.locator('.result-list-btn').first().click();
@@ -49,9 +53,12 @@ test.describe('Favorites', () => {
     });
 
     test('favorites persist across page reload', async ({ page }) => {
-        // Add a favorite
-        await page.fill('#search-input', 'foggy mountain');
-        await page.waitForTimeout(300);
+        // Add a favorite (use pressSequentially to trigger search)
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('foggy mountain', { delay: 30 });
+        await page.waitForTimeout(500);
+        await page.waitForSelector('.result-item');
         await page.locator('.result-list-btn').first().click();
         await expect(page.locator('.list-picker-popup')).toBeVisible();
         await page.locator('.list-picker-popup .favorites-option input').click();
@@ -59,8 +66,8 @@ test.describe('Favorites', () => {
         // Wait for the favorite to be saved (badge should update)
         await expect(page.locator('#nav-favorites-count')).toHaveText('1');
 
-        // Reload page
-        await page.reload();
+        // Reload page (go back to search view since reload may reset to landing)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
         // Navigate to favorites via sidebar
@@ -72,9 +79,12 @@ test.describe('Favorites', () => {
     });
 
     test('removing from favorites works', async ({ page }) => {
-        // Add a favorite first
-        await page.fill('#search-input', 'wagon wheel');
-        await page.waitForTimeout(300);
+        // Add a favorite first (use pressSequentially to trigger search)
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('wagon wheel', { delay: 30 });
+        await page.waitForTimeout(500);
+        await page.waitForSelector('.result-item');
         await page.locator('.result-list-btn').first().click();
         await expect(page.locator('.list-picker-popup')).toBeVisible();
         await page.locator('.list-picker-popup .favorites-option input').click();
@@ -104,19 +114,27 @@ test.describe('Favorites', () => {
 
         // Initially hidden or shows 0
 
-        // Add a favorite
-        await page.fill('#search-input', 'cripple creek');
-        await page.waitForTimeout(300);
+        // Add a favorite - use pressSequentially to trigger search and wait for results
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('cripple creek', { delay: 30 });
+        await page.waitForTimeout(500);
+        await page.waitForSelector('.result-item');
         await page.locator('.result-list-btn').first().click();
+        await expect(page.locator('.list-picker-popup')).toBeVisible();
         await page.locator('.list-picker-popup .favorites-option input').click();
 
         // Badge should show 1
         await expect(badge).toHaveText('1');
 
-        // Add another
-        await page.fill('#search-input', 'john henry');
-        await page.waitForTimeout(300);
+        // Add another - clear and search again
+        await input.clear();
+        await input.click();
+        await input.pressSequentially('john henry', { delay: 30 });
+        await page.waitForTimeout(500);
+        await page.waitForSelector('.result-item');
         await page.locator('.result-list-btn').first().click();
+        await expect(page.locator('.list-picker-popup')).toBeVisible();
         await page.locator('.list-picker-popup .favorites-option input').click();
 
         // Badge should show 2
@@ -131,13 +149,17 @@ test.describe('Lists', () => {
         await page.evaluate(() => {
             localStorage.clear();
         });
-        await page.reload();
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
     });
 
     test('list picker shows favorites option', async ({ page }) => {
-        await page.fill('#search-input', 'test');
-        await page.waitForTimeout(300);
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('wagon wheel', { delay: 30 });
+        await page.waitForTimeout(500);
+        await page.waitForSelector('.result-item');
 
         await page.locator('.result-list-btn').first().click();
 
@@ -147,8 +169,11 @@ test.describe('Lists', () => {
     });
 
     test('can add song to favorites from result', async ({ page }) => {
-        await page.fill('#search-input', 'mountain');
-        await page.waitForTimeout(300);
+        const input = page.locator('#search-input');
+        await input.click();
+        await input.pressSequentially('mountain', { delay: 30 });
+        await page.waitForTimeout(500);
+        await page.waitForSelector('.result-item');
 
         // Click list button
         await page.locator('.result-list-btn').first().click();
@@ -163,7 +188,8 @@ test.describe('Lists', () => {
 
 test.describe('Song in Favorites', () => {
     test('result item shows favorite indicator', async ({ page }) => {
-        await page.goto('/');
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
         // Add a favorite

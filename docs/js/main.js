@@ -2019,8 +2019,15 @@ document.addEventListener('keydown', (e) => {
         }
     }
 
-    // Escape - exit fullscreen mode
+    // Escape - close bottom sheet first, then exit fullscreen
     if (e.key === 'Escape') {
+        // If bottom sheet is open, close it first
+        if (bottomSheet && !bottomSheet.classList.contains('hidden')) {
+            bottomSheet.classList.add('hidden');
+            bottomSheetBackdrop?.classList.add('hidden');
+            return;
+        }
+        // Otherwise exit fullscreen
         exitFullscreen();
     }
 
