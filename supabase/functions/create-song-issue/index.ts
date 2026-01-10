@@ -17,6 +17,7 @@ interface SongSubmissionRequest {
   songId?: string  // Required for corrections
   chordpro: string
   comment?: string  // Required for corrections
+  submittedBy?: string  // Attribution: logged-in username or "Rando Calrissian"
 }
 
 serve(async (req) => {
@@ -32,7 +33,8 @@ serve(async (req) => {
     }
 
     const body: SongSubmissionRequest = await req.json()
-    const { type, title, artist, songId, chordpro, comment } = body
+    const { type, title, artist, songId, chordpro, comment, submittedBy } = body
+    const attribution = submittedBy || 'Rando Calrissian'
 
     // Validate required fields
     if (!title || !chordpro) {
@@ -61,6 +63,7 @@ serve(async (req) => {
 **Song ID:** ${songId}
 **Title:** ${title}
 **Artist:** ${artist || 'Unknown'}
+**Submitted by:** ${attribution}
 
 ### Changes Made
 ${comment}
@@ -83,7 +86,7 @@ ${chordpro}
 
 **Title:** ${title}
 **Artist:** ${artist || 'Unknown'}
-**Submitted via:** Bluegrass Songbook Editor
+**Submitted by:** ${attribution}
 
 ### ChordPro Content
 

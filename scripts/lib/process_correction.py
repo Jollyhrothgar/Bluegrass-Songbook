@@ -46,6 +46,14 @@ def extract_song_id(issue_body: str) -> str | None:
     return None
 
 
+def extract_submitted_by(issue_body: str) -> str | None:
+    """Extract the 'Submitted by' attribution from the issue body."""
+    match = re.search(r'\*\*Submitted by:\*\*\s*(.+)', issue_body)
+    if match:
+        return match.group(1).strip()
+    return None
+
+
 def add_correction_metadata(content: str, author: str, issue_number: str) -> str:
     """Add correction provenance metadata to ChordPro content.
 
@@ -241,8 +249,12 @@ def main():
         print("Error: Could not find ChordPro content in issue body")
         sys.exit(1)
 
+    # Use submitted_by from web UI if available, otherwise use GitHub issue author
+    # "Rando Calrissian" = anonymous user from the web UI
+    submitter = extract_submitted_by(issue_body) or issue_author
+
     # Add correction provenance metadata
-    chordpro = add_correction_metadata(chordpro, issue_author, issue_number)
+    chordpro = add_correction_metadata(chordpro, submitter, issue_number)
 
     # Determine paths - check all source directories for existing file
     script_dir = Path(__file__).parent
@@ -284,7 +296,7 @@ def main():
     add_to_protected_list(song_id, protected_file)
 
     # 2. Update/create work in works/ for immediate visibility
-    work_dir = update_work(song_id, chordpro, issue_author, issue_number, repo_root)
+    work_dir = update_work(song_id, chordpro, submitter, issue_number, repo_root)
 
     # Write song ID to temp file for the workflow to read
     Path('/tmp/corrected_song_id.txt').write_text(song_id)

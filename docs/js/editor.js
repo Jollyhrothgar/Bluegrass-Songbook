@@ -9,6 +9,20 @@ import {
 import { escapeHtml } from './utils.js';
 import { extractChords, detectKey, toNashville } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
+import { getUser } from './supabase-auth.js';
+
+/**
+ * Get the submitter attribution for issue body.
+ * Uses logged-in user's name/email if available, otherwise "Rando Calrissian"
+ */
+function getSubmitterAttribution() {
+    const user = getUser();
+    if (user) {
+        // Prefer display name from user metadata, fall back to email
+        return user.user_metadata?.full_name || user.email || 'Anonymous User';
+    }
+    return 'Rando Calrissian';
+}
 
 // Supabase configuration for anonymous submissions
 const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
@@ -732,14 +746,16 @@ export function initEditor(options) {
                     artist: artist || undefined,
                     songId: editingSongId,
                     chordpro,
-                    comment
+                    comment,
+                    submittedBy: getSubmitterAttribution()
                 };
             } else {
                 submissionData = {
                     type: 'submission',
                     title,
                     artist: artist || undefined,
-                    chordpro
+                    chordpro,
+                    submittedBy: getSubmitterAttribution()
                 };
             }
 

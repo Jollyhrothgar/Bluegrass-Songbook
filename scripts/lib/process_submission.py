@@ -53,6 +53,11 @@ def extract_metadata(issue_body: str) -> dict:
         if artist.lower() != 'unknown':
             metadata['artist'] = artist
 
+    # Extract submitted by (from web UI)
+    match = re.search(r'\*\*Submitted by:\*\*\s*(.+)', issue_body)
+    if match:
+        metadata['submitted_by'] = match.group(1).strip()
+
     return metadata
 
 
@@ -201,11 +206,15 @@ def main():
         print("Error: Could not find ChordPro content in issue body")
         sys.exit(1)
 
-    # Add submission provenance metadata
-    chordpro = add_submission_metadata(chordpro, issue_author, issue_number)
-
     # Extract metadata from issue body
     metadata = extract_metadata(issue_body)
+
+    # Use submitted_by from web UI if available, otherwise use GitHub issue author
+    # "Rando Calrissian" = anonymous user from the web UI
+    submitter = metadata.get('submitted_by', issue_author)
+
+    # Add submission provenance metadata
+    chordpro = add_submission_metadata(chordpro, submitter, issue_number)
 
     # Try to get title from metadata, fall back to issue title
     title = metadata.get('title', '')
@@ -246,7 +255,7 @@ def main():
     print(f"Archived to: {sources_path}")
 
     # 2. Publish to works/ (immediate search visibility)
-    work_dir = publish_to_works(slug, title, artist, chordpro, issue_author, issue_number, repo_root)
+    work_dir = publish_to_works(slug, title, artist, chordpro, submitter, issue_number, repo_root)
     print(f"Published to: {work_dir}")
 
     print(f"Title: {title}")

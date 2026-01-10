@@ -16,6 +16,7 @@ interface FlagRequest {
   songArtist: string
   flagType: string
   description?: string
+  submittedBy?: string  // Attribution: logged-in username or "Rando Calrissian"
 }
 
 const FLAG_TYPE_LABELS: Record<string, string> = {
@@ -39,7 +40,8 @@ serve(async (req) => {
     }
 
     const body: FlagRequest = await req.json()
-    const { songId, songTitle, songArtist, flagType, description } = body
+    const { songId, songTitle, songArtist, flagType, description, submittedBy } = body
+    const attribution = submittedBy || 'Rando Calrissian'
 
     // Validate required fields
     if (!songId || !flagType) {
@@ -58,6 +60,7 @@ serve(async (req) => {
 **Artist:** ${songArtist || 'Unknown'}
 **Song ID:** \`${songId}\`
 **Issue Type:** ${flagLabel}
+**Reported by:** ${attribution}
 `
 
     if (description) {
