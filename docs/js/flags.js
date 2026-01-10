@@ -2,14 +2,13 @@
 // Allows users to report song issues - creates GitHub issues automatically
 
 import { track } from './analytics.js';
-import { getUser } from './supabase-auth.js';
 
 /**
  * Get the submitter attribution for issue body.
  * Uses logged-in user's name/email if available, otherwise "Rando Calrissian"
  */
 function getSubmitterAttribution() {
-    const user = getUser();
+    const user = window.SupabaseAuth?.getUser?.();
     if (user) {
         // Prefer display name from user metadata, fall back to email
         return user.user_metadata?.full_name || user.email || 'Anonymous User';

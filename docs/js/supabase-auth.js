@@ -1145,9 +1145,8 @@ async function getVisitorStats() {
     }
 }
 
-// Export functions for use in search.js
-// ES module exports for use in other modules
-export { getUser, isLoggedIn };
+// Note: This file is loaded as a regular script, not a module.
+// Functions are exposed via window.SupabaseAuth for use by other modules.
 
 window.SupabaseAuth = {
     init: initSupabase,
