@@ -483,6 +483,57 @@ h1 {
     color: white;
 }
 
+.list-action-btn.primary {
+    color: var(--accent);
+    border-color: var(--accent);
+    font-weight: 500;
+}
+
+.list-action-btn.primary:hover {
+    background: var(--accent);
+    color: white;
+}
+
+/* List ownership badges */
+.list-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.7rem;
+    border-radius: var(--radius-sm);
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.list-badge-owner {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}
+
+.list-badge-following {
+    background: rgba(52, 152, 219, 0.15);
+    color: #3498db;
+    border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.list-badge-orphaned {
+    background: rgba(230, 126, 34, 0.15);
+    color: #e67e22;
+    border: 1px solid rgba(230, 126, 34, 0.3);
+    animation: pulse-warning 2s infinite;
+}
+
+@keyframes pulse-warning {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.list-badge-shared {
+    background: rgba(155, 89, 182, 0.15);
+    color: #9b59b6;
+    border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
 .shared-list-badge {
     display: inline-block;
     padding: 0.15rem 0.5rem;
@@ -1559,6 +1610,156 @@ h1 {
 
 .sheet-action:hover {
     background: var(--bg-secondary);
+}
+
+/* Share Modal */
+.share-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.share-modal-backdrop.hidden {
+    display: none;
+}
+
+.share-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    width: 90%;
+    max-width: 420px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.share-modal.hidden {
+    display: none;
+}
+
+.share-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.share-modal-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.share-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.share-modal-close:hover {
+    color: var(--text);
+}
+
+.share-modal-content {
+    padding: 1.25rem;
+}
+
+.share-section {
+    margin-bottom: 1.5rem;
+}
+
+.share-section:last-child {
+    margin-bottom: 0;
+}
+
+.share-section h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.share-description {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.share-link-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.share-link-input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    font-size: 0.85rem;
+}
+
+.share-copy-btn {
+    padding: 0.5rem 1rem;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.share-copy-btn:hover {
+    background: var(--accent-hover);
+}
+
+.share-invite-section {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.share-generate-btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.share-generate-btn:hover {
+    background: var(--bg);
+    border-color: var(--accent);
+}
+
+.share-expiry {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.share-expiry.hidden {
+    display: none;
 }
 
 .back-btn {
@@ -3678,6 +3879,143 @@ mark {
 
 .nav-lists .nav-item .nav-icon {
     font-size: 1rem;
+}
+
+/* Sidebar section headers */
+.nav-section-header {
+    padding: 0.5rem 1.25rem 0.25rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-top: 0.75rem;
+}
+
+.nav-section-header:first-child {
+    margin-top: 0;
+}
+
+/* Followed list items */
+.nav-item-followed {
+    border-left: 2px solid #3498db;
+}
+
+.nav-item-followed .nav-icon {
+    color: #3498db;
+}
+
+/* Orphaned list items (Thunderdome) */
+.nav-item-orphaned {
+    border-left: 2px solid #e67e22;
+    background: rgba(230, 126, 34, 0.05);
+}
+
+.nav-item-orphaned .nav-icon {
+    color: #e67e22;
+}
+
+/* Section header with action button */
+.nav-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-section-action {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0 0.25rem;
+    line-height: 1;
+    opacity: 0.6;
+    transition: opacity 0.2s, color 0.2s;
+}
+
+.nav-section-action:hover {
+    opacity: 1;
+    color: var(--accent);
+}
+
+/* Folder styles */
+.nav-folder {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-folder-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-folder-arrow {
+    font-size: 0.6rem;
+    width: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    transition: transform 0.2s;
+}
+
+.nav-folder-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Folder context menu */
+.folder-context-menu {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    overflow: hidden;
+    min-width: 140px;
+}
+
+.folder-context-menu button {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 0.85rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.folder-context-menu button:hover {
+    background: var(--bg-secondary);
+}
+
+.folder-context-menu button.danger {
+    color: #e74c3c;
+}
+
+.folder-context-menu button.danger:hover {
+    background: rgba(231, 76, 60, 0.1);
+}
+
+/* Drag and drop states */
+.nav-item.dragging {
+    opacity: 0.5;
+}
+
+.nav-item[draggable="true"] {
+    cursor: grab;
+}
+
+.nav-item[draggable="true"]:active {
+    cursor: grabbing;
+}
+
+.drop-target {
+    background: rgba(52, 152, 219, 0.15) !important;
+    outline: 2px dashed #3498db;
+    outline-offset: -2px;
 }
 
 .nav-secondary {

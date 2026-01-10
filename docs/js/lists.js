@@ -58,6 +58,207 @@ function isListDeleted(id, name) {
 // Load on module initialization
 loadDeletedLists();
 
+// ============================================
+// FOLDER ORGANIZATION (LOCAL-ONLY)
+// ============================================
+// Folders are purely local organization - they never sync to cloud.
+// Lists are cloud entities; folders just organize where they appear.
+
+const FOLDERS_KEY = 'songbook-folders';
+
+/**
+ * Folder schema:
+ * {
+ *   folders: [
+ *     { id: "uuid", name: "Practice", parentId: null, position: 0 },
+ *     { id: "uuid2", name: "By Genre", parentId: null, position: 1 },
+ *     { id: "uuid3", name: "Bluegrass", parentId: "uuid2", position: 0 }
+ *   ],
+ *   listPlacements: {
+ *     "list-cloud-id": "folder-uuid",  // List in folder
+ *     "list-cloud-id-2": null          // List at root
+ *   }
+ * }
+ */
+let folderData = { folders: [], listPlacements: {} };
+
+function loadFolders() {
+    try {
+        const saved = localStorage.getItem(FOLDERS_KEY);
+        if (saved) {
+            folderData = JSON.parse(saved);
+            // Ensure required properties exist
+            if (!folderData.folders) folderData.folders = [];
+            if (!folderData.listPlacements) folderData.listPlacements = {};
+        }
+    } catch (e) {
+        console.error('Failed to load folders:', e);
+        folderData = { folders: [], listPlacements: {} };
+    }
+}
+
+function saveFolders() {
+    try {
+        localStorage.setItem(FOLDERS_KEY, JSON.stringify(folderData));
+    } catch (e) {
+        console.error('Failed to save folders:', e);
+    }
+}
+
+/**
+ * Get all folders
+ */
+export function getFolders() {
+    return folderData.folders;
+}
+
+/**
+ * Get folders at a specific level (by parentId)
+ */
+export function getFoldersAtLevel(parentId = null) {
+    return folderData.folders
+        .filter(f => f.parentId === parentId)
+        .sort((a, b) => a.position - b.position);
+}
+
+/**
+ * Create a new folder
+ */
+export function createFolder(name, parentId = null) {
+    const siblings = getFoldersAtLevel(parentId);
+    const position = siblings.length;
+
+    const folder = {
+        id: generateLocalId(),
+        name,
+        parentId,
+        position
+    };
+
+    folderData.folders.push(folder);
+    saveFolders();
+    return folder;
+}
+
+/**
+ * Rename a folder
+ */
+export function renameFolder(folderId, newName) {
+    const folder = folderData.folders.find(f => f.id === folderId);
+    if (folder) {
+        folder.name = newName;
+        saveFolders();
+    }
+}
+
+/**
+ * Delete a folder (moves contents to parent or root)
+ */
+export function deleteFolder(folderId) {
+    const folder = folderData.folders.find(f => f.id === folderId);
+    if (!folder) return;
+
+    // Move child folders to parent
+    folderData.folders
+        .filter(f => f.parentId === folderId)
+        .forEach(f => {
+            f.parentId = folder.parentId;
+        });
+
+    // Move lists in this folder to parent (or root)
+    Object.keys(folderData.listPlacements).forEach(listId => {
+        if (folderData.listPlacements[listId] === folderId) {
+            folderData.listPlacements[listId] = folder.parentId;
+        }
+    });
+
+    // Remove the folder
+    folderData.folders = folderData.folders.filter(f => f.id !== folderId);
+    saveFolders();
+}
+
+/**
+ * Move a folder to a different parent
+ */
+export function moveFolder(folderId, newParentId) {
+    const folder = folderData.folders.find(f => f.id === folderId);
+    if (!folder) return;
+
+    // Prevent moving a folder into itself or its descendants
+    if (newParentId === folderId || isDescendantOf(newParentId, folderId)) {
+        return false;
+    }
+
+    const siblings = getFoldersAtLevel(newParentId);
+    folder.parentId = newParentId;
+    folder.position = siblings.length;
+    saveFolders();
+    return true;
+}
+
+/**
+ * Check if a folder is a descendant of another
+ */
+function isDescendantOf(potentialDescendant, ancestorId) {
+    if (!potentialDescendant) return false;
+    const folder = folderData.folders.find(f => f.id === potentialDescendant);
+    if (!folder) return false;
+    if (folder.parentId === ancestorId) return true;
+    return isDescendantOf(folder.parentId, ancestorId);
+}
+
+/**
+ * Get the folder a list is placed in (null = root)
+ */
+export function getListFolder(listId) {
+    return folderData.listPlacements[listId] || null;
+}
+
+/**
+ * Place a list in a folder (null = root)
+ */
+export function setListFolder(listId, folderId) {
+    if (folderId === null) {
+        delete folderData.listPlacements[listId];
+    } else {
+        folderData.listPlacements[listId] = folderId;
+    }
+    saveFolders();
+}
+
+/**
+ * Get all lists in a specific folder
+ */
+export function getListsInFolder(folderId) {
+    return Object.entries(folderData.listPlacements)
+        .filter(([_, folder]) => folder === folderId)
+        .map(([listId]) => listId);
+}
+
+/**
+ * Get lists at root level (not in any folder)
+ */
+export function getListsAtRoot() {
+    const placedListIds = new Set(Object.keys(folderData.listPlacements));
+    return userLists.filter(list => !placedListIds.has(list.id) && !placedListIds.has(list.cloudId));
+}
+
+/**
+ * Reorder folders within the same parent
+ */
+export function reorderFolders(parentId, orderedIds) {
+    orderedIds.forEach((id, index) => {
+        const folder = folderData.folders.find(f => f.id === id);
+        if (folder && folder.parentId === parentId) {
+            folder.position = index;
+        }
+    });
+    saveFolders();
+}
+
+// Load folders on module initialization
+loadFolders();
+
 // DOM element references (set by init)
 let navListsContainerEl = null;
 let navSearchEl = null;
@@ -79,6 +280,9 @@ let shareListBtnEl = null;
 let renderResultsFn = null;
 let closeSidebarFn = null;
 let pushHistoryStateFn = null;
+
+// Followed lists (from cloud) - separate from owned lists
+let followedLists = [];
 
 // Note: Result picker now uses unified ListPicker component from list-picker.js
 
@@ -639,6 +843,9 @@ export async function performFullListsSync() {
         saveLists();
         updateFavoritesCount();
 
+        // Also load followed lists
+        await loadFollowedLists();
+
         // Enable cloud sync for future operations
         setCloudSyncEnabled(true);
         updateSyncUI('synced');
@@ -762,19 +969,184 @@ async function migrateCloudFavorites() {
 }
 
 /**
+ * Load followed lists from cloud
+ */
+export async function loadFollowedLists() {
+    if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+        followedLists = [];
+        return;
+    }
+
+    try {
+        const { data, error } = await SupabaseAuth.fetchFollowedLists();
+        if (error) {
+            console.error('Error loading followed lists:', error);
+            followedLists = [];
+        } else {
+            followedLists = data || [];
+        }
+        renderSidebarLists();
+    } catch (err) {
+        console.error('Error loading followed lists:', err);
+        followedLists = [];
+    }
+}
+
+/**
+ * Get followed lists (for external access)
+ */
+export function getFollowedLists() {
+    return followedLists;
+}
+
+/**
  * Render lists in sidebar
  */
+// Track expanded folders state
+let expandedFolders = new Set(JSON.parse(localStorage.getItem('songbook-expanded-folders') || '[]'));
+
+function saveExpandedFolders() {
+    localStorage.setItem('songbook-expanded-folders', JSON.stringify([...expandedFolders]));
+}
+
+function toggleFolderExpanded(folderId) {
+    if (expandedFolders.has(folderId)) {
+        expandedFolders.delete(folderId);
+    } else {
+        expandedFolders.add(folderId);
+    }
+    saveExpandedFolders();
+    renderSidebarLists();
+}
+
 export function renderSidebarLists() {
     if (!navListsContainerEl) return;
     navListsContainerEl.innerHTML = '';
 
     // Exclude Favorites list - it has its own nav button
     const customLists = userLists.filter(l => l.id !== FAVORITES_LIST_ID);
+    const rootFolders = getFoldersAtLevel(null);
+    const hasContent = customLists.length > 0 || rootFolders.length > 0;
 
-    customLists.forEach(list => {
+    // Always show "My Lists" section if user is signed in or has content
+    // This ensures the folder creation UI is always accessible
+    const isSignedIn = typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn?.();
+    const showMyListsSection = hasContent || isSignedIn;
+
+    // Create "My Lists" section
+    if (showMyListsSection) {
+        const header = document.createElement('div');
+        header.className = 'nav-section-header';
+        header.innerHTML = `
+            <span>My Lists</span>
+            <button class="nav-section-action" title="New folder" data-action="new-folder">+</button>
+        `;
+        navListsContainerEl.appendChild(header);
+
+        // Make header a drop target for moving lists to root
+        setupFolderDropTarget(header, null);
+
+        // Render folders and their contents recursively
+        renderFoldersAndLists(navListsContainerEl, null, 0);
+    }
+
+    // Create "Following" section if there are followed lists
+    if (followedLists.length > 0) {
+        const header = document.createElement('div');
+        header.className = 'nav-section-header';
+        header.textContent = 'Following';
+        navListsContainerEl.appendChild(header);
+
+        followedLists.forEach(list => {
+            const btn = document.createElement('button');
+            const isOrphaned = list.isOrphaned || !!list.orphaned_at;
+            btn.className = 'nav-item nav-item-followed' +
+                (viewingListId === list.id ? ' active' : '') +
+                (isOrphaned ? ' nav-item-orphaned' : '');
+            btn.dataset.listId = list.id;
+            btn.dataset.isFollowed = 'true';
+            btn.innerHTML = `
+                <span class="nav-icon">${isOrphaned ? '&#9888;' : '&#128279;'}</span>
+                <span class="nav-label">${escapeHtml(list.name)}</span>
+                ${list.songs?.length > 0 ? `<span class="nav-badge">${list.songs.length}</span>` : ''}
+            `;
+            btn.addEventListener('click', () => {
+                showListView(list.id);
+                if (pushHistoryStateFn) {
+                    pushHistoryStateFn('list', { listId: list.id });
+                }
+            });
+            navListsContainerEl.appendChild(btn);
+        });
+    }
+
+    // Add new folder button event handler
+    const newFolderBtn = navListsContainerEl.querySelector('[data-action="new-folder"]');
+    newFolderBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        promptCreateFolder();
+    });
+}
+
+/**
+ * Render folders and lists recursively
+ */
+function renderFoldersAndLists(container, parentId, depth) {
+    const folders = getFoldersAtLevel(parentId);
+    const listsInThisFolder = parentId === null
+        ? getListsAtRoot()
+        : userLists.filter(l => {
+            const listId = l.cloudId || l.id;
+            return getListFolder(listId) === parentId;
+        });
+
+    // Render folders first
+    folders.forEach(folder => {
+        const isExpanded = expandedFolders.has(folder.id);
+        const folderEl = document.createElement('div');
+        folderEl.className = 'nav-folder';
+        folderEl.dataset.folderId = folder.id;
+        folderEl.style.paddingLeft = `${depth * 0.75}rem`;
+
+        const headerBtn = document.createElement('button');
+        headerBtn.className = 'nav-item nav-folder-header';
+        headerBtn.innerHTML = `
+            <span class="nav-folder-arrow">${isExpanded ? '▼' : '▶'}</span>
+            <span class="nav-icon">&#128193;</span>
+            <span class="nav-label">${escapeHtml(folder.name)}</span>
+        `;
+        headerBtn.addEventListener('click', () => toggleFolderExpanded(folder.id));
+
+        // Add context menu on right-click
+        headerBtn.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            showFolderContextMenu(folder, e.clientX, e.clientY);
+        });
+
+        // Set up folder as drop target for lists
+        setupFolderDropTarget(headerBtn, folder.id);
+
+        folderEl.appendChild(headerBtn);
+
+        // Render contents if expanded
+        if (isExpanded) {
+            const contentEl = document.createElement('div');
+            contentEl.className = 'nav-folder-content';
+            renderFoldersAndLists(contentEl, folder.id, depth + 1);
+            folderEl.appendChild(contentEl);
+        }
+
+        container.appendChild(folderEl);
+    });
+
+    // Render lists at this level
+    listsInThisFolder.forEach(list => {
+        if (list.id === FAVORITES_LIST_ID) return;
+
         const btn = document.createElement('button');
         btn.className = 'nav-item' + (viewingListId === list.id ? ' active' : '');
         btn.dataset.listId = list.id;
+        btn.style.paddingLeft = `${(depth * 0.75) + 1.5}rem`;
         btn.innerHTML = `
             <span class="nav-icon">&#9776;</span>
             <span class="nav-label">${escapeHtml(list.name)}</span>
@@ -786,8 +1158,125 @@ export function renderSidebarLists() {
                 pushHistoryStateFn('list', { listId: list.id });
             }
         });
-        navListsContainerEl.appendChild(btn);
+
+        // Make list draggable
+        btn.draggable = true;
+        btn.addEventListener('dragstart', (e) => {
+            e.dataTransfer.setData('text/plain', JSON.stringify({
+                type: 'list',
+                listId: list.cloudId || list.id
+            }));
+            btn.classList.add('dragging');
+        });
+        btn.addEventListener('dragend', () => {
+            btn.classList.remove('dragging');
+            clearDropTargets();
+        });
+
+        container.appendChild(btn);
     });
+}
+
+/**
+ * Clear all drop target highlights
+ */
+function clearDropTargets() {
+    document.querySelectorAll('.drop-target').forEach(el => {
+        el.classList.remove('drop-target');
+    });
+}
+
+/**
+ * Set up folder as a drop target
+ */
+function setupFolderDropTarget(element, folderId) {
+    element.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        element.classList.add('drop-target');
+    });
+
+    element.addEventListener('dragleave', (e) => {
+        // Only remove if leaving the element entirely
+        if (!element.contains(e.relatedTarget)) {
+            element.classList.remove('drop-target');
+        }
+    });
+
+    element.addEventListener('drop', (e) => {
+        e.preventDefault();
+        element.classList.remove('drop-target');
+
+        try {
+            const data = JSON.parse(e.dataTransfer.getData('text/plain'));
+            if (data.type === 'list') {
+                setListFolder(data.listId, folderId);
+                renderSidebarLists();
+            }
+        } catch (err) {
+            console.error('Drop error:', err);
+        }
+    });
+}
+
+/**
+ * Prompt to create a new folder
+ */
+function promptCreateFolder(parentId = null) {
+    const name = prompt('Folder name:');
+    if (name && name.trim()) {
+        createFolder(name.trim(), parentId);
+        renderSidebarLists();
+    }
+}
+
+/**
+ * Show context menu for a folder
+ */
+function showFolderContextMenu(folder, x, y) {
+    // Remove any existing context menu
+    const existing = document.querySelector('.folder-context-menu');
+    if (existing) existing.remove();
+
+    const menu = document.createElement('div');
+    menu.className = 'folder-context-menu';
+    menu.style.position = 'fixed';
+    menu.style.left = `${x}px`;
+    menu.style.top = `${y}px`;
+    menu.innerHTML = `
+        <button data-action="rename">Rename</button>
+        <button data-action="new-subfolder">New Subfolder</button>
+        <button data-action="delete" class="danger">Delete</button>
+    `;
+
+    menu.addEventListener('click', (e) => {
+        const action = e.target.dataset.action;
+        if (action === 'rename') {
+            const newName = prompt('New folder name:', folder.name);
+            if (newName && newName.trim()) {
+                renameFolder(folder.id, newName.trim());
+                renderSidebarLists();
+            }
+        } else if (action === 'new-subfolder') {
+            promptCreateFolder(folder.id);
+        } else if (action === 'delete') {
+            if (confirm(`Delete folder "${folder.name}"? Lists will be moved out.`)) {
+                deleteFolder(folder.id);
+                renderSidebarLists();
+            }
+        }
+        menu.remove();
+    });
+
+    document.body.appendChild(menu);
+
+    // Close on outside click
+    const closeHandler = (e) => {
+        if (!menu.contains(e.target)) {
+            menu.remove();
+            document.removeEventListener('click', closeHandler);
+        }
+    };
+    setTimeout(() => document.addEventListener('click', closeHandler), 0);
 }
 
 /**
@@ -800,18 +1289,42 @@ export async function showListView(listId) {
         return;
     }
 
-    // First check if this is a local list
+    // First check if this is a local (owned) list
     const localList = userLists.find(l => l.id === listId);
 
     if (localList) {
-        // It's a local list - show it normally
+        // It's a local list - show it normally as owner
         setViewingListId(listId);
         setViewingPublicList(null);
-        renderListViewUI(localList.name, localList.songs, true);
+        renderListViewUI(localList.name, localList.songs, {
+            isOwner: true,
+            isFollower: false,
+            isOrphaned: false
+        });
         return;
     }
 
-    // Not a local list - try to fetch as a public list
+    // Check if this is a followed list
+    const followedList = followedLists.find(l => l.id === listId);
+    if (followedList) {
+        setViewingListId(listId);
+        setViewingPublicList({
+            list: followedList,
+            songs: followedList.songs || [],
+            isOwner: false,
+            isFollower: true,
+            isOrphaned: followedList.isOrphaned || !!followedList.orphaned_at
+        });
+        renderListViewUI(followedList.name, followedList.songs || [], {
+            isOwner: false,
+            isFollower: true,
+            isOrphaned: followedList.isOrphaned || !!followedList.orphaned_at,
+            canClaim: followedList.isOrphaned || !!followedList.orphaned_at
+        });
+        return;
+    }
+
+    // Not a local or followed list - try to fetch as a public list
     if (typeof SupabaseAuth === 'undefined') {
         showListNotFound();
         return;
@@ -823,18 +1336,28 @@ export async function showListView(listId) {
         return;
     }
 
-    // Check if current user owns this list
-    const currentUser = SupabaseAuth.getUser();
-    const isOwner = currentUser && data.list.user_id === currentUser.id;
+    // Check ownership status from the response
+    const isOwner = data.is_owner || false;
+    const isFollower = data.is_follower || false;
+    const isOrphaned = data.is_orphaned || false;
+    const canClaim = data.can_claim || false;
 
     setViewingListId(listId);
     setViewingPublicList({
         list: data.list,
         songs: data.songs,
-        isOwner
+        isOwner,
+        isFollower,
+        isOrphaned,
+        canClaim
     });
 
-    renderListViewUI(data.list.name, data.songs, isOwner);
+    renderListViewUI(data.list.name, data.songs, {
+        isOwner,
+        isFollower,
+        isOrphaned,
+        canClaim
+    });
 }
 
 /**
@@ -865,8 +1388,20 @@ function showListNotFound() {
 
 /**
  * Render the list view UI (shared by local and public lists)
+ * @param {string} listName - Display name of the list
+ * @param {string[]} songIds - Array of song IDs in the list
+ * @param {Object|boolean} status - Ownership status (or boolean for backwards compat)
+ * @param {boolean} status.isOwner - User is an owner of this list
+ * @param {boolean} status.isFollower - User follows this list
+ * @param {boolean} status.isOrphaned - List has no owners (Thunderdome mode)
+ * @param {boolean} status.canClaim - User can claim this orphaned list
  */
-function renderListViewUI(listName, songIds, isOwner) {
+function renderListViewUI(listName, songIds, status) {
+    // Backwards compatibility: if status is a boolean, convert to object
+    const ownership = typeof status === 'boolean'
+        ? { isOwner: status, isFollower: false, isOrphaned: false, canClaim: false }
+        : status;
+
     if (closeSidebarFn) closeSidebarFn();
 
     // Update nav active states
@@ -874,10 +1409,10 @@ function renderListViewUI(listName, songIds, isOwner) {
     if (navFavoritesEl) navFavoritesEl.classList.remove('active');
     if (navAddSongEl) navAddSongEl.classList.remove('active');
 
-    // Update sidebar list buttons (only for local lists)
+    // Update sidebar list buttons
     if (navListsContainerEl) {
         navListsContainerEl.querySelectorAll('.nav-item').forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.listId === viewingListId && !viewingPublicList);
+            btn.classList.toggle('active', btn.dataset.listId === viewingListId);
         });
     }
 
@@ -894,10 +1429,14 @@ function renderListViewUI(listName, songIds, isOwner) {
         currentIndex: -1  // Will be set when a song is opened
     });
 
-    // Build status text with "Copy to My Lists" button for non-owners
+    // Build status text with ownership badge
     let statusHtml = `${escapeHtml(listName)}: ${listSongs.length} song${listSongs.length !== 1 ? 's' : ''}`;
-    if (viewingPublicList && !isOwner) {
-        statusHtml += ' <span class="shared-list-badge">Shared List</span>';
+    if (ownership.isOrphaned) {
+        statusHtml += ' <span class="list-badge list-badge-orphaned">Needs Owner</span>';
+    } else if (ownership.isFollower && !ownership.isOwner) {
+        statusHtml += ' <span class="list-badge list-badge-following">Following</span>';
+    } else if (!ownership.isOwner && viewingPublicList) {
+        statusHtml += ' <span class="list-badge list-badge-shared">Shared List</span>';
     }
 
     if (searchStatsEl) {
@@ -922,24 +1461,55 @@ function renderListViewUI(listName, songIds, isOwner) {
 
     // Show action buttons
     if (printListBtnEl) printListBtnEl.classList.remove('hidden');
-    if (shareListBtnEl && isOwner) shareListBtnEl.classList.remove('hidden');
+    if (shareListBtnEl && ownership.isOwner) shareListBtnEl.classList.remove('hidden');
 
-    // Duplicate/Import button - show for all lists, text changes based on ownership
+    // Duplicate/Import/Copy button
     const duplicateListBtn = document.getElementById('duplicate-list-btn');
     if (duplicateListBtn) {
-        if (isOwner) {
+        if (ownership.isOwner) {
             duplicateListBtn.textContent = 'Duplicate';
             duplicateListBtn.classList.remove('hidden');
-        } else if (viewingPublicList) {
-            duplicateListBtn.textContent = 'Import';
+        } else {
+            // "Copy to My Lists" for non-owners (safety valve)
+            duplicateListBtn.textContent = 'Copy to My Lists';
             duplicateListBtn.classList.remove('hidden');
+        }
+    }
+
+    // Follow/Unfollow button
+    const followListBtn = document.getElementById('follow-list-btn');
+    if (followListBtn) {
+        if (!ownership.isOwner && viewingListId) {
+            if (ownership.isFollower) {
+                followListBtn.textContent = 'Unfollow';
+                followListBtn.classList.remove('hidden');
+            } else {
+                followListBtn.textContent = 'Follow';
+                followListBtn.classList.remove('hidden');
+            }
+        } else {
+            followListBtn.classList.add('hidden');
+        }
+    }
+
+    // Claim button (for orphaned lists)
+    const claimListBtn = document.getElementById('claim-list-btn');
+    if (claimListBtn) {
+        if (ownership.canClaim && ownership.isOrphaned) {
+            claimListBtn.classList.remove('hidden');
+        } else {
+            claimListBtn.classList.add('hidden');
         }
     }
 
     // Show delete button for own lists (but not favorites)
     const deleteListBtn = document.getElementById('delete-list-btn');
-    if (deleteListBtn && isOwner && viewingListId !== FAVORITES_LIST_ID && viewingListId !== 'favorites') {
-        deleteListBtn.classList.remove('hidden');
+    if (deleteListBtn) {
+        if (ownership.isOwner && viewingListId !== FAVORITES_LIST_ID && viewingListId !== 'favorites') {
+            deleteListBtn.classList.remove('hidden');
+        } else {
+            deleteListBtn.classList.add('hidden');
+        }
     }
 
     // Hide the old copy button (now consolidated into duplicate/import)
@@ -968,6 +1538,10 @@ export function clearListView() {
     if (duplicateListBtn) duplicateListBtn.classList.add('hidden');
     const deleteListBtn = document.getElementById('delete-list-btn');
     if (deleteListBtn) deleteListBtn.classList.add('hidden');
+    const followListBtn = document.getElementById('follow-list-btn');
+    if (followListBtn) followListBtn.classList.add('hidden');
+    const claimListBtn = document.getElementById('claim-list-btn');
+    if (claimListBtn) claimListBtn.classList.add('hidden');
 }
 
 /**
@@ -1209,7 +1783,7 @@ export function initLists(options) {
     closeSidebarFn = closeSidebar;
     pushHistoryStateFn = pushHistoryState;
 
-    // Share list button - copy URL to clipboard
+    // Share list button - opens share modal
     shareListBtnEl?.addEventListener('click', async () => {
         let shareId = null;
 
@@ -1228,20 +1802,11 @@ export function initLists(options) {
             return;
         }
 
-        const shareUrl = `${window.location.origin}${window.location.pathname}#list/${shareId}`;
-
-        try {
-            await navigator.clipboard.writeText(shareUrl);
-            const originalText = shareListBtnEl.textContent;
-            shareListBtnEl.textContent = 'Copied!';
-            setTimeout(() => {
-                shareListBtnEl.textContent = originalText;
-            }, 2000);
-        } catch (err) {
-            // Fallback for older browsers
-            prompt('Copy this link:', shareUrl);
-        }
+        openShareModal(shareId);
     });
+
+    // Initialize share modal handlers
+    initShareModal();
 
     // Duplicate/Import list button
     const duplicateListBtn = document.getElementById('duplicate-list-btn');
@@ -1345,6 +1910,72 @@ export function initLists(options) {
         }
     });
 
+    // Follow/Unfollow list button
+    const followListBtn = document.getElementById('follow-list-btn');
+    followListBtn?.addEventListener('click', async () => {
+        if (!viewingListId || typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+            alert('Please sign in to follow lists');
+            return;
+        }
+
+        const isCurrentlyFollowing = viewingPublicList?.isFollower || followedLists.some(l => l.id === viewingListId);
+
+        if (isCurrentlyFollowing) {
+            // Unfollow
+            const { error } = await SupabaseAuth.unfollowList(viewingListId);
+            if (error) {
+                alert('Failed to unfollow list');
+                return;
+            }
+            // Remove from local followedLists
+            followedLists = followedLists.filter(l => l.id !== viewingListId);
+            renderSidebarLists();
+            // Update button text
+            followListBtn.textContent = 'Follow';
+            if (viewingPublicList) {
+                viewingPublicList.isFollower = false;
+            }
+        } else {
+            // Follow
+            const { error } = await SupabaseAuth.followList(viewingListId);
+            if (error) {
+                alert('Failed to follow list');
+                return;
+            }
+            // Reload followed lists to get the full data
+            await loadFollowedLists();
+            // Update button text
+            followListBtn.textContent = 'Unfollow';
+            if (viewingPublicList) {
+                viewingPublicList.isFollower = true;
+            }
+        }
+    });
+
+    // Claim orphaned list button (Thunderdome!)
+    const claimListBtn = document.getElementById('claim-list-btn');
+    claimListBtn?.addEventListener('click', async () => {
+        if (!viewingListId || typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+            alert('Please sign in to claim lists');
+            return;
+        }
+
+        if (!confirm('Claim ownership of this list? You will become the sole owner.')) {
+            return;
+        }
+
+        const { data, error } = await SupabaseAuth.claimOrphanedList(viewingListId);
+        if (error) {
+            alert(error.message || 'Failed to claim list');
+            return;
+        }
+
+        // Success! Reload lists to reflect new ownership
+        await performFullListsSync();
+        // Re-show the list (now as owner)
+        showListView(viewingListId);
+    });
+
     // Load from localStorage
     loadLists();
 
@@ -1378,4 +2009,143 @@ export function initLists(options) {
     }
 
     // Note: Result picker click-outside handling is now managed by unified ListPicker
+}
+
+// ============================================
+// SHARE MODAL
+// ============================================
+
+let currentShareListId = null;
+
+function openShareModal(shareId) {
+    currentShareListId = shareId;
+
+    const modal = document.getElementById('share-modal');
+    const backdrop = document.getElementById('share-modal-backdrop');
+    const viewLinkInput = document.getElementById('share-view-link');
+    const inviteSection = document.getElementById('share-invite-section');
+    const inviteActions = document.getElementById('share-invite-actions');
+    const inviteLinkRow = document.getElementById('share-invite-link-row');
+    const inviteExpiry = document.getElementById('share-invite-expiry');
+
+    if (!modal || !backdrop) return;
+
+    // Set the view link
+    const shareUrl = `${window.location.origin}${window.location.pathname}#list/${shareId}`;
+    if (viewLinkInput) viewLinkInput.value = shareUrl;
+
+    // Determine if user is owner (can generate invites)
+    const isOwner = viewingPublicList?.isOwner ||
+        userLists.some(l => l.cloudId === shareId || l.id === shareId) ||
+        (viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID);
+
+    // Show/hide invite section based on ownership
+    if (inviteSection) {
+        inviteSection.classList.toggle('hidden', !isOwner);
+    }
+
+    // Reset invite state
+    if (inviteActions) inviteActions.classList.remove('hidden');
+    if (inviteLinkRow) inviteLinkRow.classList.add('hidden');
+    if (inviteExpiry) inviteExpiry.classList.add('hidden');
+
+    // Show modal
+    backdrop.classList.remove('hidden');
+    modal.classList.remove('hidden');
+}
+
+function closeShareModal() {
+    const modal = document.getElementById('share-modal');
+    const backdrop = document.getElementById('share-modal-backdrop');
+
+    if (modal) modal.classList.add('hidden');
+    if (backdrop) backdrop.classList.add('hidden');
+    currentShareListId = null;
+}
+
+function initShareModal() {
+    const backdrop = document.getElementById('share-modal-backdrop');
+    const closeBtn = document.getElementById('share-modal-close');
+    const copyLinkBtn = document.getElementById('share-copy-link');
+    const generateInviteBtn = document.getElementById('share-generate-invite');
+    const copyInviteBtn = document.getElementById('share-copy-invite');
+
+    // Close on backdrop click or close button
+    backdrop?.addEventListener('click', closeShareModal);
+    closeBtn?.addEventListener('click', closeShareModal);
+
+    // Copy view link
+    copyLinkBtn?.addEventListener('click', async () => {
+        const viewLinkInput = document.getElementById('share-view-link');
+        if (!viewLinkInput) return;
+
+        try {
+            await navigator.clipboard.writeText(viewLinkInput.value);
+            copyLinkBtn.textContent = 'Copied!';
+            setTimeout(() => {
+                copyLinkBtn.textContent = 'Copy';
+            }, 2000);
+        } catch (err) {
+            prompt('Copy this link:', viewLinkInput.value);
+        }
+    });
+
+    // Generate invite link
+    generateInviteBtn?.addEventListener('click', async () => {
+        if (!currentShareListId) return;
+
+        if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+            alert('Please sign in to generate invite links');
+            return;
+        }
+
+        generateInviteBtn.disabled = true;
+        generateInviteBtn.textContent = 'Generating...';
+
+        try {
+            const result = await SupabaseAuth.generateListInvite(currentShareListId);
+
+            if (result.error) {
+                alert('Failed to generate invite: ' + result.error);
+                generateInviteBtn.disabled = false;
+                generateInviteBtn.textContent = 'Generate Invite Link';
+                return;
+            }
+
+            // Build invite URL
+            const inviteUrl = `${window.location.origin}${window.location.pathname}#invite/${result.token}`;
+
+            // Show the invite link
+            const inviteActions = document.getElementById('share-invite-actions');
+            const inviteLinkRow = document.getElementById('share-invite-link-row');
+            const inviteLinkInput = document.getElementById('share-invite-link');
+            const inviteExpiry = document.getElementById('share-invite-expiry');
+
+            if (inviteActions) inviteActions.classList.add('hidden');
+            if (inviteLinkRow) inviteLinkRow.classList.remove('hidden');
+            if (inviteLinkInput) inviteLinkInput.value = inviteUrl;
+            if (inviteExpiry) inviteExpiry.classList.remove('hidden');
+        } catch (err) {
+            console.error('Error generating invite:', err);
+            alert('Failed to generate invite link');
+            generateInviteBtn.disabled = false;
+            generateInviteBtn.textContent = 'Generate Invite Link';
+        }
+    });
+
+    // Copy invite link
+    copyInviteBtn?.addEventListener('click', async () => {
+        const inviteLinkInput = document.getElementById('share-invite-link');
+        if (!inviteLinkInput) return;
+
+        try {
+            await navigator.clipboard.writeText(inviteLinkInput.value);
+            copyInviteBtn.textContent = 'Copied!';
+            setTimeout(() => {
+                copyInviteBtn.textContent = 'Copy';
+            }, 2000);
+        } catch (err) {
+            prompt('Copy this invite link:', inviteLinkInput.value);
+        }
+    });
 }

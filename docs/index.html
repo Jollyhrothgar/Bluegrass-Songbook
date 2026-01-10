@@ -199,6 +199,8 @@
                 <button id="duplicate-list-btn" class="list-action-btn hidden" title="Duplicate or import this list">Duplicate</button>
                 <button id="share-list-btn" class="list-action-btn hidden" title="Copy share link">Share</button>
                 <button id="print-list-btn" class="list-action-btn hidden" title="Print all songs in this list">Print</button>
+                <button id="follow-list-btn" class="list-action-btn hidden" title="Follow this list">Follow</button>
+                <button id="claim-list-btn" class="list-action-btn primary hidden" title="Claim ownership of this orphaned list">⚔️ Claim</button>
                 <button id="delete-list-btn" class="list-action-btn danger hidden" title="Delete this list">Delete</button>
             </div>
         </div>
@@ -332,6 +334,37 @@ This is the [G]chorus [D]part
                         <button class="sheet-action" data-action="download">⬇ Download</button>
                         <button class="sheet-action" data-action="edit">✏ Edit</button>
                         <button class="sheet-action" data-action="flag">🚩 Report Issue</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Share List Modal -->
+            <div id="share-modal-backdrop" class="share-modal-backdrop hidden"></div>
+            <div id="share-modal" class="share-modal hidden">
+                <div class="share-modal-header">
+                    <h3>Share List</h3>
+                    <button id="share-modal-close" class="share-modal-close">&times;</button>
+                </div>
+                <div class="share-modal-content">
+                    <div class="share-section">
+                        <h4>View Link</h4>
+                        <p class="share-description">Anyone with this link can view and copy this list.</p>
+                        <div class="share-link-row">
+                            <input type="text" id="share-view-link" class="share-link-input" readonly>
+                            <button id="share-copy-link" class="share-copy-btn">Copy</button>
+                        </div>
+                    </div>
+                    <div id="share-invite-section" class="share-section share-invite-section">
+                        <h4>Invite Co-Owner</h4>
+                        <p class="share-description">Generate a link that allows someone to become a co-owner of this list. They'll be able to add, remove, and reorder songs.</p>
+                        <div id="share-invite-actions">
+                            <button id="share-generate-invite" class="share-generate-btn">Generate Invite Link</button>
+                        </div>
+                        <div id="share-invite-link-row" class="share-link-row hidden">
+                            <input type="text" id="share-invite-link" class="share-link-input" readonly>
+                            <button id="share-copy-invite" class="share-copy-btn">Copy</button>
+                        </div>
+                        <p id="share-invite-expiry" class="share-expiry hidden">Expires in 7 days</p>
                     </div>
                 </div>
             </div>

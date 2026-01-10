@@ -614,6 +614,12 @@ function handleDeepLink() {
             pushHistoryState('list', { listId }, true);
         }
         return true;
+    } else if (hash.startsWith('#invite/')) {
+        // Invite link to become co-owner of a list
+        const token = hash.slice(8);
+        trackDeepLink('invite', hash);
+        handleInviteLink(token);
+        return true;
     } else if (hash === '#search') {
         // Search view without query
         trackDeepLink('search', hash);
@@ -678,6 +684,68 @@ async function openSongInList(listId, songId, fromDeepLink = false) {
 
     // Open the song with list context
     openSong(songId, { fromList: true, listId, fromDeepLink });
+}
+
+/**
+ * Handle an invite link token to become co-owner of a list
+ */
+async function handleInviteLink(token) {
+    if (typeof SupabaseAuth === 'undefined') {
+        alert('Unable to process invite - authentication not available');
+        window.location.hash = '';
+        return;
+    }
+
+    // Check if user is signed in
+    if (!SupabaseAuth.isLoggedIn()) {
+        // Store the invite token for after sign-in
+        sessionStorage.setItem('pendingInviteToken', token);
+        alert('Please sign in to accept this invite.');
+        // Clear the hash but keep it stored
+        window.location.hash = '';
+        return;
+    }
+
+    // User is signed in, process the invite
+    try {
+        const result = await SupabaseAuth.claimListInvite(token);
+
+        if (result.error) {
+            alert('Could not accept invite: ' + result.error);
+            window.location.hash = '';
+            return;
+        }
+
+        // Success! Navigate to the list
+        alert('You are now a co-owner of this list!');
+
+        // Refresh lists to include the new one
+        if (typeof performFullListsSync === 'function') {
+            await performFullListsSync();
+        }
+
+        // Navigate to the list
+        if (result.list_id) {
+            window.location.hash = `#list/${result.list_id}`;
+        } else {
+            window.location.hash = '';
+        }
+    } catch (err) {
+        console.error('Error claiming invite:', err);
+        alert('Failed to accept invite. Please try again.');
+        window.location.hash = '';
+    }
+}
+
+/**
+ * Check for pending invite token after sign-in
+ */
+function checkPendingInvite() {
+    const pendingToken = sessionStorage.getItem('pendingInviteToken');
+    if (pendingToken) {
+        sessionStorage.removeItem('pendingInviteToken');
+        handleInviteLink(pendingToken);
+    }
 }
 
 // ============================================
@@ -2147,6 +2215,10 @@ function init() {
         SupabaseAuth.init();
         SupabaseAuth.onAuthChange((event, user) => {
             updateAuthUI(user);
+            // Check for pending invite after sign-in
+            if (event === 'SIGNED_IN' && user) {
+                checkPendingInvite();
+            }
         });
 
         signInBtn?.addEventListener('click', async () => {

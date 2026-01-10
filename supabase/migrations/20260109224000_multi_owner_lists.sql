@@ -436,7 +436,30 @@ BEGIN
 END;
 $$;
 
--- Update get_public_list to include ownership info
+-- Cleanup expired orphaned lists (30 days old)
+-- Can be called manually or by a scheduled job
+CREATE OR REPLACE FUNCTION cleanup_expired_orphans()
+RETURNS INT
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+DECLARE
+    v_deleted_count INT;
+BEGIN
+    WITH deleted AS (
+        DELETE FROM user_lists
+        WHERE orphaned_at IS NOT NULL
+        AND orphaned_at + INTERVAL '30 days' < NOW()
+        RETURNING id
+    )
+    SELECT COUNT(*) INTO v_deleted_count FROM deleted;
+
+    RETURN v_deleted_count;
+END;
+$$;
+
+-- Update get_public_list to include ownership info and check for expired orphans
 CREATE OR REPLACE FUNCTION get_public_list(p_list_id UUID)
 RETURNS JSON
 LANGUAGE plpgsql
@@ -466,6 +489,13 @@ BEGIN
     WHERE id = p_list_id;
 
     IF v_list IS NULL THEN
+        RETURN json_build_object('error', 'List not found');
+    END IF;
+
+    -- Check if this orphaned list has expired (30 days)
+    IF v_orphaned_at IS NOT NULL AND v_orphaned_at + INTERVAL '30 days' < NOW() THEN
+        -- Delete the expired orphan
+        DELETE FROM user_lists WHERE id = p_list_id;
         RETURN json_build_object('error', 'List not found');
     END IF;
 
@@ -499,3 +529,4 @@ GRANT EXECUTE ON FUNCTION claim_orphaned_list TO authenticated;
 GRANT EXECUTE ON FUNCTION claim_list_invite TO authenticated;
 GRANT EXECUTE ON FUNCTION generate_list_invite TO authenticated;
 GRANT EXECUTE ON FUNCTION get_public_list TO anon, authenticated;
+GRANT EXECUTE ON FUNCTION cleanup_expired_orphans TO service_role;
