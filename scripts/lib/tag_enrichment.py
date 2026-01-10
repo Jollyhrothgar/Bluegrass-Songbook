@@ -461,7 +461,8 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
 
     # Pre-load grassiness scores and build title lookup (avoids O(n*m) nested loop)
     scores = load_grassiness_scores()
-    from tagging.grassiness import normalize_title
+    from tagging.grassiness import normalize_title, get_bluegrass_artists
+    artist_tier_weights = get_bluegrass_artists()  # {artist_name: tier_weight} for sorting
     scores_by_title = {}
     for data in scores.values():
         norm_title = normalize_title(data.get('title', ''))
@@ -520,16 +521,26 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
 
         # Add covering artists from grassiness data (for search and display)
         # Use same lookup strategy as get_grassiness_tags: ID first, then title fallback
-        covering_artists = []
+        covering_artists_raw = []
         if song_id in scores:
-            covering_artists = scores[song_id].get('artists', [])
+            covering_artists_raw = scores[song_id].get('artists', [])
         else:
             # Use pre-computed title lookup
             normalized = normalize_title(title)
             if normalized in scores_by_title:
-                covering_artists = scores_by_title[normalized].get('artists', [])
-        if covering_artists:
-            song['covering_artists'] = covering_artists
+                covering_artists_raw = scores_by_title[normalized].get('artists', [])
+
+        # Dedupe and sort by tier weight (higher tier = more important bluegrass artist)
+        if covering_artists_raw:
+            seen = set()
+            unique_artists = []
+            for a in covering_artists_raw:
+                if a not in seen:
+                    seen.add(a)
+                    unique_artists.append(a)
+            # Sort by tier weight (descending) - founding artists first, then classic, then modern
+            unique_artists.sort(key=lambda a: -artist_tier_weights.get(a, 0))
+            song['covering_artists'] = unique_artists
 
         song['tags'] = tags
         if tags:
