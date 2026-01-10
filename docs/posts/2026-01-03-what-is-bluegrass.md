@@ -61,11 +61,11 @@ The question: at each threshold, what percentage of their songs qualify?
 
 Here's how individual artists break down (what % of their songs pass each threshold):
 
-![Core artist threshold analysis](images/core_artist_thresholds.png)
+![Core artist threshold analysis](/posts/images/core_artist_thresholds.png)
 
 The 71% line at >=20 is the sweet spot - it captures most of what the legends recorded while excluding the bottom-tier crossover material.
 
-![Threshold analysis showing sweet spots](images/threshold_analysis.png)
+![Threshold analysis showing sweet spots](/posts/images/threshold_analysis.png)
 
 This gives us natural cutoffs:
 - **50+**: Top third of what legends recorded = "Bluegrass Standard"
@@ -76,7 +76,7 @@ This gives us natural cutoffs:
 
 Here's what the grassiness scores look like across all 5,876 songs that have any bluegrass signal:
 
-![Grassiness score distribution](images/grassiness_distribution.png)
+![Grassiness score distribution](/posts/images/grassiness_distribution.png)
 
 The long tail at the bottom is crossover - songs that bluegrass artists covered but aren't really "bluegrass songs."
 
@@ -86,7 +86,7 @@ Here are some scores:
 
 **Top Bluegrass Standards (by score):**
 
-![Top bluegrass standards](images/top_bluegrass_standards.png)
+![Top bluegrass standards](/posts/images/top_bluegrass_standards.png)
 
 **Correctly excluded (low scores):**
 
@@ -119,7 +119,7 @@ The scoring isn't about excluding artists - it's about finding the bluegrass *so
 
 Compare the catalog distributions of different types of artists:
 
-![Artist catalog comparison](images/artist_comparison.png)
+![Artist catalog comparison](/posts/images/artist_comparison.png)
 
 Earl Scruggs played bluegrass. Doyle Lawson & Quicksilver recorded a lot of gospel and country. Both are great artists - but their catalogs tell different stories.
 
