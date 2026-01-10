@@ -3,8 +3,10 @@
 Process a song correction from a GitHub issue.
 
 Reads the issue body from ISSUE_BODY environment variable,
-extracts the ChordPro content and song ID, overwrites the existing file,
-and adds it to the protected list.
+extracts the ChordPro content and song ID, and:
+1. Updates works/{id}/ for immediate visibility
+2. Updates sources/ archive if found there
+3. Adds to protected list
 
 Adds correction provenance metadata:
   {meta: x_corrected_by github:username}
@@ -17,6 +19,7 @@ import re
 import sys
 from datetime import date
 from pathlib import Path
+import yaml
 
 
 def extract_chordpro(issue_body: str) -> str | None:
@@ -106,6 +109,116 @@ def add_to_protected_list(song_id: str, protected_file: Path) -> bool:
     return True
 
 
+def extract_metadata_from_chordpro(content: str) -> dict:
+    """Extract metadata from ChordPro content."""
+    metadata = {}
+
+    # Title
+    match = re.search(r'\{(?:title|meta:\s*title):\s*(.+?)\}', content, re.IGNORECASE)
+    if match:
+        metadata['title'] = match.group(1).strip()
+
+    # Artist
+    match = re.search(r'\{(?:artist|meta:\s*artist):\s*(.+?)\}', content, re.IGNORECASE)
+    if match:
+        metadata['artist'] = match.group(1).strip()
+
+    # Key
+    match = re.search(r'\{(?:key|meta:\s*key):\s*([A-G][#b]?m?)\}', content, re.IGNORECASE)
+    if match:
+        metadata['key'] = match.group(1)
+
+    # Composer
+    match = re.search(r'\{(?:composer|meta:\s*composer):\s*(.+?)\}', content, re.IGNORECASE)
+    if match:
+        metadata['composer'] = match.group(1).strip()
+
+    return metadata
+
+
+def update_work(song_id: str, chordpro: str, author: str, issue_number: str, repo_root: Path) -> Path | None:
+    """Update or create work in works/ directory."""
+    work_dir = repo_root / 'works' / song_id
+    today = date.today().isoformat()
+
+    if work_dir.exists():
+        # Update existing work
+        work_yaml_path = work_dir / 'work.yaml'
+        lead_sheet_path = work_dir / 'lead-sheet.pro'
+
+        # Update the lead sheet
+        lead_sheet_path.write_text(chordpro + '\n')
+
+        # Update work.yaml with correction info if it exists
+        if work_yaml_path.exists():
+            with open(work_yaml_path, 'r') as f:
+                work_data = yaml.safe_load(f)
+
+            # Update metadata from corrected ChordPro
+            meta = extract_metadata_from_chordpro(chordpro)
+            if meta.get('title'):
+                work_data['title'] = meta['title']
+            if meta.get('artist'):
+                work_data['artist'] = meta['artist']
+            if meta.get('key'):
+                work_data['default_key'] = meta['key']
+
+            # Add correction info to provenance
+            if work_data.get('parts'):
+                for part in work_data['parts']:
+                    if part.get('type') == 'lead-sheet':
+                        if not part.get('provenance'):
+                            part['provenance'] = {}
+                        part['provenance']['corrected_by'] = f'github:{author}'
+                        part['provenance']['corrected_at'] = today
+                        part['provenance']['correction_issue'] = int(issue_number) if issue_number.isdigit() else None
+
+            with open(work_yaml_path, 'w') as f:
+                yaml.dump(work_data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+
+        print(f"Updated work: {work_dir}")
+        return work_dir
+    else:
+        # Create new work from correction
+        meta = extract_metadata_from_chordpro(chordpro)
+        title = meta.get('title', song_id)
+
+        work_data = {
+            'id': song_id,
+            'title': title,
+        }
+        if meta.get('artist'):
+            work_data['artist'] = meta['artist']
+        if meta.get('composer'):
+            work_data['composers'] = [meta['composer']]
+        if meta.get('key'):
+            work_data['default_key'] = meta['key']
+
+        work_data['tags'] = []
+        work_data['parts'] = [{
+            'type': 'lead-sheet',
+            'format': 'chordpro',
+            'file': 'lead-sheet.pro',
+            'default': True,
+            'provenance': {
+                'source': 'correction',
+                'corrected_by': f'github:{author}',
+                'corrected_at': today,
+                'correction_issue': int(issue_number) if issue_number.isdigit() else None,
+            }
+        }]
+
+        work_dir.mkdir(parents=True, exist_ok=True)
+
+        with open(work_dir / 'work.yaml', 'w') as f:
+            yaml.dump(work_data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+
+        (work_dir / 'lead-sheet.pro').write_text(chordpro + '\n')
+
+        print(f"Created work: {work_dir}")
+        return work_dir
+
+
 def main():
     # Get issue info from environment
     issue_body = os.environ.get('ISSUE_BODY', '')
@@ -163,12 +276,15 @@ def main():
     else:
         print(f"Found existing file in source: {source_name}")
 
-    # Write the corrected content
+    # 1. Update sources/ archive
     output_path.write_text(chordpro + '\n')
-    print(f"Updated: {output_path}")
+    print(f"Updated source: {output_path}")
 
     # Add to protected list
     add_to_protected_list(song_id, protected_file)
+
+    # 2. Update/create work in works/ for immediate visibility
+    work_dir = update_work(song_id, chordpro, issue_author, issue_number, repo_root)
 
     # Write song ID to temp file for the workflow to read
     Path('/tmp/corrected_song_id.txt').write_text(song_id)

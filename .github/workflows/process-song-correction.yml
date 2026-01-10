@@ -39,14 +39,15 @@ jobs:
       - name: Rebuild search index
         run: |
           pip install pyyaml beautifulsoup4
-          python scripts/lib/build_index.py --no-tags
+          python scripts/lib/build_works_index.py --no-tags
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sources/classic-country/parsed/
-          git add sources/classic-country/protected.txt
+          git add sources/*/parsed/
+          git add sources/*/protected.txt
+          git add works/
           git add docs/data/index.jsonl
           git diff --staged --quiet || git commit -m "Apply song correction from #${{ github.event.issue.number }}
 
