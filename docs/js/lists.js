@@ -1005,6 +1005,10 @@ export function getFollowedLists() {
 // Track expanded folders state
 let expandedFolders = new Set(JSON.parse(localStorage.getItem('songbook-expanded-folders') || '[]'));
 
+// Track inline editing state
+let editingNewFolder = null;  // { parentId: string|null } if creating new folder
+let editingFolderId = null;   // folder id being renamed
+
 function saveExpandedFolders() {
     localStorage.setItem('songbook-expanded-folders', JSON.stringify([...expandedFolders]));
 }
@@ -1084,7 +1088,7 @@ export function renderSidebarLists() {
     const newFolderBtn = navListsContainerEl.querySelector('[data-action="new-folder"]');
     newFolderBtn?.addEventListener('click', (e) => {
         e.stopPropagation();
-        promptCreateFolder();
+        startCreateFolder(null);
     });
 }
 
@@ -1100,9 +1104,29 @@ function renderFoldersAndLists(container, parentId, depth) {
             return getListFolder(listId) === parentId;
         });
 
-    // Render folders first
+    // Render "new folder" input if we're creating at this level
+    if (editingNewFolder && editingNewFolder.parentId === parentId) {
+        const newFolderEl = document.createElement('div');
+        newFolderEl.className = 'nav-folder nav-folder-editing';
+        newFolderEl.style.paddingLeft = `${depth * 0.75}rem`;
+
+        const headerEl = document.createElement('div');
+        headerEl.className = 'nav-item nav-folder-header';
+        headerEl.innerHTML = `
+            <span class="nav-folder-arrow">▶</span>
+            <span class="nav-icon">&#128193;</span>
+        `;
+
+        const input = createFolderInput('', commitNewFolder, cancelNewFolder);
+        headerEl.appendChild(input);
+        newFolderEl.appendChild(headerEl);
+        container.appendChild(newFolderEl);
+    }
+
+    // Render folders
     folders.forEach(folder => {
         const isExpanded = expandedFolders.has(folder.id);
+        const isEditing = editingFolderId === folder.id;
         const folderEl = document.createElement('div');
         folderEl.className = 'nav-folder';
         folderEl.dataset.folderId = folder.id;
@@ -1110,21 +1134,38 @@ function renderFoldersAndLists(container, parentId, depth) {
 
         const headerBtn = document.createElement('button');
         headerBtn.className = 'nav-item nav-folder-header';
-        headerBtn.innerHTML = `
-            <span class="nav-folder-arrow">${isExpanded ? '▼' : '▶'}</span>
-            <span class="nav-icon">&#128193;</span>
-            <span class="nav-label">${escapeHtml(folder.name)}</span>
-        `;
-        headerBtn.addEventListener('click', () => toggleFolderExpanded(folder.id));
 
-        // Add context menu on right-click
-        headerBtn.addEventListener('contextmenu', (e) => {
-            e.preventDefault();
-            showFolderContextMenu(folder, e.clientX, e.clientY);
-        });
+        if (isEditing) {
+            // Render with inline input for renaming
+            headerBtn.innerHTML = `
+                <span class="nav-folder-arrow">${isExpanded ? '▼' : '▶'}</span>
+                <span class="nav-icon">&#128193;</span>
+            `;
+            const input = createFolderInput(
+                folder.name,
+                (newName) => commitRenameFolder(folder.id, newName),
+                cancelRenameFolder
+            );
+            headerBtn.appendChild(input);
+            // Don't toggle on click when editing
+        } else {
+            // Normal folder rendering
+            headerBtn.innerHTML = `
+                <span class="nav-folder-arrow">${isExpanded ? '▼' : '▶'}</span>
+                <span class="nav-icon">&#128193;</span>
+                <span class="nav-label">${escapeHtml(folder.name)}</span>
+            `;
+            headerBtn.addEventListener('click', () => toggleFolderExpanded(folder.id));
 
-        // Set up folder as drop target for lists
-        setupFolderDropTarget(headerBtn, folder.id);
+            // Add context menu on right-click
+            headerBtn.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+                showFolderContextMenu(folder, e.clientX, e.clientY);
+            });
+
+            // Set up folder as drop target for lists
+            setupFolderDropTarget(headerBtn, folder.id);
+        }
 
         folderEl.appendChild(headerBtn);
 
@@ -1219,14 +1260,104 @@ function setupFolderDropTarget(element, folderId) {
 }
 
 /**
- * Prompt to create a new folder
+ * Start inline folder creation
  */
-function promptCreateFolder(parentId = null) {
-    const name = prompt('Folder name:');
-    if (name && name.trim()) {
-        createFolder(name.trim(), parentId);
-        renderSidebarLists();
+function startCreateFolder(parentId = null) {
+    editingNewFolder = { parentId };
+    // If creating in a folder, expand it
+    if (parentId) {
+        expandedFolders.add(parentId);
+        saveExpandedFolders();
     }
+    renderSidebarLists();
+}
+
+/**
+ * Commit the new folder (called from input handlers)
+ */
+function commitNewFolder(name) {
+    if (name && name.trim() && editingNewFolder) {
+        createFolder(name.trim(), editingNewFolder.parentId);
+    }
+    editingNewFolder = null;
+    renderSidebarLists();
+}
+
+/**
+ * Cancel new folder creation
+ */
+function cancelNewFolder() {
+    editingNewFolder = null;
+    renderSidebarLists();
+}
+
+/**
+ * Start inline folder rename
+ */
+function startRenameFolder(folderId) {
+    editingFolderId = folderId;
+    renderSidebarLists();
+}
+
+/**
+ * Commit folder rename
+ */
+function commitRenameFolder(folderId, newName) {
+    if (newName && newName.trim()) {
+        renameFolder(folderId, newName.trim());
+    }
+    editingFolderId = null;
+    renderSidebarLists();
+}
+
+/**
+ * Cancel folder rename
+ */
+function cancelRenameFolder() {
+    editingFolderId = null;
+    renderSidebarLists();
+}
+
+/**
+ * Create an inline input element for folder name editing
+ */
+function createFolderInput(initialValue, onCommit, onCancel) {
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'nav-folder-input';
+    input.value = initialValue;
+    input.placeholder = 'Folder name';
+
+    // Handle Enter/Escape
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            onCommit(input.value);
+        } else if (e.key === 'Escape') {
+            e.preventDefault();
+            onCancel();
+        }
+    });
+
+    // Handle blur (commit if has value, cancel if empty)
+    input.addEventListener('blur', () => {
+        // Use setTimeout to allow click events on other elements to fire first
+        setTimeout(() => {
+            if (input.value.trim()) {
+                onCommit(input.value);
+            } else {
+                onCancel();
+            }
+        }, 100);
+    });
+
+    // Auto-focus after adding to DOM
+    setTimeout(() => {
+        input.focus();
+        input.select();
+    }, 0);
+
+    return input;
 }
 
 /**
@@ -1251,13 +1382,9 @@ function showFolderContextMenu(folder, x, y) {
     menu.addEventListener('click', (e) => {
         const action = e.target.dataset.action;
         if (action === 'rename') {
-            const newName = prompt('New folder name:', folder.name);
-            if (newName && newName.trim()) {
-                renameFolder(folder.id, newName.trim());
-                renderSidebarLists();
-            }
+            startRenameFolder(folder.id);
         } else if (action === 'new-subfolder') {
-            promptCreateFolder(folder.id);
+            startCreateFolder(folder.id);
         } else if (action === 'delete') {
             if (confirm(`Delete folder "${folder.name}"? Lists will be moved out.`)) {
                 deleteFolder(folder.id);

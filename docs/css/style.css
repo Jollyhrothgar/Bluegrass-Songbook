@@ -3964,6 +3964,34 @@ mark {
     flex-direction: column;
 }
 
+/* Inline folder name input */
+.nav-folder-input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.875rem;
+    font-family: inherit;
+    outline: none;
+}
+
+.nav-folder-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.nav-folder-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+.nav-folder-editing .nav-folder-header {
+    background: rgba(52, 152, 219, 0.1);
+}
+
 /* Folder context menu */
 .folder-context-menu {
     background: var(--bg);
