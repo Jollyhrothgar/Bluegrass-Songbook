@@ -551,35 +551,51 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         ? `<button class="see-versions-btn" data-group-id="${groupId}">See ${otherVersionCount} other version${otherVersionCount > 1 ? 's' : ''}</button>`
         : '';
 
-    let metaHtml = '';
-    if (artist) {
-        metaHtml += `<div class="meta-item"><span class="meta-label">Artist:</span> ${escapeHtml(artist)}</div>`;
-    }
+    // Build artists list: primary artist + covering artists (from grassiness data, sorted by tier)
+    const allArtists = new Set();
+    if (artist) allArtists.add(artist);
+    // Add covering artists from index (already deduped and sorted by tier weight in build)
+    const coveringArtists = song?.covering_artists || [];
+    coveringArtists.forEach(a => allArtists.add(a));
+    // Also include other version artists as fallback
+    versions.forEach(v => { if (v.artist) allArtists.add(v.artist); });
+    const artistsList = Array.from(allArtists);
+
+    // Build info items for the Info disclosure - "Written by" first, then "Artists"
+    let infoItems = [];
+
+    // Written by (composer) - shown first
     if (composer) {
-        metaHtml += `<div class="meta-item"><span class="meta-label">Written by:</span> ${escapeHtml(composer)}</div>`;
+        infoItems.push(`<div class="info-item"><span class="info-label">Written by:</span> ${escapeHtml(composer)}</div>`);
+    }
+
+    // Artists list with expand/collapse for long lists
+    if (artistsList.length > 0) {
+        const maxVisible = 3;
+        const hasMore = artistsList.length > maxVisible;
+        const visibleArtists = hasMore ? artistsList.slice(0, maxVisible) : artistsList;
+        const hiddenArtists = hasMore ? artistsList.slice(maxVisible) : [];
+
+        const artistsHtml = hasMore
+            ? `<span class="artists-visible">${visibleArtists.map(a => escapeHtml(a)).join(', ')}</span><button class="artists-toggle" id="artists-expand" type="button">… <span class="artists-more">(+${hiddenArtists.length})</span></button><span class="artists-hidden hidden" id="artists-full">, ${hiddenArtists.map(a => escapeHtml(a)).join(', ')}</span><button class="artists-toggle hidden" id="artists-collapse" type="button">(collapse)</button>`
+            : visibleArtists.map(a => escapeHtml(a)).join(', ');
+
+        infoItems.push(`<div class="info-item"><span class="info-label">Artists:</span> <span class="artists-list">${artistsHtml}</span></div>`);
     }
     if (bookDisplay) {
         const bookUrl = song?.book_url || null;
         const bookHtml = bookUrl
             ? `<a href="${bookUrl}" target="_blank" rel="noopener">${escapeHtml(bookDisplay)}</a>`
             : escapeHtml(bookDisplay);
-        metaHtml += `<div class="meta-item"><span class="meta-label">From:</span> ${bookHtml}</div>`;
+        infoItems.push(`<div class="info-item"><span class="info-label">From:</span> ${bookHtml}</div>`);
     }
+
+    // Source link for bottom of page
+    let sourceHtml = '';
     if (sourceUrl) {
-        metaHtml += `<div class="meta-item"><span class="meta-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${escapeHtml(song.id)}</a></div>`;
-    }
-
-    // TuneArch attribution link
-    if (song?.tunearch_url) {
-        metaHtml += `<div class="meta-item"><span class="meta-label">From:</span> <a href="${song.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a></div>`;
-    }
-
-    // Strum Machine practice link (includes key param for current transposition)
-    if (song?.strum_machine_url) {
-        const smUrl = currentDetectedKey
-            ? `${song.strum_machine_url}?key=${encodeURIComponent(currentDetectedKey)}`
-            : song.strum_machine_url;
-        metaHtml += `<div class="meta-item strum-machine-link"><a href="${smUrl}" target="_blank" rel="noopener"><img src="images/strum_machine.png" alt="" class="strum-machine-icon">Practice on Strum Machine</a></div>`;
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${escapeHtml(song.id)}</a></div>`;
+    } else if (song?.tunearch_url) {
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${song.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a></div>`;
     }
 
     // Tags with voting and "add your own" option
@@ -611,21 +627,17 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         }).join('')
         : '<em class="no-tags">None</em>';
 
-    // Build collapsed tags summary for mobile
-    const tagsSummary = tagNames.length > 0
-        ? tagNames.map(tag => formatTagName(tag)).join(', ')
-        : 'None';
+    // Info disclosure state
+    const infoBarCollapsed = localStorage.getItem('infoBarCollapsed') !== 'false'; // Default collapsed
 
-    // Tags section (separate from meta, full width)
-    const tagsRowHtml = `
-        <div class="song-tags-section">
-            <div class="tags-collapsed" id="tags-collapsed">
-                <span class="tags-label">Tags:</span>
-                <span class="tags-summary">${escapeHtml(tagsSummary)}</span>
-                <span class="tags-expand">▼</span>
+    // Info disclosure content (artist, composer, book + tags)
+    const infoContentHtml = `
+        <div id="info-content" class="info-content ${infoBarCollapsed ? 'hidden' : ''}">
+            <div class="info-details">
+                ${infoItems.join('')}
             </div>
-            <div class="tags-expanded" id="tags-expanded">
-                <div class="tags-header">Tags <span class="tags-collapse">▲</span></div>
+            <div class="info-tags">
+                <div class="info-tags-label">Tags:</div>
                 <div class="song-tags-row">
                     <span id="song-tags-container" class="song-tags" data-song-id="${song.id}">${tagsHtml}</span>
                     ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song.id}">+ Add your own</button>` : ''}
@@ -687,44 +699,12 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     // ABC notation view HTML
     const showAbcView = hasAbc && (!hasChords || showAbcNotation) && showLeadSheet;
 
-    // Build transpose options (+6 to -6 semitones)
-    const transposeOptions = [];
-    for (let t = 6; t >= -6; t--) {
-        const label = t === 0 ? 'Original' : (t > 0 ? `+${t}` : `${t}`);
-        transposeOptions.push(`<option value="${t}" ${abcTranspose === t ? 'selected' : ''}>${label}</option>`);
-    }
+    // Quick controls collapsed state
+    const quickBarCollapsed = localStorage.getItem('quickBarCollapsed') === 'true';
 
+    // ABC view - controls are now in the quick controls bar above
     const abcViewHtml = hasAbc ? `
         <div id="abc-view" class="abc-view ${showAbcView ? '' : 'hidden'}">
-            <fieldset class="render-options-fieldset">
-                <legend>Controls</legend>
-                <div class="render-options">
-                    <div class="control-box">
-                        <span class="control-box-label">Transpose</span>
-                        <select id="abc-transpose-select" class="abc-select">${transposeOptions.join('')}</select>
-                    </div>
-                    <div class="control-box">
-                        <span class="control-box-label">Size</span>
-                        <div class="font-size-buttons">
-                            <button id="abc-size-decrease" class="font-btn" ${abcScale <= 0.7 ? 'disabled' : ''}>−</button>
-                            <span id="abc-size-display" class="size-display">${Math.round(abcScale * 100)}%</span>
-                            <button id="abc-size-increase" class="font-btn" ${abcScale >= 1.5 ? 'disabled' : ''}>+</button>
-                        </div>
-                    </div>
-                    <div class="control-box">
-                        <span class="control-box-label">Tempo</span>
-                        <div class="font-size-buttons">
-                            <button id="abc-speed-decrease" class="font-btn" ${abcTempoBpm <= 60 ? 'disabled' : ''}>−</button>
-                            <input type="number" id="abc-speed-display" class="tempo-input" value="${abcTempoBpm}" min="60" max="240">
-                            <button id="abc-speed-increase" class="font-btn" ${abcTempoBpm >= 240 ? 'disabled' : ''}>+</button>
-                        </div>
-                    </div>
-                    <div class="control-box">
-                        <span class="control-box-label">Playback</span>
-                        <button id="abc-play-btn" class="abc-btn abc-play-btn">▶ Play</button>
-                    </div>
-                </div>
-            </fieldset>
             <div id="abc-notation" class="abc-notation"></div>
         </div>
     ` : '';
@@ -733,23 +713,139 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     // Note: Tablature view removed - all tab works route through work-view.js
     const chordViewClass = showAbcView || !hasChords ? 'hidden' : '';
 
-    // Header controls - Options and Flag buttons
+    // Header controls - disclosure toggles
     const headerControlsHtml = `
         <div class="header-controls">
-            <button id="flag-btn" class="flag-btn" title="Report an issue">Report Issue</button>
-            <button id="controls-btn" class="controls-btn">Options</button>
+            <button id="flag-btn" class="flag-btn" title="Report an issue">🚩 Report</button>
+            <button id="qc-toggle" class="disclosure-btn" title="Toggle controls">⚙️ Controls <span class="disclosure-arrow">${quickBarCollapsed ? '▼' : '▲'}</span></button>
+            <button id="info-toggle" class="disclosure-btn" title="Toggle info">🎵 Info <span class="disclosure-arrow">${infoBarCollapsed ? '▼' : '▲'}</span></button>
         </div>
     `;
 
+    // Quick controls bar HTML - shown below song header, above tags
+    // Controls differ based on content type: ABC notation vs chords/lyrics
+    const hasStrumMachine = !!song?.strum_machine_url;
+    const strumMachineUrl = hasStrumMachine
+        ? (currentDetectedKey
+            ? `${song.strum_machine_url}?key=${encodeURIComponent(currentDetectedKey)}`
+            : song.strum_machine_url)
+        : '';
+
+    // ABC-specific controls: Aa (size), Key, Tempo, Play
+    const abcControlsHtml = showAbcView ? `
+        <div class="qc-group">
+            <button id="abc-size-decrease" class="qc-btn" title="Decrease size">−</button>
+            <span class="qc-label">Aa</span>
+            <button id="abc-size-increase" class="qc-btn" title="Increase size">+</button>
+        </div>
+        <div class="qc-group qc-key-group">
+            <button id="qc-key-down" class="qc-btn" title="Transpose down">−</button>
+            <button id="qc-key-select" class="qc-key-btn" title="Select key">
+                <span id="qc-key-value">${currentDetectedKey || '—'}</span>
+                <span class="qc-dropdown-arrow">▼</span>
+            </button>
+            <button id="qc-key-up" class="qc-btn" title="Transpose up">+</button>
+        </div>
+        <div class="qc-group">
+            <button id="abc-speed-decrease" class="qc-btn" title="Decrease tempo">−</button>
+            <span class="qc-label" id="abc-tempo-label">${abcTempoBpm}</span>
+            <button id="abc-speed-increase" class="qc-btn" title="Increase tempo">+</button>
+        </div>
+        <button id="abc-play-btn" class="qc-toggle-btn" title="Play/Pause">▶ Play</button>
+    ` : '';
+
+    // Chord/lyrics controls: Aa, Key, Layout, Nashville
+    const chordControlsHtml = !showAbcView ? `
+        <div class="qc-group">
+            <button id="qc-size-down" class="qc-btn" title="Decrease font size">−</button>
+            <span class="qc-label">Aa</span>
+            <button id="qc-size-up" class="qc-btn" title="Increase font size">+</button>
+        </div>
+        <div class="qc-group qc-key-group">
+            <button id="qc-key-down" class="qc-btn" title="Transpose down">−</button>
+            <button id="qc-key-select" class="qc-key-btn" title="Select key">
+                <span id="qc-key-value">${currentDetectedKey || '—'}</span>
+                <span class="qc-dropdown-arrow">▼</span>
+            </button>
+            <button id="qc-key-up" class="qc-btn" title="Transpose up">+</button>
+        </div>
+        <div class="qc-group qc-dropdown-group">
+            <button id="qc-layout-btn" class="qc-dropdown-btn">
+                Layout <span class="qc-dropdown-arrow">▼</span>
+            </button>
+            <div id="qc-layout-dropdown" class="qc-dropdown hidden">
+                <label class="qc-checkbox"><input type="checkbox" id="qc-compact" ${compactMode ? 'checked' : ''}> Compact</label>
+                <label class="qc-checkbox"><input type="checkbox" id="qc-twocol" ${twoColumnMode ? 'checked' : ''}> Two Columns</label>
+                <label class="qc-checkbox"><input type="checkbox" id="qc-sections" ${showSectionLabels ? 'checked' : ''}> Section Labels</label>
+                <div class="qc-dropdown-divider"></div>
+                <div class="qc-dropdown-row">
+                    <label>Chords</label>
+                    <select id="qc-chord-mode" class="qc-select">
+                        <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All</option>
+                        <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First Only</option>
+                        <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>None</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button id="qc-nashville" class="qc-toggle-btn ${nashvilleMode ? 'active' : ''}" title="Nashville numbers">Nashville</button>
+        <button id="qc-strum" class="qc-icon-btn ${hasStrumMachine ? '' : 'hidden'}" title="Practice on Strum Machine" data-url="${strumMachineUrl}">
+            <img src="images/strum_machine.png" alt="Strum Machine" class="qc-strum-icon">
+        </button>
+    ` : '';
+
+    const quickControlsBarHtml = `
+        <div id="quick-controls-content" class="quick-controls-content ${quickBarCollapsed ? 'hidden' : ''}">
+            <div class="qc-controls-row">
+                ${showAbcView ? abcControlsHtml : chordControlsHtml}
+            </div>
+            <div id="qc-key-dropdown" class="qc-dropdown qc-key-dropdown hidden"></div>
+        </div>
+    `;
+
+    // Focus header - shown only in fullscreen mode (via CSS)
+    const focusHeaderHtml = `
+        <div class="focus-header">
+            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
+                <span>✕</span>
+                <span class="focus-btn-label">Exit</span>
+            </button>
+            <div class="focus-title-area">
+                <span class="focus-title">${escapeHtml(title)}</span>
+                <span id="focus-position" class="focus-position"></span>
+            </div>
+            <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
+                <span>⚙️</span>
+                <span class="focus-btn-label">Controls</span>
+            </button>
+        </div>
+    `;
+
+    // Fixed position corner nav buttons for list navigation (shown in fullscreen with list context)
+    const cornerNavHtml = `
+        <button id="focus-prev-btn" class="focus-corner-nav focus-corner-prev" title="Previous song (←)">
+            <span class="corner-nav-arrow">←</span>
+        </button>
+        <button id="focus-next-btn" class="focus-corner-nav focus-corner-next" title="Next song (→)">
+            <span class="corner-nav-arrow">→</span>
+        </button>
+    `;
+
     songContentEl.innerHTML = `
+        ${focusHeaderHtml}
         <div class="song-header">
             <div class="song-header-left">
-                <div class="song-title">${escapeHtml(title)}${versionHtml}</div>
-                <div class="song-meta">${metaHtml}</div>
+                <div class="song-title-row">
+                    <span class="song-title">${escapeHtml(title)}</span>
+                    ${versionHtml}
+                    <button id="add-to-list-btn" class="add-to-list-btn" title="Add to list">+ Lists</button>
+                    <button id="focus-btn" class="focus-btn" title="Focus mode (F)">⛶ Focus</button>
+                </div>
             </div>
             ${headerControlsHtml}
         </div>
-        ${tagsRowHtml}
+        ${quickControlsBarHtml}
+        ${infoContentHtml}
         ${partTabsHtml}
         ${viewToggleHtml}
         ${abcViewHtml}
@@ -770,6 +866,8 @@ export function renderSong(song, chordpro, isInitialRender = false) {
             `}
             ${!hasChords && hasAbc ? '<div class="instrumental-notice"><em>Instrumental tune - see notation above</em></div>' : ''}
         </div>
+        ${sourceHtml}
+        ${cornerNavHtml}
     `;
 
     // Render ABC notation if showing
@@ -784,6 +882,11 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     setupRenderOptionsListeners(song, chordpro);
     setupAbcControlListeners(song, chordpro, abcContent);
     setupPartTabListeners(song, chordpro);
+
+    // Update quick controls bar
+    if (typeof window.updateQuickControls === 'function') {
+        window.updateQuickControls();
+    }
 }
 
 /**
@@ -1090,16 +1193,6 @@ function setupRenderOptionsListeners(song, chordpro) {
         });
     }
 
-    // Controls button opens bottom sheet
-    const controlsBtn = document.getElementById('controls-btn');
-    if (controlsBtn) {
-        controlsBtn.addEventListener('click', () => {
-            if (typeof window.openBottomSheet === 'function') {
-                window.openBottomSheet();
-            }
-        });
-    }
-
     // Flag button opens flag modal
     const flagBtn = document.getElementById('flag-btn');
     if (flagBtn) {
@@ -1107,6 +1200,43 @@ function setupRenderOptionsListeners(song, chordpro) {
             openFlagModal(song);
         });
     }
+
+    // Focus header buttons
+    const focusExitBtn = document.getElementById('focus-exit-btn');
+    if (focusExitBtn) {
+        focusExitBtn.addEventListener('click', () => {
+            exitFullscreen();
+        });
+    }
+
+    const focusPrevBtn = document.getElementById('focus-prev-btn');
+    if (focusPrevBtn) {
+        focusPrevBtn.addEventListener('click', () => {
+            navigatePrev();
+        });
+    }
+
+    const focusNextBtn = document.getElementById('focus-next-btn');
+    if (focusNextBtn) {
+        focusNextBtn.addEventListener('click', () => {
+            navigateNext();
+        });
+    }
+
+    const focusControlsToggle = document.getElementById('focus-controls-toggle');
+    if (focusControlsToggle) {
+        focusControlsToggle.addEventListener('click', () => {
+            const qcContent = document.getElementById('quick-controls-content');
+            if (qcContent) {
+                const isHidden = qcContent.classList.toggle('hidden');
+                // Update localStorage so re-renders preserve the state
+                localStorage.setItem('quickBarCollapsed', isHidden);
+            }
+        });
+    }
+
+    // Update focus header based on list context
+    updateFocusHeader();
 }
 
 /**
@@ -1226,6 +1356,10 @@ export async function openSong(songId, options = {}) {
 
     const { fromList = false, fromHistory = false, listId = null, fromDeepLink = false } = options;
 
+    // Clear chordpro content FIRST to prevent stale render from subscribers
+    // This must happen before any state changes that trigger reactive re-renders
+    setCurrentChordpro(null);
+
     if (pushHistoryStateFn && !fromHistory) {
         // Include listId in URL if we're in a list context
         const effectiveListId = listId || (listContext ? listContext.listId : null);
@@ -1268,6 +1402,8 @@ export async function openSong(songId, options = {}) {
     if (fromList && listContext) {
         setFullscreenMode(true);
         document.body.classList.add('fullscreen-mode');
+        // Also add list context class for corner nav buttons
+        document.body.classList.add('has-list-context');
     }
 
     // Track song view in analytics
@@ -1312,6 +1448,9 @@ export async function openSong(songId, options = {}) {
  */
 export async function openSongFromHistory(songId) {
     if (!songViewEl || !resultsDivEl) return;
+
+    // Clear chordpro content FIRST to prevent stale render from subscribers
+    setCurrentChordpro(null);
 
     // Update view state - triggers DOM update via subscriber
     setCurrentView('song');
@@ -1625,6 +1764,44 @@ export function updateNavBar() {
         // Clear the content so it doesn't show stale data
         if (navPositionEl) navPositionEl.textContent = '';
         if (navListNameEl) navListNameEl.textContent = '';
+    }
+
+    // Also update focus header
+    updateFocusHeader();
+}
+
+/**
+ * Update focus header based on list context
+ */
+export function updateFocusHeader() {
+    const focusPrevBtn = document.getElementById('focus-prev-btn');
+    const focusNextBtn = document.getElementById('focus-next-btn');
+    const focusPositionEl = document.getElementById('focus-position');
+
+    if (listContext && listContext.songIds && listContext.songIds.length > 0) {
+        const idx = listContext.currentIndex;
+        const total = listContext.songIds.length;
+
+        // Update position text
+        if (focusPositionEl) {
+            const listName = listContext.listName ? ` · ${listContext.listName}` : '';
+            focusPositionEl.textContent = `${idx + 1} of ${total}${listName}`;
+        }
+
+        // Update button states
+        if (focusPrevBtn) {
+            focusPrevBtn.disabled = idx <= 0;
+        }
+        if (focusNextBtn) {
+            focusNextBtn.disabled = idx >= total - 1;
+        }
+
+        // Add class to body for CSS
+        document.body.classList.add('has-list-context');
+    } else {
+        // No list context
+        if (focusPositionEl) focusPositionEl.textContent = '';
+        document.body.classList.remove('has-list-context');
     }
 }
 

@@ -21,6 +21,7 @@ import { parseChordPro, showVersionPicker } from './song-view.js';
 import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS } from './chords.js';
 import { escapeHtml } from './utils.js';
 import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
+import { getTagCategory, formatTagName } from './tags.js';
 
 // ============================================
 // WORK STATE
@@ -305,6 +306,10 @@ export async function openWork(workId, options = {}) {
         return;
     }
 
+    // Clear chordpro content FIRST to prevent stale render from subscribers
+    // This must happen before any state changes that trigger reactive re-renders
+    setCurrentChordpro(null);
+
     // Show the song view panel
     setCurrentView('song');
 
@@ -382,21 +387,16 @@ export function renderWorkView() {
 }
 
 /**
- * Render work header with metadata
+ * Render work header with metadata - matches song-view pattern
  */
 function renderWorkHeader() {
     const header = document.createElement('div');
-    header.className = 'work-header';
+    header.className = 'work-header-container';
 
     const title = currentWork.title || 'Untitled';
     const artist = currentWork.artist || '';
+    const composer = currentWork.composer || '';
     const key = currentWork.key || '';
-    const tempo = currentWork.tempo || currentWork.default_tempo || '';
-
-    let metaHtml = '';
-    if (artist) metaHtml += `<span class="work-artist">${escapeHtml(artist)}</span>`;
-    if (key) metaHtml += `<span class="work-key">Key: ${escapeHtml(key)}</span>`;
-    if (tempo) metaHtml += `<span class="work-tempo">${tempo} BPM</span>`;
 
     // Check for multiple versions
     const groupId = currentWork?.group_id;
@@ -406,10 +406,135 @@ function renderWorkHeader() {
         ? `<button class="see-versions-btn" data-group-id="${groupId}">See ${otherVersionCount} other version${otherVersionCount > 1 ? 's' : ''}</button>`
         : '';
 
+    // Build artists list: primary artist + covering artists
+    const allArtists = new Set();
+    if (artist) allArtists.add(artist);
+    const coveringArtists = currentWork?.covering_artists || [];
+    coveringArtists.forEach(a => allArtists.add(a));
+    versions.forEach(v => { if (v.artist) allArtists.add(v.artist); });
+    const artistsList = Array.from(allArtists);
+
+    // Build info items
+    let infoItems = [];
+    if (composer) {
+        infoItems.push(`<div class="info-item"><span class="info-label">Written by:</span> ${escapeHtml(composer)}</div>`);
+    }
+    if (artistsList.length > 0) {
+        const maxVisible = 3;
+        const hasMore = artistsList.length > maxVisible;
+        const visibleArtists = hasMore ? artistsList.slice(0, maxVisible) : artistsList;
+        const hiddenArtists = hasMore ? artistsList.slice(maxVisible) : [];
+
+        const artistsHtml = hasMore
+            ? `<span class="artists-visible">${visibleArtists.map(a => escapeHtml(a)).join(', ')}</span><button class="artists-toggle" id="artists-expand" type="button">… <span class="artists-more">(+${hiddenArtists.length})</span></button><span class="artists-hidden hidden" id="artists-full">, ${hiddenArtists.map(a => escapeHtml(a)).join(', ')}</span><button class="artists-toggle hidden" id="artists-collapse" type="button">(collapse)</button>`
+            : visibleArtists.map(a => escapeHtml(a)).join(', ');
+
+        infoItems.push(`<div class="info-item"><span class="info-label">Artists:</span> <span class="artists-list">${artistsHtml}</span></div>`);
+    }
+
+    // Tags with voting controls
+    const songTags = currentWork?.tags || {};
+    const tagNames = Object.keys(songTags);
+    const isLoggedIn = window.SupabaseAuth?.isLoggedIn?.() || false;
+
+    const tagsHtml = tagNames.length > 0
+        ? tagNames.map(tag => {
+            const category = getTagCategory(tag);
+            const displayName = formatTagName(tag);
+            return `
+                <span class="votable-tag tag-${category}" data-tag="${escapeHtml(tag)}">
+                    <span class="tag-name">${escapeHtml(displayName)}</span>
+                    ${isLoggedIn ? `
+                        <span class="vote-chip">
+                            <button class="vote-btn vote-up" data-vote="1" title="Agree">
+                                <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 0L10 6H7V9H3V6H0L5 0Z" fill="currentColor"/></svg>
+                            </button>
+                            <span class="vote-divider"></span>
+                            <button class="vote-btn vote-down" data-vote="-1" title="Disagree">
+                                <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 12L0 6H3V3H7V6H10L5 12Z" fill="currentColor"/></svg>
+                            </button>
+                        </span>
+                    ` : ''}
+                </span>
+            `;
+        }).join('')
+        : '<em class="no-tags">None</em>';
+
+    // Disclosure states from localStorage
+    const controlsCollapsed = localStorage.getItem('workControlsCollapsed') !== 'false'; // Default collapsed
+    const infoBarCollapsed = localStorage.getItem('infoBarCollapsed') !== 'false'; // Default collapsed
+
+    // Focus header - shown in fullscreen mode
+    const focusHeaderHtml = `
+        <div class="focus-header">
+            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
+                <span>✕</span>
+                <span class="focus-btn-label">Exit</span>
+            </button>
+            <div class="focus-title-area">
+                <span class="focus-title">${escapeHtml(title)}</span>
+                <span id="focus-position" class="focus-position"></span>
+            </div>
+            <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
+                <span>⚙️</span>
+                <span class="focus-btn-label">Controls</span>
+            </button>
+        </div>
+    `;
+
+    // Header controls row
+    const headerControlsHtml = `
+        <div class="header-controls">
+            <button id="flag-btn" class="flag-btn" title="Report an issue">🚩 Report</button>
+            <button id="work-controls-toggle" class="disclosure-btn" title="Toggle controls">⚙️ Controls <span class="disclosure-arrow">${controlsCollapsed ? '▼' : '▲'}</span></button>
+            <button id="info-toggle" class="disclosure-btn" title="Toggle info">🎵 Info <span class="disclosure-arrow">${infoBarCollapsed ? '▼' : '▲'}</span></button>
+        </div>
+    `;
+
+    // Info disclosure content
+    const infoContentHtml = `
+        <div id="info-content" class="info-content ${infoBarCollapsed ? 'hidden' : ''}">
+            <div class="info-details">
+                ${infoItems.join('')}
+            </div>
+            <div class="info-tags">
+                <div class="info-tags-label">Tags:</div>
+                <div class="song-tags-row">
+                    <span id="song-tags-container" class="song-tags" data-song-id="${currentWork.id}">${tagsHtml}</span>
+                    ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${currentWork.id}">+ Add your own</button>` : ''}
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Corner nav buttons for focus mode list navigation
+    const cornerNavHtml = `
+        <button id="focus-prev-btn" class="focus-corner-nav focus-corner-prev" title="Previous song (←)">
+            <span class="corner-nav-arrow">←</span>
+        </button>
+        <button id="focus-next-btn" class="focus-corner-nav focus-corner-next" title="Next song (→)">
+            <span class="corner-nav-arrow">→</span>
+        </button>
+    `;
+
     header.innerHTML = `
-        <h1 class="work-title">${escapeHtml(title)}</h1>
-        ${metaHtml ? `<div class="work-meta">${metaHtml}</div>` : ''}
-        ${versionHtml}
+        ${focusHeaderHtml}
+        <div class="song-header">
+            <div class="song-header-left">
+                <div class="song-title-row">
+                    <span class="song-title">${escapeHtml(title)}</span>
+                    ${versionHtml}
+                    <button id="add-to-list-btn" class="add-to-list-btn" title="Add to list">+ Lists</button>
+                    <button id="focus-btn" class="focus-btn" title="Focus mode (F)">⛶ Focus</button>
+                </div>
+            </div>
+            ${headerControlsHtml}
+        </div>
+        <div id="work-controls-content" class="work-controls-content ${controlsCollapsed ? 'hidden' : ''}">
+            <!-- Controls are injected here by renderTablaturePart or renderChordProPart -->
+        </div>
+        ${infoContentHtml}
+        ${cornerNavHtml}
     `;
 
     // Wire up version button click handler
@@ -418,6 +543,29 @@ function renderWorkHeader() {
         versionBtn.addEventListener('click', (e) => {
             e.preventDefault();
             showVersionPicker(versionBtn.dataset.groupId);
+        });
+    }
+
+    // Wire up disclosure toggles
+    const controlsToggle = header.querySelector('#work-controls-toggle');
+    const controlsContent = header.querySelector('#work-controls-content');
+    if (controlsToggle && controlsContent) {
+        controlsToggle.addEventListener('click', () => {
+            const isCollapsed = controlsContent.classList.toggle('hidden');
+            localStorage.setItem('workControlsCollapsed', isCollapsed);
+            const arrow = controlsToggle.querySelector('.disclosure-arrow');
+            if (arrow) arrow.textContent = isCollapsed ? '▼' : '▲';
+        });
+    }
+
+    const infoToggle = header.querySelector('#info-toggle');
+    const infoContent = header.querySelector('#info-content');
+    if (infoToggle && infoContent) {
+        infoToggle.addEventListener('click', () => {
+            const isCollapsed = infoContent.classList.toggle('hidden');
+            localStorage.setItem('infoBarCollapsed', isCollapsed);
+            const arrow = infoToggle.querySelector('.disclosure-arrow');
+            if (arrow) arrow.textContent = isCollapsed ? '▼' : '▲';
         });
     }
 
@@ -521,9 +669,16 @@ function renderChordProPart(part, container) {
         }
     }
 
-    // Create controls
+    // Inject controls into the header's controls content area
     const controls = createLeadSheetControls();
-    container.appendChild(controls);
+    const controlsContent = document.getElementById('work-controls-content');
+    if (controlsContent) {
+        controlsContent.innerHTML = '';
+        controlsContent.appendChild(controls);
+    } else {
+        // Fallback: add controls to container if header not found
+        container.appendChild(controls);
+    }
 
     // Create content area
     const contentArea = document.createElement('div');
@@ -669,9 +824,16 @@ async function renderTablaturePart(part, container) {
         container.innerHTML = '';
         trackRenderers = {};
 
-        // Create controls
+        // Inject controls into the header's controls content area
         const controls = createTablatureControls(otf, part);
-        container.appendChild(controls);
+        const controlsContent = document.getElementById('work-controls-content');
+        if (controlsContent) {
+            controlsContent.innerHTML = '';
+            controlsContent.appendChild(controls);
+        } else {
+            // Fallback: add controls to container if header not found
+            container.appendChild(controls);
+        }
 
         // Create container for all tracks
         const allTracksContainer = document.createElement('div');
@@ -867,35 +1029,44 @@ function createTablatureControls(otf, part) {
         </label>
     ` : '';
 
+    // Build key options with capo indicators
+    const keyOptions = Object.keys(KEYS).filter(k => KEYS[k].mode === 'major').map(k => {
+        const keyList = Object.keys(KEYS).filter(key => KEYS[key].mode === 'major');
+        const capo = (keyList.indexOf(k) - keyList.indexOf(originalKey) + 12) % 12;
+        const capoLabel = capo === 0 ? '' : ` (Capo ${capo})`;
+        return `<option value="${k}" data-capo="${capo}" ${k === originalKey ? 'selected' : ''}>${k}${capoLabel}</option>`;
+    }).join('');
+
     const controls = document.createElement('div');
     controls.className = 'tab-controls';
+    // Control order matches lyrics/ABC: Size → Key → Tempo → Play
     controls.innerHTML = `
-        <button class="tab-play-btn">▶ Play</button>
-        <button class="tab-stop-btn" disabled>⏹ Stop</button>
-        <span class="tab-position"></span>
+        <div class="qc-group">
+            <button class="tab-size-down qc-btn" title="Decrease size">−</button>
+            <span class="qc-label">Aa</span>
+            <button class="tab-size-up qc-btn" title="Increase size">+</button>
+        </div>
+        <div class="qc-group qc-key-group">
+            <button class="tab-key-down qc-btn" title="Transpose down">−</button>
+            <select class="tab-key-select qc-key-btn" title="Select key">
+                ${keyOptions}
+            </select>
+            <button class="tab-key-up qc-btn" title="Transpose up">+</button>
+        </div>
+        <div class="qc-group">
+            <button class="tab-tempo-down qc-btn" title="Decrease tempo">−</button>
+            <span class="qc-label tab-tempo-display">${defaultTempo}</span>
+            <button class="tab-tempo-up qc-btn" title="Increase tempo">+</button>
+        </div>
+        <button class="tab-play-btn qc-toggle-btn">▶ Play</button>
+        <button class="tab-stop-btn qc-toggle-btn" disabled>⏹ Stop</button>
         <label class="tab-metronome-toggle">
             <input type="checkbox" class="tab-metronome-checkbox">
             <span class="tab-metronome-icon">🥁</span>
         </label>
         ${repeatToggleHtml}
-        <div class="tab-key-control">
-            <label class="tab-key-label">Key:</label>
-            <select class="tab-key-select">
-                ${Object.keys(KEYS).filter(k => KEYS[k].mode === 'major').map(k => {
-                    const keyList = Object.keys(KEYS).filter(key => KEYS[key].mode === 'major');
-                    const capo = (keyList.indexOf(k) - keyList.indexOf(originalKey) + 12) % 12;
-                    const capoLabel = capo === 0 ? '' : ` (Capo ${capo})`;
-                    return `<option value="${k}" data-capo="${capo}" ${k === originalKey ? 'selected' : ''}>${k}${capoLabel}</option>`;
-                }).join('')}
-            </select>
-            <span class="tab-capo-indicator"></span>
-        </div>
-        <div class="tab-tempo-control">
-            <button class="tab-tempo-btn tab-tempo-down">−</button>
-            <input type="number" class="tab-tempo-input" value="${defaultTempo}" min="40" max="280" step="5">
-            <button class="tab-tempo-btn tab-tempo-up">+</button>
-            <span class="tab-tempo-label">BPM</span>
-        </div>
+        <span class="tab-position"></span>
+        <span class="tab-capo-indicator"></span>
         ${trackMixerHtml}
     `;
 
@@ -914,15 +1085,20 @@ function setupTablaturePlayer(otf, controls, renderer) {
     const playBtn = controls.querySelector('.tab-play-btn');
     const stopBtn = controls.querySelector('.tab-stop-btn');
     const posEl = controls.querySelector('.tab-position');
-    const tempoInput = controls.querySelector('.tab-tempo-input');
+    const tempoDisplay = controls.querySelector('.tab-tempo-display');
     const tempoDown = controls.querySelector('.tab-tempo-down');
     const tempoUp = controls.querySelector('.tab-tempo-up');
     const keySelect = controls.querySelector('.tab-key-select');
+    const keyDown = controls.querySelector('.tab-key-down');
+    const keyUp = controls.querySelector('.tab-key-up');
     const capoIndicator = controls.querySelector('.tab-capo-indicator');
     const metronomeCheckbox = controls.querySelector('.tab-metronome-checkbox');
+    const sizeDown = controls.querySelector('.tab-size-down');
+    const sizeUp = controls.querySelector('.tab-size-up');
 
-    let currentTempo = parseInt(tempoInput.value, 10);
+    let currentTempo = parseInt(tempoDisplay.textContent, 10);
     let currentCapo = 0;
+    let currentScale = 1.0; // Scale factor for tablature size
 
     // Build tick mapping for compact mode visualization
     // In compact mode, playback ticks are expanded but display is compact
@@ -939,8 +1115,27 @@ function setupTablaturePlayer(otf, controls, renderer) {
     player.onNoteStart = (absTick) => renderer.highlightNote(tickMapper(absTick));
     player.onNoteEnd = (absTick) => renderer.clearNoteHighlight(tickMapper(absTick));
 
+    // Size controls - scale the tablature
+    const updateSize = (delta) => {
+        currentScale = Math.max(0.6, Math.min(1.6, currentScale + delta));
+        const container = document.querySelector('.tablature-container');
+        if (container) {
+            container.style.setProperty('--tab-scale', currentScale);
+            // Trigger reflow if renderer supports it
+            if (typeof renderer.reflow === 'function') {
+                renderer.reflow();
+            }
+        }
+        // Update button states
+        sizeDown.disabled = currentScale <= 0.6;
+        sizeUp.disabled = currentScale >= 1.6;
+    };
+
+    sizeDown?.addEventListener('click', () => updateSize(-0.1));
+    sizeUp?.addEventListener('click', () => updateSize(0.1));
+
     // Metronome
-    metronomeCheckbox.addEventListener('change', () => {
+    metronomeCheckbox?.addEventListener('change', () => {
         player.metronomeEnabled = metronomeCheckbox.checked;
     });
 
@@ -952,22 +1147,37 @@ function setupTablaturePlayer(otf, controls, renderer) {
 
     const setTempo = (val) => {
         currentTempo = Math.max(40, Math.min(280, val));
-        tempoInput.value = currentTempo;
+        tempoDisplay.textContent = currentTempo;
         updateTempoButtons();
     };
 
-    tempoDown.addEventListener('click', () => setTempo(currentTempo - 5));
-    tempoUp.addEventListener('click', () => setTempo(currentTempo + 5));
-    tempoInput.addEventListener('change', () => setTempo(parseInt(tempoInput.value, 10) || 100));
+    tempoDown?.addEventListener('click', () => setTempo(currentTempo - 5));
+    tempoUp?.addEventListener('click', () => setTempo(currentTempo + 5));
 
-    // Key/capo
+    // Key/capo controls
     const updateCapoIndicator = () => {
         capoIndicator.textContent = currentCapo > 0 ? `Capo ${currentCapo}` : '';
     };
 
-    keySelect.addEventListener('change', () => {
+    const selectKeyByIndex = (index) => {
+        const options = keySelect.options;
+        const newIndex = Math.max(0, Math.min(options.length - 1, index));
+        keySelect.selectedIndex = newIndex;
+        currentCapo = parseInt(options[newIndex].dataset.capo, 10) || 0;
+        updateCapoIndicator();
+    };
+
+    keySelect?.addEventListener('change', () => {
         currentCapo = parseInt(keySelect.options[keySelect.selectedIndex].dataset.capo, 10) || 0;
         updateCapoIndicator();
+    });
+
+    keyDown?.addEventListener('click', () => {
+        selectKeyByIndex(keySelect.selectedIndex - 1);
+    });
+
+    keyUp?.addEventListener('click', () => {
+        selectKeyByIndex(keySelect.selectedIndex + 1);
     });
 
     // Position updates

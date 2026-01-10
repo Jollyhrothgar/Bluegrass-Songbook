@@ -74,6 +74,7 @@ const sidebarBackdrop = document.getElementById('sidebar-backdrop');
 const sidebarClose = document.getElementById('sidebar-close');
 const menuBtn = document.getElementById('hamburger-btn');
 const logoLink = document.getElementById('logo-link');
+const navHome = document.getElementById('nav-home');
 const navSearch = document.getElementById('nav-search');
 const navAddSong = document.getElementById('nav-add-song');
 const navFavorites = document.getElementById('nav-favorites');
@@ -127,11 +128,8 @@ const userAvatar = document.getElementById('user-avatar');
 const userName = document.getElementById('user-name');
 
 // Song actions
-const printBtn = document.getElementById('print-btn');
-const copyBtn = document.getElementById('copy-btn');
-const copyDropdown = document.getElementById('copy-dropdown');
-const downloadBtn = document.getElementById('download-btn');
-const downloadDropdown = document.getElementById('download-dropdown');
+const exportBtn = document.getElementById('export-btn');
+const exportDropdown = document.getElementById('export-dropdown');
 const editSongBtn = document.getElementById('edit-song-btn');
 
 // Editor elements
@@ -324,12 +322,14 @@ function initViewSubscription() {
         bottomSheetBackdrop?.classList.add('hidden');
 
         // Reset all nav states
-        [navSearch, navAddSong, navFavorites].forEach(btn => {
+        [navHome, navSearch, navAddSong, navFavorites].forEach(btn => {
             if (btn) btn.classList.remove('active');
         });
 
-        // Clear list view state
-        clearListView();
+        // Clear list view state - but NOT when opening a song (preserve list context for navigation)
+        if (view !== 'song' && view !== 'work') {
+            clearListView();
+        }
 
         // Hide landing page when not on home view
         const isHome = view === 'home';
@@ -341,7 +341,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                navSearch?.classList.add('active');
+                navHome?.classList.add('active');
                 break;
             case 'search':
                 searchContainer?.classList.remove('hidden');
@@ -1624,6 +1624,7 @@ function init() {
     });
 
     // Navigation
+    navHome?.addEventListener('click', () => navigateTo('home'));
     navSearch?.addEventListener('click', () => navigateTo('search'));
     navAddSong?.addEventListener('click', () => navigateTo('add-song'));
     navFavorites?.addEventListener('click', () => navigateTo('favorites'));
@@ -1750,15 +1751,7 @@ function init() {
         }
     });
 
-    // Print button
-    printBtn?.addEventListener('click', () => {
-        const song = getCurrentSong();
-        if (song) trackExport(song.id, 'print');
-        openPrintView();
-    });
-
-    // Export dropdowns - toggle on button click
-    // Position dropdown below button (needed for position:fixed)
+    // Export dropdown - toggle on button click
     function positionDropdown(btn, dropdown) {
         if (!btn || !dropdown) return;
         const rect = btn.getBoundingClientRect();
@@ -1766,118 +1759,31 @@ function init() {
         dropdown.style.left = `${rect.left}px`;
     }
 
-    copyBtn?.addEventListener('click', (e) => {
+    exportBtn?.addEventListener('click', (e) => {
         e.stopPropagation();
-        downloadDropdown?.classList.add('hidden');
-        copyDropdown?.classList.toggle('hidden');
-        if (!copyDropdown?.classList.contains('hidden')) {
-            positionDropdown(copyBtn, copyDropdown);
-        }
-    });
-    downloadBtn?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        copyDropdown?.classList.add('hidden');
-        downloadDropdown?.classList.toggle('hidden');
-        if (!downloadDropdown?.classList.contains('hidden')) {
-            positionDropdown(downloadBtn, downloadDropdown);
+        exportDropdown?.classList.toggle('hidden');
+        if (!exportDropdown?.classList.contains('hidden')) {
+            positionDropdown(exportBtn, exportDropdown);
         }
     });
 
     // Export option clicks
-    copyDropdown?.querySelectorAll('.export-option[data-action]').forEach(btn => {
+    exportDropdown?.querySelectorAll('.export-option[data-action]').forEach(btn => {
         btn.addEventListener('click', () => {
-            handleExport(btn.dataset.action);
-            copyDropdown.classList.add('hidden');
+            const action = btn.dataset.action;
+            if (action === 'print') {
+                const song = getCurrentSong();
+                if (song) trackExport(song.id, 'print');
+                openPrintView();
+            } else {
+                handleExport(action);
+            }
+            exportDropdown.classList.add('hidden');
         });
     });
-    downloadDropdown?.querySelectorAll('.export-option[data-action]').forEach(btn => {
-        btn.addEventListener('click', () => {
-            handleExport(btn.dataset.action);
-            downloadDropdown.classList.add('hidden');
-        });
-    });
 
-    // Bottom sheet control elements
-    const sheetKeySelect = document.getElementById('sheet-key-select');
-    const sheetFontDecrease = document.getElementById('sheet-font-decrease');
-    const sheetFontIncrease = document.getElementById('sheet-font-increase');
-    const sheetChordMode = document.getElementById('sheet-chord-mode');
-    const sheetCompact = document.getElementById('sheet-compact');
-    const sheetNashville = document.getElementById('sheet-nashville');
-    const sheetTwocol = document.getElementById('sheet-twocol');
-    const sheetLabels = document.getElementById('sheet-labels');
-
-    // Populate bottom sheet with current values
-    function populateBottomSheet() {
-        // Populate key options
-        if (sheetKeySelect) {
-            const majorKeys = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'F', 'Bb', 'Eb', 'Ab', 'Db'];
-            const minorKeys = ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm'];
-            const keys = originalDetectedMode === 'minor' ? minorKeys : majorKeys;
-
-            sheetKeySelect.innerHTML = keys.map(k => {
-                const isDetected = k === originalDetectedKey;
-                const label = isDetected ? `${k} (original)` : k;
-                return `<option value="${k}" ${k === currentDetectedKey ? 'selected' : ''}>${label}</option>`;
-            }).join('');
-        }
-
-        // Sync checkbox states
-        if (sheetChordMode) sheetChordMode.value = chordDisplayMode;
-        if (sheetCompact) sheetCompact.checked = compactMode;
-        if (sheetNashville) sheetNashville.checked = nashvilleMode;
-        if (sheetTwocol) sheetTwocol.checked = twoColumnMode;
-        if (sheetLabels) sheetLabels.checked = showSectionLabels;
-
-        // Update font button states
-        if (sheetFontDecrease) sheetFontDecrease.disabled = fontSizeLevel <= -2;
-        if (sheetFontIncrease) sheetFontIncrease.disabled = fontSizeLevel >= 2;
-    }
-
-    // Bottom sheet control handlers
-    // Note: State setters now trigger reactive re-rendering via subscriptions in song-view.js
-    sheetKeySelect?.addEventListener('change', (e) => {
-        setCurrentDetectedKey(e.target.value);
-    });
-
-    sheetFontDecrease?.addEventListener('click', () => {
-        if (fontSizeLevel > -2) {
-            setFontSizeLevel(fontSizeLevel - 1);
-            populateBottomSheet();
-        }
-    });
-
-    sheetFontIncrease?.addEventListener('click', () => {
-        if (fontSizeLevel < 2) {
-            setFontSizeLevel(fontSizeLevel + 1);
-            populateBottomSheet();
-        }
-    });
-
-    sheetChordMode?.addEventListener('change', (e) => {
-        setChordDisplayMode(e.target.value);
-    });
-
-    sheetCompact?.addEventListener('change', (e) => {
-        setCompactMode(e.target.checked);
-    });
-
-    sheetNashville?.addEventListener('change', (e) => {
-        setNashvilleMode(e.target.checked);
-    });
-
-    sheetTwocol?.addEventListener('change', (e) => {
-        setTwoColumnMode(e.target.checked);
-    });
-
-    sheetLabels?.addEventListener('change', (e) => {
-        setShowSectionLabels(e.target.checked);
-    });
-
-    // Bottom sheet handlers
+    // Bottom sheet handlers (controls moved to quick controls bar, sheet now only has actions)
     function openBottomSheet() {
-        // Populate controls with current values before opening
-        populateBottomSheet();
         bottomSheet?.classList.remove('hidden');
         bottomSheetBackdrop?.classList.remove('hidden');
         trackBottomSheet('open');
@@ -1939,13 +1845,290 @@ function init() {
     // Make openBottomSheet available globally for song-view.js
     window.openBottomSheet = openBottomSheet;
 
+    // ==========================================================================
+    // Quick Controls Bar (dynamically rendered in song-view.js)
+    // ==========================================================================
+
+    // Quick controls bar state
+    let quickBarCollapsed = localStorage.getItem('quickBarCollapsed') === 'true';
+
+    // Key arrays for transposition
+    const QC_MAJOR_KEYS = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'F', 'Bb', 'Eb', 'Ab', 'Db'];
+    const QC_MINOR_KEYS = ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm'];
+
+    function setQuickBarCollapsed(collapsed) {
+        quickBarCollapsed = collapsed;
+        localStorage.setItem('quickBarCollapsed', collapsed);
+        const content = document.getElementById('quick-controls-content');
+        const arrow = document.querySelector('#qc-toggle .disclosure-arrow');
+        content?.classList.toggle('hidden', collapsed);
+        if (arrow) arrow.textContent = collapsed ? '▼' : '▲';
+
+        // Also toggle ABC fieldset visibility (for ABC notation songs)
+        const abcFieldset = document.querySelector('.render-options-fieldset');
+        abcFieldset?.classList.toggle('hidden', collapsed);
+    }
+
+    // Info bar collapse state
+    let infoBarCollapsed = localStorage.getItem('infoBarCollapsed') !== 'false'; // Default collapsed
+
+    function setInfoBarCollapsed(collapsed) {
+        infoBarCollapsed = collapsed;
+        localStorage.setItem('infoBarCollapsed', collapsed);
+        const content = document.getElementById('info-content');
+        const arrow = document.querySelector('#info-toggle .disclosure-arrow');
+        content?.classList.toggle('hidden', collapsed);
+        if (arrow) arrow.textContent = collapsed ? '▼' : '▲';
+    }
+
+    function closeAllQcDropdowns() {
+        document.getElementById('qc-key-dropdown')?.classList.add('hidden');
+        document.getElementById('qc-layout-dropdown')?.classList.add('hidden');
+    }
+
+    function positionKeyDropdown() {
+        const keySelect = document.getElementById('qc-key-select');
+        const keyDropdown = document.getElementById('qc-key-dropdown');
+        if (!keySelect || !keyDropdown) return;
+        const rect = keySelect.getBoundingClientRect();
+        keyDropdown.style.top = `${rect.bottom + 4}px`;
+        keyDropdown.style.left = `${Math.max(8, rect.left)}px`;
+    }
+
+    function transposeByInterval(semitones) {
+        if (!currentDetectedKey || !originalDetectedKey) return;
+        const keys = originalDetectedMode === 'minor' ? QC_MINOR_KEYS : QC_MAJOR_KEYS;
+        const currentIndex = keys.indexOf(currentDetectedKey);
+        if (currentIndex === -1) return;
+        const newIndex = (currentIndex + semitones + keys.length) % keys.length;
+        setCurrentDetectedKey(keys[newIndex]);
+    }
+
+    function populateKeyDropdown() {
+        const keyDropdown = document.getElementById('qc-key-dropdown');
+        if (!keyDropdown || !originalDetectedKey) {
+            if (keyDropdown) keyDropdown.innerHTML = '';
+            return;
+        }
+        const keys = originalDetectedMode === 'minor' ? QC_MINOR_KEYS : QC_MAJOR_KEYS;
+        keyDropdown.innerHTML = keys.map(key => {
+            const isActive = key === currentDetectedKey;
+            const isOriginal = key === originalDetectedKey;
+            return `<button class="${isActive ? 'active' : ''} ${isOriginal ? 'original' : ''}" data-key="${key}">${key}</button>`;
+        }).join('');
+    }
+
+    function updateQuickControls() {
+        // Re-query elements (they're dynamically created)
+        const content = document.getElementById('quick-controls-content');
+        const arrow = document.querySelector('#qc-toggle .disclosure-arrow');
+        const keyValue = document.getElementById('qc-key-value');
+        const nashville = document.getElementById('qc-nashville');
+        const compact = document.getElementById('qc-compact');
+        const twocol = document.getElementById('qc-twocol');
+        const sections = document.getElementById('qc-sections');
+        const chordMode = document.getElementById('qc-chord-mode');
+        const strum = document.getElementById('qc-strum');
+
+        // Update key display
+        if (keyValue) keyValue.textContent = currentDetectedKey || '—';
+
+        // Update Nashville toggle
+        nashville?.classList.toggle('active', nashvilleMode);
+
+        // Update layout checkboxes
+        if (compact) compact.checked = compactMode;
+        if (twocol) twocol.checked = twoColumnMode;
+        if (sections) sections.checked = showSectionLabels;
+        if (chordMode) chordMode.value = chordDisplayMode;
+
+        // Update Strum Machine visibility
+        const song = getCurrentSong ? getCurrentSong() : currentSong;
+        strum?.classList.toggle('hidden', !song?.strum_machine_url);
+
+        // Update controls collapse state - read from localStorage to stay in sync
+        const currentQuickBarCollapsed = localStorage.getItem('quickBarCollapsed') === 'true';
+        content?.classList.toggle('hidden', currentQuickBarCollapsed);
+        if (arrow) arrow.textContent = currentQuickBarCollapsed ? '▼' : '▲';
+
+        // Update info collapse state
+        const infoContent = document.getElementById('info-content');
+        const infoArrow = document.querySelector('#info-toggle .disclosure-arrow');
+        infoContent?.classList.toggle('hidden', infoBarCollapsed);
+        if (infoArrow) infoArrow.textContent = infoBarCollapsed ? '▼' : '▲';
+
+        // Repopulate key dropdown
+        populateKeyDropdown();
+    }
+
+    // Make updateQuickControls available globally
+    window.updateQuickControls = updateQuickControls;
+
+    // Event delegation for quick controls (elements are dynamically created)
+    songContent?.addEventListener('click', (e) => {
+        const target = e.target;
+
+        // Size controls
+        if (target.closest('#qc-size-down')) {
+            if (fontSizeLevel > -5) setFontSizeLevel(fontSizeLevel - 1);
+            return;
+        }
+        if (target.closest('#qc-size-up')) {
+            if (fontSizeLevel < 6) setFontSizeLevel(fontSizeLevel + 1);
+            return;
+        }
+
+        // Key transpose +/-
+        if (target.closest('#qc-key-down')) {
+            transposeByInterval(-1);
+            return;
+        }
+        if (target.closest('#qc-key-up')) {
+            transposeByInterval(1);
+            return;
+        }
+
+        // Key dropdown toggle
+        if (target.closest('#qc-key-select')) {
+            e.stopPropagation();
+            const keyDropdown = document.getElementById('qc-key-dropdown');
+            const wasHidden = keyDropdown?.classList.contains('hidden');
+            closeAllQcDropdowns();
+            if (wasHidden) {
+                keyDropdown?.classList.remove('hidden');
+                positionKeyDropdown();
+            }
+            return;
+        }
+
+        // Key dropdown selection
+        if (target.closest('#qc-key-dropdown button')) {
+            e.stopPropagation();
+            const key = target.closest('button').dataset.key;
+            if (key) {
+                setCurrentDetectedKey(key);
+                document.getElementById('qc-key-dropdown')?.classList.add('hidden');
+            }
+            return;
+        }
+
+        // Layout dropdown toggle
+        if (target.closest('#qc-layout-btn')) {
+            e.stopPropagation();
+            const layoutDropdown = document.getElementById('qc-layout-dropdown');
+            const wasHidden = layoutDropdown?.classList.contains('hidden');
+            closeAllQcDropdowns();
+            if (wasHidden) {
+                layoutDropdown?.classList.remove('hidden');
+            }
+            return;
+        }
+
+        // Nashville toggle
+        if (target.closest('#qc-nashville')) {
+            setNashvilleMode(!nashvilleMode);
+            return;
+        }
+
+        // Strum Machine
+        if (target.closest('#qc-strum')) {
+            const strumBtn = document.getElementById('qc-strum');
+            const url = strumBtn?.dataset.url;
+            if (url) window.open(url, '_blank');
+            return;
+        }
+
+        // Toggle controls collapse
+        if (target.closest('#qc-toggle')) {
+            setQuickBarCollapsed(!quickBarCollapsed);
+            return;
+        }
+
+        // Toggle info collapse
+        if (target.closest('#info-toggle')) {
+            setInfoBarCollapsed(!infoBarCollapsed);
+            return;
+        }
+
+        // Expand/collapse artists list
+        if (target.closest('#artists-expand')) {
+            const expandBtn = document.getElementById('artists-expand');
+            const collapseBtn = document.getElementById('artists-collapse');
+            const full = document.getElementById('artists-full');
+            expandBtn?.classList.add('hidden');
+            full?.classList.remove('hidden');
+            full?.classList.add('visible');
+            collapseBtn?.classList.remove('hidden');
+            return;
+        }
+        if (target.closest('#artists-collapse')) {
+            const expandBtn = document.getElementById('artists-expand');
+            const collapseBtn = document.getElementById('artists-collapse');
+            const full = document.getElementById('artists-full');
+            collapseBtn?.classList.add('hidden');
+            full?.classList.add('hidden');
+            full?.classList.remove('visible');
+            expandBtn?.classList.remove('hidden');
+            return;
+        }
+
+        // Add to list button (in title row)
+        if (target.closest('#add-to-list-btn')) {
+            e.stopPropagation();
+            const song = getCurrentSong ? getCurrentSong() : currentSong;
+            const btn = document.getElementById('add-to-list-btn');
+            if (song && typeof showListPicker === 'function') {
+                showListPicker(song.id, btn, {
+                    onUpdate: () => updateTriggerButton(btn, song.id)
+                });
+            }
+            return;
+        }
+
+        // Focus button (in title row)
+        if (target.closest('#focus-btn')) {
+            toggleFullscreen();
+            return;
+        }
+    });
+
+    // Change event delegation for checkboxes and selects
+    songContent?.addEventListener('change', (e) => {
+        const target = e.target;
+
+        if (target.id === 'qc-compact') {
+            setCompactMode(target.checked);
+            return;
+        }
+        if (target.id === 'qc-twocol') {
+            setTwoColumnMode(target.checked);
+            return;
+        }
+        if (target.id === 'qc-sections') {
+            setShowSectionLabels(target.checked);
+            return;
+        }
+        if (target.id === 'qc-chord-mode') {
+            setChordDisplayMode(target.value);
+            return;
+        }
+    });
+
     // Close dropdowns when clicking outside
     document.addEventListener('click', (e) => {
-        if (!copyBtn?.contains(e.target) && !copyDropdown?.contains(e.target)) {
-            copyDropdown?.classList.add('hidden');
+        if (!exportBtn?.contains(e.target) && !exportDropdown?.contains(e.target)) {
+            exportDropdown?.classList.add('hidden');
         }
-        if (!downloadBtn?.contains(e.target) && !downloadDropdown?.contains(e.target)) {
-            downloadDropdown?.classList.add('hidden');
+        // Close quick controls dropdowns (elements are dynamically created)
+        const qcKeySelect = document.getElementById('qc-key-select');
+        const qcKeyDropdown = document.getElementById('qc-key-dropdown');
+        const qcLayoutBtn = document.getElementById('qc-layout-btn');
+        const qcLayoutDropdown = document.getElementById('qc-layout-dropdown');
+        if (!qcKeySelect?.contains(e.target) && !qcKeyDropdown?.contains(e.target)) {
+            qcKeyDropdown?.classList.add('hidden');
+        }
+        if (!qcLayoutBtn?.contains(e.target) && !qcLayoutDropdown?.contains(e.target)) {
+            qcLayoutDropdown?.classList.add('hidden');
         }
     });
 

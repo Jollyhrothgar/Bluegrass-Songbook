@@ -975,6 +975,443 @@ h1 {
     background: var(--bg-secondary);
 }
 
+/* ==========================================================================
+   Quick Controls Section (matches Tags section pattern)
+   ========================================================================== */
+
+/* Disclosure toggle buttons in header */
+.disclosure-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.disclosure-btn:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.disclosure-arrow {
+    font-size: 0.7rem;
+}
+
+/* Song title row with Lists button */
+.song-title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.add-to-list-btn,
+.focus-btn {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.add-to-list-btn:hover,
+.focus-btn:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Info disclosure content */
+.info-content {
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 1rem;
+}
+
+.info-content.hidden {
+    display: none;
+}
+
+.info-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-item {
+    font-size: 0.9rem;
+}
+
+.info-label {
+    color: var(--text-muted);
+}
+
+/* Artists list with expand */
+.artists-list {
+    cursor: default;
+}
+
+.artists-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: var(--accent);
+    cursor: pointer;
+}
+
+.artists-toggle:hover {
+    text-decoration: underline;
+}
+
+.artists-more {
+    font-size: 0.8rem;
+}
+
+.artists-hidden {
+    display: none;
+}
+
+.artists-hidden.visible {
+    display: inline;
+}
+
+/* Info tags section */
+.info-tags {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.info-tags-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    padding-top: 0.15rem;
+}
+
+/* Source link at bottom */
+.song-source {
+    padding: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.source-label {
+    color: var(--text-muted);
+}
+
+/* Collapsible controls content area */
+.quick-controls-content {
+    border-bottom: 1px solid var(--border);
+    position: relative;
+}
+
+.quick-controls-content.hidden {
+    display: none;
+}
+
+/* Controls row */
+.qc-controls-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Control groups - segmented button style */
+.qc-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg);
+    overflow: hidden;
+}
+
+/* Small square buttons for +/- */
+.qc-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+}
+
+.qc-btn:hover {
+    background: var(--bg-tertiary);
+}
+
+.qc-btn:active {
+    transform: scale(0.95);
+}
+
+/* Divider between grouped elements */
+.qc-group > *:not(:last-child) {
+    border-right: 1px solid var(--border);
+}
+
+/* Label between buttons (Aa) */
+.qc-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0 0.5rem;
+    min-width: 28px;
+    text-align: center;
+    color: var(--text-secondary);
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+}
+
+/* Key selector button (shows current key with dropdown arrow) */
+.qc-key-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    height: 32px;
+    border: none;
+    border-radius: 0;
+    background: var(--bg-secondary);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    min-width: 55px;
+    justify-content: center;
+    transition: background 0.15s;
+}
+
+.qc-key-btn:hover {
+    background: var(--bg-tertiary);
+}
+
+.qc-dropdown-arrow {
+    font-size: 0.6rem;
+    opacity: 0.6;
+    margin-left: 0.15rem;
+}
+
+/* Dropdown button (Layout) */
+.qc-dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.4rem 0.75rem;
+    height: 32px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.qc-dropdown-btn:hover {
+    background: var(--bg-tertiary);
+}
+
+/* Dropdown container */
+.qc-dropdown-group {
+    position: relative;
+}
+
+/* Dropdown panels */
+.qc-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+    padding: 0.5rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    min-width: 180px;
+}
+
+/* Key dropdown - grid layout for all keys */
+.qc-key-dropdown {
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.25rem;
+    min-width: 220px;
+    padding: 0.5rem;
+}
+
+.qc-key-dropdown button {
+    padding: 0.5rem 0.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.15s, transform 0.1s;
+}
+
+.qc-key-dropdown button:hover {
+    background: var(--bg-tertiary);
+}
+
+.qc-key-dropdown button.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.qc-key-dropdown button.original::after {
+    content: '*';
+    margin-left: 2px;
+    font-size: 0.7rem;
+}
+
+/* Checkbox items in dropdown */
+.qc-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.25rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    border-radius: var(--radius-sm);
+    transition: background 0.15s;
+}
+
+.qc-checkbox:hover {
+    background: var(--bg-secondary);
+}
+
+.qc-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent);
+}
+
+.qc-dropdown-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 0.5rem 0;
+}
+
+.qc-dropdown-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    font-size: 0.85rem;
+}
+
+.qc-select {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+/* Toggle button (Nashville) */
+.qc-toggle-btn {
+    padding: 0.4rem 0.75rem;
+    height: 32px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.qc-toggle-btn:hover {
+    background: var(--bg-tertiary);
+}
+
+.qc-toggle-btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+/* Icon button (Strum Machine) */
+.qc-icon-btn {
+    padding: 0.25rem;
+    height: 32px;
+    width: 32px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+}
+
+.qc-icon-btn:hover {
+    background: var(--bg-tertiary);
+}
+
+.qc-strum-icon {
+    width: 22px;
+    height: 22px;
+}
+
+/* Quick controls responsive */
+@media (max-width: 600px) {
+    .qc-content {
+        gap: 0.4rem;
+    }
+
+    .qc-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+    }
+
+    .qc-key-btn,
+    .qc-dropdown-btn,
+    .qc-toggle-btn {
+        height: 28px;
+        font-size: 0.8rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .qc-icon-btn {
+        width: 28px;
+        height: 28px;
+    }
+
+    .qc-strum-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
 
 /* Bottom sheet - works on all screen sizes when explicitly opened */
 .bottom-sheet-backdrop {
@@ -1175,22 +1612,6 @@ h1 {
 
 .header-controls {
     flex-shrink: 0;
-}
-
-.controls-btn {
-    background: var(--accent);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: opacity 0.2s;
-}
-
-.controls-btn:hover {
-    opacity: 0.9;
 }
 
 /* Flag button */
@@ -3141,6 +3562,22 @@ mark {
     background: var(--border);
 }
 
+.export-section-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    padding: 0.5rem 0.75rem 0.25rem;
+    margin-top: 0.25rem;
+    border-top: 1px solid var(--border);
+}
+
+.export-section-label:first-child {
+    border-top: none;
+    margin-top: 0;
+}
+
 /* ============================================
    FEEDBACK DROPDOWN
    ============================================ */
@@ -3931,6 +4368,128 @@ mark {
    FULLSCREEN / FOCUS MODE
    ============================================ */
 
+/* Focus header - hidden by default, shown in fullscreen */
+.focus-header {
+    display: none;
+}
+
+body.fullscreen-mode .focus-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.focus-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.focus-nav-btn:hover {
+    background: var(--bg-secondary);
+}
+
+.focus-nav-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.focus-btn-label {
+    font-size: 0.85rem;
+}
+
+.focus-title-area {
+    flex: 1;
+    text-align: center;
+    min-width: 0;
+}
+
+.focus-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.focus-position {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Fixed corner nav buttons for list navigation in fullscreen */
+.focus-corner-nav {
+    display: none;  /* Hidden by default */
+    position: fixed;
+    bottom: 2rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border);
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background 0.15s ease, transform 0.15s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.focus-corner-nav:hover {
+    background: var(--bg-tertiary);
+    transform: scale(1.05);
+}
+
+.focus-corner-nav:active {
+    transform: scale(0.95);
+}
+
+.focus-corner-nav:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.focus-corner-nav:disabled:hover {
+    transform: none;
+    background: var(--bg-secondary);
+}
+
+.focus-corner-prev {
+    left: 1.5rem;
+}
+
+.focus-corner-next {
+    right: 1.5rem;
+}
+
+.corner-nav-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Show corner nav buttons in fullscreen with list context */
+body.fullscreen-mode.has-list-context .focus-corner-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Fullscreen mode - hide everything except song */
 body.fullscreen-mode .sidebar,
 body.fullscreen-mode .header,
@@ -3938,7 +4497,9 @@ body.fullscreen-mode .search-container,
 body.fullscreen-mode #results,
 body.fullscreen-mode .song-view-header,
 body.fullscreen-mode .song-tags-section,
-body.fullscreen-mode .song-meta {
+body.fullscreen-mode .song-meta,
+body.fullscreen-mode .song-header,
+body.fullscreen-mode .info-content {
     display: none !important;
 }
 
@@ -3956,7 +4517,7 @@ body.fullscreen-mode .song-view {
     z-index: 1000;
     background: var(--bg);
     overflow-y: auto;
-    padding-bottom: 80px; /* Space for nav bar */
+    padding-bottom: 0;
 }
 
 body.fullscreen-mode .song-content {
@@ -3964,38 +4525,25 @@ body.fullscreen-mode .song-content {
     margin: 0 auto;
     border: none;
     border-radius: 0;
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
+    padding-top: 0;
 }
 
-body.fullscreen-mode .song-header {
-    position: sticky;
-    top: 0;
-    background: var(--bg);
-    padding: 1rem 1rem 0.5rem;
-    margin: -1.25rem -1.25rem 1rem;
-    border-bottom: 1px solid var(--border);
-    z-index: 10;
-}
-
-body.fullscreen-mode .song-title {
-    font-size: 1.5rem;
-}
-
-body.fullscreen-mode .header-controls {
-    /* Hidden in fullscreen - use bottom sheet instead */
-    display: none;
-}
-
-/* Show nav bar in ALL fullscreen modes (not just with list context) */
-body.fullscreen-mode .song-nav-bar {
+/* Show quick controls in fullscreen mode */
+body.fullscreen-mode .quick-controls-content {
     display: flex !important;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--border);
 }
 
-/* Hide list-specific elements when no list context */
-body.fullscreen-mode .song-nav-bar:not(.has-list-context) .nav-info,
-body.fullscreen-mode .song-nav-bar:not(.has-list-context) #nav-prev-btn,
-body.fullscreen-mode .song-nav-bar:not(.has-list-context) #nav-next-btn {
-    display: none;
+/* Allow hiding quick controls in fullscreen mode via toggle */
+body.fullscreen-mode .quick-controls-content.hidden {
+    display: none !important;
+}
+
+/* Hide bottom nav bar in fullscreen - we use top header now */
+body.fullscreen-mode .song-nav-bar {
+    display: none !important;
 }
 
 /* Bottom navigation bar */
@@ -4455,6 +5003,22 @@ body.fullscreen-mode::after {
    WorkView Styles
    ============================================ */
 
+/* Work header container - matches song-view header pattern */
+.work-header-container {
+    position: relative;
+}
+
+/* Work controls disclosure content */
+.work-controls-content {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.work-controls-content.hidden {
+    display: none;
+}
+
+/* Legacy work-header (kept for compatibility) */
 .work-header {
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
@@ -4631,10 +5195,17 @@ body.fullscreen-mode::after {
    ============================================ */
 
 .tablature-container {
+    --tab-scale: 1;
     background: var(--bg);
     padding: 1rem;
     border-radius: 8px;
     overflow-x: auto;
+}
+
+/* Tablature scaling via Aa control */
+.tablature-container .stave-row svg {
+    transform: scale(var(--tab-scale));
+    transform-origin: top left;
 }
 
 .track-info {

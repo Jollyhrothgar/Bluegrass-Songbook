@@ -851,9 +851,11 @@ function showListNotFound() {
         resultsDivEl.innerHTML = '<p class="no-results">This list doesn\'t exist or has been deleted.</p>';
     }
 
-    // Show search container/results
+    // Show search container/results, hide landing page
     const searchContainer = document.querySelector('.search-container');
     const editorPanel = document.getElementById('editor-panel');
+    const landingPage = document.getElementById('landing-page');
+    if (landingPage) landingPage.classList.add('hidden');
     if (searchContainer) searchContainer.classList.remove('hidden');
     if (resultsDivEl) resultsDivEl.classList.remove('hidden');
     if (editorPanel) editorPanel.classList.add('hidden');
@@ -908,9 +910,11 @@ function renderListViewUI(listName, songIds, isOwner) {
         renderResultsFn(listSongs, '');
     }
 
-    // Show search container/results
+    // Show search container/results, hide landing page
     const searchContainer = document.querySelector('.search-container');
     const editorPanel = document.getElementById('editor-panel');
+    const landingPage = document.getElementById('landing-page');
+    if (landingPage) landingPage.classList.add('hidden');
     if (searchContainer) searchContainer.classList.remove('hidden');
     if (resultsDivEl) resultsDivEl.classList.remove('hidden');
     if (editorPanel) editorPanel.classList.add('hidden');
