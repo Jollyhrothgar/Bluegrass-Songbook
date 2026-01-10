@@ -252,17 +252,17 @@ async function getOrCreateFavoritesList(favorites) {
 // USER LISTS API
 // ============================================
 
-// Fetch all user lists with their songs
+// Fetch all lists the user owns (checks owners array)
 async function fetchCloudLists() {
     if (!supabaseClient || !currentUser) {
         return { data: [], error: null };
     }
 
-    // Fetch lists
+    // Fetch lists where user is in owners array
     const { data: lists, error: listsError } = await supabaseClient
         .from('user_lists')
-        .select('id, name, position')
-        .eq('user_id', currentUser.id)
+        .select('id, name, position, owners, orphaned_at')
+        .contains('owners', [currentUser.id])
         .order('position', { ascending: true });
 
     if (listsError) {
@@ -507,6 +507,228 @@ async function copyListToOwn(listId, newName) {
         },
         error: null
     };
+}
+
+// ============================================
+// LIST FOLLOWING API
+// ============================================
+
+// Fetch all lists the user follows (but doesn't own)
+async function fetchFollowedLists() {
+    if (!supabaseClient || !currentUser) {
+        return { data: [], error: null };
+    }
+
+    // Fetch followed list IDs
+    const { data: follows, error: followsError } = await supabaseClient
+        .from('list_followers')
+        .select('list_id')
+        .eq('user_id', currentUser.id);
+
+    if (followsError) {
+        console.error('Error fetching followed lists:', followsError);
+        return { data: [], error: followsError };
+    }
+
+    if (!follows || follows.length === 0) {
+        return { data: [], error: null };
+    }
+
+    const listIds = follows.map(f => f.list_id);
+
+    // Fetch the actual list data
+    const { data: lists, error: listsError } = await supabaseClient
+        .from('user_lists')
+        .select('id, name, position, owners, orphaned_at')
+        .in('id', listIds);
+
+    if (listsError) {
+        console.error('Error fetching followed list details:', listsError);
+        return { data: [], error: listsError };
+    }
+
+    // Fetch all list items
+    const { data: items, error: itemsError } = await supabaseClient
+        .from('user_list_items')
+        .select('list_id, song_id, position')
+        .in('list_id', listIds)
+        .order('position', { ascending: true });
+
+    if (itemsError) {
+        console.error('Error fetching followed list items:', itemsError);
+        return { data: lists.map(l => ({ ...l, songs: [], isFollowed: true })), error: itemsError };
+    }
+
+    // Group items by list
+    const itemsByList = {};
+    items.forEach(item => {
+        if (!itemsByList[item.list_id]) {
+            itemsByList[item.list_id] = [];
+        }
+        itemsByList[item.list_id].push(item.song_id);
+    });
+
+    // Combine lists with their songs and mark as followed
+    const result = lists.map(list => ({
+        id: list.id,
+        name: list.name,
+        position: list.position,
+        owners: list.owners || [],
+        orphaned_at: list.orphaned_at,
+        songs: itemsByList[list.id] || [],
+        isFollowed: true,
+        isOrphaned: !!list.orphaned_at
+    }));
+
+    return { data: result, error: null };
+}
+
+// Follow a list
+async function followList(listId) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    const { error } = await supabaseClient
+        .from('list_followers')
+        .insert({
+            list_id: listId,
+            user_id: currentUser.id
+        });
+
+    // Ignore duplicate key error (already following)
+    if (error && error.code === '23505') {
+        return { error: null };
+    }
+
+    return { error };
+}
+
+// Unfollow a list
+async function unfollowList(listId) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    const { error } = await supabaseClient
+        .from('list_followers')
+        .delete()
+        .eq('list_id', listId)
+        .eq('user_id', currentUser.id);
+
+    return { error };
+}
+
+// ============================================
+// LIST OWNERSHIP API
+// ============================================
+
+// Generate an invite link for co-ownership
+async function generateListInvite(listId) {
+    if (!supabaseClient || !currentUser) {
+        return { data: null, error: { message: 'Not logged in' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('generate_list_invite', {
+            p_list_id: listId
+        });
+
+        if (error) {
+            console.error('Error generating invite:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error generating invite:', err);
+        return { data: null, error: err };
+    }
+}
+
+// Claim an invite token to become co-owner
+async function claimListInvite(token) {
+    if (!supabaseClient || !currentUser) {
+        return { data: null, error: { message: 'Not logged in' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('claim_list_invite', {
+            p_token: token
+        });
+
+        if (error) {
+            console.error('Error claiming invite:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error claiming invite:', err);
+        return { data: null, error: err };
+    }
+}
+
+// Leave a list (remove self as owner)
+async function leaveList(listId) {
+    if (!supabaseClient || !currentUser) {
+        return { data: null, error: { message: 'Not logged in' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('remove_list_owner', {
+            p_list_id: listId
+        });
+
+        if (error) {
+            console.error('Error leaving list:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error leaving list:', err);
+        return { data: null, error: err };
+    }
+}
+
+// Claim an orphaned list (Thunderdome!)
+async function claimOrphanedList(listId) {
+    if (!supabaseClient || !currentUser) {
+        return { data: null, error: { message: 'Not logged in' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('claim_orphaned_list', {
+            p_list_id: listId
+        });
+
+        if (error) {
+            console.error('Error claiming orphaned list:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error claiming orphaned list:', err);
+        return { data: null, error: err };
+    }
 }
 
 // Sync local lists to cloud (merge strategy)
@@ -937,7 +1159,7 @@ window.SupabaseAuth = {
     removeCloudFavorite,
     syncFavoritesToCloud,
     getOrCreateFavoritesList,
-    // Lists
+    // Lists (owned)
     fetchCloudLists,
     fetchPublicList,
     copyListToOwn,
@@ -947,6 +1169,15 @@ window.SupabaseAuth = {
     addToCloudList,
     removeFromCloudList,
     syncListsToCloud,
+    // Lists (following)
+    fetchFollowedLists,
+    followList,
+    unfollowList,
+    // Lists (ownership)
+    generateListInvite,
+    claimListInvite,
+    leaveList,
+    claimOrphanedList,
     // Votes (song versions)
     fetchGroupVotes,
     fetchUserVotes,
