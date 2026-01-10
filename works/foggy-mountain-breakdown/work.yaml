@@ -15,7 +15,7 @@ parts:
     label: "Mandolin Break"
     default: true
     provenance:
-      source: tef-import
-      source_file: mandolin_foggy_mountain_breakdown.tef
+      source: tef-uploads
+      source_file: uploads/mandolin_foggy_mountain_breakdown.tef
       author: "Joe Carr - Merlin's Magical Mandolin Method (1978)"
       imported_at: 2025-01-02
