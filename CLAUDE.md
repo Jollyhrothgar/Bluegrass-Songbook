@@ -277,11 +277,21 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 
 - **17,650+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
 - **Works system**: Each song is a "work" with multiple parts (lead sheet, tablature, ABC notation)
-- **Tablature**: Tab rendering with playback for fiddle tunes and instrumentals
-- **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - 93% coverage via MusicBrainz + harmonic analysis
+- **Tablature**: Banjo Hangout tabs with TEF→OTF parsing, playback, track mixer for multi-instrument arrangements
+- **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - 93% coverage via MusicBrainz + grassiness scoring
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
 - **Song versions**: Multiple arrangements with voting (infrastructure ready)
 - **URL stability**: Work URLs (`#work/{slug}`) are permanent; legacy `#song/{id}` URLs redirect
+
+**Recent additions (Jan 2026):**
+- **Strum Machine integration**: 605+ songs with practice backing tracks
+- **Quick controls bar**: One-click access to key/size/layout during practice
+- **Focus mode**: Distraction-free full-screen song view
+- **Covering artists**: Shows which bluegrass legends recorded each song
+- **Multi-owner lists**: Collaborative list curation with follow/unfollow
+- **Thunderdome**: Claim abandoned lists from inactive users
+- **Frictionless feedback**: Report issues and request songs without GitHub account
+- **Submitter attribution**: Tracks who submitted content ("Rando Calrissian" for anonymous)
 
 **What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
 

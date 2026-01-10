@@ -16,9 +16,13 @@ docs/
 │   ├── work-view.js    # Work display with parts, tablature integration
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
 │   ├── tags.js         # Tag dropdown, filtering, instrument tags
-│   ├── lists.js        # User lists (including Favorites)
+│   ├── lists.js        # User lists, favorites, multi-owner, Thunderdome
 │   ├── list-picker.js  # List picker dropdown component
 │   ├── editor.js       # Song editor, ChordPro conversion
+│   ├── flags.js        # Report Issue feature (creates GitHub issues)
+│   ├── song-request.js # Song request feature (frictionless)
+│   ├── collections.js  # Landing page collection definitions
+│   ├── analytics.js    # Behavioral analytics tracking
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
 │   ├── supabase-auth.js # Auth, cloud sync, voting
 │   ├── renderers/      # Part renderers (tablature, etc.)
@@ -403,3 +407,89 @@ Handles authentication and cloud sync. Key exports:
 | `fetchGroupVotes(groupId)` | Get vote counts for versions |
 | `castVote(songId, groupId)` | Vote for a song version |
 | `removeVote(songId)` | Remove user's vote |
+
+## Recent Features (Jan 2026)
+
+### Focus Mode
+
+Full-screen distraction-free view for practicing. Toggle via button in song view or keyboard shortcut.
+
+- Hides header, sidebar, and search
+- Shows minimal navigation (Song button to exit)
+- Quick controls bar remains visible
+- ESC key exits focus mode (closes bottom sheet first if open)
+
+### Quick Controls Bar
+
+Always-visible controls below song title for one-click access during practice:
+
+```
+[(−) Aa (+)]  [(−) G ▼ (+)]  [Layout ▼]  [Nashville]  [🎵]  [▲]
+```
+
+- **Size**: Decrease/increase font size
+- **Key**: Transpose down/up, dropdown for key selection
+- **Layout**: Two columns, section labels, chord display mode
+- **Nashville**: Toggle Nashville numbers
+- **Strum Machine**: Opens backing track (if available)
+- **Collapse**: Hide/show the bar (preference saved)
+
+### Strum Machine Integration
+
+Songs with matching Strum Machine backing tracks show a practice button.
+
+- Matching done via title normalization (handles "The", parenthetical suffixes)
+- Opens Strum Machine in new tab with current key
+- 605+ songs matched
+- Cache in `docs/data/strum_machine_cache.json`
+
+### Covering Artists
+
+Songs display which bluegrass artists have recorded them (from grassiness scoring).
+
+- Shown in song metadata below title
+- Sorted by artist tier (founding artists first)
+- Searchable via `covering:artist name` filter
+- Data from `grassiness_scores.json`
+
+### Report Issue / Flags (`flags.js`)
+
+Users can report song issues (wrong chord, lyric error, etc.) without GitHub account.
+
+- Modal with radio options for issue type
+- Optional description field
+- Creates GitHub issue via Supabase edge function
+- Attribution tracks who submitted (logged-in user or "Rando Calrissian")
+
+### Song Request (`song-request.js`)
+
+Frictionless song requests without GitHub account.
+
+- Modal with title, artist, details fields
+- Creates GitHub issue via Supabase edge function
+- Available from bounty page and `#request-song` hash
+
+### Multi-Owner Lists & Thunderdome
+
+Lists can have multiple owners for collaborative curation.
+
+- **Follow/Unfollow**: Follow someone else's list to see it in your sidebar
+- **Thunderdome**: Claim abandoned lists (owner inactive 30+ days)
+- **Shareable URLs**: `#list/{id}` URLs work for any public list
+- Lists stored in Supabase `song_lists` table with `owner_ids` array
+
+### Shareable Lists
+
+Lists can be shared via URL and viewed by anyone.
+
+- `#list/{list-id}` - View a specific list
+- `#favorites/{user-id}` - View someone's favorites
+- Public by default, owner can make private
+
+### Submitter Attribution
+
+All user-submitted content tracks who submitted it.
+
+- Uses logged-in user's display name or email
+- Falls back to "Rando Calrissian" for anonymous submissions
+- Included in GitHub issue body for submissions, corrections, flags, requests
