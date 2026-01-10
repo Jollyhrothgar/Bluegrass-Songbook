@@ -3,7 +3,9 @@
 Process a song submission from a GitHub issue.
 
 Reads the issue body from ISSUE_BODY environment variable,
-extracts the ChordPro content, and saves it to sources/manual/parsed/
+extracts the ChordPro content, and:
+1. Saves to sources/manual/parsed/ (raw archive)
+2. Publishes to works/{slug}/ for immediate search visibility
 
 Adds submission provenance metadata:
   {meta: x_source manual}
@@ -17,6 +19,7 @@ import re
 import sys
 from datetime import date
 from pathlib import Path
+import yaml
 
 
 def extract_chordpro(issue_body: str) -> str | None:
@@ -82,6 +85,18 @@ def add_submission_metadata(content: str, author: str, issue_number: str) -> str
     return '\n'.join(lines)
 
 
+def generate_slug(title: str) -> str:
+    """Generate a URL-safe slug from the song title."""
+    # Lowercase, replace spaces with hyphens, remove special chars
+    slug = title.lower().strip()
+    slug = re.sub(r'[^a-z0-9\s-]', '', slug)
+    slug = re.sub(r'[\s_]+', '-', slug)
+    slug = re.sub(r'-+', '-', slug)
+    slug = slug.strip('-')
+    # Limit length
+    return slug[:50]
+
+
 def generate_filename(title: str) -> str:
     """Generate a safe filename from the song title."""
     # Remove special characters, keep only alphanumeric
@@ -89,6 +104,84 @@ def generate_filename(title: str) -> str:
     # Limit length
     safe_name = safe_name[:50]
     return f"{safe_name}.pro"
+
+
+def extract_key_from_chordpro(content: str) -> str | None:
+    """Extract key from ChordPro content."""
+    match = re.search(r'\{(?:key|meta:\s*key):\s*([A-G][#b]?m?)\}', content, re.IGNORECASE)
+    if match:
+        return match.group(1)
+    return None
+
+
+def extract_composer_from_chordpro(content: str) -> str | None:
+    """Extract composer from ChordPro content."""
+    match = re.search(r'\{(?:composer|meta:\s*composer):\s*(.+?)\}', content, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+    return None
+
+
+def publish_to_works(slug: str, title: str, artist: str | None, chordpro: str,
+                     author: str, issue_number: str, repo_root: Path) -> Path:
+    """Publish the song to works/ for immediate search visibility."""
+    today = date.today().isoformat()
+
+    # Extract additional metadata from ChordPro
+    key = extract_key_from_chordpro(chordpro)
+    composer = extract_composer_from_chordpro(chordpro)
+
+    # Build work.yaml structure
+    work_data = {
+        'id': slug,
+        'title': title,
+    }
+
+    if artist:
+        work_data['artist'] = artist
+    if composer:
+        work_data['composers'] = [composer]
+    if key:
+        work_data['default_key'] = key
+
+    work_data['tags'] = []  # Will be enriched later
+    work_data['parts'] = [{
+        'type': 'lead-sheet',
+        'format': 'chordpro',
+        'file': 'lead-sheet.pro',
+        'default': True,
+        'provenance': {
+            'source': 'manual',
+            'submitted_by': f'github:{author}',
+            'submitted_at': today,
+            'github_issue': int(issue_number) if issue_number.isdigit() else None,
+        }
+    }]
+
+    # Create work directory
+    work_dir = repo_root / 'works' / slug
+
+    # Handle collision - add suffix if needed
+    counter = 1
+    original_slug = slug
+    while work_dir.exists():
+        slug = f"{original_slug}-{counter}"
+        work_dir = repo_root / 'works' / slug
+        work_data['id'] = slug
+        counter += 1
+
+    work_dir.mkdir(parents=True, exist_ok=True)
+
+    # Write work.yaml
+    work_yaml_path = work_dir / 'work.yaml'
+    with open(work_yaml_path, 'w') as f:
+        yaml.dump(work_data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+
+    # Write lead-sheet.pro
+    lead_sheet_path = work_dir / 'lead-sheet.pro'
+    lead_sheet_path.write_text(chordpro + '\n')
+
+    return work_dir
 
 
 def main():
@@ -124,34 +217,43 @@ def main():
         else:
             title = f"submission_{issue_number}"
 
-    # Generate filename
+    # Get artist from metadata
+    artist = metadata.get('artist')
+
+    # Generate slug and filename
+    slug = generate_slug(title)
     filename = generate_filename(title)
 
-    # Determine output path
+    # Determine paths
     script_dir = Path(__file__).parent
     repo_root = script_dir.parent.parent
-    output_dir = repo_root / 'sources' / 'manual' / 'parsed'
-    output_path = output_dir / filename
+
+    # 1. Save to sources/manual/parsed/ (provenance archive)
+    sources_dir = repo_root / 'sources' / 'manual' / 'parsed'
+    sources_path = sources_dir / filename
 
     # Check for existing file - add suffix if needed
     counter = 1
     original_filename = filename
-    while output_path.exists():
+    while sources_path.exists():
         base = original_filename.rsplit('.', 1)[0]
         filename = f"{base}_{counter}.pro"
-        output_path = output_dir / filename
+        sources_path = sources_dir / filename
         counter += 1
 
-    # Save the file
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(chordpro + '\n')
+    sources_dir.mkdir(parents=True, exist_ok=True)
+    sources_path.write_text(chordpro + '\n')
+    print(f"Archived to: {sources_path}")
 
-    print(f"Created: {output_path}")
+    # 2. Publish to works/ (immediate search visibility)
+    work_dir = publish_to_works(slug, title, artist, chordpro, issue_author, issue_number, repo_root)
+    print(f"Published to: {work_dir}")
+
     print(f"Title: {title}")
-    print(f"Filename: {filename}")
+    print(f"Slug: {slug}")
 
-    # Write filename to temp file for the workflow to read
-    Path('/tmp/song_filename.txt').write_text(filename)
+    # Write slug to temp file for the workflow to read
+    Path('/tmp/song_filename.txt').write_text(slug)
 
 
 if __name__ == '__main__':

@@ -39,13 +39,14 @@ jobs:
       - name: Rebuild search index
         run: |
           pip install pyyaml beautifulsoup4
-          python scripts/lib/build_index.py --no-tags
+          python scripts/lib/build_works_index.py --no-tags
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add sources/manual/parsed/
+          git add works/
           git add docs/data/index.jsonl
           git diff --staged --quiet || git commit -m "Add song from submission #${{ github.event.issue.number }}
 
@@ -72,7 +73,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `✅ **Song added to the songbook!**\n\nFile: \`sources/manual/parsed/${filename}\`\n\nThe search index has been rebuilt. The song should appear in search shortly.\n\nThank you for your contribution!`
+              body: `✅ **Song added to the songbook!**\n\nPublished to: \`works/${filename}/\`\n\nThe song is now live and searchable.\n\nThank you for your contribution!`
             });
 
             await github.rest.issues.update({
