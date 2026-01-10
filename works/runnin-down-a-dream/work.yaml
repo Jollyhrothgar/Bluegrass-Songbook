@@ -1,0 +1,14 @@
+id: runnin-down-a-dream
+title: Runnin Down A Dream
+artist: Tom Petty
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: manual
+    submitted_by: github:Jollyhrothgar
+    submitted_at: '2026-01-10'
+    github_issue: 139
