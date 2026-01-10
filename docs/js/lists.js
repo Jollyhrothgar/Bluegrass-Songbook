@@ -776,6 +776,14 @@ async function syncListToCloud(list, action) {
             case 'create':
                 const { data } = await SupabaseAuth.createCloudList(list.name);
                 if (data) {
+                    // Update folder placement key before assigning cloudId
+                    // (placement was stored under local id, needs to move to cloudId)
+                    const currentFolder = getListFolder(list.id);
+                    if (currentFolder !== null) {
+                        delete folderData.listPlacements[list.id];
+                        folderData.listPlacements[data.id] = currentFolder;
+                        saveFolders();
+                    }
                     list.cloudId = data.id;
                     // Add songs to the new cloud list
                     for (const songId of list.songs) {
