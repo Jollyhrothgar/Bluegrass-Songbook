@@ -230,6 +230,109 @@ export function editorConvertToChordPro(text) {
 }
 
 /**
+ * Clean ChordU paste format
+ * ChordU uses [Chord] notation inline but adds _ timing placeholders and lots of UI cruft
+ */
+export function cleanChordUPaste(text) {
+    // Detect ChordU paste
+    const isChordU = text.includes('ChordU') ||
+                     text.includes('Find chords for tracks u love') ||
+                     /Chords for .+ ".+"/.test(text);
+
+    if (!isChordU) {
+        return { text, title: null, artist: null, cleaned: false };
+    }
+
+    const lines = text.split('\n');
+    let title = null;
+    let artist = null;
+    let songStartIndex = -1;
+    let songEndIndex = lines.length;
+
+    // Extract title and artist from "Chords for Artist "Title""
+    for (let i = 0; i < Math.min(lines.length, 20); i++) {
+        const line = lines[i];
+        const match = line.match(/Chords for (.+?) "(.+?)"/);
+        if (match) {
+            artist = match[1].trim();
+            title = match[2].trim();
+            break;
+        }
+    }
+
+    // Find song content start - look for first line with chord brackets after header
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        // Skip header lines
+        if (line.startsWith('ChordU') ||
+            line.includes('Find chords for tracks u love') ||
+            line.includes('Chords for ') ||
+            line.startsWith('Tempo:') ||
+            line.startsWith('Chords used:') ||
+            line.startsWith('Tuning:') ||
+            line.match(/^\d+(\.\d+)?\s*bpm$/i)) {
+            continue;
+        }
+        // Found content start when we see chord brackets or meaningful lyrics
+        if (line.includes('[') && line.includes(']')) {
+            songStartIndex = i;
+            break;
+        }
+    }
+
+    // Find song content end
+    for (let i = songStartIndex; i < lines.length; i++) {
+        const line = lines[i].trim();
+        // Stop at UI elements and footer
+        if (line === 'guitar' ||
+            line === 'piano' ||
+            line === 'ukulele' ||
+            line.startsWith('Show All Diagrams') ||
+            line.startsWith('Download PDF') ||
+            line.startsWith('You may also like') ||
+            line.startsWith('About ChordU') ||
+            line.match(/^[1-4\s]+$/) ||  // Chord diagram fret numbers
+            line === 'Simplified' ||
+            line === 'Advanced' ||
+            line === 'Bass' ||
+            line === 'Edited' ||
+            line.includes('Transpose') ||
+            line.match(/^\d+%\s*➙/) ||  // "100% ➙" BPM control
+            line.match(/^\d+\s*BPM$/i)) {
+            songEndIndex = i;
+            break;
+        }
+    }
+
+    if (songStartIndex === -1) {
+        return { text, title, artist, cleaned: false };
+    }
+
+    // Extract and clean song lines
+    const songLines = lines.slice(songStartIndex, songEndIndex);
+    const cleanedLines = songLines
+        .map(line => {
+            // Remove _ timing placeholders (but keep the spaces/structure)
+            // Replace _ with nothing, but preserve spacing around chords
+            return line.replace(/\s*_\s*/g, ' ').replace(/\s+/g, ' ').trim();
+        })
+        .filter(line => {
+            // Remove empty lines and lines that are just whitespace
+            if (!line.trim()) return false;
+            // Remove lines that are just chord names without context (chord list)
+            if (line.match(/^[A-G][#b]?(?:m|maj|min|dim|aug|sus|add|7|9|11|13)*$/)) return false;
+            return true;
+        });
+
+    return {
+        text: cleanedLines.join('\n'),
+        title,
+        artist,
+        cleaned: true
+    };
+}
+
+/**
  * Clean Ultimate Guitar paste format
  */
 export function cleanUltimateGuitarPaste(text) {
@@ -604,22 +707,43 @@ export function initEditor(options) {
             setTimeout(() => {
                 let text = editorContentEl.value;
                 let statusMessage = '';
+                let wasImported = false;
 
-                const ugResult = cleanUltimateGuitarPaste(text);
-                if (ugResult.cleaned) {
-                    text = ugResult.text;
-                    statusMessage = 'Imported from Ultimate Guitar';
+                // Try ChordU first (already has [chord] notation)
+                const chordUResult = cleanChordUPaste(text);
+                if (chordUResult.cleaned) {
+                    text = chordUResult.text;
+                    statusMessage = 'Imported from ChordU';
+                    wasImported = true;
 
-                    if (ugResult.title && editorTitleEl && !editorTitleEl.value.trim()) {
-                        editorTitleEl.value = ugResult.title;
+                    if (chordUResult.title && editorTitleEl && !editorTitleEl.value.trim()) {
+                        editorTitleEl.value = chordUResult.title;
                     }
-                    if (ugResult.artist && editorArtistEl && !editorArtistEl.value.trim()) {
-                        editorArtistEl.value = ugResult.artist;
+                    if (chordUResult.artist && editorArtistEl && !editorArtistEl.value.trim()) {
+                        editorArtistEl.value = chordUResult.artist;
                     }
                 }
 
+                // Try Ultimate Guitar
+                if (!wasImported) {
+                    const ugResult = cleanUltimateGuitarPaste(text);
+                    if (ugResult.cleaned) {
+                        text = ugResult.text;
+                        statusMessage = 'Imported from Ultimate Guitar';
+                        wasImported = true;
+
+                        if (ugResult.title && editorTitleEl && !editorTitleEl.value.trim()) {
+                            editorTitleEl.value = ugResult.title;
+                        }
+                        if (ugResult.artist && editorArtistEl && !editorArtistEl.value.trim()) {
+                            editorArtistEl.value = ugResult.artist;
+                        }
+                    }
+                }
+
+                // Convert chord-above-lyrics format if needed
                 const converted = editorDetectAndConvert(text);
-                if (converted !== text || ugResult.cleaned) {
+                if (converted !== text || wasImported) {
                     editorContentEl.value = converted;
                     updateEditorPreview();
                     if (editorStatusEl) {
