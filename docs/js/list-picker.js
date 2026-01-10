@@ -4,7 +4,9 @@
 import { userLists, FAVORITES_LIST_ID } from './state.js';
 import {
     createList, addSongToList, removeSongFromList,
-    isFavorite, toggleFavorite, isSongInAnyList
+    isFavorite, toggleFavorite, isSongInAnyList,
+    getFoldersAtLevel, getListFolder, getListsAtRoot,
+    renameList, deleteList
 } from './lists.js';
 import { escapeHtml } from './utils.js';
 
@@ -87,7 +89,6 @@ export function updateTriggerButton(triggerEl, songId) {
 
 function renderPickerContent(songId) {
     const inFavorites = isFavorite(songId);
-    const customLists = userLists.filter(l => l.id !== FAVORITES_LIST_ID);
 
     return `
         <label class="list-picker-option favorites-option">
@@ -97,14 +98,7 @@ function renderPickerContent(songId) {
         </label>
         <div class="list-picker-divider"></div>
         <div class="list-picker-lists">
-            ${customLists.map(list => `
-                <label class="list-picker-option">
-                    <input type="checkbox" data-type="list" data-list-id="${list.id}"
-                           ${list.songs.includes(songId) ? 'checked' : ''}>
-                    <span>&#9776;</span>
-                    <span>${escapeHtml(list.name)}</span>
-                </label>
-            `).join('')}
+            ${renderFoldersAndListsForPicker(songId, null, 0)}
         </div>
         <button class="list-picker-new-btn" data-action="new-list">+ New List</button>
         <div class="list-picker-form hidden">
@@ -112,6 +106,49 @@ function renderPickerContent(songId) {
             <button class="list-picker-add-btn">Add</button>
         </div>
     `;
+}
+
+/**
+ * Render folders and lists recursively for the picker
+ */
+function renderFoldersAndListsForPicker(songId, parentId, depth) {
+    const folders = getFoldersAtLevel(parentId);
+    const listsAtLevel = parentId === null
+        ? getListsAtRoot().filter(l => l.id !== FAVORITES_LIST_ID)
+        : userLists.filter(l => {
+            if (l.id === FAVORITES_LIST_ID) return false;
+            const listId = l.cloudId || l.id;
+            return getListFolder(listId) === parentId;
+        });
+
+    let html = '';
+    const indent = depth * 0.75;
+
+    // Render folders first
+    folders.forEach(folder => {
+        html += `
+            <div class="list-picker-folder" style="padding-left: ${indent}rem">
+                <span class="list-picker-folder-icon">&#128193;</span>
+                <span class="list-picker-folder-name">${escapeHtml(folder.name)}</span>
+            </div>
+        `;
+        // Render folder contents
+        html += renderFoldersAndListsForPicker(songId, folder.id, depth + 1);
+    });
+
+    // Render lists
+    listsAtLevel.forEach(list => {
+        const isChecked = list.songs.includes(songId);
+        html += `
+            <label class="list-picker-option" style="padding-left: ${indent + 1.25}rem" data-list-id="${list.id}">
+                <input type="checkbox" data-type="list" data-list-id="${list.id}" ${isChecked ? 'checked' : ''}>
+                <span>&#9776;</span>
+                <span>${escapeHtml(list.name)}</span>
+            </label>
+        `;
+    });
+
+    return html;
 }
 
 function positionPicker(picker, triggerEl) {

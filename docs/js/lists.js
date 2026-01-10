@@ -1043,7 +1043,10 @@ export function renderSidebarLists() {
         header.className = 'nav-section-header';
         header.innerHTML = `
             <span>My Lists</span>
-            <button class="nav-section-action" title="New folder" data-action="new-folder">+</button>
+            <div class="nav-section-actions">
+                <button class="nav-section-action" title="New list" data-action="new-list">+</button>
+                <button class="nav-section-action" title="New folder" data-action="new-folder">&#128193;</button>
+            </div>
         `;
         navListsContainerEl.appendChild(header);
 
@@ -1084,6 +1087,13 @@ export function renderSidebarLists() {
         });
     }
 
+    // Add new list button event handler
+    const newListBtn = navListsContainerEl.querySelector('[data-action="new-list"]');
+    newListBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        startCreateList(null);
+    });
+
     // Add new folder button event handler
     const newFolderBtn = navListsContainerEl.querySelector('[data-action="new-folder"]');
     newFolderBtn?.addEventListener('click', (e) => {
@@ -1117,7 +1127,7 @@ function renderFoldersAndLists(container, parentId, depth) {
             <span class="nav-icon">&#128193;</span>
         `;
 
-        const input = createFolderInput('', commitNewFolder, cancelNewFolder);
+        const input = createInlineInput('', commitNewFolder, cancelNewFolder);
         headerEl.appendChild(input);
         newFolderEl.appendChild(headerEl);
         container.appendChild(newFolderEl);
@@ -1141,7 +1151,7 @@ function renderFoldersAndLists(container, parentId, depth) {
                 <span class="nav-folder-arrow">${isExpanded ? '▼' : '▶'}</span>
                 <span class="nav-icon">&#128193;</span>
             `;
-            const input = createFolderInput(
+            const input = createInlineInput(
                 folder.name,
                 (newName) => commitRenameFolder(folder.id, newName),
                 cancelRenameFolder
@@ -1184,38 +1194,71 @@ function renderFoldersAndLists(container, parentId, depth) {
     listsInThisFolder.forEach(list => {
         if (list.id === FAVORITES_LIST_ID) return;
 
+        const isEditing = editingListId === list.id;
         const btn = document.createElement('button');
-        btn.className = 'nav-item' + (viewingListId === list.id ? ' active' : '');
+        btn.className = 'nav-item' + (viewingListId === list.id ? ' active' : '') + (isEditing ? ' nav-item-editing' : '');
         btn.dataset.listId = list.id;
         btn.style.paddingLeft = `${(depth * 0.75) + 1.5}rem`;
-        btn.innerHTML = `
-            <span class="nav-icon">&#9776;</span>
-            <span class="nav-label">${escapeHtml(list.name)}</span>
-            ${list.songs.length > 0 ? `<span class="nav-badge">${list.songs.length}</span>` : ''}
-        `;
-        btn.addEventListener('click', () => {
-            showListView(list.id);
-            if (pushHistoryStateFn) {
-                pushHistoryStateFn('list', { listId: list.id });
-            }
-        });
 
-        // Make list draggable
-        btn.draggable = true;
-        btn.addEventListener('dragstart', (e) => {
-            e.dataTransfer.setData('text/plain', JSON.stringify({
-                type: 'list',
-                listId: list.cloudId || list.id
-            }));
-            btn.classList.add('dragging');
-        });
-        btn.addEventListener('dragend', () => {
-            btn.classList.remove('dragging');
-            clearDropTargets();
-        });
+        if (isEditing) {
+            // Render with inline input for renaming
+            btn.innerHTML = `<span class="nav-icon">&#9776;</span>`;
+            const input = createInlineInput(
+                list.name,
+                (newName) => commitRenameList(list.id, newName),
+                cancelRenameList,
+                'List name'
+            );
+            btn.appendChild(input);
+        } else {
+            // Normal rendering
+            btn.innerHTML = `
+                <span class="nav-icon">&#9776;</span>
+                <span class="nav-label">${escapeHtml(list.name)}</span>
+                ${list.songs.length > 0 ? `<span class="nav-badge">${list.songs.length}</span>` : ''}
+            `;
+            btn.addEventListener('click', () => {
+                showListView(list.id);
+                if (pushHistoryStateFn) {
+                    pushHistoryStateFn('list', { listId: list.id });
+                }
+            });
+
+            // Add context menu on right-click
+            btn.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+                showListContextMenu(list, e.clientX, e.clientY);
+            });
+
+            // Make list draggable
+            btn.draggable = true;
+            btn.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('text/plain', JSON.stringify({
+                    type: 'list',
+                    listId: list.cloudId || list.id
+                }));
+                btn.classList.add('dragging');
+            });
+            btn.addEventListener('dragend', () => {
+                btn.classList.remove('dragging');
+                clearDropTargets();
+            });
+        }
 
         container.appendChild(btn);
     });
+
+    // Render "new list" input if we're creating at this level
+    if (creatingNewList && creatingNewList.folderId === parentId) {
+        const newListEl = document.createElement('button');
+        newListEl.className = 'nav-item nav-item-editing';
+        newListEl.style.paddingLeft = `${(depth * 0.75) + 1.5}rem`;
+        newListEl.innerHTML = `<span class="nav-icon">&#9776;</span>`;
+
+        const input = createInlineInput('', commitNewList, cancelNewList, 'List name');
+        newListEl.appendChild(input);
+        container.appendChild(newListEl);
+    }
 }
 
 /**
@@ -1318,15 +1361,138 @@ function cancelRenameFolder() {
     renderSidebarLists();
 }
 
+// ============================================
+// LIST INLINE EDITING
+// ============================================
+
+let editingListId = null;  // list id being renamed
+
 /**
- * Create an inline input element for folder name editing
+ * Start inline list rename
  */
-function createFolderInput(initialValue, onCommit, onCancel) {
+function startRenameList(listId) {
+    editingListId = listId;
+    renderSidebarLists();
+}
+
+/**
+ * Commit list rename
+ */
+function commitRenameList(listId, newName) {
+    if (newName && newName.trim()) {
+        renameList(listId, newName.trim());
+    }
+    editingListId = null;
+    renderSidebarLists();
+}
+
+/**
+ * Cancel list rename
+ */
+function cancelRenameList() {
+    editingListId = null;
+    renderSidebarLists();
+}
+
+// Track new list creation state
+let creatingNewList = null;  // { folderId: string|null } if creating new list
+
+/**
+ * Start inline list creation
+ */
+function startCreateList(folderId = null) {
+    creatingNewList = { folderId };
+    // If creating in a folder, expand it
+    if (folderId) {
+        expandedFolders.add(folderId);
+        saveExpandedFolders();
+    }
+    renderSidebarLists();
+}
+
+/**
+ * Commit the new list (called from input handlers)
+ */
+function commitNewList(name) {
+    if (name && name.trim() && creatingNewList) {
+        const list = createList(name.trim());
+        if (list && creatingNewList.folderId) {
+            setListFolder(list.id, creatingNewList.folderId);
+        }
+    }
+    creatingNewList = null;
+    renderSidebarLists();
+}
+
+/**
+ * Cancel new list creation
+ */
+function cancelNewList() {
+    creatingNewList = null;
+    renderSidebarLists();
+}
+
+/**
+ * Show context menu for a list
+ */
+function showListContextMenu(list, x, y) {
+    // Remove any existing context menu
+    const existing = document.querySelector('.list-context-menu');
+    if (existing) existing.remove();
+
+    // Also close folder context menu if open
+    const folderMenu = document.querySelector('.folder-context-menu');
+    if (folderMenu) folderMenu.remove();
+
+    const menu = document.createElement('div');
+    menu.className = 'list-context-menu';
+    menu.style.position = 'fixed';
+    menu.style.left = `${x}px`;
+    menu.style.top = `${y}px`;
+
+    // Don't allow deleting favorites
+    const isFavorites = list.id === FAVORITES_LIST_ID;
+
+    menu.innerHTML = `
+        <button data-action="rename">Rename</button>
+        ${!isFavorites ? '<button data-action="delete" class="danger">Delete</button>' : ''}
+    `;
+
+    menu.addEventListener('click', (e) => {
+        const action = e.target.dataset.action;
+        if (action === 'rename') {
+            startRenameList(list.id);
+        } else if (action === 'delete') {
+            if (confirm(`Delete "${list.name}"? Songs won't be deleted from the songbook.`)) {
+                deleteList(list.id);
+                renderSidebarLists();
+            }
+        }
+        menu.remove();
+    });
+
+    document.body.appendChild(menu);
+
+    // Close on outside click
+    const closeHandler = (e) => {
+        if (!menu.contains(e.target)) {
+            menu.remove();
+            document.removeEventListener('click', closeHandler);
+        }
+    };
+    setTimeout(() => document.addEventListener('click', closeHandler), 0);
+}
+
+/**
+ * Create an inline input element for name editing (folders, lists, etc.)
+ * Reusable component - just pass different callbacks for different contexts.
+ */
+function createInlineInput(initialValue, onCommit, onCancel, placeholder = 'Name') {
     const input = document.createElement('input');
     input.type = 'text';
-    input.className = 'nav-folder-input';
+    input.className = 'nav-inline-input';
     input.value = initialValue;
-    input.placeholder = 'Folder name';
+    input.placeholder = placeholder;
 
     // Handle Enter/Escape
     input.addEventListener('keydown', (e) => {
@@ -1375,6 +1541,7 @@ function showFolderContextMenu(folder, x, y) {
     menu.style.top = `${y}px`;
     menu.innerHTML = `
         <button data-action="rename">Rename</button>
+        <button data-action="new-list">New List Here</button>
         <button data-action="new-subfolder">New Subfolder</button>
         <button data-action="delete" class="danger">Delete</button>
     `;
@@ -1383,6 +1550,8 @@ function showFolderContextMenu(folder, x, y) {
         const action = e.target.dataset.action;
         if (action === 'rename') {
             startRenameFolder(folder.id);
+        } else if (action === 'new-list') {
+            startCreateList(folder.id);
         } else if (action === 'new-subfolder') {
             startCreateFolder(folder.id);
         } else if (action === 'delete') {

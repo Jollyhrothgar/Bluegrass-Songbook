@@ -3632,6 +3632,23 @@ mark {
     overflow-y: auto;
 }
 
+.list-picker-folder {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.list-picker-folder-icon {
+    font-size: 0.85rem;
+}
+
+.list-picker-folder-name {
+    font-weight: 500;
+}
+
 .list-picker-new-btn {
     display: block;
     width: 100%;
@@ -3939,6 +3956,11 @@ mark {
     color: var(--accent);
 }
 
+.nav-section-actions {
+    display: flex;
+    gap: 0.25rem;
+}
+
 /* Folder styles */
 .nav-folder {
     display: flex;
@@ -3964,8 +3986,8 @@ mark {
     flex-direction: column;
 }
 
-/* Inline folder name input */
-.nav-folder-input {
+/* Inline name input (folders, lists, etc.) */
+.nav-inline-input {
     flex: 1;
     min-width: 0;
     padding: 0.25rem 0.5rem;
@@ -3978,22 +4000,23 @@ mark {
     outline: none;
 }
 
-.nav-folder-input:focus {
+.nav-inline-input:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
 }
 
-.nav-folder-input::placeholder {
+.nav-inline-input::placeholder {
     color: var(--text-secondary);
     opacity: 0.7;
 }
 
-.nav-folder-editing .nav-folder-header {
+.nav-item-editing {
     background: rgba(52, 152, 219, 0.1);
 }
 
-/* Folder context menu */
-.folder-context-menu {
+/* Context menus (folder, list) */
+.folder-context-menu,
+.list-context-menu {
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -4003,7 +4026,8 @@ mark {
     min-width: 140px;
 }
 
-.folder-context-menu button {
+.folder-context-menu button,
+.list-context-menu button {
     display: block;
     width: 100%;
     padding: 0.6rem 1rem;
@@ -4015,15 +4039,18 @@ mark {
     cursor: pointer;
 }
 
-.folder-context-menu button:hover {
+.folder-context-menu button:hover,
+.list-context-menu button:hover {
     background: var(--bg-secondary);
 }
 
-.folder-context-menu button.danger {
+.folder-context-menu button.danger,
+.list-context-menu button.danger {
     color: #e74c3c;
 }
 
-.folder-context-menu button.danger:hover {
+.folder-context-menu button.danger:hover,
+.list-context-menu button.danger:hover {
     background: rgba(231, 76, 60, 0.1);
 }
 
