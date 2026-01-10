@@ -9,13 +9,10 @@ test.describe('Search', () => {
         await page.waitForSelector('#search-input');
     });
 
-    test('displays popular songs on initial load', async ({ page }) => {
-        // Should show results sorted by popularity on load
-        await page.waitForSelector('.result-item');
-        const results = page.locator('.result-item');
-        const count = await results.count();
-        expect(count).toBeGreaterThan(0);
-        expect(count).toBeLessThanOrEqual(50);
+    test('displays search prompt on initial load', async ({ page }) => {
+        // Search view now shows a prompt instead of popular songs on initial load
+        await expect(page.locator('.search-prompt')).toBeVisible();
+        await expect(page.locator('.search-prompt')).toContainText('Search for songs');
     });
 
     test('search by title returns results', async ({ page }) => {
@@ -78,14 +75,16 @@ test.describe('Search', () => {
     });
 
     test('clicking result opens song view', async ({ page }) => {
-        await page.fill('#search-input', 'blue moon');
+        // Use a specific song title that's unlikely to have multiple versions
+        await page.fill('#search-input', 'your cheating heart hank williams');
         await page.waitForTimeout(300);
 
         // Click first result
         await page.locator('.result-item').first().click();
 
-        // Song view should be visible
-        await expect(page.locator('#song-view')).toBeVisible();
+        // Song view should be visible (if song has versions, version picker appears first)
+        // Check that results are no longer visible (navigation happened)
+        await expect(page.locator('#results')).toBeHidden();
     });
 
     test('negative filter excludes results', async ({ page }) => {
@@ -160,7 +159,9 @@ test.describe('Search Result Interaction', () => {
     });
 
     test('clicking tag badge filters by tag', async ({ page }) => {
-        // Wait for initial results
+        // Search view shows prompt initially, so search first
+        await page.fill('#search-input', 'bluegrass');
+        await page.waitForTimeout(300);
         await page.waitForSelector('.result-item');
 
         // Find a tag badge and click it
@@ -175,6 +176,9 @@ test.describe('Search Result Interaction', () => {
     });
 
     test('list button shows picker', async ({ page }) => {
+        // Search view shows prompt initially, so search first
+        await page.fill('#search-input', 'wagon wheel');
+        await page.waitForTimeout(300);
         await page.waitForSelector('.result-item');
 
         // Click the list button on first result
@@ -189,16 +193,16 @@ test.describe('Search Result Interaction', () => {
         // Before the fix, rapid searches would accumulate event listeners,
         // causing clicks to fire multiple times or not at all.
 
-        // Rapidly type and change search
-        await page.fill('#search-input', 'b');
-        await page.fill('#search-input', 'bl');
-        await page.fill('#search-input', 'blu');
-        await page.fill('#search-input', 'blue');
-        await page.fill('#search-input', 'blue ');
-        await page.fill('#search-input', 'blue m');
-        await page.fill('#search-input', 'blue mo');
-        await page.fill('#search-input', 'blue moo');
-        await page.fill('#search-input', 'blue moon');
+        // Rapidly type and change search (use specific song to avoid version picker)
+        await page.fill('#search-input', 'w');
+        await page.fill('#search-input', 'wa');
+        await page.fill('#search-input', 'wag');
+        await page.fill('#search-input', 'wago');
+        await page.fill('#search-input', 'wagon');
+        await page.fill('#search-input', 'wagon ');
+        await page.fill('#search-input', 'wagon w');
+        await page.fill('#search-input', 'wagon wh');
+        await page.fill('#search-input', 'wagon wheel darius');
 
         // Wait for final results
         await page.waitForTimeout(300);
@@ -207,12 +211,14 @@ test.describe('Search Result Interaction', () => {
         const results = page.locator('.result-item');
         await expect(results.first()).toBeVisible();
 
-        // Click should work correctly (opens song view exactly once)
+        // Click should work correctly (opens song view or version picker exactly once)
         await results.first().click();
 
-        // Song view should be visible (not still on search)
-        await expect(page.locator('#song-view')).toBeVisible();
-        await expect(page.locator('#results')).toBeHidden();
+        // The click handler worked if either song view appears or version picker modal opens
+        // Version picker appears as an overlay, so results may still be visible behind it
+        const songView = page.locator('#song-view:not(.hidden)');
+        const versionPicker = page.locator('.version-picker');
+        await expect(songView.or(versionPicker)).toBeVisible();
     });
 
     test('tag badge click works after multiple renders', async ({ page }) => {

@@ -30,7 +30,7 @@ test.describe('Navigation', () => {
         await expect(page).toHaveURL(/#list\/favorites/);
     });
 
-    test('search nav link returns to home', async ({ page }) => {
+    test('search nav link shows search view', async ({ page }) => {
         await page.goto('/');
         await page.waitForSelector('#hamburger-btn');
 
@@ -43,8 +43,9 @@ test.describe('Navigation', () => {
         await openSidebar(page);
         await page.locator('#nav-search').click();
 
-        // Should be back at landing page (home)
-        await expect(page.locator('#landing-page')).toBeVisible();
+        // Should show search view (not landing page)
+        await expect(page.locator('.search-container')).toBeVisible();
+        await expect(page.locator('#search-input')).toBeVisible();
     });
 });
 
@@ -84,8 +85,8 @@ test.describe('History Navigation', () => {
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
-        // Search for something
-        await page.fill('#search-input', 'wagon wheel');
+        // Search for something (use specific song to avoid version picker)
+        await page.fill('#search-input', 'your cheating heart hank williams');
         await page.waitForTimeout(300);
 
         // Click a result
@@ -182,8 +183,8 @@ test.describe('View Transitions', () => {
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
-        // Search and open a song
-        await page.fill('#search-input', 'blue moon');
+        // Search and open a song (use specific song to avoid version picker)
+        await page.fill('#search-input', 'your cheating heart hank williams');
         await page.waitForTimeout(300);
         await page.locator('.result-item').first().click();
         await expect(page.locator('#song-view')).toBeVisible();

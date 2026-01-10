@@ -3,7 +3,8 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Theme', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/');
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
     });
 
@@ -49,8 +50,8 @@ test.describe('Theme', () => {
         const setTheme = await page.locator('html').getAttribute('data-theme');
         expect(setTheme).not.toBe(initialTheme);
 
-        // Reload the page
-        await page.reload();
+        // Reload the page (go back to search view since reload may reset to landing)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
         // Theme should persist
@@ -61,7 +62,8 @@ test.describe('Theme', () => {
 
 test.describe('Fullscreen Mode', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/');
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
         // Open a song first
@@ -119,7 +121,8 @@ test.describe('Fullscreen Mode', () => {
 
 test.describe('Sidebar', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/');
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
     });
 
@@ -165,7 +168,8 @@ test.describe('Sidebar', () => {
 
 test.describe('Keyboard Shortcuts', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/');
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
     });
 
@@ -189,8 +193,8 @@ test.describe('Keyboard Shortcuts', () => {
     });
 
     test('back button or Escape returns from song to search', async ({ page }) => {
-        // Open a song
-        await page.fill('#search-input', 'blue moon');
+        // Open a song (use specific song to avoid version picker)
+        await page.fill('#search-input', 'your cheating heart hank williams');
         await page.waitForTimeout(300);
         await page.locator('.result-item').first().click();
         await expect(page.locator('#song-view')).toBeVisible();
@@ -206,8 +210,8 @@ test.describe('Keyboard Shortcuts', () => {
 
 test.describe('View Preferences', () => {
     test('view settings persist after navigation', async ({ page }) => {
-        // Open a song
-        await page.goto('/');
+        // Open a song (go directly to search view)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
         await page.fill('#search-input', 'blue moon kentucky');
         await page.waitForTimeout(300);

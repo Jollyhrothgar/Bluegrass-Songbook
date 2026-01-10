@@ -1,6 +1,26 @@
 // E2E tests for WorkView (works with tablature)
 import { test, expect } from '@playwright/test';
 
+/**
+ * Helper to expand the Controls disclosure if it's collapsed
+ */
+async function expandControls(page) {
+    // Controls toggle button has id="work-controls-toggle" or "qc-toggle"
+    const controlsToggle = page.locator('#work-controls-toggle, #qc-toggle');
+    const controlsContent = page.locator('#work-controls-content, #quick-controls-content');
+
+    // Check if controls exist and are collapsed
+    if (await controlsToggle.count() > 0) {
+        // If content is hidden, click to expand
+        const isHidden = await controlsContent.evaluate(el => el?.classList.contains('hidden'));
+        if (isHidden) {
+            await controlsToggle.click();
+            // Wait for controls to become visible
+            await page.waitForTimeout(200);
+        }
+    }
+}
+
 test.describe('WorkView - Tablature', () => {
     test('opens work with tablature via URL', async ({ page }) => {
         // Navigate directly to a work with tablature
@@ -42,8 +62,11 @@ test.describe('WorkView - Tablature', () => {
         await page.goto('/#work/angeline-the-baker');
         await page.locator('.tablature-container').waitFor();
 
-        // Tablature should be visible with playback controls
+        // Tablature should be visible
         await expect(page.locator('.tablature-container')).toBeVisible();
+
+        // Expand controls to access playback controls
+        await expandControls(page);
         await expect(page.locator('.tab-play-btn')).toBeVisible();
     });
 
@@ -51,12 +74,15 @@ test.describe('WorkView - Tablature', () => {
         await page.goto('/#song/foggy-mountain-breakdown');
         await page.waitForTimeout(1000);
 
+        // Expand controls disclosure
+        await expandControls(page);
+
         // Should have play button
         const playBtn = page.locator('.tab-play-btn');
         await expect(playBtn).toBeVisible();
 
-        // Should have tempo controls
-        await expect(page.locator('.tab-tempo-input')).toBeVisible();
+        // Should have tempo controls (display is now a span, not input)
+        await expect(page.locator('.tab-tempo-display')).toBeVisible();
         await expect(page.locator('.tab-tempo-down')).toBeVisible();
         await expect(page.locator('.tab-tempo-up')).toBeVisible();
     });
@@ -65,27 +91,33 @@ test.describe('WorkView - Tablature', () => {
         await page.goto('/#song/foggy-mountain-breakdown');
         await page.waitForTimeout(1000);
 
-        const tempoInput = page.locator('.tab-tempo-input');
+        // Expand controls disclosure
+        await expandControls(page);
+
+        const tempoDisplay = page.locator('.tab-tempo-display');
         const tempoUp = page.locator('.tab-tempo-up');
         const tempoDown = page.locator('.tab-tempo-down');
 
-        // Get initial tempo
-        const initialTempo = await tempoInput.inputValue();
+        // Get initial tempo (now from text content, not input value)
+        const initialTempo = await tempoDisplay.textContent();
         const initial = parseInt(initialTempo, 10);
 
         // Click tempo up
         await tempoUp.click();
-        await expect(tempoInput).toHaveValue(String(initial + 5));
+        await expect(tempoDisplay).toHaveText(String(initial + 5));
 
         // Click tempo down twice
         await tempoDown.click();
         await tempoDown.click();
-        await expect(tempoInput).toHaveValue(String(initial - 5));
+        await expect(tempoDisplay).toHaveText(String(initial - 5));
     });
 
     test('metronome toggle exists and is clickable', async ({ page }) => {
         await page.goto('/#song/foggy-mountain-breakdown');
         await page.waitForTimeout(1000);
+
+        // Expand controls disclosure
+        await expandControls(page);
 
         // The checkbox may be hidden but the label/icon is visible
         const metronomeLabel = page.locator('.tab-metronome-toggle');
@@ -159,7 +191,10 @@ test.describe('WorkView - Part Selector', () => {
 test.describe('WorkView - Tablature Playback', () => {
     test('play button toggles to pause state', async ({ page }) => {
         await page.goto('/#song/foggy-mountain-breakdown');
-        await page.locator('.tab-play-btn').waitFor();
+        await page.waitForTimeout(1000);
+
+        // Expand controls disclosure
+        await expandControls(page);
 
         const playBtn = page.locator('.tab-play-btn');
         const stopBtn = page.locator('.tab-stop-btn');
@@ -177,7 +212,10 @@ test.describe('WorkView - Tablature Playback', () => {
 
     test('stop button resets to initial state', async ({ page }) => {
         await page.goto('/#song/foggy-mountain-breakdown');
-        await page.locator('.tab-play-btn').waitFor();
+        await page.waitForTimeout(1000);
+
+        // Expand controls disclosure
+        await expandControls(page);
 
         // Start playback
         await page.locator('.tab-play-btn').click();

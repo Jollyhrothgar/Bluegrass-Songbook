@@ -3,7 +3,8 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Song View', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/');
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
         // Search for a known song and open it
@@ -18,8 +19,10 @@ test.describe('Song View', () => {
     test('displays song title and artist', async ({ page }) => {
         // Song header should be visible
         await expect(page.locator('.song-title')).toBeVisible();
-        // Artist is in song-meta section
-        await expect(page.locator('.song-meta')).toBeVisible();
+        // Artist is in Info disclosure - expand it first
+        await page.locator('#info-toggle').click();
+        await expect(page.locator('.info-content')).toBeVisible();
+        await expect(page.locator('.info-item').first()).toBeVisible();
     });
 
     test('displays chord and lyrics content', async ({ page }) => {
@@ -161,7 +164,8 @@ test.describe('Song Navigation', () => {
     });
 
     test('back button returns to search', async ({ page }) => {
-        await page.goto('/');
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
         // Search and open a song
@@ -181,9 +185,11 @@ test.describe('Song Navigation', () => {
 
 test.describe('Print View', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/');
+        // Go directly to search view (homepage is now landing page)
+        await page.goto('/#search');
         await page.waitForSelector('#search-input');
-        await page.fill('#search-input', 'blue moon');
+        // Use specific song to avoid version picker
+        await page.fill('#search-input', 'your cheating heart hank williams');
         await page.waitForTimeout(300);
         await page.locator('.result-item').first().click();
         await expect(page.locator('#song-view')).toBeVisible();
@@ -197,7 +203,10 @@ test.describe('Print View', () => {
             window.print = () => { window.trackPrint(); };
         });
 
-        await page.locator('#print-btn').click();
+        // Open export dropdown and click print (print is now in export dropdown)
+        await page.locator('#export-btn').click();
+        await page.waitForSelector('#export-dropdown:not(.hidden)');
+        await page.locator('.export-option[data-action="print"]').click();
 
         // Verify print was triggered
         expect(printCalled).toBe(true);

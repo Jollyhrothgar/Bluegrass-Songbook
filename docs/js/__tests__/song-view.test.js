@@ -26,7 +26,7 @@ vi.mock('../state.js', () => ({
     setShowChordProSource: vi.fn(),
     fontSizeLevel: 0,
     setFontSizeLevel: vi.fn(),
-    FONT_SIZES: { '-2': 0.7, '-1': 0.85, '0': 1, '1': 1.2, '2': 1.5 },
+    FONT_SIZES: { '-5': 0.5, '-4': 0.6, '-3': 0.7, '-2': 0.8, '-1': 0.9, '0': 1, '1': 1.1, '2': 1.25, '3': 1.4, '4': 1.6, '5': 1.8, '6': 2.0 },
     currentDetectedKey: null,
     setCurrentDetectedKey: vi.fn(),
     originalDetectedKey: null,

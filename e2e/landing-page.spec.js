@@ -49,12 +49,14 @@ test.describe('Landing Page Search', () => {
         await page.goto('/');
         await page.waitForSelector('#landing-search-input');
 
-        // Type a search query
-        await page.fill('#landing-search-input', 'blue moon');
+        // Type a search query using pressSequentially for proper event triggering
+        const input = page.locator('#landing-search-input');
+        await input.click();
+        await input.pressSequentially('blue moon', { delay: 30 });
         await page.keyboard.press('Enter');
 
         // Should navigate to search view
-        await expect(page.locator('.search-container')).toBeVisible();
+        await expect(page.locator('.search-container')).toBeVisible({ timeout: 5000 });
         await expect(page.locator('#search-input')).toBeVisible();
 
         // Search input should have the query
@@ -68,12 +70,15 @@ test.describe('Landing Page Search', () => {
         await page.goto('/');
         await page.waitForSelector('#landing-search-input');
 
-        await page.fill('#landing-search-input', 'wagon wheel');
+        // Type search query and press Enter
+        const input = page.locator('#landing-search-input');
+        await input.click();
+        await input.pressSequentially('wagon wheel', { delay: 30 });
         await page.keyboard.press('Enter');
 
-        // Results should be visible
+        // Results should be visible (wait longer for navigation + search)
         await expect(page.locator('#results')).toBeVisible();
-        await page.waitForSelector('.result-item', { timeout: 3000 });
+        await page.waitForSelector('.result-item', { timeout: 5000 });
     });
 });
 
@@ -198,8 +203,8 @@ test.describe('Navigation Between Views', () => {
         await page.locator('.collection-card').filter({ hasText: 'Gospel Standards' }).click();
         await expect(page.locator('.search-container')).toBeVisible();
 
-        // Click logo or home link to go back
-        await page.locator('.logo').click();
+        // Click logo to go back (uses #logo-link or .site-logo)
+        await page.locator('#logo-link').click();
 
         // Should be back on landing page
         await expect(page.locator('#landing-page')).toBeVisible();
