@@ -55,7 +55,7 @@ jobs:
         run: uv sync
 
       - name: Rebuild search index
-        run: uv run python scripts/lib/build_works_index.py
+        run: uv run python scripts/lib/build_index.py --no-tags
 
       - name: Commit and push
         run: |

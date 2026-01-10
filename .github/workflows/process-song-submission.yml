@@ -39,7 +39,7 @@ jobs:
       - name: Rebuild search index
         run: |
           pip install pyyaml beautifulsoup4
-          python scripts/lib/build_works_index.py
+          python scripts/lib/build_index.py --no-tags
 
       - name: Commit and push
         run: |
