@@ -48,6 +48,7 @@ import { showListPicker, closeListPicker, updateTriggerButton } from './list-pic
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions } from './chords.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
 import { initFlags, openFlagModal } from './flags.js';
+import { initSongRequest, openSongRequestModal } from './song-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
 
 // ============================================
@@ -575,6 +576,12 @@ function handleDeepLink() {
         trackDeepLink('add', hash);
         showView('add-song');
         pushHistoryState('add-song', {}, true);
+        return true;
+    } else if (hash === '#request-song') {
+        trackDeepLink('request-song', hash);
+        // Clear the hash and open the modal
+        window.location.hash = '';
+        openSongRequestModal();
         return true;
     } else if (hash === '#favorites') {
         // Backward compatibility: redirect #favorites to #list/favorites
@@ -1565,6 +1572,9 @@ function init() {
 
     // Initialize flags module
     initFlags();
+
+    // Initialize song request module
+    initSongRequest();
 
     // Initialize lists module (handles favorites as a special list)
     initLists({

@@ -2537,6 +2537,49 @@ h1 {
     border-color: var(--accent);
 }
 
+.modal-body input[type="text"] {
+    width: 100%;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+.modal-body input[type="text"]:focus {
+    border-color: var(--accent);
+}
+
+.modal-body .required {
+    color: var(--accent);
+}
+
+.modal-status {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.modal-status.success {
+    color: var(--success);
+}
+
+.modal-status.error {
+    color: var(--error, #e74c3c);
+}
+
+.modal-status.hidden {
+    display: none;
+}
+
+.request-intro {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
 .modal-footer {
     display: flex;
     align-items: center;

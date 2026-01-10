@@ -548,6 +548,30 @@ This is the [G]chorus [D]part
             </div>
         </div>
 
+        <!-- Song Request Modal -->
+        <div id="song-request-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Request a Song</h2>
+                    <button id="song-request-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="request-intro">What song would you like us to add?</p>
+                    <label for="request-title">Song Title <span class="required">*</span></label>
+                    <input type="text" id="request-title" placeholder="e.g., Blue Moon of Kentucky" required>
+                    <label for="request-artist">Artist (optional)</label>
+                    <input type="text" id="request-artist" placeholder="e.g., Bill Monroe">
+                    <label for="request-details">Additional Details (optional)</label>
+                    <textarea id="request-details" placeholder="e.g., Looking for the version in G, or a link to where you've seen it..."></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button id="song-request-cancel" class="action-btn">Cancel</button>
+                    <button id="song-request-submit" class="action-btn primary">Submit Request</button>
+                </div>
+                <div id="song-request-status" class="modal-status"></div>
+            </div>
+        </div>
+
         <!-- Flag Issue Modal -->
         <div id="flag-modal" class="modal hidden">
             <div class="modal-content">
