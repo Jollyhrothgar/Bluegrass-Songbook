@@ -410,7 +410,8 @@ const COLLECTION_ICONS = {
     'jam-friendly': '🤝',
     'waltz': '💃',
     'classic-country': '🤠',
-    'old-time': '🪕'
+    'old-time': '🪕',
+    'chord-explorer': '🎹'
 };
 
 /**
@@ -420,8 +421,8 @@ function renderCollectionCards() {
     if (!collectionsGrid) return;
 
     const cards = COLLECTIONS.map(collection => {
-        // Count songs matching the query (or total for "all songs")
-        const count = collection.isSearchLink ? allSongs.length : getCollectionSongCount(collection.query);
+        // Count songs matching the query (or total for "all songs", or skip for tools)
+        const count = collection.isToolLink ? 0 : collection.isSearchLink ? allSongs.length : getCollectionSongCount(collection.query);
         const icon = COLLECTION_ICONS[collection.id] || '🎵';
         const imageSrc = COLLECTION_IMAGES[collection.id];
 
@@ -430,14 +431,16 @@ function renderCollectionCards() {
             ? `<img src="${imageSrc}" alt="${escapeHtml(collection.title)}">`
             : icon;
 
-        // For search link, use a different href
-        const href = collection.isSearchLink
+        // Determine href based on collection type
+        const href = collection.isToolLink
+            ? collection.href
+            : collection.isSearchLink
             ? '#search'
             : `#search/${encodeURIComponent(collection.query)}`;
 
         return `
             <a href="${href}"
-               class="collection-card${imageSrc ? ' has-image' : ''}${collection.isSearchLink ? ' search-all' : ''}"
+               class="collection-card${imageSrc ? ' has-image' : ''}${collection.isSearchLink ? ' search-all' : ''}${collection.isToolLink ? ' tool-link' : ''}"
                data-collection="${collection.id}"
                style="--collection-color: ${collection.color}">
                 <div class="collection-image">
@@ -446,7 +449,7 @@ function renderCollectionCards() {
                 <div class="collection-content">
                     <h3 class="collection-title">${escapeHtml(collection.title)}</h3>
                     <p class="collection-description">${escapeHtml(collection.description)}</p>
-                    <span class="collection-count">${count.toLocaleString()} songs</span>
+                    ${collection.isToolLink ? '' : `<span class="collection-count">${count.toLocaleString()} songs</span>`}
                 </div>
             </a>
         `;
@@ -457,10 +460,17 @@ function renderCollectionCards() {
     // Add click handlers for collection cards
     collectionsGrid.querySelectorAll('.collection-card').forEach(card => {
         card.addEventListener('click', (e) => {
-            e.preventDefault();
             const href = card.getAttribute('href');
             const isSearchAll = card.classList.contains('search-all');
             const collectionId = card.dataset.collection;
+
+            // Tool links navigate directly (don't prevent default)
+            if (href && !href.startsWith('#')) {
+                track('collection_click', { collection: collectionId, type: 'tool' });
+                return; // Let the link navigate normally
+            }
+
+            e.preventDefault();
 
             if (isSearchAll) {
                 // Navigate to search view without query

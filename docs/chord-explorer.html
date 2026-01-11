@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Explorer - Bluegrass Songbook</title>
+    <link rel="icon" type="image/png" href="images/banjo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Apply theme immediately to prevent flash of white
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+    <style>
+        body {
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .explorer-page {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .explorer-nav {
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--text);
+            border-color: var(--text-secondary);
+            background: var(--bg-secondary);
+        }
+
+        .explorer-header {
+            margin-bottom: 2rem;
+        }
+
+        .explorer-header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+            color: var(--text);
+        }
+
+        .explorer-header .tagline {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        /* Key selector */
+        .key-selector {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .key-selector label {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .key-selector select {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--bg-secondary);
+            color: var(--text);
+            cursor: pointer;
+        }
+
+        .shift-hint {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            background: var(--bg-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .shift-hint kbd {
+            background: var(--bg);
+            padding: 0.1rem 0.4rem;
+            border-radius: 3px;
+            border: 1px solid var(--border);
+            font-family: inherit;
+            font-size: 0.85em;
+        }
+
+        /* Chord palette */
+        .chord-palette {
+            margin-bottom: 1.5rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+        }
+
+        .chord-row {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .chord-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .chord-row-label {
+            width: 90px;
+            flex-shrink: 0;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+        }
+
+        .chord-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem 0.75rem;
+            min-width: 52px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            cursor: grab;
+            transition: all 0.15s;
+            user-select: none;
+            position: relative;
+        }
+
+        .chord-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .chord-card.selected {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 2px 8px rgba(var(--accent-rgb, 59, 130, 246), 0.3);
+        }
+
+        .chord-card.dragging {
+            opacity: 0.5;
+        }
+
+        .chord-name {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .chord-numeral {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin-top: 0.15rem;
+            opacity: 0.8;
+        }
+
+        .chord-card.selected .chord-numeral {
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* Resolution tooltip */
+        .chord-card .resolution-tooltip {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 0.5rem 0.75rem;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin-bottom: 8px;
+        }
+
+        .chord-card:hover .resolution-tooltip {
+            display: block;
+        }
+
+        .resolution-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: var(--border);
+        }
+
+        /* Explorer card container */
+        .explorer-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+
+        /* Title row with disclosure buttons */
+        .explorer-title-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.6rem 1rem;
+            background: var(--bg-secondary);
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .explorer-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            opacity: 0.8;
+        }
+
+        .explorer-controls {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        /* Disclosure button - matches app pattern */
+        .ce-disclosure-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.4rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm, 4px);
+            background: var(--bg);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .ce-disclosure-btn:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .ce-disclosure-arrow {
+            font-size: 0.7rem;
+        }
+
+        /* Collapsible content sections */
+        .ce-content {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .ce-content:last-child {
+            border-bottom: none;
+        }
+
+        .ce-content.hidden {
+            display: none;
+        }
+
+        /* Controls row - uses qc-group pattern */
+        .ce-controls-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        /* Control groups - segmented button style (matches qc-group) */
+        .ce-group {
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--border);
+            border-radius: var(--radius, 6px);
+            background: var(--bg);
+            overflow: hidden;
+        }
+
+        .ce-group > *:not(:last-child) {
+            border-right: 1px solid var(--border);
+        }
+
+        /* Small square buttons for +/- */
+        .ce-btn {
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.15s;
+        }
+
+        .ce-btn:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .ce-btn:active {
+            transform: scale(0.95);
+        }
+
+        .ce-btn.active {
+            background: var(--accent);
+            color: white;
+        }
+
+        /* Label/value between buttons */
+        .ce-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0 0.5rem;
+            min-width: 28px;
+            text-align: center;
+            color: var(--text-secondary);
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-secondary);
+        }
+
+        .ce-select {
+            height: 32px;
+            padding: 0 0.5rem;
+            border: none;
+            background: var(--bg-secondary);
+            color: var(--text);
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        /* Play/stop toggle buttons */
+        .ce-toggle-btn {
+            padding: 0 0.75rem;
+            height: 32px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius, 6px);
+            background: var(--bg);
+            color: var(--text);
+            font-size: 0.85rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .ce-toggle-btn:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .ce-toggle-btn.active,
+        .ce-toggle-btn.playing {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .ce-toggle-btn.playing {
+            background: #e74c3c;
+            border-color: #e74c3c;
+        }
+
+        .ce-toggle-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Checkbox toggles */
+        .ce-checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            color: var(--text);
+            cursor: pointer;
+            padding: 0 0.5rem;
+        }
+
+        .ce-checkbox-label input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        /* Clear/delete buttons */
+        .ce-danger-btn {
+            padding: 0 0.75rem;
+            height: 32px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius, 6px);
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .ce-danger-btn:hover {
+            background: #ef4444;
+            border-color: #ef4444;
+            color: white;
+        }
+
+        /* Section label in controls */
+        .ce-section-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-right: 0.25rem;
+        }
+
+        /* Stop token - matches other cards but muted */
+        .chord-card.stop-token {
+            background: var(--bg);
+            opacity: 0.7;
+        }
+
+        .chord-card.stop-token:hover {
+            opacity: 1;
+        }
+
+        .chord-card.stop-token .chord-name {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .chord-card.stop-token .chord-numeral {
+            font-size: 0.8rem;
+        }
+
+        .grid-cell.has-stop .cell-chord {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* Beat grid - flows left to right like a musical chart */
+        .beat-grid-container {
+            padding: 1.25rem;
+            background: var(--bg);
+            border-top: 1px solid var(--border);
+        }
+
+        .beat-grid {
+            /* Container for the bars grid */
+        }
+
+        .grid-bars-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: flex-start;
+        }
+
+        .grid-bar-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .grid-bar {
+            display: flex;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--bg-secondary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .bar-label {
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            margin-top: 0.35rem;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        .grid-cell {
+            width: 80px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.15s;
+            position: relative;
+        }
+
+        .grid-cell:last-child {
+            border-right: none;
+        }
+
+        .grid-cell:hover {
+            background: var(--bg);
+        }
+
+        .grid-cell.has-chord {
+            background: var(--bg);
+        }
+
+        .grid-cell.drop-target {
+            background: var(--accent);
+            opacity: 0.3;
+        }
+
+        .grid-cell.playing {
+            background: var(--accent);
+            box-shadow: inset 0 0 0 2px rgba(255,255,255,0.3);
+        }
+
+        .grid-cell.playing .cell-chord {
+            color: white;
+        }
+
+        .grid-cell.playing .cell-numeral {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .grid-cell .cell-chord {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .grid-cell .cell-numeral {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            opacity: 0.7;
+        }
+
+        .grid-cell .cell-empty {
+            color: var(--text-secondary);
+            opacity: 0.25;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        .grid-cell .cell-controls {
+            position: absolute;
+            top: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+            gap: 2px;
+        }
+
+        .grid-cell:hover .cell-controls {
+            display: flex;
+        }
+
+        .cell-control-btn {
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            font-size: 0.7rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        .cell-control-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+
+        /* Instructions */
+        .instructions {
+            margin-top: 1rem;
+            padding: 0.75rem 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .instructions strong {
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        /* Inversion popup */
+        .inversion-popup {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 0.5rem;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: none;
+        }
+
+        .inversion-popup.active {
+            display: block;
+        }
+
+        .inversion-row {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .inversion-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .inversion-btn {
+            padding: 0.25rem 0.5rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            background: var(--bg-secondary);
+            color: var(--text);
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .inversion-btn:hover,
+        .inversion-btn.active {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: white;
+        }
+
+        /* Selected cell state */
+        .grid-cell.selected {
+            box-shadow: inset 0 0 0 2px var(--accent);
+            background: var(--bg);
+        }
+
+        .grid-cell.selected .cell-chord {
+            color: var(--accent);
+        }
+
+        /* Cell main content with adjusters */
+        .cell-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            padding: 2px;
+            gap: 2px;
+        }
+
+        .cell-chord-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .cell-adjuster {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1px;
+            opacity: 0.4;
+            transition: opacity 0.15s;
+        }
+
+        .grid-cell:hover .cell-adjuster,
+        .grid-cell.selected .cell-adjuster {
+            opacity: 1;
+        }
+
+        .adj-btn {
+            width: 16px;
+            height: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            font-size: 8px;
+            cursor: pointer;
+            color: var(--text-secondary);
+            padding: 0;
+            line-height: 1;
+        }
+
+        .adj-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--bg-secondary);
+        }
+
+        .adj-label {
+            font-size: 9px;
+            color: var(--text-secondary);
+            text-transform: lowercase;
+            line-height: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .adj-value {
+            font-size: 8px;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        /* Cell indicators (octave/inversion badges) */
+        .cell-indicators {
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+
+        /* Chord controls content (collapsible) */
+        .chord-controls-content {
+            padding: 0.75rem 1rem;
+            background: linear-gradient(to bottom, var(--bg-secondary), var(--bg));
+            border-top: 1px solid var(--border);
+        }
+
+        .chord-controls-content.hidden {
+            display: none;
+        }
+
+        .chord-controls-content .ce-controls-row {
+            margin-bottom: 0.5rem;
+        }
+
+        .chord-controls-content .ce-controls-row:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .ce-controls-row {
+                gap: 0.4rem;
+            }
+
+            .ce-section-label {
+                display: none;
+            }
+
+            .ce-btn {
+                width: 28px;
+                height: 28px;
+                font-size: 1rem;
+            }
+
+            .ce-label {
+                height: 28px;
+                font-size: 0.8rem;
+                min-width: 24px;
+            }
+
+            .ce-toggle-btn {
+                height: 28px;
+                font-size: 0.8rem;
+                padding: 0 0.5rem;
+            }
+
+            .grid-cell {
+                width: 80px;
+                height: 65px;
+            }
+
+            .chord-card {
+                padding: 0.5rem 0.75rem;
+                min-width: 50px;
+            }
+
+            .adj-btn {
+                width: 14px;
+                height: 12px;
+                font-size: 7px;
+            }
+
+            .adj-label {
+                font-size: 8px;
+            }
+
+            .adj-value {
+                font-size: 7px;
+            }
+
+            .instructions {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="explorer-page">
+        <nav class="explorer-nav">
+            <a href="/" class="back-link">
+                <span>&larr;</span>
+                <span>Back to Songbook</span>
+            </a>
+        </nav>
+
+        <header class="explorer-header">
+            <h1>Chord Progression Explorer</h1>
+            <p class="tagline">Build and hear progressions in any key</p>
+        </header>
+
+        <!-- Key Selector -->
+        <div class="key-selector">
+            <label for="key-select">Key:</label>
+            <select id="key-select">
+                <option value="C">C</option>
+                <option value="G" selected>G</option>
+                <option value="D">D</option>
+                <option value="A">A</option>
+                <option value="E">E</option>
+                <option value="B">B</option>
+                <option value="F#">F#</option>
+                <option value="F">F</option>
+                <option value="Bb">Bb</option>
+                <option value="Eb">Eb</option>
+                <option value="Ab">Ab</option>
+                <option value="Db">Db</option>
+            </select>
+        </div>
+
+        <!-- Chord Palette -->
+        <section class="chord-palette">
+            <div class="chord-row" id="non-diatonic-row">
+                <span class="chord-row-label">Non-Diatonic</span>
+            </div>
+            <div class="chord-row" id="diatonic-row">
+                <span class="chord-row-label">Diatonic</span>
+            </div>
+        </section>
+
+        <!-- Grid Card with disclosure buttons -->
+        <div class="explorer-card">
+            <!-- Title row with settings toggle -->
+            <div class="explorer-title-row">
+                <h2 class="explorer-title">Progression</h2>
+                <div class="explorer-controls">
+                    <button id="grid-toggle" class="ce-disclosure-btn" title="Toggle settings">
+                        ⚙️ Settings <span class="ce-disclosure-arrow">▲</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid Controls (collapsible) -->
+            <div id="grid-content" class="ce-content">
+                <div class="ce-controls-row">
+                    <span class="ce-section-label">Bars</span>
+                    <div class="ce-group">
+                        <button class="ce-btn" id="bars-down" title="Fewer bars">−</button>
+                        <span class="ce-label" id="bars-value">4</span>
+                        <button class="ce-btn" id="bars-up" title="More bars">+</button>
+                    </div>
+
+                    <span class="ce-section-label">Time</span>
+                    <div class="ce-group">
+                        <select id="time-sig-select" class="ce-select">
+                            <option value="2/2" selected>2/2</option>
+                            <option value="4/4">4/4</option>
+                            <option value="3/4">3/4</option>
+                            <option value="6/8">6/8</option>
+                        </select>
+                    </div>
+
+                    <span class="ce-section-label">Tempo</span>
+                    <div class="ce-group">
+                        <button class="ce-btn" id="tempo-down" title="Slower">−</button>
+                        <span class="ce-label" id="tempo-value">120</span>
+                        <button class="ce-btn" id="tempo-up" title="Faster">+</button>
+                    </div>
+
+                    <button class="ce-toggle-btn" id="play-btn">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">Play</span>
+                    </button>
+
+                    <label class="ce-checkbox-label">
+                        <input type="checkbox" id="loop-toggle" checked>
+                        Loop
+                    </label>
+
+                    <label class="ce-checkbox-label">
+                        <input type="checkbox" id="vibrato-toggle">
+                        Vibrato
+                    </label>
+
+                    <button class="ce-danger-btn" id="clear-btn">Clear</button>
+                </div>
+            </div>
+
+            <!-- Chord Controls (collapsible, shown when chord selected) -->
+            <div id="chord-content" class="chord-controls-content hidden">
+                <!-- Content dynamically rendered by grid.js -->
+            </div>
+
+            <!-- Beat Grid -->
+            <div class="beat-grid-container">
+                <div class="beat-grid" id="beat-grid"></div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <strong>Desktop:</strong> Drag chords to the grid &nbsp;|&nbsp;
+            <strong>Mobile:</strong> Tap a chord, then tap a cell to place it<br>
+            <strong>Tip:</strong> Click a placed chord to modify it with the 🎵 Chord controls
+        </div>
+    </div>
+
+    <script type="module" src="js/chord-explorer/main.js"></script>
+</body>
+</html>
