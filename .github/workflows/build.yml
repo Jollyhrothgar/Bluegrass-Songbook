@@ -5,6 +5,15 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  # Trigger deploy after content-modifying workflows complete
+  # (Pushes from GITHUB_TOKEN don't trigger workflows, so we use workflow_run)
+  workflow_run:
+    workflows:
+      - "Process Song Submission"
+      - "Process Song Correction"
+      - "Process Tune Request"
+    types: [completed]
+    branches: [main]
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 concurrency:
@@ -13,10 +22,15 @@ concurrency:
 
 jobs:
   verify:
+    # Skip if triggered by a failed workflow_run
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # For workflow_run, checkout main at HEAD to get the newly pushed commit
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || '' }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -39,7 +53,10 @@ jobs:
 
   deploy:
     needs: verify
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    # Deploy on: direct push to main, OR successful workflow_run from content workflows
+    if: |
+      (github.ref == 'refs/heads/main' && github.event_name == 'push') ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
 
     permissions:
@@ -53,6 +70,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # For workflow_run, checkout main at HEAD to get the newly pushed commit
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || '' }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
