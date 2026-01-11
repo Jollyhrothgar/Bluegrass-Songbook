@@ -237,7 +237,13 @@
                     </div>
 
                     <div class="song-input-container">
-                        <label for="editor-content">Song Content (paste chord sheets here):</label>
+                        <div class="editor-content-header">
+                            <label for="editor-content">Song Content (paste chord sheets here):</label>
+                            <label class="auto-detect-label" title="Automatically clean up pasted content from chord sites like Ultimate Guitar or ChordU">
+                                <input type="checkbox" id="editor-auto-detect" checked>
+                                Auto-detect format
+                            </label>
+                        </div>
                         <textarea id="editor-content" placeholder="Paste a song with chords above lyrics, or type in ChordPro format:
 
 G                    C              G

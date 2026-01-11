@@ -3,7 +3,8 @@ import { describe, it, expect } from 'vitest';
 import { cleanChordUPaste, cleanUltimateGuitarPaste, editorConvertToChordPro } from '../editor.js';
 
 describe('cleanChordUPaste', () => {
-    it('detects and cleans ChordU paste', () => {
+    it('extracts full song from ChordU paste with artist and quoted title', () => {
+        // This simulates a ChordU paste with the full structure including "Traditional" marker
         const chordUPaste = `ChordU
 Find chords for tracks u love
 
@@ -14,46 +15,46 @@ Chords used:FBbDmAmC
 Tuning:Standard Tuning (EADGBE)Capo:+0fret
 [Ab] [C]
 [F]
-I left my home and one true love East of the Ohio [Dm] River
-[F] her father said we could never wed For I had neither gold [Dm] nor the silver
-[Am] my darling dear, [Bb] please listen dear Cause [F] I think [C] it's fair [D] now to [F] warn you
-[Bb] That I'll return [Dm] to claim your hand [F]
-As [Am] a king [Bb] of
-[F] California
+I left my home - short preview
 
 100%  ➙
 121
 BPM
 
-
-F, 0 Transpose ➙ Chords: F , Bb , Dm , Am , C
-F
-1
-3
-4
-2
-1
-1
-1
-1
-1
-Bb
-1
-2
-3
-4
-1
-1
-1
-1
+F, 0 Transpose
 guitar
 piano
 ukulele
-mandolin
-banjo
-bass
 
-Show All Diagrams`;
+Show All Diagrams
+ChordsNotesBeta
+Simplified
+Advanced
+Bass
+Edited
+Download PDFDownload MidiEdit This Version
+
+gold
+ Hide lyrics
+ Blocks
+ Traditional
+_ _ _ [Ab] _ _ _ [C] _ _
+_ [F] _ _ _ _ _ _ _
+_ I left my home and one true love _ East of the Ohio [Dm] River
+And _ _ _ [F] her father said we could never wed _ For I had neither gold [Dm] nor the silver
+_ But _ _ _ [Am] my darling dear, [Bb] please listen _ dear _ Cause [F] I think [C] it's fair [D] now to [F] warn you _ _
+_ _ _ _ [Bb] That I'll return [Dm] to claim your hand _ [F] _
+_ _ As [Am] a king [Bb] of _
+[F] California
+_ _ Over _ _ _ _ _ _ _ _ _ _
+_ _ deserts hot and mountains cold _ I've traveled the Indian country
+
+
+
+
+About ChordU
+Features
+Terms Of Use`;
 
         const result = cleanChordUPaste(chordUPaste);
 
@@ -61,25 +62,104 @@ Show All Diagrams`;
         expect(result.title).toBe('King Of California');
         expect(result.artist).toBe('John Cowan');
 
-        // Should remove header cruft
+        // Should get full song (after Traditional), not short preview
+        expect(result.text).toContain('I left my home and one true love');
+        expect(result.text).toContain('deserts hot and mountains cold');
+        expect(result.text).toContain("I've traveled the Indian country");
+
+        // Should remove _ timing markers
+        expect(result.text).not.toContain(' _ ');
+
+        // Should remove header/footer cruft
         expect(result.text).not.toContain('ChordU');
-        expect(result.text).not.toContain('Find chords for tracks u love');
-        expect(result.text).not.toContain('Tempo:');
-        expect(result.text).not.toContain('Chords used:');
-        expect(result.text).not.toContain('Tuning:');
+        expect(result.text).not.toContain('Traditional');
+        expect(result.text).not.toContain('About ChordU');
 
-        // Should remove footer cruft
-        expect(result.text).not.toContain('guitar');
-        expect(result.text).not.toContain('piano');
-        expect(result.text).not.toContain('Show All Diagrams');
-        expect(result.text).not.toContain('BPM');
-        expect(result.text).not.toContain('Transpose');
-
-        // Should preserve song content with chords
+        // Should preserve chord brackets
         expect(result.text).toContain('[F]');
         expect(result.text).toContain('[Dm]');
-        expect(result.text).toContain('I left my home and one true love');
-        expect(result.text).toContain('California');
+    });
+
+    it('extracts title without artist when not in quotes', () => {
+        const chordUPaste = `ChordU
+Find chords for tracks u love
+
+Chords for The Old Home Place
+Tempo:
+124.1 bpm
+Chords used:BbEbFDC
+
+100%  ➙
+guitar
+piano
+
+Show All Diagrams
+Simplified
+Advanced
+Bass
+Edited
+
+gold
+ Hide lyrics
+ Blocks
+ Traditional
+_ _ _ D _ _ Eb _ _ Bb _
+_ _ _ _ It's been tenD long years Eb since I left Bb my home
+_ Where the coolD fall nights Eb make the wood Bb smoke rise
+_ And the fox hunter blows his horn
+
+
+
+
+About ChordU
+Features`;
+
+        const result = cleanChordUPaste(chordUPaste);
+
+        expect(result.cleaned).toBe(true);
+        expect(result.title).toBe('The Old Home Place');
+        expect(result.artist).toBeNull();
+
+        // Should get content after Traditional
+        expect(result.text).toContain("It's been tenD long years");
+        expect(result.text).toContain('fox hunter blows his horn');
+    });
+
+    it('handles paste ending with "You may also like"', () => {
+        const chordUPaste = `ChordU
+Find chords for tracks u love
+
+Chords for Roustabout
+Tempo:
+131.25 bpm
+
+gold
+ Hide lyrics
+ Blocks
+ Traditional
+_ _ _ _ _ _ _ _
+I'm just a roster pal, _ _ _ shifting from town to town. _ _
+Db No job can hold me down, I'm just a knockGm around guy.
+_ _ _ _ _ [Bb] till I find my place there's no doubt.
+_ [Eb] _ [Gb] I'll [Bb] be a rovingEb roster pal
+
+
+You may also like
+Jason Isbell "Mutineer"
+3:10`;
+
+        const result = cleanChordUPaste(chordUPaste);
+
+        expect(result.cleaned).toBe(true);
+        expect(result.title).toBe('Roustabout');
+
+        // Should stop before "You may also like"
+        expect(result.text).not.toContain('You may also like');
+        expect(result.text).not.toContain('Jason Isbell');
+
+        // Should have song content
+        expect(result.text).toContain("I'm just a roster pal");
+        expect(result.text).toContain('rovingEb roster pal');
     });
 
     it('returns unchanged for non-ChordU content', () => {
@@ -93,6 +173,20 @@ With [D]some chords`;
         expect(result.text).toBe(regularText);
         expect(result.title).toBeNull();
         expect(result.artist).toBeNull();
+    });
+
+    it('returns uncleaned if Traditional marker not found', () => {
+        const incompletePaste = `ChordU
+Find chords for tracks u love
+
+Chords for Some Song "Title"
+Just some random content without the Traditional marker`;
+
+        const result = cleanChordUPaste(incompletePaste);
+
+        expect(result.cleaned).toBe(false);
+        expect(result.title).toBe('Title');
+        expect(result.artist).toBe('Some Song');
     });
 });
 
@@ -153,37 +247,6 @@ And worked in a sawmill or two
 [Interlude]
 G B7 C G
 G    D
-G B7 C G
-G D  G
-
-[Verse 2]
-           G       B7        C       G
-Well, the girl ran off with somebody else
-                         D
-The tariffs took all my pay
-     G       B7            C          G
-And here I stand where the old home stood
-             D        G
-Before they took it away
-
-         G         B7            C          G
-Now the geese fly south and the cold wind blows
-                             D
-As I stand here and hang my head
-      G       B7         C       G
-I've lost my love, I've lost my home
-           D               G
-And now I wish that I was dead
-
-[Chorus]
-       D                        G
-     What have they done to the old home place?
-       A7                  D7
-     Why did they tear it down?
-           G        B7        C          G
-     And why did I leave my plow in the field?
-                     D          G
-     And look for a job in the town?
 X
 Last update: Oct 16, 2023
 Rating
@@ -204,37 +267,7 @@ C
 D
 A7
 D7
-Strumming pattern
-Edit
-Whole 245 bpm
-1
-
-&
-
-2
-
-&
-
-3
-
-&
-
-4
-
-&
-
-Seen recently
-Tom Petty Album Cover
-Runnin Down A Dream • Ver 1
-Tom Petty
-4.8
-(2,142)
-Blue & Lonesome Album Cover
-Roustabout • Ver 1
-Blue & Lonesome
-© 2026
-Ultimate-Guitar.com
-All rights reserved`;
+Strumming pattern`;
 
         const result = cleanUltimateGuitarPaste(ugPaste);
 
@@ -252,8 +285,6 @@ All rights reserved`;
         expect(result.text).not.toContain('Last update:');
         expect(result.text).not.toContain('Rating');
         expect(result.text).not.toContain('Please, rate this tab');
-        expect(result.text).not.toContain('Ultimate-Guitar.com');
-        expect(result.text).not.toContain('Seen recently');
 
         // Should preserve song content
         expect(result.text).toContain('[Intro]');

@@ -29,6 +29,7 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 
 // Module-level state
 let editorDetectedKey = null;
+let autoDetectFormat = true; // Whether to auto-clean pasted content
 
 // DOM element references (set by init)
 let editorPanelEl = null;
@@ -49,6 +50,7 @@ let hintsBtnEl = null;
 let hintsPanelEl = null;
 let hintsBackdropEl = null;
 let hintsCloseEl = null;
+let autoDetectCheckboxEl = null;
 
 // Other DOM references
 let navSearchEl = null;
@@ -231,13 +233,13 @@ export function editorConvertToChordPro(text) {
 
 /**
  * Clean ChordU paste format
- * ChordU uses [Chord] notation inline but adds _ timing placeholders and lots of UI cruft
+ * ChordU pastes have two song sections: a short preview and a full version with _ timing markers.
+ * We want the full version, which comes after the "Traditional" display mode selector.
  */
 export function cleanChordUPaste(text) {
     // Detect ChordU paste
     const isChordU = text.includes('ChordU') ||
-                     text.includes('Find chords for tracks u love') ||
-                     /Chords for .+ ".+"/.test(text);
+                     text.includes('Find chords for tracks u love');
 
     if (!isChordU) {
         return { text, title: null, artist: null, cleaned: false };
@@ -246,80 +248,74 @@ export function cleanChordUPaste(text) {
     const lines = text.split('\n');
     let title = null;
     let artist = null;
-    let songStartIndex = -1;
-    let songEndIndex = lines.length;
 
-    // Extract title and artist from "Chords for Artist "Title""
+    // Extract title and artist - handle both formats:
+    // "Chords for Artist "Title"" (with artist and quoted title)
+    // "Chords for Title" (just title, no quotes)
     for (let i = 0; i < Math.min(lines.length, 20); i++) {
         const line = lines[i];
-        const match = line.match(/Chords for (.+?) "(.+?)"/);
-        if (match) {
-            artist = match[1].trim();
-            title = match[2].trim();
+        // Try format with artist and quoted title first
+        const matchWithArtist = line.match(/Chords for (.+?) "(.+?)"/);
+        if (matchWithArtist) {
+            artist = matchWithArtist[1].trim();
+            title = matchWithArtist[2].trim();
+            break;
+        }
+        // Try format with just title (no quotes)
+        const matchTitleOnly = line.match(/^Chords for ([^"]+)$/);
+        if (matchTitleOnly) {
+            title = matchTitleOnly[1].trim();
             break;
         }
     }
 
-    // Find song content start - look for first line with chord brackets after header
+    // Find full song section - starts after "Traditional" display mode line
+    let fullSongStart = -1;
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i].trim();
-        // Skip header lines
-        if (line.startsWith('ChordU') ||
-            line.includes('Find chords for tracks u love') ||
-            line.includes('Chords for ') ||
-            line.startsWith('Tempo:') ||
-            line.startsWith('Chords used:') ||
-            line.startsWith('Tuning:') ||
-            line.match(/^\d+(\.\d+)?\s*bpm$/i)) {
-            continue;
-        }
-        // Found content start when we see chord brackets or meaningful lyrics
-        if (line.includes('[') && line.includes(']')) {
-            songStartIndex = i;
+        if (line === 'Traditional') {
+            fullSongStart = i + 1;
             break;
         }
     }
 
-    // Find song content end
-    for (let i = songStartIndex; i < lines.length; i++) {
-        const line = lines[i].trim();
-        // Stop at UI elements and footer
-        if (line === 'guitar' ||
-            line === 'piano' ||
-            line === 'ukulele' ||
-            line.startsWith('Show All Diagrams') ||
-            line.startsWith('Download PDF') ||
-            line.startsWith('You may also like') ||
-            line.startsWith('About ChordU') ||
-            line.match(/^[1-4\s]+$/) ||  // Chord diagram fret numbers
-            line === 'Simplified' ||
-            line === 'Advanced' ||
-            line === 'Bass' ||
-            line === 'Edited' ||
-            line.includes('Transpose') ||
-            line.match(/^\d+%\s*➙/) ||  // "100% ➙" BPM control
-            line.match(/^\d+\s*BPM$/i)) {
-            songEndIndex = i;
-            break;
+    // If we can't find "Traditional", fall back to looking for content after display controls
+    if (fullSongStart === -1) {
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (line === 'Hide lyrics' || line === 'Blocks') {
+                fullSongStart = i + 1;
+                break;
+            }
         }
     }
 
-    if (songStartIndex === -1) {
+    if (fullSongStart === -1) {
         return { text, title, artist, cleaned: false };
     }
 
+    // Find full song end - before footer
+    let fullSongEnd = lines.length;
+    for (let i = fullSongStart; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (line.startsWith('About ChordU') ||
+            line.startsWith('You may also like')) {
+            fullSongEnd = i;
+            break;
+        }
+    }
+
     // Extract and clean song lines
-    const songLines = lines.slice(songStartIndex, songEndIndex);
+    const songLines = lines.slice(fullSongStart, fullSongEnd);
     const cleanedLines = songLines
         .map(line => {
-            // Remove _ timing placeholders (but keep the spaces/structure)
-            // Replace _ with nothing, but preserve spacing around chords
+            // Remove _ timing placeholders, normalize whitespace
             return line.replace(/\s*_\s*/g, ' ').replace(/\s+/g, ' ').trim();
         })
         .filter(line => {
-            // Remove empty lines and lines that are just whitespace
+            // Remove empty lines
             if (!line.trim()) return false;
-            // Remove lines that are just chord names without context (chord list)
+            // Remove lines that are just a single chord name (chord list remnants)
             if (line.match(/^[A-G][#b]?(?:m|maj|min|dim|aug|sus|add|7|9|11|13)*$/)) return false;
             return true;
         });
@@ -661,6 +657,7 @@ export function initEditor(options) {
         hintsPanel,
         hintsBackdrop,
         hintsClose,
+        autoDetectCheckbox,
         navSearch,
         navAddSong,
         navFavorites,
@@ -686,6 +683,7 @@ export function initEditor(options) {
     hintsPanelEl = hintsPanel;
     hintsBackdropEl = hintsBackdrop;
     hintsCloseEl = hintsClose;
+    autoDetectCheckboxEl = autoDetectCheckbox;
     navSearchEl = navSearch;
     navAddSongEl = navAddSong;
     navFavoritesEl = navFavorites;
@@ -708,6 +706,12 @@ export function initEditor(options) {
                 let text = editorContentEl.value;
                 let statusMessage = '';
                 let wasImported = false;
+
+                // Skip auto-detection if disabled
+                if (!autoDetectFormat) {
+                    updateEditorPreview();
+                    return;
+                }
 
                 // Try ChordU first (already has [chord] notation)
                 const chordUResult = cleanChordUPaste(text);
@@ -765,6 +769,13 @@ export function initEditor(options) {
         editorNashvilleEl.addEventListener('change', (e) => {
             setEditorNashvilleMode(e.target.checked);
             updateEditorPreview();
+        });
+    }
+
+    // Auto-detect format toggle
+    if (autoDetectCheckboxEl) {
+        autoDetectCheckboxEl.addEventListener('change', (e) => {
+            autoDetectFormat = e.target.checked;
         });
     }
 

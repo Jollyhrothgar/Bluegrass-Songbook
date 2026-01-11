@@ -3032,6 +3032,32 @@ mark {
     flex: 1;
 }
 
+.editor-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.editor-content-header > label:first-child {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+.auto-detect-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.auto-detect-label input {
+    cursor: pointer;
+}
+
 .song-input-container label {
     font-size: 0.9rem;
     color: var(--text-secondary);
