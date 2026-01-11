@@ -1,0 +1,14 @@
+id: love-for-an-angel
+title: Love For An Angel
+artist: Ronnie Bowman
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: manual
+    submitted_by: github:Jollyhrothgar
+    submitted_at: '2026-01-11'
+    github_issue: 142
