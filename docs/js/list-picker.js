@@ -1,7 +1,7 @@
 // Unified ListPicker component for Bluegrass Songbook
 // Used in song view and search results for adding songs to lists
 
-import { userLists, FAVORITES_LIST_ID } from './state.js';
+import { userLists, FAVORITES_LIST_ID, allSongs } from './state.js';
 import {
     createList, addSongToList, removeSongFromList,
     isFavorite, toggleFavorite, isSongInAnyList,
@@ -109,6 +109,43 @@ function renderPickerContent(songId) {
 }
 
 /**
+ * Generate a preview string for a list (song count + titles)
+ * @param {Object} list - The list object
+ * @param {number} maxChars - Maximum characters for the preview
+ * @returns {string} Preview like "(3) Blue Moon of Kentucky, Foggy..."
+ */
+function getListPreview(list, maxChars = 45) {
+    const count = list.songs.length;
+    if (count === 0) return '(empty)';
+
+    // Build preview from song titles
+    const titles = [];
+    for (const songId of list.songs.slice(0, 4)) {
+        const song = allSongs.find(s => s.id === songId);
+        if (song) {
+            titles.push(song.title);
+        }
+    }
+
+    if (titles.length === 0) return `(${count})`;
+
+    // Join titles and truncate intelligently
+    let preview = titles.join(', ');
+    if (preview.length > maxChars) {
+        // Truncate at last comma before maxChars, or just cut
+        const truncated = preview.substring(0, maxChars);
+        const lastComma = truncated.lastIndexOf(',');
+        if (lastComma > maxChars / 2) {
+            preview = truncated.substring(0, lastComma) + '...';
+        } else {
+            preview = truncated.replace(/,?\s*\S*$/, '...');
+        }
+    }
+
+    return `(${count}) ${preview}`;
+}
+
+/**
  * Render folders and lists recursively for the picker
  */
 function renderFoldersAndListsForPicker(songId, parentId, depth) {
@@ -139,11 +176,15 @@ function renderFoldersAndListsForPicker(songId, parentId, depth) {
     // Render lists
     listsAtLevel.forEach(list => {
         const isChecked = list.songs.includes(songId);
+        const preview = getListPreview(list);
         html += `
             <label class="list-picker-option" style="padding-left: ${indent + 1.25}rem" data-list-id="${list.id}">
                 <input type="checkbox" data-type="list" data-list-id="${list.id}" ${isChecked ? 'checked' : ''}>
                 <span>&#9776;</span>
-                <span>${escapeHtml(list.name)}</span>
+                <span class="list-picker-label">
+                    <span class="list-picker-name">${escapeHtml(list.name)}</span>
+                    <span class="list-picker-preview">${escapeHtml(preview)}</span>
+                </span>
             </label>
         `;
     });

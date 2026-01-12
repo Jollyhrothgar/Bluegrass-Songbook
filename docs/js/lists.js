@@ -8,10 +8,12 @@ import {
     // Centralized list viewing state
     viewingListId, setViewingListId,
     viewingPublicList, setViewingPublicList,
-    FAVORITES_LIST_ID
+    FAVORITES_LIST_ID,
+    listEditMode, setListEditMode,
+    multiSelectMode, setMultiSelectMode, clearSelectedSongs
 } from './state.js';
 import { escapeHtml, generateLocalId } from './utils.js';
-import { showRandomSongs } from './search-core.js';
+import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 
@@ -275,6 +277,8 @@ let listPickerBtnEl = null;
 let listPickerDropdownEl = null;
 let printListBtnEl = null;
 let shareListBtnEl = null;
+let editListBtnEl = null;
+let selectListBtnEl = null;
 
 // Callbacks (set by init)
 let renderResultsFn = null;
@@ -1816,6 +1820,28 @@ function renderListViewUI(listName, songIds, status) {
         }
     }
 
+    // Show edit button for own lists (allows removing songs)
+    if (editListBtnEl) {
+        if (ownership.isOwner) {
+            editListBtnEl.classList.remove('hidden');
+            // Update button text based on current edit mode
+            editListBtnEl.textContent = listEditMode ? 'Done' : 'Edit';
+        } else {
+            editListBtnEl.classList.add('hidden');
+        }
+    }
+
+    // Show select button for own lists (allows multi-select batch operations)
+    if (selectListBtnEl) {
+        if (ownership.isOwner) {
+            selectListBtnEl.classList.remove('hidden');
+            // Update button text based on current select mode
+            selectListBtnEl.textContent = multiSelectMode ? 'Done' : 'Select';
+        } else {
+            selectListBtnEl.classList.add('hidden');
+        }
+    }
+
     // Hide the old copy button (now consolidated into duplicate/import)
     const copyListBtn = document.getElementById('copy-list-btn');
     if (copyListBtn) copyListBtn.classList.add('hidden');
@@ -1846,6 +1872,20 @@ export function clearListView() {
     if (followListBtn) followListBtn.classList.add('hidden');
     const claimListBtn = document.getElementById('claim-list-btn');
     if (claimListBtn) claimListBtn.classList.add('hidden');
+    // Reset edit mode when leaving list view
+    if (editListBtnEl) {
+        editListBtnEl.classList.add('hidden');
+        editListBtnEl.textContent = 'Edit';
+    }
+    setListEditMode(false);
+    // Reset multi-select mode when leaving list view
+    if (selectListBtnEl) {
+        selectListBtnEl.classList.add('hidden');
+        selectListBtnEl.textContent = 'Select';
+    }
+    setMultiSelectMode(false);
+    clearSelectedSongs();
+    hideBatchOperationsBar();
 }
 
 /**
@@ -2083,9 +2123,55 @@ export function initLists(options) {
     listPickerDropdownEl = listPickerDropdown;
     printListBtnEl = printListBtn;
     shareListBtnEl = document.getElementById('share-list-btn');
+    editListBtnEl = document.getElementById('edit-list-btn');
+    selectListBtnEl = document.getElementById('select-list-btn');
     renderResultsFn = renderResults;
     closeSidebarFn = closeSidebar;
     pushHistoryStateFn = pushHistoryState;
+
+    // Edit list button - toggle edit mode (show remove buttons)
+    editListBtnEl?.addEventListener('click', () => {
+        const newEditMode = !listEditMode;
+        setListEditMode(newEditMode);
+        // Exit multi-select mode when entering edit mode
+        if (newEditMode && multiSelectMode) {
+            setMultiSelectMode(false);
+            clearSelectedSongs();
+            if (selectListBtnEl) selectListBtnEl.textContent = 'Select';
+        }
+        // Update button text
+        if (editListBtnEl) {
+            editListBtnEl.textContent = newEditMode ? 'Done' : 'Edit';
+        }
+        // Re-render results to show/hide remove buttons
+        if (viewingListId) {
+            showListView(viewingListId);
+        }
+    });
+
+    // Select list button - toggle multi-select mode (show checkboxes)
+    selectListBtnEl?.addEventListener('click', () => {
+        const newSelectMode = !multiSelectMode;
+        setMultiSelectMode(newSelectMode);
+        // Exit edit mode when entering select mode
+        if (newSelectMode && listEditMode) {
+            setListEditMode(false);
+            if (editListBtnEl) editListBtnEl.textContent = 'Edit';
+        }
+        // Clear selections and hide batch bar when exiting select mode
+        if (!newSelectMode) {
+            clearSelectedSongs();
+            hideBatchOperationsBar();
+        }
+        // Update button text
+        if (selectListBtnEl) {
+            selectListBtnEl.textContent = newSelectMode ? 'Done' : 'Select';
+        }
+        // Re-render results to show/hide checkboxes
+        if (viewingListId) {
+            showListView(viewingListId);
+        }
+    });
 
     // Share list button - opens share modal
     shareListBtnEl?.addEventListener('click', async () => {

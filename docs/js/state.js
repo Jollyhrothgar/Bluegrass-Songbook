@@ -266,10 +266,26 @@ export const FAVORITES_LIST_ID = 'favorites';
 export let userLists = [];
 export let viewingListId = null;  // ID of list being viewed (or null)
 export let viewingPublicList = null;  // { list, songs, isOwner } when viewing shared list
+export let listEditMode = false;  // Edit mode for list view (shows remove buttons)
+export let multiSelectMode = false;  // Multi-select mode for batch operations
+export let selectedSongIds = new Set();  // Selected song IDs for batch operations
 
 export function setUserLists(lists) { userLists = lists; }
 export function setViewingListId(id) { viewingListId = id; notifyChange('viewingListId'); }
 export function setViewingPublicList(data) { viewingPublicList = data; notifyChange('viewingPublicList'); }
+export function setListEditMode(value) { listEditMode = value; notifyChange('listEditMode'); }
+export function setMultiSelectMode(value) { multiSelectMode = value; notifyChange('multiSelectMode'); }
+export function setSelectedSongIds(ids) { selectedSongIds = ids; notifyChange('selectedSongIds'); }
+export function toggleSongSelection(songId) {
+    if (selectedSongIds.has(songId)) {
+        selectedSongIds.delete(songId);
+    } else {
+        selectedSongIds.add(songId);
+    }
+    notifyChange('selectedSongIds');
+}
+export function clearSelectedSongs() { selectedSongIds.clear(); notifyChange('selectedSongIds'); }
+export function selectAllSongs(songIds) { selectedSongIds = new Set(songIds); notifyChange('selectedSongIds'); }
 
 // ============================================
 // HISTORY STATE
@@ -379,6 +395,9 @@ const stateGetters = {
     userLists: () => userLists,
     viewingListId: () => viewingListId,
     viewingPublicList: () => viewingPublicList,
+    listEditMode: () => listEditMode,
+    multiSelectMode: () => multiSelectMode,
+    selectedSongIds: () => selectedSongIds,
 
     // History
     historyInitialized: () => historyInitialized,
@@ -445,6 +464,9 @@ const stateSetters = {
     userLists: setUserLists,
     viewingListId: setViewingListId,
     viewingPublicList: setViewingPublicList,
+    listEditMode: setListEditMode,
+    multiSelectMode: setMultiSelectMode,
+    selectedSongIds: setSelectedSongIds,
 
     // History
     historyInitialized: setHistoryInitialized,

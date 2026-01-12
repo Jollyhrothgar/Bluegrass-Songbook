@@ -1,11 +1,13 @@
 // Core search functionality for Bluegrass Songbook
 
-import { allSongs, songGroups } from './state.js';
+import { allSongs, songGroups, listEditMode, userLists, multiSelectMode, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs } from './state.js';
 import { highlightMatch, escapeHtml, isTabOnlyWork } from './utils.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
     isFavorite, reorderFavoriteItem, showFavorites,
-    isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, isViewingOwnList
+    isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, isViewingOwnList,
+    removeSongFromList, showListView, FAVORITES_LIST_ID, toggleFavorite,
+    addSongToList
 } from './lists.js';
 import { openSong, showVersionPicker } from './song-view.js';
 import { openWork } from './work-view.js';
@@ -32,6 +34,334 @@ let currentDropPosition = null;
 
 // Track which containers have been initialized (WeakMap for proper GC if element is removed)
 const initializedContainers = new WeakMap();
+
+// Context menu state
+let activeContextMenu = null;
+
+/**
+ * Show context menu for a song in list view
+ * @param {number} x - Mouse X position
+ * @param {number} y - Mouse Y position
+ * @param {string} songId - The song ID
+ * @param {string} currentListId - The current list being viewed
+ */
+function showSongContextMenu(x, y, songId, currentListId) {
+    // Close any existing context menu
+    closeSongContextMenu();
+
+    // Get available lists (exclude current list and favorites)
+    const availableLists = userLists.filter(list =>
+        list.id !== currentListId &&
+        list.id !== FAVORITES_LIST_ID &&
+        list.id !== 'favorites'
+    );
+
+    // Build menu HTML
+    const menu = document.createElement('div');
+    menu.className = 'song-context-menu';
+
+    // Copy to submenu
+    let copyHtml = '<div class="context-menu-item context-menu-submenu" data-action="copy">';
+    copyHtml += '<span>Copy to...</span><span class="submenu-arrow">▶</span>';
+    copyHtml += '<div class="context-submenu">';
+    if (availableLists.length === 0) {
+        copyHtml += '<div class="context-menu-empty">No other lists</div>';
+    } else {
+        availableLists.forEach(list => {
+            copyHtml += `<div class="context-menu-item" data-action="copy-to" data-list-id="${list.id}">${escapeHtml(list.name)}</div>`;
+        });
+    }
+    copyHtml += '</div></div>';
+
+    // Move to submenu (only if owner)
+    let moveHtml = '';
+    if (isViewingOwnList()) {
+        moveHtml = '<div class="context-menu-item context-menu-submenu" data-action="move">';
+        moveHtml += '<span>Move to...</span><span class="submenu-arrow">▶</span>';
+        moveHtml += '<div class="context-submenu">';
+        if (availableLists.length === 0) {
+            moveHtml += '<div class="context-menu-empty">No other lists</div>';
+        } else {
+            availableLists.forEach(list => {
+                moveHtml += `<div class="context-menu-item" data-action="move-to" data-list-id="${list.id}">${escapeHtml(list.name)}</div>`;
+            });
+        }
+        moveHtml += '</div></div>';
+    }
+
+    menu.innerHTML = copyHtml + moveHtml;
+
+    // Position the menu
+    document.body.appendChild(menu);
+    const menuRect = menu.getBoundingClientRect();
+
+    // Adjust if would go off screen
+    let finalX = x;
+    let finalY = y;
+    if (x + menuRect.width > window.innerWidth) {
+        finalX = window.innerWidth - menuRect.width - 10;
+    }
+    if (y + menuRect.height > window.innerHeight) {
+        finalY = window.innerHeight - menuRect.height - 10;
+    }
+
+    menu.style.left = `${finalX}px`;
+    menu.style.top = `${finalY}px`;
+
+    // Handle menu item clicks
+    menu.addEventListener('click', (e) => {
+        const item = e.target.closest('.context-menu-item[data-action]');
+        if (!item) return;
+
+        const action = item.dataset.action;
+        const targetListId = item.dataset.listId;
+
+        if (action === 'copy-to' && targetListId) {
+            addSongToList(targetListId, songId);
+            closeSongContextMenu();
+        } else if (action === 'move-to' && targetListId) {
+            addSongToList(targetListId, songId);
+            if (currentListId === FAVORITES_LIST_ID || currentListId === 'favorites') {
+                toggleFavorite(songId);
+                showFavorites();
+            } else {
+                removeSongFromList(currentListId, songId);
+                showListView(currentListId);
+            }
+            closeSongContextMenu();
+        }
+    });
+
+    activeContextMenu = menu;
+
+    // Close menu on click outside
+    setTimeout(() => {
+        document.addEventListener('click', handleContextMenuOutsideClick);
+        document.addEventListener('contextmenu', handleContextMenuOutsideClick);
+    }, 0);
+}
+
+/**
+ * Close the active context menu
+ */
+function closeSongContextMenu() {
+    if (activeContextMenu) {
+        activeContextMenu.remove();
+        activeContextMenu = null;
+    }
+    document.removeEventListener('click', handleContextMenuOutsideClick);
+    document.removeEventListener('contextmenu', handleContextMenuOutsideClick);
+}
+
+/**
+ * Handle clicks outside the context menu
+ */
+function handleContextMenuOutsideClick(e) {
+    if (activeContextMenu && !activeContextMenu.contains(e.target)) {
+        closeSongContextMenu();
+    }
+}
+
+// Batch operations bar element reference
+let batchOperationsBar = null;
+
+/**
+ * Update the batch operations bar based on selection state
+ */
+function updateBatchOperationsBar() {
+    const count = selectedSongIds.size;
+    const viewingListId = getViewingListId();
+
+    if (count === 0 || !multiSelectMode || !viewingListId) {
+        hideBatchOperationsBar();
+        return;
+    }
+
+    showBatchOperationsBar(count, viewingListId);
+}
+
+/**
+ * Show the batch operations bar with current selection count
+ */
+function showBatchOperationsBar(count, currentListId) {
+    if (!batchOperationsBar) {
+        batchOperationsBar = document.createElement('div');
+        batchOperationsBar.className = 'batch-operations-bar';
+        document.body.appendChild(batchOperationsBar);
+    }
+
+    // Get available lists for copy/move (exclude current list and favorites)
+    const availableLists = userLists.filter(list =>
+        list.id !== currentListId &&
+        list.id !== FAVORITES_LIST_ID &&
+        list.id !== 'favorites'
+    );
+
+    // Build copy/move dropdown options
+    const listOptions = availableLists.length === 0
+        ? '<option disabled>No other lists</option>'
+        : availableLists.map(list => `<option value="${list.id}">${escapeHtml(list.name)}</option>`).join('');
+
+    batchOperationsBar.innerHTML = `
+        <div class="batch-bar-content">
+            <span class="batch-count">${count} selected</span>
+            <div class="batch-actions">
+                <button class="batch-select-all" title="Select all songs in list">Select All</button>
+                <button class="batch-clear" title="Clear selection">Clear</button>
+                <div class="batch-dropdown">
+                    <select class="batch-copy-select">
+                        <option value="">Copy to...</option>
+                        ${listOptions}
+                    </select>
+                </div>
+                <div class="batch-dropdown">
+                    <select class="batch-move-select">
+                        <option value="">Move to...</option>
+                        ${listOptions}
+                    </select>
+                </div>
+                <button class="batch-remove" title="Remove selected from list">Remove</button>
+            </div>
+        </div>
+    `;
+
+    // Event handlers
+    batchOperationsBar.querySelector('.batch-select-all')?.addEventListener('click', handleBatchSelectAll);
+    batchOperationsBar.querySelector('.batch-clear')?.addEventListener('click', handleBatchClear);
+    batchOperationsBar.querySelector('.batch-copy-select')?.addEventListener('change', handleBatchCopy);
+    batchOperationsBar.querySelector('.batch-move-select')?.addEventListener('change', handleBatchMove);
+    batchOperationsBar.querySelector('.batch-remove')?.addEventListener('click', handleBatchRemove);
+
+    batchOperationsBar.classList.add('visible');
+}
+
+/**
+ * Hide the batch operations bar
+ */
+export function hideBatchOperationsBar() {
+    if (batchOperationsBar) {
+        batchOperationsBar.classList.remove('visible');
+    }
+}
+
+/**
+ * Handle "Select All" button click
+ */
+function handleBatchSelectAll() {
+    const resultsDiv = document.getElementById('results');
+    if (!resultsDiv) return;
+
+    const songIds = Array.from(resultsDiv.querySelectorAll('.result-item'))
+        .map(item => item.dataset.id)
+        .filter(Boolean);
+
+    selectAllSongs(songIds);
+
+    // Update checkboxes visually
+    resultsDiv.querySelectorAll('.result-select-checkbox').forEach(cb => {
+        cb.checked = true;
+        cb.closest('.result-item')?.classList.add('selected');
+    });
+
+    updateBatchOperationsBar();
+}
+
+/**
+ * Handle "Clear" button click
+ */
+function handleBatchClear() {
+    clearSelectedSongs();
+
+    // Update checkboxes visually
+    const resultsDiv = document.getElementById('results');
+    if (resultsDiv) {
+        resultsDiv.querySelectorAll('.result-select-checkbox').forEach(cb => {
+            cb.checked = false;
+            cb.closest('.result-item')?.classList.remove('selected');
+        });
+    }
+
+    updateBatchOperationsBar();
+}
+
+/**
+ * Handle batch copy dropdown change
+ */
+function handleBatchCopy(e) {
+    const targetListId = e.target.value;
+    if (!targetListId) return;
+
+    const songIds = Array.from(selectedSongIds);
+    songIds.forEach(songId => {
+        addSongToList(targetListId, songId);
+    });
+
+    // Reset dropdown
+    e.target.value = '';
+
+    // Show feedback
+    const count = songIds.length;
+    const targetList = userLists.find(l => l.id === targetListId);
+    console.log(`Copied ${count} songs to ${targetList?.name || targetListId}`);
+}
+
+/**
+ * Handle batch move dropdown change
+ */
+function handleBatchMove(e) {
+    const targetListId = e.target.value;
+    if (!targetListId) return;
+
+    const currentListId = getViewingListId();
+    const songIds = Array.from(selectedSongIds);
+
+    songIds.forEach(songId => {
+        addSongToList(targetListId, songId);
+        if (currentListId === FAVORITES_LIST_ID || currentListId === 'favorites') {
+            toggleFavorite(songId);
+        } else {
+            removeSongFromList(currentListId, songId);
+        }
+    });
+
+    // Clear selection and refresh view
+    clearSelectedSongs();
+    hideBatchOperationsBar();
+
+    // Refresh the list view
+    if (currentListId === FAVORITES_LIST_ID || currentListId === 'favorites') {
+        showFavorites();
+    } else {
+        showListView(currentListId);
+    }
+}
+
+/**
+ * Handle batch remove button click
+ */
+function handleBatchRemove() {
+    const currentListId = getViewingListId();
+    const songIds = Array.from(selectedSongIds);
+
+    songIds.forEach(songId => {
+        if (currentListId === FAVORITES_LIST_ID || currentListId === 'favorites') {
+            toggleFavorite(songId);
+        } else {
+            removeSongFromList(currentListId, songId);
+        }
+    });
+
+    // Clear selection and refresh view
+    clearSelectedSongs();
+    hideBatchOperationsBar();
+
+    // Refresh the list view
+    if (currentListId === FAVORITES_LIST_ID || currentListId === 'favorites') {
+        showFavorites();
+    } else {
+        showListView(currentListId);
+    }
+}
 
 /**
  * Clear all drag indicator classes from result items
@@ -640,8 +970,26 @@ export function renderResults(songs, query) {
         const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
         const draggableAttr = isDraggable ? `draggable="true" data-index="${index}"` : '';
 
+        // Show remove button when in edit mode for own lists
+        const showRemoveBtn = listEditMode && canReorder;
+        const removeBtn = showRemoveBtn
+            ? `<button class="result-remove-btn" data-song-id="${song.id}" title="Remove from list">×</button>`
+            : '';
+
+        // Show checkbox when in multi-select mode for own lists
+        const showCheckbox = multiSelectMode && canReorder;
+        const isSelected = selectedSongIds.has(song.id);
+        const checkbox = showCheckbox
+            ? `<input type="checkbox" class="result-select-checkbox" data-song-id="${song.id}" ${isSelected ? 'checked' : ''} title="Select for batch operation">`
+            : '';
+
+        // Add edit-mode class when in edit mode, selected class when selected
+        const editModeClass = showRemoveBtn ? 'edit-mode' : '';
+        const selectedClass = isSelected ? 'selected' : '';
+
         return `
-            <div class="result-item ${favClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
+            <div class="result-item ${favClass} ${editModeClass} ${selectedClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
+                ${checkbox}
                 ${dragHandle}
                 <div class="result-main">
                     <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}${grassinessBadge}</div>
@@ -651,6 +999,7 @@ export function renderResults(songs, query) {
                     <div class="result-preview">${song.first_line || ''}</div>
                 </div>
                 <button class="result-list-btn ${btnClass}" data-song-id="${song.id}" title="Add to list">+</button>
+                ${removeBtn}
             </div>
         `;
     }).join('');
@@ -671,6 +1020,40 @@ function setupResultEventListeners(resultsDiv) {
     // === CLICK DELEGATION ===
     // Single click handler for all result items, buttons, and badges
     resultsDiv.addEventListener('click', (e) => {
+        // Handle checkbox click (multi-select mode)
+        const checkbox = e.target.closest('.result-select-checkbox');
+        if (checkbox) {
+            e.stopPropagation();
+            const songId = checkbox.dataset.songId;
+            toggleSongSelection(songId);
+            // Update visual state
+            const resultItem = checkbox.closest('.result-item');
+            if (resultItem) {
+                resultItem.classList.toggle('selected', checkbox.checked);
+            }
+            // Update batch operations bar
+            updateBatchOperationsBar();
+            return;
+        }
+
+        // Handle remove button click (edit mode)
+        const removeBtn = e.target.closest('.result-remove-btn');
+        if (removeBtn) {
+            e.stopPropagation();
+            const songId = removeBtn.dataset.songId;
+            const currentListId = getViewingListId();
+            if (currentListId && songId) {
+                if (currentListId === FAVORITES_LIST_ID || currentListId === 'favorites') {
+                    toggleFavorite(songId);
+                    showFavorites();
+                } else {
+                    removeSongFromList(currentListId, songId);
+                    showListView(currentListId);
+                }
+            }
+            return;
+        }
+
         // Handle list button click
         const listBtn = e.target.closest('.result-list-btn');
         if (listBtn) {
@@ -839,6 +1222,20 @@ function setupResultEventListeners(resultsDiv) {
                 });
             }
         }
+    });
+
+    // === CONTEXT MENU (right-click) ===
+    resultsDiv.addEventListener('contextmenu', (e) => {
+        const resultItem = e.target.closest('.result-item');
+        if (!resultItem) return;
+
+        // Only show context menu when viewing a list
+        const currentListId = getViewingListId();
+        if (!currentListId) return;
+
+        e.preventDefault();
+        const songId = resultItem.dataset.id;
+        showSongContextMenu(e.clientX, e.clientY, songId, currentListId);
     });
 }
 

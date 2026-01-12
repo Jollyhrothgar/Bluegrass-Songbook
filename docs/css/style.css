@@ -3718,6 +3718,28 @@ mark {
     font-weight: 500;
 }
 
+/* List preview in picker */
+.list-picker-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.list-picker-name {
+    font-weight: 500;
+}
+
+.list-picker-preview {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    opacity: 0.8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .list-picker-new-btn {
     display: block;
     width: 100%;
@@ -4285,6 +4307,212 @@ mark {
 .result-list-btn.has-lists {
     color: var(--accent);
     border-color: var(--accent);
+}
+
+/* Remove button for edit mode */
+.result-remove-btn {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 50%;
+    background: var(--danger, #e74c3c);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    margin-left: 0.25rem;
+}
+
+.result-remove-btn:hover {
+    background: var(--danger-dark, #c0392b);
+    transform: scale(1.1);
+}
+
+/* In edit mode, result items get a subtle highlight */
+.result-item.edit-mode {
+    background: var(--bg-secondary);
+    border-left: 3px solid var(--danger, #e74c3c);
+    padding-left: calc(0.75rem - 3px);
+}
+
+/* Context menu for songs in list view */
+.song-context-menu {
+    position: fixed;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    z-index: 3000;
+    min-width: 160px;
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.context-menu-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.15s;
+}
+
+.context-menu-item:hover {
+    background: var(--bg-secondary);
+}
+
+.context-menu-submenu {
+    position: relative;
+}
+
+.context-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    min-width: 140px;
+    padding: 0.25rem 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.context-menu-submenu:hover > .context-submenu {
+    display: block;
+}
+
+.submenu-arrow {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin-left: 0.5rem;
+}
+
+.context-menu-empty {
+    padding: 0.5rem 1rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Multi-select checkbox in result items */
+.result-select-checkbox {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    accent-color: var(--accent);
+}
+
+/* Selected state for result items */
+.result-item.selected {
+    background: var(--accent);
+    background: color-mix(in srgb, var(--accent) 15%, var(--bg));
+    border-left: 3px solid var(--accent);
+    padding-left: calc(0.75rem - 3px);
+}
+
+/* Batch operations bar - fixed at bottom */
+.batch-operations-bar {
+    position: fixed;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+    z-index: 2500;
+    padding: 0.75rem 1rem;
+    transition: bottom 0.2s ease-out;
+}
+
+.batch-operations-bar.visible {
+    bottom: 0;
+}
+
+.batch-bar-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.batch-count {
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+.batch-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.batch-actions button,
+.batch-actions select {
+    padding: 0.4rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.batch-actions button:hover,
+.batch-actions select:hover {
+    background: var(--bg-secondary);
+    border-color: var(--accent);
+}
+
+.batch-select-all {
+    background: var(--accent) !important;
+    color: white !important;
+    border-color: var(--accent) !important;
+}
+
+.batch-select-all:hover {
+    background: var(--accent-hover) !important;
+}
+
+.batch-remove {
+    background: var(--danger) !important;
+    color: white !important;
+    border-color: var(--danger) !important;
+}
+
+.batch-remove:hover {
+    background: var(--danger-hover) !important;
+}
+
+.batch-dropdown select {
+    min-width: 120px;
+}
+
+/* Mobile adjustments for batch bar */
+@media (max-width: 600px) {
+    .batch-bar-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .batch-actions {
+        justify-content: center;
+    }
 }
 
 .result-list-picker {
