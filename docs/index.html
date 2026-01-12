@@ -346,37 +346,6 @@ This is the [G]chorus [D]part
                 </div>
             </div>
 
-            <!-- Share List Modal -->
-            <div id="share-modal-backdrop" class="share-modal-backdrop hidden"></div>
-            <div id="share-modal" class="share-modal hidden">
-                <div class="share-modal-header">
-                    <h3>Share List</h3>
-                    <button id="share-modal-close" class="share-modal-close">&times;</button>
-                </div>
-                <div class="share-modal-content">
-                    <div class="share-section">
-                        <h4>View Link</h4>
-                        <p class="share-description">Anyone with this link can view and copy this list.</p>
-                        <div class="share-link-row">
-                            <input type="text" id="share-view-link" class="share-link-input" readonly>
-                            <button id="share-copy-link" class="share-copy-btn">Copy</button>
-                        </div>
-                    </div>
-                    <div id="share-invite-section" class="share-section share-invite-section">
-                        <h4>Invite Co-Owner</h4>
-                        <p class="share-description">Generate a link that allows someone to become a co-owner of this list. They'll be able to add, remove, and reorder songs.</p>
-                        <div id="share-invite-actions">
-                            <button id="share-generate-invite" class="share-generate-btn">Generate Invite Link</button>
-                        </div>
-                        <div id="share-invite-link-row" class="share-link-row hidden">
-                            <input type="text" id="share-invite-link" class="share-link-input" readonly>
-                            <button id="share-copy-invite" class="share-copy-btn">Copy</button>
-                        </div>
-                        <p id="share-invite-expiry" class="share-expiry hidden">Expires in 7 days</p>
-                    </div>
-                </div>
-            </div>
-
             <!-- Song header with back button and actions -->
             <div class="song-view-header">
                 <button id="back-btn" class="back-btn">&larr; Back</button>
@@ -441,6 +410,37 @@ This is the [G]chorus [D]part
             </div>
         </div>
 
+        <!-- Share List Modal -->
+        <div id="share-modal-backdrop" class="share-modal-backdrop hidden"></div>
+        <div id="share-modal" class="share-modal hidden">
+            <div class="share-modal-header">
+                <h3>Share List</h3>
+                <button id="share-modal-close" class="share-modal-close">&times;</button>
+            </div>
+            <div class="share-modal-content">
+                <div class="share-section">
+                    <h4>View Link</h4>
+                    <p class="share-description">Anyone with this link can view and copy this list.</p>
+                    <div class="share-link-row">
+                        <input type="text" id="share-view-link" class="share-link-input" readonly>
+                        <button id="share-copy-link" class="share-copy-btn">Copy</button>
+                    </div>
+                </div>
+                <div id="share-invite-section" class="share-section share-invite-section">
+                    <h4>Invite Co-Owner</h4>
+                    <p class="share-description">Generate a link that allows someone to become a co-owner of this list. They'll be able to add, remove, and reorder songs.</p>
+                    <div id="share-invite-actions">
+                        <button id="share-generate-invite" class="share-generate-btn">Generate Invite Link</button>
+                    </div>
+                    <div id="share-invite-link-row" class="share-link-row hidden">
+                        <input type="text" id="share-invite-link" class="share-link-input" readonly>
+                        <button id="share-copy-invite" class="share-copy-btn">Copy</button>
+                    </div>
+                    <p id="share-invite-expiry" class="share-expiry hidden">Expires in 7 days</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Bug Report Modal -->
         <div id="bug-modal" class="modal hidden">
             <div class="modal-content">
@@ -473,6 +473,20 @@ This is the [G]chorus [D]part
                         <button id="correction-edit-btn" class="action-btn primary">Edit This Song</button>
                         <button id="correction-feedback-btn" class="action-btn">Just Send Feedback</button>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manage Lists Page -->
+        <div id="manage-lists-view" class="manage-lists-view hidden">
+            <div class="manage-lists-header">
+                <button id="manage-lists-back-btn" class="back-btn">&larr; Back</button>
+                <h1 class="manage-lists-title">Manage Lists</h1>
+                <button id="create-list-btn" class="action-btn primary">+ New List</button>
+            </div>
+            <div class="manage-lists-content">
+                <div id="manage-lists-container" class="manage-lists-container">
+                    <!-- Dynamic: folders and lists rendered here -->
                 </div>
             </div>
         </div>

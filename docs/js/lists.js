@@ -10,8 +10,12 @@ import {
     viewingPublicList, setViewingPublicList,
     FAVORITES_LIST_ID,
     listEditMode, setListEditMode,
-    multiSelectMode, setMultiSelectMode, clearSelectedSongs
+    multiSelectMode, setMultiSelectMode, clearSelectedSongs,
+    setCurrentView,
+    subscribe, currentView,
+    focusedListId, setFocusedListId
 } from './state.js';
+import { openSong } from './song-view.js';
 import { escapeHtml, generateLocalId } from './utils.js';
 import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
@@ -59,6 +63,384 @@ function isListDeleted(id, name) {
 
 // Load on module initialization
 loadDeletedLists();
+
+// ============================================
+// UNDO/REDO SYSTEM
+// ============================================
+// Action history for list operations with undo/redo support
+
+const MAX_UNDO_HISTORY = 50;
+let undoStack = [];
+let redoStack = [];
+let undoToastEl = null;
+let undoToastTimeout = null;
+
+/**
+ * Action types that can be undone/redone
+ */
+const ActionType = {
+    ADD_SONG: 'add_song',
+    REMOVE_SONG: 'remove_song',
+    REORDER_SONG: 'reorder_song',
+    MOVE_SONG: 'move_song',
+    COPY_SONG: 'copy_song',
+    CREATE_LIST: 'create_list',
+    DELETE_LIST: 'delete_list',
+    RENAME_LIST: 'rename_list',
+    REORDER_LIST: 'reorder_list'
+};
+
+/**
+ * Record an action for undo
+ * @param {string} type - ActionType
+ * @param {object} data - Data needed to undo/redo the action
+ * @param {string} description - Human-readable description
+ */
+function recordAction(type, data, description) {
+    undoStack.push({ type, data, description, timestamp: Date.now() });
+    if (undoStack.length > MAX_UNDO_HISTORY) {
+        undoStack.shift();
+    }
+    // Clear redo stack when a new action is recorded
+    redoStack = [];
+
+    // Show undo toast
+    showUndoToast(description);
+}
+
+/**
+ * Undo the last action
+ */
+export function undo() {
+    if (undoStack.length === 0) return false;
+
+    const action = undoStack.pop();
+    const success = executeUndo(action);
+
+    if (success) {
+        redoStack.push(action);
+        showUndoToast(`Undid: ${action.description}`, true);
+        renderManageListsView();
+        renderSidebarLists();
+    }
+
+    return success;
+}
+
+/**
+ * Redo the last undone action
+ */
+export function redo() {
+    if (redoStack.length === 0) return false;
+
+    const action = redoStack.pop();
+    const success = executeRedo(action);
+
+    if (success) {
+        undoStack.push(action);
+        showUndoToast(`Redid: ${action.description}`, true);
+        renderManageListsView();
+        renderSidebarLists();
+    }
+
+    return success;
+}
+
+/**
+ * Execute an undo operation
+ */
+function executeUndo(action) {
+    const { type, data } = action;
+
+    switch (type) {
+        case ActionType.ADD_SONG: {
+            // Undo add = remove the song
+            const list = userLists.find(l => l.id === data.listId);
+            if (!list) return false;
+            const idx = list.songs.indexOf(data.songId);
+            if (idx !== -1) {
+                list.songs.splice(idx, 1);
+                saveLists();
+            }
+            return true;
+        }
+
+        case ActionType.REMOVE_SONG: {
+            // Undo remove = add the song back at original position
+            const list = userLists.find(l => l.id === data.listId);
+            if (!list) return false;
+            list.songs.splice(data.index, 0, data.songId);
+            saveLists();
+            return true;
+        }
+
+        case ActionType.REORDER_SONG: {
+            // Undo reorder = move back to original position
+            const list = userLists.find(l => l.id === data.listId);
+            if (!list) return false;
+            const song = list.songs.splice(data.toIndex, 1)[0];
+            list.songs.splice(data.fromIndex, 0, song);
+            saveLists();
+            return true;
+        }
+
+        case ActionType.MOVE_SONG: {
+            // Undo move = move back to source list
+            const destList = userLists.find(l => l.id === data.destListId);
+            const srcList = userLists.find(l => l.id === data.sourceListId);
+            if (!destList || !srcList) return false;
+
+            const idx = destList.songs.indexOf(data.songId);
+            if (idx !== -1) destList.songs.splice(idx, 1);
+            srcList.songs.splice(data.sourceIndex, 0, data.songId);
+            saveLists();
+            return true;
+        }
+
+        case ActionType.COPY_SONG: {
+            // Undo copy = remove from destination
+            const destList = userLists.find(l => l.id === data.destListId);
+            if (!destList) return false;
+            const idx = destList.songs.indexOf(data.songId);
+            if (idx !== -1) destList.songs.splice(idx, 1);
+            saveLists();
+            return true;
+        }
+
+        case ActionType.CREATE_LIST: {
+            // Undo create = delete the list
+            const idx = userLists.findIndex(l => l.id === data.listId);
+            if (idx !== -1) {
+                userLists.splice(idx, 1);
+                saveLists();
+            }
+            return true;
+        }
+
+        case ActionType.DELETE_LIST: {
+            // Undo delete = restore the list at original position
+            userLists.splice(data.index, 0, data.list);
+            saveLists();
+            return true;
+        }
+
+        case ActionType.RENAME_LIST: {
+            // Undo rename = restore old name
+            const list = userLists.find(l => l.id === data.listId);
+            if (!list) return false;
+            list.name = data.oldName;
+            saveLists();
+            return true;
+        }
+
+        case ActionType.REORDER_LIST: {
+            // Undo reorder = swap back
+            const temp = userLists[data.toIndex];
+            userLists[data.toIndex] = userLists[data.fromIndex];
+            userLists[data.fromIndex] = temp;
+            saveLists();
+            return true;
+        }
+
+        default:
+            return false;
+    }
+}
+
+/**
+ * Execute a redo operation
+ */
+function executeRedo(action) {
+    const { type, data } = action;
+
+    switch (type) {
+        case ActionType.ADD_SONG: {
+            const list = userLists.find(l => l.id === data.listId);
+            if (!list) return false;
+            if (!list.songs.includes(data.songId)) {
+                list.songs.push(data.songId);
+                saveLists();
+            }
+            return true;
+        }
+
+        case ActionType.REMOVE_SONG: {
+            const list = userLists.find(l => l.id === data.listId);
+            if (!list) return false;
+            const idx = list.songs.indexOf(data.songId);
+            if (idx !== -1) {
+                list.songs.splice(idx, 1);
+                saveLists();
+            }
+            return true;
+        }
+
+        case ActionType.REORDER_SONG: {
+            const list = userLists.find(l => l.id === data.listId);
+            if (!list) return false;
+            const song = list.songs.splice(data.fromIndex, 1)[0];
+            list.songs.splice(data.toIndex, 0, song);
+            saveLists();
+            return true;
+        }
+
+        case ActionType.MOVE_SONG: {
+            const srcList = userLists.find(l => l.id === data.sourceListId);
+            const destList = userLists.find(l => l.id === data.destListId);
+            if (!srcList || !destList) return false;
+
+            const idx = srcList.songs.indexOf(data.songId);
+            if (idx !== -1) srcList.songs.splice(idx, 1);
+            destList.songs.push(data.songId);
+            saveLists();
+            return true;
+        }
+
+        case ActionType.COPY_SONG: {
+            const destList = userLists.find(l => l.id === data.destListId);
+            if (!destList) return false;
+            if (!destList.songs.includes(data.songId)) {
+                destList.songs.push(data.songId);
+                saveLists();
+            }
+            return true;
+        }
+
+        case ActionType.CREATE_LIST: {
+            userLists.splice(data.index, 0, data.list);
+            saveLists();
+            return true;
+        }
+
+        case ActionType.DELETE_LIST: {
+            const idx = userLists.findIndex(l => l.id === data.listId);
+            if (idx !== -1) {
+                userLists.splice(idx, 1);
+                saveLists();
+            }
+            return true;
+        }
+
+        case ActionType.RENAME_LIST: {
+            const list = userLists.find(l => l.id === data.listId);
+            if (!list) return false;
+            list.name = data.newName;
+            saveLists();
+            return true;
+        }
+
+        case ActionType.REORDER_LIST: {
+            const temp = userLists[data.fromIndex];
+            userLists[data.fromIndex] = userLists[data.toIndex];
+            userLists[data.toIndex] = temp;
+            saveLists();
+            return true;
+        }
+
+        default:
+            return false;
+    }
+}
+
+/**
+ * Show undo toast notification
+ */
+function showUndoToast(message, isUndoRedo = false) {
+    if (!undoToastEl) {
+        // Create toast element if it doesn't exist
+        undoToastEl = document.createElement('div');
+        undoToastEl.className = 'undo-toast';
+        undoToastEl.innerHTML = `
+            <span class="undo-toast-message"></span>
+            <button class="undo-toast-btn">Undo</button>
+            <button class="undo-toast-close">×</button>
+        `;
+        document.body.appendChild(undoToastEl);
+
+        // Wire up undo button
+        undoToastEl.querySelector('.undo-toast-btn').addEventListener('click', () => {
+            undo();
+            hideUndoToast();
+        });
+
+        // Wire up close button
+        undoToastEl.querySelector('.undo-toast-close').addEventListener('click', hideUndoToast);
+    }
+
+    // Update message
+    undoToastEl.querySelector('.undo-toast-message').textContent = message;
+
+    // Show/hide undo button based on whether this is feedback from undo/redo
+    const undoBtn = undoToastEl.querySelector('.undo-toast-btn');
+    undoBtn.style.display = isUndoRedo ? 'none' : 'inline-block';
+
+    // Show toast (use RAF to ensure DOM is ready after any re-renders)
+    requestAnimationFrame(() => {
+        undoToastEl.classList.remove('hidden');
+    });
+
+    // Clear existing timeout
+    if (undoToastTimeout) {
+        clearTimeout(undoToastTimeout);
+    }
+
+    // Auto-hide after 5 seconds
+    undoToastTimeout = setTimeout(hideUndoToast, 5000);
+}
+
+/**
+ * Hide undo toast
+ */
+function hideUndoToast() {
+    if (undoToastEl) {
+        undoToastEl.classList.add('hidden');
+    }
+    if (undoToastTimeout) {
+        clearTimeout(undoToastTimeout);
+        undoToastTimeout = null;
+    }
+}
+
+/**
+ * Check if undo is available
+ */
+export function canUndo() {
+    return undoStack.length > 0;
+}
+
+/**
+ * Check if redo is available
+ */
+export function canRedo() {
+    return redoStack.length > 0;
+}
+
+/**
+ * Set up keyboard shortcuts for undo/redo
+ */
+export function initUndoKeyboardShortcuts() {
+    document.addEventListener('keydown', (e) => {
+        // Cmd+Z (Mac) or Ctrl+Z (Windows/Linux) for undo
+        if ((e.metaKey || e.ctrlKey) && e.key === 'z' && !e.shiftKey) {
+            // Don't trigger when typing in inputs
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+            e.preventDefault();
+            undo();
+        }
+        // Cmd+Shift+Z or Ctrl+Shift+Z for redo
+        if ((e.metaKey || e.ctrlKey) && e.key === 'z' && e.shiftKey) {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+            e.preventDefault();
+            redo();
+        }
+        // Cmd+Y or Ctrl+Y for redo (alternative)
+        if ((e.metaKey || e.ctrlKey) && e.key === 'y') {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+            e.preventDefault();
+            redo();
+        }
+    });
+}
 
 // ============================================
 // FOLDER ORGANIZATION (LOCAL-ONLY)
@@ -612,7 +994,7 @@ async function migrateOldSongIds() {
 /**
  * Create a new list
  */
-export function createList(name) {
+export function createList(name, skipUndo = false) {
     const trimmed = name.trim();
     if (!trimmed) return null;
 
@@ -628,9 +1010,19 @@ export function createList(name) {
         cloudId: null
     };
 
+    const insertIndex = userLists.length;
     userLists.push(newList);
     saveLists();
     trackListAction('create', newList.id);
+
+    // Record for undo after creating
+    if (!skipUndo) {
+        recordAction(ActionType.CREATE_LIST, {
+            listId: newList.id,
+            list: { ...newList },
+            index: insertIndex
+        }, `Created list "${trimmed}"`);
+    }
 
     // Sync to cloud if logged in
     syncListToCloud(newList, 'create');
@@ -641,7 +1033,7 @@ export function createList(name) {
 /**
  * Rename a list
  */
-export function renameList(listId, newName) {
+export function renameList(listId, newName, skipUndo = false) {
     const trimmed = newName.trim();
     if (!trimmed) return false;
 
@@ -651,6 +1043,17 @@ export function renameList(listId, newName) {
     // Check for duplicate names
     if (userLists.some(l => l.id !== listId && l.name.toLowerCase() === trimmed.toLowerCase())) {
         return false;
+    }
+
+    const oldName = list.name;
+
+    // Record for undo before renaming
+    if (!skipUndo) {
+        recordAction(ActionType.RENAME_LIST, {
+            listId,
+            oldName,
+            newName: trimmed
+        }, `Renamed "${oldName}" to "${trimmed}"`);
     }
 
     list.name = trimmed;
@@ -667,11 +1070,20 @@ export function renameList(listId, newName) {
 /**
  * Delete a list
  */
-export async function deleteList(listId) {
+export async function deleteList(listId, skipUndo = false) {
     const index = userLists.findIndex(l => l.id === listId);
     if (index === -1) return false;
 
     const list = userLists[index];
+
+    // Record for undo before deleting (deep copy the list)
+    if (!skipUndo) {
+        recordAction(ActionType.DELETE_LIST, {
+            listId,
+            list: JSON.parse(JSON.stringify(list)),
+            index
+        }, `Deleted list "${list.name}"`);
+    }
 
     // Track deleted list by both ID and name to prevent sync from resurrecting it
     addDeletedList(list.cloudId, list.name);
@@ -690,13 +1102,59 @@ export async function deleteList(listId) {
 }
 
 /**
+ * Reorder a list by moving it up or down in the list
+ * @param {string} listId - The list to move
+ * @param {string} direction - 'up' or 'down'
+ * @param {boolean} skipUndo - Skip recording for undo
+ * @returns {boolean} - True if moved successfully
+ */
+export function reorderList(listId, direction, skipUndo = false) {
+    const index = userLists.findIndex(l => l.id === listId);
+    if (index === -1) return false;
+
+    const newIndex = direction === 'up' ? index - 1 : index + 1;
+
+    // Check bounds
+    if (newIndex < 0 || newIndex >= userLists.length) return false;
+
+    const list = userLists[index];
+
+    // Record for undo before reordering
+    if (!skipUndo) {
+        recordAction(ActionType.REORDER_LIST, {
+            listId,
+            fromIndex: index,
+            toIndex: newIndex
+        }, `Moved "${list.name}" ${direction}`);
+    }
+
+    // Swap the lists
+    const temp = userLists[index];
+    userLists[index] = userLists[newIndex];
+    userLists[newIndex] = temp;
+
+    saveLists();
+    return true;
+}
+
+/**
  * Add a song to a list
  */
-export function addSongToList(listId, songId) {
+export function addSongToList(listId, songId, skipUndo = false) {
     const list = userLists.find(l => l.id === listId);
     if (!list) return false;
 
     if (!list.songs.includes(songId)) {
+        // Record for undo before adding
+        if (!skipUndo) {
+            const song = allSongs.find(s => s.id === songId);
+            const songTitle = song?.title || songId;
+            recordAction(ActionType.ADD_SONG, {
+                listId,
+                songId
+            }, `Added "${songTitle}" to ${list.name}`);
+        }
+
         list.songs.push(songId);
         saveLists();
         trackListAction('add_song', listId);
@@ -713,12 +1171,23 @@ export function addSongToList(listId, songId) {
 /**
  * Remove a song from a list
  */
-export function removeSongFromList(listId, songId) {
+export function removeSongFromList(listId, songId, skipUndo = false) {
     const list = userLists.find(l => l.id === listId);
     if (!list) return false;
 
     const index = list.songs.indexOf(songId);
     if (index !== -1) {
+        // Record for undo before removing
+        if (!skipUndo) {
+            const song = allSongs.find(s => s.id === songId);
+            const songTitle = song?.title || songId;
+            recordAction(ActionType.REMOVE_SONG, {
+                listId,
+                songId,
+                index
+            }, `Removed "${songTitle}" from ${list.name}`);
+        }
+
         list.songs.splice(index, 1);
         saveLists();
         trackListAction('remove_song', listId);
@@ -735,12 +1204,24 @@ export function removeSongFromList(listId, songId) {
 /**
  * Reorder a song within a list (for drag and drop)
  */
-export function reorderSongInList(listId, fromIndex, toIndex) {
+export function reorderSongInList(listId, fromIndex, toIndex, skipUndo = false) {
     const list = userLists.find(l => l.id === listId);
     if (!list) return false;
     if (fromIndex < 0 || fromIndex >= list.songs.length) return false;
     if (toIndex < 0 || toIndex >= list.songs.length) return false;
     if (fromIndex === toIndex) return false;
+
+    // Record for undo before reordering
+    if (!skipUndo) {
+        const songId = list.songs[fromIndex];
+        const song = allSongs.find(s => s.id === songId);
+        const songTitle = song?.title || songId;
+        recordAction(ActionType.REORDER_SONG, {
+            listId,
+            fromIndex,
+            toIndex
+        }, `Moved "${songTitle}" in ${list.name}`);
+    }
 
     // Remove from old position and insert at new position
     const [songId] = list.songs.splice(fromIndex, 1);
@@ -1053,17 +1534,8 @@ export function renderSidebarLists() {
     if (showMyListsSection) {
         const header = document.createElement('div');
         header.className = 'nav-section-header';
-        header.innerHTML = `
-            <span>My Lists</span>
-            <div class="nav-section-actions">
-                <button class="nav-section-action" title="New list" data-action="new-list">+</button>
-                <button class="nav-section-action" title="New folder" data-action="new-folder">&#128193;</button>
-            </div>
-        `;
+        header.textContent = 'My Lists';
         navListsContainerEl.appendChild(header);
-
-        // Make header a drop target for moving lists to root
-        setupFolderDropTarget(header, null);
 
         // Render folders and their contents recursively
         renderFoldersAndLists(navListsContainerEl, null, 0);
@@ -1099,19 +1571,6 @@ export function renderSidebarLists() {
         });
     }
 
-    // Add new list button event handler
-    const newListBtn = navListsContainerEl.querySelector('[data-action="new-list"]');
-    newListBtn?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        startCreateList(null);
-    });
-
-    // Add new folder button event handler
-    const newFolderBtn = navListsContainerEl.querySelector('[data-action="new-folder"]');
-    newFolderBtn?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        startCreateFolder(null);
-    });
 }
 
 /**
@@ -1184,9 +1643,6 @@ function renderFoldersAndLists(container, parentId, depth) {
                 e.preventDefault();
                 showFolderContextMenu(folder, e.clientX, e.clientY);
             });
-
-            // Set up folder as drop target for lists
-            setupFolderDropTarget(headerBtn, folder.id);
         }
 
         folderEl.appendChild(headerBtn);
@@ -1242,19 +1698,6 @@ function renderFoldersAndLists(container, parentId, depth) {
                 showListContextMenu(list, e.clientX, e.clientY);
             });
 
-            // Make list draggable
-            btn.draggable = true;
-            btn.addEventListener('dragstart', (e) => {
-                e.dataTransfer.setData('text/plain', JSON.stringify({
-                    type: 'list',
-                    listId: list.cloudId || list.id
-                }));
-                btn.classList.add('dragging');
-            });
-            btn.addEventListener('dragend', () => {
-                btn.classList.remove('dragging');
-                clearDropTargets();
-            });
         }
 
         container.appendChild(btn);
@@ -1589,11 +2032,14 @@ function showFolderContextMenu(folder, x, y) {
 
 /**
  * Show songs in a specific list (local or public)
+ * For local/owned lists, navigates to Manage Lists with that list expanded.
+ * For followed/public lists, shows error (they're not in Manage Lists yet).
  */
 export async function showListView(listId) {
-    // Handle favorites as a special "list"
+    // Handle favorites as a special "list" - go to Manage Lists focused on favorites
     if (listId === 'favorites' || listId === FAVORITES_LIST_ID) {
-        showFavorites();
+        setFocusedListId(FAVORITES_LIST_ID);
+        setCurrentView('manage-lists');
         return;
     }
 
@@ -1601,34 +2047,17 @@ export async function showListView(listId) {
     const localList = userLists.find(l => l.id === listId);
 
     if (localList) {
-        // It's a local list - show it normally as owner
-        setViewingListId(listId);
-        setViewingPublicList(null);
-        renderListViewUI(localList.name, localList.songs, {
-            isOwner: true,
-            isFollower: false,
-            isOrphaned: false
-        });
+        // Navigate to Manage Lists with this list focused/expanded
+        setFocusedListId(listId);
+        setCurrentView('manage-lists');
         return;
     }
 
-    // Check if this is a followed list
+    // Check if this is a followed list - for now show not found
+    // (Future: could add followed lists to Manage Lists)
     const followedList = followedLists.find(l => l.id === listId);
     if (followedList) {
-        setViewingListId(listId);
-        setViewingPublicList({
-            list: followedList,
-            songs: followedList.songs || [],
-            isOwner: false,
-            isFollower: true,
-            isOrphaned: followedList.isOrphaned || !!followedList.orphaned_at
-        });
-        renderListViewUI(followedList.name, followedList.songs || [], {
-            isOwner: false,
-            isFollower: true,
-            isOrphaned: followedList.isOrphaned || !!followedList.orphaned_at,
-            canClaim: followedList.isOrphaned || !!followedList.orphaned_at
-        });
+        showListNotFound();
         return;
     }
 
@@ -1644,28 +2073,9 @@ export async function showListView(listId) {
         return;
     }
 
-    // Check ownership status from the response
-    const isOwner = data.is_owner || false;
-    const isFollower = data.is_follower || false;
-    const isOrphaned = data.is_orphaned || false;
-    const canClaim = data.can_claim || false;
-
-    setViewingListId(listId);
-    setViewingPublicList({
-        list: data.list,
-        songs: data.songs,
-        isOwner,
-        isFollower,
-        isOrphaned,
-        canClaim
-    });
-
-    renderListViewUI(data.list.name, data.songs, {
-        isOwner,
-        isFollower,
-        isOrphaned,
-        canClaim
-    });
+    // For public lists the user doesn't own, show not found for now
+    // (Future: could show a "preview" mode or prompt to follow)
+    showListNotFound();
 }
 
 /**
@@ -2084,6 +2494,624 @@ export function renderListsModal() {
     });
 }
 
+// ============================================
+// MANAGE LISTS PAGE
+// ============================================
+
+// DOM element for manage lists container
+let manageListsContainerEl = null;
+
+// Subscribe to allSongs changes to re-render when songs load
+subscribe('allSongs', () => {
+    // If we're on the manage-lists view, re-render to show actual song titles
+    if (currentView === 'manage-lists') {
+        renderManageListsView();
+    }
+});
+
+/**
+ * Get song title preview for a list
+ */
+function getListPreview(list, maxChars = 50) {
+    if (!list.songs || list.songs.length === 0) return '';
+    const titles = list.songs.slice(0, 3).map(id => {
+        const song = allSongs.find(s => s.id === id);
+        return song?.title || 'Unknown';
+    });
+    let preview = titles.join(', ');
+    if (preview.length > maxChars) {
+        preview = preview.substring(0, maxChars).replace(/,?\s*[^,]*$/, '...');
+    }
+    return preview;
+}
+
+/**
+ * Render the songs inside a list card (expandable section)
+ */
+function renderListSongsPreview(list) {
+    if (!list.songs || list.songs.length === 0) {
+        return '<div class="list-songs-empty">No songs in this list</div>';
+    }
+
+    const totalSongs = list.songs.length;
+    const songItems = list.songs.map((songId, index) => {
+        const song = allSongs.find(s => s.id === songId);
+        if (!song) return '';
+        const isFirst = index === 0;
+        const isLast = index === totalSongs - 1;
+        return `
+            <div class="list-song-item" data-song-id="${songId}" data-list-id="${list.id}" data-index="${index}">
+                <input type="checkbox" class="list-song-checkbox" data-song-id="${songId}">
+                <div class="list-song-info">
+                    <span class="list-song-title">${escapeHtml(song.title)}</span>
+                    <span class="list-song-artist">${escapeHtml(song.artist || '')}</span>
+                </div>
+                <div class="list-song-actions">
+                    <button class="list-song-btn move-song-up-btn" data-song-id="${songId}" data-list-id="${list.id}" data-index="${index}" title="Move up"${isFirst ? ' disabled' : ''}>▲</button>
+                    <button class="list-song-btn move-song-down-btn" data-song-id="${songId}" data-list-id="${list.id}" data-index="${index}" title="Move down"${isLast ? ' disabled' : ''}>▼</button>
+                    <button class="list-song-remove" data-song-id="${songId}" data-list-id="${list.id}" title="Remove from list">×</button>
+                </div>
+            </div>
+        `;
+    }).filter(Boolean);
+
+    if (songItems.length === 0) {
+        return '<div class="list-songs-empty">No songs found</div>';
+    }
+
+    return `
+        <div class="list-songs-actions">
+            <button class="list-songs-select-all" data-list-id="${list.id}">Select All</button>
+            <button class="list-songs-copy-to hidden" data-list-id="${list.id}">Copy to...</button>
+            <button class="list-songs-move-to hidden" data-list-id="${list.id}">Move to...</button>
+        </div>
+        ${songItems.join('')}
+    `;
+}
+
+/**
+ * Render the Manage Lists page with folders and lists as cards
+ */
+export function renderManageListsView() {
+    if (!manageListsContainerEl) {
+        manageListsContainerEl = document.getElementById('manage-lists-container');
+    }
+    if (!manageListsContainerEl) return;
+
+    const html = [];
+
+    // Get root-level folders
+    const rootFolders = getFoldersAtLevel(null);
+
+    // Get root-level lists (not in any folder)
+    const rootLists = getListsAtRoot();
+
+    // No content message
+    if (rootFolders.length === 0 && rootLists.length === 0) {
+        manageListsContainerEl.innerHTML = `
+            <div class="manage-lists-empty">
+                <p>No lists yet!</p>
+                <p>Click <strong>+ New List</strong> above to create your first list.</p>
+            </div>
+        `;
+        return;
+    }
+
+    // Render folders first
+    rootFolders.forEach(folder => {
+        const listsInFolder = getListsInFolder(folder.id);
+        const listCount = listsInFolder.length;
+        html.push(`
+            <div class="list-card folder-card" data-folder-id="${folder.id}">
+                <div class="list-card-header">
+                    <span class="list-card-icon">📁</span>
+                    <div class="list-card-info">
+                        <span class="list-card-name">${escapeHtml(folder.name)}</span>
+                        <span class="list-card-meta">${listCount} list${listCount !== 1 ? 's' : ''}</span>
+                    </div>
+                    <div class="list-card-actions">
+                        <button class="list-card-btn rename-folder-btn" data-folder-id="${folder.id}" title="Rename folder">✏️</button>
+                        <button class="list-card-btn delete-folder-btn" data-folder-id="${folder.id}" title="Delete folder">🗑️</button>
+                    </div>
+                </div>
+            </div>
+        `);
+    });
+
+    // Render root-level lists (including Favorites)
+    const isLoggedIn = typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn?.();
+    rootLists.forEach((list, index) => {
+        const isFavorites = list.id === FAVORITES_LIST_ID;
+        const songCount = list.songs?.length || 0;
+        const preview = getListPreview(list);
+        const songsHtml = renderListSongsPreview(list);
+        const isFirst = index === 0;
+        const isLast = index === rootLists.length - 1;
+
+        // Determine if list can be shared
+        const canShare = isLoggedIn && list.cloudId;
+        const shareTitle = !isLoggedIn ? 'Sign in to share' : !list.cloudId ? 'Sync to share' : 'Share list';
+
+        html.push(`
+            <div class="list-card${isFavorites ? ' favorites-card' : ''}" data-list-id="${list.id}">
+                <div class="list-card-header">
+                    <button class="list-card-expand" title="Show songs">▶</button>
+                    <span class="list-card-icon">${isFavorites ? '⭐' : '☰'}</span>
+                    <div class="list-card-info">
+                        <span class="list-card-name">${escapeHtml(list.name)}</span>
+                        <span class="list-card-meta">${songCount} song${songCount !== 1 ? 's' : ''}${preview ? ' • ' + escapeHtml(preview) : ''}</span>
+                    </div>
+                    <div class="list-card-actions">
+                        <button class="list-card-btn play-list-btn" data-list-id="${list.id}" title="Play list"${songCount === 0 ? ' disabled' : ''}>▶</button>
+                        <button class="list-card-btn share-list-btn" data-list-id="${list.id}" title="${shareTitle}"${!canShare ? ' disabled' : ''}>🔗</button>
+                        <button class="list-card-btn move-list-up-btn" data-list-id="${list.id}" title="Move up"${isFirst ? ' disabled' : ''}>▲</button>
+                        <button class="list-card-btn move-list-down-btn" data-list-id="${list.id}" title="Move down"${isLast ? ' disabled' : ''}>▼</button>
+                        ${!isFavorites ? `
+                            <button class="list-card-btn rename-list-btn" data-list-id="${list.id}" title="Rename list">✏️</button>
+                            <button class="list-card-btn delete-list-btn" data-list-id="${list.id}" title="Delete list">🗑️</button>
+                        ` : ''}
+                    </div>
+                </div>
+                <div class="list-card-songs hidden" data-list-id="${list.id}">
+                    ${songsHtml}
+                </div>
+            </div>
+        `);
+    });
+
+    manageListsContainerEl.innerHTML = html.join('');
+
+    // Wire up event handlers
+    wireManageListsEvents();
+
+    // Auto-expand the focused list if set
+    if (focusedListId) {
+        const card = manageListsContainerEl.querySelector(`.list-card[data-list-id="${focusedListId}"]`);
+        if (card) {
+            const songsContainer = card.querySelector('.list-card-songs');
+            const expandBtn = card.querySelector('.list-card-expand');
+            songsContainer?.classList.remove('hidden');
+            if (expandBtn) {
+                expandBtn.textContent = '▼';
+                expandBtn.title = 'Hide songs';
+            }
+            card.classList.add('expanded');
+            // Scroll the card into view
+            card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        // Clear the focused list after expanding
+        setFocusedListId(null);
+    }
+}
+
+/**
+ * Get selected song IDs from checkboxes in a container
+ */
+function getSelectedSongIds(container) {
+    const checked = container.querySelectorAll('.list-song-checkbox:checked');
+    return Array.from(checked).map(cb => cb.dataset.songId);
+}
+
+/**
+ * Update batch action buttons visibility based on selection
+ */
+function updateBatchButtons(container, listId) {
+    const selectedCount = getSelectedSongIds(container).length;
+    const copyBtn = container.querySelector('.list-songs-copy-to');
+    const moveBtn = container.querySelector('.list-songs-move-to');
+
+    if (selectedCount > 0) {
+        copyBtn?.classList.remove('hidden');
+        moveBtn?.classList.remove('hidden');
+        copyBtn.textContent = `Copy ${selectedCount} to...`;
+        moveBtn.textContent = `Move ${selectedCount} to...`;
+    } else {
+        copyBtn?.classList.add('hidden');
+        moveBtn?.classList.add('hidden');
+    }
+}
+
+/**
+ * Show dialog to copy/move songs to another list
+ */
+function showCopyMoveDialog(songIds, sourceListId, operation) {
+    // Get available lists (exclude source list for move, and exclude Favorites for both)
+    const availableLists = userLists.filter(l => {
+        if (l.id === FAVORITES_LIST_ID) return false;
+        if (operation === 'move' && l.id === sourceListId) return false;
+        return true;
+    });
+
+    if (availableLists.length === 0) {
+        alert('No other lists available. Create a new list first.');
+        return;
+    }
+
+    // Remove any existing dialog
+    const existingDialog = document.querySelector('.copy-move-dialog');
+    if (existingDialog) existingDialog.remove();
+
+    const action = operation === 'copy' ? 'Copy' : 'Move';
+    const songCount = songIds.length;
+    const songText = songCount === 1 ? '1 song' : `${songCount} songs`;
+
+    // Create dialog
+    const dialog = document.createElement('div');
+    dialog.className = 'copy-move-dialog';
+    dialog.innerHTML = `
+        <div class="copy-move-dialog-content">
+            <div class="copy-move-dialog-header">
+                <h3>${action} ${songText} to...</h3>
+                <button class="copy-move-dialog-close">×</button>
+            </div>
+            <div class="copy-move-dialog-lists">
+                ${availableLists.map(list => `
+                    <button class="copy-move-dialog-option" data-list-id="${list.id}">
+                        <span class="copy-move-dialog-icon">${list.id === FAVORITES_LIST_ID ? '⭐' : '☰'}</span>
+                        <span class="copy-move-dialog-name">${escapeHtml(list.name)}</span>
+                        <span class="copy-move-dialog-count">${list.songs?.length || 0} songs</span>
+                    </button>
+                `).join('')}
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(dialog);
+
+    // Handle list selection
+    dialog.querySelectorAll('.copy-move-dialog-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetListId = btn.dataset.listId;
+            const targetList = userLists.find(l => l.id === targetListId);
+
+            // Perform the operation
+            songIds.forEach(songId => {
+                addSongToList(targetListId, songId);
+                if (operation === 'move') {
+                    removeSongFromList(sourceListId, songId);
+                }
+            });
+
+            // Close dialog
+            dialog.remove();
+
+            // Re-render, keeping source list expanded
+            setFocusedListId(sourceListId);
+            renderManageListsView();
+            renderSidebarLists();
+        });
+    });
+
+    // Close on X button
+    dialog.querySelector('.copy-move-dialog-close').addEventListener('click', () => {
+        dialog.remove();
+    });
+
+    // Close on backdrop click
+    dialog.addEventListener('click', (e) => {
+        if (e.target === dialog) {
+            dialog.remove();
+        }
+    });
+
+    // Close on Escape
+    const handleEscape = (e) => {
+        if (e.key === 'Escape') {
+            dialog.remove();
+            document.removeEventListener('keydown', handleEscape);
+        }
+    };
+    document.addEventListener('keydown', handleEscape);
+}
+
+/**
+ * Wire up event handlers for manage lists page
+ */
+function wireManageListsEvents() {
+    if (!manageListsContainerEl) return;
+
+    // Expand/collapse toggle button
+    manageListsContainerEl.querySelectorAll('.list-card-expand').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const card = btn.closest('.list-card');
+            const songsContainer = card.querySelector('.list-card-songs');
+            const isExpanded = !songsContainer.classList.contains('hidden');
+
+            if (isExpanded) {
+                songsContainer.classList.add('hidden');
+                btn.textContent = '▶';
+                btn.title = 'Show songs';
+                card.classList.remove('expanded');
+            } else {
+                songsContainer.classList.remove('hidden');
+                btn.textContent = '▼';
+                btn.title = 'Hide songs';
+                card.classList.add('expanded');
+            }
+        });
+    });
+
+    // Click on list card header to expand/collapse (same as expand button)
+    manageListsContainerEl.querySelectorAll('.list-card[data-list-id] .list-card-header').forEach(header => {
+        header.addEventListener('click', (e) => {
+            // Don't toggle if clicking on buttons
+            if (e.target.closest('button')) return;
+
+            e.stopPropagation();
+            const card = header.closest('.list-card');
+            const songsContainer = card.querySelector('.list-card-songs');
+            const expandBtn = card.querySelector('.list-card-expand');
+            const isExpanded = !songsContainer.classList.contains('hidden');
+
+            if (isExpanded) {
+                songsContainer.classList.add('hidden');
+                if (expandBtn) {
+                    expandBtn.textContent = '▶';
+                    expandBtn.title = 'Show songs';
+                }
+                card.classList.remove('expanded');
+            } else {
+                songsContainer.classList.remove('hidden');
+                if (expandBtn) {
+                    expandBtn.textContent = '▼';
+                    expandBtn.title = 'Hide songs';
+                }
+                card.classList.add('expanded');
+            }
+        });
+        header.style.cursor = 'pointer';
+    });
+
+    // Song checkboxes - update batch action buttons visibility
+    manageListsContainerEl.querySelectorAll('.list-song-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('change', (e) => {
+            e.stopPropagation();
+            const songsContainer = checkbox.closest('.list-card-songs');
+            const listId = songsContainer.dataset.listId;
+            updateBatchButtons(songsContainer, listId);
+        });
+    });
+
+    // Select All button
+    manageListsContainerEl.querySelectorAll('.list-songs-select-all').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const songsContainer = btn.closest('.list-card-songs');
+            const listId = songsContainer.dataset.listId;
+            const checkboxes = songsContainer.querySelectorAll('.list-song-checkbox');
+            const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+
+            checkboxes.forEach(cb => cb.checked = !allChecked);
+            btn.textContent = allChecked ? 'Select All' : 'Clear';
+            updateBatchButtons(songsContainer, listId);
+        });
+    });
+
+    // Copy to button
+    manageListsContainerEl.querySelectorAll('.list-songs-copy-to').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const songsContainer = btn.closest('.list-card-songs');
+            const sourceListId = songsContainer.dataset.listId;
+            const selectedSongIds = getSelectedSongIds(songsContainer);
+
+            if (selectedSongIds.length === 0) return;
+
+            // Show list picker for copy destination
+            showCopyMoveDialog(selectedSongIds, sourceListId, 'copy');
+        });
+    });
+
+    // Move to button
+    manageListsContainerEl.querySelectorAll('.list-songs-move-to').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const songsContainer = btn.closest('.list-card-songs');
+            const sourceListId = songsContainer.dataset.listId;
+            const selectedSongIds = getSelectedSongIds(songsContainer);
+
+            if (selectedSongIds.length === 0) return;
+
+            // Show list picker for move destination
+            showCopyMoveDialog(selectedSongIds, sourceListId, 'move');
+        });
+    });
+
+    // Remove song button
+    manageListsContainerEl.querySelectorAll('.list-song-remove').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const songId = btn.dataset.songId;
+            const listId = btn.dataset.listId;
+            removeSongFromList(listId, songId);
+            setFocusedListId(listId); // Keep the list expanded after re-render
+            renderManageListsView();
+        });
+    });
+
+    // Rename list
+    manageListsContainerEl.querySelectorAll('.rename-list-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const listId = btn.dataset.listId;
+            const list = userLists.find(l => l.id === listId);
+            if (list) {
+                const newName = prompt('Enter new name:', list.name);
+                if (newName && renameList(listId, newName)) {
+                    renderManageListsView();
+                    renderSidebarLists();
+                }
+            }
+        });
+    });
+
+    // Delete list
+    manageListsContainerEl.querySelectorAll('.delete-list-btn').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            e.stopPropagation();
+            const listId = btn.dataset.listId;
+            const list = userLists.find(l => l.id === listId);
+            if (list && confirm(`Delete "${list.name}"? Songs won't be deleted from the songbook.`)) {
+                await deleteList(listId);
+                renderManageListsView();
+                renderSidebarLists();
+            }
+        });
+    });
+
+    // Rename folder
+    manageListsContainerEl.querySelectorAll('.rename-folder-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const folderId = btn.dataset.folderId;
+            const folder = getFolders().find(f => f.id === folderId);
+            if (folder) {
+                const newName = prompt('Enter new folder name:', folder.name);
+                if (newName) {
+                    renameFolder(folderId, newName);
+                    renderManageListsView();
+                    renderSidebarLists();
+                }
+            }
+        });
+    });
+
+    // Delete folder
+    manageListsContainerEl.querySelectorAll('.delete-folder-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const folderId = btn.dataset.folderId;
+            const folder = getFolders().find(f => f.id === folderId);
+            if (folder && confirm(`Delete folder "${folder.name}"? Lists inside will be moved to the root level.`)) {
+                deleteFolder(folderId);
+                renderManageListsView();
+                renderSidebarLists();
+            }
+        });
+    });
+
+    // Move list up
+    manageListsContainerEl.querySelectorAll('.move-list-up-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const listId = btn.dataset.listId;
+            if (reorderList(listId, 'up')) {
+                renderManageListsView();
+            }
+        });
+    });
+
+    // Move list down
+    manageListsContainerEl.querySelectorAll('.move-list-down-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const listId = btn.dataset.listId;
+            if (reorderList(listId, 'down')) {
+                renderManageListsView();
+            }
+        });
+    });
+
+    // Move song up in list
+    manageListsContainerEl.querySelectorAll('.move-song-up-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const listId = btn.dataset.listId;
+            const index = parseInt(btn.dataset.index, 10);
+            if (reorderSongInList(listId, index, index - 1)) {
+                renderManageListsView();
+                // Re-expand the list that was open
+                const card = manageListsContainerEl.querySelector(`.list-card[data-list-id="${listId}"]`);
+                if (card) {
+                    const songsContainer = card.querySelector('.list-card-songs');
+                    const expandBtn = card.querySelector('.list-card-expand');
+                    songsContainer?.classList.remove('hidden');
+                    if (expandBtn) {
+                        expandBtn.textContent = '▼';
+                        expandBtn.title = 'Hide songs';
+                    }
+                    card.classList.add('expanded');
+                }
+            }
+        });
+    });
+
+    // Move song down in list
+    manageListsContainerEl.querySelectorAll('.move-song-down-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const listId = btn.dataset.listId;
+            const index = parseInt(btn.dataset.index, 10);
+            if (reorderSongInList(listId, index, index + 1)) {
+                renderManageListsView();
+                // Re-expand the list that was open
+                const card = manageListsContainerEl.querySelector(`.list-card[data-list-id="${listId}"]`);
+                if (card) {
+                    const songsContainer = card.querySelector('.list-card-songs');
+                    const expandBtn = card.querySelector('.list-card-expand');
+                    songsContainer?.classList.remove('hidden');
+                    if (expandBtn) {
+                        expandBtn.textContent = '▼';
+                        expandBtn.title = 'Hide songs';
+                    }
+                    card.classList.add('expanded');
+                }
+            }
+        });
+    });
+
+    // Play list button - opens first song with list context
+    manageListsContainerEl.querySelectorAll('.play-list-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const listId = btn.dataset.listId;
+            const list = listId === FAVORITES_LIST_ID
+                ? getFavoritesList()
+                : userLists.find(l => l.id === listId);
+
+            if (!list || !list.songs || list.songs.length === 0) {
+                return;
+            }
+
+            // Set up list context for prev/next navigation
+            setListContext({
+                listId: list.id,
+                listName: list.name,
+                songIds: list.songs,
+                currentIndex: 0
+            });
+
+            // Open the first song
+            const firstSongId = list.songs[0];
+            openSong(firstSongId, { fromList: true, listId: list.id });
+        });
+    });
+
+    // Share list button - opens share modal (button is disabled when sharing isn't available)
+    manageListsContainerEl.querySelectorAll('.share-list-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (btn.disabled) return; // Extra safety check
+
+            const listId = btn.dataset.listId;
+            let shareId = null;
+
+            if (listId === FAVORITES_LIST_ID) {
+                const favList = getFavoritesList();
+                shareId = favList?.cloudId;
+            } else {
+                const list = userLists.find(l => l.id === listId);
+                shareId = list?.cloudId;
+            }
+
+            if (shareId) {
+                openShareModal(shareId);
+            }
+        });
+    });
+}
+
 /**
  * Initialize lists module with DOM elements and callbacks
  */
@@ -2399,6 +3427,9 @@ export function initLists(options) {
     }
 
     // Note: Result picker click-outside handling is now managed by unified ListPicker
+
+    // Initialize undo/redo keyboard shortcuts
+    initUndoKeyboardShortcuts();
 }
 
 // ============================================

@@ -105,6 +105,7 @@ export let songGroups = {};  // Map of group_id -> array of songs
 
 export function setAllSongs(songs) {
     allSongs = songs;
+    notifyChange('allSongs');
 }
 
 export function setSongGroups(groups) {
@@ -269,6 +270,7 @@ export let viewingPublicList = null;  // { list, songs, isOwner } when viewing s
 export let listEditMode = false;  // Edit mode for list view (shows remove buttons)
 export let multiSelectMode = false;  // Multi-select mode for batch operations
 export let selectedSongIds = new Set();  // Selected song IDs for batch operations
+export let focusedListId = null;  // ID of list to auto-expand in Manage Lists
 
 export function setUserLists(lists) { userLists = lists; }
 export function setViewingListId(id) { viewingListId = id; notifyChange('viewingListId'); }
@@ -276,6 +278,7 @@ export function setViewingPublicList(data) { viewingPublicList = data; notifyCha
 export function setListEditMode(value) { listEditMode = value; notifyChange('listEditMode'); }
 export function setMultiSelectMode(value) { multiSelectMode = value; notifyChange('multiSelectMode'); }
 export function setSelectedSongIds(ids) { selectedSongIds = ids; notifyChange('selectedSongIds'); }
+export function setFocusedListId(id) { focusedListId = id; notifyChange('focusedListId'); }
 export function toggleSongSelection(songId) {
     if (selectedSongIds.has(songId)) {
         selectedSongIds.delete(songId);
@@ -398,6 +401,7 @@ const stateGetters = {
     listEditMode: () => listEditMode,
     multiSelectMode: () => multiSelectMode,
     selectedSongIds: () => selectedSongIds,
+    focusedListId: () => focusedListId,
 
     // History
     historyInitialized: () => historyInitialized,
@@ -467,6 +471,7 @@ const stateSetters = {
     listEditMode: setListEditMode,
     multiSelectMode: setMultiSelectMode,
     selectedSongIds: setSelectedSongIds,
+    focusedListId: setFocusedListId,
 
     // History
     historyInitialized: setHistoryInitialized,

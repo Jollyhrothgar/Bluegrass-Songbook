@@ -34,7 +34,7 @@ import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import {
     initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync,
     clearListView, renderListsModal, createList, addSongToList, getViewingListId,
-    showListView, fetchListData,
+    showListView, fetchListData, renderManageListsView,
     // Favorites functions (favorites is now just a list)
     showFavorites, updateFavoritesCount, getFavoritesList, isFavorite, toggleFavorite,
     updateSyncUI, reorderFavoriteItem
@@ -119,6 +119,12 @@ const listsContainer = document.getElementById('lists-container');
 const modalCreateListBtn = document.getElementById('create-list-submit');
 const modalNewListInput = document.getElementById('new-list-name');
 // Old list picker elements no longer needed - using unified ListPicker component
+
+// Manage Lists page
+const manageListsView = document.getElementById('manage-lists-view');
+const manageListsBackBtn = document.getElementById('manage-lists-back-btn');
+const manageListsContainer = document.getElementById('manage-lists-container');
+const createListBtn = document.getElementById('create-list-btn');
 
 // Account modal
 const accountModal = document.getElementById('account-modal');
@@ -343,6 +349,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                manageListsView?.classList.add('hidden');
                 navHome?.classList.add('active');
                 break;
             case 'search':
@@ -350,6 +357,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                manageListsView?.classList.add('hidden');
                 navSearch?.classList.add('active');
                 // Show empty state if no search query (don't show random songs)
                 if (!searchInput?.value?.trim() && resultsDiv) {
@@ -362,6 +370,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.remove('hidden');
+                manageListsView?.classList.add('hidden');
                 navAddSong?.classList.add('active');
                 break;
             case 'favorites':
@@ -369,6 +378,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                manageListsView?.classList.add('hidden');
                 navFavorites?.classList.add('active');
                 showFavorites();
                 break;
@@ -377,12 +387,22 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.remove('hidden');
                 editorPanel?.classList.add('hidden');
+                manageListsView?.classList.add('hidden');
                 break;
             case 'list':
                 searchContainer?.classList.remove('hidden');
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                manageListsView?.classList.add('hidden');
+                break;
+            case 'manage-lists':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.add('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                manageListsView?.classList.remove('hidden');
+                renderManageListsView();
                 break;
         }
     });
@@ -1750,10 +1770,21 @@ function init() {
         }
     });
 
-    // Lists modal
+    // Manage Lists page
     manageListsBtn?.addEventListener('click', () => {
         closeSidebar();
-        openListsModal();
+        showView('manage-lists');
+    });
+    manageListsBackBtn?.addEventListener('click', () => {
+        showView('home');
+    });
+    createListBtn?.addEventListener('click', () => {
+        const name = prompt('Enter list name:');
+        if (name && name.trim()) {
+            createList(name.trim());
+            renderManageListsView();
+            renderSidebarLists();
+        }
     });
     listsModalClose?.addEventListener('click', closeListsModal);
     listsModal?.addEventListener('click', (e) => {

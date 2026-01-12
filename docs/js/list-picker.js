@@ -228,6 +228,15 @@ function setupPickerEvents(picker, songId, options) {
             } else {
                 removeSongFromList(listId, songId);
             }
+
+            // Update the preview for this list in the picker
+            const list = userLists.find(l => l.id === listId);
+            if (list) {
+                const previewEl = picker.querySelector(`[data-list-id="${listId}"] .list-picker-preview`);
+                if (previewEl) {
+                    previewEl.textContent = getListPreview(list);
+                }
+            }
         }
 
         // Update trigger button
