@@ -945,60 +945,6 @@ function migrateOldFavorites() {
 }
 
 /**
- * Migrate old song IDs to new IDs using the id_mapping.json
- * This handles the transition from old slugs (e.g., "manofconstantsorrowlyricsandchords")
- * to new slugs (e.g., "im-a-man-of-constant-sorrow")
- */
-async function migrateOldSongIds() {
-    const MIGRATION_KEY = 'songbook-ids-migrated-v1';
-
-    // Skip if already migrated
-    if (localStorage.getItem(MIGRATION_KEY)) {
-        return;
-    }
-
-    try {
-        // Fetch the ID mapping
-        const response = await fetch('data/id_mapping.json');
-        if (!response.ok) {
-            console.log('[migrateOldSongIds] No id_mapping.json found, skipping migration');
-            return;
-        }
-
-        const idMapping = await response.json();
-        let totalMigrated = 0;
-
-        // Update all lists
-        for (const list of userLists) {
-            const newSongs = list.songs.map(oldId => {
-                const newId = idMapping[oldId];
-                if (newId && newId !== oldId) {
-                    totalMigrated++;
-                    return newId;
-                }
-                return oldId;
-            });
-            list.songs = newSongs;
-        }
-
-        if (totalMigrated > 0) {
-            console.log(`[migrateOldSongIds] Migrated ${totalMigrated} song IDs to new format`);
-            saveLists();
-
-            // Re-render if we're currently viewing favorites
-            if (viewingListId === FAVORITES_LIST_ID) {
-                showFavorites();
-            }
-        }
-
-        // Mark migration as complete
-        localStorage.setItem(MIGRATION_KEY, 'true');
-    } catch (e) {
-        console.error('[migrateOldSongIds] Migration failed:', e);
-    }
-}
-
-/**
  * Create a new list
  */
 export function createList(name, skipUndo = false) {
@@ -3534,9 +3480,6 @@ export function initLists(options) {
 
     // Migrate old favorites format to new list-based format
     migrateOldFavorites();
-
-    // Migrate old song IDs to new IDs (from works migration)
-    migrateOldSongIds();
 
     renderSidebarLists();
     updateFavoritesCount();

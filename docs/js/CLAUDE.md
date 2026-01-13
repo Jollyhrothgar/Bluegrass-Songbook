@@ -35,7 +35,6 @@ docs/
 ├── posts/              # Blog posts (markdown)
 └── data/
     ├── index.jsonl     # Song index (built by scripts/lib/build_works_index.py)
-    ├── id_mapping.json # Legacy ID → work slug mapping
     └── posts.json      # Blog manifest (built by scripts/lib/build_posts.py)
 ```
 

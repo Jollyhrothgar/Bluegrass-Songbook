@@ -80,7 +80,6 @@ Bluegrass-Songbook/
 │   ├── posts/               # Blog posts (markdown)
 │   └── data/
 │       ├── index.jsonl      # Song index (built from works/)
-│       ├── id_mapping.json  # Legacy ID → work slug mapping
 │       └── posts.json       # Blog manifest
 │
 ├── sources/                 # Song and tab sources

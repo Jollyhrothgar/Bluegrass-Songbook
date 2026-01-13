@@ -1379,28 +1379,7 @@ export async function openSong(songId, options = {}) {
     setActivePartTab('lead-sheet');
     setLoadedTablature(null);
 
-    let song = allSongs.find(s => s.id === songId);
-
-    // If not found, try legacy ID mapping
-    if (!song) {
-        try {
-            const response = await fetch('data/id_mapping.json');
-            if (response.ok) {
-                const idMapping = await response.json();
-                const mappedId = idMapping[songId];
-                if (mappedId) {
-                    song = allSongs.find(s => s.id === mappedId);
-                    // Update the songId for history/URL purposes
-                    if (song) {
-                        songId = mappedId;
-                    }
-                }
-            }
-        } catch (e) {
-            // Mapping fetch failed, continue with not found
-        }
-    }
-
+    const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);
 
     // Handle song not found
