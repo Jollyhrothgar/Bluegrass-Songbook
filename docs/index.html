@@ -45,12 +45,9 @@
                 <span class="nav-label">Favorites</span>
                 <span id="nav-favorites-count" class="nav-badge hidden">0</span>
             </button>
-            <div id="nav-lists-container" class="nav-lists">
-                <!-- Dynamic: custom list nav items -->
-            </div>
-            <button id="nav-manage-lists" class="nav-item nav-secondary">
-                <span class="nav-icon">&#9881;</span>
-                <span class="nav-label">Manage Lists</span>
+            <button id="nav-song-lists" class="nav-item">
+                <span class="nav-icon">&#9776;</span>
+                <span class="nav-label">Song Lists</span>
             </button>
         </nav>
         <div class="sidebar-footer">
@@ -477,11 +474,13 @@ This is the [G]chorus [D]part
             </div>
         </div>
 
-        <!-- Manage Lists Page -->
-        <div id="manage-lists-view" class="manage-lists-view hidden">
+        <!-- Song Lists Page -->
+        <div id="song-lists-view" class="manage-lists-view hidden">
             <div class="manage-lists-header">
-                <button id="manage-lists-back-btn" class="back-btn">&larr; Back</button>
-                <h1 class="manage-lists-title">Manage Lists</h1>
+                <button id="song-lists-back-btn" class="back-btn hidden">&larr;</button>
+                <h1 class="manage-lists-title">
+                    <span id="song-lists-breadcrumb">Song Lists</span>
+                </h1>
                 <button id="create-list-btn" class="action-btn primary">+ New List</button>
             </div>
             <div class="manage-lists-content">

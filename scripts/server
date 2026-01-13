@@ -18,6 +18,29 @@ set -e
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
+# Kill any existing bluegrassbook servers (Python http.server on common ports)
+kill_existing_servers() {
+    local killed=false
+    # Check ports 8080-8090 for Python servers
+    for port in $(seq 8080 8090); do
+        local pid=$(lsof -t -i:"$port" 2>/dev/null)
+        if [ -n "$pid" ]; then
+            # Check if it's a Python process (likely our http.server)
+            local cmd=$(ps -p "$pid" -o comm= 2>/dev/null)
+            if [[ "$cmd" == *"ython"* ]]; then
+                if [ "$killed" = false ]; then
+                    echo "Killing existing bluegrassbook servers..."
+                    killed=true
+                fi
+                kill "$pid" 2>/dev/null || true
+            fi
+        fi
+    done
+    if [ "$killed" = true ]; then
+        sleep 0.5
+    fi
+}
+
 # Check if a port is available
 port_available() {
     ! lsof -i:"$1" >/dev/null 2>&1
@@ -62,6 +85,7 @@ fi
 
 case "$COMMAND" in
     frontend|"")
+        kill_existing_servers
         PORT=$(find_available_port "$PORT")
         echo "Starting frontend server..."
         echo "Visit: http://localhost:$PORT"

@@ -639,8 +639,8 @@ export function renderSong(song, chordpro, isInitialRender = false) {
             <div class="info-tags">
                 <div class="info-tags-label">Tags:</div>
                 <div class="song-tags-row">
-                    <span id="song-tags-container" class="song-tags" data-song-id="${song.id}">${tagsHtml}</span>
-                    ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song.id}">+ Add your own</button>` : ''}
+                    <span id="song-tags-container" class="song-tags" data-song-id="${song?.id || ''}">${tagsHtml}</span>
+                    ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song?.id || ''}">+ Add your own</button>` : ''}
                 </div>
             </div>
             <div id="add-tags-form" class="add-tags-form hidden">
@@ -1379,8 +1379,35 @@ export async function openSong(songId, options = {}) {
     setActivePartTab('lead-sheet');
     setLoadedTablature(null);
 
-    const song = allSongs.find(s => s.id === songId);
+    let song = allSongs.find(s => s.id === songId);
+
+    // If not found, try legacy ID mapping
+    if (!song) {
+        try {
+            const response = await fetch('data/id_mapping.json');
+            if (response.ok) {
+                const idMapping = await response.json();
+                const mappedId = idMapping[songId];
+                if (mappedId) {
+                    song = allSongs.find(s => s.id === mappedId);
+                    // Update the songId for history/URL purposes
+                    if (song) {
+                        songId = mappedId;
+                    }
+                }
+            }
+        } catch (e) {
+            // Mapping fetch failed, continue with not found
+        }
+    }
+
     setCurrentSong(song);
+
+    // Handle song not found
+    if (!song) {
+        songContentEl.innerHTML = `<div class="loading">Song not found: "${escapeHtml(songId)}"</div>`;
+        return;
+    }
 
     // Update list context index if we're navigating within a list
     if (listContext && listContext.songIds) {
