@@ -45,7 +45,7 @@ import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } 
 import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro, closeHints } from './editor.js';
 import { escapeHtml } from './utils.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
-import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions } from './chords.js';
+import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
 import { initFlags, openFlagModal } from './flags.js';
 import { initSongRequest, openSongRequestModal } from './song-request.js';
@@ -1990,10 +1990,6 @@ function init() {
     // Quick controls bar state
     let quickBarCollapsed = localStorage.getItem('quickBarCollapsed') === 'true';
 
-    // Key arrays for transposition
-    const QC_MAJOR_KEYS = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'F', 'Bb', 'Eb', 'Ab', 'Db'];
-    const QC_MINOR_KEYS = ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm'];
-
     function setQuickBarCollapsed(collapsed) {
         quickBarCollapsed = collapsed;
         localStorage.setItem('quickBarCollapsed', collapsed);
@@ -2042,12 +2038,12 @@ function init() {
         layoutDropdown.style.left = `${Math.max(8, rect.left)}px`;
     }
 
-    function transposeByInterval(semitones) {
+    function transposeBySemitone(direction) {
         if (!currentDetectedKey || !originalDetectedKey) return;
-        const keys = originalDetectedMode === 'minor' ? QC_MINOR_KEYS : QC_MAJOR_KEYS;
+        const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
         const currentIndex = keys.indexOf(currentDetectedKey);
         if (currentIndex === -1) return;
-        const newIndex = (currentIndex + semitones + keys.length) % keys.length;
+        const newIndex = (currentIndex + direction + keys.length) % keys.length;
         setCurrentDetectedKey(keys[newIndex]);
     }
 
@@ -2057,7 +2053,7 @@ function init() {
             if (keyDropdown) keyDropdown.innerHTML = '';
             return;
         }
-        const keys = originalDetectedMode === 'minor' ? QC_MINOR_KEYS : QC_MAJOR_KEYS;
+        const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
         keyDropdown.innerHTML = keys.map(key => {
             const isActive = key === currentDetectedKey;
             const isOriginal = key === originalDetectedKey;
@@ -2125,13 +2121,13 @@ function init() {
             return;
         }
 
-        // Key transpose +/-
+        // Key transpose +/- (chromatic half-steps for vocal range adjustment)
         if (target.closest('#qc-key-down')) {
-            transposeByInterval(-1);
+            transposeBySemitone(-1);
             return;
         }
         if (target.closest('#qc-key-up')) {
-            transposeByInterval(1);
+            transposeBySemitone(1);
             return;
         }
 

@@ -12,13 +12,13 @@ import {
     fontSizeLevel, FONT_SIZES,
     currentDetectedKey, setCurrentDetectedKey,
     originalDetectedKey, setOriginalDetectedKey,
-    setOriginalDetectedMode,
+    originalDetectedMode, setOriginalDetectedMode,
     fullscreenMode,
     setCurrentView
 } from './state.js';
 
 import { parseChordPro, showVersionPicker } from './song-view.js';
-import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS } from './chords.js';
+import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { escapeHtml } from './utils.js';
 import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
 import { getTagCategory, formatTagName } from './tags.js';
@@ -695,10 +695,11 @@ function createLeadSheetControls() {
     const controls = document.createElement('div');
     controls.className = 'leadsheet-controls';
 
-    // Key selector
+    // Key selector (chromatic order for vocal range adjustment)
     const keySelector = document.createElement('select');
     keySelector.className = 'key-selector';
-    KEYS.forEach(k => {
+    const keyList = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
+    keyList.forEach(k => {
         const opt = document.createElement('option');
         opt.value = k;
         opt.textContent = k;
@@ -1029,10 +1030,9 @@ function createTablatureControls(otf, part) {
         </label>
     ` : '';
 
-    // Build key options with capo indicators
-    const keyOptions = Object.keys(KEYS).filter(k => KEYS[k].mode === 'major').map(k => {
-        const keyList = Object.keys(KEYS).filter(key => KEYS[key].mode === 'major');
-        const capo = (keyList.indexOf(k) - keyList.indexOf(originalKey) + 12) % 12;
+    // Build key options with capo indicators (chromatic order for vocal range adjustment)
+    const keyOptions = CHROMATIC_MAJOR_KEYS.map(k => {
+        const capo = (CHROMATIC_MAJOR_KEYS.indexOf(k) - CHROMATIC_MAJOR_KEYS.indexOf(originalKey) + 12) % 12;
         const capoLabel = capo === 0 ? '' : ` (Capo ${capo})`;
         return `<option value="${k}" data-capo="${capo}" ${k === originalKey ? 'selected' : ''}>${k}${capoLabel}</option>`;
     }).join('');

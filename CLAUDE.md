@@ -22,6 +22,11 @@ A searchable collection of 17,000+ bluegrass and country songs with chords, buil
   - Bug fixes: `bug/<name-or-issue-id>` (e.g., `bug/parser-missing-chord`)
 - **Worktrees**: Use `.bare` worktree setup for parallel work on multiple features (see below)
 - **Trunk-based workflow**: All PRs merge to `main`. CI runs tests; deployment only happens if tests pass.
+- **Understand the project before making changes**: Confirm with the user before you make changes
+  (and also do your research). Does making a change corrupt the search index? Do you rember that
+  there are effectively two "CI modes" - the 'long mode' that is built with local deps, and the
+  short mode that uses github actions. Have you ensured that github actions reflect the intent of
+  the user and the state that needs to serve users?
 
 ## Repository Structure (Git Worktrees)
 

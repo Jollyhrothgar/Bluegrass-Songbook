@@ -42,6 +42,11 @@ export const NASHVILLE_MINOR = ['i', 'ii°', 'III', 'iv', 'v', 'VI', 'VII'];
 // Chromatic scale for interval calculation
 export const CHROMATIC = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
 
+// Chromatic key order for UI (transposition matches vocal range adjustments)
+// Using sharps for common bluegrass keys, flats for others
+export const CHROMATIC_MAJOR_KEYS = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+export const CHROMATIC_MINOR_KEYS = ['Am', 'Bbm', 'Bm', 'Cm', 'C#m', 'Dm', 'Ebm', 'Em', 'Fm', 'F#m', 'Gm', 'G#m'];
+
 // Normalize enharmonic equivalents
 export const ENHARMONIC = {
     'C#': 'Db', 'D#': 'Eb', 'E#': 'F', 'Fb': 'E',
