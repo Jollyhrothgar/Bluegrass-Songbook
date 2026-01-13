@@ -62,7 +62,6 @@ async function signInWithGoogle() {
     }
 
     const redirectUrl = window.location.origin + window.location.pathname;
-    console.log('[Auth] OAuth redirect URL:', redirectUrl);
 
     const { data, error } = await supabaseClient.auth.signInWithOAuth({
         provider: 'google',
@@ -279,8 +278,7 @@ async function fetchCloudLists() {
         .or('owners.eq.{},owners.is.null');
 
     if (!orphanError && orphanedLists && orphanedLists.length > 0) {
-        console.log('[Auth] Found lists with empty owners, repairing:', orphanedLists.length);
-        // Repair these lists by setting the owners array
+        // Repair lists with empty owners array (migration fix)
         for (const list of orphanedLists) {
             const { error: repairError } = await supabaseClient
                 .from('user_lists')
@@ -289,7 +287,6 @@ async function fetchCloudLists() {
             if (repairError) {
                 console.error('[Auth] Failed to repair list:', list.name, repairError);
             } else {
-                console.log('[Auth] Repaired list:', list.name);
                 // Add to our results with fixed owners
                 list.owners = [currentUser.id];
             }
@@ -418,8 +415,6 @@ async function deleteCloudList(listId, listName = null) {
         return { error: { message: 'Not logged in' } };
     }
 
-    console.log('[Auth] Deleting cloud list:', listId, listName);
-
     // Try to delete by ID first
     let { error, data } = await supabaseClient
         .from('user_lists')
@@ -427,17 +422,13 @@ async function deleteCloudList(listId, listName = null) {
         .eq('id', listId)
         .select();
 
-    if (error) {
-        console.error('[Auth] Delete by ID failed:', error);
-    } else if (data && data.length > 0) {
-        console.log('[Auth] Deleted list by ID:', data[0].name);
+    if (!error && data && data.length > 0) {
         return { error: null };
     }
 
     // If nothing was deleted and we have a name, try deleting by name
     // This handles the case where the local cloudId is stale/incorrect
     if (!error && (!data || data.length === 0) && listName) {
-        console.log('[Auth] No list deleted by ID, trying by name:', listName);
         const result = await supabaseClient
             .from('user_lists')
             .delete()
@@ -445,13 +436,6 @@ async function deleteCloudList(listId, listName = null) {
             .eq('user_id', currentUser.id)
             .select();
 
-        if (result.error) {
-            console.error('[Auth] Delete by name failed:', result.error);
-        } else if (result.data && result.data.length > 0) {
-            console.log('[Auth] Deleted list by name:', listName);
-        } else {
-            console.warn('[Auth] No list deleted (may not exist or RLS blocked):', listName);
-        }
         error = result.error;
     }
 

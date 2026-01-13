@@ -937,8 +937,6 @@ function migrateOldFavorites() {
         // Remove old storage keys
         localStorage.removeItem('songbook-favorites');
         localStorage.removeItem('songbook-favorites-cloud-id');
-
-        console.log(`Migrated ${favIds.length} favorites to list-based system`);
     } catch (e) {
         console.error('Failed to migrate old favorites:', e);
     }
@@ -1314,18 +1312,14 @@ function processCloudLists(cloudLists) {
     // Old-style favorites list names to migrate
     const oldFavoritesNames = ['❤️ Favorites', '❤️ favorites', '♥ Favorites'];
 
-    console.log('[Lists] Processing', cloudLists.length, 'cloud lists');
-
     for (const cloudList of cloudLists) {
         // Skip lists that were deleted during this session (check both ID and name)
         if (isListDeleted(cloudList.id, cloudList.name)) {
-            console.log('[Lists] Skipping deleted list:', cloudList.name);
             continue;
         }
 
         // Skip duplicates by name (keep first occurrence)
         if (seenNames.has(cloudList.name)) {
-            console.log('[Lists] Skipping duplicate list:', cloudList.name);
             continue;
         }
 
@@ -1387,8 +1381,6 @@ async function migrateCloudFavorites() {
         if (error || !oldCloudFavs || oldCloudFavs.length === 0) {
             return; // No old favorites to migrate
         }
-
-        console.log(`Migrating ${oldCloudFavs.length} cloud favorites to list system`);
 
         // Find existing Favorites list (don't create one - sync will handle that)
         let favList = getFavoritesList();
@@ -3072,11 +3064,12 @@ export function initLists(options) {
         } else if (viewingListId) {
             // For other lists, find the cloudId
             const list = userLists.find(l => l.id === viewingListId);
-            shareId = list?.cloudId || viewingListId;
+            shareId = list?.cloudId;
         }
 
-        if (!shareId || shareId === 'favorites') {
-            alert('Sign in and sync to share this list');
+        // If no cloudId, show local share modal explaining they need to sign in
+        if (!shareId || shareId === 'favorites' || isLocalListId(viewingListId)) {
+            openLocalShareModal(viewingListId);
             return;
         }
 
@@ -3085,6 +3078,7 @@ export function initLists(options) {
 
     // Initialize share modal handlers
     initShareModal();
+    initLocalShareModal();
 
     // Duplicate/Import list button
     const duplicateListBtn = document.getElementById('duplicate-list-btn');
@@ -3273,11 +3267,12 @@ export function initLists(options) {
             shareId = favList?.cloudId;
         } else if (viewingListId) {
             const list = userLists.find(l => l.id === viewingListId);
-            shareId = list?.cloudId || viewingListId;
+            shareId = list?.cloudId;
         }
 
-        if (!shareId || shareId === 'favorites') {
-            alert('Sign in and sync to share this list');
+        // If no cloudId, show local share modal explaining they need to sign in
+        if (!shareId || shareId === 'favorites' || isLocalListId(viewingListId)) {
+            openLocalShareModal(viewingListId);
             return;
         }
 
@@ -3648,6 +3643,122 @@ function initShareModal() {
             }, 2000);
         } catch (err) {
             prompt('Copy this invite link:', inviteLinkInput.value);
+        }
+    });
+}
+
+// ============================================
+// LOCAL SHARE MODAL (for non-synced lists)
+// ============================================
+
+let localShareListId = null;
+
+/**
+ * Check if a list ID is a local (non-synced) ID
+ */
+function isLocalListId(listId) {
+    if (!listId) return false;
+    if (listId === 'favorites' || listId === FAVORITES_LIST_ID) return false;
+    // Local IDs start with 'local_' prefix
+    return typeof listId === 'string' && listId.startsWith('local_');
+}
+
+/**
+ * Open the local share modal for non-synced lists
+ */
+function openLocalShareModal(listId) {
+    localShareListId = listId;
+
+    const modal = document.getElementById('local-share-modal');
+    const backdrop = document.getElementById('local-share-modal-backdrop');
+
+    if (!modal || !backdrop) return;
+
+    backdrop.classList.remove('hidden');
+    modal.classList.remove('hidden');
+}
+
+/**
+ * Close the local share modal
+ */
+function closeLocalShareModal() {
+    const modal = document.getElementById('local-share-modal');
+    const backdrop = document.getElementById('local-share-modal-backdrop');
+
+    if (modal) modal.classList.add('hidden');
+    if (backdrop) backdrop.classList.add('hidden');
+    localShareListId = null;
+}
+
+/**
+ * Get the song list as plain text for copying
+ */
+function getListAsText(listId) {
+    let songIds = [];
+    let listName = '';
+
+    if (listId === 'favorites' || listId === FAVORITES_LIST_ID) {
+        const favList = getFavoritesList();
+        songIds = favList?.songs || [];
+        listName = FAVORITES_LIST_NAME;
+    } else {
+        const list = userLists.find(l => l.id === listId);
+        if (list) {
+            songIds = list.songs || [];
+            listName = list.name;
+        }
+    }
+
+    if (songIds.length === 0) {
+        return `${listName}\n(empty list)`;
+    }
+
+    // Look up song titles
+    const lines = songIds.map((songId, index) => {
+        const song = allSongs.find(s => s.id === songId);
+        if (song) {
+            const artist = song.artist ? ` - ${song.artist}` : '';
+            return `${index + 1}. ${song.title}${artist}`;
+        }
+        return `${index + 1}. (unknown song)`;
+    });
+
+    return `${listName}\n${'─'.repeat(listName.length)}\n${lines.join('\n')}`;
+}
+
+/**
+ * Initialize the local share modal event handlers
+ */
+function initLocalShareModal() {
+    const backdrop = document.getElementById('local-share-modal-backdrop');
+    const closeBtn = document.getElementById('local-share-modal-close');
+    const signInBtn = document.getElementById('local-share-sign-in');
+    const copyTextBtn = document.getElementById('local-share-copy-text');
+
+    // Close on backdrop click or close button
+    backdrop?.addEventListener('click', closeLocalShareModal);
+    closeBtn?.addEventListener('click', closeLocalShareModal);
+
+    // Sign in button
+    signInBtn?.addEventListener('click', async () => {
+        closeLocalShareModal();
+        if (typeof SupabaseAuth !== 'undefined') {
+            await SupabaseAuth.signInWithGoogle();
+        }
+    });
+
+    // Copy as text button
+    copyTextBtn?.addEventListener('click', async () => {
+        const text = getListAsText(localShareListId || viewingListId);
+
+        try {
+            await navigator.clipboard.writeText(text);
+            copyTextBtn.textContent = 'Copied!';
+            setTimeout(() => {
+                copyTextBtn.textContent = 'Copy Song List';
+            }, 2000);
+        } catch (err) {
+            prompt('Copy this list:', text);
         }
     });
 }

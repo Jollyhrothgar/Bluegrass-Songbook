@@ -281,6 +281,36 @@ For issues that tests don't catch, use the `chrome-devtools` MCP with the dev se
 - Profiling search performance with large result sets
 - Checking network requests for index.jsonl or tablature JSON
 
+**Interactive debugging workflow:**
+
+```javascript
+// 1. Navigate to specific deep links
+mcp__chrome-devtools__navigate_page({ type: "url", url: "http://localhost:8080/#list/local_123" })
+
+// 2. Inspect localStorage state
+mcp__chrome-devtools__evaluate_script({
+    function: `() => {
+        const lists = JSON.parse(localStorage.getItem('songbook-lists') || '[]');
+        return lists.map(l => ({ id: l.id, name: l.name, cloudId: l.cloudId }));
+    }`
+})
+
+// 3. Take snapshots to find UI elements
+mcp__chrome-devtools__take_snapshot()
+// Returns UIDs like uid=3_44 for buttons - use these to click
+
+// 4. Click buttons and verify state changes
+mcp__chrome-devtools__click({ uid: "3_44" })  // e.g., click Share button
+
+// 5. Check console for errors
+mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
+```
+
+**Common scenarios:**
+- Testing modals: Navigate → take_snapshot → click trigger → take_snapshot → verify modal content
+- Testing local vs cloud state: Use evaluate_script to check localStorage before/after actions
+- Testing deep links: Navigate directly to `#list/{id}`, `#song/{id}`, `#work/{slug}`
+
 **Unit tests** (`__tests__/`):
 - `chords.test.js` - Key detection, transposition, Nashville numbers
 - `search-core.test.js` - Query parsing, chord/progression filtering

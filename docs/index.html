@@ -461,6 +461,28 @@ This is the [G]chorus [D]part
             </div>
         </div>
 
+        <!-- Local List Share Modal (for non-synced lists) -->
+        <div id="local-share-modal-backdrop" class="share-modal-backdrop hidden"></div>
+        <div id="local-share-modal" class="share-modal hidden">
+            <div class="share-modal-header">
+                <h3>Share List</h3>
+                <button id="local-share-modal-close" class="share-modal-close">&times;</button>
+            </div>
+            <div class="share-modal-content">
+                <div class="share-section local-share-explanation">
+                    <p>This list is saved locally on your device. To share it with others, you'll need to sign in and sync it to the cloud.</p>
+                </div>
+                <div class="share-section local-share-actions">
+                    <button id="local-share-sign-in" class="share-generate-btn">Sign In to Share</button>
+                </div>
+                <div class="share-section local-share-alternative">
+                    <h4>Or copy as text</h4>
+                    <p class="share-description">Copy the song list as plain text to share via message or email.</p>
+                    <button id="local-share-copy-text" class="share-copy-btn">Copy Song List</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Bug Report Modal -->
         <div id="bug-modal" class="modal hidden">
             <div class="modal-content">

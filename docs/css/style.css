@@ -1887,6 +1887,32 @@ h1 {
     display: none;
 }
 
+/* Local Share Modal (for non-synced lists) */
+.local-share-explanation {
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.local-share-explanation p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.local-share-actions {
+    text-align: center;
+}
+
+.local-share-alternative {
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+}
+
+.local-share-alternative .share-copy-btn {
+    width: 100%;
+    padding: 0.6rem 1rem;
+}
+
 .back-btn {
     background: none;
     border: 1px solid var(--border);

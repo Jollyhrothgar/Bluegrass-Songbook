@@ -299,10 +299,6 @@ function handleBatchCopy(e) {
     // Reset dropdown
     e.target.value = '';
 
-    // Show feedback
-    const count = songIds.length;
-    const targetList = userLists.find(l => l.id === targetListId);
-    console.log(`Copied ${count} songs to ${targetList?.name || targetListId}`);
 }
 
 /**

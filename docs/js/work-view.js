@@ -650,7 +650,7 @@ function renderChordProPart(part, container) {
     setCurrentChordpro(content);
 
     // Detect key
-    const sections = parseChordPro(content);
+    const { sections } = parseChordPro(content);
     const allChords = [];
     sections.forEach(section => {
         section.lines.forEach(line => {
