@@ -34,7 +34,7 @@ import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import {
     initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync,
     clearListView, renderListsModal, createList, addSongToList, getViewingListId,
-    showListView, fetchListData, renderManageListsView,
+    showListView, fetchListData, renderManageListsView, showSongListsView, startCreateListInView,
     // Favorites functions (favorites is now just a list)
     showFavorites, updateFavoritesCount, getFavoritesList, isFavorite, toggleFavorite,
     updateSyncUI, reorderFavoriteItem
@@ -81,7 +81,7 @@ const navAddSong = document.getElementById('nav-add-song');
 const navFavorites = document.getElementById('nav-favorites');
 const navFavoritesCount = document.getElementById('nav-favorites-count');
 const navListsContainer = document.getElementById('nav-lists-container');
-const manageListsBtn = document.getElementById('nav-manage-lists');
+const songListsBtn = document.getElementById('nav-song-lists');
 
 // List picker elements
 const listPickerBtn = document.getElementById('list-picker-btn');
@@ -120,9 +120,9 @@ const modalCreateListBtn = document.getElementById('create-list-submit');
 const modalNewListInput = document.getElementById('new-list-name');
 // Old list picker elements no longer needed - using unified ListPicker component
 
-// Manage Lists page
-const manageListsView = document.getElementById('manage-lists-view');
-const manageListsBackBtn = document.getElementById('manage-lists-back-btn');
+// Song Lists page (formerly Manage Lists)
+const songListsView = document.getElementById('song-lists-view');
+const songListsBackBtn = document.getElementById('song-lists-back-btn');
 const manageListsContainer = document.getElementById('manage-lists-container');
 const createListBtn = document.getElementById('create-list-btn');
 
@@ -245,6 +245,9 @@ function pushHistoryState(view, data = {}, replace = false) {
         case 'list':
             hash = `#list/${data.listId}`;
             break;
+        case 'song-lists':
+            hash = data.folderId ? `#lists/${data.folderId}` : '#lists';
+            break;
         case 'search':
             hash = data.query ? `#search/${encodeURIComponent(data.query)}` : '#search';
             break;
@@ -292,6 +295,9 @@ function handleHistoryNavigation(state) {
             if (state.listId) {
                 showListView(state.listId);
             }
+            break;
+        case 'song-lists':
+            showSongListsView(state.folderId || null);
             break;
         case 'search':
         default:
@@ -349,7 +355,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                manageListsView?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
                 navHome?.classList.add('active');
                 break;
             case 'search':
@@ -357,7 +363,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                manageListsView?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
                 navSearch?.classList.add('active');
                 // Show empty state if no search query (don't show random songs)
                 if (!searchInput?.value?.trim() && resultsDiv) {
@@ -370,7 +376,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.remove('hidden');
-                manageListsView?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
                 navAddSong?.classList.add('active');
                 break;
             case 'favorites':
@@ -378,7 +384,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                manageListsView?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
                 navFavorites?.classList.add('active');
                 showFavorites();
                 break;
@@ -387,22 +393,22 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.remove('hidden');
                 editorPanel?.classList.add('hidden');
-                manageListsView?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
                 break;
             case 'list':
                 searchContainer?.classList.remove('hidden');
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                manageListsView?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
                 break;
-            case 'manage-lists':
+            case 'song-lists':
                 searchContainer?.classList.add('hidden');
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                manageListsView?.classList.remove('hidden');
-                renderManageListsView();
+                songListsView?.classList.remove('hidden');
+                // renderManageListsView is called by showSongListsView
                 break;
         }
     });
@@ -657,6 +663,13 @@ function handleDeepLink() {
         const token = hash.slice(8);
         trackDeepLink('invite', hash);
         handleInviteLink(token);
+        return true;
+    } else if (hash === '#lists' || hash.startsWith('#lists/')) {
+        // Song Lists view: #lists or #lists/{folderId}
+        const folderId = hash.length > 7 ? hash.slice(7) : null;
+        trackDeepLink('song-lists', hash);
+        showSongListsView(folderId);
+        pushHistoryState('song-lists', { folderId }, true);
         return true;
     } else if (hash === '#search') {
         // Search view without query
@@ -1770,21 +1783,18 @@ function init() {
         }
     });
 
-    // Manage Lists page
-    manageListsBtn?.addEventListener('click', () => {
+    // Song Lists page
+    songListsBtn?.addEventListener('click', () => {
         closeSidebar();
-        showView('manage-lists');
+        showSongListsView();
+        pushHistoryState('song-lists', {});
     });
-    manageListsBackBtn?.addEventListener('click', () => {
-        showView('home');
+    songListsBackBtn?.addEventListener('click', () => {
+        // Use browser back to return to previous view
+        history.back();
     });
     createListBtn?.addEventListener('click', () => {
-        const name = prompt('Enter list name:');
-        if (name && name.trim()) {
-            createList(name.trim());
-            renderManageListsView();
-            renderSidebarLists();
-        }
+        startCreateListInView();
     });
     listsModalClose?.addEventListener('click', closeListsModal);
     listsModal?.addEventListener('click', (e) => {
@@ -2016,6 +2026,15 @@ function init() {
         keyDropdown.style.left = `${Math.max(8, rect.left)}px`;
     }
 
+    function positionLayoutDropdown() {
+        const layoutBtn = document.getElementById('qc-layout-btn');
+        const layoutDropdown = document.getElementById('qc-layout-dropdown');
+        if (!layoutBtn || !layoutDropdown) return;
+        const rect = layoutBtn.getBoundingClientRect();
+        layoutDropdown.style.top = `${rect.bottom + 4}px`;
+        layoutDropdown.style.left = `${Math.max(8, rect.left)}px`;
+    }
+
     function transposeByInterval(semitones) {
         if (!currentDetectedKey || !originalDetectedKey) return;
         const keys = originalDetectedMode === 'minor' ? QC_MINOR_KEYS : QC_MAJOR_KEYS;
@@ -2141,6 +2160,7 @@ function init() {
             closeAllQcDropdowns();
             if (wasHidden) {
                 layoutDropdown?.classList.remove('hidden');
+                positionLayoutDropdown();
             }
             return;
         }

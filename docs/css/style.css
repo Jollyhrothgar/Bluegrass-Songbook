@@ -1289,16 +1289,13 @@ h1 {
 
 /* Dropdown panels */
 .qc-dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 4px;
+    position: fixed;
     padding: 0.5rem;
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 100;
+    z-index: 2200;  /* Above fullscreen overlays (2100) */
     min-width: 180px;
 }
 
@@ -6638,6 +6635,27 @@ body.fullscreen-mode::after {
     margin: 0;
 }
 
+/* Breadcrumb navigation */
+.breadcrumb-link {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.15s;
+}
+
+.breadcrumb-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    color: var(--text-secondary);
+    margin: 0 0.5rem;
+}
+
+.breadcrumb-current {
+    color: var(--text);
+}
+
 .manage-lists-content {
     display: flex;
     flex-direction: column;
@@ -6655,6 +6673,48 @@ body.fullscreen-mode::after {
 
 .list-card:hover {
     border-color: var(--accent);
+}
+
+/* Clickable list cards - obvious hover state */
+.list-card.clickable {
+    cursor: pointer;
+}
+
+.list-card.clickable .list-card-header {
+    transition: background-color 0.15s;
+}
+
+.list-card.clickable:hover .list-card-header {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+/* Hide action buttons by default, show on hover */
+.list-card.clickable .list-card-actions {
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.list-card.clickable:hover .list-card-actions {
+    opacity: 1;
+}
+
+/* Folder cards - more obvious clickable state */
+.folder-card .list-card-header {
+    transition: background-color 0.15s;
+}
+
+.folder-card .list-card-header:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+/* Hide folder action buttons by default too */
+.folder-card .list-card-actions {
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.folder-card:hover .list-card-actions {
+    opacity: 1;
 }
 
 .list-card-header {
@@ -6691,6 +6751,35 @@ body.fullscreen-mode::after {
     display: flex;
     align-items: center;
     gap: 0.25rem;
+}
+
+/* Inline input for new list creation */
+.new-list-card {
+    border-color: var(--accent);
+    background: rgba(52, 152, 219, 0.05);
+}
+
+.new-list-input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.95rem;
+    font-family: inherit;
+    outline: none;
+}
+
+.new-list-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.new-list-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
 }
 
 .list-card-menu-btn {

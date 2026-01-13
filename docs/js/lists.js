@@ -614,9 +614,11 @@ export function setListFolder(listId, folderId) {
  * Get all lists in a specific folder
  */
 export function getListsInFolder(folderId) {
-    return Object.entries(folderData.listPlacements)
+    const listIds = Object.entries(folderData.listPlacements)
         .filter(([_, folder]) => folder === folderId)
         .map(([listId]) => listId);
+    // Return list objects (not IDs) for consistency with getListsAtRoot()
+    return userLists.filter(list => listIds.includes(list.id) || listIds.includes(list.cloudId));
 }
 
 /**
@@ -2031,33 +2033,37 @@ function showFolderContextMenu(folder, x, y) {
 }
 
 /**
- * Show songs in a specific list (local or public)
- * For local/owned lists, navigates to Manage Lists with that list expanded.
- * For followed/public lists, shows error (they're not in Manage Lists yet).
+ * Show songs in a specific list using the rich view UI
+ * Opens the list with full song cards, drag-drop, etc.
  */
 export async function showListView(listId) {
-    // Handle favorites as a special "list" - go to Manage Lists focused on favorites
+    // Handle favorites
     if (listId === 'favorites' || listId === FAVORITES_LIST_ID) {
-        setFocusedListId(FAVORITES_LIST_ID);
-        setCurrentView('manage-lists');
+        const favList = getFavoritesList();
+        setViewingListId(FAVORITES_LIST_ID);
+        renderListViewUI(favList.name, favList.songs, { isOwner: true, isFollower: false, isOrphaned: false, canClaim: false });
+        setCurrentView('list');
+        if (pushHistoryStateFn) pushHistoryStateFn('list', { listId: FAVORITES_LIST_ID });
         return;
     }
 
-    // First check if this is a local (owned) list
+    // Check if this is a local (owned) list
     const localList = userLists.find(l => l.id === listId);
-
     if (localList) {
-        // Navigate to Manage Lists with this list focused/expanded
-        setFocusedListId(listId);
-        setCurrentView('manage-lists');
+        setViewingListId(localList.id);
+        renderListViewUI(localList.name, localList.songs || [], { isOwner: true, isFollower: false, isOrphaned: false, canClaim: false });
+        setCurrentView('list');
+        if (pushHistoryStateFn) pushHistoryStateFn('list', { listId: localList.id });
         return;
     }
 
-    // Check if this is a followed list - for now show not found
-    // (Future: could add followed lists to Manage Lists)
+    // Check if this is a followed list
     const followedList = followedLists.find(l => l.id === listId);
     if (followedList) {
-        showListNotFound();
+        setViewingListId(followedList.id);
+        renderListViewUI(followedList.name, followedList.songs || [], { isOwner: false, isFollower: true, isOrphaned: false, canClaim: false });
+        setCurrentView('list');
+        if (pushHistoryStateFn) pushHistoryStateFn('list', { listId: followedList.id });
         return;
     }
 
@@ -2073,9 +2079,17 @@ export async function showListView(listId) {
         return;
     }
 
-    // For public lists the user doesn't own, show not found for now
-    // (Future: could show a "preview" mode or prompt to follow)
-    showListNotFound();
+    // Show the public list
+    setViewingListId(listId);
+    setViewingPublicList(data);
+    renderListViewUI(data.list.name, data.list.songs || [], {
+        isOwner: data.isOwner || false,
+        isFollower: data.isFollower || false,
+        isOrphaned: data.list.is_orphaned || false,
+        canClaim: data.canClaim || false
+    });
+    setCurrentView('list');
+    if (pushHistoryStateFn) pushHistoryStateFn('list', { listId });
 }
 
 /**
@@ -2495,16 +2509,145 @@ export function renderListsModal() {
 }
 
 // ============================================
-// MANAGE LISTS PAGE
+// SONG LISTS PAGE (formerly Manage Lists)
 // ============================================
 
 // DOM element for manage lists container
 let manageListsContainerEl = null;
 
+// Current folder being viewed (null = root level)
+let currentFolderId = null;
+
+// State for creating a new list in Song Lists view
+let creatingListInView = false;
+
+// DOM elements for song lists view
+let songListsViewEl = null;
+let songListsBackBtnEl = null;
+let songListsBreadcrumbEl = null;
+
+/**
+ * Navigate to a folder and update history
+ */
+export function navigateToFolder(folderId) {
+    currentFolderId = folderId;
+    updateBreadcrumb();
+    renderManageListsView();
+
+    if (pushHistoryStateFn) {
+        pushHistoryStateFn('song-lists', { folderId });
+    }
+}
+
+/**
+ * Show the Song Lists view, optionally at a specific folder
+ */
+export function showSongListsView(folderId = null) {
+    currentFolderId = folderId;
+
+    // Initialize DOM references if needed
+    if (!songListsViewEl) {
+        songListsViewEl = document.getElementById('song-lists-view');
+    }
+    if (!songListsBackBtnEl) {
+        songListsBackBtnEl = document.getElementById('song-lists-back-btn');
+    }
+    if (!songListsBreadcrumbEl) {
+        songListsBreadcrumbEl = document.getElementById('song-lists-breadcrumb');
+    }
+
+    updateBreadcrumb();
+    renderManageListsView();
+    setCurrentView('song-lists');
+}
+
+/**
+ * Start inline list creation in Song Lists view
+ */
+export function startCreateListInView() {
+    creatingListInView = true;
+    renderManageListsView();
+    // Focus the input after render
+    setTimeout(() => {
+        const input = manageListsContainerEl?.querySelector('.new-list-input');
+        input?.focus();
+    }, 0);
+}
+
+/**
+ * Commit new list creation from inline input
+ */
+function commitNewListInView(name) {
+    if (name && name.trim()) {
+        const list = createList(name.trim());
+        // If we're inside a folder, put the list in that folder
+        if (list && currentFolderId) {
+            setListFolder(list.id, currentFolderId);
+        }
+    }
+    creatingListInView = false;
+    renderManageListsView();
+}
+
+/**
+ * Cancel inline list creation
+ */
+function cancelNewListInView() {
+    creatingListInView = false;
+    renderManageListsView();
+}
+
+/**
+ * Update the breadcrumb display based on current folder
+ */
+function updateBreadcrumb() {
+    if (!songListsBreadcrumbEl) {
+        songListsBreadcrumbEl = document.getElementById('song-lists-breadcrumb');
+    }
+    if (!songListsBackBtnEl) {
+        songListsBackBtnEl = document.getElementById('song-lists-back-btn');
+    }
+
+    if (!currentFolderId) {
+        // At root level
+        if (songListsBreadcrumbEl) {
+            songListsBreadcrumbEl.innerHTML = 'Song Lists';
+        }
+        if (songListsBackBtnEl) {
+            songListsBackBtnEl.classList.add('hidden');
+        }
+    } else {
+        // Inside a folder
+        const allFolders = getFolders();
+        const folder = allFolders.find(f => f.id === currentFolderId);
+        const folderName = folder ? escapeHtml(folder.name) : 'Folder';
+
+        if (songListsBreadcrumbEl) {
+            songListsBreadcrumbEl.innerHTML = `
+                <a href="#" class="breadcrumb-link" data-folder-id="">Song Lists</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">${folderName}</span>
+            `;
+
+            // Wire up breadcrumb link click
+            const rootLink = songListsBreadcrumbEl.querySelector('.breadcrumb-link');
+            if (rootLink) {
+                rootLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    navigateToFolder(null);
+                });
+            }
+        }
+        if (songListsBackBtnEl) {
+            songListsBackBtnEl.classList.remove('hidden');
+        }
+    }
+}
+
 // Subscribe to allSongs changes to re-render when songs load
 subscribe('allSongs', () => {
-    // If we're on the manage-lists view, re-render to show actual song titles
-    if (currentView === 'manage-lists') {
+    // If we're on the song-lists view, re-render to show actual song titles
+    if (currentView === 'song-lists') {
         renderManageListsView();
     }
 });
@@ -2526,51 +2669,7 @@ function getListPreview(list, maxChars = 50) {
 }
 
 /**
- * Render the songs inside a list card (expandable section)
- */
-function renderListSongsPreview(list) {
-    if (!list.songs || list.songs.length === 0) {
-        return '<div class="list-songs-empty">No songs in this list</div>';
-    }
-
-    const totalSongs = list.songs.length;
-    const songItems = list.songs.map((songId, index) => {
-        const song = allSongs.find(s => s.id === songId);
-        if (!song) return '';
-        const isFirst = index === 0;
-        const isLast = index === totalSongs - 1;
-        return `
-            <div class="list-song-item" data-song-id="${songId}" data-list-id="${list.id}" data-index="${index}">
-                <input type="checkbox" class="list-song-checkbox" data-song-id="${songId}">
-                <div class="list-song-info">
-                    <span class="list-song-title">${escapeHtml(song.title)}</span>
-                    <span class="list-song-artist">${escapeHtml(song.artist || '')}</span>
-                </div>
-                <div class="list-song-actions">
-                    <button class="list-song-btn move-song-up-btn" data-song-id="${songId}" data-list-id="${list.id}" data-index="${index}" title="Move up"${isFirst ? ' disabled' : ''}>▲</button>
-                    <button class="list-song-btn move-song-down-btn" data-song-id="${songId}" data-list-id="${list.id}" data-index="${index}" title="Move down"${isLast ? ' disabled' : ''}>▼</button>
-                    <button class="list-song-remove" data-song-id="${songId}" data-list-id="${list.id}" title="Remove from list">×</button>
-                </div>
-            </div>
-        `;
-    }).filter(Boolean);
-
-    if (songItems.length === 0) {
-        return '<div class="list-songs-empty">No songs found</div>';
-    }
-
-    return `
-        <div class="list-songs-actions">
-            <button class="list-songs-select-all" data-list-id="${list.id}">Select All</button>
-            <button class="list-songs-copy-to hidden" data-list-id="${list.id}">Copy to...</button>
-            <button class="list-songs-move-to hidden" data-list-id="${list.id}">Move to...</button>
-        </div>
-        ${songItems.join('')}
-    `;
-}
-
-/**
- * Render the Manage Lists page with folders and lists as cards
+ * Render the Song Lists page with folders and lists as cards
  */
 export function renderManageListsView() {
     if (!manageListsContainerEl) {
@@ -2580,69 +2679,87 @@ export function renderManageListsView() {
 
     const html = [];
 
-    // Get root-level folders
-    const rootFolders = getFoldersAtLevel(null);
+    // Get folders and lists at the current level
+    const currentFolders = getFoldersAtLevel(currentFolderId);
+    const currentLists = currentFolderId
+        ? getListsInFolder(currentFolderId)
+        : getListsAtRoot();
 
-    // Get root-level lists (not in any folder)
-    const rootLists = getListsAtRoot();
+    // Show inline input card if creating a new list
+    if (creatingListInView) {
+        html.push(`
+            <div class="list-card new-list-card">
+                <div class="list-card-header">
+                    <span class="list-card-icon">☰</span>
+                    <div class="list-card-info">
+                        <input type="text" class="new-list-input" placeholder="List name" autofocus>
+                    </div>
+                    <div class="list-card-actions">
+                        <button class="list-card-btn cancel-new-list-btn" title="Cancel">×</button>
+                    </div>
+                </div>
+            </div>
+        `);
+    }
 
-    // No content message
-    if (rootFolders.length === 0 && rootLists.length === 0) {
+    // No content message (only show if not creating and empty)
+    if (!creatingListInView && currentFolders.length === 0 && currentLists.length === 0) {
+        const emptyMessage = currentFolderId
+            ? '<p>This folder is empty.</p><p>Add lists by moving them here from the root level.</p>'
+            : '<p>No lists yet!</p><p>Click <strong>+ New List</strong> above to create your first list.</p>';
         manageListsContainerEl.innerHTML = `
             <div class="manage-lists-empty">
-                <p>No lists yet!</p>
-                <p>Click <strong>+ New List</strong> above to create your first list.</p>
+                ${emptyMessage}
             </div>
         `;
         return;
     }
 
-    // Render folders first
-    rootFolders.forEach(folder => {
-        const listsInFolder = getListsInFolder(folder.id);
-        const listCount = listsInFolder.length;
-        html.push(`
-            <div class="list-card folder-card" data-folder-id="${folder.id}">
-                <div class="list-card-header">
-                    <span class="list-card-icon">📁</span>
-                    <div class="list-card-info">
-                        <span class="list-card-name">${escapeHtml(folder.name)}</span>
-                        <span class="list-card-meta">${listCount} list${listCount !== 1 ? 's' : ''}</span>
-                    </div>
-                    <div class="list-card-actions">
-                        <button class="list-card-btn rename-folder-btn" data-folder-id="${folder.id}" title="Rename folder">✏️</button>
-                        <button class="list-card-btn delete-folder-btn" data-folder-id="${folder.id}" title="Delete folder">🗑️</button>
+    // Render folders first (only at root level - we support one level of nesting)
+    if (!currentFolderId) {
+        currentFolders.forEach(folder => {
+            const listsInFolder = getListsInFolder(folder.id);
+            const listCount = listsInFolder.length;
+            html.push(`
+                <div class="list-card folder-card" data-folder-id="${folder.id}">
+                    <div class="list-card-header">
+                        <span class="list-card-icon">📁</span>
+                        <div class="list-card-info">
+                            <span class="list-card-name">${escapeHtml(folder.name)}</span>
+                            <span class="list-card-meta">${listCount} list${listCount !== 1 ? 's' : ''}</span>
+                        </div>
+                        <div class="list-card-actions">
+                            <button class="list-card-btn rename-folder-btn" data-folder-id="${folder.id}" title="Rename folder">✏️</button>
+                            <button class="list-card-btn delete-folder-btn" data-folder-id="${folder.id}" title="Delete folder">🗑️</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        `);
-    });
+            `);
+        });
+    }
 
-    // Render root-level lists (including Favorites)
+    // Render lists at current level
     const isLoggedIn = typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn?.();
-    rootLists.forEach((list, index) => {
+    currentLists.forEach((list, index) => {
         const isFavorites = list.id === FAVORITES_LIST_ID;
         const songCount = list.songs?.length || 0;
         const preview = getListPreview(list);
-        const songsHtml = renderListSongsPreview(list);
         const isFirst = index === 0;
-        const isLast = index === rootLists.length - 1;
+        const isLast = index === currentLists.length - 1;
 
         // Determine if list can be shared
         const canShare = isLoggedIn && list.cloudId;
         const shareTitle = !isLoggedIn ? 'Sign in to share' : !list.cloudId ? 'Sync to share' : 'Share list';
 
         html.push(`
-            <div class="list-card${isFavorites ? ' favorites-card' : ''}" data-list-id="${list.id}">
+            <div class="list-card clickable${isFavorites ? ' favorites-card' : ''}" data-list-id="${list.id}">
                 <div class="list-card-header">
-                    <button class="list-card-expand" title="Show songs">▶</button>
                     <span class="list-card-icon">${isFavorites ? '⭐' : '☰'}</span>
                     <div class="list-card-info">
                         <span class="list-card-name">${escapeHtml(list.name)}</span>
                         <span class="list-card-meta">${songCount} song${songCount !== 1 ? 's' : ''}${preview ? ' • ' + escapeHtml(preview) : ''}</span>
                     </div>
                     <div class="list-card-actions">
-                        <button class="list-card-btn play-list-btn" data-list-id="${list.id}" title="Play list"${songCount === 0 ? ' disabled' : ''}>▶</button>
                         <button class="list-card-btn share-list-btn" data-list-id="${list.id}" title="${shareTitle}"${!canShare ? ' disabled' : ''}>🔗</button>
                         <button class="list-card-btn move-list-up-btn" data-list-id="${list.id}" title="Move up"${isFirst ? ' disabled' : ''}>▲</button>
                         <button class="list-card-btn move-list-down-btn" data-list-id="${list.id}" title="Move down"${isLast ? ' disabled' : ''}>▼</button>
@@ -2652,9 +2769,6 @@ export function renderManageListsView() {
                         ` : ''}
                     </div>
                 </div>
-                <div class="list-card-songs hidden" data-list-id="${list.id}">
-                    ${songsHtml}
-                </div>
             </div>
         `);
     });
@@ -2663,145 +2777,6 @@ export function renderManageListsView() {
 
     // Wire up event handlers
     wireManageListsEvents();
-
-    // Auto-expand the focused list if set
-    if (focusedListId) {
-        const card = manageListsContainerEl.querySelector(`.list-card[data-list-id="${focusedListId}"]`);
-        if (card) {
-            const songsContainer = card.querySelector('.list-card-songs');
-            const expandBtn = card.querySelector('.list-card-expand');
-            songsContainer?.classList.remove('hidden');
-            if (expandBtn) {
-                expandBtn.textContent = '▼';
-                expandBtn.title = 'Hide songs';
-            }
-            card.classList.add('expanded');
-            // Scroll the card into view
-            card.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-        // Clear the focused list after expanding
-        setFocusedListId(null);
-    }
-}
-
-/**
- * Get selected song IDs from checkboxes in a container
- */
-function getSelectedSongIds(container) {
-    const checked = container.querySelectorAll('.list-song-checkbox:checked');
-    return Array.from(checked).map(cb => cb.dataset.songId);
-}
-
-/**
- * Update batch action buttons visibility based on selection
- */
-function updateBatchButtons(container, listId) {
-    const selectedCount = getSelectedSongIds(container).length;
-    const copyBtn = container.querySelector('.list-songs-copy-to');
-    const moveBtn = container.querySelector('.list-songs-move-to');
-
-    if (selectedCount > 0) {
-        copyBtn?.classList.remove('hidden');
-        moveBtn?.classList.remove('hidden');
-        copyBtn.textContent = `Copy ${selectedCount} to...`;
-        moveBtn.textContent = `Move ${selectedCount} to...`;
-    } else {
-        copyBtn?.classList.add('hidden');
-        moveBtn?.classList.add('hidden');
-    }
-}
-
-/**
- * Show dialog to copy/move songs to another list
- */
-function showCopyMoveDialog(songIds, sourceListId, operation) {
-    // Get available lists (exclude source list for move, and exclude Favorites for both)
-    const availableLists = userLists.filter(l => {
-        if (l.id === FAVORITES_LIST_ID) return false;
-        if (operation === 'move' && l.id === sourceListId) return false;
-        return true;
-    });
-
-    if (availableLists.length === 0) {
-        alert('No other lists available. Create a new list first.');
-        return;
-    }
-
-    // Remove any existing dialog
-    const existingDialog = document.querySelector('.copy-move-dialog');
-    if (existingDialog) existingDialog.remove();
-
-    const action = operation === 'copy' ? 'Copy' : 'Move';
-    const songCount = songIds.length;
-    const songText = songCount === 1 ? '1 song' : `${songCount} songs`;
-
-    // Create dialog
-    const dialog = document.createElement('div');
-    dialog.className = 'copy-move-dialog';
-    dialog.innerHTML = `
-        <div class="copy-move-dialog-content">
-            <div class="copy-move-dialog-header">
-                <h3>${action} ${songText} to...</h3>
-                <button class="copy-move-dialog-close">×</button>
-            </div>
-            <div class="copy-move-dialog-lists">
-                ${availableLists.map(list => `
-                    <button class="copy-move-dialog-option" data-list-id="${list.id}">
-                        <span class="copy-move-dialog-icon">${list.id === FAVORITES_LIST_ID ? '⭐' : '☰'}</span>
-                        <span class="copy-move-dialog-name">${escapeHtml(list.name)}</span>
-                        <span class="copy-move-dialog-count">${list.songs?.length || 0} songs</span>
-                    </button>
-                `).join('')}
-            </div>
-        </div>
-    `;
-
-    document.body.appendChild(dialog);
-
-    // Handle list selection
-    dialog.querySelectorAll('.copy-move-dialog-option').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetListId = btn.dataset.listId;
-            const targetList = userLists.find(l => l.id === targetListId);
-
-            // Perform the operation
-            songIds.forEach(songId => {
-                addSongToList(targetListId, songId);
-                if (operation === 'move') {
-                    removeSongFromList(sourceListId, songId);
-                }
-            });
-
-            // Close dialog
-            dialog.remove();
-
-            // Re-render, keeping source list expanded
-            setFocusedListId(sourceListId);
-            renderManageListsView();
-            renderSidebarLists();
-        });
-    });
-
-    // Close on X button
-    dialog.querySelector('.copy-move-dialog-close').addEventListener('click', () => {
-        dialog.remove();
-    });
-
-    // Close on backdrop click
-    dialog.addEventListener('click', (e) => {
-        if (e.target === dialog) {
-            dialog.remove();
-        }
-    });
-
-    // Close on Escape
-    const handleEscape = (e) => {
-        if (e.key === 'Escape') {
-            dialog.remove();
-            document.removeEventListener('keydown', handleEscape);
-        }
-    };
-    document.addEventListener('keydown', handleEscape);
 }
 
 /**
@@ -2810,124 +2785,66 @@ function showCopyMoveDialog(songIds, sourceListId, operation) {
 function wireManageListsEvents() {
     if (!manageListsContainerEl) return;
 
-    // Expand/collapse toggle button
-    manageListsContainerEl.querySelectorAll('.list-card-expand').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const card = btn.closest('.list-card');
-            const songsContainer = card.querySelector('.list-card-songs');
-            const isExpanded = !songsContainer.classList.contains('hidden');
-
-            if (isExpanded) {
-                songsContainer.classList.add('hidden');
-                btn.textContent = '▶';
-                btn.title = 'Show songs';
-                card.classList.remove('expanded');
-            } else {
-                songsContainer.classList.remove('hidden');
-                btn.textContent = '▼';
-                btn.title = 'Hide songs';
-                card.classList.add('expanded');
+    // New list inline input handlers
+    const newListInput = manageListsContainerEl.querySelector('.new-list-input');
+    if (newListInput) {
+        newListInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                commitNewListInView(newListInput.value);
+            } else if (e.key === 'Escape') {
+                e.preventDefault();
+                cancelNewListInView();
             }
         });
-    });
-
-    // Click on list card header to expand/collapse (same as expand button)
-    manageListsContainerEl.querySelectorAll('.list-card[data-list-id] .list-card-header').forEach(header => {
-        header.addEventListener('click', (e) => {
-            // Don't toggle if clicking on buttons
-            if (e.target.closest('button')) return;
-
-            e.stopPropagation();
-            const card = header.closest('.list-card');
-            const songsContainer = card.querySelector('.list-card-songs');
-            const expandBtn = card.querySelector('.list-card-expand');
-            const isExpanded = !songsContainer.classList.contains('hidden');
-
-            if (isExpanded) {
-                songsContainer.classList.add('hidden');
-                if (expandBtn) {
-                    expandBtn.textContent = '▶';
-                    expandBtn.title = 'Show songs';
+        newListInput.addEventListener('blur', () => {
+            // Commit if has value, cancel if empty
+            setTimeout(() => {
+                if (creatingListInView) {
+                    if (newListInput.value.trim()) {
+                        commitNewListInView(newListInput.value);
+                    } else {
+                        cancelNewListInView();
+                    }
                 }
-                card.classList.remove('expanded');
-            } else {
-                songsContainer.classList.remove('hidden');
-                if (expandBtn) {
-                    expandBtn.textContent = '▼';
-                    expandBtn.title = 'Hide songs';
+            }, 100);
+        });
+    }
+
+    // Cancel new list button
+    manageListsContainerEl.querySelector('.cancel-new-list-btn')?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        cancelNewListInView();
+    });
+
+    // Click on list card to open in rich view
+    manageListsContainerEl.querySelectorAll('.list-card.clickable[data-list-id]').forEach(card => {
+        card.addEventListener('click', (e) => {
+            // Don't navigate if clicking on action buttons
+            if (e.target.closest('.list-card-actions')) return;
+
+            e.stopPropagation();
+            const listId = card.dataset.listId;
+            showListView(listId);
+        });
+    });
+
+    // Folder card click - navigate into folder
+    manageListsContainerEl.querySelectorAll('.folder-card').forEach(card => {
+        const header = card.querySelector('.list-card-header');
+        if (header) {
+            header.addEventListener('click', (e) => {
+                // Don't navigate if clicking on buttons
+                if (e.target.closest('button')) return;
+
+                e.stopPropagation();
+                const folderId = card.dataset.folderId;
+                if (folderId) {
+                    navigateToFolder(folderId);
                 }
-                card.classList.add('expanded');
-            }
-        });
-        header.style.cursor = 'pointer';
-    });
-
-    // Song checkboxes - update batch action buttons visibility
-    manageListsContainerEl.querySelectorAll('.list-song-checkbox').forEach(checkbox => {
-        checkbox.addEventListener('change', (e) => {
-            e.stopPropagation();
-            const songsContainer = checkbox.closest('.list-card-songs');
-            const listId = songsContainer.dataset.listId;
-            updateBatchButtons(songsContainer, listId);
-        });
-    });
-
-    // Select All button
-    manageListsContainerEl.querySelectorAll('.list-songs-select-all').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const songsContainer = btn.closest('.list-card-songs');
-            const listId = songsContainer.dataset.listId;
-            const checkboxes = songsContainer.querySelectorAll('.list-song-checkbox');
-            const allChecked = Array.from(checkboxes).every(cb => cb.checked);
-
-            checkboxes.forEach(cb => cb.checked = !allChecked);
-            btn.textContent = allChecked ? 'Select All' : 'Clear';
-            updateBatchButtons(songsContainer, listId);
-        });
-    });
-
-    // Copy to button
-    manageListsContainerEl.querySelectorAll('.list-songs-copy-to').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const songsContainer = btn.closest('.list-card-songs');
-            const sourceListId = songsContainer.dataset.listId;
-            const selectedSongIds = getSelectedSongIds(songsContainer);
-
-            if (selectedSongIds.length === 0) return;
-
-            // Show list picker for copy destination
-            showCopyMoveDialog(selectedSongIds, sourceListId, 'copy');
-        });
-    });
-
-    // Move to button
-    manageListsContainerEl.querySelectorAll('.list-songs-move-to').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const songsContainer = btn.closest('.list-card-songs');
-            const sourceListId = songsContainer.dataset.listId;
-            const selectedSongIds = getSelectedSongIds(songsContainer);
-
-            if (selectedSongIds.length === 0) return;
-
-            // Show list picker for move destination
-            showCopyMoveDialog(selectedSongIds, sourceListId, 'move');
-        });
-    });
-
-    // Remove song button
-    manageListsContainerEl.querySelectorAll('.list-song-remove').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const songId = btn.dataset.songId;
-            const listId = btn.dataset.listId;
-            removeSongFromList(listId, songId);
-            setFocusedListId(listId); // Keep the list expanded after re-render
-            renderManageListsView();
-        });
+            });
+            header.style.cursor = 'pointer';
+        }
     });
 
     // Rename list
@@ -3010,81 +2927,6 @@ function wireManageListsEvents() {
             if (reorderList(listId, 'down')) {
                 renderManageListsView();
             }
-        });
-    });
-
-    // Move song up in list
-    manageListsContainerEl.querySelectorAll('.move-song-up-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const listId = btn.dataset.listId;
-            const index = parseInt(btn.dataset.index, 10);
-            if (reorderSongInList(listId, index, index - 1)) {
-                renderManageListsView();
-                // Re-expand the list that was open
-                const card = manageListsContainerEl.querySelector(`.list-card[data-list-id="${listId}"]`);
-                if (card) {
-                    const songsContainer = card.querySelector('.list-card-songs');
-                    const expandBtn = card.querySelector('.list-card-expand');
-                    songsContainer?.classList.remove('hidden');
-                    if (expandBtn) {
-                        expandBtn.textContent = '▼';
-                        expandBtn.title = 'Hide songs';
-                    }
-                    card.classList.add('expanded');
-                }
-            }
-        });
-    });
-
-    // Move song down in list
-    manageListsContainerEl.querySelectorAll('.move-song-down-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const listId = btn.dataset.listId;
-            const index = parseInt(btn.dataset.index, 10);
-            if (reorderSongInList(listId, index, index + 1)) {
-                renderManageListsView();
-                // Re-expand the list that was open
-                const card = manageListsContainerEl.querySelector(`.list-card[data-list-id="${listId}"]`);
-                if (card) {
-                    const songsContainer = card.querySelector('.list-card-songs');
-                    const expandBtn = card.querySelector('.list-card-expand');
-                    songsContainer?.classList.remove('hidden');
-                    if (expandBtn) {
-                        expandBtn.textContent = '▼';
-                        expandBtn.title = 'Hide songs';
-                    }
-                    card.classList.add('expanded');
-                }
-            }
-        });
-    });
-
-    // Play list button - opens first song with list context
-    manageListsContainerEl.querySelectorAll('.play-list-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const listId = btn.dataset.listId;
-            const list = listId === FAVORITES_LIST_ID
-                ? getFavoritesList()
-                : userLists.find(l => l.id === listId);
-
-            if (!list || !list.songs || list.songs.length === 0) {
-                return;
-            }
-
-            // Set up list context for prev/next navigation
-            setListContext({
-                listId: list.id,
-                listName: list.name,
-                songIds: list.songs,
-                currentIndex: 0
-            });
-
-            // Open the first song
-            const firstSongId = list.songs[0];
-            openSong(firstSongId, { fromList: true, listId: list.id });
         });
     });
 
@@ -3527,14 +3369,17 @@ function initShareModal() {
             const result = await SupabaseAuth.generateListInvite(currentShareListId);
 
             if (result.error) {
-                alert('Failed to generate invite: ' + result.error);
+                const errorMsg = typeof result.error === 'string'
+                    ? result.error
+                    : (result.error.message || JSON.stringify(result.error));
+                alert('Failed to generate invite: ' + errorMsg);
                 generateInviteBtn.disabled = false;
                 generateInviteBtn.textContent = 'Generate Invite Link';
                 return;
             }
 
-            // Build invite URL
-            const inviteUrl = `${window.location.origin}${window.location.pathname}#invite/${result.token}`;
+            // Build invite URL (data contains { status, token, invite_id, expires_at })
+            const inviteUrl = `${window.location.origin}${window.location.pathname}#invite/${result.data.token}`;
 
             // Show the invite link
             const inviteActions = document.getElementById('share-invite-actions');
