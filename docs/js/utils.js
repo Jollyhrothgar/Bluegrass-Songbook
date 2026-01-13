@@ -18,20 +18,61 @@ export function escapeRegex(string) {
 
 /**
  * Highlight search term matches in text
+ *
+ * Finds all matches first, then builds result in a single pass to avoid
+ * corrupting <mark> tags when a search term contains 'm', 'a', 'r', or 'k'.
  */
 export function highlightMatch(text, query) {
     if (!query) return escapeHtml(text);
 
-    const escaped = escapeHtml(text);
-    const terms = query.toLowerCase().split(/\s+/);
+    const terms = query.toLowerCase().split(/\s+/).filter(t => t);
+    if (terms.length === 0) return escapeHtml(text);
 
-    let result = escaped;
+    // Find all match positions in the original text
+    const matches = [];
     terms.forEach(term => {
-        if (term) {
-            const regex = new RegExp(`(${escapeRegex(term)})`, 'gi');
-            result = result.replace(regex, '<mark>$1</mark>');
+        const regex = new RegExp(escapeRegex(term), 'gi');
+        let match;
+        while ((match = regex.exec(text)) !== null) {
+            matches.push({
+                start: match.index,
+                end: match.index + match[0].length
+            });
         }
     });
+
+    if (matches.length === 0) return escapeHtml(text);
+
+    // Sort by start position, then by length (longer matches first for ties)
+    matches.sort((a, b) => a.start - b.start || (b.end - b.start) - (a.end - a.start));
+
+    // Merge overlapping ranges
+    const merged = [];
+    for (const m of matches) {
+        if (merged.length === 0 || m.start > merged[merged.length - 1].end) {
+            merged.push({ start: m.start, end: m.end });
+        } else {
+            // Extend the last range if needed
+            merged[merged.length - 1].end = Math.max(merged[merged.length - 1].end, m.end);
+        }
+    }
+
+    // Build result with escaping and highlights in one pass
+    let result = '';
+    let pos = 0;
+    for (const m of merged) {
+        // Add escaped text before this match
+        if (pos < m.start) {
+            result += escapeHtml(text.slice(pos, m.start));
+        }
+        // Add highlighted match (escaped inside the mark tag)
+        result += '<mark>' + escapeHtml(text.slice(m.start, m.end)) + '</mark>';
+        pos = m.end;
+    }
+    // Add remaining text after last match
+    if (pos < text.length) {
+        result += escapeHtml(text.slice(pos));
+    }
 
     return result;
 }
