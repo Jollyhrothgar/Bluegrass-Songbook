@@ -3,9 +3,9 @@
 # bootstrap - First-time setup and build
 #
 # Usage:
-#   ./scripts/bootstrap              # Full setup: install deps + enrich + build index
-#   ./scripts/bootstrap --quick      # Skip dependency install, just enrich + build
-#   ./scripts/bootstrap --skip-enrich  # Skip enrichment step (for faster builds)
+#   ./scripts/bootstrap              # Full setup: install deps + build index
+#   ./scripts/bootstrap --quick      # Skip dependency install, just build index
+#   ./scripts/bootstrap --enrich     # Run enrichment step (usually not needed)
 #
 
 set -e
@@ -20,15 +20,19 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
 QUICK=false
-SKIP_ENRICH=false
+DO_ENRICH=false
 for arg in "$@"; do
     case $arg in
         --quick)
             QUICK=true
             shift
             ;;
+        --enrich)
+            DO_ENRICH=true
+            shift
+            ;;
+        # Legacy flag for backward compatibility
         --skip-enrich)
-            SKIP_ENRICH=true
             shift
             ;;
     esac
@@ -46,8 +50,8 @@ if [ "$QUICK" = false ]; then
     echo ""
 fi
 
-# Enrich songs (add provenance, normalize chords)
-if [ "$SKIP_ENRICH" = false ]; then
+# Enrich songs (add provenance) - only if explicitly requested
+if [ "$DO_ENRICH" = true ]; then
     STAGE_START=$SECONDS
     echo "Enriching songs..."
     uv run python3 scripts/lib/enrich_songs.py
@@ -65,7 +69,7 @@ echo ""
 echo "Bootstrap complete! (${SECONDS}s total)"
 echo "  Timing breakdown:"
 [ "$QUICK" = false ] && echo "    - Dependencies: ${DEPS_TIME}s"
-[ "$SKIP_ENRICH" = false ] && echo "    - Enrichment: ${ENRICH_TIME}s"
+[ "$DO_ENRICH" = true ] && echo "    - Enrichment: ${ENRICH_TIME}s"
 echo "    - Build index: ${BUILD_TIME}s"
 echo ""
 echo "  - Run './scripts/server' to start the frontend"

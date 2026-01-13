@@ -8,11 +8,14 @@ Reads work.yaml + lead-sheet.pro from each work directory and outputs index.json
 Usage:
     uv run python scripts/lib/build_works_index.py
     uv run python scripts/lib/build_works_index.py --no-tags
+    uv run python scripts/lib/build_works_index.py --workers 8
 """
 
 import argparse
 import hashlib
 import json
+import multiprocessing
+import os
 import re
 import shutil
 from pathlib import Path
@@ -20,10 +23,11 @@ from urllib.parse import quote
 
 import yaml
 
-# Canonical ranks cache (loaded once)
+# Canonical ranks cache (loaded once per process)
 _canonical_ranks = None
+_worker_initialized = False
 
-def load_canonical_ranks():
+def load_canonical_ranks(quiet=False):
     """Load canonical ranking from cache file."""
     global _canonical_ranks
     if _canonical_ranks is None:
@@ -31,11 +35,21 @@ def load_canonical_ranks():
         if cache_file.exists():
             with open(cache_file) as f:
                 _canonical_ranks = json.load(f)
-            print(f"Loaded {len(_canonical_ranks)} canonical ranks")
+            if not quiet:
+                print(f"Loaded {len(_canonical_ranks)} canonical ranks")
         else:
-            print(f"Warning: canonical_ranks.json not found at {cache_file}")
+            if not quiet:
+                print(f"Warning: canonical_ranks.json not found at {cache_file}")
             _canonical_ranks = {}
     return _canonical_ranks
+
+
+def _init_worker():
+    """Initialize worker process with required data."""
+    global _worker_initialized
+    if not _worker_initialized:
+        load_canonical_ranks(quiet=True)
+        _worker_initialized = True
 
 def get_canonical_rank(title: str) -> int:
     """Get canonical rank for a song title. Higher = more popular."""
@@ -303,9 +317,21 @@ def fuzzy_group_songs(songs: list) -> list:
     Uses fuzzy matching to handle cases like:
     - "Angelene Baker" vs "Angeline Baker" (spelling variations)
     - Minor typos and OCR errors
+
+    Optimized to avoid O(n²) comparisons by grouping titles by prefix first.
+    Uses rapidfuzz for faster matching if available, falls back to difflib.
     """
-    from difflib import SequenceMatcher
     import unicodedata
+    from difflib import SequenceMatcher
+
+    # Try to use rapidfuzz for 10x faster string matching
+    try:
+        from rapidfuzz.fuzz import ratio as rapidfuzz_ratio
+        def similarity(a: str, b: str) -> float:
+            return rapidfuzz_ratio(a, b) / 100.0  # rapidfuzz returns 0-100
+    except ImportError:
+        def similarity(a: str, b: str) -> float:
+            return SequenceMatcher(None, a, b).ratio()
 
     def normalize_for_fuzzy(text: str) -> str:
         """Normalize title for fuzzy comparison."""
@@ -348,37 +374,43 @@ def fuzzy_group_songs(songs: list) -> list:
             title_to_groups[norm_title] = set()
         title_to_groups[norm_title].add(gid)
 
-    # Find fuzzy matches between different normalized titles
-    # Only check titles that might be similar (same first few chars or similar length)
-    titles = list(title_to_groups.keys())
-    merge_map = {}  # old_group_id -> new_group_id
+    # Group titles by their first 3 characters (prefix buckets)
+    # This avoids O(n²) by only comparing within buckets
+    prefix_buckets = {}
+    for title in title_to_groups.keys():
+        prefix = title[:3] if len(title) >= 3 else title
+        if prefix not in prefix_buckets:
+            prefix_buckets[prefix] = []
+        prefix_buckets[prefix].append(title)
 
+    merge_map = {}  # old_group_id -> new_group_id
     SIMILARITY_THRESHOLD = 0.85  # 85% similarity required
 
-    for i, title1 in enumerate(titles):
-        for title2 in titles[i+1:]:
-            # Quick filter: if lengths differ by more than 20%, skip
-            len1, len2 = len(title1), len(title2)
-            if abs(len1 - len2) > max(len1, len2) * 0.2:
-                continue
+    # Only compare titles within the same prefix bucket
+    for prefix, bucket_titles in prefix_buckets.items():
+        if len(bucket_titles) < 2:
+            continue
 
-            # Quick filter: if first 3 chars don't match, skip (catches most non-matches fast)
-            if title1[:3] != title2[:3]:
-                continue
+        for i, title1 in enumerate(bucket_titles):
+            for title2 in bucket_titles[i+1:]:
+                # Quick filter: if lengths differ by more than 20%, skip
+                len1, len2 = len(title1), len(title2)
+                if abs(len1 - len2) > max(len1, len2) * 0.2:
+                    continue
 
-            sim = similarity(title1, title2)
-            if sim >= SIMILARITY_THRESHOLD:
-                # These titles should be grouped together
-                groups1 = title_to_groups[title1]
-                groups2 = title_to_groups[title2]
+                sim = similarity(title1, title2)
+                if sim >= SIMILARITY_THRESHOLD:
+                    # These titles should be grouped together
+                    groups1 = title_to_groups[title1]
+                    groups2 = title_to_groups[title2]
 
-                # Pick the canonical group_id (prefer the one with more songs)
-                all_groups = groups1 | groups2
-                canonical = max(all_groups, key=lambda g: len(by_group.get(g, [])))
+                    # Pick the canonical group_id (prefer the one with more songs)
+                    all_groups = groups1 | groups2
+                    canonical = max(all_groups, key=lambda g: len(by_group.get(g, [])))
 
-                for gid in all_groups:
-                    if gid != canonical:
-                        merge_map[gid] = canonical
+                    for gid in all_groups:
+                        if gid != canonical:
+                            merge_map[gid] = canonical
 
     if merge_map:
         # Apply merges
@@ -394,29 +426,75 @@ def fuzzy_group_songs(songs: list) -> list:
     return songs
 
 
-def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = True):
-    """Build index from all works."""
+def _process_work_dir(work_dir_path: str) -> tuple:
+    """Process a single work directory. Used by multiprocessing pool.
+
+    Returns (song_dict, None) on success, (None, (work_id, error_msg)) on error.
+    """
+    work_dir = Path(work_dir_path)
+    if not work_dir.is_dir():
+        return (None, None)
+
+    try:
+        song = build_song_from_work(work_dir)
+        return (song, None)
+    except Exception as e:
+        return (None, (work_dir.name, str(e)))
+
+
+def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = True,
+                      fuzzy_grouping: bool = True, num_workers: int = None):
+    """Build index from all works.
+
+    Args:
+        works_dir: Path to works/ directory
+        output_file: Path to output index.jsonl
+        enrich_tags: Whether to run tag enrichment
+        fuzzy_grouping: Whether to run fuzzy title grouping (skip for CI)
+        num_workers: Number of parallel workers (default: CPU count)
+    """
     print(f"Scanning {works_dir}...")
+
+    # Get all work directories
+    work_dirs = [str(d) for d in sorted(works_dir.iterdir())]
+    total = len(work_dirs)
+
+    # Determine worker count
+    # In CI environments (detected via CI env var), use fewer workers
+    # since GitHub Actions typically has 2 cores
+    if num_workers is None:
+        if os.environ.get('CI'):
+            num_workers = 2  # CI environment
+        else:
+            num_workers = os.cpu_count() or 4
 
     songs = []
     errors = []
 
-    work_dirs = sorted(works_dir.iterdir())
-    total = len(work_dirs)
-
-    for i, work_dir in enumerate(work_dirs):
-        if not work_dir.is_dir():
-            continue
-
-        if i % 2000 == 0 and i > 0:
-            print(f"  Progress: {i}/{total}")
-
-        try:
-            song = build_song_from_work(work_dir)
+    # Use multiprocessing for parallel file reading
+    if num_workers > 1:
+        print(f"Using {num_workers} workers...")
+        with multiprocessing.Pool(num_workers, initializer=_init_worker) as pool:
+            processed = 0
+            for song, error in pool.imap_unordered(_process_work_dir, work_dirs, chunksize=100):
+                processed += 1
+                if processed % 2000 == 0:
+                    print(f"  Progress: {processed}/{total}")
+                if song:
+                    songs.append(song)
+                if error:
+                    errors.append(error)
+    else:
+        # Sequential fallback
+        load_canonical_ranks()
+        for i, work_dir_path in enumerate(work_dirs):
+            if i % 2000 == 0 and i > 0:
+                print(f"  Progress: {i}/{total}")
+            song, error = _process_work_dir(work_dir_path)
             if song:
                 songs.append(song)
-        except Exception as e:
-            errors.append((work_dir.name, str(e)))
+            if error:
+                errors.append(error)
 
     print(f"Processed {len(songs)} works ({len(errors)} errors)")
 
@@ -531,7 +609,9 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
             print(f"Strum Machine enrichment failed: {e}")
 
     # Fuzzy grouping pass - merge similar titles that should be grouped together
-    songs = fuzzy_group_songs(songs)
+    # Skip for CI/lightweight builds (--skip-fuzzy)
+    if fuzzy_grouping:
+        songs = fuzzy_group_songs(songs)
 
     # Deduplicate (by content for lead sheets, by id for tablature-only)
     seen_content = {}
@@ -567,6 +647,10 @@ def main():
     parser = argparse.ArgumentParser(description='Build index from works/')
     parser.add_argument('--no-tags', action='store_true',
                         help='Skip tag enrichment')
+    parser.add_argument('--skip-fuzzy', action='store_true',
+                        help='Skip fuzzy grouping (for CI/lightweight builds)')
+    parser.add_argument('--workers', type=int, default=None,
+                        help='Number of parallel workers (default: CPU count)')
     args = parser.parse_args()
 
     works_dir = Path('works')
@@ -577,7 +661,13 @@ def main():
         print("Run migrate_to_works.py first")
         return 1
 
-    build_works_index(works_dir, output_file, enrich_tags=not args.no_tags)
+    # Pre-load canonical ranks in main process for the initial print
+    load_canonical_ranks()
+
+    build_works_index(works_dir, output_file,
+                      enrich_tags=not args.no_tags,
+                      fuzzy_grouping=not args.skip_fuzzy,
+                      num_workers=args.workers)
 
 
 if __name__ == '__main__':

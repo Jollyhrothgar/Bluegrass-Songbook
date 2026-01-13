@@ -28,9 +28,11 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
       - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4
+        run: uv sync
 
       - name: Extract tune name from issue
         id: extract
@@ -48,15 +50,13 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
         run: |
-          python scripts/lib/fetch_tune.py \
+          uv run python scripts/lib/fetch_tune.py \
             --tune "$TUNE_NAME" \
             --issue-number "$ISSUE_NUMBER" \
             --author "$ISSUE_AUTHOR"
 
       - name: Rebuild search index
-        run: |
-          pip install pyyaml beautifulsoup4
-          python scripts/lib/build_works_index.py
+        run: uv run python scripts/lib/build_works_index.py --skip-fuzzy
 
       - name: Commit and push
         run: |
