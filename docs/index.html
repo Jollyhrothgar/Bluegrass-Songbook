@@ -204,6 +204,29 @@
             </div>
         </div>
 
+        <!-- List Header (shown when viewing a list) -->
+        <div id="list-header" class="list-header-container hidden">
+            <div class="list-header">
+                <div class="list-header-left">
+                    <div class="list-title-row">
+                        <span id="list-header-name" class="list-title"></span>
+                        <span id="list-header-count" class="list-count"></span>
+                        <span id="list-header-badge" class="list-badge hidden"></span>
+                    </div>
+                </div>
+                <div class="list-header-controls">
+                    <button id="list-print-btn" class="list-header-btn" title="Print all songs in this list">🖨️ Print</button>
+                    <button id="list-share-btn" class="list-header-btn hidden" title="Copy share link">🔗 Share</button>
+                    <button id="list-duplicate-btn" class="list-header-btn" title="Duplicate this list">📋 Duplicate</button>
+                    <button id="list-follow-btn" class="list-header-btn hidden" title="Follow this list">👁️ Follow</button>
+                    <button id="list-claim-btn" class="list-header-btn primary hidden" title="Claim this orphaned list">⚔️ Claim</button>
+                    <button id="list-edit-btn" class="list-header-btn hidden" title="Edit list - remove songs">✏️ Edit</button>
+                    <button id="list-select-btn" class="list-header-btn hidden" title="Select songs for batch operations">☑️ Select</button>
+                    <button id="list-delete-btn" class="list-header-btn danger hidden" title="Delete this list">🗑️ Delete</button>
+                </div>
+            </div>
+        </div>
+
         <div id="results" class="results"></div>
 
         <!-- Editor Panel -->

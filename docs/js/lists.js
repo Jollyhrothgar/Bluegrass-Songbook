@@ -664,6 +664,20 @@ let shareListBtnEl = null;
 let editListBtnEl = null;
 let selectListBtnEl = null;
 
+// New list header elements
+let listHeaderEl = null;
+let listHeaderNameEl = null;
+let listHeaderCountEl = null;
+let listHeaderBadgeEl = null;
+let listPrintBtnEl = null;
+let listShareBtnEl = null;
+let listDuplicateBtnEl = null;
+let listFollowBtnEl = null;
+let listClaimBtnEl = null;
+let listEditBtnEl = null;
+let listSelectBtnEl = null;
+let listDeleteBtnEl = null;
+
 // Callbacks (set by init)
 let renderResultsFn = null;
 let closeSidebarFn = null;
@@ -859,17 +873,8 @@ export function showFavorites() {
     // Update nav (renderListViewUI clears favorites active state)
     if (navFavoritesEl) navFavoritesEl.classList.add('active');
 
-    // Show action buttons for favorites (but not delete)
-    if (shareListBtnEl) shareListBtnEl.classList.remove('hidden');
-    if (printListBtnEl) printListBtnEl.classList.remove('hidden');
-    const duplicateListBtn = document.getElementById('duplicate-list-btn');
-    if (duplicateListBtn) {
-        duplicateListBtn.textContent = 'Duplicate';
-        duplicateListBtn.classList.remove('hidden');
-    }
-    // Explicitly hide delete for favorites
-    const deleteListBtn = document.getElementById('delete-list-btn');
-    if (deleteListBtn) deleteListBtn.classList.add('hidden');
+    // Note: List header buttons are now managed by renderListViewUI
+    // The new list header handles all action buttons
 }
 
 /**
@@ -1363,14 +1368,18 @@ function processCloudLists(cloudLists) {
     // Old-style favorites list names to migrate
     const oldFavoritesNames = ['❤️ Favorites', '❤️ favorites', '♥ Favorites'];
 
+    console.log('[Lists] Processing', cloudLists.length, 'cloud lists');
+
     for (const cloudList of cloudLists) {
         // Skip lists that were deleted during this session (check both ID and name)
         if (isListDeleted(cloudList.id, cloudList.name)) {
+            console.log('[Lists] Skipping deleted list:', cloudList.name);
             continue;
         }
 
         // Skip duplicates by name (keep first occurrence)
         if (seenNames.has(cloudList.name)) {
+            console.log('[Lists] Skipping duplicate list:', cloudList.name);
             continue;
         }
 
@@ -2161,19 +2170,140 @@ function renderListViewUI(listName, songIds, status) {
         currentIndex: -1  // Will be set when a song is opened
     });
 
-    // Build status text with ownership badge
-    let statusHtml = `${escapeHtml(listName)}: ${listSongs.length} song${listSongs.length !== 1 ? 's' : ''}`;
-    if (ownership.isOrphaned) {
-        statusHtml += ' <span class="list-badge list-badge-orphaned">Needs Owner</span>';
-    } else if (ownership.isFollower && !ownership.isOwner) {
-        statusHtml += ' <span class="list-badge list-badge-following">Following</span>';
-    } else if (!ownership.isOwner && viewingPublicList) {
-        statusHtml += ' <span class="list-badge list-badge-shared">Shared List</span>';
+    // Populate and show the new list header (use fallback to getElementById if module var not set)
+    const header = listHeaderEl || document.getElementById('list-header');
+    const headerName = listHeaderNameEl || document.getElementById('list-header-name');
+    const headerCount = listHeaderCountEl || document.getElementById('list-header-count');
+    const headerBadge = listHeaderBadgeEl || document.getElementById('list-header-badge');
+
+    if (header) {
+        header.classList.remove('hidden');
+
+        // Set list name
+        if (headerName) {
+            headerName.textContent = listName;
+        }
+
+        // Set song count
+        if (headerCount) {
+            headerCount.textContent = `${listSongs.length} song${listSongs.length !== 1 ? 's' : ''}`;
+        }
+
+        // Set badge based on ownership status
+        if (headerBadge) {
+            if (ownership.isOrphaned) {
+                headerBadge.textContent = 'Needs Owner';
+                headerBadge.className = 'list-badge list-badge-orphaned';
+                headerBadge.classList.remove('hidden');
+            } else if (ownership.isFollower && !ownership.isOwner) {
+                headerBadge.textContent = 'Following';
+                headerBadge.className = 'list-badge list-badge-following';
+                headerBadge.classList.remove('hidden');
+            } else if (!ownership.isOwner && viewingPublicList) {
+                headerBadge.textContent = 'Shared List';
+                headerBadge.className = 'list-badge list-badge-shared';
+                headerBadge.classList.remove('hidden');
+            } else {
+                headerBadge.classList.add('hidden');
+            }
+        }
+
+        // Configure header buttons based on ownership
+        // Print - always visible
+        if (listPrintBtnEl) listPrintBtnEl.classList.remove('hidden');
+
+        // Share - owner only
+        if (listShareBtnEl) {
+            if (ownership.isOwner) {
+                listShareBtnEl.classList.remove('hidden');
+            } else {
+                listShareBtnEl.classList.add('hidden');
+            }
+        }
+
+        // Duplicate/Copy
+        if (listDuplicateBtnEl) {
+            if (ownership.isOwner) {
+                listDuplicateBtnEl.innerHTML = '📋 Duplicate';
+            } else {
+                listDuplicateBtnEl.innerHTML = '📋 Copy to My Lists';
+            }
+            listDuplicateBtnEl.classList.remove('hidden');
+        }
+
+        // Follow/Unfollow - non-owners only
+        if (listFollowBtnEl) {
+            if (!ownership.isOwner && viewingListId) {
+                if (ownership.isFollower) {
+                    listFollowBtnEl.innerHTML = '👁️ Unfollow';
+                } else {
+                    listFollowBtnEl.innerHTML = '👁️ Follow';
+                }
+                listFollowBtnEl.classList.remove('hidden');
+            } else {
+                listFollowBtnEl.classList.add('hidden');
+            }
+        }
+
+        // Claim - orphaned lists only
+        if (listClaimBtnEl) {
+            if (ownership.canClaim && ownership.isOrphaned) {
+                listClaimBtnEl.classList.remove('hidden');
+            } else {
+                listClaimBtnEl.classList.add('hidden');
+            }
+        }
+
+        // Edit - owner only
+        if (listEditBtnEl) {
+            if (ownership.isOwner) {
+                listEditBtnEl.innerHTML = listEditMode ? '✏️ Done' : '✏️ Edit';
+                listEditBtnEl.classList.remove('hidden');
+            } else {
+                listEditBtnEl.classList.add('hidden');
+            }
+        }
+
+        // Select - owner only
+        if (listSelectBtnEl) {
+            if (ownership.isOwner) {
+                listSelectBtnEl.innerHTML = multiSelectMode ? '☑️ Done' : '☑️ Select';
+                listSelectBtnEl.classList.remove('hidden');
+            } else {
+                listSelectBtnEl.classList.add('hidden');
+            }
+        }
+
+        // Delete - owner only, not for favorites
+        if (listDeleteBtnEl) {
+            if (ownership.isOwner && viewingListId !== FAVORITES_LIST_ID && viewingListId !== 'favorites') {
+                listDeleteBtnEl.classList.remove('hidden');
+            } else {
+                listDeleteBtnEl.classList.add('hidden');
+            }
+        }
     }
 
+    // Hide old search-stats-row buttons (keeping them in HTML for backwards compat)
     if (searchStatsEl) {
-        searchStatsEl.innerHTML = statusHtml;
+        searchStatsEl.textContent = '';  // Clear the old status text
     }
+    // Hide old action buttons in search-stats-row
+    if (printListBtnEl) printListBtnEl.classList.add('hidden');
+    if (shareListBtnEl) shareListBtnEl.classList.add('hidden');
+    const duplicateListBtn = document.getElementById('duplicate-list-btn');
+    if (duplicateListBtn) duplicateListBtn.classList.add('hidden');
+    const followListBtn = document.getElementById('follow-list-btn');
+    if (followListBtn) followListBtn.classList.add('hidden');
+    const claimListBtn = document.getElementById('claim-list-btn');
+    if (claimListBtn) claimListBtn.classList.add('hidden');
+    if (editListBtnEl) editListBtnEl.classList.add('hidden');
+    if (selectListBtnEl) selectListBtnEl.classList.add('hidden');
+    const deleteListBtn = document.getElementById('delete-list-btn');
+    if (deleteListBtn) deleteListBtn.classList.add('hidden');
+    const copyListBtn = document.getElementById('copy-list-btn');
+    if (copyListBtn) copyListBtn.classList.add('hidden');
+
     if (searchInputEl) {
         searchInputEl.value = '';
     }
@@ -2190,85 +2320,6 @@ function renderListViewUI(listName, songIds, status) {
     if (resultsDivEl) resultsDivEl.classList.remove('hidden');
     if (editorPanel) editorPanel.classList.add('hidden');
     if (songViewEl) songViewEl.classList.add('hidden');
-
-    // Show action buttons
-    if (printListBtnEl) printListBtnEl.classList.remove('hidden');
-    if (shareListBtnEl && ownership.isOwner) shareListBtnEl.classList.remove('hidden');
-
-    // Duplicate/Import/Copy button
-    const duplicateListBtn = document.getElementById('duplicate-list-btn');
-    if (duplicateListBtn) {
-        if (ownership.isOwner) {
-            duplicateListBtn.textContent = 'Duplicate';
-            duplicateListBtn.classList.remove('hidden');
-        } else {
-            // "Copy to My Lists" for non-owners (safety valve)
-            duplicateListBtn.textContent = 'Copy to My Lists';
-            duplicateListBtn.classList.remove('hidden');
-        }
-    }
-
-    // Follow/Unfollow button
-    const followListBtn = document.getElementById('follow-list-btn');
-    if (followListBtn) {
-        if (!ownership.isOwner && viewingListId) {
-            if (ownership.isFollower) {
-                followListBtn.textContent = 'Unfollow';
-                followListBtn.classList.remove('hidden');
-            } else {
-                followListBtn.textContent = 'Follow';
-                followListBtn.classList.remove('hidden');
-            }
-        } else {
-            followListBtn.classList.add('hidden');
-        }
-    }
-
-    // Claim button (for orphaned lists)
-    const claimListBtn = document.getElementById('claim-list-btn');
-    if (claimListBtn) {
-        if (ownership.canClaim && ownership.isOrphaned) {
-            claimListBtn.classList.remove('hidden');
-        } else {
-            claimListBtn.classList.add('hidden');
-        }
-    }
-
-    // Show delete button for own lists (but not favorites)
-    const deleteListBtn = document.getElementById('delete-list-btn');
-    if (deleteListBtn) {
-        if (ownership.isOwner && viewingListId !== FAVORITES_LIST_ID && viewingListId !== 'favorites') {
-            deleteListBtn.classList.remove('hidden');
-        } else {
-            deleteListBtn.classList.add('hidden');
-        }
-    }
-
-    // Show edit button for own lists (allows removing songs)
-    if (editListBtnEl) {
-        if (ownership.isOwner) {
-            editListBtnEl.classList.remove('hidden');
-            // Update button text based on current edit mode
-            editListBtnEl.textContent = listEditMode ? 'Done' : 'Edit';
-        } else {
-            editListBtnEl.classList.add('hidden');
-        }
-    }
-
-    // Show select button for own lists (allows multi-select batch operations)
-    if (selectListBtnEl) {
-        if (ownership.isOwner) {
-            selectListBtnEl.classList.remove('hidden');
-            // Update button text based on current select mode
-            selectListBtnEl.textContent = multiSelectMode ? 'Done' : 'Select';
-        } else {
-            selectListBtnEl.classList.add('hidden');
-        }
-    }
-
-    // Hide the old copy button (now consolidated into duplicate/import)
-    const copyListBtn = document.getElementById('copy-list-btn');
-    if (copyListBtn) copyListBtn.classList.add('hidden');
 }
 
 /**
@@ -2283,7 +2334,14 @@ export function clearListView() {
             btn.classList.remove('active');
         });
     }
-    // Hide list action buttons
+
+    // Hide the new list header (use fallback getElementById if module var not set)
+    const header = listHeaderEl || document.getElementById('list-header');
+    if (header) {
+        header.classList.add('hidden');
+    }
+
+    // Hide list action buttons (old search-stats-row buttons)
     if (printListBtnEl) printListBtnEl.classList.add('hidden');
     if (shareListBtnEl) shareListBtnEl.classList.add('hidden');
     const copyListBtn = document.getElementById('copy-list-btn');
@@ -2999,6 +3057,20 @@ export function initLists(options) {
     closeSidebarFn = closeSidebar;
     pushHistoryStateFn = pushHistoryState;
 
+    // Initialize new list header elements
+    listHeaderEl = document.getElementById('list-header');
+    listHeaderNameEl = document.getElementById('list-header-name');
+    listHeaderCountEl = document.getElementById('list-header-count');
+    listHeaderBadgeEl = document.getElementById('list-header-badge');
+    listPrintBtnEl = document.getElementById('list-print-btn');
+    listShareBtnEl = document.getElementById('list-share-btn');
+    listDuplicateBtnEl = document.getElementById('list-duplicate-btn');
+    listFollowBtnEl = document.getElementById('list-follow-btn');
+    listClaimBtnEl = document.getElementById('list-claim-btn');
+    listEditBtnEl = document.getElementById('list-edit-btn');
+    listSelectBtnEl = document.getElementById('list-select-btn');
+    listDeleteBtnEl = document.getElementById('list-delete-btn');
+
     // Edit list button - toggle edit mode (show remove buttons)
     editListBtnEl?.addEventListener('click', () => {
         const newEditMode = !listEditMode;
@@ -3234,6 +3306,227 @@ export function initLists(options) {
         await performFullListsSync();
         // Re-show the list (now as owner)
         showListView(viewingListId);
+    });
+
+    // ============================================
+    // NEW LIST HEADER BUTTON HANDLERS
+    // ============================================
+
+    // List header: Print button
+    listPrintBtnEl?.addEventListener('click', () => {
+        // Delegate to existing print functionality
+        printListBtnEl?.click();
+    });
+
+    // List header: Share button
+    listShareBtnEl?.addEventListener('click', async () => {
+        let shareId = null;
+
+        if (viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
+            const favList = getFavoritesList();
+            shareId = favList?.cloudId;
+        } else if (viewingListId) {
+            const list = userLists.find(l => l.id === viewingListId);
+            shareId = list?.cloudId || viewingListId;
+        }
+
+        if (!shareId || shareId === 'favorites') {
+            alert('Sign in and sync to share this list');
+            return;
+        }
+
+        openShareModal(shareId);
+    });
+
+    // List header: Duplicate button
+    listDuplicateBtnEl?.addEventListener('click', async () => {
+        let songsToCopy = [];
+        let listName = '';
+
+        // Handle importing a public list (not owned by user)
+        if (viewingPublicList && !viewingPublicList.isOwner) {
+            if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+                alert('Please sign in to import lists');
+                return;
+            }
+
+            songsToCopy = viewingPublicList.songs || [];
+            listName = viewingPublicList.list.name;
+
+            if (!songsToCopy.length) {
+                alert('Nothing to import');
+                return;
+            }
+
+            const newName = prompt('Name for imported list:', listName);
+            if (!newName) return;
+
+            const newList = createList(newName);
+            if (!newList) {
+                alert('A list with that name already exists');
+                return;
+            }
+
+            for (const songId of songsToCopy) {
+                addSongToList(newList.id, songId);
+            }
+
+            showListView(newList.id);
+            if (pushHistoryStateFn) {
+                pushHistoryStateFn('list', { listId: newList.id });
+            }
+            return;
+        }
+
+        // Handle duplicating own list
+        if (viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
+            const favList = getFavoritesList();
+            songsToCopy = favList?.songs || [];
+            listName = 'Favorites';
+        } else if (viewingListId) {
+            const localList = userLists.find(l => l.id === viewingListId);
+            songsToCopy = localList?.songs || [];
+            listName = localList?.name || 'List';
+        }
+
+        if (!songsToCopy.length) {
+            alert('Nothing to duplicate');
+            return;
+        }
+
+        const newName = prompt('Name for the copy:', `${listName} (copy)`);
+        if (!newName) return;
+
+        const newList = createList(newName);
+        if (!newList) {
+            alert('A list with that name already exists');
+            return;
+        }
+
+        for (const songId of songsToCopy) {
+            addSongToList(newList.id, songId);
+        }
+
+        showListView(newList.id);
+        if (pushHistoryStateFn) {
+            pushHistoryStateFn('list', { listId: newList.id });
+        }
+    });
+
+    // List header: Follow button
+    listFollowBtnEl?.addEventListener('click', async () => {
+        if (!viewingListId || typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+            alert('Please sign in to follow lists');
+            return;
+        }
+
+        const isCurrentlyFollowing = viewingPublicList?.isFollower || followedLists.some(l => l.id === viewingListId);
+
+        if (isCurrentlyFollowing) {
+            const { error } = await SupabaseAuth.unfollowList(viewingListId);
+            if (error) {
+                alert('Failed to unfollow list');
+                return;
+            }
+            followedLists = followedLists.filter(l => l.id !== viewingListId);
+            renderSidebarLists();
+            if (listFollowBtnEl) listFollowBtnEl.innerHTML = '👁️ Follow';
+            if (viewingPublicList) {
+                viewingPublicList.isFollower = false;
+            }
+        } else {
+            const { error } = await SupabaseAuth.followList(viewingListId);
+            if (error) {
+                alert('Failed to follow list');
+                return;
+            }
+            await loadFollowedLists();
+            if (listFollowBtnEl) listFollowBtnEl.innerHTML = '👁️ Unfollow';
+            if (viewingPublicList) {
+                viewingPublicList.isFollower = true;
+            }
+        }
+    });
+
+    // List header: Claim button
+    listClaimBtnEl?.addEventListener('click', async () => {
+        if (!viewingListId || typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+            alert('Please sign in to claim lists');
+            return;
+        }
+
+        if (!confirm('Claim ownership of this list? You will become the sole owner.')) {
+            return;
+        }
+
+        const { data, error } = await SupabaseAuth.claimOrphanedList(viewingListId);
+        if (error) {
+            alert(error.message || 'Failed to claim list');
+            return;
+        }
+
+        await performFullListsSync();
+        showListView(viewingListId);
+    });
+
+    // List header: Edit button
+    listEditBtnEl?.addEventListener('click', () => {
+        const newEditMode = !listEditMode;
+        setListEditMode(newEditMode);
+        if (newEditMode && multiSelectMode) {
+            setMultiSelectMode(false);
+            clearSelectedSongs();
+            if (listSelectBtnEl) listSelectBtnEl.innerHTML = '☑️ Select';
+        }
+        if (listEditBtnEl) {
+            listEditBtnEl.innerHTML = newEditMode ? '✏️ Done' : '✏️ Edit';
+        }
+        if (viewingListId) {
+            showListView(viewingListId);
+        }
+    });
+
+    // List header: Select button
+    listSelectBtnEl?.addEventListener('click', () => {
+        const newSelectMode = !multiSelectMode;
+        setMultiSelectMode(newSelectMode);
+        if (newSelectMode && listEditMode) {
+            setListEditMode(false);
+            if (listEditBtnEl) listEditBtnEl.innerHTML = '✏️ Edit';
+        }
+        if (!newSelectMode) {
+            clearSelectedSongs();
+            hideBatchOperationsBar();
+        }
+        if (listSelectBtnEl) {
+            listSelectBtnEl.innerHTML = newSelectMode ? '☑️ Done' : '☑️ Select';
+        }
+        if (viewingListId) {
+            showListView(viewingListId);
+        }
+    });
+
+    // List header: Delete button
+    listDeleteBtnEl?.addEventListener('click', async () => {
+        if (!viewingListId || viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
+            return;
+        }
+
+        const list = userLists.find(l => l.id === viewingListId);
+        const listName = list?.name || 'this list';
+
+        if (!confirm(`Delete "${listName}"? Songs won't be deleted from the songbook.`)) {
+            return;
+        }
+
+        await deleteList(viewingListId);
+
+        clearListView();
+        if (navSearchEl) navSearchEl.classList.add('active');
+        showRandomSongs();
+        if (pushHistoryStateFn) {
+            pushHistoryStateFn('search', {});
+        }
     });
 
     // Load from localStorage

@@ -546,6 +546,134 @@ h1 {
     vertical-align: middle;
 }
 
+/* ============================================
+   List Header (Rich List View)
+   ============================================ */
+
+.list-header-container {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.list-header-container.hidden {
+    display: none;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.list-header-left {
+    flex: 1;
+    min-width: 0;
+}
+
+.list-title-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.list-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+
+.list-count {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    background: var(--bg);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.list-header-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.list-header-btn {
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.list-header-btn:hover {
+    background: var(--bg-secondary);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.list-header-btn.hidden {
+    display: none;
+}
+
+.list-header-btn.danger {
+    color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.list-header-btn.danger:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+.list-header-btn.primary {
+    color: var(--accent);
+    border-color: var(--accent);
+    font-weight: 500;
+}
+
+.list-header-btn.primary:hover {
+    background: var(--accent);
+    color: white;
+}
+
+/* Mobile responsiveness for list header */
+@media (max-width: 600px) {
+    .list-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .list-header-left {
+        width: 100%;
+    }
+
+    .list-header-controls {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .list-title {
+        font-size: 1.25rem;
+    }
+
+    .list-header-btn {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}
+
 /* Results list */
 .results {
     display: flex;

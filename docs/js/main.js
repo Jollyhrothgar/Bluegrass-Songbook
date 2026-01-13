@@ -340,8 +340,8 @@ function initViewSubscription() {
             if (btn) btn.classList.remove('active');
         });
 
-        // Clear list view state - but NOT when opening a song (preserve list context for navigation)
-        if (view !== 'song' && view !== 'work') {
+        // Clear list view state - but NOT when opening a song or viewing a list (preserve list context for navigation)
+        if (view !== 'song' && view !== 'work' && view !== 'list') {
             clearListView();
         }
 
@@ -1781,6 +1781,13 @@ function init() {
             closeAccountModal();
             location.reload();
         }
+    });
+
+    // Manual sync button in account modal
+    const forceSyncBtn = document.getElementById('force-sync-btn');
+    forceSyncBtn?.addEventListener('click', async () => {
+        updateSyncUI('syncing');
+        await performFullListsSync();
     });
 
     // Song Lists page

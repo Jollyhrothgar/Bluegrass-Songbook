@@ -270,6 +270,41 @@ async function fetchCloudLists() {
         return { data: [], error: listsError };
     }
 
+    // Also fetch lists with empty owners that belong to this user (migration fix)
+    // These are lists created before the owners array was properly populated
+    const { data: orphanedLists, error: orphanError } = await supabaseClient
+        .from('user_lists')
+        .select('id, name, position, owners, orphaned_at')
+        .eq('user_id', currentUser.id)
+        .or('owners.eq.{},owners.is.null');
+
+    if (!orphanError && orphanedLists && orphanedLists.length > 0) {
+        console.log('[Auth] Found lists with empty owners, repairing:', orphanedLists.length);
+        // Repair these lists by setting the owners array
+        for (const list of orphanedLists) {
+            const { error: repairError } = await supabaseClient
+                .from('user_lists')
+                .update({ owners: [currentUser.id] })
+                .eq('id', list.id);
+            if (repairError) {
+                console.error('[Auth] Failed to repair list:', list.name, repairError);
+            } else {
+                console.log('[Auth] Repaired list:', list.name);
+                // Add to our results with fixed owners
+                list.owners = [currentUser.id];
+            }
+        }
+        // Merge with existing lists (avoid duplicates)
+        const existingIds = new Set(lists.map(l => l.id));
+        for (const list of orphanedLists) {
+            if (!existingIds.has(list.id)) {
+                lists.push(list);
+            }
+        }
+        // Re-sort by position
+        lists.sort((a, b) => (a.position || 0) - (b.position || 0));
+    }
+
     // Fetch all list items
     const listIds = lists.map(l => l.id);
     if (listIds.length === 0) {
@@ -340,6 +375,7 @@ async function createCloudList(name) {
         .from('user_lists')
         .insert({
             user_id: currentUser.id,
+            owners: [currentUser.id],  // Must set owners for RLS policies
             name: name,
             position: nextPosition
         })
@@ -382,23 +418,40 @@ async function deleteCloudList(listId, listName = null) {
         return { error: { message: 'Not logged in' } };
     }
 
+    console.log('[Auth] Deleting cloud list:', listId, listName);
+
     // Try to delete by ID first
     let { error, data } = await supabaseClient
         .from('user_lists')
         .delete()
         .eq('id', listId)
-        .eq('user_id', currentUser.id)
         .select();
+
+    if (error) {
+        console.error('[Auth] Delete by ID failed:', error);
+    } else if (data && data.length > 0) {
+        console.log('[Auth] Deleted list by ID:', data[0].name);
+        return { error: null };
+    }
 
     // If nothing was deleted and we have a name, try deleting by name
     // This handles the case where the local cloudId is stale/incorrect
     if (!error && (!data || data.length === 0) && listName) {
+        console.log('[Auth] No list deleted by ID, trying by name:', listName);
         const result = await supabaseClient
             .from('user_lists')
             .delete()
             .eq('name', listName)
             .eq('user_id', currentUser.id)
             .select();
+
+        if (result.error) {
+            console.error('[Auth] Delete by name failed:', result.error);
+        } else if (result.data && result.data.length > 0) {
+            console.log('[Auth] Deleted list by name:', listName);
+        } else {
+            console.warn('[Auth] No list deleted (may not exist or RLS blocked):', listName);
+        }
         error = result.error;
     }
 

@@ -7,7 +7,7 @@ import {
     isFavorite, reorderFavoriteItem, showFavorites,
     isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, isViewingOwnList,
     removeSongFromList, showListView, FAVORITES_LIST_ID, toggleFavorite,
-    addSongToList
+    addSongToList, clearListView
 } from './lists.js';
 import { openSong, showVersionPicker } from './song-view.js';
 import { openWork } from './work-view.js';
@@ -692,6 +692,7 @@ export function search(query, options = {}) {
     const { skipRender = false } = options;
 
     // Clear any list view state when searching
+    clearListView();
     if (navFavoritesEl) navFavoritesEl.classList.remove('active');
     if (navSearchEl) navSearchEl.classList.add('active');
 
