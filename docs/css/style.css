@@ -4516,7 +4516,7 @@ mark {
     border-color: var(--accent);
 }
 
-/* Remove button for edit mode */
+/* Remove button - hidden by default, shown on hover */
 .result-remove-btn {
     flex-shrink: 0;
     width: 2rem;
@@ -4533,6 +4533,13 @@ mark {
     justify-content: center;
     transition: all 0.2s;
     margin-left: 0.25rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.result-item:hover .result-remove-btn {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .result-remove-btn:hover {
@@ -4540,11 +4547,12 @@ mark {
     transform: scale(1.1);
 }
 
-/* In edit mode, result items get a subtle highlight */
-.result-item.edit-mode {
-    background: var(--bg-secondary);
-    border-left: 3px solid var(--danger, #e74c3c);
-    padding-left: calc(0.75rem - 3px);
+/* On touch devices, always show remove button */
+@media (hover: none) {
+    .result-remove-btn {
+        opacity: 0.7;
+        pointer-events: auto;
+    }
 }
 
 /* Context menu for songs in list view */
@@ -4608,14 +4616,52 @@ mark {
     font-style: italic;
 }
 
-/* Multi-select checkbox in result items */
-.result-select-checkbox {
+/* Multi-select button in result items - circular style matching other buttons */
+.result-select-btn {
     flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--bg);
+    color: var(--text-muted);
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    accent-color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    margin-right: 0.25rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.result-item:hover .result-select-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.result-select-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--bg-secondary);
+}
+
+.result-select-btn.selected {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* On touch devices, always show select button */
+@media (hover: none) {
+    .result-select-btn {
+        opacity: 0.7;
+        pointer-events: auto;
+    }
 }
 
 /* Selected state for result items */

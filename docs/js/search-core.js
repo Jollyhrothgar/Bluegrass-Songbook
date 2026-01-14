@@ -1,6 +1,6 @@
 // Core search functionality for Bluegrass Songbook
 
-import { allSongs, songGroups, listEditMode, userLists, multiSelectMode, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs } from './state.js';
+import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs } from './state.js';
 import { highlightMatch, escapeHtml, isTabOnlyWork } from './utils.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
@@ -172,7 +172,7 @@ function updateBatchOperationsBar() {
     const count = selectedSongIds.size;
     const viewingListId = getViewingListId();
 
-    if (count === 0 || !multiSelectMode || !viewingListId) {
+    if (count === 0 || !viewingListId) {
         hideBatchOperationsBar();
         return;
     }
@@ -257,10 +257,10 @@ function handleBatchSelectAll() {
 
     selectAllSongs(songIds);
 
-    // Update checkboxes visually
-    resultsDiv.querySelectorAll('.result-select-checkbox').forEach(cb => {
-        cb.checked = true;
-        cb.closest('.result-item')?.classList.add('selected');
+    // Update select buttons visually
+    resultsDiv.querySelectorAll('.result-select-btn').forEach(btn => {
+        btn.classList.add('selected');
+        btn.closest('.result-item')?.classList.add('selected');
     });
 
     updateBatchOperationsBar();
@@ -272,12 +272,12 @@ function handleBatchSelectAll() {
 function handleBatchClear() {
     clearSelectedSongs();
 
-    // Update checkboxes visually
+    // Update select buttons visually
     const resultsDiv = document.getElementById('results');
     if (resultsDiv) {
-        resultsDiv.querySelectorAll('.result-select-checkbox').forEach(cb => {
-            cb.checked = false;
-            cb.closest('.result-item')?.classList.remove('selected');
+        resultsDiv.querySelectorAll('.result-select-btn').forEach(btn => {
+            btn.classList.remove('selected');
+            btn.closest('.result-item')?.classList.remove('selected');
         });
     }
 
@@ -967,26 +967,21 @@ export function renderResults(songs, query) {
         const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
         const draggableAttr = isDraggable ? `draggable="true" data-index="${index}"` : '';
 
-        // Show remove button when in edit mode for own lists
-        const showRemoveBtn = listEditMode && canReorder;
-        const removeBtn = showRemoveBtn
+        // Always show remove button for own lists (visible on hover via CSS)
+        const removeBtn = canReorder
             ? `<button class="result-remove-btn" data-song-id="${song.id}" title="Remove from list">×</button>`
             : '';
 
-        // Show checkbox when in multi-select mode for own lists
-        const showCheckbox = multiSelectMode && canReorder;
+        // Always show select button for own lists (circular button with checkmark)
         const isSelected = selectedSongIds.has(song.id);
-        const checkbox = showCheckbox
-            ? `<input type="checkbox" class="result-select-checkbox" data-song-id="${song.id}" ${isSelected ? 'checked' : ''} title="Select for batch operation">`
+        const selectBtn = canReorder
+            ? `<button class="result-select-btn ${isSelected ? 'selected' : ''}" data-song-id="${song.id}" title="Select for batch operation">✓</button>`
             : '';
 
-        // Add edit-mode class when in edit mode, selected class when selected
-        const editModeClass = showRemoveBtn ? 'edit-mode' : '';
         const selectedClass = isSelected ? 'selected' : '';
 
         return `
-            <div class="result-item ${favClass} ${editModeClass} ${selectedClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
-                ${checkbox}
+            <div class="result-item ${favClass} ${selectedClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
                 ${dragHandle}
                 <div class="result-main">
                     <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}${grassinessBadge}</div>
@@ -995,6 +990,7 @@ export function renderResults(songs, query) {
                     ${tagBadges ? `<div class="result-tags">${tagBadges}</div>` : ''}
                     <div class="result-preview">${song.first_line || ''}</div>
                 </div>
+                ${selectBtn}
                 <button class="result-list-btn ${btnClass}" data-song-id="${song.id}" title="Add to list">+</button>
                 ${removeBtn}
             </div>
@@ -1017,16 +1013,18 @@ function setupResultEventListeners(resultsDiv) {
     // === CLICK DELEGATION ===
     // Single click handler for all result items, buttons, and badges
     resultsDiv.addEventListener('click', (e) => {
-        // Handle checkbox click (multi-select mode)
-        const checkbox = e.target.closest('.result-select-checkbox');
-        if (checkbox) {
+        // Handle select button click (multi-select mode)
+        const selectBtn = e.target.closest('.result-select-btn');
+        if (selectBtn) {
             e.stopPropagation();
-            const songId = checkbox.dataset.songId;
+            const songId = selectBtn.dataset.songId;
             toggleSongSelection(songId);
-            // Update visual state
-            const resultItem = checkbox.closest('.result-item');
+            // Update visual state - toggle selected class on button and result item
+            const isNowSelected = selectedSongIds.has(songId);
+            selectBtn.classList.toggle('selected', isNowSelected);
+            const resultItem = selectBtn.closest('.result-item');
             if (resultItem) {
-                resultItem.classList.toggle('selected', checkbox.checked);
+                resultItem.classList.toggle('selected', isNowSelected);
             }
             // Update batch operations bar
             updateBatchOperationsBar();

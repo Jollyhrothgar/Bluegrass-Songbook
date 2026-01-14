@@ -27,6 +27,7 @@ import {
     fontSizeLevel, setFontSizeLevel, FONT_SIZES,
     setListContext,
     tablaturePlayer,
+    setFullscreenMode,
     // Reactive state system
     subscribe, setCurrentView, currentView
 } from './state.js';
@@ -326,6 +327,12 @@ function initViewSubscription() {
         // Stop any playing tablature audio when leaving song view
         if (tablaturePlayer?.isPlaying) {
             tablaturePlayer.stop();
+        }
+
+        // Exit fullscreen mode when navigating away from song/work views
+        if (view !== 'song' && view !== 'work') {
+            document.body.classList.remove('fullscreen-mode');
+            setFullscreenMode(false);
         }
 
         // Close any open editor hints panel

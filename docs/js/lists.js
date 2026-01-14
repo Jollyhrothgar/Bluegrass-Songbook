@@ -9,8 +9,7 @@ import {
     viewingListId, setViewingListId,
     viewingPublicList, setViewingPublicList,
     FAVORITES_LIST_ID,
-    listEditMode, setListEditMode,
-    multiSelectMode, setMultiSelectMode, clearSelectedSongs,
+    clearSelectedSongs,
     setCurrentView,
     subscribe, currentView,
     focusedListId, setFocusedListId
@@ -122,6 +121,13 @@ export function undo() {
         showUndoToast(`Undid: ${action.description}`, true);
         renderManageListsView();
         renderSidebarLists();
+        updateFavoritesCount();
+        // Refresh current list view if viewing the affected list
+        if (viewingListId && action.data?.listId === viewingListId) {
+            showListView(viewingListId);
+        } else if (viewingListId === 'favorites' && action.data?.listId === FAVORITES_LIST_ID) {
+            showFavorites();
+        }
     }
 
     return success;
@@ -141,6 +147,13 @@ export function redo() {
         showUndoToast(`Redid: ${action.description}`, true);
         renderManageListsView();
         renderSidebarLists();
+        updateFavoritesCount();
+        // Refresh current list view if viewing the affected list
+        if (viewingListId && action.data?.listId === viewingListId) {
+            showListView(viewingListId);
+        } else if (viewingListId === 'favorites' && action.data?.listId === FAVORITES_LIST_ID) {
+            showFavorites();
+        }
     }
 
     return success;
@@ -661,8 +674,6 @@ let listPickerBtnEl = null;
 let listPickerDropdownEl = null;
 let printListBtnEl = null;
 let shareListBtnEl = null;
-let editListBtnEl = null;
-let selectListBtnEl = null;
 
 // New list header elements
 let listHeaderEl = null;
@@ -674,8 +685,6 @@ let listShareBtnEl = null;
 let listDuplicateBtnEl = null;
 let listFollowBtnEl = null;
 let listClaimBtnEl = null;
-let listEditBtnEl = null;
-let listSelectBtnEl = null;
 let listDeleteBtnEl = null;
 
 // Callbacks (set by init)
@@ -732,7 +741,7 @@ export function isFavorite(songId) {
 /**
  * Toggle a song in the Favorites list
  */
-export function toggleFavorite(songId) {
+export function toggleFavorite(songId, skipUndo = false) {
     const favList = getOrCreateFavoritesList();
     const index = favList.songs.indexOf(songId);
 
@@ -741,6 +750,16 @@ export function toggleFavorite(songId) {
         favList.songs.push(songId);
         trackListAction('add_song', FAVORITES_LIST_ID);
     } else {
+        // Record for undo before removing
+        if (!skipUndo) {
+            const song = allSongs.find(s => s.id === songId);
+            const songTitle = song?.title || songId;
+            recordAction(ActionType.REMOVE_SONG, {
+                listId: FAVORITES_LIST_ID,
+                songId,
+                index
+            }, `Removed "${songTitle}" from Favorites`);
+        }
         // Remove from favorites
         favList.songs.splice(index, 1);
         trackListAction('remove_song', FAVORITES_LIST_ID);
@@ -2192,26 +2211,6 @@ function renderListViewUI(listName, songIds, status) {
             }
         }
 
-        // Edit - owner only
-        if (listEditBtnEl) {
-            if (ownership.isOwner) {
-                listEditBtnEl.innerHTML = listEditMode ? '✏️ Done' : '✏️ Edit';
-                listEditBtnEl.classList.remove('hidden');
-            } else {
-                listEditBtnEl.classList.add('hidden');
-            }
-        }
-
-        // Select - owner only
-        if (listSelectBtnEl) {
-            if (ownership.isOwner) {
-                listSelectBtnEl.innerHTML = multiSelectMode ? '☑️ Done' : '☑️ Select';
-                listSelectBtnEl.classList.remove('hidden');
-            } else {
-                listSelectBtnEl.classList.add('hidden');
-            }
-        }
-
         // Delete - owner only, not for favorites
         if (listDeleteBtnEl) {
             if (ownership.isOwner && viewingListId !== FAVORITES_LIST_ID && viewingListId !== 'favorites') {
@@ -2235,8 +2234,6 @@ function renderListViewUI(listName, songIds, status) {
     if (followListBtn) followListBtn.classList.add('hidden');
     const claimListBtn = document.getElementById('claim-list-btn');
     if (claimListBtn) claimListBtn.classList.add('hidden');
-    if (editListBtnEl) editListBtnEl.classList.add('hidden');
-    if (selectListBtnEl) selectListBtnEl.classList.add('hidden');
     const deleteListBtn = document.getElementById('delete-list-btn');
     if (deleteListBtn) deleteListBtn.classList.add('hidden');
     const copyListBtn = document.getElementById('copy-list-btn');
@@ -2292,18 +2289,7 @@ export function clearListView() {
     if (followListBtn) followListBtn.classList.add('hidden');
     const claimListBtn = document.getElementById('claim-list-btn');
     if (claimListBtn) claimListBtn.classList.add('hidden');
-    // Reset edit mode when leaving list view
-    if (editListBtnEl) {
-        editListBtnEl.classList.add('hidden');
-        editListBtnEl.textContent = 'Edit';
-    }
-    setListEditMode(false);
-    // Reset multi-select mode when leaving list view
-    if (selectListBtnEl) {
-        selectListBtnEl.classList.add('hidden');
-        selectListBtnEl.textContent = 'Select';
-    }
-    setMultiSelectMode(false);
+    // Clear selections when leaving list view
     clearSelectedSongs();
     hideBatchOperationsBar();
 }
@@ -2989,8 +2975,6 @@ export function initLists(options) {
     listPickerDropdownEl = listPickerDropdown;
     printListBtnEl = printListBtn;
     shareListBtnEl = document.getElementById('share-list-btn');
-    editListBtnEl = document.getElementById('edit-list-btn');
-    selectListBtnEl = document.getElementById('select-list-btn');
     renderResultsFn = renderResults;
     closeSidebarFn = closeSidebar;
     pushHistoryStateFn = pushHistoryState;
@@ -3005,53 +2989,7 @@ export function initLists(options) {
     listDuplicateBtnEl = document.getElementById('list-duplicate-btn');
     listFollowBtnEl = document.getElementById('list-follow-btn');
     listClaimBtnEl = document.getElementById('list-claim-btn');
-    listEditBtnEl = document.getElementById('list-edit-btn');
-    listSelectBtnEl = document.getElementById('list-select-btn');
     listDeleteBtnEl = document.getElementById('list-delete-btn');
-
-    // Edit list button - toggle edit mode (show remove buttons)
-    editListBtnEl?.addEventListener('click', () => {
-        const newEditMode = !listEditMode;
-        setListEditMode(newEditMode);
-        // Exit multi-select mode when entering edit mode
-        if (newEditMode && multiSelectMode) {
-            setMultiSelectMode(false);
-            clearSelectedSongs();
-            if (selectListBtnEl) selectListBtnEl.textContent = 'Select';
-        }
-        // Update button text
-        if (editListBtnEl) {
-            editListBtnEl.textContent = newEditMode ? 'Done' : 'Edit';
-        }
-        // Re-render results to show/hide remove buttons
-        if (viewingListId) {
-            showListView(viewingListId);
-        }
-    });
-
-    // Select list button - toggle multi-select mode (show checkboxes)
-    selectListBtnEl?.addEventListener('click', () => {
-        const newSelectMode = !multiSelectMode;
-        setMultiSelectMode(newSelectMode);
-        // Exit edit mode when entering select mode
-        if (newSelectMode && listEditMode) {
-            setListEditMode(false);
-            if (editListBtnEl) editListBtnEl.textContent = 'Edit';
-        }
-        // Clear selections and hide batch bar when exiting select mode
-        if (!newSelectMode) {
-            clearSelectedSongs();
-            hideBatchOperationsBar();
-        }
-        // Update button text
-        if (selectListBtnEl) {
-            selectListBtnEl.textContent = newSelectMode ? 'Done' : 'Select';
-        }
-        // Re-render results to show/hide checkboxes
-        if (viewingListId) {
-            showListView(viewingListId);
-        }
-    });
 
     // Share list button - opens share modal
     shareListBtnEl?.addEventListener('click', async () => {
@@ -3408,43 +3346,6 @@ export function initLists(options) {
 
         await performFullListsSync();
         showListView(viewingListId);
-    });
-
-    // List header: Edit button
-    listEditBtnEl?.addEventListener('click', () => {
-        const newEditMode = !listEditMode;
-        setListEditMode(newEditMode);
-        if (newEditMode && multiSelectMode) {
-            setMultiSelectMode(false);
-            clearSelectedSongs();
-            if (listSelectBtnEl) listSelectBtnEl.innerHTML = '☑️ Select';
-        }
-        if (listEditBtnEl) {
-            listEditBtnEl.innerHTML = newEditMode ? '✏️ Done' : '✏️ Edit';
-        }
-        if (viewingListId) {
-            showListView(viewingListId);
-        }
-    });
-
-    // List header: Select button
-    listSelectBtnEl?.addEventListener('click', () => {
-        const newSelectMode = !multiSelectMode;
-        setMultiSelectMode(newSelectMode);
-        if (newSelectMode && listEditMode) {
-            setListEditMode(false);
-            if (listEditBtnEl) listEditBtnEl.innerHTML = '✏️ Edit';
-        }
-        if (!newSelectMode) {
-            clearSelectedSongs();
-            hideBatchOperationsBar();
-        }
-        if (listSelectBtnEl) {
-            listSelectBtnEl.innerHTML = newSelectMode ? '☑️ Done' : '☑️ Select';
-        }
-        if (viewingListId) {
-            showListView(viewingListId);
-        }
     });
 
     // List header: Delete button
