@@ -93,7 +93,8 @@ Bluegrass-Songbook/
 │   ├── manual/              # Hand-created songs
 │   ├── tunearch/            # ABC fiddle tunes
 │   ├── banjo-hangout/       # Banjo tabs from Banjo Hangout (TEF→OTF)
-│   └── bluegrass-lyrics/    # Additional lyrics source
+│   ├── bluegrass-lyrics/    # Additional lyrics source
+│   └── tef-uploads/         # User-uploaded TEF files for conversion
 │
 ├── scripts/                 # CLI tools
 │   ├── bootstrap            # Setup + build index
@@ -113,7 +114,9 @@ Bluegrass-Songbook/
 │
 ├── .claude/skills/          # Claude Code skills
 │   ├── chordpro/SKILL.md    # ChordPro syntax reference
-│   └── github-project/SKILL.md  # GitHub project management
+│   ├── github-project/SKILL.md  # GitHub project management
+│   ├── tab-debug/SKILL.md   # TEF/tablature debugging workflow
+│   └── add-issue/SKILL.md   # GitHub issue creation with duplicate detection
 │
 ├── ROADMAP.md               # Product vision & phases
 ├── tests/                   # pytest test suite (parser)
@@ -165,7 +168,9 @@ The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 | **Build pipeline** | `scripts/lib/` | `scripts/lib/CLAUDE.md` |
 | **ChordPro syntax** | `.claude/skills/chordpro/` | `SKILL.md` (auto-invoked) |
 | **GitHub project** | `.claude/skills/github-project/` | `SKILL.md` (milestones, issues, labels) |
-| **Backend (Supabase)** | `supabase/`, `docs/js/supabase-auth.js` | - |
+| **TEF/Tab debugging** | `.claude/skills/tab-debug/` | `SKILL.md` (TEF parsing issues) |
+| **Issue creation** | `.claude/skills/add-issue/` | `SKILL.md` (duplicate detection, labels) |
+| **Backend (Supabase)** | `supabase/`, `docs/js/supabase-auth.js` | `supabase/CLAUDE.md` |
 
 ## Development Workflows
 
@@ -308,6 +313,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | Modify homepage collections | `docs/js/collections.js` |
 | Understand works structure | `works/` + `scripts/lib/work_schema.py` |
 | Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |
+| Debug TEF/tablature parsing | `.claude/skills/tab-debug/SKILL.md` |
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
 | Understand grassiness scoring | `scripts/lib/tagging/CLAUDE.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |

@@ -52,16 +52,22 @@ scripts/lib/
 ├── work_schema.py        # work.yaml schema definition and validation
 ├── migrate_to_works.py   # Migrate sources/ → works/ structure
 ├── build_index.py        # LEGACY: Build index from sources/*.pro
+├── build_posts.py        # Build blog posts manifest (posts.json)
 ├── enrich_songs.py       # Enrich .pro files (provenance, chord normalization)
 ├── tag_enrichment.py     # Tag enrichment (MusicBrainz + harmonic analysis)
 ├── query_artist_tags.py  # Optimized MusicBrainz artist tag queries
 ├── strum_machine.py      # Strum Machine API integration
+├── fetch_tune.py         # Fetch tunes from TuneArch by URL
+├── search_index.py       # Search index utilities and testing
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_submission.py # GitHub Action: process song-submission issues
 ├── process_correction.py # GitHub Action: process song-correction issues
 ├── chord_counter.py      # Chord statistics utility
+├── loc_counter.py        # Lines of code counter for analytics
+├── export_genre_suggestions.py  # Export genre suggestions for review
 └── tagging/              # Song-level tagging system
     ├── CLAUDE.md         # Detailed docs for grassiness scoring
+    ├── build_artist_database.py  # Build curated bluegrass artist database
     └── grassiness.py     # Bluegrass detection based on covers/tags
 ```
 

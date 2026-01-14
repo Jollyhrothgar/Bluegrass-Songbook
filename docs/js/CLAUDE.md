@@ -30,6 +30,7 @@ docs/
 │   │   ├── tablature.js # Tablature display
 │   │   ├── tab-player.js # Interactive tab player with playback
 │   │   └── tab-ascii.js # ASCII tab format
+│   ├── chord-explorer/ # Chord exploration tool (standalone)
 │   └── __tests__/      # Vitest unit tests
 ├── css/style.css       # Dark/light themes, responsive layout
 ├── posts/              # Blog posts (markdown)
@@ -313,15 +314,28 @@ mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
 
 **Unit tests** (`__tests__/`):
 - `chords.test.js` - Key detection, transposition, Nashville numbers
+- `editor.test.js` - Editor functionality, ChordPro conversion
 - `search-core.test.js` - Query parsing, chord/progression filtering
 - `song-view.test.js` - ChordPro parsing
+- `state.test.js` - State management, pub/sub system
+- `utils.test.js` - Utility functions
 
 **E2E tests** (`../../e2e/`):
-- `search.spec.js` - Search and filtering flows
-- `song-view.spec.js` - Song display and controls
-- `work-view.spec.js` - Work display with parts/tablature
-- `ui.spec.js` - UI interactions, modals, navigation
+- `abc-notation.spec.js` - ABC notation rendering for fiddle tunes
+- `editor.spec.js` - Song editor flows
+- `error-states.spec.js` - Error handling and edge cases
 - `favorites.spec.js` - Favorites and lists
+- `landing-page.spec.js` - Homepage collections and navigation
+- `list-management.spec.js` - List CRUD, sharing, multi-owner
+- `navigation.spec.js` - URL routing, deep links
+- `print-options.spec.js` - Print view and export options
+- `search.spec.js` - Search and filtering flows
+- `search-edge-cases.spec.js` - Complex search scenarios
+- `song-view.spec.js` - Song display and controls
+- `transposition.spec.js` - Key transposition features
+- `ui.spec.js` - UI interactions, modals, navigation
+- `version-picker.spec.js` - Song version selection
+- `work-view.spec.js` - Work display with parts/tablature
 
 ## Adding a Feature
 
