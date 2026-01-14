@@ -310,6 +310,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 |--------------|----------|
 | Add a UI feature | `docs/js/` + `docs/js/CLAUDE.md` |
 | Work with tablature/renderers | `docs/js/renderers/` + `docs/js/work-view.js` |
+| Build the OTF editor | `docs/js/otf-editor/DESIGN.md` |
 | Modify homepage collections | `docs/js/collections.js` |
 | Understand works structure | `works/` + `scripts/lib/work_schema.py` |
 | Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |

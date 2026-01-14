@@ -31,6 +31,7 @@ docs/
 │   │   ├── tab-player.js # Interactive tab player with playback
 │   │   └── tab-ascii.js # ASCII tab format
 │   ├── chord-explorer/ # Chord exploration tool (standalone)
+│   ├── otf-editor/     # Tablature editor (design phase)
 │   └── __tests__/      # Vitest unit tests
 ├── css/style.css       # Dark/light themes, responsive layout
 ├── posts/              # Blog posts (markdown)
