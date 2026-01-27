@@ -1,0 +1,14 @@
+id: rain-please-go-away-1
+title: Rain Please Go Away
+artist: Dan Tyminsky
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: manual
+    submitted_by: github:Jollyhrothgar
+    submitted_at: '2026-01-27'
+    github_issue: 151
