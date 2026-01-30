@@ -19,3 +19,6 @@ parts:
     source: classic-country
     source_file: ifiloselyricschords.pro
     imported_at: '2026-01-02'
+    corrected_by: github:Jollyhrothgar
+    corrected_at: '2026-01-30'
+    correction_issue: 153
