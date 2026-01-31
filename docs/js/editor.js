@@ -949,10 +949,10 @@ async function submitAsTrustedUser(data) {
             throw new Error('Not logged in - please sign in and try again');
         }
 
-        // Step 1: Insert to pending_songs (instant visibility)
+        // Step 1: Insert/update pending_songs (instant visibility)
         const { error } = await supabase
             .from('pending_songs')
-            .insert(pendingEntry);
+            .upsert(pendingEntry, { onConflict: 'id' });
 
         if (error) {
             throw new Error(error.message);

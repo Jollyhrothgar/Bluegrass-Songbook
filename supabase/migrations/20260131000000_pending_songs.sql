@@ -8,9 +8,10 @@ create table trusted_users (
   created_by uuid references auth.users(id)
 );
 
--- RLS: only service role can manage trusted users
+-- RLS: only service role can manage trusted users, but users can check own membership
 alter table trusted_users enable row level security;
 create policy "Service role only" on trusted_users for all using (false);
+create policy "Users can check own membership" on trusted_users for select using (user_id = auth.uid());
 
 -- Pending songs (additions and corrections)
 create table pending_songs (
