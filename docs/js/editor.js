@@ -914,6 +914,9 @@ async function submitAsTrustedUser(data) {
     const chords = extractChords(content);
     const { key, mode } = detectKey(chords);
 
+    // Get current user ID for created_by
+    const user = window.SupabaseAuth?.getUser?.();
+
     const pendingEntry = {
         id: slug,
         replaces_id: editMode ? editingSongId : null,
@@ -922,6 +925,7 @@ async function submitAsTrustedUser(data) {
         composer: writer || null,
         content: chordpro,
         key: key || null,
+        created_by: user?.id || null,
         mode: mode || null,
         tags: {},
     };
@@ -939,10 +943,16 @@ async function submitAsTrustedUser(data) {
             throw new Error('Not connected to database');
         }
 
+        // Verify we have an active session
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) {
+            throw new Error('Not logged in - please sign in and try again');
+        }
+
         // Step 1: Insert to pending_songs (instant visibility)
         const { error } = await supabase
             .from('pending_songs')
-            .upsert(pendingEntry, { onConflict: 'id' });
+            .insert(pendingEntry);
 
         if (error) {
             throw new Error(error.message);
