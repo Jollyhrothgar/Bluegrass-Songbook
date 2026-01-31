@@ -39,9 +39,10 @@ create policy "Trusted users can insert"
   on pending_songs for insert
   with check (auth.uid() in (select user_id from trusted_users));
 
-create policy "Trusted users can update own"
+create policy "Trusted users can update any"
   on pending_songs for update
-  using (created_by = auth.uid() and auth.uid() in (select user_id from trusted_users));
+  using (auth.uid() in (select user_id from trusted_users))
+  with check (auth.uid() in (select user_id from trusted_users));
 
 create policy "Trusted users can delete own"
   on pending_songs for delete
