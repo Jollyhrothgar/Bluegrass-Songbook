@@ -840,6 +840,51 @@ function navigateTo(mode) {
 // LOAD INDEX
 // ============================================
 
+/**
+ * Transform a pending_songs entry to match the index.jsonl format
+ */
+function transformPendingToIndexFormat(pending) {
+    // Extract first line of lyrics (skip chord brackets)
+    const extractFirstLine = (content) => {
+        if (!content) return '';
+        const lines = content.split('\n');
+        for (const line of lines) {
+            // Skip directives and empty lines
+            if (line.startsWith('{') || !line.trim()) continue;
+            // Remove chord brackets and return first lyric line
+            const lyricsOnly = line.replace(/\[[^\]]+\]/g, '').trim();
+            if (lyricsOnly) return lyricsOnly;
+        }
+        return '';
+    };
+
+    // Extract all lyrics (for search)
+    const extractLyrics = (content) => {
+        if (!content) return '';
+        return content
+            .split('\n')
+            .filter(line => !line.startsWith('{') && line.trim())
+            .map(line => line.replace(/\[[^\]]+\]/g, ''))
+            .join(' ')
+            .trim();
+    };
+
+    return {
+        id: pending.id,
+        title: pending.title,
+        artist: pending.artist || '',
+        composer: pending.composer || '',
+        content: pending.content,
+        key: pending.key || '',
+        mode: pending.mode || '',
+        tags: pending.tags || {},
+        source: 'pending',
+        replaces_id: pending.replaces_id,
+        first_line: extractFirstLine(pending.content),
+        lyrics: extractLyrics(pending.content),
+    };
+}
+
 async function loadIndex() {
     if (resultsDiv) {
         resultsDiv.innerHTML = '<div class="loading">Loading songbook...</div>';
@@ -848,7 +893,35 @@ async function loadIndex() {
     try {
         const response = await fetch('data/index.jsonl');
         const text = await response.text();
-        const songs = text.trim().split('\n').map(line => JSON.parse(line));
+        const staticSongs = text.trim().split('\n').map(line => JSON.parse(line));
+
+        // Fetch pending songs from Supabase (graceful failure if offline/error)
+        let pendingSongs = [];
+        try {
+            const supabase = window.SupabaseAuth?.supabase;
+            if (supabase) {
+                const { data, error } = await supabase
+                    .from('pending_songs')
+                    .select('*');
+                if (data && !error) {
+                    pendingSongs = data.map(transformPendingToIndexFormat);
+                    if (pendingSongs.length > 0) {
+                        console.log(`Merged ${pendingSongs.length} pending song(s)`);
+                    }
+                }
+            }
+        } catch (e) {
+            console.warn('Could not fetch pending songs:', e);
+            // Static index still works - graceful degradation
+        }
+
+        // Merge: pending corrections replace static songs with same ID
+        const replacedIds = new Set(
+            pendingSongs.filter(s => s.replaces_id).map(s => s.replaces_id)
+        );
+        const filteredStatic = staticSongs.filter(s => !replacedIds.has(s.id));
+        const songs = [...filteredStatic, ...pendingSongs];
+
         setAllSongs(songs);
 
         // Build song groups for version detection

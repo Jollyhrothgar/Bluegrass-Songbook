@@ -1,0 +1,19 @@
+name: Cleanup Pending Songs
+
+on:
+  workflow_run:
+    workflows: ["CI & Deploy"]
+    types: [completed]
+    branches: [main]
+
+jobs:
+  cleanup:
+    # Only run if the deploy workflow succeeded
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cleanup pending_songs
+        run: |
+          curl -X POST "${{ secrets.SUPABASE_URL }}/functions/v1/cleanup-pending" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+            -H "Content-Type: application/json"

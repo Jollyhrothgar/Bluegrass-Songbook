@@ -842,6 +842,7 @@ export function initEditor(options) {
         editorSubmitBtnEl.addEventListener('click', async () => {
             const title = editorTitleEl?.value.trim();
             const artist = editorArtistEl?.value.trim();
+            const writer = editorWriterEl?.value.trim();
 
             if (!title) {
                 if (editorStatusEl) {
@@ -862,89 +863,220 @@ export function initEditor(options) {
                 return;
             }
 
-            let submissionData;
+            // Check if user is a trusted user (can save instantly)
+            const isTrusted = await window.SupabaseAuth?.isTrustedUser?.();
 
-            if (editMode && editingSongId) {
-                const comment = editorCommentEl?.value.trim();
-                if (!comment) {
-                    if (editorStatusEl) {
-                        editorStatusEl.textContent = 'Please describe your changes';
-                        editorStatusEl.className = 'save-status error';
-                    }
-                    return;
-                }
-
-                submissionData = {
-                    type: 'correction',
+            if (isTrusted) {
+                // Trusted user flow: save directly to pending_songs
+                await submitAsTrustedUser({
                     title,
-                    artist: artist || undefined,
-                    songId: editingSongId,
+                    artist,
+                    writer,
                     chordpro,
-                    comment,
-                    submittedBy: getSubmitterAttribution()
-                };
-            } else {
-                submissionData = {
-                    type: 'submission',
-                    title,
-                    artist: artist || undefined,
-                    chordpro,
-                    submittedBy: getSubmitterAttribution()
-                };
-            }
-
-            // Disable button and show submitting state
-            editorSubmitBtnEl.disabled = true;
-            if (editorStatusEl) {
-                editorStatusEl.textContent = 'Submitting...';
-                editorStatusEl.className = 'save-status';
-            }
-
-            try {
-                const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-                        'apikey': SUPABASE_ANON_KEY
-                    },
-                    body: JSON.stringify(submissionData)
+                    content
                 });
-
-                const result = await response.json();
-
-                if (!response.ok || !result.success) {
-                    throw new Error(result.error || 'Failed to submit');
-                }
-
-                trackSubmission(editMode ? 'correction' : 'new_song');
-
-                if (editorStatusEl) {
-                    editorStatusEl.innerHTML = `Submitted! <a href="${result.issueUrl}" target="_blank">View issue #${result.issueNumber}</a>`;
-                    editorStatusEl.className = 'save-status success';
-                }
-
-                if (editMode) {
-                    // Stay in edit mode so user can submit more corrections
-                    // Edit mode will be cleared when they navigate away
-                    if (editorCommentEl) editorCommentEl.value = '';
-                } else {
-                    // Clear form for new submissions
-                    if (editorTitleEl) editorTitleEl.value = '';
-                    if (editorArtistEl) editorArtistEl.value = '';
-                    if (editorContentEl) editorContentEl.value = '';
-                    updateEditorPreview();
-                }
-
-            } catch (error) {
-                console.error('Submission error:', error);
-                if (editorStatusEl) {
-                    editorStatusEl.textContent = `Error: ${error.message}`;
-                    editorStatusEl.className = 'save-status error';
-                }
-            } finally {
-                editorSubmitBtnEl.disabled = false;
+            } else {
+                // Regular flow: create GitHub issue for approval
+                await submitToGitHubIssue({
+                    title,
+                    artist,
+                    chordpro
+                });
             }
         });
+    }
+}
+
+/**
+ * Generate a URL-friendly slug from title and artist
+ */
+function generateSlug(title, artist) {
+    const base = artist
+        ? `${title}-${artist}`
+        : title;
+    return base
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '')
+        .slice(0, 80);
+}
+
+/**
+ * Submit as a trusted user - saves directly to pending_songs for instant visibility
+ */
+async function submitAsTrustedUser(data) {
+    const { title, artist, writer, chordpro, content } = data;
+
+    // Generate slug for the song ID
+    const slug = editMode ? editingSongId : generateSlug(title, artist);
+
+    // Detect key from chords
+    const chords = extractChords(content);
+    const { key, mode } = detectKey(chords);
+
+    const pendingEntry = {
+        id: slug,
+        replaces_id: editMode ? editingSongId : null,
+        title,
+        artist: artist || null,
+        composer: writer || null,
+        content: chordpro,
+        key: key || null,
+        mode: mode || null,
+        tags: {},
+    };
+
+    // Disable button and show saving state
+    editorSubmitBtnEl.disabled = true;
+    if (editorStatusEl) {
+        editorStatusEl.textContent = 'Saving...';
+        editorStatusEl.className = 'save-status';
+    }
+
+    try {
+        const supabase = window.SupabaseAuth?.supabase;
+        if (!supabase) {
+            throw new Error('Not connected to database');
+        }
+
+        // Step 1: Insert to pending_songs (instant visibility)
+        const { error } = await supabase
+            .from('pending_songs')
+            .upsert(pendingEntry, { onConflict: 'id' });
+
+        if (error) {
+            throw new Error(error.message);
+        }
+
+        // Step 2: Trigger auto-commit (fire and forget)
+        triggerAutoCommit(pendingEntry).catch(e => {
+            console.warn('Auto-commit failed, will retry later:', e);
+        });
+
+        trackSubmission(editMode ? 'correction' : 'new_song');
+
+        if (editorStatusEl) {
+            editorStatusEl.textContent = 'Saved!';
+            editorStatusEl.className = 'save-status success';
+        }
+
+        // Navigate to the song after a brief delay
+        setTimeout(() => {
+            window.location.hash = `#work/${slug}`;
+        }, 500);
+
+    } catch (error) {
+        console.error('Save error:', error);
+        if (editorStatusEl) {
+            editorStatusEl.textContent = `Error: ${error.message}`;
+            editorStatusEl.className = 'save-status error';
+        }
+    } finally {
+        editorSubmitBtnEl.disabled = false;
+    }
+}
+
+/**
+ * Trigger auto-commit edge function (fire and forget)
+ */
+async function triggerAutoCommit(entry) {
+    await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(entry),
+    });
+}
+
+/**
+ * Submit to GitHub issue for approval (regular user flow)
+ */
+async function submitToGitHubIssue(data) {
+    const { title, artist, chordpro } = data;
+
+    let submissionData;
+
+    if (editMode && editingSongId) {
+        const comment = editorCommentEl?.value.trim();
+        if (!comment) {
+            if (editorStatusEl) {
+                editorStatusEl.textContent = 'Please describe your changes';
+                editorStatusEl.className = 'save-status error';
+            }
+            return;
+        }
+
+        submissionData = {
+            type: 'correction',
+            title,
+            artist: artist || undefined,
+            songId: editingSongId,
+            chordpro,
+            comment,
+            submittedBy: getSubmitterAttribution()
+        };
+    } else {
+        submissionData = {
+            type: 'submission',
+            title,
+            artist: artist || undefined,
+            chordpro,
+            submittedBy: getSubmitterAttribution()
+        };
+    }
+
+    // Disable button and show submitting state
+    editorSubmitBtnEl.disabled = true;
+    if (editorStatusEl) {
+        editorStatusEl.textContent = 'Submitting...';
+        editorStatusEl.className = 'save-status';
+    }
+
+    try {
+        const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                'apikey': SUPABASE_ANON_KEY
+            },
+            body: JSON.stringify(submissionData)
+        });
+
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+            throw new Error(result.error || 'Failed to submit');
+        }
+
+        trackSubmission(editMode ? 'correction' : 'new_song');
+
+        if (editorStatusEl) {
+            editorStatusEl.innerHTML = `Submitted! <a href="${result.issueUrl}" target="_blank">View issue #${result.issueNumber}</a>`;
+            editorStatusEl.className = 'save-status success';
+        }
+
+        if (editMode) {
+            // Stay in edit mode so user can submit more corrections
+            // Edit mode will be cleared when they navigate away
+            if (editorCommentEl) editorCommentEl.value = '';
+        } else {
+            // Clear form for new submissions
+            if (editorTitleEl) editorTitleEl.value = '';
+            if (editorArtistEl) editorArtistEl.value = '';
+            if (editorContentEl) editorContentEl.value = '';
+            updateEditorPreview();
+        }
+
+    } catch (error) {
+        console.error('Submission error:', error);
+        if (editorStatusEl) {
+            editorStatusEl.textContent = `Error: ${error.message}`;
+            editorStatusEl.className = 'save-status error';
+        }
+    } finally {
+        editorSubmitBtnEl.disabled = false;
     }
 }

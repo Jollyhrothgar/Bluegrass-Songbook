@@ -8,6 +8,7 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 let supabaseClient = null;
 let currentUser = null;
 let isInitialized = false;
+let trustedUserCache = null;
 
 // Callbacks for state changes
 const onAuthChangeCallbacks = [];
@@ -27,6 +28,9 @@ function initSupabase() {
     // Listen for auth state changes
     supabaseClient.auth.onAuthStateChange((event, session) => {
         currentUser = session?.user || null;
+
+        // Clear trusted user cache on auth change
+        clearTrustedUserCache();
 
         // Notify all registered callbacks
         onAuthChangeCallbacks.forEach(callback => {
@@ -93,6 +97,32 @@ function getUser() {
 // Check if user is logged in
 function isLoggedIn() {
     return currentUser !== null;
+}
+
+// Check if current user is a trusted user (can make instant edits)
+async function isTrustedUser() {
+    if (!supabaseClient || !currentUser) return false;
+
+    // Return cached value if available
+    if (trustedUserCache !== null) return trustedUserCache;
+
+    try {
+        const { data, error } = await supabaseClient.rpc('is_trusted_user');
+        if (error) {
+            console.error('Error checking trusted user status:', error);
+            return false;
+        }
+        trustedUserCache = data === true;
+        return trustedUserCache;
+    } catch (err) {
+        console.error('Error checking trusted user status:', err);
+        return false;
+    }
+}
+
+// Clear trusted user cache (called on auth state change)
+function clearTrustedUserCache() {
+    trustedUserCache = null;
 }
 
 // ============================================
@@ -1192,6 +1222,9 @@ window.SupabaseAuth = {
     signOut,
     getUser,
     isLoggedIn,
+    isTrustedUser,
+    // Expose supabase client for direct access (e.g., pending_songs)
+    get supabase() { return supabaseClient; },
     // Favorites
     fetchCloudFavorites,
     addCloudFavorite,
