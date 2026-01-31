@@ -925,7 +925,9 @@ export function initEditor(options) {
                 }
 
                 if (editMode) {
-                    exitEditMode();
+                    // Stay in edit mode so user can submit more corrections
+                    // Edit mode will be cleared when they navigate away
+                    if (editorCommentEl) editorCommentEl.value = '';
                 } else {
                     // Clear form for new submissions
                     if (editorTitleEl) editorTitleEl.value = '';

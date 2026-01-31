@@ -43,7 +43,7 @@ import {
 import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
 import { openWork, renderWorkView } from './work-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
-import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro, closeHints } from './editor.js';
+import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints } from './editor.js';
 import { escapeHtml } from './utils.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
@@ -337,6 +337,11 @@ function initViewSubscription() {
 
         // Close any open editor hints panel
         closeHints();
+
+        // Exit edit mode when navigating away from the editor
+        if (view !== 'add-song') {
+            exitEditMode();
+        }
 
         // Close bottom sheet if open (it has position: fixed so stays visible)
         bottomSheet?.classList.add('hidden');
@@ -2045,10 +2050,23 @@ function init() {
         layoutDropdown.style.left = `${Math.max(8, rect.left)}px`;
     }
 
+    // Map enharmonic key names to their chromatic array equivalents
+    const ENHARMONIC_TO_CHROMATIC = {
+        // Major keys - map flats to sharps where chromatic array uses sharps
+        'Db': 'C#', 'D#': 'Eb', 'Gb': 'F#', 'G#': 'Ab', 'A#': 'Bb',
+        // Minor keys - map alternatives to chromatic array spellings
+        'A#m': 'Bbm', 'D#m': 'Ebm', 'G#m': 'G#m' // G#m is in the array
+    };
+
+    function normalizeKeyForChromatic(key) {
+        return ENHARMONIC_TO_CHROMATIC[key] || key;
+    }
+
     function transposeBySemitone(direction) {
         if (!currentDetectedKey || !originalDetectedKey) return;
         const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-        const currentIndex = keys.indexOf(currentDetectedKey);
+        const normalizedKey = normalizeKeyForChromatic(currentDetectedKey);
+        const currentIndex = keys.indexOf(normalizedKey);
         if (currentIndex === -1) return;
         const newIndex = (currentIndex + direction + keys.length) % keys.length;
         setCurrentDetectedKey(keys[newIndex]);
