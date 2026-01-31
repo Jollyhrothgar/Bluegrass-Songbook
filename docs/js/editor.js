@@ -990,10 +990,15 @@ async function submitAsTrustedUser(data) {
  * Trigger auto-commit edge function (fire and forget)
  */
 async function triggerAutoCommit(entry) {
+    // Get the user's session token for authenticated request
+    const supabase = window.SupabaseAuth?.supabase;
+    const { data: { session } } = await supabase?.auth.getSession() || { data: {} };
+    const token = session?.access_token || SUPABASE_ANON_KEY;
+
     await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+            'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(entry),
