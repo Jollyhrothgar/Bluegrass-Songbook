@@ -264,6 +264,8 @@ def build_song_from_work(work_dir: Path) -> dict:
         song['composer'] = ', '.join(work['composers'])
     if work.get('tags'):
         song['tags'] = {tag: {'score': 50, 'source': 'work'} for tag in work['tags']}
+    if work.get('exclude_tags'):
+        song['exclude_tags'] = work['exclude_tags']
     if work.get('external', {}).get('strum_machine'):
         song['strum_machine_url'] = work['external']['strum_machine']
 

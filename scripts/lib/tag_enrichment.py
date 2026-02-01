@@ -542,6 +542,15 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
             unique_artists.sort(key=lambda a: -artist_tier_weights.get(a, 0))
             song['covering_artists'] = unique_artists
 
+        # Remove excluded tags (from work.yaml exclude_tags field)
+        exclude_tags = song.get('exclude_tags', [])
+        for tag in exclude_tags:
+            if tag in tags:
+                del tags[tag]
+        # Clean up the exclude_tags field (not needed in final output)
+        if 'exclude_tags' in song:
+            del song['exclude_tags']
+
         song['tags'] = tags
         if tags:
             songs_tagged += 1

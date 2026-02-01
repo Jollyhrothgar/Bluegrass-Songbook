@@ -59,6 +59,7 @@ class Work:
     default_tempo: Optional[int] = None
     time_signature: Optional[str] = None
     tags: list[str] = field(default_factory=list)
+    exclude_tags: list[str] = field(default_factory=list)  # Prevent auto-generated tags
     external: Optional[ExternalLinks] = None
     parts: list[Part] = field(default_factory=list)
 

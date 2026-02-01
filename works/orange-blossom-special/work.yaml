@@ -11,6 +11,9 @@ tags:
 - Gospel
 - Outlaw
 - JamFriendly
+exclude_tags:
+- BluegrassStandard
+- Bluegrass
 parts:
 - type: lead-sheet
   format: chordpro
