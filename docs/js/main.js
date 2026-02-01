@@ -2505,6 +2505,12 @@ function init() {
 
     // Handle hash changes that don't trigger popstate (e.g. manual URL edits)
     window.addEventListener('hashchange', () => {
+        // For hash changes, always try to handle the hash first since the hash
+        // represents the current navigation target, not history.state which may be stale
+        if (handleDeepLink()) {
+            return;
+        }
+        // Fall back to state-based navigation if no hash match
         handleHistoryNavigation(history.state);
     });
 

@@ -45,7 +45,7 @@ import {
     getSemitonesBetweenKeys, transposeChord, toNashville,
     CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
 } from './chords.js';
-import { updateListPickerButton, updateFavoriteButton } from './lists.js';
+import { updateListPickerButton, updateFavoriteButton, clearListView } from './lists.js';
 import { renderTagBadges, getTagCategory, formatTagName } from './tags.js';
 import {
     trackSongView, trackTranspose, trackVersionPicker, trackTagVote,
@@ -1234,7 +1234,8 @@ function setupRenderOptionsListeners(song, chordpro) {
             setFullscreenMode(false);
             document.body.classList.remove('fullscreen-mode');
             document.body.classList.remove('has-list-context');
-            setListContext(null);
+            // Clear list view state and hide list header
+            clearListView();
             // Navigate to work view
             window.location.hash = `#work/${song?.id || ''}`;
         });

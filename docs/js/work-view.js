@@ -21,6 +21,7 @@ import { parseChordPro, showVersionPicker } from './song-view.js';
 import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS, extractChords } from './chords.js';
 import { escapeHtml } from './utils.js';
 import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
+import { clearListView } from './lists.js';
 import { getTagCategory, formatTagName } from './tags.js';
 
 // ============================================
@@ -308,6 +309,16 @@ export async function openWork(workId, options = {}) {
         console.error(`Work not found: ${workId}`);
         return;
     }
+
+    // Clear list view state when opening a work directly (not from a list)
+    // This hides the list header and clears list context
+    // Use direct DOM manipulation as a fallback in case of import issues
+    const listHeader = document.getElementById('list-header');
+    if (listHeader) {
+        listHeader.classList.add('hidden');
+    }
+    // Also clear the list context via the imported function
+    clearListView();
 
     // Clear chordpro content FIRST to prevent stale render from subscribers
     // This must happen before any state changes that trigger reactive re-renders
