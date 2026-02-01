@@ -1,15 +1,14 @@
 id: rocky-top
-title: Rocky Top
-artist: Lynn Anderson
+title: "Rocky Top"
+artist: "Lynn Anderson"
+composers: []
 default_key: G
-tags:
-- Modal
+tags: []
 parts:
-- type: lead-sheet
-  format: chordpro
-  file: lead-sheet.pro
-  default: true
-  provenance:
-    source: classic-country
-    source_file: rockytoplyricsandchords.pro
-    imported_at: '2026-01-02'
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: trusted-user
+      imported_at: '2026-02-01'
