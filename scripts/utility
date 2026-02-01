@@ -29,6 +29,10 @@ show_help() {
     echo "      Refresh artist tags from MusicBrainz (requires local MB database)"
     echo "      and rebuild the index"
     echo ""
+    echo "  sync-tag-votes"
+    echo "      Sync tag overrides from trusted user votes in Supabase"
+    echo "      (requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars)"
+    echo ""
     echo "  fetch-tune <name>"
     echo "      Fetch a single tune from TuneArch by name and rebuild the index"
     echo ""
@@ -102,6 +106,15 @@ case "$COMMAND" in
         uv run python3 scripts/lib/build_index.py
         echo ""
         echo "Done! Tags refreshed and index rebuilt."
+        ;;
+    sync-tag-votes)
+        echo "Fetching tag overrides from trusted user votes..."
+        uv run python3 scripts/lib/fetch_tag_overrides.py
+        echo ""
+        echo "Rebuilding index..."
+        ./scripts/bootstrap --quick
+        echo ""
+        echo "Done! Tag overrides synced and index rebuilt."
         ;;
     fetch-tune)
         if [ -z "$1" ]; then

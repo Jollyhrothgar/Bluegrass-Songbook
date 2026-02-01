@@ -1,0 +1,7 @@
+{
+  "_comment": "Auto-generated from trusted user tag votes. Do not edit manually.",
+  "_source": "scripts/lib/fetch_tag_overrides.py",
+  "exclude": {
+    "orange-blossom-special": ["BluegrassStandard"]
+  }
+}

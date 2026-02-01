@@ -28,6 +28,7 @@ if os.path.exists(MB_PATH):
 TAGS_CACHE_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'tags.json'
 ARTIST_TAGS_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'artist_tags.json'
 GRASSINESS_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'grassiness_scores.json'
+TAG_OVERRIDES_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'tag_overrides.json'
 
 
 # =============================================================================
@@ -359,6 +360,35 @@ def get_grassiness_tags(song_id: str, title: str, scores: dict = None, scores_by
 
 
 # =============================================================================
+# Tag Overrides (Trusted User Votes)
+# =============================================================================
+
+_tag_overrides_cache = None
+
+def load_tag_overrides() -> dict:
+    """Load tag overrides from trusted user votes.
+
+    Returns:
+        Dict mapping song_id -> [list of tags to exclude]
+    """
+    global _tag_overrides_cache
+    if _tag_overrides_cache is not None:
+        return _tag_overrides_cache
+
+    if TAG_OVERRIDES_FILE.exists():
+        try:
+            with open(TAG_OVERRIDES_FILE, 'r') as f:
+                data = json.load(f)
+                _tag_overrides_cache = data.get('exclude', {})
+                return _tag_overrides_cache
+        except Exception as e:
+            print(f"Warning: Could not load tag overrides: {e}")
+
+    _tag_overrides_cache = {}
+    return _tag_overrides_cache
+
+
+# =============================================================================
 # Harmonic Analysis Tags
 # =============================================================================
 
@@ -469,6 +499,11 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
         if norm_title and norm_title not in scores_by_title:
             scores_by_title[norm_title] = data
 
+    # Load trusted user tag overrides (downvotes)
+    tag_overrides = load_tag_overrides()
+    if tag_overrides:
+        print(f"  Tag overrides: {len(tag_overrides)} songs with exclusions from trusted user votes")
+
     # Process each song
     for song in songs:
         tags = {}
@@ -550,6 +585,12 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
         # Clean up the exclude_tags field (not needed in final output)
         if 'exclude_tags' in song:
             del song['exclude_tags']
+
+        # Remove tags downvoted by trusted users (from tag_overrides.json)
+        db_exclude_tags = tag_overrides.get(song_id, [])
+        for tag in db_exclude_tags:
+            if tag in tags:
+                del tags[tag]
 
         song['tags'] = tags
         if tags:
