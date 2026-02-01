@@ -919,6 +919,76 @@ export function loadLists() {
 }
 
 /**
+ * Clean up legacy song IDs in lists (one-time migration)
+ * Converts old IDs like 'manofconstantsorrowlyricsandchords' to 'man-of-constant-sorrow'
+ */
+async function cleanupLegacySongIds() {
+    // Check if cleanup already done
+    const cleanupDone = localStorage.getItem('songbook-legacy-cleanup-done');
+    if (cleanupDone) return;
+
+    // Check if any lists have legacy IDs (quick check before loading mapping)
+    const hasLegacyIds = userLists.some(list =>
+        list.songs?.some(id => id.includes('lyricschords') || id.includes('lyricsandchords'))
+    );
+    if (!hasLegacyIds) {
+        localStorage.setItem('songbook-legacy-cleanup-done', '1');
+        return;
+    }
+
+    try {
+        // Load the legacy ID mapping
+        const response = await fetch('data/legacy_id_mapping.json');
+        if (!response.ok) {
+            console.warn('Legacy ID mapping not found, skipping cleanup');
+            return;
+        }
+        const mapping = await response.json();
+
+        let changed = false;
+
+        // Process each list
+        for (const list of userLists) {
+            if (!list.songs || list.songs.length === 0) continue;
+
+            // Replace legacy IDs and deduplicate
+            const newSongSet = new Set();
+            const newSongs = [];
+
+            for (const songId of list.songs) {
+                // Map to new ID if it's a legacy ID
+                const newId = mapping[songId] || songId;
+
+                // Only add if not already in the set (deduplication)
+                if (!newSongSet.has(newId)) {
+                    newSongSet.add(newId);
+                    newSongs.push(newId);
+                } else if (newId !== songId) {
+                    // Was a duplicate caused by having both old and new ID
+                    changed = true;
+                }
+            }
+
+            // Check if songs changed
+            if (newSongs.length !== list.songs.length ||
+                newSongs.some((id, i) => id !== list.songs[i])) {
+                list.songs = newSongs;
+                changed = true;
+            }
+        }
+
+        if (changed) {
+            saveLists();
+            console.log('Cleaned up legacy song IDs in lists');
+        }
+
+        localStorage.setItem('songbook-legacy-cleanup-done', '1');
+    } catch (e) {
+        console.error('Failed to cleanup legacy song IDs:', e);
+    }
+}
+
+/**
  * Migrate old favorites format (songbook-favorites) to new list-based format
  */
 function migrateOldFavorites() {
@@ -3376,6 +3446,12 @@ export function initLists(options) {
 
     // Migrate old favorites format to new list-based format
     migrateOldFavorites();
+
+    // Clean up legacy song IDs (async, runs in background)
+    cleanupLegacySongIds().then(() => {
+        renderSidebarLists();
+        updateFavoritesCount();
+    });
 
     renderSidebarLists();
     updateFavoritesCount();
