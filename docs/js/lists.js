@@ -923,18 +923,9 @@ export function loadLists() {
  * Converts old IDs like 'manofconstantsorrowlyricsandchords' to 'man-of-constant-sorrow'
  */
 async function cleanupLegacySongIds() {
-    // Check if cleanup already done
-    const cleanupDone = localStorage.getItem('songbook-legacy-cleanup-done');
+    // Check if cleanup already done (version 2 - uses mapping file properly)
+    const cleanupDone = localStorage.getItem('songbook-legacy-cleanup-v2');
     if (cleanupDone) return;
-
-    // Check if any lists have legacy IDs (quick check before loading mapping)
-    const hasLegacyIds = userLists.some(list =>
-        list.songs?.some(id => id.includes('lyricschords') || id.includes('lyricsandchords'))
-    );
-    if (!hasLegacyIds) {
-        localStorage.setItem('songbook-legacy-cleanup-done', '1');
-        return;
-    }
 
     try {
         // Load the legacy ID mapping
@@ -956,7 +947,7 @@ async function cleanupLegacySongIds() {
             const newSongs = [];
 
             for (const songId of list.songs) {
-                // Map to new ID if it's a legacy ID
+                // Map to new ID if it's a legacy ID (check mapping file)
                 const newId = mapping[songId] || songId;
 
                 // Only add if not already in the set (deduplication)
@@ -982,7 +973,7 @@ async function cleanupLegacySongIds() {
             console.log('Cleaned up legacy song IDs in lists');
         }
 
-        localStorage.setItem('songbook-legacy-cleanup-done', '1');
+        localStorage.setItem('songbook-legacy-cleanup-v2', '1');
     } catch (e) {
         console.error('Failed to cleanup legacy song IDs:', e);
     }
