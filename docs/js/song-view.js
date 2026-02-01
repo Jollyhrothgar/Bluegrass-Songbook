@@ -42,7 +42,8 @@ import {
 import { escapeHtml, isTabOnlyWork } from './utils.js';
 import {
     parseLineWithChords, extractChords, detectKey,
-    getSemitonesBetweenKeys, transposeChord, toNashville
+    getSemitonesBetweenKeys, transposeChord, toNashville,
+    CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
 } from './chords.js';
 import { updateListPickerButton, updateFavoriteButton } from './lists.js';
 import { renderTagBadges, getTagCategory, formatTagName } from './tags.js';
@@ -458,10 +459,8 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         setCurrentDetectedKey(detectedKey);
     }
 
-    // Ensure currentDetectedKey is valid for the available keys
-    const majorKeys = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'F', 'Bb', 'Eb', 'Ab', 'Db'];
-    const minorKeys = ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm'];
-    const availableKeys = originalDetectedMode === 'minor' ? minorKeys : majorKeys;
+    // Ensure currentDetectedKey is valid for the available chromatic keys
+    const availableKeys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
 
     if (!availableKeys.includes(currentDetectedKey)) {
         setCurrentDetectedKey(originalDetectedKey || detectedKey || availableKeys[0]);
@@ -530,10 +529,12 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     const title = metadata.title || song?.title || 'Unknown Title';
     const artist = metadata.artist || song?.artist || '';
     const composer = metadata.writer || metadata.composer || song?.composer || '';
-    const sourceUrl = song?.source === 'classic-country' && song?.id
-        ? `https://www.classic-country-song-lyrics.com/${song.id}.html`
+    // Link to classic-country home page (individual pages are often broken)
+    const sourceUrl = song?.source === 'classic-country'
+        ? 'https://www.classic-country-song-lyrics.com/'
         : null;
-    const bookDisplay = song?.book || null;
+    const bookDisplay = metadata.x_book || song?.book || null;
+    const bookUrl = metadata.x_book_url || song?.book_url || null;
 
     // Build key dropdown options
     const keyOptions = availableKeys.map(k => {
@@ -583,19 +584,32 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         infoItems.push(`<div class="info-item"><span class="info-label">Artists:</span> <span class="artists-list">${artistsHtml}</span></div>`);
     }
     if (bookDisplay) {
-        const bookUrl = song?.book_url || null;
         const bookHtml = bookUrl
             ? `<a href="${bookUrl}" target="_blank" rel="noopener">${escapeHtml(bookDisplay)}</a>`
             : escapeHtml(bookDisplay);
         infoItems.push(`<div class="info-item"><span class="info-label">From:</span> ${bookHtml}</div>`);
     }
 
-    // Source link for bottom of page
+    // Source attribution for bottom of page
     let sourceHtml = '';
+    const sourceDisplayNames = {
+        'classic-country': 'Classic Country Song Lyrics',
+        'golden-standard': 'Golden Standards Collection',
+        'tunearch': 'TuneArch.org',
+        'manual': 'Community Contribution',
+        'trusted-user': 'Community Contribution',
+        'pending': 'Community Contribution',
+        'banjo-hangout': 'Banjo Hangout'
+    };
     if (sourceUrl) {
-        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${escapeHtml(song.id)}</a></div>`;
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${sourceDisplayNames['classic-country']}</a></div>`;
+    } else if (song?.source === 'golden-standard' && bookUrl) {
+        const bookName = bookDisplay || 'Golden Standards Collection';
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${bookUrl}" target="_blank" rel="noopener">${escapeHtml(bookName)}</a></div>`;
     } else if (song?.tunearch_url) {
         sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${song.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a></div>`;
+    } else if (song?.source && sourceDisplayNames[song.source]) {
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> ${sourceDisplayNames[song.source]}</div>`;
     }
 
     // Tags with voting and "add your own" option

@@ -18,7 +18,7 @@ import {
 } from './state.js';
 
 import { parseChordPro, showVersionPicker } from './song-view.js';
-import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
+import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS, extractChords } from './chords.js';
 import { escapeHtml } from './utils.js';
 import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
 import { getTagCategory, formatTagName } from './tags.js';
@@ -32,6 +32,9 @@ let activePart = null;           // Currently displayed part { type, format, fil
 let availableParts = [];         // All parts for current work
 let trackRenderers = {};         // Map of trackId -> TabRenderer instance
 let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
+
+// Getter for checking if we're in work view
+export function getCurrentWork() { return currentWork; }
 
 // ============================================
 // NOTATION HELPERS
@@ -310,7 +313,7 @@ export async function openWork(workId, options = {}) {
     // This must happen before any state changes that trigger reactive re-renders
     setCurrentChordpro(null);
 
-    // Show the song view panel
+    // Show the song view panel (work view uses the same panel)
     setCurrentView('song');
 
     // Reset key tracking
@@ -649,23 +652,27 @@ function renderChordProPart(part, container) {
 
     setCurrentChordpro(content);
 
-    // Detect key
-    const { sections } = parseChordPro(content);
-    const allChords = [];
-    sections.forEach(section => {
-        section.lines.forEach(line => {
-            if (line.chords) {
-                line.chords.forEach(c => allChords.push(c.chord));
-            }
-        });
-    });
+    // Detect key - use work's key if available, otherwise detect from chords
+    const { metadata, sections } = parseChordPro(content);
+    let detectedKey = currentWork.key || null;
+    let detectedMode = currentWork.mode || null;
 
-    const detected = detectKey(allChords);
-    if (detected) {
-        setOriginalDetectedKey(detected.key);
-        setOriginalDetectedMode(detected.mode);
+    if (!detectedKey) {
+        // Extract chords using the correct method (regex from raw content)
+        const allChords = extractChords(content);
+        const detected = detectKey(allChords);
+        if (detected) {
+            detectedKey = detected.key;
+            detectedMode = detected.mode;
+        }
+    }
+
+    // Set the detected key as the original key
+    if (detectedKey) {
+        setOriginalDetectedKey(detectedKey);
+        setOriginalDetectedMode(detectedMode || 'major');
         if (!currentDetectedKey) {
-            setCurrentDetectedKey(detected.key);
+            setCurrentDetectedKey(detectedKey);
         }
     }
 
@@ -686,6 +693,40 @@ function renderChordProPart(part, container) {
     container.appendChild(contentArea);
 
     renderChordProContent(sections, contentArea);
+
+    // Add source attribution
+    const source = currentWork.source || part.provenance?.source;
+    if (source) {
+        const sourceDisplayNames = {
+            'classic-country': 'Classic Country Song Lyrics',
+            'golden-standard': 'Golden Standards Collection',
+            'tunearch': 'TuneArch.org',
+            'manual': 'Community Contribution',
+            'trusted-user': 'Community Contribution',
+            'pending': 'Community Contribution',
+            'banjo-hangout': 'Banjo Hangout'
+        };
+
+        const attribution = document.createElement('div');
+        attribution.className = 'song-source';
+
+        // Build URL for classic-country (link to home page, individual pages are often broken)
+        if (source === 'classic-country') {
+            const sourceUrl = 'https://www.classic-country-song-lyrics.com/';
+            attribution.innerHTML = `<span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${sourceDisplayNames[source]}</a>`;
+        } else if (source === 'golden-standard' && metadata?.x_book_url) {
+            const bookName = metadata.x_book || 'Golden Standards Collection';
+            attribution.innerHTML = `<span class="source-label">Source:</span> <a href="${metadata.x_book_url}" target="_blank" rel="noopener">${bookName}</a>`;
+        } else if (source === 'tunearch' && currentWork.tunearch_url) {
+            attribution.innerHTML = `<span class="source-label">Source:</span> <a href="${currentWork.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a>`;
+        } else if (sourceDisplayNames[source]) {
+            attribution.innerHTML = `<span class="source-label">Source:</span> ${sourceDisplayNames[source]}`;
+        }
+
+        if (attribution.innerHTML) {
+            container.appendChild(attribution);
+        }
+    }
 }
 
 /**

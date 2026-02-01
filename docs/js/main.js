@@ -41,7 +41,7 @@ import {
     updateSyncUI, reorderFavoriteItem
 } from './lists.js';
 import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
-import { openWork, renderWorkView } from './work-view.js';
+import { openWork, renderWorkView, getCurrentWork } from './work-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints } from './editor.js';
 import { escapeHtml } from './utils.js';
@@ -2136,13 +2136,31 @@ function init() {
     }
 
     function transposeBySemitone(direction) {
-        if (!currentDetectedKey || !originalDetectedKey) return;
+        if (!currentDetectedKey || !originalDetectedKey) {
+            return;
+        }
         const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
         const normalizedKey = normalizeKeyForChromatic(currentDetectedKey);
         const currentIndex = keys.indexOf(normalizedKey);
-        if (currentIndex === -1) return;
+        if (currentIndex === -1) {
+            return;
+        }
         const newIndex = (currentIndex + direction + keys.length) % keys.length;
-        setCurrentDetectedKey(keys[newIndex]);
+        const newKey = keys[newIndex];
+        setCurrentDetectedKey(newKey);
+
+        // Re-render based on whether we're viewing a work or song
+        const work = getCurrentWork();
+        if (work) {
+            renderWorkView();
+        } else {
+            const song = getCurrentSong();
+            const chordpro = getCurrentChordpro();
+            if (song && chordpro) {
+                renderSong(song, chordpro);
+            }
+        }
+        updateQuickControls();
     }
 
     function populateKeyDropdown() {
