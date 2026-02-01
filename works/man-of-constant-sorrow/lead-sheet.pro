@@ -2,7 +2,7 @@
 {meta: artist Soggy Bottom Boys}
 
 {start_of_verse: Verse 1}
-[G]I am a man of [G7]constant [C]sorrow
+[G]I am a man of constant [C]sorrow
 I've seen [D]trouble on my [G]days
 I bid farewell to old [C]Kentucky
 The place where I [D]was born and [G]raised 
