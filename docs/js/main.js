@@ -139,6 +139,7 @@ const userName = document.getElementById('user-name');
 const exportBtn = document.getElementById('export-btn');
 const exportDropdown = document.getElementById('export-dropdown');
 const editSongBtn = document.getElementById('edit-song-btn');
+const deleteSongBtn = document.getElementById('delete-song-btn');
 
 // Editor elements
 const editorPanel = document.getElementById('editor-panel');
@@ -406,6 +407,8 @@ function initViewSubscription() {
                 songView?.classList.remove('hidden');
                 editorPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
+                // Show delete button for admins
+                updateDeleteButtonVisibility();
                 break;
             case 'list':
                 searchContainer?.classList.remove('hidden');
@@ -978,6 +981,9 @@ async function loadIndex() {
 // AUTH UI
 // ============================================
 
+// Admin state (cached to avoid repeated RPC calls)
+let isAdminUser = false;
+
 function updateAuthUI(user) {
     if (user) {
         // Hide sign-in button, show user info
@@ -994,11 +1000,68 @@ function updateAuthUI(user) {
 
         updateSyncUI('syncing');
         performFullListsSync();
+
+        // Check admin status (async, updates UI when ready)
+        checkAdminStatus();
     } else {
         // Show sign-in button, hide user info
         signInBtn?.classList.remove('hidden');
         userInfo?.classList.add('hidden');
         updateSyncUI('offline');
+
+        // Clear admin status
+        isAdminUser = false;
+        deleteSongBtn?.classList.add('hidden');
+    }
+}
+
+// Check if current user is an admin and update UI
+async function checkAdminStatus() {
+    if (typeof SupabaseAuth !== 'undefined') {
+        isAdminUser = await SupabaseAuth.isAdmin();
+        // Update delete button visibility if currently viewing a song
+        updateDeleteButtonVisibility();
+    }
+}
+
+// Show/hide delete button based on admin status
+function updateDeleteButtonVisibility() {
+    if (deleteSongBtn) {
+        if (isAdminUser && currentView === 'song') {
+            deleteSongBtn.classList.remove('hidden');
+        } else {
+            deleteSongBtn.classList.add('hidden');
+        }
+    }
+}
+
+// Handle song deletion with confirmation
+async function handleDeleteSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    const confirmed = confirm(
+        `Are you sure you want to delete "${song.title}"?\n\n` +
+        `This will remove the song from the songbook permanently.\n` +
+        `(The change will take effect after the next index rebuild.)`
+    );
+
+    if (!confirmed) return;
+
+    try {
+        const { data, error } = await SupabaseAuth.deleteSong(song.id);
+        if (error) {
+            alert(`Failed to delete song: ${error.message}`);
+            return;
+        }
+
+        alert(`Song "${song.title}" has been marked for deletion.\n\nIt will be removed after the next index rebuild.`);
+
+        // Navigate back to search
+        goBack();
+    } catch (err) {
+        console.error('Error deleting song:', err);
+        alert(`Failed to delete song: ${err.message}`);
     }
 }
 
@@ -1875,6 +1938,9 @@ function init() {
             location.reload();
         }
     });
+
+    // Delete song button (admin only)
+    deleteSongBtn?.addEventListener('click', handleDeleteSong);
 
     // Manual sync button in account modal
     const forceSyncBtn = document.getElementById('force-sync-btn');

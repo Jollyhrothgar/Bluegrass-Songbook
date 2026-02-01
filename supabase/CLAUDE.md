@@ -36,6 +36,8 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `song_votes` - User votes for song versions
 - `visitor_stats` - Page view and unique visitor counts
 - `song_flag_counts` - Aggregated flag counts per song
+- `admin_users` - Admin users who can delete songs
+- `deleted_songs` - Soft-deleted songs (excluded from index at build time)
 
 ### Authentication
 
@@ -46,8 +48,30 @@ Google OAuth via Supabase Auth. User sessions managed by `supabase-auth.js` on f
 - `getUser()` - Returns current user (sync, from cache)
 - `isLoggedIn()` - Boolean check
 - `fetchUserLists()` - Get user's lists from database
+- `isAdmin()` - Check if current user is an admin (can delete songs)
+- `deleteSong(songId)` - Soft-delete a song (admin only)
 
 **Note:** `supabase-auth.js` is loaded as a regular script (NOT an ES module). Functions are exposed via `window.SupabaseAuth` object.
+
+### Admin Features
+
+Admin users can permanently delete songs from the songbook:
+
+1. Admin user IDs are stored in `admin_users` table (managed via service role)
+2. Delete button appears in song view for admins only
+3. Songs are soft-deleted to `deleted_songs` table
+4. Build process reads `docs/data/deleted_songs.json` and excludes those songs
+
+**To add an admin:**
+```sql
+-- Run with service role (e.g., in Supabase SQL editor)
+INSERT INTO admin_users (user_id) VALUES ('user-uuid-here');
+```
+
+**To sync deleted songs for build:**
+```bash
+./scripts/utility sync-deleted-songs
+```
 
 ## Row-Level Security (RLS)
 

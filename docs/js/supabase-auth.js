@@ -9,6 +9,7 @@ let supabaseClient = null;
 let currentUser = null;
 let isInitialized = false;
 let trustedUserCache = null;
+let adminUserCache = null;
 
 // Callbacks for state changes
 const onAuthChangeCallbacks = [];
@@ -120,9 +121,59 @@ async function isTrustedUser() {
     }
 }
 
+// Check if current user is an admin (can delete songs)
+async function isAdmin() {
+    if (!supabaseClient || !currentUser) return false;
+
+    // Return cached value if available
+    if (adminUserCache !== null) return adminUserCache;
+
+    try {
+        const { data, error } = await supabaseClient.rpc('is_admin');
+        if (error) {
+            console.error('Error checking admin status:', error);
+            return false;
+        }
+        adminUserCache = data === true;
+        return adminUserCache;
+    } catch (err) {
+        console.error('Error checking admin status:', err);
+        return false;
+    }
+}
+
+// Delete a song (admin only, soft delete)
+async function deleteSong(songId, reason = null) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('delete_song', {
+            p_song_id: songId,
+            p_reason: reason
+        });
+
+        if (error) {
+            console.error('Error deleting song:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error deleting song:', err);
+        return { data: null, error: err };
+    }
+}
+
 // Clear trusted user cache (called on auth state change)
 function clearTrustedUserCache() {
     trustedUserCache = null;
+    adminUserCache = null;
 }
 
 // ============================================
@@ -1223,6 +1274,8 @@ window.SupabaseAuth = {
     getUser,
     isLoggedIn,
     isTrustedUser,
+    isAdmin,
+    deleteSong,
     // Expose supabase client for direct access (e.g., pending_songs)
     get supabase() { return supabaseClient; },
     // Favorites

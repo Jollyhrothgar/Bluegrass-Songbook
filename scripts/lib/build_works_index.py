@@ -548,6 +548,18 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
         for work_id, error in errors:
             print(f"  {work_id}: {error}")
 
+    # Filter out soft-deleted songs
+    deleted_songs_file = Path('docs/data/deleted_songs.json')
+    if deleted_songs_file.exists():
+        with open(deleted_songs_file) as f:
+            deleted_songs = json.load(f)
+        if deleted_songs:
+            original_count = len(songs)
+            songs = [s for s in songs if s['id'] not in deleted_songs]
+            deleted_count = original_count - len(songs)
+            if deleted_count > 0:
+                print(f"Excluded {deleted_count} soft-deleted songs")
+
     # Copy tablature files to docs/data/tabs/
     tabs_dir = Path('docs/data/tabs')
     tabs_dir.mkdir(parents=True, exist_ok=True)

@@ -3484,6 +3484,17 @@ mark {
     background: var(--accent-hover);
 }
 
+.action-btn.delete-btn {
+    background: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+.action-btn.delete-btn:hover {
+    background: #c82333;
+    border-color: #bd2130;
+}
+
 .save-status {
     font-size: 0.85rem;
     color: var(--text-secondary);
