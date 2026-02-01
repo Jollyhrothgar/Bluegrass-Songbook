@@ -420,8 +420,7 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
     from tagging.grassiness import normalize_title, get_bluegrass_artists
     artist_tier_weights = get_bluegrass_artists()
 
-    # Prominence order for sorting (most famous bluegrass artists first within same tier)
-    # When tier weights are equal, use this as secondary sort key
+    # Prominence order for sorting (famous bluegrass founders first as tiebreaker)
     PROMINENCE_ORDER = {
         'Bill Monroe': 0,
         'Bill Monroe & His Blue Grass Boys': 1,
@@ -435,11 +434,23 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
         'Flatt and Scruggs': 9,
     }
 
-    def artist_sort_key(artist_name):
-        """Sort by tier weight (descending), then prominence, then alphabetically."""
-        tier_weight = artist_tier_weights.get(artist_name, 0)
-        prominence = PROMINENCE_ORDER.get(artist_name, 1000)  # Unknown = low priority
-        return (-tier_weight, prominence, artist_name.lower())
+    def artist_sort_key(artist_data):
+        """Sort by: earliest year first, then tier weight (descending), then prominence.
+
+        artist_data can be:
+        - dict with 'name' and 'year' keys (new format)
+        - string (old format, no year data)
+        """
+        if isinstance(artist_data, dict):
+            name = artist_data.get('name', '')
+            year = artist_data.get('year', 9999)
+        else:
+            name = artist_data
+            year = 9999
+
+        tier_weight = artist_tier_weights.get(name, 0)
+        prominence = PROMINENCE_ORDER.get(name, 1000)
+        return (year, -tier_weight, prominence, name.lower())
 
     scores_by_title = {}
     for data in scores.values():
@@ -499,15 +510,24 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
                 covering_artists_raw = scores_by_title[normalized].get('artists', [])
 
         if covering_artists_raw:
+            # Deduplicate by artist name
             seen = set()
             unique_artists = []
             for a in covering_artists_raw:
-                if a not in seen:
-                    seen.add(a)
+                # Handle both new format (dict) and old format (string)
+                name = a.get('name') if isinstance(a, dict) else a
+                if name and name not in seen:
+                    seen.add(name)
                     unique_artists.append(a)
-            # Sort by tier weight (descending), prominence (famous founders first), then alphabetically
+
+            # Sort by: earliest year, tier weight (desc), prominence, alphabetically
             unique_artists.sort(key=artist_sort_key)
-            song['covering_artists'] = unique_artists
+
+            # Extract just names for the index (frontend expects list of strings)
+            song['covering_artists'] = [
+                a.get('name') if isinstance(a, dict) else a
+                for a in unique_artists
+            ]
 
         # Remove excluded tags (from work.yaml exclude_tags field)
         exclude_tags = song.get('exclude_tags', [])
