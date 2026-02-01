@@ -979,6 +979,56 @@ async function cleanupLegacySongIds() {
     }
 }
 
+// Cache the legacy ID mapping to avoid repeated fetches
+let legacyIdMappingCache = null;
+
+/**
+ * Clean legacy song IDs from a list of lists (used after sync merge)
+ * Returns the cleaned lists array
+ */
+async function cleanLegacyIdsFromLists(lists) {
+    try {
+        // Load mapping if not cached
+        if (!legacyIdMappingCache) {
+            const response = await fetch('data/legacy_id_mapping.json');
+            if (!response.ok) return lists;
+            legacyIdMappingCache = await response.json();
+        }
+        const mapping = legacyIdMappingCache;
+
+        let anyChanged = false;
+
+        for (const list of lists) {
+            if (!list.songs || list.songs.length === 0) continue;
+
+            const seen = new Set();
+            const cleanSongs = [];
+
+            for (const songId of list.songs) {
+                const newId = mapping[songId] || songId;
+                if (!seen.has(newId)) {
+                    seen.add(newId);
+                    cleanSongs.push(newId);
+                }
+            }
+
+            if (cleanSongs.length !== list.songs.length) {
+                list.songs = cleanSongs;
+                anyChanged = true;
+            }
+        }
+
+        if (anyChanged) {
+            console.log('Cleaned legacy song IDs after sync merge');
+        }
+
+        return lists;
+    } catch (e) {
+        console.error('Failed to clean legacy IDs from lists:', e);
+        return lists;
+    }
+}
+
 /**
  * Migrate old favorites format (songbook-favorites) to new list-based format
  */
@@ -1354,6 +1404,9 @@ export async function performFullListsSync() {
 
         // Step 3: Process and deduplicate lists
         let processedLists = processCloudLists(merged);
+
+        // Step 3.5: Clean legacy song IDs from merged data
+        processedLists = await cleanLegacyIdsFromLists(processedLists);
 
         // Step 4: Re-filter for any lists deleted DURING the sync (race condition fix)
         if (deletedListIds.size > 0 || deletedListNames.size > 0) {
