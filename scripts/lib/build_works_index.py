@@ -320,20 +320,22 @@ def fuzzy_group_songs(songs: list) -> list:
     - "Angelene Baker" vs "Angeline Baker" (spelling variations)
     - Minor typos and OCR errors
 
+    IMPORTANT: To avoid false positives (merging different songs with similar titles),
+    we require BOTH title similarity AND lyrics similarity before merging.
+    Examples of songs that should NOT merge despite similar titles:
+    - "I Walk Alone" vs "I Walk The Line" (different lyrics)
+    - "Good Hearted Woman" vs "Good Hearted Man" (different songs)
+    - "Still Loving You" vs "Still Losing You" (different songs)
+
     Optimized to avoid O(n²) comparisons by grouping titles by prefix first.
     Uses rapidfuzz for faster matching if available, falls back to difflib.
     """
     import unicodedata
     from difflib import SequenceMatcher
 
-    # Try to use rapidfuzz for 10x faster string matching
-    try:
-        from rapidfuzz.fuzz import ratio as rapidfuzz_ratio
-        def similarity(a: str, b: str) -> float:
-            return rapidfuzz_ratio(a, b) / 100.0  # rapidfuzz returns 0-100
-    except ImportError:
-        def similarity(a: str, b: str) -> float:
-            return SequenceMatcher(None, a, b).ratio()
+    def similarity(a: str, b: str) -> float:
+        """Calculate similarity ratio between two strings."""
+        return SequenceMatcher(None, a, b).ratio()
 
     def normalize_for_fuzzy(text: str) -> str:
         """Normalize title for fuzzy comparison."""
@@ -353,9 +355,17 @@ def fuzzy_group_songs(songs: list) -> list:
         text = ' '.join(text.split())  # Normalize whitespace
         return text
 
-    def similarity(a: str, b: str) -> float:
-        """Calculate similarity ratio between two strings."""
-        return SequenceMatcher(None, a, b).ratio()
+    def normalize_lyrics(text: str) -> str:
+        """Normalize lyrics for comparison."""
+        if not text:
+            return ''
+        text = unicodedata.normalize('NFKD', text)
+        text = text.encode('ascii', 'ignore').decode('ascii')
+        text = text.lower()
+        # Remove punctuation and extra whitespace
+        text = re.sub(r'[^a-z0-9\s]', '', text)
+        text = ' '.join(text.split())
+        return text[:200]  # First 200 chars is enough to distinguish
 
     # Group songs by their current group_id
     by_group = {}
@@ -376,6 +386,14 @@ def fuzzy_group_songs(songs: list) -> list:
             title_to_groups[norm_title] = set()
         title_to_groups[norm_title].add(gid)
 
+    # Build group_id -> representative lyrics mapping (use first song's lyrics)
+    group_lyrics = {}
+    for song in songs:
+        gid = song.get('group_id', '')
+        if gid not in group_lyrics:
+            lyrics = song.get('lyrics', '') or song.get('first_line', '')
+            group_lyrics[gid] = normalize_lyrics(lyrics)
+
     # Group titles by their first 3 characters (prefix buckets)
     # This avoids O(n²) by only comparing within buckets
     prefix_buckets = {}
@@ -386,7 +404,8 @@ def fuzzy_group_songs(songs: list) -> list:
         prefix_buckets[prefix].append(title)
 
     merge_map = {}  # old_group_id -> new_group_id
-    SIMILARITY_THRESHOLD = 0.85  # 85% similarity required
+    TITLE_SIMILARITY_THRESHOLD = 0.85  # 85% title similarity required
+    LYRICS_SIMILARITY_THRESHOLD = 0.70  # 70% lyrics similarity also required
 
     # Only compare titles within the same prefix bucket
     for prefix, bucket_titles in prefix_buckets.items():
@@ -400,12 +419,36 @@ def fuzzy_group_songs(songs: list) -> list:
                 if abs(len1 - len2) > max(len1, len2) * 0.2:
                     continue
 
-                sim = similarity(title1, title2)
-                if sim >= SIMILARITY_THRESHOLD:
-                    # These titles should be grouped together
-                    groups1 = title_to_groups[title1]
-                    groups2 = title_to_groups[title2]
+                title_sim = similarity(title1, title2)
+                if title_sim < TITLE_SIMILARITY_THRESHOLD:
+                    continue
 
+                # Title is similar enough - now check lyrics
+                groups1 = title_to_groups[title1]
+                groups2 = title_to_groups[title2]
+
+                # Get representative lyrics for each group
+                # Check if ANY pair of groups have similar enough lyrics
+                should_merge = False
+                for g1 in groups1:
+                    lyrics1 = group_lyrics.get(g1, '')
+                    for g2 in groups2:
+                        lyrics2 = group_lyrics.get(g2, '')
+
+                        # If both have lyrics, require they're similar
+                        if lyrics1 and lyrics2:
+                            lyrics_sim = similarity(lyrics1, lyrics2)
+                            if lyrics_sim >= LYRICS_SIMILARITY_THRESHOLD:
+                                should_merge = True
+                                break
+                        # If one or both lack lyrics, allow merge for high title similarity
+                        elif title_sim >= 0.95:
+                            should_merge = True
+                            break
+                    if should_merge:
+                        break
+
+                if should_merge:
                     # Pick the canonical group_id (prefer the one with more songs)
                     all_groups = groups1 | groups2
                     canonical = max(all_groups, key=lambda g: len(by_group.get(g, [])))
