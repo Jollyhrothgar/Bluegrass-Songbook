@@ -419,6 +419,28 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
     scores = load_grassiness_scores()
     from tagging.grassiness import normalize_title, get_bluegrass_artists
     artist_tier_weights = get_bluegrass_artists()
+
+    # Prominence order for sorting (most famous bluegrass artists first within same tier)
+    # When tier weights are equal, use this as secondary sort key
+    PROMINENCE_ORDER = {
+        'Bill Monroe': 0,
+        'Bill Monroe & His Blue Grass Boys': 1,
+        'The Stanley Brothers': 2,
+        'Stanley Brothers': 3,
+        'Ralph Stanley': 4,
+        'Carter Stanley': 5,
+        'Lester Flatt': 6,
+        'Earl Scruggs': 7,
+        'Flatt & Scruggs': 8,
+        'Flatt and Scruggs': 9,
+    }
+
+    def artist_sort_key(artist_name):
+        """Sort by tier weight (descending), then prominence, then alphabetically."""
+        tier_weight = artist_tier_weights.get(artist_name, 0)
+        prominence = PROMINENCE_ORDER.get(artist_name, 1000)  # Unknown = low priority
+        return (-tier_weight, prominence, artist_name.lower())
+
     scores_by_title = {}
     for data in scores.values():
         norm_title = normalize_title(data.get('title', ''))
@@ -483,7 +505,8 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
                 if a not in seen:
                     seen.add(a)
                     unique_artists.append(a)
-            unique_artists.sort(key=lambda a: -artist_tier_weights.get(a, 0))
+            # Sort by tier weight (descending), prominence (famous founders first), then alphabetically
+            unique_artists.sort(key=artist_sort_key)
             song['covering_artists'] = unique_artists
 
         # Remove excluded tags (from work.yaml exclude_tags field)

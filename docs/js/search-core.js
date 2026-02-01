@@ -959,9 +959,17 @@ export function renderResults(songs, query) {
             ? `<span class="grassiness-badge" title="Bluegrass score: ${grassinessScore}">🎵 ${grassinessScore}</span>`
             : '';
 
-        // Covering artists display (clickable, shows first 2 + count)
+        // Use first covering artist as primary display (tier-sorted, most notable first)
         const coveringArtists = song.covering_artists || [];
-        const coveringDisplay = formatCoveringArtists(coveringArtists, song.artist);
+        const primaryArtist = coveringArtists.length > 0
+            ? coveringArtists[0]
+            : (song.artist || 'Unknown artist');
+
+        // Format remaining covering artists (skip first since it's now primary)
+        const coveringDisplay = formatCoveringArtists(
+            coveringArtists.slice(1),
+            primaryArtist
+        );
 
         // Add drag handle and draggable for list view
         const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
@@ -985,7 +993,7 @@ export function renderResults(songs, query) {
                 ${dragHandle}
                 <div class="result-main">
                     <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}${grassinessBadge}</div>
-                    <div class="result-artist">${highlightMatch(song.artist || 'Unknown artist', query)}</div>
+                    <div class="result-artist">${highlightMatch(primaryArtist, query)}</div>
                     ${coveringDisplay}
                     ${tagBadges ? `<div class="result-tags">${tagBadges}</div>` : ''}
                     <div class="result-preview">${song.first_line || ''}</div>
