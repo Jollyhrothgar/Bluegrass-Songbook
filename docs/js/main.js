@@ -453,14 +453,22 @@ const COLLECTION_ICONS = {
 };
 
 /**
+ * Get distinct song count (counts unique titles, case-insensitive)
+ * This matches the count shown in search results via showPopularSongs()
+ */
+function getDistinctSongCount() {
+    return new Set(allSongs.map(s => s.title?.toLowerCase())).size;
+}
+
+/**
  * Render collection cards on the landing page
  */
 function renderCollectionCards() {
     if (!collectionsGrid) return;
 
     const cards = COLLECTIONS.map(collection => {
-        // Count songs matching the query (or total for "all songs", or skip for tools)
-        const count = collection.isToolLink ? 0 : collection.isSearchLink ? allSongs.length : getCollectionSongCount(collection.query);
+        // Count songs matching the query (or distinct titles for "all songs", or skip for tools)
+        const count = collection.isToolLink ? 0 : collection.isSearchLink ? getDistinctSongCount() : getCollectionSongCount(collection.query);
         const icon = COLLECTION_ICONS[collection.id] || '🎵';
         const imageSrc = COLLECTION_IMAGES[collection.id];
 
