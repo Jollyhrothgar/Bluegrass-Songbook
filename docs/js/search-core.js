@@ -1075,8 +1075,8 @@ function setupResultEventListeners(resultsDiv) {
             e.stopPropagation();
             const artistName = coveringArtist.dataset.artist;
             if (artistName && searchInputEl) {
-                searchInputEl.value = `artist:"${artistName}"`;
-                search(`artist:"${artistName}"`);
+                searchInputEl.value = `artist:${artistName}`;
+                search(`artist:${artistName}`);
             }
             return;
         }
