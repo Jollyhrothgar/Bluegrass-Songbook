@@ -1966,7 +1966,8 @@ h1 {
     flex-shrink: 0;
 }
 
-/* Flag button */
+/* Edit/Work link button */
+.work-link-btn,
 .flag-btn {
     background: transparent;
     color: var(--text-secondary);
@@ -1976,8 +1977,11 @@ h1 {
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
 }
 
+.work-link-btn:hover,
 .flag-btn:hover {
     color: var(--accent);
     border-color: var(--accent);
@@ -5355,6 +5359,11 @@ body.fullscreen-mode .focus-header {
 
 .focus-nav-btn:hover {
     background: var(--bg-secondary);
+}
+
+/* Edit link in focus header */
+a.focus-nav-btn {
+    text-decoration: none;
 }
 
 .focus-nav-btn:disabled {

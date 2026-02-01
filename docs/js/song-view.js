@@ -828,6 +828,10 @@ export function renderSong(song, chordpro, isInitialRender = false) {
                 <span class="focus-title">${escapeHtml(title)}</span>
                 <span id="focus-position" class="focus-position"></span>
             </div>
+            <a href="#work/${song?.id || ''}" class="focus-nav-btn focus-edit-btn" title="Open work view to edit tags">
+                <span>📝</span>
+                <span class="focus-btn-label">Edit</span>
+            </a>
             <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
                 <span>⚙️</span>
                 <span class="focus-btn-label">Controls</span>
