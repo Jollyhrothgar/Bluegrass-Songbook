@@ -234,6 +234,9 @@ function pushHistoryState(view, data = {}, replace = false) {
                 hash = `#work/${data.songId}`;
             }
             break;
+        case 'edit':
+            hash = `#edit/${data.songId}`;
+            break;
         case 'add-song':
             hash = '#add';
             break;
@@ -285,6 +288,17 @@ function handleHistoryNavigation(state) {
         case 'song':
             if (state.songId) {
                 openSongFromHistory(state.songId);
+            }
+            break;
+        case 'edit':
+            if (state.songId) {
+                // Re-enter edit mode for the song
+                const song = allSongs.find(s => s.id === state.songId);
+                if (song) {
+                    enterEditMode(song, { fromHistory: true });
+                } else {
+                    showView('search');
+                }
             }
             break;
         case 'add-song':
@@ -636,6 +650,18 @@ function handleDeepLink() {
         trackDeepLink('add', hash);
         showView('add-song');
         pushHistoryState('add-song', {}, true);
+        return true;
+    } else if (hash.startsWith('#edit/')) {
+        const songId = hash.slice(6);
+        trackDeepLink('edit', hash);
+        const song = allSongs.find(s => s.id === songId);
+        if (song) {
+            enterEditMode(song, { fromDeepLink: true });
+            pushHistoryState('edit', { songId }, true);
+        } else {
+            // Song not found, go to search
+            showView('search');
+        }
         return true;
     } else if (hash === '#request-song') {
         trackDeepLink('request-song', hash);
@@ -2474,6 +2500,12 @@ function init() {
     // Handle hash changes that don't trigger popstate (e.g. manual URL edits)
     window.addEventListener('hashchange', () => {
         handleHistoryNavigation(history.state);
+    });
+
+    // Handle editor history push (from editor.js to avoid circular imports)
+    window.addEventListener('editor-push-history', (e) => {
+        const { view, songId } = e.detail;
+        pushHistoryState(view, { songId });
     });
 
     // Initialize Supabase auth

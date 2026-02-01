@@ -61,8 +61,14 @@ let songViewEl = null;
 
 /**
  * Enter edit mode for an existing song
+ * @param {object} song - The song object to edit
+ * @param {object} options - Options for edit mode
+ * @param {boolean} options.fromHistory - True if called from history navigation (don't push history)
+ * @param {boolean} options.fromDeepLink - True if called from deep link (don't push history)
  */
-export function enterEditMode(song) {
+export function enterEditMode(song, options = {}) {
+    const { fromHistory = false, fromDeepLink = false } = options;
+
     setEditMode(true);
     setEditingSongId(song.id);
     trackEditor('edit', song.id);
@@ -91,6 +97,15 @@ export function enterEditMode(song) {
     if (resultsDivEl) resultsDivEl.classList.add('hidden');
     if (songViewEl) songViewEl.classList.add('hidden');
     if (editorPanelEl) editorPanelEl.classList.remove('hidden');
+
+    // Push history state (unless coming from history navigation or deep link)
+    if (!fromHistory && !fromDeepLink) {
+        // Import pushHistoryState dynamically to avoid circular dependency
+        // Dispatch a custom event that main.js listens for
+        window.dispatchEvent(new CustomEvent('editor-push-history', {
+            detail: { view: 'edit', songId: song.id }
+        }));
+    }
 
     // Trigger preview update
     updateEditorPreview();
