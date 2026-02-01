@@ -2,6 +2,19 @@
   "_comment": "Auto-generated from trusted user tag votes. Do not edit manually.",
   "_source": "scripts/lib/fetch_tag_overrides.py",
   "exclude": {
-    "orange-blossom-special": ["BluegrassStandard"]
+    "blue-suede-shoes": [
+      "Gospel"
+    ],
+    "hold-me-2": [
+      "Bluegrass"
+    ],
+    "silent-night": [
+      "Bluegrass",
+      "BluegrassStandard"
+    ],
+    "white-christmas": [
+      "Jazz",
+      "Bluegrass"
+    ]
   }
 }

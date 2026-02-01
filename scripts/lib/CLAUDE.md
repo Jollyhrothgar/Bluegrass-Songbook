@@ -65,6 +65,8 @@ scripts/lib/
 ├── chord_counter.py      # Chord statistics utility
 ├── loc_counter.py        # Lines of code counter for analytics
 ├── export_genre_suggestions.py  # Export genre suggestions for review
+├── batch_tag_songs.py    # Batch tag songs using Claude API
+├── fetch_tag_overrides.py # Fetch trusted user tag votes from Supabase
 └── tagging/              # Song-level tagging system
     ├── CLAUDE.md         # Detailed docs for grassiness scoring
     ├── build_artist_database.py  # Build curated bluegrass artist database
@@ -385,42 +387,59 @@ Tags are added to songs during index build via `tag_enrichment.py`.
 | **Vibe** | JamFriendly, Modal, Jazzy |
 | **Structure** | Instrumental, Waltz |
 
-### Tag Sources
+### Tag Sources (Priority Order)
 
-1. **MusicBrainz artist tags** - Genre tags from crowdsourced artist data
+1. **LLM tags** (primary) - Genre tags from Claude batch API (`llm_tags.json`)
 2. **Harmonic analysis** - Vibe tags computed from chord content:
    - `JamFriendly`: ≤5 unique chords, has I-IV-V, no complex extensions
    - `Modal`: Has bVII chord (e.g., F in key of G)
    - `Jazzy`: Has 7th, 9th, dim, aug, or slash chords
+3. **MusicBrainz artist tags** (fallback) - Only used if LLM tags unavailable
+4. **Trusted user overrides** - Downvotes from trusted users exclude bad tags
 
 ### Data Files
 
 | File | Purpose |
 |------|---------|
-| `docs/data/artist_tags.json` | Cached MusicBrainz artist tags (checked into git) |
-| `docs/data/tags.json` | Song-level tag cache |
+| `docs/data/llm_tags.json` | LLM-generated tags (primary source, checked into git) |
+| `docs/data/tag_overrides.json` | Trusted user tag exclusions (checked into git) |
+| `docs/data/artist_tags.json` | Cached MusicBrainz artist tags (fallback) |
 
 ### Build Workflow
 
-Tags are applied automatically during every index build (local and CI):
+Tags are applied automatically during every index build:
 
 | Where | What happens |
 |-------|--------------|
-| **Local or CI** | `build_index.py` reads `artist_tags.json` → applies genre tags |
+| **Local or CI** | `tag_enrichment.py` reads `llm_tags.json` → applies genre tags |
 | **Local or CI** | Harmonic analysis runs → applies vibe tags (JamFriendly, Modal) |
-| **Local only** | `refresh-tags` queries MusicBrainz → updates `artist_tags.json` |
+| **Local or CI** | `tag_overrides.json` exclusions remove bad tags |
 
-**Normal flow**: Just push `.pro` files. CI rebuilds index with tags from cached `artist_tags.json`.
+**Normal flow**: LLM tags are pre-computed and checked into git. CI uses them directly.
 
-**Adding new artists**: If songs have artists not in `artist_tags.json`, run locally:
+**Re-tagging all songs** (local only, requires Anthropic API key):
 
 ```bash
-# Requires local MusicBrainz database on port 5440
-./scripts/utility refresh-tags
-git add docs/data/artist_tags.json && git commit -m "Refresh artist tags"
+# Submit batch job (takes ~2 hours to process)
+uv run python scripts/lib/batch_tag_songs.py
+
+# Check status
+uv run python scripts/lib/batch_tag_songs.py --status <batch_id>
+
+# Fetch results when complete
+uv run python scripts/lib/batch_tag_songs.py --results <batch_id>
+
+# Rebuild index and commit
+./scripts/bootstrap --quick
+git add docs/data/llm_tags.json && git commit -m "Refresh LLM tags"
 ```
 
-This updates the cache, which CI then uses for future builds.
+**Syncing trusted user votes** (local only, requires Supabase credentials):
+
+```bash
+./scripts/utility sync-tag-votes
+git add docs/data/tag_overrides.json && git commit -m "Sync tag overrides"
+```
 
 ### query_artist_tags.py
 

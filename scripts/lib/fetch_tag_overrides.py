@@ -40,13 +40,6 @@ def fetch_tag_overrides():
     try:
         client = create_client(supabase_url, supabase_key)
 
-        # Query: get all downvotes (vote_value = -1) from trusted users
-        response = client.rpc('get_trusted_tag_overrides').execute()
-
-        if response.data:
-            return response.data
-
-        # Fallback: direct query if RPC doesn't exist
         # Get trusted user IDs
         trusted_response = client.table('trusted_users').select('user_id').execute()
         trusted_ids = [r['user_id'] for r in trusted_response.data]
