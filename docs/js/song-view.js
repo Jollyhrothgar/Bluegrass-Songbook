@@ -828,10 +828,10 @@ export function renderSong(song, chordpro, isInitialRender = false) {
                 <span class="focus-title">${escapeHtml(title)}</span>
                 <span id="focus-position" class="focus-position"></span>
             </div>
-            <a href="#work/${song?.id || ''}" class="focus-nav-btn focus-edit-btn" title="Open work view to edit tags">
-                <span>📝</span>
-                <span class="focus-btn-label">Edit</span>
-            </a>
+            <button id="focus-goto-song-btn" class="focus-nav-btn" title="View full song page">
+                <span>🎵</span>
+                <span class="focus-btn-label">Go to Song</span>
+            </button>
             <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
                 <span>⚙️</span>
                 <span class="focus-btn-label">Controls</span>
@@ -1224,6 +1224,19 @@ function setupRenderOptionsListeners(song, chordpro) {
     if (focusExitBtn) {
         focusExitBtn.addEventListener('click', () => {
             exitFullscreen();
+        });
+    }
+
+    const focusGotoSongBtn = document.getElementById('focus-goto-song-btn');
+    if (focusGotoSongBtn) {
+        focusGotoSongBtn.addEventListener('click', () => {
+            // Exit focus mode and navigate to work view
+            setFullscreenMode(false);
+            document.body.classList.remove('fullscreen-mode');
+            document.body.classList.remove('has-list-context');
+            setListContext(null);
+            // Navigate to work view
+            window.location.hash = `#work/${song?.id || ''}`;
         });
     }
 
