@@ -1,53 +1,59 @@
 {meta: title Will The Circle Be Unbroken}
 {meta: artist Eddy Arnold}
 {meta: composer A.P. Carter}
-{meta: x_source classic-country}
-{meta: x_source_file willthecirclebeunbrokenlyricsandchords.pro}
-{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
-[G]There are loved ones in the glory
-Who's dear [C]forms you often [G]miss
-[D7]When you [G]close your earthly story
-Will you [A7]join them in their [D7]bliss
+[G]I was standing by my window
+On a [C]cold and cloudy [G]day
+When I [G]saw that hearse come rolling
+For to carry [D]my mother [G]away.
 {end_of_verse}
 
+{start_of_chorus}
+[G]Will the circle be unbroken
+By and [C]by Lord, by and [G]by,
+There's a better world home a-waiting
+In the sky Lord, [D]in the [G]sky.
+{end_of_chorus}
+
 {start_of_verse: Verse 2}
-Will the [G]circle be un[G7]broken
-By and [C]by  by and [G]by
-[D7]In a [G]better home awaiting
-In the sky Lord [D7]in the [G]sky
+[G]Lord, I told that undertaker,
+Under[C]taker please drive [G]slow
+For this [G]body that you are hauling
+Lord, I hate to [D]see her [G]go.
 {end_of_verse}
+
+{start_of_chorus}
+[G]Will the circle be unbroken
+By and [C]by Lord, by and [G]by,
+There's a [G]better world home a-waiting
+In the sky Lord, [D]in the [G]sky.
+{end_of_chorus}
 
 {start_of_verse: Verse 3}
-In the joyous days of childhood
-Oft they [C]told of wondrous [G]love
-[D7]Pointed [G]to the dying Savior
-Now they [A7]dwell with Him [D7]above
+[G]I followed close behind her
+Tried to [C]hold up and be [G]brave
+But I [G]could not hide my sorrow
+When they laid her [D]in the [G]grave.
 {end_of_verse}
 
-{start_of_verse: Verse 2}
-Will the [G]circle be un[G7]broken
-By and [C]by  by and [G]by
-[D7]In a [G]better home awaiting
-In the sky Lord [D7]in the [G]sky
-{end_of_verse}
+{start_of_chorus}
+[G]Will the circle be unbroken
+By and [C]by Lord, by and [G]by,
+There's a [G]better world home a-waiting
+In the sky Lord, [D]in the [G]sky.
+{end_of_chorus}
 
 {start_of_verse: Verse 4}
-You can picture happy gatherings
-Round the [C]fireside long [G]ago
-[D7]And you [G]think of tearful partings
-When they [A7]left you here [D7]below
+[G]I went home, my home was lonely
+Now my [C]mother she was [G]gone
+All my [G]brothers, sisters crying
+What a home so [D]sad and a[G]lone
 {end_of_verse}
 
-{start_of_verse: Verse 2}
-Will the [G]circle be un[G7]broken
-By and [C]by  by and [G]by
-[D7]In a [G]better home awaiting
-In the sky Lord [D7]in the [G]sky
-{end_of_verse}
-
-
-
-
-
+{start_of_chorus}
+[G]Will the circle be unbroken
+By and [C]by Lord, by and [G]by,
+There's a [G]better world home a-waiting
+In the sky Lord, [D]in the [G]sky.
+{end_of_chorus}
