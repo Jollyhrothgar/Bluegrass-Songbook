@@ -7,7 +7,7 @@ import {
     editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
 import { escapeHtml } from './utils.js';
-import { extractChords, detectKey, toNashville } from './chords.js';
+import { extractChords, detectKey, toNashville, transposeChord } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
 
 /**
@@ -51,6 +51,9 @@ let hintsPanelEl = null;
 let hintsBackdropEl = null;
 let hintsCloseEl = null;
 let autoDetectCheckboxEl = null;
+let editorTransposeUpEl = null;
+let editorTransposeDownEl = null;
+let editorKeyDisplayEl = null;
 
 // Other DOM references
 let navSearchEl = null;
@@ -451,6 +454,23 @@ export function editorDetectAndConvert(text) {
 }
 
 /**
+ * Transpose all chords in the content by a number of semitones
+ * Handles both inline [chord] format and standalone chords
+ */
+export function editorTransposeContent(content, semitones) {
+    if (semitones === 0) return content;
+
+    // Regex to match chords in [brackets]
+    const bracketChordRegex = /\[([A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?)\]/g;
+
+    // Transpose all bracketed chords
+    return content.replace(bracketChordRegex, (match, chord) => {
+        const transposed = transposeChord(chord, semitones);
+        return `[${transposed}]`;
+    });
+}
+
+/**
  * Parse editor content into sections
  */
 function editorParseContent(content) {
@@ -554,6 +574,11 @@ export function updateEditorPreview() {
     const chords = extractChords(content);
     const { key } = detectKey(chords);
     editorDetectedKey = key;
+
+    // Update key display
+    if (editorKeyDisplayEl) {
+        editorKeyDisplayEl.textContent = key ? `Key: ${key}` : 'Key: ?';
+    }
 
     const sections = editorParseContent(content);
 
@@ -673,6 +698,9 @@ export function initEditor(options) {
         hintsBackdrop,
         hintsClose,
         autoDetectCheckbox,
+        editorTransposeUp,
+        editorTransposeDown,
+        editorKeyDisplay,
         navSearch,
         navAddSong,
         navFavorites,
@@ -699,6 +727,9 @@ export function initEditor(options) {
     hintsBackdropEl = hintsBackdrop;
     hintsCloseEl = hintsClose;
     autoDetectCheckboxEl = autoDetectCheckbox;
+    editorTransposeUpEl = editorTransposeUp;
+    editorTransposeDownEl = editorTransposeDown;
+    editorKeyDisplayEl = editorKeyDisplay;
     navSearchEl = navSearch;
     navAddSongEl = navAddSong;
     navFavoritesEl = navFavorites;
@@ -791,6 +822,25 @@ export function initEditor(options) {
     if (autoDetectCheckboxEl) {
         autoDetectCheckboxEl.addEventListener('change', (e) => {
             autoDetectFormat = e.target.checked;
+        });
+    }
+
+    // Transpose buttons
+    if (editorTransposeUpEl) {
+        editorTransposeUpEl.addEventListener('click', () => {
+            if (editorContentEl) {
+                editorContentEl.value = editorTransposeContent(editorContentEl.value, 1);
+                updateEditorPreview();
+            }
+        });
+    }
+
+    if (editorTransposeDownEl) {
+        editorTransposeDownEl.addEventListener('click', () => {
+            if (editorContentEl) {
+                editorContentEl.value = editorTransposeContent(editorContentEl.value, -1);
+                updateEditorPreview();
+            }
         });
     }
 

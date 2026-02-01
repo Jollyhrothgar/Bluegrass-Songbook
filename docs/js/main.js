@@ -161,6 +161,9 @@ const hintsPanel = document.getElementById('chordpro-hints-panel');
 const hintsBackdrop = document.getElementById('chordpro-hints-backdrop');
 const hintsClose = document.getElementById('chordpro-hints-close');
 const autoDetectCheckbox = document.getElementById('editor-auto-detect');
+const editorTransposeUp = document.getElementById('editor-transpose-up');
+const editorTransposeDown = document.getElementById('editor-transpose-down');
+const editorKeyDisplay = document.getElementById('editor-key-display');
 
 // Tag dropdown
 const tagDropdownBtn = document.getElementById('tag-dropdown-btn');
@@ -1891,6 +1894,9 @@ function init() {
         hintsBackdrop,
         hintsClose,
         autoDetectCheckbox,
+        editorTransposeUp,
+        editorTransposeDown,
+        editorKeyDisplay,
         navSearch,
         navAddSong,
         navFavorites,
