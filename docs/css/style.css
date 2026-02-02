@@ -2044,6 +2044,90 @@ h1 {
     font-size: 0.875rem;
 }
 
+/* Super-user request modal */
+.superuser-modal-content {
+    max-width: 500px;
+}
+
+.superuser-intro {
+    margin-bottom: 1.5rem;
+}
+
+.superuser-intro p {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-secondary);
+}
+
+.superuser-intro p:first-child {
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.superuser-responsibilities {
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.superuser-responsibilities p {
+    margin: 0 0 0.75rem 0;
+}
+
+.superuser-responsibilities ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.superuser-responsibilities li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.superuser-reason-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.superuser-confirm-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.superuser-confirm-label input[type="checkbox"] {
+    margin-top: 0.2rem;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.superuser-confirm-label span {
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+/* Super-user prompt link in editor */
+.superuser-prompt {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.superuser-prompt-link {
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.superuser-prompt-link:hover {
+    text-decoration: underline;
+}
+
 /* Toast notification */
 .toast {
     position: fixed;

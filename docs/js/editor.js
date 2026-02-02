@@ -9,6 +9,8 @@ import {
 import { escapeHtml } from './utils.js';
 import { extractChords, detectKey, toNashville, transposeChord } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
+// Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
+import { openSuperUserRequestModal } from './superuser-request.js';
 
 /**
  * Get the submitter attribution for issue body.
@@ -1035,10 +1037,11 @@ async function submitAsTrustedUser(data) {
             editorStatusEl.className = 'save-status success';
         }
 
-        // Navigate to the song after a brief delay
-        setTimeout(() => {
-            window.location.hash = `#work/${slug}`;
-        }, 500);
+        // Refresh the song index to include our new pending song, then navigate
+        if (window.refreshPendingSongs) {
+            await window.refreshPendingSongs();
+        }
+        window.location.hash = `#work/${slug}`;
 
     } catch (error) {
         console.error('Save error:', error);
@@ -1134,8 +1137,29 @@ async function submitToGitHubIssue(data) {
         trackSubmission(editMode ? 'correction' : 'new_song');
 
         if (editorStatusEl) {
-            editorStatusEl.innerHTML = `Submitted! <a href="${result.issueUrl}" target="_blank">View issue #${result.issueNumber}</a>`;
+            // Show success message with link to issue and super-user prompt
+            const user = window.SupabaseAuth?.getUser?.();
+            let statusHtml = `Submitted! <a href="${result.issueUrl}" target="_blank">View issue #${result.issueNumber}</a>`;
+
+            // Only show super-user prompt if user is logged in
+            if (user) {
+                statusHtml += `
+                    <div class="superuser-prompt">
+                        Want instant edits next time?
+                        <span class="superuser-prompt-link" id="superuser-prompt-link">Request Super-User access</span>
+                    </div>`;
+            }
+
+            editorStatusEl.innerHTML = statusHtml;
             editorStatusEl.className = 'save-status success';
+
+            // Wire up super-user prompt click
+            const promptLink = document.getElementById('superuser-prompt-link');
+            if (promptLink) {
+                promptLink.addEventListener('click', () => {
+                    openSuperUserRequestModal();
+                });
+            }
         }
 
         if (editMode) {

@@ -49,6 +49,7 @@ import { showListPicker, closeListPicker, updateTriggerButton } from './list-pic
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
 import { initFlags, openFlagModal } from './flags.js';
+import { initSuperUserRequest } from './superuser-request.js';
 import { initSongRequest, openSongRequestModal } from './song-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
 
@@ -1006,6 +1007,61 @@ async function loadIndex() {
     }
 }
 
+/**
+ * Refresh pending songs from Supabase and merge into allSongs.
+ * Call this after a trusted user saves edits to ensure the song
+ * is available immediately for navigation.
+ * Note: Exposed on window for editor.js to avoid circular import.
+ */
+async function refreshPendingSongs() {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) return;
+
+    try {
+        const { data, error } = await supabase
+            .from('pending_songs')
+            .select('*');
+
+        if (error || !data) {
+            console.warn('Could not refresh pending songs:', error);
+            return;
+        }
+
+        const pendingSongs = data.map(transformPendingToIndexFormat);
+
+        // Get current static songs (those not from pending source)
+        const currentSongs = allSongs.filter(s => s.source !== 'pending');
+
+        // Merge: pending corrections replace static songs with same ID
+        const replacedIds = new Set(
+            pendingSongs.filter(s => s.replaces_id).map(s => s.replaces_id)
+        );
+        const filteredStatic = currentSongs.filter(s => !replacedIds.has(s.id));
+        const songs = [...filteredStatic, ...pendingSongs];
+
+        setAllSongs(songs);
+
+        // Rebuild song groups for version detection
+        const groups = {};
+        songs.forEach(song => {
+            if (song.group_id) {
+                if (!groups[song.group_id]) groups[song.group_id] = [];
+                groups[song.group_id].push(song);
+            }
+        });
+        setSongGroups(groups);
+
+        if (pendingSongs.length > 0) {
+            console.log(`Refreshed: ${pendingSongs.length} pending song(s) merged`);
+        }
+    } catch (e) {
+        console.warn('Error refreshing pending songs:', e);
+    }
+}
+
+// Expose refreshPendingSongs on window for editor.js (avoids circular import)
+window.refreshPendingSongs = refreshPendingSongs;
+
 // ============================================
 // AUTH UI
 // ============================================
@@ -1801,6 +1857,9 @@ function init() {
 
     // Initialize flags module
     initFlags();
+
+    // Initialize super-user request module
+    initSuperUserRequest();
 
     // Initialize song request module
     initSongRequest();

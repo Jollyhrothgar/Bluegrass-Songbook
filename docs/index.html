@@ -664,6 +664,47 @@ This is the [G]chorus [D]part
 
         <!-- Toast notification -->
         <div id="flag-toast" class="toast hidden"></div>
+
+        <!-- Super-User Request Modal -->
+        <div id="superuser-modal" class="modal hidden">
+            <div class="modal-content superuser-modal-content">
+                <div class="modal-header">
+                    <h2>Request Super-User Access</h2>
+                    <button id="superuser-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="superuser-intro">
+                        <p><strong>With great power comes great responsibility.</strong></p>
+                        <p>Super-users can make instant edits to songs. Changes appear immediately and are auto-committed to the songbook.</p>
+                    </div>
+
+                    <div class="superuser-responsibilities">
+                        <p><strong>As a super-user, you agree to:</strong></p>
+                        <ul>
+                            <li>Make accurate, helpful corrections</li>
+                            <li>Respect the original artists and songs</li>
+                            <li>Not vandalize or submit inappropriate content</li>
+                            <li>Help maintain the quality of the songbook</li>
+                        </ul>
+                    </div>
+
+                    <label for="superuser-reason" class="superuser-reason-label">Why do you want super-user access? (optional)</label>
+                    <textarea id="superuser-reason" placeholder="E.g., 'I'm a musician who regularly contributes corrections...'"></textarea>
+
+                    <label class="superuser-confirm-label">
+                        <input type="checkbox" id="superuser-confirm">
+                        <span>I understand and accept these responsibilities</span>
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <button id="superuser-cancel" class="action-btn">Cancel</button>
+                    <button id="superuser-submit" class="action-btn primary" disabled>Submit Request</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Super-user toast notification -->
+        <div id="superuser-toast" class="toast hidden"></div>
     </div>
 
     <script src="js/supabase-auth.js"></script>
