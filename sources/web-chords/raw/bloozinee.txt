@@ -1,0 +1,164 @@
+# title: Bloozinee
+# source_url: https://tabs.ultimate-guitar.com/tab/alex-warren/bloodline-chords-5786498
+# fetched_at: 2026-02-01 21:50:13
+
+[Chords]
+ 
+|Intro|Verse|Pre-Chorus|    |Chorus|Bridge|Outro|
+------------------------    ---------------------
+Em:   022000                Em7:      022033
+C:    x32010                Cadd9:    x32033
+D:    xx0232                G:        320033
+Am:   x02210                Dsus4/F#: 2x0233
+B7:   x21202                Dsus4:    xx0233
+ 
+Note: For beginner-friendly chords throughout the tab you could also
+      select the "Simplify" button
+ 
+N.C. = No chords played
+* = Strum once
+ 
+** = Picking pattern for the chord below :
+ 
+   B7
+e|------------|
+B|-------0--x-|
+G|-------2--x-|
+D|----1-----x-|
+A|-2--------x-|
+E|------------|
+ 
++ You can play the suggested strumming pattern or
+  the finger picking pattern below :
+ 
+[Intro Picking Pattern]
+ 
+   Em
+e|--------------------|---------------|-------------------|
+B|----0---------0---0-|---------0---0-|---------0---0---0-|
+G|--------------------|------0--------|------0------------|
+D|-2-----0h2-2----2---|-0h2-------2---|-0h2-------2-------|
+A|--------------------|---------------|---------------2---|
+E|--------------------|---------------|-------------------|
+ 
+[Verse and Pre-Chorus Picking Pattern]
+ 
++ For the updated Verse and Pre-Chorus picking pattern,
+  please check out my detailed TABS page :
+  https://tabs.ultimate-guitar.com/tab/alex-warren/bloodline-tabs-5814749
+ 
+[Intro]
+Em
+ 
+[Verse 1]
+Em
+Take that pain, pass it down, like bottles on the wall
+Em
+Mama said her dad's to blame but that's his daddy's fault
+C           D                          Em
+Oh oh oh oh oh, there's no one left to call
+Em
+You say you're countin' down the days 'til you make your escape
+Em
+But you're afraid you can't outrun what's runnin' through your veins
+C           D                       Em
+Oh oh oh oh oh, you're carrying the weight
+ 
+[Pre-Chorus]
+Am               C                     Em
+  In the dead of night, on that broken road
+                B7**
+I won't let you walk alone
+ 
+[Chorus]
+Em7    Cadd9
+Oh, my brother
+G                 Dsus4/F#       Em7      Cadd9 G Dsus4/F#
+You don't have to follow in your bloodline_______
+       Em7      Cadd9
+Oh, we got each other
+    G               Dsus4/F#      Em7       Cadd9 G
+And if you got tomorrow, then you still got time
+   Dsus4/F#  Em7        Cadd9    G
+To break the chain that left you scarred
+     Dsus4/F#  Em7        Cadd9   G* Dsus4* Cadd9* Em7*
+From where you camе isn't who you are_________________
+Em7    Cadd9
+Oh, my brother
+G                 Dsus4/F#       Em7      Cadd9 G
+You don't have to follow in your bloodline_______
+ 
+[Verse 2]
+Em
+Oh, I won't pretend that I know half the hell you see
+Em
+That don't mean that's somethin' that you're destined to repeat
+C           D                            Em
+Oh oh oh oh oh, you're stronger than you think
+Em
+You know it has to end, but you don't know where to start?
+Em
+You can pack your bags, and I'll meet you where you are
+C           D                          Em
+Oh oh oh oh oh, I'll be waiting in the car
+ 
+[Pre-Chorus]
+Am             C                     Em
+In the dead of night, on that broken road
+                B7**
+I won't let you walk alone
+ 
+[Chorus]
+Em7    Cadd9
+Oh, my brother
+G                 Dsus4/F#       Em7      Cadd9 G Dsus4/F#
+You don't have to follow in your bloodline_______
+       Em7      Cadd9
+Oh, we got each other
+    G               Dsus4/F#      Em7       Cadd9 G
+And if you got tomorrow, then you still got time
+   Dsus4/F#  Em7        Cadd9    G
+To break the chain that left you scarred
+     Dsus4/F#  Em7        Cadd9   G* Dsus4* Cadd9* Em7*
+From where you camе isn't who you are_________________
+Em7    Cadd9
+Oh, my brother
+G                 Dsus4/F#       Em7      Cadd9 G
+You don't have to follow in your bloodline_______
+ 
+[Bridge]
+Cadd9                          Dsus4/F#
+The storm keeps on raging, but don't you forget
+G         Dsus4/F#      Em7 Dsus4* G*
+God's not done with you yet_________
+Cadd9                                Dsus4/F#
+When it feels like you're losing the war in your head
+     G          Dsus4/F#  Em7* Dsus4* Cadd9* Em7*
+Just know, this isn't the end___________________
+ 
+[Outro]
+Em7*   Cadd9*
+Oh, my brother
+G*  N.C.                         Em7      Cadd9 G Dsus4/F#
+You don't have to follow in your bloodline     (In your bloodline)
+       Em7      Cadd9
+Oh, we got each other
+    G               Dsus4/F#      Em7       Cadd9 G
+And if you got tomorrow, then you still got time (You still got time)
+   Dsus4/F#  Em7        Cadd9    G
+To break the chain that left you scarred
+     Dsus4/F#  Em7        Cadd9   G*  Dsus4* Cadd9* Em7*
+From where you camе isn't who you are__________________
+Em7    Cadd9
+Oh, my brother
+G                 Dsus4/F#       Em7       Cadd9 G
+You don't have to follow in your bloodline________
+ 
+************************************
+ 
+| h   Hammer-on
+| x   Mute note
+ 
+************************************
+
+X

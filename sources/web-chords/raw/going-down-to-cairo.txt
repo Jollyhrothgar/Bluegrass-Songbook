@@ -1,0 +1,66 @@
+# title: Going Down to Cairo
+# source_url: https://tabs.ultimate-guitar.com/tab/freddie-king/going-down-chords-1204245
+# fetched_at: 2026-02-01 22:16:08
+
+The song is a 12 bar blues in D.  The pattern is essentially:
+I   I   I   I
+IV  IV  I   I
+V   V   I   I
+ 
+with a small twist.  Any bar that comes before a I (the D chord) is descending 4 chord
+pattern of D C G F.  In this case, it is the 2nd bar, the 6th bar and the 10th bar.
+The intro is just the 1st 4 bars played twice.
+ 
+ 
+[Intro]
+ 
+D    D C G F D    D
+D    D C G F D    D
+ 
+ 
+[Verse 1]
+ 
+          D               D    C    G    F    D     D
+I'm going down, I'm goin' down down down down down
+           G               D       C     G    F    D     D
+Yes, I'm going down, I'm goin' down down down down down
+           A                              D     C G  F           D    D
+Yes, I got my big feet in the window, got my he-ead on the ground
+ 
+ 
+[Verse 2]
+ 
+       D         D     C    G   F       D    D
+Let me down, and close that box car door
+            G     D         C    G   F       D    D
+Yes, let me down, and close that box car door
+            A                        D        C         G F           D    D
+Well, I'm goin' back to Chattanooga, to sleep on sister I-rene's floor
+ 
+ 
+[Solo]
+ 
+D    D C G F D    D
+G    D C G F D    D
+A    D C G F D    D
+ 
+ 
+[Verse 3]
+ 
+           D                   D    C    G    F     D     D
+Yes, I'm going down, I'm going down down down down down
+          G               D    C    G    F    D     D
+I'm going down, I'm goin' down down down down down
+           A                            D       C  G   F           D    D
+Yes, I got my big feet in the window, I got my he-ead on the ground
+ 
+ 
+[Solo]
+ 
+D    D C G F D    D
+G    D C G F D    D
+A    D C G F D    D
+ 
+(Fades out)
+
+X

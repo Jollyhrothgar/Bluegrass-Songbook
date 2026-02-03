@@ -1,0 +1,50 @@
+# title: Big Country Bela Fleck
+# source_url: https://tabs.ultimate-guitar.com/tab/4710074
+# fetched_at: 2026-02-01 21:47:46
+
+Song is perfomed differently in each recording I've heard, string together A and B sections to match
+the version you prefer. Intro transcribed from the Transatlantic Sessions recording.
+Chords are listed once per measure of 2/2 played, as there are no lyrics to keep time.
+ 
+Tuning: CGCFCe
+ 
+For A and G#m7 fret 5th and 6th string with thumb
+For G#m7 also mute 4th string with thumb
+For B5 mute 6th string with thumb, can do the same for A/E if you like that sound better
+ 
+Chord shapes relative to capo on 4th:
+ 
+A/E:  020001
+E5:   000203
+E:    000200
+A:    550005
+G#m7: 44x223
+F#m9: 222000
+B5:   x02223
+C#m7: 020200
+ 
+[Intro]
+ 
+A/E  E5  E  A  G#m7  F#m9  F#m9
+ 
+E  E  B5  E
+ 
+[A Section]
+ 
+E  E  E  A/E  A/E  A/E
+ 
+E  E  E  B5  B5  B5
+ 
+C#m7  E  E  A  G#m7 F#m9  F#m9
+ 
+E  E  B5  E  E  E
+ 
+[B Section]
+ 
+C#m7  E5  A/E  E
+ 
+C#m7  E5  A/E  E
+ 
+C#m7  E5  A/E  E5  C#m7  B5  A/E
+
+X

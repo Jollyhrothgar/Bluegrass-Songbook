@@ -1,0 +1,21 @@
+# title: Flowers of Edinburgh
+# source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/the-flowers-of-edinburgh-chords-5221017
+# fetched_at: 2026-02-01 22:13:21
+
+Flowers of Edinburgh is a traditional Scottish fiddle tune that's in the public domain.
+I'm publishing so my guitar playing friends can play along.
+ 
+This is standard notation for fiddle tunes.
+ 
+ Flowers Of Edinburgh
+Reel in G
+ 
+x2 Part A
+G G | G G | D D | D Em
+G G | G C | D D | G G
+ 
+x2 Part B
+G G | D D | C C | Em C
+G G | C C | D D | G G
+
+X

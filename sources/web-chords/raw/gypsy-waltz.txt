@@ -1,0 +1,233 @@
+# title: Gypsy Waltz
+# source_url: https://tabs.ultimate-guitar.com/tab/fleetwood-mac/gypsy-chords-1045528
+# fetched_at: 2026-02-01 22:21:21
+
+---------------------------------------------------------------------------
+                Gypsy - Fleetwood Mac
+---------------------------------------------------------------------------
+ 
+Written by: Stevie Nicks
+From: "Mirage" (1982)
+ 
+Tabbed by: maguri
+Tuning: Standard
+ 
+There are two versions here:
+1. capo 3rd fret (I think a little easier to play)
+2. no capo
+ 
+---------------------------------------------------------------------------
+Version 1
+ 
+capo: 3rd fret
+play: D
+key: F
+ 
+       Standard        Double Drop-D
+       E-A-D-G-B-e     D-A-D-G-B-d
+D      x-x-0-2-3-2     0-0-0-2-3-0
+Dmaj7  x-x-0-2-2-2     0-0-0-2-2-0
+D6     x-x-0-4-3-2     0-0-0-4-3-0
+Gmaj7  3-x-4-4-3-x     5-x-0-0-0-4
+A      x-0-2-2-2-0     x-0-2-2-2-2
+Bm     x-2-4-4-3-2     x-2-4-4-3-0
+G      3-x-0-0-0-3     5-x-0-0-0-5
+ 
+---------------------------------------------------------------------------
+ 
+[Intro]
+| D | Dmaj7 | D6 | D |
+| Gmaj7 | A | Gmaj7 | A |
+ 
+[Verse 1]
+D        Dmaj7           D6   D        [ Gmaj7 ]
+  So I'm back, to the velvet    underground
+Gmaj7        A      Gmaj7     A
+ Back to the floor,    that I love
+D         Dmaj7             D6           D
+   To a room with some lace    and paper flowers
+Gmaj7         A     Gmaj7      A
+  Back to the gypsy     that I was
+       Gmaj7  A        [ D ]
+To the gypsy...  that I was
+ 
+[Interlude]
+| D | Dmaj7 | D6 | D |
+| Gmaj7 | A | Gmaj7 | A |
+ 
+[Verse 2]
+D             Dmaj7         D6             D
+   And it all comes down to you, well, you know that it does
+      Gmaj7        A             Gmaj7        A
+Well,    lightning strikes, maybe once, maybe twice
+D                 Dmaj7          D6    D
+Ah, and it lights up the night
+                 Gmaj7     A      Gmaj7     A
+And you see your gypsy,       
+             Gmaj7     A
+You see your gypsy
+ 
+[Interlude]
+| D | Dmaj7 | D6 | D |
+ 
+[Middle 8]
+       Bm           A
+To the gypsy that remains 
+          D                     G
+And faces freedom with a little fear
+          Bm                A
+I have no fear, I have only love
+         D
+And if I was a child
+              G
+And the child was enough
+           Bm
+Enough for me to love
+          A
+Enough to love
+ 
+[Verse 3]
+D           Dmaj7  D6          D
+   She is dancing away from me now
+Gmaj7             A             Gmaj7  A
+   She was just a wish, she was just a wish
+D        Dmaj7             D6               D
+   And a memory is all that is left for you now
+             Gmaj7     A    Gmaj7    A
+You see your gypsy
+             Gmaj7    A    Gmaj7     A
+You see your gypsy         
+ 
+[Interlude]
+| D | Dmaj7 | D6 | D |
+ 
+[Outro]
+Gmaj7        A              Gmaj7       A
+   Lightning strikes, maybe once, maybe twice 
+                                     (And it all comes down to you)
+| D | Dmaj7 | D6 | D |
+           (And it all comes down to you)
+ 
+Gmaj7       A              Gmaj7      A
+   Lightning strikes, maybe once, maybe twice 
+                                     (And it all comes down to you)
+| D | Dmaj7 | D6 | D |
+                I still see your ...
+Gmaj7         A   Gmaj7       A
+  Bright eyes,     bright eyes
+                        (And it all comes down to you)
+ 
+[Solo]
+| D | Dmaj7 | D6 | D |
+| Gmaj7 | A | Gmaj7 | A |
+ 
+ 
+(repeat and fade)
+ 
+ 
+---------------------------------------------------------------------------
+Version 2
+ 
+capo: -
+key: F
+ 
+---------------------------------------------------------------------------
+ 
+CHORDS
+         E-A-D-G-B-E
+F        1-3-3-2-1-1
+Fmaj7 (t)1-3-3-2-1-0
+F6       1-3-x-2-3-1
+Bbmaj7   x-1-3-2-3-1
+ 
+---------------------------------------------------------------------------
+ 
+[Intro]
+| F | Fmaj7 | F6 | F |
+| Bbmaj7 | C | Bbmaj7 | C |
+ 
+[Verse 1]
+F        Fmaj7        F6     F       [ Bbmaj7 ]
+  So I'm back, to the velvet    underground
+Bbmaj7       C      Bbmaj7    C
+ Back to the floor,    that I love
+F         Fmaj7             F6           F
+   To a room with some lace    and paper flowers
+Bbmaj7        C     Bbmaj7     C
+  Back to the gypsy     that I was
+       Bbmaj7  C        [ F ]
+To the gypsy...  that I was
+ 
+[Interlude]
+| F | Fmaj7 | F6 | F |
+| Bbmaj7 | C | Bbmaj7 | C |
+ 
+[Verse 2]
+F             Fmaj7         F6             F
+   And it all comes down to you, well, you know that it does
+      Bbmaj7       C              Bbmaj7      C
+Well,    lightning strikes, maybe once, maybe twice
+F                 Fmaj7          F6    F
+Ah, and it lights up the night
+                 Bbmaj7     C      Bbmaj7     C
+And you see your gypsy,       
+             Bbmaj7     C
+You see your gypsy
+ 
+[Interlude]
+| F | Fmaj7 | F6 | F |
+ 
+[Middle 8]
+       Dm           C
+To the gypsy that remains 
+          F                     Bb
+And faces freedom with a little fear
+          Dm                C
+I have no fear, I have only love
+         F
+And if I was a child
+              Bb
+And the child was enough
+           Dm
+Enough for me to love
+          C
+Enough to love
+ 
+[Verse 3]
+F            Fmaj7  F6         F
+   She is dancing away from me now
+Bbmaj7            C             Bbmaj7 C
+   She was just a wish, she was just a wish
+F        Fmaj7             F6               F
+   And a memory is all that is left for you now
+             Bbmaj7     C    Bbmaj7    C
+You see your gypsy
+             Bbmaj7    C    Bbmaj7     C
+You see your gypsy         
+ 
+[Interlude]
+| F | Fmaj7 | F6 | F |
+ 
+[Outro]
+Bbmaj7       C              Bbmaj7      C
+   Lightning strikes, maybe once, maybe twice 
+                                     (And it all comes down to you)
+| F | Fmaj7 | F6 | F |
+           (And it all comes down to you)
+ 
+Bbmaj7       C              Bbmaj7      C
+   Lightning strikes, maybe once, maybe twice 
+                                     (And it all comes down to you)
+| F | Fmaj7 | F6 | F |
+                I still see your ...
+Bbmaj7         C   Bbmaj7       C
+  Bright eyes,     bright eyes
+                        (And it all comes down to you)
+ 
+[Solo]
+| F | Fmaj7 | F6 | F |
+| Bbmaj7 | C | Bbmaj7 | C |
+ 
+(repeat and fade)
+
+X
