@@ -45,7 +45,7 @@ import {
     getSemitonesBetweenKeys, transposeChord, toNashville,
     CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
 } from './chords.js';
-import { updateListPickerButton, updateFavoriteButton, clearListView } from './lists.js';
+import { updateListPickerButton, updateFavoriteButton, clearListView, openNotesSheet, getSongMetadata, updateSongMetadata } from './lists.js';
 import { renderTagBadges, getTagCategory, formatTagName } from './tags.js';
 import {
     trackSongView, trackTranspose, trackVersionPicker, trackTagVote,
@@ -457,6 +457,22 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         setOriginalDetectedKey(detectedKey);
         setOriginalDetectedMode(detectedMode);
         setCurrentDetectedKey(detectedKey);
+
+        // Apply key override from list metadata (e.g., capo'd key for setlists)
+        if (listContext && listContext.listId && song?.id) {
+            const songMetadata = getSongMetadata(listContext.listId, song.id);
+            if (songMetadata?.key) {
+                // Map metadata key format to CHROMATIC_MAJOR_KEYS format
+                // Metadata uses: "C#/Db", "D#/Eb", etc.
+                // CHROMATIC_MAJOR_KEYS uses: C, C#, D, Eb, E, F, F#, G, Ab, A, Bb, B
+                const keyMap = {
+                    'C#/Db': 'C#', 'D#/Eb': 'Eb', 'F#/Gb': 'F#',
+                    'G#/Ab': 'Ab', 'A#/Bb': 'Bb'
+                };
+                const metadataKey = keyMap[songMetadata.key] || songMetadata.key;
+                setCurrentDetectedKey(metadataKey);
+            }
+        }
     }
 
     // Ensure currentDetectedKey is valid for the available chromatic keys
@@ -728,9 +744,17 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     const chordViewClass = showAbcView || !hasChords ? 'hidden' : '';
 
     // Header controls - disclosure toggles
+    // Show Notes button only when viewing from a list context
+    const hasListContext = listContext && listContext.listId;
+    const songMetadata = hasListContext ? getSongMetadata(listContext.listId, song?.id) : null;
+    const hasNotes = songMetadata?.notes && songMetadata.notes.trim();
+    const notesButtonHtml = hasListContext
+        ? `<button id="song-notes-btn" class="disclosure-btn ${hasNotes ? 'has-notes' : ''}" title="Song notes for this list" data-list-id="${listContext.listId}">📝 Notes</button>`
+        : '';
     const headerControlsHtml = `
         <div class="header-controls">
             <button id="flag-btn" class="flag-btn" title="Report an issue">🚩 Report</button>
+            ${notesButtonHtml}
             <button id="qc-toggle" class="disclosure-btn" title="Toggle controls">⚙️ Controls <span class="disclosure-arrow">${quickBarCollapsed ? '▼' : '▲'}</span></button>
             <button id="info-toggle" class="disclosure-btn" title="Toggle info">🎵 Info <span class="disclosure-arrow">${infoBarCollapsed ? '▼' : '▲'}</span></button>
         </div>
@@ -818,6 +842,10 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     `;
 
     // Focus header - shown only in fullscreen mode (via CSS)
+    // Check if we have list context and notes metadata for the bottom notes panel
+    const focusSongMetadata = hasListContext ? getSongMetadata(listContext.listId, song?.id) : null;
+    const focusHasNotes = focusSongMetadata?.notes && focusSongMetadata.notes.trim();
+
     const focusHeaderHtml = `
         <div class="focus-header">
             <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
@@ -848,6 +876,44 @@ export function renderSong(song, chordpro, isInitialRender = false) {
             <span class="corner-nav-arrow">→</span>
         </button>
     `;
+
+    // Collapsible notes panel for focus mode (only when viewing from a list)
+    const notesCollapsed = localStorage.getItem('focusNotesCollapsed') !== 'false'; // collapsed by default
+    const savedPanelHeight = localStorage.getItem('focusNotesPanelHeight');
+    const panelHeightStyle = savedPanelHeight ? `style="--panel-height: ${savedPanelHeight}px"` : '';
+    const focusNotesMetadata = focusSongMetadata || {};
+    const focusNotesPanelHtml = hasListContext ? `
+        <div id="focus-notes-panel" class="focus-notes-panel ${notesCollapsed ? 'collapsed' : ''}" data-list-id="${listContext.listId}" data-song-id="${song?.id}" ${panelHeightStyle}>
+            <div id="focus-notes-drag-handle" class="focus-notes-drag-handle" title="Drag to resize">
+                <span class="drag-handle-bar"></span>
+            </div>
+            <button id="focus-notes-toggle" class="focus-notes-toggle" title="Toggle notes panel">
+                <span class="focus-notes-toggle-icon">${notesCollapsed ? '▲' : '▼'}</span>
+                <span class="focus-notes-toggle-label">Notes</span>
+                ${focusHasNotes ? '<span class="focus-notes-indicator">•</span>' : ''}
+            </button>
+            <div class="focus-notes-content">
+                <div class="focus-notes-fields">
+                    <div class="focus-notes-field">
+                        <label>Key</label>
+                        <select id="focus-notes-key">
+                            <option value="">--</option>
+                            ${['C', 'C#/Db', 'D', 'D#/Eb', 'E', 'F', 'F#/Gb', 'G', 'G#/Ab', 'A', 'A#/Bb', 'B'].map(k =>
+                                `<option value="${k}" ${focusNotesMetadata.key === k ? 'selected' : ''}>${k}</option>`
+                            ).join('')}
+                        </select>
+                    </div>
+                    <div class="focus-notes-field">
+                        <label>Tempo</label>
+                        <input type="number" id="focus-notes-tempo" min="40" max="300" value="${focusNotesMetadata.tempo || ''}" placeholder="BPM">
+                    </div>
+                </div>
+                <div class="focus-notes-textarea-wrapper">
+                    <textarea id="focus-notes-text" placeholder="Add notes for this song in this list...">${escapeHtml(focusNotesMetadata.notes || '')}</textarea>
+                </div>
+            </div>
+        </div>
+    ` : '';
 
     songContentEl.innerHTML = `
         ${focusHeaderHtml}
@@ -886,6 +952,7 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         </div>
         ${sourceHtml}
         ${cornerNavHtml}
+        ${focusNotesPanelHtml}
     `;
 
     // Render ABC notation if showing
@@ -1219,6 +1286,14 @@ function setupRenderOptionsListeners(song, chordpro) {
         });
     }
 
+    // Notes button opens notes sheet (when in list context)
+    const songNotesBtn = document.getElementById('song-notes-btn');
+    if (songNotesBtn && listContext && listContext.listId) {
+        songNotesBtn.addEventListener('click', () => {
+            openNotesSheet(listContext.listId, song?.id, song?.title);
+        });
+    }
+
     // Focus header buttons
     const focusExitBtn = document.getElementById('focus-exit-btn');
     if (focusExitBtn) {
@@ -1234,6 +1309,13 @@ function setupRenderOptionsListeners(song, chordpro) {
             setFullscreenMode(false);
             document.body.classList.remove('fullscreen-mode');
             document.body.classList.remove('has-list-context');
+
+            // Save the return URL so the back button can return to the list
+            if (listContext && listContext.listId) {
+                const returnUrl = `#list/${listContext.listId}/${song?.id || ''}`;
+                sessionStorage.setItem('songbook-return-url', returnUrl);
+            }
+
             // Clear list view state and hide list header
             clearListView();
             // Navigate to work view
@@ -1267,8 +1349,136 @@ function setupRenderOptionsListeners(song, chordpro) {
         });
     }
 
+    // Setup focus notes panel event listeners
+    setupFocusNotesPanelListeners(song);
+
     // Update focus header based on list context
     updateFocusHeader();
+}
+
+/**
+ * Toggle the focus notes panel collapsed/expanded state
+ */
+function toggleFocusNotesPanel() {
+    const panel = document.getElementById('focus-notes-panel');
+    const toggleIcon = panel?.querySelector('.focus-notes-toggle-icon');
+    if (!panel) return;
+
+    const isCollapsed = panel.classList.toggle('collapsed');
+    localStorage.setItem('focusNotesCollapsed', isCollapsed);
+
+    if (toggleIcon) {
+        toggleIcon.textContent = isCollapsed ? '▲' : '▼';
+    }
+}
+
+/**
+ * Setup event listeners for the focus notes panel
+ */
+function setupFocusNotesPanelListeners(song) {
+    const panel = document.getElementById('focus-notes-panel');
+    if (!panel) return;
+
+    const listId = panel.dataset.listId;
+    const songId = panel.dataset.songId;
+
+    // Toggle button
+    const toggleBtn = document.getElementById('focus-notes-toggle');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', toggleFocusNotesPanel);
+    }
+
+    // Debounce helper for saving
+    let saveTimeout = null;
+    const debouncedSave = () => {
+        if (saveTimeout) clearTimeout(saveTimeout);
+        saveTimeout = setTimeout(() => {
+            const key = document.getElementById('focus-notes-key')?.value || '';
+            const tempo = document.getElementById('focus-notes-tempo')?.value || '';
+            const notes = document.getElementById('focus-notes-text')?.value || '';
+
+            updateSongMetadata(listId, songId, {
+                key: key || undefined,
+                tempo: tempo ? parseInt(tempo, 10) : undefined,
+                notes: notes || undefined
+            });
+
+            // Update the indicator
+            const indicator = panel.querySelector('.focus-notes-indicator');
+            if (notes.trim()) {
+                if (!indicator) {
+                    const toggleBtn = document.getElementById('focus-notes-toggle');
+                    if (toggleBtn) {
+                        const indicatorEl = document.createElement('span');
+                        indicatorEl.className = 'focus-notes-indicator';
+                        indicatorEl.textContent = '•';
+                        toggleBtn.appendChild(indicatorEl);
+                    }
+                }
+            } else if (indicator) {
+                indicator.remove();
+            }
+        }, 500);
+    };
+
+    // Field change listeners
+    const keySelect = document.getElementById('focus-notes-key');
+    const tempoInput = document.getElementById('focus-notes-tempo');
+    const notesTextarea = document.getElementById('focus-notes-text');
+
+    if (keySelect) keySelect.addEventListener('change', debouncedSave);
+    if (tempoInput) tempoInput.addEventListener('input', debouncedSave);
+    if (notesTextarea) notesTextarea.addEventListener('input', debouncedSave);
+
+    // Drag handle for resizing
+    const dragHandle = document.getElementById('focus-notes-drag-handle');
+    if (dragHandle) {
+        let isDragging = false;
+        let startY = 0;
+        let startHeight = 0;
+
+        const onMouseDown = (e) => {
+            // Don't start drag if panel is collapsed
+            if (panel.classList.contains('collapsed')) return;
+
+            isDragging = true;
+            startY = e.clientY || e.touches?.[0]?.clientY;
+            startHeight = panel.offsetHeight;
+            document.body.classList.add('resizing-notes-panel');
+            e.preventDefault();
+        };
+
+        const onMouseMove = (e) => {
+            if (!isDragging) return;
+
+            const clientY = e.clientY || e.touches?.[0]?.clientY;
+            const deltaY = startY - clientY; // Negative because dragging up increases height
+            const newHeight = Math.max(100, Math.min(window.innerHeight * 0.8, startHeight + deltaY));
+
+            panel.style.setProperty('--panel-height', `${newHeight}px`);
+        };
+
+        const onMouseUp = () => {
+            if (!isDragging) return;
+
+            isDragging = false;
+            document.body.classList.remove('resizing-notes-panel');
+
+            // Save the height to localStorage
+            const currentHeight = panel.offsetHeight;
+            localStorage.setItem('focusNotesPanelHeight', currentHeight);
+        };
+
+        // Mouse events
+        dragHandle.addEventListener('mousedown', onMouseDown);
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+
+        // Touch events for mobile
+        dragHandle.addEventListener('touchstart', onMouseDown, { passive: false });
+        document.addEventListener('touchmove', onMouseMove, { passive: false });
+        document.addEventListener('touchend', onMouseUp);
+    }
 }
 
 /**
@@ -1889,6 +2099,14 @@ export function goBack() {
 
     // Close list picker dropdown when navigating away
     if (listPickerDropdownEl) listPickerDropdownEl.classList.add('hidden');
+
+    // Check for a saved return URL (e.g., when coming from a list via "Go to Song")
+    const returnUrl = sessionStorage.getItem('songbook-return-url');
+    if (returnUrl) {
+        sessionStorage.removeItem('songbook-return-url');
+        window.location.hash = returnUrl;
+        return;
+    }
 
     if (historyInitialized && history.state) {
         history.back();

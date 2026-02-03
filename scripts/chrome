@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Starts a chrome dev browser with full user login.
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir="$HOME/Library/Application Support/Google/Chrome"

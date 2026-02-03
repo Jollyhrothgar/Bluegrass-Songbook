@@ -6,7 +6,7 @@ import {
     createList, addSongToList, removeSongFromList,
     isFavorite, toggleFavorite, isSongInAnyList,
     getFoldersAtLevel, getListFolder, getListsAtRoot,
-    renameList, deleteList
+    renameList, deleteList, getSongMetadata, getViewingListId
 } from './lists.js';
 import { escapeHtml } from './utils.js';
 
@@ -224,7 +224,10 @@ function setupPickerEvents(picker, songId, options) {
         } else if (e.target.dataset.type === 'list') {
             const listId = e.target.dataset.listId;
             if (e.target.checked) {
-                addSongToList(listId, songId);
+                // Copy metadata from the current list context if available
+                const sourceListId = getViewingListId();
+                const metadata = sourceListId ? getSongMetadata(sourceListId, songId) : null;
+                addSongToList(listId, songId, false, metadata);
             } else {
                 removeSongFromList(listId, songId);
             }
@@ -268,7 +271,10 @@ function setupPickerEvents(picker, songId, options) {
         if (name) {
             const newList = createList(name);
             if (newList) {
-                addSongToList(newList.id, songId);
+                // Copy metadata from the current list context if available
+                const sourceListId = getViewingListId();
+                const metadata = sourceListId ? getSongMetadata(sourceListId, songId) : null;
+                addSongToList(newList.id, songId, false, metadata);
 
                 // Update trigger button
                 if (activePicker?.triggerEl) {

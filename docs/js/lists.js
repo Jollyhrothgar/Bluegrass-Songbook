@@ -721,11 +721,16 @@ export function getOrCreateFavoritesList() {
             id: FAVORITES_LIST_ID,
             name: FAVORITES_LIST_NAME,
             songs: [],
+            songMetadata: {},
             cloudId: null
         };
         // Insert at the beginning so it appears first
         userLists.unshift(favList);
         saveLists();
+    }
+    // Ensure songMetadata exists (migration for existing lists)
+    if (!favList.songMetadata) {
+        favList.songMetadata = {};
     }
     return favList;
 }
@@ -1088,6 +1093,7 @@ export function createList(name, skipUndo = false) {
         id: generateLocalId(),
         name: trimmed,
         songs: [],
+        songMetadata: {},
         cloudId: null
     };
 
@@ -1219,11 +1225,20 @@ export function reorderList(listId, direction, skipUndo = false) {
 }
 
 /**
- * Add a song to a list
+ * Add a song to a list (with optional metadata)
+ * @param {string} listId - The list ID
+ * @param {string} songId - The song ID
+ * @param {boolean} skipUndo - Skip undo recording
+ * @param {object|null} metadata - Optional metadata to include
  */
-export function addSongToList(listId, songId, skipUndo = false) {
+export function addSongToList(listId, songId, skipUndo = false, metadata = null) {
     const list = userLists.find(l => l.id === listId);
     if (!list) return false;
+
+    // Ensure songMetadata exists
+    if (!list.songMetadata) {
+        list.songMetadata = {};
+    }
 
     if (!list.songs.includes(songId)) {
         // Record for undo before adding
@@ -1237,12 +1252,18 @@ export function addSongToList(listId, songId, skipUndo = false) {
         }
 
         list.songs.push(songId);
+
+        // Store metadata if provided
+        if (metadata && Object.keys(metadata).length > 0) {
+            list.songMetadata[songId] = metadata;
+        }
+
         saveLists();
         trackListAction('add_song', listId);
 
-        // Sync to cloud
+        // Sync to cloud (include metadata)
         if (list.cloudId && typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn()) {
-            SupabaseAuth.addToCloudList(list.cloudId, songId).catch(console.error);
+            SupabaseAuth.addToCloudList(list.cloudId, songId, metadata).catch(console.error);
         }
     }
 
@@ -1270,6 +1291,12 @@ export function removeSongFromList(listId, songId, skipUndo = false) {
         }
 
         list.songs.splice(index, 1);
+
+        // Also remove associated metadata
+        if (list.songMetadata && list.songMetadata[songId]) {
+            delete list.songMetadata[songId];
+        }
+
         saveLists();
         trackListAction('remove_song', listId);
 
@@ -1329,6 +1356,373 @@ export function isSongInList(listId, songId) {
  */
 export function isSongInAnyList(songId) {
     return userLists.some(l => l.songs.includes(songId));
+}
+
+// ============================================
+// SONG METADATA (per-item setlist data)
+// ============================================
+
+/**
+ * Get metadata for a song in a list
+ * @param {string} listId - The list ID
+ * @param {string} songId - The song ID
+ * @returns {object|null} - Metadata object or null if none
+ */
+export function getSongMetadata(listId, songId) {
+    const list = userLists.find(l => l.id === listId || l.cloudId === listId);
+    if (!list || !list.songMetadata) return null;
+    return list.songMetadata[songId] || null;
+}
+
+/**
+ * Update metadata for a song in a list
+ * @param {string} listId - The list ID
+ * @param {string} songId - The song ID
+ * @param {object} metadata - Metadata to merge (key, tempo, notes)
+ * @returns {boolean} - True if updated successfully
+ */
+export function updateSongMetadata(listId, songId, metadata) {
+    const list = userLists.find(l => l.id === listId || l.cloudId === listId);
+    if (!list) return false;
+
+    // Ensure songMetadata exists
+    if (!list.songMetadata) {
+        list.songMetadata = {};
+    }
+
+    // Merge metadata (don't overwrite entire object, merge fields)
+    const existing = list.songMetadata[songId] || {};
+    const merged = { ...existing, ...metadata };
+
+    // Remove empty/null fields
+    Object.keys(merged).forEach(key => {
+        if (merged[key] === null || merged[key] === undefined || merged[key] === '') {
+            delete merged[key];
+        }
+    });
+
+    // Store or delete if empty
+    if (Object.keys(merged).length > 0) {
+        list.songMetadata[songId] = merged;
+    } else {
+        delete list.songMetadata[songId];
+    }
+
+    saveLists();
+
+    // Sync to cloud if logged in and list has cloudId
+    const cloudId = list.cloudId || (list.id !== FAVORITES_LIST_ID && list.id);
+    if (cloudId && typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn()) {
+        SupabaseAuth.updateListItemMetadata(cloudId, songId, merged).catch(console.error);
+    }
+
+    return true;
+}
+
+/**
+ * Clear all metadata for a song in a list
+ * @param {string} listId - The list ID
+ * @param {string} songId - The song ID
+ */
+export function clearSongMetadata(listId, songId) {
+    const list = userLists.find(l => l.id === listId || l.cloudId === listId);
+    if (!list || !list.songMetadata) return;
+
+    delete list.songMetadata[songId];
+    saveLists();
+
+    // Sync to cloud
+    const cloudId = list.cloudId || (list.id !== FAVORITES_LIST_ID && list.id);
+    if (cloudId && typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn()) {
+        SupabaseAuth.updateListItemMetadata(cloudId, songId, {}).catch(console.error);
+    }
+}
+
+/**
+ * Copy metadata from one list item to another (used when copying/moving songs)
+ * @param {string} sourceListId - Source list ID
+ * @param {string} destListId - Destination list ID
+ * @param {string} songId - The song ID
+ */
+function copySongMetadata(sourceListId, destListId, songId) {
+    const metadata = getSongMetadata(sourceListId, songId);
+    if (metadata && Object.keys(metadata).length > 0) {
+        updateSongMetadata(destListId, songId, metadata);
+    }
+}
+
+/**
+ * Handle duplicating or importing a list
+ * Shared logic used by both duplicate buttons in the UI
+ */
+async function handleDuplicateOrImportList() {
+    let songsToCopy = [];
+    let listName = '';
+    let sourceMetadata = null;
+
+    // Handle importing a public list (not owned by user)
+    if (viewingPublicList && !viewingPublicList.isOwner) {
+        if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+            alert('Please sign in to import lists');
+            return;
+        }
+
+        songsToCopy = viewingPublicList.songs || [];
+        listName = viewingPublicList.list.name;
+        sourceMetadata = viewingPublicList.songMetadata || {};
+
+        if (!songsToCopy.length) {
+            alert('Nothing to import');
+            return;
+        }
+
+        const newName = prompt('Name for imported list:', listName);
+        if (!newName) return;
+
+        const newList = createList(newName);
+        if (!newList) {
+            alert('A list with that name already exists');
+            return;
+        }
+
+        for (const songId of songsToCopy) {
+            const metadata = sourceMetadata[songId] || null;
+            addSongToList(newList.id, songId, false, metadata);
+        }
+
+        showListView(newList.id);
+        if (pushHistoryStateFn) {
+            pushHistoryStateFn('list', { listId: newList.id });
+        }
+        return;
+    }
+
+    // Handle duplicating own list
+    if (viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
+        const favList = getFavoritesList();
+        songsToCopy = favList?.songs || [];
+        listName = 'Favorites';
+    } else if (viewingListId) {
+        const localList = userLists.find(l => l.id === viewingListId);
+        songsToCopy = localList?.songs || [];
+        listName = localList?.name || 'List';
+    }
+
+    if (!songsToCopy.length) {
+        alert('Nothing to duplicate');
+        return;
+    }
+
+    const newName = prompt('Name for the copy:', `${listName} (copy)`);
+    if (!newName) return;
+
+    const newList = createList(newName);
+    if (!newList) {
+        alert('A list with that name already exists');
+        return;
+    }
+
+    for (const songId of songsToCopy) {
+        const metadata = getSongMetadata(viewingListId, songId);
+        addSongToList(newList.id, songId, false, metadata);
+    }
+
+    showListView(newList.id);
+    if (pushHistoryStateFn) {
+        pushHistoryStateFn('list', { listId: newList.id });
+    }
+}
+
+// ============================================
+// NOTES BOTTOM SHEET
+// ============================================
+
+// Notes sheet state
+let notesSheetEl = null;
+let notesSheetBackdropEl = null;
+let notesSheetSongId = null;
+let notesSheetListId = null;
+let notesDebounceTimer = null;
+
+/**
+ * Open the notes bottom sheet for a song
+ * @param {string} listId - The list ID
+ * @param {string} songId - The song ID
+ * @param {string} songTitle - The song title for display
+ */
+export function openNotesSheet(listId, songId, songTitle) {
+    if (!notesSheetEl) {
+        notesSheetEl = document.getElementById('notes-sheet');
+        notesSheetBackdropEl = document.getElementById('notes-sheet-backdrop');
+    }
+
+    if (!notesSheetEl) return;
+
+    notesSheetSongId = songId;
+    notesSheetListId = listId;
+
+    // Set title
+    const titleEl = document.getElementById('notes-sheet-title');
+    if (titleEl) {
+        titleEl.textContent = songTitle || 'Song Notes';
+    }
+
+    // Load existing metadata
+    const metadata = getSongMetadata(listId, songId) || {};
+
+    const keySelect = document.getElementById('notes-key');
+    const tempoInput = document.getElementById('notes-tempo');
+    const notesTextarea = document.getElementById('notes-text');
+
+    if (keySelect) keySelect.value = metadata.key || '';
+    if (tempoInput) tempoInput.value = metadata.tempo || '';
+    if (notesTextarea) notesTextarea.value = metadata.notes || '';
+
+    // Show sheet
+    notesSheetEl.classList.remove('hidden');
+    notesSheetBackdropEl?.classList.remove('hidden');
+
+    // Focus the notes textarea
+    setTimeout(() => notesTextarea?.focus(), 100);
+}
+
+/**
+ * Close the notes bottom sheet
+ */
+export function closeNotesSheet() {
+    if (notesSheetEl) {
+        notesSheetEl.classList.add('hidden');
+    }
+    if (notesSheetBackdropEl) {
+        notesSheetBackdropEl.classList.add('hidden');
+    }
+
+    // Clear debounce timer
+    if (notesDebounceTimer) {
+        clearTimeout(notesDebounceTimer);
+        notesDebounceTimer = null;
+    }
+
+    notesSheetSongId = null;
+    notesSheetListId = null;
+}
+
+/**
+ * Save notes sheet data (debounced)
+ */
+function saveNotesSheetData() {
+    if (!notesSheetSongId || !notesSheetListId) return;
+
+    const keySelect = document.getElementById('notes-key');
+    const tempoInput = document.getElementById('notes-tempo');
+    const notesTextarea = document.getElementById('notes-text');
+
+    const metadata = {};
+
+    if (keySelect?.value) {
+        metadata.key = keySelect.value;
+    }
+    if (tempoInput?.value) {
+        const tempo = parseInt(tempoInput.value, 10);
+        if (!isNaN(tempo) && tempo >= 40 && tempo <= 300) {
+            metadata.tempo = tempo;
+        }
+    }
+    if (notesTextarea?.value?.trim()) {
+        metadata.notes = notesTextarea.value.trim();
+    }
+
+    updateSongMetadata(notesSheetListId, notesSheetSongId, metadata);
+
+    // Refresh the list view to show updated badges
+    if (viewingListId) {
+        // Re-render the current list view to update metadata badges
+        refreshListItemMetadata(notesSheetSongId);
+    }
+}
+
+/**
+ * Debounced save for notes sheet input
+ */
+function onNotesSheetInput() {
+    if (notesDebounceTimer) {
+        clearTimeout(notesDebounceTimer);
+    }
+    notesDebounceTimer = setTimeout(saveNotesSheetData, 500);
+}
+
+/**
+ * Refresh metadata display for a single list item (without full re-render)
+ * @param {string} songId - The song ID to refresh
+ */
+function refreshListItemMetadata(songId) {
+    const resultItem = document.querySelector(`.result-item[data-id="${songId}"]`);
+    if (!resultItem) return;
+
+    const metadata = getSongMetadata(viewingListId, songId);
+
+    // Update or create metadata badges container
+    let badgesContainer = resultItem.querySelector('.list-item-badges');
+    if (!badgesContainer) {
+        badgesContainer = document.createElement('span');
+        badgesContainer.className = 'list-item-badges';
+        const titleArea = resultItem.querySelector('.result-title-artist');
+        if (titleArea) {
+            titleArea.appendChild(badgesContainer);
+        }
+    }
+
+    // Update badges content
+    let badgeHtml = '';
+    if (metadata?.key) {
+        badgeHtml += `<span class="list-item-badge key-badge">${escapeHtml(metadata.key)}</span>`;
+    }
+    if (metadata?.tempo) {
+        badgeHtml += `<span class="list-item-badge tempo-badge">${metadata.tempo}</span>`;
+    }
+    badgesContainer.innerHTML = badgeHtml;
+
+    // Update notes icon state
+    const notesBtn = resultItem.querySelector('.list-notes-btn');
+    if (notesBtn) {
+        const hasNotes = metadata?.notes && metadata.notes.trim();
+        notesBtn.classList.toggle('has-notes', hasNotes);
+        notesBtn.title = hasNotes ? 'Edit notes' : 'Add notes';
+    }
+}
+
+/**
+ * Initialize notes sheet event handlers
+ */
+function initNotesSheet() {
+    notesSheetEl = document.getElementById('notes-sheet');
+    notesSheetBackdropEl = document.getElementById('notes-sheet-backdrop');
+
+    if (!notesSheetEl) return;
+
+    // Close button
+    const closeBtn = document.getElementById('notes-sheet-close');
+    closeBtn?.addEventListener('click', closeNotesSheet);
+
+    // Backdrop click closes
+    notesSheetBackdropEl?.addEventListener('click', closeNotesSheet);
+
+    // Input handlers for auto-save
+    const keySelect = document.getElementById('notes-key');
+    const tempoInput = document.getElementById('notes-tempo');
+    const notesTextarea = document.getElementById('notes-text');
+
+    keySelect?.addEventListener('change', saveNotesSheetData);
+    tempoInput?.addEventListener('input', onNotesSheetInput);
+    notesTextarea?.addEventListener('input', onNotesSheetInput);
+
+    // Escape key closes
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && notesSheetEl && !notesSheetEl.classList.contains('hidden')) {
+            closeNotesSheet();
+            e.stopPropagation();
+        }
+    });
 }
 
 /**
@@ -1464,6 +1858,7 @@ function processCloudLists(cloudLists) {
                     id: FAVORITES_LIST_ID,
                     name: FAVORITES_LIST_NAME,
                     songs: cloudList.songs || [],
+                    songMetadata: cloudList.songMetadata || {},
                     cloudId: cloudList.name === FAVORITES_LIST_NAME ? cloudList.id : null
                 };
             } else {
@@ -1472,6 +1867,10 @@ function processCloudLists(cloudLists) {
                 for (const songId of (cloudList.songs || [])) {
                     if (!existingSongs.has(songId)) {
                         favoritesEntry.songs.push(songId);
+                        // Also merge metadata for this song
+                        if (cloudList.songMetadata && cloudList.songMetadata[songId]) {
+                            favoritesEntry.songMetadata[songId] = cloudList.songMetadata[songId];
+                        }
                     }
                 }
                 // If this is the proper "Favorites" name and we don't have a cloudId yet, use it
@@ -1489,6 +1888,7 @@ function processCloudLists(cloudLists) {
             id: cloudList.id,
             name: cloudList.name,
             songs: cloudList.songs || [],
+            songMetadata: cloudList.songMetadata || {},
             cloudId: cloudList.id
         });
     }
@@ -3132,82 +3532,12 @@ export function initLists(options) {
     initShareModal();
     initLocalShareModal();
 
-    // Duplicate/Import list button
+    // Initialize notes bottom sheet
+    initNotesSheet();
+
+    // Duplicate/Import list button (stats row)
     const duplicateListBtn = document.getElementById('duplicate-list-btn');
-    duplicateListBtn?.addEventListener('click', async () => {
-        let songsToCopy = [];
-        let listName = '';
-
-        // Handle importing a public list (not owned by user)
-        if (viewingPublicList && !viewingPublicList.isOwner) {
-            // Import from public list
-            if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
-                alert('Please sign in to import lists');
-                return;
-            }
-
-            songsToCopy = viewingPublicList.songs || [];
-            listName = viewingPublicList.list.name;
-
-            if (!songsToCopy.length) {
-                alert('Nothing to import');
-                return;
-            }
-
-            const newName = prompt('Name for imported list:', listName);
-            if (!newName) return;
-
-            const newList = createList(newName);
-            if (!newList) {
-                alert('A list with that name already exists');
-                return;
-            }
-
-            for (const songId of songsToCopy) {
-                addSongToList(newList.id, songId);
-            }
-
-            showListView(newList.id);
-            if (pushHistoryStateFn) {
-                pushHistoryStateFn('list', { listId: newList.id });
-            }
-            return;
-        }
-
-        // Handle duplicating own list
-        if (viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
-            const favList = getFavoritesList();
-            songsToCopy = favList?.songs || [];
-            listName = 'Favorites';
-        } else if (viewingListId) {
-            const localList = userLists.find(l => l.id === viewingListId);
-            songsToCopy = localList?.songs || [];
-            listName = localList?.name || 'List';
-        }
-
-        if (!songsToCopy.length) {
-            alert('Nothing to duplicate');
-            return;
-        }
-
-        const newName = prompt('Name for the copy:', `${listName} (copy)`);
-        if (!newName) return;
-
-        const newList = createList(newName);
-        if (!newList) {
-            alert('A list with that name already exists');
-            return;
-        }
-
-        for (const songId of songsToCopy) {
-            addSongToList(newList.id, songId);
-        }
-
-        showListView(newList.id);
-        if (pushHistoryStateFn) {
-            pushHistoryStateFn('list', { listId: newList.id });
-        }
-    });
+    duplicateListBtn?.addEventListener('click', handleDuplicateOrImportList);
 
     // Delete list button
     const deleteListBtnInit = document.getElementById('delete-list-btn');
@@ -3332,79 +3662,7 @@ export function initLists(options) {
     });
 
     // List header: Duplicate button
-    listDuplicateBtnEl?.addEventListener('click', async () => {
-        let songsToCopy = [];
-        let listName = '';
-
-        // Handle importing a public list (not owned by user)
-        if (viewingPublicList && !viewingPublicList.isOwner) {
-            if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
-                alert('Please sign in to import lists');
-                return;
-            }
-
-            songsToCopy = viewingPublicList.songs || [];
-            listName = viewingPublicList.list.name;
-
-            if (!songsToCopy.length) {
-                alert('Nothing to import');
-                return;
-            }
-
-            const newName = prompt('Name for imported list:', listName);
-            if (!newName) return;
-
-            const newList = createList(newName);
-            if (!newList) {
-                alert('A list with that name already exists');
-                return;
-            }
-
-            for (const songId of songsToCopy) {
-                addSongToList(newList.id, songId);
-            }
-
-            showListView(newList.id);
-            if (pushHistoryStateFn) {
-                pushHistoryStateFn('list', { listId: newList.id });
-            }
-            return;
-        }
-
-        // Handle duplicating own list
-        if (viewingListId === 'favorites' || viewingListId === FAVORITES_LIST_ID) {
-            const favList = getFavoritesList();
-            songsToCopy = favList?.songs || [];
-            listName = 'Favorites';
-        } else if (viewingListId) {
-            const localList = userLists.find(l => l.id === viewingListId);
-            songsToCopy = localList?.songs || [];
-            listName = localList?.name || 'List';
-        }
-
-        if (!songsToCopy.length) {
-            alert('Nothing to duplicate');
-            return;
-        }
-
-        const newName = prompt('Name for the copy:', `${listName} (copy)`);
-        if (!newName) return;
-
-        const newList = createList(newName);
-        if (!newList) {
-            alert('A list with that name already exists');
-            return;
-        }
-
-        for (const songId of songsToCopy) {
-            addSongToList(newList.id, songId);
-        }
-
-        showListView(newList.id);
-        if (pushHistoryStateFn) {
-            pushHistoryStateFn('list', { listId: newList.id });
-        }
-    });
+    listDuplicateBtnEl?.addEventListener('click', handleDuplicateOrImportList);
 
     // List header: Follow button
     listFollowBtnEl?.addEventListener('click', async () => {

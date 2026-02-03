@@ -4921,6 +4921,473 @@ mark {
 }
 
 /* ============================================
+   LIST ITEM METADATA (Setlist Notes)
+   ============================================ */
+
+/* Title + metadata badges wrapper */
+.result-title-artist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.5rem;
+}
+
+/* Metadata badges container */
+.list-item-badges {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Individual metadata badge */
+.list-item-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+/* Key badge - accent color */
+.list-item-badge.key-badge {
+    background: rgba(79, 70, 229, 0.2);
+    color: var(--accent);
+}
+
+/* Tempo badge - subtle gray */
+.list-item-badge.tempo-badge {
+    background: var(--bg);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}
+
+.list-item-badge.tempo-badge::after {
+    content: ' bpm';
+    font-weight: 400;
+    font-size: 0.65rem;
+    opacity: 0.7;
+}
+
+/* Notes button - shows on list items */
+.list-notes-btn {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    margin-right: 0.25rem;
+    opacity: 0.5;
+}
+
+.result-item:hover .list-notes-btn {
+    opacity: 1;
+}
+
+.list-notes-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--bg-secondary);
+}
+
+/* Notes button when item has notes */
+.list-notes-btn.has-notes {
+    background: rgba(79, 70, 229, 0.1);
+    border-color: var(--accent);
+    color: var(--accent);
+    opacity: 1;
+}
+
+/* Song view notes button when has notes */
+#song-notes-btn.has-notes {
+    background: rgba(79, 70, 229, 0.15);
+    color: var(--accent);
+}
+
+/* Focus mode notes button when has notes */
+#focus-notes-btn.has-notes {
+    background: rgba(79, 70, 229, 0.2);
+    color: var(--accent);
+}
+
+/* ============================================
+   FOCUS MODE COLLAPSIBLE NOTES PANEL
+   ============================================ */
+
+/* Only show in fullscreen mode */
+.focus-notes-panel {
+    display: none;
+}
+
+body.fullscreen-mode .focus-notes-panel {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    z-index: 1000;
+    transition: transform 0.2s ease;
+}
+
+/* When panel has custom height set */
+body.fullscreen-mode .focus-notes-panel:not(.collapsed) {
+    height: var(--panel-height, auto);
+}
+
+/* Disable transitions while dragging */
+body.resizing-notes-panel .focus-notes-panel {
+    transition: none;
+}
+
+/* Drag handle */
+.focus-notes-drag-handle {
+    display: none;
+}
+
+body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12px;
+    cursor: ns-resize;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+    touch-action: none;
+}
+
+.focus-notes-drag-handle:hover {
+    background: var(--bg-tertiary);
+}
+
+.drag-handle-bar {
+    width: 40px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+}
+
+.focus-notes-drag-handle:hover .drag-handle-bar {
+    background: var(--text-secondary);
+}
+
+/* Toggle button - always visible */
+.focus-notes-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.focus-notes-toggle:hover {
+    background: var(--bg-tertiary);
+}
+
+.focus-notes-toggle-icon {
+    font-size: 0.7rem;
+}
+
+.focus-notes-toggle-label {
+    font-weight: 500;
+}
+
+.focus-notes-indicator {
+    color: var(--accent);
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Collapsed state - hide content */
+.focus-notes-panel.collapsed .focus-notes-content {
+    display: none;
+}
+
+/* Expanded content */
+.focus-notes-content {
+    padding: 0.75rem 1rem 1rem;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Default max-height when no custom height is set */
+.focus-notes-panel:not([style*="--panel-height"]) .focus-notes-content {
+    max-height: 40vh;
+}
+
+.focus-notes-fields {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.focus-notes-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.focus-notes-field label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.focus-notes-field select,
+.focus-notes-field input {
+    padding: 0.4rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.focus-notes-field select {
+    min-width: 80px;
+}
+
+.focus-notes-field input[type="number"] {
+    width: 70px;
+}
+
+.focus-notes-textarea-wrapper {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+#focus-notes-text {
+    width: 100%;
+    min-height: 80px;
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-family: inherit;
+    resize: none; /* Disable resize since we have drag handle */
+}
+
+#focus-notes-text::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+/* On touch devices, always show notes button */
+@media (hover: none) {
+    .list-notes-btn {
+        opacity: 0.7;
+    }
+}
+
+/* ============================================
+   NOTES BOTTOM SHEET
+   ============================================ */
+
+/* Notes sheet backdrop */
+.notes-sheet-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2999;
+}
+
+.notes-sheet-backdrop.hidden {
+    display: none;
+}
+
+/* Notes sheet container */
+.notes-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.2);
+    z-index: 3000;
+    max-height: 60vh;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.notes-sheet.hidden {
+    display: none;
+}
+
+/* Notes sheet header */
+.notes-sheet-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.notes-sheet-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    margin-right: 0.5rem;
+}
+
+.notes-sheet-close {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s, color 0.2s;
+    flex-shrink: 0;
+}
+
+.notes-sheet-close:hover {
+    background: var(--bg-secondary);
+    color: var(--text);
+}
+
+/* Notes sheet content */
+.notes-sheet-content {
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: calc(60vh - 60px);
+}
+
+/* Row for key and tempo */
+.notes-sheet-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Individual field container */
+.notes-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.notes-field label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.notes-field-full {
+    flex: 1;
+}
+
+/* Input styles */
+.notes-input {
+    padding: 0.6rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    min-width: 80px;
+}
+
+.notes-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Tempo input - narrower */
+.notes-field:has(#notes-tempo) {
+    flex: 0 0 auto;
+}
+
+#notes-tempo {
+    width: 90px;
+}
+
+/* Notes textarea */
+.notes-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    resize: vertical;
+    min-height: 100px;
+    line-height: 1.5;
+}
+
+.notes-textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+.notes-textarea::placeholder {
+    color: var(--text-muted);
+}
+
+/* Desktop: notes sheet appears as a side panel or modal */
+@media (min-width: 768px) {
+    .notes-sheet {
+        left: 50%;
+        right: auto;
+        bottom: 50%;
+        transform: translate(-50%, 50%);
+        width: 100%;
+        max-width: 500px;
+        border-radius: 16px;
+        max-height: 80vh;
+    }
+
+    .notes-sheet-content {
+        max-height: calc(80vh - 60px);
+    }
+}
+
+/* ============================================
    VERSION BADGE & PICKER
    ============================================ */
 

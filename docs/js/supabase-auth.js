@@ -391,30 +391,37 @@ async function fetchCloudLists() {
 
     const { data: items, error: itemsError } = await supabaseClient
         .from('user_list_items')
-        .select('list_id, song_id, position')
+        .select('list_id, song_id, position, metadata')
         .in('list_id', listIds)
         .order('position', { ascending: true });
 
     if (itemsError) {
         console.error('Error fetching list items:', itemsError);
-        return { data: lists.map(l => ({ ...l, songs: [] })), error: itemsError };
+        return { data: lists.map(l => ({ ...l, songs: [], songMetadata: {} })), error: itemsError };
     }
 
-    // Group items by list
+    // Group items by list (songs array and metadata map)
     const itemsByList = {};
+    const metadataByList = {};
     items.forEach(item => {
         if (!itemsByList[item.list_id]) {
             itemsByList[item.list_id] = [];
+            metadataByList[item.list_id] = {};
         }
         itemsByList[item.list_id].push(item.song_id);
+        // Only store metadata if it has content
+        if (item.metadata && Object.keys(item.metadata).length > 0) {
+            metadataByList[item.list_id][item.song_id] = item.metadata;
+        }
     });
 
-    // Combine lists with their songs
+    // Combine lists with their songs and metadata
     const result = lists.map(list => ({
         id: list.id,
         name: list.name,
         position: list.position,
-        songs: itemsByList[list.id] || []
+        songs: itemsByList[list.id] || [],
+        songMetadata: metadataByList[list.id] || {}
     }));
 
     return { data: result, error: null };
@@ -523,8 +530,8 @@ async function deleteCloudList(listId, listName = null) {
     return { error };
 }
 
-// Add song to a list
-async function addToCloudList(listId, songId) {
+// Add song to a list (with optional metadata)
+async function addToCloudList(listId, songId, metadata = null) {
     if (!supabaseClient || !currentUser) {
         return { error: { message: 'Not logged in' } };
     }
@@ -539,17 +546,45 @@ async function addToCloudList(listId, songId) {
 
     const nextPosition = existing && existing.length > 0 ? existing[0].position + 1 : 0;
 
+    const insertData = {
+        list_id: listId,
+        song_id: songId,
+        position: nextPosition
+    };
+
+    // Include metadata if provided
+    if (metadata && Object.keys(metadata).length > 0) {
+        insertData.metadata = metadata;
+    }
+
     const { error } = await supabaseClient
         .from('user_list_items')
-        .upsert({
-            list_id: listId,
-            song_id: songId,
-            position: nextPosition
-        }, {
+        .upsert(insertData, {
             onConflict: 'list_id,song_id'
         });
 
     return { error };
+}
+
+// Update metadata for a list item
+async function updateListItemMetadata(listId, songId, metadata) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    // Use the RPC function for proper ownership check
+    const { data, error } = await supabaseClient.rpc('update_list_item_metadata', {
+        p_list_id: listId,
+        p_song_id: songId,
+        p_metadata: metadata
+    });
+
+    if (error) {
+        console.error('Error updating list item metadata:', error);
+        return { error };
+    }
+
+    return { data, error: null };
 }
 
 // Remove song from a list
@@ -665,28 +700,34 @@ async function fetchFollowedLists() {
         return { data: [], error: listsError };
     }
 
-    // Fetch all list items
+    // Fetch all list items (including metadata)
     const { data: items, error: itemsError } = await supabaseClient
         .from('user_list_items')
-        .select('list_id, song_id, position')
+        .select('list_id, song_id, position, metadata')
         .in('list_id', listIds)
         .order('position', { ascending: true });
 
     if (itemsError) {
         console.error('Error fetching followed list items:', itemsError);
-        return { data: lists.map(l => ({ ...l, songs: [], isFollowed: true })), error: itemsError };
+        return { data: lists.map(l => ({ ...l, songs: [], songMetadata: {}, isFollowed: true })), error: itemsError };
     }
 
-    // Group items by list
+    // Group items by list (songs array and metadata map)
     const itemsByList = {};
+    const metadataByList = {};
     items.forEach(item => {
         if (!itemsByList[item.list_id]) {
             itemsByList[item.list_id] = [];
+            metadataByList[item.list_id] = {};
         }
         itemsByList[item.list_id].push(item.song_id);
+        // Only store metadata if it has content
+        if (item.metadata && Object.keys(item.metadata).length > 0) {
+            metadataByList[item.list_id][item.song_id] = item.metadata;
+        }
     });
 
-    // Combine lists with their songs and mark as followed
+    // Combine lists with their songs, metadata, and mark as followed
     const result = lists.map(list => ({
         id: list.id,
         name: list.name,
@@ -694,6 +735,7 @@ async function fetchFollowedLists() {
         owners: list.owners || [],
         orphaned_at: list.orphaned_at,
         songs: itemsByList[list.id] || [],
+        songMetadata: metadataByList[list.id] || {},
         isFollowed: true,
         isOrphaned: !!list.orphaned_at
     }));
@@ -904,17 +946,25 @@ async function syncListsToCloud(localLists) {
             // Merge songs (union)
             const mergedSongs = [...new Set([...localList.songs, ...cloudMatch.songs])];
 
+            // Merge metadata (local takes precedence for conflicts, cloud fills gaps)
+            const mergedMetadata = {
+                ...(cloudMatch.songMetadata || {}),
+                ...(localList.songMetadata || {})
+            };
+
             // Add any local-only songs to cloud
             const localOnlySongs = localList.songs.filter(s => !cloudMatch.songs.includes(s));
             for (const songId of localOnlySongs) {
-                await addToCloudList(cloudMatch.id, songId);
+                const metadata = localList.songMetadata?.[songId] || null;
+                await addToCloudList(cloudMatch.id, songId, metadata);
             }
 
             mergedLists.push({
                 id: cloudMatch.id,
                 name: cloudMatch.name,
                 position: cloudMatch.position,
-                songs: mergedSongs
+                songs: mergedSongs,
+                songMetadata: mergedMetadata
             });
             delete cloudByName[localList.name];
         } else if (localList.cloudId) {
@@ -928,16 +978,18 @@ async function syncListsToCloud(localLists) {
                 continue;
             }
 
-            // Add songs to the new list
+            // Add songs to the new list with their metadata
             for (const songId of localList.songs) {
-                await addToCloudList(newList.id, songId);
+                const metadata = localList.songMetadata?.[songId] || null;
+                await addToCloudList(newList.id, songId, metadata);
             }
 
             mergedLists.push({
                 id: newList.id,
                 name: localList.name,
                 position: newList.position,
-                songs: localList.songs
+                songs: localList.songs,
+                songMetadata: localList.songMetadata || {}
             });
         }
     }
@@ -1293,6 +1345,7 @@ window.SupabaseAuth = {
     deleteCloudList,
     addToCloudList,
     removeFromCloudList,
+    updateListItemMetadata,
     syncListsToCloud,
     // Lists (following)
     fetchFollowedLists,
