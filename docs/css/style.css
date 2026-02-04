@@ -5329,6 +5329,11 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     min-width: 80px;
 }
 
+.notes-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
 .notes-input:focus {
     outline: none;
     border-color: var(--accent);

@@ -1619,17 +1619,28 @@ function saveNotesSheetData() {
 
     const metadata = {};
 
+    // Explicitly set null to clear values when empty (updateSongMetadata will delete null fields)
     if (keySelect?.value) {
         metadata.key = keySelect.value;
+    } else {
+        metadata.key = null; // Clear the key
     }
+
     if (tempoInput?.value) {
         const tempo = parseInt(tempoInput.value, 10);
         if (!isNaN(tempo) && tempo >= 40 && tempo <= 300) {
             metadata.tempo = tempo;
+        } else {
+            metadata.tempo = null; // Invalid tempo, clear it
         }
+    } else {
+        metadata.tempo = null; // Clear the tempo
     }
+
     if (notesTextarea?.value?.trim()) {
         metadata.notes = notesTextarea.value.trim();
+    } else {
+        metadata.notes = null; // Clear the notes
     }
 
     updateSongMetadata(notesSheetListId, notesSheetSongId, metadata);
