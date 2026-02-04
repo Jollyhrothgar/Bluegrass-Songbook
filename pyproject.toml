@@ -9,6 +9,7 @@ dependencies = [
     "flask>=3.0.0",
     "matplotlib>=3.10.7",
     "numpy>=2.2.6",
+    "playwright>=1.58.0",
     "pyyaml>=6.0.0",
     "rapidfuzz>=3.14.3",
     "requests>=2.32.5",

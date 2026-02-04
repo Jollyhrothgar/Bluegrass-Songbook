@@ -7,7 +7,7 @@ import {
     isFavorite, reorderFavoriteItem, showFavorites,
     isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, isViewingOwnList,
     removeSongFromList, showListView, FAVORITES_LIST_ID, toggleFavorite,
-    addSongToList, clearListView
+    addSongToList, clearListView, getSongMetadata, openNotesSheet
 } from './lists.js';
 import { openSong, showVersionPicker } from './song-view.js';
 import { openWork } from './work-view.js';
@@ -117,10 +117,14 @@ function showSongContextMenu(x, y, songId, currentListId) {
         const targetListId = item.dataset.listId;
 
         if (action === 'copy-to' && targetListId) {
-            addSongToList(targetListId, songId);
+            // Get metadata from source list and copy it
+            const metadata = getSongMetadata(currentListId, songId);
+            addSongToList(targetListId, songId, false, metadata);
             closeSongContextMenu();
         } else if (action === 'move-to' && targetListId) {
-            addSongToList(targetListId, songId);
+            // Get metadata from source list and copy it
+            const metadata = getSongMetadata(currentListId, songId);
+            addSongToList(targetListId, songId, false, metadata);
             if (currentListId === FAVORITES_LIST_ID || currentListId === 'favorites') {
                 toggleFavorite(songId);
                 showFavorites();
@@ -291,9 +295,12 @@ function handleBatchCopy(e) {
     const targetListId = e.target.value;
     if (!targetListId) return;
 
+    const currentListId = getViewingListId();
     const songIds = Array.from(selectedSongIds);
     songIds.forEach(songId => {
-        addSongToList(targetListId, songId);
+        // Copy metadata along with the song
+        const metadata = getSongMetadata(currentListId, songId);
+        addSongToList(targetListId, songId, false, metadata);
     });
 
     // Reset dropdown
@@ -312,7 +319,9 @@ function handleBatchMove(e) {
     const songIds = Array.from(selectedSongIds);
 
     songIds.forEach(songId => {
-        addSongToList(targetListId, songId);
+        // Copy metadata along with the song
+        const metadata = getSongMetadata(currentListId, songId);
+        addSongToList(targetListId, songId, false, metadata);
         if (currentListId === FAVORITES_LIST_ID || currentListId === 'favorites') {
             toggleFavorite(songId);
         } else {
@@ -988,17 +997,36 @@ export function renderResults(songs, query) {
 
         const selectedClass = isSelected ? 'selected' : '';
 
+        // List item metadata (only shown when viewing a list)
+        let metadataBadges = '';
+        let notesBtn = '';
+        if (viewingListId) {
+            const metadata = getSongMetadata(viewingListId, song.id);
+            if (metadata) {
+                const keyBadge = metadata.key ? `<span class="list-item-badge key-badge">${escapeHtml(metadata.key)}</span>` : '';
+                const tempoBadge = metadata.tempo ? `<span class="list-item-badge tempo-badge">${metadata.tempo}</span>` : '';
+                metadataBadges = `<span class="list-item-badges">${keyBadge}${tempoBadge}</span>`;
+            }
+            const hasNotes = metadata?.notes && metadata.notes.trim();
+            const notesClass = hasNotes ? 'has-notes' : '';
+            notesBtn = `<button class="list-notes-btn ${notesClass}" data-song-id="${song.id}" data-song-title="${escapeHtml(song.title || 'Song')}" title="${hasNotes ? 'Edit notes' : 'Add notes'}">&#128221;</button>`;
+        }
+
         return `
             <div class="result-item ${favClass} ${selectedClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
                 ${dragHandle}
                 <div class="result-main">
-                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}${grassinessBadge}</div>
+                    <div class="result-title-artist">
+                        <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}${grassinessBadge}</div>
+                        ${metadataBadges}
+                    </div>
                     <div class="result-artist">${highlightMatch(primaryArtist, query)}</div>
                     ${coveringDisplay}
                     ${tagBadges ? `<div class="result-tags">${tagBadges}</div>` : ''}
                     <div class="result-preview">${song.first_line || ''}</div>
                 </div>
                 ${selectBtn}
+                ${notesBtn}
                 <button class="result-list-btn ${btnClass}" data-song-id="${song.id}" title="Add to list">+</button>
                 ${removeBtn}
             </div>
@@ -1036,6 +1064,19 @@ function setupResultEventListeners(resultsDiv) {
             }
             // Update batch operations bar
             updateBatchOperationsBar();
+            return;
+        }
+
+        // Handle notes button click (list view only)
+        const notesBtn = e.target.closest('.list-notes-btn');
+        if (notesBtn) {
+            e.stopPropagation();
+            const songId = notesBtn.dataset.songId;
+            const songTitle = notesBtn.dataset.songTitle || 'Song';
+            const currentListId = getViewingListId();
+            if (currentListId && songId) {
+                openNotesSheet(currentListId, songId, songTitle);
+            }
             return;
         }
 

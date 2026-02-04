@@ -1,3 +1,96 @@
 #!/usr/bin/env bash
-# Starts a chrome dev browser with full user login.
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir="$HOME/Library/Application Support/Google/Chrome"
+# Starts a Chrome browser with remote debugging enabled for MCP server connection.
+# Usage: ./scripts/chrome [--restart] [chrome-args...]
+#
+# Options:
+#   --restart    Kill existing Chrome and start fresh with debugging
+#
+# The MCP server can connect via: http://127.0.0.1:9222
+
+set -e
+
+DEBUGGING_PORT=9222
+CHROME_APP="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+DEVTOOLS_URL="http://127.0.0.1:$DEBUGGING_PORT/json/version"
+
+# Parse --restart flag
+RESTART=false
+CHROME_ARGS=()
+for arg in "$@"; do
+    if [[ "$arg" == "--restart" ]]; then
+        RESTART=true
+    else
+        CHROME_ARGS+=("$arg")
+    fi
+done
+
+# Function to check if DevTools is responding
+devtools_ready() {
+    curl -s --max-time 1 "$DEVTOOLS_URL" >/dev/null 2>&1
+}
+
+# Handle --restart flag
+if $RESTART; then
+    if pgrep -x "Google Chrome" >/dev/null 2>&1; then
+        echo "Killing existing Chrome..."
+        pkill -x "Google Chrome"
+        # Wait for Chrome to fully exit
+        while pgrep -x "Google Chrome" >/dev/null 2>&1; do
+            sleep 0.2
+        done
+    fi
+fi
+
+# Check if debugging port is already responding
+if devtools_ready; then
+    echo "Chrome is already running with remote debugging enabled."
+    echo "MCP server can connect to: http://127.0.0.1:$DEBUGGING_PORT"
+    echo ""
+    echo "Verify at: $DEVTOOLS_URL"
+    exit 0
+fi
+
+# Check if Chrome is already running (would prevent using the same profile)
+if pgrep -x "Google Chrome" >/dev/null 2>&1; then
+    echo "Chrome is already running without debugging enabled."
+    echo ""
+    echo "Run with --restart to kill Chrome and start with debugging:"
+    echo "  $0 --restart"
+    echo ""
+    exit 1
+fi
+
+echo "Starting Chrome with remote debugging on port $DEBUGGING_PORT..."
+
+# Use a separate debug profile (Chrome won't allow debugging with the default profile)
+# This profile will have its own login state - you'll need to log in once
+USER_DATA_DIR="$HOME/.chrome-debug-profile"
+
+# Launch Chrome with remote debugging (suppress stdout noise)
+"$CHROME_APP" \
+    --remote-debugging-port=$DEBUGGING_PORT \
+    --user-data-dir="$USER_DATA_DIR" \
+    "${CHROME_ARGS[@]}" >/dev/null 2>&1 &
+
+# Wait for DevTools endpoint to respond (up to 15 seconds)
+echo "Waiting for DevTools to initialize..."
+TIMEOUT=30
+for ((i=1; i<=TIMEOUT; i++)); do
+    if devtools_ready; then
+        echo ""
+        echo "Chrome started successfully with remote debugging."
+        echo ""
+        echo "MCP server connection URL: http://127.0.0.1:$DEBUGGING_PORT"
+        echo "Verify at: $DEVTOOLS_URL"
+        echo ""
+        echo "This uses a separate debug profile at ~/.chrome-debug-profile"
+        echo "You'll need to log into sites (Strum Machine, etc.) in this browser."
+        exit 0
+    fi
+    sleep 0.5
+done
+
+echo ""
+echo "Timed out waiting for Chrome DevTools to respond."
+echo "Chrome may still be starting - check the browser window."
+exit 1

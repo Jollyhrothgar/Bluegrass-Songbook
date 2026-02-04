@@ -64,7 +64,7 @@ git worktree remove ../feature-xyz
 
 ```
 Bluegrass-Songbook/
-├── works/                   # PRIMARY: Song collection (17,650+ works)
+├── works/                   # PRIMARY: Song collection (17,500+ works)
 │   └── {work-slug}/         # e.g., "blue-moon-of-kentucky"
 │       ├── work.yaml        # Metadata: title, artist, tags, parts
 │       └── lead-sheet.pro   # ChordPro lead sheet
@@ -284,25 +284,33 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 
 ## Current State
 
-- **17,650+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
+- **17,500+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
 - **Works system**: Each song is a "work" with multiple parts (lead sheet, tablature, ABC notation)
 - **Tablature**: Banjo Hangout tabs with TEF→OTF parsing, playback, track mixer for multi-instrument arrangements
-- **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - 93% coverage via MusicBrainz + grassiness scoring
+- **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - primary source is LLM tagging, with MusicBrainz and grassiness scoring as fallbacks
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
 - **Song versions**: Multiple arrangements with voting (infrastructure ready)
 - **URL stability**: Work URLs (`#work/{slug}`) are permanent; legacy `#song/{id}` URLs redirect
 
-**Recent additions (Jan 2026):**
+**Recent additions (Jan-Feb 2026):**
+- **Trusted user editing**: Trusted users can make instant edits without approval
+- **Super-user requests**: Regular users can request trusted status via GitHub issue
+- **LLM tagging**: Primary tag source using Claude batch API
+- **Tag voting**: Trusted users can override incorrect tags
+- **Legacy ID migration**: Song IDs migrated from filename-based to work slugs
 - **Strum Machine integration**: 605+ songs with practice backing tracks
 - **Quick controls bar**: One-click access to key/size/layout during practice
 - **Focus mode**: Distraction-free full-screen song view
 - **Covering artists**: Shows which bluegrass legends recorded each song
 - **Multi-owner lists**: Collaborative list curation with follow/unfollow
-- **Thunderdome**: Claim abandoned lists from inactive users
+- **Thunderdome**: Claim abandoned lists (now 1 year inactivity threshold)
 - **Frictionless feedback**: Report issues and request songs without GitHub account
 - **Submitter attribution**: Tracks who submitted content ("Rando Calrissian" for anonymous)
 
 **What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
+
+**In Progress (Feb 2026):**
+- **Strum Machine missing songs**: Scraped SM's song index (~833 songs we don't have). Investigating automated fetching from web chord sources (Ultimate Guitar, Chordie, etc.). Challenge: each source formats data differently, so parsing needs to be source-specific. See `docs/data/sm_missing_vocals.json` for the gap list and `scripts/lib/fetch_chords.py` for the fetching prototype. Next step: create separate parser modules per source in `sources/web-chords/`.
 
 ## File Navigation
 
@@ -327,4 +335,5 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | Run parser tests | `uv run pytest` |
 | Run frontend tests | `npm test` |
 | Run E2E tests | `npm run test:e2e` |
-| Debug in browser | Chrome DevTools MCP (see below) |
+| Debug in browser | Chrome DevTools MCP (note - the scripts/chrome can helpfully launch a logged in
+debug browser |

@@ -225,6 +225,45 @@
 
         <div id="results" class="results"></div>
 
+        <!-- Notes Bottom Sheet (for setlist metadata) -->
+        <div id="notes-sheet-backdrop" class="notes-sheet-backdrop hidden"></div>
+        <div id="notes-sheet" class="notes-sheet hidden">
+            <div class="notes-sheet-header">
+                <span class="notes-sheet-title" id="notes-sheet-title">Song Notes</span>
+                <button class="notes-sheet-close" id="notes-sheet-close" title="Close">&times;</button>
+            </div>
+            <div class="notes-sheet-content">
+                <div class="notes-sheet-row">
+                    <div class="notes-field">
+                        <label for="notes-key">Key</label>
+                        <select id="notes-key" class="notes-input">
+                            <option value="">--</option>
+                            <option value="C">C</option>
+                            <option value="C#">C#/Db</option>
+                            <option value="D">D</option>
+                            <option value="D#">D#/Eb</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="F#">F#/Gb</option>
+                            <option value="G">G</option>
+                            <option value="G#">G#/Ab</option>
+                            <option value="A">A</option>
+                            <option value="A#">A#/Bb</option>
+                            <option value="B">B</option>
+                        </select>
+                    </div>
+                    <div class="notes-field">
+                        <label for="notes-tempo">Tempo</label>
+                        <input type="number" id="notes-tempo" class="notes-input" placeholder="BPM" min="40" max="300">
+                    </div>
+                </div>
+                <div class="notes-field notes-field-full">
+                    <label for="notes-text">Notes</label>
+                    <textarea id="notes-text" class="notes-textarea" rows="6" placeholder="Arrangement details, kick order, ending notes..."></textarea>
+                </div>
+            </div>
+        </div>
+
         <!-- Editor Panel -->
         <div id="editor-panel" class="editor-panel hidden">
             <div class="editor-header">
