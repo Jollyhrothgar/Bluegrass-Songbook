@@ -7,21 +7,21 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-With a [D7]draw from either [G]hand
+[D7]With a draw from either [G]hand
 [G]I was known as Blackie’s [D]gunman
 The [D7]best two [D]gunman in the [G]land
 [G]I could shoot the ace of [D]diamonds
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-With the dice [G]I had no equal
+[D]With the dice [G]I had no equal
 [G]Some of them are with [D]us now
 Most [D7]of them [D]are sadly [G]sleeping
 [G]Neath the weeping [D]willow bough
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Many a [D7]cowboy’s game I’ve [G]played in
+[D7]Many a cowboy’s game I’ve [G]played in
 [G]Left that night with all [D]their gold
 As a sport [G]I was broken
 As a sport [G]I let it go
@@ -35,7 +35,7 @@ But [G]I know I’ll never meet her
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-Her eyes [D7]were like the deep blue [G]water
+[D7]Her eyes were like the deep blue [G]water
 [G]And her hair was [D]golden curls
 And [D7]her cheeks [D]were golden [G]velvet
 [G]And her teeth were [D]snow white pearls

@@ -21,14 +21,14 @@ But [F#]now all is [C#]quiet and [F#]still
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-Many years have gone by since in prayer there [F#]I knelt
+[F#]Many years have gone by since in prayer there [F#]I knelt
 With dear ones around the [B]old hearth
 But my mother’s sweet prayers in my heart [F#]still are felt
 [F#]I’ll treasure [C#]them awhile on [F#]earth
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-One by one they have gone from the [B]old cottage home
+[F#]One by one they have gone from the [B]old cottage home
 [F#]On [F#]earth we shall see them no [C#]more
 But we’ll meet them again on [F#]that beautiful shore
 Where [F#]partings will [C#]come never [F#]more

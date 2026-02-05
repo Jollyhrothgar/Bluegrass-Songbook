@@ -7,14 +7,14 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Come [A]back to me [E]in my dreaming
+[A]Come back to me [E]in my dreaming
 Come [A]back to me once [A]more
 [A]Come with the [D]love light beaming
 Like [E]in the days of yore
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-I wonder if [A]you still love me
+[E]I wonder if [A]you still love me
 And if your heart is still [A]true
 [A]When the spring [E]roses are blooming
 Then [E]I’ll come [A]back to [A]you
@@ -39,7 +39,7 @@ Or do [A]you feel lonesome too
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Come [A]tell me [D]that [A]you still love me
+[A]Come tell me [D]that [A]you still love me
 And [D]that your heart is still [A]true
 [E]When the spring [A]roses are blooming
 Then [E]I’ll come [A]back to [A]you

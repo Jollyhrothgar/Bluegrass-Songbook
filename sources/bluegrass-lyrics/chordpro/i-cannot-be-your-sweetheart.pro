@@ -7,14 +7,14 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Last [A]night I told my heart’s [A]love
+[A]Last night I told my heart’s [A]love
 All [D]under the pale blue [A]sky
 [A]Eagerly [D]waiting an answer
 I [E]plainly could read in her eyes
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-I [A]love you sweetheart I [A]love
+[A]I love you sweetheart I [A]love
 And [D]ask you to be my [A]bride
 [A]Her face turned pale [E]and she trembled
 And [E]sadly to me she [A]replied
@@ -32,14 +32,14 @@ I [A]love you sweetheart I [A]love you
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
-We [A]said goodbye in the [A]moonlight
+[A]We said goodbye in the [A]moonlight
 [D]My heart was turned to [A]stone
 [E]One blissful hour [A]was made happy
 [E]But now I’m sad and alone
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-In [A]this my sorrows [A]forever
+[A]In this my sorrows [A]forever
 [D]Though you may go far [A]away
 Where ever you go I’ll [A]love you
 [E]But still I can hear you say

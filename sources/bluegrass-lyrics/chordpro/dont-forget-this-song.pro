@@ -12,7 +12,7 @@ The [C]memory of [G]my [G]birthplace lies in [G]my [D]bosom [G]still
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-I did not like [G]my fireside I did not like [G]my home
+[G]I did not like [G]my fireside I did not like [G]my home
 [C]I have a mind [G]for [G]rambling so [G]far [D]away from [G]home
 {end_of_verse}
 
@@ -32,6 +32,6 @@ I did not like [G]my fireside I did not like [G]my home
 {end_of_verse}
 
 {start_of_verse: Verse 6}
-But now upon [G]my scaffold [G]my time’s not very long
+[G]But now upon [G]my scaffold [G]my time’s not very long
 [C]You may forget [G]the [G]singer but don’t [D]forget this [G]song
 {end_of_verse}

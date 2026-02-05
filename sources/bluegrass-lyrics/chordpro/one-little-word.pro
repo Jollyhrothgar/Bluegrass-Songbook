@@ -7,14 +7,14 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-The [A]dream of love is over
+[A]The dream of love is over
 [E]Today [D]we [A]said goodbye
 [D]We [D]parted not [D]in [A]anger
 Though [E]tears came [D]in [A]her [E7]eyes
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-Twas [A]just as fate decreed dear
+[A]Twas just as fate decreed dear
 That [D]we must [E7]never [A]wed
 Yet [D]in [A]her heart she [A]loved me
 She [E]married wealth [A]instead
@@ -35,7 +35,7 @@ Our [E]cottage [D]by [A]its [E7]side
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Though [A]years have brought their changes
+[A]Though years have brought their changes
 [E]The same [D]old [A]love still holds
 She [A]wed to please [A]her parents
 A [E]man of [D]wealth [A]and [E7]gold

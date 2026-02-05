@@ -7,21 +7,21 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_chorus}
-Oh [C]glory oh [C]glory oh [C]glory to the [G]lamb
+[C]Oh glory oh [C]glory oh [C]glory to the [G]lamb
 Hallelujah I [C]am saved and [G7]I’m so glad I [C]am
 Oh [C]glory oh [C]glory oh [C]glory to the [G]lamb
 Hallelujah I [C]am saved and [G7]I’m so glad I [C]am
 {end_of_chorus}
 
 {start_of_verse: Verse 1}
-On [C]Monday I [C]am happy on Tuesday full of [G]joy
+[C]On Monday I [C]am happy on Tuesday full of [G]joy
 Wednesday I’ve got the faith the [G7]devil cant destroy
 On Thursday and Friday walking in the [G]light
 Saturday I’ve got the victory and [G7]Sunday’s always [C]bright
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-I [C]fell in love [C]with Jesus and he fell in love [G]with me
+[C]I fell in love [C]with Jesus and he fell in love [G]with me
 That’s the very reason I’ve [G7]got the victory
 [G7]I’m happy when it’s raining [G7]I’m happy when it shines
 [G7]I’m happy now with Jesus [G7]I’m happy all the time

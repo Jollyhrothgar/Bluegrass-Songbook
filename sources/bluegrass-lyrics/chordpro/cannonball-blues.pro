@@ -16,13 +16,13 @@ From Buffalo [C]to Washington
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-My baby’s left me [C]she even took my shoes
+[C]My baby’s left me [C]she even took my shoes
 [G]Enough to give a man these doggone worried blues
 She’s gone she’s [C]solid gone
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Yonder comes the train [C]coming down the track
+[C]Yonder comes the train [C]coming down the track
 [G]Carry me away but it [C]aint gonna carry me back
 My honey babe [C]my blue eyed babe
 {end_of_verse}

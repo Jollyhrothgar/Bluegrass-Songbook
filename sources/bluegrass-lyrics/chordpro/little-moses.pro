@@ -16,7 +16,7 @@ And [E]found the sweet babe that was [A]there
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-And [A]away by the waters so blue
+[A]And away by the waters so blue
 The infant [E]was lonely [A]and sad
 [E]She took him in pity and thought him so pretty
 And [A]it made [E]little Moses so [A]glad
@@ -25,7 +25,7 @@ And [E]she sent for a nurse who [A]was near
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-And [A]away by the waters so blue
+[A]And away by the waters so blue
 They carried [E]that [A]beautiful child
 To [E]his tender mother, to his sister and brothers
 [A]Little Moses looked [E]happy and [A]smiled
@@ -34,7 +34,7 @@ To [E]raise him and teach him with [A]care
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-And [A]away by the sea that was red
+[A]And away by the sea that was red
 Little Moses [E]the servant [A]of God
 While [E]in him confided, the sea was divided
 As [A]upwards he [E]lifted his [A]rod
@@ -43,7 +43,7 @@ Was [E]drownded in the waters [A]and lost
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-And [A]away on a mountain so high
+[A]And away on a mountain so high
 The last that [E]he ever [A]did see
 With [E]Israel victorious, his hopes were most glorious
 That [A]soon all the [E]Jordan be [A]free

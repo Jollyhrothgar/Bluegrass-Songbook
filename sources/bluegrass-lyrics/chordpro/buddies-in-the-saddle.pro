@@ -14,7 +14,7 @@ My [D]buddy [A]strayed far [E]from my [A]side
 {end_of_verse}
 
 {start_of_chorus}
-We were [A]buddies in the [D]saddle,
+[A]We were buddies in the [D]saddle,
 We were [A]buddies in our [E]home,
 We were [A]buddies herding [D]cattle,
 We were [A]buddies everywhere we [A]roamed
@@ -28,7 +28,7 @@ I’ll ne’er [A]forget the smile [D]he gave me,
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-I took him up in my [D]saddle
+[A]I took him up in my [D]saddle
 And [A]carried him across [E]the plain
 My mother [A]nursed him [D]every moment
 [D]To try [A]to make [E]him well [A]again

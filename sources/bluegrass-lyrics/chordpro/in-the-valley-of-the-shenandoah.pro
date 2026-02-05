@@ -16,7 +16,7 @@ Who is [A]sleeping there [D]tonight
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-It was [A]in the month of [A7]June
+[A]It was in the month of [A7]June
 When the [D]roses were [A]in bloom
 When I [G]held her [A]in my [D]arms and softly [A7]said
 Darling [A]in the coming spring

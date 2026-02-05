@@ -7,7 +7,7 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-There’s a [A]wonderful invention [D]called the [A]radio
+[A]There’s a wonderful invention [D]called the [A]radio
 You can [A]hear it every where you chance to [E]go
 But the [A]static [E]in the air sometimes [D]makes it hard to [A]hear
 But it is not so with [E]heaven’s [A]radio
@@ -21,14 +21,14 @@ For my precious savior [E]always listens [E]in
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-Daniel [E]in the lions den with this power should surely win
+[E]Daniel in the lions den with this power should surely win
 For my precious savior [E]always listens [E]in
 And I [A]know [E]without a doubt honest [D]prayers will bring you [A]out
 For my precious savior [E]always listens [E]in
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Well He [A]set the Hebrews three from [D]the fiery [A]furnace free
+[A]Well He set the Hebrews three from [D]the fiery [A]furnace free
 For my precious savior [E]always listens [E]in
 He will rescue you today [E]in that [A]same old fashioned way
 For my precious savior [E]always listens [E]in

@@ -14,7 +14,7 @@ Have [D]slumbered many [D7]years in their [G]graves
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-But [G]the bloom of [G]the flowers I remember
+[G]But the bloom of [G]the flowers I remember
 [G]Though their smiles [D]I may [D7]never more see
 For [G]the cold chilly winds of December
 Stole [D]my flowers’ [D7]companions [G]from me

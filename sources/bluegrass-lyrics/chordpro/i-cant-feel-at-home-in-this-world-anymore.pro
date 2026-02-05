@@ -7,28 +7,28 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-This [A7]world is not my home I’m just-a-passing through
+[A7]This world is not my home I’m just-a-passing through
 My treasures are laid up somewhere [A7]beyond [D]the [A7]blue
 The [D]angels beckon me from Heaven’s open door
 And I can’t feel at home in this [A7]world anymore
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-Oh Lord [D]you know I have no friend like [D]you
+[D]Oh Lord you know I have no friend like [D]you
 If Heaven’s not my home oh Lord [A7]what would [D]I [A7]do
 The [D]angels beckon me from Heaven’s open door
 And I can’t feel at home in this [A7]world anymore
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-They’re [A7]all expecting me that’s one thing I know
+[A7]They’re all expecting me that’s one thing I know
 I fixed it up with Jesus a [A7]long time [A7]ago
 I [D]know he’ll take me through though I am weak and poor
 And I can’t feel at home in this [A7]world anymore
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Just [A7]over in the gloryland there’ll be no dying there
+[A7]Just over in the gloryland there’ll be no dying there
 The saints [A7]all shouting victory and [A7]singing everywhere
 I [D]hear the voice of those that’s gone on before
 And I can’t feel at home in this [A7]world anymore

@@ -7,14 +7,14 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-A [G]crowd of young fellas [G]one night at a ball
+[G]A crowd of young fellas [G]one night at a ball
 Were [C]telling of sweethearts they’d [G]had
 [C]All [D]seemed hardy [G]except [G]one lad
 Who [D]seemed downhearted and [G]sad
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-Come [G]join us Ned his comrades then said
+[G]Come join us Ned his comrades then said
 Surely some girl has loved [G]you
 Then [C]raising his head proudly he said
 I’m in love with [G]two

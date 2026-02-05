@@ -14,14 +14,14 @@ Where there’s [D]peace [A]sweet [D]peace
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-We’ll be happy there up [G]in my fathers [D]house
+[D]We’ll be happy there up [G]in my fathers [D]house
 Up [G]in my father’s [D]house up [G]in my father’s [D]house
 We’ll be happy there up [G]in my fathers [D]house
 Where there’s [D]peace [A]sweet [D]peace
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Don’t you want to go up there to my father’s [D]house
+[D]Don’t you want to go up there to my father’s [D]house
 {end_of_verse}
 
 {start_of_verse: Verse 4}
@@ -29,5 +29,5 @@ Don’t you want to go up there to my father’s [D]house
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-We’ll all be as one up [G]in my father’s [D]house
+[D]We’ll all be as one up [G]in my father’s [D]house
 {end_of_verse}

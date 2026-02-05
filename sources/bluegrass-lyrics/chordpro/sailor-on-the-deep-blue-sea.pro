@@ -7,21 +7,21 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-He promised to write [E]me a [D]letter,
+[E]He promised to write [E]me a [D]letter,
 He promised to write to [E]me;
 But I haven’t [A]heard from my [D]darling,
 Who is [A]sailing on the deep blue [A]sea
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-“Oh, captain, can you tell [E]me,
+[A]“Oh, captain, can you tell [E]me,
 Can you tell [E]me where he may be?”
 “Oh yes, [A]my pretty [D]maiden,
 He is drownded in the deep blue [A]sea”
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Farewell to friends [E]and [D]relations
+[A]Farewell to friends [E]and [D]relations
 This is the last you’ll see of [E]me,
 For I’m [A]going to end [D]my troubles
 By drowning in the deep blue [A]sea

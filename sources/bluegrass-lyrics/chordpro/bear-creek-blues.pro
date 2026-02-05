@@ -13,7 +13,7 @@
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-The [G]water on Bear Creek, [A7]it tastes like cherry [D]wine
+[G]The water on Bear Creek, [A7]it tastes like cherry [D]wine
 The [G]water on Bear Creek, [A7]it tastes like cherry [D]wine
 You [A7]take one [A7]drink of [A7]it, you’re drinking [A7]it all the [D]time
 {end_of_verse}

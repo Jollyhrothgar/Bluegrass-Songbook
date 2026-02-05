@@ -14,7 +14,7 @@ Lay down to [D]take my [A]rest
 {end_of_verse}
 
 {start_of_chorus}
-Please don’t [E]bury me on the lonesome [A]prairie
+[E]Please don’t bury me on the lonesome [A]prairie
 Please don’t [E]bury me on the lone [A]prairie
 You can [E]bury me in the east
 You can [E]bury me in the west

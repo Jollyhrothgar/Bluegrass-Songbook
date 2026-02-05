@@ -25,7 +25,7 @@ someday shall be [A]mine (someday shall be [A]mine)
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-In that beautiful [A]home a crown I shall wear
+[A]In that beautiful [A]home a crown I shall wear
 With the [E]glorified throng their stories [A]to share
 But the doors of that [A]home can never be known
 Til the savior we [A]see upon His [A]white throne

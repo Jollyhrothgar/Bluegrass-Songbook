@@ -14,42 +14,42 @@ While the [A]moonlight is [A7]shining so [D]clear
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-But I [G]know he’s away in a [D]far distant [A]land
+[G]But I know he’s away in a [D]far distant [A]land
 A [A]land that is over the [D]sea
 Go fly [A]to him singing [A7]your sweet [D]little song
 And [A]tell him to [A7]come back to [D]me
 {end_of_verse}
 
 {start_of_chorus}
-Sweet [D]fern, sweet [D]fern
+[D]Sweet fern, sweet [D]fern
 Oh [A]tell [D]me, is my [A7]darling still [D]true
 Sweet [D]fern, sweet [D]fern
 I’ll [A]be just as [A7]happy as [D]you
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
-Oh [A]tell [D]me sweet [D]fern, is he thinking of [D]me
+[A]Oh tell [D]me sweet [D]fern, is he thinking of [D]me
 And [A]the promise [A7]he made long [D]ago
 He said he’d return from over the [D]sea
 Oh [A]why do the [A7]years go so [D]slow
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-But I [G]know he’s away in a [D]far distant [A]land
+[G]But I know he’s away in a [D]far distant [A]land
 A [A]land that is over the [D]sea
 Go fly [A]to him singing [A7]your sweet [D]little song
 And [A]tell him to [A7]come back to [D]me
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-Upon [A]my finger [A7]he placed a [D]small ring
+[A]Upon my finger [A7]he placed a [D]small ring
 On [A]the day he [A7]was leaving [D]his home
 I promised I’d [A]be his own little girl
 And [A]love him [A7]wherever he’d [D]roam
 {end_of_verse}
 
 {start_of_verse: Verse 6}
-But I [G]know he’s away in a [D]far distant [A]land
+[G]But I know he’s away in a [D]far distant [A]land
 A [A]land that is over the [D]sea
 Go fly [A]to him singing [A7]your sweet [D]little song
 And [A]tell him to [A7]come back to [D]me

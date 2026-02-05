@@ -12,13 +12,13 @@ Many [C]years ago we parted, [D]my own true love and [G]I From the [D]sunny moun
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-Oh she [G]clung to me and trembled, when [G]I told her we must part
+[G]Oh she clung to me and trembled, when [G]I told her we must part
 And she [C]said don’t [D7]go [D]my darling [G]I know twill break [D]my [G]heart
 When we [D]two are [G]far [G]apart
 {end_of_verse}
 
 {start_of_chorus}
-Carry me [C]back to [D7]old Virginia [C]back to [D]my clinch mountain [G]home
+[C]Carry me back to [D7]old Virginia [C]back to [D]my clinch mountain [G]home
 Carry me [C]back to [D7]old Virginia [C]back to [D]my [D7]old mountain [G]home
 {end_of_chorus}
 
@@ -28,7 +28,7 @@ Carry me [C]back to [D7]old Virginia for its there [G]I want to stay
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Oh [G]I held her [G]in [D]my arms leaned her head upon [D]my breast
+[G]Oh I held her [G]in [D]my arms leaned her head upon [D]my breast
 And [G]I told her that I’d wed her when [G]I come [C]back from the west
 To [D]my [D7]old clinch mountain [G]home
 {end_of_verse}

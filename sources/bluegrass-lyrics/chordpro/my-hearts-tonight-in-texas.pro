@@ -7,7 +7,7 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-In the [G]distant state of Texas
+[G]In the distant state of Texas
 By the [C]silver Rio [G]Grande
 Strolled a [D]couple out one [G]evening
 Was two [D]sweethearts hand in hand
@@ -17,7 +17,7 @@ Though tomorrow they must [D]part for many a [G]year
 {end_of_verse}
 
 {start_of_chorus}
-My heart’s [C]tonight in Texas
+[C]My heart’s tonight in Texas
 Though [D]I’m far across the [G]sea
 The band [D]is playing [G]Dixie
 And that’s [D]where I long to [G]be
@@ -28,7 +28,7 @@ By the [C]silver Rio [G]Grande
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-To [G]Europe she was going
+[G]To Europe she was going
 To [C]become a [G]lady grand
 For [D]her father hoped [G]an
 Earl [D]of course she’ll wed
@@ -38,7 +38,7 @@ A letter came one [D]day and this it [G]read
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-At a [G]stately ball in England
+[G]At a stately ball in England
 Stood the [C]Texas lass one [G]night
 The [D]scenes were all [G]splendid
 And the [D]light were dizzyingly bright

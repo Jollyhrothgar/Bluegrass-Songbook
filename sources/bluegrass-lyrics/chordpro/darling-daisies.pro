@@ -14,14 +14,14 @@ I was [E]going for a [E7]twilight [A]call
 {end_of_verse}
 
 {start_of_chorus}
-I [A]love to sing and dance among the [D]roses
+[A]I love to sing and dance among the [D]roses
 [E]Down by the garden [A]wall
 Tis there I’d like to meet my [D]daisies
 [E]When I make a [E7]twilight [A]call
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-She was sleeping in a bed of [D]roses
+[A]She was sleeping in a bed of [D]roses
 [E]Dreaming of the by [A]and by
 While the little birds around were [D]singing
 Up [E]above the [E7]branches so [A]high

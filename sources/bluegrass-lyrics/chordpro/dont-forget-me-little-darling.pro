@@ -14,7 +14,7 @@ And I [A]wonder little [A]darling
 {end_of_verse}
 
 {start_of_chorus}
-Don’t forget me little [A]darling
+[E]Don’t forget me little [A]darling
 [B7]When from [E]you I’m far [E]away
 But remember little [A]darling
 [B7]We may meet again someday

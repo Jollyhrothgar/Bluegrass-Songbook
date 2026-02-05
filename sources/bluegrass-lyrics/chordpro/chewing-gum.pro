@@ -12,7 +12,7 @@ I fell in love with a [A]pretty little girl, and could not get [D]away
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-Chawing chewing [A]gum, chewing chawing [A]gum
+[A]Chawing chewing gum, chewing chawing [A]gum
 Chawing chewing [A]gum, chewing chawing [A]gum
 {end_of_verse}
 
@@ -22,7 +22,7 @@ Next she give me [A]fifty cents, kissed me on the [D]stairs
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Mommy don’t ‘low me [A]to whistle, poppy don’t ‘low me [A]to sing
+[D]Mommy don’t ‘low me [A]to whistle, poppy don’t ‘low me [A]to sing
 They don’t ‘low me [A]to marry, I’ll marry just the same
 {end_of_verse}
 
@@ -42,6 +42,6 @@ Because he has so plenty [A]to eat, ‘specially pumpkin pie
 {end_of_verse}
 
 {start_of_verse: Verse 8}
-I took my girl [A]to church last night How do you reckon she done?
+[A]I took my girl [A]to church last night How do you reckon she done?
 She walked right up in the [A]preacher’s face and chewed her chewing [A]gum
 {end_of_verse}

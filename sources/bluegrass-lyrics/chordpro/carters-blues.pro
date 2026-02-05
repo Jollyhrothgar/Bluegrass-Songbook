@@ -25,14 +25,14 @@ My love for you will [D]never die
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-There is a flower I’ve heard them [A]say
+[D]There is a flower I’ve heard them [A]say
 That can be seen from day to [D]day
 And if that flower I only [A]could find
 To cure this aching heart of [D]mine
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-So fare you well my charming [A]little love
+[D]So fare you well my charming [A]little love
 O meet me in that land [D]above
 And when we meet there in that [D]land
 We’ll take no more this parting [D]hand

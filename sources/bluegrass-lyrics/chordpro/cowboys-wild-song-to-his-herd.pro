@@ -14,7 +14,7 @@ And [G]thought of his [G7]home so [C]dear
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-He [G]thought of his mother he loved so well
+[G]He thought of his mother he loved so well
 And his [C]slumber of sleep [G]was blurred
 Not a sound to be heard but throws of [F]the night
 As [G]he sang a wild [G7]song to [C]his herd

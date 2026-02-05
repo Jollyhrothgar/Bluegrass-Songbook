@@ -367,6 +367,49 @@ def generate_structured_chordpro(bl_data: dict, tmuk_chord_lines: list[str]) -> 
                     new_lines.append(line)
             section["lines"] = new_lines
 
+    # Fourth pass: ensure each section starts with a chord
+    # This helps musicians orient themselves at section boundaries
+    last_chord = None
+    chord_re = r'\[([A-G][b#]?(?:m|maj|min|dim|aug|sus|add|7|9|11|13)*)\]'
+
+    for section in chorded_sections:
+        if section["lines"]:
+            first_line = section["lines"][0]
+            # Check if first word already has a chord
+            first_word_has_chord = bool(first_line and re.match(r'^\[[A-G]', first_line))
+
+            if first_line and not first_word_has_chord:
+                # Find the first chord in this line
+                first_chord_match = re.search(chord_re, first_line)
+
+                if first_chord_match:
+                    # Move the first chord to the beginning of the line
+                    # Remove the chord from its current position
+                    first_chord = first_chord_match.group(1)
+                    # Only move if it's within the first few words (not mid-line)
+                    chord_pos = first_chord_match.start()
+                    text_before = first_line[:chord_pos]
+                    words_before = text_before.split()
+
+                    if len(words_before) <= 2:  # Chord is on 1st, 2nd, or 3rd word
+                        # Remove chord from current position and add at start
+                        new_line = first_line[:chord_pos] + first_line[chord_pos + len(first_chord_match.group(0)):]
+                        section["lines"][0] = f"[{first_chord}]{new_line}"
+                    else:
+                        # Chord is further in - add section chord at start
+                        chord_to_add = last_chord if last_chord else first_chord
+                        section["lines"][0] = f"[{chord_to_add}]{first_line}"
+                elif last_chord:
+                    # No chord in first line - use last chord from previous section
+                    section["lines"][0] = f"[{last_chord}]{first_line}"
+
+        # Track last chord for next section
+        for line in reversed(section["lines"]):
+            matches = list(re.finditer(chord_re, line))
+            if matches:
+                last_chord = matches[-1].group(1)
+                break
+
     # Output with structure markers
     verse_num = 0
     for section in chorded_sections:

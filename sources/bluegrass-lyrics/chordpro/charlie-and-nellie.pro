@@ -21,49 +21,49 @@ Of [C]course kind [D]friends will [G]agree
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Please send [G]me my ring and pictures
+[G]Please send me my ring and pictures
 [C]Also my letters and [G]books
 My clothes with [G]many kind wishes
 [C]Respectfully [D]yours Charlie [G]Brooks
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-I heard all about it [G]dear Charlie
+[G]I heard all about it [G]dear Charlie
 I [C]knew it would end [G]this way
 I hope you will [G]always live happy
 With [C]your [G]loving [D]little [G]wife Miss Gray
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-Now here’s your ring [G]dear Charlie
+[G]Now here’s your ring [G]dear Charlie
 Don’t [C]give it to her [G]I pray
 Unless you tell [G]her twas once mine
 I [C]wore [G]it one [D]year [G]today
 {end_of_verse}
 
 {start_of_verse: Verse 6}
-One year today [G]dear Charlie
+[G]One year today [G]dear Charlie
 So [C]happy were we [G]both
 You vowed you’d never forsake [G]me
 But [C]I [G]find you [D]untrue [G]to your oath
 {end_of_verse}
 
 {start_of_verse: Verse 7}
-Here’s your picture [G]dear Charlie
+[G]Here’s your picture [G]dear Charlie
 It’s [C]almost faded [G]away
 Because I kissed [G]it so often
 And [C]this [G]you can [D]tell [G]Miss Gray
 {end_of_verse}
 
 {start_of_verse: Verse 8}
-As far as your letters [G]dear Charlie
+[G]As far as your letters [G]dear Charlie
 I [C]burned them as they [G]came
 I feared by [G]reading them over
 Would [C]cause [G]our love [D]to [G]inflame
 {end_of_verse}
 
 {start_of_verse: Verse 9}
-I must say goodbye [G]dear Charlie
+[G]I must say goodbye [G]dear Charlie
 My [C]letter is near [G]an end
 Remember I’m [G]always and always
 [G]Forever and [G]ever your friend

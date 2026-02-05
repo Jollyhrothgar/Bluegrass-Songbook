@@ -14,14 +14,14 @@ On mother’s grave I [D]shed many [G]tears
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-I’d scarcely reached manhood when I [G]left my old home
+[G]I’d scarcely reached manhood when I [G]left my old home
 With some other fellows to the [D]west we did roam
 [G]Seeking employment though [C]scarcely could [G]find
 We seemed so poor and the [D]people [G]unkind
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Was in New York City where we [C]first met our fate
+[G]Was in New York City where we [C]first met our fate
 We were arrested while [D]roaming the streets
 The [G]charges were burglars the [C]theft it was [G]called
 But they said it would place us [D]behind the [G]stone walls

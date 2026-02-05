@@ -42,7 +42,7 @@ In the [E]cold and silent [A]grave
 {end_of_verse}
 
 {start_of_chorus}
-Lay [A]me where my Nellie’s sleeping
+[A]Lay me where my Nellie’s sleeping
 Close beside her let [A]me lie
 [A]Where the blooming [A]flowers are creeping
 There [A]oh lay [A]me when I die

@@ -7,14 +7,14 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-I’ve [A]found a sweet haven of sunshine [A]at [A]last,
+[A]I’ve found a sweet haven of sunshine [A]at [A]last,
 and Jesus abiding [E]above,
 His [A]dear arms around me are [D]lovingly [A]cast
 and sweetly He [E]tells His [A]love
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-The [A]tempest is o’er
+[A]The tempest is o’er
 (The [E]danger, the [A]tempest forever is o’er)
 I’m [D]safe evermore
 (My anchor is holding I’m [D]safe ever more)
@@ -27,14 +27,14 @@ I’m [D]anchored in [A]love divine
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-He saw me endangered and [D]lovingly came
+[A]He saw me endangered and [D]lovingly came
 To pilot my [E]storm-beaten soul
 Sweet peace He has spoken and bless His [A]dear name
 The billows [E]no longer [A]roll
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-His [A]love shall control me through life and in death
+[A]His love shall control me through life and in death
 Completely I’ll trust to [E]the end
 I’ll praise Him each hour and my [A]last fleeting breath
 Shall sing of my [E]soul’s Best [A]Friend

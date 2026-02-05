@@ -7,14 +7,14 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-I [D]grew up on the side of Clinch Mountain
+[D]I grew up on the side of Clinch Mountain
 With the [G]beauties and the music of the [D]woods
 The sweet [G]song of the bright bubbling [D]fountain
 and the [A]warble of the [A7]birds I understood
 {end_of_verse}
 
 {start_of_chorus}
-When I’ve sung my last [G]song in the evening
+[A7]When I’ve sung my last [G]song in the evening
 And [G]the sun sets in the [D]golden west
 All the [G]scenes of this world I’ll be [D]leaving
 In the [G]shadow of Clinch Mountain I will [D]rest
@@ -35,7 +35,7 @@ We were [A]given by the [A7]waters of the flood
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Out [D]that gate I have passed since my childhood
+[D]Out that gate I have passed since my childhood
 O’er the [G]railway through the tunnel to the [D]west
 singing [G]songs of the Clinch Mountain [D]wildwoods
 [G]Song that people found and [A7]birds loved the best

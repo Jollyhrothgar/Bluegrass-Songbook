@@ -13,7 +13,7 @@ For the [A]face of my [A7]own true [D]love
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-But the [D]darkness [G]hides
+[D]But the darkness [G]hides
 He is [D]there to guide
 By the [A]light of the [A7]moon [D]above
 {end_of_verse}
@@ -28,7 +28,7 @@ As we [A]strolled through the [A7]lonesome [D]pines
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
-Bright stars [D]above
+[D]Bright stars above
 Two sweethearts in [D]love
 As we [A]sang to the [A7]cooing [D]doves
 {end_of_verse}

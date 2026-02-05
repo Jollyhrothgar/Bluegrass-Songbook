@@ -7,7 +7,7 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-There’s a [A]little [E]grave on the [D]green [A]hillside that [A]lies to the morning [E]sun
+[A]There’s a little [E]grave on the [D]green [A]hillside that [A]lies to the morning [E]sun
 And the way [A]worn feet often [D]wander there when the [E]cares of the day are [A]done
 We [D]sometimes sit in the [A]twilight fall and talk of a far off [E]land
 And we [D]sometimes feel in the [A]twilight there the [E]touch of a vanished [A]hand
@@ -19,14 +19,14 @@ In the [A]years to come we will [D]calmly sleep in a [E]grave on the [D]green [A
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-And this [E]land is full of these [A]little graves in the valleys plains and hills
+[E]And this land is full of these [A]little graves in the valleys plains and hills
 There’s angel too for each [A]little [E]grave an angel procession fills
 I know not how but I [D]sometimes think that they lead us with gentle [A]hand
 And a whisper falls on a willing ear from the shore of a far off [E]land
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-And these [A]little graves are but wayside marks that point to a far off [E]land
+[A]And these little graves are but wayside marks that point to a far off [E]land
 And they speak to the soul of a better day of a day that’s near at [A]hand
 Though [D]we first must walk through [A]the chartless fields yet Christ will be our [E]guide
 We will reach the shore of a far off [E]land through a [E]grave on a [D]green [A]hillside

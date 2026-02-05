@@ -7,28 +7,28 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-You have [C]heard of little Moses in the bull rush
+[C]You have heard of little Moses in the bull rush
 You have [C]heard of fearless David and his [G]sling
 You have [C]heard the story told of dreaming Joseph
 And of [G7]Jonah and the whale you often [C]sing
 {end_of_verse}
 
 {start_of_chorus}
-There is going to be a [C]meeting in the air
+[C]There is going to be a [C]meeting in the air
 In [C]that sweet sweet by and by
 [C]I am going to [G]meet you meet you over there
 In [C]that home beyond the sky
 {end_of_chorus}
 
 {start_of_chorus}
-The singing you will hear never [C]heard by mortals ears
+[C]The singing you will hear never [C]heard by mortals ears
 [G7]Will be [C]glorious I do declare
 [C]And God’s own son will [G]be the leading one
 At [C]that meeting in the air
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-There [C]are many many others through the bible
+[C]There are many many others through the bible
 I should [C]like to meet them all I do [G]declare
 By and [C]by the lord will surely let us meet them
 At [G7]that meeting in the [C]air

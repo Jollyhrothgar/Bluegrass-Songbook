@@ -7,28 +7,28 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Once I [D]loved your fond affection
+[D]Once I loved your fond affection
 All my [G]hopes on you was [D]spent
 Till [D]a [A]dark eyed girl [D]persuaded
 And you [A]care no more for [D]me
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-Go on and [D]leave [D]me if you wish to
+[D]Go on and [D]leave [D]me if you wish to
 Never [G]let [D]me cross your [D]mind
 In your [G]heart to love another
 Never on [A]earth will I call you [D]mine
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-When I’m [D]dead and in my coffin
+[D]When I’m dead and in my coffin
 And my [G]pale face towards [D]the sun
 Will you come and sit beside [D]me
 And think [A]of what you’ve [D]done
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-When I’m [D]dead and in my coffin
+[D]When I’m dead and in my coffin
 And the shroud about [D]me bows
 Will [D]you [A]come and [D]scatter roses
 [A]Upon your lover’s [D]mound

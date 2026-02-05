@@ -7,7 +7,7 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Just [D]let me tell you how a [A]liar will do
+[D]Just let me tell you how a [A]liar will do
 He’s always coming with [A]something new
 He’ll [D]steal your heart with false pretence
 Making out like he’s your [A]bosom [D]friend
@@ -18,7 +18,7 @@ Better [D]let that [A]liar [D]alone
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-When a [A]liar takes the notion to bend the truth
+[A]When a liar takes the notion to bend the truth
 He’ll lay around his neighbors and [D]get the news
 [A]And nearly every day when [D]you look out
 You can see that [A]liar coming to your house

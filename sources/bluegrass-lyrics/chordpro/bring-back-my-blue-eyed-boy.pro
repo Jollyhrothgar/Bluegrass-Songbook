@@ -18,14 +18,14 @@ That [E]I may ever happy [A]be
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-Must [E]I go bound and have no free
+[E]Must I go bound and have no free
 Must [E]I love a boy that don’t love [E]me
 Or must [E]I act the childish part
 [E]And love that boy that broke [A]my heart
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Last night my lover promised [E]me
+[A]Last night my lover promised [E]me
 To take [E]me across the deep blue sea
 And now he’s gone and left [E]me alone
 [E]An orphan girl without [A]a home

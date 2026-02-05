@@ -25,6 +25,6 @@ Afraid my ma might find it out and [D]cause her great pain
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-She’ll see [G]you too the door kiss and then goodnight
+[G]She’ll see you too the door kiss and then goodnight
 [D]Every [G]time she bows and declares she’ll [C]never do so any more
 {end_of_verse}

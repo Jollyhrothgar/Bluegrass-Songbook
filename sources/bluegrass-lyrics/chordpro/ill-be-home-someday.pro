@@ -7,28 +7,28 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-I was [D]standing by the bedside [A]of a [D]neighbor
+[D]I was standing by the bedside [A]of a [D]neighbor
 Who was just about to cross the swelling [A]tide
 I [D]asked if she would do [A]me a [D]favor
 Just take a message to the [A]other [D]side
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-If you see my savior tell Him that you saw [A]me
+[D]If you see my savior tell Him that you saw [A]me
 When you saw [A]me I was on my way
 You may meet some old friends who may ask about [A]me
 Just tell them I’ll be [A]home some [D]day
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Now you’ll have to take this journey on without [A]me
+[D]Now you’ll have to take this journey on without [A]me
 It’s a debt that soon or later must [A]be paid
 If [D]you see my savior don’t [A]forget [D]to tell Him
 Don’t forget to tell him [A]what I [D]say
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-You may [D]chance to see my father [A]or my [D]mother
+[D]You may chance to see my father [A]or my [D]mother
 Or some friends who have gone [A]before
 You [D]may chance to see my [A]sister or [D]my brother
 But try to see my savior first [A]of all

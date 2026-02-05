@@ -21,7 +21,7 @@
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-That wondrous city far [Bb]beyond confine
+[Bb]That wondrous city far [Bb]beyond confine
 [Bb]Where all is joy and peace so pure divine
 [Bb]In visions I [Eb]in varying streaks can [Bb]see
 And wonder if [Bb]there’s room in [F]heaven [F]for [Bb]me

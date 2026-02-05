@@ -21,7 +21,7 @@ There’s [B7]someone waiting for [E]me
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-Now young man [E]I will [B7]tell you
+[E]Now young man [E]I will [B7]tell you
 If [B7]you want my heart my [E]hand
 You better quit your [E]drinking
 [B7]And be a sober [E]man
