@@ -22,14 +22,14 @@ There’s [B7]someone waiting for [E]me
 
 {start_of_verse: Verse 2}
 Now young man [E]I will [B7]tell you
-If you want my heart my hand
-You better quit your drinking
-And be a sober man
+If [B7]you want my heart my [E]hand
+You better quit your [E]drinking
+[B7]And be a sober [E]man
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Go prove yourself be faithful
-Go prove yourself be true
-And sometime in the future
-Perhaps I’ll marry you
+[E]Go prove yourself be faithful
+[B7]Go prove yourself be [E]true
+And sometime in the [E]future
+[B7]Perhaps I’ll marry [E]you
 {end_of_verse}

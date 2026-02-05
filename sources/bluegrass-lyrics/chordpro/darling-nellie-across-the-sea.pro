@@ -28,17 +28,17 @@ Who so dearly cared for [A]me
 {end_of_verse}
 
 {start_of_chorus}
-I was wondering through the grave yard
-When found where Nellie lay
+[A]I was wondering through [A]the grave yard
+When found where Nellie [E]lay
 It was there my heart was broken
-It was there I knelt and prayed
+It was [E]there I knelt and [A]prayed
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
-Now I’m left alone in sadness
-On the fields the flowers wave
+[A]Now I’m left alone in sadness
+On the fields the flowers [A]wave
 And the girl I love is sleeping
-In the cold and silent grave
+In the [E]cold and silent [A]grave
 {end_of_verse}
 
 {start_of_chorus}

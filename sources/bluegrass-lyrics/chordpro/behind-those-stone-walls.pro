@@ -15,42 +15,42 @@ On mother’s grave I [D]shed many [G]tears
 
 {start_of_verse: Verse 2}
 I’d scarcely reached manhood when I [G]left my old home
-With some other fellows to the west we did roam
-Seeking employment though scarcely could find
-We seemed so poor and the people unkind
+With some other fellows to the [D]west we did roam
+[G]Seeking employment though [C]scarcely could [G]find
+We seemed so poor and the [D]people [G]unkind
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 Was in New York City where we [C]first met our fate
-We were arrested while roaming the streets
-The charges were burglars the theft it was called
-But they said it would place us behind the stone walls
+We were arrested while [D]roaming the streets
+The [G]charges were burglars the [C]theft it was [G]called
+But they said it would place us [D]behind the [G]stone walls
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-We were marched next morning to the courthouse for trial
-My pal was downhearted so I gave him a smile
-We pleaded for mercy but was shown none at all
+[G]We were marched next morning to the [C]courthouse for [G]trial
+My pal was downhearted so I [D]gave him a smile
+We [G]pleaded for mercy but was [C]shown none at [G]all
 They gave us twenty [G]years behind the stone walls
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-We were handcuffed next morning and marched to the pen
-We arrived there at midnight with a few other men
-The doors were thrown open we marched in the halls
-Just learn to be a convict behind the stone walls
+[G]We were handcuffed next morning [C]and marched to [G]the pen
+We arrived there at midnight with a [D]few other men
+The [G]doors were thrown open we [C]marched in the [G]halls
+Just learn to be a convict [D]behind the [G]stone walls
 {end_of_verse}
 
 {start_of_verse: Verse 6}
-While lying that night on a pallet of straw
-I swore I would never again break the law
-There’s none but your mother to bear your downfall
-When you are a convict behind the stone walls
+[G]While lying that night on a [C]pallet of [G]straw
+I swore I would never [D]again break the law
+There’s [G]none but your mother to [C]bear your [G]downfall
+When you are a convict [D]behind the [G]stone walls
 {end_of_verse}
 
 {start_of_verse: Verse 7}
-Come all you young fellows and listen to me
-When you lose life’s pleasures you’ve lost liberty
-I’ve tasted life’s pleasures it’s bitter than gall
-It’ll lead to a cell behind the stone wall
+[G]Come all you young fellows and [C]listen to [G]me
+When you lose life’s pleasures you’ve [D]lost liberty
+I’ve [G]tasted life’s pleasures it’s [C]bitter than [G]gall
+It’ll lead to a cell [D]behind the [G]stone wall
 {end_of_verse}

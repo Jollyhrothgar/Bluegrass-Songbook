@@ -21,8 +21,8 @@ Saturday I’ve got the victory and [G7]Sunday’s always [C]bright
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-I fell in love with Jesus and he fell in love with me
-That’s the very reason I’ve got the victory
+I [C]fell in love [C]with Jesus and he fell in love [G]with me
+That’s the very reason I’ve [G7]got the victory
 [G7]I’m happy when it’s raining [G7]I’m happy when it shines
 [G7]I’m happy now with Jesus [G7]I’m happy all the time
 {end_of_verse}

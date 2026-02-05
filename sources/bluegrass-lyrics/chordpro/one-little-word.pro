@@ -31,12 +31,12 @@ Too late too late now my [D]fondest hopes are [A]dead
 [D]In school days [D]we had been sweethearts
 She was [A]her father’s pride
 [A]Her folks lived [D]in a mansion
-Our cottage by its side
+Our [E]cottage [D]by [A]its [E7]side
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Though years have brought their changes
-The same old love still holds
+Though [A]years have brought their changes
+[E]The same [D]old [A]love still holds
 She [A]wed to please [A]her parents
-A man of wealth and gold
+A [E]man of [D]wealth [A]and [E7]gold
 {end_of_verse}

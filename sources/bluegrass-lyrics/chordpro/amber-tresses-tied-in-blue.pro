@@ -21,15 +21,15 @@ Ever loving kind [D]and [A]true
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-Fact decreed that we parted
-When the leaves of autumn fell
-Then two hearts were separated
-That had loved each other well
+[D]Fact decreed that we parted
+[D]When the leaves of autumn [A]fell
+[D]Then two hearts were [G]separated
+[A]That had loved each [D]other well
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 [A]She was all I had to cherish
 Every loving king [D]and [A]true
-Now I see in every vision
+[D]Now I see in every [G]vision
 [A]Amber tresses tied in [D]blue
 {end_of_verse}

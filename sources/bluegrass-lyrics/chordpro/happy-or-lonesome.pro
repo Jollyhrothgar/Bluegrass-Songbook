@@ -32,10 +32,10 @@ Or do [A]you feel lonesome too
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
-When the sun is sinking
+[A]When the sun [E]is sinking
 [E]In the golden west
 And the birds and flowers
-They have gone to rest
+[E]They have gone to rest
 {end_of_verse}
 
 {start_of_verse: Verse 4}

@@ -28,6 +28,6 @@ And a whisper falls on a willing ear from the shore of a far off [E]land
 {start_of_verse: Verse 3}
 And these [A]little graves are but wayside marks that point to a far off [E]land
 And they speak to the soul of a better day of a day that’s near at [A]hand
-Though we first must walk through the chartless fields yet Christ will be our guide
+Though [D]we first must walk through [A]the chartless fields yet Christ will be our [E]guide
 We will reach the shore of a far off [E]land through a [E]grave on a [D]green [A]hillside
 {end_of_verse}

@@ -15,7 +15,7 @@ The [G]guitars are ringing come [G7]on and [C]waltz
 
 {start_of_verse: Verse 2}
 The girls are singing the [G]guitars are ringing
-Their steps are so neat their music so sweet
+[C]Their steps are [C]so neat [F]their music [C]so sweet
 [C]Waltz Kitty [C]waltz let [F]everybody [C]waltz
 The [G]guitars are ringing come [G7]on and [C]waltz
 {end_of_verse}

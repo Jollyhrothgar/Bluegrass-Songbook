@@ -15,35 +15,35 @@ And [G]thought of his [G7]home so [C]dear
 
 {start_of_verse: Verse 2}
 He [G]thought of his mother he loved so well
-And his slumber of sleep was blurred
-Not a sound to be heard but throws of the night
-As he sang a wild song to his herd
+And his [C]slumber of sleep [G]was blurred
+Not a sound to be heard but throws of [F]the night
+As [G]he sang a wild [G7]song to [C]his herd
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-The cattle are lying so quite and still
-On a carpet that mantles the west ?
-While the golden lanes from the sky of night
-Sing peace to the cowboys stress ?
+[C]The cattle are lying so [F]quite and still
+On a [C]carpet that mantles [G]the west ?
+While the golden lanes from the sky [F]of night
+Sing [G]peace to the [G7]cowboys [C]stress ?
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Still he thinks of his mother in a far away land
-And his thoughts by his memory was stirred
+[C]Still he thinks of his mother in [F]a far away land
+And his [C]thoughts by his memory [G]was stirred
 And he steals himself the old [G7]home again
-As he sang a wild song to his herd
+As [G]he sang a wild [G7]song to [C]his herd
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-He’s far from the din of the city noise
-Where the lanes of folly do shine
-He’s far from the jaws of the dies sin ?
-And the flow of sparkling wine
+[C]He’s far from the din of [F]the city noise
+Where the [C]lanes of folly [G]do shine
+He’s far from the jaws of the dies [F]sin ?
+[G]And the flow [G7]of sparkling [C]wine
 {end_of_verse}
 
 {start_of_verse: Verse 6}
-He’s in the great west with its mantle of green
-Where his neighbors say never a word
-A land of marriage of mountains and plains
-Where a cowboy sings low to his herd
+[C]He’s in the great west with its [F]mantle of green
+Where his [C]neighbors say never [G]a word
+A land of marriage of mountains [F]and plains
+Where [G]a cowboy sings [G7]low to [C]his herd
 {end_of_verse}

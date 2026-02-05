@@ -22,14 +22,14 @@ Tis there I’d like to meet my [D]daisies
 
 {start_of_verse: Verse 2}
 She was sleeping in a bed of [D]roses
-Dreaming of the by and by
-While the little birds around were singing
-Up above the branches so high
+[E]Dreaming of the by [A]and by
+While the little birds around were [D]singing
+Up [E]above the [E7]branches so [A]high
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-If you want to see a bright eyed beauty
-Bright as the stars that shine
-Just come and go with me some evening
-To see this pretty girl of mine
+[E]If [A]you want to see a bright eyed [D]beauty
+[E]Bright as the stars that [A]shine
+Just come and go with me some [D]evening
+To [E]see this pretty [E7]girl of [A]mine
 {end_of_verse}

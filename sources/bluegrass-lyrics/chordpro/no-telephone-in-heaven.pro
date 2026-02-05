@@ -29,7 +29,7 @@ With no one there to kiss [G]me when the lights begin to fade
 
 {start_of_verse: Verse 3}
 All through the day [G]I [G]want her since my dolly’s got so sore
-With the awful punching brother give it with his little sword
-There aint no one to fix it since mamma’s gone away
-And poor little lonesome dolly’s getting thinner every day
+With the awful punching brother give it with his [D]little sword
+[G]There aint no one to fix it [C]since mamma’s gone [G]away
+And poor little lonesome dolly’s getting [D]thinner every [G]day
 {end_of_verse}

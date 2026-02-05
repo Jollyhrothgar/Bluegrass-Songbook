@@ -27,11 +27,11 @@ Judgment day is drawing nigh
 {start_of_verse: Verse 2}
 [A]When wicked men its wrath shall see
 [D]Where shall I [A]be
-And to the rocks and mountains flee
+[A]And to the rocks and mountains flee
 [D]Where shall I [A]be
-And hills and mountains wear away
+[A]And hills and mountains wear away
 [D]Where shall I [A]be
-And all the work of men decay
+[A]And all the [A]work of men decay
 [D]Where shall I [A]be
 {end_of_verse}
 

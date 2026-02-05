@@ -30,11 +30,11 @@ As we strolled through the lonesome pines
 {start_of_verse: Verse 3}
 Bright stars [D]above
 Two sweethearts in [D]love
-As we sang to the cooing doves
+As we [A]sang to the [A7]cooing [D]doves
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-He has brought me back
-To that mountain shack
+[D]He has brought me [G]back
+To that [D]mountain shack
 By the touch of her hand in [D]love
 {end_of_verse}

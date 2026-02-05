@@ -29,9 +29,9 @@ I’ll [A]be just as [A7]happy as [D]you
 
 {start_of_verse: Verse 3}
 Oh [A]tell [D]me sweet [D]fern, is he thinking of [D]me
-And the promise he made long ago
+And [A]the promise [A7]he made long [D]ago
 He said he’d return from over the [D]sea
-Oh why do the years go so slow
+Oh [A]why do the [A7]years go so [D]slow
 {end_of_verse}
 
 {start_of_verse: Verse 4}
@@ -43,9 +43,9 @@ And [A]tell him to [A7]come back to [D]me
 
 {start_of_verse: Verse 5}
 Upon my finger he placed a small ring
-On the day he was leaving his home
+On [A]the day he [A7]was leaving [D]his home
 I promised I’d [A]be his own little girl
-And love him wherever he’d roam
+And [A]love him [A7]wherever he’d [D]roam
 {end_of_verse}
 
 {start_of_verse: Verse 6}

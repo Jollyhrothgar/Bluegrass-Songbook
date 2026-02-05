@@ -22,15 +22,15 @@ Please don’t [E]bury me on the lone [A]prairie
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-My father he lies sleeping
-Beneath the deep blue sea
+[A]My father he lies sleeping
+Beneath the [D]deep blue [A]sea
 I have no father no mother
 There’s none but hell and me
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-My mother she lies sleeping
-Beneath the church yard rocks
+[A]My mother she lies sleeping
+Beneath the [D]church yard [A]rocks
 Her body lies there moldering
 And her spirit has gone to God
 {end_of_verse}

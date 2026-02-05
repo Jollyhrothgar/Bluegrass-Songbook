@@ -21,29 +21,29 @@ I’ll forgive but I’ll never forget
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-I was young when I wrote my first letter
+I [F]was young when I wrote my first letter
 I blotted the lines with tears
-But now I am old I know better
+But now I am old [F]I know better
 We parted for many long years
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Oh Ruth, Oh Ruth how I love you
+Oh [F]Ruth, Oh Ruth how I love you
 You just seem to me like a bird
-Although you went back on your promise
+Although you went back [F]on your promise
 Although you went back on your word
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-We parted in the month of September
+We [F]parted in the month of September
 Some said we parted for life
 But I hope someday or [F]another
 I’ll call you my sweet darling wife
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-I wish I had someone to love me
+I [F]wish I had someone to love me
 Someone to call me their own
-For I’m out in this wide world a wandering
+For I’m out in this wide [F]world a wandering
 I’m tired of living alone
 {end_of_verse}

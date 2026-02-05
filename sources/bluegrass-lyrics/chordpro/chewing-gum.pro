@@ -17,8 +17,8 @@ Chawing chewing [A]gum, chewing chawing [A]gum
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-First she give me peaches, next she give me pears
-Next she give me fifty cents, kissed me on the stairs
+[D]First she give [A]me peaches, next she give [A]me [D]pears
+Next she give me [A]fifty cents, kissed me on the [D]stairs
 {end_of_verse}
 
 {start_of_verse: Verse 4}
@@ -27,17 +27,17 @@ They don’t ‘low me [A]to marry, I’ll marry just the same
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-I wouldn’t have a lawyer, I’ll tell you the reason why
-Every time he opens his mouth he tells a great big lie
+[D]I wouldn’t have [A]a lawyer, I’ll tell you the [A]reason [D]why
+Every time he [A]opens his mouth he tells a great big [D]lie
 {end_of_verse}
 
 {start_of_verse: Verse 6}
-I wouldn’t have a doctor, I’ll tell you the reason why
-He rides all over the country and makes the people die
+[D]I wouldn’t have [A]a doctor, I’ll tell you the [D]reason why
+He rides all over [A]the country and makes the people [D]die
 {end_of_verse}
 
 {start_of_verse: Verse 7}
-I wouldn’t have a farmer, I’ll tell you the reason why
+[D]I wouldn’t have [A]a farmer, I’ll tell you the [A]reason [D]why
 Because he has so plenty [A]to eat, ‘specially pumpkin pie
 {end_of_verse}
 

@@ -21,22 +21,22 @@ In the shadow of Clinch Mountain I will rest
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-Long ago said the oak and the cedar
-Singing deeply in a whisper of the past
-Stood not then this great towering leader
+[D]Long ago said the oak and the cedar
+Singing [G]deeply in a whisper of the [D]past
+Stood not [G]then this great towering [D]leader
 nor the [D]fountain where the crystal gems are kept (passed?)
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Then I asked how this green lofty mountain
-in the caldron the lonely desert stood
+[D]Then I asked how this green lofty mountain
+in [G]the caldron the lonely desert [D]stood
 Said this [G]song of the bright sunny [D]fountain
-We were given by the waters of the flood
+We were [A]given by the [A7]waters of the flood
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Out that gate I have passed since my childhood
-O’er the railway through the tunnel to the west
-singing songs of the Clinch Mountain wildwoods
+Out [D]that gate I have passed since my childhood
+O’er the [G]railway through the tunnel to the [D]west
+singing [G]songs of the Clinch Mountain [D]wildwoods
 [G]Song that people found and [A7]birds loved the best
 {end_of_verse}

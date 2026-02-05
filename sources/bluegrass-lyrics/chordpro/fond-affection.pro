@@ -21,15 +21,15 @@ Never on [A]earth will I call you [D]mine
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-When I’m dead and in my coffin
-And my pale face towards the sun
+When I’m [D]dead and in my coffin
+And my [G]pale face towards [D]the sun
 Will you come and sit beside [D]me
-And think of what you’ve done
+And think [A]of what you’ve [D]done
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-When I’m dead and in my coffin
+When I’m [D]dead and in my coffin
 And the shroud about [D]me bows
 Will you come and scatter roses
-Upon your lover’s mound
+[A]Upon your lover’s [D]mound
 {end_of_verse}

@@ -21,8 +21,8 @@ Oh [C#]weary [C#](weary prodigal [F#]son) prodigal [F#]son [C#](weary prodigal [
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-Come there’s bread in the house of the father and His fair
+[F#]Come there’s [F#]bread in the house of the father and His fair
 [C#]Hear oh [C#]hear Him [F#]calling [F#]calling out for [F#]thee
-Low the table spread and a feast is waiting there
+[F#]Low the table spread and a feast [F#]is waiting there
 [C#]Hear His loving voice [F#]calling [F#]still [F#](calling [F#]still)
 {end_of_verse}

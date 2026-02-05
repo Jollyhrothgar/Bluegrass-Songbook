@@ -8,6 +8,30 @@ import json
 import re
 from pathlib import Path
 from datetime import datetime
+import pyphen
+
+# Syllable counter for chord placement
+_hyphenator = pyphen.Pyphen(lang='en_US')
+
+
+def _count_syllables(word: str) -> int:
+    """Count syllables in a word using hyphenation."""
+    clean = re.sub(r'[^\w]', '', word.lower())
+    if not clean:
+        return 0
+    hyphenated = _hyphenator.inserted(clean)
+    return len(hyphenated.split('-'))
+
+
+def _syllables_to_word_index(words: list[str], target_syllable: int) -> int:
+    """Find which word contains the target syllable (0-indexed)."""
+    syllable_count = 0
+    for i, word in enumerate(words):
+        word_syllables = _count_syllables(word)
+        if syllable_count + word_syllables > target_syllable:
+            return i
+        syllable_count += word_syllables
+    return len(words) - 1  # Last word if exceeded
 
 SOURCE_DIR = Path(__file__).parent
 PARSED_DIR = SOURCE_DIR / "parsed"
@@ -64,32 +88,130 @@ def apply_chords_to_line(bl_line: str, chord_map: dict[str, str]) -> str:
     return ' '.join(result)
 
 
+def extract_chord_pattern(lines: list[str]) -> list[list[tuple[float, str]]]:
+    """Extract chord positions as relative syllable positions from chorded lines."""
+    patterns = []
+    chord_re = r'\[([A-G][b#]?(?:m|maj|min|dim|aug|sus|add|7|9|11|13)*)\]'
+
+    for line in lines:
+        clean = re.sub(chord_re, '', line)
+        words = clean.split()
+        total_syllables = sum(_count_syllables(w) for w in words)
+
+        chords = []
+        for match in re.finditer(chord_re, line):
+            # Count syllables before this chord
+            text_before = re.sub(chord_re, '', line[:match.start()])
+            words_before = text_before.split()
+            syllables_before = sum(_count_syllables(w) for w in words_before)
+            # Store as relative syllable position
+            rel_pos = syllables_before / max(total_syllables, 1)
+            chords.append((rel_pos, match.group(1)))
+
+        patterns.append(chords)
+
+    return patterns
+
+
+def apply_chord_pattern(lines: list[str], patterns: list[list[tuple[float, str]]]) -> list[str]:
+    """Apply a chord pattern to unchored lines using relative syllable positions."""
+    result = []
+
+    for line, pattern in zip(lines, patterns):
+        # Skip if line already has chords
+        if '[' in line:
+            result.append(line)
+            continue
+
+        if not pattern:
+            result.append(line)
+            continue
+
+        words = line.split()
+        total_syllables = sum(_count_syllables(w) for w in words)
+
+        # Map relative syllable positions to word indices
+        chord_at_word = {}
+        for rel_pos, chord in pattern:
+            target_syllable = int(rel_pos * total_syllables)
+            word_idx = _syllables_to_word_index(words, target_syllable)
+            chord_at_word[word_idx] = chord
+
+        # Build result with chords
+        new_words = []
+        for i, word in enumerate(words):
+            if i in chord_at_word:
+                new_words.append(f"[{chord_at_word[i]}]{word}")
+            else:
+                new_words.append(word)
+
+        result.append(' '.join(new_words))
+
+    return result
+
+
+def has_chords(lines: list[str]) -> bool:
+    """Check if any line has chords."""
+    return any('[' in line for line in lines)
+
+
 def generate_structured_chordpro(bl_data: dict, tmuk_chord_lines: list[str]) -> list[str]:
     """
     Generate ChordPro with proper verse/chorus structure from BluegrassLyrics,
     with chords merged from TMUK using word-level alignment.
+
+    Uses pattern repetition to fill in subsequent verses/choruses.
     """
     lines = []
 
     # Build chord map from all TMUK lines
     chord_map = extract_chord_map(tmuk_chord_lines)
 
-    # Output BL lyrics with structure markers and merged chords
-    verse_num = 0
-    for section in bl_data.get("sections", []):
+    # First pass: apply word-level chords to all sections
+    sections = bl_data.get("sections", [])
+    chorded_sections = []
+
+    for section in sections:
         section_type = section.get("type", "verse")
         section_lines = section.get("lines", [])
 
-        if section_type == "chorus":
+        chorded_lines = [apply_chords_to_line(line, chord_map) for line in section_lines]
+        chorded_sections.append({
+            "type": section_type,
+            "lines": chorded_lines,
+        })
+
+    # Second pass: pattern fill - find first chorded section of each type
+    verse_pattern = None
+    chorus_pattern = None
+
+    for section in chorded_sections:
+        if section["type"] == "verse" and verse_pattern is None and has_chords(section["lines"]):
+            verse_pattern = extract_chord_pattern(section["lines"])
+        elif section["type"] == "chorus" and chorus_pattern is None and has_chords(section["lines"]):
+            chorus_pattern = extract_chord_pattern(section["lines"])
+
+    # Apply patterns to fill gaps - apply to any section with matching line count
+    # This fills in individual unchored lines, not just fully unchored sections
+    for section in chorded_sections:
+        if section["type"] == "verse" and verse_pattern:
+            if len(section["lines"]) == len(verse_pattern):
+                section["lines"] = apply_chord_pattern(section["lines"], verse_pattern)
+        elif section["type"] == "chorus" and chorus_pattern:
+            if len(section["lines"]) == len(chorus_pattern):
+                section["lines"] = apply_chord_pattern(section["lines"], chorus_pattern)
+
+    # Output with structure markers
+    verse_num = 0
+    for section in chorded_sections:
+        if section["type"] == "chorus":
             lines.append("{start_of_chorus}")
-            for line in section_lines:
-                lines.append(apply_chords_to_line(line, chord_map))
+            lines.extend(section["lines"])
             lines.append("{end_of_chorus}")
         else:
             verse_num += 1
             lines.append(f"{{start_of_verse: Verse {verse_num}}}")
-            for line in section_lines:
-                lines.append(apply_chords_to_line(line, chord_map))
+            lines.extend(section["lines"])
             lines.append("{end_of_verse}")
 
         lines.append("")  # Blank line between sections

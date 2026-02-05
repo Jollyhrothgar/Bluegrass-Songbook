@@ -32,15 +32,15 @@ The [C]other [G]one is my sweetheart
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
-My sweetheart is a poor working girl
-Whom I’m determined to wed
-Father says no it will never be so
+[G]My sweetheart is [G]a poor working girl
+Whom [C]I’m determined to [G]wed
+[D]Father says no [G]it will [G]never be so
 [G]You must marry an heiress instead
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Mother was young she knows how it is
-When father met her she was poor
-Ned don’t fret she’ll be your wife yet
-For he will consent I am sure
+[G]Mother was young [G]she knows how it is
+When [C]father met her she [G]was poor
+[C]Ned [D]don’t fret [G]she’ll be [G]your wife yet
+For [D]he will consent I [G]am sure
 {end_of_verse}

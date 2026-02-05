@@ -22,14 +22,14 @@ My home’s in [B7]Heaven, I’m going [E]there
 
 {start_of_verse: Verse 2}
 In that bright [A]land, there’ll be no hunger,
-No orphan children crying for bread,
+No orphan [A]children crying [E]for bread,
 No weeping widows, toil or struggle,
-No shrouds, no coffins, and no death
+No shrouds, no coffins, and no [E]death
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-This dark hour of midnight nearing
-And tribulation time will come
+This dark [E]hour of midnight nearing
+And [A]tribulation time will [E]come
 The storms will hurl in midnight fear
-And sweep lost millions to their doom
+And sweep lost millions to their [E]doom
 {end_of_verse}

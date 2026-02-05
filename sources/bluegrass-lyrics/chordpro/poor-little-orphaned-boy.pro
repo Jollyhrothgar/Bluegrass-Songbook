@@ -21,22 +21,22 @@ Her [D]poor little orphan [G]boy
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-When I was only two years old
-I never shall forget
+When [G]I was only two years old
+I [D]never shall [G]forget
 A parting kiss she gave to me
-I sometimes feel it yet
+I sometimes feel it [G]yet
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-When I was sick and every hour
-She watched me as I lay
+When [G]I was sick and every hour
+She [D]watched me as I [G]lay
 And with her kind and gentle hand
-She soothed me tenderly
+She soothed me [G]tenderly
 {end_of_verse}
 
 {start_of_verse: Verse 4}
 So [G]now I press this world alone
-Her love with me shall stay
+Her [D]love with me shall [G]stay
 And from the throne above the skies
-Her smiles shall rest on me
+Her smiles shall rest on [G]me
 {end_of_verse}

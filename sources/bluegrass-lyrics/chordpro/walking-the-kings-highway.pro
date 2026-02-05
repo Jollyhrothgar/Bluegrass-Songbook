@@ -23,20 +23,20 @@ Walking in the [E]kings highway
 {start_of_verse: Verse 2}
 [A]We shall see the glory of the lord
 Walking in the [E]kings highway
-And behold the glory of his work
+And [A]behold the glory of his work
 Walking in the [E]kings highway
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-There the rain shall fall upon the ground
+[A]There the rain shall fall upon the ground
 Walking in the [E]kings highway
-And the springs of water shall be found
+And the [A]springs of water shall be found
 Walking in the [E]kings highway
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-No unclean things shall pass or hear
+[A]No unclean things shall pass or hear
 Walking in the [E]kings highway
-Just the ransom ones without a fear
+Just the [A]ransom ones without a fear
 Walking in the [E]kings highway
 {end_of_verse}

@@ -18,7 +18,7 @@ Nobody loves you like your [D]mother [A7]can, when your mother’s [A]dead
 Father will do the best he [A7]can when your mother’s [A]dead
 Father will do the best he [A7]can when your mother’s [A]dead
 Father will do the best he [A7]can
-Some things your father can’t understand
+Some things [D]your father can’t [A]understand
 Nobody loves you like your [D]mother [A7]can, when your mother’s [A]dead
 {end_of_verse}
 
@@ -51,6 +51,6 @@ Nobody loves you like your [D]mother [A7]can, when your mother’s [A]dead
 When your mother’s [A]dead
 When your mother’s [A]dead
 Nobody wants you
-Nobody needs you
+[D]Nobody needs [A]you
 Nobody loves you like your [D]mother [A7]can, when your mother’s [A]dead
 {end_of_verse}

@@ -23,13 +23,13 @@
 {start_of_verse: Verse 2}
 That wondrous city far [Bb]beyond confine
 [Bb]Where all is joy and peace so pure divine
-In visions I in varying streaks can see
+[Bb]In visions I [Eb]in varying streaks can [Bb]see
 And wonder if [Bb]there’s room in [F]heaven [F]for [Bb]me
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-I long to soar away and be at rest
-And there to lean upon my savior’s breast
-Oh wont that be a glorious victory
+[Bb]I [Bb]long to [Bb]soar [Eb]away and be at [Bb]rest
+[Bb]And there to lean upon my [F]savior’s breast
+[Bb]Oh wont that be [Eb]a glorious [Bb]victory
 To find that there is room in [F]heaven [F]for [Bb]me
 {end_of_verse}

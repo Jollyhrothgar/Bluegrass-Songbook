@@ -28,21 +28,21 @@ By the [C]silver Rio [G]Grande
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-To Europe she was going
-To become a lady grand
+To [G]Europe she was going
+To [C]become a [G]lady grand
 For her father hoped an
-Earl of course she’ll wed
-But she went away next morning
-And her heart was true to Jack
-A letter came one day and this it read
+Earl [D]of course she’ll wed
+But [G]she went away next morning
+And her [C]heart was true to [G]Jack
+A letter came one [D]day and this it [G]read
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-At a stately ball in England
-Stood the Texas lass one night
+At a [G]stately ball in England
+Stood the [C]Texas lass one [G]night
 The scenes were all splendid
-And the light were dizzyingly bright
-The earl knelt beside her
-Asking her to be his bride
+And the [D]light were dizzyingly bright
+The [G]earl knelt beside her
+Asking [C]her to be his [G]bride
 But her thoughts were by the [C]silver Rio [G]Grande
 {end_of_verse}

@@ -24,12 +24,12 @@ But [F#]now all is [C#]quiet and [F#]still
 Many years have gone by since in prayer there [F#]I knelt
 With dear ones around the [B]old hearth
 But my mother’s sweet prayers in my heart [F#]still are felt
-I’ll treasure them awhile on earth
+[F#]I’ll treasure [C#]them awhile on [F#]earth
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 One by one they have gone from the [B]old cottage home
-On earth we shall see them no more
+[F#]On [F#]earth we shall see them no [C#]more
 But we’ll meet them again on [F#]that beautiful shore
-Where partings will come never more
+Where [F#]partings will [C#]come never [F#]more
 {end_of_verse}

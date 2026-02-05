@@ -17,7 +17,7 @@ Have [D]slumbered many [D7]years in their [G]graves
 But [G]the bloom of [G]the flowers I remember
 Though their smiles I may never more see
 For [G]the cold chilly winds of December
-Stole my flowers’ companions from me
+Stole [D]my flowers’ [D7]companions [G]from me
 {end_of_verse}
 
 {start_of_chorus}
@@ -28,15 +28,15 @@ My flowers companions and me
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
-How dark looks this world and how dreary
+[G]How dark looks this world and [G]how dreary
 When we part from [G]the ones that we love
 There is rest for [G]the faint and [G]the weary
-And friends to meet with loved ones above
+And [D]friends to meet [D7]with loved ones [G]above
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-For in heaven I can but remember
+[G]For in heaven I can [G]but remember
 When from earth my soul shall be free
-There no cold chilly winds of December
-Shall steal my companions from me
+There [G]no cold chilly winds of December
+Shall [D]steal my [D7]companions from [G]me
 {end_of_verse}

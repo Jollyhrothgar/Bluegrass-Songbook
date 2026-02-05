@@ -32,15 +32,15 @@ Though we may never meet again
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
-We said goodbye in the moonlight
-My heart was turned to stone
+We [A]said goodbye in the [A]moonlight
+[D]My heart was turned to [A]stone
 One blissful hour was made happy
-But now I’m sad and alone
+[E]But now I’m sad and alone
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-In this my sorrows forever
-Though you may go far away
+In [A]this my sorrows [A]forever
+[D]Though you may go far [A]away
 Where ever you go I’ll [A]love you
-But still I can hear you say
+[E]But still I can hear you say
 {end_of_verse}

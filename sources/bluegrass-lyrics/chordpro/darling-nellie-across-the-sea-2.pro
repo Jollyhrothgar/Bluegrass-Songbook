@@ -21,7 +21,7 @@ It was there I knelt to pray
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-But remember; darlin’ Nellie
+[A]But remember; darlin’ Nellie
 There’s a [E]home for us on [A]high
 I will meet you darlin’ Nellie
 When they lay [A]me down to die

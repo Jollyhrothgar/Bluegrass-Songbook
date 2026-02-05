@@ -14,36 +14,36 @@ You may [D]now [A]forever [D]go
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-You have wrecked the heart I’ve cherished
-You have done me day by day
-You are false but I’ll forgive you
-To forget you I cannot say
+[D]You have wrecked the [D]heart I’ve [G]cherished
+[D]You have [D]done me day by day
+You are [D]false but I’ll [G]forgive you
+To [D]forget [A]you I [D]cannot say
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-For I love you dear I love you
-More than all this world I know
+[D]For I love you [D]dear I [G]love you
+[D]More than [D]all this world I know
 You have [D]proved to me false [G]hearted
 You may [D]now [A]forever [D]go
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-On the river bank I’ll loiter
-Till I see your face once more
-Then I’ll plunge beneath the water
-And I’ll land on some far shore
+[D]On the river [D]bank I’ll [G]loiter
+[D]Till I [D]see your face once more
+Then I’ll [D]plunge beneath the [G]water
+And I’ll [D]land [A]on some far [D]shore
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-Among the trees and bushes
-Where the dark green willow sway
-In the cold and silent rushes
-There you’ll find my lonely grave
+[D]Among the trees [D]and [G]bushes
+[D]Where the [D]dark green willow sway
+In [D]the cold and silent [G]rushes
+There you’ll [D]find [A]my lonely [D]grave
 {end_of_verse}
 
 {start_of_verse: Verse 6}
-O I wish I was white marble
-Cold and white on some far shore
-This poor heart would cease from troubling
-And I’d feel the pain no more
+[D]O I wish I [D]was white [G]marble
+[D]Cold and [D]white on some far shore
+This poor [D]heart would cease from [G]troubling
+And I’d [D]feel [A]the pain no [D]more
 {end_of_verse}

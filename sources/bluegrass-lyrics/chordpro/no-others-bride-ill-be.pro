@@ -31,11 +31,11 @@ In the [G]cottage by the [D]sea
 From my [G]cottage by the seaside
 I can [D]see my [D7]mansion home
 I can [D]see those hills and valleys
-Where with pleasure I have roamed
+Where [A]with pleasure I have [D]roamed
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-The last time that I saw him
+The last [D]time that [A]I saw him
 Oh how [A]happy then were we
 But [D7]tonight I am a [G]widow
 In the [G]cottage by the [D]sea

@@ -21,29 +21,29 @@ We were [A]buddies everywhere we [A]roamed
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-I’ll ne’er forget the day I found him,
-He was so weak he could not speak
-I’ll ne’er forget the smile he gave me,
-Then the poor boy fell asleep
+[A]I’ll ne’er forget the day [D]I found him,
+He was [A]so weak he could [E]not speak
+I’ll ne’er [A]forget the smile [D]he gave me,
+[D]Then the [A]poor [E]boy fell [A]asleep
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 I took him up in my [D]saddle
-And carried him across the plain
-My mother nursed him every moment
-To try to make him well again
+And [A]carried him across [E]the plain
+My mother [A]nursed him [D]every moment
+[D]To try [A]to make [E]him well [A]again
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-I’ve never had a pal so near me,
-He took the blame for everything
-I’d die for him just any moment,
-And for me he’d do the same
+[A]I’ve never had a pal [D]so near me,
+He took [A]the blame for [E]everything
+I’d die for [A]him just any [D]moment,
+[D]And for [A]me he’d [E]do the [A]same
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-But now by buddy’s gone and left me,
-And it’s so hard to struggle ‘long
-So hard to believe that he has left me,
-I can’t realize that he has gone
+[A]But now by buddy’s gone [D]and left me,
+And it’s [A]so hard to [E]struggle ‘long
+So hard to [A]believe that he [D]has left me,
+I [D]can’t [A]realize [E]that he [A]has gone
 {end_of_verse}

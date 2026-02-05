@@ -22,14 +22,14 @@ With that aggravating [E]beauty, Lulu [A]Walls
 
 {start_of_verse: Verse 2}
 If she were [A]only mine, I would build a house so fine
-Around it so many fences tall,
-It would make me jealous free, that no one else but me
+Around it so many fences [E]tall,
+It [A]would make me jealous free, [D]that no one else [A]but me
 Could gaze on that [E]beauty, Lulu [A]Walls
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 One [A]evening getting late, I met her at the gate
-I asked her if she’d wed me in the fall,
+I asked her if she’d wed me in [E]the fall,
 She [A]only turned away, and nothing would she say
 That aggravating [E]beauty, Lulu [A]Walls
 {end_of_verse}

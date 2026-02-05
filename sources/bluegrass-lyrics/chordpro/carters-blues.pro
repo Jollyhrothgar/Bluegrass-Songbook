@@ -16,12 +16,12 @@ O do turn and come this [D]way
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-You love some other and you don’t love me
-You care not for my company
-You love some other and I know why
-Because he has more gold than I
-But gold will melt and silver will fly
-My love for you will never die
+[D]You love some other and you don’t [A]love me
+You care not for my [D]company
+You love some other and I know [A]why
+Because he has more gold than [D]I
+But gold will melt and silver [A]will fly
+My love for you will [D]never die
 {end_of_verse}
 
 {start_of_verse: Verse 3}

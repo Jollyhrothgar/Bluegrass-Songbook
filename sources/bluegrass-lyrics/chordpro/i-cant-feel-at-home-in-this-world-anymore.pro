@@ -23,13 +23,13 @@ And I can’t feel at home in this [A7]world anymore
 {start_of_verse: Verse 3}
 They’re [A7]all expecting me that’s one thing I know
 I fixed it up with Jesus a long time ago
-I know he’ll take me through though I am weak and poor
+I [D]know he’ll take me through though I am weak and poor
 And I can’t feel at home in this [A7]world anymore
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Just over in the gloryland there’ll be no dying there
+Just [A7]over in the gloryland there’ll be no dying there
 The saints [A7]all shouting victory and [A7]singing everywhere
-I hear the voice of those that’s gone on before
+I [D]hear the voice of those that’s gone on before
 And I can’t feel at home in this [A7]world anymore
 {end_of_verse}

@@ -21,15 +21,15 @@ And [D]this is like [A]heaven to [D]me
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-I’ve heard the sweet music the heavenly chorus
-From glory land over the sea
-The soul thrilling message from Jesus my lord
+I’ve [D]heard the sweet music the [A]heavenly chorus
+From glory [A7]land over the [D]sea
+The [D7]soul thrilling message from [G]Jesus my lord
 And [D]this is like [A]heaven to [D]me
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-I’m looking for Jesus in glory to come
-From glory land over the sea
+I’m [D]looking for Jesus [A]in glory to come
+From glory [A7]land over the [D]sea
 A cloud of bright angels to carry [D]me home
 And that will be [A]heaven to [D]me
 {end_of_verse}

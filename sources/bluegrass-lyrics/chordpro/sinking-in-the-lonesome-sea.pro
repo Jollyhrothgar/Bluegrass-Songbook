@@ -16,39 +16,39 @@ And she [D]sailed upon the [A7]lonesome [D]sea
 
 {start_of_verse: Verse 2}
 [D]There was a little sailor
-Unto his captain said
-Oh captain captain what’ll you give to me
+[D]Unto his captain [D]said
+Oh captain captain what’ll [G]you give to me
 If I sink them in the low and [A7]lonesome low
 If I sink them in the [A7]lonesome [D]sea
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Two hundred dollars
-I will give unto thee
-And my oldest daughter I will wed unto you
+[D]Two hundred dollars
+I [D]will give unto [D]thee
+And my oldest daughter I [G]will wed unto you
 If you sink them in the low and [A7]lonesome low
 If you sink them in the [A7]lonesome [D]sea
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-He bowed upon his breast
-And away swim he
-Till he came the ship of the Turkish Reveille
+[D]He bowed upon his breast
+And [D]away swim [D]he
+Till he came the ship of [G]the Turkish Reveille
 As she [D]sailed upon the low and [A7]lonesome low
 As she [D]sailed upon the [A7]lonesome [D]sea
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-If it wasn’t for the love
-Of your daughter and your men
-I would do unto you as I did unto them
+[D]If it wasn’t for the love
+Of your [D]daughter and your [D]men
+I would do unto you as [G]I did unto them
 I would sink you in the low and [A7]lonesome low
 I would sink you in the [A7]lonesome [D]sea
 {end_of_verse}
 
 {start_of_verse: Verse 6}
-He bowed his head
-And down sank he
+[D]He bowed his head
+And [D]down sank [D]he
 Farewell farewell to the [G]Merry Golden Tree
 For I’m sinking in the low and [A7]lonesome low
 For I’m sinking in the [A7]lonesome [D]sea

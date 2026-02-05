@@ -17,36 +17,36 @@ And [E]found the sweet babe that was [A]there
 
 {start_of_verse: Verse 2}
 And [A]away by the waters so blue
-The infant was lonely and sad
-She took him in pity and thought him so pretty
-And it made little Moses so glad
-She called him her own, her beautiful son
-And she sent for a nurse who was near
+The infant [E]was lonely [A]and sad
+[E]She took him in pity and thought him so pretty
+And [A]it made [E]little Moses so [A]glad
+[A]She called him her own, her beautiful son
+And [E]she sent for a nurse who [A]was near
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 And [A]away by the waters so blue
-They carried that beautiful child
-To his tender mother, to his sister and brothers
-Little Moses looked happy and smiled
-His mother so good did all that she could
-To raise him and teach him with care
+They carried [E]that [A]beautiful child
+To [E]his tender mother, to his sister and brothers
+[A]Little Moses looked [E]happy and [A]smiled
+[A]His mother so good did all that she could
+To [E]raise him and teach him with [A]care
 {end_of_verse}
 
 {start_of_verse: Verse 4}
 And [A]away by the sea that was red
-Little Moses the servant of God
-While in him confided, the sea was divided
-As upwards he lifted his rod
+Little Moses [E]the servant [A]of God
+While [E]in him confided, the sea was divided
+As [A]upwards he [E]lifted his [A]rod
 And the Jews safely crossed while [E]Pharaoh’s host
-Was drownded in the waters and lost
+Was [E]drownded in the waters [A]and lost
 {end_of_verse}
 
 {start_of_verse: Verse 5}
 And [A]away on a mountain so high
-The last that he ever did see
-With Israel victorious, his hopes were most glorious
-That soon all the Jordan be free
-When his spirit did cease, he departed in peace
-And rested in the Heavens above
+The last that [E]he ever [A]did see
+With [E]Israel victorious, his hopes were most glorious
+That [A]soon all the [E]Jordan be [A]free
+[A]When his spirit did cease, he departed in peace
+And [E]rested in the Heavens [A]above
 {end_of_verse}

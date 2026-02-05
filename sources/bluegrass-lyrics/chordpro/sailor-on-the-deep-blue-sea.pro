@@ -16,13 +16,13 @@ Who is [A]sailing on the deep blue [A]sea
 {start_of_verse: Verse 2}
 “Oh, captain, can you tell [E]me,
 Can you tell [E]me where he may be?”
-“Oh yes, my pretty maiden,
+“Oh yes, [A]my pretty [D]maiden,
 He is drownded in the deep blue [A]sea”
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Farewell to friends and relations
+Farewell to friends [E]and [D]relations
 This is the last you’ll see of [E]me,
-For I’m going to end my troubles
+For I’m [A]going to end [D]my troubles
 By drowning in the deep blue [A]sea
 {end_of_verse}

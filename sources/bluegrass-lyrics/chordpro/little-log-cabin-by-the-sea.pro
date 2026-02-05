@@ -21,16 +21,16 @@ The [A]bible that my [E]mother gave to [A]me
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-How often I have listened to the countless town and raves (?)
+How [A]often [D]I have listened to the [D]countless town [A]and raves (?)
 Round that little log cabin by the [E]sea
 While [E]mother [E]read of Jesus who walked upon the waves
-How Jesus calmed the stormy Gallilee
+How [A]Jesus [E]calmed the stormy [A]Gallilee
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 How often oh how often she [E]read of glowing mirth
 With a message from the [D]precious word above
-It told of faithful Daniel who trusted in the Lord
+It [A]told of [A]faithful [A]Daniel who [D]trusted in the [A]Lord
 While it lead [A]me in the pathway that she brought (?)
 {end_of_verse}
 
@@ -38,5 +38,5 @@ While it lead [A]me in the pathway that she brought (?)
 There [A]is no other volume so [D]precious as this book
 It tells [A]me how to live and how to die
 It tells [A]me of that city oh wondrous wondrous look
-And that I’ll meet my loved ones by and by
+And that [A]I’ll meet my [E]loved ones by and [A]by
 {end_of_verse}

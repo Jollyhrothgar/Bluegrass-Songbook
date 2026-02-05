@@ -23,12 +23,12 @@ For my precious savior [E]always listens [E]in
 {start_of_verse: Verse 2}
 Daniel [E]in the lions den with this power should surely win
 For my precious savior [E]always listens [E]in
-And I know without a doubt honest prayers will bring you out
+And I [A]know [E]without a doubt honest [D]prayers will bring you [A]out
 For my precious savior [E]always listens [E]in
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Well He set the Hebrews three from the fiery furnace free
+Well He [A]set the Hebrews three from [D]the fiery [A]furnace free
 For my precious savior [E]always listens [E]in
 He will rescue you today [E]in that [A]same old fashioned way
 For my precious savior [E]always listens [E]in

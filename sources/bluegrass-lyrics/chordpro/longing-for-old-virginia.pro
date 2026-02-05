@@ -25,5 +25,5 @@ To old [D]Virginia and [G]you
 Though tonight I’m far from [G]you and old [D]Virginia
 I still love [G]you as I did that day in June
 And when springtime comes again to old [D]Virginia
-I’ll build a little cottage just for two
+I’ll [D]build a little cottage just for two
 {end_of_verse}

@@ -28,14 +28,14 @@ I’m [D]anchored in [A]love divine
 
 {start_of_verse: Verse 3}
 He saw me endangered and [D]lovingly came
-To pilot my storm-beaten soul
+To pilot my [E]storm-beaten soul
 Sweet peace He has spoken and bless His [A]dear name
-The billows no longer roll
+The billows [E]no longer [A]roll
 {end_of_verse}
 
 {start_of_verse: Verse 4}
 His [A]love shall control me through life and in death
-Completely I’ll trust to the end
+Completely I’ll trust to [E]the end
 I’ll praise Him each hour and my [A]last fleeting breath
-Shall sing of my soul’s Best Friend
+Shall sing of my [E]soul’s Best [A]Friend
 {end_of_verse}

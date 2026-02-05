@@ -25,18 +25,18 @@ To the valley of the [A]Shenandoah [D]ridge
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-When I left her all alone
+[D]When I left her all alone
 [A]In our [A]Shenandoah home
-She promised she’d be waiting there for me
+She promised she’d be [A]waiting there for [D]me
 But the angels came along
 And took her from our home
 From the valley of the [A]Shenandoah [D]ridge
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-When the evening shadows fall
+[D]When the evening shadows fall
 [A]In memory I recall
-A pledge when giving her a ring
+A pledge when [A]giving her a [D]ring
 Darling [A]in the coming spring
 I’ll be coming back again
 To the valley of the [A]Shenandoah [D]ridge

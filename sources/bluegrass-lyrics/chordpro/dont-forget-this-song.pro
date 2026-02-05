@@ -13,25 +13,25 @@ The [C]memory of [G]my [G]birthplace lies in [G]my [D]bosom [G]still
 
 {start_of_verse: Verse 2}
 I did not like [G]my fireside I did not like [G]my home
-I have a mind for rambling so far away from home
+[C]I have a mind [G]for [G]rambling so [G]far [D]away from [G]home
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-It was on one moonlight evening the stars were shinning bright
-And with an ugly dagger I made the spirits fly
+[G]It was on one moonlight evening [C]the stars were [G]shinning bright
+[C]And with an [G]ugly [G]dagger I made [G]the [D]spirits [G]fly
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Twas then the sobber struck me as plain as you can see
-I’m doomed I’m ruined forever throughout eternity
+[G]Twas then the sobber struck me [C]as plain as you [G]can see
+[C]I’m doomed I’m [G]ruined [G]forever [G]throughout [G]eternity
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-I courted a fair young lady her name I will not tell
-Oh why should I disgrace her when I am doomed for hell
+[G]I courted a fair young [C]lady her name I will [G]not tell
+[C]Oh why should I [G]disgrace her when I [G]am [D]doomed for [G]hell
 {end_of_verse}
 
 {start_of_verse: Verse 6}
 But now upon [G]my scaffold [G]my time’s not very long
-You may forget the singer but don’t forget this song
+[C]You may forget [G]the [G]singer but don’t [D]forget this [G]song
 {end_of_verse}

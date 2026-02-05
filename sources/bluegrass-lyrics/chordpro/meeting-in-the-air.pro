@@ -14,7 +14,7 @@ And of [G7]Jonah and the whale you often [C]sing
 {end_of_verse}
 
 {start_of_chorus}
-There is going to be a meeting in the air
+There is going to be a [C]meeting in the air
 In that sweet sweet by and by
 I am going to meet you meet you over there
 In that home beyond the sky
@@ -28,8 +28,8 @@ At that meeting in the air
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-There are many many others through the bible
-I should like to meet them all I do declare
-By and by the lord will surely let us meet them
-At that meeting in the air
+There [C]are many many others through the bible
+I should [C]like to meet them all I do [G]declare
+By and [C]by the lord will surely let us meet them
+At [G7]that meeting in the [C]air
 {end_of_verse}
