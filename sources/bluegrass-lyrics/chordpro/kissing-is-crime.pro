@@ -19,7 +19,7 @@ Afraid my ma might find it out and [D]cause her great pain
 
 {start_of_verse: Verse 2}
 [G]I called at her house one night but [G]I didn’t intend to stay
-[G]She laid her head on my shoulder and said the old folks are away
+[G]She laid her head on [D]my shoulder and said [G]the old folks are away
 [G]I kissed her a dozen times and someone came to the door
 [D]Every [G]time she bowed and declared she’d [C]never do so [G]anymore
 {end_of_verse}

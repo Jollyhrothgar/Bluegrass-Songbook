@@ -35,6 +35,6 @@ To [D]my [D7]old clinch mountain [G]home
 
 {start_of_verse: Verse 5}
 [G]In [D]my hand [G]I hold a picture of the [D7]old [G]home [G]far away And the picture of [D]my sweetheart
-I’m [G]thinking of today
+I’m thinking of [G]today
 On the [D]sunny mountain [G]side
 {end_of_verse}

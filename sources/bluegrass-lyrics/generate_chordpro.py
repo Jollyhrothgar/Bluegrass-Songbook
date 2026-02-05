@@ -165,8 +165,11 @@ def extract_chord_sequence(tmuk_lines: list[str]) -> list[str]:
     return chords
 
 
-def extract_line_patterns(tmuk_lines: list[str]) -> list[list[tuple[float, str]]]:
-    """Extract per-line chord patterns from TMUK (relative syllable positions)."""
+def extract_line_patterns_with_syllables(tmuk_lines: list[str]) -> list[tuple[int, list[tuple[float, str]]]]:
+    """Extract per-line chord patterns from TMUK with syllable counts.
+
+    Returns list of (syllable_count, [(rel_pos, chord), ...]) tuples.
+    """
     patterns = []
     chord_re = r'\[([A-G][b#]?(?:m|maj|min|dim|aug|sus|add|7|9|11|13)*)\]'
 
@@ -187,32 +190,92 @@ def extract_line_patterns(tmuk_lines: list[str]) -> list[list[tuple[float, str]]
             chords.append((rel_pos, match.group(1)))
 
         if chords:  # Only keep lines that have chords
-            patterns.append(chords)
+            patterns.append((total_syllables, chords))
 
     return patterns
 
 
-def apply_pattern_to_line(line: str, pattern: list[tuple[float, str]]) -> str:
-    """Apply a single line's chord pattern to an unchored line."""
+def find_best_pattern(syllable_count: int, patterns: list[tuple[int, list[tuple[float, str]]]],
+                      target_chord_count: int = None) -> list[tuple[float, str]]:
+    """Find the pattern with the closest syllable count and chord count.
+
+    If target_chord_count is specified, prefer patterns that also match the chord count.
+    """
+    if not patterns:
+        return []
+
+    if target_chord_count is not None:
+        # Score by both syllable match and chord count match
+        def score(p):
+            syl_diff = abs(p[0] - syllable_count)
+            chord_diff = abs(len(p[1]) - target_chord_count)
+            return syl_diff + chord_diff * 2  # Weight chord count more
+
+        best_pattern = min(patterns, key=score)
+    else:
+        # Just match syllable count
+        best_pattern = min(patterns, key=lambda p: abs(p[0] - syllable_count))
+
+    return best_pattern[1]
+
+
+def calculate_chord_density(patterns: list[tuple[int, list[tuple[float, str]]]]) -> float:
+    """Calculate average chords per syllable from patterns."""
+    total_syllables = sum(p[0] for p in patterns)
+    total_chords = sum(len(p[1]) for p in patterns)
+    if total_syllables == 0:
+        return 0.25  # Default: 1 chord per 4 syllables
+    return total_chords / total_syllables
+
+
+def apply_pattern_to_line(line: str, pattern: list[tuple[float, str]], target_chord_count: int = None,
+                         chord_sequence: list[str] = None, chord_index: int = 0) -> tuple[str, int]:
+    """Apply a single line's chord pattern to an unchored line.
+
+    If target_chord_count is specified and the pattern has fewer chords,
+    chords are distributed evenly using chord_sequence.
+
+    Returns (line_with_chords, new_chord_index) to maintain chord sequence position.
+    """
     if '[' in line:  # Already has chords
-        return line
+        return line, chord_index
     if not pattern:
-        return line
+        return line, chord_index
 
     words = line.split()
     if not words:
-        return line
+        return line, chord_index
 
     total_syllables = sum(_count_syllables(w) for w in words)
     if total_syllables == 0:
-        return line
+        return line, chord_index
 
-    # Map relative positions to word indices
+    # Determine chord source
+    if chord_sequence:
+        available_chords = chord_sequence
+    else:
+        available_chords = [c for _, c in pattern]
+
+    # If we need more chords than the pattern provides, distribute evenly
+    pattern_chords = len(pattern)
     chord_at_word = {}
-    for rel_pos, chord in pattern:
-        target_syllable = int(rel_pos * total_syllables)
-        word_idx = _syllables_to_word_index(words, target_syllable)
-        chord_at_word[word_idx] = chord
+
+    if target_chord_count and target_chord_count > pattern_chords:
+        # Distribute chords evenly based on target count
+        for i in range(target_chord_count):
+            # Position chord at regular intervals
+            rel_pos = i / target_chord_count
+            target_syllable = int(rel_pos * total_syllables)
+            word_idx = _syllables_to_word_index(words, target_syllable)
+            # Use chord from sequence, cycling
+            chord_at_word[word_idx] = available_chords[chord_index % len(available_chords)]
+            chord_index += 1
+    else:
+        # Use pattern positions directly
+        for rel_pos, chord in pattern:
+            target_syllable = int(rel_pos * total_syllables)
+            word_idx = _syllables_to_word_index(words, target_syllable)
+            chord_at_word[word_idx] = chord
 
     # Build result
     new_words = []
@@ -222,7 +285,7 @@ def apply_pattern_to_line(line: str, pattern: list[tuple[float, str]]) -> str:
         else:
             new_words.append(word)
 
-    return ' '.join(new_words)
+    return ' '.join(new_words), chord_index
 
 
 def generate_structured_chordpro(bl_data: dict, tmuk_chord_lines: list[str]) -> list[str]:
@@ -240,8 +303,8 @@ def generate_structured_chordpro(bl_data: dict, tmuk_chord_lines: list[str]) -> 
     # Build chord map from all TMUK lines
     chord_map = extract_chord_map(tmuk_chord_lines)
 
-    # Extract line patterns from TMUK for cyclic fill
-    tmuk_patterns = extract_line_patterns(tmuk_chord_lines)
+    # Extract line patterns from TMUK with syllable counts for matching
+    tmuk_patterns = extract_line_patterns_with_syllables(tmuk_chord_lines)
 
     # First pass: apply word-level chords to all sections
     sections = bl_data.get("sections", [])
@@ -276,18 +339,30 @@ def generate_structured_chordpro(bl_data: dict, tmuk_chord_lines: list[str]) -> 
             if len(section["lines"]) == len(chorus_pattern):
                 section["lines"] = apply_chord_pattern(section["lines"], chorus_pattern)
 
-    # Third pass: cyclic pattern fill for any remaining unchored lines
-    # This handles lines that didn't match by word or by section pattern
+    # Third pass: syllable-matched pattern fill for any remaining unchored lines
+    # Match patterns by syllable count AND target chord density for consistency
     if tmuk_patterns:
-        pattern_idx = 0
+        chord_density = calculate_chord_density(tmuk_patterns)
+        # Extract full chord sequence from TMUK for cycling
+        chord_sequence = extract_chord_sequence(tmuk_chord_lines)
+        chord_index = 0
+
         for section in chorded_sections:
             new_lines = []
             for line in section["lines"]:
                 if '[' not in line and line.strip():
-                    # Apply next pattern from TMUK cyclically
-                    pattern = tmuk_patterns[pattern_idx % len(tmuk_patterns)]
-                    new_lines.append(apply_pattern_to_line(line, pattern))
-                    pattern_idx += 1
+                    # Count syllables in this line
+                    words = line.split()
+                    line_syllables = sum(_count_syllables(w) for w in words)
+                    # Calculate target chord count based on density
+                    target_chords = max(1, round(line_syllables * chord_density))
+                    # Find pattern with closest syllable AND chord count
+                    pattern = find_best_pattern(line_syllables, tmuk_patterns, target_chords)
+                    # Apply pattern, distributing chords if needed, cycling through full chord sequence
+                    new_line, chord_index = apply_pattern_to_line(
+                        line, pattern, target_chords, chord_sequence, chord_index
+                    )
+                    new_lines.append(new_line)
                 else:
                     new_lines.append(line)
             section["lines"] = new_lines

@@ -15,9 +15,9 @@ and the [A]warble of the [A7]birds I understood
 
 {start_of_chorus}
 When I’ve sung my last [G]song in the evening
-[D]And the sun sets in the golden west
-All [G]the scenes of this world I’ll be [D]leaving
-In the [G]shadow of Clinch Mountain [D]I will rest
+And [G]the sun sets in the [D]golden west
+All the [G]scenes of this world I’ll be [D]leaving
+In the [G]shadow of Clinch Mountain I will [D]rest
 {end_of_chorus}
 
 {start_of_verse: Verse 2}

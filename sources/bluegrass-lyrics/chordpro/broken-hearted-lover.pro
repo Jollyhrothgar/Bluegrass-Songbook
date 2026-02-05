@@ -7,29 +7,29 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-[C]How could I be feeling happy
-When you don’t [F]love me anymore
-You took my love [G]and all my kisses
-And you left my heart so [C]sore
+[C]How could I be [F]feeling happy
+[G]When you don’t [C]love me anymore
+[C]You took my [F]love and all [G]my kisses
+[C]And you left [C]my heart so sore
 {end_of_verse}
 
 {start_of_chorus}
-[C]I’d rather swim across the ocean
-Without the help [F]of God or man
-Than be a [G]broken hearted lover
-When I have done the best I [C]can
+[F]I’d rather swim [G]across the ocean
+[C]Without the help [C]of God or man
+[F]Than be a [G]broken hearted lover
+[C]When I have done [C]the best I can
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-[C]I thought that you were an angel
-When I first looked [F]into your eyes
-But now I [G]know all about you
-I know your home’s not in the [C]skies
+[F]I thought that you [G]were an angel
+[C]When I first looked [C]into your eyes
+[F]But now I [G]know all about you
+[C]I know your home’s [C]not in the skies
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-[C]Stop, look and listen for that whistle
-And when you hear [F]that lonesome sound
-You’ll know by the [G]whistle of that freight train
-Your broken hearted lover’s [C]gone
+[F]Stop, look and [G]listen for [C]that whistle
+[C]And when you hear [F]that lonesome sound
+[G]You’ll know by [C]the whistle [C]of that freight train
+[F]Your broken [G]hearted lover’s gone
 {end_of_verse}

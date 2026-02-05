@@ -15,8 +15,8 @@ Will you telephone and ask her when she’s [D]coming back to [G]me
 
 {start_of_chorus}
 [G]My child the merchant murmured as [C]he stroked the [G]anxious brow
-No telephone connection where your mother lives [D]at now
-[G]No telephone in heaven and a [C]tear sprang in her [G]eyes
+No telephone connection where [D]your mother lives [G]at now
+No telephone in heaven and [D]a tear sprang in [G]her eyes
 [G]I thought God had everything with him up in the sky
 {end_of_chorus}
 

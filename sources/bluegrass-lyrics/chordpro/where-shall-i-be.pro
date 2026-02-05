@@ -7,7 +7,7 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-[A]Judgment day is drawing nigh
+[A]Judgment day [D]is drawing nigh
 [D]Where shall I [A]be
 [A]When God the work of men shall cry
 [D]Where shall I [A]be

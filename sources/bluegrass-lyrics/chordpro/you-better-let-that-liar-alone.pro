@@ -20,27 +20,27 @@ Better [D]let that [A]liar [D]alone
 {start_of_verse: Verse 2}
 When a [A]liar takes the notion to bend the truth
 He’ll lay around his neighbors and [D]get the news
-And [D]nearly every day when you look out
+[A]And nearly every day when [D]you look out
 You can see that [A]liar coming to your house
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-He’ll tell you such a lie it’ll [A]surprise your mind
-He’ll [D]mix a little truth for to make it shine
-When he gets his business [A]fixed just right
-[D]Then that liar’s going to cause a fight
+[A]He’ll tell you such a lie it’ll [D]surprise your mind
+[A]He’ll mix a little truth for [D]to make it shine
+[A]When he gets his business [D]fixed just right
+[A]Then that liar’s going to [D]cause a fight
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-[D]He studies up a lie he’ll tell it so smooth
+[A]He studies up a lie he’ll [D]tell it so smooth
 [A]You’ll think absolutely that [D]it must be true
-[D]And he’ll urge you out for to trace the tale
+[A]And he’ll urge you out for to [D]trace the tale
 And [D]if you don’t mind you’ll be put in jail
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-When [D]everything’s in [D]perfect peace
+[A]When everything’s in [D]perfect peace
 Then comes that [A]liar with his deceit
 A hypocrite [A]liar both keeps up a fuss
-They’re [D]both very bad but a liar’s the worse
+[A]They’re both very bad but a [D]liar’s the worse
 {end_of_verse}

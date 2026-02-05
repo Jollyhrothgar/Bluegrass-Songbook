@@ -9,20 +9,20 @@
 {start_of_verse: Verse 1}
 [A]Oh the night was dark and stormy
 When this message came to [A]me
-[A]It was from my darlin’ Nellie
+[A]It was from my [E]darlin’ Nellie
 Who had sailed across the [A]sea
 {end_of_verse}
 
 {start_of_chorus}
-I was wanderin’ through the [E]grave yard
-When I found where [A]Nellie lay
-It was there my [E]heart was broken
-It was there [A]I knelt to pray
+[A]I was wanderin’ [E]through the grave yard
+[A]When I found [D]where Nellie lay
+[A]It was there my [E]heart was broken
+[A]It was there [E]I knelt to pray
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
 [A]But remember; darlin’ Nellie
 There’s a [E]home for us on [A]high
-[D]I will meet you darlin’ Nellie
+[A]I will meet you [A]darlin’ Nellie
 When they lay [A]me down to die
 {end_of_verse}

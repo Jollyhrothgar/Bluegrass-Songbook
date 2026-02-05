@@ -20,11 +20,11 @@ By the [A]light of the [A7]moon [D]above
 
 {start_of_chorus}
 [D]Oh the lonesome [G]pines
-Oh the [D]lonesome pines
+[D]Oh the lonesome [G]pines
 Where I [A]met that [A7]sweetheart of [D]mine
-With her [D]hand in [G]mine
-And our [D]hearts entwined
-As we [A]strolled through the [D]lonesome pines
+[D]With her hand in [G]mine
+[D]And our hearts [G]entwined
+As we [A]strolled through the [A7]lonesome [D]pines
 {end_of_chorus}
 
 {start_of_verse: Verse 3}

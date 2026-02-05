@@ -9,7 +9,7 @@
 {start_of_verse: Verse 1}
 My [G]mother died when I was young
 My [D]sisters they were [G]sad
-They [G]lay there hands upon my head
+[G]They lay there hands [D]upon my head
 And ought me how to [G]pray
 {end_of_verse}
 
@@ -23,20 +23,20 @@ Her [D]poor little orphan [G]boy
 {start_of_verse: Verse 2}
 When [G]I was only two years old
 I [D]never shall [G]forget
-A [D]parting kiss she gave to me
+[G]A parting kiss [G]she gave to me
 I sometimes feel it [G]yet
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 When [G]I was sick and every hour
 She [D]watched me as I [G]lay
-And with her kind [G]and gentle hand
+[G]And with her kind [C]and gentle hand
 She soothed me [G]tenderly
 {end_of_verse}
 
 {start_of_verse: Verse 4}
 So [G]now I press this world alone
 Her [D]love with me shall [G]stay
-[G]And from the throne above the skies
+[G]And from the [D]throne above the skies
 Her smiles shall rest on [G]me
 {end_of_verse}
