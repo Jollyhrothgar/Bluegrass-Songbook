@@ -7,16 +7,16 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Springtime is coming sweet lonesome bird
+[D]Springtime is coming sweet lonesome bird
 Your [A]echo in the [A7]woodland I [D]hear
-Down in the meadow so lonesome your singing
+Down [A]in the meadow [A7]so lonesome [D]your singing
 While the [A]moonlight is [A7]shining so [D]clear
 {end_of_verse}
 
 {start_of_verse: Verse 2}
 But I [G]know he’s away in a [D]far distant [A]land
 A [A]land that is over the [D]sea
-Go fly to him singing your sweet little song
+Go fly [A]to him singing [A7]your sweet [D]little song
 And [A]tell him to [A7]come back to [D]me
 {end_of_verse}
 
@@ -37,12 +37,12 @@ Oh [A]why do the [A7]years go so [D]slow
 {start_of_verse: Verse 4}
 But I [G]know he’s away in a [D]far distant [A]land
 A [A]land that is over the [D]sea
-Go fly to him singing your sweet little song
+Go [G]fly to him singing your [D]sweet little song
 And [A]tell him to [A7]come back to [D]me
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-Upon my finger he placed a small ring
+[A]Upon my finger he placed a [D]small ring
 On [A]the day he [A7]was leaving [D]his home
 I promised I’d [A]be his own little girl
 And [A]love him [A7]wherever he’d [D]roam
@@ -51,6 +51,6 @@ And [A]love him [A7]wherever he’d [D]roam
 {start_of_verse: Verse 6}
 But I [G]know he’s away in a [D]far distant [A]land
 A [A]land that is over the [D]sea
-Go fly to him singing your sweet little song
+Go [A]fly to him singing [A7]your sweet [D]little song
 And [A]tell him to [A7]come back to [D]me
 {end_of_verse}

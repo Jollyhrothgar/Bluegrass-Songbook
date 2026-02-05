@@ -14,9 +14,9 @@ Walking in the [E]kings highway
 {end_of_verse}
 
 {start_of_chorus}
-There’s a highway there and away
-Where sorrow shall flee away
-And the light shines bright as the day
+[A]There’s a highway there and away
+Where sorrow shall flee [E]away
+And the light shines [A]bright as the day
 Walking in the [E]kings highway
 {end_of_chorus}
 

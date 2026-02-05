@@ -9,7 +9,7 @@
 {start_of_verse: Verse 1}
 In the [G]distant state of Texas
 By the [C]silver Rio [G]Grande
-Strolled a couple out one evening
+Strolled a [G]couple out one evening
 Was two [D]sweethearts hand in hand
 Was a [G]rich man’s pretty daughter
 And the [C]lad she loved so [G]dear
@@ -17,20 +17,20 @@ Though tomorrow they must [D]part for many a [G]year
 {end_of_verse}
 
 {start_of_chorus}
-My heart’s tonight in Texas
-Though I’m far across the sea
-The band is playing Dixie
-And that’s where I long to be
-Dad says the earl I’ll marry
-But although here is my hand
-My heart’s tonight in Texas
+My heart’s [C]tonight in Texas
+[G]Though I’m far across the sea
+The band is [D]playing Dixie
+And that’s where [G]I long to be
+Dad says the [C]earl I’ll marry
+But although here [G]is my hand
+My [D]heart’s tonight in [G]Texas
 By the [C]silver Rio [G]Grande
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
 To [G]Europe she was going
 To [C]become a [G]lady grand
-For her father hoped an
+For her [G]father hoped an
 Earl [D]of course she’ll wed
 But [G]she went away next morning
 And her [C]heart was true to [G]Jack
@@ -40,7 +40,7 @@ A letter came one [D]day and this it [G]read
 {start_of_verse: Verse 3}
 At a [G]stately ball in England
 Stood the [C]Texas lass one [G]night
-The scenes were all splendid
+The scenes [C]were all splendid
 And the [D]light were dizzyingly bright
 The [G]earl knelt beside her
 Asking [C]her to be his [G]bride

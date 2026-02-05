@@ -10,8 +10,8 @@
 [D]As we sit alone tonight
 [A]In the stillness of the night
 I picture happy [A]scenes of long [D]ago
-Of a maiden fair and bright
-Who is sleeping there tonight
+[D]Of a maiden fair and bright
+Who is [A]sleeping there [D]tonight
 [A]In the valley of the [A]Shenandoah [D]ridge
 {end_of_verse}
 
@@ -20,7 +20,7 @@ It was [A]in the month of [A7]June
 When the [D]roses were [A]in bloom
 When I [G]held her [A]in my [D]arms and softly [A7]said
 Darling [A]in the coming spring
-I’ll be coming back again
+I’ll be coming [A]back [D]again
 To the valley of the [A]Shenandoah [D]ridge
 {end_of_verse}
 
@@ -28,8 +28,8 @@ To the valley of the [A]Shenandoah [D]ridge
 [D]When I left her all alone
 [A]In our [A]Shenandoah home
 She promised she’d be [A]waiting there for [D]me
-But the angels came along
-And took her from our home
+[A]But the [D]angels came along
+And [G]took her [D]from our [A7]home
 From the valley of the [A]Shenandoah [D]ridge
 {end_of_verse}
 
@@ -38,6 +38,6 @@ From the valley of the [A]Shenandoah [D]ridge
 [A]In memory I recall
 A pledge when [A]giving her a [D]ring
 Darling [A]in the coming spring
-I’ll be coming back again
+[D]I’ll be coming back again
 To the valley of the [A]Shenandoah [D]ridge
 {end_of_verse}

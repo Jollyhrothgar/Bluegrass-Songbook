@@ -9,7 +9,7 @@
 {start_of_verse: Verse 1}
 Motherless children have a hard [E]time when their [D]mother is [A]dead
 Motherless children have a hard [E]time when their [D]mother is [A]dead
-See them wander from door to door
+See [A]them wander from [D]door to [A]door
 Lord, they’ve [D]got no place to [A]go
 Nobody loves you like your [D]mother [A7]can, when your mother’s [A]dead
 {end_of_verse}
@@ -37,7 +37,7 @@ Nobody loves you like your [D]mother [A7]can, when your mother’s [A]dead
 {start_of_verse: Verse 5}
 Sister will do the best she [A7]can when your mother’s [A]dead
 Sister will do the best she [A7]can
-No way she’ll leave you for another man
+No way she’ll leave you for [D]another [A]man
 Nobody loves you like your [D]mother [A7]can, when your mother’s [A]dead
 {end_of_verse}
 
@@ -50,7 +50,7 @@ Nobody loves you like your [D]mother [A7]can, when your mother’s [A]dead
 {start_of_verse: Verse 7}
 When your mother’s [A]dead
 When your mother’s [A]dead
-Nobody wants you
+Nobody [D]wants [A]you
 [D]Nobody needs [A]you
 Nobody loves you like your [D]mother [A7]can, when your mother’s [A]dead
 {end_of_verse}

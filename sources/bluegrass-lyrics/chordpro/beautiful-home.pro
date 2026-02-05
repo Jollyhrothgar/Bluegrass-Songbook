@@ -18,7 +18,7 @@ That the savior for [A]me has gone to [A]prepare
 far [D]over the [A]sea (far [D]over the [A]sea)
 [A]There’s a beautiful [A]home (a beautiful [A]home)
 for you and for [A]me (for you and for [A]me)
-Its glittering powers (its glittering powers)
+[A]Its glittering powers (its glittering [D]powers)
 of [D]sun out [A]shine (of [D]sun out [A]shine)
 That beautiful [A]home (that beautiful [A]home)
 someday shall be [A]mine (someday shall be [A]mine)

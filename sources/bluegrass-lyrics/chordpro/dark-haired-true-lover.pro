@@ -8,42 +8,42 @@
 
 {start_of_verse: Verse 1}
 I [F]once had a dark haired true lover
-She was all this world to me
+[F]She was all this world to me
 She promised herself to [F]another
-Now don’t you think this was mean
+Now don’t [C]you think this was [F]mean
 {end_of_verse}
 
 {start_of_chorus}
-Take back every word you have spoken
-Let it be as though we never met
-For tonight I’m a poor boy heartbroken
-I’ll forgive but I’ll never forget
+Take [B]back every word [F]you have spoken
+Let [C]it be as though we [F]never met
+For [F]tonight I’m a poor boy heartbroken
+I’ll [C]forgive but I’ll never [F]forget
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
 I [F]was young when I wrote my first letter
-I blotted the lines with tears
+[B]I blotted the lines [F]with tears
 But now I am old [F]I know better
-We parted for many long years
+We [C]parted for many long [F]years
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 Oh [F]Ruth, Oh Ruth how I love you
-You just seem to me like a bird
+You [F]just seem to me like a bird
 Although you went back [F]on your promise
-Although you went back on your word
+Although [C]you went back on [F]your word
 {end_of_verse}
 
 {start_of_verse: Verse 4}
 We [F]parted in the month of September
-Some said we parted for life
+[B]Some said we [F]parted for life
 But I hope someday or [F]another
-I’ll call you my sweet darling wife
+I’ll [C]call you my sweet [F]darling wife
 {end_of_verse}
 
 {start_of_verse: Verse 5}
 I [F]wish I had someone to love me
-Someone to call me their own
+[F]Someone to call me their own
 For I’m out in this wide [F]world a wandering
-I’m tired of living alone
+I’m [C]tired of living [F]alone
 {end_of_verse}

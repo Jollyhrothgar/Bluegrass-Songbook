@@ -9,8 +9,8 @@
 {start_of_verse: Verse 1}
 [A]Away out on the old saint Sabbath
 Lay down to [D]take my [A]rest
-My knapsack for my pillow
-And my gun upon my chest
+[A]My knapsack for my pillow
+And my gun [D]upon my chest
 {end_of_verse}
 
 {start_of_chorus}
@@ -24,13 +24,13 @@ Please don’t [E]bury me on the lone [A]prairie
 {start_of_verse: Verse 2}
 [A]My father he lies sleeping
 Beneath the [D]deep blue [A]sea
-I have no father no mother
-There’s none but hell and me
+[A]I have no father no mother
+There’s none but hell and [A]me
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 [A]My mother she lies sleeping
 Beneath the [D]church yard [A]rocks
-Her body lies there moldering
-And her spirit has gone to God
+Her body lies there [E]moldering
+And her spirit has gone [A]to God
 {end_of_verse}

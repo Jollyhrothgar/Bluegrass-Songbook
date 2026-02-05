@@ -8,23 +8,23 @@
 
 {start_of_verse: Verse 1}
 [G]The flowers I saw in [G]the wildwood
-Have since dropped their beautiful leaves
+[G]Have since dropped their beautiful leaves
 And [G]the many dear friends of my childhood
 Have [D]slumbered many [D7]years in their [G]graves
 {end_of_verse}
 
 {start_of_verse: Verse 2}
 But [G]the bloom of [G]the flowers I remember
-Though their smiles I may never more see
+Though their [D]smiles I may never more see
 For [G]the cold chilly winds of December
 Stole [D]my flowers’ [D7]companions [G]from me
 {end_of_verse}
 
 {start_of_chorus}
-It’s no wonder that I’m broken hearted
-And stricken with sorrow should be
-For we have met we have loved we have parted
-My flowers companions and me
+[D7]It’s no wonder that I’m [G]broken hearted
+[G]And stricken with sorrow should be
+For we [D]have met we have loved we have parted
+[D7]My flowers companions [G]and me
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
@@ -36,7 +36,7 @@ And [D]friends to meet [D7]with loved ones [G]above
 
 {start_of_verse: Verse 4}
 [G]For in heaven I can [G]but remember
-When from earth my soul shall be free
+[G]When from earth my soul shall be free
 There [G]no cold chilly winds of December
 Shall [D]steal my [D7]companions from [G]me
 {end_of_verse}

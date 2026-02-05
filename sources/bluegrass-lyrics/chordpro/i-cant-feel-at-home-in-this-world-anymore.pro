@@ -8,21 +8,21 @@
 
 {start_of_verse: Verse 1}
 This [A7]world is not my home I’m just-a-passing through
-My treasures are laid up somewhere beyond the blue
+My [D]treasures are laid [D7]up [G]somewhere beyond [D]the blue
 The [D]angels beckon me from Heaven’s open door
 And I can’t feel at home in this [A7]world anymore
 {end_of_verse}
 
 {start_of_verse: Verse 2}
 Oh Lord [D]you know I have no friend like [D]you
-If Heaven’s not my home oh Lord what would I do
+If Heaven’s not my home oh [A7]Lord what would I do
 The [D]angels beckon me from Heaven’s open door
 And I can’t feel at home in this [A7]world anymore
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 They’re [A7]all expecting me that’s one thing I know
-I fixed it up with Jesus a long time ago
+I [D]fixed it up [D7]with [G]Jesus a long time [D]ago
 I [D]know he’ll take me through though I am weak and poor
 And I can’t feel at home in this [A7]world anymore
 {end_of_verse}

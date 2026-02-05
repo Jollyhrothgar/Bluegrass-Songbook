@@ -21,19 +21,19 @@ That [E]I may ever happy [A]be
 Must [E]I go bound and have no free
 Must [E]I love a boy that don’t love [E]me
 Or must [E]I act the childish part
-And love that boy that broke my heart
+[A]And love that boy that broke my heart
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 Last night my lover promised [E]me
 To take [E]me across the deep blue sea
 And now he’s gone and left [E]me alone
-An orphan girl without a home
+An orphan girl without [E]a home
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-O dig my grave both wide and deep
-Place marble at my head and feet
-And on my breast a snow white dove
+O dig my grave both [A]wide and deep
+Place marble at my head [D]and feet
+And on [E]my breast a snow white dove
 To show to the world [E]I died for love
 {end_of_verse}

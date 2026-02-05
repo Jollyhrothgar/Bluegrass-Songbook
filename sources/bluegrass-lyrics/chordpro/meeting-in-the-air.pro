@@ -15,16 +15,16 @@ And of [G7]Jonah and the whale you often [C]sing
 
 {start_of_chorus}
 There is going to be a [C]meeting in the air
-In that sweet sweet by and by
-I am going to meet you meet you over there
-In that home beyond the sky
+In [C]that sweet sweet by and by
+I am going to meet you [G]meet you over there
+In [G7]that home beyond the sky
 {end_of_chorus}
 
 {start_of_chorus}
 The singing you will hear never [C]heard by mortals ears
-Will be glorious I do declare
-And God’s own son will be the leading one
-At that meeting in the air
+Will be glorious I [C]do declare
+And God’s [C]own son will be the leading one
+At that meeting [G]in the air
 {end_of_chorus}
 
 {start_of_verse: Verse 2}

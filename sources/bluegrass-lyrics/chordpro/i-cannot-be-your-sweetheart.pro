@@ -9,32 +9,32 @@
 {start_of_verse: Verse 1}
 Last [A]night I told my heart’s [A]love
 All [D]under the pale blue [A]sky
-Eagerly waiting an answer
+[A]Eagerly waiting an answer
 I [E]plainly could read in her eyes
 {end_of_verse}
 
 {start_of_verse: Verse 2}
 I [A]love you sweetheart I [A]love
 And [D]ask you to be my [A]bride
-Her face turned pale and she trembled
+Her [D]face turned pale and she trembled
 And [E]sadly to me she [A]replied
 {end_of_verse}
 
 {start_of_chorus}
-I cannot be your sweetheart
-I cannot stay by your side
-One is waiting up yonder
+I cannot [A]be your sweetheart
+I [E]cannot stay by your side
+One is [A]waiting up yonder
 One that’s claiming his [A]bride
-My heart is almost broken
-Your vows only add to my pain
+My [D]heart is almost broken
+Your vows only [A]add to my pain
 I [A]love you sweetheart I [A]love you
-Though we may never meet again
+Though [E]we may never meet again
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
 We [A]said goodbye in the [A]moonlight
 [D]My heart was turned to [A]stone
-One blissful hour was made happy
+[A]One blissful hour was made happy
 [E]But now I’m sad and alone
 {end_of_verse}
 

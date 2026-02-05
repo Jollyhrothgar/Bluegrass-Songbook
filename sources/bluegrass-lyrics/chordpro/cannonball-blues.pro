@@ -9,26 +9,26 @@
 {start_of_verse: Verse 1}
 [G]Oh listen to the train coming down the line
 Trying to make up [C]all their lost time
-From Buffalo to Washington
-You can wash my jumper starch my overalls
-Catch a train they call the Cannonball
-From Buffalo to Washington
+[G]From Buffalo to Washington
+You can wash my [C]jumper starch my overalls
+Catch a [G]train they call the [G]Cannonball
+[G]From Buffalo to Washington
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-My baby’s left me she even took my shoes
-Enough to give a man these doggone worried blues
-She’s gone she’s solid gone
+My baby’s left me [C]she even took my shoes
+Enough to [G]give a man these doggone [G]worried blues
+[G]She’s gone she’s solid gone
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Yonder comes the train coming down the track
-Carry me away but it aint gonna carry me back
-My honey babe my blue eyed babe
+Yonder comes the train [C]coming down the track
+Carry [G]me away but it aint gonna carry [G]me back
+[G]My honey babe my blue eyed babe
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-I’m going up north I’m going up north this fall
+I’m going up north I’m [C]going up north this fall
 If luck don’t change I wont be back at [C]all
-My honey babe I’m leaving you
+My [G]honey babe I’m leaving [G]you
 {end_of_verse}

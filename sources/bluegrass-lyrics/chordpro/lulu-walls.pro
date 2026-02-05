@@ -15,7 +15,7 @@ She said she’d love to [E]see me at her [A]home
 
 {start_of_chorus}
 Such a [D]star I’ve never seen, she’s as [A]pretty as a queen
-She’s as perfect as an angel from above,
+[A]She’s as perfect as [D]an angel from [A]above,
 If she’ll [A]only be my wife, I’ll live [D]happy all my [A]life
 With that aggravating [E]beauty, Lulu [A]Walls
 {end_of_chorus}

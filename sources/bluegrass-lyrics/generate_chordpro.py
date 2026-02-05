@@ -155,17 +155,93 @@ def has_chords(lines: list[str]) -> bool:
     return any('[' in line for line in lines)
 
 
+def extract_chord_sequence(tmuk_lines: list[str]) -> list[str]:
+    """Extract all chords from TMUK lines in order."""
+    chord_re = r'\[([A-G][b#]?(?:m|maj|min|dim|aug|sus|add|7|9|11|13)*)\]'
+    chords = []
+    for line in tmuk_lines:
+        for match in re.finditer(chord_re, line):
+            chords.append(match.group(1))
+    return chords
+
+
+def extract_line_patterns(tmuk_lines: list[str]) -> list[list[tuple[float, str]]]:
+    """Extract per-line chord patterns from TMUK (relative syllable positions)."""
+    patterns = []
+    chord_re = r'\[([A-G][b#]?(?:m|maj|min|dim|aug|sus|add|7|9|11|13)*)\]'
+
+    for line in tmuk_lines:
+        clean = re.sub(chord_re, '', line)
+        words = clean.split()
+        total_syllables = sum(_count_syllables(w) for w in words)
+
+        if total_syllables == 0:
+            continue
+
+        chords = []
+        for match in re.finditer(chord_re, line):
+            text_before = re.sub(chord_re, '', line[:match.start()])
+            words_before = text_before.split()
+            syllables_before = sum(_count_syllables(w) for w in words_before)
+            rel_pos = syllables_before / max(total_syllables, 1)
+            chords.append((rel_pos, match.group(1)))
+
+        if chords:  # Only keep lines that have chords
+            patterns.append(chords)
+
+    return patterns
+
+
+def apply_pattern_to_line(line: str, pattern: list[tuple[float, str]]) -> str:
+    """Apply a single line's chord pattern to an unchored line."""
+    if '[' in line:  # Already has chords
+        return line
+    if not pattern:
+        return line
+
+    words = line.split()
+    if not words:
+        return line
+
+    total_syllables = sum(_count_syllables(w) for w in words)
+    if total_syllables == 0:
+        return line
+
+    # Map relative positions to word indices
+    chord_at_word = {}
+    for rel_pos, chord in pattern:
+        target_syllable = int(rel_pos * total_syllables)
+        word_idx = _syllables_to_word_index(words, target_syllable)
+        chord_at_word[word_idx] = chord
+
+    # Build result
+    new_words = []
+    for i, word in enumerate(words):
+        if i in chord_at_word:
+            new_words.append(f"[{chord_at_word[i]}]{word}")
+        else:
+            new_words.append(word)
+
+    return ' '.join(new_words)
+
+
 def generate_structured_chordpro(bl_data: dict, tmuk_chord_lines: list[str]) -> list[str]:
     """
     Generate ChordPro with proper verse/chorus structure from BluegrassLyrics,
     with chords merged from TMUK using word-level alignment.
 
-    Uses pattern repetition to fill in subsequent verses/choruses.
+    Uses three-pass approach:
+    1. Word-level matching from TMUK chord map
+    2. Section-level pattern fill (same line count)
+    3. Cyclic pattern fill for remaining unchored lines
     """
     lines = []
 
     # Build chord map from all TMUK lines
     chord_map = extract_chord_map(tmuk_chord_lines)
+
+    # Extract line patterns from TMUK for cyclic fill
+    tmuk_patterns = extract_line_patterns(tmuk_chord_lines)
 
     # First pass: apply word-level chords to all sections
     sections = bl_data.get("sections", [])
@@ -192,7 +268,6 @@ def generate_structured_chordpro(bl_data: dict, tmuk_chord_lines: list[str]) -> 
             chorus_pattern = extract_chord_pattern(section["lines"])
 
     # Apply patterns to fill gaps - apply to any section with matching line count
-    # This fills in individual unchored lines, not just fully unchored sections
     for section in chorded_sections:
         if section["type"] == "verse" and verse_pattern:
             if len(section["lines"]) == len(verse_pattern):
@@ -200,6 +275,22 @@ def generate_structured_chordpro(bl_data: dict, tmuk_chord_lines: list[str]) -> 
         elif section["type"] == "chorus" and chorus_pattern:
             if len(section["lines"]) == len(chorus_pattern):
                 section["lines"] = apply_chord_pattern(section["lines"], chorus_pattern)
+
+    # Third pass: cyclic pattern fill for any remaining unchored lines
+    # This handles lines that didn't match by word or by section pattern
+    if tmuk_patterns:
+        pattern_idx = 0
+        for section in chorded_sections:
+            new_lines = []
+            for line in section["lines"]:
+                if '[' not in line and line.strip():
+                    # Apply next pattern from TMUK cyclically
+                    pattern = tmuk_patterns[pattern_idx % len(tmuk_patterns)]
+                    new_lines.append(apply_pattern_to_line(line, pattern))
+                    pattern_idx += 1
+                else:
+                    new_lines.append(line)
+            section["lines"] = new_lines
 
     # Output with structure markers
     verse_num = 0

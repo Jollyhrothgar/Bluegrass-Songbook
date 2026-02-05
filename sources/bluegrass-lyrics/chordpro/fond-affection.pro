@@ -9,7 +9,7 @@
 {start_of_verse: Verse 1}
 Once I [D]loved your fond affection
 All my [G]hopes on you was [D]spent
-Till a dark eyed girl persuaded
+Till [D]a dark eyed girl [D]persuaded
 And you [A]care no more for [D]me
 {end_of_verse}
 
@@ -30,6 +30,6 @@ And think [A]of what you’ve [D]done
 {start_of_verse: Verse 4}
 When I’m [D]dead and in my coffin
 And the shroud about [D]me bows
-Will you come and scatter roses
+Will [G]you come [D]and [A]scatter [D]roses
 [A]Upon your lover’s [D]mound
 {end_of_verse}
