@@ -1,0 +1,49 @@
+{
+  "slug": "carolina-pines",
+  "title": "Carolina Pines",
+  "source_url": "https://www.bluegrasslyrics.com/song/carolina-pines/",
+  "raw_lyrics": "Just an old house with the roof fallin\u2019 in\nStandin\u2019 on the edge of the field\nWatching the crops grow like its always done before\nNobody lives here anymore\n\nThe sun\u2019s going down on the Carolina pines\nI\u2019m a long way from home\nI miss that love of mine broken windows empty doors\nNobody lives here anymore\n\nOld memories come whistling like the wind\nThrough the walls and the cracked window panes\nAnd the grass is growing high around the kitchen door\nNobody lives here anymore\n\nOnce there were children and a few hired hands\nA hard working woman and a bone tired man\nNow that old sun steals across a dusty floor\nNobody lives here anymore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just an old house with the roof fallin\u2019 in",
+        "Standin\u2019 on the edge of the field",
+        "Watching the crops grow like its always done before",
+        "Nobody lives here anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sun\u2019s going down on the Carolina pines",
+        "I\u2019m a long way from home",
+        "I miss that love of mine broken windows empty doors",
+        "Nobody lives here anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Old memories come whistling like the wind",
+        "Through the walls and the cracked window panes",
+        "And the grass is growing high around the kitchen door",
+        "Nobody lives here anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once there were children and a few hired hands",
+        "A hard working woman and a bone tired man",
+        "Now that old sun steals across a dusty floor",
+        "Nobody lives here anymore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

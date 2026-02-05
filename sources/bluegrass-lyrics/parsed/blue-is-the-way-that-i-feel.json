@@ -1,0 +1,31 @@
+{
+  "slug": "blue-is-the-way-that-i-feel",
+  "title": "Blue Is The Way That I Feel",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-is-the-way-that-i-feel/",
+  "raw_lyrics": "Well I\u2019m on my way tonight\nAnd I hope the road is right\nFor I\u2019ve got to have you back\nEven if I have to steal\nBlue is the way that I feel\n\nI\u2019ve been on this road so long\nI guess your love for me is gone\nBut I\u2019m coming back somehow\nFor my love for you is real\nBlue is the way that I feel",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019m on my way tonight",
+        "And I hope the road is right",
+        "For I\u2019ve got to have you back",
+        "Even if I have to steal",
+        "Blue is the way that I feel"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been on this road so long",
+        "I guess your love for me is gone",
+        "But I\u2019m coming back somehow",
+        "For my love for you is real",
+        "Blue is the way that I feel"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "girl-on-the-greenbriar-shore",
+  "title": "Girl On The Greenbriar Shore",
+  "source_url": "https://www.bluegrasslyrics.com/song/girl-on-the-greenbriar-shore/",
+  "raw_lyrics": "\u2018Twas in the year of \u201992,\nIn the merry month of June,\nI left my mother and a home so dear\nFor the girl I loved on the greenbriar shore\n\nMy mother dear, she came to me\nAnd said \u201cOh son, don\u2019t go, \u201c\n\u201cDon\u2019t leave your mother and a home so dear\nTo trust a girl on the greenbriar shore \u201c\n\nBut I was young and reckless too,\nAnd I craved a reckless life\nI left my mother with a broken heart\nAnd I choosed that girl to be m\u2019 wife\n\nHer hair was dark and curly too\nAnd her loving eyes were blue;\nHer cheeks were like the red red rose\nThe girl I loved on the greenbriar shore\n\nThe years rolled on and the months rolled by\nShe left me all alone\nNow I remember what mother said\nNever trust a girl on the greenbriar shore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "\u2018Twas in the year of \u201992,",
+        "In the merry month of June,",
+        "I left my mother and a home so dear",
+        "For the girl I loved on the greenbriar shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother dear, she came to me",
+        "And said \u201cOh son, don\u2019t go, \u201c",
+        "\u201cDon\u2019t leave your mother and a home so dear",
+        "To trust a girl on the greenbriar shore \u201c"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I was young and reckless too,",
+        "And I craved a reckless life",
+        "I left my mother with a broken heart",
+        "And I choosed that girl to be m\u2019 wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her hair was dark and curly too",
+        "And her loving eyes were blue;",
+        "Her cheeks were like the red red rose",
+        "The girl I loved on the greenbriar shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The years rolled on and the months rolled by",
+        "She left me all alone",
+        "Now I remember what mother said",
+        "Never trust a girl on the greenbriar shore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

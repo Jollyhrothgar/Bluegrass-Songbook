@@ -1,0 +1,39 @@
+{
+  "slug": "swinging-a-nine-pound-hammer-all-day",
+  "title": "Swinging A Nine Pound Hammer All Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/swinging-a-nine-pound-hammer-all-day/",
+  "raw_lyrics": "Swinging a nine pound hammer all day\nWorking for the state \u2019till my debt I\u2019ll pay\nListen to my hammer ringing loud and long\nThis is how I come to write this sad old song\n\nWell I had a little woman on the Georgia line\nI wanted her love but she wouldn\u2019t pay no mind\nTold her one night, stole my heart away\nDon\u2019t leave me darlin\u2019 or someday you\u2019ll pay\n\nWhen I found them that evening how my heart did grieve\nMy darlin and a stranger and they planned to leave\nAs the shots rang out and his blood ran cold\nI cried have mercy on this poor boy\u2019s soul",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Swinging a nine pound hammer all day",
+        "Working for the state \u2019till my debt I\u2019ll pay",
+        "Listen to my hammer ringing loud and long",
+        "This is how I come to write this sad old song"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I had a little woman on the Georgia line",
+        "I wanted her love but she wouldn\u2019t pay no mind",
+        "Told her one night, stole my heart away",
+        "Don\u2019t leave me darlin\u2019 or someday you\u2019ll pay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I found them that evening how my heart did grieve",
+        "My darlin and a stranger and they planned to leave",
+        "As the shots rang out and his blood ran cold",
+        "I cried have mercy on this poor boy\u2019s soul"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

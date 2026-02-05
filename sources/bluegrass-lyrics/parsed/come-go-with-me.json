@@ -1,0 +1,56 @@
+{
+  "slug": "come-go-with-me",
+  "title": "Come Go With Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/come-go-with-me/",
+  "raw_lyrics": "Come go with me to yonder valley\nWhere we once stood beneath the tree\nWhere we once planned our life together\nI can\u2019t forget come go with me\n\nCome let us live some moments over\nThen maybe you won\u2019t want to leave\nI love you then and will forever\nI can\u2019t forget come go with me\n\nI can\u2019t forget the flowers blooming\nThe rose that I pick for you\nTime changed you but I\u2019m not changing\nI loved you then and I still do\n\nCome go with me to yonder valley\nWhere on the largest of the trees\nI\u2019ll carve your name to prove I love you\nI can\u2019t forget come go with me\n\nI love you then and I still do",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come go with me to yonder valley",
+        "Where we once stood beneath the tree",
+        "Where we once planned our life together",
+        "I can\u2019t forget come go with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come let us live some moments over",
+        "Then maybe you won\u2019t want to leave",
+        "I love you then and will forever",
+        "I can\u2019t forget come go with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t forget the flowers blooming",
+        "The rose that I pick for you",
+        "Time changed you but I\u2019m not changing",
+        "I loved you then and I still do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come go with me to yonder valley",
+        "Where on the largest of the trees",
+        "I\u2019ll carve your name to prove I love you",
+        "I can\u2019t forget come go with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I love you then and I still do"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

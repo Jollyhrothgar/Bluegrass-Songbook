@@ -1,0 +1,51 @@
+{
+  "slug": "careless-love",
+  "title": "Careless Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/careless-love/",
+  "raw_lyrics": "Love oh love careless love\nLove oh love careless love\nLove oh love oh careless love\nSee what careless love has done\n\nOnce I wore my apron low (3x)\nI couldn\u2019t keep you from my door\n\nWhat oh what will mama say (3x)\nWhen she learns I\u2019ve gone astray\n\nI love my mama and papa too (3x)\nSee what I get for lovin\u2019 you\n\nNow I wear my apron high (3x)\nYou pass my door you walk on by",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Love oh love careless love",
+        "Love oh love careless love",
+        "Love oh love oh careless love",
+        "See what careless love has done"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once I wore my apron low (3x)",
+        "I couldn\u2019t keep you from my door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What oh what will mama say (3x)",
+        "When she learns I\u2019ve gone astray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I love my mama and papa too (3x)",
+        "See what I get for lovin\u2019 you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I wear my apron high (3x)",
+        "You pass my door you walk on by"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "the-last-letter",
+  "title": "The Last Letter",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-last-letter/",
+  "raw_lyrics": "Why do you treat me as if I were only a friend\nWhat have I done that has made you so bitter and cold\nSometimes I wonder if you\u2019ll be contented again\nWill you be happy when we are withered and old\n\nI cannot offer you diamonds and mansions so fine\nI cannot offer you clothes that your young body craves\nBut if you\u2019ll only say that you\u2019ll forever be mine\nThink of the heartaches the pain and suffering you\u2019ll save\n\nWhile I am writing this letter I think of the past\nAnd of the promises that you have broken so free\nBut to this old world I\u2019ll soon bid my farewell at last\nI will be gone when you read this last letter from me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Why do you treat me as if I were only a friend",
+        "What have I done that has made you so bitter and cold",
+        "Sometimes I wonder if you\u2019ll be contented again",
+        "Will you be happy when we are withered and old"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I cannot offer you diamonds and mansions so fine",
+        "I cannot offer you clothes that your young body craves",
+        "But if you\u2019ll only say that you\u2019ll forever be mine",
+        "Think of the heartaches the pain and suffering you\u2019ll save"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While I am writing this letter I think of the past",
+        "And of the promises that you have broken so free",
+        "But to this old world I\u2019ll soon bid my farewell at last",
+        "I will be gone when you read this last letter from me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

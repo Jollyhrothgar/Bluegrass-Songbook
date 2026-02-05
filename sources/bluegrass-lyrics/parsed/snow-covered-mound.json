@@ -1,0 +1,49 @@
+{
+  "slug": "snow-covered-mound",
+  "title": "Snow Covered Mound",
+  "source_url": "https://www.bluegrasslyrics.com/song/snow-covered-mound/",
+  "raw_lyrics": "Covered with snow neath the mantle of white\nSleeping so calm while the winter winds blow\nOur mother is resting from the day and the night\nShe sleeps in the grave all covered with snow\n\nSleeping neath the gentle snow\nSweetly she sleeps while the winter winds blow\nCalmly she\u2019s resting neath the mantle of white\nOur mother is sleeping she\u2019s sleeping tonight\n\nThere she will sleep til the springtime has come\nSweet fragrant roses will bloom on her tomb\nSleeping so calm while the winter winds blow\nShe sleeps in a grave all covered with snow\n\nThere she will sleep beneath the snow covered mound\nTil that glad day when the trumpets shall sound\nThen she will wake from her slumber below\nAnd we\u2019ll be reunited to live evermore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Covered with snow neath the mantle of white",
+        "Sleeping so calm while the winter winds blow",
+        "Our mother is resting from the day and the night",
+        "She sleeps in the grave all covered with snow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Sleeping neath the gentle snow",
+        "Sweetly she sleeps while the winter winds blow",
+        "Calmly she\u2019s resting neath the mantle of white",
+        "Our mother is sleeping she\u2019s sleeping tonight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There she will sleep til the springtime has come",
+        "Sweet fragrant roses will bloom on her tomb",
+        "Sleeping so calm while the winter winds blow",
+        "She sleeps in a grave all covered with snow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There she will sleep beneath the snow covered mound",
+        "Til that glad day when the trumpets shall sound",
+        "Then she will wake from her slumber below",
+        "And we\u2019ll be reunited to live evermore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

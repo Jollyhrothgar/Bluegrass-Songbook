@@ -1,0 +1,49 @@
+{
+  "slug": "dont-sell-the-land",
+  "title": "Don\u2019t Sell The Land",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-sell-the-land/",
+  "raw_lyrics": "Don\u2019t sell the land Mama\nPlease don\u2019t sell the land\nMy heart\u2019s in these hills Mama\nplease don\u2019t sell the land\n\nMy Daddy he was born here, here in these hills\nMy Daddy\u2019s lying quiet now but he\u2019s with us still\nMama on your wedding day Daddy brought you here\nHeld you safely in his arms and promised his last share\n\nI\u2019ll help you pay the taxes we still have some time\nI\u2019ll farm that little furrow I\u2019ll work down in the mine\nI know how hard it is Mama with eleven kids to feed\nBut we can still make it Mama if you will hear my plea\n\nDon\u2019t worry about my schooling don\u2019t need it anyhow\nI\u2019ve got to fill my Daddy\u2019s shoes and I plan to start right now\nI know you carried it all alone so Mama lean on me\nWe\u2019ve lost the most important thing but we built a family",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t sell the land Mama",
+        "Please don\u2019t sell the land",
+        "My heart\u2019s in these hills Mama",
+        "please don\u2019t sell the land"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My Daddy he was born here, here in these hills",
+        "My Daddy\u2019s lying quiet now but he\u2019s with us still",
+        "Mama on your wedding day Daddy brought you here",
+        "Held you safely in his arms and promised his last share"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll help you pay the taxes we still have some time",
+        "I\u2019ll farm that little furrow I\u2019ll work down in the mine",
+        "I know how hard it is Mama with eleven kids to feed",
+        "But we can still make it Mama if you will hear my plea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t worry about my schooling don\u2019t need it anyhow",
+        "I\u2019ve got to fill my Daddy\u2019s shoes and I plan to start right now",
+        "I know you carried it all alone so Mama lean on me",
+        "We\u2019ve lost the most important thing but we built a family"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

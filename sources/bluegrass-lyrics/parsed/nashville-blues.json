@@ -1,0 +1,81 @@
+{
+  "slug": "nashville-blues",
+  "title": "Nashville Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/nashville-blues/",
+  "raw_lyrics": "I\u2019ve got the blues those Nashville blues\nI\u2019ve got the blues those Nashville blues\nAin\u2019t got no hat ain\u2019t got no shoes\n\nThe people here they treat me fine\nThe people here they treat me fine\nThey give me beer they give me wine\n\nI\u2019ve got the blues I\u2019ve got \u2019em bad\nI\u2019ve got the blues I\u2019ve got \u2019em bad\nSomebody stole that girl I had\n\nShe\u2019s gone she\u2019s gone away from me\nShe\u2019s gone she\u2019s gone away from me\nOne thing she left she left me free\n\nI wish I was a turtle dove\nI wish I was a turtle dove\nI\u2019d fly away to the girl I love\n\nIt\u2019s hard to tell what a girl will do\nIt\u2019s hard to tell what a girl will do\nThey\u2019ll win your love and leave you blue\n\nI\u2019m going home to Arkansas\nI\u2019m going home to Arkansas\nGonna stay right there with ma and pa\n\nIf you find me sad please go away\nIf you find me sad please go away\nCome back again some other day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got the blues those Nashville blues",
+        "I\u2019ve got the blues those Nashville blues",
+        "Ain\u2019t got no hat ain\u2019t got no shoes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The people here they treat me fine",
+        "The people here they treat me fine",
+        "They give me beer they give me wine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got the blues I\u2019ve got \u2019em bad",
+        "I\u2019ve got the blues I\u2019ve got \u2019em bad",
+        "Somebody stole that girl I had"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s gone she\u2019s gone away from me",
+        "She\u2019s gone she\u2019s gone away from me",
+        "One thing she left she left me free"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I was a turtle dove",
+        "I wish I was a turtle dove",
+        "I\u2019d fly away to the girl I love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s hard to tell what a girl will do",
+        "It\u2019s hard to tell what a girl will do",
+        "They\u2019ll win your love and leave you blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going home to Arkansas",
+        "I\u2019m going home to Arkansas",
+        "Gonna stay right there with ma and pa"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you find me sad please go away",
+        "If you find me sad please go away",
+        "Come back again some other day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

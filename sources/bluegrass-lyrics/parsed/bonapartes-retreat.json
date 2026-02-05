@@ -1,0 +1,29 @@
+{
+  "slug": "bonapartes-retreat",
+  "title": "Bonaparte\u2019s Retreat",
+  "source_url": "https://www.bluegrasslyrics.com/song/bonapartes-retreat/",
+  "raw_lyrics": "Met the girl I love in a town way down in Dixie\n\u2018Neath the stars above she was the sweetest girl I ever did see\nSo I took her in my arms and told her of her many charms\nI kissed her while the fiddles played the Bonaparte\u2019s Retreat\n\nAll the world was bright as I held her on that night\nAnd I heard her say Please don\u2019t ever go away\nSo I held her in my arms and told her of her many charms\nI kissed her while the fiddles played the Bonaparte\u2019s Retreat",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Met the girl I love in a town way down in Dixie",
+        "\u2018Neath the stars above she was the sweetest girl I ever did see",
+        "So I took her in my arms and told her of her many charms",
+        "I kissed her while the fiddles played the Bonaparte\u2019s Retreat"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "All the world was bright as I held her on that night",
+        "And I heard her say Please don\u2019t ever go away",
+        "So I held her in my arms and told her of her many charms",
+        "I kissed her while the fiddles played the Bonaparte\u2019s Retreat"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "school-house-on-the-hill",
+  "title": "School House On The Hill",
+  "source_url": "https://www.bluegrasslyrics.com/song/school-house-on-the-hill/",
+  "raw_lyrics": "Fond memory paints us scenes of other years\nWe need our memories still\nAnd Christ amid those joyous seats and chairs\nThe school house on the hill\n\nOh the school house that stands upon the hill\nI never never can forget\nDear happy days they gather round me still\nI never no never can forget\n\nThere hangs a swing up on the maple tree\nWhere you and I once swung\nThere flows the spring forever flowing free\nAs when we both were young\n\nThere climbs the vines and there the berries grow\nWhich once we prized so high\nAnd there the ripe sun glistened in the grove\nOf rich October skies",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Fond memory paints us scenes of other years",
+        "We need our memories still",
+        "And Christ amid those joyous seats and chairs",
+        "The school house on the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the school house that stands upon the hill",
+        "I never never can forget",
+        "Dear happy days they gather round me still",
+        "I never no never can forget"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There hangs a swing up on the maple tree",
+        "Where you and I once swung",
+        "There flows the spring forever flowing free",
+        "As when we both were young"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There climbs the vines and there the berries grow",
+        "Which once we prized so high",
+        "And there the ripe sun glistened in the grove",
+        "Of rich October skies"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

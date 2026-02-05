@@ -1,0 +1,39 @@
+{
+  "slug": "i-just-cant-go-on-this-old-way",
+  "title": "I Just Can\u2019t Go On This Old Way",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-just-cant-go-on-this-old-way/",
+  "raw_lyrics": "When you left me you said you\u2019d return dear\nYou said you would be back some day\nOh please let me hear from you darling\nI just can\u2019t go on this old way\n\nI know you never did love me\nBut I thought that you would dear someday\nOh please let me hear from you darling\nI just can\u2019t go on this old way\n\nRemember the good times together\nWhen you said that you loved me so true\nAs I sit here the stars hover o\u2019er me\nThere\u2019s a love in my heart dear for you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When you left me you said you\u2019d return dear",
+        "You said you would be back some day",
+        "Oh please let me hear from you darling",
+        "I just can\u2019t go on this old way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know you never did love me",
+        "But I thought that you would dear someday",
+        "Oh please let me hear from you darling",
+        "I just can\u2019t go on this old way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Remember the good times together",
+        "When you said that you loved me so true",
+        "As I sit here the stars hover o\u2019er me",
+        "There\u2019s a love in my heart dear for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

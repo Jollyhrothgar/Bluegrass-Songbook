@@ -1,0 +1,39 @@
+{
+  "slug": "how-many-times",
+  "title": "How Many Times",
+  "source_url": "https://www.bluegrasslyrics.com/song/how-many-times/",
+  "raw_lyrics": "How many times must we fight\nIt goes on \u2018til past midnight\nDay after day night after night\nHow many times must we fight\n\nYou always say that I\u2019m to blame\nBut you should hang your head in shame\nJust because you\u2019ve got the upper hand\nThis life I live is hard to stand\n\nYour heart is surely made of stone\nPeople like you should live alone\nOh you\u2019ve kicked this old heart of mine around\nA thousand times you let it down",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "How many times must we fight",
+        "It goes on \u2018til past midnight",
+        "Day after day night after night",
+        "How many times must we fight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You always say that I\u2019m to blame",
+        "But you should hang your head in shame",
+        "Just because you\u2019ve got the upper hand",
+        "This life I live is hard to stand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your heart is surely made of stone",
+        "People like you should live alone",
+        "Oh you\u2019ve kicked this old heart of mine around",
+        "A thousand times you let it down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

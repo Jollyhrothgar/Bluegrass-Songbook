@@ -1,0 +1,50 @@
+{
+  "slug": "i-feel-the-blues-moving-in",
+  "title": "I Feel The Blues Moving In",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-feel-the-blues-moving-in/",
+  "raw_lyrics": "Though the miles are between us, I thought our love would strengthen\nAs it had, so many times before\nBut something has happened, I can see it in your writing\nI can tell my world is crumbling and the blues are at my door\n\nThe last letter that you wrote was on a blue piece of paper\nThat old feelings back, the clouds are moving in\nThe beginning of the end is near I feel your love is fading\nIn the darkness, it seems I have no friend\nI feel the blues moving in\n\nOh it\u2019s not the words you wrote that left me sad and broken hearted\nOr put me in this sad shape I\u2019m in\nBetween the lines and mixed emotions are the teardrops on the paper\nYou said that\u2019s all I write you now I\u2019ll close for now old friend\n\nMy state of mind is desperate as the hole that I\u2019m sinking in\nGets deeper while I\u2019m digging to get out\nOh please give me the right answer to the question I\u2019m asking\nTell me you still love me it would turn my world around",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Though the miles are between us, I thought our love would strengthen",
+        "As it had, so many times before",
+        "But something has happened, I can see it in your writing",
+        "I can tell my world is crumbling and the blues are at my door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The last letter that you wrote was on a blue piece of paper",
+        "That old feelings back, the clouds are moving in",
+        "The beginning of the end is near I feel your love is fading",
+        "In the darkness, it seems I have no friend",
+        "I feel the blues moving in"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh it\u2019s not the words you wrote that left me sad and broken hearted",
+        "Or put me in this sad shape I\u2019m in",
+        "Between the lines and mixed emotions are the teardrops on the paper",
+        "You said that\u2019s all I write you now I\u2019ll close for now old friend"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My state of mind is desperate as the hole that I\u2019m sinking in",
+        "Gets deeper while I\u2019m digging to get out",
+        "Oh please give me the right answer to the question I\u2019m asking",
+        "Tell me you still love me it would turn my world around"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

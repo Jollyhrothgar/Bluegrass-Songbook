@@ -1,0 +1,61 @@
+{
+  "slug": "sweeter-than-the-flowers",
+  "title": "Sweeter Than The Flowers",
+  "source_url": "https://www.bluegrasslyrics.com/song/sweeter-than-the-flowers/",
+  "raw_lyrics": "Just as far as I can remember\nShe\u2019ll remain the rose of my heart\nMama fell sick along in December\nFebruary brought us broken hearts\n\nThe reason we\u2019ve not called a family reunion\nWe knew that she wouldn\u2019t be there\nBut now that we\u2019ve thought it all over Mama\nWe know you\u2019re spirit is here\n\nOh no I can\u2019t forget the hours your the only one Momma\nAnd sweeter than the flowers\nOh no there\u2019s no use to bother\nTo speak of you now would only hurt Father\nOh no momma we\u2019ll never forget you\nAnd someday we\u2019ll meet you up there\n\nWe all gathered round and I stared at their faces\nAll heads were bowed mighty low\nBut this was one time we all had to face it\nThough it hurt us so badly you know\n\nWell it looked so good to see us together\nBut I had to look after dad\nOh no Mother when I passed by your casket\nI didn\u2019t want to remember you dead",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just as far as I can remember",
+        "She\u2019ll remain the rose of my heart",
+        "Mama fell sick along in December",
+        "February brought us broken hearts"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The reason we\u2019ve not called a family reunion",
+        "We knew that she wouldn\u2019t be there",
+        "But now that we\u2019ve thought it all over Mama",
+        "We know you\u2019re spirit is here"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh no I can\u2019t forget the hours your the only one Momma",
+        "And sweeter than the flowers",
+        "Oh no there\u2019s no use to bother",
+        "To speak of you now would only hurt Father",
+        "Oh no momma we\u2019ll never forget you",
+        "And someday we\u2019ll meet you up there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We all gathered round and I stared at their faces",
+        "All heads were bowed mighty low",
+        "But this was one time we all had to face it",
+        "Though it hurt us so badly you know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well it looked so good to see us together",
+        "But I had to look after dad",
+        "Oh no Mother when I passed by your casket",
+        "I didn\u2019t want to remember you dead"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

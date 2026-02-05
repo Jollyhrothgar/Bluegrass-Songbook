@@ -1,0 +1,59 @@
+{
+  "slug": "little-benny",
+  "title": "Little Benny",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-benny/",
+  "raw_lyrics": "One night as the stars were all shining\nLittle Benny knelt down by his bed\nHe asked the dear Lord to forgive him\nFor all the bad words he had said\n\nPlease papa don\u2019t whip little Benny\nPlease papa don\u2019t whip little Ben\nHe\u2019s little and wants you to love him\nPlease papa don\u2019t whip little Ben\n\nYou remember how Mama loved Benny\nHow she kissed him the morning ahe died\nShe told him to love and obey you\nAnd I know little Benny has tried\n\nOh what if dear Mama in Heaven\nShould be looking way down from the sky\nAnd see you whip little Benny\nI know it would make Mama cry\n\nThose very bad words that he said\nHe learned from some old wicked men\nHe\u2019s little and didn\u2019t know better\nPlease papa don\u2019t whip little Ben",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One night as the stars were all shining",
+        "Little Benny knelt down by his bed",
+        "He asked the dear Lord to forgive him",
+        "For all the bad words he had said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Please papa don\u2019t whip little Benny",
+        "Please papa don\u2019t whip little Ben",
+        "He\u2019s little and wants you to love him",
+        "Please papa don\u2019t whip little Ben"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You remember how Mama loved Benny",
+        "How she kissed him the morning ahe died",
+        "She told him to love and obey you",
+        "And I know little Benny has tried"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh what if dear Mama in Heaven",
+        "Should be looking way down from the sky",
+        "And see you whip little Benny",
+        "I know it would make Mama cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Those very bad words that he said",
+        "He learned from some old wicked men",
+        "He\u2019s little and didn\u2019t know better",
+        "Please papa don\u2019t whip little Ben"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

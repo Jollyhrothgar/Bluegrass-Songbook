@@ -1,0 +1,49 @@
+{
+  "slug": "victim-to-the-tomb",
+  "title": "Victim To The Tomb",
+  "source_url": "https://www.bluegrasslyrics.com/song/victim-to-the-tomb/",
+  "raw_lyrics": "It was in the time of autumn\nThe golden leaves lay all around\nThat we laid our dear old father\nAway beneath the cold damp ground\n\nIt seems but a short time ago\nThat he was in his fullest bloom\nBut death alas has laid him low\nAnother victim to the tomb\n\nMany sad farewells were given\nMany bitter tears were shed\nOur sad hearts all beat with anguish\nAs he lay on his dying bed\n\nOn a savior\u2019s summons he was readied\nOn his journey home to go\nAnd fearless drew near the dark valleys\nWashed in His blood whiter than snow",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It was in the time of autumn",
+        "The golden leaves lay all around",
+        "That we laid our dear old father",
+        "Away beneath the cold damp ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It seems but a short time ago",
+        "That he was in his fullest bloom",
+        "But death alas has laid him low",
+        "Another victim to the tomb"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many sad farewells were given",
+        "Many bitter tears were shed",
+        "Our sad hearts all beat with anguish",
+        "As he lay on his dying bed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On a savior\u2019s summons he was readied",
+        "On his journey home to go",
+        "And fearless drew near the dark valleys",
+        "Washed in His blood whiter than snow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

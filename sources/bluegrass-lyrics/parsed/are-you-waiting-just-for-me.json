@@ -1,0 +1,39 @@
+{
+  "slug": "are-you-waiting-just-for-me",
+  "title": "Are You Waiting Just For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/are-you-waiting-just-for-me/",
+  "raw_lyrics": "Are you waiting just for me my darling\nWhile I\u2019m far across the deep blue sea\nOr have you found someone else my darling\nPlease tell me are you waiting just for me\n\nWhile I\u2019m writing you tonight my darling\nThere\u2019s such a burning deep within my breast\nI know you promised that you would be faithful\nWell tell me honey have you stood the test\n\nYou\u2019ve never given me a cause to doubt you\nYou have always been so true and kind\nBut my spirits keep on sinking lower\nFearing that a new love you will find",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Are you waiting just for me my darling",
+        "While I\u2019m far across the deep blue sea",
+        "Or have you found someone else my darling",
+        "Please tell me are you waiting just for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While I\u2019m writing you tonight my darling",
+        "There\u2019s such a burning deep within my breast",
+        "I know you promised that you would be faithful",
+        "Well tell me honey have you stood the test"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ve never given me a cause to doubt you",
+        "You have always been so true and kind",
+        "But my spirits keep on sinking lower",
+        "Fearing that a new love you will find"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

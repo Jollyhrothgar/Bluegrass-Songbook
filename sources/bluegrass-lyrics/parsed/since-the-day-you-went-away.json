@@ -1,0 +1,39 @@
+{
+  "slug": "since-the-day-you-went-away",
+  "title": "Since The Day You Went Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/since-the-day-you-went-away/",
+  "raw_lyrics": "Every minute seems like an hour\nEvery hour seems like a day\nMaybe you don\u2019t realize my darling\nBut you broke my heart the day you went away\n\nHere\u2019s thing or two to ask the other\nWill he love you when your old and gray\nWill he hold your hand when old and wrinkled\nLike I did the day you went away\n\nNow there will come a time when you\u2019ll be sorry\nSorry for the things you do and say\nI am not the blame if you must suffer\nLike I did the day you went away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Every minute seems like an hour",
+        "Every hour seems like a day",
+        "Maybe you don\u2019t realize my darling",
+        "But you broke my heart the day you went away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Here\u2019s thing or two to ask the other",
+        "Will he love you when your old and gray",
+        "Will he hold your hand when old and wrinkled",
+        "Like I did the day you went away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now there will come a time when you\u2019ll be sorry",
+        "Sorry for the things you do and say",
+        "I am not the blame if you must suffer",
+        "Like I did the day you went away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "only-way-to-say-goodbye-the",
+  "title": "Only Way To Say Goodbye, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/only-way-to-say-goodbye-the/",
+  "raw_lyrics": "I\u2019m so lonesome and alone since you left our happy home\nNow all that\u2019s left are these tears upon my face\nI\u2019ve turned to drinkin\u2019 and prayin\u2019 that the lord would hear me sayin\ntake me away from this sad and lonely place\n\nI\u2019ve got no plans for tomorrow\nI\u2019m so ashamed and filled with sorrow\nI should have told you that I loved you everyday\nThe only way to say goodbye is with these tears that fill my eyes\nI hear you call me as they fall upon your grave\n\nIf I could only be set free from your haunting memory\nBut still I find that I\u2019m a prisoner of your love\nThere\u2019s nothing left for me to do but in this pain of losin\u2019 you\nSo I am down upon the ground I\u2019ve had enough\n\nNot knowin where to turn from here\nMy heart still yearns for you my dear\nI can\u2019t take this awful pain I\u2019m goin through\nI\u2019ll take this gun in tremblin hand and hope the lord will understand\nThere\u2019s just no way that I could stay here without you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m so lonesome and alone since you left our happy home",
+        "Now all that\u2019s left are these tears upon my face",
+        "I\u2019ve turned to drinkin\u2019 and prayin\u2019 that the lord would hear me sayin",
+        "take me away from this sad and lonely place"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve got no plans for tomorrow",
+        "I\u2019m so ashamed and filled with sorrow",
+        "I should have told you that I loved you everyday",
+        "The only way to say goodbye is with these tears that fill my eyes",
+        "I hear you call me as they fall upon your grave"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I could only be set free from your haunting memory",
+        "But still I find that I\u2019m a prisoner of your love",
+        "There\u2019s nothing left for me to do but in this pain of losin\u2019 you",
+        "So I am down upon the ground I\u2019ve had enough"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Not knowin where to turn from here",
+        "My heart still yearns for you my dear",
+        "I can\u2019t take this awful pain I\u2019m goin through",
+        "I\u2019ll take this gun in tremblin hand and hope the lord will understand",
+        "There\u2019s just no way that I could stay here without you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

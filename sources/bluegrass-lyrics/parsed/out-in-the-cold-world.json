@@ -1,0 +1,49 @@
+{
+  "slug": "out-in-the-cold-world",
+  "title": "Out In The Cold World",
+  "source_url": "https://www.bluegrasslyrics.com/song/out-in-the-cold-world/",
+  "raw_lyrics": "Out in the cold world and far away home\nSome mother\u2019s boy is wandering all alone\nWith no one to guide him or keep his footsteps right\nSome mother\u2019s boy is homeless tonight\n\nBring back to me my wandering boy\nFor there is no other who\u2019s bound to give me joy\nTell him that his mother with faded cheeks and hair\nIs at the old home awaiting him there\n\nOut in the hallway, there stands a vacant chair\nAn old pair of shoes that he used to wear\nEmpty is the cradle he used to love so well\nOh, how I miss him no tongue can tell\n\nWell I remember those parting words he said\nWe\u2019ll meet up yonder where tears are never shed\nIn that land of sunshine away from toil and care\nWhen life is over, I\u2019ll meet you up there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Out in the cold world and far away home",
+        "Some mother\u2019s boy is wandering all alone",
+        "With no one to guide him or keep his footsteps right",
+        "Some mother\u2019s boy is homeless tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Bring back to me my wandering boy",
+        "For there is no other who\u2019s bound to give me joy",
+        "Tell him that his mother with faded cheeks and hair",
+        "Is at the old home awaiting him there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Out in the hallway, there stands a vacant chair",
+        "An old pair of shoes that he used to wear",
+        "Empty is the cradle he used to love so well",
+        "Oh, how I miss him no tongue can tell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I remember those parting words he said",
+        "We\u2019ll meet up yonder where tears are never shed",
+        "In that land of sunshine away from toil and care",
+        "When life is over, I\u2019ll meet you up there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

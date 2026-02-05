@@ -1,0 +1,69 @@
+{
+  "slug": "tall-pines",
+  "title": "Tall Pines",
+  "source_url": "https://www.bluegrasslyrics.com/song/tall-pines/",
+  "raw_lyrics": "Once in my youth, I stood on this mountain\nAnd planted some pines in the sand\nEvery day I looked their way\nBut just couldn\u2019t understand\n\nWhy they never grew like I thought they should do\nI just couldn\u2019t understand why\nNow I\u2019ve rambled around this wide world through\nAnd today I just happened by\n\nTall pines,  tall pines\nReaching up for the clouds\nTall pines,  tall pines\nI bet you wouldn\u2019t know me now.\n\nI\u2019ll never forget the morning I left\nThe hum of the bees in the hay\nThe farther I walk, the harder they talk\nHow silent it seems here today\n\nThere\u2019s an old rail fence that we built, inch by inch\nSurrounding the old family graves\nAnd there\u2019s one gravestone standing all alone\nThere waiting to join me in the shade\n\nTall pines,  tall pines\nReaching up for the clouds\nTall pines, tall pines\nI\u2019ve come home to sleep beneath your boughs.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once in my youth, I stood on this mountain",
+        "And planted some pines in the sand",
+        "Every day I looked their way",
+        "But just couldn\u2019t understand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Why they never grew like I thought they should do",
+        "I just couldn\u2019t understand why",
+        "Now I\u2019ve rambled around this wide world through",
+        "And today I just happened by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tall pines,  tall pines",
+        "Reaching up for the clouds",
+        "Tall pines,  tall pines",
+        "I bet you wouldn\u2019t know me now."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll never forget the morning I left",
+        "The hum of the bees in the hay",
+        "The farther I walk, the harder they talk",
+        "How silent it seems here today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s an old rail fence that we built, inch by inch",
+        "Surrounding the old family graves",
+        "And there\u2019s one gravestone standing all alone",
+        "There waiting to join me in the shade"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tall pines,  tall pines",
+        "Reaching up for the clouds",
+        "Tall pines, tall pines",
+        "I\u2019ve come home to sleep beneath your boughs."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

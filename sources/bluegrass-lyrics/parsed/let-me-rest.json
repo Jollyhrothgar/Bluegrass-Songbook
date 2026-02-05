@@ -1,0 +1,39 @@
+{
+  "slug": "let-me-rest",
+  "title": "Let Me Rest",
+  "source_url": "https://www.bluegrasslyrics.com/song/let-me-rest/",
+  "raw_lyrics": "Let me rest at the end of my journey\nI\u2019m weary, tired, and old\nLet me rest at the end of my journey\nHeaven is my home and my goal\n\nOld paint is tired, his feet are all sore\nWe\u2019ll ride the range no more\nLet me rest at the end of my journey\nHeaven is my home and my goal\n\nA cowboy\u2019s life on the old Texas trail\nHerding doggies is all that he knows\nA cowboy\u2019s life on the old cattle trail\nLeads from Texas to old Mexico",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Let me rest at the end of my journey",
+        "I\u2019m weary, tired, and old",
+        "Let me rest at the end of my journey",
+        "Heaven is my home and my goal"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Old paint is tired, his feet are all sore",
+        "We\u2019ll ride the range no more",
+        "Let me rest at the end of my journey",
+        "Heaven is my home and my goal"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A cowboy\u2019s life on the old Texas trail",
+        "Herding doggies is all that he knows",
+        "A cowboy\u2019s life on the old cattle trail",
+        "Leads from Texas to old Mexico"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "shenandoah-waltz",
+  "title": "Shenandoah Waltz",
+  "source_url": "https://www.bluegrasslyrics.com/song/shenandoah-waltz/",
+  "raw_lyrics": "In the Shenandoah Valley of Virginia\nLives a girl who is waiting there for me\nMany times we have waltzed in the moonlight\nAnd in her lovely arms I long to be\n\nI miss her smile in the moonlight\nBut I know she misses me too\nIn the Shenandoah Valley of Virginia\nI know that her love for me is true",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the Shenandoah Valley of Virginia",
+        "Lives a girl who is waiting there for me",
+        "Many times we have waltzed in the moonlight",
+        "And in her lovely arms I long to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I miss her smile in the moonlight",
+        "But I know she misses me too",
+        "In the Shenandoah Valley of Virginia",
+        "I know that her love for me is true"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

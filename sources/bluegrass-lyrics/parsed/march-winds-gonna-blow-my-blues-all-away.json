@@ -1,0 +1,39 @@
+{
+  "slug": "march-winds-gonna-blow-my-blues-all-away",
+  "title": "March Winds Gonna Blow My Blues All Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/march-winds-gonna-blow-my-blues-all-away/",
+  "raw_lyrics": "Suns gonna shine in my back door some day\nSuns gonna shine in my back door some day\nSuns gonna shine in my back door some day\nMarch winds gonna blow my blues all away\n\nLow down fireman dirty engineer\nLow down fireman dirty engineer\nLow down fireman dirty engineer\nStole my gal left me standing here\n\nMy momma told long years ago\nNever to marry no girls that I know\nSpend all your money and wear out your clothes\nWhat will become of you God only knows",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Suns gonna shine in my back door some day",
+        "Suns gonna shine in my back door some day",
+        "Suns gonna shine in my back door some day",
+        "March winds gonna blow my blues all away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Low down fireman dirty engineer",
+        "Low down fireman dirty engineer",
+        "Low down fireman dirty engineer",
+        "Stole my gal left me standing here"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My momma told long years ago",
+        "Never to marry no girls that I know",
+        "Spend all your money and wear out your clothes",
+        "What will become of you God only knows"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

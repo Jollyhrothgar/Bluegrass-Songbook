@@ -1,0 +1,69 @@
+{
+  "slug": "will-the-roses-bloom-again",
+  "title": "Will The Roses Bloom Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/will-the-roses-bloom-again/",
+  "raw_lyrics": "\u2018Neath the shadow in the meadow\nLillies lie on every side\nBy the river flowers shudder\nFading dying in their prime\n\nLovers parting lonely crying\nSadly strolling down the lane\nSomeone saying I must leave you\nTil the roses bloom again\n\nWhen the roses bloom again\nWhen the roses bloom again\nI will meet you I will greet you\nWhen the roses bloom again\n\nSunshine\u2019s over crimson clover\nBlooming in the meadow bright\nSummer fingers softly lingers\nWhispering softly in the night\n\nSomeone roaming in the gloaming\nStrolling sadly down the lane\nFor that promise she would cherish\nTil the roses bloom again\n\nShe was faithful to her lover\nShe was true until the end\nThough she knew not what befell him\nStill she hopes they\u2019ll meet again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "\u2018Neath the shadow in the meadow",
+        "Lillies lie on every side",
+        "By the river flowers shudder",
+        "Fading dying in their prime"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lovers parting lonely crying",
+        "Sadly strolling down the lane",
+        "Someone saying I must leave you",
+        "Til the roses bloom again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the roses bloom again",
+        "When the roses bloom again",
+        "I will meet you I will greet you",
+        "When the roses bloom again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sunshine\u2019s over crimson clover",
+        "Blooming in the meadow bright",
+        "Summer fingers softly lingers",
+        "Whispering softly in the night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someone roaming in the gloaming",
+        "Strolling sadly down the lane",
+        "For that promise she would cherish",
+        "Til the roses bloom again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was faithful to her lover",
+        "She was true until the end",
+        "Though she knew not what befell him",
+        "Still she hopes they\u2019ll meet again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

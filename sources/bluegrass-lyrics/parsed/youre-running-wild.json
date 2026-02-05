@@ -1,0 +1,56 @@
+{
+  "slug": "youre-running-wild",
+  "title": "You\u2019re Running Wild",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-running-wild/",
+  "raw_lyrics": "You\u2019re running wild\nHow long can this go on\nYou\u2019re leaving me alone\nAnd running wild\n\nYou\u2019re always gone\nMy love you never share\nIt\u2019s more than I can bear\nYou\u2019re running wild\n\nYou\u2019ll settle down someday\nAnd find I\u2019ve gone away\nYou\u2019ll think of what you\u2019ve done\nWhile running wild\n\nI can\u2019t go on\nYou\u2019ll have to choose the way\nYou\u2019ll have to go or stay\nStop running wild\n\nYou\u2019re running wild",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re running wild",
+        "How long can this go on",
+        "You\u2019re leaving me alone",
+        "And running wild"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re always gone",
+        "My love you never share",
+        "It\u2019s more than I can bear",
+        "You\u2019re running wild"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019ll settle down someday",
+        "And find I\u2019ve gone away",
+        "You\u2019ll think of what you\u2019ve done",
+        "While running wild"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t go on",
+        "You\u2019ll have to choose the way",
+        "You\u2019ll have to go or stay",
+        "Stop running wild"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re running wild"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

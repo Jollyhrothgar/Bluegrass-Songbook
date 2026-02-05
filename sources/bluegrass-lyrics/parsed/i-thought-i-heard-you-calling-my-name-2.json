@@ -1,0 +1,39 @@
+{
+  "slug": "i-thought-i-heard-you-calling-my-name-2",
+  "title": "I Thought I Heard You Calling My Name",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-thought-i-heard-you-calling-my-name-2/",
+  "raw_lyrics": "You said goodbye to me this morning\nWith only these words to explain\nYou said you found someone you love better\nBut I still hear you\u2019re voice call my name\n\nI thought I heard you call my name\nFunny how it still feels this way\nYour voice seems so close but I knew\nThat by now you were many miles away\n\nI\u2019ll walk through the streets of the city\nPeople passing by think it\u2019s so strange\nI\u2019m talking but there\u2019s no one beside me\nBut I still hear your voice call my name",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You said goodbye to me this morning",
+        "With only these words to explain",
+        "You said you found someone you love better",
+        "But I still hear you\u2019re voice call my name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I thought I heard you call my name",
+        "Funny how it still feels this way",
+        "Your voice seems so close but I knew",
+        "That by now you were many miles away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll walk through the streets of the city",
+        "People passing by think it\u2019s so strange",
+        "I\u2019m talking but there\u2019s no one beside me",
+        "But I still hear your voice call my name"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

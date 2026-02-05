@@ -1,0 +1,39 @@
+{
+  "slug": "if-blue-is-the-color-of-lonesome",
+  "title": "If Blue Is The Color Of Lonesome",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-blue-is-the-color-of-lonesome/",
+  "raw_lyrics": "If blue is the colour of lonesome\nThen paint me a deep shade of blue\nBlue\u2019s the way that I\u2019m feelin\u2019\nBlue because I lost you\n\neems there\u2019s been changes in colour\nBut not a great change in me\nIf blue is the colour of lonesome\nThen blue is the colour for me\n\nRed is the colour of the flaming love\nBut the flame has gone cold\nYou went with another and left me\nLeft me to cry all alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If blue is the colour of lonesome",
+        "Then paint me a deep shade of blue",
+        "Blue\u2019s the way that I\u2019m feelin\u2019",
+        "Blue because I lost you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "eems there\u2019s been changes in colour",
+        "But not a great change in me",
+        "If blue is the colour of lonesome",
+        "Then blue is the colour for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Red is the colour of the flaming love",
+        "But the flame has gone cold",
+        "You went with another and left me",
+        "Left me to cry all alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

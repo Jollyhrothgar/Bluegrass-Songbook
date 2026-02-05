@@ -1,0 +1,49 @@
+{
+  "slug": "remember-me",
+  "title": "Remember Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/remember-me/",
+  "raw_lyrics": "The sweetest songs belong to lovers in the gloaming\nThe sweetest days were the days that used to be\nThe saddest words I ever heard were words of parting\nWhen you said Sweetheart remember me\n\nRemember me when the candle lights are gleaming\nRemember me at the close of a long long day\nIt would be so sweet when all alone I\u2019m dreaming\nJust to know you still remember me\n\nYou told me once that you were mine alone forever\nAnd I was yours \u2019til the end of eternity\nBut all those vows are broken now and we will never\nBe the same except in memory\n\nA brighter face may take my place when we\u2019re apart dear\nA sweeter smile and a love more bold and free\nBut in the end fair weather friends may break your heart dear\nIf they do sweetheart remember me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The sweetest songs belong to lovers in the gloaming",
+        "The sweetest days were the days that used to be",
+        "The saddest words I ever heard were words of parting",
+        "When you said Sweetheart remember me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Remember me when the candle lights are gleaming",
+        "Remember me at the close of a long long day",
+        "It would be so sweet when all alone I\u2019m dreaming",
+        "Just to know you still remember me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You told me once that you were mine alone forever",
+        "And I was yours \u2019til the end of eternity",
+        "But all those vows are broken now and we will never",
+        "Be the same except in memory"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A brighter face may take my place when we\u2019re apart dear",
+        "A sweeter smile and a love more bold and free",
+        "But in the end fair weather friends may break your heart dear",
+        "If they do sweetheart remember me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

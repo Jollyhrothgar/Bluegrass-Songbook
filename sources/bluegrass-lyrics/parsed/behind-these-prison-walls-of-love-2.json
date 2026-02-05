@@ -1,0 +1,49 @@
+{
+  "slug": "behind-these-prison-walls-of-love-2",
+  "title": "Behind These Prison Walls Of Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/behind-these-prison-walls-of-love-2/",
+  "raw_lyrics": "Behind these prison walls of love dear\nForever more I know I\u2019ll be\nCondemned because you love another\nNo one will ever set me free\n\nIn my heart sweet memories linger\nOf the days when you were mine\nBehind these prison walls of love dear\nVisions of a past entwined\n\nI know my love for you seems strange dear\nBut it\u2019s all I\u2019ll ever know\nI\u2019ll content myself with memories\nIf it pleases you to go\n\nJust remember precious darling\nWhen we face the judge above\nAll of our vows will be unbroken\nBehind these prison walls of love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Behind these prison walls of love dear",
+        "Forever more I know I\u2019ll be",
+        "Condemned because you love another",
+        "No one will ever set me free"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "In my heart sweet memories linger",
+        "Of the days when you were mine",
+        "Behind these prison walls of love dear",
+        "Visions of a past entwined"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know my love for you seems strange dear",
+        "But it\u2019s all I\u2019ll ever know",
+        "I\u2019ll content myself with memories",
+        "If it pleases you to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Just remember precious darling",
+        "When we face the judge above",
+        "All of our vows will be unbroken",
+        "Behind these prison walls of love"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

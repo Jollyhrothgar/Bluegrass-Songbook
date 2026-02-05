@@ -1,0 +1,49 @@
+{
+  "slug": "keep-on-the-firing-line",
+  "title": "Keep On The Firing Line",
+  "source_url": "https://www.bluegrasslyrics.com/song/keep-on-the-firing-line/",
+  "raw_lyrics": "If you\u2019re in the battle for the lord and right\nJust keep on the firing line\nIf you win the battle then surely you must fight\nSo keep on the firing line\n\nBrother keep on the firing line\nKeep on the firing line\nTime is getting short Jesus coming soon\nBrother keep on the firing line\n\nThere are many dangers everyone must face\nIf you die fighting there is no disgrace\nWith the lord for coward you will find no place\nSo keep on the firing line\n\nGod can only use the soldier he can trust\nTo keep on the firing line\nIf you wear the crown bear the cross you must\nSo keep on the firing line",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If you\u2019re in the battle for the lord and right",
+        "Just keep on the firing line",
+        "If you win the battle then surely you must fight",
+        "So keep on the firing line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Brother keep on the firing line",
+        "Keep on the firing line",
+        "Time is getting short Jesus coming soon",
+        "Brother keep on the firing line"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There are many dangers everyone must face",
+        "If you die fighting there is no disgrace",
+        "With the lord for coward you will find no place",
+        "So keep on the firing line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God can only use the soldier he can trust",
+        "To keep on the firing line",
+        "If you wear the crown bear the cross you must",
+        "So keep on the firing line"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

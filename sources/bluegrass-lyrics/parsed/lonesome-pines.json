@@ -1,0 +1,49 @@
+{
+  "slug": "lonesome-pines",
+  "title": "Lonesome Pines",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-pines/",
+  "raw_lyrics": "THERE\u2019S A PATH BACK IN THE MOUNTAINS\nTHAT ONE ROOM HOUSE WHERE I WAS BORN\nEVEN NOW THE MEMORIES LINGER\nMY MAMA\u2019S SMILE SO SOFT AND WARM\n\nLONESOME PINE I CAN HEAR YOU CALLIN\u2019\nCALLIN\u2019 ME BACK TO MY HOME\nWHERE THE FOX AND HOUND THROUGH THE HILLS ARE ROAMIN\u2019\nLONESOME PINE CALLIN\u2019 ME BACK HOME\n\nIT\u2019S BEEN SO LONG SINCE I LEFT THAT CABIN\nIN SEARCH OF WEALTH FORTUNE AND FAME\nAND LATE AT NIGHT WHEN I\u2019M ALONE AND LONELY\nI STILL HEAR MY DADDY CALL MY NAME\n\nSOMEDAY SOON I\u2019M A GONNA TRAVEL\nBACK TO THE LAND THAT I LOVE BEST\nIN THE STILLNESS OF THE MOUNTAINS\nI WILL FIND SWEET PEACE AND REST",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "THERE\u2019S A PATH BACK IN THE MOUNTAINS",
+        "THAT ONE ROOM HOUSE WHERE I WAS BORN",
+        "EVEN NOW THE MEMORIES LINGER",
+        "MY MAMA\u2019S SMILE SO SOFT AND WARM"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "LONESOME PINE I CAN HEAR YOU CALLIN\u2019",
+        "CALLIN\u2019 ME BACK TO MY HOME",
+        "WHERE THE FOX AND HOUND THROUGH THE HILLS ARE ROAMIN\u2019",
+        "LONESOME PINE CALLIN\u2019 ME BACK HOME"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "IT\u2019S BEEN SO LONG SINCE I LEFT THAT CABIN",
+        "IN SEARCH OF WEALTH FORTUNE AND FAME",
+        "AND LATE AT NIGHT WHEN I\u2019M ALONE AND LONELY",
+        "I STILL HEAR MY DADDY CALL MY NAME"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "SOMEDAY SOON I\u2019M A GONNA TRAVEL",
+        "BACK TO THE LAND THAT I LOVE BEST",
+        "IN THE STILLNESS OF THE MOUNTAINS",
+        "I WILL FIND SWEET PEACE AND REST"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

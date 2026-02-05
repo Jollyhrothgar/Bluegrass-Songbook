@@ -1,0 +1,39 @@
+{
+  "slug": "mary-ann",
+  "title": "Mary Ann",
+  "source_url": "https://www.bluegrasslyrics.com/song/mary-ann/",
+  "raw_lyrics": "There\u2019s a girl on my mind I can\u2019t get over\nWho\u2019d break the heart of any man\nWithout her things just falls to pieces\nOh I\u2019m singing about my Mary Ann\n\nSo I\u2019ll just keep touching up my gray hair\nLive and hope someday she\u2019ll understand\nIt\u2019s no matter if I live to be a hundred\nThere\u2019ll always be a place in my heart for Mary Ann\n\nI know she\u2019s out there somewhere in a world that can\u2019t be found\nJust to think of her still tears me down\nIf teardrops were pennies I\u2019d be a wealthy man\nFrom the tears I\u2019ve cried for Mary Ann",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a girl on my mind I can\u2019t get over",
+        "Who\u2019d break the heart of any man",
+        "Without her things just falls to pieces",
+        "Oh I\u2019m singing about my Mary Ann"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So I\u2019ll just keep touching up my gray hair",
+        "Live and hope someday she\u2019ll understand",
+        "It\u2019s no matter if I live to be a hundred",
+        "There\u2019ll always be a place in my heart for Mary Ann"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know she\u2019s out there somewhere in a world that can\u2019t be found",
+        "Just to think of her still tears me down",
+        "If teardrops were pennies I\u2019d be a wealthy man",
+        "From the tears I\u2019ve cried for Mary Ann"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

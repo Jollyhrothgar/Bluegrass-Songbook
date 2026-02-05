@@ -1,0 +1,65 @@
+{
+  "slug": "ginsing-sullivan",
+  "title": "Ginsing Sullivan",
+  "source_url": "https://www.bluegrasslyrics.com/song/ginsing-sullivan/",
+  "raw_lyrics": "About three miles from the back town yard\nThe river curves on down\nNot far south of the town depot\nSullivan\u2019s shack was found\nUp on the higher ground.\n\nYou could see him every day\nJust walking down the line\nWith his old brown sack across his back\nLong hair down behind\nSpeaking his worried mind.\n\nIt\u2019s a long way from the delta to the North Georgia hills\nA tote sack full of ginseng won\u2019t pay my travelling bills\nI\u2019m too old to ride the rails I\u2019ll bum the road alone\nSo I guess I\u2019ll never make it back to home\nMy muddy water Mississippi Delta home.\n\nThe winters here they get too cold\nThe damp it makes me ill\nCan\u2019t dig no roots on the mountain side\nWith the ground froze hard and still\nGotta stay at the foot of the hill.\n\nBut next summer\nthings turn right\nThe companies will pay high\nI\u2019ll make enough money to pay my bills\nBid these mountains goodbye\nThen he said with a sigh.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "About three miles from the back town yard",
+        "The river curves on down",
+        "Not far south of the town depot",
+        "Sullivan\u2019s shack was found",
+        "Up on the higher ground."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You could see him every day",
+        "Just walking down the line",
+        "With his old brown sack across his back",
+        "Long hair down behind",
+        "Speaking his worried mind."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s a long way from the delta to the North Georgia hills",
+        "A tote sack full of ginseng won\u2019t pay my travelling bills",
+        "I\u2019m too old to ride the rails I\u2019ll bum the road alone",
+        "So I guess I\u2019ll never make it back to home",
+        "My muddy water Mississippi Delta home."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The winters here they get too cold",
+        "The damp it makes me ill",
+        "Can\u2019t dig no roots on the mountain side",
+        "With the ground froze hard and still",
+        "Gotta stay at the foot of the hill."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But next summer",
+        "things turn right",
+        "The companies will pay high",
+        "I\u2019ll make enough money to pay my bills",
+        "Bid these mountains goodbye",
+        "Then he said with a sigh."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "in-foggy-old-london",
+  "title": "In Foggy Old London",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-foggy-old-london/",
+  "raw_lyrics": "In a far away land I\u2019m living in dreams\nSo often at times I\u2019m with you it seems\nBut I know I am dreaming when I think of you\nIn foggy old London across the deep blue\n\nDeep blue in the ocean it\u2019s so deep and wide\nAnd I\u2019ve got a notion I\u2019ll cross it tonight\nAnd I\u2019ll fly like a bluebird up there in the sky\nIn foggy old London I\u2019ll find my blue eyes\n\nWhen your letter came I opened to find\nYou had been crying while writing each line\nBut you never mentioned no reason for tears\nAnd foggy old London is so far from here",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a far away land I\u2019m living in dreams",
+        "So often at times I\u2019m with you it seems",
+        "But I know I am dreaming when I think of you",
+        "In foggy old London across the deep blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Deep blue in the ocean it\u2019s so deep and wide",
+        "And I\u2019ve got a notion I\u2019ll cross it tonight",
+        "And I\u2019ll fly like a bluebird up there in the sky",
+        "In foggy old London I\u2019ll find my blue eyes"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When your letter came I opened to find",
+        "You had been crying while writing each line",
+        "But you never mentioned no reason for tears",
+        "And foggy old London is so far from here"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

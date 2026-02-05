@@ -1,0 +1,90 @@
+{
+  "slug": "pretty-polly",
+  "title": "Pretty Polly",
+  "source_url": "https://www.bluegrasslyrics.com/song/pretty-polly/",
+  "raw_lyrics": "Oh Polly, Pretty Polly, would you take me unkind\nPolly, Pretty Polly, would you take me unkind\nLet me set beside you and tell you my mind\n\nWell my mind is to marry and never to part\nMy mind is to marry and never to part\nThe first time I saw you it wounded my heart\n\nOh Polly Pretty Polly come go along with me\nPolly Pretty Polly come go along with me\nBefore we get married some pleasures to see\n\nOh he led her over mountains and valleys so deep\nHe led her over hills and valleys so deep\nPretty Polly mistrusted and then began to weep\n\nOh Willie, Little Willie, I\u2019m afraid to of your ways\nWillie, Little Willie, I\u2019m afraid of your ways\nThe way you\u2019ve been rambling you\u2019ll lead me astray\n\nOh Polly, Pretty Polly, your guess is about right\nPolly, Pretty Polly, your guess is about right\nI dug on your grave the biggest part of last night\n\nOh she knelt down before him a pleading for her life\nShe knelt down before him a pleading for her life\nLet me be a single girl if I can\u2019t be your wife\n\nOh Polly, Pretty Polly that never can be\nPolly, Pretty Polly that never can be\nYour past recitation\u2019s been trouble to me\n\nOh went down to the jailhouse and what did he say\nHe went down to the jailhouse and what did he say\nI\u2019ve killed Pretty Polly and trying to get away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Polly, Pretty Polly, would you take me unkind",
+        "Polly, Pretty Polly, would you take me unkind",
+        "Let me set beside you and tell you my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well my mind is to marry and never to part",
+        "My mind is to marry and never to part",
+        "The first time I saw you it wounded my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Polly Pretty Polly come go along with me",
+        "Polly Pretty Polly come go along with me",
+        "Before we get married some pleasures to see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh he led her over mountains and valleys so deep",
+        "He led her over hills and valleys so deep",
+        "Pretty Polly mistrusted and then began to weep"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Willie, Little Willie, I\u2019m afraid to of your ways",
+        "Willie, Little Willie, I\u2019m afraid of your ways",
+        "The way you\u2019ve been rambling you\u2019ll lead me astray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Polly, Pretty Polly, your guess is about right",
+        "Polly, Pretty Polly, your guess is about right",
+        "I dug on your grave the biggest part of last night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh she knelt down before him a pleading for her life",
+        "She knelt down before him a pleading for her life",
+        "Let me be a single girl if I can\u2019t be your wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Polly, Pretty Polly that never can be",
+        "Polly, Pretty Polly that never can be",
+        "Your past recitation\u2019s been trouble to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh went down to the jailhouse and what did he say",
+        "He went down to the jailhouse and what did he say",
+        "I\u2019ve killed Pretty Polly and trying to get away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

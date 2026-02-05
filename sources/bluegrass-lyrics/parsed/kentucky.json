@@ -1,0 +1,37 @@
+{
+  "slug": "kentucky",
+  "title": "Kentucky",
+  "source_url": "https://www.bluegrasslyrics.com/song/kentucky/",
+  "raw_lyrics": "Kentucky you are the dearest land outside of Heaven to me\nKentucky your laurels and your red bud trees\nWhen I die I want to rest upon your graceful mountain so high\nKentucky that is where God will look for me\n\nKentucky I miss the voices singing in the silvery moonlight\nKentucky I miss the hound dog chasing coon\nI know that my mother dad & sweetheart all are waiting for me\nKentucky I will be coming soon\n\nKentucky you are the dearest land outside of Heaven to me\nKentucky I will be coming soon",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Kentucky you are the dearest land outside of Heaven to me",
+        "Kentucky your laurels and your red bud trees",
+        "When I die I want to rest upon your graceful mountain so high",
+        "Kentucky that is where God will look for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Kentucky I miss the voices singing in the silvery moonlight",
+        "Kentucky I miss the hound dog chasing coon",
+        "I know that my mother dad & sweetheart all are waiting for me",
+        "Kentucky I will be coming soon"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Kentucky you are the dearest land outside of Heaven to me",
+        "Kentucky I will be coming soon"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

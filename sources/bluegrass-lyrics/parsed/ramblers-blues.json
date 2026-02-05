@@ -1,0 +1,49 @@
+{
+  "slug": "ramblers-blues",
+  "title": "Rambler\u2019s Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/ramblers-blues/",
+  "raw_lyrics": "When I first heard the sound of the river going down\nknew I had to travel like the waters from my home\nTo see what I could see go beyond my boundaries\nAnd look into the heart of the life I chose for me.\n\nOn and on oh why must I ramble\nFollowing dreams out before me in the night\nOn and on the highway\u2019s a gamble\nBetter think of home again before it\u2019s out of sight.\n\nWhen I left to see the world my one and only girl\nDecided that this passion is a fearful thing to fight\nI tried to prove her wrong I said I won\u2019t be long\nPlease take the love I give you but I knew that she was right.\n\nShe never asks the wherefores but sometimes just the whys\nThat her love alone can hold me from the current deep inside\nI hope and pray that she\u2019ll be there each time that I come home\nThe strength her love still gives me is the thing that lets me roam.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I first heard the sound of the river going down",
+        "knew I had to travel like the waters from my home",
+        "To see what I could see go beyond my boundaries",
+        "And look into the heart of the life I chose for me."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "On and on oh why must I ramble",
+        "Following dreams out before me in the night",
+        "On and on the highway\u2019s a gamble",
+        "Better think of home again before it\u2019s out of sight."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I left to see the world my one and only girl",
+        "Decided that this passion is a fearful thing to fight",
+        "I tried to prove her wrong I said I won\u2019t be long",
+        "Please take the love I give you but I knew that she was right."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She never asks the wherefores but sometimes just the whys",
+        "That her love alone can hold me from the current deep inside",
+        "I hope and pray that she\u2019ll be there each time that I come home",
+        "The strength her love still gives me is the thing that lets me roam."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

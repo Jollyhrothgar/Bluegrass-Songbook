@@ -1,0 +1,39 @@
+{
+  "slug": "anchored-to-the-shore",
+  "title": "Anchored To The Shore",
+  "source_url": "https://www.bluegrasslyrics.com/song/anchored-to-the-shore/",
+  "raw_lyrics": "Anchored to the shore anchored to the shore\nAll my tribulation will follow me no more\nAnchored to the shore anchored to the shore\nI was adrift but now I\u2019m finely anchored to the shore.\n\nDemands are placed upon me this much I will concede\nFor years I kept on running from an awful deed\nBy dwelling on this fortune in the hopes of yesterday\nI kept myself confined and there is a better way\n\nThe storm will rage again some day of this we can be sure\nA lifetime has its seasons and each we shall endure\nThere are no simple answers or solutions from on high\nThe challenge lies before us on ourselves we can rely.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Anchored to the shore anchored to the shore",
+        "All my tribulation will follow me no more",
+        "Anchored to the shore anchored to the shore",
+        "I was adrift but now I\u2019m finely anchored to the shore."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Demands are placed upon me this much I will concede",
+        "For years I kept on running from an awful deed",
+        "By dwelling on this fortune in the hopes of yesterday",
+        "I kept myself confined and there is a better way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The storm will rage again some day of this we can be sure",
+        "A lifetime has its seasons and each we shall endure",
+        "There are no simple answers or solutions from on high",
+        "The challenge lies before us on ourselves we can rely."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

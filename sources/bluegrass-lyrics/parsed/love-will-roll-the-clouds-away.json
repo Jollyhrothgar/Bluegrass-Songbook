@@ -1,0 +1,49 @@
+{
+  "slug": "love-will-roll-the-clouds-away",
+  "title": "Love Will Roll the Clouds Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/love-will-roll-the-clouds-away/",
+  "raw_lyrics": "As along lifes way you go\nClouds may hide the light of day\nHave no fear for well you know\nLove will roll the clouds away\n\nLove will roll the clouds away\nTurn the darkness into day\nI\u2019m so glad I now can say\nLove will roll the clouds away\n\nWhen the road is rough and long\nAnd the world is cold and gray\nLift your voice in happy song\nLove will roll the clouds away\n\nGod is watching over all\nAnd he hears you when you pray\nTrust in him when shadows fall\nLove will roll the clouds away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As along lifes way you go",
+        "Clouds may hide the light of day",
+        "Have no fear for well you know",
+        "Love will roll the clouds away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Love will roll the clouds away",
+        "Turn the darkness into day",
+        "I\u2019m so glad I now can say",
+        "Love will roll the clouds away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the road is rough and long",
+        "And the world is cold and gray",
+        "Lift your voice in happy song",
+        "Love will roll the clouds away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God is watching over all",
+        "And he hears you when you pray",
+        "Trust in him when shadows fall",
+        "Love will roll the clouds away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

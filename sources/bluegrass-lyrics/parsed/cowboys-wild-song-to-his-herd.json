@@ -1,0 +1,69 @@
+{
+  "slug": "cowboys-wild-song-to-his-herd",
+  "title": "Cowboy\u2019s Wild Song To His Herd",
+  "source_url": "https://www.bluegrasslyrics.com/song/cowboys-wild-song-to-his-herd/",
+  "raw_lyrics": "One beautiful night when the moon was full\nAnd the air was crisp and clear\nA cowboy lay on the star lit plain\nAnd thought of his home so dear\n\nHe thought of his mother he loved so well\nAnd his slumber of sleep was blurred\nNot a sound to be heard but throws of the night\nAs he sang a wild song to his herd\n\nThe cattle are lying so quite and still\nOn a carpet that mantles the west ?\nWhile the golden lanes from the sky of night\nSing peace to the cowboys stress ?\n\nStill he thinks of his mother in a far away land\nAnd his thoughts by his memory was stirred\nAnd he steals himself the old home again\nAs he sang a wild song to his herd\n\nHe\u2019s far from the din of the city noise\nWhere the lanes of folly do shine\nHe\u2019s far from the jaws of the dies sin ?\nAnd the flow of sparkling wine\n\nHe\u2019s in the great west with its mantle of green\nWhere his neighbors say never a word\nA land of marriage of mountains and plains\nWhere a cowboy sings low to his herd",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One beautiful night when the moon was full",
+        "And the air was crisp and clear",
+        "A cowboy lay on the star lit plain",
+        "And thought of his home so dear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He thought of his mother he loved so well",
+        "And his slumber of sleep was blurred",
+        "Not a sound to be heard but throws of the night",
+        "As he sang a wild song to his herd"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The cattle are lying so quite and still",
+        "On a carpet that mantles the west ?",
+        "While the golden lanes from the sky of night",
+        "Sing peace to the cowboys stress ?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Still he thinks of his mother in a far away land",
+        "And his thoughts by his memory was stirred",
+        "And he steals himself the old home again",
+        "As he sang a wild song to his herd"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He\u2019s far from the din of the city noise",
+        "Where the lanes of folly do shine",
+        "He\u2019s far from the jaws of the dies sin ?",
+        "And the flow of sparkling wine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He\u2019s in the great west with its mantle of green",
+        "Where his neighbors say never a word",
+        "A land of marriage of mountains and plains",
+        "Where a cowboy sings low to his herd"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

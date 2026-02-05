@@ -1,0 +1,49 @@
+{
+  "slug": "close-by",
+  "title": "Close By",
+  "source_url": "https://www.bluegrasslyrics.com/song/close-by/",
+  "raw_lyrics": "You\u2019ve gone so far away, my darling\nEach time I think of you I cry\nI press your picture to my bosom\nThen I feel that you\u2019re close by\n\nYears have passed you\u2019ve not returned dear\nNow they say that you have died\nBut your soul will live forever\nNow I know you\u2019ll be close by\n\nI saw you last while you were leaving\nThe tears from you I tried to hide\nYou took me in your arms and said dear\nYour memory I keep close by\n\nThey buried you in a lonely graveyard\nAnd a spot they left beside\nThere I\u2019ll sleep \u2019till Jesus calls us\nSo that we can be close by",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ve gone so far away, my darling",
+        "Each time I think of you I cry",
+        "I press your picture to my bosom",
+        "Then I feel that you\u2019re close by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Years have passed you\u2019ve not returned dear",
+        "Now they say that you have died",
+        "But your soul will live forever",
+        "Now I know you\u2019ll be close by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I saw you last while you were leaving",
+        "The tears from you I tried to hide",
+        "You took me in your arms and said dear",
+        "Your memory I keep close by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They buried you in a lonely graveyard",
+        "And a spot they left beside",
+        "There I\u2019ll sleep \u2019till Jesus calls us",
+        "So that we can be close by"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "down-in-the-valley",
+  "title": "Down In The Valley",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-in-the-valley/",
+  "raw_lyrics": "Down in the valley valley so low\nHang your head over hear the wind blow\nHear the wind blow dear hear the wind blow\nHang your head over hear the wind blow.\n\nRoses love sunshine violets love dew\nAngels in heaven know I love you\nKnow I love you dear know I love you\nAngels in heaven know I love you.\n\nIf you don\u2019t love me love whom you please\nThrow your arms \u2019round me give my heart ease\nGive my heart ease love give my heart ease\nThrow your arms round me give my heart ease.\n\nBuild me a castle forty feet high\nSo I can see him as he rides by\nAs he rides by love as he rides by\nSo I can see him as he rides by.\n\nWrite me a letter send it by mail\nSend it in care of Birmingham jail\nBirmingham jail love Birmingham jail\nSend it in care of Birmingham jail.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Down in the valley valley so low",
+        "Hang your head over hear the wind blow",
+        "Hear the wind blow dear hear the wind blow",
+        "Hang your head over hear the wind blow."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Roses love sunshine violets love dew",
+        "Angels in heaven know I love you",
+        "Know I love you dear know I love you",
+        "Angels in heaven know I love you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you don\u2019t love me love whom you please",
+        "Throw your arms \u2019round me give my heart ease",
+        "Give my heart ease love give my heart ease",
+        "Throw your arms round me give my heart ease."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Build me a castle forty feet high",
+        "So I can see him as he rides by",
+        "As he rides by love as he rides by",
+        "So I can see him as he rides by."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Write me a letter send it by mail",
+        "Send it in care of Birmingham jail",
+        "Birmingham jail love Birmingham jail",
+        "Send it in care of Birmingham jail."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

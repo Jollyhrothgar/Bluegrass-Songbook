@@ -1,0 +1,39 @@
+{
+  "slug": "im-coming-back-but-i-dont-know-when",
+  "title": "I\u2019m Coming Back But I Don\u2019t Know When",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-coming-back-but-i-dont-know-when/",
+  "raw_lyrics": "I\u2019m going down this lonesome road\nTo see my fate or victory\nGod must help us there to win\nI\u2019m coming back but I don\u2019t know when\n\nI hate to leave my mother dear\nMy father who is old and gray\nBut my true love I know you\u2019ll wait\nFor me to come back to me to stay\n\nWill you be here when I come home\nOr will your love fade like a rose\nI could never come back should you be gone\nMy love for you nobody knows",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m going down this lonesome road",
+        "To see my fate or victory",
+        "God must help us there to win",
+        "I\u2019m coming back but I don\u2019t know when"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hate to leave my mother dear",
+        "My father who is old and gray",
+        "But my true love I know you\u2019ll wait",
+        "For me to come back to me to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Will you be here when I come home",
+        "Or will your love fade like a rose",
+        "I could never come back should you be gone",
+        "My love for you nobody knows"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

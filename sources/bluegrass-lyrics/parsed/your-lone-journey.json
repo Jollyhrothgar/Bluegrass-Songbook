@@ -1,0 +1,48 @@
+{
+  "slug": "your-lone-journey",
+  "title": "Your Lone Journey",
+  "source_url": "https://www.bluegrasslyrics.com/song/your-lone-journey/",
+  "raw_lyrics": "God\u2019s given us years of happiness here\nNow we must part\nAnd as the angels come and call for you\nThe pangs of grief tug at my heart\n\nOh my darling my darling\nMy heart breaks as you take\nYour lone journey\n\nOh the days will be empty the nights so long\nWithout you my love\nAnd as God calls for you I\u2019m left alone\nBut we will meet in heaven above\n\nFond memories I\u2019ll keep of the happy days\nThat on earth we trod\nAnd when I come we will walk hand in hand\nAs one in heaven in the family of God",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "God\u2019s given us years of happiness here",
+        "Now we must part",
+        "And as the angels come and call for you",
+        "The pangs of grief tug at my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh my darling my darling",
+        "My heart breaks as you take",
+        "Your lone journey"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the days will be empty the nights so long",
+        "Without you my love",
+        "And as God calls for you I\u2019m left alone",
+        "But we will meet in heaven above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Fond memories I\u2019ll keep of the happy days",
+        "That on earth we trod",
+        "And when I come we will walk hand in hand",
+        "As one in heaven in the family of God"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

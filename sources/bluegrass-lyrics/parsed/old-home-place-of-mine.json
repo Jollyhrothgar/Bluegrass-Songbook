@@ -1,0 +1,49 @@
+{
+  "slug": "old-home-place-of-mine",
+  "title": "Old Home Place Of Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-home-place-of-mine/",
+  "raw_lyrics": "There\u2019s a place in old Kentucky where I\u2019m longing to be\nWhere the bluegrass is growing so fine\nWhere the dogwoods are in bloom in the mountains so high\nAround that old home place of mine\n\nOh the bluegrass is growing in the valley\nAnd the birds are singing in the trees\nThat\u2019s where I want to go when I leave this world below\nIt\u2019s home sweet home to me\n\nOh the good time I had playin\u2019 as a lad\nThey often enter my mind\nOh how long my heart did grive that day I had to leave\nThat dear old home place of mine\n\nI remember Dad and Mom sitting there all alone\nThat day I left them behind\nOh how my heart does yearn for the day when I\u2019ll return\nBack to that old home place of mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a place in old Kentucky where I\u2019m longing to be",
+        "Where the bluegrass is growing so fine",
+        "Where the dogwoods are in bloom in the mountains so high",
+        "Around that old home place of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the bluegrass is growing in the valley",
+        "And the birds are singing in the trees",
+        "That\u2019s where I want to go when I leave this world below",
+        "It\u2019s home sweet home to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the good time I had playin\u2019 as a lad",
+        "They often enter my mind",
+        "Oh how long my heart did grive that day I had to leave",
+        "That dear old home place of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember Dad and Mom sitting there all alone",
+        "That day I left them behind",
+        "Oh how my heart does yearn for the day when I\u2019ll return",
+        "Back to that old home place of mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

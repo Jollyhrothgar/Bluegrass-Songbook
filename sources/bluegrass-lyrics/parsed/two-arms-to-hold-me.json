@@ -1,0 +1,49 @@
+{
+  "slug": "two-arms-to-hold-me",
+  "title": "Two Arms To Hold Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/two-arms-to-hold-me/",
+  "raw_lyrics": "I want two arms to hold me when I\u2019m feelin\u2019 blue\nI want someone to love me with a love so true\nI want two lips to kiss me as they use to do\nI want two arms to hold me darlin\u2019 I want you\n\nI want two arms to hold me and never let me go\nIf you ever loved me my dear I want to know\nCause when I\u2019m sad and lonely that\u2019s when I want you so\nI want two arms to hold me when I\u2019m feelin\u2019 low\n\nYou use to say you loved me you use to hold me tight\nNow you leave me lonely to long for you at night\nI want two arms to hold me that held me close before\nThe arms that use to hold me will reach for me no more\n\nWhen shadows start to fallin\u2019 and you\u2019re alone and blue\nYou\u2019ll want two arms to hold you that use to care for you\nJust think about me darlin\u2019 and this little song\nYou\u2019ll want two arms to hold you and you may find me gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I want two arms to hold me when I\u2019m feelin\u2019 blue",
+        "I want someone to love me with a love so true",
+        "I want two lips to kiss me as they use to do",
+        "I want two arms to hold me darlin\u2019 I want you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I want two arms to hold me and never let me go",
+        "If you ever loved me my dear I want to know",
+        "Cause when I\u2019m sad and lonely that\u2019s when I want you so",
+        "I want two arms to hold me when I\u2019m feelin\u2019 low"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You use to say you loved me you use to hold me tight",
+        "Now you leave me lonely to long for you at night",
+        "I want two arms to hold me that held me close before",
+        "The arms that use to hold me will reach for me no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When shadows start to fallin\u2019 and you\u2019re alone and blue",
+        "You\u2019ll want two arms to hold you that use to care for you",
+        "Just think about me darlin\u2019 and this little song",
+        "You\u2019ll want two arms to hold you and you may find me gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

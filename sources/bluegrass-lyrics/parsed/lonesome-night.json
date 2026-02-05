@@ -1,0 +1,39 @@
+{
+  "slug": "lonesome-night",
+  "title": "Lonesome Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-night/",
+  "raw_lyrics": "In the pale moonlight we quarreled one night\nOur heart\u2019s were young and free\nI left her there and on that night\nI though she was two-timing me\n\nOn a lonesome night so far from home\nI heard a mournful sound\nThe girl I love is calling me\nShe thinks I turned her down\n\nShe begged me not to leave her there\nShe swore that she\u2019d been true\nBut a jealous heart cannot believe\nOh how I long for you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the pale moonlight we quarreled one night",
+        "Our heart\u2019s were young and free",
+        "I left her there and on that night",
+        "I though she was two-timing me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "On a lonesome night so far from home",
+        "I heard a mournful sound",
+        "The girl I love is calling me",
+        "She thinks I turned her down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She begged me not to leave her there",
+        "She swore that she\u2019d been true",
+        "But a jealous heart cannot believe",
+        "Oh how I long for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

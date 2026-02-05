@@ -1,0 +1,86 @@
+{
+  "slug": "john-hardy",
+  "title": "John Hardy",
+  "source_url": "https://www.bluegrasslyrics.com/song/john-hardy/",
+  "raw_lyrics": "John Hardy was a desperate little man\nHe carried two guns every day\nHe shot down a man on that West Virginia line\nYou ought a seen John Hardy getting away\nYou ought to seen John Hardy getting away\n\nJohn Hardy stood in that old barroom\nSo drunk that he could not see\nAnd a man walked up and took him by the arm\nHe said Johnny, come and go along with me Poor boy\nJohnny, come and walk along with me\n\nJohn Hardy stood in his old jail cell\nThe tears running down from his eyes\nHe said I\u2019ve been the death of many a poor boy\nBut my six-shooters never told a lie\nNo, my six-shooters never told a lie\n\nThe first one to visit John Hardy in his cell\nWas a little girl dressed in blue\nShe came down to that old jail cell\nShe said Johnny, I\u2019ve been true to you God knows\nJohnny, I\u2019ve been true to you\n\nThe next one to Visit John Hardy in his cell\nWas a little girl dressed in red\nShe come down to that old jail cell\nShe said, Johnny, I had rather see you dead\nWell, Johnny, I had rather see you dead\n\nI\u2019ve been to the East and I\u2019ve been to the West\nI\u2019ve traveled this wide world around\nI\u2019ve been to that river and I\u2019ve been baptized\nSo take me to my burying ground\nSo take me to my burying ground\n\nJohn Hardy was a desperate little man\nHe carried two guns every day\nHe shot down a man on the West Virginia line\nYou ought to seen old John Hardy getting away\nYou ought to seen old John Hardy getting away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "John Hardy was a desperate little man",
+        "He carried two guns every day",
+        "He shot down a man on that West Virginia line",
+        "You ought a seen John Hardy getting away",
+        "You ought to seen John Hardy getting away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Hardy stood in that old barroom",
+        "So drunk that he could not see",
+        "And a man walked up and took him by the arm",
+        "He said Johnny, come and go along with me Poor boy",
+        "Johnny, come and walk along with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Hardy stood in his old jail cell",
+        "The tears running down from his eyes",
+        "He said I\u2019ve been the death of many a poor boy",
+        "But my six-shooters never told a lie",
+        "No, my six-shooters never told a lie"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The first one to visit John Hardy in his cell",
+        "Was a little girl dressed in blue",
+        "She came down to that old jail cell",
+        "She said Johnny, I\u2019ve been true to you God knows",
+        "Johnny, I\u2019ve been true to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The next one to Visit John Hardy in his cell",
+        "Was a little girl dressed in red",
+        "She come down to that old jail cell",
+        "She said, Johnny, I had rather see you dead",
+        "Well, Johnny, I had rather see you dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been to the East and I\u2019ve been to the West",
+        "I\u2019ve traveled this wide world around",
+        "I\u2019ve been to that river and I\u2019ve been baptized",
+        "So take me to my burying ground",
+        "So take me to my burying ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Hardy was a desperate little man",
+        "He carried two guns every day",
+        "He shot down a man on the West Virginia line",
+        "You ought to seen old John Hardy getting away",
+        "You ought to seen old John Hardy getting away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

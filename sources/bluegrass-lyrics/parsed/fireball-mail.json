@@ -1,0 +1,49 @@
+{
+  "slug": "fireball-mail",
+  "title": "Fireball Mail",
+  "source_url": "https://www.bluegrasslyrics.com/song/fireball-mail/",
+  "raw_lyrics": "Here she comes, look at her go\nThere she goes, eaten that coal\nWatch her fly, look at her sail,\nLet her by, by, by, the Fireball Mail\n\nLet her go, look at her steam,\nHere the low, whistle and scream\nLike a hound dog wagging its tail,\nLet her by, by, by, the Fireball Mail\n\nEngineer, making up time,\nTracks are clear, look at her climb\nSee that freight, clear the rail,\nI\u2019ll bet she\u2019s late, late, late, the Fireball Mail\n\nWatch her swerve, look at her sway,\nGet that curve out of the way\nWatch her fly, look at her sail,\nLet her by, by, by, the Fireball Mail",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Here she comes, look at her go",
+        "There she goes, eaten that coal",
+        "Watch her fly, look at her sail,",
+        "Let her by, by, by, the Fireball Mail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let her go, look at her steam,",
+        "Here the low, whistle and scream",
+        "Like a hound dog wagging its tail,",
+        "Let her by, by, by, the Fireball Mail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Engineer, making up time,",
+        "Tracks are clear, look at her climb",
+        "See that freight, clear the rail,",
+        "I\u2019ll bet she\u2019s late, late, late, the Fireball Mail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Watch her swerve, look at her sway,",
+        "Get that curve out of the way",
+        "Watch her fly, look at her sail,",
+        "Let her by, by, by, the Fireball Mail"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

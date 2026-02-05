@@ -1,0 +1,51 @@
+{
+  "slug": "no-burdens-pass-through",
+  "title": "No Burdens Pass Through",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-burdens-pass-through/",
+  "raw_lyrics": "The storm clouds rise no light in the sky\nAnd my loved ones have gone and left me\nThere\u2019s glory divine it\u2019s riches are mine\nHe tells me no burdens pass through\n\nOh (what a day) what a day (oh what a day)\nWhen the clouds pass away (when the clouds, clouds pass away)\nAnd Jesus supreme on his throne\nMy tears wiped away (all my tears, tears wiped away)\nAnd the night turns to day (and the night, the nights changed to day)\nNo burdens are allowed to pass through\n\nThere\u2019ll be no sorrow in our new home\nNo funeral train in the sky\nNo rent to pay no taxes come due\nNo burden\u2019s are allowed to pass through\n\nHe never fails me when I\u2019m in need\nMy soul is so weighted with care\nHe leads me through He helps me to stand\nHe whispers no burdens pass through",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The storm clouds rise no light in the sky",
+        "And my loved ones have gone and left me",
+        "There\u2019s glory divine it\u2019s riches are mine",
+        "He tells me no burdens pass through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh (what a day) what a day (oh what a day)",
+        "When the clouds pass away (when the clouds, clouds pass away)",
+        "And Jesus supreme on his throne",
+        "My tears wiped away (all my tears, tears wiped away)",
+        "And the night turns to day (and the night, the nights changed to day)",
+        "No burdens are allowed to pass through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019ll be no sorrow in our new home",
+        "No funeral train in the sky",
+        "No rent to pay no taxes come due",
+        "No burden\u2019s are allowed to pass through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He never fails me when I\u2019m in need",
+        "My soul is so weighted with care",
+        "He leads me through He helps me to stand",
+        "He whispers no burdens pass through"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

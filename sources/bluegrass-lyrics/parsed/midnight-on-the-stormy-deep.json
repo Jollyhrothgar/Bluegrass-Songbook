@@ -1,0 +1,69 @@
+{
+  "slug": "midnight-on-the-stormy-deep",
+  "title": "Midnight On The Stormy Deep",
+  "source_url": "https://www.bluegrasslyrics.com/song/midnight-on-the-stormy-deep/",
+  "raw_lyrics": "T\u2019was midnight on the stormy deep\nMy solitary watch I\u2019d keep\nAnd I think of her I\u2019d left behind\nAnd ask if she\u2019d be true and kind\n\nI never shall forget the day\nThat I was forced to go away\nIn silence there my head she\u2019d rest\nAnd press me to her loving breast\n\nOh Willy don\u2019t go back to sea\nThere\u2019s other girls as good as me\nBut none can love you true as I\nPray don\u2019t go where the bullets fly\n\nThe deep deep sea may us divide\nAnd I may be some other\u2019s bride\nBut still my thoughts will sometimes stray\nTo thee when thou are far away\n\nI never have proved false to thee\nThe heart I gave was true as thine\nBut you have proved untrue to me\nI can no longer call thee mine\n\nThen fare-thee-well I\u2019d rather make\nMy home upon some icy lake\nWhere the southern sun refused to shine\nThen to trust a love so false as thine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "T\u2019was midnight on the stormy deep",
+        "My solitary watch I\u2019d keep",
+        "And I think of her I\u2019d left behind",
+        "And ask if she\u2019d be true and kind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never shall forget the day",
+        "That I was forced to go away",
+        "In silence there my head she\u2019d rest",
+        "And press me to her loving breast"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Willy don\u2019t go back to sea",
+        "There\u2019s other girls as good as me",
+        "But none can love you true as I",
+        "Pray don\u2019t go where the bullets fly"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The deep deep sea may us divide",
+        "And I may be some other\u2019s bride",
+        "But still my thoughts will sometimes stray",
+        "To thee when thou are far away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never have proved false to thee",
+        "The heart I gave was true as thine",
+        "But you have proved untrue to me",
+        "I can no longer call thee mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then fare-thee-well I\u2019d rather make",
+        "My home upon some icy lake",
+        "Where the southern sun refused to shine",
+        "Then to trust a love so false as thine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "take-me-back-to-tulsa",
+  "title": "Take Me Back To Tulsa",
+  "source_url": "https://www.bluegrasslyrics.com/song/take-me-back-to-tulsa/",
+  "raw_lyrics": "Where\u2019s that gal with the red dress on some folks call her Dinah\nStole my heart away from me way down in carolina\n\nTake me back to tulsa\nI\u2019m too young to marry\nTake me back to Tulsa\nI\u2019m too young to marry.\n\nLittle bee sucks the blossom big bee gets the honey\nPoor man picks the cotton rich man gets the money\n\nAlways wear a great big smile we neveer do act sour\nTravel all over the country playin\u2019 music by the hour\n\nI\u2019d like to go to Tulsa you bet your boots I would\nLet me off at archer st and I\u2019ll walk down to Greenwood",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Where\u2019s that gal with the red dress on some folks call her Dinah",
+        "Stole my heart away from me way down in carolina"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take me back to tulsa",
+        "I\u2019m too young to marry",
+        "Take me back to Tulsa",
+        "I\u2019m too young to marry."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Little bee sucks the blossom big bee gets the honey",
+        "Poor man picks the cotton rich man gets the money"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Always wear a great big smile we neveer do act sour",
+        "Travel all over the country playin\u2019 music by the hour"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d like to go to Tulsa you bet your boots I would",
+        "Let me off at archer st and I\u2019ll walk down to Greenwood"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "the-first-whipporwill",
+  "title": "The First Whipporwill",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-first-whipporwill/",
+  "raw_lyrics": "Springtime is hear my darlin\u2019\nYou said that you are goin\u2019 away\nMy heart will be with you my darli\u2019\nThen I\u2019m countin\u2019 now the days\n\nI know that soon I\u2019ll have to travel\nI know I\u2019m over the hill\nI feel so all alone my darlin\u2019 since you\u2019ve been gone\nAnd I heard the first whippoorwill\n\nThe flowers are bloomin\u2019 little darlin\u2019\nWith the buddin\u2019 of the trees\nI hear them night birds a-cryin\u2019\nI know that they are warnin\u2019 me\n\nOur love was planted little darlin\u2019\nJust like the farmer plants his grain\nBut there will never be a harvest\nOn the hill a whipoorwill",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Springtime is hear my darlin\u2019",
+        "You said that you are goin\u2019 away",
+        "My heart will be with you my darli\u2019",
+        "Then I\u2019m countin\u2019 now the days"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know that soon I\u2019ll have to travel",
+        "I know I\u2019m over the hill",
+        "I feel so all alone my darlin\u2019 since you\u2019ve been gone",
+        "And I heard the first whippoorwill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The flowers are bloomin\u2019 little darlin\u2019",
+        "With the buddin\u2019 of the trees",
+        "I hear them night birds a-cryin\u2019",
+        "I know that they are warnin\u2019 me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Our love was planted little darlin\u2019",
+        "Just like the farmer plants his grain",
+        "But there will never be a harvest",
+        "On the hill a whipoorwill"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

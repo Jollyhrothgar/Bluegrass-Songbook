@@ -1,0 +1,49 @@
+{
+  "slug": "honey-babe-blues",
+  "title": "Honey Babe Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/honey-babe-blues/",
+  "raw_lyrics": "Well I ain\u2019t got no honey baby now\nI guess she didn\u2019t love me anyhow\nWell it\u2019s oh me and oh my\nAin\u2019t got no honey baby now\n\nWell she left me on that early morning train\nI\u2019ll never see my girl again\nWell it\u2019s oh me and oh my\nAin\u2019t got no honey baby now\n\nNow good girl you ain\u2019t no gal of mine\nMy honey babe done traveled down the line\nWell it\u2019s oh me and oh my\nAin\u2019t got no honey baby now\n\nI\u2019ll see you when your troubles are like mine\nWhen you haven\u2019t got a nickel or a dime\nWell it\u2019s oh me and oh my\nAin\u2019t got no honey baby now",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Well I ain\u2019t got no honey baby now",
+        "I guess she didn\u2019t love me anyhow",
+        "Well it\u2019s oh me and oh my",
+        "Ain\u2019t got no honey baby now"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well she left me on that early morning train",
+        "I\u2019ll never see my girl again",
+        "Well it\u2019s oh me and oh my",
+        "Ain\u2019t got no honey baby now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now good girl you ain\u2019t no gal of mine",
+        "My honey babe done traveled down the line",
+        "Well it\u2019s oh me and oh my",
+        "Ain\u2019t got no honey baby now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll see you when your troubles are like mine",
+        "When you haven\u2019t got a nickel or a dime",
+        "Well it\u2019s oh me and oh my",
+        "Ain\u2019t got no honey baby now"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

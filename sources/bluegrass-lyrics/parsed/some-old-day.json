@@ -1,0 +1,45 @@
+{
+  "slug": "some-old-day",
+  "title": "Some Old Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/some-old-day/",
+  "raw_lyrics": "I\u2019ve been workin\u2019 out in the rain\nTied to the dirty old ball and chain\nOh dear mother I\u2019ll come home some old day\nSome sweet day the\u2019ll turn me loose\nFrom this dirty old calaboose\nOh dear mother I\u2019ll come home some old day\n\nSome old day\nYou\u2019ll wait for me and pray\nOh dear mother i\u2019ll come home some old day\nSome sweet day the\u2019ll turn me loose\nFrom this dirty old calaboose\nOh dear mother I\u2019ll come home some old day\n\nOh dear mother I\u2019ve hurt you so\nI\u2019ve been cruel to you I know\nOh dear mother I\u2019ll come home some old day\nTell my brother My sister and dad\nTell the dear friends that I\u2019ve had\nOh dear mother I\u2019ll come home some old day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been workin\u2019 out in the rain",
+        "Tied to the dirty old ball and chain",
+        "Oh dear mother I\u2019ll come home some old day",
+        "Some sweet day the\u2019ll turn me loose",
+        "From this dirty old calaboose",
+        "Oh dear mother I\u2019ll come home some old day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Some old day",
+        "You\u2019ll wait for me and pray",
+        "Oh dear mother i\u2019ll come home some old day",
+        "Some sweet day the\u2019ll turn me loose",
+        "From this dirty old calaboose",
+        "Oh dear mother I\u2019ll come home some old day"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh dear mother I\u2019ve hurt you so",
+        "I\u2019ve been cruel to you I know",
+        "Oh dear mother I\u2019ll come home some old day",
+        "Tell my brother My sister and dad",
+        "Tell the dear friends that I\u2019ve had",
+        "Oh dear mother I\u2019ll come home some old day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

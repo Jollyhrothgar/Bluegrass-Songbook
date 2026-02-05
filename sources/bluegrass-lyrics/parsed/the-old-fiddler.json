@@ -1,0 +1,37 @@
+{
+  "slug": "the-old-fiddler",
+  "title": "The Old Fiddler",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-old-fiddler/",
+  "raw_lyrics": "Let me tell you a tale about a spry old man\nGuess he\u2019s as old as the hills\nHe\u2019s the favorite fiddler for miles and miles around\nAnd plays for all the good quadrilles\n\nEvery Saturday night all the folks stop in and tune\nThe whole town is ready to go\nWhile the fellers chose their partners and the caller taps the jug\nAnd the old man puts the rosen to the bow\n\nYou could hear Uncle Ben yellin\u2019 do-si-do\nSwing that gal in the calico",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Let me tell you a tale about a spry old man",
+        "Guess he\u2019s as old as the hills",
+        "He\u2019s the favorite fiddler for miles and miles around",
+        "And plays for all the good quadrilles"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every Saturday night all the folks stop in and tune",
+        "The whole town is ready to go",
+        "While the fellers chose their partners and the caller taps the jug",
+        "And the old man puts the rosen to the bow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You could hear Uncle Ben yellin\u2019 do-si-do",
+        "Swing that gal in the calico"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

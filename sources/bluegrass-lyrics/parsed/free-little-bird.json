@@ -1,0 +1,39 @@
+{
+  "slug": "free-little-bird",
+  "title": "Free Little Bird",
+  "source_url": "https://www.bluegrasslyrics.com/song/free-little-bird/",
+  "raw_lyrics": "I\u2019m as free a little bird as I can be\nI\u2019m as free a little bird as I can be\nI\u2019m free at my age as a bridie in the cage\nI\u2019m as free a little bird as I can be\n\nCarry me home little birdie carry me home\nCarry me home little birdie carry me home\nCarry me home to my wife she\u2019s the joy of my life\nCarry me home little birdie carry me home\n\nI\u2019ll never build my nest on the ground\nNeither in the forks of a tree\nI\u2019ll build my nest in the ruffle of her dress\nWhere the bad boys can never bother me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m as free a little bird as I can be",
+        "I\u2019m as free a little bird as I can be",
+        "I\u2019m free at my age as a bridie in the cage",
+        "I\u2019m as free a little bird as I can be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Carry me home little birdie carry me home",
+        "Carry me home little birdie carry me home",
+        "Carry me home to my wife she\u2019s the joy of my life",
+        "Carry me home little birdie carry me home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll never build my nest on the ground",
+        "Neither in the forks of a tree",
+        "I\u2019ll build my nest in the ruffle of her dress",
+        "Where the bad boys can never bother me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

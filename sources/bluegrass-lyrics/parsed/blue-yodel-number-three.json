@@ -1,0 +1,49 @@
+{
+  "slug": "blue-yodel-number-three",
+  "title": "Blue Yodel Number Three",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-yodel-number-three/",
+  "raw_lyrics": "She\u2019s long she\u2019s tall she\u2019s six feet from the ground\nShe\u2019s long she\u2019s tall she\u2019s six feet from the ground\nShe\u2019s tailor made Lord she ain\u2019t no hand me down\nYodel layee oh a layee oh alayee.\n\nShe\u2019s got eyes like diamonds and her teeth shine just the same\nWell she\u2019s got eyes like diamonds and her teeth shine just the same\nShe\u2019s got red ruby lips she\u2019s got hair like a horse\u2019s mane\nYodel layee oh a layee oh alayee.\n\nEverytime I see you mamma well you\u2019re always on the street\nEverytime I see you mamma you\u2019re always on the street\nYou hang out on the corner like the policeman on his beat\nYodel layee oh a layee oh alayee.\n\nEverytime I need you mamma Lord I always find you gone\nEverytime I need you mamma I always find you gone\nListen here sweet mamma you better put your air brakes on\nYodel layee oh a layee oh alayee.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s long she\u2019s tall she\u2019s six feet from the ground",
+        "She\u2019s long she\u2019s tall she\u2019s six feet from the ground",
+        "She\u2019s tailor made Lord she ain\u2019t no hand me down",
+        "Yodel layee oh a layee oh alayee."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s got eyes like diamonds and her teeth shine just the same",
+        "Well she\u2019s got eyes like diamonds and her teeth shine just the same",
+        "She\u2019s got red ruby lips she\u2019s got hair like a horse\u2019s mane",
+        "Yodel layee oh a layee oh alayee."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Everytime I see you mamma well you\u2019re always on the street",
+        "Everytime I see you mamma you\u2019re always on the street",
+        "You hang out on the corner like the policeman on his beat",
+        "Yodel layee oh a layee oh alayee."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Everytime I need you mamma Lord I always find you gone",
+        "Everytime I need you mamma I always find you gone",
+        "Listen here sweet mamma you better put your air brakes on",
+        "Yodel layee oh a layee oh alayee."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

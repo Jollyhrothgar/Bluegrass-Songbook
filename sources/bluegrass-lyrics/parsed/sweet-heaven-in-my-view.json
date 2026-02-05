@@ -1,0 +1,49 @@
+{
+  "slug": "sweet-heaven-in-my-view",
+  "title": "Sweet Heaven In My View",
+  "source_url": "https://www.bluegrasslyrics.com/song/sweet-heaven-in-my-view/",
+  "raw_lyrics": "Got sweet heaven in my view hallelujah\nOn my journey I press on praise the lord\nFor I\u2019m bound for that holy city\nGot sweet heaven in my view\n\nOh my mother she died and left me\nI\u2019m alone in this world I\u2019m alone all alone\nAnd my father he wont own me\nGot to find me another home\n\nOh you need not talk about me\nJust because I am crippled and blind\nFor I\u2019ve got my ticket purchased\nI\u2019ll reach heaven  on time\n\nAnd when I get to heaven\nTake a seat and sit right down\nLooking up to my heavenly father\nLooking for a robe and a crown",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Got sweet heaven in my view hallelujah",
+        "On my journey I press on praise the lord",
+        "For I\u2019m bound for that holy city",
+        "Got sweet heaven in my view"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my mother she died and left me",
+        "I\u2019m alone in this world I\u2019m alone all alone",
+        "And my father he wont own me",
+        "Got to find me another home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh you need not talk about me",
+        "Just because I am crippled and blind",
+        "For I\u2019ve got my ticket purchased",
+        "I\u2019ll reach heaven  on time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And when I get to heaven",
+        "Take a seat and sit right down",
+        "Looking up to my heavenly father",
+        "Looking for a robe and a crown"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

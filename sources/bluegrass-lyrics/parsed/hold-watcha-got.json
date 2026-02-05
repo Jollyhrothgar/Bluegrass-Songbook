@@ -1,0 +1,45 @@
+{
+  "slug": "hold-watcha-got",
+  "title": "Hold Watcha Got",
+  "source_url": "https://www.bluegrasslyrics.com/song/hold-watcha-got/",
+  "raw_lyrics": "Hold whatcha got, I\u2019m a-coming home baby\nHold whatcha got, and I don\u2019t mean maybe\nBeen a-thinking about you and I\u2019m on my way\nDon\u2019t sell the house, and don\u2019t wreck the car\nStay there, honey, right where you are\nHold whatcha got, I\u2019m a coming home to stay\n\nWell\u2026 in my mind I can see\nThat\u2019s a pretty good sign that I need you\nThat\u2019s why I can\u2019t wait to get back home\nSo squeeze yourself real good and tight\nI\u2019ll be there before daylight\nIf you hold whatcha got, I\u2019m a coming home to stay\n\nWell\u2026 when I get back, honey, I ain\u2019t leaving\nI been too long, a little too much grieving\nWhen I get back this time I\u2019m going to stay\nWell we won\u2019t fuss and we won\u2019t fight\nThis time things is gonna be all right\nIf you hold whatcha got, I\u2019m a-coming home to stay",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Hold whatcha got, I\u2019m a-coming home baby",
+        "Hold whatcha got, and I don\u2019t mean maybe",
+        "Been a-thinking about you and I\u2019m on my way",
+        "Don\u2019t sell the house, and don\u2019t wreck the car",
+        "Stay there, honey, right where you are",
+        "Hold whatcha got, I\u2019m a coming home to stay"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well\u2026 in my mind I can see",
+        "That\u2019s a pretty good sign that I need you",
+        "That\u2019s why I can\u2019t wait to get back home",
+        "So squeeze yourself real good and tight",
+        "I\u2019ll be there before daylight",
+        "If you hold whatcha got, I\u2019m a coming home to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well\u2026 when I get back, honey, I ain\u2019t leaving",
+        "I been too long, a little too much grieving",
+        "When I get back this time I\u2019m going to stay",
+        "Well we won\u2019t fuss and we won\u2019t fight",
+        "This time things is gonna be all right",
+        "If you hold whatcha got, I\u2019m a-coming home to stay"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

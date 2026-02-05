@@ -1,0 +1,57 @@
+{
+  "slug": "from-cotton-to-satin",
+  "title": "From Cotton To Satin",
+  "source_url": "https://www.bluegrasslyrics.com/song/from-cotton-to-satin/",
+  "raw_lyrics": "Cotton to satin\nBirmingham to Manhatten\nFrom a pick-up to a long limousine\nCotton to satin Birmingham to Manhatten\nShe had to follow her dream.\n\nI saved up enough to buy her one small diamond\nThat\u2019s the year our old tractor broke down\nAnd the dream house I promised her still lies by the shade tree\nSome old bricks and boards on the ground.\n\nShe begged me to take her to see New York City\nSo I mortgaged the farm and we were gone\nWhile we were there she took up with a rich man\nI came back to the country alone.\n\nThere is the garden where she touched every flower\nThere\u2019s the meadow where we walked hand in hand\nIf only she\u2019d waited she\u2019d have more than she dreamed of\nBecause today they struck oil on my land.\n\nDavid Parmaley; I Know A Good Thing",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Cotton to satin",
+        "Birmingham to Manhatten",
+        "From a pick-up to a long limousine",
+        "Cotton to satin Birmingham to Manhatten",
+        "She had to follow her dream."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I saved up enough to buy her one small diamond",
+        "That\u2019s the year our old tractor broke down",
+        "And the dream house I promised her still lies by the shade tree",
+        "Some old bricks and boards on the ground."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She begged me to take her to see New York City",
+        "So I mortgaged the farm and we were gone",
+        "While we were there she took up with a rich man",
+        "I came back to the country alone."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is the garden where she touched every flower",
+        "There\u2019s the meadow where we walked hand in hand",
+        "If only she\u2019d waited she\u2019d have more than she dreamed of",
+        "Because today they struck oil on my land."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "David Parmaley; I Know A Good Thing"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

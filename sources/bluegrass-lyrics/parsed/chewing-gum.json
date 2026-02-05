@@ -1,0 +1,73 @@
+{
+  "slug": "chewing-gum",
+  "title": "Chewing Gum",
+  "source_url": "https://www.bluegrasslyrics.com/song/chewing-gum/",
+  "raw_lyrics": "Mama sent me to the spring, she told me not to stay\nI fell in love with a pretty little girl, and could not get away\n\nChawing chewing gum, chewing chawing gum\nChawing chewing gum, chewing chawing gum\n\nFirst she give me peaches, next she give me pears\nNext she give me fifty cents, kissed me on the stairs\n\nMommy don\u2019t \u2018low me to whistle, poppy don\u2019t \u2018low me to sing\nThey don\u2019t \u2018low me to marry, I\u2019ll marry just the same\n\nI wouldn\u2019t have a lawyer, I\u2019ll tell you the reason why\nEvery time he opens his mouth he tells a great big lie\n\nI wouldn\u2019t have a doctor, I\u2019ll tell you the reason why\nHe rides all over the country and makes the people die\n\nI wouldn\u2019t have a farmer, I\u2019ll tell you the reason why\nBecause he has so plenty to eat, \u2018specially pumpkin pie\n\nI took my girl to church last night How do you reckon she done?\nShe walked right up in the preacher\u2019s face and chewed her chewing gum",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Mama sent me to the spring, she told me not to stay",
+        "I fell in love with a pretty little girl, and could not get away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Chawing chewing gum, chewing chawing gum",
+        "Chawing chewing gum, chewing chawing gum"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "First she give me peaches, next she give me pears",
+        "Next she give me fifty cents, kissed me on the stairs"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mommy don\u2019t \u2018low me to whistle, poppy don\u2019t \u2018low me to sing",
+        "They don\u2019t \u2018low me to marry, I\u2019ll marry just the same"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wouldn\u2019t have a lawyer, I\u2019ll tell you the reason why",
+        "Every time he opens his mouth he tells a great big lie"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wouldn\u2019t have a doctor, I\u2019ll tell you the reason why",
+        "He rides all over the country and makes the people die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wouldn\u2019t have a farmer, I\u2019ll tell you the reason why",
+        "Because he has so plenty to eat, \u2018specially pumpkin pie"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I took my girl to church last night How do you reckon she done?",
+        "She walked right up in the preacher\u2019s face and chewed her chewing gum"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

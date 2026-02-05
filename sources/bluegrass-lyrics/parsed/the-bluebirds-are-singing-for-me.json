@@ -1,0 +1,58 @@
+{
+  "slug": "the-bluebirds-are-singing-for-me",
+  "title": "The Bluebirds Are Singing For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-bluebirds-are-singing-for-me/",
+  "raw_lyrics": "There was a girl I loved so dearly\nShe lived away back in the hills\nWhen the bluebird sings I miss my darling\nShe loved me I know she always will\n\nThere\u2019s a bluebird singing (bluebird singing)\nIn the Blue Ridge Mountains (Blue Ridge Mountains)\nCalling me back to my home\nOh I can hear (I can hear)\nThose bluebirds calling\nCalling me back to my home\n\nWhen I reached my home I was oh so lonely\nThe one I loved had gone away\nThat sad news came from her mother\nShe\u2019s sleeping there beneath the clay\n\nNow tonight I\u2019m far from the Blue Ridge Mountains\nFar from my home back in the hills\nI\u2019m going back to the Blue Ridge Mountains\nThese memories they haunt me still\n\nChorus",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There was a girl I loved so dearly",
+        "She lived away back in the hills",
+        "When the bluebird sings I miss my darling",
+        "She loved me I know she always will"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a bluebird singing (bluebird singing)",
+        "In the Blue Ridge Mountains (Blue Ridge Mountains)",
+        "Calling me back to my home",
+        "Oh I can hear (I can hear)",
+        "Those bluebirds calling",
+        "Calling me back to my home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I reached my home I was oh so lonely",
+        "The one I loved had gone away",
+        "That sad news came from her mother",
+        "She\u2019s sleeping there beneath the clay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now tonight I\u2019m far from the Blue Ridge Mountains",
+        "Far from my home back in the hills",
+        "I\u2019m going back to the Blue Ridge Mountains",
+        "These memories they haunt me still"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Chorus"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

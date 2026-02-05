@@ -1,0 +1,49 @@
+{
+  "slug": "gonna-lay-down-my-old-guitar",
+  "title": "Gonna Lay Down My Old Guitar",
+  "source_url": "https://www.bluegrasslyrics.com/song/gonna-lay-down-my-old-guitar/",
+  "raw_lyrics": "I\u2019m gonna lay down my old guitar\nGonna lay down my old guitar\nOh I wish I could tie it to my side\nAnd take it along with me\n\nThere\u2019s no one to cry for me\nThere\u2019s no one to cry for me\nI\u2019ve wandered so far away don\u2019t you see\nAnd there\u2019s no one to cry for me\n\nI\u2019m sick in a lonesome bed\nI\u2019m sick in a lonesome bed\nThere\u2019s no one to hold my aching head\nAnd I\u2019m sick in a lonesome bed\n\nI\u2019m telling this world goodbye\nI\u2019m telling this world goodbye\nI\u2019m telling the world and my dear little girl\nI\u2019ll soon tell them all goodbye",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m gonna lay down my old guitar",
+        "Gonna lay down my old guitar",
+        "Oh I wish I could tie it to my side",
+        "And take it along with me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s no one to cry for me",
+        "There\u2019s no one to cry for me",
+        "I\u2019ve wandered so far away don\u2019t you see",
+        "And there\u2019s no one to cry for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m sick in a lonesome bed",
+        "I\u2019m sick in a lonesome bed",
+        "There\u2019s no one to hold my aching head",
+        "And I\u2019m sick in a lonesome bed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m telling this world goodbye",
+        "I\u2019m telling this world goodbye",
+        "I\u2019m telling the world and my dear little girl",
+        "I\u2019ll soon tell them all goodbye"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

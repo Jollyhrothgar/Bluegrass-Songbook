@@ -1,0 +1,39 @@
+{
+  "slug": "four-twenty-special",
+  "title": "Four-Twenty Special",
+  "source_url": "https://www.bluegrasslyrics.com/song/four-twenty-special/",
+  "raw_lyrics": "Yonder comes that Four-Twenty Special\nFastest train on the line\nAnd when you hear that whistle a\u2019 blowin\u2019\nYou will know she\u2019s right on time.\n\nOne night while a poolin\u2019 down through Dixie\nThe fireman said \u201clook ahead\u201d\nAnd the sight they saw made the blood run cold\nNorth bound freighter straight ahead\n\nI\u2019ve worked on this railroad most of my life\nAnd I guess I\u2019ll work \u2019til I die\nBut I\u2019ve never seen a train like the Four-Twenty Special\nHer lonesome whistle made me want to cry",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Yonder comes that Four-Twenty Special",
+        "Fastest train on the line",
+        "And when you hear that whistle a\u2019 blowin\u2019",
+        "You will know she\u2019s right on time."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One night while a poolin\u2019 down through Dixie",
+        "The fireman said \u201clook ahead\u201d",
+        "And the sight they saw made the blood run cold",
+        "North bound freighter straight ahead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve worked on this railroad most of my life",
+        "And I guess I\u2019ll work \u2019til I die",
+        "But I\u2019ve never seen a train like the Four-Twenty Special",
+        "Her lonesome whistle made me want to cry"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

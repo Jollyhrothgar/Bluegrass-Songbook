@@ -1,0 +1,89 @@
+{
+  "slug": "girl-in-the-blue-velvet-band",
+  "title": "Girl In The Blue Velvet Band",
+  "source_url": "https://www.bluegrasslyrics.com/song/girl-in-the-blue-velvet-band/",
+  "raw_lyrics": "One night while out for a ramble\nThe hour was just about nine\nI met a young maiden in Frisco\nOn the corner of Geary and Pine\n\nOn her face there was beauty of nature\nAnd her eyes just seemed to expand\nHer hair was so rich and so brilliant\nEntwined in a blue velvet band\n\nWe strolled down the street together\nIn my pocket she placed her small hand\nShe planted the evidence on me\nThe girl in the blue velvet band\n\nI heard the scream of the siren\nAnd the girl in the blue velvet band\nShe left me to face all the trouble\nWith a diamond that was worth ten grand\n\nThey sent me to San Quentin for stealing\nGod knows I\u2019m an innocent man\nThe guilty one now she lie\u2019s dying\nThe girl in the blue velvet band\n\nLast night when bed-time was ringin\nStanding there close to the bars\nI fancied I heard a voice calling\nFar out in the ocean of stars\n\nI\u2019ll be out in a year and I\u2019m leaving\nBut I\u2019ll carry the name of a man\nThat served ten years in prison\nFor the girl in the blue velvet band\n\nAnd when I get out I\u2019ll endeavor\nTo live in some other land\nAnd I\u2019ll bid farewell to old Frisco\nAnd the girl in the blue velvet band",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One night while out for a ramble",
+        "The hour was just about nine",
+        "I met a young maiden in Frisco",
+        "On the corner of Geary and Pine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On her face there was beauty of nature",
+        "And her eyes just seemed to expand",
+        "Her hair was so rich and so brilliant",
+        "Entwined in a blue velvet band"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We strolled down the street together",
+        "In my pocket she placed her small hand",
+        "She planted the evidence on me",
+        "The girl in the blue velvet band"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I heard the scream of the siren",
+        "And the girl in the blue velvet band",
+        "She left me to face all the trouble",
+        "With a diamond that was worth ten grand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They sent me to San Quentin for stealing",
+        "God knows I\u2019m an innocent man",
+        "The guilty one now she lie\u2019s dying",
+        "The girl in the blue velvet band"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night when bed-time was ringin",
+        "Standing there close to the bars",
+        "I fancied I heard a voice calling",
+        "Far out in the ocean of stars"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll be out in a year and I\u2019m leaving",
+        "But I\u2019ll carry the name of a man",
+        "That served ten years in prison",
+        "For the girl in the blue velvet band"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And when I get out I\u2019ll endeavor",
+        "To live in some other land",
+        "And I\u2019ll bid farewell to old Frisco",
+        "And the girl in the blue velvet band"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

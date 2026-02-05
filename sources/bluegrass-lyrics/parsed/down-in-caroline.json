@@ -1,0 +1,59 @@
+{
+  "slug": "down-in-caroline",
+  "title": "Down In Caroline",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-in-caroline/",
+  "raw_lyrics": "In the shadow of the pines\nLives a girl and I know that she is mine\nLife\u2019s worth livin\u2019 any time\nDown in Caroline.\n\nIt\u2019s no matter where I roam\nshe\u2019ll be waitin\u2019 there I know\nAnd I\u2019ll find that gal of mine\ndown in Caroline\n\nShe is waiting there for me\nSoon her smile I know I will see\nShe\u2019s all mine where I can be\nDown in Caroline\n\nCurly hair and eyes of blue\nAnd a heart of love all for you\nAnd I know her love is true\nDown in Caroline\n\nArms that hold me close and tight\nAnd lips that kiss me goodnight\nAnd I know her love is right\nDown in Caroline",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the shadow of the pines",
+        "Lives a girl and I know that she is mine",
+        "Life\u2019s worth livin\u2019 any time",
+        "Down in Caroline."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s no matter where I roam",
+        "she\u2019ll be waitin\u2019 there I know",
+        "And I\u2019ll find that gal of mine",
+        "down in Caroline"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She is waiting there for me",
+        "Soon her smile I know I will see",
+        "She\u2019s all mine where I can be",
+        "Down in Caroline"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Curly hair and eyes of blue",
+        "And a heart of love all for you",
+        "And I know her love is true",
+        "Down in Caroline"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Arms that hold me close and tight",
+        "And lips that kiss me goodnight",
+        "And I know her love is right",
+        "Down in Caroline"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

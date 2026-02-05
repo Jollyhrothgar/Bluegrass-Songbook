@@ -1,0 +1,49 @@
+{
+  "slug": "say-youll-take-me-back",
+  "title": "Say You\u2019ll Take Me Back",
+  "source_url": "https://www.bluegrasslyrics.com/song/say-youll-take-me-back/",
+  "raw_lyrics": "I\u2019m ready now to settle down\nAll my travelin\u2019 days are over\nDarlin\u2019 Darlin\u2019 oh my love\nSay you\u2019ll take me back once more\n\nAnother\u2019s love has wrecked my life\nShe stole my love for you away\nAnd now I beg you to forgive\nAnd take me in your heart to stay\n\nYour lovin\u2019 heart has turned to stone\nI know your love for me is cold\nBut now I need you oh so much\nTo love with all my heart and soul\n\nI\u2019m ready now to settle down\nAll my travelin\u2019 day\u2019s are o\u2019er\nDarlin\u2019 darlin\u2019 oh my love\nSay you\u2019ll take me back once more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m ready now to settle down",
+        "All my travelin\u2019 days are over",
+        "Darlin\u2019 Darlin\u2019 oh my love",
+        "Say you\u2019ll take me back once more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Another\u2019s love has wrecked my life",
+        "She stole my love for you away",
+        "And now I beg you to forgive",
+        "And take me in your heart to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your lovin\u2019 heart has turned to stone",
+        "I know your love for me is cold",
+        "But now I need you oh so much",
+        "To love with all my heart and soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m ready now to settle down",
+        "All my travelin\u2019 day\u2019s are o\u2019er",
+        "Darlin\u2019 darlin\u2019 oh my love",
+        "Say you\u2019ll take me back once more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

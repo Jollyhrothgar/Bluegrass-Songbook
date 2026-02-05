@@ -1,0 +1,49 @@
+{
+  "slug": "watermelon-on-the-vine",
+  "title": "Watermelon On The Vine",
+  "source_url": "https://www.bluegrasslyrics.com/song/watermelon-on-the-vine/",
+  "raw_lyrics": "See that watermelon a\u2019hanging on the fence\nHow I wish that melon was mine\nSome folks are foolish they just don\u2019t have no sense\nOr they wouldn\u2019t leave that melon on the vine\n\nHambone it is sweet chicken it is good\nRabbit is so very very fine\nBut give me oh give me oh how I wish you would\nThat watermelon hanging on the vine\n\nYou may talk about your peaches your apples and your pears\nSimmons growing on the tree\nFolks have their favorites just most every where\nBut that watermelon is the best for me\n\nI went to get that melon I thought I\u2019d have some fun\nThe stars they had just begun to shine\nBut when I heard some moving I left there on the run\nBut I didn\u2019t leave that melon on the vine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "See that watermelon a\u2019hanging on the fence",
+        "How I wish that melon was mine",
+        "Some folks are foolish they just don\u2019t have no sense",
+        "Or they wouldn\u2019t leave that melon on the vine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hambone it is sweet chicken it is good",
+        "Rabbit is so very very fine",
+        "But give me oh give me oh how I wish you would",
+        "That watermelon hanging on the vine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You may talk about your peaches your apples and your pears",
+        "Simmons growing on the tree",
+        "Folks have their favorites just most every where",
+        "But that watermelon is the best for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went to get that melon I thought I\u2019d have some fun",
+        "The stars they had just begun to shine",
+        "But when I heard some moving I left there on the run",
+        "But I didn\u2019t leave that melon on the vine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

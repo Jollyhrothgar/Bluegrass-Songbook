@@ -1,0 +1,41 @@
+{
+  "slug": "dont-close-your-eyes",
+  "title": "Don\u2019t Close Your Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-close-your-eyes/",
+  "raw_lyrics": "I know you loved him a long time ago\nAnd even now in my mind you still want him I know\nBut darling this time let your memories die\nWhen you hold me tonight don\u2019t close your eyes\n\nDon\u2019t close your eyes let it be me\nDon\u2019t pretend it\u2019s him in some fantasy\nDarlin\u2019 just once let yesterday go\nYou\u2019ll find more love than you\u2019ve ever known\nJust hold me tight when you love me tonight\nAnd don\u2019t close your eyes\n\nBaby I\u2019ve been a fool holdin\u2019 on all this time\nLyin\u2019 here in your arms knowin\u2019 he\u2019s in your mind\nBut I keep hoping some day that you\u2019ll see the light\nLet it be me tonight don\u2019t close your eyes",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I know you loved him a long time ago",
+        "And even now in my mind you still want him I know",
+        "But darling this time let your memories die",
+        "When you hold me tonight don\u2019t close your eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t close your eyes let it be me",
+        "Don\u2019t pretend it\u2019s him in some fantasy",
+        "Darlin\u2019 just once let yesterday go",
+        "You\u2019ll find more love than you\u2019ve ever known",
+        "Just hold me tight when you love me tonight",
+        "And don\u2019t close your eyes"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Baby I\u2019ve been a fool holdin\u2019 on all this time",
+        "Lyin\u2019 here in your arms knowin\u2019 he\u2019s in your mind",
+        "But I keep hoping some day that you\u2019ll see the light",
+        "Let it be me tonight don\u2019t close your eyes"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "bluebirds-are-singing-for-me",
+  "title": "Bluebirds Are Singing For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/bluebirds-are-singing-for-me/",
+  "raw_lyrics": "There was a girl I loved so dearly\nShe lived away back in the hills\nWhen the bluebird sings, I miss my darling\nShe loved me I know, she always will\n\nThere\u2019s a bluebird singing (there\u2019s a bluebird singing)\nIn the Blue Ridge mountains (in the Blue Ridge mountains)\nIt\u2019s calling me back to my home\nOh, I can hear (Oh I can hear)\nThe bluebirds calling (the bluebirds calling)\nCalling me back to my home\n\nNow tonight I\u2019m far from the blue ridge mountains\nFar from my home back in the hills\nBut I\u2019m going back to the blue ridge mountains\nThese memories they haunt me still\n\nWhen I reached home I was so lonely\nThe one I loved had gone away\nThat bad news came from her mother\nShe\u2019s sleeping there beneath the clay",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There was a girl I loved so dearly",
+        "She lived away back in the hills",
+        "When the bluebird sings, I miss my darling",
+        "She loved me I know, she always will"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a bluebird singing (there\u2019s a bluebird singing)",
+        "In the Blue Ridge mountains (in the Blue Ridge mountains)",
+        "It\u2019s calling me back to my home",
+        "Oh, I can hear (Oh I can hear)",
+        "The bluebirds calling (the bluebirds calling)",
+        "Calling me back to my home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now tonight I\u2019m far from the blue ridge mountains",
+        "Far from my home back in the hills",
+        "But I\u2019m going back to the blue ridge mountains",
+        "These memories they haunt me still"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I reached home I was so lonely",
+        "The one I loved had gone away",
+        "That bad news came from her mother",
+        "She\u2019s sleeping there beneath the clay"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

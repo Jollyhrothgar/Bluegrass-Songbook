@@ -1,0 +1,39 @@
+{
+  "slug": "bury-me-beneath-the-pines",
+  "title": "Bury Me Beneath The Pines",
+  "source_url": "https://www.bluegrasslyrics.com/song/bury-me-beneath-the-pines/",
+  "raw_lyrics": "So bury me under the lonesome pine tree\nThere they\u2019ll forever sway over me\nThere I can hear the sound of the lonesome dove\nIn that beautiful land of peace and love\n\nThese lonesome pines are calling me home\nNever again will I ever roam\nThey\u2019ll carry me home and put me to rest\nIn that mighty fine land that I love best\n\nFor years I\u2019ve been away but the time has come today\nI\u2019ll return to my homeland never to stray\nFor the rest of my days I\u2019ll rest in peace\nAnd never again no one to please",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "So bury me under the lonesome pine tree",
+        "There they\u2019ll forever sway over me",
+        "There I can hear the sound of the lonesome dove",
+        "In that beautiful land of peace and love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "These lonesome pines are calling me home",
+        "Never again will I ever roam",
+        "They\u2019ll carry me home and put me to rest",
+        "In that mighty fine land that I love best"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For years I\u2019ve been away but the time has come today",
+        "I\u2019ll return to my homeland never to stray",
+        "For the rest of my days I\u2019ll rest in peace",
+        "And never again no one to please"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

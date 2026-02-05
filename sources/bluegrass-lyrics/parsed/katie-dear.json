@@ -1,0 +1,51 @@
+{
+  "slug": "katie-dear",
+  "title": "Katie Dear",
+  "source_url": "https://www.bluegrasslyrics.com/song/katie-dear/",
+  "raw_lyrics": "Oh Katie dear go ask your mother\nIf you can be a bride of mine\nIf she says yes come back and tell me\nIf she says no we\u2019ll run away\nOh Willie dear there\u2019s no use in asking\nShe\u2019s in her room a takin\u2019 rest\nAnd by her side is a silver dagger\nTo slay the one that I love best\n\nOh Katie dear go ask your father\nIf you can be a bride of mine\nIf he says yes come back and tell me\nIf he says no we\u2019ll run away\nOh Willie dear, there\u2019s no need in asking\nHe\u2019s in his room a takin\u2019 rest\nAnd by his side is a golden dagger\nTo slay the one that I love best\n\nSo he picked up that golden dagger\nAnd stove it through his troubled heart\nSaying goodbye Katie goodbye darlin\u2019\nAt last the time has come to part\nSo she picked up that bloody dagger\nAnd stove it through her lily-white breast\nSaying goodbye papa goodbye mama\nI\u2019ll die with the one that I love best",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Katie dear go ask your mother",
+        "If you can be a bride of mine",
+        "If she says yes come back and tell me",
+        "If she says no we\u2019ll run away",
+        "Oh Willie dear there\u2019s no use in asking",
+        "She\u2019s in her room a takin\u2019 rest",
+        "And by her side is a silver dagger",
+        "To slay the one that I love best"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Katie dear go ask your father",
+        "If you can be a bride of mine",
+        "If he says yes come back and tell me",
+        "If he says no we\u2019ll run away",
+        "Oh Willie dear, there\u2019s no need in asking",
+        "He\u2019s in his room a takin\u2019 rest",
+        "And by his side is a golden dagger",
+        "To slay the one that I love best"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So he picked up that golden dagger",
+        "And stove it through his troubled heart",
+        "Saying goodbye Katie goodbye darlin\u2019",
+        "At last the time has come to part",
+        "So she picked up that bloody dagger",
+        "And stove it through her lily-white breast",
+        "Saying goodbye papa goodbye mama",
+        "I\u2019ll die with the one that I love best"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "mid-the-green-fields-of-virginia",
+  "title": "Mid The Green Fields Of Virginia",
+  "source_url": "https://www.bluegrasslyrics.com/song/mid-the-green-fields-of-virginia/",
+  "raw_lyrics": "Mid the green fields of Virginia\nIn the veil of Shenandoah\nThere\u2019s an ivy covered homestead that I love\nWith it\u2019s white old fashioned chimney\nAnd it\u2019s simple homelike hours\nTis the home of my dear parents now above\n\nThere\u2019s a peaceful cottage there\nA happy home so dear\nMy heart is longing for them day by day\nWhere I spent life\u2019s golden hours\nIn the veil of Shenandoah\nMid the green fields for Virginia far away\n\nMid the green fields of Virginia\nStands an old mill by the stream\nI once wondered to that spot to sing and play\nAnd how often I would throw the stone\nInto the pebbling brook\nI would dream someday it\u2019d carry me away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Mid the green fields of Virginia",
+        "In the veil of Shenandoah",
+        "There\u2019s an ivy covered homestead that I love",
+        "With it\u2019s white old fashioned chimney",
+        "And it\u2019s simple homelike hours",
+        "Tis the home of my dear parents now above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a peaceful cottage there",
+        "A happy home so dear",
+        "My heart is longing for them day by day",
+        "Where I spent life\u2019s golden hours",
+        "In the veil of Shenandoah",
+        "Mid the green fields for Virginia far away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mid the green fields of Virginia",
+        "Stands an old mill by the stream",
+        "I once wondered to that spot to sing and play",
+        "And how often I would throw the stone",
+        "Into the pebbling brook",
+        "I would dream someday it\u2019d carry me away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "sweet-fern",
+  "title": "Sweet Fern",
+  "source_url": "https://www.bluegrasslyrics.com/song/sweet-fern/",
+  "raw_lyrics": "Springtime is coming sweet lonesome bird\nYour echo in the woodland I hear\nDown in the meadow so lonesome your singing\nWhile the moonlight is shining so clear\n\nBut I know he\u2019s away in a far distant land\nA land that is over the sea\nGo fly to him singing your sweet little song\nAnd tell him to come back to me\n\nSweet fern, sweet fern\nOh tell me, is my darling still true\nSweet fern, sweet fern\nI\u2019ll be just as happy as you\n\nOh tell me sweet fern, is he thinking of me\nAnd the promise he made long ago\nHe said he\u2019d return from over the sea\nOh why do the years go so slow\n\nBut I know he\u2019s away in a far distant land\nA land that is over the sea\nGo fly to him singing your sweet little song\nAnd tell him to come back to me\n\nUpon my finger he placed a small ring\nOn the day he was leaving his home\nI promised I\u2019d be his own little girl\nAnd love him wherever he\u2019d roam\n\nBut I know he\u2019s away in a far distant land\nA land that is over the sea\nGo fly to him singing your sweet little song\nAnd tell him to come back to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Springtime is coming sweet lonesome bird",
+        "Your echo in the woodland I hear",
+        "Down in the meadow so lonesome your singing",
+        "While the moonlight is shining so clear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I know he\u2019s away in a far distant land",
+        "A land that is over the sea",
+        "Go fly to him singing your sweet little song",
+        "And tell him to come back to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Sweet fern, sweet fern",
+        "Oh tell me, is my darling still true",
+        "Sweet fern, sweet fern",
+        "I\u2019ll be just as happy as you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh tell me sweet fern, is he thinking of me",
+        "And the promise he made long ago",
+        "He said he\u2019d return from over the sea",
+        "Oh why do the years go so slow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I know he\u2019s away in a far distant land",
+        "A land that is over the sea",
+        "Go fly to him singing your sweet little song",
+        "And tell him to come back to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Upon my finger he placed a small ring",
+        "On the day he was leaving his home",
+        "I promised I\u2019d be his own little girl",
+        "And love him wherever he\u2019d roam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I know he\u2019s away in a far distant land",
+        "A land that is over the sea",
+        "Go fly to him singing your sweet little song",
+        "And tell him to come back to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

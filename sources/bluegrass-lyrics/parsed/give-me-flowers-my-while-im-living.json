@@ -1,0 +1,39 @@
+{
+  "slug": "give-me-flowers-my-while-im-living",
+  "title": "Give Me Flowers My While I\u2019m Living",
+  "source_url": "https://www.bluegrasslyrics.com/song/give-me-flowers-my-while-im-living/",
+  "raw_lyrics": "In this world today while we\u2019re living\nSome folks say the worst of us they can\nBut when we are dead and in our caskets\nThey always slip some lilies in our hand\n\nWon\u2019t you give me my flowers while I\u2019m living\nAnd let me enjoy them while I can\nPleae don\u2019t wait till I\u2019m ready to be buried\nAnd then slip some lilies in my hand\n\nIn this world is where we need our flowers\nA kind word to help us get along\nIf you can\u2019t give me flowers while I\u2019m living\nThen please don\u2019t throw them when I\u2019m gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In this world today while we\u2019re living",
+        "Some folks say the worst of us they can",
+        "But when we are dead and in our caskets",
+        "They always slip some lilies in our hand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Won\u2019t you give me my flowers while I\u2019m living",
+        "And let me enjoy them while I can",
+        "Pleae don\u2019t wait till I\u2019m ready to be buried",
+        "And then slip some lilies in my hand"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In this world is where we need our flowers",
+        "A kind word to help us get along",
+        "If you can\u2019t give me flowers while I\u2019m living",
+        "Then please don\u2019t throw them when I\u2019m gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

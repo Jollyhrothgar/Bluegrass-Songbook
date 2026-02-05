@@ -1,0 +1,69 @@
+{
+  "slug": "rebel-soldier",
+  "title": "Rebel Soldier",
+  "source_url": "https://www.bluegrasslyrics.com/song/rebel-soldier/",
+  "raw_lyrics": "In a dreary Yankee prison\nWhere a Rebel soldier lay\nBy his side there stood a preacher\nEre his soul should pass away\n\nAnd he faintly whispered Parson\nAs he clutched him by the hand\nOh parson tell me quickly\nWill my soul pass through the southland\n\nWill my soul pass through the southland\nTo my old Virginia Grand\nWill I see the hills of Georgia\nAnd the green fields of Alabam\u2019\n\nWill I see that little church house\nWhere I placed my heart in hand\nOh parson tell me quickly\nWill my soul pass through the southland\n\nWas for lovin\u2019 dear ol\u2019 Dixie\nIn this dreary cell I lie\nWas for lovin\u2019 dear ol\u2019 Dixie\nIn this northern state I\u2019ll die\n\nWill you see my little daughter\nWill you make her understand\nOh parson tell me quickly\nWill my soul pass through the southland",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a dreary Yankee prison",
+        "Where a Rebel soldier lay",
+        "By his side there stood a preacher",
+        "Ere his soul should pass away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And he faintly whispered Parson",
+        "As he clutched him by the hand",
+        "Oh parson tell me quickly",
+        "Will my soul pass through the southland"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Will my soul pass through the southland",
+        "To my old Virginia Grand",
+        "Will I see the hills of Georgia",
+        "And the green fields of Alabam\u2019"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Will I see that little church house",
+        "Where I placed my heart in hand",
+        "Oh parson tell me quickly",
+        "Will my soul pass through the southland"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Was for lovin\u2019 dear ol\u2019 Dixie",
+        "In this dreary cell I lie",
+        "Was for lovin\u2019 dear ol\u2019 Dixie",
+        "In this northern state I\u2019ll die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Will you see my little daughter",
+        "Will you make her understand",
+        "Oh parson tell me quickly",
+        "Will my soul pass through the southland"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

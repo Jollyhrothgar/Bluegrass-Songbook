@@ -1,0 +1,39 @@
+{
+  "slug": "ive-always-been-a-rambler",
+  "title": "I\u2019ve Always Been a Rambler",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-always-been-a-rambler/",
+  "raw_lyrics": "The things dear that I say they don\u2019t mean much anyway\nCause I\u2019m a rambler dear thats how it\u2019s got to stay\nI tried dear to be true but I told them lies on you\nAnd for those lies I\u2019ll forever have to pay\n\nOh I tried to make love happen\nDidn\u2019t mean to shut you down\nFor I\u2019ve always been a rambler\nIt\u2019s for rambling that I\u2019m bound\n\nWhen the train comes down the track and it\u2019s bringing my baby back\nHear the rails rumbling through the town\nWell I\u2019ll be on that train reapin heartache and pain\nAnd yours is the heart that I\u2019m after now",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The things dear that I say they don\u2019t mean much anyway",
+        "Cause I\u2019m a rambler dear thats how it\u2019s got to stay",
+        "I tried dear to be true but I told them lies on you",
+        "And for those lies I\u2019ll forever have to pay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I tried to make love happen",
+        "Didn\u2019t mean to shut you down",
+        "For I\u2019ve always been a rambler",
+        "It\u2019s for rambling that I\u2019m bound"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the train comes down the track and it\u2019s bringing my baby back",
+        "Hear the rails rumbling through the town",
+        "Well I\u2019ll be on that train reapin heartache and pain",
+        "And yours is the heart that I\u2019m after now"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

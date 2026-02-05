@@ -1,0 +1,49 @@
+{
+  "slug": "im-going-back-to-the-old-home",
+  "title": "I\u2019m Going Back To The Old Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-going-back-to-the-old-home/",
+  "raw_lyrics": "I left my old home in the mountains\nAnd the only friends I ever had\nAnd while I rambled this world over\nMy heart felt so lonely and sad\n\nI\u2019m going back to the old home\nBack to the place I love so well\nWhere the sweet waters flow and the wildflowers grow\nBack to the old home on the hill\n\nI know that dear old mother\u2019s waiting\nWaiting alone on that hill\nWith the silver in her hair and a twinkle in her eye\nIn the old cabin home on the hill\n\nYears have gone by since I saw her\nI\u2019ve traveled many a mile\nBut tonight there\u2019s a light in the window\nAnd she\u2019s waiting at the door with a smile",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I left my old home in the mountains",
+        "And the only friends I ever had",
+        "And while I rambled this world over",
+        "My heart felt so lonely and sad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m going back to the old home",
+        "Back to the place I love so well",
+        "Where the sweet waters flow and the wildflowers grow",
+        "Back to the old home on the hill"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know that dear old mother\u2019s waiting",
+        "Waiting alone on that hill",
+        "With the silver in her hair and a twinkle in her eye",
+        "In the old cabin home on the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Years have gone by since I saw her",
+        "I\u2019ve traveled many a mile",
+        "But tonight there\u2019s a light in the window",
+        "And she\u2019s waiting at the door with a smile"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

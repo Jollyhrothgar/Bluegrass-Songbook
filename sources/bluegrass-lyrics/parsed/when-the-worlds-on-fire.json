@@ -1,0 +1,50 @@
+{
+  "slug": "when-the-worlds-on-fire",
+  "title": "When The World\u2019s On Fire",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-worlds-on-fire/",
+  "raw_lyrics": "Oh my loving mother when the world\u2019s on fire\nDon\u2019t you want God\u2019s bosom to be your pillow\nHide thee over in the rock of ages\nRock of ages clef for me\n\nI\u2019m going to heaven when the world\u2019s on fire\nAnd I want God\u2019s bosom to be your pillow\nHide thee over in the rock of ages\nRock of ages clef for me\n\nOh my loving brother\n\nOh my loving sinner\n\nDon\u2019t you want to go to heaven\u2026",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my loving mother when the world\u2019s on fire",
+        "Don\u2019t you want God\u2019s bosom to be your pillow",
+        "Hide thee over in the rock of ages",
+        "Rock of ages clef for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going to heaven when the world\u2019s on fire",
+        "And I want God\u2019s bosom to be your pillow",
+        "Hide thee over in the rock of ages",
+        "Rock of ages clef for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my loving brother"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my loving sinner"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t you want to go to heaven\u2026"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

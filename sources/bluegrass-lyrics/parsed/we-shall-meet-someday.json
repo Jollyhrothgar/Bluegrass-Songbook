@@ -1,0 +1,39 @@
+{
+  "slug": "we-shall-meet-someday",
+  "title": "We Shall Meet Someday",
+  "source_url": "https://www.bluegrasslyrics.com/song/we-shall-meet-someday/",
+  "raw_lyrics": "We shall meet (we shall meet) where no storm clouds gather\nWe shall meet (we shall meet) someday\nBy the river of life sparkling cool and clear\nWe shall meet (we shall meet) someday\n\nHow our heart aches with grief when we say goodbye\nWe shall meet (we shall meet) someday\nWhere no sorrow or tears ever dims our eyes\nWe shall meet (we shall meet) someday\n\nWhat a glorious thought as we say goodbye\nWe shall meet (we shall meet) someday\nIn that beautiful home that\u2019s prepared on high\nWe shall meet (we shall meet) someday",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We shall meet (we shall meet) where no storm clouds gather",
+        "We shall meet (we shall meet) someday",
+        "By the river of life sparkling cool and clear",
+        "We shall meet (we shall meet) someday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How our heart aches with grief when we say goodbye",
+        "We shall meet (we shall meet) someday",
+        "Where no sorrow or tears ever dims our eyes",
+        "We shall meet (we shall meet) someday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What a glorious thought as we say goodbye",
+        "We shall meet (we shall meet) someday",
+        "In that beautiful home that\u2019s prepared on high",
+        "We shall meet (we shall meet) someday"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

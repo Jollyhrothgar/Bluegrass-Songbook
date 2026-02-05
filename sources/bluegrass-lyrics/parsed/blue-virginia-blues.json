@@ -1,0 +1,70 @@
+{
+  "slug": "blue-virginia-blues",
+  "title": "Blue Virginia Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-virginia-blues/",
+  "raw_lyrics": "Have you ever been to Richmond in November\nWhen the cold Virginia rain is coming down\nFriends I\u2019m here to tell you it\u2019s no pleasure\nWhen you\u2019re all alone and a stranger to this town.\n\nDon\u2019t take me wrong I do like East Virginia\nAnd Richmond\u2019s full of hospitality\nExcept for one Virginia girl I know of\nWho made a perfect love wreck out of me.\n\nBlue blue Virginia blue\nThere\u2019s no blue like blue Virginia blue\nNo other girls in the whole wide world\nWill break your heart like Virginia girls\nThere\u2019s no blue like blue Virginia blue\n\nShe called me up in St Paul Minnisota\nSaid I need you here in Richmond right away\nTake the bus I\u2019ll meet you at the station\nBring your clothes \u2019cause I want you to stay.\n\nMy bus pulled in the station late this evening\nAnd there\u2019s no one around this place but me\nShe must have changed her mind or she\u2019s forgotten\nAnd her name\u2019s not in the phone directory.\n\nI wish I had the money for a taxi\nAnd a warm and cozy place to go lie down\nInstead of standin\u2019 all alone in Richmond\nWhile the cold Virginia rain is comin\u2019 down.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Have you ever been to Richmond in November",
+        "When the cold Virginia rain is coming down",
+        "Friends I\u2019m here to tell you it\u2019s no pleasure",
+        "When you\u2019re all alone and a stranger to this town."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t take me wrong I do like East Virginia",
+        "And Richmond\u2019s full of hospitality",
+        "Except for one Virginia girl I know of",
+        "Who made a perfect love wreck out of me."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Blue blue Virginia blue",
+        "There\u2019s no blue like blue Virginia blue",
+        "No other girls in the whole wide world",
+        "Will break your heart like Virginia girls",
+        "There\u2019s no blue like blue Virginia blue"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She called me up in St Paul Minnisota",
+        "Said I need you here in Richmond right away",
+        "Take the bus I\u2019ll meet you at the station",
+        "Bring your clothes \u2019cause I want you to stay."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My bus pulled in the station late this evening",
+        "And there\u2019s no one around this place but me",
+        "She must have changed her mind or she\u2019s forgotten",
+        "And her name\u2019s not in the phone directory."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I had the money for a taxi",
+        "And a warm and cozy place to go lie down",
+        "Instead of standin\u2019 all alone in Richmond",
+        "While the cold Virginia rain is comin\u2019 down."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

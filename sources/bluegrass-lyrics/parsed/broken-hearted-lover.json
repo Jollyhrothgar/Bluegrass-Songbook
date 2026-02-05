@@ -1,0 +1,49 @@
+{
+  "slug": "broken-hearted-lover",
+  "title": "Broken Hearted Lover",
+  "source_url": "https://www.bluegrasslyrics.com/song/broken-hearted-lover/",
+  "raw_lyrics": "How could I be feeling happy\nWhen you don\u2019t love me anymore\nYou took my love and all my kisses\nAnd you left my heart so sore\n\nI\u2019d rather swim across the ocean\nWithout the help of God or man\nThan be a broken hearted lover\nWhen I have done the best I can\n\nI thought that you were an angel\nWhen I first looked into your eyes\nBut now I know all about you\nI know your home\u2019s not in the skies\n\nStop, look and listen for that whistle\nAnd when you hear that lonesome sound\nYou\u2019ll know by the whistle of that freight train\nYour broken hearted lover\u2019s gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "How could I be feeling happy",
+        "When you don\u2019t love me anymore",
+        "You took my love and all my kisses",
+        "And you left my heart so sore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019d rather swim across the ocean",
+        "Without the help of God or man",
+        "Than be a broken hearted lover",
+        "When I have done the best I can"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I thought that you were an angel",
+        "When I first looked into your eyes",
+        "But now I know all about you",
+        "I know your home\u2019s not in the skies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Stop, look and listen for that whistle",
+        "And when you hear that lonesome sound",
+        "You\u2019ll know by the whistle of that freight train",
+        "Your broken hearted lover\u2019s gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

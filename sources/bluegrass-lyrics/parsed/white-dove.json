@@ -1,0 +1,49 @@
+{
+  "slug": "white-dove",
+  "title": "White Dove",
+  "source_url": "https://www.bluegrasslyrics.com/song/white-dove/",
+  "raw_lyrics": "In the deep rolling hills of old Virginia\nThere\u2019s a place that I love so well\nWhere I spent many days of my childhood\nIn the cabin where we loved to dwell\n\nWhite doves will mourn in sorrow\nThe willows will hang their heads\nI\u2019ll live my life in sorrow\nSince mother and daddy are dead\n\nWe were all so happy there together\nIn our peaceful little mountain home\nBut the Savior needs angels up in heaven\nNow they sing around the great white throne\n\nAs the years roll by I often wonder\nIf we will all be together someday\nAnd each night as I wander through the graveyard\nDarkness finds me as I kneel to pray",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the deep rolling hills of old Virginia",
+        "There\u2019s a place that I love so well",
+        "Where I spent many days of my childhood",
+        "In the cabin where we loved to dwell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "White doves will mourn in sorrow",
+        "The willows will hang their heads",
+        "I\u2019ll live my life in sorrow",
+        "Since mother and daddy are dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We were all so happy there together",
+        "In our peaceful little mountain home",
+        "But the Savior needs angels up in heaven",
+        "Now they sing around the great white throne"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As the years roll by I often wonder",
+        "If we will all be together someday",
+        "And each night as I wander through the graveyard",
+        "Darkness finds me as I kneel to pray"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

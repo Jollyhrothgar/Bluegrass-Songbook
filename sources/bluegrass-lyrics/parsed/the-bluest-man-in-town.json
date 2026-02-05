@@ -1,0 +1,39 @@
+{
+  "slug": "the-bluest-man-in-town",
+  "title": "The Bluest Man In Town",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-bluest-man-in-town/",
+  "raw_lyrics": "You went away to leave me here\nTo find somebo-dy new\nYou\u2019re hap-py now with your new love\nAnd I\u2019m alone and blue\n\nShadows a creepin\u2019 around my door\nThe sun will soon go down\nThe nightbirds are cryin\u2019 away on the mountain\nI\u2019m the blu-est man in town\n\nYou took away your lovin\u2019 arms\nYou wrecked our hap-py home\nYou left me with a brok-en heart\nSo blue and all alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You went away to leave me here",
+        "To find somebo-dy new",
+        "You\u2019re hap-py now with your new love",
+        "And I\u2019m alone and blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Shadows a creepin\u2019 around my door",
+        "The sun will soon go down",
+        "The nightbirds are cryin\u2019 away on the mountain",
+        "I\u2019m the blu-est man in town"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You took away your lovin\u2019 arms",
+        "You wrecked our hap-py home",
+        "You left me with a brok-en heart",
+        "So blue and all alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

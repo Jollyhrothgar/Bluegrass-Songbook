@@ -1,0 +1,45 @@
+{
+  "slug": "aragon-mill",
+  "title": "Aragon Mill",
+  "source_url": "https://www.bluegrasslyrics.com/song/aragon-mill/",
+  "raw_lyrics": "At the east end of town At the foot of a hill\nThere\u2019s a chimney so tall That says \u201cAragon Mill\u201d\nBut there\u2019s no smoke at all Comin\u2019 out of the stack\nFor the mill has pulled out And they ain\u2019t comin\u2019 back\n\nAnd the only sound I hear is the sound of the wind\nAs it blows through the town, weave and spin, weave and spin.\n\nThere\u2019s no children at all In the narrow, empty streets\nSince the looms have all gone It\u2019s so quiet I can\u2019t sleep.\nNow I\u2019m too old to change And I\u2019m too young to die\nAnd there\u2019s no place to go For my woman and I.\n\nNow the mill has closed down It\u2019s the only sound I know\nTell me where will I go? Tell me where will I go?",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "At the east end of town At the foot of a hill",
+        "There\u2019s a chimney so tall That says \u201cAragon Mill\u201d",
+        "But there\u2019s no smoke at all Comin\u2019 out of the stack",
+        "For the mill has pulled out And they ain\u2019t comin\u2019 back"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And the only sound I hear is the sound of the wind",
+        "As it blows through the town, weave and spin, weave and spin."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s no children at all In the narrow, empty streets",
+        "Since the looms have all gone It\u2019s so quiet I can\u2019t sleep.",
+        "Now I\u2019m too old to change And I\u2019m too young to die",
+        "And there\u2019s no place to go For my woman and I."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the mill has closed down It\u2019s the only sound I know",
+        "Tell me where will I go? Tell me where will I go?"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

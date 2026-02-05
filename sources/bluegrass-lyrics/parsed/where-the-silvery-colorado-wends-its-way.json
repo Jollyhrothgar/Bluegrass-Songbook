@@ -1,0 +1,69 @@
+{
+  "slug": "where-the-silvery-colorado-wends-its-way",
+  "title": "Where The Silvery Colorado Wends Its Way",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-the-silvery-colorado-wends-its-way/",
+  "raw_lyrics": "The twilight softly gathered\nRound my home among the hills\nAnd all nature soon will settle away to rest\nWhile I sit and sadly ponder\nAnd my heart with longing fills\nAs I often think of one that I love best\n\nWe were wedded in the springtime\nAnd our hearts they knew no pain\nFair nature seemed to smile on us that day\nNow she sleeps beneath the lilacs\nAnd she\u2019ll ne\u2019er come back again\nWhere the silver Colorado wends its way\n\nThere\u2019s a sob on every breeze\nAnd a sigh comes from the trees\nAnd the mocking birds they sing a sadder way\nFor the flowers creep no more\nRound my cheerless cabin door\nWhere the silver Colorado wends its way\n\nThe silver snow is gleaming\nOn your distant mountainside\nWhere often used to wander Nell and I\nAnd the birds are singing gaily\nIn the valley far below\nWhere I long some day to lay me down and die\n\nThen our lives were gay and happy\nIn the shadow of the hills\nMy heart beats fonder for her day by day\nAnd I feel her presence near me\nAs I sit alone tonight\nWhere the silver Colorado wends its way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The twilight softly gathered",
+        "Round my home among the hills",
+        "And all nature soon will settle away to rest",
+        "While I sit and sadly ponder",
+        "And my heart with longing fills",
+        "As I often think of one that I love best"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We were wedded in the springtime",
+        "And our hearts they knew no pain",
+        "Fair nature seemed to smile on us that day",
+        "Now she sleeps beneath the lilacs",
+        "And she\u2019ll ne\u2019er come back again",
+        "Where the silver Colorado wends its way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a sob on every breeze",
+        "And a sigh comes from the trees",
+        "And the mocking birds they sing a sadder way",
+        "For the flowers creep no more",
+        "Round my cheerless cabin door",
+        "Where the silver Colorado wends its way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The silver snow is gleaming",
+        "On your distant mountainside",
+        "Where often used to wander Nell and I",
+        "And the birds are singing gaily",
+        "In the valley far below",
+        "Where I long some day to lay me down and die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then our lives were gay and happy",
+        "In the shadow of the hills",
+        "My heart beats fonder for her day by day",
+        "And I feel her presence near me",
+        "As I sit alone tonight",
+        "Where the silver Colorado wends its way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

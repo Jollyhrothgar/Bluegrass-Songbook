@@ -1,0 +1,63 @@
+{
+  "slug": "bravest-cowboy",
+  "title": "Bravest Cowboy",
+  "source_url": "https://www.bluegrasslyrics.com/song/bravest-cowboy/",
+  "raw_lyrics": "I am the bravest cowboy that\u2019s ever tried the West\nI\u2019ve been all around the Rockies got bullets in my breast\nI\u2019ve been all around the Rockies got bullets in my breast\n\nIn eighteen hundred and sixty three I joined the immigrant band\nWe marched from San Antonio down by the Rio Grande\nWe marched from San Antonio down by the Rio Grande\n\nI went out on the prairie I learned to throw the line\nI learned to pocket money but I did not dress so fine\nI learned to pocket money but I did not dress so fine\n\nI went out on the prairie and learned to rob and steal\nAnd when I robbed that cowboy how happy I did feel\nAnd when I robbed that cowboy how happy I did feel\n\nI wore a wide brim high hat my saddle too was fine\nAnd when I courted a pretty girl you\u2019d bet I called her mine\nAnd when I courted a pretty girl you\u2019d bet I called her mine\n\nI courted her for beauty for love it was in vain\nThey carried me down to Dallas to wear a ball and chain\nThey carried me down to Dallas to wear a ball and chain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am the bravest cowboy that\u2019s ever tried the West",
+        "I\u2019ve been all around the Rockies got bullets in my breast",
+        "I\u2019ve been all around the Rockies got bullets in my breast"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In eighteen hundred and sixty three I joined the immigrant band",
+        "We marched from San Antonio down by the Rio Grande",
+        "We marched from San Antonio down by the Rio Grande"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went out on the prairie I learned to throw the line",
+        "I learned to pocket money but I did not dress so fine",
+        "I learned to pocket money but I did not dress so fine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went out on the prairie and learned to rob and steal",
+        "And when I robbed that cowboy how happy I did feel",
+        "And when I robbed that cowboy how happy I did feel"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wore a wide brim high hat my saddle too was fine",
+        "And when I courted a pretty girl you\u2019d bet I called her mine",
+        "And when I courted a pretty girl you\u2019d bet I called her mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I courted her for beauty for love it was in vain",
+        "They carried me down to Dallas to wear a ball and chain",
+        "They carried me down to Dallas to wear a ball and chain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

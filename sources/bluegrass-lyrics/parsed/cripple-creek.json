@@ -1,0 +1,47 @@
+{
+  "slug": "cripple-creek",
+  "title": "Cripple Creek",
+  "source_url": "https://www.bluegrasslyrics.com/song/cripple-creek/",
+  "raw_lyrics": "I got a girl and she loves me\nShe\u2019s as sweet as sweet can be\nShe\u2019s got eyes of baby blue\nMakes my gun shoot straight and true.\n\nGoin\u2019 up Cripple Creek goin\u2019 in a run\nGoin\u2019 up Cripple Creek to have some fun.\n\nCripple Creek\u2019s wide and Cripple Creek\u2019s deep\nI\u2019ll wade old Cripple Creek before I sleep\nRoll my breeches to my knees\nI\u2019ll  wade  ol\u2019  Cripple  Creek when  I  please\n\nI went down to Cripple Creek\nTo see what them girls had to eat\nI got drunk and fell against the wall\nOld corn likker was the cause of it all",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I got a girl and she loves me",
+        "She\u2019s as sweet as sweet can be",
+        "She\u2019s got eyes of baby blue",
+        "Makes my gun shoot straight and true."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Goin\u2019 up Cripple Creek goin\u2019 in a run",
+        "Goin\u2019 up Cripple Creek to have some fun."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Cripple Creek\u2019s wide and Cripple Creek\u2019s deep",
+        "I\u2019ll wade old Cripple Creek before I sleep",
+        "Roll my breeches to my knees",
+        "I\u2019ll  wade  ol\u2019  Cripple  Creek when  I  please"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went down to Cripple Creek",
+        "To see what them girls had to eat",
+        "I got drunk and fell against the wall",
+        "Old corn likker was the cause of it all"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

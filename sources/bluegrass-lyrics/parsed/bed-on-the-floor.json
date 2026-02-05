@@ -1,0 +1,56 @@
+{
+  "slug": "bed-on-the-floor",
+  "title": "Bed On The Floor",
+  "source_url": "https://www.bluegrasslyrics.com/song/bed-on-the-floor/",
+  "raw_lyrics": "Make me a bed right down on your floor\nMake me a bed right down on your floor\nI\u2019ll lay my head in a bed on your floor\n\nI\u2019m a poor lonesome boy\nI\u2019m a long way from home\nI\u2019m a poor lonesome boy\nI\u2019m a long way from home\nI\u2019ll lay my head in a bed on your floor\n\nThe sheriff\u2019s on my trail with a big forty-four\nThe sheriff\u2019s on my trail with a big forty-four\nI\u2019ll lay my head in a bed on your floor\n\nClock strikin\u2019 midnight and daylight to go\nClock strikin\u2019 midnight and daylight to go\nI\u2019ll lay my head in a bed on your floor\n\nBed on the floor love bed on the floor\nMake me a bed right down on your floor\nI\u2019ll lay my head in a bed on your floor",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Make me a bed right down on your floor",
+        "Make me a bed right down on your floor",
+        "I\u2019ll lay my head in a bed on your floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a poor lonesome boy",
+        "I\u2019m a long way from home",
+        "I\u2019m a poor lonesome boy",
+        "I\u2019m a long way from home",
+        "I\u2019ll lay my head in a bed on your floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sheriff\u2019s on my trail with a big forty-four",
+        "The sheriff\u2019s on my trail with a big forty-four",
+        "I\u2019ll lay my head in a bed on your floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Clock strikin\u2019 midnight and daylight to go",
+        "Clock strikin\u2019 midnight and daylight to go",
+        "I\u2019ll lay my head in a bed on your floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Bed on the floor love bed on the floor",
+        "Make me a bed right down on your floor",
+        "I\u2019ll lay my head in a bed on your floor"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

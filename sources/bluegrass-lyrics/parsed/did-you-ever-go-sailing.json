@@ -1,0 +1,49 @@
+{
+  "slug": "did-you-ever-go-sailing",
+  "title": "Did You Ever Go Sailing",
+  "source_url": "https://www.bluegrasslyrics.com/song/did-you-ever-go-sailing/",
+  "raw_lyrics": "There\u2019s an old ramshackle shack where in dreams I wander back\nAnd listen to the southern melody\nT\u2019was the place where I was born on a bright October morn\nAnd it\u2019s nestled at the end of my river of memories\n\nDid you ever go sailing down the river of memories\nTo the little log cabin that\u2019s nestled among the sycamore trees\nWhere the sunshine is cheery and nothing in the world grows dreary\nThat\u2019s my cabin at the end of my river of memories\n\nThere\u2019s a mother old and gray at the end of memory\u2019s way\nI\u2019ll meet her there tonight among the trees\nWith a smiling welcome she so sweetly beckons me\nTo the cabin at the end of my river of memories\n\nWhen the twilight shadows fall many childhood voices call\nBack again to the days that used to be\nAnd in answer to their prayer I will soon be sailing there\nTo the cabin at the end of my river of memories",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s an old ramshackle shack where in dreams I wander back",
+        "And listen to the southern melody",
+        "T\u2019was the place where I was born on a bright October morn",
+        "And it\u2019s nestled at the end of my river of memories"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Did you ever go sailing down the river of memories",
+        "To the little log cabin that\u2019s nestled among the sycamore trees",
+        "Where the sunshine is cheery and nothing in the world grows dreary",
+        "That\u2019s my cabin at the end of my river of memories"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a mother old and gray at the end of memory\u2019s way",
+        "I\u2019ll meet her there tonight among the trees",
+        "With a smiling welcome she so sweetly beckons me",
+        "To the cabin at the end of my river of memories"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the twilight shadows fall many childhood voices call",
+        "Back again to the days that used to be",
+        "And in answer to their prayer I will soon be sailing there",
+        "To the cabin at the end of my river of memories"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

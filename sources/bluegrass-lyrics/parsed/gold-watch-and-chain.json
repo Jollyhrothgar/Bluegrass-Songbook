@@ -1,0 +1,49 @@
+{
+  "slug": "gold-watch-and-chain",
+  "title": "Gold Watch And Chain",
+  "source_url": "https://www.bluegrasslyrics.com/song/gold-watch-and-chain/",
+  "raw_lyrics": "Darling, how can I stay here without you\nI have nothing to cheer my poor heart\nThis old world would seem sad, love, without you\nTell me now that we\u2019re never to part\n\nI will pawn you my gold watch and chain, love\nI will pawn you my gold diamond ring\nI will pawn you this heart in my bosom\nOnly say that you\u2019ll love me again\n\nTake back all the gifts you have given\nBut a ring and a lock of your hair\nAnd a card with your picture upon it\nIt\u2019s a face that is false, but is fair\n\nTell me why that you do not love me\nTell me why that your smile is not bright\nTell me why you have grown so cold-hearted\nIs there no kiss for me, love, tonight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Darling, how can I stay here without you",
+        "I have nothing to cheer my poor heart",
+        "This old world would seem sad, love, without you",
+        "Tell me now that we\u2019re never to part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will pawn you my gold watch and chain, love",
+        "I will pawn you my gold diamond ring",
+        "I will pawn you this heart in my bosom",
+        "Only say that you\u2019ll love me again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take back all the gifts you have given",
+        "But a ring and a lock of your hair",
+        "And a card with your picture upon it",
+        "It\u2019s a face that is false, but is fair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell me why that you do not love me",
+        "Tell me why that your smile is not bright",
+        "Tell me why you have grown so cold-hearted",
+        "Is there no kiss for me, love, tonight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

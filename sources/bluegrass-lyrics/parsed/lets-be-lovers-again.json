@@ -1,0 +1,56 @@
+{
+  "slug": "lets-be-lovers-again",
+  "title": "Let\u2019s Be Lovers Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/lets-be-lovers-again/",
+  "raw_lyrics": "Jack and May\nSweethearts were they\nThey were engaged to be wed\nMany a promise he made her\nMany a love word he said\nAs most lovers do\nThey quarreled one night\nShe bid him not come anymore\nShe gave him his hat\nJack started away\nBut he lingered to stay at the door\n\nTie up those broken cords\nAnd lets be lovers again\nDarling, you know I love you\nTo part would give me pain\nLet us forget the past\nAnd make up, my pet\nMake up and be lovers again\n\nYears rolled by\nNeither were wed\nAll of Jack\u2019s pleadings were vain\nOne quiet evening poor Jack was found dead\nAll through life in dismay\nTwo lives that have been wrecked\nBut she loves, oh, too late\nShe goes to his grave every day\nShe can\u2019t tell you why\nBut it seems to her cry\nThe wind seems to whisper and say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Jack and May",
+        "Sweethearts were they",
+        "They were engaged to be wed",
+        "Many a promise he made her",
+        "Many a love word he said",
+        "As most lovers do",
+        "They quarreled one night",
+        "She bid him not come anymore",
+        "She gave him his hat",
+        "Jack started away",
+        "But he lingered to stay at the door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tie up those broken cords",
+        "And lets be lovers again",
+        "Darling, you know I love you",
+        "To part would give me pain",
+        "Let us forget the past",
+        "And make up, my pet",
+        "Make up and be lovers again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Years rolled by",
+        "Neither were wed",
+        "All of Jack\u2019s pleadings were vain",
+        "One quiet evening poor Jack was found dead",
+        "All through life in dismay",
+        "Two lives that have been wrecked",
+        "But she loves, oh, too late",
+        "She goes to his grave every day",
+        "She can\u2019t tell you why",
+        "But it seems to her cry",
+        "The wind seems to whisper and say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

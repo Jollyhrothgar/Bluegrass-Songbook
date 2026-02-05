@@ -1,0 +1,39 @@
+{
+  "slug": "away-on-a-lonely-dark-hill",
+  "title": "Away on a Lonely Dark Hill",
+  "source_url": "https://www.bluegrasslyrics.com/song/away-on-a-lonely-dark-hill/",
+  "raw_lyrics": "One day on a bright April morning\nAs the sun stretched over the sky\nStood a man with his hands tied behind him\nAwaiting his sentence to die\n\nThe birds hushed their singing at daybreak\nFor Christ had his place to fulfill\nFrom a lovely bright mansion in Heaven\nTo away on a lonely dark hill\n\nThey made him walk that Calvary\nHe had to drink the bitter cup\nOne could hear hammers ring in the stillness\nThen the soldiers they lifted him up",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One day on a bright April morning",
+        "As the sun stretched over the sky",
+        "Stood a man with his hands tied behind him",
+        "Awaiting his sentence to die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The birds hushed their singing at daybreak",
+        "For Christ had his place to fulfill",
+        "From a lovely bright mansion in Heaven",
+        "To away on a lonely dark hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They made him walk that Calvary",
+        "He had to drink the bitter cup",
+        "One could hear hammers ring in the stillness",
+        "Then the soldiers they lifted him up"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

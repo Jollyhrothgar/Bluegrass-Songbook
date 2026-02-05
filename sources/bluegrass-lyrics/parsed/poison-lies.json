@@ -1,0 +1,39 @@
+{
+  "slug": "poison-lies",
+  "title": "Poison Lies",
+  "source_url": "https://www.bluegrasslyrics.com/song/poison-lies/",
+  "raw_lyrics": "Oh leave me or say that you want me\nAnd the stories that they told all lie down\nFor somehow I can\u2019t make my heart believe them\nThey\u2019re only poison lies going \u2019round\n\nIt tough now that you\u2019re livin\u2019 reckless\nGoin\u2019 places dear and doin\u2019 things that\u2019s wrong\nRunnin\u2019 \u2019round with the crowd you once hated\nJust to spite one that\u2019s loved you so long\n\nYeah at times we\u2019ve tired of each other\nOur love didn\u2019t seem to be the same\nThen you thought I had gone found another\nSo you left me and I took the blame",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh leave me or say that you want me",
+        "And the stories that they told all lie down",
+        "For somehow I can\u2019t make my heart believe them",
+        "They\u2019re only poison lies going \u2019round"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It tough now that you\u2019re livin\u2019 reckless",
+        "Goin\u2019 places dear and doin\u2019 things that\u2019s wrong",
+        "Runnin\u2019 \u2019round with the crowd you once hated",
+        "Just to spite one that\u2019s loved you so long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yeah at times we\u2019ve tired of each other",
+        "Our love didn\u2019t seem to be the same",
+        "Then you thought I had gone found another",
+        "So you left me and I took the blame"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

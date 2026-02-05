@@ -1,0 +1,49 @@
+{
+  "slug": "meet-me-by-the-moonlight",
+  "title": "Meet Me By The Moonlight",
+  "source_url": "https://www.bluegrasslyrics.com/song/meet-me-by-the-moonlight/",
+  "raw_lyrics": "Meet me by the moonlight love meet me\nMeet me by the moonlight alone alone\nI have a sad story to tell you\nAll down by the moonlight alone\n\nI\u2019ve always loved you my darling\nYou said I\u2019ve never been true\nI\u2019d do anything just to please you\nI\u2019d die any day just for you\n\nI have a ship on the ocean\nAll lined with silver and gold\nAnd before my little darling shall suffer\nI\u2019ll have the ship anchored and sold\n\nIf I had wings like an angel\nOver these prison walls I would fly\nI\u2019d fly to the arms of my darling\nAnd there I\u2019d be willing to die",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Meet me by the moonlight love meet me",
+        "Meet me by the moonlight alone alone",
+        "I have a sad story to tell you",
+        "All down by the moonlight alone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve always loved you my darling",
+        "You said I\u2019ve never been true",
+        "I\u2019d do anything just to please you",
+        "I\u2019d die any day just for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have a ship on the ocean",
+        "All lined with silver and gold",
+        "And before my little darling shall suffer",
+        "I\u2019ll have the ship anchored and sold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I had wings like an angel",
+        "Over these prison walls I would fly",
+        "I\u2019d fly to the arms of my darling",
+        "And there I\u2019d be willing to die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

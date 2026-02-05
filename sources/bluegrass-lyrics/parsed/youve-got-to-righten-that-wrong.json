@@ -1,0 +1,39 @@
+{
+  "slug": "youve-got-to-righten-that-wrong",
+  "title": "You\u2019ve Got To Righten That Wrong",
+  "source_url": "https://www.bluegrasslyrics.com/song/youve-got-to-righten-that-wrong/",
+  "raw_lyrics": "You\u2019ve got to righten that wrong someday\nYears may pass but you cant get away\nIf you do wrong today the price you must pay\nYou\u2019ve got to righten that wrong someday\n\nDo not lie or gossip on the folks whom you know\nBut do good to all while you may\nDid smile while their face and frown when they go\nYou\u2019ve got to righten that wrong someday\n\nYou hear Jesus pleading to come to the fold\nThe time is fleeting away\nHe will strengthen your spirits and sweeten your soul\nWhy not righten these wrongs today",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019ve got to righten that wrong someday",
+        "Years may pass but you cant get away",
+        "If you do wrong today the price you must pay",
+        "You\u2019ve got to righten that wrong someday"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Do not lie or gossip on the folks whom you know",
+        "But do good to all while you may",
+        "Did smile while their face and frown when they go",
+        "You\u2019ve got to righten that wrong someday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You hear Jesus pleading to come to the fold",
+        "The time is fleeting away",
+        "He will strengthen your spirits and sweeten your soul",
+        "Why not righten these wrongs today"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

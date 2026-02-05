@@ -1,0 +1,49 @@
+{
+  "slug": "slippin-away",
+  "title": "Slippin\u2019 Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/slippin-away/",
+  "raw_lyrics": "Monday\u2019s promises, Tuesday\u2019s lies\nSaturday\u2019s parting, Sunday\u2019s fight\nSomething\u2019s wrong between you and I\nLove\u2019s gone wrong that used to be right\n\nI can feel it slipping away\nSlowly slowly slipping away\nIt\u2019ll be gone in a few more days\nIf we don\u2019t stop this love of ours from slipping away\n\nWednesday\u2019s kisses Thursday\u2019s frown\nWe can\u2019t live three days in a row\nOur whole world\u2019s turned upside down\nHere we stand watching it go\n\nRoses are red, violets are blue\nSugar is sweet some of the time\nThis puzzles missing a piece or two\nGod put grapes, but never the wine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Monday\u2019s promises, Tuesday\u2019s lies",
+        "Saturday\u2019s parting, Sunday\u2019s fight",
+        "Something\u2019s wrong between you and I",
+        "Love\u2019s gone wrong that used to be right"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can feel it slipping away",
+        "Slowly slowly slipping away",
+        "It\u2019ll be gone in a few more days",
+        "If we don\u2019t stop this love of ours from slipping away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wednesday\u2019s kisses Thursday\u2019s frown",
+        "We can\u2019t live three days in a row",
+        "Our whole world\u2019s turned upside down",
+        "Here we stand watching it go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Roses are red, violets are blue",
+        "Sugar is sweet some of the time",
+        "This puzzles missing a piece or two",
+        "God put grapes, but never the wine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

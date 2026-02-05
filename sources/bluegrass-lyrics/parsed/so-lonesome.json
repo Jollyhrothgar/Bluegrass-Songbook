@@ -1,0 +1,39 @@
+{
+  "slug": "so-lonesome",
+  "title": "So Lonesome",
+  "source_url": "https://www.bluegrasslyrics.com/song/so-lonesome/",
+  "raw_lyrics": "The sun it shines bright through this cabin of mine\nWIth all of the sunshine some light I should find\nBut in darkness I linger through the rest of my time\nSeekin\u2019 out answers in a bottle of wine\n\nCause I\u2019m lonesome so lonesome\nSo lonesome I\u2019m losin\u2019 my mind\nYeah I\u2019m lonesome so lonesome\nI\u2019m lonesome for you all the time\n\nThe time\u2019s stacked against me I\u2019m afraid I can\u2019t win\nI take one step closer and I\u2019ve lost you again\nI wake from a dream that\u2019s so tender and kind\nAnd then it\u2019s straight to the bottle of burgundy wine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The sun it shines bright through this cabin of mine",
+        "WIth all of the sunshine some light I should find",
+        "But in darkness I linger through the rest of my time",
+        "Seekin\u2019 out answers in a bottle of wine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Cause I\u2019m lonesome so lonesome",
+        "So lonesome I\u2019m losin\u2019 my mind",
+        "Yeah I\u2019m lonesome so lonesome",
+        "I\u2019m lonesome for you all the time"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The time\u2019s stacked against me I\u2019m afraid I can\u2019t win",
+        "I take one step closer and I\u2019ve lost you again",
+        "I wake from a dream that\u2019s so tender and kind",
+        "And then it\u2019s straight to the bottle of burgundy wine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

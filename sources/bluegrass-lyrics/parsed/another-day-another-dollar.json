@@ -1,0 +1,47 @@
+{
+  "slug": "another-day-another-dollar",
+  "title": "Another Day Another Dollar",
+  "source_url": "https://www.bluegrasslyrics.com/song/another-day-another-dollar/",
+  "raw_lyrics": "Another day another dollar\nthat\u2019s what I\u2019m workin\u2019 for today\nAnother day another dollar\nsure can\u2019t buy my blues away\n\nAnother Day Another Dollar\nSure can\u2019t buy my blues away\n\nI\u2019m just tryin\u2019 to make a livin\u2019\nWorkin\u2019 jobs that I enjoy\nBut it ain\u2019t easy findin\u2019 somethin\u2019\nFor this lonesome hearted boy\n\nNow my life is like a highway\nJust too many roads to take\nYou know I\u2019ll try to take the right one\nJust gets harder every day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Another day another dollar",
+        "that\u2019s what I\u2019m workin\u2019 for today",
+        "Another day another dollar",
+        "sure can\u2019t buy my blues away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Another Day Another Dollar",
+        "Sure can\u2019t buy my blues away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m just tryin\u2019 to make a livin\u2019",
+        "Workin\u2019 jobs that I enjoy",
+        "But it ain\u2019t easy findin\u2019 somethin\u2019",
+        "For this lonesome hearted boy"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now my life is like a highway",
+        "Just too many roads to take",
+        "You know I\u2019ll try to take the right one",
+        "Just gets harder every day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

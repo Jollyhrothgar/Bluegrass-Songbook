@@ -1,0 +1,59 @@
+{
+  "slug": "banks-of-the-ohio-2",
+  "title": "Banks Of The Ohio",
+  "source_url": "https://www.bluegrasslyrics.com/song/banks-of-the-ohio-2/",
+  "raw_lyrics": "I asked my love to take a walk\nJust to walk a little ways\nAnd as we walked along we talked\nAll about our wedding day\n\nOnly say that you\u2019ll be mine\nIn no others arms entwined\nDown beside where the waters flow\nOn the banks of the Ohio\n\nI took her by her lily white hand\nI dragged her down that bank of sand\nThere I threw her in to drown\nI watched her as she floated down\n\nReturning home between twelve and one\nThinking of what a deed I\u2019d done\nI\u2019d killed the girl I loved you see\nBecause she would not marry me\n\nThe very next day about half passed four\nThe sheriff\u2019s men knocked at my door\nHe said young man come now and go\nDown to the banks of the Ohio",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I asked my love to take a walk",
+        "Just to walk a little ways",
+        "And as we walked along we talked",
+        "All about our wedding day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Only say that you\u2019ll be mine",
+        "In no others arms entwined",
+        "Down beside where the waters flow",
+        "On the banks of the Ohio"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I took her by her lily white hand",
+        "I dragged her down that bank of sand",
+        "There I threw her in to drown",
+        "I watched her as she floated down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Returning home between twelve and one",
+        "Thinking of what a deed I\u2019d done",
+        "I\u2019d killed the girl I loved you see",
+        "Because she would not marry me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The very next day about half passed four",
+        "The sheriff\u2019s men knocked at my door",
+        "He said young man come now and go",
+        "Down to the banks of the Ohio"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

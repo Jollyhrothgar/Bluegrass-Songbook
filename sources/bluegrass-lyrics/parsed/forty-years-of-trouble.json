@@ -1,0 +1,49 @@
+{
+  "slug": "forty-years-of-trouble",
+  "title": "Forty Years Of Trouble",
+  "source_url": "https://www.bluegrasslyrics.com/song/forty-years-of-trouble/",
+  "raw_lyrics": "Forty years I\u2019ve been gone\nI served my time it\u2019s been so long\nI took a life I know it was wrong\nI served my time lord knows I\u2019m going home\n\nShackled to a ball and chain\nI worked in the snow I worked in the rain\nI laid the tracks never rode the train\nForty years of suffering forty years of pain\n\nI had a wife and a little queen\nI\u2019ve had a son I\u2019ve never seen\nAll I have left now it seems\nIs a broken heart and broken dreams\n\nNow I\u2019m old, I\u2019ve done my time\nAin\u2019t nothin left but to sit and pine\nNobody here even knows my name\nI have no one but myself to blame",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Forty years I\u2019ve been gone",
+        "I served my time it\u2019s been so long",
+        "I took a life I know it was wrong",
+        "I served my time lord knows I\u2019m going home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Shackled to a ball and chain",
+        "I worked in the snow I worked in the rain",
+        "I laid the tracks never rode the train",
+        "Forty years of suffering forty years of pain"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had a wife and a little queen",
+        "I\u2019ve had a son I\u2019ve never seen",
+        "All I have left now it seems",
+        "Is a broken heart and broken dreams"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m old, I\u2019ve done my time",
+        "Ain\u2019t nothin left but to sit and pine",
+        "Nobody here even knows my name",
+        "I have no one but myself to blame"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "on-and-on",
+  "title": "On And On",
+  "source_url": "https://www.bluegrasslyrics.com/song/on-and-on/",
+  "raw_lyrics": "Traveling down this long lonesome highway\nI\u2019m so lonesome I could cry\nWith memories of how we once loved each other\nAnd now you are saying good-bye\n\nOn and on I\u2019ll follow my darling\nAnd I wonder where she can be\nOn and on I\u2019ll follow my darling\nI wonder if she ever thinks of me\n\nI\u2019ve cried I\u2019ve cried for you little darling\nIt breaks my heart to hear you name\nMy friends they all so loved you my darling\nAnd they think that I\u2019m to blame\n\nI had to follow you little darling\nI can\u2019t sleep when the sun goes down\nCause by your side is my destination\nThe road is clear and there\u2019s where I\u2019m bound",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Traveling down this long lonesome highway",
+        "I\u2019m so lonesome I could cry",
+        "With memories of how we once loved each other",
+        "And now you are saying good-bye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "On and on I\u2019ll follow my darling",
+        "And I wonder where she can be",
+        "On and on I\u2019ll follow my darling",
+        "I wonder if she ever thinks of me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve cried I\u2019ve cried for you little darling",
+        "It breaks my heart to hear you name",
+        "My friends they all so loved you my darling",
+        "And they think that I\u2019m to blame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had to follow you little darling",
+        "I can\u2019t sleep when the sun goes down",
+        "Cause by your side is my destination",
+        "The road is clear and there\u2019s where I\u2019m bound"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

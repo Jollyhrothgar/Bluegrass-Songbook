@@ -1,0 +1,60 @@
+{
+  "slug": "if-i-could-turn-back-the-hands-of-time",
+  "title": "If I Could Turn Back The Hands Of Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-i-could-turn-back-the-hands-of-time/",
+  "raw_lyrics": "Well I packed up my old clothes and drove on down the road\nFour hunderd miles or more until I reached my next show.\nThe wind was blowing cold and brother don\u2019t you know\nThis pain inside my heart just won\u2019t let go.\n\nI never was one to follow a straight and narrow path\nBut I would now if it would lead me to my past.\nBack to her loving arms is where I want to go\nTo the one who left me out in the cold.\n\nIf I could turn back the hands of time\nTo the day when she was mine\nIf she\u2019d take me back right now\nI would walk the line\nIf I could turn back the hands of time.\n\nShe never wanted me to leave her all alone\nShe needed someone there to keep her warm at home\nHer words now are so clear in my mind\nIf I had only read between the lines.\n\nI\u2019ll play another smoke filled bar for tips in a jar\nAnother lonely night just me and my guitar\nBut if she would open up her heart to me again\nI\u2019d stop running down this road that has no end.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I packed up my old clothes and drove on down the road",
+        "Four hunderd miles or more until I reached my next show.",
+        "The wind was blowing cold and brother don\u2019t you know",
+        "This pain inside my heart just won\u2019t let go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never was one to follow a straight and narrow path",
+        "But I would now if it would lead me to my past.",
+        "Back to her loving arms is where I want to go",
+        "To the one who left me out in the cold."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "If I could turn back the hands of time",
+        "To the day when she was mine",
+        "If she\u2019d take me back right now",
+        "I would walk the line",
+        "If I could turn back the hands of time."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She never wanted me to leave her all alone",
+        "She needed someone there to keep her warm at home",
+        "Her words now are so clear in my mind",
+        "If I had only read between the lines."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll play another smoke filled bar for tips in a jar",
+        "Another lonely night just me and my guitar",
+        "But if she would open up her heart to me again",
+        "I\u2019d stop running down this road that has no end."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

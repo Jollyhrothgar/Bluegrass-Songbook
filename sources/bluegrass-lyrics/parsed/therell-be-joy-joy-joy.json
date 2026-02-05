@@ -1,0 +1,50 @@
+{
+  "slug": "therell-be-joy-joy-joy",
+  "title": "There\u2019ll Be Joy, Joy, Joy",
+  "source_url": "https://www.bluegrasslyrics.com/song/therell-be-joy-joy-joy/",
+  "raw_lyrics": "There\u2019ll be joy joy joy up in my father\u2019s house\nUp in my father\u2019s house up in my father\u2019s house\nThere\u2019ll be joy joy joy up in my father\u2019s house\nWhere there\u2019s peace sweet peace\n\nWe\u2019ll be happy there up in my fathers house\nUp in my father\u2019s house up in my father\u2019s house\nWe\u2019ll be happy there up in my fathers house\nWhere there\u2019s peace sweet peace\n\nDon\u2019t you want to go up there to my father\u2019s house\n\nThere\u2019ll be no drunkards there up in my father\u2019s house\n\nWe\u2019ll all be as one up in my father\u2019s house",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019ll be joy joy joy up in my father\u2019s house",
+        "Up in my father\u2019s house up in my father\u2019s house",
+        "There\u2019ll be joy joy joy up in my father\u2019s house",
+        "Where there\u2019s peace sweet peace"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019ll be happy there up in my fathers house",
+        "Up in my father\u2019s house up in my father\u2019s house",
+        "We\u2019ll be happy there up in my fathers house",
+        "Where there\u2019s peace sweet peace"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t you want to go up there to my father\u2019s house"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019ll be no drunkards there up in my father\u2019s house"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019ll all be as one up in my father\u2019s house"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "where-is-my-wandering-boy-tonight",
+  "title": "Where Is My Wandering Boy Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-is-my-wandering-boy-tonight/",
+  "raw_lyrics": "Where is my wandering boy tonight\nThe boy of my tenderest care\nThe boy that was once my joy and light\nThe child of my love and prayer\n\nWhere is my boy tonight\nWhere is my boy tonight\nMy heart o\u2019erflows for I love him he knows\nOh where is my boy tonight\n\nOnce he was pure as morning dew\nAs he knelt at his mother\u2019s knee\nNo face was so bright no heart more true\nAnd none was so sweet as he\n\nOh chould I see you now my boy\nAs fair as in olden time\nWhen prattle and smile made home a joy\nAnd life was a merry chime\n\nGo for my wand\u2019ring boy tonight\nGo search for him where you will\nBut bring him to me with all his blight\nAnd tell him I love him still",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Where is my wandering boy tonight",
+        "The boy of my tenderest care",
+        "The boy that was once my joy and light",
+        "The child of my love and prayer"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Where is my boy tonight",
+        "Where is my boy tonight",
+        "My heart o\u2019erflows for I love him he knows",
+        "Oh where is my boy tonight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once he was pure as morning dew",
+        "As he knelt at his mother\u2019s knee",
+        "No face was so bright no heart more true",
+        "And none was so sweet as he"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh chould I see you now my boy",
+        "As fair as in olden time",
+        "When prattle and smile made home a joy",
+        "And life was a merry chime"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go for my wand\u2019ring boy tonight",
+        "Go search for him where you will",
+        "But bring him to me with all his blight",
+        "And tell him I love him still"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

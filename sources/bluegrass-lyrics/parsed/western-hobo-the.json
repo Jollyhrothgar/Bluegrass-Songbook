@@ -1,0 +1,37 @@
+{
+  "slug": "western-hobo-the",
+  "title": "Western Hobo, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/western-hobo-the/",
+  "raw_lyrics": "The wild western hobo who left his happy home\nStarted upon a western trip all by himself alone\nUpon this western trip going to have lots of fun\nBut upon this western trip this is the song he sung\n\nI stepped up on a platform smoking a cheap cigar\nWaiting to catch a freight train to catch an empty car\nI buttoned my coat up closely and walked on down the track\nI caught the steps of a sleeper car I never did look back\n\nMy pocket book is empty my heart is filled with pain\nTen thousand miles away from home hoboing and old freight train",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The wild western hobo who left his happy home",
+        "Started upon a western trip all by himself alone",
+        "Upon this western trip going to have lots of fun",
+        "But upon this western trip this is the song he sung"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I stepped up on a platform smoking a cheap cigar",
+        "Waiting to catch a freight train to catch an empty car",
+        "I buttoned my coat up closely and walked on down the track",
+        "I caught the steps of a sleeper car I never did look back"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My pocket book is empty my heart is filled with pain",
+        "Ten thousand miles away from home hoboing and old freight train"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "jonah-and-the-whale",
+  "title": "Jonah And The Whale",
+  "source_url": "https://www.bluegrasslyrics.com/song/jonah-and-the-whale/",
+  "raw_lyrics": "God sent Jonah to the Ninevah land\nTo preach the gospel to the wicked men\nTell them to repent of their wicked ways\nOr I\u2019ll overthrow the city in forty days\n\nGod moves in a windstorm\nHe rode in a windstorm\nGod moves in a windstorm\nAnd he troubled everybody in their mind\n\nJonah went down to the seashore\nTo make up his mind which way to go\nHe boarded the ship and paid his fare\nAnd God got angry with Jonah down there\n\nJonah went down from the side of man\nAnd he called on Jesus to be his friend\nDisobeyed God and he had to pray\nThe Lord sent a storm on the water that day\n\nThey cast poor Jonah overboard\nGod sent a whale and swallowed him whole\nWent on down to the Ninevah land\nAnd laid poor Jonah on a bed of sand\n\nJonah rose up from the sand\nWent on walking to the Ninevah land\nHe preached the gospel at His command\nRepent, repent you wicked men",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "God sent Jonah to the Ninevah land",
+        "To preach the gospel to the wicked men",
+        "Tell them to repent of their wicked ways",
+        "Or I\u2019ll overthrow the city in forty days"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "God moves in a windstorm",
+        "He rode in a windstorm",
+        "God moves in a windstorm",
+        "And he troubled everybody in their mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jonah went down to the seashore",
+        "To make up his mind which way to go",
+        "He boarded the ship and paid his fare",
+        "And God got angry with Jonah down there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jonah went down from the side of man",
+        "And he called on Jesus to be his friend",
+        "Disobeyed God and he had to pray",
+        "The Lord sent a storm on the water that day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They cast poor Jonah overboard",
+        "God sent a whale and swallowed him whole",
+        "Went on down to the Ninevah land",
+        "And laid poor Jonah on a bed of sand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jonah rose up from the sand",
+        "Went on walking to the Ninevah land",
+        "He preached the gospel at His command",
+        "Repent, repent you wicked men"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

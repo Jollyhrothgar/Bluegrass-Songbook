@@ -1,0 +1,57 @@
+{
+  "slug": "heart-that-was-broken-for-me-the",
+  "title": "Heart That Was Broken For Me, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/heart-that-was-broken-for-me-the/",
+  "raw_lyrics": "There came from the skies\nIn the days long ago\nThe Lord with a message of love\nThe world knew Him not\nHe was treated with scorn\nThis wonderful Gift from above\n\nThey crowned Him with thorns\nHe was beaten with straps\nHe was wounded and nailed to the tree\nBut the pain in His heart\nWas the hardest to bear\nThe heart that was broken for me\n\nHe came to His own\nTo his owners He loved\nThe sheep that had wandered astray\nThey heard not His voice\nBut the Friend of mankind\nWas halted and driven away\n\nI will take up my cross\nI will walk by His side\nFor the pathway of duty I see\nI will follow my Lord\nAnd abide in His heart\nThe heart that was broken for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There came from the skies",
+        "In the days long ago",
+        "The Lord with a message of love",
+        "The world knew Him not",
+        "He was treated with scorn",
+        "This wonderful Gift from above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "They crowned Him with thorns",
+        "He was beaten with straps",
+        "He was wounded and nailed to the tree",
+        "But the pain in His heart",
+        "Was the hardest to bear",
+        "The heart that was broken for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He came to His own",
+        "To his owners He loved",
+        "The sheep that had wandered astray",
+        "They heard not His voice",
+        "But the Friend of mankind",
+        "Was halted and driven away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will take up my cross",
+        "I will walk by His side",
+        "For the pathway of duty I see",
+        "I will follow my Lord",
+        "And abide in His heart",
+        "The heart that was broken for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

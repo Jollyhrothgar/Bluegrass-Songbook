@@ -1,0 +1,67 @@
+{
+  "slug": "i-never-loved-but-one",
+  "title": "I Never Loved But One",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-never-loved-but-one/",
+  "raw_lyrics": "Onward to the eastern skies\nWith blueing effort kiss the seas\nI sigh in place for those blue eyes\nThat have hope and love for me\n\nFor they obey have stolen away\nThat heart that truly once was mine\nLike some lone bird without a mate\nMy weary heart is desolate\n\nI look around but cannot trace\nOne welcome word or smiling face\nIn gazing crowds I am alone\nBecause I never loved but one\n\nCome up closer to me now\nYour chestnut hair\u2019s been touched with snow\nBut still it is the same dear face\nI loved so well long years ago\n\nThe same as on that winter night\nYou bent to me and kissed my brow\nHappy hours of trusting love\nOh well they\u2019re all over now\nAnd I must sail the whitening foam\nTill I can see the foreign home\nTil I forget that lasting face\nI ne\u2019re can find a resting place\nI look around but cannot trace\nOne welcome word or smiling face\nIn gazing crowds I am alone\nBecause I never loved but one",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Onward to the eastern skies",
+        "With blueing effort kiss the seas",
+        "I sigh in place for those blue eyes",
+        "That have hope and love for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "For they obey have stolen away",
+        "That heart that truly once was mine",
+        "Like some lone bird without a mate",
+        "My weary heart is desolate"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I look around but cannot trace",
+        "One welcome word or smiling face",
+        "In gazing crowds I am alone",
+        "Because I never loved but one"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come up closer to me now",
+        "Your chestnut hair\u2019s been touched with snow",
+        "But still it is the same dear face",
+        "I loved so well long years ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The same as on that winter night",
+        "You bent to me and kissed my brow",
+        "Happy hours of trusting love",
+        "Oh well they\u2019re all over now",
+        "And I must sail the whitening foam",
+        "Till I can see the foreign home",
+        "Til I forget that lasting face",
+        "I ne\u2019re can find a resting place",
+        "I look around but cannot trace",
+        "One welcome word or smiling face",
+        "In gazing crowds I am alone",
+        "Because I never loved but one"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

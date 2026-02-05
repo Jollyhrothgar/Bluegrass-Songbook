@@ -1,0 +1,39 @@
+{
+  "slug": "stone-wall-all-around-your-heart",
+  "title": "Stone Wall All Around Your Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/stone-wall-all-around-your-heart/",
+  "raw_lyrics": "Now I\u2019m so broken hearted I don\u2019t know what to do\nI passed you today on the street\nAnd you treated me like a stranger that you never knew\nIt\u2019s the same every time we meet\n\nYou built a stone wall all around your heart\nThough my arms ache to hold you as before\nYou built a stone wall all around your heart\nYou won\u2019t let me love you anymore\n\nHow have I hurt you darling why won\u2019t you say\nWhat have I done to you\nFor I still worship you dear in the same old way\nHow could you forget the love we knew",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m so broken hearted I don\u2019t know what to do",
+        "I passed you today on the street",
+        "And you treated me like a stranger that you never knew",
+        "It\u2019s the same every time we meet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You built a stone wall all around your heart",
+        "Though my arms ache to hold you as before",
+        "You built a stone wall all around your heart",
+        "You won\u2019t let me love you anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How have I hurt you darling why won\u2019t you say",
+        "What have I done to you",
+        "For I still worship you dear in the same old way",
+        "How could you forget the love we knew"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

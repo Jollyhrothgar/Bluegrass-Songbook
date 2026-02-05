@@ -1,0 +1,49 @@
+{
+  "slug": "there-is-a-time",
+  "title": "There Is A Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/there-is-a-time/",
+  "raw_lyrics": "There is a time for love and laughter\nThe days will pass like summer storms\nThe winter wind will follow after\nBut there is love and love is warm\n\nThere is a time for us to wander\nWhen time is young and so are we\nThe woods are greener over yonder\nThe path is new the world is free\n\nThere is a time when leaves are fallin\u2019\nThe woods are gray the paths are old\nThe snow will come when geese are callin\u2019\nYou need a fire against the cold\n\nSo do your roaming in the springtime\nAnd you\u2019ll find your love in the summer sun\nThe frost will come and bring the harvest\nAnd you can sleep when day is done",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There is a time for love and laughter",
+        "The days will pass like summer storms",
+        "The winter wind will follow after",
+        "But there is love and love is warm"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is a time for us to wander",
+        "When time is young and so are we",
+        "The woods are greener over yonder",
+        "The path is new the world is free"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is a time when leaves are fallin\u2019",
+        "The woods are gray the paths are old",
+        "The snow will come when geese are callin\u2019",
+        "You need a fire against the cold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So do your roaming in the springtime",
+        "And you\u2019ll find your love in the summer sun",
+        "The frost will come and bring the harvest",
+        "And you can sleep when day is done"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

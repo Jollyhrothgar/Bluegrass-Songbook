@@ -1,0 +1,55 @@
+{
+  "slug": "im-working-on-a-building",
+  "title": "I\u2019m Working On A Building",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-working-on-a-building/",
+  "raw_lyrics": "I\u2019m a working on building\nI\u2019m a working on building\nI\u2019m a working on building\nFor my lord for my lord\nIt\u2019s a holy ghost building\nIt\u2019s a holy ghost building\nIt\u2019s a holy ghost building\nFor my lord for my lord\n\nIf I was a liar I tell you what I would do\nI\u2019d quit my lying and work on a building too\n\nIf I was  a drunkard I tell you what I would do\nI\u2019d quit my drinking and work on a building too\n\nIf I was  a gambler  I tell you what I would do\nI\u2019d quit my gambling and work on a building too\n\nIf I was a preacher I tell you what I would do\nI would keep on preaching and work on a building too",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m a working on building",
+        "I\u2019m a working on building",
+        "I\u2019m a working on building",
+        "For my lord for my lord",
+        "It\u2019s a holy ghost building",
+        "It\u2019s a holy ghost building",
+        "It\u2019s a holy ghost building",
+        "For my lord for my lord"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I was a liar I tell you what I would do",
+        "I\u2019d quit my lying and work on a building too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I was  a drunkard I tell you what I would do",
+        "I\u2019d quit my drinking and work on a building too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I was  a gambler  I tell you what I would do",
+        "I\u2019d quit my gambling and work on a building too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I was a preacher I tell you what I would do",
+        "I would keep on preaching and work on a building too"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "its-been-a-long-time",
+  "title": "It\u2019s Been a Long Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/its-been-a-long-time/",
+  "raw_lyrics": "Its been a long time and I\u2019m comin\u2019 home\nCan\u2019t wait to see my little Sally Jo\nHear the whistle blowin\u2019 and the engine roar\nIt\u2019s been a long time can\u2019t wait no more\n\nNow this time Friday I want you to know\nWell I\u2019ll be southbound on down that road\nSmell that honeysuckle no sign of snow\nWhere the Mississippi\u2019s flowing I\u2019m bound to go\n\nNow take my money I\u2019ll take my pride\nI\u2019ll take that dirt road down the mountainside\nGonna head down south back to my old home\nBack where i came from so long ago",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Its been a long time and I\u2019m comin\u2019 home",
+        "Can\u2019t wait to see my little Sally Jo",
+        "Hear the whistle blowin\u2019 and the engine roar",
+        "It\u2019s been a long time can\u2019t wait no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now this time Friday I want you to know",
+        "Well I\u2019ll be southbound on down that road",
+        "Smell that honeysuckle no sign of snow",
+        "Where the Mississippi\u2019s flowing I\u2019m bound to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now take my money I\u2019ll take my pride",
+        "I\u2019ll take that dirt road down the mountainside",
+        "Gonna head down south back to my old home",
+        "Back where i came from so long ago"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

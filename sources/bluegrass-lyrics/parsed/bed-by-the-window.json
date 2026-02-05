@@ -1,0 +1,84 @@
+{
+  "slug": "bed-by-the-window",
+  "title": "Bed By The Window",
+  "source_url": "https://www.bluegrasslyrics.com/song/bed-by-the-window/",
+  "raw_lyrics": "Two old friends shared a room in a home for the elderly\nConfined to their beds their bodies giving way\nOld Joe lay by the window and watched the day go by\nAnd Bill lived to hear him tell about the world outside\n\nThey shared with each other the stories of their lives\nAnd relived all their memories and dreams of a better time\nOutside the leaves were changing, summer turned to fall\nAnd from the bed by the window old Joe described it all\n\nFrom, the bed by the window he\u2019d tell how the children played\nThe lovers in the park, the ducks out on the lake\nThe little boy swept the sidewalk when the sun came up each day\nFrom the bed by the window he told it just that way\n\nOn a cold winter morning in the light of the dawn\nThe bed by the window was empty old Joe had passed and gone\nThey moved Bill by the window he couldn\u2019t hold back the tears\nHe\u2019d finally see the view outside after all these years\n\nFrom the bed by the window he couldn\u2019t see out at all\nThere was nothing out that window but an old brick wall\n\nA new friend shares a room in a home for the elderly\nConfined to his bed his body has given way\nNow Bill lay by the window as the days go by\nAnd his new friend left to hear him tell about the world outside\n\nFrom, the bed by the window he\u2019d tell how the children played\nThe lovers in the park, the ducks out on the lake\nThe little boy swept the sidewalk when the sun came up each day\nFrom the bed by the window he told it just that way\n\nTwo old friends shared a room in a home for the elderly",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Two old friends shared a room in a home for the elderly",
+        "Confined to their beds their bodies giving way",
+        "Old Joe lay by the window and watched the day go by",
+        "And Bill lived to hear him tell about the world outside"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They shared with each other the stories of their lives",
+        "And relived all their memories and dreams of a better time",
+        "Outside the leaves were changing, summer turned to fall",
+        "And from the bed by the window old Joe described it all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "From, the bed by the window he\u2019d tell how the children played",
+        "The lovers in the park, the ducks out on the lake",
+        "The little boy swept the sidewalk when the sun came up each day",
+        "From the bed by the window he told it just that way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On a cold winter morning in the light of the dawn",
+        "The bed by the window was empty old Joe had passed and gone",
+        "They moved Bill by the window he couldn\u2019t hold back the tears",
+        "He\u2019d finally see the view outside after all these years"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "From the bed by the window he couldn\u2019t see out at all",
+        "There was nothing out that window but an old brick wall"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A new friend shares a room in a home for the elderly",
+        "Confined to his bed his body has given way",
+        "Now Bill lay by the window as the days go by",
+        "And his new friend left to hear him tell about the world outside"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "From, the bed by the window he\u2019d tell how the children played",
+        "The lovers in the park, the ducks out on the lake",
+        "The little boy swept the sidewalk when the sun came up each day",
+        "From the bed by the window he told it just that way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Two old friends shared a room in a home for the elderly"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

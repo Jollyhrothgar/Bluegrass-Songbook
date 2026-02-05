@@ -1,0 +1,49 @@
+{
+  "slug": "the-good-things-out-weigh-the-bad",
+  "title": "The Good Things Out Weigh The Bad",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-good-things-out-weigh-the-bad/",
+  "raw_lyrics": "I\u2019ve been sitting here thinking back over my life\nAll of the good thing the trouble and strife\nWell my share of heartaches yes so many I\u2019ve had\nBut I still think the good things out weigh the bad\n\nWell I\u2019ve rocked my babies at night when they\u2019d cry\nI\u2019ve seen the teardrops turn into smiles\nAnd that\u2019s when I realize all the bad luck I\u2019ve had\nAnd I know all the good things out weigh the bad\n\nWell I\u2019ve never had riches or money to spare\nJust a share croppers wages is my only fare\nYes making my living just working the land\nBut I still think the good things out weigh the bad\n\nYes I worked the cotton in the heat of the day\nAnd then paid the landlord nearly all that I\u2019d made\nWell I\u2019ve seen high taxes take all that I had\nBut I still think the good things out weigh the bad",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been sitting here thinking back over my life",
+        "All of the good thing the trouble and strife",
+        "Well my share of heartaches yes so many I\u2019ve had",
+        "But I still think the good things out weigh the bad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ve rocked my babies at night when they\u2019d cry",
+        "I\u2019ve seen the teardrops turn into smiles",
+        "And that\u2019s when I realize all the bad luck I\u2019ve had",
+        "And I know all the good things out weigh the bad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ve never had riches or money to spare",
+        "Just a share croppers wages is my only fare",
+        "Yes making my living just working the land",
+        "But I still think the good things out weigh the bad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes I worked the cotton in the heat of the day",
+        "And then paid the landlord nearly all that I\u2019d made",
+        "Well I\u2019ve seen high taxes take all that I had",
+        "But I still think the good things out weigh the bad"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

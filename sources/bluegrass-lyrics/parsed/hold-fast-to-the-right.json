@@ -1,0 +1,59 @@
+{
+  "slug": "hold-fast-to-the-right",
+  "title": "Hold Fast To The Right",
+  "source_url": "https://www.bluegrasslyrics.com/song/hold-fast-to-the-right/",
+  "raw_lyrics": "Kneel down by the side of your mother, my boy\nYou have only a moment I know\nBut stay till I give you this parting advice\nIt is all that I have to be stow\n\nHold fast to the right, hold fast to the right\nWherever your footsteps may roam\nOh forsake not the way of a salvation my boy\nThat you learn\u2019d from your mother at home\n\nYou leave us to seek your employment, my boy\nBy the world you have yet to be tried\nBut in the temptations and trials you meet\nMay your heart to the Savior confide\n\nI gave you to God in your cradle, my boy\nAnd I\u2019ve taught you the best that I knew\nAnd as long as His mercies permit me to live\nAnd I shall never cease praying for you\n\nYou will find in your satchel, a Bible, my boy\nIt\u2019s the book of all others the best\nIt will help you to levee and prepare you to die\nAnd will lead to the gates of the blest",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Kneel down by the side of your mother, my boy",
+        "You have only a moment I know",
+        "But stay till I give you this parting advice",
+        "It is all that I have to be stow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hold fast to the right, hold fast to the right",
+        "Wherever your footsteps may roam",
+        "Oh forsake not the way of a salvation my boy",
+        "That you learn\u2019d from your mother at home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You leave us to seek your employment, my boy",
+        "By the world you have yet to be tried",
+        "But in the temptations and trials you meet",
+        "May your heart to the Savior confide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I gave you to God in your cradle, my boy",
+        "And I\u2019ve taught you the best that I knew",
+        "And as long as His mercies permit me to live",
+        "And I shall never cease praying for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You will find in your satchel, a Bible, my boy",
+        "It\u2019s the book of all others the best",
+        "It will help you to levee and prepare you to die",
+        "And will lead to the gates of the blest"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

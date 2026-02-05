@@ -1,0 +1,39 @@
+{
+  "slug": "how-could-i-dream-such-a-dream",
+  "title": "How Could I Dream Such A Dream",
+  "source_url": "https://www.bluegrasslyrics.com/song/how-could-i-dream-such-a-dream/",
+  "raw_lyrics": "I dreamed you were lying close beside me\nAnd I dreamed no one else had your heart\nIn this dream you said you loved me\nAnd told me that we\u2019d never part\n\nOh how could I dream such a dream\nHow peaceful there while I sleep\nBut I awoke how strange it did seem\nI was lost in a world so deep\n\nYou\u2019ll never know just how much I love you\nAnd that you\u2019re in my prayers every night\nBut tonight you\u2019re in the arms of another\nAnd I know what I\u2019m feeling ain\u2019t right",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I dreamed you were lying close beside me",
+        "And I dreamed no one else had your heart",
+        "In this dream you said you loved me",
+        "And told me that we\u2019d never part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh how could I dream such a dream",
+        "How peaceful there while I sleep",
+        "But I awoke how strange it did seem",
+        "I was lost in a world so deep"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll never know just how much I love you",
+        "And that you\u2019re in my prayers every night",
+        "But tonight you\u2019re in the arms of another",
+        "And I know what I\u2019m feeling ain\u2019t right"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

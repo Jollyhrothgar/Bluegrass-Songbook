@@ -1,0 +1,39 @@
+{
+  "slug": "its-grand-to-have-someone-to-love-you",
+  "title": "It\u2019s Grand To Have Someone To Love You",
+  "source_url": "https://www.bluegrasslyrics.com/song/its-grand-to-have-someone-to-love-you/",
+  "raw_lyrics": "It\u2019s grand to have someone to love you\nSomeone who knows your every care\nSomeone to cheer you when you\u2019re lonely\nJust call for her and she\u2019ll be there\n\nThe kind of love that you can treasure\nThe kind of love that stands the test\nIt\u2019s grand to have someone to love you\nSomeone to hold you to their breast\n\nIt\u2019s grand to have someone to love you\nWho thinks you\u2019re king upon her throne\nThen she\u2019s the queen of all your treasures\nYour castle is a happy home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s grand to have someone to love you",
+        "Someone who knows your every care",
+        "Someone to cheer you when you\u2019re lonely",
+        "Just call for her and she\u2019ll be there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The kind of love that you can treasure",
+        "The kind of love that stands the test",
+        "It\u2019s grand to have someone to love you",
+        "Someone to hold you to their breast"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s grand to have someone to love you",
+        "Who thinks you\u2019re king upon her throne",
+        "Then she\u2019s the queen of all your treasures",
+        "Your castle is a happy home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

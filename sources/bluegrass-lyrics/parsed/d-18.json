@@ -1,0 +1,80 @@
+{
+  "slug": "d-18",
+  "title": "D-18",
+  "source_url": "https://www.bluegrasslyrics.com/song/d-18/",
+  "raw_lyrics": "In a pawn shop in Odysessa in the fall of \u201964\nThe pawn shop man was leavin\u2019 he was lockin\u2019 up the door\nI ran up just in time and I holler\u2019d just through the screen\nHey, man, you got any good guitars in here,\nhe said  \u201cI got this D-18\u201d\n\nSo I gave him a hundred dollars and I took that sucker home\nI cleaned it up and strung it hit a chord and heard that tone\nIt was crisp and clean rich and full all a guitar ought to be\nI said Thank you, Mr, Martin, you made this D-18 for me\n\nSaid Thank you, Mr. Martin, I\u2019m alright\n\u2018Cause once again this old guitar helped me through the night\nI\u2019m mighty grateful to you, you know how to make \u2019em right\nI said Thank you, Mr. Martin, I\u2019m alright\n\nIf I\u2019m feelin\u2019 down and worthless and I haven\u2019t got a dime\nWonderin\u2019 if I spent my life just wastin\u2019 my time\nI pick up that old guitar some paper and a pen\nI say Thank you, Mr. Martin, you saved my life again.\n\nI\u2019ve written songs about my lovers my family and my friends\nMy wife my child the old home place and the road that never ends\nHeros hobos rock n\u2019 roll and a honky tonk queen\nI wrote \u2019em all without exception on my Martin D-18\n\nNow It was made way back In \u201943 when I was just a kid\nI believe it\u2019s about the best thing Mr. Martin ever did\nIt plays real good stays in tune and never treats me mean\nThank God for Mr. Martin and that fine old D-18.\n\nWell there\u2019s your Galagher your Gibson your Goya Gretch and Guild\nI\u2019ve played every kind of guitar that them guitar makers build\nI\u2019 picked on a lot of axes but the best I\u2019ve ever seen\nIs my funky beat up wonderful old Martin D-18.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a pawn shop in Odysessa in the fall of \u201964",
+        "The pawn shop man was leavin\u2019 he was lockin\u2019 up the door",
+        "I ran up just in time and I holler\u2019d just through the screen",
+        "Hey, man, you got any good guitars in here,",
+        "he said  \u201cI got this D-18\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So I gave him a hundred dollars and I took that sucker home",
+        "I cleaned it up and strung it hit a chord and heard that tone",
+        "It was crisp and clean rich and full all a guitar ought to be",
+        "I said Thank you, Mr, Martin, you made this D-18 for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Said Thank you, Mr. Martin, I\u2019m alright",
+        "\u2018Cause once again this old guitar helped me through the night",
+        "I\u2019m mighty grateful to you, you know how to make \u2019em right",
+        "I said Thank you, Mr. Martin, I\u2019m alright"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I\u2019m feelin\u2019 down and worthless and I haven\u2019t got a dime",
+        "Wonderin\u2019 if I spent my life just wastin\u2019 my time",
+        "I pick up that old guitar some paper and a pen",
+        "I say Thank you, Mr. Martin, you saved my life again."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve written songs about my lovers my family and my friends",
+        "My wife my child the old home place and the road that never ends",
+        "Heros hobos rock n\u2019 roll and a honky tonk queen",
+        "I wrote \u2019em all without exception on my Martin D-18"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now It was made way back In \u201943 when I was just a kid",
+        "I believe it\u2019s about the best thing Mr. Martin ever did",
+        "It plays real good stays in tune and never treats me mean",
+        "Thank God for Mr. Martin and that fine old D-18."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well there\u2019s your Galagher your Gibson your Goya Gretch and Guild",
+        "I\u2019ve played every kind of guitar that them guitar makers build",
+        "I\u2019 picked on a lot of axes but the best I\u2019ve ever seen",
+        "Is my funky beat up wonderful old Martin D-18."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

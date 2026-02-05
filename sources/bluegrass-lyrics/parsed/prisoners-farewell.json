@@ -1,0 +1,79 @@
+{
+  "slug": "prisoners-farewell",
+  "title": "Prisoner\u2019s Farewell",
+  "source_url": "https://www.bluegrasslyrics.com/song/prisoners-farewell/",
+  "raw_lyrics": "Sweetheart a prisoner\u2019s last letter\nI had to send to you today\nBut when you read these words of sorrow\nMy soul will then have passed away\n\nFor at the dawn of day tomorrow\nI then will pay for my mistake\nGod gave me courage for this message\nI\u2019ve realized my sin too late\n\nA letter dear and from a prisoner\nDon\u2019t shed a tear when I am gone\nI\u2019ve troubled you too much already\nI hate to leave you all alone\n\nAs if in dreams I see you smiling\nYour pretty eyes are like a song\nYou warned my darling now I\u2019m pining\nYou knew that I was doing wrong\n\nOutside the shadows now are fading\nThey circle me complete my life\nI\u2019ll soon be gone and when I\u2019m dying\nI\u2019ll think of you and pay the price\n\nI hear the guard outside my window\nAnd on his rounds he seems so slow\nIt seems he\u2019s trying me to comfort\nIt seems he hates to see me go\n\nPlease take this message to my mother\nAnd give her all my love and cheer\nThis final message now I\u2019m writing\nTo one I\u2019ll always love so dear",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sweetheart a prisoner\u2019s last letter",
+        "I had to send to you today",
+        "But when you read these words of sorrow",
+        "My soul will then have passed away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For at the dawn of day tomorrow",
+        "I then will pay for my mistake",
+        "God gave me courage for this message",
+        "I\u2019ve realized my sin too late"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "A letter dear and from a prisoner",
+        "Don\u2019t shed a tear when I am gone",
+        "I\u2019ve troubled you too much already",
+        "I hate to leave you all alone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As if in dreams I see you smiling",
+        "Your pretty eyes are like a song",
+        "You warned my darling now I\u2019m pining",
+        "You knew that I was doing wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Outside the shadows now are fading",
+        "They circle me complete my life",
+        "I\u2019ll soon be gone and when I\u2019m dying",
+        "I\u2019ll think of you and pay the price"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hear the guard outside my window",
+        "And on his rounds he seems so slow",
+        "It seems he\u2019s trying me to comfort",
+        "It seems he hates to see me go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please take this message to my mother",
+        "And give her all my love and cheer",
+        "This final message now I\u2019m writing",
+        "To one I\u2019ll always love so dear"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

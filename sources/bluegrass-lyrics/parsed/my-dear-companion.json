@@ -1,0 +1,49 @@
+{
+  "slug": "my-dear-companion",
+  "title": "My Dear Companion",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-dear-companion/",
+  "raw_lyrics": "Oh have you seen my dear companion\nFor he was all this world to me\nI hear he\u2019s gone to some far country\nAnd that he no longer cares for me\n\nI wish I were a swallow flying\nI\u2019d fly to a high and lonesome place\nI\u2019d join the wild birds in their crying\nThinking of you and your sweet face\n\nOh have you seen my dear companion\nFor he was all the world to me\nBut now the stars have turned against me\nAnd he cares no more for me\n\nOh when the dark is on the mountain\nAnd when the world has gone to sleep\nI will go down to the cold dark waters\nAnd there I\u2019ll lay me down and weep",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh have you seen my dear companion",
+        "For he was all this world to me",
+        "I hear he\u2019s gone to some far country",
+        "And that he no longer cares for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I wish I were a swallow flying",
+        "I\u2019d fly to a high and lonesome place",
+        "I\u2019d join the wild birds in their crying",
+        "Thinking of you and your sweet face"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh have you seen my dear companion",
+        "For he was all the world to me",
+        "But now the stars have turned against me",
+        "And he cares no more for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh when the dark is on the mountain",
+        "And when the world has gone to sleep",
+        "I will go down to the cold dark waters",
+        "And there I\u2019ll lay me down and weep"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "youre-not-easy-to-forget",
+  "title": "You\u2019re Not Easy To Forget",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-not-easy-to-forget/",
+  "raw_lyrics": "I make all the honky tonks and taverns\nJust to see who\u2019s hanging \u2019round\nTryin\u2019 to drown away all my sorrows\nCause my darlin\u2019 let me down\n\nOh I could get someone to love me\nAnd I could get someone to care\nBut when I need someone to true love me\nYou\u2019re not easy to forget.\n\nLast night while dancin\u2019 with my new love\nAnd gazin\u2019 into her eyes of blue\nI knew that I could have loved her\nIf I never dated you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I make all the honky tonks and taverns",
+        "Just to see who\u2019s hanging \u2019round",
+        "Tryin\u2019 to drown away all my sorrows",
+        "Cause my darlin\u2019 let me down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I could get someone to love me",
+        "And I could get someone to care",
+        "But when I need someone to true love me",
+        "You\u2019re not easy to forget."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night while dancin\u2019 with my new love",
+        "And gazin\u2019 into her eyes of blue",
+        "I knew that I could have loved her",
+        "If I never dated you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

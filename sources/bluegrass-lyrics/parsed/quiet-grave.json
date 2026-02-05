@@ -1,0 +1,39 @@
+{
+  "slug": "quiet-grave",
+  "title": "Quiet Grave",
+  "source_url": "https://www.bluegrasslyrics.com/song/quiet-grave/",
+  "raw_lyrics": "Let me tell you why I feel so sad\nIt\u2019s all because of the wife I\u2019ve had\nAn untimely death has come to me\nLeft me too lame to walk too blind to see\n\nIn a quiet grave on a green hillside\nMy love is gone my love has died\nMy wedding band I\u2019ll put with you\nOh how I wish I were with you too\n\nWhat\u2019s a man to do with a broken heart\nNowhere to go no place to start\nI search and search but all I find\nIs a tormented soul and a worried mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Let me tell you why I feel so sad",
+        "It\u2019s all because of the wife I\u2019ve had",
+        "An untimely death has come to me",
+        "Left me too lame to walk too blind to see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In a quiet grave on a green hillside",
+        "My love is gone my love has died",
+        "My wedding band I\u2019ll put with you",
+        "Oh how I wish I were with you too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What\u2019s a man to do with a broken heart",
+        "Nowhere to go no place to start",
+        "I search and search but all I find",
+        "Is a tormented soul and a worried mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "cold-wind",
+  "title": "Cold Wind",
+  "source_url": "https://www.bluegrasslyrics.com/song/cold-wind/",
+  "raw_lyrics": "What\u2019s that knockin\u2019 at my door\nHard times (hard times) (hard times)\nWhat\u2019s that blowin\u2019 in my window\nCold wind (cold wind) (cold wind)\nLet the cold wind blow and the hard times roll\nAin\u2019t gonna worry no more.\n\nNow summer\u2019s gone and winter times a\u2019 comin\u2019\nAnd the cold winter winds gonna blow\nYou should come on home and 1 wouldn\u2019t be alone\nWouldn\u2019t have to worry any more.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "What\u2019s that knockin\u2019 at my door",
+        "Hard times (hard times) (hard times)",
+        "What\u2019s that blowin\u2019 in my window",
+        "Cold wind (cold wind) (cold wind)",
+        "Let the cold wind blow and the hard times roll",
+        "Ain\u2019t gonna worry no more."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now summer\u2019s gone and winter times a\u2019 comin\u2019",
+        "And the cold winter winds gonna blow",
+        "You should come on home and 1 wouldn\u2019t be alone",
+        "Wouldn\u2019t have to worry any more."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

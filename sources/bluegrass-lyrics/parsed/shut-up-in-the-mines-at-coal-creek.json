@@ -1,0 +1,49 @@
+{
+  "slug": "shut-up-in-the-mines-at-coal-creek",
+  "title": "Shut Up In The Mines At Coal Creek",
+  "source_url": "https://www.bluegrasslyrics.com/song/shut-up-in-the-mines-at-coal-creek/",
+  "raw_lyrics": "The birds are sweetly singin\nThe sun is shinin bright\nBut in our place of toiling\nIt is as dark as night\n\nShut up in the mines at coal creek\nI know we\u2019re bound to die\nBut if we\u2019ll follow Jesus\nOur souls to heaven will fly\n\nOh I see my loved ones\nMy wife is in distress\nShe does not know that her husband\nIs going home to rest\n\nThe sky is falling my darling\nAnd death is right at hand\nI\u2019m going home to heaven\nTo live in a better land",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The birds are sweetly singin",
+        "The sun is shinin bright",
+        "But in our place of toiling",
+        "It is as dark as night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Shut up in the mines at coal creek",
+        "I know we\u2019re bound to die",
+        "But if we\u2019ll follow Jesus",
+        "Our souls to heaven will fly"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I see my loved ones",
+        "My wife is in distress",
+        "She does not know that her husband",
+        "Is going home to rest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sky is falling my darling",
+        "And death is right at hand",
+        "I\u2019m going home to heaven",
+        "To live in a better land"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

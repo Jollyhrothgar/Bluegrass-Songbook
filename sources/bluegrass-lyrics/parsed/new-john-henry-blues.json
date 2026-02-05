@@ -1,0 +1,65 @@
+{
+  "slug": "new-john-henry-blues",
+  "title": "New John Henry Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/new-john-henry-blues/",
+  "raw_lyrics": "John Henry was a little colored boy\nYou could hold him on the palm of your hand\nAnd his papa cried out this lonesome farewell\nSon gonna be a steel drivin\u2019 man Lord Lord\nSon gonna be a steel drivin\u2019 man\n\nJohn Henry went upon the mountain\nLooked down on the other side\nLord the mountain was so tall\nJohn Henry was so small\nHe laid down his hammer and he cried Lord Lord\nHe laid down his hammer and he cried\n\nJohn Henry walked to the top\nHad his captain by his side\nThe last words that John Henry said\nBring me a cool drink of water \u2018fore I die Lord Lord\nBring a cool drink of water \u2018fore I die\n\nTalk about John Henry as much as you please\nSay and do all that you can\nNever was born in these united states\nNonesuch a steel drivin\u2019 man Lord Lord\nNonesuch a steel drivin\u2019 man\n\nJohn Henry told his captain\nI want to go to bed\nFix me a pallet of straw to lay down\nGot money roarin\u2019 in my head Lord Lord\nGot money roarin\u2019 in my head",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry was a little colored boy",
+        "You could hold him on the palm of your hand",
+        "And his papa cried out this lonesome farewell",
+        "Son gonna be a steel drivin\u2019 man Lord Lord",
+        "Son gonna be a steel drivin\u2019 man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry went upon the mountain",
+        "Looked down on the other side",
+        "Lord the mountain was so tall",
+        "John Henry was so small",
+        "He laid down his hammer and he cried Lord Lord",
+        "He laid down his hammer and he cried"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry walked to the top",
+        "Had his captain by his side",
+        "The last words that John Henry said",
+        "Bring me a cool drink of water \u2018fore I die Lord Lord",
+        "Bring a cool drink of water \u2018fore I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Talk about John Henry as much as you please",
+        "Say and do all that you can",
+        "Never was born in these united states",
+        "Nonesuch a steel drivin\u2019 man Lord Lord",
+        "Nonesuch a steel drivin\u2019 man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry told his captain",
+        "I want to go to bed",
+        "Fix me a pallet of straw to lay down",
+        "Got money roarin\u2019 in my head Lord Lord",
+        "Got money roarin\u2019 in my head"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "sitting-alone-in-the-moonlight",
+  "title": "Sitting Alone In The Moonlight",
+  "source_url": "https://www.bluegrasslyrics.com/song/sitting-alone-in-the-moonlight/",
+  "raw_lyrics": "Sitting alone in the moonlight\nThinking of the days gone by\nWondering about my darling\nI can still hear her saying goodbye\n\nOh the moon grows pale as I sit here\nEach little star seems to whisper and say\nYour sweetheart has found another\nAnd now she\u2019s far far away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sitting alone in the moonlight",
+        "Thinking of the days gone by",
+        "Wondering about my darling",
+        "I can still hear her saying goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the moon grows pale as I sit here",
+        "Each little star seems to whisper and say",
+        "Your sweetheart has found another",
+        "And now she\u2019s far far away"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

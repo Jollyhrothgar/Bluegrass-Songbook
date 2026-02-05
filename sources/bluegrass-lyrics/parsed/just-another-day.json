@@ -1,0 +1,39 @@
+{
+  "slug": "just-another-day",
+  "title": "Just Another Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-another-day/",
+  "raw_lyrics": "Just another day how can I stand it\nWithout my baby by my side\nThis empty feeling now inside me\nIs bound to show but I can\u2019t cry\n\nJust make mine straight without a chaser\nAnd let me drown my blues this way\nThe seat beside me now is empty\nNothing to live for just another day\n\nA thief could rob and take my money\nIf death was pending I could pray\nI\u2019m helpless now what can my fate be\nEverything is gone just another day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just another day how can I stand it",
+        "Without my baby by my side",
+        "This empty feeling now inside me",
+        "Is bound to show but I can\u2019t cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just make mine straight without a chaser",
+        "And let me drown my blues this way",
+        "The seat beside me now is empty",
+        "Nothing to live for just another day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A thief could rob and take my money",
+        "If death was pending I could pray",
+        "I\u2019m helpless now what can my fate be",
+        "Everything is gone just another day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

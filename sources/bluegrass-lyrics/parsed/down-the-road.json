@@ -1,0 +1,66 @@
+{
+  "slug": "down-the-road",
+  "title": "Down The Road",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-the-road/",
+  "raw_lyrics": "Now down the road just a mile or two\nLives a little girl named Pearly Blue\nAbout so high and her hair is brown\nThe Prettiest thing boys in this town\n\nNow anytime you want to know\nWhere I\u2019m going, down the road\nGet my girl on the line\nYou\u2019ll find me there most any old time\n\nNow everyday and Sunday too\nI go to see my Pearly Blue\nBefore you hear that rooster crow\nYou\u2019ll see me headed down the road\n\nNow old man Flatt he owned the farm\nFrom the hog lot to the barn\nFrom the barn to the rail\nHe made his living by carrying the mail\n\nNow every time I get the blues\nI walk the soles right off my shoes\nI don\u2019t know why I love her so\nThat gal of mine lives down the road\n\nRepeat First then Last",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now down the road just a mile or two",
+        "Lives a little girl named Pearly Blue",
+        "About so high and her hair is brown",
+        "The Prettiest thing boys in this town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now anytime you want to know",
+        "Where I\u2019m going, down the road",
+        "Get my girl on the line",
+        "You\u2019ll find me there most any old time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now everyday and Sunday too",
+        "I go to see my Pearly Blue",
+        "Before you hear that rooster crow",
+        "You\u2019ll see me headed down the road"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now old man Flatt he owned the farm",
+        "From the hog lot to the barn",
+        "From the barn to the rail",
+        "He made his living by carrying the mail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now every time I get the blues",
+        "I walk the soles right off my shoes",
+        "I don\u2019t know why I love her so",
+        "That gal of mine lives down the road"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Repeat First then Last"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

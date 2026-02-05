@@ -1,0 +1,39 @@
+{
+  "slug": "precious-memories",
+  "title": "Precious Memories",
+  "source_url": "https://www.bluegrasslyrics.com/song/precious-memories/",
+  "raw_lyrics": "As I travel down life\u2019s pathway\nKnowing not what the years may hold\nAs I ponder hopes grow fonder\nPrecious memories flood my soul\n\nPrecious Memories how they linger\nHow they ever flood my soul\nIn the stillness of the midnight\nPrecious sacred scenes unfold\n\nPrecious father loving mother\nFly across the lonely years\nAnd old home scenes from my childhood\nIn fond memory appear",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As I travel down life\u2019s pathway",
+        "Knowing not what the years may hold",
+        "As I ponder hopes grow fonder",
+        "Precious memories flood my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Precious Memories how they linger",
+        "How they ever flood my soul",
+        "In the stillness of the midnight",
+        "Precious sacred scenes unfold"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Precious father loving mother",
+        "Fly across the lonely years",
+        "And old home scenes from my childhood",
+        "In fond memory appear"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

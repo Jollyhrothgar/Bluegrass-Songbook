@@ -1,0 +1,39 @@
+{
+  "slug": "jacobs-ladder",
+  "title": "Jacob\u2019s Ladder",
+  "source_url": "https://www.bluegrasslyrics.com/song/jacobs-ladder/",
+  "raw_lyrics": "Hallelujah to Jesus who died on the tree\nTo raise up his ladder of mercy for me\nPress onward climb upward the top is in view\nThere\u2019s a crown of bright glory awaiting for you\n\nAs Jacob was travellin was weary one day\nHis head on a stone for a pillow did lay\nA vision appeared of a ladder so high\nIt stood on the earth while the top reached the sky\n\nThis ladder was tall and yet so well made\nStood thousands of years and never decayed\nHigh winds from the heaven\u2019s they reeled and they rocked\nBut the angels they guarded from bottom to top",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Hallelujah to Jesus who died on the tree",
+        "To raise up his ladder of mercy for me",
+        "Press onward climb upward the top is in view",
+        "There\u2019s a crown of bright glory awaiting for you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As Jacob was travellin was weary one day",
+        "His head on a stone for a pillow did lay",
+        "A vision appeared of a ladder so high",
+        "It stood on the earth while the top reached the sky"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This ladder was tall and yet so well made",
+        "Stood thousands of years and never decayed",
+        "High winds from the heaven\u2019s they reeled and they rocked",
+        "But the angels they guarded from bottom to top"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

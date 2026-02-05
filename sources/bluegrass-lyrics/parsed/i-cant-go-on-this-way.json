@@ -1,0 +1,39 @@
+{
+  "slug": "i-cant-go-on-this-way",
+  "title": "I Can\u2019t Go On This Way",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-cant-go-on-this-way/",
+  "raw_lyrics": "When you left me you said you\u2019d return dear\nYou said that you\u2019d be back someday\nOh please let me hear from you darlin\u2019\nI just can\u2019t go on this ol\u2019 way\n\nI know you never did love me\nBut I thought that you would dear someday\nOh please let me hear from you darlin\u2019\nI just can\u2019t go on this ol\u2019 way\n\nRemember the good times together\nYou said that you loved me so true\nAs I sit here these thoughts hover o\u2019er me\nThere\u2019s a love in my heart dear for you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When you left me you said you\u2019d return dear",
+        "You said that you\u2019d be back someday",
+        "Oh please let me hear from you darlin\u2019",
+        "I just can\u2019t go on this ol\u2019 way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I know you never did love me",
+        "But I thought that you would dear someday",
+        "Oh please let me hear from you darlin\u2019",
+        "I just can\u2019t go on this ol\u2019 way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Remember the good times together",
+        "You said that you loved me so true",
+        "As I sit here these thoughts hover o\u2019er me",
+        "There\u2019s a love in my heart dear for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

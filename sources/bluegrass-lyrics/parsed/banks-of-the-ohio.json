@@ -1,0 +1,69 @@
+{
+  "slug": "banks-of-the-ohio",
+  "title": "Banks Of The Ohio",
+  "source_url": "https://www.bluegrasslyrics.com/song/banks-of-the-ohio/",
+  "raw_lyrics": "I asked my love to take a walk\nJust a walk a little way\nAnd as we walk, oh, may we talk\nAll about our wedding day\n\nOnly say that you\u2019ll be mine\nIn our home we\u2019ll happy be\nDown beside where the waters flow\nOn the banks of the Ohio\n\nI held a knife against her breast\nAs into my arms she pressed\nShe said Willie, don\u2019t you murder me\nI\u2019m unprepared for eternity\n\nI took her by her lily white hand\nAnd dragged her down that bank of sand\nThere I throwed her in to drown\nI watched her as she floated down\n\nWas walking home tween twelve and one\nThinkin\u2019 of what I had done\nI killed a girl, my love you see\nBecause she would not marry me\n\nThe very next morn about half past four\nThe Sheriff came knocked at my door\nHe said now young man come now and go\nDown to the Banks of the Ohio",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I asked my love to take a walk",
+        "Just a walk a little way",
+        "And as we walk, oh, may we talk",
+        "All about our wedding day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Only say that you\u2019ll be mine",
+        "In our home we\u2019ll happy be",
+        "Down beside where the waters flow",
+        "On the banks of the Ohio"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I held a knife against her breast",
+        "As into my arms she pressed",
+        "She said Willie, don\u2019t you murder me",
+        "I\u2019m unprepared for eternity"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I took her by her lily white hand",
+        "And dragged her down that bank of sand",
+        "There I throwed her in to drown",
+        "I watched her as she floated down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Was walking home tween twelve and one",
+        "Thinkin\u2019 of what I had done",
+        "I killed a girl, my love you see",
+        "Because she would not marry me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The very next morn about half past four",
+        "The Sheriff came knocked at my door",
+        "He said now young man come now and go",
+        "Down to the Banks of the Ohio"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

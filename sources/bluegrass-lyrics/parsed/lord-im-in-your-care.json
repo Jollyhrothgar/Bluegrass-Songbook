@@ -1,0 +1,53 @@
+{
+  "slug": "lord-im-in-your-care",
+  "title": "Lord I\u2019m In Your Care",
+  "source_url": "https://www.bluegrasslyrics.com/song/lord-im-in-your-care/",
+  "raw_lyrics": "Oh, Lord, I\u2019m in your care\nOh, Lord, I\u2019m in your care\nYour loving arms around me\nEvil cannot harm me\nOh, Lord, I\u2019m in your care\n\nAll day long I\u2019m in your care\nAll day long I\u2019m in your care\nYour loving arms around me\nEvil cannot harm me\nLord, I\u2019m in your care\n\nWhen I was sick, I was in your care\nWhen I was sick, I was in your care\nYour loving arms around me\nEvil cannot harm me\nLord, I\u2019m in your care\n\nI\u2019m a friendless child, but I\u2019m in your care\nI\u2019m a friendless child, but I\u2019m in your care\nYour loving arms around me\nEvil cannot harm me\nLord, I\u2019m in your care",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, Lord, I\u2019m in your care",
+        "Oh, Lord, I\u2019m in your care",
+        "Your loving arms around me",
+        "Evil cannot harm me",
+        "Oh, Lord, I\u2019m in your care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All day long I\u2019m in your care",
+        "All day long I\u2019m in your care",
+        "Your loving arms around me",
+        "Evil cannot harm me",
+        "Lord, I\u2019m in your care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I was sick, I was in your care",
+        "When I was sick, I was in your care",
+        "Your loving arms around me",
+        "Evil cannot harm me",
+        "Lord, I\u2019m in your care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a friendless child, but I\u2019m in your care",
+        "I\u2019m a friendless child, but I\u2019m in your care",
+        "Your loving arms around me",
+        "Evil cannot harm me",
+        "Lord, I\u2019m in your care"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "if-thats-the-way-you-feel",
+  "title": "If That\u2019s The Way You Feel",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-thats-the-way-you-feel/",
+  "raw_lyrics": "I don\u2019t blame you for I know you want him\nThat your love for me was never real\nI could hold you but you\u2019d be unhappy\nBut it\u2019s alright if that\u2019s the way you feel\n\nI know that I will always go on caring\nAnd my feelings now I must conceal\nI still need you and I want you with me\nBut it\u2019s alright if that\u2019s the way you feel\n\nI always knew some day I would lose you\nWhen those lies about me were revealed\nIts plain to see sweetheart you believe them\nBut its alright if that\u2019s the way you feel",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t blame you for I know you want him",
+        "That your love for me was never real",
+        "I could hold you but you\u2019d be unhappy",
+        "But it\u2019s alright if that\u2019s the way you feel"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I know that I will always go on caring",
+        "And my feelings now I must conceal",
+        "I still need you and I want you with me",
+        "But it\u2019s alright if that\u2019s the way you feel"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I always knew some day I would lose you",
+        "When those lies about me were revealed",
+        "Its plain to see sweetheart you believe them",
+        "But its alright if that\u2019s the way you feel"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

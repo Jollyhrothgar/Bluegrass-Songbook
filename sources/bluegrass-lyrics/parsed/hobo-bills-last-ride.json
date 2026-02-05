@@ -1,0 +1,49 @@
+{
+  "slug": "hobo-bills-last-ride",
+  "title": "Hobo Bill\u2019s Last Ride",
+  "source_url": "https://www.bluegrasslyrics.com/song/hobo-bills-last-ride/",
+  "raw_lyrics": "Riding on an east bound freight train speeding thru the night\nHobo Bill a railroad bum was fighting for his life\nThe sadness of his eyes revealed the torture of his soul\nHe raised a weak and weary hand to brush away the cold\n\nNo warm lights flicker \u2019round him no blankets there to fold\nNothing but the howling wind and the driving rain so cold\nWhen he heard a whistle blowing in a dreary kind of way\nThe hobo seemed contented for he smiled there where he lay\n\nOutside the rain was falling on that lonely boxcare door\nBut the little form of Hobo Bill lay still upon the floor\nWhile the train sped thru the darkness and the raging storm outside\nNo-one knew that Hobo Bill was taking his last ride\n\nIt was early in the morning when they raised the Hobo\u2019s head\nThe smile still lingered on his face but Hobo Bill was dead\nThere was no mother\u2019s longing to soothe his weary soul\nFor he was just a railroad bum who died out in the cold",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Riding on an east bound freight train speeding thru the night",
+        "Hobo Bill a railroad bum was fighting for his life",
+        "The sadness of his eyes revealed the torture of his soul",
+        "He raised a weak and weary hand to brush away the cold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No warm lights flicker \u2019round him no blankets there to fold",
+        "Nothing but the howling wind and the driving rain so cold",
+        "When he heard a whistle blowing in a dreary kind of way",
+        "The hobo seemed contented for he smiled there where he lay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Outside the rain was falling on that lonely boxcare door",
+        "But the little form of Hobo Bill lay still upon the floor",
+        "While the train sped thru the darkness and the raging storm outside",
+        "No-one knew that Hobo Bill was taking his last ride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was early in the morning when they raised the Hobo\u2019s head",
+        "The smile still lingered on his face but Hobo Bill was dead",
+        "There was no mother\u2019s longing to soothe his weary soul",
+        "For he was just a railroad bum who died out in the cold"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

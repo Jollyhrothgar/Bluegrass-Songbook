@@ -1,0 +1,39 @@
+{
+  "slug": "lonesome-without-you-delmore-brothers",
+  "title": "Lonesome Without You \u2013 Delmore Brothers",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-without-you-delmore-brothers/",
+  "raw_lyrics": "I am feeling mighty weary\nAnd my heart is sad and blue\nThere is no one here to cheer me\nAnd I\u2019m lonesome without you\n\nDon\u2019t forget your little promise\nWhen you told me you\u2019d be true\nThat you\u2019d never love another\nNever leave me feeling blue\n\nI will dream when I am sleeping\nFor I long to see your face\nI will dream that you are near me\nBy my side to take your place",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am feeling mighty weary",
+        "And my heart is sad and blue",
+        "There is no one here to cheer me",
+        "And I\u2019m lonesome without you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t forget your little promise",
+        "When you told me you\u2019d be true",
+        "That you\u2019d never love another",
+        "Never leave me feeling blue"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will dream when I am sleeping",
+        "For I long to see your face",
+        "I will dream that you are near me",
+        "By my side to take your place"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

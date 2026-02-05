@@ -1,0 +1,37 @@
+{
+  "slug": "my-deceitful-heart",
+  "title": "My Deceitful Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-deceitful-heart/",
+  "raw_lyrics": "My deceitful heart keeps changing its mind\nHurting everyone but me\nEach time I fall in love it\u2019s soon that I find\nMy fickle heart longs to be free\n\nDon\u2019t fall love with me let me warn you from the start\nI\u2019m so in love with you but I know I\u2019ll break your heart\nYes I\u2019ll only break your heart\n\nGee but your wonderful and I\u2019d like to make you mine\nBut I don\u2019t think my love could ever stand the test of time\nCould ever stand the test of time",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "My deceitful heart keeps changing its mind",
+        "Hurting everyone but me",
+        "Each time I fall in love it\u2019s soon that I find",
+        "My fickle heart longs to be free"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t fall love with me let me warn you from the start",
+        "I\u2019m so in love with you but I know I\u2019ll break your heart",
+        "Yes I\u2019ll only break your heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Gee but your wonderful and I\u2019d like to make you mine",
+        "But I don\u2019t think my love could ever stand the test of time",
+        "Could ever stand the test of time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

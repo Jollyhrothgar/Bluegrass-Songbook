@@ -1,0 +1,49 @@
+{
+  "slug": "cant-you-hear-me-calling",
+  "title": "Can\u2019t You Hear Me Calling",
+  "source_url": "https://www.bluegrasslyrics.com/song/cant-you-hear-me-calling/",
+  "raw_lyrics": "The days are long the nights are lonely\nSince you left me all alone\nI worried so my little darling\nI worried so since you\u2019ve been gone\n\nSweetheart of mine can\u2019t you hear me calling\nA million times that I love you best\nI mistreated you, darling, I\u2019m sorry\nCome back to me is my request\n\nI remember dear the night we parted\nA big mistake had caused it all\nIf you come back sunshine will follow\nIf you stay away twill be my fall\n\nThe nights are long my little darling\nOh how I need your sweet embrace\nWhen I awoke the sun was shining\nI looked up and I saw your face",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The days are long the nights are lonely",
+        "Since you left me all alone",
+        "I worried so my little darling",
+        "I worried so since you\u2019ve been gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Sweetheart of mine can\u2019t you hear me calling",
+        "A million times that I love you best",
+        "I mistreated you, darling, I\u2019m sorry",
+        "Come back to me is my request"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember dear the night we parted",
+        "A big mistake had caused it all",
+        "If you come back sunshine will follow",
+        "If you stay away twill be my fall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The nights are long my little darling",
+        "Oh how I need your sweet embrace",
+        "When I awoke the sun was shining",
+        "I looked up and I saw your face"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

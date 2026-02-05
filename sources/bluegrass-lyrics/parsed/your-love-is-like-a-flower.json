@@ -1,0 +1,49 @@
+{
+  "slug": "your-love-is-like-a-flower",
+  "title": "Your Love Is Like A Flower",
+  "source_url": "https://www.bluegrasslyrics.com/song/your-love-is-like-a-flower/",
+  "raw_lyrics": "It was long, long ago in the moonlight\nWe were sitting on the banks of the stream\nWhen you whispered so sweetly, I love you\nAs the waters murmured a tune\n\nOh they tell me your love is like a flower\nIn the springtime blossoms so fair\nIn the fall then they wither away dear\nAnd they tell me that\u2019s the way of your love\n\nI remember the night, little darling\nWe were talking of days gone by\nWhen you told me you always would love me\nThat for me your love would never die\n\nIt was spring when you whispered these words dear\nThe flowers were all blooming so fair\nBut today as the snow falls around us\nI can see that your love is not there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It was long, long ago in the moonlight",
+        "We were sitting on the banks of the stream",
+        "When you whispered so sweetly, I love you",
+        "As the waters murmured a tune"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh they tell me your love is like a flower",
+        "In the springtime blossoms so fair",
+        "In the fall then they wither away dear",
+        "And they tell me that\u2019s the way of your love"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember the night, little darling",
+        "We were talking of days gone by",
+        "When you told me you always would love me",
+        "That for me your love would never die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was spring when you whispered these words dear",
+        "The flowers were all blooming so fair",
+        "But today as the snow falls around us",
+        "I can see that your love is not there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

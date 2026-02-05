@@ -1,0 +1,33 @@
+{
+  "slug": "all-i-want-is-you",
+  "title": "All I Want is You",
+  "source_url": "https://www.bluegrasslyrics.com/song/all-i-want-is-you/",
+  "raw_lyrics": "I don\u2019t need alot of money, or a mansion to behold\nDon\u2019t want a ship that sails the ocean blue\nI won\u2019t look for a hidden treasure, I found a love that\u2019s true\nThat\u2019s all that really matters now, \u2018cause all I want is you.\n\nI got a diamond ring that sparkles\nAnd a golden band that shines\nLet me place them on your finger\nSay you\u2019ll change your name to mine\nI found the greatest treasure\nI know you love me too\nDon\u2019t want money, ships or mansions now\n\u2018Cause all I want is you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t need alot of money, or a mansion to behold",
+        "Don\u2019t want a ship that sails the ocean blue",
+        "I won\u2019t look for a hidden treasure, I found a love that\u2019s true",
+        "That\u2019s all that really matters now, \u2018cause all I want is you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I got a diamond ring that sparkles",
+        "And a golden band that shines",
+        "Let me place them on your finger",
+        "Say you\u2019ll change your name to mine",
+        "I found the greatest treasure",
+        "I know you love me too",
+        "Don\u2019t want money, ships or mansions now",
+        "\u2018Cause all I want is you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

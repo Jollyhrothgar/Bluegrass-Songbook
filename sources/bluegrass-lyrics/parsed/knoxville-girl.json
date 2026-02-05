@@ -1,0 +1,59 @@
+{
+  "slug": "knoxville-girl",
+  "title": "Knoxville Girl",
+  "source_url": "https://www.bluegrasslyrics.com/song/knoxville-girl/",
+  "raw_lyrics": "I met a little girl in Knoxville\nA town we all know well\nAnd every Sunday evening\nOut in her home I\u2019d dwell\n\nWe went to take an evening walk\nAbout a mile from town\nI picked a stick up off the ground\nAnd knocked that fair girl down\n\nShe fell down on her bended knees\nFor mercy she did cry\nOh Willie Dear don\u2019t kill me here\nI\u2019m not prepared to die\n\nShe never spoke another word\nI only beat her more\nUntil the ground around me\nWith her blood did flow\n\nI took her by her golden curls\nAnd dragged her round and round\nThrowing her into the river\nThat flows through Knoxville Town",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I met a little girl in Knoxville",
+        "A town we all know well",
+        "And every Sunday evening",
+        "Out in her home I\u2019d dwell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We went to take an evening walk",
+        "About a mile from town",
+        "I picked a stick up off the ground",
+        "And knocked that fair girl down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She fell down on her bended knees",
+        "For mercy she did cry",
+        "Oh Willie Dear don\u2019t kill me here",
+        "I\u2019m not prepared to die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She never spoke another word",
+        "I only beat her more",
+        "Until the ground around me",
+        "With her blood did flow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I took her by her golden curls",
+        "And dragged her round and round",
+        "Throwing her into the river",
+        "That flows through Knoxville Town"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

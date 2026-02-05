@@ -1,0 +1,65 @@
+{
+  "slug": "sitting-on-top-of-the-world",
+  "title": "Sitting On Top Of The World",
+  "source_url": "https://www.bluegrasslyrics.com/song/sitting-on-top-of-the-world/",
+  "raw_lyrics": "It was in the spring one sunny day\nMy good gal left me Lord she went away\n\nAnd now she\u2019s gone but I don\u2019t worry\n\u2018Cause I\u2019m sitting on top of the world\n\nShe called me up from down in El Paso\nSaid come back, daddy, Lord I need you so\n\nAshes to ashes, dust to dust\nShow me a woman a man can trust\n\nMississippi River, long, deep and wide\nThe woman I\u2019m loving is on the other side\n\nYou don\u2019t like my peaches, don\u2019t you shake my tree\nGet out of my orchard, let my peaches be\n\nDon\u2019t you come here running, holding out your hand\nI\u2019ll get me a woman like you got your man",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It was in the spring one sunny day",
+        "My good gal left me Lord she went away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And now she\u2019s gone but I don\u2019t worry",
+        "\u2018Cause I\u2019m sitting on top of the world"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She called me up from down in El Paso",
+        "Said come back, daddy, Lord I need you so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ashes to ashes, dust to dust",
+        "Show me a woman a man can trust"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mississippi River, long, deep and wide",
+        "The woman I\u2019m loving is on the other side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You don\u2019t like my peaches, don\u2019t you shake my tree",
+        "Get out of my orchard, let my peaches be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t you come here running, holding out your hand",
+        "I\u2019ll get me a woman like you got your man"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

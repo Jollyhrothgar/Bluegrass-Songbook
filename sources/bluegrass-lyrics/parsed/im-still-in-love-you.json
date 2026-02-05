@@ -1,0 +1,79 @@
+{
+  "slug": "im-still-in-love-you",
+  "title": "I\u2019m Still In Love You",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-still-in-love-you/",
+  "raw_lyrics": "I didn\u2019t know\nYou\u2019d be in this place tonight\nThen again I thought you might\nNow I don\u2019t know what to do\n\nDoes it show\nWhen my poor heart skips a beat\nEach and every time we meet\n\u2018Cause I\u2019m still in love with you\n\nThere you are\nRight across the room from me\nJust the way I knew you\u2019d be\nLookin\u2019 lonesome wild and blue\n\nI\u2019m alright so far\nJust as long as you don\u2019t speak\nThat\u2019s what makes my knees go weak\n\u2018Cause I\u2019m still in love with you\n\nI\u2019ve done everything I know\nTo get you off my mind\nBut sometimes I can\u2019t help but hope\nThat you won\u2019t walk away this time\n\nThen I\nWouldn\u2019t have to watch you go\nWouldn\u2019t have to miss you so\n\u2018Cause I\u2019m still in love with you\n\nIf I knew what I know now\nI\u2019d never let you leave\nI\u2019d make it up to you somehow\nAnd darlin\u2019 you\u2019d come back to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I didn\u2019t know",
+        "You\u2019d be in this place tonight",
+        "Then again I thought you might",
+        "Now I don\u2019t know what to do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Does it show",
+        "When my poor heart skips a beat",
+        "Each and every time we meet",
+        "\u2018Cause I\u2019m still in love with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There you are",
+        "Right across the room from me",
+        "Just the way I knew you\u2019d be",
+        "Lookin\u2019 lonesome wild and blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m alright so far",
+        "Just as long as you don\u2019t speak",
+        "That\u2019s what makes my knees go weak",
+        "\u2018Cause I\u2019m still in love with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve done everything I know",
+        "To get you off my mind",
+        "But sometimes I can\u2019t help but hope",
+        "That you won\u2019t walk away this time"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then I",
+        "Wouldn\u2019t have to watch you go",
+        "Wouldn\u2019t have to miss you so",
+        "\u2018Cause I\u2019m still in love with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I knew what I know now",
+        "I\u2019d never let you leave",
+        "I\u2019d make it up to you somehow",
+        "And darlin\u2019 you\u2019d come back to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

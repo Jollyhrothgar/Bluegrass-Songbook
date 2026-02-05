@@ -1,0 +1,45 @@
+{
+  "slug": "corina-corina",
+  "title": "Corina Corina",
+  "source_url": "https://www.bluegrasslyrics.com/song/corina-corina/",
+  "raw_lyrics": "Corina Corina where you been so long\nCorina Corina where you been so long\nI ain\u2019t had no lovin\u2019 since you\u2019re been gone.\n\nI love Corina tell the world I do\nI love Corina tell the world I do\nJust a little more lovin\u2019 let your heart be true\n\nCorina Corina what\u2019s the matter now\nCorina Corina what\u2019s the matter now\nYou won\u2019t write me no letters you don\u2019t love me no how\n\nGoodbye Corina it\u2019s fare you well\nGoodbye Corina it\u2019s fare you well\nWhen I\u2019ll get back any one can tell.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Corina Corina where you been so long",
+        "Corina Corina where you been so long",
+        "I ain\u2019t had no lovin\u2019 since you\u2019re been gone."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I love Corina tell the world I do",
+        "I love Corina tell the world I do",
+        "Just a little more lovin\u2019 let your heart be true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Corina Corina what\u2019s the matter now",
+        "Corina Corina what\u2019s the matter now",
+        "You won\u2019t write me no letters you don\u2019t love me no how"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye Corina it\u2019s fare you well",
+        "Goodbye Corina it\u2019s fare you well",
+        "When I\u2019ll get back any one can tell."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

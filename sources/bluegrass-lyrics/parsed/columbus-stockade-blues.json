@@ -1,0 +1,49 @@
+{
+  "slug": "columbus-stockade-blues",
+  "title": "Columbus Stockade Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/columbus-stockade-blues/",
+  "raw_lyrics": "Way down in Columbus, Georgia\nWant to be back in Tennessee\nWay down in Columbus Stockade\nFriends all turned their backs on me\n\nGo and leave me if you wish to\nNever let it cross your mind\nIf in your heart you love another\nLeave me little darling, I don\u2019t mind\n\nLast night as I lay sleeping\nI dreamt I held you in my arms\nWhen I awoke I was mistaken\nI was peering through the bars\n\nMany a night with you I\u2019ve rambled\nMany an hour with you I\u2019ve spent\nThought I had your heart forever\nNow I find it\u2019s only lent",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way down in Columbus, Georgia",
+        "Want to be back in Tennessee",
+        "Way down in Columbus Stockade",
+        "Friends all turned their backs on me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Go and leave me if you wish to",
+        "Never let it cross your mind",
+        "If in your heart you love another",
+        "Leave me little darling, I don\u2019t mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night as I lay sleeping",
+        "I dreamt I held you in my arms",
+        "When I awoke I was mistaken",
+        "I was peering through the bars"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many a night with you I\u2019ve rambled",
+        "Many an hour with you I\u2019ve spent",
+        "Thought I had your heart forever",
+        "Now I find it\u2019s only lent"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

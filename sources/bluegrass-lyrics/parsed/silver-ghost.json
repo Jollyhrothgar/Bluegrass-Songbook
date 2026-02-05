@@ -1,0 +1,84 @@
+{
+  "slug": "silver-ghost",
+  "title": "Silver Ghost",
+  "source_url": "https://www.bluegrasslyrics.com/song/silver-ghost/",
+  "raw_lyrics": "On one cold and rainy night I was sitting in the light\nOf my switchman\u2019s shack on my post on the mountain\nThe storm was pretty bad and the telegraph was dead\nAnd it was just eleven hours \u2019til the dawning.\n\nThen much to my surprise the telegraph jumped back to life\nAs I read the code I thought could this be true\nA train was on it\u2019s way headed up the mountain grade\nBut she didn\u2019t have a captain or a crew.\n\nAt the other switch they tried to put her on the mountainside\nBut she kept on coming up the mountain grade\nI quickly doused the light to try to see into the night\nMaybe I could spot her headlight in the rain.\n\nShe was pounding down the road I could hear her whistle blow\nAnd I thought lord what a high and mournful sound\nThen the telegraph beganThere\u2019s a cave-in at the mine\nAnd a hundred men are buried beneath the ground\n.\nBut Lord she\u2019s coming now I see around the bend and straight at me\nAnd her boiler\u2019s glowing red as coal in hell\nThe headlight\u2019s switching wide searching all the mountainside\nBut the only sound she\u2019s making is the wail\n\nThen I recognize the train by the number and the name\nIt\u2019s the Miner\u2019s Silver Ghost Old 41\nThen she vanished up the track by the lonely switchman\u2019s shack\nLike a mother who is looking for her son\n\nNow I recall the story of the train that went to glory\nOver fifty years ago on this same night\nShe was stealing for the cave-in there were men that needed saving\nBut she missed the curve and trestle near the mine.\n\nNow every now and then you\u2019ll hear her whistle on the wind\nIf the mountain slides and many men are lost\nIt\u2019s the high and lonely wailing searching up and down the mountain\nThe train they call the call the Miner\u2019s Silver Ghost",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On one cold and rainy night I was sitting in the light",
+        "Of my switchman\u2019s shack on my post on the mountain",
+        "The storm was pretty bad and the telegraph was dead",
+        "And it was just eleven hours \u2019til the dawning."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then much to my surprise the telegraph jumped back to life",
+        "As I read the code I thought could this be true",
+        "A train was on it\u2019s way headed up the mountain grade",
+        "But she didn\u2019t have a captain or a crew."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "At the other switch they tried to put her on the mountainside",
+        "But she kept on coming up the mountain grade",
+        "I quickly doused the light to try to see into the night",
+        "Maybe I could spot her headlight in the rain."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was pounding down the road I could hear her whistle blow",
+        "And I thought lord what a high and mournful sound",
+        "Then the telegraph beganThere\u2019s a cave-in at the mine",
+        "And a hundred men are buried beneath the ground",
+        ".",
+        "But Lord she\u2019s coming now I see around the bend and straight at me",
+        "And her boiler\u2019s glowing red as coal in hell",
+        "The headlight\u2019s switching wide searching all the mountainside",
+        "But the only sound she\u2019s making is the wail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then I recognize the train by the number and the name",
+        "It\u2019s the Miner\u2019s Silver Ghost Old 41",
+        "Then she vanished up the track by the lonely switchman\u2019s shack",
+        "Like a mother who is looking for her son"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I recall the story of the train that went to glory",
+        "Over fifty years ago on this same night",
+        "She was stealing for the cave-in there were men that needed saving",
+        "But she missed the curve and trestle near the mine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now every now and then you\u2019ll hear her whistle on the wind",
+        "If the mountain slides and many men are lost",
+        "It\u2019s the high and lonely wailing searching up and down the mountain",
+        "The train they call the call the Miner\u2019s Silver Ghost"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

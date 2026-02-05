@@ -1,0 +1,39 @@
+{
+  "slug": "the-bird-i-held-in-my-hand",
+  "title": "The Bird I Held In My Hand",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-bird-i-held-in-my-hand/",
+  "raw_lyrics": "If you look out your window as the sun\u2019s goin\u2019 down\nI\u2019ll be there by the side of the road\nAnd I\u2019ll ride you away from the dirty ol\u2019 town\nAn ne\u2019er again leave you alone\n\nFor you were the bird that I held in my hand\nTil I learned to fly on my own\nYou\u2019re a garden in this god forsaken land\nAnd the only true love I have known\n\nThe morning was frozen the sky was still dark\nWhen I last laid eyes upon you\nI know the ache you have known in your heart\nAnd darling I have felt it too",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If you look out your window as the sun\u2019s goin\u2019 down",
+        "I\u2019ll be there by the side of the road",
+        "And I\u2019ll ride you away from the dirty ol\u2019 town",
+        "An ne\u2019er again leave you alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For you were the bird that I held in my hand",
+        "Til I learned to fly on my own",
+        "You\u2019re a garden in this god forsaken land",
+        "And the only true love I have known"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The morning was frozen the sky was still dark",
+        "When I last laid eyes upon you",
+        "I know the ache you have known in your heart",
+        "And darling I have felt it too"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "dont-you-call-my-name",
+  "title": "Don\u2019t You Call My Name",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-you-call-my-name/",
+  "raw_lyrics": "You ran around you had your good times\nYou said you loved me just the same\nWhen the chips are down and you get lonely\nYou come running back to me calling my name.\n\nDon\u2019t you call my name \u2019cause I won\u2019t answer\nDon\u2019t you call my name \u2019cause I won\u2019t be there\nYou cheated on me dear for your last time\nDon\u2019t you call my name little girl \u2019cause I don\u2019t care.\n\nI used to cry and wait for you dear\nWhile you played your cheatin\u2019 game\nIt\u2019s your turn now just keep on cryin\u2019\nCan\u2019t hear you cry little girl\ndon\u2019t you call my name.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You ran around you had your good times",
+        "You said you loved me just the same",
+        "When the chips are down and you get lonely",
+        "You come running back to me calling my name."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t you call my name \u2019cause I won\u2019t answer",
+        "Don\u2019t you call my name \u2019cause I won\u2019t be there",
+        "You cheated on me dear for your last time",
+        "Don\u2019t you call my name little girl \u2019cause I don\u2019t care."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I used to cry and wait for you dear",
+        "While you played your cheatin\u2019 game",
+        "It\u2019s your turn now just keep on cryin\u2019",
+        "Can\u2019t hear you cry little girl",
+        "don\u2019t you call my name."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "please-dont-wake-me",
+  "title": "Please Don\u2019t Wake Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/please-dont-wake-me/",
+  "raw_lyrics": "Please don\u2019t wake me tonight while I\u2019m sleepin\nFor I might have the same dream again\nLet me own the whole world for just a moment\nWhile I hold you in my arms once again\n\nLast night I had a dream about you darlin\nHappy tears filled my eyes when I held you\nWhen I awoke and realized I was dreamin\nHappy tears that filled my eyes had turned to blue\n\nI know that\u2019s the only way I can hold you\nI realize that you belong to someone new\nLet me dream and think that you are still mine dear\nFor you know that I\u2019ve always worshiped you",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Please don\u2019t wake me tonight while I\u2019m sleepin",
+        "For I might have the same dream again",
+        "Let me own the whole world for just a moment",
+        "While I hold you in my arms once again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night I had a dream about you darlin",
+        "Happy tears filled my eyes when I held you",
+        "When I awoke and realized I was dreamin",
+        "Happy tears that filled my eyes had turned to blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know that\u2019s the only way I can hold you",
+        "I realize that you belong to someone new",
+        "Let me dream and think that you are still mine dear",
+        "For you know that I\u2019ve always worshiped you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

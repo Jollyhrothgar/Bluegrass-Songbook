@@ -1,0 +1,69 @@
+{
+  "slug": "no-more-the-moon-shines-on-lorena",
+  "title": "No More The Moon Shines On Lorena",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-more-the-moon-shines-on-lorena/",
+  "raw_lyrics": "Way down upon the old plantation\nOld Massey used to own me as a slave\nHe had a yeller gal he called Lorena\nAnd we courted where the wild bananas waved\n\nFor long years there we courted\nAnd we were as happy as one\nAnd my hard work for did Massey\nAnd the happiness of life had just begun\n\nNo more the moon shines on Lorena\nAs we\u2019d sit and watch the coons among the corn\nAnd the possums laying on the wild bananas\nAnd the old owl a hootin like a horn\n\nOne day I called to see my dear Lorena\nI thought she would meet me at the gate\nBut they took her away to old Virginy\nAnd left me to mourn for her fate\n\nFor years I have longed to see her\nAnd the thoughts of her was ever in my head\nOne day Massey read me a letter\nTelling me the Lorena she was dead\n\nBut I know that her soul has gone to heaven\nAnd there she is ever free from pain\nAnd to her a brighter crown is given\nAnd no more she will wear the darkie\u2019s chain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way down upon the old plantation",
+        "Old Massey used to own me as a slave",
+        "He had a yeller gal he called Lorena",
+        "And we courted where the wild bananas waved"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For long years there we courted",
+        "And we were as happy as one",
+        "And my hard work for did Massey",
+        "And the happiness of life had just begun"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "No more the moon shines on Lorena",
+        "As we\u2019d sit and watch the coons among the corn",
+        "And the possums laying on the wild bananas",
+        "And the old owl a hootin like a horn"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One day I called to see my dear Lorena",
+        "I thought she would meet me at the gate",
+        "But they took her away to old Virginy",
+        "And left me to mourn for her fate"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For years I have longed to see her",
+        "And the thoughts of her was ever in my head",
+        "One day Massey read me a letter",
+        "Telling me the Lorena she was dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I know that her soul has gone to heaven",
+        "And there she is ever free from pain",
+        "And to her a brighter crown is given",
+        "And no more she will wear the darkie\u2019s chain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

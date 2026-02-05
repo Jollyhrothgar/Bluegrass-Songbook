@@ -1,0 +1,50 @@
+{
+  "slug": "old-devils-dream",
+  "title": "Old Devil\u2019s Dream",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-devils-dream/",
+  "raw_lyrics": "Young devils find love most every night\nThey lie with their dreams and their arms til daylight\nThey use love like whiskey, their cares to dissolve\nTo charm them and warm them but, not to involve\n\nI was a young devil sturdy and proud\nI used to laugh often, I used to laugh loud\nI laughed when you told me goodbye that last time\nI didn\u2019t know how you\u2019d linger on this old devil\u2019s mind\n\nOld devils dream, all alone it seems\nOld devils dream all alone\nWhen their devilment is done\nTheir wildest races run\nOld devils dream all alone\n\nYoung devils find even they must grow old\nLove that was always so warm has grown cold\nTheir sweet things have vanished and sweet dreams have flown\nSleep when it comes finds them sleeping alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Young devils find love most every night",
+        "They lie with their dreams and their arms til daylight",
+        "They use love like whiskey, their cares to dissolve",
+        "To charm them and warm them but, not to involve"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was a young devil sturdy and proud",
+        "I used to laugh often, I used to laugh loud",
+        "I laughed when you told me goodbye that last time",
+        "I didn\u2019t know how you\u2019d linger on this old devil\u2019s mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Old devils dream, all alone it seems",
+        "Old devils dream all alone",
+        "When their devilment is done",
+        "Their wildest races run",
+        "Old devils dream all alone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Young devils find even they must grow old",
+        "Love that was always so warm has grown cold",
+        "Their sweet things have vanished and sweet dreams have flown",
+        "Sleep when it comes finds them sleeping alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

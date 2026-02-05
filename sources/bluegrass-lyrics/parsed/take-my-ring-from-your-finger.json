@@ -1,0 +1,49 @@
+{
+  "slug": "take-my-ring-from-your-finger",
+  "title": "Take My Ring From Your Finger",
+  "source_url": "https://www.bluegrasslyrics.com/song/take-my-ring-from-your-finger/",
+  "raw_lyrics": "I\u2019m happy now at last you are smiling\nAnd I\u2019m glad I have found you in his arms\nFor no longer I\u2019ll keep you unhappy\nAnd I\u2019ll vow to never do you any harm\n\nTake my ring from your finger\nSet me free as a dove\nYou don\u2019t need me no longer\nYou have found the one you love\n\nSo my heart will likely break when I leave you\nWhen my position at last I can see\nWhen I found you in his arms you were crying\nAnd that\u2019s more than you ever did for me\n\nYou can have our little home in the mountains\nWith the honeysuckles  twining round the door\nWhen he carries you over the threshold\nI hope that you\u2019ll be happy evermore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m happy now at last you are smiling",
+        "And I\u2019m glad I have found you in his arms",
+        "For no longer I\u2019ll keep you unhappy",
+        "And I\u2019ll vow to never do you any harm"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take my ring from your finger",
+        "Set me free as a dove",
+        "You don\u2019t need me no longer",
+        "You have found the one you love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So my heart will likely break when I leave you",
+        "When my position at last I can see",
+        "When I found you in his arms you were crying",
+        "And that\u2019s more than you ever did for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can have our little home in the mountains",
+        "With the honeysuckles  twining round the door",
+        "When he carries you over the threshold",
+        "I hope that you\u2019ll be happy evermore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

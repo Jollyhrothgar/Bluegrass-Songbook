@@ -1,0 +1,79 @@
+{
+  "slug": "forsaken-love",
+  "title": "Forsaken Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/forsaken-love/",
+  "raw_lyrics": "They stood in the moonlight beside the gate\nGoodbye my darling I know you\u2019ll wait\nHe sees her weeping and smile through her tears\nSaying I\u2019ve been true love through these long years\n\nFor on tomorrow at the break of day\nHe was to journey far far away\nHe held her closer his promised bride\nAnd to her questions these words replied\n\nI\u2019ve loved you always yes I\u2019ve been true\nMy heart shall ever beloved for you\nO darling believe me far over the sea\nThrough life or death so faithful I\u2019ll be\n\nOne year past by he\u2019s coming home\nHis pilgrimage over no longer to roam\nAnd smiling he thinks of her shinning eyes\nShinning with welcoming glad surprise\n\nA dandy letter he takes from his breast\nTo which his extended lips were pressed\nAnd reading once more by the warming light\nThese words he had spoken to her that night\n\nOnce more he seeks the old garden gate\nBut he rides a land alas it\u2019s too late\nThe wedding is over the knot is tied\nHe finds his darling another\u2019s bride\n\nAnd later they found him there on the grass\nA pistol near by tells what had passed\nA crop of letters that explained the deed\nAnd in the pale moonlight these words did read",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "They stood in the moonlight beside the gate",
+        "Goodbye my darling I know you\u2019ll wait",
+        "He sees her weeping and smile through her tears",
+        "Saying I\u2019ve been true love through these long years"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For on tomorrow at the break of day",
+        "He was to journey far far away",
+        "He held her closer his promised bride",
+        "And to her questions these words replied"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve loved you always yes I\u2019ve been true",
+        "My heart shall ever beloved for you",
+        "O darling believe me far over the sea",
+        "Through life or death so faithful I\u2019ll be"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One year past by he\u2019s coming home",
+        "His pilgrimage over no longer to roam",
+        "And smiling he thinks of her shinning eyes",
+        "Shinning with welcoming glad surprise"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A dandy letter he takes from his breast",
+        "To which his extended lips were pressed",
+        "And reading once more by the warming light",
+        "These words he had spoken to her that night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once more he seeks the old garden gate",
+        "But he rides a land alas it\u2019s too late",
+        "The wedding is over the knot is tied",
+        "He finds his darling another\u2019s bride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And later they found him there on the grass",
+        "A pistol near by tells what had passed",
+        "A crop of letters that explained the deed",
+        "And in the pale moonlight these words did read"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "answer-to-weeping-willow",
+  "title": "Answer To Weeping Willow",
+  "source_url": "https://www.bluegrasslyrics.com/song/answer-to-weeping-willow/",
+  "raw_lyrics": "My love is dead and buried yonder\nBeneath the weeping willow tree\nWhat wrecks my life and makes me wonder\nIs because she died for me\n\nThen lay me down in death beside her\nFor she\u2019s all this life to me\nThat I may join and e\u2019er caress her\nIn a land beyond the sea\n\nYes she died before I told her\nThat I loved her true and kind\nAnd that I did not mean to fool her\nBut she left me to repine\n\nGod shall I ever get forgiveness\nFor the deeds that I have done\nAnd meet up yonder her sweet charming\nFor I know she did me some",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My love is dead and buried yonder",
+        "Beneath the weeping willow tree",
+        "What wrecks my life and makes me wonder",
+        "Is because she died for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Then lay me down in death beside her",
+        "For she\u2019s all this life to me",
+        "That I may join and e\u2019er caress her",
+        "In a land beyond the sea"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes she died before I told her",
+        "That I loved her true and kind",
+        "And that I did not mean to fool her",
+        "But she left me to repine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God shall I ever get forgiveness",
+        "For the deeds that I have done",
+        "And meet up yonder her sweet charming",
+        "For I know she did me some"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

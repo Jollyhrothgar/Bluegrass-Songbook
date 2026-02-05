@@ -1,0 +1,39 @@
+{
+  "slug": "hoping-that-youre-hoping",
+  "title": "Hoping That You\u2019re Hoping",
+  "source_url": "https://www.bluegrasslyrics.com/song/hoping-that-youre-hoping/",
+  "raw_lyrics": "Every minute of the day I\u2019m thinking about you\nAnd without you life is just a crazy dream\nEvery breath I take I\u2019m hoping that you\u2019re hoping\nThat I\u2019m hoping you\u2019ll return to me\n\nCan you remember dear when you said\nIf I ever stopped loving you you\u2019d rather be dead\nWell dear I don\u2019t know what on earth changed your mind\nNo matter whose holding you your heart is still mine\n\nEvery time I think about the way you cuddled up and spuddled up\nAnd thrilled me with your charm\nI get dizzy in the head and when it\u2019s seeming that I\u2019m dreaming\nI\u2019m locked in your loving arms",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Every minute of the day I\u2019m thinking about you",
+        "And without you life is just a crazy dream",
+        "Every breath I take I\u2019m hoping that you\u2019re hoping",
+        "That I\u2019m hoping you\u2019ll return to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Can you remember dear when you said",
+        "If I ever stopped loving you you\u2019d rather be dead",
+        "Well dear I don\u2019t know what on earth changed your mind",
+        "No matter whose holding you your heart is still mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every time I think about the way you cuddled up and spuddled up",
+        "And thrilled me with your charm",
+        "I get dizzy in the head and when it\u2019s seeming that I\u2019m dreaming",
+        "I\u2019m locked in your loving arms"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

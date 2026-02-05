@@ -1,0 +1,49 @@
+{
+  "slug": "grave-in-the-valley",
+  "title": "Grave In The Valley",
+  "source_url": "https://www.bluegrasslyrics.com/song/grave-in-the-valley/",
+  "raw_lyrics": "There\u2019s a grave in the bend of the valley\nWhere the shadows sweep over so still\nThere my darling is sleeping so peaceful\nIn a grave at the foot of the hill\n\nOn the night when I\u2019m lonely and thinkin\u2019\nOf my sweetheart who\u2019s now gone away\nI go back to the place where she\u2019s sleeping\nI\u2019m just longing to see her some day\n\nGod gave us the joy that we wished for\nJust a few nights together to be\nThen he carried her to heaven\u2019s bright portal\nThere where she will be waiting for me\n\nFor I often go back to the valley\nWhere the willows weep over her head\nThere to be just once more with my darling\nBy her side though I know she is dead",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a grave in the bend of the valley",
+        "Where the shadows sweep over so still",
+        "There my darling is sleeping so peaceful",
+        "In a grave at the foot of the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On the night when I\u2019m lonely and thinkin\u2019",
+        "Of my sweetheart who\u2019s now gone away",
+        "I go back to the place where she\u2019s sleeping",
+        "I\u2019m just longing to see her some day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God gave us the joy that we wished for",
+        "Just a few nights together to be",
+        "Then he carried her to heaven\u2019s bright portal",
+        "There where she will be waiting for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For I often go back to the valley",
+        "Where the willows weep over her head",
+        "There to be just once more with my darling",
+        "By her side though I know she is dead"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "colleen-malone",
+  "title": "Colleen Malone",
+  "source_url": "https://www.bluegrasslyrics.com/song/colleen-malone/",
+  "raw_lyrics": "It\u2019s been ten years and three since I first went to sea\nSince I sailed from old Ireland and home\nBut those hills lush and green were a part of my dreams\nWhen I dreamed of my Colleen Malone\n\nOn the day I returned to my sorrow I learned\nThat the angels had called her away\nTo a grave on a hill overlooking the mill\nThat\u2019s the place where she\u2019s sleeping today\n\nAs the soft breezes blow through the meadow I go\nPast the mill with the moss covered stone\nUp the pathway I climb through the woods and the vines\nTo be with my Colleen Malone\n\nShe was faithful each day as I sailed far away\nThere was no one but me that she loved\nI remember those eyes soft and blue as the skies\nAnd her heart was as pure as a dove\n\nAll the years of my life I will not take a wife\nI will live in this valley above\nPlanting flowers around in this soft gentle ground\nThat is holding my Colleen Malone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s been ten years and three since I first went to sea",
+        "Since I sailed from old Ireland and home",
+        "But those hills lush and green were a part of my dreams",
+        "When I dreamed of my Colleen Malone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On the day I returned to my sorrow I learned",
+        "That the angels had called her away",
+        "To a grave on a hill overlooking the mill",
+        "That\u2019s the place where she\u2019s sleeping today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "As the soft breezes blow through the meadow I go",
+        "Past the mill with the moss covered stone",
+        "Up the pathway I climb through the woods and the vines",
+        "To be with my Colleen Malone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was faithful each day as I sailed far away",
+        "There was no one but me that she loved",
+        "I remember those eyes soft and blue as the skies",
+        "And her heart was as pure as a dove"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All the years of my life I will not take a wife",
+        "I will live in this valley above",
+        "Planting flowers around in this soft gentle ground",
+        "That is holding my Colleen Malone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

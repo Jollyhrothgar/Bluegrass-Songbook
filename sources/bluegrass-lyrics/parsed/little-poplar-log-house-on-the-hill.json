@@ -1,0 +1,45 @@
+{
+  "slug": "little-poplar-log-house-on-the-hill",
+  "title": "Little Poplar Log House On The Hill",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-poplar-log-house-on-the-hill/",
+  "raw_lyrics": "Now kind friends I want to tell you\nOf a little country home\nIt is made of poplar logs upon the hill\nThat\u2019s where poppa died and left us\nWhen we were very young\nAnd momma kept us settled on he hill\n\nWhen our days work on the farm was done\nShe\u2019d would gather us around\nShe would have us get down on our little knees\nShe would pray for God to keep us\nThrough the night until next\nIn our little old poplar log house on the hill\n\nOur father died a good man\nWhich we all would like to do\nAnd I\u2019m going there to see him some old day\nWhen I\u2019m  get through with my singing\nLay my guitar by my side\nLord I want to play in heaven when I die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now kind friends I want to tell you",
+        "Of a little country home",
+        "It is made of poplar logs upon the hill",
+        "That\u2019s where poppa died and left us",
+        "When we were very young",
+        "And momma kept us settled on he hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When our days work on the farm was done",
+        "She\u2019d would gather us around",
+        "She would have us get down on our little knees",
+        "She would pray for God to keep us",
+        "Through the night until next",
+        "In our little old poplar log house on the hill"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Our father died a good man",
+        "Which we all would like to do",
+        "And I\u2019m going there to see him some old day",
+        "When I\u2019m  get through with my singing",
+        "Lay my guitar by my side",
+        "Lord I want to play in heaven when I die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

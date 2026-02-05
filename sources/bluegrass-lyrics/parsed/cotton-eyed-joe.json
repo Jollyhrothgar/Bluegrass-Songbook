@@ -1,0 +1,63 @@
+{
+  "slug": "cotton-eyed-joe",
+  "title": "Cotton Eyed Joe",
+  "source_url": "https://www.bluegrasslyrics.com/song/cotton-eyed-joe/",
+  "raw_lyrics": "Do you remember Long time ago\nDaddy worked a man called Cotton Eyed Joe\nDaddy worked a man called Cotton Eyed Joe\n\nI could have been married long time ago\nIf it hadn\u2019t \u2018a been for Cotton Eyed Joe\nIf it hadn\u2019t \u2018a been for Cotton Eyed Joe\n\nOld bull fiddle and a shoe-string bow\nWouldn\u2019t play nothin\u2019 but Cotton Eyed Joe\nWouldn\u2019t play nothin\u2019 but Cotton Eyed Joe\n\nPlay it fast or play it slow\nDidn\u2019t play nothing but Cotton Eyed Joe\nDidn\u2019t play nothing but Cotton Eyed Joe\n\nWhere do you come from where do you go\nWhere do you come from Cotton Eyed Joe\nWhere do you come from Cotton Eyed Joe\n\nCome for to see you come for to sing\nCome for to show you my diamond ring\nCome for to show you my diamond ring",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Do you remember Long time ago",
+        "Daddy worked a man called Cotton Eyed Joe",
+        "Daddy worked a man called Cotton Eyed Joe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I could have been married long time ago",
+        "If it hadn\u2019t \u2018a been for Cotton Eyed Joe",
+        "If it hadn\u2019t \u2018a been for Cotton Eyed Joe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Old bull fiddle and a shoe-string bow",
+        "Wouldn\u2019t play nothin\u2019 but Cotton Eyed Joe",
+        "Wouldn\u2019t play nothin\u2019 but Cotton Eyed Joe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Play it fast or play it slow",
+        "Didn\u2019t play nothing but Cotton Eyed Joe",
+        "Didn\u2019t play nothing but Cotton Eyed Joe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where do you come from where do you go",
+        "Where do you come from Cotton Eyed Joe",
+        "Where do you come from Cotton Eyed Joe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come for to see you come for to sing",
+        "Come for to show you my diamond ring",
+        "Come for to show you my diamond ring"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

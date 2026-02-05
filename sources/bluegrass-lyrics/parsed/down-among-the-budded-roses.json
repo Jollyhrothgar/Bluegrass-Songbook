@@ -1,0 +1,89 @@
+{
+  "slug": "down-among-the-budded-roses",
+  "title": "Down Among The Budded Roses",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-among-the-budded-roses/",
+  "raw_lyrics": "Little sweetheart we have parted\nfrom each other we must go\nMany miles may separate us\nin this world of care and woe\n\nBut I can\u2019t forget the promise\nthat you made me in the lane\nWhen you said we\u2019d be together\nwhen the roses bloom again\n\nDown among the budded roses\nI am nothing but a stem\nI have parted from my darling\nnever more to meet again\n\nBut I treasure dear your promise\nthat you\u2019ll meet me in the lane\nWhere we\u2019ll always be together;\nwhen the roses bloom again\n\nNow this parting gives me sorrow\nand it almost breaks my heart\nTell me darling will you love me\nwhen we meet no more to part\n\nOr will this parting be forever\nwill there be no coming day\nWhen our hearts will be united\nand all sorrows pass away\n\nDarling meet me up in Heaven\nthat\u2019s my true and earnest prayer\nIf you love me here on earth dear\nthen I\u2019m sure you\u2019ll love me there\n\nThere our hearts will be united\nfree from every pain and care\nIn the land of life eternal\nin that city bright and fair",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Little sweetheart we have parted",
+        "from each other we must go",
+        "Many miles may separate us",
+        "in this world of care and woe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I can\u2019t forget the promise",
+        "that you made me in the lane",
+        "When you said we\u2019d be together",
+        "when the roses bloom again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Down among the budded roses",
+        "I am nothing but a stem",
+        "I have parted from my darling",
+        "never more to meet again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I treasure dear your promise",
+        "that you\u2019ll meet me in the lane",
+        "Where we\u2019ll always be together;",
+        "when the roses bloom again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now this parting gives me sorrow",
+        "and it almost breaks my heart",
+        "Tell me darling will you love me",
+        "when we meet no more to part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Or will this parting be forever",
+        "will there be no coming day",
+        "When our hearts will be united",
+        "and all sorrows pass away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darling meet me up in Heaven",
+        "that\u2019s my true and earnest prayer",
+        "If you love me here on earth dear",
+        "then I\u2019m sure you\u2019ll love me there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There our hearts will be united",
+        "free from every pain and care",
+        "In the land of life eternal",
+        "in that city bright and fair"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

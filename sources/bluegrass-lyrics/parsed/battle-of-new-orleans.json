@@ -1,0 +1,69 @@
+{
+  "slug": "battle-of-new-orleans",
+  "title": "Battle Of New Orleans",
+  "source_url": "https://www.bluegrasslyrics.com/song/battle-of-new-orleans/",
+  "raw_lyrics": "In 1814 we took a little trip\nAlong with Colonel Jackson down the mighty Mississipp\u2019\nWe took a little bacon and we took a little beans\nAnd we caught the bloody British in the town of New Orleans\n\nWe fired our guns and the British kept a coming\nThere wasn\u2019t nigh as many as there was a while ago\nWe fired once more and they began to running\nDown the Mississippi to the Gulf of Mexico\n\nWe looked down the river and we seen the British come\nAnd there must have been a hundred of them beating on the drums\nThey stepped so high and they made their bugles ring\nWe stood behind our cotton bales and didn\u2019t say a thing\n\nOld Hickory said we could take \u2019em by suprise\nIf we didn\u2019t fire a musket \u2019til we looked \u2019em in the eyes\nWe held our fire \u2019til we seen their faces well\nWe opened up our squirrel guns and really gave \u2019em\n\nWell they ran through the briars and they ran through the brambles\nAnd they ran through the bushes where the rabbits couldn\u2019t go\nThey ran so fast the hounds couldn\u2019t catch \u2019em\nOn down the Mississippi to the Gulf of Mexico\n\nWe fired our cannon \u2019til the barrel melted down\nThen we grabbed an alligator and we fought another round\nWe filled his head with cannonballs and powdered his behind\nAnd when we touched the powder off the gator lost his mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In 1814 we took a little trip",
+        "Along with Colonel Jackson down the mighty Mississipp\u2019",
+        "We took a little bacon and we took a little beans",
+        "And we caught the bloody British in the town of New Orleans"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "We fired our guns and the British kept a coming",
+        "There wasn\u2019t nigh as many as there was a while ago",
+        "We fired once more and they began to running",
+        "Down the Mississippi to the Gulf of Mexico"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We looked down the river and we seen the British come",
+        "And there must have been a hundred of them beating on the drums",
+        "They stepped so high and they made their bugles ring",
+        "We stood behind our cotton bales and didn\u2019t say a thing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Old Hickory said we could take \u2019em by suprise",
+        "If we didn\u2019t fire a musket \u2019til we looked \u2019em in the eyes",
+        "We held our fire \u2019til we seen their faces well",
+        "We opened up our squirrel guns and really gave \u2019em"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well they ran through the briars and they ran through the brambles",
+        "And they ran through the bushes where the rabbits couldn\u2019t go",
+        "They ran so fast the hounds couldn\u2019t catch \u2019em",
+        "On down the Mississippi to the Gulf of Mexico"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We fired our cannon \u2019til the barrel melted down",
+        "Then we grabbed an alligator and we fought another round",
+        "We filled his head with cannonballs and powdered his behind",
+        "And when we touched the powder off the gator lost his mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

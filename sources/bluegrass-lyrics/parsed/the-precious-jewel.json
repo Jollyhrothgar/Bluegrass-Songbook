@@ -1,0 +1,49 @@
+{
+  "slug": "the-precious-jewel",
+  "title": "The Precious Jewel",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-precious-jewel/",
+  "raw_lyrics": "Way back in the hills when a boy I once wandered\nBuried deep in the grave lies the one that I love\nShe was called from this earth a jewel for heaven\nMore pricious than diamonds more precious than gold\n\nA jewel here on earth a jewel in heaven\nShe\u2019ll brighten the kingdom around God\u2019s Great Throne\nMay the angels have peace God bless her in heaven\nThey\u2019ve broken my heart and they\u2019ve left me to roam\n\nWhen a girl of sixteen we courted each other\nShe promised someday to become my sweet wife\nI bought her the ring to wear on her finger\nBut the angels they called her to heraven one night\n\nThis world has its wealth it\u2019s trials and troubles\nMother earth holds her treasures of diamonds and gold\nBut it can\u2019t hold the soul of one precious jewel\nShe is resting in peace with the heavenly fold",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way back in the hills when a boy I once wandered",
+        "Buried deep in the grave lies the one that I love",
+        "She was called from this earth a jewel for heaven",
+        "More pricious than diamonds more precious than gold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A jewel here on earth a jewel in heaven",
+        "She\u2019ll brighten the kingdom around God\u2019s Great Throne",
+        "May the angels have peace God bless her in heaven",
+        "They\u2019ve broken my heart and they\u2019ve left me to roam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When a girl of sixteen we courted each other",
+        "She promised someday to become my sweet wife",
+        "I bought her the ring to wear on her finger",
+        "But the angels they called her to heraven one night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This world has its wealth it\u2019s trials and troubles",
+        "Mother earth holds her treasures of diamonds and gold",
+        "But it can\u2019t hold the soul of one precious jewel",
+        "She is resting in peace with the heavenly fold"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

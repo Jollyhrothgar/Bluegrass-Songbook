@@ -2,90 +2,115 @@
 
 Lyrics for traditional bluegrass and early country songs from [BluegrassLyrics.com](https://www.bluegrasslyrics.com/).
 
-## Status: PENDING PERMISSION
+## Status: SCRAPED - CHORD ENRICHMENT IN PROGRESS
 
-Awaiting response from site owner before scraping.
+**Permission**: Granted by site owner (Feb 2026)
 
-## Site Analysis
+## Quick Reference
 
-- **Content**: Lyrics only (no chords)
-- **Focus**: Traditional bluegrass, early country, old-time
-- **Size**: 1000s of songs (211 Bill Monroe songs alone)
-- **Format**: Clean HTML, WordPress-based
-- **URL pattern**: `https://www.bluegrasslyrics.com/song/{title-with-hyphens}/`
-- **Organization**: Alphabetical index, artist folios, thematic collections
+```bash
+# View a generated ChordPro file
+cat sources/bluegrass-lyrics/chordpro/<slug>.pro
 
-### Artist Folios Available
-- Bill Monroe (211 songs)
-- Flatt and Scruggs
-- Stanley Brothers
-- Jimmy Martin
-- Larry Sparks
+# Check manifest for status
+cat sources/bluegrass-lyrics/manifest.json | jq '.songs["<slug>"]'
 
-### Collections
-- Bluegrass Gospel Songs
-- Brother Duets
-- Early Country
-- Old Time Songs
+# Regenerate ChordPro from TMUK matches
+uv run python sources/bluegrass-lyrics/generate_chordpro.py
+```
 
-## Gap Analysis
-
-Using MusicBrainz bluegrass repertoire data (`mb_bluegrass_repertoire.jsonl`):
+## Current State
 
 | Metric | Count |
 |--------|-------|
-| MB bluegrass repertoire | 2,455 songs |
-| Already in songbook | 794 (32%) |
-| Missing | 1,661 (68%) |
-| Likely traditional/folk | 137 |
+| Total songs scraped | 1,818 |
+| Already in our collection | 823 |
+| **New songs to add** | **995** |
 
-### Top Missing Traditional Songs
+### Chord Enrichment Progress
 
-```
-15 artists | Cumberland Gap
-12 artists | Wild Bill Jones
-11 artists | Lee Highway Blues
-11 artists | Fire on the Mountain
-11 artists | Cluck Old Hen
-10 artists | Foggy Mountain Breakdown
-10 artists | Sweet Georgia Brown
- 9 artists | Cannonball Blues
- 8 artists | Handsome Molly
- 7 artists | Soldier's Joy
-```
+| Source | Songs | Status | Location |
+|--------|-------|--------|----------|
+| TMUK Carter Family (text) | 65 | **ChordPro generated** | `chordpro/*.pro` |
+| TMUK other (image/PDF) | 172 | Needs OCR | - |
+| No external match | 659 | Needs LLM or other sources | - |
+| Fuzzy matches | 99 | Needs verification | - |
 
-## Implementation Plan (if approved)
-
-1. **Scraper**: Fetch lyrics from individual song pages
-2. **Parser**: Extract lyrics, title, any metadata
-3. **Chord inference**: Use existing harmonic analysis to add basic chords
-4. **Output**: ChordPro .pro files with `x_source: bluegrass-lyrics`
-
-### Proposed Structure
+### File Structure
 
 ```
 bluegrass-lyrics/
+├── raw/                # Cached HTML (gitignored)
+├── parsed/             # Structured JSON per song (intermediate)
+├── chordpro/           # Generated ChordPro files (reviewable)
+│   └── *.pro           # 65 files from TMUK match
+├── manifest.json       # Status tracking per song
 ├── src/
-│   ├── scraper.py          # HTTP client with rate limiting
-│   ├── parser.py           # HTML to lyrics extraction
-│   └── song_list.py        # Songs to fetch (from MB gap analysis)
-├── parsed/                  # Output .pro files
-├── raw/                     # Cached HTML (gitignored)
-└── mb_bluegrass_repertoire.jsonl  # Gap analysis data
+│   ├── scraper.py      # Fetch index + pages
+│   ├── parser.py       # HTML to structured JSON
+│   └── matcher.py      # Deduplication against works/
+├── generate_chordpro.py  # Generate .pro from sources
+├── song_index.json     # All 1,819 URLs
+├── classification_report.json  # 995 new songs
+└── CLAUDE.md           # This file
 ```
 
-## Other Sources Evaluated
+## Workflow
 
-| Source | Verdict | Notes |
-|--------|---------|-------|
-| Ultimate Guitar | ❌ Skip | ToS prohibits scraping, aggressive anti-bot |
-| Flatpicker Hangout | ❌ Skip | Only 332 tabs, binary formats (TablEdit, PowerTab) |
-| Mudcat/Digital Tradition | ⚠️ Maybe | Folk lyrics, needs more research |
-| Jack Tuttle | ❌ N/A | Site structure unclear, couldn't assess |
+### Review ChordPro
+```bash
+# List ready files
+cat manifest.json | jq '[.songs | to_entries[] | select(.value.status=="ready")] | length'
 
-## Copyright Considerations
+# View a file
+cat chordpro/sinking-in-the-lonesome-sea.pro
 
-- Chord progressions are not copyrightable
-- Lyrics ARE copyrighted (even for traditional songs if verses are original)
-- Safest: Pre-1928 songs, truly traditional verses, instrumentals
-- Site describes itself as "traditional" bluegrass - likely more permissive
+# Mark as approved (edit manifest.json, change status to "approved")
+```
+
+### Merge to Works
+```bash
+# TODO: Create merge script
+uv run python sources/bluegrass-lyrics/merge_to_works.py
+```
+
+## Chord Enrichment Strategy
+
+### Currently Working
+1. **TMUK Carter Family** - 65 songs with text chords ✓
+
+### Next Up
+2. **Discover more sources** - Search for specific song titles
+3. **OCR for image chords** - TMUK has 172 more in image/PDF format
+4. **LLM inference** - For remaining 659 with no external match
+
+### OCR Options to Research
+- Tesseract (free, open source)
+- Claude Vision (could parse chord sheet images)
+- Google Cloud Vision (high quality, has cost)
+- Music-specific OCR (may exist for chord/tab recognition)
+
+### LLM Inference Approach
+- Key doesn't matter (transposition is easy)
+- Chord progression is the value (I-IV-V patterns)
+- Test: Generated correct progression, wrong key
+- Need batch testing before scale
+
+## Known Limitations
+
+1. **Current ChordPro uses TMUK lyrics** - Not BL lyrics merged with TMUK chords
+   - Harder merge problem (lyrics don't match exactly)
+   - TMUK chords are authoritative, BL lyrics are often better
+
+2. **No artist metadata** - BluegrassLyrics doesn't provide artist info
+   - Could enrich from MusicBrainz or manual entry
+
+## Attribution
+
+Every generated file includes:
+```chordpro
+{meta: x_lyrics_source bluegrass-lyrics}
+{meta: x_lyrics_url https://www.bluegrasslyrics.com/song/...}
+{meta: x_chords_source traditional-music-uk}
+{meta: x_chords_url http://www.traditionalmusic.co.uk/...}
+```

@@ -1,0 +1,57 @@
+{
+  "slug": "heavy-traffic-ahead",
+  "title": "Heavy Traffic Ahead",
+  "source_url": "https://www.bluegrasslyrics.com/song/heavy-traffic-ahead/",
+  "raw_lyrics": "On Saturday night when our work is done\nWe load our music up on the run\n\nHeavy traffic ahead, heavy traffic ahead\nWe got to ramble ramble there\u2019s heavy traffic ahead\n\nWe pull out of Nashville right on time\nThe Blue Grass special heads down the line\n\nWe traveled around from state to state\nThe Bluegrass boys are never late\n\nLate in the evening about sundown\nYou know we\u2019ve come from some other town\n\nWe do our work with a good will\nOn Friday night we head for Nashville",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On Saturday night when our work is done",
+        "We load our music up on the run"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Heavy traffic ahead, heavy traffic ahead",
+        "We got to ramble ramble there\u2019s heavy traffic ahead"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We pull out of Nashville right on time",
+        "The Blue Grass special heads down the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We traveled around from state to state",
+        "The Bluegrass boys are never late"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Late in the evening about sundown",
+        "You know we\u2019ve come from some other town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We do our work with a good will",
+        "On Friday night we head for Nashville"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

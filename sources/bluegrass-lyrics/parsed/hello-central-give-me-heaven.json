@@ -1,0 +1,69 @@
+{
+  "slug": "hello-central-give-me-heaven",
+  "title": "Hello Central, Give Me Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/hello-central-give-me-heaven/",
+  "raw_lyrics": "Hello central give me heaven\nFor I know my mother\u2019s there\nAnd you\u2019ll find her with the angels\nOver on the golden stair\n\nShe\u2019ll be glad it\u2019s me a speaking\nWont you call her for me please\nFor I surely want to tell her\nThat we\u2019re sad without her here\n\nHello central give me heaven\nFor I know my mother\u2019s there\nYou will find her with the angels\nOver on the golden stair\n\nPoppa dear is said and lonely\nSobbed the tearful little child\nSince momma\u2019s gone to heaven\nPoppa dear you do not smile\n\nI will speak to her and tell her\nThat we want her to come home\nYou just listen while I call her\nCall her through the telephone\n\nI will answer just to please her\nYes dear heart I\u2019ll soon come home\nKiss me momma it\u2019s your darling\nKiss me through the telephone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Hello central give me heaven",
+        "For I know my mother\u2019s there",
+        "And you\u2019ll find her with the angels",
+        "Over on the golden stair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019ll be glad it\u2019s me a speaking",
+        "Wont you call her for me please",
+        "For I surely want to tell her",
+        "That we\u2019re sad without her here"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hello central give me heaven",
+        "For I know my mother\u2019s there",
+        "You will find her with the angels",
+        "Over on the golden stair"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Poppa dear is said and lonely",
+        "Sobbed the tearful little child",
+        "Since momma\u2019s gone to heaven",
+        "Poppa dear you do not smile"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will speak to her and tell her",
+        "That we want her to come home",
+        "You just listen while I call her",
+        "Call her through the telephone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will answer just to please her",
+        "Yes dear heart I\u2019ll soon come home",
+        "Kiss me momma it\u2019s your darling",
+        "Kiss me through the telephone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

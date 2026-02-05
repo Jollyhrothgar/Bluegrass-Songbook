@@ -1,0 +1,62 @@
+{
+  "slug": "over-in-the-glory-land",
+  "title": "Over In The Glory Land",
+  "source_url": "https://www.bluegrasslyrics.com/song/over-in-the-glory-land/",
+  "raw_lyrics": "I\u2019ve a home prepared where the saints abide\nOver in the glory land\nAnd I long to be by my Savior\u2019s side\nJust over in the glory land\n\nJust over ( over ) in the glory land\nI\u2019ll join ( yes join ) the happy angel band\nJust over in the glory land\nJust over ( over ) in the glory land\nThere with  ( yes with ) the mighty host I\u2019ll stand\nJust over in the glory land\n\nI am on my way to those mansions fair\nJust over in the glory land\nThere to sing God\u2019s praises and his glory share\nJust over in the glory land\n\nWhat a joyful thought that my Lord I\u2019ll see\nJust over in the glory land\nAnd with kindred saved there forever be\nJust over in the glory land\n\nWith the blood washed throng I will shout and sing\nJust over in the glory land\nGlad hosannas to Christ\nthe Lord and King\nJust over in the glory land",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve a home prepared where the saints abide",
+        "Over in the glory land",
+        "And I long to be by my Savior\u2019s side",
+        "Just over in the glory land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Just over ( over ) in the glory land",
+        "I\u2019ll join ( yes join ) the happy angel band",
+        "Just over in the glory land",
+        "Just over ( over ) in the glory land",
+        "There with  ( yes with ) the mighty host I\u2019ll stand",
+        "Just over in the glory land"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I am on my way to those mansions fair",
+        "Just over in the glory land",
+        "There to sing God\u2019s praises and his glory share",
+        "Just over in the glory land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What a joyful thought that my Lord I\u2019ll see",
+        "Just over in the glory land",
+        "And with kindred saved there forever be",
+        "Just over in the glory land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With the blood washed throng I will shout and sing",
+        "Just over in the glory land",
+        "Glad hosannas to Christ",
+        "the Lord and King",
+        "Just over in the glory land"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

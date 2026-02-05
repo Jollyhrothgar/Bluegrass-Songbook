@@ -1,0 +1,49 @@
+{
+  "slug": "lonesome-town",
+  "title": "Lonesome Town",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-town/",
+  "raw_lyrics": "There\u2019s a place where lovers go\nTo cry their troubles away\nAnd they call it lonesome town\nWhere the broken hearts stay\n\nYou can buy a dream or two\nTo last you all through the years\nAnd the only price you\u2019ll pay\nIs a heart full of tears\n\nGoing down to lonesome town\nWhere the broken hearts stay\nGoing down to lonesome town\nTo cry my troubles away\n\nIn the town of broken dreams\nThe streets are filled with regret\nMaybe down in lonesome town\nI can learn to forget",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a place where lovers go",
+        "To cry their troubles away",
+        "And they call it lonesome town",
+        "Where the broken hearts stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can buy a dream or two",
+        "To last you all through the years",
+        "And the only price you\u2019ll pay",
+        "Is a heart full of tears"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Going down to lonesome town",
+        "Where the broken hearts stay",
+        "Going down to lonesome town",
+        "To cry my troubles away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the town of broken dreams",
+        "The streets are filled with regret",
+        "Maybe down in lonesome town",
+        "I can learn to forget"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

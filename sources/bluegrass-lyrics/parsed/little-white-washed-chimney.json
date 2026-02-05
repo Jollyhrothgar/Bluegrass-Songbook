@@ -1,0 +1,49 @@
+{
+  "slug": "little-white-washed-chimney",
+  "title": "Little White-Washed Chimney",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-white-washed-chimney/",
+  "raw_lyrics": "Where the Mississippi flowing on the sunny southern shores\nAnd the steamboat comes a-puffing round the bend\nThere\u2019s a little old log cabin with a grape vine over the door\nAnd a little white-washed chimney at the end\n\nOh, I\u2019m going back, yes, going back to the place I love so well\nTo the folks who\u2019ll want me all their own again\nIn the little old log cabin with the grape vine o\u2019er the door\nAnd a little white-washed chimney at the end\n\nOh, I went away up North where they told me I would find\nMoney hanging around like apples on a tree\nBut it was as my sweetheart told me there was nothing of the kind\nAnd the weather was so cold I thought I\u2019d freeze\n\nI can see the smoke a-rising from the little chimney top\nAs it welcomes me and greets me on the breeze\nThen I will start a-running and I know I\u2019ll never stop\nTill I\u2019ve landed in that cabin on my knees",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Where the Mississippi flowing on the sunny southern shores",
+        "And the steamboat comes a-puffing round the bend",
+        "There\u2019s a little old log cabin with a grape vine over the door",
+        "And a little white-washed chimney at the end"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, I\u2019m going back, yes, going back to the place I love so well",
+        "To the folks who\u2019ll want me all their own again",
+        "In the little old log cabin with the grape vine o\u2019er the door",
+        "And a little white-washed chimney at the end"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, I went away up North where they told me I would find",
+        "Money hanging around like apples on a tree",
+        "But it was as my sweetheart told me there was nothing of the kind",
+        "And the weather was so cold I thought I\u2019d freeze"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can see the smoke a-rising from the little chimney top",
+        "As it welcomes me and greets me on the breeze",
+        "Then I will start a-running and I know I\u2019ll never stop",
+        "Till I\u2019ve landed in that cabin on my knees"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

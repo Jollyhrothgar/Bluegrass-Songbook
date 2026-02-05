@@ -1,0 +1,39 @@
+{
+  "slug": "2402",
+  "title": "I\u2019ll Be Alright Tomorrow",
+  "source_url": "https://www.bluegrasslyrics.com/song/2402/",
+  "raw_lyrics": "I may be a little bit tight tonight\nBut I\u2019ll be alright tomorrow\nBe alright tomorrow, be alright tomorrow\nI may be a a little bit tight tonight\nBut I\u2019ll be alright tomorrow\nCause my baby\u2019s coming home\n\nEver since she left me\nThings ain\u2019t been right\nI\u2019ve been out drinking every night\n\nI got a letter just today\nShe\u2019s coming home to stay\nSaid she\u2019d never leave my arms again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I may be a little bit tight tonight",
+        "But I\u2019ll be alright tomorrow",
+        "Be alright tomorrow, be alright tomorrow",
+        "I may be a a little bit tight tonight",
+        "But I\u2019ll be alright tomorrow",
+        "Cause my baby\u2019s coming home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ever since she left me",
+        "Things ain\u2019t been right",
+        "I\u2019ve been out drinking every night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I got a letter just today",
+        "She\u2019s coming home to stay",
+        "Said she\u2019d never leave my arms again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

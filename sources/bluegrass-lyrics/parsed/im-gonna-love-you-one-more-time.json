@@ -1,0 +1,49 @@
+{
+  "slug": "im-gonna-love-you-one-more-time",
+  "title": "I\u2019m Gonna Love You One More Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-gonna-love-you-one-more-time/",
+  "raw_lyrics": "I\u2019m gonna love you one more time\nAnd give you a chance to be true\nIf you leave me again we\u2019ll no longer be friends\nFor I\u2019m tired of playing hide and seek with you\n\nOh I just read the letter you wrote me\nAnd these tear stains you cannot deny\nI can see that you\u2019re tired of your new love\nI will answer in just a few lines\n\nAfter searching this wild world all over\nI\u2019m surprised to have found you again\nI had made up my mind to forget you\nBut my heart was too broken to mend\n\nOnce you\u2019ve been in the arms of another\nBut now you are trying to flee\nFrom the cold empty world he left you\nNow you\u2019re ready to come back to me",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m gonna love you one more time",
+        "And give you a chance to be true",
+        "If you leave me again we\u2019ll no longer be friends",
+        "For I\u2019m tired of playing hide and seek with you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I just read the letter you wrote me",
+        "And these tear stains you cannot deny",
+        "I can see that you\u2019re tired of your new love",
+        "I will answer in just a few lines"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "After searching this wild world all over",
+        "I\u2019m surprised to have found you again",
+        "I had made up my mind to forget you",
+        "But my heart was too broken to mend"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once you\u2019ve been in the arms of another",
+        "But now you are trying to flee",
+        "From the cold empty world he left you",
+        "Now you\u2019re ready to come back to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

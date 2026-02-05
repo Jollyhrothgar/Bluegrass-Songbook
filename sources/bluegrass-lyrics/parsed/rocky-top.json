@@ -1,0 +1,69 @@
+{
+  "slug": "rocky-top",
+  "title": "Rocky Top",
+  "source_url": "https://www.bluegrasslyrics.com/song/rocky-top/",
+  "raw_lyrics": "I wish that I was on old Rocky Top\nDown in the Tennessee hills\nAin\u2019t no smoggy smoke on Rocky Top\nAin\u2019t no telephone bills\n\nOnce I had a girl on Rocky Top\nHalf bear the other half cat\nWild as a mink but sweet as soda pop\nI still dream about that\n\nRocky Top you\u2019ll always be\nHome sweet home to me\nGood old Rocky Top\nRocky Top Tennessee Rocky Top Tennessee\n\nOnce two strangers climbed old Rocky Top\nLooking for a moonshine still\nStrangers ain\u2019t come down from Rocky Top\nReckon they never will\n\nCorn won\u2019t grow at all on Rocky Top\nDirt\u2019s too rocky by far\nThat\u2019s why all the folks on Rocky Top\nGet their corn from a jar\n\nI\u2019ve had years of cramped up city life\nTrapped like a duck in a pen\nAll I know is it\u2019s a pity life\nCan\u2019t be simple again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wish that I was on old Rocky Top",
+        "Down in the Tennessee hills",
+        "Ain\u2019t no smoggy smoke on Rocky Top",
+        "Ain\u2019t no telephone bills"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once I had a girl on Rocky Top",
+        "Half bear the other half cat",
+        "Wild as a mink but sweet as soda pop",
+        "I still dream about that"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Rocky Top you\u2019ll always be",
+        "Home sweet home to me",
+        "Good old Rocky Top",
+        "Rocky Top Tennessee Rocky Top Tennessee"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once two strangers climbed old Rocky Top",
+        "Looking for a moonshine still",
+        "Strangers ain\u2019t come down from Rocky Top",
+        "Reckon they never will"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Corn won\u2019t grow at all on Rocky Top",
+        "Dirt\u2019s too rocky by far",
+        "That\u2019s why all the folks on Rocky Top",
+        "Get their corn from a jar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve had years of cramped up city life",
+        "Trapped like a duck in a pen",
+        "All I know is it\u2019s a pity life",
+        "Can\u2019t be simple again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

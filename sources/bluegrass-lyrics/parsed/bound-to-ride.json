@@ -1,0 +1,57 @@
+{
+  "slug": "bound-to-ride",
+  "title": "Bound To Ride",
+  "source_url": "https://www.bluegrasslyrics.com/song/bound-to-ride/",
+  "raw_lyrics": "Coming down from Tennessee riding on the line\nThinking about the girl of mine couldn\u2019t keep from crying\n\nHoney babe I\u2019m bound to ride\nDon\u2019t you want to go\n\nRiding on a streetcar looking o\u2019er the town\nEating saltine crackers ten cents a pound\n\nWorking on a railroad saving all I can\nLooking for that woman ain\u2019t got no man\n\nIf I die a railroad man bury me under the ties\nSo I can see old number nine as she goes rolling by\n\nSee that train a coming round the bend\nGoodbye my little darling I\u2019m on my way again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Coming down from Tennessee riding on the line",
+        "Thinking about the girl of mine couldn\u2019t keep from crying"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Honey babe I\u2019m bound to ride",
+        "Don\u2019t you want to go"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Riding on a streetcar looking o\u2019er the town",
+        "Eating saltine crackers ten cents a pound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Working on a railroad saving all I can",
+        "Looking for that woman ain\u2019t got no man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I die a railroad man bury me under the ties",
+        "So I can see old number nine as she goes rolling by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "See that train a coming round the bend",
+        "Goodbye my little darling I\u2019m on my way again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

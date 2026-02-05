@@ -1,0 +1,81 @@
+{
+  "slug": "sand-mountain-blues",
+  "title": "Sand Mountain Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/sand-mountain-blues/",
+  "raw_lyrics": "Standing by the railroad waiting for a train\nI\u2019m gonna catch that midnight train and never come back again\nIt\u2019s a lonesome feeling, Sand Mountain blues\n\nI went to the gypsy just to hear what she would say\nShe said, that girl don\u2019t love you and you\u2019d better be on your way\nYou\u2019re gonna be sorry for breaking my heart\n\nI don\u2019t know where to go, any old place will do\nI\u2019m leaving old Sand Mountain, just getting away from you\nYou\u2019re gonna be sorry for breaking my heart\n\nThere\u2019s other girls around here and I could love \u2019em too\nBut every time I saw you, it\u2019d make me sad and blue\nIt\u2019s a lonesome feeling, Sand Mountain blues\n\nWhen it makes you lonesome to hear that freight train blow\nThen you will know I\u2019m riding, but I didn\u2019t want to go\nIt\u2019s a lonesome feeling, Sand Mountain blues\n\nWhen it\u2019s raining on Sand Mountain, and raining kind of slow\nThen maybe you\u2019ll remember and ?? you make me go\nYou\u2019re gonna be sorry for breaking my heart\n\nI am just a poor boy, and work\u2019s my middle name\nI guess that\u2019s why you said goodbye, but I love you just the same\nYou\u2019re gonna be sorry for breaking my heart\n\nIf you ever need me, then maybe I\u2019ll come back\nI hear that train a-coming, just coming down the track\nIt\u2019s a lonesome feeling, Sand Mountain blues",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Standing by the railroad waiting for a train",
+        "I\u2019m gonna catch that midnight train and never come back again",
+        "It\u2019s a lonesome feeling, Sand Mountain blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went to the gypsy just to hear what she would say",
+        "She said, that girl don\u2019t love you and you\u2019d better be on your way",
+        "You\u2019re gonna be sorry for breaking my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t know where to go, any old place will do",
+        "I\u2019m leaving old Sand Mountain, just getting away from you",
+        "You\u2019re gonna be sorry for breaking my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s other girls around here and I could love \u2019em too",
+        "But every time I saw you, it\u2019d make me sad and blue",
+        "It\u2019s a lonesome feeling, Sand Mountain blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When it makes you lonesome to hear that freight train blow",
+        "Then you will know I\u2019m riding, but I didn\u2019t want to go",
+        "It\u2019s a lonesome feeling, Sand Mountain blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When it\u2019s raining on Sand Mountain, and raining kind of slow",
+        "Then maybe you\u2019ll remember and ?? you make me go",
+        "You\u2019re gonna be sorry for breaking my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I am just a poor boy, and work\u2019s my middle name",
+        "I guess that\u2019s why you said goodbye, but I love you just the same",
+        "You\u2019re gonna be sorry for breaking my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you ever need me, then maybe I\u2019ll come back",
+        "I hear that train a-coming, just coming down the track",
+        "It\u2019s a lonesome feeling, Sand Mountain blues"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

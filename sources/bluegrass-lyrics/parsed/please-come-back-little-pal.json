@@ -1,0 +1,49 @@
+{
+  "slug": "please-come-back-little-pal",
+  "title": "Please Come Back Little Pal",
+  "source_url": "https://www.bluegrasslyrics.com/song/please-come-back-little-pal/",
+  "raw_lyrics": "I am lonely tonight little pal\nI\u2019m lonely I\u2019m sad and I\u2019m blue\nThere an empty spot in my life\nThat no one can fill only you\n\nSo please come back little pal\nPlease come and stay\nMy heart is withered like a petal\nOf a rose I saw dying today\n\nRemember we walked in the moonlight\nWe walked we talked alone\nWas the night that we were parting\nAnd never again would we roam\n\nPlease think of me little pal\nFor I surely am thinking of you\nYou\u2019re the only pal that ever\nWas to me so kind and so true",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am lonely tonight little pal",
+        "I\u2019m lonely I\u2019m sad and I\u2019m blue",
+        "There an empty spot in my life",
+        "That no one can fill only you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So please come back little pal",
+        "Please come and stay",
+        "My heart is withered like a petal",
+        "Of a rose I saw dying today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Remember we walked in the moonlight",
+        "We walked we talked alone",
+        "Was the night that we were parting",
+        "And never again would we roam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please think of me little pal",
+        "For I surely am thinking of you",
+        "You\u2019re the only pal that ever",
+        "Was to me so kind and so true"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

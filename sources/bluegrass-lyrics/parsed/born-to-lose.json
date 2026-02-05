@@ -1,0 +1,39 @@
+{
+  "slug": "born-to-lose",
+  "title": "Born To Lose",
+  "source_url": "https://www.bluegrasslyrics.com/song/born-to-lose/",
+  "raw_lyrics": "Born to lose I\u2019ve lived my life in vain\nEvery dream has only brought me pain\nAll my life I\u2019ve always been so blue\nBorn to lose and now I\u2019m losing you.\n\nBorn to lose it seems so hard to bear\nWhen I wake and find that you\u2019re not there\nYou\u2019ve grown tired and now you say we\u2019re through\nBorn to lose and now I\u2019m losing you.\n\nBorn to lose my every hope is gone\nIt\u2019s so hard to face an empty dawn\nYou were all the happiness I knew\nBorn to lose and now I\u2019m losing you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Born to lose I\u2019ve lived my life in vain",
+        "Every dream has only brought me pain",
+        "All my life I\u2019ve always been so blue",
+        "Born to lose and now I\u2019m losing you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Born to lose it seems so hard to bear",
+        "When I wake and find that you\u2019re not there",
+        "You\u2019ve grown tired and now you say we\u2019re through",
+        "Born to lose and now I\u2019m losing you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Born to lose my every hope is gone",
+        "It\u2019s so hard to face an empty dawn",
+        "You were all the happiness I knew",
+        "Born to lose and now I\u2019m losing you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "lay-my-head-beneath-the-rose",
+  "title": "Lay My Head Beneath The Rose",
+  "source_url": "https://www.bluegrasslyrics.com/song/lay-my-head-beneath-the-rose/",
+  "raw_lyrics": "Darling, clasp me to your bosom\nAs you did in days of yore\nLay your hand upon my forehead\nEre I reach the golden shore\n\nLife is from me fastly falling\nSoon I\u2019ll be in sweet repose\nWhen I\u2019m gone 1 ask this favor\nLay my head beneath the rose\n\nDarling, first you said you loved me\nWhen you gave me hand and heart\nThere were roses on your cheeks, love\nAs we vowed we ne\u2019er would part\n\nOne more kiss for I am going\nFar beyond all earthly woe\nMay your life be like your cheeks, love\nCovered with the blossomed rose\n\nHe has crossed the shadowed valley\nWhere the living waters flow\nLove has answered all his pleading\nAnd he sleeps in sweet repose\n\nBeneath a grassy mound he\u2019s resting\nWhere the golden sunset glows\nLove has answered all his pleading\nAnd he sleeps in sweet repose",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Darling, clasp me to your bosom",
+        "As you did in days of yore",
+        "Lay your hand upon my forehead",
+        "Ere I reach the golden shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Life is from me fastly falling",
+        "Soon I\u2019ll be in sweet repose",
+        "When I\u2019m gone 1 ask this favor",
+        "Lay my head beneath the rose"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darling, first you said you loved me",
+        "When you gave me hand and heart",
+        "There were roses on your cheeks, love",
+        "As we vowed we ne\u2019er would part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One more kiss for I am going",
+        "Far beyond all earthly woe",
+        "May your life be like your cheeks, love",
+        "Covered with the blossomed rose"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He has crossed the shadowed valley",
+        "Where the living waters flow",
+        "Love has answered all his pleading",
+        "And he sleeps in sweet repose"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Beneath a grassy mound he\u2019s resting",
+        "Where the golden sunset glows",
+        "Love has answered all his pleading",
+        "And he sleeps in sweet repose"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

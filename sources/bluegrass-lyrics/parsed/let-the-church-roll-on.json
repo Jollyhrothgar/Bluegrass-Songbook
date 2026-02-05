@@ -1,0 +1,50 @@
+{
+  "slug": "let-the-church-roll-on",
+  "title": "Let The Church Roll On",
+  "source_url": "https://www.bluegrasslyrics.com/song/let-the-church-roll-on/",
+  "raw_lyrics": "Let the church roll on (oh my  lord)\nLet the church roll on (oh my lord)\nLet the church roll on (oh my lord)\nLet the church roll on\n\nThere\u2019s a deacon in the church (oh my lord)\nAnd he won\u2019t do right (oh my lord)\nWhat shall we do (oh my lord)\nTurn him out and kick him out\nAnd let the church roll on\n\nThere a drunkards in the church (oh my lord)\nAnd he won\u2019t do right (oh my lord)\nWhat shall we do, take the liquor pour it out\nAnd let the church roll on\n\nThere\u2019s women in the church (oh my lord)\nGot paint on their face (oh my lord)\nWhat shall we do take some water and wash it off\nAnd let the church roll on",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Let the church roll on (oh my  lord)",
+        "Let the church roll on (oh my lord)",
+        "Let the church roll on (oh my lord)",
+        "Let the church roll on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a deacon in the church (oh my lord)",
+        "And he won\u2019t do right (oh my lord)",
+        "What shall we do (oh my lord)",
+        "Turn him out and kick him out",
+        "And let the church roll on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There a drunkards in the church (oh my lord)",
+        "And he won\u2019t do right (oh my lord)",
+        "What shall we do, take the liquor pour it out",
+        "And let the church roll on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s women in the church (oh my lord)",
+        "Got paint on their face (oh my lord)",
+        "What shall we do take some water and wash it off",
+        "And let the church roll on"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

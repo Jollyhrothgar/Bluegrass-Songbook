@@ -1,0 +1,59 @@
+{
+  "slug": "no-others-bride-ill-be",
+  "title": "No Other\u2019s Bride I\u2019ll Be",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-others-bride-ill-be/",
+  "raw_lyrics": "Just one year ago today love\nI became your happy bride\nChanged a mansion for a cottage\nTo live by the river side\n\nYou told me I\u2019d be happy\nBut no happiness I see\nFor tonight I am a widow\nIn the cottage by the sea\n\nAll alone by the seaside he left me\nAnd no other\u2019s bride I\u2019ll be\nFor in bridal flowers he begged me\nIn the cottage by the sea\n\nFrom my cottage by the seaside\nI can see my mansion home\nI can see those hills and valleys\nWhere with pleasure I have roamed\n\nThe last time that I saw him\nOh how happy then were we\nBut tonight I am a widow\nIn the cottage by the sea",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just one year ago today love",
+        "I became your happy bride",
+        "Changed a mansion for a cottage",
+        "To live by the river side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You told me I\u2019d be happy",
+        "But no happiness I see",
+        "For tonight I am a widow",
+        "In the cottage by the sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "All alone by the seaside he left me",
+        "And no other\u2019s bride I\u2019ll be",
+        "For in bridal flowers he begged me",
+        "In the cottage by the sea"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "From my cottage by the seaside",
+        "I can see my mansion home",
+        "I can see those hills and valleys",
+        "Where with pleasure I have roamed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The last time that I saw him",
+        "Oh how happy then were we",
+        "But tonight I am a widow",
+        "In the cottage by the sea"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

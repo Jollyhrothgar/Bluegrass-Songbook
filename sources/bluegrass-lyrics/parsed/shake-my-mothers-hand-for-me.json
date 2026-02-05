@@ -1,0 +1,49 @@
+{
+  "slug": "shake-my-mothers-hand-for-me",
+  "title": "Shake My Mother\u2019s Hand For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/shake-my-mothers-hand-for-me/",
+  "raw_lyrics": "When you reach that golden city (golden city)\nFriends and loved ones you shall see (you shall see)\nWhen the saints come out to meet you (out to meet you)\nOh shake my mother\u2019s hand for me\n\nShake my mothers hand and tell her (and then tell her)\nHappy may her spirits be (your spirits be)\nWhen the saints come out to meet you (out to meet you)\nOh shake my mother\u2019s hand for me\n\nThere are times I often wonder\nHow can all these trials be\nTime can\u2019t keep me here much longer\nOh shake my mother\u2019s hand for me\n\nOver there you\u2019ll meet my Savior\nMany loved ones you will see\nWhen you\u2019ve had a talk with Jesus\nOh shake my mother\u2019s hand for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When you reach that golden city (golden city)",
+        "Friends and loved ones you shall see (you shall see)",
+        "When the saints come out to meet you (out to meet you)",
+        "Oh shake my mother\u2019s hand for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Shake my mothers hand and tell her (and then tell her)",
+        "Happy may her spirits be (your spirits be)",
+        "When the saints come out to meet you (out to meet you)",
+        "Oh shake my mother\u2019s hand for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There are times I often wonder",
+        "How can all these trials be",
+        "Time can\u2019t keep me here much longer",
+        "Oh shake my mother\u2019s hand for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Over there you\u2019ll meet my Savior",
+        "Many loved ones you will see",
+        "When you\u2019ve had a talk with Jesus",
+        "Oh shake my mother\u2019s hand for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

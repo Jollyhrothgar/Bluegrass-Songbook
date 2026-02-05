@@ -1,0 +1,49 @@
+{
+  "slug": "six-more-miles",
+  "title": "Six More Miles",
+  "source_url": "https://www.bluegrasslyrics.com/song/six-more-miles/",
+  "raw_lyrics": "Oh the rain is slowly fallin\u2019\nAnd my heart is so sad\nSix more miles I\u2019ll leave my darlin\u2019\nLeave the best friend I ever had\n\nSix more miles to the graveyard\nSix more miles long and sad\nsix more miles to the graveyard\nLeave the best friend I ever had\n\nOh I hear that train a comin\u2019\nBringin\u2019 my darlin\u2019 back home\nSix more miles to the graveyard\nNever on this earth no more to roam\n\nSix more miles to the graveyard\nSix more miles long and sad\nSix more miles Ill leave my darlin\u2019\nLeave the best friend I ever had",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the rain is slowly fallin\u2019",
+        "And my heart is so sad",
+        "Six more miles I\u2019ll leave my darlin\u2019",
+        "Leave the best friend I ever had"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Six more miles to the graveyard",
+        "Six more miles long and sad",
+        "six more miles to the graveyard",
+        "Leave the best friend I ever had"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I hear that train a comin\u2019",
+        "Bringin\u2019 my darlin\u2019 back home",
+        "Six more miles to the graveyard",
+        "Never on this earth no more to roam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Six more miles to the graveyard",
+        "Six more miles long and sad",
+        "Six more miles Ill leave my darlin\u2019",
+        "Leave the best friend I ever had"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

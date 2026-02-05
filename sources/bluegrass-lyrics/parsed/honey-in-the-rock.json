@@ -1,0 +1,50 @@
+{
+  "slug": "honey-in-the-rock",
+  "title": "Honey In The Rock",
+  "source_url": "https://www.bluegrasslyrics.com/song/honey-in-the-rock/",
+  "raw_lyrics": "Oh my brother, do you know the Savior\nWho is wondrous kind and true?\nHe\u2019s the Rock of your salvation\nThere is honey in the Rock for you\n\nOh, honey in the Rock (oh, honey in the Rock)\nSweet honey in the Rock (sweet honey in the Rock)\nOh it tastes just like honey in the Rock\nOh taste and see if the Lord is good\nOh it tastes just like honey in the Rock\n\nHave you tasted that the Lord is gracious?\nDo you walk in the way that\u2019s new?\nhave you drank from the living fountain?\nThere is honey in the Rock for you\n\nOh, there\u2019s honey in the Rock my brother\nThere is honey in the Rock for you\nLeave your sins fur the Blood to cover\nThere is honey in the Rock for you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my brother, do you know the Savior",
+        "Who is wondrous kind and true?",
+        "He\u2019s the Rock of your salvation",
+        "There is honey in the Rock for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, honey in the Rock (oh, honey in the Rock)",
+        "Sweet honey in the Rock (sweet honey in the Rock)",
+        "Oh it tastes just like honey in the Rock",
+        "Oh taste and see if the Lord is good",
+        "Oh it tastes just like honey in the Rock"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Have you tasted that the Lord is gracious?",
+        "Do you walk in the way that\u2019s new?",
+        "have you drank from the living fountain?",
+        "There is honey in the Rock for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, there\u2019s honey in the Rock my brother",
+        "There is honey in the Rock for you",
+        "Leave your sins fur the Blood to cover",
+        "There is honey in the Rock for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

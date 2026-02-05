@@ -1,0 +1,49 @@
+{
+  "slug": "the-shining-path",
+  "title": "The Shining Path",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-shining-path/",
+  "raw_lyrics": "The path is narrow all the way\nBut yet I hear my Savior say\nCome with me your soul I\u2019ll bless\nIn that home above I\u2019ll give you rest\n\nOh the shining path leads up to Heaven\nBut you must travel it all alone\nAnd to those who walk the shining pathway\nOh the gates will open when you reach that home\n\nI\u2019m in that shining path at last\nOh I can see my Savior\u2019s face\nOh I\u2019ve been saved by Him today\nBy His ever loving grace\n\nThe path is awful hard to trod\nBut you must put your trust in God\nYour path will brighten all the way\nIn that fair home we\u2019ll meet some day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The path is narrow all the way",
+        "But yet I hear my Savior say",
+        "Come with me your soul I\u2019ll bless",
+        "In that home above I\u2019ll give you rest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the shining path leads up to Heaven",
+        "But you must travel it all alone",
+        "And to those who walk the shining pathway",
+        "Oh the gates will open when you reach that home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m in that shining path at last",
+        "Oh I can see my Savior\u2019s face",
+        "Oh I\u2019ve been saved by Him today",
+        "By His ever loving grace"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The path is awful hard to trod",
+        "But you must put your trust in God",
+        "Your path will brighten all the way",
+        "In that fair home we\u2019ll meet some day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

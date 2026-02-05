@@ -1,0 +1,39 @@
+{
+  "slug": "have-you-come-to-say-goodbye",
+  "title": "Have You Come To Say Goodbye",
+  "source_url": "https://www.bluegrasslyrics.com/song/have-you-come-to-say-goodbye/",
+  "raw_lyrics": "Have you come to say goodbye my darling\nWas the love you promised just a lie\nWhy go on pretending any longer\nTell me have you come to say goodbye\n\nNow as I gaze into your eyes tonight dear\nYou act so cold and strange i wander why\nCould it be that you know longer want me\nTell me have you come to say goodbye\n\nYou may forsake me but I\u2019ll always love you\nAnd I\u2019ll never let you leave my mind\nMy life will never be the same without you\nTell me have you come to say goodbye",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Have you come to say goodbye my darling",
+        "Was the love you promised just a lie",
+        "Why go on pretending any longer",
+        "Tell me have you come to say goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now as I gaze into your eyes tonight dear",
+        "You act so cold and strange i wander why",
+        "Could it be that you know longer want me",
+        "Tell me have you come to say goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You may forsake me but I\u2019ll always love you",
+        "And I\u2019ll never let you leave my mind",
+        "My life will never be the same without you",
+        "Tell me have you come to say goodbye"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "how-ive-tried",
+  "title": "How I\u2019ve Tried",
+  "source_url": "https://www.bluegrasslyrics.com/song/how-ive-tried/",
+  "raw_lyrics": "You only wanted me for your pastime\nSomeone to tell your troubles to\nI tried so hard to make you happy\nIt made no difference dear to you\n\nNow you don\u2019t want to love me anymore\nI\u2019ve tried so many times before\nI\u2019ve tried and tried, oh how Ie\u2019ve tried\nI\u2019ve tried you were never satisfied\n\nIt hurt me so when you left me\nI never thought you\u2019d be untrue\nOr go away with another\nAnd leave me lonsome and blue",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You only wanted me for your pastime",
+        "Someone to tell your troubles to",
+        "I tried so hard to make you happy",
+        "It made no difference dear to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you don\u2019t want to love me anymore",
+        "I\u2019ve tried so many times before",
+        "I\u2019ve tried and tried, oh how Ie\u2019ve tried",
+        "I\u2019ve tried you were never satisfied"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It hurt me so when you left me",
+        "I never thought you\u2019d be untrue",
+        "Or go away with another",
+        "And leave me lonsome and blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

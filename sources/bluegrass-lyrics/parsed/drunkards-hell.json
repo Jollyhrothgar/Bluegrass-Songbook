@@ -1,0 +1,49 @@
+{
+  "slug": "drunkards-hell",
+  "title": "Drunkard\u2019s Hell",
+  "source_url": "https://www.bluegrasslyrics.com/song/drunkards-hell/",
+  "raw_lyrics": "It was on one dark and starless night\nI heard and saw an awful sight\nThe lighting flashed and the thunder roared\nAll around the drunkard\u2019s feet\n\nI started home to change my life\nTo see my long neglected wife\nI found her kneeling by her bed\nShe said our darling baby was dead\n\nI took her by her trembling hand\nShe was so weak she could not stand\nOn bended knees I prayed a prayer\nThat God might save and protect us there\n\nWho preached like Paul who once did say\nOur sins have all been washed away\nThat whiskey stay as far from me\nas the mountains are from the deep blue sea",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It was on one dark and starless night",
+        "I heard and saw an awful sight",
+        "The lighting flashed and the thunder roared",
+        "All around the drunkard\u2019s feet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I started home to change my life",
+        "To see my long neglected wife",
+        "I found her kneeling by her bed",
+        "She said our darling baby was dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I took her by her trembling hand",
+        "She was so weak she could not stand",
+        "On bended knees I prayed a prayer",
+        "That God might save and protect us there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Who preached like Paul who once did say",
+        "Our sins have all been washed away",
+        "That whiskey stay as far from me",
+        "as the mountains are from the deep blue sea"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

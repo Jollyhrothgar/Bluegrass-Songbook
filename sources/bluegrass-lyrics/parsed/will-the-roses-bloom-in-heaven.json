@@ -1,0 +1,77 @@
+{
+  "slug": "will-the-roses-bloom-in-heaven",
+  "title": "Will The Roses Bloom In Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/will-the-roses-bloom-in-heaven/",
+  "raw_lyrics": "In a cold and cheerless garret\nIn a room so dim so lone\nIn the frosty winter in silence\nThere was heard a little mourn\n\nAnd a little child is asking\nAt the break of the day\nWill the roses bloom in heaven\nTell me momma tell me pray\nWill the roses bloom in heaven\nAre there any gardens there\nAny violets and clover\nWay up with the angels there\nWill the branches fill with blossoms\nAnd in winter fill with snow\nWill the roses bloom in heaven\nTell me momma ere I go\n\nNow the room grows light and lighter\nEvery thing has caught a glow\nHeaven seems to stretch about her\nWhile dreams they just come and go\n\nThen she whispered birds are singing\nSongs of melody\nAnd I see the roses blooming\nWhile the angels beckon me\n\nThen mother whispered\nIn the land so bright and fair\nWhen the roses are blooming\nThere will be no parting there\n\nGoodbye my little darling\nFor death is lingering here\nAnd on the little pale face\nThere was not one trace of fear",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a cold and cheerless garret",
+        "In a room so dim so lone",
+        "In the frosty winter in silence",
+        "There was heard a little mourn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And a little child is asking",
+        "At the break of the day",
+        "Will the roses bloom in heaven",
+        "Tell me momma tell me pray",
+        "Will the roses bloom in heaven",
+        "Are there any gardens there",
+        "Any violets and clover",
+        "Way up with the angels there",
+        "Will the branches fill with blossoms",
+        "And in winter fill with snow",
+        "Will the roses bloom in heaven",
+        "Tell me momma ere I go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the room grows light and lighter",
+        "Every thing has caught a glow",
+        "Heaven seems to stretch about her",
+        "While dreams they just come and go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then she whispered birds are singing",
+        "Songs of melody",
+        "And I see the roses blooming",
+        "While the angels beckon me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then mother whispered",
+        "In the land so bright and fair",
+        "When the roses are blooming",
+        "There will be no parting there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye my little darling",
+        "For death is lingering here",
+        "And on the little pale face",
+        "There was not one trace of fear"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

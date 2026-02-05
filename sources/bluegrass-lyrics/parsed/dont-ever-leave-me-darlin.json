@@ -1,0 +1,39 @@
+{
+  "slug": "dont-ever-leave-me-darlin",
+  "title": "Don\u2019t Ever Leave Me Darlin\u2019",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-ever-leave-me-darlin/",
+  "raw_lyrics": "You are the one the one that I live for\nI\u2019d die if we were apart\nMy thoughts are with you when we\u2019re not together\nDon\u2019t ever leave me darlin\u2019 don\u2019t ever break my heart.\n\nDon\u2019t ever leave me darlin\u2019\nI\u2019d die a million times\nYour love means more than life to me\nYes I love you can\u2019t you see.\n\nMy thoughts wander back to the day I first saw you\nI saw that you were the one\nThat was ten years ago and now I\u2019m even fonder\nDon\u2019t ever leave me darlin\u2019 or I\u2019ll be all alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You are the one the one that I live for",
+        "I\u2019d die if we were apart",
+        "My thoughts are with you when we\u2019re not together",
+        "Don\u2019t ever leave me darlin\u2019 don\u2019t ever break my heart."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t ever leave me darlin\u2019",
+        "I\u2019d die a million times",
+        "Your love means more than life to me",
+        "Yes I love you can\u2019t you see."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My thoughts wander back to the day I first saw you",
+        "I saw that you were the one",
+        "That was ten years ago and now I\u2019m even fonder",
+        "Don\u2019t ever leave me darlin\u2019 or I\u2019ll be all alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

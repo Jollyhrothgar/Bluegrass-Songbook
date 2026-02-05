@@ -1,0 +1,39 @@
+{
+  "slug": "hello-city-limits",
+  "title": "Hello City Limits",
+  "source_url": "https://www.bluegrasslyrics.com/song/hello-city-limits/",
+  "raw_lyrics": "Hello, city limits, I see your sign\nLeft all my worries way behind\nLeft all my troubles and heartaches there too\nHello, city limits, I\u2019m starting out brand new\n\nI need a change of scenery, I need it real bad\nTo help me forget all the hard times I\u2019ve had\nI\u2019ve got a feeling I\u2019ll find a love that\u2019s true\nWell, hello city limits, I\u2019m starting out brand new\n\nI haven\u2019t told a soul just where I\u2019m gonna be\nCause I don\u2019t want the blues to catch up with me\nI may decide to change my name too\nHello city limits, I\u2019m starting out brand new",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Hello, city limits, I see your sign",
+        "Left all my worries way behind",
+        "Left all my troubles and heartaches there too",
+        "Hello, city limits, I\u2019m starting out brand new"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I need a change of scenery, I need it real bad",
+        "To help me forget all the hard times I\u2019ve had",
+        "I\u2019ve got a feeling I\u2019ll find a love that\u2019s true",
+        "Well, hello city limits, I\u2019m starting out brand new"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I haven\u2019t told a soul just where I\u2019m gonna be",
+        "Cause I don\u2019t want the blues to catch up with me",
+        "I may decide to change my name too",
+        "Hello city limits, I\u2019m starting out brand new"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "darling-nellie-across-the-sea-2",
+  "title": "Darling Nellie Across The Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/darling-nellie-across-the-sea-2/",
+  "raw_lyrics": "Oh the night was dark and stormy\nWhen this message came to me\nIt was from my darlin\u2019 Nellie\nWho had sailed across the sea\n\nI was wanderin\u2019 through the grave yard\nWhen I found where Nellie lay\nIt was there my heart was broken\nIt was there I knelt to pray\n\nBut remember; darlin\u2019 Nellie\nThere\u2019s a home for us on high\nI will meet you darlin\u2019 Nellie\nWhen they lay me down to die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the night was dark and stormy",
+        "When this message came to me",
+        "It was from my darlin\u2019 Nellie",
+        "Who had sailed across the sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I was wanderin\u2019 through the grave yard",
+        "When I found where Nellie lay",
+        "It was there my heart was broken",
+        "It was there I knelt to pray"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But remember; darlin\u2019 Nellie",
+        "There\u2019s a home for us on high",
+        "I will meet you darlin\u2019 Nellie",
+        "When they lay me down to die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

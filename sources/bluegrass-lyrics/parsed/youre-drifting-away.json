@@ -1,0 +1,56 @@
+{
+  "slug": "youre-drifting-away",
+  "title": "You\u2019re Drifting Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-drifting-away/",
+  "raw_lyrics": "All your life you\u2019ve lived a sinner the bright way you\u2019ve never trod\nYou\u2019re drifting away you\u2019re drifting away\nWhen you come to cross the river and you haven\u2019t met with God\nYou\u2019re drifting away you\u2019re drifting away\n\nYou\u2019re drifting away you\u2019re drifting away\nOn down the dark river I\u2019m sorry to say\nYou\u2019re drifting away you\u2019re drifting away\nDon\u2019t wait too long to let Jesus hear you pray\n\nYou won\u2019t give up your earthly treasures to enter the promised land\nYou\u2019re drifting away you\u2019re drifting away\nYou can hear Jesus callin\u2019 and you won\u2019t accept His hand\nYou\u2019re drifting away you\u2019re drifting away\n\nWhen you come to the river Jesus don\u2019t give thee command\nYou\u2019re drifting away you\u2019re drifting away\nAnd the dark rollin\u2019 river takes you to the sinkin\u2019 sand\nYou\u2019re drifting away you\u2019re drifting away\n\nThe Rice Brothers; The Rice Brothers",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All your life you\u2019ve lived a sinner the bright way you\u2019ve never trod",
+        "You\u2019re drifting away you\u2019re drifting away",
+        "When you come to cross the river and you haven\u2019t met with God",
+        "You\u2019re drifting away you\u2019re drifting away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019re drifting away you\u2019re drifting away",
+        "On down the dark river I\u2019m sorry to say",
+        "You\u2019re drifting away you\u2019re drifting away",
+        "Don\u2019t wait too long to let Jesus hear you pray"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You won\u2019t give up your earthly treasures to enter the promised land",
+        "You\u2019re drifting away you\u2019re drifting away",
+        "You can hear Jesus callin\u2019 and you won\u2019t accept His hand",
+        "You\u2019re drifting away you\u2019re drifting away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you come to the river Jesus don\u2019t give thee command",
+        "You\u2019re drifting away you\u2019re drifting away",
+        "And the dark rollin\u2019 river takes you to the sinkin\u2019 sand",
+        "You\u2019re drifting away you\u2019re drifting away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The Rice Brothers; The Rice Brothers"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

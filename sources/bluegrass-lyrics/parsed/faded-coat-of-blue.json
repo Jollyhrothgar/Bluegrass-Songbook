@@ -1,0 +1,49 @@
+{
+  "slug": "faded-coat-of-blue",
+  "title": "Faded Coat Of Blue",
+  "source_url": "https://www.bluegrasslyrics.com/song/faded-coat-of-blue/",
+  "raw_lyrics": "My brave boy sleeps in his faded coat of blue\nIn a lonely grave unknown lies a heart that beats so true\nHe sank faint and hungry among the famished brave\nAnd they laid him sad and lonely within a nameless grave\n\nNo more the bugle calls oh weary one\nRest noble spirits in their graves unknown\nFor we\u2019ll find you and know you among the good and true\nWhere a robe of white is given for a faded coat of blue\n\nHe cried \u201cGive me water and just a little crumb\nAnd my mother she will bless you through all the years to come\nAnd tell my sweet sister so gentle good and true\nThat I\u2019ll meet her up in Heaven in my faded coat of blue\u201d\n\nNo dear one was nigh him to close his mild blue eyes\nNo gentle voice was by him to give him sweet replies\nNo stone marks the lonely sod on a lad so brave and true\nIn a lonely grave he\u2019s sleeping in his faded coat of blue",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My brave boy sleeps in his faded coat of blue",
+        "In a lonely grave unknown lies a heart that beats so true",
+        "He sank faint and hungry among the famished brave",
+        "And they laid him sad and lonely within a nameless grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "No more the bugle calls oh weary one",
+        "Rest noble spirits in their graves unknown",
+        "For we\u2019ll find you and know you among the good and true",
+        "Where a robe of white is given for a faded coat of blue"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He cried \u201cGive me water and just a little crumb",
+        "And my mother she will bless you through all the years to come",
+        "And tell my sweet sister so gentle good and true",
+        "That I\u2019ll meet her up in Heaven in my faded coat of blue\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No dear one was nigh him to close his mild blue eyes",
+        "No gentle voice was by him to give him sweet replies",
+        "No stone marks the lonely sod on a lad so brave and true",
+        "In a lonely grave he\u2019s sleeping in his faded coat of blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

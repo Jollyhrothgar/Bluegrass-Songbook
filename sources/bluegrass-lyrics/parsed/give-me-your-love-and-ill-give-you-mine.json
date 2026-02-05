@@ -1,0 +1,49 @@
+{
+  "slug": "give-me-your-love-and-ill-give-you-mine",
+  "title": "Give Me Your Love And I\u2019ll Give You Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/give-me-your-love-and-ill-give-you-mine/",
+  "raw_lyrics": "Just at the close of a bright summer day\nJust as the twilight had faded away\nSoft on the breeze like the coo of a dove\nSomeone was singing an old song of love\n\nTell me you love me and say you\u2019ll be true\nI love nobody in this world but you\nYour heart and my heart in love will entwine\nGive me your love and I\u2019ll give you mine\n\nCome along with me to the quiet shady nook\nWhere flowers bloom at the side of the brook\nNature is sleeping, the birds are at rest\nI\u2019ll place a wild rose on your beautiful breast\n\nI\u2019ve something to ask you while you\u2019re by my side\nA question of love, of groom and of bride\nAnd if you refuse me my heart it will pine\nGive me your love and I\u2019ll give you mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just at the close of a bright summer day",
+        "Just as the twilight had faded away",
+        "Soft on the breeze like the coo of a dove",
+        "Someone was singing an old song of love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tell me you love me and say you\u2019ll be true",
+        "I love nobody in this world but you",
+        "Your heart and my heart in love will entwine",
+        "Give me your love and I\u2019ll give you mine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come along with me to the quiet shady nook",
+        "Where flowers bloom at the side of the brook",
+        "Nature is sleeping, the birds are at rest",
+        "I\u2019ll place a wild rose on your beautiful breast"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve something to ask you while you\u2019re by my side",
+        "A question of love, of groom and of bride",
+        "And if you refuse me my heart it will pine",
+        "Give me your love and I\u2019ll give you mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "iron-curtain",
+  "title": "Iron Curtain",
+  "source_url": "https://www.bluegrasslyrics.com/song/iron-curtain/",
+  "raw_lyrics": "There\u2019s an iron curtain darlin\u2019 That\u2019s between your heart and mine\nand it seems its getting stronger all the time\nYou don\u2019t want me you don\u2019t need me But I\u2019ll keep on hangin\u2019 \u2019round\nAnd I know someday my love will tear that iron curtain down\n\nDon\u2019t be afraid to love me for I know that it will last\nDarlin is it fair to judge me by someone in your past\nYou don\u2019t want me you don\u2019t need me but I\u2019ll keep on hangin\u2019 \u2019round\nAnd I know someday my love will tear that iron curtain down\n\nSomeone\u2019s hurt you in the past dear and the memory lingers on\nBut to live your life in darkness is a shame\nIf you\u2019ll only let me love you soon your heartaches will be gone\nLet my lovin arms become your iron curtain from now on",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s an iron curtain darlin\u2019 That\u2019s between your heart and mine",
+        "and it seems its getting stronger all the time",
+        "You don\u2019t want me you don\u2019t need me But I\u2019ll keep on hangin\u2019 \u2019round",
+        "And I know someday my love will tear that iron curtain down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t be afraid to love me for I know that it will last",
+        "Darlin is it fair to judge me by someone in your past",
+        "You don\u2019t want me you don\u2019t need me but I\u2019ll keep on hangin\u2019 \u2019round",
+        "And I know someday my love will tear that iron curtain down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someone\u2019s hurt you in the past dear and the memory lingers on",
+        "But to live your life in darkness is a shame",
+        "If you\u2019ll only let me love you soon your heartaches will be gone",
+        "Let my lovin arms become your iron curtain from now on"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "old-satan",
+  "title": "Old Satan",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-satan/",
+  "raw_lyrics": "Living in the world of mass confusion\nWhere contentment\u2019s hard to find\nLiving in the days of revelation\nWith old Satan close behind\n\nI\u2019ve been talked about and laughed at\nI\u2019ve been locked out in the cold\nBut I don\u2019t aim to give ol Satan\nAny claim upon my soul\n\nYou\u2019d better look around you\u2019d better look around\nYou\u2019d better be wondering what salvation\u2019s all about\nYou better believe and understand before old Satan takes your hand\nHe\u2019s gonna take you but it ain\u2019t gonna be to the promised land\n\nWhen your friends all turn against you\nEven though you\u2019ve done your best\nSay a prayer and keep on trying\nAnd let the good Lord do the rest\n\nWhen temptations all around you\nAnd you feel like turnin\u2019 back\nJust remember that old Satan\u2019s\nRight there breathin\u2019 down your back",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Living in the world of mass confusion",
+        "Where contentment\u2019s hard to find",
+        "Living in the days of revelation",
+        "With old Satan close behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been talked about and laughed at",
+        "I\u2019ve been locked out in the cold",
+        "But I don\u2019t aim to give ol Satan",
+        "Any claim upon my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019d better look around you\u2019d better look around",
+        "You\u2019d better be wondering what salvation\u2019s all about",
+        "You better believe and understand before old Satan takes your hand",
+        "He\u2019s gonna take you but it ain\u2019t gonna be to the promised land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When your friends all turn against you",
+        "Even though you\u2019ve done your best",
+        "Say a prayer and keep on trying",
+        "And let the good Lord do the rest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When temptations all around you",
+        "And you feel like turnin\u2019 back",
+        "Just remember that old Satan\u2019s",
+        "Right there breathin\u2019 down your back"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

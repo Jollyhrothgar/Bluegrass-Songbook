@@ -1,0 +1,49 @@
+{
+  "slug": "driving-nails-in-my-coffin",
+  "title": "Driving Nails In My Coffin",
+  "source_url": "https://www.bluegrasslyrics.com/song/driving-nails-in-my-coffin/",
+  "raw_lyrics": "My sweetheart is gone and I\u2019m so lonely\nShe said that she and I were through\nI started out a-drinking for a past time\nDriving nails in my coffin over you\n\nI\u2019m driving nails in my coffin\nEven time I drink a bottle of booze\nI\u2019m just driving nail in my coffin\nDriving nails in my coffin over you\n\nNow ever since the day that we parted\nI\u2019ve been so sad so blue\nI can\u2019t help thinkin\u2019 about her\nAnd I just can\u2019t quit drinkin\u2019 that old booze\n\nWell you turned me down you don\u2019t want me\nThere\u2019s nothing more I can do\nI\u2019ll be driving nails in my coffin\nWorrying\u2019 my darlin\u2019 over you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My sweetheart is gone and I\u2019m so lonely",
+        "She said that she and I were through",
+        "I started out a-drinking for a past time",
+        "Driving nails in my coffin over you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m driving nails in my coffin",
+        "Even time I drink a bottle of booze",
+        "I\u2019m just driving nail in my coffin",
+        "Driving nails in my coffin over you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now ever since the day that we parted",
+        "I\u2019ve been so sad so blue",
+        "I can\u2019t help thinkin\u2019 about her",
+        "And I just can\u2019t quit drinkin\u2019 that old booze"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well you turned me down you don\u2019t want me",
+        "There\u2019s nothing more I can do",
+        "I\u2019ll be driving nails in my coffin",
+        "Worrying\u2019 my darlin\u2019 over you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

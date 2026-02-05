@@ -1,0 +1,39 @@
+{
+  "slug": "pain-in-my-heart",
+  "title": "Pain In My Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/pain-in-my-heart/",
+  "raw_lyrics": "When I first I met you, right from the start\nYou knew that I loved you, from the pain in my heart\nSo look in my eyes and see that it\u2019s true\nAnd say that you love me, please don\u2019t make me blue\n\nWith a pain in my heart and blues on my mind\nI\u2019ll always love you but can you be mine\nCan you be mine with another man\u2019s name\nYou know that I love you and I\u2019m not to blame\n\nSay that you love me and you will be mine\nWith a pain in your heart and blues on your mind\nPlease say that you love me and don\u2019t say goodbye\nYou know that I love you, for you I would die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I first I met you, right from the start",
+        "You knew that I loved you, from the pain in my heart",
+        "So look in my eyes and see that it\u2019s true",
+        "And say that you love me, please don\u2019t make me blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "With a pain in my heart and blues on my mind",
+        "I\u2019ll always love you but can you be mine",
+        "Can you be mine with another man\u2019s name",
+        "You know that I love you and I\u2019m not to blame"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Say that you love me and you will be mine",
+        "With a pain in your heart and blues on your mind",
+        "Please say that you love me and don\u2019t say goodbye",
+        "You know that I love you, for you I would die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

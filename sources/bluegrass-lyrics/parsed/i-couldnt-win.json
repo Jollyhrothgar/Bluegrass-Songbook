@@ -1,0 +1,49 @@
+{
+  "slug": "i-couldnt-win",
+  "title": "I Couldn\u2019t Win",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-couldnt-win/",
+  "raw_lyrics": "I couldn\u2019t win because she did not love me\nShe just pretended as she kissed me then\nAnd then about the time I really loved her\nShe left me and I knew I couldn\u2019t win\n\nI\u2019m thankful for the happiness she gave me\nI wish that I could fall in love again\nI don\u2019t blame her I guess I\u2019m just unlucky\nBut from the start I knew I couldn\u2019t win\n\nTonight I sit here drinking in this tavern\nAnd as I order up the drinks again\nI see her smiling sweetly at another\nIf only he just knew that he can\u2019t win\n\nA broken heart she must have had in childhood\nNow she\u2019s afraid it might happen again\nShe\u2019s really not to blame for all my heartaches\nBut from the start I knew I couldn\u2019t win",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I couldn\u2019t win because she did not love me",
+        "She just pretended as she kissed me then",
+        "And then about the time I really loved her",
+        "She left me and I knew I couldn\u2019t win"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m thankful for the happiness she gave me",
+        "I wish that I could fall in love again",
+        "I don\u2019t blame her I guess I\u2019m just unlucky",
+        "But from the start I knew I couldn\u2019t win"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight I sit here drinking in this tavern",
+        "And as I order up the drinks again",
+        "I see her smiling sweetly at another",
+        "If only he just knew that he can\u2019t win"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A broken heart she must have had in childhood",
+        "Now she\u2019s afraid it might happen again",
+        "She\u2019s really not to blame for all my heartaches",
+        "But from the start I knew I couldn\u2019t win"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

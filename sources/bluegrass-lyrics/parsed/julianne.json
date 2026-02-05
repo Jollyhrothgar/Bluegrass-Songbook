@@ -1,0 +1,39 @@
+{
+  "slug": "julianne",
+  "title": "Julianne",
+  "source_url": "https://www.bluegrasslyrics.com/song/julianne/",
+  "raw_lyrics": "Julianne what are you doing, making plans on leaving me?\nHave I made your life unhappy, is this how it\u2019s got to be?\nWill you be here in the morning when the rooster starts to crow?\nWill my tears be all that\u2019s called for Julianne? I\u2019ve got to know\n\nDress yourself in silk and satin, put some ribbons in your hair\nBut don\u2019t say you\u2019re gonna leave me, it\u2019s more than I can bear\nGo and have your night of dancing if you like those country songs\nBut when all the fun is over, Julianne, come on home\n\nJulianne, you know I love you, I can\u2019t live my life alone\nIs there some way I can please you, tell me what could keep you home\nI\u2019ve got no gold and silver, got no diamonds for your hand\nAll I have is love, this love I\u2019ll give you Oh, I need you, Julianne",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Julianne what are you doing, making plans on leaving me?",
+        "Have I made your life unhappy, is this how it\u2019s got to be?",
+        "Will you be here in the morning when the rooster starts to crow?",
+        "Will my tears be all that\u2019s called for Julianne? I\u2019ve got to know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Dress yourself in silk and satin, put some ribbons in your hair",
+        "But don\u2019t say you\u2019re gonna leave me, it\u2019s more than I can bear",
+        "Go and have your night of dancing if you like those country songs",
+        "But when all the fun is over, Julianne, come on home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Julianne, you know I love you, I can\u2019t live my life alone",
+        "Is there some way I can please you, tell me what could keep you home",
+        "I\u2019ve got no gold and silver, got no diamonds for your hand",
+        "All I have is love, this love I\u2019ll give you Oh, I need you, Julianne"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

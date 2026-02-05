@@ -1,0 +1,29 @@
+{
+  "slug": "let-me-love-you-one-more-time",
+  "title": "Let Me Love You One More Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/let-me-love-you-one-more-time/",
+  "raw_lyrics": "Lay your head on my shoulder\nPut your little hand in mine\nWe\u2019ll walk down lovers lane together\nLet me love you one more time\n\nTomorrow you\u2019ll be with another\nThings just didn\u2019t turn out right\nBut to my grave I\u2019ll carry with me\nA memory of your love tonight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lay your head on my shoulder",
+        "Put your little hand in mine",
+        "We\u2019ll walk down lovers lane together",
+        "Let me love you one more time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tomorrow you\u2019ll be with another",
+        "Things just didn\u2019t turn out right",
+        "But to my grave I\u2019ll carry with me",
+        "A memory of your love tonight"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

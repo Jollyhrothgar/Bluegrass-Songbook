@@ -1,0 +1,39 @@
+{
+  "slug": "little-log-hut-in-the-lane",
+  "title": "Little Log Hut In The Lane",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-log-hut-in-the-lane/",
+  "raw_lyrics": "Mamma says she don\u2019t want me because I\u2019m getting old\nFears that I might freeze to death the weather is so cold\nIf I live tonight I think I will try\nWhen the moon goes down tonight I\u2019m a gonna say goodbye\n\nI\u2019m goin from the cotton fields\nI\u2019m goin from the cane\nI\u2019m goin from that little log hut\nThat stands down in the lane\n\nNow I\u2019m old and feeble and I cannot see my way\nMamma says I\u2019m old and gray and only in the way\nI\u2019m leaving the little log hut the place I love to dwell\nWhen the stars shine bright tonight I\u2019m a gonna bid farewell",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Mamma says she don\u2019t want me because I\u2019m getting old",
+        "Fears that I might freeze to death the weather is so cold",
+        "If I live tonight I think I will try",
+        "When the moon goes down tonight I\u2019m a gonna say goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m goin from the cotton fields",
+        "I\u2019m goin from the cane",
+        "I\u2019m goin from that little log hut",
+        "That stands down in the lane"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m old and feeble and I cannot see my way",
+        "Mamma says I\u2019m old and gray and only in the way",
+        "I\u2019m leaving the little log hut the place I love to dwell",
+        "When the stars shine bright tonight I\u2019m a gonna bid farewell"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "old-black-mountain-saturday-night",
+  "title": "Old Black Mountain Saturday Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-black-mountain-saturday-night/",
+  "raw_lyrics": "On old Black Mountain, on Saturday night\nMountain boys are doin\u2019 alright\nFrom an old fruit jar they get on the jag\nand a hootin\u2019 up a tune called the Black Mountain Rag\n\nHey, over there\u2019s a pretty little widder\nBet you five bucks that I\u2019m a-gonna git \u2018er\nGonna swing her round the corner and her feet won\u2019t lag\nWhen you\u2019re hootin\u2019 up a tune called the Black Mountain Rag\n\nWhen the caller tips in the middle of the floor\nY\u2019all join hands and circle four\nA-la-main left and a-la-main right\nSwing your honey and you hold her tight\nAll join hands and circle the wheel\nThe more you dance then the better you feel\nSwing your honey and her feet won\u2019t lag\nWhen you\u2019re hootin\u2019 up a tune called the Black Mountain Rag\n\nWith a homemade fiddle and a shoestring bow\nAnd a little bit of rythm of an old banjo\nGive the fiddle a dram, and let it get right\nBlack Mountain is a rockin\u2019 on Saturday night\n\nHey, over there\u2019s a pretty little widder\nWell I bet you five bucks that I\u2019m a-gonna git \u2018er\nGonna swing her round the corner and her feet won\u2019t lag\nWhen you\u2019re hootin\u2019 up a tune called the Black Mountain Rag",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On old Black Mountain, on Saturday night",
+        "Mountain boys are doin\u2019 alright",
+        "From an old fruit jar they get on the jag",
+        "and a hootin\u2019 up a tune called the Black Mountain Rag"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hey, over there\u2019s a pretty little widder",
+        "Bet you five bucks that I\u2019m a-gonna git \u2018er",
+        "Gonna swing her round the corner and her feet won\u2019t lag",
+        "When you\u2019re hootin\u2019 up a tune called the Black Mountain Rag"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the caller tips in the middle of the floor",
+        "Y\u2019all join hands and circle four",
+        "A-la-main left and a-la-main right",
+        "Swing your honey and you hold her tight",
+        "All join hands and circle the wheel",
+        "The more you dance then the better you feel",
+        "Swing your honey and her feet won\u2019t lag",
+        "When you\u2019re hootin\u2019 up a tune called the Black Mountain Rag"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With a homemade fiddle and a shoestring bow",
+        "And a little bit of rythm of an old banjo",
+        "Give the fiddle a dram, and let it get right",
+        "Black Mountain is a rockin\u2019 on Saturday night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hey, over there\u2019s a pretty little widder",
+        "Well I bet you five bucks that I\u2019m a-gonna git \u2018er",
+        "Gonna swing her round the corner and her feet won\u2019t lag",
+        "When you\u2019re hootin\u2019 up a tune called the Black Mountain Rag"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

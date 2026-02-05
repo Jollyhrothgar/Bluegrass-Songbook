@@ -1,0 +1,39 @@
+{
+  "slug": "here-today",
+  "title": "Here Today",
+  "source_url": "https://www.bluegrasslyrics.com/song/here-today/",
+  "raw_lyrics": "Here today and gone tomorrow\nOur love will always be a hit and run affair\nI know you love me but you\u2019re just a wanderer\nToday I love you but tomorrow I may not care\n\nFor absence never makes the heart grow fonder\nI get lonesome for someones company\nHere today and gone tomorrow\nAnd my loving you is just a fantasy\n\nWhen you\u2019re gone I wish we\u2019d never met\nFor your memory remains within my heart\nHere today and gone tomorrow\nWe can\u2019t be happy so I guess it\u2019s best we part",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Here today and gone tomorrow",
+        "Our love will always be a hit and run affair",
+        "I know you love me but you\u2019re just a wanderer",
+        "Today I love you but tomorrow I may not care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "For absence never makes the heart grow fonder",
+        "I get lonesome for someones company",
+        "Here today and gone tomorrow",
+        "And my loving you is just a fantasy"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you\u2019re gone I wish we\u2019d never met",
+        "For your memory remains within my heart",
+        "Here today and gone tomorrow",
+        "We can\u2019t be happy so I guess it\u2019s best we part"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "unclouded-day",
+  "title": "Unclouded Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/unclouded-day/",
+  "raw_lyrics": "Oh they tell me of a land far beyond the skies\nOh they tell me of a home far away\nOh they tell me of a home where no storm clouds rise\nOh they tell me of an unclouded day\n\nOh the land of cloudless day\nOh the land of an unclouded sky\nOh they tell me of a home where no storm clouds  rise\nOh they tell me of an unclouded day\n\nOh they tell me of a home where my friends have gone\nOh they tell me that land far away\nWhere the tree of life in eternal bloom\nShed its fragrance through the unclouded day\n\nOh they tell me of the King in his beauty there\nAnd they tell me that mine eyes shall behold\nWhere He sits on the throne that is whiter than snow\nIn that city that is made of gold\n\nOh they tell me that He smiles on his children there\nAnd His smile drives their sorrows all away\nAnd they tell me that no tears ever come again\nIn that lovely land of unclouded sky",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh they tell me of a land far beyond the skies",
+        "Oh they tell me of a home far away",
+        "Oh they tell me of a home where no storm clouds rise",
+        "Oh they tell me of an unclouded day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the land of cloudless day",
+        "Oh the land of an unclouded sky",
+        "Oh they tell me of a home where no storm clouds  rise",
+        "Oh they tell me of an unclouded day"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh they tell me of a home where my friends have gone",
+        "Oh they tell me that land far away",
+        "Where the tree of life in eternal bloom",
+        "Shed its fragrance through the unclouded day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh they tell me of the King in his beauty there",
+        "And they tell me that mine eyes shall behold",
+        "Where He sits on the throne that is whiter than snow",
+        "In that city that is made of gold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh they tell me that He smiles on his children there",
+        "And His smile drives their sorrows all away",
+        "And they tell me that no tears ever come again",
+        "In that lovely land of unclouded sky"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

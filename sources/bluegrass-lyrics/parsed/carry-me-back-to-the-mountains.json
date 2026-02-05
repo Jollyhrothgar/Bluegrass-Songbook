@@ -1,0 +1,49 @@
+{
+  "slug": "carry-me-back-to-the-mountains",
+  "title": "Carry Me Back To The Mountains",
+  "source_url": "https://www.bluegrasslyrics.com/song/carry-me-back-to-the-mountains/",
+  "raw_lyrics": "Carry me back to the mountains\nBack beneath the southern sky\nLay me to rest in the mountains\nThere\u2019s where my sweetheart lies\n\nI get so lonesome and weary\nNo matter where I roam\nSo carry me back to the mountains\nBack to my home sweet home\n\nI was a wild careless youngster\nLonging to roam from the start\nI left my home in the mountains\nAnd broke my poor darling\u2019s heart\n\nI caught a train at the crossing\nAnd never told her goodbye\nThen someone wrote me a letter\nAnd told me my sweetheart had died",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Carry me back to the mountains",
+        "Back beneath the southern sky",
+        "Lay me to rest in the mountains",
+        "There\u2019s where my sweetheart lies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I get so lonesome and weary",
+        "No matter where I roam",
+        "So carry me back to the mountains",
+        "Back to my home sweet home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was a wild careless youngster",
+        "Longing to roam from the start",
+        "I left my home in the mountains",
+        "And broke my poor darling\u2019s heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I caught a train at the crossing",
+        "And never told her goodbye",
+        "Then someone wrote me a letter",
+        "And told me my sweetheart had died"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

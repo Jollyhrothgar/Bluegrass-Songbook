@@ -1,0 +1,39 @@
+{
+  "slug": "thirty-two-acres",
+  "title": "Thirty Two Acres",
+  "source_url": "https://www.bluegrasslyrics.com/song/thirty-two-acres/",
+  "raw_lyrics": "I sawed the timber for the cabin floor\nI built a plank fence out of locust board\nI worked the corn rows in the early morn\nAnd raised a family on a poor man\u2019s farm\n\nThirty two acres of bottom land\nBought and paid for by my own hand\nWorth a  fortune to a working man\nThirty two acres of bottom land\n\nI planted a peach tree, now the leaves are dying\nI watered a grapevine; it\u2019s no longer mine\nThe county\u2019s taken everything I own\nCause it\u2019s on the right way for a four lane road",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I sawed the timber for the cabin floor",
+        "I built a plank fence out of locust board",
+        "I worked the corn rows in the early morn",
+        "And raised a family on a poor man\u2019s farm"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Thirty two acres of bottom land",
+        "Bought and paid for by my own hand",
+        "Worth a  fortune to a working man",
+        "Thirty two acres of bottom land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I planted a peach tree, now the leaves are dying",
+        "I watered a grapevine; it\u2019s no longer mine",
+        "The county\u2019s taken everything I own",
+        "Cause it\u2019s on the right way for a four lane road"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

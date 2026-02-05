@@ -1,0 +1,59 @@
+{
+  "slug": "little-maggie",
+  "title": "Little Maggie",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-maggie/",
+  "raw_lyrics": "Oh yonder stands little Maggie\nWith a dram glass in her hands\nShe\u2019s drinking away her troubles\nShe\u2019s a courting some other man\n\nOh how can I ever stand it\nJust to see them two blue eyes\nA shining in the moonlight\nLike two diamonds in the sky\n\nLast time a saw little Maggie\nShe was sitting on the banks of the sea\nWith a forty-four around her\nAnd a banjo on her knee\n\nLay down your last gold dollar\nLay down your gold watch and chain\nLittle Maggie\u2019s gonna dance for daddy\nListen to that old banjo ring\n\nPretty flowers were made for blooming\nPretty stars were made to shine\nPretty women were made for loving\nLittle Maggie was made for mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh yonder stands little Maggie",
+        "With a dram glass in her hands",
+        "She\u2019s drinking away her troubles",
+        "She\u2019s a courting some other man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh how can I ever stand it",
+        "Just to see them two blue eyes",
+        "A shining in the moonlight",
+        "Like two diamonds in the sky"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last time a saw little Maggie",
+        "She was sitting on the banks of the sea",
+        "With a forty-four around her",
+        "And a banjo on her knee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lay down your last gold dollar",
+        "Lay down your gold watch and chain",
+        "Little Maggie\u2019s gonna dance for daddy",
+        "Listen to that old banjo ring"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Pretty flowers were made for blooming",
+        "Pretty stars were made to shine",
+        "Pretty women were made for loving",
+        "Little Maggie was made for mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

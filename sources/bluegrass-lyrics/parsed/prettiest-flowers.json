@@ -1,0 +1,49 @@
+{
+  "slug": "prettiest-flowers",
+  "title": "Prettiest Flowers",
+  "source_url": "https://www.bluegrasslyrics.com/song/prettiest-flowers/",
+  "raw_lyrics": "I know there is a land of beautiful flowers\nWhere we\u2019ll meet again when life is over\nWhere we\u2019ll while away the endless hours\nOn heaven\u2019s bright eternal shore\n\nThe prettiest beds of flowers will be blooming\nBy the prettiest treats our eyes will ever behold\nWhere the beautiful tree of life for us is waiting\nBy the prettiest mansion made with purest gold\n\nI want to meet you by that beautiful river\nOn that eternal morning in the sky\nWhere we\u2019ll live in peace through endless ages\nWhere we\u2019ll never say goodbye\n\nThe prettiest robes and crowns we\u2019ll all be wearing\nIn the city four square beyond this world of strife\nAnd the prettiest songs of the angels will be singing\nOn the beautiful morning by the river of life",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I know there is a land of beautiful flowers",
+        "Where we\u2019ll meet again when life is over",
+        "Where we\u2019ll while away the endless hours",
+        "On heaven\u2019s bright eternal shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The prettiest beds of flowers will be blooming",
+        "By the prettiest treats our eyes will ever behold",
+        "Where the beautiful tree of life for us is waiting",
+        "By the prettiest mansion made with purest gold"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I want to meet you by that beautiful river",
+        "On that eternal morning in the sky",
+        "Where we\u2019ll live in peace through endless ages",
+        "Where we\u2019ll never say goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The prettiest robes and crowns we\u2019ll all be wearing",
+        "In the city four square beyond this world of strife",
+        "And the prettiest songs of the angels will be singing",
+        "On the beautiful morning by the river of life"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

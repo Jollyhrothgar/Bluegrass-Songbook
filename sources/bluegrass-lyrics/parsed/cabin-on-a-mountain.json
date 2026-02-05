@@ -1,0 +1,39 @@
+{
+  "slug": "cabin-on-a-mountain",
+  "title": "Cabin On A Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/cabin-on-a-mountain/",
+  "raw_lyrics": "There\u2019s a cabin on a mountain far away in Tennessee\nDearest place this side of heaven and it\u2019s where I long to be\nI\u2019ve rambled this world over sailed upon the deep blue sea\nBut in a cabin on a mountain\u2019s where my heart will always be\n\nI said good-bye to my blue-eyed mountain sweetheart\nDearest girl in this whole wide world to me\nEvery night of her I\u2019m dreamin\u2019\nIn a cabin on a mountain far away In Tennessee.\n\nNow my ramblin\u2019 days are over for tonight I\u2019m on my way\nTo that cabin on a mountain in Tennessee so far away\nI searched this wide world over sailed upon the deep blue sea\nBut in a cabin with my darlin\u2019s where my heart will always be",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a cabin on a mountain far away in Tennessee",
+        "Dearest place this side of heaven and it\u2019s where I long to be",
+        "I\u2019ve rambled this world over sailed upon the deep blue sea",
+        "But in a cabin on a mountain\u2019s where my heart will always be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I said good-bye to my blue-eyed mountain sweetheart",
+        "Dearest girl in this whole wide world to me",
+        "Every night of her I\u2019m dreamin\u2019",
+        "In a cabin on a mountain far away In Tennessee."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now my ramblin\u2019 days are over for tonight I\u2019m on my way",
+        "To that cabin on a mountain in Tennessee so far away",
+        "I searched this wide world over sailed upon the deep blue sea",
+        "But in a cabin with my darlin\u2019s where my heart will always be"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

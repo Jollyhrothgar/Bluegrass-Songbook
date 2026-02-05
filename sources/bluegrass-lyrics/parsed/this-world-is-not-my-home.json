@@ -1,0 +1,49 @@
+{
+  "slug": "this-world-is-not-my-home",
+  "title": "This World Is Not My Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/this-world-is-not-my-home/",
+  "raw_lyrics": "This world is not my home I\u2019m just-a-passing through\nMy treasures are laid up somewhere beyond the blue\nAngels beckon me to heaven\u2019s open door\nAnd I can\u2019t feel at home in this world anymore\n\nOh Lord you know I have no friend like you\nIf heaven\u2019s not my home oh Lord what will I do\nAngels beckon me to heaven\u2019s open door\nAnd I can\u2019t feel at home in this world anymore\n\nThere all expecting me that\u2019s one thing I know\nI fixed it up with Jesus a long time ago\nHe will take me through though I am weak and poor\nAnd I can\u2019t feel at home in this world anymore\n\nOver in glory land there\u2019ll be no dying there\nThe saints all shouting victory and singing everywhere\nI hear the voice of them that\u2019s gone on before\nAnd I can\u2019t feel at home in this world anymore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "This world is not my home I\u2019m just-a-passing through",
+        "My treasures are laid up somewhere beyond the blue",
+        "Angels beckon me to heaven\u2019s open door",
+        "And I can\u2019t feel at home in this world anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Lord you know I have no friend like you",
+        "If heaven\u2019s not my home oh Lord what will I do",
+        "Angels beckon me to heaven\u2019s open door",
+        "And I can\u2019t feel at home in this world anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There all expecting me that\u2019s one thing I know",
+        "I fixed it up with Jesus a long time ago",
+        "He will take me through though I am weak and poor",
+        "And I can\u2019t feel at home in this world anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Over in glory land there\u2019ll be no dying there",
+        "The saints all shouting victory and singing everywhere",
+        "I hear the voice of them that\u2019s gone on before",
+        "And I can\u2019t feel at home in this world anymore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

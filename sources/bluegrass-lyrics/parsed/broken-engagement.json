@@ -1,0 +1,79 @@
+{
+  "slug": "broken-engagement",
+  "title": "Broken Engagement",
+  "source_url": "https://www.bluegrasslyrics.com/song/broken-engagement/",
+  "raw_lyrics": "They were standing by the window\nOn the night he kissed her cheek\nHe had waited long in silence\nWaited long for her to speak\n\nWhen at last he whispered softly\nAs the cool breeze kissed her head\nShe had waited long to tell him\nWhat they told her he had said\n\nOh they say you love another\nThat you never did love me\nIf these words be true my darling\nI\u2019ll forever set you free\n\nThey are true he hardly answered\nAs the sun and stars above\nWhen they told you my intentions\nThen they told you of my love\n\nHe turned deathly pale and angry\nLeft her standing by the gate\nSent a message by her sister\nBut the message came too late\n\nGod in Heaven sent an Angel\nTo relieve her ache and pain\nShe went drifting off to Heaven\nOn an Angel\u2019s snow white wing\n\nHe was standing by her casket\nAs he looked upon her face\nThen he realized he loved her\nAnd no one could take her place",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "They were standing by the window",
+        "On the night he kissed her cheek",
+        "He had waited long in silence",
+        "Waited long for her to speak"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When at last he whispered softly",
+        "As the cool breeze kissed her head",
+        "She had waited long to tell him",
+        "What they told her he had said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh they say you love another",
+        "That you never did love me",
+        "If these words be true my darling",
+        "I\u2019ll forever set you free"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They are true he hardly answered",
+        "As the sun and stars above",
+        "When they told you my intentions",
+        "Then they told you of my love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He turned deathly pale and angry",
+        "Left her standing by the gate",
+        "Sent a message by her sister",
+        "But the message came too late"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God in Heaven sent an Angel",
+        "To relieve her ache and pain",
+        "She went drifting off to Heaven",
+        "On an Angel\u2019s snow white wing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He was standing by her casket",
+        "As he looked upon her face",
+        "Then he realized he loved her",
+        "And no one could take her place"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

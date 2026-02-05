@@ -1,0 +1,63 @@
+{
+  "slug": "am-i-born-to-die",
+  "title": "Am I Born To Die",
+  "source_url": "https://www.bluegrasslyrics.com/song/am-i-born-to-die/",
+  "raw_lyrics": "And am I born to die\nTo lay this body down\nAnd as my trembling spirit fly\nUnto a world unknown\n\nAnd as my trembling spirit fly\nUnto a world unknown\n\nSoon as from earth I go\nWhat will become of me\nEternal happiness far away\nMust then my portion be\n\nEternal happiness far away\nMust then my portion be\n\nA land of deepest shade\nUnpierced by human thought\nThat weary region of the dead\nWhere all things are forgot\n\nThat weary region of the dead\nWhere all things are forgot",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "And am I born to die",
+        "To lay this body down",
+        "And as my trembling spirit fly",
+        "Unto a world unknown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And as my trembling spirit fly",
+        "Unto a world unknown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Soon as from earth I go",
+        "What will become of me",
+        "Eternal happiness far away",
+        "Must then my portion be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Eternal happiness far away",
+        "Must then my portion be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A land of deepest shade",
+        "Unpierced by human thought",
+        "That weary region of the dead",
+        "Where all things are forgot"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That weary region of the dead",
+        "Where all things are forgot"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

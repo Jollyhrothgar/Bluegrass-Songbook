@@ -1,0 +1,86 @@
+{
+  "slug": "little-black-pony",
+  "title": "Little Black Pony",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-black-pony/",
+  "raw_lyrics": "When I was a little boy I had no time\nNo time for ceremonies\nAll I wanted was to see the world\nfrom the back of a little black pony\nFrom the back of a little black pony.\n\nMr. Lee lived across the street\nhad a daughter my age named Joanie\nIn the summertime we\u2019d build us a boat\nWe\u2019d sail to the island Coney\nWe\u2019d sail to the island Coney\n\nThere used to be a medicine man come around\neverybody called him a phony\nBut I thought he was a king when I heard him ring\nA big bell on the little black pony\nHe was riding on a little black pony.\n\nI said oh mister what can I give you\nI haven\u2019t got much money\nBut I\u2019ll do anything even try to sing\nif you\u2019ll let me have that pony\nI gotta have that little black pony.\n\nHe said son learn to play the banjo\nAll the old tunes happy and lonely\nAnd I\u2019ll be back this way someday\nAnd you can have that pony\nyou can have that little black pony.\n\nWell the old man he never came back\nBut I never once thought he was a phony\nI just guess he must have realized\nhe couldn\u2019t do without that pony\nHe couldn\u2019t live without that little black pony.\n\nMr. Lee moved away and got a job in the city\nThat\u2019s the last I saw of Joanie\nBut I can\u2019t forget the cardboard boats\nand I still love little black ponies\nI still love little black ponies.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I was a little boy I had no time",
+        "No time for ceremonies",
+        "All I wanted was to see the world",
+        "from the back of a little black pony",
+        "From the back of a little black pony."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mr. Lee lived across the street",
+        "had a daughter my age named Joanie",
+        "In the summertime we\u2019d build us a boat",
+        "We\u2019d sail to the island Coney",
+        "We\u2019d sail to the island Coney"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There used to be a medicine man come around",
+        "everybody called him a phony",
+        "But I thought he was a king when I heard him ring",
+        "A big bell on the little black pony",
+        "He was riding on a little black pony."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I said oh mister what can I give you",
+        "I haven\u2019t got much money",
+        "But I\u2019ll do anything even try to sing",
+        "if you\u2019ll let me have that pony",
+        "I gotta have that little black pony."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He said son learn to play the banjo",
+        "All the old tunes happy and lonely",
+        "And I\u2019ll be back this way someday",
+        "And you can have that pony",
+        "you can have that little black pony."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the old man he never came back",
+        "But I never once thought he was a phony",
+        "I just guess he must have realized",
+        "he couldn\u2019t do without that pony",
+        "He couldn\u2019t live without that little black pony."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mr. Lee moved away and got a job in the city",
+        "That\u2019s the last I saw of Joanie",
+        "But I can\u2019t forget the cardboard boats",
+        "and I still love little black ponies",
+        "I still love little black ponies."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

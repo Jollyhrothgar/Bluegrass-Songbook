@@ -1,0 +1,79 @@
+{
+  "slug": "look-on-and-cry",
+  "title": "Look On and Cry",
+  "source_url": "https://www.bluegrasslyrics.com/song/look-on-and-cry/",
+  "raw_lyrics": "My dearest friend it\u2019s fare ye well\nYou slighted me but I wish you well\nAnd never no more your face I\u2019ll see\nI wouldn\u2019t hurt you like you hurt me\n\nYou caused me to weep you caused me to moan\nTo be satisfied I never could be\nI loved you deep and cared for thee\nOh can\u2019t you shed one tear for me\n\nMy dearest friend my harm is done\nI hope to meet you in the world above\nAnd when we meet in peace with thee\nMy dearest friend remember me\n\nNow when I\u2019m dead and I\u2019m laid to rest\nRemember the one that loves you best\nAnd as you pass by where I lie\nLook on my grave look on and cry\n\nAnd now we lay him down to rest\nBeside the one who loves him best\nAnd as you pass by where he lies\nYou must sing this song look on and cry\n\nRemember friends as you pass by\nAs you are once was I\nAs I am here to be\nSo get prepared and follow me\n\nMy dearest friend it\u2019s fare ye well\nYou slighted me but I wish you well\nAnd never no more your face I\u2019ll see\nI wouldn\u2019t hurt you like you hurt me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My dearest friend it\u2019s fare ye well",
+        "You slighted me but I wish you well",
+        "And never no more your face I\u2019ll see",
+        "I wouldn\u2019t hurt you like you hurt me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You caused me to weep you caused me to moan",
+        "To be satisfied I never could be",
+        "I loved you deep and cared for thee",
+        "Oh can\u2019t you shed one tear for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My dearest friend my harm is done",
+        "I hope to meet you in the world above",
+        "And when we meet in peace with thee",
+        "My dearest friend remember me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when I\u2019m dead and I\u2019m laid to rest",
+        "Remember the one that loves you best",
+        "And as you pass by where I lie",
+        "Look on my grave look on and cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And now we lay him down to rest",
+        "Beside the one who loves him best",
+        "And as you pass by where he lies",
+        "You must sing this song look on and cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Remember friends as you pass by",
+        "As you are once was I",
+        "As I am here to be",
+        "So get prepared and follow me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My dearest friend it\u2019s fare ye well",
+        "You slighted me but I wish you well",
+        "And never no more your face I\u2019ll see",
+        "I wouldn\u2019t hurt you like you hurt me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

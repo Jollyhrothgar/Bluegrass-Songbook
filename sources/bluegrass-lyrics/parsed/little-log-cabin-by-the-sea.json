@@ -1,0 +1,59 @@
+{
+  "slug": "little-log-cabin-by-the-sea",
+  "title": "Little Log Cabin By The Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-log-cabin-by-the-sea/",
+  "raw_lyrics": "There is a precious volume of pages worn and old\nIn that little log cabin by the sea\nIt is the old old bible more precious now than gold\nIt\u2019s the bible that my mother gave to me\n\nTis the old precious bible blessed bible\nThat she read in the cabin by the sea (by the sea)\nThe precious precious bible the blessed blessed bible\nThe bible that my mother gave to me\n\nHow often I have listened to the countless town and raves (?)\nRound that little log cabin by the sea\nWhile mother read of Jesus who walked upon the waves\nHow Jesus calmed the stormy Gallilee\n\nHow often oh how often she read of glowing mirth\nWith a message from the precious word above\nIt told of faithful Daniel who trusted in the Lord\nWhile it lead me in the pathway that she brought (?)\n\nThere is no other volume so precious as this book\nIt tells me how to live and how to die\nIt tells me of that city oh wondrous wondrous look\nAnd that I\u2019ll meet my loved ones by and by",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There is a precious volume of pages worn and old",
+        "In that little log cabin by the sea",
+        "It is the old old bible more precious now than gold",
+        "It\u2019s the bible that my mother gave to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tis the old precious bible blessed bible",
+        "That she read in the cabin by the sea (by the sea)",
+        "The precious precious bible the blessed blessed bible",
+        "The bible that my mother gave to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How often I have listened to the countless town and raves (?)",
+        "Round that little log cabin by the sea",
+        "While mother read of Jesus who walked upon the waves",
+        "How Jesus calmed the stormy Gallilee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How often oh how often she read of glowing mirth",
+        "With a message from the precious word above",
+        "It told of faithful Daniel who trusted in the Lord",
+        "While it lead me in the pathway that she brought (?)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is no other volume so precious as this book",
+        "It tells me how to live and how to die",
+        "It tells me of that city oh wondrous wondrous look",
+        "And that I\u2019ll meet my loved ones by and by"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

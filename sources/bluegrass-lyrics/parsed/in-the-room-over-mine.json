@@ -1,0 +1,40 @@
+{
+  "slug": "in-the-room-over-mine",
+  "title": "In The Room Over Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-the-room-over-mine/",
+  "raw_lyrics": "We pass in the hallway almost everyday\nThough I\u2019ve never really met him we don\u2019t have too much to say\nThough I feel that I know him for every night about this time\nWhen he\u2019s a walkin and a talkin in the room over mine\n\nHe may be thinking of things that might have been\nOr of his family and how he\u2019s missing them\nOh it\u2019s hard to know what\u2019s going on in a troubled man\u2019s mind\nBut I can hear him walking and talking in the room over mine\n\nWell its plain to see he\u2019s had a troubled mind by the lines across\nhis face\nAnd the sadness that dims his eyes search for a better place\nWell I know just how he really feels every night about this time\nWhen he\u2019s a walking and a talking I\u2019ll be in that room of mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We pass in the hallway almost everyday",
+        "Though I\u2019ve never really met him we don\u2019t have too much to say",
+        "Though I feel that I know him for every night about this time",
+        "When he\u2019s a walkin and a talkin in the room over mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "He may be thinking of things that might have been",
+        "Or of his family and how he\u2019s missing them",
+        "Oh it\u2019s hard to know what\u2019s going on in a troubled man\u2019s mind",
+        "But I can hear him walking and talking in the room over mine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well its plain to see he\u2019s had a troubled mind by the lines across",
+        "his face",
+        "And the sadness that dims his eyes search for a better place",
+        "Well I know just how he really feels every night about this time",
+        "When he\u2019s a walking and a talking I\u2019ll be in that room of mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

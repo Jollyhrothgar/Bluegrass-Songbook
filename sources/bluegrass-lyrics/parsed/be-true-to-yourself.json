@@ -1,0 +1,39 @@
+{
+  "slug": "be-true-to-yourself",
+  "title": "Be True To Yourself",
+  "source_url": "https://www.bluegrasslyrics.com/song/be-true-to-yourself/",
+  "raw_lyrics": "Be true to yourself little darlin\u2019\nLife is short don\u2019t live it in regret\nIf you\u2019re not happy here go find another\nAnd I\u2019ll pretend that we had never met\n\nI watched, I wondered why you\u2019ve grown so quiet\nDeep in thought you seem so far away\nSay, have you changed your mind about our future\nDon\u2019t lead me on if you don\u2019t want to stay\n\nDon\u2019t be a fool and think you\u2019ll learn to love me\nIf you don\u2019t have those feelings for me now\nLook deep inside your heart and answer truly\nAm I the one you just can\u2019t live without",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Be true to yourself little darlin\u2019",
+        "Life is short don\u2019t live it in regret",
+        "If you\u2019re not happy here go find another",
+        "And I\u2019ll pretend that we had never met"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I watched, I wondered why you\u2019ve grown so quiet",
+        "Deep in thought you seem so far away",
+        "Say, have you changed your mind about our future",
+        "Don\u2019t lead me on if you don\u2019t want to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t be a fool and think you\u2019ll learn to love me",
+        "If you don\u2019t have those feelings for me now",
+        "Look deep inside your heart and answer truly",
+        "Am I the one you just can\u2019t live without"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

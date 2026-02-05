@@ -1,0 +1,67 @@
+{
+  "slug": "likes-of-me",
+  "title": "Likes Of Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/likes-of-me/",
+  "raw_lyrics": "Look outside the rain it pours\nThe lightning flashes and the thunder roars\nI wonder if you\u2019d stand a better chance to try to tame the elements\nRather than try to tame my soul\nTo think your love could ever hold\nTo the likes of me to the likes of me\n\nIt aint that I wouldn\u2019t like to stay\nLive my life in an ordinary way\n9 to 5 a family a little bitty boy upon my knee\nWoman I\u2019d only break your heart\n\nBut that kind of life just ain\u2019t in the cards\nFor the likes of the me the likes of me\n\nThe likes of me that knows no home\nOr the town I\u2019m in or the road I\u2019m on\nI\u2019m a restless soul and I\u2019ll never be still\nSo I\u2019ll follow the sunrise over the hill\n\nI can see the designs of the picture in your mind\nYou think that you could change my life\nThat you\u2019d make me a perfect wife\nWoman you\u2019re sweet you\u2019re lovin\u2019 and kind\n\nSo don\u2019t mess up your pretty little mind\nOn the likes of me on the likes of me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Look outside the rain it pours",
+        "The lightning flashes and the thunder roars",
+        "I wonder if you\u2019d stand a better chance to try to tame the elements",
+        "Rather than try to tame my soul",
+        "To think your love could ever hold",
+        "To the likes of me to the likes of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It aint that I wouldn\u2019t like to stay",
+        "Live my life in an ordinary way",
+        "9 to 5 a family a little bitty boy upon my knee",
+        "Woman I\u2019d only break your heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But that kind of life just ain\u2019t in the cards",
+        "For the likes of the me the likes of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The likes of me that knows no home",
+        "Or the town I\u2019m in or the road I\u2019m on",
+        "I\u2019m a restless soul and I\u2019ll never be still",
+        "So I\u2019ll follow the sunrise over the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can see the designs of the picture in your mind",
+        "You think that you could change my life",
+        "That you\u2019d make me a perfect wife",
+        "Woman you\u2019re sweet you\u2019re lovin\u2019 and kind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So don\u2019t mess up your pretty little mind",
+        "On the likes of me on the likes of me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

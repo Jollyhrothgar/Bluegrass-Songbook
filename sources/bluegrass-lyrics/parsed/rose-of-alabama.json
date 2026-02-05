@@ -1,0 +1,101 @@
+{
+  "slug": "rose-of-alabama",
+  "title": "Rose of Alabama",
+  "source_url": "https://www.bluegrasslyrics.com/song/rose-of-alabama/",
+  "raw_lyrics": "Away from Mississippi\u2019s vale\nWith my ol\u2019 hat there for a sail\nI crossed upon a cotton bale\nTo Rose of Alabama\n\nI landed on the far sand bank\nI sat upon the hollow plank\nAnd there I made the banjo twank\nFor Rose of Alabama\n\nOh brown Rosie\nRose of Alabama\nSweet tobacco posey\nIs my Rose of Alabama\nSweet tobacco posey\nIs my Rose of Alabama\n\nI says to her sit as you please\nAcross my leg she took her ease\nIt\u2019s good to go upon the knees\nSaid Rose of Alabama\n\nThe river rose the cricket sang\nThe lightnin\u2019 bug did flash his wing\nThen like a rope my arms I fling\nRound Rose of Alabama\n\nWe hugged so long I cannot tell\nMy Rosie seemed to like it well\nMy banjo in the river fell\nOh Rose of Alabama\n\nLike alligator after prey\nI dives in but it float away\nAnd all the while it seem to say\nOh Rose of Alabama\n\nNow every day come rain or shower\nI hunt my banjo for an hour\nAnd meet my sweet tobacco flower\nOh Rose of Alabama\n\nOh fare thee well you belles of Spain\nAnd fare thee well to Liza Jane\nYour charms will all be put to shame\nBy Rose of Alabama",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Away from Mississippi\u2019s vale",
+        "With my ol\u2019 hat there for a sail",
+        "I crossed upon a cotton bale",
+        "To Rose of Alabama"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I landed on the far sand bank",
+        "I sat upon the hollow plank",
+        "And there I made the banjo twank",
+        "For Rose of Alabama"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh brown Rosie",
+        "Rose of Alabama",
+        "Sweet tobacco posey",
+        "Is my Rose of Alabama",
+        "Sweet tobacco posey",
+        "Is my Rose of Alabama"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I says to her sit as you please",
+        "Across my leg she took her ease",
+        "It\u2019s good to go upon the knees",
+        "Said Rose of Alabama"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The river rose the cricket sang",
+        "The lightnin\u2019 bug did flash his wing",
+        "Then like a rope my arms I fling",
+        "Round Rose of Alabama"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We hugged so long I cannot tell",
+        "My Rosie seemed to like it well",
+        "My banjo in the river fell",
+        "Oh Rose of Alabama"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Like alligator after prey",
+        "I dives in but it float away",
+        "And all the while it seem to say",
+        "Oh Rose of Alabama"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now every day come rain or shower",
+        "I hunt my banjo for an hour",
+        "And meet my sweet tobacco flower",
+        "Oh Rose of Alabama"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh fare thee well you belles of Spain",
+        "And fare thee well to Liza Jane",
+        "Your charms will all be put to shame",
+        "By Rose of Alabama"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

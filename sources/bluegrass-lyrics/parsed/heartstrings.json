@@ -1,0 +1,52 @@
+{
+  "slug": "heartstrings",
+  "title": "Heartstrings",
+  "source_url": "https://www.bluegrasslyrics.com/song/heartstrings/",
+  "raw_lyrics": "Way up north where the snow flies and the sun don\u2019t hardly shine\nIf it weren\u2019t for my true love\nI\u2019d a long a go lost my mind\nI\u2019d long a go lost my mind\n\nThere are good folks here and good folks there most everywhere I go\nBut the land of my heart is down\nWhere the snow white cotton grows\nWhere the snow white cotton grows\n\nWhen the river runs over from meltin\u2019 snow\nWe will take to the higher ground\nWhen the water goes down again\nWe\u2019ll saddle our old Paint\nWe\u2019ll be homeward bound\nMe and my love will be homeward bound\n\nHeartstrings hang tighter than the roots of a live oak tree\nHoldin\u2019 thru tornado winds\nTougher than timber stronger than steel\nThey\u2019ll guide me back southward again\nThey\u2019ll guide me back southward again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way up north where the snow flies and the sun don\u2019t hardly shine",
+        "If it weren\u2019t for my true love",
+        "I\u2019d a long a go lost my mind",
+        "I\u2019d long a go lost my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There are good folks here and good folks there most everywhere I go",
+        "But the land of my heart is down",
+        "Where the snow white cotton grows",
+        "Where the snow white cotton grows"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the river runs over from meltin\u2019 snow",
+        "We will take to the higher ground",
+        "When the water goes down again",
+        "We\u2019ll saddle our old Paint",
+        "We\u2019ll be homeward bound",
+        "Me and my love will be homeward bound"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Heartstrings hang tighter than the roots of a live oak tree",
+        "Holdin\u2019 thru tornado winds",
+        "Tougher than timber stronger than steel",
+        "They\u2019ll guide me back southward again",
+        "They\u2019ll guide me back southward again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

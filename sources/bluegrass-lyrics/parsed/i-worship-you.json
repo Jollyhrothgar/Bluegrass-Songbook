@@ -1,0 +1,39 @@
+{
+  "slug": "i-worship-you",
+  "title": "I Worship You",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-worship-you/",
+  "raw_lyrics": "I worship you and the things you do\nStill you\u2019re not satisified\nI paid the cost I\u2019ve loved and lost\nBut still I worship you\n\nWhen we first met and loved we were always side by side\nNever then did I think you\u2019d go wrong\nBut you started goin\u2019 round with the wrong kind of crowd\nTo my sorrow I\u2019ve found you\u2019ve gone wrong\n\nI go back to our home and I lie awake \u2019til dawn\nStill I can\u2019t get you out of my life\nAnd my friends say next day what a price you must pay\nLast night I saw someone with your wife",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I worship you and the things you do",
+        "Still you\u2019re not satisified",
+        "I paid the cost I\u2019ve loved and lost",
+        "But still I worship you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When we first met and loved we were always side by side",
+        "Never then did I think you\u2019d go wrong",
+        "But you started goin\u2019 round with the wrong kind of crowd",
+        "To my sorrow I\u2019ve found you\u2019ve gone wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I go back to our home and I lie awake \u2019til dawn",
+        "Still I can\u2019t get you out of my life",
+        "And my friends say next day what a price you must pay",
+        "Last night I saw someone with your wife"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

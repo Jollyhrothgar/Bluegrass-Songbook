@@ -1,0 +1,39 @@
+{
+  "slug": "i-believed-in-you-darling",
+  "title": "I Believed In You Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-believed-in-you-darling/",
+  "raw_lyrics": "Oh you said that you loved me that your heart would be true\nBut now you\u2019ve gone and left me, I\u2019m so blue\nI believed in you darling that your heart would be true\nBut now you\u2019ve gone and left me, I\u2019m so blue\n\nOur vows have been broken, you have proven untrue\nAnother has my sweetheart and the love that I once knew\nI believed in you darling that your heart would be true\nBut now you\u2019ve gone and left me I\u2019m so blue\n\nOh the nights are so lonely, dreams of you haunt me so\nWhat\u2019s happened little darling I don\u2019t know\nI believed in you darling that your heart would be true\nBut now you\u2019ve gone and left me I\u2019m so blue",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh you said that you loved me that your heart would be true",
+        "But now you\u2019ve gone and left me, I\u2019m so blue",
+        "I believed in you darling that your heart would be true",
+        "But now you\u2019ve gone and left me, I\u2019m so blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Our vows have been broken, you have proven untrue",
+        "Another has my sweetheart and the love that I once knew",
+        "I believed in you darling that your heart would be true",
+        "But now you\u2019ve gone and left me I\u2019m so blue"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the nights are so lonely, dreams of you haunt me so",
+        "What\u2019s happened little darling I don\u2019t know",
+        "I believed in you darling that your heart would be true",
+        "But now you\u2019ve gone and left me I\u2019m so blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

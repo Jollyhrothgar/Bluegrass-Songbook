@@ -1,0 +1,41 @@
+{
+  "slug": "a-faded-red-ribbon",
+  "title": "A Faded Red Ribbon",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-faded-red-ribbon/",
+  "raw_lyrics": "A lock of your hair and a faded red ribbon\nIs all I have left to remind me of you\nA lock of your hair and a faded red ribbon\nIs all I have left of a love we once knew\nIs all I have left of a love we once knew\n\nI know I mistreated you and you went away\nYou found somebody new and now I must pay\nListen here boys if you have a sweetheart\nShow her you love her and make her your wife\nFor the lock of her hair and a faded red ribbon\nWill make you unhappy for the rest of your life\nWill make you unhappy for the rest of your life\n\nlisten here boys is you have a sweetheart\nShow her you love her and make her your wife",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "A lock of your hair and a faded red ribbon",
+        "Is all I have left to remind me of you",
+        "A lock of your hair and a faded red ribbon",
+        "Is all I have left of a love we once knew",
+        "Is all I have left of a love we once knew"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know I mistreated you and you went away",
+        "You found somebody new and now I must pay",
+        "Listen here boys if you have a sweetheart",
+        "Show her you love her and make her your wife",
+        "For the lock of her hair and a faded red ribbon",
+        "Will make you unhappy for the rest of your life",
+        "Will make you unhappy for the rest of your life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "listen here boys is you have a sweetheart",
+        "Show her you love her and make her your wife"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "i-cant-go-on-loving-you",
+  "title": "I Can\u2019t Go On Loving You",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-cant-go-on-loving-you/",
+  "raw_lyrics": "The flame of love to ash has burned\nMy faded love will not return\nYou want me back I know it\u2019s true\nBut I can\u2019t go on loving you\n\nI can\u2019t go on loving you\nCan\u2019t stand the pain you put me through\nTorturing my mind with the things you do\nNo I can\u2019t go on loving you\n\nI wish you happiness sweetheart\nIt hurts to know we have to part\nI\u2019ll think of you and the love we knew\nOh I can\u2019t go on loving you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The flame of love to ash has burned",
+        "My faded love will not return",
+        "You want me back I know it\u2019s true",
+        "But I can\u2019t go on loving you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can\u2019t go on loving you",
+        "Can\u2019t stand the pain you put me through",
+        "Torturing my mind with the things you do",
+        "No I can\u2019t go on loving you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish you happiness sweetheart",
+        "It hurts to know we have to part",
+        "I\u2019ll think of you and the love we knew",
+        "Oh I can\u2019t go on loving you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

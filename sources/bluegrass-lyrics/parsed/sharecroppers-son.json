@@ -1,0 +1,57 @@
+{
+  "slug": "sharecroppers-son",
+  "title": "Sharecropper\u2019s Son",
+  "source_url": "https://www.bluegrasslyrics.com/song/sharecroppers-son/",
+  "raw_lyrics": "We moved here from somewhere when i was fourteen\nWorked this poor ground for bacon and beans\nLandlord told me that the hard times are near\nIt didn\u2019t mean a thing \u2019cause they\u2019re already here\n\nDaylight till dark my work\u2019s never done\nLord have mercy on this sharecropper\u2019s son\n\nMama\u2019s got the fever and the baby\u2019s sick too\nPapa\u2019s downtown just soakin\u2019 up that booze\nJust out of prison, says he\u2019s never goin\u2019 back\nAin\u2019t a bloodhound in georgia that can follow his track\n\nWe bought a new mule, brought him up from down south\nHe\u2019ll kick the chewin\u2019 tobacco right out of your mouth\nWater in the well nearly clear out of sight\nCan\u2019t take a bath on a saturday night\n\nCrops are all wilted, no rain day or night\nPreacher come for dinner, we ain\u2019t got a bite\nEleven in the family, ten daughters and a son\nMama just told us there\u2019ll be another one",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We moved here from somewhere when i was fourteen",
+        "Worked this poor ground for bacon and beans",
+        "Landlord told me that the hard times are near",
+        "It didn\u2019t mean a thing \u2019cause they\u2019re already here"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Daylight till dark my work\u2019s never done",
+        "Lord have mercy on this sharecropper\u2019s son"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mama\u2019s got the fever and the baby\u2019s sick too",
+        "Papa\u2019s downtown just soakin\u2019 up that booze",
+        "Just out of prison, says he\u2019s never goin\u2019 back",
+        "Ain\u2019t a bloodhound in georgia that can follow his track"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We bought a new mule, brought him up from down south",
+        "He\u2019ll kick the chewin\u2019 tobacco right out of your mouth",
+        "Water in the well nearly clear out of sight",
+        "Can\u2019t take a bath on a saturday night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Crops are all wilted, no rain day or night",
+        "Preacher come for dinner, we ain\u2019t got a bite",
+        "Eleven in the family, ten daughters and a son",
+        "Mama just told us there\u2019ll be another one"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

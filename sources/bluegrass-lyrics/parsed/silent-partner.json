@@ -1,0 +1,49 @@
+{
+  "slug": "silent-partner",
+  "title": "Silent Partner",
+  "source_url": "https://www.bluegrasslyrics.com/song/silent-partner/",
+  "raw_lyrics": "Just heart beat ago my darling left me\nWith a good by kiss she sadly broke the news\nIn her empty chair that\u2019s just across the table\nSits my brand new silent partner called the blues\n\nHer cigarette\u2019s still burning in the ash tray\nReminds me of the pain I put her through\nAs I watch the front door slowly close behind her\nThrough the back door walked my partner called the blues\n\nAs I look back at the time we spent together\nI can see how wrong I\u2019ve been for all these years\nFor she offered me a lifetime of devotion\nIn return she\u2019ll walk a highway paved with tears\n\nI know it\u2019s too late to ask forgiveness\nWith a love like hers it\u2019s just too much to lose\nNow I know that I must start my life all over\nWith my brand new silent partner called the blues",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just heart beat ago my darling left me",
+        "With a good by kiss she sadly broke the news",
+        "In her empty chair that\u2019s just across the table",
+        "Sits my brand new silent partner called the blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her cigarette\u2019s still burning in the ash tray",
+        "Reminds me of the pain I put her through",
+        "As I watch the front door slowly close behind her",
+        "Through the back door walked my partner called the blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I look back at the time we spent together",
+        "I can see how wrong I\u2019ve been for all these years",
+        "For she offered me a lifetime of devotion",
+        "In return she\u2019ll walk a highway paved with tears"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know it\u2019s too late to ask forgiveness",
+        "With a love like hers it\u2019s just too much to lose",
+        "Now I know that I must start my life all over",
+        "With my brand new silent partner called the blues"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

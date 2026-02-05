@@ -1,0 +1,50 @@
+{
+  "slug": "if-i-should-wander-back-tonight",
+  "title": "If I Should Wander Back Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-i-should-wander-back-tonight/",
+  "raw_lyrics": "For many years I\u2019ve been a rolling stone, my darling\nLike a gypsy I have roamed from place to place\nFortune never came to me\nBut how happy I would be\nJust to look again upon your smiling face\n\nNow if I should wander back tonight would you be waiting\nWould your eyes be filled with love\u2019s own tender light\nWould your arms be empty, dear would you thrill to find me near\nWould you love me if I\u2019d wander back tonight\n\nWhen budding flowers lend their fragrance in the springtime\nI recall the roses twining round your door\nFancy then I homeward stay and I seem to hear you say\nThat you love me as you did in days of yore\n\nLast night I dreamed that you and I were back together\nI held your hand so gently in my own\nHeard you say we\u2019d never part as I pressed you to my heart\nThen I woke in tears to find myself alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "For many years I\u2019ve been a rolling stone, my darling",
+        "Like a gypsy I have roamed from place to place",
+        "Fortune never came to me",
+        "But how happy I would be",
+        "Just to look again upon your smiling face"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now if I should wander back tonight would you be waiting",
+        "Would your eyes be filled with love\u2019s own tender light",
+        "Would your arms be empty, dear would you thrill to find me near",
+        "Would you love me if I\u2019d wander back tonight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When budding flowers lend their fragrance in the springtime",
+        "I recall the roses twining round your door",
+        "Fancy then I homeward stay and I seem to hear you say",
+        "That you love me as you did in days of yore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night I dreamed that you and I were back together",
+        "I held your hand so gently in my own",
+        "Heard you say we\u2019d never part as I pressed you to my heart",
+        "Then I woke in tears to find myself alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

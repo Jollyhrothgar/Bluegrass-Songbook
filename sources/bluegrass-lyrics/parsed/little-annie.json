@@ -1,0 +1,49 @@
+{
+  "slug": "little-annie",
+  "title": "Little Annie",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-annie/",
+  "raw_lyrics": "Once more I must leave you little Annie\nWe must part at the end of the lane\nBut you promised me little Annie\nYou\u2019d be waiting when the springtime comes again\n\nWhen the springtime comes o\u2019er the mountains\nAnd the wild flowers scatter o\u2019er the plains\nI will watch for the leaves to return to the trees\nAnd I\u2019ll be waiting when the springtime comes again\n\nWhen the sun shines down on the mountains\nAnd the wild sheep are wandering all alone\nAnd the birds and the bees are singing\nThen it makes me think that springtime won\u2019t be long\n\nNow the springtime has come on the mountains\nAnd I\u2019m on my way back to the lane\nFor you promised me little Annie\nYou\u2019d be waiting when the springtime comes again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once more I must leave you little Annie",
+        "We must part at the end of the lane",
+        "But you promised me little Annie",
+        "You\u2019d be waiting when the springtime comes again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the springtime comes o\u2019er the mountains",
+        "And the wild flowers scatter o\u2019er the plains",
+        "I will watch for the leaves to return to the trees",
+        "And I\u2019ll be waiting when the springtime comes again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the sun shines down on the mountains",
+        "And the wild sheep are wandering all alone",
+        "And the birds and the bees are singing",
+        "Then it makes me think that springtime won\u2019t be long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the springtime has come on the mountains",
+        "And I\u2019m on my way back to the lane",
+        "For you promised me little Annie",
+        "You\u2019d be waiting when the springtime comes again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

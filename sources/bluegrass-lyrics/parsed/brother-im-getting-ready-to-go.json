@@ -1,0 +1,49 @@
+{
+  "slug": "brother-im-getting-ready-to-go",
+  "title": "Brother I\u2019m Getting Ready To Go",
+  "source_url": "https://www.bluegrasslyrics.com/song/brother-im-getting-ready-to-go/",
+  "raw_lyrics": "The lord\u2019s saved me I want the world to know\nI\u2019m on my way to glory land\nThere I\u2019ll see Jesus and take Him by the hand\nBrother I\u2019m getting ready to go\n\nI\u2019m getting ready to go I know\nI\u2019m leaving this world here below\nAin\u2019t nothing in this world can turn me back I know\nBrother I\u2019m getting ready to go\n\nSay there wake up while yet you have time\nAnd in the glory land wave\nJesus will hear you and answer your call\nGet ready to meet him today\n\nBrother don\u2019t wait till it is too late\nJesus might call for you today\nIt\u2019s awful to know when you leave this old world below\nIf you are not ready to go",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The lord\u2019s saved me I want the world to know",
+        "I\u2019m on my way to glory land",
+        "There I\u2019ll see Jesus and take Him by the hand",
+        "Brother I\u2019m getting ready to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m getting ready to go I know",
+        "I\u2019m leaving this world here below",
+        "Ain\u2019t nothing in this world can turn me back I know",
+        "Brother I\u2019m getting ready to go"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Say there wake up while yet you have time",
+        "And in the glory land wave",
+        "Jesus will hear you and answer your call",
+        "Get ready to meet him today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Brother don\u2019t wait till it is too late",
+        "Jesus might call for you today",
+        "It\u2019s awful to know when you leave this old world below",
+        "If you are not ready to go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

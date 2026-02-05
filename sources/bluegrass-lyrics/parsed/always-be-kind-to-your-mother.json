@@ -1,0 +1,39 @@
+{
+  "slug": "always-be-kind-to-your-mother",
+  "title": "Always Be Kind To Your Mother",
+  "source_url": "https://www.bluegrasslyrics.com/song/always-be-kind-to-your-mother/",
+  "raw_lyrics": "Always be kind to your mother\nIt\u2019s the greatest gift you can give\nObey and do what she tells you\nAnd pray that long here she may live\n\nWe all take mothers for granted\nAnd do things that cause her much pain\nI know for I lost my sweet mother\nGod took her from this world of sin\n\nPlease go to your mom while she\u2019s living\nAnd tell her you love her today\nTo her you\u2019re always her baby\nShe loves you \u2019til death makes its claim",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Always be kind to your mother",
+        "It\u2019s the greatest gift you can give",
+        "Obey and do what she tells you",
+        "And pray that long here she may live"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We all take mothers for granted",
+        "And do things that cause her much pain",
+        "I know for I lost my sweet mother",
+        "God took her from this world of sin"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please go to your mom while she\u2019s living",
+        "And tell her you love her today",
+        "To her you\u2019re always her baby",
+        "She loves you \u2019til death makes its claim"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

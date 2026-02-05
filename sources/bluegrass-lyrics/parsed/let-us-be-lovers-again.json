@@ -1,0 +1,60 @@
+{
+  "slug": "let-us-be-lovers-again",
+  "title": "Let Us Be Lover\u2019s Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/let-us-be-lovers-again/",
+  "raw_lyrics": "Jack and May sweethearts were they\nThey were engaged to be wed\nMany a promise he made her\nMany a love word he said\n\nAs most lovers do they quarreled one night\nShe bid him not come any more\nShe gave him his hat\nJack started away\nBut he lingered to say at the door\n\n\u2018Tis up these broken cords and let us be lovers again\nDarling you know I love you to part would give me pain\nLet us forget the past and make up my pet\nMake up and be lovers again\n\nYears rolled by neither was wed\nAll of Jack\u2019s pleading was vain\nOne quiet evening poor Jack was found dead\nTwo lives have been wrecked for she loved oh too late\n\nShe goes to his grave every day\nAll through life in dismay\nShe can\u2019t tell you why but it seems to her cry\nThe wind seems to whisper and say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Jack and May sweethearts were they",
+        "They were engaged to be wed",
+        "Many a promise he made her",
+        "Many a love word he said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As most lovers do they quarreled one night",
+        "She bid him not come any more",
+        "She gave him his hat",
+        "Jack started away",
+        "But he lingered to say at the door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "\u2018Tis up these broken cords and let us be lovers again",
+        "Darling you know I love you to part would give me pain",
+        "Let us forget the past and make up my pet",
+        "Make up and be lovers again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Years rolled by neither was wed",
+        "All of Jack\u2019s pleading was vain",
+        "One quiet evening poor Jack was found dead",
+        "Two lives have been wrecked for she loved oh too late"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She goes to his grave every day",
+        "All through life in dismay",
+        "She can\u2019t tell you why but it seems to her cry",
+        "The wind seems to whisper and say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

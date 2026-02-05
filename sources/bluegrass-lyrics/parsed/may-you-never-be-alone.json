@@ -1,0 +1,49 @@
+{
+  "slug": "may-you-never-be-alone",
+  "title": "May You Never Be Alone",
+  "source_url": "https://www.bluegrasslyrics.com/song/may-you-never-be-alone/",
+  "raw_lyrics": "Like a bird that\u2019s lost its mate in flight\nI\u2019m alone and oh so blue tonight\nLike a piece of driftwood on the sea\nMay you\u00a0 never be alone like me\n\nI believed the lies you told to me\nWhen you whispered Dear I worship thee\nNow here am I alone and blue\nAll because I loved no one but you\n\nI gave up my friends I left my home\nWhen you promised to be mine alone\nNow you\u2019re gone our love could never be\nMay you\u00a0 never be alone like me.\n\nIn the bible God\u2019s own words do say\nFor ev\u2019ry wrong some day you\u2019ll\u00a0 pay\nI pray the Lord to set me\u00a0 free\nMay you\u00a0 never be alone like me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Like a bird that\u2019s lost its mate in flight",
+        "I\u2019m alone and oh so blue tonight",
+        "Like a piece of driftwood on the sea",
+        "May you\u00a0 never be alone like me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I believed the lies you told to me",
+        "When you whispered Dear I worship thee",
+        "Now here am I alone and blue",
+        "All because I loved no one but you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I gave up my friends I left my home",
+        "When you promised to be mine alone",
+        "Now you\u2019re gone our love could never be",
+        "May you\u00a0 never be alone like me."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the bible God\u2019s own words do say",
+        "For ev\u2019ry wrong some day you\u2019ll\u00a0 pay",
+        "I pray the Lord to set me\u00a0 free",
+        "May you\u00a0 never be alone like me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

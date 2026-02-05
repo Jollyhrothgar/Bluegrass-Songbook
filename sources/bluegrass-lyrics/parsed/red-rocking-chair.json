@@ -1,0 +1,59 @@
+{
+  "slug": "red-rocking-chair",
+  "title": "Red Rocking Chair",
+  "source_url": "https://www.bluegrasslyrics.com/song/red-rocking-chair/",
+  "raw_lyrics": "Ain\u2019t got no use\nFor your red rocking chair\nI ain\u2019t got no sugar baby now\nI ain\u2019t got no honey baby now\n\nWho\u2019ll rock the cradle\nWho\u2019ll sing this song\nWho\u2019ll rock cradle when I\u2019m gone\nWho\u2019ll rock cradle when I\u2019m gone\n\nIt\u2019s I\u2019ll rock the cradle\nI\u2019ll sing this song\nIt\u2019s I\u2019ll rock the cradle when you\u2019re gone\nIt\u2019s I\u2019ll rock the cradle when you\u2019re gone\n\nIt\u2019s all I can do\nIt\u2019s all I can say\nGonna send you to your momma next payday\nGonna send you to your momma next payday\n\nIt\u2019s all I can do\nIt\u2019s all I can  say\nI can\u2019t get along this a way\nI can\u2019t get along this a way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Ain\u2019t got no use",
+        "For your red rocking chair",
+        "I ain\u2019t got no sugar baby now",
+        "I ain\u2019t got no honey baby now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Who\u2019ll rock the cradle",
+        "Who\u2019ll sing this song",
+        "Who\u2019ll rock cradle when I\u2019m gone",
+        "Who\u2019ll rock cradle when I\u2019m gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s I\u2019ll rock the cradle",
+        "I\u2019ll sing this song",
+        "It\u2019s I\u2019ll rock the cradle when you\u2019re gone",
+        "It\u2019s I\u2019ll rock the cradle when you\u2019re gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s all I can do",
+        "It\u2019s all I can say",
+        "Gonna send you to your momma next payday",
+        "Gonna send you to your momma next payday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s all I can do",
+        "It\u2019s all I can  say",
+        "I can\u2019t get along this a way",
+        "I can\u2019t get along this a way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

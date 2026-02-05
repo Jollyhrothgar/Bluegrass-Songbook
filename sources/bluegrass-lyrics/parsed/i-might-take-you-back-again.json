@@ -1,0 +1,39 @@
+{
+  "slug": "i-might-take-you-back-again",
+  "title": "I Might Take You Back Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-might-take-you-back-again/",
+  "raw_lyrics": "Go now don\u2019t wait\nPlease don\u2019t hesitate\nLovin\u2019 you was my great sin\nAnd I might take you back again\n\nFor a long time the world stood still\nI loved you then and I always will\nBut to me you\u2019ve been untrue\nThere is nothing I can do\n\nWell here you are you\u2019re back again\nI know that I just can\u2019t win\nYou broke my heart most every day\nAnd now you best be on you\u2019re way",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Go now don\u2019t wait",
+        "Please don\u2019t hesitate",
+        "Lovin\u2019 you was my great sin",
+        "And I might take you back again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For a long time the world stood still",
+        "I loved you then and I always will",
+        "But to me you\u2019ve been untrue",
+        "There is nothing I can do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well here you are you\u2019re back again",
+        "I know that I just can\u2019t win",
+        "You broke my heart most every day",
+        "And now you best be on you\u2019re way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

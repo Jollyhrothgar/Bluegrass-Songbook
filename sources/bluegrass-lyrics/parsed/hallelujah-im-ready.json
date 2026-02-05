@@ -1,0 +1,33 @@
+{
+  "slug": "hallelujah-im-ready",
+  "title": "Hallelujah I\u2019m Ready",
+  "source_url": "https://www.bluegrasslyrics.com/song/hallelujah-im-ready/",
+  "raw_lyrics": "Hallelujah (I\u2019m ready) I\u2019m ready (Hallelujah)\nI can hear the voices singing soft and low\nHallelujah (I\u2019m ready) I\u2019m ready (Hallelujah)\nHallelujah I\u2019m ready to go\nIn the darkness of night not a star was in site\nOn a highway that leads down below\nBut Jesus came in and saved this soul from sin\nHallelujah I\u2019m ready to go\n\nSinners don\u2019t wait before it\u2019s too late\nHe\u2019s a wonderful Savior you know\nWell I fell on my knees and he answered my pleas\nHallelujah I\u2019m ready to go",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Hallelujah (I\u2019m ready) I\u2019m ready (Hallelujah)",
+        "I can hear the voices singing soft and low",
+        "Hallelujah (I\u2019m ready) I\u2019m ready (Hallelujah)",
+        "Hallelujah I\u2019m ready to go",
+        "In the darkness of night not a star was in site",
+        "On a highway that leads down below",
+        "But Jesus came in and saved this soul from sin",
+        "Hallelujah I\u2019m ready to go"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sinners don\u2019t wait before it\u2019s too late",
+        "He\u2019s a wonderful Savior you know",
+        "Well I fell on my knees and he answered my pleas",
+        "Hallelujah I\u2019m ready to go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

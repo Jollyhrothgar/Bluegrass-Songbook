@@ -1,0 +1,73 @@
+{
+  "slug": "nine-pound-hammer",
+  "title": "Nine Pound Hammer",
+  "source_url": "https://www.bluegrasslyrics.com/song/nine-pound-hammer/",
+  "raw_lyrics": "This nine pound hammer is a little too heavy\nFor my size, Buddy for my size\n\nRoll on buddy, don\u2019t you roll so slow\nHow can I roll, when the wheels won\u2019t roll\n\nI\u2019m going to the mountain, just to see my baby\nAnd I ain\u2019t coming back, no I ain\u2019t coming back\n\nThere ain\u2019t one hammer, down in this tunnel\nThat can ring like mine, that can ring like mine\n\nRings like silver, shines like gold\nRings like silver, shines like gold\n\nThis old hammer, it killed John Henry\nAin\u2019t gonna kill me, ain\u2019t gonna kill me\n\nIt\u2019s a long way to Harlan, and a long way to Hazard\nJust to get a little booze, just to get a little booze\n\nBuddy when I\u2019m log gone, won\u2019t you make my tombstone\nOut of number nine coal, out of number nine coal",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "This nine pound hammer is a little too heavy",
+        "For my size, Buddy for my size"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Roll on buddy, don\u2019t you roll so slow",
+        "How can I roll, when the wheels won\u2019t roll"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going to the mountain, just to see my baby",
+        "And I ain\u2019t coming back, no I ain\u2019t coming back"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There ain\u2019t one hammer, down in this tunnel",
+        "That can ring like mine, that can ring like mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Rings like silver, shines like gold",
+        "Rings like silver, shines like gold"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This old hammer, it killed John Henry",
+        "Ain\u2019t gonna kill me, ain\u2019t gonna kill me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a long way to Harlan, and a long way to Hazard",
+        "Just to get a little booze, just to get a little booze"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Buddy when I\u2019m log gone, won\u2019t you make my tombstone",
+        "Out of number nine coal, out of number nine coal"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

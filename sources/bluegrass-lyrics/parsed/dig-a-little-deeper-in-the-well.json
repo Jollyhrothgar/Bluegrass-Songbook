@@ -1,0 +1,49 @@
+{
+  "slug": "dig-a-little-deeper-in-the-well",
+  "title": "Dig A Little Deeper In The Well",
+  "source_url": "https://www.bluegrasslyrics.com/song/dig-a-little-deeper-in-the-well/",
+  "raw_lyrics": "Dig dig a little deeper in the well boys\nDig a little deeper in the well\nIf you want a good cool drink of water\nYou gotta dig a little deeper in the well.\n\nMy daddy used to tell me don\u2019t be fooled by what you see\nIf you want to get to the heart of things you gotta look way down deep\nSecond place don\u2019t get it son winners got to come in first\nThere\u2019s nothin\u2019 worse than to take a drink that leaves you with a thirst\n\nA good man needs a good womanshe\u2019s the rock that\u2019ll make him strong\nNow she\u2019ll be there to lean on when the whole world\u2019s done him wrong\nAin\u2019t nothin\u2019 like good lovin\u2019 that\u2019s how it\u2019s meant to be\nFind yourself a good woman son like your mama\u2019s been to me.\n\nThe mighty river\u2019s flowin\u2019 where the water\u2019s cool and sweet\nDon\u2019t be fooled by a muddy dream be careful when you drink\nLife is what you make it sometimes a livin\u2019 hell\nIf you want to find that promised land dig a little deeper in the well",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dig dig a little deeper in the well boys",
+        "Dig a little deeper in the well",
+        "If you want a good cool drink of water",
+        "You gotta dig a little deeper in the well."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My daddy used to tell me don\u2019t be fooled by what you see",
+        "If you want to get to the heart of things you gotta look way down deep",
+        "Second place don\u2019t get it son winners got to come in first",
+        "There\u2019s nothin\u2019 worse than to take a drink that leaves you with a thirst"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A good man needs a good womanshe\u2019s the rock that\u2019ll make him strong",
+        "Now she\u2019ll be there to lean on when the whole world\u2019s done him wrong",
+        "Ain\u2019t nothin\u2019 like good lovin\u2019 that\u2019s how it\u2019s meant to be",
+        "Find yourself a good woman son like your mama\u2019s been to me."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The mighty river\u2019s flowin\u2019 where the water\u2019s cool and sweet",
+        "Don\u2019t be fooled by a muddy dream be careful when you drink",
+        "Life is what you make it sometimes a livin\u2019 hell",
+        "If you want to find that promised land dig a little deeper in the well"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

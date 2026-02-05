@@ -1,0 +1,49 @@
+{
+  "slug": "wabash-cannonball",
+  "title": "Wabash Cannonball",
+  "source_url": "https://www.bluegrasslyrics.com/song/wabash-cannonball/",
+  "raw_lyrics": "From the great Atlantic Ocean to the wide Pacific shore\nFrom the green ol\u2019 Smoky Mountains to the south lands by the shore\nShe\u2019s mighty tall and handsome and she\u2019s known quite well by all\nShe\u2019s the regular combination of the Wabash Cannonball\n\nListen to the jingle, the rumble and the roar\nAs she glides along the woodland through the hills and by the shore\nHear the mighty rush of the engine, hear the lonesome hobos call\nYou\u2019re traveling through the jungles on the Wabash Cannonball\n\nOur eastern states are dandy, so the people always say\nFrom New York to St Louis with Chicago by the way\nFrom the hills of Minnesota where the rippling waters fall\nNo changes can be taken on the Wabash Cannonball\n\nNow here\u2019s to Daddy Claxton, may his name forever stand\nAnd always be remembered through the courts throughout the land\nHis earthly race is over, now the curtains round him fall\nWe\u2019ll carry him home to victory on the Wabash Cannonball",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "From the great Atlantic Ocean to the wide Pacific shore",
+        "From the green ol\u2019 Smoky Mountains to the south lands by the shore",
+        "She\u2019s mighty tall and handsome and she\u2019s known quite well by all",
+        "She\u2019s the regular combination of the Wabash Cannonball"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Listen to the jingle, the rumble and the roar",
+        "As she glides along the woodland through the hills and by the shore",
+        "Hear the mighty rush of the engine, hear the lonesome hobos call",
+        "You\u2019re traveling through the jungles on the Wabash Cannonball"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Our eastern states are dandy, so the people always say",
+        "From New York to St Louis with Chicago by the way",
+        "From the hills of Minnesota where the rippling waters fall",
+        "No changes can be taken on the Wabash Cannonball"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now here\u2019s to Daddy Claxton, may his name forever stand",
+        "And always be remembered through the courts throughout the land",
+        "His earthly race is over, now the curtains round him fall",
+        "We\u2019ll carry him home to victory on the Wabash Cannonball"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

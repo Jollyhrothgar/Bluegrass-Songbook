@@ -1,0 +1,49 @@
+{
+  "slug": "on-my-way-back-to-the-old-home",
+  "title": "On My Way Back To The Old Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/on-my-way-back-to-the-old-home/",
+  "raw_lyrics": "Back in the days of my childhood\nIn the evening when everything was still\nI used to sit and listen to the fox hounds\nWith my dad in the old Kentucky hills\n\nI\u2019m on my way back to the old home,\nThat road winds on up the hill\nBut there\u2019s no light in the window,\nThat shined long ago where I lived\n\nSoon my childhood days were over\nI had to leave my old home\nFor my mom and dad were called to heaven\nI was left in this world all alone\n\nHigh in the hills of old Kentucky\nStands the fondest part of my memory\nI\u2019m on my way back to the old home\nThat light in the window I long to see",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Back in the days of my childhood",
+        "In the evening when everything was still",
+        "I used to sit and listen to the fox hounds",
+        "With my dad in the old Kentucky hills"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m on my way back to the old home,",
+        "That road winds on up the hill",
+        "But there\u2019s no light in the window,",
+        "That shined long ago where I lived"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Soon my childhood days were over",
+        "I had to leave my old home",
+        "For my mom and dad were called to heaven",
+        "I was left in this world all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "High in the hills of old Kentucky",
+        "Stands the fondest part of my memory",
+        "I\u2019m on my way back to the old home",
+        "That light in the window I long to see"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

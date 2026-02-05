@@ -1,0 +1,79 @@
+{
+  "slug": "little-black-train-the",
+  "title": "Little Black Train, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-black-train-the/",
+  "raw_lyrics": "There\u2019s a little black train a comin\nSet your business right\nThere\u2019s a little black train a comin\nAnd it may be here tonight\n\nGo tell that ball room lady\nAll dressed in the worldly pride\nThat death\u2019s dark train is coming\nPrepare to take a ride\n\nGod sent to Hezikai\nA message from on high\nYou better set your house in order\nFor you must surely die\n\nHe turned to the wall in weeping\nWe see and hear his tears\nHe got his business fixed all right\nGod spared him fifteen years\n\nWe see that train with engine\nAnd one small baggage car\nYour idle thoughts and wicked deeds\nWill stop at the judgment bar\n\nThat poor young man in darkness\nCares not for the gospel light\nTil suddenly he hears the whistle blow\nAnd the little black train in site\n\nHave mercy on me lord\nPlease come and set me right\nBefore he got his business fixed\nThe train rolled in that night",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a little black train a comin",
+        "Set your business right",
+        "There\u2019s a little black train a comin",
+        "And it may be here tonight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Go tell that ball room lady",
+        "All dressed in the worldly pride",
+        "That death\u2019s dark train is coming",
+        "Prepare to take a ride"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God sent to Hezikai",
+        "A message from on high",
+        "You better set your house in order",
+        "For you must surely die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He turned to the wall in weeping",
+        "We see and hear his tears",
+        "He got his business fixed all right",
+        "God spared him fifteen years"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We see that train with engine",
+        "And one small baggage car",
+        "Your idle thoughts and wicked deeds",
+        "Will stop at the judgment bar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That poor young man in darkness",
+        "Cares not for the gospel light",
+        "Til suddenly he hears the whistle blow",
+        "And the little black train in site"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Have mercy on me lord",
+        "Please come and set me right",
+        "Before he got his business fixed",
+        "The train rolled in that night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

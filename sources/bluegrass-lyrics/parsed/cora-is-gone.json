@@ -1,0 +1,49 @@
+{
+  "slug": "cora-is-gone",
+  "title": "Cora Is Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/cora-is-gone/",
+  "raw_lyrics": "The wind through the night is blowing so lonesome\nSinging to me a song\nA whippoorwill call is just a reminder\nPretty girls have hearts made of stone\n\nI\u2019ll wake with the blues at dawn\nMy darling Cora is gone\nI don\u2019t know why she told me goodbye\nBut my darling Cora is gone\n\nThe ring that she wears I bought for her finger\nPurchased her raiment so fine\nGave her my last green back dollar\nAnd now she\u2019s left me behind\n\nDrifting along like a brush on a river\nCaring not where I roam\nGoing to live in a deep forest\nDark hollow will be my new home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The wind through the night is blowing so lonesome",
+        "Singing to me a song",
+        "A whippoorwill call is just a reminder",
+        "Pretty girls have hearts made of stone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll wake with the blues at dawn",
+        "My darling Cora is gone",
+        "I don\u2019t know why she told me goodbye",
+        "But my darling Cora is gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The ring that she wears I bought for her finger",
+        "Purchased her raiment so fine",
+        "Gave her my last green back dollar",
+        "And now she\u2019s left me behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Drifting along like a brush on a river",
+        "Caring not where I roam",
+        "Going to live in a deep forest",
+        "Dark hollow will be my new home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

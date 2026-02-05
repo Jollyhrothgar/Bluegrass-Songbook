@@ -1,0 +1,39 @@
+{
+  "slug": "lost",
+  "title": "Lost",
+  "source_url": "https://www.bluegrasslyrics.com/song/lost/",
+  "raw_lyrics": "Lost lost lost\nLost in this world without you\nLost lost lost\nLost in this world without you\n\nSince you turned me down all I do is ramble round\nAnd I don\u2019t care what happens to me\nMy heart was young and gay till the day you went away\nNow life here means nothing to me\n\nThe words you said to me still haunts my memory\nIt seems they\u2019re on my mind both day and night\nThe lies that you told torture my weary soul\nLove is blind I guess I couldn\u2019t see",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lost lost lost",
+        "Lost in this world without you",
+        "Lost lost lost",
+        "Lost in this world without you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Since you turned me down all I do is ramble round",
+        "And I don\u2019t care what happens to me",
+        "My heart was young and gay till the day you went away",
+        "Now life here means nothing to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The words you said to me still haunts my memory",
+        "It seems they\u2019re on my mind both day and night",
+        "The lies that you told torture my weary soul",
+        "Love is blind I guess I couldn\u2019t see"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

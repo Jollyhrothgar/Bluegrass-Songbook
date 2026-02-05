@@ -1,0 +1,39 @@
+{
+  "slug": "dont-forget-me-little-darling",
+  "title": "Don\u2019t Forget Me Little Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-forget-me-little-darling/",
+  "raw_lyrics": "At my window sad and lonely\nOften do I think of you\nAnd I wonder little darling\nIf you\u2019re thinking of me to\n\nDon\u2019t forget me little darling\nWhen from you I\u2019m far away\nBut remember little darling\nWe may meet again someday\n\nYou may meet with fairer faces\nSome may tell you I\u2019m not true\nDon\u2019t believe them little darling\nNo one loves you as I do",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "At my window sad and lonely",
+        "Often do I think of you",
+        "And I wonder little darling",
+        "If you\u2019re thinking of me to"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t forget me little darling",
+        "When from you I\u2019m far away",
+        "But remember little darling",
+        "We may meet again someday"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You may meet with fairer faces",
+        "Some may tell you I\u2019m not true",
+        "Don\u2019t believe them little darling",
+        "No one loves you as I do"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

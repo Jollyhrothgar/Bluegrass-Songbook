@@ -1,0 +1,39 @@
+{
+  "slug": "sailors-plea",
+  "title": "Sailor\u2019s Plea",
+  "source_url": "https://www.bluegrasslyrics.com/song/sailors-plea/",
+  "raw_lyrics": "Dear sweetheart as I write to you my heart is filled with pain\nFor if those things I hear are true I\u2019ll never see you again\nThey tell me darlin\u2019 that tonight you\u2019ll wed another man\nBut if you do I\u2019ll tell you true my boat will never land\n\nYou promised that you would wait for me that nothin\u2019 could come between\nThat in my arms someday you\u2019d be my wife and lovely Queen\nI built you that cozy home and made a garden there\nAnd planted too with my own hands sweet flowers rich and fair\n\nMy future hopes are placed in you you\u2019ve been my guidin\u2019 star\nPlease write and tell me that you\u2019re true to the sailor who waits afar\nJust tell me that you love me yet still long to be my wife\nI\u2019ll return and then we\u2019ll wed and live a happy life",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dear sweetheart as I write to you my heart is filled with pain",
+        "For if those things I hear are true I\u2019ll never see you again",
+        "They tell me darlin\u2019 that tonight you\u2019ll wed another man",
+        "But if you do I\u2019ll tell you true my boat will never land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You promised that you would wait for me that nothin\u2019 could come between",
+        "That in my arms someday you\u2019d be my wife and lovely Queen",
+        "I built you that cozy home and made a garden there",
+        "And planted too with my own hands sweet flowers rich and fair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My future hopes are placed in you you\u2019ve been my guidin\u2019 star",
+        "Please write and tell me that you\u2019re true to the sailor who waits afar",
+        "Just tell me that you love me yet still long to be my wife",
+        "I\u2019ll return and then we\u2019ll wed and live a happy life"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

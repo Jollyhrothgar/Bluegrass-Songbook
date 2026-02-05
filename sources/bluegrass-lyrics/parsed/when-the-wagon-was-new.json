@@ -1,0 +1,49 @@
+{
+  "slug": "when-the-wagon-was-new",
+  "title": "When The Wagon Was New",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-wagon-was-new/",
+  "raw_lyrics": "There\u2019s an old and rusty wagon that\u2019s left to rot away\nIt\u2019s one my family rode in back in the good old days\nPeople loved their neighbors everybody was so free\nAnd riding in a brand new wagon was something to see\n\nI can still see my Daddy sitting on the wagon seat\nMom in her old sun bonnet she looked so nice and neat\nKids were all in the wagon Grandma and Grandpa too\nOh we used to go to church on Sunday when the wagon was new\n\nRed wheels were on the wagon and the body it was green\nWe were all so happy as riding in a limousine\nPeople used to gather round through all the mountain side\nTake a look at the brand new wagon and all take a ride\n\nWell the automobiles are here now the wagon days are through\nAirplanes are a-humming neighbors are so few\nEverybody\u2019s in a hurry it\u2019s money that takes you through\nBut we didn\u2019t need much money when the wagon was new",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s an old and rusty wagon that\u2019s left to rot away",
+        "It\u2019s one my family rode in back in the good old days",
+        "People loved their neighbors everybody was so free",
+        "And riding in a brand new wagon was something to see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can still see my Daddy sitting on the wagon seat",
+        "Mom in her old sun bonnet she looked so nice and neat",
+        "Kids were all in the wagon Grandma and Grandpa too",
+        "Oh we used to go to church on Sunday when the wagon was new"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Red wheels were on the wagon and the body it was green",
+        "We were all so happy as riding in a limousine",
+        "People used to gather round through all the mountain side",
+        "Take a look at the brand new wagon and all take a ride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the automobiles are here now the wagon days are through",
+        "Airplanes are a-humming neighbors are so few",
+        "Everybody\u2019s in a hurry it\u2019s money that takes you through",
+        "But we didn\u2019t need much money when the wagon was new"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

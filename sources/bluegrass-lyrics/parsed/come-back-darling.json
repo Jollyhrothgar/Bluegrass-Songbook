@@ -1,0 +1,49 @@
+{
+  "slug": "come-back-darling",
+  "title": "Come Back Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/come-back-darling/",
+  "raw_lyrics": "Tonight as I sit by my window\nI\u2019m reading your letter so true\nI\u2019m hoping to find it in your letter\nWhere you say I\u2019ll come back to you.\n\nOh come back to me little darlin\u2019\nI miss you each day and each night\nOh come back to me little darlin\u2019\nDon\u2019t leave me alone all my life\n\nI know I can never be happy\nNo matter whatever I do\nI know it\u2019s harsh and lonely without you\nOh won\u201dt you come back and be true.\n\nOh what will I do without you\nMy life is so lonely and blue\nNo matter what happens my darlin\u2019\nI just can\u2019t forget loving you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight as I sit by my window",
+        "I\u2019m reading your letter so true",
+        "I\u2019m hoping to find it in your letter",
+        "Where you say I\u2019ll come back to you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh come back to me little darlin\u2019",
+        "I miss you each day and each night",
+        "Oh come back to me little darlin\u2019",
+        "Don\u2019t leave me alone all my life"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know I can never be happy",
+        "No matter whatever I do",
+        "I know it\u2019s harsh and lonely without you",
+        "Oh won\u201dt you come back and be true."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh what will I do without you",
+        "My life is so lonely and blue",
+        "No matter what happens my darlin\u2019",
+        "I just can\u2019t forget loving you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "tennessee-1949",
+  "title": "Tennessee 1949",
+  "source_url": "https://www.bluegrasslyrics.com/song/tennessee-1949/",
+  "raw_lyrics": "I wonder if It\u2019s rainin\u2019 in the mountains\nI wonder how the old town looks today\nAnd if the church is there beside the river\nCould I go back and find where mama lay\n\nDoes life still go to sleep just after sunset\nAre the berries still as big on the vine\nDo old men sit and talk about the old days\nThe way they did in 1949\n\nOh Oh Oh how I\u2019d like to be\nBack in the hills of Tennessee\nOh Oh Oh it would be so fine\nIf I could just go back to 1949\n\nI wonder if by chance they might remember\nA teenage boy so wild and fancy free\nWho always loved guitars and country music\nIf I went back would they remember me\n\nI wonder what became of Kathern Ackers\nThe girl who broke my heart at seventeen\nI barely can remember what she looks like\nThirty years ago she was my dream\n\nchorus\n\nFor many years I\u2019ve searched the wide world over\nFor what\nI don\u2019t recall and didn\u2019t find\nAnd now I\u2019m searching pictures in my memory\nFor Tennessee 1949\n\nchorus\n\nLarry Sparks; Classic Bluegrass",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wonder if It\u2019s rainin\u2019 in the mountains",
+        "I wonder how the old town looks today",
+        "And if the church is there beside the river",
+        "Could I go back and find where mama lay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Does life still go to sleep just after sunset",
+        "Are the berries still as big on the vine",
+        "Do old men sit and talk about the old days",
+        "The way they did in 1949"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh Oh Oh how I\u2019d like to be",
+        "Back in the hills of Tennessee",
+        "Oh Oh Oh it would be so fine",
+        "If I could just go back to 1949"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wonder if by chance they might remember",
+        "A teenage boy so wild and fancy free",
+        "Who always loved guitars and country music",
+        "If I went back would they remember me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wonder what became of Kathern Ackers",
+        "The girl who broke my heart at seventeen",
+        "I barely can remember what she looks like",
+        "Thirty years ago she was my dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "chorus"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For many years I\u2019ve searched the wide world over",
+        "For what",
+        "I don\u2019t recall and didn\u2019t find",
+        "And now I\u2019m searching pictures in my memory",
+        "For Tennessee 1949"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "chorus"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Larry Sparks; Classic Bluegrass"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

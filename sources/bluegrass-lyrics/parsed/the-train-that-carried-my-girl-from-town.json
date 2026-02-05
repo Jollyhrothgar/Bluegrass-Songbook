@@ -1,0 +1,57 @@
+{
+  "slug": "the-train-that-carried-my-girl-from-town",
+  "title": "The Train That Carried My Girl From Town",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-train-that-carried-my-girl-from-town/",
+  "raw_lyrics": "Where was you when the train left town\nI\u2019s standing on the corner with my head hung down\nIf I had my gun I\u2019d let the hammer down\nLord I\u2019d shoot that rounder took my girl from town\n\nHey that train that carried my girl from town\nHey hey hey hey\n\nI wish to the Lord that the train would wreck\nKill that engineer and break the fireman\u2019s neck\nThere goes the train that carried my girl from  town\nIf I know\u2019d her number boy I\u2019d flag her down\n\nRations on the table and the coffee\u2019s getting cold\nSome dirty rounder stole my jelly roll\nHello Central give me 6 \u2013 0 \u2013 9\nI wanta talk to that woman  of mine\n\nAshes to ashes and dust to dust\nCan you show me the woman that a man can trust\nThere goes my girl somebody bring her back\nCause she got her hand in my money sack",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Where was you when the train left town",
+        "I\u2019s standing on the corner with my head hung down",
+        "If I had my gun I\u2019d let the hammer down",
+        "Lord I\u2019d shoot that rounder took my girl from town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hey that train that carried my girl from town",
+        "Hey hey hey hey"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish to the Lord that the train would wreck",
+        "Kill that engineer and break the fireman\u2019s neck",
+        "There goes the train that carried my girl from  town",
+        "If I know\u2019d her number boy I\u2019d flag her down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rations on the table and the coffee\u2019s getting cold",
+        "Some dirty rounder stole my jelly roll",
+        "Hello Central give me 6 \u2013 0 \u2013 9",
+        "I wanta talk to that woman  of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ashes to ashes and dust to dust",
+        "Can you show me the woman that a man can trust",
+        "There goes my girl somebody bring her back",
+        "Cause she got her hand in my money sack"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "in-the-valley-of-the-shenandoah",
+  "title": "In The Valley Of The Shenandoah",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-the-valley-of-the-shenandoah/",
+  "raw_lyrics": "As we sit alone tonight\nIn the stillness of the night\nI picture happy scenes of long ago\nOf a maiden fair and bright\nWho is sleeping there tonight\nIn the valley of the Shenandoah ridge\n\nIt was in the month of June\nWhen the roses were in bloom\nWhen I held her in my arms and softly said\nDarling in the coming spring\nI\u2019ll be coming back again\nTo the valley of the Shenandoah ridge\n\nWhen I left her all alone\nIn our Shenandoah home\nShe promised she\u2019d be waiting there for me\nBut the angels came along\nAnd took her from our home\nFrom the valley of the Shenandoah ridge\n\nWhen the evening shadows fall\nIn memory I recall\nA pledge when giving her a ring\nDarling in the coming spring\nI\u2019ll be coming back again\nTo the valley of the Shenandoah ridge",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As we sit alone tonight",
+        "In the stillness of the night",
+        "I picture happy scenes of long ago",
+        "Of a maiden fair and bright",
+        "Who is sleeping there tonight",
+        "In the valley of the Shenandoah ridge"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was in the month of June",
+        "When the roses were in bloom",
+        "When I held her in my arms and softly said",
+        "Darling in the coming spring",
+        "I\u2019ll be coming back again",
+        "To the valley of the Shenandoah ridge"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I left her all alone",
+        "In our Shenandoah home",
+        "She promised she\u2019d be waiting there for me",
+        "But the angels came along",
+        "And took her from our home",
+        "From the valley of the Shenandoah ridge"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the evening shadows fall",
+        "In memory I recall",
+        "A pledge when giving her a ring",
+        "Darling in the coming spring",
+        "I\u2019ll be coming back again",
+        "To the valley of the Shenandoah ridge"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

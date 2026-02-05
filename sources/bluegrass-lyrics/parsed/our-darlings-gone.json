@@ -1,0 +1,59 @@
+{
+  "slug": "our-darlings-gone",
+  "title": "Our Darling\u2019s Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/our-darlings-gone/",
+  "raw_lyrics": "God He sent a loving angel\nAnd he called our darling home\nFor he needed another flower\nTo bloom around the shining throne\n\nBut we know that he is happy\nSince he left this world below\nFor he saw his home in heaven\nJust before he had to go\n\nHe has left our home so lonely\nLoneliness you could not know\nBut we ask that he watch o\u2019er us\nAnd give comfort to our soul\n\nHe\u2019s at rest on a lonely mountain\nIn a deep and narrow gave\nAnd we thank our loving savior\nFor the comfort that he gave\n\nNow we\u2019re here so sad and lonely\nIn this wicked world alone\nJust a window and poor orphans\nIn our little mountain home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "God He sent a loving angel",
+        "And he called our darling home",
+        "For he needed another flower",
+        "To bloom around the shining throne"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But we know that he is happy",
+        "Since he left this world below",
+        "For he saw his home in heaven",
+        "Just before he had to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He has left our home so lonely",
+        "Loneliness you could not know",
+        "But we ask that he watch o\u2019er us",
+        "And give comfort to our soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He\u2019s at rest on a lonely mountain",
+        "In a deep and narrow gave",
+        "And we thank our loving savior",
+        "For the comfort that he gave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now we\u2019re here so sad and lonely",
+        "In this wicked world alone",
+        "Just a window and poor orphans",
+        "In our little mountain home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

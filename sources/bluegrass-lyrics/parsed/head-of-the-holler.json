@@ -1,0 +1,69 @@
+{
+  "slug": "head-of-the-holler",
+  "title": "Head Of The Holler",
+  "source_url": "https://www.bluegrasslyrics.com/song/head-of-the-holler/",
+  "raw_lyrics": "Have you ever been to the head or the holler\nThat\u2019s where the big dogs romp and waller\nThe women there are long and lean\nAnd some I fear are apt to be mean\n\nRoll on head out\nYou\u2019ll like it there\u2019s no doubt\nThere ain\u2019t no better place to be\nThan the head of the holler in Kentucky\n\nThe first time I went to the head of the holler\nI wore a bow tie and a snow white collar\nWhen daylight came come crawlin\u2019 in\nAnd the best thing I wore was a silly grin\n\nThe next time I went to the head of the holler\nI saw more moon that I could swaller\nI flew like a bird and a tryin to sing\n\u2018Til I fell from a tree and broke one wing\n\nNow my gal lives in the head of the holler\nHer love shines like a silver dollar\nShe feeds me butter staight from the churn\nAnd her ma and pa don\u2019t give a durn\n\nI\u2019m a going back to the head of the holler\nYou can go too if you want to follow\nBut don\u2019t you fool with that gal of mine\nI\u2019ll cut you down like a lonesome pine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Have you ever been to the head or the holler",
+        "That\u2019s where the big dogs romp and waller",
+        "The women there are long and lean",
+        "And some I fear are apt to be mean"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Roll on head out",
+        "You\u2019ll like it there\u2019s no doubt",
+        "There ain\u2019t no better place to be",
+        "Than the head of the holler in Kentucky"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The first time I went to the head of the holler",
+        "I wore a bow tie and a snow white collar",
+        "When daylight came come crawlin\u2019 in",
+        "And the best thing I wore was a silly grin"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The next time I went to the head of the holler",
+        "I saw more moon that I could swaller",
+        "I flew like a bird and a tryin to sing",
+        "\u2018Til I fell from a tree and broke one wing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now my gal lives in the head of the holler",
+        "Her love shines like a silver dollar",
+        "She feeds me butter staight from the churn",
+        "And her ma and pa don\u2019t give a durn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a going back to the head of the holler",
+        "You can go too if you want to follow",
+        "But don\u2019t you fool with that gal of mine",
+        "I\u2019ll cut you down like a lonesome pine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

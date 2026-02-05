@@ -1,0 +1,46 @@
+{
+  "slug": "you-done-me-wrong",
+  "title": "You Done Me Wrong",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-done-me-wrong/",
+  "raw_lyrics": "Well you tell me that you care\nBut now you\u2019re gone, you\u2019ve got me cryin\u2019\nNo use denyin\u2019 you done me wrong\nIf I could look inside your heart\nMaybe I would know the reason\nWhy you are leavin\u2019 me all alone.\n\nWell you know it\u2019s not so\nWhen you said you tried\nWell, you know you lied\nI didn\u2019t do one wrong thing to you\nWon\u2019t you tell me baby why\nYou went and left me here so lonely\nI miss you only for I love you.\n\nDid I ever make you sad\nSo you\u2019d be mad enough to hurt me\nAnd desert me for so long?\nWell you\u2019re tellin\u2019 everyone what you done\nYou think it\u2019s funny\nWell, listen honey  you done me wrong.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well you tell me that you care",
+        "But now you\u2019re gone, you\u2019ve got me cryin\u2019",
+        "No use denyin\u2019 you done me wrong",
+        "If I could look inside your heart",
+        "Maybe I would know the reason",
+        "Why you are leavin\u2019 me all alone."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Well you know it\u2019s not so",
+        "When you said you tried",
+        "Well, you know you lied",
+        "I didn\u2019t do one wrong thing to you",
+        "Won\u2019t you tell me baby why",
+        "You went and left me here so lonely",
+        "I miss you only for I love you."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Did I ever make you sad",
+        "So you\u2019d be mad enough to hurt me",
+        "And desert me for so long?",
+        "Well you\u2019re tellin\u2019 everyone what you done",
+        "You think it\u2019s funny",
+        "Well, listen honey  you done me wrong."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

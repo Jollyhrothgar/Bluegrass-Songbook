@@ -1,0 +1,39 @@
+{
+  "slug": "the-church-back-home",
+  "title": "The Church Back Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-church-back-home/",
+  "raw_lyrics": "What memories come back to me\nAs I ponder o\u2019er the years passed away\nIf I could be back in that old country church\nAnd once more hear the parson say\n\nWe\u2019ve travelled on together\nThough dark and sunny days\nAnd may we always be together\nJust my Lord and I along the way\n\nI can see the service now ending\nAnd the parson\u2019s voice is raised\nIn solemn quiet benediction\nUpon our different ways",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "What memories come back to me",
+        "As I ponder o\u2019er the years passed away",
+        "If I could be back in that old country church",
+        "And once more hear the parson say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019ve travelled on together",
+        "Though dark and sunny days",
+        "And may we always be together",
+        "Just my Lord and I along the way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can see the service now ending",
+        "And the parson\u2019s voice is raised",
+        "In solemn quiet benediction",
+        "Upon our different ways"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

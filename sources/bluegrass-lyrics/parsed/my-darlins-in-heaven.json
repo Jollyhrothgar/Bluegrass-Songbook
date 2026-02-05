@@ -1,0 +1,49 @@
+{
+  "slug": "my-darlins-in-heaven",
+  "title": "My Darlin\u2019s In Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-darlins-in-heaven/",
+  "raw_lyrics": "There\u2019s a little cabin that\u2019s lonely today\nAnd the love that was sheltered has vanished away\nAlone now I sit by the old cabin door\nAnd long for the home that I\u2019ll see there no more\n\nI looked at the casket where she lay asleep\nBut for the one who\u2019s gone it\u2019s useless to weep\nThe lips that would smile and kiss me each day\nAre now still forever God called her away\n\nMy darlin\u2019s in heaven she\u2019s happy I know\nBut each hour that passes I miss her so\nThe roses are fading she tended with care\nAnd my lonely sorrow is so hard to bear\n\nI just can\u2019t believe that in the old cabin door\nMy darlin\u2019 will be waiting there no more\nThe one that I love can\u2019t come back to me\nBut someday in heaven my darlin\u2019 I\u2019ll see",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a little cabin that\u2019s lonely today",
+        "And the love that was sheltered has vanished away",
+        "Alone now I sit by the old cabin door",
+        "And long for the home that I\u2019ll see there no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I looked at the casket where she lay asleep",
+        "But for the one who\u2019s gone it\u2019s useless to weep",
+        "The lips that would smile and kiss me each day",
+        "Are now still forever God called her away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My darlin\u2019s in heaven she\u2019s happy I know",
+        "But each hour that passes I miss her so",
+        "The roses are fading she tended with care",
+        "And my lonely sorrow is so hard to bear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I just can\u2019t believe that in the old cabin door",
+        "My darlin\u2019 will be waiting there no more",
+        "The one that I love can\u2019t come back to me",
+        "But someday in heaven my darlin\u2019 I\u2019ll see"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

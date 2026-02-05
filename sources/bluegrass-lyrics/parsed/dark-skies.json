@@ -1,0 +1,37 @@
+{
+  "slug": "dark-skies",
+  "title": "Dark Skies",
+  "source_url": "https://www.bluegrasslyrics.com/song/dark-skies/",
+  "raw_lyrics": "I don\u2019t need a perfect lover to hold me in the rain\nSomeone to ease my pain when I feel blue\nIf I lost you to another think I\u2019d drown down here for sure\nWon\u2019t you stay with me and be my only cure\n\nDark skies may cloud my days but that don\u2019t bother me\nAs long as I can hold you close to me\n\nI don\u2019t need a part-time lover to leave me in the cold\nWith empty arms to hold when I need you\nTell me that there is no other send the cold wind from my door\nGive you all of my love and more if you want me to",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t need a perfect lover to hold me in the rain",
+        "Someone to ease my pain when I feel blue",
+        "If I lost you to another think I\u2019d drown down here for sure",
+        "Won\u2019t you stay with me and be my only cure"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Dark skies may cloud my days but that don\u2019t bother me",
+        "As long as I can hold you close to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t need a part-time lover to leave me in the cold",
+        "With empty arms to hold when I need you",
+        "Tell me that there is no other send the cold wind from my door",
+        "Give you all of my love and more if you want me to"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

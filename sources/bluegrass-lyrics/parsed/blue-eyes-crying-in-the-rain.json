@@ -1,0 +1,49 @@
+{
+  "slug": "blue-eyes-crying-in-the-rain",
+  "title": "Blue Eyes Crying in the Rain",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-eyes-crying-in-the-rain/",
+  "raw_lyrics": "In the twilight glow I see her\nBlue eyes crying in the rain\nAs we kissed goodbye and parted\nI know we\u2019d never meet again\n\nLove is like a dying ember\nOnly memories remain\nThrough the ages I\u2019ll remember\nBlue eyes crying in the rain\n\nNow my hair has turned to silver\nAll my life I\u2019ve loved in vain\nI can see her star in heaven\nBlue eyes crying in the rain\n\nSomeday when we meet up yonder\nWe\u2019ll stroll hand in hand again\nIn a land that knows no parting\nBlue eyes crying in the rain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the twilight glow I see her",
+        "Blue eyes crying in the rain",
+        "As we kissed goodbye and parted",
+        "I know we\u2019d never meet again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Love is like a dying ember",
+        "Only memories remain",
+        "Through the ages I\u2019ll remember",
+        "Blue eyes crying in the rain"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now my hair has turned to silver",
+        "All my life I\u2019ve loved in vain",
+        "I can see her star in heaven",
+        "Blue eyes crying in the rain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday when we meet up yonder",
+        "We\u2019ll stroll hand in hand again",
+        "In a land that knows no parting",
+        "Blue eyes crying in the rain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

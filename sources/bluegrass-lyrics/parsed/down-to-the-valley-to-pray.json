@@ -1,0 +1,31 @@
+{
+  "slug": "down-to-the-valley-to-pray",
+  "title": "Down To The Valley To Pray",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-to-the-valley-to-pray/",
+  "raw_lyrics": "As I went down to the valley to pray\nStudying about the good ol\u2019 days\nAnd who will wear the robe and crown\nOh Lord show me the way.\n\nOh (l.brother 2.sister; 3.father; 4.mother; 5.children)\nLet\u2019s go down\nCome on down won\u2019t you come on down\nOh (l.brother; 2.sister; 3.father; 4.mother; 5.children)\nLet\u2019s go down\ndown to the valley to pray.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As I went down to the valley to pray",
+        "Studying about the good ol\u2019 days",
+        "And who will wear the robe and crown",
+        "Oh Lord show me the way."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh (l.brother 2.sister; 3.father; 4.mother; 5.children)",
+        "Let\u2019s go down",
+        "Come on down won\u2019t you come on down",
+        "Oh (l.brother; 2.sister; 3.father; 4.mother; 5.children)",
+        "Let\u2019s go down",
+        "down to the valley to pray."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

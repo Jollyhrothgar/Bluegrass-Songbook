@@ -1,0 +1,57 @@
+{
+  "slug": "wild-mountain-flowers",
+  "title": "Wild Mountain Flowers",
+  "source_url": "https://www.bluegrasslyrics.com/song/wild-mountain-flowers/",
+  "raw_lyrics": "We grew up living close to each other\nWent to school sat side by side\nAnd I longed for the day when I would ask her\nIf she would be my loving bride.\n\nI picked some wild mountain flowers for Mary\nAnd I told her I loved her today\nBut she said we never could marry\nThat her mother would stand in the way\n\nHer daddy died when she was very young\nAnd she never knew the love of a man\nI tried so hard to make her happy\nAnd tried to make her mother understand\n\nNow my days of youth are gone and I\u2019m so happy\nAnd my time isn\u2019t very far away\nI pciked some wild mountain flowers for Mary\nAnd placed them on her grave today\n\nI picked some wild mountain flowers for Mary\nAnd placed them on her grave today.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We grew up living close to each other",
+        "Went to school sat side by side",
+        "And I longed for the day when I would ask her",
+        "If she would be my loving bride."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I picked some wild mountain flowers for Mary",
+        "And I told her I loved her today",
+        "But she said we never could marry",
+        "That her mother would stand in the way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her daddy died when she was very young",
+        "And she never knew the love of a man",
+        "I tried so hard to make her happy",
+        "And tried to make her mother understand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now my days of youth are gone and I\u2019m so happy",
+        "And my time isn\u2019t very far away",
+        "I pciked some wild mountain flowers for Mary",
+        "And placed them on her grave today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I picked some wild mountain flowers for Mary",
+        "And placed them on her grave today."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

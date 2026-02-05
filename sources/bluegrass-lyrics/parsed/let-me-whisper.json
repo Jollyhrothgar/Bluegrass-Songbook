@@ -1,0 +1,46 @@
+{
+  "slug": "let-me-whisper",
+  "title": "Let Me Whisper",
+  "source_url": "https://www.bluegrasslyrics.com/song/let-me-whisper/",
+  "raw_lyrics": "Are you waiting just for me\nWith your promise to be true\nAlways in your memory\nLet me whisper I love you\n\nAs twilight gathers and stars seem to sigh\nDown by the river I stroll\nThinking of you now the days have gone by\nWhen you were my darlin\u2019 my own\n\nAs I walk alone where we two used to stroll\nClose by the clear waters flow\nIt seems that the soft rippling water I hear\nEchoes these words soft and low\n\nLet me whisper I love you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Are you waiting just for me",
+        "With your promise to be true",
+        "Always in your memory",
+        "Let me whisper I love you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As twilight gathers and stars seem to sigh",
+        "Down by the river I stroll",
+        "Thinking of you now the days have gone by",
+        "When you were my darlin\u2019 my own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I walk alone where we two used to stroll",
+        "Close by the clear waters flow",
+        "It seems that the soft rippling water I hear",
+        "Echoes these words soft and low"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let me whisper I love you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

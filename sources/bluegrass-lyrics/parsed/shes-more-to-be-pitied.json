@@ -1,0 +1,39 @@
+{
+  "slug": "shes-more-to-be-pitied",
+  "title": "She\u2019s More To Be Pitied",
+  "source_url": "https://www.bluegrasslyrics.com/song/shes-more-to-be-pitied/",
+  "raw_lyrics": "She\u2019s there at the bar every evening\nFace powdered and cheeks painted red\nHer beauty has faded too early\nBrought on by the fast life she\u2019s led\n\nShe\u2019s more to be pitied than scolded\nShe needs to be loved not despised\nToo much beer and wine, too many good times\nThe lure of the honky-tonk wrecked her young life\n\nShe once was the belle of the ballroom\nShe\u2019d a made some man a sweet wife\nBut too many parties, the wrong side of town\nRuined her happy young life",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s there at the bar every evening",
+        "Face powdered and cheeks painted red",
+        "Her beauty has faded too early",
+        "Brought on by the fast life she\u2019s led"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She\u2019s more to be pitied than scolded",
+        "She needs to be loved not despised",
+        "Too much beer and wine, too many good times",
+        "The lure of the honky-tonk wrecked her young life"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She once was the belle of the ballroom",
+        "She\u2019d a made some man a sweet wife",
+        "But too many parties, the wrong side of town",
+        "Ruined her happy young life"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

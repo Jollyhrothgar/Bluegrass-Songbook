@@ -1,0 +1,49 @@
+{
+  "slug": "im-gonna-sleep-with-one-eye-open",
+  "title": "I\u2019m Gonna Sleep With One Eye Open",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-gonna-sleep-with-one-eye-open/",
+  "raw_lyrics": "I just found out today the little game you play\nI\u2019ve been sleeping all my life away\nYou\u2019ve been stepping so they say between midnight and day\nSo I\u2019m gonna sleep with one eye open from now on\n\nFrom now on (from now on) all night long (all night long)\nYou won\u2019t have a chance to treat your daddy wrong\nYou\u2019ve been stepping so they say between midnight and day\nSo I\u2019m gonna sleep with one eye open from now on\n\nThere\u2019s honky tonk down the road just a mile or so\nI understand that\u2019s where you spend your time\nBaby I got news for you your little game is through\nFrom now on baby you\u2019re gonna toe the line\n\nYou thought you were being wise running around with other guys\nAnd leaving me to spend my time alone\nBut you\u2019ll find out today it don\u2019t work out that way\nYou started a little game that two can play",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I just found out today the little game you play",
+        "I\u2019ve been sleeping all my life away",
+        "You\u2019ve been stepping so they say between midnight and day",
+        "So I\u2019m gonna sleep with one eye open from now on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "From now on (from now on) all night long (all night long)",
+        "You won\u2019t have a chance to treat your daddy wrong",
+        "You\u2019ve been stepping so they say between midnight and day",
+        "So I\u2019m gonna sleep with one eye open from now on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s honky tonk down the road just a mile or so",
+        "I understand that\u2019s where you spend your time",
+        "Baby I got news for you your little game is through",
+        "From now on baby you\u2019re gonna toe the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You thought you were being wise running around with other guys",
+        "And leaving me to spend my time alone",
+        "But you\u2019ll find out today it don\u2019t work out that way",
+        "You started a little game that two can play"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

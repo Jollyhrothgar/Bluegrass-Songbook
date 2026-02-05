@@ -1,0 +1,49 @@
+{
+  "slug": "love-of-the-mountains",
+  "title": "Love Of The Mountains",
+  "source_url": "https://www.bluegrasslyrics.com/song/love-of-the-mountains/",
+  "raw_lyrics": "Two trees on a hillside of the mountain\nAlways looking up towards the sky\nRemind me of my papa and my mama\nWho lived there eighty years before they died\n\nNow a bright moon is shining in the valley\nAn old wagon leans against a stack of hay\nTwo graves on a hillside by the cabin\nMy mom and dad are resting there today\n\nThe burning of the green wood on the fireplace\nThe fallen snow around the red bud trees\nThe branches of the laurel by the creek bed\nAnd the rippling waters of the gentle stream\n\nPapa used to talk about the young days\nWhen he and mama first were settled there\nHe spoke about the love of the mountains\nThat he and mama shared together there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Two trees on a hillside of the mountain",
+        "Always looking up towards the sky",
+        "Remind me of my papa and my mama",
+        "Who lived there eighty years before they died"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now a bright moon is shining in the valley",
+        "An old wagon leans against a stack of hay",
+        "Two graves on a hillside by the cabin",
+        "My mom and dad are resting there today"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The burning of the green wood on the fireplace",
+        "The fallen snow around the red bud trees",
+        "The branches of the laurel by the creek bed",
+        "And the rippling waters of the gentle stream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Papa used to talk about the young days",
+        "When he and mama first were settled there",
+        "He spoke about the love of the mountains",
+        "That he and mama shared together there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

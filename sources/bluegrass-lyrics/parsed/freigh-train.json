@@ -1,0 +1,39 @@
+{
+  "slug": "freigh-train",
+  "title": "Freigh Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/freigh-train/",
+  "raw_lyrics": "Freight train, freight train, going so fast\nFreight train, freight train, going so fast\nPlease don\u2019t tell what train I\u2019m on\nSo they won\u2019t know where I\u2019ve gone\n\nWhen I am dead and in my grave\nNo more good times here I\u2019ll crave\nPlace the stones at my head and feet\nAnd tell them all that I\u2019m gone to sleep\n\nWhen I die, lord, bury me deep\nWay down on old Chestnut Street\nSo I can hear old Number Nine\nAs she comes rolling by",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Freight train, freight train, going so fast",
+        "Freight train, freight train, going so fast",
+        "Please don\u2019t tell what train I\u2019m on",
+        "So they won\u2019t know where I\u2019ve gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I am dead and in my grave",
+        "No more good times here I\u2019ll crave",
+        "Place the stones at my head and feet",
+        "And tell them all that I\u2019m gone to sleep"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I die, lord, bury me deep",
+        "Way down on old Chestnut Street",
+        "So I can hear old Number Nine",
+        "As she comes rolling by"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

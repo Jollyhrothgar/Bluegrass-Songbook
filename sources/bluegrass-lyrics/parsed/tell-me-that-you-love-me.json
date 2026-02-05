@@ -1,0 +1,53 @@
+{
+  "slug": "tell-me-that-you-love-me",
+  "title": "Tell Me That You Love Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/tell-me-that-you-love-me/",
+  "raw_lyrics": "We parted by the riverside\nThe moon looked down on you and me\nThe stars put on a look of pride\nThe river murmured to the sea\n\nThe dew drop kissed a blushing rose\nThe mournful wind did sigh\nOne word broke nature\u2019s sweet repose\nThat sad word was goodbye\nOh tell me that you love me yet\nFor oh this parting gives me pain\nPlease tell me that you\u2019ll not forget\nFor we may never meet again\n\nWe parted by the riverside\nThough I have roamed in distant climes\nMy heart has not forgot it\u2019s pride\nFor I have loved you all the time\n\nAnd I am faithful to you still\nAs long as you are true\nLet day each bring to me what it will\nFor I love you only you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We parted by the riverside",
+        "The moon looked down on you and me",
+        "The stars put on a look of pride",
+        "The river murmured to the sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The dew drop kissed a blushing rose",
+        "The mournful wind did sigh",
+        "One word broke nature\u2019s sweet repose",
+        "That sad word was goodbye",
+        "Oh tell me that you love me yet",
+        "For oh this parting gives me pain",
+        "Please tell me that you\u2019ll not forget",
+        "For we may never meet again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We parted by the riverside",
+        "Though I have roamed in distant climes",
+        "My heart has not forgot it\u2019s pride",
+        "For I have loved you all the time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And I am faithful to you still",
+        "As long as you are true",
+        "Let day each bring to me what it will",
+        "For I love you only you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

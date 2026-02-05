@@ -1,0 +1,49 @@
+{
+  "slug": "ill-never-make-you-blue",
+  "title": "I\u2019ll Never Make You Blue",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-never-make-you-blue/",
+  "raw_lyrics": "Since you went away the skies have turned to gray\nI nev-er knew I loved you this way\nI can\u2019t live without you and if you come back soon\nDarlin\u2019 I\u2019ll never make you blue\n\nI\u2019ll nev-er make you blue darlin\u2019 I\u2019ll promise you\nTo be forever honest and true\nThe things I used to do I\u2019ll quit them all for you\nDarlin\u2019 I\u2019ll never make you blue\n\nDarl-in\u2019 I\u2019m to blame but I won\u2019t be the same\nAll I ask is one more chance\nTo prove what I can do dar-lin\u2019 for you\nI\u2019ll prove that I can make your heart be true\n\nPlease come back to me don\u2019t leave me here to grieve\nMy life will wait for your memory\nJust let me alone and say you\u2019ll come back home\nDarlin\u2019 I can\u2019t live alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Since you went away the skies have turned to gray",
+        "I nev-er knew I loved you this way",
+        "I can\u2019t live without you and if you come back soon",
+        "Darlin\u2019 I\u2019ll never make you blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll nev-er make you blue darlin\u2019 I\u2019ll promise you",
+        "To be forever honest and true",
+        "The things I used to do I\u2019ll quit them all for you",
+        "Darlin\u2019 I\u2019ll never make you blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darl-in\u2019 I\u2019m to blame but I won\u2019t be the same",
+        "All I ask is one more chance",
+        "To prove what I can do dar-lin\u2019 for you",
+        "I\u2019ll prove that I can make your heart be true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please come back to me don\u2019t leave me here to grieve",
+        "My life will wait for your memory",
+        "Just let me alone and say you\u2019ll come back home",
+        "Darlin\u2019 I can\u2019t live alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

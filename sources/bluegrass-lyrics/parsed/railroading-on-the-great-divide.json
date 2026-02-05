@@ -1,0 +1,49 @@
+{
+  "slug": "railroading-on-the-great-divide",
+  "title": "Railroading On The Great Divide",
+  "source_url": "https://www.bluegrasslyrics.com/song/railroading-on-the-great-divide/",
+  "raw_lyrics": "Nineteen and sixteen I started to roam\nOut in the West no money no home\nI went drifting along with the tide\nI landed on the Great Divide\n\nRailroading on the Great Divide,\nNothing around me but Rockies and sky\nThere you\u2019ll find me as years go by\nRailroading on the Great Divide\n\nAsk any old-timer from Old Cheyenne,\nRailroad in Wyoming the best in the land\nThe long steel rails, the short cross ties\nI laid across the Great Divide.\n\nAs I looked out across the breeze\nNumber Three coming, the fastest on wheels\nThrough old Laramie (Lamar) she glides with pride\nAnd rolls across the Great Divide",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Nineteen and sixteen I started to roam",
+        "Out in the West no money no home",
+        "I went drifting along with the tide",
+        "I landed on the Great Divide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Railroading on the Great Divide,",
+        "Nothing around me but Rockies and sky",
+        "There you\u2019ll find me as years go by",
+        "Railroading on the Great Divide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ask any old-timer from Old Cheyenne,",
+        "Railroad in Wyoming the best in the land",
+        "The long steel rails, the short cross ties",
+        "I laid across the Great Divide."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I looked out across the breeze",
+        "Number Three coming, the fastest on wheels",
+        "Through old Laramie (Lamar) she glides with pride",
+        "And rolls across the Great Divide"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

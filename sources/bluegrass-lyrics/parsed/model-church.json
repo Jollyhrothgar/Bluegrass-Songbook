@@ -1,0 +1,119 @@
+{
+  "slug": "model-church",
+  "title": "Model Church",
+  "source_url": "https://www.bluegrasslyrics.com/song/model-church/",
+  "raw_lyrics": "Dear wife I found a model church\nAnd worshipped there today\nIt made me think of the good old times\nBefore my hair was gray\n\nThe meetinghouse was finer built\nThan they were years ago\nBut I found out when I went in\nIt was not built for show\n\nThe sexton did not sit me down\nAway back by the door\nHe knew that I was old and deaf\nAnd saw that I was poor\n\nHe must have been a Christian man\nHe led me boldly through\nThe long aisle of that crowded church\nTo find a pleasant pew\n\nI wish you\u2019d heard the singing, wife\nit had the old town ring\nThe preacher said with trumpet voice\nLet all the people sing\n\nOh Coronation was the tune\nThe music upward roared\nI thought I heard the angel choir\nStrike on their harps of gold\n\nI tell you wife it did me good\nTo sing those hymns once more\nI felt just like some wrecked marine\nWho gets a glimpse of shore\n\nIt made want to lay aside\nThis weather beaten form\nAnd anchor in that blessed port\nForever from the storm\n\nDear wife the toil will soon be o\u2019er\nThe victory soon be won\nThe shining strand is just ahead\nOur race is nearly run\n\nWe\u2019re near to Canaan\u2019s happy shore\nOur hopes are bright and fair\nThank God we\u2019ll never sin again\nThere\u2019ll be no sorrow there\n\nThere\u2019ll be no sorrow there\nIn heaven above\nWhere all is love\nThere\u2019ll be no sorrow there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dear wife I found a model church",
+        "And worshipped there today",
+        "It made me think of the good old times",
+        "Before my hair was gray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The meetinghouse was finer built",
+        "Than they were years ago",
+        "But I found out when I went in",
+        "It was not built for show"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sexton did not sit me down",
+        "Away back by the door",
+        "He knew that I was old and deaf",
+        "And saw that I was poor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "He must have been a Christian man",
+        "He led me boldly through",
+        "The long aisle of that crowded church",
+        "To find a pleasant pew"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish you\u2019d heard the singing, wife",
+        "it had the old town ring",
+        "The preacher said with trumpet voice",
+        "Let all the people sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh Coronation was the tune",
+        "The music upward roared",
+        "I thought I heard the angel choir",
+        "Strike on their harps of gold"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I tell you wife it did me good",
+        "To sing those hymns once more",
+        "I felt just like some wrecked marine",
+        "Who gets a glimpse of shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It made want to lay aside",
+        "This weather beaten form",
+        "And anchor in that blessed port",
+        "Forever from the storm"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Dear wife the toil will soon be o\u2019er",
+        "The victory soon be won",
+        "The shining strand is just ahead",
+        "Our race is nearly run"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "We\u2019re near to Canaan\u2019s happy shore",
+        "Our hopes are bright and fair",
+        "Thank God we\u2019ll never sin again",
+        "There\u2019ll be no sorrow there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019ll be no sorrow there",
+        "In heaven above",
+        "Where all is love",
+        "There\u2019ll be no sorrow there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

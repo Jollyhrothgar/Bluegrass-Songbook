@@ -1,0 +1,37 @@
+{
+  "slug": "sad-situation-2",
+  "title": "Sad Situation",
+  "source_url": "https://www.bluegrasslyrics.com/song/sad-situation-2/",
+  "raw_lyrics": "Well I\u2019ve known some sad situations before\nAnd I\u2019ve faced a lot of temptations before\nYes I\u2019ve known others like you with a heart made of stone\nAnd by now I guess I should be used to living alone\n\nIt\u2019s a sad situation not just because I\u2019m so blue\nIt\u2019s a sad situation cause I\u2019m still loving you\n\nI never thought I\u2019d be feeling like this\nLiving on memories of your tender kiss\nYou\u2019re not the first one that I thought my heart wanted so\nBut you\u2019ll be the first to take part of me when you go",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ve known some sad situations before",
+        "And I\u2019ve faced a lot of temptations before",
+        "Yes I\u2019ve known others like you with a heart made of stone",
+        "And by now I guess I should be used to living alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a sad situation not just because I\u2019m so blue",
+        "It\u2019s a sad situation cause I\u2019m still loving you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never thought I\u2019d be feeling like this",
+        "Living on memories of your tender kiss",
+        "You\u2019re not the first one that I thought my heart wanted so",
+        "But you\u2019ll be the first to take part of me when you go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

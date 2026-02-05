@@ -1,0 +1,49 @@
+{
+  "slug": "are-you-teasin-me",
+  "title": "Are You Teasin\u2019 Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/are-you-teasin-me/",
+  "raw_lyrics": "When we\u2019re all alone and I\u2019m in your arms\nAre you teasing me\nWhen you\u2019re tellin\u2019 me how you thrill to my charms\nAre you teasing me\n\nAre you untrue when I\u2019m not with you\nWhen we\u2019re apart are you free\nTell me darling while our love is still young\nAre you teasing me\n\nYou say that my kiss sends your heart in a whirl\nAre you teasing me\nAnd that youll be mine till the end of the world\nAre you teasing me\n\nYou tell me my love could make your life complete\nAre you teasing me\nAnd n\u2019ere from my arms would you long to be free\nAre you teasing me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When we\u2019re all alone and I\u2019m in your arms",
+        "Are you teasing me",
+        "When you\u2019re tellin\u2019 me how you thrill to my charms",
+        "Are you teasing me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Are you untrue when I\u2019m not with you",
+        "When we\u2019re apart are you free",
+        "Tell me darling while our love is still young",
+        "Are you teasing me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You say that my kiss sends your heart in a whirl",
+        "Are you teasing me",
+        "And that youll be mine till the end of the world",
+        "Are you teasing me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You tell me my love could make your life complete",
+        "Are you teasing me",
+        "And n\u2019ere from my arms would you long to be free",
+        "Are you teasing me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "sing-sing-sing",
+  "title": "Sing Sing Sing",
+  "source_url": "https://www.bluegrasslyrics.com/song/sing-sing-sing/",
+  "raw_lyrics": "In this world of sorrow I\u2019ve seen troubles and woe\nWay up there in glory Lordy I\u2019ll see no more\nFor I know my prayers have not been in vain\nWhen I get to glory I\u2019m gonna sing sing sing\n\nWhen I get to glory I\u2019m gonna sing sing sing\nI\u2019m gonna let the hallelujahs ring\nI\u2019m gonna praise my blessed Saviour\u2019s name\nWhen I get to glory I\u2019m gonna sing sing sing\n\nSometimes I get so weary inside\nThat I recall how my Jesus died\nUp there I know there\u2019ll be no more pain\nWhen I get to glory I\u2019m gonna sing sing sing\n\nUp there no tears will blind my eyes\nAs I walk along by my Jesus\u2019s side\nI\u2019ll meet my loved ones all once again\nWhen I get to glory I\u2019m gonna sing sing sing",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In this world of sorrow I\u2019ve seen troubles and woe",
+        "Way up there in glory Lordy I\u2019ll see no more",
+        "For I know my prayers have not been in vain",
+        "When I get to glory I\u2019m gonna sing sing sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I get to glory I\u2019m gonna sing sing sing",
+        "I\u2019m gonna let the hallelujahs ring",
+        "I\u2019m gonna praise my blessed Saviour\u2019s name",
+        "When I get to glory I\u2019m gonna sing sing sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes I get so weary inside",
+        "That I recall how my Jesus died",
+        "Up there I know there\u2019ll be no more pain",
+        "When I get to glory I\u2019m gonna sing sing sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Up there no tears will blind my eyes",
+        "As I walk along by my Jesus\u2019s side",
+        "I\u2019ll meet my loved ones all once again",
+        "When I get to glory I\u2019m gonna sing sing sing"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

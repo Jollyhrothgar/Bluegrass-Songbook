@@ -1,0 +1,59 @@
+{
+  "slug": "i-wanna-be-a-christian-soldier",
+  "title": "I Wanna Be A Christian Soldier",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-wanna-be-a-christian-soldier/",
+  "raw_lyrics": "Well I wanna be a Christian soldier\nIn the army of our Lord\nI\u2019m gonna tell the love of Jesus\nTill my life down here is o\u2019er\n\nI\u2019m gonna tell the world he died for me\nTell em how he died in shame\nYes I wanna be a Christian soldier\nAnd fight in my Savior\u2019s name\n\nI love my Savior\nHe loves me too\nI\u2019ll be His soldier\n\u2018Til my life\u2019s work is through\n\nWell I wanna March through the valleys\nThen I wanna March up the hill\nAnd I wanna sing about the love of God\nAnd do his blessed will\n\nI wanna drink from the fountain\nBe baptised in his love\nAnd I wanna be there when the roll is called\nOn the home coming day above",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I wanna be a Christian soldier",
+        "In the army of our Lord",
+        "I\u2019m gonna tell the love of Jesus",
+        "Till my life down here is o\u2019er"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m gonna tell the world he died for me",
+        "Tell em how he died in shame",
+        "Yes I wanna be a Christian soldier",
+        "And fight in my Savior\u2019s name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I love my Savior",
+        "He loves me too",
+        "I\u2019ll be His soldier",
+        "\u2018Til my life\u2019s work is through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I wanna March through the valleys",
+        "Then I wanna March up the hill",
+        "And I wanna sing about the love of God",
+        "And do his blessed will"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wanna drink from the fountain",
+        "Be baptised in his love",
+        "And I wanna be there when the roll is called",
+        "On the home coming day above"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

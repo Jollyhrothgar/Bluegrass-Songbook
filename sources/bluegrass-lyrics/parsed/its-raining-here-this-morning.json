@@ -1,0 +1,69 @@
+{
+  "slug": "its-raining-here-this-morning",
+  "title": "It\u2019s Raining Here This Morning",
+  "source_url": "https://www.bluegrasslyrics.com/song/its-raining-here-this-morning/",
+  "raw_lyrics": "Oh it\u2019s raining, raining, raining here this morning\nAs I sit in jail and hang my head in shame\nWith a smile I try to greet each early dawning\nBut they\u2019ve given me a number for my name\n\nMany a little raindrops are falling close to me\nMakes the streams and rivers just as muddy as can be\nIt\u2019s raining, raining, raining here this morning\nAs the Mississippi flows on to the sea\n\nHow I wish that I could see my little darling\nAnd hold her in my arms just as before\nI used to tell her every day I loved her\nBut now she doesn\u2019t love me anymore\n\nShe knew that I was guiltless of this one crime\nAnd said that she\u2019d be waiting there for me\nBut she has found somewhere else to wander\nWhere the Mississippi flows on to the sea\n\nIts raining, raining, raining here this morning\nAnd I am just as weary as can be\nI wish that I could follow all the raindrops\nDown the Mississippi toward the silver sea\n\nBut there\u2019s no way to prove that I\u2019m not guilty\nSo I will have to suffer all the shame\nGo and tell her for me little raindrops\nThat they\u2019ve given me a number for my name",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh it\u2019s raining, raining, raining here this morning",
+        "As I sit in jail and hang my head in shame",
+        "With a smile I try to greet each early dawning",
+        "But they\u2019ve given me a number for my name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Many a little raindrops are falling close to me",
+        "Makes the streams and rivers just as muddy as can be",
+        "It\u2019s raining, raining, raining here this morning",
+        "As the Mississippi flows on to the sea"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How I wish that I could see my little darling",
+        "And hold her in my arms just as before",
+        "I used to tell her every day I loved her",
+        "But now she doesn\u2019t love me anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She knew that I was guiltless of this one crime",
+        "And said that she\u2019d be waiting there for me",
+        "But she has found somewhere else to wander",
+        "Where the Mississippi flows on to the sea"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Its raining, raining, raining here this morning",
+        "And I am just as weary as can be",
+        "I wish that I could follow all the raindrops",
+        "Down the Mississippi toward the silver sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "But there\u2019s no way to prove that I\u2019m not guilty",
+        "So I will have to suffer all the shame",
+        "Go and tell her for me little raindrops",
+        "That they\u2019ve given me a number for my name"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

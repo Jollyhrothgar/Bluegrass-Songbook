@@ -1,0 +1,49 @@
+{
+  "slug": "well-meet-again-sweetheart",
+  "title": "We\u2019ll Meet Again Sweetheart",
+  "source_url": "https://www.bluegrasslyrics.com/song/well-meet-again-sweetheart/",
+  "raw_lyrics": "The time has come to say goodbye\nI\u2019m asking you to please don\u2019t cry\nThe time to me won\u2019t be so long\nTo know you\u2019re happy back at home\n\nSomeday we\u2019ll meet again sweetheart\nWe\u2019ll meet and never more to part\nSomeday we\u2019ll meet again sweetheart\nDon\u2019t cry, so please don\u2019t break my heart\n\nSo goodbye now, don\u2019t be blue\nTry to be happy and be true\nAnd remember what I say\nSweetheart we\u2019ll meet again someday\n\nOh sweetheart I\u2019m leaving now\nYes I\u2019ll soon be on my way\nEach night upon my knees I pray\nSweetheart we\u2019ll meet again someday",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The time has come to say goodbye",
+        "I\u2019m asking you to please don\u2019t cry",
+        "The time to me won\u2019t be so long",
+        "To know you\u2019re happy back at home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Someday we\u2019ll meet again sweetheart",
+        "We\u2019ll meet and never more to part",
+        "Someday we\u2019ll meet again sweetheart",
+        "Don\u2019t cry, so please don\u2019t break my heart"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So goodbye now, don\u2019t be blue",
+        "Try to be happy and be true",
+        "And remember what I say",
+        "Sweetheart we\u2019ll meet again someday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh sweetheart I\u2019m leaving now",
+        "Yes I\u2019ll soon be on my way",
+        "Each night upon my knees I pray",
+        "Sweetheart we\u2019ll meet again someday"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

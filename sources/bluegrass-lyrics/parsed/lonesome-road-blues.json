@@ -1,0 +1,69 @@
+{
+  "slug": "lonesome-road-blues",
+  "title": "Lonesome Road Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-road-blues/",
+  "raw_lyrics": "I\u2019m going down this road feeling bad\nI\u2019m going down this road feeling bad\nI\u2019m going down this road feeling bad, lord, lord\nAnd I ain\u2019t a-gonna be treated this a-way\n\nI\u2019m down in the jailhouse on my knees\nDown in the jailhouse on my knees\nDown in the jailhouse on my knees, lord, lord\nAnd I ain\u2019t a-gonna be treated this a-way\n\nThey feed me on corn bread and beans\nThey feed me on corn bread and beans\nThey feed me on corn bread and beans, lord, lord\nAnd I ain\u2019t a-gonna be treated this a-way\n\nGot two dollar shoes on my feet\nGot two dollar shoes on my feet\nTwo dollar shoes they hurt my feet, lord, lord\nAnd I ain\u2019t a-gonna be treated this a-way\n\nIt takes a ten dollar shoe to fit my foot\nIt takes a ten dollar shoe to fit my foot\nIt takes a ten dollar shoe to fit my foot, Great God\nAnd I ain\u2019t a-gonna be treated this a-way\n\nI\u2019m going where the weather fits my clothes\nI\u2019m going where the weather fits my clothes\nI\u2019m going where the weather fits my clothes, lord lord\nAnd I ain\u2019t  a-gonna be treated this a-way",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m going down this road feeling bad",
+        "I\u2019m going down this road feeling bad",
+        "I\u2019m going down this road feeling bad, lord, lord",
+        "And I ain\u2019t a-gonna be treated this a-way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m down in the jailhouse on my knees",
+        "Down in the jailhouse on my knees",
+        "Down in the jailhouse on my knees, lord, lord",
+        "And I ain\u2019t a-gonna be treated this a-way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They feed me on corn bread and beans",
+        "They feed me on corn bread and beans",
+        "They feed me on corn bread and beans, lord, lord",
+        "And I ain\u2019t a-gonna be treated this a-way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Got two dollar shoes on my feet",
+        "Got two dollar shoes on my feet",
+        "Two dollar shoes they hurt my feet, lord, lord",
+        "And I ain\u2019t a-gonna be treated this a-way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It takes a ten dollar shoe to fit my foot",
+        "It takes a ten dollar shoe to fit my foot",
+        "It takes a ten dollar shoe to fit my foot, Great God",
+        "And I ain\u2019t a-gonna be treated this a-way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going where the weather fits my clothes",
+        "I\u2019m going where the weather fits my clothes",
+        "I\u2019m going where the weather fits my clothes, lord lord",
+        "And I ain\u2019t  a-gonna be treated this a-way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

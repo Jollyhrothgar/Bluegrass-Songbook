@@ -1,0 +1,79 @@
+{
+  "slug": "cowboy-jack",
+  "title": "Cowboy Jack",
+  "source_url": "https://www.bluegrasslyrics.com/song/cowboy-jack/",
+  "raw_lyrics": "He was just a lonely cowboy\nWith a heart so brave and true\nHe learned to love a maiden\nWith eyes of heaven\u2019s own blue\n\nThey learned to love each other\nAnd named their wedding day\nWhen a quarrel came between them\nAnd Jack he rode away\n\nHe joined a band of cowboys\nAn tried to forget her name\nBut out on the lonely prairie\nShe waits for him the same\n\nOne night when work was finished\nJust at the close of day\nSomeone said sing a song Jack\nTwill drive those cares away\n\nWhen he reached the prairie\nHe found a new made mound\nHis friends they sadly told him\nThey\u2019d laid his loved one down\n\nThey said as she was dying\nShe breathed her sweetheart\u2019s name\nAnd asked them with her last breath\nTo tell him when he came\n\nYour sweetheart waits for you Jack\nYour sweetheart waits for you\nOut on the lonely prairie\nWhere the skies are always blue",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "He was just a lonely cowboy",
+        "With a heart so brave and true",
+        "He learned to love a maiden",
+        "With eyes of heaven\u2019s own blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They learned to love each other",
+        "And named their wedding day",
+        "When a quarrel came between them",
+        "And Jack he rode away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He joined a band of cowboys",
+        "An tried to forget her name",
+        "But out on the lonely prairie",
+        "She waits for him the same"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One night when work was finished",
+        "Just at the close of day",
+        "Someone said sing a song Jack",
+        "Twill drive those cares away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When he reached the prairie",
+        "He found a new made mound",
+        "His friends they sadly told him",
+        "They\u2019d laid his loved one down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They said as she was dying",
+        "She breathed her sweetheart\u2019s name",
+        "And asked them with her last breath",
+        "To tell him when he came"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your sweetheart waits for you Jack",
+        "Your sweetheart waits for you",
+        "Out on the lonely prairie",
+        "Where the skies are always blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

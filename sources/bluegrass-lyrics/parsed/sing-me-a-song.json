@@ -1,0 +1,54 @@
+{
+  "slug": "sing-me-a-song",
+  "title": "Sing Me a Song",
+  "source_url": "https://www.bluegrasslyrics.com/song/sing-me-a-song/",
+  "raw_lyrics": "Sing me a song\nSing me a song\nWhen I come to the end of my journey\nI know it won\u2019t be long\nTil I cross death\u2019s silent river\nDon\u2019t cry just sing me a song\n\nAs I travel through this life\nWith its struggle and its strife\nThough the days may be weary and long\nAs I search for happiness I find peace and rest\nWhen I sit down and sing me a song\n\nThough our burdens are not light\nAlways fighting for the right\nEverything seems to always go wrong\nWe could find peace of mind if together we could find\nTime to sit down and sing just one song\n\nWhen I reach the other shore\nMeet loved ones once more\nJoin in the happy angel throne\nIf I could forever sing let the hallelujahs ring\nI\u2019d be singing a hallelujah song",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Sing me a song",
+        "Sing me a song",
+        "When I come to the end of my journey",
+        "I know it won\u2019t be long",
+        "Til I cross death\u2019s silent river",
+        "Don\u2019t cry just sing me a song"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I travel through this life",
+        "With its struggle and its strife",
+        "Though the days may be weary and long",
+        "As I search for happiness I find peace and rest",
+        "When I sit down and sing me a song"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though our burdens are not light",
+        "Always fighting for the right",
+        "Everything seems to always go wrong",
+        "We could find peace of mind if together we could find",
+        "Time to sit down and sing just one song"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I reach the other shore",
+        "Meet loved ones once more",
+        "Join in the happy angel throne",
+        "If I could forever sing let the hallelujahs ring",
+        "I\u2019d be singing a hallelujah song"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

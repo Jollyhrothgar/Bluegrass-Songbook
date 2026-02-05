@@ -1,0 +1,45 @@
+{
+  "slug": "looking-for-the-stone",
+  "title": "Looking for the Stone",
+  "source_url": "https://www.bluegrasslyrics.com/song/looking-for-the-stone/",
+  "raw_lyrics": "My father found stone that was hewed out the mountain\nLord, my father found the stone that came rolling down from Babylon\nMy father found the stone that was hewed out the mountain\nLord it\u2019s tearin\u2019 down the kingdom of this world\nOh yes tearin\u2019 down the kingdom of this world\n\nI\u2019m looking for the stone that was hewed out the mountain\nLord I\u2019m looking for the stone that came rolling down from Babylon\nI\u2019m looking for the stone that was hewed out the mountain\nLord it\u2019s tearin\u2019 down the kingdom of this world\nOh yes tearin\u2019 down the kingdom of this world\n\nmy mother\u2026\n\nmy brother\u2026",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My father found stone that was hewed out the mountain",
+        "Lord, my father found the stone that came rolling down from Babylon",
+        "My father found the stone that was hewed out the mountain",
+        "Lord it\u2019s tearin\u2019 down the kingdom of this world",
+        "Oh yes tearin\u2019 down the kingdom of this world"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m looking for the stone that was hewed out the mountain",
+        "Lord I\u2019m looking for the stone that came rolling down from Babylon",
+        "I\u2019m looking for the stone that was hewed out the mountain",
+        "Lord it\u2019s tearin\u2019 down the kingdom of this world",
+        "Oh yes tearin\u2019 down the kingdom of this world"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "my mother\u2026"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "my brother\u2026"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

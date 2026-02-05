@@ -1,0 +1,59 @@
+{
+  "slug": "beauty-of-my-dream",
+  "title": "Beauty Of My Dream",
+  "source_url": "https://www.bluegrasslyrics.com/song/beauty-of-my-dream/",
+  "raw_lyrics": "One day I met the beauty of my dreams\nPretty eyes she had you ought-a seen\nBrown hair that flowed down behind\nI saw it all and yet I was so blind\n\nWe wound up in her part of town\nBright lights with our music all around\nI gazed into her eyes and she in mine\nShe had me in a trance it was so fine\n\nNow I cry cry cry\nI can\u2019t get over her though I try\nI\u2019m blue blue blue\nI should have known she never could be true\n\nWell I find as the night has faded on\nI found your house the neighbors say your gone\nThe girl she don\u2019t live here anymore\nOh the pain to me that lies in store\n\nSo all I have is a picture in a frame\nShe disappeared the same way she came\nShe made a wreck of me and I find\nShe\u2019s out of sight but always on my mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One day I met the beauty of my dreams",
+        "Pretty eyes she had you ought-a seen",
+        "Brown hair that flowed down behind",
+        "I saw it all and yet I was so blind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We wound up in her part of town",
+        "Bright lights with our music all around",
+        "I gazed into her eyes and she in mine",
+        "She had me in a trance it was so fine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I cry cry cry",
+        "I can\u2019t get over her though I try",
+        "I\u2019m blue blue blue",
+        "I should have known she never could be true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I find as the night has faded on",
+        "I found your house the neighbors say your gone",
+        "The girl she don\u2019t live here anymore",
+        "Oh the pain to me that lies in store"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So all I have is a picture in a frame",
+        "She disappeared the same way she came",
+        "She made a wreck of me and I find",
+        "She\u2019s out of sight but always on my mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

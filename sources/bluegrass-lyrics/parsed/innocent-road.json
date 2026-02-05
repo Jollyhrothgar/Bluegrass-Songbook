@@ -1,0 +1,47 @@
+{
+  "slug": "innocent-road",
+  "title": "Innocent Road",
+  "source_url": "https://www.bluegrasslyrics.com/song/innocent-road/",
+  "raw_lyrics": "Gonna read the good book every day\nGonna let the Savior show me the way\nGonna let Him take me by the hand\nAs I walk along to the promised land\n\nHome home I\u2019m goin home\nGoin down that innocent road\n\nGonna take a swim in the river wide\nGonna lay my burdens on the other side\nGonna take a walk down the Jerico road\nGonna lay down my heavy load\n\nGoin to rejoice when the angels sing\nGonna take a ride on the speckled wing\nGonna see my friends and my loved ones there\nAll eternal joys we can share",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Gonna read the good book every day",
+        "Gonna let the Savior show me the way",
+        "Gonna let Him take me by the hand",
+        "As I walk along to the promised land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Home home I\u2019m goin home",
+        "Goin down that innocent road"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Gonna take a swim in the river wide",
+        "Gonna lay my burdens on the other side",
+        "Gonna take a walk down the Jerico road",
+        "Gonna lay down my heavy load"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goin to rejoice when the angels sing",
+        "Gonna take a ride on the speckled wing",
+        "Gonna see my friends and my loved ones there",
+        "All eternal joys we can share"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

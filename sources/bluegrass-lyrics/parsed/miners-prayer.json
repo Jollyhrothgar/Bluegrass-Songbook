@@ -1,0 +1,49 @@
+{
+  "slug": "miners-prayer",
+  "title": "Miner\u2019s Prayer",
+  "source_url": "https://www.bluegrasslyrics.com/song/miners-prayer/",
+  "raw_lyrics": "When the whistle blows each morning\nAnd I walk down in this cold dark mine.\nI say a prayer to my dear savior\nPlease let me see the sunshine one more day.\n\nWhen oh when will it be over\nWhen will I lay these burdens down?\nAnd when I die dear Lord in Heaven\nPlease take my soul from beneath that cold dark ground.\n\nI still grieve for my poor brother\nAnd I still hear my dear old mother cry\nWhen late that night they came and told her\nHe\u2019d lost his life down in that Big Shoal mine.\n\nI have no shame I feel no sorrow\nIf on this earth not much I own\nCause I have the love of my sweet children\nAn old plow mule a shovel and a hoe.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When the whistle blows each morning",
+        "And I walk down in this cold dark mine.",
+        "I say a prayer to my dear savior",
+        "Please let me see the sunshine one more day."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When oh when will it be over",
+        "When will I lay these burdens down?",
+        "And when I die dear Lord in Heaven",
+        "Please take my soul from beneath that cold dark ground."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I still grieve for my poor brother",
+        "And I still hear my dear old mother cry",
+        "When late that night they came and told her",
+        "He\u2019d lost his life down in that Big Shoal mine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have no shame I feel no sorrow",
+        "If on this earth not much I own",
+        "Cause I have the love of my sweet children",
+        "An old plow mule a shovel and a hoe."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

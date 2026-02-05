@@ -1,0 +1,67 @@
+{
+  "slug": "galveston-flood",
+  "title": "Galveston Flood",
+  "source_url": "https://www.bluegrasslyrics.com/song/galveston-flood/",
+  "raw_lyrics": "It was the year of 1900 that was 80 years ago\nDeath come\u2019d a howling on the ocean and when death calls you\u2019ve got to go\nGalveston had a sea wall just to keep the water down\nBut a high tide from the ocean blew the water all over the town.\n\nWasn\u2019t that a mighty storm\nWasn\u2019t that a mighty storm in the morning\nWasn\u2019t that a mighty storm\nIt blew all the people away.\n\nThe sea began to rolling the ships they could not land\nI heard a captain crying Oh God save a drowning man\nThe rain it was a falling and the thunder began to roll\nThe lightning flashed like Hell-fire and the wind began to blow\n\nThe trees fell on the island and the houses gave away\nSome they strived and drownded others died every way.\n\nThe trains at the station were loaded with the people all leaving town\nBut the trestle gave way with the water and the trains they went on down\nOld death the cruel master when the winds began to blow\nRode in on a team of horses and cried death won\u2019t you let me go.\n\nThe flood it took my mother it took my brother too\nI thought I heard my father cry as I watched my mother go\nOld death your hands are clammy when you\u2019ve got them on my knee\nYou come and took my mother won\u2019t you come back after me?",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It was the year of 1900 that was 80 years ago",
+        "Death come\u2019d a howling on the ocean and when death calls you\u2019ve got to go",
+        "Galveston had a sea wall just to keep the water down",
+        "But a high tide from the ocean blew the water all over the town."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wasn\u2019t that a mighty storm",
+        "Wasn\u2019t that a mighty storm in the morning",
+        "Wasn\u2019t that a mighty storm",
+        "It blew all the people away."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sea began to rolling the ships they could not land",
+        "I heard a captain crying Oh God save a drowning man",
+        "The rain it was a falling and the thunder began to roll",
+        "The lightning flashed like Hell-fire and the wind began to blow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The trees fell on the island and the houses gave away",
+        "Some they strived and drownded others died every way."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The trains at the station were loaded with the people all leaving town",
+        "But the trestle gave way with the water and the trains they went on down",
+        "Old death the cruel master when the winds began to blow",
+        "Rode in on a team of horses and cried death won\u2019t you let me go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The flood it took my mother it took my brother too",
+        "I thought I heard my father cry as I watched my mother go",
+        "Old death your hands are clammy when you\u2019ve got them on my knee",
+        "You come and took my mother won\u2019t you come back after me?"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

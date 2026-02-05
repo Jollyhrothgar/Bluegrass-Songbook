@@ -1,0 +1,49 @@
+{
+  "slug": "ill-just-pretend",
+  "title": "I\u2019ll Just Pretend",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-just-pretend/",
+  "raw_lyrics": "You spurned the love I gave you darling\nA love you once was proud to own\nYour found someone who you love better\nAnd in my dreams I walk alone\n\nI\u2019ll just pretend that I don\u2019t love you\nI\u2019ll just pretend that I don\u2019t care\nAnd when I meet you face to face dear\nI\u2019ll turn my head I\u2019ll just pretend\n\nThose happy hours we spent together\nForever in my heart will live\nThat\u2019s all I have for each tomorrow\nFor we will never meet again\n\nI\u2019ll try my best to forget you\nTo love you now is such a sin\nAnd as I\u2019m facing all my fears, dear\nThey\u2019ll understand I won\u2019t pretend",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You spurned the love I gave you darling",
+        "A love you once was proud to own",
+        "Your found someone who you love better",
+        "And in my dreams I walk alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll just pretend that I don\u2019t love you",
+        "I\u2019ll just pretend that I don\u2019t care",
+        "And when I meet you face to face dear",
+        "I\u2019ll turn my head I\u2019ll just pretend"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Those happy hours we spent together",
+        "Forever in my heart will live",
+        "That\u2019s all I have for each tomorrow",
+        "For we will never meet again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll try my best to forget you",
+        "To love you now is such a sin",
+        "And as I\u2019m facing all my fears, dear",
+        "They\u2019ll understand I won\u2019t pretend"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

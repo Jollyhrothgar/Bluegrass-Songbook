@@ -1,0 +1,49 @@
+{
+  "slug": "twilight-is-stealing",
+  "title": "Twilight is Stealing",
+  "source_url": "https://www.bluegrasslyrics.com/song/twilight-is-stealing/",
+  "raw_lyrics": "Twilight is stealing over the sea\nShadows are falling dark on the lee\nBorn on the night winds voices of yore\nCome from that far off shore\n\nFar away beyond the starlit skies\nWhere the lovelight never never dies\nGleameth a mansion filled with delight\nSweet happy home so bright\n\nVoices of loved ones songs of the past\nStill linger round me while life shall last\nLonely I wander sadly I roam\nSeeking a far off home\n\nCome in the twilight come come to me\nBringing some message from over the sea\nCheering my pathway while here I roam\nSeeking that far off home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Twilight is stealing over the sea",
+        "Shadows are falling dark on the lee",
+        "Born on the night winds voices of yore",
+        "Come from that far off shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Far away beyond the starlit skies",
+        "Where the lovelight never never dies",
+        "Gleameth a mansion filled with delight",
+        "Sweet happy home so bright"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Voices of loved ones songs of the past",
+        "Still linger round me while life shall last",
+        "Lonely I wander sadly I roam",
+        "Seeking a far off home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come in the twilight come come to me",
+        "Bringing some message from over the sea",
+        "Cheering my pathway while here I roam",
+        "Seeking that far off home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

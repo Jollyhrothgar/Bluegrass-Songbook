@@ -1,0 +1,42 @@
+{
+  "slug": "a-dark-starless-night",
+  "title": "A Dark Starless Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-dark-starless-night/",
+  "raw_lyrics": "Oh tonight dear I\u2019m thinking of days long gone by\nOf my childhood sweetheart who left me to cry\nAmid broken vows now you left me alone\nI wonder if my heart can lead you back home\nI wonder if my heart can lead you back home\n\nNow once we were happy with love in our hearts\nStole each night together vowed never to part\nBut a new love has won you with him you\u2019ll abide\nYou\u2019re happy my darling but I\u2019m left to cry\nYou\u2019re happy my darling but I\u2019m left to cry\n\nOh meet me my darlin please meet me alone\nWe\u2019ll stroll once together where often we roamed\nAnd if you are sure that your new love is right\nMy heart will be blue as a dark starless night\nMy heart will be blue as a dark starless night",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh tonight dear I\u2019m thinking of days long gone by",
+        "Of my childhood sweetheart who left me to cry",
+        "Amid broken vows now you left me alone",
+        "I wonder if my heart can lead you back home",
+        "I wonder if my heart can lead you back home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now once we were happy with love in our hearts",
+        "Stole each night together vowed never to part",
+        "But a new love has won you with him you\u2019ll abide",
+        "You\u2019re happy my darling but I\u2019m left to cry",
+        "You\u2019re happy my darling but I\u2019m left to cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh meet me my darlin please meet me alone",
+        "We\u2019ll stroll once together where often we roamed",
+        "And if you are sure that your new love is right",
+        "My heart will be blue as a dark starless night",
+        "My heart will be blue as a dark starless night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

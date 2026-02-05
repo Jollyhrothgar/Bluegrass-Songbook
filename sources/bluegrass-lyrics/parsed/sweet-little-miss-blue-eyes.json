@@ -1,0 +1,49 @@
+{
+  "slug": "sweet-little-miss-blue-eyes",
+  "title": "Sweet Little Miss Blue Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/sweet-little-miss-blue-eyes/",
+  "raw_lyrics": "Who makes me forget all the other girls I\u2019ve met\nSweet little miss blue eyes\nWho\u2019s sweeter to me that she really ought to be\nSweet little miss blue eyes\n\nLittle miss blue eyes looks so good\nI\u2019m gonna bring her to the neighborhood\nI\u2019m gonna make every girl in town\nJealous when she\u2019s around\n\nI\u2019m walking the line \u2019cause I\u2019m glad that she\u2019s mine\nI\u2019m living in paradise\nI know I can\u2019t go wrong by just stringing along\nWith sweet little miss blue eyes\n\nWho\u2019s gonna start taking care of my heart\nShe makes me realize\nIt\u2019s love, she\u2019s for me, and I really want to be\nWith sweet little miss blue eyes",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Who makes me forget all the other girls I\u2019ve met",
+        "Sweet little miss blue eyes",
+        "Who\u2019s sweeter to me that she really ought to be",
+        "Sweet little miss blue eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Little miss blue eyes looks so good",
+        "I\u2019m gonna bring her to the neighborhood",
+        "I\u2019m gonna make every girl in town",
+        "Jealous when she\u2019s around"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m walking the line \u2019cause I\u2019m glad that she\u2019s mine",
+        "I\u2019m living in paradise",
+        "I know I can\u2019t go wrong by just stringing along",
+        "With sweet little miss blue eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Who\u2019s gonna start taking care of my heart",
+        "She makes me realize",
+        "It\u2019s love, she\u2019s for me, and I really want to be",
+        "With sweet little miss blue eyes"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

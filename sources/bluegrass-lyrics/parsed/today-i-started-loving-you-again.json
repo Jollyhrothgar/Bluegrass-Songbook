@@ -1,0 +1,29 @@
+{
+  "slug": "today-i-started-loving-you-again",
+  "title": "Today I Started Loving You Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/today-i-started-loving-you-again/",
+  "raw_lyrics": "Today I started loving you again\nWell I\u2019m right back where I\u2019ve really always been\nI got over you just long enough to let my heartache mend\nThen today I started loving you again\n\nWhat a fool I was to think I could get by\nWith only these two million tears I cry\nI should have known the worst was yet to come  the crying time for me had just begun\nCause today I started loving you again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Today I started loving you again",
+        "Well I\u2019m right back where I\u2019ve really always been",
+        "I got over you just long enough to let my heartache mend",
+        "Then today I started loving you again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "What a fool I was to think I could get by",
+        "With only these two million tears I cry",
+        "I should have known the worst was yet to come  the crying time for me had just begun",
+        "Cause today I started loving you again"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

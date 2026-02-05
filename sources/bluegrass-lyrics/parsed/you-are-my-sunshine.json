@@ -1,0 +1,59 @@
+{
+  "slug": "you-are-my-sunshine",
+  "title": "You Are My Sunshine",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-are-my-sunshine/",
+  "raw_lyrics": "Beyond the night dear as I lay sleeping\nI dreamed I held you in my arms\nBut when I woke dear I was mistaken\nAnd I hung my head and I cried\n\nYou are my sunshine, my only sunshine\nYou make me happy when skies are gray\nYou\u2019ll never know dear how much I love you\nPlease don\u2019t take my sunshine away\n\nI\u2019ll always love you and make you happy\nIf you will only say the same\nBut if you leave me and love another\nYou\u2019ll regret it all someday\n\nYou told me once dear you really loved me\nAnd no one could come between\nBut now you\u2019ve left me to love another\nYou have shattered all my dreams\n\nIn all my dreams dear you seem to leave me\nWhen I awake my poor heart pains\nSo won\u2019t you come back and make me happy\nI\u2019ll forgive dear I\u2019ll take all the blame",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Beyond the night dear as I lay sleeping",
+        "I dreamed I held you in my arms",
+        "But when I woke dear I was mistaken",
+        "And I hung my head and I cried"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You are my sunshine, my only sunshine",
+        "You make me happy when skies are gray",
+        "You\u2019ll never know dear how much I love you",
+        "Please don\u2019t take my sunshine away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll always love you and make you happy",
+        "If you will only say the same",
+        "But if you leave me and love another",
+        "You\u2019ll regret it all someday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You told me once dear you really loved me",
+        "And no one could come between",
+        "But now you\u2019ve left me to love another",
+        "You have shattered all my dreams"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In all my dreams dear you seem to leave me",
+        "When I awake my poor heart pains",
+        "So won\u2019t you come back and make me happy",
+        "I\u2019ll forgive dear I\u2019ll take all the blame"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

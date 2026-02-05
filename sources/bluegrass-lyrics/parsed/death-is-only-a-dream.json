@@ -1,0 +1,59 @@
+{
+  "slug": "death-is-only-a-dream",
+  "title": "Death Is Only A Dream",
+  "source_url": "https://www.bluegrasslyrics.com/song/death-is-only-a-dream/",
+  "raw_lyrics": "Sadly we sing and with tremulous breath\nAs we stand by the mystical stream\nIn the valley and by the dark river of death\nAnd yet \u2019tis no more than a dream\n\nOnly a dream, only a dream\nOf glory beyond the dark stream\nHow peaceful the slumber, how happy the waking\nWhere death is only a dream\n\nWhy should we weep when the weary ones rest\nIn the bosom of Jesus supreme\nIn the mansions of glory prepared for the blessed\nFor death is no more than a dream\n\nNaught in the river the Saints should appall\nThough\u2019 it frightfully dismal may seem\nIn the arms of our Savior no ill can befall\nThey find it no more than a dream\n\nOver the turbid and onrushing tide\nDoth the light of eternity gleam\nAnd the ransomed the darkness and storm shall out ride\nTo wake with glad smiles from their dream",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sadly we sing and with tremulous breath",
+        "As we stand by the mystical stream",
+        "In the valley and by the dark river of death",
+        "And yet \u2019tis no more than a dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Only a dream, only a dream",
+        "Of glory beyond the dark stream",
+        "How peaceful the slumber, how happy the waking",
+        "Where death is only a dream"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Why should we weep when the weary ones rest",
+        "In the bosom of Jesus supreme",
+        "In the mansions of glory prepared for the blessed",
+        "For death is no more than a dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Naught in the river the Saints should appall",
+        "Though\u2019 it frightfully dismal may seem",
+        "In the arms of our Savior no ill can befall",
+        "They find it no more than a dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Over the turbid and onrushing tide",
+        "Doth the light of eternity gleam",
+        "And the ransomed the darkness and storm shall out ride",
+        "To wake with glad smiles from their dream"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

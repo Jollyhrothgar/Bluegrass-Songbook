@@ -1,0 +1,49 @@
+{
+  "slug": "no-one",
+  "title": "No One",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-one/",
+  "raw_lyrics": "I went to the old home where I once used to roam\nAnd my playmates had every one gone\nHow sad and how drear no voice could I hear\nThere was no one to welcome me there\n\nNo one to welcome me home\nNo one to welcome me home\nHow sad and how drear no voice could I hear\nThere was no one to welcome me there\n\nI wnt to the spring that was flowing so free\nAnd there I drank of water so clear\nAnd sadly this voice seemed to whisper to me\nThere is no one to welcome you here\n\nNo one to welcome me home\nNo one to welcome me home\nBut when I behold those mansions above\nThere\u2019ll be someone to welcome me home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I went to the old home where I once used to roam",
+        "And my playmates had every one gone",
+        "How sad and how drear no voice could I hear",
+        "There was no one to welcome me there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "No one to welcome me home",
+        "No one to welcome me home",
+        "How sad and how drear no voice could I hear",
+        "There was no one to welcome me there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wnt to the spring that was flowing so free",
+        "And there I drank of water so clear",
+        "And sadly this voice seemed to whisper to me",
+        "There is no one to welcome you here"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "No one to welcome me home",
+        "No one to welcome me home",
+        "But when I behold those mansions above",
+        "There\u2019ll be someone to welcome me home"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

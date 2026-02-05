@@ -1,0 +1,43 @@
+{
+  "slug": "ive-just-seen-the-rock-of-ages",
+  "title": "I\u2019ve Just Seen The Rock Of Ages",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-just-seen-the-rock-of-ages/",
+  "raw_lyrics": "Oh, I was standing by the bedside\nWhere my fevered mother lay\nWhen she called me close beside her\nAnd I thought I heard her say\nI\u2019ve just seen the rock of ages\nJacob\u2019s ladder hanging down\nI\u2019ve just crossed the river of Jordan\nNow, my son, I\u2019m homeward bound\n\nOh, as we gathered by her bedside\nTears begin to fill our eyes\nThen she called me close beside her\nAnd whispered softly her good-byes\n\nPine trees blowing cross the mountain\nWhere forever she will lay\nThere she\u2019ll rest beside the fountain\nThere she\u2019ll sleep beneath the clay",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, I was standing by the bedside",
+        "Where my fevered mother lay",
+        "When she called me close beside her",
+        "And I thought I heard her say",
+        "I\u2019ve just seen the rock of ages",
+        "Jacob\u2019s ladder hanging down",
+        "I\u2019ve just crossed the river of Jordan",
+        "Now, my son, I\u2019m homeward bound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, as we gathered by her bedside",
+        "Tears begin to fill our eyes",
+        "Then she called me close beside her",
+        "And whispered softly her good-byes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Pine trees blowing cross the mountain",
+        "Where forever she will lay",
+        "There she\u2019ll rest beside the fountain",
+        "There she\u2019ll sleep beneath the clay"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

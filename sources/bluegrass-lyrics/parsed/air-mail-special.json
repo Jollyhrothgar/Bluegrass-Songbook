@@ -1,0 +1,49 @@
+{
+  "slug": "air-mail-special",
+  "title": "Air Mail Special",
+  "source_url": "https://www.bluegrasslyrics.com/song/air-mail-special/",
+  "raw_lyrics": "Left New York this morning early\nTraveling south so wide and high\nSailing through the wide blue yonder\nIt\u2019s that air mail special on the fly\n\nListen to the motors humming\nShe is streaking through the sky\nLike a bird that\u2019s flying homeward\nIt\u2019s that air mail special on the fly\n\nOver plains and high dark mountains\nOver rivers deep and wide\nCarrying mail to California\nIt\u2019s that air mail special on the fly\n\nWatch her circle for the landing\nHear her moan and cough and sigh\nNow she\u2019s coming down the runway\nIt\u2019s that air mail special on the fly",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Left New York this morning early",
+        "Traveling south so wide and high",
+        "Sailing through the wide blue yonder",
+        "It\u2019s that air mail special on the fly"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Listen to the motors humming",
+        "She is streaking through the sky",
+        "Like a bird that\u2019s flying homeward",
+        "It\u2019s that air mail special on the fly"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Over plains and high dark mountains",
+        "Over rivers deep and wide",
+        "Carrying mail to California",
+        "It\u2019s that air mail special on the fly"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Watch her circle for the landing",
+        "Hear her moan and cough and sigh",
+        "Now she\u2019s coming down the runway",
+        "It\u2019s that air mail special on the fly"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

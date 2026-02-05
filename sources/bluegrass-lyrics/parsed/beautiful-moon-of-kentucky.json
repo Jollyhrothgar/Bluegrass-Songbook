@@ -1,0 +1,39 @@
+{
+  "slug": "beautiful-moon-of-kentucky",
+  "title": "Beautiful Moon Of Kentucky",
+  "source_url": "https://www.bluegrasslyrics.com/song/beautiful-moon-of-kentucky/",
+  "raw_lyrics": "There\u2019s a beautiful moon shining down on Kentucky\nWhere the fields of bluegrass are growin\u2019\n\u2018Neath the beautiful moon shining down on Kentucky\nTomorrow that\u2019s where I\u2019ll be going\n\nFor the girl that I love she waits for me know\nTo return from ol\u2019 sunny Tennessee\n\u2018Neath the beautiful moon shining down on Kentucky\nTomorrow that\u2019s where I will be\n\nWell I left my old home way down in Kentucky\nAnd headed for old sunny Tennessee\nBut I\u2019m on my way back to the hills of Kentucky\nWith my darling once more there I\u2019ll be",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a beautiful moon shining down on Kentucky",
+        "Where the fields of bluegrass are growin\u2019",
+        "\u2018Neath the beautiful moon shining down on Kentucky",
+        "Tomorrow that\u2019s where I\u2019ll be going"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For the girl that I love she waits for me know",
+        "To return from ol\u2019 sunny Tennessee",
+        "\u2018Neath the beautiful moon shining down on Kentucky",
+        "Tomorrow that\u2019s where I will be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I left my old home way down in Kentucky",
+        "And headed for old sunny Tennessee",
+        "But I\u2019m on my way back to the hills of Kentucky",
+        "With my darling once more there I\u2019ll be"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

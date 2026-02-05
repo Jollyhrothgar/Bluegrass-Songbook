@@ -1,0 +1,39 @@
+{
+  "slug": "hard-hearted",
+  "title": "Hard Hearted",
+  "source_url": "https://www.bluegrasslyrics.com/song/hard-hearted/",
+  "raw_lyrics": "Hard hearted heart breaker\nDream stealer, love maker\nHard hearted heart breaker\nHow many hearts have you broken today\n\nHow many hearts have you broken today\nHow many lives have you caused to go wrong\nHow many hearts have you broken in two\nJust because your heart has proved untrue\n\nHow many lies have you told other guys\nJust like the ones you told to me\nHoney, someday you\u2019ll learn that the tide will have to turn\nJust keep on breaking hearts and you will see",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Hard hearted heart breaker",
+        "Dream stealer, love maker",
+        "Hard hearted heart breaker",
+        "How many hearts have you broken today"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How many hearts have you broken today",
+        "How many lives have you caused to go wrong",
+        "How many hearts have you broken in two",
+        "Just because your heart has proved untrue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How many lies have you told other guys",
+        "Just like the ones you told to me",
+        "Honey, someday you\u2019ll learn that the tide will have to turn",
+        "Just keep on breaking hearts and you will see"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

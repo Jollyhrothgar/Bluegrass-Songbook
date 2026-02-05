@@ -1,0 +1,49 @@
+{
+  "slug": "river-of-death",
+  "title": "River Of Death",
+  "source_url": "https://www.bluegrasslyrics.com/song/river-of-death/",
+  "raw_lyrics": "Oh the river of death lies just before me\nCan I find a place that I can cross\nOr will I be in sin forever\nOh Lord don\u2019t let my soul be lost\n\nOh I wanna walk with Christ my savior\nFor he\u2019s the one that\u2019ll guide me on\nAll through my life I\u2019ve been a sinner\nNow I\u2019m right with God so I\u2019m travelling home\n\nOh I can hear my savior calling\nTo me his voice sounds sweet and low\nFor me I hear my loved ones cheering\nOh, praise the Lord I\u2019m ready to go\n\nMy life down here will soon be over\nAnd this old world holds nothing for me\nHe saved my soul and He made me happy\nThat beautiful land I\u2019m going to see",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the river of death lies just before me",
+        "Can I find a place that I can cross",
+        "Or will I be in sin forever",
+        "Oh Lord don\u2019t let my soul be lost"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I wanna walk with Christ my savior",
+        "For he\u2019s the one that\u2019ll guide me on",
+        "All through my life I\u2019ve been a sinner",
+        "Now I\u2019m right with God so I\u2019m travelling home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I can hear my savior calling",
+        "To me his voice sounds sweet and low",
+        "For me I hear my loved ones cheering",
+        "Oh, praise the Lord I\u2019m ready to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My life down here will soon be over",
+        "And this old world holds nothing for me",
+        "He saved my soul and He made me happy",
+        "That beautiful land I\u2019m going to see"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

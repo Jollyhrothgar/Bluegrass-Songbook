@@ -1,0 +1,39 @@
+{
+  "slug": "i-never-know",
+  "title": "I Never Know",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-never-know/",
+  "raw_lyrics": "I never knew how much I miss you\nI never knew all the tears that I\u2019d cry\nDay after day I learn my lesson\nYou meant forever when you said good-bye\n\nLast night I went out walkin\u2019\nBy the caf\u00e9 where I first met you\nI sat there in the shadows\nWatching young lovers do what we used to do\n\nI keep a letter you wrote me\nSayin\u2019 that we\u2019d never part\nOne day when I find another\nI\u2019ll tear it to pieces like you did my heart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I never knew how much I miss you",
+        "I never knew all the tears that I\u2019d cry",
+        "Day after day I learn my lesson",
+        "You meant forever when you said good-bye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night I went out walkin\u2019",
+        "By the caf\u00e9 where I first met you",
+        "I sat there in the shadows",
+        "Watching young lovers do what we used to do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I keep a letter you wrote me",
+        "Sayin\u2019 that we\u2019d never part",
+        "One day when I find another",
+        "I\u2019ll tear it to pieces like you did my heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

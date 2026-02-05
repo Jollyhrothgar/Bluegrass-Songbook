@@ -1,0 +1,59 @@
+{
+  "slug": "last-move-for-me-the",
+  "title": "Last Move For Me, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/last-move-for-me-the/",
+  "raw_lyrics": "I\u2019ve been traveling for Jesus so much of my life\nBeen traveling o\u2019er land and on sea\nBut I\u2019m planning on taking a trip to the sky\nThat will be the last move for me\n\nWhen I move to the sky up in heaven so high\nWhat a wonderful time that will be\nI\u2019m ready to go washed in Calvary\u2019s flow\nThat will be the last move for me\n\nI\u2019ve seen wonderful sights as I travelled afar\nHow little, how empty they seem\nWhen I make my last move to that city of gold\nThat will be the last move for me\n\nHere I\u2019m bothered with packing each time that I move\nAnd carry a load in each hand\nBut I\u2019ll not need one thing that I\u2019ve used in this world\nWhen I move to that heavenly land\n\nEverything that I\u2019ll need will be furnished up there\nNot even my song books I\u2019ll bring\nOr the precious old Bible that showed me the way\nI\u2019ll not need when I stand by my King",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been traveling for Jesus so much of my life",
+        "Been traveling o\u2019er land and on sea",
+        "But I\u2019m planning on taking a trip to the sky",
+        "That will be the last move for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When I move to the sky up in heaven so high",
+        "What a wonderful time that will be",
+        "I\u2019m ready to go washed in Calvary\u2019s flow",
+        "That will be the last move for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve seen wonderful sights as I travelled afar",
+        "How little, how empty they seem",
+        "When I make my last move to that city of gold",
+        "That will be the last move for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Here I\u2019m bothered with packing each time that I move",
+        "And carry a load in each hand",
+        "But I\u2019ll not need one thing that I\u2019ve used in this world",
+        "When I move to that heavenly land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Everything that I\u2019ll need will be furnished up there",
+        "Not even my song books I\u2019ll bring",
+        "Or the precious old Bible that showed me the way",
+        "I\u2019ll not need when I stand by my King"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

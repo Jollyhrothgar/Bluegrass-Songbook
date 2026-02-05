@@ -1,0 +1,35 @@
+{
+  "slug": "you-are-my-flower",
+  "title": "You Are My Flower",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-are-my-flower/",
+  "raw_lyrics": "You are my flower\nThat\u2019s blooming in the mountain so high\nYou are my flower\nThat\u2019s blooming there for me\n\nWhen summertime is gone and snow begins to fall\nYou can sing this song and say to one and all\n\nSo wear a happy smile and life will be worthwhile\nForget the tears but don\u2019t forget to smile",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "You are my flower",
+        "That\u2019s blooming in the mountain so high",
+        "You are my flower",
+        "That\u2019s blooming there for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When summertime is gone and snow begins to fall",
+        "You can sing this song and say to one and all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So wear a happy smile and life will be worthwhile",
+        "Forget the tears but don\u2019t forget to smile"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

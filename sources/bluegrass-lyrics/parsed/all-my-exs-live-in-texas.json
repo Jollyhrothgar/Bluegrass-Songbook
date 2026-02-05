@@ -1,0 +1,48 @@
+{
+  "slug": "all-my-exs-live-in-texas",
+  "title": "All My Ex\u2019s Live In Texas",
+  "source_url": "https://www.bluegrasslyrics.com/song/all-my-exs-live-in-texas/",
+  "raw_lyrics": "All my ex\u2019s live in Texas\nAnd Texas is the place I\u2019d dearly love to be\nBut all my ex\u2019s live in Texas\nAnd that\u2019s why I hang my hat in Tennessee.\n\nRosanna\u2019s down in Texarcana wanted me to push her broom\nAnd sweet Arlene in Abilene she forgot I owned the moon\nAnd Allison in Galviston somehow lost her sanity\nAnd Dimples who now lives in Temple\u2019s got the law looking for me.\n\nI remember that old Rio river where I learned to swim\nBut it brings to mind another time when I wore my welcome thin\nMy transcendental meditation I go there each night\nBut I\u2019ll always come back to myself long before daylight.\n\nSome folks think I\u2019m hiding\nit\u2019s been rumored that I died\nBut I\u2019m alive and well in Tennessee.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "All my ex\u2019s live in Texas",
+        "And Texas is the place I\u2019d dearly love to be",
+        "But all my ex\u2019s live in Texas",
+        "And that\u2019s why I hang my hat in Tennessee."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rosanna\u2019s down in Texarcana wanted me to push her broom",
+        "And sweet Arlene in Abilene she forgot I owned the moon",
+        "And Allison in Galviston somehow lost her sanity",
+        "And Dimples who now lives in Temple\u2019s got the law looking for me."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember that old Rio river where I learned to swim",
+        "But it brings to mind another time when I wore my welcome thin",
+        "My transcendental meditation I go there each night",
+        "But I\u2019ll always come back to myself long before daylight."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some folks think I\u2019m hiding",
+        "it\u2019s been rumored that I died",
+        "But I\u2019m alive and well in Tennessee."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "lonesome-old-song",
+  "title": "Lonesome Old Song",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-old-song/",
+  "raw_lyrics": "I set here in shame while the records are playing\nThe blues hang around me no need to go home\nI keep on a drinking and wondering about her\nThat lonesome old song reminds me she\u2019s gone\n\nThat lonesome old song keeps on a playing\nAnd telling a story that makes me so blue\nHow the girl that I love has gone on and left me\nThat lonesome old song reminds me of you\n\nI know I\u2019m a fool to still care about her\nShe\u2019s been unfaithful unkind and untrue\nBut all that she\u2019s done right now don\u2019t matter\nThat lonesome old song reminds me we\u2019re thru\n\nI know some day I\u2019ll get over losing\nShe\u2019s the only girl I could ever call mine\nSince she\u2019s gone away my life ain\u2019t worth living\nFor a lonesome old song and a bottle of wine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I set here in shame while the records are playing",
+        "The blues hang around me no need to go home",
+        "I keep on a drinking and wondering about her",
+        "That lonesome old song reminds me she\u2019s gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That lonesome old song keeps on a playing",
+        "And telling a story that makes me so blue",
+        "How the girl that I love has gone on and left me",
+        "That lonesome old song reminds me of you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know I\u2019m a fool to still care about her",
+        "She\u2019s been unfaithful unkind and untrue",
+        "But all that she\u2019s done right now don\u2019t matter",
+        "That lonesome old song reminds me we\u2019re thru"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know some day I\u2019ll get over losing",
+        "She\u2019s the only girl I could ever call mine",
+        "Since she\u2019s gone away my life ain\u2019t worth living",
+        "For a lonesome old song and a bottle of wine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

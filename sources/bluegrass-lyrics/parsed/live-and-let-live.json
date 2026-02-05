@@ -1,0 +1,50 @@
+{
+  "slug": "live-and-let-live",
+  "title": "Live And Let Live",
+  "source_url": "https://www.bluegrasslyrics.com/song/live-and-let-live/",
+  "raw_lyrics": "They tell me that you\u2019re going away\nWhat makes you want to leave\nYou gave me your love\nYou gave me your vow\nAnd you\u2019re leaving me here to grieve\n\nLive and let live, don\u2019t break my heart\nDon\u2019t leave me here to cry\nI never could live if we should part\nTell me you don\u2019t mean good-bye\n\nStayed awake last night and I walked the floor\nWhat makes you treat me so\nLive and let live, don\u2019t break my heart\nI don\u2019t want to live if you go\n\nYou\u2019re the one who made me love you so\nYou\u2019re the one who\u2019s making my cry\nYou\u2019re the one who\u2019d break me heart if you go\nTell me you don\u2019t mean good-bye",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "They tell me that you\u2019re going away",
+        "What makes you want to leave",
+        "You gave me your love",
+        "You gave me your vow",
+        "And you\u2019re leaving me here to grieve"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Live and let live, don\u2019t break my heart",
+        "Don\u2019t leave me here to cry",
+        "I never could live if we should part",
+        "Tell me you don\u2019t mean good-bye"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Stayed awake last night and I walked the floor",
+        "What makes you treat me so",
+        "Live and let live, don\u2019t break my heart",
+        "I don\u2019t want to live if you go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re the one who made me love you so",
+        "You\u2019re the one who\u2019s making my cry",
+        "You\u2019re the one who\u2019d break me heart if you go",
+        "Tell me you don\u2019t mean good-bye"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "it-wont-work-this-time",
+  "title": "It Won\u2019t Work This Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/it-wont-work-this-time/",
+  "raw_lyrics": "Woke up yesterday and you told me you were leavin\u2019\nLeft a note sayin\u2019 prob\u2019ly wouldn\u2019t be back\nBut you\u2019ll come back again now and I got new for you dear\nYou won\u2019t have a home and that\u2019s a fact\n\nDon\u2019t you come back on your knees Askin\u2019 my forgiveness\nPack your bags and move on down the line\nDon\u2019t you roll those eyes at me tellin\u2019 me you\u2019re sorry\nIt\u2019s too late babe and it won\u2019t work this time\n\nI\u2019ve always been around lord when you needed someone\nI played the role tell I knew each line by heart\nBut now it\u2019s time to change won\u2019t you find another playmate\nSomeone who\u2019d be glad to play the part",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Woke up yesterday and you told me you were leavin\u2019",
+        "Left a note sayin\u2019 prob\u2019ly wouldn\u2019t be back",
+        "But you\u2019ll come back again now and I got new for you dear",
+        "You won\u2019t have a home and that\u2019s a fact"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t you come back on your knees Askin\u2019 my forgiveness",
+        "Pack your bags and move on down the line",
+        "Don\u2019t you roll those eyes at me tellin\u2019 me you\u2019re sorry",
+        "It\u2019s too late babe and it won\u2019t work this time"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve always been around lord when you needed someone",
+        "I played the role tell I knew each line by heart",
+        "But now it\u2019s time to change won\u2019t you find another playmate",
+        "Someone who\u2019d be glad to play the part"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

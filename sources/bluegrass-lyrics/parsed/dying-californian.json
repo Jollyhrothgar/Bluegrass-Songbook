@@ -1,0 +1,69 @@
+{
+  "slug": "dying-californian",
+  "title": "Dying Californian",
+  "source_url": "https://www.bluegrasslyrics.com/song/dying-californian/",
+  "raw_lyrics": "Lay up nearer brother nearer\nFor my limbs are growing cold\nAnd thy presence seemeth dearer\nWhen thine arms around me fold\n\nI am dying brother dying\nSoon you`ll miss me in your berth\nFor my form will soon be lying\n`Neath the ocean`s briny surf\n\nTell my father when you see him\nThat in death I prayed for him\nPrayed that I might only meet him\nIn a world that`s free from sin\n\nTell my mother God assist her\nNow that she is growing old\nThat her child would glad have kissed her\nWhen his lips grew pale and cold\n\nListen brother catch each whisper\n`Tis my wife I speak of now\nTell oh tell her how I miss her\nAs the fever burns my brow\n\nTell her she must kiss my children\nLike the kiss I last impressed\nHold them as when last I held them\nHeld them closely to my breast",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lay up nearer brother nearer",
+        "For my limbs are growing cold",
+        "And thy presence seemeth dearer",
+        "When thine arms around me fold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I am dying brother dying",
+        "Soon you`ll miss me in your berth",
+        "For my form will soon be lying",
+        "`Neath the ocean`s briny surf"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell my father when you see him",
+        "That in death I prayed for him",
+        "Prayed that I might only meet him",
+        "In a world that`s free from sin"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell my mother God assist her",
+        "Now that she is growing old",
+        "That her child would glad have kissed her",
+        "When his lips grew pale and cold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Listen brother catch each whisper",
+        "`Tis my wife I speak of now",
+        "Tell oh tell her how I miss her",
+        "As the fever burns my brow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell her she must kiss my children",
+        "Like the kiss I last impressed",
+        "Hold them as when last I held them",
+        "Held them closely to my breast"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

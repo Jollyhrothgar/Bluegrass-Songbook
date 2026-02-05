@@ -1,0 +1,39 @@
+{
+  "slug": "drowning-sailor",
+  "title": "Drowning Sailor",
+  "source_url": "https://www.bluegrasslyrics.com/song/drowning-sailor/",
+  "raw_lyrics": "The crew upon this ship are sailing\nIs deafened by the ocean\u2019s roar\nThey are tossed by the mighty breakers\nToward the rocks upon the shore\n\nJesus savior be our captain\nAnd guide us through this awful storm\nAnd help to save each drowning sailor\nWho has tumbled overboard\n\nThis world is like a grand old ocean\nThe church is like a ship at sea\nWe are helpless little sailors\nLord we\u2019re helpless but for thee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The crew upon this ship are sailing",
+        "Is deafened by the ocean\u2019s roar",
+        "They are tossed by the mighty breakers",
+        "Toward the rocks upon the shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jesus savior be our captain",
+        "And guide us through this awful storm",
+        "And help to save each drowning sailor",
+        "Who has tumbled overboard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This world is like a grand old ocean",
+        "The church is like a ship at sea",
+        "We are helpless little sailors",
+        "Lord we\u2019re helpless but for thee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

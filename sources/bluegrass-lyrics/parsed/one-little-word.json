@@ -1,0 +1,59 @@
+{
+  "slug": "one-little-word",
+  "title": "One Little Word",
+  "source_url": "https://www.bluegrasslyrics.com/song/one-little-word/",
+  "raw_lyrics": "The dream of love is over\nToday we said goodbye\nWe parted not in anger\nThough tears came in her eyes\n\nTwas just as fate decreed dear\nThat we must never wed\nYet in her heart she loved me\nShe married wealth instead\n\nOne little word could change my future life\nOne little word could have made her my wife\nToo late too late now my fondest hopes are dead\nOne little word that word was never said\n\nIn school days we had been sweethearts\nShe was her father\u2019s pride\nHer folks lived in a mansion\nOur cottage by its side\n\nThough years have brought their changes\nThe same old love still holds\nShe wed to please her parents\nA man of wealth and gold",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The dream of love is over",
+        "Today we said goodbye",
+        "We parted not in anger",
+        "Though tears came in her eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Twas just as fate decreed dear",
+        "That we must never wed",
+        "Yet in her heart she loved me",
+        "She married wealth instead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "One little word could change my future life",
+        "One little word could have made her my wife",
+        "Too late too late now my fondest hopes are dead",
+        "One little word that word was never said"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In school days we had been sweethearts",
+        "She was her father\u2019s pride",
+        "Her folks lived in a mansion",
+        "Our cottage by its side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though years have brought their changes",
+        "The same old love still holds",
+        "She wed to please her parents",
+        "A man of wealth and gold"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

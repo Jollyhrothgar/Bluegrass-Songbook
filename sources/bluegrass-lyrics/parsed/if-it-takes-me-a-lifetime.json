@@ -1,0 +1,53 @@
+{
+  "slug": "if-it-takes-me-a-lifetime",
+  "title": "If It Takes Me A Lifetime",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-it-takes-me-a-lifetime/",
+  "raw_lyrics": "It\u2019s true that I love you it\u2019s true you\u2019re not free\nI\u2019m trusting in tomorrow that someday you may be\n\nSo I\u2019ll go on hoping and trusting in fate\nIf it takes me a lifetime then I\u2019ll just wait\n\nI\u2019ll cherish the say you and I met\nSweet memories of you I\u2019ll never forget\nYou lifted me up when I was down\nAnd gave me a smile in place of a frown\n\nI\u2019ll always be waiting it\u2019s never too late\nIf it takes me a lifetime then I\u2019ll just wait\nThis waiting is awful but still you are tied\nI\u2019m trying my best my feeling to hide\n\nThough people are talking but still I must state\nIf it takes me a lifetime then I\u2019ll just wait",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s true that I love you it\u2019s true you\u2019re not free",
+        "I\u2019m trusting in tomorrow that someday you may be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So I\u2019ll go on hoping and trusting in fate",
+        "If it takes me a lifetime then I\u2019ll just wait"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll cherish the say you and I met",
+        "Sweet memories of you I\u2019ll never forget",
+        "You lifted me up when I was down",
+        "And gave me a smile in place of a frown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll always be waiting it\u2019s never too late",
+        "If it takes me a lifetime then I\u2019ll just wait",
+        "This waiting is awful but still you are tied",
+        "I\u2019m trying my best my feeling to hide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though people are talking but still I must state",
+        "If it takes me a lifetime then I\u2019ll just wait"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "lowest-valley-the",
+  "title": "Lowest Valley, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/lowest-valley-the/",
+  "raw_lyrics": "Lord I don\u2019t want to do one thing on my own\nPut me where you want me Lord  where I belong\nGive me the strength Lord to do thy perfect will\nAnd when I\u2019m in the lowest valley I can climb the highest hill\n\nLord I want to be what you want me to be\nLord I want to do the things you want me to do\nLord I want to stay in the center of thy will\nWhen I\u2019m in the lowest valley I can climb the highest hill\n\nThis world gets more wicked every day\nPeople\u2019s hearts have grown cold, forgotten how to pray\nBut if I live to be a hundred I\u2019ll keep holding to your hand\nUntil you come and take me home to that promised land",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lord I don\u2019t want to do one thing on my own",
+        "Put me where you want me Lord  where I belong",
+        "Give me the strength Lord to do thy perfect will",
+        "And when I\u2019m in the lowest valley I can climb the highest hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Lord I want to be what you want me to be",
+        "Lord I want to do the things you want me to do",
+        "Lord I want to stay in the center of thy will",
+        "When I\u2019m in the lowest valley I can climb the highest hill"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This world gets more wicked every day",
+        "People\u2019s hearts have grown cold, forgotten how to pray",
+        "But if I live to be a hundred I\u2019ll keep holding to your hand",
+        "Until you come and take me home to that promised land"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

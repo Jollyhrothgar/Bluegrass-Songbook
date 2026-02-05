@@ -1,0 +1,39 @@
+{
+  "slug": "stormy-horizons",
+  "title": "Stormy Horizons",
+  "source_url": "https://www.bluegrasslyrics.com/song/stormy-horizons/",
+  "raw_lyrics": "I scarcely hear the wild wind\u2019s cry or feel its sudden blast\nA greater storm just swept my world apart\nToday you\u2019re with someone new my hopes are gone at last\nThere\u2019s stormy horizons in my heart\n\nRain sweept and tattered like the rose in the wind\nStormy horizons without and within\nYou were all that mattered but you wanted to be free\nNow stormy horizons wait for me\n\nOf things as fragile and as sweet as roses dreams are made\nAnd dreams we had you held so carelessly\nThey fell like petals round my feet I saw my rainbow fade\nNow stormy horizons wait for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I scarcely hear the wild wind\u2019s cry or feel its sudden blast",
+        "A greater storm just swept my world apart",
+        "Today you\u2019re with someone new my hopes are gone at last",
+        "There\u2019s stormy horizons in my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rain sweept and tattered like the rose in the wind",
+        "Stormy horizons without and within",
+        "You were all that mattered but you wanted to be free",
+        "Now stormy horizons wait for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Of things as fragile and as sweet as roses dreams are made",
+        "And dreams we had you held so carelessly",
+        "They fell like petals round my feet I saw my rainbow fade",
+        "Now stormy horizons wait for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

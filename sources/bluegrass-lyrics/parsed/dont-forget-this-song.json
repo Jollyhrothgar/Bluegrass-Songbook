@@ -1,0 +1,57 @@
+{
+  "slug": "dont-forget-this-song",
+  "title": "Don\u2019t Forget This Song",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-forget-this-song/",
+  "raw_lyrics": "My home\u2019s in old Virginia among the lovely hills\nThe memory of my birthplace lies in my bosom still\n\nI did not like my fireside I did not like my home\nI have a mind for rambling so far away from home\n\nIt was on one moonlight evening the stars were shinning bright\nAnd with an ugly dagger I made the spirits fly\n\nTwas then the sobber struck me as plain as you can see\nI\u2019m doomed I\u2019m ruined forever throughout eternity\n\nI courted a fair young lady her name I will not tell\nOh why should I disgrace her when I am doomed for hell\n\nBut now upon my scaffold my time\u2019s not very long\nYou may forget the singer but don\u2019t forget this song",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My home\u2019s in old Virginia among the lovely hills",
+        "The memory of my birthplace lies in my bosom still"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I did not like my fireside I did not like my home",
+        "I have a mind for rambling so far away from home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was on one moonlight evening the stars were shinning bright",
+        "And with an ugly dagger I made the spirits fly"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Twas then the sobber struck me as plain as you can see",
+        "I\u2019m doomed I\u2019m ruined forever throughout eternity"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I courted a fair young lady her name I will not tell",
+        "Oh why should I disgrace her when I am doomed for hell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But now upon my scaffold my time\u2019s not very long",
+        "You may forget the singer but don\u2019t forget this song"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

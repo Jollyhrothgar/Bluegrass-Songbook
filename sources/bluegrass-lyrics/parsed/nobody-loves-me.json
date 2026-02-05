@@ -1,0 +1,49 @@
+{
+  "slug": "nobody-loves-me",
+  "title": "Nobody Loves Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/nobody-loves-me/",
+  "raw_lyrics": "Nobody loves me nobody cares\nIf life is empty and full of tears\nI\u2019ve longed for true love searched everywhere\nNobody loves me nobody cares\n\nSearching for true love has been in vain\nThrough years my heart has suffered with pain\nLife\u2019s lonesome burden now I must bear\nNobody loves me nobody cares\n\nNights on my pillow I dream of love\nThrough space I gaze at the stars above\nThey seem to whisper from way up there\nNobody loves you nobody cares\n\nA lonesome heart and a troubled mind\nIn this world now is all I find\nI look to heaven for I know there\nSomeone will love me someone will care",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Nobody loves me nobody cares",
+        "If life is empty and full of tears",
+        "I\u2019ve longed for true love searched everywhere",
+        "Nobody loves me nobody cares"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Searching for true love has been in vain",
+        "Through years my heart has suffered with pain",
+        "Life\u2019s lonesome burden now I must bear",
+        "Nobody loves me nobody cares"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Nights on my pillow I dream of love",
+        "Through space I gaze at the stars above",
+        "They seem to whisper from way up there",
+        "Nobody loves you nobody cares"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A lonesome heart and a troubled mind",
+        "In this world now is all I find",
+        "I look to heaven for I know there",
+        "Someone will love me someone will care"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

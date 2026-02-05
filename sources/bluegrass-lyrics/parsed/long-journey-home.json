@@ -1,0 +1,59 @@
+{
+  "slug": "long-journey-home",
+  "title": "Long Journey Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/long-journey-home/",
+  "raw_lyrics": "Lost all my money but a two dollar bill\nTwo dollar bill boys, two dollar bill\nLost all my money but a two dollar bill\nI\u2019m on my long journey home\n\nCloudy in the West and it looks like rain\nLooks like rain, boys, looks like rain\nCloudy in the West and it looks like rain\nI\u2019m on my long journey home\n\nIt\u2019s dark and a raining and I want to go home\nWant to go home, boys, want to go home\nIts dark and a raining and I want to go home\nI\u2019m on my long journey home\n\nHomesick and lonesome and I\u2019m feeling kind of blue\nFeeling kind of blue, boys, feeling kind of blue\nHomesick and lonesome and I\u2019m feeling kind of blue\nI\u2019m on my long journey home\n\nThere\u2019s black smoke a rising and it surely is a train\nSurely is a train boys, surely is a train\nThere\u2019s black smoke a rising and it surely is a train\nI\u2019m on my long journey home",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Lost all my money but a two dollar bill",
+        "Two dollar bill boys, two dollar bill",
+        "Lost all my money but a two dollar bill",
+        "I\u2019m on my long journey home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Cloudy in the West and it looks like rain",
+        "Looks like rain, boys, looks like rain",
+        "Cloudy in the West and it looks like rain",
+        "I\u2019m on my long journey home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s dark and a raining and I want to go home",
+        "Want to go home, boys, want to go home",
+        "Its dark and a raining and I want to go home",
+        "I\u2019m on my long journey home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Homesick and lonesome and I\u2019m feeling kind of blue",
+        "Feeling kind of blue, boys, feeling kind of blue",
+        "Homesick and lonesome and I\u2019m feeling kind of blue",
+        "I\u2019m on my long journey home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s black smoke a rising and it surely is a train",
+        "Surely is a train boys, surely is a train",
+        "There\u2019s black smoke a rising and it surely is a train",
+        "I\u2019m on my long journey home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "close-the-door-lightly",
+  "title": "Close The Door Lightly",
+  "source_url": "https://www.bluegrasslyrics.com/song/close-the-door-lightly/",
+  "raw_lyrics": "Turn around\ndon\u2019t whisper out my name\nFor like a breeze it might stir a dyin\u2019 flame\nI\u2019ll miss someone if it eases you know\nSo close the door lightly when you go.\n\nTake your tears to someone elses eyes\nThey\u2019re made of glass and they cut like wounding lies\nMemories are drifting like the snow\nSo close the door lightly when you go.\n\nWho was the one who wasted time\nWho was the one who stole my mind\nWho was the one who made me feel unkind\nSo fare thee well sweet love of mine\n\nDon\u2019t look back to where you once had been\nLook straight ahead if you\u2019re walking in the rain\nAnd find a life if the path is dark and cold\nAnd close the door lightly when you go.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Turn around",
+        "don\u2019t whisper out my name",
+        "For like a breeze it might stir a dyin\u2019 flame",
+        "I\u2019ll miss someone if it eases you know",
+        "So close the door lightly when you go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take your tears to someone elses eyes",
+        "They\u2019re made of glass and they cut like wounding lies",
+        "Memories are drifting like the snow",
+        "So close the door lightly when you go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Who was the one who wasted time",
+        "Who was the one who stole my mind",
+        "Who was the one who made me feel unkind",
+        "So fare thee well sweet love of mine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t look back to where you once had been",
+        "Look straight ahead if you\u2019re walking in the rain",
+        "And find a life if the path is dark and cold",
+        "And close the door lightly when you go."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "bubbles-in-my-beer",
+  "title": "Bubbles In My Beer",
+  "source_url": "https://www.bluegrasslyrics.com/song/bubbles-in-my-beer/",
+  "raw_lyrics": "Tonight in a bar alone I\u2019m sittin\u2019\nApart from the laughter and cheer\nThe scenes from the past rise before me\nWhile watchin the bubbles in my beer\n\nA vision of someone who loved me\nBrings a lone silent tear to me eye\nI know that my life\u2019s been a failure\nJust watchin\u2019 the bubbles in my beer.\n\nI\u2019m seeing the road that I\u2019ve traveled\nA road paved with heartaches and tears\nI\u2019m seeing the past that I\u2019ve wasted\nWhile watching the bubbles in my beer.\n\nI think of the hearts that I\u2019ve broken\nAnd of the golden chances that have passed me by\nThe dreams I once made now are empty\nAs empty as the bubbles in my beer.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight in a bar alone I\u2019m sittin\u2019",
+        "Apart from the laughter and cheer",
+        "The scenes from the past rise before me",
+        "While watchin the bubbles in my beer"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A vision of someone who loved me",
+        "Brings a lone silent tear to me eye",
+        "I know that my life\u2019s been a failure",
+        "Just watchin\u2019 the bubbles in my beer."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m seeing the road that I\u2019ve traveled",
+        "A road paved with heartaches and tears",
+        "I\u2019m seeing the past that I\u2019ve wasted",
+        "While watching the bubbles in my beer."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I think of the hearts that I\u2019ve broken",
+        "And of the golden chances that have passed me by",
+        "The dreams I once made now are empty",
+        "As empty as the bubbles in my beer."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

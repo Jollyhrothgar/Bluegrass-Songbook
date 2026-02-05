@@ -1,0 +1,39 @@
+{
+  "slug": "i-just-got-wise",
+  "title": "I Just Got Wise",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-just-got-wise/",
+  "raw_lyrics": "Oh how I once longed for your loving\nYour cheating I couldn\u2019t realize\nBut now that I\u2019ve found out you\u2019re stepping\nI\u2019m through with you baby I\u2019ve got wise\n\nI know now you never cared about me\nI think you\u2019ve been lying all the time\nGo back to that wild crowd your used to\nYou go your way and I\u2019ll go mine\n\nYou asked me to meet you on the corner\nYou told me that we had things to do\nAnd after I stood there and waited\nYou never showed up and I\u2019m so blue",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh how I once longed for your loving",
+        "Your cheating I couldn\u2019t realize",
+        "But now that I\u2019ve found out you\u2019re stepping",
+        "I\u2019m through with you baby I\u2019ve got wise"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know now you never cared about me",
+        "I think you\u2019ve been lying all the time",
+        "Go back to that wild crowd your used to",
+        "You go your way and I\u2019ll go mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You asked me to meet you on the corner",
+        "You told me that we had things to do",
+        "And after I stood there and waited",
+        "You never showed up and I\u2019m so blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

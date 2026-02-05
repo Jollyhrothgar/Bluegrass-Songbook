@@ -1,0 +1,39 @@
+{
+  "slug": "the-longer-you-wait",
+  "title": "The Longer You Wait",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-longer-you-wait/",
+  "raw_lyrics": "The longer you wait to leave me\nThe longer I\u2019ll hurt when you\u2019re gone\nAnd the longer it takes you to break my heart\nThe longer the pain lingers on\n\nHow long will you prolong my misery\nWish I could leave on my own\nCause the longer you wait to leave me\nThe longer I\u2019ll hurt when you\u2019re gone\n\nWe both knew that you never loved me\nI lied to myself from the start\nAnd we both knew that some day you\u2019d leave me\nAnd to know just tears me apart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The longer you wait to leave me",
+        "The longer I\u2019ll hurt when you\u2019re gone",
+        "And the longer it takes you to break my heart",
+        "The longer the pain lingers on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How long will you prolong my misery",
+        "Wish I could leave on my own",
+        "Cause the longer you wait to leave me",
+        "The longer I\u2019ll hurt when you\u2019re gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We both knew that you never loved me",
+        "I lied to myself from the start",
+        "And we both knew that some day you\u2019d leave me",
+        "And to know just tears me apart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

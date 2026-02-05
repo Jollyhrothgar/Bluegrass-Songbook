@@ -1,0 +1,44 @@
+{
+  "slug": "a-letter-to-tom",
+  "title": "A Letter To Tom",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-letter-to-tom/",
+  "raw_lyrics": "I\u2019ve wandered by the village Tom I\u2019ve set beneath the tree\nUpon the schoolhouse playing ground that sheltered you and me\nBut none are left to greet me Tom and few are left to know\nThat played with us upon the green just fifteen years ago\n\nThe river\u2019s running just as still the willows on its side\nAre larger than they were dear Tom the stream appears less wide\nBut in kneeling down beside the stream dear Tom I startled so\nTo see how sadly I am changed since fifteen years ago\n\nBut when our time shall come dear Tom and we are called to go\nI hope they\u2019ll lay us where we played just fifteen years ago\n\nJust fifteen years ago",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve wandered by the village Tom I\u2019ve set beneath the tree",
+        "Upon the schoolhouse playing ground that sheltered you and me",
+        "But none are left to greet me Tom and few are left to know",
+        "That played with us upon the green just fifteen years ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The river\u2019s running just as still the willows on its side",
+        "Are larger than they were dear Tom the stream appears less wide",
+        "But in kneeling down beside the stream dear Tom I startled so",
+        "To see how sadly I am changed since fifteen years ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But when our time shall come dear Tom and we are called to go",
+        "I hope they\u2019ll lay us where we played just fifteen years ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just fifteen years ago"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

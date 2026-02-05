@@ -1,0 +1,49 @@
+{
+  "slug": "ramshackle-shack",
+  "title": "Ramshackle Shack",
+  "source_url": "https://www.bluegrasslyrics.com/song/ramshackle-shack/",
+  "raw_lyrics": "There\u2019s a ramshackle shack down in old Caroline\nAnd it\u2019s callin\u2019 me back to that sweetheart of mine\nThose pretty blue eyes I long to see\nDown in old Caroline there I long to be\n\nThose pretty blue eyes that sparkle with love\nSent down to me from Heaven above\nAnd if I had wings like a beautiful dove\nI\u2019d fly away to the girl I love\n\nWhen the whippoorwills call at the close of day\nWe would sing love songs and she would say\nMy love for you will never die\nThen we bid farewell such a sad good-bye\n\nWhen it\u2019s harvest time down in old Caroline\nI\u2019ll be driftin\u2019 back to that sweetheart of mine\nSpend the rest of my days with the girl that I love\nWith the help of the Lord up in Heaven above",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a ramshackle shack down in old Caroline",
+        "And it\u2019s callin\u2019 me back to that sweetheart of mine",
+        "Those pretty blue eyes I long to see",
+        "Down in old Caroline there I long to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Those pretty blue eyes that sparkle with love",
+        "Sent down to me from Heaven above",
+        "And if I had wings like a beautiful dove",
+        "I\u2019d fly away to the girl I love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the whippoorwills call at the close of day",
+        "We would sing love songs and she would say",
+        "My love for you will never die",
+        "Then we bid farewell such a sad good-bye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When it\u2019s harvest time down in old Caroline",
+        "I\u2019ll be driftin\u2019 back to that sweetheart of mine",
+        "Spend the rest of my days with the girl that I love",
+        "With the help of the Lord up in Heaven above"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

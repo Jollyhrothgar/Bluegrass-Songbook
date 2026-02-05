@@ -1,0 +1,39 @@
+{
+  "slug": "martha-white-theme",
+  "title": "Martha White Theme",
+  "source_url": "https://www.bluegrasslyrics.com/song/martha-white-theme/",
+  "raw_lyrics": "Now you bake right (uh-huh) with Martha White (yes, ma\u2019am)\nGoodness gracious, good and light, Martha White\n\nFor the finest biscuits, cakes and pies,\nGet Martha White self-rising flour\nThe one all purpose flour,\nMartha White self-rising flour\u2019s\nGot Hot Rise\n\nFor the finest cornbread you can bake,\nGet Martha White self-rising meal\nThe one all purpose meal\nMartha White self-rising meal\nFor goodness\u2019 sake",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now you bake right (uh-huh) with Martha White (yes, ma\u2019am)",
+        "Goodness gracious, good and light, Martha White"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For the finest biscuits, cakes and pies,",
+        "Get Martha White self-rising flour",
+        "The one all purpose flour,",
+        "Martha White self-rising flour\u2019s",
+        "Got Hot Rise"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For the finest cornbread you can bake,",
+        "Get Martha White self-rising meal",
+        "The one all purpose meal",
+        "Martha White self-rising meal",
+        "For goodness\u2019 sake"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

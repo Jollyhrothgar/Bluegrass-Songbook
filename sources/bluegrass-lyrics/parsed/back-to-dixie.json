@@ -1,0 +1,49 @@
+{
+  "slug": "back-to-dixie",
+  "title": "Back To Dixie",
+  "source_url": "https://www.bluegrasslyrics.com/song/back-to-dixie/",
+  "raw_lyrics": "I\u2019m goin\u2019 down to the Cumberland River\nIn the state of Tennessee\nGonna walk the ground where I spent my childhood\nI\u2019m goin\u2019 back back to Dixie.\n\nI spent my life a foot loose drifter\nLike a gypsy is I\u2019m a travelin\u2019 man\nCan\u2019t find no place where I\u2019m contented\nCan\u2019t find no folks I understand\n\nAin\u2019t got no wife ain\u2019t got no family\nAt least that is I know about\nAnd if I should die right where I\u2019m standing\nNo one would know that I\u2019ve checked out\n\nCome drink my wine and take my coffee\nYou can have my beans they\u2019re in the can\nI\u2019m gonna go back to where I started\nGonna end my life a happy man.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m goin\u2019 down to the Cumberland River",
+        "In the state of Tennessee",
+        "Gonna walk the ground where I spent my childhood",
+        "I\u2019m goin\u2019 back back to Dixie."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I spent my life a foot loose drifter",
+        "Like a gypsy is I\u2019m a travelin\u2019 man",
+        "Can\u2019t find no place where I\u2019m contented",
+        "Can\u2019t find no folks I understand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ain\u2019t got no wife ain\u2019t got no family",
+        "At least that is I know about",
+        "And if I should die right where I\u2019m standing",
+        "No one would know that I\u2019ve checked out"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come drink my wine and take my coffee",
+        "You can have my beans they\u2019re in the can",
+        "I\u2019m gonna go back to where I started",
+        "Gonna end my life a happy man."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

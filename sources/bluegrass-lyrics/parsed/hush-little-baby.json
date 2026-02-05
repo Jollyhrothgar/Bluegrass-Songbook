@@ -1,0 +1,49 @@
+{
+  "slug": "hush-little-baby",
+  "title": "Hush Little Baby",
+  "source_url": "https://www.bluegrasslyrics.com/song/hush-little-baby/",
+  "raw_lyrics": "Hush little baby don\u2019t say a word\nMama gonna buy you a mocking bird\nIf that mocking bird don\u2019t sing\nMama gonna buy you a diamond ring\n\nIf that diamond ring turn brass\nMama gonna buy you a lookin\u2019 glass\nIf that lookin\u2019 glass gets broke\nMama gonna buy you a billy goat\n\nIf that billy goat don\u2019t pull\nMama gonna buy you a cart and bull\nIf that cart and bull turn over\nMama gonna buy you a dog named Rover\n\nIt that dog named Rover don\u2019t bark\nMama gonna buy you a horse and cart\nIf that horse and cart fall down\nYou\u2019ll be sweetest little baby in town",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Hush little baby don\u2019t say a word",
+        "Mama gonna buy you a mocking bird",
+        "If that mocking bird don\u2019t sing",
+        "Mama gonna buy you a diamond ring"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If that diamond ring turn brass",
+        "Mama gonna buy you a lookin\u2019 glass",
+        "If that lookin\u2019 glass gets broke",
+        "Mama gonna buy you a billy goat"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If that billy goat don\u2019t pull",
+        "Mama gonna buy you a cart and bull",
+        "If that cart and bull turn over",
+        "Mama gonna buy you a dog named Rover"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It that dog named Rover don\u2019t bark",
+        "Mama gonna buy you a horse and cart",
+        "If that horse and cart fall down",
+        "You\u2019ll be sweetest little baby in town"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

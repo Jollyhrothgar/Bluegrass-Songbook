@@ -1,0 +1,49 @@
+{
+  "slug": "ill-get-by",
+  "title": "I\u2019ll Get By",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-get-by/",
+  "raw_lyrics": "Don\u2019t feel blue when I tell you I\u2019m leavin\nPlease don\u2019t cry now when I set you free\nThough I know that my heart will be breakin\nI\u2019ll get by don\u2019t you cry over me\n\nWhen that cold rain is fallin outside dear\nAnd you\u2019re happy far over the sea\nDon\u2019t be thinkin of me in my sorrow\nI\u2019ll get by don\u2019t you cry over me\n\nNo don\u2019t shed any tears they\u2019d be wasted\nOur love it was never meant to be\nThat\u2019s why I don\u2019t want you to worry\nI\u2019ll get by don\u2019t you cry over me\n\nI knew all the time you weren\u2019t happy\nThat someday I\u2019d have to set you free\nSo forget about me and my troubles\nI\u2019ll get by don\u2019t you cry over me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t feel blue when I tell you I\u2019m leavin",
+        "Please don\u2019t cry now when I set you free",
+        "Though I know that my heart will be breakin",
+        "I\u2019ll get by don\u2019t you cry over me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When that cold rain is fallin outside dear",
+        "And you\u2019re happy far over the sea",
+        "Don\u2019t be thinkin of me in my sorrow",
+        "I\u2019ll get by don\u2019t you cry over me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No don\u2019t shed any tears they\u2019d be wasted",
+        "Our love it was never meant to be",
+        "That\u2019s why I don\u2019t want you to worry",
+        "I\u2019ll get by don\u2019t you cry over me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I knew all the time you weren\u2019t happy",
+        "That someday I\u2019d have to set you free",
+        "So forget about me and my troubles",
+        "I\u2019ll get by don\u2019t you cry over me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

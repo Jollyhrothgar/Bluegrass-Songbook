@@ -1,0 +1,39 @@
+{
+  "slug": "you-could-never-be-true",
+  "title": "You Could Never Be True",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-could-never-be-true/",
+  "raw_lyrics": "I gave you every chance to be true\nBut it seems like that\u2019s too much for you\nI took you back when you were running around\nWhen you promised me you\u2019d settle down\n\nYou\u2019re just the kind that could never be true\nYou break my heart with everything that you do\nIt\u2019s better that I should even start again\nWith you sweet heart I know I can\u2019t win\n\nThere\u2019s just no use trying to live with you\nThere\u2019s something wrong you\u2019ll never be true\nYou tear me up with your rambling ways\nThen you come back and say you\u2019re home to stay",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I gave you every chance to be true",
+        "But it seems like that\u2019s too much for you",
+        "I took you back when you were running around",
+        "When you promised me you\u2019d settle down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re just the kind that could never be true",
+        "You break my heart with everything that you do",
+        "It\u2019s better that I should even start again",
+        "With you sweet heart I know I can\u2019t win"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s just no use trying to live with you",
+        "There\u2019s something wrong you\u2019ll never be true",
+        "You tear me up with your rambling ways",
+        "Then you come back and say you\u2019re home to stay"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "better-days-to-come",
+  "title": "Better Days To Come",
+  "source_url": "https://www.bluegrasslyrics.com/song/better-days-to-come/",
+  "raw_lyrics": "Don\u2019t remind me of things in my past\nOh, I\u2019ve fallen down along the way\nYou\u2019re not the first, you won\u2019t be the last\nIn fact you\u2019re the second one today\nBut that don\u2019t get me down, what\u2019s done is done\nAnd I refuse to relive yesterday\nI believe my best days are yet to come\nIf I can only get this one out of the way\n\nI don\u2019t think about tomorrow\nYesterday is past and gone\nDon\u2019t judge me by my past and I\u2019ll try\nAnd do better in days to come\n\nShould you see me cryin\u2019 today\nOh, it won\u2019t be \u2018cause I\u2019m lookin\u2019 back\nI don\u2019t deal with old memories that way\nThose tragic scenes have faded to black\nThey don\u2019t get me down, what\u2019s done is done\nI\u2019ve only room to feel today\u2019s pain\nWhen the sun comes up on another day\nI\u2019ll put yesterday behind me once again\n\nIt won\u2019t get me down, what\u2019s done is done\nAnd I refuse to relive yesterday\nCause I believe my best days are yet to come\nIf I can only get this one out of the way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t remind me of things in my past",
+        "Oh, I\u2019ve fallen down along the way",
+        "You\u2019re not the first, you won\u2019t be the last",
+        "In fact you\u2019re the second one today",
+        "But that don\u2019t get me down, what\u2019s done is done",
+        "And I refuse to relive yesterday",
+        "I believe my best days are yet to come",
+        "If I can only get this one out of the way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I don\u2019t think about tomorrow",
+        "Yesterday is past and gone",
+        "Don\u2019t judge me by my past and I\u2019ll try",
+        "And do better in days to come"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Should you see me cryin\u2019 today",
+        "Oh, it won\u2019t be \u2018cause I\u2019m lookin\u2019 back",
+        "I don\u2019t deal with old memories that way",
+        "Those tragic scenes have faded to black",
+        "They don\u2019t get me down, what\u2019s done is done",
+        "I\u2019ve only room to feel today\u2019s pain",
+        "When the sun comes up on another day",
+        "I\u2019ll put yesterday behind me once again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It won\u2019t get me down, what\u2019s done is done",
+        "And I refuse to relive yesterday",
+        "Cause I believe my best days are yet to come",
+        "If I can only get this one out of the way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

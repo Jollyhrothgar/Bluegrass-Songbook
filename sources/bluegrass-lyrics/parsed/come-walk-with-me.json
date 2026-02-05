@@ -1,0 +1,39 @@
+{
+  "slug": "come-walk-with-me",
+  "title": "Come Walk With Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/come-walk-with-me/",
+  "raw_lyrics": "Come walk with me down lover\u2019s lane\nWhere we once walked together\nFor old time sake I\u2019m asking of you dear\nThen I\u2019ll go away forever\n\nI think of the life we could have together\nAnd relive the past they wouldn\u2019t make last\nSo come walk with me down lovers lane\nThen I\u2019ll go away forever\n\nThis little band of gold I\u2019ll keep it forever\nAs a token of a love that never could be\nIt\u2019s the story of my life the past with no future\nAnd all that is left is a sad memory",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come walk with me down lover\u2019s lane",
+        "Where we once walked together",
+        "For old time sake I\u2019m asking of you dear",
+        "Then I\u2019ll go away forever"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I think of the life we could have together",
+        "And relive the past they wouldn\u2019t make last",
+        "So come walk with me down lovers lane",
+        "Then I\u2019ll go away forever"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This little band of gold I\u2019ll keep it forever",
+        "As a token of a love that never could be",
+        "It\u2019s the story of my life the past with no future",
+        "And all that is left is a sad memory"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

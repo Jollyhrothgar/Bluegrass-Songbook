@@ -1,0 +1,49 @@
+{
+  "slug": "the-pale-horse-and-his-rider",
+  "title": "The Pale Horse And His Rider",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-pale-horse-and-his-rider/",
+  "raw_lyrics": "Listen poor sinner you\u2019re drifting away\nFrom the dear Saviour who\u2019s pleading today\nWhat will you do when the Saviour comes nigh\nWhen the pale horse and his rider go by\n\nThe time now ain\u2019t long when the Saviour will come\nThen you\u2019ll be judged for the deeds you have done\nOn that judgment day you\u2019ll weep and you\u2019ll cry\nWhen the pale horse and his rider go by\n\nSoften your heart and turn from all sin\nJesus is waiting to welcome you in\nThere\u2019s coming a time you\u2019ll wish He was nigh\nWhen the pale horse and his rider go by\n\nWon\u2019t you redeem you poor wicked soul\nYou can\u2019t pay your way with silver and gold\nIf you\u2019re not saved you\u2019ll be lost in the night\nWhen the pale horse and his rider go by",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Listen poor sinner you\u2019re drifting away",
+        "From the dear Saviour who\u2019s pleading today",
+        "What will you do when the Saviour comes nigh",
+        "When the pale horse and his rider go by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The time now ain\u2019t long when the Saviour will come",
+        "Then you\u2019ll be judged for the deeds you have done",
+        "On that judgment day you\u2019ll weep and you\u2019ll cry",
+        "When the pale horse and his rider go by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Soften your heart and turn from all sin",
+        "Jesus is waiting to welcome you in",
+        "There\u2019s coming a time you\u2019ll wish He was nigh",
+        "When the pale horse and his rider go by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Won\u2019t you redeem you poor wicked soul",
+        "You can\u2019t pay your way with silver and gold",
+        "If you\u2019re not saved you\u2019ll be lost in the night",
+        "When the pale horse and his rider go by"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

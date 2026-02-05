@@ -1,0 +1,51 @@
+{
+  "slug": "fifty-miles-of-elbow-room",
+  "title": "Fifty Miles of Elbow Room",
+  "source_url": "https://www.bluegrasslyrics.com/song/fifty-miles-of-elbow-room/",
+  "raw_lyrics": "Twelve hundred miles its length and breadth\nThe four square city stands\nIt\u2019s gem set walls of jasper shine\nNot made by human hands\nOne hundred miles its gates are wide\nAbundance entrance there\nWith fifty miles of elbow room\nOn either side to spare\n\nWhen the gates swing wide on the other side\nJust beyond the sunset sea\nThere\u2019ll be room to spare as we enter there\nRoom for you and room for me\nFor the gates are wide on the other side\nWhere the flowers ever bloom\nOn the right hand on the left hand\nFifty miles of elbow room\n\nSometimes I\u2019m cramped and crowded here\nAnd long for elbow room\nI want to reach for altitude\nWhere fair flowers bloom\nIt won\u2019t be long til I shall pass\nInto that city fair\nWith fifty miles of elbow room\nOn either side to spare",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Twelve hundred miles its length and breadth",
+        "The four square city stands",
+        "It\u2019s gem set walls of jasper shine",
+        "Not made by human hands",
+        "One hundred miles its gates are wide",
+        "Abundance entrance there",
+        "With fifty miles of elbow room",
+        "On either side to spare"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the gates swing wide on the other side",
+        "Just beyond the sunset sea",
+        "There\u2019ll be room to spare as we enter there",
+        "Room for you and room for me",
+        "For the gates are wide on the other side",
+        "Where the flowers ever bloom",
+        "On the right hand on the left hand",
+        "Fifty miles of elbow room"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes I\u2019m cramped and crowded here",
+        "And long for elbow room",
+        "I want to reach for altitude",
+        "Where fair flowers bloom",
+        "It won\u2019t be long til I shall pass",
+        "Into that city fair",
+        "With fifty miles of elbow room",
+        "On either side to spare"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

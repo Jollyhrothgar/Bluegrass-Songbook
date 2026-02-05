@@ -1,0 +1,89 @@
+{
+  "slug": "roving-gambler",
+  "title": "Roving Gambler",
+  "source_url": "https://www.bluegrasslyrics.com/song/roving-gambler/",
+  "raw_lyrics": "I am a roving gambler gambled all around\nWhenever I meet with a deck of cards\nI lay my money down\nLay my money down, lay my money down\n\nI had not been in Frisco many more weeks than three\nI met up with a pretty little gal\nShe fell in love with me\nFell in love with me, fell in love with me\n\nShe took me in her parlor, cooled me with her fan\nWhispered low in her mother\u2019s ear\nI love this gambling man\nLove this gambling man, love this gambling man\n\nOh daughter oh dear daughter how can you treat me so\nLeave your dear old mother\nAnd with a gambler go\nWith a gambler go, with a gambler go\n\nMy mother oh my mother you can not understand\nIf you ever see me a coming back\nI\u2019ll be with a gambling man\nWith a gambling man, with a gambling man\n\nI left her there in Frisco and I wound up in Maine\nI met up with a gambling man\nGot in a poker game\nGot in a poker game, got in a poker game\n\nWe put our money in the pot and dealt the cards around\nI saw him deal from the bottom of the deck\nAnd I shot that gambler down\nShot the gambler down, shot the gambler down\n\nWell, now I\u2019m in the jailhouse got a number for my name\nThe Warden said as he locked the door\nYou\u2019ve gambled your last game\nGambled your last game, gambled your last game",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am a roving gambler gambled all around",
+        "Whenever I meet with a deck of cards",
+        "I lay my money down",
+        "Lay my money down, lay my money down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had not been in Frisco many more weeks than three",
+        "I met up with a pretty little gal",
+        "She fell in love with me",
+        "Fell in love with me, fell in love with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She took me in her parlor, cooled me with her fan",
+        "Whispered low in her mother\u2019s ear",
+        "I love this gambling man",
+        "Love this gambling man, love this gambling man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh daughter oh dear daughter how can you treat me so",
+        "Leave your dear old mother",
+        "And with a gambler go",
+        "With a gambler go, with a gambler go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother oh my mother you can not understand",
+        "If you ever see me a coming back",
+        "I\u2019ll be with a gambling man",
+        "With a gambling man, with a gambling man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I left her there in Frisco and I wound up in Maine",
+        "I met up with a gambling man",
+        "Got in a poker game",
+        "Got in a poker game, got in a poker game"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We put our money in the pot and dealt the cards around",
+        "I saw him deal from the bottom of the deck",
+        "And I shot that gambler down",
+        "Shot the gambler down, shot the gambler down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, now I\u2019m in the jailhouse got a number for my name",
+        "The Warden said as he locked the door",
+        "You\u2019ve gambled your last game",
+        "Gambled your last game, gambled your last game"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

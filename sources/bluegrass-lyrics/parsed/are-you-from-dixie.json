@@ -1,0 +1,60 @@
+{
+  "slug": "are-you-from-dixie",
+  "title": "Are You From Dixie",
+  "source_url": "https://www.bluegrasslyrics.com/song/are-you-from-dixie/",
+  "raw_lyrics": "Hello there stranger how do you do\nthere\u2019s something I\u2019d like to say to you\nYou seem surprised I recognize\nI\u2019m no detective but I just surmise\n\nYou\u2019re from the place I\u2019m longing to be\nyour smiling face seems to say to me\nYou\u2019re from my homeland my sunny homeland\ntell me can it be?\n\nAre you from Dixie I say from Dixie where the fields of cotton beckon to me\nI\u2019m glad to see you tell me I\u2019ll be you and the friend I\u2019m longing to see\nAre you from Alabama Tennessee or Caroline\nAny place below the Mason Dixon Line\nAre you from Dixie I say from Dixie  \u2019cause I\u2019m from Dixie too.\n\nIt was a way back in old \u201989\nWhen first I crossed that Mason Dixon Line\nGee but again I long to return\nTo those good old folks I left behind\n\nMy home was way down in old Alabam\u2019\nOn the plantation near Birmingham\nand there\u2019s one thing certain I\u2019m surely flirtin\u2019\nWith those southbound trains",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Hello there stranger how do you do",
+        "there\u2019s something I\u2019d like to say to you",
+        "You seem surprised I recognize",
+        "I\u2019m no detective but I just surmise"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re from the place I\u2019m longing to be",
+        "your smiling face seems to say to me",
+        "You\u2019re from my homeland my sunny homeland",
+        "tell me can it be?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Are you from Dixie I say from Dixie where the fields of cotton beckon to me",
+        "I\u2019m glad to see you tell me I\u2019ll be you and the friend I\u2019m longing to see",
+        "Are you from Alabama Tennessee or Caroline",
+        "Any place below the Mason Dixon Line",
+        "Are you from Dixie I say from Dixie  \u2019cause I\u2019m from Dixie too."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was a way back in old \u201989",
+        "When first I crossed that Mason Dixon Line",
+        "Gee but again I long to return",
+        "To those good old folks I left behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My home was way down in old Alabam\u2019",
+        "On the plantation near Birmingham",
+        "and there\u2019s one thing certain I\u2019m surely flirtin\u2019",
+        "With those southbound trains"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

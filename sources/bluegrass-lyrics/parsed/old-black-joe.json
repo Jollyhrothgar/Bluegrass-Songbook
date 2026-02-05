@@ -1,0 +1,47 @@
+{
+  "slug": "old-black-joe",
+  "title": "Old Black Joe",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-black-joe/",
+  "raw_lyrics": "Gone are the days when my heart was young and gay\nGone from this earth to the cotton fields away\nGone from the earth to a better land I know\nI hear their gentle voices calling, Old Black Joe\n\nI\u2019m coming, I\u2019m coming, for my head is bending low\nI hear their gentle voices calling, old black Joe\n\nWhy do I weep, when my heart should feel no pain\nWhy do I sigh when my friends come not again\nGrieving for forms now departed long ago\nI hear their gentle voices calling, Old Black Joe\n\nWhere are the hearts once so happy and so free\nThe children so dear that I held upon my knee\nGone to the shore where my soul has longed to go\nI hear their gentle voices calling, Old Black Joe",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Gone are the days when my heart was young and gay",
+        "Gone from this earth to the cotton fields away",
+        "Gone from the earth to a better land I know",
+        "I hear their gentle voices calling, Old Black Joe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m coming, I\u2019m coming, for my head is bending low",
+        "I hear their gentle voices calling, old black Joe"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Why do I weep, when my heart should feel no pain",
+        "Why do I sigh when my friends come not again",
+        "Grieving for forms now departed long ago",
+        "I hear their gentle voices calling, Old Black Joe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where are the hearts once so happy and so free",
+        "The children so dear that I held upon my knee",
+        "Gone to the shore where my soul has longed to go",
+        "I hear their gentle voices calling, Old Black Joe"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

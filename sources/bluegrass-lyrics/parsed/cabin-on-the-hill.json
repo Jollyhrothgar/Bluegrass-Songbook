@@ -1,0 +1,39 @@
+{
+  "slug": "cabin-on-the-hill",
+  "title": "Cabin On The Hill",
+  "source_url": "https://www.bluegrasslyrics.com/song/cabin-on-the-hill/",
+  "raw_lyrics": "There\u2019s a happy childhood home in my memory I can see\nStanding out upon the hill \u2018neath the shadow of the tree\nIf I only had my way it would give my heart a thrill\nJust to simply wander back to the cabin on the hill.\n\nOh I want to wander back  to the cabin on the hill\n\u2018Neath the shadow of the tree  I would like to linger still\nJust to be with those I love joy my heart would over fill\nJust to simply wander back  to the cabin on the hill\n\nBut the saddest of it all I can never more return\nTo that happy childhood home matters not how much I yearn\nIf I only had my way it would give my heart a thrill\nJust to simply wander back to the cabin on the hill",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a happy childhood home in my memory I can see",
+        "Standing out upon the hill \u2018neath the shadow of the tree",
+        "If I only had my way it would give my heart a thrill",
+        "Just to simply wander back to the cabin on the hill."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I want to wander back  to the cabin on the hill",
+        "\u2018Neath the shadow of the tree  I would like to linger still",
+        "Just to be with those I love joy my heart would over fill",
+        "Just to simply wander back  to the cabin on the hill"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But the saddest of it all I can never more return",
+        "To that happy childhood home matters not how much I yearn",
+        "If I only had my way it would give my heart a thrill",
+        "Just to simply wander back to the cabin on the hill"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "high-on-a-mountain",
+  "title": "High On A Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/high-on-a-mountain/",
+  "raw_lyrics": "As I looked at the valleys down below\nThey were green just as far as I could see\nAs my memory returned oh how my heart did yearn\nFor you and the day that used to be\n\nHigh on a mountain top wind blowing free\nWondering about the days that used to be\nHigh on a mountain top standing all alone\nWondering where the years of my life have flown\n\nOh I wonder if you ever think of me\nOr if time has blotted out your memory\nAs I listen to the breeze blow gently through the trees\nI\u2019ll always cherish what you meant to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As I looked at the valleys down below",
+        "They were green just as far as I could see",
+        "As my memory returned oh how my heart did yearn",
+        "For you and the day that used to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "High on a mountain top wind blowing free",
+        "Wondering about the days that used to be",
+        "High on a mountain top standing all alone",
+        "Wondering where the years of my life have flown"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I wonder if you ever think of me",
+        "Or if time has blotted out your memory",
+        "As I listen to the breeze blow gently through the trees",
+        "I\u2019ll always cherish what you meant to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

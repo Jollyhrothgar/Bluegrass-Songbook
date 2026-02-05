@@ -1,0 +1,39 @@
+{
+  "slug": "dear-one",
+  "title": "Dear One",
+  "source_url": "https://www.bluegrasslyrics.com/song/dear-one/",
+  "raw_lyrics": "At the end of day when works all over\nAnd the shadows of night settle down\nMy thoughts turn back to the one that loved me\nMy sweetheart and my home town\n\nThere\u2019s a dear one dear one waiting\nWaiting back in my home town\nIt\u2019s a sweet one called my missess\nWaiting back in my home town\n\nWe once walked to church on Sunday morning\nAll of our friends gathered round\nI will meet her again to be wed at the altar\nWhen I get back to my home town",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "At the end of day when works all over",
+        "And the shadows of night settle down",
+        "My thoughts turn back to the one that loved me",
+        "My sweetheart and my home town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a dear one dear one waiting",
+        "Waiting back in my home town",
+        "It\u2019s a sweet one called my missess",
+        "Waiting back in my home town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We once walked to church on Sunday morning",
+        "All of our friends gathered round",
+        "I will meet her again to be wed at the altar",
+        "When I get back to my home town"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

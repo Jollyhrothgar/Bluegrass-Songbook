@@ -1,0 +1,49 @@
+{
+  "slug": "ole-slew-foot",
+  "title": "Ole Slew Foot",
+  "source_url": "https://www.bluegrasslyrics.com/song/ole-slew-foot/",
+  "raw_lyrics": "High on a mountain, tell me what do you see\nBear tracks bear tracks looking back at me\nBetter get your rifles before its too late\nThe bear\u2019s got a little pig and he\u2019s headed for the gate\n\nHe\u2019s big around the middle and broad across the rump\nRunning ninety miles an hour, taking thirty feet a jump\nAin\u2019t never been caught, he ain\u2019t never been treed\nAnd some folks say he looks a lot like me\n\nSaved up my money and bought me some bees\nStarted making honey way up in the trees\nCut down the trees but the honey\u2019s all gone\nOld slew foot has done made himself at home\n\nWinter\u2019s coming on and it\u2019s forty below\nRiver\u2019s froze over, so where can he go\nI\u2019ll chase him up the gully and run him in the well\nShoot him in the bottom just to listen to him yell",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "High on a mountain, tell me what do you see",
+        "Bear tracks bear tracks looking back at me",
+        "Better get your rifles before its too late",
+        "The bear\u2019s got a little pig and he\u2019s headed for the gate"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "He\u2019s big around the middle and broad across the rump",
+        "Running ninety miles an hour, taking thirty feet a jump",
+        "Ain\u2019t never been caught, he ain\u2019t never been treed",
+        "And some folks say he looks a lot like me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Saved up my money and bought me some bees",
+        "Started making honey way up in the trees",
+        "Cut down the trees but the honey\u2019s all gone",
+        "Old slew foot has done made himself at home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Winter\u2019s coming on and it\u2019s forty below",
+        "River\u2019s froze over, so where can he go",
+        "I\u2019ll chase him up the gully and run him in the well",
+        "Shoot him in the bottom just to listen to him yell"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

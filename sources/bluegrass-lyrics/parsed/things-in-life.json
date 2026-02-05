@@ -1,0 +1,59 @@
+{
+  "slug": "things-in-life",
+  "title": "Things In Life",
+  "source_url": "https://www.bluegrasslyrics.com/song/things-in-life/",
+  "raw_lyrics": "Look up, look down this lonesome road\nHang down your head and cry\nFor we often lose some things in life\nThat makes us wonder why\n\nOh the fairest love I ever had\nNow sleeps beneath the clay\nI live in hopes and dreams of her\nThat we\u2019ll meet again someday\n\nI often sit and wonder why\nLife has to be this way\nBut after all is said and done\nI\u2019m sure God has his say\n\nI\u2019d like to be a small part of life\nWith some few things to achieve\nJust to know I\u2019ve been a fruitless cause\nWould give my poor heart grief\n\nNow when they lower my casket down\nIn some lonesome grave to rest\nAnd you take your last look at my face\nYou can say I done my best",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Look up, look down this lonesome road",
+        "Hang down your head and cry",
+        "For we often lose some things in life",
+        "That makes us wonder why"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the fairest love I ever had",
+        "Now sleeps beneath the clay",
+        "I live in hopes and dreams of her",
+        "That we\u2019ll meet again someday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I often sit and wonder why",
+        "Life has to be this way",
+        "But after all is said and done",
+        "I\u2019m sure God has his say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d like to be a small part of life",
+        "With some few things to achieve",
+        "Just to know I\u2019ve been a fruitless cause",
+        "Would give my poor heart grief"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when they lower my casket down",
+        "In some lonesome grave to rest",
+        "And you take your last look at my face",
+        "You can say I done my best"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

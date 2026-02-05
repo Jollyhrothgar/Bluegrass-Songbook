@@ -1,0 +1,49 @@
+{
+  "slug": "will-you-be-loving-another-man",
+  "title": "Will You Be Loving Another Man",
+  "source_url": "https://www.bluegrasslyrics.com/song/will-you-be-loving-another-man/",
+  "raw_lyrics": "Now will you love me little darling\nWhen I\u2019m in some other land?\nAnd you know I can\u2019t be with you\nOr will you be loving another man?\n\nWill you be loving another man\nWill you be loving another man\nWhen I return will you be waiting\nOr will you be loving another man\n\nNow don\u2019t be crying on my shoulder\nAnd telling me that love is grand\nAnd before I\u2019m out of sight dear\nThen be loving another man\n\nNow if I find this to be true dear\nI want you to please understand\nWhen I return don\u2019t say you\u2019re sorry\nJust keep on loving another man",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now will you love me little darling",
+        "When I\u2019m in some other land?",
+        "And you know I can\u2019t be with you",
+        "Or will you be loving another man?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Will you be loving another man",
+        "Will you be loving another man",
+        "When I return will you be waiting",
+        "Or will you be loving another man"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now don\u2019t be crying on my shoulder",
+        "And telling me that love is grand",
+        "And before I\u2019m out of sight dear",
+        "Then be loving another man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now if I find this to be true dear",
+        "I want you to please understand",
+        "When I return don\u2019t say you\u2019re sorry",
+        "Just keep on loving another man"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

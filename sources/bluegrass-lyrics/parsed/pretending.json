@@ -1,0 +1,39 @@
+{
+  "slug": "pretending",
+  "title": "Pretending",
+  "source_url": "https://www.bluegrasslyrics.com/song/pretending/",
+  "raw_lyrics": "Pretending that I\u2019m always happy\nPretending that I\u2019m always gay when my heart\nInside of me is slowly dying\nEvery second every minute of the day\n\nPretending that I do not love you\nPretending I am glad you\u2019re gone\nWhen I know that you have gone away forever\nAnd the pain within my heart goes on and on\n\nPretending that I\u2019ll soon forget you\nPretending now is all I do\nFor I know that you have gone away forever\nThe game is over I know I\u2019ve lost you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Pretending that I\u2019m always happy",
+        "Pretending that I\u2019m always gay when my heart",
+        "Inside of me is slowly dying",
+        "Every second every minute of the day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Pretending that I do not love you",
+        "Pretending I am glad you\u2019re gone",
+        "When I know that you have gone away forever",
+        "And the pain within my heart goes on and on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Pretending that I\u2019ll soon forget you",
+        "Pretending now is all I do",
+        "For I know that you have gone away forever",
+        "The game is over I know I\u2019ve lost you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

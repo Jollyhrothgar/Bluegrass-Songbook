@@ -1,0 +1,49 @@
+{
+  "slug": "i-wonder-where-you-are-tonight",
+  "title": "I Wonder Where You Are Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-wonder-where-you-are-tonight/",
+  "raw_lyrics": "Tonight I\u2019m sad my heart is weary\nWondering if I\u2019m wrong or right\nTo think about you though you left me\nI wonder where you are tonight\n\nThe rain is cold and slowly falling\nUpon my window pane tonight\nAnd though your love seems even colder\nI wonder where you are tonight\n\nYour heart was cold you never loved me\nThough you often said you cared\nAnd now you\u2019ve gone to find another\nSomeone who knows the love I shared\n\nThen came the dawn the day you left me\nI tried to smile with all my might\nBut you could see the pain within me\nThat lingers in my heart tonight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight I\u2019m sad my heart is weary",
+        "Wondering if I\u2019m wrong or right",
+        "To think about you though you left me",
+        "I wonder where you are tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The rain is cold and slowly falling",
+        "Upon my window pane tonight",
+        "And though your love seems even colder",
+        "I wonder where you are tonight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your heart was cold you never loved me",
+        "Though you often said you cared",
+        "And now you\u2019ve gone to find another",
+        "Someone who knows the love I shared"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then came the dawn the day you left me",
+        "I tried to smile with all my might",
+        "But you could see the pain within me",
+        "That lingers in my heart tonight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "forty-four-gun",
+  "title": "Forty Four Gun",
+  "source_url": "https://www.bluegrasslyrics.com/song/forty-four-gun/",
+  "raw_lyrics": "Don\u2019t you remember on that rocky mountain side\nWhere we laid down to rest\nYou promised to be my blue eyed boy\nWhile the sun sank in the west\n\nNow hand me down my old gray hat\nIt\u2019s hanging there on a nail\nBefore this time tomorrow morn\nI\u2019ll be gone on that long long trail\n\nIfin you see me standing on the porch\nWith a forty four in my hand\nJust tell them all I\u2019ve killed myself\nCause you\u2019ve gone to some far distant land\n\nI wish to the lord I\u2019d never been born\nOr died when I was young\nI never would have seen them to brown eyes\nOr heard that flattering tongue\n\nI never will listen what another man says\nLet his hair be black or brown\nUnlessin he\u2019s on some scaffold high\nCrying darlin I wish to come down\n\nDon\u2019t you remember on that rocky mountain side\nWhere we laid down to rest\nYou promised to be my blue eyed boy\nWhile the sun sank in the west",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t you remember on that rocky mountain side",
+        "Where we laid down to rest",
+        "You promised to be my blue eyed boy",
+        "While the sun sank in the west"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now hand me down my old gray hat",
+        "It\u2019s hanging there on a nail",
+        "Before this time tomorrow morn",
+        "I\u2019ll be gone on that long long trail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ifin you see me standing on the porch",
+        "With a forty four in my hand",
+        "Just tell them all I\u2019ve killed myself",
+        "Cause you\u2019ve gone to some far distant land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish to the lord I\u2019d never been born",
+        "Or died when I was young",
+        "I never would have seen them to brown eyes",
+        "Or heard that flattering tongue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never will listen what another man says",
+        "Let his hair be black or brown",
+        "Unlessin he\u2019s on some scaffold high",
+        "Crying darlin I wish to come down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t you remember on that rocky mountain side",
+        "Where we laid down to rest",
+        "You promised to be my blue eyed boy",
+        "While the sun sank in the west"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

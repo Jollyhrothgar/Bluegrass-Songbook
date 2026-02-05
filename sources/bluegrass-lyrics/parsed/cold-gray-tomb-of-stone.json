@@ -1,0 +1,59 @@
+{
+  "slug": "cold-gray-tomb-of-stone",
+  "title": "Cold Gray Tomb of Stone",
+  "source_url": "https://www.bluegrasslyrics.com/song/cold-gray-tomb-of-stone/",
+  "raw_lyrics": "passing by a lonesome graveyard\neverything i love is gone\nweeping as they lay my darling\nneath a cold gray tomb of stone\n\nin this world i`m left to wander\nwith no one to call my own\nwhile my precious darling`s sleeping\nneath a cold gray tomb of stone\n\nout there in that lonesome graveyard\nshe is sleeping all alone\nand i burried my heart with her\nneath a cold gray tomb of stone\n\nskies above are dark and stormy\nall the sunshine,all is gone\nfor the while my love is sleeping\nneath a cold gray tomb of stone\n\nmy heart is dead and yet i`m living\ntraveling through this world alone\ni wish that i was with my darling\nneath a cold gray tomb of stone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "passing by a lonesome graveyard",
+        "everything i love is gone",
+        "weeping as they lay my darling",
+        "neath a cold gray tomb of stone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "in this world i`m left to wander",
+        "with no one to call my own",
+        "while my precious darling`s sleeping",
+        "neath a cold gray tomb of stone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "out there in that lonesome graveyard",
+        "she is sleeping all alone",
+        "and i burried my heart with her",
+        "neath a cold gray tomb of stone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "skies above are dark and stormy",
+        "all the sunshine,all is gone",
+        "for the while my love is sleeping",
+        "neath a cold gray tomb of stone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "my heart is dead and yet i`m living",
+        "traveling through this world alone",
+        "i wish that i was with my darling",
+        "neath a cold gray tomb of stone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

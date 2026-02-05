@@ -1,0 +1,49 @@
+{
+  "slug": "uncle-pen",
+  "title": "Uncle Pen",
+  "source_url": "https://www.bluegrasslyrics.com/song/uncle-pen/",
+  "raw_lyrics": "Oh the people would come from far away\nThey\u2019d dance all night till the break of day\nWhen the caller hollered \u201cdo-se-do\u201d\nYou knew Uncle Pen was ready to go\n\nLate in the evening about sundown\nHigh on the hill and above the town\nUncle Pen played the fiddle lord how it would ring\nYou could hear it talk, you could hear it sing\n\nHe played an old piece he called \u201cSoldier\u2019s Joy\u201d\nAnd the one called \u201cThe Boston Boy\u201d\nThe greatest of all was \u201cJenny Lynn\u201d\nTo me that\u2019s where the fiddle begins\n\nI\u2019ll never forget that mournful day\nWhen Uncle Pen was called away\nThey hung up his fiddle, they hung up his bow\nThey knew it was time for him to go",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the people would come from far away",
+        "They\u2019d dance all night till the break of day",
+        "When the caller hollered \u201cdo-se-do\u201d",
+        "You knew Uncle Pen was ready to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Late in the evening about sundown",
+        "High on the hill and above the town",
+        "Uncle Pen played the fiddle lord how it would ring",
+        "You could hear it talk, you could hear it sing"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He played an old piece he called \u201cSoldier\u2019s Joy\u201d",
+        "And the one called \u201cThe Boston Boy\u201d",
+        "The greatest of all was \u201cJenny Lynn\u201d",
+        "To me that\u2019s where the fiddle begins"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll never forget that mournful day",
+        "When Uncle Pen was called away",
+        "They hung up his fiddle, they hung up his bow",
+        "They knew it was time for him to go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

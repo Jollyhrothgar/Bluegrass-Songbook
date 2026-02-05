@@ -1,0 +1,49 @@
+{
+  "slug": "remember-the-cross",
+  "title": "Remember The Cross",
+  "source_url": "https://www.bluegrasslyrics.com/song/remember-the-cross/",
+  "raw_lyrics": "Do you think of the cross on which Jesus died\nOf the blood he shed for you\nAre you prepared to meet him in that land of love\nBy his word are you going to abide\n\nRemember the cross on which Jesus died\nFollow in his footsteps each day\nHe shed his blood for you and he shed his blood for me\nNever cast that cross aside\n\nNever let other people lead you astray\nTeach his words to them if you can\nThey must think of that cross on which Jesus died\nAnd get ready to meet him someday\n\nWhen Jesus comes down from heaven above\nAnd you haven\u2019t thought of that cross\nHe\u2019ll cast you aside in the twinkling of an eye\nAnd you won\u2019t see his blessed home of love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Do you think of the cross on which Jesus died",
+        "Of the blood he shed for you",
+        "Are you prepared to meet him in that land of love",
+        "By his word are you going to abide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Remember the cross on which Jesus died",
+        "Follow in his footsteps each day",
+        "He shed his blood for you and he shed his blood for me",
+        "Never cast that cross aside"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Never let other people lead you astray",
+        "Teach his words to them if you can",
+        "They must think of that cross on which Jesus died",
+        "And get ready to meet him someday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When Jesus comes down from heaven above",
+        "And you haven\u2019t thought of that cross",
+        "He\u2019ll cast you aside in the twinkling of an eye",
+        "And you won\u2019t see his blessed home of love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

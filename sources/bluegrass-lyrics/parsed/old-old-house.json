@@ -1,0 +1,39 @@
+{
+  "slug": "old-old-house",
+  "title": "Old Old House",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-old-house/",
+  "raw_lyrics": "There\u2019s an old, old house that once was a mansion\nOn a hill overlooking the town\nBut time has left a wreckage where once there was beauty\nAnd soon the old house will tumble down\n\nBut when the leaves start to fall in autumn\nAnd the rain starts to drip from the trees\nThere\u2019s an old old man who walks in the garden\nAnd his head is bowed in memories\n\nThey say he built the mansion for the love of a woman\nThey planned to be married in the fall\nBut her love for him faded in the last days of summer\nAnd the house stands empty after all",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s an old, old house that once was a mansion",
+        "On a hill overlooking the town",
+        "But time has left a wreckage where once there was beauty",
+        "And soon the old house will tumble down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But when the leaves start to fall in autumn",
+        "And the rain starts to drip from the trees",
+        "There\u2019s an old old man who walks in the garden",
+        "And his head is bowed in memories"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They say he built the mansion for the love of a woman",
+        "They planned to be married in the fall",
+        "But her love for him faded in the last days of summer",
+        "And the house stands empty after all"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

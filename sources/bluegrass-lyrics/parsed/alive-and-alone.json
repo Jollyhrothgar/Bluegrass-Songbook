@@ -1,0 +1,67 @@
+{
+  "slug": "alive-and-alone",
+  "title": "Alive And Alone",
+  "source_url": "https://www.bluegrasslyrics.com/song/alive-and-alone/",
+  "raw_lyrics": "I see you there at the Brass Rail Bar\nSomebody just asked you what sign you are\nAnd I see you\u2019re thinkin\u2019 you maybe should\u2019ve stayed home\nBut you\u2019re tired of being alive and alone\n\nIn your brand new hairdo, you look real fine\nI hear you toast yourself, today you\u2019re twenty-nine\nAnd you\u2019re riding on what the future brings\nAn honest man who wants the simple things.\n\nThere\u2019s Tiffany lamps here to brighten up the gloom\nThe conversation sounds like a locker room\nWhere will you find love, you\u2019re living in a tiny world\nAnd at the office they call you an old fashioned girl\n\nYou sit so silent, sipping at a beer\nCatching your reflection in a tinted mirror\nAnd you shopped all day for that brand new dress\nWhat a price to pay, for settling for less\n\nI see you there at the Brass Rail Bar\nSomebody just asked you what sign you are\nAnd I see you\u2019re wishin\u2019 you woulda just stayed home\nBut you\u2019re tired of being alive and alone\n\nAlive and alone     Alive and alone\nAlive and alone     Alive and alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I see you there at the Brass Rail Bar",
+        "Somebody just asked you what sign you are",
+        "And I see you\u2019re thinkin\u2019 you maybe should\u2019ve stayed home",
+        "But you\u2019re tired of being alive and alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In your brand new hairdo, you look real fine",
+        "I hear you toast yourself, today you\u2019re twenty-nine",
+        "And you\u2019re riding on what the future brings",
+        "An honest man who wants the simple things."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s Tiffany lamps here to brighten up the gloom",
+        "The conversation sounds like a locker room",
+        "Where will you find love, you\u2019re living in a tiny world",
+        "And at the office they call you an old fashioned girl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You sit so silent, sipping at a beer",
+        "Catching your reflection in a tinted mirror",
+        "And you shopped all day for that brand new dress",
+        "What a price to pay, for settling for less"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I see you there at the Brass Rail Bar",
+        "Somebody just asked you what sign you are",
+        "And I see you\u2019re wishin\u2019 you woulda just stayed home",
+        "But you\u2019re tired of being alive and alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Alive and alone     Alive and alone",
+        "Alive and alone     Alive and alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

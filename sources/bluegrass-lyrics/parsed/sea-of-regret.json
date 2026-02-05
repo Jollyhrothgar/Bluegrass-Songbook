@@ -1,0 +1,39 @@
+{
+  "slug": "sea-of-regret",
+  "title": "Sea Of Regret",
+  "source_url": "https://www.bluegrasslyrics.com/song/sea-of-regret/",
+  "raw_lyrics": "The day I first met you my heart spoke to me\nThere is the angel you see in your dreams\nAnd I know it must be for the way that I feel\nYour only a dream girl I know your not real\n\nWhen you walked away my heart went with you\nYou stole it from me the day that we met\nAnd now I must live my life in sorrow\nNo home just a drifter on the sea of regret\n\nThe love that you promised to me on that day\nIs now gone forever like the vows that you made\nMy heart is so empty its easy to tell\nLike a ship on the ocean I\u2019m lost without sail",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The day I first met you my heart spoke to me",
+        "There is the angel you see in your dreams",
+        "And I know it must be for the way that I feel",
+        "Your only a dream girl I know your not real"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When you walked away my heart went with you",
+        "You stole it from me the day that we met",
+        "And now I must live my life in sorrow",
+        "No home just a drifter on the sea of regret"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The love that you promised to me on that day",
+        "Is now gone forever like the vows that you made",
+        "My heart is so empty its easy to tell",
+        "Like a ship on the ocean I\u2019m lost without sail"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

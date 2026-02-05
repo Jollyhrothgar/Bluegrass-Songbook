@@ -1,0 +1,49 @@
+{
+  "slug": "big-spike-hammer",
+  "title": "Big Spike Hammer",
+  "source_url": "https://www.bluegrasslyrics.com/song/big-spike-hammer/",
+  "raw_lyrics": "Can\u2019t you hear the whistle of my big spike hammer\nLord it\u2019s busting my side\nI\u2019ve done all I can do to keep that woman\nStill she\u2019s not satisfied\n\nHey hey Della Mae\nWhy do you treat me this way\nHey hey Della Mae\nI\u2019ll get even some day\n\nI\u2019m the best hammer swinger on this big section gang\nBig Bill Johnson is my name\nLord this hammer that I swing for a dollar and a half a day\nI\u2019ll all for my Della Mae\n\nNow I\u2019ve been lots of places, not much I ain\u2019t done\nThere\u2019s still alot of things I\u2019d like to see\nLord this hammer that I swing or the woman that I love\nYes one\u2019s gonna be the death of me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Can\u2019t you hear the whistle of my big spike hammer",
+        "Lord it\u2019s busting my side",
+        "I\u2019ve done all I can do to keep that woman",
+        "Still she\u2019s not satisfied"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hey hey Della Mae",
+        "Why do you treat me this way",
+        "Hey hey Della Mae",
+        "I\u2019ll get even some day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m the best hammer swinger on this big section gang",
+        "Big Bill Johnson is my name",
+        "Lord this hammer that I swing for a dollar and a half a day",
+        "I\u2019ll all for my Della Mae"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019ve been lots of places, not much I ain\u2019t done",
+        "There\u2019s still alot of things I\u2019d like to see",
+        "Lord this hammer that I swing or the woman that I love",
+        "Yes one\u2019s gonna be the death of me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

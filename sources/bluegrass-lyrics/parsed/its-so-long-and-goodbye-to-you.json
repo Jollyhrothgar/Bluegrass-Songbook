@@ -1,0 +1,49 @@
+{
+  "slug": "its-so-long-and-goodbye-to-you",
+  "title": "It\u2019s So Long And Goodbye To You",
+  "source_url": "https://www.bluegrasslyrics.com/song/its-so-long-and-goodbye-to-you/",
+  "raw_lyrics": "You can send me pretty flowers you can send me valentines\nSend me letters every day but it won\u2019t pay\nLeap to my desire, nothing else will do\nIt\u2019s goodbye and so long to you\n\nYou can hang around and love me you can hang your head and cry\nHang my picture on the wall but I won\u2019t fall\nKiss me when you\u2019re dreaming, no good that will do\nIt\u2019s goodbye and so long to you\n\nYou can give me your affection you can give all your love\nGive me all the things I\u2019ll crave but I\u2019ll be brave\nAll the things you offer, make me sad and blue\nIt\u2019s goodbye and so long to you\n\nYou can call my your own darling you can call me what you may\nCall me on the telephone I won\u2019t be home\nKeep your old love letters, I\u2019m all through with you\nIt\u2019s goodbye and so long to you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You can send me pretty flowers you can send me valentines",
+        "Send me letters every day but it won\u2019t pay",
+        "Leap to my desire, nothing else will do",
+        "It\u2019s goodbye and so long to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can hang around and love me you can hang your head and cry",
+        "Hang my picture on the wall but I won\u2019t fall",
+        "Kiss me when you\u2019re dreaming, no good that will do",
+        "It\u2019s goodbye and so long to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can give me your affection you can give all your love",
+        "Give me all the things I\u2019ll crave but I\u2019ll be brave",
+        "All the things you offer, make me sad and blue",
+        "It\u2019s goodbye and so long to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can call my your own darling you can call me what you may",
+        "Call me on the telephone I won\u2019t be home",
+        "Keep your old love letters, I\u2019m all through with you",
+        "It\u2019s goodbye and so long to you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

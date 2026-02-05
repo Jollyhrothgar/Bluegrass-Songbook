@@ -1,0 +1,49 @@
+{
+  "slug": "blue-ridge-mountain-memories",
+  "title": "Blue Ridge Mountain Memories",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-ridge-mountain-memories/",
+  "raw_lyrics": "Blue Ridge Mountain memories\nDreams of home so dear to me\nI wish life could be like it used to be\nIn my Blue Ridge Mountain memories\n\nI still envision that old homestead on a hillside far away\nI can see the Blue Ridge Mountains where I spent my childhood days\nWhen I start wishin\u2019 things could be the way they were back then\nI can close my eyes and wander back again\n\nI can still see Mom and Daddy and remember how they cried\nWhen I headed west searchin\u2019 for a better way of life\nThough I found fame and fortune I feel empty and alone\nRiches can\u2019t replace a parent\u2019s love or home\n\nNow Mom and Dad are resting near the Blue Ridge Mountain cabin\nThey sleep there overlooking the only place they\u2019ve ever known\nI\u2019ve been all around this whole wide world but nothing can compare\nTo the beauty of that Blue Ridge Mountain home",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Blue Ridge Mountain memories",
+        "Dreams of home so dear to me",
+        "I wish life could be like it used to be",
+        "In my Blue Ridge Mountain memories"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I still envision that old homestead on a hillside far away",
+        "I can see the Blue Ridge Mountains where I spent my childhood days",
+        "When I start wishin\u2019 things could be the way they were back then",
+        "I can close my eyes and wander back again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can still see Mom and Daddy and remember how they cried",
+        "When I headed west searchin\u2019 for a better way of life",
+        "Though I found fame and fortune I feel empty and alone",
+        "Riches can\u2019t replace a parent\u2019s love or home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now Mom and Dad are resting near the Blue Ridge Mountain cabin",
+        "They sleep there overlooking the only place they\u2019ve ever known",
+        "I\u2019ve been all around this whole wide world but nothing can compare",
+        "To the beauty of that Blue Ridge Mountain home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

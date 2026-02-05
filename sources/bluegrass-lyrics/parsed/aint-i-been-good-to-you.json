@@ -1,0 +1,39 @@
+{
+  "slug": "aint-i-been-good-to-you",
+  "title": "Ain\u2019t I Been Good to You",
+  "source_url": "https://www.bluegrasslyrics.com/song/aint-i-been-good-to-you/",
+  "raw_lyrics": "Ain\u2019t I been good to you\nDone all that I can do\nSo faithful and so true\nAin\u2019t I been good to you\n\nI\u2019ve tried and tried and tried\nTo keep you satisfied\nBut you found somebody new\nEven though I was good to you.\n\nIt\u2019s causin\u2019 me such pain\nSweetheart, I can\u2019t explain\nI can\u2019t believe we\u2019re through\n\u2018Cause I\u2019ve been so good to you.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Ain\u2019t I been good to you",
+        "Done all that I can do",
+        "So faithful and so true",
+        "Ain\u2019t I been good to you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve tried and tried and tried",
+        "To keep you satisfied",
+        "But you found somebody new",
+        "Even though I was good to you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s causin\u2019 me such pain",
+        "Sweetheart, I can\u2019t explain",
+        "I can\u2019t believe we\u2019re through",
+        "\u2018Cause I\u2019ve been so good to you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

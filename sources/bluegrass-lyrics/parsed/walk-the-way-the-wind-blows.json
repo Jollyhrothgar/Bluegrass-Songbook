@@ -1,0 +1,39 @@
+{
+  "slug": "walk-the-way-the-wind-blows",
+  "title": "Walk The Way The Wind Blows",
+  "source_url": "https://www.bluegrasslyrics.com/song/walk-the-way-the-wind-blows/",
+  "raw_lyrics": "Up along the hallway down along the stairs\nI can see the pictures that we made down thru the years.\nAnd it makes me blue darlin thinkin of the past\nAnd I\u2019m truly sorry I couldn\u2019t make it last.\n\nWalk the way the wind blows cry the tears I cry\nHoping for you darlin to be here by my side\nI gotta do some thinking of where to go from here\nWalk the way the wind blows wipe away the tears\n\nI remember darlin when you first came to me\nAll the year was sweetness and all our time was free\nLike the leaves that whither our hearts fell away\nThink i\u2019ll just go out alone and walk my blues away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Up along the hallway down along the stairs",
+        "I can see the pictures that we made down thru the years.",
+        "And it makes me blue darlin thinkin of the past",
+        "And I\u2019m truly sorry I couldn\u2019t make it last."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Walk the way the wind blows cry the tears I cry",
+        "Hoping for you darlin to be here by my side",
+        "I gotta do some thinking of where to go from here",
+        "Walk the way the wind blows wipe away the tears"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember darlin when you first came to me",
+        "All the year was sweetness and all our time was free",
+        "Like the leaves that whither our hearts fell away",
+        "Think i\u2019ll just go out alone and walk my blues away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

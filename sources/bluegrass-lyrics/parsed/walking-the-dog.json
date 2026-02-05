@@ -1,0 +1,39 @@
+{
+  "slug": "walking-the-dog",
+  "title": "Walking The Dog",
+  "source_url": "https://www.bluegrasslyrics.com/song/walking-the-dog/",
+  "raw_lyrics": "I\u2019m walking the dog I ain\u2019t never blue\nI\u2019m walking the dog I ain\u2019t thinking \u2019bout you\nI don\u2019t have no one to tie me down\nI\u2019m walking the dog all over the town\n\nSuch an easy life I never knew\nUntil the day that I met you\nI\u2019m a carefree lad that\u2019s seen the light\nI\u2019m walking the dog all day and all night\n\nI\u2019m full of pep Lord I can\u2019t grow old\nI got a one-track mind so I\u2019ve been told\nI\u2019m fancy free and I don\u2019t worry no how\nI\u2019m walking the dog all the law will allow",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m walking the dog I ain\u2019t never blue",
+        "I\u2019m walking the dog I ain\u2019t thinking \u2019bout you",
+        "I don\u2019t have no one to tie me down",
+        "I\u2019m walking the dog all over the town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Such an easy life I never knew",
+        "Until the day that I met you",
+        "I\u2019m a carefree lad that\u2019s seen the light",
+        "I\u2019m walking the dog all day and all night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m full of pep Lord I can\u2019t grow old",
+        "I got a one-track mind so I\u2019ve been told",
+        "I\u2019m fancy free and I don\u2019t worry no how",
+        "I\u2019m walking the dog all the law will allow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

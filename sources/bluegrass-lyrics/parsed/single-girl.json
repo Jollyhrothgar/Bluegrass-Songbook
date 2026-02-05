@@ -1,0 +1,69 @@
+{
+  "slug": "single-girl",
+  "title": "Single Girl",
+  "source_url": "https://www.bluegrasslyrics.com/song/single-girl/",
+  "raw_lyrics": "Single girl, oh single girl\nShe\u2019s gone anywhere she please\nOh, gone anywhere she please\nMarried girl, oh married girl\nGot a baby on her knees\nOh, got a baby on her knees\n\nSingle girl, oh single girl\nShe\u2019s going dressed up so fine\nOh going dressed up so file\nMarried girl, oh, married girl\nShe wears any kind\nOh, she wears any kind\n\nSingle girl, oh single girl\nShe goes to the store and buys\nOh goes to the store and buys\nMarried girl, oh, married girl\nShe rocks the cradle and cries\nOh, rocks the cradle and cries\n\nSingle girl, oh single girl\nShe lays in bed \u2019til one\nOh lays in bed \u2019til one\nMarried girl, oh, married girl\nShe\u2019s up before the sun\nOh, up before the sun\n\nSingle girl, oh single girl\nShe\u2019s looking for a man\nOh looking for a man\nMarried girl, oh, married girl\nShe\u2019s got her wedding band\nOh, got her wedding band",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Single girl, oh single girl",
+        "She\u2019s gone anywhere she please",
+        "Oh, gone anywhere she please",
+        "Married girl, oh married girl",
+        "Got a baby on her knees",
+        "Oh, got a baby on her knees"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Single girl, oh single girl",
+        "She\u2019s going dressed up so fine",
+        "Oh going dressed up so file",
+        "Married girl, oh, married girl",
+        "She wears any kind",
+        "Oh, she wears any kind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Single girl, oh single girl",
+        "She goes to the store and buys",
+        "Oh goes to the store and buys",
+        "Married girl, oh, married girl",
+        "She rocks the cradle and cries",
+        "Oh, rocks the cradle and cries"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Single girl, oh single girl",
+        "She lays in bed \u2019til one",
+        "Oh lays in bed \u2019til one",
+        "Married girl, oh, married girl",
+        "She\u2019s up before the sun",
+        "Oh, up before the sun"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Single girl, oh single girl",
+        "She\u2019s looking for a man",
+        "Oh looking for a man",
+        "Married girl, oh, married girl",
+        "She\u2019s got her wedding band",
+        "Oh, got her wedding band"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "along-about-daybreak",
+  "title": "Along About Daybreak",
+  "source_url": "https://www.bluegrasslyrics.com/song/along-about-daybreak/",
+  "raw_lyrics": "When we were young and we thought we loved each other\nBut you didn\u2019t love me I guess\nFor you\u2019ve gone and you\u2019ve found another\nEverything to you is regret\n\nThis morning along about daybreak\nYou quarreled at  me the whole night through\nI know it\u2019s not too late for your sake dear\nBut for me I will always be blue\n\nOh I\u2019m weary my darling weary\nJust to know your love\u2019s gone cold\nFor without you life will be so dreary\nWe\u2019ll need each other when we grow old\n\nOh sweetheart be good to our babies\nAnd I want you to teach them to pray\nTell them to say a little prayer for their daddy\nWhere he will be no one can say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When we were young and we thought we loved each other",
+        "But you didn\u2019t love me I guess",
+        "For you\u2019ve gone and you\u2019ve found another",
+        "Everything to you is regret"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "This morning along about daybreak",
+        "You quarreled at  me the whole night through",
+        "I know it\u2019s not too late for your sake dear",
+        "But for me I will always be blue"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I\u2019m weary my darling weary",
+        "Just to know your love\u2019s gone cold",
+        "For without you life will be so dreary",
+        "We\u2019ll need each other when we grow old"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh sweetheart be good to our babies",
+        "And I want you to teach them to pray",
+        "Tell them to say a little prayer for their daddy",
+        "Where he will be no one can say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "im-lonesome-without-you",
+  "title": "I\u2019m Lonesome Without You",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-lonesome-without-you/",
+  "raw_lyrics": "When we were young and loved each other\nMore than anyone will know\nUntil that day you found a new love\nThen you said I\u2019d have to go.\n\nOh the Road is rough and rocky\nSince the day I last saw you\nAnother\u2019s won your heart forever\nAnd I\u2019m lonesome without you.\n\nOn down this lonesome road I wander\nThere\u2019s nothing left for me to do\nFor I\u2019ve still got this memory of you\nAnd the love that we once knew.\n\nMy hope is now that you\u2019ll be happy\nWith the new love that you\u2019ve found\nBut should you ever change your mind dear\nRemember me I\u2019ll be around.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When we were young and loved each other",
+        "More than anyone will know",
+        "Until that day you found a new love",
+        "Then you said I\u2019d have to go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the Road is rough and rocky",
+        "Since the day I last saw you",
+        "Another\u2019s won your heart forever",
+        "And I\u2019m lonesome without you."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On down this lonesome road I wander",
+        "There\u2019s nothing left for me to do",
+        "For I\u2019ve still got this memory of you",
+        "And the love that we once knew."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My hope is now that you\u2019ll be happy",
+        "With the new love that you\u2019ve found",
+        "But should you ever change your mind dear",
+        "Remember me I\u2019ll be around."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

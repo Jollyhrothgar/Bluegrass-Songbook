@@ -1,0 +1,79 @@
+{
+  "slug": "wanderlust",
+  "title": "Wanderlust",
+  "source_url": "https://www.bluegrasslyrics.com/song/wanderlust/",
+  "raw_lyrics": "There\u2019s a thought each day that I\u2019m workin\nOf my home in a land \u2018cross the sea\nIf I make enough money I\u2019ll find my way back\nTo my home and my hopes and my dreams\n\nCast away on a big sailing ship\nOn the ocean we sailed far away\nRough seas and foul weather made long to the mast\nFearing they would not see the next day\n\nI landed in some unknown country\nNo money not even one friend\nWanderlust was the reason I travelled\nOn a journey that may have no end\n\nI hear my dear mother calling\nHer whisper the winds of the bay\nHer song a cry for her lost son\nWhile feeling her life pass away\n\nSo its memories I keep close beside me\nTo nourish my poor heardened soul\nBut I\u2019ll work anywhere there\u2019s some money\nMany days have now taken their toll\n\nHow many more years will I travel\nHow many more years all alone\nI\u2019m bound to the place far behind me\nTo the home cross the great ocean foam\n\nThere\u2019s a thought each day that I\u2019m workin\nOf my home in a land \u2018cross the sea\nIf I make enough money I\u2019ll find my way back\nTo my home and my hopes and my dreams",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a thought each day that I\u2019m workin",
+        "Of my home in a land \u2018cross the sea",
+        "If I make enough money I\u2019ll find my way back",
+        "To my home and my hopes and my dreams"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Cast away on a big sailing ship",
+        "On the ocean we sailed far away",
+        "Rough seas and foul weather made long to the mast",
+        "Fearing they would not see the next day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I landed in some unknown country",
+        "No money not even one friend",
+        "Wanderlust was the reason I travelled",
+        "On a journey that may have no end"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hear my dear mother calling",
+        "Her whisper the winds of the bay",
+        "Her song a cry for her lost son",
+        "While feeling her life pass away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So its memories I keep close beside me",
+        "To nourish my poor heardened soul",
+        "But I\u2019ll work anywhere there\u2019s some money",
+        "Many days have now taken their toll"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How many more years will I travel",
+        "How many more years all alone",
+        "I\u2019m bound to the place far behind me",
+        "To the home cross the great ocean foam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a thought each day that I\u2019m workin",
+        "Of my home in a land \u2018cross the sea",
+        "If I make enough money I\u2019ll find my way back",
+        "To my home and my hopes and my dreams"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "your-greedy-heart",
+  "title": "Your Greedy Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/your-greedy-heart/",
+  "raw_lyrics": "I have waited long in silence while you realize your dreams\nBut you take and take and take love, never turn a hand to me\nLike a teardrop in an ocean, grain of sand upon a beach\nI could journey on forever to a heart that\u2019s out of reach.\n\nOh, what more can I give you that I\u2019ve not already given\nI have only one heart, one life to live\nYou take what I\u2019m a-wanting, I\u2019m mindful of your greed\nMy lifetime is too short to give you all that you need.\nThe walls of love are tumbled \u2019round me  left me standing by myself",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have waited long in silence while you realize your dreams",
+        "But you take and take and take love, never turn a hand to me",
+        "Like a teardrop in an ocean, grain of sand upon a beach",
+        "I could journey on forever to a heart that\u2019s out of reach."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, what more can I give you that I\u2019ve not already given",
+        "I have only one heart, one life to live",
+        "You take what I\u2019m a-wanting, I\u2019m mindful of your greed",
+        "My lifetime is too short to give you all that you need.",
+        "The walls of love are tumbled \u2019round me  left me standing by myself"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

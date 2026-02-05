@@ -1,0 +1,75 @@
+{
+  "slug": "my-love-lies-in-the-ground",
+  "title": "My Love Lies in the Ground",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-love-lies-in-the-ground/",
+  "raw_lyrics": "My love you lie in the cold cold ground\nIn a grave not one week old\nTo kiss once more your cold cold lips\nI\u2019d give my weight in gold gold\nI\u2019d give my weight in gold\n\nI can\u2019t see clear to leave your side\nI never more will roam\nI\u2019ll make my bed upon your grave\nA pillow from your stone stone\nA pillow from your stone\n\nThere is no fire can warm me now\nNo blanket made of down\nThe warmth I feel is from your soul\nA seeping through the ground ground\nA seeping through the ground\n\nAnd I do not want a house of gold\nOr a cold dark cave\nI\u2019ll make my home in the musty soil\nThat lies around your grave grave\nThat lies around your grave\n\nWell I can\u2019t abide their laughter\nIt cuts me like a blade\nI prefer the night owl call\nAnd the rhythm of my spade spade\nThe rhythm of my spade\n\nSoon I\u2019ll be at your side\nApart we\u2019ll never be\nAnd I won\u2019t hear those above\nThat make a fool of me me\nThat make a fool of me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My love you lie in the cold cold ground",
+        "In a grave not one week old",
+        "To kiss once more your cold cold lips",
+        "I\u2019d give my weight in gold gold",
+        "I\u2019d give my weight in gold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t see clear to leave your side",
+        "I never more will roam",
+        "I\u2019ll make my bed upon your grave",
+        "A pillow from your stone stone",
+        "A pillow from your stone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is no fire can warm me now",
+        "No blanket made of down",
+        "The warmth I feel is from your soul",
+        "A seeping through the ground ground",
+        "A seeping through the ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And I do not want a house of gold",
+        "Or a cold dark cave",
+        "I\u2019ll make my home in the musty soil",
+        "That lies around your grave grave",
+        "That lies around your grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I can\u2019t abide their laughter",
+        "It cuts me like a blade",
+        "I prefer the night owl call",
+        "And the rhythm of my spade spade",
+        "The rhythm of my spade"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Soon I\u2019ll be at your side",
+        "Apart we\u2019ll never be",
+        "And I won\u2019t hear those above",
+        "That make a fool of me me",
+        "That make a fool of me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

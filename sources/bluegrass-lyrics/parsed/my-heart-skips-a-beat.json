@@ -1,0 +1,39 @@
+{
+  "slug": "my-heart-skips-a-beat",
+  "title": "My Heart Skips A Beat",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-heart-skips-a-beat/",
+  "raw_lyrics": "Oh my heart skips a beat when we walk down the street\nI feel a trembling in my knees\nJust to know you\u2019re mine until the end of time\nMakes my heart skip a beat\n\nWell I did a double take the day I met you\nMy heart turned a flip as I stood next to you\nAnd I knew right then I never could forget you\nYou are my every dream come true\n\nWell you came into my life without a warning\nTurned my cloudy skies from gray to blue\nYou\u2019re my sunshine that comes up every morning\nYou are my every dream come true",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh my heart skips a beat when we walk down the street",
+        "I feel a trembling in my knees",
+        "Just to know you\u2019re mine until the end of time",
+        "Makes my heart skip a beat"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I did a double take the day I met you",
+        "My heart turned a flip as I stood next to you",
+        "And I knew right then I never could forget you",
+        "You are my every dream come true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well you came into my life without a warning",
+        "Turned my cloudy skies from gray to blue",
+        "You\u2019re my sunshine that comes up every morning",
+        "You are my every dream come true"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

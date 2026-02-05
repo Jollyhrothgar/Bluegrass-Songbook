@@ -1,0 +1,64 @@
+{
+  "slug": "nellie-kane",
+  "title": "Nellie Kane",
+  "source_url": "https://www.bluegrasslyrics.com/song/nellie-kane/",
+  "raw_lyrics": "As a young man I went riding out on the western plain\nIn the state of North Dakota I met my Nellie Kane\nI met my Nellie Kane\n\nShe was living in a lonely cabin with a son by another man\nFive years she had waited for him as long as a woman can\nAs long as a woman can\n\nI don\u2019t know what changed my mind\n\u2018Til then I was the rambling kind\nThe kind of love I can\u2019t explain\nThat I had for Nellie Kane\n\nShe hired me on to work that day to help her till the land\nIn the afternoon we planted seeds in the evening we held hands\nIn the evening we held hands\n\nHer blue eyes told me everything a man could want to know\nIt was then I realized that I would never go\nThat I would never go\n\nNow many years have gone by and her son has grown up tall\nI became a father to him and she became my all\nShe became my all",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As a young man I went riding out on the western plain",
+        "In the state of North Dakota I met my Nellie Kane",
+        "I met my Nellie Kane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was living in a lonely cabin with a son by another man",
+        "Five years she had waited for him as long as a woman can",
+        "As long as a woman can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I don\u2019t know what changed my mind",
+        "\u2018Til then I was the rambling kind",
+        "The kind of love I can\u2019t explain",
+        "That I had for Nellie Kane"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She hired me on to work that day to help her till the land",
+        "In the afternoon we planted seeds in the evening we held hands",
+        "In the evening we held hands"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her blue eyes told me everything a man could want to know",
+        "It was then I realized that I would never go",
+        "That I would never go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now many years have gone by and her son has grown up tall",
+        "I became a father to him and she became my all",
+        "She became my all"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

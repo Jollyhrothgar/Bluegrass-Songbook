@@ -1,0 +1,59 @@
+{
+  "slug": "lonesome-homesick-blues",
+  "title": "Lonesome Homesick Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-homesick-blues/",
+  "raw_lyrics": "I\u2019ve got the lonesome homesick blues\nI\u2019ve got them bad babe down in my shoes\nI left someone there that I might lose\nThat\u2019s why I\u2019ve got these old homesick blues\n\nIt makes me homesick to hear your name\nAnd hold you dear in my arms again\nI\u2019m a gonna ride that old lonesome train\nTo the one I left back in Maces Spring\n\nYou told me once dear you loved me so\nAnd it\u2019s on my mind dear every where I go\nI\u2019ll soon be knowing if it is so\nOr has your love for me grown cold\n\nOh listen to that old lonesome train\nIt\u2019s a gonna carry me back again\nTo the one that told me their love was true\nI\u2019ll spend the rest of my days with you\n\nI\u2019ve been away babe a long long time\nNow I\u2019m riding down this old railroad line\nAnd the one I love there I hope to find\nTo ease this lonesome blue heart of mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got the lonesome homesick blues",
+        "I\u2019ve got them bad babe down in my shoes",
+        "I left someone there that I might lose",
+        "That\u2019s why I\u2019ve got these old homesick blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It makes me homesick to hear your name",
+        "And hold you dear in my arms again",
+        "I\u2019m a gonna ride that old lonesome train",
+        "To the one I left back in Maces Spring"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You told me once dear you loved me so",
+        "And it\u2019s on my mind dear every where I go",
+        "I\u2019ll soon be knowing if it is so",
+        "Or has your love for me grown cold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh listen to that old lonesome train",
+        "It\u2019s a gonna carry me back again",
+        "To the one that told me their love was true",
+        "I\u2019ll spend the rest of my days with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been away babe a long long time",
+        "Now I\u2019m riding down this old railroad line",
+        "And the one I love there I hope to find",
+        "To ease this lonesome blue heart of mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

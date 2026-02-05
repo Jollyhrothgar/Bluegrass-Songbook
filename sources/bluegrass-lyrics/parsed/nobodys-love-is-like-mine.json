@@ -1,0 +1,39 @@
+{
+  "slug": "nobodys-love-is-like-mine",
+  "title": "Nobody\u2019s Love Is Like Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/nobodys-love-is-like-mine/",
+  "raw_lyrics": "Nobody\u2019s love is like mine\nNo one\u2019s as faithful and kind\nLove that is true as the ocean\nNobody\u2019s love is like mine.\n\nThey tell me little darling that you are leaving\nThat you\u2019re going far away\nWhy did you leave me little darling\nI loved you both night and day.\n\nI guess I\u2019ll just go on dreaming\nWondering why you left me\nSomeday little darling you\u2019ll be sorry\nFor the way you treated me.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Nobody\u2019s love is like mine",
+        "No one\u2019s as faithful and kind",
+        "Love that is true as the ocean",
+        "Nobody\u2019s love is like mine."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They tell me little darling that you are leaving",
+        "That you\u2019re going far away",
+        "Why did you leave me little darling",
+        "I loved you both night and day."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I guess I\u2019ll just go on dreaming",
+        "Wondering why you left me",
+        "Someday little darling you\u2019ll be sorry",
+        "For the way you treated me."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

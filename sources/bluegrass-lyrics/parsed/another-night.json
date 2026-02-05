@@ -1,0 +1,49 @@
+{
+  "slug": "another-night",
+  "title": "Another Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/another-night/",
+  "raw_lyrics": "The wind is blowing \u2019round the cabin\nI hate to hear that lonesome sound\nI\u2019m all alone and so down hearted\nSince my true love she ain\u2019t around\n\nI hate to see the sun a sinking\nAnother night to toss and turn\nAnother night to dream about her\nAnother night for her I yearn\n\nShe had no cause to go and leave me\nFor I had never done her wrong\nShe left our home and little children\nAnd with another she has gone\n\nThe children they are soundly sleeping\nNo they don\u2019t know that their mother\u2019s gone\nWhat can I do when they awaken\nI can\u2019t tell them that their mother\u2019s wrong",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The wind is blowing \u2019round the cabin",
+        "I hate to hear that lonesome sound",
+        "I\u2019m all alone and so down hearted",
+        "Since my true love she ain\u2019t around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I hate to see the sun a sinking",
+        "Another night to toss and turn",
+        "Another night to dream about her",
+        "Another night for her I yearn"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She had no cause to go and leave me",
+        "For I had never done her wrong",
+        "She left our home and little children",
+        "And with another she has gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The children they are soundly sleeping",
+        "No they don\u2019t know that their mother\u2019s gone",
+        "What can I do when they awaken",
+        "I can\u2019t tell them that their mother\u2019s wrong"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

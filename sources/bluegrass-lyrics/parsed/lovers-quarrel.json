@@ -1,0 +1,68 @@
+{
+  "slug": "lovers-quarrel",
+  "title": "Lover\u2019s Quarrel",
+  "source_url": "https://www.bluegrasslyrics.com/song/lovers-quarrel/",
+  "raw_lyrics": "Jack and May sweethearts were they\nThey were engaged to be wed\nMany a promise Jack made her\nMany a love word was said\n\nBut they quarreled one night as most true lovers do\nShe bade him not come any more\nShe gave him his hat\nJack started to go\nBut he lingered to say at the door\n\nTie up love\u2019s broken cords and let us be sweethearts again\nDarling you know I love you to part would cause me pain\nSo let\u2019s forget the past make up and kiss\nMake up and be lovers again\n\nYears rolled by and neither one was wed\nAnd one morning Jack was found dead\nShe can not tell you why that the tears rolled from her eye\nAnd she goes to the grave every day\n\nLonesome and sad her sweetheart is not there\nHis words they still ring in her ear\n\nTie up love\u2019s broken cords and let us be sweethearts again\nDarling you know I love you to part would cause me pain\nSo let\u2019s forget the past make up and kiss\nMake up and be lovers again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Jack and May sweethearts were they",
+        "They were engaged to be wed",
+        "Many a promise Jack made her",
+        "Many a love word was said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But they quarreled one night as most true lovers do",
+        "She bade him not come any more",
+        "She gave him his hat",
+        "Jack started to go",
+        "But he lingered to say at the door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tie up love\u2019s broken cords and let us be sweethearts again",
+        "Darling you know I love you to part would cause me pain",
+        "So let\u2019s forget the past make up and kiss",
+        "Make up and be lovers again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Years rolled by and neither one was wed",
+        "And one morning Jack was found dead",
+        "She can not tell you why that the tears rolled from her eye",
+        "And she goes to the grave every day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lonesome and sad her sweetheart is not there",
+        "His words they still ring in her ear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tie up love\u2019s broken cords and let us be sweethearts again",
+        "Darling you know I love you to part would cause me pain",
+        "So let\u2019s forget the past make up and kiss",
+        "Make up and be lovers again"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

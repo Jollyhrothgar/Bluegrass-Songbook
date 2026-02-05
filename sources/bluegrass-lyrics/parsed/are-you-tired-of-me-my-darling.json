@@ -1,0 +1,39 @@
+{
+  "slug": "are-you-tired-of-me-my-darling",
+  "title": "Are You Tired Of Me My Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/are-you-tired-of-me-my-darling/",
+  "raw_lyrics": "Are you tired of me my darling\nDid you mean those words you said\nWhen you spoke in fond affection\nOn the day that we were wed\n\nTell me could you live life over\nWould you make it otherwise\nAre you tired of me my darling\nAnswer only with your eyes\n\nDid you ever rue the springtime\nWhen we first each other met\nAnd you told me that you\u2019d love me\nWords my heart can n\u2019er forget",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Are you tired of me my darling",
+        "Did you mean those words you said",
+        "When you spoke in fond affection",
+        "On the day that we were wed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tell me could you live life over",
+        "Would you make it otherwise",
+        "Are you tired of me my darling",
+        "Answer only with your eyes"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Did you ever rue the springtime",
+        "When we first each other met",
+        "And you told me that you\u2019d love me",
+        "Words my heart can n\u2019er forget"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

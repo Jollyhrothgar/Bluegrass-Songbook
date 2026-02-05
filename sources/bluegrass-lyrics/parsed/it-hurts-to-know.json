@@ -1,0 +1,39 @@
+{
+  "slug": "it-hurts-to-know",
+  "title": "It Hurts To Know",
+  "source_url": "https://www.bluegrasslyrics.com/song/it-hurts-to-know/",
+  "raw_lyrics": "Today I\u2019m here thinking about you\nIt seems I don\u2019t know what to do\nNo way turn nothing to love for\nIt hurts to know that I\u2019ve lost you\n\nIt hurts to know you\u2019re with another\nAfter what you put me through\nIt hurts to start my life all over\nTo start all over without you\n\nSomeday my darling he will leave you\nJust like the one he left before\nAnd then you\u2019ll know how much it hurts you\nYou\u2019ll cry, can\u2019t sleep and walk the floor",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Today I\u2019m here thinking about you",
+        "It seems I don\u2019t know what to do",
+        "No way turn nothing to love for",
+        "It hurts to know that I\u2019ve lost you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It hurts to know you\u2019re with another",
+        "After what you put me through",
+        "It hurts to start my life all over",
+        "To start all over without you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday my darling he will leave you",
+        "Just like the one he left before",
+        "And then you\u2019ll know how much it hurts you",
+        "You\u2019ll cry, can\u2019t sleep and walk the floor"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

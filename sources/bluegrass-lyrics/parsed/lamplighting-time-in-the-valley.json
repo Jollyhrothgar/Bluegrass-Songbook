@@ -1,0 +1,39 @@
+{
+  "slug": "lamplighting-time-in-the-valley",
+  "title": "Lamplighting Time In The Valley",
+  "source_url": "https://www.bluegrasslyrics.com/song/lamplighting-time-in-the-valley/",
+  "raw_lyrics": "Oh there\u2019s a lamp shining bright in the cabin\nin a window that\u2019s shining for me\nAnd I know that my mother is praying\nfor the boy she is longing to see\n\nwhen it\u2019s lamp lighting time in the valley\nin my dreams I go back to my home\nOh I can see that old lamp in the window\nit will guide me wherever I roam.\n\nBy the lamplight tonight I can see her\nas she rocks in her chair to and fro\nOh she\u2019s praying that I\u2019ll come back to see her\nand I know that I never can go.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh there\u2019s a lamp shining bright in the cabin",
+        "in a window that\u2019s shining for me",
+        "And I know that my mother is praying",
+        "for the boy she is longing to see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "when it\u2019s lamp lighting time in the valley",
+        "in my dreams I go back to my home",
+        "Oh I can see that old lamp in the window",
+        "it will guide me wherever I roam."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "By the lamplight tonight I can see her",
+        "as she rocks in her chair to and fro",
+        "Oh she\u2019s praying that I\u2019ll come back to see her",
+        "and I know that I never can go."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "i-will-always-be-waiting-for-you",
+  "title": "I Will Always Be Waiting For You",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-will-always-be-waiting-for-you/",
+  "raw_lyrics": "It\u2019s been many weeks my dear since you told me\nThat you loved me so dearly and true\nBut today it seems to me you have changed dear\nAre you telling me that our love is through\n\nWhen you\u2019re far far away from me darlin\u2019\nIf you\u2019re sad and you don\u2019t know what to do\nAnd you feel that no one cares about you\nI will always be waiting for you\n\nOh, I can\u2019t forget the day that you told me\nThat you\u2019d love me and be my sweetheart\nBut it looks like my dear you\u2019ve forgotten\nFor you say now that we have to part\n\nAll the days seem so lonesome and dreary\nAnd the nights are so lonely and blue\nSince you left me alone here without you\nOh, please come back I\u2019m waiting for you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s been many weeks my dear since you told me",
+        "That you loved me so dearly and true",
+        "But today it seems to me you have changed dear",
+        "Are you telling me that our love is through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When you\u2019re far far away from me darlin\u2019",
+        "If you\u2019re sad and you don\u2019t know what to do",
+        "And you feel that no one cares about you",
+        "I will always be waiting for you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, I can\u2019t forget the day that you told me",
+        "That you\u2019d love me and be my sweetheart",
+        "But it looks like my dear you\u2019ve forgotten",
+        "For you say now that we have to part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All the days seem so lonesome and dreary",
+        "And the nights are so lonely and blue",
+        "Since you left me alone here without you",
+        "Oh, please come back I\u2019m waiting for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

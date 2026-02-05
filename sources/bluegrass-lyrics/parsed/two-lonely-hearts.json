@@ -1,0 +1,39 @@
+{
+  "slug": "two-lonely-hearts",
+  "title": "Two Lonely Hearts",
+  "source_url": "https://www.bluegrasslyrics.com/song/two-lonely-hearts/",
+  "raw_lyrics": "I\u2019m walking the floor with tears in my eyes\nI can\u2019t undersand dear why you ever lied\nThe stars in the skies have tumbled below\nNow my heart is breaking it\u2019s beating so low\n\nThe moment you walked dear into my heart\nWhat a wonderful meeting for two lonely hearts\nYou gave me your love to have and to hold\nBut something has happened you took the wrong road\n\nYou said you would love and you would obey\nBut the Golden Rule\u2019s broken so go on your way\nI\u2019ve lost all the faith that I\u2019ve had in you\nSo go on away dear you could never be true",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m walking the floor with tears in my eyes",
+        "I can\u2019t undersand dear why you ever lied",
+        "The stars in the skies have tumbled below",
+        "Now my heart is breaking it\u2019s beating so low"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The moment you walked dear into my heart",
+        "What a wonderful meeting for two lonely hearts",
+        "You gave me your love to have and to hold",
+        "But something has happened you took the wrong road"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You said you would love and you would obey",
+        "But the Golden Rule\u2019s broken so go on your way",
+        "I\u2019ve lost all the faith that I\u2019ve had in you",
+        "So go on away dear you could never be true"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

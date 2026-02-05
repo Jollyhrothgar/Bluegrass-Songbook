@@ -1,0 +1,49 @@
+{
+  "slug": "a-year-ago-today",
+  "title": "A Year Ago Today",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-year-ago-today/",
+  "raw_lyrics": "It still grieves me when I wander\nTo the grave not far away\nWhere we laid my little darling\nJust a year ago today\n\nIt broke my heart so when she left\nBut she did not go alone\nThe greatest part of me went with her\nThe day the savior called her home\n\nAs I looked back across my life time\nAs I journey on and on\nI bless the days that I had with her\nAnd I leave the rest to God\n\nIn a grave so dark and lonely\nNeath the cold and silent clay\nThere we laid my little darling\nJust a year ago today",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It still grieves me when I wander",
+        "To the grave not far away",
+        "Where we laid my little darling",
+        "Just a year ago today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It broke my heart so when she left",
+        "But she did not go alone",
+        "The greatest part of me went with her",
+        "The day the savior called her home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I looked back across my life time",
+        "As I journey on and on",
+        "I bless the days that I had with her",
+        "And I leave the rest to God"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In a grave so dark and lonely",
+        "Neath the cold and silent clay",
+        "There we laid my little darling",
+        "Just a year ago today"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

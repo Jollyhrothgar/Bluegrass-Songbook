@@ -1,0 +1,55 @@
+{
+  "slug": "theres-someone-awaiting-for-me",
+  "title": "There\u2019s Someone Awaiting For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/theres-someone-awaiting-for-me/",
+  "raw_lyrics": "All the people today they are going far away\nTo the mountains the lakes or the sea\nThere\u2019s a little plot out west\nThat I always love the best\nAnd there\u2019s someone awaiting there for me\n\nShe\u2019ll be happy she\u2019ll be free\nWhen she wanders alone with me\nShe\u2019ll be knitting white lace\nWhen I meet her at the gate\nAnd there\u2019s someone awaiting for me\n\nThere are birds in every tree\nAnd they sing among the leaves\nBut there\u2019s none so happy as me\nI am going out west\nAnd there I\u2019ll do my best\nTo build a little home for you and me\n\nO the birds that fly above\nSinging their songs of love\nO\u2019er the meadows the valleys so deep\nTheir voices so sweet\nThat they sing me to sleep\nFor I know my darling will not weep",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All the people today they are going far away",
+        "To the mountains the lakes or the sea",
+        "There\u2019s a little plot out west",
+        "That I always love the best",
+        "And there\u2019s someone awaiting there for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She\u2019ll be happy she\u2019ll be free",
+        "When she wanders alone with me",
+        "She\u2019ll be knitting white lace",
+        "When I meet her at the gate",
+        "And there\u2019s someone awaiting for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There are birds in every tree",
+        "And they sing among the leaves",
+        "But there\u2019s none so happy as me",
+        "I am going out west",
+        "And there I\u2019ll do my best",
+        "To build a little home for you and me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "O the birds that fly above",
+        "Singing their songs of love",
+        "O\u2019er the meadows the valleys so deep",
+        "Their voices so sweet",
+        "That they sing me to sleep",
+        "For I know my darling will not weep"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

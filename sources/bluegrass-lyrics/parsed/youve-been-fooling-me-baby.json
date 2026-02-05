@@ -1,0 +1,49 @@
+{
+  "slug": "youve-been-fooling-me-baby",
+  "title": "You\u2019ve Been Fooling Me Baby",
+  "source_url": "https://www.bluegrasslyrics.com/song/youve-been-fooling-me-baby/",
+  "raw_lyrics": "I don\u2019t want you mean momma\nThere aint no use you hanging around\nFor I\u2019ve  found me another momma\nAnd now I am Chicago bound\n\nYou\u2019ve been fooling me baby\nYou\u2019ve been telling me your lies\nWhen I thought you were an angel\nJust sent down from the skies\n\nSing those parting blues to me sweet Nell\nWhen you leave you leave me sad\nCause my daddy\u2019s gone and left me\nI just wouldn\u2019t treat him right\n\nI wouldn\u2019t give him much lovin\nI wouldn\u2019t stay home at night\nNow I hear the train a comin\nHe has gone out of site",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t want you mean momma",
+        "There aint no use you hanging around",
+        "For I\u2019ve  found me another momma",
+        "And now I am Chicago bound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019ve been fooling me baby",
+        "You\u2019ve been telling me your lies",
+        "When I thought you were an angel",
+        "Just sent down from the skies"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sing those parting blues to me sweet Nell",
+        "When you leave you leave me sad",
+        "Cause my daddy\u2019s gone and left me",
+        "I just wouldn\u2019t treat him right"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wouldn\u2019t give him much lovin",
+        "I wouldn\u2019t stay home at night",
+        "Now I hear the train a comin",
+        "He has gone out of site"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

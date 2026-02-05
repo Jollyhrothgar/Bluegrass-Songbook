@@ -1,0 +1,49 @@
+{
+  "slug": "a-lonesome-night",
+  "title": "A Lonesome Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-lonesome-night/",
+  "raw_lyrics": "In the pale moonlight we quarreled one night\nOur hearts were young and free\nI left her there alone at night\nI thought she was two-timin\u2019 me\n\nOn a lonesome night and far from home\nI heard a mourn-ful sound\nThe girl I love is call-in\u2019 me\nShe thinks I turned her down\n\nShe begged me not to leave her there\nShe said she had been true\nBut a jealous heart would not believe\nOh how I long for you\n\nSo now I\u2019m on my way back home\nSweetheart do you still care\nI promise never to leave your side\nAnd your love I always share",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the pale moonlight we quarreled one night",
+        "Our hearts were young and free",
+        "I left her there alone at night",
+        "I thought she was two-timin\u2019 me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "On a lonesome night and far from home",
+        "I heard a mourn-ful sound",
+        "The girl I love is call-in\u2019 me",
+        "She thinks I turned her down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She begged me not to leave her there",
+        "She said she had been true",
+        "But a jealous heart would not believe",
+        "Oh how I long for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So now I\u2019m on my way back home",
+        "Sweetheart do you still care",
+        "I promise never to leave your side",
+        "And your love I always share"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

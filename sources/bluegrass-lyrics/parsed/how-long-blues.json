@@ -1,0 +1,45 @@
+{
+  "slug": "how-long-blues",
+  "title": "How Long Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/how-long-blues/",
+  "raw_lyrics": "Long ol\u2019 train cruel engineer\nThey took my baby and left me here\nAnd how long will I keep these lonesome blues\n\nHow long how long\nHas that evening train been gone\nHow long how long baby how long\n\nMean ol\u2019 blues come down on me\nThey\u2019re all around me they\u2019re all I see\nBut how long will I keep these lonesome blues\n\nCruel engineer can\u2019t you see\nI need my baby back with me\nThen I\u2019d be rid of these mean ol\u2019 lonesome blues",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Long ol\u2019 train cruel engineer",
+        "They took my baby and left me here",
+        "And how long will I keep these lonesome blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How long how long",
+        "Has that evening train been gone",
+        "How long how long baby how long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mean ol\u2019 blues come down on me",
+        "They\u2019re all around me they\u2019re all I see",
+        "But how long will I keep these lonesome blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Cruel engineer can\u2019t you see",
+        "I need my baby back with me",
+        "Then I\u2019d be rid of these mean ol\u2019 lonesome blues"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

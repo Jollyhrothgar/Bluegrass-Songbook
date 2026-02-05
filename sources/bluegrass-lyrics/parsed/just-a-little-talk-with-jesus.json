@@ -1,0 +1,60 @@
+{
+  "slug": "just-a-little-talk-with-jesus",
+  "title": "Just A Little Talk With Jesus",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-a-little-talk-with-jesus/",
+  "raw_lyrics": "I once was lost in sin but Jesus took me in\nAnd then a little light from heaven filled my soul\nIt bathed my heart in love and wrote my name above\nAnd just a little talk with Jesus made me whole\n\nNow let us have a little talk with Jesus\nLet us tell Him all about our troubles\nHe will hear our faintest cry\nHe will answer by and by\nNow when you feel a little prayerwheel turning\nAnd you know a little fire is burning\nYou will find a little talk with Jesus makes it right\n\nSometimes my path seems drear without a ray of cheer\nAnd then a cloud of doubt may hide the light of day\nThe mists of sin may rise and hide the starry skies\nBut just a little talk with Jesus clears the way\n\nI may have doubts and fears my eyes be filled with tears\nBut Jesus is a friend who watches day and night\nI go to Him in prayer He knows my every care\nAnd just a little talk with Jesus makes it right\n\nYou will find a little talk with Jesus makes it right\nMakes everything right",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I once was lost in sin but Jesus took me in",
+        "And then a little light from heaven filled my soul",
+        "It bathed my heart in love and wrote my name above",
+        "And just a little talk with Jesus made me whole"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now let us have a little talk with Jesus",
+        "Let us tell Him all about our troubles",
+        "He will hear our faintest cry",
+        "He will answer by and by",
+        "Now when you feel a little prayerwheel turning",
+        "And you know a little fire is burning",
+        "You will find a little talk with Jesus makes it right"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes my path seems drear without a ray of cheer",
+        "And then a cloud of doubt may hide the light of day",
+        "The mists of sin may rise and hide the starry skies",
+        "But just a little talk with Jesus clears the way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I may have doubts and fears my eyes be filled with tears",
+        "But Jesus is a friend who watches day and night",
+        "I go to Him in prayer He knows my every care",
+        "And just a little talk with Jesus makes it right"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You will find a little talk with Jesus makes it right",
+        "Makes everything right"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "pins-and-needles",
+  "title": "Pins And Needles",
+  "source_url": "https://www.bluegrasslyrics.com/song/pins-and-needles/",
+  "raw_lyrics": "I know not where on earth to find you\nI know not how or when to start\nI only know I\u2019m here without you\nAnd there\u2019s pins and needles in my heart\n\nThe days and nights are growing longer\nSince first you said that we must part\nBut now I know I can\u2019t forget you\nWith pins and needles in my heart\n\nI always see your face before me\nYour smile is heaven\u2019s work of art\nBut now you\u2019re smiling at another\nAnd there\u2019s pins and needles in my heart\n\nSomeday somewhere I know I\u2019ll find you\nAnd love will make the teardrops start\nAnd then you\u2019ll know how long I\u2019ve waited\nWith these pins and needles in my heart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I know not where on earth to find you",
+        "I know not how or when to start",
+        "I only know I\u2019m here without you",
+        "And there\u2019s pins and needles in my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The days and nights are growing longer",
+        "Since first you said that we must part",
+        "But now I know I can\u2019t forget you",
+        "With pins and needles in my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I always see your face before me",
+        "Your smile is heaven\u2019s work of art",
+        "But now you\u2019re smiling at another",
+        "And there\u2019s pins and needles in my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday somewhere I know I\u2019ll find you",
+        "And love will make the teardrops start",
+        "And then you\u2019ll know how long I\u2019ve waited",
+        "With these pins and needles in my heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

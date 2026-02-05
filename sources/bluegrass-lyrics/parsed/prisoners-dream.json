@@ -1,0 +1,49 @@
+{
+  "slug": "prisoners-dream",
+  "title": "Prisoner\u2019s Dream",
+  "source_url": "https://www.bluegrasslyrics.com/song/prisoners-dream/",
+  "raw_lyrics": "Last night as I lay sleeping I dreamed a dream so fair\nI dreamed about my darling the rose was in her hair\nI dreamed I left this prison started in life a new\nShe told me that she loved me told me her love was dear\n\nIt was only a dream just a prisoner\u2019s dream\nAs I lay on my cold prison bed\nMy dreams of you can never come true dear girl\nI wish that I were dead\n\nI dreamed she called me darling kissed me and held me tight\nI dreamed that we were married dreamed of a starry night\nI dreamed about our children playing around my knee\nThey loved me called me daddy they thought the world of me\n\nI dreamed a dream so lovely heaven on earth it seemed\nMy wife and little children came to me in that dream\nThey threw their arms around me I was their pride and joy\nMy little wife she loved me I was her darling boy",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Last night as I lay sleeping I dreamed a dream so fair",
+        "I dreamed about my darling the rose was in her hair",
+        "I dreamed I left this prison started in life a new",
+        "She told me that she loved me told me her love was dear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was only a dream just a prisoner\u2019s dream",
+        "As I lay on my cold prison bed",
+        "My dreams of you can never come true dear girl",
+        "I wish that I were dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I dreamed she called me darling kissed me and held me tight",
+        "I dreamed that we were married dreamed of a starry night",
+        "I dreamed about our children playing around my knee",
+        "They loved me called me daddy they thought the world of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I dreamed a dream so lovely heaven on earth it seemed",
+        "My wife and little children came to me in that dream",
+        "They threw their arms around me I was their pride and joy",
+        "My little wife she loved me I was her darling boy"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "when-i-stop-dreaming",
+  "title": "When I Stop Dreaming",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-i-stop-dreaming/",
+  "raw_lyrics": "The worst that I\u2019ve ever been hurt in my life\nThe first time I ever wanted to die\nWas the night when you told me you loved someone new\nAnd  asked me if I could forget\n\nWhen I stop dreaming\nThat\u2019s when I\u2019ll stop loving you\n\nI\u2019d be like a flower unwanted in spring\nAlone and neglected transplanted in vain\nTo a garden of sadness where it\u2019s pedals will fall\nIn the shadow of undying pain\n\nYou can teach the flowers to bloom in the snow\nYou may take a pebble and teach it to grow\nYou can teach all the raindrops to return to the clouds\nBut you can\u2019t teach my heart to forget",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The worst that I\u2019ve ever been hurt in my life",
+        "The first time I ever wanted to die",
+        "Was the night when you told me you loved someone new",
+        "And  asked me if I could forget"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When I stop dreaming",
+        "That\u2019s when I\u2019ll stop loving you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d be like a flower unwanted in spring",
+        "Alone and neglected transplanted in vain",
+        "To a garden of sadness where it\u2019s pedals will fall",
+        "In the shadow of undying pain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can teach the flowers to bloom in the snow",
+        "You may take a pebble and teach it to grow",
+        "You can teach all the raindrops to return to the clouds",
+        "But you can\u2019t teach my heart to forget"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

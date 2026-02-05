@@ -1,0 +1,49 @@
+{
+  "slug": "long-black-veil",
+  "title": "Long Black Veil",
+  "source_url": "https://www.bluegrasslyrics.com/song/long-black-veil/",
+  "raw_lyrics": "Ten years ago, on a cold, dark night\nThere was someone killed neath the town hall light\nThere were few at the scene, but they all agreed\nThat the man who ran looked a lot like me\n\nShe walks these hills in a long black veil\nShe visits my grave while the night winds wail\nNobody knows, nobody sees\nNobody knows but me\n\nThe judge said Son, what is your alibi\nIf you were somewhere else, then you don\u2019t have to die\nI spoke not a word thought it meant my life\nFor I\u2019d been in the arms of my best friend\u2019s wife\n\nThe scaffold was high and eternity near\nShe stood in the crowd and shed not a tear\nBut sometimes at night when the cold winds moan\nIn a long black veil she cries over my bones",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Ten years ago, on a cold, dark night",
+        "There was someone killed neath the town hall light",
+        "There were few at the scene, but they all agreed",
+        "That the man who ran looked a lot like me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She walks these hills in a long black veil",
+        "She visits my grave while the night winds wail",
+        "Nobody knows, nobody sees",
+        "Nobody knows but me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The judge said Son, what is your alibi",
+        "If you were somewhere else, then you don\u2019t have to die",
+        "I spoke not a word thought it meant my life",
+        "For I\u2019d been in the arms of my best friend\u2019s wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The scaffold was high and eternity near",
+        "She stood in the crowd and shed not a tear",
+        "But sometimes at night when the cold winds moan",
+        "In a long black veil she cries over my bones"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

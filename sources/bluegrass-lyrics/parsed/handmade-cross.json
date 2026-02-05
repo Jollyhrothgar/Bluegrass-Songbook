@@ -1,0 +1,69 @@
+{
+  "slug": "handmade-cross",
+  "title": "Handmade Cross",
+  "source_url": "https://www.bluegrasslyrics.com/song/handmade-cross/",
+  "raw_lyrics": "I was walkin through the darkness on a cold and lonely night\nThe shadows gripped at everything and held them from my sight\nThe trees gave way to moonlight on the hills beyond my gaze\nAnd my eyes caught sight of something there in the foggy midnight haze\n\nThe air was damp the night was cold and quiet deathly still\nI climbed up through the grey moonlight and stood upon that hill\nWhat I\u2019d seen from down below before me now did lay\nIt was a handmade cross with stones around to mark a six foot grave\n\nThe cross was rough and made of wood a worn and weathered pine\nBound together tightly with bits of wire and twine\nThe weeds grew up between the stones that marked that narrow grave\nAnd I wondered who so long ago had in this ground been laid\n\nWe know now what became of him, but not from where he came\nWere his last days filled with loneliness with sorrow or with pain\nAnd who was left behind to grieve and make this humble tomb\nAnd who has come before me to his place of final doom\n\nHow did he make his way in life will in death he do the same\nWas his soul possessedof goodness of sorrow or of shame\nAnd does this cross above him mean he was a christian man\nOr did he believe this earthly death for him would mean the end\n\nI stood there in the silence and felt a deathly chill\nWonderin\u2019 if my own short life could end upon some hill\nWith noone left behind to make a place for me to lay\nWith a handmade cross and stones around to mark a six foot grave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was walkin through the darkness on a cold and lonely night",
+        "The shadows gripped at everything and held them from my sight",
+        "The trees gave way to moonlight on the hills beyond my gaze",
+        "And my eyes caught sight of something there in the foggy midnight haze"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The air was damp the night was cold and quiet deathly still",
+        "I climbed up through the grey moonlight and stood upon that hill",
+        "What I\u2019d seen from down below before me now did lay",
+        "It was a handmade cross with stones around to mark a six foot grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The cross was rough and made of wood a worn and weathered pine",
+        "Bound together tightly with bits of wire and twine",
+        "The weeds grew up between the stones that marked that narrow grave",
+        "And I wondered who so long ago had in this ground been laid"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We know now what became of him, but not from where he came",
+        "Were his last days filled with loneliness with sorrow or with pain",
+        "And who was left behind to grieve and make this humble tomb",
+        "And who has come before me to his place of final doom"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How did he make his way in life will in death he do the same",
+        "Was his soul possessedof goodness of sorrow or of shame",
+        "And does this cross above him mean he was a christian man",
+        "Or did he believe this earthly death for him would mean the end"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I stood there in the silence and felt a deathly chill",
+        "Wonderin\u2019 if my own short life could end upon some hill",
+        "With noone left behind to make a place for me to lay",
+        "With a handmade cross and stones around to mark a six foot grave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

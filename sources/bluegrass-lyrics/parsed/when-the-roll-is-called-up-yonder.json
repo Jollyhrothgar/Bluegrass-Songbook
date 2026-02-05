@@ -1,0 +1,50 @@
+{
+  "slug": "when-the-roll-is-called-up-yonder",
+  "title": "When The Roll Is Called Up Yonder",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-roll-is-called-up-yonder/",
+  "raw_lyrics": "When the trumpet of the Lord shall sound and time shall be no more\nAnd the morning breaks eternal bright and fair\nWhen the saved on earth shall gather over on the other shore\nAnd the roll is called up yonder I\u2019ll be there\n\nWhen the roll (when the roll) is called up yonder\nWhen the roll (when the roll) is called up yonder\nWhen the roll (when the roll) is called up yonder\nWhen the roll is called up yonder, I\u2019ll be there\n\nOn that bright and cloudless morning when the dead in Christ shall\nrise\nAnd the glory of His resurrection share\nWhen His chosen ones shall gather to their home beyond the skies\nAnd the roll is called up yonder, I\u2019ll be there\n\nLet us labor for the Master from the dawn til setting sun\nLet us talk of all His wondrous love and care\nThen when all of life is over and our work on earth is done\nAnd the roll is called up yonder, I\u2019ll be there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When the trumpet of the Lord shall sound and time shall be no more",
+        "And the morning breaks eternal bright and fair",
+        "When the saved on earth shall gather over on the other shore",
+        "And the roll is called up yonder I\u2019ll be there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the roll (when the roll) is called up yonder",
+        "When the roll (when the roll) is called up yonder",
+        "When the roll (when the roll) is called up yonder",
+        "When the roll is called up yonder, I\u2019ll be there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On that bright and cloudless morning when the dead in Christ shall",
+        "rise",
+        "And the glory of His resurrection share",
+        "When His chosen ones shall gather to their home beyond the skies",
+        "And the roll is called up yonder, I\u2019ll be there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let us labor for the Master from the dawn til setting sun",
+        "Let us talk of all His wondrous love and care",
+        "Then when all of life is over and our work on earth is done",
+        "And the roll is called up yonder, I\u2019ll be there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "head-over-heels",
+  "title": "Head Over Heels",
+  "source_url": "https://www.bluegrasslyrics.com/song/head-over-heels/",
+  "raw_lyrics": "I think I\u2019ll go across the ocean\nIf I don\u2019t change my notion\nI\u2019ve just got to forget you if I can\n\nI\u2019m feeling so blue\nI don\u2019t know what to do\nBecause I\u2019m\nhead over heels in love with you\n\nEvery day is sad and lonely\nFor I\u2019m thinking of you only\nI just can\u2019t sleep when I lay down\n\nOh I\u2019d like to be forgiven\nBut this life ain\u2019t worth living\nIf have to sit and worry over you\n\nOh the nights are long and dreary\nAll I do is sit and worry\nI just can\u2019t bear the thought of losing you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I think I\u2019ll go across the ocean",
+        "If I don\u2019t change my notion",
+        "I\u2019ve just got to forget you if I can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m feeling so blue",
+        "I don\u2019t know what to do",
+        "Because I\u2019m",
+        "head over heels in love with you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every day is sad and lonely",
+        "For I\u2019m thinking of you only",
+        "I just can\u2019t sleep when I lay down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I\u2019d like to be forgiven",
+        "But this life ain\u2019t worth living",
+        "If have to sit and worry over you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the nights are long and dreary",
+        "All I do is sit and worry",
+        "I just can\u2019t bear the thought of losing you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

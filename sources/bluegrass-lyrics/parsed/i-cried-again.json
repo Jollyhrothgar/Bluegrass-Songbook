@@ -1,0 +1,60 @@
+{
+  "slug": "i-cried-again",
+  "title": "I Cried Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-cried-again/",
+  "raw_lyrics": "Teardrops fell the night you said\nI love you dear and you were wed\nI watched you while you held his hand\nThen bowed my head and cried again\n\nI cried again when I reached home\nThere set your picture all alone\nI thought of things that might have been\nAnd bowed my head and cried again\n\nI took your letters from the shelf\nThen read them aloud just to myself\nAnd just before I reached the end\nI turned away and cried again\n\nI thought of love I\u2019d been denied\nAnd how to hold it I had tried\nAnd of dreams that we had shared\nAnd days gone by when you cared\n\nNow here\u2019s the reason why I say\nThat I must throw your things away\nFor they would always bring my pain\nAnd then I\u2019d have to cry again\nAnd then I\u2019d only cry again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Teardrops fell the night you said",
+        "I love you dear and you were wed",
+        "I watched you while you held his hand",
+        "Then bowed my head and cried again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I cried again when I reached home",
+        "There set your picture all alone",
+        "I thought of things that might have been",
+        "And bowed my head and cried again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I took your letters from the shelf",
+        "Then read them aloud just to myself",
+        "And just before I reached the end",
+        "I turned away and cried again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I thought of love I\u2019d been denied",
+        "And how to hold it I had tried",
+        "And of dreams that we had shared",
+        "And days gone by when you cared"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now here\u2019s the reason why I say",
+        "That I must throw your things away",
+        "For they would always bring my pain",
+        "And then I\u2019d have to cry again",
+        "And then I\u2019d only cry again"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

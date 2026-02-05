@@ -1,0 +1,39 @@
+{
+  "slug": "heart-and-soul",
+  "title": "Heart and Soul",
+  "source_url": "https://www.bluegrasslyrics.com/song/heart-and-soul/",
+  "raw_lyrics": "Heart and soul mind and body\nWe were as close as close can be\nHeart and soul mind and body\nNow I feel pain in every part of me\n\nWe found love and whirlwind romance\nThe feeling was right and the passion strong\nLove was a thrill and satisfying\nHow could we know it would somehow end\n\nYour feelings changed you found another\nSome things about me you can\u2019t accept\nI tried to change but I can\u2019t forget her\nWe grew apart and then love soon left",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Heart and soul mind and body",
+        "We were as close as close can be",
+        "Heart and soul mind and body",
+        "Now I feel pain in every part of me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We found love and whirlwind romance",
+        "The feeling was right and the passion strong",
+        "Love was a thrill and satisfying",
+        "How could we know it would somehow end"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your feelings changed you found another",
+        "Some things about me you can\u2019t accept",
+        "I tried to change but I can\u2019t forget her",
+        "We grew apart and then love soon left"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "old-swinging-bridge",
+  "title": "Old Swinging Bridge",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-swinging-bridge/",
+  "raw_lyrics": "My old scrapbook is hidden away\nI kept in memory of you\nThis old scrapbook is just a bouquet\nOf things that we used to do\n\nMemories haunt me each night in my dreams\nIt seems I can still see you there\nYour loving arms held out to me\nAnd smiling so sweet and so fair\n\nDon\u2019t you remember the hours we spent\nSwinging on the old swinging bridge\nFrom June to December together we went\nSwinging on the old swinging bridge\n\nWe built a dream across the old mill stream\nAnd though the years have gone by\nI\u2019ll still keep remembering here in my heart\nAnd wonder if you wonder why",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My old scrapbook is hidden away",
+        "I kept in memory of you",
+        "This old scrapbook is just a bouquet",
+        "Of things that we used to do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Memories haunt me each night in my dreams",
+        "It seems I can still see you there",
+        "Your loving arms held out to me",
+        "And smiling so sweet and so fair"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t you remember the hours we spent",
+        "Swinging on the old swinging bridge",
+        "From June to December together we went",
+        "Swinging on the old swinging bridge"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We built a dream across the old mill stream",
+        "And though the years have gone by",
+        "I\u2019ll still keep remembering here in my heart",
+        "And wonder if you wonder why"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

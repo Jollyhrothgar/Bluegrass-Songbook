@@ -1,0 +1,53 @@
+{
+  "slug": "carters-blues",
+  "title": "Carter\u2019s Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/carters-blues/",
+  "raw_lyrics": "As I walked out one morning fair\nTo view the fields and taste the air\nFor to view the fields and nettles around\nI thought I heard some lonesome sound\nO thought I heard my true love say\nO do turn and come this way\n\nYou love some other and you don\u2019t love me\nYou care not for my company\nYou love some other and I know why\nBecause he has more gold than I\nBut gold will melt and silver will fly\nMy love for you will never die\n\nThere is a flower I\u2019ve heard them say\nThat can be seen from day to day\nAnd if that flower I only could find\nTo cure this aching heart of mine\n\nSo fare you well my charming little love\nO meet me in that land above\nAnd when we meet there in that land\nWe\u2019ll take no more this parting hand",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As I walked out one morning fair",
+        "To view the fields and taste the air",
+        "For to view the fields and nettles around",
+        "I thought I heard some lonesome sound",
+        "O thought I heard my true love say",
+        "O do turn and come this way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You love some other and you don\u2019t love me",
+        "You care not for my company",
+        "You love some other and I know why",
+        "Because he has more gold than I",
+        "But gold will melt and silver will fly",
+        "My love for you will never die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is a flower I\u2019ve heard them say",
+        "That can be seen from day to day",
+        "And if that flower I only could find",
+        "To cure this aching heart of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So fare you well my charming little love",
+        "O meet me in that land above",
+        "And when we meet there in that land",
+        "We\u2019ll take no more this parting hand"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "im-the-boss-of-this-here-house",
+  "title": "I\u2019m The Boss Of This Here House",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-the-boss-of-this-here-house/",
+  "raw_lyrics": "When I say front I want you hop\nWhen I start talking then I want you to stop\nCause Baby (I\u2019m a telling you baby)\nI\u2019m the boss of this here house\n\nWhen I want a kiss give me all you got\nDon\u2019t give \u2018em to me cold, give \u2018em to me hot\nCause Baby (I\u2019m a telling you baby)\nI\u2019m the boss of this here house\n\nNow hun you learn you can only speak\nwhen you\u2019ve been spoken to\nI\u2019m telling you now, I\u2019ll let you know\nwhen I want to hear from you\n\nWhen I say rooster, you can\u2019t crow\nWhen I say get, you better go\nCause Baby (I\u2019m a telling you baby)\nI\u2019m the boss of this here house",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I say front I want you hop",
+        "When I start talking then I want you to stop",
+        "Cause Baby (I\u2019m a telling you baby)",
+        "I\u2019m the boss of this here house"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I want a kiss give me all you got",
+        "Don\u2019t give \u2018em to me cold, give \u2018em to me hot",
+        "Cause Baby (I\u2019m a telling you baby)",
+        "I\u2019m the boss of this here house"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now hun you learn you can only speak",
+        "when you\u2019ve been spoken to",
+        "I\u2019m telling you now, I\u2019ll let you know",
+        "when I want to hear from you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I say rooster, you can\u2019t crow",
+        "When I say get, you better go",
+        "Cause Baby (I\u2019m a telling you baby)",
+        "I\u2019m the boss of this here house"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

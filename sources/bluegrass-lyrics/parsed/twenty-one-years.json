@@ -1,0 +1,59 @@
+{
+  "slug": "twenty-one-years",
+  "title": "Twenty One Years",
+  "source_url": "https://www.bluegrasslyrics.com/song/twenty-one-years/",
+  "raw_lyrics": "The judge said stand up boy and dry up your tears\nYou\u2019re sentenced to Nashville for twenty one years\nThey took him to Nashville to pay for his crime\nBut twenty one years boys is a mighty long time\n\nA year went by slowly he wished he was dead\nIn that dirty prison with a floor for a bed\nThe girl whom he loved most and dreamed of each night\nHe wrote her this letter babe why don\u2019t you write\n\nI\u2019ve counted the days love I\u2019ve counted the nights\nI\u2019ve counted the minutes I\u2019ve counted the lights\nI\u2019ve counted the footsteps I\u2019ve counted the stars\nI\u2019ve counted a million of the cold prison bars\n\nI\u2019ve counted on you love to give me a break\nI guess you forgot babe I\u2019m here for your sake\nYes you know who\u2019s guilty you know it too well\nBut I\u2019ll rot in this prison before I will tell\n\nCome all you young fellows, with hearts brave and true\nDon\u2019t believe any woman you\u2019re beat if you do\nDon\u2019t trust any woman no matter what kind\nFor twenty one years boys is a mighty long time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The judge said stand up boy and dry up your tears",
+        "You\u2019re sentenced to Nashville for twenty one years",
+        "They took him to Nashville to pay for his crime",
+        "But twenty one years boys is a mighty long time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A year went by slowly he wished he was dead",
+        "In that dirty prison with a floor for a bed",
+        "The girl whom he loved most and dreamed of each night",
+        "He wrote her this letter babe why don\u2019t you write"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve counted the days love I\u2019ve counted the nights",
+        "I\u2019ve counted the minutes I\u2019ve counted the lights",
+        "I\u2019ve counted the footsteps I\u2019ve counted the stars",
+        "I\u2019ve counted a million of the cold prison bars"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve counted on you love to give me a break",
+        "I guess you forgot babe I\u2019m here for your sake",
+        "Yes you know who\u2019s guilty you know it too well",
+        "But I\u2019ll rot in this prison before I will tell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come all you young fellows, with hearts brave and true",
+        "Don\u2019t believe any woman you\u2019re beat if you do",
+        "Don\u2019t trust any woman no matter what kind",
+        "For twenty one years boys is a mighty long time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

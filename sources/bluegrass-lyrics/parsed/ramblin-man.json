@@ -1,0 +1,81 @@
+{
+  "slug": "ramblin-man",
+  "title": "Ramblin Man",
+  "source_url": "https://www.bluegrasslyrics.com/song/ramblin-man/",
+  "raw_lyrics": "I can settle down and be doin\u2019 just fine\nTil I\u00a0 hear an old freight rollin\u2019 down the line\n\nThen I hurry straight home and pack\nAnd if I didn\u2019t go I believe I\u2019d blow my stack\n\nI love you baby but you gotta understand\nWhen the Lord made me He made a ramblin\u2019 man\n\nSome folks might say that I\u2019m no good\nThat I wouldn\u2019t settle down if I could\n\nBut when that open road starts to callin\u2019 me\nThere\u2019s somethin\u2019 o\u2019er the hill that I gotta see\n\nSometimes it\u2019s hard but you gotta understand\nWhen the Lord made me He made a ramblin\u2019 man\n\nI love to see the towns a-passin\u2019 by\nAnd to ride these rails \u2018neath God\u2019s blue sky\n\nLet me travel this land from the mountains to the sea\n\u2018Cause that\u2019s the life I believe He meant for me\n\nAnd when I\u2019m gone and at my grave you stand\nJust say God called home your ramblin\u2019 man",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can settle down and be doin\u2019 just fine",
+        "Til I\u00a0 hear an old freight rollin\u2019 down the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then I hurry straight home and pack",
+        "And if I didn\u2019t go I believe I\u2019d blow my stack"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I love you baby but you gotta understand",
+        "When the Lord made me He made a ramblin\u2019 man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some folks might say that I\u2019m no good",
+        "That I wouldn\u2019t settle down if I could"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But when that open road starts to callin\u2019 me",
+        "There\u2019s somethin\u2019 o\u2019er the hill that I gotta see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes it\u2019s hard but you gotta understand",
+        "When the Lord made me He made a ramblin\u2019 man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I love to see the towns a-passin\u2019 by",
+        "And to ride these rails \u2018neath God\u2019s blue sky"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let me travel this land from the mountains to the sea",
+        "\u2018Cause that\u2019s the life I believe He meant for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And when I\u2019m gone and at my grave you stand",
+        "Just say God called home your ramblin\u2019 man"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

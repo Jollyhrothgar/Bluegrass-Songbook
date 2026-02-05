@@ -1,0 +1,59 @@
+{
+  "slug": "hear-jerusalem-moan",
+  "title": "Hear Jerusalem Moan",
+  "source_url": "https://www.bluegrasslyrics.com/song/hear-jerusalem-moan/",
+  "raw_lyrics": "Well I got a home on the other shore\nDon\u2019t you hear Jerusalem moan\nI know I\u2019ll live there forever more\nDon\u2019t you hear Jerusalem moan\n\nDon\u2019t you hear Jerusalem moan, don\u2019t you hear Jerusalem moan\nThank God there\u2019s a Heaven and a ringin\u2019 in my soul\nand my soul set free\nDon\u2019t you hear Jerusalem moan\n\nWell now Sister Mary she wears a chain\nDon\u2019t you hear Jerusalem moan\nAnd on every link is a Jesus\u2019 name\nDon\u2019t you hear Jerusalem moan\n\nThe devil wears a hypocrite shoe\nDon\u2019t you hear Jerusalem moan\nyou don\u2019t watch out he\u2019s gonna step \u2019em on you\nDon\u2019t you hear Jerusalem moan\n\nNow the Methodist preacher is a mighty fine man\nDon\u2019t you hear Jerusalem moan\nShowin\u2019 us the way to the promised land\nDon\u2019t you hear Jerusalem moan",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I got a home on the other shore",
+        "Don\u2019t you hear Jerusalem moan",
+        "I know I\u2019ll live there forever more",
+        "Don\u2019t you hear Jerusalem moan"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t you hear Jerusalem moan, don\u2019t you hear Jerusalem moan",
+        "Thank God there\u2019s a Heaven and a ringin\u2019 in my soul",
+        "and my soul set free",
+        "Don\u2019t you hear Jerusalem moan"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well now Sister Mary she wears a chain",
+        "Don\u2019t you hear Jerusalem moan",
+        "And on every link is a Jesus\u2019 name",
+        "Don\u2019t you hear Jerusalem moan"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The devil wears a hypocrite shoe",
+        "Don\u2019t you hear Jerusalem moan",
+        "you don\u2019t watch out he\u2019s gonna step \u2019em on you",
+        "Don\u2019t you hear Jerusalem moan"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the Methodist preacher is a mighty fine man",
+        "Don\u2019t you hear Jerusalem moan",
+        "Showin\u2019 us the way to the promised land",
+        "Don\u2019t you hear Jerusalem moan"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

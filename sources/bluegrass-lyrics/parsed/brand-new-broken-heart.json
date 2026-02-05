@@ -1,0 +1,39 @@
+{
+  "slug": "brand-new-broken-heart",
+  "title": "Brand New Broken Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/brand-new-broken-heart/",
+  "raw_lyrics": "Life to me is just a heartache\nSince the day you said goodbye\nNow I\u2019ve nothing left to live for\nAll I do is sit and cry\n\nI can\u2019t outlive the memory of you\nSince the day we had to part\nAll I have just a memory\nAnd a brand new broken heart\n\nAll I have is just a memory\nA picture painted in my heart\nIt hurts to know you\u2019re gone forever\nAnd forever more we\u2019ll be apart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Life to me is just a heartache",
+        "Since the day you said goodbye",
+        "Now I\u2019ve nothing left to live for",
+        "All I do is sit and cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can\u2019t outlive the memory of you",
+        "Since the day we had to part",
+        "All I have just a memory",
+        "And a brand new broken heart"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All I have is just a memory",
+        "A picture painted in my heart",
+        "It hurts to know you\u2019re gone forever",
+        "And forever more we\u2019ll be apart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

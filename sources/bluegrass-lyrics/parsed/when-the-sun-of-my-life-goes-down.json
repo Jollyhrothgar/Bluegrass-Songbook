@@ -1,0 +1,39 @@
+{
+  "slug": "when-the-sun-of-my-life-goes-down",
+  "title": "When The Sun Of My Life Goes Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-sun-of-my-life-goes-down/",
+  "raw_lyrics": "When my labor here is over at last and I lay these burdens down\nI\u2019ll sail away home to Heaven above for my Savior I have found\nI\u2019ll lay these burdens down at His feet and exchange them for a crown\nI\u2019ll leave this world of trouble and sorrow when the sun of my life goes down\n\nOh Lord I know I\u2019m living on higher ground\nI know because in my heart\u2019s true love I\u2019ve found\nAnd when I hear Gabriel\u2019s trumpet loudly sound\nI\u2019ll leave this world of trouble and sorrow when the sun of my life goes\n\nTo this changing world I bid farewell when I hear that trumpet sound\nI\u2019ll sail away to heaven above for my Savior I have found\nI\u2019ve made my plans I\u2019m ready to go I\u2019ll wear a robe and crown\nAnd I\u2019ll meet my friends and loved ones up yonder when the sun of my life goes down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When my labor here is over at last and I lay these burdens down",
+        "I\u2019ll sail away home to Heaven above for my Savior I have found",
+        "I\u2019ll lay these burdens down at His feet and exchange them for a crown",
+        "I\u2019ll leave this world of trouble and sorrow when the sun of my life goes down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh Lord I know I\u2019m living on higher ground",
+        "I know because in my heart\u2019s true love I\u2019ve found",
+        "And when I hear Gabriel\u2019s trumpet loudly sound",
+        "I\u2019ll leave this world of trouble and sorrow when the sun of my life goes"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "To this changing world I bid farewell when I hear that trumpet sound",
+        "I\u2019ll sail away to heaven above for my Savior I have found",
+        "I\u2019ve made my plans I\u2019m ready to go I\u2019ll wear a robe and crown",
+        "And I\u2019ll meet my friends and loved ones up yonder when the sun of my life goes down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

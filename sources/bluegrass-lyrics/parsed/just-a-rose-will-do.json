@@ -1,0 +1,49 @@
+{
+  "slug": "just-a-rose-will-do",
+  "title": "Just a Rose Will Do",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-a-rose-will-do/",
+  "raw_lyrics": "When time shall come for my leaving\nWhen I bid you adieu\nDon\u2019t spend your money for flowers\nJust a rose will do\n\nI\u2019ll go to a beautiful garden\nWhen my life\u2019s work is through\nDon\u2019t spend your money for flowers\nJust a rose will do\n\nI want a good old-time preacher\nTo preach the gospel truth\nI want no tales of my history\nThen just a rose will do\n\nI\u2019ll need no organization\nTo make a big to-do\nJust have some good old-time singing\nThen just a rose will do",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When time shall come for my leaving",
+        "When I bid you adieu",
+        "Don\u2019t spend your money for flowers",
+        "Just a rose will do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll go to a beautiful garden",
+        "When my life\u2019s work is through",
+        "Don\u2019t spend your money for flowers",
+        "Just a rose will do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I want a good old-time preacher",
+        "To preach the gospel truth",
+        "I want no tales of my history",
+        "Then just a rose will do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll need no organization",
+        "To make a big to-do",
+        "Just have some good old-time singing",
+        "Then just a rose will do"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

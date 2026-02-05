@@ -1,0 +1,39 @@
+{
+  "slug": "memories-cover-everything-i-own",
+  "title": "Memories Cover Everything I Own",
+  "source_url": "https://www.bluegrasslyrics.com/song/memories-cover-everything-i-own/",
+  "raw_lyrics": "This morning found me down and troubled hurting deep inside\nAnd if I thought it might do some good I guess I could have cried\nYour memory crept into my heart like a winter morning chill\nIt chilled my heart my blood ran cold I guess I love you still\n\nI try my best to think of ways to keep your memory still\nYou left a place in spite of me that time can\u2019t seem to kill\nThe pieces of my broken heart just never seem to fit\nThere\u2019s one still missing when I rearrange I guess I love you yet\n\nThe  snow lays in the trees and turns at night from white to blue\nI\u2019m looking to replace a life of dreams I lost with you\nYes I\u2019ll be trying to fill my time so that I\u2019m not alone\nBut old memories of what used to be cover everything I own",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "This morning found me down and troubled hurting deep inside",
+        "And if I thought it might do some good I guess I could have cried",
+        "Your memory crept into my heart like a winter morning chill",
+        "It chilled my heart my blood ran cold I guess I love you still"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I try my best to think of ways to keep your memory still",
+        "You left a place in spite of me that time can\u2019t seem to kill",
+        "The pieces of my broken heart just never seem to fit",
+        "There\u2019s one still missing when I rearrange I guess I love you yet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The  snow lays in the trees and turns at night from white to blue",
+        "I\u2019m looking to replace a life of dreams I lost with you",
+        "Yes I\u2019ll be trying to fill my time so that I\u2019m not alone",
+        "But old memories of what used to be cover everything I own"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

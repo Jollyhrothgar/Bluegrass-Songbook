@@ -1,0 +1,89 @@
+{
+  "slug": "bile-them-cabbage-down",
+  "title": "Bile Them Cabbage Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/bile-them-cabbage-down/",
+  "raw_lyrics": "Went up on the mountain\nJust to give my horn a blow\nThought I heard my true love say\nYonder comes my beau\n\nBile them Cabbage down\nTurn them hoecakes round\nThe only song that I can sing\nIs bile them cabbage down\n\nTook my gal to the blacksmith shop\nTo have her mouth made small\nShe turned around a time or two\nAnd swallowd shop and all\n\nPossum in a Simmon tree\nRaccoon on the ground\nRaccoon says you son-of-a-gun\nShake some Simmon\u2019s down\n\nSomeone stole my old \u2018coon dog\nWish they\u2019d bring him back\nHe chased the big hogs through the fence\nAnd the little ones through the crack\n\nMet a possum in the road\nBlind as he could be\nJumped the fence and whipped my dog\nAnd bristled up at me\n\nOnce I had an old gray mule\nHis name was Simon Slick\nHe\u2019d roll his eyes and back his ears\nAnd how that mule would kick\n\nHow that mule would kick\nHe kicked with his dying breath\nHe shoved his hind feet down his throat\nAnd kicked himself to death",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Went up on the mountain",
+        "Just to give my horn a blow",
+        "Thought I heard my true love say",
+        "Yonder comes my beau"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Bile them Cabbage down",
+        "Turn them hoecakes round",
+        "The only song that I can sing",
+        "Is bile them cabbage down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Took my gal to the blacksmith shop",
+        "To have her mouth made small",
+        "She turned around a time or two",
+        "And swallowd shop and all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Possum in a Simmon tree",
+        "Raccoon on the ground",
+        "Raccoon says you son-of-a-gun",
+        "Shake some Simmon\u2019s down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someone stole my old \u2018coon dog",
+        "Wish they\u2019d bring him back",
+        "He chased the big hogs through the fence",
+        "And the little ones through the crack"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Met a possum in the road",
+        "Blind as he could be",
+        "Jumped the fence and whipped my dog",
+        "And bristled up at me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once I had an old gray mule",
+        "His name was Simon Slick",
+        "He\u2019d roll his eyes and back his ears",
+        "And how that mule would kick"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How that mule would kick",
+        "He kicked with his dying breath",
+        "He shoved his hind feet down his throat",
+        "And kicked himself to death"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "my-last-old-dollar",
+  "title": "My Last Old Dollar",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-last-old-dollar/",
+  "raw_lyrics": "I wrote to my girl last night\nI wrote to my girl last night\nI wrote to my girl that I was comin\u2019 home\nBut my last old dollar is done gone\n\nOh my last old dollar is done gone\nOh my last old dollar is done gone\nNow how can a poor boy get back home\nWhen his last old dollar is done gone\n\nI\u2019ve drank and I\u2019ve rambled around\nI\u2019ve drank and I\u2019ve rambled around\nNow the time has come when I wanna go home\nBut my last old dollar is done gone\n\nNow the east bound train is done run\nNow the east bound train is done run\nNow that train is done run and left me all alone\n\u2018Cause my last old dollar is done gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wrote to my girl last night",
+        "I wrote to my girl last night",
+        "I wrote to my girl that I was comin\u2019 home",
+        "But my last old dollar is done gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my last old dollar is done gone",
+        "Oh my last old dollar is done gone",
+        "Now how can a poor boy get back home",
+        "When his last old dollar is done gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve drank and I\u2019ve rambled around",
+        "I\u2019ve drank and I\u2019ve rambled around",
+        "Now the time has come when I wanna go home",
+        "But my last old dollar is done gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the east bound train is done run",
+        "Now the east bound train is done run",
+        "Now that train is done run and left me all alone",
+        "\u2018Cause my last old dollar is done gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

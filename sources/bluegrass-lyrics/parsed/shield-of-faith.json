@@ -1,0 +1,47 @@
+{
+  "slug": "shield-of-faith",
+  "title": "Shield Of Faith",
+  "source_url": "https://www.bluegrasslyrics.com/song/shield-of-faith/",
+  "raw_lyrics": "Sometimes I\u2019m battle weary\nI forget to use my shield\nThe arrows pierce my armor\nAnd I stumble in the field.\n\nA shield won\u2019t do much good if it\u2019s hanging by your side\nKeep the shield of faith before you if you want to stay alive.\n\nI\u2019ll think my life is over\nBut the Lord He comes to me\nHe heals my wounded spirit\nAnd He sets me on my feet.\n\nSometimes you\u2019re battle weary\nBut the war\u2019s already won\nKeep your head and hold your shield high\n\u2018Til your days in life are done.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes I\u2019m battle weary",
+        "I forget to use my shield",
+        "The arrows pierce my armor",
+        "And I stumble in the field."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "A shield won\u2019t do much good if it\u2019s hanging by your side",
+        "Keep the shield of faith before you if you want to stay alive."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll think my life is over",
+        "But the Lord He comes to me",
+        "He heals my wounded spirit",
+        "And He sets me on my feet."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes you\u2019re battle weary",
+        "But the war\u2019s already won",
+        "Keep your head and hold your shield high",
+        "\u2018Til your days in life are done."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

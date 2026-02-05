@@ -1,0 +1,49 @@
+{
+  "slug": "that-home-above",
+  "title": "That Home Above",
+  "source_url": "https://www.bluegrasslyrics.com/song/that-home-above/",
+  "raw_lyrics": "Oh the home above (oh the home above) so far away (so far away)\nThat\u2019s where we pray (As ) we\u2019ll live someday (we\u2019ll )\nIn the home above (in ) beyond the starlight sky (beyond)\nWhere the soul of man (where) will never die (will)\n\nI\u2019m ready to leave (I\u2019m )  this world below (this )\nTo the home above (to )  I\u2019m ready to go (I\u2019m)\nThen mother will say (then)  welcome home our son (welcome)\nIn a heavenly home (in ) our life has just begun (our)\n\nOh my mother and dad (oh) have gone on before (have)\nThey\u2019re waiting for me (they\u2019re) on the heavenly shore (on)\nI long to see (I )  and shake their hand (and)\nWhen I\u2019m safe at home (when) as they had planned (as)\n\nOh the beautiful land (in ) where we\u2019ll never die (where)\nThat\u2019s where my soul (that\u2019s) shall rest on high (shall)\nI\u2019ll sing and shout (I\u2019ll) for His face I\u2019ll see (for)\nWith God I\u2019ll rest (with) for eternity (for)",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the home above (oh the home above) so far away (so far away)",
+        "That\u2019s where we pray (As ) we\u2019ll live someday (we\u2019ll )",
+        "In the home above (in ) beyond the starlight sky (beyond)",
+        "Where the soul of man (where) will never die (will)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m ready to leave (I\u2019m )  this world below (this )",
+        "To the home above (to )  I\u2019m ready to go (I\u2019m)",
+        "Then mother will say (then)  welcome home our son (welcome)",
+        "In a heavenly home (in ) our life has just begun (our)"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my mother and dad (oh) have gone on before (have)",
+        "They\u2019re waiting for me (they\u2019re) on the heavenly shore (on)",
+        "I long to see (I )  and shake their hand (and)",
+        "When I\u2019m safe at home (when) as they had planned (as)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the beautiful land (in ) where we\u2019ll never die (where)",
+        "That\u2019s where my soul (that\u2019s) shall rest on high (shall)",
+        "I\u2019ll sing and shout (I\u2019ll) for His face I\u2019ll see (for)",
+        "With God I\u2019ll rest (with) for eternity (for)"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

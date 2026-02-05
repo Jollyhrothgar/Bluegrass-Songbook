@@ -1,0 +1,39 @@
+{
+  "slug": "youre-the-best-of-all-leading-brands",
+  "title": "You\u2019re The Best Of All Leading Brands",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-the-best-of-all-leading-brands/",
+  "raw_lyrics": "Now you\u2019re the best of all the leading brands\nFrom loving kisses down to holding hands\nI am happy only in your company\nAnd no one else can make this guarantee\n\nYou\u2019re the best and always number one\nYou\u2019ve got the competition of the run\nI\u2019m sure that everybody understands\nI like you best of all the leading brands\n\nYour new improved performance sure is great\nTo me there is no question how you rate\nYour quality puts you so far ahead\nYour shape your style your looks sure knocks \u2019em dead",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now you\u2019re the best of all the leading brands",
+        "From loving kisses down to holding hands",
+        "I am happy only in your company",
+        "And no one else can make this guarantee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019re the best and always number one",
+        "You\u2019ve got the competition of the run",
+        "I\u2019m sure that everybody understands",
+        "I like you best of all the leading brands"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your new improved performance sure is great",
+        "To me there is no question how you rate",
+        "Your quality puts you so far ahead",
+        "Your shape your style your looks sure knocks \u2019em dead"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

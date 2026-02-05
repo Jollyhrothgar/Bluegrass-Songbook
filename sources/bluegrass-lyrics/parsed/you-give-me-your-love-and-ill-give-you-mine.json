@@ -1,0 +1,39 @@
+{
+  "slug": "you-give-me-your-love-and-ill-give-you-mine",
+  "title": "You Give Me Your Love And I\u2019ll Give You Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-give-me-your-love-and-ill-give-you-mine/",
+  "raw_lyrics": "Two lovers sat in a quiet little place\nTwo lovers seated in one fond embrace\nWhispering softly these words so divine\nYou give me your love and I\u2019ll give you mine\n\nTell me your love me and say you\u2019ll be true\nI\u2019ll love nobody in this world like you\nYour heart and my heart in love will entwine\nYou give me your love and I\u2019ll give you mine\n\nI\u2019ve something to ask you while you\u2019re by my side\nA question of love a groom and a bride\nAnd if you refuse me my heart it will pine\nYou give me your love and I\u2019ll give you mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Two lovers sat in a quiet little place",
+        "Two lovers seated in one fond embrace",
+        "Whispering softly these words so divine",
+        "You give me your love and I\u2019ll give you mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell me your love me and say you\u2019ll be true",
+        "I\u2019ll love nobody in this world like you",
+        "Your heart and my heart in love will entwine",
+        "You give me your love and I\u2019ll give you mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve something to ask you while you\u2019re by my side",
+        "A question of love a groom and a bride",
+        "And if you refuse me my heart it will pine",
+        "You give me your love and I\u2019ll give you mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

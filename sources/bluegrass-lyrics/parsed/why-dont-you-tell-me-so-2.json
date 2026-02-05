@@ -1,0 +1,49 @@
+{
+  "slug": "why-dont-you-tell-me-so-2",
+  "title": "Why Don\u2019t You Tell Me So",
+  "source_url": "https://www.bluegrasslyrics.com/song/why-dont-you-tell-me-so-2/",
+  "raw_lyrics": "I can tell by the look in your eyes\nThat you still care for me\nBut somehow you just won\u2019t admit\nAnd that\u2019s why I\u2019m lonesome you see\n\nNow if you have made up your mind\nAnd if you still want me you know\nWhy do you keep me in doubt\nWhy don\u2019t you tell me so\n\nEach night there\u2019s tears upon my pillow\nAnd they\u2019re all because of you I know\nDarling I can\u2019t go on this way\nWhy don\u2019t you tell me so\n\nNow there\u2019ll come a time little darling\nWhen you will want me you know\nBut darling, it will then be too late\nFor you to tell me so",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can tell by the look in your eyes",
+        "That you still care for me",
+        "But somehow you just won\u2019t admit",
+        "And that\u2019s why I\u2019m lonesome you see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now if you have made up your mind",
+        "And if you still want me you know",
+        "Why do you keep me in doubt",
+        "Why don\u2019t you tell me so"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each night there\u2019s tears upon my pillow",
+        "And they\u2019re all because of you I know",
+        "Darling I can\u2019t go on this way",
+        "Why don\u2019t you tell me so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now there\u2019ll come a time little darling",
+        "When you will want me you know",
+        "But darling, it will then be too late",
+        "For you to tell me so"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

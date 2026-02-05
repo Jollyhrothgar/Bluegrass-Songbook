@@ -1,0 +1,39 @@
+{
+  "slug": "i-wasted-my-tears-when-i-cried-over-you",
+  "title": "I Wasted My Tears When I Cried Over You",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-wasted-my-tears-when-i-cried-over-you/",
+  "raw_lyrics": "I wasted my tears when I cried over you\nBut I should have known you could never be true\nWell I loved and I lost you and now I\u2019m so blue\nOh I wasted my tears when I cried over you.\n\nYou said that you loved me and would always be true\nBut now you\u2019ve gone and left me oh what will I do?\nOh why did you leave me for somebody new?\nOh I wasted my tears when I cried over you.\n\nI wasted my time when I spent it with you\nBut one is so blind when love is so new\nAnd now all of my fears they all have come true\nOh I wasted my tears when I cried over you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wasted my tears when I cried over you",
+        "But I should have known you could never be true",
+        "Well I loved and I lost you and now I\u2019m so blue",
+        "Oh I wasted my tears when I cried over you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You said that you loved me and would always be true",
+        "But now you\u2019ve gone and left me oh what will I do?",
+        "Oh why did you leave me for somebody new?",
+        "Oh I wasted my tears when I cried over you."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wasted my time when I spent it with you",
+        "But one is so blind when love is so new",
+        "And now all of my fears they all have come true",
+        "Oh I wasted my tears when I cried over you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

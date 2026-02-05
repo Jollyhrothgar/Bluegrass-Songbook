@@ -1,0 +1,29 @@
+{
+  "slug": "blue-moon-of-kentucky",
+  "title": "Blue Moon Of Kentucky",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-moon-of-kentucky/",
+  "raw_lyrics": "Blue moon of Kentucky keep on shining\nShine on the one that\u2019s gone and proved untrue\nBlue moon of Kentucky keep on shining\nShine on the one that\u2019s gone and left me blue\n\nIt was on a moonlight night the stars were shining bright\nWhen they whispered from on high your love has said good-bye\nBlue moon of Kentucky keep on shining\nShine on the one that\u2019s gone and said good-bye",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Blue moon of Kentucky keep on shining",
+        "Shine on the one that\u2019s gone and proved untrue",
+        "Blue moon of Kentucky keep on shining",
+        "Shine on the one that\u2019s gone and left me blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It was on a moonlight night the stars were shining bright",
+        "When they whispered from on high your love has said good-bye",
+        "Blue moon of Kentucky keep on shining",
+        "Shine on the one that\u2019s gone and said good-bye"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

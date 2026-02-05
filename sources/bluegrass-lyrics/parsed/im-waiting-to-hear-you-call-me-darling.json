@@ -1,0 +1,39 @@
+{
+  "slug": "im-waiting-to-hear-you-call-me-darling",
+  "title": "I\u2019m Waiting To Hear You Call Me Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-waiting-to-hear-you-call-me-darling/",
+  "raw_lyrics": "I\u2019m waiting to hear you call me darling\nI\u2019m waiting to hear you call me dear\nYou know that I have always loved you\nDon\u2019t make me lonely all these years\n\nTwo years ago when I first met you\nYou smiled at me and looked so sweet\nYou made me think you cared about me\nBut you never said that you loved me\n\nOh maybe I took too much for granted\nTo think you\u2019d ever love me\nPlease oh please don\u2019t try to fool me\n\u2018Cause all you\u2019d cause is misery",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m waiting to hear you call me darling",
+        "I\u2019m waiting to hear you call me dear",
+        "You know that I have always loved you",
+        "Don\u2019t make me lonely all these years"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Two years ago when I first met you",
+        "You smiled at me and looked so sweet",
+        "You made me think you cared about me",
+        "But you never said that you loved me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh maybe I took too much for granted",
+        "To think you\u2019d ever love me",
+        "Please oh please don\u2019t try to fool me",
+        "\u2018Cause all you\u2019d cause is misery"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "see-that-my-grave-is-kept-green",
+  "title": "See That My Grave Is Kept Green",
+  "source_url": "https://www.bluegrasslyrics.com/song/see-that-my-grave-is-kept-green/",
+  "raw_lyrics": "When I am dead and gone from you darling\nWhen I am laid away in my grave\nWhen my spirit is gone to heaven above\nTo Him whom my soul will save\n\nOh the day will come to you darling\nWhen no more on earth I\u2019ll be seen\nThere is one little wish darling grant me\nSee that my grave is kept green\n\nWhen from this world I go\nLeaving forever the scene\nWhile others are dead oh will you then\nSee that my grave is kept green\n\nOh the hour of joy is passing\nBut alas how soon it will fade\nYour glances of love are meeting my own\nAnd sunlight will turn to shade\n\nI shall never be happy again my love\nNever be happy again\nFor a girl in her teens don\u2019t know what love means\nI shall never be happy again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I am dead and gone from you darling",
+        "When I am laid away in my grave",
+        "When my spirit is gone to heaven above",
+        "To Him whom my soul will save"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the day will come to you darling",
+        "When no more on earth I\u2019ll be seen",
+        "There is one little wish darling grant me",
+        "See that my grave is kept green"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When from this world I go",
+        "Leaving forever the scene",
+        "While others are dead oh will you then",
+        "See that my grave is kept green"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the hour of joy is passing",
+        "But alas how soon it will fade",
+        "Your glances of love are meeting my own",
+        "And sunlight will turn to shade"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I shall never be happy again my love",
+        "Never be happy again",
+        "For a girl in her teens don\u2019t know what love means",
+        "I shall never be happy again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "ill-meet-you-in-the-morning",
+  "title": "I\u2019ll Meet You In The Morning",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-meet-you-in-the-morning/",
+  "raw_lyrics": "I\u2019ll meet you in the morning by the bright riverside\nWhen all sorrow has drifted away\nI\u2019ll be standin\u2019 at the portals when the gates open wide\nAt the close of life\u2019s long weary day\n\nI\u2019ll meet you in the morning with a how do you do\nAnd we\u2019ll sit down by the river and when all the rapture is renewed\nYou\u2019ll know me in the morning by the smile that I wear\nWhen I meet you in the morning In the city that is built four square\n\nI will meet you in the morning in the sweet by and by\nAnd exchange the old cross for a crown\nThere will be no disappointments and nobody shall die\nIn that land when life\u2019s sun goeth down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll meet you in the morning by the bright riverside",
+        "When all sorrow has drifted away",
+        "I\u2019ll be standin\u2019 at the portals when the gates open wide",
+        "At the close of life\u2019s long weary day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll meet you in the morning with a how do you do",
+        "And we\u2019ll sit down by the river and when all the rapture is renewed",
+        "You\u2019ll know me in the morning by the smile that I wear",
+        "When I meet you in the morning In the city that is built four square"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will meet you in the morning in the sweet by and by",
+        "And exchange the old cross for a crown",
+        "There will be no disappointments and nobody shall die",
+        "In that land when life\u2019s sun goeth down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

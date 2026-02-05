@@ -1,0 +1,49 @@
+{
+  "slug": "memories-of-mother-and-dad",
+  "title": "Memories Of Mother And Dad",
+  "source_url": "https://www.bluegrasslyrics.com/song/memories-of-mother-and-dad/",
+  "raw_lyrics": "Mother left this world of sorrow\nOur home was silent and so sad\nDad took sick and had to leave us\nI have no home No mother nor dad\n\nThere\u2019s a little lonesome grave yard\nOn these tomestones it did say\nOn mother\u2019s \u201cgone but not forgotten\u201d\nOn dad\u2019s \u201cwe\u2019ll meet again someday\u201d\n\nI often go out to the graveyard\nWhere they laided them down to rest\nI can almost hear them whisper\nTrust in god He\u2019ll do the rest\n\nTheir souls have gone up to heaven\nWhere they\u2019ll dwell with god above\nWhere they\u2019ll meet there friends and loved ones\nAnd share with all his precious love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Mother left this world of sorrow",
+        "Our home was silent and so sad",
+        "Dad took sick and had to leave us",
+        "I have no home No mother nor dad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a little lonesome grave yard",
+        "On these tomestones it did say",
+        "On mother\u2019s \u201cgone but not forgotten\u201d",
+        "On dad\u2019s \u201cwe\u2019ll meet again someday\u201d"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I often go out to the graveyard",
+        "Where they laided them down to rest",
+        "I can almost hear them whisper",
+        "Trust in god He\u2019ll do the rest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Their souls have gone up to heaven",
+        "Where they\u2019ll dwell with god above",
+        "Where they\u2019ll meet there friends and loved ones",
+        "And share with all his precious love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

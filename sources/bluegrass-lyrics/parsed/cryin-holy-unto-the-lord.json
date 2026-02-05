@@ -1,0 +1,39 @@
+{
+  "slug": "cryin-holy-unto-the-lord",
+  "title": "Cryin\u2019 Holy Unto The Lord",
+  "source_url": "https://www.bluegrasslyrics.com/song/cryin-holy-unto-the-lord/",
+  "raw_lyrics": "Lord I ain\u2019t no stranger now\nLord I ain\u2019t no stranger now\nI\u2019ve been introduced to the Father and the Son\nLord I ain\u2019t no stranger now\n\nCryin\u2019 holy unto the Lord\nCryin holy unto the Lord\nLord if I could I surely would\nStand on that rock where Moses stood\n\nSinners run and hide your face\nSinners run and hide your face\nRun to the rocks and hide your face\nThe rocks won\u2019t have no hiding place",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lord I ain\u2019t no stranger now",
+        "Lord I ain\u2019t no stranger now",
+        "I\u2019ve been introduced to the Father and the Son",
+        "Lord I ain\u2019t no stranger now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Cryin\u2019 holy unto the Lord",
+        "Cryin holy unto the Lord",
+        "Lord if I could I surely would",
+        "Stand on that rock where Moses stood"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sinners run and hide your face",
+        "Sinners run and hide your face",
+        "Run to the rocks and hide your face",
+        "The rocks won\u2019t have no hiding place"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

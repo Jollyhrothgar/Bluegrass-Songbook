@@ -1,0 +1,39 @@
+{
+  "slug": "dont-go-out-tonight",
+  "title": "Don\u2019t Go Out Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-go-out-tonight/",
+  "raw_lyrics": "Now don\u2019t go out tonight little darling\nDo not leave me here alone\nStay at home with me my darling\nI\u2019m so lonesome while you\u2019re gone\n\nI hear a knockin\u2019 at my door\nAnd a footstep on the floor\nNow they\u2019re bringin\u2019 home my darling\nHere he lies drunk upon the floor\n\nNow he\u2019s dying yes he\u2019s dying\nSoon I\u2019ll be left all alone\nI pray that God\u2019s warm tender mercy\nWill save him from a drunkard\u2019s doom",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Now don\u2019t go out tonight little darling",
+        "Do not leave me here alone",
+        "Stay at home with me my darling",
+        "I\u2019m so lonesome while you\u2019re gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hear a knockin\u2019 at my door",
+        "And a footstep on the floor",
+        "Now they\u2019re bringin\u2019 home my darling",
+        "Here he lies drunk upon the floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now he\u2019s dying yes he\u2019s dying",
+        "Soon I\u2019ll be left all alone",
+        "I pray that God\u2019s warm tender mercy",
+        "Will save him from a drunkard\u2019s doom"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

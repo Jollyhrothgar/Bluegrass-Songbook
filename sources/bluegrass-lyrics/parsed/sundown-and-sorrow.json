@@ -1,0 +1,49 @@
+{
+  "slug": "sundown-and-sorrow",
+  "title": "Sundown And Sorrow",
+  "source_url": "https://www.bluegrasslyrics.com/song/sundown-and-sorrow/",
+  "raw_lyrics": "Sundown and sorrow has found me\nMemories are making me blue\nHere with these shadows around me\nI can\u2019t forget loving you\n\nNothing but daydreams to haunt me\nDreams that could never come true\nIt\u2019s hard to know you don\u2019t want me\nI can\u2019t forget loving you\n\nEver so long I\u2019ve been yearning\nWondering just what I could do\nDeep in my heart there\u2019s a burning\nI can\u2019t forget loving you\n\nNight finds me heartsick and crying\nDay makes me think of you too\nI know there\u2019s no use denying\nI can\u2019t forget loving you",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Sundown and sorrow has found me",
+        "Memories are making me blue",
+        "Here with these shadows around me",
+        "I can\u2019t forget loving you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Nothing but daydreams to haunt me",
+        "Dreams that could never come true",
+        "It\u2019s hard to know you don\u2019t want me",
+        "I can\u2019t forget loving you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ever so long I\u2019ve been yearning",
+        "Wondering just what I could do",
+        "Deep in my heart there\u2019s a burning",
+        "I can\u2019t forget loving you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Night finds me heartsick and crying",
+        "Day makes me think of you too",
+        "I know there\u2019s no use denying",
+        "I can\u2019t forget loving you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

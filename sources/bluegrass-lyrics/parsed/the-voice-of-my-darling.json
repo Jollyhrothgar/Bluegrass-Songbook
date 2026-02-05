@@ -1,0 +1,39 @@
+{
+  "slug": "the-voice-of-my-darling",
+  "title": "The Voice Of My Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-voice-of-my-darling/",
+  "raw_lyrics": "I thought I heard the voice of my darling\nI looked but there was no one else around\nJust when I knew her memory would haunt me\nJust as long as I stay in this lonesome town\n\nAs I go walking down this lonely street\nThinking of a love that used to be\nThe one I love is gone and I\u2019m so lonely\nThen I thought I heard my baby speak to me\n\nIs seems so long now since she went away\nAlthough it was only yesterday\nI see her face each time I try to sleep\nAnd I hear her voice on every lonely street",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I thought I heard the voice of my darling",
+        "I looked but there was no one else around",
+        "Just when I knew her memory would haunt me",
+        "Just as long as I stay in this lonesome town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I go walking down this lonely street",
+        "Thinking of a love that used to be",
+        "The one I love is gone and I\u2019m so lonely",
+        "Then I thought I heard my baby speak to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Is seems so long now since she went away",
+        "Although it was only yesterday",
+        "I see her face each time I try to sleep",
+        "And I hear her voice on every lonely street"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

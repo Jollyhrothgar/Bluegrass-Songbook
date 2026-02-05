@@ -1,0 +1,59 @@
+{
+  "slug": "sun-of-the-soul-the",
+  "title": "Sun Of The Soul, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/sun-of-the-soul-the/",
+  "raw_lyrics": "When the sun of your life has gone down\nAnd the clouds in the west turn to gold\nEndless death will to you then have come\nIf the light has gone out in your soul\n\nOh just think how in death you would feel\nWith the light growing dim in your soul\nOh how long it will be oh how still\nIf the light has gone out in your soul\n\nWhen you come to the end of the way\nAnd life\u2019s story for you has been told\nOh how sad all to you will appear\nIf the light has gone out in your soul\n\nWhen the chilly winds of death around you steal\nAnd the sweat upon your brow is damp and cold\nWhat a dread in your life you would feel\nIf the light has gone out in your soul\n\nWhen before the judgment trial you shall stand\nAnd the deeds of your life have been told\nGood and evil appears oh what then\nIf the light has gone out in your soul",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When the sun of your life has gone down",
+        "And the clouds in the west turn to gold",
+        "Endless death will to you then have come",
+        "If the light has gone out in your soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh just think how in death you would feel",
+        "With the light growing dim in your soul",
+        "Oh how long it will be oh how still",
+        "If the light has gone out in your soul"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you come to the end of the way",
+        "And life\u2019s story for you has been told",
+        "Oh how sad all to you will appear",
+        "If the light has gone out in your soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the chilly winds of death around you steal",
+        "And the sweat upon your brow is damp and cold",
+        "What a dread in your life you would feel",
+        "If the light has gone out in your soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When before the judgment trial you shall stand",
+        "And the deeds of your life have been told",
+        "Good and evil appears oh what then",
+        "If the light has gone out in your soul"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

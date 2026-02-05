@@ -1,0 +1,56 @@
+{
+  "slug": "tennessee-mountain-home",
+  "title": "Tennessee Mountain Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/tennessee-mountain-home/",
+  "raw_lyrics": "Sittin\u2019 on the front porch on a summer afternoon\nIn a straight-back chair on two legs  leaned against the wall\nWatch the kids a-playin\u2019 with June bugs on a string\nAnd chase the glowin\u2019 fireflies when evening shadows fall\n\nIn my Tennessee mountain home\nLife is as peaceful as a baby\u2019s sigh\nIn my Tennessee mountain home\nCrickets singing in the fields near by\n\nHoneysuckle vines cling to the fences along the lane\nTheir fragrance makes the summer wind so sweet\nAnd on a distant hilltop an eagle spreads its wings\nAnd a songbird on a fence post sings a melody\n\nDrivin\u2019 home from charch on Sunday with the one you love\nJust laughin \u2018talkin\u2019 makin\u2019 future plans\nAnd when the folks ain\u2019t lookin\u2019 you might steal a kiss or two\nJust sittin\u2019 in the porch swing holdin\u2019 hands\n\nPinacle Mountain Boys; The Pinacle Mountain Boys",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sittin\u2019 on the front porch on a summer afternoon",
+        "In a straight-back chair on two legs  leaned against the wall",
+        "Watch the kids a-playin\u2019 with June bugs on a string",
+        "And chase the glowin\u2019 fireflies when evening shadows fall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "In my Tennessee mountain home",
+        "Life is as peaceful as a baby\u2019s sigh",
+        "In my Tennessee mountain home",
+        "Crickets singing in the fields near by"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Honeysuckle vines cling to the fences along the lane",
+        "Their fragrance makes the summer wind so sweet",
+        "And on a distant hilltop an eagle spreads its wings",
+        "And a songbird on a fence post sings a melody"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Drivin\u2019 home from charch on Sunday with the one you love",
+        "Just laughin \u2018talkin\u2019 makin\u2019 future plans",
+        "And when the folks ain\u2019t lookin\u2019 you might steal a kiss or two",
+        "Just sittin\u2019 in the porch swing holdin\u2019 hands"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Pinacle Mountain Boys; The Pinacle Mountain Boys"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

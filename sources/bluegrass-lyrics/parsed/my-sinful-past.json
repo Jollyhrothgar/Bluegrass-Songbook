@@ -1,0 +1,39 @@
+{
+  "slug": "my-sinful-past",
+  "title": "My Sinful Past",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-sinful-past/",
+  "raw_lyrics": "Come listen to my story\nIt tells of sorrow and pain\nMy sinful past still haunts me\nI\u2019ve lived my lifetime in vain\n\nThe hand reached down to guide me\nThe smile was sweet to see\nI heard a sinner murmur\nOh Lord, have mercy on me\n\nI\u2019ve lead a life so wicked\nI\u2019ve lost all I ever had\nThat\u2019s why I\u2019m bound for destruction\nIt\u2019s sinful, it\u2019s shameful and sad",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come listen to my story",
+        "It tells of sorrow and pain",
+        "My sinful past still haunts me",
+        "I\u2019ve lived my lifetime in vain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The hand reached down to guide me",
+        "The smile was sweet to see",
+        "I heard a sinner murmur",
+        "Oh Lord, have mercy on me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve lead a life so wicked",
+        "I\u2019ve lost all I ever had",
+        "That\u2019s why I\u2019m bound for destruction",
+        "It\u2019s sinful, it\u2019s shameful and sad"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

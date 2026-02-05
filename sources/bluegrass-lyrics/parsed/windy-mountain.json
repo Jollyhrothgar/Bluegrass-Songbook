@@ -1,0 +1,59 @@
+{
+  "slug": "windy-mountain",
+  "title": "Windy Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/windy-mountain/",
+  "raw_lyrics": "Oh, how I\u2019d like to be upon a windy mountain\nWhere the tree tops scrape the sky\nThen I would forget all my worries and my troubles\nI\u2019ll just let the wind blow them by\n\nI how I love the sound of the wind when it\u2019s howlin\nFor it blows my blues away\nIt makes me forget the girl that I\u2019m lovin\nLets me forget until another day\n\nLet me hear the leaves on the trees when they are singing\nJust a moment of relief is all care\nFor I\u2019ve got no sorrow heartaches or sadness\nAs long as I can see the trees that sway\n\nOh, my friends bury me a way up on the mountain\nWhere that old wind will always blow\nFor I want to rest alone on the mountain\nWith the howlin wind that I love so\n\nTell my old lover in care you should see her\nJust how much I love her she\u2019ll never know\nAnd that I\u2019ve gone to rest away upon the mountain\nWhere the howling wind will always blow",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, how I\u2019d like to be upon a windy mountain",
+        "Where the tree tops scrape the sky",
+        "Then I would forget all my worries and my troubles",
+        "I\u2019ll just let the wind blow them by"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I how I love the sound of the wind when it\u2019s howlin",
+        "For it blows my blues away",
+        "It makes me forget the girl that I\u2019m lovin",
+        "Lets me forget until another day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let me hear the leaves on the trees when they are singing",
+        "Just a moment of relief is all care",
+        "For I\u2019ve got no sorrow heartaches or sadness",
+        "As long as I can see the trees that sway"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, my friends bury me a way up on the mountain",
+        "Where that old wind will always blow",
+        "For I want to rest alone on the mountain",
+        "With the howlin wind that I love so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell my old lover in care you should see her",
+        "Just how much I love her she\u2019ll never know",
+        "And that I\u2019ve gone to rest away upon the mountain",
+        "Where the howling wind will always blow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "lord-build-me-a-cabin-in-gloryland",
+  "title": "Lord Build Me A Cabin In Gloryland",
+  "source_url": "https://www.bluegrasslyrics.com/song/lord-build-me-a-cabin-in-gloryland/",
+  "raw_lyrics": "Many years I\u2019ve been lookin\u2019 for a place to call home\nBut I still didn\u2019t find it so I must travel on\nI don\u2019t care for the fine mansions on earth\u2019s sinkin sand\nLord build me a cabin in the corner of gloryland\n\nLord build me just a cabin in the corner of gloryland\nIn the shade of his tree of life that it may ever stand\nWhere I can hear the angels and shake Jesus\u2019 hand\nLord build me a cabin in the corner of gloryland\n\nListen Lord I\u2019m not askin\u2019 to live in the midst\nFor I know that I\u2019m not worthy of such splendor as this\nWhen I ask Him for mercy while humbly I stand\nLord build me a cabin in the corner of gloryland\n\nI\u2019ve many dear loved one\u2019s who\u2019ve gone on this way\nOn the grapevine of mournin\u2019 shall I hear them all say\nCome and join in the singin\u2019 and play in our band\nLord build me a cabin in the corner of gloryland",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Many years I\u2019ve been lookin\u2019 for a place to call home",
+        "But I still didn\u2019t find it so I must travel on",
+        "I don\u2019t care for the fine mansions on earth\u2019s sinkin sand",
+        "Lord build me a cabin in the corner of gloryland"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Lord build me just a cabin in the corner of gloryland",
+        "In the shade of his tree of life that it may ever stand",
+        "Where I can hear the angels and shake Jesus\u2019 hand",
+        "Lord build me a cabin in the corner of gloryland"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Listen Lord I\u2019m not askin\u2019 to live in the midst",
+        "For I know that I\u2019m not worthy of such splendor as this",
+        "When I ask Him for mercy while humbly I stand",
+        "Lord build me a cabin in the corner of gloryland"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve many dear loved one\u2019s who\u2019ve gone on this way",
+        "On the grapevine of mournin\u2019 shall I hear them all say",
+        "Come and join in the singin\u2019 and play in our band",
+        "Lord build me a cabin in the corner of gloryland"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

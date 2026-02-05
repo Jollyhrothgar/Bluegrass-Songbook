@@ -1,0 +1,49 @@
+{
+  "slug": "rocky-island",
+  "title": "Rocky Island",
+  "source_url": "https://www.bluegrasslyrics.com/song/rocky-island/",
+  "raw_lyrics": "Apples in the summer time\nPeaches in the fall\nIf I don\u2019t get the girl I love\nWon\u2019t have none at all\n\nGoing to Rocky Island\nGoing when I\u2019m gone\nSee my Candy darling\nHo honey ho\n\nGet up on the mountain\nSow a little cane\nMake a barrel of sorghum\nSweetin\u2019 ole Liza Jane\n\nBlack clouds a risin\u2019\nSure sign of rain\nGet your old gray bonnet\nSee little Liza Jane",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Apples in the summer time",
+        "Peaches in the fall",
+        "If I don\u2019t get the girl I love",
+        "Won\u2019t have none at all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Going to Rocky Island",
+        "Going when I\u2019m gone",
+        "See my Candy darling",
+        "Ho honey ho"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Get up on the mountain",
+        "Sow a little cane",
+        "Make a barrel of sorghum",
+        "Sweetin\u2019 ole Liza Jane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Black clouds a risin\u2019",
+        "Sure sign of rain",
+        "Get your old gray bonnet",
+        "See little Liza Jane"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

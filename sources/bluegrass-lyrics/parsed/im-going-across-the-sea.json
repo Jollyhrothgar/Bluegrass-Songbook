@@ -1,0 +1,49 @@
+{
+  "slug": "im-going-across-the-sea",
+  "title": "I\u2019m Going Across The Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-going-across-the-sea/",
+  "raw_lyrics": "I\u2019m going across the sea stay forever more\nLeft my little darlin\u2019 standing in the door\nWon\u2019t you come and go come and go with me\nFly to me my pretty little Miss I\u2019m going across the sea\n\nWind is howling low wind is howling high\nGo with me my pretty little love \u2019til the day I die.\nWon\u2019t you come and go come and go with me\nFly to me my pretty little Miss I\u2019m going across the sea.\n\nWouldn\u2019t you give a nickel wouldn\u2019t you give a dime\nWouldn\u2019t you give one dollar bill to call your name as mine?\nWon\u2019t you come and go come and go with me\nFly to me my pretty little Miss I\u2019m going across the sea.\n\nDonie Donie Donie what makes your face so red\nWorking out in the crops son fever in my head\nWon\u2019t you come and go come and go with me\nFly to me my pretty little Miss I\u2019m going across the sea.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going across the sea stay forever more",
+        "Left my little darlin\u2019 standing in the door",
+        "Won\u2019t you come and go come and go with me",
+        "Fly to me my pretty little Miss I\u2019m going across the sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wind is howling low wind is howling high",
+        "Go with me my pretty little love \u2019til the day I die.",
+        "Won\u2019t you come and go come and go with me",
+        "Fly to me my pretty little Miss I\u2019m going across the sea."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wouldn\u2019t you give a nickel wouldn\u2019t you give a dime",
+        "Wouldn\u2019t you give one dollar bill to call your name as mine?",
+        "Won\u2019t you come and go come and go with me",
+        "Fly to me my pretty little Miss I\u2019m going across the sea."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Donie Donie Donie what makes your face so red",
+        "Working out in the crops son fever in my head",
+        "Won\u2019t you come and go come and go with me",
+        "Fly to me my pretty little Miss I\u2019m going across the sea."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

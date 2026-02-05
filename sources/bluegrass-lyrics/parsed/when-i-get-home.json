@@ -1,0 +1,49 @@
+{
+  "slug": "when-i-get-home",
+  "title": "When I Get Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-i-get-home/",
+  "raw_lyrics": "When my Savior calls me over yonder\nI\u2019ll have me a mansion on the other side\nGonna tell my neighbor how glad I am to see him\nWhen I get home I\u2019m going be satisfied\n\nI\u2019ll have me a harp of gold just like David\u2019s\nWhen i get over on the other side\nGonna sing and play with a band of a million angels\nWhen I get home I\u2019m gonna be satisfied\n\nI\u2019ll have a little talk with Abraham and Isaac\nHave a little talk with Peter James and Paul\nGonna sit\u00a0 and have a talk with dad and mother\nGonna have a talk with Jesus first of all\n\nNow when I meet my Savior over yonder\nI\u2019ll have me a mansion on the other side\nI\u2019ll leave my worldly troubles here behind me\nWhen I get home I\u2019m going be satisfied",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When my Savior calls me over yonder",
+        "I\u2019ll have me a mansion on the other side",
+        "Gonna tell my neighbor how glad I am to see him",
+        "When I get home I\u2019m going be satisfied"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll have me a harp of gold just like David\u2019s",
+        "When i get over on the other side",
+        "Gonna sing and play with a band of a million angels",
+        "When I get home I\u2019m gonna be satisfied"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll have a little talk with Abraham and Isaac",
+        "Have a little talk with Peter James and Paul",
+        "Gonna sit\u00a0 and have a talk with dad and mother",
+        "Gonna have a talk with Jesus first of all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when I meet my Savior over yonder",
+        "I\u2019ll have me a mansion on the other side",
+        "I\u2019ll leave my worldly troubles here behind me",
+        "When I get home I\u2019m going be satisfied"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

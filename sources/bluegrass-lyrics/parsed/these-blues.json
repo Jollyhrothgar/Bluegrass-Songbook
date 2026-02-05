@@ -1,0 +1,59 @@
+{
+  "slug": "these-blues",
+  "title": "These Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/these-blues/",
+  "raw_lyrics": "My baby don\u2019t want me she don\u2019t need me\nFound herself someone new\nLeft me alone sittin at home\nWith nothin\u2019 in the world to do\n\nMy stomach\u2019s churnin\u2019 my eyes are burnin\u2019\nMy hair is turnin\u2019 gray\nTroubled deep can\u2019t get no sleep\nSince she went away\n\nThese blues they\u2019ve got me\nTears rollin down my face\nThat woman she left me\nCryin\u2019 all over the place\n\nI wrote a letter to try to get her\nTo give me just one more try\nI wrote it plain I signed my name\nAnd I never got no reply\n\nNow I\u2019m sittin\u2019 at the banks of the riverbed\nListenin\u2019 to the crickets sing\nThere\u2019s a moon above just made for love\nAnd I can\u2019t do a thing",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My baby don\u2019t want me she don\u2019t need me",
+        "Found herself someone new",
+        "Left me alone sittin at home",
+        "With nothin\u2019 in the world to do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My stomach\u2019s churnin\u2019 my eyes are burnin\u2019",
+        "My hair is turnin\u2019 gray",
+        "Troubled deep can\u2019t get no sleep",
+        "Since she went away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "These blues they\u2019ve got me",
+        "Tears rollin down my face",
+        "That woman she left me",
+        "Cryin\u2019 all over the place"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wrote a letter to try to get her",
+        "To give me just one more try",
+        "I wrote it plain I signed my name",
+        "And I never got no reply"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m sittin\u2019 at the banks of the riverbed",
+        "Listenin\u2019 to the crickets sing",
+        "There\u2019s a moon above just made for love",
+        "And I can\u2019t do a thing"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

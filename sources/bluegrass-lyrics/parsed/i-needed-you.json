@@ -1,0 +1,29 @@
+{
+  "slug": "i-needed-you",
+  "title": "I Needed You",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-needed-you/",
+  "raw_lyrics": "I needed you when I met you\nYou were just playing around\nWhile I painted dreams of our everlasting love\nYou were just painting the town\n\nThen when you said it was over\nI found the heart good and true\nNow that it\u2019s too late you\u2019ve discovered\nYou needed me like I needed you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I needed you when I met you",
+        "You were just playing around",
+        "While I painted dreams of our everlasting love",
+        "You were just painting the town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then when you said it was over",
+        "I found the heart good and true",
+        "Now that it\u2019s too late you\u2019ve discovered",
+        "You needed me like I needed you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

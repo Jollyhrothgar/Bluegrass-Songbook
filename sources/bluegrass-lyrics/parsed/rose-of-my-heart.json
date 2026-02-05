@@ -1,0 +1,72 @@
+{
+  "slug": "rose-of-my-heart",
+  "title": "Rose Of My Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/rose-of-my-heart/",
+  "raw_lyrics": "We\u2019re the best partners this world\u2019s ever seen\nTogether as close as can be\nBut sometimes it\u2019s hard to find time in between\nTo tell you what you are to me\n\nYou are the rose of my heart\nYou are the love of my life\nA flower not faded nor falling apart\nIf you\u2019re tired, rest your head on my arm\nRose of my Heart.\n\nWhen sorrow holds you in her arms of clay\nIt\u2019s raindrops that fall from your eyes\nYour smile is the dun come to earth for a day\nYou brighten my blackest of skies\n\nYou are the rose of my heart\nYou are the love of my life\nA flower not faded nor falling apart\nIf you\u2019re cool let my love make you warm\nRose of my heart\n\nSo hard times are easy times, what do I care\nThere\u2019s nothing I\u2019d change if I could\nThe tears and the laughter are things that we share\nYour hand in mine makes all times good\n\nCH 3  You are the rose\u2026\nYou are the love\u2026\nA flower\u2026\nYou\u2019re my harbour in life\u2019s restless storm\nRose of my heart.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019re the best partners this world\u2019s ever seen",
+        "Together as close as can be",
+        "But sometimes it\u2019s hard to find time in between",
+        "To tell you what you are to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You are the rose of my heart",
+        "You are the love of my life",
+        "A flower not faded nor falling apart",
+        "If you\u2019re tired, rest your head on my arm",
+        "Rose of my Heart."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When sorrow holds you in her arms of clay",
+        "It\u2019s raindrops that fall from your eyes",
+        "Your smile is the dun come to earth for a day",
+        "You brighten my blackest of skies"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You are the rose of my heart",
+        "You are the love of my life",
+        "A flower not faded nor falling apart",
+        "If you\u2019re cool let my love make you warm",
+        "Rose of my heart"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So hard times are easy times, what do I care",
+        "There\u2019s nothing I\u2019d change if I could",
+        "The tears and the laughter are things that we share",
+        "Your hand in mine makes all times good"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "CH 3  You are the rose\u2026",
+        "You are the love\u2026",
+        "A flower\u2026",
+        "You\u2019re my harbour in life\u2019s restless storm",
+        "Rose of my heart."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

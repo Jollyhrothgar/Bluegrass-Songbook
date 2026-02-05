@@ -1,0 +1,49 @@
+{
+  "slug": "age",
+  "title": "Age",
+  "source_url": "https://www.bluegrasslyrics.com/song/age/",
+  "raw_lyrics": "I\u2019ve been up and down and around and \u2019round and back again\nI\u2019ve been so many places I can\u2019t remember where or when\nAnd my only boss is the clock on the wall and my only friend\nNever really was a friend at all\n\nWell I traded love for pennies and sold my soul for less\nLost my ideals in that long tunnel of time\nAnd I turned inside out and \u2019round about and back again\nFound myself right back where I started again.\n\nOnce I had myself a million now I\u2019ve only got a dime\nThe difference don\u2019t seem quite as bad today\nWith a nickle or million I was searchin\u2019 all the time\nFor something that I\u2019ve never lost or left behind.\n\nAnd now I\u2019m in my second circle and I\u2019m headin\u2019 for the top\nI\u2019ve learned a lot of things along the way\nI\u2019ll be careful while I\u2019m climbing \u2019cause it hurts alot to drop\nWhen you\u2019re down nobody gives a damn anyway.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been up and down and around and \u2019round and back again",
+        "I\u2019ve been so many places I can\u2019t remember where or when",
+        "And my only boss is the clock on the wall and my only friend",
+        "Never really was a friend at all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I traded love for pennies and sold my soul for less",
+        "Lost my ideals in that long tunnel of time",
+        "And I turned inside out and \u2019round about and back again",
+        "Found myself right back where I started again."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once I had myself a million now I\u2019ve only got a dime",
+        "The difference don\u2019t seem quite as bad today",
+        "With a nickle or million I was searchin\u2019 all the time",
+        "For something that I\u2019ve never lost or left behind."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And now I\u2019m in my second circle and I\u2019m headin\u2019 for the top",
+        "I\u2019ve learned a lot of things along the way",
+        "I\u2019ll be careful while I\u2019m climbing \u2019cause it hurts alot to drop",
+        "When you\u2019re down nobody gives a damn anyway."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

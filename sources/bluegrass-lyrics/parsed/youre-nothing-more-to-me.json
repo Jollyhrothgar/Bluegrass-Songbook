@@ -1,0 +1,69 @@
+{
+  "slug": "youre-nothing-more-to-me",
+  "title": "You\u2019re Nothing More To Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-nothing-more-to-me/",
+  "raw_lyrics": "Tonight we part forever\nYou\u2019re nothing more to me\nThe chain that bound us is broken\nNot a tear I\u2019ll shed for thee\n\nSo break the heart of another\nJust as you have broken mine\nGo tell her that you love her\nAnd call her fondly thine\n\nHere take this ring you gave me\nIt was so dear to me\nSo give it to another\nIt\u2019s nothing more to me\n\nWhen you gaze upon the engraving\nWill you think one time of me\nYou\u2019ve broken my heart forever\nNot a tear I\u2019ll shed for thee\n\nGoodnight goodbye forever\nYou\u2019re nothing more to me\nYou\u2019ve broken my heart forever\nNot a tear I\u2019ll shed for thee\n\nI must say goodbye my darling\nNevermore to meet again\nI will ask of you a promise\nWill you meet me up in heaven",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight we part forever",
+        "You\u2019re nothing more to me",
+        "The chain that bound us is broken",
+        "Not a tear I\u2019ll shed for thee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So break the heart of another",
+        "Just as you have broken mine",
+        "Go tell her that you love her",
+        "And call her fondly thine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Here take this ring you gave me",
+        "It was so dear to me",
+        "So give it to another",
+        "It\u2019s nothing more to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you gaze upon the engraving",
+        "Will you think one time of me",
+        "You\u2019ve broken my heart forever",
+        "Not a tear I\u2019ll shed for thee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goodnight goodbye forever",
+        "You\u2019re nothing more to me",
+        "You\u2019ve broken my heart forever",
+        "Not a tear I\u2019ll shed for thee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I must say goodbye my darling",
+        "Nevermore to meet again",
+        "I will ask of you a promise",
+        "Will you meet me up in heaven"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

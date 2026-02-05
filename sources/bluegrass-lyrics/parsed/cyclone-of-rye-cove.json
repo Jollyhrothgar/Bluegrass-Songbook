@@ -1,0 +1,59 @@
+{
+  "slug": "cyclone-of-rye-cove",
+  "title": "Cyclone Of Rye Cove",
+  "source_url": "https://www.bluegrasslyrics.com/song/cyclone-of-rye-cove/",
+  "raw_lyrics": "Oh listen today and a story I\u2019ll tell,\nIn sadness and tear rimmed eyes,\nOf a dreadful cyclone that came this way,\nAnd blew our schoolhouse away\n\n: Rye Cove (Rye Cove), Rye Cove (Rye Cove),\nThe land of my childhood and home,\nWhere life\u2019s early morn I once loved to roam,\nBut now it\u2019s so silent and lone\n\nWhen the cyclone appeared it darkened the air,\nAnd the lightning flashed over the sky,\nAnd the children all cried, don\u2019t take us away,\nBut spare us to go back home\n\nThere were mothers so dear and fathers the same,\nThat came to this terrible scene,\nSearching and crying each found their own child,\nDying on a pillow of stone\n\nOh give us a home far beyond the blue sky,\nWhere storms and cyclones are unknown,\nAnd there by life\u2019s strand we\u2019ll clasp the glad hand,\nOur children in their heavenly home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh listen today and a story I\u2019ll tell,",
+        "In sadness and tear rimmed eyes,",
+        "Of a dreadful cyclone that came this way,",
+        "And blew our schoolhouse away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        ": Rye Cove (Rye Cove), Rye Cove (Rye Cove),",
+        "The land of my childhood and home,",
+        "Where life\u2019s early morn I once loved to roam,",
+        "But now it\u2019s so silent and lone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the cyclone appeared it darkened the air,",
+        "And the lightning flashed over the sky,",
+        "And the children all cried, don\u2019t take us away,",
+        "But spare us to go back home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There were mothers so dear and fathers the same,",
+        "That came to this terrible scene,",
+        "Searching and crying each found their own child,",
+        "Dying on a pillow of stone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh give us a home far beyond the blue sky,",
+        "Where storms and cyclones are unknown,",
+        "And there by life\u2019s strand we\u2019ll clasp the glad hand,",
+        "Our children in their heavenly home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "old-man-at-the-mill",
+  "title": "Old Man At The Mill",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-man-at-the-mill/",
+  "raw_lyrics": "Same old man sitting at the mill\nThe mill turns around of its own free will\nHand in the hopper and the other in the sack\nLadies step forward and the gents fall back\n\nDown sat an owl and he said all quiet\nLonesome day and a lonesome night\nThought I heard a pretty girl say\nCourt all night and you sleep next day\n\nWell then, said the raven as she flew\nIf I was a young one I\u2019d get two\nOne for to fetch and the other to sew\nI\u2019d have a string for my bow, bow, bow\n\nMy old man\u2019s in Kalamazoo\nHe don\u2019t give no \u201cyes, I do\u201d\nFirst to the left and then to the right\nThis old mill grinds day and night",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Same old man sitting at the mill",
+        "The mill turns around of its own free will",
+        "Hand in the hopper and the other in the sack",
+        "Ladies step forward and the gents fall back"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Down sat an owl and he said all quiet",
+        "Lonesome day and a lonesome night",
+        "Thought I heard a pretty girl say",
+        "Court all night and you sleep next day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well then, said the raven as she flew",
+        "If I was a young one I\u2019d get two",
+        "One for to fetch and the other to sew",
+        "I\u2019d have a string for my bow, bow, bow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My old man\u2019s in Kalamazoo",
+        "He don\u2019t give no \u201cyes, I do\u201d",
+        "First to the left and then to the right",
+        "This old mill grinds day and night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

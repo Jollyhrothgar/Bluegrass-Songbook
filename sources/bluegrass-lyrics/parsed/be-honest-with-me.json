@@ -1,0 +1,39 @@
+{
+  "slug": "be-honest-with-me",
+  "title": "Be Honest With Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/be-honest-with-me/",
+  "raw_lyrics": "Be honest with me dear whatever you do\nRemember you\u2019re mine dear so always be true\nWherever you wander on land or on sea\nIf you really love me be honest with me\n\nMy poor heart would break dear if you were untrue\nAsleep or awake dear I\u2019ll dream about you\nOh you are my darlin\u2019 you\u2019re all that I see\nIf you really love me be honest with me\n\nSome day I\u2019ll return dear and make you my own\nAnd how I will yearn dear when I\u2019m all alone\nI\u2019ll never forget dear your sweet memory\nIf you really love me be honest with me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Be honest with me dear whatever you do",
+        "Remember you\u2019re mine dear so always be true",
+        "Wherever you wander on land or on sea",
+        "If you really love me be honest with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My poor heart would break dear if you were untrue",
+        "Asleep or awake dear I\u2019ll dream about you",
+        "Oh you are my darlin\u2019 you\u2019re all that I see",
+        "If you really love me be honest with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some day I\u2019ll return dear and make you my own",
+        "And how I will yearn dear when I\u2019m all alone",
+        "I\u2019ll never forget dear your sweet memory",
+        "If you really love me be honest with me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

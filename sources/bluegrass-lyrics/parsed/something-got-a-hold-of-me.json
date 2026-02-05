@@ -1,0 +1,69 @@
+{
+  "slug": "something-got-a-hold-of-me",
+  "title": "Something Got A Hold Of Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/something-got-a-hold-of-me/",
+  "raw_lyrics": "When first I heard of a people who claimed\nThis old time religion was real\nI says I\u2019ll go down and look at the crowd\nIt\u2019s just the weak minded I feel\n\nBut something got a hold of me\nYes something got a hold of me\nI went there to fight but on that night\nThere\u2019s something got a hold of me\n\nI went right down to sit at the door\nAnd the devil said don\u2019t you go in\nI said I\u2019ll go in for that cannot hurt\nAnd sit as far back as I can\n\nAbout that time he got up to leave\nAnd he looked right down upon me\nHe told everybody how mean I had been\nNot thinking so much of me\n\nThey sing and shout and they all clapped their hands\nAnd they all got down on their knees\nWhen the fire came from heaven it fell right on me\nAnd then I fell to the floor\n\nSo now I\u2019ve learnt and there\u2019s no need to doubt\nThat the old time religion is real\nI have a spirit I\u2019ll never forget\nThat something got a hold of me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When first I heard of a people who claimed",
+        "This old time religion was real",
+        "I says I\u2019ll go down and look at the crowd",
+        "It\u2019s just the weak minded I feel"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "But something got a hold of me",
+        "Yes something got a hold of me",
+        "I went there to fight but on that night",
+        "There\u2019s something got a hold of me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went right down to sit at the door",
+        "And the devil said don\u2019t you go in",
+        "I said I\u2019ll go in for that cannot hurt",
+        "And sit as far back as I can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "About that time he got up to leave",
+        "And he looked right down upon me",
+        "He told everybody how mean I had been",
+        "Not thinking so much of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They sing and shout and they all clapped their hands",
+        "And they all got down on their knees",
+        "When the fire came from heaven it fell right on me",
+        "And then I fell to the floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So now I\u2019ve learnt and there\u2019s no need to doubt",
+        "That the old time religion is real",
+        "I have a spirit I\u2019ll never forget",
+        "That something got a hold of me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

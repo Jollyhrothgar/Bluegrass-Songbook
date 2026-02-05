@@ -1,0 +1,39 @@
+{
+  "slug": "across-the-blue-sea",
+  "title": "Across The Blue Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/across-the-blue-sea/",
+  "raw_lyrics": "I\u2019m going across the deep blue sea\nIn this country tell me\nI\u2019m all alone so sad and blue\nMy every thought is just fo you\n\nIn these long years that I spent here\nI onely wish that you were here\nTo the dizzy fog and a mist of rain\nI can see you strolling right down the lane\n\nSomeday darling I will return\nThen our hearts will no longer yearn\nThings will be just like before\nJust your and I forever more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going across the deep blue sea",
+        "In this country tell me",
+        "I\u2019m all alone so sad and blue",
+        "My every thought is just fo you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In these long years that I spent here",
+        "I onely wish that you were here",
+        "To the dizzy fog and a mist of rain",
+        "I can see you strolling right down the lane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday darling I will return",
+        "Then our hearts will no longer yearn",
+        "Things will be just like before",
+        "Just your and I forever more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "my-cabin-in-caroline",
+  "title": "My Cabin In Caroline",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-cabin-in-caroline/",
+  "raw_lyrics": "There\u2019s a cabin in the pines in the hills of Caroline\nAnd a blue-eyed girl is waiting there for me\nI\u2019ll be going back some day and from her I\u2019ll never stray\nAnd the cabin in the hills of Caroline\n\nOh, the cabin in the shadow of the pines\nAnd the blue-eyed girl way down in Caroline\nSomeday she\u2019ll be my wife and we\u2019ll live a happy life\nIn a cabin in the hills of Caroline\n\nI\u2019m packing my grip for that long long trip\nBack to the hills of Caroline\nI want to see that blue-eyed girl, she\u2019s the sweetest in the world\nAnd the cabin in the hills of Caroline\n\nAnd when it\u2019s late at night, and the moon is shining bright\nAnd the whippoorwill is calling from the hill\nThen I\u2019ll tell her of my love, greater than the stars above\nHow I love her now and I know I always will",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a cabin in the pines in the hills of Caroline",
+        "And a blue-eyed girl is waiting there for me",
+        "I\u2019ll be going back some day and from her I\u2019ll never stray",
+        "And the cabin in the hills of Caroline"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, the cabin in the shadow of the pines",
+        "And the blue-eyed girl way down in Caroline",
+        "Someday she\u2019ll be my wife and we\u2019ll live a happy life",
+        "In a cabin in the hills of Caroline"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m packing my grip for that long long trip",
+        "Back to the hills of Caroline",
+        "I want to see that blue-eyed girl, she\u2019s the sweetest in the world",
+        "And the cabin in the hills of Caroline"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And when it\u2019s late at night, and the moon is shining bright",
+        "And the whippoorwill is calling from the hill",
+        "Then I\u2019ll tell her of my love, greater than the stars above",
+        "How I love her now and I know I always will"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "go-tell-aunt-rodie",
+  "title": "Go Tell Aunt Rodie",
+  "source_url": "https://www.bluegrasslyrics.com/song/go-tell-aunt-rodie/",
+  "raw_lyrics": "Go tell Aunt Rodie\ngo tell Aunt Rodie\nGo tell Aunt Rodie\nthe old gray goose is dead\n\nIt\u2019s the one she\u2019s been saving\nthe one she\u2019s been saving\nThe one she\u2019s been saving to make a feather bed\n\nShe died last Friday\nshe died last Friday\nShe died last Friday with an achin\u2019 in her head\n\nOld grander\u2019s weeping\nold grander\u2019s weeping\nOld grander\u2019s weeping because his wife is dead\n\nThe goslin\u2019s are mourning\nthe goslin\u2019s are mourning\nThe goslin\u2019s are mourning because their mother\u2019s dead",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Go tell Aunt Rodie",
+        "go tell Aunt Rodie",
+        "Go tell Aunt Rodie",
+        "the old gray goose is dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s the one she\u2019s been saving",
+        "the one she\u2019s been saving",
+        "The one she\u2019s been saving to make a feather bed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She died last Friday",
+        "she died last Friday",
+        "She died last Friday with an achin\u2019 in her head"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Old grander\u2019s weeping",
+        "old grander\u2019s weeping",
+        "Old grander\u2019s weeping because his wife is dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The goslin\u2019s are mourning",
+        "the goslin\u2019s are mourning",
+        "The goslin\u2019s are mourning because their mother\u2019s dead"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

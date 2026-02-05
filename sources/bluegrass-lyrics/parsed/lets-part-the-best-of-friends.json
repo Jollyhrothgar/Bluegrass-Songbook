@@ -1,0 +1,49 @@
+{
+  "slug": "lets-part-the-best-of-friends",
+  "title": "Let\u2019s Part The Best Of Friends",
+  "source_url": "https://www.bluegrasslyrics.com/song/lets-part-the-best-of-friends/",
+  "raw_lyrics": "Each night I dream of you sweet heart\nI can\u2019t see why we had to part\nBut there\u2019s no reason now to stay\nFor I was only in your way\n\nOh how I long to see your face\nTho\u2019 there\u2019s someone in my place\nOr just to hear your voice again\nDarling why not part the best of friends\n\nI played the game of love and lost\nMy broken heart has paid the cost\nAnd now that I am free to go\nSomehow  sweet heart I miss you so\n\nYou say that you are happy now\nI\u2019ll try to forget the past some how\nBut if your new love turns you down\nRemember me I\u2019m still around",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Each night I dream of you sweet heart",
+        "I can\u2019t see why we had to part",
+        "But there\u2019s no reason now to stay",
+        "For I was only in your way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh how I long to see your face",
+        "Tho\u2019 there\u2019s someone in my place",
+        "Or just to hear your voice again",
+        "Darling why not part the best of friends"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I played the game of love and lost",
+        "My broken heart has paid the cost",
+        "And now that I am free to go",
+        "Somehow  sweet heart I miss you so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You say that you are happy now",
+        "I\u2019ll try to forget the past some how",
+        "But if your new love turns you down",
+        "Remember me I\u2019m still around"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

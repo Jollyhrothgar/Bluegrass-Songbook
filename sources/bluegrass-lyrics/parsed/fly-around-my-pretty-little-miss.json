@@ -1,0 +1,49 @@
+{
+  "slug": "fly-around-my-pretty-little-miss",
+  "title": "Fly Around My Pretty Little Miss",
+  "source_url": "https://www.bluegrasslyrics.com/song/fly-around-my-pretty-little-miss/",
+  "raw_lyrics": "Fly around my pretty little miss\nFly around my daisy\nFly around my pretty little miss\nYou almost drive me crazy\n\nThe higher up the cherry tree\nThe riper grows the cherries\nThe more you hug and kiss the girls\nThe sooner they will marry\n\nCoffee grows on white oak trees\nThe river flows with brandy\nIf I had my pretty little miss\nI\u2019d feed her sugar candy\n\nGoing to get some weevily wheat\nI\u2019m going to get some barley\nGoing to get some weevily wheat\nAnd bake a cake for Charlie",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Fly around my pretty little miss",
+        "Fly around my daisy",
+        "Fly around my pretty little miss",
+        "You almost drive me crazy"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The higher up the cherry tree",
+        "The riper grows the cherries",
+        "The more you hug and kiss the girls",
+        "The sooner they will marry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Coffee grows on white oak trees",
+        "The river flows with brandy",
+        "If I had my pretty little miss",
+        "I\u2019d feed her sugar candy"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Going to get some weevily wheat",
+        "I\u2019m going to get some barley",
+        "Going to get some weevily wheat",
+        "And bake a cake for Charlie"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

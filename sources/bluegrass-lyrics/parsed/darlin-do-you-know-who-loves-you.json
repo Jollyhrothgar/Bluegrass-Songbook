@@ -1,0 +1,49 @@
+{
+  "slug": "darlin-do-you-know-who-loves-you",
+  "title": "Darlin Do You Know Who Loves You",
+  "source_url": "https://www.bluegrasslyrics.com/song/darlin-do-you-know-who-loves-you/",
+  "raw_lyrics": "Darlin do you know who loves you\nDo you know whose heart you won\nI\u2019ll be lonely here without you\nWhen these parting words do come\n\nTake me back to my old country\nLet me hear the lonesome dove\nWhere a blue eyed girl is waiting\nFor this mountain boy to love\n\nCan\u2019t you see the sun a sinkin\u2019\nOver the mountains over the sea\nWhere the days will last in memory\nIt may be the last of me\n\nTake me back to Roanoke valley\nGently lay me down to rest\nPlace a kiss upon my forehead\nFor I\u2019m the boy who loves you best",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Darlin do you know who loves you",
+        "Do you know whose heart you won",
+        "I\u2019ll be lonely here without you",
+        "When these parting words do come"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take me back to my old country",
+        "Let me hear the lonesome dove",
+        "Where a blue eyed girl is waiting",
+        "For this mountain boy to love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Can\u2019t you see the sun a sinkin\u2019",
+        "Over the mountains over the sea",
+        "Where the days will last in memory",
+        "It may be the last of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take me back to Roanoke valley",
+        "Gently lay me down to rest",
+        "Place a kiss upon my forehead",
+        "For I\u2019m the boy who loves you best"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

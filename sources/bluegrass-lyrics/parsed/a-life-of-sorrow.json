@@ -1,0 +1,49 @@
+{
+  "slug": "a-life-of-sorrow",
+  "title": "A Life Of Sorrow",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-life-of-sorrow/",
+  "raw_lyrics": "After traveling through this world of sorrow\nNo one on earth to call my friend\nI\u2019m on my way back to old Kentucky\nWhere I met and loved but could not win.\n\nI\u2019ve always loved you little darling\nMy heart will always feel the same\nI could never do one thing to hurt you\nI\u2019d rather die than bring you shame.\n\nWhen that cold dark shroud is wrapped around me\nThey lay my weary head to rest\nWill you stand around and gaze upon me\nFor I\u2019m the one that loved you best\n\nWhen your golden hair is turned to silver\nThe master calls your soul to heaven\nWhere we can be free from all our troubles\nI\u2019ll meet you there at journey\u2019s end",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "After traveling through this world of sorrow",
+        "No one on earth to call my friend",
+        "I\u2019m on my way back to old Kentucky",
+        "Where I met and loved but could not win."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve always loved you little darling",
+        "My heart will always feel the same",
+        "I could never do one thing to hurt you",
+        "I\u2019d rather die than bring you shame."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When that cold dark shroud is wrapped around me",
+        "They lay my weary head to rest",
+        "Will you stand around and gaze upon me",
+        "For I\u2019m the one that loved you best"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When your golden hair is turned to silver",
+        "The master calls your soul to heaven",
+        "Where we can be free from all our troubles",
+        "I\u2019ll meet you there at journey\u2019s end"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

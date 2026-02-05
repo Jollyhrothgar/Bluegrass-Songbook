@@ -1,0 +1,75 @@
+{
+  "slug": "sinking-in-the-lonesome-sea",
+  "title": "Sinking In The Lonesome Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/sinking-in-the-lonesome-sea/",
+  "raw_lyrics": "There was a little ship\nAnd it sailed upon the sea\nAnd she went by the name of the Merry Golden Tree\nAnd she sailed upon the low and lonesome low\nAnd she sailed upon the lonesome sea\n\nThere was a little sailor\nUnto his captain said\nOh captain captain what\u2019ll you give to me\nIf I sink them in the low and lonesome low\nIf I sink them in the lonesome sea\n\nTwo hundred dollars\nI will give unto thee\nAnd my oldest daughter I will wed unto you\nIf you sink them in the low and lonesome low\nIf you sink them in the lonesome sea\n\nHe bowed upon his breast\nAnd away swim he\nTill he came the ship of the Turkish Reveille\nAs she sailed upon the low and lonesome low\nAs she sailed upon the lonesome sea\n\nIf it wasn\u2019t for the love\nOf your daughter and your men\nI would do unto you as I did unto them\nI would sink you in the low and lonesome low\nI would sink you in the lonesome sea\n\nHe bowed his head\nAnd down sank he\nFarewell farewell to the Merry Golden Tree\nFor I\u2019m sinking in the low and lonesome low\nFor I\u2019m sinking in the lonesome sea",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There was a little ship",
+        "And it sailed upon the sea",
+        "And she went by the name of the Merry Golden Tree",
+        "And she sailed upon the low and lonesome low",
+        "And she sailed upon the lonesome sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There was a little sailor",
+        "Unto his captain said",
+        "Oh captain captain what\u2019ll you give to me",
+        "If I sink them in the low and lonesome low",
+        "If I sink them in the lonesome sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Two hundred dollars",
+        "I will give unto thee",
+        "And my oldest daughter I will wed unto you",
+        "If you sink them in the low and lonesome low",
+        "If you sink them in the lonesome sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He bowed upon his breast",
+        "And away swim he",
+        "Till he came the ship of the Turkish Reveille",
+        "As she sailed upon the low and lonesome low",
+        "As she sailed upon the lonesome sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If it wasn\u2019t for the love",
+        "Of your daughter and your men",
+        "I would do unto you as I did unto them",
+        "I would sink you in the low and lonesome low",
+        "I would sink you in the lonesome sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He bowed his head",
+        "And down sank he",
+        "Farewell farewell to the Merry Golden Tree",
+        "For I\u2019m sinking in the low and lonesome low",
+        "For I\u2019m sinking in the lonesome sea"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

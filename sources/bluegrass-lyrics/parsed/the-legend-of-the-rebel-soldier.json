@@ -1,0 +1,46 @@
+{
+  "slug": "the-legend-of-the-rebel-soldier",
+  "title": "The Legend Of The Rebel Soldier",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-legend-of-the-rebel-soldier/",
+  "raw_lyrics": "In a dreary Yankee prison where a revel soldier lay.\nBy his side there stood a preacher Ere his soul should pass away.\nAnd he faintly whispered:  \u201cParson\u201d as he clutched him by the hand\nOh Parson, tell me quickly, Will my sould pass through the southland?\n\nWill my soul pass through the Southland, through old Virginia grand\nWill i see the hills of Georgia and the green fields of Alabam?\nWill i see that little churchhouse, where i pledged my heart and hand\nOh Parson, tell me quickly, will my soul pass thorugh the Southland?\n\nWas for loving dear old Dixie, in this dreary cell I lie\nWas for loving dear old Dixie, in this northern state i die.\nWill you see my littl daughter, wil you make her understand\nOh Parson, tell my quickly, will my soul pass through the Southland?\n\nThen the Rebel soldier died.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a dreary Yankee prison where a revel soldier lay.",
+        "By his side there stood a preacher Ere his soul should pass away.",
+        "And he faintly whispered:  \u201cParson\u201d as he clutched him by the hand",
+        "Oh Parson, tell me quickly, Will my sould pass through the southland?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Will my soul pass through the Southland, through old Virginia grand",
+        "Will i see the hills of Georgia and the green fields of Alabam?",
+        "Will i see that little churchhouse, where i pledged my heart and hand",
+        "Oh Parson, tell me quickly, will my soul pass thorugh the Southland?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Was for loving dear old Dixie, in this dreary cell I lie",
+        "Was for loving dear old Dixie, in this northern state i die.",
+        "Will you see my littl daughter, wil you make her understand",
+        "Oh Parson, tell my quickly, will my soul pass through the Southland?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then the Rebel soldier died."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

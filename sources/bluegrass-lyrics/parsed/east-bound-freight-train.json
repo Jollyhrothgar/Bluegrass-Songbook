@@ -1,0 +1,59 @@
+{
+  "slug": "east-bound-freight-train",
+  "title": "East Bound Freight Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/east-bound-freight-train/",
+  "raw_lyrics": "I never was so lonesome for my home town\nSeems I never was so far away\nNow I can here the freight train a blowing\nI\u2019ll be gone before the break of day\n\nI\u2019ll have to quit my daily rambling\nTonight I\u2019m gonna start my journey back\nSitting on the top an old box car\nSailing down that silvery stream of track\n\nEast bound freight train east bound freight train\nTake me home again\nEast bound freight train east bound freight train\nLet me stay \u2019til the end\n\nNow I\u2019ll never stray from my home town\nNever leave again to roam\nI know that I was born to wander\nBut I\u2019m gonna stick around my home\n\nNow I see the smoke a rolling\nOut on that old smoke stack\nI\u2019m sitting on the top of an old box car\nSailing down that silvery stream of track",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I never was so lonesome for my home town",
+        "Seems I never was so far away",
+        "Now I can here the freight train a blowing",
+        "I\u2019ll be gone before the break of day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll have to quit my daily rambling",
+        "Tonight I\u2019m gonna start my journey back",
+        "Sitting on the top an old box car",
+        "Sailing down that silvery stream of track"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "East bound freight train east bound freight train",
+        "Take me home again",
+        "East bound freight train east bound freight train",
+        "Let me stay \u2019til the end"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019ll never stray from my home town",
+        "Never leave again to roam",
+        "I know that I was born to wander",
+        "But I\u2019m gonna stick around my home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I see the smoke a rolling",
+        "Out on that old smoke stack",
+        "I\u2019m sitting on the top of an old box car",
+        "Sailing down that silvery stream of track"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

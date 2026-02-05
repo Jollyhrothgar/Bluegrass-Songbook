@@ -1,0 +1,59 @@
+{
+  "slug": "uncle-joe",
+  "title": "Uncle Joe",
+  "source_url": "https://www.bluegrasslyrics.com/song/uncle-joe/",
+  "raw_lyrics": "Have you ever been to meeting Uncle Joe Uncle Joe\nHave you ever been to meeting Uncle Joe Uncle Joe\nHave you ever been to meeting Uncle Joe Uncle Joe\nI don\u2019t mind the weather so the wind don\u2019t blow\n\nHop up my ladies three in a row\nHop up my ladies three in a row\nHop high ladies for the cake\u2019s all dough\nHow I get enough time Lord I never know\n\nWill your horse carry double Uncle Joe Uncle Joe\nWill your horse carry double Uncle Joe Uncle Joe\nWill your horse carry double Uncle Joe Uncle Joe\nI don\u2019t mind the weather so the wind don\u2019t blow\n\nIs your horse a single footer Uncle Joe Uncle Joe\nIs your horse a single footer Uncle Joe Uncle Joe\nIs your horse a single footer Uncle Joe Uncle Joe\nI don\u2019t mind the weather so the wind don\u2019t blow\n\nWould you rather have a pacer Uncle Joe Uncle Joe\nWould you rather have a pacer Uncle Joe Uncle Joe\nWould you rather have a pacer Uncle Joe Uncle Joe\nI don\u2019t mind the weather so the wind don\u2019t blow",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Have you ever been to meeting Uncle Joe Uncle Joe",
+        "Have you ever been to meeting Uncle Joe Uncle Joe",
+        "Have you ever been to meeting Uncle Joe Uncle Joe",
+        "I don\u2019t mind the weather so the wind don\u2019t blow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hop up my ladies three in a row",
+        "Hop up my ladies three in a row",
+        "Hop high ladies for the cake\u2019s all dough",
+        "How I get enough time Lord I never know"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Will your horse carry double Uncle Joe Uncle Joe",
+        "Will your horse carry double Uncle Joe Uncle Joe",
+        "Will your horse carry double Uncle Joe Uncle Joe",
+        "I don\u2019t mind the weather so the wind don\u2019t blow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Is your horse a single footer Uncle Joe Uncle Joe",
+        "Is your horse a single footer Uncle Joe Uncle Joe",
+        "Is your horse a single footer Uncle Joe Uncle Joe",
+        "I don\u2019t mind the weather so the wind don\u2019t blow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Would you rather have a pacer Uncle Joe Uncle Joe",
+        "Would you rather have a pacer Uncle Joe Uncle Joe",
+        "Would you rather have a pacer Uncle Joe Uncle Joe",
+        "I don\u2019t mind the weather so the wind don\u2019t blow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "jesus-is-a-rock",
+  "title": "Jesus is a Rock",
+  "source_url": "https://www.bluegrasslyrics.com/song/jesus-is-a-rock/",
+  "raw_lyrics": "Jesus is a rock hallelujah\nHe is a rock amen\nHe is a rock hallelujah\nHe is a rock\nJesus is a rock amen\n\nThere\u2019s no future in building\nA house upon the sinking sand\nWhy not build a home eternal\nForever on the rock we stand\n\nThere\u2019s no harm can overtake you\nWhile you\u2019re holding to his hand\nHe will never ever leave you\nHe is the solid rock my friend",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Jesus is a rock hallelujah",
+        "He is a rock amen",
+        "He is a rock hallelujah",
+        "He is a rock",
+        "Jesus is a rock amen"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s no future in building",
+        "A house upon the sinking sand",
+        "Why not build a home eternal",
+        "Forever on the rock we stand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s no harm can overtake you",
+        "While you\u2019re holding to his hand",
+        "He will never ever leave you",
+        "He is the solid rock my friend"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "some-day",
+  "title": "Some Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/some-day/",
+  "raw_lyrics": "Some day when my last line is written\nSome day when I\u2019ve drawn my last breath\nWhen my last words on earth have been spoken\nAnd my lips are sealed in death\n\nDon\u2019t look on my cold form in pity\nDon\u2019t think of me as one dead\nIt\u2019ll just be the house I once lived in\nMy spirit, by then, will have fled\n\nI\u2019ll have finished my time here allotted\nBut I won\u2019t be in darkness alone\nI will have heard from Heaven\nThe summons to come on home\n\nAnd when my body is in the grave\nDon\u2019t think that I\u2019ll be there\nI won\u2019t be dead, but living\nIn the place Jesus went to prepare\n\nAnd after all is said and done\nKnow that my last earnest prayer\nIs that my loved ones be ready\nSomeday to meet me thereBl",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Some day when my last line is written",
+        "Some day when I\u2019ve drawn my last breath",
+        "When my last words on earth have been spoken",
+        "And my lips are sealed in death"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t look on my cold form in pity",
+        "Don\u2019t think of me as one dead",
+        "It\u2019ll just be the house I once lived in",
+        "My spirit, by then, will have fled"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll have finished my time here allotted",
+        "But I won\u2019t be in darkness alone",
+        "I will have heard from Heaven",
+        "The summons to come on home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And when my body is in the grave",
+        "Don\u2019t think that I\u2019ll be there",
+        "I won\u2019t be dead, but living",
+        "In the place Jesus went to prepare"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And after all is said and done",
+        "Know that my last earnest prayer",
+        "Is that my loved ones be ready",
+        "Someday to meet me thereBl"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

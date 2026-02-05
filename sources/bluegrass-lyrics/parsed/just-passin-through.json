@@ -1,0 +1,68 @@
+{
+  "slug": "just-passin-through",
+  "title": "Just Passin\u2019 Through",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-passin-through/",
+  "raw_lyrics": "Well it\u2019s Friday night at the Legion hall in some Alberta town\nAnd from the stage I see you as you look me up and down\nLater on you\u2019ll ask me if I\u2019ll share some time with you\nI\u2019ll say sorry honey not tonight I\u2019m just a passin\u2019 through\n\nNow I may be a stranger to this little country town\nBut in your eyes I recognize a man who gets around\nYou say you want to be with me and make my dreams come true\nBut I pay no mind I know your kind and I\u2019m just a passin\u2019 through\n\nThey tell me that they\u2019ve never heard a singer quite so sweet\nAnd when I play the fast ones it just knocks them them off their feet\nWell I don\u2019t mind the compliment but I\u2019m nobody\u2019s fool\nI don\u2019t pay no mind they\u2019re not my kind\nand I\u2019m a just a passin\u2019 through\n\nWell I don\u2019t know how many times before I\u2019ve met a man like you\nWho thinks I\u2019m something special on account of what I do\nI can tell you I\u2019m no different from the girl who cooks for you\nI\u2019m just cookin\u2019 on this old guitar and I\u2019m singin\u2019 songs for you\n\nDon\u2019t think that you\u2019re the only one it happens all the time\nYou cowboys think you\u2019ll win my prize by handing me a line\nWhy don\u2019t you let me sing my songs there\u2019s other girls to woo\nAnd I\u2019ll make a bet you you won\u2019t regret that I was just a passin\u2019 through\n\nWell nobody told me this is how I\u2019d have to pay my dues\nBut I\u2019ll be long gone before too long \u2019cause I\u2019m just a passin\u2019 through",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well it\u2019s Friday night at the Legion hall in some Alberta town",
+        "And from the stage I see you as you look me up and down",
+        "Later on you\u2019ll ask me if I\u2019ll share some time with you",
+        "I\u2019ll say sorry honey not tonight I\u2019m just a passin\u2019 through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I may be a stranger to this little country town",
+        "But in your eyes I recognize a man who gets around",
+        "You say you want to be with me and make my dreams come true",
+        "But I pay no mind I know your kind and I\u2019m just a passin\u2019 through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They tell me that they\u2019ve never heard a singer quite so sweet",
+        "And when I play the fast ones it just knocks them them off their feet",
+        "Well I don\u2019t mind the compliment but I\u2019m nobody\u2019s fool",
+        "I don\u2019t pay no mind they\u2019re not my kind",
+        "and I\u2019m a just a passin\u2019 through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I don\u2019t know how many times before I\u2019ve met a man like you",
+        "Who thinks I\u2019m something special on account of what I do",
+        "I can tell you I\u2019m no different from the girl who cooks for you",
+        "I\u2019m just cookin\u2019 on this old guitar and I\u2019m singin\u2019 songs for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t think that you\u2019re the only one it happens all the time",
+        "You cowboys think you\u2019ll win my prize by handing me a line",
+        "Why don\u2019t you let me sing my songs there\u2019s other girls to woo",
+        "And I\u2019ll make a bet you you won\u2019t regret that I was just a passin\u2019 through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well nobody told me this is how I\u2019d have to pay my dues",
+        "But I\u2019ll be long gone before too long \u2019cause I\u2019m just a passin\u2019 through"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

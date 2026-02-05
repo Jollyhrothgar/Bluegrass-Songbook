@@ -1,0 +1,39 @@
+{
+  "slug": "its-good-to-see-you",
+  "title": "It\u2019s Good To See You",
+  "source_url": "https://www.bluegrasslyrics.com/song/its-good-to-see-you/",
+  "raw_lyrics": "It\u2019s good to see you, so good to see you\nOh how I\u2019ve missed you since I\u2019ve been gone\nCause I\u2019ve crossed the ocean, travelled through many lands\nAnd it\u2019s good to see you, to be in   your home.\n\nThere\u2019s something in me that makes me wonder\nThere\u2019s many a land I have to see\nAnd when I\u2019m far away in a land of strangers\nI know my good friends think on me.\n\nOh it\u2019s a wonder when it  comes to friendship\nNo matter how far, no matter how long\nThere\u2019s a constant thread that\u2019s never broken\nAnd it ties me to my friends at home",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s good to see you, so good to see you",
+        "Oh how I\u2019ve missed you since I\u2019ve been gone",
+        "Cause I\u2019ve crossed the ocean, travelled through many lands",
+        "And it\u2019s good to see you, to be in   your home."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s something in me that makes me wonder",
+        "There\u2019s many a land I have to see",
+        "And when I\u2019m far away in a land of strangers",
+        "I know my good friends think on me."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh it\u2019s a wonder when it  comes to friendship",
+        "No matter how far, no matter how long",
+        "There\u2019s a constant thread that\u2019s never broken",
+        "And it ties me to my friends at home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

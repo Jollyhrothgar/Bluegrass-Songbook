@@ -1,0 +1,49 @@
+{
+  "slug": "whos-going-down-to-town",
+  "title": "Who\u2019s Going Down To Town",
+  "source_url": "https://www.bluegrasslyrics.com/song/whos-going-down-to-town/",
+  "raw_lyrics": "Whiskey by the gallon\nsugar by the pound\nGreat big bowl to put it in\nAnd a spoon to stir it round\n\nWho\u2019s going down to town\nWho\u2019s going down to town\nWho\u2019s going down to Welmingtown\nTo carry my tobacco round\n\nOnce I had an old coon dog\nAnd I wish I had him back\nHe chase the big dogs over the fence\nAnd the little ones through the cracks\n\nAnd once I had a little girl\nI brought her from the south\nShe\u2019s braid her hair so doggone tight\nShe couldn\u2019t close her mouth",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Whiskey by the gallon",
+        "sugar by the pound",
+        "Great big bowl to put it in",
+        "And a spoon to stir it round"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Who\u2019s going down to town",
+        "Who\u2019s going down to town",
+        "Who\u2019s going down to Welmingtown",
+        "To carry my tobacco round"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once I had an old coon dog",
+        "And I wish I had him back",
+        "He chase the big dogs over the fence",
+        "And the little ones through the cracks"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And once I had a little girl",
+        "I brought her from the south",
+        "She\u2019s braid her hair so doggone tight",
+        "She couldn\u2019t close her mouth"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

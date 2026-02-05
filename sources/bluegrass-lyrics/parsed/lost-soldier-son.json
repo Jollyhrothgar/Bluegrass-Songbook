@@ -1,0 +1,69 @@
+{
+  "slug": "lost-soldier-son",
+  "title": "Lost Soldier Son",
+  "source_url": "https://www.bluegrasslyrics.com/song/lost-soldier-son/",
+  "raw_lyrics": "Our family is proud of their lost soldier son\nNot because they believe in the flag or a gun\nThey miss him because they remember him well\nAnd loved him so dearly \u2018for the day that he fell\n\nAll I knew was the pictures some stories they told\nAbout young Carl Junior that good hearted boy\nWe had a connection I\u2019ll tell it to you\nHe liked the good music now just like I do\n\nI see a kind face staring down from the wall\nEvery time that I pass through my grandparents hall\nIt\u2019s almost reflection his face so like mine\nMy uncle Carl Junior now in the great line\n\nMy mother remembers the day that she heard\nAs she learned of her brother she spoke not a word\nA small yellow paper received on that day\nIt read killed in action in France far away\n\nThey still love him dearly it all seems so sad\nGrandmother grandfather my mother and dad\nThey cherish the last things he won from afar\nThat one purple heart and a bright silver star\n\nNow nothing can bring the boy back to the fold\nBut his precious memories ever loving we hold\nWhen the music is playing and we\u2019re all gathered there\nOur spirits rekindle no more to despair",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Our family is proud of their lost soldier son",
+        "Not because they believe in the flag or a gun",
+        "They miss him because they remember him well",
+        "And loved him so dearly \u2018for the day that he fell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All I knew was the pictures some stories they told",
+        "About young Carl Junior that good hearted boy",
+        "We had a connection I\u2019ll tell it to you",
+        "He liked the good music now just like I do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I see a kind face staring down from the wall",
+        "Every time that I pass through my grandparents hall",
+        "It\u2019s almost reflection his face so like mine",
+        "My uncle Carl Junior now in the great line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother remembers the day that she heard",
+        "As she learned of her brother she spoke not a word",
+        "A small yellow paper received on that day",
+        "It read killed in action in France far away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They still love him dearly it all seems so sad",
+        "Grandmother grandfather my mother and dad",
+        "They cherish the last things he won from afar",
+        "That one purple heart and a bright silver star"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now nothing can bring the boy back to the fold",
+        "But his precious memories ever loving we hold",
+        "When the music is playing and we\u2019re all gathered there",
+        "Our spirits rekindle no more to despair"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

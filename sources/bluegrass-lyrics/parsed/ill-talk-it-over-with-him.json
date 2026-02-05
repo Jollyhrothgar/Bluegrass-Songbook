@@ -1,0 +1,49 @@
+{
+  "slug": "ill-talk-it-over-with-him",
+  "title": "I\u2019ll Talk It Over With Him",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-talk-it-over-with-him/",
+  "raw_lyrics": "I\u2019m gonna sit down and rest gently lean on His breast\nI\u2019ll talk it all over with Him\nI\u2019ll see my mother and dad truest friends I ever had\nI\u2019ll talk it all over with Him\n\nI\u2019m gonna sit I\u2019m gonna stand up gonna walk all around\nI\u2019ll talk it all over with Him\nI\u2019ll meet old\u2019 Peter and Paul but the best of it all\nI\u2019ll talk it all over with Him\n\nUp in that land of sweet rest with the good and the blessed\nI\u2019ll talk it all over with Him\nAnd by my Savior\u2019s dear side I will ever abide\nI\u2019ll talk it all over with Him\n\nSo many things in this land I shall ne\u2019er understand\nI\u2019ll talk it all over with Him\nI\u2019ll still be true to my Lord as we live in accord\nI\u2019ll talk it all over with Him",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m gonna sit down and rest gently lean on His breast",
+        "I\u2019ll talk it all over with Him",
+        "I\u2019ll see my mother and dad truest friends I ever had",
+        "I\u2019ll talk it all over with Him"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m gonna sit I\u2019m gonna stand up gonna walk all around",
+        "I\u2019ll talk it all over with Him",
+        "I\u2019ll meet old\u2019 Peter and Paul but the best of it all",
+        "I\u2019ll talk it all over with Him"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Up in that land of sweet rest with the good and the blessed",
+        "I\u2019ll talk it all over with Him",
+        "And by my Savior\u2019s dear side I will ever abide",
+        "I\u2019ll talk it all over with Him"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So many things in this land I shall ne\u2019er understand",
+        "I\u2019ll talk it all over with Him",
+        "I\u2019ll still be true to my Lord as we live in accord",
+        "I\u2019ll talk it all over with Him"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

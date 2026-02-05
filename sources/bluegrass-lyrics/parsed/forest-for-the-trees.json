@@ -1,0 +1,69 @@
+{
+  "slug": "forest-for-the-trees",
+  "title": "Forest For The Trees",
+  "source_url": "https://www.bluegrasslyrics.com/song/forest-for-the-trees/",
+  "raw_lyrics": "When first unto this land I came\nShe was a virgin paradise\nThe truth was there for all to see\nNo falsehood and no lies.\n\nShe was overflowing\nWith everything we need\nWe took so much we never saw\nThe forest for the trees.\n\nThis land she is my lover\nShe fills me with desire\nSeasons come and seasons go\nEarth water wind and fire.\n\nI cleared this land with my bare hands\nShe gave me everything so free\nShe gave so much I couldn\u2019t see\nThe forest for the trees.\n\nI\u2019m an addict with a habit\nI\u2019m kept so well supplied\nWith all my greed and hope and love and fear\n1 can\u2019t be satisifed.\n\nI took my young son up on a clear cut mountain\nI fell down on my knees\nI prayed that he would someday see the forest for the trees\nI pray that we might someday see the forest for the trees.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When first unto this land I came",
+        "She was a virgin paradise",
+        "The truth was there for all to see",
+        "No falsehood and no lies."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was overflowing",
+        "With everything we need",
+        "We took so much we never saw",
+        "The forest for the trees."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This land she is my lover",
+        "She fills me with desire",
+        "Seasons come and seasons go",
+        "Earth water wind and fire."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I cleared this land with my bare hands",
+        "She gave me everything so free",
+        "She gave so much I couldn\u2019t see",
+        "The forest for the trees."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m an addict with a habit",
+        "I\u2019m kept so well supplied",
+        "With all my greed and hope and love and fear",
+        "1 can\u2019t be satisifed."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I took my young son up on a clear cut mountain",
+        "I fell down on my knees",
+        "I prayed that he would someday see the forest for the trees",
+        "I pray that we might someday see the forest for the trees."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

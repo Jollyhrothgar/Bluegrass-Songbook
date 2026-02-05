@@ -1,0 +1,56 @@
+{
+  "slug": "red-rubber-ball",
+  "title": "Red Rubber Ball",
+  "source_url": "https://www.bluegrasslyrics.com/song/red-rubber-ball/",
+  "raw_lyrics": "I should have known you\u2019ve bid me farewell\nThere\u2019s lesson to be learned from this\nAnd I learned it very well\nAlways running never caring\nThat\u2019s the life you live\nStolen minutes of your time\nWere all you had to give\n\nAnd I guess it\u2019s gonna be all right\nYes the worst is over now\nThe morning sun is shining\nLike a red rubber ball\nI guess it\u2019s gonna be all right\nYes the worst is over now\nThe morning sun is shining\nLike a red rubber ball\n\nNow you never cared for the secrets I could find\nTo you I\u2019m just an ornament\nSomething for your mind\nThis roller coaster ride we took\nIs nearly at an end\nI bought my ticket with my tears\nThat\u2019s all I\u2019m gonna spend\n\n* Refrain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I should have known you\u2019ve bid me farewell",
+        "There\u2019s lesson to be learned from this",
+        "And I learned it very well",
+        "Always running never caring",
+        "That\u2019s the life you live",
+        "Stolen minutes of your time",
+        "Were all you had to give"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And I guess it\u2019s gonna be all right",
+        "Yes the worst is over now",
+        "The morning sun is shining",
+        "Like a red rubber ball",
+        "I guess it\u2019s gonna be all right",
+        "Yes the worst is over now",
+        "The morning sun is shining",
+        "Like a red rubber ball"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you never cared for the secrets I could find",
+        "To you I\u2019m just an ornament",
+        "Something for your mind",
+        "This roller coaster ride we took",
+        "Is nearly at an end",
+        "I bought my ticket with my tears",
+        "That\u2019s all I\u2019m gonna spend"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "* Refrain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

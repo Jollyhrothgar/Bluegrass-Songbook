@@ -1,0 +1,59 @@
+{
+  "slug": "little-birdie",
+  "title": "Little Birdie",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-birdie/",
+  "raw_lyrics": "Little birdie, little birdie\nCome and sing me you song\nGot a short time to stay here\nAnd a long time to be gone\n\nI\u2019m a long way from old Dixie\nAnd my old Kentucky home\nNow my parents are both dead and gone\nHave no place to call my home\n\nNow I\u2019d rather be a sailor\nWay out upon the sea\nThen to be at home a marred man\nWith a baby on my knee\n\nFor the married man he sees trouble\nAnd the single boy sees none\nI expect to live single\nTil my days on earth are done\n\nNow I\u2019d rather be in some dark hollow\nWhere the sun don\u2019t ever shine\nThen to see you love another\nWhen you promised to be mine",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Little birdie, little birdie",
+        "Come and sing me you song",
+        "Got a short time to stay here",
+        "And a long time to be gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a long way from old Dixie",
+        "And my old Kentucky home",
+        "Now my parents are both dead and gone",
+        "Have no place to call my home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019d rather be a sailor",
+        "Way out upon the sea",
+        "Then to be at home a marred man",
+        "With a baby on my knee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For the married man he sees trouble",
+        "And the single boy sees none",
+        "I expect to live single",
+        "Til my days on earth are done"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019d rather be in some dark hollow",
+        "Where the sun don\u2019t ever shine",
+        "Then to see you love another",
+        "When you promised to be mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

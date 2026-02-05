@@ -1,0 +1,43 @@
+{
+  "slug": "hot-corn-cold-corn",
+  "title": "Hot Corn, Cold Corn",
+  "source_url": "https://www.bluegrasslyrics.com/song/hot-corn-cold-corn/",
+  "raw_lyrics": "Hot corn cold corn bring along the demijohn\nHot corn cold corn bring along the demijohn\nHot corn cold corn bring along the demijohn\nFare thee well Uncle Bill see you in the morning yes sir\n\nWell it\u2019s upstairs downstairs out in the kitchen (3x)\nSee you  Uncle Bill just a raring and a pitching yes sir\n\nWell it\u2019s old Aunt Peggy won\u2019t you fill \u2019em up again (3x)\nAin\u2019t had a drink since the lord knows when yes sir\n\nWell yonder comes the preacher and the children are a crying (3x)\nChickens a running and the  toenails a flying yes sir",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Hot corn cold corn bring along the demijohn",
+        "Hot corn cold corn bring along the demijohn",
+        "Hot corn cold corn bring along the demijohn",
+        "Fare thee well Uncle Bill see you in the morning yes sir"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well it\u2019s upstairs downstairs out in the kitchen (3x)",
+        "See you  Uncle Bill just a raring and a pitching yes sir"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well it\u2019s old Aunt Peggy won\u2019t you fill \u2019em up again (3x)",
+        "Ain\u2019t had a drink since the lord knows when yes sir"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well yonder comes the preacher and the children are a crying (3x)",
+        "Chickens a running and the  toenails a flying yes sir"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

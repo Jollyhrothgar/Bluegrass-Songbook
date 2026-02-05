@@ -1,0 +1,39 @@
+{
+  "slug": "down-down-down",
+  "title": "Down Down Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-down-down/",
+  "raw_lyrics": "I\u2019m going down down down\u00a0\u00a0\u00a0 going down down down\nI\u2019ve got nobody to love me now\nI\u2019m sorrow bound bound bound  since you left this town\nSince you left I\u2019m going down down down.\n\nNow why do I always feel so lonely\nAnd why do I hang my head so low\nI love you my darlin\u2019 and you only\nDon\u2019t know where you are but there I\u2019ve got to go.\n\nNow what were so many of your reasons\nNow could it be you never gave us time\nWell in your heart if you desired a new love\nIf so then your love is not worth mine.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m going down down down\u00a0\u00a0\u00a0 going down down down",
+        "I\u2019ve got nobody to love me now",
+        "I\u2019m sorrow bound bound bound  since you left this town",
+        "Since you left I\u2019m going down down down."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now why do I always feel so lonely",
+        "And why do I hang my head so low",
+        "I love you my darlin\u2019 and you only",
+        "Don\u2019t know where you are but there I\u2019ve got to go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now what were so many of your reasons",
+        "Now could it be you never gave us time",
+        "Well in your heart if you desired a new love",
+        "If so then your love is not worth mine."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

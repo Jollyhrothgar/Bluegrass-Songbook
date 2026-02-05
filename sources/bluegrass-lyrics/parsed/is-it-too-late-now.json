@@ -1,0 +1,39 @@
+{
+  "slug": "is-it-too-late-now",
+  "title": "Is It Too Late Now?",
+  "source_url": "https://www.bluegrasslyrics.com/song/is-it-too-late-now/",
+  "raw_lyrics": "Is it too late now to tell you that I love you\nOr is there still a chance for me somehow\nOh they tell me now that you have found another\nDarlin\u2019 please don\u2019t say it\u2019s too late now\n\nI know this heart of mine could never stand it\nIf I should have togive you up somehow\nOh won\u2019t you say that you\u2019ll give me one more chance dear\nDarlin\u2019 please don\u2019t say it\u2019s too late now\n\nWell I confess I know I done you wrong, dear\nOh can\u2019t you see my side again somehow\nAll I ask of you is to give me one more chance dear\nDarlin\u2019 please don\u2019t say it\u2019s too late now.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Is it too late now to tell you that I love you",
+        "Or is there still a chance for me somehow",
+        "Oh they tell me now that you have found another",
+        "Darlin\u2019 please don\u2019t say it\u2019s too late now"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know this heart of mine could never stand it",
+        "If I should have togive you up somehow",
+        "Oh won\u2019t you say that you\u2019ll give me one more chance dear",
+        "Darlin\u2019 please don\u2019t say it\u2019s too late now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I confess I know I done you wrong, dear",
+        "Oh can\u2019t you see my side again somehow",
+        "All I ask of you is to give me one more chance dear",
+        "Darlin\u2019 please don\u2019t say it\u2019s too late now."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "blue-eyes-cryin-in-the-rain",
+  "title": "Blue Eyes Cryin\u2019 In The Rain",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-eyes-cryin-in-the-rain/",
+  "raw_lyrics": "In the twilight glow I see her\nBlue eyes cryin\u2019 in the rain\nWhen we kissed goodbye and parted\nI knew we\u2019d never meet again\n\nLove is like a dying ember\nAnd only memories remain\nAnd through the ages I\u2019ll remember\nBlue eyes cryin\u2019 in the rain.\n\nSomeday when we meet up yonder\nWe\u2019ll stroll hand in hand again\nIn the land that knows no parting\nOr blue eyes cryin\u2019 in the rain.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the twilight glow I see her",
+        "Blue eyes cryin\u2019 in the rain",
+        "When we kissed goodbye and parted",
+        "I knew we\u2019d never meet again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Love is like a dying ember",
+        "And only memories remain",
+        "And through the ages I\u2019ll remember",
+        "Blue eyes cryin\u2019 in the rain."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday when we meet up yonder",
+        "We\u2019ll stroll hand in hand again",
+        "In the land that knows no parting",
+        "Or blue eyes cryin\u2019 in the rain."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

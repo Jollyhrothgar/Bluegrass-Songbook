@@ -1,0 +1,89 @@
+{
+  "slug": "blue-railroad-train",
+  "title": "Blue Railroad Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-railroad-train/",
+  "raw_lyrics": "Blue railroad train\nGoing down the railroad tracks\nIt makes me feel so doggone blue\nTo listen to that old smokestack\n\nCome back again\nLet me hear the whistle blow\nYou\u2019re taking the sun and leaving the rain\nAnd I hate to see you go\n\nBlue railroad train\nLeaving me far behind\nGimme back the good old days\nAnd let me ramble down the line\n\nBlue railroad train\nLeaving me her alone\nYou  treat me good you  treat me bad\nYou\u2019re making me think of home\n\nI\u2019ve got the blues\nI\u2019m longing for your company\nIt\u2019s many miles from where I am\nTo the only one for me\n\nIt\u2019s  lonely here\nWaiting for the manifest\nI hope that engineer is kind\nEnough to let me be his guest\n\nI\u2019m not as bad\nAs you might think I am\nI hobo here I hobo there\nI\u2019ve traveled these states around\n\nBlue railroad train\nA good old pal to me\nYou take me where I want to go\nAnd my transportation\u2019s free",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Blue railroad train",
+        "Going down the railroad tracks",
+        "It makes me feel so doggone blue",
+        "To listen to that old smokestack"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come back again",
+        "Let me hear the whistle blow",
+        "You\u2019re taking the sun and leaving the rain",
+        "And I hate to see you go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Blue railroad train",
+        "Leaving me far behind",
+        "Gimme back the good old days",
+        "And let me ramble down the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Blue railroad train",
+        "Leaving me her alone",
+        "You  treat me good you  treat me bad",
+        "You\u2019re making me think of home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got the blues",
+        "I\u2019m longing for your company",
+        "It\u2019s many miles from where I am",
+        "To the only one for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s  lonely here",
+        "Waiting for the manifest",
+        "I hope that engineer is kind",
+        "Enough to let me be his guest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m not as bad",
+        "As you might think I am",
+        "I hobo here I hobo there",
+        "I\u2019ve traveled these states around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Blue railroad train",
+        "A good old pal to me",
+        "You take me where I want to go",
+        "And my transportation\u2019s free"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

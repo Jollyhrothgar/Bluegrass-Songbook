@@ -1,0 +1,39 @@
+{
+  "slug": "eight-thirty-blues",
+  "title": "Eight Thirty Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/eight-thirty-blues/",
+  "raw_lyrics": "It\u2019s eight-thirty now I\u2019m still waiting for you\nI  wonder where you can be\nYou promised to come home but now I\u2019m all alone\nAnd I\u2019ve got those eight thirty blues\n\nYou better stop your rambling and stay in your place\nOr else I won\u2019t be waiting for you\nBut if you won\u2019t listen just do as you please\nI won\u2019t have those eight thirty blues\n\nIt\u2019s eight thirty now but you don\u2019t seem to care\nHow long I\u2019ve waited for you\nSweetheart when you get home you\u2019ll find you\u2019re all alone\nThen you\u2019ll have those eight thirty blues",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s eight-thirty now I\u2019m still waiting for you",
+        "I  wonder where you can be",
+        "You promised to come home but now I\u2019m all alone",
+        "And I\u2019ve got those eight thirty blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You better stop your rambling and stay in your place",
+        "Or else I won\u2019t be waiting for you",
+        "But if you won\u2019t listen just do as you please",
+        "I won\u2019t have those eight thirty blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s eight thirty now but you don\u2019t seem to care",
+        "How long I\u2019ve waited for you",
+        "Sweetheart when you get home you\u2019ll find you\u2019re all alone",
+        "Then you\u2019ll have those eight thirty blues"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

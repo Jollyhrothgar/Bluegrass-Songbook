@@ -1,0 +1,57 @@
+{
+  "slug": "oh-lonesome-me",
+  "title": "Oh Lonesome Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/oh-lonesome-me/",
+  "raw_lyrics": "Everybodys going out and having fun\nI\u2019m just a fool for staying home and having none\nI cant get over how she set me free\nOh lonesome me\n\nA bad mistake I\u2019m makin by just stayin round\nI know that I should have some fun and paint the town\nI\u2019ve thought of everything from a to z\nOh lonesome me\n\nI\u2019ll bet she\u2019s not like me\nShes out and fancy free\nFlirting with the boys with all her charms\n\nBut I still love her so\nAnd brother don\u2019t you know\nI\u2019d welcome her right back here in my arms\n\nThere must be some way that I can lose these lonesome blues\nForget about my past and find someone new\nI\u2019ve thought of everything from a to z\nOh lonesome me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Everybodys going out and having fun",
+        "I\u2019m just a fool for staying home and having none",
+        "I cant get over how she set me free",
+        "Oh lonesome me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A bad mistake I\u2019m makin by just stayin round",
+        "I know that I should have some fun and paint the town",
+        "I\u2019ve thought of everything from a to z",
+        "Oh lonesome me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll bet she\u2019s not like me",
+        "Shes out and fancy free",
+        "Flirting with the boys with all her charms"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I still love her so",
+        "And brother don\u2019t you know",
+        "I\u2019d welcome her right back here in my arms"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There must be some way that I can lose these lonesome blues",
+        "Forget about my past and find someone new",
+        "I\u2019ve thought of everything from a to z",
+        "Oh lonesome me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

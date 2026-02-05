@@ -1,0 +1,39 @@
+{
+  "slug": "shackles-and-chains",
+  "title": "Shackles And Chains",
+  "source_url": "https://www.bluegrasslyrics.com/song/shackles-and-chains/",
+  "raw_lyrics": "On a long lonesome journey I\u2019m going\nOh darling please don\u2019t you cry\nIn these shackles and chains they will take me\nTo a prison to stay \u2019til I die\n\nAnd at night through the bars I will gaze at the stars\nAnd dream of your kisses in vain\nA piece of stone I will use for my pillow\nWhile I\u2019m sleeping in shackles and chains\n\nPut your arms through the bars once my darling\nLet me kiss those sweet lips I love best\nFor in heartache you\u2019re my consolation\nIn sorrow my haven of rest",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On a long lonesome journey I\u2019m going",
+        "Oh darling please don\u2019t you cry",
+        "In these shackles and chains they will take me",
+        "To a prison to stay \u2019til I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And at night through the bars I will gaze at the stars",
+        "And dream of your kisses in vain",
+        "A piece of stone I will use for my pillow",
+        "While I\u2019m sleeping in shackles and chains"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Put your arms through the bars once my darling",
+        "Let me kiss those sweet lips I love best",
+        "For in heartache you\u2019re my consolation",
+        "In sorrow my haven of rest"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

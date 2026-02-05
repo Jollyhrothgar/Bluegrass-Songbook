@@ -1,0 +1,50 @@
+{
+  "slug": "gospel-ship",
+  "title": "Gospel Ship",
+  "source_url": "https://www.bluegrasslyrics.com/song/gospel-ship/",
+  "raw_lyrics": "I\u2019m going to take a trip in that old gospel ship\nI\u2019m a-going far beyond the sky\nI\u2019m gonna shout and sing \u2018til heaven rings\nWhen I hid this world goodbye\n\nI have good news to bring, and that is why I sing\nAll my joys with you I\u2019ll share\nI\u2019m going to take a trip in that old gospel ship\nAnd go sailing through the air\n\nI can scarcely wait, I know I won\u2019t be late\nI\u2019ll spend my time in prayer\nAnd when the ship comes in, I\u2019ll leave this world of sin\nAnd go sailing through the air\n\nIf you are ashamed of me, you ought not to be\nYes, you\u2019d better have a care\nIf too much fault you find, you will sure be left behind\nWhile I\u2019m sailing through the air\nWhen I bid this world goodbye",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m going to take a trip in that old gospel ship",
+        "I\u2019m a-going far beyond the sky",
+        "I\u2019m gonna shout and sing \u2018til heaven rings",
+        "When I hid this world goodbye"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have good news to bring, and that is why I sing",
+        "All my joys with you I\u2019ll share",
+        "I\u2019m going to take a trip in that old gospel ship",
+        "And go sailing through the air"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can scarcely wait, I know I won\u2019t be late",
+        "I\u2019ll spend my time in prayer",
+        "And when the ship comes in, I\u2019ll leave this world of sin",
+        "And go sailing through the air"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you are ashamed of me, you ought not to be",
+        "Yes, you\u2019d better have a care",
+        "If too much fault you find, you will sure be left behind",
+        "While I\u2019m sailing through the air",
+        "When I bid this world goodbye"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

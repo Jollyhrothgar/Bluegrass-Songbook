@@ -1,0 +1,70 @@
+{
+  "slug": "walk-on-boy",
+  "title": "Walk On Boy",
+  "source_url": "https://www.bluegrasslyrics.com/song/walk-on-boy/",
+  "raw_lyrics": "I was born one morning\nRain was pouring down\nI heard my mammy say to my daddy\nCall the boy John Henry Brown\n\nWalk on boy\nWalk on down the road\nThere ain\u2019t nobody in this whole wide world\nGonna help you carry your load\nWalk on boy\n\nI left home one evening\nJust about the age of ten\nI got me a job on the levee lord\nToting water to the hard working men\n\nWell the rich men make all the money\nThe poor man do all the work\nThe rich man living mighty high on the hog\nPoor man live on the dirt\n\nMy old pappy told me\nJust on thing to do\nFind a good woman be good to her\nAnd she gonna be good to you\n\nNow you all heard this story\nBout the hammer that weighed nine pounds\nThe cat what swung it way up on the mountain\nWas little John Henry Brown",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was born one morning",
+        "Rain was pouring down",
+        "I heard my mammy say to my daddy",
+        "Call the boy John Henry Brown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Walk on boy",
+        "Walk on down the road",
+        "There ain\u2019t nobody in this whole wide world",
+        "Gonna help you carry your load",
+        "Walk on boy"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I left home one evening",
+        "Just about the age of ten",
+        "I got me a job on the levee lord",
+        "Toting water to the hard working men"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the rich men make all the money",
+        "The poor man do all the work",
+        "The rich man living mighty high on the hog",
+        "Poor man live on the dirt"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My old pappy told me",
+        "Just on thing to do",
+        "Find a good woman be good to her",
+        "And she gonna be good to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you all heard this story",
+        "Bout the hammer that weighed nine pounds",
+        "The cat what swung it way up on the mountain",
+        "Was little John Henry Brown"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

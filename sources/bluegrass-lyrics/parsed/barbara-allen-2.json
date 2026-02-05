@@ -1,0 +1,89 @@
+{
+  "slug": "barbara-allen-2",
+  "title": "Barbara Allen",
+  "source_url": "https://www.bluegrasslyrics.com/song/barbara-allen-2/",
+  "raw_lyrics": "In scarlet Town where I was born\nThere was a fair maid dwelling\nMade many a youth cry well a day\nHer name was Barbara Allen\n\nIt was in the merry month of May\nWhen green buds they were swelling\nSweet William came from the west country\nAnd he courted Barbara Allen\n\nHe sent his servant unto her\nTo the place where she was dwelling\nSaid my master\u2019s sick, bids me call for you\nIf your name be Barbara Allen\n\nWell, slowly, slowly got she up\nAnd slowly went she nigh him\nBut all she said as she passed his bed\nYoung man I think you\u2019re dying\n\nThen lightly tripped she down the stairs\nShe heard those church bells tolling\nAnd each bell seemed to say as it tolled\nHard hearted Barbara Allen\n\nO, mother, mother go make my bed\nAnd make it long and narrow\nSweet William died for me today\nI\u2019ll die for him tomorrow\n\nThey buried Barbara in the old church yard\nThey buried Sweet William beside her\nOut of his grave grew a red, red rose\nAnd out of hers a briar\n\nThey grew and grew up the old church wall\nTill they could grow no higher\nAnd at the top twined a lover\u2019s knot\nThe red rose and the briar",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In scarlet Town where I was born",
+        "There was a fair maid dwelling",
+        "Made many a youth cry well a day",
+        "Her name was Barbara Allen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was in the merry month of May",
+        "When green buds they were swelling",
+        "Sweet William came from the west country",
+        "And he courted Barbara Allen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He sent his servant unto her",
+        "To the place where she was dwelling",
+        "Said my master\u2019s sick, bids me call for you",
+        "If your name be Barbara Allen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, slowly, slowly got she up",
+        "And slowly went she nigh him",
+        "But all she said as she passed his bed",
+        "Young man I think you\u2019re dying"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then lightly tripped she down the stairs",
+        "She heard those church bells tolling",
+        "And each bell seemed to say as it tolled",
+        "Hard hearted Barbara Allen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "O, mother, mother go make my bed",
+        "And make it long and narrow",
+        "Sweet William died for me today",
+        "I\u2019ll die for him tomorrow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They buried Barbara in the old church yard",
+        "They buried Sweet William beside her",
+        "Out of his grave grew a red, red rose",
+        "And out of hers a briar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They grew and grew up the old church wall",
+        "Till they could grow no higher",
+        "And at the top twined a lover\u2019s knot",
+        "The red rose and the briar"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

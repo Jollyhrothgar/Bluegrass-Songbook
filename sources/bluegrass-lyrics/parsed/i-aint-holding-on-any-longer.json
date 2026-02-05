@@ -1,0 +1,49 @@
+{
+  "slug": "i-aint-holding-on-any-longer",
+  "title": "I Ain\u2019t Holding On Any Longer",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-aint-holding-on-any-longer/",
+  "raw_lyrics": "Well I ain\u2019t holding on any longer\nHolding on to memories of the past\nWell I ain\u2019t holding on any longer\nI know I just ain\u2019t gonna last\n\nI can\u2019t go on the way I\u2019m livin\nCan\u2019t stand the pain that I\u2019ve gone through\nSo I ain\u2019t holdin\u2019 on any longer\nCause little gal I see I\u2019m through with you\n\nWell now you can get just what you wanted\nAnd maybe just a little extra too\nTake the money in the bank I don\u2019t need it\nFor it\u2019s gone like the love we once knew\n\nSo I\u2019ll take this and you take that baby\nYou take that and I\u2019ll take this that\u2019s fine\nAin\u2019t no use to hold on I know it\u2019s over\nSo you go your way I\u2019ll go mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I ain\u2019t holding on any longer",
+        "Holding on to memories of the past",
+        "Well I ain\u2019t holding on any longer",
+        "I know I just ain\u2019t gonna last"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can\u2019t go on the way I\u2019m livin",
+        "Can\u2019t stand the pain that I\u2019ve gone through",
+        "So I ain\u2019t holdin\u2019 on any longer",
+        "Cause little gal I see I\u2019m through with you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well now you can get just what you wanted",
+        "And maybe just a little extra too",
+        "Take the money in the bank I don\u2019t need it",
+        "For it\u2019s gone like the love we once knew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So I\u2019ll take this and you take that baby",
+        "You take that and I\u2019ll take this that\u2019s fine",
+        "Ain\u2019t no use to hold on I know it\u2019s over",
+        "So you go your way I\u2019ll go mine"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

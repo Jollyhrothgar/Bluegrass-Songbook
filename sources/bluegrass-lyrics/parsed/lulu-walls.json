@@ -1,0 +1,49 @@
+{
+  "slug": "lulu-walls",
+  "title": "Lulu Walls",
+  "source_url": "https://www.bluegrasslyrics.com/song/lulu-walls/",
+  "raw_lyrics": "One evening getting dark, we first met at the park\nSitting by the fountain all alone;\nI lifted up my hat, and then began to chat\nShe said she\u2019d love to see me at her home\n\nSuch a star I\u2019ve never seen, she\u2019s as pretty as a queen\nShe\u2019s as perfect as an angel from above,\nIf she\u2019ll only be my wife, I\u2019ll live happy all my life\nWith that aggravating beauty, Lulu Walls\n\nIf she were only mine, I would build a house so fine\nAround it so many fences tall,\nIt would make me jealous free, that no one else but me\nCould gaze on that beauty, Lulu Walls\n\nOne evening getting late, I met her at the gate\nI asked her if she\u2019d wed me in the fall,\nShe only turned away, and nothing would she say\nThat aggravating beauty, Lulu Walls",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One evening getting dark, we first met at the park",
+        "Sitting by the fountain all alone;",
+        "I lifted up my hat, and then began to chat",
+        "She said she\u2019d love to see me at her home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Such a star I\u2019ve never seen, she\u2019s as pretty as a queen",
+        "She\u2019s as perfect as an angel from above,",
+        "If she\u2019ll only be my wife, I\u2019ll live happy all my life",
+        "With that aggravating beauty, Lulu Walls"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If she were only mine, I would build a house so fine",
+        "Around it so many fences tall,",
+        "It would make me jealous free, that no one else but me",
+        "Could gaze on that beauty, Lulu Walls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One evening getting late, I met her at the gate",
+        "I asked her if she\u2019d wed me in the fall,",
+        "She only turned away, and nothing would she say",
+        "That aggravating beauty, Lulu Walls"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

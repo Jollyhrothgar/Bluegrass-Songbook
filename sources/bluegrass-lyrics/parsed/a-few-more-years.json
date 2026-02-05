@@ -1,0 +1,33 @@
+{
+  "slug": "a-few-more-years",
+  "title": "A Few More Years",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-few-more-years/",
+  "raw_lyrics": "A few more years shall roll, a few more seasons shall come\nThen we shall be with those at rest asleep within the tomb\n\nThen Oh my Lord prepare my soul for that great day\nWash me in Thy precious blood and take my sins all away\n\nA few more meetings here shall cheer us on our way\nAnd we shall reach that endless rest on that eternal day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A few more years shall roll, a few more seasons shall come",
+        "Then we shall be with those at rest asleep within the tomb"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Then Oh my Lord prepare my soul for that great day",
+        "Wash me in Thy precious blood and take my sins all away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A few more meetings here shall cheer us on our way",
+        "And we shall reach that endless rest on that eternal day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

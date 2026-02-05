@@ -1,0 +1,49 @@
+{
+  "slug": "im-traveling-on-and-on",
+  "title": "I\u2019m Traveling On And On",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-traveling-on-and-on/",
+  "raw_lyrics": "Oh I was lost in the darkness and I wandered astray\nWith no one to help me see along on my way\nUntil I heard Jesus calling saying\nCome unto me and I\u2019m traveling on and on\n\nOh Lord I\u2019m traveling on by my Savior\nAnd I can never stray for Jesus leads the way\nAnd I\u2019ll get off the wagon at the end of my journey\nOh Lord I\u2019m traveling on and on\n\nOh I can hear Jesus calling and His voice sounds so sweet\nAnd I know that the time had come to kneel at His feet\nBut my troubles are over for He bid me come home\nAnd I\u2019m traveling on and on\n\nOh the on Lord is my Savior and my hope it will stay\nHe will help me and protect me to the end of the way\nMy journey will soon be over and I\u2019ll join the happy band\nAnd I\u2019m traveling on and on",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I was lost in the darkness and I wandered astray",
+        "With no one to help me see along on my way",
+        "Until I heard Jesus calling saying",
+        "Come unto me and I\u2019m traveling on and on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Lord I\u2019m traveling on by my Savior",
+        "And I can never stray for Jesus leads the way",
+        "And I\u2019ll get off the wagon at the end of my journey",
+        "Oh Lord I\u2019m traveling on and on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I can hear Jesus calling and His voice sounds so sweet",
+        "And I know that the time had come to kneel at His feet",
+        "But my troubles are over for He bid me come home",
+        "And I\u2019m traveling on and on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the on Lord is my Savior and my hope it will stay",
+        "He will help me and protect me to the end of the way",
+        "My journey will soon be over and I\u2019ll join the happy band",
+        "And I\u2019m traveling on and on"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

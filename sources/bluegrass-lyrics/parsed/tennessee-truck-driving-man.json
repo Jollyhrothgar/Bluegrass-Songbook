@@ -1,0 +1,39 @@
+{
+  "slug": "tennessee-truck-driving-man",
+  "title": "Tennessee Truck Driving Man",
+  "source_url": "https://www.bluegrasslyrics.com/song/tennessee-truck-driving-man/",
+  "raw_lyrics": "I\u2019m a Tennessee truck driving man\nTennessee truck driving man\nI packed the load and I know the road\nI\u2019m a Tennessee truck driving man\n\nI leave the terminal loaded\nHeading for the eastern seaboard\nThere ain\u2019t a thing between me and the end of the run\nBut this highway this truck and my load\n\nI keep the long haul steady\nMaking my stops on the run\nThen I\u2019ll break her down turn her around\nTo get back to my home base on time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a Tennessee truck driving man",
+        "Tennessee truck driving man",
+        "I packed the load and I know the road",
+        "I\u2019m a Tennessee truck driving man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I leave the terminal loaded",
+        "Heading for the eastern seaboard",
+        "There ain\u2019t a thing between me and the end of the run",
+        "But this highway this truck and my load"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I keep the long haul steady",
+        "Making my stops on the run",
+        "Then I\u2019ll break her down turn her around",
+        "To get back to my home base on time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

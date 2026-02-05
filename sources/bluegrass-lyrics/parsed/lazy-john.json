@@ -1,0 +1,49 @@
+{
+  "slug": "lazy-john",
+  "title": "Lazy John",
+  "source_url": "https://www.bluegrasslyrics.com/song/lazy-john/",
+  "raw_lyrics": "Work all week in the noon day sun\nFifteen cents when Saturday comes\nGoin to a dance to have some fun\nWhy don\u2019t you get away lazy John\n\nLazy John lazy John\nWhy don\u2019t you get your day\u2019s work all done\nYou\u2019re in the shade and I\u2019m in the sun\nWhy don\u2019t you get away lazy John\n\nMy gal lives at the end of the road\nHer eyes are crossed and her legs are bowed\nBut We sure have a lot of fun\nWhy don\u2019t you get away lazy John\n\nGoin to a dance Saturday night\nAin\u2019t coming home til the bald daylight\nThen I\u2019ll take my girl back home\nWhy don\u2019t you get away lazy John",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Work all week in the noon day sun",
+        "Fifteen cents when Saturday comes",
+        "Goin to a dance to have some fun",
+        "Why don\u2019t you get away lazy John"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Lazy John lazy John",
+        "Why don\u2019t you get your day\u2019s work all done",
+        "You\u2019re in the shade and I\u2019m in the sun",
+        "Why don\u2019t you get away lazy John"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My gal lives at the end of the road",
+        "Her eyes are crossed and her legs are bowed",
+        "But We sure have a lot of fun",
+        "Why don\u2019t you get away lazy John"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goin to a dance Saturday night",
+        "Ain\u2019t coming home til the bald daylight",
+        "Then I\u2019ll take my girl back home",
+        "Why don\u2019t you get away lazy John"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

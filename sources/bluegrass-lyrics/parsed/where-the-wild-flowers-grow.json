@@ -1,0 +1,42 @@
+{
+  "slug": "where-the-wild-flowers-grow",
+  "title": "Where the Wild Flowers Grow",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-the-wild-flowers-grow/",
+  "raw_lyrics": "Where the wild wild flowers grow cool clear waters flow\nThere\u2019s a place that I\u2019ve always love the best\nWhen at last I lay me down final peace and rest I\u2019ve found\nTake me on to my home and there I\u2019ll rest\nTake me on to my home and there I\u2019ll rest\n\nWhen as a little child hopes dreams runnin wild\nSome day I\u2019ll live just like a queen upon a throne\nLittle did a poor girl know how hard the way to go\nOh I wandered yes I wandered far from home\nOh I wandered yes I wandered far from home\n\nFreedom was in the air you could feel it everywhere\nDon\u2019t be blinded it\u2019s God\u2019s gift can\u2019t you see\nNever lay your armor down til peace and rest you\u2019ve found\nGoin home goin home to be free\nGoin home goin home to be free",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Where the wild wild flowers grow cool clear waters flow",
+        "There\u2019s a place that I\u2019ve always love the best",
+        "When at last I lay me down final peace and rest I\u2019ve found",
+        "Take me on to my home and there I\u2019ll rest",
+        "Take me on to my home and there I\u2019ll rest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When as a little child hopes dreams runnin wild",
+        "Some day I\u2019ll live just like a queen upon a throne",
+        "Little did a poor girl know how hard the way to go",
+        "Oh I wandered yes I wandered far from home",
+        "Oh I wandered yes I wandered far from home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Freedom was in the air you could feel it everywhere",
+        "Don\u2019t be blinded it\u2019s God\u2019s gift can\u2019t you see",
+        "Never lay your armor down til peace and rest you\u2019ve found",
+        "Goin home goin home to be free",
+        "Goin home goin home to be free"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

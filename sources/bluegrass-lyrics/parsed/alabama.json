@@ -1,0 +1,89 @@
+{
+  "slug": "alabama",
+  "title": "Alabama",
+  "source_url": "https://www.bluegrasslyrics.com/song/alabama/",
+  "raw_lyrics": "Alabama\nyour beautiful sunlight\nYour fields of cerecea potatoes and corn\nAlabama\nyour crimson red clover\nAll mingled around the old place I was born.\n\nAlabama\nyour hills and your valleys\nYour creeks with laughter as onward they flow\nAlabama\nso sweet in the springtime\nSweet ferns and wild flowers and winter with snow.\n\nAlabama\nso sweet to my mem\u2019ry\nYou shine like a light on a beautiful hill\nAlabama\nin days of my childhood\nI labored and toiled at the old sorghum mill\n\nAlabama\nwhen red leaves are failing\nI roam through your pastures with fences of rail\nAlabama\nwhen \u2018possums are crawling\nAnd hound dogs are howling and wagging their tails.\n\nAlabama\nyour beautiful highways\nAll curved through the mountains where love ones do wait\nAlabama\nyour golden rod flower;\nAnd the \u201cWelcome home\u2019 sign hanging over the gate\n\nAlabama\nto me you are callin\u2019\nMy footsteps are haltered no longer to stray\nAlabama\nyou hold all I long for\nYou hold all I love so I\u2019m coming today\n\nBlue Sky Boys; Sunny side of Life\nLouvin Brothers;  The Louvin Brothers",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Alabama",
+        "your beautiful sunlight",
+        "Your fields of cerecea potatoes and corn",
+        "Alabama",
+        "your crimson red clover",
+        "All mingled around the old place I was born."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Alabama",
+        "your hills and your valleys",
+        "Your creeks with laughter as onward they flow",
+        "Alabama",
+        "so sweet in the springtime",
+        "Sweet ferns and wild flowers and winter with snow."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Alabama",
+        "so sweet to my mem\u2019ry",
+        "You shine like a light on a beautiful hill",
+        "Alabama",
+        "in days of my childhood",
+        "I labored and toiled at the old sorghum mill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Alabama",
+        "when red leaves are failing",
+        "I roam through your pastures with fences of rail",
+        "Alabama",
+        "when \u2018possums are crawling",
+        "And hound dogs are howling and wagging their tails."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Alabama",
+        "your beautiful highways",
+        "All curved through the mountains where love ones do wait",
+        "Alabama",
+        "your golden rod flower;",
+        "And the \u201cWelcome home\u2019 sign hanging over the gate"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Alabama",
+        "to me you are callin\u2019",
+        "My footsteps are haltered no longer to stray",
+        "Alabama",
+        "you hold all I long for",
+        "You hold all I love so I\u2019m coming today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Blue Sky Boys; Sunny side of Life",
+        "Louvin Brothers;  The Louvin Brothers"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "winding-stream-the",
+  "title": "Winding Stream, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/winding-stream-the/",
+  "raw_lyrics": "Oh give to me a winding stream\nIt must not be too wide\nWhere waving leaves from maple trees\nDo meet from either side\nThe water must be deep enough\nTo float a small canoe\nWith no one else but you\n\nDo not disturb\nMy waking dream\nThe splendor of\nThat winding stream\nFlower in my canoe\nHer eyes they looked me through\nA maiden fair\nWith golden hair\nIs very much like you\n\nThe sparkling trout\nBeneath the bank\nDoes leave his hiding place\nKing fisher\nFrom the bow above\nSo eager to give chase\nThe spreading branches\nOverhead\nThe sunlight peeking through\nWhen looking dear at you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh give to me a winding stream",
+        "It must not be too wide",
+        "Where waving leaves from maple trees",
+        "Do meet from either side",
+        "The water must be deep enough",
+        "To float a small canoe",
+        "With no one else but you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Do not disturb",
+        "My waking dream",
+        "The splendor of",
+        "That winding stream",
+        "Flower in my canoe",
+        "Her eyes they looked me through",
+        "A maiden fair",
+        "With golden hair",
+        "Is very much like you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sparkling trout",
+        "Beneath the bank",
+        "Does leave his hiding place",
+        "King fisher",
+        "From the bow above",
+        "So eager to give chase",
+        "The spreading branches",
+        "Overhead",
+        "The sunlight peeking through",
+        "When looking dear at you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

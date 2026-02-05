@@ -1,0 +1,69 @@
+{
+  "slug": "the-girl-behind-the-bar",
+  "title": "The Girl Behind The Bar",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-girl-behind-the-bar/",
+  "raw_lyrics": "As I walked in the Wayside Tavern\nThe smell of drink was in the air\nI threw my money on the counter\nThis pretty maid was standing there\n\nMy thoughts they drifted so far from me\nAs I looked upon her lovely face\nI knew she was my kind of woman\nNo one could ever take her place\n\nI said when working hours are over\nI would just love to take you home\nShe said young man that is a pleasure\nAnd soon we found ourselves alone\n\nAnd then our arms went around each other\nI felt a knife stick in her back\nShe turned and saw her lover running\nAnd said his name was Barnum Jack\n\nShe did not know her lover followed\nShe did not know he was around\nUntil the fate of death had struck her\nAnd now she sleeps beneath the ground\n\nI sit alone tonight in prison\nMy thoughts are of the one so fair\nThat I met that night in the Wayside Tavern\nWhen the smell of drink was in the air",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As I walked in the Wayside Tavern",
+        "The smell of drink was in the air",
+        "I threw my money on the counter",
+        "This pretty maid was standing there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My thoughts they drifted so far from me",
+        "As I looked upon her lovely face",
+        "I knew she was my kind of woman",
+        "No one could ever take her place"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I said when working hours are over",
+        "I would just love to take you home",
+        "She said young man that is a pleasure",
+        "And soon we found ourselves alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And then our arms went around each other",
+        "I felt a knife stick in her back",
+        "She turned and saw her lover running",
+        "And said his name was Barnum Jack"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She did not know her lover followed",
+        "She did not know he was around",
+        "Until the fate of death had struck her",
+        "And now she sleeps beneath the ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I sit alone tonight in prison",
+        "My thoughts are of the one so fair",
+        "That I met that night in the Wayside Tavern",
+        "When the smell of drink was in the air"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

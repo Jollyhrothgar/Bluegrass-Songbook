@@ -1,0 +1,59 @@
+{
+  "slug": "fugitives-lament",
+  "title": "Fugitive\u2019s Lament",
+  "source_url": "https://www.bluegrasslyrics.com/song/fugitives-lament/",
+  "raw_lyrics": "I hear the sad howling of coyotes prowling\nIt sounds so mournful to me\nIt brings back memories of cherished loved ones\nOf ones I\u2019m longing to see\n\nI\u2019m riding away out on the lone prairie\nThe rangers are searching for me\nI\u2019m riding away from my home in Texas\nA fugitive ever to be\n\nI had a good mother I had a good father\nThey handed a warning to me\nThe men that I ran with committed a murder\nAnd laid the blame on me\n\nLittle Maggie my sweetheart I know she\u2019s lonely\nAnd longs for me to return\nMy happiness ended the night we parted\nAnd now for her I yearn\n\nHow lonely how dreary with nothing to cheer me\nMy thoughts go stealing back home\nMy life of sadness will never know gladness\nI\u2019m branded forever to roam",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I hear the sad howling of coyotes prowling",
+        "It sounds so mournful to me",
+        "It brings back memories of cherished loved ones",
+        "Of ones I\u2019m longing to see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m riding away out on the lone prairie",
+        "The rangers are searching for me",
+        "I\u2019m riding away from my home in Texas",
+        "A fugitive ever to be"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had a good mother I had a good father",
+        "They handed a warning to me",
+        "The men that I ran with committed a murder",
+        "And laid the blame on me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Little Maggie my sweetheart I know she\u2019s lonely",
+        "And longs for me to return",
+        "My happiness ended the night we parted",
+        "And now for her I yearn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How lonely how dreary with nothing to cheer me",
+        "My thoughts go stealing back home",
+        "My life of sadness will never know gladness",
+        "I\u2019m branded forever to roam"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "midnight-train",
+  "title": "Midnight Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/midnight-train/",
+  "raw_lyrics": "I have been all around my old home town\nI have searched everywhere I know\nI can\u2019t find any trace of my girl in this place\nNow there\u2019s nothing to do but go\n\nI\u2019ll be riding that midnight train when I\u2019m leaving\nAnd I\u2019m goin away to stay\nAlways wanted to know where this engine did go\nGonna go where it goes today\n\nOh she said she\u2019d be true til the fighting was through\nThat she\u2019d wait for me til the end\nBut she\u2019s proven untrue and our sweet love is through\nSo I\u2019m catching the train again\n\nWhen she hears this old song then she\u2019ll know that she\u2019s wrong\nCause I\u2019m leaving my old home town\nOh she told me she\u2019d wait just to be my sweet date\nThen she threw down my heart to the ground",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have been all around my old home town",
+        "I have searched everywhere I know",
+        "I can\u2019t find any trace of my girl in this place",
+        "Now there\u2019s nothing to do but go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll be riding that midnight train when I\u2019m leaving",
+        "And I\u2019m goin away to stay",
+        "Always wanted to know where this engine did go",
+        "Gonna go where it goes today"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh she said she\u2019d be true til the fighting was through",
+        "That she\u2019d wait for me til the end",
+        "But she\u2019s proven untrue and our sweet love is through",
+        "So I\u2019m catching the train again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When she hears this old song then she\u2019ll know that she\u2019s wrong",
+        "Cause I\u2019m leaving my old home town",
+        "Oh she told me she\u2019d wait just to be my sweet date",
+        "Then she threw down my heart to the ground"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

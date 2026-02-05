@@ -1,0 +1,52 @@
+{
+  "slug": "happy-sunny-side-of-life-the",
+  "title": "Happy Sunny Side Of Life, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/happy-sunny-side-of-life-the/",
+  "raw_lyrics": "There\u2019s a sunny side where no ills betide\nThere\u2019s a  road that we must go\nThere is pleasant vales verdant hills and dales\nWhere sweet flowers ever grow\n\nOh the happy (happy) sunny (sunny) pretty rolling dales\nWhere the sweetest gladness ever there prevails\n(sweetest joy and gladness ever there prevails)\nWhere the sunshine lingers on the hill\n(sunshine ever lingers on the grand majestic hills)\nOn the sunny side of life\n(on the happy sunny side of life)\n\nThere\u2019s shady dells where no gladness dwells\nAnd the clouds obstruct the view\nBut a brighter way like the light of day\nIs awaiting now for you\n\nLet us sing a song as we go along\nLet us banish care and strife\nThat the world might know as we onward go\nThere\u2019s a sunny side of life",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a sunny side where no ills betide",
+        "There\u2019s a  road that we must go",
+        "There is pleasant vales verdant hills and dales",
+        "Where sweet flowers ever grow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the happy (happy) sunny (sunny) pretty rolling dales",
+        "Where the sweetest gladness ever there prevails",
+        "(sweetest joy and gladness ever there prevails)",
+        "Where the sunshine lingers on the hill",
+        "(sunshine ever lingers on the grand majestic hills)",
+        "On the sunny side of life",
+        "(on the happy sunny side of life)"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s shady dells where no gladness dwells",
+        "And the clouds obstruct the view",
+        "But a brighter way like the light of day",
+        "Is awaiting now for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let us sing a song as we go along",
+        "Let us banish care and strife",
+        "That the world might know as we onward go",
+        "There\u2019s a sunny side of life"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

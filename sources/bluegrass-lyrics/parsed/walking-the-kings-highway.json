@@ -1,0 +1,59 @@
+{
+  "slug": "walking-the-kings-highway",
+  "title": "Walking The King\u2019s Highway",
+  "source_url": "https://www.bluegrasslyrics.com/song/walking-the-kings-highway/",
+  "raw_lyrics": "We shall see the desert as the rose\nWalking in the kings highway\nThere\u2019ll be singing where salvation goes\nWalking in the kings highway\n\nThere\u2019s a highway there and away\nWhere sorrow shall flee away\nAnd the light shines bright as the day\nWalking in the kings highway\n\nWe shall see the glory of the lord\nWalking in the kings highway\nAnd behold the glory of his work\nWalking in the kings highway\n\nThere the rain shall fall upon the ground\nWalking in the kings highway\nAnd the springs of water shall be found\nWalking in the kings highway\n\nNo unclean things shall pass or hear\nWalking in the kings highway\nJust the ransom ones without a fear\nWalking in the kings highway",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We shall see the desert as the rose",
+        "Walking in the kings highway",
+        "There\u2019ll be singing where salvation goes",
+        "Walking in the kings highway"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a highway there and away",
+        "Where sorrow shall flee away",
+        "And the light shines bright as the day",
+        "Walking in the kings highway"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We shall see the glory of the lord",
+        "Walking in the kings highway",
+        "And behold the glory of his work",
+        "Walking in the kings highway"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There the rain shall fall upon the ground",
+        "Walking in the kings highway",
+        "And the springs of water shall be found",
+        "Walking in the kings highway"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No unclean things shall pass or hear",
+        "Walking in the kings highway",
+        "Just the ransom ones without a fear",
+        "Walking in the kings highway"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

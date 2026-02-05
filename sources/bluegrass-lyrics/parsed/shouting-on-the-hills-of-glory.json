@@ -1,0 +1,39 @@
+{
+  "slug": "shouting-on-the-hills-of-glory",
+  "title": "Shouting On The Hills Of Glory",
+  "source_url": "https://www.bluegrasslyrics.com/song/shouting-on-the-hills-of-glory/",
+  "raw_lyrics": "There\u2019ll be shouting on the hills of glory\nShouting on the hills shouting on the hills\nThere\u2019ll be shouting on the hills of glory\nThere\u2019ll be shouting on the hills of God\n\nOh what a blessed reunion\nOh what a blessed reunion\nWhen will we gather over yonder\nThere\u2019ll be shouting on the hills of God\n\nNow\u2019s the time to make a reservation\nNow\u2019s the time to make a reservation\nSo stop and make your reservation\nThere\u2019ll be shouting on the hills of God",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019ll be shouting on the hills of glory",
+        "Shouting on the hills shouting on the hills",
+        "There\u2019ll be shouting on the hills of glory",
+        "There\u2019ll be shouting on the hills of God"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh what a blessed reunion",
+        "Oh what a blessed reunion",
+        "When will we gather over yonder",
+        "There\u2019ll be shouting on the hills of God"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now\u2019s the time to make a reservation",
+        "Now\u2019s the time to make a reservation",
+        "So stop and make your reservation",
+        "There\u2019ll be shouting on the hills of God"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

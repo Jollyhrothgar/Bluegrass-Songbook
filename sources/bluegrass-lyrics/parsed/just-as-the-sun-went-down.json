@@ -1,0 +1,50 @@
+{
+  "slug": "just-as-the-sun-went-down",
+  "title": "Just as the Sun Went Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-as-the-sun-went-down/",
+  "raw_lyrics": "Love like this was never known\nThough you search the whole world \u2019round\nJesus dying for his own\nJust as the sun went down\n\nJust as the evenin\u2019 sun\nWas sinkin\u2019 in the golden west\nHanging between two thieves\nThey crucified the Son of God\n\nMocked by the multitudes\nThey placed on Him a thorny crown\nLove like this was never known\nJesus dying for His own\nJust as the sun went down\n\nBy Sanhedron He was tried\nHave no use for Him they cried\nBy the mob He was crucified\nJust as the sun went down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Love like this was never known",
+        "Though you search the whole world \u2019round",
+        "Jesus dying for his own",
+        "Just as the sun went down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just as the evenin\u2019 sun",
+        "Was sinkin\u2019 in the golden west",
+        "Hanging between two thieves",
+        "They crucified the Son of God"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mocked by the multitudes",
+        "They placed on Him a thorny crown",
+        "Love like this was never known",
+        "Jesus dying for His own",
+        "Just as the sun went down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "By Sanhedron He was tried",
+        "Have no use for Him they cried",
+        "By the mob He was crucified",
+        "Just as the sun went down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

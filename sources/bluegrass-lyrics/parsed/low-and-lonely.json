@@ -1,0 +1,49 @@
+{
+  "slug": "low-and-lonely",
+  "title": "Low And Lonely",
+  "source_url": "https://www.bluegrasslyrics.com/song/low-and-lonely/",
+  "raw_lyrics": "Low and lonely, sad and blue\nThinking only, of little you\nAlways trying, to keep from crying\nI\u2019m low and lonely over you\n\nDo you miss me, say you do\nTell me darling, please tell me true\nDo you yearn dear, for my return dear\nI\u2019m low and lonely over you\n\nLow and lonely, weary too\nYou\u2019re the only, true love I knew\nDon\u2019t be long dear, you know it\u2019s wrong dear\nI\u2019m low and lonely over you\n\nYou\u2019re my darling, you\u2019re my dear\nYou can trust me, so never fear\nHow I miss you, I long to kiss you\nI\u2019m low and lonely over you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Low and lonely, sad and blue",
+        "Thinking only, of little you",
+        "Always trying, to keep from crying",
+        "I\u2019m low and lonely over you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Do you miss me, say you do",
+        "Tell me darling, please tell me true",
+        "Do you yearn dear, for my return dear",
+        "I\u2019m low and lonely over you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Low and lonely, weary too",
+        "You\u2019re the only, true love I knew",
+        "Don\u2019t be long dear, you know it\u2019s wrong dear",
+        "I\u2019m low and lonely over you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re my darling, you\u2019re my dear",
+        "You can trust me, so never fear",
+        "How I miss you, I long to kiss you",
+        "I\u2019m low and lonely over you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

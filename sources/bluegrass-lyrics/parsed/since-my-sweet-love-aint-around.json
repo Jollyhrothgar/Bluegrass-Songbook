@@ -1,0 +1,39 @@
+{
+  "slug": "since-my-sweet-love-aint-around",
+  "title": "Since My Sweet Love Ain\u2019t Around",
+  "source_url": "https://www.bluegrasslyrics.com/song/since-my-sweet-love-aint-around/",
+  "raw_lyrics": "Listen to that rain a-falling\nCan\u2019nt you hear that lonesome sound?\nMy poor old heart is breaking\nSince my sweet love ain\u2019t around.\n\nLord I think I start to ramble\nGot to leave this lonesome town\nI can\u2019t stay here any longer\nSince my sweet love ain\u2019t around.\n\nOn that train tonight I\u2019ll leave\nAnd don\u2019t ask me where I\u2019m bound\nThis old town is way too lonely\nSince my sweet love ain\u2019t around.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Listen to that rain a-falling",
+        "Can\u2019nt you hear that lonesome sound?",
+        "My poor old heart is breaking",
+        "Since my sweet love ain\u2019t around."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lord I think I start to ramble",
+        "Got to leave this lonesome town",
+        "I can\u2019t stay here any longer",
+        "Since my sweet love ain\u2019t around."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On that train tonight I\u2019ll leave",
+        "And don\u2019t ask me where I\u2019m bound",
+        "This old town is way too lonely",
+        "Since my sweet love ain\u2019t around."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

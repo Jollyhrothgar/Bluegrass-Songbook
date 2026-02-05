@@ -1,0 +1,41 @@
+{
+  "slug": "midnight-on-the-highway",
+  "title": "Midnight On The Highway",
+  "source_url": "https://www.bluegrasslyrics.com/song/midnight-on-the-highway/",
+  "raw_lyrics": "Midnight on the highway and the stars are all aglow\nAnd it seems I\u2019m always drivin, and I miss my darlin\u2019 so\n\nMidnight on the highway, big bright moon above\nIt lights the white lines for me, all the way home to my love\n\nCan\u2019t you hear the wheels a hummin\u2019 as we roll on through the night\nMy desire is to hold you and I\u2019ll be home before daylight\n\nNow the shadows  quickly fadin\u2019 as a town comes into view\nThree more miles my journey\u2019s over and again I\u2019ll be with you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Midnight on the highway and the stars are all aglow",
+        "And it seems I\u2019m always drivin, and I miss my darlin\u2019 so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Midnight on the highway, big bright moon above",
+        "It lights the white lines for me, all the way home to my love"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Can\u2019t you hear the wheels a hummin\u2019 as we roll on through the night",
+        "My desire is to hold you and I\u2019ll be home before daylight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the shadows  quickly fadin\u2019 as a town comes into view",
+        "Three more miles my journey\u2019s over and again I\u2019ll be with you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

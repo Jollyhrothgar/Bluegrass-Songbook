@@ -1,3 +1,6 @@
+# AI Docs
+.sissyphus/
+
 # Secrets
 .env
 analytics/.env

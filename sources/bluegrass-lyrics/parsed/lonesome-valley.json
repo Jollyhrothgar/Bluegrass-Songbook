@@ -1,0 +1,50 @@
+{
+  "slug": "lonesome-valley",
+  "title": "Lonesome Valley",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-valley/",
+  "raw_lyrics": "Everybody\u2019s got to walk this lonesome valley\nWe\u2019ve got to walk it by ourselves\nThere\u2019s nobody else can walk it for us\nWe\u2019ve got to walk it by ourselves\n\nMy father\u2019s got to walk this lonesome valley\nHe\u2019s got to walk it by himself\nThere\u2019s nobody here can walk it for him\nHe\u2019s got to walk it by himself\n\nMy mother\u2019s got to walk this lonesome valley\n\nMost sinners got to walk this lonesome valley\n\nEverybody\u2019s got to walk this lonesome valley",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Everybody\u2019s got to walk this lonesome valley",
+        "We\u2019ve got to walk it by ourselves",
+        "There\u2019s nobody else can walk it for us",
+        "We\u2019ve got to walk it by ourselves"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My father\u2019s got to walk this lonesome valley",
+        "He\u2019s got to walk it by himself",
+        "There\u2019s nobody here can walk it for him",
+        "He\u2019s got to walk it by himself"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother\u2019s got to walk this lonesome valley"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Most sinners got to walk this lonesome valley"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Everybody\u2019s got to walk this lonesome valley"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

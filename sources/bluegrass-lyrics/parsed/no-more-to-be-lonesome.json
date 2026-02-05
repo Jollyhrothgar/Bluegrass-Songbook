@@ -1,0 +1,39 @@
+{
+  "slug": "no-more-to-be-lonesome",
+  "title": "No More To Be Lonesome",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-more-to-be-lonesome/",
+  "raw_lyrics": "Way down in old Georgia deep down in the pines\nI left my sweet children my home and my wife\nI rambled all over this country you see\nI wound up a loner out on the high seas\n\nOut on the high waters where the cold wind blows\nI\u2019ll always be lonesome for the ones I love most\nBut beneath the blue waters my body they\u2019ll find\nNo more to lonesome for those left behind\n\nShe never loved me and pushed me aside\nI still long to see her and be by her side\nMy children are angels and mean all to me\nBut a dear lovin father she won\u2019t let me be",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way down in old Georgia deep down in the pines",
+        "I left my sweet children my home and my wife",
+        "I rambled all over this country you see",
+        "I wound up a loner out on the high seas"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Out on the high waters where the cold wind blows",
+        "I\u2019ll always be lonesome for the ones I love most",
+        "But beneath the blue waters my body they\u2019ll find",
+        "No more to lonesome for those left behind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She never loved me and pushed me aside",
+        "I still long to see her and be by her side",
+        "My children are angels and mean all to me",
+        "But a dear lovin father she won\u2019t let me be"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

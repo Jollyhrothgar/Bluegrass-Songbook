@@ -1,0 +1,79 @@
+{
+  "slug": "sweet-sunny-south",
+  "title": "Sweet Sunny South",
+  "source_url": "https://www.bluegrasslyrics.com/song/sweet-sunny-south/",
+  "raw_lyrics": "Take me back to the place where I first saw the light\nTo that sweet sunny south take me home\nWhere the mockingbird sings me to sleep every night\nOh why was I tempted to roam\n\nI think with regret of the dear home I left\nOf the warm hearts that sheltered me there\nOf wife and of children of whom I\u2019m bereft\nOf the old place again do I sigh\n\nTake me back to the place where the orange trees grow\nTo my plot in the evergreen shade\nWhere the flowers from the river\u2019s green margins did grow\nAnd spread their sweet scent through the glade\n\nTake me back let me see what is left that I know\nCould it be that the old house is gone\nDear friends from my childhood indeed must be few\nAnd I must face death all alone\n\nThe path to our cottage they say has grown green\nAnd the place is quite lonely around\nI know that the smiles and the forms I once knew\nNow lie \u2018neath the cold mossy ground\n\nBut yet I return to the place of my birth\nWhere the children have played \u2018round the door\nWhere they gathered wild blossoms that grew \u2018round the path\nTwill echo their footsteps no more\n\nTake me back to the place where my little ones sleep\nWhere poor massa lies buried close by\nO\u2019er the graves of my loved ones I long for to weep\nand rest there among them when I die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Take me back to the place where I first saw the light",
+        "To that sweet sunny south take me home",
+        "Where the mockingbird sings me to sleep every night",
+        "Oh why was I tempted to roam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I think with regret of the dear home I left",
+        "Of the warm hearts that sheltered me there",
+        "Of wife and of children of whom I\u2019m bereft",
+        "Of the old place again do I sigh"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take me back to the place where the orange trees grow",
+        "To my plot in the evergreen shade",
+        "Where the flowers from the river\u2019s green margins did grow",
+        "And spread their sweet scent through the glade"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take me back let me see what is left that I know",
+        "Could it be that the old house is gone",
+        "Dear friends from my childhood indeed must be few",
+        "And I must face death all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The path to our cottage they say has grown green",
+        "And the place is quite lonely around",
+        "I know that the smiles and the forms I once knew",
+        "Now lie \u2018neath the cold mossy ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But yet I return to the place of my birth",
+        "Where the children have played \u2018round the door",
+        "Where they gathered wild blossoms that grew \u2018round the path",
+        "Twill echo their footsteps no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take me back to the place where my little ones sleep",
+        "Where poor massa lies buried close by",
+        "O\u2019er the graves of my loved ones I long for to weep",
+        "and rest there among them when I die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

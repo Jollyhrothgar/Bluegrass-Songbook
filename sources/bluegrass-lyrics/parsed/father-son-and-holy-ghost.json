@@ -1,0 +1,49 @@
+{
+  "slug": "father-son-and-holy-ghost",
+  "title": "Father Son and Holy Ghost",
+  "source_url": "https://www.bluegrasslyrics.com/song/father-son-and-holy-ghost/",
+  "raw_lyrics": "He was the blessed father of Abraham\nBrought his people to the promised land\nPoured milk and honey at their feet\nTold them to ask they shall recieve\n\nDo you know the father son and the holy ghost\nThe prince of peace and the heavenly host\nHe delivered us from sin and he\u2019ll come this way again\nDo you know the father son and the holy ghost\n\nHe cured the blind the sick and the deaf\nHe raised poor Lazarus up from the dead\nTurned pure water into wine\nAnd sent his only son to die\n\nWhen you know these miracles to be true\nTrust what the Lord has in store for you\nBelieve me my friend you best get right\nCause this could be the night we all take flight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "He was the blessed father of Abraham",
+        "Brought his people to the promised land",
+        "Poured milk and honey at their feet",
+        "Told them to ask they shall recieve"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Do you know the father son and the holy ghost",
+        "The prince of peace and the heavenly host",
+        "He delivered us from sin and he\u2019ll come this way again",
+        "Do you know the father son and the holy ghost"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He cured the blind the sick and the deaf",
+        "He raised poor Lazarus up from the dead",
+        "Turned pure water into wine",
+        "And sent his only son to die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you know these miracles to be true",
+        "Trust what the Lord has in store for you",
+        "Believe me my friend you best get right",
+        "Cause this could be the night we all take flight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

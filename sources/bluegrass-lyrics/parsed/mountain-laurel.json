@@ -1,0 +1,39 @@
+{
+  "slug": "mountain-laurel",
+  "title": "Mountain Laurel",
+  "source_url": "https://www.bluegrasslyrics.com/song/mountain-laurel/",
+  "raw_lyrics": "Like the Mountain Laurel in the grove dear\nMy love is it\u2019s ever green\nLike the Mountain Laurel finds the grove dear\nI\u2019ll find you again\n\nWhere the mountain breezes blow\nThere\u2019s a place I long to go\nYou\u2019ll be waiting there I know\nIn the pine and we\u2019ll climb\n\nInto the hills we knew in days gone by\nWhen your heart was gay and so was I\nAnd we\u2019ll find a love we left behind\nLong ago long ago",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Like the Mountain Laurel in the grove dear",
+        "My love is it\u2019s ever green",
+        "Like the Mountain Laurel finds the grove dear",
+        "I\u2019ll find you again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where the mountain breezes blow",
+        "There\u2019s a place I long to go",
+        "You\u2019ll be waiting there I know",
+        "In the pine and we\u2019ll climb"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Into the hills we knew in days gone by",
+        "When your heart was gay and so was I",
+        "And we\u2019ll find a love we left behind",
+        "Long ago long ago"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

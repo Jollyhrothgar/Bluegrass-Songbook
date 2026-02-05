@@ -1,0 +1,49 @@
+{
+  "slug": "my-darling-you-know-that-i-love-you",
+  "title": "My Darling You Know That I Love You",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-darling-you-know-that-i-love-you/",
+  "raw_lyrics": "Now darling you know that I love you\nAnd hope you will love me sometime\nNow darling you know that I trust you\nAnd I hope you will soon change your mind\n\nI wish we were both here together\nWhile I\u2019m writing the words to this song\nBut if you could write me a letter\nThen it wouldn\u2019t seem so very long\n\nRemember when we were together\nYou said you\u2019d come back some day\nI\u2019m saving all my love for you darling\nAnd that\u2019s all that I can ever say\n\nIf you ever change your mind dear\nAnd feel that you want someone new\nJust tell me all about your little secret\nThen I won\u2019t feel so sad and so blue",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Now darling you know that I love you",
+        "And hope you will love me sometime",
+        "Now darling you know that I trust you",
+        "And I hope you will soon change your mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish we were both here together",
+        "While I\u2019m writing the words to this song",
+        "But if you could write me a letter",
+        "Then it wouldn\u2019t seem so very long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Remember when we were together",
+        "You said you\u2019d come back some day",
+        "I\u2019m saving all my love for you darling",
+        "And that\u2019s all that I can ever say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you ever change your mind dear",
+        "And feel that you want someone new",
+        "Just tell me all about your little secret",
+        "Then I won\u2019t feel so sad and so blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

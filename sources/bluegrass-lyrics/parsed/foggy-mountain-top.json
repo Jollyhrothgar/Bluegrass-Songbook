@@ -1,0 +1,49 @@
+{
+  "slug": "foggy-mountain-top",
+  "title": "Foggy Mountain Top",
+  "source_url": "https://www.bluegrasslyrics.com/song/foggy-mountain-top/",
+  "raw_lyrics": "If  I\u2019d only listened to what my mama said\nI would not be here today\nA lying around this old jailhouse\nWasting my poor life away\n\nIf I was on some foggy mountain top\nI\u2019d sail away to the West\nI\u2019d sail all around this whole wide would\nTo the girl I love the best\n\nOh she caused me to weep and she caused me to mourn\nShe caused me to leave my home\nOh the lonesome pines and the good old times\nI\u2019m on my way back home\n\nNow if you see that girl of mine\nThere\u2019s something you can tell her\nShe need not fool her time away\nTo court some other feller",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If  I\u2019d only listened to what my mama said",
+        "I would not be here today",
+        "A lying around this old jailhouse",
+        "Wasting my poor life away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "If I was on some foggy mountain top",
+        "I\u2019d sail away to the West",
+        "I\u2019d sail all around this whole wide would",
+        "To the girl I love the best"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh she caused me to weep and she caused me to mourn",
+        "She caused me to leave my home",
+        "Oh the lonesome pines and the good old times",
+        "I\u2019m on my way back home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now if you see that girl of mine",
+        "There\u2019s something you can tell her",
+        "She need not fool her time away",
+        "To court some other feller"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

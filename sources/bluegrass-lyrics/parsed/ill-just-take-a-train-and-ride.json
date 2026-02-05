@@ -1,0 +1,39 @@
+{
+  "slug": "ill-just-take-a-train-and-ride",
+  "title": "I\u2019ll Just Take a Train and Ride",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-just-take-a-train-and-ride/",
+  "raw_lyrics": "Go and leave me if you wish to\nANd I hope you\u2019re satisfied\nWhen I my heart starts a breakin\u2019\nI\u2019ll just take this train and ride\n\nStandin by this lonesome railroad\nThinking of the days gone by\nHow you left me little darlin\nAnd I hung my head and cried\n\nThis very spot that I\u2019m now standing\nI once held you as my own\nBut the whine of that old freight train\nBroke apart our happy home",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Go and leave me if you wish to",
+        "ANd I hope you\u2019re satisfied",
+        "When I my heart starts a breakin\u2019",
+        "I\u2019ll just take this train and ride"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Standin by this lonesome railroad",
+        "Thinking of the days gone by",
+        "How you left me little darlin",
+        "And I hung my head and cried"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This very spot that I\u2019m now standing",
+        "I once held you as my own",
+        "But the whine of that old freight train",
+        "Broke apart our happy home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

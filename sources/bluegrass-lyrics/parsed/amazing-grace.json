@@ -1,0 +1,39 @@
+{
+  "slug": "amazing-grace",
+  "title": "Amazing Grace",
+  "source_url": "https://www.bluegrasslyrics.com/song/amazing-grace/",
+  "raw_lyrics": "Amazing grace how sweet the sound\nThat saved a wretch like me\nI once was lost but now I\u2019m found\nWas blind but now I see.\n\n\u2018Twas grace that taught my heert to fear\nAnd grace my fears relieved\nHow precious did that grace appear\nThe hour I first believed.\n\nWhen we\u2019ve been there ten thousand years\nBright shining as the sun\nWe\u2019ve no less days to sing God\u2019s praise\nThen when we first begun",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Amazing grace how sweet the sound",
+        "That saved a wretch like me",
+        "I once was lost but now I\u2019m found",
+        "Was blind but now I see."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "\u2018Twas grace that taught my heert to fear",
+        "And grace my fears relieved",
+        "How precious did that grace appear",
+        "The hour I first believed."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When we\u2019ve been there ten thousand years",
+        "Bright shining as the sun",
+        "We\u2019ve no less days to sing God\u2019s praise",
+        "Then when we first begun"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "walls-of-time",
+  "title": "Walls Of Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/walls-of-time/",
+  "raw_lyrics": "The wind is blowing \u2018cross the mountains\nAnd down on the valley way below\nIt sweeps the grave of my darling\nWhen I die that\u2019s where I want to go\n\nLord send the angels for my darling\nAnd take her to that home on high\nI\u2019ll wait my time out here on earth love\nAnd come to you when I die\n\nI hear a voice out in the darkness\nIt moans and whispers through the pines\nI know it\u2019s my sweetheart a calling\nI hear her through the walls of time\n\nOur names are carved upon the tombstone\nI promised you before you died\nOur love will bloom forever darling\nWhen we rest side by side",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The wind is blowing \u2018cross the mountains",
+        "And down on the valley way below",
+        "It sweeps the grave of my darling",
+        "When I die that\u2019s where I want to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lord send the angels for my darling",
+        "And take her to that home on high",
+        "I\u2019ll wait my time out here on earth love",
+        "And come to you when I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hear a voice out in the darkness",
+        "It moans and whispers through the pines",
+        "I know it\u2019s my sweetheart a calling",
+        "I hear her through the walls of time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Our names are carved upon the tombstone",
+        "I promised you before you died",
+        "Our love will bloom forever darling",
+        "When we rest side by side"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

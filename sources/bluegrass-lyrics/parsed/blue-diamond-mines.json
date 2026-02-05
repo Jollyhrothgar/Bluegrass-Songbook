@@ -1,0 +1,81 @@
+{
+  "slug": "blue-diamond-mines",
+  "title": "Blue Diamond Mines",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-diamond-mines/",
+  "raw_lyrics": "I remember the ways and the bygone days\nWhen we were all in our prime\nHow us and John L. we gave the old man hell\nDown in the Blue Diamond Mine\n\nWhen the whistle blowed and the rooster crowed\nTwo hours before daylight\nWhen a man done his best and he earned a good rest\nAnd had seventeen dollars at night\n\nIn the mines in the mines\nIn the Blue Diamond Mines\nI\u2019ve worked my (whole-1*) (poor-2*) (\u2013 -3*) life away\nIn the mines in the mines\nIn the Blue Diamond Mine\nGo fall on your knees and pray.\n\nYou old black gold you\u2019ve taken my lungs\nAnd your dust has darkened my home\nAnd now that we\u2019re old you\u2019re turning your back\nBut where else can an old miner go\n\nIt\u2019s\u00a0 Algoma Block and it\u2019s Big Leatherwood\nAnd now it\u2019s Blue Diamond too\nThe pits they are closing get another job\nBut what else can an old miner do\n\nJohn L. had a dream but it\u2019s broken it seems\nAnd the union is letting us down\nLast night they took away my hospital card\nSaying why don\u2019t you leave this old town.\n\nSo I\u2019ll go downtown and I\u2019ll hang around\nAnd maybe it ain\u2019t so bad\nBut when you get home your kids will meet you at the door\nSaying what did you bring me dad",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I remember the ways and the bygone days",
+        "When we were all in our prime",
+        "How us and John L. we gave the old man hell",
+        "Down in the Blue Diamond Mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the whistle blowed and the rooster crowed",
+        "Two hours before daylight",
+        "When a man done his best and he earned a good rest",
+        "And had seventeen dollars at night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the mines in the mines",
+        "In the Blue Diamond Mines",
+        "I\u2019ve worked my (whole-1*) (poor-2*) (\u2013 -3*) life away",
+        "In the mines in the mines",
+        "In the Blue Diamond Mine",
+        "Go fall on your knees and pray."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You old black gold you\u2019ve taken my lungs",
+        "And your dust has darkened my home",
+        "And now that we\u2019re old you\u2019re turning your back",
+        "But where else can an old miner go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s\u00a0 Algoma Block and it\u2019s Big Leatherwood",
+        "And now it\u2019s Blue Diamond too",
+        "The pits they are closing get another job",
+        "But what else can an old miner do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John L. had a dream but it\u2019s broken it seems",
+        "And the union is letting us down",
+        "Last night they took away my hospital card",
+        "Saying why don\u2019t you leave this old town."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So I\u2019ll go downtown and I\u2019ll hang around",
+        "And maybe it ain\u2019t so bad",
+        "But when you get home your kids will meet you at the door",
+        "Saying what did you bring me dad"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

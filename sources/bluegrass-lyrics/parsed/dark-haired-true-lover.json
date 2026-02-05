@@ -1,0 +1,69 @@
+{
+  "slug": "dark-haired-true-lover",
+  "title": "Dark Haired True Lover",
+  "source_url": "https://www.bluegrasslyrics.com/song/dark-haired-true-lover/",
+  "raw_lyrics": "I once had a dark haired true lover\nShe was all this world to me\nShe promised herself to another\nNow don\u2019t you think this was mean\n\nTake back every word you have spoken\nLet it be as though we never met\nFor tonight I\u2019m a poor boy heartbroken\nI\u2019ll forgive but I\u2019ll never forget\n\nI was young when I wrote my first letter\nI blotted the lines with tears\nBut now I am old I know better\nWe parted for many long years\n\nOh Ruth, Oh Ruth how I love you\nYou just seem to me like a bird\nAlthough you went back on your promise\nAlthough you went back on your word\n\nWe parted in the month of September\nSome said we parted for life\nBut I hope someday or another\nI\u2019ll call you my sweet darling wife\n\nI wish I had someone to love me\nSomeone to call me their own\nFor I\u2019m out in this wide world a wandering\nI\u2019m tired of living alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I once had a dark haired true lover",
+        "She was all this world to me",
+        "She promised herself to another",
+        "Now don\u2019t you think this was mean"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Take back every word you have spoken",
+        "Let it be as though we never met",
+        "For tonight I\u2019m a poor boy heartbroken",
+        "I\u2019ll forgive but I\u2019ll never forget"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was young when I wrote my first letter",
+        "I blotted the lines with tears",
+        "But now I am old I know better",
+        "We parted for many long years"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Ruth, Oh Ruth how I love you",
+        "You just seem to me like a bird",
+        "Although you went back on your promise",
+        "Although you went back on your word"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We parted in the month of September",
+        "Some said we parted for life",
+        "But I hope someday or another",
+        "I\u2019ll call you my sweet darling wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I had someone to love me",
+        "Someone to call me their own",
+        "For I\u2019m out in this wide world a wandering",
+        "I\u2019m tired of living alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

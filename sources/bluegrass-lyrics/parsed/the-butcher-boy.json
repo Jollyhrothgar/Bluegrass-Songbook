@@ -1,0 +1,57 @@
+{
+  "slug": "the-butcher-boy",
+  "title": "The Butcher Boy",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-butcher-boy/",
+  "raw_lyrics": "She went upstairs to make her bed\nAnd not a word to her mother she said\nHer mother she went up there too\nDear daughter dear daughter what\u2019s wrong with you\n\nOh mother oh mother I can not tell\nThat butcher boy that I love so well\nThere\u2019s another girl in another town\nHe goes out there and he sits right down\n\nThat night her father came home from work\nSayin\u2019 mother dear mother where is my girl\nHe went upstairs to give her hope\nAnd he found her hanging from a rope\n\nThen he took his knife and he cut her down\nAnd in her bosom these words he found\nGo did my grave both wide and deep\nWith marble stones at my head and feet\n\nIn the middle of my grave put a snow white dove\nTo show this world that I died for love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She went upstairs to make her bed",
+        "And not a word to her mother she said",
+        "Her mother she went up there too",
+        "Dear daughter dear daughter what\u2019s wrong with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh mother oh mother I can not tell",
+        "That butcher boy that I love so well",
+        "There\u2019s another girl in another town",
+        "He goes out there and he sits right down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That night her father came home from work",
+        "Sayin\u2019 mother dear mother where is my girl",
+        "He went upstairs to give her hope",
+        "And he found her hanging from a rope"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then he took his knife and he cut her down",
+        "And in her bosom these words he found",
+        "Go did my grave both wide and deep",
+        "With marble stones at my head and feet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the middle of my grave put a snow white dove",
+        "To show this world that I died for love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

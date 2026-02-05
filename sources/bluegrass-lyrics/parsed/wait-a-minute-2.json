@@ -1,0 +1,41 @@
+{
+  "slug": "wait-a-minute-2",
+  "title": "Wait A Minute",
+  "source_url": "https://www.bluegrasslyrics.com/song/wait-a-minute-2/",
+  "raw_lyrics": "Wait a minute did I hear you say you\u2019re going far away again\nTry to change it I can\u2019t take the lonely nights without your love\n\nDoin\u2019 the road get the music done and move along\nWhat good does it do Play your songs for her and hear her say\n\nYou\u2019re rollin\u2019 along life\u2019s been good to you and even so\nShe comes to you late at night\u2019s the time you hear her say once again\n\nI\u2019m waitin\u2019 for you thirty days and nights without a rest\nI got to hold on twenty-five to go and once again I\u2019ll hear you say",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Wait a minute did I hear you say you\u2019re going far away again",
+        "Try to change it I can\u2019t take the lonely nights without your love"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Doin\u2019 the road get the music done and move along",
+        "What good does it do Play your songs for her and hear her say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re rollin\u2019 along life\u2019s been good to you and even so",
+        "She comes to you late at night\u2019s the time you hear her say once again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m waitin\u2019 for you thirty days and nights without a rest",
+        "I got to hold on twenty-five to go and once again I\u2019ll hear you say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

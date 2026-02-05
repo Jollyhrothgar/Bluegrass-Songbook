@@ -1,0 +1,54 @@
+{
+  "slug": "lord-lead-me-on",
+  "title": "Lord Lead Me On",
+  "source_url": "https://www.bluegrasslyrics.com/song/lord-lead-me-on/",
+  "raw_lyrics": "When the way seems dark and long\nHold to my hand dear Lord I pray\nGive me grace to shout and shine\nEver in the life devine\nLord lead me on from day to day\n\nOh lead me on from day to day\nI want to walk the holy way\nOh friends forsake me all along\nI asked the Lord to lead me on\n\nIn this world of doubt and gloom\nWhen all flowers start to bloom\nHold to my hand dear Lord I pray\nI have put my faith in thee\n\u2018Til the homely hour shall be\n\nLord lead me on from day to day\nWhen old age is feeling on\nAnd my strength is almost gone\nHold to my hand dear I pray\nSurely thou will n\u2019er forsake\nAnd in heaven I\u2019ll awake\nLord lead me on from day to day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When the way seems dark and long",
+        "Hold to my hand dear Lord I pray",
+        "Give me grace to shout and shine",
+        "Ever in the life devine",
+        "Lord lead me on from day to day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh lead me on from day to day",
+        "I want to walk the holy way",
+        "Oh friends forsake me all along",
+        "I asked the Lord to lead me on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In this world of doubt and gloom",
+        "When all flowers start to bloom",
+        "Hold to my hand dear Lord I pray",
+        "I have put my faith in thee",
+        "\u2018Til the homely hour shall be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lord lead me on from day to day",
+        "When old age is feeling on",
+        "And my strength is almost gone",
+        "Hold to my hand dear I pray",
+        "Surely thou will n\u2019er forsake",
+        "And in heaven I\u2019ll awake",
+        "Lord lead me on from day to day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

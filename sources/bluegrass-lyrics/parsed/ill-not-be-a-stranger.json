@@ -1,0 +1,46 @@
+{
+  "slug": "ill-not-be-a-stranger",
+  "title": "I\u2019ll Not Be a Stranger",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-not-be-a-stranger/",
+  "raw_lyrics": "I\u2019ll not be a stranger when I get to that city\nI\u2019m acquainted with folks over there\nThere\u2019ll be friends there to greet me\nThere\u2019ll be loved ones to meet me\nAt the gates of that city four square\nThrough the years, through the tears, they\u2019ve gone one by one\nBut they\u2019ll wait at the gate until my race is run\nI\u2019ll not be a stranger when I get to that city\nI\u2019m acquainted with folks over there\n\nI\u2019ll not be a stranger when I get to that city\nI\u2019ve a home on the streets paved with gold\nI\u2019ll feel right at home there\nIn that beautiful somewhere\nWith the loved ones whose memory I hold\n\nI\u2019ll not be a stranger when I get to that city\nThere\u2019ll be no lonely days over there\nThere\u2019ll be no stormy weather\nBut a great time together\nOn the streets of that city four square",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll not be a stranger when I get to that city",
+        "I\u2019m acquainted with folks over there",
+        "There\u2019ll be friends there to greet me",
+        "There\u2019ll be loved ones to meet me",
+        "At the gates of that city four square",
+        "Through the years, through the tears, they\u2019ve gone one by one",
+        "But they\u2019ll wait at the gate until my race is run",
+        "I\u2019ll not be a stranger when I get to that city",
+        "I\u2019m acquainted with folks over there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll not be a stranger when I get to that city",
+        "I\u2019ve a home on the streets paved with gold",
+        "I\u2019ll feel right at home there",
+        "In that beautiful somewhere",
+        "With the loved ones whose memory I hold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll not be a stranger when I get to that city",
+        "There\u2019ll be no lonely days over there",
+        "There\u2019ll be no stormy weather",
+        "But a great time together",
+        "On the streets of that city four square"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

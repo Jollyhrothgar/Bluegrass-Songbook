@@ -1,0 +1,49 @@
+{
+  "slug": "dark-roads-a-hard-road-to-travel",
+  "title": "Dark Road\u2019s A Hard Road To Travel",
+  "source_url": "https://www.bluegrasslyrics.com/song/dark-roads-a-hard-road-to-travel/",
+  "raw_lyrics": "A dark road\u2019s a hard road to travel\nA light road is always the best\nA dark road will lead you to trouble\nA light road will lead you to rest\n\nI\u2019m going to see my new jail tomorrow\nIt\u2019s a place I have never been before\nAnd when my woman comes tomorrow\nI\u2019ll meet her with a smile at the door\n\nDon\u2019t ever be downhearted\nWhere there\u2019s a will there\u2019s a way\nTomorrow the sun may be shining\nAlthough it is cloudy today\n\nDon\u2019t this road look dark and lonesome\nDon\u2019t the sea look blue and deep\nWill you ever think of me darling\nWhen you can not hear me speak",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "A dark road\u2019s a hard road to travel",
+        "A light road is always the best",
+        "A dark road will lead you to trouble",
+        "A light road will lead you to rest"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going to see my new jail tomorrow",
+        "It\u2019s a place I have never been before",
+        "And when my woman comes tomorrow",
+        "I\u2019ll meet her with a smile at the door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t ever be downhearted",
+        "Where there\u2019s a will there\u2019s a way",
+        "Tomorrow the sun may be shining",
+        "Although it is cloudy today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t this road look dark and lonesome",
+        "Don\u2019t the sea look blue and deep",
+        "Will you ever think of me darling",
+        "When you can not hear me speak"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

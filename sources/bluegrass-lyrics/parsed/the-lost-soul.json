@@ -1,0 +1,49 @@
+{
+  "slug": "the-lost-soul",
+  "title": "The Lost Soul",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-lost-soul/",
+  "raw_lyrics": "What an awful day when the judgement comes\nAnd the sinners hear their eternal doom\nAt the sad decree they\u2019ll depart for aye\nInto endless woe and gloom yes woe and gloom\n\nI\u2019m paying now the penalty\nThe unredeemed must ever pay\nThough for help I cry it\u2019s now in vain\nFor alas I\u2019m doomed for aye\n\nIf I could recall all the years now gone\nFor my Savior\u2019s cause I would spend each one\nBut they never again can to me return\nAnd the task is left is left undone (it\u2019s left undone)\n\nOh I realize but alas too late\nWhat a dark mistake all my life has been\nI refused his love with a nefarious heart\nAnd I must pay the price of sin",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "What an awful day when the judgement comes",
+        "And the sinners hear their eternal doom",
+        "At the sad decree they\u2019ll depart for aye",
+        "Into endless woe and gloom yes woe and gloom"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m paying now the penalty",
+        "The unredeemed must ever pay",
+        "Though for help I cry it\u2019s now in vain",
+        "For alas I\u2019m doomed for aye"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I could recall all the years now gone",
+        "For my Savior\u2019s cause I would spend each one",
+        "But they never again can to me return",
+        "And the task is left is left undone (it\u2019s left undone)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I realize but alas too late",
+        "What a dark mistake all my life has been",
+        "I refused his love with a nefarious heart",
+        "And I must pay the price of sin"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

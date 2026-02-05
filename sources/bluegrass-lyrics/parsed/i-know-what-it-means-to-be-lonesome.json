@@ -1,0 +1,39 @@
+{
+  "slug": "i-know-what-it-means-to-be-lonesome",
+  "title": "I Know What It Means To Be Lonesome",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-know-what-it-means-to-be-lonesome/",
+  "raw_lyrics": "I know what it means to be lonesome\nAnd I know what it means to be blue\nI know what it means to be lonesome in dreams\nWhen there is no one at home for you\n\nWell my baby left me this morning\nAs the clock was striking four\nThe sweet smiling face of my darling\nI may never see any more\n\nWell I\u2019ve cried and I\u2019ve cried since we parted\nNo one knows what I have been through\nYou know I\u2019d give all I own just to have you back home\nI\u2019m lonesome, lonesome for you",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I know what it means to be lonesome",
+        "And I know what it means to be blue",
+        "I know what it means to be lonesome in dreams",
+        "When there is no one at home for you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well my baby left me this morning",
+        "As the clock was striking four",
+        "The sweet smiling face of my darling",
+        "I may never see any more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ve cried and I\u2019ve cried since we parted",
+        "No one knows what I have been through",
+        "You know I\u2019d give all I own just to have you back home",
+        "I\u2019m lonesome, lonesome for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "mansion-on-the-hill",
+  "title": "Mansion On The Hill",
+  "source_url": "https://www.bluegrasslyrics.com/song/mansion-on-the-hill/",
+  "raw_lyrics": "Tonight down here in the valley\nI\u2019m lonesome and oh how I feel\nAs I sit here alone in my cabin\nI can see your mansion on the hill\n\nDo you recall when we parted\nThe story to me you revealed\nYou said you could live without love dear\nIn your loveless mansion on the hill\n\nI\u2019ve waited all through the years love\nTo give you a heart true and real\n\u2018Cause I know you are living in sorrow\nIn your loveless mansion on the hill\n\nThe lights shine bright from your window\nThe trees stand so silent and still\nI know you\u2019re alone with your pride dear\nIn your loveless mansion on the hill",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight down here in the valley",
+        "I\u2019m lonesome and oh how I feel",
+        "As I sit here alone in my cabin",
+        "I can see your mansion on the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Do you recall when we parted",
+        "The story to me you revealed",
+        "You said you could live without love dear",
+        "In your loveless mansion on the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve waited all through the years love",
+        "To give you a heart true and real",
+        "\u2018Cause I know you are living in sorrow",
+        "In your loveless mansion on the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The lights shine bright from your window",
+        "The trees stand so silent and still",
+        "I know you\u2019re alone with your pride dear",
+        "In your loveless mansion on the hill"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "the-letter-that-never-came",
+  "title": "The Letter That Never Came",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-letter-that-never-came/",
+  "raw_lyrics": "Is there any mail for me was the question that he asked\nOf the postman at the closing of the day\nBut he turned away and cried while the tears stood in his eyes\nAs he drooped his head and slowly walked away\n\nWas it from a gray haired Mother or a Sister or a Brother\nHe waited all these many years in vain\nOf\u2019t from early morning light he would wait till dark of night\nFor a letter but alas it never came\n\nAs he waited all these years joy mingled with his tears\nHis poor soul had fleeted out with the time\nIn his hand he held a note and those simple words he wrote\nIf your letter comes just place it by my side",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Is there any mail for me was the question that he asked",
+        "Of the postman at the closing of the day",
+        "But he turned away and cried while the tears stood in his eyes",
+        "As he drooped his head and slowly walked away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Was it from a gray haired Mother or a Sister or a Brother",
+        "He waited all these many years in vain",
+        "Of\u2019t from early morning light he would wait till dark of night",
+        "For a letter but alas it never came"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As he waited all these years joy mingled with his tears",
+        "His poor soul had fleeted out with the time",
+        "In his hand he held a note and those simple words he wrote",
+        "If your letter comes just place it by my side"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

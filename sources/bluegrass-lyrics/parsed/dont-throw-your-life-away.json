@@ -1,0 +1,49 @@
+{
+  "slug": "dont-throw-your-life-away",
+  "title": "Don\u2019t Throw Your Life Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-throw-your-life-away/",
+  "raw_lyrics": "You say you\u2019ll never be my wife cause you\u2019ve done wrong in life\nAnd from it all your heart is bruised and torn\nBut God will forgive you and darlin\u2019 I will too\nBut let me love you Don\u2019t throw your life away\n\nHe used your heart for his fun now the damage has been done\nDon\u2019t wish that you had never been born\nFor the mistake has been made your love\u2019s too sweet to waste away\nBut let me love you Don\u2019t throw your life away\n\nHe treated you mean and cheap and your heart I know was deep\nA rose you found was full of deadly thorns\nHe dragged your name beneath his feet and now he shuns you on the street\nBut let me love you don\u2019t throw your life away\n\nCome into my waiting arms we\u2019ll fight life\u2019s bitter storms\nMy loving you I\u2019m not sorry for\nAnd if your love\u2019s not meant for me then wrong I\u2019ll always be\nBut let me love you don\u2019t throw your life away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You say you\u2019ll never be my wife cause you\u2019ve done wrong in life",
+        "And from it all your heart is bruised and torn",
+        "But God will forgive you and darlin\u2019 I will too",
+        "But let me love you Don\u2019t throw your life away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He used your heart for his fun now the damage has been done",
+        "Don\u2019t wish that you had never been born",
+        "For the mistake has been made your love\u2019s too sweet to waste away",
+        "But let me love you Don\u2019t throw your life away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He treated you mean and cheap and your heart I know was deep",
+        "A rose you found was full of deadly thorns",
+        "He dragged your name beneath his feet and now he shuns you on the street",
+        "But let me love you don\u2019t throw your life away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come into my waiting arms we\u2019ll fight life\u2019s bitter storms",
+        "My loving you I\u2019m not sorry for",
+        "And if your love\u2019s not meant for me then wrong I\u2019ll always be",
+        "But let me love you don\u2019t throw your life away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

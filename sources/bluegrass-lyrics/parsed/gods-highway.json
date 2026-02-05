@@ -1,0 +1,39 @@
+{
+  "slug": "gods-highway",
+  "title": "God\u2019s Highway",
+  "source_url": "https://www.bluegrasslyrics.com/song/gods-highway/",
+  "raw_lyrics": "There\u2019s a highway up in heaven and the streets are all pure gold\nThere\u2019ll be shouting there forever in the home land of the soul\nI shall meet with all my loved ones and the saints gone on before\nOn that highway up in heaven on that peaceful golden shore\n\nOh I\u2019ll walk down heavens highway some sweet day\nAnd I know I\u2019ll hear my blessed savior say\nWelcome to your home in heaven that I have prepared for you\nFor your cares and worries now on earth are through\n\nI\u2019ll be singing with the angels in those mansions there on high\nBe at home with my dear Savior never more to say goodbye\nThen again I\u2019ll see my Mom and Daddy who went on before\nWalk through glory shouting singing on God\u2019s highway ever more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a highway up in heaven and the streets are all pure gold",
+        "There\u2019ll be shouting there forever in the home land of the soul",
+        "I shall meet with all my loved ones and the saints gone on before",
+        "On that highway up in heaven on that peaceful golden shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I\u2019ll walk down heavens highway some sweet day",
+        "And I know I\u2019ll hear my blessed savior say",
+        "Welcome to your home in heaven that I have prepared for you",
+        "For your cares and worries now on earth are through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll be singing with the angels in those mansions there on high",
+        "Be at home with my dear Savior never more to say goodbye",
+        "Then again I\u2019ll see my Mom and Daddy who went on before",
+        "Walk through glory shouting singing on God\u2019s highway ever more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

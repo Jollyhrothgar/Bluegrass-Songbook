@@ -1,0 +1,49 @@
+{
+  "slug": "standing-by-the-river",
+  "title": "Standing By The River",
+  "source_url": "https://www.bluegrasslyrics.com/song/standing-by-the-river/",
+  "raw_lyrics": "Here I stand by this chilly water waitin\u2019 for my final call\nStanding by the river looking beyond\nGazin\u2019 toward the land of fadeless beauty o\u2019er the surges rise and fall\nStanding by the river looking beyond\n\nStanding by the river waiting for the boatman\nListen to the music on the other shore\nI can hear the angels singing out a welcome\nWith my friends and loved ones (with my friends have gone before)\n\nMusic from the land of endless glory fallin upon my listening ear\nStanding by the river looking beyond\nFaces of my friends I often vision forms of loved ones oft appear\nStanding by the river looking beyond\n\nShadows of night are swiftly falling lo I hear the boatman\u2019s oar\nStanding by the river looking beyond\nMany are the voices sweetly calling I must tarry hear no more\nStanding by the river looking beyond",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Here I stand by this chilly water waitin\u2019 for my final call",
+        "Standing by the river looking beyond",
+        "Gazin\u2019 toward the land of fadeless beauty o\u2019er the surges rise and fall",
+        "Standing by the river looking beyond"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Standing by the river waiting for the boatman",
+        "Listen to the music on the other shore",
+        "I can hear the angels singing out a welcome",
+        "With my friends and loved ones (with my friends have gone before)"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Music from the land of endless glory fallin upon my listening ear",
+        "Standing by the river looking beyond",
+        "Faces of my friends I often vision forms of loved ones oft appear",
+        "Standing by the river looking beyond"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Shadows of night are swiftly falling lo I hear the boatman\u2019s oar",
+        "Standing by the river looking beyond",
+        "Many are the voices sweetly calling I must tarry hear no more",
+        "Standing by the river looking beyond"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

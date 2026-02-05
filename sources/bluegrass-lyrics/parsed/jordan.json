@@ -1,0 +1,79 @@
+{
+  "slug": "jordan",
+  "title": "Jordan",
+  "source_url": "https://www.bluegrasslyrics.com/song/jordan/",
+  "raw_lyrics": "Oh come and as you tread life\u2019s journey\nTake Jesus as your daily guide\nThough you may feel pure and safely\nWithout him walkin by your side\n\nBut when you come to make the crossing\nAt the ending of your pilgrim way\nIf you ever will need our Savior\nYou\u2019ll surely need him on that day\n\n(Now look at that)  cold Jordan\n(Look at its)  deep waters\n(Look at that)  wide river\nOh hear the mighty billows roll\n\n(You better take)  Jesus with you\n(He\u2019s a)  true companion\n(For I\u2019m)  sure without him\nThat you never will make it o\u2019er\n\nThat awful day of judgment\nIs comin\u2019 in the by and by\nWe\u2019ll see our Lord descending\nIn Glory from on high\n\nOh let us keep in touch with Jesus\nAnd in his place a love of God\nWe may be ever call ready\nWhen he calls us over Jordan\u2019s tide\n\n(Oh what) oh what you gonna do\n(Oh what) oh what you gonna say\n(Oh how)  oh how you gonna feel\nWhen you come to the end of the way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh come and as you tread life\u2019s journey",
+        "Take Jesus as your daily guide",
+        "Though you may feel pure and safely",
+        "Without him walkin by your side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But when you come to make the crossing",
+        "At the ending of your pilgrim way",
+        "If you ever will need our Savior",
+        "You\u2019ll surely need him on that day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "(Now look at that)  cold Jordan",
+        "(Look at its)  deep waters",
+        "(Look at that)  wide river",
+        "Oh hear the mighty billows roll"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "(You better take)  Jesus with you",
+        "(He\u2019s a)  true companion",
+        "(For I\u2019m)  sure without him",
+        "That you never will make it o\u2019er"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That awful day of judgment",
+        "Is comin\u2019 in the by and by",
+        "We\u2019ll see our Lord descending",
+        "In Glory from on high"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh let us keep in touch with Jesus",
+        "And in his place a love of God",
+        "We may be ever call ready",
+        "When he calls us over Jordan\u2019s tide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "(Oh what) oh what you gonna do",
+        "(Oh what) oh what you gonna say",
+        "(Oh how)  oh how you gonna feel",
+        "When you come to the end of the way"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

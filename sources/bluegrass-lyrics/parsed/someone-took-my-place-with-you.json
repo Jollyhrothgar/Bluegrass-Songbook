@@ -1,0 +1,49 @@
+{
+  "slug": "someone-took-my-place-with-you",
+  "title": "Someone Took My Place With You",
+  "source_url": "https://www.bluegrasslyrics.com/song/someone-took-my-place-with-you/",
+  "raw_lyrics": "Now someone took my place with you\nNow you tell me we are through\nSomeone broke my heart in two\nWhen they took my place with you\n\nNow someone left me here to cry\nAnd with each day that passes by\nNow I\u2019m found here alone and blue\n\u2018Cause someone took my place with you\n\nIn days to come I know you\u2019ll find\nWhen you\u2019ve left me here behind\nSomeday I\u2019m sure that you will find\nYou wrecked your life as well as mine\n\nWhen it\u2019s too late to make amends\nI\u2019m sure you\u2019ll pay the price and then\nNow you\u2019ll be there alone and blue\n\u2018Cause someone took my place with you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now someone took my place with you",
+        "Now you tell me we are through",
+        "Someone broke my heart in two",
+        "When they took my place with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now someone left me here to cry",
+        "And with each day that passes by",
+        "Now I\u2019m found here alone and blue",
+        "\u2018Cause someone took my place with you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In days to come I know you\u2019ll find",
+        "When you\u2019ve left me here behind",
+        "Someday I\u2019m sure that you will find",
+        "You wrecked your life as well as mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When it\u2019s too late to make amends",
+        "I\u2019m sure you\u2019ll pay the price and then",
+        "Now you\u2019ll be there alone and blue",
+        "\u2018Cause someone took my place with you"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "over-the-sunset-hill",
+  "title": "Over the Sunset Hill",
+  "source_url": "https://www.bluegrasslyrics.com/song/over-the-sunset-hill/",
+  "raw_lyrics": "Over the sunset hill you have gone\nYou\u2019ve fought life\u2019s battles and victory won\nYou\u2019ve toiled an suffered through lonely years\nYou\u2019ve shared our sorrow, our joys and tears\n\nOver the sunset hill you have gone\nLeavin fond memories to linger on\nOur lovin master called your name\nThe chariots swung low and the angels came\n\nYou\u2019ve carried your cross and won your crown\nYou\u2019ve bore life\u2019s burden without a frown\nYou\u2019ve laughed and smiled though feeble and weak\nYou\u2019ve asked one and all the savior to seek",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Over the sunset hill you have gone",
+        "You\u2019ve fought life\u2019s battles and victory won",
+        "You\u2019ve toiled an suffered through lonely years",
+        "You\u2019ve shared our sorrow, our joys and tears"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Over the sunset hill you have gone",
+        "Leavin fond memories to linger on",
+        "Our lovin master called your name",
+        "The chariots swung low and the angels came"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ve carried your cross and won your crown",
+        "You\u2019ve bore life\u2019s burden without a frown",
+        "You\u2019ve laughed and smiled though feeble and weak",
+        "You\u2019ve asked one and all the savior to seek"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

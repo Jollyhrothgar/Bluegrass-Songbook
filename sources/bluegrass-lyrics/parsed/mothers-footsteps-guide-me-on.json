@@ -1,0 +1,39 @@
+{
+  "slug": "mothers-footsteps-guide-me-on",
+  "title": "Mother\u2019s Footsteps Guide Me On",
+  "source_url": "https://www.bluegrasslyrics.com/song/mothers-footsteps-guide-me-on/",
+  "raw_lyrics": "As a boy I learned of Jesus\nWith my mother here at home\nGathered there around the fireside\nMother taught us right from wrong\n\nHappy days I still remember\nWith a mother long gone on\nNow rejoicing with the angels (up in heaven)\nMother\u2019s footsteps guide me on\n\nMother\u2019s love will always guide us\nAs I journey on and on\nThere will be a great reunion\nMother\u2019s footsteps guide me on",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As a boy I learned of Jesus",
+        "With my mother here at home",
+        "Gathered there around the fireside",
+        "Mother taught us right from wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Happy days I still remember",
+        "With a mother long gone on",
+        "Now rejoicing with the angels (up in heaven)",
+        "Mother\u2019s footsteps guide me on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mother\u2019s love will always guide us",
+        "As I journey on and on",
+        "There will be a great reunion",
+        "Mother\u2019s footsteps guide me on"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

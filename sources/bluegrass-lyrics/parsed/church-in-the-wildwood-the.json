@@ -1,0 +1,59 @@
+{
+  "slug": "church-in-the-wildwood-the",
+  "title": "Church In The Wildwood, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/church-in-the-wildwood-the/",
+  "raw_lyrics": "There\u2019s a church in the valley by the wildwood\nNo lovelier place in the dale\nNo spot is so dear to my childhood\nAs the little brown church in the dell\n\nOh, come to the church by the wildwood\nOh, come to the church in the dale\nNo spot is so dear to my childhood\nAs the little brown church in the dell\n\nHow sweet on a clear Sabbath morning\nTo list to the clear ringing bell\nIt\u2019s tones so sweetly are calling\nOh, come to the church in the dell\n\nThere, close by the church in the valley\nLies one that I love so well\nShe sleeps, sweetly sleeps, neath the willow\nDisturb not her rest in the dell\n\nThere, close by the side of that loved one\nNeath the tree where the wild flowers bloom\nWhen the farewell hymn shall be chanted\nI shall rest by her side in the tomb",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a church in the valley by the wildwood",
+        "No lovelier place in the dale",
+        "No spot is so dear to my childhood",
+        "As the little brown church in the dell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, come to the church by the wildwood",
+        "Oh, come to the church in the dale",
+        "No spot is so dear to my childhood",
+        "As the little brown church in the dell"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How sweet on a clear Sabbath morning",
+        "To list to the clear ringing bell",
+        "It\u2019s tones so sweetly are calling",
+        "Oh, come to the church in the dell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There, close by the church in the valley",
+        "Lies one that I love so well",
+        "She sleeps, sweetly sleeps, neath the willow",
+        "Disturb not her rest in the dell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There, close by the side of that loved one",
+        "Neath the tree where the wild flowers bloom",
+        "When the farewell hymn shall be chanted",
+        "I shall rest by her side in the tomb"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "mother-no-longer-awaits-me-at-home",
+  "title": "Mother No Longer Awaits Me At Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/mother-no-longer-awaits-me-at-home/",
+  "raw_lyrics": "One night while the moon from heaven was shining\nMy mother was praying for me to come home\nShe asked her dear lord watch o\u2019er me out yonder\nTo send me back home to never more roam\n\nWhen I left my old home way back in the mountains\nI said I\u2019d return with honor and fame\nBut a young reckless heart turned wrong at the crossroads\nNow as I go home I bring mother shame\n\nWhen I got to the place where I spent my childhood\nThe silvery moon was shining so bright\nWhen I asked my dear friends to tell me of mother\nThey said she was called to heaven last night\n\nShe told them of how she was longing to see me\nHow lonely her home since I went away\nSaid darling repent and ask for forgiveness\nAnd meet mother there in heaven some day\n\nMother has gone to live with the angels\nHer soul is at rest around the great throne\nNow I have no one left here to advise me\nFor mother no longer awaits me at home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One night while the moon from heaven was shining",
+        "My mother was praying for me to come home",
+        "She asked her dear lord watch o\u2019er me out yonder",
+        "To send me back home to never more roam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I left my old home way back in the mountains",
+        "I said I\u2019d return with honor and fame",
+        "But a young reckless heart turned wrong at the crossroads",
+        "Now as I go home I bring mother shame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I got to the place where I spent my childhood",
+        "The silvery moon was shining so bright",
+        "When I asked my dear friends to tell me of mother",
+        "They said she was called to heaven last night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She told them of how she was longing to see me",
+        "How lonely her home since I went away",
+        "Said darling repent and ask for forgiveness",
+        "And meet mother there in heaven some day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mother has gone to live with the angels",
+        "Her soul is at rest around the great throne",
+        "Now I have no one left here to advise me",
+        "For mother no longer awaits me at home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

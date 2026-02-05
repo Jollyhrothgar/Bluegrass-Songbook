@@ -1,0 +1,69 @@
+{
+  "slug": "jordan-am-a-hard-road-to-travel",
+  "title": "Jordan Am A Hard Road To Travel",
+  "source_url": "https://www.bluegrasslyrics.com/song/jordan-am-a-hard-road-to-travel/",
+  "raw_lyrics": "I\u2019m gonna sing you a brand new song\nIt\u2019s all the truth for certain\nWe can\u2019t live high if we get by\nAnd get on the other side of Jordan\n\nOh pull off your overcoat and roll up your sleeves\nJordan is a hard road to travel\nPull off your overcoat and roll up your sleeves\nJordan is a hard road to travel I believe.\n\nThe public schools and the highways\nare causing quite an alarm\nGet a country boy educated just a little\nand he won\u2019t work on the farm\n\nNow I don\u2019t know but I believe I\u2019m right\nthe auto\u2019s ruined the country\nLet\u2019s get back to the horse and buggy\nand try to save some money.\n\nI know a man an evangelist\nhis tabernacle\u2019s always full\nThe people come from miles around\njust to hear him shoot the bull\n\nYou can talk about your evangelists\nyou can talk about Mr. Ford too\nBut Henry\u2019s shaking more hell out of the folks\nthan all the evangelists do.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m gonna sing you a brand new song",
+        "It\u2019s all the truth for certain",
+        "We can\u2019t live high if we get by",
+        "And get on the other side of Jordan"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh pull off your overcoat and roll up your sleeves",
+        "Jordan is a hard road to travel",
+        "Pull off your overcoat and roll up your sleeves",
+        "Jordan is a hard road to travel I believe."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The public schools and the highways",
+        "are causing quite an alarm",
+        "Get a country boy educated just a little",
+        "and he won\u2019t work on the farm"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I don\u2019t know but I believe I\u2019m right",
+        "the auto\u2019s ruined the country",
+        "Let\u2019s get back to the horse and buggy",
+        "and try to save some money."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know a man an evangelist",
+        "his tabernacle\u2019s always full",
+        "The people come from miles around",
+        "just to hear him shoot the bull"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can talk about your evangelists",
+        "you can talk about Mr. Ford too",
+        "But Henry\u2019s shaking more hell out of the folks",
+        "than all the evangelists do."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

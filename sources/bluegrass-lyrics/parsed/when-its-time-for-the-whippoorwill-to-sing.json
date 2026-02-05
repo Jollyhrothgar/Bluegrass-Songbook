@@ -1,0 +1,49 @@
+{
+  "slug": "when-its-time-for-the-whippoorwill-to-sing",
+  "title": "When It\u2019s Time For The Whippoorwill To Sing",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-its-time-for-the-whippoorwill-to-sing/",
+  "raw_lyrics": "Oh the stars and the silver moon is shining\nAll around is the sweetness of the spring\nBut I\u2019m sad and in loneliness I\u2019m pining\nFor the one I know I\u2019ll never see again\n\nHow I long for the day when I shall see her\nIf it be where the angels sweetly sing\nShe is mine and the thought of her grows sweeter\nWhen it\u2019s time for the whippoorwill to sing\n\nWhen I left with the thought I\u2019d be returning\nSoon to her with the wealth and joy I\u2019d bring\nI returned but too late and now I\u2019m yearning\nShe is gone and in loneliness I sing\n\nI remember the night she made the promise\nAnd these words said to me great joy did bring\nI\u2019ll be true and you know you\u2019ll find me waiting\nWhen it\u2019s time for the whippoorwill to sing",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the stars and the silver moon is shining",
+        "All around is the sweetness of the spring",
+        "But I\u2019m sad and in loneliness I\u2019m pining",
+        "For the one I know I\u2019ll never see again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "How I long for the day when I shall see her",
+        "If it be where the angels sweetly sing",
+        "She is mine and the thought of her grows sweeter",
+        "When it\u2019s time for the whippoorwill to sing"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I left with the thought I\u2019d be returning",
+        "Soon to her with the wealth and joy I\u2019d bring",
+        "I returned but too late and now I\u2019m yearning",
+        "She is gone and in loneliness I sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember the night she made the promise",
+        "And these words said to me great joy did bring",
+        "I\u2019ll be true and you know you\u2019ll find me waiting",
+        "When it\u2019s time for the whippoorwill to sing"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

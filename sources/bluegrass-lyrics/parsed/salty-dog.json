@@ -1,0 +1,54 @@
+{
+  "slug": "salty-dog",
+  "title": "Salty Dog",
+  "source_url": "https://www.bluegrasslyrics.com/song/salty-dog/",
+  "raw_lyrics": "Standing on the corner with the lowdown blues\nA great big hole in the bottom of my shoes\nHoney let me be your salty dog\n\nLet me be your salty dog\nOr I won\u2019t be your man at all\nHoney let me be your salty dog\n\nLook it here Sal, I know you\nRun down stocking and a wore out shoe\nHoney let me be your salty dog\n\nDown in the wildwood sitting on a log\nFinger on the trigger and an eye on the hog\nHoney let me be your salty dog\n\nPulled the trigger and the gun set go\nThe shot fell over in Mexico\nHoney let me be your salty dog",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Standing on the corner with the lowdown blues",
+        "A great big hole in the bottom of my shoes",
+        "Honey let me be your salty dog"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Let me be your salty dog",
+        "Or I won\u2019t be your man at all",
+        "Honey let me be your salty dog"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Look it here Sal, I know you",
+        "Run down stocking and a wore out shoe",
+        "Honey let me be your salty dog"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Down in the wildwood sitting on a log",
+        "Finger on the trigger and an eye on the hog",
+        "Honey let me be your salty dog"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Pulled the trigger and the gun set go",
+        "The shot fell over in Mexico",
+        "Honey let me be your salty dog"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

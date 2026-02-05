@@ -1,0 +1,49 @@
+{
+  "slug": "call-me-long-gone",
+  "title": "Call Me Long Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/call-me-long-gone/",
+  "raw_lyrics": "They call me long gone I\u2019m leavin\u2019 town\nDon\u2019t try to follow I can\u2019t be found\nI\u2019ll take my rainbow and the sunshine free\nAnd the only worry that I have\u2019s in the sole of my shoe.\n\nThey caught me bummin\u2019 in the park one day\nYou saw me thumbin\u2019 on the old highway\nWell listen baby don\u2019t you know\nThat your dear old daddy\u2019s got a home every where I go.\n\nWell you took my money and my big fine farm\nYou thought you\u2019d beat me but you didn\u2019t by far\nWell the big boys got me oh but I got away\nAnd you\u2019re gonna miss your dear old daddy some of these days.\n\nJust need to follow that old black crow\nHappy-go-lucky every where I go\nAin\u2019t got no worries ain\u2019t got no cares\nAn easy road and a lonesome road is all I share.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "They call me long gone I\u2019m leavin\u2019 town",
+        "Don\u2019t try to follow I can\u2019t be found",
+        "I\u2019ll take my rainbow and the sunshine free",
+        "And the only worry that I have\u2019s in the sole of my shoe."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They caught me bummin\u2019 in the park one day",
+        "You saw me thumbin\u2019 on the old highway",
+        "Well listen baby don\u2019t you know",
+        "That your dear old daddy\u2019s got a home every where I go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well you took my money and my big fine farm",
+        "You thought you\u2019d beat me but you didn\u2019t by far",
+        "Well the big boys got me oh but I got away",
+        "And you\u2019re gonna miss your dear old daddy some of these days."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just need to follow that old black crow",
+        "Happy-go-lucky every where I go",
+        "Ain\u2019t got no worries ain\u2019t got no cares",
+        "An easy road and a lonesome road is all I share."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

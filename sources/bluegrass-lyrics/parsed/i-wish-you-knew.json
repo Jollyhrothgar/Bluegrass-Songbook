@@ -1,0 +1,40 @@
+{
+  "slug": "i-wish-you-knew",
+  "title": "I Wish You Knew",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-wish-you-knew/",
+  "raw_lyrics": "I wish you knew how hard I\u2019ve tried to tell you\nHow hard I\u2019ve tried to get you off my mind\nI wish you knew how hard I\u2019ve tried to sleep at night\nSince I know that you\u2019re no longer mine\nSince you let another beat my time\n\nIf only half the things were true you say about my heart\nThen I would have forgotten you since we\u2019ve been apart\nYou said I forced my lips to kiss you when we said goodbye\nYou even said I forced the tears that came into my eyes\n\nThere\u2019s not a thought that could be worse than knowing that you\u2019re gone\nBut in the picture in your mind I\u2019m never all alone\nYou see me in another\u2019s arms just like I\u2019ve been with you\nBy the way I cry for you each night I only wish you knew",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I wish you knew how hard I\u2019ve tried to tell you",
+        "How hard I\u2019ve tried to get you off my mind",
+        "I wish you knew how hard I\u2019ve tried to sleep at night",
+        "Since I know that you\u2019re no longer mine",
+        "Since you let another beat my time"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If only half the things were true you say about my heart",
+        "Then I would have forgotten you since we\u2019ve been apart",
+        "You said I forced my lips to kiss you when we said goodbye",
+        "You even said I forced the tears that came into my eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s not a thought that could be worse than knowing that you\u2019re gone",
+        "But in the picture in your mind I\u2019m never all alone",
+        "You see me in another\u2019s arms just like I\u2019ve been with you",
+        "By the way I cry for you each night I only wish you knew"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

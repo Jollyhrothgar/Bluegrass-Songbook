@@ -1,0 +1,49 @@
+{
+  "slug": "a-satisfied-mind",
+  "title": "A Satisfied Mind",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-satisfied-mind/",
+  "raw_lyrics": "How many times have you heard someone say\nIf I had his money I\u2019d do things my way\nHow little they know that it\u2019s so hard to find\nOne rich man in a hundred with a satisfied mind\n\nOnce I was living in fortune and fame\nHad everything that I dreamed of to get a start in life\u2019s game\nThen suddenly it happened I lost every dime\nBut I\u2019m richer by far with a satisfied mind\n\nMoney can\u2019t buy back your youth when you\u2019re old\nOr a friend when you\u2019re lonely or a heart that\u2019s grown cold\nAnd the world\u2019s richest man is a pauper at times\nCompared to a man with a satisfied mind\n\nWhen my life is over and my time has run out\nMy friends and my loved ones I\u2019ll leave there\u2019s no doubt\nBut one thing\u2019s for certain when it comes my time\nI\u2019ll leave this old world with a satisfied mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "How many times have you heard someone say",
+        "If I had his money I\u2019d do things my way",
+        "How little they know that it\u2019s so hard to find",
+        "One rich man in a hundred with a satisfied mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once I was living in fortune and fame",
+        "Had everything that I dreamed of to get a start in life\u2019s game",
+        "Then suddenly it happened I lost every dime",
+        "But I\u2019m richer by far with a satisfied mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Money can\u2019t buy back your youth when you\u2019re old",
+        "Or a friend when you\u2019re lonely or a heart that\u2019s grown cold",
+        "And the world\u2019s richest man is a pauper at times",
+        "Compared to a man with a satisfied mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When my life is over and my time has run out",
+        "My friends and my loved ones I\u2019ll leave there\u2019s no doubt",
+        "But one thing\u2019s for certain when it comes my time",
+        "I\u2019ll leave this old world with a satisfied mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

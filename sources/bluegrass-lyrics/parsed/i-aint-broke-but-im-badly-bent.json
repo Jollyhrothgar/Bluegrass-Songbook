@@ -1,0 +1,47 @@
+{
+  "slug": "i-aint-broke-but-im-badly-bent",
+  "title": "I Ain\u2019t Broke But I\u2019m Badly Bent",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-aint-broke-but-im-badly-bent/",
+  "raw_lyrics": "I\u2019m goin\u2019 back to the country, I can\u2019t pay the rent\nThough I\u2019m not exactly broke, brother I\u2019m sure bent\nCan\u2019t understand where my money went\nI ain\u2019t broke but I\u2019m badly bent.\n\nWell, I had a lot of money, but to the city went\nI met too many good looking girls and that\u2019s where my money went\nYeah I know just where it went\nNo I ain\u2019t broke but I\u2019m badly bent.\n\nWhen I get back to the country I\u2019ll be livin\u2019 in a tent\nMa and Pa will sure be mad about all the money I spent\nCan\u2019t understand just where it went\nNo I ain\u2019t broke but I\u2019m badly bent\n\nYeah I know just where it went\nNo I ain\u2019t broke, but brother I\u2019m badly bent.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m goin\u2019 back to the country, I can\u2019t pay the rent",
+        "Though I\u2019m not exactly broke, brother I\u2019m sure bent",
+        "Can\u2019t understand where my money went",
+        "I ain\u2019t broke but I\u2019m badly bent."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, I had a lot of money, but to the city went",
+        "I met too many good looking girls and that\u2019s where my money went",
+        "Yeah I know just where it went",
+        "No I ain\u2019t broke but I\u2019m badly bent."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I get back to the country I\u2019ll be livin\u2019 in a tent",
+        "Ma and Pa will sure be mad about all the money I spent",
+        "Can\u2019t understand just where it went",
+        "No I ain\u2019t broke but I\u2019m badly bent"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yeah I know just where it went",
+        "No I ain\u2019t broke, but brother I\u2019m badly bent."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

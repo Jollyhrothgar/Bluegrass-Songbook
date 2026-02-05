@@ -1,0 +1,59 @@
+{
+  "slug": "in-the-shadow-of-clinch-mountain",
+  "title": "In The Shadow Of Clinch Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-the-shadow-of-clinch-mountain/",
+  "raw_lyrics": "I grew up on the side of Clinch Mountain\nWith the beauties and the music of the woods\nThe sweet song of the bright bubbling fountain\nand the warble of the birds I understood\n\nWhen I\u2019ve sung my last song in the evening\nAnd the sun sets in the golden west\nAll the scenes of this world I\u2019ll be leaving\nIn the shadow of Clinch Mountain I will rest\n\nLong ago said the oak and the cedar\nSinging deeply in a whisper of the past\nStood not then this great towering leader\nnor the fountain where the crystal gems are kept (passed?)\n\nThen I asked how this green lofty mountain\nin the caldron the lonely desert stood\nSaid this song of the bright sunny fountain\nWe were given by the waters of the flood\n\nOut that gate I have passed since my childhood\nO\u2019er the railway through the tunnel to the west\nsinging songs of the Clinch Mountain wildwoods\nSong that people found and birds loved the best",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I grew up on the side of Clinch Mountain",
+        "With the beauties and the music of the woods",
+        "The sweet song of the bright bubbling fountain",
+        "and the warble of the birds I understood"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When I\u2019ve sung my last song in the evening",
+        "And the sun sets in the golden west",
+        "All the scenes of this world I\u2019ll be leaving",
+        "In the shadow of Clinch Mountain I will rest"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Long ago said the oak and the cedar",
+        "Singing deeply in a whisper of the past",
+        "Stood not then this great towering leader",
+        "nor the fountain where the crystal gems are kept (passed?)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then I asked how this green lofty mountain",
+        "in the caldron the lonely desert stood",
+        "Said this song of the bright sunny fountain",
+        "We were given by the waters of the flood"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Out that gate I have passed since my childhood",
+        "O\u2019er the railway through the tunnel to the west",
+        "singing songs of the Clinch Mountain wildwoods",
+        "Song that people found and birds loved the best"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

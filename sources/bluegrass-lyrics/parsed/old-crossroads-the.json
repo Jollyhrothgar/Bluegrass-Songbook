@@ -1,0 +1,49 @@
+{
+  "slug": "old-crossroads-the",
+  "title": "Old Crossroads, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-crossroads-the/",
+  "raw_lyrics": "Oh my brother take this warning\nDon\u2019t let ol Satan take your hand\nYou\u2019ll be lost in sin forever\nYou\u2019ll never reach the promised land\n\nThe old crossroads now is waiting\nWhich one are you going to take\nOne leads down to destruction\nThe other to the pearly gate\n\nOne road leads up to heaven\nThe other goes down below\nJesus our savior will protect you\nHe\u2019ll guide you through the old crossroads\n\nSoon your life will be over\nYou\u2019ll have to face the old crossroads\nWill you be ready then my brother\nTo shun the one down below",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my brother take this warning",
+        "Don\u2019t let ol Satan take your hand",
+        "You\u2019ll be lost in sin forever",
+        "You\u2019ll never reach the promised land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The old crossroads now is waiting",
+        "Which one are you going to take",
+        "One leads down to destruction",
+        "The other to the pearly gate"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One road leads up to heaven",
+        "The other goes down below",
+        "Jesus our savior will protect you",
+        "He\u2019ll guide you through the old crossroads"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Soon your life will be over",
+        "You\u2019ll have to face the old crossroads",
+        "Will you be ready then my brother",
+        "To shun the one down below"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

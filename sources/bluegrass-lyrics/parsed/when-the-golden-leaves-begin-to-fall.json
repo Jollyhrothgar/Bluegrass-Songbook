@@ -1,0 +1,49 @@
+{
+  "slug": "when-the-golden-leaves-begin-to-fall",
+  "title": "When The Golden Leaves Begin To Fall",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-golden-leaves-begin-to-fall/",
+  "raw_lyrics": "I left the one that love in the mountains\nAnd all the love we shared\nBut each night as she kneels by her bed side\nI know she calls my name in her prayer\n\nWhen the moon shines on the Blue Ridge mountains\nAnd it seems I can hear my sweetheart call\nHow I long to be near to my darling\nWhen the golden leaves begin to fall\n\nShe knows that I\u2019ll return to the mountains\nAnd will bring to her a wedding ring\nIt will be placed upon her finger\nHappiness to us both it will bring\n\nWinter time is so cold in the mountains\nThe ground will soon be covered white with snow\nHow I long to keep the home fires burning\nFor I know my darling needs me so",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I left the one that love in the mountains",
+        "And all the love we shared",
+        "But each night as she kneels by her bed side",
+        "I know she calls my name in her prayer"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the moon shines on the Blue Ridge mountains",
+        "And it seems I can hear my sweetheart call",
+        "How I long to be near to my darling",
+        "When the golden leaves begin to fall"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She knows that I\u2019ll return to the mountains",
+        "And will bring to her a wedding ring",
+        "It will be placed upon her finger",
+        "Happiness to us both it will bring"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Winter time is so cold in the mountains",
+        "The ground will soon be covered white with snow",
+        "How I long to keep the home fires burning",
+        "For I know my darling needs me so"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

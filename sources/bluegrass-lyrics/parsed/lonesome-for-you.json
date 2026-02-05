@@ -1,0 +1,69 @@
+{
+  "slug": "lonesome-for-you",
+  "title": "Lonesome For You",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-for-you/",
+  "raw_lyrics": "Now I know what it means to be lonesome\nAnd I know what it means to be blue\nAnd I know what it means to be lonesome in dreams\nWhen there\u2019 someone missing you\n\nCause I\u2019ve cried and I\u2019ve cried since we parted\nThere\u2019s no one knows what I\u2019ve gone through\nI\u2019d give all that I own just to have you back home\nCause I\u2019m lonesome lonesome for you\n\nMy best friend left me this morning\nAs the clock was striking four\nAnd the smiling face of my darling\nI may not see no more\n\nNow I know what it means to be worried\nTo be all lonesome and blue\nFor the one that I loved so dearly\nHas turned her back on me\n\nOh my  mind is full of sorrow\nAnd my heart is filled with pain\nAnd I feel so broken hearted\nWont you please come back again\n\nCause I\u2019ve cried and I\u2019ve cried since we parted\nThere\u2019s no one knows what I\u2019ve gone through\nI\u2019d give all that I own just to have you back home\nCause I\u2019m lonesome lonesome for you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now I know what it means to be lonesome",
+        "And I know what it means to be blue",
+        "And I know what it means to be lonesome in dreams",
+        "When there\u2019 someone missing you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Cause I\u2019ve cried and I\u2019ve cried since we parted",
+        "There\u2019s no one knows what I\u2019ve gone through",
+        "I\u2019d give all that I own just to have you back home",
+        "Cause I\u2019m lonesome lonesome for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My best friend left me this morning",
+        "As the clock was striking four",
+        "And the smiling face of my darling",
+        "I may not see no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I know what it means to be worried",
+        "To be all lonesome and blue",
+        "For the one that I loved so dearly",
+        "Has turned her back on me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my  mind is full of sorrow",
+        "And my heart is filled with pain",
+        "And I feel so broken hearted",
+        "Wont you please come back again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Cause I\u2019ve cried and I\u2019ve cried since we parted",
+        "There\u2019s no one knows what I\u2019ve gone through",
+        "I\u2019d give all that I own just to have you back home",
+        "Cause I\u2019m lonesome lonesome for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

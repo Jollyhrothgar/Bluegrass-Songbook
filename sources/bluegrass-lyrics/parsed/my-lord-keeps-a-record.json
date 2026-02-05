@@ -1,0 +1,39 @@
+{
+  "slug": "my-lord-keeps-a-record",
+  "title": "My Lord Keeps a Record",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-lord-keeps-a-record/",
+  "raw_lyrics": "My Lord keeps a record of things in the past\nTells us the story of a life that won\u2019t last\nAnd when I have reached my heavenly home\nMy Lord keeps a record of things gone on\n\nI remember when I was so young\nAll of the evil things I had done\nBut now I know my life\u2019s crown is won\nMy Lord keeps a record of things gone on\n\nMany years have come and they\u2019ve gone\nI see King Jesus sitting there in his throne\nFlying with the Angels to my heavenly home\nMy Lord keeps a record of things gone on",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "My Lord keeps a record of things in the past",
+        "Tells us the story of a life that won\u2019t last",
+        "And when I have reached my heavenly home",
+        "My Lord keeps a record of things gone on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember when I was so young",
+        "All of the evil things I had done",
+        "But now I know my life\u2019s crown is won",
+        "My Lord keeps a record of things gone on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many years have come and they\u2019ve gone",
+        "I see King Jesus sitting there in his throne",
+        "Flying with the Angels to my heavenly home",
+        "My Lord keeps a record of things gone on"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

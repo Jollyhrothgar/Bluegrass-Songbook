@@ -1,0 +1,47 @@
+{
+  "slug": "hop-high-my-lula-gal",
+  "title": "Hop High My Lula Gal",
+  "source_url": "https://www.bluegrasslyrics.com/song/hop-high-my-lula-gal/",
+  "raw_lyrics": "Where did you get them high top shoes\nAnd the dress that you wear so fine\nGot my shoes from a railroad man\nAnd the dress is from a driver in the mine\n\nOh hop high hop high\nHop high my lula gal\n\nI\u2019ll pawn you my watch and I\u2019ll pawn you my chain\nI\u2019ll pawn you gold wedding ring\nTo pay my little lulu\u2019s fine\nI\u2019ll pawn you my wagon and my team\n\nWhere have you been my pretty little girl\nWhere have you been so long\nI\u2019ve been in the pen with those rough and rowdy men\nAnd honey I\u2019m goin\u2019 back again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Where did you get them high top shoes",
+        "And the dress that you wear so fine",
+        "Got my shoes from a railroad man",
+        "And the dress is from a driver in the mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh hop high hop high",
+        "Hop high my lula gal"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll pawn you my watch and I\u2019ll pawn you my chain",
+        "I\u2019ll pawn you gold wedding ring",
+        "To pay my little lulu\u2019s fine",
+        "I\u2019ll pawn you my wagon and my team"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where have you been my pretty little girl",
+        "Where have you been so long",
+        "I\u2019ve been in the pen with those rough and rowdy men",
+        "And honey I\u2019m goin\u2019 back again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

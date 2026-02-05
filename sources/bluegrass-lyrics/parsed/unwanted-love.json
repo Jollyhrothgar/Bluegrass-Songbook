@@ -1,0 +1,49 @@
+{
+  "slug": "unwanted-love",
+  "title": "Unwanted Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/unwanted-love/",
+  "raw_lyrics": "I\u2019m wanting someone that\u2019s loved and lost\nSomeone that\u2019s known the thrill and paid the cost\nSomeone that says they\u2019ll never take a chance\nOn another broken heart, lies, false romance\n\nWanted an unwanted love\nTo share all the misery and pain\nOf a heart that\u2019s unwanted and loved\nAnd unwilling to gamble again\n\nI don\u2019t want to love again I\u2019m sure\nSomeone whose love is not sincere\nI don\u2019t want someone who hasn\u2019t known\nHow it feels to love and be alone\n\nI know there are others like me\nAlone, footloose and fancy free\nYet chained to a love they\u2019ll never claim\nAnd afraid to ever love again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m wanting someone that\u2019s loved and lost",
+        "Someone that\u2019s known the thrill and paid the cost",
+        "Someone that says they\u2019ll never take a chance",
+        "On another broken heart, lies, false romance"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Wanted an unwanted love",
+        "To share all the misery and pain",
+        "Of a heart that\u2019s unwanted and loved",
+        "And unwilling to gamble again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t want to love again I\u2019m sure",
+        "Someone whose love is not sincere",
+        "I don\u2019t want someone who hasn\u2019t known",
+        "How it feels to love and be alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know there are others like me",
+        "Alone, footloose and fancy free",
+        "Yet chained to a love they\u2019ll never claim",
+        "And afraid to ever love again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

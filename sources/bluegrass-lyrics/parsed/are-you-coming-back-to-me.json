@@ -1,0 +1,39 @@
+{
+  "slug": "are-you-coming-back-to-me",
+  "title": "Are You Coming Back To Me?",
+  "source_url": "https://www.bluegrasslyrics.com/song/are-you-coming-back-to-me/",
+  "raw_lyrics": "My days and nights are lonely darling since you left and went away\nI still recall those unkind words that were said that day\nIt hurts me so to know you\u2019re leaving I realize that I\u2019m to blame\nBelieve me darling I\u2019ll do better just the same.\n\nThen come on back and let\u2019s begin our love anew\nDeep down inside there\u2019s still a loneliness for you\nThose unkind words were spoken dear we will just let them be\nPlease tell me darling are you coming back to me?\n\nEach night I go to bed the dreams I dream my dear are all of you\nHow I just love to gaze into your eyes of blue\nThere\u2019ll never be another sweetheart that can take the place of you\nTell me you still care for me dear please do.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My days and nights are lonely darling since you left and went away",
+        "I still recall those unkind words that were said that day",
+        "It hurts me so to know you\u2019re leaving I realize that I\u2019m to blame",
+        "Believe me darling I\u2019ll do better just the same."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Then come on back and let\u2019s begin our love anew",
+        "Deep down inside there\u2019s still a loneliness for you",
+        "Those unkind words were spoken dear we will just let them be",
+        "Please tell me darling are you coming back to me?"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each night I go to bed the dreams I dream my dear are all of you",
+        "How I just love to gaze into your eyes of blue",
+        "There\u2019ll never be another sweetheart that can take the place of you",
+        "Tell me you still care for me dear please do."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "longing-for-love",
+  "title": "Longing for Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/longing-for-love/",
+  "raw_lyrics": "I\u2019m longing for a love I\u2019ve never known\nSomeone who my feelings I can\u2019t hide\nI long to kiss and hold you in my arms\nOh I love you and I\u2019m aching so inside\n\nOh you belong to someone else my darlin\nI wish that I had met you long ago\nI don\u2019t care if I don\u2019t see tomorrow\nYes I\u2019m longing for a love I\u2019ll never know\n\nWhen we\u2019re together I can\u2019t hide my feelings\nWhen we\u2019re apart my spirit sinks so low\nIf I can\u2019t make you mine I\u2019m not worth livin\nYes I\u2019m longing for a love I\u2019ve never known",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m longing for a love I\u2019ve never known",
+        "Someone who my feelings I can\u2019t hide",
+        "I long to kiss and hold you in my arms",
+        "Oh I love you and I\u2019m aching so inside"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh you belong to someone else my darlin",
+        "I wish that I had met you long ago",
+        "I don\u2019t care if I don\u2019t see tomorrow",
+        "Yes I\u2019m longing for a love I\u2019ll never know"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When we\u2019re together I can\u2019t hide my feelings",
+        "When we\u2019re apart my spirit sinks so low",
+        "If I can\u2019t make you mine I\u2019m not worth livin",
+        "Yes I\u2019m longing for a love I\u2019ve never known"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

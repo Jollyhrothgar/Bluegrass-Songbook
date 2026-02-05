@@ -1,0 +1,39 @@
+{
+  "slug": "from-now-on-i-wont-be-hanging-around",
+  "title": "From Now On I Won\u2019t Be Hanging Around",
+  "source_url": "https://www.bluegrasslyrics.com/song/from-now-on-i-wont-be-hanging-around/",
+  "raw_lyrics": "Its a long time I\u2019ve waited my darling\nJust hoping some day you\u2019d settle down\nBut now its too late it\u2019s sll over\nFrom now on I won\u2019t be hanging around\n\nFrom now on I won\u2019t be hanging around\nFrom now on I won\u2019t be hanging around\nI\u2019ve taken all I can find another man\nFrom now on I won\u2019t be hanging around\n\nI\u2019ve tried and I\u2019ve tried to make you love me\nBut bright lights and bright life I\u2019ve found\nIts the only love you\u2019ve ever known my darling\nFrom now on I won\u2019t be hanging around",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Its a long time I\u2019ve waited my darling",
+        "Just hoping some day you\u2019d settle down",
+        "But now its too late it\u2019s sll over",
+        "From now on I won\u2019t be hanging around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "From now on I won\u2019t be hanging around",
+        "From now on I won\u2019t be hanging around",
+        "I\u2019ve taken all I can find another man",
+        "From now on I won\u2019t be hanging around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve tried and I\u2019ve tried to make you love me",
+        "But bright lights and bright life I\u2019ve found",
+        "Its the only love you\u2019ve ever known my darling",
+        "From now on I won\u2019t be hanging around"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "avery-county",
+  "title": "Avery County",
+  "source_url": "https://www.bluegrasslyrics.com/song/avery-county/",
+  "raw_lyrics": "Tonight I\u2019m dreaming of Avery County\nWhere the cool mountain breezes blow\nO\u2019er the laurels and rhododendrons\nAnd my sweet Avery County Rose\n\nI can hear the old folks singing\nWhile the fiddles softly play\nI can hear that banjo ringing\nThru the valley at close of day\n\nThe fragrance of the flowers\nFill the air with sweet perfume\nAs my sweetheart walked beside me\nNeath that Avery County moon",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight I\u2019m dreaming of Avery County",
+        "Where the cool mountain breezes blow",
+        "O\u2019er the laurels and rhododendrons",
+        "And my sweet Avery County Rose"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can hear the old folks singing",
+        "While the fiddles softly play",
+        "I can hear that banjo ringing",
+        "Thru the valley at close of day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The fragrance of the flowers",
+        "Fill the air with sweet perfume",
+        "As my sweetheart walked beside me",
+        "Neath that Avery County moon"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "southern-moon",
+  "title": "Southern Moon",
+  "source_url": "https://www.bluegrasslyrics.com/song/southern-moon/",
+  "raw_lyrics": "Oh I know she is waitin by her window tonight\nIn the cabin at the end of the lane\nWhere the roses bloom in the sweet month of June\nTell my darlin I\u2019ll be there very soon\n\nGo tell my sweetheart I\u2019m lonely tonight\nGive her my token of love\nGo tell her please do that my heart is still true\nDrift along drift along southern moon\n\nDrift along southern moon up in heaven on high\nAs the stars they twinkle in the sky\nRest your weary head on a snow white cloud\nAs we go drifting by",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I know she is waitin by her window tonight",
+        "In the cabin at the end of the lane",
+        "Where the roses bloom in the sweet month of June",
+        "Tell my darlin I\u2019ll be there very soon"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Go tell my sweetheart I\u2019m lonely tonight",
+        "Give her my token of love",
+        "Go tell her please do that my heart is still true",
+        "Drift along drift along southern moon"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Drift along southern moon up in heaven on high",
+        "As the stars they twinkle in the sky",
+        "Rest your weary head on a snow white cloud",
+        "As we go drifting by"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

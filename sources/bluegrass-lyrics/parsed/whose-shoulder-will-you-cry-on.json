@@ -1,0 +1,42 @@
+{
+  "slug": "whose-shoulder-will-you-cry-on",
+  "title": "Whose Shoulder Will You Cry On",
+  "source_url": "https://www.bluegrasslyrics.com/song/whose-shoulder-will-you-cry-on/",
+  "raw_lyrics": "Once you were my life and breath\nThen you rode your free horse to death\nOh, you trifled around too much\nThen you lost your loving touch\nNow whose shoulder will you cry on\n\nYou didn\u2019t love me all along\n\u2018Cause you can\u2019t love and do me wrong\nI don\u2019t trust you anymore\nSo go knock on another\u2019s door\nAnd whose shoulder will you cry on\n\nJust let those hot tears burn your eyes\nThey\u2019re just payments on the lies\nThat made a wreck of me\nFrom that chain I\u2019ve been set free\nNow whose shoulder will you cry on",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once you were my life and breath",
+        "Then you rode your free horse to death",
+        "Oh, you trifled around too much",
+        "Then you lost your loving touch",
+        "Now whose shoulder will you cry on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You didn\u2019t love me all along",
+        "\u2018Cause you can\u2019t love and do me wrong",
+        "I don\u2019t trust you anymore",
+        "So go knock on another\u2019s door",
+        "And whose shoulder will you cry on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just let those hot tears burn your eyes",
+        "They\u2019re just payments on the lies",
+        "That made a wreck of me",
+        "From that chain I\u2019ve been set free",
+        "Now whose shoulder will you cry on"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

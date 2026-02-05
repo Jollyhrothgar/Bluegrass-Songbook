@@ -1,0 +1,39 @@
+{
+  "slug": "home",
+  "title": "Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/home/",
+  "raw_lyrics": "Home still rocks my soul\nSteals my dreams each night\nI never thought I\u2019d be turnin back\nTo a light that burns so bright\n\nI\u2019m goin back where my heart still lives\nBack to my dear old friends\nWhen they reach out with welcome arms\nIt\u2019ll be my journey\u2019s end\n\nI still remember the night\nWe sang sweet country songs\nWe laughed at the good times, cried at the bad\nAnd life just rolled along",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Home still rocks my soul",
+        "Steals my dreams each night",
+        "I never thought I\u2019d be turnin back",
+        "To a light that burns so bright"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m goin back where my heart still lives",
+        "Back to my dear old friends",
+        "When they reach out with welcome arms",
+        "It\u2019ll be my journey\u2019s end"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I still remember the night",
+        "We sang sweet country songs",
+        "We laughed at the good times, cried at the bad",
+        "And life just rolled along"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

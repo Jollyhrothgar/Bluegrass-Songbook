@@ -1,0 +1,49 @@
+{
+  "slug": "aint-nobody-gonna-miss-me",
+  "title": "Ain\u2019t Nobody Gonna Miss Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/aint-nobody-gonna-miss-me/",
+  "raw_lyrics": "Once I had a little sweetheart I love dearly\nWe planned the day when she would be my own\nAnother man he stole my darlin from me\nAnd there ain\u2019t nobody gonna miss me when I\u2019m gone\n\nOh there ain\u2019t nobody gonna miss me when I\u2019m gone\nThere ain\u2019t nobody gonna mourn for me too long\nOh won\u2019t you write these words upon my tombstone\nThere ain\u2019t nobody gonna miss me when I\u2019m gone\n\nI had a loving mother dear and daddy\nThey\u2019ve gone to live where the angels love to dwell\nThey found eternal life up there in Heaven\nWhere I\u2019ll find my reward no one can tell\n\nNow you\u2019ve been faithful kind and true to me old Copper\nYou\u2019re the only one that\u2019s never done me wrong\nI am weeping while I pat your head old Copper\nFor there ain\u2019t nobody gonna miss me when I\u2019m gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once I had a little sweetheart I love dearly",
+        "We planned the day when she would be my own",
+        "Another man he stole my darlin from me",
+        "And there ain\u2019t nobody gonna miss me when I\u2019m gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh there ain\u2019t nobody gonna miss me when I\u2019m gone",
+        "There ain\u2019t nobody gonna mourn for me too long",
+        "Oh won\u2019t you write these words upon my tombstone",
+        "There ain\u2019t nobody gonna miss me when I\u2019m gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had a loving mother dear and daddy",
+        "They\u2019ve gone to live where the angels love to dwell",
+        "They found eternal life up there in Heaven",
+        "Where I\u2019ll find my reward no one can tell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you\u2019ve been faithful kind and true to me old Copper",
+        "You\u2019re the only one that\u2019s never done me wrong",
+        "I am weeping while I pat your head old Copper",
+        "For there ain\u2019t nobody gonna miss me when I\u2019m gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

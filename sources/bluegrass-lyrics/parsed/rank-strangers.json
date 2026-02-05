@@ -1,0 +1,39 @@
+{
+  "slug": "rank-strangers",
+  "title": "Rank Strangers",
+  "source_url": "https://www.bluegrasslyrics.com/song/rank-strangers/",
+  "raw_lyrics": "I wandered again to my home in the mountain\nWhere in youths early dawn I was happy and free\nI looked for my friends but I never could find them\nI found they were all rank strangers to me\n\nEverybody I met  seemed to be a rank stranger\nNo mother no dad not a friend I could see\nThey knew not my name and I knew not their faces\nI found they were all rank strangers to me\n\nThey\u2019ve moved all away said the voice of a stranger\nTo a beautiful home by the bright crystal sea\nSome beautiful day I\u2019ll meet them in heaven\nWhere no one will be a stranger to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wandered again to my home in the mountain",
+        "Where in youths early dawn I was happy and free",
+        "I looked for my friends but I never could find them",
+        "I found they were all rank strangers to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Everybody I met  seemed to be a rank stranger",
+        "No mother no dad not a friend I could see",
+        "They knew not my name and I knew not their faces",
+        "I found they were all rank strangers to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They\u2019ve moved all away said the voice of a stranger",
+        "To a beautiful home by the bright crystal sea",
+        "Some beautiful day I\u2019ll meet them in heaven",
+        "Where no one will be a stranger to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

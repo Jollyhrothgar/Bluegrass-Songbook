@@ -1,0 +1,50 @@
+{
+  "slug": "what-would-you-give",
+  "title": "What Would You Give",
+  "source_url": "https://www.bluegrasslyrics.com/song/what-would-you-give/",
+  "raw_lyrics": "Brother afar from your savior today\nRisking your soul for the things that decay\nOh, if today God should call you away\nWhat would you give in exchange for your soul\n\nWhat would you give  (in exchange)\nWhat would you give  (in exchange)\nWhat would you give in exchange for your soul\nOh, if today God should call you away\nWhat would you give in exchange for your soul\n\nMercy is calling won\u2019t you give heed\nMust the dear Savior still tenderly plead\nRisk not your soul, it is precious indeed\nWhat would you give in exchange for your soul\n\nMore than the silver and gold of this earth\nMore than all jewels the spirit is worth\nGod the creator has given His word\nWhat would you give in exchange for your soul",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Brother afar from your savior today",
+        "Risking your soul for the things that decay",
+        "Oh, if today God should call you away",
+        "What would you give in exchange for your soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "What would you give  (in exchange)",
+        "What would you give  (in exchange)",
+        "What would you give in exchange for your soul",
+        "Oh, if today God should call you away",
+        "What would you give in exchange for your soul"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mercy is calling won\u2019t you give heed",
+        "Must the dear Savior still tenderly plead",
+        "Risk not your soul, it is precious indeed",
+        "What would you give in exchange for your soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "More than the silver and gold of this earth",
+        "More than all jewels the spirit is worth",
+        "God the creator has given His word",
+        "What would you give in exchange for your soul"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "the-sweetest-song-i-sing",
+  "title": "The Sweetest Song I Sing",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-sweetest-song-i-sing/",
+  "raw_lyrics": "Was in the spring we met each other\nAnd by chance a seed was sown\nNow it\u2019s five years we\u2019ve been together\nAnd our love how big it\u2019s grown\n\nYou\u2019re the one who wears my ring\nThese hardtimes don\u2019t mean a thing\nI may be poor but I\u2019m a king\nYou are the sweetest song I sing\n\nWell, no one know the love we have dear\nHow two hearts can beat as one\nYour smilin\u2019 eyes, way of kissin\u2019\nLovin\u2019 touch when the day is done\n\nSome people plan for the future\nThey build a house and save their pay\nThey need a sign to go on livin\u2019\nBut I know a better way.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Was in the spring we met each other",
+        "And by chance a seed was sown",
+        "Now it\u2019s five years we\u2019ve been together",
+        "And our love how big it\u2019s grown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re the one who wears my ring",
+        "These hardtimes don\u2019t mean a thing",
+        "I may be poor but I\u2019m a king",
+        "You are the sweetest song I sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, no one know the love we have dear",
+        "How two hearts can beat as one",
+        "Your smilin\u2019 eyes, way of kissin\u2019",
+        "Lovin\u2019 touch when the day is done"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some people plan for the future",
+        "They build a house and save their pay",
+        "They need a sign to go on livin\u2019",
+        "But I know a better way."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

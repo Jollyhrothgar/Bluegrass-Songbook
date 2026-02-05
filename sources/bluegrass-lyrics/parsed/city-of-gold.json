@@ -1,0 +1,39 @@
+{
+  "slug": "city-of-gold",
+  "title": "City of Gold",
+  "source_url": "https://www.bluegrasslyrics.com/song/city-of-gold/",
+  "raw_lyrics": "How sadly we miss the folks around the fireside\nThe ones that have crossed the great chilling tide\nNo crepes will be hung on the doorknob of heaven\nAnd Jesus will lay your burdens aside\n\nA beautiful light will guide me to heaven\nA beautiful home where we\u2019ll never grow old\nIt\u2019s circle complete we\u2019ll have a reunion\nA handshakin\u2019 time in that city of gold\n\nSatan will try to lead you astray\nDo all in his power to guide you his way\nDon\u2019t let temptation guide your poor soul\nThere\u2019s only one way seek Jesus today",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "How sadly we miss the folks around the fireside",
+        "The ones that have crossed the great chilling tide",
+        "No crepes will be hung on the doorknob of heaven",
+        "And Jesus will lay your burdens aside"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "A beautiful light will guide me to heaven",
+        "A beautiful home where we\u2019ll never grow old",
+        "It\u2019s circle complete we\u2019ll have a reunion",
+        "A handshakin\u2019 time in that city of gold"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Satan will try to lead you astray",
+        "Do all in his power to guide you his way",
+        "Don\u2019t let temptation guide your poor soul",
+        "There\u2019s only one way seek Jesus today"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

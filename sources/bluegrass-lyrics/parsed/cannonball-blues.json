@@ -1,0 +1,48 @@
+{
+  "slug": "cannonball-blues",
+  "title": "Cannonball Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/cannonball-blues/",
+  "raw_lyrics": "Oh listen to the train coming down the line\nTrying to make up all their lost time\nFrom Buffalo to Washington\nYou can wash my jumper starch my overalls\nCatch a train they call the Cannonball\nFrom Buffalo to Washington\n\nMy baby\u2019s left me she even took my shoes\nEnough to give a man these doggone worried blues\nShe\u2019s gone she\u2019s solid gone\n\nYonder comes the train coming down the track\nCarry me away but it aint gonna carry me back\nMy honey babe my blue eyed babe\n\nI\u2019m going up north I\u2019m going up north this fall\nIf luck don\u2019t change I wont be back at all\nMy honey babe I\u2019m leaving you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh listen to the train coming down the line",
+        "Trying to make up all their lost time",
+        "From Buffalo to Washington",
+        "You can wash my jumper starch my overalls",
+        "Catch a train they call the Cannonball",
+        "From Buffalo to Washington"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My baby\u2019s left me she even took my shoes",
+        "Enough to give a man these doggone worried blues",
+        "She\u2019s gone she\u2019s solid gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yonder comes the train coming down the track",
+        "Carry me away but it aint gonna carry me back",
+        "My honey babe my blue eyed babe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going up north I\u2019m going up north this fall",
+        "If luck don\u2019t change I wont be back at all",
+        "My honey babe I\u2019m leaving you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "chittlin-cookin-time-in-cheatham-county",
+  "title": "Chittlin\u2019 Cookin\u2019 Time In Cheatham County",
+  "source_url": "https://www.bluegrasslyrics.com/song/chittlin-cookin-time-in-cheatham-county/",
+  "raw_lyrics": "There\u2019s a quiet and peaceful county in the state of Tennessee\nYou will find it in the book they call Geography\nNot famous for its farming its minin\u2019 or its stills\nBut they know there\u2019s chittlin\u2019 cookin\u2019 in them cheatham county hills\n\nWhen it\u2019s chittlin\u2019 cookin\u2019 time in cheatham county\nI\u2019ll be courtin\u2019 in them cheatham county hills\nAnd I\u2019ll pick a cheatham county chittlin\u2019 cooker\nI\u2019ve a longin\u2019 that the chittlin\u2019s will fill\n\nThere\u2019s an art in chittlin\u2019 cookin\u2019 and all good chittlin cooks\nThey must master it  by practice cause it ain\u2019t reknowned in books\nIn the hills of cheatham county in sunny Tennessee\nWhen chittlin\u2019s are in season is where I long to be\n\nOf all good things put be for me\nI think chittlin\u2019s are the best\nAnd when I press that dying pillow\nLet chittlin\u2019s by my last request",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a quiet and peaceful county in the state of Tennessee",
+        "You will find it in the book they call Geography",
+        "Not famous for its farming its minin\u2019 or its stills",
+        "But they know there\u2019s chittlin\u2019 cookin\u2019 in them cheatham county hills"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When it\u2019s chittlin\u2019 cookin\u2019 time in cheatham county",
+        "I\u2019ll be courtin\u2019 in them cheatham county hills",
+        "And I\u2019ll pick a cheatham county chittlin\u2019 cooker",
+        "I\u2019ve a longin\u2019 that the chittlin\u2019s will fill"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s an art in chittlin\u2019 cookin\u2019 and all good chittlin cooks",
+        "They must master it  by practice cause it ain\u2019t reknowned in books",
+        "In the hills of cheatham county in sunny Tennessee",
+        "When chittlin\u2019s are in season is where I long to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Of all good things put be for me",
+        "I think chittlin\u2019s are the best",
+        "And when I press that dying pillow",
+        "Let chittlin\u2019s by my last request"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

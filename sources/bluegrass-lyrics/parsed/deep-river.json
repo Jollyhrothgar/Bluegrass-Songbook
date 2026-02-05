@@ -1,0 +1,39 @@
+{
+  "slug": "deep-river",
+  "title": "Deep River",
+  "source_url": "https://www.bluegrasslyrics.com/song/deep-river/",
+  "raw_lyrics": "You\u2019re running wild deep river\nYou\u2019re just like the one that I love so\nYou never stop running deep river\nLike her you\u2019re always on the go\n\nHey I\u2019m feelin\u2019 low down deep river\nI can\u2019t go on I\u2019ve had enough\nI\u2019m gonna dive to your bottom deep river\nI\u2019m divin\u2019 in but I\u2019m not comin\u2019 up.\n\nNow if I had a big boat deep river\nI would have you rock me to sleep\nAnd some where down the stream I\u2019d anchor\nIn the port of broken dreams",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re running wild deep river",
+        "You\u2019re just like the one that I love so",
+        "You never stop running deep river",
+        "Like her you\u2019re always on the go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hey I\u2019m feelin\u2019 low down deep river",
+        "I can\u2019t go on I\u2019ve had enough",
+        "I\u2019m gonna dive to your bottom deep river",
+        "I\u2019m divin\u2019 in but I\u2019m not comin\u2019 up."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now if I had a big boat deep river",
+        "I would have you rock me to sleep",
+        "And some where down the stream I\u2019d anchor",
+        "In the port of broken dreams"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

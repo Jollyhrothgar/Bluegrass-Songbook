@@ -1,0 +1,48 @@
+{
+  "slug": "matterhorn",
+  "title": "Matterhorn",
+  "source_url": "https://www.bluegrasslyrics.com/song/matterhorn/",
+  "raw_lyrics": "We started out from Bern one sunny August morn\nThere was just the four of us against the Matterhorn\nThere was Albert the Australian and John the Irishman\nMe and Bill from Britain, mad dogs in the sun\n\nMatterhorn, Matterhorn\nMen have tried and men have died to climb the Matterhorn\nThat mighty Matterhorn\n\nTwo miles up we lost John and our rations fell below\nNow Al and Bill are lying beneath an avalanche of snow\nNow here I am alone and I know I cannot stop\nTwo more yards in front of me before I reach the top\n\nNow here I am a dying upon the Matterhorn\nNot a thing for me to lie in or a thing to keep me warm\nThe Queen would surely knight me if I could get back down\nBut it\u2019s closer here to heaven than it is back to the ground",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We started out from Bern one sunny August morn",
+        "There was just the four of us against the Matterhorn",
+        "There was Albert the Australian and John the Irishman",
+        "Me and Bill from Britain, mad dogs in the sun"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Matterhorn, Matterhorn",
+        "Men have tried and men have died to climb the Matterhorn",
+        "That mighty Matterhorn"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Two miles up we lost John and our rations fell below",
+        "Now Al and Bill are lying beneath an avalanche of snow",
+        "Now here I am alone and I know I cannot stop",
+        "Two more yards in front of me before I reach the top"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now here I am a dying upon the Matterhorn",
+        "Not a thing for me to lie in or a thing to keep me warm",
+        "The Queen would surely knight me if I could get back down",
+        "But it\u2019s closer here to heaven than it is back to the ground"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

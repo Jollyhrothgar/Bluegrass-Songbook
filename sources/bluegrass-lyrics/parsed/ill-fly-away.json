@@ -1,0 +1,59 @@
+{
+  "slug": "ill-fly-away",
+  "title": "I\u2019ll Fly Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-fly-away/",
+  "raw_lyrics": "Some bright morning when this life is over\nI\u2019ll fly away\nTo that home on God\u2019s celestial shore\nI\u2019ll fly away\n\nI\u2019ll fly away oh glory\nI\u2019ll fly away (in the morning)\nWhen I die hallelujah by and by\nI\u2019ll fly away\n\nWhen the shadows of this life have gone\nI\u2019ll fly away\nLike a bird from these prison walls I\u2019ll fly\nI\u2019ll fly away\n\nOh how glad and happy when we meet\nI\u2019ll fly away\nNo more cold iron shackles on my feet\nI\u2019ll fly away\n\nJust a few more weary days and then\nI\u2019ll fly away\nTo a land where joys will never end\nI\u2019ll fly away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Some bright morning when this life is over",
+        "I\u2019ll fly away",
+        "To that home on God\u2019s celestial shore",
+        "I\u2019ll fly away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll fly away oh glory",
+        "I\u2019ll fly away (in the morning)",
+        "When I die hallelujah by and by",
+        "I\u2019ll fly away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the shadows of this life have gone",
+        "I\u2019ll fly away",
+        "Like a bird from these prison walls I\u2019ll fly",
+        "I\u2019ll fly away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh how glad and happy when we meet",
+        "I\u2019ll fly away",
+        "No more cold iron shackles on my feet",
+        "I\u2019ll fly away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a few more weary days and then",
+        "I\u2019ll fly away",
+        "To a land where joys will never end",
+        "I\u2019ll fly away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

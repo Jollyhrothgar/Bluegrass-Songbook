@@ -1,0 +1,49 @@
+{
+  "slug": "journeys-end",
+  "title": "Journey\u2019s End",
+  "source_url": "https://www.bluegrasslyrics.com/song/journeys-end/",
+  "raw_lyrics": "My life was filled with such sorrow\nA soul with no one to care\nGod heard my prayer and He called me\nI\u2019ll meet my Lord way up there\n\nA golden rainbow lights the way\nUp the path I will ascend\nTo the kingdom up on high\nIs my home at journey\u2019s end\n\nHis love was so sweet and so faithful\nHis life he gave for you and me\nTrial and temptation seemed endless\nBut he rose over all eternity\n\nThere\u2019s many here on this journey\nSo heavy the burdens they bear\nAs they reach up toward the heaven\nHe\u2019ll hear their voices in prayer",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My life was filled with such sorrow",
+        "A soul with no one to care",
+        "God heard my prayer and He called me",
+        "I\u2019ll meet my Lord way up there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "A golden rainbow lights the way",
+        "Up the path I will ascend",
+        "To the kingdom up on high",
+        "Is my home at journey\u2019s end"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His love was so sweet and so faithful",
+        "His life he gave for you and me",
+        "Trial and temptation seemed endless",
+        "But he rose over all eternity"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s many here on this journey",
+        "So heavy the burdens they bear",
+        "As they reach up toward the heaven",
+        "He\u2019ll hear their voices in prayer"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "deep-blue-sea",
+  "title": "Deep Blue Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/deep-blue-sea/",
+  "raw_lyrics": "Where is my sailor boy\nOh where is my sailor boy\nHe lies on the bottom of the deep deep sea\nAnd he can\u2019t come back to me\n\nPlease tell me deep blue sea\nIs he sleeping peacefully?\nThe wind from the north is blowing icy cold\nPlease keep him warm for me\n\nWhat does the deep sea say\nOh what does the deep sea say\nIt moans, it groans, it flashes and it foams\nAnd rolls on its weary  way\n\nI stand on the beach alone\nAnd gaze at the misty blue\nDeep sea as you hold him to your breast\nDoes he mention my name to you\n\nIf only my dreaming soul\nSome token of love could find\nIf only a wave would show my where he sleeps\nThen I\u2019d leave this world behind\n\nA beautiful rose one day\nI placed on the crest of a wave\nDeep sea take it please\nAnd lay it so it falls above his watery grave\n\nThe driftwood I watched in vain\nMy rose never came back again\nDeep sea take another message to my love\nSaying I\u2019ll meet him above",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Where is my sailor boy",
+        "Oh where is my sailor boy",
+        "He lies on the bottom of the deep deep sea",
+        "And he can\u2019t come back to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please tell me deep blue sea",
+        "Is he sleeping peacefully?",
+        "The wind from the north is blowing icy cold",
+        "Please keep him warm for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "What does the deep sea say",
+        "Oh what does the deep sea say",
+        "It moans, it groans, it flashes and it foams",
+        "And rolls on its weary  way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I stand on the beach alone",
+        "And gaze at the misty blue",
+        "Deep sea as you hold him to your breast",
+        "Does he mention my name to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If only my dreaming soul",
+        "Some token of love could find",
+        "If only a wave would show my where he sleeps",
+        "Then I\u2019d leave this world behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A beautiful rose one day",
+        "I placed on the crest of a wave",
+        "Deep sea take it please",
+        "And lay it so it falls above his watery grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The driftwood I watched in vain",
+        "My rose never came back again",
+        "Deep sea take another message to my love",
+        "Saying I\u2019ll meet him above"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

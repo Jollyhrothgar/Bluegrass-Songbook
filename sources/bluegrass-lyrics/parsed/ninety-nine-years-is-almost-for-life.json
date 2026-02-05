@@ -1,0 +1,69 @@
+{
+  "slug": "ninety-nine-years-is-almost-for-life",
+  "title": "Ninety Nine Years is Almost For Life",
+  "source_url": "https://www.bluegrasslyrics.com/song/ninety-nine-years-is-almost-for-life/",
+  "raw_lyrics": "The court room the judge waited there\nMy mother was crying when I left my chair\nThe sentence were sharp for it cut like a knife\nFor ninety nine years folks is almost for life\n\nI dreamed of the whistle I heard the bells ring\nMy sweetheart was coming some good news to bring\nI knew that she loved me and that she\u2019d be true\nShe said she would save me I\u2019m guilty as you\n\nShe went for a pardon or else for parole\nI know she\u2019ll come back for she\u2019s part of my soul\nIf she ever fails me I\u2019ll be mighty blue\nI\u2019ll stay in this jailhouse I\u2019ll die in here too\n\nThey said I was a criminal and to my despair\nThey sent me to Nashville and shaved off my hair\nSo come hear my story I\u2019ll tell you my fate\nI\u2019m serving in Nashville for another man\u2019s hate\n\nI just got a letter from Nashville town\nAnd after I read it my spirit broke down\nIt\u2019s sad that my sweetheart and the judge would be wed\nAnd here in this jailhouse I wish I was dead\n\nNo matter how right folks a man he may be\nBad company will send him to prison like me\nSo take a good woman and make her your wife\nFor ninety nine years folks is almost for life",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The court room the judge waited there",
+        "My mother was crying when I left my chair",
+        "The sentence were sharp for it cut like a knife",
+        "For ninety nine years folks is almost for life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I dreamed of the whistle I heard the bells ring",
+        "My sweetheart was coming some good news to bring",
+        "I knew that she loved me and that she\u2019d be true",
+        "She said she would save me I\u2019m guilty as you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She went for a pardon or else for parole",
+        "I know she\u2019ll come back for she\u2019s part of my soul",
+        "If she ever fails me I\u2019ll be mighty blue",
+        "I\u2019ll stay in this jailhouse I\u2019ll die in here too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They said I was a criminal and to my despair",
+        "They sent me to Nashville and shaved off my hair",
+        "So come hear my story I\u2019ll tell you my fate",
+        "I\u2019m serving in Nashville for another man\u2019s hate"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I just got a letter from Nashville town",
+        "And after I read it my spirit broke down",
+        "It\u2019s sad that my sweetheart and the judge would be wed",
+        "And here in this jailhouse I wish I was dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No matter how right folks a man he may be",
+        "Bad company will send him to prison like me",
+        "So take a good woman and make her your wife",
+        "For ninety nine years folks is almost for life"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

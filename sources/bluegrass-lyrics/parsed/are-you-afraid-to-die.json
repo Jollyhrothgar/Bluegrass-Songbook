@@ -1,0 +1,48 @@
+{
+  "slug": "are-you-afraid-to-die",
+  "title": "Are You Afraid To Die",
+  "source_url": "https://www.bluegrasslyrics.com/song/are-you-afraid-to-die/",
+  "raw_lyrics": "Are you a stranger to God\nCarried away with your pride\nTell me sinner did you ever stop to think\nAre you afraid to die\n\nAre you afraid\nAre you unsaved\nAre you afraid to die\n\nCall on him while he\u2019s near\nMoments are swift passing by\nWill you seek him where he may be found\nAre you afraid to die\n\nAre you too wicked to cry\nWould you to God\u2019s bosom fly\nSoon he\u2019s coming like a thief in the night\nAre you afraid to die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Are you a stranger to God",
+        "Carried away with your pride",
+        "Tell me sinner did you ever stop to think",
+        "Are you afraid to die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Are you afraid",
+        "Are you unsaved",
+        "Are you afraid to die"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Call on him while he\u2019s near",
+        "Moments are swift passing by",
+        "Will you seek him where he may be found",
+        "Are you afraid to die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Are you too wicked to cry",
+        "Would you to God\u2019s bosom fly",
+        "Soon he\u2019s coming like a thief in the night",
+        "Are you afraid to die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

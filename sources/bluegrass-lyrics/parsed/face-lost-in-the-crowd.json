@@ -1,0 +1,39 @@
+{
+  "slug": "face-lost-in-the-crowd",
+  "title": "Face Lost In The Crowd",
+  "source_url": "https://www.bluegrasslyrics.com/song/face-lost-in-the-crowd/",
+  "raw_lyrics": "I am a face lost in the crowd\nA defeated man no one cares about\nFor the dreams I\u2019ve had are gone somehow\nI\u2019m just a face lost in the crowd\n\nAll hopes of wealth and fame are gone\nAnd darkness looms where the sun once shone\nNo light is there the fire\u2019s burned out\nAnd I\u2019m just a face lost in the crowd\n\nThe tears I\u2019ve shed now blur my eyes\nThe friends I\u2019ve known would not recognize\nThis broken man with no way out\nI\u2019m just a face lost in the crowd",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am a face lost in the crowd",
+        "A defeated man no one cares about",
+        "For the dreams I\u2019ve had are gone somehow",
+        "I\u2019m just a face lost in the crowd"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All hopes of wealth and fame are gone",
+        "And darkness looms where the sun once shone",
+        "No light is there the fire\u2019s burned out",
+        "And I\u2019m just a face lost in the crowd"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The tears I\u2019ve shed now blur my eyes",
+        "The friends I\u2019ve known would not recognize",
+        "This broken man with no way out",
+        "I\u2019m just a face lost in the crowd"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "methodist-pie",
+  "title": "Methodist Pie",
+  "source_url": "https://www.bluegrasslyrics.com/song/methodist-pie/",
+  "raw_lyrics": "Went down to camp meeting just the other afternoon\nJust to hear \u2019em shout and sing\nFor to tell each other how they love one another\nAnd to make the hallelujahs ring\nThere was old Brother Daniel and Cousin Ebeneezer\nUncle Rufus and his lame gal Sue\nAunt Polly and Melinda and old Mother Bender\nWell\u00a0 I never seen a happier crew\n\nOh\u00a0 little children\u00a0 I believe\nOh\u00a0 little children\u00a0 I believe\nOh\u00a0 little children\u00a0 I believe\nI\u2019m a Methodist till I die\nI\u2019m a Methodist\u00a0 a Methodist\u00a0 \u2019tis my belief\nI\u2019m a Methodist till I die\nTill old grim death comes a-knocking at the door\nI\u2019m a Methodist till I die\n\nWell they all go there just to have a big time\nAnd to eat their grub so sly\nHave applesauce butter and sugar in the gourd\nAnd a great big Methodist pie\nWell you ought to hear the ringing when they all get to singin\u2019\nThat good old bye and bye\nSee Jimmy McGee in the top of a tree\nSaying\u00a0 how is this for high\n\nThen they all join hands and dance around a ring\nJust a singin\u2019 all the while\nYou\u2019d think it was a cyclone coming through the air\nYou could hear shout a half a mile\nThen a bell brings loud and the great big crowd\nBreaks ranks and up they fly\nWhile I took hold of the sugar in the gourd\nAnd I cleaned up the Methodist Pie",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Went down to camp meeting just the other afternoon",
+        "Just to hear \u2019em shout and sing",
+        "For to tell each other how they love one another",
+        "And to make the hallelujahs ring",
+        "There was old Brother Daniel and Cousin Ebeneezer",
+        "Uncle Rufus and his lame gal Sue",
+        "Aunt Polly and Melinda and old Mother Bender",
+        "Well\u00a0 I never seen a happier crew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh\u00a0 little children\u00a0 I believe",
+        "Oh\u00a0 little children\u00a0 I believe",
+        "Oh\u00a0 little children\u00a0 I believe",
+        "I\u2019m a Methodist till I die",
+        "I\u2019m a Methodist\u00a0 a Methodist\u00a0 \u2019tis my belief",
+        "I\u2019m a Methodist till I die",
+        "Till old grim death comes a-knocking at the door",
+        "I\u2019m a Methodist till I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well they all go there just to have a big time",
+        "And to eat their grub so sly",
+        "Have applesauce butter and sugar in the gourd",
+        "And a great big Methodist pie",
+        "Well you ought to hear the ringing when they all get to singin\u2019",
+        "That good old bye and bye",
+        "See Jimmy McGee in the top of a tree",
+        "Saying\u00a0 how is this for high"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then they all join hands and dance around a ring",
+        "Just a singin\u2019 all the while",
+        "You\u2019d think it was a cyclone coming through the air",
+        "You could hear shout a half a mile",
+        "Then a bell brings loud and the great big crowd",
+        "Breaks ranks and up they fly",
+        "While I took hold of the sugar in the gourd",
+        "And I cleaned up the Methodist Pie"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

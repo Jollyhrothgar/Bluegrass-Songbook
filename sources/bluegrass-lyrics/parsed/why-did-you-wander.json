@@ -1,0 +1,49 @@
+{
+  "slug": "why-did-you-wander",
+  "title": "Why Did You Wander",
+  "source_url": "https://www.bluegrasslyrics.com/song/why-did-you-wander/",
+  "raw_lyrics": "Oh, why oh why did you wander\nWhy did you ever roam\nWhen you know that we always were happy\nAll alone in our old mountain home\n\nIt was down in the old Cumberland Mountains\nDown in the hills of Tennessee\nAs she waited alone in the moonlight\nIt was there that she waited for me\n\nOh why did you leave me little darling\nWhy did you leave me alone\nFor you knew I\u2019d be lonely without you\nAll alone in our old mountain home\n\nI hope you will always be happy\nNo matter where you may roam\nAnd I long to be with you up in heaven\nAs we were in our old mountain home",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, why oh why did you wander",
+        "Why did you ever roam",
+        "When you know that we always were happy",
+        "All alone in our old mountain home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was down in the old Cumberland Mountains",
+        "Down in the hills of Tennessee",
+        "As she waited alone in the moonlight",
+        "It was there that she waited for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh why did you leave me little darling",
+        "Why did you leave me alone",
+        "For you knew I\u2019d be lonely without you",
+        "All alone in our old mountain home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hope you will always be happy",
+        "No matter where you may roam",
+        "And I long to be with you up in heaven",
+        "As we were in our old mountain home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

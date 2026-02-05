@@ -1,0 +1,49 @@
+{
+  "slug": "those-brown-eyes",
+  "title": "Those Brown Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/those-brown-eyes/",
+  "raw_lyrics": "One evening as the sun was low\nBrown eyes whispered I must go\nNot one moment would he wait\nHe kissed my cheek and left the gate\n\nThose brown eyes I love so well\nThose brown eyes I long to see\nNow I sigh for those brown eyes\nStranger they have grown to me\n\nOne day we met upon the street\nI bowed me head but did not speak\nAnother one was by his side\nI thought one day would be his bride\n\nJust a year ago today\nThey lay my own brown eyes away\nAs I view that mound of clay\nMemories in my heart do sway",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One evening as the sun was low",
+        "Brown eyes whispered I must go",
+        "Not one moment would he wait",
+        "He kissed my cheek and left the gate"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Those brown eyes I love so well",
+        "Those brown eyes I long to see",
+        "Now I sigh for those brown eyes",
+        "Stranger they have grown to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One day we met upon the street",
+        "I bowed me head but did not speak",
+        "Another one was by his side",
+        "I thought one day would be his bride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a year ago today",
+        "They lay my own brown eyes away",
+        "As I view that mound of clay",
+        "Memories in my heart do sway"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

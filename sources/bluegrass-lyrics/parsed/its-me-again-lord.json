@@ -1,0 +1,33 @@
+{
+  "slug": "its-me-again-lord",
+  "title": "It\u2019s Me Again Lord",
+  "source_url": "https://www.bluegrasslyrics.com/song/its-me-again-lord/",
+  "raw_lyrics": "Troubles come and I can\u2019t find an answer\nLonely nights I spend in agony\nI have no other friend that I can turn to\nSo here I am Lord back upon my knees\nIt\u2019s me again Lord I\u2019ve got a prayer I need an answer\nIt\u2019s me again Lord I\u2019ve got a problem I can\u2019t solve\nWell I don\u2019t mean to worry you but here I am facing something new\nAnd I need help that only comes from You it\u2019s me again Lord\n\nI know You\u2019re mighty busy in Your Heaven\nForming worlds and hanging stars to shine\nBut You promised if I\u2019d ask that I could see them\nSo here I am Lord asking one more time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Troubles come and I can\u2019t find an answer",
+        "Lonely nights I spend in agony",
+        "I have no other friend that I can turn to",
+        "So here I am Lord back upon my knees",
+        "It\u2019s me again Lord I\u2019ve got a prayer I need an answer",
+        "It\u2019s me again Lord I\u2019ve got a problem I can\u2019t solve",
+        "Well I don\u2019t mean to worry you but here I am facing something new",
+        "And I need help that only comes from You it\u2019s me again Lord"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know You\u2019re mighty busy in Your Heaven",
+        "Forming worlds and hanging stars to shine",
+        "But You promised if I\u2019d ask that I could see them",
+        "So here I am Lord asking one more time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

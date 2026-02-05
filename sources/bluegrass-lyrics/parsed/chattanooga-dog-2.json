@@ -1,0 +1,49 @@
+{
+  "slug": "chattanooga-dog-2",
+  "title": "Chattanooga Dog",
+  "source_url": "https://www.bluegrasslyrics.com/song/chattanooga-dog-2/",
+  "raw_lyrics": "There\u2019s a fairground down in Chattanooga\nWhere a kiddie train runs up and down the track\nThere\u2019s an old black hound with his tongue hanging down\nAnd he chases that train down the track (measure and a half pause)\n\nI\u2019ve been chasing you like a Chattanooga dog\nEven though I know you don\u2019t care\nI\u2019ve been chasing you like a Chattanooga dog\nAnd it ain\u2019t gonna get me nowhere\n\nI\u2019ve been thinking you\u2019re just like that old train\nAnybody gets a ticket they can ride\nBut I\u2019m like that hound pup, I won\u2019t ever give up\nI\u2019ll give anything to be by your side\n\nEvery day when the kiddies come for playing\nTo ride that old kiddie train once more\nThere\u2019s an old faithful hound that always hangs around\nAnd he runs til his feet get sore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a fairground down in Chattanooga",
+        "Where a kiddie train runs up and down the track",
+        "There\u2019s an old black hound with his tongue hanging down",
+        "And he chases that train down the track (measure and a half pause)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve been chasing you like a Chattanooga dog",
+        "Even though I know you don\u2019t care",
+        "I\u2019ve been chasing you like a Chattanooga dog",
+        "And it ain\u2019t gonna get me nowhere"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been thinking you\u2019re just like that old train",
+        "Anybody gets a ticket they can ride",
+        "But I\u2019m like that hound pup, I won\u2019t ever give up",
+        "I\u2019ll give anything to be by your side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every day when the kiddies come for playing",
+        "To ride that old kiddie train once more",
+        "There\u2019s an old faithful hound that always hangs around",
+        "And he runs til his feet get sore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

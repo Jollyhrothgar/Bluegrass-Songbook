@@ -1,0 +1,49 @@
+{
+  "slug": "wait-a-little-longer-please-jesus",
+  "title": "Wait A Little Longer Please Jesus",
+  "source_url": "https://www.bluegrasslyrics.com/song/wait-a-little-longer-please-jesus/",
+  "raw_lyrics": "Here the labour is so hard and the workers are so tired\nAnd our weary hearts are longing for a rest\nAnd we   find we\u2019re getting anxious to be  in that happy land\nWhere we\u2019ll enjoy some peace and happiness.\n\nBut wait a little longer, please, Jesus\nThere\u2019s so many still a-wandering out in sin\nJust a little longer, please, Jesus\nJust a few more days tolet our loved ones in.\n\nWe may look into the skies and tearswillfill our eyes\nFor our weary hearts grow heavy with each day\nFirst we cry oh lord please come, come and take our children home\nAnd then we look around us and we say:\n\nThe family\u2019s scattered here and there, but Lord we love them dear\nAnd maybe we can help them find the way\nWell if waiting is the cause well they might not be\nLord that\u2019s the only reason why we say:",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Here the labour is so hard and the workers are so tired",
+        "And our weary hearts are longing for a rest",
+        "And we   find we\u2019re getting anxious to be  in that happy land",
+        "Where we\u2019ll enjoy some peace and happiness."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "But wait a little longer, please, Jesus",
+        "There\u2019s so many still a-wandering out in sin",
+        "Just a little longer, please, Jesus",
+        "Just a few more days tolet our loved ones in."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We may look into the skies and tearswillfill our eyes",
+        "For our weary hearts grow heavy with each day",
+        "First we cry oh lord please come, come and take our children home",
+        "And then we look around us and we say:"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The family\u2019s scattered here and there, but Lord we love them dear",
+        "And maybe we can help them find the way",
+        "Well if waiting is the cause well they might not be",
+        "Lord that\u2019s the only reason why we say:"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,81 @@
+{
+  "slug": "say-darlin-say",
+  "title": "Say Darlin Say",
+  "source_url": "https://www.bluegrasslyrics.com/song/say-darlin-say/",
+  "raw_lyrics": "Say little darlin won\u2019t you marry me\nLive in a holler neath the old oak tree\nSay darlin say\nIn the old oak tree we\u2019ll make our home\nNever more in this world to roam\nSay darlin say\n\nSay little darlin if you were mine\nYou wouldn\u2019t do nothing but starch and iron\nSay darlin say\nStarch and iron would be your trade\nI\u2019d get drunk and lay in the shade\nSay darlin say\n\nSay little darlin won\u2019t you marry me\nLive in a holler neath the old oak tree\nSay darlin say\nLive in the holler neath the old oak tree\nChildren bouncin\u2019 on daddy\u2019s knee\nSay darlin say\n\nHush little darling don\u2019t say a word\nPoppa\u2019s gonna buy you a mocking bird\nSay darlin say\nIf that mocking bird don\u2019t sing\nPoppa gonna buy you a diamond ring\nSay darlin say\n\nIf that diamond ring is brass\nI\u2019m gonna buy you a looking glass\nSay darlin say\nIf that looking glass gets broke\nPoppa gonna buy you a billy goat\nSay darlin say\n\nIf that billy goat won\u2019t pull\nPoppa\u2019s gonna buy you a cart and bull\nSay darlin say\nIf that cart and bull falls down\nYou\u2019re still the sweetest baby in town\nSay darlin say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Say little darlin won\u2019t you marry me",
+        "Live in a holler neath the old oak tree",
+        "Say darlin say",
+        "In the old oak tree we\u2019ll make our home",
+        "Never more in this world to roam",
+        "Say darlin say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Say little darlin if you were mine",
+        "You wouldn\u2019t do nothing but starch and iron",
+        "Say darlin say",
+        "Starch and iron would be your trade",
+        "I\u2019d get drunk and lay in the shade",
+        "Say darlin say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Say little darlin won\u2019t you marry me",
+        "Live in a holler neath the old oak tree",
+        "Say darlin say",
+        "Live in the holler neath the old oak tree",
+        "Children bouncin\u2019 on daddy\u2019s knee",
+        "Say darlin say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hush little darling don\u2019t say a word",
+        "Poppa\u2019s gonna buy you a mocking bird",
+        "Say darlin say",
+        "If that mocking bird don\u2019t sing",
+        "Poppa gonna buy you a diamond ring",
+        "Say darlin say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If that diamond ring is brass",
+        "I\u2019m gonna buy you a looking glass",
+        "Say darlin say",
+        "If that looking glass gets broke",
+        "Poppa gonna buy you a billy goat",
+        "Say darlin say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If that billy goat won\u2019t pull",
+        "Poppa\u2019s gonna buy you a cart and bull",
+        "Say darlin say",
+        "If that cart and bull falls down",
+        "You\u2019re still the sweetest baby in town",
+        "Say darlin say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

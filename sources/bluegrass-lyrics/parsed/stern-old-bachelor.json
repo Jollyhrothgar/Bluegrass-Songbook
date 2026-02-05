@@ -1,0 +1,89 @@
+{
+  "slug": "stern-old-bachelor",
+  "title": "Stern Old Bachelor",
+  "source_url": "https://www.bluegrasslyrics.com/song/stern-old-bachelor/",
+  "raw_lyrics": "I am a stern old bachelor\nMy age is forty four\nI do declare I\u2019ll never live\nWith women anymore\n\nI have a stove that\u2019s worth ten cents\nA table worth fifteen\nI cook my gruel in oyster cans\nAnd keep my things so clean\n\nOh little sod shanty\nLittle sod shanty give to me\nFor I\u2019m a stern old bachelor\nFrom matrimony free\n\nWhen I come home at night\nI smile and walk right in\nI never hear a voice yell out\nOr say where have you been\n\nOn a cold and stormy night\nIn a cozy little shack\nI sing my songs and think my thoughts\nWith no one to talk back\n\nI go to bed when ever I please\nAnd get up just the same\nI change my socks three times a year\nWith no one to complain\n\nAt night when I\u2019m on peaceful sleep\nMy snores can do no harm\nI never have to walk the floor\nWith a baby in my arms\n\nAnd when I die and go to heaven\nAs all good bachelors do\nI will not have to grieve for fear\nMy wife will get there too",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am a stern old bachelor",
+        "My age is forty four",
+        "I do declare I\u2019ll never live",
+        "With women anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have a stove that\u2019s worth ten cents",
+        "A table worth fifteen",
+        "I cook my gruel in oyster cans",
+        "And keep my things so clean"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh little sod shanty",
+        "Little sod shanty give to me",
+        "For I\u2019m a stern old bachelor",
+        "From matrimony free"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I come home at night",
+        "I smile and walk right in",
+        "I never hear a voice yell out",
+        "Or say where have you been"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On a cold and stormy night",
+        "In a cozy little shack",
+        "I sing my songs and think my thoughts",
+        "With no one to talk back"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I go to bed when ever I please",
+        "And get up just the same",
+        "I change my socks three times a year",
+        "With no one to complain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "At night when I\u2019m on peaceful sleep",
+        "My snores can do no harm",
+        "I never have to walk the floor",
+        "With a baby in my arms"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And when I die and go to heaven",
+        "As all good bachelors do",
+        "I will not have to grieve for fear",
+        "My wife will get there too"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

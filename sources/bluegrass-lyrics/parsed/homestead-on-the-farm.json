@@ -1,0 +1,39 @@
+{
+  "slug": "homestead-on-the-farm",
+  "title": "Homestead On The Farm",
+  "source_url": "https://www.bluegrasslyrics.com/song/homestead-on-the-farm/",
+  "raw_lyrics": "Well I wonder how the old folks are at home\nI wonder if they miss me while I roam\nI wonder if they pray for the boy who went away\nAnd left his dear old parents all alone\n\nNow you can hear the cattle lowing in the lane\nYou can see the fields of bluegrass where I\u2019d roam\nYou can almost hear them cry as they kiss their boy goodbye\nI wonder how the old folks are at home\n\nJust a village and a homestead on the farm\nAnd a mother\u2019s love to shield you from all harm\nA mother\u2019s love so dear and a sweetheart brave and true\nJust a village and a homestead on the farm",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I wonder how the old folks are at home",
+        "I wonder if they miss me while I roam",
+        "I wonder if they pray for the boy who went away",
+        "And left his dear old parents all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now you can hear the cattle lowing in the lane",
+        "You can see the fields of bluegrass where I\u2019d roam",
+        "You can almost hear them cry as they kiss their boy goodbye",
+        "I wonder how the old folks are at home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a village and a homestead on the farm",
+        "And a mother\u2019s love to shield you from all harm",
+        "A mother\u2019s love so dear and a sweetheart brave and true",
+        "Just a village and a homestead on the farm"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

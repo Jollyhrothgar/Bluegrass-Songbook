@@ -1,0 +1,57 @@
+{
+  "slug": "barroom-girls",
+  "title": "Barroom Girls",
+  "source_url": "https://www.bluegrasslyrics.com/song/barroom-girls/",
+  "raw_lyrics": "Oh the night came undone like a party dress\nAnd fell at her feet in a beautiful mess\nThe smoke and the whiskey came home in her curls\nAnd they crept through the dreams of the barroom girls\n\nWell she tosses and turns because the sun is unkind\nAnd the heat of the day is coming in through the blinds\nBut leave all the blue skies for the rest of the world\nBecause the neon will shine for the barroom girls\n\nOh the barroom girls go by your side\nLike the ponies who pass on a carousel ride\nAnd all of the colors go \u2018round in a swirl\nWhen you dance in the arms of the barroom girls\n\nNow she rolls to her feet when she can\u2019t sleep no more\nAnd looks at her clothes lying out on the floor\nLast night\u2019s spangles and yesterday\u2019s pearls\nAre the bright morning stars of the barroom girls\n\nLast night\u2019s spangles and yesterday\u2019s pearls\nAre the bright morning stars of the barroom girls",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the night came undone like a party dress",
+        "And fell at her feet in a beautiful mess",
+        "The smoke and the whiskey came home in her curls",
+        "And they crept through the dreams of the barroom girls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well she tosses and turns because the sun is unkind",
+        "And the heat of the day is coming in through the blinds",
+        "But leave all the blue skies for the rest of the world",
+        "Because the neon will shine for the barroom girls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the barroom girls go by your side",
+        "Like the ponies who pass on a carousel ride",
+        "And all of the colors go \u2018round in a swirl",
+        "When you dance in the arms of the barroom girls"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now she rolls to her feet when she can\u2019t sleep no more",
+        "And looks at her clothes lying out on the floor",
+        "Last night\u2019s spangles and yesterday\u2019s pearls",
+        "Are the bright morning stars of the barroom girls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night\u2019s spangles and yesterday\u2019s pearls",
+        "Are the bright morning stars of the barroom girls"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

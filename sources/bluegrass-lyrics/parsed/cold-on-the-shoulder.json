@@ -1,0 +1,67 @@
+{
+  "slug": "cold-on-the-shoulder",
+  "title": "Cold On The Shoulder",
+  "source_url": "https://www.bluegrasslyrics.com/song/cold-on-the-shoulder/",
+  "raw_lyrics": "All you need is time\nAll you need is time time time to make it bend\nGive it a try don\u2019t be rude\nput it to the test It\u2019ll give it right back to you\nIt\u2019s cold on the shoulder\nand you know that we get a little older every day\n\nTake it around\ntake it to town\nTry to defy what you feel inside\nYou better be stong your love belongs to us\nIt\u2019s cold on the shoulder\nand you know that we get a little older every day.\n\nAll you need is is trust\nAn you need is trust trust trust\nto make it show\nI want to know everything you\u2019ve done\nif you get a tent tell it to the eskimo\nIt\u2019s cold on the shoulder\nand you know that we get a little older every day.\n\nAll you need is faith\nAll you need is faith faith faith\nto make it nice\nKick it around don\u2019t be rude\nif you gonna make a mistake don\u201dt you make it twice\nIt\u2019s cold on the shoulder\nand you know that we get a little older every day.\n\nIt\u2019s cold on the shoulder\nand you know that we get a little older every day.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All you need is time",
+        "All you need is time time time to make it bend",
+        "Give it a try don\u2019t be rude",
+        "put it to the test It\u2019ll give it right back to you",
+        "It\u2019s cold on the shoulder",
+        "and you know that we get a little older every day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take it around",
+        "take it to town",
+        "Try to defy what you feel inside",
+        "You better be stong your love belongs to us",
+        "It\u2019s cold on the shoulder",
+        "and you know that we get a little older every day."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All you need is is trust",
+        "An you need is trust trust trust",
+        "to make it show",
+        "I want to know everything you\u2019ve done",
+        "if you get a tent tell it to the eskimo",
+        "It\u2019s cold on the shoulder",
+        "and you know that we get a little older every day."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All you need is faith",
+        "All you need is faith faith faith",
+        "to make it nice",
+        "Kick it around don\u2019t be rude",
+        "if you gonna make a mistake don\u201dt you make it twice",
+        "It\u2019s cold on the shoulder",
+        "and you know that we get a little older every day."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s cold on the shoulder",
+        "and you know that we get a little older every day."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

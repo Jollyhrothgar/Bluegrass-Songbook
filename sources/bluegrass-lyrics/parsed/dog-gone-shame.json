@@ -1,0 +1,56 @@
+{
+  "slug": "dog-gone-shame",
+  "title": "Dog Gone Shame",
+  "source_url": "https://www.bluegrasslyrics.com/song/dog-gone-shame/",
+  "raw_lyrics": "You\u2019ve been stepping out on me\nI\u2019m gonna leave \u2019em at your feet\nYou\u2019re no good but I don\u2019t care\nAin\u2019t that a shame a Dog gone shame\n\nEvery time I leave town\nPeople say you\u2019re stepping round\nYou\u2019re no good but I don\u2019t care\nAin\u2019t that a shame a Dog gone shame\n\nI\u2019ll set you in the shade\nGive you everything I made\nYou\u2019re no good but I don\u2019t care\nAin\u2019t that a shame a Dog gone shame\n\nI\u2019ve done all that I can do\nTo try and get along with you\nYou\u2019re no good but I don\u2019t care\nAin\u2019t that a shame a Dog gone shame\n\nAin\u2019t that a shame a Dog gone shame",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ve been stepping out on me",
+        "I\u2019m gonna leave \u2019em at your feet",
+        "You\u2019re no good but I don\u2019t care",
+        "Ain\u2019t that a shame a Dog gone shame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every time I leave town",
+        "People say you\u2019re stepping round",
+        "You\u2019re no good but I don\u2019t care",
+        "Ain\u2019t that a shame a Dog gone shame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll set you in the shade",
+        "Give you everything I made",
+        "You\u2019re no good but I don\u2019t care",
+        "Ain\u2019t that a shame a Dog gone shame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve done all that I can do",
+        "To try and get along with you",
+        "You\u2019re no good but I don\u2019t care",
+        "Ain\u2019t that a shame a Dog gone shame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ain\u2019t that a shame a Dog gone shame"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

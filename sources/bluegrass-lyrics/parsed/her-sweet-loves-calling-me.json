@@ -1,0 +1,39 @@
+{
+  "slug": "her-sweet-loves-calling-me",
+  "title": "Her Sweet Love\u2019s Calling Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/her-sweet-loves-calling-me/",
+  "raw_lyrics": "Thirty days now I\u2019ve been gone out here in this world alone\nBut I can hear her sweet love\u2019s calling me\nWe\u2019re a thousand miles apart but she\u2019s here in my heart\nCause I can hear her sweet love\u2019s calling me\n\nHer sweet love\u2019s calling me\nAnd her lonely arms keep reaching for someone that she needs\nThe teardrops are falling on my cheeks\nCause I can hear her sweet love\u2019s calling me\n\nI remember how she cried the day I said good-bye\nNow I can hear her sweet love\u2019s callling me\nI don\u2019t know why I ever roamed leaving love like her\u2019s at home\nBut I can hear her sweet love\u2019s calling me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Thirty days now I\u2019ve been gone out here in this world alone",
+        "But I can hear her sweet love\u2019s calling me",
+        "We\u2019re a thousand miles apart but she\u2019s here in my heart",
+        "Cause I can hear her sweet love\u2019s calling me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her sweet love\u2019s calling me",
+        "And her lonely arms keep reaching for someone that she needs",
+        "The teardrops are falling on my cheeks",
+        "Cause I can hear her sweet love\u2019s calling me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember how she cried the day I said good-bye",
+        "Now I can hear her sweet love\u2019s callling me",
+        "I don\u2019t know why I ever roamed leaving love like her\u2019s at home",
+        "But I can hear her sweet love\u2019s calling me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

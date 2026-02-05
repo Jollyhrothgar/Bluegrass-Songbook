@@ -1,0 +1,39 @@
+{
+  "slug": "shady-grove",
+  "title": "Shady Grove",
+  "source_url": "https://www.bluegrasslyrics.com/song/shady-grove/",
+  "raw_lyrics": "Shady Grove my little miss\nShady Grove my darling\nShady Grove my little miss\nI\u2019m going back to Harlan\n\nEvery time I walk this road\nIt\u2019s always dark and cloudy\nEvery time I see that girl\nI always tell her howdy\n\nIf you see my little miss\nIf you see my darling\nIf you see my little miss\nTell her I\u2019m going to Harlan",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Shady Grove my little miss",
+        "Shady Grove my darling",
+        "Shady Grove my little miss",
+        "I\u2019m going back to Harlan"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every time I walk this road",
+        "It\u2019s always dark and cloudy",
+        "Every time I see that girl",
+        "I always tell her howdy"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you see my little miss",
+        "If you see my darling",
+        "If you see my little miss",
+        "Tell her I\u2019m going to Harlan"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

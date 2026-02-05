@@ -1,0 +1,40 @@
+{
+  "slug": "longing-for-old-virginia",
+  "title": "Longing For Old Virginia",
+  "source_url": "https://www.bluegrasslyrics.com/song/longing-for-old-virginia/",
+  "raw_lyrics": "\u2018Mid the green fields of Virginia, dear I met you\nWhere the roses red and white around us grew\nWhen I held you in my arms and gently kissed you\nThe robins sang the sweetest song we knew\n\nI am longing for old Virginia, for old Virginia and you\nAnd I\u2019m hoping the soul within you is longing for me too\nTo Virginia, just like the ivy, my heart clings ever true\nAnd I reckon in the spring I\u2019ll bring a little ring\nTo old Virginia and you\n\nThough tonight I\u2019m far from you and old Virginia\nI still love you as I did that day in June\nAnd when springtime comes again to old Virginia\nI\u2019ll build a little cottage just for two",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "\u2018Mid the green fields of Virginia, dear I met you",
+        "Where the roses red and white around us grew",
+        "When I held you in my arms and gently kissed you",
+        "The robins sang the sweetest song we knew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I am longing for old Virginia, for old Virginia and you",
+        "And I\u2019m hoping the soul within you is longing for me too",
+        "To Virginia, just like the ivy, my heart clings ever true",
+        "And I reckon in the spring I\u2019ll bring a little ring",
+        "To old Virginia and you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though tonight I\u2019m far from you and old Virginia",
+        "I still love you as I did that day in June",
+        "And when springtime comes again to old Virginia",
+        "I\u2019ll build a little cottage just for two"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

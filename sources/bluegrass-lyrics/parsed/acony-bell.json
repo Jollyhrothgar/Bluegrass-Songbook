@@ -1,0 +1,47 @@
+{
+  "slug": "acony-bell",
+  "title": "Acony Bell",
+  "source_url": "https://www.bluegrasslyrics.com/song/acony-bell/",
+  "raw_lyrics": "The fairest bloom the mountain know\nIs not an iris or a wild rose\nBut the little flower of which i\u2019ll tell\nKnown as the brave acony bell\n\nJust a simple flower so small and plain\nWith a pearly hue and a little known name\nBut the yellow birds sing when they see it bloom\nFor they know that spring is coming soon\n\nWell it makes its home mid the rocks and the rills\nWhere the snow lies deep on the windy hills\nAnd it tells the world \u201cwhy should i wait\nThis ice and snow is gonna melt away\u201d\n\nAnd so i\u2019ll sing that yellow bird\u2019s song\nFor the troubled times will soon be gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The fairest bloom the mountain know",
+        "Is not an iris or a wild rose",
+        "But the little flower of which i\u2019ll tell",
+        "Known as the brave acony bell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a simple flower so small and plain",
+        "With a pearly hue and a little known name",
+        "But the yellow birds sing when they see it bloom",
+        "For they know that spring is coming soon"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well it makes its home mid the rocks and the rills",
+        "Where the snow lies deep on the windy hills",
+        "And it tells the world \u201cwhy should i wait",
+        "This ice and snow is gonna melt away\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And so i\u2019ll sing that yellow bird\u2019s song",
+        "For the troubled times will soon be gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

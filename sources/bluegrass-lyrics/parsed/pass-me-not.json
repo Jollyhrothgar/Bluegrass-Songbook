@@ -1,0 +1,39 @@
+{
+  "slug": "pass-me-not",
+  "title": "Pass Me Not",
+  "source_url": "https://www.bluegrasslyrics.com/song/pass-me-not/",
+  "raw_lyrics": "Pass me not oh gentle savior\nHear my humble cry\nWhile on others Thou art calling\nDo not pass me by\n\nSavior Savior\nHear my humble cry\nWhile on others Thou art calling\nDo not pass me by\n\nLet me at the throne of mercy\nFind a sweet relief\nKneeling there in deep contrition\nHelp my unbelief",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Pass me not oh gentle savior",
+        "Hear my humble cry",
+        "While on others Thou art calling",
+        "Do not pass me by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Savior Savior",
+        "Hear my humble cry",
+        "While on others Thou art calling",
+        "Do not pass me by"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let me at the throne of mercy",
+        "Find a sweet relief",
+        "Kneeling there in deep contrition",
+        "Help my unbelief"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "down-to-the-river-to-pray",
+  "title": "Down To The River To Pray",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-to-the-river-to-pray/",
+  "raw_lyrics": "As I went down to the river to pray\nStudying about that good old way\nAnd who shall wear the starry crown\nGood Lord show me the way\n\nOh sisters let\u2019s go down\nLet\u2019s go down come on down\nOh sisters let\u2019s go down\nDown to the river to pray\n\nAs I went down in the river to pray\nStudying about that good old way\nAnd who shall wear the robe and crown\nGood Lord show me the way\n\nOh brothers let\u2019s go down\netcetera\n\nAs I went down to the river to pray\nStudying about that good old way\nAnd who shall wear the starry crown\nGood Lord show me the way\n\nOh fathers let\u2019s go down\netcetera\n\nAs I went down to the river to pray\nStudying about that good old way\nAnd who shall wear the robe and crown\nGood Lord show me the way\n\nOh mothers let\u2019s go down\netcetera\n\nAs I went down to the river to pray\nStudying about that good old way\nAnd who shall wear the starry crown\nGood Lord show me the way\n\nOh sinners let\u2019s go down\netcetera\n\nAs I went down to the river to pray\nStudying about that good old way\nAnd who shall wear the robe and crown\nGood Lord show me the way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As I went down to the river to pray",
+        "Studying about that good old way",
+        "And who shall wear the starry crown",
+        "Good Lord show me the way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh sisters let\u2019s go down",
+        "Let\u2019s go down come on down",
+        "Oh sisters let\u2019s go down",
+        "Down to the river to pray"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I went down in the river to pray",
+        "Studying about that good old way",
+        "And who shall wear the robe and crown",
+        "Good Lord show me the way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh brothers let\u2019s go down",
+        "etcetera"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I went down to the river to pray",
+        "Studying about that good old way",
+        "And who shall wear the starry crown",
+        "Good Lord show me the way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh fathers let\u2019s go down",
+        "etcetera"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I went down to the river to pray",
+        "Studying about that good old way",
+        "And who shall wear the robe and crown",
+        "Good Lord show me the way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh mothers let\u2019s go down",
+        "etcetera"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I went down to the river to pray",
+        "Studying about that good old way",
+        "And who shall wear the starry crown",
+        "Good Lord show me the way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh sinners let\u2019s go down",
+        "etcetera"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I went down to the river to pray",
+        "Studying about that good old way",
+        "And who shall wear the robe and crown",
+        "Good Lord show me the way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

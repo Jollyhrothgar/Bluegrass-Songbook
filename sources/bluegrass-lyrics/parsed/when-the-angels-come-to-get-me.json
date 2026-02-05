@@ -1,0 +1,49 @@
+{
+  "slug": "when-the-angels-come-to-get-me",
+  "title": "When The Angels Come To Get Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-angels-come-to-get-me/",
+  "raw_lyrics": "I am growing old and feeble\nFriends and loved ones I must leave\nFor tomorrow I\u2019ll be lifted\nWhen the angels come for me\n\nWhen the angels come to get me\nIn a chariot of pure gold\nI\u2019ll be carried up to heaven\nOn that hallelujah road\n\nLife down here has been so happy\nThrough this world which I\u2019ve trod\nBut I\u2019ll move into a mansion\nWhere I\u2019ll dwell forever more\n\nThere I\u2019ll be with my dear Savior\nDad and Mother I will see\nAll these joys will be mine forever\nWhen the angels come for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am growing old and feeble",
+        "Friends and loved ones I must leave",
+        "For tomorrow I\u2019ll be lifted",
+        "When the angels come for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the angels come to get me",
+        "In a chariot of pure gold",
+        "I\u2019ll be carried up to heaven",
+        "On that hallelujah road"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Life down here has been so happy",
+        "Through this world which I\u2019ve trod",
+        "But I\u2019ll move into a mansion",
+        "Where I\u2019ll dwell forever more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There I\u2019ll be with my dear Savior",
+        "Dad and Mother I will see",
+        "All these joys will be mine forever",
+        "When the angels come for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

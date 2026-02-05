@@ -1,0 +1,46 @@
+{
+  "slug": "making-plans",
+  "title": "Making Plans",
+  "source_url": "https://www.bluegrasslyrics.com/song/making-plans/",
+  "raw_lyrics": "You say tomorrow you\u2019re going\nIt\u2019s so hard for me to believe\nI\u2019m making plans for the heartache\n\u2018Cause you\u2019re making plans to leave\n\nThe tears for me will be falling\nLike a tree shedding its leaves\nI\u2019m making plans for the teardrops\n\u201cCause you\u2019re making plans to leave\n\nYou\u2019re making plans to forget me\nI\u2019m making plans to miss you\nI\u2019m getting ready to grieve\n\nI\u2019m making plans to be lonesome\nCause you\u2019re making plans to leave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You say tomorrow you\u2019re going",
+        "It\u2019s so hard for me to believe",
+        "I\u2019m making plans for the heartache",
+        "\u2018Cause you\u2019re making plans to leave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The tears for me will be falling",
+        "Like a tree shedding its leaves",
+        "I\u2019m making plans for the teardrops",
+        "\u201cCause you\u2019re making plans to leave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019re making plans to forget me",
+        "I\u2019m making plans to miss you",
+        "I\u2019m getting ready to grieve"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m making plans to be lonesome",
+        "Cause you\u2019re making plans to leave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

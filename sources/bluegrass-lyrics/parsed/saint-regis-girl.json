@@ -1,0 +1,89 @@
+{
+  "slug": "saint-regis-girl",
+  "title": "Saint Regis Girl",
+  "source_url": "https://www.bluegrasslyrics.com/song/saint-regis-girl/",
+  "raw_lyrics": "In a pine treated grave by the river\nWhere the nightingale sings sad and low\nAll alone lies a Saint Regis maiden\nWho did sing this sad song years ago\n\nNever more will my heart fill with gladness\nAs I stroll through the forest again\nFor to prison they\u2019ve taken my lover\nThat\u2019s why my poor heart\u2019s full of pain\n\nWhen in prison your dying from sorrow\nI hope you\u2019ll recall those last days\nThat together we spent in this valley\nAnd the vows that we\u2019ve shared on its quay\n\nOh if I could but burn down that prison\nTo steal you away for awhile\nThey could carry me off to the gallows\nAnd I\u2019d go to my doom with a smile\n\nWhen the moon is high in the heavens\nAnd the mountains do gleam in its light\nHow often I\u2019ll dream of you sweetheart\nAs I mourn there alone in the night\n\nThere will be a green grave in the forest\nAnd people when passing that way\nWill think of that Saint Regis maiden\nAs she lies there alone in the clay\n\nA shadow has crossed o\u2019er the valley\nWhere once only sunshine did reign\nBut where ever life\u2019s pathway may lead me\nI shall ever remember our dream\n\nIn the future someday I will meet you\nOn the bright shore so far from this world\nAnd there before God I will greet you\nThat\u2019s the dream of the Saint Regis girl",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a pine treated grave by the river",
+        "Where the nightingale sings sad and low",
+        "All alone lies a Saint Regis maiden",
+        "Who did sing this sad song years ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Never more will my heart fill with gladness",
+        "As I stroll through the forest again",
+        "For to prison they\u2019ve taken my lover",
+        "That\u2019s why my poor heart\u2019s full of pain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When in prison your dying from sorrow",
+        "I hope you\u2019ll recall those last days",
+        "That together we spent in this valley",
+        "And the vows that we\u2019ve shared on its quay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh if I could but burn down that prison",
+        "To steal you away for awhile",
+        "They could carry me off to the gallows",
+        "And I\u2019d go to my doom with a smile"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the moon is high in the heavens",
+        "And the mountains do gleam in its light",
+        "How often I\u2019ll dream of you sweetheart",
+        "As I mourn there alone in the night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There will be a green grave in the forest",
+        "And people when passing that way",
+        "Will think of that Saint Regis maiden",
+        "As she lies there alone in the clay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A shadow has crossed o\u2019er the valley",
+        "Where once only sunshine did reign",
+        "But where ever life\u2019s pathway may lead me",
+        "I shall ever remember our dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the future someday I will meet you",
+        "On the bright shore so far from this world",
+        "And there before God I will greet you",
+        "That\u2019s the dream of the Saint Regis girl"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

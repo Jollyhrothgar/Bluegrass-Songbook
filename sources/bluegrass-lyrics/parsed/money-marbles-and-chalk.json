@@ -1,0 +1,49 @@
+{
+  "slug": "money-marbles-and-chalk",
+  "title": "Money, Marbles, And Chalk",
+  "source_url": "https://www.bluegrasslyrics.com/song/money-marbles-and-chalk/",
+  "raw_lyrics": "I got money, marbles, and chalk sweetheart\nBut I still feel like I am poor\nCause my money won\u2019t spend, and my marbles won\u2019t roll\nAnd my chalk won\u2019t write anymore\n\nThere\u2019s an old saying that\u2019s been all around\nI heard it before I could walk\nHow some\u2019s  got wealth, some\u2019s got health\nOthers money marbles and chalk\n\nWhile you were here I was happy and gay\nYour presence made me feel so proud\nBut you left me, for another one day\nNow I feel alone in a crowd\n\nMoney, marbles, and chalk is alright\nFor a miser who loves only gold\nBut give me a chance, to save our romance\nFor I love you with all of my soul",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I got money, marbles, and chalk sweetheart",
+        "But I still feel like I am poor",
+        "Cause my money won\u2019t spend, and my marbles won\u2019t roll",
+        "And my chalk won\u2019t write anymore"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s an old saying that\u2019s been all around",
+        "I heard it before I could walk",
+        "How some\u2019s  got wealth, some\u2019s got health",
+        "Others money marbles and chalk"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While you were here I was happy and gay",
+        "Your presence made me feel so proud",
+        "But you left me, for another one day",
+        "Now I feel alone in a crowd"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Money, marbles, and chalk is alright",
+        "For a miser who loves only gold",
+        "But give me a chance, to save our romance",
+        "For I love you with all of my soul"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

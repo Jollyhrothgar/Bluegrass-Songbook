@@ -1,0 +1,63 @@
+{
+  "slug": "happy-or-lonesome",
+  "title": "Happy Or Lonesome",
+  "source_url": "https://www.bluegrasslyrics.com/song/happy-or-lonesome/",
+  "raw_lyrics": "Come back to me in my dreaming\nCome back to me once more\nCome with the love light beaming\nLike in the days of yore\n\nI wonder if you still love me\nAnd if your heart is still true\nWhen the spring roses are blooming\nThen I\u2019ll come back to you\n\nSomewhere a heart is breaking\nCalling me back to you\nMemories of loved ones waiting\nEach happy home and you\nAbsence makes my heart fonder\nIs it the same with you\nAre you still happy I wonder\nOr do you feel lonesome too\n\nWhen the sun is sinking\nIn the golden west\nAnd the birds and flowers\nThey have gone to rest\n\nCome tell me that you still love me\nAnd that your heart is still true\nWhen the spring roses are blooming\nThen I\u2019ll come back to you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come back to me in my dreaming",
+        "Come back to me once more",
+        "Come with the love light beaming",
+        "Like in the days of yore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wonder if you still love me",
+        "And if your heart is still true",
+        "When the spring roses are blooming",
+        "Then I\u2019ll come back to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Somewhere a heart is breaking",
+        "Calling me back to you",
+        "Memories of loved ones waiting",
+        "Each happy home and you",
+        "Absence makes my heart fonder",
+        "Is it the same with you",
+        "Are you still happy I wonder",
+        "Or do you feel lonesome too"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the sun is sinking",
+        "In the golden west",
+        "And the birds and flowers",
+        "They have gone to rest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come tell me that you still love me",
+        "And that your heart is still true",
+        "When the spring roses are blooming",
+        "Then I\u2019ll come back to you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

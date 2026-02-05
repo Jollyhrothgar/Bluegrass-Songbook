@@ -1,0 +1,57 @@
+{
+  "slug": "down-the-line",
+  "title": "Down the Line",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-the-line/",
+  "raw_lyrics": "Born out in the country raised out on a farm\nGot my education out behind a barn\nLeft one Sunday morning in a driving rain\nHitchhiked to the freight yard and caught the railroad train\n\nOh, engineer, let your whistle whine\nOh, get me out of here, a little further down the line\n\nI\u2019ve been to California and I\u2019ve been to New Orleans\nBeen to New York City and everywhere between\nI\u2019ve eat beans and taters your finest caviar\nDrank brandy from a snifter and moonshine from a jar\n\nSpent a year in prison with a number for my name\nFed me bread and water tied to a ball and chain\nI swore the day they slammed the door and the jailer locked me in\nIf they ever let me out of here I\u2019ll never go back again\n\nBeen dreaming of the day when I return back to my home\nits where I want to settle down never more to roam\nSit me on a tractor and point me to the fields,\nI will plow the furrows my hands upon the wheel",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Born out in the country raised out on a farm",
+        "Got my education out behind a barn",
+        "Left one Sunday morning in a driving rain",
+        "Hitchhiked to the freight yard and caught the railroad train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, engineer, let your whistle whine",
+        "Oh, get me out of here, a little further down the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been to California and I\u2019ve been to New Orleans",
+        "Been to New York City and everywhere between",
+        "I\u2019ve eat beans and taters your finest caviar",
+        "Drank brandy from a snifter and moonshine from a jar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Spent a year in prison with a number for my name",
+        "Fed me bread and water tied to a ball and chain",
+        "I swore the day they slammed the door and the jailer locked me in",
+        "If they ever let me out of here I\u2019ll never go back again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Been dreaming of the day when I return back to my home",
+        "its where I want to settle down never more to roam",
+        "Sit me on a tractor and point me to the fields,",
+        "I will plow the furrows my hands upon the wheel"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

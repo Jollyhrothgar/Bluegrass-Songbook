@@ -1,0 +1,39 @@
+{
+  "slug": "im-blue-im-lonsome",
+  "title": "I\u2019m Blue, I\u2019m Lonsome",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-blue-im-lonsome/",
+  "raw_lyrics": "The lonesome sigh of a train going by\nMakes me want to stop and cry\nI recall the day it took you away\nI\u2019m blue I\u2019m lonesome too\n\nWhen I hear that whistle blow\nI want to pack my suitcase and go\nThe lonesome sound of a train going by\nMakes me want to stop and cry\n\nIn the still of the night in the pale moonlight\nThe wind, it moans and cry\nThese lonesome blues I just can\u2019t lose\nI\u2019m blue I\u2019m lonesome too",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The lonesome sigh of a train going by",
+        "Makes me want to stop and cry",
+        "I recall the day it took you away",
+        "I\u2019m blue I\u2019m lonesome too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When I hear that whistle blow",
+        "I want to pack my suitcase and go",
+        "The lonesome sound of a train going by",
+        "Makes me want to stop and cry"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the still of the night in the pale moonlight",
+        "The wind, it moans and cry",
+        "These lonesome blues I just can\u2019t lose",
+        "I\u2019m blue I\u2019m lonesome too"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

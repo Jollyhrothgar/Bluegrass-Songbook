@@ -1,0 +1,41 @@
+{
+  "slug": "who-needs-you",
+  "title": "Who Needs You?",
+  "source_url": "https://www.bluegrasslyrics.com/song/who-needs-you/",
+  "raw_lyrics": "You say you\u2019re sorry that it had to end this way\nIf I\u2019d just keep my chin up there\u2019d be a brighter day\nHoney there\u2019s just one thing before this bridge is burned\nI don\u2019t want your sympathy so don\u2019t you be concerned\nAbout what I do who needs you?\n\nWell the hallway\u2019s full of bags and boxes filled with all your things\nIn that balled-up napkin you\u2019ll find my wedding ring\nI\u2019ve seen you pull some fast ones but this time you\u2019ve gone too far\nI even took the liberty of gassing up your car.\nThis time we\u2019re through who needs you?\n\nWho needs you who needs a heart broke in two?\nWell who needs you babe now that I know your love\u2019s not true\nWho needs your low down ways blue nights and lonely days\nOh tell me who? Who needs you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You say you\u2019re sorry that it had to end this way",
+        "If I\u2019d just keep my chin up there\u2019d be a brighter day",
+        "Honey there\u2019s just one thing before this bridge is burned",
+        "I don\u2019t want your sympathy so don\u2019t you be concerned",
+        "About what I do who needs you?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the hallway\u2019s full of bags and boxes filled with all your things",
+        "In that balled-up napkin you\u2019ll find my wedding ring",
+        "I\u2019ve seen you pull some fast ones but this time you\u2019ve gone too far",
+        "I even took the liberty of gassing up your car.",
+        "This time we\u2019re through who needs you?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Who needs you who needs a heart broke in two?",
+        "Well who needs you babe now that I know your love\u2019s not true",
+        "Who needs your low down ways blue nights and lonely days",
+        "Oh tell me who? Who needs you"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

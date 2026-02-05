@@ -1,0 +1,68 @@
+{
+  "slug": "aint-no-grave",
+  "title": "Ain\u2019t No Grave",
+  "source_url": "https://www.bluegrasslyrics.com/song/aint-no-grave/",
+  "raw_lyrics": "There ain\u2019t no grave gonna hold my body down\nThere ain\u2019t no grave gonna hold my body down\nWhen I hear the trumpet sound\nGonna get up outa the ground\nThere ain\u2019t no grave gonna hold my body down\n\nWell go down yonder Gabriel\nPut your foot on the land and sea\nBut don\u2019t you blow that trumpet until you hear from me\nWell look way over yonder\nSee people dressed in white\nI know it was God\u2019s people I seen \u2019em doin right\n\nOh look way over Jordan\nWhat do you think I see\nI see a band of angels and they\u2019re comin\u2019 after me\n\nWell I goin to the river of Jordan\nBury my knees in the sand\nGonna holler high Hosanna til I reach that promised land\n\nOh look way over yonder\nWhat do you think I see\nI see a band of angels and they\u2019re comin\u2019 after me\n\nWell meet me Jesus meet me\nMeet me in the middle of the air\nAnd if these wings should fail me there won\u2019t be no other pair",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "There ain\u2019t no grave gonna hold my body down",
+        "There ain\u2019t no grave gonna hold my body down",
+        "When I hear the trumpet sound",
+        "Gonna get up outa the ground",
+        "There ain\u2019t no grave gonna hold my body down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well go down yonder Gabriel",
+        "Put your foot on the land and sea",
+        "But don\u2019t you blow that trumpet until you hear from me",
+        "Well look way over yonder",
+        "See people dressed in white",
+        "I know it was God\u2019s people I seen \u2019em doin right"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh look way over Jordan",
+        "What do you think I see",
+        "I see a band of angels and they\u2019re comin\u2019 after me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I goin to the river of Jordan",
+        "Bury my knees in the sand",
+        "Gonna holler high Hosanna til I reach that promised land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh look way over yonder",
+        "What do you think I see",
+        "I see a band of angels and they\u2019re comin\u2019 after me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well meet me Jesus meet me",
+        "Meet me in the middle of the air",
+        "And if these wings should fail me there won\u2019t be no other pair"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

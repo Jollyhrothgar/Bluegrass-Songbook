@@ -1,0 +1,45 @@
+{
+  "slug": "the-god-that-never-fails-2",
+  "title": "The God That Never Fails",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-god-that-never-fails-2/",
+  "raw_lyrics": "I won\u2019t go to a burnin hell\nIf I believe what the bible tells\nI\u2019ll conquer that old devil if I pray\nHe offers just brimstone and fire\nA lowdown thief a cheater and a liar\nBut the Lord will give you love and treat you well\n\nThere\u2019s too many miles on me\nTo change my ways I cannot see\nBefore I die it can\u2019t be far away\nI believe in the God that never fails\nDelivered Jonah from the belly of the whale\nGive me that old time religion that\u2019s for me\n\nI have a promise from God above\nThe one who gave me this book of love\nSays he\u2019ll never leave me or forsake me\nAnd when the devil\u2019s at my back door\nI\u2019ll raise my hand and kneel on the floor\nI pray that the Lord will lead me through",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I won\u2019t go to a burnin hell",
+        "If I believe what the bible tells",
+        "I\u2019ll conquer that old devil if I pray",
+        "He offers just brimstone and fire",
+        "A lowdown thief a cheater and a liar",
+        "But the Lord will give you love and treat you well"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s too many miles on me",
+        "To change my ways I cannot see",
+        "Before I die it can\u2019t be far away",
+        "I believe in the God that never fails",
+        "Delivered Jonah from the belly of the whale",
+        "Give me that old time religion that\u2019s for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have a promise from God above",
+        "The one who gave me this book of love",
+        "Says he\u2019ll never leave me or forsake me",
+        "And when the devil\u2019s at my back door",
+        "I\u2019ll raise my hand and kneel on the floor",
+        "I pray that the Lord will lead me through"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

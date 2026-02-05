@@ -1,0 +1,69 @@
+{
+  "slug": "i-will-arise",
+  "title": "I Will Arise",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-will-arise/",
+  "raw_lyrics": "Come thou fount of every blessing\nTune my heart to sing thy grace\nStreams of mercy never ceasing\nCall forth songs of loudest praise\n\nTeach me some melodious sonnet\nSung by flaming tongues above\nPraise the mount i\u2019m fixed upon it\nSongs of thy redeeming love\n\nI will arise and go to Jesus\nHe will embrace me in His arms\nIn the arms of my dear Savior\nOh there are ten thousand charms\n\nJesus sought me when a stranger\nWandering from the fold of God\nHe to rescue me from danger\nInterposed His precious blood\n\nHere I\u2019ll raise my song in praising\nHither by Thy help I\u2019ve come\nAnd I know by Thy good pleasure\nSafely to arrive at home\n\nI will arise and go to Jesus\nHe will embrace me in His arms\nIn the arms of my dear Savior\nOh there are ten thousand charms",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come thou fount of every blessing",
+        "Tune my heart to sing thy grace",
+        "Streams of mercy never ceasing",
+        "Call forth songs of loudest praise"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Teach me some melodious sonnet",
+        "Sung by flaming tongues above",
+        "Praise the mount i\u2019m fixed upon it",
+        "Songs of thy redeeming love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will arise and go to Jesus",
+        "He will embrace me in His arms",
+        "In the arms of my dear Savior",
+        "Oh there are ten thousand charms"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jesus sought me when a stranger",
+        "Wandering from the fold of God",
+        "He to rescue me from danger",
+        "Interposed His precious blood"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Here I\u2019ll raise my song in praising",
+        "Hither by Thy help I\u2019ve come",
+        "And I know by Thy good pleasure",
+        "Safely to arrive at home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will arise and go to Jesus",
+        "He will embrace me in His arms",
+        "In the arms of my dear Savior",
+        "Oh there are ten thousand charms"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

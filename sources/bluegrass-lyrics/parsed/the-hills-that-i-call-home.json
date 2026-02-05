@@ -1,0 +1,60 @@
+{
+  "slug": "the-hills-that-i-call-home",
+  "title": "The Hills That I Call Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-hills-that-i-call-home/",
+  "raw_lyrics": "I was born upon a hillside\nWhere the pines sing in the wind\nWhere my daddy lived before me\nAnd my grandpa before him\n\nWe believe in simple livin\u2019\nIt\u2019s the only life we know\nAll we need here is our freedom\nAnd a place to call our own\n\nIn the land of Ethan Allen\nWhere the sugar maples grow\nWhere the wild grass fills the meadows\nAnd the rocky rivers flow\nLie the hills that I call home\n\nNow I have traveled cross the country\nAnd there is much that I have learned\nStill I felt no peace inside me\nTill the day that I returned\n\nFor there\u2019re two things you can count on\nIn this troubled world we face\nEvery season has an ending\nEvery person has a place",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was born upon a hillside",
+        "Where the pines sing in the wind",
+        "Where my daddy lived before me",
+        "And my grandpa before him"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We believe in simple livin\u2019",
+        "It\u2019s the only life we know",
+        "All we need here is our freedom",
+        "And a place to call our own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the land of Ethan Allen",
+        "Where the sugar maples grow",
+        "Where the wild grass fills the meadows",
+        "And the rocky rivers flow",
+        "Lie the hills that I call home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I have traveled cross the country",
+        "And there is much that I have learned",
+        "Still I felt no peace inside me",
+        "Till the day that I returned"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For there\u2019re two things you can count on",
+        "In this troubled world we face",
+        "Every season has an ending",
+        "Every person has a place"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

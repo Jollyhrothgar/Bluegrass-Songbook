@@ -1,0 +1,47 @@
+{
+  "slug": "body-and-soul",
+  "title": "Body And Soul",
+  "source_url": "https://www.bluegrasslyrics.com/song/body-and-soul/",
+  "raw_lyrics": "See that train coming round the bend,\nCarrying the one that I love\nHer beautiful body is still here on earth,\nBut her soul has been called up above\n\nBody and Soul, Body and Soul,\nThat\u2019s how she loved me, with Body and Soul\n\nHer beautiful hair was the purest of gold,\nHer eyes were as blue as the sea,\nHer lips were the color of summer\u2019s red rose,\nAnd she promised she would always love me\n\nTomorrow as the sun sinks low\nThe shadows will cover her face\nAs her last sun goes down, she\u2019s laid beneath the ground\nAnd my teardrops are falling like rain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "See that train coming round the bend,",
+        "Carrying the one that I love",
+        "Her beautiful body is still here on earth,",
+        "But her soul has been called up above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Body and Soul, Body and Soul,",
+        "That\u2019s how she loved me, with Body and Soul"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her beautiful hair was the purest of gold,",
+        "Her eyes were as blue as the sea,",
+        "Her lips were the color of summer\u2019s red rose,",
+        "And she promised she would always love me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tomorrow as the sun sinks low",
+        "The shadows will cover her face",
+        "As her last sun goes down, she\u2019s laid beneath the ground",
+        "And my teardrops are falling like rain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

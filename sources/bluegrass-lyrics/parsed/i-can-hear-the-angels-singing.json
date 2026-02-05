@@ -1,0 +1,39 @@
+{
+  "slug": "i-can-hear-the-angels-singing",
+  "title": "I Can Hear The Angels Singing",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-can-hear-the-angels-singing/",
+  "raw_lyrics": "I can hear the angels singing\nAs I walk this rocky road\nFor my thoughts are all of heaven\nAnd my Savior\u2019s blest abode\n\nI can hear the angels singing\nI can hear my Savior\u2019s voice\nAnd I\u2019ll soon be singing with them\nThrough endless ages we\u2019ll rejoice\n\nI can hear the angels singing\nOf my Savior\u2019s blessed love\nHow he died to build a mansion\nFor his children up above",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can hear the angels singing",
+        "As I walk this rocky road",
+        "For my thoughts are all of heaven",
+        "And my Savior\u2019s blest abode"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can hear the angels singing",
+        "I can hear my Savior\u2019s voice",
+        "And I\u2019ll soon be singing with them",
+        "Through endless ages we\u2019ll rejoice"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can hear the angels singing",
+        "Of my Savior\u2019s blessed love",
+        "How he died to build a mansion",
+        "For his children up above"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

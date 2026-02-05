@@ -1,0 +1,39 @@
+{
+  "slug": "loving-you-too-well",
+  "title": "Loving You Too Well",
+  "source_url": "https://www.bluegrasslyrics.com/song/loving-you-too-well/",
+  "raw_lyrics": "I\u2019ve held you close ten thousand times\nYou promised to be mine\nYou broke my heart ten thousand ways\nWhen you kissed me your last time\n\nI\u2019m worried troubled I can\u2019t sleep\nThis story I must tell\nThe worst mistake I ever made\nWas loving you too well\n\nAnother man took you from me\nHe stole your heart away\nI\u2019ve often prayed to God above\nYou\u2019d wander back some day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve held you close ten thousand times",
+        "You promised to be mine",
+        "You broke my heart ten thousand ways",
+        "When you kissed me your last time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m worried troubled I can\u2019t sleep",
+        "This story I must tell",
+        "The worst mistake I ever made",
+        "Was loving you too well"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Another man took you from me",
+        "He stole your heart away",
+        "I\u2019ve often prayed to God above",
+        "You\u2019d wander back some day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

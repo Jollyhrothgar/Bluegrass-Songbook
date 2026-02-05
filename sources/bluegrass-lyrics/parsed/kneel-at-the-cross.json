@@ -1,0 +1,49 @@
+{
+  "slug": "kneel-at-the-cross",
+  "title": "Kneel At The Cross",
+  "source_url": "https://www.bluegrasslyrics.com/song/kneel-at-the-cross/",
+  "raw_lyrics": "Kneel at the cross, Christ will meet you there\nCome while He waits for you\nListen to His voice, leave with Him your cares\nAnd begin life anew\n\nKneel at the cross, kneel at the cross\nLeave every care, leave every care\nKneel at the cross, kneel at the cross\nJesus will meet you there\n\nKneel at the cross, there\u2019s room for all\nWho will his glory share\nBliss there awaits, harm can nary fall\nThose who are anchored there\n\nKneel at the cross, give your idols up\nLook unto realms above\nTurn not away, to life\u2019s sparkling cup\nTrust only in His love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Kneel at the cross, Christ will meet you there",
+        "Come while He waits for you",
+        "Listen to His voice, leave with Him your cares",
+        "And begin life anew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Kneel at the cross, kneel at the cross",
+        "Leave every care, leave every care",
+        "Kneel at the cross, kneel at the cross",
+        "Jesus will meet you there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Kneel at the cross, there\u2019s room for all",
+        "Who will his glory share",
+        "Bliss there awaits, harm can nary fall",
+        "Those who are anchored there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Kneel at the cross, give your idols up",
+        "Look unto realms above",
+        "Turn not away, to life\u2019s sparkling cup",
+        "Trust only in His love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

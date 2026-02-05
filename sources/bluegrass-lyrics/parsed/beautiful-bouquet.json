@@ -1,0 +1,49 @@
+{
+  "slug": "beautiful-bouquet",
+  "title": "Beautiful Bouquet",
+  "source_url": "https://www.bluegrasslyrics.com/song/beautiful-bouquet/",
+  "raw_lyrics": "For pleasure I went walking out through the fields one day\nI started gathering flowers to make a sweet bouquet\nEach flower that I gathered. each one played a part\nEach flower stood for someone held dear to my heart\n\nBeautiful bouquet I\u2019m gathering today\nPicking the colours that\u2019ll never fade away\nEach flower has a meaning so dear to me\nEach flower is a treasure chestof sweet memories\n\nViolets for my sweetheart, a white rose for my dad\nA red rose stood for mother, the best friend that I had\nForget-me-nots stood faithfully for tried true friends of mine\nDaisies for the puppy loves that I left far behind\n\nLilies are for grandma, who watches from afar\nPoppies are for brother, who lost his life at war\nI put them all together, tomake a sweet bouquet\nA rainbow full of colours that will never fade away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "For pleasure I went walking out through the fields one day",
+        "I started gathering flowers to make a sweet bouquet",
+        "Each flower that I gathered. each one played a part",
+        "Each flower stood for someone held dear to my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Beautiful bouquet I\u2019m gathering today",
+        "Picking the colours that\u2019ll never fade away",
+        "Each flower has a meaning so dear to me",
+        "Each flower is a treasure chestof sweet memories"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Violets for my sweetheart, a white rose for my dad",
+        "A red rose stood for mother, the best friend that I had",
+        "Forget-me-nots stood faithfully for tried true friends of mine",
+        "Daisies for the puppy loves that I left far behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lilies are for grandma, who watches from afar",
+        "Poppies are for brother, who lost his life at war",
+        "I put them all together, tomake a sweet bouquet",
+        "A rainbow full of colours that will never fade away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

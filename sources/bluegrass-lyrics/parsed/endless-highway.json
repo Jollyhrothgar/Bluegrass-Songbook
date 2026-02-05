@@ -1,0 +1,40 @@
+{
+  "slug": "endless-highway",
+  "title": "Endless Highway",
+  "source_url": "https://www.bluegrasslyrics.com/song/endless-highway/",
+  "raw_lyrics": "Endless highway as far as I can see\nThe road will take me back to her tonight\nIt\u2019s been so long since I\u2019ve seen her smile\nI\u2019ll be counting all the miles \u2019til I get home.\n\nHow many hours \u2019til I hold her?\nHow many days before we hit the road again?\nEndless highway\nshe don\u2019t know how much I miss her\n\nHeaded down this road and bound for Tennessee.\nLonesome feeling deep inside my heart\nLonging for this weary night to end\nI\u2019ll think about her try to keep my tired eyes open\nCome the morning light I\u2019ll be back home again.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Endless highway as far as I can see",
+        "The road will take me back to her tonight",
+        "It\u2019s been so long since I\u2019ve seen her smile",
+        "I\u2019ll be counting all the miles \u2019til I get home."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "How many hours \u2019til I hold her?",
+        "How many days before we hit the road again?",
+        "Endless highway",
+        "she don\u2019t know how much I miss her"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Headed down this road and bound for Tennessee.",
+        "Lonesome feeling deep inside my heart",
+        "Longing for this weary night to end",
+        "I\u2019ll think about her try to keep my tired eyes open",
+        "Come the morning light I\u2019ll be back home again."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

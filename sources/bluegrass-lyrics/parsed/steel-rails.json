@@ -1,0 +1,39 @@
+{
+  "slug": "steel-rails",
+  "title": "Steel Rails",
+  "source_url": "https://www.bluegrasslyrics.com/song/steel-rails/",
+  "raw_lyrics": "Steel rails chasin\u2019 sunshine \u2019round the bend\nWinding through the trees like a ribbon in the wind\nI don\u2019t mind not knowin\u2019 what lies down the track\n\u2018Cause I\u2019m lookin\u2019 out ahead to keep my mind from turnin\u2019 back\n\nIt\u2019s not the first time I found myself alone at dawn\nIf I really had you once then I have you when I\u2019m gone\nWhistle blowin\u2019 blowin\u2019 lonesome in my mind\nCalling me along the never ending meadow vine\n\nSun is shining through the open boxcar door\nLyin\u2019 in my mind with the things I\u2019ve known before\nI\u2019ve lost count of the hours days and nights\nThe rhythm of the rails keep the motion in my mind",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Steel rails chasin\u2019 sunshine \u2019round the bend",
+        "Winding through the trees like a ribbon in the wind",
+        "I don\u2019t mind not knowin\u2019 what lies down the track",
+        "\u2018Cause I\u2019m lookin\u2019 out ahead to keep my mind from turnin\u2019 back"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s not the first time I found myself alone at dawn",
+        "If I really had you once then I have you when I\u2019m gone",
+        "Whistle blowin\u2019 blowin\u2019 lonesome in my mind",
+        "Calling me along the never ending meadow vine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sun is shining through the open boxcar door",
+        "Lyin\u2019 in my mind with the things I\u2019ve known before",
+        "I\u2019ve lost count of the hours days and nights",
+        "The rhythm of the rails keep the motion in my mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

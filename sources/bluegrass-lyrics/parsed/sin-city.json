@@ -1,0 +1,49 @@
+{
+  "slug": "sin-city",
+  "title": "Sin City",
+  "source_url": "https://www.bluegrasslyrics.com/song/sin-city/",
+  "raw_lyrics": "This old town\u2019s filled with sin it will swallow you in\nIf you\u2019ve got some money to burn\nTake it home, right away we\u2019ve got three years to pay\nBut Satan is waiting his turn.\n\nThe scientists say it will all wash away\nBut we don\u2019t believe anymore\nCause we\u2019ve got our recruits and our green mohair suits\nSo please show your I.D. at the door.\n\nThis old earthquake\u2019s gonna leave me in the poorhouse\nIt feels like this whole town\u2019s insane\nOn the thirty first floor a gold plated door\nWon\u2019t keep out the Lord\u2019s burning rain\n\nA friend came around, tried to clean up this town\nHis ideas made some people mad\nBut he trusted his crowd, so he spoke right out loud\nAnd they lost the best friend they had.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "This old town\u2019s filled with sin it will swallow you in",
+        "If you\u2019ve got some money to burn",
+        "Take it home, right away we\u2019ve got three years to pay",
+        "But Satan is waiting his turn."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The scientists say it will all wash away",
+        "But we don\u2019t believe anymore",
+        "Cause we\u2019ve got our recruits and our green mohair suits",
+        "So please show your I.D. at the door."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "This old earthquake\u2019s gonna leave me in the poorhouse",
+        "It feels like this whole town\u2019s insane",
+        "On the thirty first floor a gold plated door",
+        "Won\u2019t keep out the Lord\u2019s burning rain"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A friend came around, tried to clean up this town",
+        "His ideas made some people mad",
+        "But he trusted his crowd, so he spoke right out loud",
+        "And they lost the best friend they had."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

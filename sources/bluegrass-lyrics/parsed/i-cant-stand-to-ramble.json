@@ -1,0 +1,49 @@
+{
+  "slug": "i-cant-stand-to-ramble",
+  "title": "I Can\u2019t Stand To Ramble",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-cant-stand-to-ramble/",
+  "raw_lyrics": "I used to get so restless when I stayed at home\nCouldn\u2019t stand the sight of me alone\nAnd to stay the same was moving backwards more than standing still\nTo ramble \u2019round was my greatest thrill.\n\nI can\u2019t stand to ramble no more\nI\u2019d rather count the flowers growin\u2019 at my door\nI\u2019d rather sit and think of places I have been before\nI can\u2019t stand to ramble no more.\n\nI used to have this driving desire to be out on the road\nNow it\u2019s just another weary load\nAnd the wanderlust that used to burn is faded to a glow\nIn a longing for the sweet things that I know.\n\nThis life\u2019s got me goin\u2019 places I have been before\nI hear the wolves howlin\u2019 at my door\nI\u2019d like to settle down with the best man that I know\nAnd make some sweet old memories of our own.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I used to get so restless when I stayed at home",
+        "Couldn\u2019t stand the sight of me alone",
+        "And to stay the same was moving backwards more than standing still",
+        "To ramble \u2019round was my greatest thrill."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can\u2019t stand to ramble no more",
+        "I\u2019d rather count the flowers growin\u2019 at my door",
+        "I\u2019d rather sit and think of places I have been before",
+        "I can\u2019t stand to ramble no more."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I used to have this driving desire to be out on the road",
+        "Now it\u2019s just another weary load",
+        "And the wanderlust that used to burn is faded to a glow",
+        "In a longing for the sweet things that I know."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This life\u2019s got me goin\u2019 places I have been before",
+        "I hear the wolves howlin\u2019 at my door",
+        "I\u2019d like to settle down with the best man that I know",
+        "And make some sweet old memories of our own."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

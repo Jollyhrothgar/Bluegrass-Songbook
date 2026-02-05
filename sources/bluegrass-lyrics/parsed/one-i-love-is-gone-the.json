@@ -1,0 +1,29 @@
+{
+  "slug": "one-i-love-is-gone-the",
+  "title": "One I Love Is Gone, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/one-i-love-is-gone-the/",
+  "raw_lyrics": "I don\u2019t know I don\u2019t know where I\u2019ll go or what I\u2019ll do\nIt makes no difference what I\u2019ll do without you\nOh I love you my darling but I\u2019ll try and let you be\nGoodbye, it\u2019s the last you\u2019ll hear of me\n\nWell I found a bluebird high on a mountain side\nAnd the bluebird would sing it\u2019s little song\nSo I\u2019ll sigh, I\u2019ll cry, I\u2019ll even want to die\nFor the one I love is gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t know I don\u2019t know where I\u2019ll go or what I\u2019ll do",
+        "It makes no difference what I\u2019ll do without you",
+        "Oh I love you my darling but I\u2019ll try and let you be",
+        "Goodbye, it\u2019s the last you\u2019ll hear of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Well I found a bluebird high on a mountain side",
+        "And the bluebird would sing it\u2019s little song",
+        "So I\u2019ll sigh, I\u2019ll cry, I\u2019ll even want to die",
+        "For the one I love is gone"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

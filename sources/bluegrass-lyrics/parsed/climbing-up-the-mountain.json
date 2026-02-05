@@ -1,0 +1,49 @@
+{
+  "slug": "climbing-up-the-mountain",
+  "title": "Climbing Up The Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/climbing-up-the-mountain/",
+  "raw_lyrics": "I\u2019m climbing up the mountain and I\u2019m going home\nClimbing up the mountain going stone by stone\nClimbing up the mountain when my work is done\nClimbing up the mountain to the sky\n\nMoses freed his people from the pharaoh\u2019s hand\nForty years they wandered through the desert sand\nLed them out of Egypt to the promised land\nAnd then he climbed on up to the mountain to the sky\n\nMartin helped his people in a powerful fight\nLed them in the struggle for the civil rights\nBirmingham to Selma leading black and white\nAnd then he climbed on up to the mountain to the sky\n\nEach of us is given heaven\u2019s work to do\nDoesn\u2019t take more courage than is granted you\nEye upon the prize and you can see it through\nAnd then you\u2019ll climb up on the mountain too",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m climbing up the mountain and I\u2019m going home",
+        "Climbing up the mountain going stone by stone",
+        "Climbing up the mountain when my work is done",
+        "Climbing up the mountain to the sky"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Moses freed his people from the pharaoh\u2019s hand",
+        "Forty years they wandered through the desert sand",
+        "Led them out of Egypt to the promised land",
+        "And then he climbed on up to the mountain to the sky"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Martin helped his people in a powerful fight",
+        "Led them in the struggle for the civil rights",
+        "Birmingham to Selma leading black and white",
+        "And then he climbed on up to the mountain to the sky"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each of us is given heaven\u2019s work to do",
+        "Doesn\u2019t take more courage than is granted you",
+        "Eye upon the prize and you can see it through",
+        "And then you\u2019ll climb up on the mountain too"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "my-sweet-blue-eyed-darling",
+  "title": "My Sweet Blue Eyed Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-sweet-blue-eyed-darling/",
+  "raw_lyrics": "You\u2019re my sweet blue-eyed darling\nAnd my love belongs to you\nAll I ask (all I ask) of you my darling (my darling)\nIs love me good (is love me good) and be true\n\nDays come and go and I still love you\nAnd I see your smiling face\nJust tell me love, that you need me\nAnd no one\u2019s gonna take my place\n\nAnd today I need an answer\nAnd I want to hear you say\nYou don\u2019t belong to another\nAnd in my arms you\u2019re gonna to stay",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019re my sweet blue-eyed darling",
+        "And my love belongs to you",
+        "All I ask (all I ask) of you my darling (my darling)",
+        "Is love me good (is love me good) and be true"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Days come and go and I still love you",
+        "And I see your smiling face",
+        "Just tell me love, that you need me",
+        "And no one\u2019s gonna take my place"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And today I need an answer",
+        "And I want to hear you say",
+        "You don\u2019t belong to another",
+        "And in my arms you\u2019re gonna to stay"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

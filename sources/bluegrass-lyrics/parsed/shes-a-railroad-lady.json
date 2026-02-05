@@ -1,0 +1,69 @@
+{
+  "slug": "shes-a-railroad-lady",
+  "title": "She\u2019s A Railroad Lady",
+  "source_url": "https://www.bluegrasslyrics.com/song/shes-a-railroad-lady/",
+  "raw_lyrics": "She\u2019s a railroad lady, just a little bit shady\nSpending her days on the train\nShe\u2019s a semi good looker, but the fast rails they took her\nNow she\u2019s trying, just trying to get home again.\n\nSouth Station in Boston to the stockyards in Austin\nFrom the Florida sunshine to the New Orleans rain\nNow that the rail packs have taken the best tracks\nShe\u2019s trying, just trying to get home again.\n\nShe\u2019s a railroad lady, just a little bit shady\nSpendin\u2019 her days on the train\nOnce a pullman car traveller, now the switchmen won\u2019t have her\nShe\u2019s trying, just trying to get home again.\n\nOnce a high-ballin\u2019 loner who thought he could own her\nHe bought her a fur coat and big diamond ring\nBut she hocked \u2019em for hard cash, left town on the Wabash\nNever thinkin\u2019, never thinkin\u2019 of home way back then\n\nNow the rails are all rusty, and the dining car dusty\nThe gold plated watches have taken their toll\nThe railroad is dying and the lady is crying\nOn a bus to Kentuckyand home, that\u2019s her goal\n\nShe\u2019s a railroad lady, just a little bit shady\nSpendin\u2019 her days on the train\nShe\u2019s a semi good looker, but the fast rails they took her\nNow she\u2019s tryin\u2019, just tryin\u2019 to get home again.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s a railroad lady, just a little bit shady",
+        "Spending her days on the train",
+        "She\u2019s a semi good looker, but the fast rails they took her",
+        "Now she\u2019s trying, just trying to get home again."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "South Station in Boston to the stockyards in Austin",
+        "From the Florida sunshine to the New Orleans rain",
+        "Now that the rail packs have taken the best tracks",
+        "She\u2019s trying, just trying to get home again."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She\u2019s a railroad lady, just a little bit shady",
+        "Spendin\u2019 her days on the train",
+        "Once a pullman car traveller, now the switchmen won\u2019t have her",
+        "She\u2019s trying, just trying to get home again."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Once a high-ballin\u2019 loner who thought he could own her",
+        "He bought her a fur coat and big diamond ring",
+        "But she hocked \u2019em for hard cash, left town on the Wabash",
+        "Never thinkin\u2019, never thinkin\u2019 of home way back then"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now the rails are all rusty, and the dining car dusty",
+        "The gold plated watches have taken their toll",
+        "The railroad is dying and the lady is crying",
+        "On a bus to Kentuckyand home, that\u2019s her goal"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She\u2019s a railroad lady, just a little bit shady",
+        "Spendin\u2019 her days on the train",
+        "She\u2019s a semi good looker, but the fast rails they took her",
+        "Now she\u2019s tryin\u2019, just tryin\u2019 to get home again."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

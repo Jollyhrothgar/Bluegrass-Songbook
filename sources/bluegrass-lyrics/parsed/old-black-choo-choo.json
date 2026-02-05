@@ -1,0 +1,89 @@
+{
+  "slug": "old-black-choo-choo",
+  "title": "Old Black Choo Choo",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-black-choo-choo/",
+  "raw_lyrics": "I\u2019m just an old black choo-choo\nOn a rusty railroad track\nThey put me in the choo-choo graveyard\nAnd they\u2019re never gonna bring me back\n\nThey\u2019re pulling my cars with a diesel\nAnd the diesel sure looks proud\nBut he\u2019ll never make the sound of a choo-choo\nWhen he blows his whistle loud\n\nThere\u2019s many-many little children\nCan never thrill to my choo-choo sound\nIf they don\u2019t put me back upon the railroad\nI\u2019ll never keep on chuggin\u2019 around\n\nSo me fa fa fa so la mi so so fa\nSo me fa fa fa so la mi so\nSo me fa fa fa so la la\nSo me fa fa fa so la\n\nMy coat was black and shiny\nOn the day of my trial run\nI\u2019ll never forget how they eyed me\nAs I glistened in the sun\n\nI\u2019ll be the diesel\u2019s helper\nIf they\u2019ll only set me free\nI\u2019ll blow my whistle at the crossing\nMake the diesel proud of me\n\nWell, the black smoke rose in the distance\nAs the diesel roared\u00a0 on by\nBut the coalburner kept on a-chuggin\u2019\nAs he went on down the line\n\nThere\u2019s a new day coming tomorrow\nWhen you won\u2019t hear the whistle scream\nYou\u2019ll just hear the roar of the diesel\nLike the foghorn out at sea",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m just an old black choo-choo",
+        "On a rusty railroad track",
+        "They put me in the choo-choo graveyard",
+        "And they\u2019re never gonna bring me back"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They\u2019re pulling my cars with a diesel",
+        "And the diesel sure looks proud",
+        "But he\u2019ll never make the sound of a choo-choo",
+        "When he blows his whistle loud"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s many-many little children",
+        "Can never thrill to my choo-choo sound",
+        "If they don\u2019t put me back upon the railroad",
+        "I\u2019ll never keep on chuggin\u2019 around"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So me fa fa fa so la mi so so fa",
+        "So me fa fa fa so la mi so",
+        "So me fa fa fa so la la",
+        "So me fa fa fa so la"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My coat was black and shiny",
+        "On the day of my trial run",
+        "I\u2019ll never forget how they eyed me",
+        "As I glistened in the sun"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll be the diesel\u2019s helper",
+        "If they\u2019ll only set me free",
+        "I\u2019ll blow my whistle at the crossing",
+        "Make the diesel proud of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, the black smoke rose in the distance",
+        "As the diesel roared\u00a0 on by",
+        "But the coalburner kept on a-chuggin\u2019",
+        "As he went on down the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a new day coming tomorrow",
+        "When you won\u2019t hear the whistle scream",
+        "You\u2019ll just hear the roar of the diesel",
+        "Like the foghorn out at sea"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "how-will-i-explain-about-you",
+  "title": "How Will I Explain About You",
+  "source_url": "https://www.bluegrasslyrics.com/song/how-will-i-explain-about-you/",
+  "raw_lyrics": "You left me, my darling to travel alone\nMy heart is so lonely and blue\nWhen friends ask about you why you\u2019re not around\nHow will I explain about you\n\nHow will I explain about you\nThey know I\u2019ve been faithful and true\nSo when they start asking why you\u2019re not around\nHow will I explain about you\n\nThey saw us together for such a long time\nThey knew that I loved you so true\nBut now that you\u2019ve gone and I\u2019m left all alone\nHow will I explain about you\n\nHow will I explain about you\nI can\u2019t let them know that we\u2019re through\nThey wouldn\u2019t believe it could ever be true\nHow will I explain about you\n\nHow will I explain about you\nI\u2019m leaving it all up to you\nAnd if you insist that our pathway must part\nHow will I explain about you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You left me, my darling to travel alone",
+        "My heart is so lonely and blue",
+        "When friends ask about you why you\u2019re not around",
+        "How will I explain about you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "How will I explain about you",
+        "They know I\u2019ve been faithful and true",
+        "So when they start asking why you\u2019re not around",
+        "How will I explain about you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They saw us together for such a long time",
+        "They knew that I loved you so true",
+        "But now that you\u2019ve gone and I\u2019m left all alone",
+        "How will I explain about you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "How will I explain about you",
+        "I can\u2019t let them know that we\u2019re through",
+        "They wouldn\u2019t believe it could ever be true",
+        "How will I explain about you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "How will I explain about you",
+        "I\u2019m leaving it all up to you",
+        "And if you insist that our pathway must part",
+        "How will I explain about you"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "my-brown-eyed-darlin",
+  "title": "My Brown Eyed Darlin\u2019",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-brown-eyed-darlin/",
+  "raw_lyrics": "I\u2019ll never forget the mornin\u2019 you left me\nI tried to smile but instead I cried\nI couldn\u2019t hold my tears no longer\nThe moment you told me good-bye\n\nMy brown eyed darlin\u2019 you know I love you\nI\u2019ll always be faithful and true\nThough tonight you\u2019re miles away dear\nI want you back dear I\u2019ll be true\n\nMy darlin\u2019 I hope you\u2019d trust me\n\u2018Cause I\u2019ll be waiting just for you\nNight after night upon my bed dear\nI try to sleep but I can\u2019t for you\n\nI know I can depend on you dear\nI hope that soon you\u2019ll come back home\nI\u2019m hopin\u2019 and prayin\u2019 for you my darlin\u2019\nAnd the day I\u2019ll call you my own",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll never forget the mornin\u2019 you left me",
+        "I tried to smile but instead I cried",
+        "I couldn\u2019t hold my tears no longer",
+        "The moment you told me good-bye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My brown eyed darlin\u2019 you know I love you",
+        "I\u2019ll always be faithful and true",
+        "Though tonight you\u2019re miles away dear",
+        "I want you back dear I\u2019ll be true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My darlin\u2019 I hope you\u2019d trust me",
+        "\u2018Cause I\u2019ll be waiting just for you",
+        "Night after night upon my bed dear",
+        "I try to sleep but I can\u2019t for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know I can depend on you dear",
+        "I hope that soon you\u2019ll come back home",
+        "I\u2019m hopin\u2019 and prayin\u2019 for you my darlin\u2019",
+        "And the day I\u2019ll call you my own"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

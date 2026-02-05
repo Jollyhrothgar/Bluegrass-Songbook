@@ -1,0 +1,39 @@
+{
+  "slug": "love-me-one-more-time",
+  "title": "Love Me One More Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/love-me-one-more-time/",
+  "raw_lyrics": "That night we parted long ago\nI vowed my love I\u2019d never show\nSweetheart I find that I can\u2019t hide\nMy love beneath this foolish pride\n\nIf I could hold you one more time\nAnd kiss the lips that once were mine\nIt would ease this aching hearrt of mine\nIf you would say you love me one more time\n\nOh won\u2019t you take me back once more\nGive me the love I\u2019m longing for\nIt would ease this aching heart of mine\nIf you would say you love me one more time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "That night we parted long ago",
+        "I vowed my love I\u2019d never show",
+        "Sweetheart I find that I can\u2019t hide",
+        "My love beneath this foolish pride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I could hold you one more time",
+        "And kiss the lips that once were mine",
+        "It would ease this aching hearrt of mine",
+        "If you would say you love me one more time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh won\u2019t you take me back once more",
+        "Give me the love I\u2019m longing for",
+        "It would ease this aching heart of mine",
+        "If you would say you love me one more time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

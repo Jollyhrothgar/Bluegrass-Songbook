@@ -1,0 +1,49 @@
+{
+  "slug": "lonely-tombs",
+  "title": "Lonely Tombs",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonely-tombs/",
+  "raw_lyrics": "I was strolling one day in a lonely graveyard\nWhen a voice from the tomb seemed to say\nI once lived as you lived walked and talked as you talk\nBut from earth I was soon called away\n\nOh those tombs (oh those tombs) lonely tombs (lonely tombs)\nSeemed to say in a low gentle tone\nOh how sweet (oh how sweet) is the rest (is the rest)\nIn our beautiful Heavenly home\n\nEvery voice from the tomb seemed to whisper and say\nLiving man you must soon follow me\nAnd I thought as I looked on those cold marble slabs\nWhat a dark lonely place that must be\n\nThen I came to the place where my mother was laid\nAnd in silence I stood by her tomb\nAnd her voice seemed to say in a low gentle tone\nI am safe with my Savior at home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was strolling one day in a lonely graveyard",
+        "When a voice from the tomb seemed to say",
+        "I once lived as you lived walked and talked as you talk",
+        "But from earth I was soon called away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh those tombs (oh those tombs) lonely tombs (lonely tombs)",
+        "Seemed to say in a low gentle tone",
+        "Oh how sweet (oh how sweet) is the rest (is the rest)",
+        "In our beautiful Heavenly home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every voice from the tomb seemed to whisper and say",
+        "Living man you must soon follow me",
+        "And I thought as I looked on those cold marble slabs",
+        "What a dark lonely place that must be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then I came to the place where my mother was laid",
+        "And in silence I stood by her tomb",
+        "And her voice seemed to say in a low gentle tone",
+        "I am safe with my Savior at home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

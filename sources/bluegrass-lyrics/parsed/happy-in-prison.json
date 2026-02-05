@@ -1,0 +1,49 @@
+{
+  "slug": "happy-in-prison",
+  "title": "Happy In Prison",
+  "source_url": "https://www.bluegrasslyrics.com/song/happy-in-prison/",
+  "raw_lyrics": "I am happy in a prison\nYes, I\u2019m happy anywhere\nIn my soul my savior\u2019s risen\nOf 10,000 he is fair\n\nGlory, glory, hallelujah\nSinners lay your burdens down\nGlory, glory, hallelujah\nFor a cross receive a crown\n\nWhen the food is low and failing\nAnd the children bare for clothes\nI look up to father\u2019s healing\nFor I know my savior knows\n\nAny cost, a fire is burning\nAnd its coming draweth nigh\nBut I\u2019m happy, always happy\nThough in prison I must die",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I am happy in a prison",
+        "Yes, I\u2019m happy anywhere",
+        "In my soul my savior\u2019s risen",
+        "Of 10,000 he is fair"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Glory, glory, hallelujah",
+        "Sinners lay your burdens down",
+        "Glory, glory, hallelujah",
+        "For a cross receive a crown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the food is low and failing",
+        "And the children bare for clothes",
+        "I look up to father\u2019s healing",
+        "For I know my savior knows"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Any cost, a fire is burning",
+        "And its coming draweth nigh",
+        "But I\u2019m happy, always happy",
+        "Though in prison I must die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

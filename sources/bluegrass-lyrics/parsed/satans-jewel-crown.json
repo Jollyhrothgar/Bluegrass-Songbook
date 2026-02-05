@@ -1,0 +1,39 @@
+{
+  "slug": "satans-jewel-crown",
+  "title": "Satan\u2019s Jewel Crown",
+  "source_url": "https://www.bluegrasslyrics.com/song/satans-jewel-crown/",
+  "raw_lyrics": "If I could be king or a ruler of nations\nWith diamonds and jewels profound\nI\u2019d rather know that I had salvation\nThen to know my reward was Satan\u2019s jewel crown\n\nSatan\u2019s jewel crown I\u2019ve worn it so long\nBut God for my soul has reached down\nHis love set me free He made me his own\nAnd helped me cast off Satan\u2019s jewel crown\n\nThis life that I\u2019ve lived so sinful and evil\nDrinking and running around\nAll the things that I do, for the love of the devil\nI know my reward is Satan\u2019s jewel crown",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If I could be king or a ruler of nations",
+        "With diamonds and jewels profound",
+        "I\u2019d rather know that I had salvation",
+        "Then to know my reward was Satan\u2019s jewel crown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Satan\u2019s jewel crown I\u2019ve worn it so long",
+        "But God for my soul has reached down",
+        "His love set me free He made me his own",
+        "And helped me cast off Satan\u2019s jewel crown"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This life that I\u2019ve lived so sinful and evil",
+        "Drinking and running around",
+        "All the things that I do, for the love of the devil",
+        "I know my reward is Satan\u2019s jewel crown"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

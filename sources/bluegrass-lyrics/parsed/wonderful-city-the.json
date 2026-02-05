@@ -1,0 +1,60 @@
+{
+  "slug": "wonderful-city-the",
+  "title": "Wonderful City, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/wonderful-city-the/",
+  "raw_lyrics": "I\u2019m waiting watching and longing\nThat beautiful sight to behold\nWhen I shall awake some bright morning\nIn that city with streets of pure gold\n\nMy savior has gone to prepare it\nFor all who accept his grace\nAnd that\u2019s why I know I\u2019ll be welcome\nTo a home in that wonderful place\n\nWhen I reach my home in that city\nShall I find you waiting up there\nWith the saints who have gone on before us\nTo that beautiful home so fair\nMy whole heart is set upon heaven\nWhere my savior\u2019s face I shall see\nAnd live in the light of his glory\nThroughout all eternity\n\nYodel\n\nHe bids us to work in His vineyard\nTo toil for Him early and late\nWhat a glorious reward for our labor\nTo enter that beautiful gate",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m waiting watching and longing",
+        "That beautiful sight to behold",
+        "When I shall awake some bright morning",
+        "In that city with streets of pure gold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My savior has gone to prepare it",
+        "For all who accept his grace",
+        "And that\u2019s why I know I\u2019ll be welcome",
+        "To a home in that wonderful place"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When I reach my home in that city",
+        "Shall I find you waiting up there",
+        "With the saints who have gone on before us",
+        "To that beautiful home so fair",
+        "My whole heart is set upon heaven",
+        "Where my savior\u2019s face I shall see",
+        "And live in the light of his glory",
+        "Throughout all eternity"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yodel"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He bids us to work in His vineyard",
+        "To toil for Him early and late",
+        "What a glorious reward for our labor",
+        "To enter that beautiful gate"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

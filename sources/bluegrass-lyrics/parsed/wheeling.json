@@ -1,0 +1,81 @@
+{
+  "slug": "wheeling",
+  "title": "Wheeling",
+  "source_url": "https://www.bluegrasslyrics.com/song/wheeling/",
+  "raw_lyrics": "All alone down on my luck\nI was down to my last buck\nI\u2019d do anything for money\nShort of stealin\u2019\n\nSo I get up from my bed\nShake the memories from my head\nAnd look out through the window pane\nOn Wheeling\n\nIn this same old room last night\nTwo loving arms held me so tight\nAnd the words she said\nI found myself believing\n\nAh but this morning she\u2019s gone\nLeft me to face the lonely dawn\nGonna bid farewell to that lyin\u2019 gal\nIn Wheeling\n\nThat old memory sure looks cold\nThis old town is covered with snow\nAnd the way I feel Lord\nLife ain\u2019t worth living\n\nI\u2019m gonna cross that big old bridge\nGonna climb that Ohio ridge\nGonna turn my back on this lonesome town\nCalled Wheeling\n\nWheeling Wheeling\nYour\u2019e a lonesome town Wheeling\nBut I\u2019m leaving just like I come\nBroke and hungry and on the bum\nBut I won\u2019t forget the girl I met\nIn Wheeling",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All alone down on my luck",
+        "I was down to my last buck",
+        "I\u2019d do anything for money",
+        "Short of stealin\u2019"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So I get up from my bed",
+        "Shake the memories from my head",
+        "And look out through the window pane",
+        "On Wheeling"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In this same old room last night",
+        "Two loving arms held me so tight",
+        "And the words she said",
+        "I found myself believing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ah but this morning she\u2019s gone",
+        "Left me to face the lonely dawn",
+        "Gonna bid farewell to that lyin\u2019 gal",
+        "In Wheeling"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That old memory sure looks cold",
+        "This old town is covered with snow",
+        "And the way I feel Lord",
+        "Life ain\u2019t worth living"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m gonna cross that big old bridge",
+        "Gonna climb that Ohio ridge",
+        "Gonna turn my back on this lonesome town",
+        "Called Wheeling"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wheeling Wheeling",
+        "Your\u2019e a lonesome town Wheeling",
+        "But I\u2019m leaving just like I come",
+        "Broke and hungry and on the bum",
+        "But I won\u2019t forget the girl I met",
+        "In Wheeling"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "farewell-nellie",
+  "title": "Farewell, Nellie",
+  "source_url": "https://www.bluegrasslyrics.com/song/farewell-nellie/",
+  "raw_lyrics": "Farewell, Nellie, farewell, darling\nSoon with strangers I must roam\nDon\u2019t forget the one that loves you\nFar away from friends and home\n\nFly across the ocean, birdie\nFly across the deep, blue sea\nTake this message to my darling\nShe\u2019ll be glad to hear from me\n\nYou have told me that you love me\nBut you have unproved true\nSo I\u2019ll go and court some other\nThat will love more than you\n\nWhen the whippoorwills are singing\nAcross the dark and lonely sea\nWhen you\u2019re thinking of 10,000\nWill you sometimes think of me\n\nHow my heart is filled with sorrow\nAnd my eyes are filled with tears\nSo I\u2019ll not forget you, darling\nIf I live 10,000 years",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Farewell, Nellie, farewell, darling",
+        "Soon with strangers I must roam",
+        "Don\u2019t forget the one that loves you",
+        "Far away from friends and home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Fly across the ocean, birdie",
+        "Fly across the deep, blue sea",
+        "Take this message to my darling",
+        "She\u2019ll be glad to hear from me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You have told me that you love me",
+        "But you have unproved true",
+        "So I\u2019ll go and court some other",
+        "That will love more than you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the whippoorwills are singing",
+        "Across the dark and lonely sea",
+        "When you\u2019re thinking of 10,000",
+        "Will you sometimes think of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How my heart is filled with sorrow",
+        "And my eyes are filled with tears",
+        "So I\u2019ll not forget you, darling",
+        "If I live 10,000 years"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

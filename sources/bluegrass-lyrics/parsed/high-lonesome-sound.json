@@ -1,0 +1,46 @@
+{
+  "slug": "high-lonesome-sound",
+  "title": "High Lonesome Sound",
+  "source_url": "https://www.bluegrasslyrics.com/song/high-lonesome-sound/",
+  "raw_lyrics": "When ever my soul is lonely\nWhen ever I\u2019m feeling blue\nI start thinkin\u2019 \u2019bout my blue-eyed darlin\u2019\nMy heart starts pinin\u2019 for you\n\nI wanna hear that high lonesome sound\n\u2018Cause my sweet baby ain\u2019t around\nWhen my life\u2019s got me down\nI wanna hear that high lonesome sound\n\nWhen I\u2019m lost in this ocean of darkness\nNot knowing which way I should turn\nAnd my eyes are filled with the sadness\nOf knowing you\u2019ll never return\n\nVince Gill; High Lonesome Sound",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When ever my soul is lonely",
+        "When ever I\u2019m feeling blue",
+        "I start thinkin\u2019 \u2019bout my blue-eyed darlin\u2019",
+        "My heart starts pinin\u2019 for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wanna hear that high lonesome sound",
+        "\u2018Cause my sweet baby ain\u2019t around",
+        "When my life\u2019s got me down",
+        "I wanna hear that high lonesome sound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I\u2019m lost in this ocean of darkness",
+        "Not knowing which way I should turn",
+        "And my eyes are filled with the sadness",
+        "Of knowing you\u2019ll never return"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Vince Gill; High Lonesome Sound"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

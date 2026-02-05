@@ -1,0 +1,49 @@
+{
+  "slug": "before-i-met-you",
+  "title": "Before I Met You",
+  "source_url": "https://www.bluegrasslyrics.com/song/before-i-met-you/",
+  "raw_lyrics": "I thought I\u2019d seen pretty girls in my time\nThat was before I met you\nI never saw one that I wanted for mine\nThat was before I met you\n\nI thought I was swinging the world by its tail\nI thought I could never be blue\nI thought I\u2019d been kissed and I thought I\u2019d been loved\nThat was before I met you\n\nI wanted to ramble and always be free\nThat was before I met you\nI never saw one that could ever hold me\nThat was before I met you\n\nThey say a man must reap what he\u2019s sown\nDarlin\u2019, I hope that\u2019s not true\nFor once I made plans of living alone\nBut that was before I met you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I thought I\u2019d seen pretty girls in my time",
+        "That was before I met you",
+        "I never saw one that I wanted for mine",
+        "That was before I met you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I thought I was swinging the world by its tail",
+        "I thought I could never be blue",
+        "I thought I\u2019d been kissed and I thought I\u2019d been loved",
+        "That was before I met you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wanted to ramble and always be free",
+        "That was before I met you",
+        "I never saw one that could ever hold me",
+        "That was before I met you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They say a man must reap what he\u2019s sown",
+        "Darlin\u2019, I hope that\u2019s not true",
+        "For once I made plans of living alone",
+        "But that was before I met you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

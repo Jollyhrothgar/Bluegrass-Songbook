@@ -1,0 +1,54 @@
+{
+  "slug": "im-rolling-on",
+  "title": "I\u2019m Rolling On",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-rolling-on/",
+  "raw_lyrics": "I wish I was in the Southland sitting in a chair\nWith one arm around my old guitar\nAnd the other one around my dear\n\nI\u2019m rolling on (I\u2019m rolling on)\nI\u2019m rolling on (I\u2019m rolling on)\nI\u2019m rolling on through life just rolling on\n\nSitting in the moonlight blue as blue can be\nStrumming on my old guitar\nTo give my poor heart ease\n\nWhether I\u2019m in the country whether I\u2019m in the town\nMy old guitar is near me\nWhether I\u2019m up or down\n\nMaybe I will marry if I can find a girl\nBut I\u2019ll always love my guitar\nAs much as I love her",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I was in the Southland sitting in a chair",
+        "With one arm around my old guitar",
+        "And the other one around my dear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m rolling on (I\u2019m rolling on)",
+        "I\u2019m rolling on (I\u2019m rolling on)",
+        "I\u2019m rolling on through life just rolling on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sitting in the moonlight blue as blue can be",
+        "Strumming on my old guitar",
+        "To give my poor heart ease"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Whether I\u2019m in the country whether I\u2019m in the town",
+        "My old guitar is near me",
+        "Whether I\u2019m up or down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Maybe I will marry if I can find a girl",
+        "But I\u2019ll always love my guitar",
+        "As much as I love her"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

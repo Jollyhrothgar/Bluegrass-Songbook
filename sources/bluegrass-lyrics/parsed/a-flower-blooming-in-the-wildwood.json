@@ -1,0 +1,49 @@
+{
+  "slug": "a-flower-blooming-in-the-wildwood",
+  "title": "A Flower Blooming in the Wildwood",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-flower-blooming-in-the-wildwood/",
+  "raw_lyrics": "On one evening long ago as the sun was sinking low\nMy true lover went to sail up in the sea\nIt was in the month of June when the roses were in bloom\nWhen he tucked me in his arms and said to me\n\nYou\u2019re a flower that is blooming in the wildwood\nA flower that is blooming there for me\nSweeter than the morning dew and I\u2019ll soon return to you\nYou\u2019re a flower that is blooming  there for me\n\nThen a letter came to me from the captain on the sea\nThat told me my darling was dead\nOh the shock and great surprise made the teardrops dim my eye\nWhen I thought about the last words that he said\n\nNow he can\u2019t return to me he got drowned in the sea\nAnd has done passed over life\u2019s weary way\nWhen it\u2019s in the month of June and the roses are in bloom\nIt seems that I can hear my lover say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On one evening long ago as the sun was sinking low",
+        "My true lover went to sail up in the sea",
+        "It was in the month of June when the roses were in bloom",
+        "When he tucked me in his arms and said to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019re a flower that is blooming in the wildwood",
+        "A flower that is blooming there for me",
+        "Sweeter than the morning dew and I\u2019ll soon return to you",
+        "You\u2019re a flower that is blooming  there for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then a letter came to me from the captain on the sea",
+        "That told me my darling was dead",
+        "Oh the shock and great surprise made the teardrops dim my eye",
+        "When I thought about the last words that he said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now he can\u2019t return to me he got drowned in the sea",
+        "And has done passed over life\u2019s weary way",
+        "When it\u2019s in the month of June and the roses are in bloom",
+        "It seems that I can hear my lover say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "little-satchel",
+  "title": "Little Satchel",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-satchel/",
+  "raw_lyrics": "Under my bed you can set your little satchel\nAnd on my head come lay your little hand\nIf you will be my own true lover\nAnd I will be your loving little man\n\nRun to the house and ask your papa\nA bride of mine you\u2019ll ever be\nIf he says no come back and tell me\nAnd I\u2019ll wait till you get free\n\nWhen you get free well then we\u2019ll get married\nLook how happy we will be\nOh we\u2019ll go to California\nAny place you want to go\n\noh we\u2019ll go to Louisiana\nSettle down and live at home\n\nI wish I was a little angel\nAnd over these prison walls I would fly\nFly on back to the arms of my darling\nStay at home and there I would die\n\nAs you can see I\u2019m no little angel\nNeither have I wings to fly\nI\u2019ll go back all broken hearted\nWeep and moan until I die\n\nUnder my bed you can set your little satchel\nAnd on my head come lay your little hand\nIf you will be my own true lover\nAnd I will be your loving little man",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Under my bed you can set your little satchel",
+        "And on my head come lay your little hand",
+        "If you will be my own true lover",
+        "And I will be your loving little man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Run to the house and ask your papa",
+        "A bride of mine you\u2019ll ever be",
+        "If he says no come back and tell me",
+        "And I\u2019ll wait till you get free"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you get free well then we\u2019ll get married",
+        "Look how happy we will be",
+        "Oh we\u2019ll go to California",
+        "Any place you want to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "oh we\u2019ll go to Louisiana",
+        "Settle down and live at home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I was a little angel",
+        "And over these prison walls I would fly",
+        "Fly on back to the arms of my darling",
+        "Stay at home and there I would die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As you can see I\u2019m no little angel",
+        "Neither have I wings to fly",
+        "I\u2019ll go back all broken hearted",
+        "Weep and moan until I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Under my bed you can set your little satchel",
+        "And on my head come lay your little hand",
+        "If you will be my own true lover",
+        "And I will be your loving little man"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

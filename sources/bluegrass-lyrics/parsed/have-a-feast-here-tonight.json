@@ -1,0 +1,72 @@
+{
+  "slug": "have-a-feast-here-tonight",
+  "title": "Have A Feast Here Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/have-a-feast-here-tonight/",
+  "raw_lyrics": "There\u2019s a rabbit in the log and I ain\u2019t got my dog\nHow will I get him I know\nI\u2019ll get me a briar and twist it in his hair\nThat way I\u2019ll get him I know\n\nI know ( yes I know )\nI know ( I surely know )\nThat\u2019s how I\u2019ll get him I know\nI\u2019ll get me a briar and twist in his hair\nThat way I\u2019ll get him I know\n\nI\u2019ll build me a fire and I\u2019ll cook that old hare\nRoll him in the flames and make him brown\nHave a feast here tonight while the moon is shining bright\nAnd find me a place to lie down\n\nTo lie down ( to lie down )\nTo lay down ( to lay down )\nFind me a place to lie down\nHave a feast here tonight while the moon is shining bright\nAnd find me a place to lie down\n\nI\u2019m going down the track and my coat ripped up my back\nSoles on my shoes are nearly gone\nA little ways ahead there\u2019s an old farmer\u2019s shed\nThat\u2019s where I\u2019ll rest my weary bones\n\nWeary bones ( weary bones )\nLazy bones ( lazy bones )\nThat\u2019s where I\u2019ll rest my weary bones\nA little way\u2019s ahead there\u2019s an old farmer\u2019s shed\nThat\u2019s where I\u2019ll rest my weary bones",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a rabbit in the log and I ain\u2019t got my dog",
+        "How will I get him I know",
+        "I\u2019ll get me a briar and twist it in his hair",
+        "That way I\u2019ll get him I know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know ( yes I know )",
+        "I know ( I surely know )",
+        "That\u2019s how I\u2019ll get him I know",
+        "I\u2019ll get me a briar and twist in his hair",
+        "That way I\u2019ll get him I know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll build me a fire and I\u2019ll cook that old hare",
+        "Roll him in the flames and make him brown",
+        "Have a feast here tonight while the moon is shining bright",
+        "And find me a place to lie down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "To lie down ( to lie down )",
+        "To lay down ( to lay down )",
+        "Find me a place to lie down",
+        "Have a feast here tonight while the moon is shining bright",
+        "And find me a place to lie down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going down the track and my coat ripped up my back",
+        "Soles on my shoes are nearly gone",
+        "A little ways ahead there\u2019s an old farmer\u2019s shed",
+        "That\u2019s where I\u2019ll rest my weary bones"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Weary bones ( weary bones )",
+        "Lazy bones ( lazy bones )",
+        "That\u2019s where I\u2019ll rest my weary bones",
+        "A little way\u2019s ahead there\u2019s an old farmer\u2019s shed",
+        "That\u2019s where I\u2019ll rest my weary bones"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

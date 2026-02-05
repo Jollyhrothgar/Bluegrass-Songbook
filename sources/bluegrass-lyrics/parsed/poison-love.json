@@ -1,0 +1,39 @@
+{
+  "slug": "poison-love",
+  "title": "Poison Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/poison-love/",
+  "raw_lyrics": "For your poison love has stained the life blood in my heart and soul dear\nAnd I know my life will never be the same\nFor my pleading has all been in vain for you and you alone dear\nAnd you know that you are guilty of the same\n\nInto each life a love is born for one and one alone dear\nThe love I chose was surely not for me\nFor your poison love has stained the life blood in my heart and soul dear\nAnd I know our love was never meant to be\n\nBut still my heart cries out for you and you alone my darling\nIt makes me never ever let you go\nBut my pleading has all been in vain for you and you alone dear\nAnd my better judgment tells me to say no",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "For your poison love has stained the life blood in my heart and soul dear",
+        "And I know my life will never be the same",
+        "For my pleading has all been in vain for you and you alone dear",
+        "And you know that you are guilty of the same"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Into each life a love is born for one and one alone dear",
+        "The love I chose was surely not for me",
+        "For your poison love has stained the life blood in my heart and soul dear",
+        "And I know our love was never meant to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But still my heart cries out for you and you alone my darling",
+        "It makes me never ever let you go",
+        "But my pleading has all been in vain for you and you alone dear",
+        "And my better judgment tells me to say no"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

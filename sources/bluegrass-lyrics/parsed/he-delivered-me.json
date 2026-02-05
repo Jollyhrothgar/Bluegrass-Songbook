@@ -1,0 +1,51 @@
+{
+  "slug": "he-delivered-me",
+  "title": "He Delivered Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/he-delivered-me/",
+  "raw_lyrics": "When my sould was deep in sin had no peace no joy within\nmy Lord (my Lord) delivered (delivered) me (delivered me from bondage)\nHe brought me from the darkest place Set my feet on the rock to stay\nMy Lord (my Lord) delivered (delivered) me (he delivered me)\n\nMy Lord (my Lord) in Love (in love) delivered (delivered) me within\nMy soul he made the joybells ring he gave me wondrous victory.\nI shout (I shout) and sing (and sing) because (because) I\u2019m gladly free\nMy Lord (my Lord) delivered (delivered) me.\n\nPraise his name forever I\u2019ll sing\nblessings to me he will ever bring\nmy\u2026\u2026.\nHe will guide me along the way\nand protect me everyday\nmy \u2026\u2026..\n\nHe will take me to his name above where I\u2019ll live forever in his love\nmy\u2026..\nIn that blessed home with this soul I will sing while the ages roll\nmy\u2026\u2026",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When my sould was deep in sin had no peace no joy within",
+        "my Lord (my Lord) delivered (delivered) me (delivered me from bondage)",
+        "He brought me from the darkest place Set my feet on the rock to stay",
+        "My Lord (my Lord) delivered (delivered) me (he delivered me)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "My Lord (my Lord) in Love (in love) delivered (delivered) me within",
+        "My soul he made the joybells ring he gave me wondrous victory.",
+        "I shout (I shout) and sing (and sing) because (because) I\u2019m gladly free",
+        "My Lord (my Lord) delivered (delivered) me."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Praise his name forever I\u2019ll sing",
+        "blessings to me he will ever bring",
+        "my\u2026\u2026.",
+        "He will guide me along the way",
+        "and protect me everyday",
+        "my \u2026\u2026.."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He will take me to his name above where I\u2019ll live forever in his love",
+        "my\u2026..",
+        "In that blessed home with this soul I will sing while the ages roll",
+        "my\u2026\u2026"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

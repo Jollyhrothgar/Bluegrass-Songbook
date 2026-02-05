@@ -1,0 +1,63 @@
+{
+  "slug": "wait-a-minute",
+  "title": "Wait a Minute",
+  "source_url": "https://www.bluegrasslyrics.com/song/wait-a-minute/",
+  "raw_lyrics": "chorus:\nWait a minute did I hear you say you\u2019re going far away again\nTry to change it I can\u2019t take the lonely nights without your love\n\nOut doin\u2019 the road get the music done and move along\nWhat good does it do play your songs for her and hear her say\n\n(chorus)\n\nYou\u2019re rolling along, life\u2019s been good to you but even so\nShe comes to you late at night\u2019s the time you hear her say\n\n(chorus)\n\nI\u2019m waitin\u2019 for you thirty days and nights without a rest\nI gotta hold on twenty-five to go to hear you say hey\n\n(chorus)  repeat 3x",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "chorus:",
+        "Wait a minute did I hear you say you\u2019re going far away again",
+        "Try to change it I can\u2019t take the lonely nights without your love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Out doin\u2019 the road get the music done and move along",
+        "What good does it do play your songs for her and hear her say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "(chorus)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re rolling along, life\u2019s been good to you but even so",
+        "She comes to you late at night\u2019s the time you hear her say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "(chorus)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m waitin\u2019 for you thirty days and nights without a rest",
+        "I gotta hold on twenty-five to go to hear you say hey"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "(chorus)  repeat 3x"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

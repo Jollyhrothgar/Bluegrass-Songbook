@@ -1,0 +1,39 @@
+{
+  "slug": "where-will-i-shelter-my-sheep-tonight",
+  "title": "Where Will I Shelter My Sheep Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-will-i-shelter-my-sheep-tonight/",
+  "raw_lyrics": "Where will I shelter my sheep tonight\nWhere is that peaceful land\nWhere will I shelter my sheep tonight\nWhere the beasts won\u2019t steal my lambs\n\nWe\u2019ve travelled far shepherd dog and I\nWeary sin sick in sore\nWhere will I shelter my sheep tonight\nI\u2019ll shelter my sheep at God\u2019s door\n\nMy soul is weak and thirsty too\nAs I cross these burning sands\nWhere will I shelter my sheep tonight\nWhere is that peaceful land",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Where will I shelter my sheep tonight",
+        "Where is that peaceful land",
+        "Where will I shelter my sheep tonight",
+        "Where the beasts won\u2019t steal my lambs"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019ve travelled far shepherd dog and I",
+        "Weary sin sick in sore",
+        "Where will I shelter my sheep tonight",
+        "I\u2019ll shelter my sheep at God\u2019s door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My soul is weak and thirsty too",
+        "As I cross these burning sands",
+        "Where will I shelter my sheep tonight",
+        "Where is that peaceful land"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

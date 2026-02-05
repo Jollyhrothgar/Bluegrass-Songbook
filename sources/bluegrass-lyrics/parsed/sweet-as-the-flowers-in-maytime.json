@@ -1,0 +1,49 @@
+{
+  "slug": "sweet-as-the-flowers-in-maytime",
+  "title": "Sweet As The Flowers In Maytime",
+  "source_url": "https://www.bluegrasslyrics.com/song/sweet-as-the-flowers-in-maytime/",
+  "raw_lyrics": "Sweet as the flowers in May time\nSweet as the dew on the rose\nI would rather be somebody\u2019s darling\nAs a poor girl who nobody knows\n\nOh momma scolds me for burning\nWhat else has a poor girl to do\nOh this world would be sad without a lover\nAnd this world would be sad without you\n\nOh I wish I had someone to love me\nSomeone just to call me their own\nBe the rule over somebody\u2019s kitchen\nOr the queen over somebody\u2019s home\n\nOh what is the use of us parting\nWhere there\u2019s a will there\u2019s a way\nTomorrow the sun may be shinning\nAlthough it is cloudy today",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Sweet as the flowers in May time",
+        "Sweet as the dew on the rose",
+        "I would rather be somebody\u2019s darling",
+        "As a poor girl who nobody knows"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh momma scolds me for burning",
+        "What else has a poor girl to do",
+        "Oh this world would be sad without a lover",
+        "And this world would be sad without you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I wish I had someone to love me",
+        "Someone just to call me their own",
+        "Be the rule over somebody\u2019s kitchen",
+        "Or the queen over somebody\u2019s home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh what is the use of us parting",
+        "Where there\u2019s a will there\u2019s a way",
+        "Tomorrow the sun may be shinning",
+        "Although it is cloudy today"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

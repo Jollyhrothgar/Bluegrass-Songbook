@@ -1,0 +1,45 @@
+{
+  "slug": "get-on-up",
+  "title": "Get On Up",
+  "source_url": "https://www.bluegrasslyrics.com/song/get-on-up/",
+  "raw_lyrics": "Get on up some glad morning\nGet on up a new days dawning\nLive forever with Jesus by and by\nGet on up Heaven\u2019s waiting\nFriends and loved ones celebratin\u2019\nWhen I get up to my mansion in the sky\n\nThis old body\u2019s getting weary\nThis whole world\u2019s so dark and dreary\nI can\u2019t wait to see my new home up on high\nWhere I\u2019ll rest from all my labor\nPaul and Silas gonna be my neighbor\nWhen I get up to my mansion in the sky\n\nAnd if death should overtake me\nI know my Lord\u2019s gonna wake me\nGonna get up with a brand new body glorified\nWith troubles and trials far behind me\nGloryland that\u2019s where you\u2019ll find me\nWhen I get up to my mansion in the sky",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Get on up some glad morning",
+        "Get on up a new days dawning",
+        "Live forever with Jesus by and by",
+        "Get on up Heaven\u2019s waiting",
+        "Friends and loved ones celebratin\u2019",
+        "When I get up to my mansion in the sky"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This old body\u2019s getting weary",
+        "This whole world\u2019s so dark and dreary",
+        "I can\u2019t wait to see my new home up on high",
+        "Where I\u2019ll rest from all my labor",
+        "Paul and Silas gonna be my neighbor",
+        "When I get up to my mansion in the sky"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And if death should overtake me",
+        "I know my Lord\u2019s gonna wake me",
+        "Gonna get up with a brand new body glorified",
+        "With troubles and trials far behind me",
+        "Gloryland that\u2019s where you\u2019ll find me",
+        "When I get up to my mansion in the sky"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "wild-side-of-life",
+  "title": "Wild Side Of Life",
+  "source_url": "https://www.bluegrasslyrics.com/song/wild-side-of-life/",
+  "raw_lyrics": "You wouldn\u2019t read my letter if I wrote you\nYou asked me not to call you on the phone\nBut there\u2019s something I\u2019m wanting to tell you\nSo I put it in the words of this song\n\nI didn\u2019t know God made honky tonks angels\nI might have known you\u2019d never make a wife\nYou gave up the only one that ever loved you\nAnd went back to the wild side of life\n\nThe glamour of the gay night life has lured you\nTo the places where the wine and liquor flow\nWhere you wait to be anybody\u2019s baby\nAnd forget the truest love you will ever know",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You wouldn\u2019t read my letter if I wrote you",
+        "You asked me not to call you on the phone",
+        "But there\u2019s something I\u2019m wanting to tell you",
+        "So I put it in the words of this song"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I didn\u2019t know God made honky tonks angels",
+        "I might have known you\u2019d never make a wife",
+        "You gave up the only one that ever loved you",
+        "And went back to the wild side of life"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The glamour of the gay night life has lured you",
+        "To the places where the wine and liquor flow",
+        "Where you wait to be anybody\u2019s baby",
+        "And forget the truest love you will ever know"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

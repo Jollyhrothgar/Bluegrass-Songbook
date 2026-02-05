@@ -1,0 +1,49 @@
+{
+  "slug": "short-life-of-trouble",
+  "title": "Short Life Of Trouble",
+  "source_url": "https://www.bluegrasslyrics.com/song/short-life-of-trouble/",
+  "raw_lyrics": "Short life of trouble\nA few more words to part\nShort life of trouble dear girl\nFor a boy with a broken heart\n\nRemember what you promised\nNot more than a week ago\nYou promised that you\u2019d marry me\nStanding in your mama\u2019s door\n\nNow you\u2019ve broken you\u2019re promise\nGo marry whom you may\nFor this old world\u2019s so big and so wide\nI\u2019ll ramble back some day\n\nNow you\u2019ve gone and left me\nI don\u2019t know what I\u2019ll do\nI\u2019d give the world and half of my life\nJust to be married to you",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Short life of trouble",
+        "A few more words to part",
+        "Short life of trouble dear girl",
+        "For a boy with a broken heart"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Remember what you promised",
+        "Not more than a week ago",
+        "You promised that you\u2019d marry me",
+        "Standing in your mama\u2019s door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you\u2019ve broken you\u2019re promise",
+        "Go marry whom you may",
+        "For this old world\u2019s so big and so wide",
+        "I\u2019ll ramble back some day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you\u2019ve gone and left me",
+        "I don\u2019t know what I\u2019ll do",
+        "I\u2019d give the world and half of my life",
+        "Just to be married to you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

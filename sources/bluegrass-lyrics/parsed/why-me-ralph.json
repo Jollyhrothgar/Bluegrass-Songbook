@@ -1,0 +1,59 @@
+{
+  "slug": "why-me-ralph",
+  "title": "Why Me Ralph",
+  "source_url": "https://www.bluegrasslyrics.com/song/why-me-ralph/",
+  "raw_lyrics": "In the beautiful hills way back in Virginia\nBy the side of his home where he played as a lad\nIn a deep dark grave Carter lies sleeping\nThere lies the best friend that I ever had\n\nFor twenty one years he travelled this country\nEntertaining his friends wherever he roamed\nFor many thousands he made life brighter\nNow he is at rest near his old home\n\nHe wrote many songs about the Clinch Mountains\nOf mother and dad his friends and home\nThrough 43 states and many foreign countries\nWherever he travelled his name was known\n\nNow he\u2019s at rest in the family graveyard\nOn top of a hill where the wind blows o\u2019er\nhe\u2019s gone on now but he won\u2019t be forgotten\nThe songs he left will never grow old\n\nHe laid down his guitar but he\u2019ll always be remembered\nOn earth for the last time he sung white dove\nForever in heaven Carter will be singing\nSinging with the angels in heaven above",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the beautiful hills way back in Virginia",
+        "By the side of his home where he played as a lad",
+        "In a deep dark grave Carter lies sleeping",
+        "There lies the best friend that I ever had"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For twenty one years he travelled this country",
+        "Entertaining his friends wherever he roamed",
+        "For many thousands he made life brighter",
+        "Now he is at rest near his old home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He wrote many songs about the Clinch Mountains",
+        "Of mother and dad his friends and home",
+        "Through 43 states and many foreign countries",
+        "Wherever he travelled his name was known"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now he\u2019s at rest in the family graveyard",
+        "On top of a hill where the wind blows o\u2019er",
+        "he\u2019s gone on now but he won\u2019t be forgotten",
+        "The songs he left will never grow old"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He laid down his guitar but he\u2019ll always be remembered",
+        "On earth for the last time he sung white dove",
+        "Forever in heaven Carter will be singing",
+        "Singing with the angels in heaven above"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

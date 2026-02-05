@@ -1,0 +1,49 @@
+{
+  "slug": "back-to-the-cross",
+  "title": "Back To The Cross",
+  "source_url": "https://www.bluegrasslyrics.com/song/back-to-the-cross/",
+  "raw_lyrics": "I\u2019m out on the sea filled with sorrows\nTossed like a ship who ran ashore\nI\u2019m seeking the help of my saviour\nBy the way of the cross I must go\n\nBack to the cross and to Jesus\nBack to the cross I am called\nI\u2019ve drifted too far and I\u2019ve wandered\nFrom the saviour that once was my home\n\nThe sins of this world have overcome me\nHave pushed and left me to roam\nSo I\u2019m going to back to my saviour\nBack to the cross and home\n\nThe joy of these life are too fleeting\nAnd wrapped in troubles around\nI\u2019ve lost the church of the stranger\nI\u2019ve drifted too far from home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m out on the sea filled with sorrows",
+        "Tossed like a ship who ran ashore",
+        "I\u2019m seeking the help of my saviour",
+        "By the way of the cross I must go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Back to the cross and to Jesus",
+        "Back to the cross I am called",
+        "I\u2019ve drifted too far and I\u2019ve wandered",
+        "From the saviour that once was my home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sins of this world have overcome me",
+        "Have pushed and left me to roam",
+        "So I\u2019m going to back to my saviour",
+        "Back to the cross and home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The joy of these life are too fleeting",
+        "And wrapped in troubles around",
+        "I\u2019ve lost the church of the stranger",
+        "I\u2019ve drifted too far from home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

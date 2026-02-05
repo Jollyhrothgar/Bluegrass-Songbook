@@ -1,0 +1,59 @@
+{
+  "slug": "diesel-on-my-tail",
+  "title": "Diesel On My Tail",
+  "source_url": "https://www.bluegrasslyrics.com/song/diesel-on-my-tail/",
+  "raw_lyrics": "I just pulled on to the highway in my little foreign car\nWell it\u2019s raining and the road is really bad\nI never saw that big old diesel but I heard him hit the air\nI\u2019ve got a feeling that I might have made him mad\n\nHe closed the gap between us pushed the pedal on the floor\nHe\u2019s makin\u2019 ninety in that big old diesel truck\nI can hear the names he\u2019s calling me above the engine\u2019s roar\nAnd the words won\u2019t be found in Webster\u2019s books\n\nThere\u2019s a diesel on my tail a-making ninety miles an hour\nMy reflection in my mirror is mighty pale\nI can hear St.Peter calling I can almost smell the flowers\nCan this compact take the impact there\u2019s a diesel on my tail\n\nWell I\u2019m huffin\u2019 and puffin\u2019 and I\u2019m trying to make the grade\nAnd I wish I had some pedals on this cart\nAnd I\u2019m slippin\u2019 and a-slidin\u2019 and afraid to touch the brake\nFor the two of us could never stand the jar\n\nWell I\u2019m slippin\u2019 and a-slidin\u2019 trying to hold it on the road\nAnd I tell you I just got to win this race\nWhile I\u2019m tremblin\u2019 and a-shakin\u2019 he is pouring on the coal\nSo close that I can steal his license plate",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I just pulled on to the highway in my little foreign car",
+        "Well it\u2019s raining and the road is really bad",
+        "I never saw that big old diesel but I heard him hit the air",
+        "I\u2019ve got a feeling that I might have made him mad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He closed the gap between us pushed the pedal on the floor",
+        "He\u2019s makin\u2019 ninety in that big old diesel truck",
+        "I can hear the names he\u2019s calling me above the engine\u2019s roar",
+        "And the words won\u2019t be found in Webster\u2019s books"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a diesel on my tail a-making ninety miles an hour",
+        "My reflection in my mirror is mighty pale",
+        "I can hear St.Peter calling I can almost smell the flowers",
+        "Can this compact take the impact there\u2019s a diesel on my tail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019m huffin\u2019 and puffin\u2019 and I\u2019m trying to make the grade",
+        "And I wish I had some pedals on this cart",
+        "And I\u2019m slippin\u2019 and a-slidin\u2019 and afraid to touch the brake",
+        "For the two of us could never stand the jar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019m slippin\u2019 and a-slidin\u2019 trying to hold it on the road",
+        "And I tell you I just got to win this race",
+        "While I\u2019m tremblin\u2019 and a-shakin\u2019 he is pouring on the coal",
+        "So close that I can steal his license plate"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

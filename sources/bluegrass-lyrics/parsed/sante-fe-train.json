@@ -1,0 +1,59 @@
+{
+  "slug": "sante-fe-train",
+  "title": "Sante Fe Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/sante-fe-train/",
+  "raw_lyrics": "I think of times when I was young\nI travelled near and far\nIt doesn\u2019t seem so long ago\nI saw the world from a railroad car\n\nFor many years rode the line\nThrough the woods the freight train would roll\n\u2018Cross fields of grain muddy river plain\nMy heart would often go\n\nThe engineer\u2019s hair is gray\nWorn out engine can\u2019t even go slow\nI listen for the lonesome sound\nCan\u2019t you hear that whistle blow?\n\nI spy ten boxcars silent and still\nThey remind me of yesterday\nTheir rusted frames worn and bent\nFaded letters read \u201cSanta Fe\u201d\n\nThe great steam engines quiet and cold\nMetal chimes in the howling wind\nThe boiler\u2019s busted whistle cracked\nNever hear her blow again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I think of times when I was young",
+        "I travelled near and far",
+        "It doesn\u2019t seem so long ago",
+        "I saw the world from a railroad car"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For many years rode the line",
+        "Through the woods the freight train would roll",
+        "\u2018Cross fields of grain muddy river plain",
+        "My heart would often go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The engineer\u2019s hair is gray",
+        "Worn out engine can\u2019t even go slow",
+        "I listen for the lonesome sound",
+        "Can\u2019t you hear that whistle blow?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I spy ten boxcars silent and still",
+        "They remind me of yesterday",
+        "Their rusted frames worn and bent",
+        "Faded letters read \u201cSanta Fe\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The great steam engines quiet and cold",
+        "Metal chimes in the howling wind",
+        "The boiler\u2019s busted whistle cracked",
+        "Never hear her blow again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

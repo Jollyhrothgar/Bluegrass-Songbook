@@ -1,0 +1,29 @@
+{
+  "slug": "when-the-roses-bloom-in-dixieland",
+  "title": "When The Roses Bloom In Dixieland",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-roses-bloom-in-dixieland/",
+  "raw_lyrics": "When The Roses Bloom In Dixieland I am coming home to you\nWhen the band is playing music grand to the sweetest girl I ever knew\nI\u2019m saving up my money, to buy a little cabin home for two\nWhen The Roses Bloom In Dixieland I am coming home to you\n\nI met my honey at the railroad track, I said honey wait for me\nI\u2019m going to make a lot of money up north and it\u2019s me for old Tennessee\nI\u2019m saving up my money, to buy a little cabin home for two\nWhen The Roses Bloom In Dixieland I am coming home to you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When The Roses Bloom In Dixieland I am coming home to you",
+        "When the band is playing music grand to the sweetest girl I ever knew",
+        "I\u2019m saving up my money, to buy a little cabin home for two",
+        "When The Roses Bloom In Dixieland I am coming home to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I met my honey at the railroad track, I said honey wait for me",
+        "I\u2019m going to make a lot of money up north and it\u2019s me for old Tennessee",
+        "I\u2019m saving up my money, to buy a little cabin home for two",
+        "When The Roses Bloom In Dixieland I am coming home to you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

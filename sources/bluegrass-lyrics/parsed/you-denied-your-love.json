@@ -1,0 +1,49 @@
+{
+  "slug": "you-denied-your-love",
+  "title": "You Denied Your Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-denied-your-love/",
+  "raw_lyrics": "That was the day when you went away\nYou broke my heart in the month of may\nThat little ring I gave to you\nWas to show you dear my love was true\n\nSweet are the flowers of our friendship\nThat has bloomed our whole life through\nBut n\u2019er forget though you\u2019re far away\nThey\u2019re blooming in my heart today\n\nYou denied your love but you proved it so\nYou came to see me when the sun was low\nYou broke my heart but you were kind\nWhen you said oh dear you\u2019ll never be mine\n\nOh let me tell you what love will do\nIf you love a boy that don\u2019t love you\nThey\u2019ll break your heart they\u2019ll leave you alone\nThey\u2019ll roam the west so far from home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "That was the day when you went away",
+        "You broke my heart in the month of may",
+        "That little ring I gave to you",
+        "Was to show you dear my love was true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sweet are the flowers of our friendship",
+        "That has bloomed our whole life through",
+        "But n\u2019er forget though you\u2019re far away",
+        "They\u2019re blooming in my heart today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You denied your love but you proved it so",
+        "You came to see me when the sun was low",
+        "You broke my heart but you were kind",
+        "When you said oh dear you\u2019ll never be mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh let me tell you what love will do",
+        "If you love a boy that don\u2019t love you",
+        "They\u2019ll break your heart they\u2019ll leave you alone",
+        "They\u2019ll roam the west so far from home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

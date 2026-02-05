@@ -1,0 +1,64 @@
+{
+  "slug": "southern-railroad-line",
+  "title": "Southern Railroad Line",
+  "source_url": "https://www.bluegrasslyrics.com/song/southern-railroad-line/",
+  "raw_lyrics": "Standing at the sidetrack at the south end of the town\nOn a dry hot dusty August day the steam pipe blowing down\nThe fireman with his long oil can oiling the old valve gear\nWaiting for the fast mail train the semaphore to clear.\n\nThe engineer in the old high cab his gold watch in his hand\nLooking at the water glass and letting down the sand\nRolling out on the old main line and taking up the slack\nGone today so they say but tomorrow he\u2019ll be coming back.\n\nOh if I could return to those boyhood days of mine\nAnd the green light on the southern Southern Railroad Line.\n\nCreeping down the rusty rails of the weed grown branch line\nThe section houses gray and white by the yard and limit sign\nThe hoggers call the old highball no more time to wait\nRolling down to Birmingham with a ten car load of freight.\n\nThe whistle screamed with a hiss of steam the headlight gleams clear\nThe drivers roll on the green go getting mighty near\nHanding out the orders to the engine crew on time\nIt\u2019s the Alabama Great Southern AGS Railroad Line.\n\n(Chorus)",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Standing at the sidetrack at the south end of the town",
+        "On a dry hot dusty August day the steam pipe blowing down",
+        "The fireman with his long oil can oiling the old valve gear",
+        "Waiting for the fast mail train the semaphore to clear."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The engineer in the old high cab his gold watch in his hand",
+        "Looking at the water glass and letting down the sand",
+        "Rolling out on the old main line and taking up the slack",
+        "Gone today so they say but tomorrow he\u2019ll be coming back."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh if I could return to those boyhood days of mine",
+        "And the green light on the southern Southern Railroad Line."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Creeping down the rusty rails of the weed grown branch line",
+        "The section houses gray and white by the yard and limit sign",
+        "The hoggers call the old highball no more time to wait",
+        "Rolling down to Birmingham with a ten car load of freight."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The whistle screamed with a hiss of steam the headlight gleams clear",
+        "The drivers roll on the green go getting mighty near",
+        "Handing out the orders to the engine crew on time",
+        "It\u2019s the Alabama Great Southern AGS Railroad Line."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "(Chorus)"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

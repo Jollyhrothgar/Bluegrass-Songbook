@@ -1,0 +1,79 @@
+{
+  "slug": "broken-down-tramp",
+  "title": "Broken Down Tramp",
+  "source_url": "https://www.bluegrasslyrics.com/song/broken-down-tramp/",
+  "raw_lyrics": "I\u2019m a broken down tramp without money\nMy clothes are all tattered and torn\nAnd I am so sad and so lonely\nI wish I had never been born\n\nAll through this wide world I have wandered\nInquiring for something to do\nBut whenever I ask for a job of work\nThey say they have none for a tramp\n\nNow drink was the cause of my downfall\nAnd the money I had I\u2019ve outrun\nAnd the friends that were mine when I had it\nNow pass by and call me a bum\n\nNow don\u2019t be too hasty to judge me\nAs I drift along with the tide\nMy clothes may be ragged and dirty\nBut a clean heart is beating inside\n\nOne night on a dark lonely railroad\nA hobo all hungry and cold\nSaw an empty boxcar on the siding\nHe climbed in and closed up the door\n\nSix months he had rode on the railway\nWhen the brakeman came \u2019round with his light\nHe was shoved from the car and was killed by the train\nBecause he was only a tramp\n\nNow young men, let this be a warning\nFor all you who long for the road\nBetter stick to the straight life and don\u2019t be like me\nA poor bum to die in the cold",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a broken down tramp without money",
+        "My clothes are all tattered and torn",
+        "And I am so sad and so lonely",
+        "I wish I had never been born"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All through this wide world I have wandered",
+        "Inquiring for something to do",
+        "But whenever I ask for a job of work",
+        "They say they have none for a tramp"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now drink was the cause of my downfall",
+        "And the money I had I\u2019ve outrun",
+        "And the friends that were mine when I had it",
+        "Now pass by and call me a bum"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now don\u2019t be too hasty to judge me",
+        "As I drift along with the tide",
+        "My clothes may be ragged and dirty",
+        "But a clean heart is beating inside"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One night on a dark lonely railroad",
+        "A hobo all hungry and cold",
+        "Saw an empty boxcar on the siding",
+        "He climbed in and closed up the door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Six months he had rode on the railway",
+        "When the brakeman came \u2019round with his light",
+        "He was shoved from the car and was killed by the train",
+        "Because he was only a tramp"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now young men, let this be a warning",
+        "For all you who long for the road",
+        "Better stick to the straight life and don\u2019t be like me",
+        "A poor bum to die in the cold"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

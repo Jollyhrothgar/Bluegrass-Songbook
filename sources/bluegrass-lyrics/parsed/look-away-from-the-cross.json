@@ -1,0 +1,49 @@
+{
+  "slug": "look-away-from-the-cross",
+  "title": "Look Away From The Cross",
+  "source_url": "https://www.bluegrasslyrics.com/song/look-away-from-the-cross/",
+  "raw_lyrics": "Look away from the cross to that glittering crown\nFrom your cares weary watch look away\nThere\u2019s a home for the soul where no sorrows can come\nAnd there pleasures will never decay\n\nLook away (from the cross look away) look away (from the cross to the crown)\nFrom the cross to that glittering crown (glittering crown)\nLook away (way where you watch) look away (from the cross to the crown)\nFrom the cross to that glittering crown\n\nThough the burdens of life may be heavy to bear\nAnd your crosses and trials severe\nThere\u2019s a beautiful hand that is beckoning come\nAnd no heartache and sighings are there\n\nMid the conflicts of battles of struggles and strife\nBravely onward your journey pursue\nLook away look away from the cross to that glittering crown\nThat\u2019s a waiting in heaven for you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Look away from the cross to that glittering crown",
+        "From your cares weary watch look away",
+        "There\u2019s a home for the soul where no sorrows can come",
+        "And there pleasures will never decay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Look away (from the cross look away) look away (from the cross to the crown)",
+        "From the cross to that glittering crown (glittering crown)",
+        "Look away (way where you watch) look away (from the cross to the crown)",
+        "From the cross to that glittering crown"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though the burdens of life may be heavy to bear",
+        "And your crosses and trials severe",
+        "There\u2019s a beautiful hand that is beckoning come",
+        "And no heartache and sighings are there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mid the conflicts of battles of struggles and strife",
+        "Bravely onward your journey pursue",
+        "Look away look away from the cross to that glittering crown",
+        "That\u2019s a waiting in heaven for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

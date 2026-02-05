@@ -1,0 +1,39 @@
+{
+  "slug": "you-dont-have-to-move-that-mountain",
+  "title": "You Don\u2019t Have To Move That Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-dont-have-to-move-that-mountain/",
+  "raw_lyrics": "You don\u2019t have to move that mountain\nJust help me Lord to climb it\nYou don\u2019t have to move that stumbling block\nJust show me the way around it\n\nWe must climb a great high mountain\nTo reach Gold\u2019s gracious kingdom\nIn His words you\u2019ll find the strength\nIf you will just believe them\n\nWell the way is filled with pitfalls\nAnd sometimes we may falter\nYou can have His grace my friend\nOn your knees down at the altar",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "You don\u2019t have to move that mountain",
+        "Just help me Lord to climb it",
+        "You don\u2019t have to move that stumbling block",
+        "Just show me the way around it"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We must climb a great high mountain",
+        "To reach Gold\u2019s gracious kingdom",
+        "In His words you\u2019ll find the strength",
+        "If you will just believe them"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the way is filled with pitfalls",
+        "And sometimes we may falter",
+        "You can have His grace my friend",
+        "On your knees down at the altar"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "foggy-river",
+  "title": "Foggy River",
+  "source_url": "https://www.bluegrasslyrics.com/song/foggy-river/",
+  "raw_lyrics": "Your love is colder than a foggy river\nRollin on a heart of stone\nYou left me stranded on this foggy river\nCold and helpless and alone\n\nI knew someday that you would turn me down\nI got worries on my mind\nYes I\u2019m doomed to sail this foggy river\nTill I leave my love behind\n\nThere\u2019s no tomorrow on this foggy river\nOnly memories linger on\nA mist of sorrows fills this foggy river\nEverything I had is gone\n\nI can\u2019t escape this broken heart of mine\nI\u2019ve no freedom anymore\nHeaven help me on this foggy river\nTill I reach that distant shore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Your love is colder than a foggy river",
+        "Rollin on a heart of stone",
+        "You left me stranded on this foggy river",
+        "Cold and helpless and alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I knew someday that you would turn me down",
+        "I got worries on my mind",
+        "Yes I\u2019m doomed to sail this foggy river",
+        "Till I leave my love behind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s no tomorrow on this foggy river",
+        "Only memories linger on",
+        "A mist of sorrows fills this foggy river",
+        "Everything I had is gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t escape this broken heart of mine",
+        "I\u2019ve no freedom anymore",
+        "Heaven help me on this foggy river",
+        "Till I reach that distant shore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

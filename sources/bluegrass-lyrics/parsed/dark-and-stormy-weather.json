@@ -1,0 +1,49 @@
+{
+  "slug": "dark-and-stormy-weather",
+  "title": "Dark And Stormy Weather",
+  "source_url": "https://www.bluegrasslyrics.com/song/dark-and-stormy-weather/",
+  "raw_lyrics": "Dark and stormy weather\nIt still inclines to rain\nThe clouds hang over center\nMy love\u2019s gone away on the train\n\nWe met loved and parted\nI thought the world of you\nYou left me broken hearted\nTo me you proved untrue\n\nI\u2019m leaving old Virginia\nThere\u2019s nothing here for me\nI know you love another\nIn the grave I\u2019d rather be\n\nYou told me that you loved me\nI believed just what you said\nBut now you love another\nI wish that I was dead",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Dark and stormy weather",
+        "It still inclines to rain",
+        "The clouds hang over center",
+        "My love\u2019s gone away on the train"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We met loved and parted",
+        "I thought the world of you",
+        "You left me broken hearted",
+        "To me you proved untrue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m leaving old Virginia",
+        "There\u2019s nothing here for me",
+        "I know you love another",
+        "In the grave I\u2019d rather be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You told me that you loved me",
+        "I believed just what you said",
+        "But now you love another",
+        "I wish that I was dead"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

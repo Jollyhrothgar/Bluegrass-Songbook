@@ -1,0 +1,39 @@
+{
+  "slug": "voice-of-my-savior",
+  "title": "Voice Of My Savior",
+  "source_url": "https://www.bluegrasslyrics.com/song/voice-of-my-savior/",
+  "raw_lyrics": "I heard a sweet voice so tenderly calling\nSaying arise be saved evermore\nAnd I knew it must be the voice of my Savior\nFor I had not heard a voice like it before\n\nI remember one night in an old fashioned meeting\nI was praying to God to redeem my poor soul\nWhen I heard the sweet voice of my lovin\u2019 Savior\nAnd I started that night to make heaven my home\n\nI\u2019m glad that I heard the voice of my Savior\nI know I\u2019m redeemed by his wonderful grace\nSomeday when he calls I\u2019ll go up to Heaven\nAnd then in that city I\u2019ll look on His face",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I heard a sweet voice so tenderly calling",
+        "Saying arise be saved evermore",
+        "And I knew it must be the voice of my Savior",
+        "For I had not heard a voice like it before"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember one night in an old fashioned meeting",
+        "I was praying to God to redeem my poor soul",
+        "When I heard the sweet voice of my lovin\u2019 Savior",
+        "And I started that night to make heaven my home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m glad that I heard the voice of my Savior",
+        "I know I\u2019m redeemed by his wonderful grace",
+        "Someday when he calls I\u2019ll go up to Heaven",
+        "And then in that city I\u2019ll look on His face"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

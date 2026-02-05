@@ -1,0 +1,49 @@
+{
+  "slug": "hard-luck-in-heaven",
+  "title": "Hard Luck in Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/hard-luck-in-heaven/",
+  "raw_lyrics": "While on this old earth Lord I\u2019ve suffered I\u2019ve cried\nThings don\u2019t work out Lord as hard as I\u2019ve tried\nI\u2019ll have up in glory a crown for my prize\nBut knowin\u2019 my luck Lord it\u2019ll be the wrong size\n\nHard luck in Heaven please say it ain\u2019t so\nCause down here on earth Lord it\u2019s all that I know\nWhen I\u2019m in my mansion will the roof leak there too\nHard luck in Heaven please say it ain\u2019t true\n\nI\u2019ve always been hard luck it\u2019s always been true\nSo I\u2019m not expecting any different from you\nWhen I get my wings Lord they won\u2019t fit me right\nI\u2019ll be flappin\u2019 in circles o\u2019er the city of light\n\nNow Lord please forgive me for thinkin\u2019 this way\nBut hard times just haunt me each night and each day\nWhen the angels start singing and they hand out the harps\nKnowing my luck Lord mine\u2019ll be tuned too sharp",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "While on this old earth Lord I\u2019ve suffered I\u2019ve cried",
+        "Things don\u2019t work out Lord as hard as I\u2019ve tried",
+        "I\u2019ll have up in glory a crown for my prize",
+        "But knowin\u2019 my luck Lord it\u2019ll be the wrong size"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hard luck in Heaven please say it ain\u2019t so",
+        "Cause down here on earth Lord it\u2019s all that I know",
+        "When I\u2019m in my mansion will the roof leak there too",
+        "Hard luck in Heaven please say it ain\u2019t true"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve always been hard luck it\u2019s always been true",
+        "So I\u2019m not expecting any different from you",
+        "When I get my wings Lord they won\u2019t fit me right",
+        "I\u2019ll be flappin\u2019 in circles o\u2019er the city of light"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now Lord please forgive me for thinkin\u2019 this way",
+        "But hard times just haunt me each night and each day",
+        "When the angels start singing and they hand out the harps",
+        "Knowing my luck Lord mine\u2019ll be tuned too sharp"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

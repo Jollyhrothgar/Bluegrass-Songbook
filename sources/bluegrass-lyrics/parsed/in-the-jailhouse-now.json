@@ -1,0 +1,56 @@
+{
+  "slug": "in-the-jailhouse-now",
+  "title": "In The Jailhouse Now",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-the-jailhouse-now/",
+  "raw_lyrics": "I had a friend named Ramblin Bob\nHe used to steal gamble and rob\nHe thought he was the smartest guy around\nWell I found out last Monday\nThat Bob got locked up Sunday\nThey\u2019ve got him in the jailhouse way downtown\n\nHe\u2019s in the jailhouse now\nHe\u2019s in the jailhouse now\nWell, I told him once or twice to\nstop playin cards and shootin dice\nHe\u2019s in the jailhouse now\n\nBob liked to play his poker\nPinochle whist and euchre\nBut shootin dice was his favorite game\nHe got throw\u2019d in jail with nobody to go his bail\nThe judge done said that he refused to the fine\n\nWell I went out last Tuesday\nI met a girl named Suzie\nI said I was the swellest guy around\nWell we got to spendin my money\nAnd she started to callin me honey\nWe took in every cabaret in town\nWe\u2019re in the jailhouse now",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I had a friend named Ramblin Bob",
+        "He used to steal gamble and rob",
+        "He thought he was the smartest guy around",
+        "Well I found out last Monday",
+        "That Bob got locked up Sunday",
+        "They\u2019ve got him in the jailhouse way downtown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "He\u2019s in the jailhouse now",
+        "He\u2019s in the jailhouse now",
+        "Well, I told him once or twice to",
+        "stop playin cards and shootin dice",
+        "He\u2019s in the jailhouse now"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Bob liked to play his poker",
+        "Pinochle whist and euchre",
+        "But shootin dice was his favorite game",
+        "He got throw\u2019d in jail with nobody to go his bail",
+        "The judge done said that he refused to the fine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I went out last Tuesday",
+        "I met a girl named Suzie",
+        "I said I was the swellest guy around",
+        "Well we got to spendin my money",
+        "And she started to callin me honey",
+        "We took in every cabaret in town",
+        "We\u2019re in the jailhouse now"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "wrong-road-again",
+  "title": "Wrong Road Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/wrong-road-again/",
+  "raw_lyrics": "I can\u2019t seem to learn not to love you\nYou get to me every time\nYou\u2019re someone I just can\u2019t say no to\nAnd you\u2019re so good at changin\u2019 my mind\n\nHere I go down that wrong road again\nGoin\u2019 back where I\u2019ve already been\nEven though I know where it will end\nHere I go down that wrong road again\n\nThough I see the web that you\u2019re weavin\u2019\nYou and your soft easy lies\nBefore I stop to think, I\u2019m believin\u2019\nAnd I\u2019m fallin\u2019 for you one more time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t seem to learn not to love you",
+        "You get to me every time",
+        "You\u2019re someone I just can\u2019t say no to",
+        "And you\u2019re so good at changin\u2019 my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Here I go down that wrong road again",
+        "Goin\u2019 back where I\u2019ve already been",
+        "Even though I know where it will end",
+        "Here I go down that wrong road again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though I see the web that you\u2019re weavin\u2019",
+        "You and your soft easy lies",
+        "Before I stop to think, I\u2019m believin\u2019",
+        "And I\u2019m fallin\u2019 for you one more time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "daisy-mae",
+  "title": "Daisy Mae",
+  "source_url": "https://www.bluegrasslyrics.com/song/daisy-mae/",
+  "raw_lyrics": "Oh Daisy Mae my darling oh Daisy Mae\nWhen I\u2019m with you my darling all my cares away\nAnd don\u2019t you know sweet heart that I love you so\nCause you\u2019re my darling precious Daisy Mae\n\nSo nice and neat your kisses so very sweet\nIn my opinion darling you just can\u2019t be beat\nAnd now that I\u2019ve found you no one else will ever do\nI\u2019ve tried to make you happy Daisy Mae\n\nYou\u2019re everthing you\u2019re every song that I sing\nYour lovely little hand looks lovely with that ring\nIt won\u2019t be long till we hear that wedding song\nAnd you\u2019ll be mine all mine Miss Daisy Mae\n\nHow can I wait till we have this final date\nAnd we\u2019ll be married darling that will seal our fate\nBut laying jokes aside you\u2019ll make a wonderful bride\nAnd I\u2019ll be proud of you my Daisy Mae",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Daisy Mae my darling oh Daisy Mae",
+        "When I\u2019m with you my darling all my cares away",
+        "And don\u2019t you know sweet heart that I love you so",
+        "Cause you\u2019re my darling precious Daisy Mae"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So nice and neat your kisses so very sweet",
+        "In my opinion darling you just can\u2019t be beat",
+        "And now that I\u2019ve found you no one else will ever do",
+        "I\u2019ve tried to make you happy Daisy Mae"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re everthing you\u2019re every song that I sing",
+        "Your lovely little hand looks lovely with that ring",
+        "It won\u2019t be long till we hear that wedding song",
+        "And you\u2019ll be mine all mine Miss Daisy Mae"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How can I wait till we have this final date",
+        "And we\u2019ll be married darling that will seal our fate",
+        "But laying jokes aside you\u2019ll make a wonderful bride",
+        "And I\u2019ll be proud of you my Daisy Mae"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

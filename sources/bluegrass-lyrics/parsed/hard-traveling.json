@@ -1,0 +1,70 @@
+{
+  "slug": "hard-traveling",
+  "title": "Hard Traveling",
+  "source_url": "https://www.bluegrasslyrics.com/song/hard-traveling/",
+  "raw_lyrics": "I\u2019ve been doing some hard travelingI thought you knowed\nI\u2019ve been doing some hard traveling way down the road\nI\u2019ve been doing some hard traveling hard drinking hard gambling\nI\u2019ve been doing some hard traveling Lord\n\nI\u2019ve been doing some hard rock mining I thought you knowed\nI\u2019ve been leaning on a pressure drill way down the road\nWell the hammer flying and the air hose sucking\nAnd six feet of mud and I sure been a ducking\nAnd I\u2019ve been doing some hard traveling Lord\n\nI\u2019ve been riding them fast passengers I thought you knowed\nI\u2019ve been hitting them flat wheelers way down the road\nI\u2019ve been ridin\u2019 them blind passengers dead enders\nkickin\u2019 up cindersI\u2019ve been doing some hard traveling Lord\n\nI\u2019ve been layin\u2019 in a hard rock jail I thought you knowed\nI\u2019ve been layin\u2019 out ninety days way down the road\nDarned old judge he said to me it\u2019s ninety days\nfor vagrancy And I\u2019ve been doing some hard traveling Lord\n\nI\u2019ve been doing some hard harvesting I thought you knowed\nFrom North Dakota to Kansas City way down the road\nCutting that wheat and stacking that hay trying to make a dollar a day\nAnd I\u2019ve been doing some hard traveling Lord\n\nI\u2019ve been walking that Lincoln highway I thought you knowed\nI\u2019ve been hitchin\u2019 on sixty six way down the road\nGot a heavy load got a worried mind looking for a woman that\u2019s hard to find\nAnd I\u2019ve been doing some hard traveling Lord",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been doing some hard travelingI thought you knowed",
+        "I\u2019ve been doing some hard traveling way down the road",
+        "I\u2019ve been doing some hard traveling hard drinking hard gambling",
+        "I\u2019ve been doing some hard traveling Lord"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been doing some hard rock mining I thought you knowed",
+        "I\u2019ve been leaning on a pressure drill way down the road",
+        "Well the hammer flying and the air hose sucking",
+        "And six feet of mud and I sure been a ducking",
+        "And I\u2019ve been doing some hard traveling Lord"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been riding them fast passengers I thought you knowed",
+        "I\u2019ve been hitting them flat wheelers way down the road",
+        "I\u2019ve been ridin\u2019 them blind passengers dead enders",
+        "kickin\u2019 up cindersI\u2019ve been doing some hard traveling Lord"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been layin\u2019 in a hard rock jail I thought you knowed",
+        "I\u2019ve been layin\u2019 out ninety days way down the road",
+        "Darned old judge he said to me it\u2019s ninety days",
+        "for vagrancy And I\u2019ve been doing some hard traveling Lord"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been doing some hard harvesting I thought you knowed",
+        "From North Dakota to Kansas City way down the road",
+        "Cutting that wheat and stacking that hay trying to make a dollar a day",
+        "And I\u2019ve been doing some hard traveling Lord"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been walking that Lincoln highway I thought you knowed",
+        "I\u2019ve been hitchin\u2019 on sixty six way down the road",
+        "Got a heavy load got a worried mind looking for a woman that\u2019s hard to find",
+        "And I\u2019ve been doing some hard traveling Lord"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

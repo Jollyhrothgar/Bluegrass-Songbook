@@ -1,0 +1,39 @@
+{
+  "slug": "high-on-a-hilltop",
+  "title": "High On A Hilltop",
+  "source_url": "https://www.bluegrasslyrics.com/song/high-on-a-hilltop/",
+  "raw_lyrics": "High on a hilltop overlooking a city\nI can see the bright lights as they gleam\nAnd somewhere you\u2019re dancing in some dingy bar room\nAnd the lure of the gay life takes the place of our dream\n\nHigh on a hilltop my heart cries oh Lord\nForgive her she know not the way\nAnd give me the power to believe and some day\nHigh on a hilltop together we\u2019ll pray\n\nI can vision a rounder with a life so smooth\nAnd a promise of riches for you\nBut you see not the danger cause you\u2019re silly with booze\nAnd high on a hilltop I see a devil win you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "High on a hilltop overlooking a city",
+        "I can see the bright lights as they gleam",
+        "And somewhere you\u2019re dancing in some dingy bar room",
+        "And the lure of the gay life takes the place of our dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "High on a hilltop my heart cries oh Lord",
+        "Forgive her she know not the way",
+        "And give me the power to believe and some day",
+        "High on a hilltop together we\u2019ll pray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can vision a rounder with a life so smooth",
+        "And a promise of riches for you",
+        "But you see not the danger cause you\u2019re silly with booze",
+        "And high on a hilltop I see a devil win you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

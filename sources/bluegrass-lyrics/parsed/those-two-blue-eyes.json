@@ -1,0 +1,39 @@
+{
+  "slug": "those-two-blue-eyes",
+  "title": "Those Two Blue Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/those-two-blue-eyes/",
+  "raw_lyrics": "On the day that I first saw you\nThose two blue eyes they seemed to say\nI\u2019ll always be there if you need me\nBut with another they went away\n\nYou told me that your love was true\nJust like a fool I trusted you\nThose two blue eyes I love so well\nWhat they done to me no one can tell\n\nOh you gave me back my picture\nAnd you gave me back my ring\nYou gave your sweet love to another\nOh Lord you\u2019re driving me insane",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On the day that I first saw you",
+        "Those two blue eyes they seemed to say",
+        "I\u2019ll always be there if you need me",
+        "But with another they went away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You told me that your love was true",
+        "Just like a fool I trusted you",
+        "Those two blue eyes I love so well",
+        "What they done to me no one can tell"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh you gave me back my picture",
+        "And you gave me back my ring",
+        "You gave your sweet love to another",
+        "Oh Lord you\u2019re driving me insane"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

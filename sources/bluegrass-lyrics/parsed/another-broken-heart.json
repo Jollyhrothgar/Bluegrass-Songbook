@@ -1,0 +1,69 @@
+{
+  "slug": "another-broken-heart",
+  "title": "Another Broken Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/another-broken-heart/",
+  "raw_lyrics": "They stood on the beach one evening\nOut in the moonlight so fair\nWas a boy in the prime of manhood\nAnd a girl of beauty rare\n\nOh I never thought that you loved me\nAn innocent look of surprise\nCame out from beneath her lashes\nAnd into her deep brown eyes\n\nOh sir I was only flirting\nOnly a playing a part\nJust another boy\u2019s life ruined\nJust another broken heart\n\nSir, I\u2019m to be married this winter\nFarewell as she gave me her hand\nAnd throwing a robe around her\nShe left me alone on the sand\n\nNow he goes where the crowd all passes\nAlways so bitter and cold\nJust another boy\u2019s life ruined\nJust another boy grown old\n\nThere\u2019s a rose grows in your garden\nWhite roses the emblem of peace\nAnd when I am dead, little darlin\u2019\nPlant that rose at my head and my feet",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "They stood on the beach one evening",
+        "Out in the moonlight so fair",
+        "Was a boy in the prime of manhood",
+        "And a girl of beauty rare"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I never thought that you loved me",
+        "An innocent look of surprise",
+        "Came out from beneath her lashes",
+        "And into her deep brown eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh sir I was only flirting",
+        "Only a playing a part",
+        "Just another boy\u2019s life ruined",
+        "Just another broken heart"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sir, I\u2019m to be married this winter",
+        "Farewell as she gave me her hand",
+        "And throwing a robe around her",
+        "She left me alone on the sand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now he goes where the crowd all passes",
+        "Always so bitter and cold",
+        "Just another boy\u2019s life ruined",
+        "Just another boy grown old"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a rose grows in your garden",
+        "White roses the emblem of peace",
+        "And when I am dead, little darlin\u2019",
+        "Plant that rose at my head and my feet"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

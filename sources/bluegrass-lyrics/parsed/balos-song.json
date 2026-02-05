@@ -1,0 +1,49 @@
+{
+  "slug": "balos-song",
+  "title": "Balo\u2019s Song",
+  "source_url": "https://www.bluegrasslyrics.com/song/balos-song/",
+  "raw_lyrics": "Well me and my horse Balo we\u2019re going to the fair\nWe\u2019re gonna ride the bucks and run the barrels see everything that\u2019s there\nWe\u2019re gonna wink at all the women flag a tail at all the mares\nWe\u2019ll be hellbent for leather when we go to the fair\n\nWe\u2019re gonna shave and brush and shower shine our shoes up good and bright\nWe\u2019re gonna strap on all our leather stuff and cinch it up real tight\nWe\u2019re gonna jog around the warm up ring and lean against the rail\nAnd check out all that horsy stuff like eyes and legs and tails\n\nWe\u2019re gonna jog in to the show ring with our head set good and proud\nWhen the announcer calls the names out we hope he does it good and loud\nWe\u2019re gonna win us a blue ribbon and show off for the crowd\nWell I guess we\u2019ll bring the stands down when Balo takes his bow\n\nWe\u2019re gonna strut around the grand stand and down the old midway\nI\u2019ll be munchin\u2019 popcorn while Balo\u2019s chompin\u2019 hay\nWe\u2019re gonne find ourselves a saddle with something cute on either side\nAnd me and my horse Balo might just join \u2019em for a ride",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well me and my horse Balo we\u2019re going to the fair",
+        "We\u2019re gonna ride the bucks and run the barrels see everything that\u2019s there",
+        "We\u2019re gonna wink at all the women flag a tail at all the mares",
+        "We\u2019ll be hellbent for leather when we go to the fair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019re gonna shave and brush and shower shine our shoes up good and bright",
+        "We\u2019re gonna strap on all our leather stuff and cinch it up real tight",
+        "We\u2019re gonna jog around the warm up ring and lean against the rail",
+        "And check out all that horsy stuff like eyes and legs and tails"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019re gonna jog in to the show ring with our head set good and proud",
+        "When the announcer calls the names out we hope he does it good and loud",
+        "We\u2019re gonna win us a blue ribbon and show off for the crowd",
+        "Well I guess we\u2019ll bring the stands down when Balo takes his bow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019re gonna strut around the grand stand and down the old midway",
+        "I\u2019ll be munchin\u2019 popcorn while Balo\u2019s chompin\u2019 hay",
+        "We\u2019re gonne find ourselves a saddle with something cute on either side",
+        "And me and my horse Balo might just join \u2019em for a ride"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

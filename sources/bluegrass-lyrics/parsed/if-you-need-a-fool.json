@@ -1,0 +1,50 @@
+{
+  "slug": "if-you-need-a-fool",
+  "title": "If You Need A Fool",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-you-need-a-fool/",
+  "raw_lyrics": "Darling I can tell were through\nThat leavin\u2019 looks all over you\nI\u2019ll do anything no matter what you do\nCall me if you need a fool\n\nThey just aren\u2019t makin\u2019 fools the way that they used to\nThey don\u2019t come back for more the way I always do\nSo if you ever change your mind I\u2019m not very hard to find\nYou can find me in the phone book under blue\nCall me if you need a fool\n\nGo and find another guy\nAnd if he don\u2019t believe your lies\nYou know who will swear every word is true\nCall me if you need a fool\n\nGirl it won\u2019t cost you a dime\nTo break my heart just one last time\nCall collect and I\u2019ll just tell um put her through\nCall me if you need a fool",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Darling I can tell were through",
+        "That leavin\u2019 looks all over you",
+        "I\u2019ll do anything no matter what you do",
+        "Call me if you need a fool"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They just aren\u2019t makin\u2019 fools the way that they used to",
+        "They don\u2019t come back for more the way I always do",
+        "So if you ever change your mind I\u2019m not very hard to find",
+        "You can find me in the phone book under blue",
+        "Call me if you need a fool"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go and find another guy",
+        "And if he don\u2019t believe your lies",
+        "You know who will swear every word is true",
+        "Call me if you need a fool"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Girl it won\u2019t cost you a dime",
+        "To break my heart just one last time",
+        "Call collect and I\u2019ll just tell um put her through",
+        "Call me if you need a fool"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "build-my-mansion",
+  "title": "Build My Mansion",
+  "source_url": "https://www.bluegrasslyrics.com/song/build-my-mansion/",
+  "raw_lyrics": "I have no castles no earthly kingdom\nBut my cabin will do \u2019til I get home\nMy mansion\u2019s yonder on the hills of glory\nOh I hope my mansion sets near God\u2019s throne\n\nBuild my mansion next door to Jesus\nAnd tell the angels I\u2019m coming home\nIt doesn\u2019t matter who lives around me\nJust so my mansion sets near the throne\n\nMy mother\u2019s Mansion may be close by me\nAcross the Golden Avenue\nShe was the first one to teach me of Heaven\nAnd the very first one Lord to tell me of you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have no castles no earthly kingdom",
+        "But my cabin will do \u2019til I get home",
+        "My mansion\u2019s yonder on the hills of glory",
+        "Oh I hope my mansion sets near God\u2019s throne"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Build my mansion next door to Jesus",
+        "And tell the angels I\u2019m coming home",
+        "It doesn\u2019t matter who lives around me",
+        "Just so my mansion sets near the throne"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother\u2019s Mansion may be close by me",
+        "Across the Golden Avenue",
+        "She was the first one to teach me of Heaven",
+        "And the very first one Lord to tell me of you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

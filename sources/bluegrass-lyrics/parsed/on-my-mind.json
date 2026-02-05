@@ -1,0 +1,39 @@
+{
+  "slug": "on-my-mind",
+  "title": "On My Mind",
+  "source_url": "https://www.bluegrasslyrics.com/song/on-my-mind/",
+  "raw_lyrics": "I can\u2019t sleep and I can\u2019t eat all I do is sit and cry\nAnd listen for your footsteps at my door\nI keep asking myself why that you ever said goodbye\nAnd I guess I\u2019ve cried a million tears or more\n\nOn my mind on my mind\nYou\u2019re always in my heart and on my mind\nOnce I thought my love would die darling here\u2019s what I find\nYou\u2019re always in my heart and on my mind\n\nSeems I miss you most of all when the twilight shadows fall\nWhat a fool I was to ever let you go\nIf longing for you now could only bring you back somehow\nYou\u2019d be here in these loving arms I know",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t sleep and I can\u2019t eat all I do is sit and cry",
+        "And listen for your footsteps at my door",
+        "I keep asking myself why that you ever said goodbye",
+        "And I guess I\u2019ve cried a million tears or more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "On my mind on my mind",
+        "You\u2019re always in my heart and on my mind",
+        "Once I thought my love would die darling here\u2019s what I find",
+        "You\u2019re always in my heart and on my mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Seems I miss you most of all when the twilight shadows fall",
+        "What a fool I was to ever let you go",
+        "If longing for you now could only bring you back somehow",
+        "You\u2019d be here in these loving arms I know"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

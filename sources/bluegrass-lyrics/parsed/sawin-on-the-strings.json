@@ -1,0 +1,49 @@
+{
+  "slug": "sawin-on-the-strings",
+  "title": "Sawin\u2019 on the Strings",
+  "source_url": "https://www.bluegrasslyrics.com/song/sawin-on-the-strings/",
+  "raw_lyrics": "Way back in the mountains way back in the hills\nThere used to live a mountaineer they called him fiddlin\u2019 Will\nHe could play most anything and some say he could sing\nBut the one thing that he liked to do best was sawing on the strings\n\nSo get out the fiddle and rosin up the bow\nLook at ol\u2019 Will a tappin\u2019 his toe\nWe\u2019ll make music til the rafters ring\nOld man pickin\u2019 and a sawin\u2019 on the strings\n\nWhen the neighbors had a shindig and they all had viddles to eat\nWe\u2019d always have to wait on Will for the frolic to be complete\nWhen he comes down from the mountain all the gals began to sway\nSometimes he\u2019d pick that ol\u2019 5 string until the break of day\n\nSo tune up the five string tighten up the hide\nTell all the young folks to get inside\nWe\u2019ll make music til the rafters ring\nOld man pickin\u2019 and a sawin on the strings",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way back in the mountains way back in the hills",
+        "There used to live a mountaineer they called him fiddlin\u2019 Will",
+        "He could play most anything and some say he could sing",
+        "But the one thing that he liked to do best was sawing on the strings"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So get out the fiddle and rosin up the bow",
+        "Look at ol\u2019 Will a tappin\u2019 his toe",
+        "We\u2019ll make music til the rafters ring",
+        "Old man pickin\u2019 and a sawin\u2019 on the strings"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the neighbors had a shindig and they all had viddles to eat",
+        "We\u2019d always have to wait on Will for the frolic to be complete",
+        "When he comes down from the mountain all the gals began to sway",
+        "Sometimes he\u2019d pick that ol\u2019 5 string until the break of day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So tune up the five string tighten up the hide",
+        "Tell all the young folks to get inside",
+        "We\u2019ll make music til the rafters ring",
+        "Old man pickin\u2019 and a sawin on the strings"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

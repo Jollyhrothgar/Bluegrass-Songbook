@@ -1,0 +1,49 @@
+{
+  "slug": "i-left-my-gal-in-the-mountains",
+  "title": "I Left My Gal In The Mountains",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-left-my-gal-in-the-mountains/",
+  "raw_lyrics": "I left my gal in the mountains left her standing in the rain\nWent down to the railroad caught myself a midnight train\nI beat my way into Georgia landed in a gambling town\nGot myself into trouble shot a county sheriff down\n\nThe jury read the verdict murder in the first degree\nThe judge said take this prisoner to the penitentiary\nThey put the handcuffs on me put me on a pullman tain\nTook me to Atlanta boys and tied me to a ball and chain\n\nI left my gal in the mountains left her standing all alone\nLast night I dreamed I got a letter saying honey won\u2019t you come back home\nShe said she was sad and lonely told me that her love was true\nThen I dreamed I wrote her a letter saying honey I\u2019m coming back to you\n\nWhen I woke up this morning lying in Atlanta jail\nNo one here to love me no one to go my bail\nThem prison bars all around me a guard walking by my door\nMy heart is sad and lonely boys cause I\u2019ll never see my gal no more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I left my gal in the mountains left her standing in the rain",
+        "Went down to the railroad caught myself a midnight train",
+        "I beat my way into Georgia landed in a gambling town",
+        "Got myself into trouble shot a county sheriff down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The jury read the verdict murder in the first degree",
+        "The judge said take this prisoner to the penitentiary",
+        "They put the handcuffs on me put me on a pullman tain",
+        "Took me to Atlanta boys and tied me to a ball and chain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I left my gal in the mountains left her standing all alone",
+        "Last night I dreamed I got a letter saying honey won\u2019t you come back home",
+        "She said she was sad and lonely told me that her love was true",
+        "Then I dreamed I wrote her a letter saying honey I\u2019m coming back to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I woke up this morning lying in Atlanta jail",
+        "No one here to love me no one to go my bail",
+        "Them prison bars all around me a guard walking by my door",
+        "My heart is sad and lonely boys cause I\u2019ll never see my gal no more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

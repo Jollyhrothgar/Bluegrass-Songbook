@@ -1,0 +1,43 @@
+{
+  "slug": "blackest-crow",
+  "title": "Blackest Crow",
+  "source_url": "https://www.bluegrasslyrics.com/song/blackest-crow/",
+  "raw_lyrics": "As time draws near my dearest dear when you and I must part\nHow little you know of the grief and woe in my poor aching heart\nEach night I suffer for your sake, you\u2019re the girl I love so dear\nI wish that I was going with you or you were staying here\n\nI wish my breast were made of glass wherein you might behold\nUpon my heart your name lies wrote in letters made of gold\nIn letters made of gold my love, believe me when I say\nYou are the one that I will adore until my dying day\n\nThe blackest crow that ever flew would surely turn to white\nIf ever I prove false to you bright day will turn to night\nBright day will turn to night my love, the elements will mourn\nIf ever I prove false to you the seas will rage and burn\nAnd when you\u2019re on some distant shore think of your absent friend\nAnd when the wind blows high and clear a light to me pray send\nAnd when the wind blows high and clear pray send your love to me\nThat I might know by your hand light how time has gone with thee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As time draws near my dearest dear when you and I must part",
+        "How little you know of the grief and woe in my poor aching heart",
+        "Each night I suffer for your sake, you\u2019re the girl I love so dear",
+        "I wish that I was going with you or you were staying here"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish my breast were made of glass wherein you might behold",
+        "Upon my heart your name lies wrote in letters made of gold",
+        "In letters made of gold my love, believe me when I say",
+        "You are the one that I will adore until my dying day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The blackest crow that ever flew would surely turn to white",
+        "If ever I prove false to you bright day will turn to night",
+        "Bright day will turn to night my love, the elements will mourn",
+        "If ever I prove false to you the seas will rage and burn",
+        "And when you\u2019re on some distant shore think of your absent friend",
+        "And when the wind blows high and clear a light to me pray send",
+        "And when the wind blows high and clear pray send your love to me",
+        "That I might know by your hand light how time has gone with thee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

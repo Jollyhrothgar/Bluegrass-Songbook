@@ -1,0 +1,5 @@
+# Don't commit cached HTML
+raw/
+
+# URL lists can be re-downloaded from robots.txt
+urllist*.txt

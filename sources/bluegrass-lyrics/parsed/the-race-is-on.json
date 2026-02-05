@@ -1,0 +1,39 @@
+{
+  "slug": "the-race-is-on",
+  "title": "The Race Is On",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-race-is-on/",
+  "raw_lyrics": "I feel tears wellin\u2019 up from down deep inside like my heart\u2019s got a big break\nAnd the stab of loneliness sharp and painful that I may never shake\nYou might think that I\u2019m taking it hard since you broke me off with a call\nYou might wager that I\u2019ll hide in sorrowand I might break right down and ball\n\nNow the race is on and here comes pride in the backstretch\nHeartache\u2019s going to the inside my tears are holding back trying not to fall\nMy heart\u2019s out of the running true love\u2019s scratched for another\u2019s sake\nThe race is on and it looks like heartache and the winner loses all\n\nOne day I ventured in love never once suspecting what the final results would be\nNow I live in fear of waking up each morning and finding that you\u2019re gone from me\nThere\u2019s an achin\u2019 pain in my heart for the name of the one that I hated to face\nSomebody else came out to win her and I came out in second place",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I feel tears wellin\u2019 up from down deep inside like my heart\u2019s got a big break",
+        "And the stab of loneliness sharp and painful that I may never shake",
+        "You might think that I\u2019m taking it hard since you broke me off with a call",
+        "You might wager that I\u2019ll hide in sorrowand I might break right down and ball"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the race is on and here comes pride in the backstretch",
+        "Heartache\u2019s going to the inside my tears are holding back trying not to fall",
+        "My heart\u2019s out of the running true love\u2019s scratched for another\u2019s sake",
+        "The race is on and it looks like heartache and the winner loses all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One day I ventured in love never once suspecting what the final results would be",
+        "Now I live in fear of waking up each morning and finding that you\u2019re gone from me",
+        "There\u2019s an achin\u2019 pain in my heart for the name of the one that I hated to face",
+        "Somebody else came out to win her and I came out in second place"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "tenderly-calling",
+  "title": "Tenderly Calling",
+  "source_url": "https://www.bluegrasslyrics.com/song/tenderly-calling/",
+  "raw_lyrics": "Sometimes when I\u2019m feeling lonesome and none on earth seems to care\nI\u2019m all by myself in the darkness with no one and nothing to share\nJust when it feels like it\u2019s over and I\u2019ll never make it alone\nI hear the voices of angels tenderly calling me home\n\nHome come on home\nYe who are weary come home\nSoftly and tender they call me\nHome come on home\n\nI try to keep it together and I never let on that I\u2019m scared\ntill sometimes I fall to pieces scattered and lost everywhere\nand just when it feels like it\u2019s hopeless and I\u2019ll never make it alone\nI hear the voice deep inside me it\u2019s tenderly calling me home\n\nDon\u2019t be afraid of the darkness don\u2019t run away from the storm\nstand up and face your reflection and feeling\u2019s you try to ignore\ncause after the tempest is over and you let yourself go on thru\nyou\u2019ll hear a voice in the silence it\u2019s tenderly calling to you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes when I\u2019m feeling lonesome and none on earth seems to care",
+        "I\u2019m all by myself in the darkness with no one and nothing to share",
+        "Just when it feels like it\u2019s over and I\u2019ll never make it alone",
+        "I hear the voices of angels tenderly calling me home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Home come on home",
+        "Ye who are weary come home",
+        "Softly and tender they call me",
+        "Home come on home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I try to keep it together and I never let on that I\u2019m scared",
+        "till sometimes I fall to pieces scattered and lost everywhere",
+        "and just when it feels like it\u2019s hopeless and I\u2019ll never make it alone",
+        "I hear the voice deep inside me it\u2019s tenderly calling me home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t be afraid of the darkness don\u2019t run away from the storm",
+        "stand up and face your reflection and feeling\u2019s you try to ignore",
+        "cause after the tempest is over and you let yourself go on thru",
+        "you\u2019ll hear a voice in the silence it\u2019s tenderly calling to you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

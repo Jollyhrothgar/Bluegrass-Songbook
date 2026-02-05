@@ -1,0 +1,59 @@
+{
+  "slug": "last-train",
+  "title": "Last Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/last-train/",
+  "raw_lyrics": "Well that last train done left town\nThe last train done left town\nI heard the whistle moaning low\nBut that last train done left town.  Hoo-hooo-ooooo.\n\nNow my sweet baby\u2019s on that train\nMy sweet baby\u2019s on that train\nI wonder if I will see her again\nBut that last train\u2019s done gone down.  Hoo-hooo-ooooo.\n\nNow the whistle\u2019s moaning low\nThe whistle is moaning low\nI begged my baby please don\u2019t go\nBut that last train\u2019s done gone down.  Hoo-hooo-ooooo.\n\nNow I\u2019m sorry for what I\u2019ve done\nI\u2019m sorry for what I\u2019ve done\nTo leave behind your baby crying\nBut that last train\u2019s done gone down.  Hoo-hooo-ooooo.\n\nWell that last train done left town\nThe last train done left town\nI heard the whistle moaning low\nBut that last train done left town.  Hoo-hooo-hooo-hoo-hoo.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well that last train done left town",
+        "The last train done left town",
+        "I heard the whistle moaning low",
+        "But that last train done left town.  Hoo-hooo-ooooo."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now my sweet baby\u2019s on that train",
+        "My sweet baby\u2019s on that train",
+        "I wonder if I will see her again",
+        "But that last train\u2019s done gone down.  Hoo-hooo-ooooo."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the whistle\u2019s moaning low",
+        "The whistle is moaning low",
+        "I begged my baby please don\u2019t go",
+        "But that last train\u2019s done gone down.  Hoo-hooo-ooooo."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m sorry for what I\u2019ve done",
+        "I\u2019m sorry for what I\u2019ve done",
+        "To leave behind your baby crying",
+        "But that last train\u2019s done gone down.  Hoo-hooo-ooooo."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well that last train done left town",
+        "The last train done left town",
+        "I heard the whistle moaning low",
+        "But that last train done left town.  Hoo-hooo-hooo-hoo-hoo."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

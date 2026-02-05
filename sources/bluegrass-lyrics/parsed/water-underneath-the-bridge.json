@@ -1,0 +1,66 @@
+{
+  "slug": "water-underneath-the-bridge",
+  "title": "Water Underneath The Bridge",
+  "source_url": "https://www.bluegrasslyrics.com/song/water-underneath-the-bridge/",
+  "raw_lyrics": "You came to me and said that you were wrong\nFor leaving me and staying gone so long\nYou came to me with open arms saying you were home\nIn my mind I can\u2019t forgive you in my heart I\u2019m all alone\n\nYou say you want to come back\nTo our home upon the ridge\nThere\u2019s too much water underneath the bridge\n\nA home and a family left behind\nTwo little children crying all the time\nAll the things that we worked for didn\u2019t mean that much to you\nSo how can I forgive you for what you\u2019ve put me through\n\nYou say you want to come back\nTo our home upon the ridge\nThere\u2019s too much water underneath the bridge\n\nThe day you left I walked on down the road\nThe sky was gray and cloudy and the water looked so cold\nAt the crossing by the river, thought I\u2019d take the easy way\nThen I realized there\u2019s people here that needed me to stay\n\nSo I walked back up the hill\nTo our home upon the ridge\nThere\u2019s too much water underneath the bridge",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You came to me and said that you were wrong",
+        "For leaving me and staying gone so long",
+        "You came to me with open arms saying you were home",
+        "In my mind I can\u2019t forgive you in my heart I\u2019m all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You say you want to come back",
+        "To our home upon the ridge",
+        "There\u2019s too much water underneath the bridge"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A home and a family left behind",
+        "Two little children crying all the time",
+        "All the things that we worked for didn\u2019t mean that much to you",
+        "So how can I forgive you for what you\u2019ve put me through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You say you want to come back",
+        "To our home upon the ridge",
+        "There\u2019s too much water underneath the bridge"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The day you left I walked on down the road",
+        "The sky was gray and cloudy and the water looked so cold",
+        "At the crossing by the river, thought I\u2019d take the easy way",
+        "Then I realized there\u2019s people here that needed me to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So I walked back up the hill",
+        "To our home upon the ridge",
+        "There\u2019s too much water underneath the bridge"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "old-love-letters",
+  "title": "Old Love Letters",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-love-letters/",
+  "raw_lyrics": "Today I burned your old love letters\nI burned \u2019em gently one by one\nAnd as I\u2019d light the flame I\u2019d read it\nFor I could see what you had done\n\nThe first you wrote me was the sweetest\nThe last one broke my heart in two\nAnd as I\u2019d light the flame I\u2019d read it\nFor I can say I still love you\n\nAnd as I burned your old love letters\nIt brought back memories from the past\nIt told about you and your new love\nA love I knew could never last",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Today I burned your old love letters",
+        "I burned \u2019em gently one by one",
+        "And as I\u2019d light the flame I\u2019d read it",
+        "For I could see what you had done"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The first you wrote me was the sweetest",
+        "The last one broke my heart in two",
+        "And as I\u2019d light the flame I\u2019d read it",
+        "For I can say I still love you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And as I burned your old love letters",
+        "It brought back memories from the past",
+        "It told about you and your new love",
+        "A love I knew could never last"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

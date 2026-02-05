@@ -1,0 +1,81 @@
+{
+  "slug": "police",
+  "title": "Police",
+  "source_url": "https://www.bluegrasslyrics.com/song/police/",
+  "raw_lyrics": "Police come I didn\u2019t want to go this morning (2x)\nPolice come I didn\u2019t want to go\nShot him in the head with my 44 this morning\n\nRoll your dice and have your fun this morning (2X)\nRoll your dice and have your fun\nRun like the devil when the police come this morning\n\nThere\u2019s old John laying on a log this morning (2x)\nThere\u2019s old John laying on a log\nFinger on the trigger and his eye on a hog, this morning\n\nDown went the trigger and bang went the gun this morning (2x)\nDown went the trigger and bang went the gun\nWish I had a wagon I\u2019d be haulin him home this morning\n\nKnow a little secret I ain\u2019t gonna tell is morning (2x)\nKnow a little secret I ain\u2019t gonna tell\nWanna go to heaven but I\u2019m goin down there this morning\n\nThere\u2019s old John sittin on a plow this morning (2x)\nThere\u2019s old John sittin on a plow\nTryin\u2019 to get a woman but don\u2019t know how this morning\n\nTryin\u2019 to get a woman but don\u2019t know how this morning (2x)\nTryin\u2019 to get a woman but don\u2019t know how\nTryin\u2019 to get a woman but I only got a sow this morning\n\nPolice come I didn\u2019t want to go this morning (2x)\nPolice come I didn\u2019t want to go\nShot him in the head with my 44 this morning",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Police come I didn\u2019t want to go this morning (2x)",
+        "Police come I didn\u2019t want to go",
+        "Shot him in the head with my 44 this morning"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Roll your dice and have your fun this morning (2X)",
+        "Roll your dice and have your fun",
+        "Run like the devil when the police come this morning"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s old John laying on a log this morning (2x)",
+        "There\u2019s old John laying on a log",
+        "Finger on the trigger and his eye on a hog, this morning"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Down went the trigger and bang went the gun this morning (2x)",
+        "Down went the trigger and bang went the gun",
+        "Wish I had a wagon I\u2019d be haulin him home this morning"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Know a little secret I ain\u2019t gonna tell is morning (2x)",
+        "Know a little secret I ain\u2019t gonna tell",
+        "Wanna go to heaven but I\u2019m goin down there this morning"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s old John sittin on a plow this morning (2x)",
+        "There\u2019s old John sittin on a plow",
+        "Tryin\u2019 to get a woman but don\u2019t know how this morning"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tryin\u2019 to get a woman but don\u2019t know how this morning (2x)",
+        "Tryin\u2019 to get a woman but don\u2019t know how",
+        "Tryin\u2019 to get a woman but I only got a sow this morning"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Police come I didn\u2019t want to go this morning (2x)",
+        "Police come I didn\u2019t want to go",
+        "Shot him in the head with my 44 this morning"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

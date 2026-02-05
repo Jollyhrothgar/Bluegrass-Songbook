@@ -1,0 +1,49 @@
+{
+  "slug": "flowers-of-love",
+  "title": "Flowers Of Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/flowers-of-love/",
+  "raw_lyrics": "Those pretty wild flowers I love them so well\nThe flowers know secrets that I\u2019ll never tell\nI go out to pick a bouquet of all\nAnd bring them all in before the leaves start to fall\n\nWhen the leaves start to fall and the flowers have died\nIf only little darling I could be by your side\nTho\u2019 it breaks my heart to hear your name\nSoon the wild flowers will bloom again in the spring\n\nI wish I could see her and talk of our love\nAnd of all the pretty flowers sent here from above\nOh maybe I\u2019ll see her in Heaven someday\nAnd pick pretty flowers as we go on our way\n\nThe memories of you dear I\u2019ll never erase\nThere\u2019ll never be another that can take your place\nI\u2019ll still keep our secret with the flowers of love\nAnd we\u2019ll pick them together in Heaven above",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Those pretty wild flowers I love them so well",
+        "The flowers know secrets that I\u2019ll never tell",
+        "I go out to pick a bouquet of all",
+        "And bring them all in before the leaves start to fall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the leaves start to fall and the flowers have died",
+        "If only little darling I could be by your side",
+        "Tho\u2019 it breaks my heart to hear your name",
+        "Soon the wild flowers will bloom again in the spring"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I could see her and talk of our love",
+        "And of all the pretty flowers sent here from above",
+        "Oh maybe I\u2019ll see her in Heaven someday",
+        "And pick pretty flowers as we go on our way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The memories of you dear I\u2019ll never erase",
+        "There\u2019ll never be another that can take your place",
+        "I\u2019ll still keep our secret with the flowers of love",
+        "And we\u2019ll pick them together in Heaven above"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

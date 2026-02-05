@@ -1,0 +1,49 @@
+{
+  "slug": "hell-take-you-in",
+  "title": "He\u2019ll Take You In",
+  "source_url": "https://www.bluegrasslyrics.com/song/hell-take-you-in/",
+  "raw_lyrics": "Let not your heart be troubled for He will take you in\nHis invitation stand forever more\nHe\u2019s right there where you let Him to take you by the hand\nAnd lead you to that everlasting shore\n\nHe\u2019ll take you in He\u2019ll take you in and give you shelter from the storm\nHe\u2019ll take you in He\u2019ll take you in and there your mortal life transform\nHow can you be so down and out you should jump right up and shout\nHe\u2019ll take you in He\u2019ll take you in He\u2019ll take you in\n\nLet not your soul be weary for He will strengthen you\nEven in the weakest times you\u2019ll find\nHim reaching out his arms to lift you up again\nYou know He\u2019ll take you in every time\n\nYou\u2019ll be walking on the water with your feet on hallowed ground\nIf you have the faith to follow in His will\nYou\u2019ll be one with the Spirit the Father and the Son\nHe\u2019ll deliver you sanctified and sealed",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Let not your heart be troubled for He will take you in",
+        "His invitation stand forever more",
+        "He\u2019s right there where you let Him to take you by the hand",
+        "And lead you to that everlasting shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "He\u2019ll take you in He\u2019ll take you in and give you shelter from the storm",
+        "He\u2019ll take you in He\u2019ll take you in and there your mortal life transform",
+        "How can you be so down and out you should jump right up and shout",
+        "He\u2019ll take you in He\u2019ll take you in He\u2019ll take you in"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let not your soul be weary for He will strengthen you",
+        "Even in the weakest times you\u2019ll find",
+        "Him reaching out his arms to lift you up again",
+        "You know He\u2019ll take you in every time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll be walking on the water with your feet on hallowed ground",
+        "If you have the faith to follow in His will",
+        "You\u2019ll be one with the Spirit the Father and the Son",
+        "He\u2019ll deliver you sanctified and sealed"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "home-from-the-forest",
+  "title": "Home From The Forest",
+  "source_url": "https://www.bluegrasslyrics.com/song/home-from-the-forest/",
+  "raw_lyrics": "All the neon lights were flashin\u2019 and the icy wind did blow\nThe water seeped into his shoes and the drizzle turned to snow\nHis eyes were red his hopes were dead and the wine was runnin\u2019 low\nThen the old man came home from the forest\n\nHis tears fell on the sidewalk as he stumbled in the street\nA dozen faces stopped to stare but no one stopped to speak\nFor his castle was a hallway and a bottle his only friend\nAnd the old man stumbled in from the forest\n\nUp a dark and dingy staircase the old man made his way\nHis ragged coat around him as upon his cot he lay\nAnd he wondered how it happened that he ended up this way\nGettin\u2019 lost like a fool in the forest\n\nAnd as he lay there sleepin\u2019 a vision did appear\nUpon his mantle shining the face of one so dear\nWho\u2019d loved him in the springtime of a long forgotten year\nWhen the wildflowers did bloom in the forest\n\nShe touched his grizzled fingers and she called him by his name\nAnd then he heard the joyful sound of children at their games\nIn an old house on a hillside in some forgotten town\nWhere the river runs down from the forest\n\nWith a mighty roar the big jets soar above the canyon streets\nAnd the common con but life goes on for the city never sleeps\nAnd to an old forgotten soldier the dawn will come no more\nFor the old man has come home from the forest",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All the neon lights were flashin\u2019 and the icy wind did blow",
+        "The water seeped into his shoes and the drizzle turned to snow",
+        "His eyes were red his hopes were dead and the wine was runnin\u2019 low",
+        "Then the old man came home from the forest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His tears fell on the sidewalk as he stumbled in the street",
+        "A dozen faces stopped to stare but no one stopped to speak",
+        "For his castle was a hallway and a bottle his only friend",
+        "And the old man stumbled in from the forest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Up a dark and dingy staircase the old man made his way",
+        "His ragged coat around him as upon his cot he lay",
+        "And he wondered how it happened that he ended up this way",
+        "Gettin\u2019 lost like a fool in the forest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And as he lay there sleepin\u2019 a vision did appear",
+        "Upon his mantle shining the face of one so dear",
+        "Who\u2019d loved him in the springtime of a long forgotten year",
+        "When the wildflowers did bloom in the forest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She touched his grizzled fingers and she called him by his name",
+        "And then he heard the joyful sound of children at their games",
+        "In an old house on a hillside in some forgotten town",
+        "Where the river runs down from the forest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With a mighty roar the big jets soar above the canyon streets",
+        "And the common con but life goes on for the city never sleeps",
+        "And to an old forgotten soldier the dawn will come no more",
+        "For the old man has come home from the forest"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

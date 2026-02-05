@@ -1,0 +1,49 @@
+{
+  "slug": "mountains-of-tennessee-the",
+  "title": "Mountains Of Tennessee, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/mountains-of-tennessee-the/",
+  "raw_lyrics": "Take me back take me back to my old mountain home\nTake me back where my heart longs to be\nWhere we played by the brook in the cool shady nook\nIn the mountains of Tennessee\n\nIn my old mountain home where the wild roses bloom\nIs a spot just like heaven to me\nTake me back take me back to my old mountain home\nIn the mountains of Tennessee\n\nTake me back take me back to my old mountain home\nTake me back to my old mothers knee\nWhere the stars shine bright and the birds are free\nIn the mountains of Tennessee\n\nRound my old mountain home where I used to roam\nTheir waiting a welcome for me\nTake me back to my old log cabin home\nIn the mountains of Tennessee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Take me back take me back to my old mountain home",
+        "Take me back where my heart longs to be",
+        "Where we played by the brook in the cool shady nook",
+        "In the mountains of Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In my old mountain home where the wild roses bloom",
+        "Is a spot just like heaven to me",
+        "Take me back take me back to my old mountain home",
+        "In the mountains of Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take me back take me back to my old mountain home",
+        "Take me back to my old mothers knee",
+        "Where the stars shine bright and the birds are free",
+        "In the mountains of Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Round my old mountain home where I used to roam",
+        "Their waiting a welcome for me",
+        "Take me back to my old log cabin home",
+        "In the mountains of Tennessee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

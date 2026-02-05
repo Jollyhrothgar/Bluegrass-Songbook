@@ -1,0 +1,49 @@
+{
+  "slug": "ramblin-away",
+  "title": "Ramblin Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/ramblin-away/",
+  "raw_lyrics": "Made up my mind my darlin\nMade up my mind today\nI\u2019m feeling this way and there\u2019s no use to stay\nHoney I\u2019m ramblin away\n\nMade up my mind and I\u2019m leavin\nGoin away to stay\nI\u2019ve decided it\u2019s best and you know all the rest\nHoney I\u2019m ramblin away\n\nOnce I believed sincerely\nThat you\u2019d be mine someday\nBut I do all I do for me and for you\nHoney I\u2019m ramblin away\n\nAll I had hoped for honey\nWas just to hear you say\nThat to me you\u2019d be true but now I\u2019m so blue\nHoney I\u2019m ramblin away",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Made up my mind my darlin",
+        "Made up my mind today",
+        "I\u2019m feeling this way and there\u2019s no use to stay",
+        "Honey I\u2019m ramblin away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Made up my mind and I\u2019m leavin",
+        "Goin away to stay",
+        "I\u2019ve decided it\u2019s best and you know all the rest",
+        "Honey I\u2019m ramblin away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once I believed sincerely",
+        "That you\u2019d be mine someday",
+        "But I do all I do for me and for you",
+        "Honey I\u2019m ramblin away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All I had hoped for honey",
+        "Was just to hear you say",
+        "That to me you\u2019d be true but now I\u2019m so blue",
+        "Honey I\u2019m ramblin away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

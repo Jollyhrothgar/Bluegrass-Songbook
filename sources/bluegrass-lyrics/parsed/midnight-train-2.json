@@ -1,0 +1,41 @@
+{
+  "slug": "midnight-train-2",
+  "title": "Midnight Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/midnight-train-2/",
+  "raw_lyrics": "No matter what I say or do you\u2019re never satisfied\nI\u2019ve tried and tried so many times I\u2019m leavin you now good bye\n\nI\u2019m ridin on that midnight train my head\u2019s a hangin low\nThese awful blues will follow me where ever I may go\n\nOh why on earth was I ever born I\u2019ll never understand\nTo fall in love with a woman like you in love with another man\n\nYou broke a heart that trusted you why wasn\u2019t it made of stone\nI\u2019m left in a world black as night, yet I must journey on",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "No matter what I say or do you\u2019re never satisfied",
+        "I\u2019ve tried and tried so many times I\u2019m leavin you now good bye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m ridin on that midnight train my head\u2019s a hangin low",
+        "These awful blues will follow me where ever I may go"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh why on earth was I ever born I\u2019ll never understand",
+        "To fall in love with a woman like you in love with another man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You broke a heart that trusted you why wasn\u2019t it made of stone",
+        "I\u2019m left in a world black as night, yet I must journey on"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

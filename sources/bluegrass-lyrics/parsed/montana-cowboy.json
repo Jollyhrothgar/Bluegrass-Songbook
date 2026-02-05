@@ -1,0 +1,39 @@
+{
+  "slug": "montana-cowboy",
+  "title": "Montana Cowboy",
+  "source_url": "https://www.bluegrasslyrics.com/song/montana-cowboy/",
+  "raw_lyrics": "For many long years I played the lone hand\nI rode my horse in many strange lands\nUntil one day I stopped for awhile\nFor two blue eyes and sunny smile\n\nSo howl away you old coyote\nI hear your sad and lonesome song\n\u2018a calling me back to old Montana\nBack to those hills where I belong\n\nOne day I rode away from home\nI\u2019m a traveling back but it won\u2019t be long\nI\u2019ll see you again in a little while\nYou\u2019re my darling sweet my sunny smile",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "For many long years I played the lone hand",
+        "I rode my horse in many strange lands",
+        "Until one day I stopped for awhile",
+        "For two blue eyes and sunny smile"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So howl away you old coyote",
+        "I hear your sad and lonesome song",
+        "\u2018a calling me back to old Montana",
+        "Back to those hills where I belong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One day I rode away from home",
+        "I\u2019m a traveling back but it won\u2019t be long",
+        "I\u2019ll see you again in a little while",
+        "You\u2019re my darling sweet my sunny smile"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "old-country-church",
+  "title": "Old Country Church",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-country-church/",
+  "raw_lyrics": "There\u2019s a place dear to me where I\u2019m longing to be\nWith my friends at the old country church\nThere with mother we went, and our Sundays were spent\nWith my friends at the old country church\n\nPrecious years precious years, sweet memory\nOh what joy they bring to me\nHow I long once more to be\nWith my friends at the old country church\n\nAs a small country boy, how my heart beat with joy\nAs I knelt at the old country church\nThere with Jesus above in his wonderful love\nSaved my soul at the old country church\n\nHow I wish that today all the people would pray\nAs they did at the old country church\nIf they\u2019d only confess, Jesus surely would bless\nAs he did at the old country church",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a place dear to me where I\u2019m longing to be",
+        "With my friends at the old country church",
+        "There with mother we went, and our Sundays were spent",
+        "With my friends at the old country church"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Precious years precious years, sweet memory",
+        "Oh what joy they bring to me",
+        "How I long once more to be",
+        "With my friends at the old country church"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As a small country boy, how my heart beat with joy",
+        "As I knelt at the old country church",
+        "There with Jesus above in his wonderful love",
+        "Saved my soul at the old country church"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How I wish that today all the people would pray",
+        "As they did at the old country church",
+        "If they\u2019d only confess, Jesus surely would bless",
+        "As he did at the old country church"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

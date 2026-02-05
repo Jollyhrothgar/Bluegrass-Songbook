@@ -1,0 +1,59 @@
+{
+  "slug": "dont-drink-from-a-whiskey-bottle",
+  "title": "Don\u2019t Drink From A Whiskey Bottle",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-drink-from-a-whiskey-bottle/",
+  "raw_lyrics": "Hey bartender\nPour a round for me\nI can\u2019t go home it\u2019s getting\u2019 late\nMy baby don\u2019t love me\n\nAll you boys gather round\nif whiskey rules your life\nStay out of bars and ol\u2019 pool halls\nand marry you a wife\n\nTrouble Trouble\nwill find you anyway\nYou\u2019re bound to die a drunkard\u2019s life\nif you don\u2019t mind your ways\n\nI had a girl she loved me true\nI was livin\u2019 way to fast\nNow I live in a whiskey dream\nmy end has come at last\n\nOne more thing I\u2019ll tell you\nIf you life gets out of hand\nDon\u2019t drink from a whiskey bottle\nYou\u2019ll die a lonely man",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Hey bartender",
+        "Pour a round for me",
+        "I can\u2019t go home it\u2019s getting\u2019 late",
+        "My baby don\u2019t love me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All you boys gather round",
+        "if whiskey rules your life",
+        "Stay out of bars and ol\u2019 pool halls",
+        "and marry you a wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Trouble Trouble",
+        "will find you anyway",
+        "You\u2019re bound to die a drunkard\u2019s life",
+        "if you don\u2019t mind your ways"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had a girl she loved me true",
+        "I was livin\u2019 way to fast",
+        "Now I live in a whiskey dream",
+        "my end has come at last"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One more thing I\u2019ll tell you",
+        "If you life gets out of hand",
+        "Don\u2019t drink from a whiskey bottle",
+        "You\u2019ll die a lonely man"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "where-the-city-ends",
+  "title": "Where the City Ends",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-the-city-ends/",
+  "raw_lyrics": "In withered fields homes like soldiers now stand\nDistant hills alone no more to be\nAnd the city is a ragin\u2019 fire\nCast about upon the lone prairie\n\nWe don\u2019t know where the city begins\nWe don\u2019t know where the city ends\nWhat is left of the wild and free\nIs the seed upon the wind and the waves upon the sea\n\nThe dust of dreams that could be brought\nTo every Oklahoma child\nIs the dust below the buffalo\nThat lies still beneath the highway miles\n\nWhere rivers flow the path a tortured road\nPromised angels from desert land\nMighty waters just a name and a dream\nColorado Black and Rio Grande",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In withered fields homes like soldiers now stand",
+        "Distant hills alone no more to be",
+        "And the city is a ragin\u2019 fire",
+        "Cast about upon the lone prairie"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We don\u2019t know where the city begins",
+        "We don\u2019t know where the city ends",
+        "What is left of the wild and free",
+        "Is the seed upon the wind and the waves upon the sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The dust of dreams that could be brought",
+        "To every Oklahoma child",
+        "Is the dust below the buffalo",
+        "That lies still beneath the highway miles"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where rivers flow the path a tortured road",
+        "Promised angels from desert land",
+        "Mighty waters just a name and a dream",
+        "Colorado Black and Rio Grande"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

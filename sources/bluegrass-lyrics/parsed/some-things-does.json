@@ -1,0 +1,39 @@
+{
+  "slug": "some-things-does",
+  "title": "Some Things Does",
+  "source_url": "https://www.bluegrasslyrics.com/song/some-things-does/",
+  "raw_lyrics": "To us God has bestowed the things that we have come to love\nAnd the Devil brought us trouble that hurt God from up above\nWe are left to choose the ways temptations are abound\nSome things does some things don\u2019t lead us to a higher ground\n\nSome things does and some things don\u2019t\nLead us to the stairway to God\u2019s eternal home\nWe are left to choose the ways temptations are abound\nSome things does some things don\u2019t lead us to a higher ground\n\nSome men raise their families or spend all their time in bars\nWhiskey from the bottle son don\u2019t get you very far\nChoose what\u2019s right upset the curve put stock in doin fine\nAll good things in all good time lead us to paradise",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "To us God has bestowed the things that we have come to love",
+        "And the Devil brought us trouble that hurt God from up above",
+        "We are left to choose the ways temptations are abound",
+        "Some things does some things don\u2019t lead us to a higher ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Some things does and some things don\u2019t",
+        "Lead us to the stairway to God\u2019s eternal home",
+        "We are left to choose the ways temptations are abound",
+        "Some things does some things don\u2019t lead us to a higher ground"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some men raise their families or spend all their time in bars",
+        "Whiskey from the bottle son don\u2019t get you very far",
+        "Choose what\u2019s right upset the curve put stock in doin fine",
+        "All good things in all good time lead us to paradise"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

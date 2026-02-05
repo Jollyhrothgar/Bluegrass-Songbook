@@ -1,0 +1,39 @@
+{
+  "slug": "no-doubt-about-it",
+  "title": "No Doubt About It",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-doubt-about-it/",
+  "raw_lyrics": "I think you\u2019re the sweetest thing and I like your talk\nI like your curly hair honey and I like your walk\nI like the way you hold me I like your eyes of blue\nThere\u2019s no doubt it honey I\u2019m in love with you\n\nOh when you hold me my poor heart skips a beat\nMm when you kiss me it knocks me off my feet\nI like your little stories I like everything you do\nThere\u2019s no doubt about it I\u2019m crazy over you\n\nI like the way you smile I like your dimpled chin\nI like to see you laugh and I like to see you grin\nI like the way you hold me I like everything you do\nThere\u2019s no doubt about it honey I\u2019m in love with you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I think you\u2019re the sweetest thing and I like your talk",
+        "I like your curly hair honey and I like your walk",
+        "I like the way you hold me I like your eyes of blue",
+        "There\u2019s no doubt it honey I\u2019m in love with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh when you hold me my poor heart skips a beat",
+        "Mm when you kiss me it knocks me off my feet",
+        "I like your little stories I like everything you do",
+        "There\u2019s no doubt about it I\u2019m crazy over you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I like the way you smile I like your dimpled chin",
+        "I like to see you laugh and I like to see you grin",
+        "I like the way you hold me I like everything you do",
+        "There\u2019s no doubt about it honey I\u2019m in love with you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "last-train-from-poor-valley",
+  "title": "Last Train From Poor Valley",
+  "source_url": "https://www.bluegrasslyrics.com/song/last-train-from-poor-valley/",
+  "raw_lyrics": "Well it was good one time everything was mighty fine\nThe coal tipples roared day and night\nBut things they got slow for no reason that I know\nAnd ill winds they hove into sight\n\nThe mines all closed down everybody laid around\nThere wasn\u2019t very much that you could do\nExcept stand in that line to get your ration script on time\nAnd woman I could see it killin\u2019 you\n\nNow the soft new snows of December\nLightly fall my cabin \u2019round\nSo that last train from Poor Valley\nTakin\u2019 brown haired Becky Richmond bound\n\nIt\u2019s been a comin\u2019 on I knew soon you would be gone\nLeavin\u2019 crossed your mind every day\nThen you said to me things are bad at home you see\nI guess I\u2019d better be on my way\n\nI should blame you now but I never could somehow\nA miner\u2019s wife you weren\u2019t cut out to be\nIt wasn\u2019t what you thought just some dreams Lord that you\u2019d bought\nWhen you left your home and ran away with me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well it was good one time everything was mighty fine",
+        "The coal tipples roared day and night",
+        "But things they got slow for no reason that I know",
+        "And ill winds they hove into sight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The mines all closed down everybody laid around",
+        "There wasn\u2019t very much that you could do",
+        "Except stand in that line to get your ration script on time",
+        "And woman I could see it killin\u2019 you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the soft new snows of December",
+        "Lightly fall my cabin \u2019round",
+        "So that last train from Poor Valley",
+        "Takin\u2019 brown haired Becky Richmond bound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s been a comin\u2019 on I knew soon you would be gone",
+        "Leavin\u2019 crossed your mind every day",
+        "Then you said to me things are bad at home you see",
+        "I guess I\u2019d better be on my way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I should blame you now but I never could somehow",
+        "A miner\u2019s wife you weren\u2019t cut out to be",
+        "It wasn\u2019t what you thought just some dreams Lord that you\u2019d bought",
+        "When you left your home and ran away with me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

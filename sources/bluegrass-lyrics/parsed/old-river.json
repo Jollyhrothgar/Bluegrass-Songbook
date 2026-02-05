@@ -1,0 +1,49 @@
+{
+  "slug": "old-river",
+  "title": "Old River",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-river/",
+  "raw_lyrics": "Old river you\u2019re wide, you\u2019re deep and your cold\nYou make a lonesome old sound as onward you roll\n\u2018Neath the crest of your waves I know I could sleep\nAnd forget all the sorrows you brought to me\n\nMany\u2019s the time and many\u2019s the night\nWe sat there talkin\u2019, makin\u2019 things right\nYou\u2019ve heard all our vows, you\u2019ve heard all our plans\nOh river I know that you\u2019ll understand\n\nThe dawn is breakin\u2019 on sea and on land\nAs I write my farewell upon your sand\nYour wings will embrace me, my body you\u2019ll claim\nOh river oh river you\u2019re calling my name\n\nOh the ways of love is often times cold\nLike the hearts of lovers, when love grows cold\nRiver oh river your depths dark and deep\nIn a watery grave forever I\u2019ll sleep",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Old river you\u2019re wide, you\u2019re deep and your cold",
+        "You make a lonesome old sound as onward you roll",
+        "\u2018Neath the crest of your waves I know I could sleep",
+        "And forget all the sorrows you brought to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many\u2019s the time and many\u2019s the night",
+        "We sat there talkin\u2019, makin\u2019 things right",
+        "You\u2019ve heard all our vows, you\u2019ve heard all our plans",
+        "Oh river I know that you\u2019ll understand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The dawn is breakin\u2019 on sea and on land",
+        "As I write my farewell upon your sand",
+        "Your wings will embrace me, my body you\u2019ll claim",
+        "Oh river oh river you\u2019re calling my name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the ways of love is often times cold",
+        "Like the hearts of lovers, when love grows cold",
+        "River oh river your depths dark and deep",
+        "In a watery grave forever I\u2019ll sleep"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

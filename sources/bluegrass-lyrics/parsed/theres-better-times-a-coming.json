@@ -1,0 +1,47 @@
+{
+  "slug": "theres-better-times-a-coming",
+  "title": "There\u2019s Better Times A Coming",
+  "source_url": "https://www.bluegrasslyrics.com/song/theres-better-times-a-coming/",
+  "raw_lyrics": "Well, the cows gone dry, the hens won\u2019t lay, no place I can borrow\nI give the landlord all the news and the rent comes due tomorrow\nThere\u2019s lots of money in the bank they say that\u2019s where they keep it\nNot only wouldn\u2019t they loan me some they wouldn\u2019t let me see it\n\nSo pick away on the old banjo, keep that guitar strumming\nPut more water in the soup there\u2019s better times a coming\n\nWell Mary Lou could pull a plow if only I would let her\nShe\u2019s twice as strong as any ox but looks a little better\nI didn\u2019t kiss that Mary Lou but once and then I had to leave her\nShe made my collar get too high and start the burning fever\n\nMy rooster used to chase the hens he just kept a getting thinner\nIt\u2019s afraid he\u2019d run himself to death so I brought him in for dinner\nYes (the) cotton crops are pretty poor the weeds are really growing\nI need a woman pretty bad to help me with the hoeing",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well, the cows gone dry, the hens won\u2019t lay, no place I can borrow",
+        "I give the landlord all the news and the rent comes due tomorrow",
+        "There\u2019s lots of money in the bank they say that\u2019s where they keep it",
+        "Not only wouldn\u2019t they loan me some they wouldn\u2019t let me see it"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So pick away on the old banjo, keep that guitar strumming",
+        "Put more water in the soup there\u2019s better times a coming"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well Mary Lou could pull a plow if only I would let her",
+        "She\u2019s twice as strong as any ox but looks a little better",
+        "I didn\u2019t kiss that Mary Lou but once and then I had to leave her",
+        "She made my collar get too high and start the burning fever"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My rooster used to chase the hens he just kept a getting thinner",
+        "It\u2019s afraid he\u2019d run himself to death so I brought him in for dinner",
+        "Yes (the) cotton crops are pretty poor the weeds are really growing",
+        "I need a woman pretty bad to help me with the hoeing"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

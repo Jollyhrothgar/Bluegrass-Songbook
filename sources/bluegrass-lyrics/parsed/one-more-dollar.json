@@ -1,0 +1,59 @@
+{
+  "slug": "one-more-dollar",
+  "title": "One More Dollar",
+  "source_url": "https://www.bluegrasslyrics.com/song/one-more-dollar/",
+  "raw_lyrics": "A long time ago I left my home\nFor a job in the fruit trees\nI missed those hills with the windy pines\nFor their song seemed to suit me\n\nI sent my wages to my home\nSaid we\u2019d soon be together\nFor the next good crop  would pay my way\nI\u2019ll be coming home forever\n\nOne more dime to show for my day\nOne more dollar and I\u2019m on my way\nWhen I reach those hills boys I\u2019ll never roam\nOne more dollar and I\u2019m going home\n\nNo work said the boss at the bunk house door\nThere\u2019s a freeze on the branches\nWhen the dice came out at the bar downtown\nI rolled and I took my chances\n\nA long time ago I left my home\nJust a boy passing twenty\nCould you spare a coin and a Christian prayer\nFor my luck has turned against me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A long time ago I left my home",
+        "For a job in the fruit trees",
+        "I missed those hills with the windy pines",
+        "For their song seemed to suit me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I sent my wages to my home",
+        "Said we\u2019d soon be together",
+        "For the next good crop  would pay my way",
+        "I\u2019ll be coming home forever"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "One more dime to show for my day",
+        "One more dollar and I\u2019m on my way",
+        "When I reach those hills boys I\u2019ll never roam",
+        "One more dollar and I\u2019m going home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No work said the boss at the bunk house door",
+        "There\u2019s a freeze on the branches",
+        "When the dice came out at the bar downtown",
+        "I rolled and I took my chances"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A long time ago I left my home",
+        "Just a boy passing twenty",
+        "Could you spare a coin and a Christian prayer",
+        "For my luck has turned against me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

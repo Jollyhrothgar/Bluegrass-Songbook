@@ -1,0 +1,58 @@
+{
+  "slug": "footsteps-so-near",
+  "title": "Footsteps So Near",
+  "source_url": "https://www.bluegrasslyrics.com/song/footsteps-so-near/",
+  "raw_lyrics": "There\u2019s a tale that they tell down in ol\u2019 Wolf County\nAbout a murderous husband and his family of three\nOne day his neighbors from over the hill\nit was so deathly still\n\nThe killer he left a note and I know how it read\nI hope you don\u2019t find me I\u2019d rather be dead\nThen live in your jailhouse for the rest of my days\n\u2018Til the jury it hangs me for my wicked ways\n\nSometimes at night I wake to the sound\nOf the men in the distance and baying of hounds\nOnce on a full moon in the spring of the year\nI heard breaking branches and footsteps so near\n\nWell the posse searched it was five days or more\nHe head in the caves gave himself up\n\u2018Fore he got to the courthouse a man a shot him down\n\nHe said I\u2019m not sorry for what I have done\nBut I cannot live like a man on the ran\nI\u2019m glad that you killed me you can dig me my grave\nIt can\u2019t be much worse thanthat dark lonely cave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a tale that they tell down in ol\u2019 Wolf County",
+        "About a murderous husband and his family of three",
+        "One day his neighbors from over the hill",
+        "it was so deathly still"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The killer he left a note and I know how it read",
+        "I hope you don\u2019t find me I\u2019d rather be dead",
+        "Then live in your jailhouse for the rest of my days",
+        "\u2018Til the jury it hangs me for my wicked ways"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes at night I wake to the sound",
+        "Of the men in the distance and baying of hounds",
+        "Once on a full moon in the spring of the year",
+        "I heard breaking branches and footsteps so near"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the posse searched it was five days or more",
+        "He head in the caves gave himself up",
+        "\u2018Fore he got to the courthouse a man a shot him down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He said I\u2019m not sorry for what I have done",
+        "But I cannot live like a man on the ran",
+        "I\u2019m glad that you killed me you can dig me my grave",
+        "It can\u2019t be much worse thanthat dark lonely cave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "thanks-a-lot",
+  "title": "Thanks A Lot",
+  "source_url": "https://www.bluegrasslyrics.com/song/thanks-a-lot/",
+  "raw_lyrics": "THANKS THANKS A LOT\nI  GOT A BROKEN HEART AND THAT\u2019S ALL I  GOT\nYOU MADE ME CRY AND I CRIED A LOT\nTHEN YOU WERE GONE HONEY THANKS A LOT\n\nYOU TOLD MY FRIENDS AS I WAS PASSIN\u2019 BY\nTHAT YOUR NOT SORRY THAT YOU MADE ME CRY\nYOU SAID I DESERVED EVERYTHING I GOT\nIF THAT\u2019S THE WAY YOU FEEL HONEY THANKS A LOT\n\nYOU WANTED A FOOL AND I PLAYED THE PART\nALL I GOT IS A BROKEN HEART\nWE LOVED A LITTLE AND YOU LAUGHED A LOT\nTHEN YOU WERE GONE HONEY THANKS A LOT\n\nI JUST NEEDED YOUR LOVE\nHONEY THANKS A LOT",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "THANKS THANKS A LOT",
+        "I  GOT A BROKEN HEART AND THAT\u2019S ALL I  GOT",
+        "YOU MADE ME CRY AND I CRIED A LOT",
+        "THEN YOU WERE GONE HONEY THANKS A LOT"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "YOU TOLD MY FRIENDS AS I WAS PASSIN\u2019 BY",
+        "THAT YOUR NOT SORRY THAT YOU MADE ME CRY",
+        "YOU SAID I DESERVED EVERYTHING I GOT",
+        "IF THAT\u2019S THE WAY YOU FEEL HONEY THANKS A LOT"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "YOU WANTED A FOOL AND I PLAYED THE PART",
+        "ALL I GOT IS A BROKEN HEART",
+        "WE LOVED A LITTLE AND YOU LAUGHED A LOT",
+        "THEN YOU WERE GONE HONEY THANKS A LOT"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I JUST NEEDED YOUR LOVE",
+        "HONEY THANKS A LOT"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

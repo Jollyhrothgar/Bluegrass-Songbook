@@ -1,0 +1,49 @@
+{
+  "slug": "i-hope-youve-learned",
+  "title": "I Hope You\u2019ve Learned",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-hope-youve-learned/",
+  "raw_lyrics": "I\u2019ve been away for just a year\nHave you forgotten me my dear\nThe judge said I must pay the cost\nI never knew how much I lost\n\nUntil they send me far away\nWhere each minute seems a day\nBut maybe someday I\u2019ll be free\nWill you be waiting there for me\n\nI\u2019m in this cell because of you\nThe crime I did you drove me too\nMy jealous heart just could not stand\nTo see you with another man\n\nI hope someday that you will learn\nAnd broken hearted you return\nBut listen darlin\u2019 please don\u2019t wait\nFor maybe then will be too late",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been away for just a year",
+        "Have you forgotten me my dear",
+        "The judge said I must pay the cost",
+        "I never knew how much I lost"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Until they send me far away",
+        "Where each minute seems a day",
+        "But maybe someday I\u2019ll be free",
+        "Will you be waiting there for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m in this cell because of you",
+        "The crime I did you drove me too",
+        "My jealous heart just could not stand",
+        "To see you with another man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hope someday that you will learn",
+        "And broken hearted you return",
+        "But listen darlin\u2019 please don\u2019t wait",
+        "For maybe then will be too late"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

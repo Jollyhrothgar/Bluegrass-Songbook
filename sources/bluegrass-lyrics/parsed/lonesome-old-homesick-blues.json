@@ -1,0 +1,49 @@
+{
+  "slug": "lonesome-old-homesick-blues",
+  "title": "Lonesome Old Homesick Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-old-homesick-blues/",
+  "raw_lyrics": "I\u2019ve got the lonesome old homesick blues\nI\u2019ve got \u2019em bad babe down in my shoes\nI left someone there that I might lose\nThat\u2019s why I\u2019ve got these old homesick blues.\n\nIt makes me homesick to hear your name\nTo want you near in my arms again\nI\u2019m gonna ride in your lonesome train\nTo the one I left back in Mason Springs\n\nI\u2019ve been away for a long long time\nI\u2019m riding down this old railroad line\nTo the one I left in that home of mine\nthis lonesome blue heart of mine.\n\nYou told me once dear you loved me so\nAnd it\u2019s on my mind now everywhere I go\nI\u2019ll soon be knowing if this is so\nOr has your love for me gone cold",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got the lonesome old homesick blues",
+        "I\u2019ve got \u2019em bad babe down in my shoes",
+        "I left someone there that I might lose",
+        "That\u2019s why I\u2019ve got these old homesick blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It makes me homesick to hear your name",
+        "To want you near in my arms again",
+        "I\u2019m gonna ride in your lonesome train",
+        "To the one I left back in Mason Springs"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been away for a long long time",
+        "I\u2019m riding down this old railroad line",
+        "To the one I left in that home of mine",
+        "this lonesome blue heart of mine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You told me once dear you loved me so",
+        "And it\u2019s on my mind now everywhere I go",
+        "I\u2019ll soon be knowing if this is so",
+        "Or has your love for me gone cold"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

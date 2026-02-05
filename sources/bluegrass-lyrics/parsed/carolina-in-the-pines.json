@@ -1,0 +1,69 @@
+{
+  "slug": "carolina-in-the-pines",
+  "title": "Carolina In The Pines",
+  "source_url": "https://www.bluegrasslyrics.com/song/carolina-in-the-pines/",
+  "raw_lyrics": "She came to me said she knew me\nSaid she\u2019d known me a long time\nAnd she talked of being in love\nWith every mountain she had climbed\n\nAnd she talked of trails she\u2019d walked up\nFar above the timberline\nFrom that night on I knew I\u2019d write songs\nFor Carolina in the pines.\n\nThere\u2019s a full moon on the fourteenth\nFirst quarter twenty-first\nAnd a full moon in the last week\nBrings a fullness to the earth.\n\nThere\u2019s no guess work in the clockwork\nOf the world\u2019s heart or mine\nThere are nights I only feel right\nWith Carolina in the pines.\n\nAs the frost grows on the windows\nThe wood stove smokes and glows\nAs the fire glows we can warm our souls\nMakin\u2019 rainbows in the coals.\n\nAnd we talk of trails we walk up\nFar above the timberline\nThere are nights I only feel right\nWith Carolina in the pines.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She came to me said she knew me",
+        "Said she\u2019d known me a long time",
+        "And she talked of being in love",
+        "With every mountain she had climbed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And she talked of trails she\u2019d walked up",
+        "Far above the timberline",
+        "From that night on I knew I\u2019d write songs",
+        "For Carolina in the pines."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a full moon on the fourteenth",
+        "First quarter twenty-first",
+        "And a full moon in the last week",
+        "Brings a fullness to the earth."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s no guess work in the clockwork",
+        "Of the world\u2019s heart or mine",
+        "There are nights I only feel right",
+        "With Carolina in the pines."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As the frost grows on the windows",
+        "The wood stove smokes and glows",
+        "As the fire glows we can warm our souls",
+        "Makin\u2019 rainbows in the coals."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And we talk of trails we walk up",
+        "Far above the timberline",
+        "There are nights I only feel right",
+        "With Carolina in the pines."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

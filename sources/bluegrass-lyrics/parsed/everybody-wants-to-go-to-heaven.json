@@ -1,0 +1,46 @@
+{
+  "slug": "everybody-wants-to-go-to-heaven",
+  "title": "Everybody Wants To Go To Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/everybody-wants-to-go-to-heaven/",
+  "raw_lyrics": "Everybody wants to go to heaven but nobody wants to die\nLord I wanna go to heavenbut I don\u2019t wanna die\nI long for the day that I\u2019ll have a new birth \u2018stead of grievin\u2019 here on earth\nEverybody wants to go to heaven but nobody wants to die.\n\nOnce upon a time there was a man his name was Heas-i-kie\nHe walked with God both day and night but he didn\u2019t want to die\nHe cried Oh Lord, please let me live, oh, mend these broken bones\nGod smiled down on Heasikie and gave him fifteen years to go.\n\nWhen Jesus walked upon this earth he knew his father\u2019s friends\nHe knew that he must give his life to save the soul of man\nWhen Judas had betrayed him his father heard his cry\nHe was brave enough unto his death but he didn\u2019t want to die.\n\nEarl Scruggs Revue;  Live At Kansas State",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Everybody wants to go to heaven but nobody wants to die",
+        "Lord I wanna go to heavenbut I don\u2019t wanna die",
+        "I long for the day that I\u2019ll have a new birth \u2018stead of grievin\u2019 here on earth",
+        "Everybody wants to go to heaven but nobody wants to die."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once upon a time there was a man his name was Heas-i-kie",
+        "He walked with God both day and night but he didn\u2019t want to die",
+        "He cried Oh Lord, please let me live, oh, mend these broken bones",
+        "God smiled down on Heasikie and gave him fifteen years to go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When Jesus walked upon this earth he knew his father\u2019s friends",
+        "He knew that he must give his life to save the soul of man",
+        "When Judas had betrayed him his father heard his cry",
+        "He was brave enough unto his death but he didn\u2019t want to die."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Earl Scruggs Revue;  Live At Kansas State"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "look-for-me-ill-be-there",
+  "title": "Look For Me (I\u2019ll Be There)",
+  "source_url": "https://www.bluegrasslyrics.com/song/look-for-me-ill-be-there/",
+  "raw_lyrics": "Through this world of pain and sorrow\nI have traveled night and day\nBut my life will soon be over\nAnd I must jour-  (and I must jour-)  ney on my way\n\nOh look for me (look for me) for I\u2019ll be there (yes I\u2019ll be there)\nJust look for me (just look for me) for I\u2019ll be there\nWhen you reach the gates of heaven\nLook for me (look for me) for I\u2019ll be there (yes I\u2019ll be there)\n\nI\u2019m going to a land of pleasure\nWhere no one ever knows a care\nAnd when you reach the gates of heaven\nLook for me (look for me) for I\u2019ll be there (yes I\u2019ll be there)",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Through this world of pain and sorrow",
+        "I have traveled night and day",
+        "But my life will soon be over",
+        "And I must jour-  (and I must jour-)  ney on my way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh look for me (look for me) for I\u2019ll be there (yes I\u2019ll be there)",
+        "Just look for me (just look for me) for I\u2019ll be there",
+        "When you reach the gates of heaven",
+        "Look for me (look for me) for I\u2019ll be there (yes I\u2019ll be there)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going to a land of pleasure",
+        "Where no one ever knows a care",
+        "And when you reach the gates of heaven",
+        "Look for me (look for me) for I\u2019ll be there (yes I\u2019ll be there)"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

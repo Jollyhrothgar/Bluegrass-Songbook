@@ -1,0 +1,49 @@
+{
+  "slug": "bury-me-beneath-the-willow",
+  "title": "Bury Me Beneath The Willow",
+  "source_url": "https://www.bluegrasslyrics.com/song/bury-me-beneath-the-willow/",
+  "raw_lyrics": "Oh, bury me beneath the willow\nUnder the weeping willow tree\nSo she will know where I am sleeping\nAnd perhaps she\u2019ll weep for me\n\nMy heart is sad I am lonely\nFor the only one I love\nWhen shall I see her oh no never\n\u2018Til we meet in heaven above\n\nShe told me that she dearly loved me\nHow could I believe it untrue\nUntil the angels softly whispered\nShe will prove untrue to you\n\nTomorrow was to be our wedding\nGod oh God where can she be\nShe\u2019s out a courting with another\nAnd no longer cares for me",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, bury me beneath the willow",
+        "Under the weeping willow tree",
+        "So she will know where I am sleeping",
+        "And perhaps she\u2019ll weep for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My heart is sad I am lonely",
+        "For the only one I love",
+        "When shall I see her oh no never",
+        "\u2018Til we meet in heaven above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She told me that she dearly loved me",
+        "How could I believe it untrue",
+        "Until the angels softly whispered",
+        "She will prove untrue to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tomorrow was to be our wedding",
+        "God oh God where can she be",
+        "She\u2019s out a courting with another",
+        "And no longer cares for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

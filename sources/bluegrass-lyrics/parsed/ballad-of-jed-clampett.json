@@ -1,0 +1,43 @@
+{
+  "slug": "ballad-of-jed-clampett",
+  "title": "Ballad Of Jed Clampett",
+  "source_url": "https://www.bluegrasslyrics.com/song/ballad-of-jed-clampett/",
+  "raw_lyrics": "Come and listen to a story \u2019bout a man named Jed\nPoor mountaineer barely kept his family fed\nThen one day he was shooting for some food,\nAnd up through the ground come a bubbling crude\n(Oil that is, black gold, Texas tea)\n\nWell the first thing you know old Jed\u2019s a millionaire\nKin folk said Jed move away from there\nSaid California is the place you oughta be\nSo they loaded up the truck and they moved to Beverly\n(Hills that is, swimming pools, movie stars)\n\nWell now it\u2019s time to say goodbye to Jed and all his kin\nThey would like to thank you folks for kindly dropping in\nYou\u2019re all invited back again to this locality\nTo have a heaping helping of their hospitality\n(Beverly Hillbillies, that\u2019s what they call \u2019em now,\nNice folks Y\u2019all come back now, ya hear?)",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come and listen to a story \u2019bout a man named Jed",
+        "Poor mountaineer barely kept his family fed",
+        "Then one day he was shooting for some food,",
+        "And up through the ground come a bubbling crude",
+        "(Oil that is, black gold, Texas tea)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the first thing you know old Jed\u2019s a millionaire",
+        "Kin folk said Jed move away from there",
+        "Said California is the place you oughta be",
+        "So they loaded up the truck and they moved to Beverly",
+        "(Hills that is, swimming pools, movie stars)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well now it\u2019s time to say goodbye to Jed and all his kin",
+        "They would like to thank you folks for kindly dropping in",
+        "You\u2019re all invited back again to this locality",
+        "To have a heaping helping of their hospitality",
+        "(Beverly Hillbillies, that\u2019s what they call \u2019em now,",
+        "Nice folks Y\u2019all come back now, ya hear?)"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

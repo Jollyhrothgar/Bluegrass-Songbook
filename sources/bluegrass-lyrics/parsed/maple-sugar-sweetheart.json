@@ -1,0 +1,39 @@
+{
+  "slug": "maple-sugar-sweetheart",
+  "title": "Maple Sugar Sweetheart",
+  "source_url": "https://www.bluegrasslyrics.com/song/maple-sugar-sweetheart/",
+  "raw_lyrics": "Oh I left her in the mountains in the golden summertime\nI told her not to worry little darling pal of mine\nI told her that I loved her and always would be true\nWhen the moon comes o\u2019er the mountain I\u2019ll be waitin\u2019 there for you\n\nShe\u2019s my darling she\u2019s my sweetheart she\u2019s the one for me\nWith a heart as pure as gold and in dreams her face I see\nSoon I\u2019ll be returning and the wedding bells will chime\nAnd I\u2019ll make her mine forever when it\u2019s maple sugar time\n\nJerry Tuckett will play the fiddle folks will come from miles away\nTo the maple sugar hoedown what a happy wedding day\nI\u2019ll be a country king and I\u2019ll paint a pretty scene\nI\u2019ll kiss her smiling ruby lips she\u2019ll be my maple sugar Queen",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I left her in the mountains in the golden summertime",
+        "I told her not to worry little darling pal of mine",
+        "I told her that I loved her and always would be true",
+        "When the moon comes o\u2019er the mountain I\u2019ll be waitin\u2019 there for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s my darling she\u2019s my sweetheart she\u2019s the one for me",
+        "With a heart as pure as gold and in dreams her face I see",
+        "Soon I\u2019ll be returning and the wedding bells will chime",
+        "And I\u2019ll make her mine forever when it\u2019s maple sugar time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jerry Tuckett will play the fiddle folks will come from miles away",
+        "To the maple sugar hoedown what a happy wedding day",
+        "I\u2019ll be a country king and I\u2019ll paint a pretty scene",
+        "I\u2019ll kiss her smiling ruby lips she\u2019ll be my maple sugar Queen"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

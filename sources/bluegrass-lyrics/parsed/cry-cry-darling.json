@@ -1,0 +1,49 @@
+{
+  "slug": "cry-cry-darling",
+  "title": "Cry Cry Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/cry-cry-darling/",
+  "raw_lyrics": "Cry cry darling\nThat\u2019s what I\u2019ll do If you should leave me with the blues\nCry cry darling\nThat\u2019s all I do cause you\u2019re the one that\u2019s in my heart\n\nFor me there\u2019ll be no moonlight\nIf ever we should part\nCry cry darling, that\u2019s all I do\nCause you\u2019re the one that\u2019s in my heart\n\nCry cry darling\nMy eyes will cry and never dry if you should go\nCry cry darling\nWhen shadows creep I\u2019ll just weep all night I know\n\nYou know how much I\u2019d miss you\nIf ever we should part\nCry cry darling\nThat\u2019s all  I do cause you\u2019re the one that\u2019s in my heart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Cry cry darling",
+        "That\u2019s what I\u2019ll do If you should leave me with the blues",
+        "Cry cry darling",
+        "That\u2019s all I do cause you\u2019re the one that\u2019s in my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "For me there\u2019ll be no moonlight",
+        "If ever we should part",
+        "Cry cry darling, that\u2019s all I do",
+        "Cause you\u2019re the one that\u2019s in my heart"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Cry cry darling",
+        "My eyes will cry and never dry if you should go",
+        "Cry cry darling",
+        "When shadows creep I\u2019ll just weep all night I know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You know how much I\u2019d miss you",
+        "If ever we should part",
+        "Cry cry darling",
+        "That\u2019s all  I do cause you\u2019re the one that\u2019s in my heart"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

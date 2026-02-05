@@ -1,0 +1,87 @@
+{
+  "slug": "i-have-an-aged-mother",
+  "title": "I Have An Aged Mother",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-have-an-aged-mother/",
+  "raw_lyrics": "Last night while I lay sleeping\nLast night while in a dream\nI saw my dear old mother\nDown by a misting stream\n\nDon\u2019t ask me why I\u2019m weeping\nDon\u2019t ask me why I pray\nFor I\u2019ve an aged mother\nTen thousand miles away\n\nA letter here from sister dear\nCome home we\u2019re all alone\nDear mother\u2019s slowly fading\nShe cant be living long\n\nYodel\nOut in the cold world\nLong ways from home\n\nI\u2019m drawing near the old home\nDear sister\u2019s at the gate\nShe\u2019s leading me through the doorway\nOh brother you\u2019ve come to late\n\nOh lead me to the casket\nThrough back the linen so fine\nThat I may kiss her pale white lips\nFor I know they\u2019ll never kiss mine\n\nI see the pale moon shining\nOn mother\u2019s whitened stone\nThe rose buds round them twining\nAre just me all alone\n\nYodel\nOut in the cold world\nLeft all alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Last night while I lay sleeping",
+        "Last night while in a dream",
+        "I saw my dear old mother",
+        "Down by a misting stream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t ask me why I\u2019m weeping",
+        "Don\u2019t ask me why I pray",
+        "For I\u2019ve an aged mother",
+        "Ten thousand miles away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A letter here from sister dear",
+        "Come home we\u2019re all alone",
+        "Dear mother\u2019s slowly fading",
+        "She cant be living long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yodel",
+        "Out in the cold world",
+        "Long ways from home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m drawing near the old home",
+        "Dear sister\u2019s at the gate",
+        "She\u2019s leading me through the doorway",
+        "Oh brother you\u2019ve come to late"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh lead me to the casket",
+        "Through back the linen so fine",
+        "That I may kiss her pale white lips",
+        "For I know they\u2019ll never kiss mine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I see the pale moon shining",
+        "On mother\u2019s whitened stone",
+        "The rose buds round them twining",
+        "Are just me all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yodel",
+        "Out in the cold world",
+        "Left all alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

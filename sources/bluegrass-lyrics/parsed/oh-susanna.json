@@ -1,0 +1,69 @@
+{
+  "slug": "oh-susanna",
+  "title": "Oh Susanna",
+  "source_url": "https://www.bluegrasslyrics.com/song/oh-susanna/",
+  "raw_lyrics": "I come from Alabama\nWith my banjo on my knee\nI\u2019m going to Louisiana\nMy true love for to see\n\nIt rained all night the day I left\nThe weather it was dry\nThe sun so hot I froze to death\nSusanna don\u2019t you cry\n\nOh Susanna\nOh don\u2019t you cry for me\nFor I come from Alabama\nWith my banjo on my knee\n\nI had a dream the other night\nWhen everything was still\nI thought I saw Susanna\nA-coming down the hill\n\nThe buckwheat cake was in her mouth\nThe tear was In her eye\nSays I I\u2019m coming from the south\nSusanna don\u2019t you cry\n\nOh Susanna\nOh don\u2019t you cry for me\nFor I come from Alabama\nWith my banjo on my knee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I come from Alabama",
+        "With my banjo on my knee",
+        "I\u2019m going to Louisiana",
+        "My true love for to see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It rained all night the day I left",
+        "The weather it was dry",
+        "The sun so hot I froze to death",
+        "Susanna don\u2019t you cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh Susanna",
+        "Oh don\u2019t you cry for me",
+        "For I come from Alabama",
+        "With my banjo on my knee"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had a dream the other night",
+        "When everything was still",
+        "I thought I saw Susanna",
+        "A-coming down the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The buckwheat cake was in her mouth",
+        "The tear was In her eye",
+        "Says I I\u2019m coming from the south",
+        "Susanna don\u2019t you cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh Susanna",
+        "Oh don\u2019t you cry for me",
+        "For I come from Alabama",
+        "With my banjo on my knee"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "sad-situation",
+  "title": "Sad Situation",
+  "source_url": "https://www.bluegrasslyrics.com/song/sad-situation/",
+  "raw_lyrics": "When you love somebody with all your heart and soul\nAnd you want to keep them with you but you know they want to go\nWhat do you do, what do you say\nWhen you know they want to leave as bad as you want them to stay\n\nAnd theres nothing quite as sad as a one-sided love\nWhen one don\u2019t care at all and the other cares too much\nIts a sad situation I must say\nWhen someone wants to leave as bad as you want them to stay\n\nYou know how much I love you but I know you dont love me\nAnd I know its just a matter of time before you leave\nBut why do I stand aside and just let you walk away\nWhen I know you want to leave as bad as I want you to stay\n\nWhat do you do, what do you say\nWhen you know they want to leave as bad as you want them to stay",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When you love somebody with all your heart and soul",
+        "And you want to keep them with you but you know they want to go",
+        "What do you do, what do you say",
+        "When you know they want to leave as bad as you want them to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And theres nothing quite as sad as a one-sided love",
+        "When one don\u2019t care at all and the other cares too much",
+        "Its a sad situation I must say",
+        "When someone wants to leave as bad as you want them to stay"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You know how much I love you but I know you dont love me",
+        "And I know its just a matter of time before you leave",
+        "But why do I stand aside and just let you walk away",
+        "When I know you want to leave as bad as I want you to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "What do you do, what do you say",
+        "When you know they want to leave as bad as you want them to stay"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

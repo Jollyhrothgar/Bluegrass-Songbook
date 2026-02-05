@@ -1,0 +1,43 @@
+{
+  "slug": "hills-of-home",
+  "title": "Hills of Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/hills-of-home/",
+  "raw_lyrics": "There ain\u2019t much that\u2019s left here that ain\u2019t all run down\nGone are the echoes of old familiar sounds\nFamilies have scattered parted and gone\nLeft a lot of good things to wither away back home\n\nCan\u2019t you feel those hills around you\nCan\u2019t you feel that touch of home\nDon\u2019t you wish you\u2019d never gone\nThere are some things memories can\u2019t bring home\nHills of home hills of home\nFamilies scattered off and gone\nThese old hills that have been passed by\nWell they\u2019ve seen their share of leavin\u2019 in their time\n\nOld familiar dirt roads winds through the piney glade\nWhere all the longings of childhood dreams were made\nWhere we passed the mossy mounds where I could run and play\nNever a care to cross my mind all the livelong day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There ain\u2019t much that\u2019s left here that ain\u2019t all run down",
+        "Gone are the echoes of old familiar sounds",
+        "Families have scattered parted and gone",
+        "Left a lot of good things to wither away back home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Can\u2019t you feel those hills around you",
+        "Can\u2019t you feel that touch of home",
+        "Don\u2019t you wish you\u2019d never gone",
+        "There are some things memories can\u2019t bring home",
+        "Hills of home hills of home",
+        "Families scattered off and gone",
+        "These old hills that have been passed by",
+        "Well they\u2019ve seen their share of leavin\u2019 in their time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Old familiar dirt roads winds through the piney glade",
+        "Where all the longings of childhood dreams were made",
+        "Where we passed the mossy mounds where I could run and play",
+        "Never a care to cross my mind all the livelong day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

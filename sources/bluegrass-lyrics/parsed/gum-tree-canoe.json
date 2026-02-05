@@ -1,0 +1,59 @@
+{
+  "slug": "gum-tree-canoe",
+  "title": "Gum Tree Canoe",
+  "source_url": "https://www.bluegrasslyrics.com/song/gum-tree-canoe/",
+  "raw_lyrics": "On the Tom Big Bee River so bright I was born\nIn a hut made of husks of the tall yellow corn\nIt was there that I first met my Julah so true\nAnd I rowed her around in the gum tree canoe\n\nSing row away row o\u2019er the waters so blue\nLike a feather we\u2019ll float in my gum tree canoe\nSing row away row o\u2019er the waters so blue\nLike a feather we\u2019ll float in my gum tree canoe\n\nAll day in the fields of soft cotton I\u2019d hoe\nAnd think of my Julah and sing as I go\nI\u2019d catch her a bird with a wing of true blue\nAnd at night row her around in the gum tree canoe\n\nWith my hand on my banjo and my toe on the oar\nI would sing her a song to the river\u2019s soft roar\nWhile the bright stars shone down on my Julah so true\nAnd they danced in her eyes in the gum tree canoe\n\nOne day the old river took us so far away\nThat we couldn\u2019t get back so we thought we\u2019d just stay\nWe spied a tall ship with a flag of true blue\nAnd she took us in tow in the gum tree canoe",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On the Tom Big Bee River so bright I was born",
+        "In a hut made of husks of the tall yellow corn",
+        "It was there that I first met my Julah so true",
+        "And I rowed her around in the gum tree canoe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Sing row away row o\u2019er the waters so blue",
+        "Like a feather we\u2019ll float in my gum tree canoe",
+        "Sing row away row o\u2019er the waters so blue",
+        "Like a feather we\u2019ll float in my gum tree canoe"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All day in the fields of soft cotton I\u2019d hoe",
+        "And think of my Julah and sing as I go",
+        "I\u2019d catch her a bird with a wing of true blue",
+        "And at night row her around in the gum tree canoe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With my hand on my banjo and my toe on the oar",
+        "I would sing her a song to the river\u2019s soft roar",
+        "While the bright stars shone down on my Julah so true",
+        "And they danced in her eyes in the gum tree canoe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One day the old river took us so far away",
+        "That we couldn\u2019t get back so we thought we\u2019d just stay",
+        "We spied a tall ship with a flag of true blue",
+        "And she took us in tow in the gum tree canoe"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

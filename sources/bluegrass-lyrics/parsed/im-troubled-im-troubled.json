@@ -1,0 +1,49 @@
+{
+  "slug": "im-troubled-im-troubled",
+  "title": "I\u2019m Troubled I\u2019m Troubled",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-troubled-im-troubled/",
+  "raw_lyrics": "I\u2019m troubled I\u2019m troubled\nI\u2019m troubled in mind\nIf trouble don\u2019t kill me\nI\u2019ll live a long time\n\nNow meeting is pleasure and parting is grief\nAnd a false-hearted lover is worse than a thief\nA thief can but rob you and take what you\u2019ve saved\nBut a false-hearted lover\u2019ll take you to your grave\n\nThe grave will detain you and turn you to dust\nAin\u2019t a girl in a million a poor boy can trust\nThey\u2019ll hug you, they\u2019ll kiss you they\u2019ll tell you more lies\nThen the cross ties on a railroad or the stars in the skies\n\nI\u2019m going to Georgia I\u2019m going to roam\nI\u2019m going to Georgia gonna make it my home\nGonna build me a cabin in the mountains so high\nWhere the wild birds and the turtle doves can\u2019t hear my sad cry",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m troubled I\u2019m troubled",
+        "I\u2019m troubled in mind",
+        "If trouble don\u2019t kill me",
+        "I\u2019ll live a long time"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now meeting is pleasure and parting is grief",
+        "And a false-hearted lover is worse than a thief",
+        "A thief can but rob you and take what you\u2019ve saved",
+        "But a false-hearted lover\u2019ll take you to your grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The grave will detain you and turn you to dust",
+        "Ain\u2019t a girl in a million a poor boy can trust",
+        "They\u2019ll hug you, they\u2019ll kiss you they\u2019ll tell you more lies",
+        "Then the cross ties on a railroad or the stars in the skies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going to Georgia I\u2019m going to roam",
+        "I\u2019m going to Georgia gonna make it my home",
+        "Gonna build me a cabin in the mountains so high",
+        "Where the wild birds and the turtle doves can\u2019t hear my sad cry"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

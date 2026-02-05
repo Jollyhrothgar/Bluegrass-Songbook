@@ -1,0 +1,59 @@
+{
+  "slug": "new-river-train",
+  "title": "New River Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/new-river-train/",
+  "raw_lyrics": "I\u2019m riding on that New River Train\nI\u2019m riding on that New River Train\nThat same old train that brought me here\nIs gonna carry me away again\n\nDarling you can\u2019t love one\nDarling you can\u2019t love one\nYou can\u2019t love one  and have any fun\nOh darling you can\u2019t love one\n\nDarling you can\u2019t love two\nDarling you can\u2019t love two\nYou can\u2019t love two and your little heart be true\nOh darling you can\u2019t love  two\n\nDarling you can\u2019t love three\nDarling you can\u2019t love three\nYou can\u2019t love three and still love me\nOh darling you can\u2019t love three\n\nDarling you can\u2019t love four\nDarling you can\u2019t love four\nYou can\u2019t love four and love me anymore\nOh darling you can\u2019t love four",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m riding on that New River Train",
+        "I\u2019m riding on that New River Train",
+        "That same old train that brought me here",
+        "Is gonna carry me away again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darling you can\u2019t love one",
+        "Darling you can\u2019t love one",
+        "You can\u2019t love one  and have any fun",
+        "Oh darling you can\u2019t love one"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darling you can\u2019t love two",
+        "Darling you can\u2019t love two",
+        "You can\u2019t love two and your little heart be true",
+        "Oh darling you can\u2019t love  two"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darling you can\u2019t love three",
+        "Darling you can\u2019t love three",
+        "You can\u2019t love three and still love me",
+        "Oh darling you can\u2019t love three"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darling you can\u2019t love four",
+        "Darling you can\u2019t love four",
+        "You can\u2019t love four and love me anymore",
+        "Oh darling you can\u2019t love four"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

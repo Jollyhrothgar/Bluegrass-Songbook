@@ -1,0 +1,49 @@
+{
+  "slug": "childish-love",
+  "title": "Childish Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/childish-love/",
+  "raw_lyrics": "Oh childish love I could not hold\nI thought your love was a pot of gold\nBut you can write a few short lines\nAnd tell your love ten thousand times.\n\nYou left me in this world alone\nYour childish heart I could not win\nYou tore apart our little home\nA childish love will always end.\n\nWhen you have wed another man\nI hope he\u2019ll give his life to you\nI hope he\u2019ll always treat you kind\nJust like I did when you were mine.\n\nThere\u2019s just one thing I have not told\nYour picture framed in a ring of gold\nI\u2019ll always wear it on my hand\nThe diamond sealed in a golden band",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh childish love I could not hold",
+        "I thought your love was a pot of gold",
+        "But you can write a few short lines",
+        "And tell your love ten thousand times."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You left me in this world alone",
+        "Your childish heart I could not win",
+        "You tore apart our little home",
+        "A childish love will always end."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you have wed another man",
+        "I hope he\u2019ll give his life to you",
+        "I hope he\u2019ll always treat you kind",
+        "Just like I did when you were mine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s just one thing I have not told",
+        "Your picture framed in a ring of gold",
+        "I\u2019ll always wear it on my hand",
+        "The diamond sealed in a golden band"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

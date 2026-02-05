@@ -1,0 +1,39 @@
+{
+  "slug": "ill-take-the-blame",
+  "title": "I\u2019ll Take The Blame",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-take-the-blame/",
+  "raw_lyrics": "I\u2019ve slipped around, dear, two-timing you\nHaving fun now, like some guys do\nBut now I\u2019m sorry and now I\u2019m true\nForgive me, darling, its up to you\n\nWell I don\u2019t blame you if you two-time, too\nBecause I\u2019m guilty for the things I do\nI\u2019ve slipped around, love, played every game\nAnd if you leave me I\u2019ll take the blame\n\nI ain\u2019t got much money, I\u2019m just a pauper guy\nTrying to go on, dear without your love, I\u2019ll die\nSo please don\u2019t leave me, whatever you do\nJust squeeze me, darling, while I\u2019m loving you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve slipped around, dear, two-timing you",
+        "Having fun now, like some guys do",
+        "But now I\u2019m sorry and now I\u2019m true",
+        "Forgive me, darling, its up to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Well I don\u2019t blame you if you two-time, too",
+        "Because I\u2019m guilty for the things I do",
+        "I\u2019ve slipped around, love, played every game",
+        "And if you leave me I\u2019ll take the blame"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I ain\u2019t got much money, I\u2019m just a pauper guy",
+        "Trying to go on, dear without your love, I\u2019ll die",
+        "So please don\u2019t leave me, whatever you do",
+        "Just squeeze me, darling, while I\u2019m loving you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

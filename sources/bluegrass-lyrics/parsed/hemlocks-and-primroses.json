@@ -1,0 +1,49 @@
+{
+  "slug": "hemlocks-and-primroses",
+  "title": "Hemlocks And Primroses",
+  "source_url": "https://www.bluegrasslyrics.com/song/hemlocks-and-primroses/",
+  "raw_lyrics": "Thinking of you while out for a ramble\nDown by a cold frosty stream\nSet down on a bed of hemlocks and primroses\nAnd gently I fell into a dream\n\nI dreamed I saw a pretty fair maiden\nSuch beauty I\u2019d never saw before\nHer dress was bound round with hemlocks and primroses\nSo green was the mantel she wore\n\nHer hair was of a dark brown color\nHer teeth was as ivory so white\nHer eyes they shined like sparking diamonds\nOr stars than shine on a cold frosty night\n\nI drew her near then I awakened\nWith two empty arms and you on my mind\nHeaven seemed so near while I was dreaming\nIt hurts to know you left me behind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Thinking of you while out for a ramble",
+        "Down by a cold frosty stream",
+        "Set down on a bed of hemlocks and primroses",
+        "And gently I fell into a dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I dreamed I saw a pretty fair maiden",
+        "Such beauty I\u2019d never saw before",
+        "Her dress was bound round with hemlocks and primroses",
+        "So green was the mantel she wore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her hair was of a dark brown color",
+        "Her teeth was as ivory so white",
+        "Her eyes they shined like sparking diamonds",
+        "Or stars than shine on a cold frosty night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I drew her near then I awakened",
+        "With two empty arms and you on my mind",
+        "Heaven seemed so near while I was dreaming",
+        "It hurts to know you left me behind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

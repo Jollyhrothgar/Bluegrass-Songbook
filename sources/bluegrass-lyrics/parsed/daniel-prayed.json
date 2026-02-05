@@ -1,0 +1,50 @@
+{
+  "slug": "daniel-prayed",
+  "title": "Daniel Prayed",
+  "source_url": "https://www.bluegrasslyrics.com/song/daniel-prayed/",
+  "raw_lyrics": "I heard about a man one day who wasted not his time away\nHe prayed to God every morning noon and night\nHe cared not for the things availed trusted one who would not fail\nOh Daniel prayed every morning noon and night\n\nOh Daniel served the living God while here upon this earth he trod\nHe prayed to God every morning noon and night\nHe cared not for the kings decree he trusted God to set him free\nAnd he prayed to God every morning noon and night\n\nThey cast him in the lion\u2019s den because he would not honor men\nHe prayed to God every morning noon and night\nThe jaws were locked and it made him shout and God soon brought him\nsafely out\nOh Daniel prayed every morning noon and night\n\nNow brother let us watch and pray like Daniel did from day to day\nHe prayed to God every morning noon and night\nWe too can gladly daring do the things that God will take us through\nOh Daniel prayed every morning noon and night",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I heard about a man one day who wasted not his time away",
+        "He prayed to God every morning noon and night",
+        "He cared not for the things availed trusted one who would not fail",
+        "Oh Daniel prayed every morning noon and night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Daniel served the living God while here upon this earth he trod",
+        "He prayed to God every morning noon and night",
+        "He cared not for the kings decree he trusted God to set him free",
+        "And he prayed to God every morning noon and night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They cast him in the lion\u2019s den because he would not honor men",
+        "He prayed to God every morning noon and night",
+        "The jaws were locked and it made him shout and God soon brought him",
+        "safely out",
+        "Oh Daniel prayed every morning noon and night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now brother let us watch and pray like Daniel did from day to day",
+        "He prayed to God every morning noon and night",
+        "We too can gladly daring do the things that God will take us through",
+        "Oh Daniel prayed every morning noon and night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "thinking-right",
+  "title": "Thinking Right",
+  "source_url": "https://www.bluegrasslyrics.com/song/thinking-right/",
+  "raw_lyrics": "Now If you think you might have hurt me\nWhen you said good-bye that day\nAnd if you think I might have cried for you\nAfter beggin\u2019 you to stay\n\n(need you)    If you think I might still care for you\n(long for you each)    And miss you every lonely night\nIf this is really what you\u2019re thinking\nThen you sure are thinking right\n\nIt doesn\u2019t matter what they tell me\nMy love for you will never die\nI need you now and will forever\nI love you so I could die\n\nIf you think I might still miss you\nIn everything I try to do\nAnd if you think I might still want you\nAfter all you\u2019ve put me through",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now If you think you might have hurt me",
+        "When you said good-bye that day",
+        "And if you think I might have cried for you",
+        "After beggin\u2019 you to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "(need you)    If you think I might still care for you",
+        "(long for you each)    And miss you every lonely night",
+        "If this is really what you\u2019re thinking",
+        "Then you sure are thinking right"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It doesn\u2019t matter what they tell me",
+        "My love for you will never die",
+        "I need you now and will forever",
+        "I love you so I could die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you think I might still miss you",
+        "In everything I try to do",
+        "And if you think I might still want you",
+        "After all you\u2019ve put me through"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

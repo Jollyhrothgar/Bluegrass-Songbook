@@ -1,0 +1,57 @@
+{
+  "slug": "no-ash-will-burn",
+  "title": "No Ash Will Burn",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-ash-will-burn/",
+  "raw_lyrics": "I have seen snow that fell in May\nAnd I have seen rain on cloudless days\nSomethings are always bound to change\nThere ain\u2019t no ash will burn\n\nLove is a precious thing I\u2019m told\nIt burns just like West Virginia coal\nBut when the fire dies down it\u2019s cold\nThere ain\u2019t no ash will burn\n\nYou say this life is not your lot\nWell I can\u2019t be something that I\u2019m not\nWe can\u2019t stoke a fire that we ain\u2019t got\nThere ain\u2019t no ash will burn\n\nIn every life there comes a time\nWhere there are no more tears to cry\nWe must leave something dear behind\nThere ain\u2019t no ash will burn\n\nThere is one lesson I have learned\nThere ain\u2019t no ash will burn",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have seen snow that fell in May",
+        "And I have seen rain on cloudless days",
+        "Somethings are always bound to change",
+        "There ain\u2019t no ash will burn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Love is a precious thing I\u2019m told",
+        "It burns just like West Virginia coal",
+        "But when the fire dies down it\u2019s cold",
+        "There ain\u2019t no ash will burn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You say this life is not your lot",
+        "Well I can\u2019t be something that I\u2019m not",
+        "We can\u2019t stoke a fire that we ain\u2019t got",
+        "There ain\u2019t no ash will burn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In every life there comes a time",
+        "Where there are no more tears to cry",
+        "We must leave something dear behind",
+        "There ain\u2019t no ash will burn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is one lesson I have learned",
+        "There ain\u2019t no ash will burn"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

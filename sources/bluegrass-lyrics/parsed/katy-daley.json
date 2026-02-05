@@ -1,0 +1,49 @@
+{
+  "slug": "katy-daley",
+  "title": "Katy Daley",
+  "source_url": "https://www.bluegrasslyrics.com/song/katy-daley/",
+  "raw_lyrics": "With her old man she came from Tipperary\nIn the pioneering days of \u201942\nHer old man was shot in Tombstone City\nFor the making of his good old mountain dew\n\nOh Come on down the mountain Katy Daley\nCome on down the mountain Katy do\nCan\u2019t you hear us calling Katy Daley\nWe want to drink your good old mountain dew\n\nWake up and pay attention Katy Daley\nFor I\u2019m the judge that\u2019s gonna sentence you\nAll the boys in court have drunk your whiskey\nTo tell the truth I like a little too\n\nSo to the jail they took poor Katy Daley\nAnd pretty soon the gates were open wide\nAngels came for poor old Katy Daley\nTook her far across the great divide",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "With her old man she came from Tipperary",
+        "In the pioneering days of \u201942",
+        "Her old man was shot in Tombstone City",
+        "For the making of his good old mountain dew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh Come on down the mountain Katy Daley",
+        "Come on down the mountain Katy do",
+        "Can\u2019t you hear us calling Katy Daley",
+        "We want to drink your good old mountain dew"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wake up and pay attention Katy Daley",
+        "For I\u2019m the judge that\u2019s gonna sentence you",
+        "All the boys in court have drunk your whiskey",
+        "To tell the truth I like a little too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So to the jail they took poor Katy Daley",
+        "And pretty soon the gates were open wide",
+        "Angels came for poor old Katy Daley",
+        "Took her far across the great divide"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "a-white-cross-marks-the-grave",
+  "title": "A White Cross Marks The Grave",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-white-cross-marks-the-grave/",
+  "raw_lyrics": "Many thousand miles away in that land across the sea\nThere are soldier boys their precious lives they give\nSo their loved ones here back home many miles across the foam\nMight have liberty each padding day to live\n\nMay they sleep forevermore\nWhere a white cross stands to mark the soldiers grave\nMay their spirits be at rest\nThey have done their part with hearts so true and brave\n\nMay the ones who have gone on be remembered here back home\nIn the hearts of those whom they will see no more\nThey will wait until that day when they hear the trumpet play\nThen they\u2019ll march again upon that golden shore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Many thousand miles away in that land across the sea",
+        "There are soldier boys their precious lives they give",
+        "So their loved ones here back home many miles across the foam",
+        "Might have liberty each padding day to live"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "May they sleep forevermore",
+        "Where a white cross stands to mark the soldiers grave",
+        "May their spirits be at rest",
+        "They have done their part with hearts so true and brave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "May the ones who have gone on be remembered here back home",
+        "In the hearts of those whom they will see no more",
+        "They will wait until that day when they hear the trumpet play",
+        "Then they\u2019ll march again upon that golden shore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

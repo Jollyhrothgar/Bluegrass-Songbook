@@ -1,0 +1,49 @@
+{
+  "slug": "lovers-return",
+  "title": "Lover\u2019s Return",
+  "source_url": "https://www.bluegrasslyrics.com/song/lovers-return/",
+  "raw_lyrics": "And so you have come back to me\nAnd say the old love\u2019s growing yet\nYou\u2019ve tried through all these weary years\nYou\u2019ve tried so vainly to forget\n\nOh, no, I cannot take your hand\nGod never gives us back our youth\nThe loving heart you slighted then\nWas yours, my friend, in perfect truth\n\nFarewell, farewell now we must part\nYou never meant to do me wrong\nGod sent this anguish to my heart\nTo teach me to be brave and strong\n\nFarewell, I think I love you yet\nAs friend to friend, God bless you, dear\nAnd guide you through these weary years\nTo where the skies are always clear",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "And so you have come back to me",
+        "And say the old love\u2019s growing yet",
+        "You\u2019ve tried through all these weary years",
+        "You\u2019ve tried so vainly to forget"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, no, I cannot take your hand",
+        "God never gives us back our youth",
+        "The loving heart you slighted then",
+        "Was yours, my friend, in perfect truth"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Farewell, farewell now we must part",
+        "You never meant to do me wrong",
+        "God sent this anguish to my heart",
+        "To teach me to be brave and strong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Farewell, I think I love you yet",
+        "As friend to friend, God bless you, dear",
+        "And guide you through these weary years",
+        "To where the skies are always clear"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "cash-on-the-barrelhead",
+  "title": "Cash On The Barrelhead",
+  "source_url": "https://www.bluegrasslyrics.com/song/cash-on-the-barrelhead/",
+  "raw_lyrics": "Got in a little trouble at the county seat\nLord they put me in the jailhouse, for loafing on the street\nWhen the judge heard the verdict, I was a guilty man\nHe said forty-five dollars, or thirty days in the can\n\nAnd that\u2019ll be cash on the barrelhead, son\nYou can take your choice, you\u2019re twenty-one\nNo money down, no credit plan\nNo time to chase you, \u2019cause I\u2019m a busy man\n\nFound a telephone number, on a laundry slip\nHad a kind-hearted jailer, with a six-gun hip\nHe let me call long-distance,  She said, \u201cNumber, please?\u201d\nNo sooner than I told her, she hollered out at me\n\nThat\u2019ll be cash on the barrelhead, son\nNot part, not half, but the entire sum\nNo money down, no credit plan\n\u2018Cause a little bird tells me that you\u2019re a traveling man\n\nThirty days in the jailhouse, four days on the road\nI was feeling mighty hungry, my feet a heavy load\nSaw a Greyhound a coming, stuck up my thumb\nJust as I\u2019d been seated, the driver caught my arm\n\nThat\u2019ll be cash on the barrelhead son\nThis old gray dog, gets paid to run\nWhen engine starts, oh the wheels won\u2019t roll\nThat\u2019ll be cash on the barrelhead, I\u2019ll take you down the road",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Got in a little trouble at the county seat",
+        "Lord they put me in the jailhouse, for loafing on the street",
+        "When the judge heard the verdict, I was a guilty man",
+        "He said forty-five dollars, or thirty days in the can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And that\u2019ll be cash on the barrelhead, son",
+        "You can take your choice, you\u2019re twenty-one",
+        "No money down, no credit plan",
+        "No time to chase you, \u2019cause I\u2019m a busy man"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Found a telephone number, on a laundry slip",
+        "Had a kind-hearted jailer, with a six-gun hip",
+        "He let me call long-distance,  She said, \u201cNumber, please?\u201d",
+        "No sooner than I told her, she hollered out at me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "That\u2019ll be cash on the barrelhead, son",
+        "Not part, not half, but the entire sum",
+        "No money down, no credit plan",
+        "\u2018Cause a little bird tells me that you\u2019re a traveling man"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Thirty days in the jailhouse, four days on the road",
+        "I was feeling mighty hungry, my feet a heavy load",
+        "Saw a Greyhound a coming, stuck up my thumb",
+        "Just as I\u2019d been seated, the driver caught my arm"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "That\u2019ll be cash on the barrelhead son",
+        "This old gray dog, gets paid to run",
+        "When engine starts, oh the wheels won\u2019t roll",
+        "That\u2019ll be cash on the barrelhead, I\u2019ll take you down the road"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

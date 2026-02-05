@@ -1,0 +1,39 @@
+{
+  "slug": "going-round-this-world",
+  "title": "Going \u2019round This World",
+  "source_url": "https://www.bluegrasslyrics.com/song/going-round-this-world/",
+  "raw_lyrics": "I\u2019m going to Chatanooga baby mine\nGoing to Chatanooga baby nine\nGoing to Chatanooga from there on to Cuba\nGoing to Chatanooga baby mine\n\nGoing round this world baby mine\nGoing round this world baby mine\nGoing round this world with a banjo pickin\u2019 girl\nGoing round this world baby mine\n\nGonna write me a letter baby mine\nWrite me a letter baby mine\nWrite me a letter gonna tell that you\u2019re better\nGonna write me a letter baby mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going to Chatanooga baby mine",
+        "Going to Chatanooga baby nine",
+        "Going to Chatanooga from there on to Cuba",
+        "Going to Chatanooga baby mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Going round this world baby mine",
+        "Going round this world baby mine",
+        "Going round this world with a banjo pickin\u2019 girl",
+        "Going round this world baby mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Gonna write me a letter baby mine",
+        "Write me a letter baby mine",
+        "Write me a letter gonna tell that you\u2019re better",
+        "Gonna write me a letter baby mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

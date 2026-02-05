@@ -1,0 +1,39 @@
+{
+  "slug": "sugar-coated-love",
+  "title": "Sugar Coated Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/sugar-coated-love/",
+  "raw_lyrics": "Sugar coated love, you gave me on a plate\nI took a bite and then I looked to see what I had ate\nI found I had a cinder all covered up in white\nThat old sugar coated love is something I can\u2019t bite\n\nYou say you are leaving me for another man\nHe has all the wealth and charm and not my kind of brand\nBaby I fell down on my knees a pleading for your love\nCan\u2019t understand what I saw in a sugar coated love\n\nYou called me your sugar plum, your baby and your pet\nSaid I was your Romeo and you my Juliet\nI thought you were my angel, my little sugar dove\nYou sure had me fooled, babe, with that sugar coated love",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Sugar coated love, you gave me on a plate",
+        "I took a bite and then I looked to see what I had ate",
+        "I found I had a cinder all covered up in white",
+        "That old sugar coated love is something I can\u2019t bite"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You say you are leaving me for another man",
+        "He has all the wealth and charm and not my kind of brand",
+        "Baby I fell down on my knees a pleading for your love",
+        "Can\u2019t understand what I saw in a sugar coated love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You called me your sugar plum, your baby and your pet",
+        "Said I was your Romeo and you my Juliet",
+        "I thought you were my angel, my little sugar dove",
+        "You sure had me fooled, babe, with that sugar coated love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

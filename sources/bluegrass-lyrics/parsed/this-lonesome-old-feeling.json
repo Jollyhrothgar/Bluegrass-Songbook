@@ -1,0 +1,39 @@
+{
+  "slug": "this-lonesome-old-feeling",
+  "title": "This Lonesome Old Feeling",
+  "source_url": "https://www.bluegrasslyrics.com/song/this-lonesome-old-feeling/",
+  "raw_lyrics": "My heart is breaking and there\u2019s tears in my eyes\nThe heartaches you caused me has wrecked my young life\nThe love that you promised to me was untrue\nAll I have is a memory I can\u2019t forget about you\n\nThis lonesome old feeling keeps hanging around me\nIt reminds me of you and the love that we knew\nI\u2019ll sit here alone there\u2019s no one beside me\nWith no love of my own now that you\u2019re gone\n\nThe nights are so lonely and you\u2019re still on my mind\nI can\u2019t loose this memory of you now I find\nSo I\u2019ll go on hurting and thinking of you\nThis lonesome old feeling keeps making me blue",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My heart is breaking and there\u2019s tears in my eyes",
+        "The heartaches you caused me has wrecked my young life",
+        "The love that you promised to me was untrue",
+        "All I have is a memory I can\u2019t forget about you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This lonesome old feeling keeps hanging around me",
+        "It reminds me of you and the love that we knew",
+        "I\u2019ll sit here alone there\u2019s no one beside me",
+        "With no love of my own now that you\u2019re gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The nights are so lonely and you\u2019re still on my mind",
+        "I can\u2019t loose this memory of you now I find",
+        "So I\u2019ll go on hurting and thinking of you",
+        "This lonesome old feeling keeps making me blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

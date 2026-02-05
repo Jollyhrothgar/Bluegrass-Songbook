@@ -1,0 +1,69 @@
+{
+  "slug": "arkansas-traveler",
+  "title": "Arkansas Traveler",
+  "source_url": "https://www.bluegrasslyrics.com/song/arkansas-traveler/",
+  "raw_lyrics": "Oh once upon a time in Arkansas\nAn old man sat in his little cabin door\nAnd fiddled at a tune that he liked to hear\nA jolly old tune that he played by ear\n\nIt was raining hard but the fiddler didn\u2019t care\nHe sawed away at the popular air\nThough his rooftop leaked like a waterfall\nThat didn\u2019t seem to bother the old man at all\n\nA traveler was riding by that day\nAnd stopped to hear him a-fiddling away\nThe cabin was afloat and his feet were wet\nBut the old man still didn\u2019t seem to fret\n\nSo the stranger said Now the way it seems to me\nYou\u2019d better mend your roof said he\nBut the old man said as he played away\nI couldn\u2019t mend it now it\u2019s a rainy day\n\nThe traveler replied that\u2019s all quite true\nBut this I think is the thing for you to do\nGet busy on a day that is fair and bright\nThen patch the old roof till it\u2019s good and tight\n\nBut the old man kept on a-playing at his reel\nAnd tapped the ground with his leathery heel\nGet along said he for you give me a pain\nMy cabin never leaks when it doesn\u2019t rain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh once upon a time in Arkansas",
+        "An old man sat in his little cabin door",
+        "And fiddled at a tune that he liked to hear",
+        "A jolly old tune that he played by ear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It was raining hard but the fiddler didn\u2019t care",
+        "He sawed away at the popular air",
+        "Though his rooftop leaked like a waterfall",
+        "That didn\u2019t seem to bother the old man at all"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A traveler was riding by that day",
+        "And stopped to hear him a-fiddling away",
+        "The cabin was afloat and his feet were wet",
+        "But the old man still didn\u2019t seem to fret"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So the stranger said Now the way it seems to me",
+        "You\u2019d better mend your roof said he",
+        "But the old man said as he played away",
+        "I couldn\u2019t mend it now it\u2019s a rainy day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The traveler replied that\u2019s all quite true",
+        "But this I think is the thing for you to do",
+        "Get busy on a day that is fair and bright",
+        "Then patch the old roof till it\u2019s good and tight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "But the old man kept on a-playing at his reel",
+        "And tapped the ground with his leathery heel",
+        "Get along said he for you give me a pain",
+        "My cabin never leaks when it doesn\u2019t rain"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

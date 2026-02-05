@@ -1,0 +1,59 @@
+{
+  "slug": "will-the-circle-be-unbroken",
+  "title": "Will The Circle Be Unbroken",
+  "source_url": "https://www.bluegrasslyrics.com/song/will-the-circle-be-unbroken/",
+  "raw_lyrics": "I was standing by the window\nOn a cold and cloudy day\nWhen I saw the hearse come rolling\nTo carry my mother away\n\nWill the circle be unbroken\nBye and bye Lord bye and bye\nThere\u2019s a better home a waiting\nIn the sky Lord in the sky\n\nI said to the undertaker\nUndertaker please drive slow\nFor that body you are carrying\nLord I hate to see her go\n\nWell I followed close behind her\nTried to hold up and be brave\nBut I could not hide my sorrow\nWhen they laid her in that grave\n\nI went back home Lord that home was lonesome\nSince my mother, she was gone\nAll my brothers and sisters crying\nWhat a home so sad and alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was standing by the window",
+        "On a cold and cloudy day",
+        "When I saw the hearse come rolling",
+        "To carry my mother away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Will the circle be unbroken",
+        "Bye and bye Lord bye and bye",
+        "There\u2019s a better home a waiting",
+        "In the sky Lord in the sky"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I said to the undertaker",
+        "Undertaker please drive slow",
+        "For that body you are carrying",
+        "Lord I hate to see her go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I followed close behind her",
+        "Tried to hold up and be brave",
+        "But I could not hide my sorrow",
+        "When they laid her in that grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went back home Lord that home was lonesome",
+        "Since my mother, she was gone",
+        "All my brothers and sisters crying",
+        "What a home so sad and alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

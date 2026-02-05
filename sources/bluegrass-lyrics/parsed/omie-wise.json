@@ -1,0 +1,59 @@
+{
+  "slug": "omie-wise",
+  "title": "Omie Wise",
+  "source_url": "https://www.bluegrasslyrics.com/song/omie-wise/",
+  "raw_lyrics": "I\u2019ll tell you a story about omie wise\nHow she was deluded by john lewis\u2019 lies\nHe told her to meet him by adam\u2019s spring\nHe\u2019d bring her some money and other fine things\n\nHe brought her no money nor no other fine things\nBut get up behind me omie to squire ellis we\u2019ll go\nShe got up behind him so carefully they did go\nThey rode till they came where deep waters did flow\n\nJohn lewis he concluded to tell her his mind\nJohn lewis he concluded to leave her behind\nTake pity on my infant and spare me my life\nAnd I will go distracted and never be your wife\n\nHe kicked her and choked her and turned her around\nHe threw her in deep water where he knew she would drown\nJohn lewis He remounted rode back to adam\u2019s farm\nInquiring after omie but she was not at home\n\nJohn lewis was taken prisoner and locked up in jail\nLocked up in jail there to remain for a while\nJohn lewis he stayed there for about six months or more\nThen he broke jail Into the army he did go",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll tell you a story about omie wise",
+        "How she was deluded by john lewis\u2019 lies",
+        "He told her to meet him by adam\u2019s spring",
+        "He\u2019d bring her some money and other fine things"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He brought her no money nor no other fine things",
+        "But get up behind me omie to squire ellis we\u2019ll go",
+        "She got up behind him so carefully they did go",
+        "They rode till they came where deep waters did flow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John lewis he concluded to tell her his mind",
+        "John lewis he concluded to leave her behind",
+        "Take pity on my infant and spare me my life",
+        "And I will go distracted and never be your wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He kicked her and choked her and turned her around",
+        "He threw her in deep water where he knew she would drown",
+        "John lewis He remounted rode back to adam\u2019s farm",
+        "Inquiring after omie but she was not at home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John lewis was taken prisoner and locked up in jail",
+        "Locked up in jail there to remain for a while",
+        "John lewis he stayed there for about six months or more",
+        "Then he broke jail Into the army he did go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "you-wont-be-satisfied-that-way",
+  "title": "You Won\u2019t Be Satisfied That Way",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-wont-be-satisfied-that-way/",
+  "raw_lyrics": "I tried to tell you how I loved you\nAnd I tried to tell you night and day\nBut when I\u2019m gone no more to see you\nHoney you won\u2019t be satisfied that way\n\nI\u2019ll leave you now if you don\u2019t want me\nI\u2019ll leave you anytime you say\nBut when I\u2019m gone no more to see you\nHoney you won\u2019t be satisfied that way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I tried to tell you how I loved you",
+        "And I tried to tell you night and day",
+        "But when I\u2019m gone no more to see you",
+        "Honey you won\u2019t be satisfied that way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll leave you now if you don\u2019t want me",
+        "I\u2019ll leave you anytime you say",
+        "But when I\u2019m gone no more to see you",
+        "Honey you won\u2019t be satisfied that way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

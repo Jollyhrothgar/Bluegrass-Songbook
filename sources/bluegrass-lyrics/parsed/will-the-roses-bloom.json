@@ -1,0 +1,39 @@
+{
+  "slug": "will-the-roses-bloom",
+  "title": "Will The Roses Bloom",
+  "source_url": "https://www.bluegrasslyrics.com/song/will-the-roses-bloom/",
+  "raw_lyrics": "Will the roses bloom where she lies sleeping\nWill the flowers shed their pedals there\nWill the dewdrops fall upon the roses\nWhere my darling sleeps beneath the sand\n\nHer lips were like a bunch of roses\nHer eyes were like the starlit sky\nHer hair was dark and it was curly\nI\u2019ll miss her till the day I die\n\nI miss my darling she is sleeping\nUnderneath the beautiful sky\nI miss her now since she has left me\nI will miss her til the day I die",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Will the roses bloom where she lies sleeping",
+        "Will the flowers shed their pedals there",
+        "Will the dewdrops fall upon the roses",
+        "Where my darling sleeps beneath the sand"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her lips were like a bunch of roses",
+        "Her eyes were like the starlit sky",
+        "Her hair was dark and it was curly",
+        "I\u2019ll miss her till the day I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I miss my darling she is sleeping",
+        "Underneath the beautiful sky",
+        "I miss her now since she has left me",
+        "I will miss her til the day I die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

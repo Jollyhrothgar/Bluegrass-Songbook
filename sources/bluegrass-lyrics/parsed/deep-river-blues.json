@@ -1,0 +1,57 @@
+{
+  "slug": "deep-river-blues",
+  "title": "Deep River Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/deep-river-blues/",
+  "raw_lyrics": "Let it rain let it pour\nLet it rain a whole lot more\n\u2018Cause I got them deep river blues\nLet the rain drive right on\nlet the waves sweep along\n\u2018Cause I got them deep river blues.\n\nMy old gal\u2019s a good old pal\nAnd she looks like a water fowl\nwhen I get them deep river blues\nAin\u2019t no one to cry for me\nAnd the fish all go out on a spree when\nI get them deep river blues.\n\nGive me back my old boat\nI\u2019m gonna sail if she\u2019ll float\ncause I got them deep river blues\nI\u2019m goin\u2019 back to Mussel Shoals\nTimes are better there I\u2019m told\ncause I got them deep river blues.\n\nIf my boat sinks with me\nI\u2019ll go down don\u2019t you see\ncause I got them deep river blues\nNow I\u2019m gonna say good-bye\n\u2018N if I sink just let me die\ncause I got them deep river blues.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Let it rain let it pour",
+        "Let it rain a whole lot more",
+        "\u2018Cause I got them deep river blues",
+        "Let the rain drive right on",
+        "let the waves sweep along",
+        "\u2018Cause I got them deep river blues."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My old gal\u2019s a good old pal",
+        "And she looks like a water fowl",
+        "when I get them deep river blues",
+        "Ain\u2019t no one to cry for me",
+        "And the fish all go out on a spree when",
+        "I get them deep river blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Give me back my old boat",
+        "I\u2019m gonna sail if she\u2019ll float",
+        "cause I got them deep river blues",
+        "I\u2019m goin\u2019 back to Mussel Shoals",
+        "Times are better there I\u2019m told",
+        "cause I got them deep river blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If my boat sinks with me",
+        "I\u2019ll go down don\u2019t you see",
+        "cause I got them deep river blues",
+        "Now I\u2019m gonna say good-bye",
+        "\u2018N if I sink just let me die",
+        "cause I got them deep river blues."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

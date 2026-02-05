@@ -1,0 +1,39 @@
+{
+  "slug": "sailor-on-the-deep-blue-sea",
+  "title": "Sailor On The Deep Blue Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/sailor-on-the-deep-blue-sea/",
+  "raw_lyrics": "He promised to write me a letter,\nHe promised to write to me;\nBut I haven\u2019t heard from my darling,\nWho is sailing on the deep blue sea\n\n\u201cOh, captain, can you tell me,\nCan you tell me where he may be?\u201d\n\u201cOh yes, my pretty maiden,\nHe is drownded in the deep blue sea\u201d\n\nFarewell to friends and relations\nThis is the last you\u2019ll see of me,\nFor I\u2019m going to end my troubles\nBy drowning in the deep blue sea",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "He promised to write me a letter,",
+        "He promised to write to me;",
+        "But I haven\u2019t heard from my darling,",
+        "Who is sailing on the deep blue sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "\u201cOh, captain, can you tell me,",
+        "Can you tell me where he may be?\u201d",
+        "\u201cOh yes, my pretty maiden,",
+        "He is drownded in the deep blue sea\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Farewell to friends and relations",
+        "This is the last you\u2019ll see of me,",
+        "For I\u2019m going to end my troubles",
+        "By drowning in the deep blue sea"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

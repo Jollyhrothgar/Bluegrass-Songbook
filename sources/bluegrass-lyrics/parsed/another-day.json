@@ -1,0 +1,39 @@
+{
+  "slug": "another-day",
+  "title": "Another Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/another-day/",
+  "raw_lyrics": "Another day how can I stand it\nWithout my ba-by by my side\nThis empty fee-lin\u2019 now inside\nIs bound to show what I can\u2019t hide\n\nJust make mine straight without a chaser\nAnd let me drown my blues this way\nMy darlin\u2019s gone my life is empty\nNothing to live for another day\n\nA thief could rob and take my money\nIf death was pending I could pray\nI\u2019m helpless now what will my fate be\nAs the hours drag by another day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Another day how can I stand it",
+        "Without my ba-by by my side",
+        "This empty fee-lin\u2019 now inside",
+        "Is bound to show what I can\u2019t hide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Just make mine straight without a chaser",
+        "And let me drown my blues this way",
+        "My darlin\u2019s gone my life is empty",
+        "Nothing to live for another day"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A thief could rob and take my money",
+        "If death was pending I could pray",
+        "I\u2019m helpless now what will my fate be",
+        "As the hours drag by another day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

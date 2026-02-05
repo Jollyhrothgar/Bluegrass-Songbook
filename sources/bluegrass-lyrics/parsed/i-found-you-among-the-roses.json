@@ -1,0 +1,63 @@
+{
+  "slug": "i-found-you-among-the-roses",
+  "title": "I Found You Among The Roses",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-found-you-among-the-roses/",
+  "raw_lyrics": "Once again dear it\u2019s rose time it\u2019s June time\nAll the flowers they bloom as of you\nAnd the robin\u2019s sweet song is singing\nAs I walk here to greet you once more\n\nA year has passed here since I came here\nThis old love of ours to renew\nAnd I found you among the roses\nThe day I come back to you\n\nI found you among the roses\nThe day I come back to you\nAll my gladness was there in a garden so fair\nWas the happiest moment I knew\nYour lips were the color of roses\nI pray them as flowers pray the dew\nIt is there dear in your rose garden\nWhere I found you\n\nI remember the kiss that you gave me\nFor your cheeks like the rose flushed red\nTwas a kiss dear that meant two for me\nFor all the harsh words I have said\n\nRed roses a blooming around me\nI loved every one of them too\nFor it was there dear in your rose garden\nWhere I found you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once again dear it\u2019s rose time it\u2019s June time",
+        "All the flowers they bloom as of you",
+        "And the robin\u2019s sweet song is singing",
+        "As I walk here to greet you once more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A year has passed here since I came here",
+        "This old love of ours to renew",
+        "And I found you among the roses",
+        "The day I come back to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I found you among the roses",
+        "The day I come back to you",
+        "All my gladness was there in a garden so fair",
+        "Was the happiest moment I knew",
+        "Your lips were the color of roses",
+        "I pray them as flowers pray the dew",
+        "It is there dear in your rose garden",
+        "Where I found you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember the kiss that you gave me",
+        "For your cheeks like the rose flushed red",
+        "Twas a kiss dear that meant two for me",
+        "For all the harsh words I have said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Red roses a blooming around me",
+        "I loved every one of them too",
+        "For it was there dear in your rose garden",
+        "Where I found you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

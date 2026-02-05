@@ -1,0 +1,49 @@
+{
+  "slug": "dying-a-sinners-death",
+  "title": "Dying A Sinner\u2019s Death",
+  "source_url": "https://www.bluegrasslyrics.com/song/dying-a-sinners-death/",
+  "raw_lyrics": "Here I lay upon my dying pillow\nAround my bed there\u2019s someone getting dark\nThey are watching the saddest thing that can happen\nThey are seeing a sinner as he dies\n\nAs death\u2019s cold shadow hovers o\u2019er me\nTo all sinners I plead with my last breath\nDon\u2019t shun the work of God that\u2019s what I\u2019ve done\nAnd tonight I\u2019m dying a sinner\u2019s death\n\nNo one can know until he faces it\nHow bad dying a sinner can be\nI\u2019m facing it now as I plead with you\nDon\u2019t let it be with you as it is with me\n\nMy eyes feel so heavy as death claims me\nNo one can truthfully say I\u2019m going to rest\nWhen you look upon my face please have pity\nYes pity and hope for the best",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Here I lay upon my dying pillow",
+        "Around my bed there\u2019s someone getting dark",
+        "They are watching the saddest thing that can happen",
+        "They are seeing a sinner as he dies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As death\u2019s cold shadow hovers o\u2019er me",
+        "To all sinners I plead with my last breath",
+        "Don\u2019t shun the work of God that\u2019s what I\u2019ve done",
+        "And tonight I\u2019m dying a sinner\u2019s death"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No one can know until he faces it",
+        "How bad dying a sinner can be",
+        "I\u2019m facing it now as I plead with you",
+        "Don\u2019t let it be with you as it is with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My eyes feel so heavy as death claims me",
+        "No one can truthfully say I\u2019m going to rest",
+        "When you look upon my face please have pity",
+        "Yes pity and hope for the best"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

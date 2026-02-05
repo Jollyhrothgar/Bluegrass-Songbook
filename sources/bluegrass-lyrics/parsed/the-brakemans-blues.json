@@ -1,0 +1,46 @@
+{
+  "slug": "the-brakemans-blues",
+  "title": "The Brakeman\u2019s Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-brakemans-blues/",
+  "raw_lyrics": "Portland Main is just the same as sunny Tennessee\nPortland Main is just the same as sunny Tennessee\nAny old place I hang my hat is Home Sweet Home to me\n\nWent down to the depot and I looked up on the board\nWent down to the depot and I looked up on the board\nIt read it\u2019s good times here but better on down the road\n\nEat my breakfast here get my dinner in New Orleans\nEat my breakfast here get my dinner in New Orleans\nI\u2019m going to get me a Momma\nLord I ain\u2019t never seen\n\nWhere was you Momma when the train left the shed\nWhere was you Momma when the train left the shed\nStandin\u2019 in my front door wishin\u2019 to God I was dead",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Portland Main is just the same as sunny Tennessee",
+        "Portland Main is just the same as sunny Tennessee",
+        "Any old place I hang my hat is Home Sweet Home to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Went down to the depot and I looked up on the board",
+        "Went down to the depot and I looked up on the board",
+        "It read it\u2019s good times here but better on down the road"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Eat my breakfast here get my dinner in New Orleans",
+        "Eat my breakfast here get my dinner in New Orleans",
+        "I\u2019m going to get me a Momma",
+        "Lord I ain\u2019t never seen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where was you Momma when the train left the shed",
+        "Where was you Momma when the train left the shed",
+        "Standin\u2019 in my front door wishin\u2019 to God I was dead"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

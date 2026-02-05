@@ -1,0 +1,62 @@
+{
+  "slug": "when-the-roses-come-again",
+  "title": "When The Roses Come Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-roses-come-again/",
+  "raw_lyrics": "Neath the shadow down the meadow\nLeaves lying on each side\nBy the river flowers shiver\nFading dying in their pride\nSomeone straying long delaying\nSad the parting down the lane\nI must leave you someone\u2019s saying\nTill the roses come again\n\nWhen the roses come again\nWhen the roses come again\nI will meet you I will greet you\nWhen the roses come again\nYodel\n\nAs I wander I will ponder\nOn a happy by and by\nOn a summer over yonder\nWith joy to you and I\nDo not borrow grief or sorrow\nIn the hours that yet remain\nWe shall know of that tomorrow\nWhen the roses come again\n\nSunshine over clover\nBlossom on the meadow wide\nSome I finger sweet to linger\nEverywhere on every side\nSomeone\u2019s roaming in the gloaming\nHappy hearts that feel no pain\nAll their sadness turned to gladness\nNow the roses come again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Neath the shadow down the meadow",
+        "Leaves lying on each side",
+        "By the river flowers shiver",
+        "Fading dying in their pride",
+        "Someone straying long delaying",
+        "Sad the parting down the lane",
+        "I must leave you someone\u2019s saying",
+        "Till the roses come again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the roses come again",
+        "When the roses come again",
+        "I will meet you I will greet you",
+        "When the roses come again",
+        "Yodel"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I wander I will ponder",
+        "On a happy by and by",
+        "On a summer over yonder",
+        "With joy to you and I",
+        "Do not borrow grief or sorrow",
+        "In the hours that yet remain",
+        "We shall know of that tomorrow",
+        "When the roses come again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sunshine over clover",
+        "Blossom on the meadow wide",
+        "Some I finger sweet to linger",
+        "Everywhere on every side",
+        "Someone\u2019s roaming in the gloaming",
+        "Happy hearts that feel no pain",
+        "All their sadness turned to gladness",
+        "Now the roses come again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

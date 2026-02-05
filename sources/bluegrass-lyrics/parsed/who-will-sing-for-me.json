@@ -1,0 +1,39 @@
+{
+  "slug": "who-will-sing-for-me",
+  "title": "Who Will Sing For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/who-will-sing-for-me/",
+  "raw_lyrics": "Oft I sing for my friends\nWhen death\u2019s cold form I see\nWhen I reach my journey\u2019s end\nWho will sing for me\n\nI wonder (I wonder) who\nWill sing (will sing) for me\nWhen I come to the cross on that silent sea\nWho will sing for me\n\nWhen crowds shall gather round\nAnd look down on me\nWill they turn and walk away\nOr will they sing one song for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oft I sing for my friends",
+        "When death\u2019s cold form I see",
+        "When I reach my journey\u2019s end",
+        "Who will sing for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I wonder (I wonder) who",
+        "Will sing (will sing) for me",
+        "When I come to the cross on that silent sea",
+        "Who will sing for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When crowds shall gather round",
+        "And look down on me",
+        "Will they turn and walk away",
+        "Or will they sing one song for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

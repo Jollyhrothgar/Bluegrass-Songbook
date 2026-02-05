@@ -1,0 +1,79 @@
+{
+  "slug": "little-sadie",
+  "title": "Little Sadie",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-sadie/",
+  "raw_lyrics": "I went out one night for to make a little round\nI met little Sadie and I shot her down\nWent back home got into bed\nA forty-four pistol under my head\n\nI wake up the next morning about half past nine\nThe hacks and the buggies all standing in line\nGents and camper are standing around\nCarrying little Sadie to her burying ground\n\nWell I began to think of what a deed I\u2019d done\nI grabbed my hat and away I run\nMade a good run but a little too slow\nThey overtook me in Jericho\n\nI was standing on the corner reading the bill\nWhen up stepped the sheriff from Thomasville\nSaid young man is your name Brown\nRemember the night you shot Sadie down\n\nWell I said yes sir but my name is Lee\nAnd I shot little Sadie in the first degree\nFirst degree and the second degree\nIf you got any papers won\u2019t you read them to me\n\nThey took me down town and dressed me in black\nAnd they put me on a train and started me back\nAll the way back to that Thomasville jail\nAnd I had no money for to go my bail\n\nWell the judge and the jury took their stand\nThe judge had the papers in his right hand\nForty-one days and forty-one nights\nForty -one years to wear the ball and stripes",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I went out one night for to make a little round",
+        "I met little Sadie and I shot her down",
+        "Went back home got into bed",
+        "A forty-four pistol under my head"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wake up the next morning about half past nine",
+        "The hacks and the buggies all standing in line",
+        "Gents and camper are standing around",
+        "Carrying little Sadie to her burying ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I began to think of what a deed I\u2019d done",
+        "I grabbed my hat and away I run",
+        "Made a good run but a little too slow",
+        "They overtook me in Jericho"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was standing on the corner reading the bill",
+        "When up stepped the sheriff from Thomasville",
+        "Said young man is your name Brown",
+        "Remember the night you shot Sadie down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I said yes sir but my name is Lee",
+        "And I shot little Sadie in the first degree",
+        "First degree and the second degree",
+        "If you got any papers won\u2019t you read them to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They took me down town and dressed me in black",
+        "And they put me on a train and started me back",
+        "All the way back to that Thomasville jail",
+        "And I had no money for to go my bail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the judge and the jury took their stand",
+        "The judge had the papers in his right hand",
+        "Forty-one days and forty-one nights",
+        "Forty -one years to wear the ball and stripes"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

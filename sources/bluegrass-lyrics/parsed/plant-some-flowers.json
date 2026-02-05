@@ -1,0 +1,39 @@
+{
+  "slug": "plant-some-flowers",
+  "title": "Plant Some Flowers",
+  "source_url": "https://www.bluegrasslyrics.com/song/plant-some-flowers/",
+  "raw_lyrics": "Plant some flowers by my graveside\nJust a little bunch of them\nMakes no difference what they are, dear\nSince your hand has planted them\n\nDarlin\u2019, when you pass the graveside\nYou see my name there on a slab\nWon\u2019t you stop a little while dear\nFor I would be lonesome there\n\nYou will do this won\u2019t you darlin\u2019\nYou will do this last request\nYou will do this won\u2019t you darlin\u2019\nWhen they lay me down to rest",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Plant some flowers by my graveside",
+        "Just a little bunch of them",
+        "Makes no difference what they are, dear",
+        "Since your hand has planted them"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darlin\u2019, when you pass the graveside",
+        "You see my name there on a slab",
+        "Won\u2019t you stop a little while dear",
+        "For I would be lonesome there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You will do this won\u2019t you darlin\u2019",
+        "You will do this last request",
+        "You will do this won\u2019t you darlin\u2019",
+        "When they lay me down to rest"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

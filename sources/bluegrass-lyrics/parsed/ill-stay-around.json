@@ -1,0 +1,49 @@
+{
+  "slug": "ill-stay-around",
+  "title": "I\u2019ll Stay Around",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-stay-around/",
+  "raw_lyrics": "Now you just told me that you\u2019re leaving\nOn the next train coming down\nI love you dear but I won\u2019t follow\nI just think I\u2019ll stay around\n\nFor I know someday you\u2019ll want me\nWhen your true love can\u2019t be found\nBut if you go dear I won\u2019t follow\nI just think I\u2019ll stay around\n\nYou know my dear I\u2019ll always love you\nAnd I\u2019d never let you down\nBut if you go dear I won\u2019t follow\nI just think I\u2019ll stay around\n\nSomeday you\u2019ll hear that whistle blowing\nOn the special coming down\nYou\u2019ll be looking for me baby\nBut I may not be around",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now you just told me that you\u2019re leaving",
+        "On the next train coming down",
+        "I love you dear but I won\u2019t follow",
+        "I just think I\u2019ll stay around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "For I know someday you\u2019ll want me",
+        "When your true love can\u2019t be found",
+        "But if you go dear I won\u2019t follow",
+        "I just think I\u2019ll stay around"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You know my dear I\u2019ll always love you",
+        "And I\u2019d never let you down",
+        "But if you go dear I won\u2019t follow",
+        "I just think I\u2019ll stay around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday you\u2019ll hear that whistle blowing",
+        "On the special coming down",
+        "You\u2019ll be looking for me baby",
+        "But I may not be around"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

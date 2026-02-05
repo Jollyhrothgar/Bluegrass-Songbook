@@ -1,0 +1,29 @@
+{
+  "slug": "im-only-human",
+  "title": "I\u2019m Only Human",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-only-human/",
+  "raw_lyrics": "I\u2019m only human you see but you told me goodbye\nI\u2019ll keep the tears in my heart yes I\u2019ll try and I\u2019ll try\nI\u2019ve shared your sorrow and joys now I know it\u2019s goodbye\nI\u2019m only human but I\u2019ll try not to cry\n\nI was happy with you by my side\nThough my life I kept shadowed with pride\nYou asked if I\u2019d be your true love and I said til I die\nNow you tell me a new love you\u2019ve found",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m only human you see but you told me goodbye",
+        "I\u2019ll keep the tears in my heart yes I\u2019ll try and I\u2019ll try",
+        "I\u2019ve shared your sorrow and joys now I know it\u2019s goodbye",
+        "I\u2019m only human but I\u2019ll try not to cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I was happy with you by my side",
+        "Though my life I kept shadowed with pride",
+        "You asked if I\u2019d be your true love and I said til I die",
+        "Now you tell me a new love you\u2019ve found"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

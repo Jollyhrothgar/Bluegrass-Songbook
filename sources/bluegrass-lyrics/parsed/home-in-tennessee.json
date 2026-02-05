@@ -1,0 +1,39 @@
+{
+  "slug": "home-in-tennessee",
+  "title": "Home In Tennessee",
+  "source_url": "https://www.bluegrasslyrics.com/song/home-in-tennessee/",
+  "raw_lyrics": "Oh yes I\u2019m going back to my home in Tennessee\nBack to the girl that\u2019s waiting in the cotton fields to see\nThere\u2019s a mother and a dad that\u2019s waiting patiently\nAnd the place I\u2019m longing for tonight\u2019s my home in Tennessee\n\nI\u2019ll sail the skies in airplane to a place called Bunkers Hill\nI\u2019ll drop from the clouds in a parachute and oh boys what a thrill\nMy song shall fall in no mans land and I\u2019m in the great prairie\nBut the place I\u2019m longing for tonight\u2019s my home in Tennessee\n\nI\u2019ve been to Frisco\u2019s Golden Gate also Bangor, Maine\nI\u2019ve been to the Rocky Mountains and back down again\nAnd up to old New York saw the Statue of Liberty\nBut the place I\u2019m longing for tonight\u2019s my home in Tennessee",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh yes I\u2019m going back to my home in Tennessee",
+        "Back to the girl that\u2019s waiting in the cotton fields to see",
+        "There\u2019s a mother and a dad that\u2019s waiting patiently",
+        "And the place I\u2019m longing for tonight\u2019s my home in Tennessee"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll sail the skies in airplane to a place called Bunkers Hill",
+        "I\u2019ll drop from the clouds in a parachute and oh boys what a thrill",
+        "My song shall fall in no mans land and I\u2019m in the great prairie",
+        "But the place I\u2019m longing for tonight\u2019s my home in Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been to Frisco\u2019s Golden Gate also Bangor, Maine",
+        "I\u2019ve been to the Rocky Mountains and back down again",
+        "And up to old New York saw the Statue of Liberty",
+        "But the place I\u2019m longing for tonight\u2019s my home in Tennessee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,89 @@
+{
+  "slug": "barbara-allen",
+  "title": "Barbara Allen",
+  "source_url": "https://www.bluegrasslyrics.com/song/barbara-allen/",
+  "raw_lyrics": "In London town where I was born\nThere lived a fair maid dwellin\u2019\nMade every youth cry well away\nAnd her name was Barbara Allen\n\nI sent a servant to your town\nWhere Barbara she was dwellin\u2019\nMy master sent and he sent for you\nIf your name is Barbara Allen\n\nT\u2019was in the merry month of May\nWhen all the flowers were a-bloomin\u2019\nA young man on his death bed lay\nFor the love of Barbara Allen\n\nOh Nellie Mae on her way home\nWere the words so sweet love singin\u2019\nAnd as they sang they seemed to say\nHard hearted Barbara Allen\n\nOh the more she ran oh the more she mourned\n\u2018Till she could not stop her cyin\u2019\nOh pick me up and take me home\nFor I am surely a-dyin\u2019\n\nOh father my father go dig my grave\nGo dig it long and narrow\nSweet William died for me today\nSo I\u2019ll die for him tomorrow\n\nOh they buried her in the old churchyard\nBuried sweet William down beside her\nOn William\u2019s grave grew a red red rose\nOn Barbara\u2019s grew a great briar\n\nOh it grew to the top of the old churchyard\nIt grew till It could not grow no higher\nAnd there they tied in a true love\u2019s knot\nThe red red rose \u2019round the briar",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In London town where I was born",
+        "There lived a fair maid dwellin\u2019",
+        "Made every youth cry well away",
+        "And her name was Barbara Allen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I sent a servant to your town",
+        "Where Barbara she was dwellin\u2019",
+        "My master sent and he sent for you",
+        "If your name is Barbara Allen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "T\u2019was in the merry month of May",
+        "When all the flowers were a-bloomin\u2019",
+        "A young man on his death bed lay",
+        "For the love of Barbara Allen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Nellie Mae on her way home",
+        "Were the words so sweet love singin\u2019",
+        "And as they sang they seemed to say",
+        "Hard hearted Barbara Allen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the more she ran oh the more she mourned",
+        "\u2018Till she could not stop her cyin\u2019",
+        "Oh pick me up and take me home",
+        "For I am surely a-dyin\u2019"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh father my father go dig my grave",
+        "Go dig it long and narrow",
+        "Sweet William died for me today",
+        "So I\u2019ll die for him tomorrow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh they buried her in the old churchyard",
+        "Buried sweet William down beside her",
+        "On William\u2019s grave grew a red red rose",
+        "On Barbara\u2019s grew a great briar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh it grew to the top of the old churchyard",
+        "It grew till It could not grow no higher",
+        "And there they tied in a true love\u2019s knot",
+        "The red red rose \u2019round the briar"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

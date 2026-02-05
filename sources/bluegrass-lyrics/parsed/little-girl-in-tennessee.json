@@ -1,0 +1,49 @@
+{
+  "slug": "little-girl-in-tennessee",
+  "title": "Little Girl In Tennessee",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-girl-in-tennessee/",
+  "raw_lyrics": "Oh, a long long time ago when I left my home to roam\nDown in the hills of Tennessee\nWas the sweetest little girl that was ever in this world\nDown in the hills of Tennessee\n\nOh, little girl of mine in Tennessee\nI know she\u2019s waiting there for me\nSomeday I\u2019ll settle down in that little country town\nWith that little girl of mine in Tennessee\n\nOh, she begged me not to go \u201cYou\u2019ll be sorry dear I know\u201d\nFor the way that you\u2019ve been treating me\nSo I rambled all around but nothing could be found\nTo take the place of her in Tennessee\n\nOh, someday I\u2019ll wander back to that little mountain shack\nThe little girl that\u2019s waiting there for me\nI can see her smiling face waiting for me at the gate\nThe little girl of mine in Tennessee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, a long long time ago when I left my home to roam",
+        "Down in the hills of Tennessee",
+        "Was the sweetest little girl that was ever in this world",
+        "Down in the hills of Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, little girl of mine in Tennessee",
+        "I know she\u2019s waiting there for me",
+        "Someday I\u2019ll settle down in that little country town",
+        "With that little girl of mine in Tennessee"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, she begged me not to go \u201cYou\u2019ll be sorry dear I know\u201d",
+        "For the way that you\u2019ve been treating me",
+        "So I rambled all around but nothing could be found",
+        "To take the place of her in Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, someday I\u2019ll wander back to that little mountain shack",
+        "The little girl that\u2019s waiting there for me",
+        "I can see her smiling face waiting for me at the gate",
+        "The little girl of mine in Tennessee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

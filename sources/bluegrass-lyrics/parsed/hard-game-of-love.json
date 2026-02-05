@@ -1,0 +1,39 @@
+{
+  "slug": "hard-game-of-love",
+  "title": "Hard Game of Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/hard-game-of-love/",
+  "raw_lyrics": "In the hard game of love I\u2019m the last one to fall\nBut I gave it my heart and I gave it my all\nI didn\u2019t know that she played a game with no rules\nSo I climbed aboard the old ship of fools\n\nAnd it\u2019s a lonesome old world, my sweetheart is gone\nI can\u2019t sleep at all. And I pray for the dawn\nIt\u2019s the last time I\u2019ll hurt, it\u2019s the last time I\u2019ll cry\nWhen I lay down tonight, gonna lay down and die\n\nIn the still of the night as the lonesome wind blows\nMy sanity wanes; it comes and it goes\nI feel like a child in a house all alone\nWhose mother and dad will never come home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the hard game of love I\u2019m the last one to fall",
+        "But I gave it my heart and I gave it my all",
+        "I didn\u2019t know that she played a game with no rules",
+        "So I climbed aboard the old ship of fools"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And it\u2019s a lonesome old world, my sweetheart is gone",
+        "I can\u2019t sleep at all. And I pray for the dawn",
+        "It\u2019s the last time I\u2019ll hurt, it\u2019s the last time I\u2019ll cry",
+        "When I lay down tonight, gonna lay down and die"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the still of the night as the lonesome wind blows",
+        "My sanity wanes; it comes and it goes",
+        "I feel like a child in a house all alone",
+        "Whose mother and dad will never come home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

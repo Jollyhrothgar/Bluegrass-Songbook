@@ -1,0 +1,39 @@
+{
+  "slug": "be-proud-of-the-grey-in-your-hair",
+  "title": "Be Proud Of The Grey In Your Hair",
+  "source_url": "https://www.bluegrasslyrics.com/song/be-proud-of-the-grey-in-your-hair/",
+  "raw_lyrics": "Lay down that cane and start moving\nWhile you can get out of your chair\nPut on those shoes and start walkin\u2019\nBe proud of the gray in your hair.\n\nWell I hope you see what I\u2019m sayin\u2019\nEinstien could very well be right\nThat man\u2019s greatest victory is dyin\u2019\nDon\u2019t never give up without a fight\n\nSaid you know how it feels to be lonesome\nYou know what it means when you\u2019re blue\nThere ain\u2019t no use to sit and worry\nFor there ain\u2019t nobody worryin\u2019 about you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lay down that cane and start moving",
+        "While you can get out of your chair",
+        "Put on those shoes and start walkin\u2019",
+        "Be proud of the gray in your hair."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I hope you see what I\u2019m sayin\u2019",
+        "Einstien could very well be right",
+        "That man\u2019s greatest victory is dyin\u2019",
+        "Don\u2019t never give up without a fight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Said you know how it feels to be lonesome",
+        "You know what it means when you\u2019re blue",
+        "There ain\u2019t no use to sit and worry",
+        "For there ain\u2019t nobody worryin\u2019 about you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

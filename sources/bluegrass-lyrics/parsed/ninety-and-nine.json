@@ -1,0 +1,48 @@
+{
+  "slug": "ninety-and-nine",
+  "title": "Ninety and Nine",
+  "source_url": "https://www.bluegrasslyrics.com/song/ninety-and-nine/",
+  "raw_lyrics": "There were ninety and nine that safely lay\nIn the shelter of the fold\nBut one was out on the hills away\nFar off from the gates of gold\nAway on the mountains wild and bare\nAway from the tender Shepherd\u2019s care\nAway from the tender Shepherd\u2019s care\n\nLord, Thou hast here Thy ninety and nine\nAre they not enough for Thee\nBut the Shepherd made answer tis this of Mine\nHas wandered away from Me\nAlthough the road be rough and steep\nI go to the desert to find My sheep\nI go to the desert to find My sheep\n\nBut all through the mountains thunder-riven\nUp from the rocky steep\nThere arose a glad cry to the gate of heaven\nRejoice I have found My sheep\nAnd the angels echoed around the throne\nRejoice for the Lord brings back His own\nRejoice for the Lord brings back His own",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There were ninety and nine that safely lay",
+        "In the shelter of the fold",
+        "But one was out on the hills away",
+        "Far off from the gates of gold",
+        "Away on the mountains wild and bare",
+        "Away from the tender Shepherd\u2019s care",
+        "Away from the tender Shepherd\u2019s care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lord, Thou hast here Thy ninety and nine",
+        "Are they not enough for Thee",
+        "But the Shepherd made answer tis this of Mine",
+        "Has wandered away from Me",
+        "Although the road be rough and steep",
+        "I go to the desert to find My sheep",
+        "I go to the desert to find My sheep"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But all through the mountains thunder-riven",
+        "Up from the rocky steep",
+        "There arose a glad cry to the gate of heaven",
+        "Rejoice I have found My sheep",
+        "And the angels echoed around the throne",
+        "Rejoice for the Lord brings back His own",
+        "Rejoice for the Lord brings back His own"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

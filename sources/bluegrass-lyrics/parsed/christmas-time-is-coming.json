@@ -1,0 +1,43 @@
+{
+  "slug": "christmas-time-is-coming",
+  "title": "Christmas Time Is Coming",
+  "source_url": "https://www.bluegrasslyrics.com/song/christmas-time-is-coming/",
+  "raw_lyrics": "Snowflakes falling my old home is calling\nTall pines are humming Christmas time is coming.\n\nCan\u2019t you hear them bells ringin\u2019 ringin\u2019  joy to all here them singin\u2019\nLet it snow and I\u2019ll be going back to my country home\nChristmas times a\u2019 coming  Christmas times a\u2019 coming\nChristmas times a\u2019 coming and I know I\u2019m going home.\n\nHolly\u2019s in the window home where the wind blows\nCan\u2019t walk for running Christmas time is coming.\n\nHome fires burning my heart\u2019s yearning\nFor the folks at home when  Christmas time is coming.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Snowflakes falling my old home is calling",
+        "Tall pines are humming Christmas time is coming."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Can\u2019t you hear them bells ringin\u2019 ringin\u2019  joy to all here them singin\u2019",
+        "Let it snow and I\u2019ll be going back to my country home",
+        "Christmas times a\u2019 coming  Christmas times a\u2019 coming",
+        "Christmas times a\u2019 coming and I know I\u2019m going home."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Holly\u2019s in the window home where the wind blows",
+        "Can\u2019t walk for running Christmas time is coming."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Home fires burning my heart\u2019s yearning",
+        "For the folks at home when  Christmas time is coming."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

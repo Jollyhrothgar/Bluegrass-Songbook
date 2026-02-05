@@ -1,0 +1,39 @@
+{
+  "slug": "if-youre-ever-gonna-love-me",
+  "title": "If You\u2019re Ever Gonna Love Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-youre-ever-gonna-love-me/",
+  "raw_lyrics": "If you\u2019re ever gonna love me well I wanna know it\nThere\u2019s just one way that you can show it\nIf you don\u2019t start treating me better you see\nI\u2019m gonna do away with me\n\nI\u2019m gonna go down where the water\u2019s little deeper\nI\u2019m taking no chances now you\u2019ll see\nIf you don\u2019t start treating me a little bit better\nWell I\u2019m gonna do away with me\n\nWhy won\u2019t you tell me how you feel about it\nYou\u2019re driving me crazy can\u2019t you see\nIf you don\u2019t start treating me a little bit better\nWell I\u2019m gonna do away with me",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "If you\u2019re ever gonna love me well I wanna know it",
+        "There\u2019s just one way that you can show it",
+        "If you don\u2019t start treating me better you see",
+        "I\u2019m gonna do away with me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m gonna go down where the water\u2019s little deeper",
+        "I\u2019m taking no chances now you\u2019ll see",
+        "If you don\u2019t start treating me a little bit better",
+        "Well I\u2019m gonna do away with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Why won\u2019t you tell me how you feel about it",
+        "You\u2019re driving me crazy can\u2019t you see",
+        "If you don\u2019t start treating me a little bit better",
+        "Well I\u2019m gonna do away with me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

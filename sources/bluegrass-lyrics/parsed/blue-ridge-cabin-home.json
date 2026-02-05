@@ -1,0 +1,49 @@
+{
+  "slug": "blue-ridge-cabin-home",
+  "title": "Blue Ridge Cabin Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-ridge-cabin-home/",
+  "raw_lyrics": "There\u2019s a well beaten path in the old mountainside\nWhere I wandered when I was a lad\nAnd I wandered alone to the place I call home\nIn those Blueridge hills far away\n\nOh I love those hills of old Virginia\nFrom those Blueridge hills I did roam\nWhen I die won\u2019t you bury me on the mountain\nFar away near my Blueridge mountain home\n\nNow my thoughts wander back to that ramshackle shack\nIn those blue ridge hills far away\nWhere my mother and dad were laid there to rest\nThey are sleeping in peace together there\n\nI return to that old cabin home with the sigh\nI\u2019ve been longing for days gone by\nWhen I die won\u2019t you bury me on that old mountain side\nMake my resting place upon the hills so high",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a well beaten path in the old mountainside",
+        "Where I wandered when I was a lad",
+        "And I wandered alone to the place I call home",
+        "In those Blueridge hills far away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I love those hills of old Virginia",
+        "From those Blueridge hills I did roam",
+        "When I die won\u2019t you bury me on the mountain",
+        "Far away near my Blueridge mountain home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now my thoughts wander back to that ramshackle shack",
+        "In those blue ridge hills far away",
+        "Where my mother and dad were laid there to rest",
+        "They are sleeping in peace together there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I return to that old cabin home with the sigh",
+        "I\u2019ve been longing for days gone by",
+        "When I die won\u2019t you bury me on that old mountain side",
+        "Make my resting place upon the hills so high"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "cluck-old-hen",
+  "title": "Cluck Old Hen",
+  "source_url": "https://www.bluegrasslyrics.com/song/cluck-old-hen/",
+  "raw_lyrics": "My old hen\u2019s a good old hen\nShe lays eggs for the railroad men\nSometimes 8 and sometimes ten\nThat\u2019s enough for the railroad men\n\nCluck old hen cluck and sing\nYou ain\u2019t laid an egg since late last spring\nCluck old hen cluck and squall\nAin\u2019t laid an egg since late last fall\n\nCluck old hen cluck when I tell you\nCluck old hen or I\u2019m gonna sell you\nLast time she cackled cackled in the lot\nNext time she cackles cackle in the pot\n\nMy old hen she\u2019s a good old hen\nShe lays eggs for the railroad men\nSometimes 1 sometimes two\nSometimes enough for the whole damn crew",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My old hen\u2019s a good old hen",
+        "She lays eggs for the railroad men",
+        "Sometimes 8 and sometimes ten",
+        "That\u2019s enough for the railroad men"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Cluck old hen cluck and sing",
+        "You ain\u2019t laid an egg since late last spring",
+        "Cluck old hen cluck and squall",
+        "Ain\u2019t laid an egg since late last fall"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Cluck old hen cluck when I tell you",
+        "Cluck old hen or I\u2019m gonna sell you",
+        "Last time she cackled cackled in the lot",
+        "Next time she cackles cackle in the pot"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My old hen she\u2019s a good old hen",
+        "She lays eggs for the railroad men",
+        "Sometimes 1 sometimes two",
+        "Sometimes enough for the whole damn crew"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

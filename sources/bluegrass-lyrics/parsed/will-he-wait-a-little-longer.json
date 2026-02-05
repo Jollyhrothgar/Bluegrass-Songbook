@@ -1,0 +1,49 @@
+{
+  "slug": "will-he-wait-a-little-longer",
+  "title": "Will He Wait A Little Longer",
+  "source_url": "https://www.bluegrasslyrics.com/song/will-he-wait-a-little-longer/",
+  "raw_lyrics": "On cruel Calvary where he suffered\nThere he died upon the cross\nThat we might be saved my brother\nFreed from sin and not be lost\n\nWill he wait a little longer\nThere\u2019s so many out in sin\nWill he wait a little longer\nGive us time to gather in\n\nA vision of that mangled body\nI can see his nail-scarred hands\nWhen He calls me way up yonder\nI will hear and understand\n\nMany loved ones gone before me\nThey\u2019ve made their peace for the final day\nBut should He call before they\u2019re ready\nI can almost him them say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On cruel Calvary where he suffered",
+        "There he died upon the cross",
+        "That we might be saved my brother",
+        "Freed from sin and not be lost"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Will he wait a little longer",
+        "There\u2019s so many out in sin",
+        "Will he wait a little longer",
+        "Give us time to gather in"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A vision of that mangled body",
+        "I can see his nail-scarred hands",
+        "When He calls me way up yonder",
+        "I will hear and understand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many loved ones gone before me",
+        "They\u2019ve made their peace for the final day",
+        "But should He call before they\u2019re ready",
+        "I can almost him them say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

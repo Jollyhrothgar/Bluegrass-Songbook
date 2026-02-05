@@ -1,0 +1,49 @@
+{
+  "slug": "no-telephone-in-heaven",
+  "title": "No Telephone In Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-telephone-in-heaven/",
+  "raw_lyrics": "Now I can\u2019t wait on baby the smiling merchant said\nAs stooped and softly toyed with his golden curly head\nI want to call up mamma came the answer full and free\nWill you telephone and ask her when she\u2019s coming back to me\n\nMy child the merchant murmured as he stroked the anxious brow\nNo telephone connection where your mother lives at now\nNo telephone in heaven and a tear sprang in her eyes\nI thought God had everything with him up in the sky\n\nTell her that I get so lonesome that I don\u2019t know what to do\nAnd pappa cries so much I guess he must be lonesome too\nTell her to come to baby cause at night I get so \u2018fraid\nWith no one there to kiss me when the lights begin to fade\n\nAll through the day I want her since my dolly\u2019s got so sore\nWith the awful punching brother give it with his little sword\nThere aint no one to fix it since mamma\u2019s gone away\nAnd poor little lonesome dolly\u2019s getting thinner every day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now I can\u2019t wait on baby the smiling merchant said",
+        "As stooped and softly toyed with his golden curly head",
+        "I want to call up mamma came the answer full and free",
+        "Will you telephone and ask her when she\u2019s coming back to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "My child the merchant murmured as he stroked the anxious brow",
+        "No telephone connection where your mother lives at now",
+        "No telephone in heaven and a tear sprang in her eyes",
+        "I thought God had everything with him up in the sky"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell her that I get so lonesome that I don\u2019t know what to do",
+        "And pappa cries so much I guess he must be lonesome too",
+        "Tell her to come to baby cause at night I get so \u2018fraid",
+        "With no one there to kiss me when the lights begin to fade"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All through the day I want her since my dolly\u2019s got so sore",
+        "With the awful punching brother give it with his little sword",
+        "There aint no one to fix it since mamma\u2019s gone away",
+        "And poor little lonesome dolly\u2019s getting thinner every day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

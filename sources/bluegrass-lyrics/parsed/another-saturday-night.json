@@ -1,0 +1,69 @@
+{
+  "slug": "another-saturday-night",
+  "title": "Another Saturday Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/another-saturday-night/",
+  "raw_lyrics": "It\u2019s another Saturday night\nI\u2019m gonna make the same ol\u2019 rounds\nPut my money in the juke box\nin the honky-tonk down town\n\nI\u2019ve been a working all week long\nand ain\u2019t nothin\u2019 that\u2019s gone right\nI got a payday In my pocket\nIt\u2019s another Saturday night.\n\nWith a pretty girl in my arms\nand a lonesome juke box song\nI never think of Monday morning\ntill that Saturday night is gone\n\nPretty Mama\u2019s there for me\nand I\u2019m gonna motor time\nI\u2019m like a wound up clock on Friday\nI got to run down Saturday night\n\nIt\u2019s another Saturday night\nI\u2019m gonna make the same ol\u2019 rounds\nPut my money in the juke box\nIn the honky-tonk down town\n\nAnd when my money\u2019s spent and gone\ntell me something it\u2019s all right\nI\u2019ll have a rough one Monday morning\nbut it\u2019s been a knockdown Saturday night.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s another Saturday night",
+        "I\u2019m gonna make the same ol\u2019 rounds",
+        "Put my money in the juke box",
+        "in the honky-tonk down town"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been a working all week long",
+        "and ain\u2019t nothin\u2019 that\u2019s gone right",
+        "I got a payday In my pocket",
+        "It\u2019s another Saturday night."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With a pretty girl in my arms",
+        "and a lonesome juke box song",
+        "I never think of Monday morning",
+        "till that Saturday night is gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Pretty Mama\u2019s there for me",
+        "and I\u2019m gonna motor time",
+        "I\u2019m like a wound up clock on Friday",
+        "I got to run down Saturday night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s another Saturday night",
+        "I\u2019m gonna make the same ol\u2019 rounds",
+        "Put my money in the juke box",
+        "In the honky-tonk down town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And when my money\u2019s spent and gone",
+        "tell me something it\u2019s all right",
+        "I\u2019ll have a rough one Monday morning",
+        "but it\u2019s been a knockdown Saturday night."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

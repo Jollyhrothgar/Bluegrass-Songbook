@@ -1,0 +1,59 @@
+{
+  "slug": "weary-day",
+  "title": "Weary Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/weary-day/",
+  "raw_lyrics": "Weary day pass away\nLook what you have done to me\nJust this morning without warning\nMy love turned her back on me\n\nShe was cryin when she left me\nTold me she was leavin town\nIt\u2019s an awful awful feeling\nWhen your lover turns you down\n\nLike a lonesome dove a grieving\nFor a love that can\u2019t found\nIt\u2019s an awful, awful feeling\nWhen your lover turns you down\n\nI have never been so lonely\nSince I saw her catch that train\nSomething awful seems to whisper\nShe will not be back again\n\nWhen I see that sun a sinking\nSinking down into the west\nI\u2019ll be thinking of my little darlin\nShe\u2019s the one that I love best",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Weary day pass away",
+        "Look what you have done to me",
+        "Just this morning without warning",
+        "My love turned her back on me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was cryin when she left me",
+        "Told me she was leavin town",
+        "It\u2019s an awful awful feeling",
+        "When your lover turns you down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Like a lonesome dove a grieving",
+        "For a love that can\u2019t found",
+        "It\u2019s an awful, awful feeling",
+        "When your lover turns you down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have never been so lonely",
+        "Since I saw her catch that train",
+        "Something awful seems to whisper",
+        "She will not be back again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I see that sun a sinking",
+        "Sinking down into the west",
+        "I\u2019ll be thinking of my little darlin",
+        "She\u2019s the one that I love best"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

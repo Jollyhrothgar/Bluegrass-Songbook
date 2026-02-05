@@ -1,0 +1,40 @@
+{
+  "slug": "delaware",
+  "title": "Delaware",
+  "source_url": "https://www.bluegrasslyrics.com/song/delaware/",
+  "raw_lyrics": "Lord I have strayed to far from my home\nAnd the ones who are waiting for me there\nI long to hear them singing the songs I love so well\nCallin\u2019 me back home to Delware\n\nOh Delware keeps on callin me\nwhat I wouldn\u2019t do to be there\nFor I\u2019m weary of the road and I feel so all alone\nAnd I long to be home in Delware\nYes I long to be home in Delware\n\nAnd in the night I dream of the place I call home\nAnd the geese flyin\u2019 high up o\u2019r the lake\nAnd the mournin\u2019 doves callin\u2019 in the evenin\u2019 of the day\nBut I\u2019m far far away when I awake",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lord I have strayed to far from my home",
+        "And the ones who are waiting for me there",
+        "I long to hear them singing the songs I love so well",
+        "Callin\u2019 me back home to Delware"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Delware keeps on callin me",
+        "what I wouldn\u2019t do to be there",
+        "For I\u2019m weary of the road and I feel so all alone",
+        "And I long to be home in Delware",
+        "Yes I long to be home in Delware"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And in the night I dream of the place I call home",
+        "And the geese flyin\u2019 high up o\u2019r the lake",
+        "And the mournin\u2019 doves callin\u2019 in the evenin\u2019 of the day",
+        "But I\u2019m far far away when I awake"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

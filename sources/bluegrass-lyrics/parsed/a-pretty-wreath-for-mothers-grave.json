@@ -1,0 +1,39 @@
+{
+  "slug": "a-pretty-wreath-for-mothers-grave",
+  "title": "A Pretty Wreath For Mother\u2019s Grave",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-pretty-wreath-for-mothers-grave/",
+  "raw_lyrics": "In my memory there\u2019s a picture of a face so dear to me\nLoving arms that used to hold me as I sat on mother\u2019s knee\nNo one here on earth could pay her for the things in life she gave\nNow she\u2019s gone but I\u2019ll remember\u2019 a pretty wreath for mother\u2019s grave\n\nShe was fond of pretty flowers\nI recall she used to say\nWhen I\u2019m gone son please remember\nA pretty wreath for mother\u2019s grave\n\nShe had a little row of flowers that she used to watch each day\nShe fixed them just before God called her so they would not fade away\nNext year they\u2019ll bloom again in beauty red and blue so bright and gay\nIf it\u2019s God\u2019s will I\u2019ll take them to her a pretty wreath for mother\u2019s grave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In my memory there\u2019s a picture of a face so dear to me",
+        "Loving arms that used to hold me as I sat on mother\u2019s knee",
+        "No one here on earth could pay her for the things in life she gave",
+        "Now she\u2019s gone but I\u2019ll remember\u2019 a pretty wreath for mother\u2019s grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She was fond of pretty flowers",
+        "I recall she used to say",
+        "When I\u2019m gone son please remember",
+        "A pretty wreath for mother\u2019s grave"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She had a little row of flowers that she used to watch each day",
+        "She fixed them just before God called her so they would not fade away",
+        "Next year they\u2019ll bloom again in beauty red and blue so bright and gay",
+        "If it\u2019s God\u2019s will I\u2019ll take them to her a pretty wreath for mother\u2019s grave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "its-only-the-wind",
+  "title": "It\u2019s Only The Wind",
+  "source_url": "https://www.bluegrasslyrics.com/song/its-only-the-wind/",
+  "raw_lyrics": "She would sit by her window and gaze out\nDown the road where her children had gone\nOne by one they left seeking their fortune\nAnd left their old mother alone\n\nSometime late at night she would call me\nSir did I here a knock at the door\nI would say it was only the wind man\nJust as I had told her before\n\nIt\u2019s only the wind\nYour children are not at the door\nIt\u2019s only the wind\nThe wind restless wind nothing more\n\nSometime she would talk of her children\nOf her son and her daughter so fair\nShe said they were much like the wild wind\nThey sometime neglected to care\n\nOne night I heard somebody knocking\nBut I saw as I went to the door\nShe was there in her chair by the window\nHer eyes closesd in rest forever more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She would sit by her window and gaze out",
+        "Down the road where her children had gone",
+        "One by one they left seeking their fortune",
+        "And left their old mother alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometime late at night she would call me",
+        "Sir did I here a knock at the door",
+        "I would say it was only the wind man",
+        "Just as I had told her before"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s only the wind",
+        "Your children are not at the door",
+        "It\u2019s only the wind",
+        "The wind restless wind nothing more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometime she would talk of her children",
+        "Of her son and her daughter so fair",
+        "She said they were much like the wild wind",
+        "They sometime neglected to care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One night I heard somebody knocking",
+        "But I saw as I went to the door",
+        "She was there in her chair by the window",
+        "Her eyes closesd in rest forever more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

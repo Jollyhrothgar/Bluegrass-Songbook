@@ -1,0 +1,59 @@
+{
+  "slug": "old-village-churchyard",
+  "title": "Old Village Churchyard",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-village-churchyard/",
+  "raw_lyrics": "In that dear old village churchyard\nI can see a mossy ground\nThat is where my mother\u2019s sleeping\nIn the cold and silent ground\n\nI was young but I remember\nWhen the night my mother died\nThere I saw her spirit fading\nWhen she called me to her side\n\nSaying Darlin I must leave you\nAngels voices guide you home\nPray that we may meet in heaven\nWhen your mother\u2019s dead and gone\n\nOft I wander to the churchyard\nFlowers to plant with tender care\nOn the grave of my dear mother\nDarkness finds me weeping there\n\nLooking at the stars above me\nWaitin for an early dawn\nThere by mother I\u2019ll be buried\nAnd no more be left alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In that dear old village churchyard",
+        "I can see a mossy ground",
+        "That is where my mother\u2019s sleeping",
+        "In the cold and silent ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was young but I remember",
+        "When the night my mother died",
+        "There I saw her spirit fading",
+        "When she called me to her side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Saying Darlin I must leave you",
+        "Angels voices guide you home",
+        "Pray that we may meet in heaven",
+        "When your mother\u2019s dead and gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oft I wander to the churchyard",
+        "Flowers to plant with tender care",
+        "On the grave of my dear mother",
+        "Darkness finds me weeping there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Looking at the stars above me",
+        "Waitin for an early dawn",
+        "There by mother I\u2019ll be buried",
+        "And no more be left alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

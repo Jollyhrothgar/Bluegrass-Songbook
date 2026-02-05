@@ -1,0 +1,59 @@
+{
+  "slug": "fair-and-tender-ladies",
+  "title": "Fair And Tender Ladies",
+  "source_url": "https://www.bluegrasslyrics.com/song/fair-and-tender-ladies/",
+  "raw_lyrics": "Come all ye fair and tender ladies\nTake warning how you court your men\nThey\u2019re like a star on a summer morning\nThey first appear and then they\u2019re gone\n\nThey\u2019ll tell to you some loving story\nAnd they\u2019ll make you think that they love you well\nAnd away they\u2019ll go and court some other\nAnd leave you there in grief to dwell\n\nI wish I was on some tall mountain\nWhere the ivy rocks were black as ink\nI\u2019d write a letter to my false true lover\nWhose cheeks are like the morning pink\n\nI wish I was a little sparrow\nAnd I had wings to fly so high\nI\u2019d fly to the arms of my false true lover\nAnd when he\u2019d ask, I would deny\n\nOh love is handsome, love is charming\nAnd love is pretty while it\u2019s new\nBut love grows cold as love grows older\nAnd fades away like morning dew",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come all ye fair and tender ladies",
+        "Take warning how you court your men",
+        "They\u2019re like a star on a summer morning",
+        "They first appear and then they\u2019re gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They\u2019ll tell to you some loving story",
+        "And they\u2019ll make you think that they love you well",
+        "And away they\u2019ll go and court some other",
+        "And leave you there in grief to dwell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I was on some tall mountain",
+        "Where the ivy rocks were black as ink",
+        "I\u2019d write a letter to my false true lover",
+        "Whose cheeks are like the morning pink"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I was a little sparrow",
+        "And I had wings to fly so high",
+        "I\u2019d fly to the arms of my false true lover",
+        "And when he\u2019d ask, I would deny"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh love is handsome, love is charming",
+        "And love is pretty while it\u2019s new",
+        "But love grows cold as love grows older",
+        "And fades away like morning dew"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

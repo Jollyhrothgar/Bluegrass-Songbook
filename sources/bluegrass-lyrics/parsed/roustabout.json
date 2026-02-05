@@ -1,0 +1,49 @@
+{
+  "slug": "roustabout",
+  "title": "Roustabout",
+  "source_url": "https://www.bluegrasslyrics.com/song/roustabout/",
+  "raw_lyrics": "The fog is rolling out from Memphis\nDark clouds are hangin\u2019 round your door\nIt\u2019s a long long way from Mississippi\nTo the Gulf of Mexico\n\nWell, I make my home on the Mississippi\nI\u2019m a roustabout on a Steamboat line\nWe hit the deck on a Monday morning\nGonna make the dock on a Saturday night\n\nHad me a gal way up in Vicksburg\nI tipped my hat every time she passed\nThen she ran off with a riverboat gambler\nWith a black silk suit and a little mustache\n\nNow when I die there\u2019s just one favor\nDon\u2019t bury me down in the cold cold ground\nJust wrap me up down by the river\nRoll me over and point me south",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The fog is rolling out from Memphis",
+        "Dark clouds are hangin\u2019 round your door",
+        "It\u2019s a long long way from Mississippi",
+        "To the Gulf of Mexico"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Well, I make my home on the Mississippi",
+        "I\u2019m a roustabout on a Steamboat line",
+        "We hit the deck on a Monday morning",
+        "Gonna make the dock on a Saturday night"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Had me a gal way up in Vicksburg",
+        "I tipped my hat every time she passed",
+        "Then she ran off with a riverboat gambler",
+        "With a black silk suit and a little mustache"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when I die there\u2019s just one favor",
+        "Don\u2019t bury me down in the cold cold ground",
+        "Just wrap me up down by the river",
+        "Roll me over and point me south"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

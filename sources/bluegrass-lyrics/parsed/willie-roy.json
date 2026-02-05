@@ -1,0 +1,49 @@
+{
+  "slug": "willie-roy",
+  "title": "Willie Roy",
+  "source_url": "https://www.bluegrasslyrics.com/song/willie-roy/",
+  "raw_lyrics": "His age is seven years today\nHe don\u2019t know what it is to play\nEach night before he goes to bed\nThis little prayer he always says\n\nNow I lay me down to rest\nPlease God please give me happiness\nI\u2019m prayin\u2019 so my dreams come true\nSo I can walk and play with you\n\nHis name they call him Willie Roy\nHe\u2019s just a little crippled boy\nBut now the tears roll down his cheek\nI rub them off so he can sleep\n\nSomeday I hope you can go out\nAnd play with me and walk about\nI won\u2019t scold you if you should cry\nSo son be good my son good night",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "His age is seven years today",
+        "He don\u2019t know what it is to play",
+        "Each night before he goes to bed",
+        "This little prayer he always says"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I lay me down to rest",
+        "Please God please give me happiness",
+        "I\u2019m prayin\u2019 so my dreams come true",
+        "So I can walk and play with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His name they call him Willie Roy",
+        "He\u2019s just a little crippled boy",
+        "But now the tears roll down his cheek",
+        "I rub them off so he can sleep"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday I hope you can go out",
+        "And play with me and walk about",
+        "I won\u2019t scold you if you should cry",
+        "So son be good my son good night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

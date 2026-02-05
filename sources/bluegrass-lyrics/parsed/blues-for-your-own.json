@@ -1,0 +1,43 @@
+{
+  "slug": "blues-for-your-own",
+  "title": "Blues For Your Own",
+  "source_url": "https://www.bluegrasslyrics.com/song/blues-for-your-own/",
+  "raw_lyrics": "Did you ever wonder why\nAll you do is sit and cry\nCould it be that your baby\u2019s left and gone\nYour happy days are through\nMemories are no use to you\nNow you\u2019ve got the blues for your own\n\nYou walk through the night and you wonder\nWhile you sing yourself a sad and lonesome song\nIn time the pain will end, \u2019til then you\u2019ve got a friend\nCause you\u2019ve got the blues for your own\n\nYou say you just don\u2019t care\nAbout a casual affair\nThat\u2019ll bring back memories better left alone\nYou can\u2019t chase them away\nThese blues are here to stay\nNow you\u2019ve got the blues for your own",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Did you ever wonder why",
+        "All you do is sit and cry",
+        "Could it be that your baby\u2019s left and gone",
+        "Your happy days are through",
+        "Memories are no use to you",
+        "Now you\u2019ve got the blues for your own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You walk through the night and you wonder",
+        "While you sing yourself a sad and lonesome song",
+        "In time the pain will end, \u2019til then you\u2019ve got a friend",
+        "Cause you\u2019ve got the blues for your own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You say you just don\u2019t care",
+        "About a casual affair",
+        "That\u2019ll bring back memories better left alone",
+        "You can\u2019t chase them away",
+        "These blues are here to stay",
+        "Now you\u2019ve got the blues for your own"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

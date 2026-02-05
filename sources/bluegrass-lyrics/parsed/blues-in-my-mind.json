@@ -1,0 +1,49 @@
+{
+  "slug": "blues-in-my-mind",
+  "title": "Blues In My Mind",
+  "source_url": "https://www.bluegrasslyrics.com/song/blues-in-my-mind/",
+  "raw_lyrics": "Now I often hate you for these blues in my mind\nWhat makes me love you am I losing my mind\nI wonder where I\u2019m gonna wind up\nI just can\u2019t make my crazy mind up\n\nToo many kisses brought me too many tears\nTears that I\u2019ll carry with me all through the years\nI\u2019m just a broken hearted guy\nWorry put these blues in my mind\n\nNow I\u2019m going crazy with these blues in my mind\nHow can you just keep on confusing my mind\nYou got a jealous air about you\nMaybe I\u2019m better off with out you\n\nI just can\u2019t make my heart believe that it\u2019s true\nThe trouble with me is havin\u2019 trouble with you\nI\u2019m just a broken hearted guy\nWorry put these blues in my mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now I often hate you for these blues in my mind",
+        "What makes me love you am I losing my mind",
+        "I wonder where I\u2019m gonna wind up",
+        "I just can\u2019t make my crazy mind up"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Too many kisses brought me too many tears",
+        "Tears that I\u2019ll carry with me all through the years",
+        "I\u2019m just a broken hearted guy",
+        "Worry put these blues in my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m going crazy with these blues in my mind",
+        "How can you just keep on confusing my mind",
+        "You got a jealous air about you",
+        "Maybe I\u2019m better off with out you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I just can\u2019t make my heart believe that it\u2019s true",
+        "The trouble with me is havin\u2019 trouble with you",
+        "I\u2019m just a broken hearted guy",
+        "Worry put these blues in my mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

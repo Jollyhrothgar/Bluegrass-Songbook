@@ -1,0 +1,39 @@
+{
+  "slug": "cant-stay-here-anymore",
+  "title": "Can\u2019t Stay Here Anymore",
+  "source_url": "https://www.bluegrasslyrics.com/song/cant-stay-here-anymore/",
+  "raw_lyrics": "You know that I can\u2019t stay here anymore\nI\u2019m leaving away from this old town for sure\nYou made me out to be a fool now there\u2019s nothing left to do\nYou know that I can\u2019t stay here anymore\n\nThere\u2019s rumor that you\u2019ve been running \u2019round\nIt\u2019s now become the gossip of the town\nI can\u2019t hold up my head no more so I\u2019m walking out that door\nYou know that I can\u2019t stay here anymore\n\nI\u2019ve been working hard everyday\nTrying to make a better way\nIt makes no difference what I do there ain\u2019t no way of pleasing you\nYou know I can\u2019t stay here amymore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You know that I can\u2019t stay here anymore",
+        "I\u2019m leaving away from this old town for sure",
+        "You made me out to be a fool now there\u2019s nothing left to do",
+        "You know that I can\u2019t stay here anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s rumor that you\u2019ve been running \u2019round",
+        "It\u2019s now become the gossip of the town",
+        "I can\u2019t hold up my head no more so I\u2019m walking out that door",
+        "You know that I can\u2019t stay here anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been working hard everyday",
+        "Trying to make a better way",
+        "It makes no difference what I do there ain\u2019t no way of pleasing you",
+        "You know I can\u2019t stay here amymore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

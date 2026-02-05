@@ -1,0 +1,54 @@
+{
+  "slug": "look-up-look-down-that-lonesome-road",
+  "title": "Look Up Look Down That Lonesome Road",
+  "source_url": "https://www.bluegrasslyrics.com/song/look-up-look-down-that-lonesome-road/",
+  "raw_lyrics": "Look up look down that lonesome road\nHang down your head and cry my love\nHang down your head and cry\n\nThe darkest night I ever saw\nWas the day I left my home my love\nThe day I left my home\n\nLook up and down that lonesome road\nWhere all our friends have gone my love\nWhere all our friends have gone\n\nThe best of friends must surely part\nSo why not you and I my love\nSo why not you and I\n\nLook up look down that lonesome road\nHang down your head and cry my love\nHang down your head and cry",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Look up look down that lonesome road",
+        "Hang down your head and cry my love",
+        "Hang down your head and cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The darkest night I ever saw",
+        "Was the day I left my home my love",
+        "The day I left my home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Look up and down that lonesome road",
+        "Where all our friends have gone my love",
+        "Where all our friends have gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The best of friends must surely part",
+        "So why not you and I my love",
+        "So why not you and I"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Look up look down that lonesome road",
+        "Hang down your head and cry my love",
+        "Hang down your head and cry"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

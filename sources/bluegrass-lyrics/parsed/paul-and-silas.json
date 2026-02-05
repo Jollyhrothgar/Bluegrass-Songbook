@@ -1,0 +1,49 @@
+{
+  "slug": "paul-and-silas",
+  "title": "Paul And Silas",
+  "source_url": "https://www.bluegrasslyrics.com/song/paul-and-silas/",
+  "raw_lyrics": "Paul and Silas bound in jail all night long (3X)\nSaying who shall deliver for me\n\nPaul and Silas prayed to God all night long (3X)\nSaying who shall deliver for me\n\nThat old jailor locked the jail all night long (3X)\nSaying who shall deliver for me\n\nThat old jail it reeled and rocked all night long (3X)\nSaying who shall deliver for me\n\nHebrew children in the burning fire all night long (3X)\nSaying who shall deliver for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Paul and Silas bound in jail all night long (3X)",
+        "Saying who shall deliver for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Paul and Silas prayed to God all night long (3X)",
+        "Saying who shall deliver for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That old jailor locked the jail all night long (3X)",
+        "Saying who shall deliver for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That old jail it reeled and rocked all night long (3X)",
+        "Saying who shall deliver for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hebrew children in the burning fire all night long (3X)",
+        "Saying who shall deliver for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

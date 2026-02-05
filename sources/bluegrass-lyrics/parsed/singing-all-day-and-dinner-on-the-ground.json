@@ -1,0 +1,39 @@
+{
+  "slug": "singing-all-day-and-dinner-on-the-ground",
+  "title": "Singing All Day And Dinner On The Ground",
+  "source_url": "https://www.bluegrasslyrics.com/song/singing-all-day-and-dinner-on-the-ground/",
+  "raw_lyrics": "Oh the little country church where we used to sing and pray\nHow God would bless us in the old fashioned way\nIt\u2019s still in my memory oh I can see it now\nWe would sing all day have dinner on the ground\n\nIf the whole would loved Jesus you\u2019d find more people there\nSinging rejoicing as they kneel in prayer\nThen an old fashioned handshake and gather around\nAt the Singing all day and dinner on the ground\n\nWe would sing those old songs and the preacher would preach\nOf how Jesus died for you and for me\nYou could feel the Great Spirit from Heaven pouring down\nAt the singing all day and dinner on the ground",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the little country church where we used to sing and pray",
+        "How God would bless us in the old fashioned way",
+        "It\u2019s still in my memory oh I can see it now",
+        "We would sing all day have dinner on the ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If the whole would loved Jesus you\u2019d find more people there",
+        "Singing rejoicing as they kneel in prayer",
+        "Then an old fashioned handshake and gather around",
+        "At the Singing all day and dinner on the ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We would sing those old songs and the preacher would preach",
+        "Of how Jesus died for you and for me",
+        "You could feel the Great Spirit from Heaven pouring down",
+        "At the singing all day and dinner on the ground"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

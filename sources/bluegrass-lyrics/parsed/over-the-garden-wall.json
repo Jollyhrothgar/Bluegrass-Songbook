@@ -1,0 +1,49 @@
+{
+  "slug": "over-the-garden-wall",
+  "title": "Over The Garden Wall",
+  "source_url": "https://www.bluegrasslyrics.com/song/over-the-garden-wall/",
+  "raw_lyrics": "My love stood under a walnut tree\nOver the garden wall\nShe whispered and said she\u2019d be true to me\nOver the garden wall\nShe had beautiful eyes and beautiful hair\nShe wasn\u2019t very tall so she stood on a chair\nMany is the time I kissed her there\nOver the garden wall\n\nOver the garden wall\nThe sweetest girl of all\nThere never was yet such eyes of jet\nAnd you can bet I\u2019ll never forget\nThe night our lips in kisses met\nOver the garden wall\n\nThere\u2019s always a will there\u2019s always a way\nOver the garden wall\nThere\u2019s always a night as well as a day\nOver the garden wall\nWe hadn\u2019t much money, but weddings were cheap\nSo while the old feller was snoring asleep\nWith her lad and her ladder she managed to creep\nOver the garden wall",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My love stood under a walnut tree",
+        "Over the garden wall",
+        "She whispered and said she\u2019d be true to me",
+        "Over the garden wall",
+        "She had beautiful eyes and beautiful hair",
+        "She wasn\u2019t very tall so she stood on a chair",
+        "Many is the time I kissed her there",
+        "Over the garden wall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Over the garden wall",
+        "The sweetest girl of all",
+        "There never was yet such eyes of jet",
+        "And you can bet I\u2019ll never forget",
+        "The night our lips in kisses met",
+        "Over the garden wall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s always a will there\u2019s always a way",
+        "Over the garden wall",
+        "There\u2019s always a night as well as a day",
+        "Over the garden wall",
+        "We hadn\u2019t much money, but weddings were cheap",
+        "So while the old feller was snoring asleep",
+        "With her lad and her ladder she managed to creep",
+        "Over the garden wall"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

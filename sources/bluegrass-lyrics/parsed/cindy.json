@@ -1,0 +1,83 @@
+{
+  "slug": "cindy",
+  "title": "Cindy",
+  "source_url": "https://www.bluegrasslyrics.com/song/cindy/",
+  "raw_lyrics": "You ought to see my Cindy she lives way down south\nShe\u2019s so sweet the honey bees swarm around her mouth\n\nGet along home Cindy Cindy\nGet along home Cindy Cindy\nGet along home Cindy Cindy\nI\u2019ll marry you some day\n\nThe first I seen my Cindy she was standing in the door\nHer shoes and stocking in her hand her feet all over the floor\n\nShe took me to her parlor she cooled me with her fan\nShe said I was the prettiest thing in the shape of mortal man\n\nShe kissed me and she hugged me she called me suger plum\nShe throwed her arms around me I thought my time had come\n\nOh Cindy is a pretty girl Cindy is a peach\nShe threw her arms around my neck and hung on like a leech\n\nAnd if I was a sugar tree standing in the town\nEach time my Cindy passed I\u2019d shake some sugar down\n\nAnd if had a needle and thread fine as I could sew\nI\u2019d sew that gal to my coat tails and down the road I\u2019d go\n\nI wish I was an apple a-hanging on a tree\nEvery time that Cindy passed she\u2019d take a bite of me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You ought to see my Cindy she lives way down south",
+        "She\u2019s so sweet the honey bees swarm around her mouth"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Get along home Cindy Cindy",
+        "Get along home Cindy Cindy",
+        "Get along home Cindy Cindy",
+        "I\u2019ll marry you some day"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The first I seen my Cindy she was standing in the door",
+        "Her shoes and stocking in her hand her feet all over the floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She took me to her parlor she cooled me with her fan",
+        "She said I was the prettiest thing in the shape of mortal man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She kissed me and she hugged me she called me suger plum",
+        "She throwed her arms around me I thought my time had come"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Cindy is a pretty girl Cindy is a peach",
+        "She threw her arms around my neck and hung on like a leech"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And if I was a sugar tree standing in the town",
+        "Each time my Cindy passed I\u2019d shake some sugar down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And if had a needle and thread fine as I could sew",
+        "I\u2019d sew that gal to my coat tails and down the road I\u2019d go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I was an apple a-hanging on a tree",
+        "Every time that Cindy passed she\u2019d take a bite of me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

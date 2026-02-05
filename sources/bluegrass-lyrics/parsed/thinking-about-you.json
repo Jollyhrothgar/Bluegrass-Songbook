@@ -1,0 +1,49 @@
+{
+  "slug": "thinking-about-you",
+  "title": "Thinking About You",
+  "source_url": "https://www.bluegrasslyrics.com/song/thinking-about-you/",
+  "raw_lyrics": "Now as I sigh the hours away\nI think of love of yesterday\nNow I know she\u2019s gone away\nShe\u2019s in heaven so they say\n\nWill the angels tell her for me\nThat my love will never die\nSomeday I\u2019ll walk along beside her\nOn that golden way up there\n\nNow all my life I lived so gaily\nUntil she had to go away\nThen she left me oh so lonely\nShe lies at rest beneath the clay\n\nEach night I think about you dear\nI wonder if you\u2019ll know me there\nWhen I meet you up in heaven\nWe\u2019ll have life eternal there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now as I sigh the hours away",
+        "I think of love of yesterday",
+        "Now I know she\u2019s gone away",
+        "She\u2019s in heaven so they say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Will the angels tell her for me",
+        "That my love will never die",
+        "Someday I\u2019ll walk along beside her",
+        "On that golden way up there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now all my life I lived so gaily",
+        "Until she had to go away",
+        "Then she left me oh so lonely",
+        "She lies at rest beneath the clay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each night I think about you dear",
+        "I wonder if you\u2019ll know me there",
+        "When I meet you up in heaven",
+        "We\u2019ll have life eternal there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

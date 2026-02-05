@@ -1,0 +1,49 @@
+{
+  "slug": "kitty-waltz",
+  "title": "Kitty Waltz",
+  "source_url": "https://www.bluegrasslyrics.com/song/kitty-waltz/",
+  "raw_lyrics": "Waltz Kitty waltz let everybody waltz\nWaltz Kitty waltz let everybody waltz\nWaltz Kitty waltz let everybody waltz\nThe guitars are ringing come on and waltz\n\nThe girls are singing the guitars are ringing\nTheir steps are so neat their music so sweet\nWaltz Kitty waltz let everybody waltz\nThe guitars are ringing come on and waltz\n\nBoys come on and join our band\nThe guitars are ringing the music\u2019s so grand\nWaltz Kitty waltz let everybody waltz\nThe guitars are ringing come on and waltz\n\nWaltz Kitty waltz let everybody waltz\nWaltz Kitty waltz let everybody waltz\nWaltz Kitty waltz let everybody waltz\nThe guitars are ringing come on and waltz",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Waltz Kitty waltz let everybody waltz",
+        "Waltz Kitty waltz let everybody waltz",
+        "Waltz Kitty waltz let everybody waltz",
+        "The guitars are ringing come on and waltz"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The girls are singing the guitars are ringing",
+        "Their steps are so neat their music so sweet",
+        "Waltz Kitty waltz let everybody waltz",
+        "The guitars are ringing come on and waltz"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Boys come on and join our band",
+        "The guitars are ringing the music\u2019s so grand",
+        "Waltz Kitty waltz let everybody waltz",
+        "The guitars are ringing come on and waltz"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Waltz Kitty waltz let everybody waltz",
+        "Waltz Kitty waltz let everybody waltz",
+        "Waltz Kitty waltz let everybody waltz",
+        "The guitars are ringing come on and waltz"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

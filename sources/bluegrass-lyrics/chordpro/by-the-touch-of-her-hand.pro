@@ -1,0 +1,51 @@
+{meta: title By The Touch Of Her Hand}
+{meta: artist Carter Family}
+{meta: x_lyrics_source bluegrass-lyrics}
+{meta: x_lyrics_url https://www.bluegrasslyrics.com/song/by-the-touch-of-her-hand/}
+{meta: x_chords_source traditional-music-uk}
+{meta: x_chords_url http://www.traditionalmusic.co.uk/carter-family-songs/by_the_touch_of_her_hand.htm}
+{meta: x_generated 2026-02-04}
+
+{start_of_verse: Verse 1}
+There are days so dark
+That I seek in vain
+For the face of my own true love
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+But the darkness hides
+He is there to guide
+By the light of the moon above
+{end_of_verse}
+
+{start_of_chorus}
+Oh the lonesome pines
+Oh the lonesome pines
+Where I met that sweetheart of mine
+With her hand in mine
+And our hearts entwined
+As we strolled through the lonesome pines
+{end_of_chorus}
+
+{start_of_verse: Verse 3}
+Bright stars above
+Two sweethearts in love
+As we sang to the cooing doves
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+He has brought me back
+To that mountain shack
+By the touch of her hand in love
+{end_of_verse}
+
+
+# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
+# These chords need to be merged with the lyrics above
+
+# [D]There are days so [G]dark
+# That I [D]seek in vain
+# For the [A]face of my [A7]own true [D]love
+# But the [D]darkness [G]hides
+# He is [D]there to guide
+# By the [A]light of the [A7]moon [D]above

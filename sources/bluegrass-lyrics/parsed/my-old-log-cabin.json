@@ -1,0 +1,49 @@
+{
+  "slug": "my-old-log-cabin",
+  "title": "My Old Log Cabin",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-old-log-cabin/",
+  "raw_lyrics": "I\u2019ve got an old log cabin by the side of the road\nAnd you\u2019re welcome to rest there if you bear a heavy load\nThere\u2019s a picture of Jesus hanging over my door\nAnd I talk to my Savior from my knees on the floor\n\nMany years I have lived here just struggling along\nOnce the walls shook with laughter they heard many a song\nIt seen the joys of my family shared my grief since they\u2019re gone\nKept me dry from the rain weathered many a storm\n\nI\u2019m just an old feeble man now not much father to go\nSoon my savior\u2019s gonna call me for He\u2019s often told me so\nI\u2019ll just stay in my cabin till I\u2019ve lived my life\u2019s span\nAnd in my Savior\u2019s name I\u2019ll do all that I can\n\nIt heard me sing Rock of Ages and the Old Rugged Cross\nHeard me pray for many people who\u2019s soul thought was lost\nSeen me welcome many strangers who needed help on their way\nWill see the angels come for me when I\u2019ve lived my last day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got an old log cabin by the side of the road",
+        "And you\u2019re welcome to rest there if you bear a heavy load",
+        "There\u2019s a picture of Jesus hanging over my door",
+        "And I talk to my Savior from my knees on the floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many years I have lived here just struggling along",
+        "Once the walls shook with laughter they heard many a song",
+        "It seen the joys of my family shared my grief since they\u2019re gone",
+        "Kept me dry from the rain weathered many a storm"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m just an old feeble man now not much father to go",
+        "Soon my savior\u2019s gonna call me for He\u2019s often told me so",
+        "I\u2019ll just stay in my cabin till I\u2019ve lived my life\u2019s span",
+        "And in my Savior\u2019s name I\u2019ll do all that I can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It heard me sing Rock of Ages and the Old Rugged Cross",
+        "Heard me pray for many people who\u2019s soul thought was lost",
+        "Seen me welcome many strangers who needed help on their way",
+        "Will see the angels come for me when I\u2019ve lived my last day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

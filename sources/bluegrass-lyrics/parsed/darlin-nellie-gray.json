@@ -1,0 +1,79 @@
+{
+  "slug": "darlin-nellie-gray",
+  "title": "Darlin Nellie Gray",
+  "source_url": "https://www.bluegrasslyrics.com/song/darlin-nellie-gray/",
+  "raw_lyrics": "There\u2019s a low, green, valley on the old Kentucky shore\nWhere I\u2019ve whiled many happy hours away,\nJust a sitting and a singing by the little cottage door\nWhere lived my darling Nellie Gray\n\nWhen the moon had climbed the mountain, and the stars were shining too\nThen I\u2019d take my darling Nellie Gray\nAnd we\u2019d go floatin down the river in my little red canoe\nWhile my banjo sweetly I would play\n\nOne night I went to see her, but she\u2019s gone the neighbors say\nAnd the white man had bound her with his chain\nThey have taken her to Georgia for to wear her life away\nAs she toils in the cotton and the cane\n\nOh, my poor Nellie Gray, they have taken you away\nAnd I\u2019ll never see my darling, anymore\nI\u2019m sitting by the river and a weeping all the day\nFor you\u2019ve gone from the old Kentucky shore\n\nNow my canoe is under water, and my banjo is unstrung\nI am tired of living, anymore\nMy eyes shall be cast downward, and my songs will be unsung\nWhile I stay on the old Kentucky shore\n\nNow I\u2019m getting old and feeble, and I cannot see my way\nI can hear someone knocking on my door\nI can hear the angels singing, and I see my Nellie Gray\nSo farewell to the old Kentucky shore\n\nOh, my darling Nellie Gray, up in heaven, so they say\nAnd they\u2019ll never take you from me, anymore\nI\u2019m coming, coming, coming, as the angels clear the way\nSo farewell to the old Kentucky shore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a low, green, valley on the old Kentucky shore",
+        "Where I\u2019ve whiled many happy hours away,",
+        "Just a sitting and a singing by the little cottage door",
+        "Where lived my darling Nellie Gray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the moon had climbed the mountain, and the stars were shining too",
+        "Then I\u2019d take my darling Nellie Gray",
+        "And we\u2019d go floatin down the river in my little red canoe",
+        "While my banjo sweetly I would play"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One night I went to see her, but she\u2019s gone the neighbors say",
+        "And the white man had bound her with his chain",
+        "They have taken her to Georgia for to wear her life away",
+        "As she toils in the cotton and the cane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, my poor Nellie Gray, they have taken you away",
+        "And I\u2019ll never see my darling, anymore",
+        "I\u2019m sitting by the river and a weeping all the day",
+        "For you\u2019ve gone from the old Kentucky shore"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now my canoe is under water, and my banjo is unstrung",
+        "I am tired of living, anymore",
+        "My eyes shall be cast downward, and my songs will be unsung",
+        "While I stay on the old Kentucky shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m getting old and feeble, and I cannot see my way",
+        "I can hear someone knocking on my door",
+        "I can hear the angels singing, and I see my Nellie Gray",
+        "So farewell to the old Kentucky shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, my darling Nellie Gray, up in heaven, so they say",
+        "And they\u2019ll never take you from me, anymore",
+        "I\u2019m coming, coming, coming, as the angels clear the way",
+        "So farewell to the old Kentucky shore"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

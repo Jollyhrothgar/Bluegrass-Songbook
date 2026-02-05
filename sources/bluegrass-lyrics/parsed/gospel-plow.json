@@ -1,0 +1,44 @@
+{
+  "slug": "gospel-plow",
+  "title": "Gospel Plow",
+  "source_url": "https://www.bluegrasslyrics.com/song/gospel-plow/",
+  "raw_lyrics": "Well I got my hands on the gospel plow\nAnd I wouldn\u2019t take nothin\u2019 for my\u00a0 journey now\nKeep your hands on that plow of\u00a0 God\n\nHold on hold on\nKeep your hands on that plow hold on\n\nWell Matthew Mark Luke and John\nAll those prophets are dead and gone\nKeep your hands on that plow of God\n\nI never been to heaven but I\u2019ve been told\nThe streets up there are made of gold\nKeep your hands on that plow of God",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I got my hands on the gospel plow",
+        "And I wouldn\u2019t take nothin\u2019 for my\u00a0 journey now",
+        "Keep your hands on that plow of\u00a0 God"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hold on hold on",
+        "Keep your hands on that plow hold on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well Matthew Mark Luke and John",
+        "All those prophets are dead and gone",
+        "Keep your hands on that plow of God"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never been to heaven but I\u2019ve been told",
+        "The streets up there are made of gold",
+        "Keep your hands on that plow of God"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

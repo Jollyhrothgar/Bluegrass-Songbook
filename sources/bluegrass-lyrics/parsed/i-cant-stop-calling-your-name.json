@@ -1,0 +1,39 @@
+{
+  "slug": "i-cant-stop-calling-your-name",
+  "title": "I Can\u2019t Stop Calling Your Name",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-cant-stop-calling-your-name/",
+  "raw_lyrics": "I don\u2019t drink as much as I used to\nI\u2019ve learned when to get out of the rain\nI don\u2019t sleep anymore since you left me my dear\nAnd I can\u2019t stop calling your name.\n\nI call your name in the middle of the night\nI sit up in my bed wanting to hold you so tight\nBut when I realize that things are not the same\nMaybe then I\u2019ll stop calling your name.\n\nOur house don\u2019t seem to be empty\nOh the laughter and scent of you remain\nEverything in our room reminds me of you\nThat\u2019s why I keep calling your name.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t drink as much as I used to",
+        "I\u2019ve learned when to get out of the rain",
+        "I don\u2019t sleep anymore since you left me my dear",
+        "And I can\u2019t stop calling your name."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I call your name in the middle of the night",
+        "I sit up in my bed wanting to hold you so tight",
+        "But when I realize that things are not the same",
+        "Maybe then I\u2019ll stop calling your name."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Our house don\u2019t seem to be empty",
+        "Oh the laughter and scent of you remain",
+        "Everything in our room reminds me of you",
+        "That\u2019s why I keep calling your name."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

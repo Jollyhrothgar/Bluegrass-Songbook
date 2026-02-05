@@ -1,0 +1,45 @@
+{
+  "slug": "blues-stay-away-from-me",
+  "title": "Blues Stay Away From Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/blues-stay-away-from-me/",
+  "raw_lyrics": "Blues stay away from me\nBlues why don\u2019t you let me be\nI don\u2019t know why you keep on haunting me\n\nLove was never meant for me\nTrue love was never meant for me\nIt seems somehow we never can agree\n\nLife is full of misery\nDreams are like a memory\nBringing back your love that used to be\n\nTears so many I can\u2019t see\nYears don\u2019t mean a thing to me\nTime goes by and still I can\u2019t be free",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Blues stay away from me",
+        "Blues why don\u2019t you let me be",
+        "I don\u2019t know why you keep on haunting me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Love was never meant for me",
+        "True love was never meant for me",
+        "It seems somehow we never can agree"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Life is full of misery",
+        "Dreams are like a memory",
+        "Bringing back your love that used to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tears so many I can\u2019t see",
+        "Years don\u2019t mean a thing to me",
+        "Time goes by and still I can\u2019t be free"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

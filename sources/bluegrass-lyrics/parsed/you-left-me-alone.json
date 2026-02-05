@@ -1,0 +1,49 @@
+{
+  "slug": "you-left-me-alone",
+  "title": "You Left Me Alone",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-left-me-alone/",
+  "raw_lyrics": "My dear you\u2019ve been gone for such a long time\nYou know you have driven me out of my mind\nYou left me alone and went on your way\nAnd my broken heart the price it must pay\n\nThe sigh of the wind the beat of the rain\nBring back to my heart this feeling of pain\nI\u2019ve tried to forget but it never will be\nFor my broken heart just won\u2019t set me free\n\nWhen I close my eyes or look into space\nI see not the dark but your smilin\u2019 face\nWherever I go whatever I say\nMy poor achin\u2019 heart will have its way\n\nWell time must go on til my heart is still\nTil that very day I\u2019ll follow your will\nThe pain will not die for it must live on\nAnd I can\u2019t forget you left me alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My dear you\u2019ve been gone for such a long time",
+        "You know you have driven me out of my mind",
+        "You left me alone and went on your way",
+        "And my broken heart the price it must pay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sigh of the wind the beat of the rain",
+        "Bring back to my heart this feeling of pain",
+        "I\u2019ve tried to forget but it never will be",
+        "For my broken heart just won\u2019t set me free"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I close my eyes or look into space",
+        "I see not the dark but your smilin\u2019 face",
+        "Wherever I go whatever I say",
+        "My poor achin\u2019 heart will have its way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well time must go on til my heart is still",
+        "Til that very day I\u2019ll follow your will",
+        "The pain will not die for it must live on",
+        "And I can\u2019t forget you left me alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

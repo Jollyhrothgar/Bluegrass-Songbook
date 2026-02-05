@@ -1,0 +1,49 @@
+{
+  "slug": "my-brothers-bride",
+  "title": "My Brother\u2019s Bride",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-brothers-bride/",
+  "raw_lyrics": "I walk in the garden where often we met\nThink of the one I\u2019ve lost but love yet\nThe church organ plays for your wedding I learned\nMy heart is broken the day I returned\n\nWhy let me believe that I was the one\nFar away I dreamed of you and home\nI cherished your letters and pictures inside\nMemories sacred helped keep me alive\n\nI face the place where we shared our embrace\nHow often you promised to be my sweet wife\nEmotion chokes me so to see you pass by\nAnd sorrow yes sorrow will mar me for life\n\nWhen friends gather round them I brush tears aside\nI\u2019ll try my best my feelings to hide\nHow lovely she looks as on by me they ride\nMy false sweetheart is my brothers bride",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I walk in the garden where often we met",
+        "Think of the one I\u2019ve lost but love yet",
+        "The church organ plays for your wedding I learned",
+        "My heart is broken the day I returned"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Why let me believe that I was the one",
+        "Far away I dreamed of you and home",
+        "I cherished your letters and pictures inside",
+        "Memories sacred helped keep me alive"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I face the place where we shared our embrace",
+        "How often you promised to be my sweet wife",
+        "Emotion chokes me so to see you pass by",
+        "And sorrow yes sorrow will mar me for life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When friends gather round them I brush tears aside",
+        "I\u2019ll try my best my feelings to hide",
+        "How lovely she looks as on by me they ride",
+        "My false sweetheart is my brothers bride"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

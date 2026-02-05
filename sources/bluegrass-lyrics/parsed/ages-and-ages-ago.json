@@ -1,0 +1,39 @@
+{
+  "slug": "ages-and-ages-ago",
+  "title": "Ages and Ages Ago",
+  "source_url": "https://www.bluegrasslyrics.com/song/ages-and-ages-ago/",
+  "raw_lyrics": "I remember when I made you cry\nAges and ages ago\nI\u2019ll never blame you for our last good bye\nAges and ages ago\n\nSomething told me when you walked away\nThat my poor heart would miss you so\nAnd though it happened only yesterday\nIt seems like ages and ages ago\n\nSomeone came along and took my place\nHow wrong I was to let you go\nAnd though it happened only yesterday\nIt seems like ages and ages ago",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I remember when I made you cry",
+        "Ages and ages ago",
+        "I\u2019ll never blame you for our last good bye",
+        "Ages and ages ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Something told me when you walked away",
+        "That my poor heart would miss you so",
+        "And though it happened only yesterday",
+        "It seems like ages and ages ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someone came along and took my place",
+        "How wrong I was to let you go",
+        "And though it happened only yesterday",
+        "It seems like ages and ages ago"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "my-main-trial-is-yet-to-come",
+  "title": "My Main Trial Is Yet To Come",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-main-trial-is-yet-to-come/",
+  "raw_lyrics": "Sittin\u2019 alone in my cold prison cell\nWatchin the sinkin\u2019 sun\nMy trial on earth is over now\nBut my main trial is yet to come\n\nMy main trial is yet to come oh Lord\nI\u2019ll die in the morning at dawn\nBut after I die in the electric chair\nMy main trial is yet to come\n\nOh mother I\u2019m leavin\u2019 you here all alone\nI\u2019ve disgraced your name I know\nThis trial on earth is for my life\nBut the main trial will be for my soul\n\nThe judge gave me the electric chair\nBut that don\u2019t worry me\nIt\u2019s what the verdict will be on that day\nWhen the main judge\u2019s face I see",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sittin\u2019 alone in my cold prison cell",
+        "Watchin the sinkin\u2019 sun",
+        "My trial on earth is over now",
+        "But my main trial is yet to come"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "My main trial is yet to come oh Lord",
+        "I\u2019ll die in the morning at dawn",
+        "But after I die in the electric chair",
+        "My main trial is yet to come"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh mother I\u2019m leavin\u2019 you here all alone",
+        "I\u2019ve disgraced your name I know",
+        "This trial on earth is for my life",
+        "But the main trial will be for my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The judge gave me the electric chair",
+        "But that don\u2019t worry me",
+        "It\u2019s what the verdict will be on that day",
+        "When the main judge\u2019s face I see"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

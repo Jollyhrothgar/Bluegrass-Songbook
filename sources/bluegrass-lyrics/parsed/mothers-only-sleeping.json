@@ -1,0 +1,39 @@
+{
+  "slug": "mothers-only-sleeping",
+  "title": "Mother\u2019s Only Sleeping",
+  "source_url": "https://www.bluegrasslyrics.com/song/mothers-only-sleeping/",
+  "raw_lyrics": "Mothers not dead, she\u2019s only a sleeping\nJust patiently waiting for Jesus to come\nThe birds will be singing while Mother is sleeping\nThey will sing o\u2019er as the grave sinks away\n\nWell I left my old home way back in the mountains\nFor mother and father had both passed away\nWe followed our mother up to the graveyard\nFor mother was called to heaven that day\n\nOh how we miss her around the old home place\nEverything seems so lonesome since she went away\nMother is sleeping way back the mountains\nYes mother is sleeping way back in the hills",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Mothers not dead, she\u2019s only a sleeping",
+        "Just patiently waiting for Jesus to come",
+        "The birds will be singing while Mother is sleeping",
+        "They will sing o\u2019er as the grave sinks away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I left my old home way back in the mountains",
+        "For mother and father had both passed away",
+        "We followed our mother up to the graveyard",
+        "For mother was called to heaven that day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh how we miss her around the old home place",
+        "Everything seems so lonesome since she went away",
+        "Mother is sleeping way back the mountains",
+        "Yes mother is sleeping way back in the hills"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

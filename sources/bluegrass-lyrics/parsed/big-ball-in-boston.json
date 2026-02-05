@@ -1,0 +1,49 @@
+{
+  "slug": "big-ball-in-boston",
+  "title": "Big Ball In Boston",
+  "source_url": "https://www.bluegrasslyrics.com/song/big-ball-in-boston/",
+  "raw_lyrics": "Big ball in Boston big ball in town\nBig ball in Boston gonna dance around.\n\nLittle glass of sherry little glass of wine\nLet\u2019s have a party let\u2019s have a time.\n\nMy love\u2019s in jail boys my love\u2019s in jail\nMy love\u2019s in jail boys who\u2019ll go her bail?\n\nRoll on the ground boys roll on the ground\nEating soda crackers ten cents a pound.\n\nLook at all the pretty girls walking down the street\nKicking up their heels they\u2019re happy on their feet",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Big ball in Boston big ball in town",
+        "Big ball in Boston gonna dance around."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Little glass of sherry little glass of wine",
+        "Let\u2019s have a party let\u2019s have a time."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My love\u2019s in jail boys my love\u2019s in jail",
+        "My love\u2019s in jail boys who\u2019ll go her bail?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Roll on the ground boys roll on the ground",
+        "Eating soda crackers ten cents a pound."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Look at all the pretty girls walking down the street",
+        "Kicking up their heels they\u2019re happy on their feet"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

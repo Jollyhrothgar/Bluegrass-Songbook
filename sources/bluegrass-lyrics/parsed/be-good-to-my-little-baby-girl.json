@@ -1,0 +1,50 @@
+{
+  "slug": "be-good-to-my-little-baby-girl",
+  "title": "Be Good To My Little Baby Girl",
+  "source_url": "https://www.bluegrasslyrics.com/song/be-good-to-my-little-baby-girl/",
+  "raw_lyrics": "Be good to my little baby girl\nShe\u2019s all I got left in this old world\nShe\u2019s warm and she\u2019s sweet\nLord she means the world to me\nBe good to my little baby girl.\n\nHer eyes light up when I mention your name\nLately she smiles all the time\nShe needs someone strong who won\u2019t do her wrong\nI\u2019m hoping that you\u2019ll be the kind.\n\nI can see her as a child sittin\u2019 on her mama\u2019s knee\nSometimes I think I failed her back then\n\u2018Cause I was runnin\u2019 wild I was always runnin\u201dround\nI never was the dad I should have been.\n\nShe told you of her past of the ones that done her wrong\nYou know her heart\u2019s been broken in two\nShe deserves some happiness and she thinks you\u2019re the best\nI believe her so I\u2019m counting on you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Be good to my little baby girl",
+        "She\u2019s all I got left in this old world",
+        "She\u2019s warm and she\u2019s sweet",
+        "Lord she means the world to me",
+        "Be good to my little baby girl."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her eyes light up when I mention your name",
+        "Lately she smiles all the time",
+        "She needs someone strong who won\u2019t do her wrong",
+        "I\u2019m hoping that you\u2019ll be the kind."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can see her as a child sittin\u2019 on her mama\u2019s knee",
+        "Sometimes I think I failed her back then",
+        "\u2018Cause I was runnin\u2019 wild I was always runnin\u201dround",
+        "I never was the dad I should have been."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She told you of her past of the ones that done her wrong",
+        "You know her heart\u2019s been broken in two",
+        "She deserves some happiness and she thinks you\u2019re the best",
+        "I believe her so I\u2019m counting on you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "going-home-to-stay",
+  "title": "Going Home To Stay",
+  "source_url": "https://www.bluegrasslyrics.com/song/going-home-to-stay/",
+  "raw_lyrics": "Going to my home in the mountains\nThe mountains is where I want to be\nYou know I\u2019ve never been happy\nSince I left those hills of Tennessee\n\nWent away from home to save my mind\nForty years and I feel like eighty-nine\nGoing back home going to stay\nWhere me and my guitar will sing and play\n\nGoing up in holler\nHead up a moonshine still\nI\u2019ll be so happy when I get there\nGonna dance all over them hills\n\nDon\u2019t know why I ever left there\nMust have been out of my mind\nFor staying away from the mountains\nWhen I wanted to go back all the time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Going to my home in the mountains",
+        "The mountains is where I want to be",
+        "You know I\u2019ve never been happy",
+        "Since I left those hills of Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Went away from home to save my mind",
+        "Forty years and I feel like eighty-nine",
+        "Going back home going to stay",
+        "Where me and my guitar will sing and play"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Going up in holler",
+        "Head up a moonshine still",
+        "I\u2019ll be so happy when I get there",
+        "Gonna dance all over them hills"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t know why I ever left there",
+        "Must have been out of my mind",
+        "For staying away from the mountains",
+        "When I wanted to go back all the time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

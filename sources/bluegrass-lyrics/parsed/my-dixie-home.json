@@ -1,0 +1,39 @@
+{
+  "slug": "my-dixie-home",
+  "title": "My Dixie Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-dixie-home/",
+  "raw_lyrics": "I hear the special coming and I\u2019ll be on the blinds\nWhen she pulls out for Dixie on that Mason Dixon line\nNow when I left the old home I was not satisfied\nWhen I kissed my love goodbye, she hung her head and cried\n\nI knew a girl in Dixie, she was my childhood pal\nShe said if I\u2019d quit bummin, that she would be my gal\nAt night I think about her, she\u2019s always on my mind\nAnd when we played together, she was so good and kind\n\nI\u2019ve travelled this whole world over on freight trains thataway\nI\u2019m heading back to Dixie, and there I\u2019ll spend my days\nI hear the special coming and I\u2019ll be on the blinds\nWhen she pulls out for Dixie on that Mason Dixon line",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I hear the special coming and I\u2019ll be on the blinds",
+        "When she pulls out for Dixie on that Mason Dixon line",
+        "Now when I left the old home I was not satisfied",
+        "When I kissed my love goodbye, she hung her head and cried"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I knew a girl in Dixie, she was my childhood pal",
+        "She said if I\u2019d quit bummin, that she would be my gal",
+        "At night I think about her, she\u2019s always on my mind",
+        "And when we played together, she was so good and kind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve travelled this whole world over on freight trains thataway",
+        "I\u2019m heading back to Dixie, and there I\u2019ll spend my days",
+        "I hear the special coming and I\u2019ll be on the blinds",
+        "When she pulls out for Dixie on that Mason Dixon line"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "i-wonder-why-you-said-goodbye",
+  "title": "I Wonder Why You Said Goodbye",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-wonder-why-you-said-goodbye/",
+  "raw_lyrics": "Your letter came this very day\nAnd it wiped all my dreams away\nI\u2019ve read it o\u2019er a thousand times\nYou left me with a worried mind\n\nI wonder why you said goodbye\nAnd did you mean to make me cry\nI guess until the day I die\nThat I will still be wondering why.\n\nI dread the thought that we are through\nAnd that you\u2019ve found somebody new\nI love you now and always will\nI\u2019d rather die than say farewell\n\nI hope and pray before my time\nThat you\u2019ll come back and say you\u2019re mine\nBring back the love you took away\nAnd mend the heart you broke today",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Your letter came this very day",
+        "And it wiped all my dreams away",
+        "I\u2019ve read it o\u2019er a thousand times",
+        "You left me with a worried mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I wonder why you said goodbye",
+        "And did you mean to make me cry",
+        "I guess until the day I die",
+        "That I will still be wondering why."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I dread the thought that we are through",
+        "And that you\u2019ve found somebody new",
+        "I love you now and always will",
+        "I\u2019d rather die than say farewell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hope and pray before my time",
+        "That you\u2019ll come back and say you\u2019re mine",
+        "Bring back the love you took away",
+        "And mend the heart you broke today"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

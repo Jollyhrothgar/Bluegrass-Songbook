@@ -1,0 +1,54 @@
+{
+  "slug": "highway-forty-blues",
+  "title": "Highway Forty Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/highway-forty-blues/",
+  "raw_lyrics": "With these Highway 40 blues\nI\u2019ve walked holes in both my shoes\nCounted the days since I\u2019ve been gone\nAnd I\u2019d love to see the lights of home\nWasted time and money too\nSquandered youth in search of truth\nBut in the end I\u2019d have to lose\nLord above, I\u2019ve paid my dues\nI\u2019ve got them Highway 40 blues.\n\nThe highway called when I was young\nIt told me lies of things to come\nFame and fortune lies ahead\nThat\u2019s what the billboard light had said\nShattered dreams my mind is numb\nMoney\u2019s gone stick out my thumb\nMy eyes are filled with bitter tears\nLord, I ain\u2019t been home in years\nI got them Highway 40 blues.\n\nYou know I rambled all around\nLike a rolling stone from town to town\nMet pretty girls I\u2019d have to say\nBut none of them could make me stay\nI\u2019ve played the music halls and bars\nHad fancy clothes and big fine cars\nThings a country boy can\u2019t use\nDixie land I sure miss you\nI\u2019ve got them Highway 40 blues.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "With these Highway 40 blues",
+        "I\u2019ve walked holes in both my shoes",
+        "Counted the days since I\u2019ve been gone",
+        "And I\u2019d love to see the lights of home",
+        "Wasted time and money too",
+        "Squandered youth in search of truth",
+        "But in the end I\u2019d have to lose",
+        "Lord above, I\u2019ve paid my dues",
+        "I\u2019ve got them Highway 40 blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The highway called when I was young",
+        "It told me lies of things to come",
+        "Fame and fortune lies ahead",
+        "That\u2019s what the billboard light had said",
+        "Shattered dreams my mind is numb",
+        "Money\u2019s gone stick out my thumb",
+        "My eyes are filled with bitter tears",
+        "Lord, I ain\u2019t been home in years",
+        "I got them Highway 40 blues."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You know I rambled all around",
+        "Like a rolling stone from town to town",
+        "Met pretty girls I\u2019d have to say",
+        "But none of them could make me stay",
+        "I\u2019ve played the music halls and bars",
+        "Had fancy clothes and big fine cars",
+        "Things a country boy can\u2019t use",
+        "Dixie land I sure miss you",
+        "I\u2019ve got them Highway 40 blues."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

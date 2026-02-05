@@ -1,0 +1,49 @@
+{
+  "slug": "poor-rebel-soldier",
+  "title": "Poor Rebel Soldier",
+  "source_url": "https://www.bluegrasslyrics.com/song/poor-rebel-soldier/",
+  "raw_lyrics": "I\u2019m a poor rebel soldier a long way from home\nAin\u2019t had me no loving since the day I\u2019ve been gone\nCan\u2019t find me no woman in this Yankee land\nThere\u2019s a place in old Dixie I know where I can\n\nSince I left old Georgia a long time ago\nWe run Grant\u2019s big army in the land where it snows\nThe cold wind is blowing and freezing the rain\nBut there\u2019s hot blood still running through these rebel veins\n\nThe call of the wild keeps howling to me\nFrom the mountains down yonder in old Tennessee\nGot a woman who\u2019s waiting in old Knoxville town\nWhen night falls I\u2019m going to be Tennessee bound\n\nI\u2019m a poor rebel soldier and I\u2019m going home\nCause I don\u2019t call it living when I\u2019m living alone\nCome morning they\u2019ll look but me they won\u2019t find\nI\u2019m going to be south of that old Dixie line",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a poor rebel soldier a long way from home",
+        "Ain\u2019t had me no loving since the day I\u2019ve been gone",
+        "Can\u2019t find me no woman in this Yankee land",
+        "There\u2019s a place in old Dixie I know where I can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Since I left old Georgia a long time ago",
+        "We run Grant\u2019s big army in the land where it snows",
+        "The cold wind is blowing and freezing the rain",
+        "But there\u2019s hot blood still running through these rebel veins"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The call of the wild keeps howling to me",
+        "From the mountains down yonder in old Tennessee",
+        "Got a woman who\u2019s waiting in old Knoxville town",
+        "When night falls I\u2019m going to be Tennessee bound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a poor rebel soldier and I\u2019m going home",
+        "Cause I don\u2019t call it living when I\u2019m living alone",
+        "Come morning they\u2019ll look but me they won\u2019t find",
+        "I\u2019m going to be south of that old Dixie line"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "letters-have-no-arms",
+  "title": "Letters Have no Arms",
+  "source_url": "https://www.bluegrasslyrics.com/song/letters-have-no-arms/",
+  "raw_lyrics": "I got your letter dear sweetheart\nAnd darlin I miss you oh so much\nYour letter has cheered my but I\u2019m lonesome\nLonesome just to feel your lovin touch\n\nLetters never bring me the touch of your hand\nOr none of your sweet lovin charm\nI get so lonesome for you darlin\nAnd you know that letters have no arms\n\nLetters have no arms dear to hold me\nKisses on paper are so cold\nThese sweet things you write in your letters\nI want to be with you dear with",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I got your letter dear sweetheart",
+        "And darlin I miss you oh so much",
+        "Your letter has cheered my but I\u2019m lonesome",
+        "Lonesome just to feel your lovin touch"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Letters never bring me the touch of your hand",
+        "Or none of your sweet lovin charm",
+        "I get so lonesome for you darlin",
+        "And you know that letters have no arms"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Letters have no arms dear to hold me",
+        "Kisses on paper are so cold",
+        "These sweet things you write in your letters",
+        "I want to be with you dear with"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "picture-on-the-wall",
+  "title": "Picture On The Wall",
+  "source_url": "https://www.bluegrasslyrics.com/song/picture-on-the-wall/",
+  "raw_lyrics": "There\u2019s an old and faded picture on the wall\nThat has been a hanging there for many years\nIt\u2019s a picture my mother\nFor I know there is no other\nThat can take the place of mother on the wall\n\nOn the wall (on the wall) on the wall (on the wall)\nHow I love that dear old picture on the wall\nTime is swiftly passing by\nAnd I bow my head and cry\nCause I know I\u2019ll see my mother after all\n\nYes the children all have gathered all have gone\nAnd I have a little family of my own\nAnd I know I love them well\nMore than any tongue can tell\nBut I\u2019ll hold that dear old picture on the wall\n\nSince I lost that dear old mother years ago\nThere is none to which with troubles I can go\nAs my guitar makes its chords\nI am praying to the Lord\nLet me hold that dear old picture on the wall",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s an old and faded picture on the wall",
+        "That has been a hanging there for many years",
+        "It\u2019s a picture my mother",
+        "For I know there is no other",
+        "That can take the place of mother on the wall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "On the wall (on the wall) on the wall (on the wall)",
+        "How I love that dear old picture on the wall",
+        "Time is swiftly passing by",
+        "And I bow my head and cry",
+        "Cause I know I\u2019ll see my mother after all"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes the children all have gathered all have gone",
+        "And I have a little family of my own",
+        "And I know I love them well",
+        "More than any tongue can tell",
+        "But I\u2019ll hold that dear old picture on the wall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Since I lost that dear old mother years ago",
+        "There is none to which with troubles I can go",
+        "As my guitar makes its chords",
+        "I am praying to the Lord",
+        "Let me hold that dear old picture on the wall"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

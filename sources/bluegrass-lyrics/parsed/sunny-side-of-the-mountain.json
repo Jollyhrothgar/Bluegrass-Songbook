@@ -1,0 +1,39 @@
+{
+  "slug": "sunny-side-of-the-mountain",
+  "title": "Sunny Side Of The Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/sunny-side-of-the-mountain/",
+  "raw_lyrics": "Now don\u2019t forget me little darling while I\u2019m growing old and gray\nJust a little thought before I\u2019m going far away\nI\u2019ll be waiting on the hillside where the wild red roses grow\nOn the sunny side of the mountain where the rippling waters fall\n\nNow don\u2019t forget about those days we courted many years ago\nDon\u2019t forget all the promises you gave me and so\nI\u2019ll be waiting on the hillside on the day that you will call\nOn the sunny side of the mountain where the rippling waters fall\n\nTell me darling in your letter do you ever think of me\nPlease answer little darling tell me where you can be\nIt\u2019s been so long dear since I\u2019ve seen you but my love still lingers on\nDon\u2019t forget me little darling though our love affair seems gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now don\u2019t forget me little darling while I\u2019m growing old and gray",
+        "Just a little thought before I\u2019m going far away",
+        "I\u2019ll be waiting on the hillside where the wild red roses grow",
+        "On the sunny side of the mountain where the rippling waters fall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now don\u2019t forget about those days we courted many years ago",
+        "Don\u2019t forget all the promises you gave me and so",
+        "I\u2019ll be waiting on the hillside on the day that you will call",
+        "On the sunny side of the mountain where the rippling waters fall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell me darling in your letter do you ever think of me",
+        "Please answer little darling tell me where you can be",
+        "It\u2019s been so long dear since I\u2019ve seen you but my love still lingers on",
+        "Don\u2019t forget me little darling though our love affair seems gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

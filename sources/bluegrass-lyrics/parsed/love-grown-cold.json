@@ -1,0 +1,47 @@
+{
+  "slug": "love-grown-cold",
+  "title": "Love Grown Cold",
+  "source_url": "https://www.bluegrasslyrics.com/song/love-grown-cold/",
+  "raw_lyrics": "Now you can take my money and you can take my pride\nYou can take that long road down the mountain side\nGo downtown and fool around but you\u2019re not fooling me\nI\u2019m not the one you love so don\u2019t come home to me\n\nI\u2019m tired of being lied to tired of growing old\nTired of living my life for  love grown cold\n\nNow you can catch a wild bird and you can set it free\nBut you can\u2019t turn loose the pain that\u2019s trapped inside of me\nYou can teach the cheating kind to live the golden rule\nMy mama didn\u2019t raise me to be a dog-gone fool\n\nNow you can take your whiskey and you can take your wine\nAnd I might spend some lonely nights but I\u2019ll just take my time\nThere comes a time a broken heart just has to close it\u2019s door\nTired of giving part, just can\u2019t give no more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now you can take my money and you can take my pride",
+        "You can take that long road down the mountain side",
+        "Go downtown and fool around but you\u2019re not fooling me",
+        "I\u2019m not the one you love so don\u2019t come home to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m tired of being lied to tired of growing old",
+        "Tired of living my life for  love grown cold"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you can catch a wild bird and you can set it free",
+        "But you can\u2019t turn loose the pain that\u2019s trapped inside of me",
+        "You can teach the cheating kind to live the golden rule",
+        "My mama didn\u2019t raise me to be a dog-gone fool"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you can take your whiskey and you can take your wine",
+        "And I might spend some lonely nights but I\u2019ll just take my time",
+        "There comes a time a broken heart just has to close it\u2019s door",
+        "Tired of giving part, just can\u2019t give no more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

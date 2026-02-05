@@ -1,0 +1,39 @@
+{
+  "slug": "no-one-but-my-darlin",
+  "title": "No One But My Darlin\u2019",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-one-but-my-darlin/",
+  "raw_lyrics": "I\u2019ll never love no one else but my darlin\u2019\nEven though we both had to part\nI\u2019ll never love no one else but my darlin\u2019\nWhere ever she goes she\u2019ll always have my heart\n\nAs most people say absence makes the heart grow cold\nBut the kind of love we had each other\u2019s heart will hold\nI\u2019ll never love no one else but my darlin\u2019\nAs we travel down two different lonesome roads\n\nI\u2019ll never let no one take your place my darlin\u2019\nFor you know you meant the world to me\nI\u2019ll never let no one tale your place my darlin\u2019\nFor your love won\u2019t let my heart be free",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll never love no one else but my darlin\u2019",
+        "Even though we both had to part",
+        "I\u2019ll never love no one else but my darlin\u2019",
+        "Where ever she goes she\u2019ll always have my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As most people say absence makes the heart grow cold",
+        "But the kind of love we had each other\u2019s heart will hold",
+        "I\u2019ll never love no one else but my darlin\u2019",
+        "As we travel down two different lonesome roads"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll never let no one take your place my darlin\u2019",
+        "For you know you meant the world to me",
+        "I\u2019ll never let no one tale your place my darlin\u2019",
+        "For your love won\u2019t let my heart be free"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

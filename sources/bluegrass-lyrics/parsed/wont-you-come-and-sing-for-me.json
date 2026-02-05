@@ -1,0 +1,49 @@
+{
+  "slug": "wont-you-come-and-sing-for-me",
+  "title": "Won\u2019t You Come And Sing For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/wont-you-come-and-sing-for-me/",
+  "raw_lyrics": "I feel the shadows now upon me\nAnd the angels beckon to me\nBefore I go dear sisters and brothers\nWon\u2019t you come and sing for me\n\nSing those hymns we sang together\nIn that plain little church with the benches all worn\nHow dear to my heart how precious the moments\nWe stood shaking hands and singing a song\n\nMy burden is heavy my way has grown weary\nI have traveled a road that is long\nAnd it would warm this old heart my dear brother\nIf you come and sing me one song\n\nIn my home beyond the dark river\nYour sweet faces no more I will see\nUntil we meet where there\u2019s no more sad parting\nWon\u2019t you come and sing for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I feel the shadows now upon me",
+        "And the angels beckon to me",
+        "Before I go dear sisters and brothers",
+        "Won\u2019t you come and sing for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Sing those hymns we sang together",
+        "In that plain little church with the benches all worn",
+        "How dear to my heart how precious the moments",
+        "We stood shaking hands and singing a song"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My burden is heavy my way has grown weary",
+        "I have traveled a road that is long",
+        "And it would warm this old heart my dear brother",
+        "If you come and sing me one song"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In my home beyond the dark river",
+        "Your sweet faces no more I will see",
+        "Until we meet where there\u2019s no more sad parting",
+        "Won\u2019t you come and sing for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

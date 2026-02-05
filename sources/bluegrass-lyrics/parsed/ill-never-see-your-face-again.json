@@ -1,0 +1,52 @@
+{
+  "slug": "ill-never-see-your-face-again",
+  "title": "I\u2019ll Never See Your Face Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-never-see-your-face-again/",
+  "raw_lyrics": "How many times have I seen you with a tear upon your check\nAnd that beautiful attempt at a smile\nYou wave good-bye and wish me well and don\u2019t forget to write\nOnce again I have you counting the miles\n\nThe pained expression in your face\nThe frailty of your form\nAs you slowly faded from my sight\nIt\u2019s a picture in my memory I never will forget\nThough I haven\u2019t seen your face in a while\n\nAlways looking toward the next horizon\nNever looking back on where I\u2019ve been\nTomorrow is another day you know that I\u2019ll be back someday\nI guess that\u2019s just the way the story ends\nFor I find myself alone without a friend\n\nYou know for every fond farewell there always was hello\nAnd I hoped that it would help to ease your pain\nAnd now I stand in these new shoes\nthe tears are rollin\u2019 down\nFor I know I\u2019ll never see your face again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "How many times have I seen you with a tear upon your check",
+        "And that beautiful attempt at a smile",
+        "You wave good-bye and wish me well and don\u2019t forget to write",
+        "Once again I have you counting the miles"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The pained expression in your face",
+        "The frailty of your form",
+        "As you slowly faded from my sight",
+        "It\u2019s a picture in my memory I never will forget",
+        "Though I haven\u2019t seen your face in a while"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Always looking toward the next horizon",
+        "Never looking back on where I\u2019ve been",
+        "Tomorrow is another day you know that I\u2019ll be back someday",
+        "I guess that\u2019s just the way the story ends",
+        "For I find myself alone without a friend"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You know for every fond farewell there always was hello",
+        "And I hoped that it would help to ease your pain",
+        "And now I stand in these new shoes",
+        "the tears are rollin\u2019 down",
+        "For I know I\u2019ll never see your face again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "san-antonio-rose",
+  "title": "San Antonio Rose",
+  "source_url": "https://www.bluegrasslyrics.com/song/san-antonio-rose/",
+  "raw_lyrics": "Deep within my heart lies a melody\nA song of old san antone\nWhere in dreams i live with a memory\nMy rose my rose of san antone\n\nLips so sweet and tender like petals fall apart\nBring back my rose rose of san antone\nMoon in all your spendor know only my heart\nCall back my rose rose of san antone\n\nIt was there i found beside the alamo\nEnchantment strange as the blue up above\nA moonlit path that only she would know\nStill hears my broken song of love\n\nBroken song empty words i know\nLine in my heart all alone\nAnd that moonlit path by the alamo\nAnd rose my rose of san antone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Deep within my heart lies a melody",
+        "A song of old san antone",
+        "Where in dreams i live with a memory",
+        "My rose my rose of san antone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Lips so sweet and tender like petals fall apart",
+        "Bring back my rose rose of san antone",
+        "Moon in all your spendor know only my heart",
+        "Call back my rose rose of san antone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was there i found beside the alamo",
+        "Enchantment strange as the blue up above",
+        "A moonlit path that only she would know",
+        "Still hears my broken song of love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Broken song empty words i know",
+        "Line in my heart all alone",
+        "And that moonlit path by the alamo",
+        "And rose my rose of san antone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

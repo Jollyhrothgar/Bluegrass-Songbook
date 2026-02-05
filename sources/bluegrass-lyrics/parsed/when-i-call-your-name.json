@@ -1,0 +1,39 @@
+{
+  "slug": "when-i-call-your-name",
+  "title": "When I Call Your Name",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-i-call-your-name/",
+  "raw_lyrics": "I rushed home from work like I always do\nSpent my whole day just thinking of you\nAs I walked through the front door my whole life changed\n\u2018Cause nobody answers when I call your name\n\nThe lonely sound of my voice calling\nIs driving me insane\nAnd just like rain, the tears keep falling,\n\u2018Cause nobody answers when I call your name\n\nA note on the table that told me goodbye\nSaid you\u2019d grown weary of living a lie\nOh,  your love has ended but mine still remains\nAnd nobody answers when I call your name",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I rushed home from work like I always do",
+        "Spent my whole day just thinking of you",
+        "As I walked through the front door my whole life changed",
+        "\u2018Cause nobody answers when I call your name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The lonely sound of my voice calling",
+        "Is driving me insane",
+        "And just like rain, the tears keep falling,",
+        "\u2018Cause nobody answers when I call your name"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A note on the table that told me goodbye",
+        "Said you\u2019d grown weary of living a lie",
+        "Oh,  your love has ended but mine still remains",
+        "And nobody answers when I call your name"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

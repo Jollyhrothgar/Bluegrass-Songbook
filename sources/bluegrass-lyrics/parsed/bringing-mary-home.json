@@ -1,0 +1,59 @@
+{
+  "slug": "bringing-mary-home",
+  "title": "Bringing Mary Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/bringing-mary-home/",
+  "raw_lyrics": "I was driving down a lonely road one dark and stormy night\nWhen a little girl by the roadside showed up in my headlights\nI stopped and she got in back and in a shaky tone\nShe said: My name is Mary, please won\u2019t you take me home?\n\nShe must have been so frightened all alone there in the night\nThere was something strange about her, for her face was deathly white\nShe sat so pale and quiet in the back seat all alone\nI\u2019ll never will forget that night I took Mary home\n\nI pulled into the driveway where she told me to go\nGot out to help her from the car and opened up the door\nBut I just could not believe my eyes \u2019cause the back seat was bare\nI looked all around the car but Mary wasn\u2019t there\n\nA light shone from the porch, someone opened up the door\nI asked about the little girl that I was looking for\nThen a lady gently smiled and brushed a tear away\nShe said: It sure was nice of you to go out of your way\n\nBut thirteen years ago today a wreck just down the road\nOur darling Mary lost her life and we miss her so\nThank you for your trouble and the kindness you have shone\nYou\u2019re the thirteenth one who\u2019s been here bringing Mary home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was driving down a lonely road one dark and stormy night",
+        "When a little girl by the roadside showed up in my headlights",
+        "I stopped and she got in back and in a shaky tone",
+        "She said: My name is Mary, please won\u2019t you take me home?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She must have been so frightened all alone there in the night",
+        "There was something strange about her, for her face was deathly white",
+        "She sat so pale and quiet in the back seat all alone",
+        "I\u2019ll never will forget that night I took Mary home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I pulled into the driveway where she told me to go",
+        "Got out to help her from the car and opened up the door",
+        "But I just could not believe my eyes \u2019cause the back seat was bare",
+        "I looked all around the car but Mary wasn\u2019t there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A light shone from the porch, someone opened up the door",
+        "I asked about the little girl that I was looking for",
+        "Then a lady gently smiled and brushed a tear away",
+        "She said: It sure was nice of you to go out of your way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But thirteen years ago today a wreck just down the road",
+        "Our darling Mary lost her life and we miss her so",
+        "Thank you for your trouble and the kindness you have shone",
+        "You\u2019re the thirteenth one who\u2019s been here bringing Mary home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

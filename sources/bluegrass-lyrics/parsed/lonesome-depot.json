@@ -1,0 +1,39 @@
+{
+  "slug": "lonesome-depot",
+  "title": "Lonesome Depot",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-depot/",
+  "raw_lyrics": "Have you ever stood in a lonesome depot\nand told someone goodbye\nyou\u2019d give anything in all this world\nif she\u2019d only break down and cry\n\nForget the pain and bear your shame\nAnd beg her not to go\nFor when she\u2019s gone there\u2019s misery\nAnd the loneliness will grow and grow\n\nOh how many years did she stand by you\nAnd lay awake at night\nCrying and prayin for you to come home\nYou know now you\u2019re weepin her right",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Have you ever stood in a lonesome depot",
+        "and told someone goodbye",
+        "you\u2019d give anything in all this world",
+        "if she\u2019d only break down and cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Forget the pain and bear your shame",
+        "And beg her not to go",
+        "For when she\u2019s gone there\u2019s misery",
+        "And the loneliness will grow and grow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh how many years did she stand by you",
+        "And lay awake at night",
+        "Crying and prayin for you to come home",
+        "You know now you\u2019re weepin her right"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

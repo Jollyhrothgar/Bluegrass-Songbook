@@ -1,0 +1,43 @@
+{
+  "slug": "are-you-alone",
+  "title": "Are You Alone",
+  "source_url": "https://www.bluegrasslyrics.com/song/are-you-alone/",
+  "raw_lyrics": "How often I think of the old days\nI remember well the love we once knew\nWe parted now and strayed from each other\nBut somehow I can\u2019t help wondering about you\nAre you alone with a memory\nHaunted by dreams of the past\nJust waiting for someone to tell you\nYou\u2019re playing a game that won\u2019t last\n\nLast night I was dreamin about you\nI thought you were back here with me\nI prayed that you\u2019d stay here forever\nToo soon I realized it couldn\u2019t be\n\nSomeday when your love here is faded\nAnd we meet on that highway with no end\nWe\u2019ll stroll hand in hand there forever\nIn a land where our love can bloom again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "How often I think of the old days",
+        "I remember well the love we once knew",
+        "We parted now and strayed from each other",
+        "But somehow I can\u2019t help wondering about you",
+        "Are you alone with a memory",
+        "Haunted by dreams of the past",
+        "Just waiting for someone to tell you",
+        "You\u2019re playing a game that won\u2019t last"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night I was dreamin about you",
+        "I thought you were back here with me",
+        "I prayed that you\u2019d stay here forever",
+        "Too soon I realized it couldn\u2019t be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday when your love here is faded",
+        "And we meet on that highway with no end",
+        "We\u2019ll stroll hand in hand there forever",
+        "In a land where our love can bloom again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

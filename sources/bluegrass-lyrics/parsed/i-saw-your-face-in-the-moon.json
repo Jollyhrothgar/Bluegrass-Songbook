@@ -1,0 +1,31 @@
+{
+  "slug": "i-saw-your-face-in-the-moon",
+  "title": "I Saw Your Face In The Moon",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-saw-your-face-in-the-moon/",
+  "raw_lyrics": "I saw your face in the moon honey\nYou threw a smile at me\nYou pretended that you were happy\nBut in those loving eyes I could see\n\nYou were having blue thoughts of by gone\nDays you and I once knew\nBut I could see you smile\nAnd you faded with the blue\nWhen I saw your face in the moon honey\nWhen I saw your face in the moon",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I saw your face in the moon honey",
+        "You threw a smile at me",
+        "You pretended that you were happy",
+        "But in those loving eyes I could see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You were having blue thoughts of by gone",
+        "Days you and I once knew",
+        "But I could see you smile",
+        "And you faded with the blue",
+        "When I saw your face in the moon honey",
+        "When I saw your face in the moon"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

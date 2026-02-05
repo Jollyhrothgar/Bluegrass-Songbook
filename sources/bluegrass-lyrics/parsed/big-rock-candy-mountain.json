@@ -1,0 +1,74 @@
+{
+  "slug": "big-rock-candy-mountain",
+  "title": "Big Rock Candy Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/big-rock-candy-mountain/",
+  "raw_lyrics": "One evening as the sun went down and the jungle fire was burning\nDown the track came a hobo hiking and he said boys I\u2019m not turning\nI\u2019m headin for a land that\u2019s far away beside the crystal fountains\nSo come with me we\u2019ll go and see the Big Rock Candy Mountains\n\nIn the Big Rock Candy Mountains there\u2019s a land that\u2019s fair and bright\nWhere the handouts grow on bushes and you sleep out every night\nWhere the boxcars are all empty and the sun shines every day\nOn the birds and the bees and the cigarette trees\nWhere the lemonade springs where the bluebird sings\nIn the Big Rock Candy Mountains\n\nIn the Big Rock Candy Mountains all the cops have wooden legs\nAnd the bulldogs all have rubber teeth and the hens lay soft boiled eggs\nThe farmer\u2019s trees are full of fruit and the barns are full of hay\nOh, I\u2019m bound to go where there ain\u2019t no snow\nWhere the rain don\u2019t fall and the wind don\u2019t blow\nIn the Big Rock Candy Mountains\n\nIn the Big Rock Candy Mountains you never change your socks\nAnd the little streams of alcohol come a-trickling down the rocks\nThe brakemen have to tip their hats and the railroad bulls are blind\nThere\u2019s a lake of stew and of whiskey too\nYou can paddle all around \u2019em in a big canoe\nIn the Big Rock Candy Mountains\n\nIn the Big Rock Candy Mountains the jails are made of tin\nAnd you can walk right out again as soon as you are in\nThere ain\u2019t no short handled shovels, no axes saws or picks\nI\u2019m a goin to stay where you sleep all day\nWhere they hung the jerk that invented work\nIn the Big Rock Candy Mountains\n\nI\u2019ll see you all this coming fall in the Big Rock Candy Mountains",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One evening as the sun went down and the jungle fire was burning",
+        "Down the track came a hobo hiking and he said boys I\u2019m not turning",
+        "I\u2019m headin for a land that\u2019s far away beside the crystal fountains",
+        "So come with me we\u2019ll go and see the Big Rock Candy Mountains"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the Big Rock Candy Mountains there\u2019s a land that\u2019s fair and bright",
+        "Where the handouts grow on bushes and you sleep out every night",
+        "Where the boxcars are all empty and the sun shines every day",
+        "On the birds and the bees and the cigarette trees",
+        "Where the lemonade springs where the bluebird sings",
+        "In the Big Rock Candy Mountains"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the Big Rock Candy Mountains all the cops have wooden legs",
+        "And the bulldogs all have rubber teeth and the hens lay soft boiled eggs",
+        "The farmer\u2019s trees are full of fruit and the barns are full of hay",
+        "Oh, I\u2019m bound to go where there ain\u2019t no snow",
+        "Where the rain don\u2019t fall and the wind don\u2019t blow",
+        "In the Big Rock Candy Mountains"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the Big Rock Candy Mountains you never change your socks",
+        "And the little streams of alcohol come a-trickling down the rocks",
+        "The brakemen have to tip their hats and the railroad bulls are blind",
+        "There\u2019s a lake of stew and of whiskey too",
+        "You can paddle all around \u2019em in a big canoe",
+        "In the Big Rock Candy Mountains"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the Big Rock Candy Mountains the jails are made of tin",
+        "And you can walk right out again as soon as you are in",
+        "There ain\u2019t no short handled shovels, no axes saws or picks",
+        "I\u2019m a goin to stay where you sleep all day",
+        "Where they hung the jerk that invented work",
+        "In the Big Rock Candy Mountains"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll see you all this coming fall in the Big Rock Candy Mountains"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

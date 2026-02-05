@@ -1,0 +1,49 @@
+{
+  "slug": "wayfaring-stranger",
+  "title": "Wayfaring Stranger",
+  "source_url": "https://www.bluegrasslyrics.com/song/wayfaring-stranger/",
+  "raw_lyrics": "I am a poor wayfaring stranger\nWhile traveling through this world of woe\nYet there\u2019s no sickness, toil or danger\nIn that bright world to which I go\n\nI\u2019m going there to see my father\nI\u2019m going there no more to roam\nI\u2019m only going over Jordan\nI\u2019m only going over home\n\nI know dark clouds will gather \u2019round me\nI know my way is rough and steep\nYet beauteous fields lie just before me\nWhere God\u2019s redeemed their vigils keep\n\nI\u2019m going there to see my mother\nShe said she\u2019d meet me when I come\nI\u2019m only going over Jordan\nI\u2019m only going over home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am a poor wayfaring stranger",
+        "While traveling through this world of woe",
+        "Yet there\u2019s no sickness, toil or danger",
+        "In that bright world to which I go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m going there to see my father",
+        "I\u2019m going there no more to roam",
+        "I\u2019m only going over Jordan",
+        "I\u2019m only going over home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know dark clouds will gather \u2019round me",
+        "I know my way is rough and steep",
+        "Yet beauteous fields lie just before me",
+        "Where God\u2019s redeemed their vigils keep"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going there to see my mother",
+        "She said she\u2019d meet me when I come",
+        "I\u2019m only going over Jordan",
+        "I\u2019m only going over home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

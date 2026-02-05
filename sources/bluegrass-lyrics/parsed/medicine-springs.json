@@ -1,0 +1,64 @@
+{
+  "slug": "medicine-springs",
+  "title": "Medicine Springs",
+  "source_url": "https://www.bluegrasslyrics.com/song/medicine-springs/",
+  "raw_lyrics": "Well I wandered way back in the mountains\nI was searching for fortune and fame\nI found where the water runs deep from the hills\nThey call it the medicine springs\nThey call it the medicine springs\n\nIt was there that I met a fair maiden\nYellow hair and big eyes of blue\nShe told me one day she loved only me\nThat she\u2019d forever be true\nThat she\u2019d forever be true\n\nWell I wanted the best for my darlin\u2019\nBut my pockets were empty and bare\nMy love was so great for that starlett of mine\nI took what another man had\nI took what another man had\n\nAs I sit here alone in this jailhouse\nWith a letter I can\u2019t hardly read\nIt said my darlin\u2019 has left this ol\u2019 world\nShe\u2019s a waitin\u2019 in heaven for me\nShe\u2019s a waitin\u2019 in heaven for me\n\nSome day I\u2019ll go back to the mountains\nWhere I\u2019ll spend the rest of my days\nAnd the water that runs frome the side of the hill\nWill water her flowery grave\nWill water her flowery grave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I wandered way back in the mountains",
+        "I was searching for fortune and fame",
+        "I found where the water runs deep from the hills",
+        "They call it the medicine springs",
+        "They call it the medicine springs"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was there that I met a fair maiden",
+        "Yellow hair and big eyes of blue",
+        "She told me one day she loved only me",
+        "That she\u2019d forever be true",
+        "That she\u2019d forever be true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I wanted the best for my darlin\u2019",
+        "But my pockets were empty and bare",
+        "My love was so great for that starlett of mine",
+        "I took what another man had",
+        "I took what another man had"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I sit here alone in this jailhouse",
+        "With a letter I can\u2019t hardly read",
+        "It said my darlin\u2019 has left this ol\u2019 world",
+        "She\u2019s a waitin\u2019 in heaven for me",
+        "She\u2019s a waitin\u2019 in heaven for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some day I\u2019ll go back to the mountains",
+        "Where I\u2019ll spend the rest of my days",
+        "And the water that runs frome the side of the hill",
+        "Will water her flowery grave",
+        "Will water her flowery grave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

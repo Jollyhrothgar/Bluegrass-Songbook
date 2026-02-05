@@ -1,0 +1,49 @@
+{
+  "slug": "if-we-never-meet-again-this-side-of-heaven",
+  "title": "If We Never Meet Again This Side Of Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-we-never-meet-again-this-side-of-heaven/",
+  "raw_lyrics": "Soon we\u2019ll come to the end of life\u2019s journey\nAnd perhaps we\u2019ll never meet anymore\n\u2018Til we gather in heaven\u2019s bright city\nFar away on that beautiful shore\n\nIf we never meet again this side of heaven\nAs we struggle through this world and its strife\nThere\u2019s another meeting place somewhere in heaven\nBy the river of life\n\nWhere the charming roses bloom forever\nAnd where separation come no more\nIf we never meet again this side of heaven\nI will meet you on that beautiful shore\n\nOh so often we are parted with sorrow\nAnd action often quietens our pain\nBut we never shall sorrow in heaven\nGod be with you till we meet again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Soon we\u2019ll come to the end of life\u2019s journey",
+        "And perhaps we\u2019ll never meet anymore",
+        "\u2018Til we gather in heaven\u2019s bright city",
+        "Far away on that beautiful shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If we never meet again this side of heaven",
+        "As we struggle through this world and its strife",
+        "There\u2019s another meeting place somewhere in heaven",
+        "By the river of life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where the charming roses bloom forever",
+        "And where separation come no more",
+        "If we never meet again this side of heaven",
+        "I will meet you on that beautiful shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh so often we are parted with sorrow",
+        "And action often quietens our pain",
+        "But we never shall sorrow in heaven",
+        "God be with you till we meet again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

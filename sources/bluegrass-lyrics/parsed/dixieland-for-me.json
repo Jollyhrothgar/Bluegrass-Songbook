@@ -1,0 +1,49 @@
+{
+  "slug": "dixieland-for-me",
+  "title": "Dixieland For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/dixieland-for-me/",
+  "raw_lyrics": "I\u2019m dreaming tonight of Dixie\nThat\u2019s where I like to roam\nThe roosters crow at the break of day\nIn my Dixie home sweet home.\n\nOh the people here they just don\u2019t care\nI never saw the beat\nThat road ahead is mighty long\nBut it\u2019s Dixie Land for me\n\nI was going back to my old home\nIn the mountains far away\nThe wild red roses smell so sweet\nAnd the rippling waters play\n\nYes city life is not for me\nOr knowing where the neighbors speak\nThat road ahead is mighty long\nBut it\u2019s Dixie Land for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m dreaming tonight of Dixie",
+        "That\u2019s where I like to roam",
+        "The roosters crow at the break of day",
+        "In my Dixie home sweet home."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the people here they just don\u2019t care",
+        "I never saw the beat",
+        "That road ahead is mighty long",
+        "But it\u2019s Dixie Land for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was going back to my old home",
+        "In the mountains far away",
+        "The wild red roses smell so sweet",
+        "And the rippling waters play"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes city life is not for me",
+        "Or knowing where the neighbors speak",
+        "That road ahead is mighty long",
+        "But it\u2019s Dixie Land for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

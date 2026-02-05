@@ -1,0 +1,50 @@
+{
+  "slug": "away-out-on-the-saint-sabbath",
+  "title": "Away Out On The Saint Sabbath",
+  "source_url": "https://www.bluegrasslyrics.com/song/away-out-on-the-saint-sabbath/",
+  "raw_lyrics": "Away out on the old saint Sabbath\nLay down to take my rest\nMy knapsack for my pillow\nAnd my gun upon my chest\n\nPlease don\u2019t bury me on the lonesome prairie\nPlease don\u2019t bury me on the lone prairie\nYou can bury me in the east\nYou can bury me in the west\nPlease don\u2019t bury me on the lone prairie\n\nMy father he lies sleeping\nBeneath the deep blue sea\nI have no father no mother\nThere\u2019s none but hell and me\n\nMy mother she lies sleeping\nBeneath the church yard rocks\nHer body lies there moldering\nAnd her spirit has gone to God",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Away out on the old saint Sabbath",
+        "Lay down to take my rest",
+        "My knapsack for my pillow",
+        "And my gun upon my chest"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Please don\u2019t bury me on the lonesome prairie",
+        "Please don\u2019t bury me on the lone prairie",
+        "You can bury me in the east",
+        "You can bury me in the west",
+        "Please don\u2019t bury me on the lone prairie"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My father he lies sleeping",
+        "Beneath the deep blue sea",
+        "I have no father no mother",
+        "There\u2019s none but hell and me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother she lies sleeping",
+        "Beneath the church yard rocks",
+        "Her body lies there moldering",
+        "And her spirit has gone to God"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

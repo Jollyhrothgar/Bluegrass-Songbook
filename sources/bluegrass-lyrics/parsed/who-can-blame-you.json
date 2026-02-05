@@ -1,0 +1,39 @@
+{
+  "slug": "who-can-blame-you",
+  "title": "Who Can Blame You",
+  "source_url": "https://www.bluegrasslyrics.com/song/who-can-blame-you/",
+  "raw_lyrics": "Who can blame you though your heart\u2019s untrue\nWhen you say it\u2019s my fault anyway\nTurn your head from the tears I\u2019ve shed\nThough your heart is untrue who can blame you\n\nYou justify yourself in your love for someone else\nWhen you say I never loved you anyway\nYour vows were made in vain although mine have still remained\nThough you broke my heart in two who can blame you\n\nIn a heart of rusted steel you kept your love affair concealed\n\u2018Til the day she was askin\u2019 you to stay\nTurn your head from the tears I\u2019ve shed\nThough you broke a heart in two who can blame you",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Who can blame you though your heart\u2019s untrue",
+        "When you say it\u2019s my fault anyway",
+        "Turn your head from the tears I\u2019ve shed",
+        "Though your heart is untrue who can blame you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You justify yourself in your love for someone else",
+        "When you say I never loved you anyway",
+        "Your vows were made in vain although mine have still remained",
+        "Though you broke my heart in two who can blame you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In a heart of rusted steel you kept your love affair concealed",
+        "\u2018Til the day she was askin\u2019 you to stay",
+        "Turn your head from the tears I\u2019ve shed",
+        "Though you broke a heart in two who can blame you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

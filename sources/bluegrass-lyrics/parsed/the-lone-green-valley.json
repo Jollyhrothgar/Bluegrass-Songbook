@@ -1,0 +1,79 @@
+{
+  "slug": "the-lone-green-valley",
+  "title": "The Lone Green Valley",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-lone-green-valley/",
+  "raw_lyrics": "Way down in a lone green valley\nDown where the roses bloom and fade\nThere was a jealous lover\nIn love with a beautiful maid\n\nOne night the moon shone brightly\nThe stars were shining too\nAnd to this maiden\u2019s cottage\nThe jealous lover drew\n\nCome love and we will wander\nWhere the woods are gay\nWhile strolling we will ponder\nUpon our wedding day\n\nSo on and on they wandered\nThe night bird sang above\nThe jealous lover grew angry\nWith the beautiful girl he loved\n\nDown on her knees before him\nShe pleaded for her life\nBut deep into her bossom\nHe plunged the fatal knife\n\nOh Willie won\u2019t you tell me\nWhy have you taken my life\nYou know I\u2019ve always loved you\nAnd wanted to be your wife\n\nI never have deceived you\nBut with my dying breath\nI will forgive you Willie\nAnd close my eyes in death",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way down in a lone green valley",
+        "Down where the roses bloom and fade",
+        "There was a jealous lover",
+        "In love with a beautiful maid"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One night the moon shone brightly",
+        "The stars were shining too",
+        "And to this maiden\u2019s cottage",
+        "The jealous lover drew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come love and we will wander",
+        "Where the woods are gay",
+        "While strolling we will ponder",
+        "Upon our wedding day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So on and on they wandered",
+        "The night bird sang above",
+        "The jealous lover grew angry",
+        "With the beautiful girl he loved"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Down on her knees before him",
+        "She pleaded for her life",
+        "But deep into her bossom",
+        "He plunged the fatal knife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Willie won\u2019t you tell me",
+        "Why have you taken my life",
+        "You know I\u2019ve always loved you",
+        "And wanted to be your wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never have deceived you",
+        "But with my dying breath",
+        "I will forgive you Willie",
+        "And close my eyes in death"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

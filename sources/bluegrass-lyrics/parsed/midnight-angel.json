@@ -1,0 +1,29 @@
+{
+  "slug": "midnight-angel",
+  "title": "Midnight Angel",
+  "source_url": "https://www.bluegrasslyrics.com/song/midnight-angel/",
+  "raw_lyrics": "You\u2019re a midnight angel at twelve is when you start\nLooking for a victim to feed your hungry heart\nYou say you don\u2019t love me still I wait all alone\nFor my midnight angel to come home\n\nIt seems I spend a lifetime between midnight and dawn\nWatching from my window for a man to bring you home\nListening to the silence while waiting all alone\nFor my midnight angel to come home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re a midnight angel at twelve is when you start",
+        "Looking for a victim to feed your hungry heart",
+        "You say you don\u2019t love me still I wait all alone",
+        "For my midnight angel to come home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It seems I spend a lifetime between midnight and dawn",
+        "Watching from my window for a man to bring you home",
+        "Listening to the silence while waiting all alone",
+        "For my midnight angel to come home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

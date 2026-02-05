@@ -1,0 +1,49 @@
+{
+  "slug": "meeting-in-the-air",
+  "title": "Meeting In The Air",
+  "source_url": "https://www.bluegrasslyrics.com/song/meeting-in-the-air/",
+  "raw_lyrics": "You have heard of little Moses in the bull rush\nYou have heard of fearless David and his sling\nYou have heard the story told of dreaming Joseph\nAnd of Jonah and the whale you often sing\n\nThere is going to be a meeting in the air\nIn that sweet sweet by and by\nI am going to meet you meet you over there\nIn that home beyond the sky\n\nThe singing you will hear never heard by mortals ears\nWill be glorious I do declare\nAnd God\u2019s own son will be the leading one\nAt that meeting in the air\n\nThere are many many others through the bible\nI should like to meet them all I do declare\nBy and by the lord will surely let us meet them\nAt that meeting in the air",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You have heard of little Moses in the bull rush",
+        "You have heard of fearless David and his sling",
+        "You have heard the story told of dreaming Joseph",
+        "And of Jonah and the whale you often sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There is going to be a meeting in the air",
+        "In that sweet sweet by and by",
+        "I am going to meet you meet you over there",
+        "In that home beyond the sky"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The singing you will hear never heard by mortals ears",
+        "Will be glorious I do declare",
+        "And God\u2019s own son will be the leading one",
+        "At that meeting in the air"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There are many many others through the bible",
+        "I should like to meet them all I do declare",
+        "By and by the lord will surely let us meet them",
+        "At that meeting in the air"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

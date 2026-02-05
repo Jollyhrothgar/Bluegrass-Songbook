@@ -1,0 +1,60 @@
+{
+  "slug": "buffalo-gals",
+  "title": "Buffalo Gals",
+  "source_url": "https://www.bluegrasslyrics.com/song/buffalo-gals/",
+  "raw_lyrics": "Buffalo gals won\u2019t you come out tonight\nCome out tonight Come out tonight\nBuffalo gals wont you come out tonight\nAnd dance by the light of the moon\n\nNow I got a gal with a wart on her chin\nToes turned out and her eyes turned in\nPrteey good gal for the shape she\u2019s in\nTell me is she coming out tonight\n\nGive you five dollars if you come out tonight\nCome out tonight Come out tonight\nGive you five dollars if you come out tonight\nAnd dance by the light of the moon\n\nI got a gal at the top of the hill\nTop of the hill Top of the hill\nShe\u2019s a moonshiner\u2019s daughter\nBut I love her still\nTell me is she coming out tonight\n\nMe and my gal we sit on the stoop\nSit on the stoop Sit on the stoop\nHere dad came out and made me loop the loop\nTell me is she coming out tonight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Buffalo gals won\u2019t you come out tonight",
+        "Come out tonight Come out tonight",
+        "Buffalo gals wont you come out tonight",
+        "And dance by the light of the moon"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I got a gal with a wart on her chin",
+        "Toes turned out and her eyes turned in",
+        "Prteey good gal for the shape she\u2019s in",
+        "Tell me is she coming out tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Give you five dollars if you come out tonight",
+        "Come out tonight Come out tonight",
+        "Give you five dollars if you come out tonight",
+        "And dance by the light of the moon"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I got a gal at the top of the hill",
+        "Top of the hill Top of the hill",
+        "She\u2019s a moonshiner\u2019s daughter",
+        "But I love her still",
+        "Tell me is she coming out tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Me and my gal we sit on the stoop",
+        "Sit on the stoop Sit on the stoop",
+        "Here dad came out and made me loop the loop",
+        "Tell me is she coming out tonight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "ill-meet-you-in-church-sunday-morning",
+  "title": "I\u2019ll Meet You In Church Sunday Morning",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-meet-you-in-church-sunday-morning/",
+  "raw_lyrics": "On Sunday when the church bells start ringin\u2019\nThey\u2019re ringin\u2019 for you and for me\nLet\u2019s all gather \u2019round at the altar\nAnd pray that our souls may be free\n\nI\u2019ll meet you in the church Sunday mornin\u2019\nAnd we\u2019ll all kneel down and pray\nWe\u2019ll pray to our Lord up in heaven\nTo guide us safe home on our way\n\nIt\u2019s a place where we all meet on Sunday\nTo worship our Lord up above\nAnd let all our sins be forgiven\nAnd meet with our loved ones above\n\nIn heaven I hear a voice callin\u2019\nFrom the land where there\u2019s no endless days\nLet\u2019s all be prepared to meet Jesus\nthe path is narrow too at home far away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On Sunday when the church bells start ringin\u2019",
+        "They\u2019re ringin\u2019 for you and for me",
+        "Let\u2019s all gather \u2019round at the altar",
+        "And pray that our souls may be free"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll meet you in the church Sunday mornin\u2019",
+        "And we\u2019ll all kneel down and pray",
+        "We\u2019ll pray to our Lord up in heaven",
+        "To guide us safe home on our way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a place where we all meet on Sunday",
+        "To worship our Lord up above",
+        "And let all our sins be forgiven",
+        "And meet with our loved ones above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In heaven I hear a voice callin\u2019",
+        "From the land where there\u2019s no endless days",
+        "Let\u2019s all be prepared to meet Jesus",
+        "the path is narrow too at home far away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "take-this-hammer",
+  "title": "Take This Hammer",
+  "source_url": "https://www.bluegrasslyrics.com/song/take-this-hammer/",
+  "raw_lyrics": "Take this hammer, carry it to the captain\nTake this hammer, carry it to the captain\nTake this hammer, carry it to the captain\nTell him I\u2019m a-gone, just tell him I\u2019m a gone\n\nIf he asks you, was I running\nIf he asks you, was I running\nIf he asks you, was I running\nTell him I was flying, tell him I was flying\n\nI don\u2019t want your old darn shackles\nI don\u2019t want your old darn shackles\nI don\u2019t want your old darn shackles\nIt hurts my leg, hurts my leg\n\nI don\u2019t want no greenback dollar\nI don\u2019t want no greenback dollar\nI don\u2019t want no greenback dollar\nIt hurts my pride,  hurts my pride",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Take this hammer, carry it to the captain",
+        "Take this hammer, carry it to the captain",
+        "Take this hammer, carry it to the captain",
+        "Tell him I\u2019m a-gone, just tell him I\u2019m a gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If he asks you, was I running",
+        "If he asks you, was I running",
+        "If he asks you, was I running",
+        "Tell him I was flying, tell him I was flying"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t want your old darn shackles",
+        "I don\u2019t want your old darn shackles",
+        "I don\u2019t want your old darn shackles",
+        "It hurts my leg, hurts my leg"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t want no greenback dollar",
+        "I don\u2019t want no greenback dollar",
+        "I don\u2019t want no greenback dollar",
+        "It hurts my pride,  hurts my pride"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

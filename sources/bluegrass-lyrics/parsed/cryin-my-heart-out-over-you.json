@@ -1,0 +1,39 @@
+{
+  "slug": "cryin-my-heart-out-over-you",
+  "title": "Cryin\u2019 My Heart Out Over You",
+  "source_url": "https://www.bluegrasslyrics.com/song/cryin-my-heart-out-over-you/",
+  "raw_lyrics": "Oh somewhere the music\u2019s playing soft and low\nAnd a stranger holds the one that I love so\nI was blind I could not see that you meant the world to me\nBut like a fool I stood and watched you go\n\nNow I\u2019m crying my heart out over you\nThose blue eyes now they smile at someome new\nEver since you went away I die a little more each day\nFor I\u2019m crying my heart out over you\n\nEach night I climb the stairs up to my room\nIt seems I hear you whisper in the gloom\nI miss your picture on the wall and your footsteps in the hall\nWhile I\u2019m crying my heart out over you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh somewhere the music\u2019s playing soft and low",
+        "And a stranger holds the one that I love so",
+        "I was blind I could not see that you meant the world to me",
+        "But like a fool I stood and watched you go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now I\u2019m crying my heart out over you",
+        "Those blue eyes now they smile at someome new",
+        "Ever since you went away I die a little more each day",
+        "For I\u2019m crying my heart out over you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each night I climb the stairs up to my room",
+        "It seems I hear you whisper in the gloom",
+        "I miss your picture on the wall and your footsteps in the hall",
+        "While I\u2019m crying my heart out over you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

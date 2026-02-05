@@ -1,0 +1,49 @@
+{
+  "slug": "way-downtown",
+  "title": "Way Downtown",
+  "source_url": "https://www.bluegrasslyrics.com/song/way-downtown/",
+  "raw_lyrics": "Well late last night when Willie came home\nI heard him a-rapping on the door\nSlipping and a-sliding with his new shoes on\nWillie don\u2019t you rap no more\n\nOh me, oh my\nWhat\u2019s gonna become of me\nBeen downtown, a fooling around\nNo one to cry for me\n\nI like the hills of West Virginia\nI like the hills of Tennessee\nNorth, south, east or west\nIt\u2019s home sweet home to me\n\nIt\u2019s one old shirt is all I have\nAnd a dollar is all I crave\nAin\u2019t brought nothing with me into this world\nAin\u2019t gonna take nothing to the grave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well late last night when Willie came home",
+        "I heard him a-rapping on the door",
+        "Slipping and a-sliding with his new shoes on",
+        "Willie don\u2019t you rap no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh me, oh my",
+        "What\u2019s gonna become of me",
+        "Been downtown, a fooling around",
+        "No one to cry for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I like the hills of West Virginia",
+        "I like the hills of Tennessee",
+        "North, south, east or west",
+        "It\u2019s home sweet home to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s one old shirt is all I have",
+        "And a dollar is all I crave",
+        "Ain\u2019t brought nothing with me into this world",
+        "Ain\u2019t gonna take nothing to the grave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

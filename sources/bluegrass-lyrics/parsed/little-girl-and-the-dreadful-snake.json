@@ -1,0 +1,49 @@
+{
+  "slug": "little-girl-and-the-dreadful-snake",
+  "title": "Little Girl And The Dreadful Snake",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-girl-and-the-dreadful-snake/",
+  "raw_lyrics": "Our darling wandered far away while she was out at play\nLost in the woods she couldn\u2019t hear a sound\nShe was our darling girl the sweetest thing in all the world\nWe searched for her but she couldn\u2019t be found\n\nI heard the screams of out little girl far away\nHurry Daddy there\u2019s and awful dreadful snake\nI ran as fast as I could through the dark and dreary woods\nBut I reached our darling girl too late\n\nOh I began to cry I knew that soon she\u2019d have to die\nFor the snake was warning me close by\nI held her close to my face she said daddy kill that snake\nIt\u2019s getting dark tell mommy goodbye\n\nTo all parents I must say don\u2019t let your children stray away\nThey need your love to guide them along\nOh God I pray we\u2019ll see our darling girl some day\nIt seems we still can hear her voice around our home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Our darling wandered far away while she was out at play",
+        "Lost in the woods she couldn\u2019t hear a sound",
+        "She was our darling girl the sweetest thing in all the world",
+        "We searched for her but she couldn\u2019t be found"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I heard the screams of out little girl far away",
+        "Hurry Daddy there\u2019s and awful dreadful snake",
+        "I ran as fast as I could through the dark and dreary woods",
+        "But I reached our darling girl too late"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I began to cry I knew that soon she\u2019d have to die",
+        "For the snake was warning me close by",
+        "I held her close to my face she said daddy kill that snake",
+        "It\u2019s getting dark tell mommy goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "To all parents I must say don\u2019t let your children stray away",
+        "They need your love to guide them along",
+        "Oh God I pray we\u2019ll see our darling girl some day",
+        "It seems we still can hear her voice around our home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

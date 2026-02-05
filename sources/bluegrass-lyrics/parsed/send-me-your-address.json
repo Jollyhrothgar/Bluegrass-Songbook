@@ -1,0 +1,43 @@
+{
+  "slug": "send-me-your-address",
+  "title": "Send Me Your Address",
+  "source_url": "https://www.bluegrasslyrics.com/song/send-me-your-address/",
+  "raw_lyrics": "A boy was writing his sweetheart\nShe lived in the valley below\nSaying your last love letter\nCame more than three weeks ago\n\nHe didn\u2019t receive no answer\nHe went down to her home that day\nAnd found she\u2019d been taken to heaven\nAnd this is what he said\n\nSend me your address from heaven\nSo I can write you up there\nTell me that you still love me\nTell me that you still care\nMail it on the golden street corner\nAs you did on earth here below\nSend me your address from heaven\nSo I can write you up there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A boy was writing his sweetheart",
+        "She lived in the valley below",
+        "Saying your last love letter",
+        "Came more than three weeks ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He didn\u2019t receive no answer",
+        "He went down to her home that day",
+        "And found she\u2019d been taken to heaven",
+        "And this is what he said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Send me your address from heaven",
+        "So I can write you up there",
+        "Tell me that you still love me",
+        "Tell me that you still care",
+        "Mail it on the golden street corner",
+        "As you did on earth here below",
+        "Send me your address from heaven",
+        "So I can write you up there"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

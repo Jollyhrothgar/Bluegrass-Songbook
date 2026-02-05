@@ -1,0 +1,46 @@
+{
+  "slug": "hey-hey-bartender",
+  "title": "Hey Hey Bartender",
+  "source_url": "https://www.bluegrasslyrics.com/song/hey-hey-bartender/",
+  "raw_lyrics": "Hey hey hey bartender\ncome and set me up another round\nHey hey hey bartender\ngot a lot of troubles I must drown\n\nWell I guess you guess it\u2019s love\nit\u2019s love it\u2019s love it\u2019s love it\u2019s love bartender\nYes I guess you guess this love has got me down\nI tried I tried bartender Lordy Lordy Lordy how I tried\n\nShe Lied she lied bartender\nLordy how that woman went and lied\nWell I guess it\u2019s best somehow but now I\u2019m alone\nI\u2019m alone I\u2019m alone bartender and I see you see it hurts to be alone\n\nDel McCoury; I wonder Where You Are Tonight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Hey hey hey bartender",
+        "come and set me up another round",
+        "Hey hey hey bartender",
+        "got a lot of troubles I must drown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I guess you guess it\u2019s love",
+        "it\u2019s love it\u2019s love it\u2019s love it\u2019s love bartender",
+        "Yes I guess you guess this love has got me down",
+        "I tried I tried bartender Lordy Lordy Lordy how I tried"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She Lied she lied bartender",
+        "Lordy how that woman went and lied",
+        "Well I guess it\u2019s best somehow but now I\u2019m alone",
+        "I\u2019m alone I\u2019m alone bartender and I see you see it hurts to be alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Del McCoury; I wonder Where You Are Tonight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

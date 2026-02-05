@@ -1,0 +1,69 @@
+{
+  "slug": "blackies-gunman",
+  "title": "Blackie\u2019s Gunman",
+  "source_url": "https://www.bluegrasslyrics.com/song/blackies-gunman/",
+  "raw_lyrics": "With a draw from either hand\nI was known as Blackie\u2019s gunman\nThe best two gunman in the land\nI could shoot the ace of diamonds\n\nWith the dice I had no equal\nSome of them are with us now\nMost of them are sadly sleeping\nNeath the weeping willow bough\n\nMany a cowboy\u2019s game I\u2019ve played in\nLeft that night with all their gold\nAs a sport I was broken\nAs a sport I let it go\n\nI once loved a girl named Nellie\nHow we loved no tongue can tell\nBut I know I\u2019ll never meet her\nOh it was hard to say farewell\n\nHer eyes were like the deep blue water\nAnd her hair was golden curls\nAnd her cheeks were golden velvet\nAnd her teeth were snow white pearls\n\nTogether we lived in a cottage\nAnd our life it was a dream\nAnd the angels they watched o\u2019er us\nMade our life one happy dream",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "With a draw from either hand",
+        "I was known as Blackie\u2019s gunman",
+        "The best two gunman in the land",
+        "I could shoot the ace of diamonds"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With the dice I had no equal",
+        "Some of them are with us now",
+        "Most of them are sadly sleeping",
+        "Neath the weeping willow bough"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many a cowboy\u2019s game I\u2019ve played in",
+        "Left that night with all their gold",
+        "As a sport I was broken",
+        "As a sport I let it go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I once loved a girl named Nellie",
+        "How we loved no tongue can tell",
+        "But I know I\u2019ll never meet her",
+        "Oh it was hard to say farewell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her eyes were like the deep blue water",
+        "And her hair was golden curls",
+        "And her cheeks were golden velvet",
+        "And her teeth were snow white pearls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Together we lived in a cottage",
+        "And our life it was a dream",
+        "And the angels they watched o\u2019er us",
+        "Made our life one happy dream"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

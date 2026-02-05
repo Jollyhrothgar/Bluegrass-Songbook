@@ -1,0 +1,39 @@
+{
+  "slug": "in-despair",
+  "title": "In Despair",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-despair/",
+  "raw_lyrics": "You made me love you, you made me want you\nAnd now I need you all the time\nMy heart is sad and I\u2019m so lonely\nEach night and day you\u2019re on my mind\n\nYou broke me heart my little darling\nWhen I called for you, you had another there\nBut a broken heart will keep on crying\nI know you know, I\u2019m in despair\n\nYou made me forget of all the others\nYou made me forget of all the past\nAnd I thought sweetheart you really loved me\nMy friends told me it would never last",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You made me love you, you made me want you",
+        "And now I need you all the time",
+        "My heart is sad and I\u2019m so lonely",
+        "Each night and day you\u2019re on my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You broke me heart my little darling",
+        "When I called for you, you had another there",
+        "But a broken heart will keep on crying",
+        "I know you know, I\u2019m in despair"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You made me forget of all the others",
+        "You made me forget of all the past",
+        "And I thought sweetheart you really loved me",
+        "My friends told me it would never last"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

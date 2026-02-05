@@ -1,0 +1,59 @@
+{
+  "slug": "my-native-home",
+  "title": "My Native Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-native-home/",
+  "raw_lyrics": "I\u2019d like to see my native home\nThe lofty trees, the golden sand\nThe rugged hills all crowded round\nMy mother\u2019s voice how sweet would sound\n\nSometimes I dream of home and friends\nMy dreams are false my heart is rent\nAnd when I wake I\u2019m all alone\nMy dreams are false my friends are gone\n\nI\u2019d like to see my heart\u2019s delight\nHer beautiful face and eyes so bright\nAnd how she\u2019d smile as I drew near\nI\u2019d kiss her with a falling tear\n\nIt fills my heart with fondest love\nTo listen to that lonesome dove\nShe mourns as if her mate was gone\nAs if like me left all alone\n\nNine or ten years have passed and gone\nAnd I\u2019m still left here all alone\nVirginia oh my native home\nAmong your hills I\u2019d love to roam",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d like to see my native home",
+        "The lofty trees, the golden sand",
+        "The rugged hills all crowded round",
+        "My mother\u2019s voice how sweet would sound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes I dream of home and friends",
+        "My dreams are false my heart is rent",
+        "And when I wake I\u2019m all alone",
+        "My dreams are false my friends are gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d like to see my heart\u2019s delight",
+        "Her beautiful face and eyes so bright",
+        "And how she\u2019d smile as I drew near",
+        "I\u2019d kiss her with a falling tear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It fills my heart with fondest love",
+        "To listen to that lonesome dove",
+        "She mourns as if her mate was gone",
+        "As if like me left all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Nine or ten years have passed and gone",
+        "And I\u2019m still left here all alone",
+        "Virginia oh my native home",
+        "Among your hills I\u2019d love to roam"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

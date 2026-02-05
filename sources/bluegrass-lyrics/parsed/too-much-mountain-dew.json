@@ -1,0 +1,49 @@
+{
+  "slug": "too-much-mountain-dew",
+  "title": "Too Much Mountain Dew",
+  "source_url": "https://www.bluegrasslyrics.com/song/too-much-mountain-dew/",
+  "raw_lyrics": "Too much Mountain dew\nToo much Mountain dew\nDewey left a-drinking\nToo much Mountain dew\n\nNow Dewey left this morning\nFeeling oh so fine\nWith a jug in one hand\nDrinking on his mind\n\nNow the hottest sun was shining\nWhile Dewey laid in the shade\nDrinking from a bottle\nHome brew that he made\n\nNow drinking was a weakness\nThat he couldn\u2019t hide\nHad one drink too many\nPoor old Dewey died",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Too much Mountain dew",
+        "Too much Mountain dew",
+        "Dewey left a-drinking",
+        "Too much Mountain dew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now Dewey left this morning",
+        "Feeling oh so fine",
+        "With a jug in one hand",
+        "Drinking on his mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the hottest sun was shining",
+        "While Dewey laid in the shade",
+        "Drinking from a bottle",
+        "Home brew that he made"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now drinking was a weakness",
+        "That he couldn\u2019t hide",
+        "Had one drink too many",
+        "Poor old Dewey died"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

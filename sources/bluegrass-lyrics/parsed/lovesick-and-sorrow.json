@@ -1,0 +1,49 @@
+{
+  "slug": "lovesick-and-sorrow",
+  "title": "Lovesick And Sorrow",
+  "source_url": "https://www.bluegrasslyrics.com/song/lovesick-and-sorrow/",
+  "raw_lyrics": "I\u2019m lonesome tonight while the moon\u2019s shining bright\nThinking of you, little dear\nI\u2019m here all alone in our little cabin home\nI\u2019m counting the stars in the blue\n\nLovesick and sorrow is what you brought to me\nOh why, tell me why, did you go\nYou left me to wander in this whole wide world alone\nI\u2019m counting the stars in the blue\n\nI dream every night as I lay in my cabin\nAnd pray to the One up above\nTo keep you for me and someday you\u2019ll return, dear\nI\u2019m counting the stars up above\n\nI\u2019ll take your picture and frame it in gold\nReading love letters from you\nI\u2019m longing to see you in our little cabin home\nI\u2019m counting the stars in the blue",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m lonesome tonight while the moon\u2019s shining bright",
+        "Thinking of you, little dear",
+        "I\u2019m here all alone in our little cabin home",
+        "I\u2019m counting the stars in the blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Lovesick and sorrow is what you brought to me",
+        "Oh why, tell me why, did you go",
+        "You left me to wander in this whole wide world alone",
+        "I\u2019m counting the stars in the blue"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I dream every night as I lay in my cabin",
+        "And pray to the One up above",
+        "To keep you for me and someday you\u2019ll return, dear",
+        "I\u2019m counting the stars up above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll take your picture and frame it in gold",
+        "Reading love letters from you",
+        "I\u2019m longing to see you in our little cabin home",
+        "I\u2019m counting the stars in the blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

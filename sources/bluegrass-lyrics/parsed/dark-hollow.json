@@ -1,0 +1,39 @@
+{
+  "slug": "dark-hollow",
+  "title": "Dark Hollow",
+  "source_url": "https://www.bluegrasslyrics.com/song/dark-hollow/",
+  "raw_lyrics": "I\u2019d rather be in some dark hollow\nWhere the sun don\u2019t ever shine\nThan to be home alone knowing that you\u2019re gone\nWould cause me to lose my mind\n\nSo blow your whistle freight train\nCarry me further on down the track\nI\u2019m going away I\u2019m leaving today\nI\u2019m going but I ain\u2019t coming back\n\nI\u2019d rather be in some dark hollow\nWhere the sun don\u2019t ever shine\nThan to be in some big city\nIn a small room with you love on my mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d rather be in some dark hollow",
+        "Where the sun don\u2019t ever shine",
+        "Than to be home alone knowing that you\u2019re gone",
+        "Would cause me to lose my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So blow your whistle freight train",
+        "Carry me further on down the track",
+        "I\u2019m going away I\u2019m leaving today",
+        "I\u2019m going but I ain\u2019t coming back"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d rather be in some dark hollow",
+        "Where the sun don\u2019t ever shine",
+        "Than to be in some big city",
+        "In a small room with you love on my mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

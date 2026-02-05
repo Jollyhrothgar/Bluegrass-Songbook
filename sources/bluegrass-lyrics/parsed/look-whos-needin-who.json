@@ -1,0 +1,66 @@
+{
+  "slug": "look-whos-needin-who",
+  "title": "Look Who\u2019s Needin\u2019 Who",
+  "source_url": "https://www.bluegrasslyrics.com/song/look-whos-needin-who/",
+  "raw_lyrics": "I haven\u2019t forgot the day you left me\nThe chances are I never will\nI cried at least a month of Sundays\nBut I wondered if my heart would ever heal\nAnd you knew how much 1 needed you\nBut still you turned away\nNow you wantin\u2019 to come back to me\nAfraid you made a big mistake\nYou hope it\u2019s not too late\n\nWell look who\u2019s needin\u2019 who\nIt\u2019s not me crying over you\nI know just what you been through\nAin\u2019t it strange\ntime changes things\nNow look who\u2019s needing who\n\nI don\u2019t want you thinking that I\u2019m a cold heart\nI\u2019m not trying to turn my back on you\nBut the fire of love ain\u2019t always welcome\nYou\u2019ve been through a time or two\nIf I remember right\n\nIt wasn\u2019t me who threw our love away\nHave you forgot\nnot so long ago\nI were where you are today\nIt was me begging you to stay\n\nThanks to anyone who can put me right on the missing words and put me right\non those that I\u2019ve gotten wrong.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I haven\u2019t forgot the day you left me",
+        "The chances are I never will",
+        "I cried at least a month of Sundays",
+        "But I wondered if my heart would ever heal",
+        "And you knew how much 1 needed you",
+        "But still you turned away",
+        "Now you wantin\u2019 to come back to me",
+        "Afraid you made a big mistake",
+        "You hope it\u2019s not too late"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well look who\u2019s needin\u2019 who",
+        "It\u2019s not me crying over you",
+        "I know just what you been through",
+        "Ain\u2019t it strange",
+        "time changes things",
+        "Now look who\u2019s needing who"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t want you thinking that I\u2019m a cold heart",
+        "I\u2019m not trying to turn my back on you",
+        "But the fire of love ain\u2019t always welcome",
+        "You\u2019ve been through a time or two",
+        "If I remember right"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It wasn\u2019t me who threw our love away",
+        "Have you forgot",
+        "not so long ago",
+        "I were where you are today",
+        "It was me begging you to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Thanks to anyone who can put me right on the missing words and put me right",
+        "on those that I\u2019ve gotten wrong."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

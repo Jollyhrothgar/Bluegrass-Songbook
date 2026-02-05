@@ -1,0 +1,39 @@
+{
+  "slug": "bluegrass-truck-driver",
+  "title": "Bluegrass Truck Driver",
+  "source_url": "https://www.bluegrasslyrics.com/song/bluegrass-truck-driver/",
+  "raw_lyrics": "There\u2019s a Truck Driver down in old Kentucky\nAnd he loves to listen to that Bluegrass music\nEverywhere he goes you can hear that old banjo\nAnd they call him the Bluegrass Truck Driver\n\nWhen the jukebox starts playing country music\nYou can bet he\u2019ll have that Bluegrass song\nWhen you hear the guitar and the banjo ringing\nYou\u2019ll know the Bluegrass Truck Driver\u2019s back in town\n\nEverytime he goes into a truck stop\nHe always starts the Bluegrass music spinning\nHe does that old Kentucky buck then climbs back on his truck\nThat\u2019s why they call him the Bluegrass Truck Driver",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a Truck Driver down in old Kentucky",
+        "And he loves to listen to that Bluegrass music",
+        "Everywhere he goes you can hear that old banjo",
+        "And they call him the Bluegrass Truck Driver"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the jukebox starts playing country music",
+        "You can bet he\u2019ll have that Bluegrass song",
+        "When you hear the guitar and the banjo ringing",
+        "You\u2019ll know the Bluegrass Truck Driver\u2019s back in town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Everytime he goes into a truck stop",
+        "He always starts the Bluegrass music spinning",
+        "He does that old Kentucky buck then climbs back on his truck",
+        "That\u2019s why they call him the Bluegrass Truck Driver"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

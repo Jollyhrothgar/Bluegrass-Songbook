@@ -1,0 +1,49 @@
+{
+  "slug": "streamline-cannonball",
+  "title": "Streamline Cannonball",
+  "source_url": "https://www.bluegrasslyrics.com/song/streamline-cannonball/",
+  "raw_lyrics": "It\u2019s a long steel rail and a short cross tie\nI\u2019m on my way back home\nI\u2019m on that train the king of them all\nThat streamline cannonball\n\nShe moves along like a cannonball\nLike a star in it\u2019s heavenly flight\nThe lonesome sound of the whistle you love\nAs she travels through the night\n\nI can see a smile on the engineer\u2019s face\nAnd although he\u2019s old and gray\nA contented heart the waits for his call\nOn the streamline cannonball\n\nThe headlight beams out in the night\nAnd the firebox flash you can see\nI ride the blinds it\u2019s the life that I love\nLord it\u2019s home sweet home to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a long steel rail and a short cross tie",
+        "I\u2019m on my way back home",
+        "I\u2019m on that train the king of them all",
+        "That streamline cannonball"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She moves along like a cannonball",
+        "Like a star in it\u2019s heavenly flight",
+        "The lonesome sound of the whistle you love",
+        "As she travels through the night"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can see a smile on the engineer\u2019s face",
+        "And although he\u2019s old and gray",
+        "A contented heart the waits for his call",
+        "On the streamline cannonball"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The headlight beams out in the night",
+        "And the firebox flash you can see",
+        "I ride the blinds it\u2019s the life that I love",
+        "Lord it\u2019s home sweet home to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

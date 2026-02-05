@@ -1,0 +1,39 @@
+{
+  "slug": "better-luck-next-time",
+  "title": "Better Luck Next Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/better-luck-next-time/",
+  "raw_lyrics": "So your of love has finally reached its ending\nThe winner smiles as you are left behind\nYou will taste the better cup of love\u2019s illusion\nJust chalk one up and better luck next time\n\nBetter luck next time for now you\u2019re reaping\nAll the bitterness that once was mine\nLive and love then learn the fate that\u2019s pending\nA broken heart but better luck next time\n\nThere\u2019s no way that we can look into the future\nBut a lesson we may learn from scenes behind\nIn the future there\u2019s a promise of tomorrow\nIf given you then better luck next time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "So your of love has finally reached its ending",
+        "The winner smiles as you are left behind",
+        "You will taste the better cup of love\u2019s illusion",
+        "Just chalk one up and better luck next time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Better luck next time for now you\u2019re reaping",
+        "All the bitterness that once was mine",
+        "Live and love then learn the fate that\u2019s pending",
+        "A broken heart but better luck next time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s no way that we can look into the future",
+        "But a lesson we may learn from scenes behind",
+        "In the future there\u2019s a promise of tomorrow",
+        "If given you then better luck next time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

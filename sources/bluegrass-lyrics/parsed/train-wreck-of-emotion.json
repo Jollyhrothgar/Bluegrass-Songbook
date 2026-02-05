@@ -1,0 +1,47 @@
+{
+  "slug": "train-wreck-of-emotion",
+  "title": "Train Wreck Of Emotion",
+  "source_url": "https://www.bluegrasslyrics.com/song/train-wreck-of-emotion/",
+  "raw_lyrics": "I can see it all to clearly as I am looking back\nI was headed down the wrong way on a one way track\nThere must be a million chances that a fool can take\nWell this fool took every one and never hit the brakes\n\nI\u2019m lying in the rubble cinder smoke and ash\nMy hearts still pounding from the impact of the crash\nI can see tomorrow\u2019s headline heartbroken by devotion\nJust another victum of a train wreck of emotion\n\nWe were burning like a furnace and she poured on the coal\nDrive wheels a churning I new love was gonna roll\nFaster and faster I swear we left the ground\nWhen that smoke had cleared she was no where around\n\nRumors are flying about how our love had failed\nWhen I swear to tear the coldness which let me derail",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can see it all to clearly as I am looking back",
+        "I was headed down the wrong way on a one way track",
+        "There must be a million chances that a fool can take",
+        "Well this fool took every one and never hit the brakes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m lying in the rubble cinder smoke and ash",
+        "My hearts still pounding from the impact of the crash",
+        "I can see tomorrow\u2019s headline heartbroken by devotion",
+        "Just another victum of a train wreck of emotion"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We were burning like a furnace and she poured on the coal",
+        "Drive wheels a churning I new love was gonna roll",
+        "Faster and faster I swear we left the ground",
+        "When that smoke had cleared she was no where around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rumors are flying about how our love had failed",
+        "When I swear to tear the coldness which let me derail"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

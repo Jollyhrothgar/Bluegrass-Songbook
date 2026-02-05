@@ -1,0 +1,63 @@
+{
+  "slug": "cold-hard-rain",
+  "title": "Cold Hard Rain",
+  "source_url": "https://www.bluegrasslyrics.com/song/cold-hard-rain/",
+  "raw_lyrics": "That rain is fallin\u2019\nthat cold hard rain It\u2019s fallin\u2019\nit\u2019s fallin\u2019 on my window tonight\n\nYou left me my darlin\u2019\nwith all this pain Darlin\u2019\nyou left me all alone tonight\n\nI don\u2019t think that I can go on\nWoke up this mornin\u2019\nfound you were gone\n\nThat rain is fallin\u2019\nthat cold hard rain It\u2019s fallin\u2019\nit\u2019s fallin\u2019 on my window tonight\n\nYou left me my darlin\u2019\nwith all this pain Darlin\u2019\nyou left me all alone tonight\n\nAnd now it\u2019s fallin\u2019\nthat cold hard rain It\u2019s fallin\u2019\nit\u2019s fallin\u2019 on my window tonight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "That rain is fallin\u2019",
+        "that cold hard rain It\u2019s fallin\u2019",
+        "it\u2019s fallin\u2019 on my window tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You left me my darlin\u2019",
+        "with all this pain Darlin\u2019",
+        "you left me all alone tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I don\u2019t think that I can go on",
+        "Woke up this mornin\u2019",
+        "found you were gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That rain is fallin\u2019",
+        "that cold hard rain It\u2019s fallin\u2019",
+        "it\u2019s fallin\u2019 on my window tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You left me my darlin\u2019",
+        "with all this pain Darlin\u2019",
+        "you left me all alone tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And now it\u2019s fallin\u2019",
+        "that cold hard rain It\u2019s fallin\u2019",
+        "it\u2019s fallin\u2019 on my window tonight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "highway-of-regret",
+  "title": "Highway Of Regret",
+  "source_url": "https://www.bluegrasslyrics.com/song/highway-of-regret/",
+  "raw_lyrics": "Ain\u2019t talking, just walking\nDown that highway of regret\nHeart\u2019s burning, still yearning\nFor the best girl this poor boy\u2019s ever met\n\nI never thought this thing could happen\nI never thought you\u2019d be untrue\nOr go away with another\nAnd break a heart that worshipped you\n\nIt makes no difference where I wander\nYou never seem to leave my mind\nYour face is always there before me\nI think about you all the time",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Ain\u2019t talking, just walking",
+        "Down that highway of regret",
+        "Heart\u2019s burning, still yearning",
+        "For the best girl this poor boy\u2019s ever met"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never thought this thing could happen",
+        "I never thought you\u2019d be untrue",
+        "Or go away with another",
+        "And break a heart that worshipped you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It makes no difference where I wander",
+        "You never seem to leave my mind",
+        "Your face is always there before me",
+        "I think about you all the time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

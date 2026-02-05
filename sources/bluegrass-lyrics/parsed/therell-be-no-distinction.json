@@ -1,0 +1,50 @@
+{
+  "slug": "therell-be-no-distinction",
+  "title": "There\u2019ll Be No Distinction",
+  "source_url": "https://www.bluegrasslyrics.com/song/therell-be-no-distinction/",
+  "raw_lyrics": "There will be no more sorrow on that heavenly shore\nThere\u2019ll be no wolfs a howlin near the old cabin door\nWe will all be quite wealthy and there\u2019ll be no more poor\nWhen we all get together on that heavenly shore\n\nThere\u2019ll be no distinction there (over there)\nThere\u2019ll be no distinction there\nFor the lord am just and the lord am right\nAnd we\u2019ll all be white in the heavenly light\nThere\u2019ll be no distinction there\n\nIn the same kind of raiment\u2019s in the same kind of pews\nWe will all sit together in the same kind of shoes\nThe white folks and the colored the gentile and the Jews\nThey will all be so happy that he doesn\u2019t refuse\n\nThey tell me up in heaven we will all be as one\nAnd we\u2019ll all sing together when the life\u2019s crown is won\nOur fathers and our mothers and sisters will be there\nFor they tell me up in heaven no distinction there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There will be no more sorrow on that heavenly shore",
+        "There\u2019ll be no wolfs a howlin near the old cabin door",
+        "We will all be quite wealthy and there\u2019ll be no more poor",
+        "When we all get together on that heavenly shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019ll be no distinction there (over there)",
+        "There\u2019ll be no distinction there",
+        "For the lord am just and the lord am right",
+        "And we\u2019ll all be white in the heavenly light",
+        "There\u2019ll be no distinction there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the same kind of raiment\u2019s in the same kind of pews",
+        "We will all sit together in the same kind of shoes",
+        "The white folks and the colored the gentile and the Jews",
+        "They will all be so happy that he doesn\u2019t refuse"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They tell me up in heaven we will all be as one",
+        "And we\u2019ll all sing together when the life\u2019s crown is won",
+        "Our fathers and our mothers and sisters will be there",
+        "For they tell me up in heaven no distinction there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

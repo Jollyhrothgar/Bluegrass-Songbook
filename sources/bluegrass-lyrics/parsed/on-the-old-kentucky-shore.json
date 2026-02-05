@@ -1,0 +1,49 @@
+{
+  "slug": "on-the-old-kentucky-shore",
+  "title": "On The Old Kentucky Shore",
+  "source_url": "https://www.bluegrasslyrics.com/song/on-the-old-kentucky-shore/",
+  "raw_lyrics": "I walked out to the graveyard\nDown by the Church of God\nI looked upon the one I love\nThat would soon be covered with sod\n\nUp along the Ohio River\nOver on the old Kentucky shore\nOnce dwelled a fair young maiden\nNow there\u2019s a crepe upon her door\n\nThe angels took my darling\nGod needed the one I loved\nI reached the old Kentucky shore today\nI\u2019ll make my plans and meet her up above\n\nThe last words that my darling said\nWas tell the one I love goodbye\nI would like to see him before I go\nBut I\u2019ll meet him in the sky",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I walked out to the graveyard",
+        "Down by the Church of God",
+        "I looked upon the one I love",
+        "That would soon be covered with sod"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Up along the Ohio River",
+        "Over on the old Kentucky shore",
+        "Once dwelled a fair young maiden",
+        "Now there\u2019s a crepe upon her door"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The angels took my darling",
+        "God needed the one I loved",
+        "I reached the old Kentucky shore today",
+        "I\u2019ll make my plans and meet her up above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The last words that my darling said",
+        "Was tell the one I love goodbye",
+        "I would like to see him before I go",
+        "But I\u2019ll meet him in the sky"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

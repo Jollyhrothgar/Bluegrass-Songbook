@@ -1,0 +1,69 @@
+{
+  "slug": "handsome-molly",
+  "title": "Handsome Molly",
+  "source_url": "https://www.bluegrasslyrics.com/song/handsome-molly/",
+  "raw_lyrics": "Well I wish was in London\nOr some other seaport town\nStep my foot in a steamboat\nAnd sail the ocean round\n\nSailing round the ocean\nSailing round the sea\nI\u2019d think of Handsome Molly\nWherever she may be\n\nI saw her at church last Sunday\nShe passed me on by\nI knew her mind was changing\nBy the roving of her eye\n\nHer hair as black as a Raven\u2019s\nHer eyes were black as coal\nHer teeth shown like lilies\nOut in the morning cold\n\nNow do you remember Molly\nWhen you give me your right hand\nSaid if you ever married\nI\u2019d be your man\n\nNow you\u2019ve broke your promise\nGo marry whom you please\nMy heart is broken\n\u2018Til I get some ease",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I wish was in London",
+        "Or some other seaport town",
+        "Step my foot in a steamboat",
+        "And sail the ocean round"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Sailing round the ocean",
+        "Sailing round the sea",
+        "I\u2019d think of Handsome Molly",
+        "Wherever she may be"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I saw her at church last Sunday",
+        "She passed me on by",
+        "I knew her mind was changing",
+        "By the roving of her eye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her hair as black as a Raven\u2019s",
+        "Her eyes were black as coal",
+        "Her teeth shown like lilies",
+        "Out in the morning cold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now do you remember Molly",
+        "When you give me your right hand",
+        "Said if you ever married",
+        "I\u2019d be your man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you\u2019ve broke your promise",
+        "Go marry whom you please",
+        "My heart is broken",
+        "\u2018Til I get some ease"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

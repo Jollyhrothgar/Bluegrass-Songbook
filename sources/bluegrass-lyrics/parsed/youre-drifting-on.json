@@ -1,0 +1,39 @@
+{
+  "slug": "youre-drifting-on",
+  "title": "You\u2019re Drifting On",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-drifting-on/",
+  "raw_lyrics": "Press along dear friendly neighbors try to lend a helping hand\nYou have loved ones lost in sorrow they will not heed God\u2019s command\nPlease advise them hold the children try to teach them how to pray\nThey\u2019ll be ready to meet Jesus on that final judgement day\n\nYou\u2019re driftin\u2019 (slowly driftin) through this weary world of sin\nYou\u2019re strivin (daily strivin) for a crown of life to win\nJesus calls you (softly calls you) to a better home above\nAre you ready (please be ready) for that happy home of love\n\nJesus is our lovin master all our troubles He will share\nWhen in sorrow call upon Him He is waiting everywhere\nSo be ready for the judgement don\u2019t be left here all alone\nWhen the gates of heaven open holy children welcome home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Press along dear friendly neighbors try to lend a helping hand",
+        "You have loved ones lost in sorrow they will not heed God\u2019s command",
+        "Please advise them hold the children try to teach them how to pray",
+        "They\u2019ll be ready to meet Jesus on that final judgement day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re driftin\u2019 (slowly driftin) through this weary world of sin",
+        "You\u2019re strivin (daily strivin) for a crown of life to win",
+        "Jesus calls you (softly calls you) to a better home above",
+        "Are you ready (please be ready) for that happy home of love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jesus is our lovin master all our troubles He will share",
+        "When in sorrow call upon Him He is waiting everywhere",
+        "So be ready for the judgement don\u2019t be left here all alone",
+        "When the gates of heaven open holy children welcome home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

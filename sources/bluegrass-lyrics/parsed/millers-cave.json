@@ -1,0 +1,57 @@
+{
+  "slug": "millers-cave",
+  "title": "Miller\u2019s Cave",
+  "source_url": "https://www.bluegrasslyrics.com/song/millers-cave/",
+  "raw_lyrics": "Way down in the state of Georgia\nThrough the swamps and everglades\nThere\u2019s a hole in Tiger Mountain\nGod help the man who gets lost in Miller\u2019s Cave\n\nI had a girl in Waycross Georgia\nBut she had unfaithful ways\nShe made me feel I was unwanted\nLike the bats and the bears in Miller\u2019s Cave\nI couldn\u2019t stand the way she did me\nI could take her lowdown ways\nBefore I stay with a cheatin\u2019 woman\nI\u2019ll go live with the bears in Miller\u2019s Cave\nI caught her out one Sunday morning\nWith a man they call Big Dave\nThe meanest man in Waycross Georgia\nI\u2019d rather fight a mountain lion in Miller\u2019s Cave\n\nI said you\u2019ll pay both you and Davey\nI\u2019m gonna see you in your grave\nThey laughed at me and then I shot them\nI took their cheating scheming bones to Miller\u2019s Cave\n\nThat woman made me feel unwanted\nBut I showed her I was brave\nThe most wanted man in the state of Georgia\nBut they\u2019ll never find me \u2019cause I\u2019m lost in Miller\u2019s Cave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way down in the state of Georgia",
+        "Through the swamps and everglades",
+        "There\u2019s a hole in Tiger Mountain",
+        "God help the man who gets lost in Miller\u2019s Cave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had a girl in Waycross Georgia",
+        "But she had unfaithful ways",
+        "She made me feel I was unwanted",
+        "Like the bats and the bears in Miller\u2019s Cave",
+        "I couldn\u2019t stand the way she did me",
+        "I could take her lowdown ways",
+        "Before I stay with a cheatin\u2019 woman",
+        "I\u2019ll go live with the bears in Miller\u2019s Cave",
+        "I caught her out one Sunday morning",
+        "With a man they call Big Dave",
+        "The meanest man in Waycross Georgia",
+        "I\u2019d rather fight a mountain lion in Miller\u2019s Cave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I said you\u2019ll pay both you and Davey",
+        "I\u2019m gonna see you in your grave",
+        "They laughed at me and then I shot them",
+        "I took their cheating scheming bones to Miller\u2019s Cave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That woman made me feel unwanted",
+        "But I showed her I was brave",
+        "The most wanted man in the state of Georgia",
+        "But they\u2019ll never find me \u2019cause I\u2019m lost in Miller\u2019s Cave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

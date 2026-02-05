@@ -1,0 +1,49 @@
+{
+  "slug": "dream-of-a-miners-child",
+  "title": "Dream Of A Miner\u2019s Child",
+  "source_url": "https://www.bluegrasslyrics.com/song/dream-of-a-miners-child/",
+  "raw_lyrics": "A miner was leaving his home for his work\nWhen he heard his little child scream\nHe went to the side of the little child\u2019s bed\nShe said daddy I\u2019ve had such a dream\n\nOh daddy don\u2019t go to the mines today\nFor dreams have so often come true\nOh daddy oh daddy please don\u2019t go away\nFor I never could live without you\n\nI dreamed that the mines were all flaming with fire\nAnd the miners all fought for their lives\nJust then the scene changed and the mouth of the mine\nWas covered with sweethearts and wives\n\nGo down to the village and tell all your friends\nThat as sure as the bright sun does shine\nThere\u2019s something a going to happen there today\nOh daddy don\u2019t go to the mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A miner was leaving his home for his work",
+        "When he heard his little child scream",
+        "He went to the side of the little child\u2019s bed",
+        "She said daddy I\u2019ve had such a dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh daddy don\u2019t go to the mines today",
+        "For dreams have so often come true",
+        "Oh daddy oh daddy please don\u2019t go away",
+        "For I never could live without you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I dreamed that the mines were all flaming with fire",
+        "And the miners all fought for their lives",
+        "Just then the scene changed and the mouth of the mine",
+        "Was covered with sweethearts and wives"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go down to the village and tell all your friends",
+        "That as sure as the bright sun does shine",
+        "There\u2019s something a going to happen there today",
+        "Oh daddy don\u2019t go to the mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

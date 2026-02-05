@@ -1,0 +1,39 @@
+{
+  "slug": "home-far-away",
+  "title": "Home Far Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/home-far-away/",
+  "raw_lyrics": "Oh lord have mercy on this weary soul of mine\nMay I walk in your light everyday\nAnd when I\u2019ve crossed that deep silent river\nI\u2019ll be happy in that home far away\n\nI wandered away from the straight and the narrow\nDriftin\u2019 like a ship lost at sea\nNo lighthouse to guide my weary footsteps\nTil Jesus answered my plea\n\nThe lights are bright no longer I\u2019m blinded\nFrom the bondage of sin I\u2019m free\nHe lifted me up to join salvation\nI\u2019ll live on eternally",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh lord have mercy on this weary soul of mine",
+        "May I walk in your light everyday",
+        "And when I\u2019ve crossed that deep silent river",
+        "I\u2019ll be happy in that home far away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wandered away from the straight and the narrow",
+        "Driftin\u2019 like a ship lost at sea",
+        "No lighthouse to guide my weary footsteps",
+        "Til Jesus answered my plea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The lights are bright no longer I\u2019m blinded",
+        "From the bondage of sin I\u2019m free",
+        "He lifted me up to join salvation",
+        "I\u2019ll live on eternally"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "who-done-it",
+  "title": "Who Done It",
+  "source_url": "https://www.bluegrasslyrics.com/song/who-done-it/",
+  "raw_lyrics": "Who done it who was it broke your heart\nWho done it who keeps us apart\nYou gamble with the love I gave until another won it\nSo when you find your all alone just ask yourself who done it\n\nThere was a time when you were mine and I belonged to you\nYou broke your vow so listen now while I give you a clue\nI gave my heart to someone new because you tried to shun it\nYou want it back but its to late and your the one who done it\n\nI offered you a bungalow with roses round the door\nA diamond ring and everything but still you wanted more\nYou wanted to run your own life so I just let you run it\nAnd when your dream train jumped the track I guess you know who done it",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Who done it who was it broke your heart",
+        "Who done it who keeps us apart",
+        "You gamble with the love I gave until another won it",
+        "So when you find your all alone just ask yourself who done it"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There was a time when you were mine and I belonged to you",
+        "You broke your vow so listen now while I give you a clue",
+        "I gave my heart to someone new because you tried to shun it",
+        "You want it back but its to late and your the one who done it"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I offered you a bungalow with roses round the door",
+        "A diamond ring and everything but still you wanted more",
+        "You wanted to run your own life so I just let you run it",
+        "And when your dream train jumped the track I guess you know who done it"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

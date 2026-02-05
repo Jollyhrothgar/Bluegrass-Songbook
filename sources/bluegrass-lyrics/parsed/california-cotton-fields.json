@@ -1,0 +1,60 @@
+{
+  "slug": "california-cotton-fields",
+  "title": "California Cotton Fields",
+  "source_url": "https://www.bluegrasslyrics.com/song/california-cotton-fields/",
+  "raw_lyrics": "My driftin\u2019 memory goes back to the spring of  \u201943\nWhen I was just a child in Mama\u2019s arms\nMy Daddy plowed the ground and prayed\nthat some day he could leave\nThis run down mortgaged workload of a farm.\n\nThen one night I heard my Daddy saying to my Mama\nThat he\u2019d finally saved enough to go\nCalifornia was his dream for paradise that he had seen\nIn pictures in magazines that told him so\n\nCalifornia Cotton fields\nWhere labor towns were filled with great men with broken dreams\nCalifornia cotton fields\nAs close to wealth as Daddy ever came\n\nAlmost everything we had was sold or left behind\nFrom Daddy\u2019s belt to the fruit that Mama canned\nSome folks came to say farewell and to see what all we had to sell\nSome just came to shake my Daddy\u2019s hand.\n\nThe Model A was loaded down and California bound\nAnd good luck was just about four days away\nThe only change that I recall happening to my Daddy\nWas when his dark hair turned to silver gray.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My driftin\u2019 memory goes back to the spring of  \u201943",
+        "When I was just a child in Mama\u2019s arms",
+        "My Daddy plowed the ground and prayed",
+        "that some day he could leave",
+        "This run down mortgaged workload of a farm."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then one night I heard my Daddy saying to my Mama",
+        "That he\u2019d finally saved enough to go",
+        "California was his dream for paradise that he had seen",
+        "In pictures in magazines that told him so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "California Cotton fields",
+        "Where labor towns were filled with great men with broken dreams",
+        "California cotton fields",
+        "As close to wealth as Daddy ever came"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Almost everything we had was sold or left behind",
+        "From Daddy\u2019s belt to the fruit that Mama canned",
+        "Some folks came to say farewell and to see what all we had to sell",
+        "Some just came to shake my Daddy\u2019s hand."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The Model A was loaded down and California bound",
+        "And good luck was just about four days away",
+        "The only change that I recall happening to my Daddy",
+        "Was when his dark hair turned to silver gray."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

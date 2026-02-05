@@ -1,0 +1,28 @@
+{
+  "slug": "ive-lost-you-forever",
+  "title": "I\u2019ve Lost You Forever",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-lost-you-forever/",
+  "raw_lyrics": "And each lonely night I still wait for you\nAt the same old Place like I used to do\nI know it\u2019s no use I\u2019ve Lost you forever\n\nYou can\u2019t conceal a heart that is broken\nAnd a love like mine will never die\nI can\u2019t explain how I felt when you left me\nAll I know is I wanted to die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "And each lonely night I still wait for you",
+        "At the same old Place like I used to do",
+        "I know it\u2019s no use I\u2019ve Lost you forever"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can\u2019t conceal a heart that is broken",
+        "And a love like mine will never die",
+        "I can\u2019t explain how I felt when you left me",
+        "All I know is I wanted to die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "tennessee",
+  "title": "Tennessee",
+  "source_url": "https://www.bluegrasslyrics.com/song/tennessee/",
+  "raw_lyrics": "You have heard and read about the state of Tennessee\nDown in the southern states is where I want to be\nWhere the valleys are so green and the mountains are so tall\nYou will know just what I mean when you hear them say \u201cY\u2019all\u201d\n\nTennessee (Tennessee)\nI hear you calling me (I hear you calling me)\nThe home of Davey Crockett in the hills of Tennessee.\n\nWhen I was a little boy around the folks back home\nMy mother always said to me Jimmy, please don\u2019t roam\nNow that I have gone away my heart is full of woe\nWhen I think of Mom and Dad that\u2019s where I want to go\n\nIf ever I get back to that state of Tennessee\nI tell you there\u2019ll be no more roaming for me\nThere lives a sweetheart who said she\u2019d marry me\nAs soon as I get back to that state of Tennessee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You have heard and read about the state of Tennessee",
+        "Down in the southern states is where I want to be",
+        "Where the valleys are so green and the mountains are so tall",
+        "You will know just what I mean when you hear them say \u201cY\u2019all\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tennessee (Tennessee)",
+        "I hear you calling me (I hear you calling me)",
+        "The home of Davey Crockett in the hills of Tennessee."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I was a little boy around the folks back home",
+        "My mother always said to me Jimmy, please don\u2019t roam",
+        "Now that I have gone away my heart is full of woe",
+        "When I think of Mom and Dad that\u2019s where I want to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If ever I get back to that state of Tennessee",
+        "I tell you there\u2019ll be no more roaming for me",
+        "There lives a sweetheart who said she\u2019d marry me",
+        "As soon as I get back to that state of Tennessee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

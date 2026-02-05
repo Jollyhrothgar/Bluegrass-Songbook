@@ -1,0 +1,50 @@
+{
+  "slug": "new-patches",
+  "title": "New Patches",
+  "source_url": "https://www.bluegrasslyrics.com/song/new-patches/",
+  "raw_lyrics": "Now and then an old friend tries to help me\nby telling me theres someone I should meet\nBut I don\u2019t have the heart to start all over\nMy heart is laying at anothers feet.\n\nYou just don\u2019t put new Patches on old garments\nI don\u2019t want no one else on my mind\nI just don\u2019t need nobody new to cling too\nI still love someone I\u2019ve known a long, long time\n\nI have built my world around a memory\nand he\u2019s the only one I\u2019ll let in\nEverytime I try to love somebody\nin my mind I\u2019m loving him again.\n\nYou just don\u2019t put new patches on old garments\nI don\u2019t want no one else on my mind\nI just don\u2019t need nobody new to cling too\nI still love someone I\u2019ve known a long, long time.\nI still love someone I\u2019ve known a long, long time.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now and then an old friend tries to help me",
+        "by telling me theres someone I should meet",
+        "But I don\u2019t have the heart to start all over",
+        "My heart is laying at anothers feet."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You just don\u2019t put new Patches on old garments",
+        "I don\u2019t want no one else on my mind",
+        "I just don\u2019t need nobody new to cling too",
+        "I still love someone I\u2019ve known a long, long time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have built my world around a memory",
+        "and he\u2019s the only one I\u2019ll let in",
+        "Everytime I try to love somebody",
+        "in my mind I\u2019m loving him again."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You just don\u2019t put new patches on old garments",
+        "I don\u2019t want no one else on my mind",
+        "I just don\u2019t need nobody new to cling too",
+        "I still love someone I\u2019ve known a long, long time.",
+        "I still love someone I\u2019ve known a long, long time."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

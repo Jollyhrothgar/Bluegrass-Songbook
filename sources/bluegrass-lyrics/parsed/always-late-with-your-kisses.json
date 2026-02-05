@@ -1,0 +1,29 @@
+{
+  "slug": "always-late-with-your-kisses",
+  "title": "Always Late With Your Kisses",
+  "source_url": "https://www.bluegrasslyrics.com/song/always-late-with-your-kisses/",
+  "raw_lyrics": "Always late with your kisses\nWon\u2019t you come to my arms sweet darlin\u2019 and stay\nAlways late with your kisses\nWhy, oh why do you want to do me this way?\n\nHow long do you think I can wait\nWhen you know you\u2019re always late\nAlways late with your kisses\nWhy oh why do you want to dome this way?",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Always late with your kisses",
+        "Won\u2019t you come to my arms sweet darlin\u2019 and stay",
+        "Always late with your kisses",
+        "Why, oh why do you want to do me this way?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "How long do you think I can wait",
+        "When you know you\u2019re always late",
+        "Always late with your kisses",
+        "Why oh why do you want to dome this way?"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

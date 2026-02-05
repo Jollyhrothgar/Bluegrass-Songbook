@@ -1,0 +1,66 @@
+{
+  "slug": "polly-vaughn",
+  "title": "Polly Vaughn",
+  "source_url": "https://www.bluegrasslyrics.com/song/polly-vaughn/",
+  "raw_lyrics": "Now come all ye hunters who follow the gun\nBeware of your shooting at the setting of the sun\nFor Polly\u2019s own true love he shot in the dark\nBut oh and alas Polly Vaughn was his mark.\n\nFor she\u2019d her apron wrapped about her and he took her for a swan\nOh and alas it was she Polly Vaughn\n\nHe ran up beside her and saw that it was she\nCried \u201cPolly oh Polly have I killed thee\u201d\nHe lifted up her head and saw that she was dead\nAnd a fountain of tears for his true love he shed.\n\nIn the middle of the night Polly Vaughn did appear\nCried \u201cJimmy oh Jimmy you must have no fear;\nJust tell them you were hunting when your trial day has come\nAnd you won\u2019t be convicted for what you have done.\u201d\n\nIn the middle of the trial Polly Vaughn did appear\nCrying \u201cUncle oh Uncle Jimmy Randall must go clear\u201d\nThe lawyers and the judges stood around in a row\nIn the middle Polly Vaughn like some fountian of snow\n\nFor she\u2019d her apron wrapped about her and they took her for a swan\nOh and alas it was she Polly Vaughn\nOh and alas it was she Polly Vaughn",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now come all ye hunters who follow the gun",
+        "Beware of your shooting at the setting of the sun",
+        "For Polly\u2019s own true love he shot in the dark",
+        "But oh and alas Polly Vaughn was his mark."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "For she\u2019d her apron wrapped about her and he took her for a swan",
+        "Oh and alas it was she Polly Vaughn"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He ran up beside her and saw that it was she",
+        "Cried \u201cPolly oh Polly have I killed thee\u201d",
+        "He lifted up her head and saw that she was dead",
+        "And a fountain of tears for his true love he shed."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the middle of the night Polly Vaughn did appear",
+        "Cried \u201cJimmy oh Jimmy you must have no fear;",
+        "Just tell them you were hunting when your trial day has come",
+        "And you won\u2019t be convicted for what you have done.\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the middle of the trial Polly Vaughn did appear",
+        "Crying \u201cUncle oh Uncle Jimmy Randall must go clear\u201d",
+        "The lawyers and the judges stood around in a row",
+        "In the middle Polly Vaughn like some fountian of snow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "For she\u2019d her apron wrapped about her and they took her for a swan",
+        "Oh and alas it was she Polly Vaughn",
+        "Oh and alas it was she Polly Vaughn"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

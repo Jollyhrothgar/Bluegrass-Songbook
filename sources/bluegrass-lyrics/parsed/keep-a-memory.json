@@ -1,0 +1,39 @@
+{
+  "slug": "keep-a-memory",
+  "title": "Keep A Memory",
+  "source_url": "https://www.bluegrasslyrics.com/song/keep-a-memory/",
+  "raw_lyrics": "Keep a memory of our love dear\nNever ever let it stray\nWhy betray the heart you\u2019ve broken\nI\u2019ll find happiness some way.\n\nWhen I think about you darling\nI often hang my head and cry\nWords just can\u2019t explain my feelings\nJust to know I\u2019ve lived a lie\n\nWhen our old friends ask about you\nMany times I can\u2019t reply\nJust the thought of your name darling\nMakes me wish that I could die.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Keep a memory of our love dear",
+        "Never ever let it stray",
+        "Why betray the heart you\u2019ve broken",
+        "I\u2019ll find happiness some way."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When I think about you darling",
+        "I often hang my head and cry",
+        "Words just can\u2019t explain my feelings",
+        "Just to know I\u2019ve lived a lie"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When our old friends ask about you",
+        "Many times I can\u2019t reply",
+        "Just the thought of your name darling",
+        "Makes me wish that I could die."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

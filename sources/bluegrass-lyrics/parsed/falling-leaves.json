@@ -1,0 +1,49 @@
+{
+  "slug": "falling-leaves",
+  "title": "Falling Leaves",
+  "source_url": "https://www.bluegrasslyrics.com/song/falling-leaves/",
+  "raw_lyrics": "Falling leaves that lie scattered on the ground\nThe birds and flowers that were here now can\u2019t be found\nAll his friends that he oince had are not around\nThey are scattered like the leaves upon the ground.\n\nSome folks drift along through life and never thrill\nTo the feeling that a good deed brings until\nIt\u2019s too late and they are ready to lie down\nBeneath the leaves there scattered on the ground.\n\nLord let my eyes see every need of every man;\nLet me stop and always lend a helping hand\nThen when I\u2019m laid beneath that mossy ground\nThere\u2019ll be more friends around than leaves upon the ground.\n\nTo your grave there\u2019s no use taking any gold;\nIt\u2019s no use when it\u2019s time for hands to fold.\nWhen you leave this world for a better home some day\nThe only thing you\u2019ll take is what you gave away.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Falling leaves that lie scattered on the ground",
+        "The birds and flowers that were here now can\u2019t be found",
+        "All his friends that he oince had are not around",
+        "They are scattered like the leaves upon the ground."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some folks drift along through life and never thrill",
+        "To the feeling that a good deed brings until",
+        "It\u2019s too late and they are ready to lie down",
+        "Beneath the leaves there scattered on the ground."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lord let my eyes see every need of every man;",
+        "Let me stop and always lend a helping hand",
+        "Then when I\u2019m laid beneath that mossy ground",
+        "There\u2019ll be more friends around than leaves upon the ground."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "To your grave there\u2019s no use taking any gold;",
+        "It\u2019s no use when it\u2019s time for hands to fold.",
+        "When you leave this world for a better home some day",
+        "The only thing you\u2019ll take is what you gave away."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

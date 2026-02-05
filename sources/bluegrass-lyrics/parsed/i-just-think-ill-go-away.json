@@ -1,0 +1,39 @@
+{
+  "slug": "i-just-think-ill-go-away",
+  "title": "I Just Think I\u2019ll Go Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-just-think-ill-go-away/",
+  "raw_lyrics": "It makes no difference where I wander\nNo matter what I say or do\nI can\u2019t outlive this memory of you\nI cry dear when I think of you\n\nSomehow you wouldn\u2019t let me love you\nThe plans we\u2019ve made have gone astray\nInstead of being blue and  lonely\nI just think I\u2019ll go away\n\nIt seems we both could have been happy\nIf things had only turned out right\nFrom now on each day I\u2019ll think about you\nI\u2019ll dream of you dear every night",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It makes no difference where I wander",
+        "No matter what I say or do",
+        "I can\u2019t outlive this memory of you",
+        "I cry dear when I think of you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Somehow you wouldn\u2019t let me love you",
+        "The plans we\u2019ve made have gone astray",
+        "Instead of being blue and  lonely",
+        "I just think I\u2019ll go away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It seems we both could have been happy",
+        "If things had only turned out right",
+        "From now on each day I\u2019ll think about you",
+        "I\u2019ll dream of you dear every night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "lonesome",
+  "title": "Lonesome",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome/",
+  "raw_lyrics": "Lonesome\nFor the arms that held me tight\nLonesome\nFor the lips that whispered goodnight\n\nI pretend to be happy\nBut my friends know\nLonesome\nDon\u2019t matter where I go\n\nLonesome\nLiving in the past\nLonesome\nFor the love that didn\u2019t last\n\nLike a man lost at sea\nNo place to land\nLonesome\nFor someone to understand\n\nLonesome\nLonesome",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lonesome",
+        "For the arms that held me tight",
+        "Lonesome",
+        "For the lips that whispered goodnight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I pretend to be happy",
+        "But my friends know",
+        "Lonesome",
+        "Don\u2019t matter where I go"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lonesome",
+        "Living in the past",
+        "Lonesome",
+        "For the love that didn\u2019t last"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Like a man lost at sea",
+        "No place to land",
+        "Lonesome",
+        "For someone to understand"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lonesome",
+        "Lonesome"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

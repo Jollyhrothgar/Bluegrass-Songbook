@@ -1,0 +1,39 @@
+{
+  "slug": "before-you-go",
+  "title": "Before You Go",
+  "source_url": "https://www.bluegrasslyrics.com/song/before-you-go/",
+  "raw_lyrics": "You\u2019re wanting to be free i know that you don\u2019t love me\nBut let me hold you close before you go\nI won\u2019t let the teardrops fall until your steps are down the hall\nBut let me hold you close before you go\n\nBefore you go and say goodbye, let your heart beat with mine\nThis memory I\u2019ll have of you while I\u2019m alone\nLet the time cease to be these last moments you\u2019re with me\nBut let me hold you close before you go\n\nAll the pain will come soon, loneliness will fill the room\nBut let me hold you close before you go\nMy heart is breaking in two there\u2019s nothing left I\u2019m losing you\nBut let me hold you close before you go",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re wanting to be free i know that you don\u2019t love me",
+        "But let me hold you close before you go",
+        "I won\u2019t let the teardrops fall until your steps are down the hall",
+        "But let me hold you close before you go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Before you go and say goodbye, let your heart beat with mine",
+        "This memory I\u2019ll have of you while I\u2019m alone",
+        "Let the time cease to be these last moments you\u2019re with me",
+        "But let me hold you close before you go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All the pain will come soon, loneliness will fill the room",
+        "But let me hold you close before you go",
+        "My heart is breaking in two there\u2019s nothing left I\u2019m losing you",
+        "But let me hold you close before you go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

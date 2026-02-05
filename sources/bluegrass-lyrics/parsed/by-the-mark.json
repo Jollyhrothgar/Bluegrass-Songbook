@@ -1,0 +1,49 @@
+{
+  "slug": "by-the-mark",
+  "title": "By The Mark",
+  "source_url": "https://www.bluegrasslyrics.com/song/by-the-mark/",
+  "raw_lyrics": "When I cross over\nI will shout and sing\nI will know my savior\nBy the mark where the nails have been\n\nBy the mark where the nails have been\nBy the sign upon his precious skin\nI will know my savior when I come to him\nBy the mark where the nails have been\n\nA man of riches\nMay claim a crown of jewels\nBut the king of heaven\nCan be told from the prince of fools\n\nOn Calvary Mountain\nWhere they made him suffer so\nAll my sin was paid for\nA long, long time ago",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I cross over",
+        "I will shout and sing",
+        "I will know my savior",
+        "By the mark where the nails have been"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "By the mark where the nails have been",
+        "By the sign upon his precious skin",
+        "I will know my savior when I come to him",
+        "By the mark where the nails have been"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A man of riches",
+        "May claim a crown of jewels",
+        "But the king of heaven",
+        "Can be told from the prince of fools"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On Calvary Mountain",
+        "Where they made him suffer so",
+        "All my sin was paid for",
+        "A long, long time ago"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

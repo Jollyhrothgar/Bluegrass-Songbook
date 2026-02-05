@@ -1,0 +1,39 @@
+{
+  "slug": "i-want-to-be-loved",
+  "title": "I Want To Be Loved",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-want-to-be-loved/",
+  "raw_lyrics": "I want to be kissed but only by your lips dear\nFor you\u2019re the only one who\u2019ll ever do\nI want someone to hug and call me honey\nI want to be loved but only by you\n\nI want someone to help me in my sorrow\nAnd someone whose heart is always true\nSomebody who will stay with me forever\nI want to be loved but only by you\n\nIf ever you decide to love me darlin\u2019\nAnd will tell me that your love for me is true\nThen we\u2019ll be happy in our home together\nI want to be loved but only by you",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I want to be kissed but only by your lips dear",
+        "For you\u2019re the only one who\u2019ll ever do",
+        "I want someone to hug and call me honey",
+        "I want to be loved but only by you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I want someone to help me in my sorrow",
+        "And someone whose heart is always true",
+        "Somebody who will stay with me forever",
+        "I want to be loved but only by you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If ever you decide to love me darlin\u2019",
+        "And will tell me that your love for me is true",
+        "Then we\u2019ll be happy in our home together",
+        "I want to be loved but only by you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

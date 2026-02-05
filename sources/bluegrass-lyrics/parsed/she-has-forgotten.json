@@ -1,0 +1,39 @@
+{
+  "slug": "she-has-forgotten",
+  "title": "She Has Forgotten",
+  "source_url": "https://www.bluegrasslyrics.com/song/she-has-forgotten/",
+  "raw_lyrics": "Back to my home town I wanderd one day\nIt seemed that the old song had drifted away\nI wandered down Main Street the view to enjoy\nThere I met with a girl I had loved as a boy\n\nGone are the days when our hearts beat as one\nAll I can say now is see what you done\nGone are the days when we thrilled to each vow\nShe has forgotten everything now\n\nI still have her picture her face sweet and fair\nA rose that she gave me a lock of her hair\nI\u2019ll treasure and keep them it\u2019s silly I know\nFor she has forgotten long long ago",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Back to my home town I wanderd one day",
+        "It seemed that the old song had drifted away",
+        "I wandered down Main Street the view to enjoy",
+        "There I met with a girl I had loved as a boy"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Gone are the days when our hearts beat as one",
+        "All I can say now is see what you done",
+        "Gone are the days when we thrilled to each vow",
+        "She has forgotten everything now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I still have her picture her face sweet and fair",
+        "A rose that she gave me a lock of her hair",
+        "I\u2019ll treasure and keep them it\u2019s silly I know",
+        "For she has forgotten long long ago"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

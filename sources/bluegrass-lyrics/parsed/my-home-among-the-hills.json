@@ -1,0 +1,49 @@
+{
+  "slug": "my-home-among-the-hills",
+  "title": "My Home Among The Hills",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-home-among-the-hills/",
+  "raw_lyrics": "Got a home in the hills of old Virginia I love still\nAnd it stands near the lonesome pines\nAnd I long to go back to the vine covered shack\nWhere I left that old mother of mine\n\nI can still see her there in that old rocking chair\nIn my home among the hills\nAnd I seem to hear her say why did you go away\nFrom your home among the hills\n\nThe pine trees stand alone near my old Virginia home\nAnd that silver hared mother of mine\nI can see her smiling face in that old familiar place\nIn my home among the hills\n\nI\u2019m leaving here today I\u2019m going back to stay\nIn my home among the hills\nHow happy we will be near the lonesome pine trees\nIn my home among the hills",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Got a home in the hills of old Virginia I love still",
+        "And it stands near the lonesome pines",
+        "And I long to go back to the vine covered shack",
+        "Where I left that old mother of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can still see her there in that old rocking chair",
+        "In my home among the hills",
+        "And I seem to hear her say why did you go away",
+        "From your home among the hills"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The pine trees stand alone near my old Virginia home",
+        "And that silver hared mother of mine",
+        "I can see her smiling face in that old familiar place",
+        "In my home among the hills"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m leaving here today I\u2019m going back to stay",
+        "In my home among the hills",
+        "How happy we will be near the lonesome pine trees",
+        "In my home among the hills"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

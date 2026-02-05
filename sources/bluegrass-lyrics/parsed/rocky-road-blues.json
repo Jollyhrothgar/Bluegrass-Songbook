@@ -1,0 +1,45 @@
+{
+  "slug": "rocky-road-blues",
+  "title": "Rocky Road Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/rocky-road-blues/",
+  "raw_lyrics": "Now the road is rocky, but it won\u2019t be rocky long\nNow the road is rocky, but it won\u2019t be rocky long\nAnother man has got my woman and gone\n\nI\u2019ve got those blues, I\u2019m wearing out the soles of my shoes\nI\u2019ve got those blues, I\u2019m wearing out the soles of my shoes\nMy gal went away and left me she left me with the dog gone blues\n\nYou\u2019ll never miss your water til the well runs dry\nYou\u2019ll never miss your water til the well runs dry\nYou\u2019ll never miss your woman until she says goodbye\n\nI wish to the Lord you\u2019d bring my woman back home\nI wish to the Lord you\u2019d bring my woman back home\nI\u2019m not so lonesome, just don\u2019t want to be alone",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Now the road is rocky, but it won\u2019t be rocky long",
+        "Now the road is rocky, but it won\u2019t be rocky long",
+        "Another man has got my woman and gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got those blues, I\u2019m wearing out the soles of my shoes",
+        "I\u2019ve got those blues, I\u2019m wearing out the soles of my shoes",
+        "My gal went away and left me she left me with the dog gone blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll never miss your water til the well runs dry",
+        "You\u2019ll never miss your water til the well runs dry",
+        "You\u2019ll never miss your woman until she says goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish to the Lord you\u2019d bring my woman back home",
+        "I wish to the Lord you\u2019d bring my woman back home",
+        "I\u2019m not so lonesome, just don\u2019t want to be alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

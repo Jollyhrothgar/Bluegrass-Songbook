@@ -1,0 +1,69 @@
+{
+  "slug": "weary-lonesome-blues",
+  "title": "Weary Lonesome Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/weary-lonesome-blues/",
+  "raw_lyrics": "I\u2019ve got them weary weary (lonesome) blues\nFeeling lonesome  \u2019bout to cry\nI turned my back on my true love\nCan\u2019t tell the day from night\n\nI\u2019m going down and catch a train (train train)\nNever coming back again\nI\u2019ve got them weary weary (lonesome) blues\nI\u2019m gonna ride them all away\n\nI\u2019ve got them weary weary (lonesome) blues\nI found out that love don\u2019t pay\nThe only one that I did love\nShe has gone the other way\n\nI can\u2019t smile as I used to (used to)\n\u2018Cause her love has proved untrue\nI\u2019ve got them weary weary (lonesome) blues\nAnd I don\u2019t know what to do\n\nI\u2019ve got them weary weary (lonesome) blues\nGoing to pack my grip and go\nI hate to turn my back on you\nFor you know I love you so\n\nBut you will never love me (love me) dear\nSo I\u2019m drifting away from here\nI\u2019ve got the weary weary (lonesome) blues\nI\u2019m in the way when I am here",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got them weary weary (lonesome) blues",
+        "Feeling lonesome  \u2019bout to cry",
+        "I turned my back on my true love",
+        "Can\u2019t tell the day from night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going down and catch a train (train train)",
+        "Never coming back again",
+        "I\u2019ve got them weary weary (lonesome) blues",
+        "I\u2019m gonna ride them all away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got them weary weary (lonesome) blues",
+        "I found out that love don\u2019t pay",
+        "The only one that I did love",
+        "She has gone the other way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t smile as I used to (used to)",
+        "\u2018Cause her love has proved untrue",
+        "I\u2019ve got them weary weary (lonesome) blues",
+        "And I don\u2019t know what to do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got them weary weary (lonesome) blues",
+        "Going to pack my grip and go",
+        "I hate to turn my back on you",
+        "For you know I love you so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But you will never love me (love me) dear",
+        "So I\u2019m drifting away from here",
+        "I\u2019ve got the weary weary (lonesome) blues",
+        "I\u2019m in the way when I am here"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

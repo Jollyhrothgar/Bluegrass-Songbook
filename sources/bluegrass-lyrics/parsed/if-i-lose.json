@@ -1,0 +1,39 @@
+{
+  "slug": "if-i-lose",
+  "title": "If I Lose",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-i-lose/",
+  "raw_lyrics": "I never thought I\u2019d need you but now I found I\u2019m wrong\nCome on back sweet mama back where you belong\nI\u2019ve gambled all over town find that I can\u2019t win\nSo come on back and pick me up again\n\nNow if I lose let me lose\nI don\u2019t care  how much I lose\nIf I lose a hundred dollars while I\u2019m trying to win a dime\nMy baby she\u2019s got money all the time\n\nOf all the other gals I know no one can take your place\nCause when I get into a jam they just ain\u2019t in the race\nSo now that you\u2019re back dear let\u2019s take another round\nWith you here by my side dear the deal just can\u2019t go down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I never thought I\u2019d need you but now I found I\u2019m wrong",
+        "Come on back sweet mama back where you belong",
+        "I\u2019ve gambled all over town find that I can\u2019t win",
+        "So come on back and pick me up again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now if I lose let me lose",
+        "I don\u2019t care  how much I lose",
+        "If I lose a hundred dollars while I\u2019m trying to win a dime",
+        "My baby she\u2019s got money all the time"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Of all the other gals I know no one can take your place",
+        "Cause when I get into a jam they just ain\u2019t in the race",
+        "So now that you\u2019re back dear let\u2019s take another round",
+        "With you here by my side dear the deal just can\u2019t go down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

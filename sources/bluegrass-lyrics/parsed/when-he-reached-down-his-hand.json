@@ -1,0 +1,39 @@
+{
+  "slug": "when-he-reached-down-his-hand",
+  "title": "When He Reached Down His Hand",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-he-reached-down-his-hand/",
+  "raw_lyrics": "Once my soul was astray from the heavenly way\nI was wretched and blind as could be\nBut my Savior in love gave me peace from above\nWhen he reached down his hand for me\n\nWhen the Savior reached down for me\nWhen he reached down his hand for me\nI was lost and undone without God or his Son\nWhen he reached down his hand for me\n\nHow my heart does rejoice when I hear his sweet voice\nIn a tempest to him I can cling\nI can lean on his arm safe and sure from all harm\nWhen he reaches down his hand for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once my soul was astray from the heavenly way",
+        "I was wretched and blind as could be",
+        "But my Savior in love gave me peace from above",
+        "When he reached down his hand for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the Savior reached down for me",
+        "When he reached down his hand for me",
+        "I was lost and undone without God or his Son",
+        "When he reached down his hand for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How my heart does rejoice when I hear his sweet voice",
+        "In a tempest to him I can cling",
+        "I can lean on his arm safe and sure from all harm",
+        "When he reaches down his hand for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

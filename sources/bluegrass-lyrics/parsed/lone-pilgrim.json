@@ -1,0 +1,49 @@
+{
+  "slug": "lone-pilgrim",
+  "title": "Lone Pilgrim",
+  "source_url": "https://www.bluegrasslyrics.com/song/lone-pilgrim/",
+  "raw_lyrics": "I came to the place where the lone pilgrim lay\nAnd pensively stood by his tomb\nWhen In a low whisper I heard someone say\nHow  sweetly I sleep here alone\n\nThe tempest may howl and the loud thunder roar\nAnd gathering storms may arise\nBut calm is my feeling at rest is my soul\nThe tears are all wiped from my eyes\n\nThe cause of my master compels me from home\nNo kindred or relatives nigh\nI met the contingent and sank to the tomb\nMy soul flew to mansions on high\n\nGo tell my companions and children most dear\nTo weep not for me while I\u2019m gone\nThe same hand that led me through storms most severe\nHas kindly assisted me on",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I came to the place where the lone pilgrim lay",
+        "And pensively stood by his tomb",
+        "When In a low whisper I heard someone say",
+        "How  sweetly I sleep here alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The tempest may howl and the loud thunder roar",
+        "And gathering storms may arise",
+        "But calm is my feeling at rest is my soul",
+        "The tears are all wiped from my eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The cause of my master compels me from home",
+        "No kindred or relatives nigh",
+        "I met the contingent and sank to the tomb",
+        "My soul flew to mansions on high"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go tell my companions and children most dear",
+        "To weep not for me while I\u2019m gone",
+        "The same hand that led me through storms most severe",
+        "Has kindly assisted me on"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

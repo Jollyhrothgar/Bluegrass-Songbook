@@ -1,0 +1,44 @@
+{
+  "slug": "dream-of-me",
+  "title": "Dream Of Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/dream-of-me/",
+  "raw_lyrics": "My life on the road has always been hard on me and you\nAnd everytime we say goodbye it gets harder to do\nBut when I\u2019m far away somewhere alone and a\u2019 missin\u2019 you starts\nAll I got to do is picture you and I can feel you in my heart\n\nSo dream of me everytime you get to feelin\u2019 blue\nDream of me and I\u2019ll be dreaming of you\n\nI\u2019ve been a lot of places but there\u2019s just no place like home\nAnd I\u2019m always on my way back to you every minute that I\u2019m gone\nSo when you get to feelin\u2019 lonely just remember we won\u2019t always be apart\nClose your eyes and think of me you can feel me in your heart\n\nJim and Jesse McReynolds; Music Among Friends",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My life on the road has always been hard on me and you",
+        "And everytime we say goodbye it gets harder to do",
+        "But when I\u2019m far away somewhere alone and a\u2019 missin\u2019 you starts",
+        "All I got to do is picture you and I can feel you in my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So dream of me everytime you get to feelin\u2019 blue",
+        "Dream of me and I\u2019ll be dreaming of you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been a lot of places but there\u2019s just no place like home",
+        "And I\u2019m always on my way back to you every minute that I\u2019m gone",
+        "So when you get to feelin\u2019 lonely just remember we won\u2019t always be apart",
+        "Close your eyes and think of me you can feel me in your heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jim and Jesse McReynolds; Music Among Friends"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

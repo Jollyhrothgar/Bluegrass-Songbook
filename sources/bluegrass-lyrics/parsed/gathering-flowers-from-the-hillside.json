@@ -1,0 +1,49 @@
+{
+  "slug": "gathering-flowers-from-the-hillside",
+  "title": "Gathering Flowers From The Hillside",
+  "source_url": "https://www.bluegrasslyrics.com/song/gathering-flowers-from-the-hillside/",
+  "raw_lyrics": "I\u2019ve been gathering flowers from the hillside\nTo wreath around your brow\nBut you\u2019ve kept me a-waitin\u2019 so long, dear\nThe flowers have all withered now\n\nI know that you have seen trouble\nBut never hang down your head\nYour love for me is like the flowers\nYour love for me is dead\n\nIt was on one bright June morning\nThe roses were in bloom\nI shot and killed my darling\nAnd what will be my doom?\n\nClosed eyes cannot see these roses\nClosed hands cannot hold them, you know\nAnd these lips that still cannot kiss me\nHas gone from me forever more",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve been gathering flowers from the hillside",
+        "To wreath around your brow",
+        "But you\u2019ve kept me a-waitin\u2019 so long, dear",
+        "The flowers have all withered now"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know that you have seen trouble",
+        "But never hang down your head",
+        "Your love for me is like the flowers",
+        "Your love for me is dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was on one bright June morning",
+        "The roses were in bloom",
+        "I shot and killed my darling",
+        "And what will be my doom?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Closed eyes cannot see these roses",
+        "Closed hands cannot hold them, you know",
+        "And these lips that still cannot kiss me",
+        "Has gone from me forever more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

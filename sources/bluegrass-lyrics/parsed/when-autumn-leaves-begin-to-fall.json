@@ -1,0 +1,39 @@
+{
+  "slug": "when-autumn-leaves-begin-to-fall",
+  "title": "When Autumn Leaves Begin To Fall",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-autumn-leaves-begin-to-fall/",
+  "raw_lyrics": "When autumn leaves begin to fall\nIt\u2019s then I hear my mother call\nHer tender voice I hear in song\nI ask forgiveness for each wrong\n\nWhen a boy of only fifteen years\nI left home in seach of new frontiers\nA house of gold I then did wed\nA wall of stone I built within\n\nNow my mother she has passed away\nNot one kindness did I show or say\nFor all the wealth I might have shared\nMother never knew I cared",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When autumn leaves begin to fall",
+        "It\u2019s then I hear my mother call",
+        "Her tender voice I hear in song",
+        "I ask forgiveness for each wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When a boy of only fifteen years",
+        "I left home in seach of new frontiers",
+        "A house of gold I then did wed",
+        "A wall of stone I built within"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now my mother she has passed away",
+        "Not one kindness did I show or say",
+        "For all the wealth I might have shared",
+        "Mother never knew I cared"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

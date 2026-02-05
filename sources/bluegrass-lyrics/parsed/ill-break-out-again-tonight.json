@@ -1,0 +1,39 @@
+{
+  "slug": "ill-break-out-again-tonight",
+  "title": "I\u2019ll Break Out Again Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-break-out-again-tonight/",
+  "raw_lyrics": "Slowly the long day turns to night\nSoon they\u2019ll switch off the prison lights\nAnd in my cell I\u2019m making plans\nTo be at home with you again\n\nThese walls and bars can\u2019t hold a dreaming man\nSo I\u2019ll be home to tuck the babies in\nThey can chain my body but not my mind\nSo I\u2019ll break out again tonight\n\nThe warden thinks I\u2019m in for life\nAll he\u2019s ever seen me wear is stripes\nHe don\u2019t know about my blue suit and my tie\nThat I wear when I\u2019m with you at night",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Slowly the long day turns to night",
+        "Soon they\u2019ll switch off the prison lights",
+        "And in my cell I\u2019m making plans",
+        "To be at home with you again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "These walls and bars can\u2019t hold a dreaming man",
+        "So I\u2019ll be home to tuck the babies in",
+        "They can chain my body but not my mind",
+        "So I\u2019ll break out again tonight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The warden thinks I\u2019m in for life",
+        "All he\u2019s ever seen me wear is stripes",
+        "He don\u2019t know about my blue suit and my tie",
+        "That I wear when I\u2019m with you at night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

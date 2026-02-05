@@ -1,0 +1,49 @@
+{
+  "slug": "lonesome-without-you-stanleys",
+  "title": "Lonesome Without You \u2013 Stanleys",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-without-you-stanleys/",
+  "raw_lyrics": "When we were young we loved each other\nMore than anyone will know\nBut today you found a new love\nAnd you said I had to go\n\nOh the road is rough and rocky\nSince the day I last saw you\nAnother\u2019s won your heart forever\nAnd I\u2019m lonesome without you\n\nOn down this lonely road I wandered\nWith nothing left for me to do\nWondering if I\u2019ll ever see you\nAnd share the love that we once knew\n\nMy hope is now that you\u2019ll be happy\nWith the new love you have found\nBut if you ever change your mind dear\nRemember me I\u2019ll be around",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When we were young we loved each other",
+        "More than anyone will know",
+        "But today you found a new love",
+        "And you said I had to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the road is rough and rocky",
+        "Since the day I last saw you",
+        "Another\u2019s won your heart forever",
+        "And I\u2019m lonesome without you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On down this lonely road I wandered",
+        "With nothing left for me to do",
+        "Wondering if I\u2019ll ever see you",
+        "And share the love that we once knew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My hope is now that you\u2019ll be happy",
+        "With the new love you have found",
+        "But if you ever change your mind dear",
+        "Remember me I\u2019ll be around"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "long-time-gone",
+  "title": "Long Time Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/long-time-gone/",
+  "raw_lyrics": "You cheated me you made me lonely\nI tried to be your very own\nThere\u2019ll come a day you\u2019ll want me only\nCause when I leave I\u2019ll be a long time gone\n\nI\u2019ll be a long time gone\nI\u2019ll be a long time gone\nWhen I leave\nI\u2019ll be a long time gone\n\nYou\u2019re gonna be sad you\u2019re gonna be weepin\nYou\u2019re gonna be blue and all alone\nYou\u2019ll regret the day you\u2019ll see me leavin\nCause when I leave I\u2019ll be a long time gone\n\nYou\u2019ll see my face through tears and sorrow\nYou\u2019ll miss the love you called your own\nMaybe there\u2019ll be no tomorrow\nCause when I leave I\u2019ll be a long time gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You cheated me you made me lonely",
+        "I tried to be your very own",
+        "There\u2019ll come a day you\u2019ll want me only",
+        "Cause when I leave I\u2019ll be a long time gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll be a long time gone",
+        "I\u2019ll be a long time gone",
+        "When I leave",
+        "I\u2019ll be a long time gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re gonna be sad you\u2019re gonna be weepin",
+        "You\u2019re gonna be blue and all alone",
+        "You\u2019ll regret the day you\u2019ll see me leavin",
+        "Cause when I leave I\u2019ll be a long time gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll see my face through tears and sorrow",
+        "You\u2019ll miss the love you called your own",
+        "Maybe there\u2019ll be no tomorrow",
+        "Cause when I leave I\u2019ll be a long time gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

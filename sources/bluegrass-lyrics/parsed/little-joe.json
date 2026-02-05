@@ -1,0 +1,79 @@
+{
+  "slug": "little-joe",
+  "title": "Little Joe",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-joe/",
+  "raw_lyrics": "What will the birds do, mother, in the spring\nWill they gather the crumbs around our door\nWill they fly from the nest to the top of the tree\nAnd ask why Joe wanders out no more\n\nWhat will the kitten do, mother, all alone\nWill she stray from her frolic for a day\nWill she lie on the rug beside my bed\nLike she did before I went away\n\nWhat will Thomas, the old gardener do\nWhen you ask him for flowers for me\nWill he give you a rose he has tended with care\nThe fairest one that lies around the tree\n\nI saw the tears coming to his honest eyes\nHe said it was the wind that brought \u2019em there\nAs he gazed on my cheeks growing paler each day\nHis hand trembled over my hair\n\nKeep Tag, mother, my little dog\nI know that he\u2019ll mourn for me too\nKeep him though blind and older he grows\nTo sleep in the whole summer through\n\nShow him my coat, mother, so he may know\nThat his master then will be dead\nSpeak to him kindly and often of Joe\nAnd pat him on his brown shaggy head\n\nAnd you, dearest mother, shall miss me for a while\nBut in heaven I shall no larger grow\nAnd any kind angel you meet at the gate\nCan take you to your darling Little Joe",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "What will the birds do, mother, in the spring",
+        "Will they gather the crumbs around our door",
+        "Will they fly from the nest to the top of the tree",
+        "And ask why Joe wanders out no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What will the kitten do, mother, all alone",
+        "Will she stray from her frolic for a day",
+        "Will she lie on the rug beside my bed",
+        "Like she did before I went away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What will Thomas, the old gardener do",
+        "When you ask him for flowers for me",
+        "Will he give you a rose he has tended with care",
+        "The fairest one that lies around the tree"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I saw the tears coming to his honest eyes",
+        "He said it was the wind that brought \u2019em there",
+        "As he gazed on my cheeks growing paler each day",
+        "His hand trembled over my hair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Keep Tag, mother, my little dog",
+        "I know that he\u2019ll mourn for me too",
+        "Keep him though blind and older he grows",
+        "To sleep in the whole summer through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Show him my coat, mother, so he may know",
+        "That his master then will be dead",
+        "Speak to him kindly and often of Joe",
+        "And pat him on his brown shaggy head"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And you, dearest mother, shall miss me for a while",
+        "But in heaven I shall no larger grow",
+        "And any kind angel you meet at the gate",
+        "Can take you to your darling Little Joe"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

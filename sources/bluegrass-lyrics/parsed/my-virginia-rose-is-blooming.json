@@ -1,0 +1,89 @@
+{
+  "slug": "my-virginia-rose-is-blooming",
+  "title": "My Virginia Rose Is Blooming",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-virginia-rose-is-blooming/",
+  "raw_lyrics": "My Virginia rose is blooming\nShe\u2019s waiting there for me\nIn the hills of old Virginia\nThat\u2019s where I long to be\n\nShe wears a winning\u2019 smile\nAnd her loving eyes are blue\nShe\u2019s won my heart forever\nFor she\u2019s the girl that\u2019s true\n\nBeneath the scarlet maple\nBy the twinkling little spring\nThat\u2019s where I bid her promise\nAnd gave to her the ring\n\nSpringtime is approaching\u2019\nThe birds and doves are here\nThey are singing so sweetly\nBut none can sing like her\n\nIt\u2019s love that calls me to you\nMy rose that never fades\nOr loses its crimson leaves of love\nLove that\u2019s perfect made\n\nI long to see my darlin\u2019\nthere in the mist of dew\nWith the diamond dewdrops all \u2018round her\nShe\u2019ll be a queen in the view\n\nShe\u2019s a wild rose in the forest\nA fairy in a dream\nMy darlings in Virginia\nher age is just sixteen\n\nI\u2019m a long, long ways from my darlin\u2019\nJust a little too far to be\nMy Virginia rose is blooming\nShe\u2019s waiting there for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My Virginia rose is blooming",
+        "She\u2019s waiting there for me",
+        "In the hills of old Virginia",
+        "That\u2019s where I long to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She wears a winning\u2019 smile",
+        "And her loving eyes are blue",
+        "She\u2019s won my heart forever",
+        "For she\u2019s the girl that\u2019s true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Beneath the scarlet maple",
+        "By the twinkling little spring",
+        "That\u2019s where I bid her promise",
+        "And gave to her the ring"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Springtime is approaching\u2019",
+        "The birds and doves are here",
+        "They are singing so sweetly",
+        "But none can sing like her"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s love that calls me to you",
+        "My rose that never fades",
+        "Or loses its crimson leaves of love",
+        "Love that\u2019s perfect made"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I long to see my darlin\u2019",
+        "there in the mist of dew",
+        "With the diamond dewdrops all \u2018round her",
+        "She\u2019ll be a queen in the view"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s a wild rose in the forest",
+        "A fairy in a dream",
+        "My darlings in Virginia",
+        "her age is just sixteen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a long, long ways from my darlin\u2019",
+        "Just a little too far to be",
+        "My Virginia rose is blooming",
+        "She\u2019s waiting there for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "sunny-side-of-life",
+  "title": "Sunny Side Of Life",
+  "source_url": "https://www.bluegrasslyrics.com/song/sunny-side-of-life/",
+  "raw_lyrics": "There\u2019s a dark and a troubled side of life\nThere\u2019s a bright and a sunny side, too\nThough we meet with the darkness and strife\nThe sunny side we also may view.\n\nKeep on the sunny side alwys on the sunny side\nKeep on the sunny side of life\nIt will help us every day it will brighten all the way\nIf we keep on the sunny side of life.\n\nThe storm and its fury broke today\nBrushing hopes that we\u2019ve cherished so dear\nCloud and storm will in time pass away\nThe sun again will shine bright and clear.\n\nLet us breathe with a song of hope each day\nThough the moments be cloudy or fair\nLet us trust in our Saviour away\nHe keepeth everyone in his care.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a dark and a troubled side of life",
+        "There\u2019s a bright and a sunny side, too",
+        "Though we meet with the darkness and strife",
+        "The sunny side we also may view."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Keep on the sunny side alwys on the sunny side",
+        "Keep on the sunny side of life",
+        "It will help us every day it will brighten all the way",
+        "If we keep on the sunny side of life."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The storm and its fury broke today",
+        "Brushing hopes that we\u2019ve cherished so dear",
+        "Cloud and storm will in time pass away",
+        "The sun again will shine bright and clear."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Let us breathe with a song of hope each day",
+        "Though the moments be cloudy or fair",
+        "Let us trust in our Saviour away",
+        "He keepeth everyone in his care."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

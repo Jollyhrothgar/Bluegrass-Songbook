@@ -1,0 +1,49 @@
+{
+  "slug": "leaning-on-the-everlasting-arms",
+  "title": "Leaning On The Everlasting Arms",
+  "source_url": "https://www.bluegrasslyrics.com/song/leaning-on-the-everlasting-arms/",
+  "raw_lyrics": "What a fellowship, what a joy divine\nLeaning on the everlasting arms\nWhat a blessedness, what a peace is mine\nLeaning on the everlasting arms\n\nLeaning, leaning\nSafe and secure from all alarms\nLeaning, leaning\nLeaning on the everlasting arms\n\nO how sweet to walk in the pilgrim way\nLeaning on the everlasting arms\nO how bright the path grows from day to day\nLeaning on the everlasting arms\n\nWhat have I to dread, what have I to fear\nLeaning on the everlasting arms\nI have blessed peace with my Lord so near\nLeaning on the everlasting arms",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "What a fellowship, what a joy divine",
+        "Leaning on the everlasting arms",
+        "What a blessedness, what a peace is mine",
+        "Leaning on the everlasting arms"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Leaning, leaning",
+        "Safe and secure from all alarms",
+        "Leaning, leaning",
+        "Leaning on the everlasting arms"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "O how sweet to walk in the pilgrim way",
+        "Leaning on the everlasting arms",
+        "O how bright the path grows from day to day",
+        "Leaning on the everlasting arms"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What have I to dread, what have I to fear",
+        "Leaning on the everlasting arms",
+        "I have blessed peace with my Lord so near",
+        "Leaning on the everlasting arms"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

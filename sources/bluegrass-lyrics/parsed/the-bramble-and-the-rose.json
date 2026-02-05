@@ -1,0 +1,49 @@
+{
+  "slug": "the-bramble-and-the-rose",
+  "title": "The Bramble And The Rose",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-bramble-and-the-rose/",
+  "raw_lyrics": "We have been so close together\nEach a candle, each a flame\nAll our dangers were outside us\nAnd we knew them all by name\n\nSee how the bramble and the rose\nIntertwine\nLove grows like a bramble and a rose\nRound each other we will wind\n\nNow I\u2019ve hurt you and it hurts me\nJust to see what we can do\nTo ourselves and to each other\nWithout really meaning to\n\nSo put your arms around me\nAnd we\u2019ll sing a true love song\nOne that we can sing together\nPlay and sing it all night long.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We have been so close together",
+        "Each a candle, each a flame",
+        "All our dangers were outside us",
+        "And we knew them all by name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "See how the bramble and the rose",
+        "Intertwine",
+        "Love grows like a bramble and a rose",
+        "Round each other we will wind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now I\u2019ve hurt you and it hurts me",
+        "Just to see what we can do",
+        "To ourselves and to each other",
+        "Without really meaning to"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So put your arms around me",
+        "And we\u2019ll sing a true love song",
+        "One that we can sing together",
+        "Play and sing it all night long."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

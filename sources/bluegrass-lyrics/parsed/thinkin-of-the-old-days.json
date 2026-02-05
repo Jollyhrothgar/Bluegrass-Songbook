@@ -1,0 +1,49 @@
+{
+  "slug": "thinkin-of-the-old-days",
+  "title": "Thinkin\u2019 Of The Old Days",
+  "source_url": "https://www.bluegrasslyrics.com/song/thinkin-of-the-old-days/",
+  "raw_lyrics": "How often I think of the old days\nI remember well a love we once knew\nWe\u2019ve parted now and wandered from each other\nBut I somehow can\u2019t help wonderin\u2019 about you\n\nAre you alone with a memory\nHaunted by the dreams of the past\nJust waiting for someone to tell you\nYou\u2019re playing a game that won\u2019t last\n\nLast night I was dreamin\u2019 about you\nI thought you were back here with me\nI prayed that you\u2019d stay here forever\nBut I soon realized it couldn\u2019t be\n\nSomeday when your life here has finished\nWe\u2019ll meet on that highway up there\nWe\u2019ll stroll hand in hand there forever\nIn that land where our love will bloom again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "How often I think of the old days",
+        "I remember well a love we once knew",
+        "We\u2019ve parted now and wandered from each other",
+        "But I somehow can\u2019t help wonderin\u2019 about you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Are you alone with a memory",
+        "Haunted by the dreams of the past",
+        "Just waiting for someone to tell you",
+        "You\u2019re playing a game that won\u2019t last"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night I was dreamin\u2019 about you",
+        "I thought you were back here with me",
+        "I prayed that you\u2019d stay here forever",
+        "But I soon realized it couldn\u2019t be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday when your life here has finished",
+        "We\u2019ll meet on that highway up there",
+        "We\u2019ll stroll hand in hand there forever",
+        "In that land where our love will bloom again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

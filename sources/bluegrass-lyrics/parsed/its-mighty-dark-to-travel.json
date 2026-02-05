@@ -1,0 +1,49 @@
+{
+  "slug": "its-mighty-dark-to-travel",
+  "title": "It\u2019s Mighty Dark To Travel",
+  "source_url": "https://www.bluegrasslyrics.com/song/its-mighty-dark-to-travel/",
+  "raw_lyrics": "It\u2019s mighty dark for me to travel\nFor my sweetheart she is gone\nThe road is rough and filled with gravel\nBut I must journey on and on\n\nTo me she was a little angel\nSent down to me from God above\nAnd on the day that I first met her\nThen I told her of my love\n\nMany a night we strolled together\nTalking of our love so fair\nMy love for her will never vanish\nOh I know I\u2019ll meet her there\n\nTraveling down this lonesome highway\nThinking of my love who\u2019s gone\nKnowing soon we\u2019ll be together\nShe\u2019s the only love I\u2019ve known",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s mighty dark for me to travel",
+        "For my sweetheart she is gone",
+        "The road is rough and filled with gravel",
+        "But I must journey on and on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "To me she was a little angel",
+        "Sent down to me from God above",
+        "And on the day that I first met her",
+        "Then I told her of my love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many a night we strolled together",
+        "Talking of our love so fair",
+        "My love for her will never vanish",
+        "Oh I know I\u2019ll meet her there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Traveling down this lonesome highway",
+        "Thinking of my love who\u2019s gone",
+        "Knowing soon we\u2019ll be together",
+        "She\u2019s the only love I\u2019ve known"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}
