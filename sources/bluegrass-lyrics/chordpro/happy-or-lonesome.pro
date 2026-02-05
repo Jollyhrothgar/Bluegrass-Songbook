@@ -7,54 +7,40 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Come back to me in my dreaming
-Come back to me once more
+Come [A]back to me [E]in my dreaming
+Come [A]back to me once [A]more
 Come with the love light beaming
-Like in the days of yore
+Like [E]in the days of yore
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-I wonder if you still love me
-And if your heart is still true
+I wonder if [A]you still love me
+And if your heart is still [A]true
 When the spring roses are blooming
-Then I’ll come back to you
+Then [E]I’ll come [A]back to [A]you
 {end_of_verse}
 
 {start_of_chorus}
 Somewhere a heart is breaking
-Calling me back to you
+Calling me [A]back to [A]you
 Memories of loved ones waiting
-Each happy home and you
+Each happy home and [A]you
 Absence makes my heart fonder
-Is it the same with you
-Are you still happy I wonder
-Or do you feel lonesome too
+Is it the same with [A]you
+Are [A]you still happy I wonder
+Or do [A]you feel lonesome too
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
 When the sun is sinking
-In the golden west
+[E]In the golden west
 And the birds and flowers
 They have gone to rest
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Come tell me that you still love me
-And that your heart is still true
+Come [A]tell me [D]that [A]you still love me
+And [D]that your heart is still [A]true
 When the spring roses are blooming
-Then I’ll come back to you
+Then [E]I’ll come [A]back to [A]you
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# Come [A]back to me in
-# Come [D]back to me
-# once [A]more
-# Like [E]in the days of
-# Come [A]tell me that
-# And [D]that your heart
-# is still [A]true
-# Then [E]I'll come back
-# to [A]you

@@ -7,17 +7,17 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-One stormy day, me and my buddy
-Started on our roundup ride
-The wind and dust blew hard around us,
-My buddy strayed far from my side
+[A]One stormy day, me and my [D]buddy
+Started [A]on our roundup [E]ride
+The wind and [A]dust blew hard [D]around us,
+My [D]buddy [A]strayed far [E]from my [A]side
 {end_of_verse}
 
 {start_of_chorus}
-We were buddies in the saddle,
-We were buddies in our home,
-We were buddies herding cattle,
-We were buddies everywhere we roamed
+We were [A]buddies in the [D]saddle,
+We were [A]buddies in our [E]home,
+We were [A]buddies herding [D]cattle,
+We were [A]buddies everywhere we [A]roamed
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
@@ -28,7 +28,7 @@ Then the poor boy fell asleep
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-I took him up in my saddle
+I took him up in my [D]saddle
 And carried him across the plain
 My mother nursed him every moment
 To try to make him well again
@@ -47,16 +47,3 @@ And it’s so hard to struggle ‘long
 So hard to believe that he has left me,
 I can’t realize that he has gone
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [A]One stormy day, me and my [D]buddy
-# started [A]on our roundup [E]ride,
-# the wind and [A]dust blew hard [D]around us,
-# my buddy [A]strayed far [E]from my [A]side.
-# We were [A]buddies in the [D]saddle,
-# we were [A]buddies in our [E]home,
-# we were [A]buddies herdin' [D]cattle,
-# we were [A]buddies every[E]where we [A]roamed.

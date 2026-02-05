@@ -7,12 +7,12 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-My home’s in old Virginia among the lovely hills
-The memory of my birthplace lies in my bosom still
+[G]My home’s in old Virginia [C]among the lovely [G]hills
+The [C]memory of [G]my [G]birthplace lies in [G]my [D]bosom [G]still
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-I did not like my fireside I did not like my home
+I did not like [G]my fireside I did not like [G]my home
 I have a mind for rambling so far away from home
 {end_of_verse}
 
@@ -32,15 +32,6 @@ Oh why should I disgrace her when I am doomed for hell
 {end_of_verse}
 
 {start_of_verse: Verse 6}
-But now upon my scaffold my time’s not very long
+But now upon [G]my scaffold [G]my time’s not very long
 You may forget the singer but don’t forget this song
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [G]My home's in old Virginia [C]among the lovely
-# [G]hills
-# The [C]memory of my [G]birthplace lies in my [D]bosom
-# [G]still

@@ -7,46 +7,29 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-This world is not my home I’m just-a-passing through
+This [A7]world is not my home I’m just-a-passing through
 My treasures are laid up somewhere beyond the blue
-The angels beckon me from Heaven’s open door
-And I can’t feel at home in this world anymore
+The [D]angels beckon me from Heaven’s open door
+And I can’t feel at home in this [A7]world anymore
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-Oh Lord you know I have no friend like you
+Oh Lord [D]you know I have no friend like [D]you
 If Heaven’s not my home oh Lord what would I do
-The angels beckon me from Heaven’s open door
-And I can’t feel at home in this world anymore
+The [D]angels beckon me from Heaven’s open door
+And I can’t feel at home in this [A7]world anymore
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-They’re all expecting me that’s one thing I know
+They’re [A7]all expecting me that’s one thing I know
 I fixed it up with Jesus a long time ago
 I know he’ll take me through though I am weak and poor
-And I can’t feel at home in this world anymore
+And I can’t feel at home in this [A7]world anymore
 {end_of_verse}
 
 {start_of_verse: Verse 4}
 Just over in the gloryland there’ll be no dying there
-The saints all shouting victory and singing everywhere
+The saints [A7]all shouting victory and [A7]singing everywhere
 I hear the voice of those that’s gone on before
-And I can’t feel at home in this world anymore
+And I can’t feel at home in this [A7]world anymore
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# This [D] world is not my   [D7] home, I'm [G] just a-passing [D] through
-# My treasures and my hopes are   [A7]all beyond the blue;
-# Where [D]ma-ny Christian [D7] chil-dren [G] have   gone on be- [D]fore,
-# And I can't feel at home in this [A7] world   any-[D]more.....  [A7]
-# cho: [D] Oh Lord, You [D7] know I [G] have no   friend but [D]you
-# If Hea-ven's not my home, Oh [A7] Lord what would I   do?
-# [D]An-gels have [D7]ta-ken me to [G] Hea-ven's open [D] door
-# And I   can't feel at home in this [A7]world any- [D]more.....   [A7]
-# [D] O-ver   in glo-ry [D7] land there [G] is no dy-ing [D] there
-# The saints are shout-ing   Vict'ry and [A7]sing-ing everywhere.
-# I [D] hear the voice of [D7] Nell that   [G] I have heard be-[D] fore
-# And I can't feel at home in this [A7] world any-   [D]more. [A7]  [D]

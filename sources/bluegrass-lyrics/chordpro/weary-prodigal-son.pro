@@ -7,35 +7,22 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-God is calling us now so come without delay
-Hear oh hear Him calling calling now for thee
-Patient, loving and tender but still fatherly
-Hear His loving voice calling still (calling still)
+[F#]God is [F#]calling us now so come without delay
+[C#]Hear oh [C#]hear Him [F#]calling [F#]calling now for [F#]thee
+[F#]Patient, loving and tender but [F#]still fatherly
+[C#]Hear His loving voice [F#]calling [F#]still [F#](calling [F#]still)
 {end_of_verse}
 
 {start_of_chorus}
-Calling out for thee
-Oh weary (weary prodigal son) prodigal son (weary prodigal son)
-Calling out for thee
-Oh weary (weary prodigal son) prodigal son (weary prodigal son)
+[F#]Calling out for [F#]thee
+Oh [C#]weary [C#](weary prodigal [F#]son) prodigal [F#]son [C#](weary prodigal [F#]son)
+[F#]Calling out for [F#]thee
+Oh [C#]weary [C#](weary prodigal [F#]son) prodigal [F#]son [C#](weary prodigal [F#]son)
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
 Come there’s bread in the house of the father and His fair
-Hear oh hear Him calling calling out for thee
+[C#]Hear oh [C#]hear Him [F#]calling [F#]calling out for [F#]thee
 Low the table spread and a feast is waiting there
-Hear His loving voice calling still (calling still)
+[C#]Hear His loving voice [F#]calling [F#]still [F#](calling [F#]still)
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [F#]God is calling us now so come without delay
-# [C#]Hear oh hear Him calling calling now for [F#]thee
-# [F#]Patient, loving and tender but still fatherly
-# [C#]Hear His loving voice calling [F#]still (calling  still)
-# [F#]Calling out for thee
-# Oh [C#]weary (weary prodigal son) prodigal [F#]son  (weary prodigal son)
-# [F#]Calling out for [B]thee
-# Oh [C#]weary (weary prodigal son) prodigal [F#]son  (weary prodigal son)

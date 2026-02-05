@@ -7,14 +7,14 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-With a draw from either hand
-I was known as Blackie’s gunman
-The best two gunman in the land
-I could shoot the ace of diamonds
+With a [D7]draw from either [G]hand
+[G]I was known as Blackie’s [D]gunman
+The [D7]best two [D]gunman in the [G]land
+[G]I could shoot the ace of [D]diamonds
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-With the dice I had no equal
+With the dice [G]I had no equal
 Some of them are with us now
 Most of them are sadly sleeping
 Neath the weeping willow bough
@@ -23,14 +23,14 @@ Neath the weeping willow bough
 {start_of_verse: Verse 3}
 Many a cowboy’s game I’ve played in
 Left that night with all their gold
-As a sport I was broken
-As a sport I let it go
+As a sport [G]I was broken
+As a sport [G]I let it go
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-I once loved a girl named Nellie
+[G]I once loved a girl named Nellie
 How we loved no tongue can tell
-But I know I’ll never meet her
+But [G]I know I’ll never meet her
 Oh it was hard to say farewell
 {end_of_verse}
 
@@ -47,12 +47,3 @@ And our life it was a dream
 And the angels they watched o’er us
 Made our life one happy dream
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [G]I was known as Blackie's [D]gunman
-# The [D7]best of gunman in the [G]land
-# I could shoot the ace of [D]diamonds
-# With a [D7]draw from either [G]hand

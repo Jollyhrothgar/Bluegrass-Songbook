@@ -7,16 +7,16 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-The flowers I saw in the wildwood
+[G]The flowers I saw in [G]the wildwood
 Have since dropped their beautiful leaves
-And the many dear friends of my childhood
-Have slumbered many years in their graves
+And [G]the many dear friends of my childhood
+Have [D]slumbered many [D7]years in their [G]graves
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-But the bloom of the flowers I remember
+But [G]the bloom of [G]the flowers I remember
 Though their smiles I may never more see
-For the cold chilly winds of December
+For [G]the cold chilly winds of December
 Stole my flowers’ companions from me
 {end_of_verse}
 
@@ -29,8 +29,8 @@ My flowers companions and me
 
 {start_of_verse: Verse 3}
 How dark looks this world and how dreary
-When we part from the ones that we love
-There is rest for the faint and the weary
+When we part from [G]the ones that we love
+There is rest for [G]the faint and [G]the weary
 And friends to meet with loved ones above
 {end_of_verse}
 
@@ -40,11 +40,3 @@ When from earth my soul shall be free
 There no cold chilly winds of December
 Shall steal my companions from me
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [G]The flowers I saw
-# Have [D]slumbered many
-# [D7]years in their [G]graves

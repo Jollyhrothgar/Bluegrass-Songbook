@@ -7,46 +7,26 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-There’s a beautiful home far over the sea
-With mansions of bliss for you and for me
-A beautiful home so wondrously fair
-That the savior for me has gone to prepare
+[A]There’s a beautiful [A]home far [D]over the [A]sea
+With mansions of [E]bliss for you and for [A]me
+A beautiful [A]home so [D]wondrously [A]fair
+That the savior for [A]me has gone to [A]prepare
 {end_of_verse}
 
 {start_of_chorus}
-There’s a beautiful home (a beautiful home)
-far over the sea (far over the sea)
-There’s a beautiful home (a beautiful home)
-for you and for me (for you and for me)
+[A]There’s a beautiful [A]home (a beautiful [A]home)
+far [D]over the [A]sea (far [D]over the [A]sea)
+[A]There’s a beautiful [A]home (a beautiful [A]home)
+for you and for [A]me (for you and for [A]me)
 Its glittering powers (its glittering powers)
-of sun out shine (of sun out shine)
-That beautiful home (that beautiful home)
-someday shall be mine  (someday shall be mine)
+of [D]sun out [A]shine (of [D]sun out [A]shine)
+That beautiful [A]home (that beautiful [A]home)
+someday shall be [A]mine (someday shall be [A]mine)
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-In that beautiful home a crown I shall wear
+In that beautiful [A]home a crown I shall wear
 With the glorified throng their stories to share
-But the doors of that home can never be known
+But the doors of that [A]home can never be known
 Til the savior we see upon His white throne
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [A]There's a beautiful home far [D]over
-# the [A]sea
-# With mansions of [E]bliss for you and
-# for [A]me
-# A beautiful home so [D]wondrously
-# [A]fair
-# That the savior for [E]me has gone to
-# [A]prepare
-# There's a beautiful [A]home (a
-# beautiful home) far [D]over the [A]sea (far over the sea)
-# There's a beautiful [E]home (a
-# beautiful home) for you and for [A]me (for you and for me)
-# glittering powers) of [D]sun out [A]shine (of sun out shine)
-# That beautiful [E]home (that
-# beautiful home) someday shall be [A]mine  (someday shall be mine)

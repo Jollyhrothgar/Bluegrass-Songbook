@@ -7,10 +7,10 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-We have met and we have parted
-We have spoke our last goodbye
-You have proved to me false hearted
-You may now forever go
+[D]We have met and [D]we have [G]parted
+[D]We have [D]spoke our last goodbye
+You have [D]proved to me false [G]hearted
+You may [D]now [A]forever [D]go
 {end_of_verse}
 
 {start_of_verse: Verse 2}
@@ -23,8 +23,8 @@ To forget you I cannot say
 {start_of_verse: Verse 3}
 For I love you dear I love you
 More than all this world I know
-You have proved to me false hearted
-You may now forever go
+You have [D]proved to me false [G]hearted
+You may [D]now [A]forever [D]go
 {end_of_verse}
 
 {start_of_verse: Verse 4}
@@ -47,12 +47,3 @@ Cold and white on some far shore
 This poor heart would cease from troubling
 And I’d feel the pain no more
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [D]We have met and we have [G]parted
-# We have [D]spoke our last good[A]bye
-# You have [D]proved to me false [G]hearted
-# You may [D]now [A]forever [D]go

@@ -7,36 +7,27 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-There’ll be joy joy joy up in my father’s house
-Up in my father’s house up in my father’s house
-There’ll be joy joy joy up in my father’s house
-Where there’s peace sweet peace
+[D]There’ll be joy joy joy up [G]in my father’s [D]house
+Up [G]in my father’s [D]house up [G]in my father’s [D]house
+[D]There’ll be joy joy joy up [G]in my father’s [D]house
+Where there’s [D]peace [A]sweet [D]peace
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-We’ll be happy there up in my fathers house
-Up in my father’s house up in my father’s house
-We’ll be happy there up in my fathers house
-Where there’s peace sweet peace
+We’ll be happy there up [G]in my fathers [D]house
+Up [G]in my father’s [D]house up [G]in my father’s [D]house
+We’ll be happy there up [G]in my fathers [D]house
+Where there’s [D]peace [A]sweet [D]peace
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Don’t you want to go up there to my father’s house
+Don’t you want to go up there to my father’s [D]house
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-There’ll be no drunkards there up in my father’s house
+[D]There’ll be no drunkards there up [G]in my father’s [D]house
 {end_of_verse}
 
 {start_of_verse: Verse 5}
-We’ll all be as one up in my father’s house
+We’ll all be as one up [G]in my father’s [D]house
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [D]There'll be joy joy joy up [G]in my father's [D]house
-# Up [A]in my father's house up [D]in my father's house
-# There'll be joy joy joy up [G]in my father's [D]house
-# Where there's peace [A]sweet [D]peace

@@ -7,21 +7,21 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Twas in St Louis city where I first saw the light
-Brought up by honest parents on a pathway of right
-I was left on orphan at the age of ten years
-On mother’s grave I shed many tears
+[G]Twas in St Louis city where I [C]first saw the [G]light
+Brought up by honest parents on a [D]pathway of right
+I was [G]left on orphan at the [C]age of ten [G]years
+On mother’s grave I [D]shed many [G]tears
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-I’d scarcely reached manhood when I left my old home
+I’d scarcely reached manhood when I [G]left my old home
 With some other fellows to the west we did roam
 Seeking employment though scarcely could find
 We seemed so poor and the people unkind
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-Was in New York City where we first met our fate
+Was in New York City where we [C]first met our fate
 We were arrested while roaming the streets
 The charges were burglars the theft it was called
 But they said it would place us behind the stone walls
@@ -31,7 +31,7 @@ But they said it would place us behind the stone walls
 We were marched next morning to the courthouse for trial
 My pal was downhearted so I gave him a smile
 We pleaded for mercy but was shown none at all
-They gave us twenty years behind the stone walls
+They gave us twenty [G]years behind the stone walls
 {end_of_verse}
 
 {start_of_verse: Verse 5}
@@ -54,15 +54,3 @@ When you lose life’s pleasures you’ve lost liberty
 I’ve tasted life’s pleasures it’s bitter than gall
 It’ll lead to a cell behind the stone wall
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [G]Twas in St Louis city where I
-# [C]first saw the [G]light
-# [D]pathway of right
-# I was [G]left an orphan at the [C]age of
-# ten [G]years
-# On mother's grave I [D]shed many
-# [G]tears

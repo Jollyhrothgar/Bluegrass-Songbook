@@ -33,12 +33,3 @@ And when you hear that lonesome sound
 You’ll know by the whistle of that freight train
 Your broken hearted lover’s gone
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [C]Would you let her
-# part us [F]darling
-# Could you [G]truly
-# turn a[C]way

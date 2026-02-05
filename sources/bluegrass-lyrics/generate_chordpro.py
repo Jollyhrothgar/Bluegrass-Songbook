@@ -31,14 +31,50 @@ def save_manifest(manifest: dict):
         json.dump(manifest, f, indent=2)
 
 
+def extract_chord_map(tmuk_lines: list[str]) -> dict[str, str]:
+    """Build a map of word -> chord from TMUK lines."""
+    chord_map = {}
+    pattern = r'(\[[A-G][b#]?(?:m|maj|min|dim|aug|sus|add|7|9|11|13)*\])?(\S+)'
+
+    for line in tmuk_lines:
+        for match in re.finditer(pattern, line):
+            chord = match.group(1)
+            word = match.group(2)
+            if word and chord:
+                clean_word = re.sub(r'[^\w]', '', word.lower())
+                if clean_word and clean_word not in chord_map:
+                    chord_map[clean_word] = chord[1:-1]  # Strip []
+
+    return chord_map
+
+
+def apply_chords_to_line(bl_line: str, chord_map: dict[str, str]) -> str:
+    """Apply chords from map to a BL line based on word matching."""
+    words = bl_line.split()
+    result = []
+
+    for word in words:
+        clean = re.sub(r'[^\w]', '', word.lower())
+        chord = chord_map.get(clean)
+        if chord:
+            result.append(f"[{chord}]{word}")
+        else:
+            result.append(word)
+
+    return ' '.join(result)
+
+
 def generate_structured_chordpro(bl_data: dict, tmuk_chord_lines: list[str]) -> list[str]:
     """
     Generate ChordPro with proper verse/chorus structure from BluegrassLyrics,
-    with TMUK chords as reference.
+    with chords merged from TMUK using word-level alignment.
     """
     lines = []
 
-    # Output BL lyrics with structure markers
+    # Build chord map from all TMUK lines
+    chord_map = extract_chord_map(tmuk_chord_lines)
+
+    # Output BL lyrics with structure markers and merged chords
     verse_num = 0
     for section in bl_data.get("sections", []):
         section_type = section.get("type", "verse")
@@ -47,25 +83,16 @@ def generate_structured_chordpro(bl_data: dict, tmuk_chord_lines: list[str]) -> 
         if section_type == "chorus":
             lines.append("{start_of_chorus}")
             for line in section_lines:
-                lines.append(line)
+                lines.append(apply_chords_to_line(line, chord_map))
             lines.append("{end_of_chorus}")
         else:
             verse_num += 1
             lines.append(f"{{start_of_verse: Verse {verse_num}}}")
             for line in section_lines:
-                lines.append(line)
+                lines.append(apply_chords_to_line(line, chord_map))
             lines.append("{end_of_verse}")
 
         lines.append("")  # Blank line between sections
-
-    # Add TMUK chords as reference section
-    if tmuk_chord_lines:
-        lines.append("")
-        lines.append("# === CHORD REFERENCE (from traditionalmusic.co.uk) ===")
-        lines.append("# These chords need to be merged with the lyrics above")
-        lines.append("")
-        for chord_line in tmuk_chord_lines:
-            lines.append(f"# {chord_line}")
 
     return lines
 

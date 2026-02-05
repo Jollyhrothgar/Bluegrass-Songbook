@@ -7,42 +7,29 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-I am thinking tonight of an old cottage home
-That stands on the brow of the hill
-Where in life’s early morning I once loved to roam
-But now all is quiet and still
+[F#]I am thinking tonight of an [B]old cottage home
+[F#]That [F#]stands on the brow of the [C#]hill
+Where in [F#]life’s early morning [F#]I [B]once loved to roam
+But [F#]now all is [C#]quiet and [F#]still
 {end_of_verse}
 
 {start_of_chorus}
-Oh my old cottage home my old cottage home
-That stands on the brow of the hill
-Where in life’s early morning I once loved to roam
-But now all is quiet and still
+[F#]Oh my [B]old cottage home my [B]old cottage home
+[F#]That [F#]stands on the brow of the [C#]hill
+Where in [F#]life’s early morning [F#]I [B]once loved to roam
+But [F#]now all is [C#]quiet and [F#]still
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-Many years have gone by since in prayer there I knelt
-With dear ones around the old hearth
-But my mother’s sweet prayers in my heart still are felt
+Many years have gone by since in prayer there [F#]I knelt
+With dear ones around the [B]old hearth
+But my mother’s sweet prayers in my heart [F#]still are felt
 I’ll treasure them awhile on earth
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-One by one they have gone from the old cottage home
+One by one they have gone from the [B]old cottage home
 On earth we shall see them no more
-But we’ll meet them again on that beautiful shore
+But we’ll meet them again on [F#]that beautiful shore
 Where partings will come never more
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [F#]I am thinking tonight of an [B]old cottage home
-# That [F#]stands on the brow of the [C#]hill
-# Where in [F#]life's early morning I [B]once loved to  roam
-# But [F#]now all is [C#]quiet and [F#]still
-# [F#]Oh my old cottage home my [B]old cottage home
-# [F#]That stands on the brow of the [C#]hill
-# Where in [F#]life's early morning I [B]once loved to  roam
-# But [F#]now all is [C#]quiet and [F#]still

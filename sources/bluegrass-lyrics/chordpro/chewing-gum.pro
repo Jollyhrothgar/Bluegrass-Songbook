@@ -7,13 +7,13 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Mama sent me to the spring, she told me not to stay
-I fell in love with a pretty little girl, and could not get away
+[D]Mama sent me [A]to the spring, she told me not [A]to [D]stay
+I fell in love with a [A]pretty little girl, and could not get [D]away
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-Chawing chewing gum, chewing chawing gum
-Chawing chewing gum, chewing chawing gum
+Chawing chewing [A]gum, chewing chawing [A]gum
+Chawing chewing [A]gum, chewing chawing [A]gum
 {end_of_verse}
 
 {start_of_verse: Verse 3}
@@ -22,8 +22,8 @@ Next she give me fifty cents, kissed me on the stairs
 {end_of_verse}
 
 {start_of_verse: Verse 4}
-Mommy don’t ‘low me to whistle, poppy don’t ‘low me to sing
-They don’t ‘low me to marry, I’ll marry just the same
+Mommy don’t ‘low me [A]to whistle, poppy don’t ‘low me [A]to sing
+They don’t ‘low me [A]to marry, I’ll marry just the same
 {end_of_verse}
 
 {start_of_verse: Verse 5}
@@ -38,21 +38,10 @@ He rides all over the country and makes the people die
 
 {start_of_verse: Verse 7}
 I wouldn’t have a farmer, I’ll tell you the reason why
-Because he has so plenty to eat, ‘specially pumpkin pie
+Because he has so plenty [A]to eat, ‘specially pumpkin pie
 {end_of_verse}
 
 {start_of_verse: Verse 8}
-I took my girl to church last night How do you reckon she done?
-She walked right up in the preacher’s face and chewed her chewing gum
+I took my girl [A]to church last night How do you reckon she done?
+She walked right up in the [A]preacher’s face and chewed her chewing [A]gum
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [D]Mama sent me [A]to the spring, she told me not to [D]stay,
-# I fell in love with a [A]pretty little girl, and could not get [D]away.
-# Chawin' chewing [A]gum, chewing chawin' [D]gum,
-# Chawin' chewing [A]gum, chewing chawin' [D]gum.
-# She walked right up in the [A]preacher's face,
-# and chewed her chewing [D]gum.

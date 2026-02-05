@@ -7,8 +7,8 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Oh listen to the train coming down the line
-Trying to make up all their lost time
+[G]Oh listen to the train coming down the line
+Trying to make up [C]all their lost time
 From Buffalo to Washington
 You can wash my jumper starch my overalls
 Catch a train they call the Cannonball
@@ -29,14 +29,6 @@ My honey babe my blue eyed babe
 
 {start_of_verse: Verse 4}
 I’m going up north I’m going up north this fall
-If luck don’t change I wont be back at all
+If luck don’t change I wont be back at [C]all
 My honey babe I’m leaving you
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [G]Oh, listen to the train coming down the line,
-# trying to make up [C]all of her lost time,
-# from Buff[G]alo  -D      to Washing[G]ton.

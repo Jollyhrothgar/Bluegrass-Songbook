@@ -7,10 +7,10 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Along came the F15 the swiftest on the line
-Running o’er the C&O road just twenty minutes behind
-Running into Cevile head porters on the line
-Receiving their strict orders from a station just behind
+[A]Along came the F15 the [D]swiftest on the [A]line
+[A]Running o’er the C&O road just [E]twenty minutes [A]behind
+[A]Running into Cevile head [D]porters on the [A]line
+Receiving their strict orders from a [E]station just [A]behind
 {end_of_verse}
 
 {start_of_verse: Verse 2}
@@ -40,12 +40,3 @@ Murdered upon a railroad and laid in a lonesome grave
 His face was covered up with blood his eyes they could not see
 And the very last words poor Georgie said was nearer my God to thee
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [A]Along came the F15, the [D]swiftest on the [A]line,
-# running o’er the C&O road just [E]twenty minutes behind,
-# [A]running into Cevile, head [D]porters on the [A]line,
-# receiving their strict orders from a [E]station just [A]behind.

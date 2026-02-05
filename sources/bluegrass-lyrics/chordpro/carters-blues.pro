@@ -7,12 +7,12 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-As I walked out one morning fair
-To view the fields and taste the air
-For to view the fields and nettles around
-I thought I heard some lonesome sound
-O thought I heard my true love say
-O do turn and come this way
+[D]As I walked out one morning [A]fair
+To view the fields and taste the [D]air
+For to view the fields and nettles [A]around
+I thought I heard some lonesome [D]sound
+O thought I heard my true love [A]say
+O do turn and come this [D]way
 {end_of_verse}
 
 {start_of_verse: Verse 2}
@@ -25,7 +25,7 @@ My love for you will never die
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-There is a flower I’ve heard them say
+There is a flower I’ve heard them [A]say
 That can be seen from day to day
 And if that flower I only could find
 To cure this aching heart of mine
@@ -37,14 +37,3 @@ O meet me in that land above
 And when we meet there in that land
 We’ll take no more this parting hand
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [D]As I walked out one morning [A]fair
-# To view the fields and taste the [D]air
-# For to view the fields and nettles [A]around
-# I thought I heard some lonesome [D]sound
-# O thought I heard my true love [A]say
-# O do turn and come this [D]way

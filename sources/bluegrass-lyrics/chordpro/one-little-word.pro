@@ -7,61 +7,36 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-The dream of love is over
-Today we said goodbye
-We parted not in anger
-Though tears came in her eyes
+The [A]dream of love is over
+[E]Today [D]we [A]said goodbye
+[D]We [D]parted not [D]in [A]anger
+Though [E]tears came [D]in [A]her [E7]eyes
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-Twas just as fate decreed dear
-That we must never wed
-Yet in her heart she loved me
-She married wealth instead
+Twas [A]just as fate decreed dear
+That [D]we must [E7]never [A]wed
+Yet [D]in [A]her heart she [A]loved me
+She [E]married wealth [A]instead
 {end_of_verse}
 
 {start_of_chorus}
-One little word could change my future life
-One little word could have made her my wife
-Too late too late now my fondest hopes are dead
-One little word that word was never said
+[A]One little [E]word could change my [E]future life
+[A]One little [E]word could have made [A]her my wife
+Too late too late now my [D]fondest hopes are [A]dead
+[A]One little [E]word that [E]word was [E7]never [A]said
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
-In school days we had been sweethearts
-She was her father’s pride
-Her folks lived in a mansion
+[D]In school days [D]we had been sweethearts
+She was [A]her father’s pride
+[A]Her folks lived [D]in a mansion
 Our cottage by its side
 {end_of_verse}
 
 {start_of_verse: Verse 4}
 Though years have brought their changes
 The same old love still holds
-She wed to please her parents
+She [A]wed to please [A]her parents
 A man of wealth and gold
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# The [A]dream of love
-# [E]Today we said
-# good[A]bye
-# We [D]parted not in
-# [A]anger
-# Though [E]tears came
-# in her [E7]eyes
-# Twas [A]just as fate
-# That [D]we must never
-# [A]wed
-# Yet [D]in her heart
-# she [A]loved me
-# She [E]married wealth
-# [A]instead
-# [A]One little word
-# could change my [E]future life
-# [E7]One little word
-# could have made [A]her my wife
-# now my [D]fondest hopes are [A]dead
-# that [E]word was [E7]never [A]said

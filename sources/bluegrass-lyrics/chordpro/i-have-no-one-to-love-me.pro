@@ -7,45 +7,36 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-It was on last Sunday evening
-Just about the hour of three
-When my darling started to leave me
-And sail on the deep blue sea
+It was [A]on last Sunday [D]evening
+Just [A]about the hour of [E]three
+When my [A]darling started to [D]leave me
+And [A]sail [A]on the [E]deep blue [A]sea
 {end_of_verse}
 
 {start_of_verse: Verse 2}
 He promised to write me a letter,
 He promised to write to me;
-And I haven’t heard from my darling,
-Who is sailing on the deep blue sea
+And I haven’t heard from my [A]darling,
+Who is sailing [A]on the [E]deep blue [A]sea
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 My mother is dead and buried
 My father’s forsaken me
 And I have no one to love me
-But the sailor on the deep blue sea
+But the sailor [A]on the [E]deep blue [A]sea
 {end_of_verse}
 
 {start_of_verse: Verse 4}
 “Oh, captain, can you tell me,
 Can you tell me where he may be?”
 “Oh yes, my little maiden,
-He’s drownded in the deep blue sea”
+He’s drownded in the [E]deep blue [A]sea”
 {end_of_verse}
 
 {start_of_verse: Verse 5}
 Farewell to friends and relations
 This is the last you’ll see of me,
 I’m going to end my troubles
-By drowning in the deep blue sea
+By drowning in the [E]deep blue [A]sea
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# It was [A]on last Sunday [D]evening
-# Just [A]about the hour of [E]three
-# When my [A]darling started to [D]leave me
-# And [A]sail on the [E]deep blue [A]sea

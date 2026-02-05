@@ -7,9 +7,9 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-I once had a dark haired true lover
+I [F]once had a dark haired true lover
 She was all this world to me
-She promised herself to another
+She promised herself to [F]another
 Now don’t you think this was mean
 {end_of_verse}
 
@@ -37,7 +37,7 @@ Although you went back on your word
 {start_of_verse: Verse 4}
 We parted in the month of September
 Some said we parted for life
-But I hope someday or another
+But I hope someday or [F]another
 I’ll call you my sweet darling wife
 {end_of_verse}
 
@@ -47,16 +47,3 @@ Someone to call me their own
 For I’m out in this wide world a wandering
 I’m tired of living alone
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# I [F]once had a dark haired true lover
-# She was [C] all this world to [F] me
-# She [B] promised herself to [F]another
-# Now [C] don't you think this was [F] mean
-# Take [F] back every word you have spoken
-# Let it [C] be as though we never [F] met
-# For [B] tonight I'm a poor boy heart-[F]-broken
-# I'll for-[C]-give but I'll never for-[F]-get

@@ -7,17 +7,17 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Far away in some deep mountain
-Where the merry sunbeams play
-There I wandered thru the clover
-Singing to a village maid
+[D]Far away in some deep mountain
+[D]Where the merry sunbeams [A]play
+[D]There I wandered thru the [G]clover
+[A]Singing to a village [D]maid
 {end_of_verse}
 
 {start_of_chorus}
-She was dearer than the dearest
-Ever loving kind and true
-And she wore beneath her bonnet
-Amber tresses tied in blue
+[A]She was dearer than the [D]dearest
+Ever loving kind [D]and [A]true
+[D]And [A]she wore beneath her [G]bonnet
+[A]Amber tresses tied in [D]blue
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
@@ -28,17 +28,8 @@ That had loved each other well
 {end_of_verse}
 
 {start_of_verse: Verse 3}
-She was all I had to cherish
-Every loving king and true
+[A]She was all I had to cherish
+Every loving king [D]and [A]true
 Now I see in every vision
-Amber tresses tied in blue
+[A]Amber tresses tied in [D]blue
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [D]Far away in sunny [G]mountains, [D]where the merry sunbeams [A]play,
-# [D]there I wandered thru the [G]clover, [A]singing to a village [D]maid.
-# [A]She was dearer than the [D]dearest, ever loving kind and [A]true,
-# [D]and she wore beneath her [G]bonnet [A]amber tresses tied in [D]blue.

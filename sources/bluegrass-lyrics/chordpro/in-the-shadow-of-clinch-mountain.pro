@@ -7,14 +7,14 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-I grew up on the side of Clinch Mountain
-With the beauties and the music of the woods
-The sweet song of the bright bubbling fountain
-and the warble of the birds I understood
+I [D]grew up on the side of Clinch Mountain
+With the [G]beauties and the music of the [D]woods
+The sweet [G]song of the bright bubbling [D]fountain
+and the [A]warble of the [A7]birds I understood
 {end_of_verse}
 
 {start_of_chorus}
-When I’ve sung my last song in the evening
+When I’ve sung my last [G]song in the evening
 And the sun sets in the golden west
 All the scenes of this world I’ll be leaving
 In the shadow of Clinch Mountain I will rest
@@ -24,13 +24,13 @@ In the shadow of Clinch Mountain I will rest
 Long ago said the oak and the cedar
 Singing deeply in a whisper of the past
 Stood not then this great towering leader
-nor the fountain where the crystal gems are kept (passed?)
+nor the [D]fountain where the crystal gems are kept (passed?)
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 Then I asked how this green lofty mountain
 in the caldron the lonely desert stood
-Said this song of the bright sunny fountain
+Said this [G]song of the bright sunny [D]fountain
 We were given by the waters of the flood
 {end_of_verse}
 
@@ -38,14 +38,5 @@ We were given by the waters of the flood
 Out that gate I have passed since my childhood
 O’er the railway through the tunnel to the west
 singing songs of the Clinch Mountain wildwoods
-Song that people found and birds loved the best
+[G]Song that people found and [A7]birds loved the best
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# I [D]grew up on the side of Clinch Mountain
-# With the [G]beauties and the music of the [D]woods
-# The sweet [G]song of the bright bubbling [D]fountain
-# and the [A]warble of the [A7]birds I under[D]stood.

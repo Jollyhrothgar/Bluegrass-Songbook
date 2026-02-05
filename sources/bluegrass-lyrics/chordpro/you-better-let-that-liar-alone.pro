@@ -7,21 +7,21 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-Just let me tell you how a liar will do
-He’s always coming with something new
-He’ll steal your heart with false pretence
-Making out like he’s your bosom friend
-If you don’t want to get in trouble
-If you don’t want to get in trouble
-If you don’t want to get in trouble
-Better let that liar alone
+Just [D]let me tell you how a [A]liar will do
+He’s always coming with [A]something new
+He’ll [D]steal your heart with false pretence
+Making out like he’s your [A]bosom [D]friend
+[D]If you don’t want to [D]get in trouble
+[D]If you don’t want to [D]get in trouble
+[D]If you don’t want to [D]get in trouble
+Better [D]let that [A]liar [D]alone
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-When a liar takes the notion to bend the truth
-He’ll lay around his neighbors and get the news
+When a [A]liar takes the notion to bend the truth
+He’ll lay around his neighbors and [D]get the news
 And nearly every day when you look out
-You can see that liar coming to your house
+You can see that [A]liar coming to your house
 {end_of_verse}
 
 {start_of_verse: Verse 3}
@@ -35,26 +35,12 @@ Then that liar’s going to cause a fight
 He studies up a lie he’ll tell it so smooth
 You’ll think absolutely that it must be true
 And he’ll urge you out for to trace the tale
-And if you don’t mind you’ll be put in jail
+And [D]if you don’t mind you’ll be put in jail
 {end_of_verse}
 
 {start_of_verse: Verse 5}
 When everything’s in perfect peace
-Then comes that liar with his deceit
-A hypocrite liar both keeps up a fuss
+Then comes that [A]liar with his deceit
+A hypocrite [A]liar both keeps up a fuss
 They’re both very bad but a liar’s the worse
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# Just [D]let me tell you how a liar
-# He's always coming with [A]something
-# He'll [D]steal your heart with false
-# Making out like he's your [A]bosom
-# [D]friend
-# [D]If you dont want to get in
-# [A]If you dont want to [D]get in
-# [D]If you dont want to get in
-# Better [D]let that [A]liar [D]alone

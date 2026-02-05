@@ -7,13 +7,13 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-In the distant state of Texas
-By the silver Rio Grande
+In the [G]distant state of Texas
+By the [C]silver Rio [G]Grande
 Strolled a couple out one evening
-Was two sweethearts hand in hand
-Was a rich man’s pretty daughter
-And the lad she loved so dear
-Though tomorrow they must part for many a year
+Was two [D]sweethearts hand in hand
+Was a [G]rich man’s pretty daughter
+And the [C]lad she loved so [G]dear
+Though tomorrow they must [D]part for many a [G]year
 {end_of_verse}
 
 {start_of_chorus}
@@ -24,7 +24,7 @@ And that’s where I long to be
 Dad says the earl I’ll marry
 But although here is my hand
 My heart’s tonight in Texas
-By the silver Rio Grande
+By the [C]silver Rio [G]Grande
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
@@ -44,18 +44,5 @@ The scenes were all splendid
 And the light were dizzyingly bright
 The earl knelt beside her
 Asking her to be his bride
-But her thoughts were by the silver Rio Grande
+But her thoughts were by the [C]silver Rio [G]Grande
 {end_of_verse}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# In the [G]distant
-# By the [C]silver Rio
-# [G]Grande
-# Was two [D]sweethearts
-# Was a [G]rich man's
-# And the [C]lad she
-# loved so [G]dear
-# they must [D]part for many a [G]year

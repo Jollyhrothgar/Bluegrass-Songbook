@@ -7,77 +7,64 @@
 {meta: x_generated 2026-02-04}
 
 {start_of_verse: Verse 1}
-I cant forget how queer I felt
-When first I fell in love
-I had a most sincere tactor
-Squeezing a lady’s glove
+[D]I cant forget how queer [D]I felt
+When first [D]I fell in love
+[D]I had a most sincere tactor
+Squeezing a [A]lady’s [D]glove
 {end_of_verse}
 
 {start_of_verse: Verse 2}
 Her lovely hand was in it
-As I waltzed around so gay
-I thought myself in paradise
-It’s funny when you feel that way
+As [D]I waltzed around so gay
+[D]I thought myself in paradise
+[D]It’s [A]funny when you feel that [D]way
 {end_of_verse}
 
 {start_of_chorus}
-It’s funny when you feel that way
-It’s funny when you feel that way
-I thought myself in paradise
-It’s funny when you feel that way
+[D]It’s [A]funny when you feel that [D]way
+[D]It’s [A]funny when you feel that [D]way
+[D]I thought myself in paradise
+[D]It’s [A]funny when you feel that [D]way
 {end_of_chorus}
 
 {start_of_verse: Verse 3}
 Again we met one afternoon
 As we were all alone
-I pumped up nerve to ask if she
+[D]I pumped up nerve to ask if she
 Would one day be my own
 {end_of_verse}
 
 {start_of_verse: Verse 4}
 She blushed and said go ask poppa
-And ask him if I may
-I danced a cantor around the room
-It’s funny when you feel that way
+And ask him if [D]I may
+[D]I danced a cantor around the room
+[D]It’s [A]funny when you feel that [D]way
 {end_of_verse}
 
 {start_of_chorus}
-It’s funny when you feel that way
-It’s funny when you feel that way
-I danced a cantor around the room
-It’s funny when you feel that way
+[D]It’s [A]funny when you feel that [D]way
+[D]It’s [A]funny when you feel that [D]way
+[D]I danced a cantor around the room
+[D]It’s [A]funny when you feel that [D]way
 {end_of_chorus}
 
 {start_of_verse: Verse 5}
 The old boy said that we might we
 And so he crowned my bliss
-I shall be a double man
+[D]I shall be a double man
 In about a month from this
 {end_of_verse}
 
 {start_of_verse: Verse 6}
 Though it seemed to me somehow the time
 Will never pass away
-For I long to hear the wedding bells
-It’s funny when you feel that way
+For [D]I long to hear the wedding bells
+[D]It’s [A]funny when you feel that [D]way
 {end_of_verse}
 
 {start_of_chorus}
-It’s funny when you feel that way
-It’s funny when you feel that way
-I long to hear the wedding bells
-It’s funny when you feel that way
+[D]It’s [A]funny when you feel that [D]way
+[D]It’s [A]funny when you feel that [D]way
+[D]I long to hear the wedding bells
+[D]It’s [A]funny when you feel that [D]way
 {end_of_chorus}
-
-
-# === CHORD REFERENCE (from traditionalmusic.co.uk) ===
-# These chords need to be merged with the lyrics above
-
-# [D]I cant forget how queer I felt
-# Squeezing a [A]lady's [D]glove
-# It's [A]funny when you feel that [D]way
-# [D]It's funny when you feel that
-# It's [G]funny when you feel that
-# [D]way
-# It's [A]funny when you feel that
-# [D]way
