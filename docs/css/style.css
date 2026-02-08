@@ -3906,6 +3906,274 @@ mark {
 }
 
 /* ============================================
+   AUTH MODAL STYLES
+   ============================================ */
+
+.auth-modal-content {
+    max-width: 400px;
+}
+
+.auth-google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: white;
+    color: #3c4043;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.auth-google-btn:hover {
+    background: #f8f9fa;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .auth-google-btn {
+    background: #2d2d2d;
+    color: #e8eaed;
+    border-color: #5f6368;
+}
+
+[data-theme="dark"] .auth-google-btn:hover {
+    background: #3c3c3c;
+}
+
+.auth-google-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.25rem 0;
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+
+.auth-email-toggle {
+    display: block;
+    width: 100%;
+    padding: 0;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 0.875rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.auth-email-toggle:hover {
+    text-decoration: underline;
+}
+
+.auth-email-toggle.hidden {
+    display: none;
+}
+
+.auth-email-form {
+    margin-top: 1rem;
+}
+
+.auth-email-form.hidden {
+    display: none;
+}
+
+.auth-field {
+    margin-bottom: 0.75rem;
+}
+
+.auth-field label {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+}
+
+.auth-field input {
+    width: 100%;
+    padding: 0.625rem 0.75rem;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.9375rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.auth-field input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.auth-error {
+    padding: 0.625rem 0.75rem;
+    background: rgba(220, 38, 38, 0.1);
+    color: var(--danger);
+    border-radius: 6px;
+    font-size: 0.8125rem;
+    margin-bottom: 0.75rem;
+}
+
+.auth-error.hidden {
+    display: none;
+}
+
+.auth-success {
+    padding: 0.625rem 0.75rem;
+    background: rgba(22, 163, 74, 0.1);
+    color: var(--success);
+    border-radius: 6px;
+    font-size: 0.8125rem;
+    margin-bottom: 0.75rem;
+}
+
+.auth-success.hidden {
+    display: none;
+}
+
+.auth-submit-btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 0.5rem;
+}
+
+.auth-submit-btn:hover {
+    background: var(--accent-hover);
+}
+
+.auth-submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.auth-link-btn {
+    display: inline;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 0.8125rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.auth-link-btn:hover {
+    text-decoration: underline;
+}
+
+.auth-toggle-row {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+}
+
+.auth-toggle-row .auth-link-btn {
+    margin-left: 0.25rem;
+    font-weight: 500;
+}
+
+.reset-step p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Initials avatar (for email users without Google avatar) */
+.user-avatar-initials {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid var(--border);
+    flex-shrink: 0;
+}
+
+.user-avatar-initials.hidden {
+    display: none;
+}
+
+.account-avatar-initials {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.account-avatar-initials.hidden {
+    display: none;
+}
+
+/* Toast notification */
+.auth-toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(1rem);
+    background: var(--success);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+}
+
+.auth-toast.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* ============================================
    LIST PICKER STYLES
    ============================================ */
 

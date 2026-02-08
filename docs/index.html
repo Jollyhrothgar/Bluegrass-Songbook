@@ -87,12 +87,13 @@
                 <div class="header-spacer"></div>
                 <!-- Auth section -->
                 <div id="auth-section" class="auth-section">
-                    <button id="sign-in-btn" class="auth-btn" title="Sign in with Google">
+                    <button id="sign-in-btn" class="auth-btn" title="Sign in">
                         <span class="auth-icon">&#128100;</span>
                         <span class="auth-text">Sign in</span>
                     </button>
                     <div id="user-info" class="user-info hidden">
                         <img id="user-avatar" class="user-avatar" alt="User" referrerpolicy="no-referrer">
+                        <div id="user-avatar-initials" class="user-avatar-initials hidden"></div>
                         <span id="user-name" class="user-name"></span>
                     </div>
                 </div>
@@ -604,6 +605,7 @@ This is the [G]chorus [D]part
                 <div class="modal-body">
                     <div id="account-user-info" class="account-user-info">
                         <img id="account-avatar" class="account-avatar" alt="" referrerpolicy="no-referrer">
+                        <div id="account-avatar-initials" class="account-avatar-initials hidden"></div>
                         <div class="account-details">
                             <div id="account-name" class="account-name"></div>
                             <div id="account-email" class="account-email"></div>
@@ -617,6 +619,85 @@ This is the [G]chorus [D]part
                 <div class="modal-footer">
                     <button id="force-sync-btn" class="action-btn">Sync Now</button>
                     <button id="account-sign-out-btn" class="action-btn danger">Sign Out</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Auth Modal (Sign In / Sign Up) -->
+        <div id="auth-modal" class="modal hidden">
+            <div class="modal-content auth-modal-content">
+                <div class="modal-header">
+                    <h2 id="auth-modal-title">Sign In</h2>
+                    <button id="auth-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <button id="auth-google-btn" class="auth-google-btn">
+                        <img src="images/google-icon.svg" alt="" class="auth-google-icon">
+                        Sign in with Google
+                    </button>
+                    <div class="auth-divider">
+                        <span>or</span>
+                    </div>
+                    <button id="auth-email-toggle" class="auth-email-toggle">Sign in with email</button>
+                    <div id="auth-email-form" class="auth-email-form hidden">
+                        <div class="auth-field">
+                            <label for="auth-email">Email</label>
+                            <input type="email" id="auth-email" autocomplete="email" placeholder="you@example.com">
+                        </div>
+                        <div class="auth-field">
+                            <label for="auth-password">Password</label>
+                            <input type="password" id="auth-password" autocomplete="current-password" placeholder="Min 8 characters">
+                        </div>
+                        <div id="auth-error" class="auth-error hidden"></div>
+                        <div id="auth-success" class="auth-success hidden"></div>
+                        <button id="auth-submit-btn" class="auth-submit-btn">Sign In</button>
+                        <button id="auth-forgot-btn" class="auth-link-btn">Forgot password?</button>
+                    </div>
+                    <div class="auth-toggle-row">
+                        <span id="auth-toggle-text">Don't have an account?</span>
+                        <button id="auth-toggle-btn" class="auth-link-btn">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Password Reset Modal -->
+        <div id="reset-modal" class="modal hidden">
+            <div class="modal-content auth-modal-content">
+                <div class="modal-header">
+                    <h2 id="reset-modal-title">Reset Password</h2>
+                    <button id="reset-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- Step 1: Enter email -->
+                    <div id="reset-step-email" class="reset-step">
+                        <p>Enter your email and we'll send you a link to reset your password.</p>
+                        <div class="auth-field">
+                            <label for="reset-email">Email</label>
+                            <input type="email" id="reset-email" autocomplete="email" placeholder="you@example.com">
+                        </div>
+                        <div id="reset-error" class="auth-error hidden"></div>
+                        <button id="reset-send-btn" class="auth-submit-btn">Send Reset Link</button>
+                    </div>
+                    <!-- Step 2: Check email confirmation -->
+                    <div id="reset-step-sent" class="reset-step hidden">
+                        <p>Check your email for a password reset link. It may take a minute to arrive.</p>
+                        <button id="reset-back-btn" class="auth-link-btn">Back to sign in</button>
+                    </div>
+                    <!-- Step 3: Enter new password (shown after clicking reset link) -->
+                    <div id="reset-step-new" class="reset-step hidden">
+                        <p>Enter your new password below.</p>
+                        <div class="auth-field">
+                            <label for="reset-new-password">New password</label>
+                            <input type="password" id="reset-new-password" autocomplete="new-password" placeholder="Min 8 characters">
+                        </div>
+                        <div class="auth-field">
+                            <label for="reset-confirm-password">Confirm password</label>
+                            <input type="password" id="reset-confirm-password" autocomplete="new-password" placeholder="Re-enter password">
+                        </div>
+                        <div id="reset-new-error" class="auth-error hidden"></div>
+                        <button id="reset-update-btn" class="auth-submit-btn">Update Password</button>
+                    </div>
                 </div>
             </div>
         </div>
