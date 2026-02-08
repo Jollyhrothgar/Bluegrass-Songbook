@@ -2,115 +2,143 @@
 
 Lyrics for traditional bluegrass and early country songs from [BluegrassLyrics.com](https://www.bluegrasslyrics.com/).
 
-## Status: SCRAPED - CHORD ENRICHMENT IN PROGRESS
+## Status: COMPLETE (Feb 2026)
 
 **Permission**: Granted by site owner (Feb 2026)
+
+764 songs imported to works/ - 494 with chords (from Ultimate Guitar), 270 lyrics-only.
 
 ## Quick Reference
 
 ```bash
-# View a generated ChordPro file
-cat sources/bluegrass-lyrics/chordpro/<slug>.pro
+# Check a generated work
+cat works/<slug>/work.yaml
+cat works/<slug>/lead-sheet.pro
 
-# Check manifest for status
-cat sources/bluegrass-lyrics/manifest.json | jq '.songs["<slug>"]'
-
-# Regenerate ChordPro from TMUK matches
-uv run python sources/bluegrass-lyrics/generate_chordpro.py
+# View original parsed data
+cat sources/bluegrass-lyrics/parsed/<slug>.json
 ```
 
-## Current State
+## Import Summary (Feb 8, 2026)
 
-| Metric | Count |
-|--------|-------|
+| Category | Count |
+|----------|-------|
 | Total songs scraped | 1,818 |
-| Already in our collection | 823 |
-| **New songs to add** | **995** |
+| Already in collection | 823 |
+| New songs available | 995 |
+| Imported with chords | 494 |
+| Imported lyrics-only | 270 |
+| Skipped (duplicates/low quality) | 231 |
 
-### Chord Enrichment Progress
-
-| Source | Songs | Status | Location |
-|--------|-------|--------|----------|
-| TMUK Carter Family (text) | 65 | **ChordPro generated** | `chordpro/*.pro` |
-| TMUK other (image/PDF) | 172 | Needs OCR | - |
-| No external match | 659 | Needs LLM or other sources | - |
-| Fuzzy matches | 99 | Needs verification | - |
-
-### File Structure
+## Pipeline
 
 ```
-bluegrass-lyrics/
-├── raw/                # Cached HTML (gitignored)
-├── parsed/             # Structured JSON per song (intermediate)
-├── chordpro/           # Generated ChordPro files (reviewable)
-│   └── *.pro           # 65 files from TMUK match
-├── manifest.json       # Status tracking per song
-├── src/
-│   ├── scraper.py      # Fetch index + pages
-│   ├── parser.py       # HTML to structured JSON
-│   └── matcher.py      # Deduplication against works/
-├── generate_chordpro.py  # Generate .pro from sources
-├── song_index.json     # All 1,819 URLs
-├── classification_report.json  # 995 new songs
-└── CLAUDE.md           # This file
-```
-
-## Workflow
-
-### Review ChordPro
-```bash
-# List ready files
-cat manifest.json | jq '[.songs | to_entries[] | select(.value.status=="ready")] | length'
-
-# View a file
-cat chordpro/sinking-in-the-lonesome-sea.pro
-
-# Mark as approved (edit manifest.json, change status to "approved")
-```
-
-### Merge to Works
-```bash
-# TODO: Create merge script
-uv run python sources/bluegrass-lyrics/merge_to_works.py
+BluegrassLyrics.com
+        │
+        ▼ src/scraper.py
+   raw/*.html (gitignored)
+        │
+        ▼ src/parser.py
+   parsed/*.json (structured lyrics)
+        │
+        ├─────────────────────────────────┐
+        ▼                                 ▼
+Ultimate Guitar enrichment          Direct import
+(see sources/ultimate-guitar/)      (lyrics-only)
+        │                                 │
+        ▼                                 ▼
+   works/*/                          works/*/
+   (with chords)                     (without chords)
 ```
 
 ## Chord Enrichment Strategy
 
-### Currently Working
-1. **TMUK Carter Family** - 65 songs with text chords ✓
+### What Worked (Feb 2026)
 
-### Next Up
-2. **Discover more sources** - Search for specific song titles
-3. **OCR for image chords** - TMUK has 172 more in image/PDF format
-4. **LLM inference** - For remaining 659 with no external match
+1. **Ultimate Guitar Mobile API** - Scraped ~765 matching songs
+   - Fuzzy matched lyrics to place chords correctly
+   - 70%+ coverage threshold for "good" matches
+   - See `sources/ultimate-guitar/CLAUDE.md` for details
 
-### OCR Options to Research
-- Tesseract (free, open source)
-- Claude Vision (could parse chord sheet images)
-- Google Cloud Vision (high quality, has cost)
-- Music-specific OCR (may exist for chord/tab recognition)
+### What Was Tried But Not Scaled
 
-### LLM Inference Approach
-- Key doesn't matter (transposition is easy)
-- Chord progression is the value (I-IV-V patterns)
-- Test: Generated correct progression, wrong key
-- Need batch testing before scale
+1. **TMUK Carter Family** - 65 songs with text chords
+   - Good quality but limited coverage
+   - Still in `chordpro/` directory
 
-## Known Limitations
+2. **Embedding-based matching** - Tested but fuzzy matching sufficient
+   - Code in `sources/ultimate-guitar/embedding_match.py`
 
-1. **Current ChordPro uses TMUK lyrics** - Not BL lyrics merged with TMUK chords
-   - Harder merge problem (lyrics don't match exactly)
-   - TMUK chords are authoritative, BL lyrics are often better
+### Future Options (Not Implemented)
 
-2. **No artist metadata** - BluegrassLyrics doesn't provide artist info
-   - Could enrich from MusicBrainz or manual entry
+- **OCR for image chords** - TMUK has 172 more in image/PDF format
+- **LLM chord inference** - Generate chords from lyrics + genre
+- **Community contributions** - Users can add chords via edit interface
+
+## File Structure
+
+```
+bluegrass-lyrics/
+├── raw/                    # Cached HTML (gitignored)
+├── parsed/                 # Structured JSON per song
+│   └── *.json              # 1,818 files
+├── chordpro/               # TMUK-generated ChordPro (65 files, legacy)
+├── manifest.json           # Status tracking per song
+├── src/
+│   ├── scraper.py          # Fetch index + pages
+│   ├── parser.py           # HTML to structured JSON
+│   └── matcher.py          # Deduplication against works/
+├── generate_chordpro.py    # Generate .pro from TMUK matches
+├── song_index.json         # All 1,818 URLs
+├── classification_report.json  # New vs existing breakdown
+└── CLAUDE.md               # This file
+```
+
+## Parsed JSON Format
+
+```json
+{
+  "slug": "cabin-home-on-the-hill",
+  "title": "Cabin Home On The Hill",
+  "url": "https://www.bluegrasslyrics.com/song/cabin-home-on-the-hill/",
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        "Tonight I'm alone without you my dear",
+        "It seems there's a longing for you still"
+      ]
+    }
+  ]
+}
+```
 
 ## Attribution
 
-Every generated file includes:
+All imported songs include source attribution:
+
 ```chordpro
 {meta: x_lyrics_source bluegrass-lyrics}
 {meta: x_lyrics_url https://www.bluegrasslyrics.com/song/...}
-{meta: x_chords_source traditional-music-uk}
-{meta: x_chords_url http://www.traditionalmusic.co.uk/...}
 ```
+
+If enriched with UG chords, also includes:
+```chordpro
+{meta: x_chords_source ultimate-guitar}
+{meta: x_chords_url https://tabs.ultimate-guitar.com/tab/...}
+```
+
+**Frontend display:** Shows "BluegrassLyrics.com" with link to original page.
+
+## Known Limitations
+
+1. **No artist metadata** - BluegrassLyrics doesn't provide artist info
+2. **Section detection imperfect** - Some songs have unusual formatting
+3. **Lyrics-only songs** - 270 songs imported without chords (users can add via edit)
+
+## Related Documentation
+
+- `sources/ultimate-guitar/CLAUDE.md` - Chord enrichment pipeline
+- `docs/js/CLAUDE.md` - Frontend rendering and source attribution
+- `scripts/lib/CLAUDE.md` - Index building and tagging

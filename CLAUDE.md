@@ -77,7 +77,7 @@ git worktree remove ../feature-xyz
 
 ```
 Bluegrass-Songbook/
-├── works/                   # PRIMARY: Song collection (17,500+ works)
+├── works/                   # PRIMARY: Song collection (18,300+ works)
 │   └── {work-slug}/         # e.g., "blue-moon-of-kentucky"
 │       ├── work.yaml        # Metadata: title, artist, tags, parts
 │       └── lead-sheet.pro   # ChordPro lead sheet
@@ -106,7 +106,8 @@ Bluegrass-Songbook/
 │   ├── manual/              # Hand-created songs
 │   ├── tunearch/            # ABC fiddle tunes
 │   ├── banjo-hangout/       # Banjo tabs from Banjo Hangout (TEF→OTF)
-│   ├── bluegrass-lyrics/    # Additional lyrics source
+│   ├── bluegrass-lyrics/    # 764 songs from BluegrassLyrics.com (Feb 2026)
+│   ├── ultimate-guitar/     # Chord enrichment via UG Mobile API
 │   └── tef-uploads/         # User-uploaded TEF files for conversion
 │
 ├── scripts/                 # CLI tools
@@ -297,7 +298,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 
 ## Current State
 
-- **17,500+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
+- **18,300+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
 - **Works system**: Each song is a "work" with multiple parts (lead sheet, tablature, ABC notation)
 - **Tablature**: Banjo Hangout tabs with TEF→OTF parsing, playback, track mixer for multi-instrument arrangements
 - **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - primary source is LLM tagging, with MusicBrainz and grassiness scoring as fallbacks
@@ -322,8 +323,10 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 
 **What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
 
-**In Progress (Feb 2026):**
-- **Strum Machine missing songs**: Scraped SM's song index (~833 songs we don't have). Investigating automated fetching from web chord sources (Ultimate Guitar, Chordie, etc.). Challenge: each source formats data differently, so parsing needs to be source-specific. See `docs/data/sm_missing_vocals.json` for the gap list and `scripts/lib/fetch_chords.py` for the fetching prototype. Next step: create separate parser modules per source in `sources/web-chords/`.
+**Recent (Feb 2026):**
+- **BluegrassLyrics.com import**: 764 songs imported (494 with chords from UG enrichment, 270 lyrics-only). See `sources/bluegrass-lyrics/CLAUDE.md` and `sources/ultimate-guitar/CLAUDE.md`.
+- **Strum Machine matching**: 764 total songs now matched (+147 from BL import)
+- **LLM tagging**: All new songs tagged with genre tags via Anthropic batch API
 
 ## File Navigation
 
@@ -338,6 +341,8 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | Debug TEF/tablature parsing | `.claude/skills/tab-debug/SKILL.md` |
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
 | Understand grassiness scoring | `scripts/lib/tagging/CLAUDE.md` |
+| BluegrassLyrics.com import | `sources/bluegrass-lyrics/CLAUDE.md` |
+| Ultimate Guitar chord scraper | `sources/ultimate-guitar/CLAUDE.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
