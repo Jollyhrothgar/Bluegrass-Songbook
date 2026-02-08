@@ -5409,6 +5409,100 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     vertical-align: middle;
 }
 
+/* Placeholder badge — search results and song view */
+.placeholder-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--text-secondary);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
+/* Placeholder work view elements (used in work-view.js) */
+.placeholder-empty {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    padding: 2rem 0;
+}
+
+.placeholder-cta {
+    margin-top: 2rem;
+    padding: 1.25rem;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.placeholder-cta-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.placeholder-contribute-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.placeholder-contribute-btn:hover {
+    background: var(--accent-hover);
+}
+
+/* Document viewer (PDF inline) */
+.document-viewer {
+    margin: 0.75rem 0;
+}
+.document-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.document-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+.document-download-btn {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.document-download-btn:hover {
+    text-decoration: underline;
+}
+.pdf-embed {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-secondary);
+}
+
+/* Document badge in search results */
+.doc-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--text-secondary);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
 /* Version picker modal */
 .version-picker {
     max-width: 450px;

@@ -1,0 +1,22 @@
+id: ive-just-seen-a-face
+title: I've Just Seen a Face
+artist: The Beatles
+composers:
+- John Lennon
+- Paul McCartney
+default_key: A
+tags:
+- Folk
+- JamFriendly
+status: placeholder
+notes: >
+  Popular Beatles tune arranged for bluegrass banjo.
+  Often played at jams in the key of A or G.
+parts:
+  - type: document
+    format: pdf
+    file: tab-reference.pdf
+    label: Banjo Intro Tab
+    provenance:
+      source: user-submission
+      submitted_by: mike

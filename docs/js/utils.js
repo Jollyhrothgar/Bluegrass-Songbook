@@ -106,3 +106,10 @@ export function generateLocalId() {
 export function isTabOnlyWork(song) {
     return song?.tablature_parts?.length > 0 && !song.content;
 }
+
+/**
+ * Check if a song is a placeholder (no content yet)
+ */
+export function isPlaceholder(song) {
+    return song?.status === 'placeholder';
+}

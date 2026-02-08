@@ -60,6 +60,8 @@ class Work:
     time_signature: Optional[str] = None
     tags: list[str] = field(default_factory=list)
     exclude_tags: list[str] = field(default_factory=list)  # Prevent auto-generated tags
+    status: str = 'complete'  # 'complete' | 'placeholder'
+    notes: Optional[str] = None  # Community-visible notes about the work
     external: Optional[ExternalLinks] = None
     parts: list[Part] = field(default_factory=list)
 
@@ -85,6 +87,12 @@ class Work:
             data['time_signature'] = self.time_signature
         if self.tags:
             data['tags'] = self.tags
+        if self.exclude_tags:
+            data['exclude_tags'] = self.exclude_tags
+        if self.status and self.status != 'complete':
+            data['status'] = self.status
+        if self.notes:
+            data['notes'] = self.notes
 
         if self.external:
             ext = {}
@@ -180,6 +188,9 @@ class Work:
             default_tempo=data.get('default_tempo'),
             time_signature=data.get('time_signature'),
             tags=data.get('tags', []),
+            exclude_tags=data.get('exclude_tags', []),
+            status=data.get('status', 'complete'),
+            notes=data.get('notes'),
             external=external,
             parts=parts,
         )

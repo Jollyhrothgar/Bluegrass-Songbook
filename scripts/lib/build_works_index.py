@@ -188,13 +188,19 @@ def build_song_from_work(work_dir: Path) -> dict:
     # Check what parts we have
     has_lead_sheet = lead_sheet_path.exists()
     tablature_parts = []
+    document_parts = []
     if work.get('parts'):
         for part in work['parts']:
             if part.get('type') == 'tablature':
                 tablature_parts.append(part)
+            elif part.get('type') == 'document':
+                document_parts.append(part)
 
-    # Must have at least a lead sheet or tablature
-    if not has_lead_sheet and not tablature_parts:
+    # Check if this is a placeholder work
+    is_placeholder = work.get('status') == 'placeholder'
+
+    # Must have at least a lead sheet, tablature, document, or be a placeholder
+    if not has_lead_sheet and not tablature_parts and not document_parts and not is_placeholder:
         return None
 
     # Initialize defaults
@@ -234,6 +240,10 @@ def build_song_from_work(work_dir: Path) -> dict:
                 prov = part.get('provenance', {})
                 source = prov.get('source', 'unknown')
 
+    # For placeholder works with no other source, use 'placeholder'
+    if is_placeholder and source == 'unknown':
+        source = 'placeholder'
+
     # Convert to Nashville
     nashville_set = set()
     progression = []
@@ -268,6 +278,10 @@ def build_song_from_work(work_dir: Path) -> dict:
         song['exclude_tags'] = work['exclude_tags']
     if work.get('external', {}).get('strum_machine'):
         song['strum_machine_url'] = work['external']['strum_machine']
+    if is_placeholder:
+        song['status'] = 'placeholder'
+    if work.get('notes'):
+        song['notes'] = work['notes']
 
     # Compute group_id
     song['group_id'] = compute_group_id(
@@ -308,6 +322,25 @@ def build_song_from_work(work_dir: Path) -> dict:
                 if prov.get('author'):
                     tab_info['author_url'] = f"https://www.banjohangout.org/my/{quote(prov.get('author'))}"
             song['tablature_parts'].append(tab_info)
+
+    # Add document parts info for frontend
+    if document_parts:
+        song['document_parts'] = []
+        for part in document_parts:
+            prov = part.get('provenance', {})
+            # Use the original filename from work.yaml for the source path
+            source_file = part.get('file', 'document.pdf')
+            # Build destination filename from work id and label
+            label_slug = re.sub(r'[^a-z0-9]+', '-', (part.get('label', 'doc')).lower()).strip('-')
+            doc_info = {
+                'format': part.get('format', 'pdf'),
+                'label': part.get('label', 'Document'),
+                'file': f"data/docs/{work['id']}-{label_slug}.pdf",
+                'source_file': source_file,
+            }
+            if prov.get('submitted_by'):
+                doc_info['submitted_by'] = prov['submitted_by']
+            song['document_parts'].append(doc_info)
 
     return song
 
@@ -579,6 +612,24 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
                 tabs_copied += 1
     if tabs_copied:
         print(f"Copied {tabs_copied} tablature files to docs/data/tabs/")
+
+    # Copy document files to docs/data/docs/
+    docs_dir = Path('docs/data/docs')
+    docs_dir.mkdir(parents=True, exist_ok=True)
+    docs_copied = 0
+    for song in songs:
+        for doc_part in song.get('document_parts', []):
+            dest_path = Path('docs') / doc_part['file']
+            work_id = song['id']
+            source_filename = doc_part.get('source_file', 'document.pdf')
+            source_path = works_dir / work_id / source_filename
+            if source_path.exists() and (not dest_path.exists() or
+                    source_path.stat().st_mtime > dest_path.stat().st_mtime):
+                dest_path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(source_path, dest_path)
+                docs_copied += 1
+    if docs_copied:
+        print(f"Copied {docs_copied} document files to docs/data/docs/")
 
     # Tag enrichment
     if enrich_tags:

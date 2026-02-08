@@ -19,7 +19,7 @@ import {
 
 import { parseChordPro, showVersionPicker } from './song-view.js';
 import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS, extractChords } from './chords.js';
-import { escapeHtml } from './utils.js';
+import { escapeHtml, isPlaceholder } from './utils.js';
 import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
 import { clearListView } from './lists.js';
 import { getTagCategory, formatTagName } from './tags.js';
@@ -297,6 +297,19 @@ function buildPartsFromIndex(song) {
         }
     }
 
+    // Document parts (PDFs, scanned tabs)
+    if (song.document_parts) {
+        for (const doc of song.document_parts) {
+            parts.push({
+                type: 'document',
+                format: doc.format || 'pdf',
+                label: doc.label || 'PDF',
+                file: doc.file,
+                default: !song.content && !song.tablature_parts?.length,
+            });
+        }
+    }
+
     return parts;
 }
 
@@ -395,8 +408,26 @@ export function renderWorkView() {
 
     if (activePart) {
         renderPart(activePart, content);
+    } else if (isPlaceholder(currentWork)) {
+        content.innerHTML = '<p class="placeholder-empty">No content has been added yet.</p>';
     } else {
         content.innerHTML = '<p class="no-parts">No parts available for this work.</p>';
+    }
+
+    // Placeholder CTA at bottom
+    if (isPlaceholder(currentWork)) {
+        const cta = document.createElement('div');
+        cta.className = 'placeholder-cta';
+        const hasContent = availableParts.length > 0;
+        cta.innerHTML = `
+            <div class="placeholder-cta-text">${hasContent
+                ? 'This song has reference material but no lead sheet or tablature yet.'
+                : 'This song doesn\'t have a lead sheet or tablature yet.'}</div>
+            <button class="placeholder-contribute-btn" onclick="window.location.hash='#request-song'">
+                Help complete this song
+            </button>
+        `;
+        container.appendChild(cta);
     }
 }
 
@@ -444,6 +475,10 @@ function renderWorkHeader() {
             : visibleArtists.map(a => escapeHtml(a)).join(', ');
 
         infoItems.push(`<div class="info-item"><span class="info-label">Artists:</span> <span class="artists-list">${artistsHtml}</span></div>`);
+    }
+
+    if (currentWork.notes) {
+        infoItems.push(`<div class="info-item"><span class="info-label">Notes:</span> ${escapeHtml(currentWork.notes)}</div>`);
     }
 
     // Tags with voting controls
@@ -537,6 +572,7 @@ function renderWorkHeader() {
             <div class="song-header-left">
                 <div class="song-title-row">
                     <span class="song-title">${escapeHtml(title)}</span>
+                    ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
                     ${versionHtml}
                     <button id="add-to-list-btn" class="add-to-list-btn" title="Add to list">+ Lists</button>
                     <button id="focus-btn" class="focus-btn" title="Focus mode (F)">⛶ Focus</button>
@@ -597,7 +633,7 @@ function renderPartSelector() {
         const isActive = part === activePart;
         const icon = part.type === 'tablature'
             ? (INSTRUMENT_ICONS[part.instrument] || '🎵')
-            : '📄';
+            : part.type === 'document' ? '📎' : '📄';
 
         return `
             <button class="part-tab ${isActive ? 'active' : ''}"
@@ -646,9 +682,31 @@ async function renderPart(part, container) {
         renderChordProPart(part, container);
     } else if (part.format === 'otf' || part.type === 'tablature') {
         await renderTablaturePart(part, container);
+    } else if (part.type === 'document') {
+        renderDocumentPart(part, container);
     } else {
         container.innerHTML = `<p class="error">Unknown part format: ${part.format}</p>`;
     }
+}
+
+/**
+ * Render document part (PDF viewer with download fallback)
+ */
+function renderDocumentPart(part, container) {
+    const downloadUrl = part.file;
+    const label = escapeHtml(part.label || 'Document');
+
+    container.innerHTML = `
+        <div class="document-viewer">
+            <div class="document-toolbar">
+                <span class="document-label">${label}</span>
+                <a href="${downloadUrl}" download class="document-download-btn">Download PDF</a>
+            </div>
+            <object data="${downloadUrl}" type="application/pdf" class="pdf-embed">
+                <p>PDF cannot be displayed inline. <a href="${downloadUrl}">Download instead</a>.</p>
+            </object>
+        </div>
+    `;
 }
 
 /**
