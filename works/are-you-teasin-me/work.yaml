@@ -1,0 +1,11 @@
+id: are-you-teasin-me
+title: Are You Teasin’ Me
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/are-you-teasin-me/
+      imported_at: '2026-02-08'

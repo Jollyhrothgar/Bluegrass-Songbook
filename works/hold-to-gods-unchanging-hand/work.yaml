@@ -1,0 +1,11 @@
+id: hold-to-gods-unchanging-hand
+title: Hold To God’s Unchanging Hand
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/hold-to-gods-unchanging-hand/
+      imported_at: '2026-02-08'

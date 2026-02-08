@@ -1,0 +1,11 @@
+id: ill-be-all-smiles-tonight
+title: I’ll Be All Smiles Tonight
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/ill-be-all-smiles-tonight/
+      imported_at: '2026-02-08'

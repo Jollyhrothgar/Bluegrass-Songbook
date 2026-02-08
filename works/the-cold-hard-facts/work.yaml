@@ -1,0 +1,11 @@
+id: the-cold-hard-facts
+title: The Cold Hard Facts
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/the-cold-hard-facts/
+      imported_at: '2026-02-08'

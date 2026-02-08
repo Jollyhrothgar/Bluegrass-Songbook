@@ -1,0 +1,11 @@
+id: ive-got-that-old-feeling
+title: I’ve Got That Old Feeling
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/ive-got-that-old-feeling/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: leaning-on-the-everlasting-arms
+title: Leaning On The Everlasting Arms
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/leaning-on-the-everlasting-arms/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: dont-throw-your-life-away
+title: Don’t Throw Your Life Away
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/dont-throw-your-life-away/
+      imported_at: '2026-02-08'

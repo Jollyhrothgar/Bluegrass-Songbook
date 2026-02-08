@@ -1,0 +1,11 @@
+id: froggy-went-a-courtin
+title: Froggy Went A’ Courtin’
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/froggy-went-a-courtin/
+      imported_at: '2026-02-08'

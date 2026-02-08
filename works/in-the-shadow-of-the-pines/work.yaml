@@ -1,0 +1,11 @@
+id: in-the-shadow-of-the-pines
+title: In The Shadow Of The Pines
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/in-the-shadow-of-the-pines/
+      imported_at: '2026-02-08'

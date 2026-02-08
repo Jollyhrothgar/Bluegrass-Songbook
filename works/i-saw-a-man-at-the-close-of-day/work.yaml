@@ -1,0 +1,11 @@
+id: i-saw-a-man-at-the-close-of-day
+title: I Saw a Man at the Close of Day
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-saw-a-man-at-the-close-of-day/
+      imported_at: '2026-02-08'

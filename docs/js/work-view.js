@@ -433,6 +433,23 @@ function renderWorkHeader() {
     if (composer) {
         infoItems.push(`<div class="info-item"><span class="info-label">Written by:</span> ${escapeHtml(composer)}</div>`);
     }
+
+    // Source attribution
+    const source = currentWork.source;
+    const sourceDisplayNames = {
+        'classic-country': 'Classic Country Song Lyrics',
+        'golden-standard': 'Golden Standards Collection',
+        'tunearch': 'TuneArch.org',
+        'manual': 'Community Contribution',
+        'trusted-user': 'Community Contribution',
+        'pending': 'Community Contribution',
+        'banjo-hangout': 'Banjo Hangout',
+        'ultimate-guitar': 'Community Contribution',
+        'bluegrass-lyrics': 'BluegrassLyrics.com'
+    };
+    if (source && sourceDisplayNames[source]) {
+        infoItems.push(`<div class="info-item"><span class="info-label">Source:</span> ${sourceDisplayNames[source]}</div>`);
+    }
     if (artistsList.length > 0) {
         const maxVisible = 3;
         const hasMore = artistsList.length > maxVisible;
@@ -705,39 +722,6 @@ function renderChordProPart(part, container) {
 
     renderChordProContent(sections, contentArea);
 
-    // Add source attribution
-    const source = currentWork.source || part.provenance?.source;
-    if (source) {
-        const sourceDisplayNames = {
-            'classic-country': 'Classic Country Song Lyrics',
-            'golden-standard': 'Golden Standards Collection',
-            'tunearch': 'TuneArch.org',
-            'manual': 'Community Contribution',
-            'trusted-user': 'Community Contribution',
-            'pending': 'Community Contribution',
-            'banjo-hangout': 'Banjo Hangout'
-        };
-
-        const attribution = document.createElement('div');
-        attribution.className = 'song-source';
-
-        // Build URL for classic-country (link to home page, individual pages are often broken)
-        if (source === 'classic-country') {
-            const sourceUrl = 'https://www.classic-country-song-lyrics.com/';
-            attribution.innerHTML = `<span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${sourceDisplayNames[source]}</a>`;
-        } else if (source === 'golden-standard' && metadata?.x_book_url) {
-            const bookName = metadata.x_book || 'Golden Standards Collection';
-            attribution.innerHTML = `<span class="source-label">Source:</span> <a href="${metadata.x_book_url}" target="_blank" rel="noopener">${bookName}</a>`;
-        } else if (source === 'tunearch' && currentWork.tunearch_url) {
-            attribution.innerHTML = `<span class="source-label">Source:</span> <a href="${currentWork.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a>`;
-        } else if (sourceDisplayNames[source]) {
-            attribution.innerHTML = `<span class="source-label">Source:</span> ${sourceDisplayNames[source]}`;
-        }
-
-        if (attribution.innerHTML) {
-            container.appendChild(attribution);
-        }
-    }
 }
 
 /**

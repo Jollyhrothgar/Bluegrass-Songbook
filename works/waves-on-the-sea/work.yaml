@@ -1,0 +1,11 @@
+id: waves-on-the-sea
+title: Waves On The Sea
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/waves-on-the-sea/
+      imported_at: '2026-02-08'

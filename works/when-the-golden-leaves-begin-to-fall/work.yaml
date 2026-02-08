@@ -1,0 +1,11 @@
+id: when-the-golden-leaves-begin-to-fall
+title: When The Golden Leaves Begin To Fall
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/when-the-golden-leaves-begin-to-fall/
+      imported_at: '2026-02-08'

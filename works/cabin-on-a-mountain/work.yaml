@@ -1,0 +1,11 @@
+id: cabin-on-a-mountain
+title: Cabin On A Mountain
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/cabin-on-a-mountain/
+      imported_at: '2026-02-08'

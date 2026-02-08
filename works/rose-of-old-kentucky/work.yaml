@@ -1,0 +1,11 @@
+id: rose-of-old-kentucky
+title: Rose Of Old Kentucky
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/rose-of-old-kentucky/
+      imported_at: '2026-02-08'

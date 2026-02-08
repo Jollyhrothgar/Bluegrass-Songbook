@@ -1,0 +1,11 @@
+id: why-do-you-cry-little-darling
+title: Why Do You Cry Little Darling
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/why-do-you-cry-little-darling/
+      imported_at: '2026-02-08'

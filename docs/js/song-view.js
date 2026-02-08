@@ -546,9 +546,12 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     const artist = metadata.artist || song?.artist || '';
     const composer = metadata.writer || metadata.composer || song?.composer || '';
     // Link to classic-country home page (individual pages are often broken)
+    // For bluegrass-lyrics, use the x_lyrics_url from ChordPro metadata
     const sourceUrl = song?.source === 'classic-country'
         ? 'https://www.classic-country-song-lyrics.com/'
-        : null;
+        : (song?.source === 'bluegrass-lyrics' && metadata.x_lyrics_url)
+            ? metadata.x_lyrics_url
+            : null;
     const bookDisplay = metadata.x_book || song?.book || null;
     const bookUrl = metadata.x_book_url || song?.book_url || null;
 
@@ -615,10 +618,13 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         'manual': 'Community Contribution',
         'trusted-user': 'Community Contribution',
         'pending': 'Community Contribution',
-        'banjo-hangout': 'Banjo Hangout'
+        'banjo-hangout': 'Banjo Hangout',
+        'ultimate-guitar': 'Community Contribution',
+        'bluegrass-lyrics': 'BluegrassLyrics.com'
     };
     if (sourceUrl) {
-        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${sourceDisplayNames['classic-country']}</a></div>`;
+        const sourceName = sourceDisplayNames[song?.source] || 'Source';
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${sourceName}</a></div>`;
     } else if (song?.source === 'golden-standard' && bookUrl) {
         const bookName = bookDisplay || 'Golden Standards Collection';
         sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${bookUrl}" target="_blank" rel="noopener">${escapeHtml(bookName)}</a></div>`;

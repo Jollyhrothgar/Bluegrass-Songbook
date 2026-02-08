@@ -1,0 +1,11 @@
+id: youll-find-her-name-written-there
+title: You’ll Find Her Name Written There
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/youll-find-her-name-written-there/
+      imported_at: '2026-02-08'

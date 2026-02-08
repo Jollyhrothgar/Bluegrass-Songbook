@@ -1,0 +1,11 @@
+id: on-a-hill-lone-and-gray
+title: On A Hill Lone And Gray
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/on-a-hill-lone-and-gray/
+      imported_at: '2026-02-08'

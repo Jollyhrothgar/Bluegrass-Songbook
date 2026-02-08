@@ -1,0 +1,11 @@
+id: dont-let-your-deal-go-down
+title: Don’t Let Your Deal Go Down
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/dont-let-your-deal-go-down/
+      imported_at: '2026-02-08'

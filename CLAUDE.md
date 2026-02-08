@@ -12,6 +12,19 @@ A searchable collection of 17,000+ bluegrass and country songs with chords, buil
 ./scripts/utility build-posts        # Build blog posts manifest
 ```
 
+## CRITICAL: Cost Controls
+
+**NEVER submit paid API calls without explicit user confirmation.** This includes:
+- Anthropic batch API (LLM tagging)
+- Strum Machine API (if it ever becomes paid)
+- Any other external paid service
+
+Always:
+1. Show the cost estimate with breakdown (token counts, rates, total)
+2. Give the user a chance to validate the calculation - cost estimates can have bugs
+3. Ask for explicit permission to proceed
+4. Wait for clear "yes" before submitting - don't auto-submit
+
 ## Development Practices
 
 - **Test-driven development** - write tests, especially for parser changes

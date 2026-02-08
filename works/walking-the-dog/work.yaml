@@ -1,0 +1,11 @@
+id: walking-the-dog
+title: Walking The Dog
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/walking-the-dog/
+      imported_at: '2026-02-08'

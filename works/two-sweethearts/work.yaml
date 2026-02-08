@@ -1,0 +1,11 @@
+id: two-sweethearts
+title: Two Sweethearts
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/two-sweethearts/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: old-black-joe
+title: Old Black Joe
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/old-black-joe/
+      imported_at: '2026-02-08'

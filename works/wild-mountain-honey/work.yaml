@@ -1,0 +1,11 @@
+id: wild-mountain-honey
+title: Wild Mountain Honey
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/wild-mountain-honey/
+      imported_at: '2026-02-08'

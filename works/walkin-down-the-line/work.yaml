@@ -1,0 +1,11 @@
+id: walkin-down-the-line
+title: Walkin Down The Line
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/walkin-down-the-line/
+      imported_at: '2026-02-08'

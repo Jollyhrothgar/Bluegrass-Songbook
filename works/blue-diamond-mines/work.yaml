@@ -1,0 +1,11 @@
+id: blue-diamond-mines
+title: Blue Diamond Mines
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/blue-diamond-mines/
+      imported_at: '2026-02-08'

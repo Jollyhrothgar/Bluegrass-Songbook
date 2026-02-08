@@ -1,0 +1,11 @@
+id: traveling-on-and-on
+title: Traveling On And On
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/traveling-on-and-on/
+      imported_at: '2026-02-08'

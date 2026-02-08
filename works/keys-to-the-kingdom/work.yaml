@@ -1,0 +1,11 @@
+id: keys-to-the-kingdom
+title: Keys to the Kingdom
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/keys-to-the-kingdom/
+      imported_at: '2026-02-08'

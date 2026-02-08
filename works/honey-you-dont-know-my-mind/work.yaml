@@ -1,0 +1,11 @@
+id: honey-you-dont-know-my-mind
+title: Honey You Don’t Know My Mind
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/honey-you-dont-know-my-mind/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: washed-my-hands-in-the-muddy-water
+title: Washed My Hands in the Muddy Water
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/washed-my-hands-in-the-muddy-water/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: only-way-home
+title: Only Way Home
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/only-way-home/
+      imported_at: '2026-02-08'

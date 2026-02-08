@@ -1,0 +1,11 @@
+id: down-to-the-valley-to-pray
+title: Down To The Valley To Pray
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/down-to-the-valley-to-pray/
+      imported_at: '2026-02-08'

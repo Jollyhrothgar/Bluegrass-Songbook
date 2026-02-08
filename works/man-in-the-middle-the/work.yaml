@@ -1,0 +1,11 @@
+id: man-in-the-middle-the
+title: Man In The Middle, The
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/man-in-the-middle-the/
+      imported_at: '2026-02-08'

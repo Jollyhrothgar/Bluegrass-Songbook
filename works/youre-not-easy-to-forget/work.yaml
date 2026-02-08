@@ -1,0 +1,11 @@
+id: youre-not-easy-to-forget
+title: You’re Not Easy To Forget
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/youre-not-easy-to-forget/
+      imported_at: '2026-02-08'

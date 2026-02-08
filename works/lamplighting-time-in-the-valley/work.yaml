@@ -1,0 +1,11 @@
+id: lamplighting-time-in-the-valley
+title: Lamplighting Time In The Valley
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/lamplighting-time-in-the-valley/
+      imported_at: '2026-02-08'

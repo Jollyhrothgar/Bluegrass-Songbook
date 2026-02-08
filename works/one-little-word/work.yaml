@@ -1,0 +1,11 @@
+id: one-little-word
+title: One Little Word
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/one-little-word/
+      imported_at: '2026-02-08'

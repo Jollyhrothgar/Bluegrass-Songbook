@@ -1,0 +1,11 @@
+id: gone-but-not-forgotten
+title: Gone But Not Forgotten
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/gone-but-not-forgotten/
+      imported_at: '2026-02-08'

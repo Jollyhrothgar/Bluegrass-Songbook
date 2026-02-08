@@ -1,0 +1,11 @@
+id: dont-let-your-sweet-love-die
+title: Don’t Let Your Sweet Love Die
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/dont-let-your-sweet-love-die/
+      imported_at: '2026-02-08'

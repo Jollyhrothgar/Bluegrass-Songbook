@@ -1,0 +1,11 @@
+id: jimmie-brown-the-newsboy
+title: Jimmie Brown The Newsboy
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/jimmie-brown-the-newsboy/
+      imported_at: '2026-02-08'

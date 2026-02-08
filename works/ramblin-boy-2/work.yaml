@@ -1,0 +1,11 @@
+id: ramblin-boy-2
+title: Ramblin’ Boy
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/ramblin-boy-2/
+      imported_at: '2026-02-08'

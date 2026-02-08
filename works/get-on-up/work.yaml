@@ -1,0 +1,11 @@
+id: get-on-up
+title: Get On Up
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/get-on-up/
+      imported_at: '2026-02-08'

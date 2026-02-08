@@ -1,0 +1,11 @@
+id: secret-of-the-waterfall
+title: Secret Of The Waterfall
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/secret-of-the-waterfall/
+      imported_at: '2026-02-08'

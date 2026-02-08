@@ -1,0 +1,11 @@
+id: miners-prayer
+title: Miner’s Prayer
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/miners-prayer/
+      imported_at: '2026-02-08'

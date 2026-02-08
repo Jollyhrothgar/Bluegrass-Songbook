@@ -1,0 +1,11 @@
+id: bear-creek-blues
+title: Bear Creek Blues
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/bear-creek-blues/
+      imported_at: '2026-02-08'

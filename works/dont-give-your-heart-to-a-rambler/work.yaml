@@ -1,0 +1,11 @@
+id: dont-give-your-heart-to-a-rambler
+title: Don’t Give Your Heart To A Rambler
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/dont-give-your-heart-to-a-rambler/
+      imported_at: '2026-02-08'

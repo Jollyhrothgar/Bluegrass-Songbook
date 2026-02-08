@@ -1,0 +1,11 @@
+id: where-will-i-shelter-my-sheep-tonight
+title: Where Will I Shelter My Sheep Tonight
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/where-will-i-shelter-my-sheep-tonight/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: the-valley-of-peace
+title: The Valley Of Peace
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/the-valley-of-peace/
+      imported_at: '2026-02-08'

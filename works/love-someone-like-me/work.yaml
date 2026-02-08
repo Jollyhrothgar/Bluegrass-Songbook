@@ -1,0 +1,11 @@
+id: love-someone-like-me
+title: Love Someone Like Me
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/love-someone-like-me/
+      imported_at: '2026-02-08'

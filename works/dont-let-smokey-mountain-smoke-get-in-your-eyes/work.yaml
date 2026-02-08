@@ -1,0 +1,11 @@
+id: dont-let-smokey-mountain-smoke-get-in-your-eyes
+title: Don’t Let Smokey Mountain Smoke Get In Your Eyes
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/dont-let-smokey-mountain-smoke-get-in-your-eyes/
+      imported_at: '2026-02-08'

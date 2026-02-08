@@ -1,0 +1,11 @@
+id: good-bunch-of-biscuits
+title: Good Bunch of Biscuits
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/good-bunch-of-biscuits/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: aint-gonna-work-tomorrow
+title: Ain’t Gonna Work Tomorrow
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/aint-gonna-work-tomorrow/
+      imported_at: '2026-02-08'

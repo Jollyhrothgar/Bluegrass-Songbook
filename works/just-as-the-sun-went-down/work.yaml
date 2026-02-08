@@ -1,0 +1,11 @@
+id: just-as-the-sun-went-down
+title: Just as the Sun Went Down
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/just-as-the-sun-went-down/
+      imported_at: '2026-02-08'

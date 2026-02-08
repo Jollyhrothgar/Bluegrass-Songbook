@@ -1,0 +1,11 @@
+id: youll-get-no-more-of-me
+title: You’ll Get No More Of Me
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/youll-get-no-more-of-me/
+      imported_at: '2026-02-08'

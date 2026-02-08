@@ -1,0 +1,11 @@
+id: dont-close-your-eyes
+title: Don’t Close Your Eyes
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/dont-close-your-eyes/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: what-a-way-to-go
+title: What a Way to Go
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/what-a-way-to-go/
+      imported_at: '2026-02-08'

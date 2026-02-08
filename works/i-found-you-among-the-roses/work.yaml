@@ -1,0 +1,11 @@
+id: i-found-you-among-the-roses
+title: I Found You Among The Roses
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-found-you-among-the-roses/
+      imported_at: '2026-02-08'

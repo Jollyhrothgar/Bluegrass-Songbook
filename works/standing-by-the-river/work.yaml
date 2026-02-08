@@ -1,0 +1,11 @@
+id: standing-by-the-river
+title: Standing By The River
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/standing-by-the-river/
+      imported_at: '2026-02-08'

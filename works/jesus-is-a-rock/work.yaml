@@ -1,0 +1,11 @@
+id: jesus-is-a-rock
+title: Jesus is a Rock
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/jesus-is-a-rock/
+      imported_at: '2026-02-08'

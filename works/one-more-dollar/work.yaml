@@ -1,0 +1,11 @@
+id: one-more-dollar
+title: One More Dollar
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/one-more-dollar/
+      imported_at: '2026-02-08'

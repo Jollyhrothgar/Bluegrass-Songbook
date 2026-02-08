@@ -1,0 +1,11 @@
+id: one-track-mind
+title: One Track Mind
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/one-track-mind/
+      imported_at: '2026-02-08'

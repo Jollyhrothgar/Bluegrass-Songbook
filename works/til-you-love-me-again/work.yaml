@@ -1,0 +1,11 @@
+id: til-you-love-me-again
+title: Til You Love Me Again
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/til-you-love-me-again/
+      imported_at: '2026-02-08'

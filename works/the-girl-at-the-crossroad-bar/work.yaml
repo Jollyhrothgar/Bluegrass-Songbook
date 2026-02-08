@@ -1,0 +1,11 @@
+id: the-girl-at-the-crossroad-bar
+title: The Girl At The Crossroad Bar
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/the-girl-at-the-crossroad-bar/
+      imported_at: '2026-02-08'

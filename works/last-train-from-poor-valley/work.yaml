@@ -1,0 +1,11 @@
+id: last-train-from-poor-valley
+title: Last Train From Poor Valley
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/last-train-from-poor-valley/
+      imported_at: '2026-02-08'

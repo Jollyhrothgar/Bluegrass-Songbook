@@ -1,0 +1,11 @@
+id: my-home-among-the-hills
+title: My Home Among The Hills
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/my-home-among-the-hills/
+      imported_at: '2026-02-08'

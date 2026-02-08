@@ -1,0 +1,11 @@
+id: true-true-love-never-dies
+title: True True Love Never Dies
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/true-true-love-never-dies/
+      imported_at: '2026-02-08'

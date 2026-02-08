@@ -1,0 +1,11 @@
+id: mansions-for-me-2
+title: Mansions For Me
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/mansions-for-me-2/
+      imported_at: '2026-02-08'

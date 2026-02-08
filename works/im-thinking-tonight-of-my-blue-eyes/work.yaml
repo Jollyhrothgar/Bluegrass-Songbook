@@ -1,0 +1,11 @@
+id: im-thinking-tonight-of-my-blue-eyes
+title: I’m Thinking Tonight Of My Blue Eyes
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/im-thinking-tonight-of-my-blue-eyes/
+      imported_at: '2026-02-08'

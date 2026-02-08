@@ -1,0 +1,11 @@
+id: i-never-loved-but-one
+title: I Never Loved But One
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-never-loved-but-one/
+      imported_at: '2026-02-08'

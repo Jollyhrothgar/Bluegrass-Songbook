@@ -1,0 +1,11 @@
+id: beautiful-isle-oer-the-sea
+title: Beautiful Isle O’Er The Sea
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/beautiful-isle-oer-the-sea/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: sweet-sunny-south
+title: Sweet Sunny South
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/sweet-sunny-south/
+      imported_at: '2026-02-08'

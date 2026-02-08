@@ -1,0 +1,11 @@
+id: all-the-good-times-are-past-and-gone-2
+title: All The Good Times Are Past And Gone
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/all-the-good-times-are-past-and-gone-2/
+      imported_at: '2026-02-08'

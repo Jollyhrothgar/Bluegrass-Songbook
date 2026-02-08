@@ -1,0 +1,11 @@
+id: i-aint-broke-but-im-badly-bent
+title: I Ain’t Broke But I’m Badly Bent
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-aint-broke-but-im-badly-bent/
+      imported_at: '2026-02-08'

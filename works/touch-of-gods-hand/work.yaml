@@ -1,0 +1,11 @@
+id: touch-of-gods-hand
+title: Touch Of God’s Hand
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/touch-of-gods-hand/
+      imported_at: '2026-02-08'

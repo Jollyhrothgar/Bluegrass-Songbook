@@ -31,7 +31,7 @@ import httpx
 # Configuration
 API_BASE = "https://strummachine.com/api/v0"
 MATCH_ENDPOINT = f"{API_BASE}/match-songs"
-RATE_LIMIT = 10  # requests per second
+RATE_LIMIT = 60  # requests per second
 RATE_LIMIT_DELAY = 1.0 / RATE_LIMIT  # 0.1 seconds between requests
 
 # Cache file to avoid re-fetching

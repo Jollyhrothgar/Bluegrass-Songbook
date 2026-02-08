@@ -1,0 +1,11 @@
+id: dont-blame-it-all-on-me
+title: Don’t Blame It All On Me
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/dont-blame-it-all-on-me/
+      imported_at: '2026-02-08'

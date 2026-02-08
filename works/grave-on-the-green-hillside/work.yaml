@@ -1,0 +1,11 @@
+id: grave-on-the-green-hillside
+title: Grave On The Green Hillside
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/grave-on-the-green-hillside/
+      imported_at: '2026-02-08'

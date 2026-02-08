@@ -1,0 +1,11 @@
+id: its-mighty-dark-to-travel
+title: It’s Mighty Dark To Travel
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/its-mighty-dark-to-travel/
+      imported_at: '2026-02-08'

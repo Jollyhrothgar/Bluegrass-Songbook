@@ -1,0 +1,11 @@
+id: i-aint-holding-on-any-longer
+title: I Ain’t Holding On Any Longer
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-aint-holding-on-any-longer/
+      imported_at: '2026-02-08'

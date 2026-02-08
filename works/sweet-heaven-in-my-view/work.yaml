@@ -1,0 +1,11 @@
+id: sweet-heaven-in-my-view
+title: Sweet Heaven In My View
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/sweet-heaven-in-my-view/
+      imported_at: '2026-02-08'

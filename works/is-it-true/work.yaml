@@ -1,0 +1,11 @@
+id: is-it-true
+title: Is It True
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/is-it-true/
+      imported_at: '2026-02-08'

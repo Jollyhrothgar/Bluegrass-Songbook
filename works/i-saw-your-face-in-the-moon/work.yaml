@@ -1,0 +1,11 @@
+id: i-saw-your-face-in-the-moon
+title: I Saw Your Face In The Moon
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-saw-your-face-in-the-moon/
+      imported_at: '2026-02-08'

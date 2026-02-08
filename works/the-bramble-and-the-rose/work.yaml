@@ -1,0 +1,11 @@
+id: the-bramble-and-the-rose
+title: The Bramble And The Rose
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/the-bramble-and-the-rose/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: little-black-train-the
+title: Little Black Train, The
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/little-black-train-the/
+      imported_at: '2026-02-08'

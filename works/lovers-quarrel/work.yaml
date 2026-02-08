@@ -1,0 +1,11 @@
+id: lovers-quarrel
+title: Lover’s Quarrel
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/lovers-quarrel/
+      imported_at: '2026-02-08'

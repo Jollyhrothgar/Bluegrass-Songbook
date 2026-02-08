@@ -1,0 +1,11 @@
+id: hard-aint-it-hard
+title: Hard Ain’t It Hard
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/hard-aint-it-hard/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: youve-been-a-friend-to-me
+title: You’ve Been A Friend To Me
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/youve-been-a-friend-to-me/
+      imported_at: '2026-02-08'

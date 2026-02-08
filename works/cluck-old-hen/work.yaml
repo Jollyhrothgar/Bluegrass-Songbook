@@ -1,0 +1,11 @@
+id: cluck-old-hen
+title: Cluck Old Hen
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/cluck-old-hen/
+      imported_at: '2026-02-08'

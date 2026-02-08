@@ -1,0 +1,11 @@
+id: who-will-watch-the-home-place
+title: Who Will Watch The Home Place
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/who-will-watch-the-home-place/
+      imported_at: '2026-02-08'

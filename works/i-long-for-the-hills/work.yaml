@@ -1,0 +1,11 @@
+id: i-long-for-the-hills
+title: I Long For The Hills
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-long-for-the-hills/
+      imported_at: '2026-02-08'

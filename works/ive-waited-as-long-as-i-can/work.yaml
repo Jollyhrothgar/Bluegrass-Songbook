@@ -1,0 +1,11 @@
+id: ive-waited-as-long-as-i-can
+title: I’ve Waited As Long As I Can
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/ive-waited-as-long-as-i-can/
+      imported_at: '2026-02-08'

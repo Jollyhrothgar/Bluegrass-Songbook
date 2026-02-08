@@ -1,0 +1,11 @@
+id: train-wreck-of-emotion
+title: Train Wreck Of Emotion
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/train-wreck-of-emotion/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: brown-mountain-light
+title: Brown Mountain Light
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/brown-mountain-light/
+      imported_at: '2026-02-08'

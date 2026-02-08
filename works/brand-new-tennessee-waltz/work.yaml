@@ -1,0 +1,11 @@
+id: brand-new-tennessee-waltz
+title: Brand New Tennessee Waltz
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/brand-new-tennessee-waltz/
+      imported_at: '2026-02-08'

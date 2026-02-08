@@ -1,0 +1,11 @@
+id: just-aint
+title: Just Ain’t
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/just-aint/
+      imported_at: '2026-02-08'

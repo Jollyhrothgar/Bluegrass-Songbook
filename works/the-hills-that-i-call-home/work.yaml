@@ -1,0 +1,11 @@
+id: the-hills-that-i-call-home
+title: The Hills That I Call Home
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/the-hills-that-i-call-home/
+      imported_at: '2026-02-08'

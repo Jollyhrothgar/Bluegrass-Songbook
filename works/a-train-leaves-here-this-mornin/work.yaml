@@ -1,0 +1,11 @@
+id: a-train-leaves-here-this-mornin
+title: A Train Leaves Here This Mornin’
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/a-train-leaves-here-this-mornin/
+      imported_at: '2026-02-08'

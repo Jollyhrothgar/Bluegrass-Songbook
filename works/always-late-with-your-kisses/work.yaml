@@ -1,0 +1,11 @@
+id: always-late-with-your-kisses
+title: Always Late With Your Kisses
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/always-late-with-your-kisses/
+      imported_at: '2026-02-08'

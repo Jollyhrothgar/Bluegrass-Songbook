@@ -1,0 +1,11 @@
+id: im-gonna-sleep-with-one-eye-open
+title: I’m Gonna Sleep With One Eye Open
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/im-gonna-sleep-with-one-eye-open/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: your-lone-journey
+title: Your Lone Journey
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/your-lone-journey/
+      imported_at: '2026-02-08'

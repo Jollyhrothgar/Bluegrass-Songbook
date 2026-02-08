@@ -1,0 +1,11 @@
+id: ill-meet-you-in-the-morning
+title: I’ll Meet You In The Morning
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/ill-meet-you-in-the-morning/
+      imported_at: '2026-02-08'

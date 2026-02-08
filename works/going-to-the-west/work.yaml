@@ -1,0 +1,11 @@
+id: going-to-the-west
+title: Going To The West
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/going-to-the-west/
+      imported_at: '2026-02-08'

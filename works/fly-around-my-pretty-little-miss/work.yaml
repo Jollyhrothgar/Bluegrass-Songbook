@@ -1,0 +1,11 @@
+id: fly-around-my-pretty-little-miss
+title: Fly Around My Pretty Little Miss
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/fly-around-my-pretty-little-miss/
+      imported_at: '2026-02-08'

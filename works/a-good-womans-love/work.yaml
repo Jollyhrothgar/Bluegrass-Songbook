@@ -1,0 +1,11 @@
+id: a-good-womans-love
+title: A Good Woman’s Love
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/a-good-womans-love/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: birds-were-singing-of-you-the
+title: Birds Were Singing Of You, The
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/birds-were-singing-of-you-the/
+      imported_at: '2026-02-08'

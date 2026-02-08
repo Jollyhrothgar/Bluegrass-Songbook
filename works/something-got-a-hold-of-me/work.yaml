@@ -1,0 +1,11 @@
+id: something-got-a-hold-of-me
+title: Something Got A Hold Of Me
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/something-got-a-hold-of-me/
+      imported_at: '2026-02-08'
