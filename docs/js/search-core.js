@@ -38,6 +38,14 @@ const initializedContainers = new WeakMap();
 // Context menu state
 let activeContextMenu = null;
 
+// Infinite scroll state
+let fullResults = [];        // All matching results (no limit)
+let renderedCount = 0;       // How many currently rendered
+const PAGE_SIZE = 50;        // Results per batch
+let loadingMore = false;     // Prevent double-loads
+let scrollObserver = null;   // IntersectionObserver instance
+let currentQuery = '';       // Query for the current results
+
 /**
  * Show context menu for a song in list view
  * @param {number} x - Mouse X position
@@ -674,13 +682,13 @@ export function showPopularSongs() {
         const bRank = b.canonical_rank || 0;
         return bRank - aRank;
     });
-    const sample = sorted.slice(0, 50);
     // Use distinct title count to match subtitle
     const distinctCount = new Set(allSongs.map(s => s.title?.toLowerCase())).size;
     if (searchStatsEl) {
         searchStatsEl.textContent = `${distinctCount.toLocaleString()} songs`;
     }
-    renderResults(sample, '');
+    // Pass all results - renderResults handles pagination via infinite scroll
+    renderResults(sorted, '');
 }
 
 // Alias for backwards compatibility
@@ -885,17 +893,188 @@ export function search(query, options = {}) {
     }, ANALYTICS_DEBOUNCE_MS);
 
     if (!skipRender) {
-        renderResults(dedupedResults.slice(0, 50), textQuery);
+        renderResults(dedupedResults, textQuery);
     }
 
     return dedupedResults;
 }
 
 /**
- * Render search results
+ * Clean up infinite scroll state
+ */
+function cleanupScroll() {
+    if (scrollObserver) {
+        scrollObserver.disconnect();
+        scrollObserver = null;
+    }
+    fullResults = [];
+    renderedCount = 0;
+    loadingMore = false;
+    currentQuery = '';
+}
+
+/**
+ * Set up IntersectionObserver for infinite scroll
+ */
+function setupScrollObserver() {
+    if (scrollObserver) scrollObserver.disconnect();
+
+    const sentinel = resultsDivEl?.querySelector('.scroll-sentinel');
+    if (!sentinel) return;
+
+    scrollObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !loadingMore && renderedCount < fullResults.length) {
+            loadingMore = true;
+            loadMoreResults();
+            loadingMore = false;
+        }
+    }, { rootMargin: '200px' });  // Load 200px before reaching bottom
+
+    scrollObserver.observe(sentinel);
+}
+
+/**
+ * Load more results (append mode)
+ */
+function loadMoreResults() {
+    if (!resultsDivEl || renderedCount >= fullResults.length) return;
+
+    const viewingListId = getViewingListId();
+    const canReorder = isViewingOwnList();
+    const isDraggable = canReorder;
+
+    const batch = fullResults.slice(renderedCount, renderedCount + PAGE_SIZE);
+    const startIndex = renderedCount;
+    renderedCount += batch.length;
+
+    const html = batch.map((song, i) =>
+        renderResultItem(song, startIndex + i, currentQuery, isDraggable, canReorder, viewingListId)
+    ).join('');
+
+    // Remove old sentinel
+    const oldSentinel = resultsDivEl.querySelector('.scroll-sentinel');
+    if (oldSentinel) oldSentinel.remove();
+
+    // Append new results
+    resultsDivEl.insertAdjacentHTML('beforeend', html);
+
+    // Add sentinel if more results available
+    if (renderedCount < fullResults.length) {
+        resultsDivEl.insertAdjacentHTML('beforeend', '<div class="scroll-sentinel"></div>');
+        setupScrollObserver();
+    }
+}
+
+/**
+ * Render a single result item
+ */
+function renderResultItem(song, index, query, isDraggable, canReorder, viewingListId) {
+    const favClass = isFavorite(song.id) ? 'is-favorite' : '';
+    const inList = isSongInAnyList(song.id);
+    const btnClass = (isFavorite(song.id) || inList) ? 'has-lists' : '';
+
+    // Check for multiple versions
+    const groupId = song.group_id;
+    const versions = groupId ? (songGroups[groupId] || []) : [];
+    const versionCount = versions.length;
+    const versionBadge = versionCount > 1
+        ? `<span class="version-badge" data-group-id="${groupId}">${versionCount} versions</span>`
+        : '';
+
+    // Generate tag badges (max 3)
+    const tags = song.tags || {};
+    const tagBadges = Object.keys(tags).slice(0, 3).map(tag => {
+        const category = getTagCategory(tag);
+        return `<span class="tag-badge tag-${category}" data-tag="${tag}">${formatTagName(tag)}</span>`;
+    }).join('');
+
+    // Tablature/notation instrument tags
+    const tabParts = song.tablature_parts || [];
+    const hasAbc = song.content && song.content.includes('{start_of_abc}');
+    const instrumentTags = new Set();
+    tabParts.forEach(p => {
+        if (p.instrument) instrumentTags.add(p.instrument.toLowerCase());
+    });
+    if (hasAbc) instrumentTags.add('fiddle');
+
+    const instrumentBadges = Array.from(instrumentTags).map(inst => {
+        const label = inst.charAt(0).toUpperCase() + inst.slice(1);
+        return `<span class="tag-badge tag-instrument" data-tag="${inst}" title="Has ${label} tab/notation">${label}</span>`;
+    }).join('');
+
+    // Grassiness score badge
+    const grassinessScore = song.grassiness || 0;
+    const grassinessBadge = grassinessScore >= 20
+        ? `<span class="grassiness-badge" title="Bluegrass score: ${grassinessScore}">🎵 ${grassinessScore}</span>`
+        : '';
+
+    // Artist display
+    const coveringArtists = song.covering_artists || [];
+    const primaryArtist = coveringArtists.length > 0
+        ? coveringArtists[0]
+        : (song.artist || 'Unknown artist');
+    const coveringDisplay = formatCoveringArtists(coveringArtists.slice(1), primaryArtist);
+
+    // Drag handle and attributes
+    const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
+    const draggableAttr = isDraggable ? `draggable="true" data-index="${index}"` : '';
+
+    // Buttons
+    const removeBtn = canReorder
+        ? `<button class="result-remove-btn" data-song-id="${song.id}" title="Remove from list">×</button>`
+        : '';
+
+    const isSelected = selectedSongIds.has(song.id);
+    const selectBtn = canReorder
+        ? `<button class="result-select-btn ${isSelected ? 'selected' : ''}" data-song-id="${song.id}" title="Select for batch operation">✓</button>`
+        : '';
+
+    const selectedClass = isSelected ? 'selected' : '';
+
+    // List item metadata
+    let metadataBadges = '';
+    let notesBtn = '';
+    if (viewingListId) {
+        const metadata = getSongMetadata(viewingListId, song.id);
+        if (metadata) {
+            const keyBadge = metadata.key ? `<span class="list-item-badge key-badge">${escapeHtml(metadata.key)}</span>` : '';
+            const tempoBadge = metadata.tempo ? `<span class="list-item-badge tempo-badge">${metadata.tempo}</span>` : '';
+            metadataBadges = `<span class="list-item-badges">${keyBadge}${tempoBadge}</span>`;
+        }
+        const hasNotes = metadata?.notes && metadata.notes.trim();
+        const notesClass = hasNotes ? 'has-notes' : '';
+        notesBtn = `<button class="list-notes-btn ${notesClass}" data-song-id="${song.id}" data-song-title="${escapeHtml(song.title || 'Song')}" title="${hasNotes ? 'Edit notes' : 'Add notes'}">&#128221;</button>`;
+    }
+
+    return `
+        <div class="result-item ${favClass} ${selectedClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
+            ${dragHandle}
+            <div class="result-main">
+                <div class="result-title-artist">
+                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}${grassinessBadge}</div>
+                    ${metadataBadges}
+                </div>
+                <div class="result-artist">${highlightMatch(primaryArtist, query)}</div>
+                ${coveringDisplay}
+                ${tagBadges ? `<div class="result-tags">${tagBadges}</div>` : ''}
+                <div class="result-preview">${song.first_line || ''}</div>
+            </div>
+            ${selectBtn}
+            ${notesBtn}
+            <button class="result-list-btn ${btnClass}" data-song-id="${song.id}" title="Add to list">+</button>
+            ${removeBtn}
+        </div>
+    `;
+}
+
+/**
+ * Render search results with infinite scroll support
  */
 export function renderResults(songs, query) {
     if (!resultsDivEl) return;
+
+    // Clean up previous scroll state
+    cleanupScroll();
 
     if (songs.length === 0) {
         resultsDivEl.innerHTML = '<div class="loading">No songs found</div>';
@@ -903,7 +1082,6 @@ export function renderResults(songs, query) {
     }
 
     // Check if we're viewing a list or favorites (enables drag/drop reordering)
-    // Only allow dragging for own lists/favorites, not shared public lists
     const viewingListId = getViewingListId();
     const canReorder = isViewingOwnList();
     const isDraggable = canReorder;
@@ -917,7 +1095,7 @@ export function renderResults(songs, query) {
         const groupId = song.group_id;
         // Don't dedupe in list view - user may have same song multiple times intentionally
         if (!isDraggable && groupId && seenGroups.has(groupId)) {
-            continue;  // Skip, we already have a song from this group
+            continue;
         }
         if (groupId) {
             seenGroups.add(groupId);
@@ -925,113 +1103,36 @@ export function renderResults(songs, query) {
         dedupedSongs.push(song);
     }
 
-    resultsDivEl.innerHTML = dedupedSongs.map((song, index) => {
-        const favClass = isFavorite(song.id) ? 'is-favorite' : '';
-        const inList = isSongInAnyList(song.id);
-        const btnClass = (isFavorite(song.id) || inList) ? 'has-lists' : '';
+    // Store full results for infinite scroll
+    fullResults = dedupedSongs;
+    currentQuery = query;
+    renderedCount = 0;
 
-        // Check for multiple versions
-        const groupId = song.group_id;
-        const versions = groupId ? (songGroups[groupId] || []) : [];
-        const versionCount = versions.length;
-        const versionBadge = versionCount > 1
-            ? `<span class="version-badge" data-group-id="${groupId}">${versionCount} versions</span>`
-            : '';
+    // For list view (canReorder), render all items without pagination
+    // Lists are typically small and users need to see/reorder all items
+    if (canReorder) {
+        const html = dedupedSongs.map((song, index) =>
+            renderResultItem(song, index, query, isDraggable, canReorder, viewingListId)
+        ).join('');
+        resultsDivEl.innerHTML = html;
+        renderedCount = dedupedSongs.length;
+    } else {
+        // Search view: render first batch with infinite scroll
+        const batch = dedupedSongs.slice(0, PAGE_SIZE);
+        renderedCount = batch.length;
 
-        // Generate tag badges (max 3)
-        const tags = song.tags || {};
-        const tagBadges = Object.keys(tags).slice(0, 3).map(tag => {
-            const category = getTagCategory(tag);
-            return `<span class="tag-badge tag-${category}" data-tag="${tag}">${formatTagName(tag)}</span>`;
-        }).join('');
+        const html = batch.map((song, index) =>
+            renderResultItem(song, index, query, isDraggable, canReorder, viewingListId)
+        ).join('');
 
-        // Tablature/notation instrument tags (shown as tag badges)
-        const tabParts = song.tablature_parts || [];
-        const hasAbc = song.content && song.content.includes('{start_of_abc}');
+        resultsDivEl.innerHTML = html;
 
-        // Collect instrument tags from tabs and ABC
-        const instrumentTags = new Set();
-        tabParts.forEach(p => {
-            if (p.instrument) instrumentTags.add(p.instrument.toLowerCase());
-        });
-        if (hasAbc) instrumentTags.add('fiddle'); // ABC assumed to be fiddle
-
-        // Create instrument badges
-        const instrumentBadges = Array.from(instrumentTags).map(inst => {
-            const label = inst.charAt(0).toUpperCase() + inst.slice(1);
-            return `<span class="tag-badge tag-instrument" data-tag="${inst}" title="Has ${label} tab/notation">${label}</span>`;
-        }).join('');
-
-        // Grassiness score badge (for songs with score >= 20)
-        const grassinessScore = song.grassiness || 0;
-        const grassinessBadge = grassinessScore >= 20
-            ? `<span class="grassiness-badge" title="Bluegrass score: ${grassinessScore}">🎵 ${grassinessScore}</span>`
-            : '';
-
-        // Use first covering artist as primary display (tier-sorted, most notable first)
-        const coveringArtists = song.covering_artists || [];
-        const primaryArtist = coveringArtists.length > 0
-            ? coveringArtists[0]
-            : (song.artist || 'Unknown artist');
-
-        // Format remaining covering artists (skip first since it's now primary)
-        const coveringDisplay = formatCoveringArtists(
-            coveringArtists.slice(1),
-            primaryArtist
-        );
-
-        // Add drag handle and draggable for list view
-        const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
-        const draggableAttr = isDraggable ? `draggable="true" data-index="${index}"` : '';
-
-        // Always show remove button for own lists (visible on hover via CSS)
-        const removeBtn = canReorder
-            ? `<button class="result-remove-btn" data-song-id="${song.id}" title="Remove from list">×</button>`
-            : '';
-
-        // Always show select button for own lists (circular button with checkmark)
-        const isSelected = selectedSongIds.has(song.id);
-        const selectBtn = canReorder
-            ? `<button class="result-select-btn ${isSelected ? 'selected' : ''}" data-song-id="${song.id}" title="Select for batch operation">✓</button>`
-            : '';
-
-        const selectedClass = isSelected ? 'selected' : '';
-
-        // List item metadata (only shown when viewing a list)
-        let metadataBadges = '';
-        let notesBtn = '';
-        if (viewingListId) {
-            const metadata = getSongMetadata(viewingListId, song.id);
-            if (metadata) {
-                const keyBadge = metadata.key ? `<span class="list-item-badge key-badge">${escapeHtml(metadata.key)}</span>` : '';
-                const tempoBadge = metadata.tempo ? `<span class="list-item-badge tempo-badge">${metadata.tempo}</span>` : '';
-                metadataBadges = `<span class="list-item-badges">${keyBadge}${tempoBadge}</span>`;
-            }
-            const hasNotes = metadata?.notes && metadata.notes.trim();
-            const notesClass = hasNotes ? 'has-notes' : '';
-            notesBtn = `<button class="list-notes-btn ${notesClass}" data-song-id="${song.id}" data-song-title="${escapeHtml(song.title || 'Song')}" title="${hasNotes ? 'Edit notes' : 'Add notes'}">&#128221;</button>`;
+        // Add sentinel if more results available
+        if (renderedCount < fullResults.length) {
+            resultsDivEl.insertAdjacentHTML('beforeend', '<div class="scroll-sentinel"></div>');
+            setupScrollObserver();
         }
-
-        return `
-            <div class="result-item ${favClass} ${selectedClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
-                ${dragHandle}
-                <div class="result-main">
-                    <div class="result-title-artist">
-                        <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}${grassinessBadge}</div>
-                        ${metadataBadges}
-                    </div>
-                    <div class="result-artist">${highlightMatch(primaryArtist, query)}</div>
-                    ${coveringDisplay}
-                    ${tagBadges ? `<div class="result-tags">${tagBadges}</div>` : ''}
-                    <div class="result-preview">${song.first_line || ''}</div>
-                </div>
-                ${selectBtn}
-                ${notesBtn}
-                <button class="result-list-btn ${btnClass}" data-song-id="${song.id}" title="Add to list">+</button>
-                ${removeBtn}
-            </div>
-        `;
-    }).join('');
+    }
 
     // Add event listeners
     setupResultEventListeners(resultsDivEl);

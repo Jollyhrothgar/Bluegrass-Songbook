@@ -576,7 +576,7 @@ function searchWithPins(query, collectionId) {
 
     if (pins.length === 0) {
         // No pinned songs, just render normally (already sorted by canonical_rank)
-        renderResults(results.slice(0, 50), '');
+        renderResults(results, '');
         return results;
     }
 
@@ -597,7 +597,7 @@ function searchWithPins(query, collectionId) {
 
     // Render with pinned songs first, then others sorted by canonical_rank
     const reordered = [...pinnedSongs, ...otherSongs];
-    renderResults(reordered.slice(0, 50), '');
+    renderResults(reordered, '');
 
     return reordered;
 }
