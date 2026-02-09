@@ -1069,19 +1069,51 @@ window.refreshPendingSongs = refreshPendingSongs;
 // Admin state (cached to avoid repeated RPC calls)
 let isAdminUser = false;
 
+function getInitials(user) {
+    const name = user.user_metadata?.full_name;
+    if (name) {
+        const parts = name.trim().split(/\s+/);
+        if (parts.length >= 2) return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+        return parts[0].substring(0, 2).toUpperCase();
+    }
+    const email = user.email || '';
+    return email.substring(0, 2).toUpperCase();
+}
+
 function updateAuthUI(user) {
+    const userAvatarInitials = document.getElementById('user-avatar-initials');
+    const accountAvatarEl = document.getElementById('account-avatar');
+    const accountAvatarInitials = document.getElementById('account-avatar-initials');
+    const accountNameEl = document.getElementById('account-name');
+    const accountEmailEl = document.getElementById('account-email');
+
     if (user) {
         // Hide sign-in button, show user info
         signInBtn?.classList.add('hidden');
         userInfo?.classList.remove('hidden');
 
-        // Populate user info
-        if (userAvatar) {
-            userAvatar.src = user.user_metadata?.avatar_url || user.user_metadata?.picture || '';
+        const avatarUrl = user.user_metadata?.avatar_url || user.user_metadata?.picture || '';
+        const displayName = user.user_metadata?.full_name || user.email?.split('@')[0] || 'User';
+
+        if (userName) userName.textContent = displayName;
+
+        // Show photo avatar or initials fallback
+        if (avatarUrl) {
+            if (userAvatar) { userAvatar.src = avatarUrl; userAvatar.classList.remove('hidden'); }
+            userAvatarInitials?.classList.add('hidden');
+            if (accountAvatarEl) { accountAvatarEl.src = avatarUrl; accountAvatarEl.classList.remove('hidden'); }
+            accountAvatarInitials?.classList.add('hidden');
+        } else {
+            const initials = getInitials(user);
+            userAvatar?.classList.add('hidden');
+            if (userAvatarInitials) { userAvatarInitials.textContent = initials; userAvatarInitials.classList.remove('hidden'); }
+            accountAvatarEl?.classList.add('hidden');
+            if (accountAvatarInitials) { accountAvatarInitials.textContent = initials; accountAvatarInitials.classList.remove('hidden'); }
         }
-        if (userName) {
-            userName.textContent = user.user_metadata?.full_name || user.email?.split('@')[0] || 'User';
-        }
+
+        // Populate account modal details
+        if (accountNameEl) accountNameEl.textContent = displayName;
+        if (accountEmailEl) accountEmailEl.textContent = user.email || '';
 
         updateSyncUI('syncing');
         performFullListsSync();
@@ -1166,6 +1198,308 @@ function closeAccountModal() {
 
 function openAccountModal() {
     accountModal?.classList.remove('hidden');
+}
+
+// ============================================
+// AUTH MODAL
+// ============================================
+
+const authModal = document.getElementById('auth-modal');
+const authModalClose = document.getElementById('auth-modal-close');
+const authModalTitle = document.getElementById('auth-modal-title');
+const authGoogleBtn = document.getElementById('auth-google-btn');
+const authEmailToggle = document.getElementById('auth-email-toggle');
+const authEmailForm = document.getElementById('auth-email-form');
+const authEmailInput = document.getElementById('auth-email');
+const authPasswordInput = document.getElementById('auth-password');
+const authError = document.getElementById('auth-error');
+const authSuccess = document.getElementById('auth-success');
+const authSubmitBtn = document.getElementById('auth-submit-btn');
+const authForgotBtn = document.getElementById('auth-forgot-btn');
+const authToggleText = document.getElementById('auth-toggle-text');
+const authToggleBtn = document.getElementById('auth-toggle-btn');
+
+// Reset modal elements
+const resetModal = document.getElementById('reset-modal');
+const resetModalClose = document.getElementById('reset-modal-close');
+const resetStepEmail = document.getElementById('reset-step-email');
+const resetStepSent = document.getElementById('reset-step-sent');
+const resetStepNew = document.getElementById('reset-step-new');
+const resetEmailInput = document.getElementById('reset-email');
+const resetError = document.getElementById('reset-error');
+const resetSendBtn = document.getElementById('reset-send-btn');
+const resetBackBtn = document.getElementById('reset-back-btn');
+const resetNewPassword = document.getElementById('reset-new-password');
+const resetConfirmPassword = document.getElementById('reset-confirm-password');
+const resetNewError = document.getElementById('reset-new-error');
+const resetUpdateBtn = document.getElementById('reset-update-btn');
+
+let authMode = 'signin'; // 'signin' or 'signup'
+
+function openAuthModal() {
+    authMode = 'signin';
+    updateAuthModalMode();
+    clearAuthForm();
+    authModal?.classList.remove('hidden');
+}
+
+function closeAuthModal() {
+    authModal?.classList.add('hidden');
+    clearAuthForm();
+}
+
+function clearAuthForm() {
+    if (authEmailInput) authEmailInput.value = '';
+    if (authPasswordInput) authPasswordInput.value = '';
+    authError?.classList.add('hidden');
+    authSuccess?.classList.add('hidden');
+    // Collapse email form
+    authEmailForm?.classList.add('hidden');
+    authEmailToggle?.classList.remove('hidden');
+}
+
+function updateAuthModalMode() {
+    if (authMode === 'signup') {
+        if (authModalTitle) authModalTitle.textContent = 'Create Account';
+        if (authSubmitBtn) authSubmitBtn.textContent = 'Sign Up';
+        if (authToggleText) authToggleText.textContent = 'Already have an account?';
+        if (authToggleBtn) authToggleBtn.textContent = 'Sign in';
+        if (authForgotBtn) authForgotBtn.classList.add('hidden');
+        if (authGoogleBtn) authGoogleBtn.textContent = '';
+        if (authGoogleBtn) authGoogleBtn.innerHTML = '<img src="images/google-icon.svg" alt="" class="auth-google-icon"> Sign up with Google';
+        if (authEmailToggle) authEmailToggle.textContent = 'Sign up with email';
+        if (authPasswordInput) authPasswordInput.setAttribute('autocomplete', 'new-password');
+    } else {
+        if (authModalTitle) authModalTitle.textContent = 'Sign In';
+        if (authSubmitBtn) authSubmitBtn.textContent = 'Sign In';
+        if (authToggleText) authToggleText.textContent = "Don't have an account?";
+        if (authToggleBtn) authToggleBtn.textContent = 'Sign up';
+        if (authForgotBtn) authForgotBtn.classList.remove('hidden');
+        if (authGoogleBtn) authGoogleBtn.innerHTML = '<img src="images/google-icon.svg" alt="" class="auth-google-icon"> Sign in with Google';
+        if (authEmailToggle) authEmailToggle.textContent = 'Sign in with email';
+        if (authPasswordInput) authPasswordInput.setAttribute('autocomplete', 'current-password');
+    }
+}
+
+function getAuthErrorMessage(error) {
+    const msg = error?.message || '';
+    if (msg.includes('Invalid login credentials')) return 'Incorrect email or password.';
+    if (msg.includes('Email not confirmed')) return 'Please confirm your email before signing in. Check your inbox.';
+    if (msg.includes('User already registered')) return 'An account with this email already exists. Try signing in instead.';
+    if (msg.includes('Password should be at least')) return 'Password must be at least 8 characters.';
+    if (msg.includes('rate limit') || msg.includes('too many requests')) return 'Too many attempts. Please wait a moment and try again.';
+    if (msg.includes('Email rate limit exceeded')) return 'Too many emails sent. Please wait before trying again.';
+    return msg || 'Something went wrong. Please try again.';
+}
+
+async function handleEmailAuth() {
+    const email = authEmailInput?.value?.trim();
+    const password = authPasswordInput?.value;
+
+    if (!email || !password) {
+        showAuthError('Please enter both email and password.');
+        return;
+    }
+
+    authSubmitBtn.disabled = true;
+    authError?.classList.add('hidden');
+    authSuccess?.classList.add('hidden');
+
+    try {
+        if (authMode === 'signup') {
+            const { data, error } = await SupabaseAuth.signUpWithEmail(email, password);
+            if (error) {
+                showAuthError(getAuthErrorMessage(error));
+                return;
+            }
+            // Check if email already exists (identities will be empty)
+            if (data?.user?.identities?.length === 0) {
+                showAuthError('An account with this email already exists. Try signing in instead.');
+                return;
+            }
+            // Success - show confirmation message
+            showAuthSuccess('Check your email for a confirmation link to complete sign-up.');
+        } else {
+            const { data, error } = await SupabaseAuth.signInWithEmail(email, password);
+            if (error) {
+                showAuthError(getAuthErrorMessage(error));
+                return;
+            }
+            // Success - modal will close via onAuthChange SIGNED_IN event
+        }
+    } finally {
+        authSubmitBtn.disabled = false;
+    }
+}
+
+function showAuthError(message) {
+    if (authError) {
+        authError.textContent = message;
+        authError.classList.remove('hidden');
+    }
+    authSuccess?.classList.add('hidden');
+}
+
+function showAuthSuccess(message) {
+    if (authSuccess) {
+        authSuccess.textContent = message;
+        authSuccess.classList.remove('hidden');
+    }
+    authError?.classList.add('hidden');
+}
+
+function openResetModal(step = 'email') {
+    closeAuthModal();
+    resetModal?.classList.remove('hidden');
+    resetError?.classList.add('hidden');
+    resetNewError?.classList.add('hidden');
+
+    // Show appropriate step
+    resetStepEmail?.classList.toggle('hidden', step !== 'email');
+    resetStepSent?.classList.toggle('hidden', step !== 'sent');
+    resetStepNew?.classList.toggle('hidden', step !== 'new');
+}
+
+function closeResetModal() {
+    resetModal?.classList.add('hidden');
+    if (resetEmailInput) resetEmailInput.value = '';
+    if (resetNewPassword) resetNewPassword.value = '';
+    if (resetConfirmPassword) resetConfirmPassword.value = '';
+}
+
+async function handleResetRequest() {
+    const email = resetEmailInput?.value?.trim();
+    if (!email) {
+        if (resetError) { resetError.textContent = 'Please enter your email.'; resetError.classList.remove('hidden'); }
+        return;
+    }
+
+    resetSendBtn.disabled = true;
+    resetError?.classList.add('hidden');
+
+    try {
+        const { error } = await SupabaseAuth.resetPassword(email);
+        if (error) {
+            if (resetError) { resetError.textContent = getAuthErrorMessage(error); resetError.classList.remove('hidden'); }
+            return;
+        }
+        // Show confirmation step
+        openResetModal('sent');
+    } finally {
+        resetSendBtn.disabled = false;
+    }
+}
+
+async function handlePasswordUpdate() {
+    const newPass = resetNewPassword?.value;
+    const confirmPass = resetConfirmPassword?.value;
+
+    if (!newPass || !confirmPass) {
+        if (resetNewError) { resetNewError.textContent = 'Please fill in both fields.'; resetNewError.classList.remove('hidden'); }
+        return;
+    }
+    if (newPass !== confirmPass) {
+        if (resetNewError) { resetNewError.textContent = 'Passwords do not match.'; resetNewError.classList.remove('hidden'); }
+        return;
+    }
+    if (newPass.length < 8) {
+        if (resetNewError) { resetNewError.textContent = 'Password must be at least 8 characters.'; resetNewError.classList.remove('hidden'); }
+        return;
+    }
+
+    resetUpdateBtn.disabled = true;
+    resetNewError?.classList.add('hidden');
+
+    try {
+        const { error } = await SupabaseAuth.updatePassword(newPass);
+        if (error) {
+            if (resetNewError) { resetNewError.textContent = getAuthErrorMessage(error); resetNewError.classList.remove('hidden'); }
+            return;
+        }
+        closeResetModal();
+        // Show a brief toast/notification
+        showToast('Password updated successfully!');
+    } finally {
+        resetUpdateBtn.disabled = false;
+    }
+}
+
+function showToast(message) {
+    const toast = document.createElement('div');
+    toast.className = 'auth-toast';
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    requestAnimationFrame(() => toast.classList.add('visible'));
+    setTimeout(() => {
+        toast.classList.remove('visible');
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
+function initAuthModal() {
+    // Auth modal open/close
+    authModalClose?.addEventListener('click', closeAuthModal);
+    authModal?.addEventListener('click', (e) => {
+        if (e.target === authModal) closeAuthModal();
+    });
+
+    // Google sign-in button within auth modal
+    authGoogleBtn?.addEventListener('click', async () => {
+        closeAuthModal();
+        await SupabaseAuth.signInWithGoogle();
+    });
+
+    // Toggle email form visibility
+    authEmailToggle?.addEventListener('click', () => {
+        authEmailForm?.classList.remove('hidden');
+        authEmailToggle?.classList.add('hidden');
+        authEmailInput?.focus();
+    });
+
+    // Toggle between sign-in and sign-up
+    authToggleBtn?.addEventListener('click', () => {
+        authMode = authMode === 'signin' ? 'signup' : 'signin';
+        updateAuthModalMode();
+        authError?.classList.add('hidden');
+        authSuccess?.classList.add('hidden');
+    });
+
+    // Submit email auth
+    authSubmitBtn?.addEventListener('click', handleEmailAuth);
+
+    // Enter key on password field submits
+    authPasswordInput?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') handleEmailAuth();
+    });
+
+    // Forgot password
+    authForgotBtn?.addEventListener('click', () => {
+        openResetModal('email');
+        // Pre-fill email if user already typed one
+        if (authEmailInput?.value && resetEmailInput) {
+            resetEmailInput.value = authEmailInput.value;
+        }
+    });
+
+    // Reset modal close
+    resetModalClose?.addEventListener('click', closeResetModal);
+    resetModal?.addEventListener('click', (e) => {
+        if (e.target === resetModal) closeResetModal();
+    });
+
+    // Reset modal actions
+    resetSendBtn?.addEventListener('click', handleResetRequest);
+    resetEmailInput?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') handleResetRequest();
+    });
+    resetBackBtn?.addEventListener('click', () => {
+        closeResetModal();
+        openAuthModal();
+    });
+    resetUpdateBtn?.addEventListener('click', handlePasswordUpdate);
+    resetConfirmPassword?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') handlePasswordUpdate();
+    });
 }
 
 function closeListsModal() {
@@ -2587,18 +2921,31 @@ function init() {
             // Check for pending invite after sign-in
             if (event === 'SIGNED_IN' && user) {
                 checkPendingInvite();
+                closeAuthModal();
+            }
+            // Handle password recovery flow (user clicked reset link in email)
+            if (event === 'PASSWORD_RECOVERY') {
+                openResetModal('new');
             }
         });
 
-        signInBtn?.addEventListener('click', async () => {
-            closeAccountModal();
-            await SupabaseAuth.signInWithGoogle();
+        // Sign-in button opens auth modal (instead of directly calling Google)
+        signInBtn?.addEventListener('click', () => {
+            openAuthModal();
+        });
+
+        // Listen for cross-module auth modal open events
+        window.addEventListener('open-auth-modal', () => {
+            openAuthModal();
         });
 
         // Click on user info opens account modal
         userInfo?.addEventListener('click', () => {
             openAccountModal();
         });
+
+        // Wire up auth modal
+        initAuthModal();
 
         // Log visit and update visitor stats
         SupabaseAuth.logVisit().then(({ data }) => {

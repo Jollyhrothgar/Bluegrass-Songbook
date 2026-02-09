@@ -82,6 +82,83 @@ async function signInWithGoogle() {
     return { data, error };
 }
 
+// Sign up with email/password
+async function signUpWithEmail(email, password) {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Auth not available' } };
+    }
+
+    const redirectUrl = window.location.origin + window.location.pathname;
+
+    const { data, error } = await supabaseClient.auth.signUp({
+        email,
+        password,
+        options: {
+            emailRedirectTo: redirectUrl
+        }
+    });
+
+    if (error) {
+        console.error('[Auth] Sign up error:', error);
+    }
+
+    return { data, error };
+}
+
+// Sign in with email/password
+async function signInWithEmail(email, password) {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Auth not available' } };
+    }
+
+    const { data, error } = await supabaseClient.auth.signInWithPassword({
+        email,
+        password
+    });
+
+    if (error) {
+        console.error('[Auth] Sign in error:', error);
+    }
+
+    return { data, error };
+}
+
+// Send password reset email
+async function resetPassword(email) {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Auth not available' } };
+    }
+
+    const redirectUrl = window.location.origin + window.location.pathname;
+
+    const { data, error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+        redirectTo: redirectUrl
+    });
+
+    if (error) {
+        console.error('[Auth] Reset password error:', error);
+    }
+
+    return { data, error };
+}
+
+// Update password (for logged-in user, e.g. after reset link)
+async function updatePassword(newPassword) {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Auth not available' } };
+    }
+
+    const { data, error } = await supabaseClient.auth.updateUser({
+        password: newPassword
+    });
+
+    if (error) {
+        console.error('[Auth] Update password error:', error);
+    }
+
+    return { data, error };
+}
+
 // Sign out
 async function signOut() {
     if (!supabaseClient) return { error: null };
@@ -1322,6 +1399,10 @@ window.SupabaseAuth = {
     init: initSupabase,
     onAuthChange,
     signInWithGoogle,
+    signUpWithEmail,
+    signInWithEmail,
+    resetPassword,
+    updatePassword,
     signOut,
     getUser,
     isLoggedIn,

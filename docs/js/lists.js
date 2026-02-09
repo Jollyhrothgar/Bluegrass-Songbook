@@ -4029,12 +4029,10 @@ function initLocalShareModal() {
     backdrop?.addEventListener('click', closeLocalShareModal);
     closeBtn?.addEventListener('click', closeLocalShareModal);
 
-    // Sign in button
-    signInBtn?.addEventListener('click', async () => {
+    // Sign in button - dispatch event to open auth modal (supports email + Google)
+    signInBtn?.addEventListener('click', () => {
         closeLocalShareModal();
-        if (typeof SupabaseAuth !== 'undefined') {
-            await SupabaseAuth.signInWithGoogle();
-        }
+        window.dispatchEvent(new CustomEvent('open-auth-modal'));
     });
 
     // Copy as text button
