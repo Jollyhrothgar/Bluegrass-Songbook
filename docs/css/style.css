@@ -5503,6 +5503,149 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     vertical-align: middle;
 }
 
+/* Bounty view */
+.bounty-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.bounty-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.bounty-title {
+    font-size: 1.75rem;
+    margin: 0 0 0.25rem;
+}
+.bounty-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0 0 0.25rem;
+}
+.bounty-stats {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin: 0;
+}
+.bounty-group {
+    margin-bottom: 2rem;
+}
+.bounty-group-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+}
+.bounty-group-count {
+    font-weight: 400;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+.bounty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.75rem;
+}
+.bounty-card {
+    display: block;
+    padding: 0.75rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s;
+}
+.bounty-card:hover {
+    border-color: var(--accent);
+}
+.bounty-card-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
+}
+.bounty-card-artist {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+.bounty-card-notes {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.3;
+}
+.bounty-empty {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 2rem;
+}
+.bounty-cta {
+    margin-top: 2rem;
+    padding: 1.25rem;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    text-align: center;
+}
+.bounty-cta p {
+    margin: 0 0 0.75rem;
+    color: var(--text-secondary);
+}
+.bounty-cta-btn {
+    display: inline-block;
+    padding: 0.6rem 1.25rem;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+}
+.bounty-cta-btn:hover {
+    background: var(--accent-hover);
+}
+
+/* Search empty results */
+.empty-results {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.empty-results-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.empty-results-hint {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+.empty-results-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+.empty-results-btn {
+    display: inline-block;
+    padding: 0.6rem 1.25rem;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+}
+.empty-results-btn:hover {
+    background: var(--accent-hover);
+}
+.empty-results-link {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+    .bounty-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Version picker modal */
 .version-picker {
     max-width: 450px;

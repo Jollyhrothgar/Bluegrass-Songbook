@@ -921,7 +921,19 @@ export function renderResults(songs, query) {
     if (!resultsDivEl) return;
 
     if (songs.length === 0) {
-        resultsDivEl.innerHTML = '<div class="loading">No songs found</div>';
+        const q = searchInputEl?.value?.trim() || '';
+        resultsDivEl.innerHTML = `
+            <div class="empty-results">
+                <p class="empty-results-title">No songs found</p>
+                ${q ? `
+                    <p class="empty-results-hint">Can't find "${escapeHtml(q)}"?</p>
+                    <div class="empty-results-actions">
+                        <a href="#request-song" class="empty-results-btn">Request this song</a>
+                        <a href="#bounty" class="empty-results-link">Browse the Bounty Board</a>
+                    </div>
+                ` : ''}
+            </div>
+        `;
         return;
     }
 

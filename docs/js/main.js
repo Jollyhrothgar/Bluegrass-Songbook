@@ -42,6 +42,7 @@ import {
 } from './lists.js';
 import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
 import { openWork, renderWorkView, getCurrentWork } from './work-view.js';
+import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints } from './editor.js';
 import { escapeHtml } from './utils.js';
@@ -435,6 +436,14 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 break;
+            case 'bounty':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                renderBountyView(resultsDiv);
+                break;
             case 'song-lists':
                 searchContainer?.classList.add('hidden');
                 resultsDiv?.classList.add('hidden');
@@ -666,6 +675,11 @@ function handleDeepLink() {
             // Song not found, go to search
             showView('search');
         }
+        return true;
+    } else if (hash === '#bounty') {
+        trackDeepLink('bounty', hash);
+        showView('bounty');
+        pushHistoryState('bounty', {}, true);
         return true;
     } else if (hash === '#request-song') {
         trackDeepLink('request-song', hash);
