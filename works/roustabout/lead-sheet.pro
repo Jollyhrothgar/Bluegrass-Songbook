@@ -1,31 +1,47 @@
 {meta: title Roustabout}
-{meta: x_lyrics_source bluegrass-lyrics}
-{meta: x_lyrics_url https://www.bluegrasslyrics.com/song/roustabout/}
 
-{start_of_verse}
-The fog is rolling out from Memphis
-Dark clouds are hangin’ round your door
-It’s a long long way from Mississippi
-To the Gulf of Mexico
+{start_of_verse: Intro}
+Fog is [G]rolling [C]down the [G]river
+Dark clouds [D]hanging mighty [G]low
+It's a long long [G]way, from [C]old saint [G]louis
+To the [D]gulf of [G]mexico
 {end_of_verse}
 
 {start_of_chorus}
-Well, I make my home on the Mississippi
-I’m a roustabout on a Steamboat line
-We hit the deck on a Monday morning
-Gonna make the dock on a Saturday night
+Well I make my [C]home on the [G]mississippi
+I’m a roustabout on a steam boat [D]now
+We hit the [C]deck on monday [G]morning
+Gonna make the [D]docks on saturday [G]night
 {end_of_chorus}
 
-{start_of_verse}
-Had me a gal way up in Vicksburg
-I tipped my hat every time she passed
-Then she ran off with a riverboat gambler
-With a black silk suit and a little mustache
+{start_of_verse: Verse 1}
+Got me a [G]gal way [C]down in [G]vicksburg
+We stopped [D]in every time we [G]passed
+Till she run [C]off with a riverboat [G]gambler
+With a new silk [D]suit and a little mus[G]tache
 {end_of_verse}
 
-{start_of_verse}
-Now when I die there’s just one favor
-Don’t bury me down in the cold cold ground
-Just wrap me up down by the river
-Roll me over and point me south
+{start_of_chorus}
+Well I make my [C]home on the [G]mississippi
+I’m a roustabout on a steam boat [D]now
+We hit the [C]deck on monday [G]morning
+Gonna make the [D]docks on saturday [G]night
+{end_of_chorus}
+
+{start_of_verse: Verse 2}
+Now when I [G]die do [C]me one [G]favor
+Don’t lay [D]down in the cold cold [G]ground
+Just take me [C]out to the middle of the [G]river
+Roll me [D]over and point me [G]south
+{end_of_verse}
+
+{start_of_chorus}
+Well I make my [C]home on the [G]mississippi
+I’m a roustabout on a steam boat [D]now
+We hit the [C]deck on monday [G]morning
+Gonna make the [D]docks on saturday [G]night
+{end_of_chorus}
+
+{start_of_verse: Outro}
+Gonna make the [D]docks on a saturday [G]night
 {end_of_verse}
