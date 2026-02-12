@@ -1,11 +1,14 @@
 id: roustabout
-title: Roustabout
+title: "Roustabout"
+artist: ""
+composers: []
+default_key: G
+tags: []
 parts:
   - type: lead-sheet
     format: chordpro
     file: lead-sheet.pro
     default: true
     provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/roustabout/
-      imported_at: '2026-02-08'
+      source: trusted-user
+      imported_at: '2026-02-12'
