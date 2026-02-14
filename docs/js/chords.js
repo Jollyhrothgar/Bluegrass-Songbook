@@ -165,14 +165,17 @@ export function detectKey(chords) {
         scores[keyName] = (matchWeight + tonicWeight) / totalChords;
     }
 
-    // Find best key
+    // Find best key, using tonic frequency as tiebreaker
     let bestKey = null;
     let bestScore = 0;
+    let bestTonicFreq = 0;
 
     for (const [key, score] of Object.entries(scores)) {
-        if (score > bestScore) {
+        const tonicFreq = chordCounts[normalizeChord(KEYS[key].tonic)] || 0;
+        if (score > bestScore || (score === bestScore && tonicFreq > bestTonicFreq)) {
             bestScore = score;
             bestKey = key;
+            bestTonicFreq = tonicFreq;
         }
     }
 
@@ -196,13 +199,25 @@ export function detectKey(chords) {
         }
     }
 
-    // Prefer common keys when scores are very close
+    // Prefer common keys when scores are very close,
+    // but only if the preferred key's tonic is at least as frequent as the current best's tonic.
+    // This prevents overriding a key with strong tonic evidence (e.g., E with 25 occurrences)
+    // in favor of a common key with a weaker tonic (e.g., A with 12 occurrences).
     const preferredOrder = ['G', 'C', 'D', 'A', 'E', 'Am', 'Em', 'Dm', 'F', 'Bm', 'Bb', 'Eb'];
-    for (const key of preferredOrder) {
-        if (scores[key] && scores[key] >= bestScore - 0.03) {
-            bestKey = key;
-            bestScore = scores[key];
-            break;
+    if (bestKey) {
+        const bestTonic = normalizeChord(KEYS[bestKey].tonic);
+        const bestTonicCount = chordCounts[bestTonic] || 0;
+        for (const key of preferredOrder) {
+            if (key === bestKey) break; // Already the best and preferred
+            if (scores[key] && scores[key] >= bestScore - 0.03) {
+                const preferredTonic = normalizeChord(KEYS[key].tonic);
+                const preferredTonicCount = chordCounts[preferredTonic] || 0;
+                if (preferredTonicCount >= bestTonicCount) {
+                    bestKey = key;
+                    bestScore = scores[key];
+                    break;
+                }
+            }
         }
     }
 

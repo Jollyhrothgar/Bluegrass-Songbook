@@ -7,7 +7,7 @@ import {
     editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
 import { escapeHtml } from './utils.js';
-import { extractChords, detectKey, toNashville, transposeChord } from './chords.js';
+import { extractChords, detectKey, toNashville, transposeChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
 import { openSuperUserRequestModal } from './superuser-request.js';
@@ -31,6 +31,7 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 
 // Module-level state
 let editorDetectedKey = null;
+let editorKeyPinned = false; // Whether the user manually set the key
 let autoDetectFormat = true; // Whether to auto-clean pasted content
 
 // DOM element references (set by init)
@@ -55,7 +56,7 @@ let hintsCloseEl = null;
 let autoDetectCheckboxEl = null;
 let editorTransposeUpEl = null;
 let editorTransposeDownEl = null;
-let editorKeyDisplayEl = null;
+let editorKeySelectEl = null;
 
 // Other DOM references
 let navSearchEl = null;
@@ -77,6 +78,9 @@ export function enterEditMode(song, options = {}) {
     setEditMode(true);
     setEditingSongId(song.id);
     trackEditor('edit', song.id);
+
+    // Reset key pin state for new edit session
+    editorKeyPinned = false;
 
     // Populate editor with song data
     if (editorTitleEl) editorTitleEl.value = song.title || '';
@@ -122,6 +126,7 @@ export function enterEditMode(song, options = {}) {
 export function exitEditMode() {
     setEditMode(false);
     setEditingSongId(null);
+    editorKeyPinned = false;
     if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
     if (editorCommentEl) editorCommentEl.value = '';
     if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
@@ -559,6 +564,36 @@ function editorRenderLine(line) {
 }
 
 /**
+ * Update the editor key select dropdown
+ */
+function updateEditorKeySelect(detectedKey, detectedMode) {
+    if (!editorKeySelectEl) return;
+
+    const keyList = detectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
+
+    // Rebuild options only if key list type changed
+    const currentOptionCount = editorKeySelectEl.options.length;
+    const needsRebuild = currentOptionCount !== keyList.length + 1; // +1 for "Key: ?" option
+
+    if (needsRebuild) {
+        editorKeySelectEl.innerHTML = '';
+        const placeholder = document.createElement('option');
+        placeholder.value = '';
+        placeholder.textContent = 'Key: ?';
+        editorKeySelectEl.appendChild(placeholder);
+
+        for (const k of keyList) {
+            const opt = document.createElement('option');
+            opt.value = k;
+            opt.textContent = k;
+            editorKeySelectEl.appendChild(opt);
+        }
+    }
+
+    editorKeySelectEl.value = detectedKey || '';
+}
+
+/**
  * Update editor preview
  */
 export function updateEditorPreview() {
@@ -574,13 +609,15 @@ export function updateEditorPreview() {
     }
 
     const chords = extractChords(content);
-    const { key } = detectKey(chords);
-    editorDetectedKey = key;
+    const detected = detectKey(chords);
 
-    // Update key display
-    if (editorKeyDisplayEl) {
-        editorKeyDisplayEl.textContent = key ? `Key: ${key}` : 'Key: ?';
+    // Only update key if user hasn't manually pinned it
+    if (!editorKeyPinned) {
+        editorDetectedKey = detected.key;
+        updateEditorKeySelect(detected.key, detected.mode);
     }
+
+    const key = editorDetectedKey;
 
     const sections = editorParseContent(content);
 
@@ -620,6 +657,7 @@ export function editorGenerateChordPro() {
     if (title) output += `{meta: title ${title}}\n`;
     if (artist) output += `{meta: artist ${artist}}\n`;
     if (writer) output += `{meta: composer ${writer}}\n`;
+    if (editorDetectedKey) output += `{key: ${editorDetectedKey}}\n`;
 
     if (output) output += '\n';
 
@@ -702,7 +740,7 @@ export function initEditor(options) {
         autoDetectCheckbox,
         editorTransposeUp,
         editorTransposeDown,
-        editorKeyDisplay,
+        editorKeySelect,
         navSearch,
         navAddSong,
         navFavorites,
@@ -731,7 +769,7 @@ export function initEditor(options) {
     autoDetectCheckboxEl = autoDetectCheckbox;
     editorTransposeUpEl = editorTransposeUp;
     editorTransposeDownEl = editorTransposeDown;
-    editorKeyDisplayEl = editorKeyDisplay;
+    editorKeySelectEl = editorKeySelect;
     navSearchEl = navSearch;
     navAddSongEl = navAddSong;
     navFavoritesEl = navFavorites;
@@ -820,6 +858,21 @@ export function initEditor(options) {
         });
     }
 
+    // Key select - allows user to override detected key without transposing
+    if (editorKeySelectEl) {
+        editorKeySelectEl.addEventListener('change', () => {
+            const selected = editorKeySelectEl.value;
+            if (selected) {
+                editorDetectedKey = selected;
+                editorKeyPinned = true;
+            } else {
+                // Reset to auto-detect
+                editorKeyPinned = false;
+            }
+            updateEditorPreview();
+        });
+    }
+
     // Auto-detect format toggle
     if (autoDetectCheckboxEl) {
         autoDetectCheckboxEl.addEventListener('change', (e) => {
@@ -827,10 +880,11 @@ export function initEditor(options) {
         });
     }
 
-    // Transpose buttons
+    // Transpose buttons - these modify actual chords, so let key re-detect
     if (editorTransposeUpEl) {
         editorTransposeUpEl.addEventListener('click', () => {
             if (editorContentEl) {
+                editorKeyPinned = false;
                 editorContentEl.value = editorTransposeContent(editorContentEl.value, 1);
                 updateEditorPreview();
             }
@@ -840,6 +894,7 @@ export function initEditor(options) {
     if (editorTransposeDownEl) {
         editorTransposeDownEl.addEventListener('click', () => {
             if (editorContentEl) {
+                editorKeyPinned = false;
                 editorContentEl.value = editorTransposeContent(editorContentEl.value, -1);
                 updateEditorPreview();
             }
