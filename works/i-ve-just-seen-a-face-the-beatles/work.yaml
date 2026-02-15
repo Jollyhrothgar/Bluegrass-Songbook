@@ -1,0 +1,17 @@
+id: i-ve-just-seen-a-face-the-beatles
+title: "I've Just Seen a Face"
+artist: "The Beatles"
+composers: []
+default_key: G
+status: placeholder
+tags: []
+parts:
+  - type: document
+    format: pdf
+    file: ive_just_seen_a_face.pdf
+    instrument: banjo
+    label: "Handwritten banjo tabs."
+    provenance:
+      source: user-submission
+      submitted_by: trusted-user
+      submitted_at: '2026-02-15'
