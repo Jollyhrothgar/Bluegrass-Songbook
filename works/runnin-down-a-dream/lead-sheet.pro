@@ -1,11 +1,8 @@
 {meta: title Runnin Down A Dream}
 {meta: artist Tom Petty}
-{meta: x_source manual}
-{meta: x_submitted_by github:Jollyhrothgar}
-{meta: x_submitted 2026-01-10}
-{meta: x_submission_issue 139}
+{key: E}
 
-{start_of_verse: Verse 1}
+{start_of_verse: Verse}
 It was a [E]beautiful day, the sun beat down
 I had the [D]radio on, I was [E]drivin'
 Trees flew by, me and Del was singin', Little [D]Runaway 
@@ -19,7 +16,7 @@ Workin' on a [G]myste[E]ry, [E]goin' wher[G]ever it [A]leads
 Runnin' [G]down a [E]dream   
 {end_of_chorus}
 
-{start_of_verse: Verse 2}
+{start_of_verse: Verse}
 I [E]felt so good, like anything was possible
 I hit [D]cruise control, and rubbed my [E]eyes
 The last three days, the rain was un-stoppable
@@ -33,7 +30,7 @@ Workin' on a [G]myste[E]ry, [E]goin' wher[G]ever it [A]leads
 Runnin' [G]down a [E]dream
 {end_of_chorus}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse}
 I [E]rolled on, as the sky grew dark
 I put the [D]pedal down, to make some [E]time
 There's something good, waitin' down this road
