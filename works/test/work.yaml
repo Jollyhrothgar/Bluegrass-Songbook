@@ -1,0 +1,14 @@
+id: test
+title: "Test"
+artist: ""
+composers: []
+default_key: C
+tags: []
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: trusted-user
+      imported_at: '2026-02-15'
