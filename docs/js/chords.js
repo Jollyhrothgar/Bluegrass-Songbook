@@ -157,7 +157,7 @@ export function detectKey(chords) {
                 matchWeight += count;
                 // Extra weight for tonic chord
                 if (chord === normalizedTonic) {
-                    tonicWeight += count * 0.5; // 50% bonus for tonic
+                    tonicWeight += count * 1.0; // 100% bonus for tonic (double weight)
                 }
             }
         }
@@ -224,7 +224,7 @@ export function detectKey(chords) {
     return {
         key: bestKey,
         mode: bestKey ? KEYS[bestKey].mode : null,
-        confidence: Math.round((bestScore / 1.5) * 100) // Normalize since we added tonic bonus
+        confidence: Math.round((bestScore / 2.0) * 100) // Normalize since tonic gets 100% bonus
     };
 }
 

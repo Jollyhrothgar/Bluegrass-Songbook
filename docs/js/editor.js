@@ -7,7 +7,7 @@ import {
     editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
 import { escapeHtml } from './utils.js';
-import { extractChords, detectKey, toNashville, transposeChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
+import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
 import { openSuperUserRequestModal } from './superuser-request.js';
@@ -407,7 +407,8 @@ export function cleanUltimateGuitarPaste(text) {
             (line === 'X' && i > songStartIndex + 10) ||
             line.includes('Please, rate this tab') ||
             line.match(/^\d+\.\d+$/) ||
-            line.match(/^\d+ rates$/)) {
+            line.match(/^\d+ rates$/) ||
+            /^\*?\s*Alternates?\s*:?\s*$/i.test(line)) {
             songEndIndex = i;
             break;
         }
@@ -858,17 +859,18 @@ export function initEditor(options) {
         });
     }
 
-    // Key select - allows user to override detected key without transposing
+    // Key select - transpose content to the selected key
     if (editorKeySelectEl) {
         editorKeySelectEl.addEventListener('change', () => {
             const selected = editorKeySelectEl.value;
-            if (selected) {
-                editorDetectedKey = selected;
-                editorKeyPinned = true;
-            } else {
-                // Reset to auto-detect
-                editorKeyPinned = false;
+            if (selected && editorDetectedKey && selected !== editorDetectedKey && editorContentEl) {
+                const semitones = getSemitonesBetweenKeys(editorDetectedKey, selected);
+                if (semitones !== 0) {
+                    editorContentEl.value = editorTransposeContent(editorContentEl.value, semitones);
+                }
             }
+            // After transposing, let key re-detect from new chords
+            editorKeyPinned = false;
             updateEditorPreview();
         });
     }
