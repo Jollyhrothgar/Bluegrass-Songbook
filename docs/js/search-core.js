@@ -1,7 +1,8 @@
 // Core search functionality for Bluegrass Songbook
 
 import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs } from './state.js';
-import { highlightMatch, escapeHtml, isTabOnlyWork, isPlaceholder } from './utils.js';
+import { highlightMatch, escapeHtml, isTabOnlyWork, isPlaceholder, requireLogin } from './utils.js';
+import { openAddSongPicker } from './add-song-picker.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
     isFavorite, reorderFavoriteItem, showFavorites,
@@ -928,12 +929,16 @@ export function renderResults(songs, query) {
                 ${q ? `
                     <p class="empty-results-hint">Can't find "${escapeHtml(q)}"?</p>
                     <div class="empty-results-actions">
-                        <a href="#request-song" class="empty-results-btn">Request this song</a>
+                        <button class="empty-results-btn" id="empty-request-btn">Request this song</button>
                         <a href="#bounty" class="empty-results-link">Browse the Bounty Board</a>
                     </div>
                 ` : ''}
             </div>
         `;
+        resultsDivEl.querySelector('#empty-request-btn')?.addEventListener('click', () => {
+            if (!requireLogin('request songs')) return;
+            openAddSongPicker({ mode: 'request' });
+        });
         return;
     }
 

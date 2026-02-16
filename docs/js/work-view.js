@@ -19,7 +19,8 @@ import {
 
 import { parseChordPro, showVersionPicker } from './song-view.js';
 import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS, extractChords } from './chords.js';
-import { escapeHtml, isPlaceholder } from './utils.js';
+import { escapeHtml, isPlaceholder, requireLogin } from './utils.js';
+import { openAddSongPicker } from './add-song-picker.js';
 import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
 import { clearListView } from './lists.js';
 import { getTagCategory, formatTagName } from './tags.js';
@@ -310,6 +311,19 @@ function buildPartsFromIndex(song) {
         }
     }
 
+    // Check for freshly-uploaded document (stashed blob URL from doc-upload)
+    const pending = window.__pendingDocuments?.[song.id];
+    if (pending && !song.document_parts?.length) {
+        parts.push({
+            type: 'document',
+            format: 'pdf',
+            label: pending.label || 'PDF',
+            file: pending.url,
+            default: parts.length === 0,
+            pending: true,
+        });
+    }
+
     return parts;
 }
 
@@ -317,7 +331,14 @@ function buildPartsFromIndex(song) {
  * Open a work by ID
  */
 export async function openWork(workId, options = {}) {
-    const song = allSongs.find(s => s.id === workId);
+    let song = allSongs.find(s => s.id === workId);
+    if (!song) {
+        // Song might be in pending_songs but not yet merged (race condition on load)
+        if (window.refreshPendingSongs) {
+            await window.refreshPendingSongs();
+            song = allSongs.find(s => s.id === workId);
+        }
+    }
     if (!song) {
         console.error(`Work not found: ${workId}`);
         return;
@@ -423,10 +444,18 @@ export function renderWorkView() {
             <div class="placeholder-cta-text">${hasContent
                 ? 'This song has reference material but no lead sheet or tablature yet.'
                 : 'This song doesn\'t have a lead sheet or tablature yet.'}</div>
-            <button class="placeholder-contribute-btn" onclick="window.location.hash='#request-song'">
-                Help complete this song
-            </button>
+            <button class="placeholder-contribute-btn">Help complete this song</button>
         `;
+        cta.querySelector('.placeholder-contribute-btn').addEventListener('click', () => {
+            if (!requireLogin('contribute')) return;
+            openAddSongPicker({
+                mode: 'contribute',
+                targetSlug: currentWork.id,
+                title: currentWork.title,
+                artist: currentWork.artist,
+                key: currentWork.key,
+            });
+        });
         container.appendChild(cta);
     }
 }
@@ -696,7 +725,14 @@ function renderDocumentPart(part, container) {
     const downloadUrl = part.file;
     const label = escapeHtml(part.label || 'Document');
 
+    const pendingBanner = part.pending
+        ? `<div class="upload-processing-banner">
+            Your upload is saved! It may take a few minutes to appear for other users.
+           </div>`
+        : '';
+
     container.innerHTML = `
+        ${pendingBanner}
         <div class="document-viewer">
             <div class="document-toolbar">
                 <span class="document-label">${label}</span>

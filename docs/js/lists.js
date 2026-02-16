@@ -15,7 +15,8 @@ import {
     focusedListId, setFocusedListId
 } from './state.js';
 import { openSong } from './song-view.js';
-import { escapeHtml, generateLocalId } from './utils.js';
+import { escapeHtml, generateLocalId, requireLogin } from './utils.js';
+import { openAddSongPicker } from './add-song-picker.js';
 import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
@@ -3679,7 +3680,8 @@ export function initLists(options) {
 
     // List header: Request song button
     listRequestBtnEl?.addEventListener('click', () => {
-        window.location.hash = '#request-song';
+        if (!requireLogin('request songs')) return;
+        openAddSongPicker({ mode: 'request' });
     });
 
     // List header: Duplicate button

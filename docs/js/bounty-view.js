@@ -2,8 +2,9 @@
 // Replaces the static bounty.html with a SPA view at #bounty
 
 import { allSongs } from './state.js';
-import { isPlaceholder, escapeHtml } from './utils.js';
+import { isPlaceholder, escapeHtml, requireLogin } from './utils.js';
 import { formatTagName } from './tags.js';
+import { openAddSongPicker } from './add-song-picker.js';
 
 /**
  * Render the bounty view showing all placeholder works grouped by tag
@@ -55,8 +56,13 @@ export function renderBountyView(container) {
             ${placeholders.length > 0 ? groupsHtml : '<p class="bounty-empty">No bounty items right now. Check back soon!</p>'}
             <div class="bounty-cta">
                 <p>Know a song we're missing?</p>
-                <a href="#request-song" class="bounty-cta-btn">Request a Song</a>
+                <button class="bounty-cta-btn" id="bounty-request-btn">Request a Song</button>
             </div>
         </div>
     `;
+
+    container.querySelector('#bounty-request-btn')?.addEventListener('click', () => {
+        if (!requireLogin('request songs')) return;
+        openAddSongPicker({ mode: 'request' });
+    });
 }

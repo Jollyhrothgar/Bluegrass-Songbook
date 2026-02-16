@@ -3691,6 +3691,268 @@ mark {
     }
 }
 
+/* Add Song Type Picker */
+.add-song-picker-content {
+    max-width: 400px;
+}
+
+.picker-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.picker-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--bg-secondary);
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--text);
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.picker-card:hover {
+    border-color: var(--accent);
+    background: var(--bg);
+}
+
+.picker-card-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.picker-card-title {
+    font-weight: 600;
+    display: block;
+}
+
+.picker-card-desc {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    display: block;
+    margin-top: 0.15rem;
+}
+
+/* Request form inside picker */
+.picker-request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.picker-back-btn {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.25rem 0;
+    font-family: inherit;
+}
+
+.picker-back-btn:hover {
+    text-decoration: underline;
+}
+
+.picker-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.picker-form-fields input,
+.picker-form-fields select,
+.picker-form-fields textarea {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.picker-form-fields textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+.picker-dedup-warning {
+    padding: 0.5rem 0.75rem;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.dedup-link {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.picker-form-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.picker-req-status {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.picker-req-status.success {
+    color: var(--success, #22c55e);
+}
+
+.picker-req-status.error {
+    color: var(--error, #ef4444);
+}
+
+/* Bounty CTA button reset (was <a>, now <button>) */
+.bounty-cta-btn {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Empty results button reset (was <a>, now <button>) */
+.empty-results-btn {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Upload drop zone */
+.upload-dropzone {
+    border: 2px dashed var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.upload-dropzone:hover,
+.upload-dropzone.dropzone-active {
+    border-color: var(--accent);
+    background: rgba(37, 99, 235, 0.05);
+}
+
+.dropzone-icon {
+    font-size: 2rem;
+}
+
+.dropzone-text {
+    font-weight: 500;
+}
+
+.dropzone-hint {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Upload file info bar */
+.upload-file-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+}
+
+.upload-file-name {
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.upload-file-size {
+    color: var(--text-secondary);
+    flex-shrink: 0;
+}
+
+.upload-file-remove {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 0 0.25rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.upload-file-remove:hover {
+    color: var(--text);
+}
+
+/* Upload image preview */
+.upload-preview-image {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+}
+
+/* Rotate controls in upload preview */
+.upload-rotate-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.upload-rotate-btn {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 0.35rem 0.75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--text);
+    line-height: 1;
+}
+.upload-rotate-btn:hover {
+    border-color: var(--accent);
+    background: var(--bg);
+}
+
+/* Processing banner for freshly uploaded documents */
+.upload-processing-banner {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
 /* Source view (side-by-side ChordPro and rendered) */
 .source-view {
     display: grid;

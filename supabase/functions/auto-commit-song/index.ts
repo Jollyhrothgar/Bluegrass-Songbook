@@ -23,11 +23,13 @@ interface PendingSong {
   title: string
   artist: string | null
   composer: string | null
-  content: string
+  content: string | null
   key: string | null
   mode: string | null
   tags: Record<string, unknown>
   attachment?: Attachment
+  create_placeholder?: boolean
+  instrument?: string
 }
 
 function buildWorkYaml(entry: PendingSong): string {
@@ -48,6 +50,31 @@ parts:
     provenance:
       source: trusted-user
       imported_at: '${today}'
+`
+}
+
+function buildPlaceholderWorkYaml(entry: PendingSong, docFilename: string, label: string): string {
+  const today = new Date().toISOString().split('T')[0]
+  const artist = entry.artist ? `"${entry.artist.replace(/"/g, '\\"')}"` : '""'
+
+  const instrumentLine = entry.instrument ? `\n    instrument: ${entry.instrument}` : ''
+
+  return `id: ${entry.id}
+title: "${entry.title.replace(/"/g, '\\"')}"
+artist: ${artist}
+composers: []
+default_key: ${entry.key || 'C'}
+status: placeholder
+tags: []
+parts:
+  - type: document
+    format: pdf
+    file: ${docFilename}${instrumentLine}
+    label: "${label.replace(/"/g, '\\"')}"
+    provenance:
+      source: user-submission
+      submitted_by: trusted-user
+      submitted_at: '${today}'
 `
 }
 
@@ -192,6 +219,39 @@ serve(async (req) => {
       throw new Error('Supabase credentials not configured')
     }
 
+    // Verify caller is a trusted user
+    const authHeader = req.headers.get('Authorization')
+    if (!authHeader) {
+      return new Response(
+        JSON.stringify({ error: 'Missing Authorization header' }),
+        { status: 401, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+
+    const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey)
+    const token = authHeader.replace('Bearer ', '')
+    const { data: { user }, error: authError } = await supabaseAdmin.auth.getUser(token)
+
+    if (authError || !user) {
+      return new Response(
+        JSON.stringify({ error: 'Invalid or expired token' }),
+        { status: 401, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+
+    const { data: trustedUser } = await supabaseAdmin
+      .from('trusted_users')
+      .select('user_id')
+      .eq('user_id', user.id)
+      .single()
+
+    if (!trustedUser) {
+      return new Response(
+        JSON.stringify({ error: 'Not authorized — trusted user status required' }),
+        { status: 403, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+
     const entry: PendingSong = await req.json()
 
     // Handle document attachment uploads (no lead sheet content required)
@@ -223,7 +283,21 @@ serve(async (req) => {
           const updatedYaml = appendDocumentPart(existingYaml, filename, label)
           await commitFile(workYamlPath, updatedYaml, `Update work.yaml: add document part for ${entry.id}`, githubToken)
         }
+      } else if (entry.create_placeholder) {
+        // Create NEW placeholder work.yaml with the document part
+        const newYaml = buildPlaceholderWorkYaml(entry, filename, label)
+        await commitFile(workYamlPath, newYaml, `Add placeholder: ${entry.title}`, githubToken)
       }
+
+      // Log to submission_log
+      await supabaseAdmin.from('submission_log').insert({
+        user_id: user.id,
+        action: 'doc_upload',
+        target_id: entry.id,
+        ip_address: req.headers.get('x-forwarded-for') || req.headers.get('cf-connecting-ip') || null,
+        user_agent: req.headers.get('user-agent') || null,
+        metadata: { title: entry.title, filename: entry.attachment.filename },
+      })
 
       return new Response(
         JSON.stringify({ success: true, binaryPath }),
@@ -254,10 +328,8 @@ serve(async (req) => {
     await commitFile(workPath, workYaml, commitMessage, githubToken)
     await commitFile(proPath, leadSheetPro, commitMessage, githubToken)
 
-    // Mark as committed in pending_songs using service role
-    const supabase = createClient(supabaseUrl, supabaseServiceKey)
-
-    const { error: updateError } = await supabase
+    // Mark as committed in pending_songs
+    const { error: updateError } = await supabaseAdmin
       .from('pending_songs')
       .update({ github_committed: true })
       .eq('id', entry.id)
@@ -266,6 +338,16 @@ serve(async (req) => {
       console.error('Failed to mark as committed:', updateError)
       // Don't fail the request - the commit succeeded
     }
+
+    // Log to submission_log
+    await supabaseAdmin.from('submission_log').insert({
+      user_id: user.id,
+      action: 'song_submit',
+      target_id: entry.id,
+      ip_address: req.headers.get('x-forwarded-for') || req.headers.get('cf-connecting-ip') || null,
+      user_agent: req.headers.get('user-agent') || null,
+      metadata: { title: entry.title, artist: entry.artist },
+    })
 
     return new Response(
       JSON.stringify({
