@@ -498,18 +498,20 @@ function renderWorkHeader() {
     // Focus header - shown in fullscreen mode
     const focusHeaderHtml = `
         <div class="focus-header">
-            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
-                <span>✕</span>
-                <span class="focus-btn-label">Exit</span>
-            </button>
+            <button id="focus-prev-btn" class="focus-list-nav" title="Previous song (←)">←</button>
             <div class="focus-title-area">
                 <span class="focus-title">${escapeHtml(title)}</span>
                 <span id="focus-position" class="focus-position"></span>
             </div>
+            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
+                <span>✕</span>
+                <span class="focus-btn-label">Exit</span>
+            </button>
             <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
                 <span>⚙️</span>
                 <span class="focus-btn-label">Controls</span>
             </button>
+            <button id="focus-next-btn" class="focus-list-nav" title="Next song (→)">→</button>
         </div>
     `;
 
@@ -538,15 +540,6 @@ function renderWorkHeader() {
         </div>
     `;
 
-    // Corner nav buttons for focus mode list navigation
-    const cornerNavHtml = `
-        <button id="focus-prev-btn" class="focus-corner-nav focus-corner-prev" title="Previous song (←)">
-            <span class="corner-nav-arrow">←</span>
-        </button>
-        <button id="focus-next-btn" class="focus-corner-nav focus-corner-next" title="Next song (→)">
-            <span class="corner-nav-arrow">→</span>
-        </button>
-    `;
 
     header.innerHTML = `
         ${focusHeaderHtml}
@@ -565,7 +558,6 @@ function renderWorkHeader() {
             <!-- Controls are injected here by renderTablaturePart or renderChordProPart -->
         </div>
         ${infoContentHtml}
-        ${cornerNavHtml}
     `;
 
     // Wire up version button click handler
