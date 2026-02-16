@@ -57,6 +57,10 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
         if (e.target === pickerModal) closeAddSongPicker();
     });
 
+    // Close on browser back/navigation
+    window.addEventListener('popstate', closeAddSongPicker);
+    window.addEventListener('hashchange', closeAddSongPicker);
+
     // Card clicks
     pickerModal.querySelectorAll('.picker-card').forEach(card => {
         card.addEventListener('click', () => {
@@ -209,6 +213,7 @@ export function openAddSongPicker(options = {}) {
         // Skip cards, go straight to request form
         requestCard?.classList.remove('hidden');
         showRequestForm();
+        pickerModal.classList.remove('hidden');
         return; // don't show cards first
     } else {
         // Default — show all 3 cards
