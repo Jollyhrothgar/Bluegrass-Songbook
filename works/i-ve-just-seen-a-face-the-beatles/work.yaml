@@ -23,3 +23,11 @@ parts:
       source: user-submission
       submitted_by: trusted-user
       submitted_at: '2026-02-16'
+  - type: document
+    format: pdf
+    file: ive_just_seen_a_face.pdf
+    label: "handwritten intro banjo tab"
+    provenance:
+      source: user-submission
+      submitted_by: trusted-user
+      submitted_at: '2026-02-16'
