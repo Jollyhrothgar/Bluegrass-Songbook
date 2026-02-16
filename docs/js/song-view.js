@@ -39,7 +39,7 @@ import {
     subscribe,
     setCurrentView
 } from './state.js';
-import { escapeHtml, isTabOnlyWork } from './utils.js';
+import { escapeHtml, isTabOnlyWork, isPlaceholder } from './utils.js';
 import {
     parseLineWithChords, extractChords, detectKey,
     getSemitonesBetweenKeys, transposeChord, toNashville,
@@ -1880,9 +1880,9 @@ export async function showVersionPicker(groupId, options = {}) {
             const songId = item.dataset.songId;
             trackVersionPicker(groupId, 'select', songId);
             closeVersionPicker();
-            // Use openWork for tablature-only works to get track mixer
+            // Placeholders and tab-only works use work view
             const song = allSongs.find(s => s.id === songId);
-            if (isTabOnlyWork(song)) {
+            if (isPlaceholder(song) || isTabOnlyWork(song)) {
                 openWork(songId);
             } else {
                 openSong(songId, openOptions);

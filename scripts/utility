@@ -22,6 +22,9 @@ show_help() {
     echo "  add-song <file.pro> [--skip-index-rebuild]"
     echo "      Add a song to the manual collection and rebuild the index"
     echo ""
+    echo "  add-placeholder <title> [--artist NAME] [--key KEY] [--tags TAG,TAG] [--notes TEXT]"
+    echo "      Create a placeholder work with metadata but no content"
+    echo ""
     echo "  count-chords [path]"
     echo "      Count chord usage in .pro files"
     echo ""
@@ -98,6 +101,14 @@ show_help() {
 case "$COMMAND" in
     add-song)
         uv run python3 scripts/lib/add_song.py "$@"
+        ;;
+    add-placeholder)
+        if [ -z "$1" ]; then
+            echo "Error: song title required"
+            echo "Usage: ./scripts/utility add-placeholder \"Song Title\" [--artist NAME] [--key KEY]"
+            exit 1
+        fi
+        uv run python3 scripts/lib/add_placeholder.py "$@"
         ;;
     count-chords)
         uv run python3 scripts/lib/chord_counter.py "$@"

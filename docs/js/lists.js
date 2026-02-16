@@ -15,7 +15,8 @@ import {
     focusedListId, setFocusedListId
 } from './state.js';
 import { openSong } from './song-view.js';
-import { escapeHtml, generateLocalId } from './utils.js';
+import { escapeHtml, generateLocalId, requireLogin } from './utils.js';
+import { openAddSongPicker } from './add-song-picker.js';
 import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
@@ -686,6 +687,7 @@ let listDuplicateBtnEl = null;
 let listFollowBtnEl = null;
 let listClaimBtnEl = null;
 let listDeleteBtnEl = null;
+let listRequestBtnEl = null;
 
 // Callbacks (set by init)
 let renderResultsFn = null;
@@ -2736,6 +2738,9 @@ function renderListViewUI(listName, songIds, status) {
             }
         }
 
+        // Request song - always visible
+        if (listRequestBtnEl) listRequestBtnEl.classList.remove('hidden');
+
         // Delete - owner only, not for favorites
         if (listDeleteBtnEl) {
             if (ownership.isOwner && viewingListId !== FAVORITES_LIST_ID && viewingListId !== 'favorites') {
@@ -3515,6 +3520,7 @@ export function initLists(options) {
     listFollowBtnEl = document.getElementById('list-follow-btn');
     listClaimBtnEl = document.getElementById('list-claim-btn');
     listDeleteBtnEl = document.getElementById('list-delete-btn');
+    listRequestBtnEl = document.getElementById('list-request-btn');
 
     // Share list button - opens share modal
     shareListBtnEl?.addEventListener('click', async () => {
@@ -3670,6 +3676,12 @@ export function initLists(options) {
         }
 
         openShareModal(shareId);
+    });
+
+    // List header: Request song button
+    listRequestBtnEl?.addEventListener('click', () => {
+        if (!requireLogin('request songs')) return;
+        openAddSongPicker({ mode: 'request' });
     });
 
     // List header: Duplicate button

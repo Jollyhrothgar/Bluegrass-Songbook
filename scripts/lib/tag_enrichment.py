@@ -465,11 +465,13 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
 
     # Process each song
     for song in songs:
-        tags = {}
+        # Seed with existing tags from work.yaml (source: 'work')
+        tags = {k: v for k, v in song.get('tags', {}).items()
+                if isinstance(v, dict) and v.get('source') == 'work'}
         song_id = song.get('id', '')
         title = song.get('title', '')
 
-        # PRIMARY: Get genre tags from LLM
+        # PRIMARY: Get genre tags from LLM (overrides work.yaml tags)
         if llm_tags and song_id in llm_tags:
             for tag_name in llm_tags[song_id]:
                 tags[tag_name] = {'score': 80, 'source': 'llm'}

@@ -1,7 +1,8 @@
 // Core search functionality for Bluegrass Songbook
 
 import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs } from './state.js';
-import { highlightMatch, escapeHtml, isTabOnlyWork } from './utils.js';
+import { highlightMatch, escapeHtml, isTabOnlyWork, isPlaceholder, requireLogin } from './utils.js';
+import { openAddSongPicker } from './add-song-picker.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
     isFavorite, reorderFavoriteItem, showFavorites,
@@ -432,7 +433,8 @@ async function loadPrefixMap() {
         'key:': 'key', 'k:': 'key',
         'chord:': 'chord', 'c:': 'chord',
         'prog:': 'prog', 'p:': 'prog',
-        'tag:': 'tag', 't:': 'tag'
+        'tag:': 'tag', 't:': 'tag',
+        'status:': 'status', 's:': 'status'
     };
     return searchPrefixMap;
 }
@@ -447,7 +449,8 @@ function getPrefixMap() {
         'key:': 'key', 'k:': 'key',
         'chord:': 'chord', 'c:': 'chord',
         'prog:': 'prog', 'p:': 'prog',
-        'tag:': 'tag', 't:': 'tag'
+        'tag:': 'tag', 't:': 'tag',
+        'status:': 'status', 's:': 'status'
     };
 }
 
@@ -478,7 +481,9 @@ export function parseSearchQuery(query) {
         excludeComposer: null,
         excludeKey: null,
         excludeTags: [],
-        excludeChords: []
+        excludeChords: [],
+        statusFilter: null,
+        excludeStatus: null
     };
 
     // Get prefix map (from shared config or fallback)
@@ -545,6 +550,9 @@ export function parseSearchQuery(query) {
                     }
                     break;
                 }
+                case 'status':
+                    result.excludeStatus = value.toLowerCase();
+                    break;
             }
         } else {
             // Positive filters
@@ -586,6 +594,9 @@ export function parseSearchQuery(query) {
                     }
                     break;
                 }
+                case 'status':
+                    result.statusFilter = value.toLowerCase();
+                    break;
             }
         }
     }
@@ -722,7 +733,8 @@ export function search(query, options = {}) {
         textTerms, chordFilters, progressionFilter, tagFilters,
         artistFilter, titleFilter, lyricsFilter, composerFilter, keyFilter,
         excludeArtist, excludeTitle, excludeLyrics, excludeComposer, excludeKey,
-        excludeTags, excludeChords
+        excludeTags, excludeChords,
+        statusFilter, excludeStatus
     } = parseSearchQuery(query);
 
     const results = allSongs.filter(song => {
@@ -807,6 +819,16 @@ export function search(query, options = {}) {
             if (songHasTags(song, excludeTags)) return false;
         }
 
+        // Status filter
+        if (statusFilter) {
+            const songStatus = song.status || 'complete';
+            if (songStatus !== statusFilter) return false;
+        }
+        if (excludeStatus) {
+            const songStatus = song.status || 'complete';
+            if (songStatus === excludeStatus) return false;
+        }
+
         return true;
     });
 
@@ -858,6 +880,7 @@ export function search(query, options = {}) {
     if (progressionFilter && progressionFilter.length > 0) filters.push(`prog: ${progressionFilter.join('-')}`);
     if (tagFilters.length > 0) filters.push(`tags: ${tagFilters.map(formatTagName).join(', ')}`);
     if (lyricsFilter) filters.push(`lyrics: "${lyricsFilter}"`);
+    if (statusFilter) filters.push(`status: ${statusFilter}`);
     // Exclusion filters
     if (excludeArtist) filters.push(`-artist: "${excludeArtist}"`);
     if (excludeTitle) filters.push(`-title: "${excludeTitle}"`);
@@ -866,6 +889,7 @@ export function search(query, options = {}) {
     if (excludeChords.length > 0) filters.push(`-chords: ${excludeChords.join(', ')}`);
     if (excludeTags.length > 0) filters.push(`-tags: ${excludeTags.map(formatTagName).join(', ')}`);
     if (excludeLyrics) filters.push(`-lyrics: "${excludeLyrics}"`);
+    if (excludeStatus) filters.push(`-status: ${excludeStatus}`);
     if (filters.length > 0) {
         statsText += ` (${filters.join(', ')})`;
     }
@@ -1002,6 +1026,17 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
         return `<span class="tag-badge tag-instrument" data-tag="${inst}" title="Has ${label} tab/notation">${label}</span>`;
     }).join('');
 
+    // Placeholder badge
+    const placeholderBadge = song.status === 'placeholder'
+        ? '<span class="placeholder-badge">Placeholder</span>'
+        : '';
+
+    // Document parts badge (PDF)
+    const docParts = song.document_parts || [];
+    const docBadge = docParts.length > 0
+        ? '<span class="doc-badge">PDF</span>'
+        : '';
+
     // Grassiness score badge
     const grassinessScore = song.grassiness || 0;
     const grassinessBadge = grassinessScore >= 20
@@ -1051,13 +1086,13 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
             ${dragHandle}
             <div class="result-main">
                 <div class="result-title-artist">
-                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${instrumentBadges}${grassinessBadge}</div>
+                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${placeholderBadge}${docBadge}${instrumentBadges}${grassinessBadge}</div>
                     ${metadataBadges}
                 </div>
                 <div class="result-artist">${highlightMatch(primaryArtist, query)}</div>
                 ${coveringDisplay}
                 ${tagBadges ? `<div class="result-tags">${tagBadges}</div>` : ''}
-                <div class="result-preview">${song.first_line || ''}</div>
+                <div class="result-preview">${song.first_line || (song.status === 'placeholder' && song.notes ? song.notes.slice(0, 80) : '')}</div>
             </div>
             ${selectBtn}
             ${notesBtn}
@@ -1077,7 +1112,23 @@ export function renderResults(songs, query) {
     cleanupScroll();
 
     if (songs.length === 0) {
-        resultsDivEl.innerHTML = '<div class="loading">No songs found</div>';
+        const q = searchInputEl?.value?.trim() || '';
+        resultsDivEl.innerHTML = `
+            <div class="empty-results">
+                <p class="empty-results-title">No songs found</p>
+                ${q ? `
+                    <p class="empty-results-hint">Can't find "${escapeHtml(q)}"?</p>
+                    <div class="empty-results-actions">
+                        <button class="empty-results-btn" id="empty-request-btn">Request this song</button>
+                        <a href="#bounty" class="empty-results-link">Browse the Bounty Board</a>
+                    </div>
+                ` : ''}
+            </div>
+        `;
+        resultsDivEl.querySelector('#empty-request-btn')?.addEventListener('click', () => {
+            if (!requireLogin('request songs')) return;
+            openAddSongPicker({ mode: 'request' });
+        });
         return;
     }
 
@@ -1252,8 +1303,8 @@ function setupResultEventListeners(resultsDiv) {
             } else {
                 const songId = resultItem.dataset.id;
                 const song = allSongs.find(s => s.id === songId);
-                // Use openWork for tablature-only works (no lead sheet content)
-                if (isTabOnlyWork(song)) {
+                // Placeholders and tab-only works route through work view
+                if (isPlaceholder(song) || isTabOnlyWork(song)) {
                     openWork(songId);
                 } else {
                     openSong(songId, { fromList });

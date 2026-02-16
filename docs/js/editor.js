@@ -6,7 +6,7 @@ import {
     editingSongId, setEditingSongId,
     editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
-import { escapeHtml } from './utils.js';
+import { escapeHtml, generateSlug } from './utils.js';
 import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
@@ -14,15 +14,11 @@ import { openSuperUserRequestModal } from './superuser-request.js';
 
 /**
  * Get the submitter attribution for issue body.
- * Uses logged-in user's name/email if available, otherwise "Rando Calrissian"
+ * Requires logged-in user (anonymous path removed).
  */
 function getSubmitterAttribution() {
     const user = window.SupabaseAuth?.getUser?.();
-    if (user) {
-        // Prefer display name from user metadata, fall back to email
-        return user.user_metadata?.full_name || user.email || 'Anonymous User';
-    }
-    return 'Rando Calrissian';
+    return user?.user_metadata?.full_name || user?.email || 'Anonymous User';
 }
 
 // Supabase configuration for anonymous submissions
@@ -1012,20 +1008,6 @@ export function initEditor(options) {
 }
 
 /**
- * Generate a URL-friendly slug from title and artist
- */
-function generateSlug(title, artist) {
-    const base = artist
-        ? `${title}-${artist}`
-        : title;
-    return base
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-|-$/g, '')
-        .slice(0, 80);
-}
-
-/**
  * Submit as a trusted user - saves directly to pending_songs for instant visibility
  */
 async function submitAsTrustedUser(data) {
@@ -1115,15 +1097,14 @@ async function submitAsTrustedUser(data) {
  * Trigger auto-commit edge function (fire and forget)
  */
 async function triggerAutoCommit(entry) {
-    // Get the user's session token for authenticated request
     const supabase = window.SupabaseAuth?.supabase;
     const { data: { session } } = await supabase?.auth.getSession() || { data: {} };
-    const token = session?.access_token || SUPABASE_ANON_KEY;
+    if (!session?.access_token) return;
 
     await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${token}`,
+            'Authorization': `Bearer ${session.access_token}`,
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(entry),

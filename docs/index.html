@@ -127,7 +127,7 @@
                 <div class="loading">Loading collections...</div>
             </div>
             <div class="landing-footer">
-                <a href="bounty.html" class="bounty-link">
+                <a href="#bounty" class="bounty-link">
                     <span class="bounty-icon">🎯</span>
                     <span class="bounty-text">Help us grow! See songs we're looking for</span>
                 </a>
@@ -171,6 +171,7 @@
                 </div>
                 <span class="search-hint">chord:VII,II</span>
                 <span class="search-hint">prog:ii-V-I</span>
+                <span class="search-hint">status:placeholder</span>
                 <button class="search-tips-btn" id="search-tips-btn" title="Search tips">?</button>
                 <div class="search-tips-dropdown hidden" id="search-tips-dropdown">
                     <div class="search-tips-content">
@@ -218,6 +219,7 @@
                     <button id="list-share-btn" class="list-header-btn hidden" title="Copy share link">🔗 Share</button>
                     <button id="list-duplicate-btn" class="list-header-btn" title="Duplicate this list">📋 Duplicate</button>
                     <button id="list-follow-btn" class="list-header-btn hidden" title="Follow this list">👁️ Follow</button>
+                    <button id="list-request-btn" class="list-header-btn hidden" title="Request a missing song">+ Request Song</button>
                     <button id="list-claim-btn" class="list-header-btn primary hidden" title="Claim this orphaned list">⚔️ Claim</button>
                     <button id="list-delete-btn" class="list-header-btn danger hidden" title="Delete this list">🗑️ Delete</button>
                 </div>
@@ -351,6 +353,80 @@ Blank lines separate verses."></textarea>
                     </div>
                     <div id="editor-preview-content" class="preview-content">
                         <p class="preview-placeholder">Enter a song to see preview...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload Panel (document/image upload) -->
+        <div id="upload-panel" class="editor-panel hidden">
+            <div class="editor-header">
+                <button id="upload-back-btn" class="back-btn">&larr; Back</button>
+                <div class="editor-notice">Upload a photo of sheet music, handwritten chords, or a PDF.</div>
+            </div>
+            <div class="editor-main">
+                <div class="editor-input">
+                    <div class="metadata-fields">
+                        <div class="field-row">
+                            <label for="upload-title">Title: <span class="required">*</span></label>
+                            <input type="text" id="upload-title" placeholder="Song title">
+                        </div>
+                        <div class="field-row">
+                            <label for="upload-artist">Artist:</label>
+                            <input type="text" id="upload-artist" placeholder="Artist name (optional)">
+                        </div>
+                        <div class="field-row">
+                            <label for="upload-key">Key:</label>
+                            <select id="upload-key">
+                                <option value="">Unknown</option>
+                                <option value="A">A</option>
+                                <option value="Bb">Bb</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="C#">C#</option>
+                                <option value="D">D</option>
+                                <option value="Eb">Eb</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="F#">F#</option>
+                                <option value="G">G</option>
+                                <option value="Ab">Ab</option>
+                            </select>
+                        </div>
+                        <div class="field-row">
+                            <label for="upload-instrument">Instrument:</label>
+                            <select id="upload-instrument">
+                                <option value="">Not specified</option>
+                                <option value="banjo">Banjo</option>
+                                <option value="fiddle">Fiddle</option>
+                                <option value="guitar">Guitar</option>
+                                <option value="mandolin">Mandolin</option>
+                                <option value="dobro">Dobro</option>
+                                <option value="bass">Bass</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="field-row">
+                            <label for="upload-description">Description:</label>
+                            <input type="text" id="upload-description" placeholder="e.g., Scruggs-style banjo break, handwritten tab">
+                        </div>
+                    </div>
+                    <div class="upload-dropzone" id="upload-dropzone">
+                        <span class="dropzone-icon">&#128247;</span>
+                        <span class="dropzone-text">Drop a file here or click to browse</span>
+                        <span class="dropzone-hint">JPG, PNG, HEIC, WebP, or PDF (max 10MB)</span>
+                        <input type="file" id="upload-file-input" accept=".jpg,.jpeg,.png,.heic,.webp,.pdf" class="hidden">
+                    </div>
+                    <div id="upload-file-info" class="upload-file-info hidden"></div>
+                    <div class="editor-actions">
+                        <button id="upload-submit" class="action-btn primary" disabled>Submit</button>
+                        <span id="upload-status" class="save-status"></span>
+                    </div>
+                </div>
+                <div class="editor-preview">
+                    <div class="preview-header"><h3>Preview</h3></div>
+                    <div id="upload-preview-content" class="preview-content">
+                        <p class="preview-placeholder">Select a file to see preview...</p>
                     </div>
                 </div>
             </div>
@@ -739,29 +815,6 @@ This is the [G]chorus [D]part
         </div>
 
         <!-- Song Request Modal -->
-        <div id="song-request-modal" class="modal hidden">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Request a Song</h2>
-                    <button id="song-request-close" class="modal-close">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p class="request-intro">What song would you like us to add?</p>
-                    <label for="request-title">Song Title <span class="required">*</span></label>
-                    <input type="text" id="request-title" placeholder="e.g., Blue Moon of Kentucky" required>
-                    <label for="request-artist">Artist (optional)</label>
-                    <input type="text" id="request-artist" placeholder="e.g., Bill Monroe">
-                    <label for="request-details">Additional Details (optional)</label>
-                    <textarea id="request-details" placeholder="e.g., Looking for the version in G, or a link to where you've seen it..."></textarea>
-                </div>
-                <div class="modal-footer">
-                    <button id="song-request-cancel" class="action-btn">Cancel</button>
-                    <button id="song-request-submit" class="action-btn primary">Submit Request</button>
-                </div>
-                <div id="song-request-status" class="modal-status"></div>
-            </div>
-        </div>
-
         <!-- Flag Issue Modal -->
         <div id="flag-modal" class="modal hidden">
             <div class="modal-content">
@@ -827,6 +880,55 @@ This is the [G]chorus [D]part
 
         <!-- Super-user toast notification -->
         <div id="superuser-toast" class="toast hidden"></div>
+
+        <!-- Add Song Type Picker Modal -->
+        <div id="add-song-picker" class="modal hidden">
+            <div class="modal-content add-song-picker-content">
+                <div class="modal-header">
+                    <h2 id="picker-header-title">Add a Song</h2>
+                    <button id="add-song-picker-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="picker-cards">
+                        <button class="picker-card" data-type="upload">
+                            <span class="picker-card-icon">&#128247;</span>
+                            <span class="picker-card-title">Upload Image</span>
+                            <span class="picker-card-desc">Photo of sheet music, scanned tab, or PDF</span>
+                        </button>
+                        <button class="picker-card" data-type="chordpro">
+                            <span class="picker-card-icon">&#9836;</span>
+                            <span class="picker-card-title">Lyrics &amp; Chords</span>
+                            <span class="picker-card-desc">Type or paste a chord sheet</span>
+                        </button>
+                        <button class="picker-card picker-card-request" data-type="request">
+                            <span class="picker-card-icon">&#128269;</span>
+                            <span class="picker-card-title">Request a Song</span>
+                            <span class="picker-card-desc">Can't find it? Add it to the wanted list.</span>
+                        </button>
+                    </div>
+                    <div class="picker-request-form hidden">
+                        <button class="picker-back-btn">&larr; Back</button>
+                        <div class="picker-form-fields">
+                            <input id="picker-req-title" type="text" placeholder="Song title (required)">
+                            <input id="picker-req-artist" type="text" placeholder="Artist (optional)">
+                            <select id="picker-req-key">
+                                <option value="">Key (optional)</option>
+                                <option>A</option><option>Bb</option><option>B</option>
+                                <option>C</option><option>Db</option><option>D</option>
+                                <option>Eb</option><option>E</option><option>F</option>
+                                <option>F#</option><option>G</option><option>Ab</option>
+                            </select>
+                            <textarea id="picker-req-notes" placeholder="Notes — what do you know about this song?"></textarea>
+                        </div>
+                        <div id="picker-dedup-warning" class="picker-dedup-warning hidden"></div>
+                        <div class="picker-form-actions">
+                            <button id="picker-req-submit" class="action-btn primary" disabled>Submit Request</button>
+                            <span id="picker-req-status" class="picker-req-status"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/supabase-auth.js"></script>

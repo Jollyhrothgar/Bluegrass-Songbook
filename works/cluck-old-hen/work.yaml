@@ -1,5 +1,10 @@
 id: cluck-old-hen
 title: Cluck Old Hen
+artist: Traditional
+default_key: A
+tags:
+- Instrumental
+- Fiddle
 parts:
   - type: lead-sheet
     format: chordpro

@@ -2,18 +2,15 @@
 // Allows users to report song issues - creates GitHub issues automatically
 
 import { track } from './analytics.js';
+import { requireLogin } from './utils.js';
 
 /**
  * Get the submitter attribution for issue body.
- * Uses logged-in user's name/email if available, otherwise "Rando Calrissian"
+ * Requires logged-in user (anonymous path removed).
  */
 function getSubmitterAttribution() {
     const user = window.SupabaseAuth?.getUser?.();
-    if (user) {
-        // Prefer display name from user metadata, fall back to email
-        return user.user_metadata?.full_name || user.email || 'Anonymous User';
-    }
-    return 'Rando Calrissian';
+    return user?.user_metadata?.full_name || user?.email || 'Anonymous User';
 }
 
 // ============================================
@@ -73,6 +70,7 @@ function showToast(message, duration = 3000) {
  */
 export function openFlagModal(song) {
     if (!flagModal || !song) return;
+    if (!requireLogin('report issues')) return;
 
     currentSong = song;
 
@@ -128,11 +126,17 @@ async function submitFlag() {
     }
 
     try {
+        // Use user's session token for authenticated requests
+        const supabase = window.SupabaseAuth?.supabase;
+        const session = supabase ? (await supabase.auth.getSession()).data.session : null;
+        const authToken = session?.access_token || SUPABASE_ANON_KEY;
+
         const response = await fetch(`${SUPABASE_URL}/functions/v1/create-flag-issue`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                'Authorization': `Bearer ${authToken}`,
+                'apikey': SUPABASE_ANON_KEY,
             },
             body: JSON.stringify({
                 songId: currentSong.id,

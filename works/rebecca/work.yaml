@@ -1,0 +1,21 @@
+id: rebecca
+title: Rebecca
+artist: Jim Mills
+composers:
+- Jim Mills
+default_key: B
+tags:
+- Bluegrass
+- Instrumental
+status: placeholder
+notes: >
+  Classic Jim Mills banjo instrumental.
+  Commonly played at advanced jams.
+parts:
+  - type: document
+    format: pdf
+    file: tab-reference.pdf
+    label: Banjo Tab (Scanned)
+    provenance:
+      source: user-submission
+      submitted_by: mike

@@ -42,16 +42,18 @@ import {
 } from './lists.js';
 import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
 import { openWork, renderWorkView, getCurrentWork } from './work-view.js';
+import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints } from './editor.js';
-import { escapeHtml } from './utils.js';
+import { escapeHtml, requireLogin } from './utils.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
 import { initFlags, openFlagModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
-import { initSongRequest, openSongRequestModal } from './song-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
+import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
+import { initDocUpload, resetDocUpload, prefillDocUpload } from './doc-upload.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -144,6 +146,7 @@ const deleteSongBtn = document.getElementById('delete-song-btn');
 
 // Editor elements
 const editorPanel = document.getElementById('editor-panel');
+const uploadPanel = document.getElementById('upload-panel');
 const editorBackBtn = document.getElementById('editor-back-btn');
 const editorTitle = document.getElementById('editor-title');
 const editorArtist = document.getElementById('editor-artist');
@@ -244,6 +247,12 @@ function pushHistoryState(view, data = {}, replace = false) {
         case 'add-song':
             hash = '#add';
             break;
+        case 'doc-upload':
+            hash = '#upload';
+            break;
+        case 'bounty':
+            hash = '#bounty';
+            break;
         case 'favorites':
             // Favorites is just a list with ID 'favorites'
             // Use 'list' view type for consistency
@@ -308,6 +317,12 @@ function handleHistoryNavigation(state) {
         case 'add-song':
             showView('add-song');
             break;
+        case 'doc-upload':
+            showView('doc-upload');
+            break;
+        case 'bounty':
+            showView('bounty');
+            break;
         case 'favorites':
             showView('favorites');
             break;
@@ -362,6 +377,11 @@ function initViewSubscription() {
             exitEditMode();
         }
 
+        // Reset upload form when navigating away
+        if (view !== 'doc-upload') {
+            resetDocUpload();
+        }
+
         // Close bottom sheet if open (it has position: fixed so stays visible)
         bottomSheet?.classList.add('hidden');
         bottomSheetBackdrop?.classList.add('hidden');
@@ -386,6 +406,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 navHome?.classList.add('active');
                 break;
@@ -394,6 +415,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 navSearch?.classList.add('active');
                 // Show empty state if no search query (don't show random songs)
@@ -407,6 +429,16 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.remove('hidden');
+                uploadPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                navAddSong?.classList.add('active');
+                break;
+            case 'doc-upload':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.add('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.remove('hidden');
                 songListsView?.classList.add('hidden');
                 navAddSong?.classList.add('active');
                 break;
@@ -415,6 +447,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 navFavorites?.classList.add('active');
                 showFavorites();
@@ -424,6 +457,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.remove('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 // Show delete button for admins
                 updateDeleteButtonVisibility();
@@ -433,13 +467,24 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
+                break;
+            case 'bounty':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                renderBountyView(resultsDiv);
                 break;
             case 'song-lists':
                 searchContainer?.classList.add('hidden');
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.remove('hidden');
                 // renderManageListsView is called by showSongListsView
                 break;
@@ -667,11 +712,20 @@ function handleDeepLink() {
             showView('search');
         }
         return true;
+    } else if (hash === '#upload') {
+        trackDeepLink('upload', hash);
+        showView('doc-upload');
+        pushHistoryState('doc-upload', {}, true);
+        return true;
+    } else if (hash === '#bounty') {
+        trackDeepLink('bounty', hash);
+        showView('bounty');
+        pushHistoryState('bounty', {}, true);
+        return true;
     } else if (hash === '#request-song') {
         trackDeepLink('request-song', hash);
-        // Clear the hash and open the modal
         window.location.hash = '';
-        openSongRequestModal();
+        openAddSongPicker({ mode: 'request' });
         return true;
     } else if (hash === '#favorites') {
         // Backward compatibility: redirect #favorites to #list/favorites
@@ -2195,8 +2249,28 @@ function init() {
     // Initialize super-user request module
     initSuperUserRequest();
 
-    // Initialize song request module
-    initSongRequest();
+    // Initialize add-song picker and doc upload
+    initAddSongPicker({
+        onUpload: (ctx) => {
+            if (ctx?.targetSlug) prefillDocUpload(ctx);
+            showView('doc-upload');
+            pushHistoryState('doc-upload');
+        },
+        onChordPro: (ctx) => {
+            if (ctx?.targetSlug) {
+                enterEditMode({ id: ctx.targetSlug, title: ctx.title, artist: ctx.artist, key: ctx.key, content: '' });
+            } else {
+                navigateTo('add-song');
+            }
+        },
+    });
+    initDocUpload();
+
+    // Upload panel back button
+    document.getElementById('upload-back-btn')?.addEventListener('click', () => {
+        resetDocUpload();
+        navigateTo('search');
+    });
 
     // Initialize lists module (handles favorites as a special list)
     initLists({
@@ -2330,7 +2404,7 @@ function init() {
     // Navigation
     navHome?.addEventListener('click', () => navigateTo('home'));
     navSearch?.addEventListener('click', () => navigateTo('search'));
-    navAddSong?.addEventListener('click', () => navigateTo('add-song'));
+    navAddSong?.addEventListener('click', () => { closeSidebar(); if (!requireLogin('add songs')) return; openAddSongPicker(); });
     navFavorites?.addEventListener('click', () => navigateTo('favorites'));
     editorBackBtn?.addEventListener('click', () => navigateTo('search'));
 
@@ -2399,6 +2473,7 @@ function init() {
     navFeedback?.addEventListener('click', (e) => {
         e.stopPropagation();
         closeSidebar();
+        if (!requireLogin('send feedback')) return;
         // Open contact modal directly for general feedback
         setTimeout(() => {
             openContactModal('Send Feedback', '');
