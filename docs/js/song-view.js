@@ -150,7 +150,8 @@ export function parseChordPro(chordpro) {
 }
 
 /**
- * Render a single line with chords above lyrics
+ * Render a single line with chords above lyrics using inline segments.
+ * Each chord+lyrics chunk is an inline-block so chords wrap with their lyrics.
  */
 function renderLine(line, hideChords = false) {
     const { chords, lyrics } = parseLineWithChords(line);
@@ -163,29 +164,57 @@ function renderLine(line, hideChords = false) {
     // Calculate transposition if key was changed
     const semitones = getSemitonesBetweenKeys(originalDetectedKey, currentDetectedKey);
 
-    let chordLine = '';
-    let lastPos = 0;
+    // Build inline segments: each chord paired with its following lyrics
+    const segments = [];
+    let lastLyricsPos = 0;
 
-    for (const { chord, position } of chords) {
-        // First transpose if needed
+    for (let i = 0; i < chords.length; i++) {
+        const { chord, position } = chords[i];
+        const nextPos = i + 1 < chords.length ? chords[i + 1].position : lyrics.length;
+
+        // Lyrics before the first chord (no chord above)
+        if (i === 0 && position > 0) {
+            const prefixLyrics = lyrics.slice(0, position);
+            segments.push({ chord: '', lyrics: prefixLyrics });
+        }
+
         const transposedChord = semitones !== 0 ? transposeChord(chord, semitones) : chord;
-
-        // Then convert to Nashville if enabled
         const displayChord = nashvilleMode && currentDetectedKey
             ? toNashville(transposedChord, currentDetectedKey)
             : transposedChord;
 
-        const spaces = Math.max(0, position - lastPos);
-        chordLine += ' '.repeat(spaces) + displayChord;
-        lastPos = position + displayChord.length;
+        const segmentLyrics = lyrics.slice(position, nextPos);
+        segments.push({ chord: displayChord, lyrics: segmentLyrics });
+        lastLyricsPos = nextPos;
     }
 
-    return `
-        <div class="song-line">
-            <div class="chord-line">${escapeHtml(chordLine)}</div>
-            <div class="lyrics-line">${escapeHtml(lyrics)}</div>
-        </div>
-    `;
+    // Build HTML from segments
+    let html = '';
+    for (const seg of segments) {
+        const chordHtml = seg.chord
+            ? `<span class="cl-chord">${escapeHtml(seg.chord)}</span>`
+            : `<span class="cl-chord">&nbsp;</span>`;
+        const lyricsHtml = escapeHtml(seg.lyrics) || '&nbsp;';
+        html += `<span class="cl-segment">${chordHtml}${lyricsHtml}</span>`;
+    }
+
+    return `<div class="song-line cl-line">${html}</div>`;
+}
+
+/**
+ * Detect wrapped chord-lyrics lines and add a visual indicator.
+ * A line is "wrapped" if its rendered height exceeds a single chord+lyrics pair.
+ */
+function markWrappedLines() {
+    const lines = document.querySelectorAll('.cl-line');
+    for (const line of lines) {
+        // A single unwrapped line has one chord row + one lyrics row.
+        // If the element is taller, it wrapped.
+        const firstSeg = line.querySelector('.cl-segment');
+        if (!firstSeg) continue;
+        const singleLineHeight = firstSeg.offsetHeight;
+        line.classList.toggle('wrapped', line.scrollHeight > singleLineHeight + 2);
+    }
 }
 
 /**
@@ -854,14 +883,15 @@ export function renderSong(song, chordpro, isInitialRender = false) {
 
     const focusHeaderHtml = `
         <div class="focus-header">
-            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
-                <span>✕</span>
-                <span class="focus-btn-label">Exit</span>
-            </button>
+            <button id="focus-prev-btn" class="focus-list-nav" title="Previous song (←)">←</button>
             <div class="focus-title-area">
                 <span class="focus-title">${escapeHtml(title)}</span>
                 <span id="focus-position" class="focus-position"></span>
             </div>
+            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
+                <span>✕</span>
+                <span class="focus-btn-label">Exit</span>
+            </button>
             <button id="focus-goto-song-btn" class="focus-nav-btn" title="View full song page">
                 <span>🎵</span>
                 <span class="focus-btn-label">Go to Song</span>
@@ -870,17 +900,8 @@ export function renderSong(song, chordpro, isInitialRender = false) {
                 <span>⚙️</span>
                 <span class="focus-btn-label">Controls</span>
             </button>
+            <button id="focus-next-btn" class="focus-list-nav" title="Next song (→)">→</button>
         </div>
-    `;
-
-    // Fixed position corner nav buttons for list navigation (shown in fullscreen with list context)
-    const cornerNavHtml = `
-        <button id="focus-prev-btn" class="focus-corner-nav focus-corner-prev" title="Previous song (←)">
-            <span class="corner-nav-arrow">←</span>
-        </button>
-        <button id="focus-next-btn" class="focus-corner-nav focus-corner-next" title="Next song (→)">
-            <span class="corner-nav-arrow">→</span>
-        </button>
     `;
 
     // Collapsible notes panel for focus mode (only when viewing from a list)
@@ -957,7 +978,6 @@ export function renderSong(song, chordpro, isInitialRender = false) {
             ${!hasChords && hasAbc ? '<div class="instrumental-notice"><em>Instrumental tune - see notation above</em></div>' : ''}
         </div>
         ${sourceHtml}
-        ${cornerNavHtml}
         ${focusNotesPanelHtml}
     `;
 
@@ -978,6 +998,9 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     if (typeof window.updateQuickControls === 'function') {
         window.updateQuickControls();
     }
+
+    // Mark wrapped chord-lyrics lines for visual indicator
+    markWrappedLines();
 }
 
 /**
