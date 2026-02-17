@@ -13,6 +13,7 @@ import {
 import { openSong, showVersionPicker } from './song-view.js';
 import { openWork } from './work-view.js';
 import { trackSearch as analyticsTrackSearch, trackSearchResultClick } from './analytics.js';
+import { stemWord } from './stem.js';
 
 // DOM element references (set by init)
 let searchInputEl = null;
@@ -737,6 +738,10 @@ export function search(query, options = {}) {
         statusFilter, excludeStatus
     } = parseSearchQuery(query);
 
+    // Pre-compute stemmed query terms (once per search, not per song)
+    const stemmedTerms = textTerms.map(stemWord);
+    const stemOnlyMatches = new Set();
+
     const results = allSongs.filter(song => {
         // General text search (searches all fields)
         if (textTerms.length > 0) {
@@ -749,8 +754,14 @@ export function search(query, options = {}) {
                 song.first_line || ''
             ].join(' ').toLowerCase();
 
-            if (!textTerms.every(term => searchText.includes(term))) {
-                return false;
+            const substringMatch = textTerms.every(term => searchText.includes(term));
+            if (!substringMatch) {
+                // Fallback: stemmed word-level matching on short fields
+                if (song._stems && stemmedTerms.every(stem => stem && song._stems.has(stem))) {
+                    stemOnlyMatches.add(song.id);
+                } else {
+                    return false;
+                }
             }
         }
 
@@ -841,6 +852,12 @@ export function search(query, options = {}) {
         const bArtist = (b.artist || '').toLowerCase();
 
         if (textQuery) {
+            // Stem-only matches rank below exact substring matches
+            const aStemOnly = stemOnlyMatches.has(a.id);
+            const bStemOnly = stemOnlyMatches.has(b.id);
+            if (!aStemOnly && bStemOnly) return -1;
+            if (aStemOnly && !bStemOnly) return 1;
+
             // Text relevance scoring
             if (aTitle === textQuery && bTitle !== textQuery) return -1;
             if (bTitle === textQuery && aTitle !== textQuery) return 1;

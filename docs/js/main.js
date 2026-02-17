@@ -54,6 +54,7 @@ import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
 import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
 import { initDocUpload, resetDocUpload, prefillDocUpload } from './doc-upload.js';
+import { buildStemSet } from './stem.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -1019,6 +1020,16 @@ async function loadIndex() {
 
         setAllSongs(songs);
 
+        // Pre-compute stemmed word sets for fuzzy search
+        for (const song of songs) {
+            song._stems = buildStemSet([
+                song.title || '',
+                song.artist || '',
+                song.composer || '',
+                song.first_line || ''
+            ].join(' '));
+        }
+
         // Build song groups for version detection
         const groups = {};
         songs.forEach(song => {
@@ -1094,6 +1105,18 @@ async function refreshPendingSongs() {
         const songs = [...filteredStatic, ...pendingSongs];
 
         setAllSongs(songs);
+
+        // Pre-compute stems for any new pending songs
+        for (const song of pendingSongs) {
+            if (!song._stems) {
+                song._stems = buildStemSet([
+                    song.title || '',
+                    song.artist || '',
+                    song.composer || '',
+                    song.first_line || ''
+                ].join(' '));
+            }
+        }
 
         // Rebuild song groups for version detection
         const groups = {};

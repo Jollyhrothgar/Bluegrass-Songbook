@@ -43,6 +43,7 @@ import {
     songHasChords,
     songHasProgression
 } from '../search-core.js';
+import { stemWord, buildStemSet } from '../stem.js';
 
 describe('parseSearchQuery', () => {
     describe('text terms', () => {
@@ -380,5 +381,100 @@ describe('covering artists search', () => {
         expect(filtered.length).toBe(2);
         expect(filtered.map(s => s.id)).toContain('jolene');
         expect(filtered.map(s => s.id)).toContain('rocky-top');
+    });
+});
+
+describe('stemmed search matching', () => {
+    // Simulate the search logic with stemmed fallback
+    function makeSong(id, title, artist = '', composer = '', first_line = '') {
+        const stems = buildStemSet([title, artist, composer, first_line].join(' '));
+        return { id, title, artist, composer, first_line, _stems: stems };
+    }
+
+    function matchesSong(song, textTerms) {
+        const searchText = [
+            song.title || '',
+            song.artist || '',
+            song.composer || '',
+            song.first_line || ''
+        ].join(' ').toLowerCase();
+
+        // Substring match first
+        if (textTerms.every(term => searchText.includes(term))) {
+            return 'substring';
+        }
+        // Stemmed fallback
+        const stemmedTerms = textTerms.map(stemWord);
+        if (song._stems && stemmedTerms.every(stem => stem && song._stems.has(stem))) {
+            return 'stem';
+        }
+        return false;
+    }
+
+    it("rollin matches Rollin' in My Sweet Baby's Arms", () => {
+        const song = makeSong('rollin', "Rollin' in My Sweet Baby's Arms");
+        expect(matchesSong(song, ['rollin'])).toBe('substring');
+    });
+
+    it("rolling matches Rollin' via stem fallback", () => {
+        const song = makeSong('rollin', "Rollin' in My Sweet Baby's Arms");
+        // 'rolling' is NOT a substring of "rollin'" but both stem to 'roll'
+        expect(matchesSong(song, ['rolling'])).toBe('stem');
+    });
+
+    it('singing matches Sing via stem', () => {
+        const song = makeSong('sing', 'Sing Me Back Home', 'Merle Haggard');
+        expect(matchesSong(song, ['singing'])).toBe('stem');
+    });
+
+    it("cryin matches Cryin' Holy via substring", () => {
+        const song = makeSong('cryin', "Cryin' Holy Unto the Lord");
+        expect(matchesSong(song, ['cryin'])).toBe('substring');
+    });
+
+    it("crying matches Cryin' Holy via stem fallback", () => {
+        const song = makeSong('cryin', "Cryin' Holy Unto the Lord");
+        // 'crying' is not a substring of "cryin'" but both stem to 'cry'
+        expect(matchesSong(song, ['crying'])).toBe('stem');
+    });
+
+    it('exact substring still works', () => {
+        const song = makeSong('blue-moon', 'Blue Moon of Kentucky', 'Patsy Cline');
+        expect(matchesSong(song, ['blue', 'moon'])).toBe('substring');
+    });
+
+    it('multi-word stemmed queries work', () => {
+        const song = makeSong('rollin', "Rollin' in My Sweet Baby's Arms");
+        // Both 'rolling' and 'babies' should stem-match
+        expect(matchesSong(song, ['rolling', 'babies'])).toBe('stem');
+    });
+
+    it('non-matching terms still fail', () => {
+        const song = makeSong('blue-moon', 'Blue Moon of Kentucky');
+        expect(matchesSong(song, ['xyznonexistent'])).toBe(false);
+    });
+
+    it('stem-only matches rank below substring matches', () => {
+        const songA = makeSong('a', "Rollin' in My Sweet Baby's Arms");
+        const songB = makeSong('b', 'Rolling Thunder');
+
+        const matchA = matchesSong(songA, ['rolling']);
+        const matchB = matchesSong(songB, ['rolling']);
+
+        // songB has 'rolling' as substring, songA only via stem
+        expect(matchA).toBe('stem');
+        expect(matchB).toBe('substring');
+
+        // In ranking: substring matches come first
+        const results = [
+            { song: songA, matchType: matchA },
+            { song: songB, matchType: matchB }
+        ].sort((a, b) => {
+            if (a.matchType === 'substring' && b.matchType === 'stem') return -1;
+            if (a.matchType === 'stem' && b.matchType === 'substring') return 1;
+            return 0;
+        });
+        expect(results[0].song.id).toBe('b');
+        expect(results[1].song.id).toBe('a');
     });
 });
