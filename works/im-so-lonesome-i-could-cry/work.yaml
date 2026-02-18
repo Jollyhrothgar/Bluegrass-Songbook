@@ -1,11 +1,17 @@
 id: im-so-lonesome-i-could-cry
 title: I’m So Lonesome I Could Cry
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/im-so-lonesome-i-could-cry/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/im-so-lonesome-i-could-cry/
+    imported_at: '2026-02-08'
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+default_key: C
+artist: Hank Williams

@@ -1,11 +1,17 @@
 id: old-old-house
 title: Old Old House
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/old-old-house/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/old-old-house/
+    imported_at: '2026-02-08'
+tags:
+- JamFriendly
+default_key: G
+artist: George Jones
+composers:
+- Hal Bynum and George Jones

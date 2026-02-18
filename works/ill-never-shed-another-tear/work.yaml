@@ -1,11 +1,17 @@
 id: ill-never-shed-another-tear
 title: I’ll Never Shed Another Tear
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/ill-never-shed-another-tear/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/ill-never-shed-another-tear/
+    imported_at: '2026-02-08'
+tags:
+- JamFriendly
+default_key: G
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Lester Flatt

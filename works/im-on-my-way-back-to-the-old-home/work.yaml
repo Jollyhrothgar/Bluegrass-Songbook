@@ -1,11 +1,15 @@
 id: im-on-my-way-back-to-the-old-home
 title: I’m On My Way Back To The Old Home
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/im-on-my-way-back-to-the-old-home/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/im-on-my-way-back-to-the-old-home/
+    imported_at: '2026-02-08'
+tags:
+- JamFriendly
+default_key: G
+artist: Bill Monroe

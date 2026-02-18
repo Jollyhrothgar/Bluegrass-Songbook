@@ -1,11 +1,21 @@
 id: ill-stay-around
 title: I’ll Stay Around
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/ill-stay-around/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/ill-stay-around/
+    imported_at: '2026-02-08'
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+default_key: G
+artist: Ricky Skaggs
+composers:
+- Lester Flatt

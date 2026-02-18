@@ -3,9 +3,13 @@ title: Frankie
 artist: Connie Francis
 composers:
 - Howard Greenfield and Neil Sedaka
+- Biography:Buddy Thomas
 default_key: C
 tags:
 - Pop
+- JamFriendly
+- Instrumental
+- OldTime
 parts:
 - type: lead-sheet
   format: chordpro

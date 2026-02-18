@@ -6,6 +6,8 @@ composers:
 default_key: C
 tags:
 - JamFriendly
+- Instrumental
+- OldTime
 parts:
 - type: lead-sheet
   format: chordpro

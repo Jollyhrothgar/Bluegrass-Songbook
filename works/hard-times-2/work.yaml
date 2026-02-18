@@ -3,9 +3,12 @@ title: Hard Times
 artist: Lacy J. Dalton
 composers:
 - Bobby Braddock
+- Arlo Guthrie, Darryl McDaniels, Joseph Simmons,
 default_key: C
 tags:
 - ClassicCountry
+- Instrumental
+- JamFriendly
 parts:
 - type: lead-sheet
   format: chordpro

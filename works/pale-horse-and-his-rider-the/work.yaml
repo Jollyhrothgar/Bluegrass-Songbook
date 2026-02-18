@@ -1,11 +1,17 @@
 id: pale-horse-and-his-rider-the
 title: Pale Horse And His Rider, The
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/pale-horse-and-his-rider-the/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/pale-horse-and-his-rider-the/
+    imported_at: '2026-02-08'
+tags:
+- JamFriendly
+default_key: G
+artist: Hank Williams Sr.
+composers:
+- Johnny Bailes, Ervin Staggs, Zeke Clements

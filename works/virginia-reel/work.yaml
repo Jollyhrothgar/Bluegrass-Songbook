@@ -4,6 +4,7 @@ artist: Traditional
 tags:
 - Instrumental
 - OldTime
+- Jazzy
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,3 +13,7 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+default_key: G
+composers:
+- Biography:Alexander M. Reinagle
+- Biography:Kyle Creed

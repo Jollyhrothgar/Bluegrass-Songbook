@@ -1,11 +1,22 @@
 id: hows-the-world-treating-you
 title: How’s The World Treating You
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/hows-the-world-treating-you/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/hows-the-world-treating-you/
+    imported_at: '2026-02-08'
+tags:
+- JamFriendly
+- Rockabilly
+- ClassicCountry
+- Pop
+- Gospel
+default_key: C
+artist: Louvin Brothers
+composers:
+- Boudleaux Bryant and Chet Atkins
+- Chet Atkins and Boudleaux Bryant

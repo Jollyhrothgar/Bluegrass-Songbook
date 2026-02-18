@@ -1,11 +1,17 @@
 id: beautiful-home
 title: Beautiful Home
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/beautiful-home/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/beautiful-home/
+    imported_at: '2026-02-08'
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+default_key: G
+artist: Hank Williams

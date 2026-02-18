@@ -1,11 +1,21 @@
 id: if-thats-the-way-you-feel
 title: If That’s The Way You Feel
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/if-thats-the-way-you-feel/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/if-thats-the-way-you-feel/
+    imported_at: '2026-02-08'
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+default_key: C
+artist: Ricky Skaggs
+composers:
+- Carter Stanley and Ralph Stanley

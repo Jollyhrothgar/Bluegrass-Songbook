@@ -1,5 +1,8 @@
-// WorkView - Display works with multiple parts (lead sheets, tablature, etc.)
+// WorkView - Dashboard for works showing available parts, bounties, and metadata
 // Part of the works architecture refactor
+//
+// Principle: Song-view renders songs. Tab renderers render tabs.
+// Work-view is a dashboard that links to them.
 
 import {
     allSongs,
@@ -8,18 +11,24 @@ import {
     currentChordpro, setCurrentChordpro,
     loadedTablature, setLoadedTablature,
     tablaturePlayer, setTablaturePlayer,
-    compactMode, nashvilleMode, chordDisplayMode, showSectionLabels,
-    fontSizeLevel, FONT_SIZES,
     currentDetectedKey, setCurrentDetectedKey,
     originalDetectedKey, setOriginalDetectedKey,
     originalDetectedMode, setOriginalDetectedMode,
-    fullscreenMode,
-    setCurrentView
+    fullscreenMode, setFullscreenMode,
+    listContext, setListContext,
+    setCurrentView,
+    resolveWorkId,
+    getBountiesForWork
 } from './state.js';
 
-import { parseChordPro, showVersionPicker } from './song-view.js';
-import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS, extractChords } from './chords.js';
-import { escapeHtml, isPlaceholder, requireLogin } from './utils.js';
+import {
+    showVersionPicker, openSong,
+    toggleFullscreen, exitFullscreen,
+    navigatePrev, navigateNext,
+    updateFocusHeader, updateNavBar
+} from './song-view.js';
+import { CHROMATIC_MAJOR_KEYS } from './chords.js';
+import { escapeHtml, isPlaceholder, requireLogin, slugify, parseItemRef } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
 import { clearListView } from './lists.js';
@@ -34,6 +43,7 @@ let activePart = null;           // Currently displayed part { type, format, fil
 let availableParts = [];         // All parts for current work
 let trackRenderers = {};         // Map of trackId -> TabRenderer instance
 let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
+let inlineExpanded = false;      // true = showing a part inline (tab/doc), false = showing dashboard
 
 // Getter for checking if we're in work view
 export function getCurrentWork() { return currentWork; }
@@ -44,16 +54,6 @@ export function getCurrentWork() { return currentWork; }
 
 /**
  * Analyze reading list to detect repeat structures
- *
- * Returns an object with:
- * - repeatSections: [{startMeasure, endMeasure, repeatCount}]
- * - endings: [{measure, endingNumber}] - measures that are 1st/2nd endings
- * - repeatStartMarkers: Set of measures where repeat starts (|:)
- * - repeatEndMarkers: Set of measures where repeat ends (:|)
- *
- * Handles patterns like:
- * - [1-9, 2-8, 10-10]: Section 2-8 repeats, 9 is 1st ending, 10 is 2nd ending
- * - [11-18, 11-17, 19-19]: Section 11-17 repeats, 18 is 1st ending, 19 is 2nd ending
  */
 function analyzeReadingList(readingList) {
     if (!readingList || readingList.length === 0) {
@@ -62,36 +62,24 @@ function analyzeReadingList(readingList) {
 
     const repeatStartMarkers = new Set();
     const repeatEndMarkers = new Set();
-    const endings = {}; // measure -> ending number (1, 2, etc.)
+    const endings = {};
 
-    // Look for consecutive entries that share a common subset
     for (let i = 0; i < readingList.length - 1; i++) {
         const curr = readingList[i];
         const next = readingList[i + 1];
-
-        // Check if next entry is a subset of or overlaps with current
-        // Pattern: [A-B] followed by [C-D] where C >= A and D <= B-1 (or C > A and D < B)
-        // This indicates a repeat from C, with measures (D+1 to B) as 1st ending
 
         const currStart = curr.from_measure;
         const currEnd = curr.to_measure;
         const nextStart = next.from_measure;
         const nextEnd = next.to_measure;
 
-        // Case 1: Next starts inside current and ends before current ends
-        // e.g., [1-9] followed by [2-8] -> repeat at 2, end at 8, 9 is 1st ending
         if (nextStart > currStart && nextStart <= currEnd &&
             nextEnd < currEnd && nextEnd >= nextStart) {
-
             repeatStartMarkers.add(nextStart);
             repeatEndMarkers.add(nextEnd);
-
-            // Measures from nextEnd+1 to currEnd are 1st ending
             for (let m = nextEnd + 1; m <= currEnd; m++) {
                 endings[m] = 1;
             }
-
-            // Check if there's a 2nd ending after the repeat
             const afterRepeat = readingList[i + 2];
             if (afterRepeat &&
                 afterRepeat.from_measure === currEnd + 1 &&
@@ -100,18 +88,12 @@ function analyzeReadingList(readingList) {
             }
         }
 
-        // Case 2: Same start, next ends before current (subset repeat)
-        // e.g., [11-18] followed by [11-17] -> repeat at 11, end at 17, 18 is 1st ending
         if (nextStart === currStart && nextEnd < currEnd) {
             repeatStartMarkers.add(currStart);
             repeatEndMarkers.add(nextEnd);
-
-            // Measures from nextEnd+1 to currEnd are 1st ending
             for (let m = nextEnd + 1; m <= currEnd; m++) {
                 endings[m] = 1;
             }
-
-            // Check for 2nd ending
             const afterRepeat = readingList[i + 2];
             if (afterRepeat &&
                 afterRepeat.from_measure === currEnd + 1 &&
@@ -120,9 +102,6 @@ function analyzeReadingList(readingList) {
             }
         }
 
-        // Case 3: Same start, next extends past current (simple repeat of first section)
-        // e.g., [1-8] followed by [1-16] -> repeat at 1, end at 8 (measures 1-8 repeat)
-        // This is common in AABB tune structures where A part repeats before B
         if (nextStart === currStart && nextEnd > currEnd) {
             repeatStartMarkers.add(currStart);
             repeatEndMarkers.add(currEnd);
@@ -134,22 +113,12 @@ function analyzeReadingList(readingList) {
 
 /**
  * Build a tick mapping for compact mode visualization
- *
- * Returns a function that converts playback tick (expanded) to visual tick (original)
- * This is needed because in compact mode:
- * - Display shows original measures (e.g., 1-19)
- * - Playback uses expanded measures following reading list (e.g., 1-36)
- *
- * @param {Array} readingList - Array of {from_measure, to_measure} entries
- * @param {number} ticksPerMeasure - Ticks per measure for calculations
- * @returns {Function} Mapping function (playbackTick) => visualTick
  */
 function buildTickMapping(readingList, ticksPerMeasure) {
     if (!readingList || readingList.length === 0) {
-        return (tick) => tick; // No mapping needed
+        return (tick) => tick;
     }
 
-    // Build array of [expandedMeasure, originalMeasure] pairs
     const measureMapping = [];
     let expandedMeasure = 1;
 
@@ -161,59 +130,38 @@ function buildTickMapping(readingList, ticksPerMeasure) {
     }
 
     return (playbackTick) => {
-        // Find which expanded measure this tick is in
         const expandedMeasureNum = Math.floor(playbackTick / ticksPerMeasure) + 1;
         const tickInMeasure = playbackTick % ticksPerMeasure;
-
-        // Look up the original measure
         const mapping = measureMapping.find(m => m.expanded === expandedMeasureNum);
-        if (!mapping) {
-            return playbackTick; // Fallback
-        }
-
-        // Convert to tick in original measure
+        if (!mapping) return playbackTick;
         return (mapping.original - 1) * ticksPerMeasure + tickInMeasure;
     };
 }
 
 /**
  * Expand notation according to reading list (repeat structure)
- *
- * The reading list defines playback order, e.g.:
- * [1-9, 2-8, 10-10, 11-18, 11-17, 19-19]
- * means play measures 1-9, then 2-8, then 10, then 11-18, etc.
- *
- * @param {Array} notation - Original notation array (each entry has {measure, events})
- * @param {Array} readingList - Array of {from_measure, to_measure} entries
- * @returns {Array} Expanded notation with measures repeated as specified
  */
 function expandNotationWithReadingList(notation, readingList) {
     if (!readingList || readingList.length === 0) {
         return notation;
     }
 
-    // Build a map of measure number -> notation entry
     const measureMap = {};
     for (const entry of notation) {
         measureMap[entry.measure] = entry;
     }
 
-    // Expand according to reading list
     const expanded = [];
     let newMeasureNum = 1;
 
     for (const range of readingList) {
-        const from = range.from_measure;
-        const to = range.to_measure;
-
-        for (let m = from; m <= to; m++) {
+        for (let m = range.from_measure; m <= range.to_measure; m++) {
             const original = measureMap[m];
             if (original) {
-                // Clone the measure with new measure number
                 expanded.push({
                     ...original,
                     measure: newMeasureNum,
-                    originalMeasure: m  // Keep reference to original for debugging
+                    originalMeasure: m
                 });
                 newMeasureNum++;
             }
@@ -225,8 +173,6 @@ function expandNotationWithReadingList(notation, readingList) {
 
 /**
  * Prepare compact notation with repeat markers
- *
- * Returns the original notation with added repeat/ending metadata
  */
 function prepareCompactNotation(notation, readingList) {
     if (!readingList || readingList.length === 0) {
@@ -235,21 +181,12 @@ function prepareCompactNotation(notation, readingList) {
 
     const analysis = analyzeReadingList(readingList);
 
-    // Clone notation and add markers
     return notation.map(measure => {
         const m = measure.measure;
         const enhanced = { ...measure };
-
-        if (analysis.repeatStartMarkers.has(m)) {
-            enhanced.repeatStart = true;
-        }
-        if (analysis.repeatEndMarkers.has(m)) {
-            enhanced.repeatEnd = true;
-        }
-        if (analysis.endings[m]) {
-            enhanced.ending = analysis.endings[m];
-        }
-
+        if (analysis.repeatStartMarkers.has(m)) enhanced.repeatStart = true;
+        if (analysis.repeatEndMarkers.has(m)) enhanced.repeatEnd = true;
+        if (analysis.endings[m]) enhanced.ending = analysis.endings[m];
         return enhanced;
     });
 }
@@ -259,16 +196,15 @@ function prepareCompactNotation(notation, readingList) {
 // ============================================
 
 /**
- * Build the parts list from index data
- * The index has: content (ChordPro), tablature_parts (array)
+ * Build the parts list from index data.
+ * Each part gets a unique `partId` slug derived from its label,
+ * used in URLs (#work/{id}/{partId}) and list references.
  */
 function buildPartsFromIndex(song) {
     const parts = [];
 
-    // Lead sheet from content
     if (song.content) {
-        // Use "Fiddle" label for tunes with ABC notation
-        const label = song.abc_content ? 'Fiddle' : 'Lead Sheet';
+        const label = song.abc_content ? 'Fiddle' : 'Lyrics & Chords';
         parts.push({
             type: 'lead-sheet',
             format: 'chordpro',
@@ -278,7 +214,6 @@ function buildPartsFromIndex(song) {
         });
     }
 
-    // Tablature parts
     if (song.tablature_parts) {
         for (const tab of song.tablature_parts) {
             parts.push({
@@ -287,8 +222,7 @@ function buildPartsFromIndex(song) {
                 instrument: tab.instrument,
                 label: tab.label || `${tab.instrument} Tab`,
                 file: tab.file,
-                default: !song.content,  // Default if no lead sheet
-                // Provenance info for attribution
+                default: !song.content,
                 source: tab.source,
                 source_id: tab.source_id,
                 author: tab.author,
@@ -298,7 +232,6 @@ function buildPartsFromIndex(song) {
         }
     }
 
-    // Document parts (PDFs, scanned tabs)
     if (song.document_parts) {
         for (const doc of song.document_parts) {
             parts.push({
@@ -311,7 +244,6 @@ function buildPartsFromIndex(song) {
         }
     }
 
-    // Check for freshly-uploaded document (stashed blob URL from doc-upload)
     const pending = window.__pendingDocuments?.[song.id];
     if (pending && !song.document_parts?.length) {
         parts.push({
@@ -324,6 +256,14 @@ function buildPartsFromIndex(song) {
         });
     }
 
+    // Assign unique partId slugs (deduplicate by appending -2, -3, etc.)
+    const slugCounts = {};
+    for (const part of parts) {
+        const base = slugify(part.label || part.instrument || part.type);
+        slugCounts[base] = (slugCounts[base] || 0) + 1;
+        part.partId = slugCounts[base] === 1 ? base : `${base}-${slugCounts[base]}`;
+    }
+
     return parts;
 }
 
@@ -331,9 +271,10 @@ function buildPartsFromIndex(song) {
  * Open a work by ID
  */
 export async function openWork(workId, options = {}) {
+    workId = resolveWorkId(workId);
+
     let song = allSongs.find(s => s.id === workId);
     if (!song) {
-        // Song might be in pending_songs but not yet merged (race condition on load)
         if (window.refreshPendingSongs) {
             await window.refreshPendingSongs();
             song = allSongs.find(s => s.id === workId);
@@ -344,29 +285,32 @@ export async function openWork(workId, options = {}) {
         return;
     }
 
-    // Clear list view state when opening a work directly (not from a list)
-    // This hides the list header and clears list context
-    // Use direct DOM manipulation as a fallback in case of import issues
-    const listHeader = document.getElementById('list-header');
-    if (listHeader) {
-        listHeader.classList.add('hidden');
+    const { fromList = false } = options;
+
+    // Only clear list context when NOT navigating from a list
+    if (!fromList) {
+        const listHeader = document.getElementById('list-header');
+        if (listHeader) {
+            listHeader.classList.add('hidden');
+        }
+        clearListView();
+
+        // Exit fullscreen when opening dashboard directly (not from list nav)
+        if (fullscreenMode) {
+            document.body.classList.remove('fullscreen-mode');
+            setFullscreenMode(false);
+        }
+        const navBar = document.getElementById('song-nav-bar');
+        if (navBar) navBar.classList.add('hidden');
     }
-    // Also clear the list context via the imported function
-    clearListView();
 
-    // Clear chordpro content FIRST to prevent stale render from subscribers
-    // This must happen before any state changes that trigger reactive re-renders
     setCurrentChordpro(null);
-
-    // Show the song view panel (work view uses the same panel)
     setCurrentView('song');
 
-    // Reset key tracking
     setOriginalDetectedKey(null);
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
 
-    // Reset tablature state for new work
     setLoadedTablature(null);
     if (tablaturePlayer) {
         tablaturePlayer.stop();
@@ -376,26 +320,79 @@ export async function openWork(workId, options = {}) {
     currentWork = song;
     availableParts = buildPartsFromIndex(song);
     setCurrentSong(song);
+    inlineExpanded = false;
 
-    // Find default part or first available
-    const defaultPart = availableParts.find(p => p.default) || availableParts[0];
-    activePart = options.partId
-        ? availableParts.find(p => p.instrument === options.partId || p.type === options.partId)
-        : defaultPart;
+    // Hide Work button on the dashboard — it only makes sense as
+    // "go back to all parts" when viewing a specific part in song-view
+    const workViewBtn = document.getElementById('work-view-btn');
+    if (workViewBtn) workViewBtn.classList.add('hidden');
 
-    if (!activePart && availableParts.length > 0) {
-        activePart = availableParts[0];
+    // Hide song-view header actions that don't apply to the work dashboard
+    const editBtn = document.getElementById('edit-song-btn');
+    const exportBtn = document.getElementById('export-btn');
+    const exportWrapper = exportBtn?.closest('.export-wrapper');
+    if (isPlaceholder(song)) {
+        // Placeholders: show Edit (intercepted to show placeholder editor), hide Export
+        if (editBtn) editBtn.classList.remove('hidden');
+        if (exportWrapper) exportWrapper.classList.add('hidden');
+        window.__editInterceptor = () => {
+            showPlaceholderEditor();
+            return true;
+        };
+    } else {
+        if (editBtn) editBtn.classList.remove('hidden');
+        if (exportWrapper) exportWrapper.classList.remove('hidden');
+        window.__editInterceptor = null;
+    }
+
+    // If a specific part was requested via deep link, expand it inline
+    if (options.partId) {
+        activePart = availableParts.find(p =>
+            p.partId === options.partId ||
+            p.instrument === options.partId ||
+            p.type === options.partId
+        );
+        if (activePart && (activePart.type === 'tablature' || activePart.type === 'lead-sheet' || activePart.type === 'document')) {
+            inlineExpanded = true;
+        }
+    } else if (fromList && availableParts.length > 0) {
+        // From list navigation: auto-expand the default part for focus mode
+        activePart = availableParts.find(p => p.default) || availableParts[0];
+        inlineExpanded = true;
+    } else {
+        activePart = null;
+    }
+
+    // Update list context index when navigating within a list
+    if (fromList && listContext && listContext.songIds) {
+        const idx = listContext.songIds.indexOf(workId);
+        if (idx !== -1) {
+            setListContext({ ...listContext, currentIndex: idx });
+        }
+    }
+
+    // Auto-enter fullscreen when opening from a list
+    if (fromList && listContext) {
+        setFullscreenMode(true);
+        document.body.classList.add('fullscreen-mode');
+        document.body.classList.add('has-list-context');
     }
 
     renderWorkView();
 
-    // Update URL
-    const hash = options.partId
-        ? `#work/${workId}/parts/${options.partId}`
+    // Update focus header and nav bar for list context
+    if (fromList) {
+        updateFocusHeader();
+        updateNavBar();
+    }
+
+    const resolvedPartId = activePart?.partId || options.partId;
+    const hash = resolvedPartId
+        ? `#work/${workId}/${resolvedPartId}`
         : `#work/${workId}`;
 
     if (window.location.hash !== hash && !options.fromDeepLink) {
-        history.pushState({ workId, partId: options.partId }, '', hash);
+        history.pushState({ workId, partId: resolvedPartId }, '', hash);
     }
 }
 
@@ -404,7 +401,7 @@ export async function openWork(workId, options = {}) {
 // ============================================
 
 /**
- * Main render function for work view
+ * Main render function for work view - dashboard layout
  */
 export function renderWorkView() {
     const container = document.getElementById('song-content');
@@ -412,56 +409,67 @@ export function renderWorkView() {
 
     container.innerHTML = '';
 
+    // Focus header (shown only in fullscreen mode via CSS)
+    if (inlineExpanded) {
+        const focusHeader = renderWorkFocusHeader();
+        container.appendChild(focusHeader);
+    }
+
     // Work header
     const header = renderWorkHeader();
     container.appendChild(header);
 
-    // Part selector (if multiple parts)
-    if (availableParts.length > 1) {
-        const selector = renderPartSelector();
-        container.appendChild(selector);
-    }
-
-    // Part content
+    // Content area
     const content = document.createElement('div');
     content.className = 'work-part-content';
     container.appendChild(content);
 
-    if (activePart) {
-        renderPart(activePart, content);
-    } else if (isPlaceholder(currentWork)) {
-        content.innerHTML = '<p class="placeholder-empty">No content has been added yet.</p>';
+    if (inlineExpanded && activePart) {
+        // Inline expansion mode: show back button + content
+        renderInlineExpansion(activePart, content);
     } else {
-        content.innerHTML = '<p class="no-parts">No parts available for this work.</p>';
+        // Dashboard mode: show part cards
+        const cards = renderPartCards();
+        if (cards) {
+            content.appendChild(cards);
+        }
+
+        // Placeholder CTA
+        if (isPlaceholder(currentWork)) {
+            const cta = document.createElement('div');
+            cta.className = 'placeholder-cta';
+            const hasContent = availableParts.length > 0;
+            cta.innerHTML = `
+                <div class="placeholder-cta-text">${hasContent
+                    ? 'This song has reference material but no lyrics & chords or tablature yet.'
+                    : 'This song doesn\'t have lyrics & chords or tablature yet.'}</div>
+                <button class="placeholder-contribute-btn">Help complete this song</button>
+            `;
+            cta.querySelector('.placeholder-contribute-btn').addEventListener('click', () => {
+                if (!requireLogin('contribute')) return;
+                openAddSongPicker({
+                    mode: 'contribute',
+                    targetSlug: currentWork.id,
+                    title: currentWork.title,
+                    artist: currentWork.artist,
+                    key: currentWork.key,
+                });
+            });
+            content.appendChild(cta);
+        }
     }
 
-    // Placeholder CTA at bottom
-    if (isPlaceholder(currentWork)) {
-        const cta = document.createElement('div');
-        cta.className = 'placeholder-cta';
-        const hasContent = availableParts.length > 0;
-        cta.innerHTML = `
-            <div class="placeholder-cta-text">${hasContent
-                ? 'This song has reference material but no lead sheet or tablature yet.'
-                : 'This song doesn\'t have a lead sheet or tablature yet.'}</div>
-            <button class="placeholder-contribute-btn">Help complete this song</button>
-        `;
-        cta.querySelector('.placeholder-contribute-btn').addEventListener('click', () => {
-            if (!requireLogin('contribute')) return;
-            openAddSongPicker({
-                mode: 'contribute',
-                targetSlug: currentWork.id,
-                title: currentWork.title,
-                artist: currentWork.artist,
-                key: currentWork.key,
-            });
-        });
-        container.appendChild(cta);
+    // Bounty section - only on dashboard, not in part views
+    if (!inlineExpanded) {
+        const bountySection = renderBountySection();
+        if (bountySection) {
+            container.appendChild(bountySection);
+        }
     }
 }
 
 /**
- * Render work header with metadata - matches song-view pattern
+ * Render simplified work header - metadata only, no content controls
  */
 function renderWorkHeader() {
     const header = document.createElement('div');
@@ -470,7 +478,6 @@ function renderWorkHeader() {
     const title = currentWork.title || 'Untitled';
     const artist = currentWork.artist || '';
     const composer = currentWork.composer || '';
-    const key = currentWork.key || '';
 
     // Check for multiple versions
     const groupId = currentWork?.group_id;
@@ -480,7 +487,7 @@ function renderWorkHeader() {
         ? `<button class="see-versions-btn" data-group-id="${groupId}">See ${otherVersionCount} other version${otherVersionCount > 1 ? 's' : ''}</button>`
         : '';
 
-    // Build artists list: primary artist + covering artists
+    // Build artists list
     const allArtists = new Set();
     if (artist) allArtists.add(artist);
     const coveringArtists = currentWork?.covering_artists || [];
@@ -494,7 +501,6 @@ function renderWorkHeader() {
         infoItems.push(`<div class="info-item"><span class="info-label">Written by:</span> ${escapeHtml(composer)}</div>`);
     }
 
-    // Source attribution
     const source = currentWork.source;
     const sourceDisplayNames = {
         'classic-country': 'Classic Country Song Lyrics',
@@ -555,35 +561,11 @@ function renderWorkHeader() {
         }).join('')
         : '<em class="no-tags">None</em>';
 
-    // Disclosure states from localStorage
-    const controlsCollapsed = localStorage.getItem('workControlsCollapsed') !== 'false'; // Default collapsed
     const infoBarCollapsed = localStorage.getItem('infoBarCollapsed') !== 'false'; // Default collapsed
 
-    // Focus header - shown in fullscreen mode
-    const focusHeaderHtml = `
-        <div class="focus-header">
-            <button id="focus-prev-btn" class="focus-list-nav" title="Previous song (←)">←</button>
-            <div class="focus-title-area">
-                <span class="focus-title">${escapeHtml(title)}</span>
-                <span id="focus-position" class="focus-position"></span>
-            </div>
-            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
-                <span>✕</span>
-                <span class="focus-btn-label">Exit</span>
-            </button>
-            <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
-                <span>⚙️</span>
-                <span class="focus-btn-label">Controls</span>
-            </button>
-            <button id="focus-next-btn" class="focus-list-nav" title="Next song (→)">→</button>
-        </div>
-    `;
-
-    // Header controls row
     const headerControlsHtml = `
         <div class="header-controls">
             <button id="flag-btn" class="flag-btn" title="Report an issue">🚩 Report</button>
-            <button id="work-controls-toggle" class="disclosure-btn" title="Toggle controls">⚙️ Controls <span class="disclosure-arrow">${controlsCollapsed ? '▼' : '▲'}</span></button>
             <button id="info-toggle" class="disclosure-btn" title="Toggle info">🎵 Info <span class="disclosure-arrow">${infoBarCollapsed ? '▼' : '▲'}</span></button>
         </div>
     `;
@@ -604,9 +586,7 @@ function renderWorkHeader() {
         </div>
     `;
 
-
     header.innerHTML = `
-        ${focusHeaderHtml}
         <div class="song-header">
             <div class="song-header-left">
                 <div class="song-title-row">
@@ -614,18 +594,16 @@ function renderWorkHeader() {
                     ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
                     ${versionHtml}
                     <button id="add-to-list-btn" class="add-to-list-btn" title="Add to list">+ Lists</button>
-                    <button id="focus-btn" class="focus-btn" title="Focus mode (F)">⛶ Focus</button>
+                    ${inlineExpanded ? '<button id="focus-btn" class="focus-btn" title="Focus mode (F)">&#x26F6; Focus</button>' : ''}
+                    ${inlineExpanded && activePart?.type === 'tablature' ? '<button id="work-controls-toggle" class="focus-btn" title="Toggle controls">&#x2699;&#xFE0F; Controls</button>' : ''}
                 </div>
             </div>
             ${headerControlsHtml}
         </div>
-        <div id="work-controls-content" class="work-controls-content ${controlsCollapsed ? 'hidden' : ''}">
-            <!-- Controls are injected here by renderTablaturePart or renderChordProPart -->
-        </div>
         ${infoContentHtml}
     `;
 
-    // Wire up version button click handler
+    // Wire up version button
     const versionBtn = header.querySelector('.see-versions-btn');
     if (versionBtn) {
         versionBtn.addEventListener('click', (e) => {
@@ -634,18 +612,7 @@ function renderWorkHeader() {
         });
     }
 
-    // Wire up disclosure toggles
-    const controlsToggle = header.querySelector('#work-controls-toggle');
-    const controlsContent = header.querySelector('#work-controls-content');
-    if (controlsToggle && controlsContent) {
-        controlsToggle.addEventListener('click', () => {
-            const isCollapsed = controlsContent.classList.toggle('hidden');
-            localStorage.setItem('workControlsCollapsed', isCollapsed);
-            const arrow = controlsToggle.querySelector('.disclosure-arrow');
-            if (arrow) arrow.textContent = isCollapsed ? '▼' : '▲';
-        });
-    }
-
+    // Wire up info toggle
     const infoToggle = header.querySelector('#info-toggle');
     const infoContent = header.querySelector('#info-content');
     if (infoToggle && infoContent) {
@@ -657,79 +624,898 @@ function renderWorkHeader() {
         });
     }
 
+    // Wire up artists expand/collapse
+    const artistsExpand = header.querySelector('#artists-expand');
+    const artistsCollapse = header.querySelector('#artists-collapse');
+    if (artistsExpand) {
+        artistsExpand.addEventListener('click', () => {
+            header.querySelector('#artists-full')?.classList.remove('hidden');
+            header.querySelector('#artists-collapse')?.classList.remove('hidden');
+            artistsExpand.classList.add('hidden');
+        });
+    }
+    if (artistsCollapse) {
+        artistsCollapse.addEventListener('click', () => {
+            header.querySelector('#artists-full')?.classList.add('hidden');
+            artistsCollapse.classList.add('hidden');
+            header.querySelector('#artists-expand')?.classList.remove('hidden');
+        });
+    }
+
+    // Wire up controls toggle (non-fullscreen)
+    const controlsToggle = header.querySelector('#work-controls-toggle');
+    if (controlsToggle) {
+        controlsToggle.addEventListener('click', () => {
+            const controls = document.getElementById('work-controls-content');
+            if (controls) {
+                controls.classList.toggle('hidden');
+            }
+        });
+    }
+
     return header;
 }
 
+// ============================================
+// FOCUS HEADER (for fullscreen mode in work-view)
+// ============================================
+
 /**
- * Render part selector tabs
+ * Render focus header for work-view inline expansion.
+ * Same structure as song-view focus header for consistent UX.
  */
-function renderPartSelector() {
-    const selector = document.createElement('div');
-    selector.className = 'part-selector';
+function renderWorkFocusHeader() {
+    const title = currentWork?.title || 'Untitled';
+    const partLabel = activePart?.label ? ` - ${activePart.label}` : '';
 
-    const tabs = availableParts.map(part => {
-        const isActive = part === activePart;
-        const icon = part.type === 'tablature'
-            ? (INSTRUMENT_ICONS[part.instrument] || '🎵')
-            : part.type === 'document' ? '📎' : '📄';
+    const header = document.createElement('div');
+    header.className = 'focus-header';
+    header.innerHTML = `
+        <button id="focus-prev-btn" class="focus-list-nav" title="Previous song (\u2190)">\u2190</button>
+        <div class="focus-title-area">
+            <span class="focus-title">${escapeHtml(title)}${escapeHtml(partLabel)}</span>
+            <span id="focus-position" class="focus-position"></span>
+        </div>
+        <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
+            <span>\u2715</span>
+            <span class="focus-btn-label">Exit</span>
+        </button>
+        <button id="focus-goto-song-btn" class="focus-nav-btn" title="View work dashboard">
+            <span>\uD83C\uDFB5</span>
+            <span class="focus-btn-label">Go to Song</span>
+        </button>
+        <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
+            <span>\u2699\uFE0F</span>
+            <span class="focus-btn-label">Controls</span>
+        </button>
+        <button id="focus-next-btn" class="focus-list-nav" title="Next song (\u2192)">\u2192</button>
+    `;
 
-        return `
-            <button class="part-tab ${isActive ? 'active' : ''}"
-                    data-part-type="${part.type}"
-                    data-part-instrument="${part.instrument || ''}"
-                    data-part-file="${part.file || ''}">
-                <span class="part-icon">${icon}</span>
-                <span class="part-label">${escapeHtml(part.label)}</span>
-            </button>
-        `;
-    }).join('');
-
-    selector.innerHTML = tabs;
-
-    // Add click handlers
-    selector.querySelectorAll('.part-tab').forEach(tab => {
-        tab.addEventListener('click', () => {
-            const partType = tab.dataset.partType;
-            const partInstrument = tab.dataset.partInstrument;
-            const partFile = tab.dataset.partFile;
-
-            // Find matching part
-            activePart = availableParts.find(p =>
-                p.type === partType &&
-                (p.instrument || '') === partInstrument &&
-                (p.file || '') === partFile
-            );
-
-            renderWorkView();
-
-            // Update URL
-            const partId = activePart?.instrument || activePart?.type;
-            const hash = `#work/${currentWork.id}/parts/${partId}`;
-            history.pushState({ workId: currentWork.id, partId }, '', hash);
-        });
+    // Wire up event handlers
+    header.querySelector('#focus-exit-btn')?.addEventListener('click', () => {
+        exitFullscreen();
     });
 
-    return selector;
+    header.querySelector('#focus-goto-song-btn')?.addEventListener('click', () => {
+        // Exit focus mode and navigate to work dashboard
+        setFullscreenMode(false);
+        document.body.classList.remove('fullscreen-mode');
+        document.body.classList.remove('has-list-context');
+        clearListView();
+        // Re-open as dashboard (not inline)
+        inlineExpanded = false;
+        activePart = null;
+        renderWorkView();
+        const hash = `#work/${currentWork.id}`;
+        history.pushState({ workId: currentWork.id }, '', hash);
+    });
+
+    header.querySelector('#focus-prev-btn')?.addEventListener('click', () => {
+        navigatePrev();
+    });
+
+    header.querySelector('#focus-next-btn')?.addEventListener('click', () => {
+        navigateNext();
+    });
+
+    header.querySelector('#focus-controls-toggle')?.addEventListener('click', () => {
+        const controls = document.getElementById('work-controls-content');
+        if (controls) {
+            controls.classList.toggle('hidden');
+        }
+    });
+
+    return header;
+}
+
+// ============================================
+// PART CARDS (Dashboard)
+// ============================================
+
+/**
+ * Render part cards grid showing available content
+ */
+function renderPartCards() {
+    if (availableParts.length === 0) return null;
+
+    const grid = document.createElement('div');
+    grid.className = 'work-dashboard-cards';
+
+    for (const part of availableParts) {
+        const card = createPartCard(part);
+        grid.appendChild(card);
+    }
+
+    return grid;
 }
 
 /**
- * Render a specific part
+ * Create a single part card
  */
-async function renderPart(part, container) {
-    if (part.format === 'chordpro' || part.type === 'lead-sheet') {
-        renderChordProPart(part, container);
-    } else if (part.format === 'otf' || part.type === 'tablature') {
-        await renderTablaturePart(part, container);
+function createPartCard(part) {
+    const card = document.createElement('div');
+    card.className = 'work-part-card';
+
+    if (part.type === 'lead-sheet') {
+        const icon = '📄';
+        const key = currentWork.key ? `Key: ${currentWork.key}` : '';
+        const chordCount = currentWork.chord_count ? `${currentWork.chord_count} chords` : '';
+        const meta = [key, chordCount].filter(Boolean).join(' · ');
+        const firstLine = currentWork.first_line ? escapeHtml(currentWork.first_line) : '';
+
+        card.innerHTML = `
+            <div class="work-card-icon">${icon}</div>
+            <div class="work-card-body">
+                <div class="work-card-label">${escapeHtml(part.label)}</div>
+                ${meta ? `<div class="work-card-meta">${meta}</div>` : ''}
+                ${firstLine ? `<div class="work-card-preview">${firstLine}</div>` : ''}
+            </div>
+            <button class="work-card-action">View</button>
+        `;
+
+        const viewAction = () => {
+            activePart = part;
+            inlineExpanded = true;
+            renderWorkView();
+            const hash = `#work/${currentWork.id}/${part.partId}`;
+            history.pushState({ workId: currentWork.id, partId: part.partId }, '', hash);
+        };
+
+        card.querySelector('.work-card-action').addEventListener('click', viewAction);
+        card.addEventListener('click', (e) => {
+            if (!e.target.closest('.work-card-action')) viewAction();
+        });
+
+    } else if (part.type === 'tablature') {
+        const icon = INSTRUMENT_ICONS[part.instrument] || '🎵';
+        const meta = [];
+        if (part.author) meta.push(`by ${part.author}`);
+        if (part.source === 'banjo-hangout') meta.push('Banjo Hangout');
+
+        card.innerHTML = `
+            <div class="work-card-icon">${icon}</div>
+            <div class="work-card-body">
+                <div class="work-card-label">${escapeHtml(part.label)}</div>
+                ${meta.length ? `<div class="work-card-meta">${escapeHtml(meta.join(' · '))}</div>` : ''}
+            </div>
+            <button class="work-card-action">View</button>
+        `;
+
+        const viewAction = () => {
+            activePart = part;
+            inlineExpanded = true;
+            renderWorkView();
+            const hash = `#work/${currentWork.id}/${part.partId}`;
+            history.pushState({ workId: currentWork.id, partId: part.partId }, '', hash);
+        };
+
+        card.querySelector('.work-card-action').addEventListener('click', viewAction);
+        card.addEventListener('click', (e) => {
+            if (!e.target.closest('.work-card-action')) viewAction();
+        });
+
     } else if (part.type === 'document') {
-        renderDocumentPart(part, container);
-    } else {
-        container.innerHTML = `<p class="error">Unknown part format: ${part.format}</p>`;
+        const icon = '📎';
+
+        card.innerHTML = `
+            <div class="work-card-icon">${icon}</div>
+            <div class="work-card-body">
+                <div class="work-card-label">${escapeHtml(part.label)}</div>
+                <div class="work-card-meta">${part.format?.toUpperCase() || 'PDF'}</div>
+            </div>
+            <button class="work-card-action">View</button>
+        `;
+
+        const viewAction = () => {
+            activePart = part;
+            inlineExpanded = true;
+            renderWorkView();
+            const hash = `#work/${currentWork.id}/${part.partId}`;
+            history.pushState({ workId: currentWork.id, partId: part.partId }, '', hash);
+        };
+
+        card.querySelector('.work-card-action').addEventListener('click', viewAction);
+        card.addEventListener('click', (e) => {
+            if (!e.target.closest('.work-card-action')) viewAction();
+        });
+    }
+
+    return card;
+}
+
+// ============================================
+// INLINE EXPANSION (Tab/Doc within dashboard)
+// ============================================
+
+/**
+ * Render a part inline with a back button to return to dashboard
+ */
+function renderInlineExpansion(part, container) {
+    // Back button
+    const backBtn = document.createElement('button');
+    backBtn.className = 'work-inline-back';
+    backBtn.textContent = '\u2190 Back to overview';
+    backBtn.addEventListener('click', () => {
+        inlineExpanded = false;
+        activePart = null;
+        // Stop any playing tablature
+        if (tablaturePlayer) {
+            tablaturePlayer.stop();
+            setTablaturePlayer(null);
+        }
+        renderWorkView();
+        // Update URL back to work
+        const hash = `#work/${currentWork.id}`;
+        history.pushState({ workId: currentWork.id }, '', hash);
+    });
+    container.appendChild(backBtn);
+
+    // Controls container (tab controls go here, hidden by default — toggled via Controls button)
+    const controlsArea = document.createElement('div');
+    controlsArea.className = 'work-inline-controls hidden';
+    controlsArea.id = 'work-controls-content';
+    container.appendChild(controlsArea);
+
+    // Content
+    const contentArea = document.createElement('div');
+    contentArea.className = 'work-inline-content';
+    container.appendChild(contentArea);
+
+    if (part.type === 'tablature') {
+        renderTablaturePart(part, contentArea);
+    } else if (part.type === 'lead-sheet') {
+        renderLeadSheetPart(part, contentArea);
+    } else if (part.type === 'document') {
+        renderDocumentPart(part, contentArea);
+    }
+}
+
+// ============================================
+// BOUNTY SECTION
+// ============================================
+
+const BOUNTY_PART_LABELS = {
+    'lead-sheet': 'Lyrics & Chords',
+    'tablature': 'Tab',
+    'abc-notation': 'ABC Notation',
+    'document': 'PDF/Document',
+};
+const BOUNTY_INSTRUMENT_LABELS = {
+    'banjo': 'Banjo', 'guitar': 'Guitar', 'fiddle': 'Fiddle',
+    'mandolin': 'Mandolin', 'dobro': 'Dobro', 'bass': 'Bass',
+};
+
+/**
+ * Render bounty section for the current work.
+ * Always expanded on the dashboard - bounties are a first-class element.
+ */
+function renderBountySection() {
+    if (!currentWork) return null;
+
+    const bounties = getBountiesForWork(currentWork.id);
+
+    const section = document.createElement('div');
+    section.className = 'work-bounty-section';
+
+    const bountyCards = bounties.map(b => {
+        const label = b.part_type === 'tablature' && b.instrument
+            ? `${BOUNTY_INSTRUMENT_LABELS[b.instrument] || b.instrument} Tab`
+            : BOUNTY_PART_LABELS[b.part_type] || b.part_type;
+        return `
+            <div class="work-bounty-card" data-bounty-type="${b.part_type}" data-bounty-instrument="${b.instrument || ''}">
+                <div class="work-bounty-label">${escapeHtml(label)}</div>
+                ${b.description ? `<div class="work-bounty-desc">${escapeHtml(b.description)}</div>` : ''}
+                <button class="work-bounty-contribute">Contribute</button>
+            </div>
+        `;
+    }).join('');
+
+    const bountyCount = bounties.length;
+
+    section.innerHTML = `
+        <div class="work-bounty-header">
+            <div class="work-bounty-title">
+                <span class="work-bounty-flag">&#x1F3F4;</span>
+                Wanted ${bountyCount > 0 ? `(${bountyCount})` : ''}
+            </div>
+        </div>
+        <div class="work-bounty-body" id="work-bounty-body">
+            ${bountyCards || '<div class="work-bounty-empty">No specific requests yet.</div>'}
+            <button class="work-bounty-request-btn" id="work-bounty-request-btn">+ Request a part</button>
+        </div>
+    `;
+
+    // Wire contribute buttons
+    section.querySelectorAll('.work-bounty-contribute').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (!requireLogin('contribute')) return;
+            openAddSongPicker({
+                mode: 'contribute',
+                targetSlug: currentWork.id,
+                title: currentWork.title,
+                artist: currentWork.artist,
+                key: currentWork.key,
+            });
+        });
+    });
+
+    // Wire request button
+    section.querySelector('#work-bounty-request-btn')?.addEventListener('click', () => {
+        if (!requireLogin('request parts')) return;
+        openBountyRequestInline(section, currentWork);
+    });
+
+    return section;
+}
+
+/**
+ * Open inline bounty request form within the work view.
+ */
+function openBountyRequestInline(section, work) {
+    const body = section.querySelector('#work-bounty-body');
+    if (!body) return;
+
+    if (body.querySelector('.work-bounty-inline-form')) return;
+
+    const form = document.createElement('div');
+    form.className = 'work-bounty-inline-form';
+    form.innerHTML = `
+        <select class="work-bounty-inline-select" id="work-bounty-inline-type">
+            <option value="lead-sheet">Lyrics & Chords</option>
+            <option value="tablature:banjo">Banjo Tab</option>
+            <option value="tablature:guitar">Guitar Tab</option>
+            <option value="tablature:fiddle">Fiddle Tab</option>
+            <option value="tablature:mandolin">Mandolin Tab</option>
+            <option value="abc-notation">ABC Notation</option>
+            <option value="document">PDF / Document</option>
+        </select>
+        <input type="text" class="work-bounty-inline-desc" placeholder="Details (optional)" id="work-bounty-inline-desc" />
+        <div class="work-bounty-inline-actions">
+            <button class="work-bounty-inline-submit" id="work-bounty-inline-submit">Submit</button>
+            <button class="work-bounty-inline-cancel" id="work-bounty-inline-cancel">Cancel</button>
+        </div>
+        <div class="work-bounty-inline-status" id="work-bounty-inline-status"></div>
+    `;
+
+    body.insertBefore(form, body.querySelector('#work-bounty-request-btn'));
+
+    form.querySelector('#work-bounty-inline-cancel').addEventListener('click', () => form.remove());
+
+    form.querySelector('#work-bounty-inline-submit').addEventListener('click', async () => {
+        const supabase = window.SupabaseAuth?.supabase;
+        const user = window.SupabaseAuth?.getUser?.();
+        if (!supabase || !user) return;
+
+        const typeValue = form.querySelector('#work-bounty-inline-type').value;
+        const [partType, instrument] = typeValue.includes(':') ? typeValue.split(':') : [typeValue, null];
+        const description = form.querySelector('#work-bounty-inline-desc').value.trim() || null;
+        const statusDiv = form.querySelector('#work-bounty-inline-status');
+        const submitBtn = form.querySelector('#work-bounty-inline-submit');
+
+        submitBtn.disabled = true;
+        statusDiv.textContent = 'Submitting...';
+
+        try {
+            const { error } = await supabase.from('bounties').insert({
+                work_id: work.id,
+                part_type: partType,
+                instrument,
+                description,
+                created_by: user.id,
+            });
+
+            if (error) {
+                statusDiv.textContent = error.code === '23505'
+                    ? 'Already requested!'
+                    : `Error: ${error.message}`;
+                submitBtn.disabled = false;
+                return;
+            }
+
+            statusDiv.innerHTML = '<span style="color: var(--success)">Request submitted!</span>';
+            if (window.refreshBounties) await window.refreshBounties();
+            setTimeout(() => renderWorkView(), 800);
+        } catch (e) {
+            statusDiv.textContent = `Error: ${e.message}`;
+            submitBtn.disabled = false;
+        }
+    });
+}
+
+// ============================================
+// PLACEHOLDER METADATA EDITOR
+// ============================================
+
+/**
+ * Show inline editor for placeholder metadata (title, artist, key, notes).
+ * Replaces the dashboard content area with an edit form.
+ */
+function showPlaceholderEditor() {
+    if (!requireLogin('edit placeholder metadata')) return;
+    if (!currentWork) return;
+
+    const container = document.getElementById('song-content');
+    if (!container) return;
+
+    // Replace content with edit form
+    container.innerHTML = '';
+
+    const form = document.createElement('div');
+    form.className = 'placeholder-editor';
+
+    const keyOptions = CHROMATIC_MAJOR_KEYS.map(k =>
+        `<option value="${k}" ${k === (currentWork.key || '') ? 'selected' : ''}>${k}</option>`
+    ).join('');
+
+    // Current document info
+    const existingDoc = currentWork.document_parts?.[0];
+    const pendingDoc = window.__pendingDocuments?.[currentWork.id];
+    const hasDoc = !!(existingDoc || pendingDoc);
+    const docLabel = existingDoc?.label || pendingDoc?.label || '';
+
+    form.innerHTML = `
+        <div class="placeholder-editor-header">
+            <h3>Edit Placeholder</h3>
+        </div>
+        <div class="placeholder-editor-form">
+            <div class="placeholder-editor-field">
+                <label for="ph-edit-title">Title</label>
+                <input type="text" id="ph-edit-title" value="${escapeHtml(currentWork.title || '')}" />
+            </div>
+            <div class="placeholder-editor-field">
+                <label for="ph-edit-artist">Artist</label>
+                <input type="text" id="ph-edit-artist" value="${escapeHtml(currentWork.artist || '')}" />
+            </div>
+            <div class="placeholder-editor-field">
+                <label for="ph-edit-key">Key</label>
+                <select id="ph-edit-key">
+                    <option value="">None</option>
+                    ${keyOptions}
+                </select>
+            </div>
+            <div class="placeholder-editor-field">
+                <label for="ph-edit-notes">Notes</label>
+                <textarea id="ph-edit-notes" rows="3">${escapeHtml(currentWork.notes || '')}</textarea>
+            </div>
+            <div class="placeholder-editor-field">
+                <label>Document</label>
+                <div class="ph-edit-doc-section">
+                    ${hasDoc
+                        ? `<div class="ph-edit-doc-current">
+                               <span class="ph-edit-doc-icon">📎</span>
+                               <span class="ph-edit-doc-label">${escapeHtml(docLabel)}</span>
+                               <span class="ph-edit-doc-badge">PDF</span>
+                           </div>`
+                        : '<div class="ph-edit-doc-empty">No document attached</div>'
+                    }
+                    <div class="ph-edit-doc-picker">
+                        <input type="file" id="ph-edit-doc-file" accept=".jpg,.jpeg,.png,.heic,.webp,.pdf" class="hidden" />
+                        <button type="button" id="ph-edit-doc-btn" class="ph-edit-doc-upload-btn">
+                            ${hasDoc ? 'Replace document' : 'Add document'}
+                        </button>
+                        <div id="ph-edit-doc-info" class="ph-edit-doc-info hidden"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder-editor-actions">
+                <button class="placeholder-editor-save" id="ph-edit-save">Save</button>
+                <button class="placeholder-editor-cancel" id="ph-edit-cancel">Cancel</button>
+            </div>
+            <div class="placeholder-editor-status" id="ph-edit-status"></div>
+        </div>
+    `;
+
+    container.appendChild(form);
+
+    // Document file picker state
+    let newDocFile = null;
+
+    const docFileInput = form.querySelector('#ph-edit-doc-file');
+    const docBtn = form.querySelector('#ph-edit-doc-btn');
+    const docInfo = form.querySelector('#ph-edit-doc-info');
+
+    docBtn.addEventListener('click', () => docFileInput.click());
+
+    docFileInput.addEventListener('change', (e) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        const MAX_SIZE = 10 * 1024 * 1024;
+        if (file.size > MAX_SIZE) {
+            docInfo.textContent = `File too large (${(file.size / 1024 / 1024).toFixed(1)}MB). Max 10MB.`;
+            docInfo.className = 'ph-edit-doc-info error';
+            docInfo.classList.remove('hidden');
+            return;
+        }
+
+        newDocFile = file;
+        docInfo.innerHTML = `
+            <span class="ph-edit-doc-filename">${escapeHtml(file.name)}</span>
+            <span class="ph-edit-doc-size">(${(file.size / 1024).toFixed(0)} KB)</span>
+            <button type="button" class="ph-edit-doc-remove" title="Remove">&times;</button>
+        `;
+        docInfo.className = 'ph-edit-doc-info';
+        docInfo.classList.remove('hidden');
+        docBtn.textContent = 'Change file';
+
+        docInfo.querySelector('.ph-edit-doc-remove')?.addEventListener('click', () => {
+            newDocFile = null;
+            docFileInput.value = '';
+            docInfo.classList.add('hidden');
+            docBtn.textContent = hasDoc ? 'Replace document' : 'Add document';
+        });
+    });
+
+    // Cancel: re-render dashboard
+    form.querySelector('#ph-edit-cancel').addEventListener('click', () => {
+        renderWorkView();
+    });
+
+    // Save
+    form.querySelector('#ph-edit-save').addEventListener('click', async () => {
+        const title = form.querySelector('#ph-edit-title').value.trim();
+        const artist = form.querySelector('#ph-edit-artist').value.trim();
+        const key = form.querySelector('#ph-edit-key').value;
+        const notes = form.querySelector('#ph-edit-notes').value.trim();
+        const statusDiv = form.querySelector('#ph-edit-status');
+        const saveBtn = form.querySelector('#ph-edit-save');
+
+        if (!title) {
+            statusDiv.textContent = 'Title is required';
+            statusDiv.className = 'placeholder-editor-status error';
+            return;
+        }
+
+        saveBtn.disabled = true;
+        statusDiv.textContent = newDocFile ? 'Uploading document...' : 'Saving...';
+        statusDiv.className = 'placeholder-editor-status';
+
+        try {
+            const isTrusted = await window.SupabaseAuth?.isTrustedUser?.();
+
+            if (isTrusted) {
+                await savePlaceholderMetadataTrusted({ title, artist, key, notes });
+                if (newDocFile) {
+                    statusDiv.textContent = 'Uploading document...';
+                    await uploadPlaceholderDocument(newDocFile, title);
+                }
+            } else {
+                await savePlaceholderMetadataIssue({ title, artist, key, notes });
+                if (newDocFile) {
+                    statusDiv.textContent = 'Uploading document...';
+                    await uploadPlaceholderDocumentRegular(newDocFile, title);
+                }
+            }
+
+            statusDiv.innerHTML = '<span style="color: var(--success)">Saved!</span>';
+
+            // Update in-memory work data and re-render after brief delay
+            currentWork.title = title;
+            currentWork.artist = artist;
+            currentWork.key = key;
+            currentWork.notes = notes;
+            setTimeout(() => renderWorkView(), 600);
+        } catch (e) {
+            statusDiv.textContent = `Error: ${e.message}`;
+            statusDiv.className = 'placeholder-editor-status error';
+            saveBtn.disabled = false;
+        }
+    });
+}
+
+/**
+ * Save placeholder metadata as trusted user via Supabase pending_songs.
+ */
+async function savePlaceholderMetadataTrusted({ title, artist, key, notes }) {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) throw new Error('Not connected to database');
+
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) throw new Error('Not logged in');
+
+    const user = window.SupabaseAuth?.getUser?.();
+
+    const entry = {
+        id: currentWork.id,
+        replaces_id: currentWork.id,
+        title,
+        artist: artist || null,
+        content: currentWork.content || null,
+        key: key || null,
+        notes: notes || null,
+        status: 'placeholder',
+        tags: currentWork.tags || {},
+        created_by: user?.id || null,
+    };
+
+    const { error } = await supabase
+        .from('pending_songs')
+        .upsert(entry, { onConflict: 'id' });
+
+    if (error) throw new Error(error.message);
+
+    // Refresh to merge into allSongs
+    if (window.refreshPendingSongs) {
+        await window.refreshPendingSongs();
     }
 }
 
 /**
- * Render document part (PDF viewer with download fallback)
+ * Save placeholder metadata as regular user via GitHub issue.
  */
+async function savePlaceholderMetadataIssue({ title, artist, key, notes }) {
+    const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
+
+    const user = window.SupabaseAuth?.getUser?.();
+    const submitter = user?.user_metadata?.full_name || user?.email || 'Anonymous User';
+
+    const body = [
+        `**Work ID:** ${currentWork.id}`,
+        `**Current Title:** ${currentWork.title}`,
+        `**Proposed Title:** ${title}`,
+        artist !== currentWork.artist ? `**Proposed Artist:** ${artist}` : '',
+        key !== currentWork.key ? `**Proposed Key:** ${key}` : '',
+        notes !== currentWork.notes ? `**Proposed Notes:** ${notes}` : '',
+        '',
+        `Submitted by: ${submitter}`,
+    ].filter(Boolean).join('\n');
+
+    const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+            'apikey': SUPABASE_ANON_KEY,
+        },
+        body: JSON.stringify({
+            type: 'correction',
+            title: `Update placeholder metadata: ${title}`,
+            songId: currentWork.id,
+            chordpro: `{meta: title ${title}}\n{meta: artist ${artist}}\n{key: ${key}}\n`,
+            comment: `Placeholder metadata update:\n${body}`,
+            submittedBy: submitter,
+        }),
+    });
+
+    const result = await response.json();
+    if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Failed to submit');
+    }
+}
+
+/**
+ * Convert an image file to PDF bytes using pdf-lib (lazy-loaded).
+ */
+async function imageToPdfBlob(imageFile) {
+    // Lazy-load pdf-lib
+    if (!window.PDFLib) {
+        await new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js';
+            script.onload = resolve;
+            script.onerror = () => reject(new Error('Failed to load pdf-lib'));
+            document.head.appendChild(script);
+        });
+    }
+    const PDFLib = window.PDFLib;
+    const pdfDoc = await PDFLib.PDFDocument.create();
+
+    const arrayBuffer = await imageFile.arrayBuffer();
+    const bytes = new Uint8Array(arrayBuffer);
+
+    let image;
+    if (imageFile.type === 'image/png') {
+        image = await pdfDoc.embedPng(bytes);
+    } else {
+        // Convert to JPEG via canvas
+        const jpegBytes = await new Promise((resolve, reject) => {
+            const img = new Image();
+            const url = URL.createObjectURL(imageFile);
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                canvas.width = img.naturalWidth;
+                canvas.height = img.naturalHeight;
+                canvas.getContext('2d').drawImage(img, 0, 0);
+                canvas.toBlob(
+                    (blob) => { URL.revokeObjectURL(url); blob ? blob.arrayBuffer().then(buf => resolve(new Uint8Array(buf))) : reject(new Error('Canvas to blob failed')); },
+                    'image/jpeg', 0.92
+                );
+            };
+            img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Failed to load image')); };
+            img.src = url;
+        });
+        image = await pdfDoc.embedJpg(jpegBytes);
+    }
+
+    const maxW = 612, maxH = 792;
+    let { width, height } = image.scale(1);
+    if (width > maxW || height > maxH) {
+        const scale = Math.min(maxW / width, maxH / height);
+        width *= scale;
+        height *= scale;
+    }
+    const page = pdfDoc.addPage([width, height]);
+    page.drawImage(image, { x: 0, y: 0, width, height });
+
+    const pdfBytes = await pdfDoc.save();
+    return new Blob([pdfBytes], { type: 'application/pdf' });
+}
+
+/**
+ * Upload a document for a placeholder (trusted user flow).
+ */
+async function uploadPlaceholderDocument(file, label) {
+    const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) throw new Error('Not connected to database');
+
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) throw new Error('Not logged in');
+
+    // Convert images to PDF
+    let pdfBlob = file;
+    if (file.type !== 'application/pdf') {
+        pdfBlob = await imageToPdfBlob(file);
+    }
+
+    const arrayBuffer = await pdfBlob.arrayBuffer();
+    const base64 = btoa(new Uint8Array(arrayBuffer).reduce((s, b) => s + String.fromCharCode(b), ''));
+
+    const filename = file.type === 'application/pdf'
+        ? file.name.replace(/[^a-zA-Z0-9._-]/g, '-')
+        : currentWork.id + '.pdf';
+
+    const resp = await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${session.access_token}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            id: currentWork.id,
+            title: currentWork.title,
+            artist: currentWork.artist,
+            content: null,
+            create_placeholder: true,
+            key: currentWork.key || null,
+            attachment: { filename, base64, label: label || currentWork.title },
+        }),
+    });
+
+    if (!resp.ok) {
+        const body = await resp.text();
+        console.warn('Auto-commit response:', body);
+    }
+
+    // Stash blob URL for immediate display
+    if (!window.__pendingDocuments) window.__pendingDocuments = {};
+    window.__pendingDocuments[currentWork.id] = {
+        url: URL.createObjectURL(pdfBlob),
+        label: label || currentWork.title,
+    };
+}
+
+/**
+ * Upload a document for a placeholder (regular user flow — stages for review).
+ */
+async function uploadPlaceholderDocumentRegular(file, label) {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) throw new Error('Not connected to database');
+
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) throw new Error('Not logged in');
+
+    // Convert images to PDF
+    let pdfBlob = file;
+    if (file.type !== 'application/pdf') {
+        pdfBlob = await imageToPdfBlob(file);
+    }
+
+    const filename = file.type === 'application/pdf'
+        ? file.name.replace(/[^a-zA-Z0-9._-]/g, '-')
+        : currentWork.id + '.pdf';
+
+    // Upload to staging bucket
+    const storagePath = `${session.user.id}/${currentWork.id}/${filename}`;
+    const { error: uploadError } = await supabase.storage
+        .from('doc-staging')
+        .upload(storagePath, pdfBlob, { contentType: 'application/pdf' });
+
+    if (uploadError) throw new Error(uploadError.message);
+
+    // Insert staging metadata
+    const { error: dbError } = await supabase
+        .from('doc_staging')
+        .insert({
+            user_id: session.user.id,
+            work_id: currentWork.id,
+            storage_path: storagePath,
+            label: label || currentWork.title,
+            file_size: pdfBlob.size,
+        });
+
+    if (dbError) throw new Error(dbError.message);
+}
+
+// ============================================
+// PART RENDERERS (Tab + Doc for inline expansion)
+// ============================================
+
+/**
+ * Render lead-sheet part inline.
+ * ABC notation is rendered via ABCJS. ChordPro falls back to openSong().
+ */
+function renderLeadSheetPart(part, container) {
+    const abcContent = currentWork.abc_content;
+
+    if (abcContent) {
+        // Render ABC notation inline
+        const abcId = 'work-abc-notation';
+        container.innerHTML = `<div id="${abcId}" class="abc-notation-container"></div>`;
+
+        // Use ABCJS if available
+        if (typeof ABCJS !== 'undefined') {
+            try {
+                const containerWidth = container.clientWidth || window.innerWidth - 32;
+                const isMobile = window.innerWidth <= 600;
+                const minWidth = isMobile ? 280 : 400;
+                const staffwidth = Math.max(minWidth, containerWidth - 32);
+
+                ABCJS.renderAbc(abcId, abcContent, {
+                    staffwidth,
+                    scale: 1.0,
+                    add_classes: true,
+                    wrap: {
+                        minSpacing: 1.5,
+                        maxSpacing: 2.5,
+                        preferredMeasuresPerLine: 4
+                    },
+                    paddingleft: 0,
+                    paddingright: 0,
+                    paddingbottom: 30
+                });
+            } catch (e) {
+                console.error('ABC rendering error:', e);
+                container.innerHTML = `<pre class="abc-fallback">${escapeHtml(abcContent)}</pre>`;
+            }
+        } else {
+            container.innerHTML = `<pre class="abc-fallback">${escapeHtml(abcContent)}</pre>`;
+        }
+
+        // Source attribution
+        if (currentWork.source) {
+            const sourceEl = document.createElement('div');
+            sourceEl.className = 'work-inline-source';
+            sourceEl.textContent = `Source: ${currentWork.source}`;
+            container.appendChild(sourceEl);
+        }
+    } else {
+        // ChordPro lead sheet - open in song view (full rendering pipeline)
+        openSong(currentWork.id);
+    }
+}
+
 function renderDocumentPart(part, container) {
     const downloadUrl = part.file;
     const label = escapeHtml(part.label || 'Document');
@@ -755,186 +1541,12 @@ function renderDocumentPart(part, container) {
 }
 
 /**
- * Render ChordPro lead sheet
- */
-function renderChordProPart(part, container) {
-    const content = part.content || currentWork.content;
-    if (!content) {
-        container.innerHTML = '<p class="error">No content available</p>';
-        return;
-    }
-
-    setCurrentChordpro(content);
-
-    // Detect key - use work's key if available, otherwise detect from chords
-    const { metadata, sections } = parseChordPro(content);
-    let detectedKey = currentWork.key || null;
-    let detectedMode = currentWork.mode || null;
-
-    if (!detectedKey) {
-        // Extract chords using the correct method (regex from raw content)
-        const allChords = extractChords(content);
-        const detected = detectKey(allChords);
-        if (detected) {
-            detectedKey = detected.key;
-            detectedMode = detected.mode;
-        }
-    }
-
-    // Set the detected key as the original key
-    if (detectedKey) {
-        setOriginalDetectedKey(detectedKey);
-        setOriginalDetectedMode(detectedMode || 'major');
-        if (!currentDetectedKey) {
-            setCurrentDetectedKey(detectedKey);
-        }
-    }
-
-    // Inject controls into the header's controls content area
-    const controls = createLeadSheetControls();
-    const controlsContent = document.getElementById('work-controls-content');
-    if (controlsContent) {
-        controlsContent.innerHTML = '';
-        controlsContent.appendChild(controls);
-    } else {
-        // Fallback: add controls to container if header not found
-        container.appendChild(controls);
-    }
-
-    // Create content area
-    const contentArea = document.createElement('div');
-    contentArea.className = 'chordpro-content';
-    container.appendChild(contentArea);
-
-    renderChordProContent(sections, contentArea);
-
-}
-
-/**
- * Create controls for lead sheet
- */
-function createLeadSheetControls() {
-    const controls = document.createElement('div');
-    controls.className = 'leadsheet-controls';
-
-    // Key selector (chromatic order for vocal range adjustment)
-    const keySelector = document.createElement('select');
-    keySelector.className = 'key-selector';
-    const keyList = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-    keyList.forEach(k => {
-        const opt = document.createElement('option');
-        opt.value = k;
-        opt.textContent = k;
-        if (k === currentDetectedKey) opt.selected = true;
-        keySelector.appendChild(opt);
-    });
-
-    keySelector.addEventListener('change', () => {
-        setCurrentDetectedKey(keySelector.value);
-        renderWorkView();
-    });
-
-    controls.innerHTML = `<label>Key:</label>`;
-    controls.appendChild(keySelector);
-
-    return controls;
-}
-
-/**
- * Render ChordPro sections to HTML
- */
-function renderChordProContent(sections, container) {
-    const fontMultiplier = FONT_SIZES[fontSizeLevel] || 1;
-    const transpose = currentDetectedKey && originalDetectedKey
-        ? getSemitonesBetweenKeys(originalDetectedKey, currentDetectedKey)
-        : 0;
-
-    let html = '';
-    const seenPatterns = new Set();
-
-    sections.forEach((section, idx) => {
-        // Section label
-        if (showSectionLabels && section.label) {
-            html += `<div class="section-label">${escapeHtml(section.label)}</div>`;
-        }
-
-        // Section content
-        html += `<div class="section${compactMode ? ' compact' : ''}">`;
-
-        section.lines.forEach(line => {
-            if (line.type === 'empty') {
-                html += '<div class="empty-line"></div>';
-                return;
-            }
-
-            if (line.type === 'comment') {
-                html += `<div class="comment">${escapeHtml(line.text)}</div>`;
-                return;
-            }
-
-            // Chord line
-            html += '<div class="line">';
-
-            if (line.chords && line.chords.length > 0 && chordDisplayMode !== 'none') {
-                html += '<div class="chord-line">';
-
-                // Build pattern for "first" mode
-                const pattern = line.chords.map(c => c.chord).join('|');
-                const shouldHide = chordDisplayMode === 'first' && seenPatterns.has(pattern);
-                if (chordDisplayMode === 'first') seenPatterns.add(pattern);
-
-                let lastPos = 0;
-                line.chords.forEach(c => {
-                    // Spacing
-                    const spaces = c.position - lastPos;
-                    if (spaces > 0) {
-                        html += `<span class="chord-space">${'&nbsp;'.repeat(spaces)}</span>`;
-                    }
-
-                    // Chord
-                    let chord = c.chord;
-                    if (transpose !== 0) {
-                        chord = transposeChord(chord, transpose);
-                    }
-                    if (nashvilleMode && currentDetectedKey) {
-                        chord = toNashville(chord, currentDetectedKey);
-                    }
-
-                    if (shouldHide) {
-                        html += `<span class="chord hidden">${escapeHtml(chord)}</span>`;
-                    } else {
-                        html += `<span class="chord">${escapeHtml(chord)}</span>`;
-                    }
-
-                    lastPos = c.position + c.chord.length;
-                });
-
-                html += '</div>';
-            }
-
-            // Lyrics line
-            if (line.lyrics) {
-                html += `<div class="lyrics">${escapeHtml(line.lyrics)}</div>`;
-            }
-
-            html += '</div>';
-        });
-
-        html += '</div>';
-    });
-
-    container.innerHTML = html;
-    container.style.fontSize = `${fontMultiplier}em`;
-}
-
-/**
  * Render tablature part
  */
 async function renderTablaturePart(part, container) {
     container.innerHTML = '<div class="loading">Loading tablature...</div>';
 
     try {
-        // Load OTF data
         let otf = loadedTablature;
         if (!otf || otf._partFile !== part.file) {
             const response = await fetch(part.file);
@@ -947,18 +1559,16 @@ async function renderTablaturePart(part, container) {
         container.innerHTML = '';
         trackRenderers = {};
 
-        // Inject controls into the header's controls content area
+        // Inject controls into the inline controls area
         const controls = createTablatureControls(otf, part);
         const controlsContent = document.getElementById('work-controls-content');
         if (controlsContent) {
             controlsContent.innerHTML = '';
             controlsContent.appendChild(controls);
         } else {
-            // Fallback: add controls to container if header not found
             container.appendChild(controls);
         }
 
-        // Create container for all tracks
         const allTracksContainer = document.createElement('div');
         allTracksContainer.className = 'tablature-all-tracks';
         container.appendChild(allTracksContainer);
@@ -966,7 +1576,6 @@ async function renderTablaturePart(part, container) {
         const timeSignature = otf.metadata?.time_signature || '4/4';
         const ticksPerBeat = otf.timing?.ticks_per_beat || 480;
 
-        // Determine which track is the "lead" (matches part instrument, or first track)
         let leadTrackId = otf.tracks[0]?.id;
         if (part.instrument && otf.tracks.length > 1) {
             const matchingTrack = otf.tracks.find(t =>
@@ -978,7 +1587,6 @@ async function renderTablaturePart(part, container) {
             }
         }
 
-        // Render each track in its own section
         for (const track of otf.tracks) {
             let notation = otf.notation[track.id];
             if (!notation || notation.length === 0) continue;
@@ -986,13 +1594,8 @@ async function renderTablaturePart(part, container) {
             const isLead = track.id === leadTrackId || track.role === 'lead';
             const isMandolin = track.instrument?.includes('mandolin') || track.id?.includes('mandolin');
 
-            // Skip mandolin backup tracks - chop notation is often buggy in TEF files
-            // Only show mandolin if it's the lead/melody track
-            if (isMandolin && !isLead) {
-                continue;
-            }
+            if (isMandolin && !isLead) continue;
 
-            // Apply reading list: either compact (with repeat signs) or expanded (unrolled)
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
                 notation = prepareCompactNotation(notation, otf.reading_list);
             } else {
@@ -1004,20 +1607,13 @@ async function renderTablaturePart(part, container) {
                          track.id.includes('guitar') ? '🎸' :
                          track.id.includes('fiddle') ? '🎻' : '🎵');
 
-            // Create track section with header
             const trackSection = document.createElement('div');
             trackSection.className = `tablature-track-section${isLead ? '' : ' backup-track'}`;
             trackSection.dataset.trackId = track.id;
             trackSection.style.display = isLead ? 'block' : 'none';
 
-            const trackHeader = document.createElement('div');
-            trackHeader.className = 'tablature-track-header';
-            trackHeader.innerHTML = `
-                <span class="track-icon">${icon}</span>
-                <span class="track-name">${track.id}</span>
-                ${!isLead ? '<span class="track-role">(backup)</span>' : ''}
-            `;
-            trackSection.appendChild(trackHeader);
+            // TabRenderer renders its own instrument/tuning header (track-info),
+            // so we skip adding a separate track header here to avoid duplication.
 
             const tabContainer = document.createElement('div');
             tabContainer.className = 'tablature-container';
@@ -1025,7 +1621,6 @@ async function renderTablaturePart(part, container) {
 
             allTracksContainer.appendChild(trackSection);
 
-            // Create renderer for this track
             const renderer = new TabRenderer(tabContainer);
             renderer.render(track, notation, ticksPerBeat, timeSignature);
             trackRenderers[track.id] = renderer;
@@ -1034,7 +1629,6 @@ async function renderTablaturePart(part, container) {
         // Wire up track visibility toggles
         const trackCheckboxes = controls.querySelectorAll('.track-checkbox');
         trackCheckboxes.forEach(checkbox => {
-            // Set initial checked state to match visibility
             const trackId = checkbox.dataset.trackId;
             const trackSection = allTracksContainer.querySelector(`[data-track-id="${trackId}"]`);
             if (trackSection) {
@@ -1049,7 +1643,7 @@ async function renderTablaturePart(part, container) {
             });
         });
 
-        // Wire up repeat toggle (re-renders with repeat signs or unrolled)
+        // Wire up repeat toggle
         const repeatCheckbox = controls.querySelector('.tab-repeat-checkbox');
         const repeatLabel = controls.querySelector('.tab-repeat-label');
         if (repeatCheckbox) {
@@ -1058,23 +1652,19 @@ async function renderTablaturePart(part, container) {
                 if (repeatLabel) {
                     repeatLabel.textContent = showRepeatsCompact ? 'Repeats' : 'Unrolled';
                 }
-                // Re-render tablature with new mode
                 renderTablaturePart(part, container);
             });
         }
 
-        // Set up player with lead track renderer for visualization
         const leadRenderer = trackRenderers[leadTrackId] || Object.values(trackRenderers)[0];
         setupTablaturePlayer(otf, controls, leadRenderer);
 
-        // Add attribution section for Banjo Hangout tabs
+        // Attribution for Banjo Hangout tabs
         if (part.source === 'banjo-hangout') {
             const attribution = document.createElement('div');
             attribution.className = 'tab-attribution';
 
             let attrHtml = '<div class="attribution-content">';
-
-            // Author credit with link
             if (part.author) {
                 attrHtml += '<span class="attribution-item">Tabbed by ';
                 if (part.author_url) {
@@ -1084,15 +1674,10 @@ async function renderTablaturePart(part, container) {
                 }
                 attrHtml += '</span>';
             }
-
-            // Source link
             if (part.source_page_url) {
                 attrHtml += `<span class="attribution-item"><a href="${part.source_page_url}" target="_blank" rel="noopener">View on Banjo Hangout</a></span>`;
             }
-
             attrHtml += '</div>';
-
-            // Disclaimer
             attrHtml += '<div class="attribution-disclaimer">';
             attrHtml += 'This tab was converted from TablEdit format and may contain minor errors. ';
             attrHtml += 'Please report issues if you notice problems.';
@@ -1115,7 +1700,6 @@ function createTablatureControls(otf, part) {
     const defaultTempo = otf.metadata?.tempo || 100;
     const originalKey = currentWork.key || 'G';
 
-    // Filter out mandolin backup tracks (chop notation is often buggy)
     const filteredTracks = otf.tracks.filter(track => {
         const isMandolin = track.instrument?.includes('mandolin') || track.id?.includes('mandolin');
         const isLead = track.role === 'lead' || track.instrument?.includes('banjo') ||
@@ -1123,7 +1707,6 @@ function createTablatureControls(otf, part) {
         return !isMandolin || isLead;
     });
 
-    // Build track mixer if multiple tracks
     const trackMixerHtml = filteredTracks.length > 1 ? `
         <div class="tab-track-mixer">
             <span class="mixer-label">Tracks:</span>
@@ -1143,7 +1726,6 @@ function createTablatureControls(otf, part) {
         </div>
     ` : '';
 
-    // Only show repeat toggle if there's a reading list
     const hasReadingList = otf.reading_list && otf.reading_list.length > 0;
     const repeatToggleHtml = hasReadingList ? `
         <label class="tab-repeat-toggle" title="Toggle repeat notation style">
@@ -1152,7 +1734,6 @@ function createTablatureControls(otf, part) {
         </label>
     ` : '';
 
-    // Build key options with capo indicators (chromatic order for vocal range adjustment)
     const keyOptions = CHROMATIC_MAJOR_KEYS.map(k => {
         const capo = (CHROMATIC_MAJOR_KEYS.indexOf(k) - CHROMATIC_MAJOR_KEYS.indexOf(originalKey) + 12) % 12;
         const capoLabel = capo === 0 ? '' : ` (Capo ${capo})`;
@@ -1161,7 +1742,6 @@ function createTablatureControls(otf, part) {
 
     const controls = document.createElement('div');
     controls.className = 'tab-controls';
-    // Control order matches lyrics/ABC: Size → Key → Tempo → Play
     controls.innerHTML = `
         <div class="qc-group">
             <button class="tab-size-down qc-btn" title="Decrease size">−</button>
@@ -1220,10 +1800,8 @@ function setupTablaturePlayer(otf, controls, renderer) {
 
     let currentTempo = parseInt(tempoDisplay.textContent, 10);
     let currentCapo = 0;
-    let currentScale = 1.0; // Scale factor for tablature size
+    let currentScale = 1.0;
 
-    // Build tick mapping for compact mode visualization
-    // In compact mode, playback ticks are expanded but display is compact
     const timeSignature = otf.metadata?.time_signature || '4/4';
     const ticksPerBeat = otf.timing?.ticks_per_beat || 480;
     const beatsPerMeasure = parseInt(timeSignature.split('/')[0], 10) || 4;
@@ -1232,23 +1810,19 @@ function setupTablaturePlayer(otf, controls, renderer) {
         ? buildTickMapping(otf.reading_list, ticksPerMeasure)
         : (tick) => tick;
 
-    // Playback visualization callbacks (with tick mapping for compact mode)
     player.onTick = (absTick) => renderer.updateBeatCursor(tickMapper(absTick));
     player.onNoteStart = (absTick) => renderer.highlightNote(tickMapper(absTick));
     player.onNoteEnd = (absTick) => renderer.clearNoteHighlight(tickMapper(absTick));
 
-    // Size controls - scale the tablature
     const updateSize = (delta) => {
         currentScale = Math.max(0.6, Math.min(1.6, currentScale + delta));
         const container = document.querySelector('.tablature-container');
         if (container) {
             container.style.setProperty('--tab-scale', currentScale);
-            // Trigger reflow if renderer supports it
             if (typeof renderer.reflow === 'function') {
                 renderer.reflow();
             }
         }
-        // Update button states
         sizeDown.disabled = currentScale <= 0.6;
         sizeUp.disabled = currentScale >= 1.6;
     };
@@ -1256,12 +1830,10 @@ function setupTablaturePlayer(otf, controls, renderer) {
     sizeDown?.addEventListener('click', () => updateSize(-0.1));
     sizeUp?.addEventListener('click', () => updateSize(0.1));
 
-    // Metronome
     metronomeCheckbox?.addEventListener('change', () => {
         player.metronomeEnabled = metronomeCheckbox.checked;
     });
 
-    // Tempo controls
     const updateTempoButtons = () => {
         tempoDown.disabled = currentTempo <= 40;
         tempoUp.disabled = currentTempo >= 280;
@@ -1276,7 +1848,6 @@ function setupTablaturePlayer(otf, controls, renderer) {
     tempoDown?.addEventListener('click', () => setTempo(currentTempo - 5));
     tempoUp?.addEventListener('click', () => setTempo(currentTempo + 5));
 
-    // Key/capo controls
     const updateCapoIndicator = () => {
         capoIndicator.textContent = currentCapo > 0 ? `Capo ${currentCapo}` : '';
     };
@@ -1294,15 +1865,9 @@ function setupTablaturePlayer(otf, controls, renderer) {
         updateCapoIndicator();
     });
 
-    keyDown?.addEventListener('click', () => {
-        selectKeyByIndex(keySelect.selectedIndex - 1);
-    });
+    keyDown?.addEventListener('click', () => selectKeyByIndex(keySelect.selectedIndex - 1));
+    keyUp?.addEventListener('click', () => selectKeyByIndex(keySelect.selectedIndex + 1));
 
-    keyUp?.addEventListener('click', () => {
-        selectKeyByIndex(keySelect.selectedIndex + 1);
-    });
-
-    // Position updates
     player.onPositionUpdate = (elapsed, total) => {
         const fmt = (s) => `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
         posEl.textContent = `${fmt(elapsed)} / ${fmt(total)}`;
@@ -1316,12 +1881,9 @@ function setupTablaturePlayer(otf, controls, renderer) {
         renderer.resetPlaybackVisualization();
     };
 
-    // Get enabled tracks from checkboxes (excluding mandolin backup tracks)
     const getEnabledTrackIds = () => {
         const checkboxes = controls.querySelectorAll('.track-checkbox:checked');
         if (checkboxes.length === 0) {
-            // If no checkboxes (single track) or none checked, play filtered tracks
-            // Filter out mandolin backup tracks
             return otf.tracks
                 .filter(t => {
                     const isMandolin = t.instrument?.includes('mandolin') || t.id?.includes('mandolin');
@@ -1333,7 +1895,6 @@ function setupTablaturePlayer(otf, controls, renderer) {
         return Array.from(checkboxes).map(cb => cb.dataset.trackId);
     };
 
-    // Play/stop
     playBtn.addEventListener('click', async () => {
         if (player.isPlaying) {
             player.stop();
@@ -1358,6 +1919,18 @@ function setupTablaturePlayer(otf, controls, renderer) {
         posEl.textContent = '';
         renderer.resetPlaybackVisualization();
     });
+}
+
+/**
+ * Get the current item reference for list operations.
+ * Returns "workId/partId" if viewing a specific part, or just "workId" for the dashboard.
+ */
+export function getActiveItemRef() {
+    if (!currentWork) return null;
+    if (inlineExpanded && activePart?.partId) {
+        return `${currentWork.id}/${activePart.partId}`;
+    }
+    return currentWork.id;
 }
 
 // ============================================

@@ -1,11 +1,16 @@
 id: dont-our-love-look-natural
 title: Don’t Our Love Look Natural
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/dont-our-love-look-natural/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/dont-our-love-look-natural/
+    imported_at: '2026-02-08'
+tags: []
+default_key: G
+artist: Keith Whitley
+composers:
+- Harlan Howard and Don Cook

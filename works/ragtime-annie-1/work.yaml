@@ -5,6 +5,7 @@ default_key: G
 tags:
 - Instrumental
 - Bluegrass
+- Scruggs
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,3 +14,18 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '17713'
+    source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/tab-ragtime-annie-17713-56662282012.tef
+    author: banjoman 1
+    imported_at: '2026-01-04'
+    tef_format: v2
+    tef_time_sig: 4/4
+    tef_tracks: 2
+    tef_events: 587

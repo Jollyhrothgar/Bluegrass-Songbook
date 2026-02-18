@@ -90,7 +90,18 @@ case "$COMMAND" in
         PORT=$(find_available_port "$PORT")
         echo "Starting frontend server..."
         echo "Visit: http://localhost:$PORT"
-        python3 -m http.server "$PORT" --directory docs
+        python3 -c "
+import http.server, functools
+
+class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, directory='docs', **kwargs)
+    def end_headers(self):
+        self.send_header('Cache-Control', 'no-cache, no-store, must-revalidate')
+        super().end_headers()
+
+http.server.ThreadingHTTPServer(('', $PORT), NoCacheHandler).serve_forever()
+"
         ;;
     enrichment|enrichment-viewer|enrich)
         echo "Starting enrichment preview viewer..."

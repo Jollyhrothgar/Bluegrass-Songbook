@@ -1,11 +1,12 @@
 id: ill-love-you-til-the-day-i-die
 title: I’ll Love You Til the Day I Die
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/ill-love-you-til-the-day-i-die/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/ill-love-you-til-the-day-i-die/
+    imported_at: '2026-02-08'
+tags: []

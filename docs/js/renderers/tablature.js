@@ -281,16 +281,20 @@ export class TabRenderer {
 
         // Show string notes as visual indicator
         const tuningHtml = (track.tuning || []).map((t, i) => {
-            const isFifth = track.instrument?.includes('banjo') && i === track.tuning.length - 1;
+            const isFifth = track.instrument === '5-string-banjo' && i === track.tuning.length - 1;
             return `<span class="tuning-string${isFifth ? ' fifth' : ''}">${t.replace(/\d/, '')}</span>`;
         }).join('');
 
+        const showInstrument = track.instrument && track.instrument !== track.id;
+        // Only show tuning name text when it's a recognized name (e.g. "Open G"),
+        // not when it's just raw notes (e.g. "G-D-G-C") which duplicates the circles.
+        const showTuningName = tuningInfo.name != null;
         info.innerHTML = `
             <span class="instrument-icon">${icon}</span>
             <strong>${track.id}</strong>
-            <span style="color:#888;font-size:13px;">${track.instrument}</span>
+            ${showInstrument ? `<span style="color:#888;font-size:13px;">${track.instrument}</span>` : ''}
             <div class="tuning-display">
-                <span class="tuning-name">${tuningInfo.display}</span>
+                ${showTuningName ? `<span class="tuning-name">${tuningInfo.display}</span>` : ''}
                 <span class="tuning-notes">${tuningHtml}</span>
             </div>
         `;

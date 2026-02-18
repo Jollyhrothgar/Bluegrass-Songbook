@@ -1,11 +1,17 @@
 id: give-me-flowers-my-while-im-living
 title: Give Me Flowers My While I’m Living
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/give-me-flowers-my-while-im-living/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/give-me-flowers-my-while-im-living/
+    imported_at: '2026-02-08'
+tags:
+- JamFriendly
+default_key: C
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Louise Certain, Gladys Stacey, Elvin Bigger
