@@ -458,6 +458,48 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
         if norm_title and norm_title not in scores_by_title:
             scores_by_title[norm_title] = data
 
+    # Detect ambiguous titles: same normalized title but genuinely different compositions.
+    # When titles collide (e.g., "She" by Green Day vs "She" by Chatham County Line),
+    # we can't reliably assign covering artists — they may be from a different composition.
+    # We detect this by comparing stemmed lyrics: same-titled songs with very different
+    # lyrics are different compositions. Same-titled songs with similar lyrics (like two
+    # versions of "Rocky Top" with "man"/"girl" variation) are the same song.
+    from collections import defaultdict
+    import snowballstemmer
+    stemmer = snowballstemmer.stemmer('english')
+
+    def stem_lyrics(text: str) -> set:
+        """Extract stemmed word set from lyrics for composition comparison."""
+        # Strip punctuation, lowercase, take first 20 words
+        words = re.sub(r'[^a-z0-9\s]', '', text.lower()).split()[:20]
+        # Stem to normalize variations (ol/old, lovin/loving, man/men)
+        return set(stemmer.stemWords(words)) if words else set()
+
+    title_lyrics = defaultdict(list)
+    for song in songs:
+        norm = normalize_title(song.get('title', ''))
+        if norm:
+            title_lyrics[norm].append(stem_lyrics(song.get('lyrics', '') or ''))
+    ambiguous_titles = set()
+    for norm_title, word_sets in title_lyrics.items():
+        if len(word_sets) <= 1:
+            continue
+        # Compare first entry against each other — if any pair has < 40% word overlap,
+        # the title is ambiguous (different compositions sharing a name)
+        first = word_sets[0]
+        for other in word_sets[1:]:
+            if not first or not other:
+                continue
+            overlap = len(first & other) / max(len(first), len(other))
+            if overlap < 0.4:
+                ambiguous_titles.add(norm_title)
+                break
+    if ambiguous_titles:
+        print(f"  Ambiguous titles (same title, different songs): {len(ambiguous_titles)}")
+
+    # Bluegrass artist names for disambiguation (lowercased for matching)
+    bluegrass_artist_names_lower = {name.lower() for name in artist_tier_weights.keys()}
+
     # Load trusted user tag overrides (downvotes)
     tag_overrides = load_tag_overrides()
     if tag_overrides:
@@ -503,13 +545,21 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
             tags['Instrumental'] = {'score': 90, 'source': 'content'}
 
         # Add covering artists from grassiness data (for search and display only)
+        # Skip for ambiguous titles (multiple different songs share the same title)
+        # unless the song's artist is a known bluegrass artist — otherwise we'd
+        # attribute the wrong bluegrass artist to the wrong composition.
         covering_artists_raw = []
-        if song_id in scores:
-            covering_artists_raw = scores[song_id].get('artists', [])
-        else:
-            normalized = normalize_title(title)
-            if normalized in scores_by_title:
-                covering_artists_raw = scores_by_title[normalized].get('artists', [])
+        normalized = normalize_title(title)
+        skip_covering = (
+            normalized in ambiguous_titles
+            and song.get('artist', '').lower() not in bluegrass_artist_names_lower
+        )
+        if not skip_covering:
+            if song_id in scores:
+                covering_artists_raw = scores[song_id].get('artists', [])
+            else:
+                if normalized in scores_by_title:
+                    covering_artists_raw = scores_by_title[normalized].get('artists', [])
 
         if covering_artists_raw:
             # Deduplicate by artist name
