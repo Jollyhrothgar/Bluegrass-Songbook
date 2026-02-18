@@ -782,7 +782,7 @@ def _check_duplicates(songs: list):
         print(f"\nWARNING: {len(dupes)} potential duplicate title groups detected.")
         print("Run 'uv run python scripts/lib/dedup_works.py' to review.")
         for title, ids in dupes[:5]:
-            print(f"  {title}: {', '.join(ids[:3])}")
+            print(f"  {title}: {', '.join(str(i) for i in ids[:3])}")
         if len(dupes) > 5:
             print(f"  ... and {len(dupes) - 5} more")
 
