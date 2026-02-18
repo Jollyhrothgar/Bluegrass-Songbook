@@ -1,11 +1,21 @@
 id: i-hope-youve-learned
 title: I Hope You’ve Learned
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/i-hope-youve-learned/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/i-hope-youve-learned/
+    imported_at: '2026-02-08'
+tags:
+- ClassicCountry
+- Bluegrass
+- Gospel
+- Folk
+- JamFriendly
+default_key: G
+artist: Ricky Skaggs
+composers:
+- Bill Carrigan and Eugene Butler

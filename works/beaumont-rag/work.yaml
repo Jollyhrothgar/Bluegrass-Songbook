@@ -1,19 +1,22 @@
 id: beaumont-rag
-title: "Beaumont Rag"
-tags: [Instrumental, Bluegrass, Scruggs]
+title: Beaumont Rag
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
 parts:
-  - type: tablature
-    instrument: banjo
-    format: otf
-    file: banjo.otf.json
-    default: true
-    provenance:
-      source: banjo-hangout
-      source_id: '21307'
-      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/tab-beaumont-rag-21307-102382842015.tef
-      author: "Jim Pankey"
-      imported_at: '2026-01-04'
-      tef_format: v2
-      tef_time_sig: 4/4
-      tef_tracks: 0
-      tef_events: 243
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '21307'
+    source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/tab-beaumont-rag-21307-102382842015.tef
+    author: Jim Pankey
+    imported_at: '2026-01-04'
+    tef_format: v2
+    tef_time_sig: 4/4
+    tef_tracks: 0
+    tef_events: 243

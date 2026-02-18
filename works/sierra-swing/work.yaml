@@ -4,6 +4,7 @@ artist: Sharyn Lee and The Sundowners
 default_key: G
 tags:
 - JamFriendly
+- Instrumental
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,3 +14,5 @@ parts:
     source: classic-country
     source_file: sierraswinglyricschords.pro
     imported_at: '2026-01-02'
+composers:
+- Biography:Marvin Standiford

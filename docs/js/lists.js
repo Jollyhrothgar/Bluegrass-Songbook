@@ -15,7 +15,7 @@ import {
     focusedListId, setFocusedListId
 } from './state.js';
 import { openSong } from './song-view.js';
-import { escapeHtml, generateLocalId, requireLogin } from './utils.js';
+import { escapeHtml, generateLocalId, requireLogin, parseItemRef } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
@@ -759,7 +759,8 @@ export function toggleFavorite(songId, skipUndo = false) {
     } else {
         // Record for undo before removing
         if (!skipUndo) {
-            const song = allSongs.find(s => s.id === songId);
+            const { workId } = parseItemRef(songId);
+            const song = allSongs.find(s => s.id === workId);
             const songTitle = song?.title || songId;
             recordAction(ActionType.REMOVE_SONG, {
                 listId: FAVORITES_LIST_ID,
@@ -1245,7 +1246,8 @@ export function addSongToList(listId, songId, skipUndo = false, metadata = null)
     if (!list.songs.includes(songId)) {
         // Record for undo before adding
         if (!skipUndo) {
-            const song = allSongs.find(s => s.id === songId);
+            const { workId } = parseItemRef(songId);
+            const song = allSongs.find(s => s.id === workId);
             const songTitle = song?.title || songId;
             recordAction(ActionType.ADD_SONG, {
                 listId,
@@ -1283,7 +1285,8 @@ export function removeSongFromList(listId, songId, skipUndo = false) {
     if (index !== -1) {
         // Record for undo before removing
         if (!skipUndo) {
-            const song = allSongs.find(s => s.id === songId);
+            const { workId } = parseItemRef(songId);
+            const song = allSongs.find(s => s.id === workId);
             const songTitle = song?.title || songId;
             recordAction(ActionType.REMOVE_SONG, {
                 listId,
@@ -1324,7 +1327,8 @@ export function reorderSongInList(listId, fromIndex, toIndex, skipUndo = false) 
     // Record for undo before reordering
     if (!skipUndo) {
         const songId = list.songs[fromIndex];
-        const song = allSongs.find(s => s.id === songId);
+        const { workId } = parseItemRef(songId);
+        const song = allSongs.find(s => s.id === workId);
         const songTitle = song?.title || songId;
         recordAction(ActionType.REORDER_SONG, {
             listId,
@@ -1839,6 +1843,20 @@ export async function performFullListsSync() {
     } finally {
         syncInProgress = false;
     }
+}
+
+/**
+ * Reset lists state on sign-out.
+ * Clears all list data so the signed-out session starts fresh.
+ * Cloud data is restored on next sign-in via performFullListsSync.
+ */
+export function handleListsSignOut() {
+    setCloudSyncEnabled(false);
+    followedLists = [];
+    setUserLists([]);
+    localStorage.removeItem('songbook-lists');
+    updateFavoritesCount();
+    renderSidebarLists();
 }
 
 /**
@@ -2642,8 +2660,15 @@ function renderListViewUI(listName, songIds, status) {
     }
 
     // Show the list songs (preserve order from the list)
+    // Handle part-qualified refs by extracting workId for lookup
     const listSongs = songIds
-        .map(id => allSongs.find(s => s.id === id))
+        .map(ref => {
+            const { workId, partId } = parseItemRef(ref);
+            const song = allSongs.find(s => s.id === workId);
+            if (!song) return null;
+            // Attach part info for rendering
+            return partId ? { ...song, _itemRef: ref, _partId: partId } : song;
+        })
         .filter(Boolean);
 
     // Set list context for navigation
@@ -2932,7 +2957,8 @@ export function updateFavoriteButton() {
  * Delegates to unified ListPicker component
  */
 export function showResultListPicker(btn, songId) {
-    const song = allSongs.find(s => s.id === songId);
+    const { workId } = parseItemRef(songId);
+    const song = allSongs.find(s => s.id === workId);
     if (!song) return;
 
     showListPicker(songId, btn, {
@@ -3169,8 +3195,9 @@ subscribe('allSongs', () => {
  */
 function getListPreview(list, maxChars = 50) {
     if (!list.songs || list.songs.length === 0) return '';
-    const titles = list.songs.slice(0, 3).map(id => {
-        const song = allSongs.find(s => s.id === id);
+    const titles = list.songs.slice(0, 3).map(ref => {
+        const { workId } = parseItemRef(ref);
+        const song = allSongs.find(s => s.id === workId);
         return song?.title || 'Unknown';
     });
     let preview = titles.join(', ');
@@ -4015,12 +4042,14 @@ function getListAsText(listId) {
         return `${listName}\n(empty list)`;
     }
 
-    // Look up song titles
-    const lines = songIds.map((songId, index) => {
-        const song = allSongs.find(s => s.id === songId);
+    // Look up song titles (handle part-qualified refs)
+    const lines = songIds.map((ref, index) => {
+        const { workId, partId } = parseItemRef(ref);
+        const song = allSongs.find(s => s.id === workId);
         if (song) {
             const artist = song.artist ? ` - ${song.artist}` : '';
-            return `${index + 1}. ${song.title}${artist}`;
+            const partLabel = partId ? ` (${partId})` : '';
+            return `${index + 1}. ${song.title}${artist}${partLabel}`;
         }
         return `${index + 1}. (unknown song)`;
     });

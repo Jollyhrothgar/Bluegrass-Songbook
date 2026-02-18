@@ -37,9 +37,10 @@ import {
     listContext, setListContext,
     // Reactive state
     subscribe,
-    setCurrentView
+    setCurrentView,
+    resolveWorkId
 } from './state.js';
-import { escapeHtml, isTabOnlyWork, isPlaceholder } from './utils.js';
+import { escapeHtml, isTabOnlyWork, isPlaceholder, hasMultipleParts } from './utils.js';
 import {
     parseLineWithChords, extractChords, detectKey,
     getSemitonesBetweenKeys, transposeChord, toNashville,
@@ -740,7 +741,7 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         partTabsHtml = `
             <div class="part-tabs">
                 <button class="part-tab ${activePartTab === 'lead-sheet' ? 'active' : ''}" data-part="lead-sheet">
-                    Lead Sheet
+                    Lyrics & Chords
                 </button>
                 <button class="part-tab ${activePartTab === 'tablature' ? 'active' : ''}" data-part="tablature">
                     ${escapeHtml(tabLabel)}
@@ -1625,6 +1626,13 @@ function setupAbcControlListeners(song, chordpro, abcContent) {
 export async function openSong(songId, options = {}) {
     if (!songViewEl || !resultsDivEl) return;
 
+    // Show Work button when in song-view (hidden on work dashboard)
+    const workViewBtn = document.getElementById('work-view-btn');
+    if (workViewBtn) workViewBtn.classList.remove('hidden');
+
+    // Resolve redirected work IDs (merged duplicates)
+    songId = resolveWorkId(songId);
+
     const { fromList = false, fromHistory = false, listId = null, fromDeepLink = false } = options;
 
     // Clear chordpro content FIRST to prevent stale render from subscribers
@@ -1696,6 +1704,13 @@ export async function openSong(songId, options = {}) {
             page_path: `/song/${songId}`
         });
     }
+
+    // Restore header buttons that work-view may have hidden for placeholders
+    const editBtnEl = document.getElementById('edit-song-btn');
+    const exportWrapperEl = document.getElementById('export-btn')?.closest('.export-wrapper');
+    if (editBtnEl) editBtnEl.classList.remove('hidden');
+    if (exportWrapperEl) exportWrapperEl.classList.remove('hidden');
+
     updateFavoriteButton();
     updateListPickerButton();
 
@@ -1880,9 +1895,10 @@ export async function showVersionPicker(groupId, options = {}) {
             const songId = item.dataset.songId;
             trackVersionPicker(groupId, 'select', songId);
             closeVersionPicker();
-            // Placeholders and tab-only works use work view
+            // Dashboard for: placeholders, tab-only, and multi-part works.
+            // Single-part songs with content go to song-view.
             const song = allSongs.find(s => s.id === songId);
-            if (isPlaceholder(song) || isTabOnlyWork(song)) {
+            if (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song)) {
                 openWork(songId);
             } else {
                 openSong(songId, openOptions);
@@ -2083,20 +2099,31 @@ export function updateFocusHeader() {
 }
 
 /**
+ * Pluggable navigation router for list item navigation.
+ * Set by main.js to smart-route between openSong/openWork based on item type.
+ */
+let listItemRouter = null;
+export function setListItemRouter(fn) { listItemRouter = fn; }
+
+/**
  * Navigate to previous song in list
  */
 export function navigatePrev() {
     if (!listContext || listContext.currentIndex <= 0) return;
 
     const newIndex = listContext.currentIndex - 1;
-    const songId = listContext.songIds[newIndex];
+    const itemRef = listContext.songIds[newIndex];
 
     setListContext({
         ...listContext,
         currentIndex: newIndex
     });
 
-    openSong(songId);
+    if (listItemRouter) {
+        listItemRouter(itemRef);
+    } else {
+        openSong(itemRef);
+    }
 }
 
 /**
@@ -2106,14 +2133,18 @@ export function navigateNext() {
     if (!listContext || listContext.currentIndex >= listContext.songIds.length - 1) return;
 
     const newIndex = listContext.currentIndex + 1;
-    const songId = listContext.songIds[newIndex];
+    const itemRef = listContext.songIds[newIndex];
 
     setListContext({
         ...listContext,
         currentIndex: newIndex
     });
 
-    openSong(songId);
+    if (listItemRouter) {
+        listItemRouter(itemRef);
+    } else {
+        openSong(itemRef);
+    }
 }
 
 /**

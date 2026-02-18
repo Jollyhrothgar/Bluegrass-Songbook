@@ -3836,9 +3836,64 @@ mark {
     flex-wrap: wrap;
 }
 
+.dedup-msg {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    width: 100%;
+}
+.dedup-match {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    padding: 0.25rem 0;
+    font-size: 0.85rem;
+}
 .dedup-link {
     color: var(--accent);
     font-weight: 500;
+}
+.dedup-artist {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+.dedup-badge {
+    font-size: 0.7rem;
+    background: var(--text-secondary);
+    color: var(--bg);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    font-weight: 500;
+}
+.dedup-bounty-btn {
+    background: none;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 0.15rem 0.5rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+.dedup-bounty-btn:hover {
+    background: var(--accent);
+    color: white;
+}
+.dedup-proceed {
+    margin-top: 0.4rem;
+    width: 100%;
+}
+.dedup-proceed-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+}
+.dedup-proceed-btn:hover {
+    color: var(--text);
 }
 
 .picker-form-actions {
@@ -5976,6 +6031,19 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     vertical-align: middle;
 }
 
+/* Part label badge — shown in list view for part-qualified items */
+.part-label-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: rgba(100, 100, 100, 0.15);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
 /* Placeholder badge — search results and song view */
 .placeholder-badge {
     display: inline-block;
@@ -5988,6 +6056,21 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     border: 1px solid rgba(245, 158, 11, 0.3);
     margin-left: 0.4rem;
     vertical-align: middle;
+}
+
+/* Bounty badge in search results */
+.bounty-result-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    margin-left: 0.3rem;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 /* Placeholder work view elements (used in work-view.js) */
@@ -6024,6 +6107,299 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
 
 .placeholder-contribute-btn:hover {
     background: var(--accent-hover);
+}
+
+/* Placeholder metadata editor */
+.placeholder-editor {
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1.25rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+.placeholder-editor-header h3 {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    color: var(--text);
+}
+.placeholder-editor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.placeholder-editor-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.placeholder-editor-field label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+.placeholder-editor-field input,
+.placeholder-editor-field select,
+.placeholder-editor-field textarea {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+.placeholder-editor-field textarea {
+    resize: vertical;
+}
+.placeholder-editor-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+.placeholder-editor-save {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.45rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+.placeholder-editor-save:hover {
+    background: var(--accent-hover);
+}
+.placeholder-editor-save:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.placeholder-editor-cancel {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: 0.45rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+.placeholder-editor-cancel:hover {
+    border-color: var(--text-secondary);
+    color: var(--text);
+}
+.placeholder-editor-status {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+.placeholder-editor-status.error {
+    color: var(--error, #ef4444);
+}
+
+/* Placeholder editor: document section */
+.ph-edit-doc-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.ph-edit-doc-current {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+.ph-edit-doc-icon { font-size: 1rem; }
+.ph-edit-doc-badge {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    background: var(--bg-tertiary, var(--bg-secondary));
+    color: var(--text-secondary);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.ph-edit-doc-empty {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+.ph-edit-doc-upload-btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm, 4px);
+    background: transparent;
+    color: var(--accent);
+    cursor: pointer;
+    align-self: flex-start;
+}
+.ph-edit-doc-upload-btn:hover {
+    border-color: var(--accent);
+    background: var(--bg-secondary);
+}
+.ph-edit-doc-info {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+.ph-edit-doc-info.error {
+    color: var(--error, #ef4444);
+}
+.ph-edit-doc-filename {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+.ph-edit-doc-remove {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0 0.2rem;
+    line-height: 1;
+}
+.ph-edit-doc-remove:hover {
+    color: var(--error, #ef4444);
+}
+
+/* Work view bounty section */
+.work-bounty-section {
+    margin-top: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+.work-bounty-header {
+    background: var(--bg-secondary);
+}
+.work-bounty-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+}
+.work-bounty-toggle:hover {
+    background: var(--bg);
+}
+.work-bounty-flag {
+    font-size: 1rem;
+}
+.work-bounty-body {
+    padding: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+.work-bounty-card {
+    padding: 0.5rem 0.75rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    min-width: 140px;
+}
+.work-bounty-label {
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.15rem;
+}
+.work-bounty-desc {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+.work-bounty-contribute {
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 0.75rem;
+    padding: 0;
+}
+.work-bounty-contribute:hover {
+    text-decoration: underline;
+}
+.work-bounty-empty {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    padding: 0.25rem 0;
+}
+.work-bounty-request-btn {
+    background: none;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.75rem;
+    width: 100%;
+}
+.work-bounty-request-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+/* Inline bounty request form */
+.work-bounty-inline-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0.5rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+}
+.work-bounty-inline-select,
+.work-bounty-inline-desc {
+    padding: 0.35rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.8rem;
+}
+.work-bounty-inline-select { flex: 0 0 auto; }
+.work-bounty-inline-desc { flex: 1 1 120px; }
+.work-bounty-inline-actions {
+    display: flex;
+    gap: 0.25rem;
+}
+.work-bounty-inline-submit {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.work-bounty-inline-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+.work-bounty-inline-cancel {
+    background: none;
+    border: 1px solid var(--border);
+    padding: 0.35rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+.work-bounty-inline-status {
+    width: 100%;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
 }
 
 /* Document viewer (PDF inline) */
@@ -6078,7 +6454,7 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
 }
 .bounty-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .bounty-title {
     font-size: 1.75rem;
@@ -6094,10 +6470,38 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     font-size: 0.85rem;
     margin: 0;
 }
-.bounty-group {
+/* Filter bar */
+.bounty-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+.bounty-filter-btn {
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.bounty-filter-btn:hover {
+    border-color: var(--accent);
+    color: var(--text);
+}
+.bounty-filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+/* Sections */
+.bounty-section {
     margin-bottom: 2rem;
 }
-.bounty-group-title {
+.bounty-section-title {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
@@ -6127,6 +6531,20 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
 .bounty-card:hover {
     border-color: var(--accent);
 }
+.bounty-card-placeholder {
+    border-left: 3px solid var(--text-secondary);
+}
+.bounty-card-part {
+    border-left: 3px solid var(--accent);
+}
+.bounty-card-wanted {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+}
 .bounty-card-title {
     font-weight: 600;
     font-size: 0.9rem;
@@ -6137,15 +6555,36 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     color: var(--text-secondary);
     margin-bottom: 0.25rem;
 }
+.bounty-card-meta {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.15rem;
+}
+.bounty-card-has {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.15rem;
+}
 .bounty-card-notes {
     font-size: 0.75rem;
     color: var(--text-secondary);
     line-height: 1.3;
 }
+.bounty-filter-hint {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    margin: 0.5rem 0 0;
+    font-style: italic;
+}
 .bounty-empty {
     text-align: center;
     color: var(--text-secondary);
     padding: 2rem;
+}
+.bounty-empty-sub {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
 }
 .bounty-cta {
     margin-top: 2rem;
@@ -6158,17 +6597,145 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     margin: 0 0 0.75rem;
     color: var(--text-secondary);
 }
+.bounty-cta-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .bounty-cta-btn {
     display: inline-block;
     padding: 0.6rem 1.25rem;
     background: var(--accent);
     color: white;
+    border: none;
     text-decoration: none;
     border-radius: var(--radius-md);
     font-weight: 500;
+    cursor: pointer;
+    font-size: 0.9rem;
 }
 .bounty-cta-btn:hover {
     background: var(--accent-hover);
+}
+.bounty-cta-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.bounty-cta-btn-secondary {
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+.bounty-cta-btn-secondary:hover {
+    border-color: var(--accent);
+    background: var(--bg-secondary);
+}
+/* Bounty request modal */
+.bounty-request-content {
+    max-width: 480px;
+}
+.bounty-req-description {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin: 0 0 0.75rem 0;
+}
+.bounty-request-content label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    margin-top: 0.75rem;
+}
+.bounty-request-content input,
+.bounty-request-content select,
+.bounty-request-content textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+.bounty-request-content textarea {
+    resize: vertical;
+}
+.bounty-req-results {
+    max-height: 240px;
+    overflow-y: auto;
+    margin-top: 0.5rem;
+}
+.bounty-req-result {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    background: var(--bg-secondary);
+    color: var(--text);
+    text-align: left;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.25rem;
+    font-size: 0.85rem;
+}
+.bounty-req-result:hover {
+    background: var(--accent);
+    color: white;
+}
+.bounty-req-result-title {
+    font-weight: 500;
+}
+.bounty-req-result-artist {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+.bounty-req-result:hover .bounty-req-result-artist {
+    color: rgba(255,255,255,0.8);
+}
+.bounty-req-no-results {
+    padding: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+.bounty-req-selected {
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+.bounty-req-has {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.15rem;
+}
+.bounty-req-change {
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 0;
+    margin-top: 0.25rem;
+}
+.bounty-req-change:hover {
+    text-decoration: underline;
+}
+.bounty-req-status {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+.bounty-req-instrument-row {
+    margin-top: 0.25rem;
+}
+.bounty-request-content .bounty-cta-btn {
+    margin-top: 1rem;
+    width: 100%;
 }
 
 /* Search empty results */
@@ -6884,6 +7451,23 @@ body.fullscreen-mode .song-nav-bar {
     display: none !important;
 }
 
+/* Hide work-view elements in fullscreen focus mode */
+body.fullscreen-mode .work-inline-back {
+    display: none !important;
+}
+
+body.fullscreen-mode .work-bounty-section {
+    display: none !important;
+}
+
+body.fullscreen-mode .work-header-container {
+    display: none !important;
+}
+
+body.fullscreen-mode .work-inline-controls.hidden {
+    display: none !important;
+}
+
 /* Bottom navigation bar */
 .song-nav-bar {
     position: fixed;
@@ -7526,6 +8110,115 @@ body.fullscreen-mode::after {
     text-align: center;
     color: var(--text-secondary);
     padding: 2rem;
+}
+
+/* Dashboard part cards */
+.work-dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.work-part-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.work-part-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.work-card-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.work-card-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.work-card-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.work-card-meta {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.15rem;
+}
+
+.work-card-preview {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+}
+
+.work-card-action {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.work-card-action:hover {
+    background: var(--accent-hover);
+}
+
+/* Inline expansion back button */
+.work-inline-back {
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.work-inline-back:hover {
+    text-decoration: underline;
+}
+
+.work-inline-controls {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.work-inline-controls:empty,
+.work-inline-controls.hidden {
+    display: none;
+}
+
+/* Bounty section title (non-collapsible on dashboard) */
+.work-bounty-title {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
 }
 
 /* ============================================

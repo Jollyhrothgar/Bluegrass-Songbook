@@ -2,7 +2,7 @@
 // Supports modes: 'default' (3 cards), 'request' (straight to form), 'contribute' (2 cards, pre-filled)
 
 import { allSongs } from './state.js';
-import { generateSlug, escapeHtml } from './utils.js';
+import { generateSlug, escapeHtml, isPlaceholder } from './utils.js';
 import { track } from './analytics.js';
 
 const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
@@ -55,6 +55,11 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
     // Backdrop click
     pickerModal.addEventListener('click', (e) => {
         if (e.target === pickerModal) closeAddSongPicker();
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !pickerModal.classList.contains('hidden')) closeAddSongPicker();
     });
 
     // Close on browser back/navigation
@@ -123,6 +128,54 @@ function updateRequestSubmitState() {
     reqSubmit.disabled = !reqTitle?.value?.trim();
 }
 
+/**
+ * Normalize a title for fuzzy comparison.
+ * Strips articles, punctuation, normalizes whitespace, common abbreviations.
+ */
+function normalizeForMatch(text) {
+    if (!text) return '';
+    return text.toLowerCase()
+        .replace(/[''`]/g, '')
+        .replace(/\bthe\b|\ba\b|\ban\b/g, '')
+        .replace(/\bst\b/g, 'saint')
+        .replace(/\bmt\b/g, 'mount')
+        .replace(/[^a-z0-9\s]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+/**
+ * Simple similarity score (0-1) between two strings.
+ * Uses longest common subsequence ratio.
+ */
+function similarity(a, b) {
+    if (!a || !b) return 0;
+    if (a === b) return 1;
+    const longer = a.length > b.length ? a : b;
+    const shorter = a.length > b.length ? b : a;
+    if (longer.length === 0) return 1;
+    // Substring check (fast path)
+    if (longer.includes(shorter)) return shorter.length / longer.length;
+    // Levenshtein-based similarity
+    const costs = [];
+    for (let i = 0; i <= shorter.length; i++) {
+        let lastVal = i;
+        for (let j = 0; j <= longer.length; j++) {
+            if (i === 0) { costs[j] = j; }
+            else if (j > 0) {
+                let newVal = costs[j - 1];
+                if (shorter[i - 1] !== longer[j - 1]) {
+                    newVal = Math.min(newVal, lastVal, costs[j]) + 1;
+                }
+                costs[j - 1] = lastVal;
+                lastVal = newVal;
+            }
+        }
+        if (i > 0) costs[longer.length] = lastVal;
+    }
+    return 1 - costs[longer.length] / longer.length;
+}
+
 function checkDedup() {
     if (!dedupWarning || !reqTitle) return;
     const title = reqTitle.value.trim();
@@ -132,17 +185,83 @@ function checkDedup() {
         return;
     }
 
+    const normalizedTitle = normalizeForMatch(title);
+    const normalizedArtist = normalizeForMatch(artist);
+
+    // Find matches: exact slug match first, then fuzzy title match
     const slug = generateSlug(title, artist);
-    const existing = allSongs.find(s => s.id === slug);
-    if (existing) {
-        dedupWarning.innerHTML = `
-            <span class="dedup-msg">A song matching "${escapeHtml(existing.title)}" already exists.</span>
-            <a href="#work/${existing.id}" class="dedup-link" onclick="event.stopPropagation()">View it</a>
-        `;
-        dedupWarning.classList.remove('hidden');
-    } else {
-        dedupWarning.classList.add('hidden');
+    const candidates = [];
+
+    for (const song of allSongs) {
+        // Exact slug match
+        if (song.id === slug) {
+            candidates.push({ song, score: 1.0, reason: 'exact' });
+            continue;
+        }
+
+        // Fuzzy title match
+        const songNormTitle = normalizeForMatch(song.title);
+        const titleScore = similarity(normalizedTitle, songNormTitle);
+
+        if (titleScore >= 0.8) {
+            // Boost if artist also matches
+            let artistBoost = 0;
+            if (normalizedArtist && song.artist) {
+                const artistScore = similarity(normalizedArtist, normalizeForMatch(song.artist));
+                if (artistScore > 0.7) artistBoost = 0.1;
+            }
+            candidates.push({ song, score: titleScore + artistBoost, reason: 'fuzzy' });
+        }
     }
+
+    if (candidates.length === 0) {
+        dedupWarning.classList.add('hidden');
+        return;
+    }
+
+    // Sort by score descending, take top 3
+    candidates.sort((a, b) => b.score - a.score);
+    const top = candidates.slice(0, 3);
+
+    const matchHtml = top.map(({ song }) => {
+        const hasParts = song.content || song.tablature_parts?.length || song.abc_content;
+        const badge = isPlaceholder(song) ? ' <span class="dedup-badge">placeholder</span>' : '';
+        return `
+            <div class="dedup-match">
+                <a href="#work/${song.id}" class="dedup-link" onclick="event.stopPropagation()">${escapeHtml(song.title)}</a>
+                ${song.artist ? ` <span class="dedup-artist">by ${escapeHtml(song.artist)}</span>` : ''}${badge}
+                ${hasParts ? ' <button class="dedup-bounty-btn" data-work-id="' + song.id + '">Request a part instead</button>' : ''}
+            </div>
+        `;
+    }).join('');
+
+    dedupWarning.innerHTML = `
+        <span class="dedup-msg">Did you mean one of these?</span>
+        ${matchHtml}
+        <div class="dedup-proceed">
+            <button class="dedup-proceed-btn" id="dedup-proceed-btn">No, this is a different song</button>
+        </div>
+    `;
+    dedupWarning.classList.remove('hidden');
+
+    // Wire "Request a part instead" buttons
+    dedupWarning.querySelectorAll('.dedup-bounty-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeAddSongPicker();
+            // Navigate to the work view where they can use the bounty request
+            window.location.hash = `#work/${btn.dataset.workId}`;
+        });
+    });
+
+    // Wire "No, different song" button
+    dedupWarning.querySelector('#dedup-proceed-btn')?.addEventListener('click', () => {
+        dedupWarning.classList.add('hidden');
+        reqSubmit.disabled = false;
+    });
+
+    // Disable submit while dedup warning is shown
+    if (reqSubmit) reqSubmit.disabled = true;
 }
 
 async function submitRequest() {

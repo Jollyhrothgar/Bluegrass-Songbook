@@ -1,11 +1,18 @@
 id: shes-no-angel
 title: She’s No Angel
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/shes-no-angel/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/shes-no-angel/
+    imported_at: '2026-02-08'
+tags:
+- ClassicCountry
+- JamFriendly
+default_key: G
+artist: Kitty Wells
+composers:
+- Wanda Ballman and J.W. Arnold

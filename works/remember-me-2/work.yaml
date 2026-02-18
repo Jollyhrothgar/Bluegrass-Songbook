@@ -1,11 +1,19 @@
 id: remember-me-2
 title: Remember Me
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/remember-me-2/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/remember-me-2/
+    imported_at: '2026-02-08'
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+default_key: C
+artist: Willie Nelson
+composers:
+- Scott Wiseman

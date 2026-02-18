@@ -28,6 +28,8 @@ import {
     setListContext,
     tablaturePlayer,
     setFullscreenMode,
+    setWorkRedirects, resolveWorkId,
+    setBountyIndex,
     // Reactive state system
     subscribe, setCurrentView, currentView
 } from './state.js';
@@ -38,14 +40,14 @@ import {
     showListView, fetchListData, renderManageListsView, showSongListsView, startCreateListInView,
     // Favorites functions (favorites is now just a list)
     showFavorites, updateFavoritesCount, getFavoritesList, isFavorite, toggleFavorite,
-    updateSyncUI, reorderFavoriteItem
+    updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
-import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
-import { openWork, renderWorkView, getCurrentWork } from './work-view.js';
+import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
+import { openWork, renderWorkView, getCurrentWork, getActiveItemRef } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints } from './editor.js';
-import { escapeHtml, requireLogin } from './utils.js';
+import { escapeHtml, requireLogin, isPlaceholder, isTabOnlyWork, hasMultipleParts, parseItemRef } from './utils.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
@@ -142,6 +144,7 @@ const userName = document.getElementById('user-name');
 // Song actions
 const exportBtn = document.getElementById('export-btn');
 const exportDropdown = document.getElementById('export-dropdown');
+const workViewBtn = document.getElementById('work-view-btn');
 const editSongBtn = document.getElementById('edit-song-btn');
 const deleteSongBtn = document.getElementById('delete-song-btn');
 
@@ -684,16 +687,33 @@ function handleDeepLink() {
     // (the URL is already set from the initial page load)
 
     if (hash.startsWith('#work/')) {
-        // Work view: #work/{id} or #work/{id}/parts/{partId}
+        // Work view: #work/{id} or #work/{id}/{partId}
+        // Also handles legacy #work/{id}/parts/{partId}
         const pathParts = hash.slice(6).split('/');
-        const workId = pathParts[0];
-        const partId = pathParts[2]; // undefined if just #work/{id}
+        const workId = resolveWorkId(pathParts[0]);
+        let partId;
+
+        if (pathParts[1] === 'parts' && pathParts[2]) {
+            // Legacy URL: #work/{id}/parts/{partId} → redirect to #work/{id}/{partId}
+            partId = pathParts[2];
+            history.replaceState(null, '', `#work/${workId}/${partId}`);
+        } else {
+            partId = pathParts[1]; // undefined if just #work/{id}
+        }
+
+        // Update URL if redirected to canonical slug
+        if (workId !== pathParts[0] && !partId) {
+            history.replaceState(null, '', `#work/${workId}`);
+        } else if (workId !== pathParts[0] && partId) {
+            history.replaceState(null, '', `#work/${workId}/${partId}`);
+        }
         trackDeepLink('work', hash);
+        // #work/ URLs always show the work dashboard — it's an explicit request
         openWork(workId, { partId, fromDeepLink: true });
         return true;
     } else if (hash.startsWith('#song/')) {
-        // Legacy route - redirect to #work/
-        const songId = hash.slice(6);
+        // Legacy route - redirect to #work/ (also resolve merged duplicates)
+        const songId = resolveWorkId(hash.slice(6));
         window.location.hash = `#work/${songId}`;
         return true;
     } else if (hash === '#add') {
@@ -737,14 +757,15 @@ function handleDeepLink() {
     } else if (hash.startsWith('#list/')) {
         const parts = hash.slice(6).split('/');
         const listId = parts[0];
-        const songId = parts[1]; // undefined if just #list/{id}
+        // Item ref can contain a slash (e.g., "soldier-s-joy-1/tenor-banjo")
+        const itemRef = parts.length > 1 ? parts.slice(1).join('/') : undefined;
 
         // Handle favorites as a special list
         if (listId === 'favorites') {
-            if (songId) {
-                // Deep link to song within favorites: #list/favorites/{songId}
+            if (itemRef) {
+                // Deep link to song within favorites: #list/favorites/{itemRef}
                 trackDeepLink('favorites-song', hash);
-                openSongInFavorites(songId, true);
+                openSongInFavorites(itemRef, true);
             } else {
                 // Deep link to favorites: #list/favorites
                 trackDeepLink('favorites', hash);
@@ -754,11 +775,11 @@ function handleDeepLink() {
             return true;
         }
 
-        if (songId) {
-            // Deep link to song within list: #list/{uuid}/{songId}
+        if (itemRef) {
+            // Deep link to song within list: #list/{uuid}/{itemRef}
             trackDeepLink('list-song', hash);
             // First load the list to set up context, then open the song
-            openSongInList(listId, songId, true);
+            openSongInList(listId, itemRef, true);
         } else {
             // Deep link to list: #list/{uuid}
             trackDeepLink('list', hash);
@@ -801,12 +822,18 @@ function handleDeepLink() {
 
 /**
  * Open a song within the favorites context (for deep linking)
+ * @param {string} itemRef - Work ID or part-qualified ref (e.g., "work-id/part-slug")
  */
-function openSongInFavorites(songId, fromDeepLink = false) {
+function openSongInFavorites(itemRef, fromDeepLink = false) {
+    const { workId, partId } = parseItemRef(itemRef);
+
     // Get favorites song IDs that exist in allSongs
     const favList = getFavoritesList();
-    const favSongIds = favList ? favList.songs.filter(id => allSongs.find(s => s.id === id)) : [];
-    const songIndex = favSongIds.indexOf(songId);
+    const favSongIds = favList ? favList.songs.filter(ref => {
+        const { workId: wid } = parseItemRef(ref);
+        return allSongs.find(s => s.id === wid);
+    }) : [];
+    const songIndex = favSongIds.indexOf(itemRef);
 
     // Set up favorites context for prev/next navigation
     setListContext({
@@ -816,24 +843,39 @@ function openSongInFavorites(songId, fromDeepLink = false) {
         currentIndex: songIndex >= 0 ? songIndex : 0
     });
 
-    // Open the song with favorites context
-    openSong(songId, { fromList: true, listId: 'favorites', fromDeepLink });
+    // Dashboard for: placeholders, tab-only, and multi-part works.
+    // Single-part songs with content go to song-view.
+    const song = allSongs.find(s => s.id === workId);
+    if (partId) {
+        // Part-qualified ref always opens the work dashboard with that part expanded
+        openWork(workId, { partId, fromDeepLink, fromList: true });
+    } else if (song && (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song))) {
+        openWork(workId, { fromDeepLink, fromList: true });
+    } else {
+        openSong(workId, { fromList: true, listId: 'favorites', fromDeepLink });
+    }
 }
 
 /**
  * Open a song within a list context (for deep linking)
+ * @param {string} itemRef - Work ID or part-qualified ref (e.g., "work-id/part-slug")
  */
-async function openSongInList(listId, songId, fromDeepLink = false) {
+async function openSongInList(listId, itemRef, fromDeepLink = false) {
+    const { workId, partId } = parseItemRef(itemRef);
     const listData = await fetchListData(listId);
 
     if (!listData) {
         // List not found - fall back to opening song without context
-        openSong(songId, { fromDeepLink });
+        if (partId) {
+            openWork(workId, { partId, fromDeepLink });
+        } else {
+            openSong(workId, { fromDeepLink });
+        }
         return;
     }
 
     // Set up list context for prev/next navigation
-    const songIndex = listData.songs.indexOf(songId);
+    const songIndex = listData.songs.indexOf(itemRef);
     setListContext({
         listId,
         listName: listData.name,
@@ -841,8 +883,17 @@ async function openSongInList(listId, songId, fromDeepLink = false) {
         currentIndex: songIndex >= 0 ? songIndex : 0
     });
 
-    // Open the song with list context
-    openSong(songId, { fromList: true, listId, fromDeepLink });
+    // Dashboard for: placeholders, tab-only, and multi-part works.
+    // Single-part songs with content go to song-view.
+    const song = allSongs.find(s => s.id === workId);
+    if (partId) {
+        // Part-qualified ref always opens the work dashboard with that part expanded
+        openWork(workId, { partId, fromDeepLink, fromList: true });
+    } else if (song && (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song))) {
+        openWork(workId, { fromDeepLink, fromList: true });
+    } else {
+        openSong(workId, { fromList: true, listId, fromDeepLink });
+    }
 }
 
 /**
@@ -974,6 +1025,8 @@ function transformPendingToIndexFormat(pending) {
         key: pending.key || '',
         mode: pending.mode || '',
         tags: pending.tags || {},
+        notes: pending.notes || '',
+        status: pending.status || (pending.content ? undefined : 'placeholder'),
         source: 'pending',
         replaces_id: pending.replaces_id,
         first_line: extractFirstLine(pending.content),
@@ -987,9 +1040,23 @@ async function loadIndex() {
     }
 
     try {
-        const response = await fetch('data/index.jsonl');
+        const [response, redirectsResponse] = await Promise.all([
+            fetch('data/index.jsonl'),
+            fetch('data/redirects.json').catch(() => null),
+        ]);
         const text = await response.text();
         const staticSongs = text.trim().split('\n').map(line => JSON.parse(line));
+
+        // Load work redirects (merged/renamed works)
+        if (redirectsResponse?.ok) {
+            try {
+                const redirects = await redirectsResponse.json();
+                setWorkRedirects(redirects);
+                console.log(`Loaded ${Object.keys(redirects).length} work redirects`);
+            } catch (e) {
+                // Not critical — redirects just won't work
+            }
+        }
 
         // Fetch pending songs from Supabase (graceful failure if offline/error)
         let pendingSongs = [];
@@ -1011,12 +1078,20 @@ async function loadIndex() {
             // Static index still works - graceful degradation
         }
 
-        // Merge: pending corrections replace static songs with same ID
+        // Merge: pending corrections overlay on static songs, preserving fields like tablature_parts
+        const staticMap = {};
+        staticSongs.forEach(s => { staticMap[s.id] = s; });
+
+        const mergedPending = pendingSongs.map(p => {
+            const base = p.replaces_id ? staticMap[p.replaces_id] : null;
+            return base ? { ...base, ...p, source: 'pending' } : p;
+        });
+
         const replacedIds = new Set(
             pendingSongs.filter(s => s.replaces_id).map(s => s.replaces_id)
         );
         const filteredStatic = staticSongs.filter(s => !replacedIds.has(s.id));
-        const songs = [...filteredStatic, ...pendingSongs];
+        const songs = [...filteredStatic, ...mergedPending];
 
         setAllSongs(songs);
 
@@ -1064,6 +1139,9 @@ async function loadIndex() {
             showView('home');
             history.replaceState({ view: 'home' }, '', window.location.pathname);
         }
+
+        // Fetch bounties in background (non-blocking, not needed for initial render)
+        refreshBounties();
     } catch (error) {
         console.error('Failed to load index:', error);
         if (resultsDiv) {
@@ -1097,12 +1175,20 @@ async function refreshPendingSongs() {
         // Get current static songs (those not from pending source)
         const currentSongs = allSongs.filter(s => s.source !== 'pending');
 
-        // Merge: pending corrections replace static songs with same ID
+        // Merge: pending corrections overlay on static songs, preserving fields like tablature_parts
+        const staticMap = {};
+        currentSongs.forEach(s => { staticMap[s.id] = s; });
+
+        const mergedPending = pendingSongs.map(p => {
+            const base = p.replaces_id ? staticMap[p.replaces_id] : null;
+            return base ? { ...base, ...p, source: 'pending' } : p;
+        });
+
         const replacedIds = new Set(
             pendingSongs.filter(s => s.replaces_id).map(s => s.replaces_id)
         );
         const filteredStatic = currentSongs.filter(s => !replacedIds.has(s.id));
-        const songs = [...filteredStatic, ...pendingSongs];
+        const songs = [...filteredStatic, ...mergedPending];
 
         setAllSongs(songs);
 
@@ -1138,6 +1224,44 @@ async function refreshPendingSongs() {
 
 // Expose refreshPendingSongs on window for editor.js (avoids circular import)
 window.refreshPendingSongs = refreshPendingSongs;
+
+/**
+ * Fetch open bounties from Supabase and populate bountyIndex.
+ * Groups bounties by work_id for O(1) lookup.
+ */
+async function refreshBounties() {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) return;
+
+    try {
+        const { data, error } = await supabase
+            .from('bounties')
+            .select('*')
+            .eq('status', 'open');
+
+        if (error || !data) {
+            console.warn('Could not fetch bounties:', error);
+            return;
+        }
+
+        // Group by work_id
+        const index = {};
+        for (const bounty of data) {
+            if (!index[bounty.work_id]) index[bounty.work_id] = [];
+            index[bounty.work_id].push(bounty);
+        }
+        setBountyIndex(index);
+
+        if (data.length > 0) {
+            console.log(`Loaded ${data.length} open bounties across ${Object.keys(index).length} works`);
+        }
+    } catch (e) {
+        console.warn('Error fetching bounties:', e);
+    }
+}
+
+// Expose refreshBounties on window for bounty UI components
+window.refreshBounties = refreshBounties;
 
 // ============================================
 // AUTH UI
@@ -1202,6 +1326,9 @@ function updateAuthUI(user) {
         signInBtn?.classList.remove('hidden');
         userInfo?.classList.add('hidden');
         updateSyncUI('offline');
+
+        // Revert lists/favorites to localStorage-only (drop cloud-merged data)
+        handleListsSignOut();
 
         // Clear admin status
         isAdminUser = false;
@@ -2337,6 +2464,19 @@ function init() {
         fullscreenBtn
     });
 
+    // Set up smart list navigation router (routes to openWork for tab-only/multi-part works)
+    setListItemRouter((itemRef) => {
+        const { workId, partId } = parseItemRef(itemRef);
+        const song = allSongs.find(s => s.id === workId);
+        if (partId) {
+            openWork(workId, { partId, fromList: true });
+        } else if (song && (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song))) {
+            openWork(workId, { fromList: true });
+        } else {
+            openSong(workId, { fromList: true });
+        }
+    });
+
     initSearch({
         searchInput,
         searchStats,
@@ -2555,8 +2695,9 @@ function init() {
         e.stopPropagation();
         const song = getCurrentSong();
         if (song) {
-            showListPicker(song.id, listPickerBtn, {
-                onUpdate: () => updateTriggerButton(listPickerBtn, song.id)
+            const itemRef = getActiveItemRef() || song.id;
+            showListPicker(itemRef, listPickerBtn, {
+                onUpdate: () => updateTriggerButton(listPickerBtn, itemRef)
             });
         }
     });
@@ -2935,8 +3076,10 @@ function init() {
             const song = getCurrentSong ? getCurrentSong() : currentSong;
             const btn = document.getElementById('add-to-list-btn');
             if (song && typeof showListPicker === 'function') {
-                showListPicker(song.id, btn, {
-                    onUpdate: () => updateTriggerButton(btn, song.id)
+                // Use part-qualified ref when viewing a specific part
+                const itemRef = getActiveItemRef() || song.id;
+                showListPicker(itemRef, btn, {
+                    onUpdate: () => updateTriggerButton(btn, itemRef)
                 });
             }
             return;
@@ -3068,6 +3211,16 @@ if (exitFullscreenBtn) {
 // Song view button (open bottom sheet with controls)
 if (songViewBtn) {
     songViewBtn.addEventListener('click', openSongControls);
+}
+
+// Work view button (navigate from song view to work dashboard)
+if (workViewBtn) {
+    workViewBtn.addEventListener('click', () => {
+        const song = getCurrentSong();
+        if (song) {
+            openWork(song.id);
+        }
+    });
 }
 
 // ============================================

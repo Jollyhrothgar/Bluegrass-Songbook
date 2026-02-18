@@ -3,6 +3,7 @@ title: Orange Blossom Special
 artist: Johnny Cash
 composers:
 - E.T. Rouce
+- Biography:Ervin Rouse
 default_key: C
 tags:
 - ClassicCountry
@@ -11,6 +12,8 @@ tags:
 - Gospel
 - Outlaw
 - JamFriendly
+- Instrumental
+- Bluegrass
 exclude_tags:
 - BluegrassStandard
 - Bluegrass

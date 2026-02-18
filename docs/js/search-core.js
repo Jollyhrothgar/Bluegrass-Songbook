@@ -1,7 +1,7 @@
 // Core search functionality for Bluegrass Songbook
 
-import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs } from './state.js';
-import { highlightMatch, escapeHtml, isTabOnlyWork, isPlaceholder, requireLogin } from './utils.js';
+import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork } from './state.js';
+import { highlightMatch, escapeHtml, isTabOnlyWork, isPlaceholder, hasMultipleParts, requireLogin } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
@@ -435,7 +435,8 @@ async function loadPrefixMap() {
         'chord:': 'chord', 'c:': 'chord',
         'prog:': 'prog', 'p:': 'prog',
         'tag:': 'tag', 't:': 'tag',
-        'status:': 'status', 's:': 'status'
+        'status:': 'status', 's:': 'status',
+        'has:': 'has'
     };
     return searchPrefixMap;
 }
@@ -484,7 +485,9 @@ export function parseSearchQuery(query) {
         excludeTags: [],
         excludeChords: [],
         statusFilter: null,
-        excludeStatus: null
+        excludeStatus: null,
+        hasFilters: [],        // e.g., ['bounty']
+        excludeHas: []
     };
 
     // Get prefix map (from shared config or fallback)
@@ -554,6 +557,9 @@ export function parseSearchQuery(query) {
                 case 'status':
                     result.excludeStatus = value.toLowerCase();
                     break;
+                case 'has':
+                    result.excludeHas.push(value.toLowerCase());
+                    break;
             }
         } else {
             // Positive filters
@@ -597,6 +603,9 @@ export function parseSearchQuery(query) {
                 }
                 case 'status':
                     result.statusFilter = value.toLowerCase();
+                    break;
+                case 'has':
+                    result.hasFilters.push(value.toLowerCase());
                     break;
             }
         }
@@ -735,7 +744,8 @@ export function search(query, options = {}) {
         artistFilter, titleFilter, lyricsFilter, composerFilter, keyFilter,
         excludeArtist, excludeTitle, excludeLyrics, excludeComposer, excludeKey,
         excludeTags, excludeChords,
-        statusFilter, excludeStatus
+        statusFilter, excludeStatus,
+        hasFilters, excludeHas
     } = parseSearchQuery(query);
 
     // Pre-compute stemmed query terms (once per search, not per song)
@@ -838,6 +848,24 @@ export function search(query, options = {}) {
         if (excludeStatus) {
             const songStatus = song.status || 'complete';
             if (songStatus === excludeStatus) return false;
+        }
+
+        // has: filters (e.g., has:bounty)
+        if (hasFilters.length > 0) {
+            for (const hasVal of hasFilters) {
+                if (hasVal === 'bounty') {
+                    const hasBounty = song.status === 'placeholder' || getBountiesForWork(song.id).length > 0;
+                    if (!hasBounty) return false;
+                }
+            }
+        }
+        if (excludeHas.length > 0) {
+            for (const hasVal of excludeHas) {
+                if (hasVal === 'bounty') {
+                    const hasBounty = song.status === 'placeholder' || getBountiesForWork(song.id).length > 0;
+                    if (hasBounty) return false;
+                }
+            }
         }
 
         return true;
@@ -1010,16 +1038,25 @@ function loadMoreResults() {
  * Render a single result item
  */
 function renderResultItem(song, index, query, isDraggable, canReorder, viewingListId) {
-    const favClass = isFavorite(song.id) ? 'is-favorite' : '';
-    const inList = isSongInAnyList(song.id);
-    const btnClass = (isFavorite(song.id) || inList) ? 'has-lists' : '';
+    // Part-qualified items have _itemRef and _partId from list rendering
+    const itemRef = song._itemRef || song.id;
+    const partId = song._partId || null;
 
-    // Check for multiple versions
-    const groupId = song.group_id;
+    const favClass = isFavorite(itemRef) ? 'is-favorite' : '';
+    const inList = isSongInAnyList(itemRef);
+    const btnClass = (isFavorite(itemRef) || inList) ? 'has-lists' : '';
+
+    // Check for multiple versions (skip for part-qualified items)
+    const groupId = partId ? null : song.group_id;
     const versions = groupId ? (songGroups[groupId] || []) : [];
     const versionCount = versions.length;
     const versionBadge = versionCount > 1
         ? `<span class="version-badge" data-group-id="${groupId}">${versionCount} versions</span>`
+        : '';
+
+    // Part label for part-qualified items (e.g., "Tenor Banjo Tab")
+    const partLabel = partId
+        ? `<span class="part-label-badge">${escapeHtml(partId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '))}</span>`
         : '';
 
     // Generate tag badges (max 3)
@@ -1054,6 +1091,12 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
         ? '<span class="doc-badge">PDF</span>'
         : '';
 
+    // Bounty badge
+    const bountyCount = getBountiesForWork(song.id).length;
+    const bountyBadge = (bountyCount > 0 || song.status === 'placeholder')
+        ? `<span class="bounty-result-badge" title="${bountyCount > 0 ? bountyCount + ' open bounties' : 'Needs content'}">&#x1F3F4;${bountyCount > 0 ? ` ${bountyCount}` : ''}</span>`
+        : '';
+
     // Grassiness score badge
     const grassinessScore = song.grassiness || 0;
     const grassinessBadge = grassinessScore >= 20
@@ -1071,14 +1114,14 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
     const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
     const draggableAttr = isDraggable ? `draggable="true" data-index="${index}"` : '';
 
-    // Buttons
+    // Buttons - use itemRef for list operations
     const removeBtn = canReorder
-        ? `<button class="result-remove-btn" data-song-id="${song.id}" title="Remove from list">×</button>`
+        ? `<button class="result-remove-btn" data-song-id="${itemRef}" title="Remove from list">×</button>`
         : '';
 
-    const isSelected = selectedSongIds.has(song.id);
+    const isSelected = selectedSongIds.has(itemRef);
     const selectBtn = canReorder
-        ? `<button class="result-select-btn ${isSelected ? 'selected' : ''}" data-song-id="${song.id}" title="Select for batch operation">✓</button>`
+        ? `<button class="result-select-btn ${isSelected ? 'selected' : ''}" data-song-id="${itemRef}" title="Select for batch operation">✓</button>`
         : '';
 
     const selectedClass = isSelected ? 'selected' : '';
@@ -1087,7 +1130,7 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
     let metadataBadges = '';
     let notesBtn = '';
     if (viewingListId) {
-        const metadata = getSongMetadata(viewingListId, song.id);
+        const metadata = getSongMetadata(viewingListId, itemRef);
         if (metadata) {
             const keyBadge = metadata.key ? `<span class="list-item-badge key-badge">${escapeHtml(metadata.key)}</span>` : '';
             const tempoBadge = metadata.tempo ? `<span class="list-item-badge tempo-badge">${metadata.tempo}</span>` : '';
@@ -1095,15 +1138,17 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
         }
         const hasNotes = metadata?.notes && metadata.notes.trim();
         const notesClass = hasNotes ? 'has-notes' : '';
-        notesBtn = `<button class="list-notes-btn ${notesClass}" data-song-id="${song.id}" data-song-title="${escapeHtml(song.title || 'Song')}" title="${hasNotes ? 'Edit notes' : 'Add notes'}">&#128221;</button>`;
+        notesBtn = `<button class="list-notes-btn ${notesClass}" data-song-id="${itemRef}" data-song-title="${escapeHtml(song.title || 'Song')}" title="${hasNotes ? 'Edit notes' : 'Add notes'}">&#128221;</button>`;
     }
 
+    const partIdAttr = partId ? `data-part-id="${partId}"` : '';
+
     return `
-        <div class="result-item ${favClass} ${selectedClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${draggableAttr}>
+        <div class="result-item ${favClass} ${selectedClass}" data-id="${song.id}" data-group-id="${groupId || ''}" ${partIdAttr} ${draggableAttr}>
             ${dragHandle}
             <div class="result-main">
                 <div class="result-title-artist">
-                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}${placeholderBadge}${docBadge}${instrumentBadges}${grassinessBadge}</div>
+                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${partLabel}${versionBadge}${placeholderBadge}${bountyBadge}${docBadge}${instrumentBadges}${grassinessBadge}</div>
                     ${metadataBadges}
                 </div>
                 <div class="result-artist">${highlightMatch(primaryArtist, query)}</div>
@@ -1113,7 +1158,7 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
             </div>
             ${selectBtn}
             ${notesBtn}
-            <button class="result-list-btn ${btnClass}" data-song-id="${song.id}" title="Add to list">+</button>
+            <button class="result-list-btn ${btnClass}" data-song-id="${itemRef}" title="Add to list">+</button>
             ${removeBtn}
         </div>
     `;
@@ -1275,9 +1320,9 @@ function setupResultEventListeners(resultsDiv) {
             return;
         }
 
-        // Handle tag badge click
+        // Handle tag badge click (skip instrument badges - they're informational)
         const tagBadge = e.target.closest('.tag-badge');
-        if (tagBadge) {
+        if (tagBadge && !tagBadge.classList.contains('tag-instrument')) {
             e.stopPropagation();
             const tag = tagBadge.dataset.tag;
             if (tag && searchInputEl) {
@@ -1315,13 +1360,20 @@ function setupResultEventListeners(resultsDiv) {
 
             // Open song - auto-fullscreen if coming from a list/favorites view
             const fromList = !!getViewingListId();
-            if (versions.length > 1) {
+
+            // Check for part-qualified item ref (from list view)
+            const partId = resultItem.dataset.partId;
+            if (partId) {
+                // Part-qualified: always open work with that part expanded
+                openWork(resultItem.dataset.id, { partId });
+            } else if (versions.length > 1) {
                 showVersionPicker(groupId, { fromList });
             } else {
                 const songId = resultItem.dataset.id;
                 const song = allSongs.find(s => s.id === songId);
-                // Placeholders and tab-only works route through work view
-                if (isPlaceholder(song) || isTabOnlyWork(song)) {
+                // Dashboard for: placeholders, tab-only, and multi-part works.
+                // Single-part songs with content go to song-view.
+                if (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song)) {
                     openWork(songId);
                 } else {
                     openSong(songId, { fromList });

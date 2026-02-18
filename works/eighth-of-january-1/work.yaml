@@ -6,6 +6,7 @@ tags:
 - Jazzy
 - Instrumental
 - OldTime
+- Scruggs
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,3 +15,20 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '21420'
+    source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/e/tab-eighth-of-janua-21420-311171072015.tef
+    author: banjoman 1
+    imported_at: '2026-01-04'
+    tef_format: v2
+    tef_time_sig: 4/4
+    tef_tracks: 2
+    tef_events: 256
+composers:
+- Arkansas Barefoot Boys

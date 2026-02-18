@@ -8,7 +8,7 @@ import {
     getFoldersAtLevel, getListFolder, getListsAtRoot,
     renameList, deleteList, getSongMetadata, getViewingListId
 } from './lists.js';
-import { escapeHtml } from './utils.js';
+import { escapeHtml, parseItemRef } from './utils.js';
 
 let activePicker = null;
 
@@ -118,10 +118,11 @@ function getListPreview(list, maxChars = 45) {
     const count = list.songs.length;
     if (count === 0) return '(empty)';
 
-    // Build preview from song titles
+    // Build preview from song titles (handle part-qualified refs)
     const titles = [];
-    for (const songId of list.songs.slice(0, 4)) {
-        const song = allSongs.find(s => s.id === songId);
+    for (const ref of list.songs.slice(0, 4)) {
+        const { workId } = parseItemRef(ref);
+        const song = allSongs.find(s => s.id === workId);
         if (song) {
             titles.push(song.title);
         }

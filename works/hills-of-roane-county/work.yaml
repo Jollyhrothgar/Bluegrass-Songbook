@@ -1,11 +1,15 @@
 id: hills-of-roane-county
 title: Hills Of Roane County
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/hills-of-roane-county/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/hills-of-roane-county/
+    imported_at: '2026-02-08'
+tags:
+- JamFriendly
+default_key: C
+artist: Stanley Brothers

@@ -4,6 +4,8 @@ artist: The Steel Wheels
 default_key: G
 tags:
 - JamFriendly
+- Instrumental
+- OldTime
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,3 +15,5 @@ parts:
     source: classic-country
     source_file: redwinglyricschords.pro
     imported_at: '2026-01-02'
+composers:
+- Biography:Kerry Mills

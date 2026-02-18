@@ -1,11 +1,16 @@
 id: well-meet-again-sweetheart
 title: We’ll Meet Again Sweetheart
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/well-meet-again-sweetheart/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/well-meet-again-sweetheart/
+    imported_at: '2026-02-08'
+tags:
+- Bluegrass
+- JamFriendly
+default_key: G
+artist: Lester Flatt

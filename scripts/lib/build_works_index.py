@@ -750,6 +750,42 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     print(f"Written to {output_file}")
     print(f"Size: {output_file.stat().st_size / 1024 / 1024:.1f} MB")
 
+    # Lightweight dedup check: warn about potential duplicates
+    _check_duplicates(songs)
+
+
+def _check_duplicates(songs: list):
+    """Quick dedup check on built index. Warns but doesn't fail."""
+    import unicodedata
+    import re
+
+    def _norm(text):
+        if not text:
+            return ''
+        text = unicodedata.normalize('NFKD', text)
+        text = ''.join(c for c in text if not unicodedata.combining(c))
+        text = text.lower()
+        text = re.sub(r"[''`]", '', text)
+        text = re.sub(r'\bthe\b|\ba\b|\ban\b', '', text)
+        text = re.sub(r'\bst\b', 'saint', text)
+        text = re.sub(r'[^a-z0-9\s]', '', text)
+        return re.sub(r'\s+', ' ', text).strip()
+
+    by_title = {}
+    for song in songs:
+        key = _norm(song.get('title', ''))
+        if key:
+            by_title.setdefault(key, []).append(song['id'])
+
+    dupes = [(title, ids) for title, ids in by_title.items() if len(ids) > 1]
+    if dupes:
+        print(f"\nWARNING: {len(dupes)} potential duplicate title groups detected.")
+        print("Run 'uv run python scripts/lib/dedup_works.py' to review.")
+        for title, ids in dupes[:5]:
+            print(f"  {title}: {', '.join(ids[:3])}")
+        if len(dupes) > 5:
+            print(f"  ... and {len(dupes) - 5} more")
+
 
 def main():
     parser = argparse.ArgumentParser(description='Build index from works/')

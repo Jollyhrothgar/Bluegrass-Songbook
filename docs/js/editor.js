@@ -774,8 +774,12 @@ export function initEditor(options) {
     songViewEl = songView;
 
     // Edit song button
+    // window.__editInterceptor is set by work-view.js for placeholders
     if (editSongBtnEl) {
         editSongBtnEl.addEventListener('click', () => {
+            if (window.__editInterceptor && window.__editInterceptor()) {
+                return; // intercepted (e.g. placeholder metadata editor)
+            }
             if (currentSong) {
                 enterEditMode(currentSong);
             }

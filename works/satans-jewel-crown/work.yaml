@@ -1,11 +1,18 @@
 id: satans-jewel-crown
 title: Satan’s Jewel Crown
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/satans-jewel-crown/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/satans-jewel-crown/
+    imported_at: '2026-02-08'
+tags:
+- Folk
+- JamFriendly
+default_key: C
+artist: Emmylou Harris
+composers:
+- Edgar Edens

@@ -1,11 +1,16 @@
 id: church-in-the-wildwood-the
 title: Church In The Wildwood, The
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/church-in-the-wildwood-the/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/church-in-the-wildwood-the/
+    imported_at: '2026-02-08'
+tags:
+- ClassicCountry
+- JamFriendly
+default_key: G
+artist: Tennessee Ernie Ford

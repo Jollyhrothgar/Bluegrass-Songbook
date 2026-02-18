@@ -1,11 +1,19 @@
 id: blue-eyes-cryin-in-the-rain
 title: Blue Eyes Cryin’ In The Rain
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/blue-eyes-cryin-in-the-rain/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/blue-eyes-cryin-in-the-rain/
+    imported_at: '2026-02-08'
+tags:
+- ClassicCountry
+- Outlaw
+- JamFriendly
+default_key: C
+artist: Willie Nelson
+composers:
+- Fred Rose

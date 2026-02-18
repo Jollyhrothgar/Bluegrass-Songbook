@@ -1,14 +1,15 @@
 id: man-of-constant-sorrow
-title: "Man of Constant Sorrow"
-artist: "Soggy Bottom Boys"
+title: Man of Constant Sorrow
+artist: Soggy Bottom Boys
 composers: []
 default_key: G
-tags: []
+tags:
+- JamFriendly
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: trusted-user
-      imported_at: '2026-02-01'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: trusted-user
+    imported_at: '2026-02-01'
