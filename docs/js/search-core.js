@@ -10,7 +10,7 @@ import {
     removeSongFromList, showListView, FAVORITES_LIST_ID, toggleFavorite,
     addSongToList, clearListView, getSongMetadata, openNotesSheet
 } from './lists.js';
-import { openSong, showVersionPicker } from './song-view.js';
+import { openSong } from './song-view.js';
 import { openWork } from './work-view.js';
 import { trackSearch as analyticsTrackSearch, trackSearchResultClick } from './analytics.js';
 import { stemWord } from './stem.js';
@@ -1035,6 +1035,27 @@ function loadMoreResults() {
 }
 
 /**
+ * Pick the best representative version from a group for display.
+ * Prefers: version with content > most chords > highest canonical_rank.
+ */
+function pickRepresentative(versions) {
+    if (versions.length === 0) return null;
+    if (versions.length === 1) return versions[0];
+    return [...versions].sort((a, b) => {
+        // Prefer versions with content (lead sheets)
+        const aHasContent = a.content ? 1 : 0;
+        const bHasContent = b.content ? 1 : 0;
+        if (aHasContent !== bHasContent) return bHasContent - aHasContent;
+        // Then by chord count
+        const aChords = a.chord_count || 0;
+        const bChords = b.chord_count || 0;
+        if (aChords !== bChords) return bChords - aChords;
+        // Then by canonical rank
+        return (b.canonical_rank || 0) - (a.canonical_rank || 0);
+    })[0];
+}
+
+/**
  * Render a single result item
  */
 function renderResultItem(song, index, query, isDraggable, canReorder, viewingListId) {
@@ -1367,7 +1388,14 @@ function setupResultEventListeners(resultsDiv) {
                 // Part-qualified: always open work with that part expanded
                 openWork(resultItem.dataset.id, { partId });
             } else if (versions.length > 1) {
-                showVersionPicker(groupId, { fromList });
+                // Multi-version: go directly to the best version's song view
+                const representative = pickRepresentative(versions);
+                const song = representative;
+                if (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song)) {
+                    openWork(representative.id, { groupId, fromList });
+                } else {
+                    openSong(representative.id, { fromList });
+                }
             } else {
                 const songId = resultItem.dataset.id;
                 const song = allSongs.find(s => s.id === songId);

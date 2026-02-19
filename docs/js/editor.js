@@ -1084,7 +1084,7 @@ async function submitAsTrustedUser(data) {
         if (window.refreshPendingSongs) {
             await window.refreshPendingSongs();
         }
-        window.location.hash = `#work/${slug}`;
+        window.location.hash = `#song/${slug}`;
 
     } catch (error) {
         console.error('Save error:', error);

@@ -22,7 +22,7 @@ import {
 } from './state.js';
 
 import {
-    showVersionPicker, openSong,
+    openSong,
     toggleFullscreen, exitFullscreen,
     navigatePrev, navigateNext,
     updateFocusHeader, updateNavBar
@@ -44,6 +44,25 @@ let availableParts = [];         // All parts for current work
 let trackRenderers = {};         // Map of trackId -> TabRenderer instance
 let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
 let inlineExpanded = false;      // true = showing a part inline (tab/doc), false = showing dashboard
+let currentGroupVersions = [];   // All versions in the current group (for version cards)
+
+/**
+ * Pick the best representative version from a group for display.
+ * Prefers: version with content > most chords > highest canonical_rank.
+ */
+function pickRepresentative(versions) {
+    if (versions.length === 0) return null;
+    if (versions.length === 1) return versions[0];
+    return [...versions].sort((a, b) => {
+        const aHasContent = a.content ? 1 : 0;
+        const bHasContent = b.content ? 1 : 0;
+        if (aHasContent !== bHasContent) return bHasContent - aHasContent;
+        const aChords = a.chord_count || 0;
+        const bChords = b.chord_count || 0;
+        if (aChords !== bChords) return bChords - aChords;
+        return (b.canonical_rank || 0) - (a.canonical_rank || 0);
+    })[0];
+}
 
 // Getter for checking if we're in work view
 export function getCurrentWork() { return currentWork; }
@@ -285,7 +304,26 @@ export async function openWork(workId, options = {}) {
         return;
     }
 
-    const { fromList = false } = options;
+    const { fromList = false, groupId = null } = options;
+
+    // Store group context for version cards
+    if (groupId && songGroups[groupId]) {
+        currentGroupVersions = songGroups[groupId];
+    } else if (song.group_id && songGroups[song.group_id]) {
+        currentGroupVersions = songGroups[song.group_id];
+    } else {
+        currentGroupVersions = [];
+    }
+
+    // For multi-version groups, always use the canonical representative
+    // so the URL is stable regardless of which version you came from
+    if (currentGroupVersions.length > 1) {
+        const representative = pickRepresentative(currentGroupVersions);
+        if (representative && representative.id !== workId) {
+            workId = representative.id;
+            song = representative;
+        }
+    }
 
     // Only clear list context when NOT navigating from a list
     if (!fromList) {
@@ -428,10 +466,16 @@ export function renderWorkView() {
         // Inline expansion mode: show back button + content
         renderInlineExpansion(activePart, content);
     } else {
-        // Dashboard mode: show part cards
-        const cards = renderPartCards();
-        if (cards) {
-            content.appendChild(cards);
+        // Version cards (multi-version works) — replaces part cards when present
+        const versionCards = renderVersionCards();
+        if (versionCards) {
+            content.appendChild(versionCards);
+        } else {
+            // Single-version: show part cards as before
+            const cards = renderPartCards();
+            if (cards) {
+                content.appendChild(cards);
+            }
         }
 
         // Placeholder CTA
@@ -479,12 +523,10 @@ function renderWorkHeader() {
     const artist = currentWork.artist || '';
     const composer = currentWork.composer || '';
 
-    // Check for multiple versions
-    const groupId = currentWork?.group_id;
-    const versions = groupId ? (songGroups[groupId] || []) : [];
-    const otherVersionCount = versions.length - 1;
-    const versionHtml = otherVersionCount > 0
-        ? `<button class="see-versions-btn" data-group-id="${groupId}">See ${otherVersionCount} other version${otherVersionCount > 1 ? 's' : ''}</button>`
+    // Version count display (informational — version cards shown below)
+    const versionCount = currentGroupVersions.length;
+    const versionHtml = versionCount > 1
+        ? `<span class="version-count-display">${versionCount} versions</span>`
         : '';
 
     // Build artists list
@@ -492,7 +534,7 @@ function renderWorkHeader() {
     if (artist) allArtists.add(artist);
     const coveringArtists = currentWork?.covering_artists || [];
     coveringArtists.forEach(a => allArtists.add(a));
-    versions.forEach(v => { if (v.artist) allArtists.add(v.artist); });
+    currentGroupVersions.forEach(v => { if (v.artist) allArtists.add(v.artist); });
     const artistsList = Array.from(allArtists);
 
     // Build info items
@@ -502,19 +544,8 @@ function renderWorkHeader() {
     }
 
     const source = currentWork.source;
-    const sourceDisplayNames = {
-        'classic-country': 'Classic Country Song Lyrics',
-        'golden-standard': 'Golden Standards Collection',
-        'tunearch': 'TuneArch.org',
-        'manual': 'Community Contribution',
-        'trusted-user': 'Community Contribution',
-        'pending': 'Community Contribution',
-        'banjo-hangout': 'Banjo Hangout',
-        'ultimate-guitar': 'Community Contribution',
-        'bluegrass-lyrics': 'BluegrassLyrics.com'
-    };
-    if (source && sourceDisplayNames[source]) {
-        infoItems.push(`<div class="info-item"><span class="info-label">Source:</span> ${sourceDisplayNames[source]}</div>`);
+    if (source && SOURCE_DISPLAY_NAMES[source]) {
+        infoItems.push(`<div class="info-item"><span class="info-label">Source:</span> ${SOURCE_DISPLAY_NAMES[source]}</div>`);
     }
     if (artistsList.length > 0) {
         const maxVisible = 3;
@@ -593,7 +624,7 @@ function renderWorkHeader() {
                     <span class="song-title">${escapeHtml(title)}</span>
                     ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
                     ${versionHtml}
-                    <button id="add-to-list-btn" class="add-to-list-btn" title="Add to list">+ Lists</button>
+                    ${inlineExpanded ? '<button id="add-to-list-btn" class="add-to-list-btn" title="Add to list">+ Lists</button>' : ''}
                     ${inlineExpanded ? '<button id="focus-btn" class="focus-btn" title="Focus mode (F)">&#x26F6; Focus</button>' : ''}
                     ${inlineExpanded && activePart?.type === 'tablature' ? '<button id="work-controls-toggle" class="focus-btn" title="Toggle controls">&#x2699;&#xFE0F; Controls</button>' : ''}
                 </div>
@@ -602,15 +633,6 @@ function renderWorkHeader() {
         </div>
         ${infoContentHtml}
     `;
-
-    // Wire up version button
-    const versionBtn = header.querySelector('.see-versions-btn');
-    if (versionBtn) {
-        versionBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            showVersionPicker(versionBtn.dataset.groupId);
-        });
-    }
 
     // Wire up info toggle
     const infoToggle = header.querySelector('#info-toggle');
@@ -726,6 +748,123 @@ function renderWorkFocusHeader() {
     });
 
     return header;
+}
+
+// ============================================
+// VERSION CARDS (Dashboard - multi-version works)
+// ============================================
+
+/**
+ * Source display names for version attribution
+ */
+const SOURCE_DISPLAY_NAMES = {
+    'classic-country': 'Classic Country Song Lyrics',
+    'golden-standard': 'Golden Standards Collection',
+    'tunearch': 'TuneArch.org',
+    'manual': 'Community Contribution',
+    'trusted-user': 'Community Contribution',
+    'pending': 'Community Contribution',
+    'banjo-hangout': 'Banjo Hangout',
+    'ultimate-guitar': 'Community Contribution',
+    'bluegrass-lyrics': 'BluegrassLyrics.com',
+};
+
+/**
+ * Render version cards section for multi-version works.
+ * Shows all versions in the group as cards with metadata.
+ */
+function renderVersionCards() {
+    if (currentGroupVersions.length <= 1) return null;
+
+    const section = document.createElement('div');
+    section.className = 'work-versions-section';
+
+    const heading = document.createElement('div');
+    heading.className = 'work-versions-heading';
+    heading.textContent = `${currentGroupVersions.length} Versions`;
+    section.appendChild(heading);
+
+    const grid = document.createElement('div');
+    grid.className = 'work-versions-grid';
+
+    for (const version of currentGroupVersions) {
+        const card = createVersionCard(version);
+        grid.appendChild(card);
+    }
+
+    section.appendChild(grid);
+    return section;
+}
+
+/**
+ * Create a single version card
+ */
+function createVersionCard(version) {
+    const card = document.createElement('div');
+    card.className = 'version-card';
+
+    const isCurrent = version.id === currentWork?.id;
+    if (isCurrent) card.classList.add('version-card-current');
+
+    // Determine label: "Lyrics & Chords" or "Lyrics"
+    const hasChords = (version.chord_count || 0) > 0;
+    const hasContent = !!version.content;
+    let typeLabel;
+    if (hasContent) {
+        typeLabel = hasChords ? 'Lyrics & Chords' : 'Lyrics';
+    } else if (version.tablature_parts?.length > 0) {
+        typeLabel = 'Tablature';
+    } else {
+        typeLabel = 'Song';
+    }
+
+    // Source attribution
+    const sourceName = SOURCE_DISPLAY_NAMES[version.source] || '';
+    const sourceHtml = sourceName
+        ? `<div class="version-card-source">From ${escapeHtml(sourceName)}</div>`
+        : '';
+
+    // Key + chord count
+    const metaParts = [];
+    if (version.key) metaParts.push(`Key: ${version.key}`);
+    if (hasChords) metaParts.push(`${version.chord_count} chords`);
+    const metaHtml = metaParts.length
+        ? `<div class="version-card-meta">${escapeHtml(metaParts.join(' · '))}</div>`
+        : '';
+
+    // First line preview
+    const firstLine = version.first_line || '';
+    const previewHtml = firstLine
+        ? `<div class="version-card-preview">"${escapeHtml(firstLine.substring(0, 80))}"</div>`
+        : '';
+
+    // Artist (if different from current work)
+    const artistHtml = version.artist && version.artist !== currentWork?.artist
+        ? `<div class="version-card-artist">${escapeHtml(version.artist)}</div>`
+        : '';
+
+    card.innerHTML = `
+        <div class="version-card-body">
+            <div class="version-card-label">${escapeHtml(typeLabel)}</div>
+            ${artistHtml}
+            ${sourceHtml}
+            ${metaHtml}
+            ${previewHtml}
+        </div>
+    `;
+
+    // Click to open this version directly in song view
+    card.addEventListener('click', () => {
+        if (isCurrent) return;
+        const isTabOnly = version.tablature_parts?.length > 0 && !version.content;
+        if (isTabOnly || version.status === 'placeholder') {
+            openWork(version.id, { groupId: version.group_id });
+        } else {
+            openSong(version.id);
+        }
+    });
+
+    return card;
 }
 
 // ============================================
@@ -854,7 +993,7 @@ function renderInlineExpansion(part, container) {
     // Back button
     const backBtn = document.createElement('button');
     backBtn.className = 'work-inline-back';
-    backBtn.textContent = '\u2190 Back to overview';
+    backBtn.textContent = '\uD83D\uDCCB Work';
     backBtn.addEventListener('click', () => {
         inlineExpanded = false;
         activePart = null;

@@ -306,7 +306,7 @@ async function submitRequest() {
 
         setTimeout(() => {
             closeAddSongPicker();
-            window.location.hash = `#work/${slug}`;
+            window.location.hash = `#song/${slug}`;
         }, 1000);
 
     } catch (err) {

@@ -593,12 +593,11 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         return `<option value="${k}" ${selected}>${label}</option>`;
     }).join('');
 
-    // Check for multiple versions
+    // Check for multiple versions — show "Back to all versions" button
     const groupId = song?.group_id;
     const versions = groupId ? (songGroups[groupId] || []) : [];
-    const otherVersionCount = versions.length - 1;
-    const versionHtml = otherVersionCount > 0
-        ? `<button class="see-versions-btn" data-group-id="${groupId}">See ${otherVersionCount} other version${otherVersionCount > 1 ? 's' : ''}</button>`
+    const versionHtml = versions.length > 1
+        ? `<button class="back-to-versions-btn" data-group-id="${groupId}" data-song-id="${song.id}">&#x2190; ${versions.length} versions</button>`
         : '';
 
     // Build artists list: primary artist + covering artists (from grassiness data, sorted by tier)
@@ -1085,11 +1084,13 @@ function setupRenderOptionsListeners(song, chordpro) {
         });
     }
 
-    const seeVersionsBtn = songContentEl.querySelector('.see-versions-btn');
-    if (seeVersionsBtn) {
-        seeVersionsBtn.addEventListener('click', (e) => {
+    const backToVersionsBtn = songContentEl.querySelector('.back-to-versions-btn');
+    if (backToVersionsBtn) {
+        backToVersionsBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            showVersionPicker(seeVersionsBtn.dataset.groupId);
+            const gid = backToVersionsBtn.dataset.groupId;
+            const sid = backToVersionsBtn.dataset.songId;
+            openWork(sid, { groupId: gid });
         });
     }
 
@@ -1348,8 +1349,8 @@ function setupRenderOptionsListeners(song, chordpro) {
 
             // Clear list view state and hide list header
             clearListView();
-            // Navigate to work view
-            window.location.hash = `#work/${song?.id || ''}`;
+            // Navigate to song view
+            window.location.hash = `#song/${song?.id || ''}`;
         });
     }
 

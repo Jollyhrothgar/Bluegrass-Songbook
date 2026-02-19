@@ -8185,6 +8185,139 @@ body.fullscreen-mode::after {
     background: var(--accent-hover);
 }
 
+/* Version cards section */
+.work-versions-section {
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.work-versions-heading {
+    font-size: var(--font-sm);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.work-versions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.5rem;
+}
+
+.version-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.65rem 0.85rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.version-card:hover {
+    border-left-color: var(--accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.version-card-current {
+    border-left-color: var(--accent);
+    background: rgba(79, 70, 229, 0.04);
+    cursor: default;
+}
+
+[data-theme="dark"] .version-card-current {
+    background: rgba(96, 165, 250, 0.06);
+}
+
+.version-card-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.version-card-label {
+    font-size: var(--font-base);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.version-card-badge {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--accent);
+    background: rgba(79, 70, 229, 0.12);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.version-card-artist {
+    font-size: var(--font-sm);
+    color: var(--text);
+    margin-top: 0.15rem;
+}
+
+.version-card-source {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.15rem;
+}
+
+.version-card-meta {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.15rem;
+}
+
+.version-card-preview {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Version count display (in work header, replaces old button) */
+.version-count-display {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: rgba(79, 70, 229, 0.08);
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-left: 0.3rem;
+}
+
+/* Back to versions button (in song view) */
+.back-to-versions-btn {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--accent);
+    background: rgba(79, 70, 229, 0.1);
+    border: none;
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: all 0.2s;
+}
+
+.back-to-versions-btn:hover {
+    background: var(--accent);
+    color: white;
+}
+
 /* Inline expansion back button */
 .work-inline-back {
     background: none;

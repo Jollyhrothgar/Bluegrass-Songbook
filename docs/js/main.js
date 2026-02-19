@@ -242,7 +242,7 @@ function pushHistoryState(view, data = {}, replace = false) {
             if (data.listId) {
                 hash = `#list/${data.listId}/${data.songId}`;
             } else {
-                hash = `#work/${data.songId}`;
+                hash = `#song/${data.songId}`;
             }
             break;
         case 'edit':
@@ -712,9 +712,14 @@ function handleDeepLink() {
         openWork(workId, { partId, fromDeepLink: true });
         return true;
     } else if (hash.startsWith('#song/')) {
-        // Legacy route - redirect to #work/ (also resolve merged duplicates)
+        // Song view: #song/{id} - shows the specific song/version
         const songId = resolveWorkId(hash.slice(6));
-        window.location.hash = `#work/${songId}`;
+        // Update URL if redirected to canonical slug
+        if (songId !== hash.slice(6)) {
+            history.replaceState(null, '', `#song/${songId}`);
+        }
+        trackDeepLink('song', hash);
+        openSong(songId, { fromDeepLink: true });
         return true;
     } else if (hash === '#add') {
         trackDeepLink('add', hash);

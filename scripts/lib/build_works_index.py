@@ -117,6 +117,17 @@ def parse_chordpro_content(content: str) -> dict:
     }
 
 
+def simplify_chord(chord: str) -> str:
+    """Simplify chord to root + quality only.
+
+    D7->D, Am7->Am, Cmaj7->C, Gsus4->G, G/B->G, Amin->Am
+    """
+    m = re.match(r'^([A-G][#b]?)(m(?!aj)(?:in)?|dim|aug)?', chord)
+    if not m:
+        return chord
+    return m.group(1) + (m.group(2) or '').replace('min', 'm')
+
+
 def extract_first_line(lyrics: str) -> str:
     """Get first non-empty line of lyrics."""
     for line in lyrics.split('\n'):
@@ -127,47 +138,54 @@ def extract_first_line(lyrics: str) -> str:
 
 
 def compute_group_id(title: str, artist: str, lyrics: str) -> str:
-    """Compute group ID for version grouping."""
-    import unicodedata
+    """Compute group ID for version grouping.
 
-    def normalize(text: str) -> str:
-        if not text:
-            return ''
-        # Normalize unicode
-        text = unicodedata.normalize('NFKD', text)
-        text = text.encode('ascii', 'ignore').decode('ascii')
-        text = text.lower()
-        # Remove common suffixes
-        text = re.sub(r'\s*\([^)]*\)\s*$', '', text)  # (Live), etc.
-        text = re.sub(r'[^a-z0-9]', '', text)
-        return text
+    Title-only base hash (artist excluded — same song, different attributions
+    should group together). Lyrics hash distinguishes genuinely different songs
+    that share a title.
+    """
+    import unicodedata
 
     def normalize_title(text: str) -> str:
         """Normalize title, removing articles for better grouping."""
         if not text:
             return ''
-        import unicodedata
-        # Normalize unicode first
         text = unicodedata.normalize('NFKD', text)
         text = text.encode('ascii', 'ignore').decode('ascii')
         text = text.lower()
         # Remove parenthetical suffixes like (Live), (C), (D)
         text = re.sub(r'\s*\([^)]*\)\s*$', '', text)
-        # Remove common articles that vary in tune titles (before stripping spaces)
-        # "Angeline the Baker" vs "Angeline Baker"
-        # "The Girl I Left Behind Me" vs "Girl I Left Behind Me"
+        # Remove common articles
         text = re.sub(r'\bthe\b', '', text)
         text = re.sub(r'\ba\b', '', text)
         text = re.sub(r'\ban\b', '', text)
-        # Now strip non-alphanumeric
         text = re.sub(r'[^a-z0-9]', '', text)
         return text
 
-    base = normalize_title(title) + '_' + normalize(artist or '')
+    def normalize_lyrics(text: str) -> str:
+        """Aggressively normalize lyrics for grouping comparison."""
+        if not text:
+            return ''
+        text = unicodedata.normalize('NFKD', text)
+        text = text.encode('ascii', 'ignore').decode('ascii')
+        text = text.lower()
+        # Normalize contractions
+        text = text.replace("'", '').replace('\u2019', '')
+        # Strip filler words common in folk/country variations
+        for filler in ['well ', 'oh ', 'now ', 'hey ', 'say ']:
+            text = text.replace(filler, '')
+        # Normalize "gonna" -> "going to", "ain't" -> "not"
+        text = text.replace('gonna', 'going to')
+        text = text.replace('aint', 'not')
+        text = re.sub(r'[^a-z0-9]', '', text)
+        return text
+
+    # Title-only base hash (no artist)
+    base = normalize_title(title)
     base_hash = hashlib.md5(base.encode()).hexdigest()[:12]
 
     # Lyrics hash to distinguish different songs with same title
-    lyrics_norm = normalize(lyrics[:200] if lyrics else '')
+    lyrics_norm = normalize_lyrics(lyrics[:200] if lyrics else '')
     lyrics_hash = hashlib.md5(lyrics_norm.encode()).hexdigest()[:8]
 
     return f"{base_hash}_{lyrics_hash}"
@@ -370,6 +388,20 @@ def fuzzy_group_songs(songs: list) -> list:
         """Calculate similarity ratio between two strings."""
         return SequenceMatcher(None, a, b).ratio()
 
+    def word_overlap(a: str, b: str) -> float:
+        """Calculate word-level Jaccard similarity (order-independent).
+
+        Catches cases where lyrics are the same words in different order
+        (e.g., verse-first vs chorus-first arrangements).
+        """
+        words_a = set(a.split())
+        words_b = set(b.split())
+        if not words_a or not words_b:
+            return 0.0
+        intersection = words_a & words_b
+        union = words_a | words_b
+        return len(intersection) / len(union)
+
     def normalize_for_fuzzy(text: str) -> str:
         """Normalize title for fuzzy comparison."""
         if not text:
@@ -427,18 +459,78 @@ def fuzzy_group_songs(songs: list) -> list:
             lyrics = song.get('lyrics', '') or song.get('first_line', '')
             group_lyrics[gid] = normalize_lyrics(lyrics)
 
+    # Build group_id -> simplified chord set (for supplementary matching)
+    group_chords = {}
+    for song in songs:
+        gid = song.get('group_id', '')
+        if gid not in group_chords:
+            chords = song.get('nashville', [])
+            group_chords[gid] = set(chords) if chords else set()
+
+    merge_map = {}  # old_group_id -> new_group_id
+    TITLE_SIMILARITY_THRESHOLD = 0.85  # 85% title similarity required
+    LYRICS_SIMILARITY_THRESHOLD = 0.70  # 70% lyrics similarity also required
+    CHORD_OVERLAP_THRESHOLD = 0.80     # 80% chord overlap
+    LYRICS_WITH_CHORDS_THRESHOLD = 0.50  # Lower lyrics threshold when chords match
+
+    def should_merge_groups(g1, g2, title_sim):
+        """Check if two groups should be merged based on lyrics and chords."""
+        lyrics1 = group_lyrics.get(g1, '')
+        lyrics2 = group_lyrics.get(g2, '')
+
+        # If both have lyrics, compare them
+        if lyrics1 and lyrics2:
+            # Use max of sequential and word-overlap similarity.
+            # Word overlap catches rearranged sections (verse-first vs chorus-first).
+            lyrics_sim = max(similarity(lyrics1, lyrics2), word_overlap(lyrics1, lyrics2))
+            lyrics_threshold = LYRICS_SIMILARITY_THRESHOLD
+
+            # If title similarity is high, use chord overlap to lower threshold
+            if title_sim >= TITLE_SIMILARITY_THRESHOLD:
+                chords1 = group_chords.get(g1, set())
+                chords2 = group_chords.get(g2, set())
+                if chords1 and chords2:
+                    union = chords1 | chords2
+                    intersection = chords1 & chords2
+                    chord_overlap = len(intersection) / len(union) if union else 0
+                    if chord_overlap >= CHORD_OVERLAP_THRESHOLD:
+                        lyrics_threshold = LYRICS_WITH_CHORDS_THRESHOLD
+
+            return lyrics_sim >= lyrics_threshold
+        # If one or both lack lyrics, allow merge for high title similarity
+        elif title_sim >= 0.95:
+            return True
+        return False
+
+    # ── Pre-pass: same normalized title, different group_ids ──
+    # This catches cases like "Roll In My Sweet Baby's Arms" where both
+    # versions have the exact same normalized title but different group_ids
+    # (due to lyrics hash differences from filler words, contractions, etc.)
+    same_title_merges = 0
+    for norm_title, group_ids in title_to_groups.items():
+        if len(group_ids) < 2:
+            continue
+        gid_list = list(group_ids)
+        # Pick canonical (most songs)
+        canonical = max(gid_list, key=lambda g: len(by_group.get(g, [])))
+        for gid in gid_list:
+            if gid == canonical or gid in merge_map:
+                continue
+            if should_merge_groups(gid, canonical, 1.0):
+                merge_map[gid] = canonical
+                same_title_merges += 1
+
+    if same_title_merges:
+        print(f"Same-title pre-pass: merged {same_title_merges} groups")
+
+    # ── Fuzzy pass: similar (but not identical) titles ──
     # Group titles by their first 3 characters (prefix buckets)
-    # This avoids O(n²) by only comparing within buckets
     prefix_buckets = {}
     for title in title_to_groups.keys():
         prefix = title[:3] if len(title) >= 3 else title
         if prefix not in prefix_buckets:
             prefix_buckets[prefix] = []
         prefix_buckets[prefix].append(title)
-
-    merge_map = {}  # old_group_id -> new_group_id
-    TITLE_SIMILARITY_THRESHOLD = 0.85  # 85% title similarity required
-    LYRICS_SIMILARITY_THRESHOLD = 0.70  # 70% lyrics similarity also required
 
     # Only compare titles within the same prefix bucket
     for prefix, bucket_titles in prefix_buckets.items():
@@ -456,32 +548,20 @@ def fuzzy_group_songs(songs: list) -> list:
                 if title_sim < TITLE_SIMILARITY_THRESHOLD:
                     continue
 
-                # Title is similar enough - now check lyrics
+                # Title is similar enough - now check lyrics/chords
                 groups1 = title_to_groups[title1]
                 groups2 = title_to_groups[title2]
 
-                # Get representative lyrics for each group
-                # Check if ANY pair of groups have similar enough lyrics
-                should_merge = False
+                should_merge_pair = False
                 for g1 in groups1:
-                    lyrics1 = group_lyrics.get(g1, '')
                     for g2 in groups2:
-                        lyrics2 = group_lyrics.get(g2, '')
-
-                        # If both have lyrics, require they're similar
-                        if lyrics1 and lyrics2:
-                            lyrics_sim = similarity(lyrics1, lyrics2)
-                            if lyrics_sim >= LYRICS_SIMILARITY_THRESHOLD:
-                                should_merge = True
-                                break
-                        # If one or both lack lyrics, allow merge for high title similarity
-                        elif title_sim >= 0.95:
-                            should_merge = True
+                        if should_merge_groups(g1, g2, title_sim):
+                            should_merge_pair = True
                             break
-                    if should_merge:
+                    if should_merge_pair:
                         break
 
-                if should_merge:
+                if should_merge_pair:
                     # Pick the canonical group_id (prefer the one with more songs)
                     all_groups = groups1 | groups2
                     canonical = max(all_groups, key=lambda g: len(by_group.get(g, [])))
