@@ -1027,13 +1027,21 @@ async function submitAsTrustedUser(data) {
     // Get current user ID for created_by
     const user = window.SupabaseAuth?.getUser?.();
 
+    // Use raw textarea content (preserves user edits exactly) but normalize
+    // ChordPro shorthand directives so the .pro file is always parseable
+    const normalizedContent = content
+        .replace(/^\{sov([:\s}])/gim, '{start_of_verse$1')
+        .replace(/^\{soc([:\s}])/gim, '{start_of_chorus$1')
+        .replace(/^\{eov([:\s}])/gim, '{end_of_verse$1')
+        .replace(/^\{eoc([:\s}])/gim, '{end_of_chorus$1');
+
     const pendingEntry = {
         id: slug,
         replaces_id: editMode ? editingSongId : null,
         title,
         artist: artist || null,
         composer: writer || null,
-        content: content,
+        content: normalizedContent,
         key: key || null,
         created_by: user?.id || null,
         mode: mode || null,
