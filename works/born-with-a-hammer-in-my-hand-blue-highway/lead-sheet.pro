@@ -6,7 +6,7 @@
 I was [G]born [D]with a [G]hammer in my hand
 It's the [G]kind of life I doubt you'd [C]understand
 Well, I'd [G]give anything just to hear that cold steel ring
-'Cause I was [G]born with a [D]hammer in my hand.
+'Cause I was [G]born with a [D]hammer in my [G]hand.
 {end_of_verse}
 
 {start_of_verse: Verse 2}
