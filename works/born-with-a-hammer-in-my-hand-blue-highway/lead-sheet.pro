@@ -13,7 +13,7 @@ Well, I'd [G]give anything just to hear that cold steel ring
 [G]Swingin' [D]steel's the only life I've [G]known.
 I have [G]never been afraid to be [C]alone.
 Hope my [G]mama understands I'll always be a working man,
-'Casue I was [G]born with a [D]hammer in my hand.
+'Casue I was [G]born with a [D]hammer in my [G]hand.
 {end_of_verse}
 
 {start_of_verse: Verse 3}
