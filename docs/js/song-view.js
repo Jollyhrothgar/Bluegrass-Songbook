@@ -532,7 +532,8 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         totalCounts[section.label] = (totalCounts[section.label] || 0) + 1;
     }
 
-    const seenSections = new Set();
+    // Track section content to distinguish true repeats from sections with same label but different lyrics
+    const seenSections = new Map(); // label → content fingerprint
     let sectionsHtml = '';
     let i = 0;
 
@@ -541,6 +542,7 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         const sectionKey = section.label;
         const isRepeatedSection = totalCounts[sectionKey] > 1;
         const shouldIndent = section.type === 'chorus' || isRepeatedSection;
+        const sectionContent = section.lines.map(l => l.trimEnd()).join('\n');
 
         // In 'first' mode, check if we've seen this chord pattern before
         let hideChords = false;
@@ -556,12 +558,14 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         }
 
         if (!seenSections.has(sectionKey)) {
-            seenSections.add(sectionKey);
+            seenSections.set(sectionKey, sectionContent);
             sectionsHtml += renderSection(section, isRepeatedSection, hideChords);
             i++;
-        } else if (compactMode) {
+        } else if (compactMode && sectionContent === seenSections.get(sectionKey)) {
+            // Only collapse if lyrics+chords are identical to the first instance
             let consecutiveCount = 0;
-            while (i < chordSections.length && chordSections[i].label === sectionKey) {
+            while (i < chordSections.length && chordSections[i].label === sectionKey
+                   && chordSections[i].lines.map(l => l.trimEnd()).join('\n') === seenSections.get(sectionKey)) {
                 consecutiveCount++;
                 i++;
             }

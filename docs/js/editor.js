@@ -1033,7 +1033,7 @@ async function submitAsTrustedUser(data) {
         title,
         artist: artist || null,
         composer: writer || null,
-        content: chordpro,
+        content: content,
         key: key || null,
         created_by: user?.id || null,
         mode: mode || null,
