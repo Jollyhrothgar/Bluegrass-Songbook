@@ -855,7 +855,6 @@ function createVersionCard(version) {
 
     // Click to open this version directly in song view
     card.addEventListener('click', () => {
-        if (isCurrent) return;
         const isTabOnly = version.tablature_parts?.length > 0 && !version.content;
         if (isTabOnly || version.status === 'placeholder') {
             openWork(version.id, { groupId: version.group_id });
