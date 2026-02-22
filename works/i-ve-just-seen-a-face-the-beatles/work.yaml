@@ -3,15 +3,12 @@ title: "I've Just Seen a Face"
 artist: "The Beatles"
 composers: []
 default_key: G
-status: placeholder
 tags: []
 parts:
-  - type: document
-    format: pdf
-    file: ive_just_seen_a_face.pdf
-    instrument: banjo
-    label: "Handwritten intro banjo tab"
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
     provenance:
-      source: user-submission
-      submitted_by: trusted-user
-      submitted_at: '2026-02-15'
+      source: trusted-user
+      imported_at: '2026-02-22'
