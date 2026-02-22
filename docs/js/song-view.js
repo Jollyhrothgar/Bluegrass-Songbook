@@ -1706,7 +1706,8 @@ export async function openSong(songId, options = {}) {
         });
     }
 
-    // Restore header buttons that work-view may have hidden for placeholders
+    // Restore header buttons and clear interceptor that work-view may have set for placeholders
+    window.__editInterceptor = null;
     const editBtnEl = document.getElementById('edit-song-btn');
     const exportWrapperEl = document.getElementById('export-btn')?.closest('.export-wrapper');
     if (editBtnEl) editBtnEl.classList.remove('hidden');
