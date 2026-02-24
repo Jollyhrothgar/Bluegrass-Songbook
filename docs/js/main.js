@@ -1286,7 +1286,7 @@ function getInitials(user) {
     return email.substring(0, 2).toUpperCase();
 }
 
-function updateAuthUI(user) {
+function updateAuthUI(user, event) {
     const userAvatarInitials = document.getElementById('user-avatar-initials');
     const accountAvatarEl = document.getElementById('account-avatar');
     const accountAvatarInitials = document.getElementById('account-avatar-initials');
@@ -1332,8 +1332,11 @@ function updateAuthUI(user) {
         userInfo?.classList.add('hidden');
         updateSyncUI('offline');
 
-        // Revert lists/favorites to localStorage-only (drop cloud-merged data)
-        handleListsSignOut();
+        // Only wipe list data on actual sign-out, not on pre-session events
+        // (REGISTERED/INITIAL fire with null user before session is determined)
+        if (event === 'SIGNED_OUT') {
+            handleListsSignOut();
+        }
 
         // Clear admin status
         isAdminUser = false;
@@ -3163,7 +3166,10 @@ function init() {
     if (typeof SupabaseAuth !== 'undefined') {
         SupabaseAuth.init();
         SupabaseAuth.onAuthChange((event, user) => {
-            updateAuthUI(user);
+            // Skip sign-out side effects for pre-session events (REGISTERED/INITIAL with null user)
+            // to avoid wiping localStorage lists before the session is determined.
+            // Only call handleListsSignOut on actual SIGNED_OUT events.
+            updateAuthUI(user, event);
             // Check for pending invite after sign-in
             if (event === 'SIGNED_IN' && user) {
                 checkPendingInvite();
