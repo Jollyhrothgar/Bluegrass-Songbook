@@ -31,6 +31,9 @@ const DELETED_NAMES_KEY = 'songbook-deleted-names';
 let deletedListIds = new Set();
 let deletedListNames = new Set();
 
+// Track in-flight cloud writes to prevent sync from dropping newly added songs
+const pendingCloudWrites = new Map(); // cloudId → Set of songIds being written
+
 function loadDeletedLists() {
     try {
         const savedIds = localStorage.getItem(DELETED_LISTS_KEY);
@@ -1185,7 +1188,17 @@ export async function deleteList(listId, skipUndo = false) {
 
     // Sync to cloud
     if (list.cloudId) {
-        await syncListToCloud(list, 'delete');
+        try {
+            await syncListToCloud(list, 'delete');
+        } catch (err) {
+            // Track failed cloud deletes for retry on next sync
+            console.error('Cloud delete failed, will retry:', err);
+            const pendingDeletes = JSON.parse(localStorage.getItem('songbook-pending-deletes') || '[]');
+            if (!pendingDeletes.includes(list.cloudId)) {
+                pendingDeletes.push(list.cloudId);
+                localStorage.setItem('songbook-pending-deletes', JSON.stringify(pendingDeletes));
+            }
+        }
     }
 
     return true;
@@ -1265,9 +1278,22 @@ export function addSongToList(listId, songId, skipUndo = false, metadata = null)
         saveLists();
         trackListAction('add_song', listId);
 
-        // Sync to cloud (include metadata)
+        // Sync to cloud (include metadata) with pending-write tracking
         if (list.cloudId && typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn()) {
-            SupabaseAuth.addToCloudList(list.cloudId, songId, metadata).catch(console.error);
+            const key = list.cloudId;
+            if (!pendingCloudWrites.has(key)) pendingCloudWrites.set(key, new Set());
+            pendingCloudWrites.get(key).add(songId);
+
+            SupabaseAuth.addToCloudList(list.cloudId, songId, metadata)
+                .then(() => {
+                    pendingCloudWrites.get(key)?.delete(songId);
+                    if (pendingCloudWrites.get(key)?.size === 0) pendingCloudWrites.delete(key);
+                })
+                .catch((err) => {
+                    console.error('Cloud add failed:', err);
+                    pendingCloudWrites.get(key)?.delete(songId);
+                    if (pendingCloudWrites.get(key)?.size === 0) pendingCloudWrites.delete(key);
+                });
         }
     }
 
@@ -1343,10 +1369,70 @@ export function reorderSongInList(listId, fromIndex, toIndex, skipUndo = false) 
     saveLists();
     trackListAction('reorder', listId);
 
-    // Note: Cloud sync for reorder would need a separate API
-    // For now, full list sync handles this on next login
+    // Sync reordered positions to cloud
+    if (list.cloudId && typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn()) {
+        SupabaseAuth.updateCloudListPositions(list.cloudId, list.songs).catch(console.error);
+    }
 
     return true;
+}
+
+/**
+ * Reorder a song within a list by song refs (immune to filtered-view index mismatch)
+ * @param {string} listId - The list ID
+ * @param {string} fromRef - The item ref being dragged
+ * @param {string} targetRef - The item ref being dropped on
+ * @param {boolean} insertBefore - True to insert before target, false for after
+ */
+export function reorderSongInListByRef(listId, fromRef, targetRef, insertBefore) {
+    const list = userLists.find(l => l.id === listId);
+    if (!list) return false;
+    const fromIndex = list.songs.indexOf(fromRef);
+    if (fromIndex === -1) return false;
+
+    // Record for undo before reordering
+    const { workId } = parseItemRef(fromRef);
+    const song = allSongs.find(s => s.id === workId);
+    const songTitle = song?.title || fromRef;
+
+    // Remove the dragged song
+    list.songs.splice(fromIndex, 1);
+
+    // Find target position (in the array AFTER removal)
+    let targetIndex = list.songs.indexOf(targetRef);
+    if (targetIndex === -1) {
+        // Target not found after removal — put item back and bail
+        list.songs.splice(fromIndex, 0, fromRef);
+        return false;
+    }
+
+    // Insert before or after target
+    if (!insertBefore) targetIndex += 1;
+    list.songs.splice(targetIndex, 0, fromRef);
+
+    recordAction(ActionType.REORDER_SONG, {
+        listId,
+        fromIndex,
+        toIndex: targetIndex
+    }, `Moved "${songTitle}" in ${list.name}`);
+
+    saveLists();
+    trackListAction('reorder', listId);
+
+    // Sync reordered positions to cloud
+    if (list.cloudId && typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn()) {
+        SupabaseAuth.updateCloudListPositions(list.cloudId, list.songs).catch(console.error);
+    }
+    return true;
+}
+
+/**
+ * Reorder a song within the Favorites list by refs
+ */
+export function reorderFavoriteItemByRef(fromRef, targetRef, insertBefore) {
+    const favList = getFavoritesList();
+    if (!favList) return false;
+    return reorderSongInListByRef(FAVORITES_LIST_ID, fromRef, targetRef, insertBefore);
 }
 
 /**
@@ -1806,6 +1892,19 @@ export async function performFullListsSync() {
     syncInProgress = true;
 
     try {
+        // Step 0: Retry any pending cloud deletes from previous failed attempts
+        const pendingDeletes = JSON.parse(localStorage.getItem('songbook-pending-deletes') || '[]');
+        if (pendingDeletes.length > 0) {
+            for (const cloudId of pendingDeletes) {
+                try {
+                    await SupabaseAuth.deleteCloudList(cloudId);
+                } catch (e) {
+                    console.error('Pending delete retry failed:', e);
+                }
+            }
+            localStorage.removeItem('songbook-pending-deletes');
+        }
+
         // Step 1: Migrate old cloud favorites from user_favorites table
         await migrateCloudFavorites();
 
@@ -1824,6 +1923,21 @@ export async function performFullListsSync() {
             processedLists = processedLists.filter(l =>
                 !isListDeleted(l.id, l.name) && !isListDeleted(l.cloudId, l.name)
             );
+        }
+
+        // Step 4.5: Re-inject any songs that were added locally while sync was in flight
+        if (pendingCloudWrites.size > 0) {
+            for (const list of processedLists) {
+                const cloudId = list.cloudId || list.id;
+                const pending = pendingCloudWrites.get(cloudId);
+                if (pending) {
+                    for (const songId of pending) {
+                        if (!list.songs.includes(songId)) {
+                            list.songs.push(songId);
+                        }
+                    }
+                }
+            }
         }
 
         // Update local lists with processed data

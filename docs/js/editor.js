@@ -1,6 +1,7 @@
 // Song editor for Bluegrass Songbook
 
 import {
+    allSongs,
     currentSong,
     editMode, setEditMode,
     editingSongId, setEditingSongId,
@@ -985,6 +986,19 @@ export function initEditor(options) {
                     editorStatusEl.className = 'save-status error';
                 }
                 return;
+            }
+
+            // Duplicate detection for new submissions (not edits)
+            if (!editMode) {
+                const normalizeTitle = t => t.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+                const normalizedTitle = normalizeTitle(title);
+                const duplicates = allSongs.filter(s =>
+                    normalizeTitle(s.title || '') === normalizedTitle
+                );
+                if (duplicates.length > 0) {
+                    const dupNames = duplicates.map(d => `"${d.title}" by ${d.artist || 'Unknown'}`).join('\n');
+                    if (!confirm(`Possible duplicate found:\n\n${dupNames}\n\nSubmit anyway?`)) return;
+                }
             }
 
             // Check if user is a trusted user (can save instantly)

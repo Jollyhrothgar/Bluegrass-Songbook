@@ -5,8 +5,8 @@ import { highlightMatch, escapeHtml, isTabOnlyWork, isPlaceholder, hasMultiplePa
 import { openAddSongPicker } from './add-song-picker.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
-    isFavorite, reorderFavoriteItem, showFavorites,
-    isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, isViewingOwnList,
+    isFavorite, reorderFavoriteItem, reorderFavoriteItemByRef, showFavorites,
+    isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, reorderSongInListByRef, isViewingOwnList,
     removeSongFromList, showListView, FAVORITES_LIST_ID, toggleFavorite,
     addSongToList, clearListView, getSongMetadata, openNotesSheet
 } from './lists.js';
@@ -31,6 +31,7 @@ const ANALYTICS_DEBOUNCE_MS = 1000;  // Wait 1s after typing stops
 // Drag and drop state for list reordering
 let draggedItem = null;
 let draggedIndex = null;
+let draggedRef = null;
 let currentDropTarget = null;
 let currentDropPosition = null;
 
@@ -1133,7 +1134,7 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
 
     // Drag handle and attributes
     const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
-    const draggableAttr = isDraggable ? `draggable="true" data-index="${index}"` : '';
+    const draggableAttr = isDraggable ? `draggable="true" data-index="${index}" data-item-ref="${itemRef}"` : '';
 
     // Buttons - use itemRef for list operations
     const removeBtn = canReorder
@@ -1417,6 +1418,7 @@ function setupResultEventListeners(resultsDiv) {
 
         draggedItem = item;
         draggedIndex = parseInt(item.dataset.index, 10);
+        draggedRef = item.dataset.itemRef || null;
         item.classList.add('dragging');
         e.dataTransfer.effectAllowed = 'move';
         e.dataTransfer.setData('text/plain', item.dataset.id);
@@ -1429,6 +1431,7 @@ function setupResultEventListeners(resultsDiv) {
         }
         draggedItem = null;
         draggedIndex = null;
+        draggedRef = null;
         clearDragClasses(resultsDiv);
     });
 
@@ -1487,32 +1490,48 @@ function setupResultEventListeners(resultsDiv) {
             return;
         }
 
-        const targetIndex = parseInt(currentDropTarget.dataset.index, 10);
+        const targetRef = currentDropTarget.dataset.itemRef || null;
         const wasAbove = currentDropPosition === 'above';
         clearDragClasses(resultsDiv);
 
-        // Calculate insertion index
-        let toIndex;
-        if (draggedIndex < targetIndex) {
-            toIndex = wasAbove ? targetIndex - 1 : targetIndex;
-        } else {
-            toIndex = wasAbove ? targetIndex : targetIndex + 1;
-        }
-        toIndex = Math.max(0, toIndex);
-
-        if (toIndex === draggedIndex) return;
-
         const currentListId = getViewingListId();
 
-        if (currentListId === 'favorites') {
-            if (reorderFavoriteItem(draggedIndex, toIndex)) {
-                showFavorites();
+        // Prefer ref-based reorder (correct when filtered); fall back to index-based
+        if (draggedRef && targetRef) {
+            if (currentListId === 'favorites') {
+                if (reorderFavoriteItemByRef(draggedRef, targetRef, wasAbove)) {
+                    showFavorites();
+                }
+            } else if (currentListId) {
+                if (reorderSongInListByRef(currentListId, draggedRef, targetRef, wasAbove)) {
+                    import('./lists.js').then(({ showListView }) => {
+                        showListView(currentListId);
+                    });
+                }
             }
-        } else if (currentListId) {
-            if (reorderSongInList(currentListId, draggedIndex, toIndex)) {
-                import('./lists.js').then(({ showListView }) => {
-                    showListView(currentListId);
-                });
+        } else {
+            // Fallback: index-based (legacy path)
+            const targetIndex = parseInt(currentDropTarget.dataset.index, 10);
+            let toIndex;
+            if (draggedIndex < targetIndex) {
+                toIndex = wasAbove ? targetIndex - 1 : targetIndex;
+            } else {
+                toIndex = wasAbove ? targetIndex : targetIndex + 1;
+            }
+            toIndex = Math.max(0, toIndex);
+
+            if (toIndex === draggedIndex) return;
+
+            if (currentListId === 'favorites') {
+                if (reorderFavoriteItem(draggedIndex, toIndex)) {
+                    showFavorites();
+                }
+            } else if (currentListId) {
+                if (reorderSongInList(currentListId, draggedIndex, toIndex)) {
+                    import('./lists.js').then(({ showListView }) => {
+                        showListView(currentListId);
+                    });
+                }
             }
         }
     });

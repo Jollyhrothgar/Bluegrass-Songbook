@@ -574,6 +574,25 @@ async function renameCloudList(listId, newName) {
     return { error };
 }
 
+// Update positions for all songs in a list (for reorder sync)
+async function updateCloudListPositions(listId, songIds) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    const upsertData = songIds.map((songId, i) => ({
+        list_id: listId,
+        song_id: songId,
+        position: i
+    }));
+
+    const { error } = await supabaseClient
+        .from('user_list_items')
+        .upsert(upsertData, { onConflict: 'list_id,song_id' });
+
+    return { error };
+}
+
 // Delete a list (tries by ID first, then by name as fallback)
 async function deleteCloudList(listId, listName = null) {
     if (!supabaseClient || !currentUser) {
@@ -981,7 +1000,8 @@ async function syncListsToCloud(localLists) {
     // Old favorites list names to clean up
     const oldFavoritesNames = ['❤️ Favorites', '❤️ favorites', '♥ Favorites'];
 
-    // Create a map of cloud lists by name for matching
+    // Create maps of cloud lists by ID and name for matching
+    const cloudById = {};
     const cloudByName = {};
     const listsToDelete = [];
     cloudLists.forEach(list => {
@@ -989,6 +1009,7 @@ async function syncListsToCloud(localLists) {
         if (oldFavoritesNames.includes(list.name)) {
             listsToDelete.push(list);
         }
+        cloudById[list.id] = list;
         cloudByName[list.name] = list;
     });
 
@@ -1017,11 +1038,14 @@ async function syncListsToCloud(localLists) {
             continue;
         }
 
-        const cloudMatch = cloudByName[localList.name];
+        // Match by cloudId first (stable across renames), then by name
+        const cloudMatch = (localList.cloudId && cloudById[localList.cloudId])
+            || cloudByName[localList.name];
 
         if (cloudMatch) {
-            // Merge songs (union)
-            const mergedSongs = [...new Set([...localList.songs, ...cloudMatch.songs])];
+            // Local order is source of truth; append cloud-only songs at end
+            const cloudOnlySongs = cloudMatch.songs.filter(s => !localList.songs.includes(s));
+            const mergedSongs = [...localList.songs, ...cloudOnlySongs];
 
             // Merge metadata (local takes precedence for conflicts, cloud fills gaps)
             const mergedMetadata = {
@@ -1036,6 +1060,9 @@ async function syncListsToCloud(localLists) {
                 await addToCloudList(cloudMatch.id, songId, metadata);
             }
 
+            // Sync positions to cloud to preserve local ordering
+            await updateCloudListPositions(cloudMatch.id, mergedSongs);
+
             mergedLists.push({
                 id: cloudMatch.id,
                 name: cloudMatch.name,
@@ -1043,7 +1070,8 @@ async function syncListsToCloud(localLists) {
                 songs: mergedSongs,
                 songMetadata: mergedMetadata
             });
-            delete cloudByName[localList.name];
+            delete cloudByName[cloudMatch.name];
+            delete cloudById[cloudMatch.id];
         } else if (localList.cloudId) {
             // List has a cloudId but doesn't exist in cloud anymore - it was deleted
             continue;
@@ -1426,6 +1454,7 @@ window.SupabaseAuth = {
     deleteCloudList,
     addToCloudList,
     removeFromCloudList,
+    updateCloudListPositions,
     updateListItemMetadata,
     syncListsToCloud,
     // Lists (following)
