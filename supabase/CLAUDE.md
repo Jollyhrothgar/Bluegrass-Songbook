@@ -8,14 +8,14 @@ Backend infrastructure for the Bluegrass Songbook, hosted on Supabase.
 
 Serverless functions that run on Supabase Edge (Deno runtime).
 
-| Function | Purpose | Trigger |
-|----------|---------|---------|
-| `create-song-issue` | Create GitHub issue for song submissions/corrections | POST from editor.js |
-| `create-flag-issue` | Create GitHub issue for song problem reports | POST from flags.js |
-| `create-song-request` | Create GitHub issue for song requests | POST from song-request.js |
-| `create-superuser-request` | Create GitHub issue for super-user access requests | POST from superuser-request.js |
-| `auto-commit-song` | Commit pending_songs to GitHub repo | Scheduled |
-| `cleanup-pending` | Remove stale pending songs | Scheduled |
+| Function | Purpose | Trigger | Source |
+|----------|---------|---------|--------|
+| `create-song-issue` | Create GitHub issue for song submissions/corrections | POST from editor.js | `functions/create-song-issue/index.ts` |
+| `create-flag-issue` | Create GitHub issue for song problem reports | POST from flags.js | `functions/create-flag-issue/index.ts` |
+| `create-song-request` | Create GitHub issue for song requests | POST from main.js | `functions/create-song-request/index.ts` |
+| `create-superuser-request` | Create GitHub issue for super-user access requests | POST from superuser-request.js | `functions/create-superuser-request/index.ts` |
+| `auto-commit-song` | Commit pending_songs to GitHub repo | Scheduled | `functions/auto-commit-song/index.ts` |
+| `cleanup-pending` | Remove stale pending songs | Scheduled | `functions/cleanup-pending/index.ts` |
 
 All functions:
 - Use GitHub API to create issues (no user GitHub auth required)

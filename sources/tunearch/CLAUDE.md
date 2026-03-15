@@ -30,7 +30,7 @@ uv run python sources/tunearch/src/batch_fetch.py --limit 10
 uv run python sources/tunearch/src/batch_fetch.py --search "bluegrass reel" --limit 20
 
 # After fetching, rebuild the index
-uv run python scripts/lib/build_index.py
+./scripts/bootstrap --quick
 ```
 
 ## Output Format

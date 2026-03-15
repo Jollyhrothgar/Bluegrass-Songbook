@@ -1,6 +1,6 @@
 # Bluegrass Songbook
 
-A searchable collection of 17,000+ bluegrass and country songs with chords, built for the bluegrass community.
+A searchable collection of 18,300+ bluegrass and country songs with chords, built for the bluegrass community.
 
 ## Quick Start
 
@@ -91,6 +91,9 @@ Bluegrass-Songbook/
 │   │   ├── search-core.js   # Search logic
 │   │   ├── song-view.js     # Song rendering
 │   │   ├── work-view.js     # Work display with parts/tabs
+│   │   ├── chord-explorer/  # Interactive chord progression builder
+│   │   ├── bounty-view.js   # Bounty/voting system
+│   │   ├── add-song-picker.js # Song selection interface
 │   │   └── renderers/       # Tablature renderers
 │   │       ├── tablature.js # Tab display
 │   │       └── tab-player.js # Interactive tab player
@@ -108,6 +111,8 @@ Bluegrass-Songbook/
 │   ├── banjo-hangout/       # Banjo tabs from Banjo Hangout (TEF→OTF)
 │   ├── bluegrass-lyrics/    # 764 songs from BluegrassLyrics.com (Feb 2026)
 │   ├── ultimate-guitar/     # Chord enrichment via UG Mobile API
+│   ├── web-chords/          # 325 songs from chord websites (raw, not yet parsed)
+│   ├── traditional-music-uk/ # Chord data from traditionalmusic.co.uk
 │   └── tef-uploads/         # User-uploaded TEF files for conversion
 │
 ├── scripts/                 # CLI tools
@@ -184,7 +189,11 @@ The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 | **GitHub project** | `.claude/skills/github-project/` | `SKILL.md` (milestones, issues, labels) |
 | **TEF/Tab debugging** | `.claude/skills/tab-debug/` | `SKILL.md` (TEF parsing issues) |
 | **Issue creation** | `.claude/skills/add-issue/` | `SKILL.md` (duplicate detection, labels) |
+| **Chord Explorer** | `docs/js/chord-explorer/` | `docs/js/chord-explorer/CLAUDE.md` |
 | **Backend (Supabase)** | `supabase/`, `docs/js/supabase-auth.js` | `supabase/CLAUDE.md` |
+| **Analytics** | `analytics/` | `analytics/CLAUDE.md` |
+| **E2E Tests** | `e2e/` | `e2e/CLAUDE.md` |
+| **Python Tests** | `tests/` | `tests/CLAUDE.md` |
 
 ## Development Workflows
 
@@ -281,9 +290,12 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 | Workflow | Trigger | Action |
 |----------|---------|--------|
-| `build.yml` | Push to main, PRs | Runs tests; deploys to GitHub Pages only if tests pass |
+| `build.yml` | Push to main, PRs | Runs tests, rebuilds search index, deploys to GitHub Pages only if tests pass |
 | `process-song-submission.yml` | Issue labeled `song-submission` + `approved` | Adds new song |
 | `process-song-correction.yml` | Issue labeled `song-correction` + `approved` | Updates existing song |
+| `process-tune-request.yml` | Issue labeled `tune-request` | Processes tune requests |
+| `auto-label-issues.yml` | New issues | Automatically labels issues |
+| `cleanup-pending.yml` | Scheduled | Cleans up stale pending songs |
 
 ## Chrome DevTools MCP
 
@@ -336,6 +348,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | Work with tablature/renderers | `docs/js/renderers/` + `docs/js/work-view.js` |
 | Build the OTF editor | `docs/js/otf-editor/DESIGN.md` |
 | Modify homepage collections | `docs/js/collections.js` |
+| Build chord progressions | `docs/js/chord-explorer/` + `docs/js/chord-explorer/CLAUDE.md` |
 | Understand works structure | `works/` + `scripts/lib/work_schema.py` |
 | Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |
 | Debug TEF/tablature parsing | `.claude/skills/tab-debug/SKILL.md` |
@@ -352,6 +365,5 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | See product vision | `ROADMAP.md` |
 | Run parser tests | `uv run pytest` |
 | Run frontend tests | `npm test` |
-| Run E2E tests | `npm run test:e2e` |
-| Debug in browser | Chrome DevTools MCP (note - the scripts/chrome can helpfully launch a logged in
-debug browser |
+| Run E2E tests | `npm run test:e2e` (see `e2e/CLAUDE.md`) |
+| Debug in browser | Chrome DevTools MCP (`./scripts/chrome` launches a debug browser with saved login) |
