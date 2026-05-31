@@ -41,6 +41,27 @@ done
 echo "=== Bluegrass Songbook Bootstrap ==="
 echo ""
 
+# Materialize secrets from 1Password (analytics dashboard credentials).
+# The template holds op:// references only; real values come from the
+# "Private" vault via the 1Password CLI. Non-fatal if op is unavailable —
+# the analytics dashboard is optional for core development.
+if [ -f analytics/.env.tpl ] && [ ! -f analytics/.env ]; then
+    if command -v op >/dev/null 2>&1; then
+        echo "Materializing analytics/.env from 1Password..."
+        if op inject -i analytics/.env.tpl -o analytics/.env 2>/dev/null; then
+            chmod 600 analytics/.env
+            echo "  analytics/.env created."
+        else
+            rm -f analytics/.env  # remove any partial/empty output
+            echo "  ⚠ Could not read secrets (run 'op signin'); skipping analytics/.env."
+        fi
+    else
+        echo "  ⚠ 1Password CLI (op) not found; skipping analytics/.env."
+        echo "    Install it, or copy analytics/.env.example to analytics/.env manually."
+    fi
+    echo ""
+fi
+
 # Install dependencies (unless --quick)
 if [ "$QUICK" = false ]; then
     STAGE_START=$SECONDS
