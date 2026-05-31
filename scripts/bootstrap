@@ -41,24 +41,31 @@ done
 echo "=== Bluegrass Songbook Bootstrap ==="
 echo ""
 
-# Materialize secrets from 1Password (analytics dashboard credentials).
-# The template holds op:// references only; real values come from the
-# "Private" vault via the 1Password CLI. Non-fatal if op is unavailable —
-# the analytics dashboard is optional for core development.
-if [ -f analytics/.env.tpl ] && [ ! -f analytics/.env ]; then
-    if command -v op >/dev/null 2>&1; then
-        echo "Materializing analytics/.env from 1Password..."
-        if op inject -i analytics/.env.tpl -o analytics/.env 2>/dev/null; then
-            chmod 600 analytics/.env
-            echo "  analytics/.env created."
-        else
-            rm -f analytics/.env  # remove any partial/empty output
-            echo "  ⚠ Could not read secrets (run 'op signin'); skipping analytics/.env."
-        fi
-    else
-        echo "  ⚠ 1Password CLI (op) not found; skipping analytics/.env."
-        echo "    Install it, or copy analytics/.env.example to analytics/.env manually."
+# Materialize secrets from 1Password. Templates (*.env.tpl) hold op://
+# references only; real values come from the "API Keys" vault via the
+# 1Password CLI. Non-fatal if op is unavailable — secrets are only needed
+# for the analytics dashboard and a few local maintenance scripts.
+materialize_secret() {
+    local tpl="$1" out="$2"
+    [ -f "$tpl" ] || return 0
+    [ -f "$out" ] && return 0  # never clobber an existing .env
+    if ! command -v op >/dev/null 2>&1; then
+        echo "  ⚠ 1Password CLI (op) not found; skipped $out (see $tpl)."
+        return 0
     fi
+    if op inject -i "$tpl" -o "$out" 2>/dev/null; then
+        chmod 600 "$out"
+        echo "  $out created from 1Password."
+    else
+        rm -f "$out"  # remove any partial/empty output
+        echo "  ⚠ Could not read secrets (run 'op signin'); skipped $out."
+    fi
+}
+
+if [ -f .env.tpl ] || [ -f analytics/.env.tpl ]; then
+    echo "Provisioning secrets from 1Password..."
+    materialize_secret ".env.tpl" ".env"
+    materialize_secret "analytics/.env.tpl" "analytics/.env"
     echo ""
 fi
 
