@@ -1,0 +1,638 @@
+// Unit tests for OTF Editor Keyboard Handler
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
+
+import { KeyboardHandler } from '../../otf-editor/keyboard.js';
+import { EditorState, EditorMode, DURATIONS } from '../../otf-editor/state.js';
+import { EditorCursor } from '../../otf-editor/cursor.js';
+
+// Helper to create keyboard events
+function createKeyEvent(key, options = {}) {
+    return new KeyboardEvent('keydown', {
+        key,
+        ctrlKey: options.ctrl || false,
+        metaKey: options.meta || false,
+        shiftKey: options.shift || false,
+        bubbles: true,
+        cancelable: true,
+    });
+}
+
+describe('KeyboardHandler', () => {
+    let state;
+    let cursor;
+    let keyboard;
+    let mockContainer;
+    let mockCallbacks;
+
+    beforeEach(() => {
+        state = new EditorState();
+        state.getOrCreateMeasure(4); // Create a few measures to work with
+
+        cursor = new EditorCursor(state);
+        mockContainer = document.createElement('div');
+        document.body.appendChild(mockContainer);
+        cursor.init(mockContainer);
+        cursor.setLayoutInfo({
+            leftMargin: 40,
+            topMargin: 30,
+            stringSpacing: 16,
+            measureWidth: 200,
+            measuresPerRow: 2,
+            ticksPerMeasure: 1920,
+            rowHeight: 120,
+            noteAreaStart: 10,
+            noteAreaWidth: 180,
+            trackInfoOffset: 0,
+        });
+
+        mockCallbacks = {
+            onSave: vi.fn(),
+            onShowHelp: vi.fn(),
+        };
+
+        keyboard = new KeyboardHandler(state, cursor, mockCallbacks);
+    });
+
+    afterEach(() => {
+        keyboard.detach();
+        cursor.destroy();
+        if (mockContainer.parentNode) {
+            mockContainer.parentNode.removeChild(mockContainer);
+        }
+        vi.restoreAllMocks();
+    });
+
+    describe('constructor', () => {
+        it('creates with references to state and cursor', () => {
+            expect(keyboard.state).toBe(state);
+            expect(keyboard.cursor).toBe(cursor);
+        });
+
+        it('starts with no pending key', () => {
+            expect(keyboard.pendingKey).toBeNull();
+        });
+
+        it('starts with empty fret buffer', () => {
+            expect(keyboard.fretBuffer).toBe('');
+        });
+    });
+
+    describe('attach/detach', () => {
+        it('attaches keydown listener to element', () => {
+            const element = document.createElement('div');
+            const addEventSpy = vi.spyOn(element, 'addEventListener');
+
+            keyboard.attach(element);
+            expect(addEventSpy).toHaveBeenCalledWith('keydown', expect.any(Function));
+        });
+
+        it('detaches keydown listener from element', () => {
+            const element = document.createElement('div');
+            keyboard.attach(element);
+
+            const removeEventSpy = vi.spyOn(element, 'removeEventListener');
+            keyboard.detach();
+            expect(removeEventSpy).toHaveBeenCalled();
+        });
+    });
+
+    describe('global shortcuts', () => {
+        it('Escape returns to normal mode from visual', () => {
+            state.setMode(EditorMode.VISUAL);
+            keyboard.handleKeyDown(createKeyEvent('Escape'));
+            expect(state.mode).toBe(EditorMode.NORMAL);
+        });
+
+        it('Escape returns to normal mode from annotation', () => {
+            state.setMode(EditorMode.ANNOTATION);
+            keyboard.handleKeyDown(createKeyEvent('Escape'));
+            expect(state.mode).toBe(EditorMode.NORMAL);
+        });
+
+        it('Ctrl+S calls onSave', () => {
+            keyboard.handleKeyDown(createKeyEvent('s', { ctrl: true }));
+            expect(mockCallbacks.onSave).toHaveBeenCalled();
+        });
+
+        it('Cmd+S calls onSave on Mac', () => {
+            keyboard.handleKeyDown(createKeyEvent('s', { meta: true }));
+            expect(mockCallbacks.onSave).toHaveBeenCalled();
+        });
+
+        it('Ctrl+Z calls undo', () => {
+            state.insertNote(5);
+            expect(state.getMeasure(1).events.length).toBe(1);
+
+            keyboard.handleKeyDown(createKeyEvent('z', { ctrl: true }));
+            expect(state.getMeasure(1).events.length).toBe(0);
+        });
+
+        it('Ctrl+Shift+Z calls redo', () => {
+            state.insertNote(5);
+            state.undo();
+            expect(state.getMeasure(1).events.length).toBe(0);
+
+            keyboard.handleKeyDown(createKeyEvent('z', { ctrl: true, shift: true }));
+            expect(state.getMeasure(1).events.length).toBe(1);
+        });
+
+        it('Ctrl+Y calls redo', () => {
+            state.insertNote(5);
+            state.undo();
+            keyboard.handleKeyDown(createKeyEvent('y', { ctrl: true }));
+            expect(state.getMeasure(1).events.length).toBe(1);
+        });
+
+        it('? shows help', () => {
+            keyboard.handleKeyDown(createKeyEvent('?'));
+            expect(mockCallbacks.onShowHelp).toHaveBeenCalled();
+        });
+    });
+
+    describe('normal mode navigation', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.NORMAL);
+        });
+
+        it('h moves cursor left', () => {
+            state.cursor.tick = 240;
+            keyboard.handleKeyDown(createKeyEvent('h'));
+            expect(state.cursor.tick).toBe(0);
+        });
+
+        it('l moves cursor right', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('l'));
+            expect(state.cursor.tick).toBe(240);
+        });
+
+        it('j moves to higher string', () => {
+            state.cursor.string = 3;
+            keyboard.handleKeyDown(createKeyEvent('j'));
+            expect(state.cursor.string).toBe(4);
+        });
+
+        it('k moves to lower string', () => {
+            state.cursor.string = 3;
+            keyboard.handleKeyDown(createKeyEvent('k'));
+            expect(state.cursor.string).toBe(2);
+        });
+
+        it('ArrowLeft works like h', () => {
+            state.cursor.tick = 240;
+            keyboard.handleKeyDown(createKeyEvent('ArrowLeft'));
+            expect(state.cursor.tick).toBe(0);
+        });
+
+        it('ArrowRight works like l', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('ArrowRight'));
+            expect(state.cursor.tick).toBe(240);
+        });
+
+        it('ArrowDown works like j', () => {
+            state.cursor.string = 3;
+            keyboard.handleKeyDown(createKeyEvent('ArrowDown'));
+            expect(state.cursor.string).toBe(4);
+        });
+
+        it('ArrowUp works like k', () => {
+            state.cursor.string = 3;
+            keyboard.handleKeyDown(createKeyEvent('ArrowUp'));
+            expect(state.cursor.string).toBe(2);
+        });
+
+        it('w moves to next beat', () => {
+            state.cursor.tick = 100;
+            keyboard.handleKeyDown(createKeyEvent('w'));
+            expect(state.cursor.tick).toBe(480);
+        });
+
+        it('b moves to previous beat', () => {
+            state.cursor.tick = 600;
+            keyboard.handleKeyDown(createKeyEvent('b'));
+            expect(state.cursor.tick).toBe(480);
+        });
+
+        it('space advances cursor by duration', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent(' '));
+            expect(state.cursor.tick).toBe(240);
+        });
+
+        it('Enter moves to next measure', () => {
+            state.cursor.measure = 1;
+            keyboard.handleKeyDown(createKeyEvent('Enter'));
+            expect(state.cursor.measure).toBe(2);
+            expect(state.cursor.tick).toBe(0);
+        });
+
+        it('gg moves to document start', () => {
+            state.cursor.measure = 3;
+            state.cursor.tick = 480;
+            keyboard.handleKeyDown(createKeyEvent('g'));
+            keyboard.handleKeyDown(createKeyEvent('g'));
+            expect(state.cursor.measure).toBe(1);
+            expect(state.cursor.tick).toBe(0);
+        });
+
+        it('G moves to document end', () => {
+            state.cursor.measure = 1;
+            keyboard.handleKeyDown(createKeyEvent('G'));
+            expect(state.cursor.measure).toBe(4);
+        });
+    });
+
+    describe('normal mode note entry', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.NORMAL);
+            vi.useFakeTimers();
+        });
+
+        afterEach(() => {
+            vi.useRealTimers();
+        });
+
+        it('0-9 enters fret numbers', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            vi.advanceTimersByTime(350);
+            // Cursor auto-advanced, so check note at original position
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(5);
+        });
+
+        it('auto-advances cursor after note entry', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            vi.advanceTimersByTime(350);
+            expect(state.cursor.tick).toBe(240); // Advanced by duration
+        });
+
+        it('f enters high fret mode for frets 10+', () => {
+            keyboard.handleKeyDown(createKeyEvent('f'));
+            expect(keyboard.highFretMode).toBe(true);
+        });
+
+        it('f12 enters fret 12', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('f'));
+            keyboard.handleKeyDown(createKeyEvent('1'));
+            keyboard.handleKeyDown(createKeyEvent('2'));
+            // Cursor auto-advanced, check original position
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(12);
+            expect(keyboard.highFretMode).toBe(false);
+        });
+
+        it('Backspace deletes previous note and moves back', () => {
+            state.cursor.tick = 0;
+            // Insert a note first
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            vi.advanceTimersByTime(350);
+            expect(state.cursor.tick).toBe(240);
+
+            keyboard.handleKeyDown(createKeyEvent('Backspace'));
+            expect(state.cursor.tick).toBe(0);
+        });
+    });
+
+    describe('normal mode duration shortcuts', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.NORMAL);
+        });
+
+        it('q sets quarter note duration', () => {
+            keyboard.handleKeyDown(createKeyEvent('q'));
+            expect(state.currentDuration).toBe(DURATIONS.quarter);
+        });
+
+        it('e sets eighth note duration', () => {
+            keyboard.handleKeyDown(createKeyEvent('e'));
+            expect(state.currentDuration).toBe(DURATIONS.eighth);
+        });
+
+        it('s sets sixteenth note duration', () => {
+            keyboard.handleKeyDown(createKeyEvent('s'));
+            expect(state.currentDuration).toBe(DURATIONS.sixteenth);
+        });
+
+        it('t sets thirty-second note duration', () => {
+            keyboard.handleKeyDown(createKeyEvent('t'));
+            expect(state.currentDuration).toBe(DURATIONS.thirtySecond);
+        });
+
+        it('W sets whole note duration', () => {
+            keyboard.handleKeyDown(createKeyEvent('W'));
+            expect(state.currentDuration).toBe(DURATIONS.whole);
+        });
+
+        it('H sets half note duration', () => {
+            keyboard.handleKeyDown(createKeyEvent('H'));
+            expect(state.currentDuration).toBe(DURATIONS.half);
+        });
+    });
+
+    describe('normal mode articulations', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.NORMAL);
+        });
+
+        it('Ctrl+h sets pending hammer-on articulation', () => {
+            keyboard.handleKeyDown(createKeyEvent('h', { ctrl: true }));
+            expect(state.pendingArticulation).toBe('h');
+        });
+
+        it('Ctrl+p sets pending pull-off articulation', () => {
+            keyboard.handleKeyDown(createKeyEvent('p', { ctrl: true }));
+            expect(state.pendingArticulation).toBe('p');
+        });
+
+        it('Ctrl+/ sets pending slide articulation', () => {
+            keyboard.handleKeyDown(createKeyEvent('/', { ctrl: true }));
+            expect(state.pendingArticulation).toBe('/');
+        });
+
+        it('Ctrl+t sets pending tie articulation', () => {
+            keyboard.handleKeyDown(createKeyEvent('t', { ctrl: true }));
+            expect(state.pendingArticulation).toBe('~');
+        });
+    });
+
+    describe('normal mode mode switching', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.NORMAL);
+        });
+
+        it('v enters visual mode', () => {
+            keyboard.handleKeyDown(createKeyEvent('v'));
+            expect(state.mode).toBe(EditorMode.VISUAL);
+        });
+
+        it('A enters annotation mode', () => {
+            keyboard.handleKeyDown(createKeyEvent('A'));
+            expect(state.mode).toBe(EditorMode.ANNOTATION);
+        });
+    });
+
+    describe('normal mode editing', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.NORMAL);
+            state.insertNote(5);
+        });
+
+        it('x deletes note at cursor', () => {
+            keyboard.handleKeyDown(createKeyEvent('x'));
+            expect(state.getNoteAtCursor()).toBeNull();
+        });
+
+        it('dd deletes entire tick', () => {
+            state.cursor.string = 1;
+            state.insertNote(0);
+            state.cursor.string = 3;
+
+            keyboard.handleKeyDown(createKeyEvent('d'));
+            keyboard.handleKeyDown(createKeyEvent('d'));
+            expect(state.getEventAtCursor()).toBeUndefined();
+        });
+
+        it('u undoes last action', () => {
+            keyboard.handleKeyDown(createKeyEvent('u'));
+            expect(state.getNoteAtCursor()).toBeNull();
+        });
+
+        it('y copies note at cursor', () => {
+            keyboard.handleKeyDown(createKeyEvent('y'));
+            expect(state.clipboard).not.toBeNull();
+        });
+
+        it('p pastes clipboard', () => {
+            state.copy();
+            state.cursor.tick = 240;
+            keyboard.handleKeyDown(createKeyEvent('p'));
+            expect(state.getEventAtCursor()).toBeDefined();
+        });
+
+        it('. repeats last action', () => {
+            state.cursor.tick = 240;
+            keyboard.handleKeyDown(createKeyEvent('.'));
+            expect(state.getNoteAtCursor().f).toBe(5);
+        });
+    });
+
+    describe('visual mode', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.VISUAL);
+        });
+
+        it('navigation extends selection', () => {
+            const startTick = state.cursor.tick;
+            keyboard.handleKeyDown(createKeyEvent('l'));
+            expect(state.selection.end.tick).not.toBe(startTick);
+        });
+
+        it('y copies selection and returns to normal', () => {
+            keyboard.handleKeyDown(createKeyEvent('l'));
+            keyboard.handleKeyDown(createKeyEvent('l'));
+            keyboard.handleKeyDown(createKeyEvent('y'));
+
+            expect(state.clipboard).not.toBeNull();
+            expect(state.mode).toBe(EditorMode.NORMAL);
+        });
+
+        it('d deletes selection and returns to normal', () => {
+            state.insertNote(5);
+            state.cursor.tick = 240;
+            state.insertNote(7);
+
+            state.setMode(EditorMode.VISUAL);
+            state.cursor.tick = 0;
+            state.selection.start.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('l'));
+            keyboard.handleKeyDown(createKeyEvent('l'));
+            keyboard.handleKeyDown(createKeyEvent('d'));
+
+            expect(state.mode).toBe(EditorMode.NORMAL);
+        });
+    });
+
+    describe('annotation mode', () => {
+        beforeEach(() => {
+            state.insertNote(5);
+            state.setMode(EditorMode.ANNOTATION);
+        });
+
+        it('h adds hammer-on articulation', () => {
+            keyboard.handleKeyDown(createKeyEvent('h'));
+            expect(state.getNoteAtCursor().tech).toBe('h');
+        });
+
+        it('p adds pull-off articulation', () => {
+            keyboard.handleKeyDown(createKeyEvent('p'));
+            expect(state.getNoteAtCursor().tech).toBe('p');
+        });
+
+        it('/ adds slide articulation', () => {
+            keyboard.handleKeyDown(createKeyEvent('/'));
+            expect(state.getNoteAtCursor().tech).toBe('/');
+        });
+
+        it('x removes articulation', () => {
+            state.addArticulation('h');
+            keyboard.handleKeyDown(createKeyEvent('x'));
+            expect(state.getNoteAtCursor().tech).toBeUndefined();
+        });
+
+        it('t adds thumb fingering', () => {
+            keyboard.handleKeyDown(createKeyEvent('t'));
+            expect(state.getNoteAtCursor().finger).toBe('T');
+        });
+
+        it('i adds index fingering', () => {
+            keyboard.handleKeyDown(createKeyEvent('i'));
+            expect(state.getNoteAtCursor().finger).toBe('I');
+        });
+
+        it('m adds middle fingering', () => {
+            keyboard.handleKeyDown(createKeyEvent('m'));
+            expect(state.getNoteAtCursor().finger).toBe('M');
+        });
+    });
+
+    describe('multi-key sequences', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.NORMAL);
+        });
+
+        it('g starts pending sequence', () => {
+            keyboard.handleKeyDown(createKeyEvent('g'));
+            expect(keyboard.pendingKey).toBe('g');
+        });
+
+        it('pending key times out', async () => {
+            vi.useFakeTimers();
+            keyboard.handleKeyDown(createKeyEvent('g'));
+            expect(keyboard.pendingKey).toBe('g');
+
+            vi.advanceTimersByTime(1100);
+            expect(keyboard.pendingKey).toBeNull();
+            vi.useRealTimers();
+        });
+
+        it('Escape clears pending key', () => {
+            keyboard.handleKeyDown(createKeyEvent('g'));
+            keyboard.handleKeyDown(createKeyEvent('Escape'));
+            expect(keyboard.pendingKey).toBeNull();
+        });
+
+        it('d starts pending for dd', () => {
+            keyboard.handleKeyDown(createKeyEvent('d'));
+            expect(keyboard.pendingKey).toBe('d');
+        });
+    });
+
+    describe('fret buffer in normal mode', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.NORMAL);
+            vi.useFakeTimers();
+        });
+
+        afterEach(() => {
+            vi.useRealTimers();
+        });
+
+        it('accumulates digits in fret buffer', () => {
+            keyboard.handleKeyDown(createKeyEvent('1'));
+            expect(keyboard.fretBuffer).toBe('1');
+
+            keyboard.handleKeyDown(createKeyEvent('2'));
+            expect(keyboard.fretBuffer).toBe('12');
+        });
+
+        it('commits buffer after timeout', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('7'));
+            expect(keyboard.fretBuffer).toBe('7');
+
+            vi.advanceTimersByTime(350);
+            expect(keyboard.fretBuffer).toBe('');
+            // Cursor auto-advanced, check note at original position
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(7);
+        });
+
+        it('space commits buffer immediately and advances', () => {
+            keyboard.handleKeyDown(createKeyEvent('7'));
+            vi.advanceTimersByTime(350); // commit the 7
+
+            // Cursor should have auto-advanced, go back to check note
+            const tick = state.cursor.tick;
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(7);
+        });
+
+        it('high fret mode allows entering frets 10+', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('f'));
+            keyboard.handleKeyDown(createKeyEvent('1'));
+            keyboard.handleKeyDown(createKeyEvent('5'));
+
+            // Cursor auto-advanced, check note at original position
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(15);
+            expect(keyboard.highFretMode).toBe(false);
+        });
+    });
+
+    describe('grid subdivision shortcuts', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.NORMAL);
+        });
+
+        it('Shift+Q sets grid to quarter', () => {
+            keyboard.handleKeyDown(createKeyEvent('Q', { shift: true }));
+            expect(state.gridSubdivision).toBe(DURATIONS.quarter);
+        });
+
+        it('Shift+E sets grid to eighth', () => {
+            keyboard.handleKeyDown(createKeyEvent('E', { shift: true }));
+            expect(state.gridSubdivision).toBe(DURATIONS.eighth);
+        });
+
+        it('Shift+S sets grid to sixteenth', () => {
+            keyboard.handleKeyDown(createKeyEvent('S', { shift: true }));
+            expect(state.gridSubdivision).toBe(DURATIONS.sixteenth);
+        });
+
+        it('Shift+T sets grid to thirty-second', () => {
+            keyboard.handleKeyDown(createKeyEvent('T', { shift: true }));
+            expect(state.gridSubdivision).toBe(DURATIONS.thirtySecond);
+        });
+
+        it('\\ toggles grid visibility', () => {
+            const initialState = state.showGrid;
+            keyboard.handleKeyDown(createKeyEvent('\\'));
+            expect(state.showGrid).toBe(!initialState);
+        });
+    });
+
+    describe('event prevention', () => {
+        it('prevents default on handled events', () => {
+            state.setMode(EditorMode.NORMAL);
+            const event = createKeyEvent('v'); // enters visual mode
+            const preventDefaultSpy = vi.spyOn(event, 'preventDefault');
+
+            keyboard.handleKeyDown(event);
+            expect(preventDefaultSpy).toHaveBeenCalled();
+        });
+
+        it('does not prevent default on unhandled events', () => {
+            state.setMode(EditorMode.NORMAL);
+            const event = createKeyEvent('Z'); // Not a valid normal mode command
+            const preventDefaultSpy = vi.spyOn(event, 'preventDefault');
+
+            keyboard.handleKeyDown(event);
+            expect(preventDefaultSpy).not.toHaveBeenCalled();
+        });
+    });
+});

@@ -452,7 +452,9 @@ export class TabRenderer {
                         // Store elements for highlighting
                         eventElements.push({ bg, text: fretText });
 
-                        if (note.tech && note.tech !== 'h' && note.tech !== 'p') {
+                        // Render technique symbols that aren't handled by renderSlurs
+                        // (h, p, / are rendered as slur arcs with labels in renderSlurs)
+                        if (note.tech && note.tech !== 'h' && note.tech !== 'p' && note.tech !== '/') {
                             const techText = this.createText(noteX, noteY - 10, note.tech, {
                                 fontSize: '9px',
                                 fill: '#888',
