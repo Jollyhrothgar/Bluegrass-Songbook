@@ -13,5 +13,8 @@
 
 SUPABASE_URL=op://API Keys/Bluegrass analytics/SUPABASE_URL
 SUPABASE_SERVICE_KEY=op://API Keys/Bluegrass analytics/SUPABASE_SERVICE_KEY
+# Same service-role key under the name the CI/maintenance scripts expect
+# (fetch_tag_overrides.py, export_genre_suggestions.py, fetch_deleted_songs.py).
+SUPABASE_SERVICE_ROLE_KEY=op://API Keys/Bluegrass analytics/SUPABASE_SERVICE_KEY
 STRUM_MACHINE_API_KEY=op://API Keys/Bluegrass Songbook/STRUM_MACHINE_API_KEY
 ANTHROPIC_API_KEY=op://API Keys/Bluegrass Songbook/ANTHROPIC_API_KEY
