@@ -24,21 +24,17 @@ from typing import Optional
 
 
 def load_env_file():
-    """Load environment variables from ~/.env if it exists."""
-    env_file = Path.home() / '.env'
-    if env_file.exists():
-        with open(env_file) as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith('#') and '=' in line:
-                    key, _, value = line.partition('=')
-                    key = key.strip()
-                    value = value.strip().strip('"').strip("'")
-                    if key and key not in os.environ:  # Don't override existing
-                        os.environ[key] = value
+    """Load secrets into os.environ from the repo-root .env (materialized from
+    1Password by scripts/bootstrap), then ~/.env as a fallback. Existing
+    environment variables always win (override=False)."""
+    from dotenv import load_dotenv
+
+    repo_root = Path(__file__).resolve().parents[2]
+    load_dotenv(repo_root / '.env', override=False)
+    load_dotenv(Path.home() / '.env', override=False)
 
 
-# Load ~/.env early
+# Load project secrets early
 load_env_file()
 
 try:

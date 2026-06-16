@@ -38,24 +38,29 @@ RATE_LIMIT_DELAY = 1.0 / RATE_LIMIT  # 0.1 seconds between requests
 CACHE_FILE = Path(__file__).parent.parent.parent / "docs" / "data" / "strum_machine_cache.json"
 
 
+def _load_project_env() -> None:
+    """Load secrets into os.environ from the repo-root .env (materialized from
+    1Password by scripts/bootstrap), then ~/.env as a fallback. Existing
+    environment variables always win (override=False)."""
+    from dotenv import load_dotenv
+
+    repo_root = Path(__file__).resolve().parents[2]
+    load_dotenv(repo_root / ".env", override=False)
+    load_dotenv(Path.home() / ".env", override=False)
+
+
 def get_api_key() -> str:
-    """Get API key from environment."""
+    """Get API key from environment (repo .env / ~/.env / shell)."""
     key = os.environ.get("STRUM_MACHINE_API_KEY")
     if not key:
-        # Try loading from .env files
-        for env_file in [Path.home() / ".env", Path(".env"), Path("local.env")]:
-            if env_file.exists():
-                with open(env_file) as f:
-                    for line in f:
-                        if line.startswith("STRUM_MACHINE_API_KEY="):
-                            key = line.split("=", 1)[1].strip().strip('"\'')
-                            break
-            if key:
-                break
+        _load_project_env()
+        key = os.environ.get("STRUM_MACHINE_API_KEY")
 
     if not key:
         raise ValueError(
-            "STRUM_MACHINE_API_KEY not found. Set it in environment or ~/.env"
+            "STRUM_MACHINE_API_KEY not found. Run ./scripts/bootstrap to "
+            "provision it from 1Password, or set it in the environment / "
+            "repo .env / ~/.env"
         )
     return key
 
