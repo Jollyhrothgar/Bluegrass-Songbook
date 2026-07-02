@@ -250,11 +250,20 @@ def instrument_to_type(inst: TEFInstrument) -> str:
 def is_tied_note(event: TEFNoteEvent) -> bool:
     """Check if this note is tied to the previous note (same pitch, extends duration).
 
-    In V2 format, the high bit (0x80) on byte 3 (marker byte) indicates a tie.
+    V2 byte3 layout (oracle-derived): bits 0-4 duration code, bits 5-7
+    dynamic. Dynamics 0-5 are real volume levels (6 unused in the
+    corpus); dynamic 7 is the TIE sentinel. The old `byte3 & 0x80` rule
+    also caught dynamics 4 and 5 (0x80-0xBF) and silently dropped those
+    notes as phantom ties (21690 m4, 21999 m10, 22446, 23439 — their
+    oracle exports show plain notes, while every true XML tie in the
+    corpus is a dynamic-7 note, e.g. 21690 m4 0xe9, wheel_hoss 0xe3).
+
     Tied notes should not be re-articulated - they just extend the previous note's duration.
     """
     if event.raw_data and len(event.raw_data) >= 4:
         marker_byte = event.raw_data[3]
+        if len(event.raw_data) == 6:  # V2
+            return (marker_byte >> 5) & 0x07 == 7
         return bool(marker_byte & 0x80)
     return False
 
@@ -631,8 +640,8 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
         # V3-style 'K'-marker group heuristic, which only matched one
         # dynamic level by accident.
         if (tef.header.is_v2 and event.raw_data and len(event.raw_data) >= 4
-                and (event.raw_data[3] & 0x0f) % 3 == 2):
-            code = event.raw_data[3] & 0x0f
+                and (event.raw_data[3] & 0x1f) % 3 == 2):
+            code = event.raw_data[3] & 0x1f
             span = 2 * (1920 >> (code // 3))
             in_span = tick % span
             tick = tick - in_span + (in_span * 4) // 3
