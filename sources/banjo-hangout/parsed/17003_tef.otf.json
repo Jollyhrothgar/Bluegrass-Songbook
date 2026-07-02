@@ -14,14 +14,11 @@
       "id": "banjo",
       "instrument": "5-string-banjo",
       "tuning": [
-        "A4",
         "E4",
-        "B3",
-        "G3",
-        "D3",
-        "A2",
-        "E2",
-        "E2"
+        "D4",
+        "A3",
+        "E3",
+        "A4"
       ],
       "capo": 2,
       "role": "lead"

@@ -20,18 +20,6 @@
       ],
       "capo": 0,
       "role": "lead"
-    },
-    {
-      "id": "tenor-banjo-2",
-      "instrument": "tenor-banjo",
-      "tuning": [
-        "G4",
-        "D4",
-        "G3",
-        "C3"
-      ],
-      "capo": 3,
-      "role": "lead"
     }
   ],
   "notation": {

@@ -38,15 +38,13 @@
       "role": "rhythm"
     },
     {
-      "id": "guitar-2",
-      "instrument": "6-string-guitar",
+      "id": "bass",
+      "instrument": "upright-bass",
       "tuning": [
-        "E4",
-        "B3",
-        "G3",
-        "D3",
-        "A2",
-        "E2"
+        "G2",
+        "D2",
+        "A1",
+        "E1"
       ],
       "capo": 0,
       "role": "rhythm"
@@ -5805,7 +5803,7 @@
         ]
       }
     ],
-    "guitar-2": [
+    "bass": [
       {
         "measure": 2,
         "events": [

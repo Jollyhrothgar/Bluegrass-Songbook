@@ -22,19 +22,6 @@
       ],
       "capo": 0,
       "role": "lead"
-    },
-    {
-      "id": "banjo-2",
-      "instrument": "5-string-banjo",
-      "tuning": [
-        "D4",
-        "B3",
-        "G3",
-        "D3",
-        "G4"
-      ],
-      "capo": 0,
-      "role": "lead"
     }
   ],
   "notation": {

@@ -12,11 +12,14 @@ parsing and tab-entry fidelity. We built a spike to make that loop fast.
 ## Repo state (what's actually there)
 
 - Worktree: `~/workspace/bluegrassbook.com/feature-otf-editor` (branch `feature/otf-editor`).
-- **Git gotcha:** the worktree's git metadata is broken — `.git` points to a missing
-  `.bare/worktrees/feature-otf-editor`. Run git via `git --git-dir=../.bare …` from
-  inside the worktree. (Untracked new files this session: `spike/oracle_compare.mjs`,
-  `spike/oracle/*`, regenerated `sources/banjo-hangout/parsed/23398_tef.otf.json`,
-  possibly a Linux `.venv/` created by sandbox uv — safe to delete.)
+- **Git gotcha (corrected):** the worktree metadata is FINE on the Mac — `.git`
+  points to `/Users/mike/workspace/bluegrassbook.com/.bare/worktrees/feature-otf-editor`
+  (host-absolute), which simply doesn't resolve inside a sandbox mount. From a
+  sandbox, set `GIT_DIR=<mount>/.bare/worktrees/feature-otf-editor` and
+  `GIT_WORK_TREE=<mount>/feature-otf-editor`, and override the nbstripout clean
+  filter (`-c filter.nbstripout.clean=cat -c filter.nbstripout.required=false`)
+  whose command is also a host-absolute path. Do NOT use `--git-dir=../.bare`
+  alone — that compares against main's index.
 - **Render:** live via custom SVG `TabRenderer` (`docs/js/work-view.js`). Works today.
 - **Playback:** custom `TabPlayer` (Web Audio oscillators) — functional, low quality.
 - **Editor:** `docs/js/otf-editor/` — 314 passing unit tests + Playwright e2e; wired
@@ -206,11 +209,67 @@ export of that exact file at 100%. Everything else is *unverified*.
 - Oracle exports so far: 23398 ✓ (101/101 + 5/5 techs), 27493 (banjo-only
   XML + full MIDI), wheel_hoss-2430.xml, Welcome to New York (XML+MIDI).
 
+## Fourth wave (2026-07-01, next session) — structural instrument records LANDED
+
+**Next-step #1 is DONE, test-backed, oracle-verified.** Name-pattern scanning
+is now only a fallback; track records are parsed structurally.
+
+### Format knowledge (validated against the full corpus + TuxGuitar source)
+- **V2 (sequential/ASCII header): 50-byte track records near EOF**
+  (TuxGuitar `TEInputStream.readTracks()`): +0 u16 numStrings, +2 u16
+  firstStringIndex (cumulative), +8 u8 GM program, +12 u8 capo, +20
+  tuning[12] (string 1 first, pitch = 96 − byte; bytes past numStrings are
+  **stale garbage**), +32 name[16] NUL-terminated. Located by backward scan
+  validated by cumulative indices + header byte 240 (total strings) / 241
+  (tracks − 1). Oldest sub-variant has 240/241 zeroed and NO records →
+  fallback.
+- **Packed variant (3 corpus files: wheel_hoss-2430, road_to_columbus-1826,
+  dueling_banjos-871):** header says 1 track; ONE record holds TWO
+  sub-tracks — +0 total strings, +4 u16 split (normal records have volume
+  0x63 here), +8/+10 the two GM programs, +12/+14 the two capos, tunings
+  concatenated. This was 11449's whole mystery.
+- **V3 (binary container, magic `debt`/`tbed` at 0x38): header dword 0x60**
+  points to `[u16 record_size=68][u16 count]` + 68-byte records (same field
+  offsets, name[36], program/capo u16).
+- **Tuning bytes store SOUNDING pitch including capo** — capo is metadata
+  only, never add it to pitch (verified: 11245 capo-2 banjo).
+- Unnamed tracks get GM-program-derived names (Banjo/Guitar/Bass/Fiddle…),
+  matching what TablEdit displays.
+
+### Code changes (uncommitted, like everything else)
+- `reader.py`: `parse_track_records_v2/_v3()`, packed-record split,
+  `TEFInstrument.midi_program`, wired into both note-decode paths and both
+  `_parse_v2/_v3` (pattern scan = fallback only).
+- `otf.py`: `instrument_to_otf_id()` now keyword-canonical (mandolin/
+  guitar/bass/banjo/fiddle/clicks/…) so "Upright Bass" → `bass`,
+  "Acoustic Guitar" → `guitar` (keeps corpus id vocabulary stable), and a
+  5-string "Clicks" click track no longer becomes `banjo-2`.
+- Tests: `tests/parser/test_tef_track_records.py` (6 tests) + fixture
+  `tests/parser/fixtures/wheel_hoss_2430_packed_tracks.tef`. Full parser
+  suite: 21 passed, 1 skipped.
+
+### Verification results
+- **23398 oracle: still 101/101 + 5/5 techs.** Roundtrip gate: 23398 and
+  11449 both 100% PASS.
+- **11449 (wheel_hoss) vs its oracle XML** (which turns out to contain BOTH
+  parts — the single-module packed layout apparently avoids the last-module-
+  only export bug): **bass 288/288 exact**; guitar 457/458, with all 14
+  xml-only notes being **grace notes** (known parser gap, same class as
+  chokes) and 1 stray parser note at m73 (the ts-change class, next step).
+- 41 downloads-backed regens vs git baseline: 39/41 musically identical.
+  The 2 diffs are real fixes: **19520** (pattern parser had invented 4
+  tracks / 19 strings vs header's 3 / 15 — notes were scattered across
+  wrong tracks; now 679 notes, 0 conflicts, banjo/bass/guitar) and
+  **23192** (missing 5th track "Clicks" now present). Also fixed: phantom
+  empty second tracks on 10658/10659/12124 gone; **10776** capo-2 now
+  detected (old output played 2 semitones flat).
+- **parsed/ regenerated for all 107 source-backed files** (41 downloads +
+  66 raw_tabs-triaged via `spike/verified_sources.json`; mount path is now
+  `/sessions/<session>/mnt/raw_tabs`). Remaining 223 untouched.
+
 ## Next steps (in order)
 
-1. **Structural V2 instrument-record parser** (kills the whole unnamed-track /
-   wrong-string-count bug class — biggest remaining win). Reference
-   TuxGuitar-tef source; validate every change against oracle exports.
+1. ~~Structural V2 instrument-record parser~~ **DONE (fourth wave).**
 2. **Time-signature changes mid-tune** (wheel_hoss m17-18) — parser currently
    assumes header ts for all measures.
 3. **Scripted oracle verification batch** over all source-backed files

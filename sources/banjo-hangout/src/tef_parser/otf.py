@@ -179,14 +179,38 @@ class OTFDocument:
 
 
 def instrument_to_otf_id(inst: TEFInstrument) -> str:
-    """Generate a clean ID from instrument name."""
+    """Generate a clean, canonical ID from instrument name.
+
+    Structural track records carry real names ("Upright Bass", "Acoustic
+    Guitar", "Clicks"), so map by keyword to the canonical short ids the
+    corpus and frontend already use (guitar, bass, mandolin, banjo, ...)
+    instead of hyphenating arbitrary names. A clearly named non-banjo
+    5-string track (e.g. a "Clicks" click track) must NOT become "banjo".
+    """
     name = inst.name.lower()
-    # 5-string instruments are banjos (handles "D Tuning", "G Tuning", etc.)
-    if inst.num_strings == 5:
-        return "banjo"
-    # 4-string tenor banjo
+    # 4-string tenor banjo (before the generic keyword scan)
     if inst.num_strings == 4 and ("banjo" in name or "tenor" in name or "cgdg" in name or "cgda" in name):
         return "tenor-banjo"
+    # Keyword -> canonical id ("bass" before "guitar": a "Bass Guitar" is a bass)
+    for keyword, otf_id in (
+        ("mandolin", "mandolin"),
+        ("ukulele", "ukulele"),
+        ("dobro", "dobro"),
+        ("resonator", "dobro"),
+        ("fiddle", "fiddle"),
+        ("violin", "fiddle"),
+        ("bass", "bass"),
+        ("guitar", "guitar"),
+        ("banjo", "banjo"),
+        ("piano", "piano"),
+        ("click", "clicks"),
+    ):
+        if keyword in name:
+            return otf_id
+    # Unnamed/tuning-only 5-string instruments are banjos
+    # (handles "D Tuning", "G Tuning", etc.)
+    if inst.num_strings == 5:
+        return "banjo"
     # Remove common suffixes
     for suffix in [" open g", " standard", " gdae", " gda"]:
         name = name.replace(suffix, "")

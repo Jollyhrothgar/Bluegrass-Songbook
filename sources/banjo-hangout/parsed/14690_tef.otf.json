@@ -11,21 +11,20 @@
   },
   "tracks": [
     {
-      "id": "banjo",
-      "instrument": "5-string-banjo",
+      "id": "tenor-banjo",
+      "instrument": "tenor-banjo",
       "tuning": [
+        "G4",
         "D4",
-        "B3",
         "G3",
-        "D3",
-        "G4"
+        "D3"
       ],
       "capo": 0,
       "role": "lead"
     }
   ],
   "notation": {
-    "banjo": [
+    "tenor-banjo": [
       {
         "measure": 1,
         "events": [

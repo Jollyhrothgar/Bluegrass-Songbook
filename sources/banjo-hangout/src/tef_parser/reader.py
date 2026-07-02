@@ -70,9 +70,33 @@ class TEFInstrument:
     name: str
     tuning_name: str
     num_strings: int
-    tuning_pitches: list[int]  # MIDI note numbers
+    tuning_pitches: list[int]  # MIDI note numbers (sounding pitch, capo included)
     offset: int
-    capo: int = 0  # Capo position (0 = no capo)
+    capo: int = 0  # Capo position (0 = no capo); metadata only — tuning is already sounding
+    midi_program: int = -1  # GM program from the track record (-1 = unknown)
+
+
+# GM programs seen in the corpus -> display name used when a track record has
+# no name (TablEdit itself falls back to the GM program name in its UI).
+_GM_PROGRAM_NAMES = {
+    105: "Banjo",
+    106: "Banjo",
+    24: "Guitar", 25: "Guitar", 26: "Guitar", 27: "Guitar",
+    28: "Guitar", 29: "Guitar", 30: "Guitar", 31: "Guitar",
+    32: "Bass", 33: "Bass", 34: "Bass", 35: "Bass",
+    36: "Bass", 37: "Bass", 38: "Bass", 39: "Bass",
+    40: "Fiddle", 41: "Fiddle",
+    42: "Cello",
+    0: "Piano", 1: "Piano", 2: "Piano", 3: "Piano",
+}
+
+
+def _program_to_name(program: int, num_strings: int) -> str:
+    """Fallback instrument name for unnamed track records."""
+    name = _GM_PROGRAM_NAMES.get(program)
+    if name:
+        return name
+    return f"{num_strings}-string"
 
 
 @dataclass
@@ -867,15 +891,15 @@ class TEFReader:
                 return events
 
         # Calculate total strings across all instruments for location decoding
-        total_strings = sum(inst.num_strings for inst in self.parse_instruments())
+        # (structural track records first, name-pattern fallback — must match
+        # the instrument list used for track assembly in _parse_v3)
+        instruments = self.parse_track_records_v3() or self.parse_instruments()
+        total_strings = sum(inst.num_strings for inst in instruments)
         if total_strings == 0:
             total_strings = 5  # Default to single 5-string instrument
 
         VALUE_PER_STRING = 8
         VALUE_PER_POSITION = 32 * total_strings
-
-        # Get track string counts for track identification
-        instruments = self.parse_instruments()
         track_string_counts = [inst.num_strings for inst in instruments]
         if not track_string_counts:
             track_string_counts = [5]  # Default banjo
@@ -1078,13 +1102,194 @@ class TEFReader:
 
         return events
 
+    # ------------------------------------------------------------------
+    # Structural track/instrument records
+    #
+    # Name-pattern scanning is a dead end: tracks can be unnamed (TablEdit
+    # then displays the GM program name), prose in comments matches patterns,
+    # and the pattern's default string count can be wrong. The binary track
+    # records are authoritative. Layouts verified against TuxGuitar's
+    # TEInputStream.readTracks() and byte-level inspection of the corpus
+    # (see tests/parser/test_tef_track_records.py).
+    # ------------------------------------------------------------------
+
+    _V2_TRACK_RECORD_SIZE = 50
+
+    def _v2_record_to_instruments(self, offset: int) -> list[TEFInstrument]:
+        """Decode one 50-byte V2 track record (possibly packed).
+
+        Layout (little-endian):
+          +0  u16 numStrings      +2  u16 firstStringIndex (cumulative)
+          +8  u8  MIDI program    +12 u8  capo
+          +20 tuning[12] — one byte per string, string 1 first,
+              MIDI pitch = 96 - byte; bytes past numStrings are stale garbage
+          +32 name[16] NUL-terminated (may be empty)
+
+        Packed variant (rare; e.g. wheel_hoss-2430, dueling_banjos-871):
+        one record holds TWO sub-tracks — +0 total strings, +4 u16 =
+        sub-track-1 string count, +8/+10 the two GM programs, +12/+14 the
+        two capos, tunings concatenated. Normal records have +4 = volume
+        (0x63) or 0xFFFF, never a plausible split. TablEdit displays packed
+        sub-tracks as separate unnamed tracks.
+        """
+        data = self.data
+        o = offset
+        num_strings = struct.unpack("<H", data[o:o + 2])[0]
+        split = struct.unpack("<H", data[o + 4:o + 6])[0]
+        program = data[o + 8]
+        program2 = data[o + 10]
+        capo = data[o + 12]
+        capo2 = data[o + 14]
+        tuning_bytes = list(data[o + 20:o + 20 + num_strings])
+        name = data[o + 32:o + 48].split(b"\x00")[0].decode(
+            "latin-1", errors="replace").strip()
+
+        is_packed = (
+            num_strings >= 9
+            and 3 <= split <= 8
+            and 3 <= num_strings - split <= 8
+            and program2 <= 127
+        )
+        if is_packed:
+            first = TEFInstrument(
+                name=name or _program_to_name(program, split),
+                tuning_name="",
+                num_strings=split,
+                tuning_pitches=[96 - b for b in tuning_bytes[:split]],
+                offset=o,
+                capo=capo if capo <= 12 else 0,
+                midi_program=program,
+            )
+            rest = num_strings - split
+            second = TEFInstrument(
+                name=_program_to_name(program2, rest),
+                tuning_name="",
+                num_strings=rest,
+                tuning_pitches=[96 - b for b in tuning_bytes[split:]],
+                offset=o,
+                capo=capo2 if capo2 <= 12 else 0,
+                midi_program=program2,
+            )
+            return [first, second]
+
+        return [TEFInstrument(
+            name=name or _program_to_name(program, num_strings),
+            tuning_name="",
+            num_strings=num_strings,
+            tuning_pitches=[96 - b for b in tuning_bytes],
+            offset=o,
+            capo=capo if capo <= 12 else 0,
+            midi_program=program,
+        )]
+
+    def parse_track_records_v2(self, header: TEFHeader) -> list[TEFInstrument]:
+        """Locate and parse the V2 50-byte track record chain.
+
+        Records usually sit exactly at EOF, but some files have trailing
+        sections (notes text, chord names) after them, so scan backward for
+        a chain validated by: numStrings 1..24, firstStringIndex equal to
+        the cumulative sum, program <= 127, tuning bytes in plausible range,
+        and chain total equal to header byte 240 (total strings).
+
+        Returns [] when no valid chain exists (oldest V2 sub-variant with
+        zeroed bytes 240/241 stores no track records at all).
+        """
+        data = self.data
+        n_tracks = header.v2_tracks
+        n_strings = header.v2_strings
+        rec = self._V2_TRACK_RECORD_SIZE
+        chain = rec * n_tracks
+        if n_strings <= 0 or n_tracks < 1 or len(data) < chain + 258:
+            return []
+
+        for start in range(len(data) - chain, 257, -1):
+            cum = 0
+            offsets = []
+            for i in range(n_tracks):
+                o = start + i * rec
+                ns, fs = struct.unpack("<HH", data[o:o + 4])
+                if not (1 <= ns <= 24) or fs != cum:
+                    break
+                if data[o + 8] > 127:
+                    break
+                tuning = data[o + 20:o + 20 + ns]
+                if not all(0x06 <= b <= 0x5A for b in tuning):
+                    break
+                name_first = data[o + 32]
+                if name_first != 0 and name_first < 0x20:
+                    break
+                cum += ns
+                offsets.append(o)
+            else:
+                if cum == n_strings:
+                    instruments = []
+                    for o in offsets:
+                        instruments.extend(self._v2_record_to_instruments(o))
+                    return instruments
+        return []
+
+    def parse_track_records_v3(self) -> list[TEFInstrument]:
+        """Parse V3 (binary container) track records via the header pointer.
+
+        Files with magic 'debt'/'tbed' at 0x38 store a pointer table of u32
+        file offsets in the header; dword 0x60 points to the track table:
+        [u16 record_size == 68][u16 count] then 68-byte records. The record
+        is a superset of the V2 layout — same fields at +0/+2/+8/+12/+20,
+        but the name field is 36 bytes (+32..+67) and program/capo are u16.
+
+        Returns [] if the magic or table is absent/implausible (caller falls
+        back to name-pattern scanning).
+        """
+        data = self.data
+        if len(data) < 0x64 or data[0x38:0x3C] not in (b"debt", b"tbed"):
+            return []
+        ptr = struct.unpack("<I", data[0x60:0x64])[0]
+        if not (0 < ptr < len(data) - 4):
+            return []
+        rec_size, count = struct.unpack("<HH", data[ptr:ptr + 4])
+        if rec_size != 68 or not (1 <= count <= 15):
+            return []
+        if ptr + 4 + rec_size * count > len(data):
+            return []
+
+        instruments = []
+        cum = 0
+        for i in range(count):
+            o = ptr + 4 + i * rec_size
+            ns, fs = struct.unpack("<HH", data[o:o + 4])
+            program = struct.unpack("<H", data[o + 8:o + 10])[0]
+            capo = struct.unpack("<H", data[o + 12:o + 14])[0]
+            if not (1 <= ns <= 12) or fs != cum or program > 127:
+                return []
+            tuning_bytes = list(data[o + 20:o + 20 + ns])
+            if not all(0x06 <= b <= 0x5A for b in tuning_bytes):
+                return []
+            name = data[o + 32:o + 68].split(b"\x00")[0].decode(
+                "latin-1", errors="replace").strip()
+            cum += ns
+            instruments.append(TEFInstrument(
+                name=name or _program_to_name(program, ns),
+                tuning_name="",
+                num_strings=ns,
+                tuning_pitches=[96 - b for b in tuning_bytes],
+                offset=o,
+                capo=capo if capo <= 12 else 0,
+                midi_program=program,
+            ))
+        return instruments
+
     def parse_instruments_v2(self, header: TEFHeader) -> list[TEFInstrument]:
         """Parse instruments from V2 format.
 
-        V2 stores instrument info at the end of the file, similar to v3.
+        Structural track records are authoritative; fall back to name-pattern
+        scanning only when no record chain exists (oldest sub-variant).
         The V2 header text region (title/composer/comments, ending at
-        v2_header_end) may mention instrument names in prose — exclude it.
+        v2_header_end) may mention instrument names in prose — exclude it
+        from the fallback scan.
         """
+        instruments = self.parse_track_records_v2(header)
+        if instruments:
+            return instruments
         return self.parse_instruments(min_offset=header.v2_header_end)
 
     def parse_reading_list_v2(self, header: TEFHeader) -> list[TEFReadingListEntry]:
@@ -1244,7 +1449,7 @@ class TEFReader:
                 if 'Part' not in s.value and not s.value.startswith('('):
                     title = s.value
 
-        instruments = self.parse_instruments()
+        instruments = self.parse_track_records_v3() or self.parse_instruments()
         chords = self.parse_chords()
         sections = self.parse_sections()
         note_events = self.parse_note_events()

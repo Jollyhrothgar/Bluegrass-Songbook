@@ -59,10 +59,23 @@
       ],
       "capo": 0,
       "role": "rhythm"
+    },
+    {
+      "id": "clicks",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "C#4",
+        "F#3",
+        "F3",
+        "C#3",
+        "G#2"
+      ],
+      "capo": 0,
+      "role": "rhythm"
     }
   ],
   "notation": {
-    "banjo": [
+    "clicks": [
       {
         "measure": 1,
         "events": [
@@ -120,11 +133,23 @@
             "tick": 1440,
             "notes": [
               {
-                "s": 5,
-                "f": 0
-              },
-              {
                 "s": 4,
+                "f": 0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "banjo": [
+      {
+        "measure": 2,
+        "events": [
+          {
+            "tick": 1440,
+            "notes": [
+              {
+                "s": 5,
                 "f": 0
               }
             ]

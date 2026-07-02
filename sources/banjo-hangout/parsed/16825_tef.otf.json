@@ -11,21 +11,21 @@
   },
   "tracks": [
     {
-      "id": "banjo",
+      "id": "guitar",
       "instrument": "5-string-banjo",
       "tuning": [
+        "E4",
         "D4",
-        "B3",
-        "G3",
+        "A3",
         "D3",
-        "G4"
+        "A4"
       ],
-      "capo": 0,
-      "role": "lead"
+      "capo": 2,
+      "role": "rhythm"
     }
   ],
   "notation": {
-    "banjo": [
+    "guitar": [
       {
         "measure": 1,
         "events": [

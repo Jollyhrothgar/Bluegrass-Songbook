@@ -27,11 +27,10 @@
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": [
-        "D4",
-        "B3",
-        "G3",
-        "D3",
-        "G4"
+        "G2",
+        "D2",
+        "A1",
+        "E1"
       ],
       "capo": 0,
       "role": "rhythm"
