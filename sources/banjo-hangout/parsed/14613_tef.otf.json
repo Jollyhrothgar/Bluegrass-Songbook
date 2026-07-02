@@ -3,7 +3,13 @@
   "metadata": {
     "title": "Down Yonder",
     "time_signature": "4/4",
-    "tempo": 100
+    "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 1,
+        "time_signature": "3/4"
+      }
+    ]
   },
   "timing": {
     "ticks_per_beat": 480
@@ -55,7 +61,7 @@
         "measure": 1,
         "events": [
           {
-            "tick": 480,
+            "tick": 0,
             "notes": [
               {
                 "s": 2,
@@ -64,7 +70,7 @@
             ]
           },
           {
-            "tick": 960,
+            "tick": 480,
             "notes": [
               {
                 "s": 2,
@@ -73,7 +79,7 @@
             ]
           },
           {
-            "tick": 1440,
+            "tick": 960,
             "notes": [
               {
                 "s": 2,
@@ -1134,7 +1140,7 @@
         "measure": 1,
         "events": [
           {
-            "tick": 480,
+            "tick": 0,
             "notes": [
               {
                 "s": 2,
@@ -1143,7 +1149,7 @@
             ]
           },
           {
-            "tick": 960,
+            "tick": 480,
             "notes": [
               {
                 "s": 2,
@@ -1152,7 +1158,7 @@
             ]
           },
           {
-            "tick": 1440,
+            "tick": 960,
             "notes": [
               {
                 "s": 2,
@@ -2850,7 +2856,7 @@
         "measure": 1,
         "events": [
           {
-            "tick": 1680,
+            "tick": 1200,
             "notes": [
               {
                 "s": 1,

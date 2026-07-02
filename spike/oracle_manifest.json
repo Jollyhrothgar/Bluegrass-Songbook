@@ -1189,52 +1189,14 @@
   "xml": "spike/oracle/batch/18926.xml",
   "tracks": 1,
   "result": {
-   "verdict": "DIVERGED",
+   "verdict": "VERIFIED",
    "tracks": {
     "banjo": {
      "otf": 192,
      "oracle": 192,
-     "exact": 189,
-     "otf_only": [
-      [
-       1,
-       1440,
-       3,
-       7
-      ],
-      [
-       1,
-       1600,
-       2,
-       5
-      ],
-      [
-       1,
-       1760,
-       1,
-       4
-      ]
-     ],
-     "oracle_only": [
-      [
-       1,
-       0,
-       3,
-       7
-      ],
-      [
-       1,
-       160,
-       2,
-       5
-      ],
-      [
-       1,
-       320,
-       1,
-       4
-      ]
-     ]
+     "exact": 192,
+     "otf_only": [],
+     "oracle_only": []
     }
    }
   }
@@ -1649,52 +1611,14 @@
   "xml": "spike/oracle/batch/21307.xml",
   "tracks": 1,
   "result": {
-   "verdict": "DIVERGED",
+   "verdict": "VERIFIED",
    "tracks": {
     "banjo": {
      "otf": 239,
      "oracle": 239,
-     "exact": 236,
-     "otf_only": [
-      [
-       1,
-       480,
-       1,
-       3
-      ],
-      [
-       1,
-       960,
-       1,
-       5
-      ],
-      [
-       1,
-       1440,
-       1,
-       7
-      ]
-     ],
-     "oracle_only": [
-      [
-       1,
-       0,
-       1,
-       3
-      ],
-      [
-       1,
-       480,
-       1,
-       5
-      ],
-      [
-       1,
-       960,
-       1,
-       7
-      ]
-     ]
+     "exact": 239,
+     "otf_only": [],
+     "oracle_only": []
     }
    }
   }
@@ -2311,52 +2235,14 @@
   "xml": "spike/oracle/batch/tab-down-yonder-22456-66131632017.xml",
   "tracks": 1,
   "result": {
-   "verdict": "DIVERGED",
+   "verdict": "VERIFIED",
    "tracks": {
     "banjo": {
      "otf": 308,
      "oracle": 308,
-     "exact": 305,
-     "otf_only": [
-      [
-       1,
-       480,
-       1,
-       0
-      ],
-      [
-       1,
-       960,
-       3,
-       6
-      ],
-      [
-       1,
-       1440,
-       3,
-       5
-      ]
-     ],
-     "oracle_only": [
-      [
-       1,
-       0,
-       1,
-       0
-      ],
-      [
-       1,
-       480,
-       3,
-       6
-      ],
-      [
-       1,
-       960,
-       3,
-       5
-      ]
-     ]
+     "exact": 308,
+     "otf_only": [],
+     "oracle_only": []
     }
    }
   }
@@ -3431,52 +3317,14 @@
   "xml": "spike/oracle/batch/11557.xml",
   "tracks": 3,
   "result": {
-   "verdict": "DIVERGED",
+   "verdict": "VERIFIED",
    "tracks": {
     "banjo": {
      "otf": 256,
      "oracle": 256,
-     "exact": 253,
-     "otf_only": [
-      [
-       1,
-       480,
-       3,
-       5
-      ],
-      [
-       1,
-       960,
-       1,
-       0
-      ],
-      [
-       1,
-       1440,
-       2,
-       5
-      ]
-     ],
-     "oracle_only": [
-      [
-       1,
-       0,
-       3,
-       5
-      ],
-      [
-       1,
-       480,
-       1,
-       0
-      ],
-      [
-       1,
-       960,
-       2,
-       5
-      ]
-     ]
+     "exact": 256,
+     "otf_only": [],
+     "oracle_only": []
     },
     "bass": {
      "otf": 0,
@@ -3501,52 +3349,14 @@
   "xml": "spike/oracle/batch/11558.xml",
   "tracks": 3,
   "result": {
-   "verdict": "DIVERGED",
+   "verdict": "VERIFIED",
    "tracks": {
     "banjo": {
      "otf": 239,
      "oracle": 239,
-     "exact": 236,
-     "otf_only": [
-      [
-       1,
-       480,
-       1,
-       3
-      ],
-      [
-       1,
-       960,
-       1,
-       5
-      ],
-      [
-       1,
-       1440,
-       1,
-       7
-      ]
-     ],
-     "oracle_only": [
-      [
-       1,
-       0,
-       1,
-       3
-      ],
-      [
-       1,
-       480,
-       1,
-       5
-      ],
-      [
-       1,
-       960,
-       1,
-       7
-      ]
-     ]
+     "exact": 239,
+     "otf_only": [],
+     "oracle_only": []
     },
     "bass": {
      "otf": 0,
@@ -5268,7 +5078,7 @@
      "otf_only": [
       [
        1,
-       1680,
+       1200,
        1,
        0
       ],
@@ -5800,85 +5610,21 @@
   "xml": "spike/oracle/batch/tab-down-yonder-17492-3557123062012.xml",
   "tracks": 2,
   "result": {
-   "verdict": "DIVERGED",
+   "verdict": "VERIFIED",
    "tracks": {
     "banjo": {
      "otf": 188,
      "oracle": 188,
-     "exact": 185,
-     "otf_only": [
-      [
-       1,
-       480,
-       2,
-       3
-      ],
-      [
-       1,
-       960,
-       2,
-       2
-      ],
-      [
-       1,
-       1440,
-       2,
-       1
-      ]
-     ],
-     "oracle_only": [
-      [
-       1,
-       0,
-       2,
-       3
-      ],
-      [
-       1,
-       480,
-       2,
-       2
-      ],
-      [
-       1,
-       960,
-       2,
-       1
-      ]
-     ]
+     "exact": 188,
+     "otf_only": [],
+     "oracle_only": []
     },
     "guitar": {
      "otf": 224,
      "oracle": 224,
-     "exact": 222,
-     "otf_only": [
-      [
-       1,
-       960,
-       6,
-       0
-      ],
-      [
-       1,
-       1440,
-       6,
-       2
-      ]
-     ],
-     "oracle_only": [
-      [
-       1,
-       480,
-       6,
-       0
-      ],
-      [
-       1,
-       960,
-       6,
-       2
-      ]
-     ]
+     "exact": 224,
+     "otf_only": [],
+     "oracle_only": []
     }
    }
   }

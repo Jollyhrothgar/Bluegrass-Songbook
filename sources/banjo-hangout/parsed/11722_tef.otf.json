@@ -4,6 +4,12 @@
     "title": "Sally Ann",
     "time_signature": "4/4",
     "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 1,
+        "time_signature": "1/4"
+      }
+    ],
     "composer": "Adapted for banjo from the \r\nJohn Hartford/Chris Thile version"
   },
   "timing": {
@@ -44,7 +50,7 @@
         "measure": 1,
         "events": [
           {
-            "tick": 1440,
+            "tick": 0,
             "notes": [
               {
                 "s": 2,
@@ -53,7 +59,7 @@
             ]
           },
           {
-            "tick": 1680,
+            "tick": 240,
             "notes": [
               {
                 "s": 1,

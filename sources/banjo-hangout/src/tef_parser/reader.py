@@ -39,6 +39,7 @@ class TEFHeader:
     v2_component_offset: int = 0  # Offset to component data
     v2_component_count: int = 0   # Number of components
     v2_repeats_count: int = 0    # Number of reading list entries
+    v2_anacrusis: bool = False   # Measure 1 is a pickup (anacrusis)
 
     @property
     def version(self) -> str:
@@ -415,6 +416,15 @@ class TEFReader:
         num_strings = self.data[240]
         num_tracks = self.data[241] + 1
 
+        # Anacrusis (pickup measure) flag. Empirical, oracle-derived: the
+        # u16 at offset 244 is exactly 1 in every corpus file whose
+        # TablEdit MusicXML export renders measure 1 as a shortened pickup
+        # (22456, 18926, 21307, 17492, 11557, 11558, 11722, 14613), and
+        # takes other values (0, 2, 9, 16..48) in files whose measure 1 is
+        # full-length. Meaning of values > 1 unknown — treat only ==1 as
+        # the anacrusis flag.
+        anacrusis = struct.unpack('<H', self.data[244:246])[0] == 1
+
         # Component count at offset 256
         component_count = struct.unpack('<H', self.data[256:258])[0]
         component_offset = 258  # Components start right after count
@@ -437,6 +447,7 @@ class TEFReader:
             v2_component_offset=component_offset,
             v2_component_count=component_count,
             v2_repeats_count=repeats_count,
+            v2_anacrusis=anacrusis,
         )
 
     def find_strings(self) -> list[TEFString]:
@@ -1472,6 +1483,33 @@ class TEFReader:
 
         # Filter chord diagram notes that accompany melody notes
         note_events = self._filter_chord_diagrams(note_events)
+
+        # Anacrusis (pickup) measure: TEF stores measure 1's notes
+        # RIGHT-ALIGNED in a full header-ts grid slot (same storage trick
+        # as type-27 shortened measures), while TablEdit renders/exports
+        # measure 1 left-aligned with length = from the first note to the
+        # measure end. Shift measure-1 notes left and record the
+        # shortened signature (oracle-verified on 22456/18926: parser
+        # notes sat exactly first_note_position too late).
+        if header.v2_anacrusis and not any(
+                c.measure == 1 for c in time_signature_changes):
+            ts_size = header.v2_ts_size
+            m0 = [e for e in note_events if e.position < ts_size]
+            shift = min((e.position for e in m0), default=0)
+            if shift > 0:
+                for e in m0:
+                    e.position -= shift
+                den = header.v2_time_denom or 4
+                grid = ts_size - shift
+                num = grid * den // 256
+                while num * 256 != grid * den and den < 64:
+                    den *= 2
+                    num = grid * den // 256
+                if num > 0 and num * 256 == grid * den:
+                    time_signature_changes = (
+                        [TEFTimeSignatureChange(
+                            measure=1, numerator=num, denominator=den)]
+                        + list(time_signature_changes))
 
         # Parse reading list (repeat structure)
         reading_list = self.parse_reading_list_v2(header)
