@@ -51,7 +51,10 @@ users.
 
 ## Design Decisions (settled with user)
 
-1. **Anchoring granularity:** chords anchor to **syllables**, not characters.
+1. **Anchoring granularity:** the *model* anchors chords to **character
+   offsets** (ChordPro's native anchor, same as the rest of the codebase);
+   the *UI* presents **syllables** as tap targets. Syllables are a pure
+   view-layer concept.
 2. **Placement interaction:** **tap syllable → tap chord in a docked palette.**
 3. **Section model:** **block cards** (Notion-style stack of section cards).
 4. **Lyric editing:** **per-card mode toggle** — Chords mode (syllable cells +
@@ -76,14 +79,8 @@ The editing source of truth is an in-memory **SongDocument**:
       label: 'Verse 1',
       lines: [
         {
-          syllables: [ { text: 'sen' }, { text: '-ses' }, /* ... */ ],
-          chords: [
-            {
-              chord: 'F',
-              syllableIndex: 0,     // syllables.length = end-of-line anchor
-              originalOffset: 12    // char offset from parse; null once moved
-            }
-          ]
+          lyrics: 'You fill up my sen-ses',      // plain text, brackets stripped
+          chords: [ { chord: 'F', position: 15 } ] // char offset into lyrics
         }
       ]
     },
@@ -92,54 +89,64 @@ The editing source of truth is an in-memory **SongDocument**:
 }
 ```
 
-### Syllable seams
+A line is `{ lyrics, chords: [{chord, position}] }` — **the exact shape already
+used by `chords.js:parseLineWithChords` and the Python parser's
+`ChordPosition`**. The model introduces no new anchor concept; ChordPro's
+character offset is the anchor. Syllables never appear in the model.
 
-Seams come from four merged sources:
+### Syllables (view layer only)
+
+At render time, each line's lyrics are tokenized into syllable tap targets by a
+pure function of `(lyrics, chord positions)`. Seams come from four merged
+sources:
 
 1. Whitespace (word boundaries).
 2. Existing hyphens in the lyric text (`sen-ses`).
 3. A lightweight heuristic syllabifier. Its seams are real tap targets
    (rendered subtly, e.g. a faint dot on selection), not just hints — otherwise
-   chords could only land on word starts. Heuristic seams do not alter the
-   lyric text; a chord placed at one serializes at that character offset.
-4. **Existing chord offsets on load** — a chord parsed mid-word *forces* a seam
-   at its offset (`D[D/F]own` → syllables `D` + `own`, chord anchored to `own`).
+   chords could only land on word starts. Seams never alter the lyric text.
+4. **Existing chord positions** — a chord sitting mid-word forces a seam at its
+   offset (`D[D/F]own` → tap targets `D` + `own`, chip shown over `own`).
 
-Rule 4 makes the model an honest representation of the file: junk placements
+Rule 4 keeps the display an honest representation of the file: junk placements
 surface visually as odd seams for a human to fix, instead of being silently
 "corrected" across 18k songs.
+
+Placing or moving a chord onto a syllable sets its `position` to that
+syllable's start offset. Chords the user never touches keep their parsed
+`position` verbatim.
 
 ### Round-trip guarantee
 
 - **Parse:** reuse `parseChordPro` (song-view.js) for document structure and
-  `parseLineWithChords` (chords.js) per line; then tokenize syllables and
-  attach chords by offset.
-- **Serialize:** insert `[chord]` brackets right-to-left. A chord whose
-  `originalOffset` is set (never moved by the user) serializes at that exact
-  offset; a moved/new chord serializes at its anchor syllable's start offset.
-  Sections emit `{start_of_X: label}` / `{end_of_X}`; metadata emits in project
-  order (title, artist, composer, key, tempo, `x_*`); passthrough nodes emit
-  verbatim.
+  `parseLineWithChords` (chords.js) per line — the result already *is* the
+  model's line shape.
+- **Serialize:** insert `[chord]` brackets right-to-left at each chord's
+  `position`. Sections emit `{start_of_X: label}` / `{end_of_X}`; metadata
+  emits in project order (title, artist, composer, key, tempo, `x_*`);
+  passthrough nodes emit verbatim.
 - **Invariant (tested):** `serialize(parse(text)) === text` for lyric lines and
-  chord positions on untouched content. A user who fixes one chord produces a
-  one-character diff.
+  chord positions on untouched content — trivially, since positions are only
+  changed by explicit user action. A user who fixes one chord produces a
+  one-chord diff.
 
 ### Edge cases
 
-- **Chord-only lines** (intros/turnarounds like `[G] [C] [D7]`): a line with no
-  lyric text renders as a row of chord chips in array order. Existing chords
-  serialize at their `originalOffset`; chords added to such a line append to
-  the array and serialize space-separated after the last chord.
-- **Trailing chords** after the last syllable: anchor `syllableIndex ===
-  syllables.length`.
-- **Chords anchored in whitespace:** preserved via `originalOffset`; if moved,
-  they snap to a syllable start (renders identically in the song view).
+All are plain consequences of offset anchoring (the existing renderer already
+handles each):
+
+- **Chord-only lines** (intros/turnarounds like `[G] [C] [D7]`): lyrics are
+  empty/whitespace; chips render in position order. New chords get a position
+  after the current last chord.
+- **Trailing chords:** `position === lyrics.length`.
+- **Chords positioned in whitespace:** preserved as-is; moving one snaps it to
+  a syllable start (renders identically in the song view).
 - **Blank lines inside sections:** preserved as empty line nodes.
 
 ### Lyric edits under chords
 
-When a card's lyrics change in Lyrics mode, re-tokenize and remap chord anchors
-by diffing old→new words. Chords on deleted words are removed with an undoable
+When a card's lyrics change in Lyrics mode, remap chord positions by diffing
+old→new words. Chords on deleted words are removed with an undoable
 toast ("2 chords removed with deleted lyrics — Undo"). Never silent.
 
 ### Undo/redo
@@ -154,7 +161,8 @@ docs/js/visual-editor/
 │                     #   placeChord, moveChord, removeChord, changeChord,
 │                     #   setSectionType, relabelSection, addSection, deleteSection,
 │                     #   reorderSection, updateLyrics (with re-anchoring)
-├── syllables.js      # tokenizer: whitespace + hyphens + heuristic + chord-offset seams
+├── syllables.js      # view-layer tokenizer: (lyrics, chord positions) → tap targets
+│                     #   seams from whitespace + hyphens + heuristic + chord offsets
 ├── palette.js        # bottom-docked chord palette:
 │                     #   diatonic chords for detected key (chord-explorer/theory.js),
 │                     #   recents used in this song, "More…" root×quality picker,
