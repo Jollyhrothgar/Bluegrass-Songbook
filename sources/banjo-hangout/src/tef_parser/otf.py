@@ -716,9 +716,11 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                 otf_event = OTFEvent(tick=tick)
 
                 for evt in events_by_tick[tick]:
-                    # Skip rhythm marker notes (effect1=0x0f or 0x0e)
-                    # These are often ghost notes or percussion indicators
-                    if evt.raw_data and len(evt.raw_data) >= 5:
+                    # Skip rhythm marker notes (effect1=0x0f or 0x0e) —
+                    # V3 only. In V2, effect1=0x0e appears on real strummed
+                    # chords (oracle-confirmed on 20853 m34: TablEdit
+                    # exports the full chord as plain notes).
+                    if (evt.raw_data and len(evt.raw_data) >= 12):
                         effect1 = evt.raw_data[4]
                         if effect1 in (0x0e, 0x0f):
                             continue

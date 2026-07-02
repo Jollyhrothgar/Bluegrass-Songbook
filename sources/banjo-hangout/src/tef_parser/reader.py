@@ -1482,16 +1482,20 @@ class TEFReader:
         note_events = self.parse_note_events_v2(header)
         time_signature_changes = getattr(self, "_v2_ts_changes", [])
 
-        # V2 byte3 is duration+dynamic (plus tie bit 0x80), NOT a marker —
-        # every fret component in the stream is a real note. The V3-style
-        # marker filter (_filter_chord_diagrams) read byte3 as a char and
-        # silently dropped every note whose duration+dynamic combination
-        # didn't happen to spell I/F/L/K/O/C — e.g. 0x47 'G' (23408),
-        # 0x41 'A' (21678), 0x40 '@' (12124), and whole strummed chords
-        # in 10770. Only the chord-overlay skip (effect2 == 0x07) applies.
+        # V2 byte3 is duration+dynamic (plus the dynamic-7 tie sentinel),
+        # NOT a marker — every fret component in the stream is a real
+        # note. The V3-style marker filter (_filter_chord_diagrams) read
+        # byte3 as a char and silently dropped every note whose
+        # duration+dynamic combination didn't happen to spell I/F/L/K/O/C
+        # — e.g. 0x47 'G' (23408), 0x41 'A' (21678), 0x40 '@' (12124),
+        # and whole strummed chords in 10770. Only the chord-overlay skip
+        # (effect2 == 0x07) applies — and NOT when the fret byte has bit
+        # 7 set: those are real accompaniment-pattern notes (oracle-
+        # confirmed on 11514/11245 bass modules, b2=0x81/0x83 e2=0x07).
         note_events = [
             e for e in note_events
-            if not (len(e.raw_data) > 5 and e.raw_data[5] == 0x07)]
+            if not (len(e.raw_data) > 5 and e.raw_data[5] == 0x07
+                    and not (e.raw_data[2] & 0x80))]
 
         # Anacrusis (pickup) measure: TEF stores measure 1's notes
         # RIGHT-ALIGNED in a full header-ts grid slot (same storage trick
