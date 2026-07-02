@@ -50,6 +50,23 @@ if [ "$QUICK" = false ]; then
     echo ""
 fi
 
+# Ensure the notebook clean filter (.gitattributes: *.ipynb) is venv-independent.
+# History: the filter used to point at main/.venv's python, but `uv sync` prunes
+# packages outside the default selection (nbstripout lives in the `analytics`
+# extra), so every sync silently uninstalled nbstripout and broke ALL git
+# commands that touch a notebook ("clean filter 'nbstripout' failed").
+# `uvx nbstripout` provisions itself on demand (cached after first run) and
+# has no coupling to any worktree's .venv.
+if command -v uvx >/dev/null 2>&1; then
+    CURRENT_FILTER=$(git config --get filter.nbstripout.clean 2>/dev/null || true)
+    if [ "$CURRENT_FILTER" != "uvx nbstripout" ]; then
+        echo "Configuring notebook clean filter (uvx nbstripout)..."
+        git config filter.nbstripout.clean "uvx nbstripout"
+        git config filter.nbstripout.smudge cat
+        git config filter.nbstripout.required true
+    fi
+fi
+
 # Enrich songs (add provenance) - only if explicitly requested
 if [ "$DO_ENRICH" = true ]; then
     STAGE_START=$SECONDS
