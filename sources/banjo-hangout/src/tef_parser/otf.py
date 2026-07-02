@@ -553,8 +553,14 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     # Calculate ticks per position based on actual time signature from TEF
     # ticks_per_beat = 480 (standard MIDI), ticks_per_measure = beats * 480
     POSITIONS_PER_MEASURE = 16
-    beats_per_measure = tef.header.v2_time_num  # Time signature numerator (e.g., 4 for 4/4)
-    ticks_per_measure = beats_per_measure * 480
+    # ticks_per_measure = numerator * (whole note / denominator) where a
+    # quarter note is 480 ticks. The old `numerator * 480` was only correct
+    # for /4 signatures: a 2/2 measure is 1920 ticks (not 960), a 6/8
+    # measure 1440 (not 2880). Oracle-confirmed on 13654 (2/2): every tick
+    # landed at exactly half its true position.
+    beats_per_measure = tef.header.v2_time_num  # Time signature numerator
+    denom = tef.header.v2_time_denom or 4
+    ticks_per_measure = beats_per_measure * 480 * 4 // denom
     TICKS_PER_POSITION = ticks_per_measure // POSITIONS_PER_MEASURE
 
     track_events: dict[str, dict[int, list[tuple[int, TEFNoteEvent]]]] = {}

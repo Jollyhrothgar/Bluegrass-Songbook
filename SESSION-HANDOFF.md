@@ -311,6 +311,44 @@ both sides; techniques not yet compared for this file).
   identical; changes only 23602 (1/4-measure shift) and 20627 (2 isolated
   triplet notes). parsed/ regenerated for all 107 source-backed files.
 
+## Sixth wave (2026-07-01, same session) — ORACLE BATCH COMPLETE
+
+**Next-step #3 is DONE: all 107 source-backed files have TablEdit MusicXML
+oracle exports and recorded verdicts.**
+
+### Infrastructure
+- `spike/oracle_verify.py` — batch comparator (divisions-aware tick scaling,
+  ties/graces/chords handled, multi-part→track pairing, PARTIAL for
+  last-module-only exports). `--batch spike/oracle_manifest.json` re-runs
+  everything and rewrites verdicts in place.
+- `spike/oracle_batch_queue.json` — source map (pid → host tef path).
+- `spike/oracle/batch/` — 107 MusicXML exports (~14 MB), exported via
+  scripted computer-use of TablEdit (recipe: open → File→Export→Export Music
+  XML… → cmd+shift+G to batch dir → Save; save sheet SHARES the folder state
+  with the Open dialog, so re-navigate every time; export dialog needs ~3 s).
+
+### Verdicts (after this wave's fix): 56 VERIFIED / 51 DIVERGED
+- **Ticks-per-measure denominator bug FIXED** (otf.py): was `num*480`,
+  correct only for /4 meters; now `num*480*4/den`. Oracle-confirmed on
+  13654 (2/2: every tick at half its true position). Flipped 7 files
+  (13654, 14406, 15032, 16117, 20556, 21874, +20911-class) to VERIFIED.
+  parsed/ regenerated for all 107.
+- Divergence classes remaining (see `spike/oracle_manifest.json`):
+  1. **Non-/4 grid quantization** (13648 3/4, 18136 6/8, 21802, 22228):
+     the pipeline forces 16 slots/measure (16ths of 4/4); 3/4 and 6/8
+     measures don't divide evenly → systematic tick error. ROOT FIX =
+     carry grid units (or ticks) end-to-end instead of 16-slot positions.
+  2. **near (>=97%)** ~14 files: 3-5 note timing residues (probably
+     non-eighth triplet scales) or 1-4 dropped notes ('@'/bend targets?).
+  3. **single-track deep** (10658, 10659, 14690, 19600, 21690, 21999,
+     22446): dropped + misplaced notes; 19600/21690 have left-hand
+     fingering circles and bracket [n] alternate notes.
+  4. **multi-track** (~26): XML has only the LAST module; several pair at
+     0-8% (wrong track pairing or parser track-order mismatch — check
+     pairing logic + whether TablEdit's "last module" == last OTF track);
+     others 63-96% with dropped notes. Rich MIDI leg (next-step #4) is the
+     real fix for full multi-track verification.
+
 ## Next steps (in order)
 
 1. ~~Structural V2 instrument-record parser~~ **DONE (fourth wave).**
@@ -318,6 +356,11 @@ both sides; techniques not yet compared for this file).
    **frontend consumption of `metadata.time_signature_changes`**
    (work-view.js renderer + tab-player measure lengths currently assume the
    global ts; short measures render/play with trailing dead space).
+3. ~~Scripted oracle verification batch~~ **DONE (sixth wave).** 56/107
+   VERIFIED; work the divergence classes above, re-running
+   `python3 spike/oracle_verify.py --batch spike/oracle_manifest.json`
+   after each parser fix (exports don't need re-doing).
+4. **Non-/4 measure grid** (class 1 above) — likely next biggest win.
 3. **Scripted oracle verification batch** over all source-backed files
    (~107): per file, open in TablEdit → export MusicXML (single-track) or
    Rich MIDI (multi-track) → oracle_compare → record verdict in a manifest.
