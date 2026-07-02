@@ -114,6 +114,19 @@ class TEFSection:
 
 
 @dataclass
+class TEFTimeSignatureChange:
+    """A per-measure time-signature override (V2 component type 27).
+
+    Applies ONLY to its own measure — TEF stores no revert marker; the
+    following measure is back on the header signature unless it carries
+    its own override component.
+    """
+    measure: int      # 1-indexed measure the override applies to
+    numerator: int
+    denominator: int
+
+
+@dataclass
 class TEFReadingListEntry:
     """Reading list entry for MIDI playback order.
 
@@ -242,6 +255,7 @@ class TEFFile:
     sections: list[TEFSection] = field(default_factory=list)
     note_events: list[TEFNoteEvent] = field(default_factory=list)
     reading_list: list[TEFReadingListEntry] = field(default_factory=list)
+    time_signature_changes: list[TEFTimeSignatureChange] = field(default_factory=list)
 
     def dump(self) -> str:
         """Return a human-readable dump of the file contents."""
@@ -1026,6 +1040,13 @@ class TEFReader:
         m_data = 0
         m_index = 0
 
+        # Mid-tune time-signature overrides (component type 27, TuxGuitar's
+        # tsMove). A changed measure's notes are stored RIGHT-ALIGNED in the
+        # fixed header-ts grid slot, offset by ts_move = 4 * byte3; the
+        # override (and the offset) applies only to its own measure.
+        ts_move = 0
+        ts_changes: list[TEFTimeSignatureChange] = []
+
         offset = component_offset
         for _ in range(component_count):
             if offset + 6 > len(self.data):
@@ -1046,10 +1067,36 @@ class TEFReader:
             cumulative_string = (location // ts_size) % num_strings
             measure = location // (ts_size * num_strings)
 
+            if measure != m_index:
+                ts_move = 0  # a ts override never outlives its measure
             m_index = measure  # Track current measure for overflow detection
 
             fret_byte = rec[2]
             fret_raw = fret_byte & 0x1f
+
+            if fret_raw == 27:
+                # TIME SIGNATURE CHANGE for this measure (TuxGuitar type 27).
+                # denominator = 2**(byte2>>5) / 2; TablEdit sometimes leaves
+                # the top bits unset -> fall back to the header denominator
+                # (TuxGuitar's literal formula would yield 0/0 there).
+                # New measure grid length = ts_size - 4*byte3.
+                d3 = rec[3]
+                top = fret_byte >> 5
+                den = (2 ** top) // 2 if top > 0 else header.v2_time_denom
+                grid_len = ts_size - 4 * d3
+                num = (grid_len * den) // 256 if den > 0 else 0
+                ts_move = 4 * d3
+                # d3 == 0 means the measure keeps the header DURATION — such
+                # markers are display-only variants (e.g. explicit 4/4 in a
+                # 2/2 tune) and are ignored; type 27 can only shorten.
+                if d3 > 0 and num > 0:
+                    ts_changes.append(TEFTimeSignatureChange(
+                        measure=measure + 1, numerator=num, denominator=den))
+                offset += 6
+                continue
+
+            if ts_move and position_in_measure >= ts_move:
+                position_in_measure -= ts_move
 
             # Check for note vs special component
             if fret_raw >= 0x01 and fret_raw <= 0x19:
@@ -1099,6 +1146,10 @@ class TEFReader:
                 ))
 
             offset += 6
+
+        # Stash for _parse_v2 (collected during the same single pass that
+        # applies ts_move — TuxGuitar semantics are inherently sequential).
+        self._v2_ts_changes = ts_changes
 
         return events
 
@@ -1411,8 +1462,9 @@ class TEFReader:
         # Parse instruments (same format as v3, at end of file)
         instruments = self.parse_instruments_v2(header)
 
-        # Parse notes using v2 format
+        # Parse notes using v2 format (also collects ts-change components)
         note_events = self.parse_note_events_v2(header)
+        time_signature_changes = getattr(self, "_v2_ts_changes", [])
 
         # Filter chord diagram notes that accompany melody notes
         note_events = self._filter_chord_diagrams(note_events)
@@ -1435,6 +1487,7 @@ class TEFReader:
             sections=sections,
             note_events=note_events,
             reading_list=reading_list,
+            time_signature_changes=time_signature_changes,
         )
 
     def _parse_v3(self, header: TEFHeader) -> TEFFile:

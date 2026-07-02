@@ -3,7 +3,13 @@
   "metadata": {
     "title": "Hot Corn Cold Corn",
     "time_signature": "4/4",
-    "tempo": 100
+    "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 10,
+        "time_signature": "2/4"
+      }
+    ]
   },
   "timing": {
     "ticks_per_beat": 480
@@ -663,7 +669,7 @@
         "measure": 10,
         "events": [
           {
-            "tick": 960,
+            "tick": 0,
             "notes": [
               {
                 "s": 3,
@@ -673,7 +679,7 @@
             ]
           },
           {
-            "tick": 1200,
+            "tick": 240,
             "notes": [
               {
                 "s": 3,
@@ -683,7 +689,7 @@
             ]
           },
           {
-            "tick": 1440,
+            "tick": 480,
             "notes": [
               {
                 "s": 1,
@@ -693,7 +699,7 @@
             ]
           },
           {
-            "tick": 1680,
+            "tick": 720,
             "notes": [
               {
                 "s": 2,

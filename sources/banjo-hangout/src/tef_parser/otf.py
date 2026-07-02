@@ -83,6 +83,10 @@ class OTFMetadata:
     key: str | None = None
     time_signature: str = "4/4"
     tempo: int = 100
+    # Per-measure overrides: [{"measure": 17, "time_signature": "2/4"}, ...].
+    # Each override applies only to its measure; all others follow
+    # time_signature. Additive — consumers that don't know it ignore it.
+    time_signature_changes: list = field(default_factory=list)
 
 
 @dataclass
@@ -119,6 +123,8 @@ class OTFDocument:
         }
 
         # Add optional metadata
+        if self.metadata.time_signature_changes:
+            result["metadata"]["time_signature_changes"] = self.metadata.time_signature_changes
         if self.metadata.composer:
             result["metadata"]["composer"] = self.metadata.composer
         if self.metadata.key:
@@ -462,6 +468,11 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
         doc.metadata.time_signature = f"{tef.header.v2_time_num}/{tef.header.v2_time_denom}"
         if tef.header.v2_composer:
             doc.metadata.composer = tef.header.v2_composer
+        doc.metadata.time_signature_changes = [
+            {"measure": c.measure,
+             "time_signature": f"{c.numerator}/{c.denominator}"}
+            for c in tef.time_signature_changes
+        ]
     else:
         # V3 defaults
         doc.metadata.time_signature = "2/2"  # Cut time for bluegrass
@@ -566,6 +577,17 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
         position_in_measure = event.position % POSITIONS_PER_MEASURE
         tick = position_in_measure * TICKS_PER_POSITION
 
+        # V2 triplet timing (TuxGuitar TESongParser): the duration code
+        # (byte3 & 0x0f) encodes the division — code % 3 == 2 means triplet
+        # (3:2), and the note's position is stored on the straight grid but
+        # belongs at x4/3 of its offset within the quarter note (480 ticks).
+        # Per-note and authoritative; replaces the V3-style 'K'-marker
+        # group heuristic, which only matched one dynamic level by accident.
+        if (tef.header.is_v2 and event.raw_data and len(event.raw_data) >= 4
+                and (event.raw_data[3] & 0x0f) % 3 == 2):
+            in_quarter = tick % 480
+            tick = tick - in_quarter + (in_quarter * 4) // 3
+
         if measure not in track_events[track_id]:
             track_events[track_id][measure] = []
 
@@ -578,7 +600,10 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     TRIPLET_SPAN = 480  # 2 eighth notes = 1 beat
     TRIPLET_SPACING = TRIPLET_SPAN // 3  # 160 ticks between notes
 
-    for track_id, measures in track_events.items():
+    # V2 triplets are handled per-note from the duration code above; the
+    # K-marker group heuristic below is for V3 (12-byte records), where the
+    # marker byte is real. Running it on V2 would double-adjust.
+    for track_id, measures in ({} if tef.header.is_v2 else track_events).items():
         for measure_num, events in measures.items():
             # Find triplet groups (consecutive positions with 'K' marker)
             triplet_notes = []

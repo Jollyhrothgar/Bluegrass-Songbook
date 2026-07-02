@@ -3,7 +3,29 @@
   "metadata": {
     "title": "Waterbound",
     "time_signature": "4/4",
-    "tempo": 100
+    "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 3,
+        "time_signature": "2/4"
+      },
+      {
+        "measure": 6,
+        "time_signature": "2/4"
+      },
+      {
+        "measure": 9,
+        "time_signature": "2/4"
+      },
+      {
+        "measure": 12,
+        "time_signature": "2/4"
+      },
+      {
+        "measure": 13,
+        "time_signature": "2/4"
+      }
+    ]
   },
   "timing": {
     "ticks_per_beat": 480
@@ -163,7 +185,7 @@
         "measure": 3,
         "events": [
           {
-            "tick": 960,
+            "tick": 0,
             "notes": [
               {
                 "s": 1,
@@ -172,7 +194,7 @@
             ]
           },
           {
-            "tick": 1440,
+            "tick": 480,
             "notes": [
               {
                 "s": 1,
@@ -189,7 +211,7 @@
             ]
           },
           {
-            "tick": 1680,
+            "tick": 720,
             "notes": [
               {
                 "s": 5,
@@ -328,7 +350,7 @@
         "measure": 6,
         "events": [
           {
-            "tick": 960,
+            "tick": 0,
             "notes": [
               {
                 "s": 4,
@@ -337,7 +359,7 @@
             ]
           },
           {
-            "tick": 1440,
+            "tick": 480,
             "notes": [
               {
                 "s": 3,
@@ -347,7 +369,7 @@
             ]
           },
           {
-            "tick": 1680,
+            "tick": 720,
             "notes": [
               {
                 "s": 5,
@@ -483,7 +505,7 @@
         "measure": 9,
         "events": [
           {
-            "tick": 960,
+            "tick": 0,
             "notes": [
               {
                 "s": 2,
@@ -492,7 +514,7 @@
             ]
           },
           {
-            "tick": 1440,
+            "tick": 480,
             "notes": [
               {
                 "s": 3,
@@ -501,7 +523,7 @@
             ]
           },
           {
-            "tick": 1680,
+            "tick": 720,
             "notes": [
               {
                 "s": 5,
@@ -646,7 +668,7 @@
         "measure": 12,
         "events": [
           {
-            "tick": 960,
+            "tick": 0,
             "notes": [
               {
                 "s": 4,
@@ -660,7 +682,7 @@
         "measure": 13,
         "events": [
           {
-            "tick": 960,
+            "tick": 0,
             "notes": [
               {
                 "s": 4,
@@ -669,7 +691,7 @@
             ]
           },
           {
-            "tick": 1440,
+            "tick": 480,
             "notes": [
               {
                 "s": 3,
@@ -678,7 +700,7 @@
             ]
           },
           {
-            "tick": 1680,
+            "tick": 720,
             "notes": [
               {
                 "s": 3,

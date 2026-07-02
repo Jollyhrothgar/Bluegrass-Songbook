@@ -267,11 +267,57 @@ is now only a fallback; track records are parsed structurally.
   66 raw_tabs-triaged via `spike/verified_sources.json`; mount path is now
   `/sessions/<session>/mnt/raw_tabs`). Remaining 223 untouched.
 
+## Fifth wave (2026-07-01, same session) — ts changes + triplet root fix LANDED
+
+**Next-step #2 is DONE. wheel_hoss (11449) is now 100% oracle-verified at
+tick level on BOTH tracks** (guitar 457/457, bass 288/288, ties excluded on
+both sides; techniques not yet compared for this file).
+
+### Mid-tune time-signature changes (V2 component type 27)
+- TuxGuitar `readComponents()` type 27 + corpus verification:
+  **denominator = 2^(byte2>>5)/2, falling back to the header denominator
+  when the top bits are 0** (TablEdit leaves them unset in wheel_hoss;
+  TuxGuitar's literal formula yields 0/0). **New measure grid length =
+  ts_size − 4·byte3**; numerator = grid_len·den/256.
+- **Notes in a changed measure are stored RIGHT-ALIGNED** in the fixed
+  header-ts grid slot (offset ts_move = 4·byte3, subtract it — TuxGuitar's
+  tsMove). The override applies ONLY to its own measure; there is no revert
+  marker. d3=0 markers are display-only duration-identical variants
+  (21874: explicit 4/4 in a 2/2 tune — ignored).
+- Corpus shapes: wheel_hoss 2/4-in-4/4 ×4; 23602 a **1/4 measure in a 2/4
+  tune** (fixed silently — no oracle yet); 21874 no-ops. Type 27 can only
+  SHORTEN a measure.
+- OTF: additive `metadata.time_signature_changes`
+  `[{measure, time_signature}]` (V2 only). **Frontend does not consume it
+  yet** — renderer/player still assume the global ts (see next steps).
+
+### V2 triplet timing — ROOT FIX (K-marker heuristic was a coincidence)
+- TuxGuitar `getDuration()/getStart()`: V2 duration code (byte3 & 0x0f):
+  value = WHOLE·2^(code/3); **code%3==1 dotted, code%3==2 TRIPLET**; a
+  triplet note's position is straight-grid but belongs at ×4/3 of its
+  offset within the quarter (480 ticks).
+- The OTF-side "3 consecutive 'K' markers" fixer only matched byte3=0x4B
+  (dur 11 + dynamic 4 read as a char). wheel_hoss m51/52 triplets are 0x2B
+  (dynamic 2) → were left on straight 16ths. Now per-note from the duration
+  code for V2; K-fixer restricted to V3. Also fixes isolated triplet notes
+  (20627 m1/m5, no group of 3 — 2 notes moved, unverified, no oracle).
+- Also confirmed: byte3 bit 0x80 = tie (the "m73 stray" was a tie note —
+  comparer artifact, parser was right).
+
+### Verification
+- Tests: `test_tef_time_signatures.py` (6) + `test_tef_triplets.py` (3);
+  suite 30 passed 1 skipped. 23398 oracle 101/101 + 5/5 techs; roundtrip
+  gate PASS on 11449 and 23602. Regression vs previous parsed/: 39/41
+  identical; changes only 23602 (1/4-measure shift) and 20627 (2 isolated
+  triplet notes). parsed/ regenerated for all 107 source-backed files.
+
 ## Next steps (in order)
 
 1. ~~Structural V2 instrument-record parser~~ **DONE (fourth wave).**
-2. **Time-signature changes mid-tune** (wheel_hoss m17-18) — parser currently
-   assumes header ts for all measures.
+2. ~~Time-signature changes mid-tune~~ **DONE (fifth wave).** Follow-up:
+   **frontend consumption of `metadata.time_signature_changes`**
+   (work-view.js renderer + tab-player measure lengths currently assume the
+   global ts; short measures render/play with trailing dead space).
 3. **Scripted oracle verification batch** over all source-backed files
    (~107): per file, open in TablEdit → export MusicXML (single-track) or
    Rich MIDI (multi-track) → oracle_compare → record verdict in a manifest.

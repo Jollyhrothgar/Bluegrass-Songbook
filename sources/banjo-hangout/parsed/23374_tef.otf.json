@@ -3,7 +3,17 @@
   "metadata": {
     "title": "Jerusalem Ridge",
     "time_signature": "2/4",
-    "tempo": 100
+    "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 17,
+        "time_signature": "1/4"
+      },
+      {
+        "measure": 37,
+        "time_signature": "1/4"
+      }
+    ]
   },
   "timing": {
     "ticks_per_beat": 480
@@ -1135,7 +1145,7 @@
         "measure": 17,
         "events": [
           {
-            "tick": 480,
+            "tick": 0,
             "notes": [
               {
                 "s": 3,
@@ -1144,7 +1154,7 @@
             ]
           },
           {
-            "tick": 600,
+            "tick": 120,
             "notes": [
               {
                 "s": 2,
@@ -1153,7 +1163,7 @@
             ]
           },
           {
-            "tick": 720,
+            "tick": 240,
             "notes": [
               {
                 "s": 4,
@@ -1162,7 +1172,7 @@
             ]
           },
           {
-            "tick": 840,
+            "tick": 360,
             "notes": [
               {
                 "s": 1,
@@ -2453,7 +2463,7 @@
         "measure": 37,
         "events": [
           {
-            "tick": 480,
+            "tick": 0,
             "notes": [
               {
                 "s": 3,
@@ -2462,7 +2472,7 @@
             ]
           },
           {
-            "tick": 600,
+            "tick": 120,
             "notes": [
               {
                 "s": 2,
@@ -2471,7 +2481,7 @@
             ]
           },
           {
-            "tick": 720,
+            "tick": 240,
             "notes": [
               {
                 "s": 4,
@@ -2480,7 +2490,7 @@
             ]
           },
           {
-            "tick": 840,
+            "tick": 360,
             "notes": [
               {
                 "s": 1,

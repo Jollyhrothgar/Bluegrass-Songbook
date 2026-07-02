@@ -3,7 +3,25 @@
   "metadata": {
     "title": "Seneca Square Dance",
     "time_signature": "2/2",
-    "tempo": 100
+    "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 1,
+        "time_signature": "1/4"
+      },
+      {
+        "measure": 9,
+        "time_signature": "3/4"
+      },
+      {
+        "measure": 10,
+        "time_signature": "1/4"
+      },
+      {
+        "measure": 18,
+        "time_signature": "3/4"
+      }
+    ]
   },
   "timing": {
     "ticks_per_beat": 480
@@ -29,7 +47,7 @@
         "measure": 1,
         "events": [
           {
-            "tick": 720,
+            "tick": 0,
             "notes": [
               {
                 "s": 4,
@@ -452,7 +470,7 @@
         "measure": 9,
         "events": [
           {
-            "tick": 240,
+            "tick": 0,
             "notes": [
               {
                 "s": 4,
@@ -461,7 +479,7 @@
             ]
           },
           {
-            "tick": 480,
+            "tick": 240,
             "notes": [
               {
                 "s": 1,
@@ -482,7 +500,7 @@
             ]
           },
           {
-            "tick": 600,
+            "tick": 360,
             "notes": [
               {
                 "s": 5,
@@ -491,7 +509,7 @@
             ]
           },
           {
-            "tick": 720,
+            "tick": 480,
             "notes": [
               {
                 "s": 4,
@@ -505,7 +523,7 @@
         "measure": 10,
         "events": [
           {
-            "tick": 720,
+            "tick": 0,
             "notes": [
               {
                 "s": 3,
@@ -514,7 +532,7 @@
             ]
           },
           {
-            "tick": 840,
+            "tick": 120,
             "notes": [
               {
                 "s": 2,
@@ -1007,7 +1025,7 @@
         "measure": 18,
         "events": [
           {
-            "tick": 240,
+            "tick": 0,
             "notes": [
               {
                 "s": 4,
@@ -1016,7 +1034,7 @@
             ]
           },
           {
-            "tick": 480,
+            "tick": 240,
             "notes": [
               {
                 "s": 1,
@@ -1037,7 +1055,7 @@
             ]
           },
           {
-            "tick": 600,
+            "tick": 360,
             "notes": [
               {
                 "s": 5,
@@ -1046,7 +1064,7 @@
             ]
           },
           {
-            "tick": 720,
+            "tick": 480,
             "notes": [
               {
                 "s": 4,

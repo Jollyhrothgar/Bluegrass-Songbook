@@ -3,7 +3,21 @@
   "metadata": {
     "title": "Done Gone",
     "time_signature": "2/2",
-    "tempo": 100
+    "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 1,
+        "time_signature": "1/4"
+      },
+      {
+        "measure": 9,
+        "time_signature": "3/4"
+      },
+      {
+        "measure": 29,
+        "time_signature": "3/4"
+      }
+    ]
   },
   "timing": {
     "ticks_per_beat": 480
@@ -29,7 +43,7 @@
         "measure": 1,
         "events": [
           {
-            "tick": 720,
+            "tick": 0,
             "notes": [
               {
                 "s": 2,
@@ -38,7 +52,7 @@
             ]
           },
           {
-            "tick": 840,
+            "tick": 120,
             "notes": [
               {
                 "s": 2,
@@ -605,7 +619,7 @@
         "measure": 9,
         "events": [
           {
-            "tick": 240,
+            "tick": 0,
             "notes": [
               {
                 "s": 1,
@@ -614,7 +628,7 @@
             ]
           },
           {
-            "tick": 360,
+            "tick": 120,
             "notes": [
               {
                 "s": 1,
@@ -624,7 +638,7 @@
             ]
           },
           {
-            "tick": 480,
+            "tick": 240,
             "notes": [
               {
                 "s": 2,
@@ -633,7 +647,7 @@
             ]
           },
           {
-            "tick": 600,
+            "tick": 360,
             "notes": [
               {
                 "s": 2,
@@ -643,7 +657,7 @@
             ]
           },
           {
-            "tick": 720,
+            "tick": 480,
             "notes": [
               {
                 "s": 2,
@@ -652,7 +666,7 @@
             ]
           },
           {
-            "tick": 840,
+            "tick": 600,
             "notes": [
               {
                 "s": 5,
@@ -2159,6 +2173,25 @@
         "measure": 29,
         "events": [
           {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 4,
+                "f": 4
+              }
+            ]
+          },
+          {
+            "tick": 120,
+            "notes": [
+              {
+                "s": 4,
+                "f": 5,
+                "tech": "h"
+              }
+            ]
+          },
+          {
             "tick": 240,
             "notes": [
               {
@@ -2172,32 +2205,13 @@
             "notes": [
               {
                 "s": 4,
-                "f": 5,
-                "tech": "h"
-              }
-            ]
-          },
-          {
-            "tick": 480,
-            "notes": [
-              {
-                "s": 4,
-                "f": 4
-              }
-            ]
-          },
-          {
-            "tick": 600,
-            "notes": [
-              {
-                "s": 4,
                 "f": 0,
                 "tech": "p"
               }
             ]
           },
           {
-            "tick": 720,
+            "tick": 480,
             "notes": [
               {
                 "s": 1,
