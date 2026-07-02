@@ -96,8 +96,15 @@ def compare(otf_path, xml_path):
     if len(parts) == len(tracks):
         pairing = list(zip(track_ids, parts))
     elif len(parts) == 1 and len(tracks) > 1:
-        # TablEdit multi-module export contains only the LAST module
-        pairing = [(track_ids[-1], parts[0])]
+        # TablEdit multi-module export contains only ONE module —
+        # usually the last, but TablEdit's module order and the OTF
+        # track order can disagree (14699/14809: the exported part is
+        # the banjo, not the last OTF track; empty modules shift the
+        # picture further). Pair with the OTF track whose content best
+        # matches the exported part.
+        xml_set = set(parts[0])
+        best = max(track_ids, key=lambda tid: len(set(tracks[tid]) & xml_set))
+        pairing = [(best, parts[0])]
         partial = True
     else:
         return {"verdict": "ERROR",
@@ -121,7 +128,8 @@ def compare(otf_path, xml_path):
     else:
         verdict = "DIVERGED"
     return {"verdict": verdict, "tracks": per_track,
-            **({"note": "single-part XML vs multi-track OTF (last module only)"}
+            **({"note": "single-part XML vs multi-track OTF "
+                        "(one module only, best-match paired)"}
                if partial else {})}
 
 
