@@ -313,6 +313,18 @@ def compute_articulations(note_events: list[TEFNoteEvent]) -> dict[tuple[int, in
     """
     articulations: dict[tuple[int, int, int], str] = {}
 
+    # Plausibility gate (oracle-verified against TablEdit MusicXML exports):
+    # in clean files (e.g. 23398) the effect1 byte of melody notes only takes
+    # small flag values ({0,1,2} + bend 0x04). In some files (e.g. 27493) the
+    # same byte position holds arbitrary values 1..15 — it is NOT an effects
+    # bitfield there, and `effect1 & 0x03` would flag most notes as legato
+    # (TablEdit's own export shows zero slurs for that file). If any melody
+    # note has effect1 > 4, distrust the byte for the whole file.
+    for event in note_events:
+        if event.is_melody and event.raw_data and len(event.raw_data) >= 5:
+            if event.raw_data[4] > 0x04:
+                return articulations
+
     # Group notes by track and string, sorted by position
     notes_by_track_string: dict[tuple[int, int], list[TEFNoteEvent]] = {}
 
@@ -350,15 +362,24 @@ def compute_articulations(note_events: list[TEFNoteEvent]) -> dict[tuple[int, in
                 if next_result:
                     _, dest_fret = next_result
 
-                    # Check if notes are close enough to be a legato pair (within 2 positions)
-                    if next_event.position - event.position <= 2:
+                    # Check if notes are close enough to be a legato pair.
+                    # Position unit is a 32nd note (verified against TablEdit's
+                    # own MusicXML export of 23398): eighth-note hammer/pull
+                    # pairs sit 4 units apart, 32nd pairs 1 unit apart. Allow
+                    # up to one beat (8 units) between source and destination.
+                    if next_event.position - event.position <= 8:
+                        # Same fret cannot be a hammer-on or pull-off — a
+                        # repeated note with a stray flag is not a technique.
+                        if dest_fret == source_fret and not is_slide_effect(event):
+                            continue
+
                         # Check for slide first (effect1=0x03)
                         if is_slide_effect(event):
                             tech = "/"  # Slide
                         elif dest_fret > source_fret:
                             tech = "h"  # Hammer-on (going up)
                         else:
-                            tech = "p"  # Pull-off (going down or same fret)
+                            tech = "p"  # Pull-off (going down)
 
                         # Apply technique to DESTINATION note
                         dest_key = (track, next_event.position, string)
@@ -433,14 +454,20 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
         '6-string-guitar': [64, 59, 55, 50, 45, 40],  # E4, B3, G3, D3, A2, E2
     }
 
-    seen_track_ids = set()
+    # Uniquify duplicate ids (banjo, banjo-2, …) instead of skipping them.
+    # Skipping shortened doc.tracks and broke `doc.tracks[event.track]`
+    # index alignment, dumping later tracks' notes into "unknown"; the
+    # pre-dedupe behavior merged same-kind tracks onto one notation key,
+    # creating impossible same-string fret conflicts (e.g. 10750 Katy Hill:
+    # 3 guitar tracks merged -> 308 phantom "missing notes" downstream).
+    seen_track_ids: dict[str, int] = {}
     for inst in tef.instruments:
         track_id = instrument_to_otf_id(inst)
 
-        # Skip duplicate track IDs (keep first occurrence)
-        if track_id in seen_track_ids:
-            continue
-        seen_track_ids.add(track_id)
+        count = seen_track_ids.get(track_id, 0) + 1
+        seen_track_ids[track_id] = count
+        if count > 1:
+            track_id = f"{track_id}-{count}"
 
         inst_type = instrument_to_type(inst)
 

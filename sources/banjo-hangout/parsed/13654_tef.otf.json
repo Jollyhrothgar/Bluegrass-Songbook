@@ -3,14 +3,28 @@
   "metadata": {
     "title": "Ducks on Millpond",
     "time_signature": "2/2",
-    "tempo": 180
+    "tempo": 100
   },
   "timing": {
     "ticks_per_beat": 480
   },
-  "tracks": [],
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    }
+  ],
   "notation": {
-    "unknown": [
+    "banjo": [
       {
         "measure": 1,
         "events": [
@@ -123,7 +137,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           }
@@ -164,7 +179,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 3
+                "f": 3,
+                "tech": "h"
               }
             ]
           },
@@ -173,7 +189,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 2
+                "f": 2,
+                "tech": "p"
               }
             ]
           },
@@ -214,7 +231,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -268,7 +286,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           }
@@ -386,7 +405,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           }
@@ -427,7 +447,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 3
+                "f": 3,
+                "tech": "h"
               }
             ]
           },
@@ -436,7 +457,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 2
+                "f": 2,
+                "tech": "p"
               }
             ]
           },
@@ -477,7 +499,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -572,7 +595,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           }
@@ -595,7 +619,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -722,7 +747,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -817,7 +843,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           }
@@ -840,7 +867,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -967,7 +995,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -1021,7 +1050,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           }
@@ -1029,10 +1059,22 @@
       }
     ]
   },
-  "x_source": {
-    "type": "banjo-hangout",
-    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/tab-ducks-on-millpo-13654-445142772010.tef",
-    "author": "Julian44_4",
-    "converted_at": "2026-01-03T22:37:36.783597"
-  }
+  "reading_list": [
+    {
+      "from_measure": 1,
+      "to_measure": 8
+    },
+    {
+      "from_measure": 1,
+      "to_measure": 8
+    },
+    {
+      "from_measure": 9,
+      "to_measure": 16
+    },
+    {
+      "from_measure": 9,
+      "to_measure": 16
+    }
+  ]
 }

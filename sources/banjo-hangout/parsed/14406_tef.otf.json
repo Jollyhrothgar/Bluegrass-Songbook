@@ -3,14 +3,28 @@
   "metadata": {
     "title": "Seneca Square Dance",
     "time_signature": "2/2",
-    "tempo": 120
+    "tempo": 100
   },
   "timing": {
     "ticks_per_beat": 480
   },
-  "tracks": [],
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "E4",
+        "D4",
+        "A3",
+        "E3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    }
+  ],
   "notation": {
-    "unknown": [
+    "banjo": [
       {
         "measure": 1,
         "events": [
@@ -78,7 +92,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           }
@@ -119,7 +134,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -218,7 +234,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -313,7 +330,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           }
@@ -354,7 +372,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -386,7 +405,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -548,7 +568,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 5
+                "f": 5,
+                "tech": "h"
               }
             ]
           },
@@ -566,7 +587,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           }
@@ -598,7 +620,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 2
+                "f": 2,
+                "tie": true
               }
             ]
           },
@@ -625,7 +648,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -711,7 +735,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 5
+                "f": 5,
+                "tech": "h"
               }
             ]
           }
@@ -734,7 +759,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -743,7 +769,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tie": true
               }
             ]
           },
@@ -793,7 +820,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 5
+                "f": 5,
+                "tech": "h"
               }
             ]
           },
@@ -811,7 +839,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 5
+                "f": 5,
+                "tech": "p"
               }
             ]
           },
@@ -838,7 +867,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           }
@@ -897,7 +927,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -929,7 +960,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -1026,10 +1058,18 @@
       }
     ]
   },
-  "x_source": {
-    "type": "banjo-hangout",
-    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-seneca-square-d-14406-5235521122010.tef",
-    "author": "LyleK",
-    "converted_at": "2026-01-03T22:37:36.343013"
-  }
+  "reading_list": [
+    {
+      "from_measure": 1,
+      "to_measure": 9
+    },
+    {
+      "from_measure": 1,
+      "to_measure": 18
+    },
+    {
+      "from_measure": 10,
+      "to_measure": 18
+    }
+  ]
 }

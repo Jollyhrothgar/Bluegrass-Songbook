@@ -3,7 +3,7 @@
   "metadata": {
     "title": "Gold Rush",
     "time_signature": "2/4",
-    "tempo": 108,
+    "tempo": 100,
     "composer": "A tune by Bill Monroe and Byron Berline\r\nArranged for 5-String Banjo"
   },
   "timing": {
@@ -13,7 +13,26 @@
     {
       "id": "banjo",
       "instrument": "5-string-banjo",
-      "tuning": [],
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    },
+    {
+      "id": "banjo-2",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
       "capo": 0,
       "role": "lead"
     }
@@ -2714,10 +2733,42 @@
       }
     ]
   },
-  "x_source": {
-    "type": "banjo-hangout",
-    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/tab-gold-rush-25010-550201782021.tef",
-    "author": "banjoy",
-    "converted_at": "2026-01-03T22:37:36.330914"
-  }
+  "reading_list": [
+    {
+      "from_measure": 1,
+      "to_measure": 9
+    },
+    {
+      "from_measure": 2,
+      "to_measure": 8
+    },
+    {
+      "from_measure": 10,
+      "to_measure": 18
+    },
+    {
+      "from_measure": 11,
+      "to_measure": 17
+    },
+    {
+      "from_measure": 19,
+      "to_measure": 27
+    },
+    {
+      "from_measure": 20,
+      "to_measure": 26
+    },
+    {
+      "from_measure": 28,
+      "to_measure": 36
+    },
+    {
+      "from_measure": 29,
+      "to_measure": 35
+    },
+    {
+      "from_measure": 37,
+      "to_measure": 37
+    }
+  ]
 }

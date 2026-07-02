@@ -3,14 +3,28 @@
   "metadata": {
     "title": "Leather Britches",
     "time_signature": "2/4",
-    "tempo": 120
+    "tempo": 100
   },
   "timing": {
     "ticks_per_beat": 480
   },
-  "tracks": [],
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    }
+  ],
   "notation": {
-    "unknown": [
+    "banjo": [
       {
         "measure": 1,
         "events": [
@@ -37,10 +51,6 @@
               {
                 "s": 2,
                 "f": 8
-              },
-              {
-                "s": 13,
-                "f": 5
               }
             ]
           },
@@ -50,18 +60,6 @@
               {
                 "s": 1,
                 "f": 9
-              },
-              {
-                "s": 6,
-                "f": 3
-              },
-              {
-                "s": 7,
-                "f": 3
-              },
-              {
-                "s": 8,
-                "f": 0
               }
             ]
           },
@@ -101,7 +99,8 @@
             "notes": [
               {
                 "s": 13,
-                "f": 5
+                "f": 5,
+                "tie": true
               }
             ]
           }
@@ -123,7 +122,8 @@
               },
               {
                 "s": 13,
-                "f": 5
+                "f": 5,
+                "tie": true
               }
             ]
           },
@@ -246,10 +246,6 @@
               {
                 "s": 2,
                 "f": 8
-              },
-              {
-                "s": 13,
-                "f": 5
               }
             ]
           },
@@ -259,18 +255,6 @@
               {
                 "s": 1,
                 "f": 9
-              },
-              {
-                "s": 6,
-                "f": 3
-              },
-              {
-                "s": 7,
-                "f": 3
-              },
-              {
-                "s": 8,
-                "f": 0
               }
             ]
           },
@@ -319,7 +303,8 @@
               },
               {
                 "s": 13,
-                "f": 5
+                "f": 5,
+                "tie": true
               }
             ]
           }
@@ -341,7 +326,8 @@
               },
               {
                 "s": 13,
-                "f": 5
+                "f": 5,
+                "tie": true
               }
             ]
           },
@@ -464,10 +450,6 @@
               {
                 "s": 2,
                 "f": 8
-              },
-              {
-                "s": 13,
-                "f": 5
               }
             ]
           },
@@ -477,18 +459,6 @@
               {
                 "s": 1,
                 "f": 9
-              },
-              {
-                "s": 6,
-                "f": 3
-              },
-              {
-                "s": 7,
-                "f": 3
-              },
-              {
-                "s": 8,
-                "f": 0
               }
             ]
           },
@@ -528,7 +498,8 @@
             "notes": [
               {
                 "s": 13,
-                "f": 5
+                "f": 5,
+                "tie": true
               }
             ]
           }
@@ -550,7 +521,8 @@
               },
               {
                 "s": 13,
-                "f": 5
+                "f": 5,
+                "tie": true
               }
             ]
           },
@@ -692,7 +664,8 @@
               },
               {
                 "s": 13,
-                "f": 5
+                "f": 5,
+                "tech": "/"
               }
             ]
           },
@@ -753,10 +726,6 @@
               {
                 "s": 5,
                 "f": 0
-              },
-              {
-                "s": 13,
-                "f": 5
               }
             ]
           },
@@ -812,7 +781,8 @@
               },
               {
                 "s": 13,
-                "f": 5
+                "f": 5,
+                "tech": "/"
               }
             ]
           },
@@ -1858,7 +1828,8 @@
               },
               {
                 "s": 3,
-                "f": 4
+                "f": 4,
+                "tech": "/"
               }
             ]
           },
@@ -2321,7 +2292,8 @@
               },
               {
                 "s": 3,
-                "f": 4
+                "f": 4,
+                "tech": "/"
               }
             ]
           },
@@ -5001,10 +4973,30 @@
       }
     ]
   },
-  "x_source": {
-    "type": "banjo-hangout",
-    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/leather_britches-1044.tef",
-    "author": "schlange",
-    "converted_at": "2026-01-03T22:37:35.993187"
-  }
+  "reading_list": [
+    {
+      "from_measure": 1,
+      "to_measure": 24
+    },
+    {
+      "from_measure": 17,
+      "to_measure": 23
+    },
+    {
+      "from_measure": 25,
+      "to_measure": 33
+    },
+    {
+      "from_measure": 26,
+      "to_measure": 32
+    },
+    {
+      "from_measure": 34,
+      "to_measure": 42
+    },
+    {
+      "from_measure": 35,
+      "to_measure": 41
+    }
+  ]
 }

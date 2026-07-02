@@ -3,7 +3,7 @@
   "metadata": {
     "title": "Dixie Hoedown",
     "time_signature": "2/4",
-    "tempo": 120
+    "tempo": 100
   },
   "timing": {
     "ticks_per_beat": 480
@@ -124,7 +124,8 @@
             "notes": [
               {
                 "s": 4,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -133,7 +134,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 12
+                "f": 0,
+                "finger": "I"
               }
             ]
           },
@@ -423,7 +425,8 @@
             "notes": [
               {
                 "s": 2,
-                "f": 11
+                "f": 5,
+                "finger": "T"
               }
             ]
           },
@@ -523,7 +526,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 12
+                "f": 0,
+                "finger": "I"
               }
             ]
           },
@@ -581,7 +585,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 12
+                "f": 0,
+                "finger": "I"
               }
             ]
           },
@@ -616,7 +621,8 @@
             "notes": [
               {
                 "s": 2,
-                "f": 6
+                "f": 0,
+                "finger": "T"
               }
             ]
           }
@@ -630,7 +636,8 @@
             "notes": [
               {
                 "s": 2,
-                "f": 14
+                "f": 8,
+                "finger": "T"
               }
             ]
           },
@@ -698,7 +705,8 @@
             "notes": [
               {
                 "s": 2,
-                "f": 13
+                "f": 7,
+                "finger": "T"
               }
             ]
           },
@@ -775,7 +783,8 @@
             "notes": [
               {
                 "s": 2,
-                "f": 11
+                "f": 5,
+                "finger": "T"
               }
             ]
           },
@@ -852,7 +861,8 @@
             "notes": [
               {
                 "s": 2,
-                "f": 9
+                "f": 3,
+                "finger": "T"
               }
             ]
           },
@@ -1101,7 +1111,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 14
+                "f": 2,
+                "finger": "I"
               }
             ]
           },
@@ -1110,7 +1121,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 3
+                "f": 3,
+                "tech": "/"
               }
             ]
           },
@@ -1128,7 +1140,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 12
+                "f": 0,
+                "finger": "I"
               }
             ]
           },
@@ -1205,7 +1218,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 14
+                "f": 2,
+                "finger": "I"
               }
             ]
           }
@@ -1348,10 +1362,46 @@
       }
     ]
   },
-  "x_source": {
-    "type": "banjo-hangout",
-    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/tab-dixie-hoedown-23409-3149310112018.tef",
-    "author": "Yohansen",
-    "converted_at": "2026-01-03T22:37:36.150082"
-  }
+  "reading_list": [
+    {
+      "from_measure": 1,
+      "to_measure": 10
+    },
+    {
+      "from_measure": 3,
+      "to_measure": 9
+    },
+    {
+      "from_measure": 11,
+      "to_measure": 19
+    },
+    {
+      "from_measure": 12,
+      "to_measure": 17
+    },
+    {
+      "from_measure": 20,
+      "to_measure": 21
+    },
+    {
+      "from_measure": 3,
+      "to_measure": 10
+    },
+    {
+      "from_measure": 3,
+      "to_measure": 9
+    },
+    {
+      "from_measure": 11,
+      "to_measure": 19
+    },
+    {
+      "from_measure": 12,
+      "to_measure": 17
+    },
+    {
+      "from_measure": 20,
+      "to_measure": 21
+    }
+  ]
 }

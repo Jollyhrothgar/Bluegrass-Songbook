@@ -1,9 +1,9 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "Cherokee Shuffle (A)",
+    "title": "Cherokee Shuffle (A).tef",
     "time_signature": "2/2",
-    "tempo": 200
+    "tempo": 100
   },
   "timing": {
     "ticks_per_beat": 480
@@ -42,7 +42,8 @@
             "notes": [
               {
                 "s": 4,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           }
@@ -92,7 +93,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -133,7 +135,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -178,7 +181,8 @@
             "notes": [
               {
                 "s": 4,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           }
@@ -228,7 +232,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 4
+                "f": 4,
+                "tech": "/"
               }
             ]
           },
@@ -260,7 +265,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -278,7 +284,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               },
               {
                 "s": 5,
@@ -332,7 +339,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -350,7 +358,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 4
+                "f": 4,
+                "tech": "h"
               }
             ]
           },
@@ -400,7 +409,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -459,7 +469,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -477,7 +488,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -572,7 +584,8 @@
             "notes": [
               {
                 "s": 4,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           }
@@ -654,7 +667,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -672,7 +686,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 4
+                "f": 4,
+                "tech": "h"
               }
             ]
           },
@@ -722,7 +737,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -781,7 +797,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -799,7 +816,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 4
+                "f": 4,
+                "tech": "h"
               }
             ]
           },
@@ -890,7 +908,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -908,7 +927,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 4
+                "f": 4,
+                "tech": "h"
               }
             ]
           },
@@ -958,7 +978,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -1017,7 +1038,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -1035,7 +1057,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -1076,7 +1099,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -1094,7 +1118,8 @@
             "notes": [
               {
                 "s": 1,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               },
               {
                 "s": 5,
@@ -1148,7 +1173,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 0
+                "f": 0,
+                "tech": "p"
               }
             ]
           },
@@ -1166,7 +1192,8 @@
             "notes": [
               {
                 "s": 3,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           },
@@ -1320,7 +1347,8 @@
             "notes": [
               {
                 "s": 4,
-                "f": 2
+                "f": 2,
+                "tech": "h"
               }
             ]
           }
@@ -1342,10 +1370,46 @@
       }
     ]
   },
-  "x_source": {
-    "type": "banjo-hangout",
-    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cherokee-shuffl-21874-3927142142016.tef",
-    "author": "ShhhItsASecret",
-    "converted_at": "2026-01-03T22:37:35.871011"
-  }
+  "reading_list": [
+    {
+      "from_measure": 1,
+      "to_measure": 9
+    },
+    {
+      "from_measure": 2,
+      "to_measure": 8
+    },
+    {
+      "from_measure": 10,
+      "to_measure": 20
+    },
+    {
+      "from_measure": 11,
+      "to_measure": 19
+    },
+    {
+      "from_measure": 21,
+      "to_measure": 21
+    },
+    {
+      "from_measure": 2,
+      "to_measure": 9
+    },
+    {
+      "from_measure": 2,
+      "to_measure": 8
+    },
+    {
+      "from_measure": 10,
+      "to_measure": 20
+    },
+    {
+      "from_measure": 11,
+      "to_measure": 19
+    },
+    {
+      "from_measure": 22,
+      "to_measure": 22
+    }
+  ]
 }

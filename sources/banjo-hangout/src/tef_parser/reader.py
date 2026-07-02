@@ -478,7 +478,7 @@ class TEFReader:
         # Return in OTF order: [1st, 2nd, 3rd, 4th, 5th] (reverse of how they appear)
         return midi_pitches[::-1] if len(midi_pitches) == num_strings else []
 
-    def parse_instruments(self) -> list[TEFInstrument]:
+    def parse_instruments(self, min_offset: int = 0) -> list[TEFInstrument]:
         """Parse instrument definitions from the file.
 
         Instrument records in TEF v3 follow a structured format:
@@ -489,6 +489,11 @@ class TEFReader:
         To distinguish real instruments from text mentions, we require:
         1. Instrument name followed by null byte
         2. Then a valid tuning name (short, no spaces)
+
+        min_offset: ignore pattern matches before this byte offset. V2 callers
+        pass the header text region end (v2_header_end) so instrument names
+        mentioned in title/composer/comments (e.g. 18998: "arranged for banjo
+        by Michael Corcoran") are not mistaken for instrument records.
         """
         instruments = []
 
@@ -538,7 +543,7 @@ class TEFReader:
 
         for name_pattern, default_strings in instrument_patterns:
             # Search for all occurrences
-            idx = 0
+            idx = min_offset
             while True:
                 idx = self.data.find(name_pattern, idx)
                 if idx < 0:
@@ -619,6 +624,20 @@ class TEFReader:
                 else:
                     # No separator - tuning ends at current position
                     tuning_end = pos + 1
+
+                # Count the record's actual tuning bytes by scanning backward
+                # while bytes are in valid range (one byte per string). The
+                # name pattern's default string count can be wrong — e.g.
+                # 18998 has a record named "Banjo" with SIX tuning bytes (the
+                # header's total string count only adds up with 6). Trust the
+                # record over the name.
+                scan = tuning_end - 1
+                counted = 0
+                while scan >= 0 and counted < 8 and 0x10 <= self.data[scan] <= 0x60:
+                    counted += 1
+                    scan -= 1
+                if 3 <= counted <= 8:
+                    num_strings = counted
 
                 tuning_start = tuning_end - num_strings
 
@@ -1063,10 +1082,10 @@ class TEFReader:
         """Parse instruments from V2 format.
 
         V2 stores instrument info at the end of the file, similar to v3.
+        The V2 header text region (title/composer/comments, ending at
+        v2_header_end) may mention instrument names in prose — exclude it.
         """
-        # Use same logic as v3 - instrument names appear in the file
-        # Just call the existing parser
-        return self.parse_instruments()
+        return self.parse_instruments(min_offset=header.v2_header_end)
 
     def parse_reading_list_v2(self, header: TEFHeader) -> list[TEFReadingListEntry]:
         """Parse reading list (repeat structure) from V2 format.
