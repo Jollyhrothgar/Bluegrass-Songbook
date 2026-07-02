@@ -1,5 +1,38 @@
 # Session Handoff — TEF↔OTF Fidelity Loop Spike
 
+## RESUME PROMPT (paste into a new session)
+
+```
+Let's continue the TEF→OTF fidelity work.
+
+Connect these folders:
+- /Users/mike/workspace/bluegrassbook.com/feature-otf-editor  (worktree, branch feature/otf-editor)
+- /Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs  (TEF sources)
+- /Users/mike/workspace/bluegrassbook.com  (container — needed for git via
+  GIT_DIR=<mount>/.bare/worktrees/feature-otf-editor,
+  GIT_WORK_TREE=<mount>/feature-otf-editor, and override nbstripout:
+  -c filter.nbstripout.clean=cat -c filter.nbstripout.required=false)
+
+Read SESSION-HANDOFF.md first (waves 4–6 = last session). Current state:
+- Oracle harness is live: spike/oracle_verify.py --batch spike/oracle_manifest.json
+  re-verifies all 107 source-backed files against TablEdit MusicXML exports in
+  spike/oracle/batch/ (no GUI needed — exports already exist).
+- Baseline: 56 VERIFIED / 51 DIVERGED. My policy: only 100% oracle match counts.
+- Tests: python3 -m pytest tests/parser/ (30 pass). Regenerate parsed/ after any
+  parser change and re-run the batch verifier.
+
+Next targets, in order (details + file lists in "Sixth wave" below):
+1. Non-/4 measure grid: 16-slots-per-measure quantization breaks 3/4 and 6/8
+   (13648, 18136, 21802, 22228). Root fix = carry grid units/ticks end-to-end.
+2. Near-miss class (~14 files ≥97%): residual triplet scales + a few dropped notes.
+3. Multi-track: build the Rich-MIDI oracle leg (MusicXML only exports the last
+   module); also check the 0% pairing cases (14699, 14809, 12574).
+4. Single-track deep cases: fingering-circle/bracket-note files (19600, 21690…).
+
+TablEdit automation recipe (if new exports needed) is in "Sixth wave" / "The loop
+design". Commit each landed fix; I'll push.
+```
+
 **Goal:** Finish the browser tab editor. Mike doesn't care which engine renders —
 just that tabs **render + edit in-browser + play back** across banjo, mandolin,
 guitar, bass. The real pain point is the **debug-loop tedium** for TEF→OTF
