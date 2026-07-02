@@ -1481,8 +1481,16 @@ class TEFReader:
         note_events = self.parse_note_events_v2(header)
         time_signature_changes = getattr(self, "_v2_ts_changes", [])
 
-        # Filter chord diagram notes that accompany melody notes
-        note_events = self._filter_chord_diagrams(note_events)
+        # V2 byte3 is duration+dynamic (plus tie bit 0x80), NOT a marker —
+        # every fret component in the stream is a real note. The V3-style
+        # marker filter (_filter_chord_diagrams) read byte3 as a char and
+        # silently dropped every note whose duration+dynamic combination
+        # didn't happen to spell I/F/L/K/O/C — e.g. 0x47 'G' (23408),
+        # 0x41 'A' (21678), 0x40 '@' (12124), and whole strummed chords
+        # in 10770. Only the chord-overlay skip (effect2 == 0x07) applies.
+        note_events = [
+            e for e in note_events
+            if not (len(e.raw_data) > 5 and e.raw_data[5] == 0x07)]
 
         # Anacrusis (pickup) measure: TEF stores measure 1's notes
         # RIGHT-ALIGNED in a full header-ts grid slot (same storage trick
