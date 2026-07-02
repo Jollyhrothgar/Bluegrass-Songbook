@@ -4639,5 +4639,10 @@
       "from_measure": 26,
       "to_measure": 30
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-down-yonder-14613-3353422011.tef",
+    "converted_at": "2026-07-02T11:24:53.411207"
+  }
 }

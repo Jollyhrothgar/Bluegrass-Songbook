@@ -1411,5 +1411,10 @@
       "from_measure": 22,
       "to_measure": 22
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "21874.tef",
+    "converted_at": "2026-07-02T11:24:53.124548"
+  }
 }

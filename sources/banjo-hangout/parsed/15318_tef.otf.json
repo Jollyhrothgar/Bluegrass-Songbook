@@ -1419,5 +1419,10 @@
       "from_measure": 18,
       "to_measure": 18
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-harvest-home-15318-105722462011.tef",
+    "converted_at": "2026-07-02T11:24:53.014062"
+  }
 }

@@ -1900,5 +1900,10 @@
       "from_measure": 26,
       "to_measure": 26
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "18926.tef",
+    "converted_at": "2026-07-02T11:24:53.040707"
+  }
 }

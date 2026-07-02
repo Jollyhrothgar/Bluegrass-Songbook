@@ -1130,10 +1130,14 @@ class TEFReader:
                         break
                     local_string -= num_track_strings
 
-                # Convert to 16th-note position for consistency with v3 format
-                # (MIDI exporter expects positions in 16th note units)
-                POSITIONS_PER_MEASURE = 16  # 16th notes in 4/4
-                abs_position = measure * POSITIONS_PER_MEASURE + (position_in_measure * POSITIONS_PER_MEASURE // ts_size)
+                # Carry positions in the NATIVE V2 grid: 256 units per whole
+                # note, i.e. ts_size units per measure (1 unit = 7.5 MIDI
+                # ticks at 480/quarter). The old `* 16 // ts_size` forced 16
+                # slots per measure — exact only when the measure divides
+                # into 16 even slots the notes actually sit on; it crushed
+                # 3/4 and 6/8 grids (slot = 90 ticks vs real 16th = 120) and
+                # any 32nds in 4/4. Downstream (otf.py) converts exactly.
+                abs_position = measure * ts_size + position_in_measure
 
                 # Create note event
                 events.append(TEFNoteEvent(

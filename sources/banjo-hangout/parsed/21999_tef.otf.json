@@ -1249,5 +1249,10 @@
       "from_measure": 20,
       "to_measure": 20
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-arkansas-hoosie-21999-940122272016.tef",
+    "converted_at": "2026-07-02T11:24:53.128082"
+  }
 }

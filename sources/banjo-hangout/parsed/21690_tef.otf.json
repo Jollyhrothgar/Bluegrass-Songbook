@@ -999,5 +999,10 @@
       "from_measure": 9,
       "to_measure": 16
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-paddy-on-the-tu-21690-1750131112016.tef",
+    "converted_at": "2026-07-02T11:24:53.115915"
+  }
 }

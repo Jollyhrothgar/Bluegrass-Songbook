@@ -2329,5 +2329,10 @@
       "from_measure": 1,
       "to_measure": 8
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-lonesome-fiddle-21057-361621222015.tef",
+    "converted_at": "2026-07-02T11:24:53.521979"
+  }
 }

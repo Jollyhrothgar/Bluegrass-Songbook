@@ -4216,5 +4216,10 @@
       "from_measure": 12,
       "to_measure": 32
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-cherokee-shuffl-24087-5618122812020.tef",
+    "converted_at": "2026-07-02T11:24:53.602468"
+  }
 }

@@ -3324,5 +3324,10 @@
       "from_measure": 1,
       "to_measure": 49
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-arkansas-travel-20556-233610972014.tef",
+    "converted_at": "2026-07-02T11:24:53.058329"
+  }
 }

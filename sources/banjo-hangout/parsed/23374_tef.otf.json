@@ -2579,5 +2579,10 @@
       "from_measure": 27,
       "to_measure": 39
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-jerusalem-ridge-23374-20231218102018.tef",
+    "converted_at": "2026-07-02T11:24:53.166217"
+  }
 }

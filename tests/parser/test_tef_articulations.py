@@ -19,7 +19,11 @@ REPO_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(REPO_ROOT / "sources" / "banjo-hangout" / "src"))
 
 from tef_parser import TEFReader, tef_to_otf  # noqa: E402
-from tef_parser.otf import compute_articulations, has_legato_effect  # noqa: E402
+from tef_parser.otf import (  # noqa: E402
+    articulation_max_gap,
+    compute_articulations,
+    has_legato_effect,
+)
 
 TEF_23398 = REPO_ROOT / "sources" / "banjo-hangout" / "downloads" / "23398.tef"
 
@@ -38,9 +42,12 @@ def test_legato_sources_detected(tef_23398):
 def test_articulations_match_tabledit_oracle(tef_23398):
     """All 5 legato pairs resolve to techniques: 4 pull-offs + 1 hammer-on.
 
-    Eighth-note pairs (position gap 4) must pair, not just 32nd-note pairs.
+    Eighth-note pairs (gap 32 in native V2 grid units) must pair, not
+    just 32nd-note pairs.
     """
-    arts = compute_articulations(tef_23398.note_events)
+    arts = compute_articulations(
+        tef_23398.note_events,
+        max_gap=articulation_max_gap(tef_23398.header))
     techs = sorted(arts.values())
     assert techs == ["h", "p", "p", "p", "p"], f"got {arts}"
 

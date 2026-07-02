@@ -2264,5 +2264,10 @@
       "from_measure": 29,
       "to_measure": 29
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-done-gone-15032-1782342011.tef",
+    "converted_at": "2026-07-02T11:24:52.995319"
+  }
 }

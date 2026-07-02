@@ -1051,5 +1051,10 @@
       "from_measure": 13,
       "to_measure": 16
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-marching-jaybir-20911-3841512122014.tef",
+    "converted_at": "2026-07-02T11:24:53.067187"
+  }
 }

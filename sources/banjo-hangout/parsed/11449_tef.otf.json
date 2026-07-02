@@ -7476,5 +7476,10 @@
       "from_measure": 30,
       "to_measure": 73
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "wheel_hoss-2430.tef",
+    "converted_at": "2026-07-02T11:24:53.278728"
+  }
 }

@@ -5066,5 +5066,10 @@
       "from_measure": 10,
       "to_measure": 26
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-daleys-reel-12135-345886112009.tef",
+    "converted_at": "2026-07-02T11:24:53.342253"
+  }
 }

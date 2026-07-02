@@ -6723,5 +6723,10 @@
       "from_measure": 35,
       "to_measure": 41
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "leather_britches-1044.tef",
+    "converted_at": "2026-07-02T11:24:53.242933"
+  }
 }

@@ -1084,5 +1084,10 @@
       "from_measure": 14,
       "to_measure": 14
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-shuckin-the-cor-12123-2223135112009.tef",
+    "converted_at": "2026-07-02T11:24:52.972683"
+  }
 }

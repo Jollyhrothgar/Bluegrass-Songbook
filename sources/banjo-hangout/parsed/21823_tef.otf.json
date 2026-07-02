@@ -4428,5 +4428,10 @@
       "from_measure": 17,
       "to_measure": 18
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-maidens-prayer-21823-4941131832016.tef",
+    "converted_at": "2026-07-02T11:24:53.539898"
+  }
 }

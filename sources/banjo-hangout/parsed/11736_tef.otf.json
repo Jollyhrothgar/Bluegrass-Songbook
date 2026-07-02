@@ -1598,5 +1598,10 @@
       "from_measure": 13,
       "to_measure": 20
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-angeline-the-ba-11736-44510492009.tef",
+    "converted_at": "2026-07-02T11:24:52.965868"
+  }
 }

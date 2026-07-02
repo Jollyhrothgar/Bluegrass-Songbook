@@ -1255,5 +1255,10 @@
       "from_measure": 18,
       "to_measure": 18
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-liberty-16825-4752172122012.tef",
+    "converted_at": "2026-07-02T11:24:53.021560"
+  }
 }

@@ -2194,5 +2194,10 @@
       "from_measure": 9,
       "to_measure": 16
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-salt-creek-11723-713143082009.tef",
+    "converted_at": "2026-07-02T11:24:53.315077"
+  }
 }

@@ -2757,5 +2757,10 @@
       "from_measure": 37,
       "to_measure": 37
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-gold-rush-25010-550201782021.tef",
+    "converted_at": "2026-07-02T11:24:53.210742"
+  }
 }

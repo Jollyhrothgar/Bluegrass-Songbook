@@ -2930,5 +2930,10 @@
       "from_measure": 38,
       "to_measure": 38
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-ragtime-annie-17674-44661682012.tef",
+    "converted_at": "2026-07-02T11:24:53.028529"
+  }
 }

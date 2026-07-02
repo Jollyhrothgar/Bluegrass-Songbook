@@ -2209,5 +2209,10 @@
       "from_measure": 11,
       "to_measure": 18
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-sally-ann-11722-54143082009.tef",
+    "converted_at": "2026-07-02T11:24:53.310240"
+  }
 }

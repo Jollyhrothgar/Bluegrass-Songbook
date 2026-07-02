@@ -1403,5 +1403,10 @@
       "from_measure": 20,
       "to_measure": 21
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-dixie-hoedown-23409-3149310112018.tef",
+    "converted_at": "2026-07-02T11:24:53.186698"
+  }
 }

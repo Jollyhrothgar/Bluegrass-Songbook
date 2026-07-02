@@ -1858,5 +1858,10 @@
       "from_measure": 31,
       "to_measure": 31
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "tab-waterbound-21678-201131012016.tef",
+    "converted_at": "2026-07-02T11:24:53.111900"
+  }
 }

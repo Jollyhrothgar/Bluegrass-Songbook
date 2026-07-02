@@ -328,8 +328,28 @@ def technique_from_event(event: TEFNoteEvent) -> str | None:
     return None
 
 
-def compute_articulations(note_events: list[TEFNoteEvent]) -> dict[tuple[int, int, int], str]:
+def articulation_max_gap(header) -> int:
+    """Half a measure, in the units event.position carries for this format.
+
+    V2 positions are native grid units (ts_size per measure); V3 positions
+    are 16 slots per measure.
+    """
+    if header.is_v2:
+        return (header.v2_ts_size or 256) // 2
+    return 8
+
+
+def compute_articulations(
+    note_events: list[TEFNoteEvent],
+    max_gap: int | None = None,
+) -> dict[tuple[int, int, int], str]:
     """Compute articulation techniques based on note sequence and fret direction.
+
+    max_gap: largest source→destination distance (in whatever units
+    event.position carries) still treated as a legato pair. For V2 events
+    (native grid, 256 units/whole) pass ts_size // 2 = half a measure —
+    the behavior oracle-verified on 23398. Defaults to 8 for V3's
+    16-slots-per-measure positions (also half a measure).
 
     In TablEdit V2 format, legato is marked with 0x02 on the SOURCE note, but
     the actual technique (hammer-on vs pull-off) depends on fret direction:
@@ -342,6 +362,8 @@ def compute_articulations(note_events: list[TEFNoteEvent]) -> dict[tuple[int, in
         Dict mapping (track, position, string) to technique code for DESTINATION notes
     """
     articulations: dict[tuple[int, int, int], str] = {}
+    if max_gap is None:
+        max_gap = 8
 
     # Plausibility gate (oracle-verified against TablEdit MusicXML exports):
     # in clean files (e.g. 23398) the effect1 byte of melody notes only takes
@@ -392,12 +414,10 @@ def compute_articulations(note_events: list[TEFNoteEvent]) -> dict[tuple[int, in
                 if next_result:
                     _, dest_fret = next_result
 
-                    # Check if notes are close enough to be a legato pair.
-                    # Position unit is a 32nd note (verified against TablEdit's
-                    # own MusicXML export of 23398): eighth-note hammer/pull
-                    # pairs sit 4 units apart, 32nd pairs 1 unit apart. Allow
-                    # up to one beat (8 units) between source and destination.
-                    if next_event.position - event.position <= 8:
+                    # Check if notes are close enough to be a legato pair
+                    # (see max_gap in the docstring; oracle-verified on
+                    # 23398: all eighth-note hammer/pull pairs must pair).
+                    if next_event.position - event.position <= max_gap:
                         # Same fret cannot be a hammer-on or pull-off — a
                         # repeated note with a stray flag is not a technique.
                         if dest_fret == source_fret and not is_slide_effect(event):
@@ -546,22 +566,32 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
 
     # Pre-compute articulations based on note sequence and fret direction
     # This gives us a map of (track, position, string) -> technique for destination notes
-    articulations = compute_articulations(tef.note_events)
+    # V2 positions are native grid units — pass a half-measure gap in those units
+    articulations = compute_articulations(
+        tef.note_events, max_gap=articulation_max_gap(tef.header))
 
-    # Group note events by track and measure
-    # TEF position is in 16th note grid, 16 positions per measure
-    # Calculate ticks per position based on actual time signature from TEF
-    # ticks_per_beat = 480 (standard MIDI), ticks_per_measure = beats * 480
+    # Group note events by track and measure.
+    #
+    # V2: event.position is in the NATIVE TEF grid — 256 units per whole
+    # note, ts_size = 256*num/den units per measure. Conversion to MIDI
+    # ticks (480/quarter) is exact: 1 unit = 1920/256 = 7.5 ticks. This
+    # replaced a lossy 16-slots-per-measure quantization that broke every
+    # meter whose real note grid doesn't sit on measure/16 slots (3/4,
+    # 6/8 — oracle-confirmed on 13648/18136: slot 90 ticks vs true 120).
+    #
+    # V3: positions remain in the 16-slots-per-measure grid emitted by
+    # parse_note_events(); ticks_per_measure = num * (whole/den) where a
+    # quarter is 480 ticks (the old `num * 480` was only correct for /4
+    # meters — oracle-confirmed on 13654, 2/2).
     POSITIONS_PER_MEASURE = 16
-    # ticks_per_measure = numerator * (whole note / denominator) where a
-    # quarter note is 480 ticks. The old `numerator * 480` was only correct
-    # for /4 signatures: a 2/2 measure is 1920 ticks (not 960), a 6/8
-    # measure 1440 (not 2880). Oracle-confirmed on 13654 (2/2): every tick
-    # landed at exactly half its true position.
     beats_per_measure = tef.header.v2_time_num  # Time signature numerator
     denom = tef.header.v2_time_denom or 4
     ticks_per_measure = beats_per_measure * 480 * 4 // denom
     TICKS_PER_POSITION = ticks_per_measure // POSITIONS_PER_MEASURE
+    if tef.header.is_v2:
+        units_per_measure = tef.header.v2_ts_size or 256
+    else:
+        units_per_measure = POSITIONS_PER_MEASURE
 
     track_events: dict[str, dict[int, list[tuple[int, TEFNoteEvent]]]] = {}
 
@@ -579,9 +609,15 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             track_events[track_id] = {}
 
         # Calculate measure and tick within measure
-        measure = (event.position // POSITIONS_PER_MEASURE) + 1
-        position_in_measure = event.position % POSITIONS_PER_MEASURE
-        tick = position_in_measure * TICKS_PER_POSITION
+        measure = (event.position // units_per_measure) + 1
+        position_in_measure = event.position % units_per_measure
+        if tef.header.is_v2:
+            # Exact: 1 native unit = 1920/256 = 7.5 ticks. Positions are
+            # multiples of 2 in practice (finest TablEdit value = 64th
+            # note = 4 units), so the //2 never truncates.
+            tick = position_in_measure * 15 // 2
+        else:
+            tick = position_in_measure * TICKS_PER_POSITION
 
         # V2 triplet timing (TuxGuitar TESongParser): the duration code
         # (byte3 & 0x0f) encodes the division — code % 3 == 2 means triplet
