@@ -1114,14 +1114,15 @@ class TEFReader:
                 # This is a note
                 fret = fret_raw - 1
 
-                # Handle high frets (bit 5 set means add effect2 to fret)
-                # But NOT when effect2 is a special marker:
-                # 0x06=text annotation, 0x07=chord overlay, 0x0c/0x12=fingering annotations
-                # These annotation codes appear to be multiples of 6 (6, 12, 18)
-                effect2_val = rec[5] if len(rec) > 5 else 0
-                annotation_codes = {0x06, 0x07, 0x0c, 0x12}
-                if (fret_byte >> 5) & 0x01 and effect2_val not in annotation_codes and effect2_val > 0:
-                    fret += effect2_val
+                # Bit 5 of the fret byte means "effect2 carries an
+                # annotation", NEVER a fret extension (fret_raw already
+                # spans 0..24, the full banjo range). Oracle-confirmed:
+                # in 22446 e2 holds left-hand fingering digits (2/3/5) —
+                # the old `fret += effect2` shifted those notes to wrong
+                # frets; in 21802 e2 is 0xa2/0xa4 — the add pushed frets
+                # past 24 and the notes were silently dropped. The
+                # annotation itself (fingering, text=0x06, chord=0x07) is
+                # consumed downstream from raw_data.
 
                 # Extract marker from byte 3 (duration byte contains marker in upper bits)
                 # Common markers: 'I'=0x49 (Initial), 'F'=0x46 (Fret), 'C'=0x43 (Chord)

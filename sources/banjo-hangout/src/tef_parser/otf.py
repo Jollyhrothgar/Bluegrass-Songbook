@@ -621,14 +621,21 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
 
         # V2 triplet timing (TuxGuitar TESongParser): the duration code
         # (byte3 & 0x0f) encodes the division — code % 3 == 2 means triplet
-        # (3:2), and the note's position is stored on the straight grid but
-        # belongs at x4/3 of its offset within the quarter note (480 ticks).
-        # Per-note and authoritative; replaces the V3-style 'K'-marker
-        # group heuristic, which only matched one dynamic level by accident.
+        # (3:2). The note's position is stored on the straight grid but
+        # belongs at x4/3 of its offset within the triplet SPAN, which
+        # depends on the note value: span = 2 x base duration, where
+        # base = whole >> (code // 3). code 11 = eighth triplet (span one
+        # beat, 480), code 8 = quarter triplet (span a half note, 960 —
+        # oracle-confirmed on 15313 m53/56: 1440 -> 1600), code 14 = 16th
+        # triplet (span 240). Per-note and authoritative; replaces the
+        # V3-style 'K'-marker group heuristic, which only matched one
+        # dynamic level by accident.
         if (tef.header.is_v2 and event.raw_data and len(event.raw_data) >= 4
                 and (event.raw_data[3] & 0x0f) % 3 == 2):
-            in_quarter = tick % 480
-            tick = tick - in_quarter + (in_quarter * 4) // 3
+            code = event.raw_data[3] & 0x0f
+            span = 2 * (1920 >> (code // 3))
+            in_span = tick % span
+            tick = tick - in_span + (in_span * 4) // 3
 
         if measure not in track_events[track_id]:
             track_events[track_id][measure] = []
