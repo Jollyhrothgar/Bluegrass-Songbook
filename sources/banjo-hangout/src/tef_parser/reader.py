@@ -3,6 +3,7 @@
 Copied from TablEdit_Reverse project.
 """
 
+import bisect
 from dataclasses import dataclass, field
 from pathlib import Path
 import struct
@@ -929,6 +930,42 @@ class TEFReader:
         if not track_string_counts:
             track_string_counts = [5]  # Default banjo
 
+        # V3 positions are CONTINUOUS 16th slots; a measure shorter than
+        # the header signature occupies proportionally fewer slots (2/4
+        # in a 4/4 tune = 8 slots — oracle-confirmed on 27493 m30/m49).
+        # Build cumulative slot boundaries from the measure table so
+        # continuous slots map to (measure, slot-in-measure). Only
+        # engaged when the table contains non-default measures.
+        measure_ts = self.parse_measure_table_v3()
+        slot_starts: list[int] = []
+        slot_counts: list[int] = []
+        ts_changes: list[TEFTimeSignatureChange] = []
+        if measure_ts and any(
+                num and den and 16 * num // den != 16
+                for num, den in measure_ts):
+            start = 0
+            for k, (num, den) in enumerate(measure_ts):
+                slots = 16 * num // den if (num and den) else 16
+                slot_starts.append(start)
+                slot_counts.append(slots)
+                if slots != 16 and num and den:
+                    ts_changes.append(TEFTimeSignatureChange(
+                        measure=k + 1, numerator=num, denominator=den))
+                start += slots
+        self._v3_ts_changes = ts_changes
+
+        def map_slot(position: int) -> int:
+            """Continuous slot -> measure*16 + slot_in_measure."""
+            if not slot_starts:
+                return position
+            idx = bisect.bisect_right(slot_starts, position) - 1
+            rel = position - slot_starts[idx]
+            if rel >= slot_counts[idx] and idx == len(slot_starts) - 1:
+                # beyond the table: assume header-default measures
+                extra = rel - slot_counts[idx]
+                return (idx + 1 + extra // 16) * 16 + extra % 16
+            return idx * 16 + rel
+
         # Non-note component types (from TuxGuitar TEInputStream.java)
         NON_NOTE_TYPES = {0x33, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3D,
                          0x75, 0x78, 0x7D, 0x7E, 0xB6, 0xB7, 0xBD, 0xBE, 0xFD, 0xFE}
@@ -976,8 +1013,8 @@ class TEFReader:
                     break
                 local_string -= num_strings
 
-            # Calculate position (in 16th note grid)
-            position = location // VALUE_PER_POSITION
+            # Calculate position (in 16th note grid, measure-table aware)
+            position = map_slot(location // VALUE_PER_POSITION)
 
             # Read actual marker from record[5] (I=Initial, F=Fret, L=Legato, etc.)
             marker_byte = record[5]
@@ -1295,6 +1332,37 @@ class TEFReader:
                     return instruments
         return []
 
+    def parse_measure_table_v3(self) -> list[tuple[int, int]]:
+        """Parse the V3 per-measure table via header pointer dword 0x5c.
+
+        Layout (oracle-derived from 27493, XML-confirmed 2/4 measures at
+        m30/m49): [u16 ?][u16 count] then count 8-byte records. Record k
+        (0-based) describes measure k (1-based measures; record 0 is a
+        stub): byte0 = denominator, byte1 = numerator. Zero bytes mean
+        "header default".
+
+        Returns [] if the magic/table is absent or implausible. Otherwise
+        a list indexed by measure-1 of (numerator, denominator), with 0s
+        for default entries.
+        """
+        data = self.data
+        if len(data) < 0x64 or data[0x38:0x3C] not in (b"debt", b"tbed"):
+            return []
+        ptr = struct.unpack("<I", data[0x5c:0x60])[0]
+        if not (0 < ptr < len(data) - 4):
+            return []
+        _, count = struct.unpack("<HH", data[ptr:ptr + 4])
+        if not (1 <= count <= 2048) or ptr + 4 + count * 8 > len(data):
+            return []
+        out = []
+        for k in range(1, count):
+            rec = data[ptr + 4 + k * 8:ptr + 4 + (k + 1) * 8]
+            den, num = rec[0], rec[1]
+            if den not in (0, 1, 2, 4, 8, 16) or num > 32:
+                return []
+            out.append((num, den))
+        return out
+
     def parse_track_records_v3(self) -> list[TEFInstrument]:
         """Parse V3 (binary container) track records via the header pointer.
 
@@ -1573,4 +1641,5 @@ class TEFReader:
             sections=sections,
             note_events=note_events,
             reading_list=reading_list,
+            time_signature_changes=getattr(self, "_v3_ts_changes", []),
         )

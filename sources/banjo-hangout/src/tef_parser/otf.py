@@ -260,11 +260,12 @@ def is_tied_note(event: TEFNoteEvent) -> bool:
 
     Tied notes should not be re-articulated - they just extend the previous note's duration.
     """
-    if event.raw_data and len(event.raw_data) >= 4:
-        marker_byte = event.raw_data[3]
+    if event.raw_data and len(event.raw_data) >= 6:
         if len(event.raw_data) == 6:  # V2
-            return (marker_byte >> 5) & 0x07 == 7
-        return bool(marker_byte & 0x80)
+            return (event.raw_data[3] >> 5) & 0x07 == 7
+        # V3 (12-byte record): high bit of the marker byte (byte 5) —
+        # oracle-confirmed on 25635 m74 (0xe6 notes = XML tie stops).
+        return bool(event.raw_data[5] & 0x80)
     return False
 
 
@@ -716,15 +717,13 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                 otf_event = OTFEvent(tick=tick)
 
                 for evt in events_by_tick[tick]:
-                    # Skip rhythm marker notes (effect1=0x0f or 0x0e) —
-                    # V3 only. In V2, effect1=0x0e appears on real strummed
-                    # chords (oracle-confirmed on 20853 m34: TablEdit
-                    # exports the full chord as plain notes).
-                    if (evt.raw_data and len(evt.raw_data) >= 12):
-                        effect1 = evt.raw_data[4]
-                        if effect1 in (0x0e, 0x0f):
-                            continue
-
+                    # (An old "rhythm marker" skip dropped notes whose
+                    # raw_data[4] was 0x0e/0x0f. In V2 that byte is
+                    # effect1 and appears on real strummed chords
+                    # (oracle: 20853 m34, 11829 mandolin chops); in V3
+                    # it's the component-type byte, so the skip silently
+                    # killed every fret-13/14 note (oracle: 25635
+                    # m48-51). Removed on both paths.)
                     result = evt.decode_string_fret()
                     if result:
                         string, fret = result
