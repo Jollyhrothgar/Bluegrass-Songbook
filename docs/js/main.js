@@ -172,6 +172,10 @@ const autoDetectCheckbox = document.getElementById('editor-auto-detect');
 const editorTransposeUp = document.getElementById('editor-transpose-up');
 const editorTransposeDown = document.getElementById('editor-transpose-down');
 const editorKeySelect = document.getElementById('editor-key-select');
+const editorTabVisual = document.getElementById('editor-tab-visual');
+const editorTabRaw = document.getElementById('editor-tab-raw');
+const visualEditorContainer = document.getElementById('visual-editor-container');
+const editorRawMain = document.getElementById('editor-raw-main');
 
 // Tag dropdown
 const tagDropdownBtn = document.getElementById('tag-dropdown-btn');
@@ -2535,6 +2539,10 @@ function init() {
         editorTransposeUp,
         editorTransposeDown,
         editorKeySelect,
+        editorTabVisual,
+        editorTabRaw,
+        visualEditorContainer,
+        editorRawMain,
         navSearch,
         navAddSong,
         navFavorites,

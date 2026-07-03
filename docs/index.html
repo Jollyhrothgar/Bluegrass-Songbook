@@ -275,27 +275,35 @@
                     Submissions are reviewed before being added to the songbook.
                 </div>
             </div>
-            <div class="editor-main">
-                <div class="editor-input">
-                    <div class="metadata-fields">
-                        <div class="field-row">
-                            <label for="editor-title">Title:</label>
-                            <input type="text" id="editor-title" placeholder="Song title">
-                        </div>
-                        <div class="field-row">
-                            <label for="editor-artist">Artist:</label>
-                            <input type="text" id="editor-artist" placeholder="Artist name">
-                        </div>
-                        <div class="field-row">
-                            <label for="editor-writer">Writer:</label>
-                            <input type="text" id="editor-writer" placeholder="Songwriter(s)">
-                        </div>
-                        <div id="edit-comment-row" class="field-row hidden">
-                            <label for="editor-comment">Edit Comment:</label>
-                            <input type="text" id="editor-comment" placeholder="Describe your changes (e.g., fixed chord alignment, added missing verse)">
-                        </div>
-                    </div>
 
+            <div class="metadata-fields">
+                <div class="field-row">
+                    <label for="editor-title">Title:</label>
+                    <input type="text" id="editor-title" placeholder="Song title">
+                </div>
+                <div class="field-row">
+                    <label for="editor-artist">Artist:</label>
+                    <input type="text" id="editor-artist" placeholder="Artist name">
+                </div>
+                <div class="field-row">
+                    <label for="editor-writer">Writer:</label>
+                    <input type="text" id="editor-writer" placeholder="Songwriter(s)">
+                </div>
+                <div id="edit-comment-row" class="field-row hidden">
+                    <label for="editor-comment">Edit Comment:</label>
+                    <input type="text" id="editor-comment" placeholder="Describe your changes (e.g., fixed chord alignment, added missing verse)">
+                </div>
+            </div>
+
+            <div class="editor-tabs">
+                <button id="editor-tab-visual" class="editor-tab active" type="button">Visual</button>
+                <button id="editor-tab-raw" class="editor-tab" type="button">Raw ChordPro</button>
+            </div>
+
+            <div id="visual-editor-container" class="visual-editor-container"></div>
+
+            <div class="editor-main hidden" id="editor-raw-main">
+                <div class="editor-input">
                     <div class="song-input-container">
                         <div class="editor-content-header">
                             <label for="editor-content">Song Content (paste chord sheets here):</label>
@@ -327,13 +335,6 @@ Blank lines separate verses."></textarea>
                         </details>
                         <button id="chordpro-hints-btn" class="hints-btn" type="button">? ChordPro</button>
                     </div>
-
-                    <div class="editor-actions">
-                        <button id="editor-copy" class="action-btn">Copy ChordPro</button>
-                        <button id="editor-save" class="action-btn">Download .pro</button>
-                        <button id="editor-submit" class="action-btn primary">Submit to Songbook</button>
-                        <span id="editor-status" class="save-status"></span>
-                    </div>
                 </div>
 
                 <div class="editor-preview">
@@ -355,6 +356,13 @@ Blank lines separate verses."></textarea>
                         <p class="preview-placeholder">Enter a song to see preview...</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="editor-actions">
+                <button id="editor-copy" class="action-btn">Copy ChordPro</button>
+                <button id="editor-save" class="action-btn">Download .pro</button>
+                <button id="editor-submit" class="action-btn primary">Submit to Songbook</button>
+                <span id="editor-status" class="save-status"></span>
             </div>
         </div>
 

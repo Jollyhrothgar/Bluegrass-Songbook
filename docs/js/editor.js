@@ -12,6 +12,7 @@ import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetw
 import { trackEditor, trackSubmission } from './analytics.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
 import { openSuperUserRequestModal } from './superuser-request.js';
+import { createVisualEditor } from './visual-editor/visual-editor.js';
 
 /**
  * Get the submitter attribution for issue body.
@@ -54,6 +55,14 @@ let autoDetectCheckboxEl = null;
 let editorTransposeUpEl = null;
 let editorTransposeDownEl = null;
 let editorKeySelectEl = null;
+
+// Visual | Raw tab state
+let editorTabVisualEl = null;
+let editorTabRawEl = null;
+let visualEditorContainerEl = null;
+let editorRawMainEl = null;
+let visualEditor = null;
+let lastMirrored = null;
 
 // Other DOM references
 let navSearchEl = null;
@@ -115,6 +124,12 @@ export function enterEditMode(song, options = {}) {
 
     // Trigger preview update
     updateEditorPreview();
+
+    // If the Visual tab is active, reload the visual editor from the textarea
+    if (visualEditor && editorTabVisualEl?.classList.contains('active')) {
+        visualEditor.loadChordPro(editorContentEl?.value || '');
+        lastMirrored = editorContentEl?.value || '';
+    }
 }
 
 /**
@@ -713,6 +728,46 @@ export function closeHints() {
 }
 
 /**
+ * Activate the Visual or Raw editor tab.
+ * The textarea is the source of truth: switching to Visual reloads it into
+ * the visual editor only if it differs from the last mirrored string.
+ */
+function activateEditorTab(which) {
+    const visual = which === 'visual';
+    if (editorTabVisualEl) editorTabVisualEl.classList.toggle('active', visual);
+    if (editorTabRawEl) editorTabRawEl.classList.toggle('active', !visual);
+    if (visualEditorContainerEl) visualEditorContainerEl.classList.toggle('hidden', !visual);
+    if (editorRawMainEl) editorRawMainEl.classList.toggle('hidden', visual);
+    if (visual) {
+        if (visualEditor && editorContentEl && editorContentEl.value !== lastMirrored) {
+            visualEditor.loadChordPro(editorContentEl.value);
+            lastMirrored = editorContentEl.value;
+        }
+        trackEditor('visual_open', editingSongId || 'new');
+    }
+}
+
+/**
+ * Create the visual editor and mirror its output into the raw textarea.
+ * Submit/copy/download flows keep reading the textarea unchanged.
+ */
+function initVisualEditor() {
+    if (!visualEditorContainerEl) return;
+    visualEditor = createVisualEditor({
+        container: visualEditorContainerEl,
+        onChange(chordpro) {
+            lastMirrored = chordpro;
+            if (editorContentEl) {
+                editorContentEl.value = chordpro;
+                updateEditorPreview();
+            }
+        }
+    });
+    visualEditor.loadChordPro(editorContentEl?.value || '');
+    lastMirrored = editorContentEl?.value || '';
+}
+
+/**
  * Initialize editor module with DOM elements
  */
 export function initEditor(options) {
@@ -739,6 +794,10 @@ export function initEditor(options) {
         editorTransposeUp,
         editorTransposeDown,
         editorKeySelect,
+        editorTabVisual,
+        editorTabRaw,
+        visualEditorContainer,
+        editorRawMain,
         navSearch,
         navAddSong,
         navFavorites,
@@ -773,6 +832,16 @@ export function initEditor(options) {
     navFavoritesEl = navFavorites;
     resultsDivEl = resultsDiv;
     songViewEl = songView;
+    editorTabVisualEl = editorTabVisual;
+    editorTabRawEl = editorTabRaw;
+    visualEditorContainerEl = visualEditorContainer;
+    editorRawMainEl = editorRawMain;
+
+    // Visual | Raw tabs (visual editor mirrors into the textarea)
+    initVisualEditor();
+    if (editorTabVisualEl) editorTabVisualEl.addEventListener('click', () => activateEditorTab('visual'));
+    if (editorTabRawEl) editorTabRawEl.addEventListener('click', () => activateEditorTab('raw'));
+    activateEditorTab('visual');   // visual is the default
 
     // Edit song button
     // window.__editInterceptor is set by work-view.js for placeholders

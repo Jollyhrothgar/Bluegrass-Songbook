@@ -27,6 +27,9 @@ test.describe('Editor Access', () => {
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
 
+        // Visual tab is the default; switch to the Raw tab for textarea access
+        await page.locator('#editor-tab-raw').click();
+
         // Check form fields exist
         await expect(page.locator('#editor-title')).toBeVisible();
         await expect(page.locator('#editor-artist')).toBeVisible();
@@ -63,6 +66,8 @@ test.describe('Editor Content Input', () => {
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
+        // Visual tab is the default; switch to the Raw tab for textarea access
+        await page.locator('#editor-tab-raw').click();
     });
 
     test('can enter title', async ({ page }) => {
@@ -92,6 +97,8 @@ test.describe('Editor Preview', () => {
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
+        // Visual tab is the default; switch to the Raw tab for textarea access
+        await page.locator('#editor-tab-raw').click();
     });
 
     test('preview updates when content changes', async ({ page }) => {
@@ -136,6 +143,8 @@ test.describe('ChordPro Conversion', () => {
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
+        // Visual tab is the default; switch to the Raw tab for textarea access
+        await page.locator('#editor-tab-raw').click();
     });
 
     test('paste with chord-above-lyrics format triggers conversion prompt', async ({ page }) => {
@@ -224,6 +233,8 @@ test.describe('Editor Hints', () => {
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
+        // Visual tab is the default; switch to the Raw tab for textarea access
+        await page.locator('#editor-tab-raw').click();
 
         // Click hints button
         const hintsBtn = page.locator('#hints-btn, .hints-btn, [title*="hint"]');
@@ -252,6 +263,8 @@ test.describe('Editor Copy Function', () => {
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
+        // Visual tab is the default; switch to the Raw tab for textarea access
+        await page.locator('#editor-tab-raw').click();
 
         // Enter content
         const contentArea = page.locator('#editor-content');
@@ -278,6 +291,8 @@ test.describe('Editor Nashville Mode', () => {
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
+        // Visual tab is the default; switch to the Raw tab for textarea access
+        await page.locator('#editor-tab-raw').click();
 
         // Enter content with key
         const contentArea = page.locator('#editor-content');
@@ -312,6 +327,8 @@ test.describe('Editor Validation', () => {
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
+        // Visual tab is the default; switch to the Raw tab for textarea access
+        await page.locator('#editor-tab-raw').click();
 
         // Enter content but no title
         const contentArea = page.locator('#editor-content');
