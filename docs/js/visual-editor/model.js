@@ -233,3 +233,187 @@ export function allChords(doc) {
     }
     return out;
 }
+
+// ---------- section operations ----------
+
+export function addSection(doc, type) {
+    const next = cloneDoc(doc);
+    const count = next.sections.filter(s => s.type === type).length;
+    const base = capitalize(type);
+    const label = type === 'verse' ? `Verse ${count + 1}` : (count ? `${base} ${count + 1}` : base);
+    next.sections.push({ id: genId(), type, label, implicit: false, openRaw: null, closeRaw: null, lines: [] });
+    return next;
+}
+
+export function setSectionType(doc, sectionId, type) {
+    const next = cloneDoc(doc);
+    const sec = next.sections.find(s => s.id === sectionId);
+    const count = next.sections.filter(s => s !== sec && s.type === type).length;
+    const base = capitalize(type);
+    sec.type = type;
+    sec.label = type === 'verse' ? `Verse ${count + 1}` : (count ? `${base} ${count + 1}` : base);
+    sec.implicit = false;
+    sec.openRaw = null;
+    sec.closeRaw = null;
+    return next;
+}
+
+export function relabelSection(doc, sectionId, label) {
+    const next = cloneDoc(doc);
+    const sec = next.sections.find(s => s.id === sectionId);
+    sec.label = label;
+    sec.implicit = false;
+    sec.openRaw = null;
+    if (!sec.closeRaw) sec.closeRaw = null;
+    return next;
+}
+
+export function moveSection(doc, sectionId, delta) {
+    const next = cloneDoc(doc);
+    const i = next.sections.findIndex(s => s.id === sectionId);
+    const j = i + delta;
+    if (i < 0 || j < 0 || j >= next.sections.length) return next;
+    const [sec] = next.sections.splice(i, 1);
+    next.sections.splice(j, 0, sec);
+    return next;
+}
+
+export function duplicateSection(doc, sectionId) {
+    const next = cloneDoc(doc);
+    const i = next.sections.findIndex(s => s.id === sectionId);
+    const copy = structuredClone(next.sections[i]);
+    copy.id = genId();
+    copy.label = `${copy.label} (copy)`;
+    copy.openRaw = null;
+    copy.closeRaw = null;
+    copy.implicit = false;
+    next.sections.splice(i + 1, 0, copy);
+    return next;
+}
+
+export function deleteSection(doc, sectionId) {
+    const next = cloneDoc(doc);
+    next.sections = next.sections.filter(s => s.id !== sectionId);
+    return next;
+}
+
+export function splitSectionOnBlankLines(doc, sectionId) {
+    const next = cloneDoc(doc);
+    const idx = next.sections.findIndex(s => s.id === sectionId);
+    if (idx === -1 || !next.sections[idx].lines) return next;
+    const sec = next.sections[idx];
+
+    const groups = [];
+    let cur = [];
+    for (const line of sec.lines) {
+        if (line.lyrics.trim() === '' && line.chords.length === 0) {
+            if (cur.length) { groups.push(cur); cur = []; }
+        } else {
+            cur.push(line);
+        }
+    }
+    if (cur.length) groups.push(cur);
+    if (groups.length <= 1) return next;
+
+    let count = next.sections.filter((s, i) => i !== idx && s.type === sec.type).length;
+    const parts = groups.map((lines, gi) => {
+        count++;
+        return {
+            id: gi === 0 ? sec.id : genId(),
+            type: sec.type,
+            label: `${capitalize(sec.type)} ${count}`,
+            implicit: false, openRaw: null, closeRaw: null, lines
+        };
+    });
+    next.sections.splice(idx, 1, ...parts);
+    return next;
+}
+
+// ---------- lyric editing with chord re-anchoring ----------
+
+function wordsOf(lines) {
+    const words = [];
+    lines.forEach((lyrics, li) => {
+        const re = /\S+/g;
+        let m;
+        while ((m = re.exec(lyrics)) !== null) {
+            words.push({ text: m[0], line: li, start: m.index });
+        }
+    });
+    return words;
+}
+
+// Longest-common-subsequence pairing of two word lists (by word text).
+function lcsPairs(a, b) {
+    const n = a.length, m = b.length;
+    const dp = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
+    for (let i = n - 1; i >= 0; i--) {
+        for (let j = m - 1; j >= 0; j--) {
+            dp[i][j] = a[i].text === b[j].text
+                ? dp[i + 1][j + 1] + 1
+                : Math.max(dp[i + 1][j], dp[i][j + 1]);
+        }
+    }
+    const map = new Map();
+    let i = 0, j = 0;
+    while (i < n && j < m) {
+        if (a[i].text === b[j].text) { map.set(i, j); i++; j++; }
+        else if (dp[i + 1][j] >= dp[i][j + 1]) i++;
+        else j++;
+    }
+    return map;
+}
+
+export function updateLyrics(doc, sectionId, newText) {
+    const next = cloneDoc(doc);
+    const sec = next.sections.find(s => s.id === sectionId);
+    const oldLines = sec.lines;
+    const newTexts = newText.replace(/\n+$/, '').split('\n');
+
+    const oldWords = wordsOf(oldLines.map(l => l.opaque ? '' : l.lyrics));
+    const newWords = wordsOf(newTexts);
+    const wordMap = lcsPairs(oldWords, newWords);
+
+    let dropped = 0;
+    const newLines = newTexts.map(lyrics => ({ lyrics, chords: [] }));
+
+    oldLines.forEach((old, li) => {
+        if (old.opaque || old.chords.length === 0) return;
+
+        // chord-only / whitespace lines: carry chords to the same index if
+        // the new line at that index is also blank, else drop them
+        if (old.lyrics.trim() === '') {
+            if (newLines[li] && newLines[li].lyrics.trim() === '') {
+                newLines[li].chords = old.chords.map(c => ({ ...c }));
+            } else {
+                dropped += old.chords.length;
+            }
+            return;
+        }
+
+        for (const c of old.chords) {
+            // find the old word containing this position, else the next word on the line
+            let wi = oldWords.findIndex(w =>
+                w.line === li && c.position >= w.start && c.position < w.start + w.text.length);
+            if (wi === -1) {
+                wi = oldWords.findIndex(w => w.line === li && w.start >= c.position);
+            }
+            if (wi === -1) {
+                // trailing chord: anchor to the line's last word at its end
+                for (let k = oldWords.length - 1; k >= 0; k--) {
+                    if (oldWords[k].line === li) { wi = k; break; }
+                }
+                if (wi === -1) { dropped++; continue; }
+            }
+            const nj = wordMap.get(wi);
+            if (nj === undefined) { dropped++; continue; }
+            const oldW = oldWords[wi], newW = newWords[nj];
+            const offset = Math.min(Math.max(c.position - oldW.start, 0), newW.text.length);
+            newLines[newW.line].chords.push({ chord: c.chord, position: newW.start + offset });
+        }
+    });
+
+    for (const line of newLines) line.chords.sort((a, b) => a.position - b.position);
+    sec.lines = newLines;
+    return { doc: next, droppedChords: dropped };
+}
