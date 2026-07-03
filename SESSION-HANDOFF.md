@@ -15,12 +15,18 @@ Connect these folders:
 
 Read SESSION-HANDOFF.md first. Current state: TEF→OTF parsing is
 oracle-clean — 87 VERIFIED / 20 PARTIAL / 0 DIVERGED across all 107
-source-backed files. Work the "Follow-up jobs" in the handoff, in order.
-Tests: python3 -m pytest tests/parser/ (43 pass; pip install pytest
---break-system-packages first). After any parser change: regenerate with
-python3 spike/regen_parsed.py, then re-run
+source-backed files — AND the frontend now consumes
+metadata.time_signature_changes (job #1 done 2026-07-03; see
+docs/js/renderers/measure-timing.js). Work the "Follow-up jobs" in the
+handoff, in order.
+Tests: python3 -m pytest tests/parser/ (44 pass; pip install pytest
+--break-system-packages first) and npx vitest run (511 pass; npm install
+@rollup/rollup-linux-arm64-gnu --no-save first). After any parser change:
+regenerate with python3 spike/regen_parsed.py, then re-run
 python3 spike/oracle_verify.py --batch spike/oracle_manifest.json.
-Commit each landed fix.
+Commit each landed fix (sandbox: git add <paths> then
+write-tree/commit-tree/update-ref — full status/commit exceeds the 45s
+call cap).
 ```
 
 **Goal:** Finish the browser tab editor. Mike doesn't care which engine
@@ -76,15 +82,41 @@ file at 100%. Heuristics are triage, never a stopping point.
 
 ## Follow-up jobs, in order
 
-### 1. Frontend consumption of `metadata.time_signature_changes`
-The parser now emits per-measure overrides (pickups + mid-tune changes,
-V2 and V3) as additive OTF metadata `[{measure, time_signature}]` — and
-they're common in the corpus. The renderer (`docs/js/work-view.js`
-TabRenderer) and player (`docs/js/renderers/tab-player.js`) still assume
-the global signature: short measures render/play with trailing dead
-space. This is the visible payoff of the parsing work — do it first.
-Also check renderer/player assumptions about: tie flags on notes,
-`finger` annotations, and suffixed track ids (`guitar-2`).
+### 1. ~~Frontend consumption of `metadata.time_signature_changes`~~ DONE (2026-07-03)
+Landed as `docs/js/renderers/measure-timing.js` — the shared ts-aware
+measure-math module (per-measure tick lengths, timelines with cumulative
+start ticks, locate(), reading-list expansion, repeat-sign analysis,
+metronome schedule). Renderer, player, work-view, tab-ascii, and editor
+state all consume it. **Design it as the seam for job #5's editing
+facade** — it's UI-free on purpose.
+
+Also fixed en route (each its own commit):
+- otf.py only emitted ts changes for V2; V3 (27493 m30/49) dropped them.
+- Denominator bug: ticksPerMeasure was numerator*480 everywhere — every
+  2/2 measure was halved (notes rendered past the barline).
+- Reading-list expansion skipped silent measures WITHOUT advancing the
+  counter — sparse tracks played early (27493 mandolin: 5 measures).
+- tab-ascii hard-coded 60 ticks/char (one 2/4 measure).
+
+Tie flags / finger annotations / suffixed ids audit: clean.
+
+Verified: 511 vitest unit tests; live in Chrome on 22456 (3/4 pickup),
+18926 (1/4 pickup + repeats), 27493 (mid-tune 2/4, 169.6s total vs ~87s
+under the old math). Untracked dev harness: `docs/tab-dev.html?id=<pid>`
++ OTFs in `docs/data/tabs/` (no published work references banjo-hangout
+tabs yet — docs/data/index.jsonl has no tablature_parts).
+
+**Known stale: `e2e/otf-editor.spec.js` behavioral tests.** The spec
+predates the modal redesign (keyboard.js: NORMAL handles nav+entry, no
+INSERT mode), so mode/entry tests fail honestly; selector-level fixes
+landed so hooks no longer time out. Rewrite the spec with job #5. The
+old "Playwright e2e pass" claim below was wrong. Sandbox note: abcjs/
+supabase/WebAudioFont CDNs are blocked in the Cowork sandbox — abc,
+list-management, favorites e2e and audio playback only work on the Mac.
+
+Player nuance (pre-existing, revisit with job #5): note durations are
+truncated at the next event on ANY track (rhythmicGap), which also cuts
+tied melody notes short when backing tracks are playing.
 
 ### 2. Rich-MIDI oracle leg (verify the 20 PARTIALs' other modules)
 MusicXML exports only ONE module per file; Rich Tablature MIDI contains
