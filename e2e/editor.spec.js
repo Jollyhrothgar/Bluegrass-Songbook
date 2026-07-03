@@ -15,6 +15,9 @@ test.describe('Editor Access', () => {
         // Open sidebar and click Add Song
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
 
         // Editor panel should be visible
         await expect(page.locator('#editor-panel')).toBeVisible();
@@ -26,6 +29,9 @@ test.describe('Editor Access', () => {
 
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
 
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -65,6 +71,9 @@ test.describe('Editor Content Input', () => {
         await page.waitForSelector('#search-input');
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -96,6 +105,9 @@ test.describe('Editor Preview', () => {
         await page.waitForSelector('#search-input');
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -142,6 +154,9 @@ test.describe('ChordPro Conversion', () => {
         await page.waitForSelector('#search-input');
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -176,6 +191,9 @@ test.describe('Editor Navigation', () => {
         // Open editor
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
 
         // Click back button
@@ -232,6 +250,9 @@ test.describe('Editor Hints', () => {
 
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -262,6 +283,9 @@ test.describe('Editor Copy Function', () => {
 
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -290,6 +314,9 @@ test.describe('Editor Nashville Mode', () => {
 
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -326,6 +353,9 @@ test.describe('Editor Validation', () => {
 
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();

@@ -2414,6 +2414,7 @@ function init() {
     // Initialize add-song picker and doc upload
     initAddSongPicker({
         onUpload: (ctx) => {
+            if (!requireLogin('upload songs')) return;
             if (ctx?.targetSlug) prefillDocUpload(ctx);
             showView('doc-upload');
             pushHistoryState('doc-upload');
@@ -2583,7 +2584,9 @@ function init() {
     // Navigation
     navHome?.addEventListener('click', () => navigateTo('home'));
     navSearch?.addEventListener('click', () => navigateTo('search'));
-    navAddSong?.addEventListener('click', () => { closeSidebar(); if (!requireLogin('add songs')) return; openAddSongPicker(); });
+    // Add Song opens the picker for everyone; contribution paths enforce login
+    // at the point of action (upload gate below, submit flows in editor/doc-upload).
+    navAddSong?.addEventListener('click', () => { closeSidebar(); openAddSongPicker(); });
     navFavorites?.addEventListener('click', () => navigateTo('favorites'));
     editorBackBtn?.addEventListener('click', () => navigateTo('search'));
 

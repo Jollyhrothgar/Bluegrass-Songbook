@@ -171,6 +171,9 @@ test.describe('Sidebar Navigation', () => {
         // Open sidebar first
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
 
         // Editor panel should be visible (contains add song form)
         await expect(page.locator('#editor-panel')).toBeVisible();
@@ -200,6 +203,9 @@ test.describe('View Transitions', () => {
         // Navigate to Add Song
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
+        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
 
         // Bottom sheet should be hidden (regression: it has position:fixed)
         await expect(page.locator('#bottom-sheet')).toBeHidden();
