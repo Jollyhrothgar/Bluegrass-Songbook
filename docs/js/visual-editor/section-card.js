@@ -117,8 +117,19 @@ export function renderSectionCard(section, ctx) {
     const chordsBtn = el('button', 've-mode-btn ve-mode-chords', '♪ Chords');
     chordsBtn.type = 'button';
     (mode === 'lyrics' ? lyricsBtn : chordsBtn).classList.add('active');
+    // Prevent the buttons from stealing focus: in lyrics mode the textarea's
+    // blur commit re-renders the card, which would destroy the button between
+    // pointerdown and pointerup and swallow the tap (double-tap bug on phones).
+    lyricsBtn.addEventListener('pointerdown', e => e.preventDefault());
+    chordsBtn.addEventListener('pointerdown', e => e.preventDefault());
     lyricsBtn.addEventListener('click', () => callbacks.onToggleMode(section.id, 'lyrics'));
-    chordsBtn.addEventListener('click', () => callbacks.onToggleMode(section.id, 'chords'));
+    chordsBtn.addEventListener('click', () => {
+        // Commit any lyrics typed in this card before leaving lyrics mode
+        // (focus never left the textarea, so its blur commit hasn't fired).
+        const ta = card.querySelector('.ve-lyrics-input');
+        if (ta) callbacks.onLyricsCommit(section.id, ta.value);
+        callbacks.onToggleMode(section.id, 'chords');
+    });
     toggle.append(lyricsBtn, chordsBtn);
     header.appendChild(toggle);
 
