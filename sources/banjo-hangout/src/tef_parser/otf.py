@@ -498,14 +498,17 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
         doc.metadata.time_signature = f"{tef.header.v2_time_num}/{tef.header.v2_time_denom}"
         if tef.header.v2_composer:
             doc.metadata.composer = tef.header.v2_composer
-        doc.metadata.time_signature_changes = [
-            {"measure": c.measure,
-             "time_signature": f"{c.numerator}/{c.denominator}"}
-            for c in tef.time_signature_changes
-        ]
     else:
         # V3 defaults
         doc.metadata.time_signature = "2/2"  # Cut time for bluegrass
+    # Per-measure overrides come from the reader for BOTH formats:
+    # V2 type-27 components and the V3 measure table (oracle-confirmed
+    # on 27493 m30/m49).
+    doc.metadata.time_signature_changes = [
+        {"measure": c.measure,
+         "time_signature": f"{c.numerator}/{c.denominator}"}
+        for c in tef.time_signature_changes
+    ]
 
     # Use 100 BPM as default - extracted tempos from TEF files are often unreliable
     doc.metadata.tempo = 100

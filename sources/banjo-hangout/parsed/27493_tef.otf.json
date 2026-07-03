@@ -3,7 +3,17 @@
   "metadata": {
     "title": "  tabbed Chris Lewis",
     "time_signature": "2/2",
-    "tempo": 100
+    "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 30,
+        "time_signature": "2/4"
+      },
+      {
+        "measure": 49,
+        "time_signature": "2/4"
+      }
+    ]
   },
   "timing": {
     "ticks_per_beat": 480

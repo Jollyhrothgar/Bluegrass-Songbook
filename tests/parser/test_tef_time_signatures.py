@@ -123,3 +123,23 @@ def test_no_op_explicit_header_ts_markers_ignored():
     assert tef.time_signature_changes == []
     otf = tef_to_otf(tef).to_dict()
     assert "time_signature_changes" not in otf["metadata"]
+
+
+@pytest.mark.skipif(not (DOWNLOADS / "27493.tef").exists(),
+                    reason="downloads corpus not present")
+def test_v3_ts_changes_exported_to_otf_metadata():
+    """27493 is V3 with 2/4 measures at m30/m49 (oracle-confirmed; the
+    continuous-slot mapping was validated against these). The reader
+    extracts them into TEFFile.time_signature_changes, but tef_to_otf
+    only emitted metadata.time_signature_changes in the V2 branch —
+    V3 files silently dropped their overrides.
+    """
+    tef = TEFReader(str(DOWNLOADS / "27493.tef")).parse()
+    changes = [(c.measure, c.numerator, c.denominator)
+               for c in tef.time_signature_changes]
+    assert changes == [(30, 2, 4), (49, 2, 4)]
+    otf = tef_to_otf(tef).to_dict()
+    assert otf["metadata"]["time_signature_changes"] == [
+        {"measure": 30, "time_signature": "2/4"},
+        {"measure": 49, "time_signature": "2/4"},
+    ]
