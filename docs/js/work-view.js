@@ -20,7 +20,12 @@ import {
 import { parseChordPro, showVersionPicker } from './song-view.js';
 import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { escapeHtml } from './utils.js';
-import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
+import {
+    TabRenderer, TabPlayer, INSTRUMENT_ICONS,
+    TimelineTiming, identityTimeline, readingListTimeline,
+    expandNotation, makePlaybackToVisualMapper,
+    maxMeasureIn, measureTimingFromOtf,
+} from './renderers/index.js';
 import { getTagCategory, formatTagName } from './tags.js';
 
 // ============================================
@@ -128,94 +133,20 @@ function analyzeReadingList(readingList) {
 }
 
 /**
- * Build a tick mapping for compact mode visualization
- *
- * Returns a function that converts playback tick (expanded) to visual tick (original)
- * This is needed because in compact mode:
- * - Display shows original measures (e.g., 1-19)
- * - Playback uses expanded measures following reading list (e.g., 1-36)
- *
- * @param {Array} readingList - Array of {from_measure, to_measure} entries
- * @param {number} ticksPerMeasure - Ticks per measure for calculations
- * @returns {Function} Mapping function (playbackTick) => visualTick
+ * Timing maps for a loaded OTF, ts-change aware (measure-timing.js):
+ * - visual: what the current display mode shows (original measures in
+ *   compact mode, unrolled reading list otherwise)
+ * - playback: always the unrolled reading list (what TabPlayer follows)
  */
-function buildTickMapping(readingList, ticksPerMeasure) {
-    if (!readingList || readingList.length === 0) {
-        return (tick) => tick; // No mapping needed
-    }
-
-    // Build array of [expandedMeasure, originalMeasure] pairs
-    const measureMapping = [];
-    let expandedMeasure = 1;
-
-    for (const range of readingList) {
-        for (let m = range.from_measure; m <= range.to_measure; m++) {
-            measureMapping.push({ expanded: expandedMeasure, original: m });
-            expandedMeasure++;
-        }
-    }
-
-    return (playbackTick) => {
-        // Find which expanded measure this tick is in
-        const expandedMeasureNum = Math.floor(playbackTick / ticksPerMeasure) + 1;
-        const tickInMeasure = playbackTick % ticksPerMeasure;
-
-        // Look up the original measure
-        const mapping = measureMapping.find(m => m.expanded === expandedMeasureNum);
-        if (!mapping) {
-            return playbackTick; // Fallback
-        }
-
-        // Convert to tick in original measure
-        return (mapping.original - 1) * ticksPerMeasure + tickInMeasure;
-    };
-}
-
-/**
- * Expand notation according to reading list (repeat structure)
- *
- * The reading list defines playback order, e.g.:
- * [1-9, 2-8, 10-10, 11-18, 11-17, 19-19]
- * means play measures 1-9, then 2-8, then 10, then 11-18, etc.
- *
- * @param {Array} notation - Original notation array (each entry has {measure, events})
- * @param {Array} readingList - Array of {from_measure, to_measure} entries
- * @returns {Array} Expanded notation with measures repeated as specified
- */
-function expandNotationWithReadingList(notation, readingList) {
-    if (!readingList || readingList.length === 0) {
-        return notation;
-    }
-
-    // Build a map of measure number -> notation entry
-    const measureMap = {};
-    for (const entry of notation) {
-        measureMap[entry.measure] = entry;
-    }
-
-    // Expand according to reading list
-    const expanded = [];
-    let newMeasureNum = 1;
-
-    for (const range of readingList) {
-        const from = range.from_measure;
-        const to = range.to_measure;
-
-        for (let m = from; m <= to; m++) {
-            const original = measureMap[m];
-            if (original) {
-                // Clone the measure with new measure number
-                expanded.push({
-                    ...original,
-                    measure: newMeasureNum,
-                    originalMeasure: m  // Keep reference to original for debugging
-                });
-                newMeasureNum++;
-            }
-        }
-    }
-
-    return expanded;
+function buildOtfTimings(otf, compact) {
+    const measureTiming = measureTimingFromOtf(otf);
+    const maxMeasure = maxMeasureIn(otf.notation);
+    const playbackTimeline = readingListTimeline(otf.reading_list, maxMeasure);
+    const playback = new TimelineTiming(measureTiming, playbackTimeline);
+    const visual = compact
+        ? new TimelineTiming(measureTiming, identityTimeline(maxMeasure))
+        : playback;
+    return { measureTiming, playbackTimeline, playback, visual };
 }
 
 /**
@@ -844,6 +775,9 @@ async function renderTablaturePart(part, container) {
         const timeSignature = otf.metadata?.time_signature || '4/4';
         const ticksPerBeat = otf.timing?.ticks_per_beat || 480;
 
+        // Ts-change-aware timing for the current display mode
+        const timings = buildOtfTimings(otf, showRepeatsCompact && otf.reading_list?.length > 0);
+
         // Determine which track is the "lead" (matches part instrument, or first track)
         let leadTrackId = otf.tracks[0]?.id;
         if (part.instrument && otf.tracks.length > 1) {
@@ -873,8 +807,8 @@ async function renderTablaturePart(part, container) {
             // Apply reading list: either compact (with repeat signs) or expanded (unrolled)
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
                 notation = prepareCompactNotation(notation, otf.reading_list);
-            } else {
-                notation = expandNotationWithReadingList(notation, otf.reading_list);
+            } else if (otf.reading_list && otf.reading_list.length > 0) {
+                notation = expandNotation(notation, timings.playbackTimeline);
             }
             const icon = INSTRUMENT_ICONS[track.instrument] ||
                         (track.id.includes('banjo') ? '🪕' :
@@ -905,7 +839,7 @@ async function renderTablaturePart(part, container) {
 
             // Create renderer for this track
             const renderer = new TabRenderer(tabContainer);
-            renderer.render(track, notation, ticksPerBeat, timeSignature);
+            renderer.render(track, notation, ticksPerBeat, timeSignature, timings.visual);
             trackRenderers[track.id] = renderer;
         }
 
@@ -1100,14 +1034,13 @@ function setupTablaturePlayer(otf, controls, renderer) {
     let currentCapo = 0;
     let currentScale = 1.0; // Scale factor for tablature size
 
-    // Build tick mapping for compact mode visualization
-    // In compact mode, playback ticks are expanded but display is compact
-    const timeSignature = otf.metadata?.time_signature || '4/4';
-    const ticksPerBeat = otf.timing?.ticks_per_beat || 480;
-    const beatsPerMeasure = parseInt(timeSignature.split('/')[0], 10) || 4;
-    const ticksPerMeasure = ticksPerBeat * beatsPerMeasure;
-    const tickMapper = showRepeatsCompact
-        ? buildTickMapping(otf.reading_list, ticksPerMeasure)
+    // Map playback ticks to visual ticks for compact mode: playback follows
+    // the unrolled reading list while the display shows written measures.
+    // Ts-change aware on both sides (measure-timing.js).
+    const compact = showRepeatsCompact && otf.reading_list?.length > 0;
+    const timings = buildOtfTimings(otf, compact);
+    const tickMapper = compact
+        ? makePlaybackToVisualMapper(timings.playback, timings.visual)
         : (tick) => tick;
 
     // Playback visualization callbacks (with tick mapping for compact mode)

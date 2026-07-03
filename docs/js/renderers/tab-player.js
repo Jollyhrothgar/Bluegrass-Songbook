@@ -1,6 +1,15 @@
 // Tablature Audio Player using WebAudioFont
 // Extracted from TablEdit_Reverse viewer for Bluegrass Songbook
 
+import {
+    TimelineTiming,
+    readingListTimeline,
+    expandNotation,
+    buildMetronomeSchedule,
+    maxMeasureIn,
+    measureTimingFromOtf,
+} from './measure-timing.js';
+
 // Pitch name to MIDI mapping
 const PITCH_TO_MIDI = {};
 ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'].forEach((note, i) => {
@@ -30,46 +39,6 @@ const WEBAUDIOFONT_URLS = {
         mandolin: 'https://surikov.github.io/webaudiofontdata/sound/0260_GeneralUserGS_sf2_file.js',
     }
 };
-
-/**
- * Expand notation according to reading list (repeat structure)
- * Used for playback to ensure repeats are played correctly
- */
-function expandNotationForPlayback(notation, readingList) {
-    if (!readingList || readingList.length === 0) {
-        return notation;
-    }
-
-    // Build a map of measure number -> notation entry
-    const measureMap = {};
-    for (const entry of notation) {
-        measureMap[entry.measure] = entry;
-    }
-
-    // Expand according to reading list
-    const expanded = [];
-    let newMeasureNum = 1;
-
-    for (const range of readingList) {
-        const from = range.from_measure;
-        const to = range.to_measure;
-
-        for (let m = from; m <= to; m++) {
-            const original = measureMap[m];
-            if (original) {
-                // Clone the measure with new measure number for playback timing
-                expanded.push({
-                    ...original,
-                    measure: newMeasureNum,
-                    originalMeasure: m
-                });
-                newMeasureNum++;
-            }
-        }
-    }
-
-    return expanded;
-}
 
 /**
  * Map OTF instrument types to our instrument keys
@@ -265,20 +234,24 @@ export class TabPlayer {
         const transpose = options.transpose || 0;
         const ticksPerBeat = otfData.timing?.ticks_per_beat || 480;
         const secondsPerTick = 60 / bpm / ticksPerBeat;
-        // Calculate ticks per measure from time signature (e.g., "4/4" -> 4 beats)
-        const timeSignature = otfData.metadata?.time_signature || '4/4';
-        const beatsPerMeasure = parseInt(timeSignature.split('/')[0], 10) || 4;
-        const ticksPerMeasure = beatsPerMeasure * ticksPerBeat;
+
+        // Ts-aware playback timeline: reading-list order (repeats unrolled),
+        // per-measure lengths from metadata.time_signature_changes. The
+        // timeline keeps EVERY slot, so sparse tracks stay aligned.
+        const measureTiming = measureTimingFromOtf(otfData);
+        const timeline = readingListTimeline(
+            otfData.reading_list, maxMeasureIn(otfData.notation));
+        const timing = new TimelineTiming(measureTiming, timeline);
+        this._timing = timing;
 
         // Collect all notes
         const notesByTrack = {};
-        const readingList = otfData.reading_list;
         for (const track of tracksToPlay) {
             let notation = otfData.notation?.[track.id];
             if (!notation) continue;
 
-            // Expand notation using reading list for proper playback order
-            notation = expandNotationForPlayback(notation, readingList);
+            // Expand notation onto the playback timeline
+            notation = expandNotation(notation, timeline);
 
             // Default tunings by instrument (MIDI note numbers)
             const DEFAULT_TUNINGS = {
@@ -305,7 +278,7 @@ export class TabPlayer {
 
             const trackNotes = [];
             notation.forEach(measure => {
-                const measureTick = (measure.measure - 1) * ticksPerMeasure;
+                const measureTick = timing.startTick(measure.measure);
                 measure.events?.forEach(event => {
                     const absTick = measureTick + event.tick;
                     event.notes.forEach(note => {
@@ -426,7 +399,7 @@ export class TabPlayer {
         // Store timing info for position updates
         this._ticksPerBeat = ticksPerBeat;
         this._secondsPerTick = secondsPerTick;
-        this._ticksPerMeasure = ticksPerMeasure;
+        this._ticksPerMeasure = measureTiming.defaultTicks;
 
         // Schedule notes and track for visualization
         this._scheduledNotes = [];
@@ -457,16 +430,16 @@ export class TabPlayer {
             }
         });
 
-        // Schedule metronome clicks
-        const totalMeasures = Math.max(...notes.map(n => n.measure)) || 1;
-        // beatsPerMeasure already calculated from time signature above
-        for (let m = 0; m < totalMeasures; m++) {
-            for (let beat = 0; beat < beatsPerMeasure; beat++) {
-                const beatTick = m * ticksPerMeasure + beat * ticksPerBeat;
-                const beatTime = beatTick * secondsPerTick;
-                const isDownbeat = beat === 0;
-                this.playMetronomeClick(this.playbackStartTime + beatTime, isDownbeat);
-            }
+        // Schedule metronome clicks: per-measure beats from each measure's
+        // own signature (3 clicks in a 3/4 pickup, 2 half-note clicks in 2/2),
+        // through the end of the last measure containing notes
+        const lastNoteMeasure = notes.reduce((mx, n) => Math.max(mx, n.measure), 1);
+        const clickEnd = timing.startTick(lastNoteMeasure) + timing.ticksAt(lastNoteMeasure);
+        for (const click of buildMetronomeSchedule(timing)) {
+            if (click.tick >= clickEnd) break;
+            this.playMetronomeClick(
+                this.playbackStartTime + click.tick * secondsPerTick,
+                click.isDownbeat);
         }
 
         const totalDuration = notes.length > 0 ? notes[notes.length - 1].time + 1 : 0;

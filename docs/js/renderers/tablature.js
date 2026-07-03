@@ -1,6 +1,13 @@
 // Tablature SVG Renderer
 // Extracted from TablEdit_Reverse viewer for Bluegrass Songbook
 
+import {
+    MeasureTiming,
+    TimelineTiming,
+    identityTimeline,
+    measureTicksFor,
+} from './measure-timing.js';
+
 const INSTRUMENT_ICONS = {
     '5-string-banjo': '🪕',
     'tenor-banjo': '🪕',
@@ -189,12 +196,21 @@ export class TabRenderer {
         this._computedMeasureWidth = measureWidth;
     }
 
-    render(track, notation, ticksPerBeat = 480, timeSignature = '4/4') {
+    /**
+     * @param {Object} track - OTF track
+     * @param {Array} notation - measures [{measure, events}]
+     * @param {number} ticksPerBeat
+     * @param {string} timeSignature - global signature
+     * @param {TimelineTiming} [timing] - per-measure timing (built from
+     *   metadata.time_signature_changes); omit for a uniform grid
+     */
+    render(track, notation, ticksPerBeat = 480, timeSignature = '4/4', timing = null) {
         // Store for re-rendering on resize
         this._track = track;
         this._notation = notation;
         this._ticksPerBeat = ticksPerBeat;
         this._timeSignature = timeSignature;
+        this._timingParam = timing;
 
         this._renderInternal();
 
@@ -229,15 +245,21 @@ export class TabRenderer {
         this.beatCursors = [];
         this.rowData = [];
         this.ticksPerBeat = ticksPerBeat;         // For beat snapping
-        // Calculate ticks per measure from time signature (e.g., "4/4" -> 4 beats)
-        const beatsPerMeasure = parseInt(timeSignature.split('/')[0], 10) || 4;
-        this.ticksPerMeasure = ticksPerBeat * beatsPerMeasure;
+        // Default (den-aware) measure length; per-measure overrides below
+        this.ticksPerMeasure = measureTicksFor(timeSignature, ticksPerBeat);
         this._currentRowIndex = -1;               // Reset row tracking
 
         if (!track || !notation || notation.length === 0) {
             this.container.innerHTML = '<p style="color:#888;text-align:center;">No notation for this track</p>';
             return;
         }
+
+        // Per-measure timing: provided by the caller (ts-change aware) or a
+        // uniform fallback over the displayed measure numbers.
+        this.timing = this._timingParam || new TimelineTiming(
+            new MeasureTiming({ timeSignature, ticksPerBeat }),
+            identityTimeline(notation.reduce((mx, m) => Math.max(mx, m.measure), 1))
+        );
 
         // Calculate responsive layout
         this._calculateLayout();
@@ -297,14 +319,42 @@ export class TabRenderer {
         this.container.appendChild(info);
     }
 
+    /**
+     * Width of one measure, proportional to its tick length so short
+     * measures (pickups, mid-tune 2/4s) render tight instead of padding
+     * out a full-signature slot. Uniform files keep the exact base width.
+     */
+    _measureWidthFor(ticks) {
+        const base = this._computedMeasureWidth;
+        const defaultTicks = this.timing?.measureTiming?.defaultTicks || this.ticksPerMeasure;
+        if (!ticks || ticks === defaultTicks) return base;
+        return Math.max(60, Math.round(base * ticks / defaultTicks));
+    }
+
     renderRow(measures, numStrings, height, tuning, rowIndex = 0) {
         const opt = this.options;
-        const measureWidth = this._computedMeasureWidth;
         // Add extra width for ending brackets if present
         const hasEndings = measures.some(m => m.ending);
         const endingHeight = hasEndings ? 18 : 0;
         const adjustedHeight = height + endingHeight;
-        const width = opt.leftMargin + measures.length * measureWidth + 20;
+
+        // Per-measure geometry (ts-change aware)
+        let xCursor = opt.leftMargin;
+        const measureGeoms = measures.map(m => {
+            const ticks = this.timing.ticksAt(m.measure);
+            const geomWidth = this._measureWidthFor(ticks);
+            const geom = {
+                display: m.measure,
+                x: xCursor,
+                width: geomWidth,
+                ticks,
+                startTick: this.timing.startTick(m.measure),
+            };
+            xCursor += geomWidth;
+            return geom;
+        });
+        const rowRight = xCursor;
+        const width = rowRight + 20;
 
         const rowDiv = document.createElement('div');
         rowDiv.className = 'stave-row';
@@ -323,6 +373,7 @@ export class TabRenderer {
             firstMeasure,
             lastMeasure,
             measureCount: measures.length,
+            measures: measureGeoms,
             height
         });
 
@@ -358,7 +409,7 @@ export class TabRenderer {
             const y = opt.topMargin + s * opt.stringSpacing;
             const line = this.createLine(
                 opt.leftMargin - 10, y,
-                opt.leftMargin + measures.length * measureWidth, y,
+                rowRight, y,
                 opt.stringColor
             );
             svg.appendChild(line);
@@ -369,7 +420,9 @@ export class TabRenderer {
 
         // Draw measures
         measures.forEach((measure, mi) => {
-            const x = opt.leftMargin + mi * measureWidth;
+            const geom = measureGeoms[mi];
+            const x = geom.x;
+            const measureWidth = geom.width;
 
             // Draw repeat start barline (|:) or regular barline
             if (measure.repeatStart) {
@@ -408,9 +461,10 @@ export class TabRenderer {
                 const noteAreaWidth = measureWidth - 30 - repeatStartOffset;
 
                 measure.events.forEach(event => {
-                    const ticksPerPosition = this.ticksPerMeasure / 16;  // 16 positions per measure
-                    const pos16th = Math.floor(event.tick / ticksPerPosition);
-                    const posRatio = event.tick / this.ticksPerMeasure;
+                    // 16th-note slot on the quarter grid (ts-independent)
+                    const pos16th = Math.floor(event.tick / (this.ticksPerBeat / 4));
+                    // Position within THIS measure's own tick length
+                    const posRatio = event.tick / geom.ticks;
                     const noteX = noteAreaStart + posRatio * noteAreaWidth;
 
                     let lowestString = 0;
@@ -420,8 +474,8 @@ export class TabRenderer {
 
                     notePositions.push({ x: noteX, pos16th, lowestString, event });
 
-                    // Calculate absolute tick for this event
-                    const absTick = (measure.measure - 1) * this.ticksPerMeasure + event.tick;
+                    // Absolute tick accumulates any short measures before this one
+                    const absTick = geom.startTick + event.tick;
 
                     // Track elements for this event (for highlighting)
                     const eventElements = [];
@@ -491,11 +545,11 @@ export class TabRenderer {
             }
 
             this.renderSlurs(svg, notePositions, opt);
-            this.renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, measure.events);
+            this.renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, measure.events, geom.ticks);
         });
 
         // Final bar line - check if last measure has repeat end
-        const endX = opt.leftMargin + measures.length * measureWidth;
+        const endX = rowRight;
         const finalMeasure = measures[measures.length - 1];
         if (finalMeasure && finalMeasure.repeatEnd) {
             this.drawRepeatEndBarline(svg, endX, opt.topMargin, beamY + 4, opt);
@@ -662,7 +716,7 @@ export class TabRenderer {
         svg.appendChild(label);
     }
 
-    renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, events = []) {
+    renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, events = [], measureTicks = null) {
         if (notePositions.length === 0) return;
 
         // First, detect triplet groups based on actual tick spacing
@@ -671,12 +725,15 @@ export class TabRenderer {
         const tripletNotes = new Set();
         tripletGroups.forEach(group => group.forEach(np => tripletNotes.add(np)));
 
-        const beats = [[], [], [], []];
+        // One beam group per quarter-note beat of this measure's own length
+        // (3 groups in 3/4, 4 in 4/4 or 2/2, ...)
+        const beatCount = Math.max(1, Math.ceil((measureTicks || this.ticksPerMeasure) / this.ticksPerBeat));
+        const beats = Array.from({ length: beatCount }, () => []);
         notePositions.forEach(np => {
             // Skip notes that are part of triplet groups
             if (tripletNotes.has(np)) return;
             const beatIndex = Math.floor(np.pos16th / 4);
-            if (beatIndex >= 0 && beatIndex < 4) beats[beatIndex].push(np);
+            if (beatIndex >= 0 && beatIndex < beatCount) beats[beatIndex].push(np);
         });
 
         const beamedNotes = new Set();
@@ -1058,7 +1115,6 @@ export class TabRenderer {
     updateBeatCursor(absTick, options = {}) {
         const { snapToBeats = true, autoScroll = true } = options;
         const opt = this.options;
-        const measureWidth = this._computedMeasureWidth;
 
         // Snap to beat boundaries if enabled
         let displayTick = absTick;
@@ -1066,9 +1122,15 @@ export class TabRenderer {
             displayTick = Math.floor(absTick / this.ticksPerBeat) * this.ticksPerBeat;
         }
 
-        // Calculate which measure and position within measure
-        const measure = Math.floor(displayTick / this.ticksPerMeasure) + 1;
-        const tickInMeasure = displayTick % this.ticksPerMeasure;
+        // Locate the display measure through the ts-aware timing map
+        const loc = this.timing
+            ? this.timing.locate(displayTick)
+            : {
+                display: Math.floor(displayTick / this.ticksPerMeasure) + 1,
+                tickInMeasure: displayTick % this.ticksPerMeasure,
+            };
+        const measure = loc.display;
+        const tickInMeasure = loc.tickInMeasure;
 
         // Find which row this measure is on
         const rowData = this.rowData.find(r =>
@@ -1080,11 +1142,14 @@ export class TabRenderer {
             return;
         }
 
-        // Calculate X position
-        const measureIndex = measure - rowData.firstMeasure;
-        const posRatio = tickInMeasure / this.ticksPerMeasure;
-        const measureX = opt.leftMargin + measureIndex * measureWidth;
-        const x = measureX + 15 + posRatio * (measureWidth - 30);
+        // Calculate X position from the measure's own geometry
+        const geom = rowData.measures?.find(g => g.display === measure);
+        if (!geom) {
+            this.hideBeatCursor();
+            return;
+        }
+        const posRatio = tickInMeasure / geom.ticks;
+        const x = geom.x + 15 + posRatio * (geom.width - 30);
 
         // Show cursor on correct row, hide others
         this.beatCursors.forEach(({ rowIndex, cursor }) => {

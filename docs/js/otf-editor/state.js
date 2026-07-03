@@ -1,6 +1,8 @@
 // OTF Editor State Management
 // Manages editor state, undo/redo history, and clipboard
 
+import { measureTicksFor } from '../renderers/measure-timing.js';
+
 /**
  * Duration constants (in ticks)
  * Based on 480 ticks per beat
@@ -296,13 +298,13 @@ export class EditorState {
     }
 
     /**
-     * Update ticks per measure from time signature
+     * Update ticks per measure from time signature (den-aware: a 2/2
+     * measure is 1920 ticks, not 960 — see measure-timing.js)
      */
     _updateTicksPerMeasure() {
         const timeSig = this.otf.metadata?.time_signature || '4/4';
-        const [beats] = timeSig.split('/').map(Number);
         const ticksPerBeat = this.otf.timing?.ticks_per_beat || TICKS_PER_BEAT;
-        this.ticksPerMeasure = beats * ticksPerBeat;
+        this.ticksPerMeasure = measureTicksFor(timeSig, ticksPerBeat);
     }
 
     /**
