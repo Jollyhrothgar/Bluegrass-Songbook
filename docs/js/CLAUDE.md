@@ -32,6 +32,7 @@ docs/
 │   │   ├── tab-player.js # Interactive tab player with playback
 │   │   └── tab-ascii.js # ASCII tab format
 │   ├── chord-explorer/ # Chord exploration tool (standalone)
+│   ├── visual-editor/  # Visual song editor (tap-to-place chords, section cards)
 │   ├── otf-editor/     # Tablature editor (design phase)
 │   └── __tests__/      # Vitest unit tests
 ├── css/style.css       # Dark/light themes, responsive layout
@@ -252,6 +253,12 @@ Multi-track tabs (e.g., ensemble arrangements with guitar, banjo, mandolin, bass
 - Labels toggle for section headers
 
 ### Editor (Add Song / Edit Song)
+
+The editor has two tabs: **Visual** (default — tap-to-place chord editing,
+section cards; see `visual-editor/CLAUDE.md`) and **Raw ChordPro** (textarea +
+smart paste). The visual editor mirrors serialized ChordPro into
+`#editor-content`, so all submit/preview flows read the textarea regardless
+of tab.
 
 Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
