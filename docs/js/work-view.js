@@ -25,6 +25,7 @@ import {
     TimelineTiming, identityTimeline, readingListTimeline,
     expandNotation, makePlaybackToVisualMapper,
     maxMeasureIn, measureTimingFromOtf,
+    analyzeReadingList, prepareCompactNotation,
 } from './renderers/index.js';
 import { getTagCategory, formatTagName } from './tags.js';
 
@@ -43,96 +44,6 @@ let showRepeatsCompact = false;  // true = show repeat signs, false = unroll rep
 // ============================================
 
 /**
- * Analyze reading list to detect repeat structures
- *
- * Returns an object with:
- * - repeatSections: [{startMeasure, endMeasure, repeatCount}]
- * - endings: [{measure, endingNumber}] - measures that are 1st/2nd endings
- * - repeatStartMarkers: Set of measures where repeat starts (|:)
- * - repeatEndMarkers: Set of measures where repeat ends (:|)
- *
- * Handles patterns like:
- * - [1-9, 2-8, 10-10]: Section 2-8 repeats, 9 is 1st ending, 10 is 2nd ending
- * - [11-18, 11-17, 19-19]: Section 11-17 repeats, 18 is 1st ending, 19 is 2nd ending
- */
-function analyzeReadingList(readingList) {
-    if (!readingList || readingList.length === 0) {
-        return { repeatSections: [], endings: {}, repeatStartMarkers: new Set(), repeatEndMarkers: new Set() };
-    }
-
-    const repeatStartMarkers = new Set();
-    const repeatEndMarkers = new Set();
-    const endings = {}; // measure -> ending number (1, 2, etc.)
-
-    // Look for consecutive entries that share a common subset
-    for (let i = 0; i < readingList.length - 1; i++) {
-        const curr = readingList[i];
-        const next = readingList[i + 1];
-
-        // Check if next entry is a subset of or overlaps with current
-        // Pattern: [A-B] followed by [C-D] where C >= A and D <= B-1 (or C > A and D < B)
-        // This indicates a repeat from C, with measures (D+1 to B) as 1st ending
-
-        const currStart = curr.from_measure;
-        const currEnd = curr.to_measure;
-        const nextStart = next.from_measure;
-        const nextEnd = next.to_measure;
-
-        // Case 1: Next starts inside current and ends before current ends
-        // e.g., [1-9] followed by [2-8] -> repeat at 2, end at 8, 9 is 1st ending
-        if (nextStart > currStart && nextStart <= currEnd &&
-            nextEnd < currEnd && nextEnd >= nextStart) {
-
-            repeatStartMarkers.add(nextStart);
-            repeatEndMarkers.add(nextEnd);
-
-            // Measures from nextEnd+1 to currEnd are 1st ending
-            for (let m = nextEnd + 1; m <= currEnd; m++) {
-                endings[m] = 1;
-            }
-
-            // Check if there's a 2nd ending after the repeat
-            const afterRepeat = readingList[i + 2];
-            if (afterRepeat &&
-                afterRepeat.from_measure === currEnd + 1 &&
-                afterRepeat.to_measure === afterRepeat.from_measure) {
-                endings[afterRepeat.from_measure] = 2;
-            }
-        }
-
-        // Case 2: Same start, next ends before current (subset repeat)
-        // e.g., [11-18] followed by [11-17] -> repeat at 11, end at 17, 18 is 1st ending
-        if (nextStart === currStart && nextEnd < currEnd) {
-            repeatStartMarkers.add(currStart);
-            repeatEndMarkers.add(nextEnd);
-
-            // Measures from nextEnd+1 to currEnd are 1st ending
-            for (let m = nextEnd + 1; m <= currEnd; m++) {
-                endings[m] = 1;
-            }
-
-            // Check for 2nd ending
-            const afterRepeat = readingList[i + 2];
-            if (afterRepeat &&
-                afterRepeat.from_measure === currEnd + 1 &&
-                afterRepeat.to_measure === afterRepeat.from_measure) {
-                endings[afterRepeat.from_measure] = 2;
-            }
-        }
-
-        // Case 3: Same start, next extends past current (simple repeat of first section)
-        // e.g., [1-8] followed by [1-16] -> repeat at 1, end at 8 (measures 1-8 repeat)
-        // This is common in AABB tune structures where A part repeats before B
-        if (nextStart === currStart && nextEnd > currEnd) {
-            repeatStartMarkers.add(currStart);
-            repeatEndMarkers.add(currEnd);
-        }
-    }
-
-    return { repeatStartMarkers, repeatEndMarkers, endings };
-}
-
-/**
  * Timing maps for a loaded OTF, ts-change aware (measure-timing.js):
  * - visual: what the current display mode shows (original measures in
  *   compact mode, unrolled reading list otherwise)
@@ -147,37 +58,6 @@ function buildOtfTimings(otf, compact) {
         ? new TimelineTiming(measureTiming, identityTimeline(maxMeasure))
         : playback;
     return { measureTiming, playbackTimeline, playback, visual };
-}
-
-/**
- * Prepare compact notation with repeat markers
- *
- * Returns the original notation with added repeat/ending metadata
- */
-function prepareCompactNotation(notation, readingList) {
-    if (!readingList || readingList.length === 0) {
-        return notation;
-    }
-
-    const analysis = analyzeReadingList(readingList);
-
-    // Clone notation and add markers
-    return notation.map(measure => {
-        const m = measure.measure;
-        const enhanced = { ...measure };
-
-        if (analysis.repeatStartMarkers.has(m)) {
-            enhanced.repeatStart = true;
-        }
-        if (analysis.repeatEndMarkers.has(m)) {
-            enhanced.repeatEnd = true;
-        }
-        if (analysis.endings[m]) {
-            enhanced.ending = analysis.endings[m];
-        }
-
-        return enhanced;
-    });
 }
 
 // ============================================

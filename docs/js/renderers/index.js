@@ -121,4 +121,6 @@ export {
     buildMetronomeSchedule,
     maxMeasureIn,
     measureTimingFromOtf,
+    analyzeReadingList,
+    prepareCompactNotation,
 } from './measure-timing.js';

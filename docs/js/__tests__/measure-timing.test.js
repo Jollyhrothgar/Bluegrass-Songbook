@@ -21,6 +21,8 @@ import {
     expandNotation,
     makePlaybackToVisualMapper,
     buildMetronomeSchedule,
+    analyzeReadingList,
+    prepareCompactNotation,
 } from '../renderers/measure-timing.js';
 
 describe('parseTimeSignature', () => {
@@ -214,6 +216,28 @@ describe('makePlaybackToVisualMapper', () => {
         expect(map(3360 + 100)).toBe(100);
         // display 4 (= original 2) -> visual 1440
         expect(map(3360 + 1440 + 60)).toBe(1500);
+    });
+});
+
+describe('repeat-sign analysis (moved from work-view)', () => {
+    it('18926 Leather Britches: [1-25, 18-24, 26] -> repeat 18..24, endings 25/26', () => {
+        const rl = [
+            { from_measure: 1, to_measure: 25 },
+            { from_measure: 18, to_measure: 24 },
+            { from_measure: 26, to_measure: 26 },
+        ];
+        const a = analyzeReadingList(rl);
+        expect([...a.repeatStartMarkers]).toEqual([18]);
+        expect([...a.repeatEndMarkers]).toEqual([24]);
+        expect(a.endings).toEqual({ 25: 1, 26: 2 });
+
+        const notation = Array.from({ length: 26 }, (_, i) => ({ measure: i + 1, events: [] }));
+        const compact = prepareCompactNotation(notation, rl);
+        expect(compact[17].repeatStart).toBe(true);
+        expect(compact[23].repeatEnd).toBe(true);
+        expect(compact[24].ending).toBe(1);
+        expect(compact[25].ending).toBe(2);
+        expect(compact[0].repeatStart).toBeUndefined();
     });
 });
 

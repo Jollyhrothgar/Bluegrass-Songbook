@@ -242,6 +242,95 @@ export function buildMetronomeSchedule(timelineTiming) {
 }
 
 /**
+ * Analyze a reading list to detect repeat structures (for compact display).
+ *
+ * Returns:
+ * - repeatStartMarkers: Set of measures where a repeat starts (|:)
+ * - repeatEndMarkers: Set of measures where a repeat ends (:|)
+ * - endings: {measure: endingNumber} for 1st/2nd ending brackets
+ *
+ * Handles patterns like:
+ * - [1-9, 2-8, 10-10]: 2-8 repeats, 9 is 1st ending, 10 is 2nd ending
+ * - [11-18, 11-17, 19-19]: 11-17 repeats, 18 is 1st ending, 19 is 2nd
+ * - [1-8, 1-16]: simple AABB repeat of the first section
+ */
+export function analyzeReadingList(readingList) {
+    if (!readingList || readingList.length === 0) {
+        return { endings: {}, repeatStartMarkers: new Set(), repeatEndMarkers: new Set() };
+    }
+
+    const repeatStartMarkers = new Set();
+    const repeatEndMarkers = new Set();
+    const endings = {}; // measure -> ending number (1, 2, ...)
+
+    for (let i = 0; i < readingList.length - 1; i++) {
+        const curr = readingList[i];
+        const next = readingList[i + 1];
+
+        const currStart = curr.from_measure;
+        const currEnd = curr.to_measure;
+        const nextStart = next.from_measure;
+        const nextEnd = next.to_measure;
+
+        // Case 1: next starts inside current and ends before current ends
+        // e.g. [1-9] then [2-8] -> repeat 2..8, 9 is 1st ending
+        if (nextStart > currStart && nextStart <= currEnd &&
+            nextEnd < currEnd && nextEnd >= nextStart) {
+            repeatStartMarkers.add(nextStart);
+            repeatEndMarkers.add(nextEnd);
+            for (let m = nextEnd + 1; m <= currEnd; m++) endings[m] = 1;
+            const afterRepeat = readingList[i + 2];
+            if (afterRepeat &&
+                afterRepeat.from_measure === currEnd + 1 &&
+                afterRepeat.to_measure === afterRepeat.from_measure) {
+                endings[afterRepeat.from_measure] = 2;
+            }
+        }
+
+        // Case 2: same start, next ends before current (subset repeat)
+        // e.g. [11-18] then [11-17] -> repeat 11..17, 18 is 1st ending
+        if (nextStart === currStart && nextEnd < currEnd) {
+            repeatStartMarkers.add(currStart);
+            repeatEndMarkers.add(nextEnd);
+            for (let m = nextEnd + 1; m <= currEnd; m++) endings[m] = 1;
+            const afterRepeat = readingList[i + 2];
+            if (afterRepeat &&
+                afterRepeat.from_measure === currEnd + 1 &&
+                afterRepeat.to_measure === afterRepeat.from_measure) {
+                endings[afterRepeat.from_measure] = 2;
+            }
+        }
+
+        // Case 3: same start, next extends past current (AABB first-section repeat)
+        if (nextStart === currStart && nextEnd > currEnd) {
+            repeatStartMarkers.add(currStart);
+            repeatEndMarkers.add(currEnd);
+        }
+    }
+
+    return { repeatStartMarkers, repeatEndMarkers, endings };
+}
+
+/**
+ * Annotate original (written-measure) notation with repeatStart/repeatEnd/
+ * ending flags for compact display with repeat signs.
+ */
+export function prepareCompactNotation(notation, readingList) {
+    if (!readingList || readingList.length === 0) {
+        return notation;
+    }
+    const analysis = analyzeReadingList(readingList);
+    return notation.map(measure => {
+        const m = measure.measure;
+        const enhanced = { ...measure };
+        if (analysis.repeatStartMarkers.has(m)) enhanced.repeatStart = true;
+        if (analysis.repeatEndMarkers.has(m)) enhanced.repeatEnd = true;
+        if (analysis.endings[m]) enhanced.ending = analysis.endings[m];
+        return enhanced;
+    });
+}
+
+/**
  * Max written measure number across every track of an OTF notation map.
  */
 export function maxMeasureIn(notationByTrack) {
