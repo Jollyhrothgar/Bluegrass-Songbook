@@ -16,7 +16,9 @@ test.describe('OTF Editor - Demo Page', () => {
     });
 
     test('toolbar is rendered', async ({ page }) => {
-        await expect(page.locator('.editor-toolbar')).toBeVisible();
+        // The toolbar element's class is otf-editor-toolbar (toolbar.js);
+        // .editor-toolbar never existed, so this assertion could not pass.
+        await expect(page.locator('.otf-editor-toolbar')).toBeVisible();
     });
 
     test('mode indicator shows NORMAL by default', async ({ page }) => {
@@ -25,8 +27,8 @@ test.describe('OTF Editor - Demo Page', () => {
 
     test('tablature is rendered with strings', async ({ page }) => {
         // Wait for tablature to render
-        await page.locator('.tablature-container').waitFor();
-        await expect(page.locator('.tablature-container')).toBeVisible();
+        await page.locator('.editor-renderer').waitFor();
+        await expect(page.locator('.editor-renderer')).toBeVisible();
 
         // Should have string labels
         const strings = page.locator('.string-label');
@@ -38,7 +40,7 @@ test.describe('OTF Editor - Demo Page', () => {
 test.describe('OTF Editor - Mode Switching', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/editor-demo.html');
-        await page.locator('.tablature-container').waitFor();
+        await page.locator('.editor-renderer').waitFor();
         // Focus the editor container to receive keyboard events
         await page.locator('#editor-container').click();
     });
@@ -70,7 +72,7 @@ test.describe('OTF Editor - Mode Switching', () => {
 test.describe('OTF Editor - Cursor Navigation', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/editor-demo.html');
-        await page.locator('.tablature-container').waitFor();
+        await page.locator('.editor-renderer').waitFor();
         await page.locator('#editor-container').click();
     });
 
@@ -119,7 +121,7 @@ test.describe('OTF Editor - Cursor Navigation', () => {
 test.describe('OTF Editor - Note Entry', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/editor-demo.html');
-        await page.locator('.tablature-container').waitFor();
+        await page.locator('.editor-renderer').waitFor();
         await page.locator('#editor-container').click();
         // Enter insert mode
         await page.keyboard.press('i');
@@ -160,7 +162,7 @@ test.describe('OTF Editor - Note Entry', () => {
 test.describe('OTF Editor - Duration Selection', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/editor-demo.html');
-        await page.locator('.tablature-container').waitFor();
+        await page.locator('.editor-renderer').waitFor();
         await page.locator('#editor-container').click();
         await page.keyboard.press('i'); // Insert mode
     });
@@ -194,7 +196,7 @@ test.describe('OTF Editor - Duration Selection', () => {
 test.describe('OTF Editor - Roll Mode', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/editor-demo.html');
-        await page.locator('.tablature-container').waitFor();
+        await page.locator('.editor-renderer').waitFor();
         await page.locator('#editor-container').click();
         await page.keyboard.press('r'); // Enter roll mode
         await expect(page.locator('.mode-indicator')).toContainText('ROLL');
@@ -234,7 +236,7 @@ test.describe('OTF Editor - Roll Mode', () => {
 test.describe('OTF Editor - Undo/Redo', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/editor-demo.html');
-        await page.locator('.tablature-container').waitFor();
+        await page.locator('.editor-renderer').waitFor();
         await page.locator('#editor-container').click();
     });
 
@@ -274,7 +276,7 @@ test.describe('OTF Editor - Undo/Redo', () => {
 test.describe('OTF Editor - Sample Loading', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/editor-demo.html');
-        await page.locator('.tablature-container').waitFor();
+        await page.locator('.editor-renderer').waitFor();
     });
 
     test('sample selector is present', async ({ page }) => {
@@ -314,11 +316,11 @@ test.describe('OTF Editor - Sample Loading', () => {
 test.describe('OTF Editor - Popover', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/editor-demo.html');
-        await page.locator('.tablature-container').waitFor();
+        await page.locator('.editor-renderer').waitFor();
     });
 
     test('double-click opens note entry popover', async ({ page }) => {
-        const tablature = page.locator('.tablature-container');
+        const tablature = page.locator('.editor-renderer');
         const box = await tablature.boundingBox();
 
         // Double-click in the middle of the tablature
@@ -330,7 +332,7 @@ test.describe('OTF Editor - Popover', () => {
     });
 
     test('popover has fret input', async ({ page }) => {
-        const tablature = page.locator('.tablature-container');
+        const tablature = page.locator('.editor-renderer');
         const box = await tablature.boundingBox();
 
         await page.mouse.dblclick(box.x + box.width / 2, box.y + box.height / 3);
@@ -340,7 +342,7 @@ test.describe('OTF Editor - Popover', () => {
     });
 
     test('clicking outside closes popover', async ({ page }) => {
-        const tablature = page.locator('.tablature-container');
+        const tablature = page.locator('.editor-renderer');
         const box = await tablature.boundingBox();
 
         await page.mouse.dblclick(box.x + box.width / 2, box.y + box.height / 3);
@@ -358,7 +360,7 @@ test.describe('OTF Editor - Popover', () => {
 test.describe('OTF Editor - Playback Integration', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/editor-demo.html');
-        await page.locator('.tablature-container').waitFor();
+        await page.locator('.editor-renderer').waitFor();
     });
 
     test('play button is visible in status bar', async ({ page }) => {
@@ -381,7 +383,7 @@ test.describe('OTF Editor - Playback Integration', () => {
 test.describe('OTF Editor - Download', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/editor-demo.html');
-        await page.locator('.tablature-container').waitFor();
+        await page.locator('.editor-renderer').waitFor();
     });
 
     test('download button is present', async ({ page }) => {

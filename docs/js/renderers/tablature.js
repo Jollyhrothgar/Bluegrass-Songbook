@@ -399,6 +399,7 @@ export class TabRenderer {
                     fill: '#666',
                     fontWeight: '600'
                 });
+                text.setAttribute('class', 'string-label');
                 svg.appendChild(text);
             });
         }
