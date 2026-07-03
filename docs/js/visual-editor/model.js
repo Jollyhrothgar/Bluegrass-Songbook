@@ -4,7 +4,7 @@
 // Chords anchor to character offsets (ChordPro's native anchor); syllables
 // exist only in the view layer (syllables.js).
 
-import { parseLineWithChords } from '../chords.js';
+import { parseLineWithChords, transposeChord } from '../chords.js';
 
 let nextSectionId = 1;
 export function resetIdsForTest() { nextSectionId = 1; }
@@ -165,4 +165,71 @@ export function serializeSong(doc) {
         }
     }
     return out.join('\n') + '\n';
+}
+
+// ---------- edit operations (pure: return a new doc) ----------
+
+function cloneDoc(doc) { return structuredClone(doc); }
+
+function getLine(doc, sectionId, lineIndex) {
+    const sec = doc.sections.find(s => s.id === sectionId);
+    if (!sec || !sec.lines || !sec.lines[lineIndex]) {
+        throw new Error(`No line ${lineIndex} in section ${sectionId}`);
+    }
+    return sec.lines[lineIndex];
+}
+
+export function placeChord(doc, sectionId, lineIndex, position, chord) {
+    const next = cloneDoc(doc);
+    const line = getLine(next, sectionId, lineIndex);
+    line.chords.push({ chord, position });
+    line.chords.sort((a, b) => a.position - b.position);
+    return next;
+}
+
+export function moveChord(doc, sectionId, lineIndex, chordIndex, newPosition) {
+    const next = cloneDoc(doc);
+    const line = getLine(next, sectionId, lineIndex);
+    line.chords[chordIndex].position = newPosition;
+    line.chords.sort((a, b) => a.position - b.position);
+    return next;
+}
+
+export function changeChord(doc, sectionId, lineIndex, chordIndex, newChord) {
+    const next = cloneDoc(doc);
+    getLine(next, sectionId, lineIndex).chords[chordIndex].chord = newChord;
+    return next;
+}
+
+export function removeChord(doc, sectionId, lineIndex, chordIndex) {
+    const next = cloneDoc(doc);
+    getLine(next, sectionId, lineIndex).chords.splice(chordIndex, 1);
+    return next;
+}
+
+export function transposeDoc(doc, semitones) {
+    const next = cloneDoc(doc);
+    for (const sec of next.sections) {
+        if (!sec.lines) continue;
+        for (const line of sec.lines) {
+            if (line.opaque) continue;
+            for (const c of line.chords) c.chord = transposeChord(c.chord, semitones);
+        }
+    }
+    if (next.metadata.fields.key) {
+        next.metadata.fields.key = transposeChord(next.metadata.fields.key, semitones);
+    }
+    return next;
+}
+
+export function allChords(doc) {
+    const out = [];
+    for (const sec of doc.sections) {
+        if (!sec.lines) continue;
+        for (const line of sec.lines) {
+            if (line.opaque) continue;
+            for (const c of line.chords) out.push(c.chord);
+        }
+    }
+    return out;
 }
