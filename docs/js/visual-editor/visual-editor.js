@@ -78,11 +78,7 @@ export function createVisualEditor({ container, onChange }) {
             render();
         },
         onDelete() {
-            if (selection?.chordIndex === undefined) return;
-            apply(removeChord(doc, selection.sectionId, selection.lineIndex, selection.chordIndex));
-            selection = null;
-            palette.hide();
-            render();
+            deleteSelectedChord();
         },
         onClose() {
             selection = null;
@@ -128,6 +124,17 @@ export function createVisualEditor({ container, onChange }) {
         render();
     }
 
+    // Remove the chord behind the current chip selection. Shared by the
+    // palette's ✕ Remove button and the Delete/Backspace shortcut.
+    function deleteSelectedChord() {
+        if (selection?.chordIndex === undefined) return false;
+        apply(removeChord(doc, selection.sectionId, selection.lineIndex, selection.chordIndex));
+        selection = null;
+        palette.hide();
+        render();
+        return true;
+    }
+
     function showToast(message) {
         toast.textContent = '';
         toast.append(message + ' ');
@@ -165,6 +172,11 @@ export function createVisualEditor({ container, onChange }) {
         if (e.ctrlKey && e.key.toLowerCase() === 'y') {
             e.preventDefault();
             redo();
+            return;
+        }
+        // Delete/Backspace removes the chord behind a selected chip
+        if ((e.key === 'Delete' || e.key === 'Backspace') && !mod && !e.altKey) {
+            if (deleteSelectedChord()) e.preventDefault();
             return;
         }
         // typed chord entry: first hardware-keyboard letter routes into the

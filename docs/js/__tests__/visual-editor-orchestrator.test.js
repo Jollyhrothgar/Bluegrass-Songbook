@@ -189,6 +189,60 @@ describe('typed chord entry', () => {
     });
 });
 
+describe('chord deletion via Delete/Backspace', () => {
+    it('Delete removes the chord behind a selected chip and prevents default', () => {
+        container.querySelector('.ve-chip').click();
+        const e = docKeydown({ key: 'Delete' });
+        expect(e.defaultPrevented).toBe(true);
+        expect(editor.getChordPro()).not.toContain('[G]');
+        expect(container.querySelector('.ve-chip')).toBeNull();
+        expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(true);
+    });
+
+    it('Backspace removes the chord behind a selected chip', () => {
+        container.querySelector('.ve-chip').click();
+        const e = docKeydown({ key: 'Backspace' });
+        expect(e.defaultPrevented).toBe(true);
+        expect(editor.getChordPro()).not.toContain('[G]');
+    });
+
+    it('Delete with a syllable selected (no chip) does nothing', () => {
+        tapSyllable('world');
+        const e = docKeydown({ key: 'Delete' });
+        expect(e.defaultPrevented).toBe(false);
+        expect(editor.getChordPro()).toContain('[G]hello world friend');
+    });
+
+    it('Backspace with no selection does nothing', () => {
+        const e = docKeydown({ key: 'Backspace' });
+        expect(e.defaultPrevented).toBe(false);
+        expect(editor.getChordPro()).toContain('[G]hello world friend');
+    });
+
+    it('Backspace in an editable target is not intercepted', () => {
+        container.querySelector('.ve-chip').click();
+        const field = document.createElement('input');
+        document.body.appendChild(field);
+        field.dispatchEvent(new KeyboardEvent('keydown', { key: 'Backspace', bubbles: true, cancelable: true }));
+        expect(editor.getChordPro()).toContain('[G]hello');
+    });
+
+    it('Delete is inert while the container is hidden (Raw tab active)', () => {
+        container.querySelector('.ve-chip').click();
+        container.classList.add('hidden');
+        const e = docKeydown({ key: 'Delete' });
+        expect(e.defaultPrevented).toBe(false);
+        expect(editor.getChordPro()).toContain('[G]hello');
+    });
+
+    it('chord removal via Delete key is undoable', () => {
+        container.querySelector('.ve-chip').click();
+        docKeydown({ key: 'Delete' });
+        docKeydown({ key: 'z', ctrlKey: true });
+        expect(editor.getChordPro()).toContain('[G]hello');
+    });
+});
+
 describe('undo/redo keyboard shortcuts', () => {
     it('Cmd+Z / Ctrl+Z undoes the last change and prevents default', () => {
         tapSyllable('world');

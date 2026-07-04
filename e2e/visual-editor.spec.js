@@ -116,6 +116,30 @@ test.describe('Keyboard interactions', () => {
         await page.keyboard.press('ControlOrMeta+z');
         await expect(page.locator('.ve-chip')).toHaveCount(0);
     });
+
+    test('clicking a chip then pressing Delete removes the chord', async ({ page }) => {
+        await placeReadyLine(page);
+        await page.locator('.ve-syl').first().click();
+        await page.locator('.ve-palette .ve-chip-btn').first().click();
+        await expect(page.locator('.ve-chip')).toHaveCount(1);
+
+        await page.locator('.ve-chip').first().click();
+        await page.keyboard.press('Delete');
+        await expect(page.locator('.ve-chip')).toHaveCount(0);
+        await expect(page.locator('.ve-palette')).toBeHidden();
+    });
+
+    test('clicking a chip then the ✕ Remove button removes the chord', async ({ page }) => {
+        await placeReadyLine(page);
+        await page.locator('.ve-syl').first().click();
+        await page.locator('.ve-palette .ve-chip-btn').first().click();
+        await expect(page.locator('.ve-chip')).toHaveCount(1);
+
+        await page.locator('.ve-chip').first().click();
+        await expect(page.locator('.ve-palette-delete')).toBeVisible();
+        await page.locator('.ve-palette-delete').click();
+        await expect(page.locator('.ve-chip')).toHaveCount(0);
+    });
 });
 
 test.describe('Visual editor on mobile viewport', () => {
