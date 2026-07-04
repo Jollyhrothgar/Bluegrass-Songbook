@@ -405,16 +405,24 @@ export class TabRenderer {
         const midY = opt.topMargin + span / 2;
         const cx = x + this._sigInset(sig) / 2;
 
+        // Muted gray + sub-staff sizing: legible as a signature without
+        // shouting over the tab (full-height solid black was distracting).
+        const sigColor = '#777';
+
         if (TabRenderer._bravuraReady) {
             const pua = (n) => String(n).split('')
                 .map(d => String.fromCodePoint(0xE080 + Number(d))).join('');
+            // Compact centered stack (~2.4 string gaps tall, TablEdit-ish)
+            // rather than spanning the whole staff. SMuFL digits are ~0.5em
+            // tall and vertically centered on the baseline.
+            const sp = opt.stringSpacing;
             for (const [glyphs, y] of [
-                [pua(num), opt.topMargin + span * 0.25],
-                [pua(den), opt.topMargin + span * 0.75],
+                [pua(num), midY - 0.62 * sp],
+                [pua(den), midY + 0.62 * sp],
             ]) {
                 const text = this.createText(cx, y, glyphs, {
-                    fontSize: `${span}px`,
-                    fill: opt.fretColor,
+                    fontSize: `${Math.round(2.3 * sp)}px`,
+                    fill: sigColor,
                     textAnchor: 'middle'
                 });
                 text.setAttribute('class', 'time-signature');
@@ -427,8 +435,8 @@ export class TabRenderer {
         // Fallback: engraved-ish bold serif digits, tight stack
         for (const [value, y] of [[num, midY - 2], [den, midY + 13]]) {
             const text = this.createText(cx, y, String(value), {
-                fontSize: '16px',
-                fill: opt.fretColor,
+                fontSize: '15px',
+                fill: sigColor,
                 fontWeight: '700',
                 textAnchor: 'middle'
             });
