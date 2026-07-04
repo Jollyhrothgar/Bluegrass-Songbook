@@ -1,10 +1,20 @@
 // Docked chord palette: diatonic chips for the detected key, recents from
-// the current song, a root x quality grid, and free-text entry.
+// the current song, a Strum Machine-style root + quality picker, and
+// free-text entry as the escape hatch (slash chords, oddities).
 
 import { getDiatonicChords } from '../chord-explorer/theory.js';
-import { CHROMATIC_MAJOR_KEYS } from '../chords.js';
 
-const GRID_QUALITIES = ['', 'm', '7', 'm7'];
+const NATURAL_ROOTS = ['G', 'A', 'B', 'C', 'D', 'E', 'F'];
+const ACCIDENTAL_ROOTS = ['Ab', 'Bb', 'Db', 'Eb', 'F#'];
+// Map key roots onto the picker's canonical spellings.
+const ENHARMONIC = { 'C#': 'Db', 'D#': 'Eb', 'Gb': 'F#', 'G#': 'Ab', 'A#': 'Bb' };
+// Quality grid, row by row ('' = plain major).
+const QUALITY_ROWS = [
+    ['', 'm', '7', 'maj7'],
+    ['m7', 'm6', 'm9', 'dim'],
+    ['aug', 'sus4', 'sus2', 'add9'],
+    ['9', '11', '13', 'm7b5']
+];
 
 function chipButton(label, onTap) {
     const b = document.createElement('button');
@@ -46,37 +56,95 @@ export function createPalette({ onPick, onDelete, onClose }) {
 
     actionsRow.append(moreBtn, deleteBtn, closeBtn);
 
-    const moreGrid = document.createElement('div');
-    moreGrid.className = 've-palette-more-grid hidden';
-    for (const root of CHROMATIC_MAJOR_KEYS) {
-        for (const q of GRID_QUALITIES) {
-            moreGrid.appendChild(chipButton(root + q, c => onPick(c)));
+    // --- Root + quality picker (two panels, Strum Machine style) ---
+    let keyRoot = 'G';       // updated by setKey(); picker default on open
+    let selectedRoot = keyRoot;
+
+    const picker = document.createElement('div');
+    picker.className = 've-picker hidden';
+
+    const panels = document.createElement('div');
+    panels.className = 've-picker-panels';
+
+    const rootsWrap = document.createElement('div');
+    rootsWrap.className = 've-picker-roots';
+    const naturalsCol = document.createElement('div');
+    naturalsCol.className = 've-picker-naturals';
+    const accidentalsCol = document.createElement('div');
+    accidentalsCol.className = 've-picker-accidentals';
+    rootsWrap.append(naturalsCol, accidentalsCol);
+
+    const qualityGrid = document.createElement('div');
+    qualityGrid.className = 've-picker-qualities';
+
+    const rootButtons = [];
+    function rootButton(root) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 've-picker-root';
+        b.textContent = root;
+        b.setAttribute('aria-pressed', 'false');
+        b.addEventListener('click', () => selectRoot(root));
+        rootButtons.push(b);
+        return b;
+    }
+    for (const r of NATURAL_ROOTS) naturalsCol.appendChild(rootButton(r));
+    for (const r of ACCIDENTAL_ROOTS) accidentalsCol.appendChild(rootButton(r));
+
+    const qualityButtons = [];
+    for (const row of QUALITY_ROWS) {
+        for (const q of row) {
+            const b = document.createElement('button');
+            b.type = 'button';
+            b.className = 've-picker-quality';
+            b.dataset.quality = q;
+            b.addEventListener('click', () => onPick(selectedRoot + q));
+            qualityButtons.push(b);
+            qualityGrid.appendChild(b);
         }
     }
+
+    function selectRoot(root) {
+        selectedRoot = root;
+        for (const b of rootButtons) {
+            const on = b.textContent === root;
+            b.classList.toggle('selected', on);
+            b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        }
+        for (const b of qualityButtons) b.textContent = root + b.dataset.quality;
+    }
+    selectRoot(selectedRoot);
+
+    panels.append(rootsWrap, qualityGrid);
+
     const custom = document.createElement('input');
     custom.type = 'text';
     custom.className = 've-palette-custom';
-    custom.placeholder = 'Any chord (e.g. Bbmaj7)';
+    custom.placeholder = 'Any chord (e.g. Bbmaj7, D/F#)';
     custom.addEventListener('keydown', e => {
         if (e.key === 'Enter' && custom.value.trim()) {
             const chord = custom.value.trim();
             custom.value = '';
-            moreGrid.classList.add('hidden');
+            picker.classList.add('hidden');
             custom.blur();
             onPick(chord);
         } else if (e.key === 'Escape') {
             // cancel typing: back to the plain selection state
             custom.value = '';
-            moreGrid.classList.add('hidden');
+            picker.classList.add('hidden');
             custom.blur();
             e.stopPropagation();
         }
     });
-    moreGrid.appendChild(custom);
+    picker.append(panels, custom);
 
-    moreBtn.addEventListener('click', () => moreGrid.classList.toggle('hidden'));
+    moreBtn.addEventListener('click', () => {
+        const opening = picker.classList.contains('hidden');
+        picker.classList.toggle('hidden');
+        if (opening) selectRoot(keyRoot); // default root follows the song key
+    });
 
-    el.append(diatonicRow, recentsRow, actionsRow, moreGrid);
+    el.append(diatonicRow, recentsRow, actionsRow, picker);
 
     return {
         el,
@@ -84,6 +152,8 @@ export function createPalette({ onPick, onDelete, onClose }) {
             diatonicRow.textContent = '';
             if (!key) return;
             const root = key.replace(/m$/, '');
+            keyRoot = ENHARMONIC[root] || root;
+            if (picker.classList.contains('hidden')) selectRoot(keyRoot);
             const chords = getDiatonicChords(root, false);
             if (!chords.length) return;
             const labels = chords.map(c => c.display);
@@ -99,7 +169,7 @@ export function createPalette({ onPick, onDelete, onClose }) {
             // invoked on the first hardware-keyboard chord letter; never on
             // mere selection (focusing an input would pop a mobile keyboard)
             el.classList.remove('hidden');
-            moreGrid.classList.remove('hidden');
+            picker.classList.remove('hidden');
             custom.value = prefix;
             custom.focus();
             if (custom.setSelectionRange) {
@@ -112,7 +182,7 @@ export function createPalette({ onPick, onDelete, onClose }) {
         },
         hide() {
             el.classList.add('hidden');
-            moreGrid.classList.add('hidden');
+            picker.classList.add('hidden');
             custom.value = '';
         }
     };

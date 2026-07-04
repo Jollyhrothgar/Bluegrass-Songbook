@@ -9761,8 +9761,19 @@ body.fullscreen-mode::after {
     border-radius: 8px;
     cursor: pointer;
 }
-.ve-palette-more-grid { display: flex; flex-wrap: wrap; gap: 0.3rem; max-height: 40vh; overflow-y: auto; }
-.ve-palette-custom { min-height: 44px; padding: 0 0.5rem; font-size: 1rem; }
+/* Root + quality chord picker (Strum Machine style) */
+.ve-picker { margin-top: 0.4rem; }
+.ve-picker.hidden { display: none; }
+.ve-picker-panels { display: flex; gap: 0.6rem; align-items: flex-start; max-height: 45vh; overflow-y: auto; }
+.ve-picker-roots { display: flex; gap: 0.3rem; flex-shrink: 0; }
+.ve-picker-naturals,
+.ve-picker-accidentals { display: flex; flex-direction: column; gap: 0.25rem; }
+.ve-picker-root { min-height: 40px; min-width: 52px; font-size: 1rem; font-weight: 700; cursor: pointer; }
+.ve-picker-accidentals .ve-picker-root { min-width: 44px; font-size: 0.9rem; }
+.ve-picker-root.selected { background: var(--chord, #2563eb); color: var(--bg, #fff); }
+.ve-picker-qualities { flex: 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.3rem; align-content: start; }
+.ve-picker-quality { min-height: 44px; font-weight: 700; cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ve-palette-custom { min-height: 44px; padding: 0 0.5rem; font-size: 1rem; margin-top: 0.4rem; width: 100%; }
 .ve-palette-delete { min-height: 44px; color: var(--danger, #e05858); }
 .ve-palette-close { min-height: 44px; margin-left: auto; }
 .ve-palette-actions { align-items: center; }

@@ -138,7 +138,7 @@ describe('typed chord entry', () => {
         expect(e.defaultPrevented).toBe(true);
         expect(customInput().value).toBe('A');
         expect(document.activeElement).toBe(customInput());
-        expect(container.querySelector('.ve-palette-more-grid').classList.contains('hidden')).toBe(false);
+        expect(container.querySelector('.ve-picker').classList.contains('hidden')).toBe(false);
     });
 
     it('Enter commits the typed chord onto the selected syllable', () => {
@@ -165,7 +165,7 @@ describe('typed chord entry', () => {
         const input = customInput();
         input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
         expect(input.value).toBe('');
-        expect(container.querySelector('.ve-palette-more-grid').classList.contains('hidden')).toBe(true);
+        expect(container.querySelector('.ve-picker').classList.contains('hidden')).toBe(true);
         const syl = [...container.querySelectorAll('.ve-syl')]
             .find(s => s.textContent.trim().startsWith('world'));
         expect(syl.classList.contains('ve-syl-selected')).toBe(true);
@@ -185,7 +185,7 @@ describe('typed chord entry', () => {
         const e = docKeydown({ key: 'a' });
         expect(e.defaultPrevented).toBe(false);
         expect(customInput().value).toBe('');
-        expect(container.querySelector('.ve-palette-more-grid').classList.contains('hidden')).toBe(true);
+        expect(container.querySelector('.ve-picker').classList.contains('hidden')).toBe(true);
     });
 });
 
