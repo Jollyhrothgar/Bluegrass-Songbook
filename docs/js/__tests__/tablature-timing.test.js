@@ -53,15 +53,15 @@ describe('TabRenderer with per-measure time signatures', () => {
         const geoms = r.rowData[0].measures;
         expect(geoms.map(g => g.display)).toEqual([1, 2, 3]);
         // 3/4 pickup: 75% of a full measure's width, PLUS the footprint of
-        // the m1 signature glyph (24px for single digits) so the note area
+        // the m1 signature glyph (32px for single digits) so the note area
         // isn't squeezed by the mark.
-        expect(geoms[0].width).toBe(135 + 24);
+        expect(geoms[0].width).toBe(135 + 32);
         expect(geoms[0].noteW).toBe(135 - 30);
         expect(geoms[1].width).toBe(180);
         // x positions accumulate the narrow measure
         expect(geoms[0].x).toBe(50);           // leftMargin
-        expect(geoms[1].x).toBe(209);
-        expect(geoms[2].x).toBe(389);
+        expect(geoms[1].x).toBe(217);
+        expect(geoms[2].x).toBe(397);
     });
 
     it('computes absolute ticks through the short measure', () => {
@@ -136,8 +136,8 @@ describe('TabRenderer backward compatibility (no timing arg)', () => {
         ];
         r.render(TRACK, notation, 480, '4/4');
         const geoms = r.rowData[0].measures;
-        expect(geoms[0]).toMatchObject({ x: 50, width: 180 + 24, startTick: 0, noteW: 150 });
-        expect(geoms[1]).toMatchObject({ x: 254, width: 180, startTick: 1920, noteW: 150 });
+        expect(geoms[0]).toMatchObject({ x: 50, width: 180 + 32, startTick: 0, noteW: 150 });
+        expect(geoms[1]).toMatchObject({ x: 262, width: 180, startTick: 1920, noteW: 150 });
         expect(r.ticksPerMeasure).toBe(1920);
     });
 
