@@ -9640,6 +9640,9 @@ body.fullscreen-mode::after {
 /* ===== Visual editor ===== */
 .visual-editor-container.hidden { display: none; }
 .ve-root { padding-bottom: 30vh; } /* room above the docked palette */
+/* the open root+quality picker is much taller than the bare palette: give
+   enough scroll room that the line being edited can sit above it */
+.ve-root:has(.ve-picker:not(.hidden)) { padding-bottom: 75vh; }
 .ve-toolbar {
     display: flex;
     align-items: center;

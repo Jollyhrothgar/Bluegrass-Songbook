@@ -146,9 +146,18 @@ export function createPalette({ onPick, onDelete, onClose }) {
 
     el.append(diatonicRow, recentsRow, actionsRow, picker);
 
+    // render() calls setKey/setRecents after every model change; skip the DOM
+    // rebuild when nothing changed so buttons stay live across re-renders
+    // (a rebuild mid-press would swallow the click) and the open picker keeps
+    // its root selection.
+    let lastKey;
+    let lastRecents;
+
     return {
         el,
         setKey(key) {
+            if (key === lastKey) return;
+            lastKey = key;
             diatonicRow.textContent = '';
             if (!key) return;
             const root = key.replace(/m$/, '');
@@ -162,6 +171,9 @@ export function createPalette({ onPick, onDelete, onClose }) {
             for (const label of labels) diatonicRow.appendChild(chipButton(label, c => onPick(c)));
         },
         setRecents(list) {
+            const sig = list.join('\u0000');
+            if (sig === lastRecents) return;
+            lastRecents = sig;
             recentsRow.textContent = '';
             for (const chord of list) recentsRow.appendChild(chipButton(chord, c => onPick(c)));
         },

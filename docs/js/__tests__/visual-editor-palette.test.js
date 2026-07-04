@@ -62,6 +62,37 @@ describe('createPalette', () => {
     });
 });
 
+describe('re-render stability (setKey/setRecents on every model change)', () => {
+    it('setKey with an unchanged key keeps the same live chip buttons', () => {
+        palette.setKey('G');
+        const chip = palette.el.querySelector('.ve-palette-diatonic .ve-chip-btn');
+        palette.setKey('G');
+        expect(palette.el.querySelector('.ve-palette-diatonic .ve-chip-btn')).toBe(chip);
+        palette.setKey('C');
+        expect(palette.el.querySelector('.ve-palette-diatonic .ve-chip-btn')).not.toBe(chip);
+    });
+
+    it('setRecents with an unchanged list keeps the same live chip buttons', () => {
+        palette.setRecents(['G', 'C']);
+        const chip = palette.el.querySelector('.ve-palette-recents .ve-chip-btn');
+        palette.setRecents(['G', 'C']);
+        expect(palette.el.querySelector('.ve-palette-recents .ve-chip-btn')).toBe(chip);
+        palette.setRecents(['G', 'C', 'D']);
+        expect(palette.el.querySelector('.ve-palette-recents .ve-chip-btn')).not.toBe(chip);
+    });
+
+    it('re-render with the same key preserves the open picker root selection', () => {
+        palette.setKey('G');
+        openPicker();
+        rootBtns().find(b => b.textContent === 'E').click();
+        // simulate render() after a pick: same key, new recents
+        palette.setKey('G');
+        palette.setRecents(['Em']);
+        expect(pickerHidden()).toBe(false);
+        expect(selectedRoot().textContent).toBe('E');
+    });
+});
+
 describe('root + quality picker (Strum Machine style)', () => {
     it('More… toggles the picker panel', () => {
         expect(pickerHidden()).toBe(true);

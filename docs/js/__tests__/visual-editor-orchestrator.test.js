@@ -67,6 +67,52 @@ describe('place / move / remove flow', () => {
     });
 });
 
+describe('consecutive picks (insert then refine)', () => {
+    it('a pick inserts and selects the new chip; the palette stays open', () => {
+        tapSyllable('world');
+        pickChord('C');
+        expect(editor.getChordPro()).toContain('[C]world');
+        expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(false);
+        const chip = [...container.querySelectorAll('.ve-chip')].find(c => c.textContent === 'C');
+        expect(chip.classList.contains('ve-chip-selected')).toBe(true);
+        // now editing an existing chord: delete becomes available
+        expect(container.querySelector('.ve-palette-delete').classList.contains('hidden')).toBe(false);
+    });
+
+    it('the next pick replaces the just-placed chord instead of no-oping or stacking', () => {
+        tapSyllable('world');
+        pickChord('C');
+        pickChord('D7');
+        expect(editor.getChordPro()).toContain('[D7]world');
+        expect(editor.getChordPro()).not.toContain('[C]');
+        // exactly one chip on the syllable (original [G]hello + the new one)
+        expect(container.querySelectorAll('.ve-chip')).toHaveLength(2);
+    });
+
+    it('picker stays open with its root selection intact across picks', () => {
+        tapSyllable('world');
+        container.querySelector('.ve-palette-more').click();
+        const roots = () => [...container.querySelectorAll('.ve-picker-root')];
+        const qualities = () => [...container.querySelectorAll('.ve-picker-quality')];
+        roots().find(b => b.textContent === 'E').click();
+        qualities().find(b => b.textContent === 'Em').click();
+        expect(editor.getChordPro()).toContain('[Em]world');
+        expect(container.querySelector('.ve-picker').classList.contains('hidden')).toBe(false);
+        expect(container.querySelector('.ve-picker-root.selected').textContent).toBe('E');
+        qualities().find(b => b.textContent === 'Em7').click();
+        expect(editor.getChordPro()).toContain('[Em7]world');
+        expect(editor.getChordPro()).not.toContain('[Em]world');
+    });
+
+    it('after a pick, tapping another syllable moves the flow there (insert)', () => {
+        tapSyllable('world');
+        pickChord('C');
+        tapSyllable('friend');
+        pickChord('D7');
+        expect(editor.getChordPro()).toContain('[C]world [D7]friend');
+    });
+});
+
 describe('undo / redo', () => {
     it('undo reverts the last op; redo reapplies it', () => {
         tapSyllable('world');

@@ -49,6 +49,45 @@ test.describe('Visual editor basics', () => {
         expect(raw).toContain('{start_of_verse: Verse 1}');
     });
 
+    test('picker picks insert immediately and consecutive picks refine', async ({ page }) => {
+        await openNewSongEditor(page);
+        await page.locator('.ve-add-section').click();
+        await page.locator('[data-add-type="verse"]').click();
+        await page.locator('.ve-lyrics-input').fill('hello world friend');
+        await page.locator('.ve-mode-chords').click();
+
+        // select the first syllable and open the full picker
+        await page.locator('.ve-syl').first().click();
+        await page.locator('.ve-palette-more').click();
+        await expect(page.locator('.ve-picker')).toBeVisible();
+
+        // first pick inserts and selects the new chip
+        await page.locator('.ve-picker-quality', { hasText: /^Gm$/ }).click();
+        await expect(page.locator('.ve-chip')).toHaveText('Gm');
+        await expect(page.locator('.ve-chip')).toHaveClass(/ve-chip-selected/);
+
+        // picker stays open with its root intact; the next pick refines
+        // the same chord (no silent no-op, no stacking)
+        await expect(page.locator('.ve-picker')).toBeVisible();
+        await expect(page.locator('.ve-picker-root.selected')).toHaveText('G');
+        await page.locator('.ve-picker-quality', { hasText: /^G7$/ }).click();
+        await expect(page.locator('.ve-chip')).toHaveText('G7');
+        await expect(page.locator('.ve-chip')).toHaveCount(1);
+
+        // tapping another syllable moves on; the next pick inserts there
+        // (scroll it into the band between sticky toolbar and docked palette)
+        const world = page.locator('.ve-syl', { hasText: 'world' }).first();
+        await world.evaluate(el => { el.scrollIntoView(); window.scrollBy(0, -150); });
+        await world.click();
+        await page.locator('.ve-picker-quality', { hasText: /^Gm7$/ }).click();
+        await expect(page.locator('.ve-chip')).toHaveCount(2);
+
+        await page.locator('#editor-tab-raw').click();
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw).toContain('[G7]hello [Gm7]world friend');
+        expect(raw).not.toContain('[Gm]hello');
+    });
+
     test('editing an existing song shows its sections and chords', async ({ page }) => {
         await page.goto('/#work/your-cheating-heart');
         await page.waitForTimeout(1000);

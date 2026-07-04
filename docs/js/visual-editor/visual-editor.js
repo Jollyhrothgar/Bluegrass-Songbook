@@ -68,13 +68,24 @@ export function createVisualEditor({ container, onChange }) {
     const palette = createPalette({
         onPick(chord) {
             if (!selection) return;
+            const { sectionId, lineIndex } = selection;
             if (selection.chordIndex !== undefined) {
-                apply(changeChord(doc, selection.sectionId, selection.lineIndex, selection.chordIndex, chord));
-                selection = null;
+                apply(changeChord(doc, sectionId, lineIndex, selection.chordIndex, chord));
             } else {
-                apply(placeChord(doc, selection.sectionId, selection.lineIndex, selection.position, chord));
-                selection = null;
+                const { position } = selection;
+                apply(placeChord(doc, sectionId, lineIndex, position, chord));
+                // Select the chip we just placed so the palette stays live:
+                // the next pick refines it (G → Gm7) via changeChord instead
+                // of silently no-oping. placeChord's sort is stable, so the
+                // new chord is the last one at this position.
+                const line = doc.sections.find(s => s.id === sectionId).lines[lineIndex];
+                let chordIndex = -1;
+                line.chords.forEach((c, i) => { if (c.position === position) chordIndex = i; });
+                selection = { sectionId, lineIndex, chordIndex };
             }
+            // keep the palette (and any open picker) up for consecutive picks;
+            // Done/Escape or tapping elsewhere moves on
+            palette.showFor({ existingChord: chord });
             render();
         },
         onDelete() {
