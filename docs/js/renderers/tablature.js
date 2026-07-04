@@ -6,6 +6,7 @@ import {
     TimelineTiming,
     identityTimeline,
     measureTicksFor,
+    parseTimeSignature,
 } from './measure-timing.js';
 
 const INSTRUMENT_ICONS = {
@@ -331,6 +332,44 @@ export class TabRenderer {
         return Math.max(60, Math.round(base * ticks / defaultTicks));
     }
 
+    /**
+     * Time-signature glyph to print at the start of a display measure, or
+     * null. Printed at measure 1 (the GLOBAL signature — pickups are
+     * notated under the main signature, like TablEdit) and wherever the
+     * effective signature changes, including the reversion after a
+     * mid-tune short measure.
+     */
+    _signatureMarkFor(display) {
+        const t = this.timing;
+        const global = t?.measureTiming?.defaultSignature || this._timeSignature || '4/4';
+        if (display === 1) return global;
+        if (!t) return null;
+        const sigOf = (d) => d <= 1
+            ? global   // measure 1 counts as the global sig (pickup rule)
+            : t.measureTiming.signatureFor(t.originalAt(d));
+        const cur = sigOf(display);
+        return cur !== sigOf(display - 1) ? cur : null;
+    }
+
+    /**
+     * Draw a stacked num/den time-signature glyph at the measure start.
+     */
+    drawTimeSignature(svg, x, sig, opt) {
+        const { num, den } = parseTimeSignature(sig);
+        const span = (this.numStrings - 1) * opt.stringSpacing;
+        const midY = opt.topMargin + span / 2;
+        for (const [value, y] of [[num, midY - 2], [den, midY + 12]]) {
+            const text = this.createText(x + 7, y, String(value), {
+                fontSize: '13px',
+                fill: opt.fretColor,
+                fontWeight: '700',
+                textAnchor: 'middle'
+            });
+            text.setAttribute('class', 'time-signature');
+            svg.appendChild(text);
+        }
+    }
+
     renderRow(measures, numStrings, height, tuning, rowIndex = 0) {
         const opt = this.options;
         // Add extra width for ending brackets if present
@@ -343,12 +382,18 @@ export class TabRenderer {
         const measureGeoms = measures.map(m => {
             const ticks = this.timing.ticksAt(m.measure);
             const geomWidth = this._measureWidthFor(ticks);
+            const signatureMark = this._signatureMarkFor(m.measure);
+            // Reserve horizontal room for repeat-start dots and sig glyphs
+            const inset = 15 + (m.repeatStart ? 12 : 0) + (signatureMark ? 14 : 0);
             const geom = {
                 display: m.measure,
                 x: xCursor,
                 width: geomWidth,
                 ticks,
                 startTick: this.timing.startTick(m.measure),
+                signatureMark,
+                noteX0: xCursor + inset,
+                noteW: geomWidth - inset - 15,
             };
             xCursor += geomWidth;
             return geom;
@@ -447,6 +492,12 @@ export class TabRenderer {
                 this.drawEndingBracket(svg, x, measureWidth, opt.topMargin, measure.ending, opt);
             }
 
+            // Time-signature glyph at signature changes (and measure 1)
+            if (geom.signatureMark) {
+                const sigX = x + (measure.repeatStart ? 14 : 2);
+                this.drawTimeSignature(svg, sigX, geom.signatureMark, opt);
+            }
+
             // Measure number (offset if repeat sign present)
             const numX = measure.repeatStart ? x + 12 : x + 3;
             const numText = this.createText(numX, opt.topMargin - 8, measure.measure.toString(), {
@@ -458,10 +509,8 @@ export class TabRenderer {
             // Collect notes with positions
             const notePositions = [];
             if (measure.events) {
-                // Add extra left margin for repeat start to make room for |: symbol
-                const repeatStartOffset = measure.repeatStart ? 12 : 0;
-                const noteAreaStart = x + 15 + repeatStartOffset;
-                const noteAreaWidth = measureWidth - 30 - repeatStartOffset;
+                const noteAreaStart = geom.noteX0;
+                const noteAreaWidth = geom.noteW;
 
                 measure.events.forEach(event => {
                     // 16th-note slot on the quarter grid (ts-independent)
@@ -1152,7 +1201,7 @@ export class TabRenderer {
             return;
         }
         const posRatio = tickInMeasure / geom.ticks;
-        const x = geom.x + 15 + posRatio * (geom.width - 30);
+        const x = (geom.noteX0 ?? geom.x + 15) + posRatio * (geom.noteW ?? geom.width - 30);
 
         // Show cursor on correct row, hide others
         this.beatCursors.forEach(({ rowIndex, cursor }) => {

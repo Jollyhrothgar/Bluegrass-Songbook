@@ -73,11 +73,10 @@ describe('TabRenderer with per-measure time signatures', () => {
     it('positions notes against the measure\'s own length', () => {
         // pickup measure: tick 960 of 1440 -> 2/3 across the note area
         const geom = r.rowData[0].measures[0];
-        const noteArea = geom.width - 30;
         const m1notes = r.noteElements.filter(n => n.measure === 1);
         const xs = m1notes.map(n => n.x).sort((a, b) => a - b);
-        expect(xs[0]).toBeCloseTo(geom.x + 15, 5);
-        expect(xs[1]).toBeCloseTo(geom.x + 15 + (960 / 1440) * noteArea, 5);
+        expect(xs[0]).toBeCloseTo(geom.noteX0, 5);
+        expect(xs[1]).toBeCloseTo(geom.noteX0 + (960 / 1440) * geom.noteW, 5);
     });
 
     it('places the beat cursor using per-measure geometry', () => {
@@ -85,7 +84,43 @@ describe('TabRenderer with per-measure time signatures', () => {
         const cursor = r.beatCursors[0].cursor;
         expect(cursor.style.display).toBe('block');
         const geom = r.rowData[0].measures[1];
-        expect(parseFloat(cursor.getAttribute('x'))).toBeCloseTo(geom.x + 15 - 1.5, 5);
+        expect(parseFloat(cursor.getAttribute('x'))).toBeCloseTo(geom.noteX0 - 1.5, 5);
+    });
+
+    it('marks the global signature at m1 but not the pickup override', () => {
+        // TablEdit notates pickups under the main signature: m1 shows 4/4,
+        // and m2 gets NO reversion mark.
+        const geoms = r.rowData[0].measures;
+        expect(geoms[0].signatureMark).toBe('4/4');
+        expect(geoms[1].signatureMark).toBeNull();
+        expect(geoms[2].signatureMark).toBeNull();
+    });
+});
+
+describe('TabRenderer time-signature marks at mid-tune changes', () => {
+    it('marks the change AND the reversion (wheel-hoss shape)', () => {
+        const timing = new TimelineTiming(
+            new MeasureTiming({
+                timeSignature: '4/4',
+                timeSignatureChanges: [{ measure: 2, time_signature: '2/4' }],
+            }),
+            identityTimeline(3),
+        );
+        const r = makeRenderer();
+        const notation = [
+            { measure: 1, events: [note(0)] },
+            { measure: 2, events: [note(0)] },
+            { measure: 3, events: [note(0)] },
+        ];
+        r.render(TRACK, notation, 480, '4/4', timing);
+        const geoms = r.rowData[0].measures;
+        expect(geoms.map(g => g.signatureMark)).toEqual(['4/4', '2/4', '4/4']);
+        // glyph text is drawn (num + den for the 2/4 mark)
+        const texts = [...r.container.querySelectorAll('text.time-signature')]
+            .map(t => t.textContent);
+        expect(texts).toContain('2');
+        // marked measures reserve room: notes start after the glyph
+        expect(geoms[1].noteX0).toBeGreaterThan(geoms[1].x + 15);
     });
 });
 
