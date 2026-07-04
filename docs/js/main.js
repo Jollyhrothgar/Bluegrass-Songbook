@@ -316,6 +316,9 @@ function handleHistoryNavigation(state) {
                 // Re-enter edit mode for the song
                 const song = allSongs.find(s => s.id === state.songId);
                 if (song) {
+                    // Route through the view state machine so home/search
+                    // content is hidden before the editor panel is shown
+                    showView('add-song');
                     enterEditMode(song, { fromHistory: true });
                 } else {
                     showView('search');
@@ -735,6 +738,10 @@ function handleDeepLink() {
         trackDeepLink('edit', hash);
         const song = allSongs.find(s => s.id === songId);
         if (song) {
+            // Route through the view state machine so the landing page is
+            // hidden before the editor panel is shown (enterEditMode only
+            // toggles editor-adjacent panels, not the home view)
+            showView('add-song');
             enterEditMode(song, { fromDeepLink: true });
             pushHistoryState('edit', { songId }, true);
         } else {

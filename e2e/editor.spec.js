@@ -8,6 +8,19 @@ async function openSidebar(page) {
 }
 
 test.describe('Editor Access', () => {
+    test('reloading while editing keeps home content hidden', async ({ page }) => {
+        // Force-refresh on an #edit deep link must restore the editor without
+        // stacking the landing page (logo, search, collections) above it.
+        await page.goto('/#edit/your-cheating-heart');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#editor-title')).toHaveValue(/Cheat/i);
+
+        await page.reload();
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#landing-page')).toBeHidden();
+        await expect(page.locator('.search-container')).toBeHidden();
+    });
+
     test('can access editor via sidebar Add Song button', async ({ page }) => {
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
