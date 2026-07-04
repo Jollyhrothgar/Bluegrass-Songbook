@@ -159,6 +159,14 @@ export class TabRenderer {
         // Resize observer for responsive layout
         this._resizeObserver = null;
         this._resizeTimeout = null;
+
+        // Engraved time-signature digits: kick off the (once-per-page)
+        // Bravura load and re-render when it arrives.
+        TabRenderer._ensureBravura().then(() => {
+            if (TabRenderer._bravuraReady && this._track && this._notation) {
+                this._renderInternal();
+            }
+        });
     }
 
     /**
@@ -352,20 +360,80 @@ export class TabRenderer {
     }
 
     /**
-     * Draw a stacked num/den time-signature glyph at the measure start.
+     * Load Bravura (SMuFL music font) once per page for engraved
+     * time-signature digits (U+E080..E089). Falls back to bold serif
+     * digits until/unless it loads (offline, jsdom, blocked CDN).
+     */
+    static _ensureBravura() {
+        if (TabRenderer._bravuraPromise) return TabRenderer._bravuraPromise;
+        try {
+            const style = document.createElement('style');
+            style.textContent =
+                "@font-face { font-family: 'Bravura'; " +
+                "src: url('https://cdn.jsdelivr.net/gh/steinbergmedia/bravura@latest/redist/woff/Bravura.woff2') format('woff2'); " +
+                "font-display: swap; }";
+            document.head.appendChild(style);
+            TabRenderer._bravuraPromise = document.fonts
+                ? document.fonts.load('28px Bravura').then(() => {
+                    TabRenderer._bravuraReady = document.fonts.check('28px Bravura');
+                }).catch(() => { TabRenderer._bravuraReady = false; })
+                : Promise.resolve();
+        } catch (e) {
+            TabRenderer._bravuraPromise = Promise.resolve();
+        }
+        return TabRenderer._bravuraPromise;
+    }
+
+    /**
+     * Horizontal room a signature glyph needs (wider for 12/8 etc.).
+     */
+    _sigInset(sig) {
+        const { num, den } = parseTimeSignature(sig);
+        const digits = Math.max(String(num).length, String(den).length);
+        return 10 + 14 * digits;
+    }
+
+    /**
+     * Draw a stacked num/den time-signature at the measure start.
+     * With Bravura: SMuFL digits, sized to the tab staff, numerator
+     * centered in the top half and denominator in the bottom half
+     * (SMuFL timeSig glyphs are vertically centered on the baseline).
      */
     drawTimeSignature(svg, x, sig, opt) {
         const { num, den } = parseTimeSignature(sig);
         const span = (this.numStrings - 1) * opt.stringSpacing;
         const midY = opt.topMargin + span / 2;
-        for (const [value, y] of [[num, midY - 2], [den, midY + 12]]) {
-            const text = this.createText(x + 7, y, String(value), {
-                fontSize: '13px',
+        const cx = x + this._sigInset(sig) / 2;
+
+        if (TabRenderer._bravuraReady) {
+            const pua = (n) => String(n).split('')
+                .map(d => String.fromCodePoint(0xE080 + Number(d))).join('');
+            for (const [glyphs, y] of [
+                [pua(num), opt.topMargin + span * 0.25],
+                [pua(den), opt.topMargin + span * 0.75],
+            ]) {
+                const text = this.createText(cx, y, glyphs, {
+                    fontSize: `${span}px`,
+                    fill: opt.fretColor,
+                    textAnchor: 'middle'
+                });
+                text.setAttribute('class', 'time-signature');
+                text.setAttribute('font-family', 'Bravura');
+                svg.appendChild(text);
+            }
+            return;
+        }
+
+        // Fallback: engraved-ish bold serif digits, tight stack
+        for (const [value, y] of [[num, midY - 2], [den, midY + 13]]) {
+            const text = this.createText(cx, y, String(value), {
+                fontSize: '16px',
                 fill: opt.fretColor,
                 fontWeight: '700',
                 textAnchor: 'middle'
             });
             text.setAttribute('class', 'time-signature');
+            text.setAttribute('font-family', "Georgia, 'Times New Roman', serif");
             svg.appendChild(text);
         }
     }
@@ -381,10 +449,13 @@ export class TabRenderer {
         let xCursor = opt.leftMargin;
         const measureGeoms = measures.map(m => {
             const ticks = this.timing.ticksAt(m.measure);
-            const geomWidth = this._measureWidthFor(ticks);
             const signatureMark = this._signatureMarkFor(m.measure);
-            // Reserve horizontal room for repeat-start dots and sig glyphs
-            const inset = 15 + (m.repeatStart ? 12 : 0) + (signatureMark ? 14 : 0);
+            // A signature glyph WIDENS the measure by its own footprint so
+            // the note area is never squeezed by the mark.
+            const sigInset = signatureMark ? this._sigInset(signatureMark) : 0;
+            const repeatInset = m.repeatStart ? 12 : 0;
+            const geomWidth = this._measureWidthFor(ticks) + sigInset;
+            const inset = 15 + repeatInset + sigInset;
             const geom = {
                 display: m.measure,
                 x: xCursor,
