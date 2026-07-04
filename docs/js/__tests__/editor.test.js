@@ -1,6 +1,6 @@
 // Unit tests for editor.js paste handlers
 import { describe, it, expect } from 'vitest';
-import { cleanChordUPaste, cleanUltimateGuitarPaste, editorConvertToChordPro } from '../editor.js';
+import { cleanChordUPaste, cleanUltimateGuitarPaste, editorConvertToChordPro, editorTransposeContent } from '../editor.js';
 
 describe('cleanChordUPaste', () => {
     it('extracts full song from ChordU paste with artist and quoted title', () => {
@@ -341,5 +341,23 @@ Sing along`;
 
         expect(result).toContain('{sov: Verse 1}');
         expect(result).toContain('{soc}');
+    });
+});
+
+describe('editorTransposeContent', () => {
+    it('transposes bracketed chords', () => {
+        expect(editorTransposeContent('[G]hello [C]world', 2)).toBe('[A]hello [D]world');
+    });
+
+    it('transposes {key:} and {meta: key} directives along with the chords', () => {
+        const out = editorTransposeContent('{key: G}\n{meta: key Em}\n[G]hello', 2);
+        expect(out).toContain('{key: A}');
+        expect(out).toContain('{meta: key F#m}');
+        expect(out).toContain('[A]hello');
+    });
+
+    it('returns content unchanged for zero semitones', () => {
+        const src = '{key: G}\n[G]hello';
+        expect(editorTransposeContent(src, 0)).toBe(src);
     });
 });

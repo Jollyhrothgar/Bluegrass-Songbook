@@ -59,8 +59,17 @@ export function createPalette({ onPick, onDelete, onClose }) {
     custom.placeholder = 'Any chord (e.g. Bbmaj7)';
     custom.addEventListener('keydown', e => {
         if (e.key === 'Enter' && custom.value.trim()) {
-            onPick(custom.value.trim());
+            const chord = custom.value.trim();
             custom.value = '';
+            moreGrid.classList.add('hidden');
+            custom.blur();
+            onPick(chord);
+        } else if (e.key === 'Escape') {
+            // cancel typing: back to the plain selection state
+            custom.value = '';
+            moreGrid.classList.add('hidden');
+            custom.blur();
+            e.stopPropagation();
         }
     });
     moreGrid.appendChild(custom);
@@ -86,6 +95,17 @@ export function createPalette({ onPick, onDelete, onClose }) {
             recentsRow.textContent = '';
             for (const chord of list) recentsRow.appendChild(chipButton(chord, c => onPick(c)));
         },
+        beginTyping(prefix) {
+            // invoked on the first hardware-keyboard chord letter; never on
+            // mere selection (focusing an input would pop a mobile keyboard)
+            el.classList.remove('hidden');
+            moreGrid.classList.remove('hidden');
+            custom.value = prefix;
+            custom.focus();
+            if (custom.setSelectionRange) {
+                custom.setSelectionRange(custom.value.length, custom.value.length);
+            }
+        },
         showFor({ existingChord }) {
             deleteBtn.classList.toggle('hidden', !existingChord);
             el.classList.remove('hidden');
@@ -93,6 +113,7 @@ export function createPalette({ onPick, onDelete, onClose }) {
         hide() {
             el.classList.add('hidden');
             moreGrid.classList.add('hidden');
+            custom.value = '';
         }
     };
 }

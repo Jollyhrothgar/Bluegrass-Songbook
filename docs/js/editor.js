@@ -484,10 +484,18 @@ export function editorTransposeContent(content, semitones) {
     const bracketChordRegex = /\[([A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?)\]/g;
 
     // Transpose all bracketed chords
-    return content.replace(bracketChordRegex, (match, chord) => {
+    let result = content.replace(bracketChordRegex, (match, chord) => {
         const transposed = transposeChord(chord, semitones);
         return `[${transposed}]`;
     });
+
+    // Keep {key: X} / {meta: key X} directives in step with the chords so
+    // downstream consumers (e.g. the visual editor's palette) see the new key
+    const keyDirectiveRegex = /\{(key:\s*|meta:\s*key\s+)([A-G][#b]?(?:m|min)?)\s*\}/gi;
+    result = result.replace(keyDirectiveRegex, (match, prefix, key) =>
+        `{${prefix}${transposeChord(key, semitones)}}`);
+
+    return result;
 }
 
 /**

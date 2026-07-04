@@ -3,7 +3,7 @@
 // host can mirror into the raw textarea.
 
 import {
-    parseSong, serializeSong, placeChord, moveChord, changeChord, removeChord,
+    parseSong, serializeSong, placeChord, changeChord, removeChord,
     transposeDoc, allChords, addSection, setSectionType, relabelSection,
     moveSection, duplicateSection, deleteSection, updateLyrics,
     splitSectionOnBlankLines
@@ -141,6 +141,41 @@ export function createVisualEditor({ container, onChange }) {
         setTimeout(() => toast.classList.add('hidden'), 8000);
     }
 
+    function isEditableTarget(t) {
+        if (!t || !t.tagName) return false;
+        if (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA') return true;
+        if (t.isContentEditable) return true;
+        return !!(t.closest && t.closest('[contenteditable=""], [contenteditable="true"]'));
+    }
+
+    function isActive() {
+        // mounted, and neither the container nor any ancestor is hidden
+        // (editor.js hides the container when the Raw tab is active)
+        return container.isConnected && !container.closest('.hidden');
+    }
+
+    function handleKeydown(e) {
+        if (!isActive() || isEditableTarget(e.target)) return;
+        const mod = e.metaKey || e.ctrlKey;
+        if (mod && e.key.toLowerCase() === 'z') {
+            e.preventDefault();
+            if (e.shiftKey) redo(); else undo();
+            return;
+        }
+        if (e.ctrlKey && e.key.toLowerCase() === 'y') {
+            e.preventDefault();
+            redo();
+            return;
+        }
+        // typed chord entry: first hardware-keyboard letter routes into the
+        // palette's custom input (Enter commits via onPick, Escape cancels)
+        if (selection && !mod && !e.altKey && /^[A-Ga-g]$/.test(e.key)) {
+            e.preventDefault();
+            palette.beginTyping(e.key.toUpperCase());
+        }
+    }
+    document.addEventListener('keydown', handleKeydown);
+
     function currentKey() {
         if (doc.metadata.fields.key) return doc.metadata.fields.key;
         // fall back to G (the bluegrass default) so a brand-new song still
@@ -156,25 +191,16 @@ export function createVisualEditor({ container, onChange }) {
 
     const callbacks = {
         onSyllableTap(sectionId, lineIndex, position) {
-            if (selection?.chordIndex !== undefined) {
-                // a chip is selected → move it here (also across lines/sections? v1: same line only)
-                if (selection.sectionId === sectionId && selection.lineIndex === lineIndex) {
-                    apply(moveChord(doc, sectionId, lineIndex, selection.chordIndex, position));
-                    selection = null;
-                    render();
-                    return;
-                }
-            }
+            // Tapping a syllable always selects it — even when a chip is
+            // selected (moving the chord on tap surprised users; drag may
+            // return as an explicit gesture later, so moveChord stays in
+            // the model).
             selection = { sectionId, lineIndex, position };
-            palette.setKey(currentKey());
-            palette.setRecents(recents());
             palette.showFor({ existingChord: null });
             render();
         },
         onChipTap(sectionId, lineIndex, chordIndex) {
             selection = { sectionId, lineIndex, chordIndex };
-            palette.setKey(currentKey());
-            palette.setRecents(recents());
             const sec = doc.sections.find(s => s.id === sectionId);
             palette.showFor({ existingChord: sec.lines[lineIndex].chords[chordIndex].chord });
             render();
@@ -221,6 +247,10 @@ export function createVisualEditor({ container, onChange }) {
 
     function render() {
         toolbar.querySelector('.ve-key-label').textContent = currentKey() ? `Key: ${currentKey()}` : 'Key: ?';
+        // keep the palette key-aware: transpose, key-directive changes and
+        // tab-switch reloads all funnel through render()
+        palette.setKey(currentKey());
+        palette.setRecents(recents());
         cardsHost.textContent = '';
         for (const sec of doc.sections) {
             const mode = modes.get(sec.id) || (sec.lines && sec.lines.length === 0 ? 'lyrics' : 'chords');
@@ -246,6 +276,10 @@ export function createVisualEditor({ container, onChange }) {
         },
         getChordPro() { return serializeSong(doc); },
         isEmpty() { return doc.sections.length === 0; },
-        destroy() { container.textContent = ''; container.classList.remove('ve-root'); }
+        destroy() {
+            document.removeEventListener('keydown', handleKeydown);
+            container.textContent = '';
+            container.classList.remove('ve-root');
+        }
     };
 }

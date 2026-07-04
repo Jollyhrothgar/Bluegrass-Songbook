@@ -72,3 +72,34 @@ describe('createPalette', () => {
         expect(palette.el.classList.contains('hidden')).toBe(true);
     });
 });
+
+describe('beginTyping (hardware keyboard chord entry)', () => {
+    it('reveals the more grid, seeds the custom input, and focuses it', () => {
+        palette.showFor({ existingChord: null });
+        palette.beginTyping('A');
+        const grid = palette.el.querySelector('.ve-palette-more-grid');
+        const input = palette.el.querySelector('.ve-palette-custom');
+        expect(grid.classList.contains('hidden')).toBe(false);
+        expect(input.value).toBe('A');
+        expect(document.activeElement).toBe(input);
+    });
+
+    it('Escape clears the input and hides the grid without firing onPick', () => {
+        palette.beginTyping('B');
+        const input = palette.el.querySelector('.ve-palette-custom');
+        input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+        expect(input.value).toBe('');
+        expect(palette.el.querySelector('.ve-palette-more-grid').classList.contains('hidden')).toBe(true);
+        expect(onPick).not.toHaveBeenCalled();
+    });
+
+    it('Enter commits the typed chord and resets the input and grid', () => {
+        palette.beginTyping('A');
+        const input = palette.el.querySelector('.ve-palette-custom');
+        input.value = 'Am7';
+        input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
+        expect(onPick).toHaveBeenCalledWith('Am7');
+        expect(input.value).toBe('');
+        expect(palette.el.querySelector('.ve-palette-more-grid').classList.contains('hidden')).toBe(true);
+    });
+});

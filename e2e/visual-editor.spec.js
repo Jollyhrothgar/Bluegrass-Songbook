@@ -87,6 +87,37 @@ test.describe('Visual editor basics', () => {
     });
 });
 
+test.describe('Keyboard interactions', () => {
+    async function placeReadyLine(page) {
+        await openNewSongEditor(page);
+        await page.locator('.ve-add-section').click();
+        await page.locator('[data-add-type="verse"]').click();
+        await page.locator('.ve-lyrics-input').fill('hello world friend');
+        await page.locator('.ve-mode-chords').click();
+    }
+
+    test('typed chord entry: select a syllable, type Am, Enter places the chord', async ({ page }) => {
+        await placeReadyLine(page);
+        await page.locator('.ve-syl').first().click();
+        await expect(page.locator('.ve-palette')).toBeVisible();
+        await page.keyboard.type('Am');
+        await expect(page.locator('.ve-palette-custom')).toHaveValue('Am');
+        await page.keyboard.press('Enter');
+        await expect(page.locator('.ve-chip').first()).toHaveText('Am');
+        await page.locator('#editor-tab-raw').click();
+        expect(await page.locator('#editor-content').inputValue()).toContain('[Am]hello');
+    });
+
+    test('Cmd/Ctrl+Z undoes a chord placement', async ({ page }) => {
+        await placeReadyLine(page);
+        await page.locator('.ve-syl').first().click();
+        await page.locator('.ve-palette .ve-chip-btn').first().click();
+        await expect(page.locator('.ve-chip')).toHaveCount(1);
+        await page.keyboard.press('ControlOrMeta+z');
+        await expect(page.locator('.ve-chip')).toHaveCount(0);
+    });
+});
+
 test.describe('Visual editor on mobile viewport', () => {
     test.use({ viewport: { width: 390, height: 844 } });
 
