@@ -39,12 +39,22 @@ export function measureTicksFor(ts, ticksPerBeat = 480) {
 }
 
 /**
+ * "Feel" presentation: bluegrass 4/4 is usually FELT in cut time. In
+ * two-feel, equal-length signatures are re-presented (4/4 -> 2/2,
+ * 2/4 -> 1/2) — tick math is untouched, but displayed signatures,
+ * beats (metronome) and beam grouping follow the half-note pulse.
+ */
+const TWO_FEEL_MAP = { '4/4': '2/2', '2/4': '1/2' };
+
+/**
  * Per-written-measure time signatures: global signature + overrides.
  */
 export class MeasureTiming {
-    constructor({ timeSignature = '4/4', timeSignatureChanges = [], ticksPerBeat = 480 } = {}) {
+    constructor({ timeSignature = '4/4', timeSignatureChanges = [], ticksPerBeat = 480, feel = null } = {}) {
         this.ticksPerBeat = ticksPerBeat;
-        this.defaultSignature = parseTimeSignature(timeSignature) ? timeSignature : '4/4';
+        this.feel = feel;
+        this.defaultSignature = this._present(
+            parseTimeSignature(timeSignature) ? timeSignature : '4/4');
         this.defaultTicks = measureTicksFor(timeSignature, ticksPerBeat);
         this._overrides = new Map();
         for (const c of timeSignatureChanges || []) {
@@ -54,9 +64,16 @@ export class MeasureTiming {
         }
     }
 
+    /** Re-present a signature according to the feel (tick-length neutral). */
+    _present(sig) {
+        if (this.feel === 'two') return TWO_FEEL_MAP[sig] || sig;
+        return sig;
+    }
+
     /** Time signature string in effect for a written measure. */
     signatureFor(measure) {
-        return this._overrides.get(measure) || this.defaultSignature;
+        const raw = this._overrides.get(measure);
+        return raw ? this._present(raw) : this.defaultSignature;
     }
 
     /** Ticks in a written measure. */
@@ -345,11 +362,13 @@ export function maxMeasureIn(notationByTrack) {
 
 /**
  * Convenience: build MeasureTiming straight from an OTF document.
+ * @param {Object} [opts] - { feel: 'two' } for cut-time presentation
  */
-export function measureTimingFromOtf(otf) {
+export function measureTimingFromOtf(otf, opts = {}) {
     return new MeasureTiming({
         timeSignature: otf?.metadata?.time_signature || '4/4',
         timeSignatureChanges: otf?.metadata?.time_signature_changes || [],
         ticksPerBeat: otf?.timing?.ticks_per_beat || 480,
+        feel: opts.feel || null,
     });
 }

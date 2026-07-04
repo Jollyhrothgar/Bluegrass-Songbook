@@ -38,6 +38,7 @@ let activePart = null;           // Currently displayed part { type, format, fil
 let availableParts = [];         // All parts for current work
 let trackRenderers = {};         // Map of trackId -> TabRenderer instance
 let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
+let twoFeelMode = false;         // true = present 4/4 as cut time (2/2)
 
 // ============================================
 // NOTATION HELPERS
@@ -50,7 +51,7 @@ let showRepeatsCompact = false;  // true = show repeat signs, false = unroll rep
  * - playback: always the unrolled reading list (what TabPlayer follows)
  */
 function buildOtfTimings(otf, compact) {
-    const measureTiming = measureTimingFromOtf(otf);
+    const measureTiming = measureTimingFromOtf(otf, { feel: twoFeelMode ? 'two' : null });
     const maxMeasure = maxMeasureIn(otf.notation);
     const playbackTimeline = readingListTimeline(otf.reading_list, maxMeasure);
     const playback = new TimelineTiming(measureTiming, playbackTimeline);
@@ -755,6 +756,19 @@ async function renderTablaturePart(part, container) {
             });
         }
 
+        // Wire up two-feel toggle (cut-time presentation, re-render)
+        const feelCheckbox = controls.querySelector('.tab-feel-checkbox');
+        const feelLabel = controls.querySelector('.tab-feel-label');
+        if (feelCheckbox) {
+            feelCheckbox.addEventListener('change', () => {
+                twoFeelMode = feelCheckbox.checked;
+                if (feelLabel) {
+                    feelLabel.textContent = twoFeelMode ? 'Two feel' : 'Four feel';
+                }
+                renderTablaturePart(part, container);
+            });
+        }
+
         // Set up player with lead track renderer for visualization
         const leadRenderer = trackRenderers[leadTrackId] || Object.values(trackRenderers)[0];
         setupTablaturePlayer(otf, controls, leadRenderer);
@@ -844,6 +858,14 @@ function createTablatureControls(otf, part) {
         </label>
     ` : '';
 
+    // Two-feel toggle (cut time) only makes sense for 4/4 tunes
+    const feelToggleHtml = (otf.metadata?.time_signature || '4/4') === '4/4' ? `
+        <label class="tab-feel-toggle" title="Feel 4/4 as cut time (2/2): half-note pulse, beams in fours">
+            <input type="checkbox" class="tab-feel-checkbox" ${twoFeelMode ? 'checked' : ''}>
+            <span class="tab-feel-label">${twoFeelMode ? 'Two feel' : 'Four feel'}</span>
+        </label>
+    ` : '';
+
     // Build key options with capo indicators (chromatic order for vocal range adjustment)
     const keyOptions = CHROMATIC_MAJOR_KEYS.map(k => {
         const capo = (CHROMATIC_MAJOR_KEYS.indexOf(k) - CHROMATIC_MAJOR_KEYS.indexOf(originalKey) + 12) % 12;
@@ -879,6 +901,7 @@ function createTablatureControls(otf, part) {
             <span class="tab-metronome-icon">🥁</span>
         </label>
         ${repeatToggleHtml}
+        ${feelToggleHtml}
         <span class="tab-position"></span>
         <span class="tab-capo-indicator"></span>
         ${trackMixerHtml}
@@ -1043,7 +1066,12 @@ function setupTablaturePlayer(otf, controls, renderer) {
             playBtn.classList.add('playing');
             stopBtn.disabled = false;
             const trackIds = getEnabledTrackIds();
-            await player.play(otf, { tempo: currentTempo, transpose: currentCapo, trackIds });
+            await player.play(otf, {
+                tempo: currentTempo,
+                transpose: currentCapo,
+                trackIds,
+                feel: twoFeelMode ? 'two' : null,
+            });
         }
     });
 

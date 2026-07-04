@@ -219,6 +219,47 @@ describe('makePlaybackToVisualMapper', () => {
     });
 });
 
+describe('two-feel presentation (cut time)', () => {
+    const mt = new MeasureTiming({
+        timeSignature: '4/4',
+        timeSignatureChanges: [{ measure: 17, time_signature: '2/4' }],
+        feel: 'two',
+    });
+
+    it('presents 4/4 as 2/2 and 2/4 as 1/2', () => {
+        expect(mt.defaultSignature).toBe('2/2');
+        expect(mt.signatureFor(1)).toBe('2/2');
+        expect(mt.signatureFor(17)).toBe('1/2');
+    });
+
+    it('does not change tick math (equal-length signatures)', () => {
+        expect(mt.ticksFor(1)).toBe(1920);
+        expect(mt.ticksFor(17)).toBe(960);
+        expect(mt.defaultTicks).toBe(1920);
+    });
+
+    it('beats follow the feel: half-note pulse', () => {
+        expect(mt.beatsFor(1)).toBe(2);
+        expect(mt.beatTicksFor(1)).toBe(960);
+        expect(mt.beatsFor(17)).toBe(1);
+        expect(mt.beatTicksFor(17)).toBe(960);
+    });
+
+    it('metronome clicks halves in two feel', () => {
+        const tt = new TimelineTiming(mt, identityTimeline(1));
+        expect(buildMetronomeSchedule(tt)).toEqual([
+            { tick: 0, isDownbeat: true },
+            { tick: 960, isDownbeat: false },
+        ]);
+    });
+
+    it('other signatures pass through untouched', () => {
+        const waltz = new MeasureTiming({ timeSignature: '3/4', feel: 'two' });
+        expect(waltz.signatureFor(1)).toBe('3/4');
+        expect(waltz.beatsFor(1)).toBe(3);
+    });
+});
+
 describe('repeat-sign analysis (moved from work-view)', () => {
     it('18926 Leather Britches: [1-25, 18-24, 26] -> repeat 18..24, endings 25/26', () => {
         const rl = [

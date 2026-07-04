@@ -262,7 +262,9 @@ export class TabPlayer {
         // Ts-aware playback timeline: reading-list order (repeats unrolled),
         // per-measure lengths from metadata.time_signature_changes. The
         // timeline keeps EVERY slot, so sparse tracks stay aligned.
-        const measureTiming = measureTimingFromOtf(otfData);
+        // options.feel ('two') presents 4/4 as cut time — metronome clicks
+        // halves instead of quarters.
+        const measureTiming = measureTimingFromOtf(otfData, { feel: options.feel });
         const timeline = readingListTimeline(
             otfData.reading_list, maxMeasureIn(otfData.notation));
         const timing = new TimelineTiming(measureTiming, timeline);

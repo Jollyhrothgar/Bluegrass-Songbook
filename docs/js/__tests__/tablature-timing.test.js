@@ -126,6 +126,28 @@ describe('TabRenderer edge adornments grow the measure', () => {
     });
 });
 
+describe('TabRenderer two-feel presentation', () => {
+    it('prints 2/2 at m1 and 1/2 at short measures in two feel', () => {
+        const timing = new TimelineTiming(
+            new MeasureTiming({
+                timeSignature: '4/4',
+                timeSignatureChanges: [{ measure: 2, time_signature: '2/4' }],
+                feel: 'two',
+            }),
+            identityTimeline(3),
+        );
+        const r = makeRenderer();
+        const notation = [
+            { measure: 1, events: [note(0)] },
+            { measure: 2, events: [note(0)] },
+            { measure: 3, events: [note(0)] },
+        ];
+        r.render(TRACK, notation, 480, '4/4', timing);
+        const geoms = r.rowData[0].measures;
+        expect(geoms.map(g => g.signatureMark)).toEqual(['2/2', '1/2', '2/2']);
+    });
+});
+
 describe('TabRenderer time-signature marks at mid-tune changes', () => {
     it('marks the change AND the reversion (wheel-hoss shape)', () => {
         const timing = new TimelineTiming(

@@ -703,7 +703,13 @@ export class TabRenderer {
             }
 
             this.renderSlurs(svg, notePositions, opt);
-            this.renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, measure.events, geom.ticks);
+            // Beam ("ligature") groups follow the FELT beat of this
+            // measure's signature: quarters in 4/4, halves in 2/2 (or in
+            // two-feel), so cut time beams runs of 4 eighths.
+            const groupTicks = this.timing?.measureTiming
+                ? this.timing.measureTiming.beatTicksFor(this.timing.originalAt(measure.measure))
+                : this.ticksPerBeat;
+            this.renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, measure.events, geom.ticks, groupTicks);
         });
 
         // Final bar line - check if last measure has repeat end
@@ -874,7 +880,7 @@ export class TabRenderer {
         svg.appendChild(label);
     }
 
-    renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, events = [], measureTicks = null) {
+    renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, events = [], measureTicks = null, groupTicks = null) {
         if (notePositions.length === 0) return;
 
         // First, detect triplet groups based on actual tick spacing
@@ -883,14 +889,17 @@ export class TabRenderer {
         const tripletNotes = new Set();
         tripletGroups.forEach(group => group.forEach(np => tripletNotes.add(np)));
 
-        // One beam group per quarter-note beat of this measure's own length
-        // (3 groups in 3/4, 4 in 4/4 or 2/2, ...)
-        const beatCount = Math.max(1, Math.ceil((measureTicks || this.ticksPerMeasure) / this.ticksPerBeat));
+        // One beam group per FELT beat of this measure's signature:
+        // quarters in 4/4 (4 groups), halves in 2/2 (2 groups of 4 eighths)
+        const ticksInMeasure = measureTicks || this.ticksPerMeasure;
+        const perGroup = (groupTicks && groupTicks > 0) ? groupTicks : this.ticksPerBeat;
+        const slotsPerGroup = Math.max(1, Math.round(perGroup / (this.ticksPerBeat / 4)));
+        const beatCount = Math.max(1, Math.ceil(ticksInMeasure / perGroup));
         const beats = Array.from({ length: beatCount }, () => []);
         notePositions.forEach(np => {
             // Skip notes that are part of triplet groups
             if (tripletNotes.has(np)) return;
-            const beatIndex = Math.floor(np.pos16th / 4);
+            const beatIndex = Math.floor(np.pos16th / slotsPerGroup);
             if (beatIndex >= 0 && beatIndex < beatCount) beats[beatIndex].push(np);
         });
 
