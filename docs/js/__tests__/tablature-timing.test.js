@@ -73,13 +73,19 @@ describe('TabRenderer with per-measure time signatures', () => {
         expect(m2n.map(n => n.absTick).sort((a, b) => a - b)).toEqual([1440, 2400]);
     });
 
-    it('positions notes against the measure\'s own length', () => {
-        // pickup measure: tick 960 of 1440 -> 2/3 across the note area
+    it('positions notes against the measure\'s own length, centered', () => {
+        // pickup measure: events at 0 and 960 of 1440 -> the leftover third
+        // after the last note is split across both sides (noteOffset)
         const geom = r.rowData[0].measures[0];
+        expect(geom.noteOffset).toBeCloseTo(geom.noteW * (1 - 960 / 1440) / 2, 5);
         const m1notes = r.noteElements.filter(n => n.measure === 1);
         const xs = m1notes.map(n => n.x).sort((a, b) => a - b);
-        expect(xs[0]).toBeCloseTo(geom.noteX0, 5);
-        expect(xs[1]).toBeCloseTo(geom.noteX0 + (960 / 1440) * geom.noteW, 5);
+        expect(xs[0]).toBeCloseTo(geom.noteX0 + geom.noteOffset, 5);
+        expect(xs[1]).toBeCloseTo(geom.noteX0 + geom.noteOffset + (960 / 1440) * geom.noteW, 5);
+        // symmetric: space left of first note == space right of last note
+        const leftGap = xs[0] - geom.noteX0;
+        const rightGap = (geom.noteX0 + geom.noteW) - xs[1];
+        expect(leftGap).toBeCloseTo(rightGap, 5);
     });
 
     it('places the beat cursor using per-measure geometry', () => {
@@ -87,7 +93,8 @@ describe('TabRenderer with per-measure time signatures', () => {
         const cursor = r.beatCursors[0].cursor;
         expect(cursor.style.display).toBe('block');
         const geom = r.rowData[0].measures[1];
-        expect(parseFloat(cursor.getAttribute('x'))).toBeCloseTo(geom.noteX0 - 1.5, 5);
+        expect(parseFloat(cursor.getAttribute('x')))
+            .toBeCloseTo(geom.noteX0 + geom.noteOffset - 1.5, 5);
     });
 
     it('marks the global signature at m1 but not the pickup override', () => {
@@ -97,6 +104,25 @@ describe('TabRenderer with per-measure time signatures', () => {
         expect(geoms[0].signatureMark).toBe('4/4');
         expect(geoms[1].signatureMark).toBeNull();
         expect(geoms[2].signatureMark).toBeNull();
+    });
+});
+
+describe('TabRenderer edge adornments grow the measure', () => {
+    it('repeat signs add their footprint instead of squeezing notes', () => {
+        const r = makeRenderer();
+        const notation = [
+            { measure: 1, events: [note(0)], repeatStart: true },
+            { measure: 2, events: [note(0)], repeatEnd: true },
+        ];
+        r.render(TRACK, notation, 480, '4/4');
+        const g = r.rowData[0].measures;
+        // m1: signature (32) + repeat start (14); m2: repeat end (12)
+        expect(g[0].width).toBe(180 + 32 + 14);
+        expect(g[1].width).toBe(180 + 12);
+        // note area identical to an unadorned measure in both
+        expect(g[0].noteW).toBe(150);
+        expect(g[1].noteW).toBe(150);
+        expect(g[0].noteX0).toBe(50 + 14 + 32 + 15);
     });
 });
 
