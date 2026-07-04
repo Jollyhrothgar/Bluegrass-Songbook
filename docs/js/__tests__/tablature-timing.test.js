@@ -127,6 +127,34 @@ describe('TabRenderer edge adornments grow the measure', () => {
 });
 
 describe('TabRenderer two-feel presentation', () => {
+    it('cursor snaps to halves in two feel, quarters in four feel', () => {
+        const notation = [
+            { measure: 1, events: [note(0)] },
+            { measure: 2, events: [note(0)] },
+        ];
+        const geomX0 = (r) => r.rowData[0].measures[0];
+
+        const four = makeRenderer();
+        four.render(TRACK, notation, 480, '4/4', new TimelineTiming(
+            new MeasureTiming({ timeSignature: '4/4' }), identityTimeline(2)));
+        four.updateBeatCursor(700, { autoScroll: false });
+        const g4 = geomX0(four);
+        expect(parseFloat(four.beatCursors[0].cursor.getAttribute('x')))
+            .toBeCloseTo(g4.noteX0 + g4.noteOffset + (480 / 1920) * g4.noteW - 1.5, 5);
+
+        const two = makeRenderer();
+        two.render(TRACK, notation, 480, '4/4', new TimelineTiming(
+            new MeasureTiming({ timeSignature: '4/4', feel: 'two' }), identityTimeline(2)));
+        two.updateBeatCursor(700, { autoScroll: false });
+        const g2 = geomX0(two);
+        // 700 snaps to the half-note boundary at 0, not the quarter at 480
+        expect(parseFloat(two.beatCursors[0].cursor.getAttribute('x')))
+            .toBeCloseTo(g2.noteX0 + g2.noteOffset - 1.5, 5);
+        two.updateBeatCursor(1100, { autoScroll: false });
+        expect(parseFloat(two.beatCursors[0].cursor.getAttribute('x')))
+            .toBeCloseTo(g2.noteX0 + g2.noteOffset + (960 / 1920) * g2.noteW - 1.5, 5);
+    });
+
     it('prints 2/2 at m1 and 1/2 at short measures in two feel', () => {
         const timing = new TimelineTiming(
             new MeasureTiming({

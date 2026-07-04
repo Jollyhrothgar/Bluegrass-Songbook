@@ -1283,21 +1283,24 @@ export class TabRenderer {
         const { snapToBeats = true, autoScroll = true } = options;
         const opt = this.options;
 
-        // Snap to beat boundaries if enabled
-        let displayTick = absTick;
-        if (snapToBeats) {
-            displayTick = Math.floor(absTick / this.ticksPerBeat) * this.ticksPerBeat;
-        }
-
         // Locate the display measure through the ts-aware timing map
         const loc = this.timing
-            ? this.timing.locate(displayTick)
+            ? this.timing.locate(absTick)
             : {
-                display: Math.floor(displayTick / this.ticksPerMeasure) + 1,
-                tickInMeasure: displayTick % this.ticksPerMeasure,
+                display: Math.floor(absTick / this.ticksPerMeasure) + 1,
+                tickInMeasure: absTick % this.ticksPerMeasure,
             };
         const measure = loc.display;
-        const tickInMeasure = loc.tickInMeasure;
+        let tickInMeasure = loc.tickInMeasure;
+
+        // Snap to the FELT beat of this measure's signature: quarters in
+        // 4/4, halves in 2/2 / two feel — the cursor moves in two, not four.
+        if (snapToBeats) {
+            const beatTicks = this.timing?.measureTiming
+                ? this.timing.measureTiming.beatTicksFor(loc.original ?? measure)
+                : this.ticksPerBeat;
+            tickInMeasure = Math.floor(tickInMeasure / beatTicks) * beatTicks;
+        }
 
         // Find which row this measure is on
         const rowData = this.rowData.find(r =>
