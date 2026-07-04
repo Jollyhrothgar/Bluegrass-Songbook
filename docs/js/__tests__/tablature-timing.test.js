@@ -155,6 +155,24 @@ describe('TabRenderer two-feel presentation', () => {
             .toBeCloseTo(g2.noteX0 + g2.noteOffset + (960 / 1920) * g2.noteW - 1.5, 5);
     });
 
+    it('quarter notes are never beamed into two-feel eighth runs', () => {
+        // m6 of Down Yonder (22456): eighth, eighth, QUARTER | four eighths
+        // (ticks 0,240,480 | 960,1200,1440,1680 -> slots 0,2,4 | 8,10,12,14).
+        // In two feel the half-note group contains the quarter at slot 4 —
+        // it must keep its plain stem, not join the eighths' ligature.
+        const r = makeRenderer();
+        r.ticksPerMeasure = 1920;
+        const nps = [0, 2, 4, 8, 10, 12, 14].map(pos16th => ({ pos16th }));
+
+        // two feel: half-note groups (960 ticks)
+        const two = r._beamRuns(nps, 960, 1920).map(run => run.map(n => n.pos16th));
+        expect(two).toEqual([[0, 2], [8, 10, 12, 14]]);
+
+        // four feel: quarter groups — quarter alone in its beat, unbeamed
+        const four = r._beamRuns(nps, 480, 1920).map(run => run.map(n => n.pos16th));
+        expect(four).toEqual([[0, 2], [8, 10], [12, 14]]);
+    });
+
     it('prints 2/2 at m1 and 1/2 at short measures in two feel', () => {
         const timing = new TimelineTiming(
             new MeasureTiming({

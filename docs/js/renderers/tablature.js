@@ -880,6 +880,56 @@ export class TabRenderer {
         svg.appendChild(label);
     }
 
+    /**
+     * Compute beam ("ligature") runs: one group per FELT beat of the
+     * measure's signature (quarters in 4/4, halves in 2/2/two-feel), but
+     * only notes lasting a dotted eighth or less (gap to the next event
+     * <= 3 sixteenth slots) may be beamed — a quarter note inside a
+     * half-note group keeps its plain stem instead of masquerading as an
+     * eighth (m6 of Down Yonder in two feel). Runs also split on gaps
+     * longer than a dotted eighth.
+     *
+     * @returns {Array<Array>} arrays of notePositions to beam together
+     */
+    _beamRuns(notePositions, groupTicks = null, measureTicks = null) {
+        const slotTicks = this.ticksPerBeat / 4;
+        const ticksInMeasure = measureTicks || this.ticksPerMeasure;
+        const perGroup = (groupTicks && groupTicks > 0) ? groupTicks : this.ticksPerBeat;
+        const slotsPerGroup = Math.max(1, Math.round(perGroup / slotTicks));
+        const totalSlots = Math.max(1, Math.round(ticksInMeasure / slotTicks));
+        const groupCount = Math.max(1, Math.ceil(totalSlots / slotsPerGroup));
+
+        // Duration in slots = gap to the next event (end of measure for
+        // the last one) — OTF events carry no explicit durations.
+        const sorted = [...notePositions].sort((a, b) => a.pos16th - b.pos16th);
+        const durSlots = new Map();
+        sorted.forEach((np, i) => {
+            const nextPos = i + 1 < sorted.length ? sorted[i + 1].pos16th : totalSlots;
+            durSlots.set(np, nextPos - np.pos16th);
+        });
+
+        const runs = [];
+        for (let g = 0; g < groupCount; g++) {
+            const groupNotes = sorted.filter(np =>
+                Math.floor(np.pos16th / slotsPerGroup) === g);
+            let run = [];
+            const flush = () => { if (run.length >= 2) runs.push(run); run = []; };
+            for (const np of groupNotes) {
+                if (durSlots.get(np) > 3) {   // quarter or longer: never beamed
+                    flush();
+                    continue;
+                }
+                if (run.length &&
+                    np.pos16th - run[run.length - 1].pos16th > 3) {
+                    flush();                  // gap too long: new run
+                }
+                run.push(np);
+            }
+            flush();
+        }
+        return runs;
+    }
+
     renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, events = [], measureTicks = null, groupTicks = null) {
         if (notePositions.length === 0) return;
 
@@ -889,19 +939,9 @@ export class TabRenderer {
         const tripletNotes = new Set();
         tripletGroups.forEach(group => group.forEach(np => tripletNotes.add(np)));
 
-        // One beam group per FELT beat of this measure's signature:
-        // quarters in 4/4 (4 groups), halves in 2/2 (2 groups of 4 eighths)
-        const ticksInMeasure = measureTicks || this.ticksPerMeasure;
-        const perGroup = (groupTicks && groupTicks > 0) ? groupTicks : this.ticksPerBeat;
-        const slotsPerGroup = Math.max(1, Math.round(perGroup / (this.ticksPerBeat / 4)));
-        const beatCount = Math.max(1, Math.ceil(ticksInMeasure / perGroup));
-        const beats = Array.from({ length: beatCount }, () => []);
-        notePositions.forEach(np => {
-            // Skip notes that are part of triplet groups
-            if (tripletNotes.has(np)) return;
-            const beatIndex = Math.floor(np.pos16th / slotsPerGroup);
-            if (beatIndex >= 0 && beatIndex < beatCount) beats[beatIndex].push(np);
-        });
+        const beats = this._beamRuns(
+            notePositions.filter(np => !tripletNotes.has(np)),
+            groupTicks, measureTicks);
 
         const beamedNotes = new Set();
 
