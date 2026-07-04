@@ -97,9 +97,26 @@ export class TabPlayer {
         this.onTick = null;           // (absTick) => void - called on animation frame
 
         // Metronome state
-        this.metronomeEnabled = false;
+        this._metronomeEnabled = false;
         this.metronomeVolume = 0.3;
         this.metronomeNodes = [];  // Track oscillators for cleanup on stop
+        this.metronomeGain = null; // Master gain: lets the toggle work LIVE
+    }
+
+    /**
+     * Metronome toggle. Clicks are always scheduled (at play start) through
+     * a master gain node, so flipping this during playback takes effect
+     * immediately instead of doing nothing until the next Play.
+     */
+    get metronomeEnabled() {
+        return this._metronomeEnabled;
+    }
+
+    set metronomeEnabled(v) {
+        this._metronomeEnabled = !!v;
+        if (this.metronomeGain) {
+            this.metronomeGain.gain.value = this._metronomeEnabled ? 1 : 0;
+        }
     }
 
     /**
@@ -113,6 +130,12 @@ export class TabPlayer {
 
         this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
         this.player = new window.WebAudioFontPlayer();
+
+        // Master metronome gain — clicks route through this so the
+        // metronome toggle works during playback.
+        this.metronomeGain = this.audioContext.createGain();
+        this.metronomeGain.gain.value = this._metronomeEnabled ? 1 : 0;
+        this.metronomeGain.connect(this.audioContext.destination);
     }
 
     /**
@@ -120,7 +143,8 @@ export class TabPlayer {
      * Uses a short sine wave with quick decay for a wood block-like sound
      */
     playMetronomeClick(time, isDownbeat = false) {
-        if (!this.audioContext || !this.metronomeEnabled) return;
+        // Always schedule; audibility is controlled live by metronomeGain.
+        if (!this.audioContext) return;
 
         const ctx = this.audioContext;
 
@@ -140,7 +164,7 @@ export class TabPlayer {
 
         // Connect and schedule
         osc.connect(gain);
-        gain.connect(ctx.destination);
+        gain.connect(this.metronomeGain || ctx.destination);
         osc.start(time);
         osc.stop(time + 0.05);
 

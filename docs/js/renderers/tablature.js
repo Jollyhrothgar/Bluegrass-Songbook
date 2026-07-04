@@ -425,11 +425,13 @@ export class TabRenderer {
             const x = geom.x;
             const measureWidth = geom.width;
 
+            // Barlines span the staff only (top string to bottom string),
+            // like TablEdit — not the stem/beam area below.
             // Draw repeat start barline (|:) or regular barline
             if (measure.repeatStart) {
-                this.drawRepeatStartBarline(svg, x, opt.topMargin, beamY + 4, opt);
+                this.drawRepeatStartBarline(svg, x, opt.topMargin, stringsBottom, opt);
             } else {
-                const barLine = this.createLine(x, opt.topMargin, x, beamY + 4, opt.measureLineColor);
+                const barLine = this.createLine(x, opt.topMargin, x, stringsBottom, opt.measureLineColor);
                 svg.appendChild(barLine);
             }
 
@@ -437,7 +439,7 @@ export class TabRenderer {
             // (Only for mid-row repeat ends; final bar handled separately)
             if (measure.repeatEnd && mi < measures.length - 1) {
                 const endX = x + measureWidth;
-                this.drawRepeatEndBarline(svg, endX, opt.topMargin, beamY + 4, opt);
+                this.drawRepeatEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
             }
 
             // Draw ending bracket if this measure is part of an ending
@@ -553,9 +555,9 @@ export class TabRenderer {
         const endX = rowRight;
         const finalMeasure = measures[measures.length - 1];
         if (finalMeasure && finalMeasure.repeatEnd) {
-            this.drawRepeatEndBarline(svg, endX, opt.topMargin, beamY + 4, opt);
+            this.drawRepeatEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
         } else {
-            const endBar = this.createLine(endX, opt.topMargin, endX, beamY + 4, opt.measureLineColor);
+            const endBar = this.createLine(endX, opt.topMargin, endX, stringsBottom, opt.measureLineColor);
             svg.appendChild(endBar);
         }
 

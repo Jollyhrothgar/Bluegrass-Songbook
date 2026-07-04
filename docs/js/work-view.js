@@ -923,10 +923,16 @@ function setupTablaturePlayer(otf, controls, renderer) {
         ? makePlaybackToVisualMapper(timings.playback, timings.visual)
         : (tick) => tick;
 
-    // Playback visualization callbacks (with tick mapping for compact mode)
-    player.onTick = (absTick) => renderer.updateBeatCursor(tickMapper(absTick));
-    player.onNoteStart = (absTick) => renderer.highlightNote(tickMapper(absTick));
-    player.onNoteEnd = (absTick) => renderer.clearNoteHighlight(tickMapper(absTick));
+    // Playback visualization callbacks (with tick mapping for compact mode).
+    // Fan out to EVERY track's renderer so the cursor runs on all visible
+    // parts; only the lead renderer drives auto-scroll.
+    const eachRenderer = (fn) => {
+        for (const r of Object.values(trackRenderers)) fn(r, r === renderer);
+    };
+    player.onTick = (absTick) => eachRenderer((r, isLead) =>
+        r.updateBeatCursor(tickMapper(absTick), { autoScroll: isLead }));
+    player.onNoteStart = (absTick) => eachRenderer(r => r.highlightNote(tickMapper(absTick)));
+    player.onNoteEnd = (absTick) => eachRenderer(r => r.clearNoteHighlight(tickMapper(absTick)));
 
     // Size controls - scale the tablature
     const updateSize = (delta) => {
@@ -1004,7 +1010,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
         playBtn.classList.remove('playing');
         stopBtn.disabled = true;
         posEl.textContent = '';
-        renderer.resetPlaybackVisualization();
+        eachRenderer(r => r.resetPlaybackVisualization());
     };
 
     // Get enabled tracks from checkboxes (excluding mandolin backup tracks)
@@ -1031,7 +1037,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
             playBtn.textContent = '▶ Play';
             playBtn.classList.remove('playing');
             stopBtn.disabled = true;
-            renderer.resetPlaybackVisualization();
+            eachRenderer(r => r.resetPlaybackVisualization());
         } else {
             playBtn.textContent = '⏸ Pause';
             playBtn.classList.add('playing');
@@ -1047,7 +1053,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
         playBtn.classList.remove('playing');
         stopBtn.disabled = true;
         posEl.textContent = '';
-        renderer.resetPlaybackVisualization();
+        eachRenderer(r => r.resetPlaybackVisualization());
     });
 }
 
