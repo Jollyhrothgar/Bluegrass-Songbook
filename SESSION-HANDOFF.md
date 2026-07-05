@@ -193,11 +193,12 @@ tied melody notes short when backing tracks are playing.
   row (h≈144px), and `focus()` scrolls the page — screenshots go stale.
 
 **Known gaps / next in line:**
-- Cursor OVERLAY (crosshair + grid, cursor.js layoutInfo) still uses
-  uniform measure math → drifts near ts changes; move it onto rowData
-  geometry like the click path. Keyboard nav (moveByDuration etc.) also
-  still uses state.ticksPerMeasure (uniform) — port to facade
-  toAbs/locate.
+- ~~Cursor OVERLAY (crosshair + grid) uniform-math drift~~ FIXED
+  (1cefc1f6c): svgPointForPosition + gridLinesForRow draw from rowData
+  geometry, den-aware beat emphasis; uniform layoutInfo is fallback
+  only (kept for editor-demo + jsdom tests where rects are zero).
+  Keyboard nav (moveByDuration etc.) still uses state.ticksPerMeasure
+  (uniform) — port to facade toAbs/locate next.
 - 2c UX passes (fret pad popover polish, roll/pattern insertion as
   DATA presets per instrument, ghost note, loop-a-selection practice),
   then 2d: rewrite e2e/otf-editor.spec.js + tied-note truncation fix.
