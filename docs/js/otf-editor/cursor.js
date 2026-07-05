@@ -42,6 +42,59 @@ export function positionFromSvgPoint(geoms, x, y, {
 }
 
 /**
+ * Inverse of positionFromSvgPoint: map an edit position to a point in
+ * its stave-row's SVG coordinate space, via TabRenderer rowData.
+ *
+ * @returns {{rowIndex: number, x: number, y: number, row: Object}|null}
+ */
+export function svgPointForPosition(rowData, { measure, tick, string }, {
+    topMargin,
+    stringSpacing,
+}) {
+    if (!rowData || rowData.length === 0) return null;
+    const row = rowData.find(r => measure >= r.firstMeasure && measure <= r.lastMeasure);
+    const geom = row?.measures?.find(g => g.display === measure);
+    if (!geom) return null;
+
+    const noteX0 = (geom.noteX0 ?? geom.x + 15) + (geom.noteOffset ?? 0);
+    const noteW = geom.noteW ?? geom.width - 30;
+    const x = noteX0 + (tick / geom.ticks) * noteW;
+    const y = topMargin + (string - 1) * stringSpacing;
+
+    return { rowIndex: row.rowIndex ?? rowData.indexOf(row), x, y, row };
+}
+
+/**
+ * Grid ("ruler") lines for one row from its real measure geometry: one
+ * line per grid subdivision over each measure's OWN tick length, so a
+ * short 2/4 measure gets half the lines of its 2/2 neighbors and every
+ * line sits exactly where the renderer puts that tick's notes.
+ *
+ * @param {Array} geoms - rowData.measures
+ * @param {number} gridSubdivision - ticks between lines
+ * @param {Function} beatTicksFor - (measure) => ticks per felt beat
+ * @returns {Array<{x: number, tick: number, display: number, isBeat: boolean}>}
+ */
+export function gridLinesForRow(geoms, gridSubdivision, beatTicksFor) {
+    if (!geoms || geoms.length === 0) return [];
+    const lines = [];
+    for (const geom of geoms) {
+        const noteX0 = (geom.noteX0 ?? geom.x + 15) + (geom.noteOffset ?? 0);
+        const noteW = geom.noteW ?? geom.width - 30;
+        const beatTicks = beatTicksFor(geom.display);
+        for (let tick = 0; tick < geom.ticks; tick += gridSubdivision) {
+            lines.push({
+                x: noteX0 + (tick / geom.ticks) * noteW,
+                tick,
+                display: geom.display,
+                isBeat: tick % beatTicks === 0,
+            });
+        }
+    }
+    return lines;
+}
+
+/**
  * Cursor renderer and navigation controller
  * Works alongside TabRenderer to show edit position
  */
@@ -62,8 +115,58 @@ export class EditorCursor {
         this.ghostNote = null;
         this.gridOverlay = null;
 
-        // Layout info from TabRenderer
+        // Layout info from TabRenderer (uniform fallback)
         this.layoutInfo = null;
+
+        // TabRenderer reference: when set, cursor/grid use its real
+        // rowData geometry (ts-aware, variable widths) instead of the
+        // uniform layoutInfo model.
+        this.renderer = null;
+    }
+
+    /**
+     * Attach the TabRenderer whose rowData drives geometry-true
+     * cursor/grid placement.
+     */
+    setRenderer(renderer) {
+        this.renderer = renderer;
+    }
+
+    /**
+     * Overlay-space point for an edit position via renderer geometry,
+     * or null when geometry isn't available (fall back to layoutInfo).
+     */
+    _geometryPoint(position) {
+        const rowData = this.renderer?.rowData;
+        if (!rowData?.length || !this.container) return null;
+        const opt = this.renderer.options || {};
+        const p = svgPointForPosition(rowData, position, {
+            topMargin: opt.topMargin ?? 30,
+            stringSpacing: opt.stringSpacing ?? 15,
+        });
+        if (!p) return null;
+        return this._svgToOverlay(p.row, p.x, p.y);
+    }
+
+    /**
+     * Convert a point in a row's SVG coordinate space to overlay
+     * coordinates (absolute within the canvas container).
+     */
+    _svgToOverlay(row, xSvg, ySvg) {
+        const svg = row.svg;
+        if (!svg?.getBoundingClientRect) return null;
+        const svgRect = svg.getBoundingClientRect();
+        const contRect = this.container.getBoundingClientRect();
+        if (svgRect.width === 0) return null;
+        const vb = svg.viewBox?.baseVal;
+        const sx = vb?.width ? svgRect.width / vb.width : 1;
+        const sy = vb?.height ? svgRect.height / vb.height : 1;
+        return {
+            x: svgRect.left - contRect.left + this.container.scrollLeft + xSvg * sx,
+            y: svgRect.top - contRect.top + this.container.scrollTop + ySvg * sy,
+            scaleX: sx,
+            scaleY: sy,
+        };
     }
 
     /**
@@ -231,7 +334,24 @@ export class EditorCursor {
      * Update overlay size to cover full content area
      */
     _updateOverlaySize() {
-        if (!this.layoutInfo || !this.container) return;
+        if (!this.container) return;
+
+        // Geometry path: size overlays to the rendered content
+        if (this.renderer?.rowData?.length) {
+            const w = this.container.scrollWidth;
+            const h = this.container.scrollHeight;
+            if (this.gridOverlay) {
+                this.gridOverlay.style.width = `${w}px`;
+                this.gridOverlay.style.height = `${h}px`;
+            }
+            if (this.overlay) {
+                this.overlay.style.width = `${w}px`;
+                this.overlay.style.height = `${h}px`;
+            }
+            return;
+        }
+
+        if (!this.layoutInfo) return;
 
         // Calculate total content dimensions
         const {
@@ -271,9 +391,12 @@ export class EditorCursor {
         this.gridOverlay.innerHTML = '';
 
         // Check if grid should be visible
-        if (!this.state.showGrid || !this.layoutInfo) {
-            return;
-        }
+        if (!this.state.showGrid) return;
+
+        // Geometry-true grid from renderer rowData when available
+        if (this._renderGridFromGeometry()) return;
+
+        if (!this.layoutInfo) return;
 
         const {
             leftMargin,
@@ -351,6 +474,70 @@ export class EditorCursor {
     }
 
     /**
+     * Draw the grid from TabRenderer rowData: per-measure geometry, so
+     * lines land exactly on the renderer's tick positions (ts-aware,
+     * variable widths). Returns false when geometry is unavailable.
+     */
+    _renderGridFromGeometry() {
+        const rowData = this.renderer?.rowData;
+        if (!rowData?.length || !this.container) return false;
+
+        const opt = this.renderer.options || {};
+        const topMargin = opt.topMargin ?? 30;
+        const stringSpacing = opt.stringSpacing ?? 15;
+        const stringCount = this.state.getStringCount();
+        const subdivision = this.state.gridSubdivision;
+        const measureTiming = this.state.facade?.measureTiming;
+        const ticksPerBeat = this.state.otf.timing?.ticks_per_beat || TICKS_PER_BEAT;
+        const beatTicksFor = measureTiming
+            ? (m) => measureTiming.beatTicksFor(m)
+            : () => ticksPerBeat;
+
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: visible;
+        `;
+
+        let drew = false;
+        for (const row of rowData) {
+            const origin = this._svgToOverlay(row, 0, 0);
+            if (!origin) continue;
+            const lines = gridLinesForRow(row.measures, subdivision, beatTicksFor);
+            const yTop = origin.y + (topMargin - 4) * origin.scaleY;
+            const yBottom = origin.y +
+                (topMargin + (stringCount - 1) * stringSpacing + 4) * origin.scaleY;
+
+            for (const l of lines) {
+                const x = origin.x + l.x * origin.scaleX;
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                line.setAttribute('x1', x);
+                line.setAttribute('y1', yTop);
+                line.setAttribute('x2', x);
+                line.setAttribute('y2', yBottom);
+                if (l.isBeat) {
+                    line.setAttribute('stroke', 'var(--text-muted, rgba(0,0,0,0.3))');
+                    line.setAttribute('stroke-width', '1.5');
+                } else {
+                    line.setAttribute('stroke', 'var(--text-muted, rgba(0,0,0,0.15))');
+                    line.setAttribute('stroke-width', '0.75');
+                }
+                svg.appendChild(line);
+                drew = true;
+            }
+        }
+
+        if (!drew) return false;
+        this.gridOverlay.appendChild(svg);
+        return true;
+    }
+
+    /**
      * Calculate cursor position from layout info and cursor state
      */
     _calculatePosition() {
@@ -392,9 +579,11 @@ export class EditorCursor {
      * Update cursor position and appearance
      */
     update() {
-        if (!this.overlay || !this.layoutInfo) return;
+        if (!this.overlay) return;
 
-        const pos = this._calculatePosition();
+        // Geometry-true placement first; uniform layoutInfo as fallback
+        const pos = this._geometryPoint(this.state.cursor)
+            || (this.layoutInfo ? this._calculatePosition() : null);
         if (!pos) return;
 
         this._updateCursorStyle();
@@ -431,9 +620,8 @@ export class EditorCursor {
      * @param {number} fret - Fret number to preview
      */
     showGhostNote(fret) {
-        if (!this.layoutInfo) return;
-
-        const pos = this._calculatePosition();
+        const pos = this._geometryPoint(this.state.cursor)
+            || (this.layoutInfo ? this._calculatePosition() : null);
         if (!pos) return;
 
         this.ghostNote.style.cssText = `

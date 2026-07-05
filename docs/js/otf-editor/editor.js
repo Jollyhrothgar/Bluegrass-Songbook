@@ -131,6 +131,9 @@ export class OTFEditor {
         // Initialize TabRenderer
         this.renderer = new TabRenderer(this.rendererContainer);
 
+        // Cursor/grid overlay draws from the renderer's real geometry
+        this.cursor.setRenderer(this.renderer);
+
         // Initialize cursor overlay
         this.cursor.init(this.canvasContainer);
 
