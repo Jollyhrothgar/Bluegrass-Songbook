@@ -133,16 +133,59 @@ refresh after edits.
 **Known stale: `e2e/otf-editor.spec.js` behavioral tests.** The spec
 predates the modal redesign (keyboard.js: NORMAL handles nav+entry, no
 INSERT mode), so mode/entry tests fail honestly; selector-level fixes
-landed so hooks no longer time out. Rewrite the spec with job #5. The
+landed so hooks no longer time out. Rewrite the spec with job #2. The
 old "Playwright e2e pass" claim below was wrong. Sandbox note: abcjs/
 supabase/WebAudioFont CDNs are blocked in the Cowork sandbox — abc,
 list-management, favorites e2e and audio playback only work on the Mac.
 
-Player nuance (pre-existing, revisit with job #5): note durations are
+Player nuance (pre-existing, revisit with job #2): note durations are
 truncated at the next event on ANY track (rhythmicGap), which also cuts
 tied melody notes short when backing tracks are playing.
 
-### 2. Rich-MIDI oracle leg (verify the 20 PARTIALs' other modules)
+### 2. Editor UX — the goal (reprioritized 2026-07-04)
+**Mike's framing: the goal is not showing TEF, it's building something
+BETTER than TablEdit — a free in-browser tab app.** Editor
+user-friendliness comes before verification breadth (old jobs 2-4,
+now 5-7). `docs/js/otf-editor/` has solid internals (314 unit tests,
+modal keyboard model, undo, recorder, insertNote roundtrip gate) but is
+wired only into editor-demo.html and the UX is not shippable. The
+DESIGN.md vision is right: "as fluid as typing text", pattern-based
+(rolls/licks as first-class), casual users on mouse/touch AND vim-style
+power users, mobile-friendly. Suggested order:
+
+a. **Editing facade**: a clean API over OTF documents (insert/delete/
+   move notes, ts-aware measure math via measure-timing.js, undo/redo,
+   selection) that the UI calls — decouple editor internals from
+   keyboard.js so mouse/touch UI and keyboard drive the same ops.
+b. **Wire into work-view**: Edit button on any tab work → edit in
+   place, preview with playback, save/export OTF (and a submit-as-
+   correction path later). Editing the site's real tabs is the payoff.
+c. **UX passes vs DESIGN.md**: note entry by click/tap + fret pad
+   popover, duration/articulation toolbar, roll/pattern insertion,
+   ghost-note preview, loop-a-selection playback practice mode.
+   Two-feel & signature glyph support come free via measure-timing.
+d. **Rewrite e2e/otf-editor.spec.js** against the real modal design as
+   the UX stabilizes; fix the tied-note truncation player nuance.
+
+"Better than TEF" yardsticks: no install, instant playback with cursor,
+pattern entry faster than TablEdit, works on an iPad at a jam, shareable
+by URL, free.
+
+### 3. Publish the verified tabs (one-stop-shop payoff, cheap)
+Only 44 works have tablature_parts (golden-standard); the 107 oracle-
+VERIFIED banjo-hangout OTFs (and later the PARTIAL/remaining ones as
+verification widens) should be wired into docs/data/index.jsonl as
+tablature_parts with attribution (work-view already renders source/
+author credit + disclaimer). This is pipeline plumbing, not new tech,
+and it's what makes the site a lyrics+tabs one-stop shop.
+
+### 4. TEF submission flow ("make adding stuff easy")
+Same GitHub-issue pattern as process-song-submission: contributor
+uploads a .tef → workflow parses (tef_parser), runs sanity checks,
+opens a PR with the OTF + work wiring. The parser is done; this is the
+cheapest possible "add a tab" path for the Banjo Hangout crowd.
+
+### 5. Rich-MIDI oracle leg (verify the 20 PARTIALs' other modules)
 MusicXML exports only ONE module per file; Rich Tablature MIDI contains
 ALL tracks (per-string channels) and pitch-bends (chokes).
 - Build a MIDI leg for the verifier: parse Rich MIDI, unroll the reading
@@ -157,14 +200,14 @@ ALL tracks (per-string channels) and pitch-bends (chokes).
   with Open, so re-navigate every time; if a tag dropdown opens, Escape
   first. No batch export exists on Mac TablEdit.
 
-### 3. Verify the remaining ~223 parsed files
+### 6. Verify the remaining ~223 parsed files
 They're at the git baseline with no verified source. Path: re-download by
 id from the hangoutstorage URLs in `tab_catalog.json` (raw_tabs filename
 matching proved unreliable — different revisions), then extend
 `oracle_batch_queue.json` + export MusicXML per file (same GUI recipe,
 ~10-15 s/file scripted) and run the batch.
 
-### 4. Known parser gaps (oracle-invisible in MusicXML)
+### 7. Known parser gaps (oracle-invisible in MusicXML)
 - **Grace notes**: TablEdit MusicXML omits them (verified); V3 has a
   grace flag (component_type & 0x40, currently parsed but unused); V2
   encoding unknown. Rich MIDI may reveal them as short notes.
@@ -173,11 +216,6 @@ matching proved unreliable — different revisions), then extend
 - Techniques (h/p/slides) verify against the oracle on files checked so
   far, but the batch verifier compares positions only — extend it to
   techniques once the MIDI leg lands.
-
-### 5. Editor UX (the actual goal)
-`docs/js/otf-editor/` — 314 unit tests + Playwright e2e pass; wired only
-into `docs/editor-demo.html`; UX not shippable. See
-`docs/js/otf-editor/DESIGN.md`.
 
 ### (Optional) TEF 3.0 official spec
 A proprietary spec exists (since 2020) — available on request from the
