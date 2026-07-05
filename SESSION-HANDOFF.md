@@ -159,7 +159,52 @@ Player nuance (pre-existing, revisit with job #2): note durations are
 truncated at the next event on ANY track (rhythmicGap), which also cuts
 tied melody notes short when backing tracks are playing.
 
-### 2. Editor UX — the goal (reprioritized 2026-07-04)
+### 2. Editor UX — the goal (reprioritized 2026-07-04; facade + wiring LANDED 2026-07-05)
+
+**Landed 2026-07-05 (5 commits, suite 602 green, roundtrip gate 301/301):**
+- `docs/js/otf-editor/facade.js` — **EditingFacade**, the UI-free API (2a
+  done). Explicit positions, ts-aware everything via measure-timing
+  (tie-splitting across short measures, tick-range copy/cut/paste with
+  re-bucketing, toAbs/locate), transact() + snapshot undo w/ rollback,
+  string counts from tuning data. Tie continuations emit `tie: true`
+  (what tablature.js/tab-player.js consume) — NOT the old tech:'~'.
+- `state.js` — EditorState is now UI-session state delegating every doc
+  mutation to the facade (otf/clipboard are pass-through getters;
+  state.history is a canUndo/canRedo/clear view). 314 tests unchanged.
+- `docs/js/otf-editor/work-edit.js` — edit-session controller +
+  `resolveEditTrackId` (part instrument → lead role → first). work-view
+  got an ✏️ Edit button (inside the ⚙️ Controls disclosure!) on every
+  tablature part (2b done): Done applies to the view in memory +
+  re-renders, Ctrl+S applies without exit, Cancel confirms when dirty,
+  Download exports. OTFEditor/EditorState accept `trackId` so
+  multi-track OTFs open on the viewed part. NB: edits are in-memory
+  only — persistence/submit-as-correction is still open.
+- editor.js `_render` now passes `state.facade.timing` to TabRenderer:
+  the editor renders ts-changes correctly (narrow 2/4 measures, glyphs).
+- Click mapping rewritten: `positionFromSvgPoint` (cursor.js, pure,
+  unit-tested) hit-tests TabRenderer rowData geometry per row/measure —
+  ts-true and scroll-proof. Old uniform mapper is fallback only.
+- `facade-27493.test.js` — all four instruments of the real 27493
+  exercised at the 2/4 seams; undo-to-pristine deep-equality.
+- Live-verified in Chrome (tab-dev harness, per-track Edit buttons —
+  harness is untracked): guitar/bass/mandolin/banjo mount, click
+  placement lands M:30 inside the short measure, fret entry, undo,
+  Done-applies. Beware: signature-glyph text rects bleed ~beyond their
+  row (h≈144px), and `focus()` scrolls the page — screenshots go stale.
+
+**Known gaps / next in line:**
+- Cursor OVERLAY (crosshair + grid, cursor.js layoutInfo) still uses
+  uniform measure math → drifts near ts changes; move it onto rowData
+  geometry like the click path. Keyboard nav (moveByDuration etc.) also
+  still uses state.ticksPerMeasure (uniform) — port to facade
+  toAbs/locate.
+- 2c UX passes (fret pad popover polish, roll/pattern insertion as
+  DATA presets per instrument, ghost note, loop-a-selection practice),
+  then 2d: rewrite e2e/otf-editor.spec.js + tied-note truncation fix.
+- Facade has no track-switcher UI inside the editor yet (work-view
+  passes trackId; switching mid-session = exit + re-enter).
+
+### 2-old. Original framing (kept for context)
 **Mike's framing: the goal is not showing TEF, it's building something
 BETTER than TablEdit — a free in-browser tab app.** Editor
 user-friendliness comes before verification breadth (old jobs 2-4,
