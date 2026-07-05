@@ -3,30 +3,47 @@
 ## RESUME PROMPT (paste into a new session)
 
 ```
-Let's continue the OTF work.
+Let's continue the OTF work — editor phase.
 
 Connect these folders:
 - /Users/mike/workspace/bluegrassbook.com/feature-otf-editor  (worktree, branch feature/otf-editor)
-- /Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs  (TEF sources)
-- /Users/mike/workspace/bluegrassbook.com  (container — needed for git via
+- /Users/mike/workspace/bluegrassbook.com  (container — git via
   GIT_DIR=<mount>/.bare/worktrees/feature-otf-editor,
-  GIT_WORK_TREE=<mount>/feature-otf-editor, and override nbstripout:
-  -c filter.nbstripout.clean=cat -c filter.nbstripout.required=false)
+  GIT_WORK_TREE=<mount>/feature-otf-editor, nbstripout override
+  -c filter.nbstripout.clean=cat -c filter.nbstripout.required=false;
+  commit via add + write-tree/commit-tree/update-ref — full status/
+  commit exceeds the sandbox's 45s call cap)
 
-Read SESSION-HANDOFF.md first. Current state: TEF→OTF parsing is
-oracle-clean — 87 VERIFIED / 20 PARTIAL / 0 DIVERGED across all 107
-source-backed files — AND the frontend now consumes
-metadata.time_signature_changes (job #1 done 2026-07-03; see
-docs/js/renderers/measure-timing.js). Work the "Follow-up jobs" in the
-handoff, in order.
-Tests: python3 -m pytest tests/parser/ (44 pass; pip install pytest
---break-system-packages first) and npx vitest run (511 pass; npm install
-@rollup/rollup-linux-arm64-gnu --no-save first). After any parser change:
-regenerate with python3 spike/regen_parsed.py, then re-run
-python3 spike/oracle_verify.py --batch spike/oracle_manifest.json.
-Commit each landed fix (sandbox: git add <paths> then
-write-tree/commit-tree/update-ref — full status/commit exceeds the 45s
-call cap).
+Read SESSION-HANDOFF.md first. Rendering/playback is done and
+oracle-backed (jobs #1 done); we're on job #2: make the editor
+user-friendly. The goal is something BETTER than TablEdit, free and
+in-browser — NOT a TEF viewer.
+
+IMPORTANT: the editor must serve guitar, bass, banjo, AND mandolin
+equally. Don't over-optimize for banjo — no banjo-only assumptions in
+the facade or UI (string counts, tunings, roll presets are DATA, not
+architecture). What matters generically: fast note input (click/tap
+and keyboard), fast copy/paste of phrases (select a beat/measure/
+phrase, paste at cursor, transpose on paste later), duration handling,
+and undo that never lies.
+
+Start with the editing facade: a clean API over OTF documents
+(insert/delete/move notes, selection, copy/paste of tick ranges,
+ts-aware measure math via docs/js/renderers/measure-timing.js, undo/
+redo) that BOTH mouse/touch UI and the vim-style keyboard drive. Then
+wire it into work-view behind an Edit button (edit real site tabs, not
+just editor-demo.html). Test each instrument with real parsed OTFs:
+27493 has guitar+bass+mandolin+banjo tracks (docs/data/tabs/ has
+copies; untracked dev harness docs/tab-dev.html?id=<pid>).
+
+Tests first, vitest for everything (npx vitest run — 522 pass; npm
+install @rollup/rollup-linux-arm64-gnu --no-save first in the sandbox).
+The editor's 314 existing unit tests must stay green while the facade
+is extracted. Rewrite e2e/otf-editor.spec.js as the UX stabilizes (it
+predates the modal redesign — see handoff). Serve locally with
+python3 -m http.server 8081 --directory docs (main worktree owns 8080;
+hard-refresh Chrome, it caches ES modules). Commit each landed piece;
+I'll push.
 ```
 
 **Goal:** Finish the browser tab editor. Mike doesn't care which engine
@@ -153,10 +170,17 @@ DESIGN.md vision is right: "as fluid as typing text", pattern-based
 (rolls/licks as first-class), casual users on mouse/touch AND vim-style
 power users, mobile-friendly. Suggested order:
 
+**Multi-instrument constraint (Mike, 2026-07-04): guitar, bass, banjo,
+mandolin are all first-class. Don't over-optimize for banjo —
+instrument specifics (string counts, tunings, roll/pattern presets)
+are data, not architecture. The generic wins are: fast note input,
+fast copy/paste of phrases, clean duration handling.**
+
 a. **Editing facade**: a clean API over OTF documents (insert/delete/
-   move notes, ts-aware measure math via measure-timing.js, undo/redo,
-   selection) that the UI calls — decouple editor internals from
-   keyboard.js so mouse/touch UI and keyboard drive the same ops.
+   move notes, selection + copy/paste of tick ranges, ts-aware measure
+   math via measure-timing.js, undo/redo) that the UI calls — decouple
+   editor internals from keyboard.js so mouse/touch UI and keyboard
+   drive the same ops, on any string count.
 b. **Wire into work-view**: Edit button on any tab work → edit in
    place, preview with playback, save/export OTF (and a submit-as-
    correction path later). Editing the site's real tabs is the payoff.
