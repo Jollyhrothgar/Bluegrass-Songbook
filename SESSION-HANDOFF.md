@@ -100,11 +100,35 @@ Also fixed en route (each its own commit):
 
 Tie flags / finger annotations / suffixed ids audit: clean.
 
-Verified: 511 vitest unit tests; live in Chrome on 22456 (3/4 pickup),
+Rendering polish from Mike's visual review vs TablEdit (all in
+tablature.js + measure-timing.js, each unit-tested):
+- Engraved time-signature glyphs (Bravura/SMuFL via jsdelivr, serif
+  fallback) at m1 + every effective change incl. reversion; pickups
+  unmarked (notated under the global signature, TablEdit-style).
+- Adornment footprint rule (`_adornmentsFor`): repeat signs and
+  signatures GROW the measure; the note area never shrinks. Register
+  future edge decorations there.
+- Notes centered per measure (noteOffset splits the last note's
+  trailing duration-space); barlines span the staff only.
+- **Two-feel toggle**: MeasureTiming feel:'two' presents 4/4→2/2 and
+  2/4→1/2 (tick-neutral); signature glyphs, beam grouping (per
+  beatTicksFor), metronome, and cursor snapping all follow. Native 2/2
+  files get half-note beaming/snapping too.
+- `_beamRuns` duration filter: quarters are never beamed into eighth
+  ligatures (m6 of 22456 caught this in two feel).
+- Metronome toggles live (master gain node); playback cursor +
+  highlights fan out to all visible tracks.
+
+Verified: 522 vitest unit tests; live in Chrome on 22456 (3/4 pickup),
 18926 (1/4 pickup + repeats), 27493 (mid-tune 2/4, 169.6s total vs ~87s
 under the old math). Untracked dev harness: `docs/tab-dev.html?id=<pid>`
-+ OTFs in `docs/data/tabs/` (no published work references banjo-hangout
-tabs yet — docs/data/index.jsonl has no tablature_parts).
++ OTFs in `docs/data/tabs/` (22456, 18926, 27493, 11449, 23602, 24091;
+no published work references banjo-hangout tabs yet —
+docs/data/index.jsonl has no tablature_parts). Serving tip: main
+worktree tends to own :8080; run this worktree side-by-side with
+`python3 -m http.server 8081 --directory docs` (scripts/server kills
+other python servers on 8080-8090). Chrome caches ES modules — hard
+refresh after edits.
 
 **Known stale: `e2e/otf-editor.spec.js` behavioral tests.** The spec
 predates the modal redesign (keyboard.js: NORMAL handles nav+entry, no
