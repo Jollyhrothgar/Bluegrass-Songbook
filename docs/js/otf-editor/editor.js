@@ -4,7 +4,7 @@
 import { TabRenderer } from '../renderers/tablature.js';
 import { TabPlayer } from '../renderers/tab-player.js';
 import { EditorState, EditorMode, DURATIONS, TICKS_PER_BEAT } from './state.js';
-import { EditorCursor } from './cursor.js';
+import { EditorCursor, positionFromSvgPoint } from './cursor.js';
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar } from './toolbar.js';
 import { NoteEntryPopover } from './popover.js';
@@ -360,16 +360,64 @@ export class OTFEditor {
         // Only handle clicks on the canvas area
         if (!this.canvasContainer.contains(event.target)) return;
 
-        // Get click position relative to canvas
+        // Hit-test the renderer's real row/measure geometry first — the
+        // uniform-grid fallback drifts on variable-width measures and
+        // scrolled pages.
+        if (this._setCursorFromPoint(event.clientX, event.clientY)) {
+            this.editorRoot.focus();
+            return;
+        }
+
+        // Fallback: uniform mapping relative to the canvas
         const rect = this.canvasContainer.getBoundingClientRect();
         const x = event.clientX - rect.left + this.canvasContainer.scrollLeft;
         const y = event.clientY - rect.top + this.canvasContainer.scrollTop;
-
-        // Move cursor to position
         this.cursor.setFromCoordinates(x, y);
 
         // Focus editor
         this.editorRoot.focus();
+    }
+
+    /**
+     * Set the cursor from a viewport point via TabRenderer's rowData
+     * geometry (per-measure x/width/ticks — ts-aware and layout-true).
+     * @returns {boolean} true if a row was hit
+     */
+    _setCursorFromPoint(clientX, clientY) {
+        const rowData = this.renderer?.rowData;
+        if (!rowData || rowData.length === 0) return false;
+
+        for (const row of rowData) {
+            const svg = row.svg;
+            if (!svg?.getBoundingClientRect) continue;
+            const rect = svg.getBoundingClientRect();
+            if (clientY < rect.top || clientY > rect.bottom) continue;
+            if (rect.width === 0 || rect.height === 0) continue;
+
+            // Viewport → SVG user units (CSS may scale via --tab-scale)
+            const vb = svg.viewBox?.baseVal;
+            const scaleX = vb?.width ? rect.width / vb.width : 1;
+            const scaleY = vb?.height ? rect.height / vb.height : 1;
+            const x = (clientX - rect.left) / scaleX;
+            const y = (clientY - rect.top) / scaleY;
+
+            const opt = this.renderer.options || {};
+            const pos = positionFromSvgPoint(row.measures, x, y, {
+                topMargin: opt.topMargin ?? 30,
+                stringSpacing: opt.stringSpacing ?? 15,
+                stringCount: this.state.getStringCount(),
+                gridSubdivision: this.state.gridSubdivision,
+            });
+            if (!pos) return false;
+
+            this.state.cursor.measure = pos.measure;
+            this.state.cursor.tick = pos.tick;
+            this.state.cursor.string = pos.string;
+            this.cursor.update();
+            this.state._emit('cursorMove', this.state.cursor);
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -435,11 +483,13 @@ export class OTFEditor {
 
         if (!track || !notation) return;
 
-        // Render using TabRenderer
+        // Render using TabRenderer, with the facade's ts-aware timing so
+        // mid-tune signature changes get correct measure lengths + glyphs
         const ticksPerBeat = this.state.otf.timing?.ticks_per_beat || TICKS_PER_BEAT;
         const timeSignature = this.state.otf.metadata?.time_signature || '4/4';
 
-        this.renderer.render(track, notation, ticksPerBeat, timeSignature);
+        this.renderer.render(track, notation, ticksPerBeat, timeSignature,
+            this.state.facade.timing);
 
         // Update cursor layout info after DOM is fully painted
         // Use double-RAF to ensure layout is complete
