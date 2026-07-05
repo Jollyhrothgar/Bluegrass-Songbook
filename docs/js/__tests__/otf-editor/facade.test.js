@@ -408,6 +408,29 @@ describe('EditingFacade — undo that never lies', () => {
     });
 });
 
+describe('EditingFacade — load', () => {
+    it('replaces the document, resets track, clears history + clipboard', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 2 });
+        f.copyRange(0, 1920);
+        f.load(tsChangeDoc());
+        expect(f.trackId).toBe('guitar');
+        expect(f.stringCount()).toBe(6);
+        expect(f.canUndo()).toBe(false);
+        expect(f.clipboard).toBeNull();
+        expect(f.ticksFor(3)).toBe(960); // new doc's timing in effect
+    });
+
+    it('emits load and change', () => {
+        const f = new EditingFacade(banjoDoc());
+        const seen = [];
+        f.on('load', () => seen.push('load'));
+        f.on('change', () => seen.push('change'));
+        f.load(banjoDoc());
+        expect(seen).toEqual(['load', 'change']);
+    });
+});
+
 describe('EditingFacade — change events', () => {
     it('emits change on mutations, not on reads', () => {
         const f = new EditingFacade(banjoDoc());

@@ -1,7 +1,13 @@
 // OTF Editor State Management
-// Manages editor state, undo/redo history, and clipboard
+//
+// UI-session state (cursor, mode, selection, entry duration, grid,
+// pending articulation) layered over the UI-free EditingFacade, which
+// owns the document, undo history, clipboard, and all mutations.
+// Anything that edits the OTF goes through the facade — the mouse/touch
+// UI can drive the same facade directly without this class.
 
 import { measureTicksFor } from '../renderers/measure-timing.js';
+import { EditingFacade } from './facade.js';
 
 /**
  * Duration constants (in ticks)
@@ -104,105 +110,20 @@ export class SelectionRange {
 }
 
 /**
- * Undo history entry
- */
-class HistoryEntry {
-    constructor(description, beforeState, afterState) {
-        this.timestamp = Date.now();
-        this.description = description;
-        this.beforeState = JSON.parse(JSON.stringify(beforeState));
-        this.afterState = JSON.parse(JSON.stringify(afterState));
-    }
-}
-
-/**
- * Undo/Redo history manager
- */
-class UndoHistory {
-    constructor(maxSize = 100) {
-        this.entries = [];
-        this.currentIndex = -1;
-        this.maxSize = maxSize;
-    }
-
-    /**
-     * Record a state change
-     */
-    push(description, beforeState, afterState) {
-        // Remove any redo entries after current position
-        if (this.currentIndex < this.entries.length - 1) {
-            this.entries = this.entries.slice(0, this.currentIndex + 1);
-        }
-
-        // Add new entry
-        const entry = new HistoryEntry(description, beforeState, afterState);
-        this.entries.push(entry);
-        this.currentIndex = this.entries.length - 1;
-
-        // Trim if exceeds max size
-        if (this.entries.length > this.maxSize) {
-            this.entries.shift();
-            this.currentIndex--;
-        }
-    }
-
-    /**
-     * Undo - returns the before state if available
-     */
-    undo() {
-        if (this.currentIndex >= 0) {
-            const entry = this.entries[this.currentIndex];
-            this.currentIndex--;
-            return entry.beforeState;
-        }
-        return null;
-    }
-
-    /**
-     * Redo - returns the after state if available
-     */
-    redo() {
-        if (this.currentIndex < this.entries.length - 1) {
-            this.currentIndex++;
-            const entry = this.entries[this.currentIndex];
-            return entry.afterState;
-        }
-        return null;
-    }
-
-    /**
-     * Check if undo is available
-     */
-    canUndo() {
-        return this.currentIndex >= 0;
-    }
-
-    /**
-     * Check if redo is available
-     */
-    canRedo() {
-        return this.currentIndex < this.entries.length - 1;
-    }
-
-    /**
-     * Clear all history
-     */
-    clear() {
-        this.entries = [];
-        this.currentIndex = -1;
-    }
-}
-
-/**
  * Main editor state management
  */
 export class EditorState {
     constructor(options = {}) {
-        // OTF document (source of truth)
-        this.otf = options.otf || this._createEmptyOTF(options.instrument || '5-string-banjo');
+        // Event listeners (created first: facade forwarding needs them)
+        this._listeners = new Map();
+        this._suppressForward = false;
+
+        // Editing facade — owns the OTF document, undo history, clipboard
+        const otf = options.otf || this._createEmptyOTF(options.instrument || '5-string-banjo');
+        this.facade = new EditingFacade(otf);
 
         // Current track ID
-        this.trackId = this.otf.tracks[0]?.id || 'banjo';
+        this.trackId = this.facade.trackId || 'banjo';
 
         // Cursor position
         this.cursor = new CursorPosition(1, 0, 3, this.trackId);
@@ -223,26 +144,55 @@ export class EditorState {
         this.tripletMode = false;
         this.tripletCount = 0;
 
-        // Clipboard
-        this.clipboard = null;
-
         // Grid subdivision (for cursor snap/movement)
         this.gridSubdivision = DURATIONS.eighth;
 
         // Grid visibility
         this.showGrid = true;
 
-        // Undo history
-        this.history = new UndoHistory();
+        // Undo history view (facade owns the real history)
+        this.history = {
+            canUndo: () => this.facade.canUndo(),
+            canRedo: () => this.facade.canRedo(),
+            clear: () => this.facade.clearHistory(),
+        };
 
         // Last action (for repeat with .)
         this.lastAction = null;
 
-        // Event listeners
-        this._listeners = new Map();
+        // Forward facade events to this emitter
+        this.facade.on('change', (doc) => {
+            if (this._suppressForward) return;
+            this._updateTicksPerMeasure();
+            this._emit('change', doc);
+        });
+        this.facade.on('undo', () => { if (!this._suppressForward) this._emit('undo'); });
+        this.facade.on('redo', () => { if (!this._suppressForward) this._emit('redo'); });
+        this.facade.on('clipboardChange', (c) => {
+            if (!this._suppressForward) this._emit('clipboardChange', c);
+        });
 
         // Calculate ticks per measure from time signature
         this._updateTicksPerMeasure();
+    }
+
+    /** The OTF document lives in the facade. */
+    get otf() {
+        return this.facade.otf;
+    }
+
+    set otf(value) {
+        this.facade.otf = value;
+        this.facade._invalidateTiming();
+    }
+
+    /** Clipboard lives in the facade (shared with any other UI). */
+    get clipboard() {
+        return this.facade.clipboard;
+    }
+
+    set clipboard(value) {
+        this.facade.clipboard = value;
     }
 
     /**
@@ -300,6 +250,10 @@ export class EditorState {
     /**
      * Update ticks per measure from time signature (den-aware: a 2/2
      * measure is 1920 ticks, not 960 — see measure-timing.js)
+     *
+     * NB: this is the UNIFORM measure length used by cursor/grid math.
+     * Document mutations are ts-aware via the facade; cursor ts-awareness
+     * lands with the UI passes.
      */
     _updateTicksPerMeasure() {
         const timeSig = this.otf.metadata?.time_signature || '4/4';
@@ -311,12 +265,14 @@ export class EditorState {
      * Load an OTF document
      */
     load(otf) {
-        this.otf = JSON.parse(JSON.stringify(otf)); // Deep clone
-        this.trackId = this.otf.tracks[0]?.id || 'banjo';
+        this._suppressForward = true;
+        this.facade.load(otf);
+        this._suppressForward = false;
+
+        this.trackId = this.facade.trackId || 'banjo';
         this.cursor = new CursorPosition(1, 0, 3, this.trackId);
         this.selection = null;
         this.mode = EditorMode.NORMAL;
-        this.history.clear();
         this._updateTicksPerMeasure();
         this._emit('load', this.otf);
         this._emit('change', this.otf);
@@ -340,8 +296,7 @@ export class EditorState {
      * Get number of strings for current instrument
      */
     getStringCount() {
-        const track = this.getCurrentTrack();
-        return track?.tuning?.length || 5;
+        return this.facade.stringCount(this.trackId) || 5;
     }
 
     /**
@@ -356,14 +311,7 @@ export class EditorState {
      * Get or create measure
      */
     getOrCreateMeasure(measureNum) {
-        let measure = this.getMeasure(measureNum);
-        if (!measure) {
-            measure = { measure: measureNum, events: [] };
-            const notation = this.getNotation();
-            notation.push(measure);
-            notation.sort((a, b) => a.measure - b.measure);
-        }
-        return measure;
+        return this.facade.getOrCreateMeasure(measureNum, this.trackId);
     }
 
     /**
@@ -398,69 +346,24 @@ export class EditorState {
     }
 
     /**
-     * Record current state for undo
-     */
-    _recordUndo(description) {
-        return JSON.parse(JSON.stringify(this.otf));
-    }
-
-    /**
-     * Complete undo entry
-     */
-    _completeUndo(description, beforeState) {
-        this.history.push(description, beforeState, this.otf);
-        this._emit('change', this.otf);
-    }
-
-    /**
      * Insert a note at cursor position
-     * If the note duration exceeds the measure boundary, creates tied notes
+     * If the note duration exceeds the measure boundary, the facade
+     * splits it into tie-continued notes (ts-aware).
      */
     insertNote(fret, options = {}) {
-        const beforeState = this._recordUndo('Insert note');
         const string = options.string || this.cursor.string;
         const tech = options.tech || this.pendingArticulation;
         const duration = options.duration || this.currentDuration;
 
-        // Calculate remaining ticks in current measure
-        const remainingTicks = this.ticksPerMeasure - this.cursor.tick;
-
-        // Check if we need tied notes (duration extends past measure)
-        if (duration > remainingTicks && remainingTicks > 0) {
-            // Insert first note (fills remainder of measure)
-            this._insertNoteAtPosition(
-                this.cursor.measure,
-                this.cursor.tick,
-                string,
-                fret,
-                remainingTicks,
-                tech,
-                '~'  // Tie to next note
-            );
-
-            // Insert tied note at start of next measure
-            const overflowDuration = duration - remainingTicks;
-            this._insertNoteAtPosition(
-                this.cursor.measure + 1,
-                0,
-                string,
-                fret,
-                overflowDuration,
-                '~',  // Tied from previous
-                null
-            );
-        } else {
-            // Normal note insertion
-            this._insertNoteAtPosition(
-                this.cursor.measure,
-                this.cursor.tick,
-                string,
-                fret,
-                duration,
-                tech,
-                null
-            );
-        }
+        this.facade.insertNote({
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string,
+            fret,
+            duration,
+            tech,
+            trackId: this.trackId,
+        });
 
         // Clear pending articulation
         this.pendingArticulation = null;
@@ -477,106 +380,54 @@ export class EditorState {
         // Record action for repeat
         this.lastAction = { type: 'insertNote', fret, options: { string, tech, duration } };
 
-        this._completeUndo('Insert note', beforeState);
         this._emit('noteInserted', { measure: this.cursor.measure, tick: this.cursor.tick, fret, string });
-    }
-
-    /**
-     * Insert note at specific position (internal helper)
-     */
-    _insertNoteAtPosition(measureNum, tick, string, fret, duration, tech, tie) {
-        const measure = this.getOrCreateMeasure(measureNum);
-
-        // Find or create event at this tick
-        let event = measure.events.find(e => e.tick === tick);
-        if (!event) {
-            event = { tick, notes: [] };
-            measure.events.push(event);
-            measure.events.sort((a, b) => a.tick - b.tick);
-        }
-
-        // Remove existing note on this string
-        event.notes = event.notes.filter(n => n.s !== string);
-
-        // Add new note with duration
-        const note = { s: string, f: fret, dur: duration };
-        if (tech) note.tech = tech;
-        if (tie) note.tie = tie;
-        event.notes.push(note);
-        event.notes.sort((a, b) => a.s - b.s);
     }
 
     /**
      * Delete note at cursor position
      */
     deleteNote() {
-        const measure = this.getMeasure(this.cursor.measure);
-        if (!measure) return false;
-
-        const event = measure.events.find(e => e.tick === this.cursor.tick);
-        if (!event) return false;
-
-        const noteIndex = event.notes.findIndex(n => n.s === this.cursor.string);
-        if (noteIndex === -1) return false;
-
-        const beforeState = this._recordUndo('Delete note');
-        event.notes.splice(noteIndex, 1);
-
-        // Remove empty events
-        if (event.notes.length === 0) {
-            const eventIndex = measure.events.indexOf(event);
-            measure.events.splice(eventIndex, 1);
-        }
-
-        this.lastAction = { type: 'deleteNote' };
-        this._completeUndo('Delete note', beforeState);
-        return true;
+        const ok = this.facade.deleteNote({
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        }, this.trackId);
+        if (ok) this.lastAction = { type: 'deleteNote' };
+        return ok;
     }
 
     /**
      * Delete all notes at current tick
      */
     deleteTick() {
-        const measure = this.getMeasure(this.cursor.measure);
-        if (!measure) return false;
-
-        const eventIndex = measure.events.findIndex(e => e.tick === this.cursor.tick);
-        if (eventIndex === -1) return false;
-
-        const beforeState = this._recordUndo('Delete tick');
-        measure.events.splice(eventIndex, 1);
-
-        this.lastAction = { type: 'deleteTick' };
-        this._completeUndo('Delete tick', beforeState);
-        return true;
+        const ok = this.facade.deleteTick({
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+        }, this.trackId);
+        if (ok) this.lastAction = { type: 'deleteTick' };
+        return ok;
     }
 
     /**
      * Add articulation to note at cursor
      */
     addArticulation(tech) {
-        const note = this.getNoteAtCursor();
-        if (!note) return false;
-
-        const beforeState = this._recordUndo('Add articulation');
-        note.tech = tech;
-
-        this._completeUndo('Add articulation', beforeState);
-        return true;
+        return this.facade.setArticulation({
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        }, tech, this.trackId);
     }
 
     /**
      * Remove articulation from note at cursor
      */
     removeArticulation() {
-        const note = this.getNoteAtCursor();
-        if (!note || !note.tech) return false;
-
-        const beforeState = this._recordUndo('Remove articulation');
-        delete note.tech;
-
-        this._completeUndo('Remove articulation', beforeState);
-        return true;
+        return this.facade.setArticulation({
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        }, null, this.trackId);
     }
 
     /**
@@ -644,114 +495,41 @@ export class EditorState {
     }
 
     /**
-     * Copy selection to clipboard
+     * Copy selection (visual mode) or the event at cursor to clipboard.
+     * Selection ranges are inclusive of the end tick.
      */
     copy() {
         if (this.selection) {
             const { start, end } = this.selection.getNormalized(this.ticksPerMeasure);
-            // Copy notes in selection range
-            const notes = [];
-            const notation = this.getNotation();
-
-            for (const measure of notation) {
-                if (measure.measure >= start.measure && measure.measure <= end.measure) {
-                    for (const event of measure.events) {
-                        const absTick = (measure.measure - 1) * this.ticksPerMeasure + event.tick;
-                        const startAbs = start.getAbsoluteTick(this.ticksPerMeasure);
-                        const endAbs = end.getAbsoluteTick(this.ticksPerMeasure);
-
-                        if (absTick >= startAbs && absTick <= endAbs) {
-                            notes.push({
-                                relativeTick: absTick - startAbs,
-                                notes: JSON.parse(JSON.stringify(event.notes)),
-                            });
-                        }
-                    }
-                }
-            }
-
-            this.clipboard = { type: 'notes', data: notes };
+            const startAbs = this.facade.toAbs(start.measure, start.tick);
+            const endAbs = this.facade.toAbs(end.measure, end.tick) + 1;
+            this.facade.copyRange(startAbs, endAbs, { trackId: this.trackId });
         } else {
-            // Copy note at cursor
-            const event = this.getEventAtCursor();
-            if (event) {
-                this.clipboard = {
-                    type: 'notes',
-                    data: [{ relativeTick: 0, notes: JSON.parse(JSON.stringify(event.notes)) }],
-                };
-            }
+            const abs = this.facade.toAbs(this.cursor.measure, this.cursor.tick);
+            this.facade.copyRange(abs, abs + 1, { trackId: this.trackId });
         }
-
-        this._emit('clipboardChange', this.clipboard);
     }
 
     /**
-     * Paste from clipboard
+     * Paste from clipboard at cursor position
      */
     paste() {
-        if (!this.clipboard || this.clipboard.data.length === 0) return false;
-
-        const beforeState = this._recordUndo('Paste');
-        const baseAbsTick = this.cursor.getAbsoluteTick(this.ticksPerMeasure);
-
-        for (const item of this.clipboard.data) {
-            const absTick = baseAbsTick + item.relativeTick;
-            const measureNum = Math.floor(absTick / this.ticksPerMeasure) + 1;
-            const tick = absTick % this.ticksPerMeasure;
-
-            const measure = this.getOrCreateMeasure(measureNum);
-
-            let event = measure.events.find(e => e.tick === tick);
-            if (!event) {
-                event = { tick, notes: [] };
-                measure.events.push(event);
-                measure.events.sort((a, b) => a.tick - b.tick);
-            }
-
-            // Merge notes
-            for (const note of item.notes) {
-                const existingIndex = event.notes.findIndex(n => n.s === note.s);
-                if (existingIndex >= 0) {
-                    event.notes[existingIndex] = JSON.parse(JSON.stringify(note));
-                } else {
-                    event.notes.push(JSON.parse(JSON.stringify(note)));
-                }
-            }
-            event.notes.sort((a, b) => a.s - b.s);
-        }
-
-        this._completeUndo('Paste', beforeState);
-        return true;
+        const atAbs = this.facade.toAbs(this.cursor.measure, this.cursor.tick);
+        return this.facade.paste(atAbs, undefined, { trackId: this.trackId });
     }
 
     /**
      * Undo last action
      */
     undo() {
-        const state = this.history.undo();
-        if (state) {
-            this.otf = JSON.parse(JSON.stringify(state));
-            this._updateTicksPerMeasure();
-            this._emit('change', this.otf);
-            this._emit('undo');
-            return true;
-        }
-        return false;
+        return this.facade.undo();
     }
 
     /**
      * Redo last undone action
      */
     redo() {
-        const state = this.history.redo();
-        if (state) {
-            this.otf = JSON.parse(JSON.stringify(state));
-            this._updateTicksPerMeasure();
-            this._emit('change', this.otf);
-            this._emit('redo');
-            return true;
-        }
-        return false;
+        return this.facade.redo();
     }
 
     /**
@@ -777,7 +555,7 @@ export class EditorState {
      * Export OTF document
      */
     export() {
-        return JSON.parse(JSON.stringify(this.otf));
+        return this.facade.export();
     }
 
     /**

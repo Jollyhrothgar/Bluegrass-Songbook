@@ -50,6 +50,23 @@ export class EditingFacade {
     // Document / track access
     // ------------------------------------------------------------------
 
+    /**
+     * Replace the document (deep-cloned). Resets the current track,
+     * clears history and clipboard, and emits 'load' + 'change'.
+     */
+    load(otf, { trackId } = {}) {
+        this.otf = clone(otf);
+        const tracks = this.otf.tracks || [];
+        this.trackId = trackId && tracks.some(t => t.id === trackId)
+            ? trackId
+            : tracks[0]?.id;
+        this.clipboard = null;
+        this.clearHistory();
+        this._invalidateTiming();
+        this._emit('load', this.otf);
+        this._emit('change', this.otf);
+    }
+
     /** Deep-cloned copy of the document. */
     export() {
         return clone(this.otf);
@@ -213,6 +230,11 @@ export class EditingFacade {
             this._history.shift();
             this._historyIndex--;
         }
+    }
+
+    clearHistory() {
+        this._history = [];
+        this._historyIndex = -1;
     }
 
     canUndo() { return this._historyIndex >= 0; }
