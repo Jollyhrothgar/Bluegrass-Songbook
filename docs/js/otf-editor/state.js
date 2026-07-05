@@ -120,7 +120,7 @@ export class EditorState {
 
         // Editing facade — owns the OTF document, undo history, clipboard
         const otf = options.otf || this._createEmptyOTF(options.instrument || '5-string-banjo');
-        this.facade = new EditingFacade(otf);
+        this.facade = new EditingFacade(otf, { trackId: options.trackId });
 
         // Current track ID
         this.trackId = this.facade.trackId || 'banjo';

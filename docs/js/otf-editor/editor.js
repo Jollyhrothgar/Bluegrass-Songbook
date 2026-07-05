@@ -33,6 +33,7 @@ export class OTFEditor {
             container: null,
             otf: null,
             instrument: '5-string-banjo',
+            trackId: null,      // which track of a multi-track OTF to edit
             onSave: null,
             onChange: null,
             ...options,
@@ -46,6 +47,7 @@ export class OTFEditor {
         this.state = new EditorState({
             otf: this.options.otf,
             instrument: this.options.instrument,
+            trackId: this.options.trackId,
         });
 
         // Event recorder (must be created before keyboard handler)

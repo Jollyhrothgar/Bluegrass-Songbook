@@ -773,6 +773,12 @@ async function renderTablaturePart(part, container) {
         const leadRenderer = trackRenderers[leadTrackId] || Object.values(trackRenderers)[0];
         setupTablaturePlayer(otf, controls, leadRenderer);
 
+        // Wire up the Edit button — swap the rendered tab for an edit session
+        const editBtn = controls.querySelector('.tab-edit-btn');
+        if (editBtn) {
+            editBtn.addEventListener('click', () => enterTabEditMode(otf, part, container));
+        }
+
         // Add attribution section for Banjo Hangout tabs
         if (part.source === 'banjo-hangout') {
             const attribution = document.createElement('div');
@@ -812,6 +818,46 @@ async function renderTablaturePart(part, container) {
         console.error('Error loading tablature:', e);
         container.innerHTML = `<div class="error">Failed to load tablature: ${e.message}</div>`;
     }
+}
+
+/**
+ * Enter edit mode for a tablature part: mount the OTF editor over the
+ * rendered tab. Done/Ctrl+S applies the edited document back to the
+ * view (in memory) and re-renders; Cancel restores the original.
+ * Editor + session code are lazy-imported so readers never pay for it.
+ */
+async function enterTabEditMode(otf, part, container) {
+    // Stop playback before handing the document to the editor
+    if (tablaturePlayer?.isPlaying) {
+        tablaturePlayer.stop();
+    }
+
+    const [{ OTFEditor }, { createTabEditSession, resolveEditTrackId }] = await Promise.all([
+        import('./otf-editor/editor.js'),
+        import('./otf-editor/work-edit.js'),
+    ]);
+
+    // Park the header controls while editing (they drive dead renderers)
+    const controlsContent = document.getElementById('work-controls-content');
+    if (controlsContent) {
+        controlsContent.innerHTML = '<div class="tab-controls"><em>Editing — use the editor bar below. ✓ Done applies your changes, Cancel discards them.</em></div>';
+    }
+
+    container.innerHTML = '';
+    const baseName = (part.file || 'tab').split('/').pop().replace(/\.otf\.json$/, '');
+
+    createTabEditSession({
+        mount: container,
+        otf,
+        trackId: resolveEditTrackId(otf, part.instrument),
+        filename: `${baseName}-edited`,
+        editorFactory: (opts) => new OTFEditor(opts),
+        onApply: (doc) => {
+            doc._partFile = part.file; // keep the view cache keyed to this part
+            setLoadedTablature(doc);
+        },
+        onExit: () => renderTablaturePart(part, container),
+    });
 }
 
 /**
@@ -896,6 +942,7 @@ function createTablatureControls(otf, part) {
         </div>
         <button class="tab-play-btn qc-toggle-btn">▶ Play</button>
         <button class="tab-stop-btn qc-toggle-btn" disabled>⏹ Stop</button>
+        <button class="tab-edit-btn qc-toggle-btn" title="Edit this tab">✏️ Edit</button>
         <label class="tab-metronome-toggle">
             <input type="checkbox" class="tab-metronome-checkbox">
             <span class="tab-metronome-icon">🥁</span>

@@ -670,4 +670,34 @@ describe('EditorState', () => {
             expect(callback).not.toHaveBeenCalled();
         });
     });
+
+    describe('trackId option (multi-track OTFs)', () => {
+        const multiTrackOtf = () => ({
+            otf_version: '1.0',
+            metadata: { title: 'Multi', time_signature: '4/4' },
+            timing: { ticks_per_beat: 480 },
+            tracks: [
+                { id: 'guitar', instrument: '6-string-guitar', tuning: ['E4', 'B3', 'G3', 'D3', 'A2', 'E2'] },
+                { id: 'mandolin', instrument: 'mandolin', tuning: ['E5', 'A4', 'D4', 'G3'] },
+            ],
+            notation: {
+                guitar: [{ measure: 1, events: [] }],
+                mandolin: [{ measure: 1, events: [] }],
+            },
+        });
+
+        it('edits the requested track instead of the first', () => {
+            const s = new EditorState({ otf: multiTrackOtf(), trackId: 'mandolin' });
+            expect(s.trackId).toBe('mandolin');
+            expect(s.getStringCount()).toBe(4);
+            s.insertNote(2, { string: 1 });
+            expect(s.otf.notation.mandolin[0].events).toHaveLength(1);
+            expect(s.otf.notation.guitar[0].events).toHaveLength(0);
+        });
+
+        it('falls back to the first track for unknown ids', () => {
+            const s = new EditorState({ otf: multiTrackOtf(), trackId: 'kazoo' });
+            expect(s.trackId).toBe('guitar');
+        });
+    });
 });
