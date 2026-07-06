@@ -197,8 +197,16 @@ tied melody notes short when backing tracks are playing.
   (1cefc1f6c): svgPointForPosition + gridLinesForRow draw from rowData
   geometry, den-aware beat emphasis; uniform layoutInfo is fallback
   only (kept for editor-demo + jsdom tests where rects are zero).
-  Keyboard nav (moveByDuration etc.) still uses state.ticksPerMeasure
-  (uniform) — port to facade toAbs/locate next.
+  ~~Keyboard nav uniform-math~~ FIXED (41ee9d085): moveByTicks /
+  moveToMeasureEnd go through facade.toAbs/locate/ticksFor — the
+  phantom back-half of short measures is gone (it was storing
+  out-of-range notes that drew past the barline: Mike's m30/31
+  report). Same commit: duration IS the working increment (arrows/
+  Space/auto-advance step by currentDuration; grid ruler follows
+  duration, explicit grid buttons override until next duration
+  change); toolbar clicks refocus the editor root.
+  state.ticksPerMeasure now only feeds selection normalization + the
+  no-facade fallbacks.
 - 2c UX passes — see the ERGONOMICS WALKTHROUGH below (2026-07-05),
   which replaces the old loose list. Then 2d: rewrite
   e2e/otf-editor.spec.js + tied-note truncation fix.
