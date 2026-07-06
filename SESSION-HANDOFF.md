@@ -199,11 +199,65 @@ tied melody notes short when backing tracks are playing.
   only (kept for editor-demo + jsdom tests where rects are zero).
   Keyboard nav (moveByDuration etc.) still uses state.ticksPerMeasure
   (uniform) — port to facade toAbs/locate next.
-- 2c UX passes (fret pad popover polish, roll/pattern insertion as
-  DATA presets per instrument, ghost note, loop-a-selection practice),
-  then 2d: rewrite e2e/otf-editor.spec.js + tied-note truncation fix.
-- Facade has no track-switcher UI inside the editor yet (work-view
-  passes trackId; switching mid-session = exit + re-enter).
+- 2c UX passes — see the ERGONOMICS WALKTHROUGH below (2026-07-05),
+  which replaces the old loose list. Then 2d: rewrite
+  e2e/otf-editor.spec.js + tied-note truncation fix.
+
+**Entry/removal fixes landed 2026-07-05 (d6125e28a) from Mike's
+hands-on pass:** digits insert instantly (two-digit refine in place:
+1,2 quickly → 12, replay-safe); Delete + Backspace(Mac delete) remove
+the note UNDER the cursor (Backspace steps back on an empty slot);
+measureWidthFloor auto-expands measures at 9px per grid slot for
+1/16–1/32 grids; overlays refresh synchronously after render (the
+rAF-only path left stale grids, esp. in throttled background tabs).
+
+### ERGONOMICS WALKTHROUGH (2026-07-05): entering an AABB tune from scratch
+
+Thought experiment: enter a standard 2-part fiddle tune (AABB, 8-bar
+parts, repeats w/ 1st-2nd endings, banjo lead rolls + guitar
+boom-chuck + bass roots-fifths), as a real user. Friction found, in
+priority order (impact × cost):
+
+1. **Play-from-cursor / loop-a-selection** — "write a small phrase,
+   hear THAT phrase" is the core verify loop; today the editor only
+   plays the whole doc from the top. TabPlayer.play() needs a
+   {startTick, endTick, loop} option (measure-timing already gives the
+   tick math). Keys: Ctrl+Space play-from-cursor; in VISUAL, L = loop
+   selection. Highest value per line of code.
+2. **Mouse drag-select + copy/paste** — phrase reuse is THE bluegrass
+   entry pattern and mouse users have no selection at all (keyboard
+   v/y/d/p exists). Drag on the canvas → tick-range selection overlay
+   (click mapping is already geometry-true), Cmd+C/V driving the same
+   facade clipboard as 'y'/'p'.
+3. **Chord entry without advancing** — a pinch (two notes, same tick)
+   costs ArrowLeft + j/k + digit today because entry auto-advances.
+   Shift+digit = insert on current tick WITHOUT advance (then j/k,
+   Shift+digit, then one advance). Tiny change, constant use.
+4. **Roll/pattern presets** — rolls are 8-note templates over a chord
+   shape (data per instrument, NOT architecture): forward, backward,
+   forward-reverse, alternating-thumb; guitar boom-chuck; bass
+   root-five. Insert template at cursor, then retouch frets. This is
+   the "pattern-based" DESIGN.md promise and the biggest raw-keystroke
+   win (a roll = 1 action instead of ~24 keys).
+5. **Repeat signs + endings editing** — AABB needs reading_list +
+   repeatStart/repeatEnd/ending marks; renderer DRAWS them, but no
+   facade op or UI sets them. Facade: setRepeat(fromMeasure,
+   toMeasure, {endings}) mutating reading_list; UI: select measures →
+   "repeat" button. Without this no real tune can be authored.
+6. **In-editor track switcher** — multi-track docs need exit+re-enter
+   to change track today. Toolbar dropdown → facade.setTrack + cursor
+   reset. Small.
+7. **New-tab-from-scratch flow** — the editor can only open EXISTING
+   tabs (work-view Edit / harness); createEmptyOTF has no UI. "New
+   tab" dialog: title, instruments (multi-track), ts, tempo, key.
+   Needed for the free-TablEdit story; medium.
+8. **Paste-transpose** (shift frets/strings on paste, harmony parts) —
+   original brief's "transpose on paste later"; after #2.
+
+Keystroke reality check for context: one 8-measure banjo roll part =
+~64 notes × (string move + digit) ≈ 180-200 keys today; with #4 it's
+~8 pattern inserts + fret retouches ≈ 40-60. #3 halves chord cost.
+
 
 ### 2-old. Original framing (kept for context)
 **Mike's framing: the goal is not showing TEF, it's building something
