@@ -58,6 +58,8 @@ export class OTFEditor {
         this.keyboard = new KeyboardHandler(this.state, this.cursor, {
             onSave: () => this._handleSave(),
             onShowHelp: () => this._showHelp(),
+            onPlayFromCursor: () => this.playFromCursor(),
+            onLoopSelection: () => this.loopSelection(),
             recorder: this.recorder,
         });
         this.toolbar = new EditorToolbar(this.state);
@@ -764,9 +766,45 @@ export class OTFEditor {
     }
 
     /**
-     * Start playback
+     * Play from the cursor to the end (toggles off when playing).
+     * The verify loop: type a phrase, hear it from right there.
      */
-    async play() {
+    async playFromCursor() {
+        if (this.isPlaying) {
+            this.stop();
+            return;
+        }
+        const startTick = this.state.facade.toAbs(
+            this.state.cursor.measure, this.state.cursor.tick);
+        await this.play({ startTick });
+    }
+
+    /**
+     * Loop the visual-mode selection (practice mode). Falls back to
+     * play-from-cursor when there is no selection. Toggles off.
+     */
+    async loopSelection() {
+        if (this.isPlaying) {
+            this.stop();
+            return;
+        }
+        if (!this.state.selection) {
+            await this.playFromCursor();
+            return;
+        }
+        const { start, end } = this.state.selection.getNormalized(this.state.ticksPerMeasure);
+        const f = this.state.facade;
+        const startTick = f.toAbs(start.measure, start.tick);
+        // Selection end is inclusive of its slot — extend by one grid step
+        const endTick = f.toAbs(end.measure, end.tick) + this.state.gridSubdivision;
+        await this.play({ startTick, endTick, loop: true });
+    }
+
+    /**
+     * Start playback
+     * @param {Object} rangeOptions - {startTick?, endTick?, loop?}
+     */
+    async play(rangeOptions = {}) {
         if (this.isPlaying) return;
 
         const otf = this.state.export();
@@ -793,6 +831,7 @@ export class OTFEditor {
         try {
             await this.player.play(otf, {
                 tempo: otf.metadata?.tempo || 120,
+                ...rangeOptions,
             });
             this.isPlaying = true;
             this._updatePlayButton();

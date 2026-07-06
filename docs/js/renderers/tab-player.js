@@ -72,6 +72,30 @@ function loadScript(url) {
 }
 
 /**
+ * Clip a schedule to a tick range and rebase times so the range starts
+ * at t=0. Pure — this is the heart of play-from-cursor / loop-a-phrase.
+ *
+ * @param {Array} items - scheduled items with a tick field and {time} seconds
+ * @param {Object} o
+ * @param {number} o.startTick - inclusive range start (absolute ticks)
+ * @param {number} o.endTick - exclusive range end (absolute ticks)
+ * @param {number} o.secondsPerTick
+ * @param {string} [o.tickKey='absTick'] - which field holds the tick
+ * @returns {Array} filtered copies with rebased time
+ */
+export function clipScheduleToRange(items, {
+    startTick = 0,
+    endTick = Infinity,
+    secondsPerTick,
+    tickKey = 'absTick',
+} = {}) {
+    const offset = startTick * secondsPerTick;
+    return items
+        .filter(it => it[tickKey] >= startTick && it[tickKey] < endTick)
+        .map(it => ({ ...it, time: it.time - offset }));
+}
+
+/**
  * TabPlayer - WebAudioFont-based playback for OTF tablature
  */
 export class TabPlayer {
@@ -233,9 +257,13 @@ export class TabPlayer {
      * @param {number} options.tempo - BPM override
      * @param {number} options.transpose - Semitones to transpose (capo simulation)
      * @param {boolean} options.loop - Loop playback
+     * @param {number} options.startTick - play from this absolute tick (default 0)
+     * @param {number} options.endTick - stop at this absolute tick, exclusive
+     *   (default: end of tune). With loop, the range repeats.
      */
     async play(otfData, options = {}) {
         if (this.isPlaying) this.stop();
+        this._loopSource = otfData; // for loop restarts
 
         await this.init();
 
@@ -418,6 +446,16 @@ export class TabPlayer {
 
         notes.sort((a, b) => a.time - b.time);
 
+        // Optional tick range (play-from-cursor / loop-a-phrase): clip
+        // AFTER durations are computed so edge notes keep their gap-based
+        // lengths, then rebase times so the range starts at t=0.
+        const rangeStart = Math.max(0, options.startTick || 0);
+        const rangeEnd = options.endTick ?? Infinity;
+        const playNotes = (rangeStart > 0 || rangeEnd !== Infinity)
+            ? clipScheduleToRange(notes, { startTick: rangeStart, endTick: rangeEnd, secondsPerTick })
+            : notes;
+        this._rangeStartTick = rangeStart;
+
         // Schedule playback
         this.playbackStartTime = this.audioContext.currentTime + 0.1;
         this.scheduledNodes = [];
@@ -429,7 +467,7 @@ export class TabPlayer {
 
         // Schedule notes and track for visualization
         this._scheduledNotes = [];
-        notes.forEach(note => {
+        playNotes.forEach(note => {
             const startTime = this.playbackStartTime + note.time;
             try {
                 const envelope = this.player.queueWaveTable(
@@ -458,17 +496,25 @@ export class TabPlayer {
 
         // Schedule metronome clicks: per-measure beats from each measure's
         // own signature (3 clicks in a 3/4 pickup, 2 half-note clicks in 2/2),
-        // through the end of the last measure containing notes
-        const lastNoteMeasure = notes.reduce((mx, n) => Math.max(mx, n.measure), 1);
-        const clickEnd = timing.startTick(lastNoteMeasure) + timing.ticksAt(lastNoteMeasure);
+        // through the end of the last measure containing notes — clipped to
+        // the playback range and rebased like the notes.
+        const lastNoteMeasure = playNotes.reduce((mx, n) => Math.max(mx, n.measure), 1);
+        const clickEnd = Math.min(
+            timing.startTick(lastNoteMeasure) + timing.ticksAt(lastNoteMeasure),
+            rangeEnd);
         for (const click of buildMetronomeSchedule(timing)) {
             if (click.tick >= clickEnd) break;
+            if (click.tick < rangeStart) continue;
             this.playMetronomeClick(
-                this.playbackStartTime + click.tick * secondsPerTick,
+                this.playbackStartTime + (click.tick - rangeStart) * secondsPerTick,
                 click.isDownbeat);
         }
 
-        const totalDuration = notes.length > 0 ? notes[notes.length - 1].time + 1 : 0;
+        // A bounded range plays for EXACTLY its musical length (so loops
+        // repeat in time); open-ended playback keeps the old +1s tail.
+        const totalDuration = rangeEnd !== Infinity
+            ? (rangeEnd - rangeStart) * secondsPerTick
+            : (playNotes.length > 0 ? playNotes[playNotes.length - 1].time + 1 : 0);
         this._startPositionUpdate(totalDuration, options);
     }
 
@@ -481,8 +527,9 @@ export class TabPlayer {
                 this.onPositionUpdate(elapsed, totalDuration);
             }
 
-            // Calculate current tick position
-            const currentTick = elapsed / this._secondsPerTick;
+            // Calculate current tick position (absolute: range-rebased
+            // elapsed time plus the range's start tick)
+            const currentTick = elapsed / this._secondsPerTick + (this._rangeStartTick || 0);
 
             // Fire tick callback for beat cursor
             if (this.onTick) {
@@ -512,9 +559,10 @@ export class TabPlayer {
             if (elapsed < totalDuration) {
                 this.animationFrame = requestAnimationFrame(update);
             } else {
-                if (this.loop) {
+                if (this.loop && this._loopSource) {
                     this.stop();
-                    setTimeout(() => this.play(options._otfData, options), 100);
+                    // Tracked so a user stop() during the gap cancels it
+                    this._loopTimer = setTimeout(() => this.play(this._loopSource, options), 100);
                 } else {
                     this.stop();
                     if (this.onPlaybackEnd) this.onPlaybackEnd();
@@ -529,6 +577,12 @@ export class TabPlayer {
      */
     stop() {
         this.isPlaying = false;
+
+        // Cancel a pending loop restart (stop during the loop gap)
+        if (this._loopTimer) {
+            clearTimeout(this._loopTimer);
+            this._loopTimer = null;
+        }
 
         if (this.animationFrame) {
             cancelAnimationFrame(this.animationFrame);

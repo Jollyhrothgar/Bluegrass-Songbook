@@ -619,6 +619,32 @@ describe('KeyboardHandler', () => {
             expect(state.cursor.tick).toBe(0); // stays on the slot
         });
 
+        it('Shift+Space fires the play-from-cursor callback', () => {
+            const onPlayFromCursor = vi.fn();
+            keyboard.options.onPlayFromCursor = onPlayFromCursor;
+            keyboard.handleKeyDown(createKeyEvent(' ', { shift: true }));
+            expect(onPlayFromCursor).toHaveBeenCalled();
+        });
+
+        it('plain Space still advances (no playback)', () => {
+            const onPlayFromCursor = vi.fn();
+            keyboard.options.onPlayFromCursor = onPlayFromCursor;
+            const before = state.cursor.tick;
+            keyboard.handleKeyDown(createKeyEvent(' '));
+            expect(onPlayFromCursor).not.toHaveBeenCalled();
+            expect(state.cursor.tick).toBe(before + state.currentDuration);
+        });
+
+        it('L fires the loop-selection callback in any mode', () => {
+            const onLoopSelection = vi.fn();
+            keyboard.options.onLoopSelection = onLoopSelection;
+            keyboard.handleKeyDown(createKeyEvent('L', { shift: true }));
+            expect(onLoopSelection).toHaveBeenCalledTimes(1);
+            state.setMode(EditorMode.VISUAL);
+            keyboard.handleKeyDown(createKeyEvent('L', { shift: true }));
+            expect(onLoopSelection).toHaveBeenCalledTimes(2);
+        });
+
         it('high fret mode allows entering frets 10+', () => {
             state.cursor.tick = 0;
             keyboard.handleKeyDown(createKeyEvent('f'));

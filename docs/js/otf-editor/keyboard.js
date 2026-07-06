@@ -125,6 +125,21 @@ export class KeyboardHandler {
             return true;
         }
 
+        // Shift+Space / Ctrl+Space - play from cursor (toggles off while
+        // playing). The verify loop for phrase entry.
+        if (key === ' ' && (shiftKey || mod)) {
+            this._commitFretBuffer();
+            this.options.onPlayFromCursor?.();
+            return true;
+        }
+
+        // L - loop the selection (VISUAL) or play from cursor (NORMAL)
+        if (key === 'L' && !mod) {
+            this._commitFretBuffer();
+            this.options.onLoopSelection?.();
+            return true;
+        }
+
         // Ctrl+Z - undo
         if (mod && key === 'z' && !shiftKey) {
             this._record('undo');
