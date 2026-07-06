@@ -226,11 +226,15 @@ priority order (impact × cost):
    step), falls back to play-from-cursor. NOT yet ear-verified (Mike:
    needs a real user gesture for audio — synthetic events can't resume
    the AudioContext; also rAF pauses viz/loop-restart in hidden tabs).
-2. **Mouse drag-select + copy/paste** — phrase reuse is THE bluegrass
-   entry pattern and mouse users have no selection at all (keyboard
-   v/y/d/p exists). Drag on the canvas → tick-range selection overlay
-   (click mapping is already geometry-true), Cmd+C/V driving the same
-   facade clipboard as 'y'/'p'.
+2. ~~**Mouse drag-select + copy/paste**~~ DONE (32365ef61). Drag →
+   VISUAL tick-range selection with geometry-true highlight spans
+   (selectionRectsForRow); toolbar ⧉✂📋🔁 buttons; Cmd+C/X/V; Delete
+   clears selection in VISUAL. Fixed en route: keyboard's
+   _deleteSelection bypassed undo history (raw mutation) — now
+   state.deleteSelection() via facade.deleteRange. Mike's direction
+   2026-07-05: mouse interaction is the priority track now. Still
+   open mouse-side: drag-MOVE of a selection, right-click context
+   menu, paste-transpose.
 3. **Chord entry without advancing** — a pinch (two notes, same tick)
    costs ArrowLeft + j/k + digit today because entry auto-advances.
    Shift+digit = insert on current tick WITHOUT advance (then j/k,
