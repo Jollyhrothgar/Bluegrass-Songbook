@@ -619,6 +619,42 @@ describe('KeyboardHandler', () => {
             expect(state.cursor.tick).toBe(0); // stays on the slot
         });
 
+        it('Cmd+C copies, Cmd+V pastes at cursor', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('c', { meta: true }));
+            expect(state.clipboard?.data).toHaveLength(1);
+            state.cursor.tick = 480;
+            keyboard.handleKeyDown(createKeyEvent('v', { meta: true }));
+            expect(state.getNoteAtCursor()?.f).toBe(5);
+        });
+
+        it('Cmd+X with a selection cuts it (undoably)', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            state.cursor.tick = 0;
+            state.setMode(EditorMode.VISUAL);
+            keyboard.handleKeyDown(createKeyEvent('x', { meta: true }));
+            expect(state.mode).toBe(EditorMode.NORMAL);
+            expect(state.getMeasure(1).events).toHaveLength(0);
+            expect(state.clipboard?.data.length).toBeGreaterThan(0);
+            state.undo(); // the cut is a real history entry
+            expect(state.getMeasure(1).events).toHaveLength(1);
+        });
+
+        it('Delete in visual mode deletes the selection and exits', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            state.cursor.tick = 0;
+            state.setMode(EditorMode.VISUAL);
+            keyboard.handleKeyDown(createKeyEvent('Delete'));
+            expect(state.mode).toBe(EditorMode.NORMAL);
+            expect(state.getMeasure(1).events).toHaveLength(0);
+            state.undo();
+            expect(state.getMeasure(1).events).toHaveLength(1); // undoable
+        });
+
         it('Shift+Space fires the play-from-cursor callback', () => {
             const onPlayFromCursor = vi.fn();
             keyboard.options.onPlayFromCursor = onPlayFromCursor;

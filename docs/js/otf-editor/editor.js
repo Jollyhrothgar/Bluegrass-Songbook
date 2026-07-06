@@ -62,7 +62,9 @@ export class OTFEditor {
             onLoopSelection: () => this.loopSelection(),
             recorder: this.recorder,
         });
-        this.toolbar = new EditorToolbar(this.state);
+        this.toolbar = new EditorToolbar(this.state, {
+            onLoop: () => this.loopSelection(),
+        });
         this.popover = new NoteEntryPopover(this.state, {
             onInsert: (note) => this._handlePopoverInsert(note),
         });
@@ -346,12 +348,26 @@ export class OTFEditor {
 
         // Canvas click handling
         this.canvasContainer.addEventListener('click', (e) => {
+            if (this._suppressNextClick) {
+                this._suppressNextClick = false; // a drag just ended
+                return;
+            }
             this._handleCanvasClick(e);
         });
 
         this.canvasContainer.addEventListener('dblclick', (e) => {
             this._handleCanvasDblClick(e);
         });
+
+        // Drag-select (mouse path to phrase selection). Move/up listen on
+        // the document so drags survive leaving the canvas.
+        this._drag = null;
+        this._suppressNextClick = false;
+        this._boundDragMove = (e) => this._handleDragMove(e);
+        this._boundDragEnd = (e) => this._handleDragEnd(e);
+        this.canvasContainer.addEventListener('mousedown', (e) => this._handleDragStart(e));
+        document.addEventListener('mousemove', this._boundDragMove);
+        document.addEventListener('mouseup', this._boundDragEnd);
 
         // Focus management
         this.editorRoot.addEventListener('focus', () => {
@@ -389,13 +405,13 @@ export class OTFEditor {
     }
 
     /**
-     * Set the cursor from a viewport point via TabRenderer's rowData
+     * Map a viewport point to an edit position via TabRenderer's rowData
      * geometry (per-measure x/width/ticks — ts-aware and layout-true).
-     * @returns {boolean} true if a row was hit
+     * @returns {{measure, tick, string}|null}
      */
-    _setCursorFromPoint(clientX, clientY) {
+    _positionFromPoint(clientX, clientY) {
         const rowData = this.renderer?.rowData;
-        if (!rowData || rowData.length === 0) return false;
+        if (!rowData || rowData.length === 0) return null;
 
         for (const row of rowData) {
             const svg = row.svg;
@@ -412,22 +428,81 @@ export class OTFEditor {
             const y = (clientY - rect.top) / scaleY;
 
             const opt = this.renderer.options || {};
-            const pos = positionFromSvgPoint(row.measures, x, y, {
+            return positionFromSvgPoint(row.measures, x, y, {
                 topMargin: opt.topMargin ?? 30,
                 stringSpacing: opt.stringSpacing ?? 15,
                 stringCount: this.state.getStringCount(),
                 gridSubdivision: this.state.gridSubdivision,
             });
-            if (!pos) return false;
-
-            this.state.cursor.measure = pos.measure;
-            this.state.cursor.tick = pos.tick;
-            this.state.cursor.string = pos.string;
-            this.cursor.update();
-            this.state._emit('cursorMove', this.state.cursor);
-            return true;
         }
-        return false;
+        return null;
+    }
+
+    /**
+     * Set the cursor from a viewport point.
+     * @returns {boolean} true if a row was hit
+     */
+    _setCursorFromPoint(clientX, clientY) {
+        const pos = this._positionFromPoint(clientX, clientY);
+        if (!pos) return false;
+        this.state.cursor.measure = pos.measure;
+        this.state.cursor.tick = pos.tick;
+        this.state.cursor.string = pos.string;
+        this.cursor.update();
+        this.state._emit('cursorMove', this.state.cursor);
+        return true;
+    }
+
+    /**
+     * Drag on the canvas selects a tick range (VISUAL mode) — the mouse
+     * path to phrase copy/paste/loop. A sub-threshold drag stays a click.
+     */
+    _handleDragStart(event) {
+        if (event.button !== 0) return;
+        if (!this.canvasContainer.contains(event.target)) return;
+        this._suppressNextClick = false; // stale flag guard
+        const pos = this._positionFromPoint(event.clientX, event.clientY);
+        if (!pos) return;
+        this._drag = { startPos: pos, x: event.clientX, y: event.clientY, active: false };
+    }
+
+    _handleDragMove(event) {
+        if (!this._drag) return;
+        if (!this._drag.active) {
+            const moved = Math.abs(event.clientX - this._drag.x)
+                        + Math.abs(event.clientY - this._drag.y);
+            if (moved < 5) return;
+            // Anchor the selection at the mousedown position
+            const s = this._drag.startPos;
+            this.state.cursor.measure = s.measure;
+            this.state.cursor.tick = s.tick;
+            this.state.cursor.string = s.string;
+            this.state.setMode(EditorMode.VISUAL); // selection anchored at cursor
+            this._drag.active = true;
+        }
+        const pos = this._positionFromPoint(event.clientX, event.clientY);
+        if (!pos) return;
+        this.state.cursor.measure = pos.measure;
+        this.state.cursor.tick = pos.tick;
+        this.state.cursor.string = pos.string;
+        // Selection extension lives in the keyboard's move methods — the
+        // drag path must extend it itself
+        if (this.state.selection) {
+            this.state.selection.end.measure = pos.measure;
+            this.state.selection.end.tick = pos.tick;
+            this.state.selection.end.string = pos.string;
+        }
+        this.cursor.update(); // redraws crosshair + selection highlight
+        this.state._emit('cursorMove', this.state.cursor);
+    }
+
+    _handleDragEnd() {
+        if (!this._drag) return;
+        if (this._drag.active) {
+            this._suppressNextClick = true; // don't let the click reset things
+            this.editorRoot.focus();
+        }
+        this._drag = null;
     }
 
     /**
@@ -828,18 +903,26 @@ export class OTFEditor {
             this._updatePlayButton();
         };
 
+        // Immediate feedback: instrument soundfonts load over the network
+        // on first play (~seconds) — show that instead of a dead button
+        const playBtn = this.statusBar.querySelector('.play-button');
+        if (playBtn) {
+            playBtn.textContent = '…';
+            playBtn.title = 'Loading instruments…';
+        }
+
         try {
             await this.player.play(otf, {
                 tempo: otf.metadata?.tempo || 120,
                 ...rangeOptions,
             });
             this.isPlaying = true;
-            this._updatePlayButton();
         } catch (error) {
             console.error('Playback error:', error);
             this.isPlaying = false;
-            this._updatePlayButton();
         }
+        if (playBtn) playBtn.title = 'Play/Pause';
+        this._updatePlayButton();
     }
 
     /**
@@ -1048,6 +1131,12 @@ export class OTFEditor {
         // Stop playback
         if (this.isPlaying) {
             this.stop();
+        }
+
+        // Remove document-level drag listeners
+        if (this._boundDragMove) {
+            document.removeEventListener('mousemove', this._boundDragMove);
+            document.removeEventListener('mouseup', this._boundDragEnd);
         }
 
         // Clean up components

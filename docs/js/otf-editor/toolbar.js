@@ -110,6 +110,21 @@ export class EditorToolbar {
                 <div class="button-group articulation-buttons"></div>
             </div>
             <div class="toolbar-separator"></div>
+            <div class="toolbar-section edit-section">
+                <button class="toolbar-button copy-button" title="Copy selection (y, Cmd+C)">
+                    <span class="button-icon">⧉</span>
+                </button>
+                <button class="toolbar-button cut-button" title="Cut selection (Cmd+X)">
+                    <span class="button-icon">✂</span>
+                </button>
+                <button class="toolbar-button paste-button" title="Paste at cursor (p, Cmd+V)">
+                    <span class="button-icon">📋</span>
+                </button>
+                <button class="toolbar-button loop-button" title="Loop selection / play from cursor (L)">
+                    <span class="button-icon">🔁</span>
+                </button>
+            </div>
+            <div class="toolbar-separator"></div>
             <div class="toolbar-section history-section">
                 <button class="toolbar-button undo-button" title="Undo (u)">
                     <span class="button-icon">↩</span>
@@ -129,6 +144,10 @@ export class EditorToolbar {
         this.gridToggleButton = this.element.querySelector('.grid-toggle-button');
         this.undoButton = this.element.querySelector('.undo-button');
         this.redoButton = this.element.querySelector('.redo-button');
+        this.copyButton = this.element.querySelector('.copy-button');
+        this.cutButton = this.element.querySelector('.cut-button');
+        this.pasteButton = this.element.querySelector('.paste-button');
+        this.loopButton = this.element.querySelector('.loop-button');
 
         // Create duration buttons
         const durationContainer = this.element.querySelector('.duration-buttons');
@@ -396,6 +415,29 @@ export class EditorToolbar {
 
         this.redoButton.addEventListener('click', () => {
             this.state.redo();
+        });
+
+        // Edit buttons (mouse path to the phrase workflow)
+        this.copyButton.addEventListener('click', () => {
+            this.state.copy();
+        });
+
+        this.cutButton.addEventListener('click', () => {
+            this.state.copy();
+            if (this.state.selection) {
+                this.state.deleteSelection();
+                this.state.setMode(EditorMode.NORMAL);
+            } else {
+                this.state.deleteTick();
+            }
+        });
+
+        this.pasteButton.addEventListener('click', () => {
+            this.state.paste();
+        });
+
+        this.loopButton.addEventListener('click', () => {
+            this.options.onLoop?.();
         });
     }
 

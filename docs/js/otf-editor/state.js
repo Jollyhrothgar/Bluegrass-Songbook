@@ -519,6 +519,19 @@ export class EditorState {
     }
 
     /**
+     * Delete every note in the current selection (undoable, ts-aware —
+     * goes through the facade, unlike the old raw-mutation path).
+     * The selection range is inclusive of its end slot.
+     */
+    deleteSelection() {
+        if (!this.selection) return false;
+        const { start, end } = this.selection.getNormalized(this.ticksPerMeasure);
+        const startAbs = this.facade.toAbs(start.measure, start.tick);
+        const endAbs = this.facade.toAbs(end.measure, end.tick) + 1;
+        return this.facade.deleteRange(startAbs, endAbs, { trackId: this.trackId });
+    }
+
+    /**
      * Undo last action
      */
     undo() {

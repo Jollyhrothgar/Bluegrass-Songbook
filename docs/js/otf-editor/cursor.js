@@ -65,6 +65,37 @@ export function svgPointForPosition(rowData, { measure, tick, string }, {
 }
 
 /**
+ * Selection highlight spans for one row: x-ranges (SVG units) covering
+ * the intersection of [startAbs, endAbs) with each measure's note area.
+ * Geoms carry their own startTick/ticks, so this is ts-aware and lands
+ * exactly where the renderer draws those ticks' notes.
+ *
+ * @param {Array} geoms - rowData.measures
+ * @param {number} startAbs - absolute tick, inclusive
+ * @param {number} endAbs - absolute tick, exclusive
+ * @returns {Array<{x0: number, x1: number, display: number}>}
+ */
+export function selectionRectsForRow(geoms, startAbs, endAbs) {
+    if (!geoms || geoms.length === 0 || endAbs <= startAbs) return [];
+    const rects = [];
+    for (const geom of geoms) {
+        const gStart = geom.startTick;
+        const gEnd = gStart + geom.ticks;
+        const from = Math.max(startAbs, gStart);
+        const to = Math.min(endAbs, gEnd);
+        if (to <= from) continue;
+        const noteX0 = (geom.noteX0 ?? geom.x + 15) + (geom.noteOffset ?? 0);
+        const noteW = geom.noteW ?? geom.width - 30;
+        rects.push({
+            x0: noteX0 + ((from - gStart) / geom.ticks) * noteW,
+            x1: noteX0 + ((to - gStart) / geom.ticks) * noteW,
+            display: geom.display,
+        });
+    }
+    return rects;
+}
+
+/**
  * Grid ("ruler") lines for one row from its real measure geometry: one
  * line per grid subdivision over each measure's OWN tick length, so a
  * short 2/4 measure gets half the lines of its 2/2 neighbors and every
@@ -190,6 +221,20 @@ export class EditorCursor {
         `;
         container.appendChild(this.gridOverlay);
 
+        // Selection overlay (between grid and cursor)
+        this.selectionOverlay = document.createElement('div');
+        this.selectionOverlay.className = 'editor-selection-overlay';
+        this.selectionOverlay.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            pointer-events: none;
+            z-index: 7;
+        `;
+        container.appendChild(this.selectionOverlay);
+
         // Cursor overlay (above grid) - expands to content size
         this.overlay = document.createElement('div');
         this.overlay.className = 'editor-cursor-overlay';
@@ -234,6 +279,9 @@ export class EditorCursor {
         // Listen for grid changes
         this.state.on('gridSubdivisionChange', () => this.renderGrid());
         this.state.on('gridToggle', () => this.renderGrid());
+
+        // Selection highlight follows mode changes (cleared on exit)
+        this.state.on('modeChange', () => this.renderSelection());
     }
 
     /**
@@ -584,6 +632,9 @@ export class EditorCursor {
     update() {
         if (!this.overlay) return;
 
+        // Selection highlight tracks every cursor/selection change
+        this.renderSelection();
+
         // Geometry-true placement first; uniform layoutInfo as fallback
         const pos = this._geometryPoint(this.state.cursor)
             || (this.layoutInfo ? this._calculatePosition() : null);
@@ -598,6 +649,52 @@ export class EditorCursor {
         this.cursorElement.style.top = `${pos.y - containerSize / 2}px`;
         this.cursorElement.style.width = `${containerSize}px`;
         this.cursorElement.style.height = `${containerSize}px`;
+    }
+
+    /**
+     * Draw the selection highlight from renderer geometry: one span per
+     * (row, measure) intersection, full staff height. Cleared when not
+     * in visual mode or when geometry is unavailable.
+     */
+    renderSelection() {
+        if (!this.selectionOverlay) return;
+        this.selectionOverlay.innerHTML = '';
+
+        const sel = this.state.selection;
+        const rowData = this.renderer?.rowData;
+        const facade = this.state.facade;
+        if (!sel || !rowData?.length || !facade) return;
+
+        const { start, end } = sel.getNormalized(this.state.ticksPerMeasure);
+        const startAbs = facade.toAbs(start.measure, start.tick);
+        // Inclusive of the end slot: extend by one grid step
+        const endAbs = facade.toAbs(end.measure, end.tick) + this.state.gridSubdivision;
+
+        const opt = this.renderer.options || {};
+        const topMargin = opt.topMargin ?? 30;
+        const stringSpacing = opt.stringSpacing ?? 15;
+        const staffH = (this.state.getStringCount() - 1) * stringSpacing + 12;
+
+        for (const row of rowData) {
+            const origin = this._svgToOverlay(row, 0, 0);
+            if (!origin) continue;
+            for (const rect of selectionRectsForRow(row.measures, startAbs, endAbs)) {
+                const div = document.createElement('div');
+                div.className = 'editor-selection-rect';
+                div.style.cssText = `
+                    position: absolute;
+                    left: ${origin.x + rect.x0 * origin.scaleX - 6}px;
+                    top: ${origin.y + (topMargin - 6) * origin.scaleY}px;
+                    width: ${(rect.x1 - rect.x0) * origin.scaleX + 12}px;
+                    height: ${staffH * origin.scaleY}px;
+                    background: var(--accent, #007bff);
+                    opacity: 0.14;
+                    border-radius: 3px;
+                    pointer-events: none;
+                `;
+                this.selectionOverlay.appendChild(div);
+            }
+        }
     }
 
     /**
@@ -921,6 +1018,10 @@ export class EditorCursor {
         if (this.overlay && this.overlay.parentNode) {
             this.overlay.parentNode.removeChild(this.overlay);
         }
+        if (this.selectionOverlay && this.selectionOverlay.parentNode) {
+            this.selectionOverlay.parentNode.removeChild(this.selectionOverlay);
+        }
+        this.selectionOverlay = null;
         this.gridOverlay = null;
         this.overlay = null;
         this.cursorElement = null;

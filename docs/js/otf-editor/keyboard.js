@@ -125,6 +125,26 @@ export class KeyboardHandler {
             return true;
         }
 
+        // System clipboard idioms for mouse users (not in annotation mode,
+        // which needs real text editing)
+        if (mod && (key === 'c' || key === 'x' || key === 'v')
+            && this.state.mode !== EditorMode.ANNOTATION) {
+            if (key === 'c') {
+                this.state.copy();
+            } else if (key === 'x') {
+                this.state.copy();
+                if (this.state.selection) {
+                    this._deleteSelection();
+                    this.state.setMode(EditorMode.NORMAL);
+                } else {
+                    this.state.deleteTick();
+                }
+            } else {
+                this.state.paste();
+            }
+            return true;
+        }
+
         // Shift+Space / Ctrl+Space - play from cursor (toggles off while
         // playing). The verify loop for phrase entry.
         if (key === ' ' && (shiftKey || mod)) {
@@ -569,8 +589,8 @@ export class KeyboardHandler {
             return true;
         }
 
-        // Delete selection
-        if (key === 'd') {
+        // Delete selection (d, or Delete/Backspace for mouse users)
+        if (key === 'd' || key === 'Delete' || key === 'Backspace') {
             this._deleteSelection();
             this.state.setMode(EditorMode.NORMAL);
             return true;
@@ -796,22 +816,9 @@ export class KeyboardHandler {
      * Delete selection
      */
     _deleteSelection() {
-        if (!this.state.selection) return;
-
-        const { start, end } = this.state.selection.getNormalized(this.state.ticksPerMeasure);
-        const notation = this.state.getNotation();
-        const startAbs = start.getAbsoluteTick(this.state.ticksPerMeasure);
-        const endAbs = end.getAbsoluteTick(this.state.ticksPerMeasure);
-
-        for (const measure of notation) {
-            measure.events = measure.events.filter(event => {
-                const absTick = (measure.measure - 1) * this.state.ticksPerMeasure + event.tick;
-                return absTick < startAbs || absTick > endAbs;
-            });
-        }
-
-        this.state.selection = null;
-        this.state._emit('change', this.state.otf);
+        // Facade-backed (ts-aware and UNDOABLE — the old raw mutation
+        // here silently bypassed history)
+        this.state.deleteSelection();
     }
 
     /**

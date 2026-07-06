@@ -8,11 +8,12 @@ import {
     positionFromSvgPoint,
     svgPointForPosition,
     gridLinesForRow,
+    selectionRectsForRow,
 } from '../../otf-editor/cursor.js';
 
 const geoms = [
-    { display: 29, x: 20, width: 400, ticks: 1920, noteX0: 35, noteW: 370, noteOffset: 0 },
-    { display: 30, x: 420, width: 220, ticks: 960, noteX0: 455, noteW: 170, noteOffset: 10 },
+    { display: 29, x: 20, width: 400, ticks: 1920, noteX0: 35, noteW: 370, noteOffset: 0, startTick: 0 },
+    { display: 30, x: 420, width: 220, ticks: 960, noteX0: 455, noteW: 170, noteOffset: 10, startTick: 1920 },
 ];
 
 const rowData = [
@@ -46,6 +47,41 @@ describe('svgPointForPosition', () => {
     it('returns null for measures not in any row', () => {
         expect(svgPointForPosition(rowData, { measure: 99, tick: 0, string: 1 }, opts)).toBeNull();
         expect(svgPointForPosition([], { measure: 29, tick: 0, string: 1 }, opts)).toBeNull();
+    });
+});
+
+describe('selectionRectsForRow', () => {
+    it('covers the intersection of the range with each measure\'s note area', () => {
+        // last half of m29 + first quarter of m30 (ticks 960..2400)
+        const rects = selectionRectsForRow(geoms, 960, 2400);
+        expect(rects).toHaveLength(2);
+        expect(rects[0]).toMatchObject({ display: 29 });
+        expect(rects[0].x0).toBeCloseTo(35 + 185);        // halfway into m29
+        expect(rects[0].x1).toBeCloseTo(35 + 370);        // to m29's end
+        expect(rects[1]).toMatchObject({ display: 30 });
+        expect(rects[1].x0).toBeCloseTo(465);             // m30 note start
+        expect(rects[1].x1).toBeCloseTo(465 + 85);        // half of the SHORT measure
+    });
+
+    it('skips measures outside the range', () => {
+        const rects = selectionRectsForRow(geoms, 0, 960);
+        expect(rects).toHaveLength(1);
+        expect(rects[0].display).toBe(29);
+    });
+
+    it('is ts-aware: tick spans scale by each measure\'s own length', () => {
+        // 480 ticks is a quarter of m29 but HALF of m30
+        const inLong = selectionRectsForRow(geoms, 0, 480)[0];
+        const inShort = selectionRectsForRow(geoms, 1920, 2400)[0];
+        expect(inLong.x1 - inLong.x0).toBeCloseTo(370 / 4);
+        expect(inShort.x1 - inShort.x0).toBeCloseTo(170 / 2);
+    });
+
+    it('returns empty for degenerate or empty input', () => {
+        expect(selectionRectsForRow(geoms, 500, 500)).toEqual([]);
+        expect(selectionRectsForRow(geoms, 900, 100)).toEqual([]);
+        expect(selectionRectsForRow([], 0, 100)).toEqual([]);
+        expect(selectionRectsForRow(null, 0, 100)).toEqual([]);
     });
 });
 
