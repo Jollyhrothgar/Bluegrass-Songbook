@@ -232,9 +232,14 @@ priority order (impact × cost):
    clears selection in VISUAL. Fixed en route: keyboard's
    _deleteSelection bypassed undo history (raw mutation) — now
    state.deleteSelection() via facade.deleteRange. Mike's direction
-   2026-07-05: mouse interaction is the priority track now. Still
-   open mouse-side: drag-MOVE of a selection, right-click context
-   menu, paste-transpose.
+   2026-07-05: mouse interaction is the priority track now.
+   ALSO DONE (44f934cfc): drag-MOVE — grab inside the selection
+   highlight, dashed drop preview, one-undo facade.moveRange
+   (clipboard-preserving), selection follows the phrase; right-click
+   context menu (context-menu.js, injected actions) with Copy/Cut/
+   Paste/Delete/Loop-or-Play enablement. Still open mouse-side:
+   paste-transpose, note-drag (move a single note by its head),
+   double-click fret pad polish.
 3. **Chord entry without advancing** — a pinch (two notes, same tick)
    costs ArrowLeft + j/k + digit today because entry auto-advances.
    Shift+digit = insert on current tick WITHOUT advance (then j/k,
