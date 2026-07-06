@@ -253,3 +253,35 @@ describe('TabRenderer backward compatibility (no timing arg)', () => {
         expect(r.rowData[0].measures[1].startTick).toBe(1920);
     });
 });
+
+describe('TabRenderer measureWidthFloor (editor auto-expand for fine grids)', () => {
+    const notation = [
+        { measure: 1, events: [note(0)] },
+        { measure: 2, events: [note(0)] },
+    ];
+
+    it('overrides maxMeasureWidth when the floor is higher', () => {
+        const r = makeRenderer();
+        r.options.measureWidthFloor = 400; // > maxMeasureWidth 288
+        r.render(TRACK, notation, 480, '4/4');
+        expect(r.rowData[0].measures[0].width).toBeGreaterThanOrEqual(400);
+    });
+
+    it('reduces measures per row rather than shrinking measures', () => {
+        const r = makeRenderer();
+        r.options.measureWidthFloor = 400; // 720px available → 1 per row
+        r.render(TRACK, notation, 480, '4/4');
+        expect(r.rowData.length).toBe(2); // one measure per row
+    });
+
+    it('has no effect when measures are already wide enough', () => {
+        const a = makeRenderer();
+        a.render(TRACK, notation, 480, '4/4');
+        const baseline = a.rowData[0].measures[0].width;
+
+        const b = makeRenderer();
+        b.options.measureWidthFloor = 100; // below the computed width
+        b.render(TRACK, notation, 480, '4/4');
+        expect(b.rowData[0].measures[0].width).toBe(baseline);
+    });
+});

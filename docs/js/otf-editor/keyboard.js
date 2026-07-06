@@ -22,9 +22,15 @@ export class KeyboardHandler {
         this.highFretMode = false;
         this.highFretBuffer = '';
 
-        // Fret entry buffer for insert mode
+        // Fret entry buffer for insert mode (legacy; digits now insert
+        // immediately — kept so external checks read an empty string)
         this.fretBuffer = '';
         this.fretTimeout = null;
+
+        // Two-digit refine window: after typing 1 or 2, a quick second
+        // digit upgrades the just-inserted note in place (1,2 → 12)
+        this.fretRefine = null;
+        this.fretRefineTimeout = null;
 
         // Bound handler for easy removal
         this._boundHandler = this.handleKeyDown.bind(this);
@@ -161,12 +167,46 @@ export class KeyboardHandler {
                     this.highFretBuffer = '';
                 }
                 return true;
-            } else {
-                // Quick fret entry with buffering for two-digit frets
-                this.fretBuffer += key;
-                this._scheduleFretCommit();
-                return true;
             }
+
+            const digit = parseInt(key, 10);
+
+            // Two-digit refine: "1","2" typed quickly still means fret 12
+            // (as before), but the first digit was VISIBLE immediately —
+            // the quick second digit upgrades that note in place.
+            if (this.fretRefine) {
+                const r = this.fretRefine;
+                const combined = r.fret * 10 + digit;
+                this._clearFretRefine();
+                if (combined <= 24) {
+                    this._record('insertNote', {
+                        measure: r.measure, tick: r.tick, string: r.string,
+                        fret: combined, duration: r.duration, tech: r.tech,
+                    });
+                    this.state.facade.insertNote({
+                        measure: r.measure, tick: r.tick, string: r.string,
+                        fret: combined, duration: r.duration, tech: r.tech,
+                        trackId: this.state.trackId,
+                    });
+                    this.cursor.update();
+                    return true;
+                }
+                // Can't combine — fall through to a fresh insert
+            }
+
+            // Insert immediately (no timeout latency); open a refine
+            // window only when this digit can prefix a fret ≤ 24.
+            const seed = {
+                ...this._cursorParams(),
+                fret: digit,
+                duration: this.state.currentDuration,
+                tech: this.state.pendingArticulation || null,
+            };
+            this._insertFret(digit);
+            if (digit === 1 || digit === 2) {
+                this._setFretRefine(seed);
+            }
+            return true;
         }
 
         // High fret mode (f then two digits for frets 10+)
@@ -233,11 +273,23 @@ export class KeyboardHandler {
             return true;
         }
 
-        // Backspace - delete note and move back
+        // Delete - remove the note under the cursor, stay put
+        if (key === 'Delete') {
+            this._commitFretBuffer();
+            this._record('deleteNote', this._cursorParams());
+            this.state.deleteNote();
+            return true;
+        }
+
+        // Backspace (the Mac "delete" key): remove the note under the
+        // cursor; on an empty slot, step back and delete there
+        // (typewriter-style, so it erases the note you just entered)
         if (key === 'Backspace') {
             this._commitFretBuffer();
-            this._record('moveCursorByDuration', { direction: -1 });
-            this.cursor.moveByDuration(-1);
+            if (!this.state.getNoteAtCursor()) {
+                this._record('moveCursorByDuration', { direction: -1 });
+                this.cursor.moveByDuration(-1);
+            }
             this._record('deleteNote', this._cursorParams());
             this.state.deleteNote();
             return true;
@@ -604,24 +656,38 @@ export class KeyboardHandler {
             clearTimeout(this.pendingTimeout);
             this.pendingTimeout = null;
         }
+        // Escape also settles a pending two-digit refine
+        this._clearFretRefine();
     }
 
     /**
      * Schedule fret buffer commit
      */
-    _scheduleFretCommit() {
-        if (this.fretTimeout) {
-            clearTimeout(this.fretTimeout);
-        }
-        this.fretTimeout = setTimeout(() => {
-            this._commitFretBuffer();
+    _setFretRefine(seed) {
+        this._clearFretRefine();
+        this.fretRefine = seed;
+        this.fretRefineTimeout = setTimeout(() => {
+            this.fretRefine = null;
+            this.fretRefineTimeout = null;
         }, 300);
     }
 
+    _clearFretRefine() {
+        this.fretRefine = null;
+        if (this.fretRefineTimeout) {
+            clearTimeout(this.fretRefineTimeout);
+            this.fretRefineTimeout = null;
+        }
+    }
+
     /**
-     * Commit fret buffer as note
+     * Settle fret entry (legacy name). Digits insert immediately now;
+     * this closes any pending two-digit refine window so navigation and
+     * edit keys can never combine digits across a cursor move, and
+     * flushes the legacy buffer if anything external put digits there.
      */
     _commitFretBuffer() {
+        this._clearFretRefine();
         if (this.fretBuffer) {
             const fret = parseInt(this.fretBuffer, 10);
             this._insertFret(fret);

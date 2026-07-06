@@ -120,6 +120,9 @@ export class TabRenderer {
             minMeasureWidth: 138,     // Minimum width per measure (increased 15% for triplet legibility)
             maxMeasureWidth: 288,     // Maximum width per measure
             targetMeasureWidth: 180,  // Preferred width per measure
+            measureWidthFloor: 0,     // Hard lower bound that OVERRIDES maxMeasureWidth
+                                      // (editor sets this so fine entry grids get room;
+                                      // rows may exceed the container and scroll)
             measuresPerRow: 'auto',   // 'auto' or number (1-8)
             leftMargin: 50,
             topMargin: 40,
@@ -184,6 +187,7 @@ export class TabRenderer {
                 opt.minMeasureWidth,
                 Math.min(opt.maxMeasureWidth, availableWidth / this._computedMeasuresPerRow)
             );
+            this._applyMeasureWidthFloor(availableWidth);
             return;
         }
 
@@ -203,6 +207,22 @@ export class TabRenderer {
 
         this._computedMeasuresPerRow = measuresPerRow;
         this._computedMeasureWidth = measureWidth;
+        this._applyMeasureWidthFloor(availableWidth);
+    }
+
+    /**
+     * Enforce measureWidthFloor: a hard lower bound on measure width
+     * that beats maxMeasureWidth. Used by the editor to auto-expand
+     * measures when a fine entry grid (1/16, 1/32) needs breathing room
+     * — fewer measures per row, scrolling if a single measure exceeds
+     * the container.
+     */
+    _applyMeasureWidthFloor(availableWidth) {
+        const floor = this.options.measureWidthFloor;
+        if (!floor || this._computedMeasureWidth >= floor) return;
+        this._computedMeasureWidth = floor;
+        this._computedMeasuresPerRow = Math.max(
+            1, Math.min(this._computedMeasuresPerRow, Math.floor(availableWidth / floor)));
     }
 
     /**

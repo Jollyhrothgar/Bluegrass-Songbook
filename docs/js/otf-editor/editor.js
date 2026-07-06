@@ -318,6 +318,11 @@ export class OTFEditor {
             this.options.onChange?.(this.state.otf);
         });
 
+        // Grid density changes measure width (auto-expand) — re-render
+        this.state.on('gridSubdivisionChange', () => {
+            this._render();
+        });
+
         this.state.on('cursorMove', () => {
             this._updateStatusBar();
         });
@@ -491,8 +496,24 @@ export class OTFEditor {
         const ticksPerBeat = this.state.otf.timing?.ticks_per_beat || TICKS_PER_BEAT;
         const timeSignature = this.state.otf.metadata?.time_signature || '4/4';
 
+        // Auto-expand for fine entry grids: guarantee each grid slot a
+        // minimum pixel width so 1/16 and 1/32 grids stay usable
+        // (measureWidthFloor beats maxMeasureWidth; rows scroll if needed)
+        const MIN_PX_PER_GRID_SLOT = 9;
+        const defaultTicks = this.state.facade.measureTiming.defaultTicks;
+        const slots = defaultTicks / this.state.gridSubdivision;
+        this.renderer.options.measureWidthFloor =
+            Math.ceil(slots * MIN_PX_PER_GRID_SLOT + 30); // +30 = note-area margins
+
         this.renderer.render(track, notation, ticksPerBeat, timeSignature,
             this.state.facade.timing);
+
+        // Geometry-based overlays can refresh synchronously — reading
+        // rects after the DOM mutation forces reflow, so the grid and
+        // cursor never lag the tablature by a frame (rAF is throttled
+        // in background tabs and always a frame or two late).
+        this.cursor.update();
+        this.cursor.renderGrid();
 
         // Update cursor layout info after DOM is fully painted
         // Use double-RAF to ensure layout is complete

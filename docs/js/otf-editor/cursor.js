@@ -393,6 +393,9 @@ export class EditorCursor {
         // Check if grid should be visible
         if (!this.state.showGrid) return;
 
+        // Keep overlay extents in sync with the (possibly re-laid-out) content
+        this._updateOverlaySize();
+
         // Geometry-true grid from renderer rowData when available
         if (this._renderGridFromGeometry()) return;
 

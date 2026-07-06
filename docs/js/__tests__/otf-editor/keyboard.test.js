@@ -541,34 +541,82 @@ describe('KeyboardHandler', () => {
             vi.useRealTimers();
         });
 
-        it('accumulates digits in fret buffer', () => {
+        it('inserts the first digit immediately — no timeout latency', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('7'));
+            // No advanceTimersByTime: the note must already be there
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(7);
+        });
+
+        it('a quick second digit refines to a two-digit fret IN PLACE', () => {
+            state.cursor.tick = 0;
             keyboard.handleKeyDown(createKeyEvent('1'));
-            expect(keyboard.fretBuffer).toBe('1');
-
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(1); // visible at once
             keyboard.handleKeyDown(createKeyEvent('2'));
-            expect(keyboard.fretBuffer).toBe('12');
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(12); // refined, same slot
+            state.cursor.tick = 240;
+            expect(state.getNoteAtCursor()).toBeFalsy(); // no stray second note
         });
 
-        it('commits buffer after timeout', () => {
+        it('after the refine window, digits are separate notes', () => {
             state.cursor.tick = 0;
-            keyboard.handleKeyDown(createKeyEvent('7'));
-            expect(keyboard.fretBuffer).toBe('7');
-
+            keyboard.handleKeyDown(createKeyEvent('1'));
             vi.advanceTimersByTime(350);
-            expect(keyboard.fretBuffer).toBe('');
-            // Cursor auto-advanced, check note at original position
+            keyboard.handleKeyDown(createKeyEvent('2'));
             state.cursor.tick = 0;
-            expect(state.getNoteAtCursor()?.f).toBe(7);
+            expect(state.getNoteAtCursor()?.f).toBe(1);
+            state.cursor.tick = 240;
+            expect(state.getNoteAtCursor()?.f).toBe(2);
         });
 
-        it('space commits buffer immediately and advances', () => {
-            keyboard.handleKeyDown(createKeyEvent('7'));
-            vi.advanceTimersByTime(350); // commit the 7
-
-            // Cursor should have auto-advanced, go back to check note
-            const tick = state.cursor.tick;
+        it('digits that cannot start a fret ≤ 24 never combine', () => {
             state.cursor.tick = 0;
-            expect(state.getNoteAtCursor()?.f).toBe(7);
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(5);
+            state.cursor.tick = 240;
+            expect(state.getNoteAtCursor()?.f).toBe(5);
+        });
+
+        it('combinations above fret 24 stay separate notes', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('2'));
+            keyboard.handleKeyDown(createKeyEvent('9'));
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(2);
+            state.cursor.tick = 240;
+            expect(state.getNoteAtCursor()?.f).toBe(9);
+        });
+
+        it('navigation between digits cancels the refine', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('1'));
+            keyboard.handleKeyDown(createKeyEvent('ArrowRight'));
+            keyboard.handleKeyDown(createKeyEvent('2'));
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(1); // not combined to 12
+        });
+
+        it('Delete removes the note under the cursor and stays put', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            state.cursor.tick = 0; // back onto the note
+            keyboard.handleKeyDown(createKeyEvent('Delete'));
+            expect(state.getNoteAtCursor()).toBeFalsy();
+            expect(state.cursor.tick).toBe(0);
+        });
+
+        it('Backspace (Mac delete key) removes the note under the cursor', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('Backspace'));
+            expect(state.getNoteAtCursor()).toBeFalsy();
+            expect(state.cursor.tick).toBe(0); // stays on the slot
         });
 
         it('high fret mode allows entering frets 10+', () => {
