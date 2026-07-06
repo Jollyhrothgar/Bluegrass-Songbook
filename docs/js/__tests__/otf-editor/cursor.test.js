@@ -301,18 +301,76 @@ describe('EditorCursor', () => {
     });
 
     describe('moveByDuration', () => {
-        it('moves forward by grid subdivision', () => {
-            state.gridSubdivision = DURATIONS.quarter;
+        it('moves forward by the SELECTED duration (the working increment)', () => {
+            state.currentDuration = DURATIONS.quarter;
+            state.gridSubdivision = DURATIONS.sixteenth; // ruler ≠ increment
             state.cursor.tick = 0;
             cursor.moveByDuration(1);
             expect(state.cursor.tick).toBe(480);
         });
 
-        it('moves backward by grid subdivision', () => {
-            state.gridSubdivision = DURATIONS.eighth;
+        it('moves backward by the selected duration', () => {
+            state.currentDuration = DURATIONS.eighth;
             state.cursor.tick = 480;
             cursor.moveByDuration(-1);
             expect(state.cursor.tick).toBe(240);
+        });
+    });
+
+    describe('ts-aware navigation (short measures)', () => {
+        // 2/2 tune with a 2/4 measure at m3 — the 27493 shape. The old
+        // uniform math let the cursor park at m3 ticks 960..1919 (a
+        // phantom half of the short measure); inserts there rendered
+        // past the barline into m4's signature glyph.
+        const tsOtf = () => ({
+            otf_version: '1.0',
+            metadata: {
+                title: 'TS', time_signature: '2/2',
+                time_signature_changes: [{ measure: 3, time_signature: '2/4' }],
+            },
+            timing: { ticks_per_beat: 480 },
+            tracks: [{ id: 'banjo', instrument: '5-string-banjo', tuning: ['D4', 'B3', 'G3', 'D3', 'G4'] }],
+            notation: { banjo: [1, 2, 3, 4, 5].map(m => ({ measure: m, events: [] })) },
+        });
+
+        let tsState, tsCursor;
+        beforeEach(() => {
+            tsState = new EditorState({ otf: tsOtf() });
+            tsCursor = new EditorCursor(tsState);
+        });
+
+        it('stepping past a short measure\'s end lands in the NEXT measure', () => {
+            tsState.cursor.measure = 3;
+            tsState.cursor.tick = 720;
+            tsState.currentDuration = DURATIONS.eighth;
+            tsCursor.moveByDuration(1); // 720 + 240 = 960 = end of the 2/4
+            expect(tsState.cursor.measure).toBe(4);
+            expect(tsState.cursor.tick).toBe(0);
+        });
+
+        it('cannot park in the phantom back half of a short measure', () => {
+            tsState.cursor.measure = 3;
+            tsState.cursor.tick = 0;
+            tsState.currentDuration = DURATIONS.half; // 960 = whole short measure
+            tsCursor.moveByDuration(1);
+            expect(tsState.cursor.measure).toBe(4);
+            expect(tsState.cursor.tick).toBe(0);
+        });
+
+        it('stepping backward across the seam is symmetric', () => {
+            tsState.cursor.measure = 4;
+            tsState.cursor.tick = 0;
+            tsState.currentDuration = DURATIONS.eighth;
+            tsCursor.moveByDuration(-1);
+            expect(tsState.cursor.measure).toBe(3);
+            expect(tsState.cursor.tick).toBe(720);
+        });
+
+        it('$ (measure end) uses the short measure\'s own length', () => {
+            tsState.cursor.measure = 3;
+            tsState.currentDuration = DURATIONS.eighth;
+            tsCursor.moveToMeasureEnd();
+            expect(tsState.cursor.tick).toBe(960 - 240);
         });
     });
 

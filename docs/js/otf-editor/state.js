@@ -451,11 +451,16 @@ export class EditorState {
     }
 
     /**
-     * Set current duration
+     * Set current duration. The grid ruler follows the selected
+     * duration (the "working increment") — explicit grid buttons can
+     * still override it until the next duration change.
      */
     setDuration(duration) {
         this.currentDuration = duration;
         this._emit('durationChange', duration);
+        if (this.gridSubdivision !== duration) {
+            this.setGridSubdivision(duration);
+        }
     }
 
     /**
@@ -466,6 +471,9 @@ export class EditorState {
         this.tripletCount = 0;
         if (this.tripletMode) {
             this.currentDuration = DURATIONS.tripletEighth;
+            if (this.gridSubdivision !== DURATIONS.tripletEighth) {
+                this.setGridSubdivision(DURATIONS.tripletEighth);
+            }
         }
         this._emit('tripletModeChange', this.tripletMode);
     }

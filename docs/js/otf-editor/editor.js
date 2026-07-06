@@ -143,6 +143,12 @@ export class OTFEditor {
         // Initialize components
         this.toolbar.render(this.toolbarContainer);
 
+        // Toolbar buttons must not steal keyboard focus — after any
+        // toolbar click, keys should keep driving the editor
+        this.toolbarContainer.addEventListener('click', () => {
+            this.editorRoot.focus();
+        });
+
         // Create renderer wrapper
         this.rendererContainer = document.createElement('div');
         this.rendererContainer.className = 'editor-renderer';

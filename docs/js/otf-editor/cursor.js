@@ -797,16 +797,30 @@ export class EditorCursor {
      */
     moveByTicks(deltaTicks) {
         const cursor = this.state.cursor;
-        const ticksPerMeasure = this.state.ticksPerMeasure;
-        const measureCount = this.state.getMeasureCount();
+        const facade = this.state.facade;
 
-        let absTick = cursor.getAbsoluteTick(ticksPerMeasure) + deltaTicks;
-
-        // Clamp to valid range
-        const maxTick = measureCount * ticksPerMeasure;
-        absTick = Math.max(0, Math.min(absTick, maxTick - 1));
-
-        cursor.setFromAbsoluteTick(absTick, ticksPerMeasure);
+        if (facade) {
+            // Ts-aware: absolute ticks accumulate each measure's OWN
+            // length, so the cursor can never park in the phantom back
+            // half of a short 2/4 measure (which stored out-of-range
+            // notes that rendered past the barline).
+            let absTick = facade.toAbs(cursor.measure, cursor.tick) + deltaTicks;
+            const measureCount = this.state.getMeasureCount();
+            const maxTick = facade.toAbs(measureCount, 0)
+                + facade.ticksFor(measureCount);
+            absTick = Math.max(0, Math.min(absTick, maxTick - 1));
+            const loc = facade.locate(absTick);
+            cursor.measure = loc.measure;
+            cursor.tick = loc.tick;
+        } else {
+            // Uniform fallback (no facade in some unit-test setups)
+            const ticksPerMeasure = this.state.ticksPerMeasure;
+            const measureCount = this.state.getMeasureCount();
+            let absTick = cursor.getAbsoluteTick(ticksPerMeasure) + deltaTicks;
+            const maxTick = measureCount * ticksPerMeasure;
+            absTick = Math.max(0, Math.min(absTick, maxTick - 1));
+            cursor.setFromAbsoluteTick(absTick, ticksPerMeasure);
+        }
 
         // Update selection in visual mode
         if (this.state.mode === 'visual' && this.state.selection) {
@@ -822,7 +836,10 @@ export class EditorCursor {
      * @param {number} direction - 1 for forward, -1 for backward
      */
     moveByDuration(direction) {
-        this.moveByTicks(direction * this.state.gridSubdivision);
+        // The selected note duration IS the working increment: arrows,
+        // Space, and post-insert auto-advance all step by it. (The grid
+        // is a visual ruler that follows the duration by default.)
+        this.moveByTicks(direction * this.state.currentDuration);
     }
 
     /**
@@ -887,8 +904,12 @@ export class EditorCursor {
             const lastEvent = measure.events[measure.events.length - 1];
             this.state.cursor.tick = lastEvent.tick;
         } else {
-            // Move to last tick before next measure
-            this.state.cursor.tick = this.state.ticksPerMeasure - this.state.currentDuration;
+            // Last increment before the next measure — this measure's
+            // OWN length (ts-aware), not the uniform default
+            const measureTicks = this.state.facade
+                ? this.state.facade.ticksFor(this.state.cursor.measure)
+                : this.state.ticksPerMeasure;
+            this.state.cursor.tick = Math.max(0, measureTicks - this.state.currentDuration);
         }
         this.update();
         this.state._emit('cursorMove', this.state.cursor);

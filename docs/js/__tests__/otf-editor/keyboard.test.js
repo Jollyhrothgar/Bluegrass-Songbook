@@ -619,6 +619,23 @@ describe('KeyboardHandler', () => {
             expect(state.cursor.tick).toBe(0); // stays on the slot
         });
 
+        it('arrows step by the SELECTED duration, not the grid', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('q')); // quarter
+            state.setGridSubdivision(DURATIONS.sixteenth); // finer ruler
+            keyboard.handleKeyDown(createKeyEvent('ArrowRight'));
+            expect(state.cursor.tick).toBe(DURATIONS.quarter);
+            keyboard.handleKeyDown(createKeyEvent('ArrowLeft'));
+            expect(state.cursor.tick).toBe(0);
+        });
+
+        it('auto-advance after a note follows the selected duration', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('q')); // quarter
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            expect(state.cursor.tick).toBe(DURATIONS.quarter);
+        });
+
         it('Cmd+C copies, Cmd+V pastes at cursor', () => {
             state.cursor.tick = 0;
             keyboard.handleKeyDown(createKeyEvent('5'));

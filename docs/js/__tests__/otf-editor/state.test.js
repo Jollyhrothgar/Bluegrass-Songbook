@@ -671,6 +671,28 @@ describe('EditorState', () => {
         });
     });
 
+    describe('duration drives the working increment', () => {
+        it('setDuration syncs the grid ruler', () => {
+            state.setDuration(DURATIONS.quarter);
+            expect(state.gridSubdivision).toBe(DURATIONS.quarter);
+            state.setDuration(DURATIONS.sixteenth);
+            expect(state.gridSubdivision).toBe(DURATIONS.sixteenth);
+        });
+
+        it('explicit grid choice survives until the next duration change', () => {
+            state.setDuration(DURATIONS.quarter);
+            state.setGridSubdivision(DURATIONS.sixteenth); // manual override
+            expect(state.gridSubdivision).toBe(DURATIONS.sixteenth);
+            state.setDuration(DURATIONS.eighth); // re-syncs
+            expect(state.gridSubdivision).toBe(DURATIONS.eighth);
+        });
+
+        it('triplet mode syncs the grid to triplet eighths', () => {
+            state.toggleTripletMode();
+            expect(state.gridSubdivision).toBe(DURATIONS.tripletEighth);
+        });
+    });
+
     describe('trackId option (multi-track OTFs)', () => {
         const multiTrackOtf = () => ({
             otf_version: '1.0',
