@@ -698,6 +698,49 @@ export class EditorCursor {
     }
 
     /**
+     * Dashed outline preview of a phrase-move drop range. Lives in its
+     * own elements so selection redraws don't wipe it (and vice versa).
+     */
+    renderMovePreview(startAbs, endAbs) {
+        this.clearMovePreview();
+        const rowData = this.renderer?.rowData;
+        if (!rowData?.length || !this.overlay) return;
+
+        const opt = this.renderer.options || {};
+        const topMargin = opt.topMargin ?? 30;
+        const stringSpacing = opt.stringSpacing ?? 15;
+        const staffH = (this.state.getStringCount() - 1) * stringSpacing + 12;
+
+        this._movePreviewEls = [];
+        for (const row of rowData) {
+            const origin = this._svgToOverlay(row, 0, 0);
+            if (!origin) continue;
+            for (const rect of selectionRectsForRow(row.measures, startAbs, endAbs)) {
+                const div = document.createElement('div');
+                div.className = 'editor-move-preview';
+                div.style.cssText = `
+                    position: absolute;
+                    left: ${origin.x + rect.x0 * origin.scaleX - 6}px;
+                    top: ${origin.y + (topMargin - 6) * origin.scaleY}px;
+                    width: ${(rect.x1 - rect.x0) * origin.scaleX + 12}px;
+                    height: ${staffH * origin.scaleY}px;
+                    border: 2px dashed var(--accent, #007bff);
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                    pointer-events: none;
+                `;
+                this.overlay.appendChild(div);
+                this._movePreviewEls.push(div);
+            }
+        }
+    }
+
+    clearMovePreview() {
+        for (const el of this._movePreviewEls || []) el.remove();
+        this._movePreviewEls = [];
+    }
+
+    /**
      * Update selection highlight for visual mode
      */
     _updateSelectionHighlight(cursorPos) {

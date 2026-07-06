@@ -9,6 +9,7 @@ import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar } from './toolbar.js';
 import { NoteEntryPopover } from './popover.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
+import { ContextMenu } from './context-menu.js';
 import { EditEventRecorder } from './recorder.js';
 
 /**
@@ -64,6 +65,21 @@ export class OTFEditor {
         });
         this.toolbar = new EditorToolbar(this.state, {
             onLoop: () => this.loopSelection(),
+        });
+        this.contextMenu = new ContextMenu({
+            copy: () => this.state.copy(),
+            cut: () => this._cutSelectionOrTick(),
+            paste: () => this.state.paste(),
+            delete: () => {
+                if (this.state.selection) {
+                    this.state.deleteSelection();
+                    this.state.setMode(EditorMode.NORMAL);
+                } else {
+                    this.state.deleteNote();
+                }
+            },
+            loop: () => this.loopSelection(),
+            play: () => this.playFromCursor(),
         });
         this.popover = new NoteEntryPopover(this.state, {
             onInsert: (note) => this._handlePopoverInsert(note),
@@ -359,6 +375,33 @@ export class OTFEditor {
             this._handleCanvasDblClick(e);
         });
 
+        // Right-click: context menu at the pointer. Outside the current
+        // selection the cursor moves there first (menu acts on the spot);
+        // inside it, the selection is preserved (menu acts on the phrase).
+        this.canvasContainer.addEventListener('contextmenu', (e) => {
+            if (!this.canvasContainer.contains(e.target)) return;
+            e.preventDefault();
+            const pos = this._positionFromPoint(e.clientX, e.clientY);
+            if (pos) {
+                const sel = this._selectionAbsRange();
+                const abs = this.state.facade.toAbs(pos.measure, pos.tick);
+                if (!sel || abs < sel.startAbs || abs >= sel.endAbs) {
+                    if (this.state.mode === EditorMode.VISUAL) {
+                        this.state.setMode(EditorMode.NORMAL);
+                    }
+                    this.state.cursor.measure = pos.measure;
+                    this.state.cursor.tick = pos.tick;
+                    this.state.cursor.string = pos.string;
+                    this.cursor.update();
+                    this.state._emit('cursorMove', this.state.cursor);
+                }
+            }
+            this.contextMenu.open(e.clientX, e.clientY, {
+                hasSelection: !!this.state.selection,
+                hasClipboard: !!(this.state.clipboard?.data?.length),
+            });
+        });
+
         // Drag-select (mouse path to phrase selection). Move/up listen on
         // the document so drags survive leaving the canvas.
         this._drag = null;
@@ -454,8 +497,37 @@ export class OTFEditor {
     }
 
     /**
-     * Drag on the canvas selects a tick range (VISUAL mode) — the mouse
-     * path to phrase copy/paste/loop. A sub-threshold drag stays a click.
+     * Cut: the selection when there is one, else the event at the cursor.
+     */
+    _cutSelectionOrTick() {
+        this.state.copy();
+        if (this.state.selection) {
+            this.state.deleteSelection();
+            this.state.setMode(EditorMode.NORMAL);
+        } else {
+            this.state.deleteTick();
+        }
+    }
+
+    /**
+     * The current selection as an absolute tick range (end inclusive of
+     * its slot — extended one grid step), or null.
+     */
+    _selectionAbsRange() {
+        if (!this.state.selection) return null;
+        const { start, end } = this.state.selection.getNormalized(this.state.ticksPerMeasure);
+        const f = this.state.facade;
+        return {
+            startAbs: f.toAbs(start.measure, start.tick),
+            endAbs: f.toAbs(end.measure, end.tick) + this.state.gridSubdivision,
+        };
+    }
+
+    /**
+     * Drag on the canvas: from empty space it selects a tick range
+     * (VISUAL); from INSIDE the current selection it MOVES the phrase
+     * (dashed preview, drop = one undoable facade.moveRange). A
+     * sub-threshold drag stays a click.
      */
     _handleDragStart(event) {
         if (event.button !== 0) return;
@@ -463,7 +535,22 @@ export class OTFEditor {
         this._suppressNextClick = false; // stale flag guard
         const pos = this._positionFromPoint(event.clientX, event.clientY);
         if (!pos) return;
-        this._drag = { startPos: pos, x: event.clientX, y: event.clientY, active: false };
+
+        const sel = this._selectionAbsRange();
+        if (sel) {
+            const grabAbs = this.state.facade.toAbs(pos.measure, pos.tick);
+            if (grabAbs >= sel.startAbs && grabAbs < sel.endAbs) {
+                this._drag = {
+                    mode: 'move', grabAbs, sel,
+                    x: event.clientX, y: event.clientY, active: false,
+                };
+                return;
+            }
+        }
+        this._drag = {
+            mode: 'select', startPos: pos,
+            x: event.clientX, y: event.clientY, active: false,
+        };
     }
 
     _handleDragMove(event) {
@@ -472,16 +559,35 @@ export class OTFEditor {
             const moved = Math.abs(event.clientX - this._drag.x)
                         + Math.abs(event.clientY - this._drag.y);
             if (moved < 5) return;
-            // Anchor the selection at the mousedown position
-            const s = this._drag.startPos;
-            this.state.cursor.measure = s.measure;
-            this.state.cursor.tick = s.tick;
-            this.state.cursor.string = s.string;
-            this.state.setMode(EditorMode.VISUAL); // selection anchored at cursor
+            if (this._drag.mode === 'select') {
+                // Anchor the selection at the mousedown position
+                const s = this._drag.startPos;
+                this.state.cursor.measure = s.measure;
+                this.state.cursor.tick = s.tick;
+                this.state.cursor.string = s.string;
+                this.state.setMode(EditorMode.VISUAL); // selection anchored at cursor
+            }
             this._drag.active = true;
         }
+
         const pos = this._positionFromPoint(event.clientX, event.clientY);
         if (!pos) return;
+
+        if (this._drag.mode === 'move') {
+            // Escape may have cleared the selection mid-drag — abort
+            if (!this.state.selection) {
+                this.cursor.clearMovePreview();
+                this._drag = null;
+                return;
+            }
+            const { grabAbs, sel } = this._drag;
+            const posAbs = this.state.facade.toAbs(pos.measure, pos.tick);
+            const destAbs = Math.max(0, posAbs - (grabAbs - sel.startAbs));
+            this._drag.destAbs = destAbs;
+            this.cursor.renderMovePreview(destAbs, destAbs + (sel.endAbs - sel.startAbs));
+            return;
+        }
+
         this.state.cursor.measure = pos.measure;
         this.state.cursor.tick = pos.tick;
         this.state.cursor.string = pos.string;
@@ -498,11 +604,33 @@ export class OTFEditor {
 
     _handleDragEnd() {
         if (!this._drag) return;
-        if (this._drag.active) {
-            this._suppressNextClick = true; // don't let the click reset things
-            this.editorRoot.focus();
-        }
+        const drag = this._drag;
         this._drag = null;
+        if (!drag.active) return;
+
+        this._suppressNextClick = true; // don't let the click reset things
+        this.editorRoot.focus();
+
+        if (drag.mode !== 'move') return;
+        this.cursor.clearMovePreview();
+        if (drag.destAbs == null || !this.state.selection) return;
+
+        const { sel } = drag;
+        if (!this.state.facade.moveRange(sel.startAbs, sel.endAbs, drag.destAbs)) return;
+
+        // Selection (and cursor) follow the phrase to its new home
+        const span = sel.endAbs - sel.startAbs;
+        const f = this.state.facade;
+        const s = f.locate(drag.destAbs);
+        const e = f.locate(drag.destAbs + span - this.state.gridSubdivision);
+        this.state.cursor.measure = s.measure;
+        this.state.cursor.tick = s.tick;
+        this.state.selection.start.measure = s.measure;
+        this.state.selection.start.tick = s.tick;
+        this.state.selection.end.measure = e.measure;
+        this.state.selection.end.tick = e.tick;
+        this.cursor.update();
+        this.state._emit('cursorMove', this.state.cursor);
     }
 
     /**
@@ -863,16 +991,12 @@ export class OTFEditor {
             this.stop();
             return;
         }
-        if (!this.state.selection) {
+        const sel = this._selectionAbsRange();
+        if (!sel) {
             await this.playFromCursor();
             return;
         }
-        const { start, end } = this.state.selection.getNormalized(this.state.ticksPerMeasure);
-        const f = this.state.facade;
-        const startTick = f.toAbs(start.measure, start.tick);
-        // Selection end is inclusive of its slot — extend by one grid step
-        const endTick = f.toAbs(end.measure, end.tick) + this.state.gridSubdivision;
-        await this.play({ startTick, endTick, loop: true });
+        await this.play({ startTick: sel.startAbs, endTick: sel.endAbs, loop: true });
     }
 
     /**
@@ -1138,6 +1262,9 @@ export class OTFEditor {
             document.removeEventListener('mousemove', this._boundDragMove);
             document.removeEventListener('mouseup', this._boundDragEnd);
         }
+
+        // Close a lingering context menu (it lives on document.body)
+        this.contextMenu?.close();
 
         // Clean up components
         this.keyboard.detach();

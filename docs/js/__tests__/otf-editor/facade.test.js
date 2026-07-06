@@ -320,6 +320,73 @@ describe('EditingFacade — tick-range copy/paste (the phrase workflow)', () => 
     });
 });
 
+describe('EditingFacade — moveRange (drag a phrase somewhere else)', () => {
+    let f;
+    beforeEach(() => {
+        f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 2, duration: 240 });
+        f.insertNote({ measure: 1, tick: 240, string: 2, fret: 1, duration: 240 });
+        f.insertNote({ measure: 1, tick: 480, string: 5, fret: 0, duration: 240 });
+    });
+
+    it('relocates the range wholesale', () => {
+        expect(f.moveRange(0, 720, f.toAbs(3, 0))).toBe(true);
+        expect(f.getMeasure(1).events).toEqual([]);
+        expect(f.getMeasure(3).events.map(e => e.tick)).toEqual([0, 240, 480]);
+        expect(f.getMeasure(3).events[0].notes[0]).toMatchObject({ s: 3, f: 2 });
+    });
+
+    it('is ONE undo step', () => {
+        const before = f.export();
+        f.moveRange(0, 720, f.toAbs(2, 480));
+        expect(f.undo()).toBe(true);
+        expect(f.export()).toEqual(before);
+        expect(f.canUndo()).toBe(true); // only the setup inserts remain
+    });
+
+    it('handles overlapping source and destination', () => {
+        // shift right by one grid step: 0..720 → 240..960
+        expect(f.moveRange(0, 720, 240)).toBe(true);
+        expect(f.getMeasure(1).events.map(e => e.tick)).toEqual([240, 480, 720]);
+        expect(f.getMeasure(1).events[0].notes[0]).toMatchObject({ s: 3, f: 2 });
+    });
+
+    it('does not clobber the clipboard', () => {
+        f.copyRange(480, 720); // user's copied lick
+        const clip = f.clipboard;
+        f.moveRange(0, 240, f.toAbs(4, 0));
+        expect(f.clipboard).toBe(clip);
+    });
+
+    it('moves across a signature seam ts-aware', () => {
+        const g = new EditingFacade(tsChangeDoc());
+        g.insertNote({ measure: 1, tick: 0, string: 1, fret: 3, duration: 480 });
+        g.insertNote({ measure: 1, tick: 480, string: 2, fret: 0, duration: 480 });
+        // drop starting mid-m3 (the 2/4 measure): second note re-buckets into m4
+        g.moveRange(0, 960, g.toAbs(3, 720));
+        expect(g.getMeasure(1).events).toEqual([]);
+        expect(g.getMeasure(3).events.map(e => e.tick)).toEqual([720]);
+        expect(g.getMeasure(4).events.map(e => e.tick)).toEqual([240]);
+    });
+
+    it('returns false for an empty source range', () => {
+        expect(f.moveRange(960, 1920, 0)).toBe(false);
+        expect(f.canUndo()).toBe(true); // setup only; no move entry
+    });
+});
+
+describe('EditingFacade — copyRange clipboard control', () => {
+    it('updateClipboard:false leaves the clipboard alone', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 2 });
+        f.copyRange(0, 240);
+        const clip = f.clipboard;
+        const payload = f.copyRange(0, 1920, { updateClipboard: false });
+        expect(payload.data).toHaveLength(1);
+        expect(f.clipboard).toBe(clip);
+    });
+});
+
 describe('EditingFacade — undo that never lies', () => {
     let f;
     beforeEach(() => { f = new EditingFacade(banjoDoc()); });

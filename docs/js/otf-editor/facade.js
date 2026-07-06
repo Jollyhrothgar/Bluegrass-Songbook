@@ -416,7 +416,7 @@ export class EditingFacade {
      * @param {number} endAbs
      * @param {Object} options - {strings?: number[]} filter
      */
-    copyRange(startAbs, endAbs, { strings = null, trackId = this.trackId } = {}) {
+    copyRange(startAbs, endAbs, { strings = null, trackId = this.trackId, updateClipboard = true } = {}) {
         const data = [];
         for (const measure of this.getNotation(trackId)) {
             const base = this.toAbs(measure.measure, 0);
@@ -431,9 +431,33 @@ export class EditingFacade {
         }
         data.sort((a, b) => a.relativeTick - b.relativeTick);
         const payload = { type: 'notes', span: endAbs - startAbs, data };
-        this.clipboard = payload;
-        this._emit('clipboardChange', payload);
+        if (updateClipboard) {
+            this.clipboard = payload;
+            this._emit('clipboardChange', payload);
+        }
         return payload;
+    }
+
+    /**
+     * Move a tick range wholesale (drag a phrase somewhere else): one
+     * undo step, ts-aware re-bucketing at the destination, clipboard
+     * untouched. Overlapping source/destination is fine — the source is
+     * cleared before the paste.
+     *
+     * @param {number} startAbs - source range start (inclusive)
+     * @param {number} endAbs - source range end (exclusive)
+     * @param {number} destAbs - destination start tick
+     * @returns {boolean} false if the source range was empty
+     */
+    moveRange(startAbs, endAbs, destAbs, { strings = null, trackId = this.trackId } = {}) {
+        const payload = this.copyRange(startAbs, endAbs,
+            { strings, trackId, updateClipboard: false });
+        if (payload.data.length === 0 || destAbs === startAbs) return false;
+        return this.transact('Move phrase', () => {
+            this.deleteRange(startAbs, endAbs, { strings, trackId });
+            this.paste(destAbs, payload, { trackId });
+            return true;
+        });
     }
 
     deleteRange(startAbs, endAbs, { strings = null, trackId = this.trackId } = {}) {
