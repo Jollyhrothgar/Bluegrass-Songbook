@@ -218,12 +218,14 @@ parts, repeats w/ 1st-2nd endings, banjo lead rolls + guitar
 boom-chuck + bass roots-fifths), as a real user. Friction found, in
 priority order (impact × cost):
 
-1. **Play-from-cursor / loop-a-selection** — "write a small phrase,
-   hear THAT phrase" is the core verify loop; today the editor only
-   plays the whole doc from the top. TabPlayer.play() needs a
-   {startTick, endTick, loop} option (measure-timing already gives the
-   tick math). Keys: Ctrl+Space play-from-cursor; in VISUAL, L = loop
-   selection. Highest value per line of code.
+1. ~~**Play-from-cursor / loop-a-selection**~~ DONE (426b982a7).
+   TabPlayer.play({startTick, endTick, loop}) — clip AFTER duration
+   calc, rebase to t=0, exact-length ranges so loops repeat in time;
+   loop restart cancellable by stop(). Editor: Shift+Space/Ctrl+Space
+   toggles play-from-cursor; L loops the VISUAL selection (+1 grid
+   step), falls back to play-from-cursor. NOT yet ear-verified (Mike:
+   needs a real user gesture for audio — synthetic events can't resume
+   the AudioContext; also rAF pauses viz/loop-restart in hidden tabs).
 2. **Mouse drag-select + copy/paste** — phrase reuse is THE bluegrass
    entry pattern and mouse users have no selection at all (keyboard
    v/y/d/p exists). Drag on the canvas → tick-range selection overlay
