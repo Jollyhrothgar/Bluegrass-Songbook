@@ -65,6 +65,7 @@ export class OTFEditor {
         });
         this.toolbar = new EditorToolbar(this.state, {
             onLoop: () => this.loopSelection(),
+            onRest: () => this.cursor.moveByDuration(1),
         });
         this.contextMenu = new ContextMenu({
             copy: () => this.state.copy(),
@@ -709,12 +710,16 @@ export class OTFEditor {
 
         // Auto-expand for fine entry grids: guarantee each grid slot a
         // minimum pixel width so 1/16 and 1/32 grids stay usable
-        // (measureWidthFloor beats maxMeasureWidth; rows scroll if needed)
+        // (measureWidthFloor beats maxMeasureWidth; rows scroll if
+        // needed). RATCHET within a session: the layout grows when a
+        // finer grid needs room but never yanks back when you coarsen —
+        // predictable zoom instead of surprise reflows.
         const MIN_PX_PER_GRID_SLOT = 9;
         const defaultTicks = this.state.facade.measureTiming.defaultTicks;
         const slots = defaultTicks / this.state.gridSubdivision;
-        this.renderer.options.measureWidthFloor =
-            Math.ceil(slots * MIN_PX_PER_GRID_SLOT + 30); // +30 = note-area margins
+        const floor = Math.ceil(slots * MIN_PX_PER_GRID_SLOT + 30); // +30 margins
+        this._measureWidthFloorMax = Math.max(this._measureWidthFloorMax || 0, floor);
+        this.renderer.options.measureWidthFloor = this._measureWidthFloorMax;
 
         this.renderer.render(track, notation, ticksPerBeat, timeSignature,
             this.state.facade.timing);

@@ -835,10 +835,20 @@ export class EditorCursor {
      * Move cursor by grid subdivision (for navigation)
      * @param {number} direction - 1 for forward, -1 for backward
      */
+    /**
+     * Step by the grid — the ONE working increment: the same
+     * gridSubdivision draws the ruler lines, snaps clicks, and moves
+     * the cursor. Arrows use this.
+     */
+    moveByGrid(direction) {
+        this.moveByTicks(direction * this.state.gridSubdivision);
+    }
+
+    /**
+     * Step by the selected NOTE duration: rests (Space) and the
+     * auto-advance after entering a note.
+     */
     moveByDuration(direction) {
-        // The selected note duration IS the working increment: arrows,
-        // Space, and post-insert auto-advance all step by it. (The grid
-        // is a visual ruler that follows the duration by default.)
         this.moveByTicks(direction * this.state.currentDuration);
     }
 

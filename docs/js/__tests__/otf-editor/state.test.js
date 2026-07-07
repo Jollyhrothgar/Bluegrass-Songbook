@@ -671,12 +671,19 @@ describe('EditorState', () => {
         });
     });
 
-    describe('duration drives the working increment', () => {
-        it('setDuration syncs the grid ruler', () => {
+    describe('duration selection re-syncs the grid (clamped to ≤ 1/4)', () => {
+        it('setDuration syncs the grid ruler for quarter and finer', () => {
             state.setDuration(DURATIONS.quarter);
             expect(state.gridSubdivision).toBe(DURATIONS.quarter);
             state.setDuration(DURATIONS.sixteenth);
             expect(state.gridSubdivision).toBe(DURATIONS.sixteenth);
+        });
+
+        it('whole/half durations keep a quarter grid (beat-level ruler)', () => {
+            state.setDuration(DURATIONS.whole);
+            expect(state.gridSubdivision).toBe(DURATIONS.quarter);
+            state.setDuration(DURATIONS.half);
+            expect(state.gridSubdivision).toBe(DURATIONS.quarter);
         });
 
         it('explicit grid choice survives until the next duration change', () => {

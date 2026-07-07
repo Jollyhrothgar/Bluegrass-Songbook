@@ -619,14 +619,24 @@ describe('KeyboardHandler', () => {
             expect(state.cursor.tick).toBe(0); // stays on the slot
         });
 
-        it('arrows step by the SELECTED duration, not the grid', () => {
+        it('arrows step by the GRID — same increment as the ruler', () => {
             state.cursor.tick = 0;
-            keyboard.handleKeyDown(createKeyEvent('q')); // quarter
-            state.setGridSubdivision(DURATIONS.sixteenth); // finer ruler
+            keyboard.handleKeyDown(createKeyEvent('q')); // quarter duration
+            state.setGridSubdivision(DURATIONS.sixteenth); // finer working grid
             keyboard.handleKeyDown(createKeyEvent('ArrowRight'));
-            expect(state.cursor.tick).toBe(DURATIONS.quarter);
+            expect(state.cursor.tick).toBe(DURATIONS.sixteenth); // ruler-true
             keyboard.handleKeyDown(createKeyEvent('ArrowLeft'));
             expect(state.cursor.tick).toBe(0);
+        });
+
+        it('an eighth note can be placed at a sixteenth offset', () => {
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('e')); // eighth duration
+            state.setGridSubdivision(DURATIONS.sixteenth); // fine grid override
+            keyboard.handleKeyDown(createKeyEvent('ArrowRight')); // +120
+            keyboard.handleKeyDown(createKeyEvent('5'));
+            state.cursor.tick = 120;
+            expect(state.getNoteAtCursor()).toMatchObject({ f: 5, dur: DURATIONS.eighth });
         });
 
         it('auto-advance after a note follows the selected duration', () => {

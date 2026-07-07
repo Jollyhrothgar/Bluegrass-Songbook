@@ -203,6 +203,10 @@ export function dispatchEditorEvent(editor, event) {
             cursor.update();
             break;
 
+        case 'moveCursorByGrid':
+            cursor.moveByGrid(params.direction);
+            break;
+
         case 'moveCursorByDuration':
             cursor.moveByDuration(params.direction);
             break;

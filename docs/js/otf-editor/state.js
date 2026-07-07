@@ -451,15 +451,19 @@ export class EditorState {
     }
 
     /**
-     * Set current duration. The grid ruler follows the selected
-     * duration (the "working increment") — explicit grid buttons can
-     * still override it until the next duration change.
+     * Set current duration (the length of notes you ENTER; the grid is
+     * the movement/ruler increment). Selecting a duration re-syncs the
+     * grid to match so entry flows, but never coarser than a quarter —
+     * you keep beat-level rulers and movement while placing whole/half
+     * notes. Explicit grid buttons override until the next duration
+     * change.
      */
     setDuration(duration) {
         this.currentDuration = duration;
         this._emit('durationChange', duration);
-        if (this.gridSubdivision !== duration) {
-            this.setGridSubdivision(duration);
+        const grid = Math.min(duration, DURATIONS.quarter);
+        if (this.gridSubdivision !== grid) {
+            this.setGridSubdivision(grid);
         }
     }
 

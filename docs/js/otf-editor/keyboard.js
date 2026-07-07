@@ -253,16 +253,19 @@ export class KeyboardHandler {
         }
 
         // === NAVIGATION ===
+        // Arrows step by the GRID — the same increment the ruler draws
+        // and clicks snap to (one definitional layer). Note durations
+        // only govern what you enter and the auto-advance after it.
         if ((key === 'h' && !ctrlKey) || key === 'ArrowLeft') {
             this._commitFretBuffer();
-            this._record('moveCursorByDuration', { direction: -1 });
-            this.cursor.moveByDuration(-1);
+            this._record('moveCursorByGrid', { direction: -1 });
+            this.cursor.moveByGrid(-1);
             return true;
         }
         if ((key === 'l' && !ctrlKey) || key === 'ArrowRight') {
             this._commitFretBuffer();
-            this._record('moveCursorByDuration', { direction: 1 });
-            this.cursor.moveByDuration(1);
+            this._record('moveCursorByGrid', { direction: 1 });
+            this.cursor.moveByGrid(1);
             return true;
         }
         if (key === 'j' || key === 'ArrowDown') {

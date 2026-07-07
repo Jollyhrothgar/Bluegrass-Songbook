@@ -6,13 +6,16 @@ import { DURATIONS, DURATION_NAMES, EditorMode } from './state.js';
 /**
  * Duration button configuration
  */
+// Plain-text symbols: the previous SMuFL codepoints (\uD834\uDD5D \uD834\uDD57\uD834\uDD65 \u2026) rendered
+// as blank boxes without a music font \u2014 users concluded whole/half/
+// quarter notes didn't exist.
 const DURATION_BUTTONS = [
-    { duration: DURATIONS.whole, symbol: '\uD834\uDD5D', label: 'Whole', key: 'w' },
-    { duration: DURATIONS.half, symbol: '\uD834\uDD5E', label: 'Half', key: 'h' },
-    { duration: DURATIONS.quarter, symbol: '\uD834\uDD5F', label: 'Quarter', key: 'q' },
-    { duration: DURATIONS.eighth, symbol: '\u266A', label: 'Eighth', key: 'e' },
-    { duration: DURATIONS.sixteenth, symbol: '\uD834\uDD61', label: 'Sixteenth', key: 's' },
-    { duration: DURATIONS.thirtySecond, symbol: '\uD834\uDD62', label: '32nd', key: 't' },
+    { duration: DURATIONS.whole, symbol: '1', label: 'Whole', key: 'W' },
+    { duration: DURATIONS.half, symbol: '1/2', label: 'Half', key: 'H' },
+    { duration: DURATIONS.quarter, symbol: '1/4', label: 'Quarter', key: 'q' },
+    { duration: DURATIONS.eighth, symbol: '1/8', label: 'Eighth', key: 'e' },
+    { duration: DURATIONS.sixteenth, symbol: '1/16', label: 'Sixteenth', key: 's' },
+    { duration: DURATIONS.thirtySecond, symbol: '1/32', label: '32nd', key: 't' },
 ];
 
 /**
@@ -89,6 +92,9 @@ export class EditorToolbar {
             <div class="toolbar-section duration-section">
                 <span class="toolbar-label">Duration</span>
                 <div class="button-group duration-buttons"></div>
+                <button class="toolbar-button rest-button" title="Rest — advance one duration without a note (Space)">
+                    <span class="button-content">Rest</span>
+                </button>
             </div>
             <div class="toolbar-separator"></div>
             <div class="toolbar-section grid-section">
@@ -144,6 +150,7 @@ export class EditorToolbar {
         this.gridToggleButton = this.element.querySelector('.grid-toggle-button');
         this.undoButton = this.element.querySelector('.undo-button');
         this.redoButton = this.element.querySelector('.redo-button');
+        this.restButton = this.element.querySelector('.rest-button');
         this.copyButton = this.element.querySelector('.copy-button');
         this.cutButton = this.element.querySelector('.cut-button');
         this.pasteButton = this.element.querySelector('.paste-button');
@@ -415,6 +422,11 @@ export class EditorToolbar {
 
         this.redoButton.addEventListener('click', () => {
             this.state.redo();
+        });
+
+        // Rest: advance one duration without entering a note
+        this.restButton.addEventListener('click', () => {
+            this.options.onRest?.();
         });
 
         // Edit buttons (mouse path to the phrase workflow)
