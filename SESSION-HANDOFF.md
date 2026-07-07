@@ -214,9 +214,15 @@ tied melody notes short when backing tracks are playing.
   Auto-expand RATCHETS (never shrinks mid-session). Duration buttons
   are text (1, 1/2, 1/4…) — the SMuFL glyphs were blank boxes, which
   read as "whole/half/quarter don't exist". Toolbar Rest button =
-  advance one duration (same as Space). NOTE: rests are still implicit
-  (gaps) — no rendered rest glyphs yet; that's a renderer feature if
-  wanted.
+  advance one duration (same as Space).
+- **Stale-ruler fix + rest glyphs (76abece60):** TabRenderer re-renders
+  itself ASYNC (debounced resize observer, Bravura arrival) — new
+  onAfterRender hook refreshes cursor/grid overlays after EVERY layout
+  pass (Mike's "doubled rulers" = stale grid over the new layout).
+  Rest glyphs: SMuFL rests (Bravura path, like the signature digits) in
+  gaps after duration-carrying events, greedy whole→32nd;
+  duration-less parsed tabs render unchanged.
+  restSpansForMeasure/restGlyphSequence exported + tested.
 - 2c UX passes — see the ERGONOMICS WALKTHROUGH below (2026-07-05),
   which replaces the old loose list. Then 2d: rewrite
   e2e/otf-editor.spec.js + tied-note truncation fix.
