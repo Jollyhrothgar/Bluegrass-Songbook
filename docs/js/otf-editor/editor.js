@@ -161,6 +161,15 @@ export class OTFEditor {
         // Cursor/grid overlay draws from the renderer's real geometry
         this.cursor.setRenderer(this.renderer);
 
+        // Follow EVERY renderer layout pass — including its own async
+        // re-renders (resize observer, Bravura arrival), which otherwise
+        // leave the grid/cursor overlays drawn from stale geometry
+        this.renderer.onAfterRender = () => {
+            if (!this.cursor) return; // during destroy
+            this.cursor.update();
+            this.cursor.renderGrid();
+        };
+
         // Initialize cursor overlay
         this.cursor.init(this.canvasContainer);
 
@@ -721,15 +730,10 @@ export class OTFEditor {
         this._measureWidthFloorMax = Math.max(this._measureWidthFloorMax || 0, floor);
         this.renderer.options.measureWidthFloor = this._measureWidthFloorMax;
 
+        // Overlays refresh via renderer.onAfterRender (fires for THIS
+        // call and for the renderer's own async re-renders)
         this.renderer.render(track, notation, ticksPerBeat, timeSignature,
             this.state.facade.timing);
-
-        // Geometry-based overlays can refresh synchronously — reading
-        // rects after the DOM mutation forces reflow, so the grid and
-        // cursor never lag the tablature by a frame (rAF is throttled
-        // in background tabs and always a frame or two late).
-        this.cursor.update();
-        this.cursor.renderGrid();
 
         // Update cursor layout info after DOM is fully painted
         // Use double-RAF to ensure layout is complete

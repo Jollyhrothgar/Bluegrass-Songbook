@@ -9,6 +9,54 @@ import {
     parseTimeSignature,
 } from './measure-timing.js';
 
+/**
+ * Silent spans inside a measure that deserve rest glyphs: the gap after
+ * an event whose notes ALL carry explicit durations (editor-entered),
+ * up to the next event or the measure's end. Events without durations
+ * follow the legacy ring-until-next-event model — no rests for them.
+ *
+ * @param {Array} events - [{tick, notes: [{dur?}]}]
+ * @param {number} measureTicks - this measure's own tick length
+ * @returns {Array<{start: number, len: number}>}
+ */
+export function restSpansForMeasure(events, measureTicks) {
+    const spans = [];
+    const sorted = [...(events || [])].sort((a, b) => a.tick - b.tick);
+    for (let i = 0; i < sorted.length; i++) {
+        const ev = sorted[i];
+        const notes = ev.notes || [];
+        if (notes.length === 0 || !notes.every(n => n.dur > 0)) continue;
+        const end = ev.tick + Math.max(...notes.map(n => n.dur));
+        const nextStart = i + 1 < sorted.length ? sorted[i + 1].tick : measureTicks;
+        if (nextStart - end >= 60) {
+            spans.push({ start: end, len: nextStart - end });
+        }
+    }
+    return spans;
+}
+
+// SMuFL rest glyphs (Bravura): whole, half, quarter, 8th, 16th, 32nd
+const REST_GLYPHS = [
+    [1920, '\uE4E3'], [960, '\uE4E4'], [480, '\uE4E5'],
+    [240, '\uE4E6'], [120, '\uE4E7'], [60, '\uE4E8'],
+];
+
+/**
+ * Decompose a silent span into rest values, largest first.
+ * @returns {Array<{ticks: number, glyph: string}>}
+ */
+export function restGlyphSequence(len) {
+    const out = [];
+    let remaining = len;
+    for (const [ticks, glyph] of REST_GLYPHS) {
+        while (remaining >= ticks) {
+            out.push({ ticks, glyph });
+            remaining -= ticks;
+        }
+    }
+    return out;
+}
+
 const INSTRUMENT_ICONS = {
     '5-string-banjo': '🪕',
     'tenor-banjo': '🪕',
@@ -305,6 +353,13 @@ export class TabRenderer {
             const rowIndex = Math.floor(rowStart / measuresPerRow);
             this.renderRow(rowMeasures, this.numStrings, staveHeight, track.tuning, rowIndex);
         }
+
+        // Layout consumers (editor cursor/grid overlays) must follow
+        // EVERY re-render — including the async ones this class triggers
+        // itself (debounced resize observer, Bravura font arrival) that
+        // callers can't see. Without this, overlays go stale and rulers
+        // drift off the notes.
+        this.onAfterRender?.();
     }
 
     /**
@@ -631,6 +686,31 @@ export class TabRenderer {
                 fill: '#999'
             });
             svg.appendChild(numText);
+
+            // Rest glyphs in gaps AFTER duration-carrying notes. Parsed
+            // tabs mostly omit durations (notes ring to the next event) —
+            // those render unchanged; explicit rests appear as you enter
+            // durated notes in the editor. Bravura only (no serif rests).
+            if (TabRenderer._bravuraReady && measure.events) {
+                const restY = opt.topMargin
+                    + ((this.numStrings - 1) * opt.stringSpacing) / 2;
+                const restAreaStart = geom.noteX0 + geom.noteOffset;
+                for (const span of restSpansForMeasure(measure.events, geom.ticks)) {
+                    let t = span.start;
+                    for (const g of restGlyphSequence(span.len)) {
+                        const rx = restAreaStart + (t / geom.ticks) * geom.noteW + 6;
+                        const rest = this.createText(rx, restY, g.glyph, {
+                            fontSize: `${Math.round(2.2 * opt.stringSpacing)}px`,
+                            fill: '#888',
+                            textAnchor: 'start',
+                        });
+                        rest.setAttribute('class', 'rest-glyph');
+                        rest.setAttribute('font-family', 'Bravura');
+                        svg.appendChild(rest);
+                        t += g.ticks;
+                    }
+                }
+            }
 
             // Collect notes with positions
             const notePositions = [];
