@@ -204,3 +204,100 @@ test.describe('Visual editor on mobile viewport', () => {
         await expect(page.locator('.ve-chip').first()).toBeVisible();
     });
 });
+
+test.describe('Palette auto-scroll', () => {
+    // mobile-ish viewport: the docked palette (fixed at 390px) plus the open
+    // picker covers most of the screen — the worst occlusion case
+    test.use({ viewport: { width: 390, height: 700 } });
+
+    const LONG_LYRICS = Array.from(
+        { length: 30 }, (_, i) => `line number ${i + 1} of the song`).join('\n');
+
+    async function openLongSongInChordsMode(page) {
+        // reduced motion → instant scrolling, so measurements are stable
+        await page.emulateMedia({ reducedMotion: 'reduce' });
+        await openNewSongEditor(page);
+        await page.locator('.ve-add-section').click();
+        await page.locator('[data-add-type="verse"]').click();
+        await page.locator('.ve-lyrics-input').fill(LONG_LYRICS);
+        await page.locator('.ve-mode-chords').click();
+        await expect(page.locator('.ve-line')).toHaveCount(30);
+    }
+
+    const measure = (page) => page.evaluate(() => {
+        const sel = document.querySelector('.ve-syl-selected, .ve-chip-selected');
+        const pal = document.querySelector('.ve-palette');
+        return {
+            scrollY: window.scrollY,
+            selBottom: sel ? sel.getBoundingClientRect().bottom : null,
+            selTop: sel ? sel.getBoundingClientRect().top : null,
+            palTop: pal.getBoundingClientRect().top
+        };
+    });
+
+    test('expanding More… scrolls a low selection clear of the picker', async ({ page }) => {
+        await openLongSongInChordsMode(page);
+
+        // select a syllable low on the page
+        const lowSyl = page.locator('.ve-line').nth(25).locator('.ve-syl').first();
+        await lowSyl.scrollIntoViewIfNeeded();
+        await lowSyl.click();
+        await expect(page.locator('.ve-palette')).toBeVisible();
+
+        // the tall Strum Machine-style picker would occlude the line
+        await page.locator('.ve-palette-more').click();
+        await expect(page.locator('.ve-picker')).toBeVisible();
+        await expect.poll(async () => {
+            const m = await measure(page);
+            return m.selBottom < m.palTop;
+        }).toBe(true);
+        // and it sits comfortably above the palette, not clipped at the top
+        const m = await measure(page);
+        expect(m.palTop - m.selBottom).toBeGreaterThanOrEqual(8);
+        expect(m.selTop).toBeGreaterThan(0);
+    });
+
+    test('consecutive picks on the same line do not move the page', async ({ page }) => {
+        await openLongSongInChordsMode(page);
+
+        const lowSyl = page.locator('.ve-line').nth(25).locator('.ve-syl').first();
+        await lowSyl.scrollIntoViewIfNeeded();
+        await lowSyl.click();
+        await page.locator('.ve-palette-more').click();
+
+        // wait for the auto-scroll to settle, then pick twice on the same line
+        await expect.poll(async () => {
+            const m = await measure(page);
+            return m.selBottom < m.palTop;
+        }).toBe(true);
+        const before = await measure(page);
+
+        // pick a chord: selection becomes the placed chip — must not jump
+        await page.locator('.ve-palette-diatonic .ve-chip-btn').first().click();
+        await expect(page.locator('.ve-chip-selected')).toBeVisible();
+        const afterFirst = await measure(page);
+        expect(Math.abs(afterFirst.scrollY - before.scrollY)).toBeLessThanOrEqual(2);
+
+        // refine the chord (consecutive pick) — still no jump
+        await page.locator('.ve-palette-diatonic .ve-chip-btn').nth(1).click();
+        const afterSecond = await measure(page);
+        expect(Math.abs(afterSecond.scrollY - before.scrollY)).toBeLessThanOrEqual(2);
+
+        // and the chip is still visible above the palette
+        expect(afterSecond.selBottom).toBeLessThan(afterSecond.palTop);
+    });
+
+    test('even the last line can scroll clear of the open picker', async ({ page }) => {
+        await openLongSongInChordsMode(page);
+
+        const lastSyl = page.locator('.ve-line').nth(29).locator('.ve-syl').first();
+        await lastSyl.scrollIntoViewIfNeeded();
+        await lastSyl.click();
+        await page.locator('.ve-palette-more').click();
+
+        await expect.poll(async () => {
+            const m = await measure(page);
+            return m.selBottom < m.palTop;
+        }).toBe(true);
+    });
+});

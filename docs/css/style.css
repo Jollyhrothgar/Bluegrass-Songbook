@@ -9641,8 +9641,11 @@ body.fullscreen-mode::after {
 .visual-editor-container.hidden { display: none; }
 .ve-root { padding-bottom: 30vh; } /* room above the docked palette */
 /* the open root+quality picker is much taller than the bare palette: give
-   enough scroll room that the line being edited can sit above it */
-.ve-root:has(.ve-picker:not(.hidden)) { padding-bottom: 75vh; }
+   enough scroll room that the line being edited can sit above it. The px
+   floor covers short viewports where the picker's fixed-height rows exceed
+   75vh (measured ~530px at 390x700), so even the last line can auto-scroll
+   clear of the palette. */
+.ve-root:has(.ve-picker:not(.hidden)) { padding-bottom: max(75vh, 600px); }
 .ve-toolbar {
     display: flex;
     align-items: center;

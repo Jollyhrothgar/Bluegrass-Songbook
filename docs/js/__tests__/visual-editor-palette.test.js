@@ -233,3 +233,27 @@ describe('beginTyping (hardware keyboard chord entry)', () => {
         expect(pickerHidden()).toBe(true);
     });
 });
+
+describe('onLayoutChange (palette height changes)', () => {
+    it('fires when More… expands and again when it collapses', () => {
+        const onLayoutChange = vi.fn();
+        const p = createPalette({ onPick, onDelete, onClose, onLayoutChange });
+        document.body.appendChild(p.el);
+        p.el.querySelector('.ve-palette-more').click();   // expand
+        expect(onLayoutChange).toHaveBeenCalledTimes(1);
+        p.el.querySelector('.ve-palette-more').click();   // collapse
+        expect(onLayoutChange).toHaveBeenCalledTimes(2);
+    });
+
+    it('fires when beginTyping opens the picker', () => {
+        const onLayoutChange = vi.fn();
+        const p = createPalette({ onPick, onDelete, onClose, onLayoutChange });
+        document.body.appendChild(p.el);
+        p.beginTyping('A');
+        expect(onLayoutChange).toHaveBeenCalledTimes(1);
+    });
+
+    it('is optional — the palette works without it', () => {
+        expect(() => palette.el.querySelector('.ve-palette-more').click()).not.toThrow();
+    });
+});

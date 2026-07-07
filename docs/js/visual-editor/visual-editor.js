@@ -10,6 +10,7 @@ import {
 } from './model.js';
 import { renderSectionCard } from './section-card.js';
 import { createPalette } from './palette.js';
+import { scrollSelectionClear } from './autoscroll.js';
 import { detectKey } from '../chords.js';
 
 const UNDO_CAP = 50;
@@ -95,6 +96,11 @@ export function createVisualEditor({ container, onChange }) {
             selection = null;
             palette.hide();
             render();
+        },
+        onLayoutChange() {
+            // More… expand/collapse (or typed entry opening the picker)
+            // changes the palette height without a render
+            autoScrollToSelection();
         }
     });
 
@@ -268,6 +274,15 @@ export function createVisualEditor({ container, onChange }) {
         }
     };
 
+    // Cards re-render on every state change, so element references go
+    // stale — locate the selected element after render via its selection
+    // class, then nudge the scroller so it clears the docked palette.
+    function autoScrollToSelection() {
+        if (!selection) return;
+        const selectedEl = cardsHost.querySelector('.ve-syl-selected, .ve-chip-selected');
+        scrollSelectionClear({ selectedEl, paletteEl: palette.el, stickyTopEl: toolbar });
+    }
+
     function render() {
         toolbar.querySelector('.ve-key-label').textContent = currentKey() ? `Key: ${currentKey()}` : 'Key: ?';
         // keep the palette key-aware: transpose, key-directive changes and
@@ -285,6 +300,7 @@ export function createVisualEditor({ container, onChange }) {
             hint.textContent = 'Add a section to get started, or paste lyrics in the Raw tab.';
             cardsHost.appendChild(hint);
         }
+        autoScrollToSelection();
     }
 
     return {

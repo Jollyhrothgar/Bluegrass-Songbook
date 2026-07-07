@@ -25,7 +25,7 @@ function chipButton(label, onTap) {
     return b;
 }
 
-export function createPalette({ onPick, onDelete, onClose }) {
+export function createPalette({ onPick, onDelete, onClose, onLayoutChange }) {
     const el = document.createElement('div');
     el.className = 've-palette hidden';
 
@@ -142,6 +142,9 @@ export function createPalette({ onPick, onDelete, onClose }) {
         const opening = picker.classList.contains('hidden');
         picker.classList.toggle('hidden');
         if (opening) selectRoot(keyRoot); // default root follows the song key
+        // the expanded/collapsed picker changes the palette height without a
+        // re-render; let the host re-check what the palette now occludes
+        if (onLayoutChange) onLayoutChange();
     });
 
     el.append(diatonicRow, recentsRow, actionsRow, picker);
@@ -187,6 +190,7 @@ export function createPalette({ onPick, onDelete, onClose }) {
             if (custom.setSelectionRange) {
                 custom.setSelectionRange(custom.value.length, custom.value.length);
             }
+            if (onLayoutChange) onLayoutChange();
         },
         showFor({ existingChord }) {
             deleteBtn.classList.toggle('hidden', !existingChord);

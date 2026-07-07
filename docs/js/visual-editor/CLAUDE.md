@@ -14,6 +14,7 @@ visual-editor/
 ├── model.js          # SongDocument: parseSong/serializeSong + pure edit ops
 ├── syllables.js      # view-layer tokenizer (tap targets); NOT in the model
 ├── palette.js        # docked chord palette (diatonic via chord-explorer/theory.js)
+├── autoscroll.js     # keep the selection clear of the docked palette
 ├── section-card.js   # one section card (chords mode / lyrics mode)
 └── visual-editor.js  # orchestrator: selection, undo/redo, rendering
 ```
