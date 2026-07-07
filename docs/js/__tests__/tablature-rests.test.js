@@ -64,6 +64,33 @@ describe('restGlyphSequence', () => {
     });
 });
 
+describe('TabRenderer tie arcs across barlines', () => {
+    it('draws the arc between a split note and its tied continuation', () => {
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        const r = new TabRenderer(container);
+        // Whole note entered at beat 3 of m1 (4/4): 960 + tied 960 in m2 —
+        // the arc spans the barline (way past the old 60px technique cap)
+        r.render(TRACK, [
+            { measure: 1, events: [{ tick: 960, notes: [{ s: 3, f: 0, dur: 960 }] }] },
+            { measure: 2, events: [{ tick: 0, notes: [{ s: 3, f: 0, dur: 960, tie: true }] }] },
+        ], 480, '4/4');
+        expect(container.querySelector('.tie-arc')).not.toBeNull();
+    });
+
+    it('keeps the tight cap for technique slurs', () => {
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        const r = new TabRenderer(container);
+        // hammer-on a full measure away — no slur
+        r.render(TRACK, [
+            { measure: 1, events: [{ tick: 0, notes: [{ s: 3, f: 0 }] }] },
+            { measure: 2, events: [{ tick: 0, notes: [{ s: 3, f: 2, tech: 'h' }] }] },
+        ], 480, '4/4');
+        expect(container.querySelector('.tech-slur')).toBeNull();
+    });
+});
+
 describe('TabRenderer rest drawing', () => {
     const hadBravura = TabRenderer._bravuraReady;
     afterEach(() => { TabRenderer._bravuraReady = hadBravura; });

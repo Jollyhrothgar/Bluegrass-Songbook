@@ -657,6 +657,11 @@ export class TabRenderer {
         const beamY = stringsBottom + opt.stemAreaHeight - 4;
 
         // Draw measures
+        // Slur/tie sources across the WHOLE row: ties legitimately cross
+        // barlines (split whole notes), so arcs are drawn at row scope
+        // after all measures are laid out.
+        const rowNotePositions = [];
+
         measures.forEach((measure, mi) => {
             const geom = measureGeoms[mi];
             const x = geom.x;
@@ -812,7 +817,7 @@ export class TabRenderer {
                 });
             }
 
-            this.renderSlurs(svg, notePositions, opt);
+            rowNotePositions.push(...notePositions);
             // Beam ("ligature") groups follow the FELT beat of this
             // measure's signature: quarters in 4/4, halves in 2/2 (or in
             // two-feel), so cut time beams runs of 4 eighths.
@@ -831,6 +836,11 @@ export class TabRenderer {
             const endBar = this.createLine(endX, opt.topMargin, endX, stringsBottom, opt.measureLineColor);
             svg.appendChild(endBar);
         }
+
+        // Row-scope slurs/ties: cross-barline ties get their arcs.
+        // (Cross-ROW ties still don't — half-arc into the margin is a
+        // possible future nicety.)
+        this.renderSlurs(svg, rowNotePositions, opt);
 
         rowDiv.appendChild(svg);
         this.container.appendChild(rowDiv);
@@ -865,7 +875,12 @@ export class TabRenderer {
 
                 const n1 = notes[i - 1];
                 const xDist = n2.x - n1.x;
-                if (xDist > 60) continue; // Max distance for slur
+                // Techniques (h/p/slide) connect adjacent notes — keep the
+                // tight cap. TIES legitimately span barlines (a whole note
+                // entered mid-measure splits across it), so allow a full
+                // measure's reach.
+                const maxDist = hasTie ? 400 : 60;
+                if (xDist > maxDist) continue;
 
                 // For closely-spaced notes (like grace note slides), reduce the offsets
                 // so the slur is still visible
@@ -879,6 +894,7 @@ export class TabRenderer {
                 slur.setAttribute('fill', 'none');
                 slur.setAttribute('stroke', hasTie ? '#888' : '#555');
                 slur.setAttribute('stroke-width', hasTie ? '1' : '1.5');
+                slur.setAttribute('class', hasTie ? 'tie-arc' : 'tech-slur');
                 svg.appendChild(slur);
 
                 // Draw label for techniques (not for ties)
