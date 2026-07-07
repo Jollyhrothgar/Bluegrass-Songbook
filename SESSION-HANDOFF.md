@@ -223,6 +223,15 @@ tied melody notes short when backing tracks are playing.
   gaps after duration-carrying events, greedy whole→32nd;
   duration-less parsed tabs render unchanged.
   restSpansForMeasure/restGlyphSequence exported + tested.
+- **Duration→grid coupling minimized (cbd240cf1):** refine-only, by
+  divisibility — grid changes ONLY when it can't express the selected
+  duration's positions (the one hard invariant: click/arrow placement
+  quantizes to grid). Coarser durations never touch the grid; explicit
+  grid buttons absolute. Known residual edge cases: (1) grid stays
+  fine after a fine passage — arrows get slow; use w/b beat-nav or an
+  explicit grid click. (2) A user CAN explicitly set a grid coarser
+  than their duration — their call. (3) Mixed triplet/straight in one
+  measure needs grid flips per phrase (grids don't nest).
 - **Periodic ruler (beffb94af):** the LAST ruler artifact wasn't
   staleness — per-measure note CENTERING (noteOffset varies with each
   measure's last event) made grid lines from neighboring measures land
