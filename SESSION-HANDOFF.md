@@ -235,7 +235,11 @@ tied melody notes short when backing tracks are playing.
 - **Tie arcs across barlines (cdca18327):** renderSlurs moved to ROW
   scope + per-kind distance caps (techniques 60px, ties a full
   measure) — split whole notes now show their arc to the [bracketed]
-  continuation. Cross-ROW ties still arc-less (future half-arc).
+  continuation.
+- **Cross-row half-arc + chord entry (e74ac8f32):** row-leading tie
+  continuations get an incoming half-arc; Shift+digit (event.code
+  match) inserts on the current tick WITHOUT advancing — pinches/
+  chords via j/k + Shift+digit (ergonomics item #3 done).
 - **Periodic ruler (beffb94af):** the LAST ruler artifact wasn't
   staleness — per-measure note CENTERING (noteOffset varies with each
   measure's last event) made grid lines from neighboring measures land
