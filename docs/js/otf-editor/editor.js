@@ -161,6 +161,10 @@ export class OTFEditor {
         // Cursor/grid overlay draws from the renderer's real geometry
         this.cursor.setRenderer(this.renderer);
 
+        // Editing wants a STABLE tick→x mapping: per-measure note
+        // centering makes the ruler break period at every barline
+        this.renderer.options.centerNotes = false;
+
         // Follow EVERY renderer layout pass — including its own async
         // re-renders (resize observer, Bravura arrival), which otherwise
         // leave the grid/cursor overlays drawn from stale geometry

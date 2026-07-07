@@ -171,6 +171,8 @@ export class TabRenderer {
             measureWidthFloor: 0,     // Hard lower bound that OVERRIDES maxMeasureWidth
                                       // (editor sets this so fine entry grids get room;
                                       // rows may exceed the container and scroll)
+            centerNotes: true,        // Center notes in their measure (reading nicety);
+                                      // the editor sets false for a stable tick→x mapping
             measuresPerRow: 'auto',   // 'auto' or number (1-8)
             leftMargin: 50,
             topMargin: 40,
@@ -563,8 +565,16 @@ export class TabRenderer {
             // Visual centering: proportional layout leaves the last note's
             // remaining duration as empty space on the right; split that
             // leftover across both sides so the notes sit centered.
+            // The EDITOR disables this (centerNotes: false): centering
+            // varies per measure with its last event, so grid rulers
+            // derived from it break period at every barline (lines from
+            // neighboring measures land ~px apart — "doubled rulers").
+            // Editing wants one stable coordinate system: tick t always
+            // at the same relative x.
             const lastTick = (m.events || []).reduce((mx, e) => Math.max(mx, e.tick), 0);
-            const noteOffset = noteW * Math.max(0, 1 - lastTick / ticks) / 2;
+            const noteOffset = opt.centerNotes === false
+                ? 0
+                : noteW * Math.max(0, 1 - lastTick / ticks) / 2;
             const geom = {
                 display: m.measure,
                 x: xCursor,

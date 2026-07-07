@@ -254,6 +254,32 @@ describe('TabRenderer backward compatibility (no timing arg)', () => {
     });
 });
 
+describe('TabRenderer centerNotes option (editor coordinate stability)', () => {
+    // A measure whose last event sits early gets a big centering offset —
+    // grid rulers derived from it break period at barlines.
+    const notation = [
+        { measure: 1, events: [note(0)] },                 // lastTick 0 → max offset
+        { measure: 2, events: [note(0), note(1440)] },     // lastTick 1440 → small offset
+    ];
+
+    it('centers by default (reading mode): offsets vary per measure', () => {
+        const r = makeRenderer();
+        r.render(TRACK, notation, 480, '4/4');
+        const [g1, g2] = r.rowData[0].measures;
+        expect(g1.noteOffset).toBeGreaterThan(0);
+        expect(g1.noteOffset).not.toBeCloseTo(g2.noteOffset);
+    });
+
+    it('centerNotes:false pins tick→x: zero offset everywhere', () => {
+        const r = makeRenderer();
+        r.options.centerNotes = false;
+        r.render(TRACK, notation, 480, '4/4');
+        for (const g of r.rowData[0].measures) {
+            expect(g.noteOffset).toBe(0);
+        }
+    });
+});
+
 describe('TabRenderer measureWidthFloor (editor auto-expand for fine grids)', () => {
     const notation = [
         { measure: 1, events: [note(0)] },
