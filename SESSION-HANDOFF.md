@@ -223,6 +223,13 @@ tied melody notes short when backing tracks are playing.
   gaps after duration-carrying events, greedy whole→32nd;
   duration-less parsed tabs render unchanged.
   restSpansForMeasure/restGlyphSequence exported + tested.
+- **Periodic ruler (beffb94af):** the LAST ruler artifact wasn't
+  staleness — per-measure note CENTERING (noteOffset varies with each
+  measure's last event) made grid lines from neighboring measures land
+  px apart at barlines. Renderer option centerNotes (default true,
+  reading view unchanged); editor sets false → stable tick→x, gap
+  kinds {slot, barline} only. If editing ever feels "left-packed",
+  that's this tradeoff — intentional.
 - 2c UX passes — see the ERGONOMICS WALKTHROUGH below (2026-07-05),
   which replaces the old loose list. Then 2d: rewrite
   e2e/otf-editor.spec.js + tied-note truncation fix.
