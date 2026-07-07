@@ -207,6 +207,16 @@ tied melody notes short when backing tracks are playing.
   change); toolbar clicks refocus the editor root.
   state.ticksPerMeasure now only feeds selection normalization + the
   no-facade fallbacks.
+- **Grid model unified (a840f037b), per Mike's spec:** gridSubdivision
+  is THE working increment (ruler lines + arrow/hl movement + click
+  snap, one definition); currentDuration only sets entered-note length
+  + auto-advance + rests. Duration re-syncs grid clamped ≤ 1/4.
+  Auto-expand RATCHETS (never shrinks mid-session). Duration buttons
+  are text (1, 1/2, 1/4…) — the SMuFL glyphs were blank boxes, which
+  read as "whole/half/quarter don't exist". Toolbar Rest button =
+  advance one duration (same as Space). NOTE: rests are still implicit
+  (gaps) — no rendered rest glyphs yet; that's a renderer feature if
+  wanted.
 - 2c UX passes — see the ERGONOMICS WALKTHROUGH below (2026-07-05),
   which replaces the old loose list. Then 2d: rewrite
   e2e/otf-editor.spec.js + tied-note truncation fix.
