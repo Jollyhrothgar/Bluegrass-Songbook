@@ -232,6 +232,10 @@ tied melody notes short when backing tracks are playing.
   explicit grid click. (2) A user CAN explicitly set a grid coarser
   than their duration — their call. (3) Mixed triplet/straight in one
   measure needs grid flips per phrase (grids don't nest).
+- **Tie arcs across barlines (cdca18327):** renderSlurs moved to ROW
+  scope + per-kind distance caps (techniques 60px, ties a full
+  measure) — split whole notes now show their arc to the [bracketed]
+  continuation. Cross-ROW ties still arc-less (future half-arc).
 - **Periodic ruler (beffb94af):** the LAST ruler artifact wasn't
   staleness — per-measure note CENTERING (noteOffset varies with each
   measure's last event) made grid lines from neighboring measures land
