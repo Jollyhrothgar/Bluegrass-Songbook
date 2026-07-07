@@ -452,18 +452,21 @@ export class EditorState {
 
     /**
      * Set current duration (the length of notes you ENTER; the grid is
-     * the movement/ruler increment). Selecting a duration re-syncs the
-     * grid to match so entry flows, but never coarser than a quarter —
-     * you keep beat-level rulers and movement while placing whole/half
-     * notes. Explicit grid buttons override until the next duration
-     * change.
+     * the movement/ruler increment). Minimal coupling — REFINE ONLY:
+     * the grid changes only when it cannot express the selected
+     * duration's positions (divisibility check, so triplet and straight
+     * grids trade correctly). Coarser durations never touch your grid —
+     * quarters place fine on a 1/16 ruler — and explicit grid buttons
+     * are absolute. This keeps the one hard invariant (what you
+     * selected is always placeable via click/arrows) without churning
+     * the ruler on every duration change during mixed-value entry.
      */
     setDuration(duration) {
         this.currentDuration = duration;
         this._emit('durationChange', duration);
-        const grid = Math.min(duration, DURATIONS.quarter);
-        if (this.gridSubdivision !== grid) {
-            this.setGridSubdivision(grid);
+        const needed = Math.min(duration, DURATIONS.quarter);
+        if (needed % this.gridSubdivision !== 0) {
+            this.setGridSubdivision(needed);
         }
     }
 
@@ -475,7 +478,9 @@ export class EditorState {
         this.tripletCount = 0;
         if (this.tripletMode) {
             this.currentDuration = DURATIONS.tripletEighth;
-            if (this.gridSubdivision !== DURATIONS.tripletEighth) {
+            // Straight grids can't express triplet positions (and vice
+            // versa) — same refine-only divisibility rule as setDuration
+            if (DURATIONS.tripletEighth % this.gridSubdivision !== 0) {
                 this.setGridSubdivision(DURATIONS.tripletEighth);
             }
         }

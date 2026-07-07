@@ -671,32 +671,46 @@ describe('EditorState', () => {
         });
     });
 
-    describe('duration selection re-syncs the grid (clamped to ≤ 1/4)', () => {
-        it('setDuration syncs the grid ruler for quarter and finer', () => {
-            state.setDuration(DURATIONS.quarter);
-            expect(state.gridSubdivision).toBe(DURATIONS.quarter);
+    describe('duration→grid coupling is REFINE-ONLY (minimal invariant)', () => {
+        it('a finer duration refines a too-coarse grid', () => {
+            state.setGridSubdivision(DURATIONS.quarter);
             state.setDuration(DURATIONS.sixteenth);
             expect(state.gridSubdivision).toBe(DURATIONS.sixteenth);
         });
 
-        it('whole/half durations keep a quarter grid (beat-level ruler)', () => {
+        it('a coarser duration NEVER touches the grid (mixed-value entry)', () => {
+            state.setDuration(DURATIONS.sixteenth); // grid → 1/16
+            state.setDuration(DURATIONS.quarter);   // q places fine on 1/16
+            expect(state.gridSubdivision).toBe(DURATIONS.sixteenth);
             state.setDuration(DURATIONS.whole);
-            expect(state.gridSubdivision).toBe(DURATIONS.quarter);
-            state.setDuration(DURATIONS.half);
+            expect(state.gridSubdivision).toBe(DURATIONS.sixteenth);
+        });
+
+        it('a deliberate fine grid survives duration changes', () => {
+            state.setGridSubdivision(DURATIONS.thirtySecond);
+            state.setDuration(DURATIONS.eighth);
+            state.setDuration(DURATIONS.quarter);
+            expect(state.gridSubdivision).toBe(DURATIONS.thirtySecond);
+        });
+
+        it('whole/half need at most a quarter grid', () => {
+            state.setGridSubdivision(DURATIONS.half); // hypothetical coarse grid
+            state.setDuration(DURATIONS.whole);
             expect(state.gridSubdivision).toBe(DURATIONS.quarter);
         });
 
-        it('explicit grid choice survives until the next duration change', () => {
-            state.setDuration(DURATIONS.quarter);
-            state.setGridSubdivision(DURATIONS.sixteenth); // manual override
-            expect(state.gridSubdivision).toBe(DURATIONS.sixteenth);
-            state.setDuration(DURATIONS.eighth); // re-syncs
+        it('triplet ↔ straight grids trade on divisibility', () => {
+            state.setGridSubdivision(DURATIONS.sixteenth);
+            state.toggleTripletMode(); // 1/16 can't place triplet eighths
+            expect(state.gridSubdivision).toBe(DURATIONS.tripletEighth);
+            state.setDuration(DURATIONS.eighth); // triplet grid can't place 1/8
             expect(state.gridSubdivision).toBe(DURATIONS.eighth);
         });
 
-        it('triplet mode syncs the grid to triplet eighths', () => {
-            state.toggleTripletMode();
-            expect(state.gridSubdivision).toBe(DURATIONS.tripletEighth);
+        it('explicit grid buttons are absolute (may coarsen)', () => {
+            state.setDuration(DURATIONS.thirtySecond);
+            state.setGridSubdivision(DURATIONS.quarter); // user's explicit call
+            expect(state.gridSubdivision).toBe(DURATIONS.quarter);
         });
     });
 
