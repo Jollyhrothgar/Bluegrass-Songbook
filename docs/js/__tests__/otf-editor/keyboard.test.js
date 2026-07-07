@@ -629,6 +629,20 @@ describe('KeyboardHandler', () => {
             expect(state.cursor.tick).toBe(0);
         });
 
+        it('Shift+digit stacks a chord tone WITHOUT advancing', () => {
+            state.cursor.tick = 0;
+            state.cursor.string = 3;
+            keyboard.handleKeyDown(createKeyEvent('5')); // advances
+            state.cursor.tick = 0;                        // back onto it
+            state.cursor.string = 2;
+            keyboard.handleKeyDown(new KeyboardEvent('keydown', {
+                key: '%', code: 'Digit5', shiftKey: true, bubbles: true, cancelable: true,
+            }));
+            expect(state.cursor.tick).toBe(0); // did NOT advance
+            const notes = state.getMeasure(1).events[0].notes;
+            expect(notes.map(n => n.s).sort()).toEqual([2, 3]); // a pinch
+        });
+
         it('an eighth note can be placed at a sixteenth offset', () => {
             state.cursor.tick = 0;
             keyboard.handleKeyDown(createKeyEvent('e')); // eighth duration

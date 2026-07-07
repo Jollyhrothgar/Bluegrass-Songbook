@@ -78,6 +78,21 @@ describe('TabRenderer tie arcs across barlines', () => {
         expect(container.querySelector('.tie-arc')).not.toBeNull();
     });
 
+    it('draws an incoming half-arc when the continuation starts a row', () => {
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        const r = new TabRenderer(container);
+        r.options.measuresPerRow = 1; // force the tie across a ROW break
+        r.render(TRACK, [
+            { measure: 1, events: [{ tick: 960, notes: [{ s: 3, f: 0, dur: 960 }] }] },
+            { measure: 2, events: [{ tick: 0, notes: [{ s: 3, f: 0, dur: 960, tie: true }] }] },
+        ], 480, '4/4');
+        const rows = container.querySelectorAll('.stave-row');
+        expect(rows).toHaveLength(2);
+        expect(rows[1].querySelector('.tie-arc-in')).not.toBeNull();
+        expect(rows[0].querySelector('.tie-arc-in')).toBeNull();
+    });
+
     it('keeps the tight cap for technique slurs', () => {
         const container = document.createElement('div');
         document.body.appendChild(container);

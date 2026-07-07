@@ -866,6 +866,20 @@ export class TabRenderer {
 
         // For each string, when we see a note with tech or tie, draw slur from previous note
         Object.values(allNotesByString).forEach(notes => {
+            // A row-LEADING tie continuation's antecedent lives on the
+            // previous row — draw the incoming half-arc from the margin.
+            if (notes.length > 0 && notes[0].tie === true) {
+                const n = notes[0];
+                const y = n.y - 8;
+                const half = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                half.setAttribute('d', `M ${n.x - 24} ${y - 6} Q ${n.x - 12} ${y - 8} ${n.x - 5} ${y}`);
+                half.setAttribute('fill', 'none');
+                half.setAttribute('stroke', '#888');
+                half.setAttribute('stroke-width', '1');
+                half.setAttribute('class', 'tie-arc tie-arc-in');
+                svg.appendChild(half);
+            }
+
             for (let i = 1; i < notes.length; i++) {
                 const n2 = notes[i];
                 const hasTechnique = n2.tech === 'h' || n2.tech === 'p' || n2.tech === '/';

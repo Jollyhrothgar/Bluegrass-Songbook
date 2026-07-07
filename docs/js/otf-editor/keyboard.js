@@ -191,6 +191,25 @@ export class KeyboardHandler {
         const { key, ctrlKey, shiftKey } = event;
 
         // === NOTE ENTRY ===
+        // Shift+digit: CHORD entry — insert on the current tick WITHOUT
+        // advancing, so stacking a pinch is j/k + Shift+digit instead of
+        // arrow-back gymnastics. (Shifted digits report symbol keys, so
+        // match on event.code.)
+        if (shiftKey && !ctrlKey && /^Digit[0-9]$/.test(event.code || '')) {
+            this._commitFretBuffer();
+            const fret = Number(event.code.slice(5));
+            const tech = this.state.pendingArticulation || null;
+            this._record('insertNote', {
+                ...this._cursorParams(),
+                fret,
+                duration: this.state.currentDuration,
+                tech,
+            });
+            this.state.insertNote(fret); // consumes pendingArticulation
+            this.cursor.update();
+            return true;
+        }
+
         // Fret entry (0-9) - always available
         if (/^[0-9]$/.test(key) && !ctrlKey && !shiftKey) {
             if (this.highFretMode) {
