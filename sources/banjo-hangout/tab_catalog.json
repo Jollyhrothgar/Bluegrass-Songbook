@@ -1256,7 +1256,8 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "Am",
       "difficulty": "Expert",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "import declined (duplicate part?)",
       "discovered_at": "2026-01-04T12:38:28.272804",
       "downloaded_at": "2026-01-04T12:42:43.775485"
     },

@@ -842,6 +842,21 @@
      "otf_only": [],
      "oracle_only": []
     }
+   },
+   "midi": {
+    "file": "spike/oracle/23398.mid",
+    "verdict": "VERIFIED",
+    "tracks": {
+     "banjo": {
+      "otf": 404,
+      "midi": 404,
+      "exact": 404,
+      "missing_count": 0,
+      "extra_count": 0,
+      "bends": 5,
+      "swing": null
+     }
+    }
    }
   }
  },
@@ -2226,7 +2241,7 @@
   "xml": "spike/oracle/batch/27493.xml",
   "tracks": 4,
   "result": {
-   "verdict": "PARTIAL",
+   "verdict": "VERIFIED",
    "tracks": {
     "banjo": {
      "otf": 357,
@@ -2236,7 +2251,53 @@
      "oracle_only": []
     }
    },
-   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)",
+   "midi": {
+    "file": "spike/oracle/27493.mid",
+    "verdict": "VERIFIED",
+    "tracks": {
+     "guitar": {
+      "otf": 699,
+      "midi": 699,
+      "exact": 699,
+      "missing_count": 0,
+      "extra_count": 0,
+      "bends": 6,
+      "swing": null
+     },
+     "bass": {
+      "otf": 135,
+      "midi": 135,
+      "exact": 135,
+      "missing_count": 0,
+      "extra_count": 0,
+      "bends": 2,
+      "swing": null
+     },
+     "mandolin": {
+      "otf": 508,
+      "midi": 508,
+      "exact": 508,
+      "missing_count": 0,
+      "extra_count": 0,
+      "bends": 2,
+      "swing": null
+     },
+     "banjo": {
+      "otf": 498,
+      "midi": 498,
+      "exact": 498,
+      "missing_count": 0,
+      "extra_count": 0,
+      "bends": 2,
+      "swing": 40
+     }
+    }
+   },
+   "verified_by": [
+    "musicxml",
+    "rich-midi"
+   ]
   }
  }
 ]
