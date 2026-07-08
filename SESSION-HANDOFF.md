@@ -354,7 +354,17 @@ d. **Rewrite e2e/otf-editor.spec.js** against the real modal design as
 pattern entry faster than TablEdit, works on an iPad at a jam, shareable
 by URL, free.
 
-### 3. Publish the verified tabs (one-stop-shop payoff, cheap)
+### 3. ~~Publish the verified tabs~~ DONE for VERIFIED (9a341df1a)
+32 new works created from the 87 VERIFIED (55 already covered by the
+golden-44 + intra-batch duplicate tunes; one banjo part per work —
+variants are a future nicety). index.jsonl: 44 → 76 works with
+tablature_parts, full attribution. New: src/import_verified.py driver
+(keyed to oracle_manifest verdicts, seeds 34 scraped catalog entries);
+works_importer provenance carries source_id (attribution links) and no
+longer mislabels the tabber as composer; title-match cached. PARTIALs
+(20) publish when the Rich-MIDI leg verifies their other modules.
+
+### 3-old. Original notes
 Only 44 works have tablature_parts (golden-standard); the 107 oracle-
 VERIFIED banjo-hangout OTFs (and later the PARTIAL/remaining ones as
 verification widens) should be wired into docs/data/index.jsonl as
