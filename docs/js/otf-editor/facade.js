@@ -510,6 +510,111 @@ export class EditingFacade {
     }
 
     // ------------------------------------------------------------------
+    // Repeats & endings — reading_list ops.
+    // Repeat signs and ending brackets are DERIVED from reading_list
+    // (play-order measure ranges); editing repeats = editing the
+    // ranges. Ops expand to the flat play sequence, splice, recompress.
+    // ------------------------------------------------------------------
+
+    /** Flat play-order sequence of written measures. */
+    readingSequence() {
+        const rl = this.otf.reading_list;
+        const max = Math.max(1, maxMeasureIn(this.otf.notation || {}));
+        if (!rl || rl.length === 0) {
+            return Array.from({ length: max }, (_, i) => i + 1);
+        }
+        const seq = [];
+        for (const r of rl) {
+            for (let m = r.from_measure; m <= r.to_measure; m++) seq.push(m);
+        }
+        return seq;
+    }
+
+    _setSequence(seq) {
+        // Recompress into contiguous ranges; an identity sequence means
+        // no reading list at all (keeps plain docs plain).
+        const ranges = [];
+        for (const m of seq) {
+            const last = ranges[ranges.length - 1];
+            if (last && m === last.to_measure + 1) last.to_measure = m;
+            else ranges.push({ from_measure: m, to_measure: m });
+        }
+        const max = Math.max(1, maxMeasureIn(this.otf.notation || {}));
+        const identity = ranges.length === 1
+            && ranges[0].from_measure === 1 && ranges[0].to_measure === max;
+        if (identity) delete this.otf.reading_list;
+        else this.otf.reading_list = ranges;
+    }
+
+    _findContiguous(seq, from, to) {
+        const len = to - from + 1;
+        outer:
+        for (let i = 0; i <= seq.length - len; i++) {
+            for (let k = 0; k < len; k++) {
+                if (seq[i + k] !== from + k) continue outer;
+            }
+            return i;
+        }
+        return -1;
+    }
+
+    /** |: from .. to :| — play the span twice. One undo step. */
+    repeatSpan(from, to) {
+        if (!(from >= 1 && to >= from)) return false;
+        const seq = this.readingSequence();
+        const idx = this._findContiguous(seq, from, to);
+        if (idx === -1) return false;
+        return this._mutate('Add repeat', () => {
+            const span = [];
+            for (let m = from; m <= to; m++) span.push(m);
+            seq.splice(idx + span.length, 0, ...span);
+            this._setSequence(seq);
+            return true;
+        });
+    }
+
+    /**
+     * Repeat with 1st/2nd endings. Written layout: body = from ..
+     * firstEndingStart-1, 1st ending = firstEndingStart .. firstEndingTo,
+     * 2nd ending = firstEndingTo+1 .. secondEndingTo. Play order:
+     * body+1st, body, 2nd — the range shape TablEdit reading lists use
+     * (and analyzeReadingList reconstructs brackets from).
+     */
+    repeatSpanWithEndings(from, firstEndingStart, firstEndingTo, secondEndingTo) {
+        if (!(from >= 1
+            && firstEndingStart > from
+            && firstEndingTo >= firstEndingStart
+            && secondEndingTo > firstEndingTo)) return false;
+        const seq = this.readingSequence();
+        const idx = this._findContiguous(seq, from, secondEndingTo);
+        if (idx === -1) return false;
+        return this._mutate('Add repeat with endings', () => {
+            const out = [];
+            for (let m = from; m <= firstEndingTo; m++) out.push(m);           // body + 1st
+            for (let m = from; m < firstEndingStart; m++) out.push(m);         // body again
+            for (let m = firstEndingTo + 1; m <= secondEndingTo; m++) out.push(m); // 2nd
+            seq.splice(idx, secondEndingTo - from + 1, ...out);
+            this._setSequence(seq);
+            return true;
+        });
+    }
+
+    /** Remove a repeat: delete the SECOND contiguous occurrence of the span. */
+    removeRepeat(from, to) {
+        const seq = this.readingSequence();
+        const first = this._findContiguous(seq, from, to);
+        if (first === -1) return false;
+        const len = to - from + 1;
+        const second = this._findContiguous(seq.slice(first + 1), from, to);
+        if (second === -1) return false;
+        return this._mutate('Remove repeat', () => {
+            seq.splice(first + 1 + second, len);
+            this._setSequence(seq);
+            return true;
+        });
+    }
+
+    // ------------------------------------------------------------------
     // Events
     // ------------------------------------------------------------------
 

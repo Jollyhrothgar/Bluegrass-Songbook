@@ -387,6 +387,80 @@ describe('EditingFacade — copyRange clipboard control', () => {
     });
 });
 
+describe('EditingFacade — repeats & endings (reading_list ops)', () => {
+    // Repeat signs/endings are DERIVED from reading_list (play-order
+    // ranges); editing repeats = editing the ranges. The ops work on
+    // the expanded play sequence and recompress.
+    let f;
+    beforeEach(() => { f = new EditingFacade(banjoDoc()); }); // 4 measures, no reading list
+
+    it('repeatSpan duplicates the span in play order', () => {
+        expect(f.repeatSpan(1, 2)).toBe(true);
+        expect(f.otf.reading_list).toEqual([
+            { from_measure: 1, to_measure: 2 },
+            { from_measure: 1, to_measure: 4 },
+        ]);
+    });
+
+    it('repeatSpan mid-document splits ranges correctly', () => {
+        f.repeatSpan(2, 3);
+        expect(f.otf.reading_list).toEqual([
+            { from_measure: 1, to_measure: 3 },
+            { from_measure: 2, to_measure: 4 },
+        ]);
+    });
+
+    it('repeatSpan is undoable in one step', () => {
+        const before = f.export();
+        f.repeatSpan(1, 2);
+        f.undo();
+        expect(f.export()).toEqual(before);
+    });
+
+    it('removeRepeat deletes the SECOND occurrence', () => {
+        f.repeatSpan(1, 2);
+        expect(f.removeRepeat(1, 2)).toBe(true);
+        // back to a plain read-through (empty list = identity)
+        expect(f.otf.reading_list || []).toEqual([]);
+    });
+
+    it('removeRepeat returns false when there is no repeat', () => {
+        expect(f.removeRepeat(1, 2)).toBe(false);
+        expect(f.canUndo()).toBe(false);
+    });
+
+    it('repeatSpanWithEndings produces the TablEdit range shape', () => {
+        // body 1-2, 1st ending 3, 2nd ending 4:
+        // play 1,2,3 | 1,2 | 4
+        expect(f.repeatSpanWithEndings(1, 3, 3, 4)).toBe(true);
+        expect(f.otf.reading_list).toEqual([
+            { from_measure: 1, to_measure: 3 },
+            { from_measure: 1, to_measure: 2 },
+            { from_measure: 4, to_measure: 4 },
+        ]);
+    });
+
+    it('endings validate their boundaries', () => {
+        expect(f.repeatSpanWithEndings(3, 1, 2, 4)).toBe(false); // ending before body
+        expect(f.repeatSpanWithEndings(1, 3, 3, 3)).toBe(false); // no 2nd ending room
+        expect(f.canUndo()).toBe(false);
+    });
+
+    it('repeat of an unplayed span is rejected', () => {
+        f.repeatSpanWithEndings(1, 3, 3, 4);
+        // measure 3 now only occurs inside the first pass; 3..4 is not
+        // contiguous anywhere in the play order
+        expect(f.repeatSpan(3, 4)).toBe(false);
+    });
+
+    it('playback timeline reflects the repeat (player-facing)', () => {
+        f.repeatSpan(1, 2);
+        // play order 1,2,1,2,3,4 → six slots
+        const seq = f.readingSequence();
+        expect(seq).toEqual([1, 2, 1, 2, 3, 4]);
+    });
+});
+
 describe('EditingFacade — undo that never lies', () => {
     let f;
     beforeEach(() => { f = new EditingFacade(banjoDoc()); });

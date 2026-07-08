@@ -5,6 +5,10 @@ import { TabRenderer } from '../renderers/tablature.js';
 import { TabPlayer } from '../renderers/tab-player.js';
 import { EditorState, EditorMode, DURATIONS, TICKS_PER_BEAT } from './state.js';
 import { EditorCursor, positionFromSvgPoint } from './cursor.js';
+import {
+    prepareCompactNotation, readingListTimeline, TimelineTiming,
+    maxMeasureIn, makePlaybackToVisualMapper,
+} from '../renderers/measure-timing.js';
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar } from './toolbar.js';
 import { NoteEntryPopover } from './popover.js';
@@ -81,6 +85,8 @@ export class OTFEditor {
             },
             loop: () => this.loopSelection(),
             play: () => this.playFromCursor(),
+            repeat: () => this._repeatSelectedMeasures(true),
+            unrepeat: () => this._repeatSelectedMeasures(false),
         });
         this.popover = new NoteEntryPopover(this.state, {
             onInsert: (note) => this._handlePopoverInsert(note),
@@ -517,6 +523,22 @@ export class OTFEditor {
     }
 
     /**
+     * Repeat (or un-repeat) the WHOLE MEASURES the selection touches.
+     * Repeat signs derive from the reading list, so this is a facade
+     * reading_list op — undoable, and playback unrolls it.
+     */
+    _repeatSelectedMeasures(add) {
+        if (!this.state.selection) return;
+        const { start, end } = this.state.selection.getNormalized(this.state.ticksPerMeasure);
+        const ok = add
+            ? this.state.facade.repeatSpan(start.measure, end.measure)
+            : this.state.facade.removeRepeat(start.measure, end.measure);
+        if (ok) {
+            this.state.setMode(EditorMode.NORMAL);
+        }
+    }
+
+    /**
      * Cut: the selection when there is one, else the event at the cursor.
      */
     _cutSelectionOrTick() {
@@ -712,9 +734,17 @@ export class OTFEditor {
      */
     _render() {
         const track = this.state.getCurrentTrack();
-        const notation = this.state.getNotation();
+        let notation = this.state.getNotation();
 
         if (!track || !notation) return;
+
+        // Repeat signs / ending brackets derive from the reading list;
+        // compact presentation keeps WRITTEN numbering (identity), so
+        // all editing geometry is unaffected.
+        const rl = this.state.otf.reading_list;
+        if (rl && rl.length > 0) {
+            notation = prepareCompactNotation(notation, rl);
+        }
 
         // Render using TabRenderer, with the facade's ts-aware timing so
         // mid-tune signature changes get correct measure lengths + glyphs
@@ -988,6 +1018,29 @@ export class OTFEditor {
     }
 
     /**
+     * Playback runs in the UNROLLED (reading-list) tick domain while the
+     * editor displays written measures. These helpers bridge the two.
+     */
+    _playbackTiming() {
+        const otf = this.state.otf;
+        const max = Math.max(1, maxMeasureIn(otf.notation || {}));
+        return new TimelineTiming(
+            this.state.facade.measureTiming,
+            readingListTimeline(otf.reading_list, max));
+    }
+
+    /** Unrolled tick of a written position (its FIRST play occurrence). */
+    _unrolledTick(measure, tick) {
+        if (!this.state.otf.reading_list?.length) {
+            return this.state.facade.toAbs(measure, tick);
+        }
+        const playback = this._playbackTiming();
+        const slot = playback.slots.find(s => s.original === measure);
+        return slot ? slot.startTick + tick
+                    : this.state.facade.toAbs(measure, tick);
+    }
+
+    /**
      * Play from the cursor to the end (toggles off when playing).
      * The verify loop: type a phrase, hear it from right there.
      */
@@ -996,7 +1049,7 @@ export class OTFEditor {
             this.stop();
             return;
         }
-        const startTick = this.state.facade.toAbs(
+        const startTick = this._unrolledTick(
             this.state.cursor.measure, this.state.cursor.tick);
         await this.play({ startTick });
     }
@@ -1015,7 +1068,12 @@ export class OTFEditor {
             await this.playFromCursor();
             return;
         }
-        await this.play({ startTick: sel.startAbs, endTick: sel.endAbs, loop: true });
+        // Map the written-domain selection into the unrolled playback
+        // domain (first occurrence)
+        const { start, end } = this.state.selection.getNormalized(this.state.ticksPerMeasure);
+        const startTick = this._unrolledTick(start.measure, start.tick);
+        const endTick = this._unrolledTick(end.measure, end.tick) + this.state.gridSubdivision;
+        await this.play({ startTick, endTick, loop: true });
     }
 
     /**
@@ -1027,17 +1085,23 @@ export class OTFEditor {
 
         const otf = this.state.export();
 
+        // Playback ticks are UNROLLED; the editor displays written
+        // measures — map ticks back for the beat cursor / highlights
+        const mapper = otf.reading_list?.length
+            ? makePlaybackToVisualMapper(this._playbackTiming(), this.state.facade.timing)
+            : (t) => t;
+
         // Set up visualization callbacks
         this.player.onTick = (absTick) => {
-            this.renderer.updateBeatCursor(absTick, { autoScroll: true });
+            this.renderer.updateBeatCursor(mapper(absTick), { autoScroll: true });
         };
 
         this.player.onNoteStart = (absTick) => {
-            this.renderer.highlightNote(absTick);
+            this.renderer.highlightNote(mapper(absTick));
         };
 
         this.player.onNoteEnd = (absTick) => {
-            this.renderer.clearNoteHighlight(absTick);
+            this.renderer.clearNoteHighlight(mapper(absTick));
         };
 
         this.player.onPlaybackEnd = () => {

@@ -40,6 +40,11 @@ export class ContextMenu {
                 ? { id: 'loop', label: 'Loop selection', kbd: 'L' }
                 : { id: 'play', label: 'Play from here', kbd: '⇧Space' },
         ];
+        if (hasSelection) {
+            items.push({ sep: true });
+            items.push({ id: 'repeat', label: 'Repeat measures ×2', kbd: '|: :|' });
+            items.push({ id: 'unrepeat', label: 'Remove repeat', kbd: '' });
+        }
 
         const menu = document.createElement('div');
         menu.className = 'otf-context-menu';
