@@ -1,3 +1,17 @@
 id: jerusalem-ridge
-title: "Jerusalem Ridge"
-tags: [Instrumental, Bluegrass, Scruggs]
+title: Jerusalem Ridge
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '13248'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=13248
+    author: fivestring61
+    imported_at: '2026-07-08'

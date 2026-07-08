@@ -5,6 +5,8 @@ default_key: A
 tags:
 - Instrumental
 - OldTime
+- Bluegrass
+- Scruggs
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,3 +15,13 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '12124'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12124
+    author: Mirek Tim Patek
+    imported_at: '2026-07-08'

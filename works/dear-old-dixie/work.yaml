@@ -1,0 +1,20 @@
+id: dear-old-dixie
+title: Dear Old Dixie
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '20545'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20545
+    author: Jollyhrothgar
+    imported_at: '2026-07-08'
