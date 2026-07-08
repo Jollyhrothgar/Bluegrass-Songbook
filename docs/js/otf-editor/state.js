@@ -279,6 +279,25 @@ export class EditorState {
     }
 
     /**
+     * Switch which track is being edited (multi-track OTFs). Resets the
+     * cursor to the track's start and clears any selection.
+     * @returns {boolean} false for unknown track ids
+     */
+    setTrack(trackId) {
+        if (!this.otf.tracks.some(t => t.id === trackId)) return false;
+        if (trackId === this.trackId) return true;
+        this.facade.setTrack(trackId);
+        this.trackId = trackId;
+        this.selection = null;
+        this.mode = EditorMode.NORMAL;
+        this.cursor = new CursorPosition(1, 0,
+            Math.min(3, this.getStringCount()), trackId);
+        this._emit('trackChange', trackId);
+        this._emit('change', this.otf);
+        return true;
+    }
+
+    /**
      * Get current track
      */
     getCurrentTrack() {

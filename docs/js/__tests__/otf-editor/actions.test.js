@@ -3,6 +3,7 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 
 import {
     createEmptyOTF,
+    createMultiTrackOTF,
     addMeasures,
     trimEmptyMeasures,
     quantize,
@@ -17,6 +18,35 @@ import {
     downloadOTF,
 } from '../../otf-editor/actions.js';
 import { EditorState, DURATIONS } from '../../otf-editor/state.js';
+
+describe('createMultiTrackOTF (new-tab flow)', () => {
+    it('builds one track per instrument with empty measures', () => {
+        const otf = createMultiTrackOTF({
+            instruments: ['5-string-banjo', '6-string-guitar', 'upright-bass'],
+            title: 'My Tune', timeSignature: '3/4', tempo: 90, measures: 8,
+        });
+        expect(otf.tracks.map(t => t.id)).toEqual(['banjo', 'guitar', 'bass']);
+        expect(otf.tracks[0].role).toBe('lead');
+        expect(otf.tracks[1].role).toBe('backup');
+        expect(otf.metadata.title).toBe('My Tune');
+        expect(otf.metadata.time_signature).toBe('3/4');
+        expect(otf.notation.banjo).toHaveLength(8);
+        expect(otf.notation.bass[7]).toEqual({ measure: 8, events: [] });
+        expect(otf.tracks[2].tuning).toHaveLength(4);
+    });
+
+    it('numbers duplicate instruments', () => {
+        const otf = createMultiTrackOTF({ instruments: ['5-string-banjo', '5-string-banjo'] });
+        expect(otf.tracks.map(t => t.id)).toEqual(['banjo', 'banjo-2']);
+        expect(Object.keys(otf.notation)).toEqual(['banjo', 'banjo-2']);
+    });
+
+    it('defaults sanely', () => {
+        const otf = createMultiTrackOTF();
+        expect(otf.tracks).toHaveLength(1);
+        expect(otf.notation.banjo).toHaveLength(16);
+    });
+});
 
 describe('createEmptyOTF', () => {
     it('creates 5-string banjo by default', () => {

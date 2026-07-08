@@ -89,6 +89,11 @@ export class EditorToolbar {
                 <div class="mode-indicator"></div>
             </div>
             <div class="toolbar-separator"></div>
+            <div class="toolbar-section track-section" style="display:none">
+                <span class="toolbar-label">Track</span>
+                <select class="track-select" title="Switch track"></select>
+            </div>
+            <div class="toolbar-separator track-section-sep" style="display:none"></div>
             <div class="toolbar-section duration-section">
                 <span class="toolbar-label">Duration</span>
                 <div class="button-group duration-buttons"></div>
@@ -143,6 +148,24 @@ export class EditorToolbar {
 
         // Apply styles
         this._applyStyles();
+
+        // Track switcher (shown only for multi-track documents)
+        this.trackSelect = this.element.querySelector('.track-select');
+        const tracks = this.state.otf?.tracks || [];
+        if (tracks.length > 1) {
+            for (const t of tracks) {
+                const opt = document.createElement('option');
+                opt.value = t.id;
+                opt.textContent = t.id;
+                if (t.id === this.state.trackId) opt.selected = true;
+                this.trackSelect.appendChild(opt);
+            }
+            this.element.querySelector('.track-section').style.display = '';
+            this.element.querySelector('.track-section-sep').style.display = '';
+            this.trackSelect.addEventListener('change', () => {
+                this.state.setTrack(this.trackSelect.value);
+            });
+        }
 
         // Get references
         this.modeIndicator = this.element.querySelector('.mode-indicator');

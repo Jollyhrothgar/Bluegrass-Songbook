@@ -69,6 +69,46 @@ export function createEmptyOTF(instrument = '5-string-banjo', options = {}) {
 }
 
 /**
+ * Create an empty MULTI-track OTF (the "new tab" flow). Instruments are
+ * data: any list of the known presets; duplicate instruments get
+ * numbered ids (banjo, banjo-2).
+ *
+ * @param {Object} options
+ * @param {string[]} options.instruments - e.g. ['5-string-banjo', '6-string-guitar']
+ * @param {string} [options.title]
+ * @param {string} [options.timeSignature]
+ * @param {number} [options.tempo]
+ * @param {number} [options.measures] - initial empty measures per track
+ */
+export function createMultiTrackOTF({
+    instruments = ['5-string-banjo'],
+    title = 'Untitled',
+    timeSignature = '4/4',
+    tempo = 120,
+    measures = 16,
+    key = '',
+} = {}) {
+    const base = createEmptyOTF(instruments[0] || '5-string-banjo',
+        { title, timeSignature, tempo, key });
+    base.tracks = [];
+    base.notation = {};
+
+    const used = new Set();
+    for (const instrument of instruments) {
+        const single = createEmptyOTF(instrument);
+        const track = single.tracks[0];
+        let id = track.id;
+        let n = 2;
+        while (used.has(id)) id = `${track.id}-${n++}`;
+        used.add(id);
+        base.tracks.push({ ...track, id, role: base.tracks.length === 0 ? 'lead' : 'backup' });
+        base.notation[id] = Array.from({ length: measures },
+            (_, i) => ({ measure: i + 1, events: [] }));
+    }
+    return base;
+}
+
+/**
  * Add measures to OTF document
  * @param {Object} otf - OTF document
  * @param {string} trackId - Track ID
