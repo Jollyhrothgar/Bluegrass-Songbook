@@ -378,7 +378,23 @@ uploads a .tef → workflow parses (tef_parser), runs sanity checks,
 opens a PR with the OTF + work wiring. The parser is done; this is the
 cheapest possible "add a tab" path for the Banjo Hangout crowd.
 
-### 5. Rich-MIDI oracle leg (verify the 20 PARTIALs' other modules)
+### 5. Rich-MIDI oracle leg — LANDED (2a4160457), 19 PARTIALs need exports
+Built and proven on the existing samples: spike/midi_reader.py (stdlib
+SMF), spike/midi_verify.py (per-track (tick,pitch) multiset compare;
+OTF unrolls reading_list ts-aware, skips ties; ticks ×480/division),
+spike/midi_upgrade.py (records evidence in the manifest, promotes
+PARTIAL→VERIFIED at 100%). 27493 verified on ALL FOUR tracks →
+manifest now 88 VERIFIED / 19 PARTIAL. Discovery: TablEdit SWING
+playback — 27493's banjo plays off-beat eighths +40 ticks uniformly;
+detect_swing() models exactly that shape (uniform Δ, off-beats only).
+NB per-string channels DON'T survive >16-string multi-track files —
+string-level tech recovery must use pitch+tuning heuristics; (tick,
+pitch) verification is exact regardless. Remaining: export the 19
+PARTIALs' .mid via TablEdit GUI (recipe below), then midi_upgrade
+each; techniques/chokes recovery from bends + note shapes is the
+follow-on (m45 slides).
+
+### 5-old. Original notes
 MusicXML exports only ONE module per file; Rich Tablature MIDI contains
 ALL tracks (per-string channels) and pitch-bends (chokes).
 - Build a MIDI leg for the verifier: parse Rich MIDI, unroll the reading
