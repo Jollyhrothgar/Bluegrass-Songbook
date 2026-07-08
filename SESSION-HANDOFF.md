@@ -298,18 +298,18 @@ priority order (impact × cost):
    root-five. Insert template at cursor, then retouch frets. This is
    the "pattern-based" DESIGN.md promise and the biggest raw-keystroke
    win (a roll = 1 action instead of ~24 keys).
-5. **Repeat signs + endings editing** — AABB needs reading_list +
-   repeatStart/repeatEnd/ending marks; renderer DRAWS them, but no
-   facade op or UI sets them. Facade: setRepeat(fromMeasure,
-   toMeasure, {endings}) mutating reading_list; UI: select measures →
-   "repeat" button. Without this no real tune can be authored.
-6. **In-editor track switcher** — multi-track docs need exit+re-enter
-   to change track today. Toolbar dropdown → facade.setTrack + cursor
-   reset. Small.
-7. **New-tab-from-scratch flow** — the editor can only open EXISTING
-   tabs (work-view Edit / harness); createEmptyOTF has no UI. "New
-   tab" dialog: title, instruments (multi-track), ts, tempo, key.
-   Needed for the free-TablEdit story; medium.
+5. ~~**Repeat signs + endings editing**~~ DONE (15384a6c0): facade
+   repeatSpan / repeatSpanWithEndings / removeRepeat over reading_list
+   (expand→splice→recompress); editor renders compact marks; playback
+   maps written↔unrolled both directions; context-menu Repeat ×2 /
+   Remove repeat on measure selections. LIVE CHECK PENDING (dev server
+   wedged mid-verification; jsdom mount of 27493 clean).
+6. ~~**In-editor track switcher**~~ DONE (e89bc8534): state.setTrack +
+   toolbar Track dropdown for multi-track docs.
+7. ~~**New-tab-from-scratch flow**~~ DONE (e89bc8534):
+   docs/create.html + create-tab.js (buildNewTab, localStorage drafts
+   with Resume/Discard); actions.createMultiTrackOTF. Not yet linked
+   from the site nav — decide placement at merge time.
 8. **Paste-transpose** (shift frets/strings on paste, harmony parts) —
    original brief's "transpose on paste later"; after #2.
 
