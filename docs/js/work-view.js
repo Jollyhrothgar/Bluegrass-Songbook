@@ -832,9 +832,10 @@ async function enterTabEditMode(otf, part, container) {
         tablaturePlayer.stop();
     }
 
-    const [{ OTFEditor }, { createTabEditSession, resolveEditTrackId }] = await Promise.all([
+    const [{ OTFEditor }, { createTabEditSession, resolveEditTrackId }, { submitTab }] = await Promise.all([
         import('./otf-editor/editor.js'),
         import('./otf-editor/work-edit.js'),
+        import('./otf-editor/submit-tab.js'),
     ]);
 
     // Park the header controls while editing (they drive dead renderers)
@@ -857,6 +858,16 @@ async function enterTabEditMode(otf, part, container) {
             setLoadedTablature(doc);
         },
         onExit: () => renderTablaturePart(part, container),
+        // Save-back: same human-approved GitHub-issue pipeline as song
+        // corrections — the editor's payoff beyond Download
+        onSubmit: (doc, comment) => submitTab({
+            type: 'tab-correction',
+            otf: doc,
+            title: currentWork?.title || doc.metadata?.title || 'Untitled',
+            instrument: part.instrument || 'banjo',
+            workId: currentWork?.id,
+            comment,
+        }),
     });
 }
 

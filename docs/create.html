@@ -69,8 +69,10 @@
             <div class="editor-bar">
                 <strong id="editor-title"></strong>
                 <span>
+                    <button id="btn-submit">🚀 Submit for review</button>
                     <button id="btn-download">⬇ Download OTF</button>
                     <button id="btn-new">Start over</button>
+                    <span id="submit-status"></span>
                 </span>
             </div>
             <div id="editor-host"></div>
@@ -83,6 +85,7 @@
             INSTRUMENT_CHOICES, buildNewTab,
             saveDraft, loadDraft, clearDraft,
         } from './js/otf-editor/create-tab.js';
+        import { submitTab } from './js/otf-editor/submit-tab.js';
 
         const $ = (id) => document.getElementById(id);
 
@@ -125,6 +128,24 @@
         });
 
         $('btn-download').addEventListener('click', () => editor?.download());
+        $('btn-submit').addEventListener('click', async () => {
+            if (!editor) return;
+            const status = $('submit-status');
+            status.textContent = 'Submitting…';
+            try {
+                const doc = editor.save();
+                const result = await submitTab({
+                    type: 'tab-submission',
+                    otf: doc,
+                    title: doc.metadata?.title || 'Untitled',
+                    instrument: doc.tracks[0]?.id || 'banjo',
+                });
+                status.innerHTML = `Submitted! <a href="${result.issueUrl}" target="_blank" rel="noopener">Issue #${result.issueNumber}</a> — it goes live once approved.`;
+                clearDraft();
+            } catch (e) {
+                status.textContent = `Failed: ${e.message}`;
+            }
+        });
         $('btn-new').addEventListener('click', () => {
             if (!confirm('Discard this tab and start over?')) return;
             clearDraft();

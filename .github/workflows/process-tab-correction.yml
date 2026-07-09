@@ -1,0 +1,94 @@
+name: Process Tab Correction
+
+on:
+  issues:
+    types: [labeled]
+
+# Serialize all content-processing workflows to prevent push conflicts
+concurrency:
+  group: content-processing
+  cancel-in-progress: false
+
+jobs:
+  process-tab:
+    # Runs when 'approved' is added to a tab-correction OR tab-submission issue
+    if: >-
+      github.event.label.name == 'approved' &&
+      (contains(github.event.issue.labels.*.name, 'tab-correction') ||
+       contains(github.event.issue.labels.*.name, 'tab-submission'))
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Process tab
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: uv run python scripts/lib/process_tab.py
+
+      - name: Rebuild search index
+        run: uv run python scripts/lib/build_works_index.py --skip-fuzzy
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add works/
+          git add docs/data/index.jsonl
+          git add docs/data/tabs/
+          git diff --staged --quiet || git commit -m "Apply tab update from #${{ github.event.issue.number }}
+
+          ${{ github.event.issue.title }}
+
+          🤖 Generated with [Claude Code](https://claude.ai/claude-code)"
+
+          for i in 1 2 3; do
+            git push && break
+            echo "Push failed, attempt $i - pulling and retrying..."
+            git pull --rebase
+          done
+
+      - name: Close issue with comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let workId = 'unknown';
+            try {
+              workId = fs.readFileSync('/tmp/processed_work_id.txt', 'utf8').trim();
+            } catch (e) {
+              console.log('Could not read work ID');
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ **Tab update applied!**\n\nWork: \`works/${workId}/\` — it will appear on the site after the next deploy.\n\nThank you for your contribution!`
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });

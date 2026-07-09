@@ -147,6 +147,36 @@ describe('createTabEditSession', () => {
         expect(mount.querySelector('.tab-edit-bar')).not.toBeNull();
     });
 
+    it('Submit panel requires a comment and calls onSubmit with the doc', async () => {
+        const onSubmit = vi.fn(async () => ({ issueNumber: 9, issueUrl: 'https://x/9' }));
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, onSubmit,
+        });
+        mount.querySelector('.tab-edit-submit').click();
+        const panel = mount.querySelector('.tab-edit-submit-panel');
+        expect(panel.style.display).toBe('flex');
+
+        panel.querySelector('.tab-edit-submit-send').click();
+        await Promise.resolve();
+        expect(onSubmit).not.toHaveBeenCalled(); // empty comment refused
+
+        panel.querySelector('.tab-edit-submit-comment').value = 'fixed the B part';
+        panel.querySelector('.tab-edit-submit-send').click();
+        await vi.waitFor(() => expect(onSubmit).toHaveBeenCalled());
+        expect(onSubmit).toHaveBeenCalledWith({ edited: true }, 'fixed the B part');
+        await vi.waitFor(() => {
+            expect(panel.querySelector('.tab-edit-submit-status').textContent)
+                .toContain('#9');
+        });
+    });
+
+    it('no Submit button without an onSubmit handler', () => {
+        start();
+        expect(mount.querySelector('.tab-edit-submit')).toBeNull();
+    });
+
     it('destroy is idempotent', () => {
         start();
         session.destroy();

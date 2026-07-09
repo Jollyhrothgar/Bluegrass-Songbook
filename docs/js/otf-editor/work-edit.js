@@ -46,6 +46,7 @@ export function createTabEditSession({
     editorFactory,
     onApply = () => {},
     onExit = () => {},
+    onSubmit = null,
     confirmDiscard = null,
 }) {
     const root = document.createElement('div');
@@ -57,12 +58,30 @@ export function createTabEditSession({
     bar.innerHTML = `
         <span class="tab-edit-title">✏️ Editing${trackId ? ` — ${trackId}` : ''}</span>
         <span class="tab-edit-actions" style="display:flex;gap:8px;">
+            ${onSubmit ? '<button type="button" class="tab-edit-submit qc-btn" title="Submit this correction for review">🚀 Submit correction</button>' : ''}
             <button type="button" class="tab-edit-download qc-btn" title="Download the edited OTF">⬇ Download</button>
             <button type="button" class="tab-edit-cancel qc-btn" title="Discard changes and go back">Cancel</button>
             <button type="button" class="tab-edit-done qc-toggle-btn" title="Apply changes to the view">✓ Done</button>
         </span>
     `;
     root.appendChild(bar);
+
+    // Inline submit panel (comment required — same as song corrections)
+    let submitPanel = null;
+    if (onSubmit) {
+        submitPanel = document.createElement('div');
+        submitPanel.className = 'tab-edit-submit-panel';
+        submitPanel.style.cssText = 'display:none;gap:8px;margin:0 0 8px;align-items:center;flex-wrap:wrap;';
+        submitPanel.innerHTML = `
+            <input type="text" class="tab-edit-submit-comment"
+                   placeholder="Describe your changes (required)"
+                   style="flex:1;min-width:220px;padding:6px 8px;">
+            <button type="button" class="tab-edit-submit-send qc-toggle-btn">Send</button>
+            <button type="button" class="tab-edit-submit-cancel qc-btn">Back</button>
+            <span class="tab-edit-submit-status"></span>
+        `;
+        root.appendChild(submitPanel);
+    }
 
     const host = document.createElement('div');
     host.className = 'tab-edit-host';
@@ -126,6 +145,35 @@ export function createTabEditSession({
     bar.querySelector('.tab-edit-done').addEventListener('click', () => session.applyAndExit());
     bar.querySelector('.tab-edit-cancel').addEventListener('click', () => session.cancel());
     bar.querySelector('.tab-edit-download').addEventListener('click', () => editor.download?.(filename));
+
+    if (onSubmit && submitPanel) {
+        const status = submitPanel.querySelector('.tab-edit-submit-status');
+        const comment = submitPanel.querySelector('.tab-edit-submit-comment');
+        bar.querySelector('.tab-edit-submit').addEventListener('click', () => {
+            submitPanel.style.display = 'flex';
+            comment.focus();
+        });
+        submitPanel.querySelector('.tab-edit-submit-cancel').addEventListener('click', () => {
+            submitPanel.style.display = 'none';
+            status.textContent = '';
+        });
+        submitPanel.querySelector('.tab-edit-submit-send').addEventListener('click', async () => {
+            const text = comment.value.trim();
+            if (!text) {
+                status.textContent = 'Please describe your changes.';
+                return;
+            }
+            status.textContent = 'Submitting…';
+            try {
+                const result = await onSubmit(editor.save(), text);
+                status.innerHTML = result?.issueUrl
+                    ? `Submitted! <a href="${result.issueUrl}" target="_blank" rel="noopener">Issue #${result.issueNumber}</a> — it goes live once approved.`
+                    : 'Submitted for review!';
+            } catch (e) {
+                status.textContent = `Failed: ${e.message}`;
+            }
+        });
+    }
 
     return session;
 }
