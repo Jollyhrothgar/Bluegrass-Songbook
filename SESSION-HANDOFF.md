@@ -255,17 +255,51 @@ tied melody notes short when backing tracks are playing.
   Tied-note truncation FIXED (3f1b4586e): explicit durs + tie chains
   play full length (cut only by same-string re-attack); ring-model
   parsed tabs sound unchanged.
-  **GO-LIVE STATUS: machinery complete incl. SAVE-BACK (a3a1e45e6).**
-  Tab edits ride the song-correction pipeline: editor 🚀 Submit →
-  create-tab-issue edge function → labeled issue → human 'approved' →
-  process-tab-correction.yml → process_tab.py (validated) → works/ →
-  index rebuild → deploy. create.html submits NEW tabs the same way.
-  Remaining before merge: (1) Mike deploys the edge function
-  (`supabase functions deploy create-tab-issue` — needs GITHUB_PAT
-  secret, same as create-song-issue), (2) live/ear checks (repeats UI,
-  create.html, playback durations — dev server was wedged), (3) nav
-  link for create.html, (4) merge to main (CI = vitest 709 ✓; also
-  14 e2e + 63 pytest locally).
+  **GO-LIVE STATUS: machinery complete incl. SAVE-BACK — now PR-BASED
+  (d5fa9c13f, replacing the issue-body flow; OTFs blew the 64KB issue
+  cap).** Editor 🚀 Submit / create.html → create-tab-pr edge function
+  (supabase/functions/create-tab-pr/index.ts): branches off main,
+  commits the OTF via contents API, opens a labeled PR
+  (tab-correction/tab-submission) → process-tab-pr.yml finalizes the
+  branch (process_tab.py provenance + index rebuild --skip-fuzzy) →
+  merging the PR = approval. Remaining before merge: (1) Mike deploys
+  `supabase functions deploy create-tab-pr` (GITHUB_PAT needs contents
+  write), (2) ear checks (playback durations, repeats UI, create.html),
+  (3) nav link for create.html, (4) merge to main (CI = vitest 711 ✓;
+  also 14 e2e + ~71 pytest locally).
+
+### USABILITY QUEST round 1 (2026-07-08, from Mike's live pass)
+Mike: "interact with the served website… play buttons missing, some
+tabs parse weirdly (cherokee-shuffle-a), focus-mode exit dead." All
+fixed + live-verified on :8081 (commits 2e67513b9, d2912d3c4):
+- **33 golden works had STALE PARSES** from the denominator-bug era
+  (2/2 measures left-packed at half width — cherokee-shuffle-a's "weird
+  parse"). Re-converted every golden work with a local downloads/*.tef
+  source (33 changed / 11 identical / 32 no local source), rebuilt
+  docs/data/tabs + index.jsonl (--skip-fuzzy; FULL fuzzy now exceeds
+  the sandbox 45s cap). Lesson: after any parser fix, regen works/ too
+  — parsed/ regen alone leaves published works stale.
+- **Focus-mode exit/prev/next dead on work pages**: work-view renders
+  #focus-exit-btn etc. but nothing wired them (song-view wires its own
+  copies). Global click delegation in main.js now catches all four
+  (incl. #focus-controls-toggle).
+- **Play button hidden behind the collapsed ⚙️ Controls disclosure**:
+  tablature parts now default the disclosure EXPANDED (stored pref
+  still wins) — work-view.js.
+- **Header ✏️ Edit (next to Export) opened the ChordPro song editor on
+  tab-only works** — empty paste box, dead end. Hidden on tablature
+  parts via partUsesSongActions() (utils.js, tested); song-view
+  renderSong restores it. The tab controls row keeps its own ✏️ Edit.
+- Verified end-to-end in Chrome: search (landing box is Enter-driven)
+  → version picker (attribution shown) → work; focus enter/exit; tab
+  Edit session mount/cancel; create.html serves. NB: probing the DOM
+  right after navigation races the async OTF render (~2-3s) — the
+  song-view stays .hidden until first render; wait before asserting.
+  Browser HTTP cache can serve stale OTF JSON on the dev server —
+  hard reload before judging parses.
+- Export dropdown on tab-only works still offers ChordPro/Plain-text
+  copy+download (empty/meaningless there; Print may be useful). Left
+  as-is — decide with the create.html nav-link at merge time.
 - 2c UX passes — see the ERGONOMICS WALKTHROUGH below (2026-07-05),
   which replaces the old loose list.
 
