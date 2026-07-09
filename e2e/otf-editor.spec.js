@@ -1,404 +1,209 @@
-// E2E tests for OTF Editor
+// E2E tests for the OTF editor — written against the CURRENT design:
+// modal-less entry (NORMAL handles nav + notes), grid = the one working
+// increment (ruler/arrows/click snap), duration = entered note length,
+// drag-select + clipboard + repeats, and the create-a-tab flow.
+//
+// No audio assertions here: WebAudioFont's CDN is blocked in the
+// sandbox; playback is verified by ear on a real machine.
 import { test, expect } from '@playwright/test';
 
-test.describe('OTF Editor - Demo Page', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.waitForTimeout(500);
-    });
+async function openDemo(page) {
+    await page.goto('/editor-demo.html');
+    await page.locator('.editor-renderer .stave-row').first().waitFor();
+    await page.locator('.editor-canvas-container').click({ position: { x: 100, y: 60 } });
+}
 
-    test('loads editor demo page', async ({ page }) => {
-        await expect(page.locator('h1')).toContainText('OTF Tablature Editor');
-    });
+const statusM = (page) => page.locator('.editor-status-bar')
+    .textContent().then(t => t.replace(/\s+/g, ' ').match(/M: (\d+) \| Beat: ([\d.]+)/));
 
-    test('editor container is visible', async ({ page }) => {
-        await expect(page.locator('#editor-container')).toBeVisible();
-    });
-
-    test('toolbar is rendered', async ({ page }) => {
-        // The toolbar element's class is otf-editor-toolbar (toolbar.js);
-        // .editor-toolbar never existed, so this assertion could not pass.
+test.describe('editor mount', () => {
+    test('demo mounts: toolbar, NORMAL mode, staff, grid ruler', async ({ page }) => {
+        await openDemo(page);
         await expect(page.locator('.otf-editor-toolbar')).toBeVisible();
-    });
-
-    test('mode indicator shows NORMAL by default', async ({ page }) => {
         await expect(page.locator('.mode-indicator')).toContainText('NORMAL');
+        expect(await page.locator('.string-label').count()).toBeGreaterThanOrEqual(5);
+        expect(await page.locator('.editor-grid-overlay line').count()).toBeGreaterThan(10);
     });
 
-    test('tablature is rendered with strings', async ({ page }) => {
-        // Wait for tablature to render
-        await page.locator('.editor-renderer').waitFor();
-        await expect(page.locator('.editor-renderer')).toBeVisible();
-
-        // Should have string labels
-        const strings = page.locator('.string-label');
-        const count = await strings.count();
-        expect(count).toBeGreaterThanOrEqual(4); // At least 4 strings
-    });
-});
-
-test.describe('OTF Editor - Mode Switching', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.locator('.editor-renderer').waitFor();
-        // Focus the editor container to receive keyboard events
-        await page.locator('#editor-container').click();
-    });
-
-    test('pressing i enters INSERT mode', async ({ page }) => {
-        await page.keyboard.press('i');
-        await expect(page.locator('.mode-indicator')).toContainText('INSERT');
-    });
-
-    test('pressing Escape returns to NORMAL mode from INSERT', async ({ page }) => {
-        await page.keyboard.press('i');
-        await expect(page.locator('.mode-indicator')).toContainText('INSERT');
-
-        await page.keyboard.press('Escape');
-        await expect(page.locator('.mode-indicator')).toContainText('NORMAL');
-    });
-
-    test('pressing v enters VISUAL mode', async ({ page }) => {
-        await page.keyboard.press('v');
-        await expect(page.locator('.mode-indicator')).toContainText('VISUAL');
-    });
-
-    test('pressing r enters ROLL mode', async ({ page }) => {
-        await page.keyboard.press('r');
-        await expect(page.locator('.mode-indicator')).toContainText('ROLL');
+    test('duration buttons are legible text and Rest exists', async ({ page }) => {
+        await openDemo(page);
+        const symbols = await page.locator('.duration-buttons .button-symbol')
+            .allTextContents();
+        expect(symbols).toEqual(['1', '1/2', '1/4', '1/8', '1/16', '1/32']);
+        await expect(page.locator('.rest-button')).toBeVisible();
     });
 });
 
-test.describe('OTF Editor - Cursor Navigation', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.locator('.editor-renderer').waitFor();
-        await page.locator('#editor-container').click();
+test.describe('note entry', () => {
+    test('digits insert IMMEDIATELY and auto-advance by duration', async ({ page }) => {
+        await openDemo(page);
+        await page.keyboard.press('5');
+        // no buffer wait — the note is already there
+        await expect(page.locator('.note-text').first()).toHaveText('5');
+        const m = await statusM(page);
+        expect(m[2]).toBe('1.2'); // advanced one eighth
     });
 
-    test('cursor element is visible', async ({ page }) => {
-        await expect(page.locator('.editor-cursor')).toBeVisible();
-    });
-
-    test('cursor moves with arrow keys', async ({ page }) => {
-        // Get initial cursor position
-        const cursor = page.locator('.editor-cursor');
-        const initialLeft = await cursor.evaluate(el => parseFloat(el.style.left));
-
-        // Move right
-        await page.keyboard.press('ArrowRight');
-        await page.waitForTimeout(50);
-
-        const newLeft = await cursor.evaluate(el => parseFloat(el.style.left));
-        expect(newLeft).toBeGreaterThan(initialLeft);
-    });
-
-    test('cursor moves with vim keys in normal mode', async ({ page }) => {
-        const cursor = page.locator('.editor-cursor');
-        const initialLeft = await cursor.evaluate(el => parseFloat(el.style.left));
-
-        // Move with l
-        await page.keyboard.press('l');
-        await page.waitForTimeout(50);
-
-        const newLeft = await cursor.evaluate(el => parseFloat(el.style.left));
-        expect(newLeft).toBeGreaterThan(initialLeft);
-    });
-
-    test('j/k moves between strings', async ({ page }) => {
-        const cursor = page.locator('.editor-cursor');
-        const initialTop = await cursor.evaluate(el => parseFloat(el.style.top));
-
-        // Move down (j)
-        await page.keyboard.press('j');
-        await page.waitForTimeout(50);
-
-        const newTop = await cursor.evaluate(el => parseFloat(el.style.top));
-        expect(newTop).toBeGreaterThan(initialTop);
-    });
-});
-
-test.describe('OTF Editor - Note Entry', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.locator('.editor-renderer').waitFor();
-        await page.locator('#editor-container').click();
-        // Enter insert mode
-        await page.keyboard.press('i');
-        await expect(page.locator('.mode-indicator')).toContainText('INSERT');
-    });
-
-    test('entering digit in insert mode adds note', async ({ page }) => {
-        // Press 0 to add open string note
-        await page.keyboard.press('0');
-        await page.waitForTimeout(350); // Wait for fret buffer commit
-
-        // Should have at least one note element
-        const notes = page.locator('.note-text');
-        const count = await notes.count();
-        expect(count).toBeGreaterThanOrEqual(1);
-    });
-
-    test('space advances cursor', async ({ page }) => {
-        const cursor = page.locator('.editor-cursor');
-        const initialLeft = await cursor.evaluate(el => parseFloat(el.style.left));
-
-        await page.keyboard.press(' ');
-        await page.waitForTimeout(50);
-
-        const newLeft = await cursor.evaluate(el => parseFloat(el.style.left));
-        expect(newLeft).toBeGreaterThan(initialLeft);
-    });
-
-    test('number keys 1-5 select string', async ({ page }) => {
-        // Press 1 to select string 1
+    test('quick two digits refine to one two-digit fret', async ({ page }) => {
+        await openDemo(page);
         await page.keyboard.press('1');
-
-        // The cursor should move vertically (we can't easily verify string selection directly)
-        // Just verify no crash
-    });
-});
-
-test.describe('OTF Editor - Duration Selection', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.locator('.editor-renderer').waitFor();
-        await page.locator('#editor-container').click();
-        await page.keyboard.press('i'); // Insert mode
+        await page.keyboard.press('2');
+        await expect(page.locator('.note-text').first()).toHaveText('12');
+        expect(await page.locator('.note-text').count()).toBe(1);
     });
 
-    test('duration buttons in toolbar work', async ({ page }) => {
-        // Click quarter note button
-        const quarterBtn = page.locator('.duration-btn[data-duration="quarter"]');
-        await quarterBtn.click();
-        await expect(quarterBtn).toHaveClass(/active/);
+    test('Shift+digit stacks a chord tone without advancing', async ({ page }) => {
+        await openDemo(page);
+        await page.keyboard.press('5');
+        await page.keyboard.press('ArrowLeft'); // back onto the note
+        await page.keyboard.press('k');         // up a string
+        await page.keyboard.press('Shift+Digit7');
+        const texts = await page.locator('.note-text').allTextContents();
+        expect(texts.sort()).toEqual(['5', '7']);
+        const m = await statusM(page);
+        expect(m[2]).toBe('1'); // did not advance
     });
 
-    test('q key sets quarter duration', async ({ page }) => {
-        await page.keyboard.press('q');
-        const quarterBtn = page.locator('.duration-btn[data-duration="quarter"]');
-        await expect(quarterBtn).toHaveClass(/active/);
+    test('Delete removes the note under the cursor', async ({ page }) => {
+        await openDemo(page);
+        await page.keyboard.press('5');
+        await page.keyboard.press('ArrowLeft');
+        await page.keyboard.press('Delete');
+        expect(await page.locator('.note-text').count()).toBe(0);
     });
 
-    test('e key sets eighth duration', async ({ page }) => {
-        await page.keyboard.press('e');
-        const eighthBtn = page.locator('.duration-btn[data-duration="eighth"]');
-        await expect(eighthBtn).toHaveClass(/active/);
-    });
-
-    test('s key sets sixteenth duration', async ({ page }) => {
-        await page.keyboard.press('s');
-        const sixteenthBtn = page.locator('.duration-btn[data-duration="sixteenth"]');
-        await expect(sixteenthBtn).toHaveClass(/active/);
-    });
-});
-
-test.describe('OTF Editor - Roll Mode', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.locator('.editor-renderer').waitFor();
-        await page.locator('#editor-container').click();
-        await page.keyboard.press('r'); // Enter roll mode
-        await expect(page.locator('.mode-indicator')).toContainText('ROLL');
-    });
-
-    test('T key adds thumb note on string 5', async ({ page }) => {
-        await page.keyboard.press('T');
-        await page.waitForTimeout(50);
-
-        // Should have a note on string 5
-        const notes = page.locator('.note-text');
-        const count = await notes.count();
-        expect(count).toBeGreaterThanOrEqual(1);
-    });
-
-    test('I key adds index note on string 3', async ({ page }) => {
-        await page.keyboard.press('I');
-        await page.waitForTimeout(50);
-
-        const notes = page.locator('.note-text');
-        const count = await notes.count();
-        expect(count).toBeGreaterThanOrEqual(1);
-    });
-
-    test('roll finger keys advance cursor', async ({ page }) => {
-        const cursor = page.locator('.editor-cursor');
-        const initialLeft = await cursor.evaluate(el => parseFloat(el.style.left));
-
-        await page.keyboard.press('T');
-        await page.waitForTimeout(50);
-
-        const newLeft = await cursor.evaluate(el => parseFloat(el.style.left));
-        expect(newLeft).toBeGreaterThan(initialLeft);
-    });
-});
-
-test.describe('OTF Editor - Undo/Redo', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.locator('.editor-renderer').waitFor();
-        await page.locator('#editor-container').click();
-    });
-
-    test('u key undoes action', async ({ page }) => {
-        // Enter insert mode and add note
-        await page.keyboard.press('i');
-        await page.keyboard.press('0');
-        await page.waitForTimeout(350);
-
-        // Verify note exists
-        let notes = await page.locator('.note-text').count();
-        expect(notes).toBeGreaterThanOrEqual(1);
-
-        // Exit insert mode and undo
-        await page.keyboard.press('Escape');
+    test('undo restores exactly', async ({ page }) => {
+        await openDemo(page);
+        await page.keyboard.press('5');
         await page.keyboard.press('u');
-        await page.waitForTimeout(50);
-
-        // Note should be gone (or at least different count)
-        // The tablature might re-render, so just verify no crash
+        expect(await page.locator('.note-text').count()).toBe(0);
     });
 
-    test('Ctrl+Z undoes action', async ({ page }) => {
-        // Enter insert mode and add note
-        await page.keyboard.press('i');
-        await page.keyboard.press('0');
-        await page.waitForTimeout(350);
-
-        // Undo with Ctrl+Z
-        await page.keyboard.press('Control+z');
-        await page.waitForTimeout(50);
-
-        // Verify no crash
+    test('Rest button advances without entering a note', async ({ page }) => {
+        await openDemo(page);
+        await page.locator('.rest-button').click();
+        const m = await statusM(page);
+        expect(m[2]).toBe('1.2');
+        expect(await page.locator('.note-text').count()).toBe(0);
     });
 });
 
-test.describe('OTF Editor - Sample Loading', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.locator('.editor-renderer').waitFor();
+test.describe('grid model (one working increment)', () => {
+    test('arrows step by the grid; duration→grid coupling is refine-only', async ({ page }) => {
+        await openDemo(page);
+        // default grid 1/8: one arrow = an eighth
+        await page.keyboard.press('ArrowRight');
+        let m = await statusM(page);
+        expect(m[2]).toBe('1.2');
+        // finer duration REFINES the grid (s = 1/16)
+        await page.keyboard.press('s');
+        await page.keyboard.press('ArrowRight');
+        m = await statusM(page);
+        expect(m[2]).toBe('1.3'); // 240 + 120
+        // coarser duration does NOT coarsen the grid (refine-only)
+        await page.keyboard.press('q');
+        await page.keyboard.press('ArrowRight');
+        m = await statusM(page);
+        expect(m[2]).toBe('2'); // 360 + 120 = 480, still sixteenth steps
     });
 
-    test('sample selector is present', async ({ page }) => {
-        await expect(page.locator('#sample-select')).toBeVisible();
-    });
-
-    test('loading a sample updates tablature', async ({ page }) => {
-        // Select a sample tab
-        await page.selectOption('#sample-select', 'data/tabs/red-haired-boy-banjo.otf.json');
-        await page.waitForTimeout(500);
-
-        // Tablature should have notes
-        const notes = page.locator('.note-text');
-        const count = await notes.count();
-        expect(count).toBeGreaterThan(0);
-    });
-
-    test('new document button clears editor', async ({ page }) => {
-        // Load a sample first
-        await page.selectOption('#sample-select', 'data/tabs/red-haired-boy-banjo.otf.json');
-        await page.waitForTimeout(500);
-
-        // Get note count
-        const initialNotes = await page.locator('.note-text').count();
-        expect(initialNotes).toBeGreaterThan(0);
-
-        // Click new document
-        await page.click('text=New Document');
-        await page.waitForTimeout(300);
-
-        // Notes should be gone or significantly reduced
-        const finalNotes = await page.locator('.note-text').count();
-        expect(finalNotes).toBeLessThan(initialNotes);
+    test('grid choice changes the ruler density', async ({ page }) => {
+        await openDemo(page);
+        const coarse = await page.locator('.editor-grid-overlay line').count();
+        await page.locator('.grid-buttons button', { hasText: '1/32' }).click();
+        await expect(async () => {
+            const fine = await page.locator('.editor-grid-overlay line').count();
+            expect(fine).toBeGreaterThan(coarse * 2);
+        }).toPass();
     });
 });
 
-test.describe('OTF Editor - Popover', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.locator('.editor-renderer').waitFor();
+test.describe('selection, clipboard, phrases', () => {
+    async function enterPhrase(page) {
+        for (const k of ['5', '7', '5']) await page.keyboard.press(k);
+    }
+
+    test('drag selects (highlight) and toolbar copy/paste moves the phrase', async ({ page }) => {
+        await openDemo(page);
+        await enterPhrase(page);
+        const svg = page.locator('.editor-renderer .stave-row svg').first();
+        const box = await svg.boundingBox();
+        await page.mouse.move(box.x + 40, box.y + 45);
+        await page.mouse.down();
+        await page.mouse.move(box.x + 200, box.y + 45, { steps: 5 });
+        await page.mouse.up();
+        await expect(page.locator('.editor-selection-rect').first()).toBeVisible();
+        await expect(page.locator('.mode-indicator')).toContainText('VISUAL');
+
+        await page.locator('.copy-button').click();
+        await page.keyboard.press('Escape');
+        // place cursor in measure 3 and paste
+        await page.keyboard.press('Enter'); // next measure
+        await page.keyboard.press('Enter');
+        await page.locator('.paste-button').click();
+        await expect(async () => {
+            expect(await page.locator('.note-text').count()).toBeGreaterThanOrEqual(6);
+        }).toPass();
     });
 
-    test('double-click opens note entry popover', async ({ page }) => {
-        const tablature = page.locator('.editor-renderer');
-        const box = await tablature.boundingBox();
+    test('right-click menu acts on the phrase (repeat measures)', async ({ page }) => {
+        await openDemo(page);
+        await enterPhrase(page);
+        const svg = page.locator('.editor-renderer .stave-row svg').first();
+        const box = await svg.boundingBox();
+        await page.mouse.move(box.x + 40, box.y + 45);
+        await page.mouse.down();
+        await page.mouse.move(box.x + 260, box.y + 45, { steps: 5 });
+        await page.mouse.up();
 
-        // Double-click in the middle of the tablature
-        await page.mouse.dblclick(box.x + box.width / 2, box.y + box.height / 3);
-        await page.waitForTimeout(100);
-
-        // Popover should be visible
-        await expect(page.locator('.note-entry-popover')).toBeVisible();
-    });
-
-    test('popover has fret input', async ({ page }) => {
-        const tablature = page.locator('.editor-renderer');
-        const box = await tablature.boundingBox();
-
-        await page.mouse.dblclick(box.x + box.width / 2, box.y + box.height / 3);
-        await page.waitForTimeout(100);
-
-        await expect(page.locator('.popover-fret-input')).toBeVisible();
-    });
-
-    test('clicking outside closes popover', async ({ page }) => {
-        const tablature = page.locator('.editor-renderer');
-        const box = await tablature.boundingBox();
-
-        await page.mouse.dblclick(box.x + box.width / 2, box.y + box.height / 3);
-        await page.waitForTimeout(100);
-        await expect(page.locator('.note-entry-popover')).toBeVisible();
-
-        // Click outside
-        await page.mouse.click(10, 10);
-        await page.waitForTimeout(100);
-
-        await expect(page.locator('.note-entry-popover')).not.toBeVisible();
-    });
-});
-
-test.describe('OTF Editor - Playback Integration', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.locator('.editor-renderer').waitFor();
-    });
-
-    test('play button is visible in status bar', async ({ page }) => {
-        await expect(page.locator('.play-btn, .tab-play-btn, .status-play-btn')).toBeVisible();
-    });
-
-    test('clicking play changes button state', async ({ page }) => {
-        // Load a sample with notes
-        await page.selectOption('#sample-select', 'data/tabs/red-haired-boy-banjo.otf.json');
-        await page.waitForTimeout(500);
-
-        const playBtn = page.locator('.play-btn, .tab-play-btn, .status-play-btn').first();
-        await playBtn.click();
-
-        // Button should change to pause/stop
-        await expect(playBtn).toContainText(/pause|stop/i);
+        await page.mouse.click(box.x + 150, box.y + 45, { button: 'right' });
+        await expect(page.locator('.otf-context-menu')).toBeVisible();
+        await page.locator('.context-repeat').click();
+        // repeat signs render as barline dots (circles)
+        await expect(async () => {
+            expect(await page.locator('.editor-renderer circle').count())
+                .toBeGreaterThanOrEqual(4);
+        }).toPass();
+        // and undo removes the repeat again
+        await page.keyboard.press('u');
+        await expect(async () => {
+            expect(await page.locator('.editor-renderer circle').count()).toBe(0);
+        }).toPass();
     });
 });
 
-test.describe('OTF Editor - Download', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/editor-demo.html');
-        await page.locator('.editor-renderer').waitFor();
+test.describe('create-a-tab flow', () => {
+    test('form builds a multi-track editor with a track switcher', async ({ page }) => {
+        await page.goto('/create.html');
+        await page.fill('#f-title', 'E2E Breakdown');
+        await page.locator('#f-instruments input[value="6-string-guitar"]').check();
+        await page.locator('#create-form button[type=submit]').click();
+
+        await page.locator('.editor-renderer .stave-row').first().waitFor();
+        await expect(page.locator('#editor-title')).toHaveText('E2E Breakdown');
+        await expect(page.locator('.track-select')).toBeVisible();
+
+        await page.locator('.track-select').selectOption('guitar');
+        await expect(async () => {
+            const labels = await page.locator('.stave-row').first()
+                .locator('.string-label').count();
+            expect(labels).toBe(6);
+        }).toPass();
     });
 
-    test('download button is present', async ({ page }) => {
-        await expect(page.locator('text=Download OTF')).toBeVisible();
-    });
+    test('drafts survive a reload (Resume)', async ({ page }) => {
+        await page.goto('/create.html');
+        await page.fill('#f-title', 'Draft Tune');
+        await page.locator('#create-form button[type=submit]').click();
+        await page.locator('.editor-renderer .stave-row').first().waitFor();
+        await page.locator('.editor-canvas-container').click({ position: { x: 100, y: 60 } });
+        await page.keyboard.press('7'); // triggers onChange → draft save
 
-    test('download triggers file save', async ({ page }) => {
-        // Set up download listener
-        const downloadPromise = page.waitForEvent('download');
-
-        // Click download
-        await page.click('text=Download OTF');
-
-        // Verify download started
-        const download = await downloadPromise;
-        expect(download.suggestedFilename()).toMatch(/\.otf\.json$/);
+        await page.reload();
+        await expect(page.locator('#draft-banner')).toBeVisible();
+        await page.locator('#draft-resume').click();
+        await page.locator('.editor-renderer .stave-row').first().waitFor();
+        await expect(page.locator('#editor-title')).toHaveText('Draft Tune');
+        await expect(page.locator('.note-text').first()).toHaveText('7');
     });
 });

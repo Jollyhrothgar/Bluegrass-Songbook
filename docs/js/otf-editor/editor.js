@@ -71,22 +71,29 @@ export class OTFEditor {
             onLoop: () => this.loopSelection(),
             onRest: () => this.cursor.moveByDuration(1),
         });
+        // Menu actions refocus the editor afterwards — otherwise the
+        // keyboard is dead after any mouse-menu action (focus stays on
+        // the clicked menu button's ghost)
+        const refocus = (fn) => () => {
+            fn();
+            this.editorRoot?.focus();
+        };
         this.contextMenu = new ContextMenu({
-            copy: () => this.state.copy(),
-            cut: () => this._cutSelectionOrTick(),
-            paste: () => this.state.paste(),
-            delete: () => {
+            copy: refocus(() => this.state.copy()),
+            cut: refocus(() => this._cutSelectionOrTick()),
+            paste: refocus(() => this.state.paste()),
+            delete: refocus(() => {
                 if (this.state.selection) {
                     this.state.deleteSelection();
                     this.state.setMode(EditorMode.NORMAL);
                 } else {
                     this.state.deleteNote();
                 }
-            },
-            loop: () => this.loopSelection(),
-            play: () => this.playFromCursor(),
-            repeat: () => this._repeatSelectedMeasures(true),
-            unrepeat: () => this._repeatSelectedMeasures(false),
+            }),
+            loop: refocus(() => this.loopSelection()),
+            play: refocus(() => this.playFromCursor()),
+            repeat: refocus(() => this._repeatSelectedMeasures(true)),
+            unrepeat: refocus(() => this._repeatSelectedMeasures(false)),
         });
         this.popover = new NoteEntryPopover(this.state, {
             onInsert: (note) => this._handlePopoverInsert(note),
