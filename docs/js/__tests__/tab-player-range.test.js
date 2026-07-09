@@ -2,7 +2,11 @@
 // Pure schedule math — the audio side is exercised live in the browser.
 import { describe, it, expect } from 'vitest';
 
-import { clipScheduleToRange } from '../renderers/tab-player.js';
+import {
+    clipScheduleToRange,
+    applyTieExtensions,
+    effectiveDurationSeconds,
+} from '../renderers/tab-player.js';
 
 // 120 BPM, 480 tpq → 1 tick ≈ 1.0417ms; use a round number instead
 const SPT = 0.001; // seconds per tick, keeps expectations readable
@@ -14,6 +18,68 @@ const notes = [
     { absTick: 1440, time: 1.44, midi: 67 },
     { absTick: 1920, time: 1.92, midi: 69 },
 ];
+
+describe('applyTieExtensions (tie chains ring through)', () => {
+    it('extends the source note through its continuations', () => {
+        const trackNotes = [
+            { absTick: 960, string: 3, explicitEndTick: 1920 }, // 960-tick half
+        ];
+        applyTieExtensions(trackNotes, [
+            { absTick: 1920, string: 3, durTicks: 960 },  // tied into m2
+            { absTick: 2880, string: 3, durTicks: 480 },  // and further
+        ]);
+        expect(trackNotes[0].explicitEndTick).toBe(3360); // full whole+quarter
+    });
+
+    it('only extends notes on the SAME string, before the tie', () => {
+        const trackNotes = [
+            { absTick: 0, string: 2 },
+            { absTick: 480, string: 3 },
+        ];
+        applyTieExtensions(trackNotes, [{ absTick: 960, string: 3, durTicks: 480 }]);
+        expect(trackNotes[0].explicitEndTick).toBeUndefined();
+        expect(trackNotes[1].explicitEndTick).toBe(1440);
+    });
+
+    it('ignores orphan ties', () => {
+        const trackNotes = [{ absTick: 960, string: 1 }];
+        applyTieExtensions(trackNotes, [{ absTick: 0, string: 1, durTicks: 480 }]);
+        expect(trackNotes[0].explicitEndTick).toBeUndefined();
+    });
+});
+
+describe('effectiveDurationSeconds', () => {
+    const base = { decay: 1.5, sustain: 1.0 };
+
+    it('explicit durations survive other tracks\' events', () => {
+        // whole note (4s) with a backing track hitting every 0.25s
+        const d = effectiveDurationSeconds(
+            { ...base, explicitDurSec: 4 }, 10, 0.25);
+        expect(d).toBe(4); // NOT cut to 0.25
+    });
+
+    it('a re-attack on the same string still cuts an explicit note', () => {
+        const d = effectiveDurationSeconds(
+            { ...base, explicitDurSec: 4 }, 1.0, 0.25);
+        expect(d).toBe(1.0);
+    });
+
+    it('ring-model notes keep the legacy any-track truncation', () => {
+        const d = effectiveDurationSeconds(base, 10, 0.25);
+        expect(d).toBeCloseTo(0.25 * 0.95);
+    });
+
+    it('ring-model notes cap at the mixer decay', () => {
+        const d = effectiveDurationSeconds(base, 10, 10);
+        expect(d).toBe(1.5);
+    });
+
+    it('sustain scales, floor holds', () => {
+        expect(effectiveDurationSeconds({ decay: 1.5, sustain: 0.5, explicitDurSec: 2 }, 10, 10))
+            .toBe(1.0);
+        expect(effectiveDurationSeconds(base, 0.001, 0.001)).toBeCloseTo(0.03);
+    });
+});
 
 describe('clipScheduleToRange', () => {
     it('keeps everything with the default open range', () => {

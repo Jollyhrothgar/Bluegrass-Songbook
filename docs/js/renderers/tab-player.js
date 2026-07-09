@@ -72,6 +72,52 @@ function loadScript(url) {
 }
 
 /**
+ * Extend note durations across tie chains: a tie continuation never
+ * re-attacks, but the SOURCE note must ring through it. Pure.
+ *
+ * @param {Array} trackNotes - collected notes (absTick, string, ...)
+ * @param {Array} ties - skipped tie continuations [{absTick, string, durTicks}]
+ * @returns {void} mutates trackNotes' explicitEndTick
+ */
+export function applyTieExtensions(trackNotes, ties) {
+    for (const tie of ties) {
+        let source = null;
+        for (const n of trackNotes) {
+            if (n.string === tie.string && n.absTick < tie.absTick
+                && (!source || n.absTick > source.absTick)) {
+                source = n;
+            }
+        }
+        if (!source) continue;
+        const end = tie.absTick + (tie.durTicks || 0);
+        source.explicitEndTick = Math.max(source.explicitEndTick || 0, end);
+    }
+}
+
+/**
+ * Audible duration for one scheduled note. Explicit durations
+ * (editor-entered notes, tie chains) are honored — only a new attack
+ * on the SAME string cuts them short. Ring-model notes (parsed tabs
+ * without durations) keep the legacy behavior: cut at the next event
+ * on ANY track, capped by the mixer decay. Pure.
+ *
+ * @param {Object} note - {explicitDurSec?, decay, sustain}
+ * @param {number} stringGap - seconds to the next attack on this string
+ * @param {number} rhythmicGap - seconds to the next event on any track
+ */
+export function effectiveDurationSeconds(note, stringGap, rhythmicGap) {
+    let duration;
+    if (note.explicitDurSec != null) {
+        duration = Math.min(note.explicitDurSec, stringGap);
+    } else {
+        duration = Math.min(stringGap, rhythmicGap) * 0.95;
+        duration = Math.min(duration, note.decay);
+    }
+    duration = Math.max(duration, 0.03);
+    return duration * note.sustain;
+}
+
+/**
  * Clip a schedule to a tick range and rebase times so the range starts
  * at t=0. Pure — this is the heart of play-from-cursor / loop-a-phrase.
  *
@@ -331,14 +377,18 @@ export class TabPlayer {
             }
 
             const trackNotes = [];
+            const ties = [];
             notation.forEach(measure => {
                 const measureTick = timing.startTick(measure.measure);
                 measure.events?.forEach(event => {
                     const absTick = measureTick + event.tick;
                     event.notes.forEach(note => {
-                        // Skip tied notes - they extend the previous note's duration
-                        // but should not be re-articulated
-                        if (note.tie) return;
+                        // Tie continuations never re-attack; they extend
+                        // their source note (applied below)
+                        if (note.tie) {
+                            ties.push({ absTick, string: note.s, durTicks: note.dur || 0 });
+                            return;
+                        }
 
                         const stringIdx = note.s - 1;
                         if (stringIdx >= 0 && stringIdx < tuning.length) {
@@ -350,6 +400,8 @@ export class TabPlayer {
                                 fret: note.f,
                                 midi: tuning[stringIdx] + note.f + transpose,
                                 measure: measure.measure,
+                                // Editor-entered notes carry explicit durations
+                                explicitEndTick: note.dur ? absTick + note.dur : undefined,
                                 instrumentData,
                                 volume: mix.volume,
                                 sustain: mix.sustain,
@@ -361,6 +413,7 @@ export class TabPlayer {
                     });
                 });
             });
+            applyTieExtensions(trackNotes, ties);
             trackNotes.sort((a, b) => a.time - b.time);
             notesByTrack[track.id] = trackNotes;
         }
@@ -412,29 +465,36 @@ export class TabPlayer {
                         rhythmicGap = sortedTimes[timeIdx + 1] - note.time;
                     }
 
-                    // Use the smaller of string gap and rhythmic gap
-                    // This ensures notes don't ring past their rhythmic slot
-                    let duration = Math.min(stringGap, rhythmicGap) * 0.95;
+                    // Explicit durations (editor-entered notes, tie
+                    // chains) play their FULL length — only a re-attack
+                    // on the same string cuts them. Ring-model notes
+                    // keep the legacy any-track truncation. (This was
+                    // the tied-melody-note-cut-short-by-backing-tracks
+                    // playback nuance.)
+                    if (note.explicitEndTick != null) {
+                        note.explicitDurSec =
+                            (note.explicitEndTick - note.absTick) * secondsPerTick;
+                    }
+                    let duration = effectiveDurationSeconds(note, stringGap, rhythmicGap);
 
-                    // Cap at decay value and ensure minimum
-                    duration = Math.min(duration, note.decay);
-                    duration = Math.max(duration, 0.03);
-                    duration *= note.sustain;
-
-                    // Instrument-specific rules
-                    if (note.instrument?.includes('bass')) {
-                        const isOnBeat = (note.tick % 480) === 0;
-                        if (isOnBeat) {
-                            const ticksToOffBeat = 240;
-                            const timeToMute = ticksToOffBeat * secondsPerTick;
-                            duration = Math.min(duration, timeToMute * 0.9 * note.sustain);
-                        } else {
-                            duration = Math.min(duration, 0.1 * note.sustain);
-                        }
-                    } else if (note.instrument?.includes('guitar')) {
-                        const isOnBeat = (note.tick % 480) === 0;
-                        if (isOnBeat) {
-                            duration *= 0.8;
+                    // Instrument-specific chop/mute rules apply only to
+                    // ring-model notes (explicit durations already say
+                    // exactly how long to sound)
+                    if (note.explicitDurSec == null) {
+                        if (note.instrument?.includes('bass')) {
+                            const isOnBeat = (note.tick % 480) === 0;
+                            if (isOnBeat) {
+                                const ticksToOffBeat = 240;
+                                const timeToMute = ticksToOffBeat * secondsPerTick;
+                                duration = Math.min(duration, timeToMute * 0.9 * note.sustain);
+                            } else {
+                                duration = Math.min(duration, 0.1 * note.sustain);
+                            }
+                        } else if (note.instrument?.includes('guitar')) {
+                            const isOnBeat = (note.tick % 480) === 0;
+                            if (isOnBeat) {
+                                duration *= 0.8;
+                            }
                         }
                     }
 
