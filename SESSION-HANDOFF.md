@@ -255,10 +255,17 @@ tied melody notes short when backing tracks are playing.
   Tied-note truncation FIXED (3f1b4586e): explicit durs + tie chains
   play full length (cut only by same-string re-attack); ring-model
   parsed tabs sound unchanged.
-  **GO-LIVE STATUS: machinery complete.** Remaining before merge:
-  Mike's live/ear checks (repeats UI, create.html, playback durations —
-  dev server was wedged), nav link for create.html, then merge to main
-  (CI = vitest 703 ✓ green).
+  **GO-LIVE STATUS: machinery complete incl. SAVE-BACK (a3a1e45e6).**
+  Tab edits ride the song-correction pipeline: editor 🚀 Submit →
+  create-tab-issue edge function → labeled issue → human 'approved' →
+  process-tab-correction.yml → process_tab.py (validated) → works/ →
+  index rebuild → deploy. create.html submits NEW tabs the same way.
+  Remaining before merge: (1) Mike deploys the edge function
+  (`supabase functions deploy create-tab-issue` — needs GITHUB_PAT
+  secret, same as create-song-issue), (2) live/ear checks (repeats UI,
+  create.html, playback durations — dev server was wedged), (3) nav
+  link for create.html, (4) merge to main (CI = vitest 709 ✓; also
+  14 e2e + 63 pytest locally).
 - 2c UX passes — see the ERGONOMICS WALKTHROUGH below (2026-07-05),
   which replaces the old loose list.
 
