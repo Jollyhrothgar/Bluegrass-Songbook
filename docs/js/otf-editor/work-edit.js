@@ -166,8 +166,8 @@ export function createTabEditSession({
             status.textContent = 'Submitting…';
             try {
                 const result = await onSubmit(editor.save(), text);
-                status.innerHTML = result?.issueUrl
-                    ? `Submitted! <a href="${result.issueUrl}" target="_blank" rel="noopener">Issue #${result.issueNumber}</a> — it goes live once approved.`
+                status.innerHTML = result?.prUrl
+                    ? `Submitted! <a href="${result.prUrl}" target="_blank" rel="noopener">PR #${result.prNumber}</a> — it goes live once merged.`
                     : 'Submitted for review!';
             } catch (e) {
                 status.textContent = `Failed: ${e.message}`;

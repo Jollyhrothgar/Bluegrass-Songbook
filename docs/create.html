@@ -140,7 +140,7 @@
                     title: doc.metadata?.title || 'Untitled',
                     instrument: doc.tracks[0]?.id || 'banjo',
                 });
-                status.innerHTML = `Submitted! <a href="${result.issueUrl}" target="_blank" rel="noopener">Issue #${result.issueNumber}</a> — it goes live once approved.`;
+                status.innerHTML = `Submitted! <a href="${result.prUrl}" target="_blank" rel="noopener">PR #${result.prNumber}</a> — it goes live once merged.`;
                 clearDraft();
             } catch (e) {
                 status.textContent = `Failed: ${e.message}`;

@@ -148,7 +148,7 @@ describe('createTabEditSession', () => {
     });
 
     it('Submit panel requires a comment and calls onSubmit with the doc', async () => {
-        const onSubmit = vi.fn(async () => ({ issueNumber: 9, issueUrl: 'https://x/9' }));
+        const onSubmit = vi.fn(async () => ({ prNumber: 9, prUrl: 'https://x/pull/9' }));
         session = createTabEditSession({
             mount, otf: multiTrackOtf(), trackId: 'banjo',
             editorFactory: (options) => { editor.factoryOptions = options; return editor; },

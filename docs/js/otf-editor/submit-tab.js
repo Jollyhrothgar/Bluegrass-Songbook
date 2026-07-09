@@ -1,17 +1,18 @@
-// Tab submission client — posts editor output to the create-tab-issue
-// edge function, riding the SAME human-approved GitHub-issue pipeline
-// as song corrections and ABC tunes.
+// Tab submission client — posts editor output to the create-tab-pr
+// edge function, which commits the OTF FILE to a branch and opens a
+// labeled pull request (Mike's design: the file itself travels, no
+// issue-body size cap, native PR review, merge = approve).
 
 const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
 
-// GitHub issue bodies cap at 65536 chars; leave template headroom
-export const MAX_OTF_CHARS = 60000;
+// Sanity cap only — the PR flow commits the file itself, so there is
+// no issue-body limit (corpus max is ~180KB)
+export const MAX_OTF_CHARS = 2_000_000;
 
 /**
  * Compact-serialize an OTF for submission: strips view-cache fields
- * (like _partFile). Throws with a helpful message when the tab is too
- * large for the issue pipeline.
+ * (like _partFile).
  */
 export function serializeForSubmission(otf) {
     const clean = JSON.parse(JSON.stringify(otf));
@@ -21,9 +22,8 @@ export function serializeForSubmission(otf) {
     const compact = JSON.stringify(clean);
     if (compact.length > MAX_OTF_CHARS) {
         throw new Error(
-            `This tab is too large to submit through the site `
-            + `(${Math.round(compact.length / 1024)}KB). `
-            + `Download the OTF and attach it to a GitHub issue instead.`);
+            `This tab is implausibly large `
+            + `(${Math.round(compact.length / 1024)}KB) — refusing to submit.`);
     }
     return compact;
 }
@@ -48,7 +48,7 @@ export function submitterAttribution() {
  * @param {string} [p.workId] - required for corrections
  * @param {string} [p.comment] - required for corrections
  * @param {Function} [fetchImpl] - injectable for tests
- * @returns {Promise<{issueNumber: number, issueUrl: string}>}
+ * @returns {Promise<{prNumber: number, prUrl: string}>}
  */
 export async function submitTab(
     { type, otf, title, instrument, workId, comment },
@@ -63,7 +63,7 @@ export async function submitTab(
         otf: serializeForSubmission(otf),
         submittedBy: submitterAttribution(),
     };
-    const response = await fetchImpl(`${SUPABASE_URL}/functions/v1/create-tab-issue`, {
+    const response = await fetchImpl(`${SUPABASE_URL}/functions/v1/create-tab-pr`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -76,5 +76,5 @@ export async function submitTab(
     if (!response.ok || !result.success) {
         throw new Error(result.error || 'Failed to submit tab');
     }
-    return { issueNumber: result.issueNumber, issueUrl: result.issueUrl };
+    return { prNumber: result.prNumber, prUrl: result.prUrl };
 }

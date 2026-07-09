@@ -21,30 +21,30 @@ describe('serializeForSubmission', () => {
         expect(JSON.parse(s).tracks[0].id).toBe('banjo');
     });
 
-    it('refuses oversized tabs with a helpful message', () => {
+    it('refuses implausibly large payloads', () => {
         const big = smallOtf();
-        big.notation.banjo = Array.from({ length: 40000 }, (_, i) => ({
+        big.notation.banjo = Array.from({ length: 400000 }, (_, i) => ({
             measure: i + 1,
             events: [{ tick: 0, notes: [{ s: 1, f: 0 }] }],
         }));
-        expect(() => serializeForSubmission(big)).toThrow(/too large/);
+        expect(() => serializeForSubmission(big)).toThrow(/large/);
     });
 });
 
 describe('submitTab', () => {
-    const okFetch = (result = { success: true, issueNumber: 7, issueUrl: 'https://x/7' }) =>
+    const okFetch = (result = { success: true, prNumber: 7, prUrl: 'https://x/pull/7' }) =>
         vi.fn(async () => ({ ok: true, json: async () => result }));
 
-    it('posts the correction payload to the edge function', async () => {
+    it('posts the correction payload to the PR edge function', async () => {
         const f = okFetch();
         const out = await submitTab({
             type: 'tab-correction', otf: smallOtf(), title: 'Gold Rush',
             instrument: 'banjo', workId: 'gold-rush', comment: 'fixed m3',
         }, f);
-        expect(out).toEqual({ issueNumber: 7, issueUrl: 'https://x/7' });
+        expect(out).toEqual({ prNumber: 7, prUrl: 'https://x/pull/7' });
 
         const [url, init] = f.mock.calls[0];
-        expect(url).toContain('/functions/v1/create-tab-issue');
+        expect(url).toContain('/functions/v1/create-tab-pr');
         const body = JSON.parse(init.body);
         expect(body.type).toBe('tab-correction');
         expect(body.workId).toBe('gold-rush');
