@@ -296,7 +296,8 @@
             "notes": [
               {
                 "s": 2,
-                "f": 1
+                "f": 1,
+                "finger": "T"
               }
             ]
           },
@@ -1331,7 +1332,8 @@
             "notes": [
               {
                 "s": 2,
-                "f": 1
+                "f": 1,
+                "finger": "T"
               }
             ]
           },
@@ -2190,5 +2192,10 @@
       "from_measure": 25,
       "to_measure": 32
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "27154.tef",
+    "converted_at": "2026-07-09T11:37:25.132853"
+  }
 }

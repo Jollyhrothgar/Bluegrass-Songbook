@@ -2842,5 +2842,10 @@
         ]
       }
     ]
+  },
+  "x_source": {
+    "type": "local",
+    "source_file": "10277.tef",
+    "converted_at": "2026-07-09T11:37:05.909652"
   }
 }

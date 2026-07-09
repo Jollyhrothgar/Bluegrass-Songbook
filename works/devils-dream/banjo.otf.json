@@ -38,6 +38,15 @@
             ]
           },
           {
+            "tick": 120,
+            "notes": [
+              {
+                "s": 2,
+                "f": 7
+              }
+            ]
+          },
+          {
             "tick": 240,
             "notes": [
               {
@@ -1235,5 +1244,10 @@
       "from_measure": 9,
       "to_measure": 16
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "27165.tef",
+    "converted_at": "2026-07-09T11:37:17.988608"
+  }
 }

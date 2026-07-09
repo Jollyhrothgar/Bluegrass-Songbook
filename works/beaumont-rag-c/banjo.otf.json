@@ -4,6 +4,12 @@
     "title": "Beaumont Rag",
     "time_signature": "4/4",
     "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 1,
+        "time_signature": "3/4"
+      }
+    ],
     "composer": "Arranged by Janet Davis"
   },
   "timing": {
@@ -54,7 +60,7 @@
         "measure": 1,
         "events": [
           {
-            "tick": 480,
+            "tick": 0,
             "notes": [
               {
                 "s": 3,
@@ -63,7 +69,7 @@
             ]
           },
           {
-            "tick": 960,
+            "tick": 480,
             "notes": [
               {
                 "s": 1,
@@ -72,7 +78,7 @@
             ]
           },
           {
-            "tick": 1440,
+            "tick": 960,
             "notes": [
               {
                 "s": 2,
@@ -2481,5 +2487,10 @@
       "from_measure": 1,
       "to_measure": 33
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "11557.tef",
+    "converted_at": "2026-07-09T11:37:09.572120"
+  }
 }

@@ -272,8 +272,15 @@ function renderWorkHeader() {
         }).join('')
         : '<em class="no-tags">None</em>';
 
-    // Disclosure states from localStorage
-    const controlsCollapsed = localStorage.getItem('workControlsCollapsed') !== 'false'; // Default collapsed
+    // Disclosure states from localStorage. Tablature parts default the
+    // controls OPEN — Play/tempo/Edit hidden behind a collapsed ⚙️ was
+    // the #1 "where's the play button?" complaint. An explicit user
+    // toggle (stored value) is respected either way.
+    const storedControls = localStorage.getItem('workControlsCollapsed');
+    const isTabPart = activePart?.type === 'tablature';
+    const controlsCollapsed = storedControls === null
+        ? !isTabPart                       // default: open for tabs, closed for lyrics
+        : storedControls !== 'false';
     const infoBarCollapsed = localStorage.getItem('infoBarCollapsed') !== 'false'; // Default collapsed
 
     // Focus header - shown in fullscreen mode

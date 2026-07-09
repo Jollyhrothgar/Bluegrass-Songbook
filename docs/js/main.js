@@ -2241,6 +2241,31 @@ function init() {
             toggleFullscreen();
             return;
         }
+
+        // Focus-mode header/nav buttons — delegated here so they work on
+        // EVERY view that renders the focus header (song-view wired its
+        // own copies; work-view rendered the same buttons unwired, so
+        // Exit was dead on tab pages)
+        if (target.closest('#focus-exit-btn')) {
+            exitFullscreen();
+            return;
+        }
+        if (target.closest('#focus-prev-btn')) {
+            navigatePrev();
+            return;
+        }
+        if (target.closest('#focus-next-btn')) {
+            navigateNext();
+            return;
+        }
+        if (target.closest('#focus-controls-toggle')) {
+            // song pages use quick-controls-content; work pages use
+            // work-controls-content — toggle whichever is present
+            const qc = document.getElementById('quick-controls-content')
+                || document.getElementById('work-controls-content');
+            qc?.classList.toggle('hidden');
+            return;
+        }
     });
 
     // Change event delegation for checkboxes and selects

@@ -14,13 +14,13 @@
       "id": "banjo",
       "instrument": "5-string-banjo",
       "tuning": [
-        "D4",
-        "A3",
-        "F#3",
-        "D3",
-        "F#4"
+        "E4",
+        "B3",
+        "G#3",
+        "E3",
+        "G#4"
       ],
-      "capo": 0,
+      "capo": 2,
       "role": "rhythm"
     }
   ],
@@ -1138,5 +1138,10 @@
       "from_measure": 18,
       "to_measure": 18
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "10776.tef",
+    "converted_at": "2026-07-09T11:37:16.594127"
+  }
 }

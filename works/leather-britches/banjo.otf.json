@@ -3,7 +3,13 @@
   "metadata": {
     "title": "Leather Britches",
     "time_signature": "4/4",
-    "tempo": 100
+    "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 1,
+        "time_signature": "1/4"
+      }
+    ]
   },
   "timing": {
     "ticks_per_beat": 480
@@ -29,7 +35,7 @@
         "measure": 1,
         "events": [
           {
-            "tick": 1440,
+            "tick": 0,
             "notes": [
               {
                 "s": 3,
@@ -38,7 +44,7 @@
             ]
           },
           {
-            "tick": 1600,
+            "tick": 160,
             "notes": [
               {
                 "s": 2,
@@ -47,7 +53,7 @@
             ]
           },
           {
-            "tick": 1760,
+            "tick": 320,
             "notes": [
               {
                 "s": 1,
@@ -1900,5 +1906,10 @@
       "from_measure": 26,
       "to_measure": 26
     }
-  ]
+  ],
+  "x_source": {
+    "type": "local",
+    "source_file": "18926.tef",
+    "converted_at": "2026-07-09T11:37:20.679607"
+  }
 }
