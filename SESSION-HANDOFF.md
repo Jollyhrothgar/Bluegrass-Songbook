@@ -247,9 +247,20 @@ tied melody notes short when backing tracks are playing.
   reading view unchanged); editor sets false → stable tick→x, gap
   kinds {slot, barline} only. If editing ever feels "left-packed",
   that's this tradeoff — intentional.
+- ~~2d~~ DONE: e2e/otf-editor.spec.js REWRITTEN against the shipped
+  design (c100365c8) — 14 tests, all passing in the sandbox
+  (headless-shell + libXdamage stub recipe; no audio assertions).
+  Found+fixed: context-menu actions left keyboard focus dead.
+  NB: CI's gate is npm test (vitest) only — e2e is the local layer.
+  Tied-note truncation FIXED (3f1b4586e): explicit durs + tie chains
+  play full length (cut only by same-string re-attack); ring-model
+  parsed tabs sound unchanged.
+  **GO-LIVE STATUS: machinery complete.** Remaining before merge:
+  Mike's live/ear checks (repeats UI, create.html, playback durations —
+  dev server was wedged), nav link for create.html, then merge to main
+  (CI = vitest 703 ✓ green).
 - 2c UX passes — see the ERGONOMICS WALKTHROUGH below (2026-07-05),
-  which replaces the old loose list. Then 2d: rewrite
-  e2e/otf-editor.spec.js + tied-note truncation fix.
+  which replaces the old loose list.
 
 **Entry/removal fixes landed 2026-07-05 (d6125e28a) from Mike's
 hands-on pass:** digits insert instantly (two-digit refine in place:
