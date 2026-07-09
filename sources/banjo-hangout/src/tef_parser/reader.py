@@ -1134,10 +1134,16 @@ class TEFReader:
                 grid_len = ts_size - 4 * d3
                 num = (grid_len * den) // 256 if den > 0 else 0
                 ts_move = 4 * d3
-                # d3 == 0 means the measure keeps the header DURATION — such
-                # markers are display-only variants (e.g. explicit 4/4 in a
-                # 2/2 tune) and are ignored; type 27 can only shorten.
-                if d3 > 0 and num > 0:
+                # d3 == 0 means the measure keeps the header DURATION, but
+                # the marker can still RE-LABEL the meter: 21874 has a 2/2
+                # header with an explicit 4/4 marker on every measure —
+                # same 1920 ticks, different displayed signature/beaming.
+                # TablEdit's per-measure model displays the marker's meter
+                # (its MusicXML export says 4/4), so emit re-labels too;
+                # only (num, den) == header is a true no-op. Tick math is
+                # untouched either way (ts_move stays 0 when d3 == 0).
+                if num > 0 and (d3 > 0 or (num, den) != (
+                        header.v2_time_num, header.v2_time_denom)):
                     ts_changes.append(TEFTimeSignatureChange(
                         measure=measure + 1, numerator=num, denominator=den))
                 offset += 6

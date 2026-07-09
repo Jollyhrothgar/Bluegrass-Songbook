@@ -510,6 +510,21 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
         for c in tef.time_signature_changes
     ]
 
+    # A file may RE-LABEL every measure with one signature (same-length
+    # type-27 markers — e.g. 21874: 2/2 header, explicit 4/4 on all 24
+    # measures). Promote a uniform, all-measure re-label to the global
+    # signature instead of emitting N per-measure entries. Mixed or
+    # partial coverage stays per-measure (OTF changes apply to their own
+    # measure only, reverting to the global signature after).
+    if tef.header.is_v2 and doc.metadata.time_signature_changes:
+        changes = doc.metadata.time_signature_changes
+        sigs = {c["time_signature"] for c in changes}
+        total = tef.header.v2_measures or 0
+        if (len(sigs) == 1 and total > 0
+                and {c["measure"] for c in changes} == set(range(1, total + 1))):
+            doc.metadata.time_signature = sigs.pop()
+            doc.metadata.time_signature_changes = []
+
     # Use 100 BPM as default - extracted tempos from TEF files are often unreliable
     doc.metadata.tempo = 100
 

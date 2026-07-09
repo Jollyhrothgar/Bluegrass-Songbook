@@ -879,10 +879,11 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "imported",
       "discovered_at": "2026-01-04T12:38:28.272743",
-      "downloaded_at": "2026-01-04T12:42:04.691127"
+      "downloaded_at": "2026-01-04T12:42:04.691127",
+      "imported_at": "2026-07-08T00:00:00",
+      "work_slug": "cherokee-shuffle-a"
     },
     "10277_tef": {
       "id": "10277_tef",

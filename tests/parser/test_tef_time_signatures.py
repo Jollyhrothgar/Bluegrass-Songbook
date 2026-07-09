@@ -20,7 +20,9 @@ inspection of 23602/21874):
 - wheel_hoss (header 4/4): 2/4 measures at 17/36/60/70; m17 guitar notes
   at ticks 0 and 480, m36 guitar at 0/240/480/720.
 - 23602 (header 2/4!): a single 1/4 measure at m26 (d3=16, grid 64).
-- 21874: a no-op explicit 4/4 marker on every measure -> no changes at all.
+- 21874: header 2/2 but an explicit 4/4 RE-LABEL (d3=0, same length) on
+  every measure -> global signature promoted to 4/4, no per-measure noise
+  (TablEdit's Measure(s) dialog and MusicXML export both show 4/4).
 """
 
 import sys
@@ -115,14 +117,30 @@ def test_23602_quarter_measure_in_two_four_tune():
 
 @pytest.mark.skipif(not (DOWNLOADS / "21874.tef").exists(),
                     reason="downloads corpus not present")
-def test_no_op_explicit_header_ts_markers_ignored():
-    """21874 carries an explicit 4/4 marker on every measure (d3=0) — these
-    match the header signature and must produce no changes and no shifts.
+def test_same_length_ts_relabels_promote_global_signature():
+    """21874 has a 2/2 HEADER but an explicit 4/4 marker on every measure
+    (d3=0: same 1920-tick length, different displayed meter). TablEdit's
+    per-measure model shows 4/4 throughout — its Measure(s) dialog and
+    MusicXML export both say 4/4 — so these are NOT no-ops (the old
+    reading treated them as matching the header and dropped them). The
+    reader emits the re-labels; the converter promotes a uniform
+    all-measure re-label to the global signature (no per-measure noise).
+    Tick math is untouched (ts_move = 0 when d3 = 0), so oracle
+    verification is unaffected.
     """
     tef = TEFReader(str(DOWNLOADS / "21874.tef")).parse()
-    assert tef.time_signature_changes == []
+    assert tef.header.v2_time_num == 2 and tef.header.v2_time_denom == 2
+    changes = [(c.measure, c.numerator, c.denominator)
+               for c in tef.time_signature_changes]
+    assert changes == [(m, 4, 4) for m in range(1, 25)]
+
     otf = tef_to_otf(tef).to_dict()
+    assert otf["metadata"]["time_signature"] == "4/4"
     assert "time_signature_changes" not in otf["metadata"]
+
+    # Note positions unchanged by the re-label (pickup notes on beat 4).
+    track = next(iter(otf["notation"]))
+    assert notes_at(otf, track, 1) == [(1440, 4, 0), (1680, 4, 2)]
 
 
 @pytest.mark.skipif(not (DOWNLOADS / "27493.tef").exists(),
