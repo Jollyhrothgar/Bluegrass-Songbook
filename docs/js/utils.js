@@ -106,3 +106,13 @@ export function generateLocalId() {
 export function isTabOnlyWork(song) {
     return song?.tablature_parts?.length > 0 && !song.content;
 }
+
+/**
+ * Whether the page-level song actions (the header ✏️ Edit button) apply
+ * to the given part. They edit chordpro lead sheets; on a tablature part
+ * they would open an empty song editor, so views hide them — tab parts
+ * carry their own Edit in the tab controls row.
+ */
+export function partUsesSongActions(part) {
+    return part?.type !== 'tablature';
+}

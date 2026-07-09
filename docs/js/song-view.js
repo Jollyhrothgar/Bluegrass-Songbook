@@ -429,6 +429,10 @@ function setupAbcPlayback() {
 export function renderSong(song, chordpro, isInitialRender = false) {
     if (!songContentEl) return;
 
+    // Restore the header ✏️ Edit (work-view hides it on tablature parts).
+    const editSongBtn = document.getElementById('edit-song-btn');
+    if (editSongBtn) editSongBtn.style.display = '';
+
     // Reset seen chord patterns for 'first' mode
     clearSeenChordPatterns();
 

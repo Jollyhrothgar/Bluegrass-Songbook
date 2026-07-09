@@ -19,7 +19,7 @@ import {
 
 import { parseChordPro, showVersionPicker } from './song-view.js';
 import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
-import { escapeHtml } from './utils.js';
+import { escapeHtml, partUsesSongActions } from './utils.js';
 import {
     TabRenderer, TabPlayer, INSTRUMENT_ICONS,
     TimelineTiming, identityTimeline, readingListTimeline,
@@ -175,6 +175,14 @@ export function renderWorkView() {
     if (!container || !currentWork) return;
 
     container.innerHTML = '';
+
+    // The header ✏️ Edit edits chordpro lead sheets; on a tablature part
+    // it would open an empty song editor. Hide it — the tab controls row
+    // has its own Edit. (song-view restores it when a song renders.)
+    const editSongBtn = document.getElementById('edit-song-btn');
+    if (editSongBtn) {
+        editSongBtn.style.display = partUsesSongActions(activePart) ? '' : 'none';
+    }
 
     // Work header
     const header = renderWorkHeader();
