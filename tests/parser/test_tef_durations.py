@@ -79,6 +79,34 @@ def test_header_tempo_replaces_the_100bpm_hardcode():
     assert v2["metadata"]["tempo"] == 200
 
 
+@pytest.mark.skipif(not (DOWNLOADS / "25635.tef").exists(),
+                    reason="downloads corpus not present")
+def test_v3_articulations_from_byte6():
+    """V3 techniques live in byte 6 of the record, on the SOURCE note
+    (1 = hammer, 2 = pull-off, 3 = slide), attributed to the next note
+    on the same string. They had silently died: the V2 effect1 gate
+    always trips on V3 (byte 4 is the fret byte), and the old fallback
+    misread byte 5 — the DURATION byte. Oracle: 25635's export has
+    exactly 22 destination marks (14 sl + 5 h + 3 p); 27493's has none.
+    """
+    d = tef_to_otf(TEFReader(str(DOWNLOADS / "25635.tef")).parse()).to_dict()
+    techs = [(m["measure"], e["tick"], n["s"], n["f"], n["tech"])
+             for m in d["notation"]["banjo"] for e in m["events"]
+             for n in e["notes"] if n.get("tech")]
+    assert len(techs) == 22
+    from collections import Counter
+    assert Counter(t[-1] for t in techs) == {"/": 14, "h": 5, "p": 3}
+    # TablEdit's m2 "Sl 4->5" lands on the destination note
+    assert (2, 720, 4, 5, "/") in techs
+    # the m9 hammer chain 0->2->4: both destinations marked
+    assert (9, 1560, 4, 2, "h") in techs and (9, 1680, 4, 4, "h") in techs
+
+    d27 = tef_to_otf(TEFReader(str(DOWNLOADS / "27493.tef")).parse()).to_dict()
+    assert not any(n.get("tech")
+                   for ms in d27["notation"].values() for m in ms
+                   for e in m["events"] for n in e["notes"])
+
+
 @pytest.mark.skipif(not (DOWNLOADS / "21874.tef").exists(),
                     reason="downloads corpus not present")
 def test_v2_notes_carry_durations():

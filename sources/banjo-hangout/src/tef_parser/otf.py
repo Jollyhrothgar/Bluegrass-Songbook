@@ -314,27 +314,12 @@ def technique_from_event(event: TEFNoteEvent) -> str | None:
     The 'L' marker in V2 format means "lead/melody note", not legato.
     Only effect bytes are reliable for articulation detection.
     """
-    # Check effect bytes from raw_data
-    if event.raw_data and len(event.raw_data) >= 5:
-        effect1 = event.raw_data[4]
-
-        # V2 format: byte 4 contains effect1 bits
-        # bit 0 (0x01): Hammer-on indicator
-        # bit 1 (0x02): Legato (h or p depending on direction)
-        # bit 2 (0x04): Bend (1/4 step) - NOT a pull-off, ignore for now
-        # Note: 0x01 and 0x02 (legato) are handled by compute_articulations() for V2
-        # which uses direction-based detection
-
-        # V3 format: byte 5 contains articulation
-        if len(event.raw_data) > 5:
-            art_byte = event.raw_data[5]
-            if art_byte == 1:
-                return "h"  # Hammer-on
-            elif art_byte == 2:
-                return "p"  # Pull-off
-            elif art_byte == 3:
-                return "/"  # Slide
-
+    # RETIRED (2026-07-10): this used to read raw_data[5] as a V3
+    # articulation — but byte 5 of the V3 record is the DURATION byte
+    # (bits 0-4 duration code, bit 7 tie). A plain half note (code 3)
+    # decoded as a bogus slide; real V3 techniques live in byte 6 and
+    # are attributed by compute_articulations_v3(). Kept as an explicit
+    # no-op so call sites don't silently regrow a wrong heuristic.
     return None
 
 
@@ -444,6 +429,52 @@ def compute_articulations(
                         # Apply technique to DESTINATION note
                         dest_key = (track, next_event.position, string)
                         articulations[dest_key] = tech
+
+    return articulations
+
+
+def compute_articulations_v3(
+    note_events: list[TEFNoteEvent],
+    max_gap: int = 8,
+) -> dict[tuple[int, int, int], str]:
+    """V3 articulations: byte 6 of the 12-byte record, on the SOURCE note,
+    names the transition explicitly — 1 = hammer-on, 2 = pull-off,
+    3 = slide. Attributed to the DESTINATION note (next note, same track
+    and string, within max_gap slots), matching OTF convention.
+
+    Oracle-fit on 25635 vs TablEdit's MusicXML: byte6 counts (14 slides,
+    5 hammers incl. the m9 chain, 3 pull-offs) match the export's
+    hammer-on/pull-off/slide elements exactly. V3 techniques had died
+    silently: compute_articulations' effect1 plausibility gate always
+    trips for V3 (raw byte 4 is the fret/type byte there, always > 4),
+    and the old technique_from_event fallback misread byte 5 — which is
+    the DURATION byte (a plain half note, code 3, would render a bogus
+    slide).
+    """
+    V3_TECH = {1: "h", 2: "p", 3: "/"}
+    articulations: dict[tuple[int, int, int], str] = {}
+
+    by_string: dict[tuple[int, int], list[TEFNoteEvent]] = {}
+    for event in note_events:
+        if not event.is_melody:
+            continue
+        if not event.raw_data or len(event.raw_data) < 12:
+            continue
+        result = event.decode_string_fret()
+        if not result:
+            continue
+        string, _ = result
+        by_string.setdefault((event.track, string), []).append(event)
+
+    for (track, string), notes in by_string.items():
+        notes.sort(key=lambda e: e.position)
+        for i, event in enumerate(notes):
+            tech = V3_TECH.get(event.raw_data[6])
+            if not tech or i + 1 >= len(notes):
+                continue
+            next_event = notes[i + 1]
+            if next_event.position - event.position <= max_gap:
+                articulations[(track, next_event.position, string)] = tech
 
     return articulations
 
@@ -607,9 +638,13 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
 
     # Pre-compute articulations based on note sequence and fret direction
     # This gives us a map of (track, position, string) -> technique for destination notes
-    # V2 positions are native grid units — pass a half-measure gap in those units
-    articulations = compute_articulations(
-        tef.note_events, max_gap=articulation_max_gap(tef.header))
+    # V2 positions are native grid units — pass a half-measure gap in those units.
+    # V3 has its own explicit per-note articulation byte (byte 6).
+    if tef.header.is_v2:
+        articulations = compute_articulations(
+            tef.note_events, max_gap=articulation_max_gap(tef.header))
+    else:
+        articulations = compute_articulations_v3(tef.note_events)
 
     # Group note events by track and measure.
     #
