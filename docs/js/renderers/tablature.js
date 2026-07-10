@@ -157,12 +157,6 @@ export class TabRenderer {
     constructor(container, options = {}) {
         this.container = container;
 
-        // Get theme-aware colors from CSS variables
-        const computedStyle = getComputedStyle(document.documentElement);
-        const bgColor = computedStyle.getPropertyValue('--bg').trim() || '#fff';
-        const textColor = computedStyle.getPropertyValue('--text').trim() || '#000';
-        const accentColor = computedStyle.getPropertyValue('--accent').trim() || '#007bff';
-
         this.options = {
             stringSpacing: 14,
             minMeasureWidth: 138,     // Minimum width per measure (increased 15% for triplet legibility)
@@ -178,18 +172,21 @@ export class TabRenderer {
             topMargin: 40,
             stemAreaHeight: 28,
             fretFontSize: 12,
-            stringColor: '#666',
-            fretColor: textColor,
-            fretBgColor: bgColor,
-            measureLineColor: '#333',
-            stemColor: '#333',
-            beamColor: '#333',
             beamThickness: 3,
             stemWidth: 1.5,
-            highlightColor: accentColor,
             beatCursorColor: 'rgba(255, 100, 100, 0.6)',
             ...options
         };
+
+        // Theme colors are re-read from CSS variables on every theme
+        // change (SVG attributes bake colors in — a stale palette after
+        // toggling the theme left inverted fret chips over the staff).
+        // Only keys the caller did NOT set explicitly track the theme.
+        this._themedColorKeys = [
+            'stringColor', 'fretColor', 'fretBgColor', 'measureLineColor',
+            'stemColor', 'beamColor', 'highlightColor', 'mutedColor',
+        ].filter(k => !(k in options));
+        this._refreshThemeColors();
 
         // Playback visualization state
         this.noteElements = [];      // Array of {measure, tick, absTick, elements: []}
@@ -220,6 +217,33 @@ export class TabRenderer {
                 this._renderInternal();
             }
         });
+    }
+
+    /**
+     * Read the current theme's palette from CSS variables into options.
+     * Structural marks (strings, barlines, stems, beams) derive from
+     * --text-secondary/--text so they stay legible on BOTH themes — the
+     * old hardcoded #333 was near-invisible on the dark background.
+     */
+    _refreshThemeColors() {
+        const cs = getComputedStyle(document.documentElement);
+        const bg = cs.getPropertyValue('--bg').trim() || '#fff';
+        const text = cs.getPropertyValue('--text').trim() || '#000';
+        const secondary = cs.getPropertyValue('--text-secondary').trim() || '#666';
+        const accent = cs.getPropertyValue('--accent').trim() || '#007bff';
+        const themed = {
+            stringColor: secondary,
+            fretColor: text,
+            fretBgColor: bg,
+            measureLineColor: secondary,
+            stemColor: secondary,
+            beamColor: secondary,
+            highlightColor: accent,
+            mutedColor: secondary,  // labels, rests, slurs, annotations
+        };
+        for (const key of this._themedColorKeys) {
+            this.options[key] = themed[key];
+        }
     }
 
     /**
@@ -306,6 +330,20 @@ export class TabRenderer {
             });
             this._resizeObserver.observe(this.container);
         }
+
+        // Re-render on theme change: SVG attributes bake colors in, so a
+        // toggle otherwise leaves the previous theme's chips and stems.
+        if (!this._themeObserver && typeof MutationObserver !== 'undefined') {
+            this._themeObserver = new MutationObserver(() => {
+                if (this._track && this._notation) {
+                    this._refreshThemeColors();
+                    this._renderInternal();
+                }
+            });
+            this._themeObserver.observe(document.documentElement, {
+                attributes: true, attributeFilter: ['data-theme'],
+            });
+        }
     }
 
     /**
@@ -375,6 +413,10 @@ export class TabRenderer {
         if (this._resizeTimeout) {
             clearTimeout(this._resizeTimeout);
             this._resizeTimeout = null;
+        }
+        if (this._themeObserver) {
+            this._themeObserver.disconnect();
+            this._themeObserver = null;
         }
     }
 
@@ -633,7 +675,7 @@ export class TabRenderer {
                 const label = pitch.replace(/\d/, '');
                 const text = this.createText(10, y + 4, label, {
                     fontSize: '11px',
-                    fill: '#666',
+                    fill: this.options.mutedColor,
                     fontWeight: '600'
                 });
                 text.setAttribute('class', 'string-label');
@@ -698,7 +740,7 @@ export class TabRenderer {
             const numX = measure.repeatStart ? x + 12 : x + 3;
             const numText = this.createText(numX, opt.topMargin - 8, measure.measure.toString(), {
                 fontSize: '10px',
-                fill: '#999'
+                fill: this.options.mutedColor
             });
             svg.appendChild(numText);
 
@@ -716,7 +758,7 @@ export class TabRenderer {
                         const rx = restAreaStart + (t / geom.ticks) * geom.noteW + 6;
                         const rest = this.createText(rx, restY, g.glyph, {
                             fontSize: `${Math.round(2.2 * opt.stringSpacing)}px`,
-                            fill: '#888',
+                            fill: opt.mutedColor,
                             textAnchor: 'start',
                         });
                         rest.setAttribute('class', 'rest-glyph');
@@ -784,7 +826,7 @@ export class TabRenderer {
                         if (note.tech && note.tech !== 'h' && note.tech !== 'p' && note.tech !== '/') {
                             const techText = this.createText(noteX, noteY - 10, note.tech, {
                                 fontSize: '9px',
-                                fill: '#888',
+                                fill: opt.mutedColor,
                                 textAnchor: 'middle'
                             });
                             svg.appendChild(techText);
@@ -795,7 +837,7 @@ export class TabRenderer {
                             const fingerY = beamY + 12;
                             const fingerText = this.createText(noteX, fingerY, note.finger, {
                                 fontSize: '10px',
-                                fill: '#666',
+                                fill: opt.mutedColor,
                                 fontWeight: '500',
                                 textAnchor: 'middle',
                                 fontStyle: 'italic'
@@ -874,7 +916,7 @@ export class TabRenderer {
                 const half = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                 half.setAttribute('d', `M ${n.x - 24} ${y - 6} Q ${n.x - 12} ${y - 8} ${n.x - 5} ${y}`);
                 half.setAttribute('fill', 'none');
-                half.setAttribute('stroke', '#888');
+                half.setAttribute('stroke', this.options.mutedColor);
                 half.setAttribute('stroke-width', '1');
                 half.setAttribute('class', 'tie-arc tie-arc-in');
                 svg.appendChild(half);
@@ -906,7 +948,7 @@ export class TabRenderer {
                 const slur = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                 slur.setAttribute('d', `M ${n1.x + noteOffset} ${slurY} Q ${midX} ${slurY - curveDepth} ${n2.x - noteOffset} ${slurY}`);
                 slur.setAttribute('fill', 'none');
-                slur.setAttribute('stroke', hasTie ? '#888' : '#555');
+                slur.setAttribute('stroke', this.options.mutedColor);
                 slur.setAttribute('stroke-width', hasTie ? '1' : '1.5');
                 slur.setAttribute('class', hasTie ? 'tie-arc' : 'tech-slur');
                 svg.appendChild(slur);
@@ -920,7 +962,7 @@ export class TabRenderer {
 
                     const labelText = this.createText(midX, slurY - curveDepth - 2, label, {
                         fontSize: '9px',
-                        fill: '#555',
+                        fill: this.options.mutedColor,
                         fontWeight: '600',
                         textAnchor: 'middle'
                     });
