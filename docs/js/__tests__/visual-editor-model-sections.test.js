@@ -3,7 +3,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import {
     parseSong, serializeSong, resetIdsForTest,
     addSection, setSectionType, relabelSection, moveSection,
-    duplicateSection, deleteSection, updateLyrics, splitSectionOnBlankLines,
+    duplicateSection, deleteSection, moveSectionTo, updateLyrics, splitSectionOnBlankLines,
     spliceSectionWithParsed
 } from '../visual-editor/model.js';
 
@@ -189,5 +189,44 @@ describe('spliceSectionWithParsed', () => {
         const next = spliceSectionWithParsed(doc, 'nope', parseSong('x'));
         expect(next.sections).toHaveLength(1);
         expect(next.sections[0].lines[0].lyrics).toBe('hello');
+    });
+});
+
+describe('moveSectionTo', () => {
+    let bridgeId;
+    beforeEach(() => {
+        doc = addSection(doc, 'bridge');   // [verse, chorus, bridge]
+        bridgeId = doc.sections[2].id;
+    });
+
+    const order = d => d.sections.map(s => s.id);
+
+    it('moves a section to an absolute index (down and up)', () => {
+        expect(order(moveSectionTo(doc, verseId, 2))).toEqual([chorusId, bridgeId, verseId]);
+        expect(order(moveSectionTo(doc, bridgeId, 0))).toEqual([bridgeId, verseId, chorusId]);
+        expect(order(moveSectionTo(doc, verseId, 1))).toEqual([chorusId, verseId, bridgeId]);
+    });
+
+    it('is a no-op when the target equals the current index', () => {
+        expect(order(moveSectionTo(doc, chorusId, 1))).toEqual(order(doc));
+    });
+
+    it('clamps out-of-bounds targets to the ends', () => {
+        expect(order(moveSectionTo(doc, verseId, 99))).toEqual([chorusId, bridgeId, verseId]);
+        expect(order(moveSectionTo(doc, bridgeId, -5))).toEqual([bridgeId, verseId, chorusId]);
+    });
+
+    it('ignores an unknown section id', () => {
+        expect(order(moveSectionTo(doc, 'sec-nope', 0))).toEqual(order(doc));
+    });
+
+    it('preserves ids and content, and does not mutate the input doc', () => {
+        const before = JSON.stringify(doc);
+        const next = moveSectionTo(doc, verseId, 2);
+        expect(JSON.stringify(doc)).toBe(before);
+        const moved = next.sections.find(s => s.id === verseId);
+        expect(moved.lines[0].lyrics).toBe('hello world friend');
+        expect(serializeSong(next).indexOf('{start_of_chorus')).toBeLessThan(
+            serializeSong(next).indexOf('{start_of_verse'));
     });
 });

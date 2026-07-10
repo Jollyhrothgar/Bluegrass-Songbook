@@ -278,6 +278,19 @@ export function moveSection(doc, sectionId, delta) {
     return next;
 }
 
+// Absolute-index counterpart of moveSection, for drag-and-drop: the section
+// lands at targetIndex in the resulting order (clamped to the ends).
+export function moveSectionTo(doc, sectionId, targetIndex) {
+    const next = cloneDoc(doc);
+    const i = next.sections.findIndex(s => s.id === sectionId);
+    if (i < 0) return next;
+    const j = Math.max(0, Math.min(targetIndex, next.sections.length - 1));
+    if (j === i) return next;
+    const [sec] = next.sections.splice(i, 1);
+    next.sections.splice(j, 0, sec);
+    return next;
+}
+
 export function duplicateSection(doc, sectionId) {
     const next = cloneDoc(doc);
     const i = next.sections.findIndex(s => s.id === sectionId);

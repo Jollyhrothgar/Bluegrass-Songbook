@@ -421,3 +421,69 @@ Sadly I roam`;
         expect(raw).toContain('{key: D}');
     });
 });
+
+test.describe('Drag-and-drop section reorder', () => {
+    async function addSectionWithLyrics(page, type, lyrics) {
+        await page.locator('.ve-add-section').click();
+        await page.locator(`[data-add-type="${type}"]`).click();
+        const card = page.locator('.ve-card').last();
+        await card.locator('.ve-lyrics-input').fill(lyrics);
+        await card.locator('.ve-mode-chords').click();
+    }
+
+    async function setupTwoSections(page) {
+        await openNewSongEditor(page);
+        await addSectionWithLyrics(page, 'verse', 'first section words');
+        await addSectionWithLyrics(page, 'chorus', 'second section words');
+        await expect(page.locator('.ve-card')).toHaveCount(2);
+    }
+
+    async function startHandleDrag(page) {
+        const handle = page.locator('.ve-card').nth(0).locator('.ve-drag-handle');
+        const hb = await handle.boundingBox();
+        const target = await page.locator('.ve-card').nth(1).boundingBox();
+        await page.mouse.move(hb.x + hb.width / 2, hb.y + hb.height / 2);
+        await page.mouse.down();
+        // drag past the second card's midpoint, in steps like a real drag
+        await page.mouse.move(hb.x + hb.width / 2, target.y + target.height - 5, { steps: 8 });
+    }
+
+    test('dragging card 0 below card 1 reorders the song', async ({ page }) => {
+        await setupTwoSections(page);
+        await startHandleDrag(page);
+
+        // mid-drag: lifted card + drop indicator are visible
+        await expect(page.locator('.ve-card-dragging')).toHaveCount(1);
+        await expect(page.locator('.ve-drop-indicator')).toBeVisible();
+        await page.mouse.up();
+
+        // cards swapped in the UI
+        await expect(page.locator('.ve-card-label').nth(0)).toHaveText('Chorus');
+        await expect(page.locator('.ve-card-label').nth(1)).toHaveText('Verse 1');
+        await expect(page.locator('.ve-card-dragging')).toHaveCount(0);
+        await expect(page.locator('.ve-drop-indicator')).toHaveCount(0);
+
+        // serialized order flipped in the raw textarea
+        await page.locator('#editor-tab-raw').click();
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw.indexOf('{start_of_chorus')).toBeLessThan(raw.indexOf('{start_of_verse'));
+        expect(raw.indexOf('second section words')).toBeLessThan(raw.indexOf('first section words'));
+    });
+
+    test('Escape aborts the drag and keeps the original order', async ({ page }) => {
+        await setupTwoSections(page);
+        await startHandleDrag(page);
+        await expect(page.locator('.ve-card-dragging')).toHaveCount(1);
+
+        await page.keyboard.press('Escape');
+        await expect(page.locator('.ve-card-dragging')).toHaveCount(0);
+        await expect(page.locator('.ve-drop-indicator')).toHaveCount(0);
+        await page.mouse.up();
+
+        await expect(page.locator('.ve-card-label').nth(0)).toHaveText('Verse 1');
+        await expect(page.locator('.ve-card-label').nth(1)).toHaveText('Chorus');
+        await page.locator('#editor-tab-raw').click();
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw.indexOf('{start_of_verse')).toBeLessThan(raw.indexOf('{start_of_chorus'));
+    });
+});

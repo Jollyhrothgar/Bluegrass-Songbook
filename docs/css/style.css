@@ -9670,6 +9670,40 @@ body.fullscreen-mode::after {
 .ve-toolbar-spacer { flex: 1; }
 .ve-key-label { font-weight: 600; color: var(--chord); }
 
+/* drag-and-drop section reorder */
+.ve-cards { position: relative; }
+.ve-cards.ve-drag-active { user-select: none; -webkit-user-select: none; }
+.ve-drag-handle {
+    min-height: 36px;
+    min-width: 36px;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: grab;
+    touch-action: none;   /* the handle is the lift zone; card content still scrolls */
+    font-size: 1.05rem;
+    padding: 0 0.2rem;
+}
+.ve-drag-handle:active { cursor: grabbing; color: var(--accent); }
+.ve-card-dragging {
+    position: relative;
+    z-index: 5;
+    opacity: 0.9;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    border-color: var(--accent);
+    pointer-events: none;   /* captured pointer events still reach the handle */
+}
+.ve-drop-indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    z-index: 4;
+    pointer-events: none;
+}
+
 .ve-card {
     border: 1px solid var(--border);
     border-radius: var(--radius-lg, 8px);

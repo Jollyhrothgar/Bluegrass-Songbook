@@ -18,7 +18,8 @@ function makeCtx(overrides = {}) {
         selection: null,
         callbacks: {
             onSyllableTap: vi.fn(), onChipTap: vi.fn(), onChipRemove: vi.fn(),
-            onToggleMode: vi.fn(), onMenuAction: vi.fn(), onLyricsCommit: vi.fn()
+            onToggleMode: vi.fn(), onMenuAction: vi.fn(), onLyricsCommit: vi.fn(),
+            onDragHandleDown: vi.fn()
         },
         ...overrides
     };
@@ -170,5 +171,30 @@ describe('header controls', () => {
         expect(card.classList.contains('ve-card-passthrough')).toBe(true);
         expect(card.querySelector('.ve-passthrough-raw').textContent).toContain('X:1');
         expect(card.querySelector('.ve-syl')).toBeNull();
+    });
+});
+
+describe('drag handle', () => {
+    it('renders a labelled ⠿ handle in the header', () => {
+        const card = renderSectionCard(SECTION, makeCtx());
+        const handle = card.querySelector('.ve-card-header .ve-drag-handle');
+        expect(handle).not.toBeNull();
+        expect(handle.tagName).toBe('BUTTON');
+        expect(handle.getAttribute('aria-label')).toBe('Drag to reorder Verse 1');
+    });
+
+    it('renders the handle on passthrough cards too', () => {
+        const card = renderSectionCard(
+            { id: 'sec-9', type: 'passthrough', raw: '{start_of_abc}\nX:1\n{end_of_abc}' },
+            makeCtx());
+        expect(card.querySelector('.ve-card-header .ve-drag-handle')).not.toBeNull();
+    });
+
+    it('pointerdown on the handle fires onDragHandleDown with the section id', () => {
+        const ctx = makeCtx();
+        const card = renderSectionCard(SECTION, ctx);
+        card.querySelector('.ve-drag-handle')
+            .dispatchEvent(new MouseEvent('pointerdown', { bubbles: true, clientY: 10 }));
+        expect(ctx.callbacks.onDragHandleDown).toHaveBeenCalledWith('sec-1', expect.anything());
     });
 });

@@ -15,6 +15,7 @@ visual-editor/
 ├── syllables.js      # view-layer tokenizer (tap targets); NOT in the model
 ├── palette.js        # docked chord palette (diatonic via chord-explorer/theory.js)
 ├── autoscroll.js     # keep the selection clear of the docked palette
+├── drag-reorder.js   # pure geometry for drag-and-drop card reorder
 ├── section-card.js   # one section card (chords mode / lyrics mode)
 └── visual-editor.js  # orchestrator: selection, undo/redo, rendering
 ```
@@ -59,6 +60,21 @@ with ✕ Remove. Desktop extras:
 
 Ghost state lives in the orchestrator and is projected into
 `renderSectionCard` via `ctx.ghost` — re-render safe, textContent only.
+
+## Section reorder (drag-and-drop)
+
+Every card header has a ⠿ drag handle (`.ve-drag-handle`, the only lift
+zone). Mouse/pen: pointerdown starts the drag; touch: ~350ms long-press
+lifts (early movement cancels, so swipes that start on the handle still
+scroll). Pointer Events + `setPointerCapture` — not HTML5 DnD (unreliable
+on touch). Cards do NOT re-render mid-drag: the lifted card follows the
+pointer via a transform, a `.ve-drop-indicator` line marks the prospective
+gap, and the page auto-scrolls near viewport edges (rAF loop). Drop applies
+`moveSectionTo(doc, sectionId, targetIndex)` as one undo step (no-op drops
+push nothing); Escape/pointercancel abort cleanly. Geometry (pointer Y +
+card rects → target index / indicator Y / scroll speed) is pure in
+`drag-reorder.js`. The ⋯ menu's Move up/down stays as the accessible
+fallback.
 
 ## Smart paste
 

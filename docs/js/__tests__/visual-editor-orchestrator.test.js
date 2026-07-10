@@ -751,3 +751,126 @@ Rating`;
         ed2.destroy();
     });
 });
+
+describe('drag-and-drop section reorder', () => {
+    // jsdom has no PointerEvent and no layout: cards all measure 0x0 at
+    // offsetTop 0, so any pointerY > 0 targets the end and pointerY < 0
+    // targets the start. That degenerate geometry is enough to exercise the
+    // full pointer state machine; real coordinate math is covered by the
+    // pure drag-reorder.test.js.
+    const TWO = `{start_of_verse: Verse 1}
+[G]first section words
+{end_of_verse}
+
+{start_of_chorus: Chorus}
+[C]second section words
+{end_of_chorus}
+`;
+
+    function pev(type, opts = {}) {
+        const e = new MouseEvent(type, { bubbles: true, cancelable: true, ...opts });
+        if (opts.pointerType) {
+            Object.defineProperty(e, 'pointerType', { value: opts.pointerType });
+        }
+        return e;
+    }
+
+    function handleOfCard(i) {
+        return container.querySelectorAll('.ve-card')[i].querySelector('.ve-drag-handle');
+    }
+
+    beforeEach(() => {
+        editor.loadChordPro(TWO);
+    });
+
+    it('every card has a drag handle and Move up/down stays in the menu', () => {
+        const handles = container.querySelectorAll('.ve-card .ve-drag-handle');
+        expect(handles).toHaveLength(2);
+        expect(handles[0].getAttribute('aria-label')).toContain('Verse 1');
+        expect(container.querySelector('[data-action="move-up"]')).not.toBeNull();
+        expect(container.querySelector('[data-action="move-down"]')).not.toBeNull();
+    });
+
+    it('mouse drag of card 0 past card 1 reorders as one undo step', () => {
+        const handle = handleOfCard(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 10, button: 0 }));
+        expect(container.querySelectorAll('.ve-card')[0].classList.contains('ve-card-dragging')).toBe(true);
+        expect(container.querySelector('.ve-drop-indicator')).not.toBeNull();
+        handle.dispatchEvent(pev('pointermove', { clientY: 300 }));
+        handle.dispatchEvent(pev('pointerup', { clientY: 300 }));
+
+        const out = editor.getChordPro();
+        expect(out.indexOf('{start_of_chorus')).toBeLessThan(out.indexOf('{start_of_verse'));
+        expect(container.querySelector('.ve-drop-indicator')).toBeNull();
+        expect(container.querySelector('.ve-card-dragging')).toBeNull();
+
+        // one undo step restores the original order
+        container.querySelector('.ve-undo').click();
+        const undone = editor.getChordPro();
+        expect(undone.indexOf('{start_of_verse')).toBeLessThan(undone.indexOf('{start_of_chorus'));
+    });
+
+    it('dropping at the original position pushes no undo step', () => {
+        onChange.mockClear();
+        const handle = handleOfCard(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: -10, button: 0 }));
+        handle.dispatchEvent(pev('pointermove', { clientY: -10 }));
+        handle.dispatchEvent(pev('pointerup', { clientY: -10 }));
+        expect(onChange).not.toHaveBeenCalled();
+        const out = editor.getChordPro();
+        expect(out.indexOf('{start_of_verse')).toBeLessThan(out.indexOf('{start_of_chorus'));
+    });
+
+    it('Escape aborts the drag and leaves the order unchanged', () => {
+        onChange.mockClear();
+        const handle = handleOfCard(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 10, button: 0 }));
+        handle.dispatchEvent(pev('pointermove', { clientY: 300 }));
+        document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+        expect(container.querySelector('.ve-card-dragging')).toBeNull();
+        expect(container.querySelector('.ve-drop-indicator')).toBeNull();
+        // the stale pointerup after the abort is inert
+        handle.dispatchEvent(pev('pointerup', { clientY: 300 }));
+        expect(onChange).not.toHaveBeenCalled();
+        const out = editor.getChordPro();
+        expect(out.indexOf('{start_of_verse')).toBeLessThan(out.indexOf('{start_of_chorus'));
+    });
+
+    it('pointercancel aborts cleanly', () => {
+        onChange.mockClear();
+        const handle = handleOfCard(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 10, button: 0 }));
+        handle.dispatchEvent(pev('pointermove', { clientY: 300 }));
+        handle.dispatchEvent(pev('pointercancel', {}));
+        expect(container.querySelector('.ve-card-dragging')).toBeNull();
+        expect(onChange).not.toHaveBeenCalled();
+    });
+
+    it('touch lifts only after the long-press delay', () => {
+        vi.useFakeTimers();
+        const handle = handleOfCard(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 100, button: 0, pointerType: 'touch' }));
+        // not lifted yet — a quick tap or swipe must not start a drag
+        expect(container.querySelector('.ve-card-dragging')).toBeNull();
+        vi.advanceTimersByTime(400);
+        expect(container.querySelector('.ve-card-dragging')).not.toBeNull();
+        handle.dispatchEvent(pev('pointermove', { clientY: 300, pointerType: 'touch' }));
+        handle.dispatchEvent(pev('pointerup', { clientY: 300, pointerType: 'touch' }));
+        const out = editor.getChordPro();
+        expect(out.indexOf('{start_of_chorus')).toBeLessThan(out.indexOf('{start_of_verse'));
+        vi.useRealTimers();
+    });
+
+    it('touch movement before the long-press cancels the lift (scroll wins)', () => {
+        vi.useFakeTimers();
+        onChange.mockClear();
+        const handle = handleOfCard(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 100, button: 0, pointerType: 'touch' }));
+        handle.dispatchEvent(pev('pointermove', { clientY: 130, pointerType: 'touch' }));
+        vi.advanceTimersByTime(400);
+        expect(container.querySelector('.ve-card-dragging')).toBeNull();
+        handle.dispatchEvent(pev('pointerup', { clientY: 130, pointerType: 'touch' }));
+        expect(onChange).not.toHaveBeenCalled();
+        vi.useRealTimers();
+    });
+});

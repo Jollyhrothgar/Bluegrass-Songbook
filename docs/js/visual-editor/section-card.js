@@ -19,6 +19,19 @@ function el(tag, className, text) {
     return node;
 }
 
+
+// ⠿ drag handle: the only lift zone for pointer/touch reordering. The ⋯
+// menu's Move up/down stays as the accessible (and keyboard) fallback.
+function makeDragHandle(section, callbacks) {
+    const handle = el('button', 've-drag-handle', '\u283f');
+    handle.type = 'button';
+    handle.setAttribute('aria-label', `Drag to reorder ${section.label || 'section'}`);
+    if (callbacks && callbacks.onDragHandleDown) {
+        handle.addEventListener('pointerdown', (e) => callbacks.onDragHandleDown(section.id, e));
+    }
+    return handle;
+}
+
 function renderChordsLine(section, line, li, ctx) {
     const row = el('div', 've-line');
     row.dataset.line = String(li);
@@ -133,6 +146,7 @@ export function renderSectionCard(section, ctx) {
     if (section.type === 'passthrough') {
         card.classList.add('ve-card-passthrough');
         const header = el('div', 've-card-header');
+        header.appendChild(makeDragHandle(section, ctx.callbacks));
         header.appendChild(el('span', 've-card-label', 'Raw block (edit in Raw tab)'));
         card.appendChild(header);
         card.appendChild(el('pre', 've-passthrough-raw', section.raw));
@@ -142,6 +156,7 @@ export function renderSectionCard(section, ctx) {
     const { mode, callbacks } = ctx;
 
     const header = el('div', 've-card-header');
+    header.appendChild(makeDragHandle(section, callbacks));
     header.appendChild(el('span', 've-card-label', section.label));
 
     const toggle = el('div', 've-mode-toggle');

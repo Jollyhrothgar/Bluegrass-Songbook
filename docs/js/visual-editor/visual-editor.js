@@ -5,13 +5,17 @@
 import {
     parseSong, serializeSong, placeChord, changeChord, removeChord,
     transposeDoc, allChords, addSection, setSectionType, relabelSection,
-    moveSection, duplicateSection, deleteSection, updateLyrics,
+    moveSection, moveSectionTo, duplicateSection, deleteSection, updateLyrics,
     splitSectionOnBlankLines, spliceSectionWithParsed
 } from './model.js';
+import {
+    computeTargetIndex, indicatorY, computeDragScroll,
+    LONG_PRESS_MS, DRAG_SLOP_PX
+} from './drag-reorder.js';
 import { convertPastedText } from '../smart-paste.js';
 import { renderSectionCard } from './section-card.js';
 import { createPalette } from './palette.js';
-import { scrollSelectionClear } from './autoscroll.js';
+import { scrollSelectionClear, findScrollContainer } from './autoscroll.js';
 import { tokenizeLine } from './syllables.js';
 import { detectKey, isValidChord } from '../chords.js';
 
@@ -228,6 +232,142 @@ export function createVisualEditor({ container, onChange, onImportMeta }) {
         if (ghost && !commitGhost()) cancelGhost();
     }
 
+    // ---------- drag-and-drop section reorder ----------
+    //
+    // Pointer Events only (HTML5 DnD is unreliable on touch). The ⠿ handle
+    // is the single lift zone: mouse/pen drags start on pointerdown; touch
+    // lifts after a ~350ms long-press so swipes that merely start on the
+    // handle can still scroll the page. Cards do NOT re-render during a
+    // drag — the lifted card follows the pointer via a transform and a drop
+    // indicator line marks the prospective gap; the model changes (one undo
+    // step) only on drop. Geometry lives in drag-reorder.js (pure).
+
+    let drag = null;         // active drag state
+    let pendingLift = null;  // touch long-press waiting to lift
+
+    // Snapshot card geometry in cardsHost coordinates (position:relative),
+    // immune to page scrolling; valid all drag long since layout is frozen.
+    function cardsSnapshot() {
+        return [...cardsHost.querySelectorAll(':scope > .ve-card')].map(c => ({
+            el: c, top: c.offsetTop, bottom: c.offsetTop + c.offsetHeight
+        }));
+    }
+
+    function hostY(clientY) {
+        return clientY - cardsHost.getBoundingClientRect().top;
+    }
+
+    function onDragMove(e) {
+        if (pendingLift) {
+            // moving before the long-press fires = the user is scrolling
+            if (Math.hypot(e.clientX - pendingLift.startX, e.clientY - pendingLift.startY) > DRAG_SLOP_PX) {
+                abortPendingLift();
+            } else {
+                pendingLift.lastClientY = e.clientY;
+            }
+            return;
+        }
+        if (drag) updateDrag(e.clientY);
+    }
+
+    function onDragUp() {
+        if (pendingLift) { abortPendingLift(); return; }
+        endDrag(true);
+    }
+
+    function onDragCancel() {
+        if (pendingLift) { abortPendingLift(); return; }
+        endDrag(false);
+    }
+
+    function attachDragListeners(handle) {
+        handle.addEventListener('pointermove', onDragMove);
+        handle.addEventListener('pointerup', onDragUp);
+        handle.addEventListener('pointercancel', onDragCancel);
+    }
+
+    function detachDragListeners(handle) {
+        handle.removeEventListener('pointermove', onDragMove);
+        handle.removeEventListener('pointerup', onDragUp);
+        handle.removeEventListener('pointercancel', onDragCancel);
+    }
+
+    function abortPendingLift() {
+        if (!pendingLift) return;
+        clearTimeout(pendingLift.timer);
+        detachDragListeners(pendingLift.handle);
+        pendingLift = null;
+    }
+
+    function startDrag(sectionId, handle, pointerId, clientY) {
+        flushGhost();
+        const cards = cardsSnapshot();
+        const fromIndex = cards.findIndex(c => c.el.dataset.sectionId === sectionId);
+        if (fromIndex === -1) { detachDragListeners(handle); return; }
+        const indicator = document.createElement('div');
+        indicator.className = 've-drop-indicator';
+        drag = {
+            sectionId, handle, pointerId, cards, fromIndex,
+            targetIndex: fromIndex, startHostY: hostY(clientY),
+            lastClientY: clientY, indicator, raf: null
+        };
+        cardsHost.appendChild(indicator);
+        cardsHost.classList.add('ve-drag-active');
+        cards[fromIndex].el.classList.add('ve-card-dragging');
+        updateDrag(clientY);
+        startDragScrollLoop();
+    }
+
+    function updateDrag(clientY) {
+        drag.lastClientY = clientY;
+        const y = hostY(clientY);
+        drag.cards[drag.fromIndex].el.style.transform =
+            `translateY(${y - drag.startHostY}px) scale(1.01)`;
+        drag.targetIndex = computeTargetIndex(drag.cards, drag.fromIndex, y);
+        drag.indicator.style.top =
+            `${indicatorY(drag.cards, drag.fromIndex, drag.targetIndex)}px`;
+    }
+
+    // Auto-scroll while the pointer hovers near the viewport top/bottom.
+    // Runs on rAF (pointermove goes quiet when the pointer holds still);
+    // updateDrag() re-derives host coords after each scroll step.
+    function startDragScrollLoop() {
+        if (typeof requestAnimationFrame !== 'function') return;
+        const scroller = findScrollContainer(cardsHost);
+        const step = () => {
+            if (!drag) return;
+            const rect = scroller ? scroller.getBoundingClientRect() : null;
+            const viewTop = rect ? rect.top : 0;
+            const viewBottom = rect ? rect.bottom
+                : (window.innerHeight || document.documentElement.clientHeight);
+            const delta = computeDragScroll(drag.lastClientY, viewTop, viewBottom);
+            if (delta !== 0) {
+                if (scroller) scroller.scrollBy(0, delta);
+                else window.scrollBy(0, delta);
+                updateDrag(drag.lastClientY);
+            }
+            drag.raf = requestAnimationFrame(step);
+        };
+        drag.raf = requestAnimationFrame(step);
+    }
+
+    function endDrag(commit) {
+        if (!drag) return;
+        const { sectionId, handle, pointerId, cards, fromIndex, targetIndex, indicator, raf } = drag;
+        if (raf !== null && typeof cancelAnimationFrame === 'function') cancelAnimationFrame(raf);
+        detachDragListeners(handle);
+        try { handle.releasePointerCapture?.(pointerId); } catch { /* already released */ }
+        cards[fromIndex].el.classList.remove('ve-card-dragging');
+        cards[fromIndex].el.style.transform = '';
+        indicator.remove();
+        cardsHost.classList.remove('ve-drag-active');
+        drag = null;
+        if (commit && targetIndex !== fromIndex) {
+            apply(moveSectionTo(doc, sectionId, targetIndex));
+            render();
+        }
+    }
+
     // ---------- selection advance (Space / Tab) ----------
 
     function lineTargets(line) {
@@ -298,7 +438,17 @@ export function createVisualEditor({ container, onChange, onImportMeta }) {
     }
 
     function handleKeydown(e) {
-        if (!isActive() || isEditableTarget(e.target)) return;
+        if (!isActive()) return;
+        if (drag || pendingLift) {
+            // Escape aborts a drag cleanly; everything else is inert mid-drag
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                abortPendingLift();
+                endDrag(false);
+            }
+            return;
+        }
+        if (isEditableTarget(e.target)) return;
         const mod = e.metaKey || e.ctrlKey;
         if (mod && e.key.toLowerCase() === 'z') {
             e.preventDefault();
@@ -513,6 +663,29 @@ export function createVisualEditor({ container, onChange, onImportMeta }) {
             }
             render();
         },
+        onDragHandleDown(sectionId, e) {
+            if (drag || pendingLift) return;
+            if (e.button !== undefined && e.button !== null && e.button !== 0) return;
+            const handle = e.currentTarget;
+            // no focus steal / text selection; the handle has no other role
+            e.preventDefault();
+            try { handle.setPointerCapture?.(e.pointerId); } catch { /* jsdom */ }
+            attachDragListeners(handle);
+            if (e.pointerType === 'touch') {
+                // long-press lifts; early movement means a scroll, not a drag
+                pendingLift = {
+                    sectionId, handle,
+                    startX: e.clientX, startY: e.clientY, lastClientY: e.clientY,
+                    timer: setTimeout(() => {
+                        const { lastClientY } = pendingLift;
+                        pendingLift = null;
+                        startDrag(sectionId, handle, e.pointerId, lastClientY);
+                    }, LONG_PRESS_MS)
+                };
+            } else {
+                startDrag(sectionId, handle, e.pointerId, e.clientY);
+            }
+        },
         onLyricsPaste(sectionId, text) {
             return smartPasteIntoSection(sectionId, text);
         },
@@ -588,6 +761,8 @@ export function createVisualEditor({ container, onChange, onImportMeta }) {
         destroy() {
             cancelGhost();
             clearResume();
+            abortPendingLift();
+            endDrag(false);
             document.removeEventListener('keydown', handleKeydown);
             container.textContent = '';
             container.classList.remove('ve-root');
