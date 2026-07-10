@@ -258,6 +258,9 @@ class TEFFile:
     note_events: list[TEFNoteEvent] = field(default_factory=list)
     reading_list: list[TEFReadingListEntry] = field(default_factory=list)
     time_signature_changes: list[TEFTimeSignatureChange] = field(default_factory=list)
+    # V3 only: (num, den) derived from the measure table — the table is
+    # the authoritative meter (no known header signature field in V3).
+    v3_global_ts: tuple | None = None
 
     def dump(self) -> str:
         """Return a human-readable dump of the file contents."""
@@ -937,9 +940,35 @@ class TEFReader:
         # continuous slots map to (measure, slot-in-measure). Only
         # engaged when the table contains non-default measures.
         measure_ts = self.parse_measure_table_v3()
+
+        # The measure table is the authoritative METER for V3 (there is
+        # no known header signature field — otf.py used to hardcode a
+        # "2/2" guess). Global = the table's dominant explicit signature
+        # (27493: 4/4 ×69 + 2/4 ×2 → 4/4; TablEdit's export agrees);
+        # per-measure changes are emitted only where a measure differs
+        # from that global — including same-length re-labels, which the
+        # old `slots != 16` condition dropped.
+        explicit = [(n, d) for n, d in (measure_ts or []) if n and d]
+        self._v3_global_ts = None
+        if explicit:
+            counts: dict = {}
+            for sig in explicit:
+                counts[sig] = counts.get(sig, 0) + 1
+            self._v3_global_ts = max(counts, key=counts.get)
+
+        ts_changes: list[TEFTimeSignatureChange] = []
+        if measure_ts and self._v3_global_ts:
+            for k, (num, den) in enumerate(measure_ts):
+                if num and den and (num, den) != self._v3_global_ts:
+                    ts_changes.append(TEFTimeSignatureChange(
+                        measure=k + 1, numerator=num, denominator=den))
+        self._v3_ts_changes = ts_changes
+
+        # Slot boundaries handle measures of DIFFERENT length (2/4 in a
+        # 4/4 tune = 8 continuous slots); same-length re-labels don't
+        # affect the slot math.
         slot_starts: list[int] = []
         slot_counts: list[int] = []
-        ts_changes: list[TEFTimeSignatureChange] = []
         if measure_ts and any(
                 num and den and 16 * num // den != 16
                 for num, den in measure_ts):
@@ -948,11 +977,7 @@ class TEFReader:
                 slots = 16 * num // den if (num and den) else 16
                 slot_starts.append(start)
                 slot_counts.append(slots)
-                if slots != 16 and num and den:
-                    ts_changes.append(TEFTimeSignatureChange(
-                        measure=k + 1, numerator=num, denominator=den))
                 start += slots
-        self._v3_ts_changes = ts_changes
 
         def map_slot(position: int) -> int:
             """Continuous slot -> measure*16 + slot_in_measure."""
@@ -1648,4 +1673,5 @@ class TEFReader:
             note_events=note_events,
             reading_list=reading_list,
             time_signature_changes=getattr(self, "_v3_ts_changes", []),
+            v3_global_ts=getattr(self, "_v3_global_ts", None),
         )

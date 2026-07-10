@@ -143,6 +143,43 @@ def test_same_length_ts_relabels_promote_global_signature():
     assert notes_at(otf, track, 1) == [(1440, 4, 0), (1680, 4, 2)]
 
 
+V3_TWIN = FIXTURES / "cherokee_shuffle_21874_v3.tef"
+
+
+@pytest.mark.skipif(not (DOWNLOADS / "21874.tef").exists(),
+                    reason="downloads corpus not present")
+def test_v2_v3_twin_files_parse_identically():
+    """The same tune in BOTH containers: 21874.tef as originally
+    downloaded (V2) and Mike's TablEdit re-save of it (V3, `debt`
+    magic). Notes, tuning, reading list (D.S. al Coda structure), and
+    the corrected 4/4 meter must all agree across format branches —
+    this pins the V2 type-27 re-label fix and the V3 measure-table
+    meter to each other.
+    """
+    def digest(path):
+        otf = tef_to_otf(TEFReader(str(path)).parse()).to_dict()
+        tid = otf["tracks"][0]["id"]
+        notes = sorted(
+            (m["measure"], ev["tick"], n["s"], n["f"])
+            for m in otf["notation"][tid] for ev in m["events"]
+            for n in ev["notes"] if not n.get("tie"))
+        return {
+            "ts": otf["metadata"]["time_signature"],
+            "tuning": otf["tracks"][0]["tuning"],
+            "reading_list": otf.get("reading_list"),
+            "notes": notes,
+        }
+
+    v2 = digest(DOWNLOADS / "21874.tef")
+    v3 = digest(V3_TWIN)
+    assert v2["ts"] == v3["ts"] == "4/4"
+    assert v2["tuning"] == v3["tuning"] == ["E4", "C#4", "A3", "E3", "A4"]
+    assert v2["reading_list"] == v3["reading_list"]
+    assert len(v2["reading_list"]) == 10  # AABB + D.S. al Coda
+    assert v2["notes"] == v3["notes"]
+    assert len(v2["notes"]) == 135
+
+
 @pytest.mark.skipif(not (DOWNLOADS / "27493.tef").exists(),
                     reason="downloads corpus not present")
 def test_v3_ts_changes_exported_to_otf_metadata():
@@ -156,6 +193,10 @@ def test_v3_ts_changes_exported_to_otf_metadata():
     changes = [(c.measure, c.numerator, c.denominator)
                for c in tef.time_signature_changes]
     assert changes == [(30, 2, 4), (49, 2, 4)]
+    # The V3 measure table is the authoritative meter: 4/4 ×69 + 2/4 ×2
+    # -> global 4/4 (TablEdit's MusicXML export agrees). The old code
+    # hardcoded a "2/2" guess for every V3 file.
+    assert tef.v3_global_ts == (4, 4)
     otf = tef_to_otf(tef).to_dict()
     assert otf["metadata"]["time_signature_changes"] == [
         {"measure": 30, "time_signature": "2/4"},

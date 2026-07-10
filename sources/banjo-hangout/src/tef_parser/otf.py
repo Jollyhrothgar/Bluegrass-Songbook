@@ -498,8 +498,15 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
         doc.metadata.time_signature = f"{tef.header.v2_time_num}/{tef.header.v2_time_denom}"
         if tef.header.v2_composer:
             doc.metadata.composer = tef.header.v2_composer
+    elif tef.v3_global_ts:
+        # V3: the measure table is the authoritative meter (27493 is
+        # 4/4 per its own table and TablEdit's export — the old "2/2"
+        # guess below mislabeled it; 4/4 and 2/2 are both 1920 ticks,
+        # so tick math and oracle verification are unaffected).
+        doc.metadata.time_signature = (
+            f"{tef.v3_global_ts[0]}/{tef.v3_global_ts[1]}")
     else:
-        # V3 defaults
+        # V3 with no measure table: legacy guess
         doc.metadata.time_signature = "2/2"  # Cut time for bluegrass
     # Per-measure overrides come from the reader for BOTH formats:
     # V2 type-27 components and the V3 measure table (oracle-confirmed
