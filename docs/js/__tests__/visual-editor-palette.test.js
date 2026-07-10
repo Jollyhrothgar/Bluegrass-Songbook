@@ -204,36 +204,6 @@ describe('root + quality picker (Strum Machine style)', () => {
     });
 });
 
-describe('beginTyping (hardware keyboard chord entry)', () => {
-    it('reveals the picker, seeds the custom input, and focuses it', () => {
-        palette.showFor({ existingChord: null });
-        palette.beginTyping('A');
-        const input = palette.el.querySelector('.ve-palette-custom');
-        expect(pickerHidden()).toBe(false);
-        expect(input.value).toBe('A');
-        expect(document.activeElement).toBe(input);
-    });
-
-    it('Escape clears the input and hides the picker without firing onPick', () => {
-        palette.beginTyping('B');
-        const input = palette.el.querySelector('.ve-palette-custom');
-        input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
-        expect(input.value).toBe('');
-        expect(pickerHidden()).toBe(true);
-        expect(onPick).not.toHaveBeenCalled();
-    });
-
-    it('Enter commits the typed chord and resets the input and picker', () => {
-        palette.beginTyping('A');
-        const input = palette.el.querySelector('.ve-palette-custom');
-        input.value = 'Am7';
-        input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
-        expect(onPick).toHaveBeenCalledWith('Am7');
-        expect(input.value).toBe('');
-        expect(pickerHidden()).toBe(true);
-    });
-});
-
 describe('onLayoutChange (palette height changes)', () => {
     it('fires when More… expands and again when it collapses', () => {
         const onLayoutChange = vi.fn();
@@ -243,14 +213,6 @@ describe('onLayoutChange (palette height changes)', () => {
         expect(onLayoutChange).toHaveBeenCalledTimes(1);
         p.el.querySelector('.ve-palette-more').click();   // collapse
         expect(onLayoutChange).toHaveBeenCalledTimes(2);
-    });
-
-    it('fires when beginTyping opens the picker', () => {
-        const onLayoutChange = vi.fn();
-        const p = createPalette({ onPick, onDelete, onClose, onLayoutChange });
-        document.body.appendChild(p.el);
-        p.beginTyping('A');
-        expect(onLayoutChange).toHaveBeenCalledTimes(1);
     });
 
     it('is optional — the palette works without it', () => {

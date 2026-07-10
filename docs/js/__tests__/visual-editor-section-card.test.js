@@ -17,12 +17,66 @@ function makeCtx(overrides = {}) {
         mode: 'chords',
         selection: null,
         callbacks: {
-            onSyllableTap: vi.fn(), onChipTap: vi.fn(), onToggleMode: vi.fn(),
-            onMenuAction: vi.fn(), onLyricsCommit: vi.fn()
+            onSyllableTap: vi.fn(), onChipTap: vi.fn(), onChipRemove: vi.fn(),
+            onToggleMode: vi.fn(), onMenuAction: vi.fn(), onLyricsCommit: vi.fn()
         },
         ...overrides
     };
 }
+
+describe('ghost chip and hover ×', () => {
+    it('renders a ghost chip over the selected syllable when ctx.ghost is set', () => {
+        const ctx = makeCtx({
+            selection: { sectionId: 'sec-1', lineIndex: 1, position: 0 },
+            ghost: { text: 'Eb', invalid: false }
+        });
+        const card = renderSectionCard(SECTION, ctx);
+        const ghost = card.querySelector('.ve-line[data-line="1"] .ve-ghost-chip');
+        expect(ghost).not.toBeNull();
+        expect(ghost.textContent).toBe('Eb');
+        expect(ghost.classList.contains('ve-ghost-invalid')).toBe(false);
+        // only one ghost, and only where the selection is
+        expect(card.querySelectorAll('.ve-ghost-chip')).toHaveLength(1);
+    });
+
+    it('marks an invalid ghost', () => {
+        const ctx = makeCtx({
+            selection: { sectionId: 'sec-1', lineIndex: 1, position: 0 },
+            ghost: { text: 'Ex', invalid: true }
+        });
+        const card = renderSectionCard(SECTION, ctx);
+        const ghost = card.querySelector('.ve-ghost-chip');
+        expect(ghost.classList.contains('ve-ghost-invalid')).toBe(true);
+    });
+
+    it('no ghost renders without ctx.ghost, even with a selection', () => {
+        const ctx = makeCtx({ selection: { sectionId: 'sec-1', lineIndex: 1, position: 0 } });
+        const card = renderSectionCard(SECTION, ctx);
+        expect(card.querySelector('.ve-ghost-chip')).toBeNull();
+    });
+
+    it('ghost entry on a selected chip previews on the chip itself', () => {
+        const ctx = makeCtx({
+            selection: { sectionId: 'sec-1', lineIndex: 0, chordIndex: 0 },
+            ghost: { text: 'D7', invalid: false }
+        });
+        const card = renderSectionCard(SECTION, ctx);
+        const chip = card.querySelector('.ve-chip-selected');
+        expect(chip.textContent).toBe('D7');
+        expect(chip.classList.contains('ve-chip-editing')).toBe(true);
+        expect(card.querySelector('.ve-ghost-chip')).toBeNull(); // no extra ghost
+    });
+
+    it('chips carry an × that fires onChipRemove without selecting the chip', () => {
+        const ctx = makeCtx();
+        const card = renderSectionCard(SECTION, ctx);
+        const x = card.querySelector('.ve-line[data-line="0"] .ve-chip-x');
+        expect(x).not.toBeNull();
+        x.click();
+        expect(ctx.callbacks.onChipRemove).toHaveBeenCalledWith('sec-1', 0, 0);
+        expect(ctx.callbacks.onChipTap).not.toHaveBeenCalled();
+    });
+});
 
 describe('renderSectionCard — chords mode', () => {
     it('renders the label and syllable tap targets with offsets', () => {

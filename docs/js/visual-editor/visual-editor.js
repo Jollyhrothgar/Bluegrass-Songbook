@@ -11,10 +11,16 @@ import {
 import { renderSectionCard } from './section-card.js';
 import { createPalette } from './palette.js';
 import { scrollSelectionClear } from './autoscroll.js';
-import { detectKey } from '../chords.js';
+import { tokenizeLine } from './syllables.js';
+import { detectKey, isValidChord } from '../chords.js';
 
 const UNDO_CAP = 50;
 const SECTION_TYPES = ['verse', 'chorus', 'bridge', 'intro', 'outro'];
+// Ghost-chip typed entry: idle time after the last keystroke before a valid
+// chord auto-commits, and the grace window after an auto-commit during which
+// further typing resumes editing that chord instead of starting a new one.
+export const GHOST_COMMIT_MS = 800;
+export const RESUME_GRACE_MS = 1500;
 
 export function createVisualEditor({ container, onChange }) {
     let doc = parseSong('');
@@ -22,6 +28,10 @@ export function createVisualEditor({ container, onChange }) {
     let undoStack = [];
     let redoStack = [];
     const modes = new Map();         // sectionId → 'chords' | 'lyrics'
+    let ghost = null;                // { text } — in-progress typed chord on the selection
+    let ghostTimer = null;           // idle auto-commit timer
+    let resume = null;               // { sel, text } — just-committed chord, still editable
+    let resumeTimer = null;
 
     container.classList.add('ve-root');
 
@@ -66,40 +76,47 @@ export function createVisualEditor({ container, onChange }) {
     const toast = document.createElement('div');
     toast.className = 've-toast hidden';
 
+    // Shared commit path for palette picks AND ghost-entry commits, so
+    // selection-becomes-chip and consecutive-pick refinement stay consistent.
+    function pick(chord) {
+        if (!selection) return;
+        cancelGhost();
+        const { sectionId, lineIndex } = selection;
+        if (selection.chordIndex !== undefined) {
+            apply(changeChord(doc, sectionId, lineIndex, selection.chordIndex, chord));
+        } else {
+            const { position } = selection;
+            apply(placeChord(doc, sectionId, lineIndex, position, chord));
+            // Select the chip we just placed so the palette stays live:
+            // the next pick refines it (G → Gm7) via changeChord instead
+            // of silently no-oping. placeChord's sort is stable, so the
+            // new chord is the last one at this position.
+            const line = doc.sections.find(s => s.id === sectionId).lines[lineIndex];
+            let chordIndex = -1;
+            line.chords.forEach((c, i) => { if (c.position === position) chordIndex = i; });
+            selection = { sectionId, lineIndex, chordIndex };
+        }
+        // keep the palette (and any open picker) up for consecutive picks;
+        // Done/Escape or tapping elsewhere moves on
+        palette.showFor({ existingChord: chord });
+        render();
+    }
+
     const palette = createPalette({
         onPick(chord) {
-            if (!selection) return;
-            const { sectionId, lineIndex } = selection;
-            if (selection.chordIndex !== undefined) {
-                apply(changeChord(doc, sectionId, lineIndex, selection.chordIndex, chord));
-            } else {
-                const { position } = selection;
-                apply(placeChord(doc, sectionId, lineIndex, position, chord));
-                // Select the chip we just placed so the palette stays live:
-                // the next pick refines it (G → Gm7) via changeChord instead
-                // of silently no-oping. placeChord's sort is stable, so the
-                // new chord is the last one at this position.
-                const line = doc.sections.find(s => s.id === sectionId).lines[lineIndex];
-                let chordIndex = -1;
-                line.chords.forEach((c, i) => { if (c.position === position) chordIndex = i; });
-                selection = { sectionId, lineIndex, chordIndex };
-            }
-            // keep the palette (and any open picker) up for consecutive picks;
-            // Done/Escape or tapping elsewhere moves on
-            palette.showFor({ existingChord: chord });
-            render();
+            pick(chord);
         },
         onDelete() {
             deleteSelectedChord();
         },
         onClose() {
+            cancelGhost();
             selection = null;
             palette.hide();
             render();
         },
         onLayoutChange() {
-            // More… expand/collapse (or typed entry opening the picker)
-            // changes the palette height without a render
+            // More… expand/collapse changes the palette height without a render
             autoScrollToSelection();
         }
     });
@@ -124,6 +141,7 @@ export function createVisualEditor({ container, onChange }) {
     }
 
     function undo() {
+        cancelGhost();
         if (!undoStack.length) return;
         redoStack.push(doc);
         doc = undoStack.pop();
@@ -133,6 +151,7 @@ export function createVisualEditor({ container, onChange }) {
     }
 
     function redo() {
+        cancelGhost();
         if (!redoStack.length) return;
         undoStack.push(doc);
         doc = redoStack.pop();
@@ -145,11 +164,110 @@ export function createVisualEditor({ container, onChange }) {
     // palette's ✕ Remove button and the Delete/Backspace shortcut.
     function deleteSelectedChord() {
         if (selection?.chordIndex === undefined) return false;
+        cancelGhost();
         apply(removeChord(doc, selection.sectionId, selection.lineIndex, selection.chordIndex));
         selection = null;
         palette.hide();
         render();
         return true;
+    }
+
+    // ---------- ghost-chip typed entry ----------
+
+    function cancelGhost() {
+        if (ghostTimer) { clearTimeout(ghostTimer); ghostTimer = null; }
+        ghost = null;
+    }
+
+    function clearResume() {
+        if (resumeTimer) { clearTimeout(resumeTimer); resumeTimer = null; }
+        resume = null;
+    }
+
+    function armGhostTimer() {
+        if (ghostTimer) clearTimeout(ghostTimer);
+        ghostTimer = setTimeout(() => { commitGhost(); }, GHOST_COMMIT_MS);
+    }
+
+    function sameChipSel(a, b) {
+        return !!(a && b && a.sectionId === b.sectionId &&
+            a.lineIndex === b.lineIndex &&
+            a.chordIndex !== undefined && a.chordIndex === b.chordIndex);
+    }
+
+    // Commit the ghost if it can be committed. Returns true on commit
+    // (including empty-text delete of an existing chord); an invalid ghost
+    // stays on screen in its invalid style — we never commit garbage.
+    function commitGhost() {
+        if (!ghost || !selection) { cancelGhost(); return false; }
+        const text = ghost.text.trim();
+        if (text === '' && selection.chordIndex !== undefined) {
+            // backspaced an existing chord to nothing: commit = delete
+            return deleteSelectedChord();
+        }
+        if (!isValidChord(text)) {
+            // never commit garbage: flag the ghost so it idles in the
+            // invalid style (typing again clears the flag and retries)
+            if (ghostTimer) { clearTimeout(ghostTimer); ghostTimer = null; }
+            ghost.invalid = true;
+            render();
+            return false;
+        }
+        cancelGhost();
+        pick(text);  // selection becomes the committed chip
+        // resume grace: typing again right away keeps refining this chord
+        clearResume();
+        resume = { sel: { ...selection }, text };
+        resumeTimer = setTimeout(clearResume, RESUME_GRACE_MS);
+        return true;
+    }
+
+    // Tapping elsewhere mid-ghost: keep the input if it commits, drop it if not.
+    function flushGhost() {
+        if (ghost && !commitGhost()) cancelGhost();
+    }
+
+    // ---------- selection advance (Space / Tab) ----------
+
+    function lineTargets(line) {
+        if (!line || line.opaque) return [];
+        return tokenizeLine(line.lyrics, line.chords.map(c => c.position))
+            .map(t => t.start);
+    }
+
+    function selectionPosition() {
+        const sec = doc.sections.find(s => s.id === selection.sectionId);
+        const line = sec?.lines?.[selection.lineIndex];
+        if (!line) return null;
+        return selection.chordIndex !== undefined
+            ? line.chords[selection.chordIndex]?.position
+            : selection.position;
+    }
+
+    // Move the selection to the next/previous syllable, wrapping across
+    // lines within the section; stops (keeps the selection) at section ends.
+    function advanceSelection(dir) {
+        if (!selection) return;
+        const sec = doc.sections.find(s => s.id === selection.sectionId);
+        if (!sec || !sec.lines) return;
+        const pos = selectionPosition();
+        if (pos === null || pos === undefined) return;
+        let li = selection.lineIndex;
+        let starts = lineTargets(sec.lines[li]);
+        // index of the token displaying the selection (first start >= pos);
+        // end-slot / trailing-chord selections sit past the last token
+        let idx = starts.findIndex(s => s >= pos);
+        if (idx === -1) idx = starts.length;
+        idx += dir;
+        while (idx < 0 || idx >= starts.length) {
+            li += dir;
+            if (li < 0 || li >= sec.lines.length) return;  // stop at section edge
+            starts = lineTargets(sec.lines[li]);           // skips opaque/empty lines
+            idx = dir > 0 ? 0 : starts.length - 1;
+        }
+        selection = { sectionId: selection.sectionId, lineIndex: li, position: starts[idx] };
+        palette.showFor({ existingChord: null });
+        render();
     }
 
     function showToast(message) {
@@ -191,16 +309,80 @@ export function createVisualEditor({ container, onChange }) {
             redo();
             return;
         }
+        if (mod || e.altKey) return;
+
+        // --- ghost entry active: keystrokes are captured here, at the
+        // document listener — no input is ever focused (mobile keyboards
+        // must not pop; section cards re-render freely underneath) ---
+        if (ghost) {
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                cancelGhost();
+                render();  // ghost vanishes; selection stays
+            } else if (e.key === 'Backspace' || e.key === 'Delete') {
+                e.preventDefault();
+                ghost.text = ghost.text.slice(0, -1);
+                ghost.invalid = false;
+                if (ghost.text === '' && selection?.chordIndex === undefined) {
+                    cancelGhost();  // nothing left to commit on a bare syllable
+                } else {
+                    armGhostTimer();  // empty on an existing chord = pending delete
+                }
+                render();
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                commitGhost();  // commit (or empty-delete) without advancing
+            } else if (e.key === ' ' || e.key === 'Tab') {
+                e.preventDefault();
+                if (commitGhost()) {
+                    advanceSelection(e.key === 'Tab' && e.shiftKey ? -1 : 1);
+                }
+            } else if (e.key.length === 1) {
+                e.preventDefault();
+                ghost.text += e.key;
+                ghost.invalid = false;
+                armGhostTimer();
+                render();
+            }
+            return;
+        }
+
         // Delete/Backspace removes the chord behind a selected chip
-        if ((e.key === 'Delete' || e.key === 'Backspace') && !mod && !e.altKey) {
+        if (e.key === 'Delete' || e.key === 'Backspace') {
             if (deleteSelectedChord()) e.preventDefault();
             return;
         }
-        // typed chord entry: first hardware-keyboard letter routes into the
-        // palette's custom input (Enter commits via onPick, Escape cancels)
-        if (selection && !mod && !e.altKey && /^[A-Ga-g]$/.test(e.key)) {
+
+        if (!selection) return;  // page scroll / tab-focus keep working
+
+        // Space/Tab with a selection but no ghost just advances: spam Space
+        // across syllables that don't get chords, type where one does.
+        if (e.key === ' ' || e.key === 'Tab') {
             e.preventDefault();
-            palette.beginTyping(e.key.toUpperCase());
+            clearResume();
+            advanceSelection(e.key === 'Tab' && e.shiftKey ? -1 : 1);
+            return;
+        }
+
+        if (e.key.length !== 1) return;
+
+        // resume grace: right after an auto-commit, more typing continues
+        // that chord ('E' idle-commits, then 'b7' makes it Eb7, not a B7)
+        if (resume && sameChipSel(selection, resume.sel)) {
+            e.preventDefault();
+            ghost = { text: resume.text + e.key, invalid: false };
+            clearResume();
+            armGhostTimer();
+            render();
+            return;
+        }
+
+        // a chord-start letter begins ghost entry on the selection
+        if (/^[A-Ga-g]$/.test(e.key)) {
+            e.preventDefault();
+            ghost = { text: e.key.toUpperCase(), invalid: false };
+            armGhostTimer();
+            render();
         }
     }
     document.addEventListener('keydown', handleKeydown);
@@ -220,6 +402,7 @@ export function createVisualEditor({ container, onChange }) {
 
     const callbacks = {
         onSyllableTap(sectionId, lineIndex, position) {
+            flushGhost();  // commit a valid in-progress ghost before moving on
             // Tapping a syllable always selects it — even when a chip is
             // selected (moving the chord on tap surprised users; drag may
             // return as an explicit gesture later, so moveChord stays in
@@ -229,12 +412,22 @@ export function createVisualEditor({ container, onChange }) {
             render();
         },
         onChipTap(sectionId, lineIndex, chordIndex) {
+            flushGhost();
             selection = { sectionId, lineIndex, chordIndex };
             const sec = doc.sections.find(s => s.id === sectionId);
             palette.showFor({ existingChord: sec.lines[lineIndex].chords[chordIndex].chord });
             render();
         },
+        onChipRemove(sectionId, lineIndex, chordIndex) {
+            // hover × on a chip (desktop): same undoable remove path
+            cancelGhost();
+            apply(removeChord(doc, sectionId, lineIndex, chordIndex));
+            selection = null;
+            palette.hide();
+            render();
+        },
         onToggleMode(sectionId, mode) {
+            cancelGhost();
             modes.set(sectionId, mode);
             selection = null;
             palette.hide();
@@ -292,7 +485,8 @@ export function createVisualEditor({ container, onChange }) {
         cardsHost.textContent = '';
         for (const sec of doc.sections) {
             const mode = modes.get(sec.id) || (sec.lines && sec.lines.length === 0 ? 'lyrics' : 'chords');
-            cardsHost.appendChild(renderSectionCard(sec, { mode, selection, callbacks }));
+            const ghostCtx = ghost ? { text: ghost.text, invalid: !!ghost.invalid } : null;
+            cardsHost.appendChild(renderSectionCard(sec, { mode, selection, ghost: ghostCtx, callbacks }));
         }
         if (doc.sections.length === 0) {
             const hint = document.createElement('div');
@@ -305,6 +499,8 @@ export function createVisualEditor({ container, onChange }) {
 
     return {
         loadChordPro(text) {
+            cancelGhost();
+            clearResume();
             doc = parseSong(text || '');
             selection = null;
             undoStack = [];
@@ -316,6 +512,8 @@ export function createVisualEditor({ container, onChange }) {
         getChordPro() { return serializeSong(doc); },
         isEmpty() { return doc.sections.length === 0; },
         destroy() {
+            cancelGhost();
+            clearResume();
             document.removeEventListener('keydown', handleKeydown);
             container.textContent = '';
             container.classList.remove('ve-root');

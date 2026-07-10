@@ -135,16 +135,44 @@ test.describe('Keyboard interactions', () => {
         await page.locator('.ve-mode-chords').click();
     }
 
-    test('typed chord entry: select a syllable, type Am, Enter places the chord', async ({ page }) => {
+    test('ghost entry: select a syllable, type Eb7, chord commits after idle', async ({ page }) => {
         await placeReadyLine(page);
         await page.locator('.ve-syl').first().click();
         await expect(page.locator('.ve-palette')).toBeVisible();
-        await page.keyboard.type('Am');
-        await expect(page.locator('.ve-palette-custom')).toHaveValue('Am');
-        await page.keyboard.press('Enter');
-        await expect(page.locator('.ve-chip').first()).toHaveText('Am');
+        // pauses shorter than the idle-commit debounce: stays one ghost
+        await page.keyboard.type('Eb7', { delay: 150 });
+        await expect(page.locator('.ve-ghost-chip')).toHaveText('Eb7');
+        // typing does NOT open the picker or focus the custom input
+        await expect(page.locator('.ve-picker')).toBeHidden();
+        // after the idle delay the ghost becomes a real chip
+        await expect(page.locator('.ve-chip').first()).toHaveText('Eb7');
+        await expect(page.locator('.ve-ghost-chip')).toHaveCount(0);
         await page.locator('#editor-tab-raw').click();
-        expect(await page.locator('#editor-content').inputValue()).toContain('[Am]hello');
+        expect(await page.locator('#editor-content').inputValue()).toContain('[Eb7]hello');
+    });
+
+    test('Space spams across syllables, then typed chord + Space commits and advances', async ({ page }) => {
+        await placeReadyLine(page);
+        await page.locator('.ve-syl').first().click();       // "hel"
+        await page.keyboard.press('Space');                   // → "lo"
+        await page.keyboard.press('Space');                   // → "world"
+        await page.keyboard.type('C');
+        await page.keyboard.press('Space');                   // commit C, → "friend"
+        await expect(page.locator('.ve-chip')).toHaveText('C');
+        await expect(page.locator('.ve-syl-selected')).toHaveText(/friend/);
+        await page.locator('#editor-tab-raw').click();
+        expect(await page.locator('#editor-content').inputValue()).toContain('[C]world');
+    });
+
+    test('hovering a chip reveals an × that removes the chord', async ({ page }) => {
+        await placeReadyLine(page);
+        await page.locator('.ve-syl').first().click();
+        await page.locator('.ve-palette .ve-chip-btn').first().click();
+        await expect(page.locator('.ve-chip')).toHaveCount(1);
+        await page.locator('.ve-chip-wrap').hover();
+        await expect(page.locator('.ve-chip-x')).toBeVisible();
+        await page.locator('.ve-chip-x').click();
+        await expect(page.locator('.ve-chip')).toHaveCount(0);
     });
 
     test('Cmd/Ctrl+Z undoes a chord placement', async ({ page }) => {

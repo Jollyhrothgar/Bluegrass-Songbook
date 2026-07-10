@@ -9729,6 +9729,58 @@ body.fullscreen-mode::after {
     outline: 2px solid var(--accent);
     outline-offset: 2px; /* ring with a bg gap so it reads on the chord color */
 }
+/* Ghost-chip typed entry: in-progress chord shown where the chip will sit */
+.ve-ghost-chip {
+    display: inline-block;
+    background: transparent;
+    color: var(--chord);
+    font-weight: 700;
+    border: 1px dashed var(--chord);
+    border-radius: var(--radius-sm, 4px);
+    padding: 0.05em 0.35em;
+    margin-right: 2px;
+    font-size: 0.9em;
+    opacity: 0.75;
+    min-width: 0.8em;
+    min-height: 1.1em;
+}
+.ve-chip-editing {
+    opacity: 0.75;
+    outline-style: dashed;
+    min-width: 0.8em; /* keeps a visible stub when backspaced to empty */
+    min-height: 1.4em;
+}
+.ve-ghost-invalid {
+    border-color: var(--error, #e05252);
+    color: var(--error, #e05252);
+    text-decoration: line-through;
+}
+.ve-chip.ve-ghost-invalid { outline-color: var(--error, #e05252); }
+/* Hover ×: desktop-only quick delete on a chord chip */
+.ve-chip-wrap { position: relative; display: inline-block; }
+.ve-chip-x {
+    display: none;
+    position: absolute;
+    top: -0.55em;
+    right: -0.35em;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 1;
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+.ve-chip-x:hover { border-color: var(--error, #e05252); color: var(--error, #e05252); }
+@media (hover: hover) and (pointer: fine) {
+    .ve-chip-wrap:hover .ve-chip-x { display: flex; }
+}
 .ve-syl {
     cursor: pointer;
     border-radius: 3px;

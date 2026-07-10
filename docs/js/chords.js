@@ -109,6 +109,22 @@ export function getChordQuality(chord) {
 }
 
 /**
+ * Loose chord-shape validity check: a root note, a run of common
+ * quality/extension tokens (m, maj7, sus4, dim, add9, b5, #9, ...), and an
+ * optional slash bass. Used by the visual editor's typed chord entry to
+ * decide when accumulated keystrokes are committable. Permissive on
+ * purpose — it gates garbage, not unusual-but-real chords.
+ */
+const CHORD_QUALITY_RE = /^(?:maj|min|dim|aug|sus|add|M|m|\d{1,2}|[#b]\d{1,2}|[+\u00b0\u00f8o])*$/;
+
+export function isValidChord(chord) {
+    if (!chord) return false;
+    const m = chord.match(/^[A-G][#b]?([^/]*)(\/[A-G][#b]?)?$/);
+    if (!m) return false;
+    return CHORD_QUALITY_RE.test(m[1]);
+}
+
+/**
  * Extract all chords from chordpro content
  */
 export function extractChords(chordpro) {

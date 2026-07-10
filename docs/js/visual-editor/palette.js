@@ -1,6 +1,8 @@
 // Docked chord palette: diatonic chips for the detected key, recents from
 // the current song, a Strum Machine-style root + quality picker, and
-// free-text entry as the escape hatch (slash chords, oddities).
+// free-text entry as the pointer-user escape hatch (slash chords,
+// oddities). Hardware-keyboard chord typing bypasses the palette entirely —
+// see ghost-chip entry in visual-editor.js.
 
 import { getDiatonicChords } from '../chord-explorer/theory.js';
 
@@ -179,18 +181,6 @@ export function createPalette({ onPick, onDelete, onClose, onLayoutChange }) {
             lastRecents = sig;
             recentsRow.textContent = '';
             for (const chord of list) recentsRow.appendChild(chipButton(chord, c => onPick(c)));
-        },
-        beginTyping(prefix) {
-            // invoked on the first hardware-keyboard chord letter; never on
-            // mere selection (focusing an input would pop a mobile keyboard)
-            el.classList.remove('hidden');
-            picker.classList.remove('hidden');
-            custom.value = prefix;
-            custom.focus();
-            if (custom.setSelectionRange) {
-                custom.setSelectionRange(custom.value.length, custom.value.length);
-            }
-            if (onLayoutChange) onLayoutChange();
         },
         showFor({ existingChord }) {
             deleteBtn.classList.toggle('hidden', !existingChord);

@@ -1,5 +1,5 @@
 // @vitest-environment jsdom
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { createVisualEditor } from '../visual-editor/visual-editor.js';
 
 const SRC = `{meta: title Test Song}
@@ -173,50 +173,168 @@ function docKeydown(opts) {
     return e;
 }
 
-function customInput() {
-    return container.querySelector('.ve-palette-custom');
-}
+describe('ghost-chip typed entry', () => {
+    beforeEach(() => { vi.useFakeTimers(); });
+    afterEach(() => { vi.useRealTimers(); });
 
-describe('typed chord entry', () => {
-    it('typing a chord letter with a syllable selected reveals and focuses the custom input', () => {
+    it('typing a chord letter shows a ghost chip over the syllable — no picker, no focus', () => {
         tapSyllable('world');
         const e = docKeydown({ key: 'a' });
         expect(e.defaultPrevented).toBe(true);
-        expect(customInput().value).toBe('A');
-        expect(document.activeElement).toBe(customInput());
-        expect(container.querySelector('.ve-picker').classList.contains('hidden')).toBe(false);
+        const ghost = container.querySelector('.ve-ghost-chip');
+        expect(ghost).not.toBeNull();
+        expect(ghost.textContent).toBe('A');
+        // it sits in the selected syllable's segment, where the chip will land
+        expect(ghost.closest('.ve-seg').querySelector('.ve-syl-selected')).not.toBeNull();
+        // no progressive disclosure, no focused input (mobile keyboard stays down)
+        expect(container.querySelector('.ve-picker').classList.contains('hidden')).toBe(true);
+        expect(document.activeElement).not.toBe(container.querySelector('.ve-palette-custom'));
+        expect(editor.getChordPro()).not.toContain('[A]');
     });
 
-    it('Enter commits the typed chord onto the selected syllable', () => {
+    it('keystrokes accumulate and a valid chord auto-commits after the idle delay', () => {
         tapSyllable('world');
-        docKeydown({ key: 'A' });
-        const input = customInput();
-        input.value = 'Am';
-        input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
+        docKeydown({ key: 'e' });
+        docKeydown({ key: 'b' });
+        docKeydown({ key: '7' });
+        expect(container.querySelector('.ve-ghost-chip').textContent).toBe('Eb7');
+        expect(editor.getChordPro()).not.toContain('Eb7');
+        vi.advanceTimersByTime(800);
+        expect(editor.getChordPro()).toContain('[Eb7]world');
+        // the committed chip is selected, same as a palette pick
+        expect(container.querySelector('.ve-chip-selected').textContent).toBe('Eb7');
+        expect(container.querySelector('.ve-ghost-chip')).toBeNull();
+    });
+
+    it('each keystroke restarts the idle timer', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'e' });
+        vi.advanceTimersByTime(500);
+        docKeydown({ key: 'b' });
+        vi.advanceTimersByTime(500); // 1s after first key, only 0.5s after last
+        expect(editor.getChordPro()).not.toContain('[Eb]');
+        vi.advanceTimersByTime(300);
+        expect(editor.getChordPro()).toContain('[Eb]world');
+    });
+
+    it('invalid text never commits — the ghost idles in the invalid style', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'a' });
+        docKeydown({ key: 'x' });
+        vi.advanceTimersByTime(800);
+        expect(editor.getChordPro()).not.toContain('Ax');
+        const ghost = container.querySelector('.ve-ghost-chip');
+        expect(ghost.textContent).toBe('Ax');
+        expect(ghost.classList.contains('ve-ghost-invalid')).toBe(true);
+    });
+
+    it('Backspace repairs an invalid ghost, which then commits', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'a' });
+        docKeydown({ key: 'x' });
+        vi.advanceTimersByTime(800); // invalid — still ghosting
+        docKeydown({ key: 'Backspace' });
+        docKeydown({ key: 'm' });
+        expect(container.querySelector('.ve-ghost-chip').textContent).toBe('Am');
+        expect(container.querySelector('.ve-ghost-invalid')).toBeNull();
+        vi.advanceTimersByTime(800);
         expect(editor.getChordPro()).toContain('[Am]world');
     });
 
-    it('Enter changes the chord when a chip is selected', () => {
-        container.querySelector('.ve-chip').click();
-        docKeydown({ key: 'd' });
-        const input = customInput();
-        input.value = 'D7';
-        input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
-        expect(editor.getChordPro()).toContain('[D7]hello');
-    });
-
-    it('Escape cancels typing and keeps the syllable selection', () => {
+    it('Escape cancels the ghost and keeps the selection', () => {
         tapSyllable('world');
         docKeydown({ key: 'g' });
-        const input = customInput();
-        input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
-        expect(input.value).toBe('');
-        expect(container.querySelector('.ve-picker').classList.contains('hidden')).toBe(true);
+        docKeydown({ key: 'Escape' });
+        expect(container.querySelector('.ve-ghost-chip')).toBeNull();
+        vi.advanceTimersByTime(2000);
+        expect(editor.getChordPro()).not.toContain('[G]world');
         const syl = [...container.querySelectorAll('.ve-syl')]
             .find(s => s.textContent.trim().startsWith('world'));
         expect(syl.classList.contains('ve-syl-selected')).toBe(true);
-        expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(false);
-        expect(editor.getChordPro()).not.toContain('[G7]');
+    });
+
+    it('Enter commits immediately without advancing', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'g' });
+        docKeydown({ key: '7' });
+        docKeydown({ key: 'Enter' });
+        expect(editor.getChordPro()).toContain('[G7]world');
+        expect(container.querySelector('.ve-chip-selected').textContent).toBe('G7');
+        expect(container.querySelector('.ve-syl-selected')).toBeNull(); // no advance
+    });
+
+    it('typing on a selected chip previews on the chip and commits a replacement', () => {
+        container.querySelector('.ve-chip').click(); // [G]hello
+        docKeydown({ key: 'd' });
+        docKeydown({ key: '7' });
+        const chip = container.querySelector('.ve-chip-selected');
+        expect(chip.textContent).toBe('D7');
+        expect(chip.classList.contains('ve-chip-editing')).toBe(true);
+        expect(editor.getChordPro()).toContain('[G]hello'); // not committed yet
+        vi.advanceTimersByTime(800);
+        expect(editor.getChordPro()).toContain('[D7]hello');
+        expect(editor.getChordPro()).not.toContain('[G]');
+    });
+
+    it('resume grace: typing right after an auto-commit keeps refining that chord', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'e' });
+        vi.advanceTimersByTime(800);
+        expect(editor.getChordPro()).toContain('[E]world');
+        docKeydown({ key: 'b' });  // within the grace window: E → Eb, not a new B
+        docKeydown({ key: '7' });
+        vi.advanceTimersByTime(800);
+        expect(editor.getChordPro()).toContain('[Eb7]world');
+        expect(editor.getChordPro()).not.toContain('[B7]');
+    });
+
+    it('after the grace window, typing starts a fresh entry on the selected chip', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'e' });
+        vi.advanceTimersByTime(800);   // commit [E]
+        vi.advanceTimersByTime(1500);  // grace expires
+        docKeydown({ key: 'b' });      // fresh ghost 'B' replacing the chip
+        vi.advanceTimersByTime(800);
+        expect(editor.getChordPro()).toContain('[B]world');
+        expect(editor.getChordPro()).not.toContain('[Eb]');
+    });
+
+    it('tapping another syllable mid-entry commits a valid ghost first', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'c' });
+        tapSyllable('friend');
+        expect(editor.getChordPro()).toContain('[C]world');
+        expect(container.querySelector('.ve-ghost-chip')).toBeNull();
+    });
+
+    it('tapping another syllable mid-entry drops an invalid ghost', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'c' });
+        docKeydown({ key: 'x' });
+        tapSyllable('friend');
+        expect(editor.getChordPro()).not.toContain('Cx');
+        expect(container.querySelector('.ve-ghost-chip')).toBeNull();
+    });
+
+    it('backspacing an existing chord to empty deletes it on idle commit', () => {
+        container.querySelector('.ve-chip').click(); // [G]hello
+        docKeydown({ key: 'd' });
+        docKeydown({ key: 'Backspace' }); // empty ghost on an existing chord
+        expect(container.querySelector('.ve-chip-selected').textContent).toBe('');
+        vi.advanceTimersByTime(800);
+        expect(editor.getChordPro()).not.toContain('[G]');
+        expect(editor.getChordPro()).not.toContain('[D]');
+        expect(container.querySelector('.ve-chip')).toBeNull();
+    });
+
+    it('Enter on an emptied existing chord deletes it immediately (undoable)', () => {
+        container.querySelector('.ve-chip').click();
+        docKeydown({ key: 'd' });
+        docKeydown({ key: 'Backspace' });
+        docKeydown({ key: 'Enter' });
+        expect(editor.getChordPro()).not.toContain('[G]');
+        docKeydown({ key: 'z', ctrlKey: true });
+        expect(editor.getChordPro()).toContain('[G]hello');
     });
 
     it('does not intercept keystrokes targeted at inputs or textareas', () => {
@@ -224,14 +342,131 @@ describe('typed chord entry', () => {
         const field = document.createElement('input');
         document.body.appendChild(field);
         field.dispatchEvent(new KeyboardEvent('keydown', { key: 'a', bubbles: true, cancelable: true }));
-        expect(customInput().value).toBe('');
+        expect(container.querySelector('.ve-ghost-chip')).toBeNull();
     });
 
     it('typing without a selection does nothing', () => {
         const e = docKeydown({ key: 'a' });
         expect(e.defaultPrevented).toBe(false);
-        expect(customInput().value).toBe('');
-        expect(container.querySelector('.ve-picker').classList.contains('hidden')).toBe(true);
+        expect(container.querySelector('.ve-ghost-chip')).toBeNull();
+    });
+
+    it('undo shortcut mid-entry cancels the ghost and undoes the last change', () => {
+        tapSyllable('world');
+        pickChord('C');
+        docKeydown({ key: 'd' });
+        docKeydown({ key: 'z', ctrlKey: true });
+        expect(container.querySelector('.ve-ghost-chip')).toBeNull();
+        vi.advanceTimersByTime(2000);
+        expect(editor.getChordPro()).not.toContain('[C]');
+        expect(editor.getChordPro()).not.toContain('[D]');
+    });
+});
+
+describe('Space/Tab selection advance', () => {
+    beforeEach(() => { vi.useFakeTimers(); });
+    afterEach(() => { vi.useRealTimers(); });
+
+    const selectedSyl = () => container.querySelector('.ve-syl-selected');
+
+    it('Space with a selection and no ghost advances to the next syllable', () => {
+        tapSyllable('hel');
+        const e = docKeydown({ key: ' ' });
+        expect(e.defaultPrevented).toBe(true);
+        expect(selectedSyl().textContent.trim().startsWith('lo')).toBe(true);
+        expect(editor.getChordPro()).toContain('[G]hello world friend'); // no edits
+    });
+
+    it('spam Space across syllables, then type where the chord goes', () => {
+        tapSyllable('hel');
+        docKeydown({ key: ' ' }); // lo
+        docKeydown({ key: ' ' }); // world
+        docKeydown({ key: 'c' });
+        vi.advanceTimersByTime(800);
+        expect(editor.getChordPro()).toContain('[C]world');
+    });
+
+    it('Space during ghost entry commits and advances', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'c' });
+        const e = docKeydown({ key: ' ' });
+        expect(e.defaultPrevented).toBe(true);
+        expect(editor.getChordPro()).toContain('[C]world');
+        expect(selectedSyl().textContent.trim().startsWith('friend')).toBe(true);
+    });
+
+    it('Space during an invalid ghost neither commits nor advances', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'c' });
+        docKeydown({ key: 'x' });
+        docKeydown({ key: ' ' });
+        expect(editor.getChordPro()).not.toContain('Cx');
+        expect(container.querySelector('.ve-ghost-chip').textContent).toBe('Cx');
+    });
+
+    it('Tab advances, Shift+Tab goes backward', () => {
+        tapSyllable('world');
+        docKeydown({ key: 'Tab' });
+        expect(selectedSyl().textContent.trim().startsWith('friend')).toBe(true);
+        docKeydown({ key: 'Tab', shiftKey: true });
+        expect(selectedSyl().textContent.trim().startsWith('world')).toBe(true);
+    });
+
+    it('advance wraps to the next line within the section and stops at the end', () => {
+        editor.loadChordPro('{start_of_verse: Verse 1}\nfirst line\nsecond line\n{end_of_verse}\n');
+        const line0Syls = [...container.querySelectorAll('.ve-line[data-line="0"] .ve-syl')];
+        line0Syls[line0Syls.length - 1].click(); // last syllable of line 0
+        docKeydown({ key: ' ' });
+        expect(selectedSyl().closest('.ve-line').dataset.line).toBe('1');
+        expect(selectedSyl().dataset.start).toBe('0');
+        // spam to the end of the section: selection parks on the last syllable
+        for (let i = 0; i < 8; i++) docKeydown({ key: ' ' });
+        const line1Syls = [...container.querySelectorAll('.ve-line[data-line="1"] .ve-syl')];
+        expect(selectedSyl()).toBe(line1Syls[line1Syls.length - 1]);
+    });
+
+    it('backward advance wraps to the previous line', () => {
+        editor.loadChordPro('{start_of_verse: Verse 1}\nfirst line\nsecond line\n{end_of_verse}\n');
+        const syls = [...container.querySelectorAll('.ve-line[data-line="1"] .ve-syl')];
+        syls[0].click(); // first syllable of line 1
+        docKeydown({ key: 'Tab', shiftKey: true });
+        expect(selectedSyl().closest('.ve-line').dataset.line).toBe('0');
+        const line0Syls = [...container.querySelectorAll('.ve-line[data-line="0"] .ve-syl')];
+        expect(selectedSyl()).toBe(line0Syls[line0Syls.length - 1]);
+    });
+
+    it('Space advances from a selected chip too', () => {
+        container.querySelector('.ve-chip').click(); // [G] over "hel"
+        docKeydown({ key: ' ' });
+        expect(selectedSyl().textContent.trim().startsWith('lo')).toBe(true);
+    });
+
+    it('Space with no selection is left alone (page scroll)', () => {
+        const e = docKeydown({ key: ' ' });
+        expect(e.defaultPrevented).toBe(false);
+    });
+
+    it('Tab with no selection is left alone (focus navigation)', () => {
+        const e = docKeydown({ key: 'Tab' });
+        expect(e.defaultPrevented).toBe(false);
+    });
+});
+
+describe('hover × chord delete', () => {
+    it('every chip carries an × affordance that removes the chord (undoable)', () => {
+        const x = container.querySelector('.ve-chip-x');
+        expect(x).not.toBeNull();
+        x.click();
+        expect(editor.getChordPro()).not.toContain('[G]');
+        expect(container.querySelector('.ve-chip')).toBeNull();
+        container.querySelector('.ve-undo').click();
+        expect(editor.getChordPro()).toContain('[G]hello world friend');
+    });
+
+    it('clicking × does not select the chip or open the palette', () => {
+        container.querySelector('.ve-chip-x').click();
+        expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(true);
+        expect(container.querySelector('.ve-chip-selected')).toBeNull();
     });
 });
 
