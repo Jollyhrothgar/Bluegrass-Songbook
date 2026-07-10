@@ -34,7 +34,7 @@ TICKS_PER_QUARTER = 480
 
 
 def xml_parts(xml_path):
-    """-> list of sorted [(measure, tick, string, fret)] per <part>."""
+    """-> list of sorted [(measure, tick, string, fret, dur)] per <part>."""
     root = ET.parse(xml_path).getroot()
     parts = []
     for part in root.findall("part"):
@@ -64,7 +64,8 @@ def xml_parts(xml_path):
                     f = el.findtext(".//fret")
                     start = last_start if chord else tick
                     if s is not None and not tie_stop:
-                        notes.append((mnum, round(start), int(s), int(f)))
+                        notes.append((mnum, round(start), int(s), int(f),
+                                      round(dur)))
                     if not chord:
                         last_start = tick
                         tick += dur
@@ -73,13 +74,20 @@ def xml_parts(xml_path):
 
 
 def otf_tracks(otf_path):
-    """-> ordered dict track_id -> sorted [(measure, tick, string, fret)]."""
+    """-> ordered dict track_id -> sorted [(measure, tick, string, fret, dur)].
+
+    Durations are part of the comparison (added 2026-07-10): the XML
+    export carries every note's written duration, and the parser now
+    decodes the TEF duration byte — tick/string/fret alone let wrong
+    note LENGTHS verify (Mike caught 25635 rendering with wrong
+    lengths; the byte was previously misread as a 'marker char').
+    """
     otf = json.load(open(otf_path))
     order = [t["id"] for t in otf.get("tracks", [])]
     out = {}
     for tid in order:
         measures = otf.get("notation", {}).get(tid, [])
-        notes = [(m["measure"], ev["tick"], n["s"], n["f"])
+        notes = [(m["measure"], ev["tick"], n["s"], n["f"], n.get("dur"))
                  for m in measures for ev in m["events"]
                  for n in ev["notes"] if not n.get("tie")]
         out[tid] = sorted(notes)

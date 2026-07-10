@@ -768,7 +768,8 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                             effect2 = evt.raw_data[5]
                             if (fret_byte >> 5) & 0x01 and effect2 in FINGERING_MAP:
                                 finger = FINGERING_MAP[effect2]
-                        note = OTFNote(s=string, f=fret, tech=tech, finger=finger, tie=tie)
+                        note = OTFNote(s=string, f=fret, tech=tech, finger=finger, tie=tie,
+                                       dur=evt.duration_ticks)
                         otf_event.notes.append(note)
 
                 if otf_event.notes:

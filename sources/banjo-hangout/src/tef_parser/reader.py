@@ -9,6 +9,27 @@ from pathlib import Path
 import struct
 
 
+def decode_duration_code(code: int) -> int:
+    """Written duration in ticks (480/quarter) from a TEF duration code.
+
+    The code lives in bits 0-4 of the duration byte — V2 byte3, V3
+    byte5 (upper bits are dynamics; V3 bit7 is the tie flag). Formula:
+    base = whole >> (code // 3); code % 3: 0 = straight (base),
+    1 = DOTTED OF THE NEXT-SHORTER VALUE (base * 3/4 — a naive
+    base * 3/2 verified 2x long on every dotted note in 23408/27165/
+    11245/11514/17713), 2 = triplet (base * 2/3). Oracle-validated
+    against TablEdit MusicXML durations corpus-wide (all duration
+    kinds incl. dotted and triplets).
+    """
+    base = 1920 >> (code // 3)
+    mod = code % 3
+    if mod == 1:
+        return base * 3 // 4
+    if mod == 2:
+        return base * 2 // 3
+    return base
+
+
 class TEFVersionError(Exception):
     """Raised when a TEF file version is not supported."""
 
@@ -167,6 +188,9 @@ class TEFNoteEvent:
     extra: int             # Articulation: 0=normal, 1=hammer-on, 2=pull-off, 3=slide
     pitch_byte: int        # Byte 9 - module/voice (0, 6, 12, or 18)
     raw_data: bytes        # Full 12-byte record for analysis
+    duration_ticks: int | None = None  # Written duration (480 = quarter),
+                                       # decoded from the duration byte
+                                       # (V2 byte3 / V3 byte5, bits 0-4)
 
     @property
     def articulation(self) -> str:
@@ -1070,6 +1094,11 @@ class TEFReader:
                 extra=local_string + 1,  # Store 1-indexed local string
                 pitch_byte=fret,          # Store fret directly
                 raw_data=record,
+                # byte5 bits 0-4 = duration code (bit7 = tie, bits 5-6
+                # dynamics). The 'marker' read above is a historical
+                # misinterpretation of this same byte (0x49 'I' = an
+                # eighth with dynamics, not a marker char).
+                duration_ticks=decode_duration_code(record[5] & 0x1f),
             ))
 
             offset += 12
@@ -1227,6 +1256,10 @@ class TEFReader:
                     extra=local_string + 1,  # 1-indexed local string within track
                     pitch_byte=fret,
                     raw_data=rec,
+                    # byte3 bits 0-4 = duration code (bits 5-7 dynamics,
+                    # 7 = tie sentinel); marker_char above is the same
+                    # historical misread of this byte.
+                    duration_ticks=decode_duration_code(rec[3] & 0x1f),
                 ))
 
             offset += 6
