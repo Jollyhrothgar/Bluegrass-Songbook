@@ -192,6 +192,16 @@ export function renderSectionCard(section, ctx) {
         ta.value = section.lines.filter(l => !l.opaque).map(l => l.lyrics).join('\n');
         ta.rows = Math.max(3, section.lines.length + 1);
         ta.addEventListener('blur', () => callbacks.onLyricsCommit(section.id, ta.value));
+        // Smart paste: let the orchestrator convert chord sheets / ChordPro.
+        // Returns true when handled; plain text falls through to the default
+        // textarea paste (committed later by blur, as before).
+        ta.addEventListener('paste', (e) => {
+            if (!callbacks.onLyricsPaste) return;
+            const text = e.clipboardData ? e.clipboardData.getData('text/plain') : '';
+            if (text && callbacks.onLyricsPaste(section.id, text)) {
+                e.preventDefault();
+            }
+        });
         body.appendChild(ta);
     } else {
         section.lines.forEach((line, li) => {

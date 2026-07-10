@@ -18,7 +18,8 @@ docs/
 │   ├── tags.js         # Tag dropdown, filtering, instrument tags
 │   ├── lists.js        # User lists, favorites, multi-owner, Thunderdome
 │   ├── list-picker.js  # List picker dropdown component
-│   ├── editor.js       # Song editor, ChordPro conversion
+│   ├── editor.js       # Song editor (Raw tab), re-exports smart-paste pipeline
+│   ├── smart-paste.js  # Shared chord-sheet→ChordPro conversion (Raw + Visual paste)
 │   ├── flags.js        # Report Issue feature (creates GitHub issues)
 │   ├── song-request.js # Song request feature (frictionless)
 │   ├── superuser-request.js # Super-user request modal and submission

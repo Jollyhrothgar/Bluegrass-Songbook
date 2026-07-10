@@ -6,8 +6,9 @@ import {
     parseSong, serializeSong, placeChord, changeChord, removeChord,
     transposeDoc, allChords, addSection, setSectionType, relabelSection,
     moveSection, duplicateSection, deleteSection, updateLyrics,
-    splitSectionOnBlankLines
+    splitSectionOnBlankLines, spliceSectionWithParsed
 } from './model.js';
+import { convertPastedText } from '../smart-paste.js';
 import { renderSectionCard } from './section-card.js';
 import { createPalette } from './palette.js';
 import { scrollSelectionClear } from './autoscroll.js';
@@ -22,7 +23,7 @@ const SECTION_TYPES = ['verse', 'chorus', 'bridge', 'intro', 'outro'];
 export const GHOST_COMMIT_MS = 800;
 export const RESUME_GRACE_MS = 1500;
 
-export function createVisualEditor({ container, onChange }) {
+export function createVisualEditor({ container, onChange, onImportMeta }) {
     let doc = parseSong('');
     let selection = null;            // {sectionId, lineIndex, position} or {..., chordIndex}
     let undoStack = [];
@@ -400,6 +401,66 @@ export function createVisualEditor({ container, onChange }) {
         return [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(e => e[0]);
     }
 
+    // ---------- smart paste ----------
+
+    // Real lyric or chord content — a paste that parses to nothing but
+    // directives/passthrough must NOT hijack the default paste (guard rail:
+    // never eat clipboard content we can't turn into cards).
+    function docHasLyricContent(parsed) {
+        return parsed.sections.some(s =>
+            s.lines && s.lines.some(l =>
+                !l.opaque && (l.lyrics.trim() !== '' || l.chords.length > 0)));
+    }
+
+    function reportImportMeta(res) {
+        if (onImportMeta && (res.title || res.artist)) {
+            onImportMeta({ title: res.title || null, artist: res.artist || null });
+        }
+    }
+
+    // Paste into a section card's lyrics textarea. Returns true when the
+    // paste was smart-handled (caller preventDefaults); false falls through
+    // to the plain textarea paste + blur-commit path. One undo step.
+    function smartPasteIntoSection(sectionId, rawText) {
+        const res = convertPastedText(rawText);
+        if (res.kind !== 'chordpro') return false;
+        const parsed = parseSong(res.text);
+        // guard rail: never eat a paste we can't turn into content
+        if (!docHasLyricContent(parsed)) return false;
+        const target = doc.sections.find(s => s.id === sectionId);
+        const replaced = target && target.lines
+            ? target.lines.reduce((n, l) => n + (l.opaque ? 0 : l.chords.length), 0)
+            : 0;
+        cancelGhost();
+        apply(spliceSectionWithParsed(doc, sectionId, parsed));
+        selection = null;
+        modes.delete(sectionId);   // pasted chords render as chips
+        palette.hide();
+        reportImportMeta(res);
+        render();
+        showToast(replaced > 0
+            ? `Pasted chord sheet — replaced ${replaced} existing chord${replaced === 1 ? '' : 's'}.`
+            : 'Pasted chord sheet — chords placed on the lyrics.');
+        return true;
+    }
+
+    // Whole-song paste into the empty editor: builds the full document
+    // (metadata included) in a single undoable step.
+    function buildFromWholePaste(rawText) {
+        if (!rawText || !rawText.trim()) return false;
+        const res = convertPastedText(rawText);
+        const parsed = parseSong(res.kind === 'chordpro' ? res.text : rawText);
+        if (!docHasLyricContent(parsed)) return false;
+        cancelGhost();
+        apply(parsed);
+        selection = null;
+        modes.clear();
+        palette.hide();
+        if (res.kind === 'chordpro') reportImportMeta(res);
+        render();
+        return true;
+    }
+
     const callbacks = {
         onSyllableTap(sectionId, lineIndex, position) {
             flushGhost();  // commit a valid in-progress ghost before moving on
@@ -452,6 +513,9 @@ export function createVisualEditor({ container, onChange }) {
             }
             render();
         },
+        onLyricsPaste(sectionId, text) {
+            return smartPasteIntoSection(sectionId, text);
+        },
         onLyricsCommit(sectionId, text) {
             const sec = doc.sections.find(s => s.id === sectionId);
             const current = sec.lines.filter(l => !l.opaque).map(l => l.lyrics).join('\n');
@@ -491,8 +555,18 @@ export function createVisualEditor({ container, onChange }) {
         if (doc.sections.length === 0) {
             const hint = document.createElement('div');
             hint.className = 've-empty-hint';
-            hint.textContent = 'Add a section to get started, or paste lyrics in the Raw tab.';
-            cardsHost.appendChild(hint);
+            hint.textContent = 'Add a section to get started — or paste a whole song below (chord sheets from the web convert automatically).';
+            const ta = document.createElement('textarea');
+            ta.className = 've-empty-paste';
+            ta.rows = 6;
+            ta.placeholder = 'Paste a song or chord sheet here…';
+            ta.addEventListener('paste', (e) => {
+                const text = e.clipboardData ? e.clipboardData.getData('text/plain') : '';
+                if (text && buildFromWholePaste(text)) e.preventDefault();
+            });
+            // typed (or plain-pasted) lyrics build cards on blur too
+            ta.addEventListener('blur', () => { buildFromWholePaste(ta.value); });
+            cardsHost.append(hint, ta);
         }
         autoScrollToSelection();
     }

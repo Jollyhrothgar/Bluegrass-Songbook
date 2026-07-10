@@ -588,3 +588,166 @@ describe('key follows transpose', () => {
         expect(labels).toContain('E7');
     });
 });
+
+// ---------- smart paste ----------
+
+function pasteInto(el, text) {
+    const e = new Event('paste', { bubbles: true, cancelable: true });
+    e.clipboardData = { getData: (type) => (type === 'text/plain' ? text : '') };
+    el.dispatchEvent(e);
+    return e;
+}
+
+const PASTED_SHEET = `G              C        G
+Way down upon the Swanee River
+D7                 G
+Far, far away
+
+G                C       G
+All up and down the whole creation
+D7                G
+Sadly I roam`;
+
+describe('smart paste into a section lyrics textarea', () => {
+    function openLyricsTextarea() {
+        container.querySelector('.ve-card .ve-mode-lyrics').click();
+        return container.querySelector('.ve-lyrics-input');
+    }
+
+    it('plain text is not intercepted (default textarea paste keeps working)', () => {
+        const ta = openLyricsTextarea();
+        const e = pasteInto(ta, 'just some plain words\nanother line');
+        expect(e.defaultPrevented).toBe(false);
+        // nothing committed yet — blur still owns the commit
+        expect(editor.getChordPro()).toContain('[G]hello world friend');
+    });
+
+    it('chords-over-lyrics paste converts, splits blocks into cards, and shows chips', () => {
+        const ta = openLyricsTextarea();
+        const e = pasteInto(ta, PASTED_SHEET);
+        expect(e.defaultPrevented).toBe(true);
+
+        const labels = [...container.querySelectorAll('.ve-card-label')].map(x => x.textContent);
+        expect(labels).toEqual(['Verse 1', 'Verse 2']);
+
+        // chips render (chords mode) — no lyrics textarea left open
+        expect(container.querySelector('.ve-lyrics-input')).toBeNull();
+        const chips = [...container.querySelectorAll('.ve-chip')].map(c => c.textContent);
+        expect(chips).toContain('D7');
+
+        const out = editor.getChordPro();
+        expect(out).toContain('[G]Way down upon');
+        expect(out).toContain('Sadly I roam');
+        expect(out).not.toContain('hello world friend');
+        // metadata survives
+        expect(out).toContain('{meta: title Test Song}');
+    });
+
+    it('replacing a section with chords shows the dropped-chords toast and one undo restores everything', () => {
+        const ta = openLyricsTextarea();
+        pasteInto(ta, PASTED_SHEET);
+        const toast = container.querySelector('.ve-toast');
+        expect(toast.classList.contains('hidden')).toBe(false);
+        expect(toast.textContent).toContain('replaced 1 existing chord');
+
+        // the whole paste is ONE undo step
+        toast.querySelector('.ve-toast-undo').click();
+        expect(editor.getChordPro()).toContain('[G]hello world friend');
+        expect(editor.getChordPro()).not.toContain('Swanee');
+        const labels = [...container.querySelectorAll('.ve-card-label')].map(x => x.textContent);
+        expect(labels).toEqual(['Verse 1']);
+    });
+
+    it('pasted ChordPro with explicit sections splices them in', () => {
+        const ta = openLyricsTextarea();
+        const e = pasteInto(ta, '{soc}\n[C]glory glory\n{eoc}\n{sov: Verse 9}\n[G]more words\n{eov}');
+        expect(e.defaultPrevented).toBe(true);
+        const labels = [...container.querySelectorAll('.ve-card-label')].map(x => x.textContent);
+        expect(labels).toEqual(['Chorus', 'Verse 9']);
+    });
+
+    it('guard rail: directive-only paste that parses to nothing falls through as plain text', () => {
+        const ta = openLyricsTextarea();
+        const e = pasteInto(ta, '{comment: nothing but a directive}');
+        expect(e.defaultPrevented).toBe(false);
+        expect(editor.getChordPro()).toContain('[G]hello world friend');
+    });
+});
+
+describe('smart paste into the empty editor', () => {
+    beforeEach(() => { editor.loadChordPro(''); });
+
+    it('shows a paste affordance in the empty state', () => {
+        expect(container.querySelector('.ve-empty-paste')).not.toBeNull();
+        expect(container.querySelector('.ve-empty-hint')).not.toBeNull();
+    });
+
+    it('whole-song chord-sheet paste builds all cards in one undo step', () => {
+        const ta = container.querySelector('.ve-empty-paste');
+        const e = pasteInto(ta, PASTED_SHEET);
+        expect(e.defaultPrevented).toBe(true);
+        expect(container.querySelectorAll('.ve-card').length).toBe(2);
+        expect(editor.getChordPro()).toContain('[D7]');
+
+        container.querySelector('.ve-undo').click();
+        expect(editor.isEmpty()).toBe(true);
+        expect(container.querySelector('.ve-empty-paste')).not.toBeNull();
+    });
+
+    it('pasted ChordPro keeps its metadata directives', () => {
+        const ta = container.querySelector('.ve-empty-paste');
+        pasteInto(ta, '{meta: title Pasted Song}\n{key: D}\n\n[D]hello [G]there');
+        const out = editor.getChordPro();
+        expect(out).toContain('{meta: title Pasted Song}');
+        expect(out).toContain('{key: D}');
+        expect(out).toContain('[D]hello [G]there');
+    });
+
+    it('plain lyrics paste builds cards immediately too', () => {
+        const ta = container.querySelector('.ve-empty-paste');
+        const e = pasteInto(ta, 'plain words only\n\nsecond block');
+        expect(e.defaultPrevented).toBe(true);
+        expect(container.querySelectorAll('.ve-card').length).toBe(2);
+        expect(editor.getChordPro()).toContain('plain words only');
+    });
+
+    it('typed lyrics build cards on blur', () => {
+        const ta = container.querySelector('.ve-empty-paste');
+        ta.value = 'typed words here\n\nsecond block';
+        ta.dispatchEvent(new Event('blur'));
+        expect(container.querySelectorAll('.ve-card').length).toBe(2);
+        expect(editor.getChordPro()).toContain('typed words here');
+    });
+
+    it('whitespace paste is ignored (no cards, no crash)', () => {
+        const ta = container.querySelector('.ve-empty-paste');
+        const e = pasteInto(ta, '   \n  ');
+        expect(e.defaultPrevented).toBe(false);
+        expect(editor.isEmpty()).toBe(true);
+    });
+});
+
+describe('smart paste reports imported title/artist to the host', () => {
+    it('fires onImportMeta for Ultimate Guitar pastes', () => {
+        const meta = vi.fn();
+        const c2 = document.createElement('div');
+        document.body.appendChild(c2);
+        const ed2 = createVisualEditor({ container: c2, onChange: vi.fn(), onImportMeta: meta });
+        ed2.loadChordPro('');
+        const ug = `Wagon Wheel Chords by Old Crow Medicine Show
+1,234,567 views5,578 saves6 comments
+Tuning: E A D G B EKey: ACapo: no capo
+
+[Verse 1]
+G                        D
+Heading down south to the land of the pines
+Em                 C
+I'm thumbing my way into North Caroline
+Last update: Oct 16, 2023
+Rating`;
+        pasteInto(c2.querySelector('.ve-empty-paste'), ug);
+        expect(meta).toHaveBeenCalledWith({ title: 'Wagon Wheel', artist: 'Old Crow Medicine Show' });
+        expect(ed2.getChordPro()).toContain('[G]Heading down south');
+        ed2.destroy();
+    });
+});

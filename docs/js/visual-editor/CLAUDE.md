@@ -60,6 +60,26 @@ with ✕ Remove. Desktop extras:
 Ghost state lives in the orchestrator and is projected into
 `renderSectionCard` via `ctx.ghost` — re-render safe, textContent only.
 
+## Smart paste
+
+Both paste targets reuse the Raw editor's battle-tested pipeline, moved
+verbatim to `../smart-paste.js` (`convertPastedText`: ChordU clean → Ultimate
+Guitar clean → chords-over-lyrics conversion; `editor.js` re-exports it).
+
+- **Section card (✎ Lyrics textarea)**: a paste that converts to ChordPro
+  (or already is ChordPro) replaces that section via
+  `spliceSectionWithParsed` — one anonymous block populates the card in
+  place; multiple blank-line blocks or explicit `{sov}`/`{soc}` directives
+  splice in as separate cards. One undo step; a toast reports replaced
+  chords. Plain text falls through to the default textarea paste +
+  blur-commit path (guard rail: a paste that parses to no lyric/chord lines
+  is never intercepted).
+- **Empty editor**: the empty state shows a `.ve-empty-paste` textarea; a
+  whole-song paste (chord sheet, ChordPro, or plain lyrics) builds all cards
+  — metadata directives included — in one undo step. Typed lyrics build on
+  blur. ChordU/UG title/artist are reported to the host via `onImportMeta`,
+  which fills empty title/artist inputs (same as the Raw paste handler).
+
 ## Design docs
 
 - Spec: `docs/superpowers/specs/2026-07-01-visual-song-editor-design.md`

@@ -329,6 +329,47 @@ export function splitSectionOnBlankLines(doc, sectionId) {
     return next;
 }
 
+// Smart paste: replace one section with the sections of a freshly parsed
+// document (the converted clipboard). A single anonymous block populates the
+// target card in place (keeping its id/label/type); multiple blocks or
+// explicit section directives splice in as their own cards. Pasted metadata
+// fills empty fields only — it never clobbers what the user already has.
+export function spliceSectionWithParsed(doc, sectionId, parsed) {
+    const next = cloneDoc(doc);
+    const idx = next.sections.findIndex(s => s.id === sectionId);
+    if (idx === -1) return next;
+    const target = next.sections[idx];
+    const incoming = structuredClone(parsed.sections);
+
+    if (incoming.length === 1 && incoming[0].implicit && incoming[0].lines) {
+        target.lines = incoming[0].lines;
+        target.implicit = false;
+    } else {
+        // continue the doc's verse numbering for anonymous pasted blocks
+        let count = next.sections.filter((s, i) => i !== idx && s.type === 'verse').length;
+        for (const s of incoming) {
+            if (s.implicit && s.type === 'verse') {
+                count++;
+                s.label = `Verse ${count}`;
+                s.implicit = false;
+            }
+        }
+        next.sections.splice(idx, 1, ...incoming);
+    }
+
+    for (const entry of parsed.metadata.rawLines) {
+        if (entry.field) {
+            if (!next.metadata.fields[entry.field]) {
+                next.metadata.fields[entry.field] = entry.parsedValue;
+                next.metadata.rawLines.push(structuredClone(entry));
+            }
+        } else {
+            next.metadata.rawLines.push(structuredClone(entry));
+        }
+    }
+    return next;
+}
+
 // ---------- lyric editing with chord re-anchoring ----------
 
 function wordsOf(lines) {

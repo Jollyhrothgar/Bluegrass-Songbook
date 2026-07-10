@@ -3,7 +3,8 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import {
     parseSong, serializeSong, resetIdsForTest,
     addSection, setSectionType, relabelSection, moveSection,
-    duplicateSection, deleteSection, updateLyrics, splitSectionOnBlankLines
+    duplicateSection, deleteSection, updateLyrics, splitSectionOnBlankLines,
+    spliceSectionWithParsed
 } from '../visual-editor/model.js';
 
 const SRC = `{start_of_verse: Verse 1}
@@ -122,5 +123,71 @@ describe('splitSectionOnBlankLines', () => {
         const d = parseSong('{start_of_verse: Verse 1}\nonly line\n{end_of_verse}');
         const next = splitSectionOnBlankLines(d, d.sections[0].id);
         expect(next.sections).toHaveLength(1);
+    });
+});
+
+
+describe('spliceSectionWithParsed', () => {
+    it('single anonymous block populates the target card, keeping its identity', () => {
+        const doc = parseSong('{start_of_verse: Verse 1}\nold [G]words\n{end_of_verse}');
+        const id = doc.sections[0].id;
+        const parsed = parseSong('[C]new words here\n[D]second line');
+        const next = spliceSectionWithParsed(doc, id, parsed);
+        expect(next.sections).toHaveLength(1);
+        expect(next.sections[0].id).toBe(id);
+        expect(next.sections[0].label).toBe('Verse 1');
+        expect(next.sections[0].implicit).toBe(false);
+        expect(serializeSong(next)).toContain('[C]new words here');
+        expect(serializeSong(next)).not.toContain('old');
+    });
+
+    it('multi-block parse splices multiple sections in place of the target', () => {
+        const doc = parseSong(
+            '{start_of_verse: Verse 1}\nfirst\n{end_of_verse}\n' +
+            '{start_of_verse: Verse 2}\nreplace me\n{end_of_verse}\n' +
+            '{start_of_chorus}\nchorus line\n{end_of_chorus}');
+        const target = doc.sections[1].id;
+        const parsed = parseSong('[G]block one\n\n[C]block two');
+        const next = spliceSectionWithParsed(doc, target, parsed);
+        expect(next.sections).toHaveLength(4);
+        expect(next.sections[1].lines[0].lyrics).toBe('block one');
+        expect(next.sections[2].lines[0].lyrics).toBe('block two');
+        // implicit verses renumber past the doc's existing verse count
+        expect(next.sections[1].label).toBe('Verse 2');
+        expect(next.sections[2].label).toBe('Verse 3');
+        // untouched neighbors keep their place
+        expect(next.sections[0].lines[0].lyrics).toBe('first');
+        expect(next.sections[3].type).toBe('chorus');
+    });
+
+    it('explicit sections in the paste keep their own labels and types', () => {
+        const doc = parseSong('{start_of_verse: Verse 1}\nreplace me\n{end_of_verse}');
+        const parsed = parseSong('{soc}\n[G]glory glory\n{eoc}\n{sov: Verse 9}\nwords\n{eov}');
+        const next = spliceSectionWithParsed(doc, doc.sections[0].id, parsed);
+        expect(next.sections.map(s => s.label)).toEqual(['Chorus', 'Verse 9']);
+        expect(next.sections[0].type).toBe('chorus');
+    });
+
+    it('merges pasted metadata into empty fields without clobbering existing ones', () => {
+        const doc = parseSong('{meta: title Kept Title}\n\n{start_of_verse: Verse 1}\nx\n{end_of_verse}');
+        const parsed = parseSong('{meta: title Pasted Title}\n{meta: artist Pasted Artist}\n\n[G]hello');
+        const next = spliceSectionWithParsed(doc, doc.sections[0].id, parsed);
+        expect(next.metadata.fields.title).toBe('Kept Title');
+        expect(next.metadata.fields.artist).toBe('Pasted Artist');
+        expect(serializeSong(next)).toContain('{meta: artist Pasted Artist}');
+    });
+
+    it('is a pure op: the input doc is untouched', () => {
+        const doc = parseSong('{start_of_verse: Verse 1}\nkeep\n{end_of_verse}');
+        spliceSectionWithParsed(doc, doc.sections[0].id, parseSong('a\n\nb'));
+        expect(doc.sections).toHaveLength(1);
+        expect(doc.sections[0].lines[0].lyrics).toBe('keep');
+    });
+
+    it('unknown section id returns the doc unchanged', () => {
+        const doc = parseSong('hello');
+        const next = spliceSectionWithParsed(doc, 'nope', parseSong('x'));
+        expect(next.sections).toHaveLength(1);
+        expect(next.sections[0].lines[0].lyrics).toBe('hello');
     });
 });

@@ -329,3 +329,95 @@ test.describe('Palette auto-scroll', () => {
         }).toBe(true);
     });
 });
+
+test.describe('Smart paste in Visual mode', () => {
+    const CHORD_SHEET = `G              C        G
+Way down upon the Swanee River
+D7                 G
+Far, far away
+
+G                C       G
+All up and down the whole creation
+D7                G
+Sadly I roam`;
+
+    // Dispatch a synthetic paste carrying clipboard text (Playwright can't
+    // put multi-line text on the real clipboard cross-browser reliably).
+    async function pasteText(page, selector, text) {
+        await page.locator(selector).first().evaluate((el, t) => {
+            const dt = new DataTransfer();
+            dt.setData('text/plain', t);
+            el.focus();
+            el.dispatchEvent(new ClipboardEvent('paste', {
+                clipboardData: dt, bubbles: true, cancelable: true
+            }));
+        }, text);
+    }
+
+    test('chords-over-lyrics paste into a lyrics textarea splits cards and places chips', async ({ page }) => {
+        await openNewSongEditor(page);
+        await page.locator('.ve-add-section').click();
+        await page.locator('[data-add-type="verse"]').click();
+        await expect(page.locator('.ve-lyrics-input')).toBeVisible();
+
+        await pasteText(page, '.ve-lyrics-input', CHORD_SHEET);
+
+        // two cards, chords rendered as chips over the lyrics
+        await expect(page.locator('.ve-card')).toHaveCount(2);
+        await expect(page.locator('.ve-chip', { hasText: 'D7' }).first()).toBeVisible();
+        await expect(page.locator('.ve-syl').first()).toContainText('Way');
+
+        // one undo step restores the pre-paste state
+        await page.locator('#editor-tab-raw').click();
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw).toContain('[G]Way down upon');
+        expect(raw).toContain('Sadly I roam');
+
+        await page.locator('#editor-tab-visual').click();
+        await page.locator('.ve-undo').click();
+        await expect(page.locator('.ve-card')).toHaveCount(1);
+    });
+
+    test('plain-text paste is left to the textarea (no conversion)', async ({ page }) => {
+        await openNewSongEditor(page);
+        await page.locator('.ve-add-section').click();
+        await page.locator('[data-add-type="verse"]').click();
+        const ta = page.locator('.ve-lyrics-input');
+        await expect(ta).toBeVisible();
+
+        await ta.click();
+        await page.keyboard.insertText('just plain words');
+        await page.locator('.ve-mode-chords').click();
+        await expect(page.locator('.ve-card')).toHaveCount(1);
+        await expect(page.locator('.ve-chip')).toHaveCount(0);
+        await expect(page.locator('.ve-syl').first()).toContainText('just');
+    });
+
+    test('empty editor accepts a whole-song paste and builds all cards', async ({ page }) => {
+        await openNewSongEditor(page);
+        await expect(page.locator('.ve-empty-paste')).toBeVisible();
+
+        await pasteText(page, '.ve-empty-paste', CHORD_SHEET);
+
+        await expect(page.locator('.ve-card')).toHaveCount(2);
+        await expect(page.locator('.ve-chip', { hasText: 'D7' }).first()).toBeVisible();
+
+        // mirrored into the raw textarea
+        await page.locator('#editor-tab-raw').click();
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw).toContain('[G]Way down upon');
+    });
+
+    test('pasting full ChordPro into the empty editor keeps metadata', async ({ page }) => {
+        await openNewSongEditor(page);
+        await pasteText(page, '.ve-empty-paste',
+            '{meta: title Pasted Song}\n{key: D}\n\n[D]hello [G]there friend');
+
+        await expect(page.locator('.ve-card')).toHaveCount(1);
+        await expect(page.locator('.ve-key-label')).toHaveText('Key: D');
+        await page.locator('#editor-tab-raw').click();
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw).toContain('{meta: title Pasted Song}');
+        expect(raw).toContain('{key: D}');
+    });
+});
