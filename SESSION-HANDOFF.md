@@ -336,9 +336,24 @@ string, fret) comparison (commits 2b108d2d8, 2ae86fd3d, 31ab7e9dd):
   track tuning (21874: E4 C#4 A3 E3 A4). The XML leg still can't see
   tuning per se (it compares string/fret) — a tuning check in
   oracle_verify would close that hole corpus-wide (small, worthwhile).
-- OPEN (Mike to decide): converter hard-codes tempo 100; TEF headers +
-  oracle exports carry the real tempo (21874: 200). Changing it flips
-  default playback speed on all published works.
+- ~~Tempo~~ FIXED (d89e74fe9): V2 = header field, V3 = u16 @ 0x06
+  (verified 40/40 vs oracle export tempos; 25635 = 260 — the 100
+  hardcode played it at ~38% speed). TablEdit GUI Rich-MIDI export of
+  25635 also verified PITCHES exact on all 3 tracks (banjo/guitar/
+  bass; guitar deltas = TablEdit's 5-20 tick strum stagger).
+- **V3 ARTICULATIONS restored (e1bf50fb1)**: they died silently in a
+  refactor — the V2 effect1 gate always trips on V3 (byte 4 = fret
+  byte) and the old fallback misread byte 5 (= the DURATION byte; a
+  half note decoded as a slide). Real V3 techs: byte 6 on the SOURCE
+  note (1 h / 2 p / 3 sl) → attributed to next note on the string
+  (compute_articulations_v3). 25635 = the export's 22 marks exactly.
+- **KNOWN GAP — V2 techniques**: the effect1 plausibility gate nukes
+  ALL techs in 12 V2 files that really have them (corpus tech report:
+  27 perfect / 14 off; 11245, 15313, 12124, 18779 over-reports 4…).
+  Needs the oracle-fit treatment per file, then ADD TECHNIQUES to the
+  oracle_verify tuple so this dimension can't rot invisibly again.
+  Method that worked twice now: align TEF records to oracle XML notes,
+  fit each byte for consistency.
 - Three Cherokee Shuffles now: cherokee-shuffle = 25635
   (stratovarious520), cherokee-shuffle-a = 21874 (ShhhItsASecret),
   cherokee-shuffle-banjo-break = schlange. Mike's 'notes don't agree'
