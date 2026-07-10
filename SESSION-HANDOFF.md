@@ -300,6 +300,49 @@ fixed + live-verified on :8081 (commits 2e67513b9, d2912d3c4):
 - Export dropdown on tab-only works still offers ChordPro/Plain-text
   copy+download (empty/meaningless there; Print may be useful). Left
   as-is — decide with the create.html nav-link at merge time.
+
+### FIDELITY round 2 (2026-07-10, from Mike's TablEdit side-by-side)
+Mike loaded source TEFs in TablEdit next to the site and caught three
+parser blind spots, all oracle-INVISIBLE to the old (measure, tick,
+string, fret) comparison (commits 2b108d2d8, 2ae86fd3d, 31ab7e9dd):
+- **Same-length ts RE-LABELS**: 21874 has a 2/2 header but an explicit
+  4/4 type-27 marker on every measure (d3=0, same 1920 ticks) — the
+  reader dropped d3=0 markers as no-ops. Now emitted; a uniform
+  all-measure re-label promotes to the global signature.
+- **V3 meter was a hardcoded guess**: otf.py said '2/2 # Cut time for
+  bluegrass' for every V3 file. The V3 measure table is authoritative
+  (27493 is 4/4 w/ 2/4 at m30/49; 25635 is 4/4). v3_global_ts = the
+  table's dominant explicit signature.
+- **NOTE DURATIONS were never parsed**: both branches misread the
+  duration byte as a 'marker char' (V2 byte3 / V3 byte5; 0x49 'I' =
+  eighth + dynamics). decode_duration_code(): base = 1920>>(code//3);
+  %3: 1 = dotted of next-shorter (base*3/4 — base*3/2 was 2x long on
+  every dotted note), 2 = triplet (base*2/3). Bits 0-4 of the byte;
+  V3 bit7 stays the tie flag. Derived by FITTING bytes to oracle
+  <duration>s (byte5 = 1.000 consistency), validated corpus-wide.
+- **oracle_verify.py now compares durations** (5-tuples). 41
+  downloads-backed files: 32 VERIFIED + 9 PARTIAL, 0 DIVERGED. The 66
+  raw_tabs-sourced parsed/ files are STALE (no dur, maybe wrong ts)
+  until that mount returns — regen + re-verify then.
+- Regenerated: parsed/ (41), all 44 golden works w/ local sources +
+  mirrors + 27493 dev fixture. Positions byte-stable, durs added.
+  Explicit durs = the tab-player's written-length playback path and
+  real rest glyphs; gap-inference now only covers the 30 no-source
+  works.
+- Cross-format twin fixture: Mike's Desktop 21874 was a V3 re-save of
+  our V2 file → tests/parser/fixtures/cherokee_shuffle_21874_v3.tef +
+  twin test (notes/tuning/reading list/meter must agree V2 vs V3).
+- Tuning verified independently: oracle pitch−fret per string == our
+  track tuning (21874: E4 C#4 A3 E3 A4). The XML leg still can't see
+  tuning per se (it compares string/fret) — a tuning check in
+  oracle_verify would close that hole corpus-wide (small, worthwhile).
+- OPEN (Mike to decide): converter hard-codes tempo 100; TEF headers +
+  oracle exports carry the real tempo (21874: 200). Changing it flips
+  default playback speed on all published works.
+- Three Cherokee Shuffles now: cherokee-shuffle = 25635
+  (stratovarious520), cherokee-shuffle-a = 21874 (ShhhItsASecret),
+  cherokee-shuffle-banjo-break = schlange. Mike's 'notes don't agree'
+  was TablEdit-21874 vs site-25635 — different arrangements.
 - 2c UX passes — see the ERGONOMICS WALKTHROUGH below (2026-07-05),
   which replaces the old loose list.
 
