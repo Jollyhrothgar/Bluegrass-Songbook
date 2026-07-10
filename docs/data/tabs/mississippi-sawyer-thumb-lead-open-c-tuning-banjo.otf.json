@@ -3,7 +3,7 @@
   "metadata": {
     "title": "Mississippi Sawyer - open C - CH and 2-finger",
     "time_signature": "2/2",
-    "tempo": 100
+    "tempo": 220
   },
   "timing": {
     "ticks_per_beat": 480
@@ -1266,6 +1266,6 @@
   "x_source": {
     "type": "local",
     "source_file": "16117.tef",
-    "converted_at": "2026-07-10T13:20:52.664394"
+    "converted_at": "2026-07-10T15:46:38.309175"
   }
 }

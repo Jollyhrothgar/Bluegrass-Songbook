@@ -3,7 +3,7 @@
   "metadata": {
     "title": "jerusalem ridge.tef",
     "time_signature": "4/4",
-    "tempo": 100
+    "tempo": 240
   },
   "timing": {
     "ticks_per_beat": 480
@@ -9766,6 +9766,6 @@
   "x_source": {
     "type": "local",
     "source_file": "13248.tef",
-    "converted_at": "2026-07-10T13:20:51.117330"
+    "converted_at": "2026-07-10T15:46:36.635814"
   }
 }

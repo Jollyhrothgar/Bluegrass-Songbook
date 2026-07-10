@@ -3,7 +3,7 @@
   "metadata": {
     "title": "Ebenezer - banjo",
     "time_signature": "4/4",
-    "tempo": 100,
+    "tempo": 160,
     "composer": "G tuning           * = left hand pluck"
   },
   "timing": {
@@ -1432,6 +1432,6 @@
   "x_source": {
     "type": "local",
     "source_file": "None.tef",
-    "converted_at": "2026-07-10T13:20:46.470854"
+    "converted_at": "2026-07-10T15:46:31.319448"
   }
 }

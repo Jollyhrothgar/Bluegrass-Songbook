@@ -66,6 +66,19 @@ def test_v3_notes_carry_durations():
     assert durs.count(1920) == 1          # the one whole note
 
 
+@pytest.mark.skipif(not (DOWNLOADS / "25635.tef").exists(),
+                    reason="downloads corpus not present")
+def test_header_tempo_replaces_the_100bpm_hardcode():
+    """Tempo comes from the file: V2 = header tempo field, V3 = u16 at
+    0x06. Oracle-verified 40/40 across the corpus (25635's 260 equals
+    its Rich-MIDI export tempo meta exactly). The old hardcoded 100
+    played 25635 at ~38% speed."""
+    v3 = tef_to_otf(TEFReader(str(DOWNLOADS / "25635.tef")).parse()).to_dict()
+    assert v3["metadata"]["tempo"] == 260
+    v2 = tef_to_otf(TEFReader(str(DOWNLOADS / "21874.tef")).parse()).to_dict()
+    assert v2["metadata"]["tempo"] == 200
+
+
 @pytest.mark.skipif(not (DOWNLOADS / "21874.tef").exists(),
                     reason="downloads corpus not present")
 def test_v2_notes_carry_durations():

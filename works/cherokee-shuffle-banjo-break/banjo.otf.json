@@ -3,7 +3,7 @@
   "metadata": {
     "title": "cherokee shuffle",
     "time_signature": "4/4",
-    "tempo": 100,
+    "tempo": 280,
     "composer": "banjo break"
   },
   "timing": {
@@ -3147,6 +3147,6 @@
   "x_source": {
     "type": "local",
     "source_file": "10277.tef",
-    "converted_at": "2026-07-10T13:20:45.122985"
+    "converted_at": "2026-07-10T15:46:29.940814"
   }
 }

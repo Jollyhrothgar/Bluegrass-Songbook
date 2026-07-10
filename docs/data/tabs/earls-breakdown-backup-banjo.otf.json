@@ -3,7 +3,7 @@
   "metadata": {
     "title": "Earl's Breakdown",
     "time_signature": "4/4",
-    "tempo": 100,
+    "tempo": 260,
     "composer": "Backup for \"The Session Book\" - seanray.com"
   },
   "timing": {
@@ -6450,6 +6450,6 @@
   "x_source": {
     "type": "local",
     "source_file": "19500.tef",
-    "converted_at": "2026-07-10T13:20:46.415361"
+    "converted_at": "2026-07-10T15:46:31.266068"
   }
 }

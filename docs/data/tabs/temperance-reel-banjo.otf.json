@@ -3,7 +3,7 @@
   "metadata": {
     "title": "Temperance Reel ",
     "time_signature": "4/4",
-    "tempo": 100,
+    "tempo": 220,
     "composer": "\r\narr. Lynn Williams"
   },
   "timing": {
@@ -3840,6 +3840,6 @@
   "x_source": {
     "type": "local",
     "source_file": "21467.tef",
-    "converted_at": "2026-07-10T13:20:55.869224"
+    "converted_at": "2026-07-10T15:46:41.543461"
   }
 }

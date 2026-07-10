@@ -3,7 +3,7 @@
   "metadata": {
     "title": "Cherokee Shuffle (A).tef",
     "time_signature": "4/4",
-    "tempo": 100
+    "tempo": 200
   },
   "timing": {
     "ticks_per_beat": 480
@@ -1561,6 +1561,6 @@
   "x_source": {
     "type": "local",
     "source_file": "21874.tef",
-    "converted_at": "2026-07-10T13:20:45.114931"
+    "converted_at": "2026-07-10T15:46:29.932717"
   }
 }

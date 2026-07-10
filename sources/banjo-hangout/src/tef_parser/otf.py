@@ -532,8 +532,14 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             doc.metadata.time_signature = sigs.pop()
             doc.metadata.time_signature_changes = []
 
-    # Use 100 BPM as default - extracted tempos from TEF files are often unreliable
-    doc.metadata.tempo = 100
+    # Header tempo, quarter-note BPM. Oracle-verified corpus-wide
+    # (40/40 files match TablEdit's MusicXML/Rich-MIDI tempo metas):
+    # V2 = the header tempo field, V3 = u16 @ 0x06. The old hardcoded
+    # 100 made every tab play at the wrong speed (25635 is 260 — the
+    # site played it at ~38% speed).
+    tempo = (tef.header.v2_tempo if tef.header.is_v2
+             else getattr(tef.header, "v3_tempo", 0))
+    doc.metadata.tempo = tempo if 30 <= (tempo or 0) <= 500 else 100
 
     # Tracks from instruments
     # Default tunings when TEF parsing fails to extract tuning

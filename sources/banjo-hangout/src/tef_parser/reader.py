@@ -62,6 +62,8 @@ class TEFHeader:
     v2_component_count: int = 0   # Number of components
     v2_repeats_count: int = 0    # Number of reading list entries
     v2_anacrusis: bool = False   # Measure 1 is a pickup (anacrusis)
+    v3_tempo: int = 0            # V3 only: u16 @ 0x06, quarter-note BPM
+                                 # (0 = absent/implausible)
 
     @property
     def version(self) -> str:
@@ -1679,6 +1681,14 @@ class TEFReader:
 
     def _parse_v3(self, header: TEFHeader) -> TEFFile:
         """Parse V3 format TEF file."""
+        # V3 header tempo: u16 at 0x06, in quarter-note BPM. Verified
+        # against TablEdit's own exports (25635: 260 == its Rich-MIDI
+        # tempo meta exactly; corpus: 40/40 header-vs-oracle matches
+        # across V2+V3). The v2_tempo field is a meaningless V2-offset
+        # read on V3 files (25635 'read' 120).
+        v3_tempo = struct.unpack('<H', self.data[6:8])[0]
+        header.v3_tempo = v3_tempo if 30 <= v3_tempo <= 500 else 0
+
         strings = self.find_strings()
 
         # Find title (usually the longest string early in the file)
