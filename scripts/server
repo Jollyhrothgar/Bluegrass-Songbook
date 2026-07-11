@@ -23,9 +23,14 @@ kill_existing_servers() {
     local killed=false
     # Check ports 8080-8090 for Python servers
     for port in $(seq 8080 8090); do
-        local pid=$(lsof -t -i:"$port" 2>/dev/null)
-        if [ -n "$pid" ]; then
-            # Check if it's a Python process (likely our http.server)
+        # NB: lsof can return SEVERAL pids (parent + workers, or two
+        # servers on one port). The old `kill "$pid"` passed them as a
+        # single newline-joined argument and failed SILENTLY — a zombie
+        # server from another worktree kept the port while the new one
+        # quietly relocated (+1) and the browser kept talking to the
+        # zombie (this served week-old feature-visual-editor data on
+        # 8081 for days). Kill each pid separately.
+        for pid in $(lsof -t -i:"$port" 2>/dev/null); do
             local cmd=$(ps -p "$pid" -o comm= 2>/dev/null)
             if [[ "$cmd" == *"ython"* ]]; then
                 if [ "$killed" = false ]; then
@@ -34,7 +39,7 @@ kill_existing_servers() {
                 fi
                 kill "$pid" 2>/dev/null || true
             fi
-        fi
+        done
     done
     if [ "$killed" = true ]; then
         sleep 0.5
@@ -70,14 +75,17 @@ find_available_port() {
 ARG1="${1:-frontend}"
 ARG2="${2:-}"
 
+EXPLICIT_PORT=false
 if [[ "$ARG1" =~ ^[0-9]+$ ]]; then
     # First arg is a port number
     COMMAND="frontend"
     PORT="$ARG1"
+    EXPLICIT_PORT=true
 elif [[ -n "$ARG2" && "$ARG2" =~ ^[0-9]+$ ]]; then
     # Second arg is a port number
     COMMAND="$ARG1"
     PORT="$ARG2"
+    EXPLICIT_PORT=true
 else
     COMMAND="$ARG1"
     PORT="8080"
@@ -86,8 +94,19 @@ fi
 case "$COMMAND" in
     frontend|"")
         kill_existing_servers
+        if [ "$EXPLICIT_PORT" = true ] && ! port_available "$PORT"; then
+            # An EXPLICITLY requested port must not silently relocate:
+            # the browser stays on the requested port, talking to
+            # whatever zombie still holds it, and you debug stale data
+            # for an afternoon. Fail loudly instead.
+            echo "ERROR: port $PORT is still in use by:" >&2
+            lsof -i:"$PORT" | sed 's/^/  /' >&2
+            echo "Kill it (kill \$(lsof -t -i:$PORT)) or pick another port." >&2
+            exit 1
+        fi
         PORT=$(find_available_port "$PORT")
         echo "Starting frontend server..."
+        echo "Serving: $REPO_ROOT/docs"
         echo "Visit: http://localhost:$PORT"
         python3 -m http.server "$PORT" --directory docs
         ;;
