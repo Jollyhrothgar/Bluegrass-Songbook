@@ -20,13 +20,21 @@ def decode_duration_code(code: int) -> int:
     11245/11514/17713), 2 = triplet (base * 2/3). Oracle-validated
     against TablEdit MusicXML durations corpus-wide (all duration
     kinds incl. dotted and triplets).
+
+    Bit 4 (0x10) of the code is a DOUBLE-DOT flag over the low-nibble
+    code: 12574's 0x19 = eighth (code 9) x 7/4 = 420 ticks, matching
+    its oracle export exactly (the naive 5-bit read decoded 5 ticks).
     """
+    double_dot = code & 0x10
+    code &= 0x0f
     base = 1920 >> (code // 3)
     mod = code % 3
     if mod == 1:
-        return base * 3 // 4
-    if mod == 2:
-        return base * 2 // 3
+        base = base * 3 // 4
+    elif mod == 2:
+        base = base * 2 // 3
+    if double_dot:
+        base = base * 7 // 4
     return base
 
 

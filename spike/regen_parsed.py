@@ -21,13 +21,30 @@ sys.path.insert(0, str(ROOT / "sources" / "banjo-hangout" / "src"))
 
 from tef_parser import TEFReader, tef_to_otf  # noqa: E402
 
-# Host -> sandbox mount mapping (order matters: longest prefix first)
+# Host -> sandbox mount mapping (order matters: longest prefix first).
+# The raw_tabs mount lives under a per-session path — detect the live
+# one instead of hardcoding a session name (a stale entry silently
+# failed 66 regens for two days). Falls back to the host path itself
+# (works when run on the Mac directly).
+import glob as _glob
+
+
+def _find_raw_tabs_mount(host_default: str) -> str:
+    candidates = sorted(_glob.glob("/sessions/*/mnt/raw_tabs"))
+    for c in reversed(candidates):
+        if Path(c).is_dir():
+            return c
+    return host_default
+
+
+_RAW_TABS_HOST = (
+    "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com"
+    "/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs")
+
 PATH_MAP = [
     ("/Users/mike/workspace/bluegrassbook.com/feature-otf-editor",
      str(ROOT)),
-    ("/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com"
-     "/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs",
-     "/sessions/zen-nifty-mendel/mnt/raw_tabs"),
+    (_RAW_TABS_HOST, _find_raw_tabs_mount(_RAW_TABS_HOST)),
 ]
 
 

@@ -374,6 +374,8 @@ def compute_articulations(
     """
     V2_TECH = {1: "h", 2: "p", 3: "/"}
     articulations: dict[tuple[int, int, int], str] = {}
+    if max_gap is None:
+        max_gap = 128  # half of a 4/4 measure in native units
 
     notes_by_track_string: dict[tuple[int, int], list[TEFNoteEvent]] = {}
     for event in note_events:
@@ -393,14 +395,30 @@ def compute_articulations(
     for (track, string), notes in notes_by_track_string.items():
         notes.sort(key=lambda e: e.position)
         for i, event in enumerate(notes):
-            tech = V2_TECH.get(event.raw_data[4])
+            # Bit 5 (0x20) is an independent flag riding the same byte
+            # (oracle: 22446/24093 carry 0x21 = flag+hammer, 12574 has
+            # 0x23 = flag+slide; 12124's bare 0x20 notes have no
+            # technique). Mask it off; the enum lives in the low bits.
+            tech = V2_TECH.get(event.raw_data[4] & 0x1f)
             if not tech or i + 1 >= len(notes):
                 continue
             next_event = notes[i + 1]
-            # written duration in native V2 units (1 unit = 7.5 ticks)
-            dur_units = decode_duration_code(event.raw_data[3] & 0x1f) / 7.5
-            if next_event.position - event.position > dur_units:
+            if max_gap and next_event.position - event.position > max_gap:
                 continue
+            # Open-string destinations pair only when ADJACENT (the
+            # destination starts exactly when the source's written
+            # duration ends): 13788 slides f3->f0 with gap == duration
+            # and TablEdit marks them; 11830's f4 slide has a rest
+            # before its f0 'destination' and TablEdit shows nothing —
+            # that flag is a slide-out. Fretted destinations pair
+            # regardless of small rests (22446 m30: slide across a
+            # 720-tick gap, marked in the export).
+            next_result = next_event.decode_string_fret()
+            if next_result and next_result[1] == 0:
+                dur_units = decode_duration_code(
+                    event.raw_data[3] & 0x1f) / 7.5
+                if next_event.position - event.position > dur_units:
+                    continue
             articulations[(track, next_event.position, string)] = tech
 
     return articulations
@@ -442,7 +460,7 @@ def compute_articulations_v3(
     for (track, string), notes in by_string.items():
         notes.sort(key=lambda e: e.position)
         for i, event in enumerate(notes):
-            tech = V3_TECH.get(event.raw_data[6])
+            tech = V3_TECH.get(event.raw_data[6] & 0x1f)
             if not tech or i + 1 >= len(notes):
                 continue
             next_event = notes[i + 1]
