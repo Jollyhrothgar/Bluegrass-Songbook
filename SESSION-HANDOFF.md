@@ -347,13 +347,23 @@ string, fret) comparison (commits 2b108d2d8, 2ae86fd3d, 31ab7e9dd):
   half note decoded as a slide). Real V3 techs: byte 6 on the SOURCE
   note (1 h / 2 p / 3 sl) → attributed to next note on the string
   (compute_articulations_v3). 25635 = the export's 22 marks exactly.
-- **KNOWN GAP — V2 techniques**: the effect1 plausibility gate nukes
-  ALL techs in 12 V2 files that really have them (corpus tech report:
-  27 perfect / 14 off; 11245, 15313, 12124, 18779 over-reports 4…).
-  Needs the oracle-fit treatment per file, then ADD TECHNIQUES to the
-  oracle_verify tuple so this dimension can't rot invisibly again.
-  Method that worked twice now: align TEF records to oracle XML notes,
-  fit each byte for consistency.
+- ~~V2 techniques~~ SOLVED (53862ee7a + 538efdade). effect1 = the
+  SAME enum as V3 byte6 (1 h / 2 p / 3 sl), & 0x1f (bit 5 = unrelated
+  flag). NOT direction-based (descending hammers exist), NOT a
+  bitfield (0x04/0x05/0x0f are other effects; the old & 0x03 mask
+  fabricated techs). The whole-file gate is gone. Pairing: fretted
+  destinations within half a measure; open-string destinations only
+  when adjacent to the source's written duration (else = slide-out).
+  Double-stop slides mark both strings — TablEdit's MusicXML export
+  carries one string only (oracle_verify has a narrow allowance).
+  Duration bonus: code bit 4 = DOUBLE-DOT (x7/4; 12574).
+- **oracle_verify now compares 6-tuples** (measure, tick, string,
+  fret, duration, technique) — every dimension the XML oracle can
+  see. FINAL: **87 VERIFIED + 20 PARTIAL + 0 DIVERGED over all 107
+  source-backed files**; parsed/ fully regenerated (raw_tabs mount
+  auto-detected now — regen_parsed no longer hardcodes a session);
+  ALL 74 published works with sources refreshed (44 downloads + 30
+  raw_tabs via spike/verified_sources.json).
 - Three Cherokee Shuffles now: cherokee-shuffle = 25635
   (stratovarious520), cherokee-shuffle-a = 21874 (ShhhItsASecret),
   cherokee-shuffle-banjo-break = schlange. Mike's 'notes don't agree'
