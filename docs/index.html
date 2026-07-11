@@ -276,7 +276,15 @@
                 </div>
             </div>
 
-            <div class="metadata-fields">
+            <div class="editor-topbar">
+                <button id="metadata-summary" class="metadata-summary" type="button" aria-expanded="false" title="Song title, artist and writer">Untitled song &mdash; tap to name</button>
+                <div class="editor-view-toggle">
+                    <button id="editor-tab-raw" class="editor-view-btn" type="button" title="Edit the raw ChordPro text"><span class="editor-view-glyph">&lsaquo;/&rsaquo;</span> ChordPro</button>
+                    <button id="editor-tab-visual" class="editor-view-btn active hidden" type="button" title="Back to the visual editor">Visual editor</button>
+                </div>
+            </div>
+
+            <div id="metadata-fields" class="metadata-fields hidden">
                 <div class="field-row">
                     <label for="editor-title">Title:</label>
                     <input type="text" id="editor-title" placeholder="Song title">
@@ -293,11 +301,6 @@
                     <label for="editor-comment">Edit Comment:</label>
                     <input type="text" id="editor-comment" placeholder="Describe your changes (e.g., fixed chord alignment, added missing verse)">
                 </div>
-            </div>
-
-            <div class="editor-tabs">
-                <button id="editor-tab-visual" class="editor-tab active" type="button">Visual</button>
-                <button id="editor-tab-raw" class="editor-tab" type="button">Raw ChordPro</button>
             </div>
 
             <div id="visual-editor-container" class="visual-editor-container"></div>

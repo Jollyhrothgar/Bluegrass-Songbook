@@ -174,6 +174,8 @@ const editorTransposeDown = document.getElementById('editor-transpose-down');
 const editorKeySelect = document.getElementById('editor-key-select');
 const editorTabVisual = document.getElementById('editor-tab-visual');
 const editorTabRaw = document.getElementById('editor-tab-raw');
+const metadataSummary = document.getElementById('metadata-summary');
+const metadataFields = document.getElementById('metadata-fields');
 const visualEditorContainer = document.getElementById('visual-editor-container');
 const editorRawMain = document.getElementById('editor-raw-main');
 
@@ -2418,14 +2420,20 @@ function init() {
     // Initialize super-user request module
     initSuperUserRequest();
 
-    // Initialize add-song picker and doc upload
+    // Route to the photo/document upload view (login required).
+    // Shared by the picker's Upload card and the editor's empty-state link.
+    const goToDocUpload = (ctx) => {
+        if (!requireLogin('upload songs')) return;
+        if (ctx?.targetSlug) prefillDocUpload(ctx);
+        showView('doc-upload');
+        pushHistoryState('doc-upload');
+    };
+
+    // Initialize add-song picker and doc upload.
+    // The sidebar Add Song button now goes straight to the editor; the picker
+    // remains for contribute/request flows (work-view placeholders, bounties).
     initAddSongPicker({
-        onUpload: (ctx) => {
-            if (!requireLogin('upload songs')) return;
-            if (ctx?.targetSlug) prefillDocUpload(ctx);
-            showView('doc-upload');
-            pushHistoryState('doc-upload');
-        },
+        onUpload: goToDocUpload,
         onChordPro: (ctx) => {
             if (ctx?.targetSlug) {
                 enterEditMode({ id: ctx.targetSlug, title: ctx.title, artist: ctx.artist, key: ctx.key, content: '' });
@@ -2547,6 +2555,10 @@ function init() {
         editorTransposeUp,
         editorTransposeDown,
         editorKeySelect,
+        metadataSummary,
+        metadataFields,
+        onUploadRequest: () => goToDocUpload(),
+        onSongRequest: () => openAddSongPicker({ mode: 'request' }),
         editorTabVisual,
         editorTabRaw,
         visualEditorContainer,
@@ -2593,7 +2605,7 @@ function init() {
     navSearch?.addEventListener('click', () => navigateTo('search'));
     // Add Song opens the picker for everyone; contribution paths enforce login
     // at the point of action (upload gate below, submit flows in editor/doc-upload).
-    navAddSong?.addEventListener('click', () => { closeSidebar(); openAddSongPicker(); });
+    navAddSong?.addEventListener('click', () => navigateTo('add-song'));
     navFavorites?.addEventListener('click', () => navigateTo('favorites'));
     editorBackBtn?.addEventListener('click', () => navigateTo('search'));
 

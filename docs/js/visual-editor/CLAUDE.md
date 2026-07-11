@@ -1,11 +1,21 @@
 # Visual Editor
 
 Mobile-first visual song editor: tap a syllable, tap a chord. Songs are
-section block cards (verse/chorus/bridge/intro/outro). Lives behind the
-Visual|Raw tabs on the editor panel; the raw ChordPro textarea remains the
-submission channel — the visual editor mirrors serialized ChordPro into
-`#editor-content` on every change, so preview/copy/download/submit in
-`editor.js` work unchanged.
+section block cards (verse/chorus/bridge/intro/outro). It is the editor
+panel's default view; a quiet "‹/› ChordPro" toggle (top right,
+`#editor-tab-raw` / `#editor-tab-visual`) swaps to the raw textarea view and
+back. The raw ChordPro textarea remains the submission channel — the visual
+editor mirrors serialized ChordPro into `#editor-content` on every change,
+so preview/copy/download/submit in `editor.js` work unchanged.
+
+New-song entry is content-first: the sidebar Add Song button (and `#add`)
+land directly here. The empty state is one big paste/type box with quiet
+"Upload a photo instead" (login-gated) and "Request a song" links supplied
+by main.js via `onUploadRequest`/`onSongRequest`. Metadata (title/artist/
+writer) is deferred behind a compact tap-to-expand line in editor.js.
+Transpose/key toolbar controls stay hidden (space reserved) until the
+document has at least one chord. Splits (blank-line or smart paste) animate
+the cards in and announce themselves via the undo toast.
 
 ## Structure
 

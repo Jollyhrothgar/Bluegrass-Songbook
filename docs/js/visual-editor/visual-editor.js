@@ -27,7 +27,7 @@ const SECTION_TYPES = ['verse', 'chorus', 'bridge', 'intro', 'outro'];
 export const GHOST_COMMIT_MS = 800;
 export const RESUME_GRACE_MS = 1500;
 
-export function createVisualEditor({ container, onChange, onImportMeta }) {
+export function createVisualEditor({ container, onChange, onImportMeta, onUploadRequest, onSongRequest }) {
     let doc = parseSong('');
     let selection = null;            // {sectionId, lineIndex, position} or {..., chordIndex}
     let undoStack = [];
@@ -37,6 +37,7 @@ export function createVisualEditor({ container, onChange, onImportMeta }) {
     let ghostTimer = null;           // idle auto-commit timer
     let resume = null;               // { sel, text } — just-committed chord, still editable
     let resumeTimer = null;
+    let animateNextRender = false;   // one-shot: cards animate in after a split/build
 
     container.classList.add('ve-root');
 
@@ -46,9 +47,11 @@ export function createVisualEditor({ container, onChange, onImportMeta }) {
         <button type="button" class="ve-undo" title="Undo">↩ Undo</button>
         <button type="button" class="ve-redo" title="Redo">↪ Redo</button>
         <span class="ve-toolbar-spacer"></span>
-        <button type="button" class="ve-transpose-down" title="Transpose down">−</button>
-        <span class="ve-key-label"></span>
-        <button type="button" class="ve-transpose-up" title="Transpose up">+</button>`;
+        <span class="ve-transpose-group ve-gone">
+            <button type="button" class="ve-transpose-down" title="Transpose down">−</button>
+            <span class="ve-key-label"></span>
+            <button type="button" class="ve-transpose-up" title="Transpose up">+</button>
+        </span>`;
 
     const cardsHost = document.createElement('div');
     cardsHost.className = 've-cards';
@@ -583,6 +586,7 @@ export function createVisualEditor({ container, onChange, onImportMeta }) {
             : 0;
         cancelGhost();
         apply(spliceSectionWithParsed(doc, sectionId, parsed));
+        animateNextRender = true;
         selection = null;
         modes.delete(sectionId);   // pasted chords render as chips
         palette.hide();
@@ -603,12 +607,26 @@ export function createVisualEditor({ container, onChange, onImportMeta }) {
         if (!docHasLyricContent(parsed)) return false;
         cancelGhost();
         apply(parsed);
+        animateNextRender = true;
         selection = null;
         modes.clear();
         palette.hide();
         if (res.kind === 'chordpro') reportImportMeta(res);
         render();
+        const nSections = parsed.sections.length;
+        const nChords = allChords(parsed).length;
+        if (nChords > 0) {
+            showToast(`Found ${nChords} chord${nChords === 1 ? '' : 's'} in ${nSections} ${nSections === 1 ? 'section' : 'sections'}.`);
+        } else if (nSections > 1) {
+            showToast(`Split into ${nSections} ${sectionNoun(parsed)}.`);
+        }
         return true;
+    }
+
+    // "verses" when every section is a verse, else the neutral "sections"
+    function sectionNoun(d) {
+        return d.sections.length && d.sections.every(sec => sec.type === 'verse')
+            ? 'verses' : 'sections';
     }
 
     const callbacks = {
@@ -693,13 +711,21 @@ export function createVisualEditor({ container, onChange, onImportMeta }) {
             const sec = doc.sections.find(s => s.id === sectionId);
             const current = sec.lines.filter(l => !l.opaque).map(l => l.lyrics).join('\n');
             if (text === current) return;
+            const before = doc.sections.length;
             let { doc: next, droppedChords } = updateLyrics(doc, sectionId, text);
-            // pasted multi-paragraph lyrics: split the card at blank lines
+            // typed/pasted multi-paragraph lyrics: split the card at blank lines
             next = splitSectionOnBlankLines(next, sectionId);
             apply(next);
-            if (droppedChords > 0) {
-                showToast(`${droppedChords} chord${droppedChords === 1 ? '' : 's'} removed with deleted lyrics.`);
+            const added = next.sections.length - before;
+            const notes = [];
+            if (added > 0) {
+                animateNextRender = true;
+                notes.push(`Split into ${added + 1} ${sectionNoun(next)}`);
             }
+            if (droppedChords > 0) {
+                notes.push(`${droppedChords} chord${droppedChords === 1 ? '' : 's'} removed with deleted lyrics`);
+            }
+            if (notes.length) showToast(notes.join(' \u2014 ') + '.');
             render();
         }
     };
@@ -715,33 +741,65 @@ export function createVisualEditor({ container, onChange, onImportMeta }) {
 
     function render() {
         toolbar.querySelector('.ve-key-label').textContent = currentKey() ? `Key: ${currentKey()}` : 'Key: ?';
+        // progressive toolbar: transpose/key stay out of the way until the
+        // document actually has a chord (space is reserved — no layout jump)
+        toolbar.querySelector('.ve-transpose-group')
+            .classList.toggle('ve-gone', allChords(doc).length === 0);
         // keep the palette key-aware: transpose, key-directive changes and
         // tab-switch reloads all funnel through render()
         palette.setKey(currentKey());
         palette.setRecents(recents());
+        const animate = animateNextRender;
+        animateNextRender = false;
         cardsHost.textContent = '';
+        let cardIndex = 0;
         for (const sec of doc.sections) {
             const mode = modes.get(sec.id) || (sec.lines && sec.lines.length === 0 ? 'lyrics' : 'chords');
             const ghostCtx = ghost ? { text: ghost.text, invalid: !!ghost.invalid } : null;
-            cardsHost.appendChild(renderSectionCard(sec, { mode, selection, ghost: ghostCtx, callbacks }));
+            const card = renderSectionCard(sec, { mode, selection, ghost: ghostCtx, callbacks });
+            if (animate) {
+                // gentle entrance after a split/build; CSS honors
+                // prefers-reduced-motion by disabling the animation
+                card.classList.add('ve-card-enter');
+                card.style.animationDelay = `${Math.min(cardIndex, 8) * 45}ms`;
+            }
+            cardsHost.appendChild(card);
+            cardIndex++;
         }
         if (doc.sections.length === 0) {
-            const hint = document.createElement('div');
-            hint.className = 've-empty-hint';
-            hint.textContent = 'Add a section to get started — or paste a whole song below (chord sheets from the web convert automatically).';
-            const ta = document.createElement('textarea');
-            ta.className = 've-empty-paste';
-            ta.rows = 6;
-            ta.placeholder = 'Paste a song or chord sheet here…';
-            ta.addEventListener('paste', (e) => {
-                const text = e.clipboardData ? e.clipboardData.getData('text/plain') : '';
-                if (text && buildFromWholePaste(text)) e.preventDefault();
-            });
-            // typed (or plain-pasted) lyrics build cards on blur too
-            ta.addEventListener('blur', () => { buildFromWholePaste(ta.value); });
-            cardsHost.append(hint, ta);
+            renderEmptyState();
         }
         autoScrollToSelection();
+    }
+
+    // Content-first empty state: one big friendly box plus quiet escape
+    // hatches (photo upload, song request) supplied by the host.
+    function renderEmptyState() {
+        const ta = document.createElement('textarea');
+        ta.className = 've-empty-paste';
+        ta.rows = 10;
+        ta.placeholder = 'Paste or type your song \u2014 lyrics, chord sheets, anything.\n\nChord sheets from the web convert automatically. A blank line starts a new verse.';
+        ta.addEventListener('paste', (e) => {
+            const text = e.clipboardData ? e.clipboardData.getData('text/plain') : '';
+            if (text && buildFromWholePaste(text)) e.preventDefault();
+        });
+        // typed (or plain-pasted) lyrics build cards on blur too
+        ta.addEventListener('blur', () => { buildFromWholePaste(ta.value); });
+        cardsHost.append(ta);
+
+        const links = document.createElement('div');
+        links.className = 've-empty-links';
+        const addLink = (cls, text, cb) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = `ve-empty-link ${cls}`;
+            btn.textContent = text;
+            btn.addEventListener('click', cb);
+            links.appendChild(btn);
+        };
+        if (onUploadRequest) addLink('ve-link-upload', 'Upload a photo instead', () => onUploadRequest());
+        if (onSongRequest) addLink('ve-link-request', 'Request a song', () => onSongRequest());
+        if (links.childElementCount > 0) cardsHost.append(links);
     }
 
     return {

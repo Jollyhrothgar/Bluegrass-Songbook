@@ -7,22 +7,31 @@ async function openNewSongEditor(page) {
     await page.locator('#hamburger-btn').click();
     await expect(page.locator('.sidebar.open')).toBeVisible();
     await page.locator('#nav-add-song').click();
-    // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-    await expect(page.locator('#add-song-picker')).toBeVisible();
-    await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+    // Add Song goes straight to the new-song editor (no picker modal)
     await expect(page.locator('#editor-panel')).toBeVisible();
 }
 
 test.describe('Visual editor basics', () => {
-    test('visual tab is the default and raw tab toggles', async ({ page }) => {
+    test('visual is the default; the quiet ChordPro link toggles raw and back', async ({ page }) => {
         await openNewSongEditor(page);
         await expect(page.locator('#editor-tab-visual')).toHaveClass(/active/);
         await expect(page.locator('#visual-editor-container')).toBeVisible();
         await expect(page.locator('#editor-raw-main')).toBeHidden();
+        // only the "switch to raw" affordance is offered in visual mode
+        await expect(page.locator('#editor-tab-raw')).toBeVisible();
+        await expect(page.locator('#editor-tab-raw')).toContainText('ChordPro');
+        await expect(page.locator('#editor-tab-visual')).toBeHidden();
 
         await page.locator('#editor-tab-raw').click();
         await expect(page.locator('#editor-raw-main')).toBeVisible();
         await expect(page.locator('#visual-editor-container')).toBeHidden();
+        // and the way back is offered in raw mode
+        await expect(page.locator('#editor-tab-visual')).toBeVisible();
+        await expect(page.locator('#editor-tab-raw')).toBeHidden();
+
+        await page.locator('#editor-tab-visual').click();
+        await expect(page.locator('#visual-editor-container')).toBeVisible();
+        await expect(page.locator('#editor-raw-main')).toBeHidden();
     });
 
     test('add section, type lyrics, place a chord, verify raw output', async ({ page }) => {
@@ -217,9 +226,7 @@ test.describe('Visual editor on mobile viewport', () => {
         await page.waitForSelector('#search-input');
         await page.locator('#hamburger-btn').click();
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+        // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
 
         await page.locator('.ve-add-section').click();
@@ -406,6 +413,31 @@ Sadly I roam`;
         await page.locator('#editor-tab-raw').click();
         const raw = await page.locator('#editor-content').inputValue();
         expect(raw).toContain('[G]Way down upon');
+    });
+
+    test('typed multi-paragraph lyrics split into animated cards with an undo toast', async ({ page }) => {
+        await openNewSongEditor(page);
+        const box = page.locator('.ve-empty-paste');
+        await expect(box).toBeVisible();
+
+        await box.click();
+        await page.keyboard.insertText(
+            'first verse of my song\n\nsecond verse right here\n\nthird verse to finish');
+        await box.blur();
+
+        // cards animate in (entrance class present on the fresh render)
+        await expect(page.locator('.ve-card')).toHaveCount(3);
+        await expect(page.locator('.ve-card.ve-card-enter')).toHaveCount(3);
+
+        // summary toast with a working Undo
+        const toast = page.locator('.ve-toast');
+        await expect(toast).toBeVisible();
+        await expect(toast).toContainText('Split into 3 verses');
+        await toast.locator('.ve-toast-undo').click();
+
+        // back to the single friendly box
+        await expect(page.locator('.ve-card')).toHaveCount(0);
+        await expect(page.locator('.ve-empty-paste')).toBeVisible();
     });
 
     test('pasting full ChordPro into the empty editor keeps metadata', async ({ page }) => {

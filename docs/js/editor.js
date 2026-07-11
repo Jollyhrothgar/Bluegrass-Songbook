@@ -66,6 +66,10 @@ let autoDetectCheckboxEl = null;
 let editorTransposeUpEl = null;
 let editorTransposeDownEl = null;
 let editorKeySelectEl = null;
+let metadataSummaryEl = null;
+let metadataFieldsEl = null;
+let onUploadRequestCb = null;
+let onSongRequestCb = null;
 
 // Visual | Raw tab state
 let editorTabVisualEl = null;
@@ -81,6 +85,58 @@ let navAddSongEl = null;
 let navFavoritesEl = null;
 let resultsDivEl = null;
 let songViewEl = null;
+
+/**
+ * Derive the compact metadata line text from title/artist values.
+ * Exported for unit tests.
+ */
+export function deriveMetadataSummary(title, artist) {
+    const t = (title || '').trim();
+    const a = (artist || '').trim();
+    if (!t && !a) return 'Untitled song \u2014 tap to name';
+    if (!t) return `Untitled song \u2014 ${a}`;
+    return a ? `${t} \u2014 ${a}` : t;
+}
+
+/**
+ * Refresh the compact metadata line from the current field values.
+ * User content flows through textContent only.
+ */
+function updateMetadataSummary() {
+    if (!metadataSummaryEl) return;
+    metadataSummaryEl.textContent =
+        deriveMetadataSummary(editorTitleEl?.value, editorArtistEl?.value);
+    metadataSummaryEl.classList.toggle('metadata-summary-unnamed',
+        !(editorTitleEl?.value || '').trim());
+}
+
+/**
+ * Expand or collapse the full metadata fields under the compact line.
+ */
+function setMetadataExpanded(expanded) {
+    if (metadataFieldsEl) metadataFieldsEl.classList.toggle('hidden', !expanded);
+    if (metadataSummaryEl) {
+        metadataSummaryEl.setAttribute('aria-expanded', String(!!expanded));
+        metadataSummaryEl.classList.toggle('expanded', !!expanded);
+    }
+}
+
+function metadataExpanded() {
+    return !!(metadataFieldsEl && !metadataFieldsEl.classList.contains('hidden'));
+}
+
+/**
+ * Missing required metadata on submit/save: expand the fields, focus the
+ * offending input and surface a friendly notice via the status line.
+ */
+function promptForField(inputEl, message) {
+    setMetadataExpanded(true);
+    if (editorStatusEl) {
+        editorStatusEl.textContent = message;
+        editorStatusEl.className = 'save-status error';
+    }
+    inputEl?.focus();
+}
 
 /**
  * Enter edit mode for an existing song
@@ -106,8 +162,10 @@ export function enterEditMode(song, options = {}) {
     if (editorContentEl) editorContentEl.value = song.content || '';
     if (editorCommentEl) editorCommentEl.value = '';
 
-    // Show comment field
+    // Show comment field (visible when the metadata line is expanded)
     if (editCommentRowEl) editCommentRowEl.classList.remove('hidden');
+    updateMetadataSummary();
+    setMetadataExpanded(false);
 
     // Update submit button text
     if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit Correction';
@@ -424,8 +482,15 @@ export function closeHints() {
  */
 function activateEditorTab(which) {
     const visual = which === 'visual';
-    if (editorTabVisualEl) editorTabVisualEl.classList.toggle('active', visual);
-    if (editorTabRawEl) editorTabRawEl.classList.toggle('active', !visual);
+    if (editorTabVisualEl) {
+        editorTabVisualEl.classList.toggle('active', visual);
+        // the toggle shows only the view you can switch TO
+        editorTabVisualEl.classList.toggle('hidden', visual);
+    }
+    if (editorTabRawEl) {
+        editorTabRawEl.classList.toggle('active', !visual);
+        editorTabRawEl.classList.toggle('hidden', !visual);
+    }
     if (visualEditorContainerEl) visualEditorContainerEl.classList.toggle('hidden', !visual);
     if (editorRawMainEl) editorRawMainEl.classList.toggle('hidden', visual);
     if (visual) {
@@ -460,7 +525,10 @@ function initVisualEditor() {
             if (artist && editorArtistEl && !editorArtistEl.value.trim()) {
                 editorArtistEl.value = artist;
             }
-        }
+            updateMetadataSummary();
+        },
+        onUploadRequest() { if (onUploadRequestCb) onUploadRequestCb(); },
+        onSongRequest() { if (onSongRequestCb) onSongRequestCb(); }
     });
     visualEditor.loadChordPro(editorContentEl?.value || '');
     lastMirrored = editorContentEl?.value || '';
@@ -493,6 +561,10 @@ export function initEditor(options) {
         editorTransposeUp,
         editorTransposeDown,
         editorKeySelect,
+        metadataSummary,
+        metadataFields,
+        onUploadRequest,
+        onSongRequest,
         editorTabVisual,
         editorTabRaw,
         visualEditorContainer,
@@ -526,6 +598,10 @@ export function initEditor(options) {
     editorTransposeUpEl = editorTransposeUp;
     editorTransposeDownEl = editorTransposeDown;
     editorKeySelectEl = editorKeySelect;
+    metadataSummaryEl = metadataSummary;
+    metadataFieldsEl = metadataFields;
+    onUploadRequestCb = onUploadRequest;
+    onSongRequestCb = onSongRequest;
     navSearchEl = navSearch;
     navAddSongEl = navAddSong;
     navFavoritesEl = navFavorites;
@@ -535,6 +611,16 @@ export function initEditor(options) {
     editorTabRawEl = editorTabRaw;
     visualEditorContainerEl = visualEditorContainer;
     editorRawMainEl = editorRawMain;
+
+    // Compact metadata line: tap to expand/collapse the full fields
+    if (metadataSummaryEl) {
+        metadataSummaryEl.addEventListener('click', () => {
+            const expand = !metadataExpanded();
+            setMetadataExpanded(expand);
+            if (expand) editorTitleEl?.focus();
+        });
+        updateMetadataSummary();
+    }
 
     // Visual | Raw tabs (visual editor mirrors into the textarea)
     initVisualEditor();
@@ -582,6 +668,7 @@ export function initEditor(options) {
                     if (chordUResult.artist && editorArtistEl && !editorArtistEl.value.trim()) {
                         editorArtistEl.value = chordUResult.artist;
                     }
+                    updateMetadataSummary();
                 }
 
                 // Try Ultimate Guitar
@@ -598,6 +685,7 @@ export function initEditor(options) {
                         if (ugResult.artist && editorArtistEl && !editorArtistEl.value.trim()) {
                             editorArtistEl.value = ugResult.artist;
                         }
+                        updateMetadataSummary();
                     }
                 }
 
@@ -618,8 +706,8 @@ export function initEditor(options) {
         editorContentEl.addEventListener('input', updateEditorPreview);
     }
 
-    if (editorTitleEl) editorTitleEl.addEventListener('input', updateEditorPreview);
-    if (editorArtistEl) editorArtistEl.addEventListener('input', updateEditorPreview);
+    if (editorTitleEl) editorTitleEl.addEventListener('input', () => { updateMetadataSummary(); updateEditorPreview(); });
+    if (editorArtistEl) editorArtistEl.addEventListener('input', () => { updateMetadataSummary(); updateEditorPreview(); });
 
     if (editorNashvilleEl) {
         editorNashvilleEl.addEventListener('change', (e) => {
@@ -702,10 +790,7 @@ export function initEditor(options) {
         editorSaveBtnEl.addEventListener('click', () => {
             const title = editorTitleEl?.value.trim();
             if (!title) {
-                if (editorStatusEl) {
-                    editorStatusEl.textContent = 'Title required';
-                    editorStatusEl.className = 'save-status error';
-                }
+                promptForField(editorTitleEl, 'Almost there \u2014 give your song a title first.');
                 return;
             }
 
@@ -738,10 +823,7 @@ export function initEditor(options) {
             const writer = editorWriterEl?.value.trim();
 
             if (!title) {
-                if (editorStatusEl) {
-                    editorStatusEl.textContent = 'Title required';
-                    editorStatusEl.className = 'save-status error';
-                }
+                promptForField(editorTitleEl, 'Almost there \u2014 give your song a title first.');
                 return;
             }
 
@@ -916,10 +998,7 @@ async function submitToGitHubIssue(data) {
     if (editMode && editingSongId) {
         const comment = editorCommentEl?.value.trim();
         if (!comment) {
-            if (editorStatusEl) {
-                editorStatusEl.textContent = 'Please describe your changes';
-                editorStatusEl.className = 'save-status error';
-            }
+            promptForField(editorCommentEl, 'Please describe your changes');
             return;
         }
 
@@ -1003,6 +1082,8 @@ async function submitToGitHubIssue(data) {
             if (editorTitleEl) editorTitleEl.value = '';
             if (editorArtistEl) editorArtistEl.value = '';
             if (editorContentEl) editorContentEl.value = '';
+            updateMetadataSummary();
+            setMetadataExpanded(false);
             updateEditorPreview();
         }
 

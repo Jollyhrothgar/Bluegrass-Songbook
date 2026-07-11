@@ -677,9 +677,29 @@ describe('smart paste into a section lyrics textarea', () => {
 describe('smart paste into the empty editor', () => {
     beforeEach(() => { editor.loadChordPro(''); });
 
-    it('shows a paste affordance in the empty state', () => {
+    it('shows one big paste box in the empty state (content first, no hint clutter)', () => {
         expect(container.querySelector('.ve-empty-paste')).not.toBeNull();
-        expect(container.querySelector('.ve-empty-hint')).not.toBeNull();
+        expect(container.querySelector('.ve-empty-paste').placeholder)
+            .toMatch(/Paste or type your song/);
+    });
+
+    it('renders upload/request escape hatches only when the host provides them', () => {
+        // default editor from beforeEach: no callbacks were passed
+        expect(container.querySelector('.ve-empty-links')).toBeNull();
+
+        const host = document.createElement('div');
+        document.body.appendChild(host);
+        const onUploadRequest = vi.fn();
+        const onSongRequest = vi.fn();
+        const e2 = createVisualEditor({ container: host, onUploadRequest, onSongRequest });
+        e2.loadChordPro('');
+        const links = [...host.querySelectorAll('.ve-empty-link')].map(b => b.textContent);
+        expect(links).toEqual(['Upload a photo instead', 'Request a song']);
+        host.querySelector('.ve-link-upload').click();
+        expect(onUploadRequest).toHaveBeenCalledTimes(1);
+        host.querySelector('.ve-link-request').click();
+        expect(onSongRequest).toHaveBeenCalledTimes(1);
+        e2.destroy();
     });
 
     it('whole-song chord-sheet paste builds all cards in one undo step', () => {
@@ -872,5 +892,99 @@ describe('drag-and-drop section reorder', () => {
         handle.dispatchEvent(pev('pointerup', { clientY: 130, pointerType: 'touch' }));
         expect(onChange).not.toHaveBeenCalled();
         vi.useRealTimers();
+    });
+});
+
+describe('progressive toolbar (transpose/key hidden until a chord exists)', () => {
+    function transposeGroup() {
+        return container.querySelector('.ve-transpose-group');
+    }
+
+    it('is hidden for an empty document', () => {
+        editor.loadChordPro('');
+        expect(transposeGroup().classList.contains('ve-gone')).toBe(true);
+    });
+
+    it('is hidden for lyrics without chords', () => {
+        editor.loadChordPro('{start_of_verse: Verse 1}\njust words here\n{end_of_verse}');
+        expect(transposeGroup().classList.contains('ve-gone')).toBe(true);
+    });
+
+    it('is visible when the document has chords', () => {
+        editor.loadChordPro(SRC);
+        expect(transposeGroup().classList.contains('ve-gone')).toBe(false);
+    });
+
+    it('appears after the first chord is placed and space stays reserved', () => {
+        editor.loadChordPro('{start_of_verse: Verse 1}\nhello world friend\n{end_of_verse}');
+        expect(transposeGroup().classList.contains('ve-gone')).toBe(true);
+        tapSyllable('world');
+        pickChord('C');
+        expect(transposeGroup().classList.contains('ve-gone')).toBe(false);
+        // undo the placement: controls retreat again
+        container.querySelector('.ve-undo').click();
+        expect(transposeGroup().classList.contains('ve-gone')).toBe(true);
+    });
+});
+
+describe('gentle split feedback (toast + entrance animation)', () => {
+    function toastEl() { return container.querySelector('.ve-toast'); }
+
+    it('whole-paste with chords shows a "Found N chords in M sections" toast whose Undo restores the empty box', () => {
+        editor.loadChordPro('');
+        const ta = container.querySelector('.ve-empty-paste');
+        const e = new Event('paste');
+        e.clipboardData = { getData: () => PASTED_SHEET };
+        ta.dispatchEvent(e);
+
+        const toast = toastEl();
+        expect(toast.classList.contains('hidden')).toBe(false);
+        expect(toast.textContent).toMatch(/Found \d+ chords in 2 sections/);
+
+        // cards animate in
+        const cards = [...container.querySelectorAll('.ve-card')];
+        expect(cards.length).toBe(2);
+        expect(cards.every(c => c.classList.contains('ve-card-enter'))).toBe(true);
+
+        toast.querySelector('.ve-toast-undo').click();
+        expect(editor.isEmpty()).toBe(true);
+        expect(container.querySelector('.ve-empty-paste')).not.toBeNull();
+    });
+
+    it('typed multi-paragraph lyrics (no chords) show a "Split into N verses" toast on blur', () => {
+        editor.loadChordPro('');
+        const ta = container.querySelector('.ve-empty-paste');
+        ta.value = 'first verse words\n\nsecond verse words\n\nthird verse words';
+        ta.dispatchEvent(new Event('blur'));
+
+        expect(container.querySelectorAll('.ve-card').length).toBe(3);
+        const toast = toastEl();
+        expect(toast.classList.contains('hidden')).toBe(false);
+        expect(toast.textContent).toContain('Split into 3 verses');
+
+        toast.querySelector('.ve-toast-undo').click();
+        expect(editor.isEmpty()).toBe(true);
+    });
+
+    it('blank-line split inside an existing card announces the split', () => {
+        editor.loadChordPro(SRC);
+        container.querySelector('.ve-mode-lyrics').click();
+        const ta = container.querySelector('.ve-lyrics-input');
+        ta.value = 'hello world friend\n\na brand new verse';
+        ta.dispatchEvent(new Event('blur'));
+
+        expect(container.querySelectorAll('.ve-card').length).toBe(2);
+        const toast = toastEl();
+        expect(toast.classList.contains('hidden')).toBe(false);
+        expect(toast.textContent).toContain('Split into 2');
+
+        // one undo step restores the single card
+        toast.querySelector('.ve-toast-undo').click();
+        expect(container.querySelectorAll('.ve-card').length).toBe(1);
+    });
+
+    it('ordinary renders do not animate cards', () => {
+        editor.loadChordPro(SRC);
+        expect(container.querySelector('.ve-card').classList.contains('ve-card-enter')).toBe(false);
     });
 });

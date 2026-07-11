@@ -9615,27 +9615,56 @@ body.fullscreen-mode::after {
     }
 }
 
-/* ===== Editor tabs (Visual | Raw) ===== */
-.editor-tabs {
+/* ===== Editor topbar: compact metadata line + quiet view toggle ===== */
+.editor-topbar {
     display: flex;
-    gap: 0.25rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
     margin: 0.5rem 0;
-    border-bottom: 2px solid var(--border, #444);
 }
-.editor-tab {
-    padding: 0.5rem 1rem;
+.metadata-summary {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
     background: none;
     border: none;
+    padding: 0.4rem 0.25rem;
     color: var(--text);
-    cursor: pointer;
-    font-size: 1rem;
-    border-bottom: 2px solid transparent;
-    margin-bottom: -2px;
-}
-.editor-tab.active {
-    border-bottom-color: var(--chord, #2563eb);
+    font-size: 1.05rem;
     font-weight: 600;
+    cursor: pointer;
+    border-radius: var(--radius-md, 6px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+.metadata-summary:hover { background: var(--bg-secondary); }
+.metadata-summary.metadata-summary-unnamed {
+    color: var(--text-secondary);
+    font-weight: 400;
+    font-style: italic;
+}
+.metadata-summary::after {
+    content: ' \25BE';
+    color: var(--text-secondary);
+    font-style: normal;
+    font-size: 0.85em;
+}
+.metadata-summary.expanded::after { content: ' \25B4'; }
+.editor-view-toggle { flex-shrink: 0; }
+.editor-view-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: var(--radius-md, 6px);
+}
+.editor-view-btn:hover { color: var(--text); background: var(--bg-secondary); }
+.editor-view-btn.hidden { display: none; }
+.editor-view-glyph { font-family: monospace; font-weight: 700; }
 
 /* ===== Visual editor ===== */
 .visual-editor-container.hidden { display: none; }
@@ -9669,6 +9698,20 @@ body.fullscreen-mode::after {
 .ve-toolbar button:hover { border-color: var(--accent); }
 .ve-toolbar-spacer { flex: 1; }
 .ve-key-label { font-weight: 600; color: var(--chord); }
+/* transpose/key fade in once the song has a chord; space stays reserved
+   so the cards below never jump */
+.ve-transpose-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 1;
+    transition: opacity 220ms ease, visibility 220ms;
+}
+.ve-transpose-group.ve-gone {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 /* drag-and-drop section reorder */
 .ve-cards { position: relative; }
@@ -10016,20 +10059,52 @@ body.fullscreen-mode::after {
 .ve-toast.hidden { display: none; }
 .ve-toast-undo { margin-left: 0.5rem; font-weight: 700; cursor: pointer; color: var(--accent); }
 
+/* per-card "no lyrics yet" hint (section-card.js) */
 .ve-empty-hint { color: var(--text-secondary); padding: 0.75rem; }
 .ve-empty-paste {
     width: 100%;
     box-sizing: border-box;
     margin-top: 0.25rem;
-    padding: 0.75rem;
+    padding: 1rem;
     font: inherit;
+    font-size: 1.05rem;
+    line-height: 1.5;
     color: var(--text-primary);
     background: var(--bg-secondary);
     border: 1px dashed var(--border-color);
-    border-radius: 8px;
+    border-radius: 12px;
     resize: vertical;
 }
 .ve-empty-paste:focus { outline: none; border-color: var(--accent); }
+.ve-empty-paste::placeholder { color: var(--text-secondary); opacity: 0.8; }
+.ve-empty-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 0.75rem 0;
+}
+.ve-empty-link {
+    background: none;
+    border: none;
+    padding: 0.25rem 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.ve-empty-link:hover { color: var(--accent); }
+
+/* gentle entrance when typed/pasted lyrics split into cards */
+@keyframes ve-card-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+}
+.ve-card-enter { animation: ve-card-in 260ms ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+    .ve-card-enter { animation: none; }
+    .ve-transpose-group { transition: none; }
+}
 
 @media (max-width: 700px) {
     .ve-palette { position: fixed; left: 0; right: 0; bottom: 0; }

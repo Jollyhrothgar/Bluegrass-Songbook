@@ -14,6 +14,8 @@ test.describe('Editor Access', () => {
         await page.goto('/#edit/your-cheating-heart');
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
         await expect(page.locator('#editor-title')).toHaveValue(/Cheat/i);
+        // edit mode arrives with metadata known: the compact line shows it
+        await expect(page.locator('#metadata-summary')).toContainText(/Cheat/i);
 
         await page.reload();
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
@@ -21,18 +23,43 @@ test.describe('Editor Access', () => {
         await expect(page.locator('.search-container')).toBeHidden();
     });
 
-    test('can access editor via sidebar Add Song button', async ({ page }) => {
+    test('sidebar Add Song lands directly in the editor with the paste box, no modal', async ({ page }) => {
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
         // Open sidebar and click Add Song
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
 
-        // Editor panel should be visible
+        // Straight to the editor: one big friendly box, no picker modal
+        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('.ve-empty-paste')).toBeVisible();
+        await expect(page.locator('#add-song-picker')).toBeHidden();
+
+        // quiet escape hatches under the box
+        await expect(page.locator('.ve-link-upload')).toBeVisible();
+        await expect(page.locator('.ve-link-request')).toBeVisible();
+
+        // metadata is deferred to a compact line
+        await expect(page.locator('#metadata-summary')).toContainText('Untitled song');
+        await expect(page.locator('#metadata-fields')).toBeHidden();
+    });
+
+    test('upload link is login-gated: logged out click prompts sign-in, no upload view', async ({ page }) => {
+        await page.goto('/#add');
+        await expect(page.locator('.ve-empty-paste')).toBeVisible();
+
+        // stub the sign-in redirect so the test can observe the gate
+        await page.evaluate(() => {
+            window.__signInCalled = 0;
+            window.SupabaseAuth.signInWithGoogle = () => { window.__signInCalled++; };
+        });
+
+        await page.locator('.ve-link-upload').click();
+
+        expect(await page.evaluate(() => window.__signInCalled)).toBe(1);
+        // still in the editor — the upload view did not open
+        await expect(page.locator('#upload-panel')).toBeHidden();
         await expect(page.locator('#editor-panel')).toBeVisible();
     });
 
@@ -42,14 +69,13 @@ test.describe('Editor Access', () => {
 
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+        // Add Song goes straight to the new-song editor (no picker modal)
 
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
 
-        // Check form fields exist
+        // Metadata fields are deferred behind the compact line — expand it
+        await page.locator('#metadata-summary').click();
         await expect(page.locator('#editor-title')).toBeVisible();
         await expect(page.locator('#editor-artist')).toBeVisible();
         await expect(page.locator('#editor-content')).toBeVisible();
@@ -84,21 +110,22 @@ test.describe('Editor Content Input', () => {
         await page.waitForSelector('#search-input');
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+        // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
     });
 
-    test('can enter title', async ({ page }) => {
+    test('can enter title and it shows on the compact metadata line', async ({ page }) => {
+        await page.locator('#metadata-summary').click();
         const titleInput = page.locator('#editor-title');
         await titleInput.fill('Test Song Title');
         await expect(titleInput).toHaveValue('Test Song Title');
+        await expect(page.locator('#metadata-summary')).toContainText('Test Song Title');
     });
 
     test('can enter artist', async ({ page }) => {
+        await page.locator('#metadata-summary').click();
         const artistInput = page.locator('#editor-artist');
         await artistInput.fill('Test Artist');
         await expect(artistInput).toHaveValue('Test Artist');
@@ -118,9 +145,7 @@ test.describe('Editor Preview', () => {
         await page.waitForSelector('#search-input');
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+        // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -167,9 +192,7 @@ test.describe('ChordPro Conversion', () => {
         await page.waitForSelector('#search-input');
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+        // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -204,9 +227,7 @@ test.describe('Editor Navigation', () => {
         // Open editor
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+        // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
 
         // Click back button
@@ -263,9 +284,7 @@ test.describe('Editor Hints', () => {
 
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+        // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -296,9 +315,7 @@ test.describe('Editor Copy Function', () => {
 
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+        // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -327,9 +344,7 @@ test.describe('Editor Nashville Mode', () => {
 
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+        // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -366,9 +381,7 @@ test.describe('Editor Validation', () => {
 
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
-        // Add Song opens the picker; pick "Lyrics & Chords" to reach the editor
-        await expect(page.locator('#add-song-picker')).toBeVisible();
-        await page.locator('#add-song-picker .picker-card[data-type="chordpro"]').click();
+        // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
         // Visual tab is the default; switch to the Raw tab for textarea access
         await page.locator('#editor-tab-raw').click();
@@ -384,16 +397,10 @@ test.describe('Editor Validation', () => {
         // Click submit
         await submitBtn.click();
 
-        // Should show error or status message about missing title
-        await page.waitForTimeout(500);
-        const status = page.locator('#editor-status');
-        const statusText = await status.textContent().catch(() => '');
-
-        // Validation should prevent submission
-        // Either shows error or title field is highlighted
-        const titleInput = page.locator('#editor-title');
-        const isInvalid = await titleInput.evaluate(el => el.classList.contains('invalid') || el.validity?.valueMissing);
-
-        expect(statusText?.toLowerCase().includes('title') || isInvalid || statusText === '').toBeTruthy();
+        // Friendly nudge: fields expand, title gets focus, notice mentions the title
+        await expect(page.locator('#metadata-fields')).toBeVisible();
+        await expect(page.locator('#editor-title')).toBeFocused();
+        const statusText = await page.locator('#editor-status').textContent();
+        expect(statusText?.toLowerCase()).toContain('title');
     });
 });
