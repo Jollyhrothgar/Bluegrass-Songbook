@@ -1441,9 +1441,11 @@ export async function openSong(songId, options = {}) {
     songContentEl.innerHTML = '<div class="loading">Loading song...</div>';
 
     try {
-        let response = await fetch(`data/sources/${songId}.pro`);
+        // no-cache = revalidate (304 if unchanged) so re-published
+        // song data isn't shadowed by heuristic caching for weeks.
+        let response = await fetch(`data/sources/${songId}.pro`, { cache: 'no-cache' });
         if (!response.ok) {
-            response = await fetch(`../sources/classic-country/parsed/${songId}.pro`);
+            response = await fetch(`../sources/classic-country/parsed/${songId}.pro`, { cache: 'no-cache' });
         }
         const chordpro = await response.text();
         setCurrentChordpro(chordpro);

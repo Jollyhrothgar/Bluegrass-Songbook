@@ -841,7 +841,9 @@ async function loadIndex() {
     }
 
     try {
-        const response = await fetch('data/index.jsonl');
+        // no-cache = revalidate (304 if unchanged); heuristic caching
+        // otherwise serves a stale index for weeks after a re-publish.
+        const response = await fetch('data/index.jsonl', { cache: 'no-cache' });
         const text = await response.text();
         const songs = text.trim().split('\n').map(line => JSON.parse(line));
         setAllSongs(songs);

@@ -639,10 +639,15 @@ async function renderTablaturePart(part, container) {
     container.innerHTML = '<div class="loading">Loading tablature...</div>';
 
     try {
-        // Load OTF data
+        // Load OTF data. cache: 'no-cache' = revalidate with the server
+        // (304 if unchanged) — Chrome's heuristic freshness otherwise
+        // serves long-unchanged tab files for WEEKS after they are
+        // re-published (a January parse of cherokee-shuffle-a survived
+        // multiple hard reloads and rendered 2/2 left-packed measures
+        // over the corrected data).
         let otf = loadedTablature;
         if (!otf || otf._partFile !== part.file) {
-            const response = await fetch(part.file);
+            const response = await fetch(part.file, { cache: 'no-cache' });
             if (!response.ok) throw new Error(`Failed to load ${part.file}`);
             otf = await response.json();
             otf._partFile = part.file;
