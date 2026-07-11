@@ -52,16 +52,60 @@ def test_articulations_match_tabledit_oracle(tef_23398):
     assert techs == ["h", "p", "p", "p", "p"], f"got {arts}"
 
 
-def test_no_false_positives_when_effect_byte_is_not_a_flag_field():
-    """27493 (Jerusalem Ridge): TablEdit's MusicXML export shows ZERO
-    hammer-ons/pull-offs on the banjo track, but the raw byte read as
-    'effect1' takes values 1..15 across melody notes — it is not an
-    effects bitfield in this file, and `effect1 & 0x03` fires on most
-    notes. The plausibility gate must reject the whole flag set.
+def test_no_false_positives_for_v3_records():
+    """27493 (Jerusalem Ridge, V3): its export shows ZERO slurs, and V3
+    records' byte 4 is the fret/type byte — if the V2 enum read ever
+    touched 12-byte records it would alias frets 0-2 as h/p/slide.
+    compute_articulations must skip non-V2 records entirely (V3 goes
+    through compute_articulations_v3).
     """
     tef = TEFReader(str(TEF_23398.parent / "27493.tef")).parse()
     arts = compute_articulations(tef.note_events)
     assert arts == {}, f"expected no techniques, got {len(arts)}"
+
+
+def test_enum_not_direction_and_no_bitmask_and_adjacency():
+    """The oracle-fit V2 model, pinned on its discovery files:
+    - 11245: descending hammer-ons (effect1=1, fret 3->2) — the old
+      direction rule inverted them to pull-offs; TablEdit's export
+      says hammer-on. Exact-enum totals match the export: 32 marks.
+    - 24112: 138 notes carry effect1=0x05 (an unrelated effect); the
+      old `& 0x03` mask fabricated hammers from them. Exact enum
+      yields the export's 14 marks.
+    - 11830: a slide flag whose next same-string note starts AFTER the
+      source's written duration (rest between) must not pair: 5 marks,
+      not 6.
+    """
+    from tef_parser import tef_to_otf
+
+    def tech_count(sid):
+        d = tef_to_otf(TEFReader(str(TEF_23398.parent / f"{sid}.tef")).parse()).to_dict()
+        tid = next(iter(d["notation"]))
+        return [(m["measure"], e["tick"], n["s"], n["f"], n["tech"])
+                for m in d["notation"][tid] for e in m["events"]
+                for n in e["notes"] if n.get("tech") in ("h", "p", "/")]
+
+    t11245 = tech_count("11245")
+    assert len(t11245) == 32
+    assert (2, 840, 3, 2, "h") in t11245  # descending hammer-on kept as h
+
+    assert len(tech_count("24112")) == 14  # 0x05 notes contribute nothing
+    assert len(tech_count("11830")) == 5   # rest-gapped slide not paired
+
+
+def test_double_stop_slides_mark_both_strings():
+    """18779 m8: s2 f1->3 slides OVER s4 f3->5 (both sources flagged
+    effect1=3, both destinations adjacent). TablEdit's MusicXML export
+    carries the slur on only ONE string of the pair — the export is
+    lossy; the parse keeps both."""
+    from tef_parser import tef_to_otf
+    d = tef_to_otf(TEFReader(str(TEF_23398.parent / "18779.tef")).parse()).to_dict()
+    tid = next(iter(d["notation"]))
+    techs = {(m["measure"], e["tick"], n["s"], n["f"]): n["tech"]
+             for m in d["notation"][tid] for e in m["events"]
+             for n in e["notes"] if n.get("tech")}
+    assert techs.get((8, 240, 2, 3)) == "/"  # the string the export marks
+    assert techs.get((8, 240, 4, 5)) == "/"  # the one it drops
 
 
 def test_otf_carries_techniques(tef_23398):

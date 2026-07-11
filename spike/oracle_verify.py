@@ -63,9 +63,16 @@ def xml_parts(xml_path):
                     s = el.findtext(".//string")
                     f = el.findtext(".//fret")
                     start = last_start if chord else tick
+                    kinds = set()
+                    for tag, code in (("hammer-on", "h"),
+                                      ("pull-off", "p"), ("slide", "/")):
+                        for mk in el.iter(tag):
+                            if mk.get("type") == "stop":
+                                kinds.add(code)
+                    tech = "".join(sorted(kinds)) or None
                     if s is not None and not tie_stop:
                         notes.append((mnum, round(start), int(s), int(f),
-                                      round(dur)))
+                                      round(dur), tech))
                     if not chord:
                         last_start = tick
                         tick += dur
@@ -87,10 +94,11 @@ def otf_tracks(otf_path):
     out = {}
     for tid in order:
         measures = otf.get("notation", {}).get(tid, [])
-        notes = [(m["measure"], ev["tick"], n["s"], n["f"], n.get("dur"))
+        notes = [(m["measure"], ev["tick"], n["s"], n["f"], n.get("dur"),
+                  n.get("tech") if n.get("tech") in ("h", "p", "/") else None)
                  for m in measures for ev in m["events"]
                  for n in ev["notes"] if not n.get("tie")]
-        out[tid] = sorted(notes)
+        out[tid] = sorted(notes, key=lambda x: (x[0], x[1], x[2], x[3]))
     return out
 
 
@@ -122,6 +130,19 @@ def compare(otf_path, xml_path):
     all_exact = True
     for tid, xml_notes in pairing:
         a, b = set(tracks[tid]), set(xml_notes)
+        # DOUBLE-STOP allowance: TablEdit's MusicXML export puts a
+        # double-stop slide/hammer's slur on only ONE string of the
+        # pair (18779 m8: s2 marked, s4 dropped). An OTF note whose
+        # only difference is a tech the export omits is forgiven when
+        # a note at the same (measure, tick) on ANOTHER string carries
+        # that very tech in the export — the export is lossy, not us.
+        for extra in list(a - b):
+            m, t, s, f, dur, tech = extra
+            if tech and (m, t, s, f, dur, None) in b and any(
+                    x[0] == m and x[1] == t and x[2] != s and x[5] == tech
+                    for x in b):
+                a.discard(extra)
+                a.add((m, t, s, f, dur, None))
         exact = len(a & b)
         per_track[tid] = {
             "otf": len(a), "oracle": len(b), "exact": exact,

@@ -7,7 +7,7 @@ import json
 from dataclasses import dataclass, field
 from typing import Any
 
-from .reader import TEFFile, TEFNoteEvent, TEFInstrument
+from .reader import TEFFile, TEFNoteEvent, TEFInstrument, decode_duration_code
 
 
 # MIDI note to pitch name conversion
@@ -338,97 +338,70 @@ def compute_articulations(
     note_events: list[TEFNoteEvent],
     max_gap: int | None = None,
 ) -> dict[tuple[int, int, int], str]:
-    """Compute articulation techniques based on note sequence and fret direction.
+    """V2 techniques (oracle-fit 2026-07-11: 38/39 downloads-backed V2
+    files match TablEdit's MusicXML exports exactly; the 39th, 18779,
+    differs only where the EXPORT is lossy — see double-stops below).
 
-    max_gap: largest source→destination distance (in whatever units
-    event.position carries) still treated as a legato pair. For V2 events
-    (native grid, 256 units/whole) pass ts_size // 2 = half a measure —
-    the behavior oracle-verified on 23398. Defaults to 8 for V3's
-    16-slots-per-measure positions (also half a measure).
+    effect1 (byte 4 of the 6-byte record, on the SOURCE note) is an
+    ENUM — the same one V3 uses in byte 6:
 
-    In TablEdit V2 format, legato is marked with 0x02 on the SOURCE note, but
-    the actual technique (hammer-on vs pull-off) depends on fret direction:
-    - Going to higher fret = hammer-on (h)
-    - Going to lower fret = pull-off (p)
+        1 = hammer-on    2 = pull-off    3 = slide
 
-    The technique marker should be on the DESTINATION note in standard tab notation.
+    NOT a bitfield and NOT direction-based. TablEdit marks whatever the
+    author chose (11245/21420 contain descending hammer-ons the old
+    direction rule inverted to pull-offs), and other values (0x04
+    bend/choke, 0x05, 0x0f, 0x20, ...) are unrelated effects: masking
+    them with & 0x03 fabricated 19 phantom techniques in 24112 alone,
+    and the old whole-file plausibility gate (any effect1 > 4 =>
+    distrust everything) threw away ALL techniques in 12 files that
+    really have them. The gate's own justification cited 27493 — a V3
+    file that no longer routes through this function.
+
+    Pairing: the technique lands on the NEXT note of the same
+    (track, string), but only when it starts within the SOURCE's
+    written duration — 11830 has a slide flag whose would-be
+    destination sits after an intervening rest, and TablEdit shows no
+    slur there. (max_gap is kept for call compatibility; adjacency is
+    the real rule now.)
+
+    Double-stop slides mark BOTH strings (18779 m8: s2 f1->3 over
+    s4 f3->5). TablEdit's MusicXML export carries the slur on only one
+    string of such pairs; ours are the musically complete reading.
 
     Returns:
-        Dict mapping (track, position, string) to technique code for DESTINATION notes
+        Dict mapping (track, position, string) to technique code for
+        DESTINATION notes.
     """
+    V2_TECH = {1: "h", 2: "p", 3: "/"}
     articulations: dict[tuple[int, int, int], str] = {}
-    if max_gap is None:
-        max_gap = 8
 
-    # Plausibility gate (oracle-verified against TablEdit MusicXML exports):
-    # in clean files (e.g. 23398) the effect1 byte of melody notes only takes
-    # small flag values ({0,1,2} + bend 0x04). In some files (e.g. 27493) the
-    # same byte position holds arbitrary values 1..15 — it is NOT an effects
-    # bitfield there, and `effect1 & 0x03` would flag most notes as legato
-    # (TablEdit's own export shows zero slurs for that file). If any melody
-    # note has effect1 > 4, distrust the byte for the whole file.
-    for event in note_events:
-        if event.is_melody and event.raw_data and len(event.raw_data) >= 5:
-            if event.raw_data[4] > 0x04:
-                return articulations
-
-    # Group notes by track and string, sorted by position
     notes_by_track_string: dict[tuple[int, int], list[TEFNoteEvent]] = {}
-
     for event in note_events:
         if not event.is_melody:
+            continue
+        # V2 records only (6 bytes); V3 events (12 bytes) are handled by
+        # compute_articulations_v3 — their byte 4 is the fret/type byte
+        # and would alias the enum.
+        if not event.raw_data or len(event.raw_data) != 6:
             continue
         result = event.decode_string_fret()
         if not result:
             continue
-        string, fret = result
-        key = (event.track, string)
-        if key not in notes_by_track_string:
-            notes_by_track_string[key] = []
-        notes_by_track_string[key].append(event)
+        string, _ = result
+        notes_by_track_string.setdefault((event.track, string), []).append(event)
 
-    # Sort each group by position
-    for key in notes_by_track_string:
-        notes_by_track_string[key].sort(key=lambda e: e.position)
-
-    # Process each track/string sequence
     for (track, string), notes in notes_by_track_string.items():
+        notes.sort(key=lambda e: e.position)
         for i, event in enumerate(notes):
-            if not has_legato_effect(event):
+            tech = V2_TECH.get(event.raw_data[4])
+            if not tech or i + 1 >= len(notes):
                 continue
-
-            result = event.decode_string_fret()
-            if not result:
+            next_event = notes[i + 1]
+            # written duration in native V2 units (1 unit = 7.5 ticks)
+            dur_units = decode_duration_code(event.raw_data[3] & 0x1f) / 7.5
+            if next_event.position - event.position > dur_units:
                 continue
-            _, source_fret = result
-
-            # Find the next note on the same string
-            if i + 1 < len(notes):
-                next_event = notes[i + 1]
-                next_result = next_event.decode_string_fret()
-                if next_result:
-                    _, dest_fret = next_result
-
-                    # Check if notes are close enough to be a legato pair
-                    # (see max_gap in the docstring; oracle-verified on
-                    # 23398: all eighth-note hammer/pull pairs must pair).
-                    if next_event.position - event.position <= max_gap:
-                        # Same fret cannot be a hammer-on or pull-off — a
-                        # repeated note with a stray flag is not a technique.
-                        if dest_fret == source_fret and not is_slide_effect(event):
-                            continue
-
-                        # Check for slide first (effect1=0x03)
-                        if is_slide_effect(event):
-                            tech = "/"  # Slide
-                        elif dest_fret > source_fret:
-                            tech = "h"  # Hammer-on (going up)
-                        else:
-                            tech = "p"  # Pull-off (going down)
-
-                        # Apply technique to DESTINATION note
-                        dest_key = (track, next_event.position, string)
-                        articulations[dest_key] = tech
+            articulations[(track, next_event.position, string)] = tech
 
     return articulations
 
