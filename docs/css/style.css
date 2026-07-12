@@ -6651,6 +6651,15 @@ body.fullscreen-mode::after {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    /* Tabs scroll in their own pane; the controls row stays put.
+       Also keeps playback auto-scroll from dragging the whole page. */
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.fullscreen-mode .tablature-all-tracks {
+    max-height: calc(100vh - 160px);
 }
 
 .tablature-track-section {

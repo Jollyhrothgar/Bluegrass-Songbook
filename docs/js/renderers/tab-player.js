@@ -308,13 +308,21 @@ export class TabPlayer {
      *   (default: end of tune). With loop, the range repeats.
      */
     async play(otfData, options = {}) {
+        // GENERATION GUARD: play() awaits (init, resume, instrument
+        // loads) — un-debounced rapid calls used to interleave and
+        // schedule two overlapping performances ('the parts don't all
+        // start from the same spot'). Only the newest call survives
+        // its awaits.
+        const gen = this._playGen = (this._playGen || 0) + 1;
         if (this.isPlaying) this.stop();
         this._loopSource = otfData; // for loop restarts
 
         await this.init();
+        if (gen !== this._playGen) return;
 
         if (this.audioContext.state === 'suspended') {
             await this.audioContext.resume();
+            if (gen !== this._playGen) return;
         }
 
         const tracksToPlay = options.trackIds
@@ -324,6 +332,7 @@ export class TabPlayer {
         if (tracksToPlay.length === 0) return;
 
         await this.loadInstruments(tracksToPlay);
+        if (gen !== this._playGen) return;
 
         this.isPlaying = true;
         this.loop = options.loop || false;
@@ -520,6 +529,12 @@ export class TabPlayer {
         // Everything anchors on playbackStartTime, so shifting it delays
         // notes, metronome, and the position clock together. Clicks are
         // FORCED audible (they're the point) even with the metronome off.
+        // Scheduling headroom scales with the schedule size: queueing a
+        // full multi-track tune takes real time, and a fixed 100ms let
+        // the earliest notes' start times slip into the past — tracks
+        // then STARTED LATE by different amounts (the ensemble smear).
+        const headroom = 0.15 + Math.min(0.35, playNotes.length * 0.0003);
+
         const countInBeats = options.countInBeats || 0;
         let countInSeconds = 0;
         if (countInBeats > 0) {
@@ -531,13 +546,13 @@ export class TabPlayer {
             countInSeconds = countInBeats * beatSeconds;
             for (let i = 0; i < countInBeats; i++) {
                 this.playMetronomeClick(
-                    this.audioContext.currentTime + 0.1 + i * beatSeconds,
+                    this.audioContext.currentTime + headroom + i * beatSeconds,
                     i === 0, /* force */ true);
             }
         }
 
         // Schedule playback
-        this.playbackStartTime = this.audioContext.currentTime + 0.1 + countInSeconds;
+        this.playbackStartTime = this.audioContext.currentTime + headroom + countInSeconds;
         this.scheduledNodes = [];
 
         // Store timing info for position updates

@@ -111,6 +111,31 @@ describe('attachTabPlaybackInteractions', () => {
         expect(svg.querySelectorAll('.phrase-highlight').length).toBe(2);
     });
 
+    it('hover shows a play-from caret at the quantized beat; leave clears it', () => {
+        const r = makeRenderer();
+        attachTabPlaybackInteractions(r, { beatTicks: 480, onPlayFrom: vi.fn() });
+        const svg = r.rowData[0].svg;
+        svg.dispatchEvent(pointer('pointermove', 218, 60)); // no drag active
+        const caret = svg.querySelector('.play-caret');
+        expect(caret).not.toBeNull();
+        // tick 960 of measure 1 -> x = 20 + (960/1920)*360 = 200
+        expect(+caret.getAttribute('x1')).toBe(200);
+        svg.dispatchEvent(new MouseEvent('pointerleave', { bubbles: true }));
+        expect(svg.querySelector('.play-caret')).toBeNull();
+    });
+
+    it('debounces rapid clicks into one playback start', () => {
+        const r = makeRenderer();
+        const onPlayFrom = vi.fn();
+        attachTabPlaybackInteractions(r, { beatTicks: 480, onPlayFrom });
+        const svg = r.rowData[0].svg;
+        for (let i = 0; i < 3; i++) {
+            svg.dispatchEvent(pointer('pointerdown', 218, 60));
+            svg.dispatchEvent(pointer('pointerup', 218, 60));
+        }
+        expect(onPlayFrom).toHaveBeenCalledTimes(1);
+    });
+
     it('destroy removes highlights and handlers', () => {
         const r = makeRenderer();
         const onPlayFrom = vi.fn();

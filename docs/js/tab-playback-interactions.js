@@ -43,6 +43,7 @@ export function playbackRangeForMeasures(playback, compact, fromDisplay, toDispl
 }
 
 const DRAG_THRESHOLD_PX = 6;
+const CLICK_DEBOUNCE_MS = 350;
 
 /**
  * Wire click-to-play and drag-to-loop onto a rendered TabRenderer.
@@ -60,9 +61,44 @@ export function attachTabPlaybackInteractions(renderer, {
     onLoopMeasures,
 } = {}) {
     let drag = null; // { row, startMeasure, lastMeasure, moved }
+    let lastClickAt = 0;
     const cleanups = [];
 
     const opts = renderer.options;
+
+    /** x for a (display measure, tick) in row-svg coords. */
+    function xForTick(row, measure, tick) {
+        const geom = row.measures.find(g => g.display === measure);
+        if (!geom) return null;
+        const noteX0 = (geom.noteX0 ?? geom.x + 15) + (geom.noteOffset ?? 0);
+        const noteW = geom.noteW ?? geom.width - 30;
+        return noteX0 + (tick / geom.ticks) * noteW;
+    }
+
+    function clearCaret() {
+        for (const row of renderer.rowData || []) {
+            row.svg?.querySelectorAll('.play-caret').forEach(el => el.remove());
+        }
+    }
+
+    /** Beat caret: shows WHERE playback would start before you commit. */
+    function showCaret(row, measure, tick) {
+        clearCaret();
+        const x = xForTick(row, measure, tick);
+        if (x == null) return;
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', x);
+        line.setAttribute('x2', x);
+        line.setAttribute('y1', opts.topMargin - 10);
+        line.setAttribute('y2', opts.topMargin
+            + (renderer.numStrings - 1) * opts.stringSpacing + 10);
+        line.setAttribute('class', 'play-caret');
+        line.setAttribute('stroke', opts.highlightColor);
+        line.setAttribute('stroke-width', '2');
+        line.setAttribute('opacity', '0.7');
+        line.setAttribute('pointer-events', 'none');
+        row.svg.appendChild(line);
+    }
 
     function localPoint(svg, evt) {
         const rect = svg.getBoundingClientRect();
@@ -136,21 +172,34 @@ export function attachTabPlaybackInteractions(renderer, {
             evt.preventDefault();
         };
         const move = (evt) => {
-            if (!drag) return;
+            if (!drag) {
+                // hover: preview the beat playback would start from
+                const pos = hit(row, svg, evt);
+                if (pos) showCaret(row, pos.measure, pos.tick);
+                return;
+            }
             if (!drag.moved
                 && Math.hypot(evt.clientX - drag.startX, evt.clientY - drag.startY)
                     < DRAG_THRESHOLD_PX) return;
             drag.moved = true;
+            clearCaret();
             const pos = hit(row, svg, evt);
             if (pos && pos.measure !== drag.lastMeasure) {
                 drag.lastMeasure = pos.measure;
             }
             highlightMeasures(drag.startMeasure, drag.lastMeasure);
         };
+        const leave = () => { if (!drag) clearCaret(); };
         const up = (evt) => {
             if (!drag) return;
             const d = drag;
             drag = null;
+            const now = Date.now();
+            if (now - lastClickAt < CLICK_DEBOUNCE_MS) {
+                evt.preventDefault();
+                return; // debounce: rapid double-fires start ONE playback
+            }
+            lastClickAt = now;
             if (d.moved) {
                 highlightMeasures(d.startMeasure, d.lastMeasure);
                 onLoopMeasures?.(
@@ -166,10 +215,12 @@ export function attachTabPlaybackInteractions(renderer, {
         svg.addEventListener('pointerdown', down);
         svg.addEventListener('pointermove', move);
         svg.addEventListener('pointerup', up);
+        svg.addEventListener('pointerleave', leave);
         cleanups.push(() => {
             svg.removeEventListener('pointerdown', down);
             svg.removeEventListener('pointermove', move);
             svg.removeEventListener('pointerup', up);
+            svg.removeEventListener('pointerleave', leave);
         });
     }
 
@@ -179,6 +230,7 @@ export function attachTabPlaybackInteractions(renderer, {
         clearHighlight,
         destroy() {
             clearHighlight();
+            clearCaret();
             cleanups.forEach(fn => fn());
             cleanups.length = 0;
         },
