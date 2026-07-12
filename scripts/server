@@ -19,7 +19,8 @@ set -e
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
-# Kill any existing bluegrassbook servers (Python http.server on common ports)
+# Kill existing bluegrassbook servers (Python http.server on ports 8080-8090).
+# Only used by --cleanup so multiple instances can coexist on different ports.
 kill_existing_servers() {
     local killed=false
     # Check ports 8080-8090 for Python servers
@@ -86,7 +87,9 @@ fi
 
 case "$COMMAND" in
     frontend|"")
-        kill_existing_servers
+        # Multiple instances (e.g. different worktrees) may run at once on
+        # different ports; we only auto-increment past occupied ports here.
+        # Use ./scripts/server --cleanup to kill all dev servers.
         PORT=$(find_available_port "$PORT")
         echo "Starting frontend server..."
         echo "Visit: http://localhost:$PORT"
