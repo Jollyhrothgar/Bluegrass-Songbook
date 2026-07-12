@@ -167,8 +167,10 @@ export class TabRenderer {
                                       // rows may exceed the container and scroll)
             centerNotes: true,        // Center notes in their measure (reading nicety);
                                       // the editor sets false for a stable tick→x mapping
-            showRests: false,         // Rest glyphs in duration gaps — editor only
-                                      // (TablEdit's tab staff convention: no rests)
+            showRests: true,          // Rest glyphs in duration gaps. TablEdit's
+                                      // tab staff hides these, but that leaves the
+                                      // rhythm implicit (Mike: 'author laziness') —
+                                      // we show them; opt out per-renderer if needed
             measuresPerRow: 'auto',   // 'auto' or number (1-8)
             leftMargin: 50,
             topMargin: 40,
@@ -746,14 +748,10 @@ export class TabRenderer {
             });
             svg.appendChild(numText);
 
-            // Rest glyphs in gaps AFTER duration-carrying notes —
-            // EDITOR-ONLY (options.showRests). TablEdit's tab staff
-            // never draws rests (they live in the notation staff;
-            // 'rests in tab' is off by default), and with the corpus
-            // now carrying real durations the reading view grew rest
-            // glyphs TablEdit users don't expect (Mike: mandolin chops
-            // 'with a quarter rest', guitar chords 'with rests on
-            // top'). Stems/flags alone carry the rhythm in tab.
+            // Rest glyphs in gaps AFTER duration-carrying notes.
+            // TablEdit's tab staff hides rests, leaving the rhythm
+            // implied by the written durations alone — we draw them
+            // (options.showRests, default on).
             if (opt.showRests && TabRenderer._bravuraReady && measure.events) {
                 const restY = opt.topMargin
                     + ((this.numStrings - 1) * opt.stringSpacing) / 2;

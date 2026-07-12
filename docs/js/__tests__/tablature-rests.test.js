@@ -110,7 +110,7 @@ describe('TabRenderer rest drawing', () => {
     const hadBravura = TabRenderer._bravuraReady;
     afterEach(() => { TabRenderer._bravuraReady = hadBravura; });
 
-    const render = (events, options = { showRests: true }) => {
+    const render = (events, options = {}) => {
         const container = document.createElement('div');
         document.body.appendChild(container);
         const r = new TabRenderer(container, options);
@@ -118,16 +118,17 @@ describe('TabRenderer rest drawing', () => {
         return container;
     };
 
-    it('draws rests after durated notes (editor: showRests on)', () => {
+    it('draws rests after durated notes (default)', () => {
         TabRenderer._bravuraReady = true;
         const c = render([{ tick: 0, notes: [{ s: 1, f: 0, dur: 480 }] }]);
         // 1440-tick trailing gap → half + quarter
         expect(c.querySelectorAll('.rest-glyph')).toHaveLength(2);
     });
 
-    it('reading view (default) draws no rests — TablEdit tab convention', () => {
+    it('showRests: false opts a renderer out', () => {
         TabRenderer._bravuraReady = true;
-        const c = render([{ tick: 0, notes: [{ s: 1, f: 0, dur: 480 }] }], {});
+        const c = render([{ tick: 0, notes: [{ s: 1, f: 0, dur: 480 }] }],
+            { showRests: false });
         expect(c.querySelectorAll('.rest-glyph')).toHaveLength(0);
     });
 
