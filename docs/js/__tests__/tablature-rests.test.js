@@ -137,3 +137,46 @@ describe('TabRenderer rest drawing', () => {
         expect(c.querySelectorAll('.rest-glyph')).toHaveLength(0);
     });
 });
+
+describe('stem glyphs honor explicit durations', () => {
+    // jerusalem-ridge-ensemble m14: backup chops — EIGHTHS (dur 240)
+    // attacked on quarter beats. Gap inference drew them with plain
+    // quarter stems while the dur-aware rest pass filled the gaps, so
+    // the page read as "quarter note + eighth rest". Flags must come
+    // from the written duration when present.
+    const CHOPS = [{
+        measure: 1,
+        events: [0, 480, 960, 1440].map(tick => ({
+            tick, notes: [{ s: 3, f: 9, dur: 240 }, { s: 2, f: 10, dur: 240 }],
+        })),
+    }];
+
+    function flagCount(container) {
+        // flags are filled <path>s (stems are lines, rests are texts);
+        // exclude slur/tie paths which have fill="none"
+        return [...container.querySelectorAll('svg path')]
+            .filter(p => p.getAttribute('fill') !== 'none').length;
+    }
+
+    it('isolated eighths get flags even when a rest follows', () => {
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        const r = new TabRenderer(container);
+        r.render(TRACK, CHOPS, 480, '4/4');
+        expect(flagCount(container)).toBe(4);
+    });
+
+    it('gap inference still applies to duration-less docs', () => {
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        const r = new TabRenderer(container);
+        const legacy = [{
+            measure: 1,
+            events: [0, 480, 960, 1440].map(tick => ({
+                tick, notes: [{ s: 3, f: 9 }],
+            })),
+        }];
+        r.render(TRACK, legacy, 480, '4/4');
+        expect(flagCount(container)).toBe(0);  // quarters by gap, no flags
+    });
+});

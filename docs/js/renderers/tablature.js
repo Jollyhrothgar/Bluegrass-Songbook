@@ -1225,6 +1225,19 @@ export class TabRenderer {
             if (sortedIdx < sortedByPos.length - 1) {
                 gapPositions = sortedByPos[sortedIdx + 1].pos16th - np.pos16th;
             }
+            // Explicit written durations take precedence over gap
+            // inference: a chop eighth followed by an eighth REST was
+            // drawn with a quarter's plain stem while the dur-aware
+            // rest pass filled the gap beside it (jerusalem-ridge-
+            // ensemble m14 read as "quarter + eighth rest"). Gap
+            // inference remains the fallback for duration-less docs.
+            const durs = (np.event?.notes || [])
+                .map(n => n.dur).filter(Boolean);
+            if (durs.length) {
+                const d = Math.max(...durs);
+                gapPositions = d >= 1920 ? 16 : d >= 960 ? 8
+                    : d >= 480 ? 4 : d >= 240 ? 2 : 1;
+            }
 
             const stemStartY = opt.topMargin + (np.lowestString - 1) * opt.stringSpacing + 7;
             const stemEndY = beamY;
