@@ -33,12 +33,13 @@ visual-editor/
 ├── line-view.js      # shared line renderer: chord chips over syllable targets
 ├── palette.js        # docked chord palette (diatonic via chord-explorer/theory.js)
 ├── autoscroll.js     # keep the selection clear of the docked palette
-├── preview.js        # LIVE orchestrator: selection, ghost entry, undo, render
+├── drag-reorder.js   # pure geometry for drag-and-drop section reorder
+├── wrap-section.js   # pure make-verse/chorus text transform for the textarea
+├── preview.js        # LIVE orchestrator: selection, ghost entry, sections, undo
 │
-│   # ---- PARKED (kept, not wired up; next round may revive on the preview) ----
-├── section-card.js   # card chrome: header, mode toggle, per-card menu, lyrics mode
-├── drag-reorder.js   # pure geometry for drag-and-drop reorder
-└── visual-editor.js  # old card-based orchestrator (add-section footer, drag, splits)
+│   # ---- PARKED (kept, not wired up) ----
+├── section-card.js   # old card chrome: mode toggle, per-card menu, lyrics mode
+└── visual-editor.js  # old card-based orchestrator (add-section footer, splits)
 ```
 
 ## Data model
@@ -58,11 +59,13 @@ still resolves (section/line/chord bounds are re-checked on refresh).
 
 ## Preview rendering
 
-Sections render as label headers (`.ve-section-label`) over chord-chip
-lines (`.ve-psec`, chorus indented) — no cards, no per-section mode
-toggles. Passthrough blocks (ABC, unknown directives) render read-only.
-The preview is ALWAYS chord-interactive; there is no lyrics mode — lyrics
-are edited in the textarea.
+Sections render as a header row (`.ve-psec-header`: ⠿ drag handle, label,
+⋯ menu) over chord-chip lines (`.ve-psec`, chorus indented) — no cards, no
+per-section mode toggles. Passthrough blocks (ABC, unknown directives)
+render read-only but keep the handle and a Delete-only menu. The preview is
+ALWAYS chord-interactive; there is no lyrics mode — lyrics are edited in
+the textarea. Blank lines inside a section render as whisper-quiet `+`
+end-slot rows (`.ve-line-blank`) that wake on hover/selection.
 
 ## Interactions
 
@@ -99,6 +102,39 @@ Auto-scroll: after every render the selection is nudged clear of the docked
 palette (`autoscroll.js`), scoped to the preview pane (its own scroll
 container on wide screens; the page/fixed palette on narrow ones).
 
+## Section operations
+
+- **Drag reorder**: the ⠿ handle is the only lift zone. Pointer Events +
+  setPointerCapture; touch lifts after a ~350ms long-press (early movement
+  = scroll, not drag). The preview never re-renders mid-drag — the lifted
+  section follows the pointer via a transform, a `.ve-drop-indicator` line
+  marks the gap, and an rAF loop edge-auto-scrolls the pane's scroll
+  container. Drop = `moveSectionTo` → one undo step; Escape/pointercancel
+  abort. Geometry is pure (`drag-reorder.js`).
+- **⋯ header menu**: Rename (inline input in the header; Enter/blur commit,
+  Escape cancels), Make verse/chorus/bridge/intro/outro (`setSectionType`,
+  relabels + renumbers), Duplicate, Delete. Delete shows an undo toast
+  ("Deleted Chorus — Undo", `.ve-toast`) wired to the orchestrator undo
+  stack.
+- Section ids are positional (`ps-<index>`), so EVERY section op clears the
+  chip/syllable selection and hides the palette before committing — never
+  guess where the selection landed after ids shift.
+
+## Make-verse/chorus from the textarea
+
+Selecting text in `#editor-content` reveals a mini-bar in the ChordPro pane
+header (`#editor-selection-toolbar`: Make verse | Make chorus | Make
+bridge). It sits at that FIXED spot rather than floating near the
+selection: textareas expose no selection coordinates (measuring them needs
+a mirror-div hack that fights scrolling/resize), and a bar popping in above
+the text would shift the very lines being drag-selected. A click runs the
+pure transform in `wrap-section.js`: extend to whole lines, strip section
+directives inside the range, trim edge blank lines, auto-number the label
+positionally (sections of the type above the selection), wrap in
+`{start_of_X}`/`{end_of_X}`. One document-level undo step; the preview
+re-renders immediately and the new block stays selected (so a second click
+can re-type it).
+
 ## Smart paste
 
 Pasting into the TEXTAREA runs the raw pipeline in `../smart-paste.js`
@@ -109,10 +145,10 @@ re-renders from the converted text. The parked card-mode paste targets
 
 ## Parked (do not render, do not delete)
 
-`section-card.js` (card chrome, lyrics mode), `drag-reorder.js` geometry and
-the old orchestrator `visual-editor.js` (add-section footer, per-card menus,
-blank-line splits, drag) are unused but kept: the next round re-adds section
-drag-reorder and make-verse/chorus actions on the preview surface.
+`section-card.js` (card chrome, lyrics mode) and the old orchestrator
+`visual-editor.js` (add-section footer, per-card menus, blank-line splits)
+are unused but kept as pattern references. `drag-reorder.js` is LIVE again
+(the preview's section drag reuses its geometry).
 
 ## Design docs
 
@@ -121,7 +157,9 @@ drag-reorder and make-verse/chorus actions on the preview surface.
 
 ## Tests
 
-- Unit: `visual-editor-preview.test.js` (orchestrator behaviors on the new
-  surface), `editor-sync.test.js` (two-pane wiring in editor.js), plus the
-  unchanged model / syllables / palette / autoscroll / drag-reorder suites.
+- Unit: `visual-editor-preview.test.js` (orchestrator behaviors, section
+  menu/drag/toast on the new surface), `visual-editor-wrap-section.test.js`
+  (make-verse/chorus text transform), `editor-sync.test.js` (two-pane
+  wiring in editor.js), plus the unchanged model / syllables / palette /
+  autoscroll / drag-reorder suites.
 - E2E: `e2e/visual-editor.spec.js` (two-pane flows), `e2e/editor.spec.js`.

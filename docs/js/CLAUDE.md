@@ -259,12 +259,15 @@ Two-pane editor: the raw ChordPro textarea (`#editor-content`, left) beside
 a live INTERACTIVE preview (`#editor-preview-container`, right; stacked
 below ~800px). The textarea is THE document — the preview renders
 `parseSong(textarea.value)` and every preview-side edit (tap a syllable →
-palette/typed chord, tap a chip → change/delete) writes serialized ChordPro
-back into the textarea. See `visual-editor/CLAUDE.md` for the preview
-orchestrator. Submit/copy/download flows read the textarea unchanged; smart
-paste converts chord sheets on paste into the textarea. Above the panes:
-compact metadata line, undo/redo, and a progressive transpose/key/Nashville
-group that appears once the song has a chord.
+palette/typed chord, tap a chip → change/delete, section drag/menu ops)
+writes serialized ChordPro back into the textarea. See
+`visual-editor/CLAUDE.md` for the preview orchestrator. Submit/copy/
+download flows read the textarea unchanged; smart paste converts chord
+sheets on paste into the textarea; selecting textarea lines reveals a
+Make verse/chorus/bridge mini-bar in the pane header (pure transform in
+`visual-editor/wrap-section.js`). Above the panes: compact metadata line,
+undo/redo, and a progressive transpose/key/Nashville group that appears
+once the song has a chord.
 
 Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
