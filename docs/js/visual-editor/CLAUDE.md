@@ -1,21 +1,28 @@
-# Visual Editor
+# Visual Editor (Interactive Preview)
 
-Mobile-first visual song editor: tap a syllable, tap a chord. Songs are
-section block cards (verse/chorus/bridge/intro/outro). It is the editor
-panel's default view; a quiet "‹/› ChordPro" toggle (top right,
-`#editor-tab-raw` / `#editor-tab-visual`) swaps to the raw textarea view and
-back. The raw ChordPro textarea remains the submission channel — the visual
-editor mirrors serialized ChordPro into `#editor-content` on every change,
-so preview/copy/download/submit in `editor.js` work unchanged.
+The editor panel is TWO PANES: the raw ChordPro textarea (`#editor-content`,
+left/top) and a live interactive preview (right/bottom, mounted on
+`#editor-preview-container` by `editor.js`). The textarea is THE document:
 
-New-song entry is content-first: the sidebar Add Song button (and `#add`)
-land directly here. The empty state is one big paste/type box with quiet
-"Upload a photo instead" (login-gated) and "Request a song" links supplied
-by main.js via `onUploadRequest`/`onSongRequest`. Metadata (title/artist/
-writer) is deferred behind a compact tap-to-expand line in editor.js.
-Transpose/key toolbar controls stay hidden (space reserved) until the
-document has at least one chord. Splits (blank-line or smart paste) animate
-the cards in and announce themselves via the undo toast.
+- The preview is a pure projection — `render(parseSong(textarea.value))`.
+- Every preview-side edit runs: parse current text → pure model op →
+  `serializeSong` → write textarea → re-parse → re-render. Metadata and
+  unknown directives ride through untouched (round-trip invariant), so the
+  panes can never disagree and no document state survives across edits.
+- Typing in the textarea re-renders the preview debounced (~200ms),
+  preserving the preview pane's scroll; preview edits write the textarea
+  without touching focus. Sync is one-way per edit (the preview's
+  `onChange` only refreshes editor chrome — key select, progressive
+  toolbar — never the preview itself), so there are no update loops.
+
+New-song entry is content-first: Add Song / `#add` land here with an empty
+textarea whose placeholder carries the paste/type guidance; pasting a chord
+sheet into the textarea smart-converts (pipeline in `../smart-paste.js`).
+The preview's empty state shows quiet "Upload a photo instead" (login-gated)
+and "Request a song" links supplied by main.js. Metadata (title/artist/
+writer) stays behind the compact tap-to-expand line; undo/redo buttons and
+the transpose/key/Nashville group (hidden until the song has a chord) sit
+in `#editor-toolbar` above the panes.
 
 ## Structure
 
@@ -23,11 +30,15 @@ the cards in and announce themselves via the undo toast.
 visual-editor/
 ├── model.js          # SongDocument: parseSong/serializeSong + pure edit ops
 ├── syllables.js      # view-layer tokenizer (tap targets); NOT in the model
+├── line-view.js      # shared line renderer: chord chips over syllable targets
 ├── palette.js        # docked chord palette (diatonic via chord-explorer/theory.js)
 ├── autoscroll.js     # keep the selection clear of the docked palette
-├── drag-reorder.js   # pure geometry for drag-and-drop card reorder
-├── section-card.js   # one section card (chords mode / lyrics mode)
-└── visual-editor.js  # orchestrator: selection, undo/redo, rendering
+├── preview.js        # LIVE orchestrator: selection, ghost entry, undo, render
+│
+│   # ---- PARKED (kept, not wired up; next round may revive on the preview) ----
+├── section-card.js   # card chrome: header, mode toggle, per-card menu, lyrics mode
+├── drag-reorder.js   # pure geometry for drag-and-drop reorder
+└── visual-editor.js  # old card-based orchestrator (add-section footer, drag, splits)
 ```
 
 ## Data model
@@ -41,11 +52,23 @@ Round-trip invariant (tested against 300 real works):
 whitespace, blank-line runs). Untouched chords keep their exact offsets;
 unknown directives ride through as passthrough sections / opaque lines.
 
+Section identity in the preview is positional: after every parse, ids are
+normalized to `ps-<index>`, so a selection survives re-parses as long as it
+still resolves (section/line/chord bounds are re-checked on refresh).
+
+## Preview rendering
+
+Sections render as label headers (`.ve-section-label`) over chord-chip
+lines (`.ve-psec`, chorus indented) — no cards, no per-section mode
+toggles. Passthrough blocks (ABC, unknown directives) render read-only.
+The preview is ALWAYS chord-interactive; there is no lyrics mode — lyrics
+are edited in the textarea.
+
 ## Interactions
 
 Tap a syllable → docked palette (diatonic chips, recents, More… picker with
-a free-text input for pointer users). Tap a chip → same palette in edit mode
-with ✕ Remove. Desktop extras:
+a free-text input). Tap a chip → same palette in edit mode with ✕ Remove.
+Every edit lands in the textarea as one undo step. Desktop extras:
 
 - **Ghost-chip typed entry**: with a syllable or chip selected, typing a
   chord letter (A–G) starts a ghost chip at the chord position — dashed,
@@ -53,58 +76,43 @@ with ✕ Remove. Desktop extras:
   are captured at the document keydown listener; no input is focused (so no
   mobile keyboard, and re-renders can't drop focus). ~800ms after the last
   keystroke a valid chord auto-commits through the same path as a palette
-  pick (`isValidChord` in `chords.js` gates it; invalid text idles in a
-  red invalid style and never commits). Enter commits immediately; Escape
-  cancels; Backspace edits. On an existing chord, backspacing to empty and
-  committing deletes it.
+  pick (`isValidChord` gates it; invalid text idles in a red invalid style
+  and never commits). Enter commits immediately; Escape cancels; Backspace
+  edits. On an existing chord, backspacing to empty and committing deletes.
 - **Resume grace**: typing again within ~1.5s of an auto-commit on the same
   chord resumes it ('E' commits, then 'b7' makes it Eb7, not a new B7).
 - **Space/Tab advance**: Space/Tab moves the selection to the next syllable
-  (Shift+Tab backward), wrapping across lines within the section — spam
-  Space past syllables that don't get chords, type where one does. During
+  (Shift+Tab backward), wrapping across lines within the section. During
   ghost entry, Space/Tab commits first, then advances.
-- **Hover ×**: on fine-pointer devices, hovering a chip reveals an ×
-  that removes the chord (undoable). Mobile keeps tap-chip → ✕ Remove.
-- **Shortcuts**: Cmd/Ctrl+Z undo, Shift+Cmd+Z / Ctrl+Y redo;
-  Delete/Backspace removes a selected chip (when no ghost is active).
+- **Hover ×**: on fine-pointer devices, hovering a chip reveals an × that
+  removes the chord (undoable). Mobile keeps tap-chip → ✕ Remove.
+- **Shortcuts**: Cmd/Ctrl+Z undo, Shift+Cmd+Z / Ctrl+Y redo — document-level
+  and only when focus is OUTSIDE editable targets; inside the textarea the
+  native textarea undo applies. Delete/Backspace removes a selected chip.
 
-Ghost state lives in the orchestrator and is projected into
-`renderSectionCard` via `ctx.ghost` — re-render safe, textContent only.
+Undo/redo is a capped stack of textarea snapshots owned by the preview;
+host edits that rewrite the textarea (toolbar transpose, key select) call
+`preview.pushUndoSnapshot(prevText)` first so they are one undo step too.
+The toolbar buttons (`#editor-undo`/`#editor-redo`) reflect stack state.
 
-## Section reorder (drag-and-drop)
-
-Every card header has a ⠿ drag handle (`.ve-drag-handle`, the only lift
-zone). Mouse/pen: pointerdown starts the drag; touch: ~350ms long-press
-lifts (early movement cancels, so swipes that start on the handle still
-scroll). Pointer Events + `setPointerCapture` — not HTML5 DnD (unreliable
-on touch). Cards do NOT re-render mid-drag: the lifted card follows the
-pointer via a transform, a `.ve-drop-indicator` line marks the prospective
-gap, and the page auto-scrolls near viewport edges (rAF loop). Drop applies
-`moveSectionTo(doc, sectionId, targetIndex)` as one undo step (no-op drops
-push nothing); Escape/pointercancel abort cleanly. Geometry (pointer Y +
-card rects → target index / indicator Y / scroll speed) is pure in
-`drag-reorder.js`. The ⋯ menu's Move up/down stays as the accessible
-fallback.
+Auto-scroll: after every render the selection is nudged clear of the docked
+palette (`autoscroll.js`), scoped to the preview pane (its own scroll
+container on wide screens; the page/fixed palette on narrow ones).
 
 ## Smart paste
 
-Both paste targets reuse the Raw editor's battle-tested pipeline, moved
-verbatim to `../smart-paste.js` (`convertPastedText`: ChordU clean → Ultimate
-Guitar clean → chords-over-lyrics conversion; `editor.js` re-exports it).
+Pasting into the TEXTAREA runs the raw pipeline in `../smart-paste.js`
+(ChordU clean → Ultimate Guitar clean → chords-over-lyrics conversion, with
+title/artist backfill into empty metadata fields), then the preview
+re-renders from the converted text. The parked card-mode paste targets
+(`.ve-empty-paste`, per-card lyrics textareas) are gone.
 
-- **Section card (✎ Lyrics textarea)**: a paste that converts to ChordPro
-  (or already is ChordPro) replaces that section via
-  `spliceSectionWithParsed` — one anonymous block populates the card in
-  place; multiple blank-line blocks or explicit `{sov}`/`{soc}` directives
-  splice in as separate cards. One undo step; a toast reports replaced
-  chords. Plain text falls through to the default textarea paste +
-  blur-commit path (guard rail: a paste that parses to no lyric/chord lines
-  is never intercepted).
-- **Empty editor**: the empty state shows a `.ve-empty-paste` textarea; a
-  whole-song paste (chord sheet, ChordPro, or plain lyrics) builds all cards
-  — metadata directives included — in one undo step. Typed lyrics build on
-  blur. ChordU/UG title/artist are reported to the host via `onImportMeta`,
-  which fills empty title/artist inputs (same as the Raw paste handler).
+## Parked (do not render, do not delete)
+
+`section-card.js` (card chrome, lyrics mode), `drag-reorder.js` geometry and
+the old orchestrator `visual-editor.js` (add-section footer, per-card menus,
+blank-line splits, drag) are unused but kept: the next round re-adds section
+drag-reorder and make-verse/chorus actions on the preview surface.
 
 ## Design docs
 
@@ -113,6 +121,7 @@ Guitar clean → chords-over-lyrics conversion; `editor.js` re-exports it).
 
 ## Tests
 
-- Unit: `docs/js/__tests__/visual-editor-*.test.js` (model, syllables,
-  palette, section card, orchestrator)
-- E2E: `e2e/visual-editor.spec.js`
+- Unit: `visual-editor-preview.test.js` (orchestrator behaviors on the new
+  surface), `editor-sync.test.js` (two-pane wiring in editor.js), plus the
+  unchanged model / syllables / palette / autoscroll / drag-reorder suites.
+- E2E: `e2e/visual-editor.spec.js` (two-pane flows), `e2e/editor.spec.js`.

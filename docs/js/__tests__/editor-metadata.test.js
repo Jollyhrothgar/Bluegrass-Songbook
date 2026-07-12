@@ -42,10 +42,9 @@ describe('metadata line wiring', () => {
                     <input type="text" id="editor-title">
                     <input type="text" id="editor-artist">
                 </div>
-                <div id="visual-editor-container"></div>
-                <div class="editor-main hidden" id="editor-raw-main">
+                <div class="editor-workspace">
                     <textarea id="editor-content"></textarea>
-                    <div id="editor-preview-content"></div>
+                    <div id="editor-preview-container"></div>
                 </div>
             </div>
         `;
@@ -53,11 +52,9 @@ describe('metadata line wiring', () => {
             editorTitle: document.getElementById('editor-title'),
             editorArtist: document.getElementById('editor-artist'),
             editorContent: document.getElementById('editor-content'),
-            editorPreviewContent: document.getElementById('editor-preview-content'),
+            editorPreviewContainer: document.getElementById('editor-preview-container'),
             metadataSummary: document.getElementById('metadata-summary'),
-            metadataFields: document.getElementById('metadata-fields'),
-            visualEditorContainer: document.getElementById('visual-editor-container'),
-            editorRawMain: document.getElementById('editor-raw-main')
+            metadataFields: document.getElementById('metadata-fields')
         };
     }
 

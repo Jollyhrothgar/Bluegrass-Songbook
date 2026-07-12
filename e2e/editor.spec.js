@@ -31,12 +31,18 @@ test.describe('Editor Access', () => {
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
 
-        // Straight to the editor: one big friendly box, no picker modal
+        // Straight to the editor: textarea + live preview, no picker modal
         await expect(page.locator('#editor-panel')).toBeVisible();
-        await expect(page.locator('.ve-empty-paste')).toBeVisible();
+        await expect(page.locator('#editor-content')).toBeVisible();
+        await expect(page.locator('#editor-content')).toHaveValue('');
+        await expect(page.locator('.ve-preview-empty')).toBeVisible();
         await expect(page.locator('#add-song-picker')).toBeHidden();
 
-        // quiet escape hatches under the box
+        // guidance lives in the textarea placeholder
+        expect(await page.locator('#editor-content').getAttribute('placeholder'))
+            .toMatch(/Paste or type your song/);
+
+        // quiet escape hatches in the preview empty state
         await expect(page.locator('.ve-link-upload')).toBeVisible();
         await expect(page.locator('.ve-link-request')).toBeVisible();
 
@@ -47,7 +53,7 @@ test.describe('Editor Access', () => {
 
     test('upload link is login-gated: logged out click prompts sign-in, no upload view', async ({ page }) => {
         await page.goto('/#add');
-        await expect(page.locator('.ve-empty-paste')).toBeVisible();
+        await expect(page.locator('.ve-preview-empty')).toBeVisible();
 
         // stub the sign-in redirect so the test can observe the gate
         await page.evaluate(() => {
@@ -71,8 +77,6 @@ test.describe('Editor Access', () => {
         await page.locator('#nav-add-song').click();
         // Add Song goes straight to the new-song editor (no picker modal)
 
-        // Visual tab is the default; switch to the Raw tab for textarea access
-        await page.locator('#editor-tab-raw').click();
 
         // Metadata fields are deferred behind the compact line — expand it
         await page.locator('#metadata-summary').click();
@@ -119,9 +123,9 @@ test.describe('Editor State Reset', () => {
         await openSidebar(page);
         await page.locator('#nav-add-song').click();
 
-        // Fresh new-song editor: empty-state paste box, no stale content
+        // Fresh new-song editor: empty panes, no stale content
         await expect(page.locator('#editor-panel')).toBeVisible();
-        await expect(page.locator('.ve-empty-paste')).toBeVisible();
+        await expect(page.locator('.ve-preview-empty')).toBeVisible();
         await expect(page.locator('#metadata-summary')).toContainText('Untitled song');
         await expect(page.locator('#editor-title')).toHaveValue('');
         await expect(page.locator('#editor-content')).toHaveValue('');
@@ -132,8 +136,7 @@ test.describe('Editor State Reset', () => {
         await page.goto('/#add');
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
-        // Type a draft in the Raw tab
-        await page.locator('#editor-tab-raw').click();
+        // Type a draft into the textarea
         await page.locator('#editor-content').fill('[G]Working on my draft');
 
         // Leave for home, then come back via Add Song
@@ -174,8 +177,6 @@ test.describe('Editor Content Input', () => {
         await page.locator('#nav-add-song').click();
         // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
-        // Visual tab is the default; switch to the Raw tab for textarea access
-        await page.locator('#editor-tab-raw').click();
     });
 
     test('can enter title and it shows on the compact metadata line', async ({ page }) => {
@@ -209,42 +210,25 @@ test.describe('Editor Preview', () => {
         await page.locator('#nav-add-song').click();
         // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
-        // Visual tab is the default; switch to the Raw tab for textarea access
-        await page.locator('#editor-tab-raw').click();
     });
 
     test('preview updates when content changes', async ({ page }) => {
         const contentArea = page.locator('#editor-content');
-        const previewArea = page.locator('#editor-preview-content');
+        const previewArea = page.locator('#editor-preview-container');
 
-        // Enter ChordPro content
+        // Enter ChordPro content (preview re-renders ~200ms after typing)
         await contentArea.fill('[G]Test [C]line with [D]chords');
 
-        // Wait for preview to update
-        await page.waitForTimeout(300);
-
-        // Preview should show rendered content
-        if (await previewArea.isVisible().catch(() => false)) {
-            const previewText = await previewArea.textContent();
-            expect(previewText).toContain('Test');
-        }
+        // Interactive preview shows the rendered lyrics
+        await expect(previewArea).toContainText('Test');
     });
 
-    test('chords are highlighted in preview', async ({ page }) => {
+    test('chords render as interactive chips in the preview', async ({ page }) => {
         const contentArea = page.locator('#editor-content');
-
-        // Enter content with chords
         await contentArea.fill('[G]Amazing [C]Grace');
 
-        // Wait for preview update
-        await page.waitForTimeout(300);
-
-        // Check for chord highlighting (chords have chord class)
-        const chordSpans = page.locator('.editor-preview .chord, #editor-preview-content .chord');
-        const count = await chordSpans.count();
-
-        // Preview should render chords
-        expect(count >= 0).toBeTruthy(); // May be 0 if preview renders differently
+        await expect(page.locator('#editor-preview-container .ve-chip')).toHaveCount(2);
+        await expect(page.locator('#editor-preview-container .ve-chip').first()).toHaveText('G');
     });
 });
 
@@ -256,8 +240,6 @@ test.describe('ChordPro Conversion', () => {
         await page.locator('#nav-add-song').click();
         // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
-        // Visual tab is the default; switch to the Raw tab for textarea access
-        await page.locator('#editor-tab-raw').click();
     });
 
     test('paste with chord-above-lyrics format triggers conversion prompt', async ({ page }) => {
@@ -348,8 +330,6 @@ test.describe('Editor Hints', () => {
         await page.locator('#nav-add-song').click();
         // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
-        // Visual tab is the default; switch to the Raw tab for textarea access
-        await page.locator('#editor-tab-raw').click();
 
         // Click hints button
         const hintsBtn = page.locator('#hints-btn, .hints-btn, [title*="hint"]');
@@ -379,8 +359,6 @@ test.describe('Editor Copy Function', () => {
         await page.locator('#nav-add-song').click();
         // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
-        // Visual tab is the default; switch to the Raw tab for textarea access
-        await page.locator('#editor-tab-raw').click();
 
         // Enter content
         const contentArea = page.locator('#editor-content');
@@ -408,8 +386,6 @@ test.describe('Editor Nashville Mode', () => {
         await page.locator('#nav-add-song').click();
         // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
-        // Visual tab is the default; switch to the Raw tab for textarea access
-        await page.locator('#editor-tab-raw').click();
 
         // Enter content with key
         const contentArea = page.locator('#editor-content');
@@ -425,12 +401,10 @@ test.describe('Editor Nashville Mode', () => {
             await toggle.click();
             await page.waitForTimeout(300);
 
-            // Preview should show Nashville numbers (I, IV, V instead of G, C, D)
-            const previewArea = page.locator('#editor-preview-content');
+            // Preview chips should show Nashville numbers (I, IV, V)
+            const previewArea = page.locator('#editor-preview-container');
             if (await previewArea.isVisible()) {
-                const previewText = await previewArea.textContent();
-                // Nashville numbers should appear
-                expect(previewText).toMatch(/I|IV|V/);
+                await expect(previewArea.locator('.ve-chip').first()).toHaveText(/I|IV|V/);
             }
         }
     });
@@ -445,8 +419,6 @@ test.describe('Editor Validation', () => {
         await page.locator('#nav-add-song').click();
         // Add Song goes straight to the new-song editor (no picker modal)
         await expect(page.locator('#editor-panel')).toBeVisible();
-        // Visual tab is the default; switch to the Raw tab for textarea access
-        await page.locator('#editor-tab-raw').click();
 
         // Enter content but no title
         const contentArea = page.locator('#editor-content');

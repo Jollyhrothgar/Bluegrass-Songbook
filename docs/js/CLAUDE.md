@@ -33,7 +33,7 @@ docs/
 │   │   ├── tab-player.js # Interactive tab player with playback
 │   │   └── tab-ascii.js # ASCII tab format
 │   ├── chord-explorer/ # Chord exploration tool (standalone)
-│   ├── visual-editor/  # Visual song editor (tap-to-place chords, section cards)
+│   ├── visual-editor/  # Two-pane editor: interactive preview + ChordPro model
 │   ├── otf-editor/     # Tablature editor (design phase)
 │   └── __tests__/      # Vitest unit tests
 ├── css/style.css       # Dark/light themes, responsive layout
@@ -255,16 +255,21 @@ Multi-track tabs (e.g., ensemble arrangements with guitar, banjo, mandolin, bass
 
 ### Editor (Add Song / Edit Song)
 
-The editor has two tabs: **Visual** (default — tap-to-place chord editing,
-section cards; see `visual-editor/CLAUDE.md`) and **Raw ChordPro** (textarea +
-smart paste). The visual editor mirrors serialized ChordPro into
-`#editor-content`, so all submit/preview flows read the textarea regardless
-of tab.
+Two-pane editor: the raw ChordPro textarea (`#editor-content`, left) beside
+a live INTERACTIVE preview (`#editor-preview-container`, right; stacked
+below ~800px). The textarea is THE document — the preview renders
+`parseSong(textarea.value)` and every preview-side edit (tap a syllable →
+palette/typed chord, tap a chip → change/delete) writes serialized ChordPro
+back into the textarea. See `visual-editor/CLAUDE.md` for the preview
+orchestrator. Submit/copy/download flows read the textarea unchanged; smart
+paste converts chord sheets on paste into the textarea. Above the panes:
+compact metadata line, undo/redo, and a progressive transpose/key/Nashville
+group that appears once the song has a chord.
 
 Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
 - `editorConvertToChordPro()` - Smart paste: chord-above-lyrics → ChordPro
-- `updateEditorPreview()` - Live preview while editing
+- `updateEditorPreview()` - Refresh chrome (key/toolbar) + re-render preview
 - `submitSongToGitHub()` - Create GitHub issue for submission
 
 ### Sidebar Navigation

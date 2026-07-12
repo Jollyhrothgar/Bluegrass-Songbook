@@ -39,14 +39,13 @@ function buildDom() {
                     <textarea id="editor-comment"></textarea>
                 </div>
             </div>
-            <div class="editor-tabs">
-                <button id="editor-tab-visual" class="editor-tab active" type="button">Visual</button>
-                <button id="editor-tab-raw" class="editor-tab" type="button">Raw ChordPro</button>
-            </div>
-            <div id="visual-editor-container" class="visual-editor-container"></div>
-            <div class="editor-main hidden" id="editor-raw-main">
-                <textarea id="editor-content"></textarea>
-                <div id="editor-preview-content"></div>
+            <div class="editor-workspace">
+                <div class="editor-pane editor-pane-raw">
+                    <textarea id="editor-content"></textarea>
+                </div>
+                <div class="editor-pane editor-pane-preview">
+                    <div id="editor-preview-container"></div>
+                </div>
             </div>
             <div id="editor-status" class="save-status"></div>
             <button id="editor-submit-btn">Submit to Songbook</button>
@@ -64,10 +63,7 @@ function buildDom() {
         editorSubmitBtn: document.getElementById('editor-submit-btn'),
         metadataSummary: document.getElementById('metadata-summary'),
         metadataFields: document.getElementById('metadata-fields'),
-        editorTabVisual: document.getElementById('editor-tab-visual'),
-        editorTabRaw: document.getElementById('editor-tab-raw'),
-        visualEditorContainer: document.getElementById('visual-editor-container'),
-        editorRawMain: document.getElementById('editor-raw-main')
+        editorPreviewContainer: document.getElementById('editor-preview-container')
     };
 }
 
@@ -91,10 +87,9 @@ function expectFreshNewSongEditor() {
     expect(refs.editorSubmitBtn.textContent).toBe('Submit to Songbook');
     expect(editMode).toBe(false);
     expect(editingSongId).toBe(null);
-    // Visual tab active with the empty-state paste box (no stale sections)
-    expect(refs.editorTabVisual.classList.contains('active')).toBe(true);
-    expect(refs.visualEditorContainer.querySelector('.ve-empty-paste')).not.toBe(null);
-    expect(refs.visualEditorContainer.querySelectorAll('.ve-section').length).toBe(0);
+    // preview shows the empty state (no stale sections)
+    expect(refs.editorPreviewContainer.querySelector('.ve-preview-empty')).not.toBe(null);
+    expect(refs.editorPreviewContainer.querySelectorAll('.ve-psec').length).toBe(0);
 }
 
 describe('prepareAddSongView', () => {
@@ -147,8 +142,8 @@ describe('sequential edit sessions and reverse leak', () => {
         expect(refs.editorTitle.value).toBe('Blue Moon of Kentucky');
         expect(refs.editorContent.value).toBe(SONG_B.content);
         expect(editingSongId).toBe('blue-moon-of-kentucky');
-        // visual editor shows B's lyrics, not A's
-        const text = refs.visualEditorContainer.textContent;
+        // the preview shows B's lyrics, not A's
+        const text = refs.editorPreviewContainer.textContent;
         expect(text).toContain('Kentucky');
         expect(text).not.toContain('cheatin');
     });
@@ -160,7 +155,7 @@ describe('sequential edit sessions and reverse leak', () => {
         enterEditMode(SONG_A);
         expect(refs.editorTitle.value).toBe('Your Cheatin Heart');
         expect(refs.editorContent.value).toBe(SONG_A.content);
-        const text = refs.visualEditorContainer.textContent;
+        const text = refs.editorPreviewContainer.textContent;
         expect(text).toContain('cheatin');
         expect(text).not.toContain('Half-finished');
     });

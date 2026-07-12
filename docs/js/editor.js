@@ -7,12 +7,12 @@ import {
     editingSongId, setEditingSongId,
     editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
-import { escapeHtml, generateSlug } from './utils.js';
+import { generateSlug } from './utils.js';
 import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
 import { openSuperUserRequestModal } from './superuser-request.js';
-import { createVisualEditor } from './visual-editor/visual-editor.js';
+import { createInteractivePreview } from './visual-editor/preview.js';
 import {
     cleanChordUPaste, cleanUltimateGuitarPaste,
     editorConvertToChordPro, editorDetectAndConvert
@@ -49,7 +49,6 @@ let editorTitleEl = null;
 let editorArtistEl = null;
 let editorWriterEl = null;
 let editorContentEl = null;
-let editorPreviewContentEl = null;
 let editorCopyBtnEl = null;
 let editorSaveBtnEl = null;
 let editorSubmitBtnEl = null;
@@ -71,13 +70,12 @@ let metadataFieldsEl = null;
 let onUploadRequestCb = null;
 let onSongRequestCb = null;
 
-// Visual | Raw tab state
-let editorTabVisualEl = null;
-let editorTabRawEl = null;
-let visualEditorContainerEl = null;
-let editorRawMainEl = null;
-let visualEditor = null;
-let lastMirrored = null;
+// Two-pane interactive preview state
+let editorPreviewContainerEl = null;
+let editorUndoBtnEl = null;
+let editorRedoBtnEl = null;
+let editorTransposeGroupEl = null;
+let preview = null;
 // True once enterEditMode has run, until the editor is reset to a fresh
 // new-song state. Unlike editMode/editingSongId this survives exitEditMode,
 // so entering Add Song later can tell "abandoned edit" from "unsaved draft".
@@ -196,14 +194,10 @@ export function enterEditMode(song, options = {}) {
         }));
     }
 
-    // Trigger preview update
-    updateEditorPreview();
-
-    // If the Visual tab is active, reload the visual editor from the textarea
-    if (visualEditor && editorTabVisualEl?.classList.contains('active')) {
-        visualEditor.loadChordPro(editorContentEl?.value || '');
-        lastMirrored = editorContentEl?.value || '';
-    }
+    // Refresh key detection / toolbar and re-render the preview with a
+    // clean undo history for the new editing session
+    updateEditorChrome();
+    if (preview) preview.reset();
 }
 
 /**
@@ -246,15 +240,8 @@ export function resetEditorForNewSong() {
     updateMetadataSummary();
     setMetadataExpanded(false);
 
-    if (visualEditor) {
-        visualEditor.loadChordPro('');
-        lastMirrored = '';
-    }
-    // Fresh sessions start on the Visual tab's empty-state paste box
-    if (editorTabRawEl?.classList.contains('active')) {
-        activateEditorTab('visual');
-    }
-    updateEditorPreview();
+    updateEditorChrome();
+    if (preview) preview.reset();
 }
 
 /**
@@ -340,47 +327,6 @@ function editorParseContent(content) {
 }
 
 /**
- * Render a line in the editor preview
- */
-function editorRenderLine(line) {
-    const chords = [];
-    let lyrics = '';
-    const regex = /\[([^\]]+)\]/g;
-    let match;
-    let lastIndex = 0;
-
-    while ((match = regex.exec(line)) !== null) {
-        lyrics += line.slice(lastIndex, match.index);
-        chords.push({ chord: match[1], position: lyrics.length });
-        lastIndex = regex.lastIndex;
-    }
-    lyrics += line.slice(lastIndex);
-
-    if (chords.length === 0) {
-        return `<div class="song-line"><div class="lyrics-line">${escapeHtml(lyrics)}</div></div>`;
-    }
-
-    let chordLine = '';
-    let lastPos = 0;
-
-    for (const { chord, position } of chords) {
-        const displayChord = editorNashvilleMode && editorDetectedKey
-            ? toNashville(chord, editorDetectedKey)
-            : chord;
-        const spaces = Math.max(0, position - lastPos);
-        chordLine += ' '.repeat(spaces) + displayChord;
-        lastPos = position + displayChord.length;
-    }
-
-    return `
-        <div class="song-line">
-            <div class="chord-line">${escapeHtml(chordLine)}</div>
-            <div class="lyrics-line">${escapeHtml(lyrics)}</div>
-        </div>
-    `;
-}
-
-/**
  * Update the editor key select dropdown
  */
 function updateEditorKeySelect(detectedKey, detectedMode) {
@@ -411,20 +357,16 @@ function updateEditorKeySelect(detectedKey, detectedMode) {
 }
 
 /**
- * Update editor preview
+ * Refresh the editor chrome that derives from the textarea content:
+ * detected key + key select, and the progressive toolbar (transpose/key
+ * appear once the document has a chord). Does NOT touch the preview —
+ * preview-originated edits call this via onChange after they have already
+ * rendered themselves.
  */
-export function updateEditorPreview() {
-    if (!editorContentEl || !editorPreviewContentEl) return;
+function updateEditorChrome() {
+    if (!editorContentEl) return;
 
-    const title = editorTitleEl?.value.trim() || '';
-    const artist = editorArtistEl?.value.trim() || '';
     const content = editorContentEl.value;
-
-    if (!content.trim()) {
-        editorPreviewContentEl.innerHTML = '<p class="preview-placeholder">Enter a song to see preview...</p>';
-        return;
-    }
-
     const chords = extractChords(content);
     const detected = detectKey(chords);
 
@@ -434,30 +376,24 @@ export function updateEditorPreview() {
         updateEditorKeySelect(detected.key, detected.mode);
     }
 
-    const key = editorDetectedKey;
-
-    const sections = editorParseContent(content);
-
-    let html = '<div class="song-header">';
-    if (title) html += `<h2 class="song-title">${escapeHtml(title)}</h2>`;
-    const metaParts = [];
-    if (artist) metaParts.push(artist);
-    if (key) metaParts.push(`Key: ${key}`);
-    if (metaParts.length) html += `<div class="song-meta">${escapeHtml(metaParts.join(' | '))}</div>`;
-    html += '</div>';
-
-    for (const section of sections) {
-        const indentClass = section.type === 'chorus' ? 'section-indent' : '';
-        html += `<div class="song-section ${indentClass}">`;
-        html += `<div class="section-label">${escapeHtml(section.label)}</div>`;
-        html += '<div class="section-content">';
-        for (const line of section.lines) {
-            html += editorRenderLine(line);
-        }
-        html += '</div></div>';
+    // progressive toolbar: transpose/key stay out of the way until the
+    // document actually has a chord (space is reserved — no layout jump)
+    if (editorTransposeGroupEl) {
+        editorTransposeGroupEl.classList.toggle('ve-gone', chords.length === 0);
     }
+}
 
-    editorPreviewContentEl.innerHTML = html;
+/**
+ * Update the editor chrome and re-render the interactive preview from the
+ * textarea. Pass { immediate: false } for typing (debounced re-render that
+ * preserves the preview scroll); everything else re-renders immediately.
+ */
+export function updateEditorPreview(opts = {}) {
+    const { immediate = true } = opts;
+    updateEditorChrome();
+    if (!preview) return;
+    if (immediate) preview.refresh();
+    else preview.scheduleRefresh();
 }
 
 /**
@@ -532,62 +468,33 @@ export function closeHints() {
 }
 
 /**
- * Activate the Visual or Raw editor tab.
- * The textarea is the source of truth: switching to Visual reloads it into
- * the visual editor only if it differs from the last mirrored string.
+ * Mount the interactive preview on the right-hand pane. The textarea is THE
+ * document: the preview renders parseSong(textarea.value), and every
+ * preview-side edit writes serialized ChordPro back into the textarea
+ * (one step on the preview's undo stack). Submit/copy/download flows keep
+ * reading the textarea unchanged.
  */
-function activateEditorTab(which) {
-    const visual = which === 'visual';
-    if (editorTabVisualEl) {
-        editorTabVisualEl.classList.toggle('active', visual);
-        // the toggle shows only the view you can switch TO
-        editorTabVisualEl.classList.toggle('hidden', visual);
-    }
-    if (editorTabRawEl) {
-        editorTabRawEl.classList.toggle('active', !visual);
-        editorTabRawEl.classList.toggle('hidden', !visual);
-    }
-    if (visualEditorContainerEl) visualEditorContainerEl.classList.toggle('hidden', !visual);
-    if (editorRawMainEl) editorRawMainEl.classList.toggle('hidden', visual);
-    if (visual) {
-        if (visualEditor && editorContentEl && editorContentEl.value !== lastMirrored) {
-            visualEditor.loadChordPro(editorContentEl.value);
-            lastMirrored = editorContentEl.value;
-        }
-        trackEditor('visual_open', editingSongId || 'new');
-    }
-}
-
-/**
- * Create the visual editor and mirror its output into the raw textarea.
- * Submit/copy/download flows keep reading the textarea unchanged.
- */
-function initVisualEditor() {
-    if (!visualEditorContainerEl) return;
-    visualEditor = createVisualEditor({
-        container: visualEditorContainerEl,
-        onChange(chordpro) {
-            lastMirrored = chordpro;
-            if (editorContentEl) {
-                editorContentEl.value = chordpro;
-                updateEditorPreview();
-            }
-        },
-        onImportMeta({ title, artist }) {
-            // same behavior as the Raw paste handler: fill only empty fields
-            if (title && editorTitleEl && !editorTitleEl.value.trim()) {
-                editorTitleEl.value = title;
-            }
-            if (artist && editorArtistEl && !editorArtistEl.value.trim()) {
-                editorArtistEl.value = artist;
-            }
-            updateMetadataSummary();
+function initInteractivePreview() {
+    if (!editorPreviewContainerEl || !editorContentEl) return;
+    preview = createInteractivePreview({
+        container: editorPreviewContainerEl,
+        textarea: editorContentEl,
+        undoBtn: editorUndoBtnEl,
+        redoBtn: editorRedoBtnEl,
+        // Nashville display mode: chips show numbers, edits stay chords
+        displayChord: (chord) => (editorNashvilleMode && editorDetectedKey)
+            ? toNashville(chord, editorDetectedKey)
+            : chord,
+        onChange() {
+            // a preview edit wrote the textarea (it has already re-rendered
+            // itself): refresh only the derived chrome, never the preview —
+            // this one-way notification is what prevents update loops
+            updateEditorChrome();
         },
         onUploadRequest() { if (onUploadRequestCb) onUploadRequestCb(); },
         onSongRequest() { if (onSongRequestCb) onSongRequestCb(); }
     });
-    visualEditor.loadChordPro(editorContentEl?.value || '');
-    lastMirrored = editorContentEl?.value || '';
+    preview.refresh();
 }
 
 /**
@@ -600,7 +507,6 @@ export function initEditor(options) {
         editorArtist,
         editorWriter,
         editorContent,
-        editorPreviewContent,
         editorCopyBtn,
         editorSaveBtn,
         editorSubmitBtn,
@@ -621,10 +527,10 @@ export function initEditor(options) {
         metadataFields,
         onUploadRequest,
         onSongRequest,
-        editorTabVisual,
-        editorTabRaw,
-        visualEditorContainer,
-        editorRawMain,
+        editorPreviewContainer,
+        editorUndoBtn,
+        editorRedoBtn,
+        editorTransposeGroup,
         navSearch,
         navAddSong,
         navFavorites,
@@ -637,7 +543,6 @@ export function initEditor(options) {
     editorArtistEl = editorArtist;
     editorWriterEl = editorWriter;
     editorContentEl = editorContent;
-    editorPreviewContentEl = editorPreviewContent;
     editorCopyBtnEl = editorCopyBtn;
     editorSaveBtnEl = editorSaveBtn;
     editorSubmitBtnEl = editorSubmitBtn;
@@ -663,10 +568,10 @@ export function initEditor(options) {
     navFavoritesEl = navFavorites;
     resultsDivEl = resultsDiv;
     songViewEl = songView;
-    editorTabVisualEl = editorTabVisual;
-    editorTabRawEl = editorTabRaw;
-    visualEditorContainerEl = visualEditorContainer;
-    editorRawMainEl = editorRawMain;
+    editorPreviewContainerEl = editorPreviewContainer;
+    editorUndoBtnEl = editorUndoBtn;
+    editorRedoBtnEl = editorRedoBtn;
+    editorTransposeGroupEl = editorTransposeGroup;
 
     // Compact metadata line: tap to expand/collapse the full fields
     if (metadataSummaryEl) {
@@ -678,11 +583,9 @@ export function initEditor(options) {
         updateMetadataSummary();
     }
 
-    // Visual | Raw tabs (visual editor mirrors into the textarea)
-    initVisualEditor();
-    if (editorTabVisualEl) editorTabVisualEl.addEventListener('click', () => activateEditorTab('visual'));
-    if (editorTabRawEl) editorTabRawEl.addEventListener('click', () => activateEditorTab('raw'));
-    activateEditorTab('visual');   // visual is the default
+    // Two-pane editor: interactive preview over the raw textarea
+    initInteractivePreview();
+    updateEditorChrome();
 
     // Edit song button
     // window.__editInterceptor is set by work-view.js for placeholders
@@ -759,11 +662,12 @@ export function initEditor(options) {
             }, 0);
         });
 
-        editorContentEl.addEventListener('input', updateEditorPreview);
+        // typing re-renders the preview debounced, preserving its scroll
+        editorContentEl.addEventListener('input', () => updateEditorPreview({ immediate: false }));
     }
 
-    if (editorTitleEl) editorTitleEl.addEventListener('input', () => { updateMetadataSummary(); updateEditorPreview(); });
-    if (editorArtistEl) editorArtistEl.addEventListener('input', () => { updateMetadataSummary(); updateEditorPreview(); });
+    if (editorTitleEl) editorTitleEl.addEventListener('input', updateMetadataSummary);
+    if (editorArtistEl) editorArtistEl.addEventListener('input', updateMetadataSummary);
 
     if (editorNashvilleEl) {
         editorNashvilleEl.addEventListener('change', (e) => {
@@ -779,6 +683,7 @@ export function initEditor(options) {
             if (selected && editorDetectedKey && selected !== editorDetectedKey && editorContentEl) {
                 const semitones = getSemitonesBetweenKeys(editorDetectedKey, selected);
                 if (semitones !== 0) {
+                    if (preview) preview.pushUndoSnapshot(editorContentEl.value);
                     editorContentEl.value = editorTransposeContent(editorContentEl.value, semitones);
                 }
             }
@@ -800,6 +705,7 @@ export function initEditor(options) {
         editorTransposeUpEl.addEventListener('click', () => {
             if (editorContentEl) {
                 editorKeyPinned = false;
+                if (preview) preview.pushUndoSnapshot(editorContentEl.value);
                 editorContentEl.value = editorTransposeContent(editorContentEl.value, 1);
                 updateEditorPreview();
             }
@@ -810,6 +716,7 @@ export function initEditor(options) {
         editorTransposeDownEl.addEventListener('click', () => {
             if (editorContentEl) {
                 editorKeyPinned = false;
+                if (preview) preview.pushUndoSnapshot(editorContentEl.value);
                 editorContentEl.value = editorTransposeContent(editorContentEl.value, -1);
                 updateEditorPreview();
             }

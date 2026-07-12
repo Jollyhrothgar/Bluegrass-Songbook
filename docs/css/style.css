@@ -9652,21 +9652,98 @@ body.fullscreen-mode::after {
     font-size: 0.85em;
 }
 .metadata-summary.expanded::after { content: ' \25B4'; }
-.editor-view-toggle { flex-shrink: 0; }
-.editor-view-btn {
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    cursor: pointer;
-    font-size: 0.85rem;
-    padding: 0.4rem 0.5rem;
-    border-radius: var(--radius-md, 6px);
-}
-.editor-view-btn:hover { color: var(--text); background: var(--bg-secondary); }
-.editor-view-btn.hidden { display: none; }
-.editor-view-glyph { font-family: monospace; font-weight: 700; }
 
-/* ===== Visual editor ===== */
+/* ===== Two-pane editor: raw ChordPro (left) + interactive preview (right) ===== */
+.editor-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0 0.6rem;
+    flex-wrap: wrap;
+}
+.editor-toolbar-btn {
+    min-height: 40px;
+    min-width: 44px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    cursor: pointer;
+    font-size: var(--font-base, 0.9rem);
+}
+.editor-toolbar-btn:hover:not(:disabled) { border-color: var(--accent); }
+.editor-toolbar-btn:disabled { opacity: 0.45; cursor: default; }
+.editor-toolbar-spacer { flex: 1; }
+
+.editor-workspace {
+    display: grid;
+    grid-template-columns: 45fr 55fr;
+    gap: 1rem;
+    align-items: stretch;
+    margin-bottom: 0.75rem;
+}
+.editor-pane-raw {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+}
+.editor-pane-raw #editor-content { flex: 1; min-height: 0; }
+.editor-pane-raw .editor-help-row { margin-top: 0.5rem; }
+.editor-pane-preview {
+    position: relative;
+    min-width: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    background: var(--bg);
+}
+@media (min-width: 800px) {
+    /* side-by-side: panes share a fixed height; the preview scrolls
+       internally so the docked palette stays in view */
+    .editor-workspace { height: clamp(420px, calc(100vh - 300px), 900px); }
+    .editor-pane-preview { overflow-y: auto; }
+}
+@media (max-width: 799.98px) {
+    /* stacked: textarea on top, preview flows with the page */
+    .editor-workspace { grid-template-columns: 1fr; }
+    .editor-pane-raw #editor-content { min-height: 35vh; }
+    /* the palette docks to the viewport when the pane doesn't scroll */
+    .ve-preview .ve-palette { position: fixed; left: 0; right: 0; bottom: 0; }
+}
+
+/* Interactive preview: section headers + chord chips over syllables */
+.ve-preview-body { padding: 0.6rem 0.75rem 30vh; }
+/* the open root+quality picker is much taller than the bare palette: give
+   enough scroll room that the line being edited can sit above it */
+.ve-preview:has(.ve-picker:not(.hidden)) .ve-preview-body {
+    padding-bottom: max(75vh, 600px);
+}
+.ve-psec { margin-bottom: 1.1rem; }
+.ve-section-label {
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+.ve-psec-chorus .ve-psec-body { padding-left: 1rem; }
+.ve-psec-passthrough .ve-passthrough-raw {
+    border-left: 3px solid var(--border);
+    padding-left: 0.6rem;
+}
+.ve-preview-empty {
+    padding: 2rem 1rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+.ve-preview-empty-hint { margin: 0 0 1rem; font-style: italic; }
+.ve-preview-empty .ve-empty-links { justify-content: center; }
+@media (max-width: 800px) {
+    .ve-psec-body { font-size: 1.05rem; }
+}
+
+/* ===== Visual editor (card modules parked; shared ve-* line styles below) ===== */
 .visual-editor-container.hidden { display: none; }
 .ve-root { padding-bottom: 30vh; } /* room above the docked palette */
 /* the open root+quality picker is much taller than the bare palette: give

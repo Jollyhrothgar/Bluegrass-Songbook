@@ -156,7 +156,6 @@ const editorTitle = document.getElementById('editor-title');
 const editorArtist = document.getElementById('editor-artist');
 const editorWriter = document.getElementById('editor-writer');
 const editorContent = document.getElementById('editor-content');
-const editorPreviewContent = document.getElementById('editor-preview-content');
 const editorCopyBtn = document.getElementById('editor-copy');
 const editorSaveBtn = document.getElementById('editor-save');
 const editorSubmitBtn = document.getElementById('editor-submit');
@@ -172,12 +171,12 @@ const autoDetectCheckbox = document.getElementById('editor-auto-detect');
 const editorTransposeUp = document.getElementById('editor-transpose-up');
 const editorTransposeDown = document.getElementById('editor-transpose-down');
 const editorKeySelect = document.getElementById('editor-key-select');
-const editorTabVisual = document.getElementById('editor-tab-visual');
-const editorTabRaw = document.getElementById('editor-tab-raw');
 const metadataSummary = document.getElementById('metadata-summary');
 const metadataFields = document.getElementById('metadata-fields');
-const visualEditorContainer = document.getElementById('visual-editor-container');
-const editorRawMain = document.getElementById('editor-raw-main');
+const editorPreviewContainer = document.getElementById('editor-preview-container');
+const editorUndoBtn = document.getElementById('editor-undo');
+const editorRedoBtn = document.getElementById('editor-redo');
+const editorTransposeGroup = document.getElementById('editor-transpose-group');
 
 // Tag dropdown
 const tagDropdownBtn = document.getElementById('tag-dropdown-btn');
@@ -2543,7 +2542,6 @@ function init() {
         editorArtist,
         editorWriter,
         editorContent,
-        editorPreviewContent,
         editorCopyBtn,
         editorSaveBtn,
         editorSubmitBtn,
@@ -2564,10 +2562,10 @@ function init() {
         metadataFields,
         onUploadRequest: () => goToDocUpload(),
         onSongRequest: () => openAddSongPicker({ mode: 'request' }),
-        editorTabVisual,
-        editorTabRaw,
-        visualEditorContainer,
-        editorRawMain,
+        editorPreviewContainer,
+        editorUndoBtn,
+        editorRedoBtn,
+        editorTransposeGroup,
         navSearch,
         navAddSong,
         navFavorites,

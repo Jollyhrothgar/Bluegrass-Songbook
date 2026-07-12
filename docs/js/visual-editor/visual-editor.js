@@ -1,3 +1,10 @@
+// PARKED (not wired up since the two-pane editor pivot): the card-based
+// visual editor orchestrator — section cards, add-section footer, per-card
+// menus, lyrics mode, drag-reorder. The live surface is now preview.js
+// (interactive preview over the raw textarea); its ghost-entry, palette and
+// advance machinery originated here. Kept for the next round, when section
+// drag / type changes return on the preview.
+//
 // Visual editor orchestrator: owns the SongDocument, selection, undo/redo,
 // and re-rendering. Fires onChange(chordpro) after every model change so the
 // host can mirror into the raw textarea.
