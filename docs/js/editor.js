@@ -78,6 +78,10 @@ let visualEditorContainerEl = null;
 let editorRawMainEl = null;
 let visualEditor = null;
 let lastMirrored = null;
+// True once enterEditMode has run, until the editor is reset to a fresh
+// new-song state. Unlike editMode/editingSongId this survives exitEditMode,
+// so entering Add Song later can tell "abandoned edit" from "unsaved draft".
+let lastSessionWasEdit = false;
 
 // Other DOM references
 let navSearchEl = null;
@@ -150,6 +154,7 @@ export function enterEditMode(song, options = {}) {
 
     setEditMode(true);
     setEditingSongId(song.id);
+    lastSessionWasEdit = true;
     trackEditor('edit', song.id);
 
     // Reset key pin state for new edit session
@@ -211,6 +216,57 @@ export function exitEditMode() {
     if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
     if (editorCommentEl) editorCommentEl.value = '';
     if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
+}
+
+/**
+ * Fully reset the editor panel to a fresh new-song state: clear metadata
+ * fields and content, drop any edit-session state, and reload the visual
+ * editor with empty content (which also clears its undo/redo stacks).
+ */
+export function resetEditorForNewSong() {
+    setEditMode(false);
+    setEditingSongId(null);
+    lastSessionWasEdit = false;
+    editorKeyPinned = false;
+    editorDetectedKey = null;
+
+    if (editorTitleEl) editorTitleEl.value = '';
+    if (editorArtistEl) editorArtistEl.value = '';
+    if (editorWriterEl) editorWriterEl.value = '';
+    if (editorContentEl) editorContentEl.value = '';
+    if (editorCommentEl) editorCommentEl.value = '';
+    if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
+    if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
+    if (editorStatusEl) {
+        editorStatusEl.textContent = '';
+        editorStatusEl.className = 'save-status';
+    }
+    updateEditorKeySelect(null);
+
+    updateMetadataSummary();
+    setMetadataExpanded(false);
+
+    if (visualEditor) {
+        visualEditor.loadChordPro('');
+        lastMirrored = '';
+    }
+    // Fresh sessions start on the Visual tab's empty-state paste box
+    if (editorTabRawEl?.classList.contains('active')) {
+        activateEditorTab('visual');
+    }
+    updateEditorPreview();
+}
+
+/**
+ * Called when navigating to the Add Song view. If the previous editor
+ * session was an edit of an existing song, reset to a fresh new-song editor
+ * so stale content doesn't leak in. An unsaved new-song draft is preserved
+ * (returning to your in-progress song is a feature, not a leak).
+ */
+export function prepareAddSongView() {
+    if (editMode || editingSongId || lastSessionWasEdit) {
+        resetEditorForNewSong();
+    }
 }
 
 /**

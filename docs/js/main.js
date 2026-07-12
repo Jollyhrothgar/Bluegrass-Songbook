@@ -46,7 +46,7 @@ import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCur
 import { openWork, renderWorkView, getCurrentWork, getActiveItemRef } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
-import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints } from './editor.js';
+import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, isPlaceholder, isTabOnlyWork, hasMultipleParts, parseItemRef } from './utils.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
@@ -328,6 +328,7 @@ function handleHistoryNavigation(state) {
             }
             break;
         case 'add-song':
+            prepareAddSongView();
             showView('add-song');
             break;
         case 'doc-upload':
@@ -732,6 +733,7 @@ function handleDeepLink() {
         return true;
     } else if (hash === '#add') {
         trackDeepLink('add', hash);
+        prepareAddSongView();
         showView('add-song');
         pushHistoryState('add-song', {}, true);
         return true;
@@ -997,6 +999,9 @@ function closeSidebar() {
 function navigateTo(mode) {
     closeSidebar();
     trackNavigation(mode);
+    // Entering Add Song after an edit session must start from a fresh
+    // new-song editor (an unsaved new-song draft is preserved)
+    if (mode === 'add-song') prepareAddSongView();
     showView(mode);
     pushHistoryState(mode);
 }

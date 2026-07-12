@@ -104,6 +104,68 @@ test.describe('Editor Access', () => {
     });
 });
 
+test.describe('Editor State Reset', () => {
+    test('Add Song after editing a song shows a fresh empty editor', async ({ page }) => {
+        // Edit an existing song
+        await page.goto('/#edit/your-cheating-heart');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#editor-title')).toHaveValue(/Cheat/i);
+
+        // Home, then hamburger -> Add Song (the reported repro)
+        await openSidebar(page);
+        await page.locator('#nav-home').click();
+        await expect(page.locator('#landing-page')).toBeVisible();
+
+        await openSidebar(page);
+        await page.locator('#nav-add-song').click();
+
+        // Fresh new-song editor: empty-state paste box, no stale content
+        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('.ve-empty-paste')).toBeVisible();
+        await expect(page.locator('#metadata-summary')).toContainText('Untitled song');
+        await expect(page.locator('#editor-title')).toHaveValue('');
+        await expect(page.locator('#editor-content')).toHaveValue('');
+        await expect(page.locator('#editor-submit')).toHaveText('Submit to Songbook');
+    });
+
+    test('an unsaved new-song draft survives leaving and returning to Add Song', async ({ page }) => {
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+
+        // Type a draft in the Raw tab
+        await page.locator('#editor-tab-raw').click();
+        await page.locator('#editor-content').fill('[G]Working on my draft');
+
+        // Leave for home, then come back via Add Song
+        await openSidebar(page);
+        await page.locator('#nav-home').click();
+        await expect(page.locator('#landing-page')).toBeVisible();
+
+        await openSidebar(page);
+        await page.locator('#nav-add-song').click();
+
+        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('#editor-content')).toHaveValue('[G]Working on my draft');
+    });
+
+    test('editing song B after abandoning an edit of song A shows B', async ({ page }) => {
+        await page.goto('/#edit/your-cheating-heart');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#editor-title')).toHaveValue(/Cheat/i);
+
+        // Abandon via home, then open another song and edit it
+        await openSidebar(page);
+        await page.locator('#nav-home').click();
+        await expect(page.locator('#landing-page')).toBeVisible();
+
+        await page.goto('/#edit/cold-cold-heart');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#editor-title')).toHaveValue(/Cold/i);
+        await expect(page.locator('#editor-title')).not.toHaveValue(/Cheat/i);
+        await expect(page.locator('#editor-content')).not.toHaveValue('');
+    });
+});
+
 test.describe('Editor Content Input', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/#search');
