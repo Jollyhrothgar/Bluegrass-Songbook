@@ -364,6 +364,29 @@ string, fret) comparison (commits 2b108d2d8, 2ae86fd3d, 31ab7e9dd):
   auto-detected now — regen_parsed no longer hardcodes a session);
   ALL 74 published works with sources refreshed (44 downloads + 30
   raw_tabs via spike/verified_sources.json).
+- LESSON (bit us once): regen works/ and parsed/ TOGETHER after any
+  parser change — the 44 downloads works briefly shipped pre-double-
+  dot durations because only parsed/ was refreshed. Worth unifying
+  into one regen entry point.
+
+### READING-VIEW PLAYBACK (2026-07-12, Mike's spec — ddce7d999)
+- Click any tab staff → ensemble plays from that BEAT (quantized, not
+  note-anchored). Drag across measures → phrase highlight + LOOP with
+  optional one-measure count-in (1·2·3·4 toggle by the metronome,
+  default on; forced-audible clicks, first pass only). Solo button per
+  track header (drives the track checkboxes: display+audio together).
+- docs/js/tab-playback-interactions.js: pure display→playback mapping
+  (unrolled AND compact/Repeats — written measure → first pass in the
+  reading list), pointer wiring over rowData geometry (reuses the
+  editor's positionFromSvgPoint), re-attached via onAfterRender.
+  TabPlayer.countInBeats shifts playbackStartTime (notes+metronome+
+  clock together); loop restarts pass countInBeats: 0.
+- Live-verified on 27493 (solo/un-solo, click-play, drag-loop). Rest
+  glyphs: back ON everywhere by Mike's call (implied rests are real;
+  TablEdit hiding them is the lazy convention) — showRests option
+  remains for opt-out. Stems/flags derive from written durations.
+- Tunables if Mike wants different feel: DRAG_THRESHOLD_PX (6),
+  click quantize = one beat, count-in = one measure.
 - Three Cherokee Shuffles now: cherokee-shuffle = 25635
   (stratovarious520), cherokee-shuffle-a = 21874 (ShhhItsASecret),
   cherokee-shuffle-banjo-break = schlange. Mike's 'notes don't agree'
