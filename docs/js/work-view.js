@@ -28,6 +28,9 @@ import {
     analyzeReadingList, prepareCompactNotation,
 } from './renderers/index.js';
 import { getTagCategory, formatTagName } from './tags.js';
+import {
+    attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
+} from './tab-playback-interactions.js';
 
 // ============================================
 // WORK STATE
@@ -729,8 +732,27 @@ async function renderTablaturePart(part, container) {
                 <span class="track-icon">${icon}</span>
                 <span class="track-name">${track.id}</span>
                 ${!isLead ? '<span class="track-role">(backup)</span>' : ''}
+                ${otf.tracks.length > 1
+                    ? `<button class="track-solo qc-btn" title="Hear only this track (click again for all)">Solo</button>`
+                    : ''}
             `;
             trackSection.appendChild(trackHeader);
+
+            // SOLO: drive the existing track checkboxes (display + audio
+            // follow their change handlers). Second click un-solos.
+            trackHeader.querySelector('.track-solo')?.addEventListener('click', () => {
+                const boxes = [...controls.querySelectorAll('.track-checkbox')];
+                const soloed = boxes.every(cb =>
+                    cb.checked === (cb.dataset.trackId === track.id));
+                for (const cb of boxes) {
+                    const want = soloed ? true : cb.dataset.trackId === track.id;
+                    if (cb.checked !== want) {
+                        cb.checked = want;
+                        cb.dispatchEvent(new Event('change', { bubbles: true }));
+                    }
+                }
+                if (tablaturePlayer?.isPlaying) tablaturePlayer.stop();
+            });
 
             const tabContainer = document.createElement('div');
             tabContainer.className = 'tablature-container';
@@ -978,6 +1000,10 @@ function createTablatureControls(otf, part) {
             <input type="checkbox" class="tab-metronome-checkbox">
             <span class="tab-metronome-icon">🥁</span>
         </label>
+        <label class="tab-countin-toggle" title="Count-in before looped phrases">
+            <input type="checkbox" class="tab-countin-checkbox" checked>
+            <span class="tab-countin-label">1·2·3·4</span>
+        </label>
         ${repeatToggleHtml}
         ${feelToggleHtml}
         <span class="tab-position"></span>
@@ -1131,6 +1157,22 @@ function setupTablaturePlayer(otf, controls, renderer) {
         return Array.from(checkboxes).map(cb => cb.dataset.trackId);
     };
 
+    // Shared playback entry: the Play button, click-to-play, and
+    // drag-to-loop all funnel through here so button state stays true.
+    const startPlayback = async (extra = {}) => {
+        if (player.isPlaying) player.stop();
+        playBtn.textContent = '⏸ Pause';
+        playBtn.classList.add('playing');
+        stopBtn.disabled = false;
+        await player.play(otf, {
+            tempo: currentTempo,
+            transpose: currentCapo,
+            trackIds: getEnabledTrackIds(),
+            feel: twoFeelMode ? 'two' : null,
+            ...extra,
+        });
+    };
+
     // Play/stop
     playBtn.addEventListener('click', async () => {
         if (player.isPlaying) {
@@ -1139,19 +1181,47 @@ function setupTablaturePlayer(otf, controls, renderer) {
             playBtn.classList.remove('playing');
             stopBtn.disabled = true;
             eachRenderer(r => r.resetPlaybackVisualization());
+            eachRenderer(r => r._playbackInteractions?.clearHighlight());
         } else {
-            playBtn.textContent = '⏸ Pause';
-            playBtn.classList.add('playing');
-            stopBtn.disabled = false;
-            const trackIds = getEnabledTrackIds();
-            await player.play(otf, {
-                tempo: currentTempo,
-                transpose: currentCapo,
-                trackIds,
-                feel: twoFeelMode ? 'two' : null,
-            });
+            await startPlayback();
         }
     });
+
+    // CLICK-TO-PLAY and DRAG-TO-LOOP on every rendered track (Mike's
+    // reading-view spec): click starts the ensemble from that BEAT
+    // (quantized, not note-anchored); dragging across measures selects
+    // a phrase and loops it — with an optional one-measure count-in.
+    const countInCheckbox = controls.querySelector('.tab-countin-checkbox');
+    const beatTicks = timings.measureTiming.beatTicksFor
+        ? timings.measureTiming.beatTicksFor(1) : 480;
+    const countInBeatsFor = () => {
+        if (!countInCheckbox?.checked) return 0;
+        return Math.max(1, Math.round(timings.measureTiming.ticksFor(1) / beatTicks));
+    };
+    const attachInteractions = (r) => {
+        r._playbackInteractions?.destroy();
+        r._playbackInteractions = attachTabPlaybackInteractions(r, {
+            beatTicks,
+            onPlayFrom: ({ measure, tick }) => {
+                const t = playbackTickForPoint(
+                    timings.playback, compact, measure, tick);
+                if (t != null) startPlayback({ startTick: t });
+            },
+            onLoopMeasures: (m0, m1) => {
+                const range = playbackRangeForMeasures(
+                    timings.playback, compact, m0, m1);
+                if (range) startPlayback({
+                    ...range, loop: true, countInBeats: countInBeatsFor(),
+                });
+            },
+        });
+    };
+    for (const r of Object.values(trackRenderers)) {
+        attachInteractions(r);
+        // renderer re-renders (resize, Bravura) rebuild the row SVGs —
+        // reattach so the handlers survive
+        r.onAfterRender = () => attachInteractions(r);
+    }
 
     stopBtn.addEventListener('click', () => {
         player.stop();

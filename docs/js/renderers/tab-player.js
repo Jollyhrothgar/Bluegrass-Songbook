@@ -212,7 +212,7 @@ export class TabPlayer {
      * Create a pleasant metronome click sound
      * Uses a short sine wave with quick decay for a wood block-like sound
      */
-    playMetronomeClick(time, isDownbeat = false) {
+    playMetronomeClick(time, isDownbeat = false, force = false) {
         // Always schedule; audibility is controlled live by metronomeGain.
         if (!this.audioContext) return;
 
@@ -234,7 +234,7 @@ export class TabPlayer {
 
         // Connect and schedule
         osc.connect(gain);
-        gain.connect(this.metronomeGain || ctx.destination);
+        gain.connect(force ? ctx.destination : (this.metronomeGain || ctx.destination));
         osc.start(time);
         osc.stop(time + 0.05);
 
@@ -516,8 +516,28 @@ export class TabPlayer {
             : notes;
         this._rangeStartTick = rangeStart;
 
+        // Optional COUNT-IN: N beats of clicks before the music starts.
+        // Everything anchors on playbackStartTime, so shifting it delays
+        // notes, metronome, and the position clock together. Clicks are
+        // FORCED audible (they're the point) even with the metronome off.
+        const countInBeats = options.countInBeats || 0;
+        let countInSeconds = 0;
+        if (countInBeats > 0) {
+            const startSlot = timing.locate(rangeStart);
+            const beatTicks = measureTiming.beatTicksFor
+                ? measureTiming.beatTicksFor(timing.originalAt(startSlot.display))
+                : ticksPerBeat;
+            const beatSeconds = beatTicks * secondsPerTick;
+            countInSeconds = countInBeats * beatSeconds;
+            for (let i = 0; i < countInBeats; i++) {
+                this.playMetronomeClick(
+                    this.audioContext.currentTime + 0.1 + i * beatSeconds,
+                    i === 0, /* force */ true);
+            }
+        }
+
         // Schedule playback
-        this.playbackStartTime = this.audioContext.currentTime + 0.1;
+        this.playbackStartTime = this.audioContext.currentTime + 0.1 + countInSeconds;
         this.scheduledNodes = [];
 
         // Store timing info for position updates
@@ -582,6 +602,10 @@ export class TabPlayer {
         const update = () => {
             if (!this.isPlaying) return;
             const elapsed = this.audioContext.currentTime - this.playbackStartTime;
+            if (elapsed < 0) { // count-in in progress
+                this.animationFrame = requestAnimationFrame(update);
+                return;
+            }
 
             if (this.onPositionUpdate) {
                 this.onPositionUpdate(elapsed, totalDuration);
@@ -622,7 +646,10 @@ export class TabPlayer {
                 if (this.loop && this._loopSource) {
                     this.stop();
                     // Tracked so a user stop() during the gap cancels it
-                    this._loopTimer = setTimeout(() => this.play(this._loopSource, options), 100);
+                    // count-in only on the FIRST pass — loops repeat seamlessly
+                    this._loopTimer = setTimeout(
+                        () => this.play(this._loopSource,
+                            { ...options, countInBeats: 0 }), 100);
                 } else {
                     this.stop();
                     if (this.onPlaybackEnd) this.onPlaybackEnd();
