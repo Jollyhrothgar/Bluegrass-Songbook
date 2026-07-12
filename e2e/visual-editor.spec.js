@@ -513,3 +513,55 @@ second section words
     });
 });
 
+test.describe('Make-verse/chorus from the textarea selection', () => {
+    test('selecting lines shows the mini-bar; Make chorus wraps them', async ({ page }) => {
+        await openNewSongEditor(page);
+        await setSong(page, 'first line here\nsecond line here\nthird line here\n');
+        await expect(page.locator('.ve-syl').first()).toBeVisible();
+
+        // mini-bar hidden until a selection exists
+        await expect(page.locator('#editor-selection-toolbar')).toBeHidden();
+
+        await page.locator('#editor-content').evaluate((el) => {
+            el.focus();
+            const a = el.value.indexOf('second');
+            el.setSelectionRange(a + 2, a + 8);   // partial-line selection
+            el.dispatchEvent(new Event('select', { bubbles: true }));
+        });
+        await expect(page.locator('#editor-selection-toolbar')).toBeVisible();
+
+        await page.locator('[data-wrap="chorus"]').click();
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw).toContain('{start_of_chorus: Chorus}\nsecond line here\n{end_of_chorus}');
+
+        // preview reflects the new structure
+        await expect(page.locator('.ve-section-label', { hasText: 'Chorus' })).toBeVisible();
+        await expect(page.locator('.ve-psec-chorus')).toHaveCount(1);
+
+        // one undo step takes the wrap back out
+        await page.locator('#editor-undo').click();
+        expect(await page.locator('#editor-content').inputValue())
+            .not.toContain('{start_of_chorus');
+    });
+
+    test('wrapping across existing sections yields one clean section', async ({ page }) => {
+        await openNewSongEditor(page);
+        await setSong(page,
+            '{start_of_verse: Verse 1}\nline a\n{end_of_verse}\n\n' +
+            '{start_of_chorus: Chorus}\nline b\n{end_of_chorus}\n');
+        await expect(page.locator('.ve-psec')).toHaveCount(2);
+
+        await page.locator('#editor-content').evaluate((el) => {
+            el.focus();
+            el.setSelectionRange(0, el.value.length);
+            el.dispatchEvent(new Event('select', { bubbles: true }));
+        });
+        await expect(page.locator('#editor-selection-toolbar')).toBeVisible();
+        await page.locator('[data-wrap="verse"]').click();
+
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw).toContain('{start_of_verse: Verse 1}\nline a\n\nline b\n{end_of_verse}');
+        expect(raw).not.toContain('start_of_chorus');
+        await expect(page.locator('.ve-psec')).toHaveCount(1);
+    });
+});

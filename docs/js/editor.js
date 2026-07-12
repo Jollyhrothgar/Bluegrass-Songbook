@@ -13,6 +13,7 @@ import { trackEditor, trackSubmission } from './analytics.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
 import { openSuperUserRequestModal } from './superuser-request.js';
 import { createInteractivePreview } from './visual-editor/preview.js';
+import { wrapSelectionAsSection } from './visual-editor/wrap-section.js';
 import {
     cleanChordUPaste, cleanUltimateGuitarPaste,
     editorConvertToChordPro, editorDetectAndConvert
@@ -75,6 +76,7 @@ let editorPreviewContainerEl = null;
 let editorUndoBtnEl = null;
 let editorRedoBtnEl = null;
 let editorTransposeGroupEl = null;
+let editorSelectionToolbarEl = null;
 let preview = null;
 // True once enterEditMode has run, until the editor is reset to a fresh
 // new-song state. Unlike editMode/editingSongId this survives exitEditMode,
@@ -468,6 +470,57 @@ export function closeHints() {
 }
 
 /**
+ * Make-verse/chorus mini-bar. It sits at a FIXED spot (the ChordPro pane
+ * header) rather than floating near the selection: a textarea exposes no
+ * selection coordinates (measuring them needs a mirror-div hack that fights
+ * scrolling and resize), and a bar that pops in above the text would shift
+ * the very lines the user is mid-drag-selecting. The header row already
+ * exists, so showing the buttons there costs no layout at all.
+ */
+function updateSelectionToolbar() {
+    if (!editorSelectionToolbarEl || !editorContentEl) return;
+    const show = document.activeElement === editorContentEl &&
+        editorContentEl.selectionStart !== editorContentEl.selectionEnd;
+    editorSelectionToolbarEl.classList.toggle('hidden', !show);
+}
+
+/**
+ * Wrap the textarea's selected lines in {start_of_X}/{end_of_X} (pure text
+ * transform in visual-editor/wrap-section.js). One document-level undo
+ * step; the preview re-renders immediately.
+ */
+function applyWrapSelection(type) {
+    if (!editorContentEl) return;
+    const res = wrapSelectionAsSection(editorContentEl.value,
+        editorContentEl.selectionStart, editorContentEl.selectionEnd, type);
+    if (!res) return;
+    if (preview) preview.pushUndoSnapshot(editorContentEl.value);
+    editorContentEl.value = res.text;
+    editorContentEl.focus();
+    editorContentEl.setSelectionRange(res.selStart, res.selEnd);
+    updateEditorPreview();
+    updateSelectionToolbar();
+}
+
+function initSelectionToolbar() {
+    editorSelectionToolbarEl = document.getElementById('editor-selection-toolbar');
+    if (!editorSelectionToolbarEl || !editorContentEl) return;
+    editorSelectionToolbarEl.querySelectorAll('[data-wrap]').forEach((btn) => {
+        // keep focus (and the selection) in the textarea through the click
+        btn.addEventListener('pointerdown', (e) => e.preventDefault());
+        btn.addEventListener('mousedown', (e) => e.preventDefault());
+        btn.addEventListener('click', () => applyWrapSelection(btn.dataset.wrap));
+    });
+    // selectionchange covers collapse-from-anywhere; the textarea events
+    // are the belt-and-suspenders for browsers that don't fire it there
+    document.addEventListener('selectionchange', updateSelectionToolbar);
+    editorContentEl.addEventListener('select', updateSelectionToolbar);
+    editorContentEl.addEventListener('keyup', updateSelectionToolbar);
+    editorContentEl.addEventListener('mouseup', updateSelectionToolbar);
+    editorContentEl.addEventListener('blur', () => setTimeout(updateSelectionToolbar, 0));
+}
+
+/**
  * Mount the interactive preview on the right-hand pane. The textarea is THE
  * document: the preview renders parseSong(textarea.value), and every
  * preview-side edit writes serialized ChordPro back into the textarea
@@ -585,6 +638,7 @@ export function initEditor(options) {
 
     // Two-pane editor: interactive preview over the raw textarea
     initInteractivePreview();
+    initSelectionToolbar();
     updateEditorChrome();
 
     // Edit song button

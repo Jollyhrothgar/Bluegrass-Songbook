@@ -3366,6 +3366,30 @@ mark {
     margin-bottom: 0;
 }
 
+/* make-verse/chorus mini-bar: lives in the ChordPro pane header (a fixed
+   spot, no layout shift under a drag-selection) and appears only while the
+   textarea has a selection */
+.editor-selection-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: 0.75rem;
+}
+.editor-selection-toolbar.hidden { display: none; }
+.est-btn {
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    padding: 0.2rem 0.55rem;
+    font-size: 0.8rem;
+    min-height: 28px;
+    cursor: pointer;
+}
+.est-btn:hover { border-color: var(--accent); color: var(--accent); }
+
 .auto-detect-label {
     display: flex;
     align-items: center;
