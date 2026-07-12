@@ -766,7 +766,7 @@ async function renderTablaturePart(part, container) {
                         cb.dispatchEvent(new Event('change', { bubbles: true }));
                     }
                 }
-                if (tablaturePlayer?.isPlaying) tablaturePlayer.stop();
+                // no stop: checkbox change handlers retoggle audio LIVE
             });
 
             const tabContainer = document.createElement('div');
@@ -809,10 +809,15 @@ async function renderTablaturePart(part, container) {
         }
 
         // Track checkboxes control AUDIO only — the view tabs decide
-        // what you SEE. Default: the lead track sounds.
+        // what you SEE. Default: the lead track sounds. Toggles apply
+        // LIVE during playback (per-track gain buses in TabPlayer).
         const trackCheckboxes = controls.querySelectorAll('.track-checkbox');
         trackCheckboxes.forEach(checkbox => {
             checkbox.checked = checkbox.dataset.trackId === leadTrackId;
+            checkbox.addEventListener('change', () => {
+                tablaturePlayer?.setTrackEnabled?.(
+                    checkbox.dataset.trackId, checkbox.checked);
+            });
         });
 
         // Wire up repeat toggle (re-renders with repeat signs or unrolled)

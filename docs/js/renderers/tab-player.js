@@ -279,6 +279,19 @@ export class TabPlayer {
     }
 
     /**
+     * Toggle a track's audio LIVE (mid-playback). Short ramp avoids
+     * clicks. No-op when that track has no bus (not playing).
+     */
+    setTrackEnabled(trackId, enabled) {
+        const g = this.trackGains?.[trackId];
+        if (!g || !this.audioContext) return;
+        const t = this.audioContext.currentTime;
+        g.gain.cancelScheduledValues(t);
+        g.gain.setValueAtTime(g.gain.value, t);
+        g.gain.linearRampToValueAtTime(enabled ? 1 : 0, t + 0.02);
+    }
+
+    /**
      * Set mixer settings for a track
      */
     setMixerSettings(trackId, settings) {
@@ -325,14 +338,27 @@ export class TabPlayer {
             if (gen !== this._playGen) return;
         }
 
-        const tracksToPlay = options.trackIds
-            ? otfData.tracks.filter(t => options.trackIds.includes(t.id))
-            : otfData.tracks;
+        // ALL tracks are scheduled; options.trackIds only sets which are
+        // AUDIBLE at start. Each track plays through its own gain bus so
+        // parts can be toggled LIVE mid-loop (setTrackEnabled) without
+        // restarting playback.
+        const tracksToPlay = otfData.tracks;
+        const audibleAtStart = new Set(
+            options.trackIds ?? otfData.tracks.map(t => t.id));
 
         if (tracksToPlay.length === 0) return;
 
         await this.loadInstruments(tracksToPlay);
         if (gen !== this._playGen) return;
+
+        // Per-track gain buses (live mute/unmute)
+        this.trackGains = {};
+        for (const t of tracksToPlay) {
+            const g = this.audioContext.createGain();
+            g.gain.value = audibleAtStart.has(t.id) ? 1 : 0;
+            g.connect(this.audioContext.destination);
+            this.trackGains[t.id] = g;
+        }
 
         this.isPlaying = true;
         this.loop = options.loop || false;
@@ -567,7 +593,7 @@ export class TabPlayer {
             try {
                 const envelope = this.player.queueWaveTable(
                     this.audioContext,
-                    this.audioContext.destination,
+                    this.trackGains[note.trackId] ?? this.audioContext.destination,
                     note.instrumentData,
                     startTime,
                     note.midi,
@@ -661,10 +687,17 @@ export class TabPlayer {
                 if (this.loop && this._loopSource) {
                     this.stop();
                     // Tracked so a user stop() during the gap cancels it
-                    // count-in only on the FIRST pass — loops repeat seamlessly
+                    // count-in only on the FIRST pass; carry LIVE track
+                    // toggles into the next pass (don't revert to the
+                    // trackIds the loop started with)
+                    const liveIds = this.trackGains
+                        ? Object.entries(this.trackGains)
+                            .filter(([, g]) => g.gain.value > 0.5)
+                            .map(([id]) => id)
+                        : options.trackIds;
                     this._loopTimer = setTimeout(
                         () => this.play(this._loopSource,
-                            { ...options, countInBeats: 0 }), 100);
+                            { ...options, countInBeats: 0, trackIds: liveIds }), 100);
                 } else {
                     this.stop();
                     if (this.onPlaybackEnd) this.onPlaybackEnd();
@@ -679,6 +712,14 @@ export class TabPlayer {
      */
     stop() {
         this.isPlaying = false;
+
+        // Tear down per-track gain buses
+        if (this.trackGains) {
+            for (const g of Object.values(this.trackGains)) {
+                try { g.disconnect(); } catch (e) { /* already gone */ }
+            }
+            this.trackGains = null;
+        }
 
         // Cancel a pending loop restart (stop during the loop gap)
         if (this._loopTimer) {
