@@ -110,19 +110,25 @@ describe('TabRenderer rest drawing', () => {
     const hadBravura = TabRenderer._bravuraReady;
     afterEach(() => { TabRenderer._bravuraReady = hadBravura; });
 
-    const render = (events) => {
+    const render = (events, options = { showRests: true }) => {
         const container = document.createElement('div');
         document.body.appendChild(container);
-        const r = new TabRenderer(container);
+        const r = new TabRenderer(container, options);
         r.render(TRACK, [{ measure: 1, events }], 480, '4/4');
         return container;
     };
 
-    it('draws rests after durated notes (Bravura available)', () => {
+    it('draws rests after durated notes (editor: showRests on)', () => {
         TabRenderer._bravuraReady = true;
         const c = render([{ tick: 0, notes: [{ s: 1, f: 0, dur: 480 }] }]);
         // 1440-tick trailing gap → half + quarter
         expect(c.querySelectorAll('.rest-glyph')).toHaveLength(2);
+    });
+
+    it('reading view (default) draws no rests — TablEdit tab convention', () => {
+        TabRenderer._bravuraReady = true;
+        const c = render([{ tick: 0, notes: [{ s: 1, f: 0, dur: 480 }] }], {});
+        expect(c.querySelectorAll('.rest-glyph')).toHaveLength(0);
     });
 
     it('draws nothing for legacy duration-less tabs', () => {

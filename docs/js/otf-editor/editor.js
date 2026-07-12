@@ -178,6 +178,10 @@ export class OTFEditor {
         // centering makes the ruler break period at every barline
         this.renderer.options.centerNotes = false;
 
+        // Rest glyphs are an ENTRY aid — show them here. The reading
+        // view keeps TablEdit's tab-staff convention (no rests).
+        this.renderer.options.showRests = true;
+
         // Follow EVERY renderer layout pass — including its own async
         // re-renders (resize observer, Bravura arrival), which otherwise
         // leave the grid/cursor overlays drawn from stale geometry
