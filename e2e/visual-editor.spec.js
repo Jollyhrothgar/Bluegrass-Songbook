@@ -393,3 +393,123 @@ test.describe('Palette auto-scroll', () => {
         }).toBe(true);
     });
 });
+
+test.describe('Section drag reorder on the preview', () => {
+    const TWO_SECTIONS = `{start_of_verse: Verse 1}
+first section words
+{end_of_verse}
+
+{start_of_chorus: Chorus}
+second section words
+{end_of_chorus}
+`;
+
+    async function setupTwoSections(page) {
+        await openNewSongEditor(page);
+        await setSong(page, TWO_SECTIONS);
+        await expect(page.locator('.ve-psec')).toHaveCount(2);
+    }
+
+    async function startHandleDrag(page) {
+        const handle = page.locator('.ve-psec').nth(0).locator('.ve-drag-handle');
+        const hb = await handle.boundingBox();
+        const target = await page.locator('.ve-psec').nth(1).boundingBox();
+        await page.mouse.move(hb.x + hb.width / 2, hb.y + hb.height / 2);
+        await page.mouse.down();
+        // drag past the second section's midpoint, in steps like a real drag
+        await page.mouse.move(hb.x + hb.width / 2, target.y + target.height - 5, { steps: 8 });
+    }
+
+    test('dragging section 0 below section 1 reorders the song', async ({ page }) => {
+        await setupTwoSections(page);
+        await startHandleDrag(page);
+
+        // mid-drag: lifted section + drop indicator are visible
+        await expect(page.locator('.ve-psec-dragging')).toHaveCount(1);
+        await expect(page.locator('.ve-drop-indicator')).toBeVisible();
+        await page.mouse.up();
+
+        // sections swapped in the preview
+        await expect(page.locator('.ve-section-label').nth(0)).toHaveText('Chorus');
+        await expect(page.locator('.ve-section-label').nth(1)).toHaveText('Verse 1');
+        await expect(page.locator('.ve-psec-dragging')).toHaveCount(0);
+        await expect(page.locator('.ve-drop-indicator')).toHaveCount(0);
+
+        // serialized order flipped in the textarea (the document)
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw.indexOf('{start_of_chorus')).toBeLessThan(raw.indexOf('{start_of_verse'));
+        expect(raw.indexOf('second section words')).toBeLessThan(raw.indexOf('first section words'));
+
+        // one undo step restores the original order
+        await page.locator('#editor-undo').click();
+        const undone = await page.locator('#editor-content').inputValue();
+        expect(undone.indexOf('{start_of_verse')).toBeLessThan(undone.indexOf('{start_of_chorus'));
+    });
+
+    test('Escape aborts the drag and keeps the original order', async ({ page }) => {
+        await setupTwoSections(page);
+        await startHandleDrag(page);
+        await expect(page.locator('.ve-psec-dragging')).toHaveCount(1);
+
+        await page.keyboard.press('Escape');
+        await expect(page.locator('.ve-psec-dragging')).toHaveCount(0);
+        await expect(page.locator('.ve-drop-indicator')).toHaveCount(0);
+        await page.mouse.up();
+
+        await expect(page.locator('.ve-section-label').nth(0)).toHaveText('Verse 1');
+        await expect(page.locator('.ve-section-label').nth(1)).toHaveText('Chorus');
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw.indexOf('{start_of_verse')).toBeLessThan(raw.indexOf('{start_of_chorus'));
+    });
+});
+
+test.describe('Section header menu', () => {
+    const TWO_SECTIONS = `{start_of_verse: Verse 1}
+first section words
+{end_of_verse}
+
+{start_of_chorus: Chorus}
+second section words
+{end_of_chorus}
+`;
+
+    test('Delete removes the section; the toast Undo restores it', async ({ page }) => {
+        await openNewSongEditor(page);
+        await setSong(page, TWO_SECTIONS);
+        await expect(page.locator('.ve-psec')).toHaveCount(2);
+
+        await page.locator('.ve-psec').nth(1).locator('.ve-psec-menu-btn').click();
+        await page.locator('.ve-psec').nth(1).locator('[data-action="delete"]').click();
+
+        await expect(page.locator('.ve-psec')).toHaveCount(1);
+        expect(await page.locator('#editor-content').inputValue())
+            .not.toContain('second section words');
+
+        const toast = page.locator('.ve-toast');
+        await expect(toast).toBeVisible();
+        await expect(toast).toContainText('Deleted Chorus');
+        await toast.locator('.ve-toast-undo').click();
+
+        await expect(page.locator('.ve-psec')).toHaveCount(2);
+        expect(await page.locator('#editor-content').inputValue())
+            .toContain('second section words');
+    });
+
+    test('Rename edits the label inline and lands in the directive', async ({ page }) => {
+        await openNewSongEditor(page);
+        await setSong(page, TWO_SECTIONS);
+        await expect(page.locator('.ve-psec')).toHaveCount(2);
+
+        await page.locator('.ve-psec').nth(0).locator('.ve-psec-menu-btn').click();
+        await page.locator('.ve-psec').nth(0).locator('[data-action="rename"]').click();
+        const input = page.locator('.ve-rename-input');
+        await expect(input).toBeVisible();
+        await input.fill('Opening Verse');
+        await input.press('Enter');
+
+        await expect(page.locator('.ve-section-label').nth(0)).toHaveText('Opening Verse');
+        expect(await page.locator('#editor-content').inputValue())
+            .toContain('{start_of_verse: Opening Verse}');
+    });
+});
+

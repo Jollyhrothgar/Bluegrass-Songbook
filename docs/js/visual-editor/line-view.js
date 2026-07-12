@@ -28,6 +28,12 @@ export function renderChordsLine(section, line, li, ctx) {
 
     const { selection, callbacks, ghost } = ctx;
     const display = ctx.displayChord || ((c) => c);
+
+    // Blank lines inside a section render as just their end slot; mark the
+    // row so CSS can keep that bare "+" whisper-quiet until hover/selection
+    if (line.lyrics.trim() === '' && line.chords.length === 0) {
+        row.classList.add('ve-line-blank');
+    }
     const positions = line.chords.map(c => c.position);
     const tokens = tokenizeLine(line.lyrics, positions);
 

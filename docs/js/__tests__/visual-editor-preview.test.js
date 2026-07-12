@@ -60,11 +60,11 @@ describe('rendering from the textarea', () => {
         const label = container.querySelector('.ve-section-label');
         expect(label.textContent).toBe('Verse 1');
         expect(container.querySelector('.ve-chip').textContent).toBe('G');
-        // no card chrome on the new surface
+        // no parked card chrome on the new surface (the header's own drag
+        // handle and ⋯ menu are covered in the section-op suites below)
         expect(container.querySelector('.ve-card')).toBeNull();
         expect(container.querySelector('.ve-card-menu-btn')).toBeNull();
         expect(container.querySelector('.ve-mode-toggle')).toBeNull();
-        expect(container.querySelector('.ve-drag-handle')).toBeNull();
         expect(container.querySelector('.ve-add-section')).toBeNull();
     });
 
@@ -710,5 +710,250 @@ describe('Nashville display mode', () => {
         expect(host.querySelector('.ve-chip').textContent).toBe('#G#');
         expect(ta2.value).toContain('[G]hello');
         p2.destroy();
+    });
+});
+
+describe('section header menu', () => {
+    const TWO = `{start_of_verse: Verse 1}
+[G]first section words
+{end_of_verse}
+
+{start_of_chorus: Chorus}
+[C]second section words
+{end_of_chorus}
+`;
+
+    beforeEach(() => { load(TWO); });
+
+    function openMenu(i) {
+        const wraps = container.querySelectorAll('.ve-psec');
+        wraps[i].querySelector('.ve-psec-menu-btn').click();
+        return wraps[i].querySelector('.ve-psec-menu');
+    }
+
+    function menuClick(i, action) {
+        openMenu(i).querySelector(`[data-action="${action}"]`).click();
+    }
+
+    it('every section header has a drag handle and a ⋯ menu', () => {
+        expect(container.querySelectorAll('.ve-psec-header .ve-drag-handle')).toHaveLength(2);
+        expect(container.querySelectorAll('.ve-psec-menu-btn')).toHaveLength(2);
+        const menu = openMenu(0);
+        expect(menu.classList.contains('hidden')).toBe(false);
+        const actions = [...menu.querySelectorAll('.ve-menu-item')].map(b => b.dataset.action);
+        expect(actions).toEqual(['rename', 'type-verse', 'type-chorus', 'type-bridge',
+            'type-intro', 'type-outro', 'duplicate', 'delete']);
+    });
+
+    it('Change type rewrites the directive and renumbers the label', () => {
+        menuClick(0, 'type-chorus');
+        expect(raw()).toContain('{start_of_chorus: Chorus 2}');
+        expect(raw()).not.toContain('start_of_verse');
+    });
+
+    it('Duplicate copies the section below itself as one undo step', () => {
+        menuClick(1, 'duplicate');
+        expect(raw().match(/second section words/g)).toHaveLength(2);
+        expect(raw()).toContain('Chorus (copy)');
+        undoBtn.click();
+        expect(raw().match(/second section words/g)).toHaveLength(1);
+    });
+
+    it('Delete removes the section and shows an undo toast', () => {
+        menuClick(1, 'delete');
+        expect(raw()).not.toContain('second section words');
+        const toast = container.querySelector('.ve-toast');
+        expect(toast.classList.contains('hidden')).toBe(false);
+        expect(toast.textContent).toContain('Deleted Chorus');
+        toast.querySelector('.ve-toast-undo').click();
+        expect(raw()).toContain('second section words');
+        expect(toast.classList.contains('hidden')).toBe(true);
+    });
+
+    it('deleting a passthrough block says "raw block" in the toast', () => {
+        load(TWO + '\n{comment: watch the ending}\n');
+        menuClick(2, 'delete');
+        expect(raw()).not.toContain('{comment:');
+        expect(container.querySelector('.ve-toast').textContent).toContain('Deleted raw block');
+    });
+
+    it('passthrough blocks only offer Delete', () => {
+        load(TWO + '\n{comment: watch the ending}\n');
+        const actions = [...openMenu(2).querySelectorAll('.ve-menu-item')].map(b => b.dataset.action);
+        expect(actions).toEqual(['delete']);
+    });
+
+    it('Rename swaps the label for an input; Enter commits via relabelSection', () => {
+        menuClick(0, 'rename');
+        const input = container.querySelector('.ve-rename-input');
+        expect(input).not.toBeNull();
+        expect(input.value).toBe('Verse 1');
+        input.value = 'Opening Verse';
+        input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true }));
+        expect(raw()).toContain('{start_of_verse: Opening Verse}');
+        expect(container.querySelector('.ve-rename-input')).toBeNull();
+        expect(container.querySelector('.ve-section-label').textContent).toBe('Opening Verse');
+    });
+
+    it('Escape cancels a rename without touching the text', () => {
+        const before = raw();
+        menuClick(0, 'rename');
+        const input = container.querySelector('.ve-rename-input');
+        input.value = 'Nope';
+        input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true, cancelable: true }));
+        expect(raw()).toBe(before);
+        expect(container.querySelector('.ve-rename-input')).toBeNull();
+    });
+
+    it('typing in the rename input never starts ghost entry', () => {
+        menuClick(0, 'rename');
+        const input = container.querySelector('.ve-rename-input');
+        input.focus();
+        docKeydown({ key: 'g', target: input });
+        expect(container.querySelector('.ve-ghost-chip')).toBeNull();
+    });
+
+    it('any section op clears the chip/syllable selection (positional ids shift)', () => {
+        tapSyllable('words');
+        expect(container.querySelector('.ve-syl-selected')).not.toBeNull();
+        expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(false);
+        menuClick(0, 'delete');
+        expect(container.querySelector('.ve-syl-selected')).toBeNull();
+        expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(true);
+    });
+
+    it('metadata rides through section ops untouched', () => {
+        load('{meta: title Keep Me}\n{meta: x_source unit}\n\n' + TWO);
+        menuClick(0, 'duplicate');
+        expect(raw()).toContain('{meta: title Keep Me}');
+        expect(raw()).toContain('{meta: x_source unit}');
+    });
+});
+
+describe('drag-and-drop section reorder on the preview', () => {
+    // jsdom has no PointerEvent and no layout: sections all measure 0x0 at
+    // offsetTop 0, so any pointerY > 0 targets the end and pointerY < 0
+    // targets the start. That degenerate geometry still exercises the full
+    // pointer state machine; real coordinate math is covered by the pure
+    // drag-reorder.test.js suite.
+    const TWO = `{start_of_verse: Verse 1}
+[G]first section words
+{end_of_verse}
+
+{start_of_chorus: Chorus}
+[C]second section words
+{end_of_chorus}
+`;
+
+    function pev(type, opts = {}) {
+        const e = new MouseEvent(type, { bubbles: true, cancelable: true, ...opts });
+        if (opts.pointerType) {
+            Object.defineProperty(e, 'pointerType', { value: opts.pointerType });
+        }
+        return e;
+    }
+
+    function handleOf(i) {
+        return container.querySelectorAll('.ve-psec')[i].querySelector('.ve-drag-handle');
+    }
+
+    beforeEach(() => { load(TWO); });
+
+    it('mouse drag of section 0 past section 1 reorders the textarea as one undo step', () => {
+        const handle = handleOf(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 10, button: 0 }));
+        expect(container.querySelectorAll('.ve-psec')[0].classList.contains('ve-psec-dragging')).toBe(true);
+        expect(container.querySelector('.ve-drop-indicator')).not.toBeNull();
+        handle.dispatchEvent(pev('pointermove', { clientY: 300 }));
+        handle.dispatchEvent(pev('pointerup', { clientY: 300 }));
+
+        expect(raw().indexOf('{start_of_chorus')).toBeLessThan(raw().indexOf('{start_of_verse'));
+        expect(container.querySelector('.ve-drop-indicator')).toBeNull();
+        expect(container.querySelector('.ve-psec-dragging')).toBeNull();
+
+        undoBtn.click();
+        expect(raw().indexOf('{start_of_verse')).toBeLessThan(raw().indexOf('{start_of_chorus'));
+    });
+
+    it('a drop reorders the rendered sections too', () => {
+        const handle = handleOf(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 10, button: 0 }));
+        handle.dispatchEvent(pev('pointermove', { clientY: 300 }));
+        handle.dispatchEvent(pev('pointerup', { clientY: 300 }));
+        const labels = [...container.querySelectorAll('.ve-section-label')].map(l => l.textContent);
+        expect(labels).toEqual(['Chorus', 'Verse 1']);
+    });
+
+    it('dropping at the original position pushes no undo step', () => {
+        onChange.mockClear();
+        const handle = handleOf(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: -10, button: 0 }));
+        handle.dispatchEvent(pev('pointermove', { clientY: -10 }));
+        handle.dispatchEvent(pev('pointerup', { clientY: -10 }));
+        expect(onChange).not.toHaveBeenCalled();
+        expect(undoBtn.disabled).toBe(true);
+        expect(raw().indexOf('{start_of_verse')).toBeLessThan(raw().indexOf('{start_of_chorus'));
+    });
+
+    it('a drop clears any live selection (positional ids shift)', () => {
+        tapSyllable('words');
+        expect(container.querySelector('.ve-syl-selected')).not.toBeNull();
+        const handle = handleOf(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 10, button: 0 }));
+        handle.dispatchEvent(pev('pointermove', { clientY: 300 }));
+        handle.dispatchEvent(pev('pointerup', { clientY: 300 }));
+        expect(container.querySelector('.ve-syl-selected')).toBeNull();
+        expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(true);
+    });
+
+    it('Escape aborts the drag and leaves the order unchanged', () => {
+        onChange.mockClear();
+        const handle = handleOf(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 10, button: 0 }));
+        handle.dispatchEvent(pev('pointermove', { clientY: 300 }));
+        docKeydown({ key: 'Escape' });
+        expect(container.querySelector('.ve-psec-dragging')).toBeNull();
+        expect(container.querySelector('.ve-drop-indicator')).toBeNull();
+        // the stale pointerup after the abort is inert
+        handle.dispatchEvent(pev('pointerup', { clientY: 300 }));
+        expect(onChange).not.toHaveBeenCalled();
+        expect(raw().indexOf('{start_of_verse')).toBeLessThan(raw().indexOf('{start_of_chorus'));
+    });
+
+    it('pointercancel aborts cleanly', () => {
+        onChange.mockClear();
+        const handle = handleOf(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 10, button: 0 }));
+        handle.dispatchEvent(pev('pointermove', { clientY: 300 }));
+        handle.dispatchEvent(pev('pointercancel', {}));
+        expect(container.querySelector('.ve-psec-dragging')).toBeNull();
+        expect(onChange).not.toHaveBeenCalled();
+    });
+
+    it('touch lifts only after the long-press delay', () => {
+        vi.useFakeTimers();
+        const handle = handleOf(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 100, button: 0, pointerType: 'touch' }));
+        // not lifted yet — a quick tap or swipe must not start a drag
+        expect(container.querySelector('.ve-psec-dragging')).toBeNull();
+        vi.advanceTimersByTime(400);
+        expect(container.querySelector('.ve-psec-dragging')).not.toBeNull();
+        handle.dispatchEvent(pev('pointermove', { clientY: 300, pointerType: 'touch' }));
+        handle.dispatchEvent(pev('pointerup', { clientY: 300, pointerType: 'touch' }));
+        expect(raw().indexOf('{start_of_chorus')).toBeLessThan(raw().indexOf('{start_of_verse'));
+        vi.useRealTimers();
+    });
+
+    it('touch movement before the long-press cancels the lift (scroll wins)', () => {
+        vi.useFakeTimers();
+        onChange.mockClear();
+        const handle = handleOf(0);
+        handle.dispatchEvent(pev('pointerdown', { clientY: 100, button: 0, pointerType: 'touch' }));
+        handle.dispatchEvent(pev('pointermove', { clientY: 130, pointerType: 'touch' }));
+        vi.advanceTimersByTime(400);
+        expect(container.querySelector('.ve-psec-dragging')).toBeNull();
+        handle.dispatchEvent(pev('pointerup', { clientY: 130, pointerType: 'touch' }));
+        expect(onChange).not.toHaveBeenCalled();
+        vi.useRealTimers();
     });
 });

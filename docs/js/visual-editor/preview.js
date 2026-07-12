@@ -22,11 +22,15 @@
 // behavior.
 
 import {
-    parseSong, serializeSong, placeChord, changeChord, removeChord, allChords
+    parseSong, serializeSong, placeChord, changeChord, removeChord, allChords,
+    setSectionType, relabelSection, moveSectionTo, deleteSection, duplicateSection
 } from './model.js';
 import { el, renderChordsLine } from './line-view.js';
 import { createPalette } from './palette.js';
-import { scrollSelectionClear } from './autoscroll.js';
+import {
+    computeTargetIndex, indicatorY, computeDragScroll, LONG_PRESS_MS, DRAG_SLOP_PX
+} from './drag-reorder.js';
+import { scrollSelectionClear, findScrollContainer } from './autoscroll.js';
 import { tokenizeLine } from './syllables.js';
 import { detectKey, isValidChord } from '../chords.js';
 
@@ -38,6 +42,16 @@ export const GHOST_COMMIT_MS = 800;
 export const RESUME_GRACE_MS = 1500;
 // Textarea typing → preview re-render debounce.
 export const REFRESH_DEBOUNCE_MS = 200;
+
+// Section header ⋯ menu. Passthrough (raw) blocks only get Delete; drag
+// reorder covers movement, so there are no Move up/down items here.
+const SECTION_MENU_ACTIONS = [
+    ['rename', 'Rename\u2026'],
+    ['type-verse', 'Make verse'], ['type-chorus', 'Make chorus'],
+    ['type-bridge', 'Make bridge'], ['type-intro', 'Make intro'],
+    ['type-outro', 'Make outro'],
+    ['duplicate', 'Duplicate'], ['delete', 'Delete']
+];
 
 export function createInteractivePreview({
     container, textarea, onChange, displayChord,
@@ -52,10 +66,15 @@ export function createInteractivePreview({
     let resume = null;         // { sel, text } — just-committed chord, still editable
     let resumeTimer = null;
     let refreshTimer = null;   // debounced external-change re-render
+    let drag = null;           // active section drag state
+    let pendingLift = null;    // touch long-press waiting to lift
+    let renameId = null;       // section id whose label renders as an input
+    let toastTimer = null;
 
     container.classList.add('ve-preview');
 
     const body = el('div', 've-preview-body');
+    const toast = el('div', 've-toast hidden');
 
     // Shared commit path for palette picks AND ghost-entry commits.
     function pick(chord) {
@@ -93,7 +112,7 @@ export function createInteractivePreview({
         }
     });
 
-    container.append(body, palette.el);
+    container.append(body, palette.el, toast);
 
     if (undoBtn) undoBtn.addEventListener('click', undo);
     if (redoBtn) redoBtn.addEventListener('click', redo);
@@ -224,6 +243,219 @@ export function createInteractivePreview({
         if (ghost && !commitGhost()) cancelGhost();
     }
 
+    // ---------- section operations (header menu + drag) ----------
+
+    // Section ids are positional (ps-<index>), so ANY section op can shift
+    // identity out from under the selection — clear it rather than guess.
+    function sectionOp(nextDoc) {
+        cancelGhost();
+        clearResume();
+        selection = null;
+        palette.hide();
+        renameId = null;
+        commitDoc(nextDoc);
+        render();
+    }
+
+    // Minimal undo toast for destructive ops ("Deleted Chorus — Undo").
+    function showToast(message) {
+        if (toastTimer) clearTimeout(toastTimer);
+        toast.textContent = '';
+        toast.append(message + ' ');
+        const btn = el('button', 've-toast-undo', 'Undo');
+        btn.type = 'button';
+        btn.addEventListener('click', () => {
+            toast.classList.add('hidden');
+            undo();
+        });
+        toast.appendChild(btn);
+        toast.classList.remove('hidden');
+        toastTimer = setTimeout(() => toast.classList.add('hidden'), 8000);
+    }
+
+    function menuAction(sectionId, action) {
+        if (action.startsWith('type-')) {
+            sectionOp(setSectionType(doc, sectionId, action.slice(5)));
+        } else if (action === 'rename') {
+            cancelGhost();
+            renameId = sectionId;
+            render();
+            const input = body.querySelector('.ve-rename-input');
+            if (input) { input.focus(); input.select(); }
+        } else if (action === 'duplicate') {
+            sectionOp(duplicateSection(doc, sectionId));
+        } else if (action === 'delete') {
+            const sec = doc.sections.find(s => s.id === sectionId);
+            const what = (sec && sec.type === 'passthrough') ? 'raw block' : (sec?.label || 'section');
+            sectionOp(deleteSection(doc, sectionId));
+            showToast(`Deleted ${what} \u2014`);
+        }
+    }
+
+    function commitRename(sectionId, value) {
+        renameId = null;
+        const sec = doc.sections.find(s => s.id === sectionId);
+        const label = value.trim();
+        if (!sec || !label || label === sec.label) { render(); return; }
+        sectionOp(relabelSection(doc, sectionId, label));
+    }
+
+    // ---------- drag-and-drop section reorder ----------
+    //
+    // Pointer Events only (HTML5 DnD is unreliable on touch). The ⠿ handle
+    // is the single lift zone: mouse/pen drags start on pointerdown; touch
+    // lifts after a ~350ms long-press so swipes that merely start on the
+    // handle still scroll. The preview does NOT re-render mid-drag — the
+    // lifted section follows the pointer via a transform and a drop
+    // indicator line marks the prospective gap; the model changes (one
+    // undo step) only on drop. Geometry lives in drag-reorder.js (pure).
+
+    // Snapshot section geometry in body coordinates (position:relative),
+    // immune to pane scrolling; valid all drag long since layout is frozen.
+    function sectionsSnapshot() {
+        return [...body.querySelectorAll(':scope > .ve-psec')].map(sEl => ({
+            el: sEl, top: sEl.offsetTop, bottom: sEl.offsetTop + sEl.offsetHeight
+        }));
+    }
+
+    function hostY(clientY) {
+        return clientY - body.getBoundingClientRect().top;
+    }
+
+    function onDragMove(e) {
+        if (pendingLift) {
+            // moving before the long-press fires = the user is scrolling
+            if (Math.hypot(e.clientX - pendingLift.startX, e.clientY - pendingLift.startY) > DRAG_SLOP_PX) {
+                abortPendingLift();
+            } else {
+                pendingLift.lastClientY = e.clientY;
+            }
+            return;
+        }
+        if (drag) updateDrag(e.clientY);
+    }
+
+    function onDragUp() {
+        if (pendingLift) { abortPendingLift(); return; }
+        endDrag(true);
+    }
+
+    function onDragCancel() {
+        if (pendingLift) { abortPendingLift(); return; }
+        endDrag(false);
+    }
+
+    function attachDragListeners(handle) {
+        handle.addEventListener('pointermove', onDragMove);
+        handle.addEventListener('pointerup', onDragUp);
+        handle.addEventListener('pointercancel', onDragCancel);
+    }
+
+    function detachDragListeners(handle) {
+        handle.removeEventListener('pointermove', onDragMove);
+        handle.removeEventListener('pointerup', onDragUp);
+        handle.removeEventListener('pointercancel', onDragCancel);
+    }
+
+    function abortPendingLift() {
+        if (!pendingLift) return;
+        clearTimeout(pendingLift.timer);
+        detachDragListeners(pendingLift.handle);
+        pendingLift = null;
+    }
+
+    function onDragHandleDown(sectionId, e) {
+        if (drag || pendingLift) return;
+        if (e.button !== undefined && e.button !== null && e.button !== 0) return;
+        const handle = e.currentTarget;
+        // no focus steal / text selection; the handle has no other role
+        e.preventDefault();
+        try { handle.setPointerCapture?.(e.pointerId); } catch { /* jsdom */ }
+        attachDragListeners(handle);
+        if (e.pointerType === 'touch') {
+            // long-press lifts; early movement means a scroll, not a drag
+            pendingLift = {
+                sectionId, handle,
+                startX: e.clientX, startY: e.clientY, lastClientY: e.clientY,
+                timer: setTimeout(() => {
+                    const { lastClientY } = pendingLift;
+                    pendingLift = null;
+                    startDrag(sectionId, handle, e.pointerId, lastClientY);
+                }, LONG_PRESS_MS)
+            };
+        } else {
+            startDrag(sectionId, handle, e.pointerId, e.clientY);
+        }
+    }
+
+    function startDrag(sectionId, handle, pointerId, clientY) {
+        flushGhost();
+        const sections = sectionsSnapshot();
+        const fromIndex = sections.findIndex(c => c.el.dataset.sectionId === sectionId);
+        if (fromIndex === -1) { detachDragListeners(handle); return; }
+        const indicator = el('div', 've-drop-indicator');
+        drag = {
+            sectionId, handle, pointerId, sections, fromIndex,
+            targetIndex: fromIndex, startHostY: hostY(clientY),
+            lastClientY: clientY, indicator, raf: null
+        };
+        body.appendChild(indicator);
+        body.classList.add('ve-drag-active');
+        sections[fromIndex].el.classList.add('ve-psec-dragging');
+        updateDrag(clientY);
+        startDragScrollLoop();
+    }
+
+    function updateDrag(clientY) {
+        drag.lastClientY = clientY;
+        const y = hostY(clientY);
+        drag.sections[drag.fromIndex].el.style.transform =
+            `translateY(${y - drag.startHostY}px) scale(1.01)`;
+        drag.targetIndex = computeTargetIndex(drag.sections, drag.fromIndex, y);
+        drag.indicator.style.top =
+            `${indicatorY(drag.sections, drag.fromIndex, drag.targetIndex)}px`;
+    }
+
+    // Auto-scroll while the pointer hovers near the edge of the preview
+    // pane's scroll container (or the viewport when the page scrolls).
+    // Runs on rAF (pointermove goes quiet when the pointer holds still);
+    // updateDrag() re-derives host coords after each scroll step.
+    function startDragScrollLoop() {
+        if (typeof requestAnimationFrame !== 'function') return;
+        const scroller = findScrollContainer(body);
+        const step = () => {
+            if (!drag) return;
+            const rect = scroller ? scroller.getBoundingClientRect() : null;
+            const viewTop = rect ? rect.top : 0;
+            const viewBottom = rect ? rect.bottom
+                : (window.innerHeight || document.documentElement.clientHeight);
+            const delta = computeDragScroll(drag.lastClientY, viewTop, viewBottom);
+            if (delta !== 0) {
+                if (scroller) scroller.scrollBy(0, delta);
+                else window.scrollBy(0, delta);
+                updateDrag(drag.lastClientY);
+            }
+            drag.raf = requestAnimationFrame(step);
+        };
+        drag.raf = requestAnimationFrame(step);
+    }
+
+    function endDrag(commit) {
+        if (!drag) return;
+        const { sectionId, handle, pointerId, sections, fromIndex, targetIndex, indicator, raf } = drag;
+        if (raf !== null && typeof cancelAnimationFrame === 'function') cancelAnimationFrame(raf);
+        detachDragListeners(handle);
+        try { handle.releasePointerCapture?.(pointerId); } catch { /* already released */ }
+        sections[fromIndex].el.classList.remove('ve-psec-dragging');
+        sections[fromIndex].el.style.transform = '';
+        indicator.remove();
+        body.classList.remove('ve-drag-active');
+        drag = null;
+        if (commit && targetIndex !== fromIndex) {
+            sectionOp(moveSectionTo(doc, sectionId, targetIndex));
+        }
+    }
+
     // ---------- selection advance (Space / Tab) ----------
 
     function lineTargets(line) {
@@ -284,6 +516,15 @@ export function createInteractivePreview({
 
     function handleKeydown(e) {
         if (!isActive()) return;
+        // Escape aborts a section drag cleanly; everything else is inert mid-drag
+        if (drag || pendingLift) {
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                if (pendingLift) abortPendingLift();
+                else endDrag(false);
+            }
+            return;
+        }
         if (isEditableTarget(e.target)) return;  // textarea typing stays native
         const mod = e.metaKey || e.ctrlKey;
         if (mod && e.key.toLowerCase() === 'z') {
@@ -420,17 +661,79 @@ export function createInteractivePreview({
         scrollSelectionClear({ selectedEl, paletteEl: palette.el, stickyTopEl: null });
     }
 
+    // Header row: ⠿ drag handle (the only lift zone) + label (or the
+    // inline rename input) + ⋯ menu. An open menu never survives a render,
+    // which is exactly right — every action re-renders anyway.
+    function renderSectionHeader(sec) {
+        const header = el('div', 've-psec-header');
+
+        const handle = el('button', 've-drag-handle', '\u283f');
+        handle.type = 'button';
+        handle.setAttribute('aria-label', `Drag to reorder ${sec.label || 'section'}`);
+        handle.addEventListener('pointerdown', (e) => onDragHandleDown(sec.id, e));
+        header.appendChild(handle);
+
+        if (renameId === sec.id) {
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.className = 've-rename-input';
+            input.value = sec.label;
+            input.setAttribute('aria-label', 'Section label');
+            let done = false;   // Enter commits, then the blur must not re-commit
+            const finish = (commit) => {
+                if (done) return;
+                done = true;
+                if (commit) commitRename(sec.id, input.value);
+                else { renameId = null; render(); }
+            };
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') { e.preventDefault(); finish(true); }
+                else if (e.key === 'Escape') { e.preventDefault(); finish(false); }
+            });
+            input.addEventListener('blur', () => finish(true));
+            header.appendChild(input);
+        } else {
+            header.appendChild(el('span', 've-section-label',
+                sec.type === 'passthrough' ? 'Raw block' : sec.label));
+        }
+
+        const menuWrap = el('span', 've-psec-menu-wrap');
+        const menuBtn = el('button', 've-psec-menu-btn', '\u22ef');
+        menuBtn.type = 'button';
+        menuBtn.setAttribute('aria-label', `Section menu for ${sec.label || 'raw block'}`);
+        const menu = el('div', 've-psec-menu hidden');
+        const actions = sec.type === 'passthrough'
+            ? SECTION_MENU_ACTIONS.filter(([a]) => a === 'delete')
+            : SECTION_MENU_ACTIONS;
+        for (const [action, text] of actions) {
+            const b = el('button', 've-menu-item', text);
+            b.type = 'button';
+            b.dataset.action = action;
+            b.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menuAction(sec.id, action);
+            });
+            menu.appendChild(b);
+        }
+        menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        menuWrap.append(menuBtn, menu);
+        header.appendChild(menuWrap);
+        return header;
+    }
+
     function renderSection(sec) {
         const wrap = el('div', 've-psec');
         wrap.dataset.sectionId = sec.id;
         if (sec.type === 'passthrough') {
             // opaque content (ABC blocks, unknown directives): read-only
+            // body, but still a draggable/deletable block
             wrap.classList.add('ve-psec-passthrough');
+            wrap.appendChild(renderSectionHeader(sec));
             wrap.appendChild(el('pre', 've-passthrough-raw', sec.raw));
             return wrap;
         }
         if (sec.type === 'chorus') wrap.classList.add('ve-psec-chorus');
-        wrap.appendChild(el('div', 've-section-label', sec.label));
+        wrap.appendChild(renderSectionHeader(sec));
         const linesEl = el('div', 've-psec-body');
         const ghostCtx = ghost ? { text: ghost.text, invalid: !!ghost.invalid } : null;
         sec.lines.forEach((line, li) => {
@@ -490,6 +793,7 @@ export function createInteractivePreview({
         if (refreshTimer) { clearTimeout(refreshTimer); refreshTimer = null; }
         cancelGhost();
         clearResume();
+        renameId = null;
         doc = parseCurrent();
         if (!selectionResolves()) {
             selection = null;
@@ -524,6 +828,9 @@ export function createInteractivePreview({
         destroy() {
             cancelGhost();
             clearResume();
+            abortPendingLift();
+            endDrag(false);
+            if (toastTimer) clearTimeout(toastTimer);
             if (refreshTimer) clearTimeout(refreshTimer);
             document.removeEventListener('keydown', handleKeydown);
             container.textContent = '';
