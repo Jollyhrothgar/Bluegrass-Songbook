@@ -5472,6 +5472,24 @@ body.fullscreen-mode .song-content {
     padding-top: 0;
 }
 
+/* Tablature wants the width in focus mode (lead sheets keep 900px) */
+body.fullscreen-mode .song-content:has(.tablature-all-tracks) {
+    max-width: 96vw;
+}
+
+/* Work controls exist INSIDE the (hidden-in-focus) work header — give
+   them the same focus-mode treatment as the song quick controls, so
+   the ⚙ Controls button actually reveals something. */
+body.fullscreen-mode .work-controls-content {
+    display: flex !important;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+body.fullscreen-mode .work-controls-content.hidden {
+    display: none !important;
+}
+
 /* Show quick controls in fullscreen mode */
 body.fullscreen-mode .quick-controls-content {
     display: flex !important;
@@ -6651,15 +6669,60 @@ body.fullscreen-mode::after {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    /* Tabs scroll in their own pane; the controls row stays put.
-       Also keeps playback auto-scroll from dragging the whole page. */
-    max-height: calc(100vh - 300px);
-    overflow-y: auto;
-    overscroll-behavior: contain;
 }
 
-.fullscreen-mode .tablature-all-tracks {
-    max-height: calc(100vh - 160px);
+/* Controls stay visible while the (page-scrolled) tab flows by —
+   sticky beats a nested scroll pane, which fought the page scroll
+   and made bottom tracks unreachable. */
+.work-controls-content {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--bg);
+}
+
+/* Track VIEW tabs: which staff you see (audio = mixer checkboxes/Solo) */
+.track-view-tabs {
+    display: flex;
+    gap: 0.25rem;
+    margin: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 19;
+    background: var(--bg);
+    padding: 0.25rem 0;
+}
+
+.track-view-tab {
+    padding: 0.3rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 6px 6px 0 0;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: var(--font-sm);
+}
+
+.track-view-tab.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+
+.track-solo {
+    margin-left: auto;
+    padding: 0.15rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: var(--font-xs);
+    cursor: pointer;
+}
+
+.track-solo:hover {
+    border-color: var(--accent);
+    color: var(--accent);
 }
 
 .tablature-track-section {

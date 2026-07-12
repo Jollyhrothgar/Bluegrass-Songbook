@@ -1,8 +1,11 @@
 // Reading-view playback interactions for rendered tablature:
 //
-//   click        -> play from the clicked BEAT (quantized; not anchored
-//                   to a note the way TablEdit does it)
-//   click + drag -> select whole measures and LOOP that phrase
+//   click        -> ARM a play cursor at the clicked BEAT (quantized;
+//                   not anchored to a note). Playback starts on Play.
+//   click + drag -> ARM a whole-measure phrase selection for looping.
+//
+// Neither starts audio by itself — the Play button executes whatever
+// is armed (Mike: 'playback should not start automatically').
 //
 // Geometry comes from TabRenderer.rowData (the same ts-true source the
 // editor's cursor uses); display->playback tick mapping handles both
@@ -75,15 +78,16 @@ export function attachTabPlaybackInteractions(renderer, {
         return noteX0 + (tick / geom.ticks) * noteW;
     }
 
-    function clearCaret() {
+    function clearCaret(kind = '.play-caret') {
         for (const row of renderer.rowData || []) {
-            row.svg?.querySelectorAll('.play-caret').forEach(el => el.remove());
+            row.svg?.querySelectorAll(kind).forEach(el => el.remove());
         }
     }
 
-    /** Beat caret: shows WHERE playback would start before you commit. */
-    function showCaret(row, measure, tick) {
-        clearCaret();
+    /** Beat caret. kind '.play-caret' = hover preview (light),
+     *  '.play-caret-armed' = committed cursor (solid, persists). */
+    function showCaret(row, measure, tick, kind = 'play-caret') {
+        clearCaret('.' + kind);
         const x = xForTick(row, measure, tick);
         if (x == null) return;
         const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
@@ -92,12 +96,19 @@ export function attachTabPlaybackInteractions(renderer, {
         line.setAttribute('y1', opts.topMargin - 10);
         line.setAttribute('y2', opts.topMargin
             + (renderer.numStrings - 1) * opts.stringSpacing + 10);
-        line.setAttribute('class', 'play-caret');
+        line.setAttribute('class', kind);
         line.setAttribute('stroke', opts.highlightColor);
-        line.setAttribute('stroke-width', '2');
-        line.setAttribute('opacity', '0.7');
+        line.setAttribute('stroke-width', kind === 'play-caret' ? '2' : '3');
+        line.setAttribute('opacity', kind === 'play-caret' ? '0.45' : '0.9');
         line.setAttribute('pointer-events', 'none');
         row.svg.appendChild(line);
+    }
+
+    /** Draw the committed (armed) cursor at a display position. */
+    function armCaretAt(measure, tick) {
+        const row = (renderer.rowData || []).find(
+            r => measure >= r.firstMeasure && measure <= r.lastMeasure);
+        if (row) showCaret(row, measure, tick, 'play-caret-armed');
     }
 
     function localPoint(svg, evt) {
@@ -202,11 +213,14 @@ export function attachTabPlaybackInteractions(renderer, {
             lastClickAt = now;
             if (d.moved) {
                 highlightMeasures(d.startMeasure, d.lastMeasure);
+                clearCaret('.play-caret-armed');
                 onLoopMeasures?.(
                     Math.min(d.startMeasure, d.lastMeasure),
                     Math.max(d.startMeasure, d.lastMeasure));
             } else {
                 clearHighlight();
+                clearCaret('.play-caret-armed');
+                showCaret(row, d.startMeasure, d.startTick, 'play-caret-armed');
                 onPlayFrom?.({ measure: d.startMeasure, tick: d.startTick });
             }
             evt.preventDefault();
@@ -228,9 +242,16 @@ export function attachTabPlaybackInteractions(renderer, {
 
     return {
         clearHighlight,
+        highlightMeasures,
+        armCaretAt,
+        clearArmed() {
+            clearHighlight();
+            clearCaret('.play-caret-armed');
+        },
         destroy() {
             clearHighlight();
-            clearCaret();
+            clearCaret('.play-caret');
+            clearCaret('.play-caret-armed');
             cleanups.forEach(fn => fn());
             cleanups.length = 0;
         },

@@ -42,6 +42,8 @@ let availableParts = [];         // All parts for current work
 let trackRenderers = {};         // Map of trackId -> TabRenderer instance
 let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
 let twoFeelMode = false;         // true = present 4/4 as cut time (2/2)
+let activeTrackView = null;      // track id, 'all', or null (= lead track)
+let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
 
 // ============================================
 // NOTATION HELPERS
@@ -134,6 +136,7 @@ export async function openWork(workId, options = {}) {
     setCurrentDetectedKey(null);
 
     // Reset tablature state for new work
+    activeTrackView = null;
     setLoadedTablature(null);
     if (tablaturePlayer) {
         tablaturePlayer.stop();
@@ -671,6 +674,16 @@ async function renderTablaturePart(part, container) {
             container.appendChild(controls);
         }
 
+        // Track VIEW tabs (which staff you see; audio = mixer/Solo).
+        // One visible track at a time kills the nested-scroll fights and
+        // the 'cursors in different places' confusion — plus [All] for
+        // the stacked view. (True score view — every instrument's same
+        // measures aligned in one system — needs cross-track measure
+        // widths and is queued in the handoff.)
+        const trackTabsBar = document.createElement('div');
+        trackTabsBar.className = 'track-view-tabs';
+        container.appendChild(trackTabsBar);
+
         // Create container for all tracks
         const allTracksContainer = document.createElement('div');
         allTracksContainer.className = 'tablature-all-tracks';
@@ -724,7 +737,9 @@ async function renderTablaturePart(part, container) {
             const trackSection = document.createElement('div');
             trackSection.className = `tablature-track-section${isLead ? '' : ' backup-track'}`;
             trackSection.dataset.trackId = track.id;
-            trackSection.style.display = isLead ? 'block' : 'none';
+            trackSection.style.display =
+                (activeTrackView === 'all' || (activeTrackView ?? leadTrackId) === track.id)
+                    ? 'block' : 'none';
 
             const trackHeader = document.createElement('div');
             trackHeader.className = 'tablature-track-header';
@@ -766,22 +781,38 @@ async function renderTablaturePart(part, container) {
             trackRenderers[track.id] = renderer;
         }
 
-        // Wire up track visibility toggles
-        const trackCheckboxes = controls.querySelectorAll('.track-checkbox');
-        trackCheckboxes.forEach(checkbox => {
-            // Set initial checked state to match visibility
-            const trackId = checkbox.dataset.trackId;
-            const trackSection = allTracksContainer.querySelector(`[data-track-id="${trackId}"]`);
-            if (trackSection) {
-                checkbox.checked = trackSection.style.display !== 'none';
-            }
-
-            checkbox.addEventListener('change', () => {
-                const section = allTracksContainer.querySelector(`[data-track-id="${trackId}"]`);
-                if (section) {
-                    section.style.display = checkbox.checked ? 'block' : 'none';
+        // Populate the view tabs from the tracks that actually rendered
+        const renderedIds = Object.keys(trackRenderers);
+        if (renderedIds.length > 1) {
+            const current = activeTrackView ?? leadTrackId;
+            trackTabsBar.innerHTML = [
+                ...renderedIds.map(id => `
+                    <button class="track-view-tab${id === current ? ' active' : ''}"
+                            data-view="${id}">${escapeHtml(id)}</button>`),
+                `<button class="track-view-tab${current === 'all' ? ' active' : ''}"
+                         data-view="all">All</button>`,
+            ].join('');
+            trackTabsBar.addEventListener('click', (e) => {
+                const btn = e.target.closest('.track-view-tab');
+                if (!btn) return;
+                activeTrackView = btn.dataset.view;
+                trackTabsBar.querySelectorAll('.track-view-tab').forEach(b =>
+                    b.classList.toggle('active', b === btn));
+                for (const section of allTracksContainer.querySelectorAll('.tablature-track-section')) {
+                    section.style.display =
+                        (activeTrackView === 'all' || section.dataset.trackId === activeTrackView)
+                            ? 'block' : 'none';
                 }
             });
+        } else {
+            trackTabsBar.remove();
+        }
+
+        // Track checkboxes control AUDIO only — the view tabs decide
+        // what you SEE. Default: the lead track sounds.
+        const trackCheckboxes = controls.querySelectorAll('.track-checkbox');
+        trackCheckboxes.forEach(checkbox => {
+            checkbox.checked = checkbox.dataset.trackId === leadTrackId;
         });
 
         // Wire up repeat toggle (re-renders with repeat signs or unrolled)
@@ -799,14 +830,10 @@ async function renderTablaturePart(part, container) {
         }
 
         // Wire up two-feel toggle (cut-time presentation, re-render)
-        const feelCheckbox = controls.querySelector('.tab-feel-checkbox');
-        const feelLabel = controls.querySelector('.tab-feel-label');
-        if (feelCheckbox) {
-            feelCheckbox.addEventListener('change', () => {
-                twoFeelMode = feelCheckbox.checked;
-                if (feelLabel) {
-                    feelLabel.textContent = twoFeelMode ? 'Two feel' : 'Four feel';
-                }
+        const feelSelect = controls.querySelector('.tab-feel-select');
+        if (feelSelect) {
+            feelSelect.addEventListener('change', () => {
+                twoFeelMode = feelSelect.value === 'two';
                 renderTablaturePart(part, container);
             });
         }
@@ -957,12 +984,13 @@ function createTablatureControls(otf, part) {
         </label>
     ` : '';
 
-    // Two-feel toggle (cut time) only makes sense for 4/4 tunes
+    // Feel selector (4/4 tunes only): explicit dropdown, no ambiguous
+    // toggle state
     const feelToggleHtml = (otf.metadata?.time_signature || '4/4') === '4/4' ? `
-        <label class="tab-feel-toggle" title="Feel 4/4 as cut time (2/2): half-note pulse, beams in fours">
-            <input type="checkbox" class="tab-feel-checkbox" ${twoFeelMode ? 'checked' : ''}>
-            <span class="tab-feel-label">${twoFeelMode ? 'Two feel' : 'Four feel'}</span>
-        </label>
+        <select class="tab-feel-select" title="Rhythmic feel: quarter-note pulse or cut time">
+            <option value="four" ${twoFeelMode ? '' : 'selected'}>Four feel</option>
+            <option value="two" ${twoFeelMode ? 'selected' : ''}>Two feel</option>
+        </select>
     ` : '';
 
     // Build key options with capo indicators (chromatic order for vocal range adjustment)
@@ -1133,7 +1161,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
     };
 
     player.onPlaybackEnd = () => {
-        playBtn.textContent = '▶ Play';
+        playBtn.textContent = armed?.kind === 'loop' ? '▶ Loop' : '▶ Play';
         playBtn.classList.remove('playing');
         stopBtn.disabled = true;
         posEl.textContent = '';
@@ -1157,8 +1185,8 @@ function setupTablaturePlayer(otf, controls, renderer) {
         return Array.from(checkboxes).map(cb => cb.dataset.trackId);
     };
 
-    // Shared playback entry: the Play button, click-to-play, and
-    // drag-to-loop all funnel through here so button state stays true.
+    // Shared playback entry: the Play button executes whatever is
+    // ARMED (cursor / phrase); nothing plays on click alone.
     const startPlayback = async (extra = {}) => {
         if (player.isPlaying) player.stop();
         playBtn.textContent = '⏸ Pause';
@@ -1173,24 +1201,23 @@ function setupTablaturePlayer(otf, controls, renderer) {
         });
     };
 
-    // Play/stop
-    playBtn.addEventListener('click', async () => {
-        if (player.isPlaying) {
-            player.stop();
-            playBtn.textContent = '▶ Play';
-            playBtn.classList.remove('playing');
-            stopBtn.disabled = true;
-            eachRenderer(r => r.resetPlaybackVisualization());
-            eachRenderer(r => r._playbackInteractions?.clearHighlight());
-        } else {
-            await startPlayback();
-        }
-    });
+    // ARM-THEN-PLAY (Mike: clicking/highlighting must not auto-start):
+    // click arms a play cursor at that BEAT; drag arms a whole-measure
+    // phrase for looping (one-measure count-in optional). The Play
+    // button label reflects what's armed; Esc disarms.
+    let armed = null; // {kind:'cursor', tick} | {kind:'loop', ...range}
+    let armedVisual = null; // {trackId, measure, tick} | {trackId, m0, m1}
+    const updatePlayLabel = () => {
+        if (player.isPlaying) return;
+        playBtn.textContent = armed?.kind === 'loop' ? '▶ Loop' : '▶ Play';
+    };
+    const disarm = () => {
+        armed = null;
+        armedVisual = null;
+        eachRenderer(r => r._playbackInteractions?.clearArmed());
+        updatePlayLabel();
+    };
 
-    // CLICK-TO-PLAY and DRAG-TO-LOOP on every rendered track (Mike's
-    // reading-view spec): click starts the ensemble from that BEAT
-    // (quantized, not note-anchored); dragging across measures selects
-    // a phrase and loops it — with an optional one-measure count-in.
     const countInCheckbox = controls.querySelector('.tab-countin-checkbox');
     const beatTicks = timings.measureTiming.beatTicksFor
         ? timings.measureTiming.beatTicksFor(1) : 480;
@@ -1198,30 +1225,76 @@ function setupTablaturePlayer(otf, controls, renderer) {
         if (!countInCheckbox?.checked) return 0;
         return Math.max(1, Math.round(timings.measureTiming.ticksFor(1) / beatTicks));
     };
-    const attachInteractions = (r) => {
+
+    const attachInteractions = (r, trackId) => {
         r._playbackInteractions?.destroy();
         r._playbackInteractions = attachTabPlaybackInteractions(r, {
             beatTicks,
             onPlayFrom: ({ measure, tick }) => {
                 const t = playbackTickForPoint(
                     timings.playback, compact, measure, tick);
-                if (t != null) startPlayback({ startTick: t });
+                if (t == null) return;
+                armed = { kind: 'cursor', tick: t };
+                armedVisual = { trackId, measure, tick };
+                eachRenderer((other) => {
+                    if (other !== r) other._playbackInteractions?.clearArmed();
+                });
+                updatePlayLabel();
             },
             onLoopMeasures: (m0, m1) => {
                 const range = playbackRangeForMeasures(
                     timings.playback, compact, m0, m1);
-                if (range) startPlayback({
-                    ...range, loop: true, countInBeats: countInBeatsFor(),
+                if (!range) return;
+                armed = { kind: 'loop', ...range };
+                armedVisual = { trackId, m0, m1 };
+                eachRenderer((other) => {
+                    if (other !== r) other._playbackInteractions?.clearArmed();
                 });
+                updatePlayLabel();
             },
         });
+        // restore armed visuals after a renderer re-render
+        if (armedVisual?.trackId === trackId) {
+            if (armedVisual.m0 != null) {
+                r._playbackInteractions.highlightMeasures(armedVisual.m0, armedVisual.m1);
+            } else {
+                r._playbackInteractions.armCaretAt(armedVisual.measure, armedVisual.tick);
+            }
+        }
     };
-    for (const r of Object.values(trackRenderers)) {
-        attachInteractions(r);
+    for (const [trackId, r] of Object.entries(trackRenderers)) {
+        attachInteractions(r, trackId);
         // renderer re-renders (resize, Bravura) rebuild the row SVGs —
         // reattach so the handlers survive
-        r.onAfterRender = () => attachInteractions(r);
+        r.onAfterRender = () => attachInteractions(r, trackId);
     }
+
+    // Esc disarms (one live listener; replaced on re-render)
+    if (workViewEscHandler) document.removeEventListener('keydown', workViewEscHandler);
+    workViewEscHandler = (e) => {
+        if (e.key === 'Escape' && document.contains(controls)) disarm();
+    };
+    document.addEventListener('keydown', workViewEscHandler);
+
+    // Play/stop
+    playBtn.addEventListener('click', async () => {
+        if (player.isPlaying) {
+            player.stop();
+            updatePlayLabel();
+            playBtn.classList.remove('playing');
+            stopBtn.disabled = true;
+            eachRenderer(r => r.resetPlaybackVisualization());
+        } else if (armed?.kind === 'loop') {
+            await startPlayback({
+                startTick: armed.startTick, endTick: armed.endTick,
+                loop: true, countInBeats: countInBeatsFor(),
+            });
+        } else if (armed?.kind === 'cursor') {
+            await startPlayback({ startTick: armed.tick });
+        } else {
+            await startPlayback();
+        }
+    });
 
     stopBtn.addEventListener('click', () => {
         player.stop();
