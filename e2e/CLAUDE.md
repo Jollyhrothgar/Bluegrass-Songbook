@@ -12,9 +12,16 @@ npm run test:all       # Run unit tests + E2E tests
 ## Configuration
 
 - **Config**: `playwright.config.js` (project root)
-- **Web server**: Starts `./scripts/server` on port 8080 automatically
+- **Web server**: Starts `./scripts/server <port> --exact` automatically on a
+  dedicated test port (default **8137**, deliberately outside the 8080-8090
+  dev-server/`--cleanup` range so tests never hit an unrelated app on 8080)
+- **Port override**: `PW_PORT=<port> npm run test:e2e`
+- **Reuse server**: off by default - Playwright starts and owns a fresh server,
+  and `--exact` mode fails fast (instead of auto-incrementing) if the port is
+  occupied, so tests can never silently run against a foreign server. Setting
+  `PW_PORT` explicitly opts in to `reuseExistingServer` ("I'm managing the
+  server on that port myself").
 - **Viewport**: 1440x900 (wide, keeps sidebar visible)
-- **Reuse server**: `reuseExistingServer: true` - won't restart if already running
 
 ## Test Specs
 
