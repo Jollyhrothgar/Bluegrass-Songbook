@@ -685,16 +685,19 @@ export class TabPlayer {
                 this.animationFrame = requestAnimationFrame(update);
             } else {
                 if (this.loop && this._loopSource) {
-                    this.stop();
-                    // Tracked so a user stop() during the gap cancels it
-                    // count-in only on the FIRST pass; carry LIVE track
-                    // toggles into the next pass (don't revert to the
-                    // trackIds the loop started with)
+                    // Capture the LIVE mix BEFORE stop() — stop tears the
+                    // gain buses down, and reading them afterwards fell
+                    // back to the loop's ORIGINAL trackIds: every wrap
+                    // silently reverted mid-loop toggles (Mike: 'a
+                    // reaction, but not the right one').
                     const liveIds = this.trackGains
                         ? Object.entries(this.trackGains)
                             .filter(([, g]) => g.gain.value > 0.5)
                             .map(([id]) => id)
                         : options.trackIds;
+                    this.stop();
+                    // Tracked so a user stop() during the gap cancels it
+                    // count-in only on the FIRST pass
                     this._loopTimer = setTimeout(
                         () => this.play(this._loopSource,
                             { ...options, countInBeats: 0, trackIds: liveIds }), 100);
