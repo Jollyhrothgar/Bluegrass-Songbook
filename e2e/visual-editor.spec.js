@@ -322,7 +322,7 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
 
     const lyricInput = (page) => page.locator('.ve-lyric-input');
 
-    // The ghost slot's left edge must sit on the target syllable's left
+    // The ghost caret's center must sit on the target syllable's left
     // edge (the seam it will commit to), same visual row, within 2px.
     async function ghostAlignment(page) {
         return page.evaluate(() => {
@@ -334,19 +334,19 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
             const tr = target.getBoundingClientRect();
             return {
                 pos: slot.dataset.pos,
-                dx: sr.left - tr.left,
+                dx: (sr.left + sr.width / 2) - tr.left,
                 sameRow: Math.abs(sr.bottom - tr.top) < 30
             };
         });
     }
 
-    test('hovering the chord row shows a ghost slot aligned above the nearest seam', async ({ page }) => {
+    test('hovering the chord row shows a ghost caret on the nearest seam', async ({ page }) => {
         await openSong(page, SONG);
         const strip = stripFor(page, 'world');
         const box = await strip.boundingBox();
 
-        // near the left edge: the slot sits on this token's own seam,
-        // left-aligned with "world"
+        // near the left edge: the caret sits on this token's own seam,
+        // centered on "world"'s left edge
         await page.mouse.move(box.x + 2, box.y + box.height / 2);
         const slot = page.locator('.ve-slot-ghost');
         await expect(slot).toBeVisible();
@@ -356,7 +356,7 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
         expect(a.sameRow).toBe(true);
 
         // near the right edge: snapped to the NEXT seam ("friend"),
-        // left-aligned with "friend"
+        // centered on "friend"'s left edge
         await page.mouse.move(box.x + box.width - 2, box.y + box.height / 2);
         a = await ghostAlignment(page);
         expect(a.pos).toBe('12');
@@ -368,7 +368,7 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
         await expect(page.locator('.ve-slot-ghost')).toHaveCount(0);
     });
 
-    test('ghost slot stays aligned across a wrapped line', async ({ page }) => {
+    test('ghost caret stays aligned across a wrapped line', async ({ page }) => {
         const words = Array.from({ length: 24 }, () => 'wonderful mountain morning');
         await openSong(page, `{start_of_verse: Verse 1}\n${words.join(' ')}\n{end_of_verse}\n`);
 
@@ -386,7 +386,7 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
         expect(boundary).not.toBeNull();   // the line must actually wrap
 
         // right half of the boundary seg targets the first syllable of the
-        // NEXT visual row: the slot must render there, not at the row end
+        // NEXT visual row: the caret must render there, not at the row end
         await page.mouse.move(boundary.x, boundary.y);
         await expect(page.locator('.ve-slot-ghost')).toBeVisible();
         const a = await ghostAlignment(page);
@@ -394,7 +394,7 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
         expect(a.sameRow).toBe(true);
     });
 
-    test('hover and selection are the same slot: dashed ghost becomes solid', async ({ page }) => {
+    test('hover and selection are the same caret: translucent ghost becomes solid', async ({ page }) => {
         await openSong(page, SONG);
         const strip = stripFor(page, 'world');
         const box = await strip.boundingBox();
@@ -404,9 +404,11 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
         const ghost = await page.evaluate(() => {
             const g = document.querySelector('.ve-slot-ghost');
             const r = g.getBoundingClientRect();
-            return { left: r.left, top: r.top, border: getComputedStyle(g).borderTopStyle };
+            return { left: r.left, top: r.top, width: r.width, height: r.height,
+                     opacity: parseFloat(getComputedStyle(g).opacity) };
         });
-        expect(ghost.border).toBe('dashed');
+        expect(ghost.opacity).toBeLessThan(1);      // translucent ghost
+        expect(ghost.width).toBeLessThanOrEqual(4); // thin caret, not a box
 
         // click the same spot: same shape, same place, solid
         await page.mouse.click(box.x + 2, box.y + box.height / 2);
@@ -415,11 +417,14 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
         const sel = await page.evaluate(() => {
             const el = document.querySelector('.ve-slot-selected');
             const r = el.getBoundingClientRect();
-            return { left: r.left, top: r.top, border: getComputedStyle(el).borderTopStyle };
+            return { left: r.left, top: r.top, width: r.width, height: r.height,
+                     opacity: parseFloat(getComputedStyle(el).opacity) };
         });
-        expect(sel.border).toBe('solid');
+        expect(sel.opacity).toBe(1);
         expect(Math.abs(sel.left - ghost.left)).toBeLessThanOrEqual(2);
         expect(Math.abs(sel.top - ghost.top)).toBeLessThanOrEqual(2);
+        expect(Math.abs(sel.width - ghost.width)).toBeLessThanOrEqual(1);  // same shape
+        expect(Math.abs(sel.height - ghost.height)).toBeLessThanOrEqual(1);
 
         // the syllable beneath is a subtle secondary cue, not a heavy
         // outline (the slot in the strip is the primary indicator)
@@ -430,6 +435,67 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
         });
         expect(syl.outline).toBe('none');
         expect(syl.shadow).toContain('inset');
+    });
+
+    test('hover and selection carets on adjacent short words stay distinct', async ({ page }) => {
+        // The screenshot scenario: seam selected at "big", seam hovered at
+        // "a" right beside it. The old fixed-width slot boxes were wider
+        // than "a " and overlapped into visual mush; carets mark points,
+        // so each must sit on its own seam with clear air between them.
+        await openSong(page, '{start_of_verse: Verse 1}\ncome ride on a big blue train\n{end_of_verse}\n');
+
+        const bigStrip = stripFor(page, 'big');
+        let box = await bigStrip.boundingBox();
+        await page.mouse.click(box.x + 2, box.y + box.height / 2);   // select seam at "big"
+        await expect(page.locator('.ve-slot-selected')).toBeVisible();
+
+        const aStrip = stripFor(page, /^a\s*$/);
+        box = await aStrip.boundingBox();
+        await page.mouse.move(box.x + 2, box.y + box.height / 2);    // hover seam at "a"
+        await expect(page.locator('.ve-slot-ghost')).toBeVisible();
+
+        const g = await page.evaluate(() => {
+            const m = (sel) => {
+                const el = document.querySelector(sel);
+                const r = el.getBoundingClientRect();
+                const target = el.closest('.ve-line')
+                    .querySelector(`.ve-syl[data-start="${el.dataset.pos}"]`);
+                return { center: r.left + r.width / 2, left: r.left, right: r.right,
+                         seam: target.getBoundingClientRect().left };
+            };
+            return { ghost: m('.ve-slot-ghost'), sel: m('.ve-slot-selected') };
+        });
+        // each caret centered on its own seam...
+        expect(Math.abs(g.ghost.center - g.ghost.seam)).toBeLessThanOrEqual(2);
+        expect(Math.abs(g.sel.center - g.sel.seam)).toBeLessThanOrEqual(2);
+        // ...with clear air between them (the old boxes overlapped here)
+        expect(g.sel.left - g.ghost.right).toBeGreaterThanOrEqual(4);
+    });
+
+    test('no hover caret inside the dead zone around the selected seam', async ({ page }) => {
+        // "imagine" tokenizes as i·ma·gi·ne, so the "i" and "ma" seams sit
+        // only a one-letter glyph apart. With "ma" selected, hovering the
+        // "i" seam would put a second caret nearly on top of the selected
+        // one — the ~0.5em dead zone suppresses it.
+        await openSong(page, '{start_of_verse: Verse 1}\nwe imagine home\n{end_of_verse}\n');
+
+        const maStrip = stripFor(page, 'ma');
+        let box = await maStrip.boundingBox();
+        await page.mouse.click(box.x + 2, box.y + box.height / 2);   // select seam at "ma"
+        await expect(page.locator('.ve-slot-selected')).toBeVisible();
+
+        const iStrip = stripFor(page, /^i$/);
+        box = await iStrip.boundingBox();
+        await page.mouse.move(box.x + 1, box.y + box.height / 2);    // hover seam at "i"
+        await page.waitForTimeout(100);
+        await expect(page.locator('.ve-slot-ghost')).toHaveCount(0); // dead zone
+        await expect(page.locator('.ve-slot-selected')).toHaveCount(1);
+
+        // a seam outside the dead zone still gets its hover caret
+        const homeStrip = stripFor(page, 'ho');
+        box = await homeStrip.boundingBox();
+        await page.mouse.move(box.x + 2, box.y + box.height / 2);
+        await expect(page.locator('.ve-slot-ghost')).toBeVisible();
     });
 
     test('hovering an occupied seam highlights the chip; the end seam highlights the + slot', async ({ page }) => {
@@ -453,7 +519,7 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
         await expect(page.locator('.ve-chip-hover')).toHaveCount(0);
     });
 
-    test('slot indicator has usable contrast in both themes', async ({ page }) => {
+    test('caret indicator has usable contrast in both themes', async ({ page }) => {
         await openSong(page, SONG);
         await stripFor(page, 'world').click();
         await expect(page.locator('.ve-slot-selected')).toBeVisible();
@@ -477,12 +543,12 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
                     if (v.length >= 3 && (v.length < 4 || v[3] > 0)) { bg = v; break; }
                     el = el.parentElement;
                 }
-                const border = getComputedStyle(slot).borderTopColor;
-                const l1 = lum(parse(border));
+                const bar = getComputedStyle(slot).backgroundColor;
+                const l1 = lum(parse(bar));
                 const l2 = lum(bg);
                 return +(((Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05)).toFixed(2));
             }, theme);
-            expect(c, `${theme} theme slot contrast`).toBeGreaterThanOrEqual(3);
+            expect(c, `${theme} theme caret contrast`).toBeGreaterThanOrEqual(3);
         }
         await page.evaluate(() => document.documentElement.removeAttribute('data-theme'));
     });

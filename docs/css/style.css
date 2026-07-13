@@ -10126,30 +10126,40 @@ body.fullscreen-mode::after {
     background: rgba(96, 165, 250, 0.08); /* fallback */
     background: color-mix(in srgb, var(--accent) 8%, transparent);
 }
-/* Seam slot: ONE shape for hover and selection, absolutely positioned in
-   the seg that owns the target token so its LEFT edge sits on the target
-   syllable's left edge (no layout shift, correct across wrapped lines).
-   Hover = dashed ghost; selected = solid + filled. */
+/* Seam caret: ONE shape for hover and selection — a thin insertion bar
+   with a small triangle head, centered on the seam (the target syllable's
+   left edge), absolutely positioned in the seg that owns the target token
+   (no layout shift, correct across wrapped lines). A caret marks a POINT,
+   so indicators at adjacent seams stay distinct even over one-letter
+   syllables — the old fixed-width slot boxes overhung short tokens and
+   collided with each other. Hover = translucent ghost; selected = solid.
+   Same shape, weight distinguishes them. */
 .ve-slot {
     position: absolute;
     top: 0.05em;
-    left: 0;
+    left: -1.5px; /* 3px bar centered on the seam */
     box-sizing: border-box;
-    width: 1em;
-    height: 1.2em;
-    border-radius: var(--radius-sm, 4px);
+    width: 3px;
+    height: 1.3em;
+    border-radius: 2px;
+    background: var(--accent);
     pointer-events: none;
     z-index: 1;
 }
-.ve-slot-ghost {
-    border: 2px dashed var(--accent);
-    opacity: 0.6;
+.ve-slot::before { /* triangle head: reads as "insert here" */
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid var(--accent);
 }
-.ve-slot-selected {
-    border: 2px solid var(--accent);
-    background: rgba(96, 165, 250, 0.18); /* fallback */
-    background: color-mix(in srgb, var(--accent) 18%, transparent);
-}
+.ve-slot-ghost { opacity: 0.55; }
+.ve-slot-selected { opacity: 1; }
 
 /* ===== In-preview lyric editing ===== */
 /* the edited line swaps to a bare single-line input; padding-top keeps the

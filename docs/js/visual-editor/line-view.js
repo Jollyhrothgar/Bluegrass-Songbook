@@ -130,9 +130,11 @@ export function renderChordsLine(section, line, li, ctx) {
 
     // Seam indicator: ONE visual language for hover and selection. The
     // indicator for a seam is whatever already represents it — an existing
-    // chip (highlight it), the end slot (highlight it), or a slot box
-    // left-aligned above the target syllable (dashed on hover, solid when
-    // selected — see makeSlot). Hover state is per row, absolutely
+    // chip (highlight it), the end slot (highlight it), or a thin caret
+    // (insertion bar, see .ve-slot CSS) centered on the seam above the
+    // target syllable (translucent on hover, solid when selected). A caret
+    // marks a POINT, so indicators at adjacent seams stay distinct even
+    // over one-letter syllables. Hover state is per row, absolutely
     // positioned so there is no layout shift; clicking commits the same
     // seam through onStripTap.
     const makeSlot = (cls, pos) => {
@@ -148,6 +150,30 @@ export function renderChordsLine(section, line, li, ctx) {
         for (const m of hoverMarked) m.classList.remove('ve-chip-hover', 've-end-slot-hover');
         hoverMarked = [];
         hoverPos = null;
+    };
+    // px distance between two seams on the same visual row; null when
+    // unmeasurable (jsdom zero rects, different wrapped rows)
+    const seamGap = (a, b) => {
+        const ea = row.querySelector(`.ve-strip[data-start="${a}"]`);
+        const eb = row.querySelector(`.ve-strip[data-start="${b}"]`);
+        if (!ea || !eb) return null;
+        const ra = ea.getBoundingClientRect();
+        const rb = eb.getBoundingClientRect();
+        if (ra.width === 0 || rb.width === 0) return null;  // jsdom
+        if (Math.abs(ra.top - rb.top) > 1) return null;     // wrapped apart
+        return Math.abs(ra.left - rb.left);
+    };
+    // Dead zone (~0.5em) around the already-selected seam: seams on
+    // one-letter syllables sit only a few px apart, and a hover caret
+    // that close to the selected caret reads as clutter — the selected
+    // caret already marks (nearly) this spot. Click behavior unchanged.
+    const nearSelectedSeam = (pos) => {
+        if (!selection || selection.sectionId !== section.id ||
+            selection.lineIndex !== li || selection.chordIndex !== undefined) return false;
+        const gap = seamGap(pos, selection.position);
+        if (gap === null) return false;
+        const em = parseFloat(getComputedStyle(row).fontSize) || 16;
+        return gap < em * 0.5;
     };
     const showSlot = (pos) => {
         if (pos === hoverPos) return;
@@ -171,9 +197,10 @@ export function renderChordsLine(section, line, li, ctx) {
             if (end) { end.classList.add('ve-end-slot-hover'); hoverMarked.push(end); }
             return;
         }
-        // otherwise a ghost slot above the target syllable — appended to
-        // the seg that OWNS the target token, so its left edge lands on
-        // the syllable's left edge even when the line wraps
+        // otherwise a ghost caret above the target syllable — appended to
+        // the seg that OWNS the target token, so it sits on the seam even
+        // when the line wraps — unless it would crowd the selected caret
+        if (nearSelectedSeam(pos)) return;
         const strip = row.querySelector(`.ve-strip[data-start="${pos}"]`);
         if (strip) {
             hoverSlot = makeSlot('ve-slot-ghost', pos);

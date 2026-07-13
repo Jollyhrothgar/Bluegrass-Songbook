@@ -78,17 +78,22 @@ chord territory; the lyric text below is text territory. There is no
 hidden mode — clicking a word never places a chord, and chord entry never
 needs the lyrics.
 
-**Chord row**: hover and selection speak ONE visual language — a slot box
-in the strip, left-aligned above the target syllable (its left edge sits
-on the syllable's left edge, correct across wrapped lines because the slot
-is appended to the seg that owns the target token). Hover = dashed ghost
-(`.ve-slot-ghost`); click = solid filled version of the same shape
-(`.ve-slot-selected`). Seams = token starts from `syllables.js`, plus the
-line-end slot; `nearestSeamPosition` in line-view.js picks own-vs-next by
-which edge is closer. When the snapped seam is already occupied, the
-existing element is the indicator: hovering highlights the chip
-(`.ve-chip-hover`, dashed preview of the `.ve-chip-selected` ring) or the
-`+` end slot (`.ve-end-slot-hover`) instead of showing a ghost slot.
+**Chord row**: hover and selection speak ONE visual language — a thin
+insertion CARET (3px bar + small triangle head, `.ve-slot`) centered on
+the seam, i.e. the target syllable's left edge (correct across wrapped
+lines because it is appended to the seg that owns the target token). A
+caret marks a point, so indicators at adjacent seams stay distinct even
+over one-letter syllables — fixed-width slot boxes used to overhang short
+tokens and collide. Hover = translucent ghost (`.ve-slot-ghost`); click =
+solid, same shape (`.ve-slot-selected`). A ~0.5em dead zone around the
+selected seam suppresses the hover caret (never two carets crowding one
+spot; clicks still commit normally). Seams = token starts from
+`syllables.js`, plus the line-end slot; `nearestSeamPosition` in
+line-view.js picks own-vs-next by which edge is closer. When the snapped
+seam is already occupied, the existing element is the indicator: hovering
+highlights the chip (`.ve-chip-hover`, dashed preview of the
+`.ve-chip-selected` ring) or the `+` end slot (`.ve-end-slot-hover`)
+instead of showing a ghost caret.
 Clicking selects that offset — from there everything downstream is
 unchanged: chord palette (diatonic chips, recents, More… picker),
 ghost-chip typed entry, Space/Tab advance, chip tap/hover-×/Delete. The
