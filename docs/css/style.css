@@ -10012,6 +10012,12 @@ body.fullscreen-mode::after {
     cursor: pointer;
     font-size: 0.9em;
 }
+/* Hovering the strip over an occupied seam: the chip IS the indicator —
+   dashed preview of the same ring that .ve-chip-selected makes solid */
+.ve-chip-hover {
+    outline: 2px dashed var(--accent);
+    outline-offset: 2px;
+}
 .ve-chip-selected {
     outline: 2px solid var(--accent);
     outline-offset: 2px; /* ring with a bg gap so it reads on the chord color */
@@ -10077,10 +10083,12 @@ body.fullscreen-mode::after {
     background: rgba(96, 165, 250, 0.06); /* fallback */
     background: color-mix(in srgb, var(--accent) 6%, transparent);
 }
+/* Selected seam's syllable: a subtle secondary cue (tint + underline) —
+   the primary indicator is the slot/chip in the chord strip above. */
 .ve-syl-selected {
-    background: rgba(96, 165, 250, 0.35); /* fallback */
-    background: color-mix(in srgb, var(--accent) 30%, var(--bg));
-    outline: 2px solid var(--accent);
+    background: rgba(96, 165, 250, 0.12); /* fallback */
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    box-shadow: inset 0 -2px 0 var(--accent);
 }
 .ve-end-slot {
     background: none;
@@ -10092,7 +10100,16 @@ body.fullscreen-mode::after {
     min-height: 28px;
     margin-left: 0.4rem;
 }
-.ve-end-slot:hover { border-color: var(--accent); color: var(--accent); }
+.ve-end-slot:hover,
+.ve-end-slot-hover { border-color: var(--accent); color: var(--accent); }
+/* selected end slot: solid, filled version of the same shape */
+.ve-end-slot.ve-syl-selected {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    background: rgba(96, 165, 250, 0.18); /* fallback */
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    box-shadow: none; /* the syl underline cue is for lyric syllables */
+}
 
 /* ===== Chord row as the chord surface ===== */
 /* Each token's chip container doubles as the explicit chord strip above
@@ -10109,18 +10126,29 @@ body.fullscreen-mode::after {
     background: rgba(96, 165, 250, 0.08); /* fallback */
     background: color-mix(in srgb, var(--accent) 8%, transparent);
 }
-/* faint slot centered on the hovered seam; no layout shift */
-.ve-slot-ghost {
+/* Seam slot: ONE shape for hover and selection, absolutely positioned in
+   the seg that owns the target token so its LEFT edge sits on the target
+   syllable's left edge (no layout shift, correct across wrapped lines).
+   Hover = dashed ghost; selected = solid + filled. */
+.ve-slot {
     position: absolute;
     top: 0.05em;
+    left: 0;
+    box-sizing: border-box;
     width: 1em;
     height: 1.2em;
-    transform: translateX(-50%);
-    border: 1px dashed var(--chord);
     border-radius: var(--radius-sm, 4px);
-    opacity: 0.5;
     pointer-events: none;
     z-index: 1;
+}
+.ve-slot-ghost {
+    border: 2px dashed var(--accent);
+    opacity: 0.6;
+}
+.ve-slot-selected {
+    border: 2px solid var(--accent);
+    background: rgba(96, 165, 250, 0.18); /* fallback */
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
 }
 
 /* ===== In-preview lyric editing ===== */

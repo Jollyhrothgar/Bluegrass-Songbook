@@ -78,14 +78,22 @@ chord territory; the lyric text below is text territory. There is no
 hidden mode — clicking a word never places a chord, and chord entry never
 needs the lyrics.
 
-**Chord row**: hovering a strip shows a faint ghost slot (`.ve-slot-ghost`)
-snapped to the nearest syllable seam under the cursor (seams = token
-starts from `syllables.js`, plus the line-end slot; `nearestSeamPosition`
-in line-view.js picks own-vs-next by which edge is closer). Clicking
-selects that offset — from there everything downstream is unchanged: chord
-palette (diatonic chips, recents, More… picker), ghost-chip typed entry,
-Space/Tab advance, chip tap/hover-×/Delete. The selected seam highlights
-the syllable beneath it (`.ve-syl-selected`), which is what the popover
+**Chord row**: hover and selection speak ONE visual language — a slot box
+in the strip, left-aligned above the target syllable (its left edge sits
+on the syllable's left edge, correct across wrapped lines because the slot
+is appended to the seg that owns the target token). Hover = dashed ghost
+(`.ve-slot-ghost`); click = solid filled version of the same shape
+(`.ve-slot-selected`). Seams = token starts from `syllables.js`, plus the
+line-end slot; `nearestSeamPosition` in line-view.js picks own-vs-next by
+which edge is closer. When the snapped seam is already occupied, the
+existing element is the indicator: hovering highlights the chip
+(`.ve-chip-hover`, dashed preview of the `.ve-chip-selected` ring) or the
+`+` end slot (`.ve-end-slot-hover`) instead of showing a ghost slot.
+Clicking selects that offset — from there everything downstream is
+unchanged: chord palette (diatonic chips, recents, More… picker),
+ghost-chip typed entry, Space/Tab advance, chip tap/hover-×/Delete. The
+syllable beneath a selected seam gets a subtle secondary cue
+(`.ve-syl-selected`, tint + accent underline), which is what the popover
 anchors to. Tap a chip → same palette in edit mode with ✕ Remove.
 On wide (side-by-side, ≥800px) layouts the palette floats as a popover
 anchored to the selection (`popover-position.js`: below the line, flipped

@@ -128,16 +128,57 @@ export function renderChordsLine(section, line, li, ctx) {
         return chips;
     };
 
-    // One faint ghost slot per row, absolutely positioned on the hovered
-    // seam (no layout shift). Pure hover affordance — clicking commits the
-    // same seam through onStripTap.
-    let slot = null;
-    const hideSlot = () => { if (slot) { slot.remove(); slot = null; } };
-    const showSlot = (seg, atNext, pos) => {
-        if (!slot) slot = el('span', 've-slot-ghost');
-        slot.dataset.pos = String(pos);
-        slot.style.left = atNext ? '100%' : '0';
-        if (slot.parentElement !== seg) seg.appendChild(slot);
+    // Seam indicator: ONE visual language for hover and selection. The
+    // indicator for a seam is whatever already represents it — an existing
+    // chip (highlight it), the end slot (highlight it), or a slot box
+    // left-aligned above the target syllable (dashed on hover, solid when
+    // selected — see makeSlot). Hover state is per row, absolutely
+    // positioned so there is no layout shift; clicking commits the same
+    // seam through onStripTap.
+    const makeSlot = (cls, pos) => {
+        const s = el('span', 've-slot ' + cls);
+        s.dataset.pos = String(pos);
+        return s;
+    };
+    let hoverSlot = null;
+    let hoverMarked = [];
+    let hoverPos = null;
+    const hideSlot = () => {
+        if (hoverSlot) { hoverSlot.remove(); hoverSlot = null; }
+        for (const m of hoverMarked) m.classList.remove('ve-chip-hover', 've-end-slot-hover');
+        hoverMarked = [];
+        hoverPos = null;
+    };
+    const showSlot = (pos) => {
+        if (pos === hoverPos) return;
+        hideSlot();
+        hoverPos = pos;
+        if (isSelected(pos)) return;  // selection already marks this seam
+        // occupied seam: the chip IS the indicator — highlight it
+        const atPos = line.chords
+            .map((c, ci) => (c.position === pos ? ci : -1)).filter(ci => ci >= 0);
+        if (atPos.length) {
+            for (const ci of atPos) {
+                if (chipSelected(ci)) continue;
+                const chip = row.querySelector(`.ve-chip[data-chord-index="${ci}"]`);
+                if (chip) { chip.classList.add('ve-chip-hover'); hoverMarked.push(chip); }
+            }
+            return;
+        }
+        // end-of-line seam: the "+" end slot is the indicator
+        if (pos === line.lyrics.length) {
+            const end = row.querySelector('.ve-end-slot');
+            if (end) { end.classList.add('ve-end-slot-hover'); hoverMarked.push(end); }
+            return;
+        }
+        // otherwise a ghost slot above the target syllable — appended to
+        // the seg that OWNS the target token, so its left edge lands on
+        // the syllable's left edge even when the line wraps
+        const strip = row.querySelector(`.ve-strip[data-start="${pos}"]`);
+        if (strip) {
+            hoverSlot = makeSlot('ve-slot-ghost', pos);
+            strip.parentElement.appendChild(hoverSlot);
+        }
     };
 
     tokens.forEach((token, ti) => {
@@ -149,7 +190,12 @@ export function renderChordsLine(section, line, li, ctx) {
         strip.classList.add('ve-strip');
         strip.dataset.line = String(li);
         strip.dataset.start = String(token.start);
-        if (ghost && isSelected(token.start)) strip.appendChild(makeGhostChip());
+        if (isSelected(token.start)) {
+            if (ghost) strip.appendChild(makeGhostChip());
+            else if (!line.chords.some(c => c.position === token.start)) {
+                seg.appendChild(makeSlot('ve-slot-selected', token.start));
+            }
+        }
         if (callbacks.onStripTap) {
             strip.addEventListener('click', (e) => {
                 if (e.target.closest('.ve-chip, .ve-chip-x')) return;
@@ -162,7 +208,7 @@ export function renderChordsLine(section, line, li, ctx) {
                 if (e.target.closest('.ve-chip, .ve-chip-x')) { hideSlot(); return; }
                 const pos = nearestSeamPosition(
                     strip.getBoundingClientRect(), e.clientX, token.start, nextStart);
-                showSlot(seg, pos !== token.start, pos);
+                showSlot(pos);
             });
             strip.addEventListener('mouseleave', hideSlot);
         }

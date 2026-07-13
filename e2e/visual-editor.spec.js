@@ -322,24 +322,169 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
 
     const lyricInput = (page) => page.locator('.ve-lyric-input');
 
-    test('hovering the chord row shows a ghost slot snapped to the nearest seam', async ({ page }) => {
+    // The ghost slot's left edge must sit on the target syllable's left
+    // edge (the seam it will commit to), same visual row, within 2px.
+    async function ghostAlignment(page) {
+        return page.evaluate(() => {
+            const slot = document.querySelector('.ve-slot-ghost');
+            if (!slot) return null;
+            const line = slot.closest('.ve-line');
+            const target = line.querySelector(`.ve-syl[data-start="${slot.dataset.pos}"]`);
+            const sr = slot.getBoundingClientRect();
+            const tr = target.getBoundingClientRect();
+            return {
+                pos: slot.dataset.pos,
+                dx: sr.left - tr.left,
+                sameRow: Math.abs(sr.bottom - tr.top) < 30
+            };
+        });
+    }
+
+    test('hovering the chord row shows a ghost slot aligned above the nearest seam', async ({ page }) => {
         await openSong(page, SONG);
         const strip = stripFor(page, 'world');
         const box = await strip.boundingBox();
 
-        // near the left edge: the slot sits on this token's own seam
+        // near the left edge: the slot sits on this token's own seam,
+        // left-aligned with "world"
         await page.mouse.move(box.x + 2, box.y + box.height / 2);
         const slot = page.locator('.ve-slot-ghost');
         await expect(slot).toBeVisible();
-        expect(await slot.getAttribute('data-pos')).toBe('6');   // "world" start
+        let a = await ghostAlignment(page);
+        expect(a.pos).toBe('6');                            // "world" start
+        expect(Math.abs(a.dx)).toBeLessThanOrEqual(2);
+        expect(a.sameRow).toBe(true);
 
-        // near the right edge: snapped to the NEXT seam ("friend")
+        // near the right edge: snapped to the NEXT seam ("friend"),
+        // left-aligned with "friend"
         await page.mouse.move(box.x + box.width - 2, box.y + box.height / 2);
-        expect(await slot.getAttribute('data-pos')).toBe('12');
+        a = await ghostAlignment(page);
+        expect(a.pos).toBe('12');
+        expect(Math.abs(a.dx)).toBeLessThanOrEqual(2);
+        expect(a.sameRow).toBe(true);
 
         // leaving the strip hides the slot
         await page.mouse.move(box.x + box.width / 2, box.y + box.height + 40);
         await expect(page.locator('.ve-slot-ghost')).toHaveCount(0);
+    });
+
+    test('ghost slot stays aligned across a wrapped line', async ({ page }) => {
+        const words = Array.from({ length: 24 }, () => 'wonderful mountain morning');
+        await openSong(page, `{start_of_verse: Verse 1}\n${words.join(' ')}\n{end_of_verse}\n`);
+
+        // find the last seg on the first visual row (the wrap boundary)
+        const boundary = await page.evaluate(() => {
+            const segs = [...document.querySelectorAll(
+                '.ve-line .ve-seg:not(.ve-seg-end)')];
+            const firstTop = Math.round(segs[0].getBoundingClientRect().top);
+            const i = segs.findIndex(
+                s => Math.round(s.getBoundingClientRect().top) !== firstTop);
+            if (i < 1) return null;
+            const r = segs[i - 1].querySelector('.ve-strip').getBoundingClientRect();
+            return { x: r.right - 2, y: r.top + r.height / 2 };
+        });
+        expect(boundary).not.toBeNull();   // the line must actually wrap
+
+        // right half of the boundary seg targets the first syllable of the
+        // NEXT visual row: the slot must render there, not at the row end
+        await page.mouse.move(boundary.x, boundary.y);
+        await expect(page.locator('.ve-slot-ghost')).toBeVisible();
+        const a = await ghostAlignment(page);
+        expect(Math.abs(a.dx)).toBeLessThanOrEqual(2);
+        expect(a.sameRow).toBe(true);
+    });
+
+    test('hover and selection are the same slot: dashed ghost becomes solid', async ({ page }) => {
+        await openSong(page, SONG);
+        const strip = stripFor(page, 'world');
+        const box = await strip.boundingBox();
+
+        await page.mouse.move(box.x + 2, box.y + box.height / 2);
+        await expect(page.locator('.ve-slot-ghost')).toBeVisible();
+        const ghost = await page.evaluate(() => {
+            const g = document.querySelector('.ve-slot-ghost');
+            const r = g.getBoundingClientRect();
+            return { left: r.left, top: r.top, border: getComputedStyle(g).borderTopStyle };
+        });
+        expect(ghost.border).toBe('dashed');
+
+        // click the same spot: same shape, same place, solid
+        await page.mouse.click(box.x + 2, box.y + box.height / 2);
+        await expect(page.locator('.ve-slot-selected')).toBeVisible();
+        await expect(page.locator('.ve-slot-ghost')).toHaveCount(0);
+        const sel = await page.evaluate(() => {
+            const el = document.querySelector('.ve-slot-selected');
+            const r = el.getBoundingClientRect();
+            return { left: r.left, top: r.top, border: getComputedStyle(el).borderTopStyle };
+        });
+        expect(sel.border).toBe('solid');
+        expect(Math.abs(sel.left - ghost.left)).toBeLessThanOrEqual(2);
+        expect(Math.abs(sel.top - ghost.top)).toBeLessThanOrEqual(2);
+
+        // the syllable beneath is a subtle secondary cue, not a heavy
+        // outline (the slot in the strip is the primary indicator)
+        const syl = await page.evaluate(() => {
+            const el = document.querySelector('.ve-syl-selected');
+            const cs = getComputedStyle(el);
+            return { outline: cs.outlineStyle, shadow: cs.boxShadow };
+        });
+        expect(syl.outline).toBe('none');
+        expect(syl.shadow).toContain('inset');
+    });
+
+    test('hovering an occupied seam highlights the chip; the end seam highlights the + slot', async ({ page }) => {
+        await openSong(page, '{start_of_verse: Verse 1}\nhello [C]world friend\n{end_of_verse}\n');
+
+        // right half of the "lo " strip snaps to the C-chip seam ("world"):
+        // the chip is the indicator — no ghost slot beside it
+        const helloStrip = stripFor(page, 'lo');
+        let box = await helloStrip.boundingBox();
+        await page.mouse.move(box.x + box.width - 2, box.y + box.height / 2);
+        await expect(page.locator('.ve-chip-hover')).toHaveText('C');
+        await expect(page.locator('.ve-slot-ghost')).toHaveCount(0);
+
+        // right half of the last token snaps to the end seam: the existing
+        // "+" end slot is the indicator
+        const friendStrip = stripFor(page, 'friend');
+        box = await friendStrip.boundingBox();
+        await page.mouse.move(box.x + box.width - 2, box.y + box.height / 2);
+        await expect(page.locator('.ve-end-slot-hover')).toHaveCount(1);
+        await expect(page.locator('.ve-slot-ghost')).toHaveCount(0);
+        await expect(page.locator('.ve-chip-hover')).toHaveCount(0);
+    });
+
+    test('slot indicator has usable contrast in both themes', async ({ page }) => {
+        await openSong(page, SONG);
+        await stripFor(page, 'world').click();
+        await expect(page.locator('.ve-slot-selected')).toBeVisible();
+
+        for (const theme of ['dark', 'light']) {
+            const c = await page.evaluate((t) => {
+                document.documentElement.setAttribute('data-theme', t);
+                const slot = document.querySelector('.ve-slot-selected');
+                const parse = (str) => (str.match(/[\d.]+/g) || []).map(Number);
+                const lum = (rgb) => {
+                    const [r, g, b] = rgb.slice(0, 3).map((v) => {
+                        v /= 255;
+                        return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+                    });
+                    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+                };
+                let el = slot.parentElement;
+                let bg = [255, 255, 255];
+                while (el) {
+                    const v = parse(getComputedStyle(el).backgroundColor);
+                    if (v.length >= 3 && (v.length < 4 || v[3] > 0)) { bg = v; break; }
+                    el = el.parentElement;
+                }
+                const border = getComputedStyle(slot).borderTopColor;
+                const l1 = lum(parse(border));
+                const l2 = lum(bg);
+                return +(((Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05)).toFixed(2));
+            }, theme);
+            expect(c, `${theme} theme slot contrast`).toBeGreaterThanOrEqual(3);
+        }
+        await page.evaluate(() => document.documentElement.removeAttribute('data-theme'));
     });
 
     test('clicking a lyric swaps the line for an input with the caret at the click', async ({ page }) => {
