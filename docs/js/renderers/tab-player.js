@@ -24,8 +24,11 @@ const INSTRUMENTS = {
     guitar: { var: '_tone_0251_GeneralUserGS_sf2_file', name: 'Acoustic Guitar' },
     bass: { var: '_tone_0320_GeneralUserGS_sf2_file', name: 'Acoustic Bass' },
     violin: { var: '_tone_0400_GeneralUserGS_sf2_file', name: 'Violin' },
-    mandolin: { var: '_tone_0260_GeneralUserGS_sf2_file', name: 'Steel Guitar (mandolin)' },
-    dobro: { var: '_tone_0260_GeneralUserGS_sf2_file', name: 'Steel Guitar' },
+    // 0260 is the JAZZ ELECTRIC guitar (GM program 26) — Mike caught the
+    // mandolin chops sounding 'like an electric guitar'. GM has no true
+    // mandolin; the acoustic-steel 0253 is the closest plucky patch.
+    mandolin: { var: '_tone_0253_GeneralUserGS_sf2_file', name: 'Acoustic Steel (mandolin)' },
+    dobro: { var: '_tone_0253_GeneralUserGS_sf2_file', name: 'Acoustic Steel (dobro)' },
 };
 
 // CDN URLs for WebAudioFont resources
@@ -36,7 +39,7 @@ const WEBAUDIOFONT_URLS = {
         guitar: 'https://surikov.github.io/webaudiofontdata/sound/0251_GeneralUserGS_sf2_file.js',
         bass: 'https://surikov.github.io/webaudiofontdata/sound/0320_GeneralUserGS_sf2_file.js',
         violin: 'https://surikov.github.io/webaudiofontdata/sound/0400_GeneralUserGS_sf2_file.js',
-        mandolin: 'https://surikov.github.io/webaudiofontdata/sound/0260_GeneralUserGS_sf2_file.js',
+        mandolin: 'https://surikov.github.io/webaudiofontdata/sound/0253_GeneralUserGS_sf2_file.js',
     }
 };
 
@@ -442,7 +445,8 @@ export class TabPlayer {
                                 sustain: mix.sustain,
                                 decay: mix.decay,
                                 trackId: track.id,
-                                instrument: track.instrument
+                                instrument: track.instrument,
+                                muted: note.tech === 'x'  // dead note (chop)
                             });
                         }
                     });
@@ -533,6 +537,11 @@ export class TabPlayer {
                         }
                     }
 
+                    // Dead notes (chop ×): short percussive chuck, damped
+                    if (note.muted) {
+                        duration = Math.min(duration, 0.09);
+                        note.volume *= 0.55;
+                    }
                     note.duration = duration;
                     notes.push(note);
                 }

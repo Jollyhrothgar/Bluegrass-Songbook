@@ -805,7 +805,10 @@ export class TabRenderer {
                         const noteY = opt.topMargin + stringIndex * opt.stringSpacing;
 
                         // Wrap tied notes in brackets [7] to indicate tie continuation
-                        const fretStr = note.tie ? `[${note.f}]` : note.f.toString();
+                        // Dead/muted notes (chops) draw the standard ×
+                        // in place of the fret digit
+                        const fretStr = note.tech === 'x' ? '×'
+                            : note.tie ? `[${note.f}]` : note.f.toString();
                         const bgWidth = note.tie ? 22 : (fretStr.length > 1 ? 16 : 12);
                         const bg = this.createRect(noteX - bgWidth/2, noteY - 7, bgWidth, 14, opt.fretBgColor);
                         bg.setAttribute('class', 'note-bg');
@@ -827,7 +830,8 @@ export class TabRenderer {
 
                         // Render technique symbols that aren't handled by renderSlurs
                         // (h, p, / are rendered as slur arcs with labels in renderSlurs)
-                        if (note.tech && note.tech !== 'h' && note.tech !== 'p' && note.tech !== '/') {
+                        if (note.tech && note.tech !== 'h' && note.tech !== 'p'
+                                && note.tech !== '/' && note.tech !== 'x') {
                             const techText = this.createText(noteX, noteY - 10, note.tech, {
                                 fontSize: '9px',
                                 fill: opt.mutedColor,

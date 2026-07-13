@@ -101,10 +101,16 @@ def test_v3_articulations_from_byte6():
     # the m9 hammer chain 0->2->4: both destinations marked
     assert (9, 1560, 4, 2, "h") in techs and (9, 1680, 4, 4, "h") in techs
 
+    # 27493 has NO transition techniques (its export shows no slurs) —
+    # but its mandolin chop chords carry the DEAD-NOTE flag (byte 6 =
+    # 0x0f -> tech 'x'), which is a per-note property, not a transition.
     d27 = tef_to_otf(TEFReader(str(DOWNLOADS / "27493.tef")).parse()).to_dict()
-    assert not any(n.get("tech")
+    assert not any(n.get("tech") in ("h", "p", "/")
                    for ms in d27["notation"].values() for m in ms
                    for e in m["events"] for n in e["notes"])
+    mando_m8 = next(m for m in d27["notation"]["mandolin"] if m["measure"] == 8)
+    assert all(n.get("tech") == "x"
+               for e in mando_m8["events"] for n in e["notes"])
 
 
 @pytest.mark.skipif(not (DOWNLOADS / "21874.tef").exists(),

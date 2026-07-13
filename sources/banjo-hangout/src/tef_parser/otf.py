@@ -791,6 +791,17 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                         # Fall back to direct event technique for V3 or explicit effects
                         if tech is None:
                             tech = technique_from_event(evt)
+                        # V3 byte 6 == 0x0f marks a DEAD/MUTED note (the
+                        # chop 'x'): a per-note property, unlike the
+                        # transition enum (1 h / 2 p / 3 sl) that byte
+                        # otherwise carries. 27493's mandolin chop chords
+                        # all carry it; they rendered as ringing open
+                        # strings before (Mike caught the missing
+                        # note-type). Takes precedence over any paired
+                        # transition tech.
+                        if (evt.raw_data and len(evt.raw_data) >= 12
+                                and evt.raw_data[6] == 0x0f):
+                            tech = 'x'
                         # Check if this note is tied to the previous note
                         tie = is_tied_note(evt)
                         # Extract fingering annotation from effect2 when bit5 is set

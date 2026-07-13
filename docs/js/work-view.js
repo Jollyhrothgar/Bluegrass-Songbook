@@ -741,33 +741,9 @@ async function renderTablaturePart(part, container) {
                 (activeTrackView === 'all' || (activeTrackView ?? leadTrackId) === track.id)
                     ? 'block' : 'none';
 
-            const trackHeader = document.createElement('div');
-            trackHeader.className = 'tablature-track-header';
-            trackHeader.innerHTML = `
-                <span class="track-icon">${icon}</span>
-                <span class="track-name">${track.id}</span>
-                ${!isLead ? '<span class="track-role">(backup)</span>' : ''}
-                ${otf.tracks.length > 1
-                    ? `<button class="track-solo qc-btn" title="Hear only this track (click again for all)">Solo</button>`
-                    : ''}
-            `;
-            trackSection.appendChild(trackHeader);
-
-            // SOLO: drive the existing track checkboxes (display + audio
-            // follow their change handlers). Second click un-solos.
-            trackHeader.querySelector('.track-solo')?.addEventListener('click', () => {
-                const boxes = [...controls.querySelectorAll('.track-checkbox')];
-                const soloed = boxes.every(cb =>
-                    cb.checked === (cb.dataset.trackId === track.id));
-                for (const cb of boxes) {
-                    const want = soloed ? true : cb.dataset.trackId === track.id;
-                    if (cb.checked !== want) {
-                        cb.checked = want;
-                        cb.dispatchEvent(new Event('change', { bubbles: true }));
-                    }
-                }
-                // no stop: checkbox change handlers retoggle audio LIVE
-            });
+            // (No separate section header — the renderer's own track-info
+            // row carries icon/name/tuning, and Solo is injected onto it
+            // by setupTablaturePlayer. One label layer per track.)
 
             const tabContainer = document.createElement('div');
             tabContainer.className = 'tablature-container';
@@ -963,7 +939,7 @@ function createTablatureControls(otf, part) {
     // Build track mixer if multiple tracks
     const trackMixerHtml = filteredTracks.length > 1 ? `
         <div class="tab-track-mixer">
-            <span class="mixer-label">Tracks:</span>
+            <span class="mixer-label">Sound:</span>
             ${filteredTracks.map(track => {
                 const icon = track.instrument?.includes('banjo') ? '🪕' :
                             track.instrument?.includes('guitar') ? '🎸' :
@@ -1231,7 +1207,33 @@ function setupTablaturePlayer(otf, controls, renderer) {
         return Math.max(1, Math.round(timings.measureTiming.ticksFor(1) / beatTicks));
     };
 
+    // Solo button rides the renderer's track-info row (the only label
+    // row per track now); re-injected after every renderer re-render.
+    const injectSolo = (r, trackId) => {
+        if (otf.tracks.length < 2) return;
+        const info = r.container?.querySelector('.track-info');
+        if (!info || info.querySelector('.track-solo')) return;
+        const solo = document.createElement('button');
+        solo.className = 'track-solo';
+        solo.textContent = 'Solo';
+        solo.title = 'Hear only this track (click again for all)';
+        solo.addEventListener('click', () => {
+            const boxes = [...controls.querySelectorAll('.track-checkbox')];
+            const soloed = boxes.every(cb =>
+                cb.checked === (cb.dataset.trackId === trackId));
+            for (const cb of boxes) {
+                const want = soloed ? true : cb.dataset.trackId === trackId;
+                if (cb.checked !== want) {
+                    cb.checked = want;
+                    cb.dispatchEvent(new Event('change', { bubbles: true }));
+                }
+            }
+        });
+        info.appendChild(solo);
+    };
+
     const attachInteractions = (r, trackId) => {
+        injectSolo(r, trackId);
         r._playbackInteractions?.destroy();
         r._playbackInteractions = attachTabPlaybackInteractions(r, {
             beatTicks,
