@@ -56,7 +56,7 @@ export function createTabEditSession({
     bar.className = 'tab-edit-bar';
     bar.style.cssText = 'display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 8px;flex-wrap:wrap;';
     bar.innerHTML = `
-        <span class="tab-edit-title">✏️ Editing${trackId ? ` — ${trackId}` : ''}</span>
+        <span class="tab-edit-title"></span>
         <span class="tab-edit-actions" style="display:flex;gap:8px;">
             ${onSubmit ? '<button type="button" class="tab-edit-submit qc-btn" title="Submit this correction for review">🚀 Submit correction</button>' : ''}
             <button type="button" class="tab-edit-download qc-btn" title="Download the edited OTF">⬇ Download</button>
@@ -64,6 +64,10 @@ export function createTabEditSession({
             <button type="button" class="tab-edit-done qc-toggle-btn" title="Apply changes to the view">✓ Done</button>
         </span>
     `;
+    // textContent, not interpolation: track ids come from OTF data,
+    // which community submissions make untrusted input
+    bar.querySelector('.tab-edit-title').textContent =
+        `✏️ Editing${trackId ? ` — ${trackId}` : ''}`;
     root.appendChild(bar);
 
     // Inline submit panel (comment required — same as song corrections)
@@ -166,9 +170,21 @@ export function createTabEditSession({
             status.textContent = 'Submitting…';
             try {
                 const result = await onSubmit(editor.save(), text);
-                status.innerHTML = result?.prUrl
-                    ? `Submitted! <a href="${result.prUrl}" target="_blank" rel="noopener">PR #${result.prNumber}</a> — it goes live once merged.`
-                    : 'Submitted for review!';
+                // DOM construction, not innerHTML: the URL comes back
+                // from a network response and belongs in an attribute
+                // only if it's really a GitHub PR link
+                status.textContent = '';
+                if (result?.prUrl && /^https:\/\/github\.com\//.test(result.prUrl)) {
+                    status.append('Submitted! ');
+                    const a = document.createElement('a');
+                    a.href = result.prUrl;
+                    a.target = '_blank';
+                    a.rel = 'noopener';
+                    a.textContent = `PR #${Number(result.prNumber) || ''}`;
+                    status.append(a, ' — it goes live once merged.');
+                } else {
+                    status.textContent = 'Submitted for review!';
+                }
             } catch (e) {
                 status.textContent = `Failed: ${e.message}`;
             }

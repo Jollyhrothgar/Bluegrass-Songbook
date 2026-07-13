@@ -51,7 +51,7 @@ import {
     trackTagSuggest, endSongView, trackTagsExpand
 } from './analytics.js';
 import { openFlagModal } from './flags.js';
-import { openWork } from './work-view.js';
+import { openWork, teardownTablatureView } from './work-view.js';
 
 // DOM element references (set by init)
 let songViewEl = null;
@@ -1379,9 +1379,13 @@ export async function openSong(songId, options = {}) {
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
 
-    // Reset tablature state for new song (defensive cleanup)
+    // Reset tablature state for new song (defensive cleanup). The
+    // teardown matters on song→song hops within the 'song' view, where
+    // main.js's currentView subscriber never fires: it stops tab audio,
+    // destroys a live edit session, and drops renderer observers.
     setActivePartTab('lead-sheet');
     setLoadedTablature(null);
+    teardownTablatureView();
 
     const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);
@@ -1471,9 +1475,13 @@ export async function openSongFromHistory(songId) {
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
 
-    // Reset tablature state for new song (defensive cleanup)
+    // Reset tablature state for new song (defensive cleanup). The
+    // teardown matters on song→song hops within the 'song' view, where
+    // main.js's currentView subscriber never fires: it stops tab audio,
+    // destroys a live edit session, and drops renderer observers.
     setActivePartTab('lead-sheet');
     setLoadedTablature(null);
+    teardownTablatureView();
 
     const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);

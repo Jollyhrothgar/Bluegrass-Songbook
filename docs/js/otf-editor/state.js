@@ -428,6 +428,47 @@ export class EditorState {
     }
 
     /**
+     * Insert an empty measure AS measureNum (shifts everything at and
+     * after it, incl. reading_list and ts changes). Undoable.
+     */
+    insertMeasure(measureNum) {
+        const ok = this.facade.insertMeasure(measureNum);
+        if (ok) this.lastAction = { type: 'insertMeasure', measureNum };
+        return ok;
+    }
+
+    /**
+     * Delete every event from the cursor tick to the end of the
+     * cursor's measure (current track). Undoable.
+     */
+    deleteToMeasureEnd() {
+        const m = this.cursor.measure;
+        const start = this.facade.toAbs(m, this.cursor.tick);
+        const end = this.facade.toAbs(m, 0) + this.facade.ticksFor(m);
+        const ok = this.facade.deleteRange(start, end, { trackId: this.trackId });
+        if (ok) this.lastAction = { type: 'deleteToMeasureEnd' };
+        return ok;
+    }
+
+    /**
+     * Set the document tempo (quarter-note BPM). Undoable.
+     */
+    setTempo(bpm) {
+        return this.facade.setTempo(bpm);
+    }
+
+    /**
+     * Set a fingering annotation on the note at the cursor. Undoable.
+     */
+    setFingering(finger) {
+        return this.facade.setFingering({
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        }, finger, this.trackId);
+    }
+
+    /**
      * Add articulation to note at cursor
      */
     addArticulation(tech) {

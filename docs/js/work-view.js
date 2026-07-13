@@ -47,6 +47,32 @@ let tempoOverride = null;        // { workId, quarterBpm } — user-set tempo;
                                  // can convert when the feel changes
 let activeTrackView = null;      // track id, 'all', or null (= lead track)
 let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
+let activeEditSession = null;    // live tab edit session (torn down on nav)
+
+/**
+ * Tear down everything the tablature view holds live handles to: the
+ * edit session (document-level listeners, undo history, its player),
+ * the per-track renderers (each owns a documentElement MutationObserver
+ * that would otherwise keep re-rendering into detached DOM on every
+ * theme toggle), and the tab player (stop() also kills an in-flight
+ * soundfont load). Idempotent — safe to call on any navigation.
+ */
+export function teardownTablatureView() {
+    if (activeEditSession) {
+        activeEditSession.destroy();
+        activeEditSession = null;
+    }
+    destroyTrackRenderers();
+    if (tablaturePlayer) {
+        tablaturePlayer.stop();
+        setTablaturePlayer(null);
+    }
+}
+
+function destroyTrackRenderers() {
+    for (const r of Object.values(trackRenderers)) r.destroy?.();
+    trackRenderers = {};
+}
 
 // ============================================
 // NOTATION HELPERS
@@ -141,10 +167,7 @@ export async function openWork(workId, options = {}) {
     // Reset tablature state for new work
     activeTrackView = null;
     setLoadedTablature(null);
-    if (tablaturePlayer) {
-        tablaturePlayer.stop();
-        setTablaturePlayer(null);
-    }
+    teardownTablatureView();
 
     currentWork = song;
     availableParts = buildPartsFromIndex(song);
@@ -664,7 +687,7 @@ async function renderTablaturePart(part, container) {
         }
 
         container.innerHTML = '';
-        trackRenderers = {};
+        destroyTrackRenderers(); // disconnect old theme/resize observers
 
         // Inject controls into the header's controls content area
         const controls = createTablatureControls(otf, part);
@@ -893,10 +916,13 @@ async function enterTabEditMode(otf, part, container) {
         controlsContent.innerHTML = '<div class="tab-controls"><em>Editing — use the editor bar below. ✓ Done applies your changes, Cancel discards them.</em></div>';
     }
 
+    // The rendered-view renderers are about to be detached — drop their
+    // observers now; renderTablaturePart rebuilds them on exit.
+    destroyTrackRenderers();
     container.innerHTML = '';
     const baseName = (part.file || 'tab').split('/').pop().replace(/\.otf\.json$/, '');
 
-    createTabEditSession({
+    activeEditSession = createTabEditSession({
         mount: container,
         otf,
         trackId: resolveEditTrackId(otf, part.instrument),
@@ -906,7 +932,10 @@ async function enterTabEditMode(otf, part, container) {
             doc._partFile = part.file; // keep the view cache keyed to this part
             setLoadedTablature(doc);
         },
-        onExit: () => renderTablaturePart(part, container),
+        onExit: () => {
+            activeEditSession = null;
+            renderTablaturePart(part, container);
+        },
         // Save-back: same human-approved GitHub-issue pipeline as song
         // corrections — the editor's payoff beyond Download
         onSubmit: (doc, comment) => submitTab({

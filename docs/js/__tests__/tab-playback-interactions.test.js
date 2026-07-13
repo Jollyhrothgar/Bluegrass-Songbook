@@ -136,6 +136,47 @@ describe('attachTabPlaybackInteractions', () => {
         expect(onPlayFrom).toHaveBeenCalledTimes(1);
     });
 
+    it('a moved drag released OUTSIDE the row still arms the loop', () => {
+        const r = makeRenderer();
+        const onLoopMeasures = vi.fn();
+        attachTabPlaybackInteractions(r, { beatTicks: 480, onLoopMeasures });
+        const svg = r.rowData[0].svg;
+        svg.dispatchEvent(pointer('pointerdown', 100, 60));
+        svg.dispatchEvent(pointer('pointermove', 600, 60));
+        // release below the staff — only document sees this
+        document.body.dispatchEvent(pointer('pointerup', 600, 400));
+        expect(onLoopMeasures).toHaveBeenCalledWith(1, 2);
+    });
+
+    it('an unmoved press released outside cancels instead of arming', () => {
+        const r = makeRenderer();
+        const onPlayFrom = vi.fn();
+        attachTabPlaybackInteractions(r, { beatTicks: 480, onPlayFrom });
+        const svg = r.rowData[0].svg;
+        svg.dispatchEvent(pointer('pointerdown', 218, 60));
+        document.body.dispatchEvent(pointer('pointerup', 218, 400));
+        expect(onPlayFrom).not.toHaveBeenCalled();
+
+        // drag state is gone: re-entering the row hovers (caret), it
+        // does NOT keep extending a phantom selection
+        svg.dispatchEvent(pointer('pointermove', 218, 60));
+        expect(svg.querySelector('.play-caret')).not.toBeNull();
+        expect(svg.querySelectorAll('.phrase-highlight').length).toBe(0);
+    });
+
+    it('pointercancel clears an in-flight drag and its highlight', () => {
+        const r = makeRenderer();
+        const onLoopMeasures = vi.fn();
+        attachTabPlaybackInteractions(r, { beatTicks: 480, onLoopMeasures });
+        const svg = r.rowData[0].svg;
+        svg.dispatchEvent(pointer('pointerdown', 100, 60));
+        svg.dispatchEvent(pointer('pointermove', 600, 60));
+        document.dispatchEvent(new MouseEvent('pointercancel', { bubbles: true }));
+        expect(svg.querySelectorAll('.phrase-highlight').length).toBe(0);
+        svg.dispatchEvent(pointer('pointerup', 600, 60));
+        expect(onLoopMeasures).not.toHaveBeenCalled();
+    });
+
     it('destroy removes highlights and handlers', () => {
         const r = makeRenderer();
         const onPlayFrom = vi.fn();

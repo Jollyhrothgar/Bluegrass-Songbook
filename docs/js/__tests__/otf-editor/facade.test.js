@@ -596,3 +596,95 @@ describe('EditingFacade — change events', () => {
         expect(n).toBe(1);
     });
 });
+
+describe('EditingFacade — insertMeasure (structural, all tracks)', () => {
+    it('shifts measures on EVERY track, not just the active one', () => {
+        const f = new EditingFacade(tsChangeDoc(), { trackId: 'guitar' });
+        f.insertNote({ measure: 4, tick: 0, string: 3, fret: 2, trackId: 'bass' });
+        f.insertMeasure(3);
+        // bass m4 note moved to m5 along with the guitar structure
+        expect(f.getMeasure(5, 'bass').events).toHaveLength(1);
+        expect(f.getMeasure(3, 'guitar')).toBeNull(); // new measure is empty
+    });
+
+    it('renumbers reading_list ranges past the split and grows straddlers', () => {
+        const otf = banjoDoc();
+        otf.notation.banjo = [1, 2, 3, 4, 5, 6, 7, 8].map(m => ({ measure: m, events: [] }));
+        otf.reading_list = [
+            { from_measure: 1, to_measure: 4 },  // straddles the insert at 3
+            { from_measure: 1, to_measure: 4 },
+            { from_measure: 5, to_measure: 8 },  // fully after it
+        ];
+        const f = new EditingFacade(otf);
+        f.insertMeasure(3);
+        expect(f.otf.reading_list).toEqual([
+            { from_measure: 1, to_measure: 5 },
+            { from_measure: 1, to_measure: 5 },
+            { from_measure: 6, to_measure: 9 },
+        ]);
+    });
+
+    it('renumbers time_signature_changes and invalidates timing', () => {
+        const f = new EditingFacade(tsChangeDoc());
+        expect(f.ticksFor(3)).toBe(960); // the 2/4 measure
+        f.insertMeasure(2);
+        expect(f.otf.metadata.time_signature_changes[0].measure).toBe(4);
+        expect(f.ticksFor(3)).toBe(1920); // timing cache refreshed
+        expect(f.ticksFor(4)).toBe(960);
+    });
+
+    it('is one undoable step and emits one change', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 2, tick: 0, string: 3, fret: 7 });
+        let n = 0;
+        f.on('change', () => n++);
+        f.insertMeasure(2);
+        expect(n).toBe(1);
+        expect(f.getMeasure(3).events).toHaveLength(1); // note shifted
+        f.undo();
+        expect(f.getMeasure(2).events).toHaveLength(1); // back where it was
+    });
+
+    it('rejects nonsense measure numbers', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(f.insertMeasure(0)).toBe(false);
+        expect(f.insertMeasure(NaN)).toBe(false);
+        expect(f.canUndo()).toBe(false);
+    });
+});
+
+describe('EditingFacade — setTempo / setFingering', () => {
+    it('setTempo is undoable and no-ops on the same value', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(f.setTempo(160)).toBe(true);
+        expect(f.otf.metadata.tempo).toBe(160);
+        expect(f.setTempo(160)).toBe(false); // no history spam
+        f.undo();
+        expect(f.otf.metadata.tempo).toBe(120);
+    });
+
+    it('setTempo rejects garbage', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(f.setTempo('fast')).toBe(false);
+        expect(f.setTempo(0)).toBe(false);
+        expect(f.otf.metadata.tempo).toBe(120);
+    });
+
+    it('setFingering is undoable and clears with null', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 2 });
+        const pos = { measure: 1, tick: 0, string: 3 };
+        expect(f.setFingering(pos, 'T')).toBe(true);
+        expect(f._findNote(pos).note.finger).toBe('T');
+        f.undo();
+        expect(f._findNote(pos).note.finger).toBeUndefined();
+        f.redo();
+        f.setFingering(pos, null);
+        expect(f._findNote(pos).note.finger).toBeUndefined();
+    });
+
+    it('setFingering on empty position is a no-op', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(f.setFingering({ measure: 1, tick: 0, string: 3 }, 'T')).toBe(false);
+    });
+});

@@ -148,7 +148,10 @@ describe('createTabEditSession', () => {
     });
 
     it('Submit panel requires a comment and calls onSubmit with the doc', async () => {
-        const onSubmit = vi.fn(async () => ({ prNumber: 9, prUrl: 'https://x/pull/9' }));
+        const onSubmit = vi.fn(async () => ({
+            prNumber: 9,
+            prUrl: 'https://github.com/x/y/pull/9',
+        }));
         session = createTabEditSession({
             mount, otf: multiTrackOtf(), trackId: 'banjo',
             editorFactory: (options) => { editor.factoryOptions = options; return editor; },
@@ -170,6 +173,42 @@ describe('createTabEditSession', () => {
             expect(panel.querySelector('.tab-edit-submit-status').textContent)
                 .toContain('#9');
         });
+    });
+
+    it('a non-GitHub prUrl never lands in the link href', async () => {
+        const onSubmit = vi.fn(async () => ({
+            prNumber: 1,
+            prUrl: 'javascript:alert(1)//github.com',
+        }));
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, onSubmit,
+        });
+        mount.querySelector('.tab-edit-submit').click();
+        const panel = mount.querySelector('.tab-edit-submit-panel');
+        panel.querySelector('.tab-edit-submit-comment').value = 'x';
+        panel.querySelector('.tab-edit-submit-send').click();
+        await vi.waitFor(() => expect(onSubmit).toHaveBeenCalled());
+        await vi.waitFor(() => {
+            const status = panel.querySelector('.tab-edit-submit-status');
+            expect(status.textContent).toContain('Submitted');
+            expect(status.querySelector('a')).toBeNull();
+        });
+    });
+
+    it('a hostile track id renders as text, not markup', () => {
+        const otf = multiTrackOtf();
+        const evil = '<img src=x onerror="window.__pwned=1">';
+        otf.tracks[0].id = evil;
+        otf.notation[evil] = otf.notation.banjo;
+        session = createTabEditSession({
+            mount, otf, trackId: evil,
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit,
+        });
+        expect(mount.querySelector('.tab-edit-title img')).toBeNull();
+        expect(mount.querySelector('.tab-edit-title').textContent).toContain(evil);
     });
 
     it('no Submit button without an onSubmit handler', () => {

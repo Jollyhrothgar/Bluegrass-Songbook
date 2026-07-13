@@ -140,7 +140,20 @@
                     title: doc.metadata?.title || 'Untitled',
                     instrument: doc.tracks[0]?.id || 'banjo',
                 });
-                status.innerHTML = `Submitted! <a href="${result.prUrl}" target="_blank" rel="noopener">PR #${result.prNumber}</a> — it goes live once merged.`;
+                // DOM construction, not innerHTML: the URL comes back
+                // from a network response
+                status.textContent = '';
+                if (result?.prUrl && /^https:\/\/github\.com\//.test(result.prUrl)) {
+                    status.append('Submitted! ');
+                    const a = document.createElement('a');
+                    a.href = result.prUrl;
+                    a.target = '_blank';
+                    a.rel = 'noopener';
+                    a.textContent = `PR #${Number(result.prNumber) || ''}`;
+                    status.append(a, ' — it goes live once merged.');
+                } else {
+                    status.textContent = 'Submitted for review!';
+                }
                 clearDraft();
             } catch (e) {
                 status.textContent = `Failed: ${e.message}`;

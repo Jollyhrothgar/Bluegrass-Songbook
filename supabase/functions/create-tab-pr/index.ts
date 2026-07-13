@@ -19,6 +19,21 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 }
 
+// Best-effort per-IP throttle (per isolate — resets on cold start).
+// Abuse ultimately ends at the human merge gate; this keeps a script
+// from burning the PAT's API quota with branch/PR spam.
+const RATE_WINDOW_MS = 60 * 60 * 1000
+const RATE_MAX = 5
+const recentByIp = new Map<string, number[]>()
+function rateLimited(ip: string): boolean {
+  const now = Date.now()
+  const hits = (recentByIp.get(ip) ?? []).filter(t => now - t < RATE_WINDOW_MS)
+  const limited = hits.length >= RATE_MAX
+  if (!limited) hits.push(now)
+  recentByIp.set(ip, hits)
+  return limited
+}
+
 interface TabPrRequest {
   type: 'tab-correction' | 'tab-submission'
   title: string
@@ -46,6 +61,9 @@ serve(async (req) => {
   }
 
   try {
+    const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown'
+    if (rateLimited(ip)) return bad(429, 'Too many submissions — try again later')
+
     const githubToken = Deno.env.get('GITHUB_PAT')
     if (!githubToken) throw new Error('GITHUB_PAT not configured')
 
@@ -65,16 +83,29 @@ serve(async (req) => {
     const { type, title, workId, instrument, otf, comment, submittedBy } = body
     const attribution = submittedBy || 'Rando Calrissian'
 
+    if (type !== 'tab-correction' && type !== 'tab-submission') {
+      return bad(400, 'Bad type')
+    }
     if (!title || !otf || !instrument) {
       return bad(400, 'Missing required fields: title, instrument, otf')
     }
-    if (!/^[a-z0-9-]+$/.test(instrument)) {
+    if (typeof otf !== 'string' || typeof title !== 'string') {
+      return bad(400, 'Bad field types')
+    }
+    if (title.length > 200) return bad(400, 'Title too long')
+    if (!/^[a-z0-9-]+$/.test(instrument) || instrument.length > 40) {
       return bad(400, 'Bad instrument')
     }
-    if (type === 'tab-correction') {
-      if (!workId || !comment) return bad(400, 'Tab corrections require workId and comment')
-      if (!/^[a-z0-9-]+$/.test(workId)) return bad(400, 'Bad work id')
+    // workId always slug-validated when present — it becomes a repo path
+    // and branch name, so nothing outside [a-z0-9-] may ever reach it.
+    if (workId !== undefined && !/^[a-z0-9-]+$/.test(workId)) {
+      return bad(400, 'Bad work id')
     }
+    if (type === 'tab-correction' && (!workId || !comment)) {
+      return bad(400, 'Tab corrections require workId and comment')
+    }
+    if (comment && comment.length > 5_000) return bad(400, 'Comment too long')
+    if (attribution.length > 100) return bad(400, 'Attribution too long')
     if (otf.length > MAX_OTF_CHARS) return bad(413, 'Tab too large')
 
     let parsed
@@ -169,9 +200,11 @@ MERGE to publish.*`
       { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     )
   } catch (error) {
+    // Detail stays server-side — error.message can carry GitHub API
+    // response text, which callers have no business seeing.
     console.error('Error creating tab PR:', error)
     return new Response(
-      JSON.stringify({ error: error.message || 'Failed to create tab PR' }),
+      JSON.stringify({ error: 'Failed to create tab PR' }),
       { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     )
   }

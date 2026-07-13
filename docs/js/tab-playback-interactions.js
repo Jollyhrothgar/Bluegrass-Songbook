@@ -240,6 +240,40 @@ export function attachTabPlaybackInteractions(renderer, {
 
     for (const row of renderer.rowData || []) attachRow(row);
 
+    // A release OUTSIDE any row must still end the drag (rows are only
+    // ~100px tall). Without this, dragging off the staff and letting go
+    // left `drag` armed: re-entering a row kept extending the phrase,
+    // and the next innocent click armed a loop the user never drew.
+    // A moved drag finalizes exactly like an in-row release (the
+    // highlight is already on screen); a plain press just cancels.
+    // (Per-row setPointerCapture would break cross-row drags — the
+    // shared `drag` state is what lets a phrase span staff rows.)
+    const docUp = () => {
+        if (!drag) return; // an in-row handler already finished it
+        const d = drag;
+        drag = null;
+        if (!d.moved) return;
+        const now = Date.now();
+        if (now - lastClickAt < CLICK_DEBOUNCE_MS) return;
+        lastClickAt = now;
+        highlightMeasures(d.startMeasure, d.lastMeasure);
+        clearCaret('.play-caret-armed');
+        onLoopMeasures?.(
+            Math.min(d.startMeasure, d.lastMeasure),
+            Math.max(d.startMeasure, d.lastMeasure));
+    };
+    const docCancel = () => {
+        if (!drag) return;
+        drag = null;
+        clearHighlight();
+    };
+    document.addEventListener('pointerup', docUp);
+    document.addEventListener('pointercancel', docCancel);
+    cleanups.push(() => {
+        document.removeEventListener('pointerup', docUp);
+        document.removeEventListener('pointercancel', docCancel);
+    });
+
     return {
         clearHighlight,
         highlightMeasures,

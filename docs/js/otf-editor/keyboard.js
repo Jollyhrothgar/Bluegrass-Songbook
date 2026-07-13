@@ -160,15 +160,16 @@ export class KeyboardHandler {
             return true;
         }
 
-        // Ctrl+Z - undo
-        if (mod && key === 'z' && !shiftKey) {
+        // Ctrl+Z - undo (key is 'Z' when Shift is held, so compare
+        // case-insensitively or Cmd+Shift+Z never matches)
+        if (mod && key.toLowerCase() === 'z' && !shiftKey) {
             this._record('undo');
             this.state.undo();
             return true;
         }
 
         // Ctrl+Shift+Z or Ctrl+Y - redo
-        if ((mod && key === 'z' && shiftKey) || (mod && key === 'y')) {
+        if ((mod && key.toLowerCase() === 'z' && shiftKey) || (mod && key === 'y')) {
             this._record('redo');
             this.state.redo();
             return true;
@@ -189,6 +190,13 @@ export class KeyboardHandler {
      */
     _handleNormalMode(event) {
         const { key, ctrlKey, shiftKey } = event;
+
+        // Cmd combos are never normal-mode bindings: anything we own
+        // (save, clipboard, undo) already matched in the global handler.
+        // Without this bail, macOS Cmd+1..9 inserted frets, Cmd+P
+        // "pasted", Cmd+F armed high-fret mode — each also blocking the
+        // browser shortcut it shadowed.
+        if (event.metaKey) return false;
 
         // === NOTE ENTRY ===
         // Shift+digit: CHORD entry — insert on the current tick WITHOUT
@@ -586,6 +594,9 @@ export class KeyboardHandler {
     _handleVisualMode(event) {
         const { key } = event;
 
+        // Same bail as normal mode: Cmd combos belong to the browser
+        if (event.metaKey) return false;
+
         // Navigation (extends selection)
         if (key === 'h' || key === 'ArrowLeft') {
             this.cursor.moveByTicks(-this.state.currentDuration);
@@ -636,6 +647,9 @@ export class KeyboardHandler {
      */
     _handleAnnotationMode(event) {
         const { key } = event;
+
+        // Same bail as normal mode: Cmd combos belong to the browser
+        if (event.metaKey) return false;
 
         // Fingering annotations
         if (key === 't') {
@@ -784,18 +798,12 @@ export class KeyboardHandler {
     }
 
     /**
-     * Insert new measure after current
+     * Insert new measure after current (facade op: undoable, emits
+     * change, renumbers reading_list/ts changes on all tracks)
      */
     _insertMeasureAfter() {
         const currentMeasure = this.state.cursor.measure;
-        const notation = this.state.getNotation();
-
-        // Shift all measures after current
-        for (const measure of notation) {
-            if (measure.measure > currentMeasure) {
-                measure.measure++;
-            }
-        }
+        this.state.insertMeasure(currentMeasure + 1);
 
         // Move to new measure
         this.state.cursor.measure = currentMeasure + 1;
@@ -804,18 +812,10 @@ export class KeyboardHandler {
     }
 
     /**
-     * Insert new measure before current
+     * Insert new measure before current (facade op — see above)
      */
     _insertMeasureBefore() {
-        const currentMeasure = this.state.cursor.measure;
-        const notation = this.state.getNotation();
-
-        // Shift all measures at and after current
-        for (const measure of notation) {
-            if (measure.measure >= currentMeasure) {
-                measure.measure++;
-            }
-        }
+        this.state.insertMeasure(this.state.cursor.measure);
 
         // Stay at current measure number (which is now empty)
         this.state.cursor.tick = 0;
@@ -823,15 +823,10 @@ export class KeyboardHandler {
     }
 
     /**
-     * Delete to end of measure
+     * Delete to end of measure (facade op: undoable, emits change)
      */
     _deleteToMeasureEnd() {
-        const measure = this.state.getMeasure(this.state.cursor.measure);
-        if (!measure) return;
-
-        const currentTick = this.state.cursor.tick;
-        measure.events = measure.events.filter(e => e.tick < currentTick);
-        this.state._emit('change', this.state.otf);
+        this.state.deleteToMeasureEnd();
     }
 
     /**
@@ -852,13 +847,9 @@ export class KeyboardHandler {
     }
 
     /**
-     * Add fingering annotation to note at cursor
+     * Add fingering annotation to note at cursor (facade op: undoable)
      */
     _addFingering(finger) {
-        const note = this.state.getNoteAtCursor();
-        if (note) {
-            note.finger = finger;
-            this.state._emit('change', this.state.otf);
-        }
+        this.state.setFingering(finger);
     }
 }

@@ -372,6 +372,12 @@ export class OTFEditor {
         // State change events
         this.state.on('change', () => {
             this._render();
+            // Undo/redo can move the tempo — keep the input honest
+            const tempoInput = this.statusBar?.querySelector('.tempo-input');
+            if (tempoInput && document.activeElement !== tempoInput) {
+                const t = this.state.otf?.metadata?.tempo;
+                if (t) tempoInput.value = t;
+            }
             this.options.onChange?.(this.state.otf);
         });
 
@@ -784,6 +790,7 @@ export class OTFEditor {
         // Use double-RAF to ensure layout is complete
         requestAnimationFrame(() => {
             requestAnimationFrame(() => {
+                if (!this.cursor) return; // destroyed while queued
                 this._updateCursorLayout();
             });
         });
@@ -861,7 +868,9 @@ export class OTFEditor {
      * Initialize status bar (called once)
      */
     _initStatusBar() {
-        const tempo = this.state.otf.metadata?.tempo || 120;
+        // Coerce: a malicious OTF could carry a string tempo crafted to
+        // break out of the value="" attribute below
+        const tempo = Number(this.state.otf.metadata?.tempo) || 120;
 
         this.statusBar.innerHTML = `
             <div class="playback-controls">
@@ -993,11 +1002,14 @@ export class OTFEditor {
         }
 
         if (tempoInput) {
-            // Handle tempo changes
+            // Handle tempo changes (facade op — undoable, emits change)
             tempoInput.addEventListener('change', (e) => {
                 const tempo = parseInt(e.target.value, 10);
                 if (tempo >= 40 && tempo <= 280) {
-                    this.state.otf.metadata.tempo = tempo;
+                    this.state.setTempo(tempo);
+                } else {
+                    // reject out-of-range input visibly
+                    e.target.value = this.state.otf?.metadata?.tempo || 120;
                 }
             });
 
@@ -1134,9 +1146,11 @@ export class OTFEditor {
                 tempo: otf.metadata?.tempo || 120,
                 ...rangeOptions,
             });
+            if (!this.state) return; // destroyed during the load await
             this.isPlaying = true;
         } catch (error) {
             console.error('Playback error:', error);
+            if (!this.state) return;
             this.isPlaying = false;
         }
         if (playBtn) playBtn.title = 'Play/Pause';
@@ -1346,10 +1360,12 @@ export class OTFEditor {
      * Destroy the editor and clean up
      */
     destroy() {
-        // Stop playback
-        if (this.isPlaying) {
-            this.stop();
-        }
+        // Stop the player UNCONDITIONALLY — isPlaying only goes true
+        // after play()'s awaits resolve, so a destroy during a slow
+        // soundfont load would otherwise let audio start into a dead
+        // editor. player.stop() also invalidates that in-flight play.
+        this.player?.stop();
+        this.isPlaying = false;
 
         // Remove document-level drag listeners
         if (this._boundDragMove) {

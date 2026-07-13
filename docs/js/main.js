@@ -41,7 +41,7 @@ import {
     updateSyncUI, reorderFavoriteItem
 } from './lists.js';
 import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
-import { openWork, renderWorkView } from './work-view.js';
+import { openWork, renderWorkView, teardownTablatureView } from './work-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro, closeHints } from './editor.js';
 import { escapeHtml } from './utils.js';
@@ -324,10 +324,11 @@ function initViewSubscription() {
     const searchContainer = document.querySelector('.search-container');
 
     subscribe('currentView', (view) => {
-        // Stop any playing tablature audio when leaving song view
-        if (tablaturePlayer?.isPlaying) {
-            tablaturePlayer.stop();
-        }
+        // Tear down live tablature state on any view change: stops
+        // audio (including an in-flight soundfont load), destroys the
+        // edit session and renderer observers. Idempotent; the work
+        // view rebuilds everything it needs on render.
+        teardownTablatureView();
 
         // Exit fullscreen mode when navigating away from song/work views
         if (view !== 'song' && view !== 'work') {

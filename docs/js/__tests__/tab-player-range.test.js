@@ -74,6 +74,15 @@ describe('effectiveDurationSeconds', () => {
         expect(d).toBe(1.5);
     });
 
+    it('explicit duration plays full length at phrase end', () => {
+        // Last note on its string: the scheduler passes stringGap =
+        // Infinity (nothing ever re-attacks), so a written 3s note
+        // must NOT be silently capped at the 1.5s mixer decay.
+        const d = effectiveDurationSeconds(
+            { ...base, explicitDurSec: 3 }, Infinity, 0.25);
+        expect(d).toBe(3);
+    });
+
     it('sustain scales, floor holds', () => {
         expect(effectiveDurationSeconds({ decay: 1.5, sustain: 0.5, explicitDurSec: 2 }, 10, 10))
             .toBe(1.0);

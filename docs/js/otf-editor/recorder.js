@@ -284,31 +284,14 @@ export function dispatchEditorEvent(editor, event) {
 
         // === Measure operations ===
         case 'insertMeasureAfter':
-            // Inline the logic from keyboard handler
-            {
-                const notation = state.getNotation();
-                for (const m of notation) {
-                    if (m.measure > params.afterMeasure) {
-                        m.measure++;
-                    }
-                }
-                state.cursor.measure = params.afterMeasure + 1;
-                state.cursor.tick = 0;
-                state._emit('change', state.otf);
-            }
+            state.insertMeasure(params.afterMeasure + 1);
+            state.cursor.measure = params.afterMeasure + 1;
+            state.cursor.tick = 0;
             break;
 
         case 'insertMeasureBefore':
-            {
-                const notation = state.getNotation();
-                for (const m of notation) {
-                    if (m.measure >= params.beforeMeasure) {
-                        m.measure++;
-                    }
-                }
-                state.cursor.tick = 0;
-                state._emit('change', state.otf);
-            }
+            state.insertMeasure(params.beforeMeasure);
+            state.cursor.tick = 0;
             break;
 
         // === Repeat ===

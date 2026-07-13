@@ -767,6 +767,157 @@ describe('KeyboardHandler', () => {
         });
     });
 
+    describe('measure ops are undoable (facade-routed)', () => {
+        beforeEach(() => {
+            state.setMode(EditorMode.NORMAL);
+        });
+
+        it('o inserts a measure that shifts later notes and undoes cleanly', () => {
+            state.cursor.measure = 2;
+            state.cursor.tick = 0;
+            state.insertNote(5);
+
+            state.cursor.measure = 1;
+            keyboard.handleKeyDown(createKeyEvent('o')); // insert after m1
+
+            expect(state.getMeasure(3).events.length).toBe(1); // note shifted
+            expect(state.cursor.measure).toBe(2);              // cursor on new measure
+
+            keyboard.handleKeyDown(createKeyEvent('z', { ctrl: true }));
+            expect(state.getMeasure(2).events.length).toBe(1); // shift reverted
+        });
+
+        it('o renumbers reading_list so repeat signs stay on their measures', () => {
+            state.otf.reading_list = [
+                { from_measure: 1, to_measure: 2 },
+                { from_measure: 1, to_measure: 2 },
+                { from_measure: 3, to_measure: 4 },
+            ];
+            state.cursor.measure = 2;
+            keyboard.handleKeyDown(createKeyEvent('o')); // insert as m3
+
+            expect(state.otf.reading_list).toEqual([
+                { from_measure: 1, to_measure: 2 },
+                { from_measure: 1, to_measure: 2 },
+                { from_measure: 4, to_measure: 5 },
+            ]);
+        });
+
+        it('O inserts before the cursor measure and undoes cleanly', () => {
+            state.cursor.measure = 2;
+            state.cursor.tick = 0;
+            state.insertNote(7);
+
+            keyboard.handleKeyDown(createKeyEvent('O')); // insert as m2
+
+            expect(state.getMeasure(3).events.length).toBe(1);
+            keyboard.handleKeyDown(createKeyEvent('z', { ctrl: true }));
+            expect(state.getMeasure(2).events.length).toBe(1);
+        });
+
+        it('D deletes to measure end as ONE undoable step', () => {
+            state.cursor.measure = 1;
+            state.cursor.tick = 0;
+            state.insertNote(3);
+            state.cursor.tick = 960;
+            state.insertNote(5);
+            state.cursor.tick = 1440;
+            state.insertNote(7);
+
+            state.cursor.tick = 480;
+            keyboard.handleKeyDown(createKeyEvent('D'));
+            expect(state.getMeasure(1).events.length).toBe(1); // only tick 0 left
+
+            keyboard.handleKeyDown(createKeyEvent('z', { ctrl: true }));
+            expect(state.getMeasure(1).events.length).toBe(3); // one undo restores all
+        });
+
+        it('fingering annotation is undoable', () => {
+            state.cursor.measure = 1;
+            state.cursor.tick = 0;
+            state.insertNote(2);
+
+            state.setMode(EditorMode.ANNOTATION);
+            keyboard.handleKeyDown(createKeyEvent('t'));
+            expect(state.getNoteAtCursor().finger).toBe('T');
+
+            keyboard.handleKeyDown(createKeyEvent('z', { ctrl: true }));
+            expect(state.getNoteAtCursor().finger).toBeUndefined();
+        });
+    });
+
+    describe('macOS modifier handling', () => {
+        // Real browsers report key 'Z' (uppercase) when Shift is held —
+        // the synthetic lowercase-'z' redo test above can't catch a
+        // case-sensitive comparison.
+        it('Cmd+Shift+Z (uppercase key, as browsers send it) redoes', () => {
+            state.insertNote(5);
+            state.undo();
+            expect(state.getMeasure(1).events.length).toBe(0);
+
+            keyboard.handleKeyDown(createKeyEvent('Z', { meta: true, shift: true }));
+            expect(state.getMeasure(1).events.length).toBe(1);
+        });
+
+        it('Ctrl+Shift+Z (uppercase key) redoes too', () => {
+            state.insertNote(5);
+            state.undo();
+            keyboard.handleKeyDown(createKeyEvent('Z', { ctrl: true, shift: true }));
+            expect(state.getMeasure(1).events.length).toBe(1);
+        });
+
+        it('Cmd+digit does not insert a fret and stays unhandled', () => {
+            state.setMode(EditorMode.NORMAL);
+            const event = createKeyEvent('1', { meta: true }); // Cmd+1 = browser tab switch
+            const preventDefaultSpy = vi.spyOn(event, 'preventDefault');
+
+            keyboard.handleKeyDown(event);
+            expect(state.getMeasure(1).events.length).toBe(0);
+            expect(preventDefaultSpy).not.toHaveBeenCalled();
+        });
+
+        it('Cmd+F does not enter high-fret mode (browser find wins)', () => {
+            state.setMode(EditorMode.NORMAL);
+            const event = createKeyEvent('f', { meta: true });
+            const preventDefaultSpy = vi.spyOn(event, 'preventDefault');
+
+            keyboard.handleKeyDown(event);
+            expect(keyboard.highFretMode).toBeFalsy();
+            expect(preventDefaultSpy).not.toHaveBeenCalled();
+        });
+
+        it('Cmd+L does not move the cursor (address bar wins)', () => {
+            state.setMode(EditorMode.NORMAL);
+            const before = state.cursor.tick;
+            const event = createKeyEvent('l', { meta: true });
+            const preventDefaultSpy = vi.spyOn(event, 'preventDefault');
+
+            keyboard.handleKeyDown(event);
+            expect(state.cursor.tick).toBe(before);
+            expect(preventDefaultSpy).not.toHaveBeenCalled();
+        });
+
+        it('Cmd+P does not paste (print dialog wins)', () => {
+            state.setMode(EditorMode.NORMAL);
+            const event = createKeyEvent('p', { meta: true });
+            const preventDefaultSpy = vi.spyOn(event, 'preventDefault');
+
+            keyboard.handleKeyDown(event);
+            expect(preventDefaultSpy).not.toHaveBeenCalled();
+        });
+
+        it('visual mode also releases Cmd combos to the browser', () => {
+            state.setMode(EditorMode.VISUAL);
+            const before = state.cursor.tick;
+            const event = createKeyEvent('h', { meta: true });
+            const preventDefaultSpy = vi.spyOn(event, 'preventDefault');
+
+            keyboard.handleKeyDown(event);
+            expect(state.cursor.tick).toBe(before);
+            expect(preventDefaultSpy).not.toHaveBeenCalled();
+        });
+    });
+
     describe('event prevention', () => {
         it('prevents default on handled events', () => {
             state.setMode(EditorMode.NORMAL);

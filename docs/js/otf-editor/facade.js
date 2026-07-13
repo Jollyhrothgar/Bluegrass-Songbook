@@ -405,6 +405,62 @@ export class EditingFacade {
         });
     }
 
+    /**
+     * Insert an empty written measure AS `measureNum`, shifting measures
+     * >= measureNum up by one on EVERY track — written measures are
+     * shared score structure, so a single-track shift would desync an
+     * ensemble doc. reading_list ranges and time_signature_changes are
+     * renumbered with it (a range straddling the split grows, keeping
+     * play order intact). One undo step.
+     */
+    insertMeasure(measureNum) {
+        if (!(measureNum >= 1)) return false;
+        return this._mutate('Insert measure', () => {
+            for (const notation of Object.values(this.otf.notation || {})) {
+                for (const m of notation) {
+                    if (m.measure >= measureNum) m.measure++;
+                }
+            }
+            if (this.otf.reading_list?.length) {
+                for (const r of this.otf.reading_list) {
+                    if (r.from_measure >= measureNum) r.from_measure++;
+                    if (r.to_measure >= measureNum) r.to_measure++;
+                }
+            }
+            const tsc = this.otf.metadata?.time_signature_changes;
+            if (Array.isArray(tsc)) {
+                for (const c of tsc) {
+                    if (c.measure >= measureNum) c.measure++;
+                }
+            }
+            this._invalidateTiming();
+            return true;
+        });
+    }
+
+    /** Set the document tempo (quarter-note BPM). Undoable. */
+    setTempo(bpm) {
+        const v = Number(bpm);
+        if (!Number.isFinite(v) || v < 1) return false;
+        return this._mutate('Set tempo', () => {
+            if (!this.otf.metadata) this.otf.metadata = {};
+            if (this.otf.metadata.tempo === v) return false;
+            this.otf.metadata.tempo = v;
+            return true;
+        });
+    }
+
+    /** Set (or clear with null) a fingering annotation. Undoable. */
+    setFingering(pos, finger, trackId = this.trackId) {
+        return this._mutate(finger ? 'Add fingering' : 'Remove fingering', () => {
+            const { note } = this._findNote(pos, trackId);
+            if (!note || note.finger === finger) return false;
+            if (finger) note.finger = finger;
+            else delete note.finger;
+            return true;
+        });
+    }
+
     // ------------------------------------------------------------------
     // Tick-range selection ops (phrases): copy / cut / delete / paste
     // Ranges are half-open [startAbs, endAbs) in absolute ticks.

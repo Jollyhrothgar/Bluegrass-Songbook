@@ -329,8 +329,14 @@ export class TabPlayer {
         // schedule two overlapping performances ('the parts don't all
         // start from the same spot'). Only the newest call survives
         // its awaits.
+        // stop() FIRST, unconditionally, then claim the generation:
+        // stop() bumps _playGen (invalidating older in-flight plays)
+        // and clears a pending loop-restart timer — which exists while
+        // isPlaying is false during the loop-wrap gap, so a play()
+        // started in that window used to get hijacked 100ms later by
+        // the old loop restarting.
+        this.stop();
         const gen = this._playGen = (this._playGen || 0) + 1;
-        if (this.isPlaying) this.stop();
         this._loopSource = otfData; // for loop restarts
 
         await this.init();
@@ -491,8 +497,12 @@ export class TabPlayer {
                 for (let i = 0; i < stringNotes.length; i++) {
                     const note = stringNotes[i];
 
-                    // 1. Gap to next note on same string (string-based sustain)
-                    let stringGap = note.decay;
+                    // 1. Gap to next note on same string (string-based
+                    // sustain). No following note = nothing cuts it:
+                    // explicit durations must play their full written
+                    // length even on the last note of a phrase (ring-
+                    // model notes are still decay-capped downstream).
+                    let stringGap = Infinity;
                     if (i + 1 < stringNotes.length) {
                         stringGap = stringNotes[i + 1].time - note.time;
                     }
@@ -724,6 +734,12 @@ export class TabPlayer {
      */
     stop() {
         this.isPlaying = false;
+
+        // Invalidate any play() still inside its awaits (init/resume/
+        // soundfont loads) — otherwise a Stop pressed during a slow
+        // first load is ignored and audio starts anyway, possibly with
+        // no UI left to stop it.
+        this._playGen = (this._playGen || 0) + 1;
 
         // Tear down per-track gain buses
         if (this.trackGains) {
