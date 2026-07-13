@@ -31,7 +31,8 @@ visual-editor/
 ├── model.js          # SongDocument: parseSong/serializeSong + pure edit ops
 ├── syllables.js      # view-layer tokenizer (tap targets); NOT in the model
 ├── line-view.js      # shared line renderer: chord chips over syllable targets
-├── palette.js        # docked chord palette (diatonic via chord-explorer/theory.js)
+├── palette.js        # chord palette (diatonic via chord-explorer/theory.js)
+├── popover-position.js # pure rect math: anchored-popover placement (wide layout)
 ├── autoscroll.js     # keep the selection clear of the docked palette
 ├── drag-reorder.js   # pure geometry for drag-and-drop section reorder
 ├── wrap-section.js   # pure make-verse/chorus text transform for the textarea
@@ -69,8 +70,14 @@ end-slot rows (`.ve-line-blank`) that wake on hover/selection.
 
 ## Interactions
 
-Tap a syllable → docked palette (diatonic chips, recents, More… picker with
+Tap a syllable → chord palette (diatonic chips, recents, More… picker with
 a free-text input). Tap a chip → same palette in edit mode with ✕ Remove.
+On wide (side-by-side, ≥800px) layouts the palette floats as a popover
+anchored to the selection (`popover-position.js`: below the line, flipped
+above when there's no room, shrunk with internal scroll when neither side
+fits — it never covers its anchor line, and follows it on scroll/resize).
+On narrow/stacked layouts it stays docked at the bottom (the mobile tap
+flow depends on this).
 Every edit lands in the textarea as one undo step. Desktop extras:
 
 - **Ghost-chip typed entry**: with a syllable or chip selected, typing a
@@ -99,8 +106,9 @@ host edits that rewrite the textarea (toolbar transpose, key select) call
 The toolbar buttons (`#editor-undo`/`#editor-redo`) reflect stack state.
 
 Auto-scroll: after every render the selection is nudged clear of the docked
-palette (`autoscroll.js`), scoped to the preview pane (its own scroll
-container on wide screens; the page/fixed palette on narrow ones).
+palette (`autoscroll.js`) on narrow layouts. In popover mode the palette
+follows the target instead, so autoscroll degrades to ensure-target-visible
+(no paletteEl passed).
 
 ## Section operations
 

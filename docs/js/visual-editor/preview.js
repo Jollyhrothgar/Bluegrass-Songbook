@@ -31,6 +31,7 @@ import {
     computeTargetIndex, indicatorY, computeDragScroll, LONG_PRESS_MS, DRAG_SLOP_PX
 } from './drag-reorder.js';
 import { scrollSelectionClear, findScrollContainer } from './autoscroll.js';
+import { computePopoverPosition, anchorRectFor } from './popover-position.js';
 import { tokenizeLine } from './syllables.js';
 import { detectKey, isValidChord } from '../chords.js';
 
@@ -108,11 +109,69 @@ export function createInteractivePreview({
         },
         onLayoutChange() {
             // More… expand/collapse changes the palette height without a render
+            updatePalettePlacement();
             autoScrollToSelection();
         }
     });
 
     container.append(body, palette.el, toast);
+
+    // ---------- palette placement: bottom dock vs anchored popover ----------
+    //
+    // Wide (side-by-side) layout: the palette floats as a position:fixed
+    // popover anchored to the selected syllable/chip so it is always in
+    // view (the bottom dock can sit below the fold on laptops). Narrow /
+    // stacked layout keeps the bottom dock (the mobile tap flow depends on
+    // it). jsdom has no matchMedia — there the palette stays docked.
+    const wideQuery = typeof window.matchMedia === 'function'
+        ? window.matchMedia('(min-width: 800px)')
+        : null;
+    function popoverMode() { return !!(wideQuery && wideQuery.matches); }
+
+    function selectedEl() {
+        return body.querySelector('.ve-syl-selected, .ve-chip-selected');
+    }
+
+    // Apply or clear popover styling + position. Runs after every render,
+    // when the More… picker expands/collapses, and on scroll/resize while
+    // the palette is open (the popover follows its anchor).
+    function updatePalettePlacement() {
+        const active = popoverMode() && !palette.el.classList.contains('hidden');
+        palette.el.classList.toggle('ve-palette-popover', active);
+        if (!active) {
+            palette.el.style.left = '';
+            palette.el.style.top = '';
+            palette.el.style.maxHeight = '';
+            return;
+        }
+        const target = selectedEl();
+        if (!target) return;
+        const pane = container.closest('.editor-pane-preview') || container;
+        // measure the NATURAL size (a previously applied maxHeight would
+        // make an oversized popover look like it fits)
+        palette.el.style.maxHeight = '';
+        const popRect = palette.el.getBoundingClientRect();
+        const line = target.closest('.ve-line');
+        const pos = computePopoverPosition({
+            targetRect: anchorRectFor({
+                targetRect: target.getBoundingClientRect(),
+                lineRect: line ? line.getBoundingClientRect() : null
+            }),
+            popWidth: popRect.width,
+            popHeight: popRect.height,
+            paneRect: pane.getBoundingClientRect(),
+            viewportHeight: window.innerHeight || document.documentElement.clientHeight
+        });
+        palette.el.style.left = `${pos.left}px`;
+        palette.el.style.top = `${pos.top}px`;
+        palette.el.style.maxHeight = `${pos.maxHeight}px`;
+    }
+
+    // Capture-phase scroll hears the preview pane (or any ancestor)
+    // scrolling; updatePalettePlacement is a cheap no-op while hidden.
+    function onViewportChange() { updatePalettePlacement(); }
+    window.addEventListener('resize', onViewportChange);
+    window.addEventListener('scroll', onViewportChange, true);
 
     if (undoBtn) undoBtn.addEventListener('click', undo);
     if (redoBtn) redoBtn.addEventListener('click', redo);
@@ -657,8 +716,14 @@ export function createInteractivePreview({
     // then nudge the pane scroller so it clears the docked palette.
     function autoScrollToSelection() {
         if (!selection) return;
-        const selectedEl = body.querySelector('.ve-syl-selected, .ve-chip-selected');
-        scrollSelectionClear({ selectedEl, paletteEl: palette.el, stickyTopEl: null });
+        // Popover mode: the palette follows the target instead of occluding
+        // a fixed band, so only ensure the target itself is visible (pass no
+        // paletteEl). Dock mode keeps the scroll-clear-of-palette behavior.
+        scrollSelectionClear({
+            selectedEl: selectedEl(),
+            paletteEl: popoverMode() ? null : palette.el,
+            stickyTopEl: null
+        });
     }
 
     // Header row: ⠿ drag handle (the only lift zone) + label (or the
@@ -768,9 +833,11 @@ export function createInteractivePreview({
         body.textContent = '';
         if (doc.sections.length === 0) {
             renderEmptyState();
+            updatePalettePlacement();
             return;
         }
         for (const sec of doc.sections) body.appendChild(renderSection(sec));
+        updatePalettePlacement();
         autoScrollToSelection();
     }
 
@@ -833,6 +900,8 @@ export function createInteractivePreview({
             if (toastTimer) clearTimeout(toastTimer);
             if (refreshTimer) clearTimeout(refreshTimer);
             document.removeEventListener('keydown', handleKeydown);
+            window.removeEventListener('resize', onViewportChange);
+            window.removeEventListener('scroll', onViewportChange, true);
             container.textContent = '';
             container.classList.remove('ve-preview');
         }

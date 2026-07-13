@@ -316,10 +316,12 @@
                 </span>
             </div>
 
+            <p class="editor-sync-note">Edit from either side &mdash; changes sync.</p>
+
             <div id="editor-workspace" class="editor-workspace">
                 <div class="editor-pane editor-pane-raw">
                     <div class="editor-content-header">
-                        <label for="editor-content">ChordPro</label>
+                        <label for="editor-content" class="editor-pane-title">Raw</label>
                         <span id="editor-selection-toolbar" class="editor-selection-toolbar hidden">
                             <button type="button" class="est-btn" data-wrap="verse">Make verse</button>
                             <button type="button" class="est-btn" data-wrap="chorus">Make chorus</button>
@@ -356,6 +358,9 @@ A blank line starts a new verse."></textarea>
                 </div>
 
                 <div class="editor-pane editor-pane-preview">
+                    <div class="editor-preview-header">
+                        <span class="editor-pane-title">Visual editor</span>
+                    </div>
                     <div id="editor-preview-container" class="editor-preview-container"></div>
                 </div>
             </div>

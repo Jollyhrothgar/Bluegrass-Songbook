@@ -3360,10 +3360,24 @@ mark {
     margin-bottom: 0.5rem;
 }
 
-.editor-content-header > label:first-child {
-    font-size: 0.9rem;
+/* Compact pane titles: "Raw" over the textarea (inside the existing
+   header row with the make-verse mini-bar) and "Visual editor" over the
+   preview. Muted small caps so they read as labels, not content. */
+.editor-pane-title {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--text-secondary);
     margin-bottom: 0;
+}
+
+/* One shared note for both panes: the two views are the same document */
+.editor-sync-note {
+    margin: 0 0 0.4rem;
+    font-size: 0.78rem;
+    font-style: italic;
+    color: var(--text-secondary);
 }
 
 /* make-verse/chorus mini-bar: lives in the ChordPro pane header (a fixed
@@ -9721,11 +9735,25 @@ body.fullscreen-mode::after {
     border-radius: var(--radius-md, 6px);
     background: var(--bg);
 }
+.editor-preview-header {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    border-radius: var(--radius-md, 6px) var(--radius-md, 6px) 0 0;
+}
 @media (min-width: 800px) {
     /* side-by-side: panes share a fixed height; the preview scrolls
        internally so the docked palette stays in view */
     .editor-workspace { height: clamp(420px, calc(100vh - 300px), 900px); }
     .editor-pane-preview { overflow-y: auto; }
+    /* keep the pane title visible while the pane scrolls */
+    .editor-preview-header { position: sticky; top: 0; z-index: 20; }
+    /* popover mode: no bottom dock to scroll clear of, so no need for the
+       huge dock-clearance padding below the last line */
+    .ve-preview-body,
+    .ve-preview:has(.ve-picker:not(.hidden)) .ve-preview-body { padding-bottom: 3rem; }
 }
 @media (max-width: 799.98px) {
     /* stacked: textarea on top, preview flows with the page */
@@ -10109,6 +10137,25 @@ body.fullscreen-mode::after {
 }
 [data-theme="dark"] .ve-palette { box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.6); }
 .ve-palette.hidden { display: none; }
+/* Wide layout: the palette floats as a popover anchored to the selected
+   syllable/chip (positioned by preview.js). Width capped so the
+   root+quality picker still fits; taller-than-viewport content scrolls
+   inside the popover. */
+.ve-palette.ve-palette-popover {
+    position: fixed;
+    bottom: auto;
+    width: min(400px, calc(100vw - 2rem));
+    border: 1px solid var(--border);
+    border-top-width: 1px;
+    border-radius: var(--radius-md, 6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    z-index: 60;
+}
+[data-theme="dark"] .ve-palette.ve-palette-popover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
 .ve-palette-row { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.4rem; }
 .ve-chip-btn {
     min-height: 44px;

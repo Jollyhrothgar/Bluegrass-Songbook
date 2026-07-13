@@ -43,6 +43,15 @@ test.describe('Two-pane editor basics', () => {
         await expect(page.locator('#editor-tab-visual')).toHaveCount(0);
     });
 
+    test('panes are labeled Raw / Visual editor with a shared sync note', async ({ page }) => {
+        await openNewSongEditor(page);
+        await expect(page.locator('.editor-pane-raw .editor-pane-title')).toHaveText('Raw');
+        await expect(page.locator('.editor-pane-preview .editor-pane-title')).toHaveText('Visual editor');
+        await expect(page.locator('.editor-sync-note')).toHaveText(/Edit from either side/);
+        // the label row still hosts the make-verse mini-bar (one row, not two)
+        await expect(page.locator('.editor-content-header #editor-selection-toolbar')).toHaveCount(1);
+    });
+
     test('typing ChordPro in the textarea renders the live preview', async ({ page }) => {
         await openNewSongEditor(page);
         await setSong(page, SONG_WITH_CHORD);
@@ -304,6 +313,99 @@ test.describe('Two-pane editor on mobile viewport', () => {
         await page.locator('.ve-palette .ve-chip-btn').first().click();
         await expect(page.locator('.ve-chip').first()).toBeVisible();
         expect(await page.locator('#editor-content').inputValue()).toMatch(/\[[A-G]/);
+    });
+});
+
+test.describe('Popover palette on desktop', () => {
+    // default viewport (1440x900) is the wide side-by-side layout: the
+    // palette floats as a popover anchored to the selection instead of
+    // docking at the bottom of the preview pane
+    const LONG_SONG = '{start_of_verse: Verse 1}\n' + Array.from(
+        { length: 30 }, (_, i) => `line number ${i + 1} of the song`).join('\n') + '\n{end_of_verse}\n';
+
+    async function openLongSong(page) {
+        await page.emulateMedia({ reducedMotion: 'reduce' });
+        await openNewSongEditor(page);
+        await setSong(page, LONG_SONG);
+        await expect(page.locator('.ve-line')).toHaveCount(30);
+    }
+
+    test('tapping a syllable opens the palette as a popover below it', async ({ page }) => {
+        await openNewSongEditor(page);
+        await setSong(page, SONG);
+        const syl = page.locator('.ve-syl').first();
+        await syl.click();
+        const pal = page.locator('.ve-palette');
+        await expect(pal).toBeVisible();
+        await expect(pal).toHaveClass(/ve-palette-popover/);
+
+        const palBox = await pal.boundingBox();
+        const sylBox = await syl.boundingBox();
+        // width capped so the Strum Machine picker fits without dominating
+        expect(palBox.width).toBeLessThanOrEqual(420);
+        // anchored below the target, fully inside the viewport
+        expect(palBox.y).toBeGreaterThanOrEqual(sylBox.y + sylBox.height);
+        expect(palBox.y + palBox.height).toBeLessThanOrEqual(900);
+
+        // picking from the popover works exactly like the dock
+        await pal.locator('.ve-chip-btn').first().click();
+        await expect(page.locator('.ve-chip').first()).toBeVisible();
+    });
+
+    test('palette is visible in the viewport after selecting a low syllable', async ({ page }) => {
+        await openLongSong(page);
+        const low = page.locator('.ve-line').nth(28).locator('.ve-syl').first();
+        await low.scrollIntoViewIfNeeded();
+        await low.click();
+
+        const pal = page.locator('.ve-palette');
+        await expect(pal).toBeVisible();
+        await expect.poll(async () => {
+            const box = await pal.boundingBox();
+            return box && box.y >= 0 && box.y + box.height <= 900;
+        }).toBe(true);
+        // and it never covers the syllable it is anchored to
+        const palBox = await pal.boundingBox();
+        const sylBox = await low.boundingBox();
+        const overlaps = palBox.y < sylBox.y + sylBox.height &&
+            palBox.y + palBox.height > sylBox.y;
+        expect(overlaps).toBe(false);
+    });
+
+    test('the popover follows its anchor when the preview pane scrolls', async ({ page }) => {
+        await openLongSong(page);
+        const syl = page.locator('.ve-line').nth(10).locator('.ve-syl').first();
+        await syl.scrollIntoViewIfNeeded();
+        await syl.click();
+        const pal = page.locator('.ve-palette');
+        await expect(pal).toHaveClass(/ve-palette-popover/);
+
+        const gap = async () => {
+            const p = await pal.boundingBox();
+            const t = await syl.boundingBox();
+            return Math.round(p.y - t.y);
+        };
+        const before = await gap();
+        await page.locator('.editor-pane-preview').evaluate(el => el.scrollBy(0, 80));
+        await expect.poll(gap).toBe(before);
+    });
+
+    test('More… picker expands inside the popover and stays usable', async ({ page }) => {
+        await openLongSong(page);
+        const low = page.locator('.ve-line').nth(28).locator('.ve-syl').first();
+        await low.scrollIntoViewIfNeeded();
+        await low.click();
+        await page.locator('.ve-palette-more').click();
+        await expect(page.locator('.ve-picker')).toBeVisible();
+
+        const pal = page.locator('.ve-palette');
+        await expect.poll(async () => {
+            const box = await pal.boundingBox();
+            return box && box.y >= 0 && box.y + box.height <= 900;
+        }).toBe(true);
+        // the picker inside the popover still places chords
+        await page.locator('.ve-picker-quality', { hasText: /^Gm$/ }).click();
+        await expect(page.locator('.ve-chip', { hasText: 'Gm' })).toBeVisible();
     });
 });
 
