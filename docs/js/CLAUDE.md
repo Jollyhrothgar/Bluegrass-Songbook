@@ -258,9 +258,13 @@ Multi-track tabs (e.g., ensemble arrangements with guitar, banjo, mandolin, bass
 Two-pane editor: the raw ChordPro textarea (`#editor-content`, left) beside
 a live INTERACTIVE preview (`#editor-preview-container`, right; stacked
 below ~800px). The textarea is THE document — the preview renders
-`parseSong(textarea.value)` and every preview-side edit (tap a syllable →
-palette/typed chord, tap a chip → change/delete, section drag/menu ops)
-writes serialized ChordPro back into the textarea. See
+`parseSong(textarea.value)` and every preview-side edit writes serialized
+ChordPro back into the textarea. In the preview, VERTICAL POSITION IS THE
+MODE: the chord strip above each line places/edits chords (hover ghost
+slot → click a seam → palette or typed entry; tap a chip → change/delete),
+while clicking the lyric text swaps that line for an inline input (blur
+commits with word-LCS chord re-anchoring, Enter splits, Backspace at 0
+merges, Escape reverts), plus section drag/menu ops. See
 `visual-editor/CLAUDE.md` for the preview orchestrator. Submit/copy/
 download flows read the textarea unchanged; smart paste converts chord
 sheets on paste into the textarea; selecting textarea lines reveals a

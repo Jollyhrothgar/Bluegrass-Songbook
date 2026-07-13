@@ -23,7 +23,8 @@
 
 import {
     parseSong, serializeSong, placeChord, changeChord, removeChord, allChords,
-    setSectionType, relabelSection, moveSectionTo, deleteSection, duplicateSection
+    setSectionType, relabelSection, moveSectionTo, deleteSection, duplicateSection,
+    updateLyrics, splitLine, mergeLines
 } from './model.js';
 import { el, renderChordsLine } from './line-view.js';
 import { createPalette } from './palette.js';
@@ -71,6 +72,11 @@ export function createInteractivePreview({
     let pendingLift = null;    // touch long-press waiting to lift
     let renameId = null;       // section id whose label renders as an input
     let toastTimer = null;
+    // In-progress lyric line edit: { sectionId, lineIndex, virtual, value,
+    // input }. virtual = a new line being typed at the end of the section
+    // (lineIndex is where it will land). No re-renders happen mid-edit;
+    // the doc changes only on commit (blur / Enter / Backspace-merge).
+    let editing = null;
 
     container.classList.add('ve-preview');
 
@@ -193,9 +199,13 @@ export function createInteractivePreview({
     }
 
     // One preview-side edit = one undo step (snapshot of the text before it).
+    // A no-op edit (serializes to the exact current text) commits nothing,
+    // so structural edge cases never dirty the undo stack.
     function commitDoc(nextDoc) {
+        const text = serializeSong(nextDoc);
+        if (text === textarea.value) { doc = parseCurrent(); return; }
         pushUndoSnapshot(textarea.value);
-        writeText(serializeSong(nextDoc));
+        writeText(text);
         doc = parseCurrent();
     }
 
@@ -215,6 +225,7 @@ export function createInteractivePreview({
 
     function undo() {
         cancelGhost();
+        editing = null;
         if (!undoStack.length) return;
         redoStack.push(textarea.value);
         writeText(undoStack.pop());
@@ -226,6 +237,7 @@ export function createInteractivePreview({
 
     function redo() {
         cancelGhost();
+        editing = null;
         if (!redoStack.length) return;
         undoStack.push(textarea.value);
         writeText(redoStack.pop());
@@ -245,6 +257,257 @@ export function createInteractivePreview({
         palette.hide();
         render();
         return true;
+    }
+
+    // ---------- in-preview lyric editing ----------
+    //
+    // Clicking lyric text swaps that line for a single-line input (text
+    // territory). Commit path: rebuild the section's full lyrics text with
+    // the edit applied -> updateLyrics (word-LCS chord re-anchoring) ->
+    // one undo step. Opaque lines are excluded from the joined text and
+    // dropped on commit (documented v1 behavior, same as the parked card
+    // editor); they are never editable themselves.
+
+    function sectionById(id) { return doc.sections.find(s => s.id === id); }
+
+    function filteredIndexOf(sec, lineIndex) {
+        let fi = 0;
+        for (let i = 0; i < lineIndex && i < sec.lines.length; i++) {
+            if (!sec.lines[i].opaque) fi++;
+        }
+        return fi;
+    }
+
+    function docIndexOfFiltered(sec, fi) {
+        let seen = 0;
+        for (let i = 0; i < sec.lines.length; i++) {
+            if (sec.lines[i].opaque) continue;
+            if (seen === fi) return i;
+            seen++;
+        }
+        return sec.lines.length;
+    }
+
+    function sectionLyricLines(sec) {
+        return sec.lines.filter(l => !l.opaque).map(l => l.lyrics);
+    }
+
+    function toastDropped(n) {
+        if (n > 0) showToast(`${n} chord${n === 1 ? '' : 's'} dropped \u2014`);
+    }
+
+    // Replace the section's lyrics with newLines (one undo step) and toast
+    // when re-anchoring had to drop chords. No-ops (and returns false) when
+    // nothing actually changed, so a click-away never dirties the undo stack.
+    function commitSectionLyrics(sectionId, newLines) {
+        const sec = sectionById(sectionId);
+        const before = sectionLyricLines(sec).join('\n');
+        const text = newLines.join('\n');
+        if (text.replace(/\n+$/, '') === before.replace(/\n+$/, '')) {
+            render();
+            return false;
+        }
+        const { doc: next, droppedChords } = updateLyrics(doc, sectionId, text);
+        commitDoc(next);
+        render();
+        toastDropped(droppedChords);
+        return true;
+    }
+
+    // Split/merge are STRUCTURAL: chords keep their exact anchors via the
+    // pure splitLine/mergeLines ops. Only a text edit made before the
+    // keystroke goes through updateLyrics (LCS re-anchoring) — and both
+    // land in the textarea as a single undo step.
+    function withValueEditApplied(ed, value) {
+        const sec = sectionById(ed.sectionId);
+        if (value === sec.lines[ed.lineIndex].lyrics) {
+            return { base: doc, lineIdx: ed.lineIndex, dropped: 0 };
+        }
+        const lines = sectionLyricLines(sec);
+        const fi = filteredIndexOf(sec, ed.lineIndex);
+        lines[fi] = value;
+        const res = updateLyrics(doc, ed.sectionId, lines.join('\n'));
+        // updateLyrics drops opaque lines, so indices become filtered ones
+        return { base: res.doc, lineIdx: fi, dropped: res.droppedChords };
+    }
+
+    function startLyricEdit(sectionId, lineIndex, caret, opts = {}) {
+        const sec = sectionById(sectionId);
+        if (!sec || !sec.lines) return;
+        const line = sec.lines[lineIndex];
+        if (!opts.virtual && (!line || line.opaque)) return;
+        cancelGhost();
+        clearResume();
+        selection = null;
+        palette.hide();
+        editing = {
+            sectionId, lineIndex,
+            virtual: !!opts.virtual,
+            value: opts.virtual ? (opts.value || '') : line.lyrics,
+            input: null
+        };
+        render();
+        const input = editing && editing.input;
+        if (input) {
+            input.focus();
+            const c = Math.max(0, Math.min(caret ?? input.value.length, input.value.length));
+            try { input.setSelectionRange(c, c); } catch { /* jsdom */ }
+        }
+    }
+
+    // Commit (or on commit=false, revert) the in-progress lyric edit.
+    function finishLyricEdit(commit) {
+        if (!editing) return false;
+        const ed = editing;
+        const value = ed.input ? ed.input.value : ed.value;
+        editing = null;
+        if (!commit) { render(); return false; }
+        const sec = sectionById(ed.sectionId);
+        if (!sec || !sec.lines) { render(); return false; }
+        const lines = sectionLyricLines(sec);
+        if (ed.virtual) {
+            if (value.trim() === '') { render(); return false; }
+            lines.push(value);
+        } else {
+            lines[filteredIndexOf(sec, ed.lineIndex)] = value;
+        }
+        return commitSectionLyrics(ed.sectionId, lines);
+    }
+
+    // Enter: split the line at the caret (immediate commit — it
+    // restructures lines), then continue editing the line below.
+    function splitLyricEdit() {
+        const ed = editing;
+        if (!ed || !ed.input) return;
+        const input = ed.input;
+        const caret = input.selectionStart ?? input.value.length;
+        const value = input.value;
+        const tail = value.slice(caret);
+        const sec = sectionById(ed.sectionId);
+        if (!sec || !sec.lines) { editing = null; render(); return; }
+        editing = null;
+
+        if (ed.virtual) {
+            // the line isn't in the doc yet: append the head, keep typing
+            // the tail on the next fresh line
+            const lines = sectionLyricLines(sec);
+            lines.push(value.slice(0, caret));
+            commitSectionLyrics(ed.sectionId, lines);
+            const fresh = sectionById(ed.sectionId);
+            startLyricEdit(ed.sectionId, fresh ? fresh.lines.length : 0, 0,
+                { virtual: true, value: tail });
+            return;
+        }
+
+        const { base, lineIdx, dropped } = withValueEditApplied(ed, value);
+        const baseSec = base.sections.find(s => s.id === ed.sectionId);
+        if (tail === '' && lineIdx === baseSec.lines.length - 1) {
+            // Enter at the end of the section's last line: a trailing blank
+            // would be stripped on parse anyway — just open a fresh line
+            if (base !== doc) { commitDoc(base); toastDropped(dropped); }
+            render();
+            const fresh = sectionById(ed.sectionId);
+            startLyricEdit(ed.sectionId, fresh ? fresh.lines.length : 0, 0, { virtual: true });
+            return;
+        }
+        commitDoc(splitLine(base, ed.sectionId, lineIdx, caret));
+        render();
+        toastDropped(dropped);
+        const fresh = sectionById(ed.sectionId);
+        if (fresh && fresh.lines && lineIdx + 1 < fresh.lines.length) {
+            startLyricEdit(ed.sectionId, lineIdx + 1, 0);
+        } else {
+            startLyricEdit(ed.sectionId, fresh ? fresh.lines.length : 0, 0,
+                { virtual: true, value: tail });
+        }
+    }
+
+    // Backspace at position 0: merge into the previous line (immediate
+    // commit), caret at the join.
+    function mergeLyricEdit() {
+        const ed = editing;
+        if (!ed || !ed.input) return;
+        const value = ed.input.value;
+        const sec = sectionById(ed.sectionId);
+        if (!sec || !sec.lines) { editing = null; render(); return; }
+        const lines = sectionLyricLines(sec);
+        const fi = ed.virtual ? lines.length : filteredIndexOf(sec, ed.lineIndex);
+        if (fi === 0) return;   // no line above within this section
+        const prev = lines[fi - 1];
+        editing = null;
+
+        if (ed.virtual) {
+            // the new line isn't in the doc yet: fold its text onto the
+            // last real line and continue editing there
+            if (value !== '') {
+                lines[fi - 1] = prev + value;
+                commitSectionLyrics(ed.sectionId, lines);
+            } else {
+                render();
+            }
+            const fresh = sectionById(ed.sectionId);
+            if (!fresh || !fresh.lines || !fresh.lines.length) return;
+            startLyricEdit(ed.sectionId, docIndexOfFiltered(fresh, fi - 1), prev.length);
+            return;
+        }
+
+        const { base, lineIdx, dropped } = withValueEditApplied(ed, value);
+        const baseSec = base.sections.find(s => s.id === ed.sectionId);
+        let prevIdx = lineIdx - 1;
+        while (prevIdx >= 0 && baseSec.lines[prevIdx].opaque) prevIdx--;
+        if (prevIdx < 0) { render(); return; }
+        commitDoc(mergeLines(base, ed.sectionId, prevIdx, lineIdx));
+        render();
+        toastDropped(dropped);
+        startLyricEdit(ed.sectionId, prevIdx, prev.length);
+    }
+
+    // While a lyric input is focused, pressing on another interactive
+    // preview element must not lose the click to the blur re-render: keep
+    // focus (preventDefault), let the click land on the still-live element,
+    // and its handler commits the edit first. Presses anywhere else
+    // (textarea, toolbar, section chrome) commit via the input's blur.
+    function onEditingMouseDown(e) {
+        if (!editing || !editing.input) return;
+        const t = e.target;
+        if (!t || t === editing.input) return;
+        if (t.closest && t.closest('.ve-strip, .ve-chip, .ve-chip-x, .ve-syl, .ve-line, .ve-add-line, .ve-end-slot')) {
+            e.preventDefault();
+        }
+    }
+    container.addEventListener('mousedown', onEditingMouseDown, true);
+
+    function renderLyricEditRow() {
+        const row = el('div', 've-line ve-line-editing');
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.className = 've-lyric-input';
+        input.setAttribute('aria-label', 'Edit lyric line');
+        input.value = editing.value;
+        editing.input = input;
+        input.addEventListener('input', () => {
+            if (editing && editing.input === input) editing.value = input.value;
+        });
+        input.addEventListener('keydown', (e) => {
+            if (!editing || editing.input !== input) return;
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                splitLyricEdit();
+            } else if (e.key === 'Escape') {
+                e.preventDefault();
+                finishLyricEdit(false);
+            } else if (e.key === 'Backspace' &&
+                input.selectionStart === 0 && input.selectionEnd === 0) {
+                e.preventDefault();
+                mergeLyricEdit();
+            }
+            // Tab is left alone: focus moves on, the blur commits
+        });
+        input.addEventListener('blur', () => {
+            if (editing && editing.input === input) finishLyricEdit(true);
+        });
+        row.appendChild(input);
+        return row;
     }
 
     // ---------- ghost-chip typed entry ----------
@@ -309,6 +572,7 @@ export function createInteractivePreview({
     function sectionOp(nextDoc) {
         cancelGhost();
         clearResume();
+        editing = null;
         selection = null;
         palette.hide();
         renameId = null;
@@ -690,24 +954,41 @@ export function createInteractivePreview({
     }
 
     const callbacks = {
-        onSyllableTap(sectionId, lineIndex, position) {
+        // chord-row click at a syllable seam: the chord surface. Everything
+        // downstream (palette, ghost typing, Space/Tab advance) is unchanged.
+        onStripTap(sectionId, lineIndex, position) {
+            finishLyricEdit(true);   // a pending lyric edit commits first
             flushGhost();  // commit a valid in-progress ghost before moving on
+            const line = doc.sections.find(s => s.id === sectionId)?.lines?.[lineIndex];
+            if (!line || line.opaque || position > line.lyrics.length) return;
             selection = { sectionId, lineIndex, position };
             palette.showFor({ existingChord: null });
             render();
         },
         onChipTap(sectionId, lineIndex, chordIndex) {
+            finishLyricEdit(true);
             flushGhost();
-            selection = { sectionId, lineIndex, chordIndex };
             const sec = doc.sections.find(s => s.id === sectionId);
-            palette.showFor({ existingChord: sec.lines[lineIndex].chords[chordIndex].chord });
+            const chord = sec?.lines?.[lineIndex]?.chords?.[chordIndex];
+            if (!chord) return;
+            selection = { sectionId, lineIndex, chordIndex };
+            palette.showFor({ existingChord: chord.chord });
             render();
         },
         onChipRemove(sectionId, lineIndex, chordIndex) {
             // hover × on a chip (desktop): same undoable remove path
+            finishLyricEdit(true);
             cancelGhost();
+            const sec = doc.sections.find(s => s.id === sectionId);
+            if (!sec?.lines?.[lineIndex]?.chords?.[chordIndex]) return;
             selection = { sectionId, lineIndex, chordIndex };
             deleteSelectedChord();
+        },
+        // lyric text click: swap the line for a single-line input
+        onLyricTap(sectionId, lineIndex, caret) {
+            finishLyricEdit(true);
+            flushGhost();
+            startLyricEdit(sectionId, lineIndex, caret);
         }
     };
 
@@ -801,10 +1082,29 @@ export function createInteractivePreview({
         wrap.appendChild(renderSectionHeader(sec));
         const linesEl = el('div', 've-psec-body');
         const ghostCtx = ghost ? { text: ghost.text, invalid: !!ghost.invalid } : null;
+        const editingHere = (li) => editing && editing.sectionId === sec.id &&
+            !editing.virtual && editing.lineIndex === li;
         sec.lines.forEach((line, li) => {
-            linesEl.appendChild(renderChordsLine(sec, line, li,
-                { selection, callbacks, ghost: ghostCtx, displayChord }));
+            linesEl.appendChild(editingHere(li) && !line.opaque
+                ? renderLyricEditRow()
+                : renderChordsLine(sec, line, li,
+                    { selection, callbacks, ghost: ghostCtx, displayChord }));
         });
+        if (editing && editing.sectionId === sec.id && editing.virtual) {
+            // a new line being typed at the end of the section
+            linesEl.appendChild(renderLyricEditRow());
+        } else {
+            // quiet trailing ghost row: click to start a new line (also the
+            // only lyric surface an empty section has)
+            const addLine = el('button', 've-add-line', '+ Add line');
+            addLine.type = 'button';
+            addLine.addEventListener('click', () => {
+                finishLyricEdit(true);
+                flushGhost();
+                startLyricEdit(sec.id, sec.lines.length, 0, { virtual: true });
+            });
+            linesEl.appendChild(addLine);
+        }
         wrap.appendChild(linesEl);
         return wrap;
     }
@@ -812,7 +1112,7 @@ export function createInteractivePreview({
     function renderEmptyState() {
         const empty = el('div', 've-preview-empty');
         empty.appendChild(el('p', 've-preview-empty-hint',
-            'Your song appears here as you type — tap any word to add a chord.'));
+            'Your song appears here as you type — tap above a word to add a chord, tap the words to edit them.'));
         const links = el('div', 've-empty-links');
         const addLink = (cls, text, cb) => {
             const btn = el('button', `ve-empty-link ${cls}`, text);
@@ -861,6 +1161,7 @@ export function createInteractivePreview({
         cancelGhost();
         clearResume();
         renameId = null;
+        editing = null;
         doc = parseCurrent();
         if (!selectionResolves()) {
             selection = null;
@@ -878,6 +1179,7 @@ export function createInteractivePreview({
     function reset() {
         cancelGhost();
         clearResume();
+        editing = null;
         undoStack = [];
         redoStack = [];
         selection = null;
@@ -900,6 +1202,7 @@ export function createInteractivePreview({
             if (toastTimer) clearTimeout(toastTimer);
             if (refreshTimer) clearTimeout(refreshTimer);
             document.removeEventListener('keydown', handleKeydown);
+            container.removeEventListener('mousedown', onEditingMouseDown, true);
             window.removeEventListener('resize', onViewportChange);
             window.removeEventListener('scroll', onViewportChange, true);
             container.textContent = '';

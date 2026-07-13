@@ -4,7 +4,9 @@
 // preview-side edit writes serialized ChordPro back into the textarea.
 // Ported from the parked card-orchestrator tests — the chord-editing
 // behaviors (palette picks, ghost typed entry, Space/Tab advance, chip
-// delete, undo/redo) survive on the new surface.
+// delete, undo/redo) survive on the new surface. Chord selection happens
+// on the chord ROW (the strip above each syllable); lyric text is text
+// territory (see visual-editor-lyric-edit.test.js).
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { createInteractivePreview, REFRESH_DEBOUNCE_MS } from '../visual-editor/preview.js';
 
@@ -36,11 +38,15 @@ function load(text) {
 
 function raw() { return textarea.value; }
 
-function tapSyllable(text) {
+// Chord placement lives on the chord ROW: click the strip above the
+// syllable (jsdom rects are zero-size, so the click resolves to the
+// strip's own token seam).
+function tapStrip(text) {
     const syl = [...container.querySelectorAll('.ve-syl')]
         .find(s => s.textContent.trim().startsWith(text));
-    syl.click();
-    return syl;
+    const strip = syl.closest('.ve-seg').querySelector('.ve-strip');
+    strip.click();
+    return strip;
 }
 
 function pickChord(chord) {
@@ -69,7 +75,7 @@ describe('rendering from the textarea', () => {
     });
 
     it('metadata directives ride through untouched (never rendered, never lost)', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         expect(raw()).toContain('{meta: title Test Song}');
         expect(container.textContent).not.toContain('{meta: title');
@@ -81,7 +87,7 @@ describe('rendering from the textarea', () => {
         expect(pass.textContent).toContain('{comment: watch the ending}');
         // passthrough content has no tap targets
         expect(pass.querySelector('.ve-syl')).toBeNull();
-        tapSyllable('hel');
+        tapStrip('hel');
         pickChord('G');
         expect(raw()).toContain('{comment: watch the ending}');
     });
@@ -94,7 +100,7 @@ describe('rendering from the textarea', () => {
 
 describe('place / change / remove flow', () => {
     it('tap syllable then pick places a chord in the textarea and fires onChange', () => {
-        tapSyllable('world');
+        tapStrip('world');
         expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(false);
         pickChord('C');
         expect(raw()).toContain('[G]hello [C]world friend');
@@ -115,7 +121,7 @@ describe('place / change / remove flow', () => {
 
     it('tap chip then tap syllable deselects the chip and selects the syllable (no move)', () => {
         container.querySelector('.ve-chip').click();
-        tapSyllable('friend');
+        tapStrip('friend');
         expect(raw()).toContain('[G]hello world friend');
         const syl = [...container.querySelectorAll('.ve-syl')]
             .find(s => s.textContent.trim().startsWith('friend'));
@@ -127,7 +133,7 @@ describe('place / change / remove flow', () => {
 
 describe('consecutive picks (insert then refine)', () => {
     it('a pick inserts and selects the new chip; the palette stays open', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         expect(raw()).toContain('[C]world');
         expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(false);
@@ -137,7 +143,7 @@ describe('consecutive picks (insert then refine)', () => {
     });
 
     it('the next pick replaces the just-placed chord instead of no-oping or stacking', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         pickChord('D7');
         expect(raw()).toContain('[D7]world');
@@ -146,7 +152,7 @@ describe('consecutive picks (insert then refine)', () => {
     });
 
     it('picker stays open with its root selection intact across picks', () => {
-        tapSyllable('world');
+        tapStrip('world');
         container.querySelector('.ve-palette-more').click();
         const roots = () => [...container.querySelectorAll('.ve-picker-root')];
         const qualities = () => [...container.querySelectorAll('.ve-picker-quality')];
@@ -161,9 +167,9 @@ describe('consecutive picks (insert then refine)', () => {
     });
 
     it('after a pick, tapping another syllable moves the flow there (insert)', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
-        tapSyllable('friend');
+        tapStrip('friend');
         pickChord('D7');
         expect(raw()).toContain('[C]world [D7]friend');
     });
@@ -171,7 +177,7 @@ describe('consecutive picks (insert then refine)', () => {
 
 describe('undo / redo', () => {
     it('undo button reverts the last op; redo reapplies it', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         undoBtn.click();
         expect(raw()).not.toContain('[C]');
@@ -182,7 +188,7 @@ describe('undo / redo', () => {
     it('buttons reflect stack state (disabled when empty)', () => {
         expect(undoBtn.disabled).toBe(true);
         expect(redoBtn.disabled).toBe(true);
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         expect(undoBtn.disabled).toBe(false);
         undoBtn.click();
@@ -201,7 +207,7 @@ describe('undo / redo', () => {
 
     it('undo restores the EXACT previous text, byte for byte', () => {
         const before = raw();
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         undoBtn.click();
         expect(raw()).toBe(before);
@@ -234,7 +240,7 @@ describe('external textarea changes', () => {
     });
 
     it('a selection that no longer resolves is dropped and the palette hides', () => {
-        tapSyllable('world');
+        tapStrip('world');
         expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(false);
         textarea.value = '{start_of_verse: Verse 1}\nhi\n{end_of_verse}\n';
         preview.refresh();
@@ -243,7 +249,7 @@ describe('external textarea changes', () => {
     });
 
     it('a selection that still resolves survives a refresh', () => {
-        tapSyllable('world');
+        tapStrip('world');
         textarea.value = textarea.value.replace('friend', 'buddy');
         preview.refresh();
         expect(container.querySelector('.ve-syl-selected')).not.toBeNull();
@@ -284,7 +290,7 @@ describe('ghost-chip typed entry', () => {
     afterEach(() => { vi.useRealTimers(); });
 
     it('typing a chord letter shows a ghost chip over the syllable — no picker, no focus', () => {
-        tapSyllable('world');
+        tapStrip('world');
         const e = docKeydown({ key: 'a' });
         expect(e.defaultPrevented).toBe(true);
         const ghost = container.querySelector('.ve-ghost-chip');
@@ -297,7 +303,7 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('keystrokes accumulate and a valid chord auto-commits after the idle delay', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'e' });
         docKeydown({ key: 'b' });
         docKeydown({ key: '7' });
@@ -310,7 +316,7 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('each keystroke restarts the idle timer', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'e' });
         vi.advanceTimersByTime(500);
         docKeydown({ key: 'b' });
@@ -321,7 +327,7 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('invalid text never commits — the ghost idles in the invalid style', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'a' });
         docKeydown({ key: 'x' });
         vi.advanceTimersByTime(800);
@@ -332,7 +338,7 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('Backspace repairs an invalid ghost, which then commits', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'a' });
         docKeydown({ key: 'x' });
         vi.advanceTimersByTime(800);
@@ -345,7 +351,7 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('Escape cancels the ghost and keeps the selection', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'g' });
         docKeydown({ key: 'Escape' });
         expect(container.querySelector('.ve-ghost-chip')).toBeNull();
@@ -357,7 +363,7 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('Enter commits immediately without advancing', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'g' });
         docKeydown({ key: '7' });
         docKeydown({ key: 'Enter' });
@@ -380,7 +386,7 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('resume grace: typing right after an auto-commit keeps refining that chord', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'e' });
         vi.advanceTimersByTime(800);
         expect(raw()).toContain('[E]world');
@@ -392,7 +398,7 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('after the grace window, typing starts a fresh entry on the selected chip', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'e' });
         vi.advanceTimersByTime(800);   // commit [E]
         vi.advanceTimersByTime(1500);  // grace expires
@@ -403,18 +409,18 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('tapping another syllable mid-entry commits a valid ghost first', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'c' });
-        tapSyllable('friend');
+        tapStrip('friend');
         expect(raw()).toContain('[C]world');
         expect(container.querySelector('.ve-ghost-chip')).toBeNull();
     });
 
     it('tapping another syllable mid-entry drops an invalid ghost', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'c' });
         docKeydown({ key: 'x' });
-        tapSyllable('friend');
+        tapStrip('friend');
         expect(raw()).not.toContain('Cx');
         expect(container.querySelector('.ve-ghost-chip')).toBeNull();
     });
@@ -441,7 +447,7 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('does not intercept keystrokes targeted at inputs or textareas', () => {
-        tapSyllable('world');
+        tapStrip('world');
         textarea.dispatchEvent(new KeyboardEvent('keydown', { key: 'a', bubbles: true, cancelable: true }));
         expect(container.querySelector('.ve-ghost-chip')).toBeNull();
     });
@@ -453,7 +459,7 @@ describe('ghost-chip typed entry', () => {
     });
 
     it('undo shortcut mid-entry cancels the ghost and undoes the last change', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         docKeydown({ key: 'd' });
         docKeydown({ key: 'z', ctrlKey: true });
@@ -471,7 +477,7 @@ describe('Space/Tab selection advance', () => {
     const selectedSyl = () => container.querySelector('.ve-syl-selected');
 
     it('Space with a selection and no ghost advances to the next syllable', () => {
-        tapSyllable('hel');
+        tapStrip('hel');
         const e = docKeydown({ key: ' ' });
         expect(e.defaultPrevented).toBe(true);
         expect(selectedSyl().textContent.trim().startsWith('lo')).toBe(true);
@@ -479,7 +485,7 @@ describe('Space/Tab selection advance', () => {
     });
 
     it('spam Space across syllables, then type where the chord goes', () => {
-        tapSyllable('hel');
+        tapStrip('hel');
         docKeydown({ key: ' ' });
         docKeydown({ key: ' ' });
         docKeydown({ key: 'c' });
@@ -488,7 +494,7 @@ describe('Space/Tab selection advance', () => {
     });
 
     it('Space during ghost entry commits and advances', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'c' });
         const e = docKeydown({ key: ' ' });
         expect(e.defaultPrevented).toBe(true);
@@ -497,7 +503,7 @@ describe('Space/Tab selection advance', () => {
     });
 
     it('Space during an invalid ghost neither commits nor advances', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'c' });
         docKeydown({ key: 'x' });
         docKeydown({ key: ' ' });
@@ -506,7 +512,7 @@ describe('Space/Tab selection advance', () => {
     });
 
     it('Tab advances, Shift+Tab goes backward', () => {
-        tapSyllable('world');
+        tapStrip('world');
         docKeydown({ key: 'Tab' });
         expect(selectedSyl().textContent.trim().startsWith('friend')).toBe(true);
         docKeydown({ key: 'Tab', shiftKey: true });
@@ -515,8 +521,8 @@ describe('Space/Tab selection advance', () => {
 
     it('advance wraps to the next line within the section and stops at the end', () => {
         load('{start_of_verse: Verse 1}\nfirst line\nsecond line\n{end_of_verse}\n');
-        const line0Syls = [...container.querySelectorAll('.ve-line[data-line="0"] .ve-syl')];
-        line0Syls[line0Syls.length - 1].click();
+        const line0Strips = [...container.querySelectorAll('.ve-line[data-line="0"] .ve-strip:not(.ve-strip-end)')];
+        line0Strips[line0Strips.length - 1].click();
         docKeydown({ key: ' ' });
         expect(selectedSyl().closest('.ve-line').dataset.line).toBe('1');
         expect(selectedSyl().dataset.start).toBe('0');
@@ -527,8 +533,8 @@ describe('Space/Tab selection advance', () => {
 
     it('backward advance wraps to the previous line', () => {
         load('{start_of_verse: Verse 1}\nfirst line\nsecond line\n{end_of_verse}\n');
-        const syls = [...container.querySelectorAll('.ve-line[data-line="1"] .ve-syl')];
-        syls[0].click();
+        const strips = [...container.querySelectorAll('.ve-line[data-line="1"] .ve-strip:not(.ve-strip-end)')];
+        strips[0].click();
         docKeydown({ key: 'Tab', shiftKey: true });
         expect(selectedSyl().closest('.ve-line').dataset.line).toBe('0');
         const line0Syls = [...container.querySelectorAll('.ve-line[data-line="0"] .ve-syl')];
@@ -588,7 +594,7 @@ describe('chord deletion via Delete/Backspace', () => {
     });
 
     it('Delete with a syllable selected (no chip) does nothing', () => {
-        tapSyllable('world');
+        tapStrip('world');
         const e = docKeydown({ key: 'Delete' });
         expect(e.defaultPrevented).toBe(false);
         expect(raw()).toContain('[G]hello world friend');
@@ -624,7 +630,7 @@ describe('chord deletion via Delete/Backspace', () => {
 
 describe('undo/redo keyboard shortcuts', () => {
     it('Cmd+Z / Ctrl+Z undoes the last change and prevents default', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         expect(raw()).toContain('[C]world');
         const e = docKeydown({ key: 'z', metaKey: true });
@@ -633,7 +639,7 @@ describe('undo/redo keyboard shortcuts', () => {
     });
 
     it('Cmd+Shift+Z and Ctrl+Y redo', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         docKeydown({ key: 'z', ctrlKey: true });
         expect(raw()).not.toContain('[C]');
@@ -645,7 +651,7 @@ describe('undo/redo keyboard shortcuts', () => {
     });
 
     it('shortcuts are inert while the container is hidden', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         container.classList.add('hidden');
         const e = docKeydown({ key: 'z', metaKey: true });
@@ -654,14 +660,14 @@ describe('undo/redo keyboard shortcuts', () => {
     });
 
     it('shortcuts ignore events from editable targets (native textarea undo wins)', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         textarea.dispatchEvent(new KeyboardEvent('keydown', { key: 'z', ctrlKey: true, bubbles: true, cancelable: true }));
         expect(raw()).toContain('[C]world');
     });
 
     it('destroy() removes the document listener', () => {
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         preview.destroy();
         docKeydown({ key: 'z', metaKey: true });
@@ -671,7 +677,7 @@ describe('undo/redo keyboard shortcuts', () => {
 
 describe('key follows the document', () => {
     it('palette diatonic chips follow the detected key of the text', () => {
-        tapSyllable('world');
+        tapStrip('world');
         let labels = [...container.querySelectorAll('.ve-palette-diatonic .ve-chip-btn')]
             .map(b => b.textContent);
         expect(labels).toContain('G');
@@ -679,7 +685,7 @@ describe('key follows the document', () => {
         // host transposes the textarea (e.g. toolbar +2): palette follows
         textarea.value = '{meta: title Test Song}\n\n{start_of_verse: Verse 1}\n[A]hello world friend\n{end_of_verse}\n';
         preview.refresh();
-        tapSyllable('world');
+        tapStrip('world');
         labels = [...container.querySelectorAll('.ve-palette-diatonic .ve-chip-btn')]
             .map(b => b.textContent);
         expect(labels).toContain('A');
@@ -688,7 +694,7 @@ describe('key follows the document', () => {
 
     it('a {key:} directive wins over chord detection', () => {
         load('{key: D}\n\n{start_of_verse: Verse 1}\n[G]hello world friend\n{end_of_verse}\n');
-        tapSyllable('world');
+        tapStrip('world');
         const labels = [...container.querySelectorAll('.ve-palette-diatonic .ve-chip-btn')]
             .map(b => b.textContent);
         expect(labels).toContain('D');
@@ -814,7 +820,7 @@ describe('section header menu', () => {
     });
 
     it('any section op clears the chip/syllable selection (positional ids shift)', () => {
-        tapSyllable('words');
+        tapStrip('words');
         expect(container.querySelector('.ve-syl-selected')).not.toBeNull();
         expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(false);
         menuClick(0, 'delete');
@@ -896,7 +902,7 @@ describe('drag-and-drop section reorder on the preview', () => {
     });
 
     it('a drop clears any live selection (positional ids shift)', () => {
-        tapSyllable('words');
+        tapStrip('words');
         expect(container.querySelector('.ve-syl-selected')).not.toBeNull();
         const handle = handleOf(0);
         handle.dispatchEvent(pev('pointerdown', { clientY: 10, button: 0 }));

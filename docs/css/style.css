@@ -10069,13 +10069,13 @@ body.fullscreen-mode::after {
     .ve-chip-wrap:hover .ve-chip-x { display: flex; }
 }
 .ve-syl {
-    cursor: pointer;
+    cursor: text;
     border-radius: 3px;
     padding: 0.1em 0;
 }
-.ve-syl:hover {
-    background: rgba(96, 165, 250, 0.15); /* fallback */
-    background: color-mix(in srgb, var(--accent) 15%, transparent);
+.ve-line:hover .ve-syl {
+    background: rgba(96, 165, 250, 0.06); /* fallback */
+    background: color-mix(in srgb, var(--accent) 6%, transparent);
 }
 .ve-syl-selected {
     background: rgba(96, 165, 250, 0.35); /* fallback */
@@ -10093,6 +10093,68 @@ body.fullscreen-mode::after {
     margin-left: 0.4rem;
 }
 .ve-end-slot:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ===== Chord row as the chord surface ===== */
+/* Each token's chip container doubles as the explicit chord strip above
+   the lyrics: hover shows a faint ghost slot snapped to the nearest
+   syllable seam, click selects that offset for the palette / typed entry.
+   Kept >= 1.4em tall (comfortable hit target) but visually light. */
+.ve-seg { position: relative; }
+.ve-strip {
+    cursor: copy;
+    border-radius: 3px;
+    min-height: 1.4em;
+}
+.ve-strip:hover {
+    background: rgba(96, 165, 250, 0.08); /* fallback */
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+/* faint slot centered on the hovered seam; no layout shift */
+.ve-slot-ghost {
+    position: absolute;
+    top: 0.05em;
+    width: 1em;
+    height: 1.2em;
+    transform: translateX(-50%);
+    border: 1px dashed var(--chord);
+    border-radius: var(--radius-sm, 4px);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ===== In-preview lyric editing ===== */
+/* the edited line swaps to a bare single-line input; padding-top keeps the
+   vertical rhythm where the chord strip was */
+.ve-line-editing { padding-top: 1.4em; }
+.ve-lyric-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+    line-height: 1.2;
+    padding: 0.1em 0.2em;
+    margin-left: -0.2em;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+}
+/* quiet trailing ghost row: starts a new line at the end of the section */
+.ve-add-line {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0.15em 0;
+    min-height: 28px;
+    color: var(--text-secondary);
+    font: inherit;
+    font-size: 0.85em;
+    cursor: text;
+    opacity: 0.25;
+    text-align: left;
+}
+.ve-psec-body:hover .ve-add-line, .ve-add-line:focus-visible { opacity: 0.7; }
 .ve-lyrics-input {
     width: 100%;
     min-height: 6em;

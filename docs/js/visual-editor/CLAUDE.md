@@ -61,26 +61,65 @@ still resolves (section/line/chord bounds are re-checked on refresh).
 ## Preview rendering
 
 Sections render as a header row (`.ve-psec-header`: ⠿ drag handle, label,
-⋯ menu) over chord-chip lines (`.ve-psec`, chorus indented) — no cards, no
+⋯ menu) over interactive lines (`.ve-psec`, chorus indented) — no cards, no
 per-section mode toggles. Passthrough blocks (ABC, unknown directives)
-render read-only but keep the handle and a Delete-only menu. The preview is
-ALWAYS chord-interactive; there is no lyrics mode — lyrics are edited in
-the textarea. Blank lines inside a section render as whisper-quiet `+`
-end-slot rows (`.ve-line-blank`) that wake on hover/selection.
+render read-only but keep the handle and a Delete-only menu. Each line is
+a row of `.ve-seg` segments: a chord strip (`.ve-strip`, the chip container,
+≥1.4em tall) over the syllable text (`.ve-syl`). The trailing `+` end slot
+lives IN the chord row (`.ve-strip-end`). Every editable section ends with
+a quiet `+ Add line` ghost row (`.ve-add-line`). Blank lines inside a
+section render as whisper-quiet end-slot rows (`.ve-line-blank`) that wake
+on hover/selection.
 
 ## Interactions
 
-Tap a syllable → chord palette (diatonic chips, recents, More… picker with
-a free-text input). Tap a chip → same palette in edit mode with ✕ Remove.
+**Vertical position is the mode**: the chord strip above each line is
+chord territory; the lyric text below is text territory. There is no
+hidden mode — clicking a word never places a chord, and chord entry never
+needs the lyrics.
+
+**Chord row**: hovering a strip shows a faint ghost slot (`.ve-slot-ghost`)
+snapped to the nearest syllable seam under the cursor (seams = token
+starts from `syllables.js`, plus the line-end slot; `nearestSeamPosition`
+in line-view.js picks own-vs-next by which edge is closer). Clicking
+selects that offset — from there everything downstream is unchanged: chord
+palette (diatonic chips, recents, More… picker), ghost-chip typed entry,
+Space/Tab advance, chip tap/hover-×/Delete. The selected seam highlights
+the syllable beneath it (`.ve-syl-selected`), which is what the popover
+anchors to. Tap a chip → same palette in edit mode with ✕ Remove.
 On wide (side-by-side, ≥800px) layouts the palette floats as a popover
 anchored to the selection (`popover-position.js`: below the line, flipped
 above when there's no room, shrunk with internal scroll when neither side
 fits — it never covers its anchor line, and follows it on scroll/resize).
 On narrow/stacked layouts it stays docked at the bottom (the mobile tap
 flow depends on this).
+
+**Lyric row = text**: clicking lyric text (or a row's bare tail / a blank
+row / `+ Add line`) swaps the line for a single-line input
+(`.ve-lyric-input`, same font) with the caret at the clicked character
+(`caretPositionFromPoint` refines within the syllable; falls back to the
+token start). While editing, typing is plain text — the document-level
+chord keydown ignores editable targets. Commit on blur or click elsewhere;
+Escape reverts; Tab is not trapped (focus moves on, the blur commits).
+The commit path builds the section's full lyrics text (opaque lines
+excluded) → `updateLyrics` (word-LCS chord re-anchoring) → one undo step;
+nothing commits if the text is unchanged; dropped chords raise the undo
+toast ("N chords dropped — Undo"). Committing a section this way drops its
+opaque lines (documented v1 behavior); opaque lines themselves are never
+editable. Enter splits the line at the caret and Backspace at position 0
+merges into the previous line (caret at the join) — both commit
+immediately through the EXACT structural ops `splitLine`/`mergeLines`
+(chords keep their character anchors; only a text edit made before the
+keystroke goes through LCS), then editing continues on the right line by
+section index + line index. While an input is focused, pressing on another
+strip/chip/lyric keeps focus (capture-phase mousedown preventDefault) so
+the click lands and its handler commits the edit first; presses on other
+chrome (menus, drag handles, the raw pane) commit via the input's blur and
+may need a second click.
+
 Every edit lands in the textarea as one undo step. Desktop extras:
 
-- **Ghost-chip typed entry**: with a syllable or chip selected, typing a
+- **Ghost-chip typed entry**: with a chord-row seam or chip selected, typing a
   chord letter (A–G) starts a ghost chip at the chord position — dashed,
   dimmed, live-updating as keys accumulate (`Eb7`, `D/F#`, ...). Keystrokes
   are captured at the document keydown listener; no input is focused (so no
@@ -97,8 +136,9 @@ Every edit lands in the textarea as one undo step. Desktop extras:
 - **Hover ×**: on fine-pointer devices, hovering a chip reveals an × that
   removes the chord (undoable). Mobile keeps tap-chip → ✕ Remove.
 - **Shortcuts**: Cmd/Ctrl+Z undo, Shift+Cmd+Z / Ctrl+Y redo — document-level
-  and only when focus is OUTSIDE editable targets; inside the textarea the
-  native textarea undo applies. Delete/Backspace removes a selected chip.
+  and only when focus is OUTSIDE editable targets; inside the textarea and
+  the lyric input the native undo applies (until commit). Delete/Backspace
+  removes a selected chip.
 
 Undo/redo is a capped stack of textarea snapshots owned by the preview;
 host edits that rewrite the textarea (toolbar transpose, key select) call
@@ -166,8 +206,13 @@ are unused but kept as pattern references. `drag-reorder.js` is LIVE again
 ## Tests
 
 - Unit: `visual-editor-preview.test.js` (orchestrator behaviors, section
-  menu/drag/toast on the new surface), `visual-editor-wrap-section.test.js`
-  (make-verse/chorus text transform), `editor-sync.test.js` (two-pane
-  wiring in editor.js), plus the unchanged model / syllables / palette /
-  autoscroll / drag-reorder suites.
-- E2E: `e2e/visual-editor.spec.js` (two-pane flows), `e2e/editor.spec.js`.
+  menu/drag/toast; chord placement via chord-row strip clicks),
+  `visual-editor-lyric-edit.test.js` (in-preview lyric editing:
+  commit/revert/split/merge/add-line/toast/seam behavior),
+  `visual-editor-wrap-section.test.js` (make-verse/chorus text transform),
+  `editor-sync.test.js` (two-pane wiring in editor.js), plus the model /
+  syllables / palette / autoscroll / drag-reorder suites
+  (`visual-editor-model-sections.test.js` covers `updateLyrics` LCS
+  re-anchoring and the exact `splitLine`/`mergeLines` ops).
+- E2E: `e2e/visual-editor.spec.js` (two-pane flows, chord-row hover/click,
+  lyric editing), `e2e/editor.spec.js`.

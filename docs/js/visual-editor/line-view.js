@@ -1,6 +1,10 @@
-// Shared line renderer: one lyric line as chord chips above syllable tap
-// targets. Used by the interactive preview (preview.js) and by the parked
-// section-card renderer. All lyric text flows through textContent.
+// Shared line renderer: an interactive chord strip (chips + hover slots)
+// above lyric text. The VERTICAL position is the mode — the strip above
+// each line is chord territory (hover shows a ghost slot snapped to the
+// nearest syllable seam; click selects that offset for the palette/typed
+// entry), while the lyric text below is text territory (the orchestrator
+// swaps it for an input on click). All lyric text flows through
+// textContent.
 
 import { tokenizeLine } from './syllables.js';
 
@@ -11,9 +15,36 @@ export function el(tag, className, text) {
     return node;
 }
 
+// Which seam does a pointer at clientX over a strip spanning rect pick:
+// the strip's own token start (left edge) or the next token's start
+// (right edge)? Degenerate zero-size rects (jsdom) resolve to ownStart.
+export function nearestSeamPosition(rect, clientX, ownStart, nextStart) {
+    if (nextStart === undefined || nextStart === null) return ownStart;
+    return (clientX - rect.left) > (rect.right - clientX) ? nextStart : ownStart;
+}
+
+// Character offset for a lyric click: token start refined by the caret
+// position inside the syllable's text node when the browser can resolve
+// it (caretPositionFromPoint / caretRangeFromPoint); jsdom and older
+// engines fall back to the token start.
+function caretOffsetFromEvent(e, sylEl, tokenStart) {
+    const doc = sylEl.ownerDocument;
+    try {
+        if (typeof doc.caretPositionFromPoint === 'function') {
+            const p = doc.caretPositionFromPoint(e.clientX, e.clientY);
+            if (p && sylEl.contains(p.offsetNode)) return tokenStart + p.offset;
+        } else if (typeof doc.caretRangeFromPoint === 'function') {
+            const r = doc.caretRangeFromPoint(e.clientX, e.clientY);
+            if (r && sylEl.contains(r.startContainer)) return tokenStart + r.startOffset;
+        }
+    } catch { /* jsdom / detached */ }
+    return tokenStart;
+}
+
 // ctx: { selection, callbacks, ghost, displayChord? }
-// callbacks: onSyllableTap(sectionId, li, position), onChipTap(sectionId,
-// li, chordIndex), onChipRemove(sectionId, li, chordIndex).
+// callbacks: onStripTap(sectionId, li, position) — chord-row click at a
+// seam; onChipTap / onChipRemove — existing-chord edit/delete;
+// onLyricTap(sectionId, li, caret) — lyric text click (starts text edit).
 // displayChord (optional) maps a chord to its display label (e.g. Nashville
 // numbers) — edits always operate on the underlying chord.
 export function renderChordsLine(section, line, li, ctx) {
@@ -97,35 +128,94 @@ export function renderChordsLine(section, line, li, ctx) {
         return chips;
     };
 
+    // One faint ghost slot per row, absolutely positioned on the hovered
+    // seam (no layout shift). Pure hover affordance — clicking commits the
+    // same seam through onStripTap.
+    let slot = null;
+    const hideSlot = () => { if (slot) { slot.remove(); slot = null; } };
+    const showSlot = (seg, atNext, pos) => {
+        if (!slot) slot = el('span', 've-slot-ghost');
+        slot.dataset.pos = String(pos);
+        slot.style.left = atNext ? '100%' : '0';
+        if (slot.parentElement !== seg) seg.appendChild(slot);
+    };
+
     tokens.forEach((token, ti) => {
         const seg = el('span', 've-seg');
-        const chips = makeChips(byToken.get(ti) || []);
-        if (ghost && isSelected(token.start)) chips.appendChild(makeGhostChip());
-        seg.appendChild(chips);
         const nextStart = ti + 1 < tokens.length ? tokens[ti + 1].start : line.lyrics.length;
+
+        // chord strip: the explicit chord surface above this token
+        const strip = makeChips(byToken.get(ti) || []);
+        strip.classList.add('ve-strip');
+        strip.dataset.line = String(li);
+        strip.dataset.start = String(token.start);
+        if (ghost && isSelected(token.start)) strip.appendChild(makeGhostChip());
+        if (callbacks.onStripTap) {
+            strip.addEventListener('click', (e) => {
+                if (e.target.closest('.ve-chip, .ve-chip-x')) return;
+                hideSlot();
+                const pos = nearestSeamPosition(
+                    strip.getBoundingClientRect(), e.clientX, token.start, nextStart);
+                callbacks.onStripTap(section.id, li, pos);
+            });
+            strip.addEventListener('mousemove', (e) => {
+                if (e.target.closest('.ve-chip, .ve-chip-x')) { hideSlot(); return; }
+                const pos = nearestSeamPosition(
+                    strip.getBoundingClientRect(), e.clientX, token.start, nextStart);
+                showSlot(seg, pos !== token.start, pos);
+            });
+            strip.addEventListener('mouseleave', hideSlot);
+        }
+        seg.appendChild(strip);
+
+        // lyric text: text territory — click starts the line's text edit
         const syl = el('span', 've-syl',
             token.text + line.lyrics.slice(token.start + token.text.length, nextStart));
         syl.dataset.line = String(li);
         syl.dataset.start = String(token.start);
         if (isSelected(token.start)) syl.classList.add('ve-syl-selected');
-        syl.addEventListener('click', () => callbacks.onSyllableTap(section.id, li, token.start));
+        if (callbacks.onLyricTap) {
+            syl.addEventListener('click', (e) => {
+                callbacks.onLyricTap(section.id, li,
+                    caretOffsetFromEvent(e, syl, token.start));
+            });
+        }
         seg.appendChild(syl);
         row.appendChild(seg);
     });
 
-    // end slot: place/display trailing chords
+    // end slot: place/display trailing chords — lives IN the chord row
     const endSeg = el('span', 've-seg ve-seg-end');
-    const endChips = makeChips(atEnd);
-    if (ghost && isSelected(line.lyrics.length)) endChips.appendChild(makeGhostChip());
-    endSeg.appendChild(endChips);
+    const endStrip = makeChips(atEnd);
+    endStrip.classList.add('ve-strip', 've-strip-end');
+    endStrip.dataset.line = String(li);
+    endStrip.dataset.start = String(line.lyrics.length);
+    if (ghost && isSelected(line.lyrics.length)) endStrip.appendChild(makeGhostChip());
     const endSlot = el('button', 've-end-slot', '+');
     endSlot.type = 'button';
     endSlot.dataset.line = String(li);
     endSlot.dataset.start = String(line.lyrics.length);
     if (isSelected(line.lyrics.length)) endSlot.classList.add('ve-syl-selected');
-    endSlot.addEventListener('click', () => callbacks.onSyllableTap(section.id, li, line.lyrics.length));
-    endSeg.appendChild(endSlot);
+    if (callbacks.onStripTap) {
+        const tapEnd = () => callbacks.onStripTap(section.id, li, line.lyrics.length);
+        endSlot.addEventListener('click', tapEnd);
+        endStrip.addEventListener('click', (e) => {
+            if (e.target.closest('.ve-chip, .ve-chip-x, .ve-end-slot')) return;
+            tapEnd();
+        });
+    }
+    endStrip.appendChild(endSlot);
+    endSeg.appendChild(endStrip);
     row.appendChild(endSeg);
+
+    // clicks on the row's bare background (right of the text, blank rows)
+    // are text territory: edit this line with the caret at the end
+    if (callbacks.onLyricTap) {
+        row.addEventListener('click', (e) => {
+            if (e.target !== row && !e.target.classList.contains('ve-seg')) return;
+            callbacks.onLyricTap(section.id, li, line.lyrics.length);
+        });
+    }
 
     return row;
 }

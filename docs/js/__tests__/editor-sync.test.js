@@ -52,10 +52,11 @@ function init(refs) {
     initEditor(refs);
 }
 
-function tapSyllable(text) {
+// chord placement lives on the chord row above the syllable
+function tapStrip(text) {
     const syl = [...refs.editorPreviewContainer.querySelectorAll('.ve-syl')]
         .find(s => s.textContent.trim().startsWith(text));
-    syl.click();
+    syl.closest('.ve-seg').querySelector('.ve-strip').click();
 }
 
 function pickChord(chord) {
@@ -95,7 +96,7 @@ describe('preview edits write the textarea', () => {
     it('tap syllable + palette pick appends the chord to the raw text', () => {
         refs.editorContent.value = SRC;
         init(refs);
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         expect(refs.editorContent.value).toContain('[G]hello [C]world friend');
     });
@@ -103,7 +104,7 @@ describe('preview edits write the textarea', () => {
     it('undo button mirrors back into the textarea', () => {
         refs.editorContent.value = SRC;
         init(refs);
-        tapSyllable('friend');
+        tapStrip('friend');
         pickChord('D');
         expect(refs.editorContent.value).toContain('[D]friend');
         refs.editorUndoBtn.click();
@@ -117,7 +118,7 @@ describe('preview edits write the textarea', () => {
         refs.editorContent.focus();
         // (edits only originate from one side at a time; this guards the
         // programmatic write path against focus/caret theft)
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         expect(refs.editorContent.value).toContain('[C]world');
         expect(document.activeElement).not.toBe(refs.editorContent.ownerDocument.body);
@@ -171,7 +172,7 @@ describe('progressive toolbar', () => {
         refs.editorContent.value = '{start_of_verse: Verse 1}\nhello world friend\n{end_of_verse}\n';
         init(refs);
         expect(refs.editorTransposeGroup.classList.contains('ve-gone')).toBe(true);
-        tapSyllable('world');
+        tapStrip('world');
         pickChord('C');
         expect(refs.editorTransposeGroup.classList.contains('ve-gone')).toBe(false);
     });
@@ -192,7 +193,7 @@ describe('host transpose is undoable and preview follows', () => {
     it('palette diatonic chips follow a host transpose', () => {
         refs.editorContent.value = SRC;
         init(refs);
-        tapSyllable('world');
+        tapStrip('world');
         let labels = [...refs.editorPreviewContainer.querySelectorAll('.ve-palette-diatonic .ve-chip-btn')]
             .map(b => b.textContent);
         expect(labels).toContain('G');
