@@ -6797,43 +6797,6 @@ body.fullscreen-mode::after {
     border-color: var(--accent);
 }
 
-/* Repeat toggle */
-.tab-repeat-toggle {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    cursor: pointer;
-    padding: 0.25rem 0.5rem;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    background: var(--bg);
-    transition: all 0.2s;
-    font-size: 0.85rem;
-}
-
-.tab-repeat-toggle:hover {
-    border-color: var(--accent);
-}
-
-.tab-repeat-checkbox {
-    display: none;
-}
-
-.tab-repeat-label {
-    opacity: 0.7;
-    transition: opacity 0.2s;
-}
-
-.tab-repeat-toggle:has(.tab-repeat-checkbox:checked) {
-    background: var(--accent);
-    border-color: var(--accent);
-}
-
-.tab-repeat-toggle:has(.tab-repeat-checkbox:checked) .tab-repeat-label {
-    opacity: 1;
-    color: var(--bg);
-}
-
 /* Beat cursor */
 .beat-cursor {
     pointer-events: none;

@@ -42,6 +42,9 @@ let availableParts = [];         // All parts for current work
 let trackRenderers = {};         // Map of trackId -> TabRenderer instance
 let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
 let twoFeelMode = false;         // true = present 4/4 as cut time (2/2)
+let tempoOverride = null;        // { workId, quarterBpm } — user-set tempo;
+                                 // stored in QUARTER-note bpm so the display
+                                 // can convert when the feel changes
 let activeTrackView = null;      // track id, 'all', or null (= lead track)
 let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
 
@@ -796,16 +799,12 @@ async function renderTablaturePart(part, container) {
             });
         });
 
-        // Wire up repeat toggle (re-renders with repeat signs or unrolled)
-        const repeatCheckbox = controls.querySelector('.tab-repeat-checkbox');
-        const repeatLabel = controls.querySelector('.tab-repeat-label');
-        if (repeatCheckbox) {
-            repeatCheckbox.addEventListener('change', () => {
-                showRepeatsCompact = repeatCheckbox.checked;
-                if (repeatLabel) {
-                    repeatLabel.textContent = showRepeatsCompact ? 'Repeats' : 'Unrolled';
-                }
-                // Re-render tablature with new mode
+        // Wire up repeat notation select (re-renders with repeat signs
+        // or unrolled)
+        const repeatSelect = controls.querySelector('.tab-repeat-select');
+        if (repeatSelect) {
+            repeatSelect.addEventListener('change', () => {
+                showRepeatsCompact = repeatSelect.value === 'repeats';
                 renderTablaturePart(part, container);
             });
         }
@@ -925,7 +924,13 @@ async function enterTabEditMode(otf, part, container) {
  * Create tablature controls
  */
 function createTablatureControls(otf, part) {
-    const defaultTempo = otf.metadata?.tempo || 100;
+    const quarterBpm = (tempoOverride && tempoOverride.workId === currentWork?.id)
+        ? tempoOverride.quarterBpm
+        : (otf.metadata?.tempo || 100);
+    // Displayed BPM is per BEAT of the current feel: in two feel (cut
+    // time) the beat is a half note, so the same absolute speed shows
+    // as half the number (240 quarters == 120 in cut time).
+    const defaultTempo = Math.round(quarterBpm / (twoFeelMode ? 2 : 1));
     const originalKey = currentWork.key || 'G';
 
     // Filter out mandolin backup tracks (chop notation is often buggy)
@@ -959,19 +964,23 @@ function createTablatureControls(otf, part) {
     // Only show repeat toggle if there's a reading list
     const hasReadingList = otf.reading_list && otf.reading_list.length > 0;
     const repeatToggleHtml = hasReadingList ? `
-        <label class="tab-repeat-toggle" title="Toggle repeat notation style">
-            <input type="checkbox" class="tab-repeat-checkbox" ${showRepeatsCompact ? 'checked' : ''}>
-            <span class="tab-repeat-label">${showRepeatsCompact ? 'Repeats' : 'Unrolled'}</span>
-        </label>
+        <div class="qc-group">
+            <select class="tab-repeat-select qc-key-btn" title="Repeat notation: unrolled or repeat signs">
+                <option value="unrolled" ${showRepeatsCompact ? '' : 'selected'}>Unrolled</option>
+                <option value="repeats" ${showRepeatsCompact ? 'selected' : ''}>Repeats</option>
+            </select>
+        </div>
     ` : '';
 
     // Feel selector (4/4 tunes only): explicit dropdown, no ambiguous
     // toggle state
     const feelToggleHtml = (otf.metadata?.time_signature || '4/4') === '4/4' ? `
-        <select class="tab-feel-select" title="Rhythmic feel: quarter-note pulse or cut time">
-            <option value="four" ${twoFeelMode ? '' : 'selected'}>Four feel</option>
-            <option value="two" ${twoFeelMode ? 'selected' : ''}>Two feel</option>
-        </select>
+        <div class="qc-group">
+            <select class="tab-feel-select qc-key-btn" title="Rhythmic feel: quarter-note pulse or cut time (BPM counts the feel's beat)">
+                <option value="four" ${twoFeelMode ? '' : 'selected'}>Four feel</option>
+                <option value="two" ${twoFeelMode ? 'selected' : ''}>Two feel</option>
+            </select>
+        </div>
     ` : '';
 
     // Build key options with capo indicators (chromatic order for vocal range adjustment)
@@ -1095,14 +1104,21 @@ function setupTablaturePlayer(otf, controls, renderer) {
     });
 
     // Tempo controls
+    // No ceiling — bluegrass runs past 240 in cut time. Floor keeps the
+    // scheduler sane.
     const updateTempoButtons = () => {
-        tempoDown.disabled = currentTempo <= 40;
-        tempoUp.disabled = currentTempo >= 280;
+        tempoDown.disabled = currentTempo <= 20;
     };
 
     const setTempo = (val) => {
-        currentTempo = Math.max(40, Math.min(280, val));
+        currentTempo = Math.max(20, Math.round(val));
         tempoDisplay.textContent = currentTempo;
+        // Persist as quarter-note bpm so the feel toggle's re-render can
+        // convert the display while keeping the actual speed.
+        tempoOverride = {
+            workId: currentWork?.id,
+            quarterBpm: currentTempo * (twoFeelMode ? 2 : 1),
+        };
         updateTempoButtons();
     };
 
@@ -1182,7 +1198,9 @@ function setupTablaturePlayer(otf, controls, renderer) {
         playBtn.classList.add('playing');
         stopBtn.disabled = false;
         await player.play(otf, {
-            tempo: currentTempo,
+            // Player tempo is quarter-note bpm; the displayed number is
+            // per-beat of the feel, so two feel plays twice as fast.
+            tempo: currentTempo * (twoFeelMode ? 2 : 1),
             transpose: currentCapo,
             trackIds: getEnabledTrackIds(),
             feel: twoFeelMode ? 'two' : null,
