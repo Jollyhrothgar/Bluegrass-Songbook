@@ -310,3 +310,27 @@ describe('buildMetronomeSchedule', () => {
         ]);
     });
 });
+
+
+import { analyzeReadingList as _arl } from '../renderers/measure-timing.js';
+
+describe('analyzeReadingList — overlapping D.S.-style lists (27493)', () => {
+    it('overlap-and-continue: [1-13][6-51] marks |: 6 :| 13', () => {
+        const a = _arl([
+            { from_measure: 1, to_measure: 13 },
+            { from_measure: 6, to_measure: 51 },
+        ]);
+        expect([...a.repeatStartMarkers]).toContain(6);
+        expect([...a.repeatEndMarkers]).toContain(13);
+    });
+
+    it('exact-tail repeat: [6-51][39-51] marks |: 39 :| 51, no endings', () => {
+        const a = _arl([
+            { from_measure: 6, to_measure: 51 },
+            { from_measure: 39, to_measure: 51 },
+        ]);
+        expect([...a.repeatStartMarkers]).toContain(39);
+        expect([...a.repeatEndMarkers]).toContain(51);
+        expect(Object.keys(a.endings)).toHaveLength(0);
+    });
+});

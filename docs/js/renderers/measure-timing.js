@@ -289,10 +289,13 @@ export function analyzeReadingList(readingList) {
         const nextStart = next.from_measure;
         const nextEnd = next.to_measure;
 
-        // Case 1: next starts inside current and ends before current ends
-        // e.g. [1-9] then [2-8] -> repeat 2..8, 9 is 1st ending
+        // Case 1: next starts inside current and ends at/before current's
+        // end. e.g. [1-9] then [2-8] -> repeat 2..8, 9 is 1st ending;
+        // [6-51] then [39-51] -> plain repeat 39..51 (equal ends = no
+        // ending measures; 27493's second repeat was missed by a
+        // strict '<').
         if (nextStart > currStart && nextStart <= currEnd &&
-            nextEnd < currEnd && nextEnd >= nextStart) {
+            nextEnd <= currEnd && nextEnd >= nextStart) {
             repeatStartMarkers.add(nextStart);
             repeatEndMarkers.add(nextEnd);
             for (let m = nextEnd + 1; m <= currEnd; m++) endings[m] = 1;
@@ -321,6 +324,14 @@ export function analyzeReadingList(readingList) {
         // Case 3: same start, next extends past current (AABB first-section repeat)
         if (nextStart === currStart && nextEnd > currEnd) {
             repeatStartMarkers.add(currStart);
+            repeatEndMarkers.add(currEnd);
+        }
+
+        // Case 4: next starts inside current and CONTINUES PAST it —
+        // the overlap [nextStart..currEnd] is the repeated span and the
+        // music then carries on. 27493: [1-13] then [6-51] -> |: 6 :| 13.
+        if (nextStart > currStart && nextStart <= currEnd && nextEnd > currEnd) {
+            repeatStartMarkers.add(nextStart);
             repeatEndMarkers.add(currEnd);
         }
     }

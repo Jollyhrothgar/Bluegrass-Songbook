@@ -1135,10 +1135,18 @@ function setupTablaturePlayer(otf, controls, renderer) {
         selectKeyByIndex(keySelect.selectedIndex + 1);
     });
 
-    // Position updates
+    // Position updates — also SELF-HEAL the play button from player
+    // truth: optimistic UI plus loop restarts and view switches can
+    // desync the label from reality (Mike: 'the play button state is
+    // lost'). While ticks arrive, the player IS playing.
     player.onPositionUpdate = (elapsed, total) => {
         const fmt = (s) => `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
         posEl.textContent = `${fmt(elapsed)} / ${fmt(total)}`;
+        if (!playBtn.classList.contains('playing')) {
+            playBtn.textContent = '⏸ Pause';
+            playBtn.classList.add('playing');
+            stopBtn.disabled = false;
+        }
     };
 
     player.onPlaybackEnd = () => {
@@ -1180,6 +1188,13 @@ function setupTablaturePlayer(otf, controls, renderer) {
             feel: twoFeelMode ? 'two' : null,
             ...extra,
         });
+        // play() can bail (superseded by a newer call, audio context
+        // blocked) — reconcile the optimistic button with reality
+        if (!player.isPlaying) {
+            playBtn.classList.remove('playing');
+            stopBtn.disabled = true;
+            updatePlayLabel();
+        }
     };
 
     // ARM-THEN-PLAY (Mike: clicking/highlighting must not auto-start):
