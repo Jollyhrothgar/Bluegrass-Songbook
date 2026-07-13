@@ -4,6 +4,7 @@ import {
     parseSong, serializeSong, resetIdsForTest,
     addSection, setSectionType, relabelSection, moveSection,
     duplicateSection, deleteSection, moveSectionTo, updateLyrics, splitSectionOnBlankLines,
+    splitLine, mergeLines,
     spliceSectionWithParsed
 } from '../visual-editor/model.js';
 
@@ -64,6 +65,44 @@ describe('section ops', () => {
         const next = deleteSection(doc, verseId);
         expect(next.sections).toHaveLength(1);
         expect(next.sections[0].id).toBe(chorusId);
+    });
+});
+
+describe('splitLine / mergeLines (exact structural ops)', () => {
+    it('splitLine keeps chords on their exact characters across the split', () => {
+        const d = parseSong('{start_of_verse: V}\n[G]hello [C]world friend\n{end_of_verse}\n');
+        const next = splitLine(d, d.sections[0].id, 0, 6);   // "hello |world friend"
+        const [head, tail] = next.sections[0].lines;
+        expect(head.lyrics).toBe('hello ');
+        expect(head.chords).toEqual([{ chord: 'G', position: 0 }]);
+        expect(tail.lyrics).toBe('world friend');
+        expect(tail.chords).toEqual([{ chord: 'C', position: 0 }]);
+        expect(serializeSong(next)).toContain('[G]hello \n[C]world friend');
+    });
+
+    it('a chord exactly at the caret moves to the tail', () => {
+        const d = parseSong('{start_of_verse: V}\nhello [C]world\n{end_of_verse}\n');
+        const next = splitLine(d, d.sections[0].id, 0, 6);
+        expect(next.sections[0].lines[0].chords).toEqual([]);
+        expect(next.sections[0].lines[1].chords).toEqual([{ chord: 'C', position: 0 }]);
+    });
+
+    it('mergeLines shifts the merged-in chords and is the inverse of splitLine', () => {
+        const d = parseSong('{start_of_verse: V}\n[G]hello \n[C]world friend\n{end_of_verse}\n');
+        const next = mergeLines(d, d.sections[0].id, 0, 1);
+        expect(next.sections[0].lines).toHaveLength(1);
+        expect(next.sections[0].lines[0].lyrics).toBe('hello world friend');
+        expect(next.sections[0].lines[0].chords).toEqual([
+            { chord: 'G', position: 0 }, { chord: 'C', position: 6 }
+        ]);
+        expect(serializeSong(next)).toContain('[G]hello [C]world friend');
+    });
+
+    it('mergeLines joins with no separator (mid-word joins keep both chords)', () => {
+        const d = parseSong('{start_of_verse: V}\n[G]first line here\n[C]second line here\n{end_of_verse}\n');
+        const next = mergeLines(d, d.sections[0].id, 0, 1);
+        expect(next.sections[0].lines[0].lyrics).toBe('first line heresecond line here');
+        expect(serializeSong(next)).toContain('[G]first line here[C]second line here');
     });
 });
 

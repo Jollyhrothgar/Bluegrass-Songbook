@@ -383,6 +383,42 @@ export function spliceSectionWithParsed(doc, sectionId, parsed) {
     return next;
 }
 
+// ---------- structural line ops (exact, no re-anchoring) ----------
+
+// Split one line at a character offset. Chords keep their exact anchors:
+// positions < offset stay on the head, the rest move to the tail shifted
+// by -offset (a chord AT the caret anchors the tail's first word).
+export function splitLine(doc, sectionId, lineIndex, offset) {
+    const next = cloneDoc(doc);
+    const sec = next.sections.find(s => s.id === sectionId);
+    const line = sec.lines[lineIndex];
+    const head = { lyrics: line.lyrics.slice(0, offset), chords: [] };
+    const tail = { lyrics: line.lyrics.slice(offset), chords: [] };
+    for (const c of line.chords) {
+        if (c.position < offset) head.chords.push({ ...c });
+        else tail.chords.push({ chord: c.chord, position: c.position - offset });
+    }
+    sec.lines.splice(lineIndex, 1, head, tail);
+    return next;
+}
+
+// Append line fromIndex onto line intoIndex (both non-opaque) and remove
+// it. Chords keep their exact anchors: the merged-in line's positions
+// shift by the target's length. Exact inverse of splitLine.
+export function mergeLines(doc, sectionId, intoIndex, fromIndex) {
+    const next = cloneDoc(doc);
+    const sec = next.sections.find(s => s.id === sectionId);
+    const into = sec.lines[intoIndex];
+    const from = sec.lines[fromIndex];
+    into.chords = [
+        ...into.chords,
+        ...from.chords.map(c => ({ chord: c.chord, position: c.position + into.lyrics.length }))
+    ];
+    into.lyrics += from.lyrics;
+    sec.lines.splice(fromIndex, 1);
+    return next;
+}
+
 // ---------- lyric editing with chord re-anchoring ----------
 
 function wordsOf(lines) {
