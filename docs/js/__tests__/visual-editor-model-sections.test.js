@@ -4,7 +4,7 @@ import {
     parseSong, serializeSong, resetIdsForTest,
     addSection, setSectionType, relabelSection, moveSection,
     duplicateSection, deleteSection, moveSectionTo, updateLyrics, splitSectionOnBlankLines,
-    splitLine, mergeLines,
+    splitLine, mergeLines, deleteLine,
     spliceSectionWithParsed
 } from '../visual-editor/model.js';
 
@@ -103,6 +103,24 @@ describe('splitLine / mergeLines (exact structural ops)', () => {
         const next = mergeLines(d, d.sections[0].id, 0, 1);
         expect(next.sections[0].lines[0].lyrics).toBe('first line heresecond line here');
         expect(serializeSong(next)).toContain('[G]first line here[C]second line here');
+    });
+});
+
+describe('deleteLine (exact structural op)', () => {
+    it('removes just that line, leaving neighbors (and their chords) intact', () => {
+        const d = parseSong('{start_of_verse: V}\n[G]first line\n[C]second line\n[D]third line\n{end_of_verse}\n');
+        const next = deleteLine(d, d.sections[0].id, 1);
+        expect(next.sections[0].lines.map(l => l.lyrics)).toEqual(['first line', 'third line']);
+        expect(serializeSong(next)).toContain('[G]first line\n[D]third line');
+        // pure op: the input doc is untouched
+        expect(d.sections[0].lines).toHaveLength(3);
+    });
+
+    it('deleting the only line leaves an empty (still-serialized) section', () => {
+        const d = parseSong('{start_of_verse: V}\n[G]hello world\n{end_of_verse}\n');
+        const next = deleteLine(d, d.sections[0].id, 0);
+        expect(next.sections[0].lines).toHaveLength(0);
+        expect(serializeSong(next)).toContain('{start_of_verse: V}\n{end_of_verse}');
     });
 });
 

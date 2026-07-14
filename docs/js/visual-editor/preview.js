@@ -24,7 +24,7 @@
 import {
     parseSong, serializeSong, placeChord, changeChord, removeChord, allChords,
     setSectionType, relabelSection, moveSectionTo, deleteSection, duplicateSection,
-    updateLyrics, splitLine, mergeLines
+    updateLyrics, splitLine, mergeLines, deleteLine
 } from './model.js';
 import { el, renderChordsLine } from './line-view.js';
 import { createPalette } from './palette.js';
@@ -356,6 +356,13 @@ export function createInteractivePreview({
     }
 
     // Commit (or on commit=false, revert) the in-progress lyric edit.
+    // Committing an EMPTY (or whitespace-only) line deletes the line: the
+    // user selected-all and hit delete, so the line should be gone, not
+    // left behind as a blank. Deletion is structural (deleteLine) so
+    // untouched chord-only and opaque lines elsewhere survive exactly;
+    // chords on the deleted line are dropped and toasted. Emptying a
+    // section's last line just leaves the section empty -- removing the
+    // section itself stays the header menu's job.
     function finishLyricEdit(commit) {
         if (!editing) return false;
         const ed = editing;
@@ -364,13 +371,23 @@ export function createInteractivePreview({
         if (!commit) { render(); return false; }
         const sec = sectionById(ed.sectionId);
         if (!sec || !sec.lines) { render(); return false; }
-        const lines = sectionLyricLines(sec);
         if (ed.virtual) {
             if (value.trim() === '') { render(); return false; }
+            const lines = sectionLyricLines(sec);
             lines.push(value);
-        } else {
-            lines[filteredIndexOf(sec, ed.lineIndex)] = value;
+            return commitSectionLyrics(ed.sectionId, lines);
         }
+        if (value.trim() === '') {
+            const line = sec.lines[ed.lineIndex];
+            if (!line) { render(); return false; }
+            const dropped = line.chords.length;
+            commitDoc(deleteLine(doc, ed.sectionId, ed.lineIndex));
+            render();
+            toastDropped(dropped);
+            return true;
+        }
+        const lines = sectionLyricLines(sec);
+        lines[filteredIndexOf(sec, ed.lineIndex)] = value;
         return commitSectionLyrics(ed.sectionId, lines);
     }
 
@@ -445,6 +462,20 @@ export function createInteractivePreview({
             } else {
                 render();
             }
+            const fresh = sectionById(ed.sectionId);
+            if (!fresh || !fresh.lines || !fresh.lines.length) return;
+            startLyricEdit(ed.sectionId, docIndexOfFiltered(fresh, fi - 1), prev.length);
+            return;
+        }
+
+        if (value.trim() === '') {
+            // an emptied line just goes away (same as the blur commit);
+            // merging via updateLyrics would strip a trailing blank and
+            // leave mergeLines indexing past the end. Chords on it drop.
+            const dropped = sec.lines[ed.lineIndex]?.chords.length || 0;
+            commitDoc(deleteLine(doc, ed.sectionId, ed.lineIndex));
+            render();
+            toastDropped(dropped);
             const fresh = sectionById(ed.sectionId);
             if (!fresh || !fresh.lines || !fresh.lines.length) return;
             startLyricEdit(ed.sectionId, docIndexOfFiltered(fresh, fi - 1), prev.length);

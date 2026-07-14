@@ -643,6 +643,39 @@ test.describe('Chord row hover + in-preview lyric editing', () => {
         expect(raw).not.toMatch(/\[[A-G]/);
     });
 
+    test('selecting all text in a line and deleting removes the line', async ({ page }) => {
+        await openSong(page,
+            '{start_of_verse: Verse 1}\nfirst line here\nsecond line here\nthird line here\n{end_of_verse}\n');
+        await page.locator('.ve-syl', { hasText: 'cond' }).first().click();
+        await page.keyboard.press('ControlOrMeta+a');
+        await page.keyboard.press('Backspace');
+        await page.locator('#editor-content').click();     // blur = commit
+        await expect(lyricInput(page)).toHaveCount(0);
+        const raw = await page.locator('#editor-content').inputValue();
+        expect(raw).toContain('first line here\nthird line here');
+        expect(raw).not.toContain('second line here');
+        // the preview reflects it too: two lyric lines remain
+        await expect(page.locator('.ve-line')).toHaveCount(2);
+    });
+
+    test('emptying a chorded line drops its chords with an Undo toast', async ({ page }) => {
+        await openSong(page,
+            '{start_of_verse: Verse 1}\n[G]first line here\n[C]second line here\n{end_of_verse}\n');
+        await page.locator('.ve-syl', { hasText: 'cond' }).first().click();
+        await page.keyboard.press('ControlOrMeta+a');
+        await page.keyboard.press('Backspace');
+        await page.locator('#editor-content').click();
+
+        expect(await page.locator('#editor-content').inputValue())
+            .not.toContain('second line here');
+        const toast = page.locator('.ve-toast');
+        await expect(toast).toBeVisible();
+        await expect(toast).toContainText('1 chord dropped');
+        await toast.locator('.ve-toast-undo').click();
+        expect(await page.locator('#editor-content').inputValue())
+            .toContain('[C]second line here');
+    });
+
     test('+ Add line starts a new line at the end of the section', async ({ page }) => {
         await openSong(page, SONG);
         await page.locator('.ve-add-line').click();

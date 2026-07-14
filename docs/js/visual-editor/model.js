@@ -402,6 +402,17 @@ export function splitLine(doc, sectionId, lineIndex, offset) {
     return next;
 }
 
+// Remove a line from its section (the editor's empty-commit delete).
+// Any chords on the removed line go with it -- the caller counts them
+// for the dropped-chords toast. Other lines are untouched, so chord-only
+// and opaque lines elsewhere in the section survive exactly.
+export function deleteLine(doc, sectionId, lineIndex) {
+    const next = cloneDoc(doc);
+    const sec = next.sections.find(s => s.id === sectionId);
+    sec.lines.splice(lineIndex, 1);
+    return next;
+}
+
 // Append line fromIndex onto line intoIndex (both non-opaque) and remove
 // it. Chords keep their exact anchors: the merged-in line's positions
 // shift by the target's length. Exact inverse of splitLine.

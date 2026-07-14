@@ -226,6 +226,111 @@ describe('add-line ghost row', () => {
     });
 });
 
+describe('emptying a line deletes it', () => {
+    const THREE_LINES = `{start_of_verse: Verse 1}
+first line here
+second line here
+third line here
+{end_of_verse}
+`;
+    const THREE_CHORDED = `{start_of_verse: Verse 1}
+[G]first line here
+[C]second line here
+third line here
+{end_of_verse}
+`;
+
+    it('committing an emptied middle line removes it (one undo step)', () => {
+        load(THREE_LINES);
+        const inp = tapLyric('se');
+        inp.value = '';
+        inp.dispatchEvent(new Event('blur'));
+        expect(input()).toBeNull();
+        expect(raw()).toContain('first line here\nthird line here');
+        expect(raw()).not.toContain('second line here');
+        // no chords were dropped, so no toast
+        expect(container.querySelector('.ve-toast').classList.contains('hidden')).toBe(true);
+        undoBtn.click();
+        expect(raw()).toContain('second line here');
+        expect(undoBtn.disabled).toBe(true);  // exactly one step
+    });
+
+    it('a whitespace-only commit deletes the line too', () => {
+        load(THREE_LINES);
+        const inp = tapLyric('se');
+        inp.value = '   ';
+        inp.dispatchEvent(new Event('blur'));
+        expect(raw()).toContain('first line here\nthird line here');
+        expect(raw()).not.toContain('second line here');
+    });
+
+    it('emptying a chorded line drops its chords with the Undo toast', () => {
+        load(THREE_CHORDED);
+        const inp = tapLyric('se');
+        inp.value = '';
+        inp.dispatchEvent(new Event('blur'));
+        expect(raw()).not.toContain('second line here');
+        const toast = container.querySelector('.ve-toast');
+        expect(toast.classList.contains('hidden')).toBe(false);
+        expect(toast.textContent).toContain('1 chord dropped');
+        toast.querySelector('.ve-toast-undo').click();
+        expect(raw()).toContain('[C]second line here');
+    });
+
+    it('emptying the last line leaves an empty section (header menu deletes sections)', () => {
+        const inp = tapLyric('world');   // SRC: single [G] line
+        inp.value = '';
+        inp.dispatchEvent(new Event('blur'));
+        expect(raw()).toContain('{start_of_verse: Verse 1}\n{end_of_verse}');
+        expect(container.querySelector('.ve-section-label').textContent).toBe('Verse 1');
+        expect(container.querySelector('.ve-add-line')).not.toBeNull();
+    });
+
+    it('an untouched chord-only line elsewhere in the section survives exactly', () => {
+        load('{start_of_verse: Verse 1}\n[G] [C]\nhello world friend\n{end_of_verse}\n');
+        const inp = tapLyric('world');
+        inp.value = '';
+        inp.dispatchEvent(new Event('blur'));
+        expect(raw()).toContain('[G] [C]');
+        expect(raw()).not.toContain('hello world friend');
+        // only the edited (empty, chordless) line went away: nothing dropped
+        expect(container.querySelector('.ve-toast').classList.contains('hidden')).toBe(true);
+    });
+
+    it('Backspace at 0 of an emptied line merges it away with no stray space', () => {
+        load(TWO_LINES);
+        const inp = tapLyric('se');
+        inp.value = '';
+        inp.setSelectionRange(0, 0);
+        key(inp, 'Backspace');
+        expect(raw()).toContain('[G]first line here\n{end_of_verse}');
+        expect(raw()).not.toContain('second');
+        // editing continues on the previous line, caret at its end
+        expect(input().value).toBe('first line here');
+        expect(input().selectionStart).toBe('first line here'.length);
+    });
+
+    it('Escape on an emptied line still reverts it', () => {
+        load(THREE_LINES);
+        const before = raw();
+        const inp = tapLyric('se');
+        inp.value = '';
+        key(inp, 'Escape');
+        expect(raw()).toBe(before);
+        expect(sylEl('se')).not.toBeNull();
+    });
+
+    it('a blank spacer line commits away on blur (its text is already empty)', () => {
+        load('{start_of_verse: Verse 1}\nfirst line here\n\nthird line here\n{end_of_verse}\n');
+        const blank = container.querySelector('.ve-line-blank');
+        expect(blank).not.toBeNull();
+        blank.click();
+        expect(input()).not.toBeNull();
+        input().dispatchEvent(new Event('blur'));
+        expect(raw()).toContain('first line here\nthird line here');
+    });
+});
+
 describe('dropped chords toast', () => {
     it('a rewrite that orphans chords shows the undo toast', () => {
         const inp = tapLyric('hel');
