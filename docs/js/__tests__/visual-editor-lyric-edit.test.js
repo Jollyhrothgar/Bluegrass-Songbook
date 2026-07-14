@@ -320,14 +320,27 @@ third line here
         expect(sylEl('se')).not.toBeNull();
     });
 
-    it('a blank spacer line commits away on blur (its text is already empty)', () => {
+    it('an already-blank spacer line survives click-then-blur (no accidental delete)', () => {
         load('{start_of_verse: Verse 1}\nfirst line here\n\nthird line here\n{end_of_verse}\n');
+        const before = raw();
         const blank = container.querySelector('.ve-line-blank');
         expect(blank).not.toBeNull();
         blank.click();
         expect(input()).not.toBeNull();
         input().dispatchEvent(new Event('blur'));
-        expect(raw()).toContain('first line here\nthird line here');
+        expect(raw()).toBe(before);   // glancing at a line must not edit the song
+    });
+
+    it('does not delete a chord-only line on unchanged blur', () => {
+        load('{start_of_verse: Verse 1}\n[G] [C]\nhello there\n{end_of_verse}\n');
+        const before = raw();
+        const blank = container.querySelector('.ve-line-blank') ||
+            container.querySelector('.ve-line');
+        blank.click();
+        const inp = input();
+        if (inp) inp.dispatchEvent(new Event('blur'));
+        expect(raw()).toBe(before);
+        expect(raw()).toContain('[G] [C]');
     });
 });
 
@@ -433,3 +446,4 @@ describe('chord-row seam behavior', () => {
         expect(container.querySelector('.ve-slot-ghost')).toBeNull();
     });
 });
+

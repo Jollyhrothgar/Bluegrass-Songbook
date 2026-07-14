@@ -380,6 +380,12 @@ export function createInteractivePreview({
         if (value.trim() === '') {
             const line = sec.lines[ed.lineIndex];
             if (!line) { render(); return false; }
+            // Only delete if the user actually emptied a line that had text.
+            // A line that was ALREADY blank (spacer or chord-only) must
+            // survive a mere click-then-blur -- deleting chords because the
+            // user glanced at a line would be a data-loss trap. Removing
+            // such lines is the deliberate Backspace-at-0 merge gesture.
+            if (line.lyrics.trim() === '') { render(); return false; }
             const dropped = line.chords.length;
             commitDoc(deleteLine(doc, ed.sectionId, ed.lineIndex));
             render();
