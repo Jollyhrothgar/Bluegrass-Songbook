@@ -96,6 +96,15 @@ describe('parseSong', () => {
         expect(doc.sections[0].raw).toBe(abc);
     });
 
+    it('flushes an unterminated ABC block as passthrough (no content loss)', () => {
+        const abc = '{start_of_abc}\nX:1\nK:A\n|: E2AB :|';
+        const doc = parseSong(abc);
+        expect(doc.sections).toHaveLength(1);
+        expect(doc.sections[0].type).toBe('passthrough');
+        expect(doc.sections[0].raw).toBe(abc);
+        expect(normalize(serializeSong(doc))).toBe(normalize(abc));
+    });
+
     it('turns unknown standalone directives into passthrough sections', () => {
         const doc = parseSong('{comment: Repeat Verse 1}');
         expect(doc.sections[0].type).toBe('passthrough');

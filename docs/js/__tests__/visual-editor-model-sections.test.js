@@ -163,6 +163,17 @@ describe('updateLyrics re-anchoring', () => {
         expect(droppedChords).toBe(0);
         expect(next.sections[0].lines[0].chords.map(c => c.chord)).toEqual(['G', 'C']);
     });
+
+    it('carries chord-only lines by FILTERED index when opaque lines precede them', () => {
+        // newText excludes opaque lines, so the chord-only line at doc index 1
+        // corresponds to filtered index 0 — an edit to another line must not
+        // drop its chords
+        const d = parseSong('{start_of_verse: V1}\n{comment: solo}\n[G] [C]\nhello world\n{end_of_verse}');
+        const { doc: next, droppedChords } = updateLyrics(d, d.sections[0].id, ' \nhello there');
+        expect(droppedChords).toBe(0);
+        expect(next.sections[0].lines[0].chords.map(c => c.chord)).toEqual(['G', 'C']);
+        expect(next.sections[0].lines[1].lyrics).toBe('hello there');
+    });
 });
 
 describe('splitSectionOnBlankLines', () => {

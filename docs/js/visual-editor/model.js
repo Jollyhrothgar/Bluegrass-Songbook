@@ -102,6 +102,12 @@ export function parseSong(text) {
         current.lines.push(parseLineWithChords(raw));
     }
 
+    // an unterminated {start_of_abc} still owns everything after it — flush
+    // it as a passthrough so the content survives the serialize round trip
+    if (inAbc && abcLines.length) {
+        sections.push({ id: genId(), type: 'passthrough', raw: abcLines.join('\n') });
+    }
+
     // strip trailing blank lines inside each lyric section
     for (const sec of sections) {
         if (!sec.lines) continue;
@@ -478,14 +484,18 @@ export function updateLyrics(doc, sectionId, newText) {
     let dropped = 0;
     const newLines = newTexts.map(lyrics => ({ lyrics, chords: [] }));
 
+    // newText holds only the section's non-opaque lines, so a chord-only
+    // line's counterpart lives at its FILTERED index, not its doc index
+    let fi = -1;
     oldLines.forEach((old, li) => {
+        if (!old.opaque) fi++;
         if (old.opaque || old.chords.length === 0) return;
 
-        // chord-only / whitespace lines: carry chords to the same index if
-        // the new line at that index is also blank, else drop them
+        // chord-only / whitespace lines: carry chords to the same filtered
+        // index if the new line there is also blank, else drop them
         if (old.lyrics.trim() === '') {
-            if (newLines[li] && newLines[li].lyrics.trim() === '') {
-                newLines[li].chords = old.chords.map(c => ({ ...c }));
+            if (newLines[fi] && newLines[fi].lyrics.trim() === '') {
+                newLines[fi].chords = old.chords.map(c => ({ ...c }));
             } else {
                 dropped += old.chords.length;
             }
