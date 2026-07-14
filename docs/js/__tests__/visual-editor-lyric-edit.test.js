@@ -447,3 +447,53 @@ describe('chord-row seam behavior', () => {
     });
 });
 
+
+describe('tap after a structural edit commit (stale render-time indices)', () => {
+    // single-vowel-group words so each renders as ONE .ve-syl tap target
+    const THREE = `{start_of_verse: Verse 1}
+first sky
+brown fox
+third moon
+{end_of_verse}
+`;
+
+    function stripOf(text) {
+        return sylEl(text).closest('.ve-seg').querySelector('.ve-strip');
+    }
+    function pickChord(chord) {
+        const btn = [...container.querySelectorAll('.ve-palette .ve-chip-btn')]
+            .find(b => b.textContent === chord);
+        btn.click();
+    }
+
+    it('emptying a line then clicking another strip never targets the wrong line', () => {
+        load(THREE);
+        const inp = tapLyric('first');
+        inp.value = '';
+        // clicking the strip above 'brown' commits the pending edit first;
+        // that DELETES 'first sky' and shifts every line index up, so the
+        // render-time index the click captured no longer points at 'brown'
+        stripOf('brown').click();
+        expect(raw()).not.toContain('first sky');
+        // the tap is swallowed rather than acting on the shifted index:
+        // nothing selected, no palette
+        expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(true);
+        // a fresh click lands on correct indices: the chord goes on 'brown'
+        stripOf('brown').click();
+        pickChord('G');
+        expect(raw()).toContain('[G]brown fox');
+        expect(raw()).not.toContain('[G]third');
+    });
+
+    it('a text-only edit (no structure change) still lets the tap through', () => {
+        load(THREE);
+        const inp = tapLyric('first');
+        inp.value = 'first sea';
+        stripOf('brown').click();
+        expect(raw()).toContain('first sea');
+        // same line count, indices still valid: the tap selects normally
+        expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(false);
+        pickChord('G');
+        expect(raw()).toContain('[G]brown fox');
+    });
+});

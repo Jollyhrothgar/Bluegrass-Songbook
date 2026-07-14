@@ -89,6 +89,14 @@ export function createInteractivePreview({
         cancelGhost();
         const { sectionId, lineIndex } = selection;
         if (selection.chordIndex !== undefined) {
+            const existing = doc.sections.find(s => s.id === sectionId)
+                ?.lines?.[lineIndex]?.chords?.[selection.chordIndex];
+            if (!existing) {   // stale selection (e.g. a lost round-trip): never index chords[-1]
+                selection = null;
+                palette.hide();
+                render();
+                return;
+            }
             commitDoc(changeChord(doc, sectionId, lineIndex, selection.chordIndex, chord));
         } else {
             const { position } = selection;
@@ -98,6 +106,16 @@ export function createInteractivePreview({
             const line = doc.sections.find(s => s.id === sectionId)?.lines?.[lineIndex];
             let chordIndex = -1;
             if (line) line.chords.forEach((c, i) => { if (c.position === position) chordIndex = i; });
+            if (chordIndex === -1) {
+                // the chord didn't survive the serialize→re-parse round trip
+                // at this position (e.g. the lyrics contain an unmatched '[');
+                // leaving chordIndex -1 would make the next pick corrupt the
+                // line — drop the selection instead
+                selection = null;
+                palette.hide();
+                render();
+                return;
+            }
             selection = { sectionId, lineIndex, chordIndex };
         }
         palette.showFor({ existingChord: chord });
@@ -990,12 +1008,27 @@ export function createInteractivePreview({
         return [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(e => e[0]);
     }
 
+    // Committing a pending lyric edit can restructure the section the user
+    // just clicked in (an emptied line is deleted; the commit drops opaque
+    // lines), which invalidates the render-time line indices the click
+    // captured. Returns false when the tapped section's line count changed —
+    // the caller swallows the tap rather than acting on the wrong line (the
+    // commit already re-rendered; the next click lands on fresh indices).
+    function commitPendingEditKeepingIndices(sectionId) {
+        if (!editing) return true;
+        const before = sectionById(sectionId)?.lines?.length;
+        finishLyricEdit(true);
+        const after = sectionById(sectionId)?.lines?.length;
+        return before === after;
+    }
+
     const callbacks = {
         // chord-row click at a syllable seam: the chord surface. Everything
         // downstream (palette, ghost typing, Space/Tab advance) is unchanged.
         onStripTap(sectionId, lineIndex, position) {
-            finishLyricEdit(true);   // a pending lyric edit commits first
+            const stable = commitPendingEditKeepingIndices(sectionId);
             flushGhost();  // commit a valid in-progress ghost before moving on
+            if (!stable) return;
             const line = doc.sections.find(s => s.id === sectionId)?.lines?.[lineIndex];
             if (!line || line.opaque || position > line.lyrics.length) return;
             selection = { sectionId, lineIndex, position };
@@ -1003,8 +1036,9 @@ export function createInteractivePreview({
             render();
         },
         onChipTap(sectionId, lineIndex, chordIndex) {
-            finishLyricEdit(true);
+            const stable = commitPendingEditKeepingIndices(sectionId);
             flushGhost();
+            if (!stable) return;
             const sec = doc.sections.find(s => s.id === sectionId);
             const chord = sec?.lines?.[lineIndex]?.chords?.[chordIndex];
             if (!chord) return;
@@ -1014,8 +1048,9 @@ export function createInteractivePreview({
         },
         onChipRemove(sectionId, lineIndex, chordIndex) {
             // hover × on a chip (desktop): same undoable remove path
-            finishLyricEdit(true);
+            const stable = commitPendingEditKeepingIndices(sectionId);
             cancelGhost();
+            if (!stable) return;
             const sec = doc.sections.find(s => s.id === sectionId);
             if (!sec?.lines?.[lineIndex]?.chords?.[chordIndex]) return;
             selection = { sectionId, lineIndex, chordIndex };
@@ -1023,8 +1058,9 @@ export function createInteractivePreview({
         },
         // lyric text click: swap the line for a single-line input
         onLyricTap(sectionId, lineIndex, caret) {
-            finishLyricEdit(true);
+            const stable = commitPendingEditKeepingIndices(sectionId);
             flushGhost();
+            if (!stable) return;
             startLyricEdit(sectionId, lineIndex, caret);
         }
     };
@@ -1185,7 +1221,7 @@ export function createInteractivePreview({
         const line = sec?.lines?.[selection.lineIndex];
         if (!line || line.opaque) return false;
         if (selection.chordIndex !== undefined) {
-            return selection.chordIndex < line.chords.length;
+            return selection.chordIndex >= 0 && selection.chordIndex < line.chords.length;
         }
         return selection.position <= line.lyrics.length;
     }

@@ -61,6 +61,24 @@ function docKeydown(opts) {
     return e;
 }
 
+describe('pick when the placed chord does not survive the round trip', () => {
+    it('drops the selection instead of corrupting the line on the next pick', () => {
+        // an unmatched '[' in the lyrics swallows a chord placed at line end:
+        // 'She said [spoken aloud[G]' re-parses as chord 'spoken aloud[G'
+        load('{start_of_verse: Verse 1}\nShe said [spoken aloud\n{end_of_verse}\n');
+        container.querySelector('.ve-end-slot').click();
+        pickChord('G');
+        // the selection must drop and the palette hide (leaving chordIndex
+        // -1 made the NEXT pick write line.chords[-1] and throw)
+        expect(container.querySelector('.ve-palette').classList.contains('hidden')).toBe(true);
+        expect(container.querySelector('.ve-chip-selected')).toBeNull();
+        // and picking elsewhere afterwards still works
+        tapStrip('She');
+        expect(() => pickChord('C')).not.toThrow();
+        expect(raw()).toContain('[C]She said');
+    });
+});
+
 describe('rendering from the textarea', () => {
     it('renders section labels as headers and chords as chips', () => {
         const label = container.querySelector('.ve-section-label');

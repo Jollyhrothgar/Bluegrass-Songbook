@@ -128,7 +128,10 @@ section index + line index. While an input is focused, pressing on another
 strip/chip/lyric keeps focus (capture-phase mousedown preventDefault) so
 the click lands and its handler commits the edit first; presses on other
 chrome (menus, drag handles, the raw pane) commit via the input's blur and
-may need a second click.
+may need a second click. When that commit RESTRUCTURES the section (an
+emptied line is deleted, opaque lines drop), the render-time line indices
+the click captured are stale — the tap is swallowed and needs a second
+click on the fresh render, never acted on against shifted indices.
 
 Every edit lands in the textarea as one undo step. Desktop extras:
 
