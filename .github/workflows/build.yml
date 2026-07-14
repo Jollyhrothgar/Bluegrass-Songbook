@@ -51,6 +51,12 @@ jobs:
       - name: Run unit tests
         run: npm test
 
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Run parser tests (pytest)
+        run: uv run --extra dev pytest -q
+
   deploy:
     needs: verify
     # Deploy on: direct push to main, OR successful workflow_run from content workflows

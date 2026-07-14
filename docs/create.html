@@ -138,7 +138,10 @@
                     type: 'tab-submission',
                     otf: doc,
                     title: doc.metadata?.title || 'Untitled',
-                    instrument: doc.tracks[0]?.id || 'banjo',
+                    // instrument, not track id: duplicate instruments get
+                    // deduped ids like 5-string-banjo-2, which would leak
+                    // into the published filename
+                    instrument: doc.tracks[0]?.instrument || doc.tracks[0]?.id || 'banjo',
                 });
                 // DOM construction, not innerHTML: the URL comes back
                 // from a network response

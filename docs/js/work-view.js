@@ -888,7 +888,7 @@ async function renderTablaturePart(part, container) {
 
     } catch (e) {
         console.error('Error loading tablature:', e);
-        container.innerHTML = `<div class="error">Failed to load tablature: ${e.message}</div>`;
+        container.innerHTML = `<div class="error">Failed to load tablature: ${escapeHtml(e.message)}</div>`;
     }
 }
 
@@ -981,10 +981,11 @@ function createTablatureControls(otf, part) {
                             track.instrument?.includes('bass') ? '🎸' :
                             track.instrument?.includes('fiddle') ? '🎻' : '🎵';
                 const isLead = track.role === 'lead' || track.instrument?.includes('banjo');
-                return `<label class="track-toggle" title="${track.id}">
-                    <input type="checkbox" class="track-checkbox" data-track-id="${track.id}" ${isLead ? 'checked' : ''}>
+                const safeId = escapeHtml(track.id);
+                return `<label class="track-toggle" title="${safeId}">
+                    <input type="checkbox" class="track-checkbox" data-track-id="${safeId}" ${isLead ? 'checked' : ''}>
                     <span class="track-icon">${icon}</span>
-                    <span class="track-name">${track.id}</span>
+                    <span class="track-name">${safeId}</span>
                 </label>`;
             }).join('')}
         </div>

@@ -96,11 +96,20 @@ export class SelectionRange {
     }
 
     /**
-     * Get normalized range (start before end)
+     * Get normalized range (start before end).
+     *
+     * Accepts either a uniform ticks-per-measure number or a ts-aware
+     * `(measure, tick) => absTick` function. Document ops must pass the
+     * facade's toAbs: with mid-tune time-signature changes the uniform
+     * ordering can disagree with the real timeline, mis-ordering the
+     * endpoints and silently emptying a copy/delete.
      */
     getNormalized(ticksPerMeasure) {
-        const startAbs = this.start.getAbsoluteTick(ticksPerMeasure);
-        const endAbs = this.end.getAbsoluteTick(ticksPerMeasure);
+        const toAbs = typeof ticksPerMeasure === 'function'
+            ? ticksPerMeasure
+            : (m, t) => (m - 1) * ticksPerMeasure + t;
+        const startAbs = toAbs(this.start.measure, this.start.tick);
+        const endAbs = toAbs(this.end.measure, this.end.tick);
 
         if (startAbs <= endAbs) {
             return { start: this.start.clone(), end: this.end.clone() };
@@ -577,7 +586,8 @@ export class EditorState {
      */
     copy() {
         if (this.selection) {
-            const { start, end } = this.selection.getNormalized(this.ticksPerMeasure);
+            const { start, end } = this.selection.getNormalized(
+                (m, t) => this.facade.toAbs(m, t));
             const startAbs = this.facade.toAbs(start.measure, start.tick);
             const endAbs = this.facade.toAbs(end.measure, end.tick) + 1;
             this.facade.copyRange(startAbs, endAbs, { trackId: this.trackId });
@@ -602,7 +612,8 @@ export class EditorState {
      */
     deleteSelection() {
         if (!this.selection) return false;
-        const { start, end } = this.selection.getNormalized(this.ticksPerMeasure);
+        const { start, end } = this.selection.getNormalized(
+            (m, t) => this.facade.toAbs(m, t));
         const startAbs = this.facade.toAbs(start.measure, start.tick);
         const endAbs = this.facade.toAbs(end.measure, end.tick) + 1;
         return this.facade.deleteRange(startAbs, endAbs, { trackId: this.trackId });

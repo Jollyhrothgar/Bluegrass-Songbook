@@ -177,6 +177,24 @@ describe('SelectionRange', () => {
             expect(normStart.measure).toBe(1);
             expect(normEnd.measure).toBe(2);
         });
+
+        it('accepts a ts-aware toAbs function and orders by the real timeline', () => {
+            // Doc metadata says 2/4 (960/measure) but measure 1 is really
+            // 2/2 (1920 ticks). Uniform math mis-orders (m1,t1500) vs
+            // (m2,t100): 1500 > 960+100. The real timeline does not:
+            // 1500 < 1920+100.
+            const realToAbs = (m, t) => (m === 1 ? 0 : 1920 + (m - 2) * 960) + t;
+            const range = new SelectionRange(
+                new CursorPosition(1, 1500, 3),
+                new CursorPosition(2, 100, 3));
+
+            const uniform = range.getNormalized(960);
+            expect(uniform.start.measure).toBe(2); // the documented mis-order
+
+            const real = range.getNormalized(realToAbs);
+            expect(real.start.measure).toBe(1);
+            expect(real.end.measure).toBe(2);
+        });
     });
 });
 
@@ -742,5 +760,66 @@ describe('EditorState', () => {
             const s = new EditorState({ otf: multiTrackOtf(), trackId: 'kazoo' });
             expect(s.trackId).toBe('guitar');
         });
+    });
+});
+
+describe('selection ops on ts-change docs (real-timeline ordering)', () => {
+    // Metadata says 2/4 (uniform 960/measure) but measure 1 is really
+    // 2/2 (1920 ticks). A selection from (m1,t1500) to (m2,t100) is
+    // forward on the real timeline (1500 < 2020) but BACKWARD under
+    // uniform math (1500 > 1060) — the old normalization swapped the
+    // endpoints and copy/delete came back silently empty.
+    function tsChangeState() {
+        return new EditorState({
+            otf: {
+                otf_version: '1.0',
+                metadata: {
+                    title: 'ts test', time_signature: '2/4', tempo: 100,
+                    time_signature_changes: [
+                        { measure: 1, time_signature: '2/2' },
+                        { measure: 2, time_signature: '2/4' },
+                    ],
+                },
+                timing: { ticks_per_beat: 480 },
+                tracks: [{
+                    id: 'banjo', instrument: '5-string-banjo',
+                    tuning: ['D4', 'B3', 'G3', 'D3', 'G4'], capo: 0, role: 'lead',
+                }],
+                notation: {
+                    banjo: [1, 2, 3].map(m => ({ measure: m, events: [] })),
+                },
+            },
+        });
+    }
+
+    it('copy captures a selection the uniform math would mis-order', () => {
+        const state = tsChangeState();
+        expect(state.facade.ticksFor(1)).toBe(1920); // sanity: real timeline
+
+        state.cursor.measure = 1;
+        state.cursor.tick = 1500;
+        state.insertNote(7);
+
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 1500, 3),
+            new CursorPosition(2, 100, 3));
+        state.copy();
+
+        expect(state.facade.clipboard.data.length).toBe(1);
+        expect(state.facade.clipboard.data[0].notes[0].f).toBe(7);
+    });
+
+    it('deleteSelection deletes instead of silently no-oping', () => {
+        const state = tsChangeState();
+        state.cursor.measure = 1;
+        state.cursor.tick = 1500;
+        state.insertNote(7);
+
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 1500, 3),
+            new CursorPosition(2, 100, 3));
+
+        expect(state.deleteSelection()).toBe(true);
+        expect(state.getMeasure(1).events.length).toBe(0);
     });
 });
