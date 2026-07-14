@@ -27,6 +27,18 @@ describe('createPalette', () => {
         expect(chips).toContain('Am');
     });
 
+    it('renders the minor key diatonic set, not the parallel major', () => {
+        palette.setKey('Em');
+        const chips = [...palette.el.querySelectorAll('.ve-palette-diatonic .ve-chip-btn')]
+            .map(b => b.textContent);
+        expect(chips[0]).toBe('Em');   // tonic leads
+        expect(chips).toEqual(expect.arrayContaining(['G', 'Am', 'Bm', 'B7', 'C', 'D']));
+        // E-major (parallel major) chords must NOT appear
+        expect(chips).not.toContain('E');
+        expect(chips).not.toContain('G#m');
+        expect(chips).not.toContain('C#m');
+    });
+
     it('fires onPick with the chord when a chip is tapped', () => {
         palette.setKey('G');
         palette.showFor({ existingChord: null });

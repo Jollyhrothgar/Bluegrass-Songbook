@@ -5,6 +5,7 @@
 // see ghost-chip entry in visual-editor.js.
 
 import { getDiatonicChords } from '../chord-explorer/theory.js';
+import { transposeChord } from '../chords.js';
 
 const NATURAL_ROOTS = ['G', 'A', 'B', 'C', 'D', 'E', 'F'];
 const ACCIDENTAL_ROOTS = ['Ab', 'Bb', 'Db', 'Eb', 'F#'];
@@ -165,13 +166,28 @@ export function createPalette({ onPick, onDelete, onClose, onLayoutChange }) {
             lastKey = key;
             diatonicRow.textContent = '';
             if (!key) return;
-            const root = key.replace(/m$/, '');
+            const minor = /^[A-G][#b]?m$/.test(key);
+            const root = minor ? key.slice(0, -1) : key;
             keyRoot = ENHARMONIC[root] || root;
             if (picker.classList.contains('hidden')) selectRoot(keyRoot);
-            const chords = getDiatonicChords(root, false);
-            if (!chords.length) return;
-            const labels = chords.map(c => c.display);
-            const v7 = chords[4] ? chords[4].root + '7' : null;
+            let labels;
+            let v7;
+            if (minor) {
+                // getDiatonicChords builds a MAJOR scale; a minor key shares
+                // its pitch collection with the relative major (+3 semitones),
+                // so take that set rotated to lead with the tonic minor chord.
+                // The V7 is the minor key's own dominant (harmonic minor —
+                // B7 in Em), the bluegrass staple.
+                const chords = getDiatonicChords(transposeChord(root, 3), false);
+                if (!chords.length) return;
+                labels = [...chords.slice(5), ...chords.slice(0, 5)].map(c => c.display);
+                v7 = transposeChord(root, 7) + '7';
+            } else {
+                const chords = getDiatonicChords(root, false);
+                if (!chords.length) return;
+                labels = chords.map(c => c.display);
+                v7 = chords[4] ? chords[4].root + '7' : null;
+            }
             if (v7 && !labels.includes(v7)) labels.splice(5, 0, v7);
             for (const label of labels) diatonicRow.appendChild(chipButton(label, c => onPick(c)));
         },
