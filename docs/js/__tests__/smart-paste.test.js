@@ -1,7 +1,7 @@
 // Unit tests for the shared smart-paste pipeline (smart-paste.js):
 // the paste-wiring decision logic used by the Visual editor.
 import { describe, it, expect } from 'vitest';
-import { convertPastedText, looksLikeChordPro } from '../smart-paste.js';
+import { convertPastedText, looksLikeChordPro, cleanUltimateGuitarPaste } from '../smart-paste.js';
 
 const CHORD_SHEET = `G              C
 Way down upon the Swanee River
@@ -87,5 +87,13 @@ Rating`;
     it('single stray chord-looking word does not trigger conversion', () => {
         const res = convertPastedText('Amazing grace how sweet the sound\nA wretch like me');
         expect(res.kind).toBe('plain');
+    });
+
+    it('UG chrome with no recognizable song body returns unchanged instead of crashing', () => {
+        // page header/footer copied without the tab body: markers say UG,
+        // but there is no [Verse]-style header and no chord-over-lyrics line
+        const res = cleanUltimateGuitarPaste('ultimate-guitar\njust some prose about tabs\nmore prose');
+        expect(res.cleaned).toBe(false);
+        expect(res.text).toContain('just some prose about tabs');
     });
 });

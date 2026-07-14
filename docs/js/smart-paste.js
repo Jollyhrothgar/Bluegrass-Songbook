@@ -267,6 +267,12 @@ export function cleanUltimateGuitarPaste(text) {
         }
     }
 
+    // UG chrome without a recognizable song body (e.g. a page header/footer
+    // copied alone): bail before the end-scan below indexes lines[-1]
+    if (songStartIndex === -1) {
+        return { text, title, artist, cleaned: false };
+    }
+
     // Find song content end
     for (let i = songStartIndex; i < lines.length; i++) {
         const line = lines[i].trim();
@@ -283,10 +289,6 @@ export function cleanUltimateGuitarPaste(text) {
             songEndIndex = i;
             break;
         }
-    }
-
-    if (songStartIndex === -1) {
-        return { text, title, artist, cleaned: false };
     }
 
     const songLines = lines.slice(songStartIndex, songEndIndex);
