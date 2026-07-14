@@ -360,4 +360,16 @@ describe('editorTransposeContent', () => {
         const src = '{key: G}\n[G]hello';
         expect(editorTransposeContent(src, 0)).toBe(src);
     });
+
+    it('transposes every chord isValidChord accepts (sus4, 6, m7b5, ...)', () => {
+        // the palette and typed entry insert these — transpose must not
+        // skip them or the song ends up a semitone inconsistent
+        const out = editorTransposeContent('[Gsus4]hey [C6]you [Am7b5]now [Em6]then', 1);
+        expect(out).toBe('[G#sus4]hey [C#6]you [A#m7b5]now [Fm6]then');
+    });
+
+    it('leaves non-chord bracketed text alone', () => {
+        expect(editorTransposeContent('[Spoken]hello [G]world', 2))
+            .toBe('[Spoken]hello [A]world');
+    });
 });
