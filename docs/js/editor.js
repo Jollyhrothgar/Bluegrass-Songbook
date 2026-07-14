@@ -8,12 +8,13 @@ import {
     editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
 import { generateSlug } from './utils.js';
-import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
+import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
 import { openSuperUserRequestModal } from './superuser-request.js';
 import { createInteractivePreview } from './visual-editor/preview.js';
 import { wrapSelectionAsSection } from './visual-editor/wrap-section.js';
+import { parseSong, serializeSong } from './visual-editor/model.js';
 import {
     cleanChordUPaste, cleanUltimateGuitarPaste,
     editorConvertToChordPro, editorDetectAndConvert
@@ -265,14 +266,14 @@ export function prepareAddSongView() {
 export function editorTransposeContent(content, semitones) {
     if (semitones === 0) return content;
 
-    // Regex to match chords in [brackets]
-    const bracketChordRegex = /\[([A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?)\]/g;
+    // Match ANY bracketed token and let isValidChord decide what to move —
+    // a fixed quality list here would skip chords the palette and typed
+    // entry happily insert (sus4, 6, m7b5, ...), leaving them a semitone
+    // out of step with the rest of the song.
+    const bracketTokenRegex = /\[([^\]\n]+)\]/g;
 
-    // Transpose all bracketed chords
-    let result = content.replace(bracketChordRegex, (match, chord) => {
-        const transposed = transposeChord(chord, semitones);
-        return `[${transposed}]`;
-    });
+    let result = content.replace(bracketTokenRegex, (match, chord) =>
+        isValidChord(chord) ? `[${transposeChord(chord, semitones)}]` : match);
 
     // Keep {key: X} / {meta: key X} directives in step with the chords so
     // downstream consumers (e.g. the visual editor's palette) see the new key
@@ -281,51 +282,6 @@ export function editorTransposeContent(content, semitones) {
         `{${prefix}${transposeChord(key, semitones)}}`);
 
     return result;
-}
-
-/**
- * Parse editor content into sections
- */
-function editorParseContent(content) {
-    const lines = content.split('\n');
-    const sections = [];
-    let currentSection = { label: 'Verse 1', lines: [] };
-    let verseCount = 1;
-
-    for (const line of lines) {
-        if (line.match(/^\{(sov|start_of_verse)/i)) {
-            if (currentSection.lines.length > 0) sections.push(currentSection);
-            const labelMatch = line.match(/:\s*(.+?)\s*\}/);
-            currentSection = { label: labelMatch ? labelMatch[1] : `Verse ${++verseCount}`, lines: [] };
-            continue;
-        }
-        if (line.match(/^\{(soc|start_of_chorus)/i)) {
-            if (currentSection.lines.length > 0) sections.push(currentSection);
-            currentSection = { label: 'Chorus', type: 'chorus', lines: [] };
-            continue;
-        }
-        if (line.match(/^\{(eov|eoc|end_of)/i)) {
-            if (currentSection.lines.length > 0) sections.push(currentSection);
-            currentSection = { label: `Verse ${++verseCount}`, lines: [] };
-            continue;
-        }
-        if (line.startsWith('{')) continue;
-
-        if (!line.trim()) {
-            if (currentSection.lines.length > 0) {
-                sections.push(currentSection);
-                currentSection = { label: `Verse ${++verseCount}`, lines: [] };
-            }
-            continue;
-        }
-
-        if (line.trim()) {
-            currentSection.lines.push(line);
-        }
-    }
-
-    if (currentSection.lines.length > 0) sections.push(currentSection);
-    return sections;
 }
 
 /**
@@ -399,44 +355,27 @@ export function updateEditorPreview(opts = {}) {
 }
 
 /**
- * Generate ChordPro output
+ * Generate ChordPro output for submit/copy/download. The textarea IS the
+ * document — bridges, intros, {key:}/{tempo:}, ABC blocks and unknown
+ * directives all round-trip through the model untouched (the same
+ * parse/serialize the interactive preview uses). The metadata form fields
+ * override or fill the corresponding directives; the detected key is added
+ * only when the document doesn't already declare one.
  */
 export function editorGenerateChordPro() {
     const title = editorTitleEl?.value.trim() || '';
     const artist = editorArtistEl?.value.trim() || '';
     const writer = editorWriterEl?.value.trim() || '';
-    const content = editorContentEl?.value.trim() || '';
+    const content = editorContentEl?.value || '';
 
-    let output = '';
-
-    if (title) output += `{meta: title ${title}}\n`;
-    if (artist) output += `{meta: artist ${artist}}\n`;
-    if (writer) output += `{meta: composer ${writer}}\n`;
-    if (editorDetectedKey) output += `{key: ${editorDetectedKey}}\n`;
-
-    if (output) output += '\n';
-
-    const sections = editorParseContent(content);
-
-    for (const section of sections) {
-        if (section.type === 'chorus') {
-            output += '{start_of_chorus}\n';
-        } else {
-            output += `{start_of_verse: ${section.label}}\n`;
-        }
-
-        for (const line of section.lines) {
-            output += line + '\n';
-        }
-
-        if (section.type === 'chorus') {
-            output += '{end_of_chorus}\n\n';
-        } else {
-            output += '{end_of_verse}\n\n';
-        }
+    const doc = parseSong(content);
+    if (title) doc.metadata.fields.title = title;
+    if (artist) doc.metadata.fields.artist = artist;
+    if (writer) doc.metadata.fields.composer = writer;
+    if (!doc.metadata.fields.key && editorDetectedKey) {
+        doc.metadata.fields.key = editorDetectedKey;
     }
-
-    return output.trim() + '\n';
+    return serializeSong(doc).replace(/\n+$/, '') + '\n';
 }
 
 /**
@@ -705,6 +644,9 @@ export function initEditor(options) {
                 // Convert chord-above-lyrics format if needed
                 const converted = editorDetectAndConvert(text);
                 if (converted !== text || wasImported) {
+                    // one undo step, like transpose/key-select/wrap-section:
+                    // a wrong auto-conversion must be recoverable
+                    if (preview) preview.pushUndoSnapshot(editorContentEl.value);
                     editorContentEl.value = converted;
                     updateEditorPreview();
                     if (editorStatusEl) {
